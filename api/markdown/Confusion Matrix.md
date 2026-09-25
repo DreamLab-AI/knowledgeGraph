@@ -1,203 +1,212 @@
-
 A tabular visualisation and analytical tool summarising the performance of a classification model by displaying the counts or proportions of predictions cross-tabulated against actual class labels, typically organised with predicted classes as columns and actual classes as rows (or vice versa), enabling systematic analysis of where a model succeeds and fails, calculation of various performance metrics, and identification of specific confusion patterns between classes.
 
-- ### Semantic Classification
+### Semantic Classification
 
-- ### Content
-  - A tabular visualisation and analytical tool summarising the performance of a classification model by displaying the counts or proportions of predictions cross-tabulated against actual class labels, typically organised with predicted classes as columns and actual classes as rows (or vice versa), enabling systematic analysis of where a model succeeds and fails, calculation of various performance metrics, and identification of specific confusion patterns between classes.
+### Content
+
+- A tabular visualisation and analytical tool summarising the performance of a classification model by displaying the counts or proportions of predictions cross-tabulated against actual class labels, typically organised with predicted classes as columns and actual classes as rows (or vice versa), enabling systematic analysis of where a model succeeds and fails, calculation of various performance metrics, and identification of specific confusion patterns between classes.
 
   ## Structure
 
   For binary classification:
 
-  |                    | **Predicted Positive** | **Predicted Negative** |
-  |--------------------|------------------------|------------------------|
-  | **Actual Positive** | True Positive (TP)     | False Negative (FN)    |
-  | **Actual Negative** | False Positive (FP)    | True Negative (TN)     |
+|                    | **Predicted Positive** | **Predicted Negative** |
+|--------------------|------------------------|------------------------|
+| **Actual Positive** | True Positive (TP)     | False Negative (FN)    |
+| **Actual Negative** | False Positive (FP)    | True Negative (TN)     |
 
-  For multi-class classification (n classes):
+For multi-class classification (n classes):
 
-  |                  | **Pred Class 1** | **Pred Class 2** | ... | **Pred Class n** |
-  |------------------|------------------|------------------|-----|------------------|
-  | **Actual Class 1** | C₁₁              | C₁₂              | ... | C₁ₙ              |
-  | **Actual Class 2** | C₂₁              | C₂₂              | ... | C₂ₙ              |
-  | ...              | ...              | ...              | ... | ...              |
-  | **Actual Class n** | Cₙ₁              | Cₙ₂              | ... | Cₙₙ              |
+|                  | **Pred Class 1** | **Pred Class 2** | ... | **Pred Class n** |
+|------------------|------------------|------------------|-----|------------------|
+| **Actual Class 1** | C₁₁              | C₁₂              | ... | C₁ₙ              |
+| **Actual Class 2** | C₂₁              | C₂₂              | ... | C₂ₙ              |
+| ...              | ...              | ...              | ... | ...              |
+| **Actual Class n** | Cₙ₁              | Cₙ₂              | ... | Cₙₙ              |
 
-  Where Cᵢⱼ represents the count of instances of actual class i predicted as class j. Diagonal elements represent correct predictions.
+Where Cᵢⱼ represents the count of instances of actual class i predicted as class j. Diagonal elements represent correct predictions.
 
-  ## Context and Significance
+## Context and Significance
 
-  The confusion matrix provides the foundation for calculating virtually all classification performance metrics (accuracy, precision, recall, F1, specificity, etc.) whilst offering intuitive visual understanding of model behaviour beyond what single metrics convey. By revealing specific error patterns—such as which classes are frequently confused or whether errors are asymmetric—confusion matrices guide model improvement efforts and help identify fairness issues when disaggregated by demographic groups.
+The confusion matrix provides the foundation for calculating virtually all classification performance metrics (accuracy, precision, recall, F1, specificity, etc.) whilst offering intuitive visual understanding of model behaviour beyond what single metrics convey. By revealing specific error patterns—such as which classes are frequently confused or whether errors are asymmetric—confusion matrices guide model improvement efforts and help identify fairness issues when disaggregated by demographic groups.
 
-  Unlike aggregate metrics that summarise performance in a single number, confusion matrices preserve the detailed structure of model predictions, enabling analysts to ask questions like "Does the model confuse cats with dogs?" or "Are false positives more common than false negatives?" This granular information is essential for understanding whether a model's errors are acceptable for its intended application.
+Unlike aggregate metrics that summarise performance in a single number, confusion matrices preserve the detailed structure of model predictions, enabling analysts to ask questions like "Does the model confuse cats with dogs?" or "Are false positives more common than false negatives?" This granular information is essential for understanding whether a model's errors are acceptable for its intended application.
 
-  #### Key Characteristics
-  - **Comprehensive**: Contains information for calculating all standard classification metrics
-		  - **Detailed**: Shows specific error patterns, not just aggregate performance
-		  - **Visual**: Intuitive tabular or heatmap representation
-		  - **Multi-class capable**: Extends naturally from binary to multi-class settings
-		  - **Normalizable**: Can show counts or proportions (row-normalized, column-normalized, or overall-normalized)
-		  - **Diagnostic**: Reveals which classes or error types dominate performance issues
+#### Key Characteristics
 
-		  ## Derived Metrics
+- **Comprehensive**: Contains information for calculating all standard classification metrics
+  - **Detailed**: Shows specific error patterns, not just aggregate performance
+  - **Visual**: Intuitive tabular or heatmap representation
+  - **Multi-class capable**: Extends naturally from binary to multi-class settings
+  - **Normalizable**: Can show counts or proportions (row-normalized, column-normalized, or overall-normalized)
+  - **Diagnostic**: Reveals which classes or error types dominate performance issues
 
-		  From the binary confusion matrix, calculate:
+    ## Derived Metrics
 
-		  **Accuracy** = (TP + TN) / (TP + TN + FP + FN)
+    From the binary confusion matrix, calculate:
 
-		  **Precision** (Positive Predictive Value) = TP / (TP + FP)
+    **Accuracy** = (TP + TN) / (TP + TN + FP + FN)
 
-		  **Recall** (Sensitivity, True Positive Rate) = TP / (TP + FN)
+    **Precision** (Positive Predictive Value) = TP / (TP + FP)
 
-		  **Specificity** (True Negative Rate) = TN / (TN + FP)
+    **Recall** (Sensitivity, True Positive Rate) = TP / (TP + FN)
 
-		  **F1 Score** = 2TP / (2TP + FP + FN)
+    **Specificity** (True Negative Rate) = TN / (TN + FP)
 
-		  **False Positive Rate** = FP / (FP + TN)
+    **F1 Score** = 2TP / (2TP + FP + FN)
 
-		  **False Negative Rate** = FN / (FN + TP)
+    **False Positive Rate** = FP / (FP + TN)
 
-		  ## Relationships
+    **False Negative Rate** = FN / (FN + TP)
 
-		  - **Produces**: Accuracy, Precision, Recall, F1 Score, Specificity
-		  - **Component of**: Model Performance evaluation
-		  - **Visualises**: Classification results comprehensively
-		  - **Enables**: Error analysis, fairness assessment, model debugging
-		  - **Used in**: Model Evaluation, AI Audit, performance reporting
-		  - **Disaggregated for**: Fairness analysis across demographic groups
-		  - **Reported in**: Model Cards, audit reports, academic papers
-		  - **Extends to**: Multi-class, multi-label classification problems
+    ## Relationships
 
-		  ## Examples and Applications
+  - **Produces**: Accuracy, Precision, Recall, F1 Score, Specificity
+  - **Component of**: Model Performance evaluation
+  - **Visualises**: Classification results comprehensively
+  - **Enables**: Error analysis, fairness assessment, model debugging
+  - **Used in**: Model Evaluation, AI Audit, performance reporting
+  - **Disaggregated for**: Fairness analysis across demographic groups
+  - **Reported in**: Model Cards, audit reports, academic papers
+  - **Extends to**: Multi-class, multi-label classification problems
 
-		  1. **Medical Diagnosis (Binary)**:
-		  ```
-		                    Predicted Healthy  Predicted Disease
-		  Actual Healthy         9,500 (TN)         50 (FP)
-		  Actual Disease           5 (FN)          445 (TP)
-		  ```
-		  Analysis: High specificity (99.5%), excellent sensitivity (98.9%), very few false negatives—appropriate for serious disease screening.
+    ## Examples and Applications
 
-		  2. **Multi-class Image Classification**:
-		  ```
-		                Pred Cat  Pred Dog  Pred Bird
-		  Actual Cat      850       30        20
-		  Actual Dog       45      880        25
-		  Actual Bird      15       10       925
-		  ```
-		  Analysis: Most errors between cat-dog (biologically similar), few bird confusions—suggests feature learning successfully distinguishing avian from mammalian.
+    1. **Medical Diagnosis (Binary)**:
+    ```
+                    Predicted Healthy  Predicted Disease
+    Actual Healthy         9,500 (TN)         50 (FP)
+    Actual Disease           5 (FN)          445 (TP)
+    ```
+    Analysis: High specificity (99.5%), excellent sensitivity (98.9%), very few false negatives—appropriate for serious disease screening.
 
-		  3. **Sentiment Analysis (3-class)**:
-		  ```
-		                   Pred Positive  Pred Neutral  Pred Negative
-		  Actual Positive        720           45            35
-		  Actual Neutral          60          650            90
-		  Actual Negative         25           55           720
-		  ```
-		  Analysis: Neutral class most confused (lower recall), positive-negative rarely confused (good separation of extremes)—typical challenge in sentiment analysis.
+    2. **Multi-class Image Classification**:
+    ```
+                Pred Cat  Pred Dog  Pred Bird
+    Actual Cat      850       30        20
+    Actual Dog       45      880        25
+    Actual Bird      15       10       925
+    ```
+    Analysis: Most errors between cat-dog (biologically similar), few bird confusions—suggests feature learning successfully distinguishing avian from mammalian.
 
-		  4. **Fraud Detection (Imbalanced)**:
-		  ```
-		                      Predicted Legit  Predicted Fraud
-		  Actual Legitimate      99,400 (TN)       100 (FP)
-		  Actual Fraudulent        250 (FN)        250 (TP)
-		  ```
-		  Analysis: Despite 99.7% accuracy, only 50% fraud recall—class imbalance (0.5% fraud) makes accuracy misleading, confusion matrix reveals poor fraud detection.
+    3. **Sentiment Analysis (3-class)**:
+    ```
+                   Pred Positive  Pred Neutral  Pred Negative
+    Actual Positive        720           45            35
+    Actual Neutral          60          650            90
+    Actual Negative         25           55           720
+    ```
+    Analysis: Neutral class most confused (lower recall), positive-negative rarely confused (good separation of extremes)—typical challenge in sentiment analysis.
 
-		  ## Implementation and Visualization
+    4. **Fraud Detection (Imbalanced)**:
+    ```
+                      Predicted Legit  Predicted Fraud
+    Actual Legitimate      99,400 (TN)       100 (FP)
+    Actual Fraudulent        250 (FN)        250 (TP)
+    ```
+    Analysis: Despite 99.7% accuracy, only 50% fraud recall—class imbalance (0.5% fraud) makes accuracy misleading, confusion matrix reveals poor fraud detection.
 
-		  **Standard Calculation:**
-		  ```python
-		  from sklearn.metrics import confusion_matrix, ConfusionMatrixDisplay
-		  import matplotlib.pyplot as plt
+    ## Implementation and Visualization
 
-		  cm = confusion_matrix(y_true, y_pred)
-		  disp = ConfusionMatrixDisplay(confusion_matrix=cm, display_labels=class_names)
-		  disp.plot()
-		  plt.show()
-		  ```
+    **Standard Calculation:**
+    ```python
+    from sklearn.metrics import confusion_matrix, ConfusionMatrixDisplay
+    import matplotlib.pyplot as plt
 
-		  **Normalized Confusion Matrix:**
-		  ```python
-		  # Row normalization (recalls per class)
-		  cm_normalized = confusion_matrix(y_true, y_pred, normalize='true')
+    cm = confusion_matrix(y_true, y_pred)
+    disp = ConfusionMatrixDisplay(confusion_matrix=cm, display_labels=class_names)
+    disp.plot()
+    plt.show()
+    ```
 
-		  # Column normalization (precisions per class)
-		  cm_normalized = confusion_matrix(y_true, y_pred, normalize='pred')
+    **Normalized Confusion Matrix:**
+    ```python
+    # Row normalization (recalls per class)
+    cm_normalized = confusion_matrix(y_true, y_pred, normalize='true')
 
-		  # Overall normalization (proportions)
-		  cm_normalized = confusion_matrix(y_true, y_pred, normalize='all')
-		  ```
+    # Column normalization (precisions per class)
+    cm_normalized = confusion_matrix(y_true, y_pred, normalize='pred')
 
-		  ## Implementation Considerations
+    # Overall normalization (proportions)
+    cm_normalized = confusion_matrix(y_true, y_pred, normalize='all')
+    ```
 
-		  **Best Practices:**
-		  - Use heatmap visualisation with colour intensity for quick pattern recognition
-		  - For imbalanced datasets, display both counts and row-normalized (recall) matrices
-		  - Order classes logically (e.g., hierarchically similar classes adjacent)
-		  - Disaggregate confusion matrices by demographic groups for fairness assessment
-		  - Examine confusion matrices during error analysis to guide feature engineering
-		  - Monitor confusion matrix evolution over time to detect drift
+    ## Implementation Considerations
 
-		  **Common Pitfalls:**
-		  - Focusing only on diagonal (accuracy) without examining off-diagonal error patterns
-		  - Not normalizing matrices when class frequencies vastly differ
-		  - Ignoring confusion between specific class pairs in multi-class problems
-		  - Failing to check if errors are random or systematic
-		  - Not using confusion matrices for fairness analysis across subgroups
+    **Best Practices:**
 
-		  **Analysis Insights:**
-		  - **Diagonal dominance**: High values on diagonal indicate good performance
-		  - **Off-diagonal patterns**: Reveal systematic confusion between specific classes
-		  - **Asymmetric errors**: Different FP and FN rates indicate threshold optimization opportunity
-		  - **Clustered errors**: Similar classes (e.g., related species) confused more than dissimilar classes
-		  - **Demographic disparities**: Comparing confusion matrices across groups reveals fairness issues
+  - Use heatmap visualisation with colour intensity for quick pattern recognition
+  - For imbalanced datasets, display both counts and row-normalized (recall) matrices
+  - Order classes logically (e.g., hierarchically similar classes adjacent)
+  - Disaggregate confusion matrices by demographic groups for fairness assessment
+  - Examine confusion matrices during error analysis to guide feature engineering
+  - Monitor confusion matrix evolution over time to detect drift
 
-		  ## ISO/IEC and Standards Alignment
+    **Common Pitfalls:**
 
-		  **ISO/IEC 25059** (Quality Model for AI Systems):
-		  - Confusion matrix as comprehensive correctness assessment tool
-		  - Foundation for quality characteristic measurement
+  - Focusing only on diagonal (accuracy) without examining off-diagonal error patterns
+  - Not normalizing matrices when class frequencies vastly differ
+  - Ignoring confusion between specific class pairs in multi-class problems
+  - Failing to check if errors are random or systematic
+  - Not using confusion matrices for fairness analysis across subgroups
 
-		  **ISO/IEC 25024** (Data Quality Metrics):
-		  - Error distribution analysis via confusion matrices
+    **Analysis Insights:**
 
-		  ## NIST AI RMF Integration
+  - **Diagonal dominance**: High values on diagonal indicate good performance
+  - **Off-diagonal patterns**: Reveal systematic confusion between specific classes
+  - **Asymmetric errors**: Different FP and FN rates indicate threshold optimization opportunity
+  - **Clustered errors**: Similar classes (e.g., related species) confused more than dissimilar classes
+  - **Demographic disparities**: Comparing confusion matrices across groups reveals fairness issues
 
-		  **MEASURE Function**:
-		  - MEASURE-2.2: Confusion matrix provides foundation for measurement metrics
-		  - MEASURE-2.3: Disaggregated confusion matrices assess performance across contexts
-		  - Supports Valid and Reliable, Fair trustworthiness characteristics
+    ## ISO/IEC and Standards Alignment
 
-		  ## Related Terms
+    **ISO/IEC 25059** (Quality Model for AI Systems):
 
-		  - [[Model Performance]]: Confusion matrix fundamental to performance assessment
-		  - [[Accuracy]]: Derived from confusion matrix
-		  - [[Precision]]: Calculated from confusion matrix columns
-		  - [[Recall]]: Calculated from confusion matrix rows
-		  - [[F1 Score]]: Derived from confusion matrix
-		  - [[True Positive]]: Confusion matrix cell
-		  - [[False Positive]]: Confusion matrix cell
-		  - [[True Negative]]: Confusion matrix cell
-		  - [[False Negative]]: Confusion matrix cell
-		  - [[ROC Curve]]: Uses confusion matrix values across thresholds
+  - Confusion matrix as comprehensive correctness assessment tool
+  - Foundation for quality characteristic measurement
 
-- ### Current Landscape (2026)
-  - scikit-learn's class-based visualisation API is now the settled standard: the legacy `plot_confusion_matrix` was deprecated in 1.0 and removed, with `ConfusionMatrixDisplay.from_estimator`/`from_predictions` as replacements, and recent 1.9.x work (merged mid-2025) adds a threshold-sweep `confusion_matrix_at_thresholds` returning TN/FP/FN/TP counts across decision thresholds.
-  - The scalability failure of the classic O(n^2) matrix on many-class and multi-label problems is a live research frontier: the MLMC interactive tool (arXiv 2501.14460, January 2025) offers a visual instance/label/classifier exploration alternative, building on the earlier MLCM multi-label confusion matrix formulation.
-  - Standardisation of confusion-matrix-derived metrics is emerging: the Outperformance Standardisation (OPS) function (arXiv 2505.07033, May 2025) maps any confusion-matrix-based metric onto a common [0,1] percentile-rank scale to make scores comparable under varying class-imbalance rates.
-  - Metric theory has been tightened: "A Closer Look at Classification Evaluation Metrics" (arXiv 2404.16958, 2024) formalises five properties — monotonicity, class sensitivity, class decomposability, prevalence invariance and chance correction — to reason about which confusion-matrix summaries are trustworthy under imbalance.
-  - Confusion matrices have become a default artefact for evaluating LLM-as-classifier pipelines, pairing `classification_report` and heatmaps against a held-out supervised sample to expose systematic off-diagonal error modes and prompt-driven miscategorisation.
-  - Guidance from a widely cited 2024 Nature Scientific Reports survey (s41598-024-56706-x) reinforces reporting balanced accuracy, Matthew's correlation coefficient (MCC) and Cohen's kappa alongside raw accuracy, since single-number summaries hide class-imbalance effects visible in the full matrix.
-  - Open challenges as of 2026 centre on multi-label and long-tail settings, where the traditional matrix is undefined and aggregate metrics (Hamming loss, micro/macro F-scores) obscure per-class false-positive/false-negative distribution, and on scaling legible visual diagnostics to hundreds of classes.
+    **ISO/IEC 25024** (Data Quality Metrics):
 
-- ### References
-  - 1. scikit-learn developers (2025). confusion_matrix / ConfusionMatrixDisplay — scikit-learn 1.9.0 documentation. https://scikit-learn.org/stable/modules/generated/sklearn.metrics.confusion_matrix.html
-  - 2. MLMC authors (2025). MLMC: Interactive multi-label multi-classifier evaluation. arXiv:2501.14460. https://arxiv.org/html/2501.14460v1
-  - 3. OPS authors (2025). A Universal Standardization for Confusion-Matrix-Based Classification Performance Metrics. arXiv:2505.07033. https://arxiv.org/html/2505.07033v2
-  - 4. Various (2024). A Closer Look at Classification Evaluation Metrics and a Reflection of Good Practice. arXiv:2404.16958. https://arxiv.org/html/2404.16958v2
-  - 5. Various (2024). Evaluation metrics and statistical tests for machine learning. Scientific Reports (Nature). https://www.nature.com/articles/s41598-024-56706-x
+  - Error distribution analysis via confusion matrices
 
-- ### Provenance
+    ## NIST AI RMF Integration
+
+    **MEASURE Function**:
+
+  - MEASURE-2.2: Confusion matrix provides foundation for measurement metrics
+  - MEASURE-2.3: Disaggregated confusion matrices assess performance across contexts
+  - Supports Valid and Reliable, Fair trustworthiness characteristics
+
+    ## Related Terms
+
+  - [[Model Performance]]: Confusion matrix fundamental to performance assessment
+  - [[Accuracy]]: Derived from confusion matrix
+  - [[Precision]]: Calculated from confusion matrix columns
+  - [[Recall]]: Calculated from confusion matrix rows
+  - [[F1 Score]]: Derived from confusion matrix
+  - [[True Positive]]: Confusion matrix cell
+  - [[False Positive]]: Confusion matrix cell
+  - [[True Negative]]: Confusion matrix cell
+  - [[False Negative]]: Confusion matrix cell
+  - [[ROC Curve]]: Uses confusion matrix values across thresholds
+
+### Current Landscape (2026)
+
+- scikit-learn's class-based visualisation API is now the settled standard: the legacy `plot_confusion_matrix` was deprecated in 1.0 and removed, with `ConfusionMatrixDisplay.from_estimator`/`from_predictions` as replacements, and recent 1.9.x work (merged mid-2025) adds a threshold-sweep `confusion_matrix_at_thresholds` returning TN/FP/FN/TP counts across decision thresholds.
+- The scalability failure of the classic O(n^2) matrix on many-class and multi-label problems is a live research frontier: the MLMC interactive tool (arXiv 2501.14460, January 2025) offers a visual instance/label/classifier exploration alternative, building on the earlier MLCM multi-label confusion matrix formulation.
+- Standardisation of confusion-matrix-derived metrics is emerging: the Outperformance Standardisation (OPS) function (arXiv 2505.07033, May 2025) maps any confusion-matrix-based metric onto a common [0,1] percentile-rank scale to make scores comparable under varying class-imbalance rates.
+- Metric theory has been tightened: "A Closer Look at Classification Evaluation Metrics" (arXiv 2404.16958, 2024) formalises five properties — monotonicity, class sensitivity, class decomposability, prevalence invariance and chance correction — to reason about which confusion-matrix summaries are trustworthy under imbalance.
+- Confusion matrices have become a default artefact for evaluating LLM-as-classifier pipelines, pairing `classification_report` and heatmaps against a held-out supervised sample to expose systematic off-diagonal error modes and prompt-driven miscategorisation.
+- Guidance from a widely cited 2024 Nature Scientific Reports survey (s41598-024-56706-x) reinforces reporting balanced accuracy, Matthew's correlation coefficient (MCC) and Cohen's kappa alongside raw accuracy, since single-number summaries hide class-imbalance effects visible in the full matrix.
+- Open challenges as of 2026 centre on multi-label and long-tail settings, where the traditional matrix is undefined and aggregate metrics (Hamming loss, micro/macro F-scores) obscure per-class false-positive/false-negative distribution, and on scaling legible visual diagnostics to hundreds of classes.
+
+### References
+
+- 1. scikit-learn developers (2025). confusion_matrix / ConfusionMatrixDisplay — scikit-learn 1.9.0 documentation. https://scikit-learn.org/stable/modules/generated/sklearn.metrics.confusion_matrix.html
+- 2. MLMC authors (2025). MLMC: Interactive multi-label multi-classifier evaluation. arXiv:2501.14460. https://arxiv.org/html/2501.14460v1
+- 3. OPS authors (2025). A Universal Standardization for Confusion-Matrix-Based Classification Performance Metrics. arXiv:2505.07033. https://arxiv.org/html/2505.07033v2
+- 4. Various (2024). A Closer Look at Classification Evaluation Metrics and a Reflection of Good Practice. arXiv:2404.16958. https://arxiv.org/html/2404.16958v2
+- 5. Various (2024). Evaluation metrics and statistical tests for machine learning. Scientific Reports (Nature). https://www.nature.com/articles/s41598-024-56706-x
+
+### Provenance
 

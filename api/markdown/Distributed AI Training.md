@@ -1,196 +1,196 @@
-
 Distributed AI training is the practice of training machine-learning models across many compute nodes in parallel to handle datasets and model sizes that exceed a single machine. It uses strategies such as data parallelism, model and tensor parallelism, and pipeline parallelism, coordinated by collective communication and gradient synchronisation. It is essential for training large neural networks within feasible time and memory budgets.
 
-- ### Semantic Classification
+### Semantic Classification
 
-- ### Content
-  ## Compositional Relationships (Components)
-  ```
-  SubClassOf(ai:DistributedAITraining
-    ObjectSomeValuesFrom(ai:hasPart ai:DataParallelism))
-  SubClassOf(ai:DistributedAITraining
-    ObjectSomeValuesFrom(ai:hasPart ai:TensorParallelism))
-  SubClassOf(ai:DistributedAITraining
-    ObjectSomeValuesFrom(ai:hasPart ai:PipelineParallelism))
-  SubClassOf(ai:DistributedAITraining
-    ObjectSomeValuesFrom(ai:hasPart ai:GradientSynchronisation))
-  SubClassOf(ai:DistributedAITraining
-    ObjectSomeValuesFrom(ai:hasPart ai:AllReduceCommunication))
-  SubClassOf(ai:DistributedAITraining
-    ObjectSomeValuesFrom(ai:hasPart ai:ZeroRedundancyOptimiser))
-  SubClassOf(ai:DistributedAITraining
-    ObjectSomeValuesFrom(ai:hasPart ai:GradientCompression))
-  SubClassOf(ai:DistributedAITraining
-    ObjectSomeValuesFrom(ai:hasPart ai:SequenceParallelism))
-  ```
-  ## Dependency Relationships
-  ```
-  SubClassOf(ai:DistributedAITraining
-    ObjectSomeValuesFrom(ai:requires ai:GPUCluster))
-  SubClassOf(ai:DistributedAITraining
-    ObjectSomeValuesFrom(ai:requires ai:HighSpeedInterconnect))
-  SubClassOf(ai:DistributedAITraining
-    ObjectSomeValuesFrom(ai:requires ai:GradientDescent))
-  SubClassOf(ai:DistributedAITraining
-    ObjectSomeValuesFrom(ai:requires ai:Backpropagation))
-  SubClassOf(ai:DistributedAITraining
-    ObjectSomeValuesFrom(ai:dependsOn ai:NCCL))
-  SubClassOf(ai:DistributedAITraining
-    ObjectSomeValuesFrom(ai:dependsOn ai:PyTorch))
-  SubClassOf(ai:DistributedAITraining
-    ObjectSomeValuesFrom(ai:dependsOn ai:NVLink))
-  ```
-  ## Capability Relationships
-  ```
-  SubClassOf(ai:DistributedAITraining
-    ObjectSomeValuesFrom(ai:enables ai:LargeLanguageModels))
-  SubClassOf(ai:DistributedAITraining
-    ObjectSomeValuesFrom(ai:enables ai:FoundationModels))
-  SubClassOf(ai:DistributedAITraining
-    ObjectSomeValuesFrom(ai:enables ai:DeepLearning))
-  SubClassOf(ai:DistributedAITraining
-    ObjectSomeValuesFrom(ai:enables ai:NeuralArchitectureSearch))
-  SubClassOf(ai:DistributedAITraining
-    ObjectSomeValuesFrom(ai:enables ai:ReinforcementLearningFromHumanFeedback))
-  SubClassOf(ai:DistributedAITraining
-    ObjectSomeValuesFrom(ai:enables ai:MultimodalTraining))
-  ```
-  ## Implementation Relationships
-  ```
-  SubClassOf(ai:DistributedAITraining
-    ObjectSomeValuesFrom(ai:implements ai:DataParallelism))
-  SubClassOf(ai:DistributedAITraining
-    ObjectSomeValuesFrom(ai:implements ai:ModelParallelism))
-  SubClassOf(ai:DistributedAITraining
-    ObjectSomeValuesFrom(ai:implements ai:PipelineParallelism))
-  SubClassOf(ai:DistributedAITraining
-    ObjectSomeValuesFrom(ai:implements ai:FaultTolerantDistributedComputing))
-  SubClassOf(ai:DistributedAITraining
-    ObjectSomeValuesFrom(ai:implements ai:CollectiveCommunicationProtocol))
-  SubClassOf(ai:DistributedAITraining
-    ObjectSomeValuesFrom(ai:implements ai:DiLoCo))
-  ```
-  ## Reduction Relationships
-  ```
-  SubClassOf(ai:DistributedAITraining
-    ObjectSomeValuesFrom(ai:reducesTo ai:DataParallelSGD))
-  SubClassOf(ai:DistributedAITraining
-    ObjectSomeValuesFrom(ai:reducesTo ai:AllReduceTraining))
-  SubClassOf(ai:DistributedAITraining
-    ObjectSomeValuesFrom(ai:reducesTo ai:SingleNodeTraining))
-  SubClassOf(ai:DistributedAITraining
-    ObjectSomeValuesFrom(ai:reducesTo ai:FederatedLearning))
-  ```
-  ## Contrastive Relationships
-  ```
-  SubClassOf(ai:DistributedAITraining
-    ObjectSomeValuesFrom(ai:contrastsWith ai:SingleDeviceTraining))
-  SubClassOf(ai:DistributedAITraining
-    ObjectSomeValuesFrom(ai:contrastsWith ai:FederatedLearning))
-  SubClassOf(ai:DistributedAITraining
-    ObjectSomeValuesFrom(ai:contrastsWith ai:EdgeAITraining))
-  SubClassOf(ai:DistributedAITraining
-    ObjectSomeValuesFrom(ai:contrastsWith ai:TransferLearning))
-  SubClassOf(ai:DistributedAITraining
-    ObjectSomeValuesFrom(ai:bridges ai:DecentralisedCompute))
-  SubClassOf(ai:DistributedAITraining
-    ObjectSomeValuesFrom(ai:bridges ai:HighPerformanceComputing))
-  ```
+### Content
 
-  ## Formal Algorithms
+## Compositional Relationships (Components)
+```
+SubClassOf(ai:DistributedAITraining
+  ObjectSomeValuesFrom(ai:hasPart ai:DataParallelism))
+SubClassOf(ai:DistributedAITraining
+  ObjectSomeValuesFrom(ai:hasPart ai:TensorParallelism))
+SubClassOf(ai:DistributedAITraining
+  ObjectSomeValuesFrom(ai:hasPart ai:PipelineParallelism))
+SubClassOf(ai:DistributedAITraining
+  ObjectSomeValuesFrom(ai:hasPart ai:GradientSynchronisation))
+SubClassOf(ai:DistributedAITraining
+  ObjectSomeValuesFrom(ai:hasPart ai:AllReduceCommunication))
+SubClassOf(ai:DistributedAITraining
+  ObjectSomeValuesFrom(ai:hasPart ai:ZeroRedundancyOptimiser))
+SubClassOf(ai:DistributedAITraining
+  ObjectSomeValuesFrom(ai:hasPart ai:GradientCompression))
+SubClassOf(ai:DistributedAITraining
+  ObjectSomeValuesFrom(ai:hasPart ai:SequenceParallelism))
+```
+## Dependency Relationships
+```
+SubClassOf(ai:DistributedAITraining
+  ObjectSomeValuesFrom(ai:requires ai:GPUCluster))
+SubClassOf(ai:DistributedAITraining
+  ObjectSomeValuesFrom(ai:requires ai:HighSpeedInterconnect))
+SubClassOf(ai:DistributedAITraining
+  ObjectSomeValuesFrom(ai:requires ai:GradientDescent))
+SubClassOf(ai:DistributedAITraining
+  ObjectSomeValuesFrom(ai:requires ai:Backpropagation))
+SubClassOf(ai:DistributedAITraining
+  ObjectSomeValuesFrom(ai:dependsOn ai:NCCL))
+SubClassOf(ai:DistributedAITraining
+  ObjectSomeValuesFrom(ai:dependsOn ai:PyTorch))
+SubClassOf(ai:DistributedAITraining
+  ObjectSomeValuesFrom(ai:dependsOn ai:NVLink))
+```
+## Capability Relationships
+```
+SubClassOf(ai:DistributedAITraining
+  ObjectSomeValuesFrom(ai:enables ai:LargeLanguageModels))
+SubClassOf(ai:DistributedAITraining
+  ObjectSomeValuesFrom(ai:enables ai:FoundationModels))
+SubClassOf(ai:DistributedAITraining
+  ObjectSomeValuesFrom(ai:enables ai:DeepLearning))
+SubClassOf(ai:DistributedAITraining
+  ObjectSomeValuesFrom(ai:enables ai:NeuralArchitectureSearch))
+SubClassOf(ai:DistributedAITraining
+  ObjectSomeValuesFrom(ai:enables ai:ReinforcementLearningFromHumanFeedback))
+SubClassOf(ai:DistributedAITraining
+  ObjectSomeValuesFrom(ai:enables ai:MultimodalTraining))
+```
+## Implementation Relationships
+```
+SubClassOf(ai:DistributedAITraining
+  ObjectSomeValuesFrom(ai:implements ai:DataParallelism))
+SubClassOf(ai:DistributedAITraining
+  ObjectSomeValuesFrom(ai:implements ai:ModelParallelism))
+SubClassOf(ai:DistributedAITraining
+  ObjectSomeValuesFrom(ai:implements ai:PipelineParallelism))
+SubClassOf(ai:DistributedAITraining
+  ObjectSomeValuesFrom(ai:implements ai:FaultTolerantDistributedComputing))
+SubClassOf(ai:DistributedAITraining
+  ObjectSomeValuesFrom(ai:implements ai:CollectiveCommunicationProtocol))
+SubClassOf(ai:DistributedAITraining
+  ObjectSomeValuesFrom(ai:implements ai:DiLoCo))
+```
+## Reduction Relationships
+```
+SubClassOf(ai:DistributedAITraining
+  ObjectSomeValuesFrom(ai:reducesTo ai:DataParallelSGD))
+SubClassOf(ai:DistributedAITraining
+  ObjectSomeValuesFrom(ai:reducesTo ai:AllReduceTraining))
+SubClassOf(ai:DistributedAITraining
+  ObjectSomeValuesFrom(ai:reducesTo ai:SingleNodeTraining))
+SubClassOf(ai:DistributedAITraining
+  ObjectSomeValuesFrom(ai:reducesTo ai:FederatedLearning))
+```
+## Contrastive Relationships
+```
+SubClassOf(ai:DistributedAITraining
+  ObjectSomeValuesFrom(ai:contrastsWith ai:SingleDeviceTraining))
+SubClassOf(ai:DistributedAITraining
+  ObjectSomeValuesFrom(ai:contrastsWith ai:FederatedLearning))
+SubClassOf(ai:DistributedAITraining
+  ObjectSomeValuesFrom(ai:contrastsWith ai:EdgeAITraining))
+SubClassOf(ai:DistributedAITraining
+  ObjectSomeValuesFrom(ai:contrastsWith ai:TransferLearning))
+SubClassOf(ai:DistributedAITraining
+  ObjectSomeValuesFrom(ai:bridges ai:DecentralisedCompute))
+SubClassOf(ai:DistributedAITraining
+  ObjectSomeValuesFrom(ai:bridges ai:HighPerformanceComputing))
+```
 
-  ### Synchronous Data-Parallel Training (AllReduce SGD)
-  ```
-  Input: Model f_θ, loss L, dataset D, learning rate η, batch size B, workers N
-  Initialise: θ identically on all N workers
-  For each training step:
-    1. Each worker i samples mini-batch D_i ⊆ D (|D_i| = B/N)
-    2. Each worker i computes local gradient: g_i = ∇_θ L(f_θ(D_i))
-    3. AllReduce (ring): g = (1/N) Σ_i g_i    [bandwidth-optimal O(2(N-1)/N × |θ|)]
-    4. Each worker updates: θ ← θ - η · g
-  Result: Mathematically equivalent to single-device training with batch size B
-  ```
+## Formal Algorithms
 
-  ### ZeRO-3 Memory Partitioning
-  ```
-  Partition: Parameters θ, gradients g, optimizer states {m, v} across N workers
-    Worker i owns: θ[i*|θ|/N : (i+1)*|θ|/N], g[...], {m[...], v[...]}
-  Forward pass for layer l requiring θ_l:
-    1. AllGather: each worker broadcasts its parameter shard → all workers hold θ_l temporarily
-    2. Compute forward activation using θ_l
-    3. Free θ_l from non-owning workers (keep only owned shard)
-  Backward pass for layer l:
-    1. AllGather θ_l again for gradient computation
-    2. Compute local gradient contribution
-    3. ReduceScatter: aggregate gradient contributions → each worker holds g_l[owned shard]
-    4. Free θ_l; update owned shard: θ[owned] ← θ[owned] - η · Adam(g[owned], m[owned], v[owned])
-  Memory per worker: (|θ| + |g| + |m| + |v|) / N  ← N-fold reduction vs. standard DP
-  ```
+### Synchronous Data-Parallel Training (AllReduce SGD)
+```
+Input: Model f_θ, loss L, dataset D, learning rate η, batch size B, workers N
+Initialise: θ identically on all N workers
+For each training step:
+  1. Each worker i samples mini-batch D_i ⊆ D (|D_i| = B/N)
+  2. Each worker i computes local gradient: g_i = ∇_θ L(f_θ(D_i))
+  3. AllReduce (ring): g = (1/N) Σ_i g_i    [bandwidth-optimal O(2(N-1)/N × |θ|)]
+  4. Each worker updates: θ ← θ - η · g
+Result: Mathematically equivalent to single-device training with batch size B
+```
 
-  ### DiLoCo Outer-Inner Loop
-  ```
-  Input: H (local steps), outer optimiser (Nesterov), inner optimiser (AdamW)
-  Initialise: Global parameters θ_0; each worker initialises local copy θ_i^(0) = θ_0
-  For each synchronisation round t = 1, 2, ...:
-    For each worker i in parallel:
-      1. Run H steps of inner AdamW on local data:
-         θ_i^(t) = InnerOptimiser(θ_i^(t-1), local_data, H steps)
-      2. Compute pseudo-gradient: Δ_i = θ_i^(t-1) - θ_i^(t)
-                                        [positive = direction of improvement]
-    3. AllReduce: Δ = (1/N) Σ_i Δ_i    [only 1 communication per H local steps]
-    4. Apply outer Nesterov momentum step: θ_{new} = θ_{old} + outer_lr × Δ
-    5. Each worker resets to: θ_i^(t) ← θ_{new}
-  Communication reduction: 1/H = 1/500 relative to AllReduce SGD
-  ```
+### ZeRO-3 Memory Partitioning
+```
+Partition: Parameters θ, gradients g, optimizer states {m, v} across N workers
+  Worker i owns: θ[i*|θ|/N : (i+1)*|θ|/N], g[...], {m[...], v[...]}
+Forward pass for layer l requiring θ_l:
+  1. AllGather: each worker broadcasts its parameter shard → all workers hold θ_l temporarily
+  2. Compute forward activation using θ_l
+  3. Free θ_l from non-owning workers (keep only owned shard)
+Backward pass for layer l:
+  1. AllGather θ_l again for gradient computation
+  2. Compute local gradient contribution
+  3. ReduceScatter: aggregate gradient contributions → each worker holds g_l[owned shard]
+  4. Free θ_l; update owned shard: θ[owned] ← θ[owned] - η · Adam(g[owned], m[owned], v[owned])
+Memory per worker: (|θ| + |g| + |m| + |v|) / N  ← N-fold reduction vs. standard DP
+```
 
-  ### Ring-AllReduce Algorithm
-  ```
-  Input: Each worker i holds gradient tensor g_i of S elements, N workers
-  Phase 1 — Reduce-Scatter (N-1 rounds):
-    Round k: Worker i sends chunk[(i-k) mod N] to worker (i+1) mod N
-             Worker i receives chunk[(i-k-1) mod N] from worker (i-1) mod N
-             Worker i accumulates received chunk into its local copy
-    After N-1 rounds: Each worker holds the reduced (summed) value for one chunk
-  Phase 2 — AllGather (N-1 rounds):
-    Round k: Worker i sends its reduced chunk to worker (i+1) mod N
-             Worker i receives reduced chunk from worker (i-1) mod N
-    After N-1 rounds: Each worker holds the fully reduced tensor
-  Total data communicated per worker: 2 × (N-1)/N × S ≈ 2S (bandwidth-optimal)
-  ```
+### DiLoCo Outer-Inner Loop
+```
+Input: H (local steps), outer optimiser (Nesterov), inner optimiser (AdamW)
+Initialise: Global parameters θ_0; each worker initialises local copy θ_i^(0) = θ_0
+For each synchronisation round t = 1, 2, ...:
+  For each worker i in parallel:
+    1. Run H steps of inner AdamW on local data:
+       θ_i^(t) = InnerOptimiser(θ_i^(t-1), local_data, H steps)
+    2. Compute pseudo-gradient: Δ_i = θ_i^(t-1) - θ_i^(t)
+                                      [positive = direction of improvement]
+  3. AllReduce: Δ = (1/N) Σ_i Δ_i    [only 1 communication per H local steps]
+  4. Apply outer Nesterov momentum step: θ_{new} = θ_{old} + outer_lr × Δ
+  5. Each worker resets to: θ_i^(t) ← θ_{new}
+Communication reduction: 1/H = 1/500 relative to AllReduce SGD
+```
 
-  ## About
+### Ring-AllReduce Algorithm
+```
+Input: Each worker i holds gradient tensor g_i of S elements, N workers
+Phase 1 — Reduce-Scatter (N-1 rounds):
+  Round k: Worker i sends chunk[(i-k) mod N] to worker (i+1) mod N
+           Worker i receives chunk[(i-k-1) mod N] from worker (i-1) mod N
+           Worker i accumulates received chunk into its local copy
+  After N-1 rounds: Each worker holds the reduced (summed) value for one chunk
+Phase 2 — AllGather (N-1 rounds):
+  Round k: Worker i sends its reduced chunk to worker (i+1) mod N
+           Worker i receives reduced chunk from worker (i-1) mod N
+  After N-1 rounds: Each worker holds the fully reduced tensor
+Total data communicated per worker: 2 × (N-1)/N × S ≈ 2S (bandwidth-optimal)
+```
 
-  Distributed AI training emerged as a practical necessity in the mid-2010s when [[Deep Learning]] models grew beyond the capacity of individual GPUs and when the scale of training data required to achieve state-of-the-art performance exceeded what could be processed in reasonable time on a single machine. The field traces its roots to the parameter server architecture proposed by Li et al. (CMU/Google, 2014), which allowed gradient computation to be distributed across many workers while a central server aggregated and broadcast updated parameters. This architecture proved effective but created a communication bottleneck at the parameter server as model size and worker count scaled. The transition to decentralised all-reduce topologies — where each worker communicates gradients directly with its peers via ring or tree collectives — removed this bottleneck and became the dominant synchronous distributed training pattern, adopted in essentially all serious training infrastructure by 2018.
+## About
 
-  The scaling laws of deep learning (Kaplan et al., OpenAI, 2020; Hoffmann et al., DeepMind, 2022) established that model performance scales predictably with training compute budget (model size × training tokens × compute per token), creating a continuous economic incentive to train ever-larger models on ever-more compute. This scaling pressure drove the development of increasingly sophisticated parallelism strategies. Google's paper "Megatron-LM: Training Multi-Billion Parameter Language Models Using Model Parallelism" (2019) demonstrated that tensor parallelism could scale [[Transformer Architecture|transformer]] training to billions of parameters by sharding weight matrices across GPUs within a node connected by NVLink. Microsoft's DeepSpeed project (Rajbhandari et al., 2020) introduced the ZeRO (Zero Redundancy Optimizer) memory optimisation family, which partitions optimizer states, gradients, and parameters across data-parallel workers, eliminating the redundant copies of these tensors that conventional data parallelism requires and thereby enabling training of models that could not fit in GPU memory even with tensor parallelism. The combination of these techniques — 3D parallelism (data + tensor + pipeline) with ZeRO sharding — is the engineering backbone behind the largest models trained as of 2026.
+Distributed AI training emerged as a practical necessity in the mid-2010s when [[Deep Learning]] models grew beyond the capacity of individual GPUs and when the scale of training data required to achieve state-of-the-art performance exceeded what could be processed in reasonable time on a single machine. The field traces its roots to the parameter server architecture proposed by Li et al. (CMU/Google, 2014), which allowed gradient computation to be distributed across many workers while a central server aggregated and broadcast updated parameters. This architecture proved effective but created a communication bottleneck at the parameter server as model size and worker count scaled. The transition to decentralised all-reduce topologies — where each worker communicates gradients directly with its peers via ring or tree collectives — removed this bottleneck and became the dominant synchronous distributed training pattern, adopted in essentially all serious training infrastructure by 2018.
 
-  The communication infrastructure required for distributed training is as important as the software stack. Within a node, NVIDIA NVLink provides 600 GB/s bidirectional bandwidth (NVLink 4.0 on H100/GH200), enabling efficient intra-node tensor parallelism without communication bottlenecks. Between nodes, InfiniBand HDR (200 Gb/s) or NDR (400 Gb/s) provides the high-bandwidth, low-latency fabric required for gradient synchronisation across hundreds of nodes. NVIDIA's NCCL (NVIDIA Collective Communications Library) implements the ring-allreduce, broadcast, allgather, and reduce-scatter collectives over these fabrics with topology-aware routing that maximises available bandwidth. The ring-allreduce algorithm, independently introduced by Baidu Research and Uber in 2017, divides the gradient tensor into chunks and routes each chunk around a ring of workers, achieving bandwidth-optimal communication with complexity O(N) in the number of elements regardless of the number of workers — making it the default collective for synchronous data-parallel training.
+The scaling laws of deep learning (Kaplan et al., OpenAI, 2020; Hoffmann et al., DeepMind, 2022) established that model performance scales predictably with training compute budget (model size × training tokens × compute per token), creating a continuous economic incentive to train ever-larger models on ever-more compute. This scaling pressure drove the development of increasingly sophisticated parallelism strategies. Google's paper "Megatron-LM: Training Multi-Billion Parameter Language Models Using Model Parallelism" (2019) demonstrated that tensor parallelism could scale [[Transformer Architecture|transformer]] training to billions of parameters by sharding weight matrices across GPUs within a node connected by NVLink. Microsoft's DeepSpeed project (Rajbhandari et al., 2020) introduced the ZeRO (Zero Redundancy Optimizer) memory optimisation family, which partitions optimizer states, gradients, and parameters across data-parallel workers, eliminating the redundant copies of these tensors that conventional data parallelism requires and thereby enabling training of models that could not fit in GPU memory even with tensor parallelism. The combination of these techniques — 3D parallelism (data + tensor + pipeline) with ZeRO sharding — is the engineering backbone behind the largest models trained as of 2026.
 
-  ## Components / Architecture
+The communication infrastructure required for distributed training is as important as the software stack. Within a node, NVIDIA NVLink provides 600 GB/s bidirectional bandwidth (NVLink 4.0 on H100/GH200), enabling efficient intra-node tensor parallelism without communication bottlenecks. Between nodes, InfiniBand HDR (200 Gb/s) or NDR (400 Gb/s) provides the high-bandwidth, low-latency fabric required for gradient synchronisation across hundreds of nodes. NVIDIA's NCCL (NVIDIA Collective Communications Library) implements the ring-allreduce, broadcast, allgather, and reduce-scatter collectives over these fabrics with topology-aware routing that maximises available bandwidth. The ring-allreduce algorithm, independently introduced by Baidu Research and Uber in 2017, divides the gradient tensor into chunks and routes each chunk around a ring of workers, achieving bandwidth-optimal communication with complexity O(N) in the number of elements regardless of the number of workers — making it the default collective for synchronous data-parallel training.
 
-  ### Parallelism Strategies
+## Components / Architecture
 
-  - **Data Parallelism (DP):** Each worker holds a complete model replica and processes a different mini-batch of training data. After the backward pass, workers synchronise gradients via all-reduce — either synchronously (all workers wait for the collective before updating) or asynchronously (workers update locally with stale gradients from others). Synchronous data parallelism with ring-allreduce is the standard for tightly coupled clusters; it is implemented in PyTorch DDP (DistributedDataParallel) and Horovod. Asynchronous methods (Hogwild!, parameter server) tolerate node failures and slow workers at the cost of convergence noise from stale gradients.
-  - **ZeRO (Zero Redundancy Optimizer):** Microsoft's memory optimisation framework that eliminates the three main sources of redundancy in data parallelism. ZeRO-1 shards optimizer states (e.g., Adam moment vectors) across data-parallel workers, reducing optimizer memory by the data-parallel degree (e.g., 8x for 8 GPUs). ZeRO-2 additionally shards gradients, reducing gradient memory by the same factor. ZeRO-3 also shards model parameters, so each worker holds only 1/N of the parameters but gathers the needed partition for each forward/backward operation. PyTorch FSDP (Fully Sharded Data Parallel) implements ZeRO-3 natively; FSDP2 (PyTorch v2.4+) adds improved performance, CPU offloading, and composability with tensor parallelism.
-  - **Tensor Parallelism (TP):** Shards individual weight tensors across multiple GPUs within a node. For a linear layer Y = XW, tensor parallelism may split W column-wise across GPUs (each GPU computes XW_i for its partition and the results are concatenated) or row-wise (each GPU computes X_iW for its partition and the results are reduced). Megatron-LM's 1D tensor parallelism is the standard for [[Transformer Architecture|transformer]] MLP and attention layers; 2D and 3D tensor parallelism variants (used in Colossal-AI, Megatron-LM v3+) further optimise memory and communication trade-offs. Tensor parallelism requires high intra-node bandwidth (NVLink) because it introduces communication in the critical forward path.
-  - **Pipeline Parallelism (PP):** Partitions the model's layers into sequential stages, with each stage assigned to a different set of GPUs. A micro-batch flows through stages sequentially: stage 1 processes the micro-batch and passes activations to stage 2, which processes and passes to stage 3, etc. Multiple micro-batches are interleaved (pipelining) to maintain GPU utilisation during the activation and gradient wait periods. Pipeline parallelism reduces inter-node communication to only the activation tensors at stage boundaries, which is much smaller than gradient tensors, making it suitable for slower inter-node connections. DeepSpeed's pipeline implementation supports 1F1B (one forward, one backward) scheduling; Megatron-LM's virtual pipeline stages further reduce the pipeline bubble (idle time waiting for preceding stages).
-  - **Sequence Parallelism (SP):** Distributes the sequence dimension of attention and normalisation computations across tensor-parallel workers, enabling training on longer context windows than fit on a single device. Required for training models with context lengths of 128K+ tokens, as the attention KV cache and activation memory scale quadratically with sequence length.
-  - **Expert Parallelism (EP):** For [[Mixture of Experts]] models (GPT-4, Mixtral, Switch Transformer), routes different tokens to different expert networks distributed across GPUs. Expert parallelism communicates token representations between expert-assignment GPUs and expert-hosting GPUs via all-to-all collectives, enabling massive effective model size without scaling all-expert inference cost proportionally.
+### Parallelism Strategies
+
+- **Data Parallelism (DP):** Each worker holds a complete model replica and processes a different mini-batch of training data. After the backward pass, workers synchronise gradients via all-reduce — either synchronously (all workers wait for the collective before updating) or asynchronously (workers update locally with stale gradients from others). Synchronous data parallelism with ring-allreduce is the standard for tightly coupled clusters; it is implemented in PyTorch DDP (DistributedDataParallel) and Horovod. Asynchronous methods (Hogwild!, parameter server) tolerate node failures and slow workers at the cost of convergence noise from stale gradients.
+- **ZeRO (Zero Redundancy Optimizer):** Microsoft's memory optimisation framework that eliminates the three main sources of redundancy in data parallelism. ZeRO-1 shards optimizer states (e.g., Adam moment vectors) across data-parallel workers, reducing optimizer memory by the data-parallel degree (e.g., 8x for 8 GPUs). ZeRO-2 additionally shards gradients, reducing gradient memory by the same factor. ZeRO-3 also shards model parameters, so each worker holds only 1/N of the parameters but gathers the needed partition for each forward/backward operation. PyTorch FSDP (Fully Sharded Data Parallel) implements ZeRO-3 natively; FSDP2 (PyTorch v2.4+) adds improved performance, CPU offloading, and composability with tensor parallelism.
+- **Tensor Parallelism (TP):** Shards individual weight tensors across multiple GPUs within a node. For a linear layer Y = XW, tensor parallelism may split W column-wise across GPUs (each GPU computes XW_i for its partition and the results are concatenated) or row-wise (each GPU computes X_iW for its partition and the results are reduced). Megatron-LM's 1D tensor parallelism is the standard for [[Transformer Architecture|transformer]] MLP and attention layers; 2D and 3D tensor parallelism variants (used in Colossal-AI, Megatron-LM v3+) further optimise memory and communication trade-offs. Tensor parallelism requires high intra-node bandwidth (NVLink) because it introduces communication in the critical forward path.
+- **Pipeline Parallelism (PP):** Partitions the model's layers into sequential stages, with each stage assigned to a different set of GPUs. A micro-batch flows through stages sequentially: stage 1 processes the micro-batch and passes activations to stage 2, which processes and passes to stage 3, etc. Multiple micro-batches are interleaved (pipelining) to maintain GPU utilisation during the activation and gradient wait periods. Pipeline parallelism reduces inter-node communication to only the activation tensors at stage boundaries, which is much smaller than gradient tensors, making it suitable for slower inter-node connections. DeepSpeed's pipeline implementation supports 1F1B (one forward, one backward) scheduling; Megatron-LM's virtual pipeline stages further reduce the pipeline bubble (idle time waiting for preceding stages).
+- **Sequence Parallelism (SP):** Distributes the sequence dimension of attention and normalisation computations across tensor-parallel workers, enabling training on longer context windows than fit on a single device. Required for training models with context lengths of 128K+ tokens, as the attention KV cache and activation memory scale quadratically with sequence length.
+- **Expert Parallelism (EP):** For [[Mixture of Experts]] models (GPT-4, Mixtral, Switch Transformer), routes different tokens to different expert networks distributed across GPUs. Expert parallelism communicates token representations between expert-assignment GPUs and expert-hosting GPUs via all-to-all collectives, enabling massive effective model size without scaling all-expert inference cost proportionally.
 
   ### Communication Primitives
 
-  - **All-Reduce:** The central collective for synchronous data parallelism. Every worker contributes a tensor; after all-reduce, every worker holds the element-wise sum (or average) of all contributions. Ring-allreduce achieves this in O(2(N-1)/N × S) communication per worker for tensor size S and N workers, asymptotically bandwidth-optimal. Implemented in NCCL, Gloo (CPU), and MPI.
-  - **Reduce-Scatter + AllGather:** ZeRO's decomposition of all-reduce into two steps: reduce-scatter sends the gradient sum to the owning shard, and allgather reconstructs the full parameter tensor when needed. This allows memory-efficient parameter sharding while preserving gradient synchronisation correctness.
-  - **All-to-All:** Used in expert parallelism to route token representations to the correct expert GPUs and back. O(N × S/N) per worker, where routing is determined by the gating network.
-  - **Point-to-Point (send/recv):** Used in pipeline parallelism to pass activations and gradients between adjacent pipeline stages. Implemented as asynchronous non-blocking operations to maximise overlap with computation.
+- **All-Reduce:** The central collective for synchronous data parallelism. Every worker contributes a tensor; after all-reduce, every worker holds the element-wise sum (or average) of all contributions. Ring-allreduce achieves this in O(2(N-1)/N × S) communication per worker for tensor size S and N workers, asymptotically bandwidth-optimal. Implemented in NCCL, Gloo (CPU), and MPI.
+- **Reduce-Scatter + AllGather:** ZeRO's decomposition of all-reduce into two steps: reduce-scatter sends the gradient sum to the owning shard, and allgather reconstructs the full parameter tensor when needed. This allows memory-efficient parameter sharding while preserving gradient synchronisation correctness.
+- **All-to-All:** Used in expert parallelism to route token representations to the correct expert GPUs and back. O(N × S/N) per worker, where routing is determined by the gating network.
+- **Point-to-Point (send/recv):** Used in pipeline parallelism to pass activations and gradients between adjacent pipeline stages. Implemented as asynchronous non-blocking operations to maximise overlap with computation.
 
   ### Key Software Frameworks
 
-  - **PyTorch DDP + FSDP2:** The standard open-source distributed training infrastructure. DDP wraps any PyTorch module for synchronous data parallelism; FSDP2 adds ZeRO-3 sharding. Composable with Megatron-LM tensor parallelism via the DeviceMesh and DTensor APIs introduced in PyTorch 2.0+.
-  - **DeepSpeed:** Microsoft Research's comprehensive distributed training library, providing ZeRO-1/2/3, pipeline parallelism, gradient compression (1-bit Adam, ZeRO-Infinity), CPU/NVMe offloading, and inference optimisation. Used extensively in research and industry, including Megatron-Turing NLG 530B training.
-  - **Megatron-LM (NVIDIA):** Specialised framework for tensor and pipeline parallelism in transformer models, providing high-performance fused kernel implementations (FlashAttention integration, fused layer norms) and Megatron-DeepSpeed integration for 3D parallelism.
-  - **Colossal-AI:** Academic framework exploring advanced parallelism strategies including 2D/2.5D/3D tensor parallelism and sequence parallelism, often used for research into novel communication patterns.
-  - **JAX + XLA:** Google's functional framework with first-class support for distributed computation via pjit/jit and GSPMD (General and Scalable Parallelism for ML Compiler Deployments), used for training PaLM, Gemini, and other Google models.
+- **PyTorch DDP + FSDP2:** The standard open-source distributed training infrastructure. DDP wraps any PyTorch module for synchronous data parallelism; FSDP2 adds ZeRO-3 sharding. Composable with Megatron-LM tensor parallelism via the DeviceMesh and DTensor APIs introduced in PyTorch 2.0+.
+- **DeepSpeed:** Microsoft Research's comprehensive distributed training library, providing ZeRO-1/2/3, pipeline parallelism, gradient compression (1-bit Adam, ZeRO-Infinity), CPU/NVMe offloading, and inference optimisation. Used extensively in research and industry, including Megatron-Turing NLG 530B training.
+- **Megatron-LM (NVIDIA):** Specialised framework for tensor and pipeline parallelism in transformer models, providing high-performance fused kernel implementations (FlashAttention integration, fused layer norms) and Megatron-DeepSpeed integration for 3D parallelism.
+- **Colossal-AI:** Academic framework exploring advanced parallelism strategies including 2D/2.5D/3D tensor parallelism and sequence parallelism, often used for research into novel communication patterns.
+- **JAX + XLA:** Google's functional framework with first-class support for distributed computation via pjit/jit and GSPMD (General and Scalable Parallelism for ML Compiler Deployments), used for training PaLM, Gemini, and other Google models.
 
   ## Low-Communication and Decentralised Training
 
@@ -202,12 +202,12 @@ Distributed AI training is the practice of training machine-learning models acro
 
   ## Use Cases / Major Families
 
-  - **Frontier LLM pre-training:** The primary driver of distributed AI training infrastructure investment. Training GPT-4 class models (100B+ parameters) on multi-trillion-token corpora requires thousands of GPUs running for months. Megatron-LM 3D parallelism on NVIDIA A100/H100 clusters with InfiniBand NDR (400 Gb/s) is the standard architecture. Communication overhead is managed by overlapping allreduce with backward computation, using tensor + pipeline parallelism within nodes and data parallelism across node groups.
-  - **Fine-tuning and [[Reinforcement Learning from Human Feedback]] (RLHF):** Large pre-trained models are fine-tuned on task-specific data or human preference signals. RLHF (Ouyang et al., 2022 — InstructGPT) requires simultaneous training of multiple model copies (actor, critic, reference) with synchronous updates, making distributed coordination essential. Frameworks like TRL (Hugging Face), OpenRLHF, and Prime Intellect's PRIME-RL support multi-node RLHF training.
-  - **[[Mixture of Experts]] training:** MoE architectures (GPT-4, Mixtral 8x22B, Switch Transformer) have large total parameter counts but activate only a fraction of parameters per token. Distributed training requires expert parallelism in addition to data and tensor parallelism, with all-to-all routing collectives between expert assignment and expert computation.
-  - **[[Diffusion Models]] and multimodal training:** Stability AI (Stable Diffusion 3), Black Forest Labs (FLUX), and Google DeepMind (Imagen 3) train large diffusion models on multi-node GPU clusters. Multi-modal training (vision + language, as in CLIP, ALIGN, and Flamingo) requires coordinated data loading across modalities and often larger effective batch sizes than text-only training, motivating larger cluster deployments.
-  - **Decentralised internet-scale training:** The OpenDiLoCo/DiLoCo paradigm enables training large models using heterogeneous volunteer or market-priced compute distributed globally, coordinated by a blockchain-style incentive mechanism. Prime Intellect's INTELLECT-1 demonstrated this is practical for 10B parameter models as of 2024; scaling to 100B+ models with acceptable convergence is an active research challenge.
-  - **Continual pre-training and domain adaptation:** Large pre-trained models are continually updated with new data without full retraining — a distributed training workload with different parallelism requirements from initial pre-training (typically smaller cluster, longer time horizon, more frequent checkpoint evaluation).
+- **Frontier LLM pre-training:** The primary driver of distributed AI training infrastructure investment. Training GPT-4 class models (100B+ parameters) on multi-trillion-token corpora requires thousands of GPUs running for months. Megatron-LM 3D parallelism on NVIDIA A100/H100 clusters with InfiniBand NDR (400 Gb/s) is the standard architecture. Communication overhead is managed by overlapping allreduce with backward computation, using tensor + pipeline parallelism within nodes and data parallelism across node groups.
+- **Fine-tuning and [[Reinforcement Learning from Human Feedback]] (RLHF):** Large pre-trained models are fine-tuned on task-specific data or human preference signals. RLHF (Ouyang et al., 2022 — InstructGPT) requires simultaneous training of multiple model copies (actor, critic, reference) with synchronous updates, making distributed coordination essential. Frameworks like TRL (Hugging Face), OpenRLHF, and Prime Intellect's PRIME-RL support multi-node RLHF training.
+- **[[Mixture of Experts]] training:** MoE architectures (GPT-4, Mixtral 8x22B, Switch Transformer) have large total parameter counts but activate only a fraction of parameters per token. Distributed training requires expert parallelism in addition to data and tensor parallelism, with all-to-all routing collectives between expert assignment and expert computation.
+- **[[Diffusion Models]] and multimodal training:** Stability AI (Stable Diffusion 3), Black Forest Labs (FLUX), and Google DeepMind (Imagen 3) train large diffusion models on multi-node GPU clusters. Multi-modal training (vision + language, as in CLIP, ALIGN, and Flamingo) requires coordinated data loading across modalities and often larger effective batch sizes than text-only training, motivating larger cluster deployments.
+- **Decentralised internet-scale training:** The OpenDiLoCo/DiLoCo paradigm enables training large models using heterogeneous volunteer or market-priced compute distributed globally, coordinated by a blockchain-style incentive mechanism. Prime Intellect's INTELLECT-1 demonstrated this is practical for 10B parameter models as of 2024; scaling to 100B+ models with acceptable convergence is an active research challenge.
+- **Continual pre-training and domain adaptation:** Large pre-trained models are continually updated with new data without full retraining — a distributed training workload with different parallelism requirements from initial pre-training (typically smaller cluster, longer time horizon, more frequent checkpoint evaluation).
 
   ## Academic Context
 
@@ -249,23 +249,23 @@ Distributed AI training is the practice of training machine-learning models acro
 
   ## Future Directions (2026–2030)
 
-  - **Heterogeneous and fault-tolerant training at internet scale:** Extending DiLoCo-style low-communication training to heterogeneous node types (mixing GPUs, TPUs, and emerging accelerators), with fully automated fault tolerance that handles node failures, network partitions, and stragglers without halting training. Elastic training (dynamic worker joining/leaving) and checkpoint-free recovery are key enabling techniques.
-  - **Communication-free training via local loss functions:** Forward-forward algorithms (Hinton, 2022) and local contrastive learning (Noci et al., 2022) train layers with local objectives that do not require global backward passes, eliminating the gradient communication bottleneck entirely. These approaches trade off some model quality for radical reductions in inter-layer and inter-node communication.
-  - **Photonic and optical interconnects for training clusters:** Reconfigurable optical networks (RON) for inter-node communication achieve orders of magnitude higher bandwidth than copper-based InfiniBand, with dramatically lower power consumption. Microsoft and Google are deploying optical interconnects in training clusters; by 2028, they may displace InfiniBand for frontier training runs.
-  - **Energy-efficient distributed training:** The environmental cost of large-scale distributed training (estimated at hundreds to thousands of tonnes of CO₂ per frontier model) is driving research into training-time carbon optimisation — scheduling distributed training runs during periods of high renewable energy supply, using lower-precision arithmetic to reduce FLOPs, and exploiting early stopping criteria informed by scaling laws to avoid training beyond the compute-optimal point.
-  - **Neuromorphic and in-memory computing for training:** Spike-based neuromorphic hardware and in-memory analogue computing could enable energy-efficient local learning rules (STDP, Hebbian plasticity) that bypass the communication overhead of gradient-based distributed training entirely. Commercial maturity is likely post-2030, but DARPA-funded and UK EPSRC-funded research programmes are actively pursuing this direction.
-  - **Automated parallelism via compiler-level partitioning:** The manual specification of tensor, pipeline, and data parallelism degrees is error-prone and requires deep expertise. Compiler-driven automatic parallelism (JAX/XLA's GSPMD, Alpa from UCB/OctoAI) determines optimal parallelism configurations automatically given hardware topology and model architecture, eliminating the manual tuning burden. Broader adoption of these approaches is expected to democratise distributed training beyond the handful of organisations with expert infrastructure teams.
-  - **Formal verification and correctness guarantees:** As distributed training becomes critical infrastructure, formal methods for verifying correctness of communication patterns, gradient accumulation, and numerical precision under partial failures are emerging. This is particularly relevant for safety-critical applications where training runs must provably converge to specified objectives.
-  - **Privacy-preserving distributed training:** Combining [[Federated Learning]] with differential privacy, secure aggregation, and multi-party computation to enable distributed training on sensitive data (clinical records, financial data) without centralising raw data or leaking gradient information. The UK's GCHQ and NCSC have specific interests in provably private distributed training for sensitive government AI applications.
+- **Heterogeneous and fault-tolerant training at internet scale:** Extending DiLoCo-style low-communication training to heterogeneous node types (mixing GPUs, TPUs, and emerging accelerators), with fully automated fault tolerance that handles node failures, network partitions, and stragglers without halting training. Elastic training (dynamic worker joining/leaving) and checkpoint-free recovery are key enabling techniques.
+- **Communication-free training via local loss functions:** Forward-forward algorithms (Hinton, 2022) and local contrastive learning (Noci et al., 2022) train layers with local objectives that do not require global backward passes, eliminating the gradient communication bottleneck entirely. These approaches trade off some model quality for radical reductions in inter-layer and inter-node communication.
+- **Photonic and optical interconnects for training clusters:** Reconfigurable optical networks (RON) for inter-node communication achieve orders of magnitude higher bandwidth than copper-based InfiniBand, with dramatically lower power consumption. Microsoft and Google are deploying optical interconnects in training clusters; by 2028, they may displace InfiniBand for frontier training runs.
+- **Energy-efficient distributed training:** The environmental cost of large-scale distributed training (estimated at hundreds to thousands of tonnes of CO₂ per frontier model) is driving research into training-time carbon optimisation — scheduling distributed training runs during periods of high renewable energy supply, using lower-precision arithmetic to reduce FLOPs, and exploiting early stopping criteria informed by scaling laws to avoid training beyond the compute-optimal point.
+- **Neuromorphic and in-memory computing for training:** Spike-based neuromorphic hardware and in-memory analogue computing could enable energy-efficient local learning rules (STDP, Hebbian plasticity) that bypass the communication overhead of gradient-based distributed training entirely. Commercial maturity is likely post-2030, but DARPA-funded and UK EPSRC-funded research programmes are actively pursuing this direction.
+- **Automated parallelism via compiler-level partitioning:** The manual specification of tensor, pipeline, and data parallelism degrees is error-prone and requires deep expertise. Compiler-driven automatic parallelism (JAX/XLA's GSPMD, Alpa from UCB/OctoAI) determines optimal parallelism configurations automatically given hardware topology and model architecture, eliminating the manual tuning burden. Broader adoption of these approaches is expected to democratise distributed training beyond the handful of organisations with expert infrastructure teams.
+- **Formal verification and correctness guarantees:** As distributed training becomes critical infrastructure, formal methods for verifying correctness of communication patterns, gradient accumulation, and numerical precision under partial failures are emerging. This is particularly relevant for safety-critical applications where training runs must provably converge to specified objectives.
+- **Privacy-preserving distributed training:** Combining [[Federated Learning]] with differential privacy, secure aggregation, and multi-party computation to enable distributed training on sensitive data (clinical records, financial data) without centralising raw data or leaking gradient information. The UK's GCHQ and NCSC have specific interests in provably private distributed training for sensitive government AI applications.
 
   ## Memory Management and Efficiency Techniques
 
   Training a frontier-scale model is as much a memory management problem as a compute problem. The memory required to train a model with P parameters includes:
 
-  - **Model weights:** 4 bytes per parameter in float32, 2 bytes in bfloat16/float16. A 70B parameter model requires 280GB in float32 or 140GB in bfloat16 — far exceeding a single GPU's memory (80GB for H100 SXM5).
-  - **Gradients:** Same size as model weights — another 140GB for bfloat16.
-  - **Optimiser states:** Adam requires two moment vectors per parameter (mean and variance), each the same size as parameters — another 280GB in float32 or 140GB in mixed precision.
-  - **Activations:** Forward pass activations needed for [[Backpropagation|backward computation]] scale with batch size, sequence length, and model depth. For a 70B [[Transformer Architecture|transformer]] with sequence length 4096 and batch size 1, activations require approximately 100GB; with full gradient checkpointing (recomputing activations at each transformer block boundary), this reduces to approximately 2GB at the cost of 30% additional compute.
+- **Model weights:** 4 bytes per parameter in float32, 2 bytes in bfloat16/float16. A 70B parameter model requires 280GB in float32 or 140GB in bfloat16 — far exceeding a single GPU's memory (80GB for H100 SXM5).
+- **Gradients:** Same size as model weights — another 140GB for bfloat16.
+- **Optimiser states:** Adam requires two moment vectors per parameter (mean and variance), each the same size as parameters — another 280GB in float32 or 140GB in mixed precision.
+- **Activations:** Forward pass activations needed for [[Backpropagation|backward computation]] scale with batch size, sequence length, and model depth. For a 70B [[Transformer Architecture|transformer]] with sequence length 4096 and batch size 1, activations require approximately 100GB; with full gradient checkpointing (recomputing activations at each transformer block boundary), this reduces to approximately 2GB at the cost of 30% additional compute.
 
   The total memory required for Adam training of a 70B model in mixed precision is approximately 1.4TB — far beyond any single GPU, and even beyond any single 8-GPU node (8 × 80GB = 640GB). Distributed training is thus mandatory, not optional, for frontier-scale models.
 
@@ -297,14 +297,15 @@ Distributed AI training is the practice of training machine-learning models acro
 
   The standard performance metric for distributed training is **throughput** measured in tokens per second (for [[Large Language Models|LLM]] pre-training) or images per second (for vision model training), and **time-to-train** to reach a target accuracy. Efficiency is characterised by:
 
-  - **Hardware FLOPs utilisation (HFU):** The fraction of peak hardware FLOP/s actually achieved by the training run. GPT-style transformer training on NVIDIA H100s typically achieves 30–45% HFU due to memory bandwidth bottlenecks, communication overhead, and pipeline bubbles. Optimal configurations may reach 55–60% HFU.
-  - **Model FLOPs utilisation (MFU):** The fraction of peak hardware FLOP/s used for forward/backward computation on the model, excluding activation recomputation overhead and communication. MFU is always ≤ HFU and provides a hardware-independent measure of how efficiently the model computation uses the cluster.
-  - **Scaling efficiency:** The ratio of achieved throughput at N devices to N times the throughput at 1 device. Perfect linear scaling would give 100% efficiency; communication and pipeline overhead typically reduce this to 70–90% for well-optimised configurations at hundreds of nodes.
+- **Hardware FLOPs utilisation (HFU):** The fraction of peak hardware FLOP/s actually achieved by the training run. GPT-style transformer training on NVIDIA H100s typically achieves 30–45% HFU due to memory bandwidth bottlenecks, communication overhead, and pipeline bubbles. Optimal configurations may reach 55–60% HFU.
+- **Model FLOPs utilisation (MFU):** The fraction of peak hardware FLOP/s used for forward/backward computation on the model, excluding activation recomputation overhead and communication. MFU is always ≤ HFU and provides a hardware-independent measure of how efficiently the model computation uses the cluster.
+- **Scaling efficiency:** The ratio of achieved throughput at N devices to N times the throughput at 1 device. Perfect linear scaling would give 100% efficiency; communication and pipeline overhead typically reduce this to 70–90% for well-optimised configurations at hundreds of nodes.
 
   The **MLPerf Training benchmark** (mlperf.org/training) provides the primary industry-standard wall-clock time comparison for distributed training. The 2025 MLPerf Training results (v4.0) showed:
-  - NVIDIA H100 8-GPU systems achieving ResNet-50 training to 75.9% ImageNet accuracy in under 1.6 minutes
-  - BERT-large pre-training to masked language model accuracy target completed in under 2 minutes on 2048 H100 GPUs
-  - LLaMA 2 70B pre-training benchmarks being introduced as a new workload in the 2025 MLPerf Training suite
+
+- NVIDIA H100 8-GPU systems achieving ResNet-50 training to 75.9% ImageNet accuracy in under 1.6 minutes
+- BERT-large pre-training to masked language model accuracy target completed in under 2 minutes on 2048 H100 GPUs
+- LLaMA 2 70B pre-training benchmarks being introduced as a new workload in the 2025 MLPerf Training suite
 
   AMD's MI300X GPUs and Intel's Gaudi 3 accelerators are emerging alternatives to NVIDIA H100/GH200 in distributed training, with AMD achieving competitive MLPerf results on ResNet-50 and BERT. The competition between accelerator vendors is intensifying, with Google's TPU v5p, Cerebras CS-3, and Graphcore Bow-Pod all offering alternative distributed training architectures that trade off inter-device bandwidth, memory capacity, and programmability differently from the GPU standard.
 
@@ -312,10 +313,10 @@ Distributed AI training is the practice of training machine-learning models acro
 
   The compute cluster is only half of the distributed training system; the data pipeline that feeds training tokens or images to the GPUs at sufficient throughput is equally critical:
 
-  - **Streaming data loading:** Training datasets for [[Large Language Models]] are measured in petabytes (the Pile, RedPajama, Dolma, and FineWeb training corpora each contain trillions of tokens compressed into terabytes of text). These datasets cannot be loaded into CPU RAM; they are streamed from distributed file systems (Lustre, GPFS, AWS S3) during training. The data loading throughput must match the GPU's token consumption rate; for a 1000-GPU cluster training an 8B model on 4096-token sequences with micro-batch size 2, the required data loading throughput is approximately 1000 × 2 × 4096 × training iterations per second = millions of tokens per second.
-  - **Tokenisation and preprocessing:** Raw text is tokenised offline using byte-pair encoding (BPE) or unigram tokenisers (SentencePiece), with the token IDs stored as binary arrays for fast loading. Preprocessing pipelines run on CPU clusters separate from the GPU training cluster, producing pre-tokenised shards that are loaded sequentially during training.
-  - **Checkpoint management:** Training runs checkpoint model weights, optimiser states, and learning rate scheduler state regularly (typically every few hundred steps) to recover from node failures. Checkpoint sizes can be enormous: a 70B parameter model in float32 with Adam optimiser states requires approximately 840GB per checkpoint. Distributed checkpointing frameworks (PyTorch Distributed Checkpoint, DeepSpeed ZeRO checkpoint) write checkpoints in parallel across all workers to distributed storage, reducing checkpoint write time from hours (serial) to minutes (parallel).
-  - **Fault tolerance:** Large training runs on thousands of GPUs encounter hardware failures (GPU faults, network partition, cooling failures) regularly — at 1000 GPUs, even 99.9% individual reliability gives expected failure frequency of one failure per 1000/0.1% = 1 failure per ~4 hours. Robust distributed training frameworks detect failures, restart from the most recent checkpoint on available hardware, and rebalance workloads. Prime Intellect's ElasticDeviceMesh enables dynamic addition and removal of training workers without interrupting the training run.
+- **Streaming data loading:** Training datasets for [[Large Language Models]] are measured in petabytes (the Pile, RedPajama, Dolma, and FineWeb training corpora each contain trillions of tokens compressed into terabytes of text). These datasets cannot be loaded into CPU RAM; they are streamed from distributed file systems (Lustre, GPFS, AWS S3) during training. The data loading throughput must match the GPU's token consumption rate; for a 1000-GPU cluster training an 8B model on 4096-token sequences with micro-batch size 2, the required data loading throughput is approximately 1000 × 2 × 4096 × training iterations per second = millions of tokens per second.
+- **Tokenisation and preprocessing:** Raw text is tokenised offline using byte-pair encoding (BPE) or unigram tokenisers (SentencePiece), with the token IDs stored as binary arrays for fast loading. Preprocessing pipelines run on CPU clusters separate from the GPU training cluster, producing pre-tokenised shards that are loaded sequentially during training.
+- **Checkpoint management:** Training runs checkpoint model weights, optimiser states, and learning rate scheduler state regularly (typically every few hundred steps) to recover from node failures. Checkpoint sizes can be enormous: a 70B parameter model in float32 with Adam optimiser states requires approximately 840GB per checkpoint. Distributed checkpointing frameworks (PyTorch Distributed Checkpoint, DeepSpeed ZeRO checkpoint) write checkpoints in parallel across all workers to distributed storage, reducing checkpoint write time from hours (serial) to minutes (parallel).
+- **Fault tolerance:** Large training runs on thousands of GPUs encounter hardware failures (GPU faults, network partition, cooling failures) regularly — at 1000 GPUs, even 99.9% individual reliability gives expected failure frequency of one failure per 1000/0.1% = 1 failure per ~4 hours. Robust distributed training frameworks detect failures, restart from the most recent checkpoint on available hardware, and rebalance workloads. Prime Intellect's ElasticDeviceMesh enables dynamic addition and removal of training workers without interrupting the training run.
 
   ## Convergence Theory and Optimisation Considerations
 
@@ -355,43 +356,43 @@ Distributed AI training is the practice of training machine-learning models acro
 
   ## Key Terminology
 
-  - **Data parallelism:** The dominant distributed training strategy, replicating the full model on every worker and synchronising gradients via all-reduce after each backward pass. Scales effectively to thousands of workers when the model fits on a single device.
-  - **Tensor parallelism:** Shards individual weight tensors across multiple GPUs within a node. Essential when individual layers exceed device memory. Requires high-bandwidth NVLink intra-node interconnect.
-  - **Pipeline parallelism:** Partitions model layers into sequential stages across node groups. Reduces inter-node communication to activation tensors at stage boundaries. Pipeline bubbles (idle GPU time between micro-batches) reduce efficiency; advanced scheduling (1F1B, virtual stages) minimises bubble fraction.
-  - **ZeRO (Zero Redundancy Optimizer):** Microsoft's memory optimisation framework that partitions optimizer states (ZeRO-1), gradients (ZeRO-2), and parameters (ZeRO-3) across data-parallel workers, eliminating redundant copies and enabling training of models far exceeding single-GPU memory.
-  - **FSDP2 (Fully Sharded Data Parallel):** PyTorch's native implementation of ZeRO-3, providing composable model sharding, CPU offloading, and compatibility with tensor parallelism via DeviceMesh. The standard medium-scale distributed training backend as of 2026.
-  - **All-reduce:** The central collective communication primitive for synchronous data parallelism, computing the element-wise sum or average of a tensor across all workers and distributing the result. Ring-allreduce is the bandwidth-optimal implementation.
-  - **Ring-allreduce:** A communication algorithm that divides the gradient tensor into N chunks and routes each chunk around a ring of N workers, achieving O(2(N-1)/N × S) communication — bandwidth-optimal regardless of worker count. The standard gradient aggregation algorithm in NCCL.
-  - **[[DiLoCo]]:** Distributed Low-Communication training paradigm that performs 500 local optimisation steps between global synchronisations via an outer Nesterov optimiser, reducing bandwidth requirements by 500× and enabling training over commodity internet links.
-  - **NCCL:** NVIDIA Collective Communications Library; provides topology-aware, hardware-accelerated implementations of all-reduce, broadcast, allgather, reduce-scatter, and all-to-all collectives over NVLink and InfiniBand fabrics.
-  - **InfiniBand NDR:** 400 Gb/s bidirectional InfiniBand interconnect fabric used between nodes in frontier-scale GPU clusters. The primary inter-node communication substrate for distributed [[Large Language Models|LLM]] training as of 2026.
-  - **NVLink:** NVIDIA's high-bandwidth intra-node GPU interconnect (NVLink 4.0: 600 GB/s bidirectional on H100/GH200). Enables efficient tensor parallelism within a multi-GPU node without InfiniBand overhead.
-  - **Gradient compression:** Techniques for reducing gradient communication volume, including sparsification (transmitting only top-k% of gradient elements), quantisation (1-bit Adam, ZeRO++ int8 gradients), and low-rank approximation (PowerSGD). Reduces bandwidth requirements at the cost of gradient noise.
-  - **Pipeline bubble:** The fraction of pipeline stages that are idle (not processing a micro-batch) at any given time, reducing GPU utilisation below 100%. For a pipeline with p stages, the bubble fraction is (p-1)/(m+p-1) for m micro-batches; increasing m reduces the bubble fraction.
-  - **3D parallelism:** The combination of data parallelism (across replica groups), tensor parallelism (within NVLink-connected nodes), and pipeline parallelism (across node groups), forming the backbone of frontier-scale [[Large Language Models|LLM]] training.
-  - **Expert parallelism:** Distributed routing of tokens to expert networks in [[Mixture of Experts]] models, using all-to-all communication between expert-assignment and expert-computation GPUs. Enables massive effective parameter counts without scaling per-token inference cost.
-  - **Activation recomputation:** Recomputing forward-pass activations during the backward pass rather than storing them, reducing activation memory from O(n_layers × sequence_length × d_model) to O(d_model) at the cost of 33% additional compute. Also called gradient checkpointing.
-  - **Mixed precision training:** Training in bfloat16 or float16 for model weights and activations, with a float32 master copy maintained for optimizer state accumulation. Halves memory usage and doubles compute throughput on Tensor Core hardware.
-  - **Scaling laws:** Empirical power-law relationships between model quality (perplexity) and training compute (model size × training tokens), established by Kaplan et al. (2020) and Hoffmann et al. (2022), that predict the compute-optimal model size and dataset size for a given training budget. Fundamental to planning distributed training runs.
+- **Data parallelism:** The dominant distributed training strategy, replicating the full model on every worker and synchronising gradients via all-reduce after each backward pass. Scales effectively to thousands of workers when the model fits on a single device.
+- **Tensor parallelism:** Shards individual weight tensors across multiple GPUs within a node. Essential when individual layers exceed device memory. Requires high-bandwidth NVLink intra-node interconnect.
+- **Pipeline parallelism:** Partitions model layers into sequential stages across node groups. Reduces inter-node communication to activation tensors at stage boundaries. Pipeline bubbles (idle GPU time between micro-batches) reduce efficiency; advanced scheduling (1F1B, virtual stages) minimises bubble fraction.
+- **ZeRO (Zero Redundancy Optimizer):** Microsoft's memory optimisation framework that partitions optimizer states (ZeRO-1), gradients (ZeRO-2), and parameters (ZeRO-3) across data-parallel workers, eliminating redundant copies and enabling training of models far exceeding single-GPU memory.
+- **FSDP2 (Fully Sharded Data Parallel):** PyTorch's native implementation of ZeRO-3, providing composable model sharding, CPU offloading, and compatibility with tensor parallelism via DeviceMesh. The standard medium-scale distributed training backend as of 2026.
+- **All-reduce:** The central collective communication primitive for synchronous data parallelism, computing the element-wise sum or average of a tensor across all workers and distributing the result. Ring-allreduce is the bandwidth-optimal implementation.
+- **Ring-allreduce:** A communication algorithm that divides the gradient tensor into N chunks and routes each chunk around a ring of N workers, achieving O(2(N-1)/N × S) communication — bandwidth-optimal regardless of worker count. The standard gradient aggregation algorithm in NCCL.
+- **[[DiLoCo]]:** Distributed Low-Communication training paradigm that performs 500 local optimisation steps between global synchronisations via an outer Nesterov optimiser, reducing bandwidth requirements by 500× and enabling training over commodity internet links.
+- **NCCL:** NVIDIA Collective Communications Library; provides topology-aware, hardware-accelerated implementations of all-reduce, broadcast, allgather, reduce-scatter, and all-to-all collectives over NVLink and InfiniBand fabrics.
+- **InfiniBand NDR:** 400 Gb/s bidirectional InfiniBand interconnect fabric used between nodes in frontier-scale GPU clusters. The primary inter-node communication substrate for distributed [[Large Language Models|LLM]] training as of 2026.
+- **NVLink:** NVIDIA's high-bandwidth intra-node GPU interconnect (NVLink 4.0: 600 GB/s bidirectional on H100/GH200). Enables efficient tensor parallelism within a multi-GPU node without InfiniBand overhead.
+- **Gradient compression:** Techniques for reducing gradient communication volume, including sparsification (transmitting only top-k% of gradient elements), quantisation (1-bit Adam, ZeRO++ int8 gradients), and low-rank approximation (PowerSGD). Reduces bandwidth requirements at the cost of gradient noise.
+- **Pipeline bubble:** The fraction of pipeline stages that are idle (not processing a micro-batch) at any given time, reducing GPU utilisation below 100%. For a pipeline with p stages, the bubble fraction is (p-1)/(m+p-1) for m micro-batches; increasing m reduces the bubble fraction.
+- **3D parallelism:** The combination of data parallelism (across replica groups), tensor parallelism (within NVLink-connected nodes), and pipeline parallelism (across node groups), forming the backbone of frontier-scale [[Large Language Models|LLM]] training.
+- **Expert parallelism:** Distributed routing of tokens to expert networks in [[Mixture of Experts]] models, using all-to-all communication between expert-assignment and expert-computation GPUs. Enables massive effective parameter counts without scaling per-token inference cost.
+- **Activation recomputation:** Recomputing forward-pass activations during the backward pass rather than storing them, reducing activation memory from O(n_layers × sequence_length × d_model) to O(d_model) at the cost of 33% additional compute. Also called gradient checkpointing.
+- **Mixed precision training:** Training in bfloat16 or float16 for model weights and activations, with a float32 master copy maintained for optimizer state accumulation. Halves memory usage and doubles compute throughput on Tensor Core hardware.
+- **Scaling laws:** Empirical power-law relationships between model quality (perplexity) and training compute (model size × training tokens), established by Kaplan et al. (2020) and Hoffmann et al. (2022), that predict the compute-optimal model size and dataset size for a given training budget. Fundamental to planning distributed training runs.
 
   ## Cross-References to Related Ontology Pages
 
   The following pages in this knowledge graph are directly related to Distributed AI Training and should be consulted for adjacent concepts:
 
-  - [[Gradient Descent]] — the optimisation algorithm at the core of every distributed training run; all-reduce synchronises gradients for a distributed gradient descent step
-  - [[Backpropagation]] — the algorithm that computes gradients for [[Gradient Descent]]; distributed training partitions the backprop computation across workers
-  - [[Large Language Models]] — the primary beneficiary of distributed training infrastructure; frontier LLMs require thousands of GPUs for weeks to pre-train
-  - [[Transformer Architecture]] — the dominant model architecture trained on distributed clusters; tensor and pipeline parallelism are specifically designed for transformer layer structure
-  - [[Mixture of Experts]] — requires expert parallelism in addition to standard 3D parallelism; distributed training for MoE requires coordinating token routing across GPUs
-  - [[DiLoCo]] — the low-communication distributed training paradigm that enables training across geographically distributed clusters and the internet
-  - [[Federated Learning]] — a complementary paradigm for distributed training on private, non-centralised data; trades communication efficiency for data privacy
-  - [[Deep Learning]] — the field whose computational requirements motivated distributed training; scaling laws connect model quality to distributed training compute
-  - [[Reinforcement Learning from Human Feedback]] — a fine-tuning paradigm requiring distributed training of actor, critic, and reference policy models simultaneously
-  - [[GPU Cluster]] — the physical infrastructure on which distributed AI training runs; NVLink and InfiniBand fabric topology determine parallelism configurations
-  - [[Cloud Computing]] — the provider of on-demand distributed training infrastructure; AWS, Azure, and GCP provide managed distributed training services
-  - [[Mixed Precision Training]] — the numerical precision strategy that halves memory usage and doubles compute throughput for distributed training
-  - [[Reinforcement Learning]] — used in Wayve's autonomous driving training and in RLHF fine-tuning; requires distributed compute for large-scale simulation and policy training
-  - [[Natural Language Processing]] — the application domain that drives the majority of frontier distributed training investment; LLM pre-training at scale is the defining NLP workload of the 2020s
+- [[Gradient Descent]] — the optimisation algorithm at the core of every distributed training run; all-reduce synchronises gradients for a distributed gradient descent step
+- [[Backpropagation]] — the algorithm that computes gradients for [[Gradient Descent]]; distributed training partitions the backprop computation across workers
+- [[Large Language Models]] — the primary beneficiary of distributed training infrastructure; frontier LLMs require thousands of GPUs for weeks to pre-train
+- [[Transformer Architecture]] — the dominant model architecture trained on distributed clusters; tensor and pipeline parallelism are specifically designed for transformer layer structure
+- [[Mixture of Experts]] — requires expert parallelism in addition to standard 3D parallelism; distributed training for MoE requires coordinating token routing across GPUs
+- [[DiLoCo]] — the low-communication distributed training paradigm that enables training across geographically distributed clusters and the internet
+- [[Federated Learning]] — a complementary paradigm for distributed training on private, non-centralised data; trades communication efficiency for data privacy
+- [[Deep Learning]] — the field whose computational requirements motivated distributed training; scaling laws connect model quality to distributed training compute
+- [[Reinforcement Learning from Human Feedback]] — a fine-tuning paradigm requiring distributed training of actor, critic, and reference policy models simultaneously
+- [[GPU Cluster]] — the physical infrastructure on which distributed AI training runs; NVLink and InfiniBand fabric topology determine parallelism configurations
+- [[Cloud Computing]] — the provider of on-demand distributed training infrastructure; AWS, Azure, and GCP provide managed distributed training services
+- [[Mixed Precision Training]] — the numerical precision strategy that halves memory usage and doubles compute throughput for distributed training
+- [[Reinforcement Learning]] — used in Wayve's autonomous driving training and in RLHF fine-tuning; requires distributed compute for large-scale simulation and policy training
+- [[Natural Language Processing]] — the application domain that drives the majority of frontier distributed training investment; LLM pre-training at scale is the defining NLP workload of the 2020s
 
   ## Research and Literature
 
@@ -486,14 +487,14 @@ Distributed AI training is the practice of training machine-learning models acro
 
   The progression of distributed training scale illustrates the engineering advances that made each generation of frontier models possible:
 
-  - **AlexNet (2012, Krizhevsky et al., University of Toronto):** First to use two GPUs (GTX 580, 3GB VRAM) connected via MPI to train a deep convolutional network on ImageNet. The inter-GPU split was motivated purely by memory constraints: the model did not fit on a single 3GB GPU. Though modest by modern standards, this was the first practical demonstration that multi-GPU training was feasible for deep learning.
-  - **DistBelief GPT-2 equivalent (2012, Google):** Dean et al.'s DistBelief system trained a 1 billion parameter neural network on 16,000 CPU cores via parameter server architecture, demonstrating that massive-scale distributed training was possible before GPUs became the dominant accelerator.
-  - **Megatron-LM (2019, NVIDIA):** 8.3 billion parameter GPT-style model trained on 512 NVIDIA V100 GPUs in 9.2 days using tensor and pipeline parallelism. First practical demonstration that model parallelism could scale transformer training beyond single-node memory limits.
-  - **Megatron-Turing NLG 530B (2021, Microsoft/NVIDIA):** 530 billion parameter [[Transformer Architecture|transformer]] trained on 4,480 A100 GPUs using ZeRO + tensor + pipeline (3D) parallelism. Demonstrated 3D parallelism at production scale and held the record for largest dense language model for over a year.
-  - **PaLM (2022, Google):** 540 billion parameter model trained on 6,144 TPU v4 chips using JAX/XLA GSPMD automatic partitioning. Notable for scaling [[Reinforcement Learning from Human Feedback|chain-of-thought reasoning]] capabilities and demonstrating that TPU-based training could match GPU-based training at extreme scale.
-  - **GPT-4 (2023, OpenAI):** Estimated 1.8 trillion parameter [[Mixture of Experts]] model (unconfirmed) trained on approximately 25,000 A100 GPUs for 90–100 days. The largest training run to date in terms of total compute, with an estimated cost of $50–100 million.
-  - **Llama 3 405B (2024, Meta):** 405 billion parameter [[Large Language Models|LLM]] trained on 16,000 H100 GPUs using Megatron-LM 4D parallelism (data + tensor + pipeline + sequence). Meta open-sourced the model weights, making frontier-scale [[Transformer Architecture|transformer]] architectures accessible for fine-tuning and research.
-  - **INTELLECT-1 (2024, Prime Intellect):** 10 billion parameter model trained across five countries using [[DiLoCo]] with int8 gradient compression, demonstrating internet-scale decentralised training for the first time at meaningful model scale.
+- **AlexNet (2012, Krizhevsky et al., University of Toronto):** First to use two GPUs (GTX 580, 3GB VRAM) connected via MPI to train a deep convolutional network on ImageNet. The inter-GPU split was motivated purely by memory constraints: the model did not fit on a single 3GB GPU. Though modest by modern standards, this was the first practical demonstration that multi-GPU training was feasible for deep learning.
+- **DistBelief GPT-2 equivalent (2012, Google):** Dean et al.'s DistBelief system trained a 1 billion parameter neural network on 16,000 CPU cores via parameter server architecture, demonstrating that massive-scale distributed training was possible before GPUs became the dominant accelerator.
+- **Megatron-LM (2019, NVIDIA):** 8.3 billion parameter GPT-style model trained on 512 NVIDIA V100 GPUs in 9.2 days using tensor and pipeline parallelism. First practical demonstration that model parallelism could scale transformer training beyond single-node memory limits.
+- **Megatron-Turing NLG 530B (2021, Microsoft/NVIDIA):** 530 billion parameter [[Transformer Architecture|transformer]] trained on 4,480 A100 GPUs using ZeRO + tensor + pipeline (3D) parallelism. Demonstrated 3D parallelism at production scale and held the record for largest dense language model for over a year.
+- **PaLM (2022, Google):** 540 billion parameter model trained on 6,144 TPU v4 chips using JAX/XLA GSPMD automatic partitioning. Notable for scaling [[Reinforcement Learning from Human Feedback|chain-of-thought reasoning]] capabilities and demonstrating that TPU-based training could match GPU-based training at extreme scale.
+- **GPT-4 (2023, OpenAI):** Estimated 1.8 trillion parameter [[Mixture of Experts]] model (unconfirmed) trained on approximately 25,000 A100 GPUs for 90–100 days. The largest training run to date in terms of total compute, with an estimated cost of $50–100 million.
+- **Llama 3 405B (2024, Meta):** 405 billion parameter [[Large Language Models|LLM]] trained on 16,000 H100 GPUs using Megatron-LM 4D parallelism (data + tensor + pipeline + sequence). Meta open-sourced the model weights, making frontier-scale [[Transformer Architecture|transformer]] architectures accessible for fine-tuning and research.
+- **INTELLECT-1 (2024, Prime Intellect):** 10 billion parameter model trained across five countries using [[DiLoCo]] with int8 gradient compression, demonstrating internet-scale decentralised training for the first time at meaningful model scale.
 
   ## Monitoring and Observability in Distributed Training
 
@@ -537,5 +538,5 @@ Distributed AI training is the practice of training machine-learning models acro
 
   The UK's substantial investment in distributed training infrastructure through AIRR (Isambard-AI at Bristol, Dawn at Cambridge) and the foundational research contributions of Google DeepMind (DiLoCo, GShard, scaling laws), the Alan Turing Institute, Edinburgh, Imperial, and Manchester position the UK as a significant player in frontier distributed training capacity and methodology. Governance challenges — compute thresholds for safety evaluation, supply chain security, environmental sustainability, and the open vs. closed model development tension — will shape how distributed AI training capacity is built, regulated, and accessed over the 2026–2030 period.
 
-- ### Provenance
+### Provenance
 

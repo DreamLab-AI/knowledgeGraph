@@ -1,76 +1,82 @@
-
 A Personal Data Store (PDS) is a user-controlled software system or vault that aggregates, stores, and selectively discloses an individual's personal data — including identity attributes, health records, behavioural logs, and transaction histories — under the direct control of the data subject. It enforces consent-based access through verifiable credentials and cryptographic authorisation mechanisms, enabling fine-grained, revocable sharing with third-party services. PDSs embody the principles of data sovereignty and privacy-by-design, decoupling data custody from service providers and restoring ownership to individuals. They serve as a foundational layer for interoperable digital identity ecosystems, federated personal AI assistants, and regulatory compliance with frameworks such as GDPR and CCPA.
 
-- ### Overview
-  - The Personal Data Store concept emerged from the recognition that the dominant model of platform-controlled data silos — in which user data is harvested, processed, and monetised by service providers without meaningful user control — is both privacy-damaging and economically inefficient.
-  - A PDS inverts this model: instead of data flowing to and residing inside each application's private database, it remains in a single user-controlled location and applications are granted time-limited, revocable read or write access.
-  - This paradigm shift is sometimes described as moving from "data as a byproduct of service use" to "data as a personal asset under individual stewardship."
-  - The concept intersects with [[Self-Sovereign Identity]] (SSI), where individuals hold cryptographic keys that prove ownership of identity attributes without relying on central directories.
-  - Architecturally, a PDS typically consists of:
-    - A secure storage layer (local device, personal cloud, or federated server)
-    - An [[Authentication]] and [[Authorisation]] framework (OAuth-2-style grants, DID-based auth)
-    - A data schema layer (often [[Linked Data]] vocabularies such as schema.org, FHIR for health, vCard for contacts)
-    - A consent dashboard that surfaces what data exists, who can access it, and how to revoke access
-    - APIs or protocol adapters (Solid, ActivityPub, OIDC, DIDComm) for application interoperability
-  - Maturity is currently rated "emerging": several implementations are production-grade but mass-market adoption remains limited pending ecosystem coordination.
+### Overview
 
-- ### Key Components
-  - **Storage backend**: encrypted object store or graph database hosting the individual's data under user-controlled keys; may be self-hosted, hosted by a trusted provider, or distributed across edge devices.
-  - **[[Decentralized Identifiers]] (DIDs)**: provide globally unique, cryptographically verifiable identifiers for the data subject that are not dependent on any central registry.
-  - **[[Verifiable Credentials]]**: W3C-standardised data structures enabling third parties to issue attestations (age, qualifications, health status) that the PDS holder can selectively present without revealing the underlying raw data.
-  - **[[Access Control]] policies**: fine-grained rules specifying which agents, for which purposes, for which time windows, may read or write which data subsets; implemented as Web Access Control (WAC) in the Solid ecosystem or as ZCAP-LD capability tokens.
-  - **[[Consent Management]] layer**: user-facing interface and machine-readable policy store tracking consent receipts as defined by ISO/IEC 29184 and the Kantara Consent Receipt specification.
-  - **[[End-to-End Encryption]]**: data at rest and in transit is encrypted using keys held only by the data subject, preventing even the PDS hosting provider from accessing content in plaintext.
-  - **[[Data Portability]] APIs**: standards-compliant export and import interfaces (e.g., GDPR Article 20 mandated machine-readable export, DTP formats) ensuring the user can migrate without lock-in.
-  - **[[Linked Data]] schemas**: RDF-based vocabularies that make stored data semantically interoperable across applications without requiring bespoke integration work per data pair.
-  - **Audit log**: immutable, append-only record of all data access events, allowing the owner to retrospectively verify whether access terms were honoured.
-  - **Agent interface**: programmatic APIs enabling trusted [[Personal AI Assistant]] agents to query the PDS on behalf of the user, e.g., to provide personalised recommendations without exporting data to cloud AI services.
+- The Personal Data Store concept emerged from the recognition that the dominant model of platform-controlled data silos — in which user data is harvested, processed, and monetised by service providers without meaningful user control — is both privacy-damaging and economically inefficient.
+- A PDS inverts this model: instead of data flowing to and residing inside each application's private database, it remains in a single user-controlled location and applications are granted time-limited, revocable read or write access.
+- This paradigm shift is sometimes described as moving from "data as a byproduct of service use" to "data as a personal asset under individual stewardship."
+- The concept intersects with [[Self-Sovereign Identity]] (SSI), where individuals hold cryptographic keys that prove ownership of identity attributes without relying on central directories.
+- Architecturally, a PDS typically consists of:
+  - A secure storage layer (local device, personal cloud, or federated server)
+  - An [[Authentication]] and [[Authorisation]] framework (OAuth-2-style grants, DID-based auth)
+  - A data schema layer (often [[Linked Data]] vocabularies such as schema.org, FHIR for health, vCard for contacts)
+  - A consent dashboard that surfaces what data exists, who can access it, and how to revoke access
+  - APIs or protocol adapters (Solid, ActivityPub, OIDC, DIDComm) for application interoperability
+- Maturity is currently rated "emerging": several implementations are production-grade but mass-market adoption remains limited pending ecosystem coordination.
 
-- ### Applications and Use Cases
-  - **Healthcare data control**: a patient's PDS aggregates EHR records from multiple providers; the patient grants a specialist temporary read access to relevant records only, revoking it after the consultation. Compatible with [[FHIR]] data standards.
-  - **Financial data aggregation**: under Open Banking (PSD2 in the EU, CDR in Australia), a PDS acts as a consent broker, pulling transaction history from banks and selectively sharing it with budgeting apps or mortgage lenders without intermediary data brokers.
-  - **Personalised advertising on user terms**: instead of tracking cookies and third-party data brokers, advertisers query a user's PDS for declared preferences; the user is compensated or simply retains control over what is shared via a [[Data Marketplace]] model.
-  - **Education credential wallet**: academic certificates issued as [[Verifiable Credentials]] are held in the PDS; the holder presents cryptographic proofs of qualification to employers without revealing other transcript details.
-  - **Metaverse identity portability**: avatars, reputations, and in-world asset ownership are anchored to a PDS-held DID, allowing the user to carry their digital identity and social graph across virtual environments without platform re-registration. Connects to [[Federated Identity]] patterns in the metaverse.
-  - **Federated machine learning**: a research consortium's [[Federated Machine Learning]] pipeline queries consented data subsets from participant PDSs; raw data never leaves the individual's store, enabling population-level insights with individual privacy preservation.
-  - **Smart-city services**: municipal apps (transit, waste collection, local alerts) read only the attributes a citizen has explicitly shared from their PDS, avoiding the surveillance model of centralised city data lakes.
-  - **Decentralised social networking**: ActivityPub-connected PDSs let users host their own social graph data, enabling cross-platform following and posting without dependence on a centralised platform's terms of service.
+### Key Components
 
-- ### Standards and Context
-  - **W3C Solid**: Tim Berners-Lee's open standard (originally developed at MIT, now at Inrupt and standardised at W3C) that specifies a protocol for personal online datastores (Pods) using Linked Data principles. Solid Pods are the most mature open-standard PDS implementation available today.
-  - **W3C DID Core**: defines [[Decentralized Identifiers]], the identity anchor mechanism for most PDS architectures, allowing authentication without centralised registries.
-  - **W3C Verifiable Credentials Data Model**: specifies the credential format for attestations issued to and stored within a PDS.
-  - **GDPR (General Data Protection Regulation, EU 2016/679)**: Articles 15–20 (rights of access, rectification, erasure, restriction, portability, and objection) create a regulatory mandate for PDS-like capabilities, driving adoption in European markets.
-  - **CCPA / CPRA (California Consumer Privacy Act / Privacy Rights Act)**: analogous US state-level regulation driving similar data rights in the American market.
-  - **ISO/IEC 29184**: international standard for online privacy notices and consent, relevant to PDS consent-receipt design.
-  - **Kantara Consent Receipt**: community specification for a machine-readable JSON consent receipt, commonly referenced in PDS consent layers.
-  - **MyData Global**: non-profit coalition promoting human-centric data management; the MyData Operator certification scheme provides a governance framework for PDS hosting services.
-  - **OpenID Connect (OIDC) and OAuth 2.0**: widely used protocol layer for delegated authorisation flows between PDS and third-party applications.
-  - **DIDComm**: DIF (Decentralised Identity Foundation) messaging protocol enabling secure, private communication between DIDs; used in PDS-to-agent and PDS-to-PDS protocols.
-  - **ActivityPub (W3C)**: federated social networking protocol increasingly paired with PDS architectures to enable decentralised social graphs.
-  - Regulatory tailwinds (GDPR, DSA, Data Act in the EU; CDR in Australia; emerging US federal privacy bills) are accelerating PDS adoption by mandating data portability and right-to-erasure capabilities that central silos struggle to implement cleanly.
+- **Storage backend**: encrypted object store or graph database hosting the individual's data under user-controlled keys; may be self-hosted, hosted by a trusted provider, or distributed across edge devices.
+- **[[Decentralized Identifiers]] (DIDs)**: provide globally unique, cryptographically verifiable identifiers for the data subject that are not dependent on any central registry.
+- **[[Verifiable Credentials]]**: W3C-standardised data structures enabling third parties to issue attestations (age, qualifications, health status) that the PDS holder can selectively present without revealing the underlying raw data.
+- **[[Access Control]] policies**: fine-grained rules specifying which agents, for which purposes, for which time windows, may read or write which data subsets; implemented as Web Access Control (WAC) in the Solid ecosystem or as ZCAP-LD capability tokens.
+- **[[Consent Management]] layer**: user-facing interface and machine-readable policy store tracking consent receipts as defined by ISO/IEC 29184 and the Kantara Consent Receipt specification.
+- **[[End-to-End Encryption]]**: data at rest and in transit is encrypted using keys held only by the data subject, preventing even the PDS hosting provider from accessing content in plaintext.
+- **[[Data Portability]] APIs**: standards-compliant export and import interfaces (e.g., GDPR Article 20 mandated machine-readable export, DTP formats) ensuring the user can migrate without lock-in.
+- **[[Linked Data]] schemas**: RDF-based vocabularies that make stored data semantically interoperable across applications without requiring bespoke integration work per data pair.
+- **Audit log**: immutable, append-only record of all data access events, allowing the owner to retrospectively verify whether access terms were honoured.
+- **Agent interface**: programmatic APIs enabling trusted [[Personal AI Assistant]] agents to query the PDS on behalf of the user, e.g., to provide personalised recommendations without exporting data to cloud AI services.
 
-- ### Contrasting Concepts
-  - **[[Centralised Data Silo]]**: the dominant alternative, where each service platform holds user data in its own proprietary database with limited user visibility or control.
-  - **[[Data Broker]]**: commercial entities that aggregate personal data from many sources and sell it; PDSs disintermediate this model by returning data ownership to the individual.
-  - **Cloud storage services (Google Drive, iCloud)**: offer user-accessible storage but do not implement consent-based third-party access controls or semantic interoperability at the PDS level.
+### Applications and Use Cases
 
-- ### Current Landscape (2026)
-  - Solid, the leading personal-data-store (Pod) architecture, moved onto the formal W3C standards track in October 2024 with the new Linked Web Storage Working Group (co-chaired by Inrupt's Aaron Coburn), graduating the protocol from Community Group draft to an official work item alongside HTML and Verifiable Credentials.
-  - The Open Data Institute (ODI), co-founded by Tim Berners-Lee and Nigel Shadbolt, took over stewardship of the Solid project, protocol and community from October 2024, folding it into its data-stewardship portfolio.
-  - The frontier has shifted decisively towards AI: Inrupt released Enterprise Solid Server (ESS) 3.0 in mid-2026 ("making consumer data ready for AI assistants"), adding a standards-based MCP server bridging AI agents to consented Pod data, native identity-provider support (Okta, Azure AD, Ping), stable identifiers and environment isolation.
-  - "Agentic Wallets" emerged as a design pattern combining Solid's Web Access Control with Anthropic's Model Context Protocol to enforce least-privilege, time-bound agent access; the academic Liquid Protocol (OpenReview, 2025) formalised MCP-to-Pod operations, arguing PDS query-at-source enables instant GDPR Right-to-be-Forgotten compliance versus data baked into model weights.
-  - Regulation converged on user-held stores: eIDAS 2.0 (Regulation (EU) 2024/1183) mandates every Member State offer a European Digital Identity Wallet by end of 2026, with a further tranche of implementing regulations (EU 2026/1730, 2026/1731, 2026/1735) published 22 July 2026 specifying PID formats (ISO mdoc, SD-JWT VC), selective disclosure and relying-party registration.
-  - The EU Data Governance Act's data-intermediation rules became applicable in September 2025 and most Data Act provisions from 12 September 2025, but uptake of registered Data Intermediation Service Providers stayed low; MyData Global's October 2025 "Human-Centric Roadmap for Europe" flagged that DMA real-time data portability remains largely theoretical and proposed a lighter-touch DIASP category plus a "European Personal Cloud" programme.
-  - Consolidation continued around consumer reach: Project Liberty's Frank McCourt confirmed Solid-integration talks with Berners-Lee at SXSW 2025, while Inrupt's own sandbox Pods still discourage storing real personal data, underlining the open challenge that a mature, paid, consumer-grade Pod-hosting market has yet to materialise.
+- **Healthcare data control**: a patient's PDS aggregates EHR records from multiple providers; the patient grants a specialist temporary read access to relevant records only, revoking it after the consultation. Compatible with [[FHIR]] data standards.
+- **Financial data aggregation**: under Open Banking (PSD2 in the EU, CDR in Australia), a PDS acts as a consent broker, pulling transaction history from banks and selectively sharing it with budgeting apps or mortgage lenders without intermediary data brokers.
+- **Personalised advertising on user terms**: instead of tracking cookies and third-party data brokers, advertisers query a user's PDS for declared preferences; the user is compensated or simply retains control over what is shared via a [[Data Marketplace]] model.
+- **Education credential wallet**: academic certificates issued as [[Verifiable Credentials]] are held in the PDS; the holder presents cryptographic proofs of qualification to employers without revealing other transcript details.
+- **Metaverse identity portability**: avatars, reputations, and in-world asset ownership are anchored to a PDS-held DID, allowing the user to carry their digital identity and social graph across virtual environments without platform re-registration. Connects to [[Federated Identity]] patterns in the metaverse.
+- **Federated machine learning**: a research consortium's [[Federated Machine Learning]] pipeline queries consented data subsets from participant PDSs; raw data never leaves the individual's store, enabling population-level insights with individual privacy preservation.
+- **Smart-city services**: municipal apps (transit, waste collection, local alerts) read only the attributes a citizen has explicitly shared from their PDS, avoiding the surveillance model of centralised city data lakes.
+- **Decentralised social networking**: ActivityPub-connected PDSs let users host their own social graph data, enabling cross-platform following and posting without dependence on a centralised platform's terms of service.
 
-- ### References
-  - 1. Inrupt (2026). ESS Version 3.0: Making consumer data ready for AI assistants (Inrupt Blog). https://www.inrupt.com/blog
-  - 2. Inrupt (2025). Solid and MCP: Safer Identity and Permissioning for AI Agents. https://www.inrupt.com/blog/why-were-excited-about-solid-and-mcp
-  - 3. Open Data Institute (2024). ODI and Solid come together to give individuals greater control over personal data. https://theodi.org/news-and-events/news/odi-and-solid-come-together-to-give-individuals-greater-control-over-personal-data/
-  - 4. European Data Protection Supervisor (2025). TechDispatch #3/2025 - Digital Identity Wallets. https://www.edps.europa.eu/data-protection/our-work/publications/techdispatch/2025-12-15-techdispatch-32025-digital-identity-wallets_en
-  - 5. MyData Global (2025). A Human-Centric Roadmap for Europe. https://mydata.org/wp-content/uploads/2025/10/Roadmap-for-Europe-MyDataGlobal-2025.pdf
-  - 6. European Parliament (2025). Data Act: Data sharing and competitiveness (EPRS At a Glance). https://www.europarl.europa.eu/RegData/etudes/ATAG/2025/775915/EPRS_ATA(2025)775915_EN.pdf
+### Standards and Context
 
-- ### Provenance
+- **W3C Solid**: Tim Berners-Lee's open standard (originally developed at MIT, now at Inrupt and standardised at W3C) that specifies a protocol for personal online datastores (Pods) using Linked Data principles. Solid Pods are the most mature open-standard PDS implementation available today.
+- **W3C DID Core**: defines [[Decentralized Identifiers]], the identity anchor mechanism for most PDS architectures, allowing authentication without centralised registries.
+- **W3C Verifiable Credentials Data Model**: specifies the credential format for attestations issued to and stored within a PDS.
+- **GDPR (General Data Protection Regulation, EU 2016/679)**: Articles 15–20 (rights of access, rectification, erasure, restriction, portability, and objection) create a regulatory mandate for PDS-like capabilities, driving adoption in European markets.
+- **CCPA / CPRA (California Consumer Privacy Act / Privacy Rights Act)**: analogous US state-level regulation driving similar data rights in the American market.
+- **ISO/IEC 29184**: international standard for online privacy notices and consent, relevant to PDS consent-receipt design.
+- **Kantara Consent Receipt**: community specification for a machine-readable JSON consent receipt, commonly referenced in PDS consent layers.
+- **MyData Global**: non-profit coalition promoting human-centric data management; the MyData Operator certification scheme provides a governance framework for PDS hosting services.
+- **OpenID Connect (OIDC) and OAuth 2.0**: widely used protocol layer for delegated authorisation flows between PDS and third-party applications.
+- **DIDComm**: DIF (Decentralised Identity Foundation) messaging protocol enabling secure, private communication between DIDs; used in PDS-to-agent and PDS-to-PDS protocols.
+- **ActivityPub (W3C)**: federated social networking protocol increasingly paired with PDS architectures to enable decentralised social graphs.
+- Regulatory tailwinds (GDPR, DSA, Data Act in the EU; CDR in Australia; emerging US federal privacy bills) are accelerating PDS adoption by mandating data portability and right-to-erasure capabilities that central silos struggle to implement cleanly.
+
+### Contrasting Concepts
+
+- **[[Centralised Data Silo]]**: the dominant alternative, where each service platform holds user data in its own proprietary database with limited user visibility or control.
+- **[[Data Broker]]**: commercial entities that aggregate personal data from many sources and sell it; PDSs disintermediate this model by returning data ownership to the individual.
+- **Cloud storage services (Google Drive, iCloud)**: offer user-accessible storage but do not implement consent-based third-party access controls or semantic interoperability at the PDS level.
+
+### Current Landscape (2026)
+
+- Solid, the leading personal-data-store (Pod) architecture, moved onto the formal W3C standards track in October 2024 with the new Linked Web Storage Working Group (co-chaired by Inrupt's Aaron Coburn), graduating the protocol from Community Group draft to an official work item alongside HTML and Verifiable Credentials.
+- The Open Data Institute (ODI), co-founded by Tim Berners-Lee and Nigel Shadbolt, took over stewardship of the Solid project, protocol and community from October 2024, folding it into its data-stewardship portfolio.
+- The frontier has shifted decisively towards AI: Inrupt released Enterprise Solid Server (ESS) 3.0 in mid-2026 ("making consumer data ready for AI assistants"), adding a standards-based MCP server bridging AI agents to consented Pod data, native identity-provider support (Okta, Azure AD, Ping), stable identifiers and environment isolation.
+- "Agentic Wallets" emerged as a design pattern combining Solid's Web Access Control with Anthropic's Model Context Protocol to enforce least-privilege, time-bound agent access; the academic Liquid Protocol (OpenReview, 2025) formalised MCP-to-Pod operations, arguing PDS query-at-source enables instant GDPR Right-to-be-Forgotten compliance versus data baked into model weights.
+- Regulation converged on user-held stores: eIDAS 2.0 (Regulation (EU) 2024/1183) mandates every Member State offer a European Digital Identity Wallet by end of 2026, with a further tranche of implementing regulations (EU 2026/1730, 2026/1731, 2026/1735) published 22 July 2026 specifying PID formats (ISO mdoc, SD-JWT VC), selective disclosure and relying-party registration.
+- The EU Data Governance Act's data-intermediation rules became applicable in September 2025 and most Data Act provisions from 12 September 2025, but uptake of registered Data Intermediation Service Providers stayed low; MyData Global's October 2025 "Human-Centric Roadmap for Europe" flagged that DMA real-time data portability remains largely theoretical and proposed a lighter-touch DIASP category plus a "European Personal Cloud" programme.
+- Consolidation continued around consumer reach: Project Liberty's Frank McCourt confirmed Solid-integration talks with Berners-Lee at SXSW 2025, while Inrupt's own sandbox Pods still discourage storing real personal data, underlining the open challenge that a mature, paid, consumer-grade Pod-hosting market has yet to materialise.
+
+### References
+
+- 1. Inrupt (2026). ESS Version 3.0: Making consumer data ready for AI assistants (Inrupt Blog). https://www.inrupt.com/blog
+- 2. Inrupt (2025). Solid and MCP: Safer Identity and Permissioning for AI Agents. https://www.inrupt.com/blog/why-were-excited-about-solid-and-mcp
+- 3. Open Data Institute (2024). ODI and Solid come together to give individuals greater control over personal data. https://theodi.org/news-and-events/news/odi-and-solid-come-together-to-give-individuals-greater-control-over-personal-data/
+- 4. European Data Protection Supervisor (2025). TechDispatch #3/2025 - Digital Identity Wallets. https://www.edps.europa.eu/data-protection/our-work/publications/techdispatch/2025-12-15-techdispatch-32025-digital-identity-wallets_en
+- 5. MyData Global (2025). A Human-Centric Roadmap for Europe. https://mydata.org/wp-content/uploads/2025/10/Roadmap-for-Europe-MyDataGlobal-2025.pdf
+- 6. European Parliament (2025). Data Act: Data sharing and competitiveness (EPRS At a Glance). https://www.europarl.europa.eu/RegData/etudes/ATAG/2025/775915/EPRS_ATA(2025)775915_EN.pdf
+
+### Provenance
 

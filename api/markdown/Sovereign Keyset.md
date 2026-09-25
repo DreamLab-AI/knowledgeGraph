@@ -1,33 +1,32 @@
-
 The cryptographic key material (BIP-340 Schnorr Keypair|BIP-340 Schnorr keypair) held securely by each VisionClaw Agentic Container|VisionClaw agent, used to prove identity via DID Nostr Identity|did:nostr DIDs, sign Verifiable Credential Surface|verifiable credentials, authentica...
 
-- ### Semantic Classification
+### Semantic Classification
 
-- ### Content
+### Content
 
-  Every [[VisionClaw Agentic Container|VisionClaw agent]] is born with a unique **Sovereign Keyset**: a [[BIP-340 Schnorr Keypair|Schnorr keypair]] that the agent controls exclusively and never delegates. This keyset is the cryptographic root of the agent's identity and all its assertions.
+Every [[VisionClaw Agentic Container|VisionClaw agent]] is born with a unique **Sovereign Keyset**: a [[BIP-340 Schnorr Keypair|Schnorr keypair]] that the agent controls exclusively and never delegates. This keyset is the cryptographic root of the agent's identity and all its assertions.
 
-  #### Key Derivation
+#### Key Derivation
 
-  The keyset is generated at agent instantiation:
+The keyset is generated at agent instantiation:
 
-  1. **Entropy Source**: A cryptographically secure random number generator produces 256 bits of entropy.
-  2. **Scalar Derivation**: The 256-bit entropy becomes the private key (also called the secret scalar) in the secp256k1 field.
-  3. **Public Key Computation**: The private key is used to compute the corresponding point on the secp256k1 curve. The x-coordinate of this point (32 bytes) is the BIP-340 x-only public key.
-  4. **Encoding**: The public key is encoded as 64 lowercase hexadecimal characters.
-  5. **DID Formation**: The public key is prefixed with `did:nostr:` to form the agent's [[DID Nostr Identity|canonical DID]].
+1. **Entropy Source**: A cryptographically secure random number generator produces 256 bits of entropy.
+2. **Scalar Derivation**: The 256-bit entropy becomes the private key (also called the secret scalar) in the secp256k1 field.
+3. **Public Key Computation**: The private key is used to compute the corresponding point on the secp256k1 curve. The x-coordinate of this point (32 bytes) is the BIP-340 x-only public key.
+4. **Encoding**: The public key is encoded as 64 lowercase hexadecimal characters.
+5. **DID Formation**: The public key is prefixed with `did:nostr:` to form the agent's [[DID Nostr Identity|canonical DID]].
 
-  Once derived, the private key is **stored securely** and the public key is **published freely**.
+Once derived, the private key is **stored securely** and the public key is **published freely**.
 
-  #### Key Storage
+#### Key Storage
 
-  [[VisionClaw Agentic Container|VisionClaw agents]] may store their private keys in different ways depending on deployment context:
+[[VisionClaw Agentic Container|VisionClaw agents]] may store their private keys in different ways depending on deployment context:
 
-  - **In-Memory (Development)**: Private key kept in agent memory. Suitable for ephemeral test agents.
-  - **Encrypted at Rest**: Private key encrypted with a passphrase and stored on disk. The agent decrypts the key on startup.
-  - **Hardware Security Module (HSM)**: Private key never leaves the HSM. The agent communicates with the HSM via a secure interface to request signatures.
-  - **Solid Pod**: Private key stored in a personal [[Solid Pod Storage|Solid pod]] with strict access controls.
-  - **Multi-Signature Custody**: Private key material is split using Shamir's secret sharing; multiple parties hold key shards.
+- **In-Memory (Development)**: Private key kept in agent memory. Suitable for ephemeral test agents.
+- **Encrypted at Rest**: Private key encrypted with a passphrase and stored on disk. The agent decrypts the key on startup.
+- **Hardware Security Module (HSM)**: Private key never leaves the HSM. The agent communicates with the HSM via a secure interface to request signatures.
+- **Solid Pod**: Private key stored in a personal [[Solid Pod Storage|Solid pod]] with strict access controls.
+- **Multi-Signature Custody**: Private key material is split using Shamir's secret sharing; multiple parties hold key shards.
 
   The choice depends on the agent's security posture and operational environment. High-stakes agents (financial, critical infrastructure) use HSMs; ephemeral research agents may use in-memory keys.
 
@@ -62,36 +61,40 @@ The cryptographic key material (BIP-340 Schnorr Keypair|BIP-340 Schnorr keypair)
 
   An advanced pattern uses **multi-signature credentials**:
 
-  - Three agents (A, B, C) agree to jointly issue credentials on a shared topic.
-  - A credential is valid only if signed by at least 2-of-3 agents.
-  - Each agent uses its own Sovereign Keyset to sign; the credential aggregates all signatures.
-  - Verifiers check that the credential carries valid signatures from enough agents.
+- Three agents (A, B, C) agree to jointly issue credentials on a shared topic.
+- A credential is valid only if signed by at least 2-of-3 agents.
+- Each agent uses its own Sovereign Keyset to sign; the credential aggregates all signatures.
+- Verifiers check that the credential carries valid signatures from enough agents.
 
   This pattern requires no shared key material; each agent keeps its own keyset, but the semantics of the credential enforce multi-party consensus.
 
   #### Threat Model and Mitigations
 
   **Threat: Private Key Theft**
-  - *Mitigation*: Store key in HSM or encrypted with a strong passphrase. Implement rate limiting on signing operations to detect brute-force attacks.
+
+- *Mitigation*: Store key in HSM or encrypted with a strong passphrase. Implement rate limiting on signing operations to detect brute-force attacks.
 
   **Threat: Compromise of Agent Runtime**
-  - *Mitigation*: Even if an attacker gains code execution in the agent, the HSM-stored key is inaccessible. Signing requests can be logged and audited.
+
+- *Mitigation*: Even if an attacker gains code execution in the agent, the HSM-stored key is inaccessible. Signing requests can be logged and audited.
 
   **Threat: Key Reuse Across Agents**
-  - *Mitigation*: Each agent is allocated a unique keyset at instantiation. Sharing a key between agents is architecturally forbidden.
+
+- *Mitigation*: Each agent is allocated a unique keyset at instantiation. Sharing a key between agents is architecturally forbidden.
 
   **Threat: Weak Random Number Generation**
-  - *Mitigation*: Use operating system RNG (e.g., /dev/urandom on Unix) or a hardware RNG. Never use deterministic RNGs.
+
+- *Mitigation*: Use operating system RNG (e.g., /dev/urandom on Unix) or a hardware RNG. Never use deterministic RNGs.
 
   #### Integration with Broader Systems
 
   Other systems can integrate with a VisionClaw agent's keyset:
 
-  - **External Verifiers**: Obtain the agent's public key (from the [[DID Nostr Identity|did:nostr]]) and verify credentials offline.
-  - **Blockchain Oracles**: The oracle queries the agent's [[Federation Surface|federation surfaces]], retrieves a credential, verifies the signature, and if valid, reports the credential to the smart contract.
-  - **Compliance Audits**: The auditor collects all credentials issued by the agent, verifies each signature, and generates a report.
+- **External Verifiers**: Obtain the agent's public key (from the [[DID Nostr Identity|did:nostr]]) and verify credentials offline.
+- **Blockchain Oracles**: The oracle queries the agent's [[Federation Surface|federation surfaces]], retrieves a credential, verifies the signature, and if valid, reports the credential to the smart contract.
+- **Compliance Audits**: The auditor collects all credentials issued by the agent, verifies each signature, and generates a report.
 
   Because Schnorr signatures are a standard cryptographic primitive, no special VisionClaw knowledge is required for external verification.
 
-- ### Provenance
+### Provenance
 

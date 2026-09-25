@@ -1,24 +1,24 @@
-
 Scene Understanding is the high-level semantic interpretation of visual and sensor data to comprehend the structure, context, objects, relationships, and dynamics of an environment. It encompasses object detection and recognition, spatial layout inference, activity recognition, contextual reasoning, and semantic scene categorisation, enabling autonomous and interactive systems to make contextually appropriate decisions.
 
-- ### Semantic Classification
+### Semantic Classification
 
-- ### Content
-  - Scene Understanding is the high-level semantic interpretation of visual and sensor data to comprehend the structure, context, objects, relationships, and dynamics of an environment. For autonomous systems, scene understanding involves recognising road types, lane configurations, traffic situations, pedestrian intentions, and environmental conditions to enable contextually appropriate decision-making beyond simple object detection.
+### Content
+
+- Scene Understanding is the high-level semantic interpretation of visual and sensor data to comprehend the structure, context, objects, relationships, and dynamics of an environment. For autonomous systems, scene understanding involves recognising road types, lane configurations, traffic situations, pedestrian intentions, and environmental conditions to enable contextually appropriate decision-making beyond simple object detection.
 
   ## Core Characteristics
 
-  - **Semantic Segmentation**: Pixel-level scene labelling
-  - **Contextual Reasoning**: Understanding scene context and relationships
-  - **Activity Recognition**: Interpretation of agent behaviours and intentions
-  - **Scene Categorisation**: Classification of environmental types
-  - **3D Scene Reconstruction**: Spatial layout understanding
+- **Semantic Segmentation**: Pixel-level scene labelling
+- **Contextual Reasoning**: Understanding scene context and relationships
+- **Activity Recognition**: Interpretation of agent behaviours and intentions
+- **Scene Categorisation**: Classification of environmental types
+- **3D Scene Reconstruction**: Spatial layout understanding
 
   ## Relationships
 
-  - **Component Of**: Perception System
-  - **Related**: Computer Vision, Semantic Segmentation, Panoptic Segmentation
-  - **Utilises**: Deep Learning, Graph Neural Networks, Attention Mechanisms
+- **Component Of**: Perception System
+- **Related**: Computer Vision, Semantic Segmentation, Panoptic Segmentation
+- **Utilises**: Deep Learning, Graph Neural Networks, Attention Mechanisms
 
   ## Key Literature
 
@@ -28,9 +28,9 @@ Scene Understanding is the high-level semantic interpretation of visual and sens
 
   ## See Also
 
-  - [[Semantic Segmentation]]
-  - [[Perception System]]
-  - [[Computer Vision]]
+- [[Semantic Segmentation]]
+- [[Perception System]]
+- [[Computer Vision]]
 
-- ### Provenance
+### Provenance
 

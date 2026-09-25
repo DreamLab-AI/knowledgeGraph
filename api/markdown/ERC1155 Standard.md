@@ -1,10 +1,10 @@
-
 Multi-token standard supporting both fungible and non-fungible tokens in a single contract.
 
-- ### Semantic Classification
+### Semantic Classification
 
-- ### Content
-  ERC-1155 Standard — content pending enrichment.
+### Content
 
-- ### Provenance
+ERC-1155 Standard — content pending enrichment.
+
+### Provenance
 

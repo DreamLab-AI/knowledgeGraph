@@ -1,48 +1,47 @@
-
 A semantic encoding pipeline that transforms agent state, credentials, events, and metadata into JSON-LD 1.1 format using pinned, versioned JSON-LD Context|W3C JSON-LD contexts, enabling standardised Federation Surface|federation surfaces (S1–S11) that are queryable, linkable, and mac...
 
-- ### Semantic Classification
+### Semantic Classification
 
-- ### Content
+### Content
 
-  The Linked Data Encoder is a separate subsystem that transforms internal agent state into [[JSON-LD 1.1]] documents. It is decoupled from agent logic, allowing agents to operate without semantic knowledge whilst still emitting federated data.
+The Linked Data Encoder is a separate subsystem that transforms internal agent state into [[JSON-LD 1.1]] documents. It is decoupled from agent logic, allowing agents to operate without semantic knowledge whilst still emitting federated data.
 
-  #### Core Principle: Context Pinning
+#### Core Principle: Context Pinning
 
-  [[JSON-LD 1.1]] documents reference a `@context` that defines how properties map to URIs. For example:
+[[JSON-LD 1.1]] documents reference a `@context` that defines how properties map to URIs. For example:
 
-  ```json
-  {
-    "@context": "https://visionclaw.dreamlab-ai.systems/ns/v1",
-    "issuer": "did:nostr:0123...ef",
-    "credentialSubject": { ... }
-  }
-  ```
+```json
+{
+  "@context": "https://visionclaw.dreamlab-ai.systems/ns/v1",
+  "issuer": "did:nostr:0123...ef",
+  "credentialSubject": { ... }
+}
+```
 
-  The context at `https://visionclaw.dreamlab-ai.systems/ns/v1` defines that `issuer` means `vcw:issuer` (resolving to the VisionClaw namespace), `credentialSubject` means `vc:credentialSubject`, etc.
+The context at `https://visionclaw.dreamlab-ai.systems/ns/v1` defines that `issuer` means `vcw:issuer` (resolving to the VisionClaw namespace), `credentialSubject` means `vc:credentialSubject`, etc.
 
-  **Critical property**: The context is **pinned to a specific version**. If the encoder is updated, the context URL changes (e.g., to `/ns/v2`) so old documents still resolve correctly. Consumers can safely cache the context without worrying about breaking changes.
+**Critical property**: The context is **pinned to a specific version**. If the encoder is updated, the context URL changes (e.g., to `/ns/v2`) so old documents still resolve correctly. Consumers can safely cache the context without worrying about breaking changes.
 
-  #### Surface Emission
+#### Surface Emission
 
-  The encoder monitors the agent's internal state and emits five surfaces:
+The encoder monitors the agent's internal state and emits five surfaces:
 
-  1. **S1 (Pod Index)**: Snapshot of available [[Solid Pod Storage|Solid pods]].
-  2. **S3 (Verifiable Credentials)**: Issued credentials, indexed by issuer DID.
-  3. **S6 (Agent Events)**: Real-time events (birth, startup, activity, completion, error, termination).
-  4. **S9 (Memory Snapshots)**: Periodic memory state snapshots.
-  5. **S11 (Bead Catalogue)**: Index of work units and their status.
+1. **S1 (Pod Index)**: Snapshot of available [[Solid Pod Storage|Solid pods]].
+2. **S3 (Verifiable Credentials)**: Issued credentials, indexed by issuer DID.
+3. **S6 (Agent Events)**: Real-time events (birth, startup, activity, completion, error, termination).
+4. **S9 (Memory Snapshots)**: Periodic memory state snapshots.
+5. **S11 (Bead Catalogue)**: Index of work units and their status.
 
-  Each surface is a separate JSON-LD document, queryable via a dedicated HTTP endpoint.
+Each surface is a separate JSON-LD document, queryable via a dedicated HTTP endpoint.
 
-  #### Canonical JSON and Determinism
+#### Canonical JSON and Determinism
 
-  When encoding, the Linked Data Encoder uses **canonical JSON** (IETF RFC 8785):
+When encoding, the Linked Data Encoder uses **canonical JSON** (IETF RFC 8785):
 
-  - Keys are sorted alphabetically
-  - Numbers are serialised without unnecessary whitespace
-  - Strings use UTF-8 without escapes unless required
-  - No trailing commas or comments
+- Keys are sorted alphabetically
+- Numbers are serialised without unnecessary whitespace
+- Strings use UTF-8 without escapes unless required
+- No trailing commas or comments
 
   This ensures that the same logical data always produces identical bytes, enabling the [[URI Canonicaliser|URI Canonicaliser]] to compute deterministic content hashes.
 
@@ -50,97 +49,97 @@ A semantic encoding pipeline that transforms agent state, credentials, events, a
 
   The pinned context includes prefixes for multiple namespaces:
 
-  ```json
-  {
-    "@context": {
-      "@version": 1.1,
-      "@base": "https://visionclaw.dreamlab-ai.systems/ns/v1#",
-      "vcw": "https://visionclaw.dreamlab-ai.systems/ns/v1#",
-      "ngm": "http://narrativegoldmine.com/ontology#",
-      "ai": "http://narrativegoldmine.com/artificial-intelligence#",
-      "bc": "http://narrativegoldmine.com/blockchain#",
-      "owl": "http://www.w3.org/2002/07/owl#",
-      "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-      "skos": "http://www.w3.org/2004/02/skos/core#",
-      "dcterms": "http://purl.org/dc/terms/",
-      "as": "https://www.w3.org/ns/activitystreams#",
-      "vc": "https://www.w3.org/ns/credentials/v2",
-      "ldp": "http://www.w3.org/ns/ldp#",
-      ...
-    }
+```json
+{
+  "@context": {
+    "@version": 1.1,
+    "@base": "https://visionclaw.dreamlab-ai.systems/ns/v1#",
+    "vcw": "https://visionclaw.dreamlab-ai.systems/ns/v1#",
+    "ngm": "http://narrativegoldmine.com/ontology#",
+    "ai": "http://narrativegoldmine.com/artificial-intelligence#",
+    "bc": "http://narrativegoldmine.com/blockchain#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "dcterms": "http://purl.org/dc/terms/",
+    "as": "https://www.w3.org/ns/activitystreams#",
+    "vc": "https://www.w3.org/ns/credentials/v2",
+    "ldp": "http://www.w3.org/ns/ldp#",
+    ...
   }
-  ```
+}
+```
 
-  This allows documents to use shorthand (e.g., `vcw:requires`) that expands to full IRIs at consumption time.
+This allows documents to use shorthand (e.g., `vcw:requires`) that expands to full IRIs at consumption time.
 
-  #### Property Mapping Rules
+#### Property Mapping Rules
 
-  The encoder defines explicit mapping rules for all agent properties:
+The encoder defines explicit mapping rules for all agent properties:
 
-  ```
-  agent.issuer → vc:issuer (@type: @id)
-  agent.credentialSubject → vc:credentialSubject (@type: @id)
-  agent.timestamp → dcterms:issued (@type: xsd:dateTime)
-  agent.proof.signature → vcw:schnorrSignature
-  agent.proof.publicKey → vcw:verificationMethod (@type: @id)
-  ```
+```
+agent.issuer → vc:issuer (@type: @id)
+agent.credentialSubject → vc:credentialSubject (@type: @id)
+agent.timestamp → dcterms:issued (@type: xsd:dateTime)
+agent.proof.signature → vcw:schnorrSignature
+agent.proof.publicKey → vcw:verificationMethod (@type: @id)
+```
 
-  These mappings are declared once in the context and reused across all documents, ensuring consistency.
+These mappings are declared once in the context and reused across all documents, ensuring consistency.
 
-  #### RDF and SPARQL Compatibility
+#### RDF and SPARQL Compatibility
 
-  Because JSON-LD documents are valid RDF (each `@id` and property expands to a URI), they can be loaded directly into an RDF triple store:
+Because JSON-LD documents are valid RDF (each `@id` and property expands to a URI), they can be loaded directly into an RDF triple store:
 
-  ```
-  did:nostr:0123...ef vc:issuer did:nostr:0123...ef .
-  did:nostr:0123...ef vc:credentialSubject <urn:visionclaw:bead:...> .
-  <urn:visionclaw:bead:...> dcterms:issued "2026-04-26T12:34:56Z"^^xsd:dateTime .
-  ```
+```
+did:nostr:0123...ef vc:issuer did:nostr:0123...ef .
+did:nostr:0123...ef vc:credentialSubject <urn:visionclaw:bead:...> .
+<urn:visionclaw:bead:...> dcterms:issued "2026-04-26T12:34:56Z"^^xsd:dateTime .
+```
 
-  External systems can then query the triple store using SPARQL to discover, correlate, and analyse agent-emitted data.
+External systems can then query the triple store using SPARQL to discover, correlate, and analyse agent-emitted data.
 
-  #### Example: Credential Encoding
+#### Example: Credential Encoding
 
-  Internal agent credential:
+Internal agent credential:
 
-  ```python
-  {
-    "issuer": "0123...ef",
-    "subject": "task-99",
-    "claim": "taskCompleted",
-    "timestamp": 1735286096000,  # milliseconds since epoch
-    "signature": "abcd...ef"
+```python
+{
+  "issuer": "0123...ef",
+  "subject": "task-99",
+  "claim": "taskCompleted",
+  "timestamp": 1735286096000,  # milliseconds since epoch
+  "signature": "abcd...ef"
+}
+```
+
+Encoded as JSON-LD:
+
+```json
+{
+  "@context": "https://visionclaw.dreamlab-ai.systems/ns/v1",
+  "@type": "VerifiableCredential",
+  "@id": "urn:visionclaw:credential:0123...ef:sha256-12-deadbeef",
+  "issuer": "did:nostr:0123...ef",
+  "credentialSubject": {
+    "@id": "urn:visionclaw:bead:0123...ef:task-99",
+    "claim": "taskCompleted"
+  },
+  "issued": "2026-04-26T12:34:56Z",
+  "proof": {
+    "type": "SchnorrSignature2025",
+    "verificationMethod": "did:nostr:0123...ef#key-0",
+    "signatureValue": "abcd...ef"
   }
-  ```
+}
+```
 
-  Encoded as JSON-LD:
+Notice:
 
-  ```json
-  {
-    "@context": "https://visionclaw.dreamlab-ai.systems/ns/v1",
-    "@type": "VerifiableCredential",
-    "@id": "urn:visionclaw:credential:0123...ef:sha256-12-deadbeef",
-    "issuer": "did:nostr:0123...ef",
-    "credentialSubject": {
-      "@id": "urn:visionclaw:bead:0123...ef:task-99",
-      "claim": "taskCompleted"
-    },
-    "issued": "2026-04-26T12:34:56Z",
-    "proof": {
-      "type": "SchnorrSignature2025",
-      "verificationMethod": "did:nostr:0123...ef#key-0",
-      "signatureValue": "abcd...ef"
-    }
-  }
-  ```
-
-  Notice:
-
-  - Timestamps are converted from milliseconds to ISO 8601 strings
-  - Pubkeys are expanded to full DIDs
-  - Task IDs are expanded to full URNs
-  - A unique @id is minted by the [[URI Canonicaliser]]
-  - The proof structure is semantically rich (type, verificationMethod are IRIs)
+- Timestamps are converted from milliseconds to ISO 8601 strings
+- Pubkeys are expanded to full DIDs
+- Task IDs are expanded to full URNs
+- A unique @id is minted by the [[URI Canonicaliser]]
+- The proof structure is semantically rich (type, verificationMethod are IRIs)
 
   #### Evolution and Versioning
 
@@ -154,5 +153,5 @@ A semantic encoding pipeline that transforms agent state, credentials, events, a
 
   This design eliminates the fragility of "breaking changes"; evolution is additive.
 
-- ### Provenance
+### Provenance
 

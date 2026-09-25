@@ -1,80 +1,80 @@
-
 A formal specification of the object properties, data properties, and annotation properties that relate classes within an ontology, including domain and range constraints, cardinality axioms, and logical characteristics such as transitivity and symmetry. Property schemas are the mechanism by which OWL2 ontologies encode typed, machine-readable relations between entities.
 
-- ### Semantic Classification
+### Semantic Classification
 
-- ### Content
-  # Metaverse Ontology Property Schema
-  This file provides the formal OWL declarations for all Object, Data, and Annotation properties.
-  Declaration(ObjectProperty(infrastructure:hasPart))
-  TransitiveObjectProperty(infrastructure:hasPart)
-  IrreflexiveObjectProperty(infrastructure:hasPart)
-  AsymmetricObjectProperty(infrastructure:hasPart)
-  Declaration(ObjectProperty(infrastructure:isPartOf))
-  TransitiveObjectProperty(infrastructure:isPartOf)
-  InverseObjectProperties(infrastructure:hasPart infrastructure:isPartOf)
-  Declaration(ObjectProperty(infrastructure:dependsOn))
-  TransitiveObjectProperty(infrastructure:dependsOn)
-  Declaration(ObjectProperty(infrastructure:requires))
-  SubObjectPropertyOf(infrastructure:requires infrastructure:dependsOn)
-  Declaration(ObjectProperty(infrastructure:enables))
-  Declaration(ObjectProperty(infrastructure:enabledBy))
-  InverseObjectProperties(infrastructure:enables infrastructure:enabledBy)
-  Declaration(ObjectProperty(infrastructure:bindsTo))
-  SymmetricObjectProperty(infrastructure:bindsTo)
-  IrreflexiveObjectProperty(infrastructure:bindsTo)
-  FunctionalObjectProperty(infrastructure:bindsTo)
-  ObjectPropertyDomain(infrastructure:bindsTo ObjectUnionOf(infrastructure:PhysicalEntity infrastructure:VirtualEntity infrastructure:HybridEntity))
-  ObjectPropertyRange(infrastructure:bindsTo ObjectUnionOf(infrastructure:PhysicalEntity infrastructure:VirtualEntity))
-  Declaration(ObjectProperty(infrastructure:represents))
-  ObjectPropertyDomain(infrastructure:represents infrastructure:Entity)
-  ObjectPropertyRange(infrastructure:represents infrastructure:Entity)
-  Declaration(ObjectProperty(infrastructure:runsOn))
-  ObjectPropertyDomain(infrastructure:runsOn infrastructure:Software)
-  ObjectPropertyRange(infrastructure:runsOn infrastructure:Hardware)
-  Declaration(ObjectProperty(infrastructure:implementedInLayer))
-  Declaration(Class(infrastructure:ArchitectureLayer))
-  SubClassOf(infrastructure:ArchitectureLayer infrastructure:AbstractConcept)
-  ObjectPropertyDomain(infrastructure:implementedInLayer infrastructure:Entity)
-  ObjectPropertyRange(infrastructure:implementedInLayer infrastructure:ArchitectureLayer)
-  Declaration(Class(infrastructure:UserExperienceLayer))
-  SubClassOf(infrastructure:UserExperienceLayer infrastructure:ArchitectureLayer)
-  Declaration(DataProperty(infrastructure:termId))
-  FunctionalDataProperty(infrastructure:termId)
-  DataPropertyRange(infrastructure:termId xsd:integer)
-  Declaration(DataProperty(infrastructure:maturity))
-  Declaration(Datatype(infrastructure:MaturityLevel))
-  DatatypeDefinition(infrastructure:MaturityLevel DataOneOf("draft"^^xsd:string "mature"^^xsd:string "deprecated"^^xsd:string))
-  DataPropertyRange(infrastructure:maturity infrastructure:MaturityLevel)
-  Declaration(AnnotationProperty(infrastructure:source))
-  Declaration(AnnotationProperty(infrastructure:synonyms))
+### Content
 
-  ## Object Properties
-  ### Mereological (Part-Whole)
-  #### hasPart
-  #### isPartOf
-  ### Dependency
-  #### dependsOn
-  #### requires
-  ### Capability
-  #### enables
-  #### enabledBy
-  ### Binding (for Hybrid Entities)
-  #### bindsTo
-  ### Representation
-  #### represents
-  ### Execution/Deployment
-  #### runsOn
-  ### Architectural Classification
-  #### implementedInLayer
-  ## Data Properties
-  ### Identification
-  #### termId
-  ### Classification
-  #### maturity
-  ## Annotation Properties
-  #### source
-  #### synonyms
+# Metaverse Ontology Property Schema
+This file provides the formal OWL declarations for all Object, Data, and Annotation properties.
+Declaration(ObjectProperty(infrastructure:hasPart))
+TransitiveObjectProperty(infrastructure:hasPart)
+IrreflexiveObjectProperty(infrastructure:hasPart)
+AsymmetricObjectProperty(infrastructure:hasPart)
+Declaration(ObjectProperty(infrastructure:isPartOf))
+TransitiveObjectProperty(infrastructure:isPartOf)
+InverseObjectProperties(infrastructure:hasPart infrastructure:isPartOf)
+Declaration(ObjectProperty(infrastructure:dependsOn))
+TransitiveObjectProperty(infrastructure:dependsOn)
+Declaration(ObjectProperty(infrastructure:requires))
+SubObjectPropertyOf(infrastructure:requires infrastructure:dependsOn)
+Declaration(ObjectProperty(infrastructure:enables))
+Declaration(ObjectProperty(infrastructure:enabledBy))
+InverseObjectProperties(infrastructure:enables infrastructure:enabledBy)
+Declaration(ObjectProperty(infrastructure:bindsTo))
+SymmetricObjectProperty(infrastructure:bindsTo)
+IrreflexiveObjectProperty(infrastructure:bindsTo)
+FunctionalObjectProperty(infrastructure:bindsTo)
+ObjectPropertyDomain(infrastructure:bindsTo ObjectUnionOf(infrastructure:PhysicalEntity infrastructure:VirtualEntity infrastructure:HybridEntity))
+ObjectPropertyRange(infrastructure:bindsTo ObjectUnionOf(infrastructure:PhysicalEntity infrastructure:VirtualEntity))
+Declaration(ObjectProperty(infrastructure:represents))
+ObjectPropertyDomain(infrastructure:represents infrastructure:Entity)
+ObjectPropertyRange(infrastructure:represents infrastructure:Entity)
+Declaration(ObjectProperty(infrastructure:runsOn))
+ObjectPropertyDomain(infrastructure:runsOn infrastructure:Software)
+ObjectPropertyRange(infrastructure:runsOn infrastructure:Hardware)
+Declaration(ObjectProperty(infrastructure:implementedInLayer))
+Declaration(Class(infrastructure:ArchitectureLayer))
+SubClassOf(infrastructure:ArchitectureLayer infrastructure:AbstractConcept)
+ObjectPropertyDomain(infrastructure:implementedInLayer infrastructure:Entity)
+ObjectPropertyRange(infrastructure:implementedInLayer infrastructure:ArchitectureLayer)
+Declaration(Class(infrastructure:UserExperienceLayer))
+SubClassOf(infrastructure:UserExperienceLayer infrastructure:ArchitectureLayer)
+Declaration(DataProperty(infrastructure:termId))
+FunctionalDataProperty(infrastructure:termId)
+DataPropertyRange(infrastructure:termId xsd:integer)
+Declaration(DataProperty(infrastructure:maturity))
+Declaration(Datatype(infrastructure:MaturityLevel))
+DatatypeDefinition(infrastructure:MaturityLevel DataOneOf("draft"^^xsd:string "mature"^^xsd:string "deprecated"^^xsd:string))
+DataPropertyRange(infrastructure:maturity infrastructure:MaturityLevel)
+Declaration(AnnotationProperty(infrastructure:source))
+Declaration(AnnotationProperty(infrastructure:synonyms))
 
-- ### Provenance
+## Object Properties
+### Mereological (Part-Whole)
+#### hasPart
+#### isPartOf
+### Dependency
+#### dependsOn
+#### requires
+### Capability
+#### enables
+#### enabledBy
+### Binding (for Hybrid Entities)
+#### bindsTo
+### Representation
+#### represents
+### Execution/Deployment
+#### runsOn
+### Architectural Classification
+#### implementedInLayer
+## Data Properties
+### Identification
+#### termId
+### Classification
+#### maturity
+## Annotation Properties
+#### source
+#### synonyms
+
+### Provenance
 

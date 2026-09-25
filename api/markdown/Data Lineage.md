@@ -1,6 +1,6 @@
-
 Data lineage is the documented record of data's origins, movements, transformations and consumption as it flows through systems and pipelines. It maps how a data element is derived end to end, supporting impact analysis, debugging, audit and regulatory compliance. As a pillar of data governance and metadata management it makes data trustworthy by exposing its provenance.
 
-- ### Content
-  - Lineage is captured at column or dataset granularity by parsing pipeline code, query logs and metadata, then visualised as a directed graph. It powers impact analysis before changes, root-cause debugging of data errors, and audit trails demanded by regulators.
+### Content
+
+- Lineage is captured at column or dataset granularity by parsing pipeline code, query logs and metadata, then visualised as a directed graph. It powers impact analysis before changes, root-cause debugging of data errors, and audit trails demanded by regulators.
 

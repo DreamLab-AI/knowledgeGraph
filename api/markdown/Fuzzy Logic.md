@@ -1,27 +1,29 @@
-
 Fuzzy Logic is a artificial intelligence concept and a type of Artificial Intelligence. that enables Control Systems.
 
-- ### Semantic Classification
+### Semantic Classification
 
-- ### Content
+### Content
 
-  ### Definition
-  Fuzzy logic is a form of multi-valued logic that deals with approximate rather than precise reasoning. Unlike classical Boolean logic with binary true/false values, fuzzy logic allows variables to have degrees of truth between 0 and 1, enabling computers to handle the kind of imprecise, qualitative information humans use naturally in everyday reasoning.
+### Definition
+Fuzzy logic is a form of multi-valued logic that deals with approximate rather than precise reasoning. Unlike classical Boolean logic with binary true/false values, fuzzy logic allows variables to have degrees of truth between 0 and 1, enabling computers to handle the kind of imprecise, qualitative information humans use naturally in everyday reasoning.
 
-  ### Core Concepts
-  **Membership Functions:**
-  - Map values to degrees of membership [0,1]
-  - Triangular, trapezoidal, Gaussian shapes
-  - Example: temperature "hot" gradually increases from 0 at 20°C to 1 at 35°C
+### Core Concepts
+**Membership Functions:**
+
+- Map values to degrees of membership [0,1]
+- Triangular, trapezoidal, Gaussian shapes
+- Example: temperature "hot" gradually increases from 0 at 20°C to 1 at 35°C
 
   **Linguistic Variables:**
-  - Variables with fuzzy values
-  - Example: Temperature = {cold, cool, warm, hot}
-  - Height = {short, medium, tall}
+
+- Variables with fuzzy values
+- Example: Temperature = {cold, cool, warm, hot}
+- Height = {short, medium, tall}
 
   **Fuzzy Sets:**
-  - Elements have partial membership
-  - Example: 28°C might be 0.6 "warm" and 0.4 "hot"
+
+- Elements have partial membership
+- Example: 28°C might be 0.6 "warm" and 0.4 "hot"
 
   ### Fuzzy Inference Process
   1. **Fuzzification**: Convert crisp inputs to fuzzy values
@@ -39,36 +41,41 @@ Fuzzy Logic is a artificial intelligence concept and a type of Artificial Intell
   ```
 
   ### Fuzzy Operations
-  - AND: minimum (T-norm)
-  - OR: maximum (T-conorm)
-  - NOT: 1 - membership
+
+- AND: minimum (T-norm)
+- OR: maximum (T-conorm)
+- NOT: 1 - membership
 
   ### Applications
   **Control Systems:**
-  - Washing machines
-  - Air conditioning
-  - Automotive cruise control
-  - Camera autofocus
+
+- Washing machines
+- Air conditioning
+- Automotive cruise control
+- Camera autofocus
 
   **Decision Support:**
-  - Medical diagnosis
-  - Risk assessment
-  - Pattern recognition
-  - Image processing
+
+- Medical diagnosis
+- Risk assessment
+- Pattern recognition
+- Image processing
 
   **Industrial:**
-  - Quality control
-  - Process optimization
-  - Robotics
+
+- Quality control
+- Process optimization
+- Robotics
 
   ### Advantages
-  - Handles imprecise information
-  - Mimics human reasoning
-  - Simple rule-based structure
-  - Robust to noise and uncertainty
+
+- Handles imprecise information
+- Mimics human reasoning
+- Simple rule-based structure
+- Robust to noise and uncertainty
 
   ### Historical Note
   Introduced by Lotfi Zadeh in 1965, initially controversial but widely adopted in Japanese consumer electronics and industrial control by the 1980s.
 
-- ### Provenance
+### Provenance
 

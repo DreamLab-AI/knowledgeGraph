@@ -1,10 +1,10 @@
-
 Vibe Coding is an AI-assisted software development practice in which developers direct large language models or AI coding tools (such as Cursor, Aider, or Copilot) with high-level intent rather than writing all code manually. The practitioner retains system-level design authority whilst delegating implementation of discrete, scoped tasks to the AI, requiring disciplined use of version control, structured context documents, and iterative refinement cycles.
 
-- ### Semantic Classification
+### Semantic Classification
 
-- ### Content
-  - Start like a Project Manager, not a Prompt Monkey
+### Content
+
+- Start like a Project Manager, not a Prompt Monkey
   Before you do anything, write a real PRD.
   • Describe what you’re building, why, and with what tools (Supabase, Vercel, GitHub, etc.) • Keep it in your root as product.md or instructions.md. Reference it constantly. • AI loses context fast — this is your compass.
   2. Add a deployment manual. Yesterday.
@@ -37,50 +37,50 @@ Vibe Coding is an AI-assisted software development practice in which developers 
   p.s. I’m putting together 20+ more hard-earned insights in a doc — including specific prompts, scoped examples, debug flows, and mini PRD templates.
   If that sounds valuable, let me know and I’ll drop it.
   Stay caffeinated. Lead the machines.
-  - Four week rolling schedule
-  - High level concepts
-  - Choosing tools
-  - Setting up
-  - Planning your project
-  - Implement
-  - Iterate
-  - Refine
-  - Productionise
-  - High level concepts from programming that remain important in vibe coding
-  - Gated Debug
-  - Understanding client server
-  - Understanding code layout and structure
-  - Tips and Tricks
-  - Build messy then strip back with gemini
-  - roll back then peek forward with git
-  - Managing and understanding tokens
-  - API keys
-  - context windows and efficient practice
-  - Tools
-  - VSCode
-  - Aider
-  - Cursor
-  - Continue
-  - Augment
-  - Windsurf
-  - Multiple AI tools
-  - Gemini AI studio
-  - Claude 3.7
-  - Soon co-pilot for both?
-  - Github
-  - Git Show
-  - branches
-  - Yaml files
-  - Docs
-  - README
-  - docs directory
-  - Diagrams as code
-  - Contacts to pick up
-  - [James Patterson](https://www.linkedin.com/in/ACoAABtIa0YBJHS-UQbBV5mChJwA2O0GwBu4ufY) (He/Him)  6:08 PM
-		- Hey John! 👋 Hope things are well with you, just saw the post from Dreamlab about vibe coding/agent workshops. Would love to know if/how I could get involved, I’ve been working on some personal projects in v0 and Cursor and keen to learn more
-  - Derek Hales
-  - Pip
-  - Kat Cooke
+- Four week rolling schedule
+- High level concepts
+- Choosing tools
+- Setting up
+- Planning your project
+- Implement
+- Iterate
+- Refine
+- Productionise
+- High level concepts from programming that remain important in vibe coding
+- Gated Debug
+- Understanding client server
+- Understanding code layout and structure
+- Tips and Tricks
+- Build messy then strip back with gemini
+- roll back then peek forward with git
+- Managing and understanding tokens
+- API keys
+- context windows and efficient practice
+- Tools
+- VSCode
+- Aider
+- Cursor
+- Continue
+- Augment
+- Windsurf
+- Multiple AI tools
+- Gemini AI studio
+- Claude 3.7
+- Soon co-pilot for both?
+- Github
+- Git Show
+- branches
+- Yaml files
+- Docs
+- README
+- docs directory
+- Diagrams as code
+- Contacts to pick up
+- [James Patterson](https://www.linkedin.com/in/ACoAABtIa0YBJHS-UQbBV5mChJwA2O0GwBu4ufY) (He/Him)  6:08 PM
+  - Hey John! 👋 Hope things are well with you, just saw the post from Dreamlab about vibe coding/agent workshops. Would love to know if/how I could get involved, I’ve been working on some personal projects in v0 and Cursor and keen to learn more
+- Derek Hales
+- Pip
+- Kat Cooke
 
-- ### Provenance
+### Provenance
 

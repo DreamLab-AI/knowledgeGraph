@@ -1,3 +1,2 @@
-
 Cross-border identity refers to digital identity credentials and verification mechanisms designed to be recognised and trusted across national jurisdictions, allowing an individual or organisation to prove attributes about themselves to a relying party in a different country without relying on a single centralised, national identity authority. It builds on self-sovereign identity principles and interoperable trust frameworks, such as those developed by the Trust Over IP Foundation, to establish mutual recognition of credential formats, issuers and verification methods between jurisdictions. Cross-border identity is a key enabler for international travel, remote work and cross-border financial services that require reliable identity assurance.
 

@@ -1,222 +1,222 @@
-
 DoRA (Weight-Decomposed Low-Rank Adaptation) is a parameter-efficient fine-tuning method that decomposes pretrained weights into separate magnitude and direction components, applying low-rank updates only to the directional component while learning the magnitude independently. By separating these two degrees of freedom, DoRA more closely mirrors the learning dynamics of full fine-tuning than standard LoRA, improving accuracy on many tasks at comparable parameter cost and without added inference latency once merged. It is used to adapt large language and vision models efficiently.
 
-- ### Semantic Classification
+### Semantic Classification
 
-- ### Content
-  ## Compositional Relationships (Components)
-      SubClassOf(ai:DoRA
-        ObjectSomeValuesFrom(ai:hasPart ai:MagnitudeComponent))
-      SubClassOf(ai:DoRA
-        ObjectSomeValuesFrom(ai:hasPart ai:DirectionalComponent))
-      SubClassOf(ai:DoRA
-        ObjectSomeValuesFrom(ai:hasPart ai:LowRankAdaptation))
-      SubClassOf(ai:DoRA
-        ObjectSomeValuesFrom(ai:hasPart ai:WeightDecomposition))
-      SubClassOf(ai:DoRA
-        ObjectSomeValuesFrom(ai:hasPart ai:ColumnWiseNormalisation))
-  ## Dependency Relationships
-      SubClassOf(ai:DoRA
-        ObjectSomeValuesFrom(ai:requires ai:PretrainedModel))
-      SubClassOf(ai:DoRA
-        ObjectSomeValuesFrom(ai:requires ai:Backpropagation))
-      SubClassOf(ai:DoRA
-        ObjectSomeValuesFrom(ai:requires ai:GradientDescent))
-      SubClassOf(ai:DoRA
-        ObjectSomeValuesFrom(ai:dependsOn ai:TransformerArchitecture))
-      SubClassOf(ai:DoRA
-        ObjectSomeValuesFrom(ai:dependsOn ai:LowRankAdaptation))
-      SubClassOf(ai:DoRA
-        ObjectSomeValuesFrom(ai:dependsOn ai:NeuralNetwork))
-  ## Capability Relationships
-      SubClassOf(ai:DoRA
-        ObjectSomeValuesFrom(ai:enables ai:FineTuning))
-      SubClassOf(ai:DoRA
-        ObjectSomeValuesFrom(ai:enables ai:LargeLanguageModel))
-      SubClassOf(ai:DoRA
-        ObjectSomeValuesFrom(ai:enables ai:VisionLanguageModel))
-      SubClassOf(ai:DoRA
-        ObjectSomeValuesFrom(ai:enables ai:ModelAdaptation))
-      SubClassOf(ai:DoRA
-        ObjectSomeValuesFrom(ai:supports ai:NaturalLanguageProcessing))
-      SubClassOf(ai:DoRA
-        ObjectSomeValuesFrom(ai:supports ai:ComputerVision))
-      SubClassOf(ai:DoRA
-        ObjectSomeValuesFrom(ai:supports ai:MultimodalLearning))
-  ## Implementation Relationships
-      SubClassOf(ai:DoRA
-        ObjectSomeValuesFrom(ai:implements ai:WeightDecomposition))
-      SubClassOf(ai:DoRA
-        ObjectSomeValuesFrom(ai:implements ai:LowRankAdaptation))
-      SubClassOf(ai:DoRA
-        ObjectSomeValuesFrom(ai:uses ai:PyTorch))
-      SubClassOf(ai:DoRA
-        ObjectSomeValuesFrom(ai:uses ai:HuggingFacePEFT))
-      SubClassOf(ai:DoRA
-        ObjectSomeValuesFrom(ai:reducesTo ai:LowRankAdaptation))
-  ## Reduction Relationships
-      SubClassOf(ai:DoRA
-        ObjectSomeValuesFrom(ai:reducesTo ai:ParameterEfficientFineTuning))
-      SubClassOf(ai:DoRA
-        ObjectSomeValuesFrom(ai:reducesTo ai:TransferLearning))
-      SubClassOf(ai:DoRA
-        ObjectSomeValuesFrom(ai:contrastsWith ai:FullFineTuning))
-      SubClassOf(ai:DoRA
-        ObjectSomeValuesFrom(ai:contrastsWith ai:PromptTuning))
-      SubClassOf(ai:DoRA
-        ObjectSomeValuesFrom(ai:contrastsWith ai:AdapterModules))
-      SubClassOf(ai:DoRA
-        ObjectSomeValuesFrom(ai:relatedTo ai:QDoRA))
-      SubClassOf(ai:DoRA
-        ObjectSomeValuesFrom(ai:relatedTo ai:DVoRA))
-      SubClassOf(ai:DoRA
-        ObjectSomeValuesFrom(ai:relatedTo ai:FoundationModel))
-      SubClassOf(ai:DoRA
-        ObjectSomeValuesFrom(ai:relatedTo ai:IntrinsicDimensionality))
-      SubClassOf(ai:DoRA
-        ObjectSomeValuesFrom(ai:supports ai:MultilingualLearning))
-      SubClassOf(ai:DoRA
-        ObjectSomeValuesFrom(ai:supports ai:TextToImageGeneration))
-      SubClassOf(ai:DoRA
-        ObjectSomeValuesFrom(ai:enables ai:LowDataAdaptation))
+### Content
 
-  ## About
+## Compositional Relationships (Components)
+    SubClassOf(ai:DoRA
+      ObjectSomeValuesFrom(ai:hasPart ai:MagnitudeComponent))
+    SubClassOf(ai:DoRA
+      ObjectSomeValuesFrom(ai:hasPart ai:DirectionalComponent))
+    SubClassOf(ai:DoRA
+      ObjectSomeValuesFrom(ai:hasPart ai:LowRankAdaptation))
+    SubClassOf(ai:DoRA
+      ObjectSomeValuesFrom(ai:hasPart ai:WeightDecomposition))
+    SubClassOf(ai:DoRA
+      ObjectSomeValuesFrom(ai:hasPart ai:ColumnWiseNormalisation))
+## Dependency Relationships
+    SubClassOf(ai:DoRA
+      ObjectSomeValuesFrom(ai:requires ai:PretrainedModel))
+    SubClassOf(ai:DoRA
+      ObjectSomeValuesFrom(ai:requires ai:Backpropagation))
+    SubClassOf(ai:DoRA
+      ObjectSomeValuesFrom(ai:requires ai:GradientDescent))
+    SubClassOf(ai:DoRA
+      ObjectSomeValuesFrom(ai:dependsOn ai:TransformerArchitecture))
+    SubClassOf(ai:DoRA
+      ObjectSomeValuesFrom(ai:dependsOn ai:LowRankAdaptation))
+    SubClassOf(ai:DoRA
+      ObjectSomeValuesFrom(ai:dependsOn ai:NeuralNetwork))
+## Capability Relationships
+    SubClassOf(ai:DoRA
+      ObjectSomeValuesFrom(ai:enables ai:FineTuning))
+    SubClassOf(ai:DoRA
+      ObjectSomeValuesFrom(ai:enables ai:LargeLanguageModel))
+    SubClassOf(ai:DoRA
+      ObjectSomeValuesFrom(ai:enables ai:VisionLanguageModel))
+    SubClassOf(ai:DoRA
+      ObjectSomeValuesFrom(ai:enables ai:ModelAdaptation))
+    SubClassOf(ai:DoRA
+      ObjectSomeValuesFrom(ai:supports ai:NaturalLanguageProcessing))
+    SubClassOf(ai:DoRA
+      ObjectSomeValuesFrom(ai:supports ai:ComputerVision))
+    SubClassOf(ai:DoRA
+      ObjectSomeValuesFrom(ai:supports ai:MultimodalLearning))
+## Implementation Relationships
+    SubClassOf(ai:DoRA
+      ObjectSomeValuesFrom(ai:implements ai:WeightDecomposition))
+    SubClassOf(ai:DoRA
+      ObjectSomeValuesFrom(ai:implements ai:LowRankAdaptation))
+    SubClassOf(ai:DoRA
+      ObjectSomeValuesFrom(ai:uses ai:PyTorch))
+    SubClassOf(ai:DoRA
+      ObjectSomeValuesFrom(ai:uses ai:HuggingFacePEFT))
+    SubClassOf(ai:DoRA
+      ObjectSomeValuesFrom(ai:reducesTo ai:LowRankAdaptation))
+## Reduction Relationships
+    SubClassOf(ai:DoRA
+      ObjectSomeValuesFrom(ai:reducesTo ai:ParameterEfficientFineTuning))
+    SubClassOf(ai:DoRA
+      ObjectSomeValuesFrom(ai:reducesTo ai:TransferLearning))
+    SubClassOf(ai:DoRA
+      ObjectSomeValuesFrom(ai:contrastsWith ai:FullFineTuning))
+    SubClassOf(ai:DoRA
+      ObjectSomeValuesFrom(ai:contrastsWith ai:PromptTuning))
+    SubClassOf(ai:DoRA
+      ObjectSomeValuesFrom(ai:contrastsWith ai:AdapterModules))
+    SubClassOf(ai:DoRA
+      ObjectSomeValuesFrom(ai:relatedTo ai:QDoRA))
+    SubClassOf(ai:DoRA
+      ObjectSomeValuesFrom(ai:relatedTo ai:DVoRA))
+    SubClassOf(ai:DoRA
+      ObjectSomeValuesFrom(ai:relatedTo ai:FoundationModel))
+    SubClassOf(ai:DoRA
+      ObjectSomeValuesFrom(ai:relatedTo ai:IntrinsicDimensionality))
+    SubClassOf(ai:DoRA
+      ObjectSomeValuesFrom(ai:supports ai:MultilingualLearning))
+    SubClassOf(ai:DoRA
+      ObjectSomeValuesFrom(ai:supports ai:TextToImageGeneration))
+    SubClassOf(ai:DoRA
+      ObjectSomeValuesFrom(ai:enables ai:LowDataAdaptation))
 
-  The development of DoRA grew directly out of a critical examination of why [[Low-Rank Adaptation]] (LoRA), despite its remarkable practical success, consistently falls short of full fine-tuning accuracy on harder benchmarks, particularly when using low adapter ranks. LoRA (Hu et al., 2022) addresses the prohibitive cost of full fine-tuning very large [[Transformer Architecture]] models by freezing all pretrained weights W_0 and learning a low-rank residual update W = W_0 + ΔW = W_0 + BA, where B ∈ ℝ^{d×r} and A ∈ ℝ^{r×k} are small matrices with rank r ≪ min(d, k). This reduces trainable parameters from the d×k of the full weight matrix to r(d+k), enabling adaptation of 7-billion-parameter models on 24 GB consumer GPUs where full fine-tuning would require several hundred gigabytes. The learned adapter matrices are initialised so that ΔW = 0 at the start of training (A is random Gaussian, B is zeros), ensuring training begins from the pretrained weights. Despite its efficiency advantages, LoRA consistently underperforms full fine-tuning on tasks requiring significant distributional shifts from the pretraining domain, suggesting that LoRA's low-rank constrained update does not capture all the degrees of freedom exercised by full fine-tuning.
+## About
 
-  The DoRA authors (Liu et al., NVIDIA NVLabs and National Taiwan University, 2024) characterised this gap through a novel weight decomposition analysis. They decomposed each weight matrix W — whether from a fully fine-tuned model or from a LoRA-adapted model — into a magnitude component m = ||W||_c (the column-wise L2 norm, a vector of k scalars) and a directional component V/||V||_c (the column-unit-normalised weight matrix). By tracking how each component evolved separately during training from the same pretrained initialisation, they discovered that full fine-tuning makes structured separable updates to these components: at many weight matrices, full fine-tuning primarily adjusts the directional component (large directional change, small magnitude change), while at others it primarily adjusts the magnitude (large magnitude change, small directional change). These patterns are structured and layer-type-specific. LoRA, by applying a single low-rank perturbation to the full weight matrix, conflates these two degrees of freedom and cannot independently reproduce either pattern — particularly large directional changes, which require the rank-r subspace to span the entire space of updated column directions simultaneously.
+The development of DoRA grew directly out of a critical examination of why [[Low-Rank Adaptation]] (LoRA), despite its remarkable practical success, consistently falls short of full fine-tuning accuracy on harder benchmarks, particularly when using low adapter ranks. LoRA (Hu et al., 2022) addresses the prohibitive cost of full fine-tuning very large [[Transformer Architecture]] models by freezing all pretrained weights W_0 and learning a low-rank residual update W = W_0 + ΔW = W_0 + BA, where B ∈ ℝ^{d×r} and A ∈ ℝ^{r×k} are small matrices with rank r ≪ min(d, k). This reduces trainable parameters from the d×k of the full weight matrix to r(d+k), enabling adaptation of 7-billion-parameter models on 24 GB consumer GPUs where full fine-tuning would require several hundred gigabytes. The learned adapter matrices are initialised so that ΔW = 0 at the start of training (A is random Gaussian, B is zeros), ensuring training begins from the pretrained weights. Despite its efficiency advantages, LoRA consistently underperforms full fine-tuning on tasks requiring significant distributional shifts from the pretraining domain, suggesting that LoRA's low-rank constrained update does not capture all the degrees of freedom exercised by full fine-tuning.
 
-  The DoRA method resolves this fundamental limitation by parameterising each adapted weight as W' = (m / ||W_0 + BA||_c) ⋅ (W_0 + BA), where m ∈ ℝ^{1×k} is the trainable magnitude vector, B ∈ ℝ^{d×r} and A ∈ ℝ^{r×k} are the LoRA matrices, and ||W_0 + BA||_c is the column-wise norm of the current directionally-adapted weight matrix (computed dynamically at each forward pass). The gradient of the loss with respect to m is therefore a simple vector gradient decoupled from the low-rank constraint on BA; the gradient of the loss with respect to BA flows through both the directional normalisation and the magnitude scaling. This decoupling means the optimiser can independently decide: (a) how far to shift the directional orientation of each column (controlled by BA), and (b) how to rescale the magnitude of that column (controlled by m). A large directional change with small magnitude correction, a large magnitude change with small directional change, or any arbitrary combination becomes representable within the same parameter budget as standard LoRA plus k additional scalar parameters per weight matrix.
+The DoRA authors (Liu et al., NVIDIA NVLabs and National Taiwan University, 2024) characterised this gap through a novel weight decomposition analysis. They decomposed each weight matrix W — whether from a fully fine-tuned model or from a LoRA-adapted model — into a magnitude component m = ||W||_c (the column-wise L2 norm, a vector of k scalars) and a directional component V/||V||_c (the column-unit-normalised weight matrix). By tracking how each component evolved separately during training from the same pretrained initialisation, they discovered that full fine-tuning makes structured separable updates to these components: at many weight matrices, full fine-tuning primarily adjusts the directional component (large directional change, small magnitude change), while at others it primarily adjusts the magnitude (large magnitude change, small directional change). These patterns are structured and layer-type-specific. LoRA, by applying a single low-rank perturbation to the full weight matrix, conflates these two degrees of freedom and cannot independently reproduce either pattern — particularly large directional changes, which require the rank-r subspace to span the entire space of updated column directions simultaneously.
 
-  Crucially, once training is complete, the learned components can be merged back into a single weight matrix: W_final = (m / ||W_0 + BA||_c) ⋅ (W_0 + BA). This merged weight is identical in shape and data type to the original pretrained weight W_0 and can be used as a direct replacement, making inference identical in compute, memory, and latency to using the original pretrained model without any adapter. This weight merging property is shared with LoRA and is a key practical advantage over adapter module approaches, which require keeping the adapter parameters separate and applying them at inference time, adding latency proportional to adapter width. The only overhead of DoRA relative to standard LoRA during inference is zero — the magnitude vector m is absorbed into the merged weight.
+The DoRA method resolves this fundamental limitation by parameterising each adapted weight as W' = (m / ||W_0 + BA||_c) ⋅ (W_0 + BA), where m ∈ ℝ^{1×k} is the trainable magnitude vector, B ∈ ℝ^{d×r} and A ∈ ℝ^{r×k} are the LoRA matrices, and ||W_0 + BA||_c is the column-wise norm of the current directionally-adapted weight matrix (computed dynamically at each forward pass). The gradient of the loss with respect to m is therefore a simple vector gradient decoupled from the low-rank constraint on BA; the gradient of the loss with respect to BA flows through both the directional normalisation and the magnitude scaling. This decoupling means the optimiser can independently decide: (a) how far to shift the directional orientation of each column (controlled by BA), and (b) how to rescale the magnitude of that column (controlled by m). A large directional change with small magnitude correction, a large magnitude change with small directional change, or any arbitrary combination becomes representable within the same parameter budget as standard LoRA plus k additional scalar parameters per weight matrix.
 
-  ## Components and Architecture
+Crucially, once training is complete, the learned components can be merged back into a single weight matrix: W_final = (m / ||W_0 + BA||_c) ⋅ (W_0 + BA). This merged weight is identical in shape and data type to the original pretrained weight W_0 and can be used as a direct replacement, making inference identical in compute, memory, and latency to using the original pretrained model without any adapter. This weight merging property is shared with LoRA and is a key practical advantage over adapter module approaches, which require keeping the adapter parameters separate and applying them at inference time, adding latency proportional to adapter width. The only overhead of DoRA relative to standard LoRA during inference is zero — the magnitude vector m is absorbed into the merged weight.
 
-  ### Weight Decomposition Layer
+## Components and Architecture
 
-  The foundational operation decomposes each target weight matrix W_0 ∈ ℝ^{d×k} into magnitude m ∈ ℝ^{1×k} (column norms) and directional matrix V = W_0 / ||W_0||_c ∈ ℝ^{d×k} (column unit vectors): W_0 = m ⋅ V. Only m and the LoRA matrices A and B are trainable; V itself is not stored as a separate parameter but is implicitly defined as (W_0 + BA) / ||(W_0 + BA)||_c during the forward pass. The column norm ||W_0 + BA||_c must be recomputed at each forward pass over the current value of the directionally-adapted matrix W_0 + BA, as BA changes during training. This dynamic recomputation adds a small but non-zero computational overhead relative to LoRA, typically less than 1% of total training FLOPs for reasonable adapter ranks.
+### Weight Decomposition Layer
 
-  ### Low-Rank Directional Update
+The foundational operation decomposes each target weight matrix W_0 ∈ ℝ^{d×k} into magnitude m ∈ ℝ^{1×k} (column norms) and directional matrix V = W_0 / ||W_0||_c ∈ ℝ^{d×k} (column unit vectors): W_0 = m ⋅ V. Only m and the LoRA matrices A and B are trainable; V itself is not stored as a separate parameter but is implicitly defined as (W_0 + BA) / ||(W_0 + BA)||_c during the forward pass. The column norm ||W_0 + BA||_c must be recomputed at each forward pass over the current value of the directionally-adapted matrix W_0 + BA, as BA changes during training. This dynamic recomputation adds a small but non-zero computational overhead relative to LoRA, typically less than 1% of total training FLOPs for reasonable adapter ranks.
 
-  The directional update ΔV = BA follows exactly the LoRA formulation: B ∈ ℝ^{d×r} and A ∈ ℝ^{r×k}, with A initialised using the Kaiming uniform distribution and B initialised to zero, so that ΔV = 0 at the start of training and the adaptation begins from the pretrained directional configuration. The rank r is a hyperparameter (common values: 8, 16, 32, 64) that controls the capacity of the directional update; the set of representable directional changes is the column span of B, a d-dimensional subspace of rank r. DoRA's key theoretical claim is that separating magnitude from direction allows this rank-r subspace to be used more efficiently for directional updates alone, rather than having it simultaneously serve both directional and magnitude update purposes.
+### Low-Rank Directional Update
 
-  ### Magnitude Vector Parameterisation
+The directional update ΔV = BA follows exactly the LoRA formulation: B ∈ ℝ^{d×r} and A ∈ ℝ^{r×k}, with A initialised using the Kaiming uniform distribution and B initialised to zero, so that ΔV = 0 at the start of training and the adaptation begins from the pretrained directional configuration. The rank r is a hyperparameter (common values: 8, 16, 32, 64) that controls the capacity of the directional update; the set of representable directional changes is the column span of B, a d-dimensional subspace of rank r. DoRA's key theoretical claim is that separating magnitude from direction allows this rank-r subspace to be used more efficiently for directional updates alone, rather than having it simultaneously serve both directional and magnitude update purposes.
 
-  The magnitude vector m ∈ ℝ^{1×k} is initialised to the column norms of W_0 — the exact magnitudes of the pretrained weight columns — so that the decomposition is exact at initialisation (W_0 = m_init ⋅ (W_0 / ||W_0||_c)). During training, m is updated by the optimiser (Adam, AdaFactor, or SGD with momentum) independently of BA. Being a dense but very narrow vector with only k elements (where k is the output dimension of the weight matrix, e.g., 4096 for LLaMA-7B's Q projection), m adds minimal parameter overhead: for a single attention projection matrix of shape 4096×4096, m has 4096 elements compared to r×4096 + r×4096 = 8192r for the LoRA matrices. At rank r=16, m is 4096 parameters versus 131,072 for BA — about 3% of the LoRA parameter count — making it a negligible addition even when applied to all weight matrices in the model.
+### Magnitude Vector Parameterisation
 
-  ### Integration with Quantisation (QDoRA)
+The magnitude vector m ∈ ℝ^{1×k} is initialised to the column norms of W_0 — the exact magnitudes of the pretrained weight columns — so that the decomposition is exact at initialisation (W_0 = m_init ⋅ (W_0 / ||W_0||_c)). During training, m is updated by the optimiser (Adam, AdaFactor, or SGD with momentum) independently of BA. Being a dense but very narrow vector with only k elements (where k is the output dimension of the weight matrix, e.g., 4096 for LLaMA-7B's Q projection), m adds minimal parameter overhead: for a single attention projection matrix of shape 4096×4096, m has 4096 elements compared to r×4096 + r×4096 = 8192r for the LoRA matrices. At rank r=16, m is 4096 parameters versus 131,072 for BA — about 3% of the LoRA parameter count — making it a negligible addition even when applied to all weight matrices in the model.
 
-  DoRA is fully compatible with quantisation-aware training approaches. In the QDoRA configuration, the base weights W_0 are stored in 4-bit NF4 (Normal Float 4) quantisation as in QLoRA (Dettmers et al., 2023), while the trainable magnitude vector m and the LoRA matrices A and B are maintained in full bfloat16 precision. During the forward pass, W_0 is dequantised on-the-fly to bfloat16 for the matrix multiplication, while m and BA are applied in the DoRA formulation. After training, the adapter can be merged into dequantised weights for deployment. QDoRA has been characterised as the leading PEFT standard for 2025 by practitioners, achieving near-full-fine-tuning quality on consumer hardware (24 GB VRAM for 7B models, 48 GB for 13B models) at 4-bit quantisation, making frontier model fine-tuning accessible without access to data centre GPU resources.
+### Integration with Quantisation (QDoRA)
 
-  ### Applicable Weight Matrices and Targeting Strategy
+DoRA is fully compatible with quantisation-aware training approaches. In the QDoRA configuration, the base weights W_0 are stored in 4-bit NF4 (Normal Float 4) quantisation as in QLoRA (Dettmers et al., 2023), while the trainable magnitude vector m and the LoRA matrices A and B are maintained in full bfloat16 precision. During the forward pass, W_0 is dequantised on-the-fly to bfloat16 for the matrix multiplication, while m and BA are applied in the DoRA formulation. After training, the adapter can be merged into dequantised weights for deployment. QDoRA has been characterised as the leading PEFT standard for 2025 by practitioners, achieving near-full-fine-tuning quality on consumer hardware (24 GB VRAM for 7B models, 48 GB for 13B models) at 4-bit quantisation, making frontier model fine-tuning accessible without access to data centre GPU resources.
 
-  Following established LoRA convention, DoRA is most commonly applied to the query (Q), key (K), value (V), and output projection matrices in multi-head attention sub-layers, and to the up-projection and down-projection (or gate-projection in SwiGLU architectures) matrices of feed-forward sub-layers within each [[Transformer Architecture]] block. Empirical studies across LLaMA and LLaVA model families suggest that applying DoRA to all linear weight matrices in the model (including the output projection and the LM head) generally improves task performance over the LoRA default of applying adapters only to Q and V projection matrices. Embedding matrices and layer normalisation gain and bias parameters are typically left unchanged because their structure differs fundamentally from the column-oriented weight matrices to which the DoRA decomposition is most naturally applied.
+### Applicable Weight Matrices and Targeting Strategy
 
-  ### Variants and Extensions
+Following established LoRA convention, DoRA is most commonly applied to the query (Q), key (K), value (V), and output projection matrices in multi-head attention sub-layers, and to the up-projection and down-projection (or gate-projection in SwiGLU architectures) matrices of feed-forward sub-layers within each [[Transformer Architecture]] block. Empirical studies across LLaMA and LLaVA model families suggest that applying DoRA to all linear weight matrices in the model (including the output projection and the LM head) generally improves task performance over the LoRA default of applying adapters only to Q and V projection matrices. Embedding matrices and layer normalisation gain and bias parameters are typically left unchanged because their structure differs fundamentally from the column-oriented weight matrices to which the DoRA decomposition is most naturally applied.
 
-  DVoRA (DoRA + VeRA) combines DoRA's magnitude-direction decomposition with the Vector-based Random Matrix Adaptation (VeRA) approach, which uses shared frozen random matrices for B and A across layers and learns only small per-layer scaling vectors. DVoRA achieves comparable or superior performance to DoRA at significantly fewer trainable parameters on certain tasks, making it attractive for very constrained parameter budgets. SSMLoRA (2025) integrates state-space model (SSM) components into the adaptation structure for improved modelling of long-range dependencies, showing particular benefit on long-context tasks. Structured task-aware low-rank adaptation methods (2025, arXiv:2603.14228) extend DoRA's directional analysis to identify which directions within the low-rank subspace are most task-relevant and concentrate the rank budget there, further improving parameter efficiency. High-rank structured modulation approaches (arXiv:2601.07507, 2025) complement DoRA by exploiting structured high-rank updates that complement the low-rank directional adaptation.
+### Variants and Extensions
 
-  ## Use Cases / Major Families
+DVoRA (DoRA + VeRA) combines DoRA's magnitude-direction decomposition with the Vector-based Random Matrix Adaptation (VeRA) approach, which uses shared frozen random matrices for B and A across layers and learns only small per-layer scaling vectors. DVoRA achieves comparable or superior performance to DoRA at significantly fewer trainable parameters on certain tasks, making it attractive for very constrained parameter budgets. SSMLoRA (2025) integrates state-space model (SSM) components into the adaptation structure for improved modelling of long-range dependencies, showing particular benefit on long-context tasks. Structured task-aware low-rank adaptation methods (2025, arXiv:2603.14228) extend DoRA's directional analysis to identify which directions within the low-rank subspace are most task-relevant and concentrate the rank budget there, further improving parameter efficiency. High-rank structured modulation approaches (arXiv:2601.07507, 2025) complement DoRA by exploiting structured high-rank updates that complement the low-rank directional adaptation.
 
-  ### Language Model Instruction Fine-Tuning
+## Use Cases / Major Families
 
-  DoRA has been extensively evaluated on instruction following and commonsense reasoning benchmarks using LLaMA-7B, LLaMA-13B, and LLaMA-3-8B base models. On the eight-dataset commonsense reasoning evaluation suite (CommonsenseQA, HellaSwag, WinoGrande, ARC-Easy, ARC-Challenge, PIQA, SIQA, and OpenbookQA), DoRA outperforms LoRA by an average of 3.7 percentage points on LLaMA-7B at matched adapter rank, and achieves commonsense accuracy exceeding ChatGPT-3.5 on several individual benchmarks — a widely used performance threshold since ChatGPT's instruction-tuned training gives it a strong commonsense baseline. DoRA maintains this superiority at lower adapter ranks (r=8) relative to LoRA at higher ranks (r=32), suggesting that DoRA's improved representational capacity partially compensates for rank reduction, making it particularly valuable when the parameter budget is tightly constrained.
+### Language Model Instruction Fine-Tuning
 
-  ### Mathematical Reasoning
+DoRA has been extensively evaluated on instruction following and commonsense reasoning benchmarks using LLaMA-7B, LLaMA-13B, and LLaMA-3-8B base models. On the eight-dataset commonsense reasoning evaluation suite (CommonsenseQA, HellaSwag, WinoGrande, ARC-Easy, ARC-Challenge, PIQA, SIQA, and OpenbookQA), DoRA outperforms LoRA by an average of 3.7 percentage points on LLaMA-7B at matched adapter rank, and achieves commonsense accuracy exceeding ChatGPT-3.5 on several individual benchmarks — a widely used performance threshold since ChatGPT's instruction-tuned training gives it a strong commonsense baseline. DoRA maintains this superiority at lower adapter ranks (r=8) relative to LoRA at higher ranks (r=32), suggesting that DoRA's improved representational capacity partially compensates for rank reduction, making it particularly valuable when the parameter budget is tightly constrained.
 
-  On mathematical reasoning benchmarks including GSM8K and MATH, DoRA shows consistent improvements over LoRA at matched rank and learning rate configurations. The decomposition appears particularly beneficial for mathematical tasks because the reasoning capabilities encoded in weight directions may need larger directional updates (representing genuinely new reasoning patterns) while magnitude adjustments calibrate confidence, a separation that full fine-tuning exploits and that DoRA's architecture enables.
+### Mathematical Reasoning
 
-  ### Vision-Language Model Adaptation
+On mathematical reasoning benchmarks including GSM8K and MATH, DoRA shows consistent improvements over LoRA at matched rank and learning rate configurations. The decomposition appears particularly beneficial for mathematical tasks because the reasoning capabilities encoded in weight directions may need larger directional updates (representing genuinely new reasoning patterns) while magnitude adjustments calibrate confidence, a separation that full fine-tuning exploits and that DoRA's architecture enables.
 
-  DoRA has been applied to LLaVA-1.5 (a [[Transformer Architecture]] vision-language model combining a CLIP vision encoder with a Vicuna LLM decoder) and VL-BART for image-text and video-text understanding tasks. On the LLaVA visual instruction tuning benchmark suite (VQAv2 for visual question answering, GQA for compositional question answering, TextVQA for text recognition in images, MMBench for multimodal reasoning, MM-Vet for complex VQA), DoRA consistently outperforms LoRA by 1–3 percentage points at matched rank and training budget. For video understanding tasks (ActivityNet-QA, MSVD-QA, MSRVTT-QA), where the adapter must generalise from fine-tuning data to temporally extended video sequences, DoRA's improved directional control shows particularly consistent benefit over LoRA, suggesting that the magnitude-direction decomposition captures properties of the weight update geometry that generalise across modalities.
+### Vision-Language Model Adaptation
 
-  ### Text-to-Image and Diffusion Model Fine-Tuning
+DoRA has been applied to LLaVA-1.5 (a [[Transformer Architecture]] vision-language model combining a CLIP vision encoder with a Vicuna LLM decoder) and VL-BART for image-text and video-text understanding tasks. On the LLaVA visual instruction tuning benchmark suite (VQAv2 for visual question answering, GQA for compositional question answering, TextVQA for text recognition in images, MMBench for multimodal reasoning, MM-Vet for complex VQA), DoRA consistently outperforms LoRA by 1–3 percentage points at matched rank and training budget. For video understanding tasks (ActivityNet-QA, MSVD-QA, MSRVTT-QA), where the adapter must generalise from fine-tuning data to temporally extended video sequences, DoRA's improved directional control shows particularly consistent benefit over LoRA, suggesting that the magnitude-direction decomposition captures properties of the weight update geometry that generalise across modalities.
 
-  DoRA applied to diffusion model U-Net weight matrices (Stable Diffusion, SDXL) has demonstrated improved subject fidelity and style consistency relative to LoRA at matched parameter budgets. This application domain is commercially significant: virtually all commercial LORA-based style transfer, character customisation (DreamBooth-LoRA), and aesthetic fine-tuning workflows could in principle be improved by substituting DoRA for LoRA, provided the training toolchain supports DoRA. The Hugging Face Diffusers library DoRA integration is progressing following the PEFT library native support.
+### Text-to-Image and Diffusion Model Fine-Tuning
 
-  ### Low-Data and Resource-Constrained Settings
+DoRA applied to diffusion model U-Net weight matrices (Stable Diffusion, SDXL) has demonstrated improved subject fidelity and style consistency relative to LoRA at matched parameter budgets. This application domain is commercially significant: virtually all commercial LORA-based style transfer, character customisation (DreamBooth-LoRA), and aesthetic fine-tuning workflows could in principle be improved by substituting DoRA for LoRA, provided the training toolchain supports DoRA. The Hugging Face Diffusers library DoRA integration is progressing following the PEFT library native support.
 
-  Research from 2026 (arXiv:2603.17782) on adapting billion-parameter vision models to agricultural imagery under a severely limited data regime (98:1 test-to-train ratio, approximately 50 training samples for 5,000 test images) found QDoRA achieving approximately 83% test accuracy — competitive with QLoRA and significantly above zero-shot baseline — demonstrating that DoRA's quality advantage extends to severely data-limited fine-tuning scenarios without requiring additional parameters. This is directly relevant to applied AI deployment in domains where annotated training data is expensive or scarce: medical device manufacturers, materials scientists, industrial inspection, and agricultural monitoring applications all commonly face this constraint.
+### Low-Data and Resource-Constrained Settings
 
-  ### Domain Adaptation for Professional Applications
+Research from 2026 (arXiv:2603.17782) on adapting billion-parameter vision models to agricultural imagery under a severely limited data regime (98:1 test-to-train ratio, approximately 50 training samples for 5,000 test images) found QDoRA achieving approximately 83% test accuracy — competitive with QLoRA and significantly above zero-shot baseline — demonstrating that DoRA's quality advantage extends to severely data-limited fine-tuning scenarios without requiring additional parameters. This is directly relevant to applied AI deployment in domains where annotated training data is expensive or scarce: medical device manufacturers, materials scientists, industrial inspection, and agricultural monitoring applications all commonly face this constraint.
 
-  DoRA has been applied to immigration law and insurance domain adaptation tasks (2025 research), where fine-tuning of a general-purpose LLM to professional domain terminology, reasoning patterns, and factual accuracy requirements demands more expressive adaptation than standard LoRA can provide within a constrained parameter budget. The larger distributional shift between general web text (the pretraining domain) and highly specialised professional language appears to particularly benefit from DoRA's decoupled directional and magnitude updates, which allow the model's column directions to shift substantially (capturing new vocabulary distributions and reasoning patterns) while magnitude adjustments calibrate output confidence to domain-specific certainty levels.
+### Domain Adaptation for Professional Applications
 
-  ## Academic Context
+DoRA has been applied to immigration law and insurance domain adaptation tasks (2025 research), where fine-tuning of a general-purpose LLM to professional domain terminology, reasoning patterns, and factual accuracy requirements demands more expressive adaptation than standard LoRA can provide within a constrained parameter budget. The larger distributional shift between general web text (the pretraining domain) and highly specialised professional language appears to particularly benefit from DoRA's decoupled directional and magnitude updates, which allow the model's column directions to shift substantially (capturing new vocabulary distributions and reasoning patterns) while magnitude adjustments calibrate output confidence to domain-specific certainty levels.
 
-  DoRA was authored by Shih-Yang Liu, Chien-Yi Wang, Hongxu Yin, Pavlo Molchanov, Yu-Chiang Frank Wang, Kwang-Ting Cheng, and Min-Hung Chen, spanning NVIDIA NVLabs, National Taiwan University, and National Yang Ming Chiao Tung University. The paper was accepted as an oral presentation at ICML 2024 — at a 1.5% acceptance rate, the highest distinction in the conference programme — placing it among the most highly selected contributions of the year. The official PyTorch implementation is maintained at https://github.com/NVlabs/DoRA.
+## Academic Context
 
-  The intellectual context for DoRA is the broader [[Parameter-Efficient Fine-Tuning]] literature that emerged from the practical necessity of adapting enormous foundation models for specific tasks without the resource requirements of full fine-tuning. The adapter approach (Houlsby et al., ICML 2019) inserted small bottleneck modules (two fully-connected layers with a low-rank bottleneck) into frozen [[Transformer Architecture]] blocks, reducing trainable parameters from billions to millions while preserving pretrained knowledge. Prefix tuning (Li & Liang, ACL 2021) and prompt tuning (Lester et al., EMNLP 2021) moved entirely to soft trainable token representations prepended to inputs, avoiding architectural modification altogether. LoRA (Hu et al., ICLR 2022) achieved the most practical impact by combining targeted parameter updates in weight space (as in adapters) with weight mergeability (zero inference overhead), becoming the dominant PEFT method within one year of publication.
+DoRA was authored by Shih-Yang Liu, Chien-Yi Wang, Hongxu Yin, Pavlo Molchanov, Yu-Chiang Frank Wang, Kwang-Ting Cheng, and Min-Hung Chen, spanning NVIDIA NVLabs, National Taiwan University, and National Yang Ming Chiao Tung University. The paper was accepted as an oral presentation at ICML 2024 — at a 1.5% acceptance rate, the highest distinction in the conference programme — placing it among the most highly selected contributions of the year. The official PyTorch implementation is maintained at https://github.com/NVlabs/DoRA.
 
-  The progression from LoRA to DoRA was not direct: several intermediate methods characterised LoRA's limitations and proposed partial solutions. LoRA+ (Hayou et al., ICML 2024) showed that different learning rates for the A and B matrices substantially improve LoRA performance, with the optimal ratio being the square root of the rank dimension. rsLoRA (Kalajdzievski, 2023) corrected a scaling factor in LoRA's rank initialisation that caused instability at high ranks. VeRA (Kopiczko et al., ICLR 2024) reduced trainable parameters further by sharing frozen random matrices across layers and learning only scaling vectors. LoftQ (Liu et al., 2023) improved DoRA/LoRA initialisation for quantised models, aligning adapter initialisation with the quantisation error. The (IA)³ method (Liu et al., NeurIPS 2022) applied even more lightweight adaptation using rescaling vectors applied to key, value, and feed-forward weights.
+The intellectual context for DoRA is the broader [[Parameter-Efficient Fine-Tuning]] literature that emerged from the practical necessity of adapting enormous foundation models for specific tasks without the resource requirements of full fine-tuning. The adapter approach (Houlsby et al., ICML 2019) inserted small bottleneck modules (two fully-connected layers with a low-rank bottleneck) into frozen [[Transformer Architecture]] blocks, reducing trainable parameters from billions to millions while preserving pretrained knowledge. Prefix tuning (Li & Liang, ACL 2021) and prompt tuning (Lester et al., EMNLP 2021) moved entirely to soft trainable token representations prepended to inputs, avoiding architectural modification altogether. LoRA (Hu et al., ICLR 2022) achieved the most practical impact by combining targeted parameter updates in weight space (as in adapters) with weight mergeability (zero inference overhead), becoming the dominant PEFT method within one year of publication.
 
-  DoRA's theoretical contribution connects to a broader research direction in understanding the intrinsic geometry of fine-tuning. Aghajanyan et al. (ACL 2021) showed that fine-tuning mainly occupies a low-dimensional subspace of the full parameter space, providing theoretical motivation for low-rank adaptation methods. OFT (Orthogonal Fine-Tuning, Qiu et al., NeurIPS 2023) constrained the directional update to be a rotation (orthogonal transformation), explicitly preserving hyperspherical energy and magnitude. DoRA generalises OFT by removing the rotation constraint and replacing it with the less restrictive low-rank constraint on the directional update, while explicitly learning the magnitude separately — a strictly more general family that subsumes OFT-style rotation as a special case when m is fixed and BA is orthogonal.
+The progression from LoRA to DoRA was not direct: several intermediate methods characterised LoRA's limitations and proposed partial solutions. LoRA+ (Hayou et al., ICML 2024) showed that different learning rates for the A and B matrices substantially improve LoRA performance, with the optimal ratio being the square root of the rank dimension. rsLoRA (Kalajdzievski, 2023) corrected a scaling factor in LoRA's rank initialisation that caused instability at high ranks. VeRA (Kopiczko et al., ICLR 2024) reduced trainable parameters further by sharing frozen random matrices across layers and learning only scaling vectors. LoftQ (Liu et al., 2023) improved DoRA/LoRA initialisation for quantised models, aligning adapter initialisation with the quantisation error. The (IA)³ method (Liu et al., NeurIPS 2022) applied even more lightweight adaptation using rescaling vectors applied to key, value, and feed-forward weights.
 
-  ## Current Landscape (2026)
+DoRA's theoretical contribution connects to a broader research direction in understanding the intrinsic geometry of fine-tuning. Aghajanyan et al. (ACL 2021) showed that fine-tuning mainly occupies a low-dimensional subspace of the full parameter space, providing theoretical motivation for low-rank adaptation methods. OFT (Orthogonal Fine-Tuning, Qiu et al., NeurIPS 2023) constrained the directional update to be a rotation (orthogonal transformation), explicitly preserving hyperspherical energy and magnitude. DoRA generalises OFT by removing the rotation constraint and replacing it with the less restrictive low-rank constraint on the directional update, while explicitly learning the magnitude separately — a strictly more general family that subsumes OFT-style rotation as a special case when m is fixed and BA is orthogonal.
 
-  As of mid-2026, DoRA is widely adopted in research fine-tuning workflows and is gaining commercial adoption for tasks where LoRA's accuracy deficit is operationally significant. The Hugging Face PEFT library — the dominant Python package for parameter-efficient fine-tuning across the ecosystem — integrates DoRA natively as of PEFT version 0.11 (released early 2024 following the ICML 2024 oral presentation), enabling drop-in replacement of LoRA with DoRA through a single use_dora=True configuration flag. The Hugging Face Transformers SFTTrainer and TRL library both support DoRA through the PEFT configuration, making it accessible to practitioners without requiring custom code.
+## Current Landscape (2026)
 
-  QDoRA — the combination of 4-bit NF4 base weight quantisation (as in QLoRA) with DoRA's magnitude-direction adaptation — has emerged as what practitioners and practitioners' guides characterise as the leading PEFT standard for 2025. QDoRA substantially narrows the quality gap to full fine-tuning while remaining trainable on single-GPU consumer hardware (24 GB VRAM for 7B models), democratising access to high-quality fine-tuning without data centre GPU resources. The comparison article "Comparing Fine-Tuning Optimization Techniques (LoRA, QLoRA, DoRA, and QDoRA)" by Encora (2025) documents the practical trade-offs across these methods with empirical benchmarks across several task families.
+As of mid-2026, DoRA is widely adopted in research fine-tuning workflows and is gaining commercial adoption for tasks where LoRA's accuracy deficit is operationally significant. The Hugging Face PEFT library — the dominant Python package for parameter-efficient fine-tuning across the ecosystem — integrates DoRA natively as of PEFT version 0.11 (released early 2024 following the ICML 2024 oral presentation), enabling drop-in replacement of LoRA with DoRA through a single use_dora=True configuration flag. The Hugging Face Transformers SFTTrainer and TRL library both support DoRA through the PEFT configuration, making it accessible to practitioners without requiring custom code.
 
-  The broader PEFT landscape in 2026 features ongoing competition and complementarity among methods. LoRA remains the baseline for its simplicity and lowest overhead. QLoRA addresses memory-critical 4-bit training scenarios. DoRA improves quality for tasks where the accuracy gap to full fine-tuning matters operationally. (IA)³ provides extremely sparse adaptation at even lower parameter count. Adapter modules support multi-task serving where per-task adapters can be hot-swapped from a shared weight server without merging, at the cost of inference latency. The 2025 survey "PEFT A2Z" (arXiv:2504.14117) provides a systematic taxonomy positioning DoRA as a tier-1 method alongside LoRA, QLoRA, and (IA)³ in the current PEFT landscape.
+QDoRA — the combination of 4-bit NF4 base weight quantisation (as in QLoRA) with DoRA's magnitude-direction adaptation — has emerged as what practitioners and practitioners' guides characterise as the leading PEFT standard for 2025. QDoRA substantially narrows the quality gap to full fine-tuning while remaining trainable on single-GPU consumer hardware (24 GB VRAM for 7B models), democratising access to high-quality fine-tuning without data centre GPU resources. The comparison article "Comparing Fine-Tuning Optimization Techniques (LoRA, QLoRA, DoRA, and QDoRA)" by Encora (2025) documents the practical trade-offs across these methods with empirical benchmarks across several task families.
 
-  Research extensions published in 2025–2026 include: structured task-aware adaptation building on DoRA's directional analysis to concentrate rank budget in the most task-relevant subspaces (arXiv:2603.14228); QDoRA for adapting billion-parameter vision foundation models (ViT-L, ViT-H) in low-data agricultural and medical imaging regimes (arXiv:2603.17782); DVoRA combining DoRA's magnitude separation with VeRA's shared random matrix approach for further parameter efficiency; and applications of DoRA to diffusion model fine-tuning for personalisation and style transfer. ICML and NeurIPS 2025 programmes included multiple papers building on the DoRA framework or proposing alternatives motivated by the same weight decomposition analysis.
+The broader PEFT landscape in 2026 features ongoing competition and complementarity among methods. LoRA remains the baseline for its simplicity and lowest overhead. QLoRA addresses memory-critical 4-bit training scenarios. DoRA improves quality for tasks where the accuracy gap to full fine-tuning matters operationally. (IA)³ provides extremely sparse adaptation at even lower parameter count. Adapter modules support multi-task serving where per-task adapters can be hot-swapped from a shared weight server without merging, at the cost of inference latency. The 2025 survey "PEFT A2Z" (arXiv:2504.14117) provides a systematic taxonomy positioning DoRA as a tier-1 method alongside LoRA, QLoRA, and (IA)³ in the current PEFT landscape.
 
-  ## UK Context
+Research extensions published in 2025–2026 include: structured task-aware adaptation building on DoRA's directional analysis to concentrate rank budget in the most task-relevant subspaces (arXiv:2603.14228); QDoRA for adapting billion-parameter vision foundation models (ViT-L, ViT-H) in low-data agricultural and medical imaging regimes (arXiv:2603.17782); DVoRA combining DoRA's magnitude separation with VeRA's shared random matrix approach for further parameter efficiency; and applications of DoRA to diffusion model fine-tuning for personalisation and style transfer. ICML and NeurIPS 2025 programmes included multiple papers building on the DoRA framework or proposing alternatives motivated by the same weight decomposition analysis.
 
-  UK research groups have contributed to both the theoretical foundations and applied contexts for DoRA and [[Parameter-Efficient Fine-Tuning]] more broadly. UCL's Centre for Artificial Intelligence, the Oxford Internet Institute, and the Edinburgh Natural Language Processing group have all published research on efficient adaptation of large language models to domain-specific and resource-constrained settings. The EPSRC Programme Grant "Robust and Reliable AI" (led by Edinburgh, in collaboration with Manchester and Imperial) includes work on understanding the geometry of fine-tuning, directly relevant to DoRA's theoretical foundation.
+## UK Context
 
-  The NHS AI Lab and NHSX have motivated UK-specific research into PEFT-based adaptation of medical language models for clinical note processing, radiology report generation, and clinical coding (ICD-10 classification). NHS information governance frameworks prohibit moving sensitive patient data to external training clusters, making fine-tuning only a small adapter on locally held clinical data the operationally mandated approach for domain specialisation. Imperial College London's Department of Computing has applied LoRA and DoRA to NHS clinical data for automated ICD coding, demonstrating that DoRA's improved accuracy is material in a medical context where classification errors have clinical and financial consequences.
+UK research groups have contributed to both the theoretical foundations and applied contexts for DoRA and [[Parameter-Efficient Fine-Tuning]] more broadly. UCL's Centre for Artificial Intelligence, the Oxford Internet Institute, and the Edinburgh Natural Language Processing group have all published research on efficient adaptation of large language models to domain-specific and resource-constrained settings. The EPSRC Programme Grant "Robust and Reliable AI" (led by Edinburgh, in collaboration with Manchester and Imperial) includes work on understanding the geometry of fine-tuning, directly relevant to DoRA's theoretical foundation.
 
-  Edinburgh's School of Informatics has integrated DoRA-based fine-tuning into research pipelines for biomedical NLP, applying it to models trained on MIMIC-IV clinical notes and the UK Biobank phenotype data for rare disease prediction and genetic association studies. The Alan Turing Institute's national AI research centre coordinates PEFT methodology research across its university network, with a focus on federated adaptation — applying LoRA and DoRA within federated learning frameworks where each NHS trust or research institution fine-tunes only on its local data and aggregates adapter parameters (rather than raw data) across sites.
+The NHS AI Lab and NHSX have motivated UK-specific research into PEFT-based adaptation of medical language models for clinical note processing, radiology report generation, and clinical coding (ICD-10 classification). NHS information governance frameworks prohibit moving sensitive patient data to external training clusters, making fine-tuning only a small adapter on locally held clinical data the operationally mandated approach for domain specialisation. Imperial College London's Department of Computing has applied LoRA and DoRA to NHS clinical data for automated ICD coding, demonstrating that DoRA's improved accuracy is material in a medical context where classification errors have clinical and financial consequences.
 
-  Manchester's AI research hub and the N8 Research Partnership (the consortium of eight research-intensive universities in Northern England: Durham, Lancaster, Leeds, Liverpool, Manchester, Newcastle, Sheffield, and York) have applied DoRA to industrial text analytics, engineering maintenance log analysis, and supply chain documentation processing for the Northern England manufacturing sector. These applications are characterised by highly domain-specific vocabulary and reasoning patterns that diverge substantially from general web text, making the improved directional control of DoRA particularly valuable for domain adaptation quality.
+Edinburgh's School of Informatics has integrated DoRA-based fine-tuning into research pipelines for biomedical NLP, applying it to models trained on MIMIC-IV clinical notes and the UK Biobank phenotype data for rare disease prediction and genetic association studies. The Alan Turing Institute's national AI research centre coordinates PEFT methodology research across its university network, with a focus on federated adaptation — applying LoRA and DoRA within federated learning frameworks where each NHS trust or research institution fine-tunes only on its local data and aggregates adapter parameters (rather than raw data) across sites.
 
-  The UK Government's National AI Strategy and the AI Safety Institute (established 2023) have highlighted efficient fine-tuning and model adaptation as a key enabling technology for safe AI deployment, noting that PEFT methods allow organisations to adapt foundation models to their specific operational contexts while minimising the security and safety risks associated with full retraining on sensitive datasets. The AI Safety Institute's evaluations of frontier model fine-tuning techniques include DoRA as a reference method alongside LoRA and full fine-tuning.
+Manchester's AI research hub and the N8 Research Partnership (the consortium of eight research-intensive universities in Northern England: Durham, Lancaster, Leeds, Liverpool, Manchester, Newcastle, Sheffield, and York) have applied DoRA to industrial text analytics, engineering maintenance log analysis, and supply chain documentation processing for the Northern England manufacturing sector. These applications are characterised by highly domain-specific vocabulary and reasoning patterns that diverge substantially from general web text, making the improved directional control of DoRA particularly valuable for domain adaptation quality.
 
-  ## Future Directions (2026–2030)
+The UK Government's National AI Strategy and the AI Safety Institute (established 2023) have highlighted efficient fine-tuning and model adaptation as a key enabling technology for safe AI deployment, noting that PEFT methods allow organisations to adapt foundation models to their specific operational contexts while minimising the security and safety risks associated with full retraining on sensitive datasets. The AI Safety Institute's evaluations of frontier model fine-tuning techniques include DoRA as a reference method alongside LoRA and full fine-tuning.
 
-  Several research directions will shape the evolution of DoRA and weight-decomposition-based adaptation over the next four years. The mathematical framework of magnitude-direction decomposition is generalisable beyond column-wise L2 norms: future variants may exploit full singular value decomposition (SVD) of weight matrices to identify principal components and apply low-rank updates selectively in the most informative singular directions. This connects to theoretical work on the intrinsic dimensionality of fine-tuning (Aghajanyan et al., 2021) and to the ROSA (Random Orthogonal Subspace Adaptation) line of methods.
+## Future Directions (2026–2030)
 
-  Continual learning and multi-task adaptation are natural extensions of DoRA: the magnitude component provides a natural control variable for interpolating between task-specific and pretrained knowledge, and DoRA adapters can be merged via task arithmetic and linear mode connectivity with potentially better geometric behaviour than LoRA adapters, given that the magnitude-direction decomposition has cleaner gradient geometry. Multi-task DoRA ensembles serving thousands of domain-specific adapters over a shared base model — where per-request adapter selection is performed without weight merging — may become a dominant deployment pattern for LLM API services, with the magnitude vector enabling adaptive confidence calibration per task without architecture changes.
+Several research directions will shape the evolution of DoRA and weight-decomposition-based adaptation over the next four years. The mathematical framework of magnitude-direction decomposition is generalisable beyond column-wise L2 norms: future variants may exploit full singular value decomposition (SVD) of weight matrices to identify principal components and apply low-rank updates selectively in the most informative singular directions. This connects to theoretical work on the intrinsic dimensionality of fine-tuning (Aghajanyan et al., 2021) and to the ROSA (Random Orthogonal Subspace Adaptation) line of methods.
 
-  The intersection of DoRA with model pruning and structured sparsity is relatively unexplored: if the directional update BA is concentrated in a sparse set of columns, structured pruning of adapter matrices may be applicable, further reducing parameter count. Post-training quantisation applied to merged DoRA weights may have better numerical properties than merged LoRA weights due to the magnitude normalisation preserving uniform column norms, potentially improving quantisation accuracy for low-bit deployment. DoRA applied to state space models (Mamba, RWKV) and linear attention variants is a natural extension as these architectures gain adoption for long-context tasks where [[Transformer Architecture]] attention is computationally impractical.
+Continual learning and multi-task adaptation are natural extensions of DoRA: the magnitude component provides a natural control variable for interpolating between task-specific and pretrained knowledge, and DoRA adapters can be merged via task arithmetic and linear mode connectivity with potentially better geometric behaviour than LoRA adapters, given that the magnitude-direction decomposition has cleaner gradient geometry. Multi-task DoRA ensembles serving thousands of domain-specific adapters over a shared base model — where per-request adapter selection is performed without weight merging — may become a dominant deployment pattern for LLM API services, with the magnitude vector enabling adaptive confidence calibration per task without architecture changes.
 
-  As [[Transformer Architecture]] models grow through Mixture-of-Experts (MoE) architectures, DoRA applied to expert weight matrices raises new questions: whether magnitude and direction should be decomposed per-expert (capturing expert-specific scaling) or shared across experts within a layer (capturing layer-level scaling). The interaction between DoRA's weight decomposition and token routing in MoE fine-tuning may enable expert-level specialisation with fewer trainable parameters than per-expert LoRA adapters. UK-specific regulatory drivers — NHS data governance requirements, the EU AI Act's transparency provisions applicable to UK providers serving EU markets, and the ICO's guidance on AI model documentation — create strong incentives for PEFT-based fine-tuning approaches that limit sensitive data exposure, audit adapter provenance, and maintain clear attribution between base model and task-specific adaptation.
+The intersection of DoRA with model pruning and structured sparsity is relatively unexplored: if the directional update BA is concentrated in a sparse set of columns, structured pruning of adapter matrices may be applicable, further reducing parameter count. Post-training quantisation applied to merged DoRA weights may have better numerical properties than merged LoRA weights due to the magnitude normalisation preserving uniform column norms, potentially improving quantisation accuracy for low-bit deployment. DoRA applied to state space models (Mamba, RWKV) and linear attention variants is a natural extension as these architectures gain adoption for long-context tasks where [[Transformer Architecture]] attention is computationally impractical.
 
-  ## Formal Algorithm
+As [[Transformer Architecture]] models grow through Mixture-of-Experts (MoE) architectures, DoRA applied to expert weight matrices raises new questions: whether magnitude and direction should be decomposed per-expert (capturing expert-specific scaling) or shared across experts within a layer (capturing layer-level scaling). The interaction between DoRA's weight decomposition and token routing in MoE fine-tuning may enable expert-level specialisation with fewer trainable parameters than per-expert LoRA adapters. UK-specific regulatory drivers — NHS data governance requirements, the EU AI Act's transparency provisions applicable to UK providers serving EU markets, and the ICO's guidance on AI model documentation — create strong incentives for PEFT-based fine-tuning approaches that limit sensitive data exposure, audit adapter provenance, and maintain clear attribution between base model and task-specific adaptation.
 
-  ### DoRA Forward Pass
+## Formal Algorithm
 
-  Given pretrained weight W_0 ∈ ℝ^{d×k}, trainable magnitude m ∈ ℝ^{1×k}, and trainable LoRA matrices A ∈ ℝ^{r×k}, B ∈ ℝ^{d×r}:
+### DoRA Forward Pass
 
-  1. Compute adapted direction: W_adapted = W_0 + BA ∈ ℝ^{d×k}
-  2. Compute column norms: c_j = ||W_adapted[:, j]||_2 for j = 1, ..., k
-  3. Normalise: V_normalised = W_adapted / c  (broadcasting c ∈ ℝ^{1×k})
-  4. Apply magnitude: W' = m ⊙ V_normalised  (element-wise broadcast multiplication)
-  5. Forward: h = W' x + bias  (or equivalently h = (m / c) ⊙ (W_adapted x))
+Given pretrained weight W_0 ∈ ℝ^{d×k}, trainable magnitude m ∈ ℝ^{1×k}, and trainable LoRA matrices A ∈ ℝ^{r×k}, B ∈ ℝ^{d×r}:
 
-  ### DoRA Merge (Inference)
+1. Compute adapted direction: W_adapted = W_0 + BA ∈ ℝ^{d×k}
+2. Compute column norms: c_j = ||W_adapted[:, j]||_2 for j = 1, ..., k
+3. Normalise: V_normalised = W_adapted / c  (broadcasting c ∈ ℝ^{1×k})
+4. Apply magnitude: W' = m ⊙ V_normalised  (element-wise broadcast multiplication)
+5. Forward: h = W' x + bias  (or equivalently h = (m / c) ⊙ (W_adapted x))
 
-  After training:
-  1. W_final = (m / ||W_0 + BA||_c) ⊙ (W_0 + BA)
-  2. Replace W_0 with W_final in the pretrained model
-  3. Remove m, A, B — zero additional inference parameters
+### DoRA Merge (Inference)
 
-  ### Comparison with LoRA
+After training:
+1. W_final = (m / ||W_0 + BA||_c) ⊙ (W_0 + BA)
+2. Replace W_0 with W_final in the pretrained model
+3. Remove m, A, B — zero additional inference parameters
 
-  LoRA update: W' = W_0 + BA (additive, unconstrained, d×r + r×k parameters)
-  DoRA update: W' = (m / ||W_0 + BA||_c) ⊙ (W_0 + BA) (d×r + r×k + k parameters)
-  Parameter overhead of DoRA over LoRA: k parameters (column magnitudes), negligible relative to r(d+k).
+### Comparison with LoRA
 
-  ## Benchmark Results and Evaluation
+LoRA update: W' = W_0 + BA (additive, unconstrained, d×r + r×k parameters)
+DoRA update: W' = (m / ||W_0 + BA||_c) ⊙ (W_0 + BA) (d×r + r×k + k parameters)
+Parameter overhead of DoRA over LoRA: k parameters (column magnitudes), negligible relative to r(d+k).
 
-  - **LLaMA-7B commonsense reasoning (8-task suite)**: DoRA (r=16): 82.1% average; LoRA (r=16): 78.4% average; Full FT: 83.7%; ChatGPT-3.5: 80.2%
-  - **LLaMA-7B commonsense reasoning (r=8 vs LoRA r=32)**: DoRA at r=8 outperforms LoRA at r=32 on 6 of 8 tasks, demonstrating superior parameter efficiency
-  - **LLaVA-1.5-7B visual instruction tuning**: DoRA gains 1.2–2.8 points over LoRA across VQAv2, GQA, TextVQA, MMBench benchmarks at matched rank r=16
-  - **VL-BART video understanding (ActivityNet-QA)**: DoRA achieves 2.1 points over LoRA at rank r=16
-  - **DVoRA vs DoRA**: DVoRA at 10× fewer parameters than DoRA achieves within 0.3 points of DoRA on most commonsense tasks
-  - **QDoRA on agricultural vision models (2026)**: ~83% test accuracy at 98:1 test-to-train ratio, competitive with QLoRA, significantly above zero-shot baseline
+## Benchmark Results and Evaluation
+
+- **LLaMA-7B commonsense reasoning (8-task suite)**: DoRA (r=16): 82.1% average; LoRA (r=16): 78.4% average; Full FT: 83.7%; ChatGPT-3.5: 80.2%
+- **LLaMA-7B commonsense reasoning (r=8 vs LoRA r=32)**: DoRA at r=8 outperforms LoRA at r=32 on 6 of 8 tasks, demonstrating superior parameter efficiency
+- **LLaVA-1.5-7B visual instruction tuning**: DoRA gains 1.2–2.8 points over LoRA across VQAv2, GQA, TextVQA, MMBench benchmarks at matched rank r=16
+- **VL-BART video understanding (ActivityNet-QA)**: DoRA achieves 2.1 points over LoRA at rank r=16
+- **DVoRA vs DoRA**: DVoRA at 10× fewer parameters than DoRA achieves within 0.3 points of DoRA on most commonsense tasks
+- **QDoRA on agricultural vision models (2026)**: ~83% test accuracy at 98:1 test-to-train ratio, competitive with QLoRA, significantly above zero-shot baseline
 
   ## Theoretical Connections and Related Methods
 
@@ -322,47 +322,50 @@ DoRA (Weight-Decomposed Low-Rank Adaptation) is a parameter-efficient fine-tunin
   **Hardware**: Single NVIDIA RTX 4090 (24 GB) or A10G (24 GB)
   **Base model**: Meta-Llama-3-8B (bfloat16, 16 GB VRAM at full precision; 8 GB at 4-bit NF4)
   **Configuration**:
-  - PEFT method: DoRA (use_dora=True in LoraConfig)
-  - Adapter rank r: 16
-  - Adapter alpha: 32 (effective learning rate scaling factor r/alpha = 0.5)
-  - Target modules: q_proj, k_proj, v_proj, o_proj, gate_proj, up_proj, down_proj
-  - Dropout: 0.05
-  - Quantisation: 4-bit NF4 (QDoRA) if VRAM < 24 GB, else bfloat16 base weights
-  - Optimizer: AdamW (weight_decay=0.01, lr=2e-4 for r=16)
-  - Scheduler: cosine with warmup (warmup_ratio=0.03)
-  - Per-device batch size: 4 sequences
-  - Gradient accumulation steps: 4 (effective batch = 16 sequences)
-  - Max sequence length: 2048 tokens
-  - Training epochs: 3
-  - Gradient norm clipping: 1.0
+
+- PEFT method: DoRA (use_dora=True in LoraConfig)
+- Adapter rank r: 16
+- Adapter alpha: 32 (effective learning rate scaling factor r/alpha = 0.5)
+- Target modules: q_proj, k_proj, v_proj, o_proj, gate_proj, up_proj, down_proj
+- Dropout: 0.05
+- Quantisation: 4-bit NF4 (QDoRA) if VRAM < 24 GB, else bfloat16 base weights
+- Optimizer: AdamW (weight_decay=0.01, lr=2e-4 for r=16)
+- Scheduler: cosine with warmup (warmup_ratio=0.03)
+- Per-device batch size: 4 sequences
+- Gradient accumulation steps: 4 (effective batch = 16 sequences)
+- Max sequence length: 2048 tokens
+- Training epochs: 3
+- Gradient norm clipping: 1.0
 
   ### QDoRA Recipe for 70B Models on 2×A100 80GB
 
   **Hardware**: 2× NVIDIA A100 80GB SXM4 with NVLink
   **Base model**: Meta-Llama-3-70B-Instruct (4-bit NF4, ~37 GB across 2 GPUs with FSDP)
   **Configuration**:
-  - PEFT method: DoRA (use_dora=True)
-  - Adapter rank r: 64
-  - Adapter alpha: 128
-  - Target modules: all linear layers
-  - Quantisation: 4-bit NF4 with double quantisation
-  - Optimizer: paged AdamW 8-bit (bitsandbytes) for memory efficiency
-  - Framework: FSDP with LoRA wrapper OR DeepSpeed ZeRO-2
-  - Per-device batch size: 2, gradient accumulation: 8, effective batch: 32
-  - Learning rate: 1e-4 with cosine schedule
-  - Training duration: typically 1–3 epochs for instruction fine-tuning datasets
+
+- PEFT method: DoRA (use_dora=True)
+- Adapter rank r: 64
+- Adapter alpha: 128
+- Target modules: all linear layers
+- Quantisation: 4-bit NF4 with double quantisation
+- Optimizer: paged AdamW 8-bit (bitsandbytes) for memory efficiency
+- Framework: FSDP with LoRA wrapper OR DeepSpeed ZeRO-2
+- Per-device batch size: 2, gradient accumulation: 8, effective batch: 32
+- Learning rate: 1e-4 with cosine schedule
+- Training duration: typically 1–3 epochs for instruction fine-tuning datasets
 
   ### DoRA for Vision-Language Model Fine-Tuning (LLaVA-1.5-7B)
 
   **Hardware**: Single A100 40GB or 2× RTX 4090
   **Configuration**:
-  - Apply DoRA to the LLM decoder component (Vicuna-7B) only
-  - LoRA rank r: 128 for visual instruction tuning (higher rank benefits multimodal tasks)
-  - Target modules: attention and MLP projections in LLM decoder
-  - Learning rate: 2e-4, cosine schedule, 1 epoch over visual instruction dataset
-  - MLP connector (vision-to-text projection): can be fine-tuned fully or with DoRA
-  - Vision encoder (CLIP ViT-L): typically frozen during instruction tuning
-  - Training data: LLaVA-1.5 instruction dataset (665K conversation samples)
+
+- Apply DoRA to the LLM decoder component (Vicuna-7B) only
+- LoRA rank r: 128 for visual instruction tuning (higher rank benefits multimodal tasks)
+- Target modules: attention and MLP projections in LLM decoder
+- Learning rate: 2e-4, cosine schedule, 1 epoch over visual instruction dataset
+- MLP connector (vision-to-text projection): can be fine-tuned fully or with DoRA
+- Vision encoder (CLIP ViT-L): typically frozen during instruction tuning
+- Training data: LLaVA-1.5 instruction dataset (665K conversation samples)
 
   ## Common Failure Modes and Diagnostics
 
@@ -434,39 +437,39 @@ DoRA (Weight-Decomposed Low-Rank Adaptation) is a parameter-efficient fine-tunin
 
   ## Key Terminology Glossary
 
-  - **Weight decomposition**: Factorisation of a weight matrix W into magnitude m (column L2 norms, a 1×k vector) and direction V (unit-normalised columns, a d×k matrix): W = m ⋅ (V / ||V||_c).
-  - **Magnitude component**: The trainable vector m ∈ ℝ^{1×k} holding the per-column scale of the adapted weight. Initialised to column norms of W_0; adds only k parameters per weight matrix relative to LoRA.
-  - **Directional component**: The unit-normalised column direction matrix (W_0 + BA) / ||W_0 + BA||_c; updated via the low-rank perturbation BA during training.
-  - **Column-wise norm ||V||_c**: The L2 norm of each column of V, used to normalise direction. Recomputed at each forward pass over the current adapted direction W_0 + BA.
-  - **Low-Rank Adaptation (LoRA)**: The mechanism used within DoRA for the directional update: ΔV = BA, B ∈ ℝ^{d×r}, A ∈ ℝ^{r×k}, r ≪ min(d, k).
-  - **QDoRA**: DoRA combined with 4-bit NF4 base weight quantisation as in QLoRA. Achieves near-full-fine-tuning quality on consumer GPUs with 24 GB VRAM.
-  - **DVoRA**: Combination of DoRA's magnitude-direction decomposition with VeRA's shared frozen random matrices. Achieves comparable performance to DoRA at much fewer trainable parameters.
-  - **Full fine-tuning (FT)**: Updating all model parameters; the gold-standard quality baseline against which all PEFT methods are benchmarked.
-  - **PEFT (Parameter-Efficient Fine-Tuning)**: The family of methods (adapters, LoRA, DoRA, prefix tuning, (IA)³, prompt tuning) that adapt pretrained models by updating only a small fraction of total parameters.
-  - **Weight merging**: Post-training fusion of DoRA adapter weights (m, A, B) back into the base weight matrix W_final = (m / ||W_0 + BA||_c) ⋅ (W_0 + BA) for zero-overhead inference; the merged weight replaces W_0 entirely.
-  - **Adapter rank r**: The dimensionality of the low-rank matrices A and B; controls the capacity of the directional update subspace. DoRA maintains high quality at lower r than LoRA.
-  - **Polar decomposition**: The mathematical factorisation W = m ⋅ V that DoRA exploits, where m ≥ 0 and V has unit column norms; analogous to the polar form of complex numbers or the polar decomposition of matrices in numerical linear algebra.
-  - **Column-wise adaptation**: The property of DoRA that each column of the adapted weight matrix W' has independently learned magnitude and directional update, enabling fine-grained control over individual output projections.
-  - **LoftQ**: LoRA Fine-Tuning-aware Quantisation; improved initialisation strategy for LoRA (and DoRA) adapters on quantised base models by alternating SVD and NF4 quantisation to minimise initialisation error.
-  - **NF4 (Normal Float 4)**: 4-bit quantisation format designed for normally-distributed neural network weights; used in QLoRA and QDoRA to store base model weights at 4-bit precision with minimal information loss.
-  - **Adapter card**: Metadata specification on the Hugging Face Hub for published PEFT adapters, documenting base model, adapter method (LoRA, DoRA), rank, target modules, training data, and task type.
-  - **use_dora**: Boolean flag in Hugging Face PEFT LoraConfig that enables DoRA instead of standard LoRA; the primary configuration change required to use DoRA in Hugging Face-based training pipelines.
-  - **dvora**: Combination of DoRA (magnitude-direction decomposition) with VeRA (Vector-based Random Matrix Adaptation); achieves DoRA-level quality at significantly fewer trainable parameters.
-  - **Hyperspherical energy**: The distribution of weight vector orientations on the unit sphere, which OFT and DoRA both aim to preserve or control during fine-tuning; concept from the sphere packing literature adapted to neural network fine-tuning.
-  - **Learning rate multiplier**: In PEFT frameworks, a per-parameter-group scaling factor applied to the base learning rate; recommended to use different values for A, B, and m in DoRA following the LoRA+ findings.
-  - **Rank-r update subspace**: The r-dimensional column span of B within the d-dimensional weight output space; limits the directional changes DoRA can represent to this subspace, with r determining the update capacity.
-  - **Gradient inversion attack**: A security attack (Zhu et al., 2019) that reconstructs training examples from observed gradient values; relevant to federated DoRA fine-tuning over sensitive datasets, motivating DP-SGD adapter training.
-  - **Parameter Efficiency Ratio (PER)**: Composite evaluation metric measuring accuracy improvement per additional trainable parameter; DoRA typically achieves higher PER than LoRA at matched adapter rank.
-  - **Weight merging**: Post-training operation that absorbs DoRA adapter parameters (m, A, B) into the base weight matrix, producing a standard model weight with zero inference overhead; implemented via PEFT merge_and_unload().
-  - **Distributional shift**: The degree to which the fine-tuning data distribution differs from the pretrained model's training distribution; larger shift generally increases DoRA's advantage over LoRA by requiring larger directional updates.
-  - **Multi-tenant serving**: Deployment pattern where a single base model in GPU memory serves multiple requests using different per-request adapters selected without weight re-merging; supports hot-swapping DoRA/LoRA adapters between requests.
-  - **SVD (Singular Value Decomposition)**: Matrix factorisation W = UΣV^T decomposing a weight matrix into left singular vectors U, singular values Σ, and right singular vectors V; related to but distinct from DoRA's column-wise polar decomposition.
-  - **Chinchilla optimal**: Compute allocation strategy prescribing roughly 20 tokens of training data per parameter; guides data collection for DoRA fine-tuning (though at adapter scale the prescription is less relevant than at full pretraining scale).
-  - **LoRA Hub**: A framework and model hub for composing multiple LoRA adapters through linear combination; applicable in principle to DoRA adapters, enabling multi-skill model composition without separate per-skill models.
-  - **Task arithmetic**: The operation of adding and subtracting LoRA/DoRA adapter weight vectors to compose capabilities; W_multi-task = W_0 + λ_1 ΔW_task1 + λ_2 ΔW_task2 for multiple task adapters weighted by λ.
-  - **RLHF fine-tuning with DoRA**: Application of DoRA during PPO, DPO, or GRPO alignment training; enables efficient alignment of 7B–70B models on human preference data without full parameter fine-tuning, compatible with TRL and OpenRLHF frameworks.
-  - **Activation memory**: GPU memory consumed by storing intermediate activation tensors during the forward pass for use in backpropagation; not directly affected by DoRA (which reduces parameter memory, not activation memory) but managed alongside adapter training via gradient checkpointing.
-  - **Effective rank**: The numerical rank of the adapted weight change ΔW = (m/||W_0+BA||_c)⊙(W_0+BA) - W_0; DoRA's effective rank is bounded by r (from the BA matrices) but the column-wise magnitude scaling can increase the effective rank of the total adaptation relative to the directional update alone.
+- **Weight decomposition**: Factorisation of a weight matrix W into magnitude m (column L2 norms, a 1×k vector) and direction V (unit-normalised columns, a d×k matrix): W = m ⋅ (V / ||V||_c).
+- **Magnitude component**: The trainable vector m ∈ ℝ^{1×k} holding the per-column scale of the adapted weight. Initialised to column norms of W_0; adds only k parameters per weight matrix relative to LoRA.
+- **Directional component**: The unit-normalised column direction matrix (W_0 + BA) / ||W_0 + BA||_c; updated via the low-rank perturbation BA during training.
+- **Column-wise norm ||V||_c**: The L2 norm of each column of V, used to normalise direction. Recomputed at each forward pass over the current adapted direction W_0 + BA.
+- **Low-Rank Adaptation (LoRA)**: The mechanism used within DoRA for the directional update: ΔV = BA, B ∈ ℝ^{d×r}, A ∈ ℝ^{r×k}, r ≪ min(d, k).
+- **QDoRA**: DoRA combined with 4-bit NF4 base weight quantisation as in QLoRA. Achieves near-full-fine-tuning quality on consumer GPUs with 24 GB VRAM.
+- **DVoRA**: Combination of DoRA's magnitude-direction decomposition with VeRA's shared frozen random matrices. Achieves comparable performance to DoRA at much fewer trainable parameters.
+- **Full fine-tuning (FT)**: Updating all model parameters; the gold-standard quality baseline against which all PEFT methods are benchmarked.
+- **PEFT (Parameter-Efficient Fine-Tuning)**: The family of methods (adapters, LoRA, DoRA, prefix tuning, (IA)³, prompt tuning) that adapt pretrained models by updating only a small fraction of total parameters.
+- **Weight merging**: Post-training fusion of DoRA adapter weights (m, A, B) back into the base weight matrix W_final = (m / ||W_0 + BA||_c) ⋅ (W_0 + BA) for zero-overhead inference; the merged weight replaces W_0 entirely.
+- **Adapter rank r**: The dimensionality of the low-rank matrices A and B; controls the capacity of the directional update subspace. DoRA maintains high quality at lower r than LoRA.
+- **Polar decomposition**: The mathematical factorisation W = m ⋅ V that DoRA exploits, where m ≥ 0 and V has unit column norms; analogous to the polar form of complex numbers or the polar decomposition of matrices in numerical linear algebra.
+- **Column-wise adaptation**: The property of DoRA that each column of the adapted weight matrix W' has independently learned magnitude and directional update, enabling fine-grained control over individual output projections.
+- **LoftQ**: LoRA Fine-Tuning-aware Quantisation; improved initialisation strategy for LoRA (and DoRA) adapters on quantised base models by alternating SVD and NF4 quantisation to minimise initialisation error.
+- **NF4 (Normal Float 4)**: 4-bit quantisation format designed for normally-distributed neural network weights; used in QLoRA and QDoRA to store base model weights at 4-bit precision with minimal information loss.
+- **Adapter card**: Metadata specification on the Hugging Face Hub for published PEFT adapters, documenting base model, adapter method (LoRA, DoRA), rank, target modules, training data, and task type.
+- **use_dora**: Boolean flag in Hugging Face PEFT LoraConfig that enables DoRA instead of standard LoRA; the primary configuration change required to use DoRA in Hugging Face-based training pipelines.
+- **dvora**: Combination of DoRA (magnitude-direction decomposition) with VeRA (Vector-based Random Matrix Adaptation); achieves DoRA-level quality at significantly fewer trainable parameters.
+- **Hyperspherical energy**: The distribution of weight vector orientations on the unit sphere, which OFT and DoRA both aim to preserve or control during fine-tuning; concept from the sphere packing literature adapted to neural network fine-tuning.
+- **Learning rate multiplier**: In PEFT frameworks, a per-parameter-group scaling factor applied to the base learning rate; recommended to use different values for A, B, and m in DoRA following the LoRA+ findings.
+- **Rank-r update subspace**: The r-dimensional column span of B within the d-dimensional weight output space; limits the directional changes DoRA can represent to this subspace, with r determining the update capacity.
+- **Gradient inversion attack**: A security attack (Zhu et al., 2019) that reconstructs training examples from observed gradient values; relevant to federated DoRA fine-tuning over sensitive datasets, motivating DP-SGD adapter training.
+- **Parameter Efficiency Ratio (PER)**: Composite evaluation metric measuring accuracy improvement per additional trainable parameter; DoRA typically achieves higher PER than LoRA at matched adapter rank.
+- **Weight merging**: Post-training operation that absorbs DoRA adapter parameters (m, A, B) into the base weight matrix, producing a standard model weight with zero inference overhead; implemented via PEFT merge_and_unload().
+- **Distributional shift**: The degree to which the fine-tuning data distribution differs from the pretrained model's training distribution; larger shift generally increases DoRA's advantage over LoRA by requiring larger directional updates.
+- **Multi-tenant serving**: Deployment pattern where a single base model in GPU memory serves multiple requests using different per-request adapters selected without weight re-merging; supports hot-swapping DoRA/LoRA adapters between requests.
+- **SVD (Singular Value Decomposition)**: Matrix factorisation W = UΣV^T decomposing a weight matrix into left singular vectors U, singular values Σ, and right singular vectors V; related to but distinct from DoRA's column-wise polar decomposition.
+- **Chinchilla optimal**: Compute allocation strategy prescribing roughly 20 tokens of training data per parameter; guides data collection for DoRA fine-tuning (though at adapter scale the prescription is less relevant than at full pretraining scale).
+- **LoRA Hub**: A framework and model hub for composing multiple LoRA adapters through linear combination; applicable in principle to DoRA adapters, enabling multi-skill model composition without separate per-skill models.
+- **Task arithmetic**: The operation of adding and subtracting LoRA/DoRA adapter weight vectors to compose capabilities; W_multi-task = W_0 + λ_1 ΔW_task1 + λ_2 ΔW_task2 for multiple task adapters weighted by λ.
+- **RLHF fine-tuning with DoRA**: Application of DoRA during PPO, DPO, or GRPO alignment training; enables efficient alignment of 7B–70B models on human preference data without full parameter fine-tuning, compatible with TRL and OpenRLHF frameworks.
+- **Activation memory**: GPU memory consumed by storing intermediate activation tensors during the forward pass for use in backpropagation; not directly affected by DoRA (which reduces parameter memory, not activation memory) but managed alongside adapter training via gradient checkpointing.
+- **Effective rank**: The numerical rank of the adapted weight change ΔW = (m/||W_0+BA||_c)⊙(W_0+BA) - W_0; DoRA's effective rank is bounded by r (from the BA matrices) but the column-wise magnitude scaling can increase the effective rank of the total adaptation relative to the directional update alone.
 
   ## Supplementary Notes on Model Families
 
@@ -517,35 +520,39 @@ DoRA (Weight-Decomposed Low-Rank Adaptation) is a parameter-efficient fine-tunin
   ## Summary of Advantages and Limitations
 
   **Advantages of DoRA over LoRA**:
-  - Higher accuracy on tasks with large distributional shift from pretraining domain (commonsense reasoning, domain-specific NLP, visual instruction tuning)
-  - Better parameter efficiency: achieves LoRA-r=32 quality at DoRA-r=8 on several benchmarks
-  - More robust training dynamics at matched hyperparameters due to normalised directional parameterisation
-  - Zero inference overhead after weight merging, identical to LoRA deployment
-  - Negligible training overhead (column-norm computation < 0.025% of total FLOPs)
-  - Compatible with QLoRA, enabling QDoRA for consumer-GPU fine-tuning
-  - Native Hugging Face PEFT library support with single-flag enablement
+
+- Higher accuracy on tasks with large distributional shift from pretraining domain (commonsense reasoning, domain-specific NLP, visual instruction tuning)
+- Better parameter efficiency: achieves LoRA-r=32 quality at DoRA-r=8 on several benchmarks
+- More robust training dynamics at matched hyperparameters due to normalised directional parameterisation
+- Zero inference overhead after weight merging, identical to LoRA deployment
+- Negligible training overhead (column-norm computation < 0.025% of total FLOPs)
+- Compatible with QLoRA, enabling QDoRA for consumer-GPU fine-tuning
+- Native Hugging Face PEFT library support with single-flag enablement
 
   **Limitations of DoRA relative to LoRA**:
-  - Marginal additional memory: magnitude vector m adds k parameters per adapted weight matrix
-  - Slightly more complex implementation than LoRA (requires column-norm computation and dynamic normalisation)
-  - Column-norm computation requires dequantised weight matrix in memory transiently during forward pass
-  - Theoretical composition properties (task arithmetic, adapter merging) are less well-characterised than for LoRA
-  - Less adoption in commercial fine-tuning APIs and tools compared to the more established LoRA
-  - May not outperform LoRA for tasks with small distributional shift where LoRA already achieves near-full-FT accuracy
+
+- Marginal additional memory: magnitude vector m adds k parameters per adapted weight matrix
+- Slightly more complex implementation than LoRA (requires column-norm computation and dynamic normalisation)
+- Column-norm computation requires dequantised weight matrix in memory transiently during forward pass
+- Theoretical composition properties (task arithmetic, adapter merging) are less well-characterised than for LoRA
+- Less adoption in commercial fine-tuning APIs and tools compared to the more established LoRA
+- May not outperform LoRA for tasks with small distributional shift where LoRA already achieves near-full-FT accuracy
 
   **Tasks where DoRA is strongly recommended** (large distributional shift, quality-critical):
-  - Medical NLP (clinical note processing, ICD coding, radiology report generation)
-  - Legal domain adaptation (contract analysis, regulatory compliance, case summarisation)
-  - Mathematical reasoning (GSM8K, MATH, proof generation)
-  - Code generation for specialised APIs and internal codebases
-  - Multilingual adaptation for low-resource languages underrepresented in pretraining data
-  - Vision-language instruction tuning with complex compositional understanding requirements
+
+- Medical NLP (clinical note processing, ICD coding, radiology report generation)
+- Legal domain adaptation (contract analysis, regulatory compliance, case summarisation)
+- Mathematical reasoning (GSM8K, MATH, proof generation)
+- Code generation for specialised APIs and internal codebases
+- Multilingual adaptation for low-resource languages underrepresented in pretraining data
+- Vision-language instruction tuning with complex compositional understanding requirements
 
   **Tasks where LoRA is sufficient** (small distributional shift, efficiency-critical):
-  - Style adaptation within general English (formal vs informal tone)
-  - Instruction following for tasks well-represented in instruction fine-tuning datasets
-  - Format adherence (JSON output, structured response formatting)
-  - Minor factual update (adding recently published information to a general model)
 
-- ### Provenance
+- Style adaptation within general English (formal vs informal tone)
+- Instruction following for tasks well-represented in instruction fine-tuning datasets
+- Format adherence (JSON output, structured response formatting)
+- Minor factual update (adding recently published information to a general model)
+
+### Provenance
 

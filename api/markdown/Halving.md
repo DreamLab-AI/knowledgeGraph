@@ -1,4 +1,3 @@
-
 A programmatic event in proof-of-work blockchains, most notably Bitcoin, whereby the block reward issued to miners is cut in half at a predetermined block height. Halvings enforce a fixed, disinflationary supply schedule that asymptotically approaches the maximum coin supply. By reducing new coin issuance, halvings create predictable scarcity and are a central component of Bitcoin's monetary policy.
 
 ### Definition
@@ -19,5 +18,5 @@ Halvings interact with several other blockchain mechanisms. In the immediate aft
 
 From an ontological perspective, the Halving is classified as an Economic Mechanism within the DeFi and Economics subdomain of the blockchain ontology. It is a process-level concept rather than a structural component: it does not name a software module but rather a scheduled protocol event with observable on-chain consequences. Its relationship to Consensus Rules means that any node rejecting the halving schedule would be forked out of the main chain, giving the mechanism its absolute and enforceable character.
 
-- ### Provenance
+### Provenance
 

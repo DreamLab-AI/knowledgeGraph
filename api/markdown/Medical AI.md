@@ -1,56 +1,58 @@
-
 Medical AI encompasses artificial intelligence and machine learning applications in healthcare for disease detection, diagnosis, treatment planning, clinical decision support, drug discovery, and patient outcome prediction, subject to medical-device regulation and clinical validation requirements.
 
-- ### Semantic Classification
+### Semantic Classification
 
-- ### Content
+### Content
 
-  ## Technical Details
+## Technical Details
 
-  ### Key Application Areas
-  - **Medical Imaging**: Nearly 400 FDA-approved AI algorithms for radiology; AI achieves 90% sensitivity in breast cancer detection vs 78% for radiologists
-  - **Clinical Decision Support**: AI-powered systems analyze imaging, bio-signals (ECG, EEG), vital signs, and lab results
-  - **Early Detection**: Johns Hopkins' MIGHT method uses circulating cell-free DNA for early cancer detection
-  - **Pathology**: Microsoft's MedImageInsight Premium delivers 15% higher accuracy than previous models
+### Key Application Areas
+
+- **Medical Imaging**: Nearly 400 FDA-approved AI algorithms for radiology; AI achieves 90% sensitivity in breast cancer detection vs 78% for radiologists
+- **Clinical Decision Support**: AI-powered systems analyze imaging, bio-signals (ECG, EEG), vital signs, and lab results
+- **Early Detection**: Johns Hopkins' MIGHT method uses circulating cell-free DNA for early cancer detection
+- **Pathology**: Microsoft's MedImageInsight Premium delivers 15% higher accuracy than previous models
 
   ### Recent Developments (2021-2024)
-  - Accelerated AI diagnostics deployment during COVID-19 pandemic
-  - Advancements in personalized medicine and genomics
-  - Development of explainable AI (XAI) for clinical transparency
-  - Integration with robotic surgery and telemedicine
-  - Microsoft's CXRReportGen Premium for automated chest X-ray reports
+
+- Accelerated AI diagnostics deployment during COVID-19 pandemic
+- Advancements in personalized medicine and genomics
+- Development of explainable AI (XAI) for clinical transparency
+- Integration with robotic surgery and telemedicine
+- Microsoft's CXRReportGen Premium for automated chest X-ray reports
 
   ### 2025 Emerging Technologies
-  - AI for clinical notetaking and documentation
-  - AI for disease detection and diagnosis
-  - Multimodal AI combining imaging, text, and bio-signals
-  - Integration with electronic health records
+
+- AI for clinical notetaking and documentation
+- AI for disease detection and diagnosis
+- Multimodal AI combining imaging, text, and bio-signals
+- Integration with electronic health records
 
   ## Core Characteristics
 
-  - **Clinical Integration**: Designed for integration into clinical workflows and healthcare settings
-  - **Evidence-Based**: Grounded in medical evidence, clinical guidelines, and validated research
-  - **Patient Safety**: Prioritizes patient safety, harm reduction, and clinical risk management
-  - **Regulatory Compliance**: Adheres to medical device regulations and healthcare standards
-  - **Interpretability**: Provides clinically interpretable outputs and explanations for medical decisions
+- **Clinical Integration**: Designed for integration into clinical workflows and healthcare settings
+- **Evidence-Based**: Grounded in medical evidence, clinical guidelines, and validated research
+- **Patient Safety**: Prioritizes patient safety, harm reduction, and clinical risk management
+- **Regulatory Compliance**: Adheres to medical device regulations and healthcare standards
+- **Interpretability**: Provides clinically interpretable outputs and explanations for medical decisions
 
   ## Applications
 
-  - **Diagnostics**: Radiology, dermatology, ophthalmology screening
-  - **Drug Discovery**: Accelerated compound identification and trial design
-  - **Genomics**: Variant interpretation and personalized treatment
-  - **Surgery**: Robotic assistance and surgical planning
-  - **Mental Health**: AI-assisted therapy and monitoring
-  - **Administrative**: Medical coding, billing, and documentation
+- **Diagnostics**: Radiology, dermatology, ophthalmology screening
+- **Drug Discovery**: Accelerated compound identification and trial design
+- **Genomics**: Variant interpretation and personalized treatment
+- **Surgery**: Robotic assistance and surgical planning
+- **Mental Health**: AI-assisted therapy and monitoring
+- **Administrative**: Medical coding, billing, and documentation
 
   ## Challenges
 
-  - Data privacy and security concerns
-  - Algorithm bias and fairness across populations
-  - Regulatory compliance and approval processes
-  - Integration with clinical workflows
-  - Model interpretability for clinical trust
-  - Diverse representation in training data
+- Data privacy and security concerns
+- Algorithm bias and fairness across populations
+- Regulatory compliance and approval processes
+- Integration with clinical workflows
+- Model interpretability for clinical trust
+- Diverse representation in training data
 
   ## Ethical and Safety Considerations
 
@@ -98,26 +100,26 @@ Medical AI encompasses artificial intelligence and machine learning applications
 
   ## Standards and Guidelines
 
-  - **ISO 13485**: Medical devices - Quality management systems
-  - **IEC 62304**: Medical device software - Software life cycle processes
-  - **ISO 14971**: Medical devices - Application of risk management
-  - **DICOM**: Digital Imaging and Communications in Medicine
-  - **HL7 FHIR**: Fast Healthcare Interoperability Resources
-  - **FDA SaMD**: Software as a Medical Device guidance
-  - **NICE Evidence Standards**: Digital health technologies framework
-  - **MHRA Software and AI as Medical Devices**: UK regulatory guidance
+- **ISO 13485**: Medical devices - Quality management systems
+- **IEC 62304**: Medical device software - Software life cycle processes
+- **ISO 14971**: Medical devices - Application of risk management
+- **DICOM**: Digital Imaging and Communications in Medicine
+- **HL7 FHIR**: Fast Healthcare Interoperability Resources
+- **FDA SaMD**: Software as a Medical Device guidance
+- **NICE Evidence Standards**: Digital health technologies framework
+- **MHRA Software and AI as Medical Devices**: UK regulatory guidance
 
   ## See Also
 
-  - [[Clinical Decision Support]]
-  - [[Medical Imaging AI]]
-  - [[Medical Diagnosis AI]]
-  - [[Drug Discovery]]
-  - [[Precision Medicine]]
-  - [[Healthcare Analytics]]
-  - [[Explainable AI]]
-  - [[Federated Learning]]
-  - [[Uncertainty Quantification]]
+- [[Clinical Decision Support]]
+- [[Medical Imaging AI]]
+- [[Medical Diagnosis AI]]
+- [[Drug Discovery]]
+- [[Precision Medicine]]
+- [[Healthcare Analytics]]
+- [[Explainable AI]]
+- [[Federated Learning]]
+- [[Uncertainty Quantification]]
 
-- ### Provenance
+### Provenance
 

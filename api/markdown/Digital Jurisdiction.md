@@ -1,10 +1,10 @@
-
 Digital Jurisdiction is a type of Metaverse governance and safeguarding in the spatial computing domain.
 
-- ### Semantic Classification
+### Semantic Classification
 
-- ### Content
-  Digital Jurisdiction — content pending enrichment.
+### Content
 
-- ### Provenance
+Digital Jurisdiction — content pending enrichment.
+
+### Provenance
 

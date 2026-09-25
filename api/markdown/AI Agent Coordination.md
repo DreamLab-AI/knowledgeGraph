@@ -1,106 +1,100 @@
-
 AI Agent Coordination is the set of mechanisms by which multiple autonomous AI agents align their actions, share state, allocate tasks, and resolve conflicts to achieve goals that exceed any single agent's capability. It covers communication protocols, role assignment, consensus, and negotiation, and may be centralized through an orchestrator or fully decentralized. Effective coordination is essential for multi-agent systems operating over shared resources or distributed ledgers.
 
-- ### Semantic Classification
+### Semantic Classification
 
-- ### Content
-  ## Compositional Relationships (Components)
-  ```manchester-syntax
-  SubClassOf(ai:AiAgentCoordination
-    ObjectSomeValuesFrom(ai:hasPart ai:TaskAllocation))
-  SubClassOf(ai:AiAgentCoordination
-    ObjectSomeValuesFrom(ai:hasPart ai:ContractNetProtocol))
-  SubClassOf(ai:AiAgentCoordination
-    ObjectSomeValuesFrom(ai:hasPart ai:BlackboardSystem))
-  SubClassOf(ai:AiAgentCoordination
-    ObjectSomeValuesFrom(ai:hasPart ai:RoleAssignment))
-  SubClassOf(ai:AiAgentCoordination
-    ObjectSomeValuesFrom(ai:hasPart ai:MessagePassing))
-  SubClassOf(ai:AiAgentCoordination
-    ObjectSomeValuesFrom(ai:hasPart ai:NegotiationProtocol))
-  SubClassOf(ai:AiAgentCoordination
-    ObjectSomeValuesFrom(ai:hasPart ai:LeaderElection))
-  ```
-  ## Dependency Relationships
-  ```manchester-syntax
-  SubClassOf(ai:AiAgentCoordination
-    ObjectSomeValuesFrom(ai:requires ai:CommunicationProtocol))
-  SubClassOf(ai:AiAgentCoordination
-    ObjectSomeValuesFrom(ai:requires ai:ConsensusMechanism))
-  SubClassOf(ai:AiAgentCoordination
-    ObjectSomeValuesFrom(ai:requires ai:TrustManagement))
-  SubClassOf(ai:AiAgentCoordination
-    ObjectSomeValuesFrom(ai:requires ai:Interoperability))
-  SubClassOf(ai:AiAgentCoordination
-    ObjectSomeValuesFrom(ai:dependsOn ai:LargeLanguageModel))
-  SubClassOf(ai:AiAgentCoordination
-    ObjectSomeValuesFrom(ai:dependsOn ai:PlanningAlgorithm))
-  SubClassOf(ai:AiAgentCoordination
-    ObjectSomeValuesFrom(ai:dependsOn ai:ReinforcementLearning))
-  ```
-  ## Capability Relationships
-  ```manchester-syntax
-  SubClassOf(ai:AiAgentCoordination
-    ObjectSomeValuesFrom(ai:enables ai:EmergentBehaviour))
-  SubClassOf(ai:AiAgentCoordination
-    ObjectSomeValuesFrom(ai:enables ai:AutonomousAiAgents))
-  SubClassOf(ai:AiAgentCoordination
-    ObjectSomeValuesFrom(ai:enables ai:LoadBalancing))
-  SubClassOf(ai:AiAgentCoordination
-    ObjectSomeValuesFrom(ai:enables ai:KnowledgeSharing))
-  SubClassOf(ai:AiAgentCoordination
-    ObjectSomeValuesFrom(ai:supports ai:AiSafety))
-  SubClassOf(ai:AiAgentCoordination
-    ObjectSomeValuesFrom(ai:supports ai:AiAccountability))
-  SubClassOf(ai:AiAgentCoordination
-    ObjectSomeValuesFrom(ai:supports ai:HumanOversight))
-  ```
-  ## Implementation Relationships
-  ```manchester-syntax
-  SubClassOf(ai:AiAgentCoordination
-    ObjectSomeValuesFrom(ai:implements ai:SwarmIntelligence))
-  SubClassOf(ai:AiAgentCoordination
-    ObjectSomeValuesFrom(ai:implements ai:MechanismDesign))
-  SubClassOf(ai:AiAgentCoordination
-    ObjectSomeValuesFrom(ai:implements ai:DistributedConstraintOptimisation))
-  SubClassOf(ai:AiAgentCoordination
-    ObjectSomeValuesFrom(ai:implements ai:ModelContextProtocol))
-  SubClassOf(ai:AiAgentCoordination
-    ObjectSomeValuesFrom(ai:implements ai:AgentToAgentProtocol))
-  ```
-  ## Reduction Relationships
-  ```manchester-syntax
-  SubClassOf(ai:AiAgentCoordination
-    ObjectSomeValuesFrom(ai:reducesTo ai:DecentralisedCoordination))
-  SubClassOf(ai:AiAgentCoordination
-    ObjectSomeValuesFrom(ai:reducesTo ai:MultiAgentSystem))
-  ```
+### Content
 
-  ## About
+## Compositional Relationships (Components)
+```manchester-syntax
+SubClassOf(ai:AiAgentCoordination
+  ObjectSomeValuesFrom(ai:hasPart ai:TaskAllocation))
+SubClassOf(ai:AiAgentCoordination
+  ObjectSomeValuesFrom(ai:hasPart ai:ContractNetProtocol))
+SubClassOf(ai:AiAgentCoordination
+  ObjectSomeValuesFrom(ai:hasPart ai:BlackboardSystem))
+SubClassOf(ai:AiAgentCoordination
+  ObjectSomeValuesFrom(ai:hasPart ai:RoleAssignment))
+SubClassOf(ai:AiAgentCoordination
+  ObjectSomeValuesFrom(ai:hasPart ai:MessagePassing))
+SubClassOf(ai:AiAgentCoordination
+  ObjectSomeValuesFrom(ai:hasPart ai:NegotiationProtocol))
+SubClassOf(ai:AiAgentCoordination
+  ObjectSomeValuesFrom(ai:hasPart ai:LeaderElection))
+```
+## Dependency Relationships
+```manchester-syntax
+SubClassOf(ai:AiAgentCoordination
+  ObjectSomeValuesFrom(ai:requires ai:CommunicationProtocol))
+SubClassOf(ai:AiAgentCoordination
+  ObjectSomeValuesFrom(ai:requires ai:ConsensusMechanism))
+SubClassOf(ai:AiAgentCoordination
+  ObjectSomeValuesFrom(ai:requires ai:TrustManagement))
+SubClassOf(ai:AiAgentCoordination
+  ObjectSomeValuesFrom(ai:requires ai:Interoperability))
+SubClassOf(ai:AiAgentCoordination
+  ObjectSomeValuesFrom(ai:dependsOn ai:LargeLanguageModel))
+SubClassOf(ai:AiAgentCoordination
+  ObjectSomeValuesFrom(ai:dependsOn ai:PlanningAlgorithm))
+SubClassOf(ai:AiAgentCoordination
+  ObjectSomeValuesFrom(ai:dependsOn ai:ReinforcementLearning))
+```
+## Capability Relationships
+```manchester-syntax
+SubClassOf(ai:AiAgentCoordination
+  ObjectSomeValuesFrom(ai:enables ai:EmergentBehaviour))
+SubClassOf(ai:AiAgentCoordination
+  ObjectSomeValuesFrom(ai:enables ai:AutonomousAiAgents))
+SubClassOf(ai:AiAgentCoordination
+  ObjectSomeValuesFrom(ai:enables ai:LoadBalancing))
+SubClassOf(ai:AiAgentCoordination
+  ObjectSomeValuesFrom(ai:enables ai:KnowledgeSharing))
+SubClassOf(ai:AiAgentCoordination
+  ObjectSomeValuesFrom(ai:supports ai:AiSafety))
+SubClassOf(ai:AiAgentCoordination
+  ObjectSomeValuesFrom(ai:supports ai:AiAccountability))
+SubClassOf(ai:AiAgentCoordination
+  ObjectSomeValuesFrom(ai:supports ai:HumanOversight))
+```
+## Implementation Relationships
+```manchester-syntax
+SubClassOf(ai:AiAgentCoordination
+  ObjectSomeValuesFrom(ai:implements ai:SwarmIntelligence))
+SubClassOf(ai:AiAgentCoordination
+  ObjectSomeValuesFrom(ai:implements ai:MechanismDesign))
+SubClassOf(ai:AiAgentCoordination
+  ObjectSomeValuesFrom(ai:implements ai:DistributedConstraintOptimisation))
+SubClassOf(ai:AiAgentCoordination
+  ObjectSomeValuesFrom(ai:implements ai:ModelContextProtocol))
+SubClassOf(ai:AiAgentCoordination
+  ObjectSomeValuesFrom(ai:implements ai:AgentToAgentProtocol))
+```
+## Reduction Relationships
+```manchester-syntax
+SubClassOf(ai:AiAgentCoordination
+  ObjectSomeValuesFrom(ai:reducesTo ai:DecentralisedCoordination))
+SubClassOf(ai:AiAgentCoordination
+  ObjectSomeValuesFrom(ai:reducesTo ai:MultiAgentSystem))
+```
 
-  AI Agent Coordination addresses one of the foundational challenges in distributed intelligence: how do independent reasoning entities with partial knowledge of the world, heterogeneous capabilities, and potentially conflicting sub-goals combine to produce coherent, goal-directed collective behaviour? The question predates modern AI: Thomas Schelling's 1960 analysis of focal points in game-theoretic coordination problems, Elinor Ostrom's 1990 work on self-governing commons, and the distributed systems literature on consensus (Lamport's Paxos, 1989; Fischer-Lynch-Paterson impossibility, 1985) all contribute foundational theory. In AI specifically, the multi-agent systems research community formalised coordination problems through the 1990s, producing the [[FIPA]] specification suite, the [[Contract Net Protocol|Contract Net Protocol]] (Smith, 1980), and the [[Blackboard System|Blackboard model]] (Nii, 1986) as canonical coordination architectures. [[Swarm Intelligence]] drew additional insight from biology: ant colony optimisation (Dorigo, 1992), particle swarm optimisation (Kennedy and Eberhart, 1995), and bee colony algorithms instantiate decentralised coordination through purely local interactions and stigmergic information sharing.
+## About
 
-  The emergence of [[Large Language Model|LLM]]-driven agents from 2022 onward fundamentally changed the coordination problem. Classical agents operated over structured, typed state; LLM agents reason over natural language, which makes their capabilities harder to formally specify, their actions harder to predict, and their communication semantics inherently ambiguous. Coordination architectures for LLM agents therefore need to address novel failure modes: [[Large Language Model|hallucinated]] capability claims in capability advertisement, prompt injection attacks propagated through inter-agent messages, context window saturation as the information passed between agents grows, and the fundamental epistemic uncertainty that arises when agents reason probabilistically rather than formally. The research community is actively developing new coordination patterns—structured output schemas for inter-agent messages, capability verification protocols, sandboxed inter-agent communication channels—that adapt classical multi-agent coordination theory to the LLM context.
+AI Agent Coordination addresses one of the foundational challenges in distributed intelligence: how do independent reasoning entities with partial knowledge of the world, heterogeneous capabilities, and potentially conflicting sub-goals combine to produce coherent, goal-directed collective behaviour? The question predates modern AI: Thomas Schelling's 1960 analysis of focal points in game-theoretic coordination problems, Elinor Ostrom's 1990 work on self-governing commons, and the distributed systems literature on consensus (Lamport's Paxos, 1989; Fischer-Lynch-Paterson impossibility, 1985) all contribute foundational theory. In AI specifically, the multi-agent systems research community formalised coordination problems through the 1990s, producing the [[FIPA]] specification suite, the [[Contract Net Protocol|Contract Net Protocol]] (Smith, 1980), and the [[Blackboard System|Blackboard model]] (Nii, 1986) as canonical coordination architectures. [[Swarm Intelligence]] drew additional insight from biology: ant colony optimisation (Dorigo, 1992), particle swarm optimisation (Kennedy and Eberhart, 1995), and bee colony algorithms instantiate decentralised coordination through purely local interactions and stigmergic information sharing.
 
-  The central architectural tension in AI Agent Coordination is the trade-off between centralised orchestration and decentralised peer-to-peer coordination. Centralised architectures, exemplified by the supervisor-worker pattern used in [[LangGraph]], [[CrewAI]], and [[AutoGen]], offer simplicity of global state management, predictable task execution order, and straightforward debugging—the orchestrating agent maintains the full task plan and can be inspected at any point. Their vulnerability is the single point of failure: if the orchestrator fails, hallucinates, or is overwhelmed, the entire system stalls. Decentralised architectures, by contrast, offer resilience through redundancy: if one agent fails, others can assume its tasks, and there is no single bottleneck. Their cost is the consensus and conflict resolution machinery required to maintain consistency—any decentralised system must address the CAP theorem trade-offs between consistency, availability, and partition tolerance, and must manage the possibility that agents disagree about the current state of the world or the validity of proposed actions.
+The emergence of [[Large Language Model|LLM]]-driven agents from 2022 onward fundamentally changed the coordination problem. Classical agents operated over structured, typed state; LLM agents reason over natural language, which makes their capabilities harder to formally specify, their actions harder to predict, and their communication semantics inherently ambiguous. Coordination architectures for LLM agents therefore need to address novel failure modes: [[Large Language Model|hallucinated]] capability claims in capability advertisement, prompt injection attacks propagated through inter-agent messages, context window saturation as the information passed between agents grows, and the fundamental epistemic uncertainty that arises when agents reason probabilistically rather than formally. The research community is actively developing new coordination patterns—structured output schemas for inter-agent messages, capability verification protocols, sandboxed inter-agent communication channels—that adapt classical multi-agent coordination theory to the LLM context.
 
-  ## Components / Architecture
+The central architectural tension in AI Agent Coordination is the trade-off between centralised orchestration and decentralised peer-to-peer coordination. Centralised architectures, exemplified by the supervisor-worker pattern used in [[LangGraph]], [[CrewAI]], and [[AutoGen]], offer simplicity of global state management, predictable task execution order, and straightforward debugging—the orchestrating agent maintains the full task plan and can be inspected at any point. Their vulnerability is the single point of failure: if the orchestrator fails, hallucinates, or is overwhelmed, the entire system stalls. Decentralised architectures, by contrast, offer resilience through redundancy: if one agent fails, others can assume its tasks, and there is no single bottleneck. Their cost is the consensus and conflict resolution machinery required to maintain consistency—any decentralised system must address the CAP theorem trade-offs between consistency, availability, and partition tolerance, and must manage the possibility that agents disagree about the current state of the world or the validity of proposed actions.
 
-  A complete AI Agent Coordination system comprises the following functional layers:
+## Components / Architecture
 
-  - **Communication substrate**: [[Message Passing|Message-passing infrastructure]] carrying structured inter-agent messages. Modern implementations use [[Model Context Protocol|MCP]] for agent-to-tool connections and [[Agent-to-Agent Protocol|A2A]] (Google, April 2025) for agent-to-agent coordination. Classical implementations used [[FIPA]]-ACL message formats with defined performatives (INFORM, REQUEST, PROPOSE, ACCEPT-PROPOSAL, REFUSE, FAILURE). Transport layers include HTTP with Server-Sent Events, JSON-RPC 2.0, and protocol buffers for high-throughput coordination.
+A complete AI Agent Coordination system comprises the following functional layers:
 
-  - **Capability discovery**: Mechanisms by which agents discover what other agents can do. A2A uses Agent Cards—machine-readable JSON documents advertising an agent's name, capabilities, authentication requirements, and available task endpoints. Classical systems used agent registries (FIPA Directory Facilitator service). Capability discovery is security-sensitive: a malicious agent can advertise capabilities it does not have, and a compromised registry can misdirect task assignments.
-
-  - **Task allocation**: The process of assigning tasks to agents with appropriate capabilities and available resources. [[Task Auction|Auction-based allocation]] (English, Dutch, sealed-bid) allows agents to bid for tasks based on estimated cost and capability, producing market-clearing assignments that are approximately efficient. [[Contract Net Protocol|Contract Net]] generalises this: a manager agent announces a task, potential contractors submit bids, the manager evaluates and awards, and the contractor executes with a commitment to report results. [[Distributed Constraint Optimisation]] (DCOP) formulates task allocation as a constraint satisfaction problem solved by message-passing between agents, producing exact optimal solutions at higher communication cost.
-
-  - **Shared state management**: [[Blackboard System|Blackboard architectures]] provide a shared information space where agents post and consume data objects without direct point-to-point coupling, reducing the coordination complexity from O(n²) point-to-point channels to O(n) blackboard accesses. The blackboard monitors for posted objects matching expected patterns and triggers relevant specialist agents. Modern equivalents include shared vector stores, external memory databases, and event stream architectures (Kafka, Redis Streams) serving as coordination state buses.
-
-  - **Consensus and conflict resolution**: When multiple agents propose conflicting actions, a consensus mechanism is required. [[Byzantine Fault Tolerance|Byzantine fault-tolerant]] consensus algorithms (PBFT, Tendermint) guarantee agreement even when up to one-third of agents are faulty or malicious. Simpler majority voting is sufficient when only crash failures (not adversarial behaviour) are expected. [[Deadlock Prevention|Deadlock]] can arise when agents hold resources while waiting for others; standard prevention techniques—resource ordering, timeouts with rollback, and lock-free data structures—apply.
-
-  - **[[Role Assignment|Role assignment]] and specialisation**: Static role assignment fixes agent specialisations at design time (a researcher agent, a writer agent, a validator agent). Dynamic role assignment adapts specialisations based on task requirements, agent load, and capability availability. Hierarchical multi-agent systems (hMAS) stratify roles across management levels—planners, coordinators, executors—with coordination occurring within and between strata.
-
-  - **[[Orchestration Pattern|Orchestration patterns]]**: Named architectural patterns emerging in 2025 include Supervisor (one controller, many workers), Peer-to-Peer (flat topology, shared state), Pipeline (sequential agent chain), MapReduce (parallel fan-out followed by aggregation), and Critic-Actor (an evaluator agent reviews worker output before forwarding). Each pattern has characteristic strengths and failure modes that make it appropriate for different task types.
+- **Communication substrate**: [[Message Passing|Message-passing infrastructure]] carrying structured inter-agent messages. Modern implementations use [[Model Context Protocol|MCP]] for agent-to-tool connections and [[Agent-to-Agent Protocol|A2A]] (Google, April 2025) for agent-to-agent coordination. Classical implementations used [[FIPA]]-ACL message formats with defined performatives (INFORM, REQUEST, PROPOSE, ACCEPT-PROPOSAL, REFUSE, FAILURE). Transport layers include HTTP with Server-Sent Events, JSON-RPC 2.0, and protocol buffers for high-throughput coordination.
+- **Capability discovery**: Mechanisms by which agents discover what other agents can do. A2A uses Agent Cards—machine-readable JSON documents advertising an agent's name, capabilities, authentication requirements, and available task endpoints. Classical systems used agent registries (FIPA Directory Facilitator service). Capability discovery is security-sensitive: a malicious agent can advertise capabilities it does not have, and a compromised registry can misdirect task assignments.
+- **Task allocation**: The process of assigning tasks to agents with appropriate capabilities and available resources. [[Task Auction|Auction-based allocation]] (English, Dutch, sealed-bid) allows agents to bid for tasks based on estimated cost and capability, producing market-clearing assignments that are approximately efficient. [[Contract Net Protocol|Contract Net]] generalises this: a manager agent announces a task, potential contractors submit bids, the manager evaluates and awards, and the contractor executes with a commitment to report results. [[Distributed Constraint Optimisation]] (DCOP) formulates task allocation as a constraint satisfaction problem solved by message-passing between agents, producing exact optimal solutions at higher communication cost.
+- **Shared state management**: [[Blackboard System|Blackboard architectures]] provide a shared information space where agents post and consume data objects without direct point-to-point coupling, reducing the coordination complexity from O(n²) point-to-point channels to O(n) blackboard accesses. The blackboard monitors for posted objects matching expected patterns and triggers relevant specialist agents. Modern equivalents include shared vector stores, external memory databases, and event stream architectures (Kafka, Redis Streams) serving as coordination state buses.
+- **Consensus and conflict resolution**: When multiple agents propose conflicting actions, a consensus mechanism is required. [[Byzantine Fault Tolerance|Byzantine fault-tolerant]] consensus algorithms (PBFT, Tendermint) guarantee agreement even when up to one-third of agents are faulty or malicious. Simpler majority voting is sufficient when only crash failures (not adversarial behaviour) are expected. [[Deadlock Prevention|Deadlock]] can arise when agents hold resources while waiting for others; standard prevention techniques—resource ordering, timeouts with rollback, and lock-free data structures—apply.
+- **[[Role Assignment|Role assignment]] and specialisation**: Static role assignment fixes agent specialisations at design time (a researcher agent, a writer agent, a validator agent). Dynamic role assignment adapts specialisations based on task requirements, agent load, and capability availability. Hierarchical multi-agent systems (hMAS) stratify roles across management levels—planners, coordinators, executors—with coordination occurring within and between strata.
+- **[[Orchestration Pattern|Orchestration patterns]]**: Named architectural patterns emerging in 2025 include Supervisor (one controller, many workers), Peer-to-Peer (flat topology, shared state), Pipeline (sequential agent chain), MapReduce (parallel fan-out followed by aggregation), and Critic-Actor (an evaluator agent reviews worker output before forwarding). Each pattern has characteristic strengths and failure modes that make it appropriate for different task types.
 
   ## Use Cases / Major Families
 
@@ -118,13 +112,10 @@ AI Agent Coordination is the set of mechanisms by which multiple autonomous AI a
 
   The theoretical foundations of AI Agent Coordination span distributed computing, game theory, and cognitive science:
 
-  - **Distributed computing roots**: Leslie Lamport's work on logical clocks (1978) and Paxos consensus (1989) established the mathematical foundations for distributed agreement. The Fischer-Lynch-Paterson impossibility result (1985) proved that no deterministic algorithm can achieve consensus in a fully asynchronous system if even one process may fail, motivating practical consensus algorithms that weaken the asynchrony assumption.
-
-  - **[[Game Theory]] and [[Mechanism Design]]**: Mechanism design (Hurwicz, Maskin, Myerson—Nobel 2007) provides the theoretical framework for designing coordination protocols where agents act in self-interest: the designer creates rules (mechanisms) under which individually rational behaviour by agents produces collectively desirable outcomes. Auction theory (Vickrey second-price auctions, combinatorial auctions) applies mechanism design to task allocation problems.
-
-  - **Multi-agent systems theory**: Wooldridge and Jennings (1995) formalised the agent definition (rational, reactive, proactive, social), establishing the theoretical substrate for multi-agent coordination research. The FIPA specification consortium (1996–2002) produced interoperability standards for agent communication languages, directory services, and message transport. Victor Lesser's work at the University of Massachusetts on distributed problem solving and the TAEMS task model provided the canonical framework for multi-agent planning under uncertainty.
-
-  - **LLM-agent coordination (2023–2026)**: Park et al. (2023) "Generative Agents" demonstrated emergent social coordination in a sandbox environment of 25 LLM agents. Wang et al. (2024) "A Survey on Large Language Model Based Autonomous Agents" synthesised the rapidly growing literature. The AutoGen paper (Wu et al., 2023) introduced the conversational multi-agent framework used extensively in enterprise deployments. OpenAI's Agents SDK (2025) and Google's A2A protocol (2025) represent the infrastructure-level formalisation of these patterns.
+- **Distributed computing roots**: Leslie Lamport's work on logical clocks (1978) and Paxos consensus (1989) established the mathematical foundations for distributed agreement. The Fischer-Lynch-Paterson impossibility result (1985) proved that no deterministic algorithm can achieve consensus in a fully asynchronous system if even one process may fail, motivating practical consensus algorithms that weaken the asynchrony assumption.
+- **[[Game Theory]] and [[Mechanism Design]]**: Mechanism design (Hurwicz, Maskin, Myerson—Nobel 2007) provides the theoretical framework for designing coordination protocols where agents act in self-interest: the designer creates rules (mechanisms) under which individually rational behaviour by agents produces collectively desirable outcomes. Auction theory (Vickrey second-price auctions, combinatorial auctions) applies mechanism design to task allocation problems.
+- **Multi-agent systems theory**: Wooldridge and Jennings (1995) formalised the agent definition (rational, reactive, proactive, social), establishing the theoretical substrate for multi-agent coordination research. The FIPA specification consortium (1996–2002) produced interoperability standards for agent communication languages, directory services, and message transport. Victor Lesser's work at the University of Massachusetts on distributed problem solving and the TAEMS task model provided the canonical framework for multi-agent planning under uncertainty.
+- **LLM-agent coordination (2023–2026)**: Park et al. (2023) "Generative Agents" demonstrated emergent social coordination in a sandbox environment of 25 LLM agents. Wang et al. (2024) "A Survey on Large Language Model Based Autonomous Agents" synthesised the rapidly growing literature. The AutoGen paper (Wu et al., 2023) introduced the conversational multi-agent framework used extensively in enterprise deployments. OpenAI's Agents SDK (2025) and Google's A2A protocol (2025) represent the infrastructure-level formalisation of these patterns.
 
   The Stanford Center for Research on Foundation Models, MIT's Center for AI and Decision Research, and the Alan Turing Institute's programme on autonomous agents are the principal academic centres producing coordination theory and evaluation in 2026.
 
@@ -218,5 +209,5 @@ AI Agent Coordination is the set of mechanisms by which multiple autonomous AI a
 
   27. Zylos Research (2026). "Agent Interoperability Protocols 2026: MCP, A2A, ACP and the Path to Convergence." *Zylos Research Report*. Forward-looking analysis of protocol convergence and future coordination infrastructure.
 
-- ### Provenance
+### Provenance
 

@@ -1,10 +1,10 @@
-
 Formal ontology for modeling structured storytelling frameworks, interactive narratives, story graphs, character relationships, and branching narrative paths in digital and interactive media.
 
-- ### Semantic Classification
+### Semantic Classification
 
-- ### Content
-  Narrative Design Ontology — content pending enrichment.
+### Content
 
-- ### Provenance
+Narrative Design Ontology — content pending enrichment.
+
+### Provenance
 

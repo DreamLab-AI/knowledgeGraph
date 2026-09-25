@@ -1,24 +1,24 @@
-
 Artificial intelligence systems for automated analysis of histopathology slides, cytology specimens, and other pathological images. Pathology AI performs tasks including cancer detection and grading, biomarker quantification, and morphological analysis using whole-slide imaging pipelines and deep learning architectures tailored for gigapixel images at multi-scale resolution.
 
-- ### Semantic Classification
+### Semantic Classification
 
-- ### Content
-  - Pathology AI comprises artificial intelligence systems for automated analysis of histopathology slides, cytology specimens, and other pathological images. These systems perform tasks including cancer detection, grading, biomarker quantification, and morphological analysis using whole slide imaging and deep learning architectures tailored for gigapixel pathology images.
+### Content
+
+- Pathology AI comprises artificial intelligence systems for automated analysis of histopathology slides, cytology specimens, and other pathological images. These systems perform tasks including cancer detection, grading, biomarker quantification, and morphological analysis using whole slide imaging and deep learning architectures tailored for gigapixel pathology images.
 
   ## Core Characteristics
 
-  - **Whole Slide Imaging**: Analysis of gigapixel digital pathology images
-  - **Multi-Scale Analysis**: Detection at cellular to tissue-level scales
-  - **Diagnostic Classification**: Cancer detection, subtyping, and grading
-  - **Biomarker Quantification**: Automated IHC and molecular marker scoring
-  - **Quality Control**: Slide quality assessment and artifact detection
+- **Whole Slide Imaging**: Analysis of gigapixel digital pathology images
+- **Multi-Scale Analysis**: Detection at cellular to tissue-level scales
+- **Diagnostic Classification**: Cancer detection, subtyping, and grading
+- **Biomarker Quantification**: Automated IHC and molecular marker scoring
+- **Quality Control**: Slide quality assessment and artifact detection
 
   ## Relationships
 
-  - **Superclass**: Medical Imaging AI
-  - **Related**: Digital Pathology, Histopathology, Computer Vision
-  - **Standards**: DICOM WSI, HL7 FHIR
+- **Superclass**: Medical Imaging AI
+- **Related**: Digital Pathology, Histopathology, Computer Vision
+- **Standards**: DICOM WSI, HL7 FHIR
 
   ## Key Literature
 
@@ -28,23 +28,23 @@ Artificial intelligence systems for automated analysis of histopathology slides,
 
   ## See Also
 
-  - [[Medical Imaging AI]]
-  - [[Radiology AI]]
-  - [[Computer Vision]]
+- [[Medical Imaging AI]]
+- [[Radiology AI]]
+- [[Computer Vision]]
 
   ## Core Characteristics
 
-  - **Whole Slide Imaging**: Analysis of gigapixel digital pathology images
-  - **Multi-Scale Analysis**: Detection at cellular to tissue-level scales
-  - **Diagnostic Classification**: Cancer detection, subtyping, and grading
-  - **Biomarker Quantification**: Automated IHC and molecular marker scoring
-  - **Quality Control**: Slide quality assessment and artifact detection
+- **Whole Slide Imaging**: Analysis of gigapixel digital pathology images
+- **Multi-Scale Analysis**: Detection at cellular to tissue-level scales
+- **Diagnostic Classification**: Cancer detection, subtyping, and grading
+- **Biomarker Quantification**: Automated IHC and molecular marker scoring
+- **Quality Control**: Slide quality assessment and artifact detection
 
   ## Relationships
 
-  - **Superclass**: Medical Imaging AI
-  - **Related**: Digital Pathology, Histopathology, Computer Vision
-  - **Standards**: DICOM WSI, HL7 FHIR
+- **Superclass**: Medical Imaging AI
+- **Related**: Digital Pathology, Histopathology, Computer Vision
+- **Standards**: DICOM WSI, HL7 FHIR
 
   ## Key Literature
 
@@ -54,9 +54,9 @@ Artificial intelligence systems for automated analysis of histopathology slides,
 
   ## See Also
 
-  - [[Medical Imaging AI]]
-  - [[Radiology AI]]
-  - [[Computer Vision]]
+- [[Medical Imaging AI]]
+- [[Radiology AI]]
+- [[Computer Vision]]
 
-- ### Provenance
+### Provenance
 

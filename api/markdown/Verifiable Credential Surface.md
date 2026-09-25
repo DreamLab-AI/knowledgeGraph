@@ -1,53 +1,52 @@
-
 A standardised JSON-LD 1.1 surface (S3) for issuing and storing W3C Verifiable Credentials 2.0|W3C VC 2.0 credentials signed by agents' DID Nostr Identity|did:nostr DIDs using Schnorr Signature|Schnorr signatures over JCS Canonicalisation|JCS-canonicalised payloads, enabling v...
 
-- ### Semantic Classification
+### Semantic Classification
 
-- ### Content
+### Content
 
-  The Verifiable Credential Surface (S3) is where agents issue cryptographically signed claims about work completed, capabilities possessed, or attestations received from other agents. These credentials are designed to be independently verifiable without requiring trust in the issuing agent or centralised authorities.
+The Verifiable Credential Surface (S3) is where agents issue cryptographically signed claims about work completed, capabilities possessed, or attestations received from other agents. These credentials are designed to be independently verifiable without requiring trust in the issuing agent or centralised authorities.
 
-  #### Credential Structure
+#### Credential Structure
 
-  A VisionClaw agent credential follows [[W3C Verifiable Credentials 2.0]]:
+A VisionClaw agent credential follows [[W3C Verifiable Credentials 2.0]]:
 
-  ```json
-  {
-    "@context": [
-      "https://www.w3.org/2018/credentials/v1",
-      "https://visionclaw.dreamlab-ai.systems/ns/v1"
-    ],
-    "type": [
-      "VerifiableCredential",
-      "vcw:AgentWorkCredential"
-    ],
-    "id": "urn:visionclaw:credential:0123...ab:sha256-12-deadbeef",
-    "issuer": "did:nostr:0123...ab",
-    "issuanceDate": "2026-04-26T12:34:56Z",
-    "credentialSubject": {
-      "id": "did:nostr:9876...xy",
-      "taskId": "urn:visionclaw:bead:9876...xy:task-42",
-      "taskDescription": "Classify 1000 documents",
-      "completionTime": "2026-04-26T12:34:45Z",
-      "accuracy": 0.94,
-      "proof": "Verified by visual inspection and unit tests"
-    },
-    "proof": {
-      "type": "SchnorrSignature2025",
-      "created": "2026-04-26T12:34:56Z",
-      "verificationMethod": "did:nostr:0123...ab#key-0",
-      "proofPurpose": "assertionMethod",
-      "signatureValue": "abcd...ef"
-    }
+```json
+{
+  "@context": [
+    "https://www.w3.org/2018/credentials/v1",
+    "https://visionclaw.dreamlab-ai.systems/ns/v1"
+  ],
+  "type": [
+    "VerifiableCredential",
+    "vcw:AgentWorkCredential"
+  ],
+  "id": "urn:visionclaw:credential:0123...ab:sha256-12-deadbeef",
+  "issuer": "did:nostr:0123...ab",
+  "issuanceDate": "2026-04-26T12:34:56Z",
+  "credentialSubject": {
+    "id": "did:nostr:9876...xy",
+    "taskId": "urn:visionclaw:bead:9876...xy:task-42",
+    "taskDescription": "Classify 1000 documents",
+    "completionTime": "2026-04-26T12:34:45Z",
+    "accuracy": 0.94,
+    "proof": "Verified by visual inspection and unit tests"
+  },
+  "proof": {
+    "type": "SchnorrSignature2025",
+    "created": "2026-04-26T12:34:56Z",
+    "verificationMethod": "did:nostr:0123...ab#key-0",
+    "proofPurpose": "assertionMethod",
+    "signatureValue": "abcd...ef"
   }
-  ```
+}
+```
 
-  **Key Elements**:
+**Key Elements**:
 
-  - **id**: A [[URI Canonicaliser|urn:visionclaw: URI]] uniquely identifying this credential.
-  - **issuer**: The agent's [[DID Nostr Identity|did:nostr]] DID that issued the credential.
-  - **credentialSubject**: The claim being made (who did what, with what outcome).
-  - **proof**: A Schnorr signature over a canonicalised hash of the credential's core fields.
+- **id**: A [[URI Canonicaliser|urn:visionclaw: URI]] uniquely identifying this credential.
+- **issuer**: The agent's [[DID Nostr Identity|did:nostr]] DID that issued the credential.
+- **credentialSubject**: The claim being made (who did what, with what outcome).
+- **proof**: A Schnorr signature over a canonicalised hash of the credential's core fields.
 
   #### Proof Types: Schnorr Signatures
 
@@ -75,67 +74,71 @@ A standardised JSON-LD 1.1 surface (S3) for issuing and storing W3C Verifiable C
   VisionClaw agents issue several credential types:
 
   **1. Agent Capability Credential**
-  - **Issued by**: Operator or certification authority.
-  - **Claim**: "Agent X is capable of LLM inference, supporting up to 100 concurrent requests."
-  - **Use**: Allows peer agents to decide whether to assign tasks.
+
+- **Issued by**: Operator or certification authority.
+- **Claim**: "Agent X is capable of LLM inference, supporting up to 100 concurrent requests."
+- **Use**: Allows peer agents to decide whether to assign tasks.
 
   **2. Work Completion Credential**
-  - **Issued by**: Completing agent.
-  - **Claim**: "I completed task Y in time Z with result R."
-  - **Use**: Proof of work for payment, compliance, auditing.
+
+- **Issued by**: Completing agent.
+- **Claim**: "I completed task Y in time Z with result R."
+- **Use**: Proof of work for payment, compliance, auditing.
 
   **3. Attestation Credential**
-  - **Issued by**: Verifying agent or human.
-  - **Claim**: "I verified that agent X's claim about task Y is accurate."
-  - **Use**: Multi-signature validation, consensus building.
+
+- **Issued by**: Verifying agent or human.
+- **Claim**: "I verified that agent X's claim about task Y is accurate."
+- **Use**: Multi-signature validation, consensus building.
 
   **4. Delegation Credential**
-  - **Issued by**: Agent A.
-  - **Claim**: "Agent B is authorised to act on my behalf for tasks matching pattern Z."
-  - **Use**: Hierarchical task distribution, agent-to-agent proxy.
+
+- **Issued by**: Agent A.
+- **Claim**: "Agent B is authorised to act on my behalf for tasks matching pattern Z."
+- **Use**: Hierarchical task distribution, agent-to-agent proxy.
 
   #### Content Addressing of Credentials
 
   Each credential's `id` is a [[URI Canonicaliser|urn:visionclaw: URI]] computed deterministically:
 
-  ```
-  Credential payload (issuer, subject, claim, timestamp, proof) → canonicalise to JSON
-  SHA-256 hash the JSON → take first 12 hex chars
-  id = urn:visionclaw:credential:0123...ab:sha256-12-<hash>
-  ```
+```
+Credential payload (issuer, subject, claim, timestamp, proof) → canonicalise to JSON
+SHA-256 hash the JSON → take first 12 hex chars
+id = urn:visionclaw:credential:0123...ab:sha256-12-<hash>
+```
 
-  Same credential always gets the same URI. Different credentials (even from the same issuer, on the same task) get different URIs. This enables precise referencing and tamper detection.
+Same credential always gets the same URI. Different credentials (even from the same issuer, on the same task) get different URIs. This enables precise referencing and tamper detection.
 
-  #### Integration with Smart Contracts
+#### Integration with Smart Contracts
 
-  A smart contract on Ethereum or Bitcoin can verify agent credentials:
+A smart contract on Ethereum or Bitcoin can verify agent credentials:
 
-  ```solidity
-  // Pseudo-code
-  function verifyAgentCompletion(credential) {
-    // Extract proof and compute hash
-    bytes32 hash = keccak256(abi.encodePacked(credential.core));
-    
-    // Recover signer's public key from Schnorr signature
-    // (requires Schnorr verification in solidity or via precompile)
-    address signer = recoverSchnorr(credential.proof);
-    
-    // Check that signer matches the issuer DID
-    require(signer == credential.issuer);
-    
-    // Credential is valid; proceed with payment
-    payable(credential.issuer).transfer(reward);
-  }
-  ```
+```solidity
+// Pseudo-code
+function verifyAgentCompletion(credential) {
+  // Extract proof and compute hash
+  bytes32 hash = keccak256(abi.encodePacked(credential.core));
+  
+  // Recover signer's public key from Schnorr signature
+  // (requires Schnorr verification in solidity or via precompile)
+  address signer = recoverSchnorr(credential.proof);
+  
+  // Check that signer matches the issuer DID
+  require(signer == credential.issuer);
+  
+  // Credential is valid; proceed with payment
+  payable(credential.issuer).transfer(reward);
+}
+```
 
-  This enables **trustless, decentralised task markets** where smart contracts hire agents, agents complete work, agents issue credentials, and contracts verify and pay—all without intermediaries.
+This enables **trustless, decentralised task markets** where smart contracts hire agents, agents complete work, agents issue credentials, and contracts verify and pay—all without intermediaries.
 
-  #### Revocation and Expiration
+#### Revocation and Expiration
 
-  Credentials can include:
+Credentials can include:
 
-  - **Expiration Date**: Automatically invalid after a certain time.
-  - **Revocation URI**: A URL where the issuer can publish a revocation if the credential is found to be false.
+- **Expiration Date**: Automatically invalid after a certain time.
+- **Revocation URI**: A URL where the issuer can publish a revocation if the credential is found to be false.
 
   Because there's no centralised revocation authority, revocation relies on relays or smart contracts to anchor the revocation permanently.
 
@@ -150,5 +153,5 @@ A standardised JSON-LD 1.1 surface (S3) for issuing and storing W3C Verifiable C
 
   This is far more transparent than centralised systems where auditors must trust the platform operator.
 
-- ### Provenance
+### Provenance
 

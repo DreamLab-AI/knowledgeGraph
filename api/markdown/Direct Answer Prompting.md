@@ -1,21 +1,27 @@
-
 Direct answer prompting is a prompting strategy in which a large language model is instructed to produce a final answer immediately, without showing intermediate reasoning steps. It contrasts with chain-of-thought approaches by optimising for brevity, latency and cost on tasks where extended reasoning offers little benefit. The technique is used when an answer is expected to be retrievable or shallow, trading interpretability and complex-reasoning accuracy for efficiency.
 
 - [[Direct Answer Prompting]] instructs a [[Large Language Model]] to return its conclusion straight away, skipping the visible reasoning trace produced by [[Chain-of-Thought Reasoning]]. It is a lightweight technique within [[Prompt Engineering]] suited to factual lookups and shallow tasks.
 - It draws on [[In-Context Learning]] and is often combined with [[Zero-Shot Prompting]] or [[Few-Shot Prompting]] depending on how much demonstration the task needs.
-- ### Overview
+
+### Overview
+
 - Direct answer prompting is the default behaviour for many simple queries: ask a question, get an answer. The strategy becomes a deliberate design choice when it is contrasted against reasoning-heavy methods that materialise intermediate steps.
 - By suppressing the reasoning trace, direct prompting reduces token usage and latency, which matters for high-throughput or cost-sensitive deployments.
 - The trade-off is that on multi-step arithmetic, logic, or planning tasks, models that answer directly tend to be less accurate than those that reason step by step.
-- ### Mechanisms
+
+### Mechanisms
+
 - Instruction framing: the prompt explicitly requests only the final answer, sometimes with format constraints.
 - Output constraint: response length or structure is bounded to discourage elaboration.
 - Task routing: a system may choose direct answering for shallow questions and reserve reasoning chains for hard ones.
 - Decoding: lower-temperature, short-output decoding reinforces concise responses.
-- ### Applications
+
+### Applications
+
 - Classification and extraction tasks where the answer is a label or span.
 - Retrieval-augmented question answering where the answer is grounded in supplied context.
 - Latency-critical assistants and high-volume batch processing.
 - A baseline against which chain-of-thought gains are measured in evaluation.
-- ### Provenance
+
+### Provenance
 

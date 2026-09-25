@@ -1,10 +1,10 @@
-
 Software layer providing domain-specific application interfaces and services for metaverse experiences including education, commerce, healthcare, and entertainment applications.
 
-- ### Semantic Classification
+### Semantic Classification
 
-- ### Content
-  Application Layer — content pending enrichment.
+### Content
 
-- ### Provenance
+Application Layer — content pending enrichment.
+
+### Provenance
 

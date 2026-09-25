@@ -1,27 +1,26 @@
-
 Metaverse navigation systems are spatially-embedded interaction mechanisms that enable users to traverse, orient, and coordinate within persistent three-dimensional virtual environments through modalities such as gaze-based controls, hand-tracking, locomotion techniques (joystick, teleportation, redirected walking), and spatial overlays including mini-maps and AR wayfinding cues. These systems integrate environmental awareness, social presence, and user experience design to maintain spatial cognition across interconnected virtual worlds. They form a critical infrastructure layer for usable, inclusive metaverse participation.
 
-- ### Semantic Classification
+### Semantic Classification
 
-- ### Content
+### Content
 
-  ## Overview
+## Overview
 
-  # Metaverse Navigation Systems: A Comprehensive Overview
+# Metaverse Navigation Systems: A Comprehensive Overview
 
-  ## Technical Definition
+## Technical Definition
 
-  Metaverse navigation systems are **spatially-embedded interaction mechanisms** that enable users to traverse and orient themselves within synchronously shared, persistent three-dimensional virtual environments through immersive techniques such as gaze-based controls, hand-tracking, spatial overlays, and locomotion methods (joystick, teleportation, redirected walking).[1][2][5] These systems integrate environmental awareness, wayfinding cues, and presence-based coordination to facilitate seamless movement across interconnected virtual worlds whilst maintaining spatial cognition and user experience quality.[1][5]
+Metaverse navigation systems are **spatially-embedded interaction mechanisms** that enable users to traverse and orient themselves within synchronously shared, persistent three-dimensional virtual environments through immersive techniques such as gaze-based controls, hand-tracking, spatial overlays, and locomotion methods (joystick, teleportation, redirected walking).[1][2][5] These systems integrate environmental awareness, wayfinding cues, and presence-based coordination to facilitate seamless movement across interconnected virtual worlds whilst maintaining spatial cognition and user experience quality.[1][5]
 
-  ## Current State and Implementations (2024–2025)
+## Current State and Implementations (2024–2025)
 
-  **Navigation Interface Paradigms**
+**Navigation Interface Paradigms**
 
-  Contemporary metaverse navigation employs multiple interaction modalities:
+Contemporary metaverse navigation employs multiple interaction modalities:
 
-  - **Gaze-based and hand-tracked menus** for intuitive movement selection
-  - **Spatial augmentation** including mini-maps, augmented compasses, and proximity sensors
-  - **Visual overlays** such as directional arrows, street nomenclature in AR, and AI-guided notifications[1]
+- **Gaze-based and hand-tracked menus** for intuitive movement selection
+- **Spatial augmentation** including mini-maps, augmented compasses, and proximity sensors
+- **Visual overlays** such as directional arrows, street nomenclature in AR, and AI-guided notifications[1]
 
   **Locomotion Techniques**
 
@@ -38,7 +37,7 @@ Metaverse navigation systems are spatially-embedded interaction mechanisms that 
 
   The search results reference the following scholarly work:
 
-  - **IEEE Transactions on Visualization and Computer Graphics**: Comparative study examining effects of environmental dynamics and locomotion techniques on spatial knowledge, task performance, and user experience in VR navigation.[5]
+- **IEEE Transactions on Visualization and Computer Graphics**: Comparative study examining effects of environmental dynamics and locomotion techniques on spatial knowledge, task performance, and user experience in VR navigation.[5]
 
   However, comprehensive full citations with publication dates, author names, and DOI identifiers are not available within the provided search results. For rigorous academic referencing, consultation of the original IEEE publication and the Duality AI framework documentation would be necessary.
 
@@ -60,5 +59,5 @@ Metaverse navigation systems are spatially-embedded interaction mechanisms that 
 
   The metaverse will operate as a **continuously persistent, synchronously shared context** independent of individual user presence, requiring sophisticated backend synchronisation architectures and collaborative governance frameworks.[2][3]
 
-- ### Provenance
+### Provenance
 

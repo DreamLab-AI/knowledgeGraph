@@ -1,109 +1,100 @@
-
 AAAI (the Association for the Advancement of Artificial Intelligence), founded in 1979 under the original name 'American Association for Artificial Intelligence' and renamed in 2007, is the principal non-profit scientific society devoted to advancing research in and responsible use of artificial intelligence. It is best known for its flagship annual peer-reviewed conference — one of the most selective and broadly scoped venues in AI — alongside the AI, Ethics and Society (AIES) conference, symposia, workshops, and the journal AI Magazine. AAAI also engages in education, public communication, and policy discussion concerning AI; administers the AAAI Fellows Program recognising sustained contributions to the discipline; and maintains historical continuity as the first professional society dedicated exclusively to AI, founded by leaders including Allen Newell, Edward Feigenbaum, Marvin Minsky, and John McCarthy. AAAI 2026 — the 40th annual conference — received 23,680 submissions and accepted 4,167 papers at a 17.6% acceptance rate, making it the most competitive edition in the conference's history.
 
-- ### Semantic Classification
+### Semantic Classification
 
-- ### Content
+### Content
 
-  ## Compositional Relationships (Components)
-  ```manchester-owl
-  SubClassOf(ai:AAAI
-    ObjectSomeValuesFrom(ai:hasPart ai:AAAIConference))
-  SubClassOf(ai:AAAI
-    ObjectSomeValuesFrom(ai:hasPart ai:PeerReview))
-  SubClassOf(ai:AAAI
-    ObjectSomeValuesFrom(ai:hasPart ai:AIMagazine))
-  SubClassOf(ai:AAAI
-    ObjectSomeValuesFrom(ai:hasPart ai:AAAIFellowsProgram))
-  SubClassOf(ai:AAAI
-    ObjectSomeValuesFrom(ai:hasPart ai:Workshop))
-  SubClassOf(ai:AAAI
-    ObjectSomeValuesFrom(ai:hasPart ai:Tutorial))
-  SubClassOf(ai:AAAI
-    ObjectSomeValuesFrom(ai:hasPart ai:ProgrammeCommittee))
-  ```
+## Compositional Relationships (Components)
+```manchester-owl
+SubClassOf(ai:AAAI
+  ObjectSomeValuesFrom(ai:hasPart ai:AAAIConference))
+SubClassOf(ai:AAAI
+  ObjectSomeValuesFrom(ai:hasPart ai:PeerReview))
+SubClassOf(ai:AAAI
+  ObjectSomeValuesFrom(ai:hasPart ai:AIMagazine))
+SubClassOf(ai:AAAI
+  ObjectSomeValuesFrom(ai:hasPart ai:AAAIFellowsProgram))
+SubClassOf(ai:AAAI
+  ObjectSomeValuesFrom(ai:hasPart ai:Workshop))
+SubClassOf(ai:AAAI
+  ObjectSomeValuesFrom(ai:hasPart ai:Tutorial))
+SubClassOf(ai:AAAI
+  ObjectSomeValuesFrom(ai:hasPart ai:ProgrammeCommittee))
+```
 
-  ## Dependency Relationships
-  ```manchester-owl
-  SubClassOf(ai:AAAI
-    ObjectSomeValuesFrom(ai:requires ai:PeerReview))
-  SubClassOf(ai:AAAI
-    ObjectSomeValuesFrom(ai:requires ai:DoubleBlindReview))
-  SubClassOf(ai:AAAI
-    ObjectSomeValuesFrom(ai:dependsOn ai:AIResearch))
-  SubClassOf(ai:AAAI
-    ObjectSomeValuesFrom(ai:dependsOn ai:AcademicCommunity))
-  ```
+## Dependency Relationships
+```manchester-owl
+SubClassOf(ai:AAAI
+  ObjectSomeValuesFrom(ai:requires ai:PeerReview))
+SubClassOf(ai:AAAI
+  ObjectSomeValuesFrom(ai:requires ai:DoubleBlindReview))
+SubClassOf(ai:AAAI
+  ObjectSomeValuesFrom(ai:dependsOn ai:AIResearch))
+SubClassOf(ai:AAAI
+  ObjectSomeValuesFrom(ai:dependsOn ai:AcademicCommunity))
+```
 
-  ## Capability Relationships
-  ```manchester-owl
-  SubClassOf(ai:AAAI
-    ObjectSomeValuesFrom(ai:enables ai:ResearchDissemination))
-  SubClassOf(ai:AAAI
-    ObjectSomeValuesFrom(ai:enables ai:BenchmarkStandard))
-  SubClassOf(ai:AAAI
-    ObjectSomeValuesFrom(ai:enables ai:AIForSocialGood))
-  SubClassOf(ai:AAAI
-    ObjectSomeValuesFrom(ai:enables ai:AIGovernance))
-  SubClassOf(ai:AAAI
-    ObjectSomeValuesFrom(ai:enables ai:AIAlignment))
-  SubClassOf(ai:AAAI
-    ObjectSomeValuesFrom(ai:enables ai:AIPolicy))
-  ```
+## Capability Relationships
+```manchester-owl
+SubClassOf(ai:AAAI
+  ObjectSomeValuesFrom(ai:enables ai:ResearchDissemination))
+SubClassOf(ai:AAAI
+  ObjectSomeValuesFrom(ai:enables ai:BenchmarkStandard))
+SubClassOf(ai:AAAI
+  ObjectSomeValuesFrom(ai:enables ai:AIForSocialGood))
+SubClassOf(ai:AAAI
+  ObjectSomeValuesFrom(ai:enables ai:AIGovernance))
+SubClassOf(ai:AAAI
+  ObjectSomeValuesFrom(ai:enables ai:AIAlignment))
+SubClassOf(ai:AAAI
+  ObjectSomeValuesFrom(ai:enables ai:AIPolicy))
+```
 
-  ## Implementation Relationships
-  ```manchester-owl
-  SubClassOf(ai:AAAI
-    ObjectSomeValuesFrom(ai:implements ai:PeerReviewProcess))
-  SubClassOf(ai:AAAI
-    ObjectSomeValuesFrom(ai:implements ai:FellowsRecognitionProcess))
-  SubClassOf(ai:AAAI
-    ObjectSomeValuesFrom(ai:supports ai:ArtificialIntelligence))
-  SubClassOf(ai:AAAI
-    ObjectSomeValuesFrom(ai:supports ai:MachineLearning))
-  SubClassOf(ai:AAAI
-    ObjectSomeValuesFrom(ai:supports ai:ResponsibleAI))
-  ```
+## Implementation Relationships
+```manchester-owl
+SubClassOf(ai:AAAI
+  ObjectSomeValuesFrom(ai:implements ai:PeerReviewProcess))
+SubClassOf(ai:AAAI
+  ObjectSomeValuesFrom(ai:implements ai:FellowsRecognitionProcess))
+SubClassOf(ai:AAAI
+  ObjectSomeValuesFrom(ai:supports ai:ArtificialIntelligence))
+SubClassOf(ai:AAAI
+  ObjectSomeValuesFrom(ai:supports ai:MachineLearning))
+SubClassOf(ai:AAAI
+  ObjectSomeValuesFrom(ai:supports ai:ResponsibleAI))
+```
 
-  ## Reduction Relationships
-  ```manchester-owl
-  SubClassOf(ai:AAAI
-    ObjectSomeValuesFrom(ai:reducesTo ai:AcademicConference))
-  SubClassOf(ai:AAAI
-    ObjectSomeValuesFrom(ai:reducesTo ai:ScientificSociety))
-  SubClassOf(ai:AAAI
-    ObjectSomeValuesFrom(ai:reducesTo ai:ResearchCommunity))
-  ```
+## Reduction Relationships
+```manchester-owl
+SubClassOf(ai:AAAI
+  ObjectSomeValuesFrom(ai:reducesTo ai:AcademicConference))
+SubClassOf(ai:AAAI
+  ObjectSomeValuesFrom(ai:reducesTo ai:ScientificSociety))
+SubClassOf(ai:AAAI
+  ObjectSomeValuesFrom(ai:reducesTo ai:ResearchCommunity))
+```
 
-  ## About
+## About
 
-  AAAI occupies a distinctive institutional position in the global AI ecosystem as both a scientific society with membership-based governance and a premier peer-reviewed conference series with a breadth that distinguishes it from all ML-focused alternatives. Where [[NeurIPS]] is anchored in neural computation and statistical learning and [[ICML]] maintains a strong grounding in learning theory, AAAI's historical roots in [[Symbolic AI]] and [[Knowledge Representation]] give it a wider disciplinary scope that has proven resilient across multiple paradigm shifts in AI: from the expert-systems boom and bust of the 1980s, through the probabilistic and statistical learning revolutions of the 1990s and 2000s, to the deep learning era of the 2010s, and now into the era of [[Large Language Model]], [[Agentic AI]], and [[Multimodal AI]]. This breadth makes AAAI papers a particularly useful signal of AI progress across the full technical stack — from foundational theory and [[Reasoning]] systems through applied [[Machine Learning]] and sociotechnical concerns including [[AI Ethics]], [[Fairness in Machine Learning]], and [[Explainability]].
+AAAI occupies a distinctive institutional position in the global AI ecosystem as both a scientific society with membership-based governance and a premier peer-reviewed conference series with a breadth that distinguishes it from all ML-focused alternatives. Where [[NeurIPS]] is anchored in neural computation and statistical learning and [[ICML]] maintains a strong grounding in learning theory, AAAI's historical roots in [[Symbolic AI]] and [[Knowledge Representation]] give it a wider disciplinary scope that has proven resilient across multiple paradigm shifts in AI: from the expert-systems boom and bust of the 1980s, through the probabilistic and statistical learning revolutions of the 1990s and 2000s, to the deep learning era of the 2010s, and now into the era of [[Large Language Model]], [[Agentic AI]], and [[Multimodal AI]]. This breadth makes AAAI papers a particularly useful signal of AI progress across the full technical stack — from foundational theory and [[Reasoning]] systems through applied [[Machine Learning]] and sociotechnical concerns including [[AI Ethics]], [[Fairness in Machine Learning]], and [[Explainability]].
 
-  The organisation functions as a true scientific society rather than merely a conference management entity. It publishes [[AI Magazine]], a quarterly peer-reviewed popular-academic hybrid publication that has served as the field's principal practitioner-accessible journal since 1980 and carries authoritative survey and perspective articles. The [[AAAI Fellows Program]], established in 1990, recognises individuals who have made "significant, sustained contributions to the field of artificial intelligence" — a historically small and selective class that includes many of AI's most consequential figures. Notable AAAI Fellows include Andrew Ng, Yann LeCun, Yoshua Bengio, Geoffrey Hinton, Judea Pearl, Barbara Grosz, and Peter Norvig. The 2024 and 2025 cohorts included Cynthia Rudin (Duke, for interpretable ML and trustworthy AI), Pascale Fung (HKUST, for conversational AI and ethical AI principles), Lynne E. Parker (University of Tennessee, for distributed robotics and AI policy leadership), and David Silver (Google DeepMind, London, for deep reinforcement learning and game-playing AI). AAAI also administers the Classic Paper Award (for papers ten or more years old whose influence has proven fundamental) and the Outstanding Paper Award (for each annual conference's most significant contributions).
+The organisation functions as a true scientific society rather than merely a conference management entity. It publishes [[AI Magazine]], a quarterly peer-reviewed popular-academic hybrid publication that has served as the field's principal practitioner-accessible journal since 1980 and carries authoritative survey and perspective articles. The [[AAAI Fellows Program]], established in 1990, recognises individuals who have made "significant, sustained contributions to the field of artificial intelligence" — a historically small and selective class that includes many of AI's most consequential figures. Notable AAAI Fellows include Andrew Ng, Yann LeCun, Yoshua Bengio, Geoffrey Hinton, Judea Pearl, Barbara Grosz, and Peter Norvig. The 2024 and 2025 cohorts included Cynthia Rudin (Duke, for interpretable ML and trustworthy AI), Pascale Fung (HKUST, for conversational AI and ethical AI principles), Lynne E. Parker (University of Tennessee, for distributed robotics and AI policy leadership), and David Silver (Google DeepMind, London, for deep reinforcement learning and game-playing AI). AAAI also administers the Classic Paper Award (for papers ten or more years old whose influence has proven fundamental) and the Outstanding Paper Award (for each annual conference's most significant contributions).
 
-  The AAAI/ACM Conference on AI, Ethics, and Society (AIES), co-organised with ACM since 2018, is the field's leading dedicated venue for interdisciplinary research on AI's societal implications, bringing together computer scientists, ethicists, legal scholars, social scientists, and policy researchers. AIES 2024 was held in San Jose, California; AIES 2025 continued the series with an expanded track on AI [[Governance]] and policy.
+The AAAI/ACM Conference on AI, Ethics, and Society (AIES), co-organised with ACM since 2018, is the field's leading dedicated venue for interdisciplinary research on AI's societal implications, bringing together computer scientists, ethicists, legal scholars, social scientists, and policy researchers. AIES 2024 was held in San Jose, California; AIES 2025 continued the series with an expanded track on AI [[Governance]] and policy.
 
-  ## Components / Architecture
+## Components / Architecture
 
-  The AAAI annual conference comprises several formally distinct programme tracks:
+The AAAI annual conference comprises several formally distinct programme tracks:
 
-  - **Main Technical Track** — The primary peer-reviewed programme, accepting original research across the full spectrum of AI including [[Knowledge Representation]], [[Planning and Scheduling]], [[Reasoning]], [[Machine Learning]], [[Deep Learning]], [[Natural Language Processing]], [[Computer Vision]], [[Robotics]], [[Multi-Agent System]] research, [[Constraint Satisfaction]], search, and [[Causal Inference]]. Submissions undergo [[Double-Blind Review]] by a [[Programme Committee]] of area chairs and reviewers; accepted papers are presented as oral talks or poster presentations. In AAAI 2026 (the 40th conference), 23,680 submissions were reviewed and 4,167 accepted at a 17.6% acceptance rate — approximately twice the submission volume of AAAI 2025 (12,957 valid submissions, 3,032 accepted at 23.4%).
-
-  - **Special Track on AI for Social Impact** — A dedicated track for research demonstrating measurable positive societal applications of AI. AAAI 2026 awarded 2 Outstanding Papers in this track, covering slum detection for urban planning and plant trait mapping for agricultural sustainability.
-
-  - **Special Track on AI Alignment** — Introduced at AAAI 2026 to reflect the community's growing focus on making AI systems controllable, interpretable, and safe. This track spans [[AI Safety]], value alignment, reward modelling, and human-AI collaboration research.
-
-  - **AAAI/ACM AIES** — The joint ethics conference, run annually alongside or adjacent to the main conference, providing a dedicated venue for interdisciplinary AI ethics and governance research at the boundary of [[Responsible AI]] and [[AI Policy]].
-
-  - **Workshop Programme** — Dozens of focused [[Workshop]] events organised by community members, covering emerging sub-fields and specialised applications. Workshops serve as incubators for research that appears in later main-track submissions.
-
-  - **Tutorial Programme** — Half-day and full-day [[Tutorial]] sessions by domain experts, covering both foundational methods and state-of-the-art developments in AI.
-
-  - **Doctoral Consortium** — A structured mentorship programme for PhD candidates in AI to present and receive feedback on dissertation work from senior researchers, supporting the pipeline of future AI researchers.
-
-  - **[[AI Magazine]]** — AAAI's peer-reviewed practitioner journal, publishing survey articles, perspective pieces, and accessible technical articles since 1980. Functions as the de facto house journal of the professional AI community.
-
-  - **[[AAAI Fellows Program]]** — Annual recognition of up to 5–8 individuals per year who have made sustained, significant contributions to AI. Fellows are nominated by members and elected by the existing Fellows body.
+- **Main Technical Track** — The primary peer-reviewed programme, accepting original research across the full spectrum of AI including [[Knowledge Representation]], [[Planning and Scheduling]], [[Reasoning]], [[Machine Learning]], [[Deep Learning]], [[Natural Language Processing]], [[Computer Vision]], [[Robotics]], [[Multi-Agent System]] research, [[Constraint Satisfaction]], search, and [[Causal Inference]]. Submissions undergo [[Double-Blind Review]] by a [[Programme Committee]] of area chairs and reviewers; accepted papers are presented as oral talks or poster presentations. In AAAI 2026 (the 40th conference), 23,680 submissions were reviewed and 4,167 accepted at a 17.6% acceptance rate — approximately twice the submission volume of AAAI 2025 (12,957 valid submissions, 3,032 accepted at 23.4%).
+- **Special Track on AI for Social Impact** — A dedicated track for research demonstrating measurable positive societal applications of AI. AAAI 2026 awarded 2 Outstanding Papers in this track, covering slum detection for urban planning and plant trait mapping for agricultural sustainability.
+- **Special Track on AI Alignment** — Introduced at AAAI 2026 to reflect the community's growing focus on making AI systems controllable, interpretable, and safe. This track spans [[AI Safety]], value alignment, reward modelling, and human-AI collaboration research.
+- **AAAI/ACM AIES** — The joint ethics conference, run annually alongside or adjacent to the main conference, providing a dedicated venue for interdisciplinary AI ethics and governance research at the boundary of [[Responsible AI]] and [[AI Policy]].
+- **Workshop Programme** — Dozens of focused [[Workshop]] events organised by community members, covering emerging sub-fields and specialised applications. Workshops serve as incubators for research that appears in later main-track submissions.
+- **Tutorial Programme** — Half-day and full-day [[Tutorial]] sessions by domain experts, covering both foundational methods and state-of-the-art developments in AI.
+- **Doctoral Consortium** — A structured mentorship programme for PhD candidates in AI to present and receive feedback on dissertation work from senior researchers, supporting the pipeline of future AI researchers.
+- **[[AI Magazine]]** — AAAI's peer-reviewed practitioner journal, publishing survey articles, perspective pieces, and accessible technical articles since 1980. Functions as the de facto house journal of the professional AI community.
+- **[[AAAI Fellows Program]]** — Annual recognition of up to 5–8 individuals per year who have made sustained, significant contributions to AI. Fellows are nominated by members and elected by the existing Fellows body.
 
   ## Use Cases / Major Families
 
@@ -206,5 +197,5 @@ AAAI (the Association for the Advancement of Artificial Intelligence), founded i
   27. RIKEN AIP. (2026). "Nine Papers Accepted to AAAI-26." https://aip.riken.jp/news/aaai26/
   28. 36KR. (2026). "AAAI 2026 Results Announced: 17.6% Acceptance Rate for 23,000 Submissions." https://eu.36kr.com/en/p/3546803868545153
 
-- ### Provenance
+### Provenance
 

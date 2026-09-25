@@ -1,62 +1,64 @@
-
 Real-time Processing is a computational model where data is processed immediately upon arrival or generation, with minimal latency between input and output. Systems respond to events within strict time constraints (typically microseconds to seconds), enabling immediate decision-making through continuous stream-oriented processing rather than deferred batch operations.
 
-- ### Semantic Classification
+### Semantic Classification
 
-- ### Content
+### Content
 
-  ### SKOS Conceptual Structure
+### SKOS Conceptual Structure
 
-  ## Processing Patterns
+## Processing Patterns
 
-  ### Event-Driven Real-Time Pattern
-  ```
-  Event Source → [Event Stream] → [Real-time Processor] → [Immediate Action]
-                                        ↓
-                                  [Sub-millisecond latency]
-  ```
+### Event-Driven Real-Time Pattern
+```
+Event Source → [Event Stream] → [Real-time Processor] → [Immediate Action]
+                                      ↓
+                                [Sub-millisecond latency]
+```
 
-  ### Stream Processing Pipeline
-  ```
-  Data Stream → [Filter] → [Transform] → [Aggregate] → [Action]
-              (real-time at each stage)
-  ```
+### Stream Processing Pipeline
+```
+Data Stream → [Filter] → [Transform] → [Aggregate] → [Action]
+            (real-time at each stage)
+```
 
-  ### Complex Event Processing (CEP)
-  ```
-  Event A ┐
-  Event B ├→ [Pattern Detection] → [Derived Event] → [Response]
-  Event C ┘     (real-time)
-  ```
+### Complex Event Processing (CEP)
+```
+Event A ┐
+Event B ├→ [Pattern Detection] → [Derived Event] → [Response]
+Event C ┘     (real-time)
+```
 
-  ### Lambda Architecture (Real-Time Layer)
-  ```
-  Stream → [Speed Layer: Real-time] → [Approximate Results]
-                                  ↓
-                            [Merged with Batch Layer]
-  ```
+### Lambda Architecture (Real-Time Layer)
+```
+Stream → [Speed Layer: Real-time] → [Approximate Results]
+                                ↓
+                          [Merged with Batch Layer]
+```
 
-  ## Implementation Considerations
+## Implementation Considerations
 
-  ### Real-Time Categories
+### Real-Time Categories
 
-  **Hard Real-Time:**
-  - **Definition**: Missing deadline causes system failure
-  - **Examples**: Medical devices, industrial control systems
-  - **Latency**: Microseconds to milliseconds
-  - **Guarantees**: Deterministic, guaranteed response times
+**Hard Real-Time:**
+
+- **Definition**: Missing deadline causes system failure
+- **Examples**: Medical devices, industrial control systems
+- **Latency**: Microseconds to milliseconds
+- **Guarantees**: Deterministic, guaranteed response times
 
   **Soft Real-Time:**
-  - **Definition**: Deadline misses degrade quality but don't fail
-  - **Examples**: Video streaming, online gaming
-  - **Latency**: Milliseconds to hundreds of milliseconds
-  - **Guarantees**: Best-effort, statistical guarantees
+
+- **Definition**: Deadline misses degrade quality but don't fail
+- **Examples**: Video streaming, online gaming
+- **Latency**: Milliseconds to hundreds of milliseconds
+- **Guarantees**: Best-effort, statistical guarantees
 
   **Near Real-Time:**
-  - **Definition**: Tolerable delays up to seconds
-  - **Examples**: Social media feeds, stock quotes
-  - **Latency**: Seconds
-  - **Guarantees**: Eventually consistent
+
+- **Definition**: Tolerable delays up to seconds
+- **Examples**: Social media feeds, stock quotes
+- **Latency**: Seconds
+- **Guarantees**: Eventually consistent
 
   ### Performance Requirements
   1. **Throughput**: Events/records processed per second
@@ -65,10 +67,11 @@ Real-time Processing is a computational model where data is processed immediatel
   4. **Fault Tolerance**: Resilience to failures
 
   ### Technology Considerations
-  - **In-Memory Processing**: Minimize disk I/O
-  - **Parallel Processing**: Distribute load across cores/nodes
-  - **Optimized Data Structures**: Low-latency data structures
-  - **Network Optimization**: Minimize serialization overhead
+
+- **In-Memory Processing**: Minimize disk I/O
+- **Parallel Processing**: Distribute load across cores/nodes
+- **Optimized Data Structures**: Low-latency data structures
+- **Network Optimization**: Minimize serialization overhead
 
   ## Cross-Domain Examples
 
@@ -79,24 +82,24 @@ Real-time Processing is a computational model where data is processed immediatel
   type: AnomalyDetection
   system: BridgeDigitalTwin
   dataSource:
-    type: StructuralSensorArray
-    sensorCount: 500
-    samplingRate: 100Hz
+  type: StructuralSensorArray
+  sensorCount: 500
+  samplingRate: 100Hz
   processing:
-    - ingestion:
-        latency: PT0.001S  # 1ms
-        throughput: 50000 events/sec
-    - filtering:
-        operation: OutlierRemoval
-        latency: PT0.002S  # 2ms
-    - analysis:
-        algorithm: OnlineAnomalyDetection
-        modelType: IsolationForest
-        latency: PT0.010S  # 10ms
-    - alerting:
-        condition: anomaly_score > 0.9
-        latency: PT0.001S  # 1ms
-        action: ImmediateAlert
+  - ingestion:
+      latency: PT0.001S  # 1ms
+      throughput: 50000 events/sec
+  - filtering:
+      operation: OutlierRemoval
+      latency: PT0.002S  # 2ms
+  - analysis:
+      algorithm: OnlineAnomalyDetection
+      modelType: IsolationForest
+      latency: PT0.010S  # 10ms
+  - alerting:
+      condition: anomaly_score > 0.9
+      latency: PT0.001S  # 1ms
+      action: ImmediateAlert
   totalLatency: PT0.014S  # 14ms
   latencyConstraint: PT0.050S  # 50ms SLA
   processingType: SoftRealTime
@@ -109,27 +112,27 @@ Real-time Processing is a computational model where data is processed immediatel
   type: ReactiveNavigation
   agent: AutonomousVehicle_X
   inputs:
-    - lidarScan:
-        frequency: 10Hz
-        pointsPerScan: 100000
-    - cameraFeed:
-        fps: 30
-        resolution: 1920x1080
-    - gpsUpdate:
-        frequency: 1Hz
+  - lidarScan:
+      frequency: 10Hz
+      pointsPerScan: 100000
+  - cameraFeed:
+      fps: 30
+      resolution: 1920x1080
+  - gpsUpdate:
+      frequency: 1Hz
   processingPipeline:
-    - perception:
-        operation: ObjectDetection
-        latency: PT0.033S  # 33ms (real-time at 30fps)
-    - localization:
-        operation: SLAM
-        latency: PT0.020S  # 20ms
-    - pathPlanning:
-        operation: DynamicReplanning
-        latency: PT0.015S  # 15ms
-    - control:
-        operation: SteeringControl
-        latency: PT0.002S  # 2ms
+  - perception:
+      operation: ObjectDetection
+      latency: PT0.033S  # 33ms (real-time at 30fps)
+  - localization:
+      operation: SLAM
+      latency: PT0.020S  # 20ms
+  - pathPlanning:
+      operation: DynamicReplanning
+      latency: PT0.015S  # 15ms
+  - control:
+      operation: SteeringControl
+      latency: PT0.002S  # 2ms
   totalLatency: PT0.070S  # 70ms
   latencyConstraint: PT0.100S  # 100ms for safety
   processingType: HardRealTime
@@ -143,24 +146,24 @@ Real-time Processing is a computational model where data is processed immediatel
   type: IntrusionDetection
   system: NetworkSecurityMonitor
   dataSource:
-    type: NetworkTrafficStream
-    throughput: 10Gbps
-    packetRate: 5000000 packets/sec
+  type: NetworkTrafficStream
+  throughput: 10Gbps
+  packetRate: 5000000 packets/sec
   processing:
-    - packetCapture:
-        latency: PT0.0001S  # 100μs
-    - deepPacketInspection:
-        signatures: 50000
-        latency: PT0.001S  # 1ms
-    - behavioralAnalysis:
-        algorithm: MachineLearningClassifier
-        latency: PT0.005S  # 5ms
-    - threatScoring:
-        riskCalculation: Bayesian
-        latency: PT0.001S  # 1ms
-    - response:
-        action: [Alert, Block, Log]
-        latency: PT0.0005S  # 500μs
+  - packetCapture:
+      latency: PT0.0001S  # 100μs
+  - deepPacketInspection:
+      signatures: 50000
+      latency: PT0.001S  # 1ms
+  - behavioralAnalysis:
+      algorithm: MachineLearningClassifier
+      latency: PT0.005S  # 5ms
+  - threatScoring:
+      riskCalculation: Bayesian
+      latency: PT0.001S  # 1ms
+  - response:
+      action: [Alert, Block, Log]
+      latency: PT0.0005S  # 500μs
   totalLatency: PT0.0075S  # 7.5ms
   latencyConstraint: PT0.010S  # 10ms SLA
   processingType: SoftRealTime
@@ -177,9 +180,9 @@ Real-time Processing is a computational model where data is processed immediatel
   SELECT ?processor ?avgLatency ?maxLatency ?sla
   WHERE {
   ?processor a dt:RealTimeProcessing ;
-    dt:hasAverageLatency ?avgLatency ;
-    dt:hasMaxLatency ?maxLatency ;
-    dt:hasLatencyConstraint ?sla .
+  dt:hasAverageLatency ?avgLatency ;
+  dt:hasMaxLatency ?maxLatency ;
+  dt:hasLatencyConstraint ?sla .
 
   FILTER (?maxLatency > ?sla)
   }
@@ -193,8 +196,8 @@ Real-time Processing is a computational model where data is processed immediatel
   SELECT ?processor ?throughput ?type
   WHERE {
   ?processor a dt:RealTimeProcessing ;
-    dt:hasThroughput ?throughput ;
-    rdf:type ?type .
+  dt:hasThroughput ?throughput ;
+  rdf:type ?type .
   }
   ORDER BY DESC(?throughput)
   ```
@@ -202,22 +205,25 @@ Real-time Processing is a computational model where data is processed immediatel
   ## Related Standards & Frameworks
 
   ### Real-Time Processing Frameworks
-  - **Apache Flink**: Stateful stream processing
-  - **Apache Kafka Streams**: Event stream processing
-  - **Apache Storm**: Distributed real-time computation
-  - **Apache Spark Streaming**: Micro-batch stream processing
+
+- **Apache Flink**: Stateful stream processing
+- **Apache Kafka Streams**: Event stream processing
+- **Apache Storm**: Distributed real-time computation
+- **Apache Spark Streaming**: Micro-batch stream processing
 
   ### Real-Time Databases
-  - **Redis**: In-memory data store
-  - **Apache Druid**: Real-time analytics database
-  - **InfluxDB**: Time-series database
-  - **Cassandra**: Low-latency distributed database
+
+- **Redis**: In-memory data store
+- **Apache Druid**: Real-time analytics database
+- **InfluxDB**: Time-series database
+- **Cassandra**: Low-latency distributed database
 
   ### Protocols & Standards
-  - **MQTT**: Lightweight pub/sub protocol
-  - **WebSockets**: Full-duplex real-time communication
-  - **gRPC Streaming**: Real-time RPC
-  - **Server-Sent Events (SSE)**: Server push updates
+
+- **MQTT**: Lightweight pub/sub protocol
+- **WebSockets**: Full-duplex real-time communication
+- **gRPC Streaming**: Real-time RPC
+- **Server-Sent Events (SSE)**: Server push updates
 
   ## Best Practices
 
@@ -229,11 +235,12 @@ Real-time Processing is a computational model where data is processed immediatel
   5. **Monitoring**: Continuous latency and throughput tracking
 
   ### Anti-Patterns to Avoid
-  - **Blocking Operations**: Synchronous calls in critical path
-  - **Excessive State**: Large stateful operations
-  - **Single Points of Failure**: Lack of redundancy
-  - **Over-Aggregation**: Accumulating too much data before processing
-  - **Unbounded Memory**: Memory leaks in long-running streams
+
+- **Blocking Operations**: Synchronous calls in critical path
+- **Excessive State**: Large stateful operations
+- **Single Points of Failure**: Lack of redundancy
+- **Over-Aggregation**: Accumulating too much data before processing
+- **Unbounded Memory**: Memory leaks in long-running streams
 
   ## Performance Optimization
 
@@ -245,20 +252,23 @@ Real-time Processing is a computational model where data is processed immediatel
   5. **Async I/O**: Non-blocking operations
 
   ### Monitoring Metrics
-  - **Latency Percentiles**: p50, p95, p99, p99.9
-  - **Throughput**: Records/events per second
-  - **Backpressure**: Queue depth and saturation
-  - **Error Rate**: Processing failures per time window
-  - **Resource Utilization**: CPU, memory, network usage
+
+- **Latency Percentiles**: p50, p95, p99, p99.9
+- **Throughput**: Records/events per second
+- **Backpressure**: Queue depth and saturation
+- **Error Rate**: Processing failures per time window
+- **Resource Utilization**: CPU, memory, network usage
 
   #### References
   ### Academic Literature
-  - Stonebraker, M., et al. (2005). "The 8 Requirements of Real-Time Stream Processing"
-  - Carbone, P., et al. (2015). "Apache Flink: Stream and Batch Processing in a Single Engine"
+
+- Stonebraker, M., et al. (2005). "The 8 Requirements of Real-Time Stream Processing"
+- Carbone, P., et al. (2015). "Apache Flink: Stream and Batch Processing in a Single Engine"
 
   ### Technical Resources
-  - Apache Flink Documentation
-  - Kafka Streams Architecture Guide
 
-- ### Provenance
+- Apache Flink Documentation
+- Kafka Streams Architecture Guide
+
+### Provenance
 

@@ -1,21 +1,26 @@
-
 Real-time data processing is the continuous ingestion, transformation, and analysis of data immediately as it is produced, delivering results within strict latency bounds rather than in scheduled batches. It underpins applications that must react to events as they happen, such as fraud detection, monitoring, and live analytics, and depends on low-latency pipelines, stream-processing engines, and event-driven architectures. Its defining constraint is bounded end-to-end latency between data arrival and actionable output.
 
-- ### Overview
-  - Real-time processing operates on data in motion, producing results within tight latency budgets as events arrive.
-  - It contrasts with batch processing, which accumulates data and processes it on a schedule.
-  - Stream-processing engines and message brokers form the backbone of real-time pipelines.
-  - Event-driven architectures propagate state changes immediately, enabling reactive downstream computation.
-- ### Mechanisms
-  - Continuous ingestion of unbounded data streams rather than finite batches.
-  - [[Message Queue]] and broker layers buffer and route events between stages.
-  - Windowing and stateful operators aggregate streaming data within time bounds.
-  - Bounded end-to-end [[Low Latency]] is the defining service-level objective.
-  - [[Apache Kafka]] is a common transport for high-throughput event streams.
-- ### Applications
-  - Real-time [[Fraud Detection]] scoring transactions as they occur.
-  - Live [[Monitoring]] and [[Observability]] dashboards over telemetry streams.
-  - Recommendation and personalisation reacting to current user behaviour.
-  - Operational analytics on sensor and clickstream data at the edge.
-- ### Provenance
+### Overview
+
+- Real-time processing operates on data in motion, producing results within tight latency budgets as events arrive.
+- It contrasts with batch processing, which accumulates data and processes it on a schedule.
+- Stream-processing engines and message brokers form the backbone of real-time pipelines.
+- Event-driven architectures propagate state changes immediately, enabling reactive downstream computation.
+
+### Mechanisms
+
+- Continuous ingestion of unbounded data streams rather than finite batches.
+- [[Message Queue]] and broker layers buffer and route events between stages.
+- Windowing and stateful operators aggregate streaming data within time bounds.
+- Bounded end-to-end [[Low Latency]] is the defining service-level objective.
+- [[Apache Kafka]] is a common transport for high-throughput event streams.
+
+### Applications
+
+- Real-time [[Fraud Detection]] scoring transactions as they occur.
+- Live [[Monitoring]] and [[Observability]] dashboards over telemetry streams.
+- Recommendation and personalisation reacting to current user behaviour.
+- Operational analytics on sensor and clickstream data at the edge.
+
+### Provenance
 

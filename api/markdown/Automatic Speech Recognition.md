@@ -1,146 +1,146 @@
-
 Automatic Speech Recognition (ASR) is the technology that converts spoken language into written text by jointly modelling acoustic signals — frame-level spectral features derived from raw audio waveforms — and linguistic context, using neural sequence-to-sequence architectures trained on large corpora of paired audio and transcripts. Modern ASR systems built on transformer and conformer encoder-decoder designs achieve near-human word error rates on clean speech benchmarks (Whisper Large-v3 at 2.7% WER on LibriSpeech test-clean) and have been extended to multilingual and low-resource settings through large-scale self-supervised pre-training on unlabelled audio. ASR serves as a foundational component for voice assistants, real-time transcription services, accessibility tooling, and spoken language understanding pipelines, and underpins multimodal AI systems that must bridge the speech and text modalities.
 
-- ### Semantic Classification
+### Semantic Classification
 
-- ### Content
+### Content
 
-  ## Compositional Relationships (Components)
-      SubClassOf(ai:AutomaticSpeechRecognition
-        ObjectSomeValuesFrom(ai:hasPart ai:AcousticModel))
-      SubClassOf(ai:AutomaticSpeechRecognition
-        ObjectSomeValuesFrom(ai:hasPart ai:LanguageModel))
-      SubClassOf(ai:AutomaticSpeechRecognition
-        ObjectSomeValuesFrom(ai:hasPart ai:FeatureExtraction))
-      SubClassOf(ai:AutomaticSpeechRecognition
-        ObjectSomeValuesFrom(ai:hasPart ai:ConnectionistTemporalClassification))
-      SubClassOf(ai:AutomaticSpeechRecognition
-        ObjectSomeValuesFrom(ai:hasPart ai:RNNTransducer))
-      SubClassOf(ai:AutomaticSpeechRecognition
-        ObjectSomeValuesFrom(ai:hasPart ai:BeamSearch))
-      SubClassOf(ai:AutomaticSpeechRecognition
-        ObjectSomeValuesFrom(ai:hasPart ai:AttentionMechanism))
+## Compositional Relationships (Components)
+    SubClassOf(ai:AutomaticSpeechRecognition
+      ObjectSomeValuesFrom(ai:hasPart ai:AcousticModel))
+    SubClassOf(ai:AutomaticSpeechRecognition
+      ObjectSomeValuesFrom(ai:hasPart ai:LanguageModel))
+    SubClassOf(ai:AutomaticSpeechRecognition
+      ObjectSomeValuesFrom(ai:hasPart ai:FeatureExtraction))
+    SubClassOf(ai:AutomaticSpeechRecognition
+      ObjectSomeValuesFrom(ai:hasPart ai:ConnectionistTemporalClassification))
+    SubClassOf(ai:AutomaticSpeechRecognition
+      ObjectSomeValuesFrom(ai:hasPart ai:RNNTransducer))
+    SubClassOf(ai:AutomaticSpeechRecognition
+      ObjectSomeValuesFrom(ai:hasPart ai:BeamSearch))
+    SubClassOf(ai:AutomaticSpeechRecognition
+      ObjectSomeValuesFrom(ai:hasPart ai:AttentionMechanism))
 
-  ## Dependency Relationships
-      SubClassOf(ai:AutomaticSpeechRecognition
-        ObjectSomeValuesFrom(ai:requires ai:AudioSignalProcessing))
-      SubClassOf(ai:AutomaticSpeechRecognition
-        ObjectSomeValuesFrom(ai:requires ai:LabelledTrainingData))
-      SubClassOf(ai:AutomaticSpeechRecognition
-        ObjectSomeValuesFrom(ai:requires ai:GPUAcceleratedComputing))
-      SubClassOf(ai:AutomaticSpeechRecognition
-        ObjectSomeValuesFrom(ai:dependsOn ai:DeepLearning))
-      SubClassOf(ai:AutomaticSpeechRecognition
-        ObjectSomeValuesFrom(ai:dependsOn ai:TransformerArchitecture))
-      SubClassOf(ai:AutomaticSpeechRecognition
-        ObjectSomeValuesFrom(ai:dependsOn ai:SelfSupervisedPreTraining))
-      SubClassOf(ai:AutomaticSpeechRecognition
-        ObjectSomeValuesFrom(ai:dependsOn ai:TrainingData))
+## Dependency Relationships
+    SubClassOf(ai:AutomaticSpeechRecognition
+      ObjectSomeValuesFrom(ai:requires ai:AudioSignalProcessing))
+    SubClassOf(ai:AutomaticSpeechRecognition
+      ObjectSomeValuesFrom(ai:requires ai:LabelledTrainingData))
+    SubClassOf(ai:AutomaticSpeechRecognition
+      ObjectSomeValuesFrom(ai:requires ai:GPUAcceleratedComputing))
+    SubClassOf(ai:AutomaticSpeechRecognition
+      ObjectSomeValuesFrom(ai:dependsOn ai:DeepLearning))
+    SubClassOf(ai:AutomaticSpeechRecognition
+      ObjectSomeValuesFrom(ai:dependsOn ai:TransformerArchitecture))
+    SubClassOf(ai:AutomaticSpeechRecognition
+      ObjectSomeValuesFrom(ai:dependsOn ai:SelfSupervisedPreTraining))
+    SubClassOf(ai:AutomaticSpeechRecognition
+      ObjectSomeValuesFrom(ai:dependsOn ai:TrainingData))
 
-  ## Capability Relationships
-      SubClassOf(ai:AutomaticSpeechRecognition
-        ObjectSomeValuesFrom(ai:enables ai:NaturalLanguageProcessing))
-      SubClassOf(ai:AutomaticSpeechRecognition
-        ObjectSomeValuesFrom(ai:enables ai:VoiceInteraction))
-      SubClassOf(ai:AutomaticSpeechRecognition
-        ObjectSomeValuesFrom(ai:enables ai:SpokenLanguageUnderstanding))
-      SubClassOf(ai:AutomaticSpeechRecognition
-        ObjectSomeValuesFrom(ai:enables ai:RealTimeCaptioning))
-      SubClassOf(ai:AutomaticSpeechRecognition
-        ObjectSomeValuesFrom(ai:enables ai:MachineTranslation))
-      SubClassOf(ai:AutomaticSpeechRecognition
-        ObjectSomeValuesFrom(ai:supports ai:Accessibility))
-      SubClassOf(ai:AutomaticSpeechRecognition
-        ObjectSomeValuesFrom(ai:supports ai:MultimodalAI))
-      SubClassOf(ai:AutomaticSpeechRecognition
-        ObjectSomeValuesFrom(ai:supports ai:SpatialComputing))
+## Capability Relationships
+    SubClassOf(ai:AutomaticSpeechRecognition
+      ObjectSomeValuesFrom(ai:enables ai:NaturalLanguageProcessing))
+    SubClassOf(ai:AutomaticSpeechRecognition
+      ObjectSomeValuesFrom(ai:enables ai:VoiceInteraction))
+    SubClassOf(ai:AutomaticSpeechRecognition
+      ObjectSomeValuesFrom(ai:enables ai:SpokenLanguageUnderstanding))
+    SubClassOf(ai:AutomaticSpeechRecognition
+      ObjectSomeValuesFrom(ai:enables ai:RealTimeCaptioning))
+    SubClassOf(ai:AutomaticSpeechRecognition
+      ObjectSomeValuesFrom(ai:enables ai:MachineTranslation))
+    SubClassOf(ai:AutomaticSpeechRecognition
+      ObjectSomeValuesFrom(ai:supports ai:Accessibility))
+    SubClassOf(ai:AutomaticSpeechRecognition
+      ObjectSomeValuesFrom(ai:supports ai:MultimodalAI))
+    SubClassOf(ai:AutomaticSpeechRecognition
+      ObjectSomeValuesFrom(ai:supports ai:SpatialComputing))
 
-  ## Implementation Relationships
-      SubClassOf(ai:AutomaticSpeechRecognition
-        ObjectSomeValuesFrom(ai:implements ai:TransformerArchitecture))
-      SubClassOf(ai:AutomaticSpeechRecognition
-        ObjectSomeValuesFrom(ai:implements ai:SelfSupervisedLearning))
-      SubClassOf(ai:AutomaticSpeechRecognition
-        ObjectSomeValuesFrom(ai:implements ai:ConnectionistTemporalClassification))
-      SubClassOf(ai:AutomaticSpeechRecognition
-        ObjectSomeValuesFrom(ai:implements ai:TransferLearning))
-      SubClassOf(ai:AutomaticSpeechRecognition
-        ObjectSomeValuesFrom(ai:uses ai:KnowledgeDistillation))
-      SubClassOf(ai:AutomaticSpeechRecognition
-        ObjectSomeValuesFrom(ai:uses ai:Quantisation))
+## Implementation Relationships
+    SubClassOf(ai:AutomaticSpeechRecognition
+      ObjectSomeValuesFrom(ai:implements ai:TransformerArchitecture))
+    SubClassOf(ai:AutomaticSpeechRecognition
+      ObjectSomeValuesFrom(ai:implements ai:SelfSupervisedLearning))
+    SubClassOf(ai:AutomaticSpeechRecognition
+      ObjectSomeValuesFrom(ai:implements ai:ConnectionistTemporalClassification))
+    SubClassOf(ai:AutomaticSpeechRecognition
+      ObjectSomeValuesFrom(ai:implements ai:TransferLearning))
+    SubClassOf(ai:AutomaticSpeechRecognition
+      ObjectSomeValuesFrom(ai:uses ai:KnowledgeDistillation))
+    SubClassOf(ai:AutomaticSpeechRecognition
+      ObjectSomeValuesFrom(ai:uses ai:Quantisation))
 
-  ## Reduction Relationships
-      SubClassOf(ai:AutomaticSpeechRecognition
-        ObjectSomeValuesFrom(ai:reducesTo ai:SequenceToSequenceModelling))
-      SubClassOf(ai:AutomaticSpeechRecognition
-        ObjectSomeValuesFrom(ai:reducesTo ai:AcousticModelling))
-      SubClassOf(ai:AutomaticSpeechRecognition
-        ObjectSomeValuesFrom(ai:reducesTo ai:LanguageModelling))
-      SubClassOf(ai:AutomaticSpeechRecognition
-        ObjectSomeValuesFrom(ai:reducesTo ai:PatternRecognition))
-      SubClassOf(ai:AutomaticSpeechRecognition
-        ObjectSomeValuesFrom(ai:reducesTo ai:SignalProcessing))
+## Reduction Relationships
+    SubClassOf(ai:AutomaticSpeechRecognition
+      ObjectSomeValuesFrom(ai:reducesTo ai:SequenceToSequenceModelling))
+    SubClassOf(ai:AutomaticSpeechRecognition
+      ObjectSomeValuesFrom(ai:reducesTo ai:AcousticModelling))
+    SubClassOf(ai:AutomaticSpeechRecognition
+      ObjectSomeValuesFrom(ai:reducesTo ai:LanguageModelling))
+    SubClassOf(ai:AutomaticSpeechRecognition
+      ObjectSomeValuesFrom(ai:reducesTo ai:PatternRecognition))
+    SubClassOf(ai:AutomaticSpeechRecognition
+      ObjectSomeValuesFrom(ai:reducesTo ai:SignalProcessing))
 
-  ## Contrastive Relationships
-      SubClassOf(ai:AutomaticSpeechRecognition
-        ObjectSomeValuesFrom(ai:contrastsWith ai:TextToSpeech))
-      SubClassOf(ai:AutomaticSpeechRecognition
-        ObjectSomeValuesFrom(ai:contrastsWith ai:KeywordSpotting))
-      SubClassOf(ai:AutomaticSpeechRecognition
-        ObjectSomeValuesFrom(ai:contrastsWith ai:SpeakerRecognition))
-      SubClassOf(ai:AutomaticSpeechRecognition
-        ObjectSomeValuesFrom(ai:supports ai:AccessibilityCompliance))
-      SubClassOf(ai:AutomaticSpeechRecognition
-        ObjectSomeValuesFrom(ai:supports ai:DigitalInclusion))
-      SubClassOf(ai:AutomaticSpeechRecognition
-        ObjectSomeValuesFrom(ai:supports ai:ClinicalDocumentation))
+## Contrastive Relationships
+    SubClassOf(ai:AutomaticSpeechRecognition
+      ObjectSomeValuesFrom(ai:contrastsWith ai:TextToSpeech))
+    SubClassOf(ai:AutomaticSpeechRecognition
+      ObjectSomeValuesFrom(ai:contrastsWith ai:KeywordSpotting))
+    SubClassOf(ai:AutomaticSpeechRecognition
+      ObjectSomeValuesFrom(ai:contrastsWith ai:SpeakerRecognition))
+    SubClassOf(ai:AutomaticSpeechRecognition
+      ObjectSomeValuesFrom(ai:supports ai:AccessibilityCompliance))
+    SubClassOf(ai:AutomaticSpeechRecognition
+      ObjectSomeValuesFrom(ai:supports ai:DigitalInclusion))
+    SubClassOf(ai:AutomaticSpeechRecognition
+      ObjectSomeValuesFrom(ai:supports ai:ClinicalDocumentation))
 
-  ## About
+## About
 
-  Automatic Speech Recognition addresses the fundamental mapping problem from continuous acoustic signal to discrete word or sub-word token sequences. It is one of the most mature sub-disciplines within [[Deep Learning]] and [[Natural Language Processing]], with commercial deployments dating from HMM-based systems in the 1980s–1990s (IBM ViaVoice, Nuance Dragon NaturallySpeaking) through the deep-learning revolution that began with the hybrid HMM-DNN architecture (Hinton et al. 2012, TASLP) reducing [[Word Error Rate]] by approximately 30% relative on TIMIT and switchboard telephone speech compared to the then-dominant Gaussian Mixture Model acoustic models. The decade 2012–2022 saw systematic displacement of hidden Markov models by increasingly powerful end-to-end neural approaches: first [[Connectionist Temporal Classification]] (Graves et al. 2006) enabling training without explicit phoneme alignment via a forward-backward dynamic programming algorithm that marginalises over all valid alignment paths between encoder output and token sequence; then attention-based encoder-decoders (Listen, Attend and Spell, Chan et al. 2016) learning soft acoustic-linguistic alignments jointly without a pronunciation lexicon; then the [[Transformer Architecture]] (Vaswani et al. 2017) enabling fully parallel processing of audio frame sequences via positional encodings and multi-head self-[[Attention Mechanism]]; then the Conformer (Gulati et al. 2020), which interleaved multi-head self-attention blocks with depthwise-separable convolutional modules in a MacRon convolution sandwich, capturing both local acoustic-phonetic patterns (via convolution over ~100 ms windows) and global sequential dependencies (via attention over the full utterance), establishing itself as the dominant ASR encoder backbone and achieving 1.9% WER on LibriSpeech test-clean in its original paper.
+Automatic Speech Recognition addresses the fundamental mapping problem from continuous acoustic signal to discrete word or sub-word token sequences. It is one of the most mature sub-disciplines within [[Deep Learning]] and [[Natural Language Processing]], with commercial deployments dating from HMM-based systems in the 1980s–1990s (IBM ViaVoice, Nuance Dragon NaturallySpeaking) through the deep-learning revolution that began with the hybrid HMM-DNN architecture (Hinton et al. 2012, TASLP) reducing [[Word Error Rate]] by approximately 30% relative on TIMIT and switchboard telephone speech compared to the then-dominant Gaussian Mixture Model acoustic models. The decade 2012–2022 saw systematic displacement of hidden Markov models by increasingly powerful end-to-end neural approaches: first [[Connectionist Temporal Classification]] (Graves et al. 2006) enabling training without explicit phoneme alignment via a forward-backward dynamic programming algorithm that marginalises over all valid alignment paths between encoder output and token sequence; then attention-based encoder-decoders (Listen, Attend and Spell, Chan et al. 2016) learning soft acoustic-linguistic alignments jointly without a pronunciation lexicon; then the [[Transformer Architecture]] (Vaswani et al. 2017) enabling fully parallel processing of audio frame sequences via positional encodings and multi-head self-[[Attention Mechanism]]; then the Conformer (Gulati et al. 2020), which interleaved multi-head self-attention blocks with depthwise-separable convolutional modules in a MacRon convolution sandwich, capturing both local acoustic-phonetic patterns (via convolution over ~100 ms windows) and global sequential dependencies (via attention over the full utterance), establishing itself as the dominant ASR encoder backbone and achieving 1.9% WER on LibriSpeech test-clean in its original paper.
 
-  The watershed moment for modern ASR was OpenAI's Whisper (Radford et al. 2022/2023): a large-scale weakly supervised multilingual encoder-decoder trained on 680,000 hours of diverse internet audio spanning 99 languages, sourced from YouTube transcripts, Common Crawl aligned audio, and curated podcast data. Whisper's key innovation was demonstrating that diversity of training conditions — rather than transcription quality or data curation stringency — was the primary driver of real-world robustness; its WER on LibriSpeech test-clean was 2.7% (Large-v3) but more importantly it degraded gracefully on heavily accented, noisy, or spontaneous speech where supervised-only models showed catastrophic performance drops of 3–5× WER. Whisper's open-weight release under the MIT licence (Small, Medium, Large checkpoints) catalysed both research (hundreds of fine-tuning studies) and commercial adoption (used by Otter.ai, Gladia, Deepgram as a fallback engine, and as the basis for most open-source ASR deployments). Whisper Large-v3 (2023) achieved 2.7% WER on LibriSpeech test-clean via architectural refinements reducing decoder layers from 32 to 4 — yielding a 5.4× inference speedup at negligible accuracy cost — and 5.2% WER on test-other (accented and challenging read speech). [[Self-Supervised Learning]] methods (wav2vec 2.0, Baevski et al. 2020; HuBERT, Hsu et al. 2021; WavLM, Chen et al. 2022) pre-trained encoders on hundreds of thousands of hours of unlabelled audio via masked prediction objectives analogous to BERT's masked language modelling, then fine-tuned on as little as 10 minutes of labelled data while matching previous state-of-the-art systems trained on 960 hours of LibriSpeech; wav2vec 2.0 achieved 1.8% WER on LibriSpeech test-clean with only 10 minutes of labelled data, transforming the economics of low-resource and minority language ASR by decoupling pre-training (requires unlabelled audio only) from fine-tuning (requires small labelled corpora).
+The watershed moment for modern ASR was OpenAI's Whisper (Radford et al. 2022/2023): a large-scale weakly supervised multilingual encoder-decoder trained on 680,000 hours of diverse internet audio spanning 99 languages, sourced from YouTube transcripts, Common Crawl aligned audio, and curated podcast data. Whisper's key innovation was demonstrating that diversity of training conditions — rather than transcription quality or data curation stringency — was the primary driver of real-world robustness; its WER on LibriSpeech test-clean was 2.7% (Large-v3) but more importantly it degraded gracefully on heavily accented, noisy, or spontaneous speech where supervised-only models showed catastrophic performance drops of 3–5× WER. Whisper's open-weight release under the MIT licence (Small, Medium, Large checkpoints) catalysed both research (hundreds of fine-tuning studies) and commercial adoption (used by Otter.ai, Gladia, Deepgram as a fallback engine, and as the basis for most open-source ASR deployments). Whisper Large-v3 (2023) achieved 2.7% WER on LibriSpeech test-clean via architectural refinements reducing decoder layers from 32 to 4 — yielding a 5.4× inference speedup at negligible accuracy cost — and 5.2% WER on test-other (accented and challenging read speech). [[Self-Supervised Learning]] methods (wav2vec 2.0, Baevski et al. 2020; HuBERT, Hsu et al. 2021; WavLM, Chen et al. 2022) pre-trained encoders on hundreds of thousands of hours of unlabelled audio via masked prediction objectives analogous to BERT's masked language modelling, then fine-tuned on as little as 10 minutes of labelled data while matching previous state-of-the-art systems trained on 960 hours of LibriSpeech; wav2vec 2.0 achieved 1.8% WER on LibriSpeech test-clean with only 10 minutes of labelled data, transforming the economics of low-resource and minority language ASR by decoupling pre-training (requires unlabelled audio only) from fine-tuning (requires small labelled corpora).
 
-  By 2025–2026, the field has entered a new phase characterised by LLM-augmented ASR decoders that move beyond pure transcription towards holistic spoken language understanding. NVIDIA's Canary-1B (March 2024) and Canary-Qwen-2.5B (January 2025) pair a Conformer acoustic encoder with a causal LLM decoder — respectively a 1B-parameter encoder-decoder trained on 85,000 hours of English, Spanish, French, and German labelled audio, and a 2.5B-parameter Qwen LLM decoder enabling transfer of broad world knowledge to the transcription task. The Canary family achieves simultaneous ASR, speech translation (ASR-T), and punctuated/capitalised transcript generation in a single forward pass, with Canary-Qwen-2.5B topping the Hugging Face Open ASR Leaderboard for English in early 2025. The Parakeet CTC 1.1B model (NVIDIA, 2025) exploits the throughput advantage of greedy CTC decoding (no beam search, no attention decoder) to achieve an RTFx of 2793.75 — processing nearly 2800× faster than real time on a single A100 GPU — making it viable for large-scale batch transcription of audio archives (1 hour of audio processed in ~1.3 seconds). Streaming ASR has matured substantially: hybrid two-pass CTC+attention architectures emit sub-500 ms word-emission latency under CPU-only inference on mid-range server hardware, and WhisperRT (arXiv:2508.12301) converts the originally non-causal Whisper into a causal streaming model by replacing the bidirectional encoder attention with masked causal attention and adding chunk-based processing with 8k/50k hybrid tokenisation, enabling streaming transcription with WER degradation of only 0.3% absolute versus the offline Whisper model.
+By 2025–2026, the field has entered a new phase characterised by LLM-augmented ASR decoders that move beyond pure transcription towards holistic spoken language understanding. NVIDIA's Canary-1B (March 2024) and Canary-Qwen-2.5B (January 2025) pair a Conformer acoustic encoder with a causal LLM decoder — respectively a 1B-parameter encoder-decoder trained on 85,000 hours of English, Spanish, French, and German labelled audio, and a 2.5B-parameter Qwen LLM decoder enabling transfer of broad world knowledge to the transcription task. The Canary family achieves simultaneous ASR, speech translation (ASR-T), and punctuated/capitalised transcript generation in a single forward pass, with Canary-Qwen-2.5B topping the Hugging Face Open ASR Leaderboard for English in early 2025. The Parakeet CTC 1.1B model (NVIDIA, 2025) exploits the throughput advantage of greedy CTC decoding (no beam search, no attention decoder) to achieve an RTFx of 2793.75 — processing nearly 2800× faster than real time on a single A100 GPU — making it viable for large-scale batch transcription of audio archives (1 hour of audio processed in ~1.3 seconds). Streaming ASR has matured substantially: hybrid two-pass CTC+attention architectures emit sub-500 ms word-emission latency under CPU-only inference on mid-range server hardware, and WhisperRT (arXiv:2508.12301) converts the originally non-causal Whisper into a causal streaming model by replacing the bidirectional encoder attention with masked causal attention and adding chunk-based processing with 8k/50k hybrid tokenisation, enabling streaming transcription with WER degradation of only 0.3% absolute versus the offline Whisper model.
 
-  ## Historical Development and Architecture Timeline
+## Historical Development and Architecture Timeline
 
-  The ASR field has progressed through five distinct technological eras, each characterised by a dominant architectural paradigm:
+The ASR field has progressed through five distinct technological eras, each characterised by a dominant architectural paradigm:
 
-  **Era 1 — Acoustic Phonetics (1952–1980)**: Rule-based systems using handcrafted acoustic feature templates for digit or small vocabulary recognition. Bell Labs' Audrey (1952) recognised ten digits with 97% accuracy for a single speaker. IBM's Shoebox (1961) recognised 16 words. Systems were entirely speaker-dependent and required extensive speaker adaptation. No statistical modelling; recognition was template matching.
+**Era 1 — Acoustic Phonetics (1952–1980)**: Rule-based systems using handcrafted acoustic feature templates for digit or small vocabulary recognition. Bell Labs' Audrey (1952) recognised ten digits with 97% accuracy for a single speaker. IBM's Shoebox (1961) recognised 16 words. Systems were entirely speaker-dependent and required extensive speaker adaptation. No statistical modelling; recognition was template matching.
 
-  **Era 2 — Hidden Markov Models (1980–2012)**: The introduction of HMMs for temporal sequence modelling, combined with Gaussian Mixture Model (GMM) acoustic models, transformed ASR into a principled statistical framework. Each phoneme is modelled by a 3-state left-right HMM; emission probabilities are GMMs over Mel-frequency cepstral coefficients. The Viterbi algorithm decodes the most probable phone sequence in O(N·T) time. N-gram language models (typically trigrams trained on hundreds of millions of words) integrate linguistic constraints. CMU Sphinx, HTK (Cambridge), and later Kaldi toolkits democratised HMM-GMM ASR. Peak performance: ~5.1% WER on switchboard conversational telephone speech by 2011, after decades of incremental improvement.
+**Era 2 — Hidden Markov Models (1980–2012)**: The introduction of HMMs for temporal sequence modelling, combined with Gaussian Mixture Model (GMM) acoustic models, transformed ASR into a principled statistical framework. Each phoneme is modelled by a 3-state left-right HMM; emission probabilities are GMMs over Mel-frequency cepstral coefficients. The Viterbi algorithm decodes the most probable phone sequence in O(N·T) time. N-gram language models (typically trigrams trained on hundreds of millions of words) integrate linguistic constraints. CMU Sphinx, HTK (Cambridge), and later Kaldi toolkits democratised HMM-GMM ASR. Peak performance: ~5.1% WER on switchboard conversational telephone speech by 2011, after decades of incremental improvement.
 
-  **Era 3 — Deep Learning Hybrid (2012–2017)**: Hinton et al. (2012) replaced GMM emission models with deep neural network acoustic models in the HMM framework, yielding ~30% relative WER reduction. The DNN operates as a discriminative phone classifier on frame-level MFCC or filterbank features, replacing the generative GMM. The HMM temporal structure is retained for sequence alignment. This hybrid HMM-DNN architecture became the industry standard almost immediately, with Microsoft, IBM, Google, and Baidu adopting it within 18 months of the Hinton et al. publication. End-of-era performance: 3.8% WER on Switchboard-Hub5'00 (IBM, 2017).
+**Era 3 — Deep Learning Hybrid (2012–2017)**: Hinton et al. (2012) replaced GMM emission models with deep neural network acoustic models in the HMM framework, yielding ~30% relative WER reduction. The DNN operates as a discriminative phone classifier on frame-level MFCC or filterbank features, replacing the generative GMM. The HMM temporal structure is retained for sequence alignment. This hybrid HMM-DNN architecture became the industry standard almost immediately, with Microsoft, IBM, Google, and Baidu adopting it within 18 months of the Hinton et al. publication. End-of-era performance: 3.8% WER on Switchboard-Hub5'00 (IBM, 2017).
 
-  **Era 4 — End-to-End Neural ASR (2017–2022)**: CTC-based and attention-based encoder-decoder networks eliminated the HMM temporal structure, training the acoustic model and implicit language model jointly. Baidu's Deep Speech (Hannun et al. 2014) and Deep Speech 2 (Amodei et al. 2016) used CTC with deep bidirectional RNNs, achieving human-parity WER on the quiet LibriSpeech subset. Listen, Attend and Spell (Chan et al. 2016) introduced attention-based encoding-decoding for ASR. The Speech-Transformer (Dong et al. 2018) replaced RNN encoders with [[Transformer Architecture]] self-attention. The Conformer (Gulati et al. 2020) combined convolution and attention in a hybrid block, becoming the dominant encoder. End-of-era performance: 1.4% WER on LibriSpeech test-clean (Conformer + CTC, 2022).
+**Era 4 — End-to-End Neural ASR (2017–2022)**: CTC-based and attention-based encoder-decoder networks eliminated the HMM temporal structure, training the acoustic model and implicit language model jointly. Baidu's Deep Speech (Hannun et al. 2014) and Deep Speech 2 (Amodei et al. 2016) used CTC with deep bidirectional RNNs, achieving human-parity WER on the quiet LibriSpeech subset. Listen, Attend and Spell (Chan et al. 2016) introduced attention-based encoding-decoding for ASR. The Speech-Transformer (Dong et al. 2018) replaced RNN encoders with [[Transformer Architecture]] self-attention. The Conformer (Gulati et al. 2020) combined convolution and attention in a hybrid block, becoming the dominant encoder. End-of-era performance: 1.4% WER on LibriSpeech test-clean (Conformer + CTC, 2022).
 
-  **Era 5 — Scale and Self-Supervision (2022–present)**: Whisper, wav2vec 2.0, HuBERT, and WavLM demonstrated that training on orders of magnitude more data — either weakly labelled (Whisper: 680K hours) or entirely unlabelled (wav2vec: 60K hours unlabelled + 960 hours labelled) — produces models qualitatively different from those trained on thousands of hours of clean labelled data: more robust to noise, better at accents, effective across many languages, and capable of zero-shot generalisation. The emerging LLM-decoder paradigm (Canary, SALMONN, Qwen-Audio) extends this further by connecting acoustic encoders to general-purpose language models via Q-Former or linear projection adaptors, enabling ASR systems that simultaneously transcribe, translate, summarise, and answer questions about spoken content.
+**Era 5 — Scale and Self-Supervision (2022–present)**: Whisper, wav2vec 2.0, HuBERT, and WavLM demonstrated that training on orders of magnitude more data — either weakly labelled (Whisper: 680K hours) or entirely unlabelled (wav2vec: 60K hours unlabelled + 960 hours labelled) — produces models qualitatively different from those trained on thousands of hours of clean labelled data: more robust to noise, better at accents, effective across many languages, and capable of zero-shot generalisation. The emerging LLM-decoder paradigm (Canary, SALMONN, Qwen-Audio) extends this further by connecting acoustic encoders to general-purpose language models via Q-Former or linear projection adaptors, enabling ASR systems that simultaneously transcribe, translate, summarise, and answer questions about spoken content.
 
-  ## Components / Architecture
+## Components / Architecture
 
-  The ASR pipeline comprises these layers:
+The ASR pipeline comprises these layers:
 
-  - **Feature Extraction** — raw waveforms sampled at 16 kHz are windowed into 25 ms Hann-windowed frames (10 ms hop) and transformed into 80-dimensional log-Mel filterbank energies via the Short-Time Fourier Transform (STFT) followed by application of 80 triangular Mel filterbanks spanning 80 Hz to 7.6 kHz. Global mean-variance normalisation across the utterance is applied. Some modern systems (wav2vec 2.0, HuBERT) operate directly on raw waveforms via a CNN feature extractor (7-layer 1D-conv network with channels [512] × 5 + [512] × 2, kernel sizes 10,3,3,3,3,2,2 ms, total receptive field 400 samples / 25 ms) bypassing hand-crafted spectral features; this enables the network to learn speaker-invariant representations potentially superior to engineered features. Mel-frequency cepstral coefficients (MFCCs, 13–40 dimensions) remain in use for on-device and lightweight deployments due to their computational efficiency and compatibility with legacy HMM decoders.
-  - **Acoustic Encoder** — maps the frame sequence (typically 4× sub-sampled to 40 ms resolution) to a higher-level contextual representation. Architecture families: (i) Conformer — M stacked blocks, each comprising multi-head self-attention (4–8 heads, key/value dimension 64–512), then depthwise-separable convolution with kernel size 31, then feed-forward layers with SWISH activation, with layer norm and residual connections; M = 17 for Conformer-L (100M params) producing 1.9% WER on LibriSpeech; (ii) Transformer encoder — pure multi-head self-[[Attention Mechanism]] with sinusoidal [[Positional Encoding]] or relative position bias (Transformer-XL); (iii) CNN-[[Recurrent Neural Network]] hybrid — 2D-conv over spectrogram followed by bi-directional LSTM layers (as in DeepSpeech2); (iv) CTC encoder — any of the above trained exclusively with [[Connectionist Temporal Classification]] loss, enabling greedy (O(T) per utterance) or beam-search (O(T·B) where B is beam width) decoding without an autoregressive decoder; CTC greedy decoding yields RTFx of 100–2800 depending on model size.
-  - **Language Model / Decoder** — provides prior probability over token sequences beyond what the acoustic encoder captures. Approaches in increasing linguistic depth: (i) n-gram LM shallow-fusion at inference — log-linear interpolation of acoustic CTC scores with 4-gram or 5-gram Kneser-Ney LM scores; simple but effective, +10–20% relative WER reduction on out-of-domain vocabulary; (ii) attention-based autoregressive decoder — Transformer cross-attention over encoder output generates tokens auto-regressively (LAS architecture: 1–2 layer LSTM or Transformer, key dim = encoder dim); Whisper uses a 4-layer decoder with 8 heads for Large-v3; (iii) LLM decoder (Canary family) — full pre-trained causal LM (1B–7B parameters) adapted via a lightweight adaptor from the Conformer encoder output; the LLM's broad linguistic knowledge provides strong priors for contextual spelling correction, domain-specific vocabulary, and zero-shot disfluency handling; (iv) prediction network in the RNN-T joiner — a small LSTM (1–2 layers, 320–640 hidden units) or embedding model predicting the next non-blank token, combined with the acoustic encoder representation at every frame via a feedforward joiner network.
-  - **CTC / RNN Transducer** — loss functions and decoder heads for end-to-end training. CTC marginalises over all valid blank-augmented alignment paths via the forward algorithm in O(T · N) time where T is the frame count and N is the token sequence length. RNN-T (Graves 2012) extends CTC with a prediction network, enabling streaming autoregressive decoding; the joiner (typically a 1-layer linear or feedforward network) combines the T×H acoustic encoder output and the U×H prediction network output at every (t, u) grid position, with training via the RNN-T loss function that marginalises over all (t, u) paths summing to the target sequence. RNN-T is deployed on virtually all major on-device ASR systems (Apple Siri, Google Assistant, Amazon Alexa) due to its streaming capability and ability to run on low-power neural processors.
-  - **Beam Search Decoder** — combines acoustic model log-probabilities with LM prior via α-weighted log-linear interpolation: score(hyp) = log p_AM(hyp|x) + α · log p_LM(hyp) + β · |hyp|. Beam width: 4–8 for on-device streaming (RTF < 1.0 required); 20–80 for offline accuracy-optimised server-side systems. Token type: character-level beam search is common for CTC; BPE (byte-pair encoding) or SentencePiece subword units (vocabulary 4096–50257) for attention decoder and Whisper. Whisper uses a custom 50,257 BPE vocabulary with multilingual tokens.
-  - **Post-processing** — inverse text normalisation (ITN) converts spoken-form tokens ("twenty three pounds forty") to written form ("£23.40") via finite-state transducer rules (Kaldi's WFST ITN) or small language model classifiers; punctuation restoration via a separate BERT-like classifier or included natively in LLM decoders; capitalisation; speaker attribution via [[Speaker Diarisation]] for multi-speaker meeting scenarios (turn boundaries detected by x-vector clustering or spectral clustering of speaker embeddings).
+- **Feature Extraction** — raw waveforms sampled at 16 kHz are windowed into 25 ms Hann-windowed frames (10 ms hop) and transformed into 80-dimensional log-Mel filterbank energies via the Short-Time Fourier Transform (STFT) followed by application of 80 triangular Mel filterbanks spanning 80 Hz to 7.6 kHz. Global mean-variance normalisation across the utterance is applied. Some modern systems (wav2vec 2.0, HuBERT) operate directly on raw waveforms via a CNN feature extractor (7-layer 1D-conv network with channels [512] × 5 + [512] × 2, kernel sizes 10,3,3,3,3,2,2 ms, total receptive field 400 samples / 25 ms) bypassing hand-crafted spectral features; this enables the network to learn speaker-invariant representations potentially superior to engineered features. Mel-frequency cepstral coefficients (MFCCs, 13–40 dimensions) remain in use for on-device and lightweight deployments due to their computational efficiency and compatibility with legacy HMM decoders.
+- **Acoustic Encoder** — maps the frame sequence (typically 4× sub-sampled to 40 ms resolution) to a higher-level contextual representation. Architecture families: (i) Conformer — M stacked blocks, each comprising multi-head self-attention (4–8 heads, key/value dimension 64–512), then depthwise-separable convolution with kernel size 31, then feed-forward layers with SWISH activation, with layer norm and residual connections; M = 17 for Conformer-L (100M params) producing 1.9% WER on LibriSpeech; (ii) Transformer encoder — pure multi-head self-[[Attention Mechanism]] with sinusoidal [[Positional Encoding]] or relative position bias (Transformer-XL); (iii) CNN-[[Recurrent Neural Network]] hybrid — 2D-conv over spectrogram followed by bi-directional LSTM layers (as in DeepSpeech2); (iv) CTC encoder — any of the above trained exclusively with [[Connectionist Temporal Classification]] loss, enabling greedy (O(T) per utterance) or beam-search (O(T·B) where B is beam width) decoding without an autoregressive decoder; CTC greedy decoding yields RTFx of 100–2800 depending on model size.
+- **Language Model / Decoder** — provides prior probability over token sequences beyond what the acoustic encoder captures. Approaches in increasing linguistic depth: (i) n-gram LM shallow-fusion at inference — log-linear interpolation of acoustic CTC scores with 4-gram or 5-gram Kneser-Ney LM scores; simple but effective, +10–20% relative WER reduction on out-of-domain vocabulary; (ii) attention-based autoregressive decoder — Transformer cross-attention over encoder output generates tokens auto-regressively (LAS architecture: 1–2 layer LSTM or Transformer, key dim = encoder dim); Whisper uses a 4-layer decoder with 8 heads for Large-v3; (iii) LLM decoder (Canary family) — full pre-trained causal LM (1B–7B parameters) adapted via a lightweight adaptor from the Conformer encoder output; the LLM's broad linguistic knowledge provides strong priors for contextual spelling correction, domain-specific vocabulary, and zero-shot disfluency handling; (iv) prediction network in the RNN-T joiner — a small LSTM (1–2 layers, 320–640 hidden units) or embedding model predicting the next non-blank token, combined with the acoustic encoder representation at every frame via a feedforward joiner network.
+- **CTC / RNN Transducer** — loss functions and decoder heads for end-to-end training. CTC marginalises over all valid blank-augmented alignment paths via the forward algorithm in O(T · N) time where T is the frame count and N is the token sequence length. RNN-T (Graves 2012) extends CTC with a prediction network, enabling streaming autoregressive decoding; the joiner (typically a 1-layer linear or feedforward network) combines the T×H acoustic encoder output and the U×H prediction network output at every (t, u) grid position, with training via the RNN-T loss function that marginalises over all (t, u) paths summing to the target sequence. RNN-T is deployed on virtually all major on-device ASR systems (Apple Siri, Google Assistant, Amazon Alexa) due to its streaming capability and ability to run on low-power neural processors.
+- **Beam Search Decoder** — combines acoustic model log-probabilities with LM prior via α-weighted log-linear interpolation: score(hyp) = log p_AM(hyp|x) + α · log p_LM(hyp) + β · |hyp|. Beam width: 4–8 for on-device streaming (RTF < 1.0 required); 20–80 for offline accuracy-optimised server-side systems. Token type: character-level beam search is common for CTC; BPE (byte-pair encoding) or SentencePiece subword units (vocabulary 4096–50257) for attention decoder and Whisper. Whisper uses a custom 50,257 BPE vocabulary with multilingual tokens.
+- **Post-processing** — inverse text normalisation (ITN) converts spoken-form tokens ("twenty three pounds forty") to written form ("£23.40") via finite-state transducer rules (Kaldi's WFST ITN) or small language model classifiers; punctuation restoration via a separate BERT-like classifier or included natively in LLM decoders; capitalisation; speaker attribution via [[Speaker Diarisation]] for multi-speaker meeting scenarios (turn boundaries detected by x-vector clustering or spectral clustering of speaker embeddings).
 
   ## Evaluation Metrics and Benchmarks
 
   The primary evaluation framework for ASR is the **[[Word Error Rate]] (WER)**: WER = (S + D + I) / N where S, D, I are the number of substitutions, deletions, and insertions respectively in the minimum-edit-distance alignment between hypothesis and reference, and N is the total number of words in the reference. WER is computed via dynamic programming alignment in O(|hyp| × |ref|) time. Lower WER indicates better performance; human-level WER on LibriSpeech test-clean is approximately 1.6–2.0% (accounting for transcription disagreements between human annotators).
 
   Key benchmarks with 2025–2026 state-of-the-art:
-  - **LibriSpeech test-clean** (read audiobook speech, 5.4 hours, low noise): Whisper Large-v3 2.7%; Canary-Qwen-2.5B 2.1%; human ~1.8%
-  - **LibriSpeech test-other** (harder read speech, 5.1 hours, more challenging speakers): Whisper Large-v3 5.2%; Canary-Qwen-2.5B 4.3%
-  - **AISHELL-1** (Mandarin Chinese, 150h test): Conformer-CTC 4.3% CER
-  - **MLS (Multilingual LibriSpeech)** (8 European languages): Whisper Large-v3 achieves 3.0–8.0% WER depending on language; worst performance on Welsh (7.8% WER), best on Spanish (2.3%)
-  - **CommonVoice 17.0** (multilingual community, 2024): Whisper-based fine-tuned models achieve 3–8% WER on major languages; 15–40% on low-resource languages
-  - **CHiME-7 DASR** (distant microphone, overlapping speech, far-field): Best system 28% WER, illustrating the gap between clean and real-world ASR
-  - **Earnings-21** (financial earnings calls, spontaneous speech): Deepgram Nova-3 6.84% WER; Whisper Large-v3 10.2%
-  - **Real-Time Factor (RTF)**: Parakeet CTC 1.1B RTFx 2793.75; Whisper Large-v3 RTFx 68.56; on-device RNN-T models RTFx 3–10 on mobile SoCs
+
+- **LibriSpeech test-clean** (read audiobook speech, 5.4 hours, low noise): Whisper Large-v3 2.7%; Canary-Qwen-2.5B 2.1%; human ~1.8%
+- **LibriSpeech test-other** (harder read speech, 5.1 hours, more challenging speakers): Whisper Large-v3 5.2%; Canary-Qwen-2.5B 4.3%
+- **AISHELL-1** (Mandarin Chinese, 150h test): Conformer-CTC 4.3% CER
+- **MLS (Multilingual LibriSpeech)** (8 European languages): Whisper Large-v3 achieves 3.0–8.0% WER depending on language; worst performance on Welsh (7.8% WER), best on Spanish (2.3%)
+- **CommonVoice 17.0** (multilingual community, 2024): Whisper-based fine-tuned models achieve 3–8% WER on major languages; 15–40% on low-resource languages
+- **CHiME-7 DASR** (distant microphone, overlapping speech, far-field): Best system 28% WER, illustrating the gap between clean and real-world ASR
+- **Earnings-21** (financial earnings calls, spontaneous speech): Deepgram Nova-3 6.84% WER; Whisper Large-v3 10.2%
+- **Real-Time Factor (RTF)**: Parakeet CTC 1.1B RTFx 2793.75; Whisper Large-v3 RTFx 68.56; on-device RNN-T models RTFx 3–10 on mobile SoCs
 
   **Character Error Rate (CER)** is preferred for morphologically rich languages (Mandarin, Japanese, Korean) and for evaluating medical transcription where single-character errors in drug names have clinical significance. The Open ASR Leaderboard (Hugging Face, launched 2024, updated quarterly) provides the primary community benchmark, tracking WER on 9 English and 8 multilingual datasets with reproducible evaluation scripts.
 
@@ -187,12 +187,13 @@ Automatic Speech Recognition (ASR) is the technology that converts spoken langua
   By mid-2026, ASR has reached a bifurcated maturity: state-of-the-art accuracy on clean English speech (WER 2–3%) is effectively solved, while real-world challenges — overlapping speech, background noise, code-switching, heavy accents, and low-resource languages — remain active research frontiers with WER 8–25% on the hardest conditions.
 
   Leading commercial systems:
-  - **NVIDIA Canary-Qwen-2.5B** — tops the Open ASR Leaderboard for English; Conformer + Qwen LLM decoder
-  - **NVIDIA Parakeet CTC 1.1B** — RTFx 2793.75; 6.68% average WER; optimal for batch transcription
-  - **Whisper Large-v3** — 2.7% LibriSpeech test-clean; 99-language coverage; open weights; de-facto research baseline
-  - **Deepgram Nova-3** — 6.84% WER on clean telephony; real-time streaming with 300 ms latency; dominant in call-centre market
-  - **AssemblyAI Universal-1** — claims best real-world WER on podcasts and meeting audio
-  - **Google Chirp 2** (2025) — universal speech model with code-switching and dialect support, integrated into Google Cloud Speech-to-Text v2
+
+- **NVIDIA Canary-Qwen-2.5B** — tops the Open ASR Leaderboard for English; Conformer + Qwen LLM decoder
+- **NVIDIA Parakeet CTC 1.1B** — RTFx 2793.75; 6.68% average WER; optimal for batch transcription
+- **Whisper Large-v3** — 2.7% LibriSpeech test-clean; 99-language coverage; open weights; de-facto research baseline
+- **Deepgram Nova-3** — 6.84% WER on clean telephony; real-time streaming with 300 ms latency; dominant in call-centre market
+- **AssemblyAI Universal-1** — claims best real-world WER on podcasts and meeting audio
+- **Google Chirp 2** (2025) — universal speech model with code-switching and dialect support, integrated into Google Cloud Speech-to-Text v2
 
   MLCommons introduced Whisper Large-v3 as an official MLPerf Inference v5.1 benchmark task (2025), standardising hardware performance comparisons across GPU vendors. The Hugging Face Open ASR Leaderboard's multilingual and long-form tracks (2025) identified that no single model dominates all languages and audio conditions — the "no catch-all model" finding drives enterprise customers to use ensembles or model routing.
 
@@ -310,14 +311,15 @@ Automatic Speech Recognition (ASR) is the technology that converts spoken langua
 
   **Fairness and demographic bias** — multiple studies have documented that commercial ASR systems exhibit systematically higher WER for speakers with non-standard accents (African American Vernacular English, non-native English, regional UK dialects), women's speech in male-dominated training corpora, and elderly speakers. Koenecke et al. (2020, PNAS) documented WER disparities of 2–3× between white speakers and Black speakers across major commercial ASR systems. Mitigation requires demographically balanced training data, bias-aware evaluation on representative test sets, and targeted fine-tuning on under-represented speaker groups.
 
-- ### Standards and Context
-  - W3C Web Speech API — browser-level interface for ASR in web applications, abstracting over platform-specific engines.
-  - NIST evaluations — historical benchmark series (HUB, SwitchBoard, CALLHOME, OpenSAT) established community-wide performance benchmarks.
-  - Common Voice (Mozilla) — open multilingual speech corpus covering 100+ languages under CC0 licence; enabling low-resource ASR research.
-  - ETSI standards for voice quality and telephony ASR; ITU-T P.800 series for speech quality assessment.
-  - MLCommons MLPerf Inference v5.1 (2025) — Whisper Large-v3 added as an official ASR benchmark task for hardware performance comparison.
-  - Hugging Face Open ASR Leaderboard — community-maintained multilingual and long-form ASR evaluation framework.
-  - GDPR and UK Data Protection Act 2018 govern audio data collection, retention, and consent for ASR deployments processing personal speech. ICO guidance on biometric data applies to voice print capture in speaker recognition contexts.
+### Standards and Context
 
-- ### Provenance
+- W3C Web Speech API — browser-level interface for ASR in web applications, abstracting over platform-specific engines.
+- NIST evaluations — historical benchmark series (HUB, SwitchBoard, CALLHOME, OpenSAT) established community-wide performance benchmarks.
+- Common Voice (Mozilla) — open multilingual speech corpus covering 100+ languages under CC0 licence; enabling low-resource ASR research.
+- ETSI standards for voice quality and telephony ASR; ITU-T P.800 series for speech quality assessment.
+- MLCommons MLPerf Inference v5.1 (2025) — Whisper Large-v3 added as an official ASR benchmark task for hardware performance comparison.
+- Hugging Face Open ASR Leaderboard — community-maintained multilingual and long-form ASR evaluation framework.
+- GDPR and UK Data Protection Act 2018 govern audio data collection, retention, and consent for ASR deployments processing personal speech. ICO guidance on biometric data applies to voice print capture in speaker recognition contexts.
+
+### Provenance
 

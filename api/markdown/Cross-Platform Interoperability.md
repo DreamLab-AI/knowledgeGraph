@@ -1,130 +1,146 @@
-
 The capability for heterogeneous blockchain networks, software platforms, and distributed systems to communicate, exchange data, and transfer value seamlessly without centralized intermediaries. Achieved through standardized protocols, light-client verification, and message-passing frameworks that eliminate trusted third parties.
 
-- ### Semantic Classification
+### Semantic Classification
 
-- ### Content
+### Content
 
-  ## Definition
-  **Cross-Platform Interoperability** refers to the capability for heterogeneous systems, blockchain networks, and software platforms to communicate, exchange data, and coordinate operations seamlessly. In blockchain contexts, this enables trustless asset transfers and message passing between distinct networks using cryptographic verification rather than centralized intermediaries.
+## Definition
+**Cross-Platform Interoperability** refers to the capability for heterogeneous systems, blockchain networks, and software platforms to communicate, exchange data, and coordinate operations seamlessly. In blockchain contexts, this enables trustless asset transfers and message passing between distinct networks using cryptographic verification rather than centralized intermediaries.
 
-  ## Blockchain Interoperability Landscape (2025)
-  - Total Value Locked across 43 interoperability protocols: $8 billion
-  - IBC Protocol connects 115+ chains
-  - LayerZero supports 93 connected chains
-  - Monthly active addresses: 1.5M+ (Circle CCTP and IBC each)
-  - IBC v2 launched March 2025 with improved protocol design
+## Blockchain Interoperability Landscape (2025)
+
+- Total Value Locked across 43 interoperability protocols: $8 billion
+- IBC Protocol connects 115+ chains
+- LayerZero supports 93 connected chains
+- Monthly active addresses: 1.5M+ (Circle CCTP and IBC each)
+- IBC v2 launched March 2025 with improved protocol design
 
   ## Key Interoperability Protocols
 
   ### IBC (Inter-Blockchain Communication)
-  - De facto standard for blockchain interoperability
-  - Light client-based verification eliminates trusted third parties
-  - Zero exploits since launch, securing billions in transfers
-  - Expanding beyond Cosmos to EVM chains via ibc-solidity
-  - Connections to Base, Arbitrum, Solana in development
+
+- De facto standard for blockchain interoperability
+- Light client-based verification eliminates trusted third parties
+- Zero exploits since launch, securing billions in transfers
+- Expanding beyond Cosmos to EVM chains via ibc-solidity
+- Connections to Base, Arbitrum, Solana in development
 
   ### Chainlink CCIP
-  - Cross-Chain Interoperability Protocol
-  - Oracle-grade verification for enterprise use
-  - Token transfers and arbitrary messaging
-  - Risk management network for security
+
+- Cross-Chain Interoperability Protocol
+- Oracle-grade verification for enterprise use
+- Token transfers and arbitrary messaging
+- Risk management network for security
 
   ### LayerZero
-  - Omnichain messaging protocol
-  - Ultra-light nodes with oracle/relayer verification
-  - 93 connected chains
-  - Intent-based routing optimization
+
+- Omnichain messaging protocol
+- Ultra-light nodes with oracle/relayer verification
+- 93 connected chains
+- Intent-based routing optimization
 
   ### Axelar
-  - Trust-minimized cross-chain communication
-  - Validator-secured framework
-  - General Message Passing (GMP)
-  - Connects 50+ blockchain networks
+
+- Trust-minimized cross-chain communication
+- Validator-secured framework
+- General Message Passing (GMP)
+- Connects 50+ blockchain networks
 
   ## Technical Architecture
 
   ### Light Client Verification
-  - Each chain maintains light client of counterparty
-  - Cryptographic proof verification on-chain
-  - No centralized intermediaries required
-  - Finality guarantees through consensus proofs
+
+- Each chain maintains light client of counterparty
+- Cryptographic proof verification on-chain
+- No centralized intermediaries required
+- Finality guarantees through consensus proofs
 
   ### Relayer Infrastructure
-  - Monitors source chain events
-  - Submits proofs to destination chain
-  - Non-custodial operation
-  - Permissionless participation
+
+- Monitors source chain events
+- Submits proofs to destination chain
+- Non-custodial operation
+- Permissionless participation
 
   ### Message Passing
-  - Arbitrary data transfer between chains
-  - Cross-chain smart contract calls
-  - Interchain account management
-  - Event-driven execution
+
+- Arbitrary data transfer between chains
+- Cross-chain smart contract calls
+- Interchain account management
+- Event-driven execution
 
   ## Bridge Types
 
   ### Trust-Minimized Bridges
-  - IBC light client verification
-  - ZK-proof based bridges
-  - Optimistic rollup bridges with fraud proofs
+
+- IBC light client verification
+- ZK-proof based bridges
+- Optimistic rollup bridges with fraud proofs
 
   ### Federated Bridges
-  - Multi-signature validation
-  - Threshold cryptography
-  - Validator committee consensus
+
+- Multi-signature validation
+- Threshold cryptography
+- Validator committee consensus
 
   ### Centralized Bridges
-  - Single custodian model
-  - Fastest but highest trust assumptions
-  - Regulatory compliance advantages
+
+- Single custodian model
+- Fastest but highest trust assumptions
+- Regulatory compliance advantages
 
   ## Security Considerations
-  - Bridge exploits historically largest DeFi hacks
-  - Light client security assumptions
-  - Validator set decentralization
-  - Finality timing across chains
-  - MEV extraction in cross-chain transactions
+
+- Bridge exploits historically largest DeFi hacks
+- Light client security assumptions
+- Validator set decentralization
+- Finality timing across chains
+- MEV extraction in cross-chain transactions
 
   ## Cross-Platform Beyond Blockchain
-  - API standardization (REST, GraphQL, gRPC)
-  - Data format interoperability (JSON-LD, Protocol Buffers)
-  - Identity federation (OAuth, SAML, DID)
-  - Mobile-web-desktop synchronization
-  - IoT device communication protocols
+
+- API standardization (REST, GraphQL, gRPC)
+- Data format interoperability (JSON-LD, Protocol Buffers)
+- Identity federation (OAuth, SAML, DID)
+- Mobile-web-desktop synchronization
+- IoT device communication protocols
 
   ## Relationships
 
   ## Standards and Frameworks
-  - IBC Protocol specification
-  - Chainlink CCIP standard
-  - ERC-5164 (Cross-Chain Execution)
-  - W3C DID interoperability
-  - IEEE blockchain interoperability standards
+
+- IBC Protocol specification
+- Chainlink CCIP standard
+- ERC-5164 (Cross-Chain Execution)
+- W3C DID interoperability
+- IEEE blockchain interoperability standards
 
   ## Future Developments
-  - Multi-layer interoperability frameworks
-  - Protocol-to-protocol communication
-  - ZK-based universal verification
-  - Intent-based cross-chain routing
-  - Atomic cross-chain transactions
 
-- ### Current Landscape (2026)
-  - AI-agent interoperability has become the fastest-moving frontier: Anthropic's Model Context Protocol (MCP, launched November 2024) standardises agent-to-tool access, while Google's Agent2Agent (A2A, released April 2025) handles agent-to-agent discovery and delegation via "Agent Cards"; both were placed under neutral Linux Foundation governance in 2025 (A2A donated June 2025, MCP to the Agentic AI Foundation co-founded with Block and OpenAI in December 2025).
-  - The agent-protocol field consolidated in August 2025 when IBM's Agent Communication Protocol (ACP) merged into A2A under LF AI & Data; the Linux Foundation roadmap targets an MCP 2.0 (Streamable HTTP, OAuth 2.1) and a first joint A2A-MCP interoperability specification through 2026, with a compliance-certification programme planned for late 2026.
-  - EU Digital Markets Act enforcement drove concrete messaging interoperability: Meta's Article 7 obligations took effect (WhatsApp 7 March 2024, Messenger 7 September 2024), Phase 2 group-chat deadlines fell on 7 September 2025, and in November 2025 two third-party services, BirdyChat and Haiket, announced working interoperability with WhatsApp while preserving end-to-end encryption.
-  - DMA device and OS interoperability advanced under Article 6(7): Apple, Google and Microsoft opened developer portals for interoperability requests, and following the Commission's 19 March 2025 connected-devices decision Apple must ship new iOS interoperability solutions (notifications, proximity pairing, audio switching) by 1 June 2026, alongside cross-ecosystem device-transfer data portability tools.
-  - WebAssembly matured as a universal portable runtime: Wasm 3.0 was declared the live standard on 17 September 2025 (adding Wasm GC, multiple memories, 64-bit address space and a deterministic execution profile), and the browser-facing Interop 2026 project (announced February 2026) added JSPI for Wasm and WebTransport across twenty focus areas.
-  - 3D content interoperability consolidated around OpenUSD: the Alliance for OpenUSD ratified Core Specification 1.0 in 2025 and shipped OpenUSD v26.08 in 2026, with a Physics Rigid Body spec targeted for Q2 2026 ratification and ongoing USD/glTF and Gaussian-splatting alignment work presented at SIGGRAPH 2025.
-  - Open challenges as of 2026 centre on semantic rather than transport-level interoperability, addressed by the Open Semantic Interchange (launched September 2025 by Snowflake, Salesforce and dbt Labs), plus preserving end-to-end encryption and GDPR compliance across interoperable messaging, mandatory cloud-switching interoperability under the EU Data Act, and the absence of certified compliance test suites for the still-draft agent-protocol stack.
+- Multi-layer interoperability frameworks
+- Protocol-to-protocol communication
+- ZK-based universal verification
+- Intent-based cross-chain routing
+- Atomic cross-chain transactions
 
-- ### References
-  - 1. European Commission (2026). Messaging Interoperability — Digital Markets Act (Article 7). https://digital-markets-act.ec.europa.eu/developer-portal/messaging-interoperability_en
-  - 2. European Commission (2026). Factsheet — How the DMA is making smartphones better: interoperability and data portability case studies. https://digital-markets-act.ec.europa.eu/factsheet-how-dma-making-smartphones-better-interoperability-and-data-portability-case-studies-2026-05-11_en
-  - 3. Linux Foundation (2025). Linux Foundation Launches the Agent2Agent Protocol Project to Enable Secure, Intelligent Communication Between AI Agents. https://www.linuxfoundation.org/press/linux-foundation-launches-the-agent2agent-protocol-project-to-enable-secure-intelligent-communication-between-ai-agents
-  - 4. Atlan (2026). Agent Interoperability Protocols: MCP, A2A, OSI Explained. https://atlan.com/know/agent-interoperability-protocols/
-  - 5. WebAssembly Community Group (2025). Wasm 3.0 Completed. https://webassembly.org/news/2025-09-17-wasm-3.0/
-  - 6. Alliance for OpenUSD (2026). AOUSD Drives Global 3D Data Interoperability and Agentic AI Workflows with New Core Specification Milestones. https://aousd.org/news/alliance-for-openusd-drives-global-3d-data-interoperability-and-agentic-ai-workflows-with-new-core-specification-milestones-and-members/
+### Current Landscape (2026)
 
-- ### Provenance
+- AI-agent interoperability has become the fastest-moving frontier: Anthropic's Model Context Protocol (MCP, launched November 2024) standardises agent-to-tool access, while Google's Agent2Agent (A2A, released April 2025) handles agent-to-agent discovery and delegation via "Agent Cards"; both were placed under neutral Linux Foundation governance in 2025 (A2A donated June 2025, MCP to the Agentic AI Foundation co-founded with Block and OpenAI in December 2025).
+- The agent-protocol field consolidated in August 2025 when IBM's Agent Communication Protocol (ACP) merged into A2A under LF AI & Data; the Linux Foundation roadmap targets an MCP 2.0 (Streamable HTTP, OAuth 2.1) and a first joint A2A-MCP interoperability specification through 2026, with a compliance-certification programme planned for late 2026.
+- EU Digital Markets Act enforcement drove concrete messaging interoperability: Meta's Article 7 obligations took effect (WhatsApp 7 March 2024, Messenger 7 September 2024), Phase 2 group-chat deadlines fell on 7 September 2025, and in November 2025 two third-party services, BirdyChat and Haiket, announced working interoperability with WhatsApp while preserving end-to-end encryption.
+- DMA device and OS interoperability advanced under Article 6(7): Apple, Google and Microsoft opened developer portals for interoperability requests, and following the Commission's 19 March 2025 connected-devices decision Apple must ship new iOS interoperability solutions (notifications, proximity pairing, audio switching) by 1 June 2026, alongside cross-ecosystem device-transfer data portability tools.
+- WebAssembly matured as a universal portable runtime: Wasm 3.0 was declared the live standard on 17 September 2025 (adding Wasm GC, multiple memories, 64-bit address space and a deterministic execution profile), and the browser-facing Interop 2026 project (announced February 2026) added JSPI for Wasm and WebTransport across twenty focus areas.
+- 3D content interoperability consolidated around OpenUSD: the Alliance for OpenUSD ratified Core Specification 1.0 in 2025 and shipped OpenUSD v26.08 in 2026, with a Physics Rigid Body spec targeted for Q2 2026 ratification and ongoing USD/glTF and Gaussian-splatting alignment work presented at SIGGRAPH 2025.
+- Open challenges as of 2026 centre on semantic rather than transport-level interoperability, addressed by the Open Semantic Interchange (launched September 2025 by Snowflake, Salesforce and dbt Labs), plus preserving end-to-end encryption and GDPR compliance across interoperable messaging, mandatory cloud-switching interoperability under the EU Data Act, and the absence of certified compliance test suites for the still-draft agent-protocol stack.
+
+### References
+
+- 1. European Commission (2026). Messaging Interoperability — Digital Markets Act (Article 7). https://digital-markets-act.ec.europa.eu/developer-portal/messaging-interoperability_en
+- 2. European Commission (2026). Factsheet — How the DMA is making smartphones better: interoperability and data portability case studies. https://digital-markets-act.ec.europa.eu/factsheet-how-dma-making-smartphones-better-interoperability-and-data-portability-case-studies-2026-05-11_en
+- 3. Linux Foundation (2025). Linux Foundation Launches the Agent2Agent Protocol Project to Enable Secure, Intelligent Communication Between AI Agents. https://www.linuxfoundation.org/press/linux-foundation-launches-the-agent2agent-protocol-project-to-enable-secure-intelligent-communication-between-ai-agents
+- 4. Atlan (2026). Agent Interoperability Protocols: MCP, A2A, OSI Explained. https://atlan.com/know/agent-interoperability-protocols/
+- 5. WebAssembly Community Group (2025). Wasm 3.0 Completed. https://webassembly.org/news/2025-09-17-wasm-3.0/
+- 6. Alliance for OpenUSD (2026). AOUSD Drives Global 3D Data Interoperability and Agentic AI Workflows with New Core Specification Milestones. https://aousd.org/news/alliance-for-openusd-drives-global-3d-data-interoperability-and-agentic-ai-workflows-with-new-core-specification-milestones-and-members/
+
+### Provenance
 

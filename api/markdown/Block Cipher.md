@@ -1,3 +1,2 @@
-
 A block cipher is a deterministic symmetric-key encryption algorithm that transforms a fixed-size block of plaintext, such as 128 bits, into a ciphertext block of the same size under a shared secret key, with the same key correctly reversing the transformation. Algorithms such as AES operate this way, and block ciphers are combined with a mode of operation to encrypt messages longer than a single block. As a primitive, a block cipher underlies symmetric encryption schemes and is a common building block for constructing message authentication codes.
 

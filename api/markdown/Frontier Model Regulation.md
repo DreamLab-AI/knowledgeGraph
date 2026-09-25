@@ -1,3 +1,2 @@
-
 Frontier model regulation is the emerging body of law and policy that targets the most capable AI systems specifically, imposing obligations such as pre-deployment risk assessment, capability evaluation, and incident reporting on developers of models above defined compute or capability thresholds. It is a subset of AI regulation distinguished by its focus on systemic and catastrophic risk rather than narrow, application-specific harms. Frontier model regulation has been advanced through instruments such as the EU AI Act's general-purpose AI provisions and voluntary commitments negotiated with leading labs.
 

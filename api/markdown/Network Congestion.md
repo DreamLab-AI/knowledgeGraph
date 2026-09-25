@@ -1,22 +1,30 @@
-
 Network congestion is the state in which the demand for a network's processing capacity exceeds its available throughput, causing transactions to queue and confirmation times and fees to rise. On a blockchain it occurs when the volume of pending transactions outstrips the space available in upcoming blocks, filling the mempool and triggering competitive fee bidding. Congestion exposes the scalability limits of a system and is a primary driver of fee market dynamics and layer-2 adoption. It is both a symptom of demand and a constraint that shapes protocol design.
 
 - Network congestion is the state in which demand for capacity exceeds available throughput, queuing transactions and pushing up fees. On a [[Blockchain]] it manifests as a saturated [[Mempool]] and rising [[Gas Fee]] and [[Transaction Fee]] driven by the [[Fee Market]].
-- ### Overview
+
+### Overview
+
 - Blocks have finite space, and a network can only finalise a bounded number of transactions per unit of [[Block Time]]. When submissions exceed that rate, the backlog grows.
 - Users compete for inclusion by raising fees, so congestion translates directly into higher costs and slower confirmations.
 - Persistent congestion is the clearest signal that a network has hit its [[Scalability]] ceiling.
-- ### Mechanisms
+
+### Mechanisms
+
 - Mempool accumulation: unconfirmed transactions accumulate while block producers select the highest-fee ones first.
 - Fee escalation: the [[Fee Market]] clears excess demand by pricing block space dynamically.
 - Backpressure: congestion propagates to dependent applications, causing failed or stuck transactions.
-- ### Key aspects
+
+### Key aspects
+
 - Throughput limits set by block size and [[Block Time]] determine the onset of congestion.
 - Fee volatility is a direct consequence, harming user experience and predictability.
 - Mitigations include scaling the base layer, batching, and offloading to layer-2 systems.
-- ### Applications
+
+### Applications
+
 - Fee estimation and transaction scheduling in wallets.
 - Capacity planning and protocol upgrades targeting [[Scalability]].
 - Triggering migration of activity to rollups and other off-chain execution.
-- ### Provenance
+
+### Provenance
 

@@ -1,160 +1,158 @@
-
 Domain-specific deployments of artificial intelligence technologies delivering measurable value across industries including healthcare diagnostics, autonomous vehicles, industrial automation, financial services, and personal assistants. AI Applications translate research-level techniques—machine learning models, natural language processing, computer vision—into production systems operating within real-world constraints of safety, reliability, and regulatory compliance.
 
-- ### Semantic Classification
+### Semantic Classification
 
-- ### Content
-  ## Compositional Relationships (Components)
-  ```manchester
-  SubClassOf(ai:AIApplications
-    ObjectSomeValuesFrom(ai:hasPart ai:ImageRecognition))
+### Content
 
-  SubClassOf(ai:AIApplications
-    ObjectSomeValuesFrom(ai:hasPart ai:RecommendationSystem))
+## Compositional Relationships (Components)
+```manchester
+SubClassOf(ai:AIApplications
+  ObjectSomeValuesFrom(ai:hasPart ai:ImageRecognition))
 
-  SubClassOf(ai:AIApplications
-    ObjectSomeValuesFrom(ai:hasPart ai:FraudDetection))
+SubClassOf(ai:AIApplications
+  ObjectSomeValuesFrom(ai:hasPart ai:RecommendationSystem))
 
-  SubClassOf(ai:AIApplications
-    ObjectSomeValuesFrom(ai:hasPart ai:AutonomousNavigation))
+SubClassOf(ai:AIApplications
+  ObjectSomeValuesFrom(ai:hasPart ai:FraudDetection))
 
-  SubClassOf(ai:AIApplications
-    ObjectSomeValuesFrom(ai:hasPart ai:SpeechRecognition))
+SubClassOf(ai:AIApplications
+  ObjectSomeValuesFrom(ai:hasPart ai:AutonomousNavigation))
 
-  SubClassOf(ai:AIApplications
-    ObjectSomeValuesFrom(ai:hasPart ai:SentimentAnalysis))
+SubClassOf(ai:AIApplications
+  ObjectSomeValuesFrom(ai:hasPart ai:SpeechRecognition))
 
-  SubClassOf(ai:AIApplications
-    ObjectSomeValuesFrom(ai:hasPart ai:PredictiveAnalytics))
+SubClassOf(ai:AIApplications
+  ObjectSomeValuesFrom(ai:hasPart ai:SentimentAnalysis))
 
-  SubClassOf(ai:AIApplications
-    ObjectSomeValuesFrom(ai:hasPart ai:CodeSynthesis))
-  ```
-  ## Dependency Relationships
-  ```manchester
-  SubClassOf(ai:AIApplications
-    ObjectSomeValuesFrom(ai:requires ai:AIGovernance))
+SubClassOf(ai:AIApplications
+  ObjectSomeValuesFrom(ai:hasPart ai:PredictiveAnalytics))
 
-  SubClassOf(ai:AIApplications
-    ObjectSomeValuesFrom(ai:requires ai:AIRiskManagement))
+SubClassOf(ai:AIApplications
+  ObjectSomeValuesFrom(ai:hasPart ai:CodeSynthesis))
+```
+## Dependency Relationships
+```manchester
+SubClassOf(ai:AIApplications
+  ObjectSomeValuesFrom(ai:requires ai:AIGovernance))
 
-  SubClassOf(ai:AIApplications
-    ObjectSomeValuesFrom(ai:requires ai:TrainingData))
+SubClassOf(ai:AIApplications
+  ObjectSomeValuesFrom(ai:requires ai:AIRiskManagement))
 
-  SubClassOf(ai:AIApplications
-    ObjectSomeValuesFrom(ai:requires ai:GPUCompute))
+SubClassOf(ai:AIApplications
+  ObjectSomeValuesFrom(ai:requires ai:TrainingData))
 
-  SubClassOf(ai:AIApplications
-    ObjectSomeValuesFrom(ai:dependsOn ai:DeepLearning))
+SubClassOf(ai:AIApplications
+  ObjectSomeValuesFrom(ai:requires ai:GPUCompute))
 
-  SubClassOf(ai:AIApplications
-    ObjectSomeValuesFrom(ai:dependsOn ai:NaturalLanguageProcessing))
+SubClassOf(ai:AIApplications
+  ObjectSomeValuesFrom(ai:dependsOn ai:DeepLearning))
 
-  SubClassOf(ai:AIApplications
-    ObjectSomeValuesFrom(ai:dependsOn ai:ComputerVision))
-  ```
-  ## Capability Relationships
-  ```manchester
-  SubClassOf(ai:AIApplications
-    ObjectSomeValuesFrom(ai:enables ai:AutonomousRobot))
+SubClassOf(ai:AIApplications
+  ObjectSomeValuesFrom(ai:dependsOn ai:NaturalLanguageProcessing))
 
-  SubClassOf(ai:AIApplications
-    ObjectSomeValuesFrom(ai:enables ai:AutonomousVehicle))
+SubClassOf(ai:AIApplications
+  ObjectSomeValuesFrom(ai:dependsOn ai:ComputerVision))
+```
+## Capability Relationships
+```manchester
+SubClassOf(ai:AIApplications
+  ObjectSomeValuesFrom(ai:enables ai:AutonomousRobot))
 
-  SubClassOf(ai:AIApplications
-    ObjectSomeValuesFrom(ai:enables ai:IntelligentAutomation))
+SubClassOf(ai:AIApplications
+  ObjectSomeValuesFrom(ai:enables ai:AutonomousVehicle))
 
-  SubClassOf(ai:AIApplications
-    ObjectSomeValuesFrom(ai:enables ai:DecisionSupport))
+SubClassOf(ai:AIApplications
+  ObjectSomeValuesFrom(ai:enables ai:IntelligentAutomation))
 
-  SubClassOf(ai:AIApplications
-    ObjectSomeValuesFrom(ai:enables ai:QualityControl))
+SubClassOf(ai:AIApplications
+  ObjectSomeValuesFrom(ai:enables ai:DecisionSupport))
 
-  SubClassOf(ai:AIApplications
-    ObjectSomeValuesFrom(ai:enables ai:SupplyChainOptimisation))
-  ```
-  ## Implementation Relationships
-  ```manchester
-  SubClassOf(ai:AIApplications
-    ObjectSomeValuesFrom(ai:implements ai:MachineLearning))
+SubClassOf(ai:AIApplications
+  ObjectSomeValuesFrom(ai:enables ai:QualityControl))
 
-  SubClassOf(ai:AIApplications
-    ObjectSomeValuesFrom(ai:implements ai:NaturalLanguageProcessing))
+SubClassOf(ai:AIApplications
+  ObjectSomeValuesFrom(ai:enables ai:SupplyChainOptimisation))
+```
+## Implementation Relationships
+```manchester
+SubClassOf(ai:AIApplications
+  ObjectSomeValuesFrom(ai:implements ai:MachineLearning))
 
-  SubClassOf(ai:AIApplications
-    ObjectSomeValuesFrom(ai:implements ai:ComputerVision))
+SubClassOf(ai:AIApplications
+  ObjectSomeValuesFrom(ai:implements ai:NaturalLanguageProcessing))
 
-  SubClassOf(ai:AIApplications
-    ObjectSomeValuesFrom(ai:implements ai:ReinforcementLearning))
+SubClassOf(ai:AIApplications
+  ObjectSomeValuesFrom(ai:implements ai:ComputerVision))
 
-  SubClassOf(ai:AIApplications
-    ObjectSomeValuesFrom(ai:implements ai:GenerativeAI))
-  ```
-  ## Reduction Relationships
-  ```manchester
-  SubClassOf(ai:AIApplications
-    ObjectSomeValuesFrom(ai:reducesTo ai:MachineLearningModel))
+SubClassOf(ai:AIApplications
+  ObjectSomeValuesFrom(ai:implements ai:ReinforcementLearning))
 
-  SubClassOf(ai:AIApplications
-    ObjectSomeValuesFrom(ai:reducesTo ai:NeuralNetwork))
+SubClassOf(ai:AIApplications
+  ObjectSomeValuesFrom(ai:implements ai:GenerativeAI))
+```
+## Reduction Relationships
+```manchester
+SubClassOf(ai:AIApplications
+  ObjectSomeValuesFrom(ai:reducesTo ai:MachineLearningModel))
 
-  SubClassOf(ai:AIApplications
-    ObjectSomeValuesFrom(ai:reducesTo ai:TrainedModel))
+SubClassOf(ai:AIApplications
+  ObjectSomeValuesFrom(ai:reducesTo ai:NeuralNetwork))
 
-  SubClassOf(ai:AIApplications
-    ObjectSomeValuesFrom(ai:reducesTo ai:InferenceEndpoint))
+SubClassOf(ai:AIApplications
+  ObjectSomeValuesFrom(ai:reducesTo ai:TrainedModel))
 
-  SubClassOf(ai:AIApplications
-    ObjectSomeValuesFrom(ai:reducesTo ai:FeatureRepresentation))
+SubClassOf(ai:AIApplications
+  ObjectSomeValuesFrom(ai:reducesTo ai:InferenceEndpoint))
 
-  SubClassOf(ai:AIApplications
-    ObjectSomeValuesFrom(ai:reducesTo ai:DecisionFunction))
+SubClassOf(ai:AIApplications
+  ObjectSomeValuesFrom(ai:reducesTo ai:FeatureRepresentation))
 
-  SubClassOf(ai:AIApplications
-    ObjectSomeValuesFrom(ai:supports ai:Personalisation))
+SubClassOf(ai:AIApplications
+  ObjectSomeValuesFrom(ai:reducesTo ai:DecisionFunction))
 
-  SubClassOf(ai:AIApplications
-    ObjectSomeValuesFrom(ai:supports ai:SurveillanceSystems))
+SubClassOf(ai:AIApplications
+  ObjectSomeValuesFrom(ai:supports ai:Personalisation))
 
-  SubClassOf(ai:AIApplications
-    ObjectSomeValuesFrom(ai:uses ai:TransferLearning))
+SubClassOf(ai:AIApplications
+  ObjectSomeValuesFrom(ai:supports ai:SurveillanceSystems))
 
-  SubClassOf(ai:AIApplications
-    ObjectSomeValuesFrom(ai:uses ai:HyperparameterTuning))
+SubClassOf(ai:AIApplications
+  ObjectSomeValuesFrom(ai:uses ai:TransferLearning))
 
-  SubClassOf(ai:AIApplications
-    ObjectSomeValuesFrom(ai:uses ai:ModelDeployment))
+SubClassOf(ai:AIApplications
+  ObjectSomeValuesFrom(ai:uses ai:HyperparameterTuning))
 
-  SubClassOf(ai:AIApplications
-    ObjectSomeValuesFrom(ai:dependsOn ai:DeepLearningFramework))
-  ```
+SubClassOf(ai:AIApplications
+  ObjectSomeValuesFrom(ai:uses ai:ModelDeployment))
 
-  ## Mathematical and Computational Foundations
+SubClassOf(ai:AIApplications
+  ObjectSomeValuesFrom(ai:dependsOn ai:DeepLearningFramework))
+```
 
-  Formally, an AI Application can be modelled as a composition of learned functions $f_\theta: \mathcal{X} \rightarrow \mathcal{Y}$ where $\mathcal{X}$ is the input domain (pixels, tokens, sensor readings, structured features) and $\mathcal{Y}$ is the output space (labels, actions, generated content, anomaly scores). The parameters $\theta$ are estimated from [[Training Data]] $\mathcal{D} = \{(x_i, y_i)\}_{i=1}^N$ by minimising a task-specific loss $\mathcal{L}(\theta; \mathcal{D})$ using first-order optimisers (SGD, Adam, AdamW). In [[Deep Learning]]-based applications, $f_\theta$ is a deep [[Neural Network]] — a hierarchical composition of affine transformations and non-linear activation functions — with depth and width scaling empirically with dataset size and task complexity following the neural scaling laws described by Kaplan et al. (2020). In [[Reinforcement Learning]] applications the framework becomes a Markov Decision Process (MDP) $(\mathcal{S}, \mathcal{A}, \mathcal{T}, \mathcal{R}, \gamma)$ where a policy $\pi_\theta: \mathcal{S} \rightarrow \Delta(\mathcal{A})$ is optimised to maximise expected cumulative reward; [[Autonomous Vehicle]] planning and [[Industrial Robotics]] control both reduce to this formalism.
+## Mathematical and Computational Foundations
 
-  The engineering of production AI Applications introduces additional constraints not present in research: latency budgets (e.g., fraud detection at sub-millisecond inference), memory footprints (on-device models for mobile deployment), throughput requirements (millions of recommendations per second), and strict reliability SLAs. These are addressed through [[Hyperparameter Tuning]], model compression (quantisation to INT8/INT4, pruning, knowledge distillation), hardware-aware neural architecture search, and inference optimisation via TensorRT, ONNX Runtime, and specialised AI accelerator chips. [[Transfer Learning]] from large pre-trained foundation models dramatically reduces the data and compute required to enter a new domain: fine-tuning a 7-billion-parameter model with 1,000 domain examples can match a task-specific model trained from scratch on 100,000 examples, a finding central to the success of [[Large Language Models]] across diverse enterprise applications.
+Formally, an AI Application can be modelled as a composition of learned functions $f_\theta: \mathcal{X} \rightarrow \mathcal{Y}$ where $\mathcal{X}$ is the input domain (pixels, tokens, sensor readings, structured features) and $\mathcal{Y}$ is the output space (labels, actions, generated content, anomaly scores). The parameters $\theta$ are estimated from [[Training Data]] $\mathcal{D} = \{(x_i, y_i)\}_{i=1}^N$ by minimising a task-specific loss $\mathcal{L}(\theta; \mathcal{D})$ using first-order optimisers (SGD, Adam, AdamW). In [[Deep Learning]]-based applications, $f_\theta$ is a deep [[Neural Network]] — a hierarchical composition of affine transformations and non-linear activation functions — with depth and width scaling empirically with dataset size and task complexity following the neural scaling laws described by Kaplan et al. (2020). In [[Reinforcement Learning]] applications the framework becomes a Markov Decision Process (MDP) $(\mathcal{S}, \mathcal{A}, \mathcal{T}, \mathcal{R}, \gamma)$ where a policy $\pi_\theta: \mathcal{S} \rightarrow \Delta(\mathcal{A})$ is optimised to maximise expected cumulative reward; [[Autonomous Vehicle]] planning and [[Industrial Robotics]] control both reduce to this formalism.
 
-  Uncertainty quantification is a growing requirement in high-stakes AI Applications. Conformal prediction provides distribution-free coverage guarantees; Bayesian [[Neural Network]] methods quantify epistemic uncertainty; and temperature scaling offers post-hoc calibration. In healthcare AI, regulatory bodies increasingly require that classifiers provide calibrated confidence scores alongside predictions, not merely point estimates, to support clinical [[Decision Support]] workflows. The [[Explainable AI]] subfield — encompassing saliency maps (GradCAM, SHAP, LIME), counterfactual explanations, and inherently interpretable model families (decision trees, sparse linear models) — provides the tooling to bridge statistical model outputs and human-interpretable rationale.
+The engineering of production AI Applications introduces additional constraints not present in research: latency budgets (e.g., fraud detection at sub-millisecond inference), memory footprints (on-device models for mobile deployment), throughput requirements (millions of recommendations per second), and strict reliability SLAs. These are addressed through [[Hyperparameter Tuning]], model compression (quantisation to INT8/INT4, pruning, knowledge distillation), hardware-aware neural architecture search, and inference optimisation via TensorRT, ONNX Runtime, and specialised AI accelerator chips. [[Transfer Learning]] from large pre-trained foundation models dramatically reduces the data and compute required to enter a new domain: fine-tuning a 7-billion-parameter model with 1,000 domain examples can match a task-specific model trained from scratch on 100,000 examples, a finding central to the success of [[Large Language Models]] across diverse enterprise applications.
 
-  ## About
+Uncertainty quantification is a growing requirement in high-stakes AI Applications. Conformal prediction provides distribution-free coverage guarantees; Bayesian [[Neural Network]] methods quantify epistemic uncertainty; and temperature scaling offers post-hoc calibration. In healthcare AI, regulatory bodies increasingly require that classifiers provide calibrated confidence scores alongside predictions, not merely point estimates, to support clinical [[Decision Support]] workflows. The [[Explainable AI]] subfield — encompassing saliency maps (GradCAM, SHAP, LIME), counterfactual explanations, and inherently interpretable model families (decision trees, sparse linear models) — provides the tooling to bridge statistical model outputs and human-interpretable rationale.
 
+## About
 
+AI Applications constitute the outermost layer of the artificial intelligence stack — the place where research algorithms, massive datasets, and computational infrastructure meet real-world problems and real-world users. The category is deliberately broad: it encompasses both narrow, task-specific deployments (a model that identifies diabetic retinopathy from retinal scans with AUC > 0.99) and broad, multi-task platforms (general-purpose LLM assistants serving hundreds of millions of users simultaneously). What unifies all entries in this class is the requirement that a [[Machine Learning]] or related AI technique be embedded in a system that is used, monitored, and accountable to external stakeholders. This accountability dimension is the critical distinguishing feature between a research model and an AI Application: the latter must satisfy requirements around [[Explainable AI]], logging, fairness audits, drift monitoring, and incident response that simply do not apply to laboratory benchmarks.
 
-  AI Applications constitute the outermost layer of the artificial intelligence stack — the place where research algorithms, massive datasets, and computational infrastructure meet real-world problems and real-world users. The category is deliberately broad: it encompasses both narrow, task-specific deployments (a model that identifies diabetic retinopathy from retinal scans with AUC > 0.99) and broad, multi-task platforms (general-purpose LLM assistants serving hundreds of millions of users simultaneously). What unifies all entries in this class is the requirement that a [[Machine Learning]] or related AI technique be embedded in a system that is used, monitored, and accountable to external stakeholders. This accountability dimension is the critical distinguishing feature between a research model and an AI Application: the latter must satisfy requirements around [[Explainable AI]], logging, fairness audits, drift monitoring, and incident response that simply do not apply to laboratory benchmarks.
+The trajectory of AI Applications has shifted dramatically since 2022. The release of large-scale foundation models — GPT-4 (OpenAI, 2023), Claude 3 (Anthropic, 2024), Gemini 1.5 (Google DeepMind, 2024) — transformed the deployment calculus by providing pre-trained representations that could be adapted to new tasks with relatively little domain-specific data via [[Transfer Learning]] and prompt engineering, dramatically lowering the entry barrier for new verticals. By early 2026, 71 % of organisations reported regularly using [[Generative AI]] in at least one business function, up from 65 % in early 2024, and 80 % of enterprises surveyed by Gartner in Q1 2026 reported at least one production agentic AI application. The AI market reached approximately $390.91 billion in 2025 and is projected to reach $3.49 trillion by 2033, with AI applications in finance alone expected to reach a $21.2 billion market in 2026.
 
-  The trajectory of AI Applications has shifted dramatically since 2022. The release of large-scale foundation models — GPT-4 (OpenAI, 2023), Claude 3 (Anthropic, 2024), Gemini 1.5 (Google DeepMind, 2024) — transformed the deployment calculus by providing pre-trained representations that could be adapted to new tasks with relatively little domain-specific data via [[Transfer Learning]] and prompt engineering, dramatically lowering the entry barrier for new verticals. By early 2026, 71 % of organisations reported regularly using [[Generative AI]] in at least one business function, up from 65 % in early 2024, and 80 % of enterprises surveyed by Gartner in Q1 2026 reported at least one production agentic AI application. The AI market reached approximately $390.91 billion in 2025 and is projected to reach $3.49 trillion by 2033, with AI applications in finance alone expected to reach a $21.2 billion market in 2026.
+The shift toward agentic deployments — [[Autonomous AI Agents]] that orchestrate multi-step workflows, call external APIs, and take consequential actions — represents the most significant architectural change in the Applications class. By end-2026, Gartner predicts that 40 % of enterprise applications will embed task-specific AI agents, up from less than 5 % in 2025. This creates qualitatively new governance challenges: agentic systems can take irreversible actions, accumulate capabilities, and interact with one another in ways that are difficult to audit. [[AI Risk Management]] frameworks are therefore evolving to address not just individual model outputs but chains of AI decision-making.
 
-  The shift toward agentic deployments — [[Autonomous AI Agents]] that orchestrate multi-step workflows, call external APIs, and take consequential actions — represents the most significant architectural change in the Applications class. By end-2026, Gartner predicts that 40 % of enterprise applications will embed task-specific AI agents, up from less than 5 % in 2025. This creates qualitatively new governance challenges: agentic systems can take irreversible actions, accumulate capabilities, and interact with one another in ways that are difficult to audit. [[AI Risk Management]] frameworks are therefore evolving to address not just individual model outputs but chains of AI decision-making.
+## Components / Architecture
 
-  ## Components / Architecture
-
-  - **Perception subsystems**: [[Computer Vision]] pipelines (convolutional and [[Transformer]]-based encoders) for image, video, and point-cloud processing; [[Speech Recognition]] acoustic models feeding NLP decoders; multimodal encoders combining vision and text.
-  - **Reasoning and generation subsystems**: [[Large Language Models]] for language tasks; [[Reinforcement Learning]] agents for sequential decision-making; [[Generative AI]] modules (diffusion, VAE, GAN) for content generation; [[Predictive Analytics]] ensembles for tabular forecasting.
-  - **Action subsystems**: robotic control laws integrating [[Robotics Perception]] and motion planning; API-calling agents that execute plans by invoking external services; [[Autonomous Navigation]] stacks combining SLAM with learned policies.
-  - **Data infrastructure**: [[Training Data]] pipelines including labelling, augmentation, and version control; feature stores for real-time serving; embedding databases for retrieval-augmented generation.
-  - **MLOps and deployment**: model registry, A/B testing infrastructure, drift detectors, shadow-mode rollouts; containerised serving (GPU-accelerated inference clusters).
-  - **Governance layer**: audit logs, fairness monitoring dashboards, incident response playbooks; compliance with [[GDPR]], EU AI Act, [[ISO/IEC 42001:2023]], [[NIST AI RMF]].
+- **Perception subsystems**: [[Computer Vision]] pipelines (convolutional and [[Transformer]]-based encoders) for image, video, and point-cloud processing; [[Speech Recognition]] acoustic models feeding NLP decoders; multimodal encoders combining vision and text.
+- **Reasoning and generation subsystems**: [[Large Language Models]] for language tasks; [[Reinforcement Learning]] agents for sequential decision-making; [[Generative AI]] modules (diffusion, VAE, GAN) for content generation; [[Predictive Analytics]] ensembles for tabular forecasting.
+- **Action subsystems**: robotic control laws integrating [[Robotics Perception]] and motion planning; API-calling agents that execute plans by invoking external services; [[Autonomous Navigation]] stacks combining SLAM with learned policies.
+- **Data infrastructure**: [[Training Data]] pipelines including labelling, augmentation, and version control; feature stores for real-time serving; embedding databases for retrieval-augmented generation.
+- **MLOps and deployment**: model registry, A/B testing infrastructure, drift detectors, shadow-mode rollouts; containerised serving (GPU-accelerated inference clusters).
+- **Governance layer**: audit logs, fairness monitoring dashboards, incident response playbooks; compliance with [[GDPR]], EU AI Act, [[ISO/IEC 42001:2023]], [[NIST AI RMF]].
 
   ## Use Cases / Major Families
 
@@ -210,8 +208,6 @@ Domain-specific deployments of artificial intelligence technologies delivering m
 
   The theoretical foundations of AI Applications span decision theory, statistical learning theory, and optimisation, with seminal contributions from Vapnik and Chervonenkis (VC theory, 1971), Rumelhart, Hinton and Williams (backpropagation, 1986), LeCun et al. (convolutional networks, 1989), and Vaswani et al. ("Attention Is All You Need", 2017). The application-facing literature is dominated by empirical papers from NeurIPS, ICML, ICLR, CVPR, and EMNLP. Systems-oriented work appears in OSDI, SOSP, and MLSys. Key benchmarks structuring the field include ImageNet (vision), GLUE/SuperGLUE/MMLU (NLP), Atari and MuJoCo (RL), and HumanEval (code generation). Research groups at Google DeepMind, OpenAI, Anthropic, Google Brain, Meta FAIR, and Microsoft Research have driven the large-model paradigm, while academic groups at Stanford HAI, MIT CSAIL, CMU, Oxford, Cambridge, Edinburgh, and UCL have contributed foundational and critical analyses. Key application-domain literature includes Esteva et al. (2017) on skin cancer detection, Gulshan et al. (2016) on diabetic retinopathy, Jumper et al. (2021) on protein structure prediction with AlphaFold, and Silver et al. (2017, 2018) on mastering Go and chess through self-play [[Reinforcement Learning]]. Cross-disciplinary venues including the ACM FAccT conference (Fairness, Accountability, and Transparency) and the AIES symposium (AI, Ethics, and Society) address the governance and sociotechnical dimensions of deployed AI Applications.
 
-
-
   ## Current Landscape (2026)
 
   The 2026 landscape is characterised by three concurrent transitions: (1) from single-model deployments to compound AI systems and agentic pipelines; (2) from horizontal foundation models to vertically fine-tuned domain specialists; and (3) from user-initiated to proactive, goal-directed AI that initiates tasks autonomously. Enterprise spending on AI reached $37 billion in 2025, with agentic AI in financial services projected to drive 200-2000 % productivity gains in high-impact workflows. The vertical AI market (healthcare, legal, government, engineering) reached $3.5 billion in 2025, triple the prior year's total.
@@ -222,11 +218,11 @@ Domain-specific deployments of artificial intelligence technologies delivering m
 
   The UK is the third-largest AI market globally by investment, after the US and China, with London hosting Europe's densest cluster of AI companies. The AI Safety Institute (AISI), established at Bletchley Park in November 2023, conducts frontier-model evaluations and publishes safety reports. Key academic centres include:
 
-  - **University of Edinburgh**: home to the Bayes Centre, ELIAI, the National Robotarium (Edinburgh/Heriot-Watt), and the UKRI Centre for Doctoral Training in Biomedical AI; Edinburgh Clinical NLP participates in leading clinical shared tasks.
-  - **Imperial College London**: the Dyson Robotics Lab, Data Science Institute, UKRI AI for Healthcare CDT, and partnership with the London AI Technology Centre.
-  - **UCL**: leads the UKRI national generative AI hub, holds a Google DeepMind academic partnership, and offers the first MRes in AI-Enabled Healthcare.
-  - **University of Cambridge**: hosts the Leverhulme Centre for the Future of Intelligence and the Cambridge Centre for AI in Medicine (CCAIM).
-  - **University of Manchester**: the Alan Turing Institute partnership node; strong history in logic-based AI and symbolic-neural integration; proximity to the Northern health tech corridor.
+- **University of Edinburgh**: home to the Bayes Centre, ELIAI, the National Robotarium (Edinburgh/Heriot-Watt), and the UKRI Centre for Doctoral Training in Biomedical AI; Edinburgh Clinical NLP participates in leading clinical shared tasks.
+- **Imperial College London**: the Dyson Robotics Lab, Data Science Institute, UKRI AI for Healthcare CDT, and partnership with the London AI Technology Centre.
+- **UCL**: leads the UKRI national generative AI hub, holds a Google DeepMind academic partnership, and offers the first MRes in AI-Enabled Healthcare.
+- **University of Cambridge**: hosts the Leverhulme Centre for the Future of Intelligence and the Cambridge Centre for AI in Medicine (CCAIM).
+- **University of Manchester**: the Alan Turing Institute partnership node; strong history in logic-based AI and symbolic-neural integration; proximity to the Northern health tech corridor.
 
   In Northern England, Sheffield Robotics (University of Sheffield) is a nationally recognised centre for safe autonomous systems, the AMRC (Advanced Manufacturing Research Centre) at Rotherham deploys AI-driven manufacturing optimisation at industrial scale, and Leeds combines medical imaging AI (via the Leeds Teaching Hospitals NHS Trust partnership) with data science through the Leeds Institute for Data Analytics. Newcastle University and the National Innovation Centre for Data (NICD) focus on public-sector AI adoption.
 
@@ -256,14 +252,14 @@ Domain-specific deployments of artificial intelligence technologies delivering m
 
   ## Future Directions (2026–2030)
 
-  - **Multimodal reasoning agents**: systems that perceive, reason across text, vision, audio, and action, and execute multi-step plans with minimal human supervision; early examples include GPT-4o and Gemini 1.5 Pro, with more capable successors expected. These build on [[Transformer]] architectures that natively encode multiple input modalities via unified attention mechanisms.
-  - **Embodied AI**: closing the sim-to-real gap for manipulation and navigation, enabled by [[Reinforcement Learning]] trained in simulation and adapted via [[Transfer Learning]] to physical robots; commercial deployment in logistics and elder-care. [[Autonomous Mobile Robots]] and [[Industrial Robotics]] with natural language interfaces will execute [[Code Synthesis]]-level task specification.
-  - **AI for science**: accelerating materials discovery, protein design, climate modelling, and drug development; [[Drug Discovery]] platforms using generative molecular design (Insilico Medicine, Recursion Pharmaceuticals) are advancing candidate molecules into clinical trials, reducing the time from target identification to IND filing from approximately 5 years to under 18 months.
-  - **Edge AI deployment**: inference on low-power devices (smartphones, IoT sensors, wearables) using quantised and pruned models, reducing cloud dependency and privacy exposure; [[Neural Network]] compression to sub-1B parameter models that run on-device eliminates latency and data-egress costs.
-  - **Governance and assurance maturity**: development of AI incident databases (AI Incident Database, AIAAIC), third-party audit ecosystems (KPMG, Deloitte AI assurance practices), model cards as regulatory artefacts required by [[ISO/IEC 42001:2023]], and real-time monitoring of deployed model behaviour via drift detection and adversarial robustness testing.
-  - **Regulatory harmonisation**: convergence between EU AI Act, UK principles-based approach, US Executive Order 14110 (Biden 2023) / successor frameworks (Trump 2025), and emerging OECD and G7 standards bodies; [[NIST AI RMF]] updates expected to address agentic systems and foundation models.
-  - **Sovereign AI infrastructure**: national strategies to build domestic AI compute capacity (UK National AI Research Resource; France's national GPU cluster; UAE's AI infrastructure investment) to reduce geopolitical dependency on US hypercloud providers.
-  - **AI-native enterprise architecture**: the emergence of AI-first application development paradigms in which [[Autonomous AI Agents]] orchestrate all business logic, with human-in-the-loop oversight at defined checkpoints rather than throughout the execution — a fundamentally different pattern from the current model of AI assistance within human-driven workflows.
+- **Multimodal reasoning agents**: systems that perceive, reason across text, vision, audio, and action, and execute multi-step plans with minimal human supervision; early examples include GPT-4o and Gemini 1.5 Pro, with more capable successors expected. These build on [[Transformer]] architectures that natively encode multiple input modalities via unified attention mechanisms.
+- **Embodied AI**: closing the sim-to-real gap for manipulation and navigation, enabled by [[Reinforcement Learning]] trained in simulation and adapted via [[Transfer Learning]] to physical robots; commercial deployment in logistics and elder-care. [[Autonomous Mobile Robots]] and [[Industrial Robotics]] with natural language interfaces will execute [[Code Synthesis]]-level task specification.
+- **AI for science**: accelerating materials discovery, protein design, climate modelling, and drug development; [[Drug Discovery]] platforms using generative molecular design (Insilico Medicine, Recursion Pharmaceuticals) are advancing candidate molecules into clinical trials, reducing the time from target identification to IND filing from approximately 5 years to under 18 months.
+- **Edge AI deployment**: inference on low-power devices (smartphones, IoT sensors, wearables) using quantised and pruned models, reducing cloud dependency and privacy exposure; [[Neural Network]] compression to sub-1B parameter models that run on-device eliminates latency and data-egress costs.
+- **Governance and assurance maturity**: development of AI incident databases (AI Incident Database, AIAAIC), third-party audit ecosystems (KPMG, Deloitte AI assurance practices), model cards as regulatory artefacts required by [[ISO/IEC 42001:2023]], and real-time monitoring of deployed model behaviour via drift detection and adversarial robustness testing.
+- **Regulatory harmonisation**: convergence between EU AI Act, UK principles-based approach, US Executive Order 14110 (Biden 2023) / successor frameworks (Trump 2025), and emerging OECD and G7 standards bodies; [[NIST AI RMF]] updates expected to address agentic systems and foundation models.
+- **Sovereign AI infrastructure**: national strategies to build domestic AI compute capacity (UK National AI Research Resource; France's national GPU cluster; UAE's AI infrastructure investment) to reduce geopolitical dependency on US hypercloud providers.
+- **AI-native enterprise architecture**: the emergence of AI-first application development paradigms in which [[Autonomous AI Agents]] orchestrate all business logic, with human-in-the-loop oversight at defined checkpoints rather than throughout the execution — a fundamentally different pattern from the current model of AI assistance within human-driven workflows.
 
   ## Benchmarks and Evaluation Frameworks for AI Applications
 
@@ -340,5 +336,5 @@ Domain-specific deployments of artificial intelligence technologies delivering m
 
   [[AI Governance]] standards are increasingly converging with technical standards: [[ISO/IEC 42001:2023]] cross-references [[ISO/IEC 22989:2022]] (AI concepts and terminology), ISO/IEC 23053:2022 (AI frameworks), and ISO/IEC 23894:2023 (AI risk management), creating a coherent standards family for AI Applications governance. The IEEE P2863 standard on organisational AI governance frameworks and the ITU Focus Group on AI for Autonomous and Assisted Driving both contribute sector-specific guidance.
 
-- ### Provenance
+### Provenance
 

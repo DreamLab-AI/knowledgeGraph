@@ -1,140 +1,142 @@
-
 The United Kingdom's national institute for data science and artificial intelligence, founded in 2015 and headquartered in London, convening research across partner universities and applying AI and data science methods to challenges in health, defence, security, and the public sector.
 
-- ### Semantic Classification
+### Semantic Classification
 
-- ### Content
-  ## Compositional Relationships (Components)
-      SubClassOf(ai:AlanTuringInstitute
-        ObjectSomeValuesFrom(ai:hasPart ai:AISafetyResearch))
-      SubClassOf(ai:AlanTuringInstitute
-        ObjectSomeValuesFrom(ai:hasPart ai:AlgorithmicFairness))
-      SubClassOf(ai:AlanTuringInstitute
-        ObjectSomeValuesFrom(ai:hasPart ai:ExplainableAI))
-      SubClassOf(ai:AlanTuringInstitute
-        ObjectSomeValuesFrom(ai:hasPart ai:PrivacyPreservingMachineLearning))
-      SubClassOf(ai:AlanTuringInstitute
-        ObjectSomeValuesFrom(ai:hasPart ai:ProbabilisticProgramming))
-      SubClassOf(ai:AlanTuringInstitute
-        ObjectSomeValuesFrom(ai:hasPart ai:FundamentalResearch))
-      SubClassOf(ai:AlanTuringInstitute
-        ObjectSomeValuesFrom(ai:hasPart ai:EnrichmentScheme))
-  ## Dependency Relationships
-      SubClassOf(ai:AlanTuringInstitute
-        ObjectSomeValuesFrom(ai:requires ai:UniversityCollegeLondon))
-      SubClassOf(ai:AlanTuringInstitute
-        ObjectSomeValuesFrom(ai:requires ai:UniversityOfOxford))
-      SubClassOf(ai:AlanTuringInstitute
-        ObjectSomeValuesFrom(ai:requires ai:UniversityOfCambridge))
-      SubClassOf(ai:AlanTuringInstitute
-        ObjectSomeValuesFrom(ai:requires ai:UKResearchAndInnovation))
-      SubClassOf(ai:AlanTuringInstitute
-        ObjectSomeValuesFrom(ai:requires ai:UniversityOfEdinburgh))
-      SubClassOf(ai:AlanTuringInstitute
-        ObjectSomeValuesFrom(ai:requires ai:ImperialCollegeLondon))
-  ## Capability Relationships
-      SubClassOf(ai:AlanTuringInstitute
-        ObjectSomeValuesFrom(ai:enables ai:ArtificialIntelligence))
-      SubClassOf(ai:AlanTuringInstitute
-        ObjectSomeValuesFrom(ai:enables ai:MachineLearningDiscipline))
-      SubClassOf(ai:AlanTuringInstitute
-        ObjectSomeValuesFrom(ai:enables ai:ResponsibleAI))
-      SubClassOf(ai:AlanTuringInstitute
-        ObjectSomeValuesFrom(ai:enables ai:AIEthics))
-      SubClassOf(ai:AlanTuringInstitute
-        ObjectSomeValuesFrom(ai:enables ai:DataScience))
-  ## Implementation Relationships
-      SubClassOf(ai:AlanTuringInstitute
-        ObjectSomeValuesFrom(ai:implements ai:UKNationalAIStrategy))
-      SubClassOf(ai:AlanTuringInstitute
-        ObjectSomeValuesFrom(ai:implements ai:OpenDataPrinciples))
-      SubClassOf(ai:AlanTuringInstitute
-        ObjectSomeValuesFrom(ai:implements ai:ReproducibleResearch))
-  ## Reduction Relationships
-      SubClassOf(ai:AlanTuringInstitute
-        ObjectSomeValuesFrom(ai:reducesTo ai:ResearchInstitution))
-      SubClassOf(ai:AlanTuringInstitute
-        ObjectSomeValuesFrom(ai:reducesTo ai:AIGovernanceBody))
+### Content
 
-  ## About
-    The Alan Turing Institute (ATI) was founded in 2015 as the UK's national institute for data science, with its remit formally expanded in 2017 to encompass [[Artificial Intelligence]] following the publication of the Hall-Pesenti Independent Review of AI. Named after mathematician and computer scientist [[Alan Turing]] — whose work at Bletchley Park during the Second World War laid foundational groundwork for digital computing and cryptography — the Institute operates from the British Library in London under charitable status. Its core funding of £100 million over five years was renewed in 2024 by UKRI, which also scrutinises the Institute's value for money and strategic direction. The ATI convenes research across thirteen university partners and a growing network of industrial and governmental collaborators, aiming to ensure that the UK remains at the international forefront of [[Data Science]] and [[Machine Learning Discipline]] research. In 2025 and 2026, the Institute underwent significant strategic recalibration following a critical UKRI review that found it had "strong foundations and clear evidence of scientific excellence, but must articulate a clear strategic purpose and strengthen delivery." The appointment of George Williamson — former head of His Majesty's Government Communications Centre — as CEO in February 2026 signalled a decisive government-backed pivot toward [[Defence and Security]] and [[National Security]] applications, aligning the Institute more closely with the objectives of the UK's National AI Strategy and the goals articulated by Technology Secretary Peter Kyle.
+## Compositional Relationships (Components)
+    SubClassOf(ai:AlanTuringInstitute
+      ObjectSomeValuesFrom(ai:hasPart ai:AISafetyResearch))
+    SubClassOf(ai:AlanTuringInstitute
+      ObjectSomeValuesFrom(ai:hasPart ai:AlgorithmicFairness))
+    SubClassOf(ai:AlanTuringInstitute
+      ObjectSomeValuesFrom(ai:hasPart ai:ExplainableAI))
+    SubClassOf(ai:AlanTuringInstitute
+      ObjectSomeValuesFrom(ai:hasPart ai:PrivacyPreservingMachineLearning))
+    SubClassOf(ai:AlanTuringInstitute
+      ObjectSomeValuesFrom(ai:hasPart ai:ProbabilisticProgramming))
+    SubClassOf(ai:AlanTuringInstitute
+      ObjectSomeValuesFrom(ai:hasPart ai:FundamentalResearch))
+    SubClassOf(ai:AlanTuringInstitute
+      ObjectSomeValuesFrom(ai:hasPart ai:EnrichmentScheme))
+## Dependency Relationships
+    SubClassOf(ai:AlanTuringInstitute
+      ObjectSomeValuesFrom(ai:requires ai:UniversityCollegeLondon))
+    SubClassOf(ai:AlanTuringInstitute
+      ObjectSomeValuesFrom(ai:requires ai:UniversityOfOxford))
+    SubClassOf(ai:AlanTuringInstitute
+      ObjectSomeValuesFrom(ai:requires ai:UniversityOfCambridge))
+    SubClassOf(ai:AlanTuringInstitute
+      ObjectSomeValuesFrom(ai:requires ai:UKResearchAndInnovation))
+    SubClassOf(ai:AlanTuringInstitute
+      ObjectSomeValuesFrom(ai:requires ai:UniversityOfEdinburgh))
+    SubClassOf(ai:AlanTuringInstitute
+      ObjectSomeValuesFrom(ai:requires ai:ImperialCollegeLondon))
+## Capability Relationships
+    SubClassOf(ai:AlanTuringInstitute
+      ObjectSomeValuesFrom(ai:enables ai:ArtificialIntelligence))
+    SubClassOf(ai:AlanTuringInstitute
+      ObjectSomeValuesFrom(ai:enables ai:MachineLearningDiscipline))
+    SubClassOf(ai:AlanTuringInstitute
+      ObjectSomeValuesFrom(ai:enables ai:ResponsibleAI))
+    SubClassOf(ai:AlanTuringInstitute
+      ObjectSomeValuesFrom(ai:enables ai:AIEthics))
+    SubClassOf(ai:AlanTuringInstitute
+      ObjectSomeValuesFrom(ai:enables ai:DataScience))
+## Implementation Relationships
+    SubClassOf(ai:AlanTuringInstitute
+      ObjectSomeValuesFrom(ai:implements ai:UKNationalAIStrategy))
+    SubClassOf(ai:AlanTuringInstitute
+      ObjectSomeValuesFrom(ai:implements ai:OpenDataPrinciples))
+    SubClassOf(ai:AlanTuringInstitute
+      ObjectSomeValuesFrom(ai:implements ai:ReproducibleResearch))
+## Reduction Relationships
+    SubClassOf(ai:AlanTuringInstitute
+      ObjectSomeValuesFrom(ai:reducesTo ai:ResearchInstitution))
+    SubClassOf(ai:AlanTuringInstitute
+      ObjectSomeValuesFrom(ai:reducesTo ai:AIGovernanceBody))
 
-    The ATI's research model is inherently multi-disciplinary and multi-institutional. Turing Fellows and research staff are embedded across partner universities, carrying out fundamental research while co-authoring applied outputs. The Institute's Enrichment Scheme offers doctoral students from partner universities time at the ATI to broaden their methodological training and collaborative networks. Research projects span technical development — including work in [[Probabilistic Programming]] (the Turing.jl language published in ACM TPML 2025), [[Federated Learning]], [[Foundation Models]], and end-to-end data-driven [[Weather Prediction]] (published in Nature 2025) — alongside ethical, governance, and policy-oriented outputs such as the AI Blue Team Playbook (SPIE 2024) and "Doing AI Differently" (2025). The ATI's Safe and Ethical AI programme develops the theory and practice of [[Explainable AI]], [[Algorithmic Fairness]], [[Algorithmic Bias]] mitigation, and [[Privacy-Preserving Machine Learning]], embedding these as constitutive rather than supplementary features of AI development.
+## About
+  The Alan Turing Institute (ATI) was founded in 2015 as the UK's national institute for data science, with its remit formally expanded in 2017 to encompass [[Artificial Intelligence]] following the publication of the Hall-Pesenti Independent Review of AI. Named after mathematician and computer scientist [[Alan Turing]] — whose work at Bletchley Park during the Second World War laid foundational groundwork for digital computing and cryptography — the Institute operates from the British Library in London under charitable status. Its core funding of £100 million over five years was renewed in 2024 by UKRI, which also scrutinises the Institute's value for money and strategic direction. The ATI convenes research across thirteen university partners and a growing network of industrial and governmental collaborators, aiming to ensure that the UK remains at the international forefront of [[Data Science]] and [[Machine Learning Discipline]] research. In 2025 and 2026, the Institute underwent significant strategic recalibration following a critical UKRI review that found it had "strong foundations and clear evidence of scientific excellence, but must articulate a clear strategic purpose and strengthen delivery." The appointment of George Williamson — former head of His Majesty's Government Communications Centre — as CEO in February 2026 signalled a decisive government-backed pivot toward [[Defence and Security]] and [[National Security]] applications, aligning the Institute more closely with the objectives of the UK's National AI Strategy and the goals articulated by Technology Secretary Peter Kyle.
 
-  ## Components / Architecture
-    The Institute is organised into a series of interconnected components:
-    - **University Partnership Network**: Thirteen founding and partner universities (UCL, Oxford, Cambridge, Edinburgh, Manchester, Warwick, Birmingham, Newcastle, Leeds, Sheffield, Southampton, Exeter, Imperial) contribute research staff, doctoral candidates, and domain expertise. Each partner university hosts Turing Fellows who act as nodes in the research network.
-    - **Research Programmes**: Three domain-priority pillars — Defence and National Security, Environment and Sustainability, Digital Health — plus a Fundamental Research backbone that includes theory, methodology, and [[Statistical Learning Theory]].
-    - **Safe and Ethical AI Programme**: Headed by Adrian Weller (Cambridge), building technical foundations for [[Responsible AI]] through [[Explainable AI]], [[Algorithmic Fairness]], and [[Privacy-Preserving Machine Learning]].
-    - **Enrichment Scheme**: Cohorts of doctoral students undertake extended placements at the ATI, receiving interdisciplinary training and participating in Turing research communities.
-    - **AI UK Conference**: The UK's national showcase for data science and AI research, convening industry, academia, and government annually in London.
-    - **Policy and Public Engagement**: Publications programme producing white papers, policy submissions, and position papers for government and regulatory bodies working on [[AI Governance]] and [[Public Sector AI]].
-    - **International Partnerships**: Collaborations with Singapore, the US, Europe, and other national AI institutes to exchange researchers and co-author findings.
+  The ATI's research model is inherently multi-disciplinary and multi-institutional. Turing Fellows and research staff are embedded across partner universities, carrying out fundamental research while co-authoring applied outputs. The Institute's Enrichment Scheme offers doctoral students from partner universities time at the ATI to broaden their methodological training and collaborative networks. Research projects span technical development — including work in [[Probabilistic Programming]] (the Turing.jl language published in ACM TPML 2025), [[Federated Learning]], [[Foundation Models]], and end-to-end data-driven [[Weather Prediction]] (published in Nature 2025) — alongside ethical, governance, and policy-oriented outputs such as the AI Blue Team Playbook (SPIE 2024) and "Doing AI Differently" (2025). The ATI's Safe and Ethical AI programme develops the theory and practice of [[Explainable AI]], [[Algorithmic Fairness]], [[Algorithmic Bias]] mitigation, and [[Privacy-Preserving Machine Learning]], embedding these as constitutive rather than supplementary features of AI development.
+
+## Components / Architecture
+  The Institute is organised into a series of interconnected components:
+
+- **University Partnership Network**: Thirteen founding and partner universities (UCL, Oxford, Cambridge, Edinburgh, Manchester, Warwick, Birmingham, Newcastle, Leeds, Sheffield, Southampton, Exeter, Imperial) contribute research staff, doctoral candidates, and domain expertise. Each partner university hosts Turing Fellows who act as nodes in the research network.
+- **Research Programmes**: Three domain-priority pillars — Defence and National Security, Environment and Sustainability, Digital Health — plus a Fundamental Research backbone that includes theory, methodology, and [[Statistical Learning Theory]].
+- **Safe and Ethical AI Programme**: Headed by Adrian Weller (Cambridge), building technical foundations for [[Responsible AI]] through [[Explainable AI]], [[Algorithmic Fairness]], and [[Privacy-Preserving Machine Learning]].
+- **Enrichment Scheme**: Cohorts of doctoral students undertake extended placements at the ATI, receiving interdisciplinary training and participating in Turing research communities.
+- **AI UK Conference**: The UK's national showcase for data science and AI research, convening industry, academia, and government annually in London.
+- **Policy and Public Engagement**: Publications programme producing white papers, policy submissions, and position papers for government and regulatory bodies working on [[AI Governance]] and [[Public Sector AI]].
+- **International Partnerships**: Collaborations with Singapore, the US, Europe, and other national AI institutes to exchange researchers and co-author findings.
 
   ## Use Cases / Major Research Areas
-    The ATI's research and translation work spans several major domains:
-    - **Defence and National Security**: Signals intelligence, cyber-threat detection, autonomous systems for defence, and [[National Security]] data analytics, intensified under Williamson's leadership from 2026.
-    - **Digital Health**: Machine learning for clinical decision support, [[Drug Discovery]], genomics, and population health modelling, with partners including NHS England, Wellcome, and major biomedical research charities.
-    - **Environment and Sustainability**: AI for [[Climate Science]], [[Weather Prediction]] (including the landmark end-to-end data-driven weather forecasting system published in Nature 2025), biodiversity modelling, and net-zero transition analytics.
-    - **Fundamental Research**: [[Statistical Learning Theory]], Bayesian methods, [[Probabilistic Programming]] (Turing.jl), causal inference, and uncertainty quantification.
-    - **Safe and Ethical AI**: [[Algorithmic Fairness]], [[Explainable AI]], bias auditing, interpretability, differential privacy, and [[Privacy-Preserving Machine Learning]].
-    - **Public Sector AI**: Working with HMRC, DVLA, NHS, and other government bodies to apply data science to operational challenges safely and accountably.
+  The ATI's research and translation work spans several major domains:
+
+- **Defence and National Security**: Signals intelligence, cyber-threat detection, autonomous systems for defence, and [[National Security]] data analytics, intensified under Williamson's leadership from 2026.
+- **Digital Health**: Machine learning for clinical decision support, [[Drug Discovery]], genomics, and population health modelling, with partners including NHS England, Wellcome, and major biomedical research charities.
+- **Environment and Sustainability**: AI for [[Climate Science]], [[Weather Prediction]] (including the landmark end-to-end data-driven weather forecasting system published in Nature 2025), biodiversity modelling, and net-zero transition analytics.
+- **Fundamental Research**: [[Statistical Learning Theory]], Bayesian methods, [[Probabilistic Programming]] (Turing.jl), causal inference, and uncertainty quantification.
+- **Safe and Ethical AI**: [[Algorithmic Fairness]], [[Explainable AI]], bias auditing, interpretability, differential privacy, and [[Privacy-Preserving Machine Learning]].
+- **Public Sector AI**: Working with HMRC, DVLA, NHS, and other government bodies to apply data science to operational challenges safely and accountably.
 
   ## Academic Context
-    The Alan Turing Institute sits within the broader landscape of UK AI research infrastructure. Its founding in 2015 followed the UK's recognition that national strategic capability in data science demanded a dedicated institute — a recognition informed by independent reviews by Dame Wendy Hall, Mark Walport, and Jérôme Pesenti (2017 AI Sector Deal review), among others. The intellectual lineage runs through the UK's strong traditions in Bayesian statistics (founded by de Finetti and advanced by scholars at Cambridge and Oxford), in formal methods and theoretical computer science pioneered by [[Alan Turing]] himself, and in the applied mathematics and optimisation traditions at universities such as Edinburgh, Manchester, and Imperial.
+  The Alan Turing Institute sits within the broader landscape of UK AI research infrastructure. Its founding in 2015 followed the UK's recognition that national strategic capability in data science demanded a dedicated institute — a recognition informed by independent reviews by Dame Wendy Hall, Mark Walport, and Jérôme Pesenti (2017 AI Sector Deal review), among others. The intellectual lineage runs through the UK's strong traditions in Bayesian statistics (founded by de Finetti and advanced by scholars at Cambridge and Oxford), in formal methods and theoretical computer science pioneered by [[Alan Turing]] himself, and in the applied mathematics and optimisation traditions at universities such as Edinburgh, Manchester, and Imperial.
 
-    Chief Scientist Professor Mark Girolami (Cambridge Engineering) has led the Institute's fundamental research direction, with his work on probabilistic numerical methods and computational statistics shaping the Turing.jl language. Adrian Weller (Cambridge Engineering) leads the Safe and Ethical AI strand, drawing on his research into fairness, interpretability, and causality. Researchers affiliated with the ATI have contributed foundational work on [[Foundation Models]], adversarial robustness, [[Federated Learning]] for healthcare, and causal discovery — making the Institute a reference point for both the academic community (through venues such as NeurIPS, ICML, ICLR, Nature, and JMLR) and the policy community (through its submissions to parliament, DSIT, and the AI Safety Institute).
+  Chief Scientist Professor Mark Girolami (Cambridge Engineering) has led the Institute's fundamental research direction, with his work on probabilistic numerical methods and computational statistics shaping the Turing.jl language. Adrian Weller (Cambridge Engineering) leads the Safe and Ethical AI strand, drawing on his research into fairness, interpretability, and causality. Researchers affiliated with the ATI have contributed foundational work on [[Foundation Models]], adversarial robustness, [[Federated Learning]] for healthcare, and causal discovery — making the Institute a reference point for both the academic community (through venues such as NeurIPS, ICML, ICLR, Nature, and JMLR) and the policy community (through its submissions to parliament, DSIT, and the AI Safety Institute).
 
   ## Current Landscape (2026)
-    In 2026, the Alan Turing Institute is undergoing its most significant structural reconfiguration since founding. The UKRI review published in April 2026 found that value for money was "not yet satisfactory" and called for a clearer strategic purpose and stronger delivery mechanisms. UKRI committed to working with incoming CEO George Williamson — appointed February 2026, taking over from acting chief Mark Girolami in May 2026 — to develop a strategic plan with critical success factors by September 2026, which will then be independently assessed. The previous CEO Jean Innes resigned in September 2025 amid staff disquiet and government pressure to focus more on [[Defence and Security]].
+  In 2026, the Alan Turing Institute is undergoing its most significant structural reconfiguration since founding. The UKRI review published in April 2026 found that value for money was "not yet satisfactory" and called for a clearer strategic purpose and stronger delivery mechanisms. UKRI committed to working with incoming CEO George Williamson — appointed February 2026, taking over from acting chief Mark Girolami in May 2026 — to develop a strategic plan with critical success factors by September 2026, which will then be independently assessed. The previous CEO Jean Innes resigned in September 2025 amid staff disquiet and government pressure to focus more on [[Defence and Security]].
 
-    The government's intervention, driven by a July 2025 letter from Technology Secretary Peter Kyle to chair Doug Gurr, reflects a broader policy ambition to position UK AI research as a direct instrument of national economic competitiveness and security. Williamson's background — heading the national security engineering base at GCHQ — makes the strategic direction explicit. The Institute is slimming its research portfolio to concentrate on three areas (health, environment, defence/security) while maintaining its enrichment and fellowship pipeline. The University of Birmingham and ATI won a £610,000 grant in December 2025 for a health data science project, illustrating the continued importance of university partnerships even as the centre of gravity shifts toward applied government work.
+  The government's intervention, driven by a July 2025 letter from Technology Secretary Peter Kyle to chair Doug Gurr, reflects a broader policy ambition to position UK AI research as a direct instrument of national economic competitiveness and security. Williamson's background — heading the national security engineering base at GCHQ — makes the strategic direction explicit. The Institute is slimming its research portfolio to concentrate on three areas (health, environment, defence/security) while maintaining its enrichment and fellowship pipeline. The University of Birmingham and ATI won a £610,000 grant in December 2025 for a health data science project, illustrating the continued importance of university partnerships even as the centre of gravity shifts toward applied government work.
 
-    The 2025 publication "Doing AI Differently: Rethinking the Foundations of AI via the Humanities" — authored with co-authors from across the humanities — illustrated the Turing's continued commitment to interdisciplinary approaches even as it becomes more operationally focused. The Institute's AI UK 2026 conference continued to attract thousands of participants from industry, government, and academia, cementing its role as the convener of the national AI conversation.
+  The 2025 publication "Doing AI Differently: Rethinking the Foundations of AI via the Humanities" — authored with co-authors from across the humanities — illustrated the Turing's continued commitment to interdisciplinary approaches even as it becomes more operationally focused. The Institute's AI UK 2026 conference continued to attract thousands of participants from industry, government, and academia, cementing its role as the convener of the national AI conversation.
 
   ## UK Context
-    The Alan Turing Institute is uniquely positioned within the UK's AI ecosystem as both an academic convener and a government instrument. Its London headquarters at the British Library place it at the heart of the capital's knowledge economy, while its university partnership network spans the full geographic breadth of the UK — from Edinburgh and Newcastle in the north to Exeter and Southampton in the south. Northern English universities, including [[University of Manchester]], Sheffield, Leeds, and Newcastle, are partners in the ATI network, though representation and resource allocation to the North has been a point of discussion in the context of the government's levelling-up agenda.
+  The Alan Turing Institute is uniquely positioned within the UK's AI ecosystem as both an academic convener and a government instrument. Its London headquarters at the British Library place it at the heart of the capital's knowledge economy, while its university partnership network spans the full geographic breadth of the UK — from Edinburgh and Newcastle in the north to Exeter and Southampton in the south. Northern English universities, including [[University of Manchester]], Sheffield, Leeds, and Newcastle, are partners in the ATI network, though representation and resource allocation to the North has been a point of discussion in the context of the government's levelling-up agenda.
 
-    The ATI's relationship with UKRI, and through it with Research England, EPSRC, and MRC, places it within the formal architecture of UK public research funding. Its mandate to address national challenges — health, environment, defence — aligns it with the strategic priorities articulated in the UK AI Opportunities Action Plan (January 2025) and the Science and Technology Framework. The Institute collaborates with the AI Safety Institute (established 2023, now the AI Security Institute), the DSIT AI team, and the Cabinet Office's Central Digital and Data Office, acting as a research and technical resource for government AI policy.
+  The ATI's relationship with UKRI, and through it with Research England, EPSRC, and MRC, places it within the formal architecture of UK public research funding. Its mandate to address national challenges — health, environment, defence — aligns it with the strategic priorities articulated in the UK AI Opportunities Action Plan (January 2025) and the Science and Technology Framework. The Institute collaborates with the AI Safety Institute (established 2023, now the AI Security Institute), the DSIT AI team, and the Cabinet Office's Central Digital and Data Office, acting as a research and technical resource for government AI policy.
 
-    [[University of Edinburgh]] has historically been a strong partner through the School of Informatics and its machine learning research group. [[Imperial College London]] contributes through its Department of Computing and the Data Science Institute. [[University of Manchester]] contributes through its computer science and statistics departments, and through the N8 Research Partnership that links eight northern English universities in research collaboration — a partnership that the ATI has engaged for applied data science projects. The Manchester-Leeds corridor, with its concentration of financial services, healthcare, and logistics industries, represents a key testbed for ATI-partnered applied AI research.
+  [[University of Edinburgh]] has historically been a strong partner through the School of Informatics and its machine learning research group. [[Imperial College London]] contributes through its Department of Computing and the Data Science Institute. [[University of Manchester]] contributes through its computer science and statistics departments, and through the N8 Research Partnership that links eight northern English universities in research collaboration — a partnership that the ATI has engaged for applied data science projects. The Manchester-Leeds corridor, with its concentration of financial services, healthcare, and logistics industries, represents a key testbed for ATI-partnered applied AI research.
 
   ## Future Directions (2026-2030)
-    The Alan Turing Institute's trajectory to 2030 is shaped by four converging forces: (1) the strategic pivot under Williamson toward defence, intelligence, and national security; (2) the maturation of [[Foundation Models]] and the questions of safety, alignment, and governance they raise; (3) the growing policy demand for AI that is genuinely explainable, fair, and privacy-respecting; and (4) the UK's post-Brexit effort to demonstrate independent scientific and technological leadership through mechanisms like the Turing Scheme, Horizon participation (rejoined 2024), and bilateral research agreements.
+  The Alan Turing Institute's trajectory to 2030 is shaped by four converging forces: (1) the strategic pivot under Williamson toward defence, intelligence, and national security; (2) the maturation of [[Foundation Models]] and the questions of safety, alignment, and governance they raise; (3) the growing policy demand for AI that is genuinely explainable, fair, and privacy-respecting; and (4) the UK's post-Brexit effort to demonstrate independent scientific and technological leadership through mechanisms like the Turing Scheme, Horizon participation (rejoined 2024), and bilateral research agreements.
 
-    Concrete anticipated developments include: expansion of the Safe and Ethical AI programme to provide technical standards and audit frameworks for government and regulated industry; deepening of the ATI's role in advising the AI Security Institute on foundation model evaluation; growth of the data-driven weather and climate modelling work in partnership with the Met Office; and the development of AI-enabled clinical decision support tools with NHS integrated care boards. The ATI is also expected to play a key role in developing the UK's AI compute infrastructure strategy, advising on the balance between centralised national compute facilities and distributed academic access.
+  Concrete anticipated developments include: expansion of the Safe and Ethical AI programme to provide technical standards and audit frameworks for government and regulated industry; deepening of the ATI's role in advising the AI Security Institute on foundation model evaluation; growth of the data-driven weather and climate modelling work in partnership with the Met Office; and the development of AI-enabled clinical decision support tools with NHS integrated care boards. The ATI is also expected to play a key role in developing the UK's AI compute infrastructure strategy, advising on the balance between centralised national compute facilities and distributed academic access.
 
-    By 2030, the ATI's enrichment alumni will have seeded AI capability throughout UK academia, the civil service, the NHS, and the defence sector, representing perhaps its most durable long-term impact beyond any individual publication or project. The challenge for Williamson's leadership will be to maintain the scientific credibility and interdisciplinary character that has made the ATI internationally respected, while meeting the government's demand for direct, measurable national security and economic outputs.
+  By 2030, the ATI's enrichment alumni will have seeded AI capability throughout UK academia, the civil service, the NHS, and the defence sector, representing perhaps its most durable long-term impact beyond any individual publication or project. The challenge for Williamson's leadership will be to maintain the scientific credibility and interdisciplinary character that has made the ATI internationally respected, while meeting the government's demand for direct, measurable national security and economic outputs.
 
   ## Research & Literature
-    1. Hall, W. & Pesenti, J. (2017). *Growing the Artificial Intelligence Industry in the UK*. Independent Review for BEIS and DCMS, UK Government.
-    2. Turing, A.M. (1950). "Computing machinery and intelligence." *Mind*, 59(236), 433-460.
-    3. Girolami, M. & Calderhead, B. (2011). "Riemann manifold Langevin and Hamiltonian Monte Carlo methods." *Journal of the Royal Statistical Society: Series B*, 73(2), 123-214.
-    4. Weller, A. (2019). "Transparency: motivations and challenges." In *Explainable AI: Interpreting, Explaining and Visualizing Deep Learning*, Springer LNCS, 23-40.
-    5. Ge, H., Xu, K., & Ghahramani, Z. (2018). "Turing: A language for flexible probabilistic inference." *Proceedings of AISTATS 2018*, PMLR.
-    6. Xu, K. et al. (2025). "Turing.jl: A general-purpose probabilistic programming language." *ACM Transactions on Probabilistic Machine Learning*.
-    7. Price-Jones, G. et al. (2025). "End-to-end data-driven weather prediction." *Nature*.
-    8. Alan Turing Institute (2024). "An AI Blue Team Playbook." *Proceedings of SPIE 13054: Assurance and Security for AI-enabled Systems*.
-    9. Alan Turing Institute (2025). *Doing AI Differently: Rethinking the Foundations of AI via the Humanities*. ATI Policy Report.
-    10. UKRI (2026). *Review of the Alan Turing Institute: Value for Money Assessment*. UK Research and Innovation.
-    11. Doshi-Velez, F. & Kim, B. (2017). "Towards a rigorous science of interpretable machine learning." *arXiv:1702.08608*.
-    12. Jobin, A., Ienca, M., & Vayena, E. (2019). "The global landscape of AI ethics guidelines." *Nature Machine Intelligence*, 1, 389-399.
-    13. Floridi, L. et al. (2018). "AI4People — An ethical framework for a good AI society." *Minds and Machines*, 28(4), 689-707.
-    14. Veale, M. & Binns, R. (2017). "Fairer machine learning in the real world." *Big Data and Society*, 4(2).
-    15. Micocci, M. et al. (2024). "AI in healthcare: landscape of the UK's NHS." *npj Digital Medicine*, 7, 12.
-    16. Rahwan, I. (2018). "Society-in-the-loop." *Ethics and Information Technology*, 20(5), 329-339.
-    17. Schwartz, R. et al. (2022). "Towards a standard for identifying and managing bias in artificial intelligence." *NIST Special Publication 1270*.
-    18. Kaur, D. et al. (2022). "Trustworthy artificial intelligence: A review." *ACM Computing Surveys*, 55(2), 1-38.
-    19. Bommasani, R. et al. (2021). "On the opportunities and risks of foundation models." *Stanford CRFM Report, arXiv:2108.07258*.
-    20. Bender, E.M. et al. (2021). "On the dangers of stochastic parrots." *Proceedings of FAccT 2021*, 610-623.
-    21. Dafoe, A. (2018). "AI governance: A research agenda." *Future of Humanity Institute, University of Oxford*.
-    22. DSIT (2023). *A pro-innovation approach to AI regulation*. UK Department for Science, Innovation and Technology.
-    23. DSIT (2025). *AI Opportunities Action Plan*. UK Government.
-    24. Taddeo, M. & Floridi, L. (2018). "How AI can be a force for good." *Science*, 361(6404), 751-752.
-    25. Canziani, A., Paszke, A. & Culurciello, E. (2016). "An analysis of deep neural network models for practical applications." *arXiv:1605.07678*.
-    26. Brundage, M. et al. (2018). "The malicious use of artificial intelligence: Forecasting, prevention, and mitigation." *Future of Humanity Institute Report*.
-    27. Zuboff, S. (2019). *The Age of Surveillance Capitalism*. PublicAffairs.
-    28. Cath, C. et al. (2018). "Artificial intelligence and the 'good society': the US, EU, and UK approach." *Science and Engineering Ethics*, 24(2), 505-528.
+  1. Hall, W. & Pesenti, J. (2017). *Growing the Artificial Intelligence Industry in the UK*. Independent Review for BEIS and DCMS, UK Government.
+  2. Turing, A.M. (1950). "Computing machinery and intelligence." *Mind*, 59(236), 433-460.
+  3. Girolami, M. & Calderhead, B. (2011). "Riemann manifold Langevin and Hamiltonian Monte Carlo methods." *Journal of the Royal Statistical Society: Series B*, 73(2), 123-214.
+  4. Weller, A. (2019). "Transparency: motivations and challenges." In *Explainable AI: Interpreting, Explaining and Visualizing Deep Learning*, Springer LNCS, 23-40.
+  5. Ge, H., Xu, K., & Ghahramani, Z. (2018). "Turing: A language for flexible probabilistic inference." *Proceedings of AISTATS 2018*, PMLR.
+  6. Xu, K. et al. (2025). "Turing.jl: A general-purpose probabilistic programming language." *ACM Transactions on Probabilistic Machine Learning*.
+  7. Price-Jones, G. et al. (2025). "End-to-end data-driven weather prediction." *Nature*.
+  8. Alan Turing Institute (2024). "An AI Blue Team Playbook." *Proceedings of SPIE 13054: Assurance and Security for AI-enabled Systems*.
+  9. Alan Turing Institute (2025). *Doing AI Differently: Rethinking the Foundations of AI via the Humanities*. ATI Policy Report.
+  10. UKRI (2026). *Review of the Alan Turing Institute: Value for Money Assessment*. UK Research and Innovation.
+  11. Doshi-Velez, F. & Kim, B. (2017). "Towards a rigorous science of interpretable machine learning." *arXiv:1702.08608*.
+  12. Jobin, A., Ienca, M., & Vayena, E. (2019). "The global landscape of AI ethics guidelines." *Nature Machine Intelligence*, 1, 389-399.
+  13. Floridi, L. et al. (2018). "AI4People — An ethical framework for a good AI society." *Minds and Machines*, 28(4), 689-707.
+  14. Veale, M. & Binns, R. (2017). "Fairer machine learning in the real world." *Big Data and Society*, 4(2).
+  15. Micocci, M. et al. (2024). "AI in healthcare: landscape of the UK's NHS." *npj Digital Medicine*, 7, 12.
+  16. Rahwan, I. (2018). "Society-in-the-loop." *Ethics and Information Technology*, 20(5), 329-339.
+  17. Schwartz, R. et al. (2022). "Towards a standard for identifying and managing bias in artificial intelligence." *NIST Special Publication 1270*.
+  18. Kaur, D. et al. (2022). "Trustworthy artificial intelligence: A review." *ACM Computing Surveys*, 55(2), 1-38.
+  19. Bommasani, R. et al. (2021). "On the opportunities and risks of foundation models." *Stanford CRFM Report, arXiv:2108.07258*.
+  20. Bender, E.M. et al. (2021). "On the dangers of stochastic parrots." *Proceedings of FAccT 2021*, 610-623.
+  21. Dafoe, A. (2018). "AI governance: A research agenda." *Future of Humanity Institute, University of Oxford*.
+  22. DSIT (2023). *A pro-innovation approach to AI regulation*. UK Department for Science, Innovation and Technology.
+  23. DSIT (2025). *AI Opportunities Action Plan*. UK Government.
+  24. Taddeo, M. & Floridi, L. (2018). "How AI can be a force for good." *Science*, 361(6404), 751-752.
+  25. Canziani, A., Paszke, A. & Culurciello, E. (2016). "An analysis of deep neural network models for practical applications." *arXiv:1605.07678*.
+  26. Brundage, M. et al. (2018). "The malicious use of artificial intelligence: Forecasting, prevention, and mitigation." *Future of Humanity Institute Report*.
+  27. Zuboff, S. (2019). *The Age of Surveillance Capitalism*. PublicAffairs.
+  28. Cath, C. et al. (2018). "Artificial intelligence and the 'good society': the US, EU, and UK approach." *Science and Engineering Ethics*, 24(2), 505-528.
 
-- ### Provenance
+### Provenance
 

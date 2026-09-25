@@ -1,168 +1,150 @@
-
 A structured documentation format that describes an AI Model's purpose, Performance Metrics, limitations, ical Considerations, and appropriate Use Case|use cases to promote Transparency and Responsible AI Deployment|responsible deployment.
 
-- ### Semantic Classification
+### Semantic Classification
 
-- ### Content
+### Content
 
-  ## Compositional Relationships (Components)
-      SubClassOf(ai:AIModelCard
-        ObjectSomeValuesFrom(ai:hasPart ai:ModelDetails))
-      SubClassOf(ai:AIModelCard
-        ObjectSomeValuesFrom(ai:hasPart ai:PerformanceMetrics))
-      SubClassOf(ai:AIModelCard
-        ObjectSomeValuesFrom(ai:hasPart ai:LimitationsSection))
-      SubClassOf(ai:AIModelCard
-        ObjectSomeValuesFrom(ai:hasPart ai:EthicalConsiderations))
-      SubClassOf(ai:AIModelCard
-        ObjectSomeValuesFrom(ai:hasPart ai:UseCaseDescriptions))
-      SubClassOf(ai:AIModelCard
-        ObjectSomeValuesFrom(ai:hasPart ai:TrainingDataInformation))
-      SubClassOf(ai:AIModelCard
-        ObjectSomeValuesFrom(ai:hasPart ai:BiasAnalysis))
-      SubClassOf(ai:AIModelCard
-        ObjectSomeValuesFrom(ai:hasPart ai:FairnessMetrics))
-      SubClassOf(ai:AIModelCard
-        ObjectSomeValuesFrom(ai:hasPart ai:SecurityConsiderations))
-      SubClassOf(ai:AIModelCard
-        ObjectSomeValuesFrom(ai:hasPart ai:DemographicPerformanceAnalysis))
+## Compositional Relationships (Components)
+    SubClassOf(ai:AIModelCard
+      ObjectSomeValuesFrom(ai:hasPart ai:ModelDetails))
+    SubClassOf(ai:AIModelCard
+      ObjectSomeValuesFrom(ai:hasPart ai:PerformanceMetrics))
+    SubClassOf(ai:AIModelCard
+      ObjectSomeValuesFrom(ai:hasPart ai:LimitationsSection))
+    SubClassOf(ai:AIModelCard
+      ObjectSomeValuesFrom(ai:hasPart ai:EthicalConsiderations))
+    SubClassOf(ai:AIModelCard
+      ObjectSomeValuesFrom(ai:hasPart ai:UseCaseDescriptions))
+    SubClassOf(ai:AIModelCard
+      ObjectSomeValuesFrom(ai:hasPart ai:TrainingDataInformation))
+    SubClassOf(ai:AIModelCard
+      ObjectSomeValuesFrom(ai:hasPart ai:BiasAnalysis))
+    SubClassOf(ai:AIModelCard
+      ObjectSomeValuesFrom(ai:hasPart ai:FairnessMetrics))
+    SubClassOf(ai:AIModelCard
+      ObjectSomeValuesFrom(ai:hasPart ai:SecurityConsiderations))
+    SubClassOf(ai:AIModelCard
+      ObjectSomeValuesFrom(ai:hasPart ai:DemographicPerformanceAnalysis))
 
-  ## Dependency Relationships
-      SubClassOf(ai:AIModelCard
-        ObjectSomeValuesFrom(ai:requires ai:ModelEvaluationResults))
-      SubClassOf(ai:AIModelCard
-        ObjectSomeValuesFrom(ai:requires ai:TrainingDatasetMetadata))
-      SubClassOf(ai:AIModelCard
-        ObjectSomeValuesFrom(ai:requires ai:PerformanceBenchmarks))
-      SubClassOf(ai:AIModelCard
-        ObjectSomeValuesFrom(ai:requires ai:SafetyTestingResults))
-      SubClassOf(ai:AIModelCard
-        ObjectSomeValuesFrom(ai:requires ai:RedTeaming))
-      SubClassOf(ai:AIModelCard
-        ObjectSomeValuesFrom(ai:dependsOn ai:AIEthicsGuidelines))
-      SubClassOf(ai:AIModelCard
-        ObjectSomeValuesFrom(ai:dependsOn ai:DocumentationStandards))
-      SubClassOf(ai:AIModelCard
-        ObjectSomeValuesFrom(ai:dependsOn ai:DataProvenance))
+## Dependency Relationships
+    SubClassOf(ai:AIModelCard
+      ObjectSomeValuesFrom(ai:requires ai:ModelEvaluationResults))
+    SubClassOf(ai:AIModelCard
+      ObjectSomeValuesFrom(ai:requires ai:TrainingDatasetMetadata))
+    SubClassOf(ai:AIModelCard
+      ObjectSomeValuesFrom(ai:requires ai:PerformanceBenchmarks))
+    SubClassOf(ai:AIModelCard
+      ObjectSomeValuesFrom(ai:requires ai:SafetyTestingResults))
+    SubClassOf(ai:AIModelCard
+      ObjectSomeValuesFrom(ai:requires ai:RedTeaming))
+    SubClassOf(ai:AIModelCard
+      ObjectSomeValuesFrom(ai:dependsOn ai:AIEthicsGuidelines))
+    SubClassOf(ai:AIModelCard
+      ObjectSomeValuesFrom(ai:dependsOn ai:DocumentationStandards))
+    SubClassOf(ai:AIModelCard
+      ObjectSomeValuesFrom(ai:dependsOn ai:DataProvenance))
 
-  ## Capability Relationships
-      SubClassOf(ai:AIModelCard
-        ObjectSomeValuesFrom(ai:enables ai:ModelTransparency))
-      SubClassOf(ai:AIModelCard
-        ObjectSomeValuesFrom(ai:enables ai:ResponsibleAIDeployment))
-      SubClassOf(ai:AIModelCard
-        ObjectSomeValuesFrom(ai:enables ai:AIAccountability))
-      SubClassOf(ai:AIModelCard
-        ObjectSomeValuesFrom(ai:enables ai:RegulatoryCompliance))
-      SubClassOf(ai:AIModelCard
-        ObjectSomeValuesFrom(ai:enables ai:ThirdPartyAuditing))
-      SubClassOf(ai:AIModelCard
-        ObjectSomeValuesFrom(ai:enables ai:TrustworthyAI))
-      SubClassOf(ai:AIModelCard
-        ObjectSomeValuesFrom(ai:enables ai:AlgorithmicAuditing))
-      SubClassOf(ai:AIModelCard
-        ObjectSomeValuesFrom(ai:supports ai:NISTAIRiskManagementFramework))
-      SubClassOf(ai:AIModelCard
-        ObjectSomeValuesFrom(ai:supports ai:OpenSourceAI))
+## Capability Relationships
+    SubClassOf(ai:AIModelCard
+      ObjectSomeValuesFrom(ai:enables ai:ModelTransparency))
+    SubClassOf(ai:AIModelCard
+      ObjectSomeValuesFrom(ai:enables ai:ResponsibleAIDeployment))
+    SubClassOf(ai:AIModelCard
+      ObjectSomeValuesFrom(ai:enables ai:AIAccountability))
+    SubClassOf(ai:AIModelCard
+      ObjectSomeValuesFrom(ai:enables ai:RegulatoryCompliance))
+    SubClassOf(ai:AIModelCard
+      ObjectSomeValuesFrom(ai:enables ai:ThirdPartyAuditing))
+    SubClassOf(ai:AIModelCard
+      ObjectSomeValuesFrom(ai:enables ai:TrustworthyAI))
+    SubClassOf(ai:AIModelCard
+      ObjectSomeValuesFrom(ai:enables ai:AlgorithmicAuditing))
+    SubClassOf(ai:AIModelCard
+      ObjectSomeValuesFrom(ai:supports ai:NISTAIRiskManagementFramework))
+    SubClassOf(ai:AIModelCard
+      ObjectSomeValuesFrom(ai:supports ai:OpenSourceAI))
 
-  ## Implementation Relationships
-      SubClassOf(ai:AIModelCard
-        ObjectSomeValuesFrom(ai:implements ai:EUAIActDocumentationRequirements))
-      SubClassOf(ai:AIModelCard
-        ObjectSomeValuesFrom(ai:implements ai:ISO42001AIManagementSystem))
-      SubClassOf(ai:AIModelCard
-        ObjectSomeValuesFrom(ai:implements ai:OECDAIPrinciples))
-      SubClassOf(ai:AIModelCard
-        ObjectSomeValuesFrom(ai:implements ai:NISTAIRMFMeasureFunction))
-      SubClassOf(ai:AIModelCard
-        ObjectSomeValuesFrom(ai:uses ai:DemographicPerformanceAnalysis))
-      SubClassOf(ai:AIModelCard
-        ObjectSomeValuesFrom(ai:uses ai:BiasAnalysis))
-      SubClassOf(ai:AIModelCard
-        ObjectSomeValuesFrom(ai:uses ai:RedTeaming))
+## Implementation Relationships
+    SubClassOf(ai:AIModelCard
+      ObjectSomeValuesFrom(ai:implements ai:EUAIActDocumentationRequirements))
+    SubClassOf(ai:AIModelCard
+      ObjectSomeValuesFrom(ai:implements ai:ISO42001AIManagementSystem))
+    SubClassOf(ai:AIModelCard
+      ObjectSomeValuesFrom(ai:implements ai:OECDAIPrinciples))
+    SubClassOf(ai:AIModelCard
+      ObjectSomeValuesFrom(ai:implements ai:NISTAIRMFMeasureFunction))
+    SubClassOf(ai:AIModelCard
+      ObjectSomeValuesFrom(ai:uses ai:DemographicPerformanceAnalysis))
+    SubClassOf(ai:AIModelCard
+      ObjectSomeValuesFrom(ai:uses ai:BiasAnalysis))
+    SubClassOf(ai:AIModelCard
+      ObjectSomeValuesFrom(ai:uses ai:RedTeaming))
 
-  ## Reduction Relationships
-      SubClassOf(ai:AIModelCard
-        ObjectSomeValuesFrom(ai:reducesTo ai:ComplianceDocumentation))
-      SubClassOf(ai:AIModelCard
-        ObjectSomeValuesFrom(ai:reducesTo ai:ModelTransparencyReport))
-      SubClassOf(ai:AIModelCard
-        ObjectSomeValuesFrom(ai:reducesTo ai:TechnicalDocumentation))
+## Reduction Relationships
+    SubClassOf(ai:AIModelCard
+      ObjectSomeValuesFrom(ai:reducesTo ai:ComplianceDocumentation))
+    SubClassOf(ai:AIModelCard
+      ObjectSomeValuesFrom(ai:reducesTo ai:ModelTransparencyReport))
+    SubClassOf(ai:AIModelCard
+      ObjectSomeValuesFrom(ai:reducesTo ai:TechnicalDocumentation))
 
-  ## Data Properties
-      DataPropertyAssertion(ai:hasIdentifier ai:AIModelCard "MV-20120"^^xsd:string)
-      DataPropertyAssertion(ai:authorityScore ai:AIModelCard "0.93"^^xsd:decimal)
-      DataPropertyAssertion(ai:huggingFaceModelsWithModelCards2025 ai:AIModelCard "1400000"^^xsd:integer)
-      DataPropertyAssertion(ai:euAIActGPAIObligationsEffectiveDate ai:AIModelCard "2025-08-02"^^xsd:date)
-      DataPropertyAssertion(ai:euAIActHighRiskTransparencyDate ai:AIModelCard "2026-08-02"^^xsd:date)
+## Data Properties
+    DataPropertyAssertion(ai:hasIdentifier ai:AIModelCard "MV-20120"^^xsd:string)
+    DataPropertyAssertion(ai:authorityScore ai:AIModelCard "0.93"^^xsd:decimal)
+    DataPropertyAssertion(ai:huggingFaceModelsWithModelCards2025 ai:AIModelCard "1400000"^^xsd:integer)
+    DataPropertyAssertion(ai:euAIActGPAIObligationsEffectiveDate ai:AIModelCard "2025-08-02"^^xsd:date)
+    DataPropertyAssertion(ai:euAIActHighRiskTransparencyDate ai:AIModelCard "2026-08-02"^^xsd:date)
 
-  ## Annotations
-      AnnotationAssertion(rdfs:label ai:AIModelCard "AI Model Card"@en)
-      AnnotationAssertion(rdfs:comment ai:AIModelCard "Structured documentation format for AI model transparency, originating with Mitchell et al. 2019. Mandated by EU AI Act (GPAI obligations August 2025, high-risk transparency August 2026), referenced by ISO/IEC 42001, NIST AI RMF, and OECD AI Principles. As of March 2025, Hugging Face hosts 1.4M+ models with native model card support. Covers model details, performance metrics, demographic evaluation, limitations, intended use cases, ethical considerations, and training data provenance."@en)
-      AnnotationAssertion(dcterms:identifier ai:AIModelCard "MV-20120"^^xsd:string)
-      AnnotationAssertion(dcterms:subject ai:AIModelCard "AI Documentation, Model Transparency, Responsible AI, EU AI Act, NIST AI RMF, ISO 42001, Fairness, Bias, Governance"@en)
+## Annotations
+    AnnotationAssertion(rdfs:label ai:AIModelCard "AI Model Card"@en)
+    AnnotationAssertion(rdfs:comment ai:AIModelCard "Structured documentation format for AI model transparency, originating with Mitchell et al. 2019. Mandated by EU AI Act (GPAI obligations August 2025, high-risk transparency August 2026), referenced by ISO/IEC 42001, NIST AI RMF, and OECD AI Principles. As of March 2025, Hugging Face hosts 1.4M+ models with native model card support. Covers model details, performance metrics, demographic evaluation, limitations, intended use cases, ethical considerations, and training data provenance."@en)
+    AnnotationAssertion(dcterms:identifier ai:AIModelCard "MV-20120"^^xsd:string)
+    AnnotationAssertion(dcterms:subject ai:AIModelCard "AI Documentation, Model Transparency, Responsible AI, EU AI Act, NIST AI RMF, ISO 42001, Fairness, Bias, Governance"@en)
 
-  ## About AI Model Cards
+## About AI Model Cards
 
-  **AI Model Cards** are standardised documentation artefacts that accompany [[AI Model|trained AI models]], providing structured disclosure that enables downstream users, procurers, auditors, and regulators to make [[Informed Decision Making|informed decisions]] about whether and how to deploy a given model. The concept was introduced by [[Mitchell et al. 2019|Margaret Mitchell, Simone Wu, and colleagues at Google]] in a 2019 ACM FAccT paper titled "Model Cards for Model Reporting," motivated by the observation that machine-learning models were routinely deployed without documentation of their differential performance across demographic groups, operating conditions, or task types — creating silent failure modes that disproportionately affected marginalised populations.
+**AI Model Cards** are standardised documentation artefacts that accompany [[AI Model|trained AI models]], providing structured disclosure that enables downstream users, procurers, auditors, and regulators to make [[Informed Decision Making|informed decisions]] about whether and how to deploy a given model. The concept was introduced by [[Mitchell et al. 2019|Margaret Mitchell, Simone Wu, and colleagues at Google]] in a 2019 ACM FAccT paper titled "Model Cards for Model Reporting," motivated by the observation that machine-learning models were routinely deployed without documentation of their differential performance across demographic groups, operating conditions, or task types — creating silent failure modes that disproportionately affected marginalised populations.
 
-  The core intellectual contribution of Mitchell et al. was twofold. First, they articulated the need for **disaggregated evaluation**: rather than reporting aggregate accuracy, model cards require benchmarking performance broken down by factors such as age, gender, race, dialect, and context of deployment, surfacing performance gaps that aggregate metrics obscure. A facial recognition system with 95% overall accuracy may perform at 65% for dark-skinned women — a difference that aggregate accuracy conceals but [[Demographic Performance Analysis]] reveals. Second, they introduced the concept of **intended use and out-of-scope use** documentation, requiring model developers to explicitly state for what purpose a model was built and for what purposes it should not be used, shifting accountability for misuse from tacit to explicit.
+The core intellectual contribution of Mitchell et al. was twofold. First, they articulated the need for **disaggregated evaluation**: rather than reporting aggregate accuracy, model cards require benchmarking performance broken down by factors such as age, gender, race, dialect, and context of deployment, surfacing performance gaps that aggregate metrics obscure. A facial recognition system with 95% overall accuracy may perform at 65% for dark-skinned women — a difference that aggregate accuracy conceals but [[Demographic Performance Analysis]] reveals. Second, they introduced the concept of **intended use and out-of-scope use** documentation, requiring model developers to explicitly state for what purpose a model was built and for what purposes it should not be used, shifting accountability for misuse from tacit to explicit.
 
-  Since 2019, model cards have been transformed from a voluntary best practice into a global regulatory instrument with binding force. The [[EU AI Act Regulatory Instrument]] requires providers of General-Purpose AI models to maintain technical documentation that effectively implements model cards as of 2 August 2025, with enhanced transparency obligations for high-risk systems effective 2 August 2026. The August 2026 transparency deadline represents a formal regulatory ratchet: organisations that deploy AI for high-risk purposes including credit scoring, employment screening, healthcare diagnostics, and law enforcement must provide documentation equivalent to a comprehensive model card to regulators, deployers, and affected individuals on request.
+Since 2019, model cards have been transformed from a voluntary best practice into a global regulatory instrument with binding force. The [[EU AI Act Regulatory Instrument]] requires providers of General-Purpose AI models to maintain technical documentation that effectively implements model cards as of 2 August 2025, with enhanced transparency obligations for high-risk systems effective 2 August 2026. The August 2026 transparency deadline represents a formal regulatory ratchet: organisations that deploy AI for high-risk purposes including credit scoring, employment screening, healthcare diagnostics, and law enforcement must provide documentation equivalent to a comprehensive model card to regulators, deployers, and affected individuals on request.
 
-  The [[NIST AI Risk Management Framework]] (AI RMF 1.0, 2023; Trustworthy AI in Critical Infrastructure Profile, 2026) maps model card generation to the **Measure** function of its Govern-Map-Measure-Manage cycle, specifically the sub-functions of evaluating model performance across conditions (Measure 2.3), assessing bias and fairness (Measure 2.5), and documenting findings for stakeholder disclosure (Measure 2.7). [[ISO/IEC 42001]] (AI management systems, 2023) and its 2025 complement [[ISO/IEC 42005]] (AI lifecycle impact assessment) situate model cards within a certifiable governance system, requiring that model documentation be maintained, versioned, and updated throughout the AI system lifecycle rather than produced once at release.
+The [[NIST AI Risk Management Framework]] (AI RMF 1.0, 2023; Trustworthy AI in Critical Infrastructure Profile, 2026) maps model card generation to the **Measure** function of its Govern-Map-Measure-Manage cycle, specifically the sub-functions of evaluating model performance across conditions (Measure 2.3), assessing bias and fairness (Measure 2.5), and documenting findings for stakeholder disclosure (Measure 2.7). [[ISO/IEC 42001]] (AI management systems, 2023) and its 2025 complement [[ISO/IEC 42005]] (AI lifecycle impact assessment) situate model cards within a certifiable governance system, requiring that model documentation be maintained, versioned, and updated throughout the AI system lifecycle rather than produced once at release.
 
-  ## Components / Architecture
+## Components / Architecture
 
-  A comprehensive AI model card contains nine canonical sections established by the Mitchell et al. framework and subsequently extended by regulatory instruments and platform implementations:
+A comprehensive AI model card contains nine canonical sections established by the Mitchell et al. framework and subsequently extended by regulatory instruments and platform implementations:
 
-  - **[[Model Details]]**: Model type (architecture family, parameter count, training paradigm), version, release date, developer identity, license terms, primary contact. For [[Generative AI]] systems, this includes modality (text, image, audio, multimodal), context window, and generation mechanism. In EU AI Act terms, this section maps to the mandatory "general description" and "technical specification" fields.
-
-  - **[[Use Case Descriptions|Intended Use]]**: Primary intended use cases, intended user populations, out-of-scope uses. The Mitchell et al. framework treats explicit out-of-scope documentation as ethically mandatory — if a model should not be used for a particular purpose (e.g., surveillance, unilateral medical diagnosis, autonomous lethal targeting), that must be stated. This section provides the basis for [[Procurement Due Diligence]] by downstream deployers.
-
-  - **[[Performance Metrics|Model Performance]]**: Benchmarked accuracy, precision, recall, F1, BLEU, perplexity, or domain-specific metrics across evaluation sets. Crucially, this section must report performance *disaggregated* by relevant demographic subgroups (age, gender, race, language, disability status) and operating conditions (lighting conditions for vision systems, acoustic conditions for speech systems, document types for NLP systems). [[Fairness Metrics]] such as demographic parity, equalised odds, and individual fairness must be documented alongside aggregate performance.
-
-  - **[[Demographic Performance Analysis|Evaluation Data]]**: Description of evaluation datasets used to generate performance metrics — size, composition, collection methodology, temporal coverage, [[Data Provenance]], known biases in the evaluation set. This is distinct from training data and must be documented separately to prevent conflation of training distribution performance with generalisation.
-
-  - **[[Training Data Information]]**: Training dataset description, sources, scale, pre-processing steps, data governance (consent, licensing, copyright status), known limitations or biases in training data. Under the [[EU AI Act Regulatory Instrument]] (Article 53(1)(d)), providers of General-Purpose AI models must provide a sufficiently detailed training data summary, with a separate copyright policy for training data used after the 2 August 2025 obligation date.
-
-  - **[[Ethical Considerations]]**: Foreseeable harms, misuse risks, dual-use concerns, environmental impact (training compute, energy consumption, carbon footprint), labour conditions for data annotation, privacy implications. The G7 Code of Conduct (2023) and [[OECD]] AI Principles (2024) both require transparency about training compute as a proxy for energy use.
-
-  - **[[Limitations Section|Limitations and Biases]]**: Known technical limitations (hallucination rate, knowledge cutoff, context length constraints), known biases (systematic errors correlated with protected attributes), failure modes, and performance degradation conditions. For large language models, this section typically documents factual error rates, calibration characteristics, and susceptibility to adversarial prompting.
-
-  - **[[Safety Testing Results]]**: Safety evaluation results including [[Red Teaming]] findings, adversarial robustness assessments, [[AI Safety Evaluation]] outputs, jailbreak resilience, toxicity rates, and any pre-deployment safety evaluations conducted by independent third parties or internal safety teams. Post-[[EU AI Act Regulatory Instrument|EU AI Act]] August 2026, high-risk systems must disclose systematic safety testing results.
-
-  - **[[Security Considerations]]**: Data security, model extraction risks, membership inference attack susceptibility, differential privacy guarantees (if applicable), [[Watermarking]] of model outputs, access control mechanisms for API deployment.
+- **[[Model Details]]**: Model type (architecture family, parameter count, training paradigm), version, release date, developer identity, license terms, primary contact. For [[Generative AI]] systems, this includes modality (text, image, audio, multimodal), context window, and generation mechanism. In EU AI Act terms, this section maps to the mandatory "general description" and "technical specification" fields.
+- **[[Use Case Descriptions|Intended Use]]**: Primary intended use cases, intended user populations, out-of-scope uses. The Mitchell et al. framework treats explicit out-of-scope documentation as ethically mandatory — if a model should not be used for a particular purpose (e.g., surveillance, unilateral medical diagnosis, autonomous lethal targeting), that must be stated. This section provides the basis for [[Procurement Due Diligence]] by downstream deployers.
+- **[[Performance Metrics|Model Performance]]**: Benchmarked accuracy, precision, recall, F1, BLEU, perplexity, or domain-specific metrics across evaluation sets. Crucially, this section must report performance *disaggregated* by relevant demographic subgroups (age, gender, race, language, disability status) and operating conditions (lighting conditions for vision systems, acoustic conditions for speech systems, document types for NLP systems). [[Fairness Metrics]] such as demographic parity, equalised odds, and individual fairness must be documented alongside aggregate performance.
+- **[[Demographic Performance Analysis|Evaluation Data]]**: Description of evaluation datasets used to generate performance metrics — size, composition, collection methodology, temporal coverage, [[Data Provenance]], known biases in the evaluation set. This is distinct from training data and must be documented separately to prevent conflation of training distribution performance with generalisation.
+- **[[Training Data Information]]**: Training dataset description, sources, scale, pre-processing steps, data governance (consent, licensing, copyright status), known limitations or biases in training data. Under the [[EU AI Act Regulatory Instrument]] (Article 53(1)(d)), providers of General-Purpose AI models must provide a sufficiently detailed training data summary, with a separate copyright policy for training data used after the 2 August 2025 obligation date.
+- **[[Ethical Considerations]]**: Foreseeable harms, misuse risks, dual-use concerns, environmental impact (training compute, energy consumption, carbon footprint), labour conditions for data annotation, privacy implications. The G7 Code of Conduct (2023) and [[OECD]] AI Principles (2024) both require transparency about training compute as a proxy for energy use.
+- **[[Limitations Section|Limitations and Biases]]**: Known technical limitations (hallucination rate, knowledge cutoff, context length constraints), known biases (systematic errors correlated with protected attributes), failure modes, and performance degradation conditions. For large language models, this section typically documents factual error rates, calibration characteristics, and susceptibility to adversarial prompting.
+- **[[Safety Testing Results]]**: Safety evaluation results including [[Red Teaming]] findings, adversarial robustness assessments, [[AI Safety Evaluation]] outputs, jailbreak resilience, toxicity rates, and any pre-deployment safety evaluations conducted by independent third parties or internal safety teams. Post-[[EU AI Act Regulatory Instrument|EU AI Act]] August 2026, high-risk systems must disclose systematic safety testing results.
+- **[[Security Considerations]]**: Data security, model extraction risks, membership inference attack susceptibility, differential privacy guarantees (if applicable), [[Watermarking]] of model outputs, access control mechanisms for API deployment.
 
   ## Use Cases / Major Families
 
   Model cards are produced and consumed across four principal deployment contexts:
 
-  - **Open-Source and Research Model Release**: [[Hugging Face Model Hub]] standardised model card generation into its platform, creating a default template that every model upload prompts. As of March 2025, the hub hosts 1.4 million+ models with varying degrees of model card completeness. Academic research groups at Edinburgh, Oxford, and UCL routinely publish model cards alongside NLP and computer vision model releases, with completeness correlating strongly with author institution (larger, better-resourced institutions produce more complete documentation). Research on 196,211 Hugging Face model cards documented wide variation in metadata completeness and identified model card quality as a predictor of downstream model adoption.
-
-  - **Enterprise Procurement and Vendor Assessment**: Procurers of AI systems — healthcare trusts, financial institutions, government bodies — use model cards as the primary instrument for vendor technical due diligence. UK NHS AI Lab guidance and the CMA's AI Foundation Models review both recommend model cards as a baseline transparency requirement for AI procurement. In financial services, model cards enable assessment against FCA guidance on model risk management (SS1/23) and the PRA's expectations for algorithmic decision-making in credit and underwriting.
-
-  - **Regulatory Compliance Artefact**: Post-EU AI Act, model cards (or equivalent technical documentation packages) are compliance artefacts that must be maintained, versioned, and submitted to notified bodies or national competent authorities for conformity assessment. The EU AI Office (established under the AI Act) is building a model card database for GPAI models registered under Articles 51–55. Compliance cards — automated EU AI Act compliance analyses integrating supply-chain model documentation — represent an emerging subgenre of regulatory model cards.
-
-  - **High-Risk Sector Deployment**: Healthcare AI, credit scoring, employment screening, biometric identification, and law enforcement AI require the most comprehensive model cards. Clinical AI model cards now extend the Mitchell et al. framework to include bias reporting across social determinants of health, not only demographic categories — incorporating socioeconomic status, geographic region, and insurance type as stratification variables alongside race and gender (Soenksen et al., 2023). In [[Blockchain Analytics]] and [[Smart Contract Auditing]], model cards document audit trail provenance, attestation methods, and limitations on blockchain data completeness.
+- **Open-Source and Research Model Release**: [[Hugging Face Model Hub]] standardised model card generation into its platform, creating a default template that every model upload prompts. As of March 2025, the hub hosts 1.4 million+ models with varying degrees of model card completeness. Academic research groups at Edinburgh, Oxford, and UCL routinely publish model cards alongside NLP and computer vision model releases, with completeness correlating strongly with author institution (larger, better-resourced institutions produce more complete documentation). Research on 196,211 Hugging Face model cards documented wide variation in metadata completeness and identified model card quality as a predictor of downstream model adoption.
+- **Enterprise Procurement and Vendor Assessment**: Procurers of AI systems — healthcare trusts, financial institutions, government bodies — use model cards as the primary instrument for vendor technical due diligence. UK NHS AI Lab guidance and the CMA's AI Foundation Models review both recommend model cards as a baseline transparency requirement for AI procurement. In financial services, model cards enable assessment against FCA guidance on model risk management (SS1/23) and the PRA's expectations for algorithmic decision-making in credit and underwriting.
+- **Regulatory Compliance Artefact**: Post-EU AI Act, model cards (or equivalent technical documentation packages) are compliance artefacts that must be maintained, versioned, and submitted to notified bodies or national competent authorities for conformity assessment. The EU AI Office (established under the AI Act) is building a model card database for GPAI models registered under Articles 51–55. Compliance cards — automated EU AI Act compliance analyses integrating supply-chain model documentation — represent an emerging subgenre of regulatory model cards.
+- **High-Risk Sector Deployment**: Healthcare AI, credit scoring, employment screening, biometric identification, and law enforcement AI require the most comprehensive model cards. Clinical AI model cards now extend the Mitchell et al. framework to include bias reporting across social determinants of health, not only demographic categories — incorporating socioeconomic status, geographic region, and insurance type as stratification variables alongside race and gender (Soenksen et al., 2023). In [[Blockchain Analytics]] and [[Smart Contract Auditing]], model cards document audit trail provenance, attestation methods, and limitations on blockchain data completeness.
 
   ## Academic Context
 
   Model card scholarship spans computer science, law, and science and technology studies:
 
-  - **Mitchell et al. (2019)** established the foundational framework, proposing nine sections and the principle of disaggregated evaluation. The paper has been cited over 3,000 times as of 2025 and directly influenced the EU AI Act, NIST AI RMF, and Hugging Face platform design.
-
-  - **Gebru et al. (2018)** introduced the companion "Datasheets for Datasets" framework, addressing the training data documentation gap that model cards assume (a dataset datasheet documents how training data was collected, annotated, and what populations it represents). The model card and datasheet together form the primary documentation artefacts for responsible AI system specification.
-
-  - **Soenksen et al. (2023)** proposed extending clinical AI model cards to incorporate bias reporting across social and non-social determinants of health, arguing that demographic-only stratification obscures performance gaps correlated with socioeconomic vulnerability — a methodological advance incorporated into UK NHS AI Lab deployment guidance.
-
-  - **Bommasani et al. (2024)** developed the [[Foundation Model Transparency Index]] (FMTI), scoring 17 major foundation model providers across 100 transparency dimensions. The index revealed systematic gaps between model card claims and independently verifiable transparency evidence, motivating calls for third-party verification mechanisms.
-
-  - **Hupont et al. (2024)** introduced the AI Transparency Atlas, a framework for scoring and real-time evaluation of model cards across transparency dimensions, enabling automated compliance pre-screening against [[EU AI Act Regulatory Instrument]] requirements.
-
-  - **Ramirez et al. (2024)** conducted a meta-analysis of "Model Cards for Model Reporting" in 2024, reclassifying the ethical considerations section in terms of trustworthiness and risk management categories aligned with the NIST AI RMF and EU AI Act, producing an updated taxonomy that integrates regulatory requirements not present in the 2019 original.
-
-  - The **[[OECD]] AI Policy Observatory** (2024, updated 2025) catalogued model card practices across 50 organisations and 22 jurisdictions, finding significant variation in completeness and format, motivating calls for international harmonisation of model card standards — potentially through ISO/IEC JTC 1/SC 42, the technical committee responsible for [[ISO/IEC 42001]].
+- **Mitchell et al. (2019)** established the foundational framework, proposing nine sections and the principle of disaggregated evaluation. The paper has been cited over 3,000 times as of 2025 and directly influenced the EU AI Act, NIST AI RMF, and Hugging Face platform design.
+- **Gebru et al. (2018)** introduced the companion "Datasheets for Datasets" framework, addressing the training data documentation gap that model cards assume (a dataset datasheet documents how training data was collected, annotated, and what populations it represents). The model card and datasheet together form the primary documentation artefacts for responsible AI system specification.
+- **Soenksen et al. (2023)** proposed extending clinical AI model cards to incorporate bias reporting across social and non-social determinants of health, arguing that demographic-only stratification obscures performance gaps correlated with socioeconomic vulnerability — a methodological advance incorporated into UK NHS AI Lab deployment guidance.
+- **Bommasani et al. (2024)** developed the [[Foundation Model Transparency Index]] (FMTI), scoring 17 major foundation model providers across 100 transparency dimensions. The index revealed systematic gaps between model card claims and independently verifiable transparency evidence, motivating calls for third-party verification mechanisms.
+- **Hupont et al. (2024)** introduced the AI Transparency Atlas, a framework for scoring and real-time evaluation of model cards across transparency dimensions, enabling automated compliance pre-screening against [[EU AI Act Regulatory Instrument]] requirements.
+- **Ramirez et al. (2024)** conducted a meta-analysis of "Model Cards for Model Reporting" in 2024, reclassifying the ethical considerations section in terms of trustworthiness and risk management categories aligned with the NIST AI RMF and EU AI Act, producing an updated taxonomy that integrates regulatory requirements not present in the 2019 original.
+- The **[[OECD]] AI Policy Observatory** (2024, updated 2025) catalogued model card practices across 50 organisations and 22 jurisdictions, finding significant variation in completeness and format, motivating calls for international harmonisation of model card standards — potentially through ISO/IEC JTC 1/SC 42, the technical committee responsible for [[ISO/IEC 42001]].
 
   ## Current Landscape (2026)
 
@@ -192,15 +174,11 @@ A structured documentation format that describes an AI Model's purpose, Performa
 
   Five trajectories will shape AI model card practice over the coming four years:
 
-  - **Automated Model Card Generation**: As model-card completion rates on Hugging Face remain low (approximately 20–30% of models carry complete cards as of 2025), tools for automated model card generation from training run metadata, evaluation results, and code repositories are emerging. Projects like Hugging Face's automated card generation pipeline, NIST's AI 100-4 guidance on automated documentation, and EU AI Office tooling aim to reduce the marginal cost of producing a complete model card from days to hours, addressing the documentation burden that is the primary barrier to voluntary compliance.
-
-  - **Dynamic and Versioned Model Cards**: Static model cards become outdated as models are fine-tuned, updated, or deployed in new contexts. ISO/IEC 42005 lifecycle impact assessment requirements imply that model documentation must be continuously updated — moving from a static publication to a versioned, live document. Blockchain-anchored version histories and API-accessible model card endpoints (rather than static markdown files) are emerging architectural patterns.
-
-  - **Third-Party Verification Infrastructure**: The [[Foundation Model Transparency Index]] exposed the gap between model card claims and independently verifiable evidence. Regulatory regimes (EU AI Act notified bodies, UK AI Security Institute evaluations) are building third-party verification capacity to independently test model card claims, particularly for training data composition, [[Demographic Performance Analysis]], and [[Safety Testing Results]]. This creates demand for standardised evaluation protocols that allow claims to be reproducibly verified.
-
-  - **International Harmonisation**: The OECD's finding of significant cross-jurisdictional variation in model card format and content is motivating ISO/IEC JTC 1/SC 42 work toward an international model card standard that harmonises EU AI Act, NIST AI RMF, and Asian regulatory requirements. Convergence on a common information model — even if allowing format variation — would substantially reduce compliance costs for globally-deployed AI systems.
-
-  - **Generative AI Specialisation**: The extension of model card requirements to foundation models and [[Generative AI]] systems will drive format specialisation. Candidate new fields include: inference-time carbon footprint per 1,000 tokens; refusal rate on specified harmful request categories; knowledge cutoff date and retrieval-augmentation architecture disclosure; and synthetic data disclosure for models trained on AI-generated data (a growing concern as the proportion of synthetic training data increases).
+- **Automated Model Card Generation**: As model-card completion rates on Hugging Face remain low (approximately 20–30% of models carry complete cards as of 2025), tools for automated model card generation from training run metadata, evaluation results, and code repositories are emerging. Projects like Hugging Face's automated card generation pipeline, NIST's AI 100-4 guidance on automated documentation, and EU AI Office tooling aim to reduce the marginal cost of producing a complete model card from days to hours, addressing the documentation burden that is the primary barrier to voluntary compliance.
+- **Dynamic and Versioned Model Cards**: Static model cards become outdated as models are fine-tuned, updated, or deployed in new contexts. ISO/IEC 42005 lifecycle impact assessment requirements imply that model documentation must be continuously updated — moving from a static publication to a versioned, live document. Blockchain-anchored version histories and API-accessible model card endpoints (rather than static markdown files) are emerging architectural patterns.
+- **Third-Party Verification Infrastructure**: The [[Foundation Model Transparency Index]] exposed the gap between model card claims and independently verifiable evidence. Regulatory regimes (EU AI Act notified bodies, UK AI Security Institute evaluations) are building third-party verification capacity to independently test model card claims, particularly for training data composition, [[Demographic Performance Analysis]], and [[Safety Testing Results]]. This creates demand for standardised evaluation protocols that allow claims to be reproducibly verified.
+- **International Harmonisation**: The OECD's finding of significant cross-jurisdictional variation in model card format and content is motivating ISO/IEC JTC 1/SC 42 work toward an international model card standard that harmonises EU AI Act, NIST AI RMF, and Asian regulatory requirements. Convergence on a common information model — even if allowing format variation — would substantially reduce compliance costs for globally-deployed AI systems.
+- **Generative AI Specialisation**: The extension of model card requirements to foundation models and [[Generative AI]] systems will drive format specialisation. Candidate new fields include: inference-time carbon footprint per 1,000 tokens; refusal rate on specified harmful request categories; knowledge cutoff date and retrieval-augmentation architecture disclosure; and synthetic data disclosure for models trained on AI-generated data (a growing concern as the proportion of synthetic training data increases).
 
   ## Research & Literature
 
@@ -232,5 +210,5 @@ A structured documentation format that describes an AI Model's purpose, Performa
   26. Singapore IMDA (2024). Model AI Governance Framework for Generative AI. Infocomm Media Development Authority. https://oecd.ai/en/catalogue/tools/model-ai-governance-framework-for-generative-ai
   27. Elevateconsult (2025). EU AI Code of Practice: 2025 Guide + ISO 42001 Map. https://elevateconsult.com/insights/eu-ai-code-of-practice-iso-42001/
 
-- ### Provenance
+### Provenance
 

@@ -1,4 +1,3 @@
-
 AI Application is the taxonomy hub for deployed uses of artificial intelligence across domains — encompassing conversational AI, computer vision, generative AI, healthcare AI, autonomous systems, fraud detection, and multimodal AI. It bridges AI research and real-world deployment, grouping systems by the function they perform rather than the techniques they use.
 
 AI Application is the top-level category grouping all deployed uses of AI technology. Unlike AI technique categories that organise by method, AI Application organises by purpose and deployment context — the problems being solved and the domains being served.

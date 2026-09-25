@@ -1,499 +1,541 @@
-
 The property of an AI system whereby it produces equitable outcomes and avoids creating or reinforcing unjustifiable disparities across different demographic groups or individuals, measured through various mathematical definitions and ethical principles including demographic parity, equalized odds, equal opportunity, calibration, and individual fairness.
 
-- ### Semantic Classification
+### Semantic Classification
 
-- ### Content
-  - The property of an AI system whereby it produces equitable outcomes and avoids creating or reinforcing unjustifiable disparities across different demographic groups or individuals, measured through various mathematical definitions and ethical principles.
+### Content
+
+- The property of an AI system whereby it produces equitable outcomes and avoids creating or reinforcing unjustifiable disparities across different demographic groups or individuals, measured through various mathematical definitions and ethical principles.
 
   #### Key Characteristics
   ### Types of Fairness
 
-		  #### 1. Group Fairness (Statistical Parity)
+    #### 1. Group Fairness (Statistical Parity)
 
-		  **Demographic Parity**
-		  - Equal positive prediction rates across groups
-		  - $$P(\hat{Y}=1|A=0) = P(\hat{Y}=1|A=1)$$
-		  - Where A is protected attribute (e.g., gender)
+    **Demographic Parity**
 
-		  **Example**: Equal loan approval rates for men and women
+  - Equal positive prediction rates across groups
+  - $$P(\hat{Y}=1|A=0) = P(\hat{Y}=1|A=1)$$
+  - Where A is protected attribute (e.g., gender)
 
-		  **Equalized Odds**
-		  - Equal true positive and false positive rates across groups
-		  - $$P(\hat{Y}=1|Y=1,A=0) = P(\hat{Y}=1|Y=1,A=1)$$
-		  - $$P(\hat{Y}=1|Y=0,A=0) = P(\hat{Y}=1|Y=0,A=1)$$
+    **Example**: Equal loan approval rates for men and women
 
-		  **Example**: Recidivism prediction equally accurate for all races
+    **Equalized Odds**
 
-		  **Equal Opportunity**
-		  - Equal true positive rates (recall) across groups
-		  - $$P(\hat{Y}=1|Y=1,A=0) = P(\hat{Y}=1|Y=1,A=1)$$
+  - Equal true positive and false positive rates across groups
+  - $$P(\hat{Y}=1|Y=1,A=0) = P(\hat{Y}=1|Y=1,A=1)$$
+  - $$P(\hat{Y}=1|Y=0,A=0) = P(\hat{Y}=1|Y=0,A=1)$$
 
-		  **Example**: Qualified candidates equally likely to be hired regardless of gender
+    **Example**: Recidivism prediction equally accurate for all races
 
-		  **Calibration**
-		  - Predicted probabilities match actual outcomes across groups
-		  - $$P(Y=1|\hat{Y}=p,A=0) = P(Y=1|\hat{Y}=p,A=1)$$
+    **Equal Opportunity**
 
-		  **Example**: 70% risk score means 70% probability for all groups
+  - Equal true positive rates (recall) across groups
+  - $$P(\hat{Y}=1|Y=1,A=0) = P(\hat{Y}=1|Y=1,A=1)$$
 
-		  #### 2. Individual Fairness
+    **Example**: Qualified candidates equally likely to be hired regardless of gender
 
-		  **Similarity-Based Fairness**
-		  - Similar individuals receive similar outcomes
-		  - Dwork et al.: "Treat similar individuals similarly"
-		  - Lipschitz condition: $$d(f(x_1), f(x_2)) \leq L \cdot d(x_1, x_2)$$
+    **Calibration**
 
-		  **Example**: Two applicants with same qualifications get similar loan terms
+  - Predicted probabilities match actual outcomes across groups
+  - $$P(Y=1|\hat{Y}=p,A=0) = P(Y=1|\hat{Y}=p,A=1)$$
 
-		  **Counterfactual Fairness**
-		  - Decision unchanged if protected attribute were different
-		  - Kusner et al.: Causal definition of fairness
+    **Example**: 70% risk score means 70% probability for all groups
 
-		  **Example**: Loan decision same regardless of applicant's race
+    #### 2. Individual Fairness
 
-		  #### 3. Procedural Fairness
+    **Similarity-Based Fairness**
 
-		  - Transparency in decision-making process
-		  - Ability to contest decisions
-		  - Right to explanation
-		  - Human oversight and appeal mechanisms
+  - Similar individuals receive similar outcomes
+  - Dwork et al.: "Treat similar individuals similarly"
+  - Lipschitz condition: $$d(f(x_1), f(x_2)) \leq L \cdot d(x_1, x_2)$$
 
-		  #### 4. Distributive Fairness
+    **Example**: Two applicants with same qualifications get similar loan terms
 
-		  - Equitable distribution of benefits and burdens
-		  - Consideration of existing inequalities
-		  - Justice in outcomes
+    **Counterfactual Fairness**
 
-		  ## Fairness Metrics
+  - Decision unchanged if protected attribute were different
+  - Kusner et al.: Causal definition of fairness
 
-		  ### Classification Metrics
+    **Example**: Loan decision same regardless of applicant's race
 
-		  1. **Demographic Parity Difference (DPD)**
-		     ```
-		     DPD = |P(Ŷ=1|A=0) - P(Ŷ=1|A=1)|
-		     ```
-		     - Range: [0, 1]
-		     - Threshold: Often < 0.1 for "fairness"
+    #### 3. Procedural Fairness
 
-		  2. **Disparate Impact (DI)**
-		     ```
-		     DI = P(Ŷ=1|A=0) / P(Ŷ=1|A=1)
-		     ```
-		     - Range: [0, ∞]
-		     - 80% rule: DI ≥ 0.8 (EEOC guideline)
+  - Transparency in decision-making process
+  - Ability to contest decisions
+  - Right to explanation
+  - Human oversight and appeal mechanisms
 
-		  3. **Equalized Odds Difference (EOD)**
-		     ```
-		     EOD = |TPR₀ - TPR₁| + |FPR₀ - FPR₁|
-		     ```
+    #### 4. Distributive Fairness
 
-		  4. **Average Odds Difference (AOD)**
-		     ```
-		     AOD = (|TPR₀ - TPR₁| + |FPR₀ - FPR₁|) / 2
-		     ```
+  - Equitable distribution of benefits and burdens
+  - Consideration of existing inequalities
+  - Justice in outcomes
 
-		  ### Ranking Metrics
+    ## Fairness Metrics
 
-		  1. **Normalized Discounted Cumulative Gain (NDCG) Parity**
-		  2. **Exposure Parity**
-		  3. **Representation Metrics**
+    ### Classification Metrics
 
-		  ### Impossibility Theorems
+    1. **Demographic Parity Difference (DPD)**
+     ```
+     DPD = |P(Ŷ=1|A=0) - P(Ŷ=1|A=1)|
+     ```
 
-		  **Key Insight**: Multiple fairness definitions cannot be simultaneously satisfied (except in trivial cases)
+    - Range: [0, 1]
+    - Threshold: Often < 0.1 for "fairness"
 
-		  **Chouldechova (2017)**: Cannot simultaneously achieve:
-		  - Calibration
-		  - Equal false positive rates
-		  - Equal false negative rates
+      2. **Disparate Impact (DI)**
+      ```
+      DI = P(Ŷ=1|A=0) / P(Ŷ=1|A=1)
+      ```
 
-		  **Kleinberg et al. (2017)**: Cannot simultaneously satisfy:
-		  - Calibration
-		  - Balance for positive class
-		  - Balance for negative class
+    - Range: [0, ∞]
+    - 80% rule: DI ≥ 0.8 (EEOC guideline)
 
-		  **Implication**: Fairness requires trade-offs and context-specific choices
+      3. **Equalized Odds Difference (EOD)**
+      ```
+      EOD = |TPR₀ - TPR₁| + |FPR₀ - FPR₁|
+      ```
 
-		  ## Relationships
+      4. **Average Odds Difference (AOD)**
+      ```
+      AOD = (|TPR₀ - TPR₁| + |FPR₀ - FPR₁|) / 2
+      ```
 
-		  - **Component Of**: AI Trustworthiness (AI-0061)
-		  - **Opposed To**: Bias (AI-0067), Harmful Bias (AI-0084)
-		  - **Enables**: Non-discrimination, Equal Treatment
-		  - **Requires**: Bias Detection, Bias Mitigation
-		  - **Related To**: Accountability (AI-0068), Transparency (AI-0062)
+      ### Ranking Metrics
 
-		  ## Sources of Unfairness
+      1. **Normalized Discounted Cumulative Gain (NDCG) Parity**
+      2. **Exposure Parity**
+      3. **Representation Metrics**
 
-		  ### Data-Related
+      ### Impossibility Theorems
 
-		  1. **Historical Bias**
-		     - Past discrimination in training data
-		     - Example: Hiring data reflects historical gender imbalance
+      **Key Insight**: Multiple fairness definitions cannot be simultaneously satisfied (except in trivial cases)
 
-		  2. **Representation Bias**
-		     - Underrepresentation of certain groups
-		     - Example: Facial recognition trained primarily on one ethnicity
+      **Chouldechova (2017)**: Cannot simultaneously achieve:
 
-		  3. **Measurement Bias**
-		     - Systematic errors in data collection
-		     - Example: Arrest records as proxy for crime (subject to policing bias)
+  - Calibration
+  - Equal false positive rates
+  - Equal false negative rates
 
-		  4. **Aggregation Bias**
-		     - Inappropriate data aggregation
-		     - Example: One-size-fits-all model for diverse populations
+    **Kleinberg et al. (2017)**: Cannot simultaneously satisfy:
 
-		  ### Algorithm-Related
+  - Calibration
+  - Balance for positive class
+  - Balance for negative class
 
-		  1. **Feature Selection Bias**
-		     - Use of proxy variables for protected attributes
-		     - Example: Zip code as proxy for race
+    **Implication**: Fairness requires trade-offs and context-specific choices
 
-		  2. **Optimization Bias**
-		     - Objective function doesn't include fairness
-		     - Optimization for majority group
+    ## Relationships
 
-		  3. **Evaluation Bias**
-		     - Metrics evaluated on non-representative data
-		     - Fairness not measured
+  - **Component Of**: AI Trustworthiness (AI-0061)
+  - **Opposed To**: Bias (AI-0067), Harmful Bias (AI-0084)
+  - **Enables**: Non-discrimination, Equal Treatment
+  - **Requires**: Bias Detection, Bias Mitigation
+  - **Related To**: Accountability (AI-0068), Transparency (AI-0062)
 
-		  ### Deployment-Related
+    ## Sources of Unfairness
 
-		  1. **Automation Bias**
-		     - Over-reliance on system outputs
-		     - Reduced human oversight
+    ### Data-Related
 
-		  2. **Feedback Loops**
-		     - System reinforces existing biases
-		     - Example: Predictive policing creates more arrests in over-policed areas
+    1. **Historical Bias**
 
-		  3. **Population Shift**
-		     - Model deployed on different population than training
-		     - Fairness not maintained across contexts
+    - Past discrimination in training data
+    - Example: Hiring data reflects historical gender imbalance
 
-		  ## Bias Mitigation Strategies
+      2. **Representation Bias**
 
-		  ### Pre-Processing (Data)
+    - Underrepresentation of certain groups
+    - Example: Facial recognition trained primarily on one ethnicity
 
-		  1. **Re-sampling**
-		     - Oversample minority groups
-		     - Undersample majority groups
-		     - Synthetic data generation (SMOTE)
+      3. **Measurement Bias**
 
-		  2. **Re-weighting**
-		     - Assign weights to instances
-		     - Balance group representation
+    - Systematic errors in data collection
+    - Example: Arrest records as proxy for crime (subject to policing bias)
 
-		  3. **Data Augmentation**
-		     - Generate additional examples
-		     - Balance across attributes
+      4. **Aggregation Bias**
 
-		  4. **Fair Representation Learning**
-		     - Learn bias-free representations
-		     - Remove protected attribute information
+    - Inappropriate data aggregation
+    - Example: One-size-fits-all model for diverse populations
 
-		  ### In-Processing (Algorithm)
+      ### Algorithm-Related
 
-		  1. **Fairness Constraints**
-		     - Add fairness as optimization constraint
-		     - Constrained optimization
+      1. **Feature Selection Bias**
 
-		  2. **Adversarial Debiasing**
-		     - Train model to be invariant to protected attributes
-		     - Adversarial network removes bias
+    - Use of proxy variables for protected attributes
+    - Example: Zip code as proxy for race
 
-		  3. **Prejudice Remover**
-		     - Regularization term for fairness
-		     - Penalize discrimination
+      2. **Optimization Bias**
 
-		  4. **Fair Regularization**
-		     - Add fairness penalty to loss function
-		     - Balance accuracy and fairness
+    - Objective function doesn't include fairness
+    - Optimization for majority group
 
-		  ### Post-Processing (Outputs)
+      3. **Evaluation Bias**
 
-		  1. **Threshold Optimization**
-		     - Group-specific decision thresholds
-		     - Achieve demographic parity or equalized odds
+    - Metrics evaluated on non-representative data
+    - Fairness not measured
 
-		  2. **Calibration**
-		     - Adjust probabilities across groups
-		     - Ensure calibration fairness
+      ### Deployment-Related
 
-		  3. **Reject Option Classification**
-		     - Withhold predictions near decision boundary
-		     - Request human review for borderline cases
+      1. **Automation Bias**
 
-		  ## Domain-Specific Fairness
+    - Over-reliance on system outputs
+    - Reduced human oversight
 
-		  ### Employment
+      2. **Feedback Loops**
 
-		  - **Regulation**: Equal Employment Opportunity laws
-		  - **Metric**: 80% rule (disparate impact)
-		  - **Approach**: Remove protected attributes, monitor outcomes
-		  - **Example**: Resume screening systems
+    - System reinforces existing biases
+    - Example: Predictive policing creates more arrests in over-policed areas
 
-		  ### Credit and Lending
+      3. **Population Shift**
 
-		  - **Regulation**: Equal Credit Opportunity Act, Fair Lending laws
-		  - **Metric**: Demographic parity in approval rates
-		  - **Approach**: Explainable models, disparate impact testing
-		  - **Example**: Credit scoring, loan approval
+    - Model deployed on different population than training
+    - Fairness not maintained across contexts
 
-		  ### Criminal Justice
+      ## Bias Mitigation Strategies
 
-		  - **Regulation**: Constitutional protections, due process
-		  - **Metric**: Equalized odds (equal accuracy across races)
-		  - **Approach**: Transparent risk scores, human oversight
-		  - **Example**: Recidivism prediction (COMPAS controversy)
+      ### Pre-Processing (Data)
 
-		  ### Healthcare
+      1. **Re-sampling**
 
-		  - **Regulation**: Anti-discrimination laws, medical ethics
-		  - **Metric**: Equal opportunity (equal benefit)
-		  - **Approach**: Clinical validation across populations
-		  - **Example**: Diagnostic algorithms, treatment recommendations
+    - Oversample minority groups
+    - Undersample majority groups
+    - Synthetic data generation (SMOTE)
 
-		  ### Education
+      2. **Re-weighting**
 
-		  - **Regulation**: Title IX, disability rights laws
-		  - **Metric**: Individual fairness, equal opportunity
-		  - **Approach**: Personalized learning, accommodation
-		  - **Example**: Admissions, student assessment
+    - Assign weights to instances
+    - Balance group representation
 
-		  ## Regulatory Requirements
+      3. **Data Augmentation**
 
-		  ### EU AI Act
+    - Generate additional examples
+    - Balance across attributes
 
-		  **Article 10: Data and Data Governance**
-		  - Training datasets free from bias
-		  - Examination of possible biases
-		  - Appropriate data governance measures
+      4. **Fair Representation Learning**
 
-		  **Recital 44**: Fairness as core requirement for high-risk systems
+    - Learn bias-free representations
+    - Remove protected attribute information
 
-		  ### GDPR
+      ### In-Processing (Algorithm)
 
-		  **Article 22**: Automated Decision-Making
-		  - Right not to be subject to solely automated decisions
-		  - Safeguards including right to explanation
+      1. **Fairness Constraints**
 
-		  **Recital 71**: Protection against discriminatory effects
+    - Add fairness as optimization constraint
+    - Constrained optimization
 
-		  ### US Equal Employment Opportunity Commission (EEOC)
+      2. **Adversarial Debiasing**
 
-		  **Four-Fifths Rule (80% Rule)**
-		  - Selection rate for protected group ≥ 80% of highest group
-		  - Adverse impact threshold
+    - Train model to be invariant to protected attributes
+    - Adversarial network removes bias
 
-		  ## Challenges and Debates
+      3. **Prejudice Remover**
 
-		  ### Philosophical Tensions
+    - Regularization term for fairness
+    - Penalize discrimination
 
-		  1. **Formal vs. Substantive Fairness**
-		     - Mathematical definitions vs. justice principles
-		     - Metrics vs. meaningful equity
+      4. **Fair Regularization**
 
-		  2. **Individual vs. Group Fairness**
-		     - Treating individuals fairly vs. achieving group parity
-		     - Tensions between approaches
+    - Add fairness penalty to loss function
+    - Balance accuracy and fairness
 
-		  3. **Fairness vs. Accuracy**
-		     - Performance costs of fairness constraints
-		     - When to trade accuracy for fairness
+      ### Post-Processing (Outputs)
 
-		  4. **Procedural vs. Outcome Fairness**
-		     - Fair process vs. fair results
-		     - Which takes priority?
+      1. **Threshold Optimization**
 
-		  ### Practical Challenges
+    - Group-specific decision thresholds
+    - Achieve demographic parity or equalized odds
 
-		  1. **Defining Protected Groups**
-		     - Which attributes to protect
-		     - Intersectionality (multiple protected attributes)
-		     - Proxy variables
+      2. **Calibration**
 
-		  2. **Choosing Fairness Metric**
-		     - Context-dependent appropriateness
-		     - Impossibility of satisfying all metrics
-		     - Stakeholder disagreement
+    - Adjust probabilities across groups
+    - Ensure calibration fairness
 
-		  3. **Measuring Fairness**
-		     - Data availability for subgroups
-		     - Statistical significance
-		     - Temporal stability
+      3. **Reject Option Classification**
 
-		  4. **Balancing Multiple Objectives**
-		     - Accuracy, fairness, privacy, interpretability
-		     - Multi-objective optimization
-		     - Pareto frontiers
+    - Withhold predictions near decision boundary
+    - Request human review for borderline cases
 
-		  ## Best Practices
+      ## Domain-Specific Fairness
 
-		  1. **Multi-Stakeholder Input**
-		     - Include affected communities
-		     - Diverse development teams
-		     - External audits
+      ### Employment
 
-		  2. **Context-Appropriate Metrics**
-		     - Choose fairness definition based on domain
-		     - Document rationale for metric selection
-		     - Consider multiple metrics
+  - **Regulation**: Equal Employment Opportunity laws
+  - **Metric**: 80% rule (disparate impact)
+  - **Approach**: Remove protected attributes, monitor outcomes
+  - **Example**: Resume screening systems
 
-		  3. **Intersectional Analysis**
-		     - Examine fairness across intersections
-		     - Not just single protected attributes
-		     - Example: Black women, elderly disabled
+    ### Credit and Lending
 
-		  4. **Continuous Monitoring**
-		     - Track fairness metrics over time
-		     - Detect fairness degradation
-		     - Feedback loop management
+  - **Regulation**: Equal Credit Opportunity Act, Fair Lending laws
+  - **Metric**: Demographic parity in approval rates
+  - **Approach**: Explainable models, disparate impact testing
+  - **Example**: Credit scoring, loan approval
 
-		  5. **Transparency and Documentation**
-		     - Document fairness considerations
-		     - Report fairness metrics
-		     - Enable external review
+    ### Criminal Justice
 
-		  6. **Human Oversight**
-		     - Human-in-the-loop for critical decisions
-		     - Appeal mechanisms
-		     - Contestability
+  - **Regulation**: Constitutional protections, due process
+  - **Metric**: Equalized odds (equal accuracy across races)
+  - **Approach**: Transparent risk scores, human oversight
+  - **Example**: Recidivism prediction (COMPAS controversy)
 
-		  7. **Proactive Bias Testing**
-		     - Test before deployment
-		     - Red-team for fairness
-		     - Adversarial testing
+    ### Healthcare
 
-		  ## Tools and Frameworks
+  - **Regulation**: Anti-discrimination laws, medical ethics
+  - **Metric**: Equal opportunity (equal benefit)
+  - **Approach**: Clinical validation across populations
+  - **Example**: Diagnostic algorithms, treatment recommendations
 
-		  1. **AI Fairness 360 (IBM)**
-		     - 70+ fairness metrics
-		     - 10+ bias mitigation algorithms
-		     - Open source
+    ### Education
 
-		  2. **Fairlearn (Microsoft)**
-		     - Fairness assessment
-		     - Mitigation algorithms
-		     - Integration with scikit-learn
+  - **Regulation**: Title IX, disability rights laws
+  - **Metric**: Individual fairness, equal opportunity
+  - **Approach**: Personalized learning, accommodation
+  - **Example**: Admissions, student assessment
 
-		  3. **What-If Tool (Google)**
-		     - Visual fairness exploration
-		     - Counterfactual analysis
-		     - Interactive interface
+    ## Regulatory Requirements
 
-		  4. **Aequitas (University of Chicago)**
-		     - Fairness auditing
-		     - Bias report generation
-		     - Multiple metrics
+    ### EU AI Act
 
-		  ## Related Terms
+    **Article 10: Data and Data Governance**
 
-		  - **AI Trustworthiness** (AI-0061)
-		  - **Bias** (AI-0067)
-		  - **Harmful Bias** (AI-0084)
-		  - **Accountability** (AI-0068)
-		  - **Transparency** (AI-0062)
-		  - **Non-discrimination** (AI-0038)
+  - Training datasets free from bias
+  - Examination of possible biases
+  - Appropriate data governance measures
 
-		  ## Version History
+    **Recital 44**: Fairness as core requirement for high-risk systems
 
-		  - **1.0** (2025-10-27): Initial definition based on ISO/IEC TR 24027:2021 and NIST AI RMF
+    ### GDPR
 
-		  ---
+    **Article 22**: Automated Decision-Making
 
-		  *This definition reflects the multifaceted and context-dependent nature of fairness in AI systems, acknowledging both mathematical formalizations and ethical considerations.*
+  - Right not to be subject to solely automated decisions
+  - Safeguards including right to explanation
 
-  # Updated Ontology Entry: Fairness
+    **Recital 71**: Protection against discriminatory effects
 
-  ## Academic Context
+    ### US Equal Employment Opportunity Commission (EEOC)
 
-  - Fairness in artificial intelligence represents a multifaceted endeavour to ensure AI systems treat all individuals and demographic groups equitably[1][2]
-  - Encompasses prevention of discriminatory outcomes linked to protected characteristics including ethnicity, gender, religion, and socioeconomic status[1][3]
-  - Rooted in longstanding principles of non-discrimination spanning moral philosophy, human rights frameworks, and legal protections[3]
-  - Fundamentally distinct from mere accuracy or performance metrics—a system can be technically proficient whilst remaining profoundly unfair[3]
+    **Four-Fifths Rule (80% Rule)**
 
-  - The field emerged as a formal discipline following high-profile cases demonstrating algorithmic bias in consequential systems
-  - COMPAS recidivism prediction software exemplified how ostensibly objective algorithms perpetuate racial disparities[1]
-  - Prompted recognition that training data devoid of undesirable biases remains exceptionally difficult to obtain[3]
+  - Selection rate for protected group ≥ 80% of highest group
+  - Adverse impact threshold
+
+    ## Challenges and Debates
+
+    ### Philosophical Tensions
+
+    1. **Formal vs. Substantive Fairness**
+
+    - Mathematical definitions vs. justice principles
+    - Metrics vs. meaningful equity
+
+      2. **Individual vs. Group Fairness**
+
+    - Treating individuals fairly vs. achieving group parity
+    - Tensions between approaches
+
+      3. **Fairness vs. Accuracy**
+
+    - Performance costs of fairness constraints
+    - When to trade accuracy for fairness
+
+      4. **Procedural vs. Outcome Fairness**
+
+    - Fair process vs. fair results
+    - Which takes priority?
+
+      ### Practical Challenges
+
+      1. **Defining Protected Groups**
+
+    - Which attributes to protect
+    - Intersectionality (multiple protected attributes)
+    - Proxy variables
+
+      2. **Choosing Fairness Metric**
+
+    - Context-dependent appropriateness
+    - Impossibility of satisfying all metrics
+    - Stakeholder disagreement
+
+      3. **Measuring Fairness**
+
+    - Data availability for subgroups
+    - Statistical significance
+    - Temporal stability
+
+      4. **Balancing Multiple Objectives**
+
+    - Accuracy, fairness, privacy, interpretability
+    - Multi-objective optimization
+    - Pareto frontiers
+
+      ## Best Practices
+
+      1. **Multi-Stakeholder Input**
+
+    - Include affected communities
+    - Diverse development teams
+    - External audits
+
+      2. **Context-Appropriate Metrics**
+
+    - Choose fairness definition based on domain
+    - Document rationale for metric selection
+    - Consider multiple metrics
+
+      3. **Intersectional Analysis**
+
+    - Examine fairness across intersections
+    - Not just single protected attributes
+    - Example: Black women, elderly disabled
+
+      4. **Continuous Monitoring**
+
+    - Track fairness metrics over time
+    - Detect fairness degradation
+    - Feedback loop management
+
+      5. **Transparency and Documentation**
+
+    - Document fairness considerations
+    - Report fairness metrics
+    - Enable external review
+
+      6. **Human Oversight**
+
+    - Human-in-the-loop for critical decisions
+    - Appeal mechanisms
+    - Contestability
+
+      7. **Proactive Bias Testing**
+
+    - Test before deployment
+    - Red-team for fairness
+    - Adversarial testing
+
+      ## Tools and Frameworks
+
+      1. **AI Fairness 360 (IBM)**
+
+    - 70+ fairness metrics
+    - 10+ bias mitigation algorithms
+    - Open source
+
+      2. **Fairlearn (Microsoft)**
+
+    - Fairness assessment
+    - Mitigation algorithms
+    - Integration with scikit-learn
+
+      3. **What-If Tool (Google)**
+
+    - Visual fairness exploration
+    - Counterfactual analysis
+    - Interactive interface
+
+      4. **Aequitas (University of Chicago)**
+
+    - Fairness auditing
+    - Bias report generation
+    - Multiple metrics
+
+      ## Related Terms
+
+  - **AI Trustworthiness** (AI-0061)
+  - **Bias** (AI-0067)
+  - **Harmful Bias** (AI-0084)
+  - **Accountability** (AI-0068)
+  - **Transparency** (AI-0062)
+  - **Non-discrimination** (AI-0038)
+
+    ## Version History
+
+  - **1.0** (2025-10-27): Initial definition based on ISO/IEC TR 24027:2021 and NIST AI RMF
+
+    ---
+
+    *This definition reflects the multifaceted and context-dependent nature of fairness in AI systems, acknowledging both mathematical formalizations and ethical considerations.*
+
+    # Updated Ontology Entry: Fairness
+
+    ## Academic Context
+
+- Fairness in artificial intelligence represents a multifaceted endeavour to ensure AI systems treat all individuals and demographic groups equitably[1][2]
+- Encompasses prevention of discriminatory outcomes linked to protected characteristics including ethnicity, gender, religion, and socioeconomic status[1][3]
+- Rooted in longstanding principles of non-discrimination spanning moral philosophy, human rights frameworks, and legal protections[3]
+- Fundamentally distinct from mere accuracy or performance metrics—a system can be technically proficient whilst remaining profoundly unfair[3]
+- The field emerged as a formal discipline following high-profile cases demonstrating algorithmic bias in consequential systems
+- COMPAS recidivism prediction software exemplified how ostensibly objective algorithms perpetuate racial disparities[1]
+- Prompted recognition that training data devoid of undesirable biases remains exceptionally difficult to obtain[3]
 
   ## Current Landscape (2025)
 
-  - Definitional plurality remains the field's defining characteristic
-  - No universally accepted definition of fairness exists across machine learning applications[1]
-  - Fairness can be interpreted through frameworks of equality, equity, and justice, each emphasising distinct aspects of equitable treatment[1]
-  - What constitutes fairness in one domain may differ substantially in another—a rather inconvenient truth for those seeking universal solutions[1]
-
-  - High-stakes deployment contexts drive urgency
-  - Predictive policing, employment screening, and credit scoring represent domains where algorithmic decisions profoundly affect individuals[3]
-  - AI healthcare market valued at approximately $26 billion in 2024 and projected to exceed $500 billion by 2032 (CAGR ~44%), necessitating robust fairness frameworks[4]
-  - Medical diagnostics increasingly employ AI-assisted systems where fairness considerations intersect with clinical accuracy requirements[4]
-
-  - Technical measurement approaches
-  - Researchers have developed metrics comparing predicted outcomes against actual outcomes and associated likelihoods[1]
-  - Fairness metrics scrutinise relationships between predictive results and sensitive attributes within machine learning models[1]
-  - Multiple competing fairness definitions create mathematical incompatibility—no single model can simultaneously satisfy all fairness criteria[4]
-
-  - Regulatory environment (2025)
-  - United States: No comprehensive federal AI legislation; existing frameworks including Fair Credit Reporting Act (FCRA) and Equal Credit Opportunity Act (ECOA) address AI fairness indirectly[5]
-  - Federal Trade Commission (FTC) actively warns against racially biased algorithms and discriminatory deployment practices[5]
-  - European Union: AI Act (adopted 2024) establishes binding requirements for transparency, accountability, and non-discrimination in high-risk AI systems[5]
-  - Canada: Directive on Automated Decision-Making mandates transparency, risk assessment, user notification, and human intervention options for government-deployed AI[5]
-
-  - UK and North England context
-  - Information Commissioner's Office (ICO) guidance emphasises handling personal data in ways people reasonably expect, avoiding unjustified adverse effects[8]
-  - UK GDPR framework requires fairness considerations in automated decision-making affecting individuals[8]
-  - Manchester and Leeds emerging as UK AI ethics research hubs, with institutional focus on fairness frameworks applicable to public sector deployment
-  - Newcastle and Sheffield contributing to regional AI governance discussions, particularly regarding employment and public service applications
+- Definitional plurality remains the field's defining characteristic
+- No universally accepted definition of fairness exists across machine learning applications[1]
+- Fairness can be interpreted through frameworks of equality, equity, and justice, each emphasising distinct aspects of equitable treatment[1]
+- What constitutes fairness in one domain may differ substantially in another—a rather inconvenient truth for those seeking universal solutions[1]
+- High-stakes deployment contexts drive urgency
+- Predictive policing, employment screening, and credit scoring represent domains where algorithmic decisions profoundly affect individuals[3]
+- AI healthcare market valued at approximately $26 billion in 2024 and projected to exceed $500 billion by 2032 (CAGR ~44%), necessitating robust fairness frameworks[4]
+- Medical diagnostics increasingly employ AI-assisted systems where fairness considerations intersect with clinical accuracy requirements[4]
+- Technical measurement approaches
+- Researchers have developed metrics comparing predicted outcomes against actual outcomes and associated likelihoods[1]
+- Fairness metrics scrutinise relationships between predictive results and sensitive attributes within machine learning models[1]
+- Multiple competing fairness definitions create mathematical incompatibility—no single model can simultaneously satisfy all fairness criteria[4]
+- Regulatory environment (2025)
+- United States: No comprehensive federal AI legislation; existing frameworks including Fair Credit Reporting Act (FCRA) and Equal Credit Opportunity Act (ECOA) address AI fairness indirectly[5]
+- Federal Trade Commission (FTC) actively warns against racially biased algorithms and discriminatory deployment practices[5]
+- European Union: AI Act (adopted 2024) establishes binding requirements for transparency, accountability, and non-discrimination in high-risk AI systems[5]
+- Canada: Directive on Automated Decision-Making mandates transparency, risk assessment, user notification, and human intervention options for government-deployed AI[5]
+- UK and North England context
+- Information Commissioner's Office (ICO) guidance emphasises handling personal data in ways people reasonably expect, avoiding unjustified adverse effects[8]
+- UK GDPR framework requires fairness considerations in automated decision-making affecting individuals[8]
+- Manchester and Leeds emerging as UK AI ethics research hubs, with institutional focus on fairness frameworks applicable to public sector deployment
+- Newcastle and Sheffield contributing to regional AI governance discussions, particularly regarding employment and public service applications
 
   ## Research & Literature
 
-  - Foundational works and current scholarship
-  - Koombea AI Research (2024). "Bias and Fairness in AI: Understanding the Challenges and Solutions." Available at: https://ai.koombea.com/blog/bias-and-fairness-in-ai
-  - GeeksforGeeks (2024). "Fairness and Bias in Artificial Intelligence." Technical documentation addressing definitional frameworks and mitigation strategies.
-  - Selbst, A. D., & Barocas, S. (2019). "The Intuitive Appeal of Explainable Machines." *Fordham L. Rev.*, 87, 1085. Addresses limitations of technical formalism in fairness approaches.
-  - Buolamwini, B., & Gebru, T. (2018). "Gender Shades: Intersectional Accuracy Disparities in Commercial Gender Classification." *Conference on Fairness, Accountability and Transparency*, 77–91. Seminal work demonstrating intersectional bias in commercial systems.
-
-  - Recent critical perspectives
-  - Communications of the ACM (2025). "Inherent Limitations of AI Fairness." Identifies eight fundamental constraints limiting technical fairness approaches' practical efficacy[3]
-  - Contrary Research (2025). "Bias & Fairness in AI Models—Deep Dive." Explores contextual fairness standards and domain-specific approaches[4]
-
-  - Ongoing research directions
-  - Contextual fairness standards tailored to specific application domains rather than universal metrics[4]
-  - Intersection of fairness with explainability and interpretability in high-stakes decision systems
-  - Cross-cultural fairness definitions and their implications for global AI deployment[4]
+- Foundational works and current scholarship
+- Koombea AI Research (2024). "Bias and Fairness in AI: Understanding the Challenges and Solutions." Available at: https://ai.koombea.com/blog/bias-and-fairness-in-ai
+- GeeksforGeeks (2024). "Fairness and Bias in Artificial Intelligence." Technical documentation addressing definitional frameworks and mitigation strategies.
+- Selbst, A. D., & Barocas, S. (2019). "The Intuitive Appeal of Explainable Machines." *Fordham L. Rev.*, 87, 1085. Addresses limitations of technical formalism in fairness approaches.
+- Buolamwini, B., & Gebru, T. (2018). "Gender Shades: Intersectional Accuracy Disparities in Commercial Gender Classification." *Conference on Fairness, Accountability and Transparency*, 77–91. Seminal work demonstrating intersectional bias in commercial systems.
+- Recent critical perspectives
+- Communications of the ACM (2025). "Inherent Limitations of AI Fairness." Identifies eight fundamental constraints limiting technical fairness approaches' practical efficacy[3]
+- Contrary Research (2025). "Bias & Fairness in AI Models—Deep Dive." Explores contextual fairness standards and domain-specific approaches[4]
+- Ongoing research directions
+- Contextual fairness standards tailored to specific application domains rather than universal metrics[4]
+- Intersection of fairness with explainability and interpretability in high-stakes decision systems
+- Cross-cultural fairness definitions and their implications for global AI deployment[4]
 
   ## Technical Considerations and Limitations
 
-  - Inherent constraints of current approaches
-  - Assessment of fairness performance remains contested; no agreed benchmarks exist across domains[3]
-  - Sensitive demographic data requirements create privacy tensions with fairness objectives[3]
-  - Technical formalisation possesses limited power in high-impact decision processes requiring nuanced human judgment[3]
-  - Mathematical incompatibility between competing fairness definitions prevents simultaneous optimisation[4]
-
-  - The fairness-accuracy trade-off
-  - Prioritising certain fairness definitions may reduce overall predictive accuracy[4]
-  - Domain-specific choices require explicit value judgments about acceptable trade-offs[4]
+- Inherent constraints of current approaches
+- Assessment of fairness performance remains contested; no agreed benchmarks exist across domains[3]
+- Sensitive demographic data requirements create privacy tensions with fairness objectives[3]
+- Technical formalisation possesses limited power in high-impact decision processes requiring nuanced human judgment[3]
+- Mathematical incompatibility between competing fairness definitions prevents simultaneous optimisation[4]
+- The fairness-accuracy trade-off
+- Prioritising certain fairness definitions may reduce overall predictive accuracy[4]
+- Domain-specific choices require explicit value judgments about acceptable trade-offs[4]
 
   ## Future Directions
 
-  - Emerging trajectories (2025 onwards)
-  - Contextual fairness standards: Different domains will likely adopt tailored fairness metrics rather than universal approaches[4]
-    - Medical AI may prioritise predictive parity ensuring accurate positive and negative predictions[4]
-    - Generative AI for cultural representation may emphasise equitable demographic reflection over training data fidelity[4]
-
-  - Globalisation of fairness standards
-    - Different societies hold distinct intuitions about fairness; US emphasis on group fairness and human rights may diverge from collectivist cultural perspectives[4]
-    - International AI companies will require adaptive fairness parameters complying with varied legal and cultural environments[4]
-
-  - Regulatory consolidation
-    - Patchwork of domain-specific standards emerging across jurisdictions[4]
-    - Increasing coordination between technical developers, regulators, and ethicists to establish domain-appropriate fairness principles[4]
-
-  - Anticipated challenges
-  - Fairness remains inherently political and social, requiring ongoing negotiation and trade-off acceptance[4]
-  - Resistance to acknowledging fairness as value-laden rather than purely technical problem
-  - Implementation gaps between regulatory requirements and practical deployment capabilities
+- Emerging trajectories (2025 onwards)
+- Contextual fairness standards: Different domains will likely adopt tailored fairness metrics rather than universal approaches[4]
+  - Medical AI may prioritise predictive parity ensuring accurate positive and negative predictions[4]
+  - Generative AI for cultural representation may emphasise equitable demographic reflection over training data fidelity[4]
+- Globalisation of fairness standards
+  - Different societies hold distinct intuitions about fairness; US emphasis on group fairness and human rights may diverge from collectivist cultural perspectives[4]
+  - International AI companies will require adaptive fairness parameters complying with varied legal and cultural environments[4]
+- Regulatory consolidation
+  - Patchwork of domain-specific standards emerging across jurisdictions[4]
+  - Increasing coordination between technical developers, regulators, and ethicists to establish domain-appropriate fairness principles[4]
+- Anticipated challenges
+- Fairness remains inherently political and social, requiring ongoing negotiation and trade-off acceptance[4]
+- Resistance to acknowledging fairness as value-laden rather than purely technical problem
+- Implementation gaps between regulatory requirements and practical deployment capabilities
 
   ## References
 
@@ -511,33 +553,37 @@ The property of an AI system whereby it produces equitable outcomes and avoids c
 
   [7] UNESCO. "Ethics of Artificial Intelligence—Recommendation on the Ethics of Artificial Intelligence." Global standard established November 2021. Available at: https://www.unesco.org/en/artificial-intelligence/recommendation-ethics
 
-
   #### References
   ### Primary Sources
 
-		  1. **ISO/IEC TR 24027:2021** - Information technology — Artificial intelligence (AI) — Bias in AI systems and AI aided decision making
-		     - Section 5: "Fairness in AI"
-		     - Defines fairness concepts and metrics
-		     - Source: ISO/IEC JTC 1/SC 42
+    1. **ISO/IEC TR 24027:2021** - Information technology — Artificial intelligence (AI) — Bias in AI systems and AI aided decision making
 
-		  2. **NIST AI Risk Management Framework (AI RMF 1.0)**, January 2023
-		     - Section 2.2: "Fair — with harmful bias managed"
-		     - Multiple fairness definitions and context-dependency
-		     - Source: National Institute of Standards and Technology
+  - Section 5: "Fairness in AI"
+  - Defines fairness concepts and metrics
+  - Source: ISO/IEC JTC 1/SC 42
 
-		  3. **EU AI Act** (Regulation 2024/1689), June 2024
-		     - Article 10: "Data and data governance" (bias mitigation)
-		     - Recital 44: Fairness requirements
-		     - Source: European Parliament and Council
+    2. **NIST AI Risk Management Framework (AI RMF 1.0)**, January 2023
 
-		  ### Supporting Standards
+  - Section 2.2: "Fair — with harmful bias managed"
+  - Multiple fairness definitions and context-dependency
+  - Source: National Institute of Standards and Technology
 
-		  4. **ISO/IEC 23894:2023** - Guidance on risk management
-		     - Section 7.5: "Fairness considerations in risk management"
+    3. **EU AI Act** (Regulation 2024/1689), June 2024
 
-		  5. **Mehrabi, N., et al. (2021)** - "A Survey on Bias and Fairness in Machine Learning"
-		     - *ACM Computing Surveys*, 54(6), 1-35
-		     - Comprehensive fairness taxonomy
+  - Article 10: "Data and data governance" (bias mitigation)
+  - Recital 44: Fairness requirements
+  - Source: European Parliament and Council
 
-- ### Provenance
+    ### Supporting Standards
+
+    4. **ISO/IEC 23894:2023** - Guidance on risk management
+
+  - Section 7.5: "Fairness considerations in risk management"
+
+    5. **Mehrabi, N., et al. (2021)** - "A Survey on Bias and Fairness in Machine Learning"
+
+  - *ACM Computing Surveys*, 54(6), 1-35
+  - Comprehensive fairness taxonomy
+
+### Provenance
 

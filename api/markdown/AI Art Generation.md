@@ -1,179 +1,181 @@
-
 AI Art Generation is the production of visual artwork by generative models, most commonly text-to-image diffusion systems that synthesize images from natural-language prompts. Outputs can be steered through prompting, fine-tuning, and lightweight adapters such as LoRA or DreamBooth that teach a model new subjects or styles. It has reshaped creative workflows in illustration, concept art, and design while raising questions about training-data provenance and authorship.
 
-- ### Semantic Classification
+### Semantic Classification
 
-- ### Content
-  ## Compositional Relationships (Components)
-  ```manchester
-  SubClassOf(ai:AIArtGeneration
-    ObjectSomeValuesFrom(ai:hasPart ai:DiffusionModel))
+### Content
 
-  SubClassOf(ai:AIArtGeneration
-    ObjectSomeValuesFrom(ai:hasPart ai:GAN))
+## Compositional Relationships (Components)
+```manchester
+SubClassOf(ai:AIArtGeneration
+  ObjectSomeValuesFrom(ai:hasPart ai:DiffusionModel))
 
-  SubClassOf(ai:AIArtGeneration
-    ObjectSomeValuesFrom(ai:hasPart ai:ImageSynthesis))
+SubClassOf(ai:AIArtGeneration
+  ObjectSomeValuesFrom(ai:hasPart ai:GAN))
 
-  SubClassOf(ai:AIArtGeneration
-    ObjectSomeValuesFrom(ai:hasPart ai:StyleTransfer))
+SubClassOf(ai:AIArtGeneration
+  ObjectSomeValuesFrom(ai:hasPart ai:ImageSynthesis))
 
-  SubClassOf(ai:AIArtGeneration
-    ObjectSomeValuesFrom(ai:hasPart ai:ImageEditing))
+SubClassOf(ai:AIArtGeneration
+  ObjectSomeValuesFrom(ai:hasPart ai:StyleTransfer))
 
-  SubClassOf(ai:AIArtGeneration
-    ObjectSomeValuesFrom(ai:hasPart ai:VAE))
+SubClassOf(ai:AIArtGeneration
+  ObjectSomeValuesFrom(ai:hasPart ai:ImageEditing))
 
-  SubClassOf(ai:AIArtGeneration
-    ObjectSomeValuesFrom(ai:hasPart ai:SuperResolution))
-  ```
-  ## Dependency Relationships
-  ```manchester
-  SubClassOf(ai:AIArtGeneration
-    ObjectSomeValuesFrom(ai:requires ai:TrainingData))
+SubClassOf(ai:AIArtGeneration
+  ObjectSomeValuesFrom(ai:hasPart ai:VAE))
 
-  SubClassOf(ai:AIArtGeneration
-    ObjectSomeValuesFrom(ai:requires ai:GPUCompute))
+SubClassOf(ai:AIArtGeneration
+  ObjectSomeValuesFrom(ai:hasPart ai:SuperResolution))
+```
+## Dependency Relationships
+```manchester
+SubClassOf(ai:AIArtGeneration
+  ObjectSomeValuesFrom(ai:requires ai:TrainingData))
 
-  SubClassOf(ai:AIArtGeneration
-    ObjectSomeValuesFrom(ai:requires ai:LatentSpace))
+SubClassOf(ai:AIArtGeneration
+  ObjectSomeValuesFrom(ai:requires ai:GPUCompute))
 
-  SubClassOf(ai:AIArtGeneration
-    ObjectSomeValuesFrom(ai:dependsOn ai:NeuralNetwork))
+SubClassOf(ai:AIArtGeneration
+  ObjectSomeValuesFrom(ai:requires ai:LatentSpace))
 
-  SubClassOf(ai:AIArtGeneration
-    ObjectSomeValuesFrom(ai:dependsOn ai:Transformer))
+SubClassOf(ai:AIArtGeneration
+  ObjectSomeValuesFrom(ai:dependsOn ai:NeuralNetwork))
 
-  SubClassOf(ai:AIArtGeneration
-    ObjectSomeValuesFrom(ai:dependsOn ai:UNet))
+SubClassOf(ai:AIArtGeneration
+  ObjectSomeValuesFrom(ai:dependsOn ai:Transformer))
 
-  SubClassOf(ai:AIArtGeneration
-    ObjectSomeValuesFrom(ai:dependsOn ai:CLIP))
-  ```
-  ## Capability Relationships
-  ```manchester
-  SubClassOf(ai:AIArtGeneration
-    ObjectSomeValuesFrom(ai:enables ai:ContentCreation))
+SubClassOf(ai:AIArtGeneration
+  ObjectSomeValuesFrom(ai:dependsOn ai:UNet))
 
-  SubClassOf(ai:AIArtGeneration
-    ObjectSomeValuesFrom(ai:enables ai:SyntheticMedia))
+SubClassOf(ai:AIArtGeneration
+  ObjectSomeValuesFrom(ai:dependsOn ai:CLIP))
+```
+## Capability Relationships
+```manchester
+SubClassOf(ai:AIArtGeneration
+  ObjectSomeValuesFrom(ai:enables ai:ContentCreation))
 
-  SubClassOf(ai:AIArtGeneration
-    ObjectSomeValuesFrom(ai:enables ai:VideoGeneration))
+SubClassOf(ai:AIArtGeneration
+  ObjectSomeValuesFrom(ai:enables ai:SyntheticMedia))
 
-  SubClassOf(ai:AIArtGeneration
-    ObjectSomeValuesFrom(ai:enables ai:CreativeExpression))
+SubClassOf(ai:AIArtGeneration
+  ObjectSomeValuesFrom(ai:enables ai:VideoGeneration))
 
-  SubClassOf(ai:AIArtGeneration
-    ObjectSomeValuesFrom(ai:enables ai:PromptEngineering))
-  ```
-  ## Implementation Relationships
-  ```manchester
-  SubClassOf(ai:AIArtGeneration
-    ObjectSomeValuesFrom(ai:implements ai:DeepLearning))
+SubClassOf(ai:AIArtGeneration
+  ObjectSomeValuesFrom(ai:enables ai:CreativeExpression))
 
-  SubClassOf(ai:AIArtGeneration
-    ObjectSomeValuesFrom(ai:implements ai:MachineLearning))
+SubClassOf(ai:AIArtGeneration
+  ObjectSomeValuesFrom(ai:enables ai:PromptEngineering))
+```
+## Implementation Relationships
+```manchester
+SubClassOf(ai:AIArtGeneration
+  ObjectSomeValuesFrom(ai:implements ai:DeepLearning))
 
-  SubClassOf(ai:AIArtGeneration
-    ObjectSomeValuesFrom(ai:implements ai:ComputerVision))
+SubClassOf(ai:AIArtGeneration
+  ObjectSomeValuesFrom(ai:implements ai:MachineLearning))
 
-  SubClassOf(ai:AIArtGeneration
-    ObjectSomeValuesFrom(ai:implements ai:NaturalLanguageProcessing))
+SubClassOf(ai:AIArtGeneration
+  ObjectSomeValuesFrom(ai:implements ai:ComputerVision))
 
-  SubClassOf(ai:AIArtGeneration
-    ObjectSomeValuesFrom(ai:uses ai:LoRA))
+SubClassOf(ai:AIArtGeneration
+  ObjectSomeValuesFrom(ai:implements ai:NaturalLanguageProcessing))
 
-  SubClassOf(ai:AIArtGeneration
-    ObjectSomeValuesFrom(ai:uses ai:DreamBooth))
+SubClassOf(ai:AIArtGeneration
+  ObjectSomeValuesFrom(ai:uses ai:LoRA))
 
-  SubClassOf(ai:AIArtGeneration
-    ObjectSomeValuesFrom(ai:uses ai:ControlNet))
-  ```
-  ## Reduction Relationships
-  ```manchester
-  SubClassOf(ai:AIArtGeneration
-    ObjectSomeValuesFrom(ai:reducesTo ai:GenerativeModel))
+SubClassOf(ai:AIArtGeneration
+  ObjectSomeValuesFrom(ai:uses ai:DreamBooth))
 
-  SubClassOf(ai:AIArtGeneration
-    ObjectSomeValuesFrom(ai:reducesTo ai:DiffusionModel))
+SubClassOf(ai:AIArtGeneration
+  ObjectSomeValuesFrom(ai:uses ai:ControlNet))
+```
+## Reduction Relationships
+```manchester
+SubClassOf(ai:AIArtGeneration
+  ObjectSomeValuesFrom(ai:reducesTo ai:GenerativeModel))
 
-  SubClassOf(ai:AIArtGeneration
-    ObjectSomeValuesFrom(ai:reducesTo ai:ImageSynthesis))
+SubClassOf(ai:AIArtGeneration
+  ObjectSomeValuesFrom(ai:reducesTo ai:DiffusionModel))
 
-  SubClassOf(ai:AIArtGeneration
-    ObjectSomeValuesFrom(ai:reducesTo ai:LatentSpaceDecoding))
+SubClassOf(ai:AIArtGeneration
+  ObjectSomeValuesFrom(ai:reducesTo ai:ImageSynthesis))
 
-  SubClassOf(ai:AIArtGeneration
-    ObjectSomeValuesFrom(ai:reducesTo ai:ConditionalProbabilityEstimation))
+SubClassOf(ai:AIArtGeneration
+  ObjectSomeValuesFrom(ai:reducesTo ai:LatentSpaceDecoding))
 
-  SubClassOf(ai:AIArtGeneration
-    ObjectSomeValuesFrom(ai:reducesTo ai:DenoisingProcess))
+SubClassOf(ai:AIArtGeneration
+  ObjectSomeValuesFrom(ai:reducesTo ai:ConditionalProbabilityEstimation))
 
-  SubClassOf(ai:AIArtGeneration
-    ObjectSomeValuesFrom(ai:supports ai:ImageClassification))
+SubClassOf(ai:AIArtGeneration
+  ObjectSomeValuesFrom(ai:reducesTo ai:DenoisingProcess))
 
-  SubClassOf(ai:AIArtGeneration
-    ObjectSomeValuesFrom(ai:supports ai:ImageCaptioning))
+SubClassOf(ai:AIArtGeneration
+  ObjectSomeValuesFrom(ai:supports ai:ImageClassification))
 
-  SubClassOf(ai:AIArtGeneration
-    ObjectSomeValuesFrom(ai:uses ai:PromptEngineering))
+SubClassOf(ai:AIArtGeneration
+  ObjectSomeValuesFrom(ai:supports ai:ImageCaptioning))
 
-  SubClassOf(ai:AIArtGeneration
-    ObjectSomeValuesFrom(ai:uses ai:TransferLearning))
+SubClassOf(ai:AIArtGeneration
+  ObjectSomeValuesFrom(ai:uses ai:PromptEngineering))
 
-  SubClassOf(ai:AIArtGeneration
-    ObjectSomeValuesFrom(ai:relatedTo ai:MultimodalAI))
+SubClassOf(ai:AIArtGeneration
+  ObjectSomeValuesFrom(ai:uses ai:TransferLearning))
 
-  SubClassOf(ai:AIArtGeneration
-    ObjectSomeValuesFrom(ai:relatedTo ai:CreativeIndustries))
+SubClassOf(ai:AIArtGeneration
+  ObjectSomeValuesFrom(ai:relatedTo ai:MultimodalAI))
 
-  SubClassOf(ai:AIArtGeneration
-    ObjectSomeValuesFrom(ai:contrastsWith ai:AIEthics))
-  ```
+SubClassOf(ai:AIArtGeneration
+  ObjectSomeValuesFrom(ai:relatedTo ai:CreativeIndustries))
 
-  ## Mathematical Foundations
+SubClassOf(ai:AIArtGeneration
+  ObjectSomeValuesFrom(ai:contrastsWith ai:AIEthics))
+```
 
-  Formally, text-to-image generation in the latent diffusion paradigm defines a forward process $q(x_t | x_{t-1}) = \mathcal{N}(x_t; \sqrt{1-\beta_t} x_{t-1}, \beta_t \mathbf{I})$ that progressively corrupts a latent representation $x_0 = \mathcal{E}(I)$ (where $\mathcal{E}$ is the [[VAE]] encoder and $I$ is a training image) with Gaussian noise over $T$ timesteps according to a noise schedule $\{\beta_t\}$. The learned reverse process $p_\theta(x_{t-1} | x_t, c)$ — parameterised by the [[U-Net]] or Diffusion [[Transformer]] weights $\theta$ and conditioned on text embedding $c = \tau_\phi(\text{prompt})$ via cross-attention — is trained to predict either the added noise $\epsilon$ or the denoised image $x_0$ directly. At inference, the score function is used to guide sampling away from the unconditional distribution toward the text-conditioned distribution via classifier-free guidance (CFG) with guidance scale $w$: $\tilde{\epsilon}_\theta(x_t, c) = (1+w)\epsilon_\theta(x_t, c) - w\epsilon_\theta(x_t, \varnothing)$. Higher $w$ increases prompt adherence at the cost of diversity and may produce over-saturated outputs.
+## Mathematical Foundations
 
-  The [[CLIP]] text-image alignment score measures cosine similarity between text and image embeddings in CLIP's joint embedding space, providing a proxy for semantic fidelity used in both model evaluation and inference-time guidance. The Fréchet Inception Distance (FID) computes Wasserstein-2 distance between Inception-v3 feature distributions of real and generated images, providing a scalar quality-diversity tradeoff metric. Human Preference Score (HPSv2) and PickScore train preference models on human pairwise comparisons and have become standard complements to FID in evaluating text-to-image systems. FLUX.1 [pro] achieves FID of approximately 11.4 on MS-COCO 30k, compared to approximately 14.1 for SDXL and approximately 22.6 for SD 1.5 (with lower being better), while GPT-Image 1.5 leads on text rendering and instruction-following benchmarks.
+Formally, text-to-image generation in the latent diffusion paradigm defines a forward process $q(x_t | x_{t-1}) = \mathcal{N}(x_t; \sqrt{1-\beta_t} x_{t-1}, \beta_t \mathbf{I})$ that progressively corrupts a latent representation $x_0 = \mathcal{E}(I)$ (where $\mathcal{E}$ is the [[VAE]] encoder and $I$ is a training image) with Gaussian noise over $T$ timesteps according to a noise schedule $\{\beta_t\}$. The learned reverse process $p_\theta(x_{t-1} | x_t, c)$ — parameterised by the [[U-Net]] or Diffusion [[Transformer]] weights $\theta$ and conditioned on text embedding $c = \tau_\phi(\text{prompt})$ via cross-attention — is trained to predict either the added noise $\epsilon$ or the denoised image $x_0$ directly. At inference, the score function is used to guide sampling away from the unconditional distribution toward the text-conditioned distribution via classifier-free guidance (CFG) with guidance scale $w$: $\tilde{\epsilon}_\theta(x_t, c) = (1+w)\epsilon_\theta(x_t, c) - w\epsilon_\theta(x_t, \varnothing)$. Higher $w$ increases prompt adherence at the cost of diversity and may produce over-saturated outputs.
 
-  The LoRA personalisation technique, like all fine-tuning approaches, depends on [[Backpropagation]] to compute gradients through the frozen base model and update only the low-rank adapter weights. LoRA decomposes weight updates as $\Delta W = BA$ where $B \in \mathbb{R}^{d \times r}$, $A \in \mathbb{R}^{r \times k}$, and rank $r \ll \min(d, k)$; typical ranks are 4–128. This reduces trainable parameters from $d \times k$ to $r(d+k)$, enabling fine-tuning on consumer GPUs in 1–4 hours with 3–30 reference images. ControlNet adds trainable copies of the encoding layers of the [[U-Net]] conditioned on spatial control signals, with a zero-initialised connection to prevent degrading the base model during early training.
+The [[CLIP]] text-image alignment score measures cosine similarity between text and image embeddings in CLIP's joint embedding space, providing a proxy for semantic fidelity used in both model evaluation and inference-time guidance. The Fréchet Inception Distance (FID) computes Wasserstein-2 distance between Inception-v3 feature distributions of real and generated images, providing a scalar quality-diversity tradeoff metric. Human Preference Score (HPSv2) and PickScore train preference models on human pairwise comparisons and have become standard complements to FID in evaluating text-to-image systems. FLUX.1 [pro] achieves FID of approximately 11.4 on MS-COCO 30k, compared to approximately 14.1 for SDXL and approximately 22.6 for SD 1.5 (with lower being better), while GPT-Image 1.5 leads on text rendering and instruction-following benchmarks.
 
-  ## About
+The LoRA personalisation technique, like all fine-tuning approaches, depends on [[Backpropagation]] to compute gradients through the frozen base model and update only the low-rank adapter weights. LoRA decomposes weight updates as $\Delta W = BA$ where $B \in \mathbb{R}^{d \times r}$, $A \in \mathbb{R}^{r \times k}$, and rank $r \ll \min(d, k)$; typical ranks are 4–128. This reduces trainable parameters from $d \times k$ to $r(d+k)$, enabling fine-tuning on consumer GPUs in 1–4 hours with 3–30 reference images. ControlNet adds trainable copies of the encoding layers of the [[U-Net]] conditioned on spatial control signals, with a zero-initialised connection to prevent degrading the base model during early training.
 
+## About
 
+AI Art Generation sits at the confluence of [[Deep Learning]] research and creative practice, leveraging decades of advances in neural generative modelling — from early convolutional networks and [[GAN]] frameworks through to the probabilistic diffusion paradigm that now dominates — to produce imagery at a quality and fidelity indistinguishable from human-crafted work in many contexts. The field matured dramatically between 2021 and 2024 driven by three concurrent advances: (1) the latent diffusion architecture of Rombach et al. (2022), which moved the denoising process into a compressed latent representation, reducing compute by orders of magnitude while maintaining output fidelity; (2) powerful text-vision alignment models ([[CLIP]], Radford et al. 2021) that provided rich joint embeddings enabling precise text-conditioned generation; and (3) the open-source release of Stable Diffusion weights (Stability AI, 2022), which catalysed a global ecosystem of researchers, fine-tuners, and application developers.
 
-  AI Art Generation sits at the confluence of [[Deep Learning]] research and creative practice, leveraging decades of advances in neural generative modelling — from early convolutional networks and [[GAN]] frameworks through to the probabilistic diffusion paradigm that now dominates — to produce imagery at a quality and fidelity indistinguishable from human-crafted work in many contexts. The field matured dramatically between 2021 and 2024 driven by three concurrent advances: (1) the latent diffusion architecture of Rombach et al. (2022), which moved the denoising process into a compressed latent representation, reducing compute by orders of magnitude while maintaining output fidelity; (2) powerful text-vision alignment models ([[CLIP]], Radford et al. 2021) that provided rich joint embeddings enabling precise text-conditioned generation; and (3) the open-source release of Stable Diffusion weights (Stability AI, 2022), which catalysed a global ecosystem of researchers, fine-tuners, and application developers.
+The societal impact has been profound and contested. AI Art Generation tools are now embedded in professional creative workflows: 86 % of creators in Adobe's 2025 Creators' Toolkit Report use generative AI across their workflows. Midjourney reached approximately 19.83 million users and approximately $500 million in annual revenue by early 2026; Stable Diffusion and its derivatives account for an estimated 80 % of all AI-created imagery worldwide by volume (approximately 12.59 billion cumulative images). The market for AI image generation tools is projected to grow from $9.1 billion in 2025 to $272.8 billion by 2035 at a 40.5 % CAGR. Concurrently, disputes over training-data provenance, style mimicry, synthetic watermarking, and authorship attribution have opened legal cases across multiple jurisdictions. In the UK, the November 2025 ruling in Getty Images v. Stability AI found limited trademark liability but rejected the core copyright claim on jurisdictional grounds, leaving artists' groups and platform operators in an unresolved legal landscape.
 
-  The societal impact has been profound and contested. AI Art Generation tools are now embedded in professional creative workflows: 86 % of creators in Adobe's 2025 Creators' Toolkit Report use generative AI across their workflows. Midjourney reached approximately 19.83 million users and approximately $500 million in annual revenue by early 2026; Stable Diffusion and its derivatives account for an estimated 80 % of all AI-created imagery worldwide by volume (approximately 12.59 billion cumulative images). The market for AI image generation tools is projected to grow from $9.1 billion in 2025 to $272.8 billion by 2035 at a 40.5 % CAGR. Concurrently, disputes over training-data provenance, style mimicry, synthetic watermarking, and authorship attribution have opened legal cases across multiple jurisdictions. In the UK, the November 2025 ruling in Getty Images v. Stability AI found limited trademark liability but rejected the core copyright claim on jurisdictional grounds, leaving artists' groups and platform operators in an unresolved legal landscape.
+Technically, the field continues to evolve. The transformer-based Diffusion Transformer (DiT) lineage — pioneered by Peebles and Xie (2023) and commercialised in OpenAI's Sora (2024) for video and in FLUX.1 (Black Forest Labs, 2024) for images — is supplanting U-Net backbones in state-of-the-art systems. FLUX.1 uses a 12-billion-parameter Multimodal Diffusion Transformer (MMDiT) architecture trained with rectified flow matching rather than DDPM noise prediction, with a 16-channel VAE (versus the 4-channel VAE of SDXL), dual CLIP encoders (G/14 and L/14), and a T5-XXL text encoder, achieving superior prompt adherence and anatomical coherence. FLUX.2 followed in November 2025. Meanwhile, personalisation research has proliferated: NP-LoRA (2024) applies null-space projection to fuse multiple LoRA concepts without interference; ConceptSplit (2024) decouples multi-concept personalisation via token-wise adaptation; and FlexControl (2025) introduces differentiable routing in ControlNet for computation-aware spatial conditioning.
 
-  Technically, the field continues to evolve. The transformer-based Diffusion Transformer (DiT) lineage — pioneered by Peebles and Xie (2023) and commercialised in OpenAI's Sora (2024) for video and in FLUX.1 (Black Forest Labs, 2024) for images — is supplanting U-Net backbones in state-of-the-art systems. FLUX.1 uses a 12-billion-parameter Multimodal Diffusion Transformer (MMDiT) architecture trained with rectified flow matching rather than DDPM noise prediction, with a 16-channel VAE (versus the 4-channel VAE of SDXL), dual CLIP encoders (G/14 and L/14), and a T5-XXL text encoder, achieving superior prompt adherence and anatomical coherence. FLUX.2 followed in November 2025. Meanwhile, personalisation research has proliferated: NP-LoRA (2024) applies null-space projection to fuse multiple LoRA concepts without interference; ConceptSplit (2024) decouples multi-concept personalisation via token-wise adaptation; and FlexControl (2025) introduces differentiable routing in ControlNet for computation-aware spatial conditioning.
+## Components / Architecture
 
-  ## Components / Architecture
+**Core generative architectures:**
 
-  **Core generative architectures:**
-  - **Latent Diffusion Model (LDM)**: [[VAE]] encoder compresses image to latent representation; denoising [[U-Net]] or Diffusion [[Transformer]] operates in latent space conditioned on text embedding; [[VAE]] decoder reconstructs output image. Baseline for Stable Diffusion 1.5, SDXL, SD 3.5.
-  - **Diffusion Transformer (DiT / MMDiT)**: [[Vision Transformer]] replaces [[U-Net]] as denoising backbone; uses Rotary Positional Encodings (RoPE); joint text-image attention blocks enable tighter cross-modal conditioning. Architecture of FLUX.1 (12 B params) and Sora.
-  - **[[GAN]]-based generators**: Generator-discriminator minimax training; StyleGAN3/StyleGAN-XL remain competitive for face synthesis and artistic style transfer; faster inference than diffusion but lower diversity.
-  - **Auto-regressive models**: Token-by-token pixel or latent generation (DALL-E 1, Parti); largely superseded by diffusion but relevant for discrete-token multimodal systems.
+- **Latent Diffusion Model (LDM)**: [[VAE]] encoder compresses image to latent representation; denoising [[U-Net]] or Diffusion [[Transformer]] operates in latent space conditioned on text embedding; [[VAE]] decoder reconstructs output image. Baseline for Stable Diffusion 1.5, SDXL, SD 3.5.
+- **Diffusion Transformer (DiT / MMDiT)**: [[Vision Transformer]] replaces [[U-Net]] as denoising backbone; uses Rotary Positional Encodings (RoPE); joint text-image attention blocks enable tighter cross-modal conditioning. Architecture of FLUX.1 (12 B params) and Sora.
+- **[[GAN]]-based generators**: Generator-discriminator minimax training; StyleGAN3/StyleGAN-XL remain competitive for face synthesis and artistic style transfer; faster inference than diffusion but lower diversity.
+- **Auto-regressive models**: Token-by-token pixel or latent generation (DALL-E 1, Parti); largely superseded by diffusion but relevant for discrete-token multimodal systems.
 
   **Text conditioning:**
-  - **[[CLIP]] encoders** (ViT-L/14, ViT-bigG/14): map text and image to shared embedding space enabling semantic text guidance.
-  - **T5-XXL encoder**: causal language model encodings provide richer long-text understanding; used in Imagen, FLUX.1.
-  - **Cross-attention injection**: text embeddings injected into [[U-Net]] or Transformer blocks via cross-attention keys/values at multiple resolutions.
+
+- **[[CLIP]] encoders** (ViT-L/14, ViT-bigG/14): map text and image to shared embedding space enabling semantic text guidance.
+- **T5-XXL encoder**: causal language model encodings provide richer long-text understanding; used in Imagen, FLUX.1.
+- **Cross-attention injection**: text embeddings injected into [[U-Net]] or Transformer blocks via cross-attention keys/values at multiple resolutions.
 
   **Personalisation and control adapters:**
-  - **LoRA (Low-Rank Adaptation, Hu et al. 2022)**: parameter-efficient fine-tuning by adding low-rank weight delta matrices; file sizes 5–150 MB; composable at inference.
-  - **DreamBooth (Ruiz et al. 2023)**: full model fine-tuning with prior-preservation loss on 3–30 reference images; binds new concept to rare token identifier.
-  - **Textual Inversion (Gal et al. 2023)**: optimises new embedding vector for a token in the [[CLIP]] space while keeping all model weights frozen.
-  - **ControlNet (Zhang et al. 2023)**: trainable copy of encoder blocks conditioned on spatial signal (depth map, pose skeleton, edge map, segmentation); enables precise compositional control without modifying base weights.
-  - **IP-Adapter**: encodes reference image via decoupled cross-attention; enables image prompting without fine-tuning base model.
+
+- **LoRA (Low-Rank Adaptation, Hu et al. 2022)**: parameter-efficient fine-tuning by adding low-rank weight delta matrices; file sizes 5–150 MB; composable at inference.
+- **DreamBooth (Ruiz et al. 2023)**: full model fine-tuning with prior-preservation loss on 3–30 reference images; binds new concept to rare token identifier.
+- **Textual Inversion (Gal et al. 2023)**: optimises new embedding vector for a token in the [[CLIP]] space while keeping all model weights frozen.
+- **ControlNet (Zhang et al. 2023)**: trainable copy of encoder blocks conditioned on spatial signal (depth map, pose skeleton, edge map, segmentation); enables precise compositional control without modifying base weights.
+- **IP-Adapter**: encodes reference image via decoupled cross-attention; enables image prompting without fine-tuning base model.
 
   **Post-processing and enhancement:**
-  - **[[Super-Resolution]] upscalers**: ESRGAN, RealESRGAN, LDSR upscale 512-px outputs to 2K–4K.
-  - **Inpainting and outpainting**: masked region regeneration via forward-pass conditioning on known pixels.
-  - **[[Image Editing]]**: SDEdit, InstructPix2Pix, and FLUX-Fill enable text-driven edits on existing images.
+
+- **[[Super-Resolution]] upscalers**: ESRGAN, RealESRGAN, LDSR upscale 512-px outputs to 2K–4K.
+- **Inpainting and outpainting**: masked region regeneration via forward-pass conditioning on known pixels.
+- **[[Image Editing]]**: SDEdit, InstructPix2Pix, and FLUX-Fill enable text-driven edits on existing images.
 
   ## Use Cases / Major Families
 
@@ -262,11 +264,12 @@ AI Art Generation is the production of visual artwork by generative models, most
   UK creative industries — employing approximately 2.4 million people and contributing approximately £115 billion annually to GDP — are deeply affected by AI Art Generation. The UK Government's 2024 AI Opportunities Action Plan identified creative AI as a strategic growth area. Creativeuk, the sector body, published a 2025 framework for responsible AI use in the creative sector, calling for mandatory training-data disclosure, artist compensation schemes, and proportionate watermarking.
 
   **Academic and Research:**
-  - **University of Edinburgh** (Informatics): active in generative model research, neural style transfer, and visual AI; connects to the National Robotarium for embodied visual AI.
-  - **UCL** (Centre for Artificial Intelligence / Doctoral Training in AI and Music): leads the UKRI generative AI hub; strong in audio-visual generation and multi-modal creative AI.
-  - **Imperial College London** (Department of Computing / Data Science Institute): published foundational work in deep generative models and adversarial training.
-  - **University of Oxford** (VGG, Active Vision Laboratory): major contributions to visual representation learning underpinning generative architectures.
-  - **University of Cambridge** (Computer Laboratory): generative model theory and evaluation methodology.
+
+- **University of Edinburgh** (Informatics): active in generative model research, neural style transfer, and visual AI; connects to the National Robotarium for embodied visual AI.
+- **UCL** (Centre for Artificial Intelligence / Doctoral Training in AI and Music): leads the UKRI generative AI hub; strong in audio-visual generation and multi-modal creative AI.
+- **Imperial College London** (Department of Computing / Data Science Institute): published foundational work in deep generative models and adversarial training.
+- **University of Oxford** (VGG, Active Vision Laboratory): major contributions to visual representation learning underpinning generative architectures.
+- **University of Cambridge** (Computer Laboratory): generative model theory and evaluation methodology.
 
   **Industry:**
   Stability AI was founded in London (2020) and released Stable Diffusion, driving global open-source AI art generation. Following financial difficulties in 2023-2024, the company restructured and remains operational. Runway ML's European operations are UK-based. Adobe's UK presence includes AI research. Numerous UK-based startups (Waymark, Genei, Synthesia for video) build on generative visual AI.
@@ -316,14 +319,14 @@ AI Art Generation is the production of visual artwork by generative models, most
 
   ## Future Directions (2026–2030)
 
-  - **[[Video Generation]] and 4D generation**: extending text-to-image pipelines to temporally consistent video generation (Sora, Runway Gen-3, Kling, Pika 2.0) and dynamic 3D scenes; the 21-second Midjourney video clip marks early commercial deployment. Long-form coherent video (minutes rather than seconds) requires additional architectural innovations around temporal attention and memory.
-  - **Real-time diffusion**: distilled models (SDXL Turbo, LCM, TurboVision, FLUX-Schnell) reducing inference from 50 to 1–4 denoising steps, enabling interactive and on-device generation; further progress expected toward sub-100ms generation on consumer GPUs, enabling live video stylisation and interactive visual brainstorming.
-  - **[[Multimodal AI]] image generation**: tighter integration with [[Large Language Models]] for compositional reasoning about spatial relationships, causality, and long-form narrative, as in GPT-Image 1.5; models will progressively support richer cross-modal composition and editing via natural dialogue.
-  - **Personalised world models**: user-specific fine-tuned models storing persistent representations of subjects, styles, and environments — a convergence of DreamBooth-style personalisation with lifelong learning and retrieval-augmented generation; commercially relevant for character-consistent storytelling and brand-safe marketing content.
-  - **Ethical and legal standardisation**: international watermarking standards (C2PA provenance standards), mandatory [[Training Data]] registries, and artist compensation models emerging through WIPO, DSIT, and EUIPO processes; expect mandatory watermarking requirements in the EU AI Act Codes of Practice by 2027.
-  - **On-device deployment**: quantised FLUX and SDXL models running on Apple Silicon M-series and Qualcomm Snapdragon NPUs, enabling private, cloud-free [[Image Generation]] on smartphones — already available in limited form via apps such as Draw Things (iOS) and DiffusionBee (macOS).
-  - **3D and material generation**: text-to-3D systems (DreamFusion, Shap-E, Stable Video 3D) maturing into production-quality asset pipelines for games and [[Creative Industries]] mixed reality; convergence with [[Neural Network]]-based physics simulation enables digital twin creation from text descriptions alone.
-  - **Synthetic data generation for training**: using AI Art Generation to produce [[Training Data]] for downstream [[Computer Vision]] and [[Deep Learning]] models — a bootstrapping strategy that reduces labelling cost while raising questions about synthetic data quality and distribution shift.
+- **[[Video Generation]] and 4D generation**: extending text-to-image pipelines to temporally consistent video generation (Sora, Runway Gen-3, Kling, Pika 2.0) and dynamic 3D scenes; the 21-second Midjourney video clip marks early commercial deployment. Long-form coherent video (minutes rather than seconds) requires additional architectural innovations around temporal attention and memory.
+- **Real-time diffusion**: distilled models (SDXL Turbo, LCM, TurboVision, FLUX-Schnell) reducing inference from 50 to 1–4 denoising steps, enabling interactive and on-device generation; further progress expected toward sub-100ms generation on consumer GPUs, enabling live video stylisation and interactive visual brainstorming.
+- **[[Multimodal AI]] image generation**: tighter integration with [[Large Language Models]] for compositional reasoning about spatial relationships, causality, and long-form narrative, as in GPT-Image 1.5; models will progressively support richer cross-modal composition and editing via natural dialogue.
+- **Personalised world models**: user-specific fine-tuned models storing persistent representations of subjects, styles, and environments — a convergence of DreamBooth-style personalisation with lifelong learning and retrieval-augmented generation; commercially relevant for character-consistent storytelling and brand-safe marketing content.
+- **Ethical and legal standardisation**: international watermarking standards (C2PA provenance standards), mandatory [[Training Data]] registries, and artist compensation models emerging through WIPO, DSIT, and EUIPO processes; expect mandatory watermarking requirements in the EU AI Act Codes of Practice by 2027.
+- **On-device deployment**: quantised FLUX and SDXL models running on Apple Silicon M-series and Qualcomm Snapdragon NPUs, enabling private, cloud-free [[Image Generation]] on smartphones — already available in limited form via apps such as Draw Things (iOS) and DiffusionBee (macOS).
+- **3D and material generation**: text-to-3D systems (DreamFusion, Shap-E, Stable Video 3D) maturing into production-quality asset pipelines for games and [[Creative Industries]] mixed reality; convergence with [[Neural Network]]-based physics simulation enables digital twin creation from text descriptions alone.
+- **Synthetic data generation for training**: using AI Art Generation to produce [[Training Data]] for downstream [[Computer Vision]] and [[Deep Learning]] models — a bootstrapping strategy that reduces labelling cost while raising questions about synthetic data quality and distribution shift.
 
   ## Community Ecosystem and Open-Source Infrastructure
 
@@ -400,5 +403,5 @@ AI Art Generation is the production of visual artwork by generative models, most
 
   Regulatory developments in 2025 include the EU's requirement (under the AI Act Art. 50) that providers of general-purpose AI models capable of generating synthetic content must implement state-of-the-art technologies to mark the content as AI-generated, and that deployers of emotion recognition or biometric categorisation systems must disclose their use. In the UK, the Online Safety Act's Offences of Creating and Sharing Intimate Images (Amendment) provides criminal penalties for sharing non-consensual intimate deepfakes, with a separate offence of creating them regardless of intent to share proposed in forthcoming amendment.
 
-- ### Provenance
+### Provenance
 

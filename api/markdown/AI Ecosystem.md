@@ -1,187 +1,194 @@
-
 The AI Ecosystem is the interconnected network of organisations, technologies, standards, talent pipelines, regulatory frameworks, and capital flows that collectively produce, deploy, and govern artificial intelligence systems. It encompasses foundation model providers, cloud infrastructure operators, toolchain vendors, application developers, research institutions, standardisation bodies, and end-user communities, together constituting the supply chain and governance fabric of AI as a general-purpose technology.
 
-- ### Semantic Classification
+### Semantic Classification
 
-- ### Content
-  ## Compositional Relationships (Components)
-  ```
-  SubClassOf(ai:AIEcosystem
-    ObjectSomeValuesFrom(ai:hasPart ai:LargeLanguageModels))
+### Content
 
-  SubClassOf(ai:AIEcosystem
-    ObjectSomeValuesFrom(ai:hasPart ai:FoundationModels))
+## Compositional Relationships (Components)
+```
+SubClassOf(ai:AIEcosystem
+  ObjectSomeValuesFrom(ai:hasPart ai:LargeLanguageModels))
 
-  SubClassOf(ai:AIEcosystem
-    ObjectSomeValuesFrom(ai:hasPart ai:AgentFrameworks))
+SubClassOf(ai:AIEcosystem
+  ObjectSomeValuesFrom(ai:hasPart ai:FoundationModels))
 
-  SubClassOf(ai:AIEcosystem
-    ObjectSomeValuesFrom(ai:hasPart ai:AIInference))
+SubClassOf(ai:AIEcosystem
+  ObjectSomeValuesFrom(ai:hasPart ai:AgentFrameworks))
 
-  SubClassOf(ai:AIEcosystem
-    ObjectSomeValuesFrom(ai:hasPart ai:GPUComputing))
+SubClassOf(ai:AIEcosystem
+  ObjectSomeValuesFrom(ai:hasPart ai:AIInference))
 
-  SubClassOf(ai:AIEcosystem
-    ObjectSomeValuesFrom(ai:hasPart ai:OpenSourceAI))
+SubClassOf(ai:AIEcosystem
+  ObjectSomeValuesFrom(ai:hasPart ai:GPUComputing))
 
-  SubClassOf(ai:AIEcosystem
-    ObjectSomeValuesFrom(ai:hasPart ai:CloudComputing))
+SubClassOf(ai:AIEcosystem
+  ObjectSomeValuesFrom(ai:hasPart ai:OpenSourceAI))
 
-  SubClassOf(ai:AIEcosystem
-    ObjectSomeValuesFrom(ai:hasPart ai:AIResearch))
+SubClassOf(ai:AIEcosystem
+  ObjectSomeValuesFrom(ai:hasPart ai:CloudComputing))
 
-  SubClassOf(ai:AIEcosystem
-    ObjectSomeValuesFrom(ai:hasPart ai:TalentPipeline))
-  ```
-  ## Dependency Relationships
-  ```
-  SubClassOf(ai:AIEcosystem
-    ObjectSomeValuesFrom(ai:requires ai:GPUComputing))
+SubClassOf(ai:AIEcosystem
+  ObjectSomeValuesFrom(ai:hasPart ai:AIResearch))
 
-  SubClassOf(ai:AIEcosystem
-    ObjectSomeValuesFrom(ai:requires ai:DataCentres))
+SubClassOf(ai:AIEcosystem
+  ObjectSomeValuesFrom(ai:hasPart ai:TalentPipeline))
+```
+## Dependency Relationships
+```
+SubClassOf(ai:AIEcosystem
+  ObjectSomeValuesFrom(ai:requires ai:GPUComputing))
 
-  SubClassOf(ai:AIEcosystem
-    ObjectSomeValuesFrom(ai:requires ai:MachineLearning))
+SubClassOf(ai:AIEcosystem
+  ObjectSomeValuesFrom(ai:requires ai:DataCentres))
 
-  SubClassOf(ai:AIEcosystem
-    ObjectSomeValuesFrom(ai:dependsOn ai:TransformerArchitecture))
+SubClassOf(ai:AIEcosystem
+  ObjectSomeValuesFrom(ai:requires ai:MachineLearning))
 
-  SubClassOf(ai:AIEcosystem
-    ObjectSomeValuesFrom(ai:dependsOn ai:DeepLearning))
-  ```
-  ## Capability Relationships
-  ```
-  SubClassOf(ai:AIEcosystem
-    ObjectSomeValuesFrom(ai:enables ai:GenerativeAI))
+SubClassOf(ai:AIEcosystem
+  ObjectSomeValuesFrom(ai:dependsOn ai:TransformerArchitecture))
 
-  SubClassOf(ai:AIEcosystem
-    ObjectSomeValuesFrom(ai:enables ai:AgenticAI))
+SubClassOf(ai:AIEcosystem
+  ObjectSomeValuesFrom(ai:dependsOn ai:DeepLearning))
+```
+## Capability Relationships
+```
+SubClassOf(ai:AIEcosystem
+  ObjectSomeValuesFrom(ai:enables ai:GenerativeAI))
 
-  SubClassOf(ai:AIEcosystem
-    ObjectSomeValuesFrom(ai:enables ai:MultimodalAI))
+SubClassOf(ai:AIEcosystem
+  ObjectSomeValuesFrom(ai:enables ai:AgenticAI))
 
-  SubClassOf(ai:AIEcosystem
-    ObjectSomeValuesFrom(ai:enables ai:DigitalEconomy))
+SubClassOf(ai:AIEcosystem
+  ObjectSomeValuesFrom(ai:enables ai:MultimodalAI))
 
-  SubClassOf(ai:AIEcosystem
-    ObjectSomeValuesFrom(ai:supports ai:AIGovernance))
+SubClassOf(ai:AIEcosystem
+  ObjectSomeValuesFrom(ai:enables ai:DigitalEconomy))
 
-  SubClassOf(ai:AIEcosystem
-    ObjectSomeValuesFrom(ai:supports ai:AISafety))
+SubClassOf(ai:AIEcosystem
+  ObjectSomeValuesFrom(ai:supports ai:AIGovernance))
 
-  SubClassOf(ai:AIEcosystem
-    ObjectSomeValuesFrom(ai:supports ai:ResponsibleAI))
-  ```
-  ## Implementation Relationships
-  ```
-  SubClassOf(ai:AIEcosystem
-    ObjectSomeValuesFrom(ai:implements ai:AIPolicy))
+SubClassOf(ai:AIEcosystem
+  ObjectSomeValuesFrom(ai:supports ai:AISafety))
 
-  SubClassOf(ai:AIEcosystem
-    ObjectSomeValuesFrom(ai:implements ai:NationalAIStrategy))
+SubClassOf(ai:AIEcosystem
+  ObjectSomeValuesFrom(ai:supports ai:ResponsibleAI))
+```
+## Implementation Relationships
+```
+SubClassOf(ai:AIEcosystem
+  ObjectSomeValuesFrom(ai:implements ai:AIPolicy))
 
-  SubClassOf(ai:AIEcosystem
-    ObjectSomeValuesFrom(ai:uses ai:ModelContextProtocol))
+SubClassOf(ai:AIEcosystem
+  ObjectSomeValuesFrom(ai:implements ai:NationalAIStrategy))
 
-  SubClassOf(ai:AIEcosystem
-    ObjectSomeValuesFrom(ai:uses ai:AIChips))
-  ```
-  ## Reduction Relationships
-  ```
-  SubClassOf(ai:AIEcosystem
-    ObjectSomeValuesFrom(ai:reducesTo ai:DigitalAssetEcosystem))
+SubClassOf(ai:AIEcosystem
+  ObjectSomeValuesFrom(ai:uses ai:ModelContextProtocol))
 
-  SubClassOf(ai:AIEcosystem
-    ObjectSomeValuesFrom(ai:reducesTo ai:AIGovernanceFramework))
-  ```
-  ## Governance and Standards Relationships
-  ```
-  SubClassOf(ai:AIEcosystem
-    ObjectSomeValuesFrom(ai:standardizedBy ai:EUAIACT))
+SubClassOf(ai:AIEcosystem
+  ObjectSomeValuesFrom(ai:uses ai:AIChips))
+```
+## Reduction Relationships
+```
+SubClassOf(ai:AIEcosystem
+  ObjectSomeValuesFrom(ai:reducesTo ai:DigitalAssetEcosystem))
 
-  SubClassOf(ai:AIEcosystem
-    ObjectSomeValuesFrom(ai:standardizedBy ai:AIStandards))
+SubClassOf(ai:AIEcosystem
+  ObjectSomeValuesFrom(ai:reducesTo ai:AIGovernanceFramework))
+```
+## Governance and Standards Relationships
+```
+SubClassOf(ai:AIEcosystem
+  ObjectSomeValuesFrom(ai:standardizedBy ai:EUAIACT))
 
-  SubClassOf(ai:AIEcosystem
-    ObjectSomeValuesFrom(ai:relatedTo ai:AIPolicy))
+SubClassOf(ai:AIEcosystem
+  ObjectSomeValuesFrom(ai:standardizedBy ai:AIStandards))
 
-  SubClassOf(ai:AIEcosystem
-    ObjectSomeValuesFrom(ai:relatedTo ai:SovereignAI))
+SubClassOf(ai:AIEcosystem
+  ObjectSomeValuesFrom(ai:relatedTo ai:AIPolicy))
 
-  SubClassOf(ai:AIEcosystem
-    ObjectSomeValuesFrom(ai:relatedTo ai:AIDocumentationStandards))
+SubClassOf(ai:AIEcosystem
+  ObjectSomeValuesFrom(ai:relatedTo ai:SovereignAI))
 
-  SubClassOf(ai:AIEcosystem
-    ObjectSomeValuesFrom(ai:contrastsWith ai:SovereignAI))
+SubClassOf(ai:AIEcosystem
+  ObjectSomeValuesFrom(ai:relatedTo ai:AIDocumentationStandards))
 
-  SubClassOf(ai:AIEcosystem
-    ObjectSomeValuesFrom(ai:partOf ai:DigitalEconomy))
+SubClassOf(ai:AIEcosystem
+  ObjectSomeValuesFrom(ai:contrastsWith ai:SovereignAI))
 
-  SubClassOf(ai:AIEcosystem
-    ObjectSomeValuesFrom(ai:partOf ai:GlobalTechnologyEcosystem))
+SubClassOf(ai:AIEcosystem
+  ObjectSomeValuesFrom(ai:partOf ai:DigitalEconomy))
 
-  SubClassOf(ai:AIEcosystem
-    ObjectSomeValuesFrom(ai:producedBy ai:TalentPipeline))
+SubClassOf(ai:AIEcosystem
+  ObjectSomeValuesFrom(ai:partOf ai:GlobalTechnologyEcosystem))
 
-  SubClassOf(ai:AIEcosystem
-    ObjectSomeValuesFrom(ai:governedBy ai:AIGovernance))
+SubClassOf(ai:AIEcosystem
+  ObjectSomeValuesFrom(ai:producedBy ai:TalentPipeline))
 
-  SubClassOf(ai:AIEcosystem
-    ObjectSomeValuesFrom(ai:governedBy ai:NationalAIStrategy))
+SubClassOf(ai:AIEcosystem
+  ObjectSomeValuesFrom(ai:governedBy ai:AIGovernance))
 
-  SubClassOf(ai:AIEcosystem
-    ObjectSomeValuesFrom(ai:governedBy ai:AIPolicy))
-  ```
+SubClassOf(ai:AIEcosystem
+  ObjectSomeValuesFrom(ai:governedBy ai:NationalAIStrategy))
 
-  ## About
-  The AI Ecosystem as a coherent analytical object emerged from the observation that artificial intelligence, unlike earlier software platforms, required a dense interdependence of specialised hardware, massive data accumulation, frontier research, and regulatory governance before any individual product or service became possible. The term gained currency with the scaling wave of 2017–2022, during which the [[Transformer Architecture]] (Vaswani et al. 2017, "Attention Is All You Need") enabled a step-change in model capabilities and created the platform dynamics now characteristic of the ecosystem's upper layers. The conceptual lineage draws on Moore's Law ecosystems analysis (Grove 1996), platform economics (Eisenmann, Parker & Van Alstyne 2006), and general-purpose technology theory (Bresnahan & Trajtenberg 1995), all adapted for the specific properties of AI systems: their dependence on training data as a competitive input, their inference-time compute requirements, the transfer-learning dynamics that enable large pre-trained models to reduce the data requirements for fine-tuned applications, and the emergent capabilities that appear at scale without being explicitly programmed. Unlike the PC ecosystem, which commoditised hardware rapidly (Moore's Law driven price/performance improvements from multiple chip manufacturers), or the web ecosystem, which commoditised server infrastructure through open-source software, the AI ecosystem exhibits persistent concentration at both the hardware layer (NVIDIA monoculture in accelerated compute) and the model layer (a handful of frontier labs with exclusive access to the scale of capital, data, and engineering talent required to train frontier models). This concentration creates a fundamentally different competitive dynamic from earlier technology ecosystems: incumbency advantages compound through data flywheel effects (more users → more RLHF preference data → better models → more users), specialised compute procurement advantages (frontier labs have long-term GPU supply agreements), and network effects at the application layer (developer ecosystems that converge on a small number of SDK/framework standards create switching costs). Understanding these dynamics is essential to analysing the AI Ecosystem as a governance object: the entities best positioned to implement [[AI Documentation Standards]] and governance obligations are concentrated at the very top of the ecosystem, while the widest range of regulatory risk is distributed across the long tail of application developers who deploy AI capabilities without necessarily understanding the underlying models' limitations or documentation status.
+SubClassOf(ai:AIEcosystem
+  ObjectSomeValuesFrom(ai:governedBy ai:AIPolicy))
+```
 
-  Historically, the AI Ecosystem traversed three transformative phases, each expanding its scope and restructuring its competitive dynamics. The deep learning renaissance (2012–2017) was anchored by AlexNet (Krizhevsky, Sutskever & Hinton 2012), which demonstrated that [[Deep Learning]] with GPU acceleration could achieve superhuman performance on ImageNet image classification with a test error rate of 15.3% compared to 26.2% for the next-best entry — a margin sufficiently large to make GPU-accelerated convolutional neural networks the immediate focus of every major [[Computer Vision]] research group globally. NVIDIA's CUDA programming model, developed for gaming GPUs, proved immediately adaptable to the matrix multiplication workloads of neural network training, establishing the company's critical infrastructure role and initiating a decade of AI-specific GPU product development (Tesla K40 in 2013, P100 in 2016, V100 in 2017, A100 in 2020, H100 in 2022). The period 2012–2017 saw [[Machine Learning]] and AI transition from primarily academic domains to active industry investment, with Google, Facebook, Microsoft, Amazon, and Baidu all establishing dedicated AI research laboratories and beginning large-scale production deployments of deep learning in recommendation systems, speech recognition, and image classification. The NLP scaling era (2018–2021) saw the introduction of the self-attention mechanism and transformer models, beginning with BERT (Devlin et al. 2018, arXiv:1810.04805) demonstrating that pre-training on unlabelled text and fine-tuning on task-specific labelled data could achieve state-of-the-art performance across eleven [[Natural Language Processing]] tasks simultaneously — a dramatic departure from the prior paradigm of task-specific model design. GPT-2 (Radford et al. 2019) demonstrated that scaling this approach without task-specific fine-tuning produced surprisingly coherent text generation, raising early alarms about misuse potential. GPT-3 (Brown et al. 2020, arXiv:2005.14165, 175 billion parameters) demonstrated in-context few-shot learning — the ability to perform new tasks from a handful of examples provided in the prompt — without any weight updates, establishing the [[Foundation Models]] paradigm that treats a single pre-trained model as a general-purpose capability platform. The generative AI and foundation model era (2022–present) began with the public release of ChatGPT in November 2022, which drove unprecedented consumer adoption (100 million users within two months, faster than any technology product in history) and triggered a restructuring of the entire ecosystem around API-accessible frontier models, prompt engineering, [[Reinforcement Learning]] from human feedback (RLHF), and [[Agentic AI]] applications. The competitive response was immediate and global: Google rushed Bard (later Gemini) to market, Meta open-sourced LLaMA, Anthropic raised billions for Claude, Microsoft committed $13 billion to OpenAI, and Chinese labs accelerated domestic alternatives. By 2025, the AI Ecosystem had become a sector exceeding $500 billion in annual revenue with cascading productivity effects across healthcare, finance, legal, scientific research, software engineering, and creative industries.
+## About
+The AI Ecosystem as a coherent analytical object emerged from the observation that artificial intelligence, unlike earlier software platforms, required a dense interdependence of specialised hardware, massive data accumulation, frontier research, and regulatory governance before any individual product or service became possible. The term gained currency with the scaling wave of 2017–2022, during which the [[Transformer Architecture]] (Vaswani et al. 2017, "Attention Is All You Need") enabled a step-change in model capabilities and created the platform dynamics now characteristic of the ecosystem's upper layers. The conceptual lineage draws on Moore's Law ecosystems analysis (Grove 1996), platform economics (Eisenmann, Parker & Van Alstyne 2006), and general-purpose technology theory (Bresnahan & Trajtenberg 1995), all adapted for the specific properties of AI systems: their dependence on training data as a competitive input, their inference-time compute requirements, the transfer-learning dynamics that enable large pre-trained models to reduce the data requirements for fine-tuned applications, and the emergent capabilities that appear at scale without being explicitly programmed. Unlike the PC ecosystem, which commoditised hardware rapidly (Moore's Law driven price/performance improvements from multiple chip manufacturers), or the web ecosystem, which commoditised server infrastructure through open-source software, the AI ecosystem exhibits persistent concentration at both the hardware layer (NVIDIA monoculture in accelerated compute) and the model layer (a handful of frontier labs with exclusive access to the scale of capital, data, and engineering talent required to train frontier models). This concentration creates a fundamentally different competitive dynamic from earlier technology ecosystems: incumbency advantages compound through data flywheel effects (more users → more RLHF preference data → better models → more users), specialised compute procurement advantages (frontier labs have long-term GPU supply agreements), and network effects at the application layer (developer ecosystems that converge on a small number of SDK/framework standards create switching costs). Understanding these dynamics is essential to analysing the AI Ecosystem as a governance object: the entities best positioned to implement [[AI Documentation Standards]] and governance obligations are concentrated at the very top of the ecosystem, while the widest range of regulatory risk is distributed across the long tail of application developers who deploy AI capabilities without necessarily understanding the underlying models' limitations or documentation status.
 
-  The defining structural feature of the current AI Ecosystem is vertical concentration combined with horizontal proliferation. At the base, NVIDIA's H100 and H200 GPU families account for an estimated 80%+ of all frontier AI training, with the H200's 141 GB HBM3e memory capacity (2x the H100's HBM2e) and 4.8 TB/s memory bandwidth enabling models of 70B–700B+ parameters to be trained at commercially viable speeds. The H100 NVL configuration (two H100 chips with NVLink interconnect) delivers 3.9 petaFLOPS of FP8 throughput, enabling a 10,000-GPU cluster to train a 70B-parameter model from scratch in approximately 3 weeks — the practical compute budget for a Llama 3-class training run. Google (TPUs), Amazon (Trainium), and Microsoft (Maia) are developing custom AI ASICs to reduce this dependence, but custom silicon accumulates 3–5 years of software ecosystem investment before matching the GPU ecosystem's maturity in terms of compiler support, debugging tooling, distributed training framework integration, and community knowledge. At the model layer, five organisations account for substantially all frontier capability: OpenAI (GPT-4o, GPT-5 series), Anthropic (Claude 3.5/4 series), Google DeepMind (Gemini 2.5/3 series), Meta (LLaMA 3/4 series), and the constellation of leading Chinese labs (Alibaba/Qwen, DeepSeek, Moonshot/Kimi — collectively accounting for four of the top five open-weight models by benchmark performance as of early 2026). Yet simultaneously, the tooling layer above the models has exploded in diversity: as of mid-2026, Hugging Face hosts over 1 million model repositories and 100,000 datasets, the Agentic AI Foundation (established December 2025 under the Linux Foundation) has standardised agentic protocols across [[Agent Frameworks]], and [[Model Context Protocol]] (MCP, introduced by Anthropic November 2024 and donated to the Linux Foundation in 2025) crossed 97 million installations in March 2026, becoming the de facto standard for tool-equipped [[Agentic AI]] agents integrating with external APIs, databases, and services. This bifurcation — high concentration at the compute and frontier model layers, high proliferation at the tooling and application layers — creates distinctive governance challenges: regulatory instruments designed for centralised actors (requiring documentation from model providers) are effective at the bottom layers but reach only a fraction of actual deployment risk, which is distributed across thousands of downstream integrators and application builders in the long tail of the ecosystem.
+Historically, the AI Ecosystem traversed three transformative phases, each expanding its scope and restructuring its competitive dynamics. The deep learning renaissance (2012–2017) was anchored by AlexNet (Krizhevsky, Sutskever & Hinton 2012), which demonstrated that [[Deep Learning]] with GPU acceleration could achieve superhuman performance on ImageNet image classification with a test error rate of 15.3% compared to 26.2% for the next-best entry — a margin sufficiently large to make GPU-accelerated convolutional neural networks the immediate focus of every major [[Computer Vision]] research group globally. NVIDIA's CUDA programming model, developed for gaming GPUs, proved immediately adaptable to the matrix multiplication workloads of neural network training, establishing the company's critical infrastructure role and initiating a decade of AI-specific GPU product development (Tesla K40 in 2013, P100 in 2016, V100 in 2017, A100 in 2020, H100 in 2022). The period 2012–2017 saw [[Machine Learning]] and AI transition from primarily academic domains to active industry investment, with Google, Facebook, Microsoft, Amazon, and Baidu all establishing dedicated AI research laboratories and beginning large-scale production deployments of deep learning in recommendation systems, speech recognition, and image classification. The NLP scaling era (2018–2021) saw the introduction of the self-attention mechanism and transformer models, beginning with BERT (Devlin et al. 2018, arXiv:1810.04805) demonstrating that pre-training on unlabelled text and fine-tuning on task-specific labelled data could achieve state-of-the-art performance across eleven [[Natural Language Processing]] tasks simultaneously — a dramatic departure from the prior paradigm of task-specific model design. GPT-2 (Radford et al. 2019) demonstrated that scaling this approach without task-specific fine-tuning produced surprisingly coherent text generation, raising early alarms about misuse potential. GPT-3 (Brown et al. 2020, arXiv:2005.14165, 175 billion parameters) demonstrated in-context few-shot learning — the ability to perform new tasks from a handful of examples provided in the prompt — without any weight updates, establishing the [[Foundation Models]] paradigm that treats a single pre-trained model as a general-purpose capability platform. The generative AI and foundation model era (2022–present) began with the public release of ChatGPT in November 2022, which drove unprecedented consumer adoption (100 million users within two months, faster than any technology product in history) and triggered a restructuring of the entire ecosystem around API-accessible frontier models, prompt engineering, [[Reinforcement Learning]] from human feedback (RLHF), and [[Agentic AI]] applications. The competitive response was immediate and global: Google rushed Bard (later Gemini) to market, Meta open-sourced LLaMA, Anthropic raised billions for Claude, Microsoft committed $13 billion to OpenAI, and Chinese labs accelerated domestic alternatives. By 2025, the AI Ecosystem had become a sector exceeding $500 billion in annual revenue with cascading productivity effects across healthcare, finance, legal, scientific research, software engineering, and creative industries.
 
-  ## Components / Architecture
+The defining structural feature of the current AI Ecosystem is vertical concentration combined with horizontal proliferation. At the base, NVIDIA's H100 and H200 GPU families account for an estimated 80%+ of all frontier AI training, with the H200's 141 GB HBM3e memory capacity (2x the H100's HBM2e) and 4.8 TB/s memory bandwidth enabling models of 70B–700B+ parameters to be trained at commercially viable speeds. The H100 NVL configuration (two H100 chips with NVLink interconnect) delivers 3.9 petaFLOPS of FP8 throughput, enabling a 10,000-GPU cluster to train a 70B-parameter model from scratch in approximately 3 weeks — the practical compute budget for a Llama 3-class training run. Google (TPUs), Amazon (Trainium), and Microsoft (Maia) are developing custom AI ASICs to reduce this dependence, but custom silicon accumulates 3–5 years of software ecosystem investment before matching the GPU ecosystem's maturity in terms of compiler support, debugging tooling, distributed training framework integration, and community knowledge. At the model layer, five organisations account for substantially all frontier capability: OpenAI (GPT-4o, GPT-5 series), Anthropic (Claude 3.5/4 series), Google DeepMind (Gemini 2.5/3 series), Meta (LLaMA 3/4 series), and the constellation of leading Chinese labs (Alibaba/Qwen, DeepSeek, Moonshot/Kimi — collectively accounting for four of the top five open-weight models by benchmark performance as of early 2026). Yet simultaneously, the tooling layer above the models has exploded in diversity: as of mid-2026, Hugging Face hosts over 1 million model repositories and 100,000 datasets, the Agentic AI Foundation (established December 2025 under the Linux Foundation) has standardised agentic protocols across [[Agent Frameworks]], and [[Model Context Protocol]] (MCP, introduced by Anthropic November 2024 and donated to the Linux Foundation in 2025) crossed 97 million installations in March 2026, becoming the de facto standard for tool-equipped [[Agentic AI]] agents integrating with external APIs, databases, and services. This bifurcation — high concentration at the compute and frontier model layers, high proliferation at the tooling and application layers — creates distinctive governance challenges: regulatory instruments designed for centralised actors (requiring documentation from model providers) are effective at the bottom layers but reach only a fraction of actual deployment risk, which is distributed across thousands of downstream integrators and application builders in the long tail of the ecosystem.
 
-  ### Silicon Layer
-  - **NVIDIA H100/H200 GPUs**: H100 (80 GB HBM2e, 700W TDP, ~3,000 TFLOPS BF16) and H200 (141 GB HBM3e, 2x memory bandwidth) are the dominant training accelerators. H100 clusters of 10,000+ GPUs are standard for frontier model training, with Microsoft, Google, Amazon, and Meta each operating clusters of this scale.
-  - **Google TPU v5e/v5p**: Available via Google Cloud TPU pods; TPU v5p delivers 460 TFLOPS BF16 per chip and is optimised for Google's JAX/XLA training stack. Native to Gemini model training.
-  - **Amazon Trainium2/Inferentia2**: Custom AWS silicon for training (Trainium2, 2x Trainium1 performance) and inference (Inferentia2, optimised for low-latency API serving). Deeply integrated with Anthropic's Claude training infrastructure per the $8 billion AWS-Anthropic partnership.
-  - **Chinese AI Chips**: Huawei Ascend 910C (comparable to H100 by some benchmarks) and Cambricon MLU370 as strategic alternatives in the face of US export controls.
-  - **Emerging ASICs**: Cerebras CS-3, Groq LPU, SambaNova SN40L targeting specific workloads (inference latency, efficiency).
+## Components / Architecture
+
+### Silicon Layer
+
+- **NVIDIA H100/H200 GPUs**: H100 (80 GB HBM2e, 700W TDP, ~3,000 TFLOPS BF16) and H200 (141 GB HBM3e, 2x memory bandwidth) are the dominant training accelerators. H100 clusters of 10,000+ GPUs are standard for frontier model training, with Microsoft, Google, Amazon, and Meta each operating clusters of this scale.
+- **Google TPU v5e/v5p**: Available via Google Cloud TPU pods; TPU v5p delivers 460 TFLOPS BF16 per chip and is optimised for Google's JAX/XLA training stack. Native to Gemini model training.
+- **Amazon Trainium2/Inferentia2**: Custom AWS silicon for training (Trainium2, 2x Trainium1 performance) and inference (Inferentia2, optimised for low-latency API serving). Deeply integrated with Anthropic's Claude training infrastructure per the $8 billion AWS-Anthropic partnership.
+- **Chinese AI Chips**: Huawei Ascend 910C (comparable to H100 by some benchmarks) and Cambricon MLU370 as strategic alternatives in the face of US export controls.
+- **Emerging ASICs**: Cerebras CS-3, Groq LPU, SambaNova SN40L targeting specific workloads (inference latency, efficiency).
 
   ### Training Infrastructure Layer
-  - **Distributed Training Frameworks**: DeepSpeed (Microsoft), Megatron-LM (NVIDIA), PyTorch FSDP (Meta), JAX+XLA (Google). Enable sharding of 100B+ parameter models across thousands of GPUs.
-  - **Data Pipelines**: Petabyte-scale crawls (Common Crawl ~80TB/month) filtered, deduplicated (MinHash LSH), and formatted (token-efficient packing). Quality filters, safety classifiers, and PII scrubbers applied before model ingestion.
-  - **Hyperscale Data Centres**: Concentration in Northern Virginia (US East-1), Dublin and Stockholm (EU), Singapore (APAC). EU AI Growth Zones and UK AI Growth Zones (AIGZs) are incentivising build-out in new geographies.
+
+- **Distributed Training Frameworks**: DeepSpeed (Microsoft), Megatron-LM (NVIDIA), PyTorch FSDP (Meta), JAX+XLA (Google). Enable sharding of 100B+ parameter models across thousands of GPUs.
+- **Data Pipelines**: Petabyte-scale crawls (Common Crawl ~80TB/month) filtered, deduplicated (MinHash LSH), and formatted (token-efficient packing). Quality filters, safety classifiers, and PII scrubbers applied before model ingestion.
+- **Hyperscale Data Centres**: Concentration in Northern Virginia (US East-1), Dublin and Stockholm (EU), Singapore (APAC). EU AI Growth Zones and UK AI Growth Zones (AIGZs) are incentivising build-out in new geographies.
 
   ### Foundation Model Layer
-  - **Proprietary frontier**: GPT-4o (OpenAI, 128K context, multimodal), Claude 3.7 Sonnet/Claude 4 (Anthropic), Gemini 2.5 Pro/Ultra (Google DeepMind), Grok 4 (xAI).
-  - **Open-weight frontier**: LLaMA 4 (Meta, native multimodal, open-weight), Qwen3 (Alibaba, >1B HuggingFace downloads as of Jan 2026), DeepSeek-V3 (cost: $5.5M training run vs GPT-4-equivalent), Mistral Large 2.
-  - **Specialist models**: Gemini for Science (AlphaFold 3 lineage), Medical LLM variants (Med-PaLM 3), code models (Claude Code, GitHub Copilot, Google Jules).
+
+- **Proprietary frontier**: GPT-4o (OpenAI, 128K context, multimodal), Claude 3.7 Sonnet/Claude 4 (Anthropic), Gemini 2.5 Pro/Ultra (Google DeepMind), Grok 4 (xAI).
+- **Open-weight frontier**: LLaMA 4 (Meta, native multimodal, open-weight), Qwen3 (Alibaba, >1B HuggingFace downloads as of Jan 2026), DeepSeek-V3 (cost: $5.5M training run vs GPT-4-equivalent), Mistral Large 2.
+- **Specialist models**: Gemini for Science (AlphaFold 3 lineage), Medical LLM variants (Med-PaLM 3), code models (Claude Code, GitHub Copilot, Google Jules).
 
   ### Deployment and Inference Layer
-  - **Open serving stacks**: vLLM (PagedAttention, continuous batching — 24x higher throughput vs naive serving), TensorRT-LLM (NVIDIA inference optimisation), Ollama (local deployment), llama.cpp (quantised CPU/GPU inference).
-  - **Managed API endpoints**: OpenAI API, Anthropic API, Google AI Studio / Vertex AI, Amazon Bedrock, Azure OpenAI Service, Groq (LPU-based ultra-low latency).
-  - **Deployment patterns**: Batch inference (cost-optimised), streaming completions (real-time UX), cached KV-prefix (latency reduction for repeated system prompts).
+
+- **Open serving stacks**: vLLM (PagedAttention, continuous batching — 24x higher throughput vs naive serving), TensorRT-LLM (NVIDIA inference optimisation), Ollama (local deployment), llama.cpp (quantised CPU/GPU inference).
+- **Managed API endpoints**: OpenAI API, Anthropic API, Google AI Studio / Vertex AI, Amazon Bedrock, Azure OpenAI Service, Groq (LPU-based ultra-low latency).
+- **Deployment patterns**: Batch inference (cost-optimised), streaming completions (real-time UX), cached KV-prefix (latency reduction for repeated system prompts).
 
   ### Developer Tooling Layer
-  - **Hugging Face Hub**: 1M+ model repositories, 100K+ datasets, 300K+ Spaces. `transformers`, `datasets`, `evaluate`, `peft` libraries as universal ML tooling.
-  - **[[Agent Frameworks]]**: LangChain, LlamaIndex, CrewAI, AutoGen, Anthropic claude-agent-sdk, OpenAI Agents SDK. Standardised on [[Model Context Protocol]] for tool integration as of 2025–2026.
-  - **Evaluation frameworks**: HELM, LM-Evaluation-Harness, MMLU, BigBench Hard, GPQA Diamond, SWE-bench (software engineering), LiveCodeBench.
-  - **MLOps platforms**: MLflow, Weights & Biases, Vertex AI Pipelines, SageMaker Pipelines. Increasingly integrated with [[AI Documentation Standards]] tooling for automated model card generation.
+
+- **Hugging Face Hub**: 1M+ model repositories, 100K+ datasets, 300K+ Spaces. `transformers`, `datasets`, `evaluate`, `peft` libraries as universal ML tooling.
+- **[[Agent Frameworks]]**: LangChain, LlamaIndex, CrewAI, AutoGen, Anthropic claude-agent-sdk, OpenAI Agents SDK. Standardised on [[Model Context Protocol]] for tool integration as of 2025–2026.
+- **Evaluation frameworks**: HELM, LM-Evaluation-Harness, MMLU, BigBench Hard, GPQA Diamond, SWE-bench (software engineering), LiveCodeBench.
+- **MLOps platforms**: MLflow, Weights & Biases, Vertex AI Pipelines, SageMaker Pipelines. Increasingly integrated with [[AI Documentation Standards]] tooling for automated model card generation.
 
   ### Application Layer
-  - **Productivity copilots**: GitHub Copilot (55M+ users 2025), Microsoft 365 Copilot, Google Workspace AI, Notion AI.
-  - **Agentic platforms**: Anthropic Claude Code, Devin (Cognition AI), GPT-4o Operator mode. SWE-bench Verified scores exceeding 50% (Claude 3.7 Sonnet, February 2025) mark crossing into commercially viable autonomous software development.
-  - **Vertical applications**: Harvey (legal), Abridge (medical transcription), Harvey (contract drafting), Wayve (autonomous driving), Waymo (robotaxi).
-  - **Consumer AI**: ChatGPT (200M+ weekly active users 2025), Perplexity AI, Character.ai.
+
+- **Productivity copilots**: GitHub Copilot (55M+ users 2025), Microsoft 365 Copilot, Google Workspace AI, Notion AI.
+- **Agentic platforms**: Anthropic Claude Code, Devin (Cognition AI), GPT-4o Operator mode. SWE-bench Verified scores exceeding 50% (Claude 3.7 Sonnet, February 2025) mark crossing into commercially viable autonomous software development.
+- **Vertical applications**: Harvey (legal), Abridge (medical transcription), Harvey (contract drafting), Wayve (autonomous driving), Waymo (robotaxi).
+- **Consumer AI**: ChatGPT (200M+ weekly active users 2025), Perplexity AI, Character.ai.
 
   ### Governance and Standards Layer
-  - **Regulatory**: [[EU AI Act]] (enforcement phases 2024–2026), US AI Executive Orders, UK AI Opportunities Action Plan (2025), China AI Governance Rules.
-  - **Standards bodies**: ISO/IEC JTC 1/SC 42 (AI standards), IEEE Standards Association (AIS standards), NIST AI programme.
-  - **Voluntary frameworks**: [[AI Governance Framework]], NIST AI RMF, PAI (Partnership on AI) guidelines, Seoul AI Safety Summit commitments (2024), Paris AI Safety Summit (2025).
-  - **Safety research institutions**: Anthropic (Constitutional AI, Interpretability), DeepMind Safety Team, ARC Evals, METR (Machine Ethics and Technology Research), Apollo Research.
+
+- **Regulatory**: [[EU AI Act]] (enforcement phases 2024–2026), US AI Executive Orders, UK AI Opportunities Action Plan (2025), China AI Governance Rules.
+- **Standards bodies**: ISO/IEC JTC 1/SC 42 (AI standards), IEEE Standards Association (AIS standards), NIST AI programme.
+- **Voluntary frameworks**: [[AI Governance Framework]], NIST AI RMF, PAI (Partnership on AI) guidelines, Seoul AI Safety Summit commitments (2024), Paris AI Safety Summit (2025).
+- **Safety research institutions**: Anthropic (Constitutional AI, Interpretability), DeepMind Safety Team, ARC Evals, METR (Machine Ethics and Technology Research), Apollo Research.
 
   ## Use Cases / Major Families
 
@@ -298,5 +305,5 @@ The AI Ecosystem is the interconnected network of organisations, technologies, s
   27. N8 Research Partnership (2025). "How Northern Universities Are Pushing Forward AI." N8 Research Partnership. https://www.n8research.org.uk/how-northern-universities-are-pushing-forward-ai/
   28. France Epargne Research (2026). "State of AI 2026: Investment, Models, and the Adoption Frontier." January 2026. https://www.france-epargne.fr/research/en/state-of-ai-entering-2026
 
-- ### Provenance
+### Provenance
 

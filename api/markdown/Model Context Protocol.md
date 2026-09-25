@@ -1,22 +1,22 @@
-
 The Model Context Protocol (MCP) is an open standard published by Anthropic in November 2024 that defines a JSON-RPC 2.0-based client–server protocol for connecting Large Language Model inference hosts (MCP clients) to external capability providers (MCP servers), exposing tools, resources, an...
 
-- ### In Plain Terms
-  - A common plug-and-socket standard that lets an AI assistant connect to outside tools and data (files, databases, apps) without custom wiring for each one. Think of it as a universal adapter, so any assistant that speaks it can use any tool that speaks it.
+### In Plain Terms
 
-- ### Semantic Classification
+- A common plug-and-socket standard that lets an AI assistant connect to outside tools and data (files, databases, apps) without custom wiring for each one. Think of it as a universal adapter, so any assistant that speaks it can use any tool that speaks it.
 
-- ### Content
+### Semantic Classification
 
-  The Model Context Protocol emerged from Anthropic's work on Claude tool use and the observation that every organisation integrating LLMs with external systems was independently solving the same problem: how to expose a tool's input schema, invoke it safely, and return structured results to the model. MCP standardises this interaction as a lightweight protocol, analogous to the Language Server Protocol (LSP) in the IDE ecosystem — a single client-side integration that unlocks a growing ecosystem of server-side capability providers.
+### Content
 
-  #### Key Characteristics
+The Model Context Protocol emerged from Anthropic's work on Claude tool use and the observation that every organisation integrating LLMs with external systems was independently solving the same problem: how to expose a tool's input schema, invoke it safely, and return structured results to the model. MCP standardises this interaction as a lightweight protocol, analogous to the Language Server Protocol (LSP) in the IDE ecosystem — a single client-side integration that unlocks a growing ecosystem of server-side capability providers.
 
-  - **Three Primitive Abstractions**: MCP defines exactly three server-side primitives — **Tools** (functions the model can call; model-controlled), **Resources** (data the host exposes to the model context; application-controlled), and **Prompts** (templated instruction sequences; user-controlled). This minimal surface area keeps implementations tractable.
-  - **JSON-RPC 2.0 Transport**: All messages are JSON-RPC 2.0 requests and responses. The transport layer is pluggable: STDIO (subprocess communication), HTTP with Server-Sent Events (SSE), and WebSocket are all specified. This allows MCP servers to be embedded in CLIs, web services, or Docker sidecars.
-  - **Capability Negotiation**: On connection, client and server exchange `initialize` handshakes that advertise supported protocol versions and optional capability flags (sampling, roots, logging). This enables graceful degradation when client and server versions differ.
-  - **Tool Schema Validation**: Each tool advertisement includes a JSON Schema defining its input parameters. The LLM uses this schema to generate valid tool-call arguments; the MCP client validates the call before forwarding it to the server, preventing malformed invocations.
-  - **Security Boundaries**: MCP servers run as separate processes with their own permission scope; the client never grants a server direct access to the model's context window. Capability grants are explicit and auditable.
+#### Key Characteristics
+
+- **Three Primitive Abstractions**: MCP defines exactly three server-side primitives — **Tools** (functions the model can call; model-controlled), **Resources** (data the host exposes to the model context; application-controlled), and **Prompts** (templated instruction sequences; user-controlled). This minimal surface area keeps implementations tractable.
+- **JSON-RPC 2.0 Transport**: All messages are JSON-RPC 2.0 requests and responses. The transport layer is pluggable: STDIO (subprocess communication), HTTP with Server-Sent Events (SSE), and WebSocket are all specified. This allows MCP servers to be embedded in CLIs, web services, or Docker sidecars.
+- **Capability Negotiation**: On connection, client and server exchange `initialize` handshakes that advertise supported protocol versions and optional capability flags (sampling, roots, logging). This enables graceful degradation when client and server versions differ.
+- **Tool Schema Validation**: Each tool advertisement includes a JSON Schema defining its input parameters. The LLM uses this schema to generate valid tool-call arguments; the MCP client validates the call before forwarding it to the server, preventing malformed invocations.
+- **Security Boundaries**: MCP servers run as separate processes with their own permission scope; the client never grants a server direct access to the model's context window. Capability grants are explicit and auditable.
 
   #### How It Works
 
@@ -34,11 +34,11 @@ The Model Context Protocol (MCP) is an open standard published by Anthropic in N
 
   #### Standards and References
 
-  - Anthropic. (2024). *Model Context Protocol Specification*. https://modelcontextprotocol.io/specification
-  - Anthropic. (2024). "Introducing the Model Context Protocol." Anthropic Blog. https://www.anthropic.com/news/model-context-protocol
-  - IETF. (2020). *JSON-RPC 2.0 Specification*. https://www.jsonrpc.org/specification
-  - Microsoft. (2016). *Language Server Protocol Specification*. https://microsoft.github.io/language-server-protocol/
-  - GitHub MCP Server Registry. (2025). https://github.com/modelcontextprotocol/servers
+- Anthropic. (2024). *Model Context Protocol Specification*. https://modelcontextprotocol.io/specification
+- Anthropic. (2024). "Introducing the Model Context Protocol." Anthropic Blog. https://www.anthropic.com/news/model-context-protocol
+- IETF. (2020). *JSON-RPC 2.0 Specification*. https://www.jsonrpc.org/specification
+- Microsoft. (2016). *Language Server Protocol Specification*. https://microsoft.github.io/language-server-protocol/
+- GitHub MCP Server Registry. (2025). https://github.com/modelcontextprotocol/servers
 
-- ### Provenance
+### Provenance
 

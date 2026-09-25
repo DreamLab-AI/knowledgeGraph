@@ -1,16 +1,16 @@
-
 Strategic Planning is an organisational process for defining long-term direction, priorities, and resource allocation to achieve goals within a given domain. In spatial computing and metaverse contexts, it encompasses technology roadmaps, governance design, and stakeholder alignment for platform development.
 
-- ### Semantic Classification
+### Semantic Classification
 
-- ### Content
+### Content
 
-  ## Overview
+## Overview
 
-  Strategic Planning represents an abstract concept in the metaverse ontology hierarchy.
+Strategic Planning represents an abstract concept in the metaverse ontology hierarchy.
 
-  #### Related Concepts
-  - [[owl:Thing]]
+#### Related Concepts
 
-- ### Provenance
+- [[owl:Thing]]
+
+### Provenance
 

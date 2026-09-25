@@ -1,142 +1,142 @@
-
 A distance metric is a function that quantifies how dissimilar two data points are, satisfying non-negativity, identity, symmetry and the triangle inequality. In machine learning it defines the geometry of a feature space and thereby governs nearest-neighbour search, clustering and similarity-based retrieval. Choosing or learning an appropriate metric is often as important as the model itself for tasks driven by proximity.
 
-- ### Semantic Classification
+### Semantic Classification
 
-- ### Content
-  ## Compositional Relationships (Components)
-  ```
-  SubClassOf(ai:DistanceMetric
-    ObjectSomeValuesFrom(ai:hasPart ai:EuclideanDistance))
-  SubClassOf(ai:DistanceMetric
-    ObjectSomeValuesFrom(ai:hasPart ai:ManhattanDistance))
-  SubClassOf(ai:DistanceMetric
-    ObjectSomeValuesFrom(ai:hasPart ai:MahalanobisDistance))
-  SubClassOf(ai:DistanceMetric
-    ObjectSomeValuesFrom(ai:hasPart ai:CosineSimilarity))
-  SubClassOf(ai:DistanceMetric
-    ObjectSomeValuesFrom(ai:hasPart ai:HammingDistance))
-  SubClassOf(ai:DistanceMetric
-    ObjectSomeValuesFrom(ai:hasPart ai:MinkowskiDistance))
-  SubClassOf(ai:DistanceMetric
-    ObjectSomeValuesFrom(ai:hasPart ai:JaccardDistance))
-  SubClassOf(ai:DistanceMetric
-    ObjectSomeValuesFrom(ai:hasPart ai:EditDistance))
-  ```
-  ## Dependency Relationships
-  ```
-  SubClassOf(ai:DistanceMetric
-    ObjectSomeValuesFrom(ai:requires ai:FeatureRepresentation))
-  SubClassOf(ai:DistanceMetric
-    ObjectSomeValuesFrom(ai:requires ai:VectorEmbedding))
-  SubClassOf(ai:DistanceMetric
-    ObjectSomeValuesFrom(ai:requires ai:LinearAlgebra))
-  SubClassOf(ai:DistanceMetric
-    ObjectSomeValuesFrom(ai:dependsOn ai:DataNormalisation))
-  SubClassOf(ai:DistanceMetric
-    ObjectSomeValuesFrom(ai:dependsOn ai:CovarianceMatrix))
-  SubClassOf(ai:DistanceMetric
-    ObjectSomeValuesFrom(ai:dependsOn ai:FeatureSpace))
-  ```
-  ## Capability Relationships
-  ```
-  SubClassOf(ai:DistanceMetric
-    ObjectSomeValuesFrom(ai:enables ai:NearestNeighbourSearch))
-  SubClassOf(ai:DistanceMetric
-    ObjectSomeValuesFrom(ai:enables ai:Clustering))
-  SubClassOf(ai:DistanceMetric
-    ObjectSomeValuesFrom(ai:enables ai:AnomalyDetection))
-  SubClassOf(ai:DistanceMetric
-    ObjectSomeValuesFrom(ai:enables ai:Classification))
-  SubClassOf(ai:DistanceMetric
-    ObjectSomeValuesFrom(ai:enables ai:MetricLearning))
-  SubClassOf(ai:DistanceMetric
-    ObjectSomeValuesFrom(ai:enables ai:SemanticSearch))
-  SubClassOf(ai:DistanceMetric
-    ObjectSomeValuesFrom(ai:enables ai:InformationRetrieval))
-  ```
-  ## Implementation Relationships
-  ```
-  SubClassOf(ai:DistanceMetric
-    ObjectSomeValuesFrom(ai:implements ai:MetricSpace))
-  SubClassOf(ai:DistanceMetric
-    ObjectSomeValuesFrom(ai:implements ai:SimilarityFunction))
-  SubClassOf(ai:DistanceMetric
-    ObjectSomeValuesFrom(ai:implements ai:ProximitySearch))
-  SubClassOf(ai:DistanceMetric
-    ObjectSomeValuesFrom(ai:implements ai:KNNClassifier))
-  SubClassOf(ai:DistanceMetric
-    ObjectSomeValuesFrom(ai:implements ai:VectorIndexing))
-  ```
-  ## Reduction Relationships
-  ```
-  SubClassOf(ai:DistanceMetric
-    ObjectSomeValuesFrom(ai:reducesTo ai:EuclideanDistance))
-  SubClassOf(ai:DistanceMetric
-    ObjectSomeValuesFrom(ai:reducesTo ai:InnerProduct))
-  SubClassOf(ai:DistanceMetric
-    ObjectSomeValuesFrom(ai:reducesTo ai:AngularDistance))
-  SubClassOf(ai:DistanceMetric
-    ObjectSomeValuesFrom(ai:reducesTo ai:HammingDistance))
-  ```
-  ## Contrastive Relationships
-  ```
-  SubClassOf(ai:DistanceMetric
-    ObjectSomeValuesFrom(ai:contrastsWith ai:KernelFunction))
-  SubClassOf(ai:DistanceMetric
-    ObjectSomeValuesFrom(ai:contrastsWith ai:GraphDistance))
-  SubClassOf(ai:DistanceMetric
-    ObjectSomeValuesFrom(ai:contrastsWith ai:EarthMoverDistance))
-  SubClassOf(ai:DistanceMetric
-    ObjectSomeValuesFrom(ai:contrastsWith ai:KLDivergence))
-  SubClassOf(ai:DistanceMetric
-    ObjectSomeValuesFrom(ai:contrastsWith ai:MutualInformation))
-  SubClassOf(ai:DistanceMetric
-    ObjectSomeValuesFrom(ai:contrastsWith ai:SimilarityFunction))
-  ```
+### Content
 
-  ## About
+## Compositional Relationships (Components)
+```
+SubClassOf(ai:DistanceMetric
+  ObjectSomeValuesFrom(ai:hasPart ai:EuclideanDistance))
+SubClassOf(ai:DistanceMetric
+  ObjectSomeValuesFrom(ai:hasPart ai:ManhattanDistance))
+SubClassOf(ai:DistanceMetric
+  ObjectSomeValuesFrom(ai:hasPart ai:MahalanobisDistance))
+SubClassOf(ai:DistanceMetric
+  ObjectSomeValuesFrom(ai:hasPart ai:CosineSimilarity))
+SubClassOf(ai:DistanceMetric
+  ObjectSomeValuesFrom(ai:hasPart ai:HammingDistance))
+SubClassOf(ai:DistanceMetric
+  ObjectSomeValuesFrom(ai:hasPart ai:MinkowskiDistance))
+SubClassOf(ai:DistanceMetric
+  ObjectSomeValuesFrom(ai:hasPart ai:JaccardDistance))
+SubClassOf(ai:DistanceMetric
+  ObjectSomeValuesFrom(ai:hasPart ai:EditDistance))
+```
+## Dependency Relationships
+```
+SubClassOf(ai:DistanceMetric
+  ObjectSomeValuesFrom(ai:requires ai:FeatureRepresentation))
+SubClassOf(ai:DistanceMetric
+  ObjectSomeValuesFrom(ai:requires ai:VectorEmbedding))
+SubClassOf(ai:DistanceMetric
+  ObjectSomeValuesFrom(ai:requires ai:LinearAlgebra))
+SubClassOf(ai:DistanceMetric
+  ObjectSomeValuesFrom(ai:dependsOn ai:DataNormalisation))
+SubClassOf(ai:DistanceMetric
+  ObjectSomeValuesFrom(ai:dependsOn ai:CovarianceMatrix))
+SubClassOf(ai:DistanceMetric
+  ObjectSomeValuesFrom(ai:dependsOn ai:FeatureSpace))
+```
+## Capability Relationships
+```
+SubClassOf(ai:DistanceMetric
+  ObjectSomeValuesFrom(ai:enables ai:NearestNeighbourSearch))
+SubClassOf(ai:DistanceMetric
+  ObjectSomeValuesFrom(ai:enables ai:Clustering))
+SubClassOf(ai:DistanceMetric
+  ObjectSomeValuesFrom(ai:enables ai:AnomalyDetection))
+SubClassOf(ai:DistanceMetric
+  ObjectSomeValuesFrom(ai:enables ai:Classification))
+SubClassOf(ai:DistanceMetric
+  ObjectSomeValuesFrom(ai:enables ai:MetricLearning))
+SubClassOf(ai:DistanceMetric
+  ObjectSomeValuesFrom(ai:enables ai:SemanticSearch))
+SubClassOf(ai:DistanceMetric
+  ObjectSomeValuesFrom(ai:enables ai:InformationRetrieval))
+```
+## Implementation Relationships
+```
+SubClassOf(ai:DistanceMetric
+  ObjectSomeValuesFrom(ai:implements ai:MetricSpace))
+SubClassOf(ai:DistanceMetric
+  ObjectSomeValuesFrom(ai:implements ai:SimilarityFunction))
+SubClassOf(ai:DistanceMetric
+  ObjectSomeValuesFrom(ai:implements ai:ProximitySearch))
+SubClassOf(ai:DistanceMetric
+  ObjectSomeValuesFrom(ai:implements ai:KNNClassifier))
+SubClassOf(ai:DistanceMetric
+  ObjectSomeValuesFrom(ai:implements ai:VectorIndexing))
+```
+## Reduction Relationships
+```
+SubClassOf(ai:DistanceMetric
+  ObjectSomeValuesFrom(ai:reducesTo ai:EuclideanDistance))
+SubClassOf(ai:DistanceMetric
+  ObjectSomeValuesFrom(ai:reducesTo ai:InnerProduct))
+SubClassOf(ai:DistanceMetric
+  ObjectSomeValuesFrom(ai:reducesTo ai:AngularDistance))
+SubClassOf(ai:DistanceMetric
+  ObjectSomeValuesFrom(ai:reducesTo ai:HammingDistance))
+```
+## Contrastive Relationships
+```
+SubClassOf(ai:DistanceMetric
+  ObjectSomeValuesFrom(ai:contrastsWith ai:KernelFunction))
+SubClassOf(ai:DistanceMetric
+  ObjectSomeValuesFrom(ai:contrastsWith ai:GraphDistance))
+SubClassOf(ai:DistanceMetric
+  ObjectSomeValuesFrom(ai:contrastsWith ai:EarthMoverDistance))
+SubClassOf(ai:DistanceMetric
+  ObjectSomeValuesFrom(ai:contrastsWith ai:KLDivergence))
+SubClassOf(ai:DistanceMetric
+  ObjectSomeValuesFrom(ai:contrastsWith ai:MutualInformation))
+SubClassOf(ai:DistanceMetric
+  ObjectSomeValuesFrom(ai:contrastsWith ai:SimilarityFunction))
+```
 
-  The concept of a distance metric is one of the oldest and most mathematically fundamental notions in analysis and geometry, with roots in the abstract topology formalised by Maurice Fréchet (1906) and Felix Hausdorff (1914). The four metric axioms — non-negativity, identity of indiscernibles, symmetry, and the triangle inequality — define a metric space: a set endowed with a notion of distance that behaves in an intuitively correct manner. Every metric space is simultaneously a topological space, meaning that a distance function induces an open-set topology from which all continuity and convergence properties follow. This deep mathematical pedigree distinguishes proper distance metrics from ad hoc similarity functions that may be useful but lack the theoretical guarantees that metric structure provides — particularly the triangle inequality, which is exploited by indexing data structures to prune search spaces and is the mathematical foundation of efficient approximate nearest-neighbour algorithms.
+## About
 
-  In the context of machine learning, distance metrics entered as proxies for the notion of "similar inputs should have similar outputs" — the geometric expression of the smoothness assumption that underlies most supervised and unsupervised learning. The k-nearest-neighbour (k-NN) classifier, proposed in a 1967 paper by Cover and Hart, is the purest embodiment of this idea: classify a query point by the majority label among its k nearest neighbours according to some distance function. The choice of metric directly determines which points are neighbours and thus which labels are retrieved. Fix's observation that k-NN error rate converges to within twice the Bayes error rate under mild conditions holds only when the distance metric is aligned with the true class structure — motivating the entire field of metric learning, which asks: can we learn a distance function from supervision that better captures the task-relevant notion of similarity than any handcrafted metric?
+The concept of a distance metric is one of the oldest and most mathematically fundamental notions in analysis and geometry, with roots in the abstract topology formalised by Maurice Fréchet (1906) and Felix Hausdorff (1914). The four metric axioms — non-negativity, identity of indiscernibles, symmetry, and the triangle inequality — define a metric space: a set endowed with a notion of distance that behaves in an intuitively correct manner. Every metric space is simultaneously a topological space, meaning that a distance function induces an open-set topology from which all continuity and convergence properties follow. This deep mathematical pedigree distinguishes proper distance metrics from ad hoc similarity functions that may be useful but lack the theoretical guarantees that metric structure provides — particularly the triangle inequality, which is exploited by indexing data structures to prune search spaces and is the mathematical foundation of efficient approximate nearest-neighbour algorithms.
 
-  The curse of dimensionality (Bellman, 1961) is the central challenge for distance metrics in high-dimensional feature spaces. As dimensionality d grows, the ratio of the distances to the nearest and farthest points from any query converges to 1 under broad distributional assumptions — all points become equally far away, and the notion of "nearest neighbour" loses meaning. This degradation motivates both lower-dimensional [[Representation Learning]] (encoding inputs into a compact latent space where distances remain meaningful) and the development of metrics specifically suited to high-dimensional geometry, such as cosine distance (which is robust to uniform scale expansion of all dimensions) and Mahalanobis distance (which removes the effect of correlated dimensions by whitening). Modern deep metric learning sidesteps the curse by learning a dimensionality-reducing neural encoder that maps high-dimensional inputs (images, text documents, protein sequences) into a compact embedding space where a simple Euclidean or cosine metric captures the structure of interest, effectively learning both the representation and the metric jointly from labelled examples.
+In the context of machine learning, distance metrics entered as proxies for the notion of "similar inputs should have similar outputs" — the geometric expression of the smoothness assumption that underlies most supervised and unsupervised learning. The k-nearest-neighbour (k-NN) classifier, proposed in a 1967 paper by Cover and Hart, is the purest embodiment of this idea: classify a query point by the majority label among its k nearest neighbours according to some distance function. The choice of metric directly determines which points are neighbours and thus which labels are retrieved. Fix's observation that k-NN error rate converges to within twice the Bayes error rate under mild conditions holds only when the distance metric is aligned with the true class structure — motivating the entire field of metric learning, which asks: can we learn a distance function from supervision that better captures the task-relevant notion of similarity than any handcrafted metric?
 
-  ## Components / Architecture
+The curse of dimensionality (Bellman, 1961) is the central challenge for distance metrics in high-dimensional feature spaces. As dimensionality d grows, the ratio of the distances to the nearest and farthest points from any query converges to 1 under broad distributional assumptions — all points become equally far away, and the notion of "nearest neighbour" loses meaning. This degradation motivates both lower-dimensional [[Representation Learning]] (encoding inputs into a compact latent space where distances remain meaningful) and the development of metrics specifically suited to high-dimensional geometry, such as cosine distance (which is robust to uniform scale expansion of all dimensions) and Mahalanobis distance (which removes the effect of correlated dimensions by whitening). Modern deep metric learning sidesteps the curse by learning a dimensionality-reducing neural encoder that maps high-dimensional inputs (images, text documents, protein sequences) into a compact embedding space where a simple Euclidean or cosine metric captures the structure of interest, effectively learning both the representation and the metric jointly from labelled examples.
 
-  A production distance metric system comprises several interconnected layers, each contributing to the overall geometry of the similarity computation:
+## Components / Architecture
 
-  - **Metric family selection:** The choice of base metric family — L_p norms (Euclidean = L2, Manhattan = L1, Chebyshev = L∞), cosine/angular distance, Mahalanobis distance, or a learned neural embedding distance — determines the fundamental geometric assumptions. L2 distance assumes isotropic feature space where all dimensions contribute equally; Mahalanobis distance assumes a Gaussian covariance structure that can be estimated from data; cosine distance assumes directional alignment is more meaningful than absolute magnitude; learned distances make no fixed parametric assumption about geometry.
-  - **Feature normalisation:** Raw features must be normalised before most distance metrics perform sensibly. Min-max scaling places all features in [0,1]; standard z-score normalisation gives each dimension unit variance; L2 normalisation projects vectors onto the unit hypersphere (converting cosine distance to Euclidean distance equivalence). Without normalisation, high-variance features dominate Euclidean distance, causing it to ignore informative lower-variance dimensions entirely.
-  - **Dimensionality reduction:** [[Dimensionality Reduction]] via PCA, UMAP, or [[Representation Learning|neural encoder]] reduces d from thousands or millions to hundreds or tens, concentrating variance in the reduced space and alleviating the curse of dimensionality before distance computation. The right combination of dimensionality reduction and metric selection is often task-specific.
-  - **Metric learning module:** When labelled similarity supervision is available, metric learning algorithms (LMNN, NCA, ITML, or deep contrastive/triplet training) fit the metric parameters to maximise alignment between geometric distance and semantic similarity. This can be as simple as learning a positive definite matrix M such that the Mahalanobis distance d_M(x, y) = √((x-y)^T M (x-y)) separates same-class points while bringing cross-class neighbours together, or as complex as a full deep neural encoder trained with InfoNCE or triplet loss.
-  - **Indexing structure:** The triangle inequality property of proper metrics is the key that unlocks efficient approximate search: branch-and-bound in [[KD-Tree|KD-trees]] and ball trees exploit the triangle inequality to prune subtrees that cannot contain the true nearest neighbour; [[HNSW]] graph search converges through navigating a proximity graph whose construction relies on the locality implied by the metric; [[Locality-Sensitive Hashing]] for L2 and cosine metrics probabilistically collapses nearby points into the same hash bucket. All of these techniques are impossible or significantly degraded for non-metric similarity functions.
-  - **Distance computation hardware:** Modern systems accelerate distance computation via BLAS/LAPACK routines for L2 and inner products, AVX-512 SIMD for vectorised Euclidean and cosine computation on CPU, and cuBLAS/CUDA tensor cores on GPU for batched similarity matrix computation. [[FAISS]] (Meta AI) provides GPU-accelerated exact and approximate distance computation for L2 and inner product, handling billion-scale corpora.
+A production distance metric system comprises several interconnected layers, each contributing to the overall geometry of the similarity computation:
+
+- **Metric family selection:** The choice of base metric family — L_p norms (Euclidean = L2, Manhattan = L1, Chebyshev = L∞), cosine/angular distance, Mahalanobis distance, or a learned neural embedding distance — determines the fundamental geometric assumptions. L2 distance assumes isotropic feature space where all dimensions contribute equally; Mahalanobis distance assumes a Gaussian covariance structure that can be estimated from data; cosine distance assumes directional alignment is more meaningful than absolute magnitude; learned distances make no fixed parametric assumption about geometry.
+- **Feature normalisation:** Raw features must be normalised before most distance metrics perform sensibly. Min-max scaling places all features in [0,1]; standard z-score normalisation gives each dimension unit variance; L2 normalisation projects vectors onto the unit hypersphere (converting cosine distance to Euclidean distance equivalence). Without normalisation, high-variance features dominate Euclidean distance, causing it to ignore informative lower-variance dimensions entirely.
+- **Dimensionality reduction:** [[Dimensionality Reduction]] via PCA, UMAP, or [[Representation Learning|neural encoder]] reduces d from thousands or millions to hundreds or tens, concentrating variance in the reduced space and alleviating the curse of dimensionality before distance computation. The right combination of dimensionality reduction and metric selection is often task-specific.
+- **Metric learning module:** When labelled similarity supervision is available, metric learning algorithms (LMNN, NCA, ITML, or deep contrastive/triplet training) fit the metric parameters to maximise alignment between geometric distance and semantic similarity. This can be as simple as learning a positive definite matrix M such that the Mahalanobis distance d_M(x, y) = √((x-y)^T M (x-y)) separates same-class points while bringing cross-class neighbours together, or as complex as a full deep neural encoder trained with InfoNCE or triplet loss.
+- **Indexing structure:** The triangle inequality property of proper metrics is the key that unlocks efficient approximate search: branch-and-bound in [[KD-Tree|KD-trees]] and ball trees exploit the triangle inequality to prune subtrees that cannot contain the true nearest neighbour; [[HNSW]] graph search converges through navigating a proximity graph whose construction relies on the locality implied by the metric; [[Locality-Sensitive Hashing]] for L2 and cosine metrics probabilistically collapses nearby points into the same hash bucket. All of these techniques are impossible or significantly degraded for non-metric similarity functions.
+- **Distance computation hardware:** Modern systems accelerate distance computation via BLAS/LAPACK routines for L2 and inner products, AVX-512 SIMD for vectorised Euclidean and cosine computation on CPU, and cuBLAS/CUDA tensor cores on GPU for batched similarity matrix computation. [[FAISS]] (Meta AI) provides GPU-accelerated exact and approximate distance computation for L2 and inner product, handling billion-scale corpora.
 
   ## Major Metric Families
 
-  - **Euclidean Distance (L2):** d(x,y) = √(Σᵢ (xᵢ - yᵢ)²). The standard geometric distance, optimal for Gaussian-distributed features with uncorrelated dimensions and equal variance. Sensitive to feature scale — requires normalisation. Used in k-means clustering, k-NN classification, PCA dimensionality reduction.
-  - **Manhattan Distance (L1):** d(x,y) = Σᵢ |xᵢ - yᵢ|. Measures grid-path distance; preferable to L2 in high-dimensional spaces and for sparse features because it does not square large deviations. Used in LASSO regression, robust statistics, and city-grid routing problems. L1 distance preserves contrast in high dimensions longer than L2 before the curse of dimensionality erodes discriminative power.
-  - **Minkowski Distance (Lp):** d(x,y) = (Σᵢ |xᵢ - yᵢ|^p)^(1/p). Generalises L1 (p=1) and L2 (p=2); L∞ (p→∞) equals the Chebyshev distance, the maximum dimension-wise difference. Different values of p make different geometric assumptions about feature space geometry. p < 1 violates the triangle inequality and produces non-metric but sometimes useful functions.
-  - **Mahalanobis Distance:** d_Σ(x,y) = √((x-y)^T Σ⁻¹ (x-y)) where Σ is the feature covariance matrix. Accounts for correlations and heterogeneous variances by whitening the feature space: it measures how many standard deviations separate x and y along the principal axes of the covariance. Reduces to Euclidean distance when Σ = I (identity). Particularly effective for multivariate outlier detection, Gaussian discriminant analysis, and the learned Mahalanobis formulation in metric learning (LMNN, ITML). The covariance matrix Σ or its inverse (precision matrix) can be learned from labelled data, giving a convex metric learning formulation.
-  - **Cosine Distance / Angular Distance:** 1 - cos(θ) or arccos(cos(θ))/π. Measures directional dissimilarity rather than absolute spatial distance. The angular distance arccos(A·B / ‖A‖‖B‖) is a proper metric satisfying the triangle inequality; raw cosine similarity (1 - angle/π) is a similarity not a distance. Dominant in text and [[Vector Embedding]] applications where vector magnitude is uninformative. Computed efficiently as inner product after L2 normalisation.
-  - **Hamming Distance:** Count of positions where two fixed-length strings differ. Proper metric for categorical/binary data; used in error-correcting codes (Hamming code), DNA sequence analysis (single-nucleotide polymorphism counting), and binary neural network quantisation search. Hamming distance search is implementable via popcount instructions, enabling extremely fast similarity search on binary embeddings.
-  - **Edit Distance (Levenshtein):** Minimum number of single-character insertions, deletions, or substitutions to transform one string into another. A proper metric; used in spell-checking, DNA/protein sequence alignment, OCR post-processing, and plagiarism detection. Dynamic programming computes exact edit distance in O(m·n) for strings of length m, n; approximate fast methods exist for large-scale search.
-  - **Jaccard Distance:** 1 - |A∩B|/|A∪B| for sets or binary vectors. Measures set dissimilarity; used in de-duplication, near-duplicate document detection (MinHash approximation), and bioinformatics species composition analysis. Jaccard is a proper metric.
-  - **Earth Mover's Distance (Wasserstein-1):** Measures the minimum work required to transform one probability distribution into another. A proper metric on probability distributions; used in generative model evaluation, domain adaptation, and optimal transport problems. Computationally expensive (linear programming) but can be approximated efficiently with entropy regularisation (Sinkhorn iterations).
-  - **Hyperbolic Distance:** d_H(x,y) in the Poincaré ball or hyperboloid model of negatively curved Riemannian space, defined by the Riemannian metric tensor. Grows exponentially from the origin, making it naturally suited to hierarchical data (trees, taxonomies, ontologies) where Euclidean distance fails to embed tree structure without distortion. Used in [[Knowledge Graph Embedding|knowledge graph embeddings]], taxonomic classification, and drug-disease hierarchical link prediction.
+- **Euclidean Distance (L2):** d(x,y) = √(Σᵢ (xᵢ - yᵢ)²). The standard geometric distance, optimal for Gaussian-distributed features with uncorrelated dimensions and equal variance. Sensitive to feature scale — requires normalisation. Used in k-means clustering, k-NN classification, PCA dimensionality reduction.
+- **Manhattan Distance (L1):** d(x,y) = Σᵢ |xᵢ - yᵢ|. Measures grid-path distance; preferable to L2 in high-dimensional spaces and for sparse features because it does not square large deviations. Used in LASSO regression, robust statistics, and city-grid routing problems. L1 distance preserves contrast in high dimensions longer than L2 before the curse of dimensionality erodes discriminative power.
+- **Minkowski Distance (Lp):** d(x,y) = (Σᵢ |xᵢ - yᵢ|^p)^(1/p). Generalises L1 (p=1) and L2 (p=2); L∞ (p→∞) equals the Chebyshev distance, the maximum dimension-wise difference. Different values of p make different geometric assumptions about feature space geometry. p < 1 violates the triangle inequality and produces non-metric but sometimes useful functions.
+- **Mahalanobis Distance:** d_Σ(x,y) = √((x-y)^T Σ⁻¹ (x-y)) where Σ is the feature covariance matrix. Accounts for correlations and heterogeneous variances by whitening the feature space: it measures how many standard deviations separate x and y along the principal axes of the covariance. Reduces to Euclidean distance when Σ = I (identity). Particularly effective for multivariate outlier detection, Gaussian discriminant analysis, and the learned Mahalanobis formulation in metric learning (LMNN, ITML). The covariance matrix Σ or its inverse (precision matrix) can be learned from labelled data, giving a convex metric learning formulation.
+- **Cosine Distance / Angular Distance:** 1 - cos(θ) or arccos(cos(θ))/π. Measures directional dissimilarity rather than absolute spatial distance. The angular distance arccos(A·B / ‖A‖‖B‖) is a proper metric satisfying the triangle inequality; raw cosine similarity (1 - angle/π) is a similarity not a distance. Dominant in text and [[Vector Embedding]] applications where vector magnitude is uninformative. Computed efficiently as inner product after L2 normalisation.
+- **Hamming Distance:** Count of positions where two fixed-length strings differ. Proper metric for categorical/binary data; used in error-correcting codes (Hamming code), DNA sequence analysis (single-nucleotide polymorphism counting), and binary neural network quantisation search. Hamming distance search is implementable via popcount instructions, enabling extremely fast similarity search on binary embeddings.
+- **Edit Distance (Levenshtein):** Minimum number of single-character insertions, deletions, or substitutions to transform one string into another. A proper metric; used in spell-checking, DNA/protein sequence alignment, OCR post-processing, and plagiarism detection. Dynamic programming computes exact edit distance in O(m·n) for strings of length m, n; approximate fast methods exist for large-scale search.
+- **Jaccard Distance:** 1 - |A∩B|/|A∪B| for sets or binary vectors. Measures set dissimilarity; used in de-duplication, near-duplicate document detection (MinHash approximation), and bioinformatics species composition analysis. Jaccard is a proper metric.
+- **Earth Mover's Distance (Wasserstein-1):** Measures the minimum work required to transform one probability distribution into another. A proper metric on probability distributions; used in generative model evaluation, domain adaptation, and optimal transport problems. Computationally expensive (linear programming) but can be approximated efficiently with entropy regularisation (Sinkhorn iterations).
+- **Hyperbolic Distance:** d_H(x,y) in the Poincaré ball or hyperboloid model of negatively curved Riemannian space, defined by the Riemannian metric tensor. Grows exponentially from the origin, making it naturally suited to hierarchical data (trees, taxonomies, ontologies) where Euclidean distance fails to embed tree structure without distortion. Used in [[Knowledge Graph Embedding|knowledge graph embeddings]], taxonomic classification, and drug-disease hierarchical link prediction.
 
   ## Use Cases / Major Families
 
-  - **[[Nearest Neighbor Search]] and [[Retrieval-Augmented Generation]]:** The choice of distance metric is the first decision in designing a retrieval pipeline. [[FAISS]], Qdrant, Weaviate, and Milvus support L2, inner product (cosine on normalised vectors), and Manhattan distance natively. The dominant choice in 2026 RAG pipelines is cosine similarity over dense [[Vector Embedding|embeddings]] from transformer encoders, because it aligns with the contrastive training objectives of modern embedding models.
-  - **[[Clustering]] (k-means, DBSCAN, hierarchical):** k-means with Euclidean distance is the industry workhorse; DBSCAN uses a configurable metric to define neighbourhood density and works well with non-Euclidean metrics for geospatial or graph data; hierarchical clustering supports arbitrary metrics via linkage methods. The metric choice determines which cluster geometries can be recovered: k-means with L2 recovers spherical clusters; DBSCAN with appropriate metric handles arbitrary shapes.
-  - **Face recognition and person re-identification:** Deep metric learning with triplet loss or ArcFace loss trains embedding networks to cluster identities in Euclidean space. FaceNet (Google, 2015) demonstrated that a deep convolutional network trained to produce L2-normalised embeddings where Euclidean distance equals face dissimilarity achieves human-level face verification. The margin-based softmax variants (CosFace, ArcFace, SphereFace) impose angular constraints directly, making cosine distance the natural verification metric.
-  - **Drug discovery and molecular similarity:** Molecular fingerprints (Morgan/circular fingerprints, ECFP4) encode chemical structures as binary vectors; Tanimoto similarity (equivalent to Jaccard similarity on binary fingerprints) is the dominant molecular distance in virtual screening. Continuous molecular embeddings from graph neural networks use L2 or cosine distance to retrieve structurally similar candidate compounds for lead optimisation.
-  - **Bioinformatics sequence analysis:** Edit distance (Levenshtein) for protein/DNA sequence alignment, Hamming distance for SNP comparison, and tree edit distance for RNA secondary structure comparison are the domain-standard metrics. Learned metric embeddings from protein language models (ESM-2, ProtTrans) enable cosine or L2 distance search for functional protein similarity, supplementing or replacing handcrafted string metrics.
-  - **[[Anomaly Detection]]:** Mahalanobis distance is the theoretical-optimal anomaly score for Gaussian data — it measures how many standard deviations a point lies from the class mean, correctly accounting for correlations. k-NN anomaly detection with appropriate metric identifies outliers as points whose distance to their nearest neighbours is abnormally large, without assuming any specific distribution.
-  - **[[Recommendation System|Recommendation systems]]:** Collaborative filtering embeds users and items in a latent space; cosine or inner product distance identifies items similar to a user's consumption history. Mahalanobis metric learning adapts the attribute space to user preference geometry, improving context-aware recommendation by up to 7% over cosine similarity on benchmark datasets.
-  - **[[Geospatial Intelligence]] and location-based services:** Haversine distance measures great-circle distance on the Earth's surface, enabling efficient radius searches and proximity clustering for geospatial data. Spatial indexing with R-trees and geohashes exploits metric properties for sub-millisecond proximity lookups in GPS-scale datasets.
+- **[[Nearest Neighbor Search]] and [[Retrieval-Augmented Generation]]:** The choice of distance metric is the first decision in designing a retrieval pipeline. [[FAISS]], Qdrant, Weaviate, and Milvus support L2, inner product (cosine on normalised vectors), and Manhattan distance natively. The dominant choice in 2026 RAG pipelines is cosine similarity over dense [[Vector Embedding|embeddings]] from transformer encoders, because it aligns with the contrastive training objectives of modern embedding models.
+- **[[Clustering]] (k-means, DBSCAN, hierarchical):** k-means with Euclidean distance is the industry workhorse; DBSCAN uses a configurable metric to define neighbourhood density and works well with non-Euclidean metrics for geospatial or graph data; hierarchical clustering supports arbitrary metrics via linkage methods. The metric choice determines which cluster geometries can be recovered: k-means with L2 recovers spherical clusters; DBSCAN with appropriate metric handles arbitrary shapes.
+- **Face recognition and person re-identification:** Deep metric learning with triplet loss or ArcFace loss trains embedding networks to cluster identities in Euclidean space. FaceNet (Google, 2015) demonstrated that a deep convolutional network trained to produce L2-normalised embeddings where Euclidean distance equals face dissimilarity achieves human-level face verification. The margin-based softmax variants (CosFace, ArcFace, SphereFace) impose angular constraints directly, making cosine distance the natural verification metric.
+- **Drug discovery and molecular similarity:** Molecular fingerprints (Morgan/circular fingerprints, ECFP4) encode chemical structures as binary vectors; Tanimoto similarity (equivalent to Jaccard similarity on binary fingerprints) is the dominant molecular distance in virtual screening. Continuous molecular embeddings from graph neural networks use L2 or cosine distance to retrieve structurally similar candidate compounds for lead optimisation.
+- **Bioinformatics sequence analysis:** Edit distance (Levenshtein) for protein/DNA sequence alignment, Hamming distance for SNP comparison, and tree edit distance for RNA secondary structure comparison are the domain-standard metrics. Learned metric embeddings from protein language models (ESM-2, ProtTrans) enable cosine or L2 distance search for functional protein similarity, supplementing or replacing handcrafted string metrics.
+- **[[Anomaly Detection]]:** Mahalanobis distance is the theoretical-optimal anomaly score for Gaussian data — it measures how many standard deviations a point lies from the class mean, correctly accounting for correlations. k-NN anomaly detection with appropriate metric identifies outliers as points whose distance to their nearest neighbours is abnormally large, without assuming any specific distribution.
+- **[[Recommendation System|Recommendation systems]]:** Collaborative filtering embeds users and items in a latent space; cosine or inner product distance identifies items similar to a user's consumption history. Mahalanobis metric learning adapts the attribute space to user preference geometry, improving context-aware recommendation by up to 7% over cosine similarity on benchmark datasets.
+- **[[Geospatial Intelligence]] and location-based services:** Haversine distance measures great-circle distance on the Earth's surface, enabling efficient radius searches and proximity clustering for geospatial data. Spatial indexing with R-trees and geohashes exploits metric properties for sub-millisecond proximity lookups in GPS-scale datasets.
 
   ## Academic Context
 
@@ -170,13 +170,13 @@ A distance metric is a function that quantifies how dissimilar two data points a
 
   ## Future Directions (2026–2030)
 
-  - **Learned adaptive metrics:** Rather than training a single metric for a task, meta-learning approaches adapt the effective distance metric per query or per domain at inference time, enabling specialised similarity judgment for different user intents without reindexing. Instruction-tuned embedding models (GTE-Qwen, E5-instruct) already condition the metric space on a natural language description of the desired similarity concept.
-  - **Riemannian and product-space metrics:** Combining Euclidean, spherical, and hyperbolic metric components in learned product-space embeddings to handle mixed hierarchical and non-hierarchical data structure. Pseudo-Riemannian and ultra-hyperbolic spaces extend this to indefinite-signature manifolds, potentially capturing more complex topological structure.
-  - **Quantum-metric-inspired distances:** Quantum information distance measures (quantum Wasserstein distance, quantum relative entropy) are being explored as distance metrics for quantum data in quantum machine learning; though primarily theoretical in 2026, they may become practical as quantum hardware matures.
-  - **Privacy-preserving distance computation:** Secure multi-party computation and homomorphic encryption protocols for computing Euclidean and cosine distances over encrypted embedding vectors without revealing raw embeddings — enabling privacy-preserving [[Nearest Neighbor Search]] in federated settings. This is particularly relevant for clinical data applications where raw patient embeddings must remain confidential.
-  - **Neurosymbolic distance metrics:** Integrating symbolic knowledge (ontology axioms, logical constraints) into learned metric spaces so that distances reflect not just statistical co-occurrence but also logical structure — for example, ensuring that ontologically related concepts are metrically close even when they rarely appear together in training data.
-  - **Binary and sparse metric approximations:** Extreme compression of dense embedding vectors to 1-bit (Hamming distance) or sparse quantised representations, achieving orders-of-magnitude speedup in distance computation with controlled recall loss. GPU popcount and SIMD bitwise operations make binary distance computation far faster than float32 L2 or inner product, enabling trillion-scale retrieval on commodity hardware.
-  - **Calibrated distance metrics:** Post-hoc calibration of raw distance scores to meaningful probability values, analogous to calibrated cosine similarity — a calibrated distance of 0.3 means something specific about semantic similarity rather than being an arbitrary scale-dependent number. Isotonic regression and Platt scaling applied to metric outputs are the near-term practical approaches.
+- **Learned adaptive metrics:** Rather than training a single metric for a task, meta-learning approaches adapt the effective distance metric per query or per domain at inference time, enabling specialised similarity judgment for different user intents without reindexing. Instruction-tuned embedding models (GTE-Qwen, E5-instruct) already condition the metric space on a natural language description of the desired similarity concept.
+- **Riemannian and product-space metrics:** Combining Euclidean, spherical, and hyperbolic metric components in learned product-space embeddings to handle mixed hierarchical and non-hierarchical data structure. Pseudo-Riemannian and ultra-hyperbolic spaces extend this to indefinite-signature manifolds, potentially capturing more complex topological structure.
+- **Quantum-metric-inspired distances:** Quantum information distance measures (quantum Wasserstein distance, quantum relative entropy) are being explored as distance metrics for quantum data in quantum machine learning; though primarily theoretical in 2026, they may become practical as quantum hardware matures.
+- **Privacy-preserving distance computation:** Secure multi-party computation and homomorphic encryption protocols for computing Euclidean and cosine distances over encrypted embedding vectors without revealing raw embeddings — enabling privacy-preserving [[Nearest Neighbor Search]] in federated settings. This is particularly relevant for clinical data applications where raw patient embeddings must remain confidential.
+- **Neurosymbolic distance metrics:** Integrating symbolic knowledge (ontology axioms, logical constraints) into learned metric spaces so that distances reflect not just statistical co-occurrence but also logical structure — for example, ensuring that ontologically related concepts are metrically close even when they rarely appear together in training data.
+- **Binary and sparse metric approximations:** Extreme compression of dense embedding vectors to 1-bit (Hamming distance) or sparse quantised representations, achieving orders-of-magnitude speedup in distance computation with controlled recall loss. GPU popcount and SIMD bitwise operations make binary distance computation far faster than float32 L2 or inner product, enabling trillion-scale retrieval on commodity hardware.
+- **Calibrated distance metrics:** Post-hoc calibration of raw distance scores to meaningful probability values, analogous to calibrated cosine similarity — a calibrated distance of 0.3 means something specific about semantic similarity rather than being an arbitrary scale-dependent number. Isotonic regression and Platt scaling applied to metric outputs are the near-term practical approaches.
 
   ## Formal Algorithms
 
@@ -194,35 +194,35 @@ A distance metric is a function that quantifies how dissimilar two data points a
   ### LMNN Objective (Learned Mahalanobis Metric)
   ```
   Minimize over M (PSD): 
-    Σ_{i,j∈N(i)} d_M(x_i, x_j)² 
-    + c · Σ_{i,j∈N(i),l∉C(i)} max(0, 1 + d_M(x_i, x_j)² - d_M(x_i, x_l)²)
+  Σ_{i,j∈N(i)} d_M(x_i, x_j)² 
+  + c · Σ_{i,j∈N(i),l∉C(i)} max(0, 1 + d_M(x_i, x_j)² - d_M(x_i, x_l)²)
   Subject to: M is positive semidefinite
   Where: N(i) = target neighbours of x_i (same class)
-         C(i) = same-class set of x_i
-         c = regularisation parameter balancing pull vs. push objectives
+       C(i) = same-class set of x_i
+       c = regularisation parameter balancing pull vs. push objectives
   ```
 
   ### Triplet Loss Gradient Update
   ```
   For triplet (anchor x_a, positive x_p, negative x_n):
-    L = max(0, d(f(x_a), f(x_p))² - d(f(x_a), f(x_n))² + margin)
-    If L > 0: (active triplet)
-      ∂L/∂f(x_a) = 2(f(x_n) - f(x_p))   [move anchor away from positive, toward negative]
-      ∂L/∂f(x_p) = 2(f(x_a) - f(x_p))   [move positive toward anchor]  
-      ∂L/∂f(x_n) = 2(f(x_a) - f(x_n))   [move negative away from anchor]
-    Backpropagate through f to update encoder parameters
+  L = max(0, d(f(x_a), f(x_p))² - d(f(x_a), f(x_n))² + margin)
+  If L > 0: (active triplet)
+    ∂L/∂f(x_a) = 2(f(x_n) - f(x_p))   [move anchor away from positive, toward negative]
+    ∂L/∂f(x_p) = 2(f(x_a) - f(x_p))   [move positive toward anchor]  
+    ∂L/∂f(x_n) = 2(f(x_a) - f(x_n))   [move negative away from anchor]
+  Backpropagate through f to update encoder parameters
   ```
 
   ### Approximate Nearest Neighbour via LSH (Cosine)
   ```
   Index construction:
-    For r in 1..L (hash functions):
-      Sample random unit vector r_r ~ N(0, I)
-      h_r(x) = sign(r_r · x)    [random hyperplane hash]
-    Store each x_i in bucket (h_1(x_i), ..., h_L(x_i))
+  For r in 1..L (hash functions):
+    Sample random unit vector r_r ~ N(0, I)
+    h_r(x) = sign(r_r · x)    [random hyperplane hash]
+  Store each x_i in bucket (h_1(x_i), ..., h_L(x_i))
   Query(x, K):
-    Candidate set C = all points in bucket (h_1(x), ..., h_L(x))
-    Return K points from C with highest cosine similarity to x
+  Candidate set C = all points in bucket (h_1(x), ..., h_L(x))
+  Return K points from C with highest cosine similarity to x
   Note: |C| << n typically, achieving sub-linear query time
   ```
 
@@ -255,11 +255,12 @@ A distance metric is a function that quantifies how dissimilar two data points a
   **ITML (Information-Theoretic Metric Learning):** Davis et al. (2007) formulated metric learning as a Bregman optimisation problem, minimising the KL divergence from a prior metric (typically Euclidean) to the learned Mahalanobis metric subject to distance constraints. ITML handles both upper bounds (similar pairs should be close) and lower bounds (dissimilar pairs should be far) on pairwise distances, making it flexible for datasets with diverse constraint types.
 
   **Deep Metric Learning Objectives:** The move to deep neural encoders required objectives that work with stochastic mini-batch sampling and non-convex optimisation. The key objectives are:
-  - *Contrastive loss* (Chopra et al., 2005): For positive pairs (xᵢ, xⱼ) and negative pairs (xᵢ, xₖ), minimise d(fᵢ, fⱼ)² + max(0, m - d(fᵢ, fₖ))² for margin m. The contrastive loss is simple and interpretable but suffers from hard negative mining instability and slow convergence on large datasets.
-  - *Triplet loss* (Schroff et al., 2015): For anchor xₐ, positive xₚ, negative xₙ from different class, minimise max(0, d(fₐ, fₚ) - d(fₐ, fₙ) + m). The triplet loss more directly encodes relative ordering requirements and is particularly effective for few-shot learning when used with hard online mining, but requires careful triplet sampling to avoid degenerate solutions where all gradients are zero.
-  - *Multi-similarity loss* (Wang et al., 2019): A generalised pairwise weighting that mines pairs by both self-similarity and relative similarity, addressing the instability of contrastive and triplet sampling while providing tighter objective-gradient alignment.
-  - *ProxyNCA* (Movshovitz-Attias et al., 2017): Represents each class by a learnable proxy vector; classification-style softmax loss over proxy-point distances avoids the O(n²) or O(n³) pair/triplet enumeration overhead while approximating the pairwise objective.
-  - *ArcFace/CosFace* (Deng et al., 2019; Wang et al., 2018): Angular margin penalty added to the cosine similarity between embeddings and class-weight vectors in softmax classification, directly optimising the angular (cosine) geometry of the [[Cosine Similarity|embedding space]] rather than the Euclidean geometry.
+
+- *Contrastive loss* (Chopra et al., 2005): For positive pairs (xᵢ, xⱼ) and negative pairs (xᵢ, xₖ), minimise d(fᵢ, fⱼ)² + max(0, m - d(fᵢ, fₖ))² for margin m. The contrastive loss is simple and interpretable but suffers from hard negative mining instability and slow convergence on large datasets.
+- *Triplet loss* (Schroff et al., 2015): For anchor xₐ, positive xₚ, negative xₙ from different class, minimise max(0, d(fₐ, fₚ) - d(fₐ, fₙ) + m). The triplet loss more directly encodes relative ordering requirements and is particularly effective for few-shot learning when used with hard online mining, but requires careful triplet sampling to avoid degenerate solutions where all gradients are zero.
+- *Multi-similarity loss* (Wang et al., 2019): A generalised pairwise weighting that mines pairs by both self-similarity and relative similarity, addressing the instability of contrastive and triplet sampling while providing tighter objective-gradient alignment.
+- *ProxyNCA* (Movshovitz-Attias et al., 2017): Represents each class by a learnable proxy vector; classification-style softmax loss over proxy-point distances avoids the O(n²) or O(n³) pair/triplet enumeration overhead while approximating the pairwise objective.
+- *ArcFace/CosFace* (Deng et al., 2019; Wang et al., 2018): Angular margin penalty added to the cosine similarity between embeddings and class-weight vectors in softmax classification, directly optimising the angular (cosine) geometry of the [[Cosine Similarity|embedding space]] rather than the Euclidean geometry.
 
   ## Indexing Structures That Exploit Metric Properties
 
@@ -279,12 +280,12 @@ A distance metric is a function that quantifies how dissimilar two data points a
 
   Systematic evaluation of distance metrics and metric learning algorithms relies on standardised datasets and protocols:
 
-  - **CUB-200-2011 (Caltech-UCSD Birds):** 11,788 images of 200 bird species; standard benchmark for deep metric learning with species as the semantic class. Performance measured by Recall@k (fraction of queries with a same-species image in the top k returned) with the standard 100/100 train/test class split.
-  - **Stanford Online Products (SOP):** 120,053 product images from eBay; 22,634 classes with roughly 5 images each. Recall@1, @10, @100 are the standard metrics. A challenging benchmark due to fine-grained intra-class variation and large class count.
-  - **In-Shop Clothes Retrieval:** 7,982 clothing items with 52,712 images; evaluated on Recall@k and mean Average Precision (mAP) for retrieval of matching clothing items across pose and appearance variation.
-  - **DML-Benchmark (2022):** A standardised evaluation suite introduced by Musgrave et al. (2020) applying consistent train/test splits, architecture constraints, and hyperparameter budgets across methods, revealing that many claimed improvements in deep metric learning do not survive controlled comparison — a cautionary result for the field's benchmarking practices.
-  - **ANN-Benchmarks (ann-benchmarks.com):** The reference benchmark for [[Nearest Neighbor Search]] efficiency, measuring recall vs. queries-per-second Pareto frontiers across HNSW, IVF+PQ, ScaNN, LSH, and other index types on standard datasets (SIFT-1M, GIST-1M, Fashion-MNIST, GloVe-25/100/200) under L2 and cosine distance.
-  - **BEIR Benchmark:** For text-domain retrieval with cosine similarity, BEIR's 18 datasets cover diverse retrieval tasks; performance is measured by NDCG@10. Cosine similarity over dense [[Vector Embedding|embeddings]] is the standard distance function for BEIR evaluation.
+- **CUB-200-2011 (Caltech-UCSD Birds):** 11,788 images of 200 bird species; standard benchmark for deep metric learning with species as the semantic class. Performance measured by Recall@k (fraction of queries with a same-species image in the top k returned) with the standard 100/100 train/test class split.
+- **Stanford Online Products (SOP):** 120,053 product images from eBay; 22,634 classes with roughly 5 images each. Recall@1, @10, @100 are the standard metrics. A challenging benchmark due to fine-grained intra-class variation and large class count.
+- **In-Shop Clothes Retrieval:** 7,982 clothing items with 52,712 images; evaluated on Recall@k and mean Average Precision (mAP) for retrieval of matching clothing items across pose and appearance variation.
+- **DML-Benchmark (2022):** A standardised evaluation suite introduced by Musgrave et al. (2020) applying consistent train/test splits, architecture constraints, and hyperparameter budgets across methods, revealing that many claimed improvements in deep metric learning do not survive controlled comparison — a cautionary result for the field's benchmarking practices.
+- **ANN-Benchmarks (ann-benchmarks.com):** The reference benchmark for [[Nearest Neighbor Search]] efficiency, measuring recall vs. queries-per-second Pareto frontiers across HNSW, IVF+PQ, ScaNN, LSH, and other index types on standard datasets (SIFT-1M, GIST-1M, Fashion-MNIST, GloVe-25/100/200) under L2 and cosine distance.
+- **BEIR Benchmark:** For text-domain retrieval with cosine similarity, BEIR's 18 datasets cover diverse retrieval tasks; performance is measured by NDCG@10. Cosine similarity over dense [[Vector Embedding|embeddings]] is the standard distance function for BEIR evaluation.
 
   ## Metric Learning in the 2026 Landscape
 
@@ -348,23 +349,23 @@ A distance metric is a function that quantifies how dissimilar two data points a
 
   ## Key Terminology
 
-  - **Metric space:** A set X together with a distance function d: X × X → R satisfying non-negativity, identity, symmetry, and triangle inequality. The mathematical structure underlying all properly metrised machine learning.
-  - **Mahalanobis distance:** A metric that accounts for feature covariance by whitening the feature space: d_Σ(x, y) = √((x-y)^T Σ⁻¹ (x-y)). Scale-invariant and rotation-invariant in the eigenbasis of Σ.
-  - **Cosine distance:** 1 - cos(θ) where θ is the angle between two vectors. Properly 1 - (A·B / ‖A‖‖B‖); the complementary angular distance arccos(cos(A,B))/π is a proper metric satisfying the triangle inequality.
-  - **Curse of dimensionality:** The phenomenon in high-dimensional spaces whereby all pairwise distances concentrate around a common value, rendering the notion of "nearest neighbour" statistically meaningless. Affects L2 more severely than L1 or cosine distance.
-  - **Triangle inequality:** d(x, z) ≤ d(x, y) + d(y, z); the axiom that enables metric tree pruning and defines proper metrics. Violated by many practical similarity functions ([[Cosine Similarity]], inner product, KL divergence) but satisfied by their distance-form counterparts.
-  - **LMNN:** Large Margin Nearest Neighbour; a classical metric learning algorithm that learns a Mahalanobis metric to improve k-NN classification by pulling same-class neighbours close and pushing impostors outside a margin.
-  - **Triplet loss:** A deep metric learning objective that learns embeddings by minimising d(anchor, positive) - d(anchor, negative) + margin for anchor-positive-negative triplets.
-  - **Contrastive loss:** A siamese network objective that minimises distance between positive pairs and maximises distance between negative pairs subject to a margin.
-  - **Pseudo-metric:** A distance function satisfying all metric axioms except identity of indiscernibles (allowing d(x, y) = 0 for x ≠ y). Occurs when inputs hash to identical compact representations.
-  - **Hyperbolic distance:** Distance in negatively curved Riemannian space (Poincaré ball model); grows exponentially from the origin, enabling distortion-free embedding of tree-structured hierarchical data.
-  - **FID (Fréchet Inception Distance):** Wasserstein-2 distance between distributions of Inception network features of real and generated images; the standard evaluation metric for [[Diffusion Models]] and generative image models.
-  - **CLIP distance:** [[Cosine Similarity]] distance in CLIP's joint image-text embedding space; used to measure semantic alignment and enable cross-modal [[Nearest Neighbor Search]] in multimodal retrieval systems.
-  - **Tanimoto similarity:** Jaccard similarity applied to molecular fingerprints: T(A, B) = |A∩B|/|A∪B| for binary fingerprint vectors. The dominant molecular similarity measure in drug discovery and virtual screening.
-  - **Chamfer distance:** Sum of nearest-neighbour Euclidean distances in both directions between two point clouds; used to evaluate 3D shape generation quality and LiDAR scan alignment in [[Robotics]].
-  - **KL divergence:** Non-symmetric information-theoretic divergence measuring expected log-likelihood ratio; foundational to [[Variational Autoencoder|variational inference]], [[Reinforcement Learning]] policy constraints, and the InfoNCE contrastive learning loss.
-  - **Product quantisation (PQ):** Lossy compression of embedding vectors by independently quantising sub-vectors; used in [[FAISS]] IVF+PQ indices to enable billion-scale [[Nearest Neighbor Search]] with approximate distance computation.
-  - **Angular distance:** arccos(cos(A,B))/π; a proper metric on the unit sphere derived from cosine similarity, satisfying the triangle inequality and enabling metric tree indexing. Equivalent to [[Cosine Similarity]] up to monotonic transformation for ranking purposes.
+- **Metric space:** A set X together with a distance function d: X × X → R satisfying non-negativity, identity, symmetry, and triangle inequality. The mathematical structure underlying all properly metrised machine learning.
+- **Mahalanobis distance:** A metric that accounts for feature covariance by whitening the feature space: d_Σ(x, y) = √((x-y)^T Σ⁻¹ (x-y)). Scale-invariant and rotation-invariant in the eigenbasis of Σ.
+- **Cosine distance:** 1 - cos(θ) where θ is the angle between two vectors. Properly 1 - (A·B / ‖A‖‖B‖); the complementary angular distance arccos(cos(A,B))/π is a proper metric satisfying the triangle inequality.
+- **Curse of dimensionality:** The phenomenon in high-dimensional spaces whereby all pairwise distances concentrate around a common value, rendering the notion of "nearest neighbour" statistically meaningless. Affects L2 more severely than L1 or cosine distance.
+- **Triangle inequality:** d(x, z) ≤ d(x, y) + d(y, z); the axiom that enables metric tree pruning and defines proper metrics. Violated by many practical similarity functions ([[Cosine Similarity]], inner product, KL divergence) but satisfied by their distance-form counterparts.
+- **LMNN:** Large Margin Nearest Neighbour; a classical metric learning algorithm that learns a Mahalanobis metric to improve k-NN classification by pulling same-class neighbours close and pushing impostors outside a margin.
+- **Triplet loss:** A deep metric learning objective that learns embeddings by minimising d(anchor, positive) - d(anchor, negative) + margin for anchor-positive-negative triplets.
+- **Contrastive loss:** A siamese network objective that minimises distance between positive pairs and maximises distance between negative pairs subject to a margin.
+- **Pseudo-metric:** A distance function satisfying all metric axioms except identity of indiscernibles (allowing d(x, y) = 0 for x ≠ y). Occurs when inputs hash to identical compact representations.
+- **Hyperbolic distance:** Distance in negatively curved Riemannian space (Poincaré ball model); grows exponentially from the origin, enabling distortion-free embedding of tree-structured hierarchical data.
+- **FID (Fréchet Inception Distance):** Wasserstein-2 distance between distributions of Inception network features of real and generated images; the standard evaluation metric for [[Diffusion Models]] and generative image models.
+- **CLIP distance:** [[Cosine Similarity]] distance in CLIP's joint image-text embedding space; used to measure semantic alignment and enable cross-modal [[Nearest Neighbor Search]] in multimodal retrieval systems.
+- **Tanimoto similarity:** Jaccard similarity applied to molecular fingerprints: T(A, B) = |A∩B|/|A∪B| for binary fingerprint vectors. The dominant molecular similarity measure in drug discovery and virtual screening.
+- **Chamfer distance:** Sum of nearest-neighbour Euclidean distances in both directions between two point clouds; used to evaluate 3D shape generation quality and LiDAR scan alignment in [[Robotics]].
+- **KL divergence:** Non-symmetric information-theoretic divergence measuring expected log-likelihood ratio; foundational to [[Variational Autoencoder|variational inference]], [[Reinforcement Learning]] policy constraints, and the InfoNCE contrastive learning loss.
+- **Product quantisation (PQ):** Lossy compression of embedding vectors by independently quantising sub-vectors; used in [[FAISS]] IVF+PQ indices to enable billion-scale [[Nearest Neighbor Search]] with approximate distance computation.
+- **Angular distance:** arccos(cos(A,B))/π; a proper metric on the unit sphere derived from cosine similarity, satisfying the triangle inequality and enabling metric tree indexing. Equivalent to [[Cosine Similarity]] up to monotonic transformation for ranking purposes.
 
   ## Distance Metrics in Knowledge Graph and Ontology Systems
 
@@ -390,83 +391,83 @@ A distance metric is a function that quantifies how dissimilar two data points a
 
   Choosing the appropriate distance metric for a machine learning application depends on the data type, dimensionality, available supervision, and downstream task:
 
-  | Data Type | Recommended Metric | Rationale |
-  |-----------|-------------------|-----------|
-  | Dense continuous features, low-to-medium dimensionality | Euclidean (L2) or Mahalanobis | Optimal for Gaussian features; Mahalanobis removes feature correlation effects |
-  | Sparse high-dimensional features (e.g. TF-IDF vectors) | Cosine distance | Magnitude-invariant; robust to document length variation |
-  | Dense neural embeddings (text, image, audio) | Cosine distance (L2-normalised inner product) | Aligns with contrastive training objectives; hardware-accelerated via BLAS |
-  | Binary/categorical features | Hamming distance | Counts position mismatches; popcount hardware acceleration |
-  | String sequences (DNA, text) | Edit (Levenshtein) distance | Handles insertions, deletions, substitutions |
-  | Molecular fingerprints | Tanimoto (Jaccard) | Standard in cheminformatics; appropriate for binary circular fingerprint vectors |
-  | Probability distributions | Wasserstein (Earth Mover's) or KL divergence | Measures distributional overlap; Wasserstein is a proper metric |
-  | Hierarchical / tree-structured data | Hyperbolic distance (Poincaré ball) | Exponential growth from origin enables low-distortion hierarchy embedding |
-  | Point clouds in 3D space | Chamfer distance or ICP (Euclidean NNS) | Standard for LiDAR SLAM and 3D shape comparison |
-  | Any type with labelled similarity supervision | Learned deep metric (contrastive/triplet/ArcFace) | Neural encoder adapts to task-specific similarity; dominates when data is available |
+| Data Type | Recommended Metric | Rationale |
+|-----------|-------------------|-----------|
+| Dense continuous features, low-to-medium dimensionality | Euclidean (L2) or Mahalanobis | Optimal for Gaussian features; Mahalanobis removes feature correlation effects |
+| Sparse high-dimensional features (e.g. TF-IDF vectors) | Cosine distance | Magnitude-invariant; robust to document length variation |
+| Dense neural embeddings (text, image, audio) | Cosine distance (L2-normalised inner product) | Aligns with contrastive training objectives; hardware-accelerated via BLAS |
+| Binary/categorical features | Hamming distance | Counts position mismatches; popcount hardware acceleration |
+| String sequences (DNA, text) | Edit (Levenshtein) distance | Handles insertions, deletions, substitutions |
+| Molecular fingerprints | Tanimoto (Jaccard) | Standard in cheminformatics; appropriate for binary circular fingerprint vectors |
+| Probability distributions | Wasserstein (Earth Mover's) or KL divergence | Measures distributional overlap; Wasserstein is a proper metric |
+| Hierarchical / tree-structured data | Hyperbolic distance (Poincaré ball) | Exponential growth from origin enables low-distortion hierarchy embedding |
+| Point clouds in 3D space | Chamfer distance or ICP (Euclidean NNS) | Standard for LiDAR SLAM and 3D shape comparison |
+| Any type with labelled similarity supervision | Learned deep metric (contrastive/triplet/ArcFace) | Neural encoder adapts to task-specific similarity; dominates when data is available |
 
-  When in doubt and for dense embeddings from modern neural encoders in [[Semantic Search]] and [[Retrieval-Augmented Generation]] applications, cosine distance (or equivalently, inner product on L2-normalised embeddings) is the appropriate default in 2026 due to its alignment with how these encoders are trained, its hardware efficiency, and its robust performance across a wide range of tasks as evidenced by the [[Cosine Similarity|BEIR]] and MTEB benchmarks.
+When in doubt and for dense embeddings from modern neural encoders in [[Semantic Search]] and [[Retrieval-Augmented Generation]] applications, cosine distance (or equivalently, inner product on L2-normalised embeddings) is the appropriate default in 2026 due to its alignment with how these encoders are trained, its hardware efficiency, and its robust performance across a wide range of tasks as evidenced by the [[Cosine Similarity|BEIR]] and MTEB benchmarks.
 
-  ## Research and Literature
+## Research and Literature
 
-  1. Fréchet, M. (1906). "Sur quelques points du calcul fonctionnel." *Rendiconti del Circolo Matematico di Palermo*, 22, 1–72. (Formal introduction of metric spaces.)
-  2. Mahalanobis, P.C. (1936). "On the Generalised Distance in Statistics." *Proceedings of the National Institute of Sciences of India*, 2(1), 49–55.
-  3. Cover, T., Hart, P. (1967). "Nearest Neighbor Pattern Classification." *IEEE Transactions on Information Theory*, 13(1), 21–27.
-  4. Duda, R.O., Hart, P.E. (1973). *Pattern Classification and Scene Analysis.* Wiley.
-  5. Bellman, R. (1961). *Adaptive Control Processes: A Guided Tour.* Princeton University Press. (Curse of dimensionality.)
-  6. Xing, E., Jordan, M., Russell, S., Ng, A. (2002). "Distance Metric Learning with Application to Clustering with Side Information." *NeurIPS 2002.*
-  7. Weinberger, K.Q., Saul, L.K. (2009). "Distance Metric Learning for Large Margin Nearest Neighbor Classification." *JMLR*, 10, 207–244. (LMNN.)
-  8. Chopra, S., Hadsell, R., LeCun, Y. (2005). "Learning a Similarity Metric Discriminatively, with Application to Face Verification." *CVPR 2005.* (Contrastive loss.)
-  9. Schroff, F., Kalenichenko, D., Philbin, J. (2015). "FaceNet: A Unified Embedding for Face Recognition and Clustering." *CVPR 2015.* arXiv:1503.03832 (Triplet loss.)
-  10. Goldberger, J., Roweis, S., Hinton, G., Salakhutdinov, R. (2005). "Neighbourhood Components Analysis." *NeurIPS 2005.*
-  11. Davis, J., Kulis, B., Jain, P., Sra, S., Dhillon, I. (2007). "Information-Theoretic Metric Learning." *ICML 2007.* (ITML.)
-  12. Movshovitz-Attias, Y., Toshev, A., Leung, T.K., et al. (2017). "No Fuss Distance Metric Learning using Proxies." *ICCV 2017.*
-  13. Deng, J., Guo, J., Xue, N., Zafeiriou, S. (2019). "ArcFace: Additive Angular Margin Loss for Deep Face Recognition." *CVPR 2019.* arXiv:1801.07698
-  14. Nickel, M., Kiela, D. (2017). "Poincaré Embeddings for Learning Hierarchical Representations." *NeurIPS 2017.* arXiv:1705.08039
-  15. Ganea, O., Bécigneul, G., Hofmann, T. (2018). "Hyperbolic Neural Networks." *NeurIPS 2018.* arXiv:1805.09112
-  16. Wang, X., Han, X., Huang, W., Dong, D., Scott, M. (2019). "Multi-Similarity Loss with General Pair Weighting for Deep Metric Learning." *CVPR 2019.*
-  17. Kaya, M., Bilge, H.Ş. (2022). "Deep Metric Learning: A Survey." *MDPI Symmetry*, 11(9), 1066.
-  18. Bellet, A., Habrard, A., Sebban, M. (2013). "A Survey on Metric Learning for Feature Vectors and Structured Data." arXiv:1306.6709
-  19. Kulis, B. (2013). "Metric Learning: A Survey." *Foundations and Trends in Machine Learning*, 5(4), 287–364.
-  20. Robertson, S.E., Spärck Jones, K. (1994). "Simple, Proven Approaches to Text Retrieval." Technical Report, Cambridge Computer Lab.
-  21. Indyk, P., Motwani, R. (1998). "Approximate Nearest Neighbors: Towards Removing the Curse of Dimensionality." *STOC 1998.* (Locality-Sensitive Hashing.)
-  22. Malkov, Y.A., Yashunin, D.A. (2018). "Efficient and Robust Approximate Nearest Neighbor Search Using Hierarchical Navigable Small World Graphs." *IEEE TPAMI*, 42(4), 824–836.
-  23. Johnson, J., Douze, M., Jégou, H. (2021). "Billion-Scale Similarity Search with GPUs." *IEEE Transactions on Big Data*, 7(3). (FAISS.) arXiv:1702.08734
-  24. Kusupati, A., et al. (2022). "Matryoshka Representation Learning." *NeurIPS 2022.*
-  25. Vyas, A., et al. (2020). "A Survey on Metric Learning for Feature Vectors and Structured Data." *Neurocomputing*, 408, 1–25. (Spectral, probabilistic and deep metric learning survey.)
-  26. Kaya, M., Bilge, H.Ş. (2022). "Spectral, Probabilistic, and Deep Metric Learning: Tutorial and Survey." arXiv:2201.09267
-  27. "A Review on Riemannian Metric Learning: Closer to You than You Imagine." (2026). arXiv:2503.05321
-  28. "Comparing Contrastive and Triplet Loss: Variance Analysis and Optimization Behavior." (2025). arXiv:2510.02161
+1. Fréchet, M. (1906). "Sur quelques points du calcul fonctionnel." *Rendiconti del Circolo Matematico di Palermo*, 22, 1–72. (Formal introduction of metric spaces.)
+2. Mahalanobis, P.C. (1936). "On the Generalised Distance in Statistics." *Proceedings of the National Institute of Sciences of India*, 2(1), 49–55.
+3. Cover, T., Hart, P. (1967). "Nearest Neighbor Pattern Classification." *IEEE Transactions on Information Theory*, 13(1), 21–27.
+4. Duda, R.O., Hart, P.E. (1973). *Pattern Classification and Scene Analysis.* Wiley.
+5. Bellman, R. (1961). *Adaptive Control Processes: A Guided Tour.* Princeton University Press. (Curse of dimensionality.)
+6. Xing, E., Jordan, M., Russell, S., Ng, A. (2002). "Distance Metric Learning with Application to Clustering with Side Information." *NeurIPS 2002.*
+7. Weinberger, K.Q., Saul, L.K. (2009). "Distance Metric Learning for Large Margin Nearest Neighbor Classification." *JMLR*, 10, 207–244. (LMNN.)
+8. Chopra, S., Hadsell, R., LeCun, Y. (2005). "Learning a Similarity Metric Discriminatively, with Application to Face Verification." *CVPR 2005.* (Contrastive loss.)
+9. Schroff, F., Kalenichenko, D., Philbin, J. (2015). "FaceNet: A Unified Embedding for Face Recognition and Clustering." *CVPR 2015.* arXiv:1503.03832 (Triplet loss.)
+10. Goldberger, J., Roweis, S., Hinton, G., Salakhutdinov, R. (2005). "Neighbourhood Components Analysis." *NeurIPS 2005.*
+11. Davis, J., Kulis, B., Jain, P., Sra, S., Dhillon, I. (2007). "Information-Theoretic Metric Learning." *ICML 2007.* (ITML.)
+12. Movshovitz-Attias, Y., Toshev, A., Leung, T.K., et al. (2017). "No Fuss Distance Metric Learning using Proxies." *ICCV 2017.*
+13. Deng, J., Guo, J., Xue, N., Zafeiriou, S. (2019). "ArcFace: Additive Angular Margin Loss for Deep Face Recognition." *CVPR 2019.* arXiv:1801.07698
+14. Nickel, M., Kiela, D. (2017). "Poincaré Embeddings for Learning Hierarchical Representations." *NeurIPS 2017.* arXiv:1705.08039
+15. Ganea, O., Bécigneul, G., Hofmann, T. (2018). "Hyperbolic Neural Networks." *NeurIPS 2018.* arXiv:1805.09112
+16. Wang, X., Han, X., Huang, W., Dong, D., Scott, M. (2019). "Multi-Similarity Loss with General Pair Weighting for Deep Metric Learning." *CVPR 2019.*
+17. Kaya, M., Bilge, H.Ş. (2022). "Deep Metric Learning: A Survey." *MDPI Symmetry*, 11(9), 1066.
+18. Bellet, A., Habrard, A., Sebban, M. (2013). "A Survey on Metric Learning for Feature Vectors and Structured Data." arXiv:1306.6709
+19. Kulis, B. (2013). "Metric Learning: A Survey." *Foundations and Trends in Machine Learning*, 5(4), 287–364.
+20. Robertson, S.E., Spärck Jones, K. (1994). "Simple, Proven Approaches to Text Retrieval." Technical Report, Cambridge Computer Lab.
+21. Indyk, P., Motwani, R. (1998). "Approximate Nearest Neighbors: Towards Removing the Curse of Dimensionality." *STOC 1998.* (Locality-Sensitive Hashing.)
+22. Malkov, Y.A., Yashunin, D.A. (2018). "Efficient and Robust Approximate Nearest Neighbor Search Using Hierarchical Navigable Small World Graphs." *IEEE TPAMI*, 42(4), 824–836.
+23. Johnson, J., Douze, M., Jégou, H. (2021). "Billion-Scale Similarity Search with GPUs." *IEEE Transactions on Big Data*, 7(3). (FAISS.) arXiv:1702.08734
+24. Kusupati, A., et al. (2022). "Matryoshka Representation Learning." *NeurIPS 2022.*
+25. Vyas, A., et al. (2020). "A Survey on Metric Learning for Feature Vectors and Structured Data." *Neurocomputing*, 408, 1–25. (Spectral, probabilistic and deep metric learning survey.)
+26. Kaya, M., Bilge, H.Ş. (2022). "Spectral, Probabilistic, and Deep Metric Learning: Tutorial and Survey." arXiv:2201.09267
+27. "A Review on Riemannian Metric Learning: Closer to You than You Imagine." (2026). arXiv:2503.05321
+28. "Comparing Contrastive and Triplet Loss: Variance Analysis and Optimization Behavior." (2025). arXiv:2510.02161
 
-  ## Connections to Probability Theory and Statistics
+## Connections to Probability Theory and Statistics
 
-  Distance metrics connect intimately with probability theory and statistical estimation, linking geometric intuitions to probabilistic inference:
+Distance metrics connect intimately with probability theory and statistical estimation, linking geometric intuitions to probabilistic inference:
 
-  **Maximum likelihood and Euclidean distance:** Minimising mean squared error (MSE) — the average squared Euclidean distance between predictions and targets — is equivalent to maximum likelihood estimation under a Gaussian noise model. This connection explains why Euclidean distance (L2 loss) is the natural error criterion for [[Gaussian Process|Gaussian processes]], linear regression, and neural networks trained with MSE loss; it encodes the assumption that prediction errors are Gaussian-distributed.
+**Maximum likelihood and Euclidean distance:** Minimising mean squared error (MSE) — the average squared Euclidean distance between predictions and targets — is equivalent to maximum likelihood estimation under a Gaussian noise model. This connection explains why Euclidean distance (L2 loss) is the natural error criterion for [[Gaussian Process|Gaussian processes]], linear regression, and neural networks trained with MSE loss; it encodes the assumption that prediction errors are Gaussian-distributed.
 
-  **Robust regression and L1 distance:** Minimising mean absolute error (MAE) — the average L1 distance between predictions and targets — is equivalent to maximum likelihood under a Laplacian noise model, which has heavier tails than Gaussian and assigns more probability mass to large errors. L1 loss is therefore more robust to outliers than L2 loss, motivating its use in [[Anomaly Detection]] and robust regression settings where outlying measurements should not dominate parameter estimates.
+**Robust regression and L1 distance:** Minimising mean absolute error (MAE) — the average L1 distance between predictions and targets — is equivalent to maximum likelihood under a Laplacian noise model, which has heavier tails than Gaussian and assigns more probability mass to large errors. L1 loss is therefore more robust to outliers than L2 loss, motivating its use in [[Anomaly Detection]] and robust regression settings where outlying measurements should not dominate parameter estimates.
 
-  **Bregman divergences and generalised metrics:** Bregman divergences D_φ(x, y) = φ(x) - φ(y) - ∇φ(y)·(x-y) generalise Euclidean distance (φ(x) = ‖x‖²) and KL divergence (φ(x) = x log x) within a unified framework. Every regular exponential family distribution corresponds to a Bregman divergence via its log-partition function, and maximum likelihood estimation for exponential families (including Gaussian, Poisson, Bernoulli, multinomial) minimises the corresponding Bregman divergence between empirical and model distributions. This theoretical unification connects metric-based learning to information-geometric learning and probabilistic graphical models.
+**Bregman divergences and generalised metrics:** Bregman divergences D_φ(x, y) = φ(x) - φ(y) - ∇φ(y)·(x-y) generalise Euclidean distance (φ(x) = ‖x‖²) and KL divergence (φ(x) = x log x) within a unified framework. Every regular exponential family distribution corresponds to a Bregman divergence via its log-partition function, and maximum likelihood estimation for exponential families (including Gaussian, Poisson, Bernoulli, multinomial) minimises the corresponding Bregman divergence between empirical and model distributions. This theoretical unification connects metric-based learning to information-geometric learning and probabilistic graphical models.
 
-  **Wasserstein distance and optimal transport:** The Wasserstein-p distance W_p(μ, ν) = (inf_{γ∈Γ(μ,ν)} E_{(x,y)~γ}[d(x,y)^p])^{1/p} is defined as the minimum expected distance to transport mass from distribution μ to ν over all joint distributions γ with marginals μ and ν. Wasserstein distances are proper metrics on the space of probability measures and satisfy key continuity properties not enjoyed by KL divergence or total variation distance. In [[Generative Adversarial Network|GAN]] theory, the Wasserstein-1 distance serves as the generator loss in WGAN (Arjovsky et al., 2017), providing a more stable training signal than the Jensen-Shannon divergence used in the original GAN formulation.
+**Wasserstein distance and optimal transport:** The Wasserstein-p distance W_p(μ, ν) = (inf_{γ∈Γ(μ,ν)} E_{(x,y)~γ}[d(x,y)^p])^{1/p} is defined as the minimum expected distance to transport mass from distribution μ to ν over all joint distributions γ with marginals μ and ν. Wasserstein distances are proper metrics on the space of probability measures and satisfy key continuity properties not enjoyed by KL divergence or total variation distance. In [[Generative Adversarial Network|GAN]] theory, the Wasserstein-1 distance serves as the generator loss in WGAN (Arjovsky et al., 2017), providing a more stable training signal than the Jensen-Shannon divergence used in the original GAN formulation.
 
-  ## Cross-References to Related Ontology Pages
+## Cross-References to Related Ontology Pages
 
-  The following pages in this knowledge graph are directly related to Distance Metric and should be consulted for adjacent concepts:
+The following pages in this knowledge graph are directly related to Distance Metric and should be consulted for adjacent concepts:
 
-  - [[Nearest Neighbor Search]] — the primary algorithmic application; distance metric choice determines NNS index type, recall, and latency trade-offs
-  - [[Cosine Similarity]] — the most widely deployed distance metric in production AI systems; dominates dense text and multimodal [[Vector Embedding]] retrieval
-  - [[Clustering]] — depends fundamentally on distance metric for cluster assignment and within-cluster cohesion measurement; k-means, DBSCAN, and hierarchical clustering are all metric-dependent
-  - [[Vector Embedding]] — the representational substrate over which distance metrics are computed; embedding quality and metric choice jointly determine retrieval quality
-  - [[Vector Database]] — provides indexed storage and distance-metric-based retrieval over [[Vector Embedding|embeddings]]; supports L2, cosine, and inner product natively in all major implementations
-  - [[Anomaly Detection]] — uses Mahalanobis distance and k-NN distance as anomaly scores; distance from class distribution centre is a principled anomaly criterion
-  - [[FAISS]] — Meta AI's open-source library providing GPU-accelerated distance computation for L2 and inner product at billion scale; the reference implementation for production distance search
-  - [[HNSW]] — the dominant approximate nearest-neighbour index structure; graph-based search that exploits triangle inequality for efficient metric-space traversal
-  - [[Locality-Sensitive Hashing]] — hash-based ANN index with proven sensitivity to cosine and L2 metrics; exploits metric geometry to probabilistically group nearby points
-  - [[Representation Learning]] — produces the [[Vector Embedding|embedding spaces]] over which distance metrics are computed; deep metric learning jointly learns representation and metric
-  - [[Contrastive Learning]] — the training paradigm for deep metric learning; optimises encoder parameters to produce embeddings where cosine or L2 distance aligns with semantic similarity
-  - [[Knowledge Graph Embedding]] — applies distance metrics (TransE L1/L2, RotatE cosine) to score knowledge base triple plausibility; metric choice encodes structural assumptions about the knowledge graph
-  - [[Machine Learning]] — the broad discipline within which distance metrics are foundational; metric-based methods span supervised, unsupervised, and semi-supervised learning
-  - [[Dimensionality Reduction]] — preprocessing step that applies before distance computation to alleviate the curse of dimensionality; PCA, UMAP, and t-SNE are common precursors
-  - [[Retrieval-Augmented Generation]] — production AI application where distance metric (cosine over dense embeddings) determines retrieved context quality for [[Large Language Models]]
+- [[Nearest Neighbor Search]] — the primary algorithmic application; distance metric choice determines NNS index type, recall, and latency trade-offs
+- [[Cosine Similarity]] — the most widely deployed distance metric in production AI systems; dominates dense text and multimodal [[Vector Embedding]] retrieval
+- [[Clustering]] — depends fundamentally on distance metric for cluster assignment and within-cluster cohesion measurement; k-means, DBSCAN, and hierarchical clustering are all metric-dependent
+- [[Vector Embedding]] — the representational substrate over which distance metrics are computed; embedding quality and metric choice jointly determine retrieval quality
+- [[Vector Database]] — provides indexed storage and distance-metric-based retrieval over [[Vector Embedding|embeddings]]; supports L2, cosine, and inner product natively in all major implementations
+- [[Anomaly Detection]] — uses Mahalanobis distance and k-NN distance as anomaly scores; distance from class distribution centre is a principled anomaly criterion
+- [[FAISS]] — Meta AI's open-source library providing GPU-accelerated distance computation for L2 and inner product at billion scale; the reference implementation for production distance search
+- [[HNSW]] — the dominant approximate nearest-neighbour index structure; graph-based search that exploits triangle inequality for efficient metric-space traversal
+- [[Locality-Sensitive Hashing]] — hash-based ANN index with proven sensitivity to cosine and L2 metrics; exploits metric geometry to probabilistically group nearby points
+- [[Representation Learning]] — produces the [[Vector Embedding|embedding spaces]] over which distance metrics are computed; deep metric learning jointly learns representation and metric
+- [[Contrastive Learning]] — the training paradigm for deep metric learning; optimises encoder parameters to produce embeddings where cosine or L2 distance aligns with semantic similarity
+- [[Knowledge Graph Embedding]] — applies distance metrics (TransE L1/L2, RotatE cosine) to score knowledge base triple plausibility; metric choice encodes structural assumptions about the knowledge graph
+- [[Machine Learning]] — the broad discipline within which distance metrics are foundational; metric-based methods span supervised, unsupervised, and semi-supervised learning
+- [[Dimensionality Reduction]] — preprocessing step that applies before distance computation to alleviate the curse of dimensionality; PCA, UMAP, and t-SNE are common precursors
+- [[Retrieval-Augmented Generation]] — production AI application where distance metric (cosine over dense embeddings) determines retrieved context quality for [[Large Language Models]]
 
-- ### Provenance
+### Provenance
 

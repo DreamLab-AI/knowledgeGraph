@@ -1,28 +1,36 @@
-
 Memory management is the systematic allocation, tracking, and reclamation of a computer system's volatile memory resources across processes and runtimes. It encompasses allocation strategies, virtual memory abstraction, paging, and the reclamation of unused memory to prevent exhaustion and fragmentation. Effective memory management is foundational to system stability, performance, and the isolation guarantees that underpin multi-tenant infrastructure.
 
 - Memory management governs how a computer allocates, tracks and reclaims its volatile memory across [[Operating System]] processes and language [[Runtime Environment]]s. It spans manual allocation, automatic reclamation, and the virtual memory abstraction that isolates address spaces.
 - It is a core discipline of [[Resource Management]] and a precondition for [[Scalability]] and [[Reliability]] in shared infrastructure.
-- ### Overview
+
+### Overview
+
 - At the lowest level, the operating system maps physical RAM into per-process virtual address spaces, handling paging between memory and backing storage to present each process with a contiguous private view.
 - Within a process, allocators carve heaps into blocks on demand and return freed regions to satisfy later requests, balancing speed against fragmentation.
 - Managed runtimes add automatic reclamation: a collector identifies memory no longer reachable from live roots and returns it, trading deterministic timing for reduced programmer burden.
 - Memory management decisions ripple directly into throughput, latency and stability, making them central to [[Performance Optimization]].
-- ### Key aspects
+
+### Key aspects
+
 - Allocation: serving variable-sized requests from heaps and pools while minimising fragmentation and lock contention.
 - Virtual memory: per-process address translation, paging and protection enforced by the [[Operating System]] and hardware.
 - Reclamation: explicit freeing or automatic collection of unreachable objects in a managed [[Runtime Environment]].
 - Locality: arranging data to exploit caches and reduce the cost of access, a lever for [[Performance Optimization]].
 - Observability: instrumenting allocation rates, residency and pressure so leaks and bloat are visible through [[Observability]] tooling.
-- ### Mechanisms
+
+### Mechanisms
+
 - Pooling and arena allocation reduce per-request overhead for short-lived objects.
 - Generational and reference-tracking collectors reclaim memory in managed languages.
 - Compaction and [[Data Compression]] reduce footprint and fragmentation under pressure.
 - Memory limits and quotas integrate with [[Resource Management]] to enforce isolation across tenants.
-- ### Applications
+
+### Applications
+
 - Server runtimes and databases that must sustain high throughput under bounded memory.
 - Containerised and multi-tenant platforms relying on memory isolation for [[Reliability]].
 - High-performance and [[Parallel Computing]] workloads where locality dominates speed.
 - Accelerator pipelines that bridge host and device memory in [[GPU Computing]].
-- ### Provenance
+
+### Provenance
 

@@ -1,3 +1,2 @@
-
 Passthrough AR is a form of augmented reality in which a headset captures the physical environment through external cameras and re-renders that video feed on internal displays, composited with virtual content, rather than allowing direct optical see-through of the real world. It allows headsets originally built for virtual reality to support mixed and augmented reality experiences using the same opaque display hardware, at the cost of added latency and reduced fidelity compared with optical see-through approaches. Passthrough AR is supported by runtime standards such as OpenXR, which expose camera passthrough as a standard feature that applications can request.
 

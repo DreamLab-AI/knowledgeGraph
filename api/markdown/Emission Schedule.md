@@ -1,4 +1,3 @@
-
 An Emission Schedule is the predetermined, protocol-encoded timeline that specifies the rate at which new tokens are minted and distributed to participants over the lifetime of a blockchain network. It governs how the total supply of a token expands from genesis toward any eventual supply cap or steady-state inflation rate, directly shaping the economic incentives for validators, miners, and stakers. Well-designed emission schedules balance early bootstrapping of network security with long-term sustainability once adoption is established.
 
 ### Definition
@@ -17,5 +16,5 @@ The emission schedule is one of the most consequential parameters in tokenomics 
 
 Governance plays an increasing role: some protocols (e.g., Compound, Aave) allow token holder votes to adjust emission rates in response to market conditions, blurring the line between immutable protocol rules and adaptive monetary policy. Analysing emission schedules requires modelling the interaction between issuance rate, circulating supply, token velocity, market demand, and staking participation to assess long-run viability.
 
-- ### Provenance
+### Provenance
 

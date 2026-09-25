@@ -1,11 +1,10 @@
-
 Technical Robustness and Safety is a core AI trustworthiness dimension that requires AI systems to perform reliably under varied and adversarial conditions, implement fallback mechanisms for graceful degradation, and maintain operational safety throughout their lifecycle. It encompasses resilience to adversarial attacks, accurate uncertainty quantification, comprehensive risk assessment, and incident response protocols mandated by frameworks such as the EU AI Act Article 15 and NIST AI RMF.
 
-- ### Semantic Classification
+### Semantic Classification
 
-  Technical Robustness and Safety is a core AI trustworthiness dimension requiring systems to perform reliably under varied and adversarial conditions. It mandates fallback mechanisms for graceful degradation, continuous safety monitoring, and incident response protocols aligned with regulatory frameworks such as the EU AI Act Article 15 and NIST AI RMF.
+Technical Robustness and Safety is a core AI trustworthiness dimension requiring systems to perform reliably under varied and adversarial conditions. It mandates fallback mechanisms for graceful degradation, continuous safety monitoring, and incident response protocols aligned with regulatory frameworks such as the EU AI Act Article 15 and NIST AI RMF.
 
-  The dimension encompasses four interlocking components: resilience to attack (defending against adversarial examples, data poisoning, and model extraction), fallback planning (safe defaults, emergency stop, graceful degradation), accuracy and reliability (reproducibility, uncertainty quantification, distribution-shift handling), and general safety (risk assessment, proportionate controls, continuous monitoring).
+The dimension encompasses four interlocking components: resilience to attack (defending against adversarial examples, data poisoning, and model extraction), fallback planning (safe defaults, emergency stop, graceful degradation), accuracy and reliability (reproducibility, uncertainty quantification, distribution-shift handling), and general safety (risk assessment, proportionate controls, continuous monitoring).
 
 ### Content
 
@@ -17,5 +16,5 @@ Uncertainty quantification and distribution-shift detection are increasingly cen
 
 The practical implementation of this class spans multiple technical layers: secure model training pipelines that resist data poisoning, inference-time anomaly detectors, cryptographic model integrity verification, and organisational processes for escalation and recovery. Achieving certified compliance requires evidence spanning all four components, typically assembled through structured AI assurance case documentation.
 
-- ### Provenance
+### Provenance
 

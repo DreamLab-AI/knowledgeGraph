@@ -1,100 +1,100 @@
-
 Differential Privacy is a mathematical framework providing provable privacy guarantees by adding carefully calibrated noise to data queries or model outputs, ensuring that the presence or absence of any single individual's data has negligible impact on analysis results. The epsilon (ε) parameter quantifies the privacy budget, with smaller values indicating stronger guarantees.
 
-- ### Semantic Classification
+### Semantic Classification
 
-- ### Content
-  ## Compositional Relationships (Components)
-      SubClassOf(ai:DifferentialPrivacy
-        ObjectSomeValuesFrom(ai:hasPart ai:LaplaceМechanism))
-      SubClassOf(ai:DifferentialPrivacy
-        ObjectSomeValuesFrom(ai:hasPart ai:GaussianMechanism))
-      SubClassOf(ai:DifferentialPrivacy
-        ObjectSomeValuesFrom(ai:hasPart ai:ExponentialMechanism))
-      SubClassOf(ai:DifferentialPrivacy
-        ObjectSomeValuesFrom(ai:hasPart ai:PrivacyBudgetManagement))
-      SubClassOf(ai:DifferentialPrivacy
-        ObjectSomeValuesFrom(ai:hasPart ai:CompositionTheorems))
-      SubClassOf(ai:DifferentialPrivacy
-        ObjectSomeValuesFrom(ai:hasPart ai:RenyiDifferentialPrivacy))
-      SubClassOf(ai:DifferentialPrivacy
-        ObjectSomeValuesFrom(ai:hasPart ai:DPStochasticGradientDescent))
-      SubClassOf(ai:DifferentialPrivacy
-        ObjectSomeValuesFrom(ai:hasPart ai:LocalDifferentialPrivacy))
-      SubClassOf(ai:DifferentialPrivacy
-        ObjectSomeValuesFrom(ai:hasPart ai:ShuffleModel))
-  ## Dependency Relationships
-      SubClassOf(ai:DifferentialPrivacy
-        ObjectSomeValuesFrom(ai:requires ai:SensitivityAnalysis))
-      SubClassOf(ai:DifferentialPrivacy
-        ObjectSomeValuesFrom(ai:requires ai:NoiseCalibration))
-      SubClassOf(ai:DifferentialPrivacy
-        ObjectSomeValuesFrom(ai:requires ai:PrivacyAccountant))
-      SubClassOf(ai:DifferentialPrivacy
-        ObjectSomeValuesFrom(ai:requires ai:QueryMechanism))
-      SubClassOf(ai:DifferentialPrivacy
-        ObjectSomeValuesFrom(ai:dependsOn ai:ProbabilityTheory))
-      SubClassOf(ai:DifferentialPrivacy
-        ObjectSomeValuesFrom(ai:dependsOn ai:InformationTheory))
-  ## Capability Relationships
-      SubClassOf(ai:DifferentialPrivacy
-        ObjectSomeValuesFrom(ai:enables ai:PrivacyPreservingMachineLearning))
-      SubClassOf(ai:DifferentialPrivacy
-        ObjectSomeValuesFrom(ai:enables ai:PrivacyByDesign))
-      SubClassOf(ai:DifferentialPrivacy
-        ObjectSomeValuesFrom(ai:enables ai:FederatedLearning))
-      SubClassOf(ai:DifferentialPrivacy
-        ObjectSomeValuesFrom(ai:enables ai:DifferentiallyPrivateAnalytics))
-      SubClassOf(ai:DifferentialPrivacy
-        ObjectSomeValuesFrom(ai:enables ai:SyntheticDataGeneration))
-      SubClassOf(ai:DifferentialPrivacy
-        ObjectSomeValuesFrom(ai:enables ai:PrivateEmpiricalRiskMinimisation))
-  ## Implementation Relationships
-      SubClassOf(ai:DifferentialPrivacy
-        ObjectSomeValuesFrom(ai:implements ai:PrivacyMechanism))
-      SubClassOf(ai:DifferentialPrivacy
-        ObjectSomeValuesFrom(ai:implements ai:FormalPrivacyGuarantee))
-      SubClassOf(ai:DifferentialPrivacy
-        ObjectSomeValuesFrom(ai:implements ai:StatisticalDisclosureLimitation))
-      SubClassOf(ai:DifferentialPrivacy
-        ObjectSomeValuesFrom(ai:supports ai:GDPRCompliance))
-      SubClassOf(ai:DifferentialPrivacy
-        ObjectSomeValuesFrom(ai:supports ai:DataMinimisation))
-  ## Reduction Relationships
-      SubClassOf(ai:DifferentialPrivacy
-        ObjectSomeValuesFrom(ai:reducesTo ai:EpsilonDPGuarantee))
-      SubClassOf(ai:LocalDifferentialPrivacy
-        ObjectSomeValuesFrom(ai:reducesTo ai:DifferentialPrivacy))
-      SubClassOf(ai:RenyiDifferentialPrivacy
-        ObjectSomeValuesFrom(ai:reducesTo ai:DifferentialPrivacy))
-      SubClassOf(ai:DPStochasticGradientDescent
-        ObjectSomeValuesFrom(ai:reducesTo ai:DifferentialPrivacy))
-      SubClassOf(ai:ShuffleModel
-        ObjectSomeValuesFrom(ai:reducesTo ai:DifferentialPrivacy))
-      SubClassOf(ai:DifferentialPrivacy
-        ObjectSomeValuesFrom(ai:contrastsWith ai:KAnonymity))
-      SubClassOf(ai:DifferentialPrivacy
-        ObjectSomeValuesFrom(ai:contrastsWith ai:DataAnonymisation))
-      SubClassOf(ai:DifferentialPrivacy
-        ObjectSomeValuesFrom(ai:relatedTo ai:HomomorphicEncryption))
-      SubClassOf(ai:DifferentialPrivacy
-        ObjectSomeValuesFrom(ai:relatedTo ai:FederatedLearning))
+### Content
 
-  ## About
-  Differential Privacy (DP) is the gold-standard formal framework for reasoning about the privacy of individuals in statistical datasets and [[Machine Learning]] models. The central idea is elegantly simple: add enough random noise to query outputs or model updates so that no adversary, regardless of their side information or computational power, can determine with confidence whether any given individual's record was included in the dataset. The mathematical guarantee takes the form of a bound on the "privacy loss" random variable, quantified by the epsilon (ε) parameter. When ε is small — ideally below 1.0 — the mechanism provides very strong protection, meaning the output distributions on neighbouring datasets (differing by exactly one person's record) are nearly indistinguishable. When ε is larger, the distributions are more separable and individual contributions become detectable.
+## Compositional Relationships (Components)
+    SubClassOf(ai:DifferentialPrivacy
+      ObjectSomeValuesFrom(ai:hasPart ai:LaplaceМechanism))
+    SubClassOf(ai:DifferentialPrivacy
+      ObjectSomeValuesFrom(ai:hasPart ai:GaussianMechanism))
+    SubClassOf(ai:DifferentialPrivacy
+      ObjectSomeValuesFrom(ai:hasPart ai:ExponentialMechanism))
+    SubClassOf(ai:DifferentialPrivacy
+      ObjectSomeValuesFrom(ai:hasPart ai:PrivacyBudgetManagement))
+    SubClassOf(ai:DifferentialPrivacy
+      ObjectSomeValuesFrom(ai:hasPart ai:CompositionTheorems))
+    SubClassOf(ai:DifferentialPrivacy
+      ObjectSomeValuesFrom(ai:hasPart ai:RenyiDifferentialPrivacy))
+    SubClassOf(ai:DifferentialPrivacy
+      ObjectSomeValuesFrom(ai:hasPart ai:DPStochasticGradientDescent))
+    SubClassOf(ai:DifferentialPrivacy
+      ObjectSomeValuesFrom(ai:hasPart ai:LocalDifferentialPrivacy))
+    SubClassOf(ai:DifferentialPrivacy
+      ObjectSomeValuesFrom(ai:hasPart ai:ShuffleModel))
+## Dependency Relationships
+    SubClassOf(ai:DifferentialPrivacy
+      ObjectSomeValuesFrom(ai:requires ai:SensitivityAnalysis))
+    SubClassOf(ai:DifferentialPrivacy
+      ObjectSomeValuesFrom(ai:requires ai:NoiseCalibration))
+    SubClassOf(ai:DifferentialPrivacy
+      ObjectSomeValuesFrom(ai:requires ai:PrivacyAccountant))
+    SubClassOf(ai:DifferentialPrivacy
+      ObjectSomeValuesFrom(ai:requires ai:QueryMechanism))
+    SubClassOf(ai:DifferentialPrivacy
+      ObjectSomeValuesFrom(ai:dependsOn ai:ProbabilityTheory))
+    SubClassOf(ai:DifferentialPrivacy
+      ObjectSomeValuesFrom(ai:dependsOn ai:InformationTheory))
+## Capability Relationships
+    SubClassOf(ai:DifferentialPrivacy
+      ObjectSomeValuesFrom(ai:enables ai:PrivacyPreservingMachineLearning))
+    SubClassOf(ai:DifferentialPrivacy
+      ObjectSomeValuesFrom(ai:enables ai:PrivacyByDesign))
+    SubClassOf(ai:DifferentialPrivacy
+      ObjectSomeValuesFrom(ai:enables ai:FederatedLearning))
+    SubClassOf(ai:DifferentialPrivacy
+      ObjectSomeValuesFrom(ai:enables ai:DifferentiallyPrivateAnalytics))
+    SubClassOf(ai:DifferentialPrivacy
+      ObjectSomeValuesFrom(ai:enables ai:SyntheticDataGeneration))
+    SubClassOf(ai:DifferentialPrivacy
+      ObjectSomeValuesFrom(ai:enables ai:PrivateEmpiricalRiskMinimisation))
+## Implementation Relationships
+    SubClassOf(ai:DifferentialPrivacy
+      ObjectSomeValuesFrom(ai:implements ai:PrivacyMechanism))
+    SubClassOf(ai:DifferentialPrivacy
+      ObjectSomeValuesFrom(ai:implements ai:FormalPrivacyGuarantee))
+    SubClassOf(ai:DifferentialPrivacy
+      ObjectSomeValuesFrom(ai:implements ai:StatisticalDisclosureLimitation))
+    SubClassOf(ai:DifferentialPrivacy
+      ObjectSomeValuesFrom(ai:supports ai:GDPRCompliance))
+    SubClassOf(ai:DifferentialPrivacy
+      ObjectSomeValuesFrom(ai:supports ai:DataMinimisation))
+## Reduction Relationships
+    SubClassOf(ai:DifferentialPrivacy
+      ObjectSomeValuesFrom(ai:reducesTo ai:EpsilonDPGuarantee))
+    SubClassOf(ai:LocalDifferentialPrivacy
+      ObjectSomeValuesFrom(ai:reducesTo ai:DifferentialPrivacy))
+    SubClassOf(ai:RenyiDifferentialPrivacy
+      ObjectSomeValuesFrom(ai:reducesTo ai:DifferentialPrivacy))
+    SubClassOf(ai:DPStochasticGradientDescent
+      ObjectSomeValuesFrom(ai:reducesTo ai:DifferentialPrivacy))
+    SubClassOf(ai:ShuffleModel
+      ObjectSomeValuesFrom(ai:reducesTo ai:DifferentialPrivacy))
+    SubClassOf(ai:DifferentialPrivacy
+      ObjectSomeValuesFrom(ai:contrastsWith ai:KAnonymity))
+    SubClassOf(ai:DifferentialPrivacy
+      ObjectSomeValuesFrom(ai:contrastsWith ai:DataAnonymisation))
+    SubClassOf(ai:DifferentialPrivacy
+      ObjectSomeValuesFrom(ai:relatedTo ai:HomomorphicEncryption))
+    SubClassOf(ai:DifferentialPrivacy
+      ObjectSomeValuesFrom(ai:relatedTo ai:FederatedLearning))
 
-  The framework was introduced by Cynthia Dwork, Frank McSherry, Kobbi Nissim, and Adam Smith at TCC 2006 and formalised in subsequent foundational works. In the decade following the original paper, the theory matured substantially: the smooth sensitivity framework handled data-dependent queries; the exponential mechanism extended DP to arbitrary output spaces; and the composition theorems — both basic and advanced — provided accountants for multi-query pipelines. A decisive practical advance came in 2016 when Abadi et al. proposed DP-SGD, the first scalable algorithm for training deep neural networks under DP guarantees, by clipping per-sample gradients to bound their L2 sensitivity and injecting Gaussian noise before aggregating across a mini-batch. This unlocked differentially private deep learning as a mainstream technique.
+## About
+Differential Privacy (DP) is the gold-standard formal framework for reasoning about the privacy of individuals in statistical datasets and [[Machine Learning]] models. The central idea is elegantly simple: add enough random noise to query outputs or model updates so that no adversary, regardless of their side information or computational power, can determine with confidence whether any given individual's record was included in the dataset. The mathematical guarantee takes the form of a bound on the "privacy loss" random variable, quantified by the epsilon (ε) parameter. When ε is small — ideally below 1.0 — the mechanism provides very strong protection, meaning the output distributions on neighbouring datasets (differing by exactly one person's record) are nearly indistinguishable. When ε is larger, the distributions are more separable and individual contributions become detectable.
 
-  The period 2020–2026 has seen DP transition from theoretical framework to production infrastructure. The U.S. Census Bureau deployed DP for the [[U.S. Census 2020]], applying the TopDown algorithm with a carefully negotiated global ε that balanced statistical accuracy across geographic hierarchies against population-level privacy. Apple deployed count-mean sketch and RAPPOR-derived local DP mechanisms for iOS keyboard analytics and Safari telemetry. Google's Gboard keyboard training adopted DP-SGD with published ε = 8.9 per round. Meta deployed DP-based analytics for aggregated ad measurement. The PyTorch ecosystem received the Opacus library (Meta AI Research), providing a production-grade DP-SGD implementation with Rényi DP accounting and automatic per-sample gradient hooks. By 2025, the NHS and UK academic medical centres were actively exploring DP for federated analysis of Electronic Health Record (EHR) data, supported by GDPR Article 89 research exemptions and the new UK Data (Use and Access) Act 2025 which entered force on 19 June 2025.
+The framework was introduced by Cynthia Dwork, Frank McSherry, Kobbi Nissim, and Adam Smith at TCC 2006 and formalised in subsequent foundational works. In the decade following the original paper, the theory matured substantially: the smooth sensitivity framework handled data-dependent queries; the exponential mechanism extended DP to arbitrary output spaces; and the composition theorems — both basic and advanced — provided accountants for multi-query pipelines. A decisive practical advance came in 2016 when Abadi et al. proposed DP-SGD, the first scalable algorithm for training deep neural networks under DP guarantees, by clipping per-sample gradients to bound their L2 sensitivity and injecting Gaussian noise before aggregating across a mini-batch. This unlocked differentially private deep learning as a mainstream technique.
 
-  ## Mechanisms and Mathematical Foundations
+The period 2020–2026 has seen DP transition from theoretical framework to production infrastructure. The U.S. Census Bureau deployed DP for the [[U.S. Census 2020]], applying the TopDown algorithm with a carefully negotiated global ε that balanced statistical accuracy across geographic hierarchies against population-level privacy. Apple deployed count-mean sketch and RAPPOR-derived local DP mechanisms for iOS keyboard analytics and Safari telemetry. Google's Gboard keyboard training adopted DP-SGD with published ε = 8.9 per round. Meta deployed DP-based analytics for aggregated ad measurement. The PyTorch ecosystem received the Opacus library (Meta AI Research), providing a production-grade DP-SGD implementation with Rényi DP accounting and automatic per-sample gradient hooks. By 2025, the NHS and UK academic medical centres were actively exploring DP for federated analysis of Electronic Health Record (EHR) data, supported by GDPR Article 89 research exemptions and the new UK Data (Use and Access) Act 2025 which entered force on 19 June 2025.
 
-  The four canonical noise mechanisms implement differential privacy through distinct approaches to randomisation:
+## Mechanisms and Mathematical Foundations
 
-  - **[[Laplace Mechanism]]**: Adds noise drawn from Laplace(0, Δf/ε) where Δf is the L1 sensitivity of the query function f. Optimal for scalar and low-dimensional numeric queries. Achieves pure ε-DP (δ = 0).
-  - **[[Gaussian Mechanism]]**: Adds noise drawn from N(0, σ²) where σ is calibrated to L2 sensitivity and the (ε, δ) parameters. Standard choice for [[Deep Learning]] and high-dimensional queries because Gaussian noise composes more cleanly under Rényi divergence accounting.
-  - **[[Exponential Mechanism]]**: Selects an output o with probability proportional to exp(ε × u(D, o) / 2Δu), where u is a utility scoring function. Essential for non-numeric tasks such as query selection, hyperparameter optimisation, and model selection under DP.
-  - **Report Noisy Max / Sparse Vector Technique**: Efficient mechanisms for answering many threshold queries while consuming minimal privacy budget, foundational to differentially private data release tools.
+The four canonical noise mechanisms implement differential privacy through distinct approaches to randomisation:
+
+- **[[Laplace Mechanism]]**: Adds noise drawn from Laplace(0, Δf/ε) where Δf is the L1 sensitivity of the query function f. Optimal for scalar and low-dimensional numeric queries. Achieves pure ε-DP (δ = 0).
+- **[[Gaussian Mechanism]]**: Adds noise drawn from N(0, σ²) where σ is calibrated to L2 sensitivity and the (ε, δ) parameters. Standard choice for [[Deep Learning]] and high-dimensional queries because Gaussian noise composes more cleanly under Rényi divergence accounting.
+- **[[Exponential Mechanism]]**: Selects an output o with probability proportional to exp(ε × u(D, o) / 2Δu), where u is a utility scoring function. Essential for non-numeric tasks such as query selection, hyperparameter optimisation, and model selection under DP.
+- **Report Noisy Max / Sparse Vector Technique**: Efficient mechanisms for answering many threshold queries while consuming minimal privacy budget, foundational to differentially private data release tools.
 
   **Sensitivity** is the maximum change in query output caused by adding or removing one record. Global sensitivity provides a worst-case bound; local sensitivity is tighter but data-dependent, requiring smooth sensitivity frameworks for safe use. The choice of sensitivity definition directly governs noise scale and thus the utility-privacy trade-off.
 
@@ -108,11 +108,11 @@ Differential Privacy is a mathematical framework providing provable privacy guar
 
   A practical differentially private system for machine learning comprises five components working in concert:
 
-  - **Query Mechanism Layer**: Translates high-level analytics or model training objectives into concrete noise-injection calls (Laplace, Gaussian, exponential). Determines sensitivity.
-  - **[[Privacy Accountant]]**: Tracks cumulative privacy loss across all queries or training steps. Implementations include moment accountant (Abadi et al. 2016), Rényi DP accountant (Mironov 2017), Gaussian DP accounting (Dong et al. 2022), and f-DP frameworks. The Opacus library's PRV accountant applies numerical Fourier-space composition for near-exact bound tracking.
-  - **[[Privacy Budget Management]]**: Allocates ε across queries, model versions, and data refreshes. In production ML systems, budget exhaustion necessitates either refreshing the privacy guarantee with new data or discontinuing training.
-  - **Data Processing Pipeline**: Handles micro-batch sampling (Poisson or fixed mini-batch), per-sample gradient clipping at norm C in DP-SGD, and compatibility with [[Federated Learning]] aggregation protocols.
-  - **Auditing and Certification Layer**: Empirically tests DP implementations via privacy auditing attacks (Jagielski et al. 2020; Steinke et al. 2023), which attempt to distinguish mechanism outputs on adjacent datasets and measure the empirical privacy loss. The 2026 paper "Privacy in Theory, Bugs in Practice" documented implementation bugs in several DP libraries that allowed privacy loss beyond theoretical bounds, underlining the importance of this layer.
+- **Query Mechanism Layer**: Translates high-level analytics or model training objectives into concrete noise-injection calls (Laplace, Gaussian, exponential). Determines sensitivity.
+- **[[Privacy Accountant]]**: Tracks cumulative privacy loss across all queries or training steps. Implementations include moment accountant (Abadi et al. 2016), Rényi DP accountant (Mironov 2017), Gaussian DP accounting (Dong et al. 2022), and f-DP frameworks. The Opacus library's PRV accountant applies numerical Fourier-space composition for near-exact bound tracking.
+- **[[Privacy Budget Management]]**: Allocates ε across queries, model versions, and data refreshes. In production ML systems, budget exhaustion necessitates either refreshing the privacy guarantee with new data or discontinuing training.
+- **Data Processing Pipeline**: Handles micro-batch sampling (Poisson or fixed mini-batch), per-sample gradient clipping at norm C in DP-SGD, and compatibility with [[Federated Learning]] aggregation protocols.
+- **Auditing and Certification Layer**: Empirically tests DP implementations via privacy auditing attacks (Jagielski et al. 2020; Steinke et al. 2023), which attempt to distinguish mechanism outputs on adjacent datasets and measure the empirical privacy loss. The 2026 paper "Privacy in Theory, Bugs in Practice" documented implementation bugs in several DP libraries that allowed privacy loss beyond theoretical bounds, underlining the importance of this layer.
 
   ## DP-SGD: Differentially Private Deep Learning
 
@@ -205,5 +205,5 @@ Differential Privacy is a mathematical framework providing provable privacy guar
   27. UK Information Commissioner's Office (2025). "Anonymisation, Pseudonymisation and Privacy Enhancing Technologies guidance." ICO, updated June 2025. https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/data-sharing/anonymisation/
   28. Anonos / ICO (2025). "Grey-Box Auditing of Differential Privacy Libraries: Privacy in Theory, Bugs in Practice." arXiv:2602.17454.
 
-- ### Provenance
+### Provenance
 

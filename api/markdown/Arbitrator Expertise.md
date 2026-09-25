@@ -1,16 +1,16 @@
-
 Arbitrator Expertise in blockchain and digital asset contexts refers to the specialized technical knowledge, legal background, and industry experience required by neutral decision-makers to understand distributed ledger technology, smart contracts, tokenomics, and crypto-asset classification for ...
 
-- ### Semantic Classification
+### Semantic Classification
 
-- ### Content
+### Content
 
-  ### Technical Details
-  Key expertise areas include:
-  - **Technical Knowledge**: Understanding blockchain systems, smart contract execution, and DLT architecture
-  - **Legal Classification**: Understanding crypto-asset types (utility tokens, e-money tokens, asset-referenced tokens per MiCA)
-  - **Industry Experience**: Knowledge of drafting styles, market practices, and common dispute patterns
-  - **Expert Witness Coordination**: Working with blockchain and crypto specialists assisting tribunals
+### Technical Details
+Key expertise areas include:
+
+- **Technical Knowledge**: Understanding blockchain systems, smart contract execution, and DLT architecture
+- **Legal Classification**: Understanding crypto-asset types (utility tokens, e-money tokens, asset-referenced tokens per MiCA)
+- **Industry Experience**: Knowledge of drafting styles, market practices, and common dispute patterns
+- **Expert Witness Coordination**: Working with blockchain and crypto specialists assisting tribunals
 
   ### Selection Criteria
   Selection criteria include expertise or technical knowhow, professional experience, language skills, legal background, and nationality per arbitration clause. Scarcity of arbitrators with specialized knowledge is an identified challenge.
@@ -21,5 +21,5 @@ Arbitrator Expertise in blockchain and digital asset contexts refers to the spec
   ### 2024 Developments
   LCAM Blockchain Expedited Arbitration Rules (December 2024) emphasize arbitrator expertise for digital asset disputes with on-chain and off-chain enforcement mechanisms.
 
-- ### Provenance
+### Provenance
 

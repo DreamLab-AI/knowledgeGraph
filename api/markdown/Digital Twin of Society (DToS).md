@@ -1,10 +1,10 @@
-
 Digital Twin of Society (DToS) is a type of Spatial Computing in the spatial computing domain.
 
-- ### Semantic Classification
+### Semantic Classification
 
-- ### Content
-  Digital Twin of Society (DToS) — content pending enrichment.
+### Content
 
-- ### Provenance
+Digital Twin of Society (DToS) — content pending enrichment.
+
+### Provenance
 

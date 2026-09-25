@@ -1,23 +1,22 @@
-
 A Perception System is the sensor processing and environmental understanding component of Autonomous Systems that interprets raw Sensor Data to build a coherent representation of the surrounding environment, including Object Detection, Classification, Tracking, Localization, and Scene Understanding. Perception systems fuse data from multiple Sensor Modalities (Camera, LiDAR, Radar, Ultrasonic Sensors) to create robust environmental models for Autonomous Decision-Making.
 
-- ### Semantic Classification
+### Semantic Classification
 
-- ### Content
+### Content
 
-  ## Core Characteristics
+## Core Characteristics
 
-  - **Multi-Modal Sensing**: Integration of camera, lidar, radar, ultrasonic sensors
-  - **Object Detection**: Real-time detection of vehicles, pedestrians, obstacles
-  - **Object Tracking**: Temporal tracking of dynamic objects
-  - **Scene Understanding**: Semantic interpretation of road scene
-  - **Robustness**: Performance across weather, lighting, and environmental conditions
+- **Multi-Modal Sensing**: Integration of camera, lidar, radar, ultrasonic sensors
+- **Object Detection**: Real-time detection of vehicles, pedestrians, obstacles
+- **Object Tracking**: Temporal tracking of dynamic objects
+- **Scene Understanding**: Semantic interpretation of road scene
+- **Robustness**: Performance across weather, lighting, and environmental conditions
 
   ## Relationships
 
-  - **Component Of**: Autonomous Vehicle, Robotics Systems
-  - **Related**: Sensor Fusion, Computer Vision, Object Detection
-  - **Utilises**: Deep Learning, Convolutional Neural Networks
+- **Component Of**: Autonomous Vehicle, Robotics Systems
+- **Related**: Sensor Fusion, Computer Vision, Object Detection
+- **Utilises**: Deep Learning, Convolutional Neural Networks
 
   ## Key Literature
 
@@ -27,108 +26,119 @@ A Perception System is the sensor processing and environmental understanding com
 
   ## See Also
 
-  - [[Sensor Fusion]]
-  - [[Object Detection]]
-  - [[Computer Vision]]
+- [[Sensor Fusion]]
+- [[Object Detection]]
+- [[Computer Vision]]
 
   #### Future Directions
   ### Current Challenges
-  - **[[Adverse Weather]]**: Performance degradation in heavy rain, snow, fog affecting [[LiDAR]] and cameras
-  - **[[Lighting Variations]]**: Glare, shadows, night-time operation requiring [[HDR Cameras]] and [[Sensor Fusion]]
-  - **[[Occlusion Handling]]**: Partial visibility of objects requiring [[Probabilistic Tracking]]
-  - **[[Dynamic Environments]]**: Complex urban scenes with pedestrians, cyclists, unpredictable behavior
-  - **[[Computational Cost]]**: Real-time processing of high-resolution [[Multi-Modal Data]] on edge devices
-  - **[[Sim-to-Real Gap]]**: [[Transfer Learning]] from simulation to real-world deployment
-  - **[[Long-Tail Events]]**: Rare scenarios not well-represented in training data
+
+- **[[Adverse Weather]]**: Performance degradation in heavy rain, snow, fog affecting [[LiDAR]] and cameras
+- **[[Lighting Variations]]**: Glare, shadows, night-time operation requiring [[HDR Cameras]] and [[Sensor Fusion]]
+- **[[Occlusion Handling]]**: Partial visibility of objects requiring [[Probabilistic Tracking]]
+- **[[Dynamic Environments]]**: Complex urban scenes with pedestrians, cyclists, unpredictable behavior
+- **[[Computational Cost]]**: Real-time processing of high-resolution [[Multi-Modal Data]] on edge devices
+- **[[Sim-to-Real Gap]]**: [[Transfer Learning]] from simulation to real-world deployment
+- **[[Long-Tail Events]]**: Rare scenarios not well-represented in training data
 
   ### Emerging Solutions [Updated 2025]
-  - **[[Transformer-Based Perception]]**: [[Vision Transformers]], [[DETR]] family replacing traditional [[CNN]] architectures
-  - **[[Large-Scale Pretrained Foundation Model]]**: Pre-trained [[SAM 2]], [[CLIP]], [[DINOv2]] for zero-shot perception capabilities
-  - **[[Neural Rendering]]**: [[NeRF]], [[3D Gaussian Splatting]] for high-fidelity scene reconstruction
-  - **[[Event-Based Vision]]**: [[Neuromorphic Cameras]] with microsecond latency and HDR
-  - **[[4D Perception]]**: Incorporating temporal dimension directly into [[Occupancy Networks]]
-  - **[[End-to-End Learning]]**: Direct [[Sensor-to-Action]] mapping bypassing traditional perception pipeline
-  - **[[Multi-Agent Perception]]**: [[Vehicle-to-Vehicle]] sharing of perception data for extended awareness
+
+- **[[Transformer-Based Perception]]**: [[Vision Transformers]], [[DETR]] family replacing traditional [[CNN]] architectures
+- **[[Large-Scale Pretrained Foundation Model]]**: Pre-trained [[SAM 2]], [[CLIP]], [[DINOv2]] for zero-shot perception capabilities
+- **[[Neural Rendering]]**: [[NeRF]], [[3D Gaussian Splatting]] for high-fidelity scene reconstruction
+- **[[Event-Based Vision]]**: [[Neuromorphic Cameras]] with microsecond latency and HDR
+- **[[4D Perception]]**: Incorporating temporal dimension directly into [[Occupancy Networks]]
+- **[[End-to-End Learning]]**: Direct [[Sensor-to-Action]] mapping bypassing traditional perception pipeline
+- **[[Multi-Agent Perception]]**: [[Vehicle-to-Vehicle]] sharing of perception data for extended awareness
 
   ### Research Frontiers
-  - **[[Uncertainty Quantification]]**: [[Bayesian Deep Learning]] for confidence estimation
-  - **[[Causal Reasoning]]**: Understanding cause-effect relationships in driving scenarios
-  - **[[Explainable Perception]]**: Interpretable [[Attention Mechanisms]] and [[Saliency Maps]]
-  - **[[Continual Learning]]**: Online adaptation to new environments without catastrophic forgetting
-  - **[[Few-Shot Detection]]**: Recognizing novel object categories from minimal examples
-  - **[[Adversarial Robustness]]**: Defense against [[Physical Adversarial Attacks]] on perception systems
+
+- **[[Uncertainty Quantification]]**: [[Bayesian Deep Learning]] for confidence estimation
+- **[[Causal Reasoning]]**: Understanding cause-effect relationships in driving scenarios
+- **[[Explainable Perception]]**: Interpretable [[Attention Mechanisms]] and [[Saliency Maps]]
+- **[[Continual Learning]]**: Online adaptation to new environments without catastrophic forgetting
+- **[[Few-Shot Detection]]**: Recognizing novel object categories from minimal examples
+- **[[Adversarial Robustness]]**: Defense against [[Physical Adversarial Attacks]] on perception systems
 
   ## Standards & Safety [Updated 2025]
 
   ### Automotive Standards
-  - **[[ISO 26262]]**: Functional safety for automotive systems (ASIL-D requirements)
-  - **[[ISO 21448]] (SOTIF)**: Safety of the Intended Functionality
-  - **[[ISO/PAS 21448]]**: Performance and safety validation
-  - **[[SAE J3016]]**: Levels of driving automation (L0-L5)
+
+- **[[ISO 26262]]**: Functional safety for automotive systems (ASIL-D requirements)
+- **[[ISO 21448]] (SOTIF)**: Safety of the Intended Functionality
+- **[[ISO/PAS 21448]]**: Performance and safety validation
+- **[[SAE J3016]]**: Levels of driving automation (L0-L5)
 
   ### Testing & Validation
-  - **[[Scenario-Based Testing]]**: NHTSA, Euro NCAP test protocols
-  - **[[Virtual Testing]]**: [[CARLA]], [[LGSVL]], [[Carmaker]] simulation platforms
-  - **[[Hardware-in-the-Loop]]**: [[HIL]] testing with real sensors and simulated environment
-  - **[[On-Road Testing]]**: Millions of miles for statistical validation
+
+- **[[Scenario-Based Testing]]**: NHTSA, Euro NCAP test protocols
+- **[[Virtual Testing]]**: [[CARLA]], [[LGSVL]], [[Carmaker]] simulation platforms
+- **[[Hardware-in-the-Loop]]**: [[HIL]] testing with real sensors and simulated environment
+- **[[On-Road Testing]]**: Millions of miles for statistical validation
 
   ### Data Privacy & Ethics
-  - **[[GDPR Compliance]]**: Privacy-preserving perception with face/license plate blurring
-  - **[[Data Anonymization]]**: Removal of PII from [[Sensor Data]] and [[Maps]]
-  - **[[Ethical Guidelines]]**: Transparent decision-making, bias mitigation in [[Training Data]]
+
+- **[[GDPR Compliance]]**: Privacy-preserving perception with face/license plate blurring
+- **[[Data Anonymization]]**: Removal of PII from [[Sensor Data]] and [[Maps]]
+- **[[Ethical Guidelines]]**: Transparent decision-making, bias mitigation in [[Training Data]]
 
   ## Commercial Deployments [Updated 2025]
 
   ### Automotive Industry
-  - **[[Tesla Autopilot/FSD]]**: Camera-only perception with [[Transformer]] architecture
-  - **[[Waymo Driver]]**: Multi-sensor fusion with custom [[LiDAR]]
-  - **[[Cruise Origin]]**: Purpose-built [[Robotaxi]] with redundant perception
-  - **[[Mercedes-Benz Drive Pilot]]**: L3 autonomy with [[LiDAR]] + camera fusion
-  - **[[GM Ultra Cruise]]**: Hands-free driving with multi-sensor perception
+
+- **[[Tesla Autopilot/FSD]]**: Camera-only perception with [[Transformer]] architecture
+- **[[Waymo Driver]]**: Multi-sensor fusion with custom [[LiDAR]]
+- **[[Cruise Origin]]**: Purpose-built [[Robotaxi]] with redundant perception
+- **[[Mercedes-Benz Drive Pilot]]**: L3 autonomy with [[LiDAR]] + camera fusion
+- **[[GM Ultra Cruise]]**: Hands-free driving with multi-sensor perception
 
   ### Robotics Applications
-  - **[[Amazon Robotics]]**: Warehouse navigation and manipulation
-  - **[[Boston Dynamics Spot]]**: Quadruped robot with [[3D Vision]]
-  - **[[Autonomous Mobile Robots]] (AMRs)**: Indoor navigation with [[LiDAR SLAM]]
-  - **[[Agricultural Robots]]**: Crop monitoring and harvesting with [[Multispectral Cameras]]
+
+- **[[Amazon Robotics]]**: Warehouse navigation and manipulation
+- **[[Boston Dynamics Spot]]**: Quadruped robot with [[3D Vision]]
+- **[[Autonomous Mobile Robots]] (AMRs)**: Indoor navigation with [[LiDAR SLAM]]
+- **[[Agricultural Robots]]**: Crop monitoring and harvesting with [[Multispectral Cameras]]
 
   ### Aerial Systems
-  - **[[DJI Enterprise]]**: Obstacle avoidance and mapping drones
-  - **[[Skydio]]**: Autonomous tracking with [[Visual SLAM]]
-  - **[[Zipline]]**: Medical delivery drones with perception systems
 
+- **[[DJI Enterprise]]**: Obstacle avoidance and mapping drones
+- **[[Skydio]]**: Autonomous tracking with [[Visual SLAM]]
+- **[[Zipline]]**: Medical delivery drones with perception systems
 
   ## Additional Resources [Updated 2025]
 
   ### Open-Source Frameworks & Tools
-  - **[[OpenCV]]**: Computer vision library with 2500+ algorithms
-  - **[[ROS]] (Robot Operating System)**: Middleware for robotics with perception packages
-  - **[[Point Cloud Library]] (PCL)**: 3D point cloud processing
-  - **[[Apollo Auto]]**: Baidu's open autonomous driving platform
-  - **[[Autoware]]**: Open-source autonomous driving stack
-  - **[[CARLA]]**: Open-source simulator for autonomous driving
-  - **[[MMDetection]]**: OpenMMLab detection toolbox
-  - **[[Detectron2]]**: Facebook AI Research's object detection framework
+
+- **[[OpenCV]]**: Computer vision library with 2500+ algorithms
+- **[[ROS]] (Robot Operating System)**: Middleware for robotics with perception packages
+- **[[Point Cloud Library]] (PCL)**: 3D point cloud processing
+- **[[Apollo Auto]]**: Baidu's open autonomous driving platform
+- **[[Autoware]]**: Open-source autonomous driving stack
+- **[[CARLA]]**: Open-source simulator for autonomous driving
+- **[[MMDetection]]**: OpenMMLab detection toolbox
+- **[[Detectron2]]**: Facebook AI Research's object detection framework
 
   ### Educational Resources
-  - **Courses**: 
-  - [[Udacity Self-Driving Car Nanodegree]]
-  - [[Coursera Computer Vision Specialization]]
-  - [[MIT 6.S094: Deep Learning for Self-Driving Cars]]
-  - **Conferences**:
-  - [[CVPR]] (Computer Vision and Pattern Recognition)
-  - [[ICCV]] (International Conference on Computer Vision)
-  - [[ECCV]] (European Conference on Computer Vision)
-  - [[ICRA]] (International Conference on Robotics and Automation)
-  - [[IROS]] (Intelligent Robots and Systems)
-  - [[NeurIPS]] (Neural Information Processing Systems)
+
+- **Courses**: 
+- [[Udacity Self-Driving Car Nanodegree]]
+- [[Coursera Computer Vision Specialization]]
+- [[MIT 6.S094: Deep Learning for Self-Driving Cars]]
+- **Conferences**:
+- [[CVPR]] (Computer Vision and Pattern Recognition)
+- [[ICCV]] (International Conference on Computer Vision)
+- [[ECCV]] (European Conference on Computer Vision)
+- [[ICRA]] (International Conference on Robotics and Automation)
+- [[IROS]] (Intelligent Robots and Systems)
+- [[NeurIPS]] (Neural Information Processing Systems)
 
   ### Industry Organizations
-  - **[[SAE International]]**: Automotive standards development
-  - **[[ISO TC 204]]**: Intelligent Transport Systems
-  - **[[IEEE Intelligent Transportation Systems Society]]**
-  - **[[NVIDIA Developer Program]]**: AI and autonomous vehicle development
-  - **[[Automotive Edge Computing Consortium]]** (AECC)
+
+- **[[SAE International]]**: Automotive standards development
+- **[[ISO TC 204]]**: Intelligent Transport Systems
+- **[[IEEE Intelligent Transportation Systems Society]]**
+- **[[NVIDIA Developer Program]]**: AI and autonomous vehicle development
+- **[[Automotive Edge Computing Consortium]]** (AECC)
 
   ## Conclusion [Updated 2025]
 
@@ -149,5 +159,5 @@ A Perception System is the sensor processing and environmental understanding com
 
   *This document comprehensively covers perception systems with 2025 technology updates, 150+ wiki-links, Bitcoin-AI cross-domain applications, and extensive references to current research, industry developments, and commercial deployments.*
 
-- ### Provenance
+### Provenance
 

@@ -1,130 +1,134 @@
-
 Domain marker for ETSI metaverse categorisation covering ical frameworks, legal compliance, regulatory requirements, and responsible governance structures for virtual environments.
 
-- ### Bridge-To
+### Bridge-To
 
-- ### Semantic Classification
+### Semantic Classification
 
-- ### Content
-  ## Compositional Relationships (Components)
-      SubClassOf(ai:ETSIDomain_EthicsLaw
-        ObjectSomeValuesFrom(ai:hasPart ai:EthicalFramework))
-      SubClassOf(ai:ETSIDomain_EthicsLaw
-        ObjectSomeValuesFrom(ai:hasPart ai:LegalCompliance))
-      SubClassOf(ai:ETSIDomain_EthicsLaw
-        ObjectSomeValuesFrom(ai:hasPart ai:RegulatorySystem))
-      SubClassOf(ai:ETSIDomain_EthicsLaw
-        ObjectSomeValuesFrom(ai:hasPart ai:RightsManagement))
-      SubClassOf(ai:ETSIDomain_EthicsLaw
-        ObjectSomeValuesFrom(ai:hasPart ai:ContentModerationStandards))
-      SubClassOf(ai:ETSIDomain_EthicsLaw
-        ObjectSomeValuesFrom(ai:hasPart ai:PolicyEnforcement))
-      SubClassOf(ai:ETSIDomain_EthicsLaw
-        ObjectSomeValuesFrom(ai:hasPart ai:UserProtectionMechanism))
-      SubClassOf(ai:ETSIDomain_EthicsLaw
-        ObjectSomeValuesFrom(ai:hasPart ai:DigitalIdentity))
+### Content
 
-  ## Dependency Relationships
-      SubClassOf(ai:ETSIDomain_EthicsLaw
-        ObjectSomeValuesFrom(ai:requires ai:ComplianceMonitoring))
-      SubClassOf(ai:ETSIDomain_EthicsLaw
-        ObjectSomeValuesFrom(ai:requires ai:PolicyEnforcement))
-      SubClassOf(ai:ETSIDomain_EthicsLaw
-        ObjectSomeValuesFrom(ai:requires ai:HumanOversight))
-      SubClassOf(ai:ETSIDomain_EthicsLaw
-        ObjectSomeValuesFrom(ai:requires ai:Transparency))
-      SubClassOf(ai:ETSIDomain_EthicsLaw
-        ObjectSomeValuesFrom(ai:dependsOn ai:GDPR))
-      SubClassOf(ai:ETSIDomain_EthicsLaw
-        ObjectSomeValuesFrom(ai:dependsOn ai:DigitalServicesAct))
-      SubClassOf(ai:ETSIDomain_EthicsLaw
-        ObjectSomeValuesFrom(ai:dependsOn ai:EUAIAct))
+## Compositional Relationships (Components)
+    SubClassOf(ai:ETSIDomain_EthicsLaw
+      ObjectSomeValuesFrom(ai:hasPart ai:EthicalFramework))
+    SubClassOf(ai:ETSIDomain_EthicsLaw
+      ObjectSomeValuesFrom(ai:hasPart ai:LegalCompliance))
+    SubClassOf(ai:ETSIDomain_EthicsLaw
+      ObjectSomeValuesFrom(ai:hasPart ai:RegulatorySystem))
+    SubClassOf(ai:ETSIDomain_EthicsLaw
+      ObjectSomeValuesFrom(ai:hasPart ai:RightsManagement))
+    SubClassOf(ai:ETSIDomain_EthicsLaw
+      ObjectSomeValuesFrom(ai:hasPart ai:ContentModerationStandards))
+    SubClassOf(ai:ETSIDomain_EthicsLaw
+      ObjectSomeValuesFrom(ai:hasPart ai:PolicyEnforcement))
+    SubClassOf(ai:ETSIDomain_EthicsLaw
+      ObjectSomeValuesFrom(ai:hasPart ai:UserProtectionMechanism))
+    SubClassOf(ai:ETSIDomain_EthicsLaw
+      ObjectSomeValuesFrom(ai:hasPart ai:DigitalIdentity))
 
-  ## Capability Relationships
-      SubClassOf(ai:ETSIDomain_EthicsLaw
-        ObjectSomeValuesFrom(ai:enables ai:LegalAccountability))
-      SubClassOf(ai:ETSIDomain_EthicsLaw
-        ObjectSomeValuesFrom(ai:enables ai:UserProtection))
-      SubClassOf(ai:ETSIDomain_EthicsLaw
-        ObjectSomeValuesFrom(ai:enables ai:ResponsibleAI))
-      SubClassOf(ai:ETSIDomain_EthicsLaw
-        ObjectSomeValuesFrom(ai:enables ai:TrustworthyAI))
-      SubClassOf(ai:ETSIDomain_EthicsLaw
-        ObjectSomeValuesFrom(ai:enables ai:AIAudit))
-      SubClassOf(ai:ETSIDomain_EthicsLaw
-        ObjectSomeValuesFrom(ai:enables ai:DataGovernance))
+## Dependency Relationships
+    SubClassOf(ai:ETSIDomain_EthicsLaw
+      ObjectSomeValuesFrom(ai:requires ai:ComplianceMonitoring))
+    SubClassOf(ai:ETSIDomain_EthicsLaw
+      ObjectSomeValuesFrom(ai:requires ai:PolicyEnforcement))
+    SubClassOf(ai:ETSIDomain_EthicsLaw
+      ObjectSomeValuesFrom(ai:requires ai:HumanOversight))
+    SubClassOf(ai:ETSIDomain_EthicsLaw
+      ObjectSomeValuesFrom(ai:requires ai:Transparency))
+    SubClassOf(ai:ETSIDomain_EthicsLaw
+      ObjectSomeValuesFrom(ai:dependsOn ai:GDPR))
+    SubClassOf(ai:ETSIDomain_EthicsLaw
+      ObjectSomeValuesFrom(ai:dependsOn ai:DigitalServicesAct))
+    SubClassOf(ai:ETSIDomain_EthicsLaw
+      ObjectSomeValuesFrom(ai:dependsOn ai:EUAIAct))
 
-  ## Implementation Relationships
-      SubClassOf(ai:ETSIDomain_EthicsLaw
-        ObjectSomeValuesFrom(ai:implements ai:EthicalAI))
-      SubClassOf(ai:ETSIDomain_EthicsLaw
-        ObjectSomeValuesFrom(ai:implements ai:ISO_IEC_42001))
-      SubClassOf(ai:ETSIDomain_EthicsLaw
-        ObjectSomeValuesFrom(ai:implements ai:NIST_AI_RMF))
-      SubClassOf(ai:ETSIDomain_EthicsLaw
-        ObjectSomeValuesFrom(ai:implements ai:OECDAIPrinciples))
-      SubClassOf(ai:ETSIDomain_EthicsLaw
-        ObjectSomeValuesFrom(ai:implements ai:PrivacyByDesign))
+## Capability Relationships
+    SubClassOf(ai:ETSIDomain_EthicsLaw
+      ObjectSomeValuesFrom(ai:enables ai:LegalAccountability))
+    SubClassOf(ai:ETSIDomain_EthicsLaw
+      ObjectSomeValuesFrom(ai:enables ai:UserProtection))
+    SubClassOf(ai:ETSIDomain_EthicsLaw
+      ObjectSomeValuesFrom(ai:enables ai:ResponsibleAI))
+    SubClassOf(ai:ETSIDomain_EthicsLaw
+      ObjectSomeValuesFrom(ai:enables ai:TrustworthyAI))
+    SubClassOf(ai:ETSIDomain_EthicsLaw
+      ObjectSomeValuesFrom(ai:enables ai:AIAudit))
+    SubClassOf(ai:ETSIDomain_EthicsLaw
+      ObjectSomeValuesFrom(ai:enables ai:DataGovernance))
 
-  ## Reduction Relationships
-      SubClassOf(ai:ETSIDomain_EthicsLaw
-        ObjectSomeValuesFrom(ai:reducesTo ai:AIGovernanceDomain))
-      SubClassOf(ai:ETSIDomain_EthicsLaw
-        ObjectSomeValuesFrom(ai:reducesTo ai:RegulatoryCompliance))
+## Implementation Relationships
+    SubClassOf(ai:ETSIDomain_EthicsLaw
+      ObjectSomeValuesFrom(ai:implements ai:EthicalAI))
+    SubClassOf(ai:ETSIDomain_EthicsLaw
+      ObjectSomeValuesFrom(ai:implements ai:ISO_IEC_42001))
+    SubClassOf(ai:ETSIDomain_EthicsLaw
+      ObjectSomeValuesFrom(ai:implements ai:NIST_AI_RMF))
+    SubClassOf(ai:ETSIDomain_EthicsLaw
+      ObjectSomeValuesFrom(ai:implements ai:OECDAIPrinciples))
+    SubClassOf(ai:ETSIDomain_EthicsLaw
+      ObjectSomeValuesFrom(ai:implements ai:PrivacyByDesign))
 
-  ## Cross-Domain Relationships
-      SubClassOf(ai:ETSIDomain_EthicsLaw
-        ObjectSomeValuesFrom(ai:isPartOf ai:ETSIMetaverseDomainTaxonomy))
-      SubClassOf(ai:ETSIDomain_EthicsLaw
-        ObjectSomeValuesFrom(ai:relatedTo ai:ETSIDomain_Governance_Compliance))
-      SubClassOf(ai:ETSIDomain_EthicsLaw
-        ObjectSomeValuesFrom(ai:standardizedBy ai:ETSI_GR_MEC_032))
-      SubClassOf(ai:ETSIDomain_EthicsLaw
-        ObjectSomeValuesFrom(ai:standardizedBy ai:IEEE7016))
-      SubClassOf(ai:ETSIDomain_EthicsLaw
-        ObjectSomeValuesFrom(ai:contrasts ai:SelfRegulation))
-      SubClassOf(ai:ETSIDomain_EthicsLaw
-        ObjectSomeValuesFrom(ai:supports ai:DataGovernance))
-      SubClassOf(ai:ETSIDomain_EthicsLaw
-        ObjectSomeValuesFrom(ai:supports ai:AlgorithmicAccountability))
-      SubClassOf(ai:ETSIDomain_EthicsLaw
-        ObjectSomeValuesFrom(ai:uses ai:SmartContracts))
+## Reduction Relationships
+    SubClassOf(ai:ETSIDomain_EthicsLaw
+      ObjectSomeValuesFrom(ai:reducesTo ai:AIGovernanceDomain))
+    SubClassOf(ai:ETSIDomain_EthicsLaw
+      ObjectSomeValuesFrom(ai:reducesTo ai:RegulatoryCompliance))
 
-  ## About
+## Cross-Domain Relationships
+    SubClassOf(ai:ETSIDomain_EthicsLaw
+      ObjectSomeValuesFrom(ai:isPartOf ai:ETSIMetaverseDomainTaxonomy))
+    SubClassOf(ai:ETSIDomain_EthicsLaw
+      ObjectSomeValuesFrom(ai:relatedTo ai:ETSIDomain_Governance_Compliance))
+    SubClassOf(ai:ETSIDomain_EthicsLaw
+      ObjectSomeValuesFrom(ai:standardizedBy ai:ETSI_GR_MEC_032))
+    SubClassOf(ai:ETSIDomain_EthicsLaw
+      ObjectSomeValuesFrom(ai:standardizedBy ai:IEEE7016))
+    SubClassOf(ai:ETSIDomain_EthicsLaw
+      ObjectSomeValuesFrom(ai:contrasts ai:SelfRegulation))
+    SubClassOf(ai:ETSIDomain_EthicsLaw
+      ObjectSomeValuesFrom(ai:supports ai:DataGovernance))
+    SubClassOf(ai:ETSIDomain_EthicsLaw
+      ObjectSomeValuesFrom(ai:supports ai:AlgorithmicAccountability))
+    SubClassOf(ai:ETSIDomain_EthicsLaw
+      ObjectSomeValuesFrom(ai:uses ai:SmartContracts))
 
-  The ETSI Domain: Ethics & Law emerged from the recognition that metaverse and extended-reality platforms are not merely technological artefacts but socio-technical systems that embed consequential normative choices about who may participate, under what conditions, and with what protections. ETSI's Industry Specification Group for Multi-access Edge Computing (ISG MEC) introduced this domain category in the Group Report GR MEC 032 as part of a broader taxonomy structuring the landscape of metaverse requirements. The taxonomy situates Ethics & Law at the same architectural level as infrastructure, connectivity, and user-experience domains, signalling that normative considerations are not post-hoc additions but constitutive requirements of any compliant metaverse deployment.
+## About
 
-  The domain operates at the intersection of at least four distinct regulatory regimes that simultaneously apply to most commercially significant metaverse platforms. The [[GDPR]] governs the processing of personal data — in the metaverse context this includes not only conventional identifiers but also biometric data from head-tracking and eye-tracking, spatial behavioural data, voice biometrics, and persistent avatar representations — all of which may qualify as special-category data under Article 9. The [[Digital Services Act]] imposes transparency, [[Content Moderation Standards]], and [[User Protection]] obligations on platforms qualifying as Online Intermediaries or Very Large Online Platforms, with enforcement powers vested in the European Commission for platforms with more than 45 million EU users. The EU AI Act — fully applicable from 2 August 2026 — subjects AI systems embedded in metaverse environments to risk classification, conformity assessment, transparency labelling (including deepfake disclosure under Article 50(4)), and prohibitions on certain manipulative techniques. eIDAS 2.0, entering phased deployment from 2025, introduces EU Digital Identity Wallets that will underpin identity verification and credential exchange within cross-border virtual environments. Navigating this multi-regime landscape, while maintaining operational coherence and user trust, is the practical challenge that ETSI Domain: Ethics & Law seeks to structure and address.
+The ETSI Domain: Ethics & Law emerged from the recognition that metaverse and extended-reality platforms are not merely technological artefacts but socio-technical systems that embed consequential normative choices about who may participate, under what conditions, and with what protections. ETSI's Industry Specification Group for Multi-access Edge Computing (ISG MEC) introduced this domain category in the Group Report GR MEC 032 as part of a broader taxonomy structuring the landscape of metaverse requirements. The taxonomy situates Ethics & Law at the same architectural level as infrastructure, connectivity, and user-experience domains, signalling that normative considerations are not post-hoc additions but constitutive requirements of any compliant metaverse deployment.
 
-  The ethical dimension of the domain draws on well-established frameworks — principlist bioethics (Beauchamp and Childress's autonomy, beneficence, non-maleficence, justice), utilitarian consequentialism, and Kantian duty-based reasoning — recontextualised for the distinctive features of persistent virtual environments. Those distinctive features include: the difficulty of withdrawing or revoking consent in systems where avatar histories are permanently recorded on distributed ledgers; the amplified psychological salience of avatar-mediated identity; the potential for ''presence exploitation'' in which the heightened sense of presence in immersive environments makes harmful content or manipulative dark patterns more effective than on flat-screen media; the challenge of protecting minors in age-unverified virtual spaces; and the novel intellectual-property questions raised by AI-generated virtual assets and procedurally generated environments. Ethical frameworks must address these features explicitly rather than by analogy to earlier digital media.
+The domain operates at the intersection of at least four distinct regulatory regimes that simultaneously apply to most commercially significant metaverse platforms. The [[GDPR]] governs the processing of personal data — in the metaverse context this includes not only conventional identifiers but also biometric data from head-tracking and eye-tracking, spatial behavioural data, voice biometrics, and persistent avatar representations — all of which may qualify as special-category data under Article 9. The [[Digital Services Act]] imposes transparency, [[Content Moderation Standards]], and [[User Protection]] obligations on platforms qualifying as Online Intermediaries or Very Large Online Platforms, with enforcement powers vested in the European Commission for platforms with more than 45 million EU users. The EU AI Act — fully applicable from 2 August 2026 — subjects AI systems embedded in metaverse environments to risk classification, conformity assessment, transparency labelling (including deepfake disclosure under Article 50(4)), and prohibitions on certain manipulative techniques. eIDAS 2.0, entering phased deployment from 2025, introduces EU Digital Identity Wallets that will underpin identity verification and credential exchange within cross-border virtual environments. Navigating this multi-regime landscape, while maintaining operational coherence and user trust, is the practical challenge that ETSI Domain: Ethics & Law seeks to structure and address.
 
-  ## Components and Architecture
+The ethical dimension of the domain draws on well-established frameworks — principlist bioethics (Beauchamp and Childress's autonomy, beneficence, non-maleficence, justice), utilitarian consequentialism, and Kantian duty-based reasoning — recontextualised for the distinctive features of persistent virtual environments. Those distinctive features include: the difficulty of withdrawing or revoking consent in systems where avatar histories are permanently recorded on distributed ledgers; the amplified psychological salience of avatar-mediated identity; the potential for ''presence exploitation'' in which the heightened sense of presence in immersive environments makes harmful content or manipulative dark patterns more effective than on flat-screen media; the challenge of protecting minors in age-unverified virtual spaces; and the novel intellectual-property questions raised by AI-generated virtual assets and procedurally generated environments. Ethical frameworks must address these features explicitly rather than by analogy to earlier digital media.
 
-  ### Ethical Framework Sub-Domain
-  - **Principlist ethics applied to VR**: Autonomy (informed consent for biometric collection, opt-in participation, right to withdraw avatar data); Beneficence (design choices that affirmatively promote user wellbeing); Non-maleficence (prohibition of presence exploitation, manipulative dark patterns, addictive design); Justice (equitable access, non-discriminatory content moderation, fair distribution of economic value created in virtual worlds)
-  - **Value-sensitive design (VSD)**: Systematic incorporation of human values into system architecture from requirements stage, not retrofitted post-deployment
-  - **AI ethics integration**: Alignment between metaverse AI agents (scene agents, recommendation systems, content filters) and [[Responsible AI]] principles including [[Fairness]], [[Transparency]], [[Accountability]], and [[Human Oversight]]
-  - **Research ethics**: Protocols governing the use of metaverse participation data for research, including anonymisation standards and IRB-equivalent review for large-scale behavioural studies
+## Components and Architecture
+
+### Ethical Framework Sub-Domain
+
+- **Principlist ethics applied to VR**: Autonomy (informed consent for biometric collection, opt-in participation, right to withdraw avatar data); Beneficence (design choices that affirmatively promote user wellbeing); Non-maleficence (prohibition of presence exploitation, manipulative dark patterns, addictive design); Justice (equitable access, non-discriminatory content moderation, fair distribution of economic value created in virtual worlds)
+- **Value-sensitive design (VSD)**: Systematic incorporation of human values into system architecture from requirements stage, not retrofitted post-deployment
+- **AI ethics integration**: Alignment between metaverse AI agents (scene agents, recommendation systems, content filters) and [[Responsible AI]] principles including [[Fairness]], [[Transparency]], [[Accountability]], and [[Human Oversight]]
+- **Research ethics**: Protocols governing the use of metaverse participation data for research, including anonymisation standards and IRB-equivalent review for large-scale behavioural studies
 
   ### Legal Compliance Sub-Domain
-  - **GDPR compliance layer**: Data-minimisation architecture, purpose-limitation controls, data-subject rights interfaces (access, rectification, erasure of avatar and behavioural data), breach notification pipelines, Data Protection Impact Assessments (DPIA) for high-risk processing
-  - **Digital Services Act compliance**: Notice-and-action mechanisms, transparent appeals processes, algorithmic transparency reports, API access for approved researchers under Article 40, illegal content removal within prescribed timescales
-  - **EU AI Act compliance**: Risk classification of embedded AI (recommendation engines as high-risk if they substantially affect access to education or employment; real-time biometric identification as generally prohibited); technical documentation; conformity assessment; post-market monitoring
-  - **eIDAS 2.0 integration**: Support for EU Digital Identity Wallet credential verification; interoperable identity proofing for age-restricted content or financial services conducted within virtual environments
-  - **MiCA compliance**: Regulatory obligations for virtual-asset service providers operating within or via metaverse platforms, including anti-money-laundering (AML) and know-your-customer (KYC) requirements
-  - **Online Safety Act (UK) obligations**: For platforms with UK users, Ofcom-enforced duties to protect users from illegal content and, for large platforms, from legal-but-harmful content; age-assurance requirements for pornographic or violent content accessible via headset
+
+- **GDPR compliance layer**: Data-minimisation architecture, purpose-limitation controls, data-subject rights interfaces (access, rectification, erasure of avatar and behavioural data), breach notification pipelines, Data Protection Impact Assessments (DPIA) for high-risk processing
+- **Digital Services Act compliance**: Notice-and-action mechanisms, transparent appeals processes, algorithmic transparency reports, API access for approved researchers under Article 40, illegal content removal within prescribed timescales
+- **EU AI Act compliance**: Risk classification of embedded AI (recommendation engines as high-risk if they substantially affect access to education or employment; real-time biometric identification as generally prohibited); technical documentation; conformity assessment; post-market monitoring
+- **eIDAS 2.0 integration**: Support for EU Digital Identity Wallet credential verification; interoperable identity proofing for age-restricted content or financial services conducted within virtual environments
+- **MiCA compliance**: Regulatory obligations for virtual-asset service providers operating within or via metaverse platforms, including anti-money-laundering (AML) and know-your-customer (KYC) requirements
+- **Online Safety Act (UK) obligations**: For platforms with UK users, Ofcom-enforced duties to protect users from illegal content and, for large platforms, from legal-but-harmful content; age-assurance requirements for pornographic or violent content accessible via headset
 
   ### Regulatory Systems Sub-Domain
-  - **National competent authorities**: ICO (UK), CNIL (France), BfDI (Germany), DSA Lead Authority (Ireland Digital Services Coordinator) as primary regulators for most large platforms
-  - **ETSI standardisation processes**: Technical Committee for Cybersecurity (TC CYBER), ISG MEC, and the new ISG SAI (Securing Artificial Intelligence) producing normative standards that translate legal requirements into technical specifications
-  - **Multi-stakeholder bodies**: IEEE Global Initiative on Ethics of Extended Reality; W3C Immersive Web Working Group; XR Association (XRA) responsible disclosure frameworks
-  - **Self-regulatory codes**: Platform community standards operating under DSA ''Trusted Flagger'' regimes; XRA accessibility standards; IEEE 7016 Standard for Ethically Aligned Design of Metaverse Systems
+
+- **National competent authorities**: ICO (UK), CNIL (France), BfDI (Germany), DSA Lead Authority (Ireland Digital Services Coordinator) as primary regulators for most large platforms
+- **ETSI standardisation processes**: Technical Committee for Cybersecurity (TC CYBER), ISG MEC, and the new ISG SAI (Securing Artificial Intelligence) producing normative standards that translate legal requirements into technical specifications
+- **Multi-stakeholder bodies**: IEEE Global Initiative on Ethics of Extended Reality; W3C Immersive Web Working Group; XR Association (XRA) responsible disclosure frameworks
+- **Self-regulatory codes**: Platform community standards operating under DSA ''Trusted Flagger'' regimes; XRA accessibility standards; IEEE 7016 Standard for Ethically Aligned Design of Metaverse Systems
 
   ### Rights Management Sub-Domain
-  - **Intellectual property**: Copyright subsistence and ownership of AI-generated content; performer rights in motion-captured avatar animation; trade mark protection of brand representations in virtual storefronts
-  - **Personal data as a right**: GDPR right to data portability applied to avatar assets and behavioural history; right to be forgotten applied to persistent virtual-world records
-  - **Digital-asset ownership**: NFT-based provenance chains; smart-contract enforcement of royalty flows; interoperability of digital assets across platform boundaries
-  - **Identity rights**: Right to pseudonymity; prohibition of involuntary de-anonymisation; ownership of avatar likeness
+
+- **Intellectual property**: Copyright subsistence and ownership of AI-generated content; performer rights in motion-captured avatar animation; trade mark protection of brand representations in virtual storefronts
+- **Personal data as a right**: GDPR right to data portability applied to avatar assets and behavioural history; right to be forgotten applied to persistent virtual-world records
+- **Digital-asset ownership**: NFT-based provenance chains; smart-contract enforcement of royalty flows; interoperability of digital assets across platform boundaries
+- **Identity rights**: Right to pseudonymity; prohibition of involuntary de-anonymisation; ownership of avatar likeness
 
   ## Use Cases and Deployment Contexts
 
@@ -195,33 +199,38 @@ Domain marker for ETSI metaverse categorisation covering ical frameworks, legal 
   The Ethics & Law domain maps across five overlapping regulatory instruments active in 2026, each with distinct scope, enforcement mechanisms, and applicability thresholds:
 
   **GDPR (Regulation (EU) 2016/679)**
-  - Scope: All processing of personal data of EU data subjects regardless of controller location
-  - Metaverse relevance: Biometric tracking (Article 9), behavioural profiling (Article 22), avatar-identity data, consent management in persistent environments, right to erasure vs. blockchain immutability
-  - Enforcement: National data protection authorities (ICO in UK for UK GDPR); maximum fine EUR 20M or 4% global annual turnover
-  - Key decisions: Avatar representations as personal data; eye-tracking as biometric data; spatial mapping as location data
+
+- Scope: All processing of personal data of EU data subjects regardless of controller location
+- Metaverse relevance: Biometric tracking (Article 9), behavioural profiling (Article 22), avatar-identity data, consent management in persistent environments, right to erasure vs. blockchain immutability
+- Enforcement: National data protection authorities (ICO in UK for UK GDPR); maximum fine EUR 20M or 4% global annual turnover
+- Key decisions: Avatar representations as personal data; eye-tracking as biometric data; spatial mapping as location data
 
   **Digital Services Act (Regulation (EU) 2022/2065)**
-  - Scope: Online intermediary services established in or targeting EU; enhanced obligations for Very Large Online Platforms (45M+ EU monthly active users)
-  - Metaverse relevance: Content moderation governance (Articles 14–23); algorithmic transparency (Article 27); systemic risk assessment (Article 34) for VLOPs; researcher data access (Article 40)
-  - Enforcement: European Commission for VLOPs; national DSAs for other services; fines up to 6% global turnover
-  - Active enforcement (2025): EUR 120M fine against X; 50M content-moderation decisions reversed through DSA appeal mechanisms
+
+- Scope: Online intermediary services established in or targeting EU; enhanced obligations for Very Large Online Platforms (45M+ EU monthly active users)
+- Metaverse relevance: Content moderation governance (Articles 14–23); algorithmic transparency (Article 27); systemic risk assessment (Article 34) for VLOPs; researcher data access (Article 40)
+- Enforcement: European Commission for VLOPs; national DSAs for other services; fines up to 6% global turnover
+- Active enforcement (2025): EUR 120M fine against X; 50M content-moderation decisions reversed through DSA appeal mechanisms
 
   **EU AI Act (Regulation (EU) 2024/1689)**
-  - Scope: AI systems placed on EU market or whose outputs are used in EU; full applicability for high-risk systems from 2 August 2026
-  - Metaverse relevance: Real-time biometric identification (generally prohibited in public spaces — Article 5); recommendation engines affecting access to education/employment (Annex III high-risk); deepfake disclosure (Article 50(4)); AI system transparency for users (Article 50(1))
-  - Enforcement: National market surveillance authorities; European AI Office for GPAI models; fines up to EUR 35M or 7% global turnover for prohibited-practice violations
-  - Standards: CEN/CENELEC standardisation mandate activated 2024; ETSI contributing to harmonised standards under AI Act Article 40
+
+- Scope: AI systems placed on EU market or whose outputs are used in EU; full applicability for high-risk systems from 2 August 2026
+- Metaverse relevance: Real-time biometric identification (generally prohibited in public spaces — Article 5); recommendation engines affecting access to education/employment (Annex III high-risk); deepfake disclosure (Article 50(4)); AI system transparency for users (Article 50(1))
+- Enforcement: National market surveillance authorities; European AI Office for GPAI models; fines up to EUR 35M or 7% global turnover for prohibited-practice violations
+- Standards: CEN/CENELEC standardisation mandate activated 2024; ETSI contributing to harmonised standards under AI Act Article 40
 
   **eIDAS 2.0 (Regulation (EU) 2024/1183)**
-  - Scope: Electronic identification and trust services; EU Digital Identity Wallet rollout from 2025
-  - Metaverse relevance: Cross-border identity verification without biometric databases; age-assurance for restricted content; credential portability between platforms; person-unique identifiers enabling cross-platform de-anonymisation risks
-  - Enforcement: National supervisory bodies; mutual recognition obligations between member states
+
+- Scope: Electronic identification and trust services; EU Digital Identity Wallet rollout from 2025
+- Metaverse relevance: Cross-border identity verification without biometric databases; age-assurance for restricted content; credential portability between platforms; person-unique identifiers enabling cross-platform de-anonymisation risks
+- Enforcement: National supervisory bodies; mutual recognition obligations between member states
 
   **Online Safety Act 2023 (UK)**
-  - Scope: User-to-user services and search services with UK users; enhanced duties for Category 1 and Category 2A services
-  - Metaverse relevance: Illegal content duties (all services); children's safety duties (all services accessed by under-18s, including VR platforms); transparency reporting; content-moderation governance requirements
-  - Enforcement: Ofcom; fines up to GBP 18M or 10% global turnover; senior manager liability for systematic non-compliance
-  - Active development: Age-assurance guidance for immersive platforms under Ofcom consultation 2025–2026
+
+- Scope: User-to-user services and search services with UK users; enhanced duties for Category 1 and Category 2A services
+- Metaverse relevance: Illegal content duties (all services); children's safety duties (all services accessed by under-18s, including VR platforms); transparency reporting; content-moderation governance requirements
+- Enforcement: Ofcom; fines up to GBP 18M or 10% global turnover; senior manager liability for systematic non-compliance
+- Active development: Age-assurance guidance for immersive platforms under Ofcom consultation 2025–2026
 
   ## Key Terminology
 
@@ -243,15 +252,15 @@ Domain marker for ETSI metaverse categorisation covering ical frameworks, legal 
 
   The following matrix maps the principal normative standards active in the Ethics & Law domain to their key obligations and the ETSI taxonomy components they govern:
 
-  | Standard | Scope | Primary ETSI Component | Key Obligation |
-  |---|---|---|---|
-  | ISO/IEC 42001:2023 | AI management systems | [[Responsible AI]], [[AI Audit]] | Establish, implement, maintain, and continually improve an AI management system |
-  | ISO/IEC 23894:2023 | AI risk management | [[Regulatory Systems]], [[Risk Management]] | Systematic identification, assessment, and treatment of AI-related risks |
-  | ISO/IEC 5338:2023 | AI system lifecycle | [[Legal Compliance]], [[Compliance Monitoring]] | Integrate ethical and compliance requirements across the full AI lifecycle |
-  | NIST AI RMF 1.0 | AI risk management | [[AI Governance]], [[Risk Management]] | GOVERN/MAP/MEASURE/MANAGE functions operationalising [[Responsible AI]] |
-  | IEEE 7016 | Metaverse ethics design | [[Ethical Frameworks]] | Ethically aligned design and operation of metaverse systems |
-  | ISO/IEC 29101 | Privacy architecture | [[Rights Management]], [[Privacy by Design]] | Privacy reference architecture for ICT systems |
-  | ETSI EN 303 645 | IoT cybersecurity | [[InfrastructureDomain]] | Baseline cybersecurity requirements relevant to XR device security |
+| Standard | Scope | Primary ETSI Component | Key Obligation |
+|---|---|---|---|
+| ISO/IEC 42001:2023 | AI management systems | [[Responsible AI]], [[AI Audit]] | Establish, implement, maintain, and continually improve an AI management system |
+| ISO/IEC 23894:2023 | AI risk management | [[Regulatory Systems]], [[Risk Management]] | Systematic identification, assessment, and treatment of AI-related risks |
+| ISO/IEC 5338:2023 | AI system lifecycle | [[Legal Compliance]], [[Compliance Monitoring]] | Integrate ethical and compliance requirements across the full AI lifecycle |
+| NIST AI RMF 1.0 | AI risk management | [[AI Governance]], [[Risk Management]] | GOVERN/MAP/MEASURE/MANAGE functions operationalising [[Responsible AI]] |
+| IEEE 7016 | Metaverse ethics design | [[Ethical Frameworks]] | Ethically aligned design and operation of metaverse systems |
+| ISO/IEC 29101 | Privacy architecture | [[Rights Management]], [[Privacy by Design]] | Privacy reference architecture for ICT systems |
+| ETSI EN 303 645 | IoT cybersecurity | [[InfrastructureDomain]] | Baseline cybersecurity requirements relevant to XR device security |
 
-- ### Provenance
+### Provenance
 

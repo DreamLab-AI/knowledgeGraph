@@ -1,20 +1,26 @@
-
 Inverse reinforcement learning (IRL) is a machine-learning approach that infers the reward function an agent appears to be optimising from observations of its behaviour, rather than being told the reward in advance. It inverts the usual reinforcement-learning problem: instead of finding a policy that maximises a known reward, it recovers the reward that best explains demonstrated, near-optimal trajectories. The recovered reward can then be used to train new policies that generalise the demonstrated intent to unseen situations, making IRL central to learning complex objectives that are hard to specify by hand.
 
 - Inverse reinforcement learning infers the [[Reward Function]] that best explains observed expert behaviour, inverting standard [[Reinforcement Learning]]. As a form of [[Imitation Learning]] over a [[Markov Decision Process]], it recovers intent rather than copying actions directly.
-- ### Overview
+
+### Overview
+
 - In ordinary reinforcement learning the reward is given and the agent searches for a policy that maximises it. IRL turns this around: the demonstrations are given and the algorithm searches for a reward under which those demonstrations look optimal. This is powerful when the objective is intuitive to a human but hard to write down, such as driving courteously or grasping delicate objects.
 - The problem is fundamentally under-determined, because many reward functions can explain the same behaviour, so IRL methods add regularising assumptions such as maximum entropy, margin maximisation or feature matching to pick a plausible reward.
-- ### Mechanisms
+
+### Mechanisms
+
 - Feature-based reward representation, expressing the reward as a function of state features.
 - Maximum-entropy formulations that resolve ambiguity by preferring the least committed reward.
 - Margin and apprenticeship methods that make the expert outperform alternatives.
 - Adversarial and deep variants that scale to high-dimensional observations with a [[Neural Network]].
 - Recovered-reward re-optimisation to produce a generalising policy.
-- ### Applications
+
+### Applications
+
 - Learning driving and navigation objectives from human demonstrations.
 - Teaching manipulation skills in [[Robotics]] without hand-coded rewards.
 - [[Apprenticeship Learning]] where the agent matches expert performance.
 - Reward modelling for systems whose goals are hard to specify explicitly.
-- ### Provenance
+
+### Provenance
 

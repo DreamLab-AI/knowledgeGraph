@@ -1,10 +1,10 @@
-
 Digital Asset Workflow is a type of Spatial Computing in the spatial computing domain.
 
-- ### Semantic Classification
+### Semantic Classification
 
-- ### Content
-  Digital Asset Workflow — content pending enrichment.
+### Content
 
-- ### Provenance
+Digital Asset Workflow — content pending enrichment.
+
+### Provenance
 

@@ -1,4 +1,3 @@
-
 A hydraulic cylinder is a mechanical actuator that converts hydraulic pressure and fluid flow into unidirectional linear force and motion. It consists of a cylindrical barrel, piston, piston rod, end caps, and seals; pressurised fluid acts on the piston face to extend or retract the rod, generating forces from tens of newtons to several meganewtons depending on bore diameter and system pressure. Hydraulic cylinders are foundational components in industrial robots, heavy machinery, manufacturing automation, and construction equipment where high force density and precise position control are required.
 
 ### Definition

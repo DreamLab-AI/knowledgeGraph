@@ -1,12 +1,12 @@
-
 Agreed process and framework for resolving conflicts between metaverse participants through mediation, arbitration, or other structured resolution mods.
 
-- ### Bridge-To
+### Bridge-To
 
-- ### Semantic Classification
+### Semantic Classification
 
-- ### Content
-  Dispute Resolution Mechanism — content pending enrichment.
+### Content
 
-- ### Provenance
+Dispute Resolution Mechanism — content pending enrichment.
+
+### Provenance
 

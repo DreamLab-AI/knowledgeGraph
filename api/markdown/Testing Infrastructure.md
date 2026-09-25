@@ -1,16 +1,16 @@
-
 The ensemble of tools, environments, frameworks, and automated pipelines used to validate software correctness, performance, and reliability across development and deployment stages. Testing infrastructure encompasses unit, integration, and end-to-end test runners, continuous integration services, containerised test environments, and monitoring dashboards that together ensure software meets quality standards before release.
 
-- ### Semantic Classification
+### Semantic Classification
 
-- ### Content
+### Content
 
-  ## Overview
+## Overview
 
-  Testing Infrastructure represents an abstract concept in the metaverse ontology hierarchy.
+Testing Infrastructure represents an abstract concept in the metaverse ontology hierarchy.
 
-  #### Related Concepts
-  - [[owl:Thing]]
+#### Related Concepts
 
-- ### Provenance
+- [[owl:Thing]]
+
+### Provenance
 

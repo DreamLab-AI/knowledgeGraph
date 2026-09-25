@@ -1,117 +1,119 @@
-
 Benign overfitting is the phenomenon, observed in heavily overparameterised models such as deep neural networks, where a model fits its training data exactly, including noise, yet still generalises well to unseen data. This contradicts the classical bias-variance trade-off, which predicts that interpolating noise should harm generalisation. It is closely associated with the double-descent risk curve and is a central puzzle in modern statistical learning theory.
 
-- ### Semantic Classification
+### Semantic Classification
 
-- ### Content
-  ## Compositional Relationships (Components)
-      SubClassOf(ai:BenignOverfitting
-        ObjectSomeValuesFrom(ai:hasPart ai:DoubleDescent))
-      SubClassOf(ai:BenignOverfitting
-        ObjectSomeValuesFrom(ai:hasPart ai:ImplicitBias))
-      SubClassOf(ai:BenignOverfitting
-        ObjectSomeValuesFrom(ai:hasPart ai:MinimumNormInterpolator))
-      SubClassOf(ai:BenignOverfitting
-        ObjectSomeValuesFrom(ai:hasPart ai:InterpolationThreshold))
-      SubClassOf(ai:BenignOverfitting
-        ObjectSomeValuesFrom(ai:hasPart ai:SpectralDecomposition))
-      SubClassOf(ai:BenignOverfitting
-        ObjectSomeValuesFrom(ai:hasPart ai:OverparameterisedRegime))
+### Content
 
-  ## Dependency Relationships
-      SubClassOf(ai:BenignOverfitting
-        ObjectSomeValuesFrom(ai:requires ai:Overparameterisation))
-      SubClassOf(ai:BenignOverfitting
-        ObjectSomeValuesFrom(ai:requires ai:ImplicitBias))
-      SubClassOf(ai:BenignOverfitting
-        ObjectSomeValuesFrom(ai:requires ai:GradientDescent))
-      SubClassOf(ai:BenignOverfitting
-        ObjectSomeValuesFrom(ai:dependsOn ai:DataCovarianceSpectrum))
-      SubClassOf(ai:BenignOverfitting
-        ObjectSomeValuesFrom(ai:dependsOn ai:StatisticalLearningTheory))
-      SubClassOf(ai:BenignOverfitting
-        ObjectSomeValuesFrom(ai:dependsOn ai:TrainingData))
-      SubClassOf(ai:BenignOverfitting
-        ObjectSomeValuesFrom(ai:dependsOn ai:LossFunction))
+## Compositional Relationships (Components)
+    SubClassOf(ai:BenignOverfitting
+      ObjectSomeValuesFrom(ai:hasPart ai:DoubleDescent))
+    SubClassOf(ai:BenignOverfitting
+      ObjectSomeValuesFrom(ai:hasPart ai:ImplicitBias))
+    SubClassOf(ai:BenignOverfitting
+      ObjectSomeValuesFrom(ai:hasPart ai:MinimumNormInterpolator))
+    SubClassOf(ai:BenignOverfitting
+      ObjectSomeValuesFrom(ai:hasPart ai:InterpolationThreshold))
+    SubClassOf(ai:BenignOverfitting
+      ObjectSomeValuesFrom(ai:hasPart ai:SpectralDecomposition))
+    SubClassOf(ai:BenignOverfitting
+      ObjectSomeValuesFrom(ai:hasPart ai:OverparameterisedRegime))
 
-  ## Capability Relationships
-      SubClassOf(ai:BenignOverfitting
-        ObjectSomeValuesFrom(ai:enables ai:Generalisation))
-      SubClassOf(ai:BenignOverfitting
-        ObjectSomeValuesFrom(ai:enables ai:ZeroTrainingError))
-      SubClassOf(ai:BenignOverfitting
-        ObjectSomeValuesFrom(ai:enables ai:NearOptimalTestError))
-      SubClassOf(ai:BenignOverfitting
-        ObjectSomeValuesFrom(ai:supports ai:DeepLearning))
-      SubClassOf(ai:BenignOverfitting
-        ObjectSomeValuesFrom(ai:supports ai:LargeLanguageModels))
+## Dependency Relationships
+    SubClassOf(ai:BenignOverfitting
+      ObjectSomeValuesFrom(ai:requires ai:Overparameterisation))
+    SubClassOf(ai:BenignOverfitting
+      ObjectSomeValuesFrom(ai:requires ai:ImplicitBias))
+    SubClassOf(ai:BenignOverfitting
+      ObjectSomeValuesFrom(ai:requires ai:GradientDescent))
+    SubClassOf(ai:BenignOverfitting
+      ObjectSomeValuesFrom(ai:dependsOn ai:DataCovarianceSpectrum))
+    SubClassOf(ai:BenignOverfitting
+      ObjectSomeValuesFrom(ai:dependsOn ai:StatisticalLearningTheory))
+    SubClassOf(ai:BenignOverfitting
+      ObjectSomeValuesFrom(ai:dependsOn ai:TrainingData))
+    SubClassOf(ai:BenignOverfitting
+      ObjectSomeValuesFrom(ai:dependsOn ai:LossFunction))
 
-  ## Implementation Relationships
-      SubClassOf(ai:BenignOverfitting
-        ObjectSomeValuesFrom(ai:contrastsWith ai:ClassicalBiasVarianceTradeoff))
-      SubClassOf(ai:BenignOverfitting
-        ObjectSomeValuesFrom(ai:contrastsWith ai:Regularisation))
-      SubClassOf(ai:BenignOverfitting
-        ObjectSomeValuesFrom(ai:bridges ai:ModelGovernance))
-      SubClassOf(ai:BenignOverfitting
-        ObjectSomeValuesFrom(ai:relatedTo ai:Grokking))
+## Capability Relationships
+    SubClassOf(ai:BenignOverfitting
+      ObjectSomeValuesFrom(ai:enables ai:Generalisation))
+    SubClassOf(ai:BenignOverfitting
+      ObjectSomeValuesFrom(ai:enables ai:ZeroTrainingError))
+    SubClassOf(ai:BenignOverfitting
+      ObjectSomeValuesFrom(ai:enables ai:NearOptimalTestError))
+    SubClassOf(ai:BenignOverfitting
+      ObjectSomeValuesFrom(ai:supports ai:DeepLearning))
+    SubClassOf(ai:BenignOverfitting
+      ObjectSomeValuesFrom(ai:supports ai:LargeLanguageModels))
 
-  ## Reduction Relationships
-      SubClassOf(ai:BenignOverfitting
-        ObjectSomeValuesFrom(ai:reducesTo ai:DoubleDescent))
-      SubClassOf(ai:BenignOverfitting
-        ObjectSomeValuesFrom(ai:reducesTo ai:ImplicitBiasPhenomenon))
-      SubClassOf(ai:BenignOverfitting
-        ObjectSomeValuesFrom(ai:reducesTo ai:OverparameterisationEffect))
-      SubClassOf(ai:BenignOverfitting
-        ObjectSomeValuesFrom(ai:reducesTo ai:MinimumNormInterpolation))
-      SubClassOf(ai:BenignOverfitting
-        ObjectSomeValuesFrom(ai:relatedTo ai:Grokking))
-      SubClassOf(ai:BenignOverfitting
-        ObjectSomeValuesFrom(ai:relatedTo ai:ScalingLaws))
-      SubClassOf(ai:BenignOverfitting
-        ObjectSomeValuesFrom(ai:bridges ai:AIGovernance))
-      SubClassOf(ai:BenignOverfitting
-        ObjectSomeValuesFrom(ai:relatedTo ai:TransferLearning))
-      SubClassOf(ai:BenignOverfitting
-        ObjectSomeValuesFrom(ai:contrastsWith ai:ClassicalOverfitting))
-      SubClassOf(ai:BenignOverfitting
-        ObjectSomeValuesFrom(ai:supports ai:FoundationModels))
-      SubClassOf(ai:BenignOverfitting
-        ObjectSomeValuesFrom(ai:relatedTo ai:Benchmarks))
-      SubClassOf(ai:BenignOverfitting
-        ObjectSomeValuesFrom(ai:relatedTo ai:Memorisation))
-      SubClassOf(ai:BenignOverfitting
-        ObjectSomeValuesFrom(ai:dependsOn ai:TrainingDataSpectrum))
+## Implementation Relationships
+    SubClassOf(ai:BenignOverfitting
+      ObjectSomeValuesFrom(ai:contrastsWith ai:ClassicalBiasVarianceTradeoff))
+    SubClassOf(ai:BenignOverfitting
+      ObjectSomeValuesFrom(ai:contrastsWith ai:Regularisation))
+    SubClassOf(ai:BenignOverfitting
+      ObjectSomeValuesFrom(ai:bridges ai:ModelGovernance))
+    SubClassOf(ai:BenignOverfitting
+      ObjectSomeValuesFrom(ai:relatedTo ai:Grokking))
 
-  ## About
-  Benign overfitting is one of the most theoretically surprising and practically significant phenomena in modern machine learning, because it reveals that the classical wisdom about overfitting — that fitting noise is harmful — breaks down precisely in the regime where modern large-scale models operate. Classical statistical learning theory, rooted in the bias-variance tradeoff formalised by Geman, Bienenstock, and Doursat (1992) and supported by decades of practical experience with shallow models, predicts a U-shaped test error curve: simple models underfit (high bias, low variance), complex models overfit (low bias, high variance), and the optimal model complexity trades these two errors against each other at an intermediate point. This framework dominated machine learning practice for decades, motivating [[Regularisation]] techniques (L1/L2 penalties, [[Dropout]], weight decay), model selection via [[Cross-Validation]], and [[Early Stopping]] as the standard toolbox for preventing overfitting.
+## Reduction Relationships
+    SubClassOf(ai:BenignOverfitting
+      ObjectSomeValuesFrom(ai:reducesTo ai:DoubleDescent))
+    SubClassOf(ai:BenignOverfitting
+      ObjectSomeValuesFrom(ai:reducesTo ai:ImplicitBiasPhenomenon))
+    SubClassOf(ai:BenignOverfitting
+      ObjectSomeValuesFrom(ai:reducesTo ai:OverparameterisationEffect))
+    SubClassOf(ai:BenignOverfitting
+      ObjectSomeValuesFrom(ai:reducesTo ai:MinimumNormInterpolation))
+    SubClassOf(ai:BenignOverfitting
+      ObjectSomeValuesFrom(ai:relatedTo ai:Grokking))
+    SubClassOf(ai:BenignOverfitting
+      ObjectSomeValuesFrom(ai:relatedTo ai:ScalingLaws))
+    SubClassOf(ai:BenignOverfitting
+      ObjectSomeValuesFrom(ai:bridges ai:AIGovernance))
+    SubClassOf(ai:BenignOverfitting
+      ObjectSomeValuesFrom(ai:relatedTo ai:TransferLearning))
+    SubClassOf(ai:BenignOverfitting
+      ObjectSomeValuesFrom(ai:contrastsWith ai:ClassicalOverfitting))
+    SubClassOf(ai:BenignOverfitting
+      ObjectSomeValuesFrom(ai:supports ai:FoundationModels))
+    SubClassOf(ai:BenignOverfitting
+      ObjectSomeValuesFrom(ai:relatedTo ai:Benchmarks))
+    SubClassOf(ai:BenignOverfitting
+      ObjectSomeValuesFrom(ai:relatedTo ai:Memorisation))
+    SubClassOf(ai:BenignOverfitting
+      ObjectSomeValuesFrom(ai:dependsOn ai:TrainingDataSpectrum))
 
-  The empirical cracks in this framework became apparent in the 2010s as practitioners discovered that dramatically over-parameterising neural networks — far beyond the point needed to fit training data — often improved rather than harmed test performance, contradicting classical predictions. Belkin et al. (2019) formalised this observation as the "double descent" phenomenon, documenting that the U-shaped test error curve is actually the left portion of a larger pattern: after the classical rise in error at the interpolation threshold, error descends again in the overparameterised regime, sometimes reaching levels below any classically regularised model. Bartlett, Montanari, and Sly (2020) provided the first rigorous theory of benign overfitting in linear regression, establishing precise conditions on the data covariance spectrum under which the minimum-norm interpolator achieves asymptotically optimal test error despite perfectly fitting noise-corrupted training labels.
+## About
+Benign overfitting is one of the most theoretically surprising and practically significant phenomena in modern machine learning, because it reveals that the classical wisdom about overfitting — that fitting noise is harmful — breaks down precisely in the regime where modern large-scale models operate. Classical statistical learning theory, rooted in the bias-variance tradeoff formalised by Geman, Bienenstock, and Doursat (1992) and supported by decades of practical experience with shallow models, predicts a U-shaped test error curve: simple models underfit (high bias, low variance), complex models overfit (low bias, high variance), and the optimal model complexity trades these two errors against each other at an intermediate point. This framework dominated machine learning practice for decades, motivating [[Regularisation]] techniques (L1/L2 penalties, [[Dropout]], weight decay), model selection via [[Cross-Validation]], and [[Early Stopping]] as the standard toolbox for preventing overfitting.
 
-  The phenomenon is not universal: benign overfitting requires specific conditions, and the same overparameterisation that is benign for one problem structure can be catastrophically harmful for another. The key conditions established by theory are: (1) sufficient overparameterisation, so that the model has enough capacity to separate signal from noise in parameter space; (2) appropriate [[Implicit Bias]] from the optimiser — gradient descent on square loss converges to the minimum L2-norm interpolator in linear settings, and analogous inductive biases operate in neural networks; (3) a favourable data covariance structure, specifically that the spectrum of the covariance matrix must have a large effective rank so that noise can be absorbed into many weakly-contributing directions; and (4) the signal-to-noise ratio must be high enough that the principal components capturing signal are not overwhelmed by the distributed noise fitting. When these conditions fail — for example, with low-dimensional data where there are few extra directions to absorb noise — benign overfitting does not occur, and the classical overfitting prediction is correct.
+The empirical cracks in this framework became apparent in the 2010s as practitioners discovered that dramatically over-parameterising neural networks — far beyond the point needed to fit training data — often improved rather than harmed test performance, contradicting classical predictions. Belkin et al. (2019) formalised this observation as the "double descent" phenomenon, documenting that the U-shaped test error curve is actually the left portion of a larger pattern: after the classical rise in error at the interpolation threshold, error descends again in the overparameterised regime, sometimes reaching levels below any classically regularised model. Bartlett, Montanari, and Sly (2020) provided the first rigorous theory of benign overfitting in linear regression, establishing precise conditions on the data covariance spectrum under which the minimum-norm interpolator achieves asymptotically optimal test error despite perfectly fitting noise-corrupted training labels.
 
-  ## Formal Theory
-  The canonical formal setting for benign overfitting analysis (following Bartlett et al., 2020) is linear regression with overparameterisation. Let **X** ∈ ℝ^(n × d) be a design matrix with n samples and d >> n features, and let **y** = **X**β* + ε be noisy observations where β* is the true signal and ε is i.i.d. noise. The minimum-norm interpolator is β̂ = **X**ᵀ(**X****X**ᵀ)⁻¹**y**, the pseudoinverse solution. The test error of β̂ decomposes into a bias term (how well β̂ recovers β* on the signal subspace) and a variance term (how much noise is amplified). For benign overfitting to hold, the bias must converge to zero (signal recovery succeeds) while the variance also converges to zero (noise amplification vanishes) as n, d → ∞ with d/n → ∞. The key spectral condition (Bartlett et al., 2020, Theorem 2) is that the effective rank k*(Σ) = (∑ᵢ σᵢ)²/∑ᵢ σᵢ² of the covariance matrix Σ must satisfy k*(Σ) >> n, ensuring that noise energy is distributed across many directions each with small individual influence.
+The phenomenon is not universal: benign overfitting requires specific conditions, and the same overparameterisation that is benign for one problem structure can be catastrophically harmful for another. The key conditions established by theory are: (1) sufficient overparameterisation, so that the model has enough capacity to separate signal from noise in parameter space; (2) appropriate [[Implicit Bias]] from the optimiser — gradient descent on square loss converges to the minimum L2-norm interpolator in linear settings, and analogous inductive biases operate in neural networks; (3) a favourable data covariance structure, specifically that the spectrum of the covariance matrix must have a large effective rank so that noise can be absorbed into many weakly-contributing directions; and (4) the signal-to-noise ratio must be high enough that the principal components capturing signal are not overwhelmed by the distributed noise fitting. When these conditions fail — for example, with low-dimensional data where there are few extra directions to absorb noise — benign overfitting does not occur, and the classical overfitting prediction is correct.
 
-  The minimum-norm interpolator in overparameterised linear regression corresponds to the maximum-margin classifier (the L2-norm minimiser subject to interpolation constraints), establishing a connection to the SVM and the theory of implicit regularisation. In neural network settings, the analogous role is played by the output of gradient descent on the logistic or cross-entropy loss from random initialisation, which has been shown in a growing body of work (Cao et al., 2022; Frei et al., 2023; Kou et al., 2023) to exhibit benign overfitting for two-layer networks under appropriate data models.
+## Formal Theory
+The canonical formal setting for benign overfitting analysis (following Bartlett et al., 2020) is linear regression with overparameterisation. Let **X** ∈ ℝ^(n × d) be a design matrix with n samples and d >> n features, and let **y** = **X**β* + ε be noisy observations where β* is the true signal and ε is i.i.d. noise. The minimum-norm interpolator is β̂ = **X**ᵀ(**X****X**ᵀ)⁻¹**y**, the pseudoinverse solution. The test error of β̂ decomposes into a bias term (how well β̂ recovers β* on the signal subspace) and a variance term (how much noise is amplified). For benign overfitting to hold, the bias must converge to zero (signal recovery succeeds) while the variance also converges to zero (noise amplification vanishes) as n, d → ∞ with d/n → ∞. The key spectral condition (Bartlett et al., 2020, Theorem 2) is that the effective rank k*(Σ) = (∑ᵢ σᵢ)²/∑ᵢ σᵢ² of the covariance matrix Σ must satisfy k*(Σ) >> n, ensuring that noise energy is distributed across many directions each with small individual influence.
 
-  ## Major Families and Variants
-  - **Linear benign overfitting**: the foundational setting (Bartlett et al., 2020; Belkin et al., 2020). Minimum-norm interpolation in overparameterised linear regression achieves optimal rates under spectral conditions. Universality results (Xu, 2025) show these conditions hold broadly across random feature models.
-  - **Kernel benign overfitting**: extending the linear analysis to kernel methods via the Neural Tangent Kernel (NTK) regime of infinitely wide networks. Results are more mixed: kernel interpolation can exhibit benign overfitting in specific high-dimensional settings but fails in fixed-dimension settings.
-  - **Two-layer ReLU network benign overfitting**: Cao et al. (2022) and Kou et al. (2023) proved benign overfitting for two-layer convolutional networks on noisy data when network width grows appropriately with sample size, extending the linear theory to a genuinely nonlinear setting.
-  - **Benign overfitting in attention mechanisms**: a 2024 paper (OpenReview, H4UMsoQrdI) demonstrated that the token selection mechanism of [[Attention Mechanism|attention]] achieves benign overfitting — maintaining high generalisation despite fitting label noise — providing theoretical grounding for why [[Transformer]] models are robust to training noise.
-  - **Epoch-wise double descent**: an ICML 2024 paper explored epoch-wise double descent in noisy data, examining signal separation, large activation, and benign overfitting across training epochs — showing that the benign overfitting regime can be entered and exited during a single training run.
-  - **Benign overfitting in deep linear networks**: Boix-Adsera et al. (2022) showed that deep linear networks can benignly overfit when shallow ones do, with depth providing additional directions for noise absorption.
-  - **Grokking as delayed benign overfitting**: the [[Grokking]] phenomenon — delayed generalisation after training accuracy saturates — can be understood as a dynamic instance of benign overfitting where the model transitions from a memorising regime to a generalising regime through continued optimisation. NeuralGrok (2025) accelerated this transition by identifying and manipulating specific network components.
+The minimum-norm interpolator in overparameterised linear regression corresponds to the maximum-margin classifier (the L2-norm minimiser subject to interpolation constraints), establishing a connection to the SVM and the theory of implicit regularisation. In neural network settings, the analogous role is played by the output of gradient descent on the logistic or cross-entropy loss from random initialisation, which has been shown in a growing body of work (Cao et al., 2022; Frei et al., 2023; Kou et al., 2023) to exhibit benign overfitting for two-layer networks under appropriate data models.
+
+## Major Families and Variants
+
+- **Linear benign overfitting**: the foundational setting (Bartlett et al., 2020; Belkin et al., 2020). Minimum-norm interpolation in overparameterised linear regression achieves optimal rates under spectral conditions. Universality results (Xu, 2025) show these conditions hold broadly across random feature models.
+- **Kernel benign overfitting**: extending the linear analysis to kernel methods via the Neural Tangent Kernel (NTK) regime of infinitely wide networks. Results are more mixed: kernel interpolation can exhibit benign overfitting in specific high-dimensional settings but fails in fixed-dimension settings.
+- **Two-layer ReLU network benign overfitting**: Cao et al. (2022) and Kou et al. (2023) proved benign overfitting for two-layer convolutional networks on noisy data when network width grows appropriately with sample size, extending the linear theory to a genuinely nonlinear setting.
+- **Benign overfitting in attention mechanisms**: a 2024 paper (OpenReview, H4UMsoQrdI) demonstrated that the token selection mechanism of [[Attention Mechanism|attention]] achieves benign overfitting — maintaining high generalisation despite fitting label noise — providing theoretical grounding for why [[Transformer]] models are robust to training noise.
+- **Epoch-wise double descent**: an ICML 2024 paper explored epoch-wise double descent in noisy data, examining signal separation, large activation, and benign overfitting across training epochs — showing that the benign overfitting regime can be entered and exited during a single training run.
+- **Benign overfitting in deep linear networks**: Boix-Adsera et al. (2022) showed that deep linear networks can benignly overfit when shallow ones do, with depth providing additional directions for noise absorption.
+- **Grokking as delayed benign overfitting**: the [[Grokking]] phenomenon — delayed generalisation after training accuracy saturates — can be understood as a dynamic instance of benign overfitting where the model transitions from a memorising regime to a generalising regime through continued optimisation. NeuralGrok (2025) accelerated this transition by identifying and manipulating specific network components.
 
   ## Use Cases
-  - **Understanding why large models do not need heavy regularisation**: benign overfitting theory explains why [[Large Language Models]] trained with relatively modest explicit regularisation on enormous datasets generalise across diverse tasks without overfitting in the classical sense. The overparameterisation provides the spectral structure needed for noise absorption.
-  - **Explaining [[Benchmarks|benchmark]] evaluation anomalies**: models that appear to overfit training data (zero training loss, low validation loss) can still score well on downstream [[Benchmarks]], which was puzzling before benign overfitting theory. The theory predicts when this is expected.
-  - **Model capacity decisions**: understanding the interpolation threshold informs decisions about when increasing model capacity helps versus hurts — directly relevant to [[Neural Architecture Search]] and [[Hyperparameter Tuning]].
-  - **Calibration and uncertainty**: benign overfitting models interpolate training labels including noisy ones, which has implications for [[Calibration]] of predicted probabilities — interpolating models may be overconfident on training-similar inputs.
-  - **[[Transfer Learning]] and fine-tuning**: the implicit bias of gradient descent toward low-norm solutions in overparameterised settings provides theoretical grounding for why fine-tuning [[Foundation Models]] with many free parameters does not catastrophically overfit on small downstream datasets.
-  - **Regularisation-free training**: practitioners at large-scale training runs ([[Large Language Models]], diffusion models) routinely observe that reducing explicit regularisation in the highly overparameterised regime improves or does not harm generalisation — benign overfitting is the theoretical justification.
+
+- **Understanding why large models do not need heavy regularisation**: benign overfitting theory explains why [[Large Language Models]] trained with relatively modest explicit regularisation on enormous datasets generalise across diverse tasks without overfitting in the classical sense. The overparameterisation provides the spectral structure needed for noise absorption.
+- **Explaining [[Benchmarks|benchmark]] evaluation anomalies**: models that appear to overfit training data (zero training loss, low validation loss) can still score well on downstream [[Benchmarks]], which was puzzling before benign overfitting theory. The theory predicts when this is expected.
+- **Model capacity decisions**: understanding the interpolation threshold informs decisions about when increasing model capacity helps versus hurts — directly relevant to [[Neural Architecture Search]] and [[Hyperparameter Tuning]].
+- **Calibration and uncertainty**: benign overfitting models interpolate training labels including noisy ones, which has implications for [[Calibration]] of predicted probabilities — interpolating models may be overconfident on training-similar inputs.
+- **[[Transfer Learning]] and fine-tuning**: the implicit bias of gradient descent toward low-norm solutions in overparameterised settings provides theoretical grounding for why fine-tuning [[Foundation Models]] with many free parameters does not catastrophically overfit on small downstream datasets.
+- **Regularisation-free training**: practitioners at large-scale training runs ([[Large Language Models]], diffusion models) routinely observe that reducing explicit regularisation in the highly overparameterised regime improves or does not harm generalisation — benign overfitting is the theoretical justification.
 
   ## Historical Development
   The study of benign overfitting is best understood as a theoretical reckoning with an empirical fact: that overparameterised deep learning models generalise far better than classical theory predicts. Tracing the intellectual lineage from classical bias-variance theory through the empirical anomalies of the 2010s to the formal proofs of the 2020s reveals a paradigm shift in how the field understands the relationship between model complexity, data fitting, and generalisation.
@@ -139,17 +141,17 @@ Benign overfitting is the phenomenon, observed in heavily overparameterised mode
   ## Academic Context
   The study of benign overfitting connects the statistical learning theory tradition (Vapnik and Chervonenkis, 1971; Rademacher complexity; VC dimension) with modern deep learning practice through a series of landmark papers:
 
-  - **Belkin, Hsu, Ma, and Mandal (2019)** — "Reconciling modern machine-learning practice and the classical bias–variance trade-off" (PNAS 116(32):15849–15854). The seminal empirical and theoretical demonstration of double descent across a range of models. Introduced the term "interpolation threshold" and documented the two-regime structure: classical U-curve followed by descent in the overparameterised regime.
-  - **Bartlett, Montanari, and Sly (2020)** — "Benign overfitting in linear regression" (PNAS 117(48):30063–30070). Coined the term "benign overfitting" and provided the first rigorous proof: matching upper and lower bounds on the minimum-norm interpolator's test error under spectral conditions on the data covariance.
-  - **Belkin, Hsu, and Xu (2020)** — "Two models of double descent for weak features" (SIAM Journal on Mathematics of Data Science 2(4):1167–1180). Extended the analysis to random feature models.
-  - **Mei and Montanari (2019)** — "The generalisation error of random features regression: Precise asymptotics and the double descent curve" (Communications on Pure and Applied Mathematics). Derived the double descent curve in the random feature regression setting with precise asymptotics.
-  - **Cao, Chen, Belkin, and Gu (2022)** — "Benign overfitting in two-layer convolutional neural networks" (NeurIPS 2022, arXiv:2202.06526). Extended benign overfitting proofs from linear to two-layer convolutional networks.
-  - **Zhang, Bengio, Hardt, Recht, and Vinyals (2017)** — "Understanding deep learning requires rethinking generalisation" (ICLR 2017). The empirical observation that neural networks can memorise random labels yet still generalise on structured data that motivated the benign overfitting line of inquiry.
-  - **Frei, Chatterji, and Bartlett (2023)** — "Benign overfitting in linear classifiers and leaky ReLU networks from KKT conditions for margin maximisation" (arXiv:2303.01462, NeurIPS 2023 area). Proved benign overfitting for leaky ReLU networks through margin maximisation analysis.
-  - **Kou, Chen, Chen, and Gu (2023)** — "Benign overfitting for two-layer ReLU convolutional neural networks" (ICML 2023). Proved benign overfitting on noisy linear data for gradient descent trained two-layer ReLU CNNs.
-  - **Benign Overfitting in Token Selection of Attention Mechanism (2024)** (OpenReview H4UMsoQrdI). Extended the theory to the attention mechanism, showing that token selection achieves benign overfitting.
-  - **Deep Exploration of Epoch-wise Double Descent** (arXiv:2601.08316, 2025). Analysed signal separation and large activation effects causing epoch-wise benign overfitting in noisy data.
-  - **NeurIPS 2023 Tutorial — Reconsidering Overfitting in the Age of Overparameterised Models** (ETH Zurich, Statistical Machine Learning group). Comprehensive tutorial covering the state of the art in benign overfitting and double descent as of 2023.
+- **Belkin, Hsu, Ma, and Mandal (2019)** — "Reconciling modern machine-learning practice and the classical bias–variance trade-off" (PNAS 116(32):15849–15854). The seminal empirical and theoretical demonstration of double descent across a range of models. Introduced the term "interpolation threshold" and documented the two-regime structure: classical U-curve followed by descent in the overparameterised regime.
+- **Bartlett, Montanari, and Sly (2020)** — "Benign overfitting in linear regression" (PNAS 117(48):30063–30070). Coined the term "benign overfitting" and provided the first rigorous proof: matching upper and lower bounds on the minimum-norm interpolator's test error under spectral conditions on the data covariance.
+- **Belkin, Hsu, and Xu (2020)** — "Two models of double descent for weak features" (SIAM Journal on Mathematics of Data Science 2(4):1167–1180). Extended the analysis to random feature models.
+- **Mei and Montanari (2019)** — "The generalisation error of random features regression: Precise asymptotics and the double descent curve" (Communications on Pure and Applied Mathematics). Derived the double descent curve in the random feature regression setting with precise asymptotics.
+- **Cao, Chen, Belkin, and Gu (2022)** — "Benign overfitting in two-layer convolutional neural networks" (NeurIPS 2022, arXiv:2202.06526). Extended benign overfitting proofs from linear to two-layer convolutional networks.
+- **Zhang, Bengio, Hardt, Recht, and Vinyals (2017)** — "Understanding deep learning requires rethinking generalisation" (ICLR 2017). The empirical observation that neural networks can memorise random labels yet still generalise on structured data that motivated the benign overfitting line of inquiry.
+- **Frei, Chatterji, and Bartlett (2023)** — "Benign overfitting in linear classifiers and leaky ReLU networks from KKT conditions for margin maximisation" (arXiv:2303.01462, NeurIPS 2023 area). Proved benign overfitting for leaky ReLU networks through margin maximisation analysis.
+- **Kou, Chen, Chen, and Gu (2023)** — "Benign overfitting for two-layer ReLU convolutional neural networks" (ICML 2023). Proved benign overfitting on noisy linear data for gradient descent trained two-layer ReLU CNNs.
+- **Benign Overfitting in Token Selection of Attention Mechanism (2024)** (OpenReview H4UMsoQrdI). Extended the theory to the attention mechanism, showing that token selection achieves benign overfitting.
+- **Deep Exploration of Epoch-wise Double Descent** (arXiv:2601.08316, 2025). Analysed signal separation and large activation effects causing epoch-wise benign overfitting in noisy data.
+- **NeurIPS 2023 Tutorial — Reconsidering Overfitting in the Age of Overparameterised Models** (ETH Zurich, Statistical Machine Learning group). Comprehensive tutorial covering the state of the art in benign overfitting and double descent as of 2023.
 
   ## Current Landscape (2026)
   By 2026, benign overfitting is a well-established empirical phenomenon whose theoretical explanation remains an active research frontier. The linear regression case is theoretically settled (Bartlett et al., 2020); two-layer neural networks with specific architectures and data models have rigorous proofs (Cao et al., 2022; Frei et al., 2023; Kou et al., 2023); the attention mechanism has been analysed (2024). The outstanding open problems concern: (1) whether benign overfitting holds for deep networks beyond the lazy training regime; (2) the role of architecture, skip connections, and normalisation layers; (3) characterising the precise spectral and distributional conditions on real-world data under which benign overfitting is guaranteed.
@@ -162,13 +164,14 @@ Benign overfitting is the phenomenon, observed in heavily overparameterised mode
 
   ## UK Context
   The United Kingdom has contributed to the theoretical and applied study of benign overfitting primarily through:
-  - **University of Cambridge (Statistical Laboratory and Department of Engineering)**: Cambridge researchers have contributed to statistical learning theory and overparameterisation analysis; the Statistical Laboratory has a strong tradition in random matrix theory (relevant to the spectral analysis underlying benign overfitting proofs).
-  - **University of Edinburgh (School of Informatics)**: Edinburgh's machine learning group works on generalisation theory and optimisation dynamics; the EPCC supercomputer facility (£750M national investment, planned 2027) will support large-scale empirical studies of generalisation in overparameterised models.
-  - **University College London (Gatsby Computational Neuroscience Unit and Dept of Computer Science)**: UCL has strong research programmes in statistical learning theory and deep learning theory relevant to overparameterisation and implicit bias.
-  - **Alan Turing Institute**: the ATI's statistical machine learning programme supports theoretical research into generalisation and overparameterisation across UK universities.
-  - **DeepMind (London)**: as a frontier AI lab, DeepMind trains highly overparameterised models daily; benign overfitting theory directly informs its training and evaluation practices for Gemini and AlphaCode families.
-  - **Northern England**: Manchester (National AI Research Institute), Leeds (medical AI), Sheffield (NLP for manufacturing) conduct applied deep learning where understanding generalisation without heavy regularisation is practically important for data-scarce domains.
-  - **UK AISI**: the AI Security Institute's evaluations of frontier models implicitly depend on understanding benign overfitting — since frontier models are trained in the interpolating regime, their generalisation properties (and thus [[Benchmarks|benchmark]] performance) can only be interpreted through this theoretical lens.
+
+- **University of Cambridge (Statistical Laboratory and Department of Engineering)**: Cambridge researchers have contributed to statistical learning theory and overparameterisation analysis; the Statistical Laboratory has a strong tradition in random matrix theory (relevant to the spectral analysis underlying benign overfitting proofs).
+- **University of Edinburgh (School of Informatics)**: Edinburgh's machine learning group works on generalisation theory and optimisation dynamics; the EPCC supercomputer facility (£750M national investment, planned 2027) will support large-scale empirical studies of generalisation in overparameterised models.
+- **University College London (Gatsby Computational Neuroscience Unit and Dept of Computer Science)**: UCL has strong research programmes in statistical learning theory and deep learning theory relevant to overparameterisation and implicit bias.
+- **Alan Turing Institute**: the ATI's statistical machine learning programme supports theoretical research into generalisation and overparameterisation across UK universities.
+- **DeepMind (London)**: as a frontier AI lab, DeepMind trains highly overparameterised models daily; benign overfitting theory directly informs its training and evaluation practices for Gemini and AlphaCode families.
+- **Northern England**: Manchester (National AI Research Institute), Leeds (medical AI), Sheffield (NLP for manufacturing) conduct applied deep learning where understanding generalisation without heavy regularisation is practically important for data-scarce domains.
+- **UK AISI**: the AI Security Institute's evaluations of frontier models implicitly depend on understanding benign overfitting — since frontier models are trained in the interpolating regime, their generalisation properties (and thus [[Benchmarks|benchmark]] performance) can only be interpreted through this theoretical lens.
 
   ## Challenges and Open Problems
   Despite significant theoretical progress, benign overfitting raises a set of deep and practically consequential open problems that define the current research frontier:
@@ -227,16 +230,17 @@ Benign overfitting is the phenomenon, observed in heavily overparameterised mode
   **LoRA and efficient fine-tuning**: Low-Rank Adaptation (LoRA) restricts fine-tuning updates to a low-dimensional subspace by constraining the parameter update matrix to be the product of two low-rank matrices. This can be understood as explicitly constraining the optimisation to a low-rank manifold, trading some implicit bias (full gradient descent in parameter space) for parameterisation constraints. In the benign overfitting framework, LoRA effectively reduces the overparameterisation ratio for the fine-tuning stage while preserving the pretrained model's minimum-norm structure. Whether this reduction in overparameterisation helps or hurts depends on the downstream data's spectral structure: for small downstream datasets with low effective rank, LoRA's constraint may improve generalisation by preventing noise absorption in excessive directions; for larger datasets, full fine-tuning may be better.
 
   ## Key Terminology
-  - **Interpolation threshold**: the parameter count at which a model first achieves exactly zero training loss on the training set. At the interpolation threshold, the model just barely fits the data; adding more parameters pushes into the overparameterised regime.
-  - **Minimum-norm interpolator**: among all models that perfectly fit (interpolate) the training data, the minimum-norm interpolator is the one with the smallest parameter norm. Gradient descent on overparameterised linear models converges to the minimum L2-norm interpolator (the pseudoinverse solution), which is the central object of benign overfitting theory.
-  - **Effective rank**: a measure of how many dimensions of a covariance matrix contribute substantially to its variance — formally, the ratio (∑ᵢ σᵢ)²/(∑ᵢ σᵢ²) where σᵢ are eigenvalues. High effective rank (many dimensions with similar variance) is the key condition for benign overfitting: it ensures that noise is distributed across many weakly-contributing directions.
-  - **Implicit bias**: the inductive bias introduced by the optimiser (e.g. gradient descent) and architecture, which causes training to converge to a particular type of solution among all solutions that achieve zero training loss. Implicit bias toward minimum-norm or maximum-margin solutions is the mechanism through which benign overfitting occurs.
-  - **Double descent**: the phenomenon where test error follows a U-shape in the classical regime (few parameters), peaks at the interpolation threshold, then decreases again in the overparameterised regime — forming a double-descent curve. Benign overfitting is the explanation for why the second descent occurs.
-  - **Signal-to-noise ratio (SNR)**: the ratio of the magnitude of the true signal β* to the noise variance σ². High SNR is necessary for benign overfitting: if noise dominates, even the minimum-norm interpolator cannot recover the signal.
-  - **Grokking**: the delayed generalisation phenomenon in which a neural network first memorises training data (100% training accuracy, random test accuracy) then, after continued training, transitions to genuine generalisation (100% training accuracy, high test accuracy). Conceptually related to benign overfitting but operating as a temporal phase transition rather than a static property.
-  - **Lazy training / NTK regime**: the training regime, relevant for infinitely wide networks, where weights change so little during training that the network behaves like a linear kernel model. Benign overfitting results in the NTK regime are better understood than in the feature learning regime where weights change substantially.
-  - **Feature learning regime**: the training regime, relevant for practical finite-width networks, where weights change substantially during training, causing the network's internal representations to adapt to the data. Benign overfitting theory in the feature learning regime is less mature and is an active research frontier.
-  - **Overparameterisation ratio**: the ratio of parameters to data points (d/n in linear models). As this ratio grows beyond 1 (past the interpolation threshold), the model enters the overparameterised regime where benign overfitting can occur.
+
+- **Interpolation threshold**: the parameter count at which a model first achieves exactly zero training loss on the training set. At the interpolation threshold, the model just barely fits the data; adding more parameters pushes into the overparameterised regime.
+- **Minimum-norm interpolator**: among all models that perfectly fit (interpolate) the training data, the minimum-norm interpolator is the one with the smallest parameter norm. Gradient descent on overparameterised linear models converges to the minimum L2-norm interpolator (the pseudoinverse solution), which is the central object of benign overfitting theory.
+- **Effective rank**: a measure of how many dimensions of a covariance matrix contribute substantially to its variance — formally, the ratio (∑ᵢ σᵢ)²/(∑ᵢ σᵢ²) where σᵢ are eigenvalues. High effective rank (many dimensions with similar variance) is the key condition for benign overfitting: it ensures that noise is distributed across many weakly-contributing directions.
+- **Implicit bias**: the inductive bias introduced by the optimiser (e.g. gradient descent) and architecture, which causes training to converge to a particular type of solution among all solutions that achieve zero training loss. Implicit bias toward minimum-norm or maximum-margin solutions is the mechanism through which benign overfitting occurs.
+- **Double descent**: the phenomenon where test error follows a U-shape in the classical regime (few parameters), peaks at the interpolation threshold, then decreases again in the overparameterised regime — forming a double-descent curve. Benign overfitting is the explanation for why the second descent occurs.
+- **Signal-to-noise ratio (SNR)**: the ratio of the magnitude of the true signal β* to the noise variance σ². High SNR is necessary for benign overfitting: if noise dominates, even the minimum-norm interpolator cannot recover the signal.
+- **Grokking**: the delayed generalisation phenomenon in which a neural network first memorises training data (100% training accuracy, random test accuracy) then, after continued training, transitions to genuine generalisation (100% training accuracy, high test accuracy). Conceptually related to benign overfitting but operating as a temporal phase transition rather than a static property.
+- **Lazy training / NTK regime**: the training regime, relevant for infinitely wide networks, where weights change so little during training that the network behaves like a linear kernel model. Benign overfitting results in the NTK regime are better understood than in the feature learning regime where weights change substantially.
+- **Feature learning regime**: the training regime, relevant for practical finite-width networks, where weights change substantially during training, causing the network's internal representations to adapt to the data. Benign overfitting theory in the feature learning regime is less mature and is an active research frontier.
+- **Overparameterisation ratio**: the ratio of parameters to data points (d/n in linear models). As this ratio grows beyond 1 (past the interpolation threshold), the model enters the overparameterised regime where benign overfitting can occur.
 
   ## Safety and Governance Implications
   Benign overfitting, as a theoretical framework that explains why overparameterised models generalise without explicit regularisation, has increasingly important implications for the safety and governance of deployed AI systems. Regulators, safety researchers, and [[AI Governance]] frameworks are beginning to grapple with what benign overfitting means for the predictability, interpretability, and control of frontier AI systems:
@@ -252,13 +256,14 @@ Benign overfitting is the phenomenon, observed in heavily overparameterised mode
   **AISI evaluation of frontier models**: the UK AI Security Institute evaluates frontier AI systems including models trained in the deeply overparameterised regime. Understanding benign overfitting is relevant to AISI's evaluation work because: (1) models that achieve perfect or near-perfect performance on safety evaluation training sets may still exhibit the targeted safety properties if the conditions for benign overfitting hold; (2) conversely, models that appear well-calibrated on safety benchmarks due to benign overfitting may fail unexpectedly on out-of-distribution safety scenarios where the spectral conditions break down; (3) evaluation of memorisation and data reproduction (a privacy and safety concern) requires understanding the interpolation structure of the model's solution.
 
   ## Future Directions (2026-2030)
-  - **Deep network theory**: extending rigorous benign overfitting proofs from two-layer and linear networks to deep networks with realistic architectures (residual connections, layer normalisation, mixture-of-experts), which remain beyond current analytical techniques. Kernel-based and random feature approximations provide partial progress but do not capture the feature learning dynamics of practical deep networks.
-  - **Stochastic gradient descent beyond lazy training**: the minimum-norm interpolator analysis covers the NTK/lazy training regime; understanding benign overfitting in the feature learning regime — where representations change substantially during training — requires new theoretical tools beyond NTK analysis. Random matrix theory and mean-field theory are promising approaches being explored by groups at MIT, Princeton, and ETH Zurich.
-  - **Benign overfitting in reasoning models**: as [[Chain-of-Thought]] and [[Reinforcement Learning from Human Feedback]] training regimes produce models that over-optimise on training distributions, understanding when this is benign versus harmful to generalisation is a critical open question. Process reward models (PRMs) and verifiable reasoning tasks create new versions of the interpolation problem at the reasoning level.
-  - **Data distribution characterisation**: practical guidelines for when real-world text and multimodal data satisfies the spectral conditions for benign overfitting would directly inform model capacity decisions. Developing tools to estimate effective rank and signal-to-noise ratios from pre-training data statistics — and relating these to optimal model size — could refine the scaling law literature significantly.
-  - **Calibration and uncertainty in interpolating models**: benign overfitting models perfectly interpolate noisy training labels, raising questions about whether their confidence is well-calibrated. Bridging benign overfitting theory with [[Calibration]] research and uncertainty quantification (conformal prediction, Bayesian deep learning) is an emerging direction with direct safety relevance.
-  - **Catastrophic forgetting and continual learning**: whether benign overfitting provides any protection against catastrophic forgetting when models are continually updated on new data is an open question relevant to [[Foundation Models]] deployment. The minimum-norm interpolator's structure may make it particularly susceptible to forgetting since its solution is optimally compressed to the training distribution.
-  - **Regulatory implications**: as regulators demand interpretable and predictable AI behaviour, the conditions under which overfitting is benign versus harmful need to be characterised precisely — informing [[AI Governance]] frameworks, [[Model Governance]] standards, and safety cases for frontier AI deployment under the EU AI Act and UK AI legislation.
+
+- **Deep network theory**: extending rigorous benign overfitting proofs from two-layer and linear networks to deep networks with realistic architectures (residual connections, layer normalisation, mixture-of-experts), which remain beyond current analytical techniques. Kernel-based and random feature approximations provide partial progress but do not capture the feature learning dynamics of practical deep networks.
+- **Stochastic gradient descent beyond lazy training**: the minimum-norm interpolator analysis covers the NTK/lazy training regime; understanding benign overfitting in the feature learning regime — where representations change substantially during training — requires new theoretical tools beyond NTK analysis. Random matrix theory and mean-field theory are promising approaches being explored by groups at MIT, Princeton, and ETH Zurich.
+- **Benign overfitting in reasoning models**: as [[Chain-of-Thought]] and [[Reinforcement Learning from Human Feedback]] training regimes produce models that over-optimise on training distributions, understanding when this is benign versus harmful to generalisation is a critical open question. Process reward models (PRMs) and verifiable reasoning tasks create new versions of the interpolation problem at the reasoning level.
+- **Data distribution characterisation**: practical guidelines for when real-world text and multimodal data satisfies the spectral conditions for benign overfitting would directly inform model capacity decisions. Developing tools to estimate effective rank and signal-to-noise ratios from pre-training data statistics — and relating these to optimal model size — could refine the scaling law literature significantly.
+- **Calibration and uncertainty in interpolating models**: benign overfitting models perfectly interpolate noisy training labels, raising questions about whether their confidence is well-calibrated. Bridging benign overfitting theory with [[Calibration]] research and uncertainty quantification (conformal prediction, Bayesian deep learning) is an emerging direction with direct safety relevance.
+- **Catastrophic forgetting and continual learning**: whether benign overfitting provides any protection against catastrophic forgetting when models are continually updated on new data is an open question relevant to [[Foundation Models]] deployment. The minimum-norm interpolator's structure may make it particularly susceptible to forgetting since its solution is optimally compressed to the training distribution.
+- **Regulatory implications**: as regulators demand interpretable and predictable AI behaviour, the conditions under which overfitting is benign versus harmful need to be characterised precisely — informing [[AI Governance]] frameworks, [[Model Governance]] standards, and safety cases for frontier AI deployment under the EU AI Act and UK AI legislation.
 
   ## Research and Literature
   1. Belkin, M., Hsu, D., Ma, S., & Mandal, S. (2019). Reconciling modern machine-learning practice and the classical bias–variance trade-off. *PNAS*, 116(32), 15849–15854. https://doi.org/10.1073/pnas.1903070116
@@ -289,5 +294,5 @@ Benign overfitting is the phenomenon, observed in heavily overparameterised mode
   26. Bartlett, P. L., & Mendelson, S. (2002). Rademacher and Gaussian complexities: Risk bounds and structural results. *Journal of Machine Learning Research*, 3, 463–482.
   27. Srivastava, N., Hinton, G., Krizhevsky, A., Sutskever, I., & Salakhutdinov, R. (2014). Dropout: A simple way to prevent neural networks from overfitting. *Journal of Machine Learning Research*, 15(1), 1929–1958.
 
-- ### Provenance
+### Provenance
 

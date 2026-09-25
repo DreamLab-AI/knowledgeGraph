@@ -1,3 +1,2 @@
-
 Sticky Notes are digital equivalents of physical adhesive notes used on virtual whiteboards or collaboration surfaces to capture brief ideas, action items, or annotations. Multiple participants can add, move, and colour-code notes simultaneously, making them a lightweight tool for brainstorming and retrospectives in remote teams. They are widely supported in tools such as Miro, FigJam, and Microsoft Whiteboard.
 

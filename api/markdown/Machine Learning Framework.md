@@ -1,174 +1,194 @@
-
 Software libraries and development environments such as TensorFlow and PyTorch that provide tools, APIs, and abstractions for building, training, and deploying machine learning models; encompassing model definition, automatic differentiation, GPU-accelerated training, and production serving infrastructure.
 
-- ### Semantic Classification
+### Semantic Classification
 
-- ### Content
+### Content
 
-  ## Leading Frameworks (2024)
+## Leading Frameworks (2024)
 
-  ### TensorFlow
-  - Google Brain development
-  - Open-source ML framework
-  - Scalable architecture
-  - Production deployment
-  - Extensive ecosystem
+### TensorFlow
+
+- Google Brain development
+- Open-source ML framework
+- Scalable architecture
+- Production deployment
+- Extensive ecosystem
 
   #### TensorFlow Features
-  - TFX production pipelines
-  - TensorFlow Lite (mobile)
-  - TensorFlow.js (web)
-  - Strong documentation
-  - Enterprise support
+
+- TFX production pipelines
+- TensorFlow Lite (mobile)
+- TensorFlow.js (web)
+- Strong documentation
+- Enterprise support
 
   ### PyTorch
-  - Meta AI development
-  - Dynamic computation graph
-  - Research community favourite
-  - Python integration
-  - Flexible debugging
+
+- Meta AI development
+- Dynamic computation graph
+- Research community favourite
+- Python integration
+- Flexible debugging
 
   #### PyTorch Features
-  - TorchScript deployment
-  - PyTorch Lightning
-  - Hugging Face integration
-  - Real-time graph modification
-  - NumPy compatibility
+
+- TorchScript deployment
+- PyTorch Lightning
+- Hugging Face integration
+- Real-time graph modification
+- NumPy compatibility
 
   ## Framework Comparison
 
   ### Use Case Alignment
-  - TensorFlow: Production, mobile, Google Cloud
-  - PyTorch: Research, NLP, Generative AI
-  - Both: Deep learning, computer vision
-  - Community: Academia prefers PyTorch
-  - Enterprise: Both widely adopted
+
+- TensorFlow: Production, mobile, Google Cloud
+- PyTorch: Research, NLP, Generative AI
+- Both: Deep learning, computer vision
+- Community: Academia prefers PyTorch
+- Enterprise: Both widely adopted
 
   ### Performance Parity
-  - Single-machine GPU: Similar
-  - Model-dependent variations
-  - Optimisation settings impact
-  - 2024 consensus: Both highly optimised
-  - Framework gap narrowed
+
+- Single-machine GPU: Similar
+- Model-dependent variations
+- Optimisation settings impact
+- 2024 consensus: Both highly optimised
+- Framework gap narrowed
 
   ## Additional Frameworks
 
   ### Keras
-  - High-level API
-  - TensorFlow integration
-  - Beginner-friendly
-  - Rapid prototyping
-  - Multi-backend support
+
+- High-level API
+- TensorFlow integration
+- Beginner-friendly
+- Rapid prototyping
+- Multi-backend support
 
   ### JAX
-  - Google development
-  - Automatic differentiation
-  - XLA compilation
-  - NumPy-like interface
-  - Research applications
+
+- Google development
+- Automatic differentiation
+- XLA compilation
+- NumPy-like interface
+- Research applications
 
   ### Other Notable Frameworks
-  - MXNet (Apache)
-  - Caffe (Berkeley)
-  - Deeplearning4j (Java)
-  - CNTK (Microsoft)
-  - ONNX (interchange format)
+
+- MXNet (Apache)
+- Caffe (Berkeley)
+- Deeplearning4j (Java)
+- CNTK (Microsoft)
+- ONNX (interchange format)
 
   ## Metaverse Applications
 
   ### Content Generation
-  - 3D asset creation
-  - Environment synthesis
-  - Avatar generation
-  - Texture optimisation
-  - Scene composition
+
+- 3D asset creation
+- Environment synthesis
+- Avatar generation
+- Texture optimisation
+- Scene composition
 
   ### NPC Intelligence
-  - Behaviour learning
-  - Natural language processing
-  - Decision making
-  - Adaptive responses
-  - Personality modelling
+
+- Behaviour learning
+- Natural language processing
+- Decision making
+- Adaptive responses
+- Personality modelling
 
   ## Technical Capabilities
 
   ### Model Training
-  - GPU acceleration
-  - Distributed training
-  - Automatic batching
-  - Gradient computation
-  - Loss optimisation
+
+- GPU acceleration
+- Distributed training
+- Automatic batching
+- Gradient computation
+- Loss optimisation
 
   ### Model Deployment
-  - Serving infrastructure
-  - Edge deployment
-  - Mobile optimisation
-  - API creation
-  - Scaling management
+
+- Serving infrastructure
+- Edge deployment
+- Mobile optimisation
+- API creation
+- Scaling management
 
   ## Interoperability
 
   ### ONNX Format
-  - Cross-framework compatibility
-  - Model conversion
-  - Framework migration
-  - Deployment flexibility
-  - Standard representation
+
+- Cross-framework compatibility
+- Model conversion
+- Framework migration
+- Deployment flexibility
+- Standard representation
 
   ### Migration Paths
-  - TensorFlow to PyTorch
-  - PyTorch to TensorFlow
-  - Production transitions
-  - Research to deployment
-  - Legacy modernisation
+
+- TensorFlow to PyTorch
+- PyTorch to TensorFlow
+- Production transitions
+- Research to deployment
+- Legacy modernisation
 
   ## Development Workflow
 
   ### Experimentation
-  - Rapid iteration
-  - Hyperparameter tuning
-  - Architecture search
-  - Ablation studies
-  - Reproducibility
+
+- Rapid iteration
+- Hyperparameter tuning
+- Architecture search
+- Ablation studies
+- Reproducibility
 
   ### Production Pipeline
-  - Model versioning
-  - A/B testing
-  - Monitoring integration
-  - Rollback capability
-  - Performance tracking
+
+- Model versioning
+- A/B testing
+- Monitoring integration
+- Rollback capability
+- Performance tracking
 
   ## 2024 Trends
 
   ### Framework Evolution
-  - TensorFlow eager execution
-  - PyTorch graph deployment
-  - Convergent features
-  - Unified experiences
-  - Developer productivity
+
+- TensorFlow eager execution
+- PyTorch graph deployment
+- Convergent features
+- Unified experiences
+- Developer productivity
 
   ### Ecosystem Growth
-  - Pre-trained models
-  - Transfer learning
-  - Foundation models
-  - Fine-tuning tools
-  - Deployment solutions
+
+- Pre-trained models
+- Transfer learning
+- Foundation models
+- Fine-tuning tools
+- Deployment solutions
 
   ## Selection Criteria
 
   ### Project Requirements
-  - Team expertise
-  - Deployment target
-  - Performance needs
-  - Ecosystem tools
-  - Community support
+
+- Team expertise
+- Deployment target
+- Performance needs
+- Ecosystem tools
+- Community support
 
   ### Learning Considerations
-  - Documentation quality
-  - Tutorial availability
-  - Community size
-  - Job market demand
-  - Future viability
 
-- ### Provenance
+- Documentation quality
+- Tutorial availability
+- Community size
+- Job market demand
+- Future viability
+
+### Provenance
 

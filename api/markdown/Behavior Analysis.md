@@ -1,4 +1,3 @@
-
 Behavior Analysis is an AI and machine learning technique concerned with the systematic observation, modelling, and interpretation of patterns in entity actions — whether human users, software agents, or autonomous systems — in order to detect anomalies, predict future actions, or classify intent. It combines statistical modelling, sequence analysis, and supervised or unsupervised learning to extract actionable intelligence from behavioural streams. Typical applications include cybersecurity threat detection, user experience optimisation, game AI design, and fraud prevention.
 
 ### Definition
@@ -19,7 +18,7 @@ In cybersecurity, user and entity behaviour analytics (UEBA) systems apply behav
 
 In gaming and virtual environments, behaviour analysis underpins adaptive AI opponents that model player strategies, anti-cheat systems that detect statistical anomalies in player performance, and content recommendation engines that personalise experience based on observed engagement patterns. The technique also raises important ethical questions around surveillance and profiling: the same methods that detect cheating or fraud can be used to build detailed behavioural profiles of users without their knowledge. Robust deployment of behavior analysis therefore requires transparency mechanisms, explainability tooling, and clear governance frameworks constraining how behavioural data is collected, retained, and used.
 
-- ### Semantic Classification
+### Semantic Classification
 
-- ### Provenance
+### Provenance
 

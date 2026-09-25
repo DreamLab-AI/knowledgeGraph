@@ -1,158 +1,161 @@
-
 AutoGen is an open-source multi-agent conversation framework originating from Microsoft Research that defines conversable agents — autonomous entities backed by large language models, tools, or human inputs — which coordinate through structured message exchange to decompose and complete complex tasks. The framework introduced the conversable-agent abstraction as a unified primitive supporting LLM-powered reasoning, code execution, and adaptive human participation within a single coherent programming model. Forked in 2025 as the community-governed AG2 project and simultaneously merged by Microsoft into the broader Microsoft Agent Framework combining AutoGen agent abstractions with Semantic Kernel enterprise features.
 
-- ### Semantic Classification
+### Semantic Classification
 
-- ### Content
-  ## Compositional Relationships (Components)
-      SubClassOf(ai:AutoGen
-        ObjectSomeValuesFrom(ai:hasPart ai:ConversableAgent))
-      SubClassOf(ai:AutoGen
-        ObjectSomeValuesFrom(ai:hasPart ai:GroupChat))
-      SubClassOf(ai:AutoGen
-        ObjectSomeValuesFrom(ai:hasPart ai:CodeExecutor))
-      SubClassOf(ai:AutoGen
-        ObjectSomeValuesFrom(ai:hasPart ai:Orchestration))
-      SubClassOf(ai:AutoGen
-        ObjectSomeValuesFrom(ai:hasPart ai:AgentMemory))
-      SubClassOf(ai:AutoGen
-        ObjectSomeValuesFrom(ai:hasPart ai:HumanInTheLoop))
-  ## Dependency Relationships
-      SubClassOf(ai:AutoGen
-        ObjectSomeValuesFrom(ai:requires ai:LargeLanguageModels))
-      SubClassOf(ai:AutoGen
-        ObjectSomeValuesFrom(ai:requires ai:ToolUse))
-      SubClassOf(ai:AutoGen
-        ObjectSomeValuesFrom(ai:requires ai:FunctionCalling))
-      SubClassOf(ai:AutoGen
-        ObjectSomeValuesFrom(ai:requires ai:ContextWindow))
-      SubClassOf(ai:AutoGen
-        ObjectSomeValuesFrom(ai:dependsOn ai:APIIntegration))
-      SubClassOf(ai:AutoGen
-        ObjectSomeValuesFrom(ai:dependsOn ai:ActorModel))
-  ## Capability Relationships
-      SubClassOf(ai:AutoGen
-        ObjectSomeValuesFrom(ai:enables ai:MultiAgentCoordination))
-      SubClassOf(ai:AutoGen
-        ObjectSomeValuesFrom(ai:enables ai:AgenticWorkflow))
-      SubClassOf(ai:AutoGen
-        ObjectSomeValuesFrom(ai:enables ai:AutonomousCoding))
-      SubClassOf(ai:AutoGen
-        ObjectSomeValuesFrom(ai:enables ai:TaskPlanning))
-      SubClassOf(ai:AutoGen
-        ObjectSomeValuesFrom(ai:enables ai:WorkflowAutomation))
-  ## Implementation Relationships
-      SubClassOf(ai:AutoGen
-        ObjectSomeValuesFrom(ai:implements ai:ReActPattern))
-      SubClassOf(ai:AutoGen
-        ObjectSomeValuesFrom(ai:implements ai:AgenticWorkflow))
-      SubClassOf(ai:AutoGen
-        ObjectSomeValuesFrom(ai:implements ai:MultiAgentSystems))
-  ## Reduction Relationships
-      SubClassOf(ai:AutoGen
-        ObjectSomeValuesFrom(ai:reducesTo ai:ConversableAgent))
-      SubClassOf(ai:AutoGen
-        ObjectSomeValuesFrom(ai:reducesTo ai:GroupChat))
-      SubClassOf(ai:AutoGen
-        ObjectSomeValuesFrom(ai:reducesTo ai:LargeLanguageModels))
-  ## Support Relationships
-      SubClassOf(ai:AutoGen
-        ObjectSomeValuesFrom(ai:supports ai:HumanInTheLoop))
-      SubClassOf(ai:AutoGen
-        ObjectSomeValuesFrom(ai:supports ai:AISafety))
-      SubClassOf(ai:AutoGen
-        ObjectSomeValuesFrom(ai:supports ai:RetrievalAugmentedGeneration))
-      SubClassOf(ai:AutoGen
-        ObjectSomeValuesFrom(ai:supports ai:WorkflowAutomation))
-  ## Usage Relationships
-      SubClassOf(ai:AutoGen
-        ObjectSomeValuesFrom(ai:uses ai:ChainOfThought))
-      SubClassOf(ai:AutoGen
-        ObjectSomeValuesFrom(ai:uses ai:NaturalLanguageProcessing))
-      SubClassOf(ai:AutoGen
-        ObjectSomeValuesFrom(ai:uses ai:ModelContextProtocol))
-      SubClassOf(ai:AutoGen
-        ObjectSomeValuesFrom(ai:uses ai:ContextWindow))
-  ## Contrast Relationships
-      SubClassOf(ai:AutoGen
-        ObjectSomeValuesFrom(ai:contrastsWith ai:LangGraph))
-      SubClassOf(ai:AutoGen
-        ObjectSomeValuesFrom(ai:contrastsWith ai:CrewAI))
-      SubClassOf(ai:AutoGen
-        ObjectSomeValuesFrom(ai:contrastsWith ai:SingleAgentSystems))
-      SubClassOf(ai:AutoGen
-        ObjectSomeValuesFrom(ai:contrastsWith ai:OpenAIAgentsSDK))
+### Content
 
-  ## About
+## Compositional Relationships (Components)
+    SubClassOf(ai:AutoGen
+      ObjectSomeValuesFrom(ai:hasPart ai:ConversableAgent))
+    SubClassOf(ai:AutoGen
+      ObjectSomeValuesFrom(ai:hasPart ai:GroupChat))
+    SubClassOf(ai:AutoGen
+      ObjectSomeValuesFrom(ai:hasPart ai:CodeExecutor))
+    SubClassOf(ai:AutoGen
+      ObjectSomeValuesFrom(ai:hasPart ai:Orchestration))
+    SubClassOf(ai:AutoGen
+      ObjectSomeValuesFrom(ai:hasPart ai:AgentMemory))
+    SubClassOf(ai:AutoGen
+      ObjectSomeValuesFrom(ai:hasPart ai:HumanInTheLoop))
+## Dependency Relationships
+    SubClassOf(ai:AutoGen
+      ObjectSomeValuesFrom(ai:requires ai:LargeLanguageModels))
+    SubClassOf(ai:AutoGen
+      ObjectSomeValuesFrom(ai:requires ai:ToolUse))
+    SubClassOf(ai:AutoGen
+      ObjectSomeValuesFrom(ai:requires ai:FunctionCalling))
+    SubClassOf(ai:AutoGen
+      ObjectSomeValuesFrom(ai:requires ai:ContextWindow))
+    SubClassOf(ai:AutoGen
+      ObjectSomeValuesFrom(ai:dependsOn ai:APIIntegration))
+    SubClassOf(ai:AutoGen
+      ObjectSomeValuesFrom(ai:dependsOn ai:ActorModel))
+## Capability Relationships
+    SubClassOf(ai:AutoGen
+      ObjectSomeValuesFrom(ai:enables ai:MultiAgentCoordination))
+    SubClassOf(ai:AutoGen
+      ObjectSomeValuesFrom(ai:enables ai:AgenticWorkflow))
+    SubClassOf(ai:AutoGen
+      ObjectSomeValuesFrom(ai:enables ai:AutonomousCoding))
+    SubClassOf(ai:AutoGen
+      ObjectSomeValuesFrom(ai:enables ai:TaskPlanning))
+    SubClassOf(ai:AutoGen
+      ObjectSomeValuesFrom(ai:enables ai:WorkflowAutomation))
+## Implementation Relationships
+    SubClassOf(ai:AutoGen
+      ObjectSomeValuesFrom(ai:implements ai:ReActPattern))
+    SubClassOf(ai:AutoGen
+      ObjectSomeValuesFrom(ai:implements ai:AgenticWorkflow))
+    SubClassOf(ai:AutoGen
+      ObjectSomeValuesFrom(ai:implements ai:MultiAgentSystems))
+## Reduction Relationships
+    SubClassOf(ai:AutoGen
+      ObjectSomeValuesFrom(ai:reducesTo ai:ConversableAgent))
+    SubClassOf(ai:AutoGen
+      ObjectSomeValuesFrom(ai:reducesTo ai:GroupChat))
+    SubClassOf(ai:AutoGen
+      ObjectSomeValuesFrom(ai:reducesTo ai:LargeLanguageModels))
+## Support Relationships
+    SubClassOf(ai:AutoGen
+      ObjectSomeValuesFrom(ai:supports ai:HumanInTheLoop))
+    SubClassOf(ai:AutoGen
+      ObjectSomeValuesFrom(ai:supports ai:AISafety))
+    SubClassOf(ai:AutoGen
+      ObjectSomeValuesFrom(ai:supports ai:RetrievalAugmentedGeneration))
+    SubClassOf(ai:AutoGen
+      ObjectSomeValuesFrom(ai:supports ai:WorkflowAutomation))
+## Usage Relationships
+    SubClassOf(ai:AutoGen
+      ObjectSomeValuesFrom(ai:uses ai:ChainOfThought))
+    SubClassOf(ai:AutoGen
+      ObjectSomeValuesFrom(ai:uses ai:NaturalLanguageProcessing))
+    SubClassOf(ai:AutoGen
+      ObjectSomeValuesFrom(ai:uses ai:ModelContextProtocol))
+    SubClassOf(ai:AutoGen
+      ObjectSomeValuesFrom(ai:uses ai:ContextWindow))
+## Contrast Relationships
+    SubClassOf(ai:AutoGen
+      ObjectSomeValuesFrom(ai:contrastsWith ai:LangGraph))
+    SubClassOf(ai:AutoGen
+      ObjectSomeValuesFrom(ai:contrastsWith ai:CrewAI))
+    SubClassOf(ai:AutoGen
+      ObjectSomeValuesFrom(ai:contrastsWith ai:SingleAgentSystems))
+    SubClassOf(ai:AutoGen
+      ObjectSomeValuesFrom(ai:contrastsWith ai:OpenAIAgentsSDK))
 
-  AutoGen emerged in 2023 from Microsoft Research as a direct response to the engineering friction of building reliable multi-agent systems with [[Large Language Models]]. Prior frameworks treated multi-agent coordination as a configuration problem — the developer would wire together chains of prompts, APIs, and deterministic functions, with each component playing a fixed producer or consumer role. AutoGen's foundational insight was that if every participant in a multi-agent pipeline is itself a conversable entity — capable of generating, receiving, and responding to messages using its own reasoning process — the pipeline topology becomes a property of the conversation rather than a property of the framework's wiring. This shift from topological composition to conversational composition produced three immediate engineering advantages: agents can be added to, removed from, or reconfigured within a conversation at runtime; human participants can be inserted at arbitrary points without framework-level modifications; and the conversation log becomes a self-documenting audit trail of multi-agent reasoning rather than an opaque sequence of function calls.
+## About
 
-  The foundational paper (Wu et al., arXiv:2308.08155) demonstrated AutoGen across six benchmark application domains: mathematics (multi-step problem solving with code verification), coding (multi-turn code generation and execution with critic feedback), question answering (retrieval-augmented reasoning), operations research (constraint optimisation with tool use), online decision-making (web interaction tasks), and entertainment (role-play and creative writing). In all six domains, the AutoGen multi-agent configuration outperformed single-agent baselines, with the mathematics and coding domains showing the largest margins: 60% relative improvement over GPT-4 alone on the MATH dataset when augmenting with a code executor and critic agent, and 69.7% pass@1 on HumanEval coding benchmarks versus 67.0% for single-agent GPT-4. These results established that structured multi-agent conversation was not merely an architectural novelty but a measurable performance lever even on tasks where frontier [[Large Language Models]] already performed well.
+AutoGen emerged in 2023 from Microsoft Research as a direct response to the engineering friction of building reliable multi-agent systems with [[Large Language Models]]. Prior frameworks treated multi-agent coordination as a configuration problem — the developer would wire together chains of prompts, APIs, and deterministic functions, with each component playing a fixed producer or consumer role. AutoGen's foundational insight was that if every participant in a multi-agent pipeline is itself a conversable entity — capable of generating, receiving, and responding to messages using its own reasoning process — the pipeline topology becomes a property of the conversation rather than a property of the framework's wiring. This shift from topological composition to conversational composition produced three immediate engineering advantages: agents can be added to, removed from, or reconfigured within a conversation at runtime; human participants can be inserted at arbitrary points without framework-level modifications; and the conversation log becomes a self-documenting audit trail of multi-agent reasoning rather than an opaque sequence of function calls.
 
-  The framework's architecture centres on the ConversableAgent class, which implements a standardised messaging interface: every agent exposes a `generate_reply` method that accepts a conversation history and returns a message. The message may contain natural language, structured data, code blocks for execution, or special control tokens that trigger framework-level actions (terminating the conversation, routing to a specific agent, requesting human input). Two-agent chats — the simplest composition pattern — pair an AssistantAgent (LLM-backed) with a UserProxyAgent (human or automated), with the UserProxy automatically executing code emitted by the assistant and feeding results back. This simple two-agent pattern, which requires only a handful of lines of Python, covers the majority of practical single-task automation scenarios and was the entry point through which most practitioners first encountered AutoGen. Group chats extend this to three or more agents with a GroupChatManager selecting the next speaker via a configurable strategy (round-robin, LLM-based selection, custom selector logic), enabling the planner-coder-critic patterns that become necessary for complex multi-step tasks.
+The foundational paper (Wu et al., arXiv:2308.08155) demonstrated AutoGen across six benchmark application domains: mathematics (multi-step problem solving with code verification), coding (multi-turn code generation and execution with critic feedback), question answering (retrieval-augmented reasoning), operations research (constraint optimisation with tool use), online decision-making (web interaction tasks), and entertainment (role-play and creative writing). In all six domains, the AutoGen multi-agent configuration outperformed single-agent baselines, with the mathematics and coding domains showing the largest margins: 60% relative improvement over GPT-4 alone on the MATH dataset when augmenting with a code executor and critic agent, and 69.7% pass@1 on HumanEval coding benchmarks versus 67.0% for single-agent GPT-4. These results established that structured multi-agent conversation was not merely an architectural novelty but a measurable performance lever even on tasks where frontier [[Large Language Models]] already performed well.
 
-  ## Components / Architecture
+The framework's architecture centres on the ConversableAgent class, which implements a standardised messaging interface: every agent exposes a `generate_reply` method that accepts a conversation history and returns a message. The message may contain natural language, structured data, code blocks for execution, or special control tokens that trigger framework-level actions (terminating the conversation, routing to a specific agent, requesting human input). Two-agent chats — the simplest composition pattern — pair an AssistantAgent (LLM-backed) with a UserProxyAgent (human or automated), with the UserProxy automatically executing code emitted by the assistant and feeding results back. This simple two-agent pattern, which requires only a handful of lines of Python, covers the majority of practical single-task automation scenarios and was the entry point through which most practitioners first encountered AutoGen. Group chats extend this to three or more agents with a GroupChatManager selecting the next speaker via a configurable strategy (round-robin, LLM-based selection, custom selector logic), enabling the planner-coder-critic patterns that become necessary for complex multi-step tasks.
 
-  **ConversableAgent** — the base abstraction for every participant in an AutoGen system. A ConversableAgent maintains a system prompt defining its role and capabilities, a list of registered tools or functions it can invoke, a conversation history buffer, and a configurable human-input mode (ALWAYS, NEVER, or TERMINATE). The agent's `generate_reply` method dispatches to a configured LLM backend, a function executor, or a human input prompt depending on the incoming message and configuration. All other agent types in AutoGen are specialisations of ConversableAgent: AssistantAgent (LLM-backed, code generation focused), UserProxyAgent (human or automated proxy, code execution focused), and application-specific custom agents.
+## Components / Architecture
 
-  **GroupChat and GroupChatManager** — the primary multi-agent coordination primitive. A GroupChat instance holds a list of participating agents and a shared conversation history; the GroupChatManager selects the next speaker using one of three built-in strategies: round-robin (for pipelines), auto (LLM-based dynamic selection from eligible agents), or a user-supplied callable. The AG2 v0.9 release (April 2025) consolidated previously separate swarm and group-chat primitives into a unified extensible GroupChat architecture with support for swarm-style handoffs within the group-chat framework, eliminating the need to choose an orchestration pattern at the framework level rather than at the application level. The v0.9 release also introduced context variables — typed shared state accessible to all agents in a group chat — enabling agents to read and write structured data without passing it through natural-language messages.
+**ConversableAgent** — the base abstraction for every participant in an AutoGen system. A ConversableAgent maintains a system prompt defining its role and capabilities, a list of registered tools or functions it can invoke, a conversation history buffer, and a configurable human-input mode (ALWAYS, NEVER, or TERMINATE). The agent's `generate_reply` method dispatches to a configured LLM backend, a function executor, or a human input prompt depending on the incoming message and configuration. All other agent types in AutoGen are specialisations of ConversableAgent: AssistantAgent (LLM-backed, code generation focused), UserProxyAgent (human or automated proxy, code execution focused), and application-specific custom agents.
 
-  **Code Executor** — the component responsible for executing code emitted by LLM-backed agents in a sandboxed environment and returning stdout, stderr, and exit codes as subsequent messages in the conversation. AutoGen supports Docker-based execution (isolated container environment per conversation), local subprocesses with configurable working directories, and Jupyter kernel execution for interactive data analysis. Code execution is the feature most responsible for AutoGen's strong performance on coding and mathematics benchmarks: rather than relying on the LLM to compute results in its forward pass, the code executor grounds arithmetic, data manipulation, and algorithm execution in a deterministic runtime, dramatically reducing hallucination on quantitative tasks. The AG2 2025 Shell tool integration with OpenAI's Responses API additionally enables agents to execute shell commands directly, enabling complete DevOps pipeline orchestration within a single agent workflow.
+**GroupChat and GroupChatManager** — the primary multi-agent coordination primitive. A GroupChat instance holds a list of participating agents and a shared conversation history; the GroupChatManager selects the next speaker using one of three built-in strategies: round-robin (for pipelines), auto (LLM-based dynamic selection from eligible agents), or a user-supplied callable. The AG2 v0.9 release (April 2025) consolidated previously separate swarm and group-chat primitives into a unified extensible GroupChat architecture with support for swarm-style handoffs within the group-chat framework, eliminating the need to choose an orchestration pattern at the framework level rather than at the application level. The v0.9 release also introduced context variables — typed shared state accessible to all agents in a group chat — enabling agents to read and write structured data without passing it through natural-language messages.
 
-  **Tool Registry and [[Function Calling]]** — AutoGen integrates with the JSON-schema function-calling conventions of all major LLM providers (OpenAI, Anthropic, Google), allowing agents to invoke registered Python functions as structured tool calls rather than emitting ad-hoc code. Tools are registered on agents with type-annotated signatures, and the framework handles schema generation, call dispatch, result formatting, and conversation continuation. In 2025, AutoGen added first-class [[Model Context Protocol]] support, enabling agents to discover and invoke MCP-registered tools from any compatible server, dramatically expanding the tool ecosystem available to AutoGen-orchestrated agents.
+**Code Executor** — the component responsible for executing code emitted by LLM-backed agents in a sandboxed environment and returning stdout, stderr, and exit codes as subsequent messages in the conversation. AutoGen supports Docker-based execution (isolated container environment per conversation), local subprocesses with configurable working directories, and Jupyter kernel execution for interactive data analysis. Code execution is the feature most responsible for AutoGen's strong performance on coding and mathematics benchmarks: rather than relying on the LLM to compute results in its forward pass, the code executor grounds arithmetic, data manipulation, and algorithm execution in a deterministic runtime, dramatically reducing hallucination on quantitative tasks. The AG2 2025 Shell tool integration with OpenAI's Responses API additionally enables agents to execute shell commands directly, enabling complete DevOps pipeline orchestration within a single agent workflow.
 
-  **[[Agent Memory]] and Context Management** — AutoGen's conversation history is the primary agent memory mechanism: all prior messages are available to each agent's `generate_reply` call, enabling agents to track multi-turn context, refer back to earlier results, and maintain coherent task state across many steps. For tasks that exceed the [[Context Window]] of the backing LLM, AutoGen supports configurable conversation summarisation (compressing older turns into a summary message) and [[Retrieval-Augmented Generation]] integration for persistent external memory. Structured context variables (introduced in v0.9) provide a typed shared memory outside the conversation thread for data that must be maintained with structure fidelity.
+**Tool Registry and [[Function Calling]]** — AutoGen integrates with the JSON-schema function-calling conventions of all major LLM providers (OpenAI, Anthropic, Google), allowing agents to invoke registered Python functions as structured tool calls rather than emitting ad-hoc code. Tools are registered on agents with type-annotated signatures, and the framework handles schema generation, call dispatch, result formatting, and conversation continuation. In 2025, AutoGen added first-class [[Model Context Protocol]] support, enabling agents to discover and invoke MCP-registered tools from any compatible server, dramatically expanding the tool ecosystem available to AutoGen-orchestrated agents.
 
-  **Event-Driven Architecture (AutoGen 0.4 / AG2 v0.5+)** — the 0.4 rewrite introduced an [[Actor Model]]-based distributed execution substrate where each agent is a stateful actor that processes incoming messages asynchronously, maintains its own message queue, and can be deployed across distributed infrastructure. This architecture enables horizontal scaling of individual agent types, persistent agents that run indefinitely processing task requests from a queue, and cross-language agent interoperability (Python and .NET agents in the same multi-agent system). The event-driven design is particularly significant for enterprise deployments where [[Orchestration]] of long-running agentic tasks must be decoupled from single-process lifetime and must survive infrastructure failures.
+**[[Agent Memory]] and Context Management** — AutoGen's conversation history is the primary agent memory mechanism: all prior messages are available to each agent's `generate_reply` call, enabling agents to track multi-turn context, refer back to earlier results, and maintain coherent task state across many steps. For tasks that exceed the [[Context Window]] of the backing LLM, AutoGen supports configurable conversation summarisation (compressing older turns into a summary message) and [[Retrieval-Augmented Generation]] integration for persistent external memory. Structured context variables (introduced in v0.9) provide a typed shared memory outside the conversation thread for data that must be maintained with structure fidelity.
 
-  ## Use Cases / Major Families
+**Event-Driven Architecture (AutoGen 0.4 / AG2 v0.5+)** — the 0.4 rewrite introduced an [[Actor Model]]-based distributed execution substrate where each agent is a stateful actor that processes incoming messages asynchronously, maintains its own message queue, and can be deployed across distributed infrastructure. This architecture enables horizontal scaling of individual agent types, persistent agents that run indefinitely processing task requests from a queue, and cross-language agent interoperability (Python and .NET agents in the same multi-agent system). The event-driven design is particularly significant for enterprise deployments where [[Orchestration]] of long-running agentic tasks must be decoupled from single-process lifetime and must survive infrastructure failures.
 
-  **Autonomous Software Engineering** — AutoGen's most benchmarked application domain. Planner-coder-tester-critic four-agent configurations handle requirements decomposition, code generation, test execution, failure analysis, and iterative refinement within a single conversation. AutoGen-based agents contributed to state-of-the-art results on the [[SWE-bench]] benchmark (real GitHub issue resolution), demonstrating that conversational multi-agent coordination with code execution enables qualitatively better [[Autonomous Coding]] than single-pass code generation. The [[Software Engineering]] pipeline pattern — where an AssistantAgent generates code, a UserProxyAgent executes it and returns results, and the AssistantAgent iterates — is the canonical two-agent AutoGen deployment and the pattern documented in the original paper.
+## Use Cases / Major Families
 
-  **Scientific Research Workflows** — AutoGen has been applied to scientific domains including cosmological parameter inference (agents orchestrating code generation, [[Retrieval-Augmented Generation]]-based literature retrieval, and automated result verification), drug discovery literature synthesis, and clinical trial data analysis. The framework's ability to integrate specialist agents for domain knowledge (bio-chemistry expert agent), quantitative computation (code executor agent), and quality checking (critic agent) enables research automation workflows that would require weeks of human effort per cycle to complete in hours.
+**Autonomous Software Engineering** — AutoGen's most benchmarked application domain. Planner-coder-tester-critic four-agent configurations handle requirements decomposition, code generation, test execution, failure analysis, and iterative refinement within a single conversation. AutoGen-based agents contributed to state-of-the-art results on the [[SWE-bench]] benchmark (real GitHub issue resolution), demonstrating that conversational multi-agent coordination with code execution enables qualitatively better [[Autonomous Coding]] than single-pass code generation. The [[Software Engineering]] pipeline pattern — where an AssistantAgent generates code, a UserProxyAgent executes it and returns results, and the AssistantAgent iterates — is the canonical two-agent AutoGen deployment and the pattern documented in the original paper.
 
-  **Enterprise Data and Analytics Automation** — multi-agent pipelines where a planner agent decomposes analytical tasks, data-retrieval agents query databases and APIs, computation agents execute statistical analysis code, and synthesis agents assemble results into structured reports. The structured output and code execution capabilities make AutoGen particularly well-suited to replacing human analysts on routine quantitative reporting tasks where the output format is known but the specific data pathway requires adaptive reasoning.
+**Scientific Research Workflows** — AutoGen has been applied to scientific domains including cosmological parameter inference (agents orchestrating code generation, [[Retrieval-Augmented Generation]]-based literature retrieval, and automated result verification), drug discovery literature synthesis, and clinical trial data analysis. The framework's ability to integrate specialist agents for domain knowledge (bio-chemistry expert agent), quantitative computation (code executor agent), and quality checking (critic agent) enables research automation workflows that would require weeks of human effort per cycle to complete in hours.
 
-  **Conversational Product and Customer Service Agents** — AutoGen's group-chat pattern enables sophisticated multi-turn customer service deployments where specialist agents handle distinct query categories (billing, technical support, account management) within a coordinated conversation, with a routing agent selecting the appropriate specialist and a summary agent maintaining conversation continuity across handoffs. [[Human-in-the-Loop]] configuration allows seamless escalation to human agents when confidence falls below threshold.
+**Enterprise Data and Analytics Automation** — multi-agent pipelines where a planner agent decomposes analytical tasks, data-retrieval agents query databases and APIs, computation agents execute statistical analysis code, and synthesis agents assemble results into structured reports. The structured output and code execution capabilities make AutoGen particularly well-suited to replacing human analysts on routine quantitative reporting tasks where the output format is known but the specific data pathway requires adaptive reasoning.
 
-  **Multi-Modal Research and Creative Pipelines** — AutoGen's extensible agent model supports non-textual modalities through tool registrations: image analysis agents call vision APIs, audio transcription agents call speech-to-text APIs, and document parsing agents handle PDF extraction, all feeding results into the shared conversation thread. This enables multi-modal pipelines for tasks such as automated document review (combining OCR, layout analysis, and semantic extraction agents), multimedia content analysis, and design critique (vision model agent + design expert agent + iteration agent).
+**Conversational Product and Customer Service Agents** — AutoGen's group-chat pattern enables sophisticated multi-turn customer service deployments where specialist agents handle distinct query categories (billing, technical support, account management) within a coordinated conversation, with a routing agent selecting the appropriate specialist and a summary agent maintaining conversation continuity across handoffs. [[Human-in-the-Loop]] configuration allows seamless escalation to human agents when confidence falls below threshold.
 
-  ## Academic Context
+**Multi-Modal Research and Creative Pipelines** — AutoGen's extensible agent model supports non-textual modalities through tool registrations: image analysis agents call vision APIs, audio transcription agents call speech-to-text APIs, and document parsing agents handle PDF extraction, all feeding results into the shared conversation thread. This enables multi-modal pipelines for tasks such as automated document review (combining OCR, layout analysis, and semantic extraction agents), multimedia content analysis, and design critique (vision model agent + design expert agent + iteration agent).
 
-  AutoGen emerged from Microsoft Research's collaborative AI group and was presented as part of the broader wave of agentic AI frameworks that emerged alongside ReAct (Yao et al., 2022), Toolformer (Schick et al., 2023), and the availability of reliable [[Function Calling]] APIs from OpenAI and Anthropic. The foundational paper (Wu, Bansal, Zhang, Wu, Li, Zhu, Jiang, Zhang, Wang, 2023; arXiv:2308.08155) introduced and evaluated the multi-agent conversation paradigm, distinguishing AutoGen from earlier sequential pipeline frameworks (LangChain) and role-assignment frameworks ([[MetaGPT]]) through its flexible conversational topology model. The paper was among the most cited AI papers of 2023–2024, accumulating over 4,000 citations within the first year, and triggered substantial follow-on work characterising optimal multi-agent conversation patterns, failure modes, and comparison studies across frameworks.
+## Academic Context
 
-  The AutoGen research group at Microsoft published several significant follow-on works. "EcoAssistant: Using LLM Assistant More Affordably and Accurately" (Zhang et al., 2023) demonstrated cost-efficient model-cascade configurations within AutoGen where simpler tasks route to cheaper models and complex tasks escalate to frontier models. "CAMEL: Communicative Agents for 'Mind' Exploration of Large Language Model Society" provided a related independently developed framework whose comparison with AutoGen illuminated the specific advantages of AutoGen's human-proxy design. "AgentCoder" (Huang et al., 2023) demonstrated specialised AutoGen configurations for competitive programming that achieved state-of-the-art performance on LeetCode-Hard problems through a programmer-test-designer-executor agent triplet configuration. The "MathChat" application study showed that AutoGen's conversational code execution pattern achieved 89.9% on the AMC 2022 competition relative to GPT-4 baseline of 67%, a 33% relative improvement attributable entirely to structured code execution and iterative correction within the conversation framework.
+AutoGen emerged from Microsoft Research's collaborative AI group and was presented as part of the broader wave of agentic AI frameworks that emerged alongside ReAct (Yao et al., 2022), Toolformer (Schick et al., 2023), and the availability of reliable [[Function Calling]] APIs from OpenAI and Anthropic. The foundational paper (Wu, Bansal, Zhang, Wu, Li, Zhu, Jiang, Zhang, Wang, 2023; arXiv:2308.08155) introduced and evaluated the multi-agent conversation paradigm, distinguishing AutoGen from earlier sequential pipeline frameworks (LangChain) and role-assignment frameworks ([[MetaGPT]]) through its flexible conversational topology model. The paper was among the most cited AI papers of 2023–2024, accumulating over 4,000 citations within the first year, and triggered substantial follow-on work characterising optimal multi-agent conversation patterns, failure modes, and comparison studies across frameworks.
 
-  The framework's research significance extends beyond its direct performance results to its role as an experimental platform for studying multi-agent AI behaviour. AutoGen conversations are fully loggable and replayable, enabling systematic study of failure modes, conversation topology effects, and agent interaction patterns. Research from the AutoGen team on "optimal agent count" found that performance on most tasks plateaus or decreases beyond three to five agents, due to coordination overhead and context saturation — a result with significant practical implications for production deployment design.
+The AutoGen research group at Microsoft published several significant follow-on works. "EcoAssistant: Using LLM Assistant More Affordably and Accurately" (Zhang et al., 2023) demonstrated cost-efficient model-cascade configurations within AutoGen where simpler tasks route to cheaper models and complex tasks escalate to frontier models. "CAMEL: Communicative Agents for 'Mind' Exploration of Large Language Model Society" provided a related independently developed framework whose comparison with AutoGen illuminated the specific advantages of AutoGen's human-proxy design. "AgentCoder" (Huang et al., 2023) demonstrated specialised AutoGen configurations for competitive programming that achieved state-of-the-art performance on LeetCode-Hard problems through a programmer-test-designer-executor agent triplet configuration. The "MathChat" application study showed that AutoGen's conversational code execution pattern achieved 89.9% on the AMC 2022 competition relative to GPT-4 baseline of 67%, a 33% relative improvement attributable entirely to structured code execution and iterative correction within the conversation framework.
 
-  ## Current Landscape (2026)
+The framework's research significance extends beyond its direct performance results to its role as an experimental platform for studying multi-agent AI behaviour. AutoGen conversations are fully loggable and replayable, enabling systematic study of failure modes, conversation topology effects, and agent interaction patterns. Research from the AutoGen team on "optimal agent count" found that performance on most tasks plateaus or decreases beyond three to five agents, due to coordination overhead and context saturation — a result with significant practical implications for production deployment design.
 
-  The AutoGen/AG2 ecosystem in 2026 is bifurcated between two development paths that share a common intellectual heritage but have diverged in governance, architecture, and target use cases. The community-governed AG2 project (maintained at github.com/ag2ai/ag2 with over 40,000 GitHub stars by mid-2026) prioritises backward compatibility with AutoGen 0.2 patterns, making it the preferred migration path for teams with existing AutoGen deployments. AG2 v0.9 (April 2025) introduced the unified Group Chat architecture that consolidated swarm, group-chat, and sequential-chat primitives, context variables for typed shared state, and enhanced support for [[Model Context Protocol]] tool integration. AG2 Beta (late 2025) further added streaming responses, dependency injection for agent configuration, typed tools with Pydantic schema validation, and first-class test utilities — addressing the production observability gaps that had been a persistent critique of the AutoGen 0.2 architecture.
+## Current Landscape (2026)
 
-  Microsoft's path — now branded as the Microsoft Agent Framework (public preview, 2025) — combines AutoGen's conversable-agent model with [[Semantic Kernel]]'s enterprise features: session-based state management, middleware pipeline for authentication and logging, plugin architecture for tool registration, and telemetry integration with Azure Monitor and OpenTelemetry. The Microsoft Agent Framework adds graph-based workflow definition for explicit multi-agent [[Orchestration]] topologies, enabling AutoGen-style conversational coordination within explicitly specified agent graphs that can be visualised, versioned, and deployed as Azure AI services. Azure AI Foundry Agent Service reached general availability in May 2025, providing managed hosting for AutoGen-compatible agents with enterprise SLA, built-in audit logging, and [[Microsoft Azure]] identity integration.
+The AutoGen/AG2 ecosystem in 2026 is bifurcated between two development paths that share a common intellectual heritage but have diverged in governance, architecture, and target use cases. The community-governed AG2 project (maintained at github.com/ag2ai/ag2 with over 40,000 GitHub stars by mid-2026) prioritises backward compatibility with AutoGen 0.2 patterns, making it the preferred migration path for teams with existing AutoGen deployments. AG2 v0.9 (April 2025) introduced the unified Group Chat architecture that consolidated swarm, group-chat, and sequential-chat primitives, context variables for typed shared state, and enhanced support for [[Model Context Protocol]] tool integration. AG2 Beta (late 2025) further added streaming responses, dependency injection for agent configuration, typed tools with Pydantic schema validation, and first-class test utilities — addressing the production observability gaps that had been a persistent critique of the AutoGen 0.2 architecture.
 
-  In the broader [[Agent Frameworks]] competitive landscape, AutoGen occupies a distinct position as the "group-chat-native" framework. Where [[LangGraph]] expresses agent topologies as explicit directed state graphs (best suited to workflows with well-defined branching conditions), and [[CrewAI]] assigns human-analogous role personas to agents (best suited to workflows where role specialisation is the primary coordination mechanism), AutoGen's group-chat metaphor is best suited to tasks where the optimal agent interaction sequence cannot be predetermined and must emerge from the conversation itself. This makes AutoGen particularly strong in research, debugging, and exploratory analysis workflows, and relatively less well-suited to high-volume production pipelines where deterministic routing and explicit audit trails are paramount requirements. The June 2025 framework adoption survey found AutoGen used by 34% of production multi-agent deployments, behind [[LangGraph]] (58%) but ahead of [[CrewAI]] (31%) and [[OpenAI Agents SDK]] (28%).
+Microsoft's path — now branded as the Microsoft Agent Framework (public preview, 2025) — combines AutoGen's conversable-agent model with [[Semantic Kernel]]'s enterprise features: session-based state management, middleware pipeline for authentication and logging, plugin architecture for tool registration, and telemetry integration with Azure Monitor and OpenTelemetry. The Microsoft Agent Framework adds graph-based workflow definition for explicit multi-agent [[Orchestration]] topologies, enabling AutoGen-style conversational coordination within explicitly specified agent graphs that can be visualised, versioned, and deployed as Azure AI services. Azure AI Foundry Agent Service reached general availability in May 2025, providing managed hosting for AutoGen-compatible agents with enterprise SLA, built-in audit logging, and [[Microsoft Azure]] identity integration.
 
-  ## UK Context
+In the broader [[Agent Frameworks]] competitive landscape, AutoGen occupies a distinct position as the "group-chat-native" framework. Where [[LangGraph]] expresses agent topologies as explicit directed state graphs (best suited to workflows with well-defined branching conditions), and [[CrewAI]] assigns human-analogous role personas to agents (best suited to workflows where role specialisation is the primary coordination mechanism), AutoGen's group-chat metaphor is best suited to tasks where the optimal agent interaction sequence cannot be predetermined and must emerge from the conversation itself. This makes AutoGen particularly strong in research, debugging, and exploratory analysis workflows, and relatively less well-suited to high-volume production pipelines where deterministic routing and explicit audit trails are paramount requirements. The June 2025 framework adoption survey found AutoGen used by 34% of production multi-agent deployments, behind [[LangGraph]] (58%) but ahead of [[CrewAI]] (31%) and [[OpenAI Agents SDK]] (28%).
 
-  AutoGen adoption in the UK spans academic research, enterprise deployment, and public-sector experimentation, driven by the framework's Python-native design, permissive MIT licence, and strong documentation.
+## UK Context
 
-  **Academic research:**
-  - University of Edinburgh School of Informatics: AutoGen has been deployed in research automation pipelines for systematic literature review in natural language processing, with agent configurations including a search agent (querying Semantic Scholar and ArXiv), a screening agent (applying inclusion/exclusion criteria), an extraction agent (structured data extraction from PDF), and a synthesis agent (cross-document analysis). The Edinburgh group has published on the reliability and hallucination characteristics of AutoGen-based research pipelines.
-  - Imperial College London Department of Computing: AutoGen is used in the AI4Health research programme for clinical data synthesis, with agent pipelines combining [[Retrieval-Augmented Generation]] over NHS clinical guidelines with code execution for statistical analysis and a human-in-the-loop checkpoint before any output intended for clinical decision support.
-  - University of Manchester Department of Computer Science: Manchester's Data Science Institute uses AutoGen for automated exploratory data analysis in large bioinformatics datasets, deploying planner-coder-visualiser agent triplets that automatically generate, execute, and refine analysis code in response to research questions.
-  - Alan Turing Institute: The Turing's Research Engineering Group has evaluated AutoGen against [[LangGraph]] and [[CrewAI]] for reproducibility and auditability in research automation, publishing guidance on agentic framework selection for academic research contexts (2025).
+AutoGen adoption in the UK spans academic research, enterprise deployment, and public-sector experimentation, driven by the framework's Python-native design, permissive MIT licence, and strong documentation.
+
+**Academic research:**
+
+- University of Edinburgh School of Informatics: AutoGen has been deployed in research automation pipelines for systematic literature review in natural language processing, with agent configurations including a search agent (querying Semantic Scholar and ArXiv), a screening agent (applying inclusion/exclusion criteria), an extraction agent (structured data extraction from PDF), and a synthesis agent (cross-document analysis). The Edinburgh group has published on the reliability and hallucination characteristics of AutoGen-based research pipelines.
+- Imperial College London Department of Computing: AutoGen is used in the AI4Health research programme for clinical data synthesis, with agent pipelines combining [[Retrieval-Augmented Generation]] over NHS clinical guidelines with code execution for statistical analysis and a human-in-the-loop checkpoint before any output intended for clinical decision support.
+- University of Manchester Department of Computer Science: Manchester's Data Science Institute uses AutoGen for automated exploratory data analysis in large bioinformatics datasets, deploying planner-coder-visualiser agent triplets that automatically generate, execute, and refine analysis code in response to research questions.
+- Alan Turing Institute: The Turing's Research Engineering Group has evaluated AutoGen against [[LangGraph]] and [[CrewAI]] for reproducibility and auditability in research automation, publishing guidance on agentic framework selection for academic research contexts (2025).
 
   **Industry and enterprise:**
-  - London fintech cluster: multiple financial services firms (including insurtech and regtech startups in Level 39 and other London hubs) have adopted AutoGen for regulatory document analysis, deploying agent configurations that parse regulatory updates, identify affected internal processes, and draft compliance notes — a workflow pattern particularly suited to AutoGen's iterative document-plus-code execution model.
-  - NHS Digital and NHS England: AutoGen-based pipelines are in pilot deployment for clinical coding assistance (ICD-10 code assignment from discharge summaries) and care pathway analysis. [[Human-in-the-Loop]] configuration is mandatory in all NHS clinical AI deployments under NHS AI Lab governance requirements.
-  - Cambridge deep-tech ecosystem: several Cambridge University spinouts in materials science and drug discovery use AutoGen-orchestrated pipelines for hypothesis generation and literature synthesis, with the [[Retrieval-Augmented Generation]] integration enabling agents to ground reasoning in large proprietary document collections.
-  - GCHQ / NCSC AI security research: public reports indicate UK national security research uses multi-agent frameworks including AutoGen for threat intelligence synthesis, security incident analysis, and vulnerability triage — with [[Human-in-the-Loop]] escalation as a constitutional requirement for all high-consequence recommendations.
+
+- London fintech cluster: multiple financial services firms (including insurtech and regtech startups in Level 39 and other London hubs) have adopted AutoGen for regulatory document analysis, deploying agent configurations that parse regulatory updates, identify affected internal processes, and draft compliance notes — a workflow pattern particularly suited to AutoGen's iterative document-plus-code execution model.
+- NHS Digital and NHS England: AutoGen-based pipelines are in pilot deployment for clinical coding assistance (ICD-10 code assignment from discharge summaries) and care pathway analysis. [[Human-in-the-Loop]] configuration is mandatory in all NHS clinical AI deployments under NHS AI Lab governance requirements.
+- Cambridge deep-tech ecosystem: several Cambridge University spinouts in materials science and drug discovery use AutoGen-orchestrated pipelines for hypothesis generation and literature synthesis, with the [[Retrieval-Augmented Generation]] integration enabling agents to ground reasoning in large proprietary document collections.
+- GCHQ / NCSC AI security research: public reports indicate UK national security research uses multi-agent frameworks including AutoGen for threat intelligence synthesis, security incident analysis, and vulnerability triage — with [[Human-in-the-Loop]] escalation as a constitutional requirement for all high-consequence recommendations.
 
   **Northern England industry presence:**
-  - Leeds Data Science Cluster: AutoGen features in the Leeds Digital Festival AI track as a primary demonstration framework, with local firms in healthcare analytics and professional services using AutoGen for report generation and data quality automation.
-  - Sheffield AMRC (Advanced Manufacturing Research Centre): AutoGen is evaluated for quality control workflows in aerospace component manufacturing, where multi-agent pipelines assess sensor data, query manufacturing specifications, and generate inspection reports — reducing cycle time versus manual analysis.
-  - Newcastle Digital Institute: Research on [[Human-in-the-Loop]] design for agentic AI systems uses AutoGen as the primary experimental platform, with studies on the optimal frequency and granularity of human checkpoint placement in long-horizon agent workflows.
+
+- Leeds Data Science Cluster: AutoGen features in the Leeds Digital Festival AI track as a primary demonstration framework, with local firms in healthcare analytics and professional services using AutoGen for report generation and data quality automation.
+- Sheffield AMRC (Advanced Manufacturing Research Centre): AutoGen is evaluated for quality control workflows in aerospace component manufacturing, where multi-agent pipelines assess sensor data, query manufacturing specifications, and generate inspection reports — reducing cycle time versus manual analysis.
+- Newcastle Digital Institute: Research on [[Human-in-the-Loop]] design for agentic AI systems uses AutoGen as the primary experimental platform, with studies on the optimal frequency and granularity of human checkpoint placement in long-horizon agent workflows.
 
   ## Future Directions (2026-2030)
 
@@ -209,41 +212,46 @@ AutoGen is an open-source multi-agent conversation framework originating from Mi
   **AutoGen 0.1 (2023)** — initial public release accompanying the arXiv paper. Introduced ConversableAgent, AssistantAgent, UserProxyAgent, and basic GroupChat. Limited to OpenAI models. No Docker code execution. Experimental proof-of-concept quality.
 
   **AutoGen 0.2 (late 2023 — early 2024)** — production-ready release. Added:
-  - Multi-provider LLM support via LiteLLM integration
-  - Docker-based sandboxed code execution
-  - Jupyter kernel code executor for interactive data analysis
-  - Improved GroupChatManager with LLM-based speaker selection
-  - Nested chat support for hierarchical task decomposition
-  - FunctionCallingAgent for structured tool use
-  - This is the version most enterprise teams deployed and the AG2 fork's compatibility baseline
+
+- Multi-provider LLM support via LiteLLM integration
+- Docker-based sandboxed code execution
+- Jupyter kernel code executor for interactive data analysis
+- Improved GroupChatManager with LLM-based speaker selection
+- Nested chat support for hierarchical task decomposition
+- FunctionCallingAgent for structured tool use
+- This is the version most enterprise teams deployed and the AG2 fork's compatibility baseline
 
   **AutoGen 0.3 (mid 2024)** — transitional release. Added:
-  - Swarm orchestration pattern (agents with handoff capabilities)
-  - Structured output support for JSON-schema-constrained responses
-  - Improved conversation summarisation for long-running tasks
-  - Model Context Protocol (MCP) tool integration (beta)
-  - This version introduced the patterns that AG2 v0.9 later unified and standardised
+
+- Swarm orchestration pattern (agents with handoff capabilities)
+- Structured output support for JSON-schema-constrained responses
+- Improved conversation summarisation for long-running tasks
+- Model Context Protocol (MCP) tool integration (beta)
+- This version introduced the patterns that AG2 v0.9 later unified and standardised
 
   **AutoGen 0.4 (January 2025 — Microsoft path)** — complete architectural rewrite:
-  - Actor model-based distributed execution substrate
-  - Async-first message passing
-  - Cross-language support (Python and .NET)
-  - Pluggable orchestration strategies replacing fixed GroupChat model
-  - Integration with Microsoft Azure AI Foundry Agent Service
-  - Breaking API changes incompatible with 0.2 code
+
+- Actor model-based distributed execution substrate
+- Async-first message passing
+- Cross-language support (Python and .NET)
+- Pluggable orchestration strategies replacing fixed GroupChat model
+- Integration with Microsoft Azure AI Foundry Agent Service
+- Breaking API changes incompatible with 0.2 code
 
   **AG2 (community fork, January 2025 onwards)** — community-governed evolution of AutoGen 0.2:
-  - AG2 v0.4-0.8: stabilisation and performance improvements on AutoGen 0.2 foundation
-  - AG2 v0.9 (April 2025): unified Group Chat pattern merging swarm + group-chat + sequential-chat; context variables; extensible orchestration API
-  - AG2 Beta (late 2025): streaming responses; dependency injection; typed tools with Pydantic validation; first-class test utilities; event-driven architecture option
-  - PyPI package: `autogen-agentchat` (AG2 community) vs `pyautogen` (legacy Microsoft package)
+
+- AG2 v0.4-0.8: stabilisation and performance improvements on AutoGen 0.2 foundation
+- AG2 v0.9 (April 2025): unified Group Chat pattern merging swarm + group-chat + sequential-chat; context variables; extensible orchestration API
+- AG2 Beta (late 2025): streaming responses; dependency injection; typed tools with Pydantic validation; first-class test utilities; event-driven architecture option
+- PyPI package: `autogen-agentchat` (AG2 community) vs `pyautogen` (legacy Microsoft package)
 
   **Microsoft Agent Framework (2025)** — enterprise integration layer:
-  - Combines AutoGen conversable-agent model with Semantic Kernel enterprise features
-  - Graph-based workflow definition for explicit agent topology visualisation
-  - Azure Monitor / OpenTelemetry telemetry integration
-  - Session-based state management across conversation lifecycles
-  - Azure AI Foundry Agent Service GA (May 2025): managed hosting with enterprise SLA
+
+- Combines AutoGen conversable-agent model with Semantic Kernel enterprise features
+- Graph-based workflow definition for explicit agent topology visualisation
+- Azure Monitor / OpenTelemetry telemetry integration
+- Session-based state management across conversation lifecycles
+- Azure AI Foundry Agent Service GA (May 2025): managed hosting with enterprise SLA
 
   ## Comparison with Adjacent Frameworks
 
@@ -289,99 +297,107 @@ AutoGen is an open-source multi-agent conversation framework originating from Mi
 
   Definitions of AutoGen-specific terminology as used in the framework's documentation and research papers:
 
-  - **Conversable Agent**: the base abstraction; any participant in an AutoGen conversation that can send and receive messages
-  - **AssistantAgent**: a ConversableAgent backed by an LLM; generates natural language and code responses
-  - **UserProxyAgent**: a ConversableAgent that proxies for a human user and/or executes code; the standard counterpart to AssistantAgent in two-agent chats
-  - **GroupChat**: a shared conversation space with multiple agents where a GroupChatManager selects speakers
-  - **GroupChatManager**: the meta-agent that orchestrates speaker selection in a GroupChat
-  - **ConversableAgent.generate_reply**: the core method that produces a reply message given the conversation history
-  - **code_execution_config**: configuration dict specifying code executor type, working directory, and timeout
-  - **human_input_mode**: enum (ALWAYS | NEVER | TERMINATE) controlling when human input is solicited
-  - **max_consecutive_auto_reply**: the maximum number of automated agent replies before the UserProxyAgent solicits human input
-  - **is_termination_msg**: a callable that returns True when a message should end the conversation
-  - **nested_chats**: sub-conversations spawned within a parent conversation for hierarchical task decomposition
-  - **speaker_selection_method**: the strategy the GroupChatManager uses to determine who speaks next
-  - **context_variables** (AG2 v0.9): typed shared state accessible to all agents in a GroupChat, outside the conversation message history
-  - **handoff** (AG2 v0.9): an explicit agent-to-agent control transfer within a swarm-style GroupChat
-  - **tool / function**: a Python callable registered on an agent with a JSON-schema description; invokable by LLM backends via function calling
-  - **code executor**: the component that runs code blocks emitted by agents (Docker, local subprocess, or Jupyter kernel)
-  - **carryover**: the mechanism for passing relevant context from one sequential chat to the next in `initiate_chats`
-  - **register_for_llm**: decorator that registers a Python function as a tool callable by LLM agents (generates JSON schema)
-  - **register_for_execution**: decorator that registers a Python function as executable by UserProxyAgent
-  - **initiate_chat**: method to start a two-agent conversation; initiates_chats for sequential multi-conversation pipelines
-  - **LiteLLM backend**: the provider abstraction layer enabling 100+ model providers through a unified API interface
-  - **actor model**: the distributed computing paradigm underlying AutoGen 0.4's architecture (Hewitt 1973); agents as stateful actors communicating via async message passing
-  - **MCP (Model Context Protocol)**: open specification for tool discovery and invocation standardised by Anthropic (2024); first-class AutoGen integration added 2025
+- **Conversable Agent**: the base abstraction; any participant in an AutoGen conversation that can send and receive messages
+- **AssistantAgent**: a ConversableAgent backed by an LLM; generates natural language and code responses
+- **UserProxyAgent**: a ConversableAgent that proxies for a human user and/or executes code; the standard counterpart to AssistantAgent in two-agent chats
+- **GroupChat**: a shared conversation space with multiple agents where a GroupChatManager selects speakers
+- **GroupChatManager**: the meta-agent that orchestrates speaker selection in a GroupChat
+- **ConversableAgent.generate_reply**: the core method that produces a reply message given the conversation history
+- **code_execution_config**: configuration dict specifying code executor type, working directory, and timeout
+- **human_input_mode**: enum (ALWAYS | NEVER | TERMINATE) controlling when human input is solicited
+- **max_consecutive_auto_reply**: the maximum number of automated agent replies before the UserProxyAgent solicits human input
+- **is_termination_msg**: a callable that returns True when a message should end the conversation
+- **nested_chats**: sub-conversations spawned within a parent conversation for hierarchical task decomposition
+- **speaker_selection_method**: the strategy the GroupChatManager uses to determine who speaks next
+- **context_variables** (AG2 v0.9): typed shared state accessible to all agents in a GroupChat, outside the conversation message history
+- **handoff** (AG2 v0.9): an explicit agent-to-agent control transfer within a swarm-style GroupChat
+- **tool / function**: a Python callable registered on an agent with a JSON-schema description; invokable by LLM backends via function calling
+- **code executor**: the component that runs code blocks emitted by agents (Docker, local subprocess, or Jupyter kernel)
+- **carryover**: the mechanism for passing relevant context from one sequential chat to the next in `initiate_chats`
+- **register_for_llm**: decorator that registers a Python function as a tool callable by LLM agents (generates JSON schema)
+- **register_for_execution**: decorator that registers a Python function as executable by UserProxyAgent
+- **initiate_chat**: method to start a two-agent conversation; initiates_chats for sequential multi-conversation pipelines
+- **LiteLLM backend**: the provider abstraction layer enabling 100+ model providers through a unified API interface
+- **actor model**: the distributed computing paradigm underlying AutoGen 0.4's architecture (Hewitt 1973); agents as stateful actors communicating via async message passing
+- **MCP (Model Context Protocol)**: open specification for tool discovery and invocation standardised by Anthropic (2024); first-class AutoGen integration added 2025
 
   ## Technical Specifications and Key Parameters
 
   Key configuration parameters that practitioners must understand for production AutoGen deployments:
 
   **LLM Configuration**
-  - `model`: the model identifier passed to the LLM backend (e.g. `"gpt-4o"`, `"claude-sonnet-4-5"`, `"gemini-2.0-flash"`)
-  - `temperature`: controls output randomness; 0.0 for deterministic outputs in structured tasks; 0.7-1.0 for creative tasks requiring diversity
-  - `max_tokens`: maximum tokens per LLM response; constrains cost but may truncate long code outputs
-  - `cache_seed`: integer seed for caching deterministic responses; enables reproducible testing
-  - `timeout`: seconds before abandoning an LLM call and retrying or failing; important for production reliability
+
+- `model`: the model identifier passed to the LLM backend (e.g. `"gpt-4o"`, `"claude-sonnet-4-5"`, `"gemini-2.0-flash"`)
+- `temperature`: controls output randomness; 0.0 for deterministic outputs in structured tasks; 0.7-1.0 for creative tasks requiring diversity
+- `max_tokens`: maximum tokens per LLM response; constrains cost but may truncate long code outputs
+- `cache_seed`: integer seed for caching deterministic responses; enables reproducible testing
+- `timeout`: seconds before abandoning an LLM call and retrying or failing; important for production reliability
 
   **ConversableAgent Configuration**
-  - `name`: unique agent identifier used in conversation logs and speaker selection
-  - `system_message`: the agent's role specification; the most critical performance parameter
-  - `human_input_mode`: ALWAYS | NEVER | TERMINATE; controls human oversight frequency
-  - `max_consecutive_auto_reply`: integer limiting automated turns before soliciting human input
-  - `is_termination_msg`: callable that inspects each message and returns True to terminate conversation
-  - `code_execution_config`: dict specifying executor type (docker, local subprocess, jupyter), working directory, and resource limits
+
+- `name`: unique agent identifier used in conversation logs and speaker selection
+- `system_message`: the agent's role specification; the most critical performance parameter
+- `human_input_mode`: ALWAYS | NEVER | TERMINATE; controls human oversight frequency
+- `max_consecutive_auto_reply`: integer limiting automated turns before soliciting human input
+- `is_termination_msg`: callable that inspects each message and returns True to terminate conversation
+- `code_execution_config`: dict specifying executor type (docker, local subprocess, jupyter), working directory, and resource limits
 
   **GroupChat Configuration**
-  - `agents`: list of ConversableAgent instances participating in the chat
-  - `messages`: conversation history (pre-populated or empty)
-  - `max_round`: maximum total turns across all agents before forced termination
-  - `speaker_selection_method`: "round_robin" | "auto" | "random" | callable
-  - `allow_repeat_speaker`: whether the same agent can speak consecutively (default True; set False to force diversity)
-  - `send_introductions`: whether agents introduce themselves at the start (useful for LLM-based speaker selection)
+
+- `agents`: list of ConversableAgent instances participating in the chat
+- `messages`: conversation history (pre-populated or empty)
+- `max_round`: maximum total turns across all agents before forced termination
+- `speaker_selection_method`: "round_robin" | "auto" | "random" | callable
+- `allow_repeat_speaker`: whether the same agent can speak consecutively (default True; set False to force diversity)
+- `send_introductions`: whether agents introduce themselves at the start (useful for LLM-based speaker selection)
 
   **Performance Characteristics**
-  - Typical two-agent task completion: 5-20 turns, 10k-100k total tokens, 30 seconds to 5 minutes wall-clock time
-  - Typical group-chat (5 agents) task completion: 15-40 turns, 50k-500k total tokens, 2-20 minutes wall-clock time
-  - Code execution latency: 0.1-30 seconds depending on code complexity and Docker startup overhead
-  - LLM inference latency: 1-10 seconds per turn for frontier models in 2025-2026
-  - Token throughput on frontier models: 50-200 tokens/second output, limiting turn frequency for very long responses
+
+- Typical two-agent task completion: 5-20 turns, 10k-100k total tokens, 30 seconds to 5 minutes wall-clock time
+- Typical group-chat (5 agents) task completion: 15-40 turns, 50k-500k total tokens, 2-20 minutes wall-clock time
+- Code execution latency: 0.1-30 seconds depending on code complexity and Docker startup overhead
+- LLM inference latency: 1-10 seconds per turn for frontier models in 2025-2026
+- Token throughput on frontier models: 50-200 tokens/second output, limiting turn frequency for very long responses
 
   ## Agent Type Taxonomy
 
   AutoGen defines a clear agent type taxonomy that practitioners should understand before designing group-chat topologies. Each agent type represents a specific bundle of capabilities and constraints that determines how it contributes to a multi-agent conversation.
 
   **AssistantAgent** — the standard LLM-backed agent. Key characteristics:
-  - Backed by a configurable LLM (OpenAI GPT-4o, Anthropic Claude, Google Gemini, or any LiteLLM-supported model)
-  - Default system prompt configures the agent as a helpful AI assistant capable of writing code and using tools
-  - Does not execute code by default; relies on a UserProxyAgent for execution
-  - human_input_mode defaults to NEVER (fully automated)
-  - Registers Python functions as tools via the `register_for_llm` decorator, generating JSON-schema tool definitions for the LLM backend
-  - Can be customised by overriding the system prompt to create specialist personas (mathematician, security auditor, domain expert)
-  - Most commonly used in planner, worker, and critic roles in group-chat configurations
+
+- Backed by a configurable LLM (OpenAI GPT-4o, Anthropic Claude, Google Gemini, or any LiteLLM-supported model)
+- Default system prompt configures the agent as a helpful AI assistant capable of writing code and using tools
+- Does not execute code by default; relies on a UserProxyAgent for execution
+- human_input_mode defaults to NEVER (fully automated)
+- Registers Python functions as tools via the `register_for_llm` decorator, generating JSON-schema tool definitions for the LLM backend
+- Can be customised by overriding the system prompt to create specialist personas (mathematician, security auditor, domain expert)
+- Most commonly used in planner, worker, and critic roles in group-chat configurations
 
   **UserProxyAgent** — the hybrid human/automation proxy. Key characteristics:
-  - Designed to represent a human participant in the conversation, with the ability to either solicit actual human input or automate responses based on rules
-  - human_input_mode determines behaviour: ALWAYS (always ask the human), NEVER (fully automated), TERMINATE (ask only when the conversation should end)
-  - Automatically executes code blocks (Python, Shell) emitted by other agents and feeds the execution result back as a message
-  - Registers Python functions as tools via the `register_for_execution` decorator, making them callable by LLM-backed agents in the group chat
-  - max_consecutive_auto_reply limits automated responses before requiring human input, providing a natural human oversight checkpoint
-  - The most frequently used agent in two-agent AutoGen patterns, pairing with an AssistantAgent for code-iterate workflows
+
+- Designed to represent a human participant in the conversation, with the ability to either solicit actual human input or automate responses based on rules
+- human_input_mode determines behaviour: ALWAYS (always ask the human), NEVER (fully automated), TERMINATE (ask only when the conversation should end)
+- Automatically executes code blocks (Python, Shell) emitted by other agents and feeds the execution result back as a message
+- Registers Python functions as tools via the `register_for_execution` decorator, making them callable by LLM-backed agents in the group chat
+- max_consecutive_auto_reply limits automated responses before requiring human input, providing a natural human oversight checkpoint
+- The most frequently used agent in two-agent AutoGen patterns, pairing with an AssistantAgent for code-iterate workflows
 
   **GroupChatManager** — the orchestration meta-agent. Key characteristics:
-  - Does not contribute content to the task; manages the group chat topology only
-  - speaker_selection_method determines speaker ordering: "round_robin" (fixed sequential order), "auto" (LLM-based dynamic selection), "random" (random selection from eligible agents), or a custom callable
-  - LLM-based speaker selection uses the manager's own LLM backend to decide which agent should speak next, based on the conversation history and each agent's description field
-  - max_round limits the total number of turns in the group chat before termination
-  - Applies termination conditions: conversation terminates when any agent emits a message matching the termination_msg pattern
-  - In AG2 v0.9, the GroupChatManager also handles context variables and supports swarm-style handoffs within the group chat framework
+
+- Does not contribute content to the task; manages the group chat topology only
+- speaker_selection_method determines speaker ordering: "round_robin" (fixed sequential order), "auto" (LLM-based dynamic selection), "random" (random selection from eligible agents), or a custom callable
+- LLM-based speaker selection uses the manager's own LLM backend to decide which agent should speak next, based on the conversation history and each agent's description field
+- max_round limits the total number of turns in the group chat before termination
+- Applies termination conditions: conversation terminates when any agent emits a message matching the termination_msg pattern
+- In AG2 v0.9, the GroupChatManager also handles context variables and supports swarm-style handoffs within the group chat framework
 
   **Custom Agents** — created by subclassing ConversableAgent and overriding key methods. Common custom agent patterns include:
-  - DatabaseAgent: queries a structured database using SQL or ORM, formats results as natural language, returns them as a message
-  - DocumentRetrievalAgent: searches a [[Vector Database]] or document store for relevant passages, returns the top-k results as messages for other agents to synthesise
-  - CodeReviewAgent: applies static analysis tools (pylint, bandit, type checkers) to code emitted by the AssistantAgent and returns structured findings
-  - ValidatorAgent: applies domain-specific validation rules (schema checking, unit testing, constraint verification) to proposed solutions before they are accepted
-  - HumanEscalationAgent: presents structured summaries of the current task state to a human reviewer and waits for approval before allowing consequential actions to proceed
+
+- DatabaseAgent: queries a structured database using SQL or ORM, formats results as natural language, returns them as a message
+- DocumentRetrievalAgent: searches a [[Vector Database]] or document store for relevant passages, returns the top-k results as messages for other agents to synthesise
+- CodeReviewAgent: applies static analysis tools (pylint, bandit, type checkers) to code emitted by the AssistantAgent and returns structured findings
+- ValidatorAgent: applies domain-specific validation rules (schema checking, unit testing, constraint verification) to proposed solutions before they are accepted
+- HumanEscalationAgent: presents structured summaries of the current task state to a human reviewer and waits for approval before allowing consequential actions to proceed
 
   ## Deployment Patterns and Engineering Best Practices
 
@@ -436,5 +452,5 @@ AutoGen is an open-source multi-agent conversation framework originating from Mi
   27. Gartner. (2025). Top Strategic Technology Trends 2026: Agentic AI. Gartner Research Report. (Projecting 40% of enterprise applications will feature task-specific AI agents by end 2026.)
   28. NHS AI Lab. (2025). AI in NHS Administration: Pilot Evaluation Report — Agentic Workflow Deployments in Scheduling and Clinical Coding. NHS England.
 
-- ### Provenance
+### Provenance
 

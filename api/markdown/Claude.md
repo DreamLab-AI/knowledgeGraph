@@ -1,141 +1,142 @@
-
 Claude is a family of large language model AI assistants developed by Anthropic, trained using Constitutional AI and reinforcement learning from human feedback to be helpful, harmless, and honest. The Claude model family encompasses tiered variants (Haiku, Sonnet, and Opus) spanning cost-performance trade-offs, with support for extended context windows, multimodal inputs, tool use, and agentic workflows via the Model Context Protocol. Claude embodies Anthropic's research programme on aligning advanced AI systems with human values, serving as both a commercial API product and a living demonstration that safety and capability are complementary rather than opposed. The model family has evolved through multiple generations, with each iteration advancing state-of-the-art performance on reasoning, coding, and instruction-following benchmarks whilst maintaining rigorous safety evaluation.
 
-- ### Semantic Classification
+### Semantic Classification
 
-- ### Content
-  ## Compositional Relationships (Components)
-    ```
-    SubClassOf(ai:ClaudeModelFamily
-      ObjectSomeValuesFrom(ai:hasPart ai:ConstitutionalAITrainingMethodology))
-    SubClassOf(ai:ClaudeModelFamily
-      ObjectSomeValuesFrom(ai:hasPart ai:ModelContextProtocol))
-    SubClassOf(ai:ClaudeModelFamily
-      ObjectSomeValuesFrom(ai:hasPart ai:InstructionTuning))
-    SubClassOf(ai:ClaudeModelFamily
-      ObjectSomeValuesFrom(ai:hasPart ai:ReinforcementLearningFromHumanFeedback))
-    SubClassOf(ai:ClaudeModelFamily
-      ObjectSomeValuesFrom(ai:hasPart ai:RedTeaming))
-    SubClassOf(ai:ClaudeModelFamily
-      ObjectSomeValuesFrom(ai:hasPart ai:DirectPreferenceOptimisation))
-    SubClassOf(ai:ClaudeModelFamily
-      ObjectSomeValuesFrom(ai:hasPart ai:PreTraining))
-    SubClassOf(ai:ClaudeModelFamily
-      ObjectSomeValuesFrom(ai:hasPart ai:MechanisticInterpretability))
-    ```
-  ## Dependency Relationships
-    ```
-    SubClassOf(ai:ClaudeModelFamily
-      ObjectSomeValuesFrom(ai:requires ai:PreTraining))
-    SubClassOf(ai:ClaudeModelFamily
-      ObjectSomeValuesFrom(ai:requires ai:LargeLanguageModels))
-    SubClassOf(ai:ClaudeModelFamily
-      ObjectSomeValuesFrom(ai:requires ai:TransformerArchitecture))
-    SubClassOf(ai:ClaudeModelFamily
-      ObjectSomeValuesFrom(ai:requires ai:HumanFeedback))
-    SubClassOf(ai:ClaudeModelFamily
-      ObjectSomeValuesFrom(ai:requires ai:InstructionTuning))
-    SubClassOf(ai:ClaudeModelFamily
-      ObjectSomeValuesFrom(ai:dependsOn ai:ReinforcementLearningFromHumanFeedback))
-    SubClassOf(ai:ClaudeModelFamily
-      ObjectSomeValuesFrom(ai:dependsOn ai:DirectPreferenceOptimisation))
-    SubClassOf(ai:ClaudeModelFamily
-      ObjectSomeValuesFrom(ai:dependsOn ai:RedTeaming))
-    ```
-  ## Capability Relationships
-    ```
-    SubClassOf(ai:ClaudeModelFamily
-      ObjectSomeValuesFrom(ai:enables ai:ToolUse))
-    SubClassOf(ai:ClaudeModelFamily
-      ObjectSomeValuesFrom(ai:enables ai:ConversationalAI))
-    SubClassOf(ai:ClaudeModelFamily
-      ObjectSomeValuesFrom(ai:enables ai:FunctionCalling))
-    SubClassOf(ai:ClaudeModelFamily
-      ObjectSomeValuesFrom(ai:enables ai:CodeGeneration))
-    SubClassOf(ai:ClaudeModelFamily
-      ObjectSomeValuesFrom(ai:enables ai:RetrievalAugmentedGeneration))
-    SubClassOf(ai:ClaudeModelFamily
-      ObjectSomeValuesFrom(ai:enables ai:MultiStepReasoning))
-    SubClassOf(ai:ClaudeModelFamily
-      ObjectSomeValuesFrom(ai:enables ai:AgenticWorkflow))
-    SubClassOf(ai:ClaudeModelFamily
-      ObjectSomeValuesFrom(ai:supports ai:AISafety))
-    SubClassOf(ai:ClaudeModelFamily
-      ObjectSomeValuesFrom(ai:supports ai:AIAlignment))
-    SubClassOf(ai:ClaudeModelFamily
-      ObjectSomeValuesFrom(ai:supports ai:ScalableOversight))
-    ```
-  ## Implementation Relationships
-    ```
-    SubClassOf(ai:ClaudeModelFamily
-      ObjectSomeValuesFrom(ai:implements ai:ModelContextProtocol))
-    SubClassOf(ai:ClaudeModelFamily
-      ObjectSomeValuesFrom(ai:implements ai:ConstitutionalAITrainingMethodology))
-    SubClassOf(ai:ClaudeModelFamily
-      ObjectSomeValuesFrom(ai:implements ai:ResponsibleScalingPolicy))
-    SubClassOf(ai:ClaudeModelFamily
-      ObjectSomeValuesFrom(ai:uses ai:ConstitutionalAITrainingMethodology))
-    SubClassOf(ai:ClaudeModelFamily
-      ObjectSomeValuesFrom(ai:uses ai:RLHF))
-    SubClassOf(ai:ClaudeModelFamily
-      ObjectSomeValuesFrom(ai:uses ai:TransformerArchitecture))
-    SubClassOf(ai:ClaudeModelFamily
-      ObjectSomeValuesFrom(ai:uses ai:DirectPreferenceOptimisation))
-    SubClassOf(ai:ClaudeModelFamily
-      ObjectSomeValuesFrom(ai:uses ai:MechanisticInterpretability))
-    ```
-  ## Reduction Relationships
-    ```
-    SubClassOf(ai:ClaudeModelFamily
-      ObjectSomeValuesFrom(ai:reducesTo ai:LargeLanguageModel))
-    SubClassOf(ai:ClaudeModelFamily
-      ObjectSomeValuesFrom(ai:reducesTo ai:SafetyFocusedLLM))
-    SubClassOf(ai:ClaudeModelFamily
-      ObjectSomeValuesFrom(ai:contrastsWith ai:GPT4))
-    SubClassOf(ai:ClaudeModelFamily
-      ObjectSomeValuesFrom(ai:contrastsWith ai:GeminiMultimodalLanguageModel))
-    SubClassOf(ai:ClaudeModelFamily
-      ObjectSomeValuesFrom(ai:contrastsWith ai:Llama3))
-    SubClassOf(ai:ClaudeModelFamily
-      ObjectSomeValuesFrom(ai:bridgesTo ai:EnterpriseAIAdoption))
-    SubClassOf(ai:ClaudeModelFamily
-      ObjectSomeValuesFrom(ai:bridgesTo ai:WorkflowAutomation))
-    SubClassOf(ai:ClaudeModelFamily
-      ObjectSomeValuesFrom(ai:bridgesTo ai:AIGovernance))
-    SubClassOf(ai:ClaudeModelFamily
-      ObjectSomeValuesFrom(ai:relatedTo ai:Anthropic))
-    SubClassOf(ai:ClaudeModelFamily
-      ObjectSomeValuesFrom(ai:relatedTo ai:ResponsibleScalingPolicy))
-    SubClassOf(ai:ClaudeModelFamily
-      ObjectSomeValuesFrom(ai:relatedTo ai:MechanisticInterpretability))
-    ```
+### Content
 
-  ## About
+## Compositional Relationships (Components)
+  ```
+  SubClassOf(ai:ClaudeModelFamily
+    ObjectSomeValuesFrom(ai:hasPart ai:ConstitutionalAITrainingMethodology))
+  SubClassOf(ai:ClaudeModelFamily
+    ObjectSomeValuesFrom(ai:hasPart ai:ModelContextProtocol))
+  SubClassOf(ai:ClaudeModelFamily
+    ObjectSomeValuesFrom(ai:hasPart ai:InstructionTuning))
+  SubClassOf(ai:ClaudeModelFamily
+    ObjectSomeValuesFrom(ai:hasPart ai:ReinforcementLearningFromHumanFeedback))
+  SubClassOf(ai:ClaudeModelFamily
+    ObjectSomeValuesFrom(ai:hasPart ai:RedTeaming))
+  SubClassOf(ai:ClaudeModelFamily
+    ObjectSomeValuesFrom(ai:hasPart ai:DirectPreferenceOptimisation))
+  SubClassOf(ai:ClaudeModelFamily
+    ObjectSomeValuesFrom(ai:hasPart ai:PreTraining))
+  SubClassOf(ai:ClaudeModelFamily
+    ObjectSomeValuesFrom(ai:hasPart ai:MechanisticInterpretability))
+  ```
+## Dependency Relationships
+  ```
+  SubClassOf(ai:ClaudeModelFamily
+    ObjectSomeValuesFrom(ai:requires ai:PreTraining))
+  SubClassOf(ai:ClaudeModelFamily
+    ObjectSomeValuesFrom(ai:requires ai:LargeLanguageModels))
+  SubClassOf(ai:ClaudeModelFamily
+    ObjectSomeValuesFrom(ai:requires ai:TransformerArchitecture))
+  SubClassOf(ai:ClaudeModelFamily
+    ObjectSomeValuesFrom(ai:requires ai:HumanFeedback))
+  SubClassOf(ai:ClaudeModelFamily
+    ObjectSomeValuesFrom(ai:requires ai:InstructionTuning))
+  SubClassOf(ai:ClaudeModelFamily
+    ObjectSomeValuesFrom(ai:dependsOn ai:ReinforcementLearningFromHumanFeedback))
+  SubClassOf(ai:ClaudeModelFamily
+    ObjectSomeValuesFrom(ai:dependsOn ai:DirectPreferenceOptimisation))
+  SubClassOf(ai:ClaudeModelFamily
+    ObjectSomeValuesFrom(ai:dependsOn ai:RedTeaming))
+  ```
+## Capability Relationships
+  ```
+  SubClassOf(ai:ClaudeModelFamily
+    ObjectSomeValuesFrom(ai:enables ai:ToolUse))
+  SubClassOf(ai:ClaudeModelFamily
+    ObjectSomeValuesFrom(ai:enables ai:ConversationalAI))
+  SubClassOf(ai:ClaudeModelFamily
+    ObjectSomeValuesFrom(ai:enables ai:FunctionCalling))
+  SubClassOf(ai:ClaudeModelFamily
+    ObjectSomeValuesFrom(ai:enables ai:CodeGeneration))
+  SubClassOf(ai:ClaudeModelFamily
+    ObjectSomeValuesFrom(ai:enables ai:RetrievalAugmentedGeneration))
+  SubClassOf(ai:ClaudeModelFamily
+    ObjectSomeValuesFrom(ai:enables ai:MultiStepReasoning))
+  SubClassOf(ai:ClaudeModelFamily
+    ObjectSomeValuesFrom(ai:enables ai:AgenticWorkflow))
+  SubClassOf(ai:ClaudeModelFamily
+    ObjectSomeValuesFrom(ai:supports ai:AISafety))
+  SubClassOf(ai:ClaudeModelFamily
+    ObjectSomeValuesFrom(ai:supports ai:AIAlignment))
+  SubClassOf(ai:ClaudeModelFamily
+    ObjectSomeValuesFrom(ai:supports ai:ScalableOversight))
+  ```
+## Implementation Relationships
+  ```
+  SubClassOf(ai:ClaudeModelFamily
+    ObjectSomeValuesFrom(ai:implements ai:ModelContextProtocol))
+  SubClassOf(ai:ClaudeModelFamily
+    ObjectSomeValuesFrom(ai:implements ai:ConstitutionalAITrainingMethodology))
+  SubClassOf(ai:ClaudeModelFamily
+    ObjectSomeValuesFrom(ai:implements ai:ResponsibleScalingPolicy))
+  SubClassOf(ai:ClaudeModelFamily
+    ObjectSomeValuesFrom(ai:uses ai:ConstitutionalAITrainingMethodology))
+  SubClassOf(ai:ClaudeModelFamily
+    ObjectSomeValuesFrom(ai:uses ai:RLHF))
+  SubClassOf(ai:ClaudeModelFamily
+    ObjectSomeValuesFrom(ai:uses ai:TransformerArchitecture))
+  SubClassOf(ai:ClaudeModelFamily
+    ObjectSomeValuesFrom(ai:uses ai:DirectPreferenceOptimisation))
+  SubClassOf(ai:ClaudeModelFamily
+    ObjectSomeValuesFrom(ai:uses ai:MechanisticInterpretability))
+  ```
+## Reduction Relationships
+  ```
+  SubClassOf(ai:ClaudeModelFamily
+    ObjectSomeValuesFrom(ai:reducesTo ai:LargeLanguageModel))
+  SubClassOf(ai:ClaudeModelFamily
+    ObjectSomeValuesFrom(ai:reducesTo ai:SafetyFocusedLLM))
+  SubClassOf(ai:ClaudeModelFamily
+    ObjectSomeValuesFrom(ai:contrastsWith ai:GPT4))
+  SubClassOf(ai:ClaudeModelFamily
+    ObjectSomeValuesFrom(ai:contrastsWith ai:GeminiMultimodalLanguageModel))
+  SubClassOf(ai:ClaudeModelFamily
+    ObjectSomeValuesFrom(ai:contrastsWith ai:Llama3))
+  SubClassOf(ai:ClaudeModelFamily
+    ObjectSomeValuesFrom(ai:bridgesTo ai:EnterpriseAIAdoption))
+  SubClassOf(ai:ClaudeModelFamily
+    ObjectSomeValuesFrom(ai:bridgesTo ai:WorkflowAutomation))
+  SubClassOf(ai:ClaudeModelFamily
+    ObjectSomeValuesFrom(ai:bridgesTo ai:AIGovernance))
+  SubClassOf(ai:ClaudeModelFamily
+    ObjectSomeValuesFrom(ai:relatedTo ai:Anthropic))
+  SubClassOf(ai:ClaudeModelFamily
+    ObjectSomeValuesFrom(ai:relatedTo ai:ResponsibleScalingPolicy))
+  SubClassOf(ai:ClaudeModelFamily
+    ObjectSomeValuesFrom(ai:relatedTo ai:MechanisticInterpretability))
+  ```
 
-  Claude is the commercial flagship of [[Anthropic]], a frontier AI safety company founded in April 2021 by Dario Amodei, Daniela Amodei, and colleagues formerly at [[OpenAI Research Organisation]]. The name "Claude" was chosen to humanise the assistant — departing from acronym-based naming conventions common in the industry — and implicitly references Claude Shannon, the founder of information theory, reflecting [[Anthropic]]'s research orientation. The model family was publicly launched in March 2023 with Claude 1, which established the [[Constitutional AI Training Methodology]] (CAI) baseline: a training procedure in which the model critiques and revises its own outputs against a written set of ethical principles, reducing reliance on human annotators for harmlessness labelling and creating a more interpretable, principle-grounded training process. This distinguished Claude from GPT-3.5 and early GPT-4 at launch by offering a documented, auditable alignment methodology rather than the predominantly behavioural safety training approach of OpenAI's contemporaneous models.
+## About
 
-  Claude's central design claim — that [[AI Safety]] and commercial capability are complementary rather than opposed — is tested and evidenced through each model generation. The claim has been progressively strengthened by empirical evidence: Claude 3 Opus (March 2024) achieved state-of-the-art performance on MMLU, HumanEval, and MATH benchmarks at the time of release, demonstrating that safety-focused training could produce models competitive with the frontier; Claude Opus 4 (May 2025) achieved 72.5% on SWE-bench Verified (software engineering benchmark); Claude Opus 4.5 (November 2025) reached 80.9% on SWE-bench Verified; and Claude Fable 5 (June 2026) achieved state-of-the-art results on FrontierCode, CursorBench, and frontier physics and finance benchmarks, while remaining the model with the most comprehensive publicly available safety evaluations in the frontier landscape.
+Claude is the commercial flagship of [[Anthropic]], a frontier AI safety company founded in April 2021 by Dario Amodei, Daniela Amodei, and colleagues formerly at [[OpenAI Research Organisation]]. The name "Claude" was chosen to humanise the assistant — departing from acronym-based naming conventions common in the industry — and implicitly references Claude Shannon, the founder of information theory, reflecting [[Anthropic]]'s research orientation. The model family was publicly launched in March 2023 with Claude 1, which established the [[Constitutional AI Training Methodology]] (CAI) baseline: a training procedure in which the model critiques and revises its own outputs against a written set of ethical principles, reducing reliance on human annotators for harmlessness labelling and creating a more interpretable, principle-grounded training process. This distinguished Claude from GPT-3.5 and early GPT-4 at launch by offering a documented, auditable alignment methodology rather than the predominantly behavioural safety training approach of OpenAI's contemporaneous models.
 
-  The commercial success of Claude is structural to [[Anthropic]]'s mission model: revenue from API deployments funds the research needed to develop safe frontier AI, creating a self-reinforcing loop between commercial viability and safety research investment. By mid-2026, this model had produced a company valuation of approximately $965 billion — the highest valuation of any AI startup globally — with [[Anthropic]] filing confidential IPO documentation in June 2026. Strategic distribution agreements with Amazon Web Services (through [[Amazon Bedrock]]) and Google Cloud (through Vertex AI), alongside enterprise deployments at Deloitte (470,000 employees globally), Grant Thornton UK (enterprise-wide rollout), and TCS (50,000 employees across 56 countries), confirm Claude's position as the preferred frontier model for regulated enterprise and public-sector deployments.
+Claude's central design claim — that [[AI Safety]] and commercial capability are complementary rather than opposed — is tested and evidenced through each model generation. The claim has been progressively strengthened by empirical evidence: Claude 3 Opus (March 2024) achieved state-of-the-art performance on MMLU, HumanEval, and MATH benchmarks at the time of release, demonstrating that safety-focused training could produce models competitive with the frontier; Claude Opus 4 (May 2025) achieved 72.5% on SWE-bench Verified (software engineering benchmark); Claude Opus 4.5 (November 2025) reached 80.9% on SWE-bench Verified; and Claude Fable 5 (June 2026) achieved state-of-the-art results on FrontierCode, CursorBench, and frontier physics and finance benchmarks, while remaining the model with the most comprehensive publicly available safety evaluations in the frontier landscape.
 
-  ## Model Tiers and Generations
+The commercial success of Claude is structural to [[Anthropic]]'s mission model: revenue from API deployments funds the research needed to develop safe frontier AI, creating a self-reinforcing loop between commercial viability and safety research investment. By mid-2026, this model had produced a company valuation of approximately $965 billion — the highest valuation of any AI startup globally — with [[Anthropic]] filing confidential IPO documentation in June 2026. Strategic distribution agreements with Amazon Web Services (through [[Amazon Bedrock]]) and Google Cloud (through Vertex AI), alongside enterprise deployments at Deloitte (470,000 employees globally), Grant Thornton UK (enterprise-wide rollout), and TCS (50,000 employees across 56 countries), confirm Claude's position as the preferred frontier model for regulated enterprise and public-sector deployments.
 
-  The Claude model family is organised into a three-tier performance hierarchy that has remained consistent across all public generations:
+## Model Tiers and Generations
 
-  **Haiku:** Optimised for low-latency, high-throughput, cost-sensitive applications where speed is prioritised over maximum capability. Suitable for classification, summarisation, and lightweight [[Conversational AI]] tasks requiring millisecond response times.
+The Claude model family is organised into a three-tier performance hierarchy that has remained consistent across all public generations:
 
-  **Sonnet:** The balanced mid-tier, offering strong reasoning, coding, and instruction-following at moderate cost. The most widely deployed tier for enterprise use cases, with the Sonnet 4.6 release (February 2026) achieving feature parity with the previous generation's Opus tier on coding evaluations.
+**Haiku:** Optimised for low-latency, high-throughput, cost-sensitive applications where speed is prioritised over maximum capability. Suitable for classification, summarisation, and lightweight [[Conversational AI]] tasks requiring millisecond response times.
 
-  **Opus:** The highest-capability tier, designed for complex multi-step reasoning, advanced [[Code Generation]], and tasks requiring the deepest contextual understanding. Claude Opus 4.8 (May 2026) delivered notable improvements in honesty, being approximately four times less likely than its predecessor to allow code flaws to pass unacknowledged.
+**Sonnet:** The balanced mid-tier, offering strong reasoning, coding, and instruction-following at moderate cost. The most widely deployed tier for enterprise use cases, with the Sonnet 4.6 release (February 2026) achieving feature parity with the previous generation's Opus tier on coding evaluations.
 
-  Key generational milestones across public releases:
-  - **Claude 1** (March 2023): First public release; established CAI baseline. Available via API.
-  - **Claude 2** (July 2023): Extended context window to 100,000 tokens, enabling long-document processing and extended [[Multi-Step Reasoning]] chains. Context window later extended to 200,000 tokens.
-  - **Claude 3** (March 2024): Launched the Haiku/Sonnet/Opus tiering convention alongside multimodal image understanding. Claude 3 Opus achieved state-of-the-art MMLU, HumanEval, and MATH results at release.
-  - **Claude 3.5 family** (2024–2025): Iterative refinements across all tiers; Claude 3.5 Sonnet became the most widely adopted API tier in enterprise deployment; Claude 3.5 Haiku used as subject for mechanistic interpretability attribution-graph analysis (2025).
-  - **Claude 4 family** (2025): Claude Opus 4 (May 2025, 72.5% SWE-bench Verified), Claude Opus 4.5 (November 2025, 80.9% SWE-bench Verified). Extended thinking mode for advanced reasoning.
-  - **Claude 4.6–4.8** (2026): Sonnet 4.6 (February 2026) achieves Opus-tier coding parity; Opus 4.7 (April 2026) and Opus 4.8 (May 2026) with enhanced honesty properties. Opus 4.8 reached 84% on Online-Mind2Web agentic browsing benchmark.
-  - **Claude Fable 5 and Claude Mythos 5** (June 2026): First Mythos-class models; Fable 5 is the most capable publicly available Claude model as of June 2026 with frontier-leading FrontierCode and CursorBench scores. Claude Mythos 5 is restricted to critical-infrastructure security applications through Project Glasswing.
+**Opus:** The highest-capability tier, designed for complex multi-step reasoning, advanced [[Code Generation]], and tasks requiring the deepest contextual understanding. Claude Opus 4.8 (May 2026) delivered notable improvements in honesty, being approximately four times less likely than its predecessor to allow code flaws to pass unacknowledged.
+
+Key generational milestones across public releases:
+
+- **Claude 1** (March 2023): First public release; established CAI baseline. Available via API.
+- **Claude 2** (July 2023): Extended context window to 100,000 tokens, enabling long-document processing and extended [[Multi-Step Reasoning]] chains. Context window later extended to 200,000 tokens.
+- **Claude 3** (March 2024): Launched the Haiku/Sonnet/Opus tiering convention alongside multimodal image understanding. Claude 3 Opus achieved state-of-the-art MMLU, HumanEval, and MATH results at release.
+- **Claude 3.5 family** (2024–2025): Iterative refinements across all tiers; Claude 3.5 Sonnet became the most widely adopted API tier in enterprise deployment; Claude 3.5 Haiku used as subject for mechanistic interpretability attribution-graph analysis (2025).
+- **Claude 4 family** (2025): Claude Opus 4 (May 2025, 72.5% SWE-bench Verified), Claude Opus 4.5 (November 2025, 80.9% SWE-bench Verified). Extended thinking mode for advanced reasoning.
+- **Claude 4.6–4.8** (2026): Sonnet 4.6 (February 2026) achieves Opus-tier coding parity; Opus 4.7 (April 2026) and Opus 4.8 (May 2026) with enhanced honesty properties. Opus 4.8 reached 84% on Online-Mind2Web agentic browsing benchmark.
+- **Claude Fable 5 and Claude Mythos 5** (June 2026): First Mythos-class models; Fable 5 is the most capable publicly available Claude model as of June 2026 with frontier-leading FrontierCode and CursorBench scores. Claude Mythos 5 is restricted to critical-infrastructure security applications through Project Glasswing.
 
   ## Training Methodology
 
@@ -405,5 +406,5 @@ Claude is a family of large language model AI assistants developed by Anthropic,
 
   These evaluation categories are publicly disclosed in Claude's system cards and form the basis for the ASL threshold assessments in RSP v3.0. The disclosure of evaluation methodology — not merely results — is a key transparency commitment distinguishing Claude's safety documentation from most other frontier model safety claims.
 
-- ### Provenance
+### Provenance
 

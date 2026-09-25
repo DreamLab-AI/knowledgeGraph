@@ -1,10 +1,10 @@
-
 Physical computing resource deployed near data sources to reduce latency for immersive applications through localized processing.
 
-- ### Semantic Classification
+### Semantic Classification
 
-- ### Content
-  Edge Computing Node — content pending enrichment.
+### Content
 
-- ### Provenance
+Edge Computing Node — content pending enrichment.
+
+### Provenance
 

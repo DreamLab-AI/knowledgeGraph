@@ -1,119 +1,119 @@
-
 Official vendor SDKs and libraries for building custom AI agents with built-in tools, MCP support, session management, and deployment infrastructure — includes Claude Agent SDK, Google ADK, strands-agents, pydantic-ai, Composio, and SWE-agent.
 
-- ### Semantic Classification
+### Semantic Classification
 
-- ### Content
-  ## Compositional Relationships (Components)
-      SubClassOf(ai:AgentDevelopmentSDKs
-        ObjectSomeValuesFrom(ai:hasPart ai:ClaudeAgentSDK))
-      SubClassOf(ai:AgentDevelopmentSDKs
-        ObjectSomeValuesFrom(ai:hasPart ai:GoogleADK))
-      SubClassOf(ai:AgentDevelopmentSDKs
-        ObjectSomeValuesFrom(ai:hasPart ai:StrandsAgents))
-      SubClassOf(ai:AgentDevelopmentSDKs
-        ObjectSomeValuesFrom(ai:hasPart ai:OpenAIAgentsSDK))
-      SubClassOf(ai:AgentDevelopmentSDKs
-        ObjectSomeValuesFrom(ai:hasPart ai:PydanticAI))
-      SubClassOf(ai:AgentDevelopmentSDKs
-        ObjectSomeValuesFrom(ai:hasPart ai:ToolRegistry))
-      SubClassOf(ai:AgentDevelopmentSDKs
-        ObjectSomeValuesFrom(ai:hasPart ai:MemoryStore))
-      SubClassOf(ai:AgentDevelopmentSDKs
-        ObjectSomeValuesFrom(ai:hasPart ai:AgentRuntime))
+### Content
 
-  ## Dependency Relationships
-      SubClassOf(ai:AgentDevelopmentSDKs
-        ObjectSomeValuesFrom(ai:requires ai:LargeLanguageModel))
-      SubClassOf(ai:AgentDevelopmentSDKs
-        ObjectSomeValuesFrom(ai:requires ai:ModelContextProtocol))
-      SubClassOf(ai:AgentDevelopmentSDKs
-        ObjectSomeValuesFrom(ai:requires ai:ToolUse))
-      SubClassOf(ai:AgentDevelopmentSDKs
-        ObjectSomeValuesFrom(ai:requires ai:FunctionCalling))
-      SubClassOf(ai:AgentDevelopmentSDKs
-        ObjectSomeValuesFrom(ai:requires ai:PersistenceLayer))
-      SubClassOf(ai:AgentDevelopmentSDKs
-        ObjectSomeValuesFrom(ai:requires ai:AgentExecutionSandboxes))
-      SubClassOf(ai:AgentDevelopmentSDKs
-        ObjectSomeValuesFrom(ai:requires ai:ContextWindow))
+## Compositional Relationships (Components)
+    SubClassOf(ai:AgentDevelopmentSDKs
+      ObjectSomeValuesFrom(ai:hasPart ai:ClaudeAgentSDK))
+    SubClassOf(ai:AgentDevelopmentSDKs
+      ObjectSomeValuesFrom(ai:hasPart ai:GoogleADK))
+    SubClassOf(ai:AgentDevelopmentSDKs
+      ObjectSomeValuesFrom(ai:hasPart ai:StrandsAgents))
+    SubClassOf(ai:AgentDevelopmentSDKs
+      ObjectSomeValuesFrom(ai:hasPart ai:OpenAIAgentsSDK))
+    SubClassOf(ai:AgentDevelopmentSDKs
+      ObjectSomeValuesFrom(ai:hasPart ai:PydanticAI))
+    SubClassOf(ai:AgentDevelopmentSDKs
+      ObjectSomeValuesFrom(ai:hasPart ai:ToolRegistry))
+    SubClassOf(ai:AgentDevelopmentSDKs
+      ObjectSomeValuesFrom(ai:hasPart ai:MemoryStore))
+    SubClassOf(ai:AgentDevelopmentSDKs
+      ObjectSomeValuesFrom(ai:hasPart ai:AgentRuntime))
 
-  ## Capability Relationships
-      SubClassOf(ai:AgentDevelopmentSDKs
-        ObjectSomeValuesFrom(ai:enables ai:AutonomousCoding))
-      SubClassOf(ai:AgentDevelopmentSDKs
-        ObjectSomeValuesFrom(ai:enables ai:BrowserAutomation))
-      SubClassOf(ai:AgentDevelopmentSDKs
-        ObjectSomeValuesFrom(ai:enables ai:WorkflowAutomation))
-      SubClassOf(ai:AgentDevelopmentSDKs
-        ObjectSomeValuesFrom(ai:enables ai:HumanInTheLoop))
-      SubClassOf(ai:AgentDevelopmentSDKs
-        ObjectSomeValuesFrom(ai:enables ai:RetrievalAugmentedGeneration))
-      SubClassOf(ai:AgentDevelopmentSDKs
-        ObjectSomeValuesFrom(ai:enables ai:ComputerUse))
+## Dependency Relationships
+    SubClassOf(ai:AgentDevelopmentSDKs
+      ObjectSomeValuesFrom(ai:requires ai:LargeLanguageModel))
+    SubClassOf(ai:AgentDevelopmentSDKs
+      ObjectSomeValuesFrom(ai:requires ai:ModelContextProtocol))
+    SubClassOf(ai:AgentDevelopmentSDKs
+      ObjectSomeValuesFrom(ai:requires ai:ToolUse))
+    SubClassOf(ai:AgentDevelopmentSDKs
+      ObjectSomeValuesFrom(ai:requires ai:FunctionCalling))
+    SubClassOf(ai:AgentDevelopmentSDKs
+      ObjectSomeValuesFrom(ai:requires ai:PersistenceLayer))
+    SubClassOf(ai:AgentDevelopmentSDKs
+      ObjectSomeValuesFrom(ai:requires ai:AgentExecutionSandboxes))
+    SubClassOf(ai:AgentDevelopmentSDKs
+      ObjectSomeValuesFrom(ai:requires ai:ContextWindow))
 
-  ## Implementation Relationships
-      SubClassOf(ai:AgentDevelopmentSDKs
-        ObjectSomeValuesFrom(ai:implements ai:ReActPattern))
-      SubClassOf(ai:AgentDevelopmentSDKs
-        ObjectSomeValuesFrom(ai:implements ai:PlanAndExecutePattern))
-      SubClassOf(ai:AgentDevelopmentSDKs
-        ObjectSomeValuesFrom(ai:implements ai:A2AProtocol))
-      SubClassOf(ai:AgentDevelopmentSDKs
-        ObjectSomeValuesFrom(ai:implements ai:AgentCommunicationProtocol))
-      SubClassOf(ai:AgentDevelopmentSDKs
-        ObjectSomeValuesFrom(ai:implements ai:StructuredOutput))
-      SubClassOf(ai:AgentDevelopmentSDKs
-        ObjectSomeValuesFrom(ai:implements ai:ChainOfThought))
+## Capability Relationships
+    SubClassOf(ai:AgentDevelopmentSDKs
+      ObjectSomeValuesFrom(ai:enables ai:AutonomousCoding))
+    SubClassOf(ai:AgentDevelopmentSDKs
+      ObjectSomeValuesFrom(ai:enables ai:BrowserAutomation))
+    SubClassOf(ai:AgentDevelopmentSDKs
+      ObjectSomeValuesFrom(ai:enables ai:WorkflowAutomation))
+    SubClassOf(ai:AgentDevelopmentSDKs
+      ObjectSomeValuesFrom(ai:enables ai:HumanInTheLoop))
+    SubClassOf(ai:AgentDevelopmentSDKs
+      ObjectSomeValuesFrom(ai:enables ai:RetrievalAugmentedGeneration))
+    SubClassOf(ai:AgentDevelopmentSDKs
+      ObjectSomeValuesFrom(ai:enables ai:ComputerUse))
 
-  ## Reduction Relationships
-      SubClassOf(ai:AgentDevelopmentSDKs
-        ObjectSomeValuesFrom(ai:reducesTo ai:AgentFrameworks))
-      SubClassOf(ai:AgentDevelopmentSDKs
-        ObjectSomeValuesFrom(ai:reducesTo ai:LLMOrchestration))
-      SubClassOf(ai:AgentDevelopmentSDKs
-        ObjectSomeValuesFrom(ai:reducesTo ai:AgentHarness))
+## Implementation Relationships
+    SubClassOf(ai:AgentDevelopmentSDKs
+      ObjectSomeValuesFrom(ai:implements ai:ReActPattern))
+    SubClassOf(ai:AgentDevelopmentSDKs
+      ObjectSomeValuesFrom(ai:implements ai:PlanAndExecutePattern))
+    SubClassOf(ai:AgentDevelopmentSDKs
+      ObjectSomeValuesFrom(ai:implements ai:A2AProtocol))
+    SubClassOf(ai:AgentDevelopmentSDKs
+      ObjectSomeValuesFrom(ai:implements ai:AgentCommunicationProtocol))
+    SubClassOf(ai:AgentDevelopmentSDKs
+      ObjectSomeValuesFrom(ai:implements ai:StructuredOutput))
+    SubClassOf(ai:AgentDevelopmentSDKs
+      ObjectSomeValuesFrom(ai:implements ai:ChainOfThought))
 
-  ## Support Relationships
-      SubClassOf(ai:AgentDevelopmentSDKs
-        ObjectSomeValuesFrom(ai:supports ai:AgentEvaluationBenchmarks))
-      SubClassOf(ai:AgentDevelopmentSDKs
-        ObjectSomeValuesFrom(ai:supports ai:MultiAgentOrchestrationFrameworks))
-      SubClassOf(ai:AgentDevelopmentSDKs
-        ObjectSomeValuesFrom(ai:supports ai:ObservabilityStack))
-      SubClassOf(ai:AgentDevelopmentSDKs
-        ObjectSomeValuesFrom(ai:supports ai:AISafety))
-      SubClassOf(ai:AgentDevelopmentSDKs
-        ObjectSomeValuesFrom(ai:supports ai:AIAgentPayments))
+## Reduction Relationships
+    SubClassOf(ai:AgentDevelopmentSDKs
+      ObjectSomeValuesFrom(ai:reducesTo ai:AgentFrameworks))
+    SubClassOf(ai:AgentDevelopmentSDKs
+      ObjectSomeValuesFrom(ai:reducesTo ai:LLMOrchestration))
+    SubClassOf(ai:AgentDevelopmentSDKs
+      ObjectSomeValuesFrom(ai:reducesTo ai:AgentHarness))
 
-  ## Contrasting Relationships
-      SubClassOf(ai:AgentDevelopmentSDKs
-        ObjectSomeValuesFrom(ai:contrastsWith ai:MultiAgentOrchestrationFrameworks))
-      SubClassOf(ai:AgentDevelopmentSDKs
-        ObjectSomeValuesFrom(ai:contrastsWith ai:LangGraph))
+## Support Relationships
+    SubClassOf(ai:AgentDevelopmentSDKs
+      ObjectSomeValuesFrom(ai:supports ai:AgentEvaluationBenchmarks))
+    SubClassOf(ai:AgentDevelopmentSDKs
+      ObjectSomeValuesFrom(ai:supports ai:MultiAgentOrchestrationFrameworks))
+    SubClassOf(ai:AgentDevelopmentSDKs
+      ObjectSomeValuesFrom(ai:supports ai:ObservabilityStack))
+    SubClassOf(ai:AgentDevelopmentSDKs
+      ObjectSomeValuesFrom(ai:supports ai:AISafety))
+    SubClassOf(ai:AgentDevelopmentSDKs
+      ObjectSomeValuesFrom(ai:supports ai:AIAgentPayments))
 
-  ## About
+## Contrasting Relationships
+    SubClassOf(ai:AgentDevelopmentSDKs
+      ObjectSomeValuesFrom(ai:contrastsWith ai:MultiAgentOrchestrationFrameworks))
+    SubClassOf(ai:AgentDevelopmentSDKs
+      ObjectSomeValuesFrom(ai:contrastsWith ai:LangGraph))
 
-  ### The Problem That Agent Development SDKs Solve
+## About
 
-  The category of Agent Development SDKs emerged from a transition in the AI industry: as frontier models became reliably capable of multi-step [[Tool Use]] and long-horizon task execution, the friction point shifted from model capability to infrastructure. Early agent builders, from roughly 2022 to 2024, constructed bespoke scaffolds around raw model APIs — hand-written prompt engineering loops, custom tool dispatch code, ad-hoc state management, informal retry logic, and hard-coded context truncation strategies. This approach was simultaneously functional and brittle: each model API update could break the scaffold in subtle ways, tool schemas drifted as providers updated their function-calling specifications, there was no standardised way to compose agents across providers or share tool definitions between teams, and testing was largely manual because no reproducible evaluation framework existed. The first generation of orchestration libraries (LangChain, 2022) addressed composability but remained so provider-agnostic that they imposed a significant abstraction overhead, and their rapidly changing internal APIs frustrated engineering teams trying to maintain production deployments.
+### The Problem That Agent Development SDKs Solve
 
-  The second generation — proper first-party SDKs — represents a different design philosophy entirely: the model provider owns the loop from inference to tool execution, provides a stable API surface versioned alongside the model, and co-designs deployment infrastructure with the SDK. This means that when Anthropic adds computer-use capability to Claude, the computer-use API is exposed through the [[Claude Agent SDK]] as a first-class primitive rather than requiring SDK consumers to reverse-engineer the raw API changes. When AWS improves Amazon Bedrock's streaming performance, [[Strands Agents]] automatically benefits. When OpenAI extends the Responses API with new state management capabilities, the [[OpenAI Agents SDK]] exposes them immediately. The SDK relationship also carries an implicit support contract: enterprise customers buying Claude Agent SDK credits through Anthropic's billing relationship can expect Anthropic's support team to own the full stack from model to agent loop, rather than debugging at the seam between a third-party orchestration library and the provider API.
+The category of Agent Development SDKs emerged from a transition in the AI industry: as frontier models became reliably capable of multi-step [[Tool Use]] and long-horizon task execution, the friction point shifted from model capability to infrastructure. Early agent builders, from roughly 2022 to 2024, constructed bespoke scaffolds around raw model APIs — hand-written prompt engineering loops, custom tool dispatch code, ad-hoc state management, informal retry logic, and hard-coded context truncation strategies. This approach was simultaneously functional and brittle: each model API update could break the scaffold in subtle ways, tool schemas drifted as providers updated their function-calling specifications, there was no standardised way to compose agents across providers or share tool definitions between teams, and testing was largely manual because no reproducible evaluation framework existed. The first generation of orchestration libraries (LangChain, 2022) addressed composability but remained so provider-agnostic that they imposed a significant abstraction overhead, and their rapidly changing internal APIs frustrated engineering teams trying to maintain production deployments.
 
-  ### Protocol Convergence as Enabler
+The second generation — proper first-party SDKs — represents a different design philosophy entirely: the model provider owns the loop from inference to tool execution, provides a stable API surface versioned alongside the model, and co-designs deployment infrastructure with the SDK. This means that when Anthropic adds computer-use capability to Claude, the computer-use API is exposed through the [[Claude Agent SDK]] as a first-class primitive rather than requiring SDK consumers to reverse-engineer the raw API changes. When AWS improves Amazon Bedrock's streaming performance, [[Strands Agents]] automatically benefits. When OpenAI extends the Responses API with new state management capabilities, the [[OpenAI Agents SDK]] exposes them immediately. The SDK relationship also carries an implicit support contract: enterprise customers buying Claude Agent SDK credits through Anthropic's billing relationship can expect Anthropic's support team to own the full stack from model to agent loop, rather than debugging at the seam between a third-party orchestration library and the provider API.
 
-  The decisive technical enabler of first-party SDKs was not any single capability improvement but the convergence of two key protocols that decoupled the tool layer from the agent loop and enabled inter-agent communication. The [[Model Context Protocol]] (MCP, Anthropic November 2024, contributed to the Linux Foundation Agentic AI Foundation in December 2025 alongside OpenAI and Block, backed by AWS, Google, Microsoft, and Cloudflare) standardised how tools expose their capabilities and schemas to any MCP-capable agent, regardless of which SDK is running the agent loop. This decoupling created an extraordinary network effect: a developer who builds an MCP server for their GitHub integration can immediately make it available to agents running on any SDK, not just Claude. By March 2026, the MCP ecosystem had grown to 9,652 registered server records in the official MCP Registry, over 10,000 active public MCP servers per Anthropic's December 2025 ecosystem update, and 97 million monthly SDK downloads — a 970x increase from the first month of availability. Uses of action tools (MCP calls, file operations, API requests) grew from 27% of total tool uses in November 2024 to 65% by February 2026, documenting the structural shift from information retrieval to action execution as the dominant agentic use pattern.
+### Protocol Convergence as Enabler
 
-  The [[A2A Protocol]] (Google, April 2025, rapidly absorbed into the Linux Foundation Agentic AI Foundation alongside MCP) solved the complementary problem of inter-agent communication: how do agents built on different SDKs hand off tasks, share context, and coordinate without bespoke integration code? A2A defines Agent Cards — structured JSON manifests describing an agent's capabilities, schema, input/output types, and MCP server dependencies — and a protocol for agents to discover, address, and communicate with each other via these cards. Strands Agents 1.0 (May 2026) shipped with full A2A support, and Google ADK's Agent Cards are a core design feature. The combination of MCP (tool-layer interoperability) and A2A (agent-layer interoperability) means that, at the protocol level, the ecosystem is converging toward vendor-neutral standards even as SDKs compete on implementation quality, performance, and ancillary infrastructure.
+The decisive technical enabler of first-party SDKs was not any single capability improvement but the convergence of two key protocols that decoupled the tool layer from the agent loop and enabled inter-agent communication. The [[Model Context Protocol]] (MCP, Anthropic November 2024, contributed to the Linux Foundation Agentic AI Foundation in December 2025 alongside OpenAI and Block, backed by AWS, Google, Microsoft, and Cloudflare) standardised how tools expose their capabilities and schemas to any MCP-capable agent, regardless of which SDK is running the agent loop. This decoupling created an extraordinary network effect: a developer who builds an MCP server for their GitHub integration can immediately make it available to agents running on any SDK, not just Claude. By March 2026, the MCP ecosystem had grown to 9,652 registered server records in the official MCP Registry, over 10,000 active public MCP servers per Anthropic's December 2025 ecosystem update, and 97 million monthly SDK downloads — a 970x increase from the first month of availability. Uses of action tools (MCP calls, file operations, API requests) grew from 27% of total tool uses in November 2024 to 65% by February 2026, documenting the structural shift from information retrieval to action execution as the dominant agentic use pattern.
 
-  ### From Single-Agent to Multi-Agent Primitives
+The [[A2A Protocol]] (Google, April 2025, rapidly absorbed into the Linux Foundation Agentic AI Foundation alongside MCP) solved the complementary problem of inter-agent communication: how do agents built on different SDKs hand off tasks, share context, and coordinate without bespoke integration code? A2A defines Agent Cards — structured JSON manifests describing an agent's capabilities, schema, input/output types, and MCP server dependencies — and a protocol for agents to discover, address, and communicate with each other via these cards. Strands Agents 1.0 (May 2026) shipped with full A2A support, and Google ADK's Agent Cards are a core design feature. The combination of MCP (tool-layer interoperability) and A2A (agent-layer interoperability) means that, at the protocol level, the ecosystem is converging toward vendor-neutral standards even as SDKs compete on implementation quality, performance, and ancillary infrastructure.
 
-  The defining architectural evolution of 2025 to 2026 was the systematic incorporation of multi-agent primitives into every major SDK. Early SDKs exposed the basic single-agent loop: model call → tool dispatch → model call. By mid-2026, all major SDKs provide at least four distinct multi-agent composition patterns, most closely matching the set introduced by Strands Agents 1.0:
+### From Single-Agent to Multi-Agent Primitives
 
-  - **SubAgent**: run an agent as a tool callable by a parent orchestrator; the parent dispatches work declaratively, the child executes it synchronously and returns a result; this enables hierarchical decomposition of complex tasks without writing explicit orchestration logic
-  - **ParallelAgent**: fan-out the same task or a set of tasks to multiple agents simultaneously, collect results asynchronously, and merge outputs; particularly suited to map-reduce patterns such as parallel code review, parallel document analysis, or parallel hypothesis testing
-  - **Pipeline**: chain agents sequentially where each agent's output is the next agent's input; enables transformation chains such as extract → classify → summarise → draft, where each stage has a specialised model or tool configuration
-  - **GraphAgent** (or equivalents): define conditional routing between agents based on intermediate results using a state graph; enables branching workflows, retry loops, and escalation paths that cannot be represented as pure sequential pipelines
+The defining architectural evolution of 2025 to 2026 was the systematic incorporation of multi-agent primitives into every major SDK. Early SDKs exposed the basic single-agent loop: model call → tool dispatch → model call. By mid-2026, all major SDKs provide at least four distinct multi-agent composition patterns, most closely matching the set introduced by Strands Agents 1.0:
+
+- **SubAgent**: run an agent as a tool callable by a parent orchestrator; the parent dispatches work declaratively, the child executes it synchronously and returns a result; this enables hierarchical decomposition of complex tasks without writing explicit orchestration logic
+- **ParallelAgent**: fan-out the same task or a set of tasks to multiple agents simultaneously, collect results asynchronously, and merge outputs; particularly suited to map-reduce patterns such as parallel code review, parallel document analysis, or parallel hypothesis testing
+- **Pipeline**: chain agents sequentially where each agent's output is the next agent's input; enables transformation chains such as extract → classify → summarise → draft, where each stage has a specialised model or tool configuration
+- **GraphAgent** (or equivalents): define conditional routing between agents based on intermediate results using a state graph; enables branching workflows, retry loops, and escalation paths that cannot be represented as pure sequential pipelines
 
   These primitives bridge the gap between SDK-level single-agent deployment and [[Multi-Agent Orchestration Frameworks]] like CrewAI or AutoGen, making it possible to build moderate-complexity multi-agent systems entirely within a first-party SDK without adopting a separate orchestration layer. The practical question for engineering teams is increasingly not "which SDK or framework?" but "at what complexity level do SDK multi-agent primitives become insufficient and a dedicated orchestration framework become necessary?" — and the answer has shifted steadily toward the latter, as SDK primitives have grown more sophisticated.
 
@@ -287,24 +287,24 @@ Official vendor SDKs and libraries for building custom AI agents with built-in t
 
   ## Future Directions (2026–2030)
 
-  - **LAAF protocol standardisation**: convergence on the Linux Foundation Agentic AI Foundation protocol stack (MCP + A2A) as universal agent infrastructure, progressively reducing provider lock-in and enabling true multi-vendor agent networks where agents from different providers collaborate seamlessly
-  - **IDE-native SDK integration**: agent development kits integrated directly into Cursor, VS Code, JetBrains, and similar IDEs as first-class development experiences, with in-editor agent testing, trace visualisation, and approval gate simulation — blurring the line between IDE plugin and full SDK
-  - **Typed agent schemas**: formal capability declaration for agents analogous to OpenAPI for REST services, enabling automated compatibility checking, safe composition, and discovery — extending the Agent Card concept into a richer formal language
-  - **Safety-first primitives**: built-in red-teaming hooks, OWASP Agentic Application scan integration, and policy-adherence testing as first-class SDK features rather than third-party add-ons; regulatory pressure from EU AI Act implementing acts (expected 2026 to 2027) will accelerate this trend
-  - **[[AI Agent Payments]] integration**: stablecoin micropayment infrastructure for agent-to-tool-provider billing, agent-to-agent task delegation billing, and cross-provider credit markets, becoming standard SDK features as agentic commerce matures beyond the experimental stage
-  - **Embodied agent SDK extensions**: extending digital agent SDKs (particularly Google ADK and Strands) to support robot control APIs, bridging the gap between digital and physical agent action spaces for manufacturing, logistics, and scientific laboratory automation use cases
-  - **Long-horizon reliability engineering**: SDK features specifically designed for week-scale agent tasks — checkpoint/restore, partial-failure recovery, human-in-the-loop consultation at ambiguity points, and cost budgets that can be dynamically adjusted mid-task — as agent autonomy time horizons extend beyond what current session management architectures handle reliably
+- **LAAF protocol standardisation**: convergence on the Linux Foundation Agentic AI Foundation protocol stack (MCP + A2A) as universal agent infrastructure, progressively reducing provider lock-in and enabling true multi-vendor agent networks where agents from different providers collaborate seamlessly
+- **IDE-native SDK integration**: agent development kits integrated directly into Cursor, VS Code, JetBrains, and similar IDEs as first-class development experiences, with in-editor agent testing, trace visualisation, and approval gate simulation — blurring the line between IDE plugin and full SDK
+- **Typed agent schemas**: formal capability declaration for agents analogous to OpenAPI for REST services, enabling automated compatibility checking, safe composition, and discovery — extending the Agent Card concept into a richer formal language
+- **Safety-first primitives**: built-in red-teaming hooks, OWASP Agentic Application scan integration, and policy-adherence testing as first-class SDK features rather than third-party add-ons; regulatory pressure from EU AI Act implementing acts (expected 2026 to 2027) will accelerate this trend
+- **[[AI Agent Payments]] integration**: stablecoin micropayment infrastructure for agent-to-tool-provider billing, agent-to-agent task delegation billing, and cross-provider credit markets, becoming standard SDK features as agentic commerce matures beyond the experimental stage
+- **Embodied agent SDK extensions**: extending digital agent SDKs (particularly Google ADK and Strands) to support robot control APIs, bridging the gap between digital and physical agent action spaces for manufacturing, logistics, and scientific laboratory automation use cases
+- **Long-horizon reliability engineering**: SDK features specifically designed for week-scale agent tasks — checkpoint/restore, partial-failure recovery, human-in-the-loop consultation at ambiguity points, and cost budgets that can be dynamically adjusted mid-task — as agent autonomy time horizons extend beyond what current session management architectures handle reliably
 
   ## Key Terminology
 
-  - **Agent loop**: the core iteration of a model development SDK — model inference, tool dispatch, observation, re-inference — that drives autonomous task execution
-  - **Tool registry**: the component that maps tool names to implementations, maintains tool schemas for the model, and manages tool lifecycle (startup, health checking, shutdown)
-  - **Agent Card**: the A2A Protocol's structured JSON manifest describing an agent's capabilities, schema, and communication address; enables agent discovery and declarative composition
-  - **MCP server**: a service exposing one or more tools via the Model Context Protocol, discoverable and callable by any MCP-capable agent regardless of which SDK is running the agent loop
-  - **Session persistence**: the mechanism by which an agent's conversation state is checkpointed to durable storage, enabling resumption after process interruption
-  - **Approval gate**: a configurable decision point in the agent loop where execution pauses and a proposed action is surfaced to a human reviewer before being executed
-  - **Multi-agent primitive**: a higher-order composition construct (SubAgent, ParallelAgent, Pipeline, GraphAgent) that combines multiple single-agent instances into a coordinated multi-agent system within a single SDK
-  - **Time horizon**: the longest autonomous task completable at ≥50% pass rate; a key metric for assessing which agent SDK primitives are appropriate for a given use case (short tasks can use ephemeral context; long tasks require session persistence and [[Human-in-the-Loop]] check-ins)
+- **Agent loop**: the core iteration of a model development SDK — model inference, tool dispatch, observation, re-inference — that drives autonomous task execution
+- **Tool registry**: the component that maps tool names to implementations, maintains tool schemas for the model, and manages tool lifecycle (startup, health checking, shutdown)
+- **Agent Card**: the A2A Protocol's structured JSON manifest describing an agent's capabilities, schema, and communication address; enables agent discovery and declarative composition
+- **MCP server**: a service exposing one or more tools via the Model Context Protocol, discoverable and callable by any MCP-capable agent regardless of which SDK is running the agent loop
+- **Session persistence**: the mechanism by which an agent's conversation state is checkpointed to durable storage, enabling resumption after process interruption
+- **Approval gate**: a configurable decision point in the agent loop where execution pauses and a proposed action is surfaced to a human reviewer before being executed
+- **Multi-agent primitive**: a higher-order composition construct (SubAgent, ParallelAgent, Pipeline, GraphAgent) that combines multiple single-agent instances into a coordinated multi-agent system within a single SDK
+- **Time horizon**: the longest autonomous task completable at ≥50% pass rate; a key metric for assessing which agent SDK primitives are appropriate for a given use case (short tasks can use ephemeral context; long tasks require session persistence and [[Human-in-the-Loop]] check-ins)
 
   ## Research and Literature
 
@@ -346,25 +346,29 @@ Official vendor SDKs and libraries for building custom AI agents with built-in t
   MCP defines a client-server protocol where an MCP client (running inside the agent) connects to one or more MCP servers (running as separate processes or remote services) to discover and invoke tools. The protocol uses JSON-RPC 2.0 over stdio (for local subprocess servers), HTTP with Server-Sent Events (for remote servers), or WebSockets (for bidirectional streaming). The protocol lifecycle is:
 
   **Server initialisation**
-  - Client connects to server via transport (stdio, HTTP, WebSocket)
-  - Client sends `initialize` request with protocol version and capabilities
-  - Server responds with its capabilities, protocol version, and server info
-  - Client sends `initialized` notification to complete handshake
+
+- Client connects to server via transport (stdio, HTTP, WebSocket)
+- Client sends `initialize` request with protocol version and capabilities
+- Server responds with its capabilities, protocol version, and server info
+- Client sends `initialized` notification to complete handshake
 
   **Tool discovery**
-  - Client sends `tools/list` request
-  - Server responds with array of tool definitions: each tool has a name, description (used by the model to understand when to invoke it), and JSON Schema input specification
-  - Client registers discovered tools with the model's function-calling schema translator
+
+- Client sends `tools/list` request
+- Server responds with array of tool definitions: each tool has a name, description (used by the model to understand when to invoke it), and JSON Schema input specification
+- Client registers discovered tools with the model's function-calling schema translator
 
   **Tool invocation**
-  - Model emits a tool-call with tool name and argument values matching the schema
-  - SDK's MCP client sends `tools/call` request to the appropriate server
-  - Server executes the tool and returns structured result (text, image, embedded resource, or error)
-  - SDK formats the result as a tool-result message and reinserts it into the conversation context
+
+- Model emits a tool-call with tool name and argument values matching the schema
+- SDK's MCP client sends `tools/call` request to the appropriate server
+- Server executes the tool and returns structured result (text, image, embedded resource, or error)
+- SDK formats the result as a tool-result message and reinserts it into the conversation context
 
   **Resource access (optional)**
-  - Servers can expose resources (files, database rows, API responses) that tools can read
-  - `resources/list` and `resources/read` requests enable agents to browse and read structured data without wrapping it in a tool call
+
+- Servers can expose resources (files, database rows, API responses) that tools can read
+- `resources/list` and `resources/read` requests enable agents to browse and read structured data without wrapping it in a tool call
 
   MCP's key design decisions: the tool description string is the primary interface between tool authors and models, so good MCP server quality depends on clear, concise, example-rich descriptions that help the model decide when and how to use each tool. The JSON Schema input specification provides type safety and enables the model to reason about valid argument combinations. The transport-agnostic design enables both local development (stdio subprocess) and production deployment (remote HTTPS server) without SDK code changes.
 
@@ -373,38 +377,42 @@ Official vendor SDKs and libraries for building custom AI agents with built-in t
   A2A (Agent-to-Agent) extends MCP's tool-calling pattern to cover the case where the "tool" being called is itself another agent. The protocol introduces:
 
   **Agent Cards**
-  - JSON manifest files describing an agent's capabilities, input/output schema, supported task types, communication address, and authentication requirements
-  - Published to an agent directory or discoverable via well-known URL
-  - Consumed by orchestrators to determine which agents to route specific tasks to
-  - Google ADK makes Agent Cards a first-class concept with tooling to generate and validate them
+
+- JSON manifest files describing an agent's capabilities, input/output schema, supported task types, communication address, and authentication requirements
+- Published to an agent directory or discoverable via well-known URL
+- Consumed by orchestrators to determine which agents to route specific tasks to
+- Google ADK makes Agent Cards a first-class concept with tooling to generate and validate them
 
   **Task protocol**
-  - Orchestrator sends task message to agent via A2A transport (HTTP/SSE or WebSocket)
-  - Task message includes: task description, context (conversation history, relevant documents), required output schema, and callback address for async results
-  - Agent accepts, processes, and returns structured result conforming to the requested schema
-  - Streaming updates (progress, intermediate results) supported via SSE
+
+- Orchestrator sends task message to agent via A2A transport (HTTP/SSE or WebSocket)
+- Task message includes: task description, context (conversation history, relevant documents), required output schema, and callback address for async results
+- Agent accepts, processes, and returns structured result conforming to the requested schema
+- Streaming updates (progress, intermediate results) supported via SSE
 
   **Authentication and trust**
-  - A2A defines OAuth 2.0 and API key authentication patterns for agent-to-agent communication
-  - Enterprise deployments combine A2A authentication with service-mesh mTLS for additional security
-  - The Linux Foundation Agentic AI Foundation (LAAF) is developing trust-level specifications for A2A communication in regulated contexts
+
+- A2A defines OAuth 2.0 and API key authentication patterns for agent-to-agent communication
+- Enterprise deployments combine A2A authentication with service-mesh mTLS for additional security
+- The Linux Foundation Agentic AI Foundation (LAAF) is developing trust-level specifications for A2A communication in regulated contexts
 
   **Cross-SDK interoperability**
-  - An orchestrator built on [[Strands Agents]] can discover and call an agent built on [[Google ADK]] via A2A, as long as both correctly implement the A2A Agent Card and task protocol
-  - This is the key promise of standardised protocols: SDK competition on implementation quality, not lock-in via proprietary communication formats
-  - As of mid-2026, A2A interoperability between [[Strands Agents]], [[Google ADK]], and [[Claude Agent SDK]] is in production use at several enterprise deployments
+
+- An orchestrator built on [[Strands Agents]] can discover and call an agent built on [[Google ADK]] via A2A, as long as both correctly implement the A2A Agent Card and task protocol
+- This is the key promise of standardised protocols: SDK competition on implementation quality, not lock-in via proprietary communication formats
+- As of mid-2026, A2A interoperability between [[Strands Agents]], [[Google ADK]], and [[Claude Agent SDK]] is in production use at several enterprise deployments
 
   ### MCP Statistics and Ecosystem Scale (Mid-2026)
 
   The growth of the MCP ecosystem provides concrete evidence of the network effects that standardised protocols enable:
 
-  - Monthly SDK downloads: 97 million (March 2026), up from ~100,000 in November 2024 (970x growth in 16 months)
-  - Official MCP Registry: 9,652 latest server records as of May 24, 2026
-  - Active public MCP servers: over 10,000 (Anthropic December 2025 count); 17,468 indexed by Nerq in Q1 2026
-  - Enterprise adoption: 41% of surveyed software organisations with MCP servers in limited or broad production
-  - Remote MCP server growth: 4x since May 2025, indicating shift from experimentation to deployment
-  - Tool use distribution shift: action tools (MCP calls, file ops, API requests) grew from 27% to 65% of total tool uses (November 2024 to February 2026)
-  - AI-assisted server creation: 62% of new MCP servers created with AI assistance by February 2026 (up from 6% in January 2025), dominated by Claude Code
+- Monthly SDK downloads: 97 million (March 2026), up from ~100,000 in November 2024 (970x growth in 16 months)
+- Official MCP Registry: 9,652 latest server records as of May 24, 2026
+- Active public MCP servers: over 10,000 (Anthropic December 2025 count); 17,468 indexed by Nerq in Q1 2026
+- Enterprise adoption: 41% of surveyed software organisations with MCP servers in limited or broad production
+- Remote MCP server growth: 4x since May 2025, indicating shift from experimentation to deployment
+- Tool use distribution shift: action tools (MCP calls, file ops, API requests) grew from 27% to 65% of total tool uses (November 2024 to February 2026)
+- AI-assisted server creation: 62% of new MCP servers created with AI assistance by February 2026 (up from 6% in January 2025), dominated by Claude Code
 
   These numbers establish MCP as the fastest-adopted developer protocol in AI infrastructure history, faster than REST, GraphQL, or gRPC at equivalent adoption milestones. For [[Agent Development SDKs]], the implication is that any SDK without strong MCP integration is effectively locked out of the standard tool ecosystem — a structural constraint that ensures continued convergence on MCP as the tool-layer standard.
 
@@ -413,112 +421,123 @@ Official vendor SDKs and libraries for building custom AI agents with built-in t
   The following captures primary differentiating features across major SDK platforms as of mid-2026:
 
   **[[Claude Agent SDK]] (Anthropic)**
-  - Languages: Python, TypeScript
-  - MCP integration: deepest (Anthropic is MCP author); ships MCP reference client
-  - A2A support: yes (full Agent Card generation and A2A routing)
-  - Managed deployment: Anthropic managed compute; metered Agent SDK credits (separate from API credits since June 2026)
-  - Computer use: yes (first-class native tool exposing screenshot + keyboard/mouse API)
-  - Approval gates: advanced (configurable criteria, async human review, audit log)
-  - Observability: OpenTelemetry traces, Anthropic dashboard
-  - Multi-agent primitives: SubAgent (via tool nesting); Pipeline (via sequential calls); advanced orchestration requires external framework
-  - Licence: commercial (tied to Anthropic API agreement)
-  - Primary use case: coding agents, legal assistants, SRE bots; highest MCP ecosystem compatibility
+
+- Languages: Python, TypeScript
+- MCP integration: deepest (Anthropic is MCP author); ships MCP reference client
+- A2A support: yes (full Agent Card generation and A2A routing)
+- Managed deployment: Anthropic managed compute; metered Agent SDK credits (separate from API credits since June 2026)
+- Computer use: yes (first-class native tool exposing screenshot + keyboard/mouse API)
+- Approval gates: advanced (configurable criteria, async human review, audit log)
+- Observability: OpenTelemetry traces, Anthropic dashboard
+- Multi-agent primitives: SubAgent (via tool nesting); Pipeline (via sequential calls); advanced orchestration requires external framework
+- Licence: commercial (tied to Anthropic API agreement)
+- Primary use case: coding agents, legal assistants, SRE bots; highest MCP ecosystem compatibility
 
   **[[Google ADK]] (Google DeepMind)**
-  - Languages: Python, TypeScript, Java, Go
-  - MCP integration: yes (via adapter); growing ecosystem
-  - A2A support: yes (Agent Cards are a core native concept)
-  - Managed deployment: Vertex AI Agent Engine (fully managed, autoscaling, built-in Cloud Logging)
-  - Computer use: yes (via multi-modal tool calls and browser automation)
-  - Approval gates: yes (integration with Cloud Workflows approval steps)
-  - Observability: Cloud Trace, Cloud Logging, Vertex AI Model Monitoring
-  - Multi-agent primitives: SubAgent, Parallel, Pipeline, GraphAgent (all four patterns)
-  - Licence: open-source Apache 2.0 (SDK); Vertex AI Agent Engine is commercial managed service
-  - Primary use case: Google Cloud-native enterprise deployments, Workspace automation, multi-language teams
+
+- Languages: Python, TypeScript, Java, Go
+- MCP integration: yes (via adapter); growing ecosystem
+- A2A support: yes (Agent Cards are a core native concept)
+- Managed deployment: Vertex AI Agent Engine (fully managed, autoscaling, built-in Cloud Logging)
+- Computer use: yes (via multi-modal tool calls and browser automation)
+- Approval gates: yes (integration with Cloud Workflows approval steps)
+- Observability: Cloud Trace, Cloud Logging, Vertex AI Model Monitoring
+- Multi-agent primitives: SubAgent, Parallel, Pipeline, GraphAgent (all four patterns)
+- Licence: open-source Apache 2.0 (SDK); Vertex AI Agent Engine is commercial managed service
+- Primary use case: Google Cloud-native enterprise deployments, Workspace automation, multi-language teams
 
   **[[Strands Agents]] (AWS)**
-  - Languages: Python (1.0 May 2026), TypeScript (1.0 April 2026)
-  - MCP integration: yes (full MCP client; 20+ pre-built tools; any MCP server pluggable)
-  - A2A support: yes (added in 1.0 release)
-  - Managed deployment: AWS AgentCore (managed), also Lambda/ECS/local
-  - Computer use: via custom tools or MCP server integration
-  - Approval gates: yes (human-in-the-loop hooks; AWS Step Functions integration for enterprise approval workflows)
-  - Observability: AWS CloudWatch, X-Ray tracing; OpenTelemetry compatible
-  - Multi-agent primitives: SubAgent, ParallelAgent, Pipeline, GraphAgent (introduced in 1.0)
-  - Licence: Apache 2.0 (SDK); AWS AgentCore is commercial managed service
-  - Model flexibility: highest (any Bedrock model, Anthropic direct, Llama API, Ollama, any OpenAI-compatible via LiteLLM)
-  - Primary use case: AWS-infrastructure teams, model-neutral deployments, enterprise multi-agent systems
+
+- Languages: Python (1.0 May 2026), TypeScript (1.0 April 2026)
+- MCP integration: yes (full MCP client; 20+ pre-built tools; any MCP server pluggable)
+- A2A support: yes (added in 1.0 release)
+- Managed deployment: AWS AgentCore (managed), also Lambda/ECS/local
+- Computer use: via custom tools or MCP server integration
+- Approval gates: yes (human-in-the-loop hooks; AWS Step Functions integration for enterprise approval workflows)
+- Observability: AWS CloudWatch, X-Ray tracing; OpenTelemetry compatible
+- Multi-agent primitives: SubAgent, ParallelAgent, Pipeline, GraphAgent (introduced in 1.0)
+- Licence: Apache 2.0 (SDK); AWS AgentCore is commercial managed service
+- Model flexibility: highest (any Bedrock model, Anthropic direct, Llama API, Ollama, any OpenAI-compatible via LiteLLM)
+- Primary use case: AWS-infrastructure teams, model-neutral deployments, enterprise multi-agent systems
 
   **[[OpenAI Agents SDK]]**
-  - Languages: Python, TypeScript
-  - MCP integration: yes (via adapters); growing
-  - A2A support: partial (Responses API handles state; cross-provider A2A in progress)
-  - Managed deployment: OpenAI platform (Responses API with hosted session state)
-  - Computer use: via Code Interpreter and Operator tool
-  - Approval gates: yes (harness system with structured human review)
-  - Observability: OpenAI platform dashboard; OpenTelemetry hooks
-  - Multi-agent primitives: handoff pattern (from Swarm); parallel execution via async patterns
-  - Licence: MIT (SDK); OpenAI API is commercial
-  - Primary use case: GPT-4o-based deployments, ChatGPT operator integrations, OpenAI platform customers
+
+- Languages: Python, TypeScript
+- MCP integration: yes (via adapters); growing
+- A2A support: partial (Responses API handles state; cross-provider A2A in progress)
+- Managed deployment: OpenAI platform (Responses API with hosted session state)
+- Computer use: via Code Interpreter and Operator tool
+- Approval gates: yes (harness system with structured human review)
+- Observability: OpenAI platform dashboard; OpenTelemetry hooks
+- Multi-agent primitives: handoff pattern (from Swarm); parallel execution via async patterns
+- Licence: MIT (SDK); OpenAI API is commercial
+- Primary use case: GPT-4o-based deployments, ChatGPT operator integrations, OpenAI platform customers
 
   **[[Pydantic AI]]**
-  - Languages: Python only
-  - MCP integration: yes (added early 2025)
-  - A2A support: community adapters; not first-class as of mid-2026
-  - Managed deployment: any Python-compatible hosting; no first-party managed runtime
-  - Computer use: via custom tools
-  - Approval gates: via dependency injection pattern; no first-class built-in
-  - Observability: Logfire integration (Pydantic's own observability product); OpenTelemetry compatible
-  - Multi-agent primitives: agent-as-tool pattern; no dedicated multi-agent primitives yet
-  - Licence: MIT
-  - Primary use case: FastAPI-integrated backends, type-safe Python codebases, data engineering teams
+
+- Languages: Python only
+- MCP integration: yes (added early 2025)
+- A2A support: community adapters; not first-class as of mid-2026
+- Managed deployment: any Python-compatible hosting; no first-party managed runtime
+- Computer use: via custom tools
+- Approval gates: via dependency injection pattern; no first-class built-in
+- Observability: Logfire integration (Pydantic's own observability product); OpenTelemetry compatible
+- Multi-agent primitives: agent-as-tool pattern; no dedicated multi-agent primitives yet
+- Licence: MIT
+- Primary use case: FastAPI-integrated backends, type-safe Python codebases, data engineering teams
 
   **[[Mastra]] (TypeScript-first)**
-  - Languages: TypeScript / JavaScript only
-  - MCP integration: yes (first-class)
-  - A2A support: yes (growing)
-  - Managed deployment: Vercel integration; also Cloudflare Workers
-  - Computer use: via browser automation tool integrations
-  - Approval gates: yes (workflow approval steps)
-  - Observability: built-in tracing; Vercel analytics integration
-  - Multi-agent primitives: workflow graph with agent nodes; parallel step execution
-  - Licence: Apache 2.0
-  - Primary use case: Next.js and web-native agent applications, TypeScript-first teams
+
+- Languages: TypeScript / JavaScript only
+- MCP integration: yes (first-class)
+- A2A support: yes (growing)
+- Managed deployment: Vercel integration; also Cloudflare Workers
+- Computer use: via browser automation tool integrations
+- Approval gates: yes (workflow approval steps)
+- Observability: built-in tracing; Vercel analytics integration
+- Multi-agent primitives: workflow graph with agent nodes; parallel step execution
+- Licence: Apache 2.0
+- Primary use case: Next.js and web-native agent applications, TypeScript-first teams
 
   ## SDK Selection Decision Framework
 
   Practitioners selecting an Agent Development SDK in 2026 typically apply the following decision criteria in sequence:
 
   **Language and ecosystem fit (first filter)**
-  - Python-only team building FastAPI service → [[Pydantic AI]]
-  - TypeScript/Next.js team → [[Mastra]] or [[Claude Agent SDK]] TypeScript
-  - Multi-language enterprise (Java, Go backends) → [[Google ADK]]
-  - Python team with no language constraint → evaluate all Python SDKs on remaining criteria
+
+- Python-only team building FastAPI service → [[Pydantic AI]]
+- TypeScript/Next.js team → [[Mastra]] or [[Claude Agent SDK]] TypeScript
+- Multi-language enterprise (Java, Go backends) → [[Google ADK]]
+- Python team with no language constraint → evaluate all Python SDKs on remaining criteria
 
   **Infrastructure lock-in tolerance**
-  - AWS-committed infrastructure → [[Strands Agents]] + AWS AgentCore
-  - Google Cloud-committed → [[Google ADK]] + Vertex AI Agent Engine
-  - Provider-neutral requirement → [[Strands Agents]] (Apache 2.0, model-neutral) or [[Pydantic AI]]
-  - Already Anthropic API customer → [[Claude Agent SDK]]
+
+- AWS-committed infrastructure → [[Strands Agents]] + AWS AgentCore
+- Google Cloud-committed → [[Google ADK]] + Vertex AI Agent Engine
+- Provider-neutral requirement → [[Strands Agents]] (Apache 2.0, model-neutral) or [[Pydantic AI]]
+- Already Anthropic API customer → [[Claude Agent SDK]]
 
   **Feature priority ranking**
-  - MCP ecosystem depth → [[Claude Agent SDK]] (Anthropic is MCP author)
-  - Agent Card / A2A interoperability → [[Google ADK]] or [[Strands Agents]] 1.0
-  - Model flexibility (run Claude, GPT-4, Llama, local models) → [[Strands Agents]]
-  - Type safety and FastAPI integration → [[Pydantic AI]]
-  - Computer use (GUI automation) → [[Claude Agent SDK]]
-  - Regulated enterprise (approval gates, audit logging) → [[Claude Agent SDK]] or [[OpenAI Agents SDK]]
+
+- MCP ecosystem depth → [[Claude Agent SDK]] (Anthropic is MCP author)
+- Agent Card / A2A interoperability → [[Google ADK]] or [[Strands Agents]] 1.0
+- Model flexibility (run Claude, GPT-4, Llama, local models) → [[Strands Agents]]
+- Type safety and FastAPI integration → [[Pydantic AI]]
+- Computer use (GUI automation) → [[Claude Agent SDK]]
+- Regulated enterprise (approval gates, audit logging) → [[Claude Agent SDK]] or [[OpenAI Agents SDK]]
 
   **Deployment and scaling requirement**
-  - Serverless, event-driven, low-cost → AWS Lambda + [[Strands Agents]]
-  - Managed, autoscaling, no DevOps → Vertex AI Agent Engine + [[Google ADK]]
-  - Vercel/Edge deployment → [[Mastra]]
-  - On-premise or private cloud → [[Strands Agents]] or [[Pydantic AI]] (both self-hostable)
+
+- Serverless, event-driven, low-cost → AWS Lambda + [[Strands Agents]]
+- Managed, autoscaling, no DevOps → Vertex AI Agent Engine + [[Google ADK]]
+- Vercel/Edge deployment → [[Mastra]]
+- On-premise or private cloud → [[Strands Agents]] or [[Pydantic AI]] (both self-hostable)
 
   **Evaluation and compliance**
-  - Need [[Agent Evaluation Benchmarks]] coverage for procurement justification → all major SDKs run against relevant benchmarks; check provider's published scores on SWE-bench/GAIA/TAU-bench
-  - Regulated sector (finance, healthcare, public sector UK) → prioritise approval gates, audit logging, and [[AI Safety]] feature set; [[Claude Agent SDK]] and [[OpenAI Agents SDK]] most mature here
-  - EU AI Act high-risk deployment → ensure SDK supports structured audit trail and human oversight; verify against OWASP Agentic Application Top 10 evaluation suite
 
-- ### Provenance
+- Need [[Agent Evaluation Benchmarks]] coverage for procurement justification → all major SDKs run against relevant benchmarks; check provider's published scores on SWE-bench/GAIA/TAU-bench
+- Regulated sector (finance, healthcare, public sector UK) → prioritise approval gates, audit logging, and [[AI Safety]] feature set; [[Claude Agent SDK]] and [[OpenAI Agents SDK]] most mature here
+- EU AI Act high-risk deployment → ensure SDK supports structured audit trail and human oversight; verify against OWASP Agentic Application Top 10 evaluation suite
+
+### Provenance
 

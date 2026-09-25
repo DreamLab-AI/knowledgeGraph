@@ -1,19 +1,24 @@
-
 Fiscal policy is the use of government spending and taxation to influence aggregate demand, employment, inflation and economic growth within an economy. It is enacted by a government's treasury or finance ministry through budgets that adjust expenditure programmes, tax rates and public borrowing, and it is the principal counterpart to the monetary policy operated by a central bank. Expansionary fiscal policy raises spending or cuts taxes to stimulate a weak economy, while contractionary policy does the reverse to restrain overheating or reduce public debt.
 
-- ### Overview
-  - Fiscal policy operates on the demand side of the economy through the government budget, complementing the monetary policy of the central bank.
-  - Its principal instruments are public spending, taxation and the resulting level of public borrowing and debt.
-  - Discretionary measures are supplemented by automatic stabilisers such as progressive taxes and unemployment benefits that dampen the cycle without new legislation.
-- ### Key aspects
-  - Expansionary stance: increased spending or tax cuts raise aggregate demand to combat recession and unemployment.
-  - Contractionary stance: reduced spending or higher taxes restrain demand to control inflation or reduce deficits.
-  - Budget balance: the gap between revenue and expenditure determines borrowing needs and the trajectory of public debt.
-  - Coordination: fiscal and monetary policy interact, and credibility of debt sustainability shapes their effectiveness.
-- ### Applications
-  - Stabilising output and employment over the business cycle.
-  - Funding public goods, infrastructure and welfare programmes.
-  - Counter-cyclical stimulus during downturns and consolidation during expansions.
-  - Influencing income distribution through the structure of taxes and transfers.
-- ### Provenance
+### Overview
+
+- Fiscal policy operates on the demand side of the economy through the government budget, complementing the monetary policy of the central bank.
+- Its principal instruments are public spending, taxation and the resulting level of public borrowing and debt.
+- Discretionary measures are supplemented by automatic stabilisers such as progressive taxes and unemployment benefits that dampen the cycle without new legislation.
+
+### Key aspects
+
+- Expansionary stance: increased spending or tax cuts raise aggregate demand to combat recession and unemployment.
+- Contractionary stance: reduced spending or higher taxes restrain demand to control inflation or reduce deficits.
+- Budget balance: the gap between revenue and expenditure determines borrowing needs and the trajectory of public debt.
+- Coordination: fiscal and monetary policy interact, and credibility of debt sustainability shapes their effectiveness.
+
+### Applications
+
+- Stabilising output and employment over the business cycle.
+- Funding public goods, infrastructure and welfare programmes.
+- Counter-cyclical stimulus during downturns and consolidation during expansions.
+- Influencing income distribution through the structure of taxes and transfers.
+
+### Provenance
 

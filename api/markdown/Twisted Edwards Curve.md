@@ -1,5 +1,4 @@
-
 A twisted Edwards curve is a form of elliptic curve, defined by the equation ax squared plus y squared equals 1 plus dx squared y squared, whose complete addition law has no exceptional cases, making implementations naturally resistant to certain side-channel and invalid-curve attacks. Curve25519 in its twisted Edwards form, Ed25519, is the most widely deployed instance, chosen for its combination of speed and misuse resistance. It is the underlying curve group over which the EdDSA signature scheme performs its arithmetic.
 
-- ### Provenance
+### Provenance
 

@@ -1,125 +1,125 @@
-
 A decision engine is a software component that encapsulates decision logic—rules, models, policies, or heuristics—and evaluates inputs against that logic to produce actionable outputs such as approvals, classifications, recommendations, or routing choices. Decision engines decouple business logic from application code, enabling non-developers to modify decision policies without code deployments, and support auditability by providing traceable reasoning paths for each decision. They range from rule-based expert systems to ML model inference services to hybrid architectures combining both. The emergence of large language model reasoning cores has extended the decision engine concept to unstructured input spaces, enabling complex multi-step decisioning with natural language explanation traces.
 
-- ### Semantic Classification
+### Semantic Classification
 
-- ### Content
-  ## Compositional Relationships (Components)
-  ```
-  SubClassOf(ai:DecisionEngine
-    ObjectSomeValuesFrom(ai:hasPart ai:RuleEvaluator))
-  SubClassOf(ai:DecisionEngine
-    ObjectSomeValuesFrom(ai:hasPart ai:ModelScorer))
-  SubClassOf(ai:DecisionEngine
-    ObjectSomeValuesFrom(ai:hasPart ai:ExplanationModule))
-  SubClassOf(ai:DecisionEngine
-    ObjectSomeValuesFrom(ai:hasPart ai:AuditTrail))
-  SubClassOf(ai:DecisionEngine
-    ObjectSomeValuesFrom(ai:hasPart ai:DecisionModelNotation))
-  SubClassOf(ai:HybridDecisionEngine
-    ObjectSomeValuesFrom(ai:hasPart ai:RuleEngine))
-  SubClassOf(ai:HybridDecisionEngine
-    ObjectSomeValuesFrom(ai:hasPart ai:MLInferenceService))
-  SubClassOf(ai:LLMDecisionEngine
-    ObjectSomeValuesFrom(ai:hasPart ai:ChainOfThoughtReasoner))
-  ```
-  ## Dependency Relationships
-  ```
-  SubClassOf(ai:DecisionEngine
-    ObjectSomeValuesFrom(ai:requires ai:KnowledgeRepresentation))
-  SubClassOf(ai:DecisionEngine
-    ObjectSomeValuesFrom(ai:requires ai:AutomatedReasoning))
-  SubClassOf(ai:DecisionEngine
-    ObjectSomeValuesFrom(ai:requires ai:DataGovernance))
-  SubClassOf(ai:DecisionEngine
-    ObjectSomeValuesFrom(ai:requires ai:AccessControl))
-  SubClassOf(ai:MLDecisionEngine
-    ObjectSomeValuesFrom(ai:requires ai:ModelServingRuntime))
-  SubClassOf(ai:RuleBasedDecisionEngine
-    ObjectSomeValuesFrom(ai:requires ai:PolicyEngine))
-  SubClassOf(ai:RegulatedDecisionEngine
-    ObjectSomeValuesFrom(ai:requires ai:AuditTrail))
-  SubClassOf(ai:LLMDecisionEngine
-    ObjectSomeValuesFrom(ai:requires ai:LargeLanguageModel))
-  ```
-  ## Capability Relationships
-  ```
-  SubClassOf(ai:DecisionEngine
-    ObjectSomeValuesFrom(ai:enables ai:DecisionSupport))
-  SubClassOf(ai:DecisionEngine
-    ObjectSomeValuesFrom(ai:enables ai:AutomatedPlanning))
-  SubClassOf(ai:DecisionEngine
-    ObjectSomeValuesFrom(ai:enables ai:WorkflowAutomation))
-  SubClassOf(ai:DecisionEngine
-    ObjectSomeValuesFrom(ai:enables ai:AutomatedDecisionMaking))
-  SubClassOf(ai:RealTimeDecisionEngine
-    ObjectSomeValuesFrom(ai:enables ai:FraudDetection))
-  SubClassOf(ai:ScoringDecisionEngine
-    ObjectSomeValuesFrom(ai:enables ai:CreditScoring))
-  SubClassOf(ai:ExplainableDecisionEngine
-    ObjectSomeValuesFrom(ai:enables ai:DecisionTransparency))
-  ```
-  ## Implementation Relationships
-  ```
-  SubClassOf(ai:DecisionEngine
-    ObjectSomeValuesFrom(ai:implements ai:DecisionIntelligence))
-  SubClassOf(ai:DecisionEngine
-    ObjectSomeValuesFrom(ai:implements ai:ExplainableAI))
-  SubClassOf(ai:DecisionEngine
-    ObjectSomeValuesFrom(ai:implements ai:DecisionTransparency))
-  SubClassOf(ai:CertifiedDecisionEngine
-    ObjectSomeValuesFrom(ai:implements ai:Regulation))
-  SubClassOf(ai:DecisionEngine
-    ObjectSomeValuesFrom(ai:implements ai:DecisionModelNotation))
-  ```
-  ## Reduction Relationships
-  ```
-  SubClassOf(ai:DecisionEngine
-    ObjectSomeValuesFrom(ai:reducesTo ai:PolicyEngine))
-  SubClassOf(ai:HybridDecisionEngine
-    ObjectSomeValuesFrom(ai:reducesTo ai:RuleEngine))
-  SubClassOf(ai:LLMDecisionEngine
-    ObjectSomeValuesFrom(ai:reducesTo ai:InferenceEngine))
-  SubClassOf(ai:DecisionEngine
-    ObjectSomeValuesFrom(ai:reducesTo ai:BooleanFunction))
-  SubClassOf(ai:ProbabilisticDecisionEngine
-    ObjectSomeValuesFrom(ai:reducesTo ai:ScoringFunction))
-  ```
-  ## Support Relationships
-  ```
-  SubClassOf(ai:DecisionEngine
-    ObjectSomeValuesFrom(ai:supports ai:Orchestration))
-  SubClassOf(ai:DecisionEngine
-    ObjectSomeValuesFrom(ai:supports ai:AgenticAI))
-  SubClassOf(ai:ExplainableDecisionEngine
-    ObjectSomeValuesFrom(ai:supports ai:FairnessAuditing))
-  SubClassOf(ai:HybridDecisionEngine
-    ObjectSomeValuesFrom(ai:supports ai:NaturalLanguageProcessing))
-  SubClassOf(ai:DecisionEngine
-    ObjectSomeValuesFrom(ai:supports ai:CausalReasoning))
-  ```
+### Content
 
-  ## About
+## Compositional Relationships (Components)
+```
+SubClassOf(ai:DecisionEngine
+  ObjectSomeValuesFrom(ai:hasPart ai:RuleEvaluator))
+SubClassOf(ai:DecisionEngine
+  ObjectSomeValuesFrom(ai:hasPart ai:ModelScorer))
+SubClassOf(ai:DecisionEngine
+  ObjectSomeValuesFrom(ai:hasPart ai:ExplanationModule))
+SubClassOf(ai:DecisionEngine
+  ObjectSomeValuesFrom(ai:hasPart ai:AuditTrail))
+SubClassOf(ai:DecisionEngine
+  ObjectSomeValuesFrom(ai:hasPart ai:DecisionModelNotation))
+SubClassOf(ai:HybridDecisionEngine
+  ObjectSomeValuesFrom(ai:hasPart ai:RuleEngine))
+SubClassOf(ai:HybridDecisionEngine
+  ObjectSomeValuesFrom(ai:hasPart ai:MLInferenceService))
+SubClassOf(ai:LLMDecisionEngine
+  ObjectSomeValuesFrom(ai:hasPart ai:ChainOfThoughtReasoner))
+```
+## Dependency Relationships
+```
+SubClassOf(ai:DecisionEngine
+  ObjectSomeValuesFrom(ai:requires ai:KnowledgeRepresentation))
+SubClassOf(ai:DecisionEngine
+  ObjectSomeValuesFrom(ai:requires ai:AutomatedReasoning))
+SubClassOf(ai:DecisionEngine
+  ObjectSomeValuesFrom(ai:requires ai:DataGovernance))
+SubClassOf(ai:DecisionEngine
+  ObjectSomeValuesFrom(ai:requires ai:AccessControl))
+SubClassOf(ai:MLDecisionEngine
+  ObjectSomeValuesFrom(ai:requires ai:ModelServingRuntime))
+SubClassOf(ai:RuleBasedDecisionEngine
+  ObjectSomeValuesFrom(ai:requires ai:PolicyEngine))
+SubClassOf(ai:RegulatedDecisionEngine
+  ObjectSomeValuesFrom(ai:requires ai:AuditTrail))
+SubClassOf(ai:LLMDecisionEngine
+  ObjectSomeValuesFrom(ai:requires ai:LargeLanguageModel))
+```
+## Capability Relationships
+```
+SubClassOf(ai:DecisionEngine
+  ObjectSomeValuesFrom(ai:enables ai:DecisionSupport))
+SubClassOf(ai:DecisionEngine
+  ObjectSomeValuesFrom(ai:enables ai:AutomatedPlanning))
+SubClassOf(ai:DecisionEngine
+  ObjectSomeValuesFrom(ai:enables ai:WorkflowAutomation))
+SubClassOf(ai:DecisionEngine
+  ObjectSomeValuesFrom(ai:enables ai:AutomatedDecisionMaking))
+SubClassOf(ai:RealTimeDecisionEngine
+  ObjectSomeValuesFrom(ai:enables ai:FraudDetection))
+SubClassOf(ai:ScoringDecisionEngine
+  ObjectSomeValuesFrom(ai:enables ai:CreditScoring))
+SubClassOf(ai:ExplainableDecisionEngine
+  ObjectSomeValuesFrom(ai:enables ai:DecisionTransparency))
+```
+## Implementation Relationships
+```
+SubClassOf(ai:DecisionEngine
+  ObjectSomeValuesFrom(ai:implements ai:DecisionIntelligence))
+SubClassOf(ai:DecisionEngine
+  ObjectSomeValuesFrom(ai:implements ai:ExplainableAI))
+SubClassOf(ai:DecisionEngine
+  ObjectSomeValuesFrom(ai:implements ai:DecisionTransparency))
+SubClassOf(ai:CertifiedDecisionEngine
+  ObjectSomeValuesFrom(ai:implements ai:Regulation))
+SubClassOf(ai:DecisionEngine
+  ObjectSomeValuesFrom(ai:implements ai:DecisionModelNotation))
+```
+## Reduction Relationships
+```
+SubClassOf(ai:DecisionEngine
+  ObjectSomeValuesFrom(ai:reducesTo ai:PolicyEngine))
+SubClassOf(ai:HybridDecisionEngine
+  ObjectSomeValuesFrom(ai:reducesTo ai:RuleEngine))
+SubClassOf(ai:LLMDecisionEngine
+  ObjectSomeValuesFrom(ai:reducesTo ai:InferenceEngine))
+SubClassOf(ai:DecisionEngine
+  ObjectSomeValuesFrom(ai:reducesTo ai:BooleanFunction))
+SubClassOf(ai:ProbabilisticDecisionEngine
+  ObjectSomeValuesFrom(ai:reducesTo ai:ScoringFunction))
+```
+## Support Relationships
+```
+SubClassOf(ai:DecisionEngine
+  ObjectSomeValuesFrom(ai:supports ai:Orchestration))
+SubClassOf(ai:DecisionEngine
+  ObjectSomeValuesFrom(ai:supports ai:AgenticAI))
+SubClassOf(ai:ExplainableDecisionEngine
+  ObjectSomeValuesFrom(ai:supports ai:FairnessAuditing))
+SubClassOf(ai:HybridDecisionEngine
+  ObjectSomeValuesFrom(ai:supports ai:NaturalLanguageProcessing))
+SubClassOf(ai:DecisionEngine
+  ObjectSomeValuesFrom(ai:supports ai:CausalReasoning))
+```
 
-  Decision engines are software systems that separate the logic of what a decision is from the application code that invokes it. This decoupling—placing decision logic in an externally authored, version-controlled, independently deployable, and comprehensively auditable artefact—is the foundational architectural principle distinguishing decision engines from ad-hoc conditional logic embedded in application code. The concept emerged from the expert systems tradition of the 1970s and 1980s, where domain knowledge was encoded in explicit if-then production rules evaluated by a reasoning engine such as the RETE algorithm (Forgy, 1982). RETE provides efficient incremental pattern matching over a working memory of facts by compiling the rule network into a directed acyclic graph of alpha nodes (single-condition tests) and beta nodes (cross-fact joins), achieving O(RF) time complexity where R is the number of rules and F is the number of facts in working memory, compared to O(RF^k) for naive evaluation. RETE-based engines underpin modern BRMS products including Red Hat Drools (transferred to the Apache Software Foundation as Apache KIE in 2024) and commercial platforms IBM Operational Decision Manager and FICO Blaze Advisor.
+## About
 
-  The architecture has evolved through three distinct phases. In the first phase (1980s–2000s), rule-only systems deployed in expert system shells (MYCIN, OPS5, CLIPS) were characterised by manual knowledge engineering: domain experts were interviewed by knowledge engineers who translated expertise into explicit production rules. These systems worked well in narrow, well-defined domains (medical diagnosis, configuration checking) but struggled with rule base maintenance as complexity grew—an effect sometimes called the "knowledge acquisition bottleneck." The second phase (2000s–2020s) saw BRMS platforms democratise rule authoring via business-user interfaces and decision tables, enabling actuaries, underwriters, and compliance officers to author and modify rules through web-based policy management tools (IBM ODM's Decision Center, the Decisions.com low-code platform). Simultaneously, [[Machine Learning]] scoring models—logistic regression for credit risk, gradient boosting for fraud scoring—were integrated as sub-components within rule pipelines, creating the first hybrid architectures that combined the interpretability of explicit rules with the predictive power of statistical models. Credit decisioning became the canonical use case: rule engines enforced regulatory hard constraints (minimum income thresholds, maximum debt-to-income ratios, sanctions screening) while ML scorers estimated probability of default within the population that cleared the rule guardrails. The third phase (2022–present) introduces [[Large Language Models]] as reasoning cores capable of processing unstructured inputs—contract text, clinical notes, customer communications—decomposing complex multi-step decision problems, and producing explanations in natural language, extending the decision engine concept into domains previously inaccessible to structured automation.
+Decision engines are software systems that separate the logic of what a decision is from the application code that invokes it. This decoupling—placing decision logic in an externally authored, version-controlled, independently deployable, and comprehensively auditable artefact—is the foundational architectural principle distinguishing decision engines from ad-hoc conditional logic embedded in application code. The concept emerged from the expert systems tradition of the 1970s and 1980s, where domain knowledge was encoded in explicit if-then production rules evaluated by a reasoning engine such as the RETE algorithm (Forgy, 1982). RETE provides efficient incremental pattern matching over a working memory of facts by compiling the rule network into a directed acyclic graph of alpha nodes (single-condition tests) and beta nodes (cross-fact joins), achieving O(RF) time complexity where R is the number of rules and F is the number of facts in working memory, compared to O(RF^k) for naive evaluation. RETE-based engines underpin modern BRMS products including Red Hat Drools (transferred to the Apache Software Foundation as Apache KIE in 2024) and commercial platforms IBM Operational Decision Manager and FICO Blaze Advisor.
 
-  The governance and regulatory dimensions of decision engines have grown in importance proportional to their deployment in high-stakes domains. GDPR Article 22 (applied since 2018) gives EU data subjects the right to human review of solely automated decisions that produce significant legal effects, including credit decisions, insurance pricing, employment screening, and benefits determinations. The UK Data (Use and Access) Act 2025, which received Royal Assent in June 2025, modifies but does not eliminate these protections under UK GDPR, creating somewhat more permissive rules for commercial automated decisions while maintaining protections for sensitive processing categories. The EU AI Act (2024), which began its risk-based implementation from February 2025, classifies automated credit scoring, employment screening, education access decisions, and law enforcement risk assessments as high-risk AI, imposing conformity assessment, transparency documentation, and mandatory human oversight mechanisms before deployment. The European Court of Justice's landmark ruling in March 2025 in Case C-203/22 (Dun & Bradstreet Austria) clarified that data subjects have a genuine right to explanation of automated decision logic—specifically to "meaningful information about the logic involved"—in a ruling that directly shapes how decision engines must be designed and documented in regulated domains.
+The architecture has evolved through three distinct phases. In the first phase (1980s–2000s), rule-only systems deployed in expert system shells (MYCIN, OPS5, CLIPS) were characterised by manual knowledge engineering: domain experts were interviewed by knowledge engineers who translated expertise into explicit production rules. These systems worked well in narrow, well-defined domains (medical diagnosis, configuration checking) but struggled with rule base maintenance as complexity grew—an effect sometimes called the "knowledge acquisition bottleneck." The second phase (2000s–2020s) saw BRMS platforms democratise rule authoring via business-user interfaces and decision tables, enabling actuaries, underwriters, and compliance officers to author and modify rules through web-based policy management tools (IBM ODM's Decision Center, the Decisions.com low-code platform). Simultaneously, [[Machine Learning]] scoring models—logistic regression for credit risk, gradient boosting for fraud scoring—were integrated as sub-components within rule pipelines, creating the first hybrid architectures that combined the interpretability of explicit rules with the predictive power of statistical models. Credit decisioning became the canonical use case: rule engines enforced regulatory hard constraints (minimum income thresholds, maximum debt-to-income ratios, sanctions screening) while ML scorers estimated probability of default within the population that cleared the rule guardrails. The third phase (2022–present) introduces [[Large Language Models]] as reasoning cores capable of processing unstructured inputs—contract text, clinical notes, customer communications—decomposing complex multi-step decision problems, and producing explanations in natural language, extending the decision engine concept into domains previously inaccessible to structured automation.
 
-  ## Components / Architecture
+The governance and regulatory dimensions of decision engines have grown in importance proportional to their deployment in high-stakes domains. GDPR Article 22 (applied since 2018) gives EU data subjects the right to human review of solely automated decisions that produce significant legal effects, including credit decisions, insurance pricing, employment screening, and benefits determinations. The UK Data (Use and Access) Act 2025, which received Royal Assent in June 2025, modifies but does not eliminate these protections under UK GDPR, creating somewhat more permissive rules for commercial automated decisions while maintaining protections for sensitive processing categories. The EU AI Act (2024), which began its risk-based implementation from February 2025, classifies automated credit scoring, employment screening, education access decisions, and law enforcement risk assessments as high-risk AI, imposing conformity assessment, transparency documentation, and mandatory human oversight mechanisms before deployment. The European Court of Justice's landmark ruling in March 2025 in Case C-203/22 (Dun & Bradstreet Austria) clarified that data subjects have a genuine right to explanation of automated decision logic—specifically to "meaningful information about the logic involved"—in a ruling that directly shapes how decision engines must be designed and documented in regulated domains.
 
-  A production decision engine comprises the following components integrated into a coherent runtime system:
+## Components / Architecture
 
-  - **Decision logic repository**: The externally managed store of decision logic artefacts—rule sets (in DRL, Drools Rule Language; DMN, Decision Model and Notation; or Rego for Open Policy Agent), ML model files (ONNX, PMML, POJO serialisations), or policy documents—versioned with semantic versioning and deployed independently of the calling application through a BRMS deployment pipeline. Separation of the logic repository from the runtime engine is the architectural prerequisite for non-developer policy editing.
-  - **Rule evaluator / inference engine**: The runtime that applies rule logic to input facts. For rule-based engines, this is typically a RETE or RETE-II network implementation (Drools/KIE, Easy Rules, Camunda DMN) that compiles the rule set into a pattern-matching network and evaluates it against a working memory populated with request facts. Conflict resolution—determining which rule fires when multiple rules' conditions are satisfied simultaneously—uses priority ordering, specificity (most-specific-first), or recency (most-recently-added-fact-first) strategies. For logic-programming systems (SWI-Prolog, Clingo), backward-chaining resolution applies.
-  - **ML model scorer**: An embedded or remotely called inference service that applies a trained statistical model to feature vectors derived from the input, returning a score, probability distribution, or classification. Integration with [[Model Serving Runtime]] layers (TensorFlow Serving, TorchServe, ONNX Runtime, Triton Inference Server) via REST or gRPC is standard in hybrid architectures. Model versioning must be coordinated with rule set versioning to maintain the correctness of hybrid decision logic that references model outputs in rule conditions.
-  - **Feature engineering pipeline**: Transforms raw input fields into model-ready feature vectors—encoding categorical variables (one-hot, target encoding, ordinal), computing derived ratios and aggregates (debt-to-income, velocity counts over time windows), normalising numeric ranges, and imputing missing values. The [[Feature Engineering]] pipeline is a critical governance surface: feature definitions must be stable and documented, as undocumented changes can silently alter model behaviour without triggering the model re-approval process.
-  - **Explanation module**: Generates a human-readable account of each decision, citing the specific rules that fired, the [[Audit Trail]] of working memory changes, and/or the feature importance scores from the ML component. SHAP (Shapley Additive Explanations, Lundberg & Lee, 2017) values provide mathematically rigorous attribution of model predictions to input features, satisfying efficiency, symmetry, and dummy player axioms from cooperative game theory. LIME (Local Interpretable Model-agnostic Explanations, Ribeiro et al., 2016) provides locally faithful approximations of any black-box model. Rule-based engines produce natural explanations by logging the activated rule chain and the specific facts that satisfied each condition.
-  - **Audit trail and immutable decision log**: An append-only log capturing the input context hash, decision output, logic version identifier, timestamps, and system identity for every decision made. In regulated domains, audit logs must be retained for defined periods (typically 5–7 years in financial services under MiFID II and FCA requirements), stored in tamper-evident formats, and made available for regulatory inspection or legal challenge. Audit trail architecture must support reconstruction of the full decision context—what information was available to the engine at decision time—not merely the output.
-  - **Decision Model Notation (DMN) interpreter**: The OMG standard (v1.5, 2023) for representing decision logic in a business-readable tabular format (decision tables with hit policies: UNIQUE, ANY, FIRST, PRIORITY, COLLECT) with supporting decision requirement diagrams showing information flow between sub-decisions. DMN provides a business-level abstraction over rule logic that enables non-technical stakeholders to validate and authorise decision logic without reading rule language syntax. Drools and most commercial BRMS platforms support DMN at Conformance Level 3.
-  - **API and integration layer**: Decision engines are exposed as microservices via REST or gRPC [[API Gateway]] endpoints, accepting structured JSON/Protocol Buffer input payloads and returning structured decision responses with output payload, explanation, and audit reference identifier. This enables integration with any calling application regardless of language or platform, while keeping decision logic isolated. Asynchronous invocation patterns (message queues, event streaming via Kafka) support high-volume decisioning workloads decoupled from request-response latency.
-  - **Monitoring and drift detection telemetry**: Runtime telemetry tracking decision distribution (proportion of approvals, score histograms), input feature distribution (mean, variance, quantile shifts), model performance metrics (if labels are available through feedback loops), and rule activation frequency. When distributional shift exceeds threshold—a model's calibration degrades as its training population diverges from the current request population—alerts trigger manual model review or automated recalibration. [[Model Monitoring]] is increasingly integrated into [[MLOps]] platforms (Evidently AI, WhyLogs, Arize) that provide continuous evaluation dashboards.
+A production decision engine comprises the following components integrated into a coherent runtime system:
+
+- **Decision logic repository**: The externally managed store of decision logic artefacts—rule sets (in DRL, Drools Rule Language; DMN, Decision Model and Notation; or Rego for Open Policy Agent), ML model files (ONNX, PMML, POJO serialisations), or policy documents—versioned with semantic versioning and deployed independently of the calling application through a BRMS deployment pipeline. Separation of the logic repository from the runtime engine is the architectural prerequisite for non-developer policy editing.
+- **Rule evaluator / inference engine**: The runtime that applies rule logic to input facts. For rule-based engines, this is typically a RETE or RETE-II network implementation (Drools/KIE, Easy Rules, Camunda DMN) that compiles the rule set into a pattern-matching network and evaluates it against a working memory populated with request facts. Conflict resolution—determining which rule fires when multiple rules' conditions are satisfied simultaneously—uses priority ordering, specificity (most-specific-first), or recency (most-recently-added-fact-first) strategies. For logic-programming systems (SWI-Prolog, Clingo), backward-chaining resolution applies.
+- **ML model scorer**: An embedded or remotely called inference service that applies a trained statistical model to feature vectors derived from the input, returning a score, probability distribution, or classification. Integration with [[Model Serving Runtime]] layers (TensorFlow Serving, TorchServe, ONNX Runtime, Triton Inference Server) via REST or gRPC is standard in hybrid architectures. Model versioning must be coordinated with rule set versioning to maintain the correctness of hybrid decision logic that references model outputs in rule conditions.
+- **Feature engineering pipeline**: Transforms raw input fields into model-ready feature vectors—encoding categorical variables (one-hot, target encoding, ordinal), computing derived ratios and aggregates (debt-to-income, velocity counts over time windows), normalising numeric ranges, and imputing missing values. The [[Feature Engineering]] pipeline is a critical governance surface: feature definitions must be stable and documented, as undocumented changes can silently alter model behaviour without triggering the model re-approval process.
+- **Explanation module**: Generates a human-readable account of each decision, citing the specific rules that fired, the [[Audit Trail]] of working memory changes, and/or the feature importance scores from the ML component. SHAP (Shapley Additive Explanations, Lundberg & Lee, 2017) values provide mathematically rigorous attribution of model predictions to input features, satisfying efficiency, symmetry, and dummy player axioms from cooperative game theory. LIME (Local Interpretable Model-agnostic Explanations, Ribeiro et al., 2016) provides locally faithful approximations of any black-box model. Rule-based engines produce natural explanations by logging the activated rule chain and the specific facts that satisfied each condition.
+- **Audit trail and immutable decision log**: An append-only log capturing the input context hash, decision output, logic version identifier, timestamps, and system identity for every decision made. In regulated domains, audit logs must be retained for defined periods (typically 5–7 years in financial services under MiFID II and FCA requirements), stored in tamper-evident formats, and made available for regulatory inspection or legal challenge. Audit trail architecture must support reconstruction of the full decision context—what information was available to the engine at decision time—not merely the output.
+- **Decision Model Notation (DMN) interpreter**: The OMG standard (v1.5, 2023) for representing decision logic in a business-readable tabular format (decision tables with hit policies: UNIQUE, ANY, FIRST, PRIORITY, COLLECT) with supporting decision requirement diagrams showing information flow between sub-decisions. DMN provides a business-level abstraction over rule logic that enables non-technical stakeholders to validate and authorise decision logic without reading rule language syntax. Drools and most commercial BRMS platforms support DMN at Conformance Level 3.
+- **API and integration layer**: Decision engines are exposed as microservices via REST or gRPC [[API Gateway]] endpoints, accepting structured JSON/Protocol Buffer input payloads and returning structured decision responses with output payload, explanation, and audit reference identifier. This enables integration with any calling application regardless of language or platform, while keeping decision logic isolated. Asynchronous invocation patterns (message queues, event streaming via Kafka) support high-volume decisioning workloads decoupled from request-response latency.
+- **Monitoring and drift detection telemetry**: Runtime telemetry tracking decision distribution (proportion of approvals, score histograms), input feature distribution (mean, variance, quantile shifts), model performance metrics (if labels are available through feedback loops), and rule activation frequency. When distributional shift exceeds threshold—a model's calibration degrades as its training population diverges from the current request population—alerts trigger manual model review or automated recalibration. [[Model Monitoring]] is increasingly integrated into [[MLOps]] platforms (Evidently AI, WhyLogs, Arize) that provide continuous evaluation dashboards.
 
   ## Use Cases / Major Families
 
@@ -157,14 +157,14 @@ A decision engine is a software component that encapsulates decision logic—rul
 
   Decision engines draw on several distinct research traditions spanning artificial intelligence, decision theory, operations research, and software engineering:
 
-  - **Expert systems and knowledge engineering** (McCarthy, Minsky at MIT; Feigenbaum at Stanford; Shortliffe at Stanford with MYCIN; McDermott at CMU with XCON/R1): the original rule-based AI systems providing the conceptual foundation for modern rule engines. The MYCIN system (1972–1976) for antibiotic selection demonstrated that expert-level rule-based reasoning was achievable in narrow domains; XCON configured VAX computer systems using ~4,500 rules, saving Digital Equipment Corporation an estimated $40 million per year.
-  - **Production systems theory** (Forgy, 1982; Newell & Simon's production system cognitive model): the RETE algorithm as the efficient pattern-matching foundation for rule engines, and the broader theory of production systems as a computational model of cognition.
-  - **Decision theory** (von Neumann & Morgenstern, 1944; Savage, 1954; Kahneman & Tversky, 1979 Prospect Theory): formal normative frameworks for rational choice under uncertainty, and their descriptive critiques, underpinning both the design of probabilistic decision engines and the study of human decision-making biases that automated systems aim to correct or avoid.
-  - **Decision Model and Notation (DMN)** (OMG, 2015–2023, v1.5): the standard modelling language for business decision logic, providing decision requirement diagrams and decision tables as business-readable representations.
-  - **Explainable AI** (DARPA XAI programme, 2016–2021; Ribeiro et al. LIME, 2016; Lundberg & Lee SHAP, 2017; Doshi-Velez & Kim, 2017): techniques for post-hoc and inherent model explanation applicable to ML-based decision engines, providing the technical implementation of regulatory explainability requirements.
-  - **Neuro-symbolic AI** (Garnelo & Shanahan, 2019; Marcus, 2020; Mao et al. NS-VQA, 2019): hybrid architectures integrating neural pattern recognition with symbolic rule reasoning, providing the academic foundation for hybrid decision engines that combine ML scoring with rule-based guardrails.
-  - **Agentic LLM reasoning** (Wei et al. Chain-of-Thought, 2022; Yao et al. ReAct, 2023; OpenAI o1 reasoning model, 2024; Anthropic Claude extended thinking, 2025): LLM-based reasoning paradigms enabling unstructured-input decisioning with traceable chain-of-thought reasoning traces that serve as natural-language decision explanations.
-  - **Automated planning and scheduling** (STRIPS formal planning language, Fikes & Nilsson, 1971; PDDL; HTN planning): planning systems that extend decision engines to multi-step sequential decision problems where the decision engine must reason about action consequences over a planning horizon.
+- **Expert systems and knowledge engineering** (McCarthy, Minsky at MIT; Feigenbaum at Stanford; Shortliffe at Stanford with MYCIN; McDermott at CMU with XCON/R1): the original rule-based AI systems providing the conceptual foundation for modern rule engines. The MYCIN system (1972–1976) for antibiotic selection demonstrated that expert-level rule-based reasoning was achievable in narrow domains; XCON configured VAX computer systems using ~4,500 rules, saving Digital Equipment Corporation an estimated $40 million per year.
+- **Production systems theory** (Forgy, 1982; Newell & Simon's production system cognitive model): the RETE algorithm as the efficient pattern-matching foundation for rule engines, and the broader theory of production systems as a computational model of cognition.
+- **Decision theory** (von Neumann & Morgenstern, 1944; Savage, 1954; Kahneman & Tversky, 1979 Prospect Theory): formal normative frameworks for rational choice under uncertainty, and their descriptive critiques, underpinning both the design of probabilistic decision engines and the study of human decision-making biases that automated systems aim to correct or avoid.
+- **Decision Model and Notation (DMN)** (OMG, 2015–2023, v1.5): the standard modelling language for business decision logic, providing decision requirement diagrams and decision tables as business-readable representations.
+- **Explainable AI** (DARPA XAI programme, 2016–2021; Ribeiro et al. LIME, 2016; Lundberg & Lee SHAP, 2017; Doshi-Velez & Kim, 2017): techniques for post-hoc and inherent model explanation applicable to ML-based decision engines, providing the technical implementation of regulatory explainability requirements.
+- **Neuro-symbolic AI** (Garnelo & Shanahan, 2019; Marcus, 2020; Mao et al. NS-VQA, 2019): hybrid architectures integrating neural pattern recognition with symbolic rule reasoning, providing the academic foundation for hybrid decision engines that combine ML scoring with rule-based guardrails.
+- **Agentic LLM reasoning** (Wei et al. Chain-of-Thought, 2022; Yao et al. ReAct, 2023; OpenAI o1 reasoning model, 2024; Anthropic Claude extended thinking, 2025): LLM-based reasoning paradigms enabling unstructured-input decisioning with traceable chain-of-thought reasoning traces that serve as natural-language decision explanations.
+- **Automated planning and scheduling** (STRIPS formal planning language, Fikes & Nilsson, 1971; PDDL; HTN planning): planning systems that extend decision engines to multi-step sequential decision problems where the decision engine must reason about action consequences over a planning horizon.
 
   Key research venues include AAAI, IJCAI, RuleML+RR (Rules and Reasoning Conference), KR (Knowledge Representation and Reasoning), ECML-PKDD, FAccT, and the ACM SIGKDD conference which has published extensively on decision intelligence platforms and fairness in automated decision-making.
 
@@ -204,13 +204,13 @@ A decision engine is a software component that encapsulates decision logic—rul
 
   ## Future Directions (2026–2030)
 
-  - **Neuro-symbolic convergence and differentiable rule engines**: The boundary between rule engines and neural networks will dissolve further. Differentiable rule engines (Neural Production Systems, Differentiable Rule Learning) will allow rule weights and rule conditions to be learned from data through gradient descent while maintaining the interpretability of symbolic rule structures, enabling decision engines to adapt to distributional shift without full model retraining and maintaining compliance with rule governance processes. [[Neuro Symbolic AI]] approaches will provide the theoretical foundation.
-  - **[[Causal Reasoning]] integration**: Integration of Pearl's do-calculus and structural causal models (SCMs) into decision engines will enable intervention-aware reasoning—the ability to reason about the causal consequences of a decision action rather than merely the correlational structure of historical data. Causal decision engines will support counterfactual explanation ("what would need to change for this decision to be different?"), bias auditing (identifying and blocking spurious causal paths), and robust generalisation under covariate shift. This is particularly valuable for credit decisioning and clinical decision support where the causal structure of the domain is partially known.
-  - **Continuous self-calibrating engines**: Decision engines will incorporate real-time performance monitoring and automated recalibration as standard, using [[Model Monitoring]] telemetry and online learning techniques to detect distributional shift and trigger partial rule or model updates without manual intervention. This will reduce the governance overhead of model refresh cycles from quarterly re-validation processes to continuous monitoring with event-triggered reviews, addressing the distributional shift challenge that currently requires manual monitoring by model risk management teams.
-  - **Federated decision engines**: Privacy-preserving architectures enabling decision engines to aggregate signals from distributed data sources—cross-bank transaction graphs for AML, multi-hospital patient risk data for clinical decision support—without centralising sensitive data. [[Federated Learning]] and secure multi-party computation will enable federated model training; homomorphic encryption may enable federated feature computation, allowing decision engines to score applications using features derived from data sources they cannot directly access.
-  - **LLM audit trail standardisation**: Regulatory bodies will develop standards for what constitutes an acceptable audit trail for LLM-generated decisions, enabling broader deployment of LLM-based decision engines in regulated domains. Chain-of-thought reasoning logs, grounding citations, and structured reasoning transcripts will be formalised as audit artefacts, analogous to the rule activation logs that underpin audit compliance in BRMS-based systems.
-  - **Decision engine certification and ISO standardisation**: The EU AI Act's conformity assessment requirements will drive standardisation of decision engine testing protocols, documentation formats, and audit standards. ISO/IEC 42001 (AI Management System) will be extended with sector-specific decision engine conformance testing specifications covering accuracy validation, bias testing, stability testing under distribution shift, and explanation quality assessment.
-  - **Real-time regulatory change propagation**: Regulatory change management—updating decision engine rule sets when laws, guidelines, or tariffs change—will become increasingly automated. LLM-based regulatory change parsers will extract rule modifications from regulatory publications (FCA policy statements, PRA supervisory statements, NICE guidance updates) and generate proposed rule set modifications for human review and approval, dramatically reducing the time from regulatory publication to compliant engine update.
+- **Neuro-symbolic convergence and differentiable rule engines**: The boundary between rule engines and neural networks will dissolve further. Differentiable rule engines (Neural Production Systems, Differentiable Rule Learning) will allow rule weights and rule conditions to be learned from data through gradient descent while maintaining the interpretability of symbolic rule structures, enabling decision engines to adapt to distributional shift without full model retraining and maintaining compliance with rule governance processes. [[Neuro Symbolic AI]] approaches will provide the theoretical foundation.
+- **[[Causal Reasoning]] integration**: Integration of Pearl's do-calculus and structural causal models (SCMs) into decision engines will enable intervention-aware reasoning—the ability to reason about the causal consequences of a decision action rather than merely the correlational structure of historical data. Causal decision engines will support counterfactual explanation ("what would need to change for this decision to be different?"), bias auditing (identifying and blocking spurious causal paths), and robust generalisation under covariate shift. This is particularly valuable for credit decisioning and clinical decision support where the causal structure of the domain is partially known.
+- **Continuous self-calibrating engines**: Decision engines will incorporate real-time performance monitoring and automated recalibration as standard, using [[Model Monitoring]] telemetry and online learning techniques to detect distributional shift and trigger partial rule or model updates without manual intervention. This will reduce the governance overhead of model refresh cycles from quarterly re-validation processes to continuous monitoring with event-triggered reviews, addressing the distributional shift challenge that currently requires manual monitoring by model risk management teams.
+- **Federated decision engines**: Privacy-preserving architectures enabling decision engines to aggregate signals from distributed data sources—cross-bank transaction graphs for AML, multi-hospital patient risk data for clinical decision support—without centralising sensitive data. [[Federated Learning]] and secure multi-party computation will enable federated model training; homomorphic encryption may enable federated feature computation, allowing decision engines to score applications using features derived from data sources they cannot directly access.
+- **LLM audit trail standardisation**: Regulatory bodies will develop standards for what constitutes an acceptable audit trail for LLM-generated decisions, enabling broader deployment of LLM-based decision engines in regulated domains. Chain-of-thought reasoning logs, grounding citations, and structured reasoning transcripts will be formalised as audit artefacts, analogous to the rule activation logs that underpin audit compliance in BRMS-based systems.
+- **Decision engine certification and ISO standardisation**: The EU AI Act's conformity assessment requirements will drive standardisation of decision engine testing protocols, documentation formats, and audit standards. ISO/IEC 42001 (AI Management System) will be extended with sector-specific decision engine conformance testing specifications covering accuracy validation, bias testing, stability testing under distribution shift, and explanation quality assessment.
+- **Real-time regulatory change propagation**: Regulatory change management—updating decision engine rule sets when laws, guidelines, or tariffs change—will become increasingly automated. LLM-based regulatory change parsers will extract rule modifications from regulatory publications (FCA policy statements, PRA supervisory statements, NICE guidance updates) and generate proposed rule set modifications for human review and approval, dramatically reducing the time from regulatory publication to compliant engine update.
 
   ## Decision Engine Governance and Risk Management
 
@@ -332,102 +332,108 @@ A decision engine is a software component that encapsulates decision logic—rul
 
   Decision engines are not a monolithic category but a family of architectures distinguished by the nature of their decision logic, their latency profile, and the type of decision they produce:
 
-  - **Pure rule engine (BRMS)**: Decision logic is entirely encoded as explicit [[Business Rules]] in a production rule language (DRL, DMN) or logic programming language. Rules are authored and maintained by domain experts through a business rule management system interface. Strengths: complete transparency, no training data required, rules directly encode regulatory constraints. Weaknesses: knowledge acquisition bottleneck, brittle under distribution shift, inability to generalise from data patterns not explicitly encoded. Examples: Drools/Apache KIE, IBM ODM, Easy Rules, Camunda DMN.
-  - **ML inference engine**: Decision logic is captured in a trained statistical model (gradient boosting tree, neural network, logistic regression) applied as a scoring function over feature vectors. The model's decision boundary is learned from data rather than explicitly authored. Strengths: high predictive accuracy for pattern-rich domains, ability to learn complex non-linear relationships. Weaknesses: limited interpretability (especially for deep models), requires labelled training data, subject to distributional shift, [[Explainable AI]] methods needed for regulatory compliance. Examples: scikit-learn pipeline, TensorFlow Serving, ONNX Runtime serving a trained model.
-  - **Hybrid decision intelligence system**: Combines rule-based guardrails with ML scoring, typically as a sequential pipeline. Rules enforce categorical constraints; ML scores provide graded risk assessment within the rule-approved population. The most common architecture in regulated financial services and insurance. Examples: credit decisioning platforms (FICO Decision Modeler, Pega Credit Risk), fraud platforms (Feedzai, Fraud.net).
-  - **[[Neuro Symbolic AI]] decision engine**: Emerging architecture integrating neural perception modules with symbolic reasoning components, enabling decisions that combine pattern recognition over raw data (image, audio, text) with logical inference over symbolic representations. Neural production systems (Smolensky et al., Tensor Product Representations; Garnelo's NS approach) allow rule weights to be differentiable, enabling gradient-based learning of rule parameters. Applications include visual question answering, scientific reasoning, and drug-gene interaction prediction.
-  - **Agentic / [[Large Language Models]] decision engine**: LLM acts as the reasoning core, receiving unstructured inputs (document text, conversation history, sensor readings) and producing structured decision outputs through tool-calling and [[Chain of Thought]] decomposition. Auditability is provided by the reasoning trace, which must be structured and preserved as an [[Audit Trail]] artefact. [[Agentic AI]] frameworks (LangGraph, AutoGen, LCEL) provide the orchestration infrastructure. This architecture is emerging for complex decisioning over heterogeneous unstructured data—legal contract review, clinical note interpretation, regulatory filing analysis.
-  - **Real-time decisioning engine**: Optimised for sub-millisecond to tens-of-millisecond end-to-end latency, handling very high throughput (hundreds of thousands of decisions per second). Feature computation, model scoring, and rule evaluation are co-located or tightly coupled; [[API Gateway]] integration adds minimal overhead. Examples: ad bidding decision engines (Google DV360, The Trade Desk), fraud decisioning (operating at payment network transaction speeds), and high-frequency trading risk controls.
-  - **Deliberative decision engine**: Accepts higher latency (seconds to minutes per decision) in exchange for more complex reasoning, evidence aggregation, and explanation depth. Invokes multiple sub-components—evidence retrieval, simulation, counterfactual analysis—and produces detailed decision reports. Used for complex insurance underwriting, lending credit committee decisions, and clinical case review support.
-  - **[[Federated Learning]] decision engine**: Architecture where the ML component of a hybrid decision engine is trained through federated learning across distributed data sources (multiple banks, multiple hospital trusts) without centralising sensitive data. Federated training allows cross-institutional model improvement while preserving [[Privacy]] and regulatory data sovereignty requirements. The rule component remains centralised but the model component captures distributed signal.
-  - **[[Bayesian Inference]] decision engine**: Models decision uncertainty explicitly through posterior probability distributions over decision outcomes, updating beliefs incrementally as new evidence arrives. Bayesian decision engines support sequential decision-making under uncertainty, expected utility maximisation, and principled uncertainty quantification. Applied in medical diagnosis (Bayesian diagnostic networks), sensor fusion, and financial portfolio optimisation. Computational challenges for large-scale Bayesian inference are addressed through variational inference and Markov chain Monte Carlo approximations.
+- **Pure rule engine (BRMS)**: Decision logic is entirely encoded as explicit [[Business Rules]] in a production rule language (DRL, DMN) or logic programming language. Rules are authored and maintained by domain experts through a business rule management system interface. Strengths: complete transparency, no training data required, rules directly encode regulatory constraints. Weaknesses: knowledge acquisition bottleneck, brittle under distribution shift, inability to generalise from data patterns not explicitly encoded. Examples: Drools/Apache KIE, IBM ODM, Easy Rules, Camunda DMN.
+- **ML inference engine**: Decision logic is captured in a trained statistical model (gradient boosting tree, neural network, logistic regression) applied as a scoring function over feature vectors. The model's decision boundary is learned from data rather than explicitly authored. Strengths: high predictive accuracy for pattern-rich domains, ability to learn complex non-linear relationships. Weaknesses: limited interpretability (especially for deep models), requires labelled training data, subject to distributional shift, [[Explainable AI]] methods needed for regulatory compliance. Examples: scikit-learn pipeline, TensorFlow Serving, ONNX Runtime serving a trained model.
+- **Hybrid decision intelligence system**: Combines rule-based guardrails with ML scoring, typically as a sequential pipeline. Rules enforce categorical constraints; ML scores provide graded risk assessment within the rule-approved population. The most common architecture in regulated financial services and insurance. Examples: credit decisioning platforms (FICO Decision Modeler, Pega Credit Risk), fraud platforms (Feedzai, Fraud.net).
+- **[[Neuro Symbolic AI]] decision engine**: Emerging architecture integrating neural perception modules with symbolic reasoning components, enabling decisions that combine pattern recognition over raw data (image, audio, text) with logical inference over symbolic representations. Neural production systems (Smolensky et al., Tensor Product Representations; Garnelo's NS approach) allow rule weights to be differentiable, enabling gradient-based learning of rule parameters. Applications include visual question answering, scientific reasoning, and drug-gene interaction prediction.
+- **Agentic / [[Large Language Models]] decision engine**: LLM acts as the reasoning core, receiving unstructured inputs (document text, conversation history, sensor readings) and producing structured decision outputs through tool-calling and [[Chain of Thought]] decomposition. Auditability is provided by the reasoning trace, which must be structured and preserved as an [[Audit Trail]] artefact. [[Agentic AI]] frameworks (LangGraph, AutoGen, LCEL) provide the orchestration infrastructure. This architecture is emerging for complex decisioning over heterogeneous unstructured data—legal contract review, clinical note interpretation, regulatory filing analysis.
+- **Real-time decisioning engine**: Optimised for sub-millisecond to tens-of-millisecond end-to-end latency, handling very high throughput (hundreds of thousands of decisions per second). Feature computation, model scoring, and rule evaluation are co-located or tightly coupled; [[API Gateway]] integration adds minimal overhead. Examples: ad bidding decision engines (Google DV360, The Trade Desk), fraud decisioning (operating at payment network transaction speeds), and high-frequency trading risk controls.
+- **Deliberative decision engine**: Accepts higher latency (seconds to minutes per decision) in exchange for more complex reasoning, evidence aggregation, and explanation depth. Invokes multiple sub-components—evidence retrieval, simulation, counterfactual analysis—and produces detailed decision reports. Used for complex insurance underwriting, lending credit committee decisions, and clinical case review support.
+- **[[Federated Learning]] decision engine**: Architecture where the ML component of a hybrid decision engine is trained through federated learning across distributed data sources (multiple banks, multiple hospital trusts) without centralising sensitive data. Federated training allows cross-institutional model improvement while preserving [[Privacy]] and regulatory data sovereignty requirements. The rule component remains centralised but the model component captures distributed signal.
+- **[[Bayesian Inference]] decision engine**: Models decision uncertainty explicitly through posterior probability distributions over decision outcomes, updating beliefs incrementally as new evidence arrives. Bayesian decision engines support sequential decision-making under uncertainty, expected utility maximisation, and principled uncertainty quantification. Applied in medical diagnosis (Bayesian diagnostic networks), sensor fusion, and financial portfolio optimisation. Computational challenges for large-scale Bayesian inference are addressed through variational inference and Markov chain Monte Carlo approximations.
 
   ## Key Terminology
 
-  - **Business Rule**: A declarative statement expressing a specific policy, guideline, constraint, or calculation that governs a business decision—e.g., "IF applicant age < 18 THEN reject; IF debt-to-income > 0.45 THEN refer to underwriter." Business rules are authored by domain experts and managed independently of application code in a BRMS.
-  - **BRMS (Business Rule Management System)**: A software platform providing the full lifecycle management of business rules: authoring, testing, versioning, deployment, and monitoring. Distinguished from a simple rule engine by the provision of business-user interfaces and governance tooling.
-  - **RETE algorithm**: The pattern-matching algorithm underlying most production rule engines, compiling rule conditions into a network of shared test nodes to achieve efficient incremental evaluation of large rule bases against a changing working memory.
-  - **DMN (Decision Model and Notation)**: The OMG standard for representing business decision logic in decision tables and decision requirement diagrams, providing a business-readable notation above the level of rule language syntax.
-  - **Working memory**: In a production rule system, the data store of currently known facts against which rule conditions are evaluated. The rule engine's inference cycle repeatedly matches rule conditions against working memory, selects a rule to fire via conflict resolution, executes its actions (which may modify working memory), and iterates until no further rules can fire (quiescence).
-  - **Conflict resolution**: The strategy applied when multiple rules' conditions are simultaneously satisfied, determining which rule fires first. Common strategies: priority ordering (highest explicit priority wins), specificity (most-constrained rule wins), recency (rule matching the most recently asserted fact wins), or first-match (the first matching rule in source order wins, common in decision tables with FIRST hit policy).
-  - **[[Decision Transparency]]**: The property of a decision engine by which the reasoning path linking inputs to outputs can be explained to affected parties and auditors in a faithful, intelligible manner. A regulatory and ethical design requirement for high-stakes automated decisions.
-  - **Straight-through processing (STP)**: The automated completion of a decision or transaction without manual human review, enabled by decision engines with sufficient rule and model confidence. STP rate is a key operational efficiency metric for insurance claims processing and banking transaction operations.
-  - **SHAP (Shapley Additive Explanations)**: A model-agnostic explanation method that assigns each input feature a contribution score for a given prediction, satisfying mathematical axioms of efficiency (contributions sum to the prediction difference from baseline), symmetry, and linearity. The standard approach for ML component explanation in hybrid decision engines.
-  - **Distributional shift**: The divergence between the statistical distribution of inputs the decision engine was trained or calibrated on (training distribution) and the distribution of inputs encountered in production (deployment distribution). Distributional shift causes model calibration and accuracy to degrade over time and is the primary driver of model monitoring and recalibration requirements.
+- **Business Rule**: A declarative statement expressing a specific policy, guideline, constraint, or calculation that governs a business decision—e.g., "IF applicant age < 18 THEN reject; IF debt-to-income > 0.45 THEN refer to underwriter." Business rules are authored by domain experts and managed independently of application code in a BRMS.
+- **BRMS (Business Rule Management System)**: A software platform providing the full lifecycle management of business rules: authoring, testing, versioning, deployment, and monitoring. Distinguished from a simple rule engine by the provision of business-user interfaces and governance tooling.
+- **RETE algorithm**: The pattern-matching algorithm underlying most production rule engines, compiling rule conditions into a network of shared test nodes to achieve efficient incremental evaluation of large rule bases against a changing working memory.
+- **DMN (Decision Model and Notation)**: The OMG standard for representing business decision logic in decision tables and decision requirement diagrams, providing a business-readable notation above the level of rule language syntax.
+- **Working memory**: In a production rule system, the data store of currently known facts against which rule conditions are evaluated. The rule engine's inference cycle repeatedly matches rule conditions against working memory, selects a rule to fire via conflict resolution, executes its actions (which may modify working memory), and iterates until no further rules can fire (quiescence).
+- **Conflict resolution**: The strategy applied when multiple rules' conditions are simultaneously satisfied, determining which rule fires first. Common strategies: priority ordering (highest explicit priority wins), specificity (most-constrained rule wins), recency (rule matching the most recently asserted fact wins), or first-match (the first matching rule in source order wins, common in decision tables with FIRST hit policy).
+- **[[Decision Transparency]]**: The property of a decision engine by which the reasoning path linking inputs to outputs can be explained to affected parties and auditors in a faithful, intelligible manner. A regulatory and ethical design requirement for high-stakes automated decisions.
+- **Straight-through processing (STP)**: The automated completion of a decision or transaction without manual human review, enabled by decision engines with sufficient rule and model confidence. STP rate is a key operational efficiency metric for insurance claims processing and banking transaction operations.
+- **SHAP (Shapley Additive Explanations)**: A model-agnostic explanation method that assigns each input feature a contribution score for a given prediction, satisfying mathematical axioms of efficiency (contributions sum to the prediction difference from baseline), symmetry, and linearity. The standard approach for ML component explanation in hybrid decision engines.
+- **Distributional shift**: The divergence between the statistical distribution of inputs the decision engine was trained or calibrated on (training distribution) and the distribution of inputs encountered in production (deployment distribution). Distributional shift causes model calibration and accuracy to degrade over time and is the primary driver of model monitoring and recalibration requirements.
 
   ## Decision Engine Platform Comparison (2026)
 
   The following table-form overview characterises the major decision engine platforms and their positioning in 2026:
 
   **Apache KIE (Drools):**
-  - Type: Open-source BRMS with DMN support
-  - Algorithm: RETE-II forward-chaining rule engine
-  - DMN Conformance: Level 3 (full)
-  - ML Integration: Via external REST/gRPC model serving calls
-  - Explanation: Rule activation chain logging; no native ML explanation
-  - Strengths: No licence cost, strong community, Java ecosystem
-  - Weaknesses: Requires engineering resource for operation; limited business-user authoring tools without commercial wrapper
-  - UK adoption: High in NHS, financial services engineering teams, and public sector
+
+- Type: Open-source BRMS with DMN support
+- Algorithm: RETE-II forward-chaining rule engine
+- DMN Conformance: Level 3 (full)
+- ML Integration: Via external REST/gRPC model serving calls
+- Explanation: Rule activation chain logging; no native ML explanation
+- Strengths: No licence cost, strong community, Java ecosystem
+- Weaknesses: Requires engineering resource for operation; limited business-user authoring tools without commercial wrapper
+- UK adoption: High in NHS, financial services engineering teams, and public sector
 
   **IBM Operational Decision Manager (ODM):**
-  - Type: Commercial enterprise BRMS
-  - Algorithm: RETE-based with enterprise rule management studio
-  - DMN Conformance: Level 3 with IBM extensions
-  - ML Integration: Watson Machine Learning integration; PMML model deployment
-  - Explanation: Rule trace with business-language explanations; model SHAP integration
-  - Strengths: Full enterprise governance suite, extensive financial services track record
-  - Weaknesses: High licence cost; complex deployment architecture; slower innovation cycle than cloud-native competitors
-  - UK adoption: Dominant in large UK banks (HSBC, Standard Chartered, Lloyd's of London)
+
+- Type: Commercial enterprise BRMS
+- Algorithm: RETE-based with enterprise rule management studio
+- DMN Conformance: Level 3 with IBM extensions
+- ML Integration: Watson Machine Learning integration; PMML model deployment
+- Explanation: Rule trace with business-language explanations; model SHAP integration
+- Strengths: Full enterprise governance suite, extensive financial services track record
+- Weaknesses: High licence cost; complex deployment architecture; slower innovation cycle than cloud-native competitors
+- UK adoption: Dominant in large UK banks (HSBC, Standard Chartered, Lloyd's of London)
 
   **FICO Blaze Advisor:**
-  - Type: Commercial decision management platform
-  - Algorithm: RETE with FICO proprietary optimisations
-  - ML Integration: FICO Platform ML integration; PMML import
-  - Explanation: Scored explanation with contributing factors
-  - Strengths: Deep credit risk and fraud domain expertise; strong regulatory track record
-  - Weaknesses: Expensive; vendor lock-in through proprietary rule language
-  - UK adoption: Major UK retail banks, building societies, and card issuers
+
+- Type: Commercial decision management platform
+- Algorithm: RETE with FICO proprietary optimisations
+- ML Integration: FICO Platform ML integration; PMML import
+- Explanation: Scored explanation with contributing factors
+- Strengths: Deep credit risk and fraud domain expertise; strong regulatory track record
+- Weaknesses: Expensive; vendor lock-in through proprietary rule language
+- UK adoption: Major UK retail banks, building societies, and card issuers
 
   **Decisions.com:**
-  - Type: Low-code/no-code commercial BRMS
-  - Algorithm: Rule engine with flow-based process integration
-  - ML Integration: External model API integration; AutoML capabilities
-  - Explanation: Flow trace and decision log
-  - Strengths: Low-code authoring enables business users without engineering support; rapid deployment
-  - Weaknesses: Less suited for complex high-performance rule evaluation; newer platform with smaller enterprise track record
-  - UK adoption: Growing in financial services, insurance, and healthcare SME contexts
+
+- Type: Low-code/no-code commercial BRMS
+- Algorithm: Rule engine with flow-based process integration
+- ML Integration: External model API integration; AutoML capabilities
+- Explanation: Flow trace and decision log
+- Strengths: Low-code authoring enables business users without engineering support; rapid deployment
+- Weaknesses: Less suited for complex high-performance rule evaluation; newer platform with smaller enterprise track record
+- UK adoption: Growing in financial services, insurance, and healthcare SME contexts
 
   **Camunda Platform (DMN):**
-  - Type: Open-source BPM+DMN platform (commercial enterprise edition)
-  - Algorithm: DMN decision table evaluation with FEEL expression language
-  - ML Integration: Via external API calls from process flow
-  - Explanation: Decision table result trace
-  - Strengths: BPMN+DMN integration for process-and-decision automation; cloud-native architecture
-  - Weaknesses: DMN only (no Drools-style production rules); ML integration requires custom development
-  - UK adoption: Growing in digital transformation contexts across financial services, insurance, and government
+
+- Type: Open-source BPM+DMN platform (commercial enterprise edition)
+- Algorithm: DMN decision table evaluation with FEEL expression language
+- ML Integration: Via external API calls from process flow
+- Explanation: Decision table result trace
+- Strengths: BPMN+DMN integration for process-and-decision automation; cloud-native architecture
+- Weaknesses: DMN only (no Drools-style production rules); ML integration requires custom development
+- UK adoption: Growing in digital transformation contexts across financial services, insurance, and government
 
   **Open Policy Agent (OPA):**
-  - Type: Open-source policy engine (CNCF graduated project)
-  - Algorithm: Rego language evaluation with top-down unification-based semantics
-  - DMN Conformance: Not applicable (different evaluation model)
-  - ML Integration: Not native; typically upstream or downstream
-  - Explanation: Rego evaluation trace; reason annotation
-  - Strengths: Cloud-native; Kubernetes/service mesh native; declarative policy-as-code; CNCF ecosystem
-  - Weaknesses: Primarily suited to access control and authorisation decisions, not complex business decisioning
-  - UK adoption: Standard in Kubernetes-based financial services and government cloud deployments
+
+- Type: Open-source policy engine (CNCF graduated project)
+- Algorithm: Rego language evaluation with top-down unification-based semantics
+- DMN Conformance: Not applicable (different evaluation model)
+- ML Integration: Not native; typically upstream or downstream
+- Explanation: Rego evaluation trace; reason annotation
+- Strengths: Cloud-native; Kubernetes/service mesh native; declarative policy-as-code; CNCF ecosystem
+- Weaknesses: Primarily suited to access control and authorisation decisions, not complex business decisioning
+- UK adoption: Standard in Kubernetes-based financial services and government cloud deployments
 
   ## Glossary of Decision Engine Standards and Specifications
 
-  - **RETE algorithm** (Forgy, 1982): The pattern-matching algorithm underlying most production rule engines, compiling rule conditions into an alpha-beta network for efficient incremental evaluation.
-  - **RETE-II** (Doorenbos, 1995): Enhanced version of RETE with improved handling of conjunctive rules and shared conditions across multiple rule patterns.
-  - **DMN (Decision Model and Notation)** v1.5 (OMG, 2023): Standard for decision tables, decision requirement diagrams, and FEEL expression language.
-  - **FEEL (Friendly Enough Expression Language)**: The expression language embedded within DMN, providing type-safe expressions for condition and action values in decision tables.
-  - **BPMN (Business Process Model and Notation)** v2.0 (OMG, 2011): Complementary standard to DMN for modelling the workflow processes that invoke decision engines.
-  - **PMML (Predictive Model Markup Language)** v4.4 (DMG, 2016): XML-based interchange format for trained statistical models, enabling transport of logistic regression, decision tree, neural network, and other model types between training frameworks and serving runtimes.
-  - **XACML (eXtensible Access Control Markup Language)** v3.0 (OASIS, 2013): XML-based standard for attribute-based access control policies, commonly used in enterprise identity management and as the policy language for [[Access Control]] oriented decision engines.
-  - **OPA Rego**: The policy language for Open Policy Agent, providing declarative rule definitions with top-down evaluation semantics, used for cloud-native authorisation and [[Policy Engine]] implementations.
-  - **SR 11-7**: The Federal Reserve / OCC 2011 supervisory guidance on model risk management (US), establishing industry norms for model development, validation, and governance that have been influential globally including in UK PRA/FCA expectations.
-  - **SS1/23**: PRA Supervisory Statement 1/23 (2023) on model risk management for UK banks, establishing binding expectations for model governance documentation, validation, performance monitoring, and model change management directly applicable to ML-based decision engines.
+- **RETE algorithm** (Forgy, 1982): The pattern-matching algorithm underlying most production rule engines, compiling rule conditions into an alpha-beta network for efficient incremental evaluation.
+- **RETE-II** (Doorenbos, 1995): Enhanced version of RETE with improved handling of conjunctive rules and shared conditions across multiple rule patterns.
+- **DMN (Decision Model and Notation)** v1.5 (OMG, 2023): Standard for decision tables, decision requirement diagrams, and FEEL expression language.
+- **FEEL (Friendly Enough Expression Language)**: The expression language embedded within DMN, providing type-safe expressions for condition and action values in decision tables.
+- **BPMN (Business Process Model and Notation)** v2.0 (OMG, 2011): Complementary standard to DMN for modelling the workflow processes that invoke decision engines.
+- **PMML (Predictive Model Markup Language)** v4.4 (DMG, 2016): XML-based interchange format for trained statistical models, enabling transport of logistic regression, decision tree, neural network, and other model types between training frameworks and serving runtimes.
+- **XACML (eXtensible Access Control Markup Language)** v3.0 (OASIS, 2013): XML-based standard for attribute-based access control policies, commonly used in enterprise identity management and as the policy language for [[Access Control]] oriented decision engines.
+- **OPA Rego**: The policy language for Open Policy Agent, providing declarative rule definitions with top-down evaluation semantics, used for cloud-native authorisation and [[Policy Engine]] implementations.
+- **SR 11-7**: The Federal Reserve / OCC 2011 supervisory guidance on model risk management (US), establishing industry norms for model development, validation, and governance that have been influential globally including in UK PRA/FCA expectations.
+- **SS1/23**: PRA Supervisory Statement 1/23 (2023) on model risk management for UK banks, establishing binding expectations for model governance documentation, validation, performance monitoring, and model change management directly applicable to ML-based decision engines.
 
   ## Decision Engine Integration with Enterprise Data Architecture
 
@@ -451,5 +457,5 @@ A decision engine is a software component that encapsulates decision logic—rul
 
   **[[Adaptive Systems]] and continuous learning**: The next generation of decision engines will transition from periodic batch retraining cycles to continuously learning systems that update their model components online as new labelled outcomes arrive through feedback loops. Online learning algorithms (stochastic gradient descent, Vowpal Wabbit, online random forests) update model parameters incrementally without full retraining, enabling decision engines to adapt to distributional shift in near-real-time. [[Adaptive Systems]] architectures balance adaptation speed (faster learning responds to shifts more quickly) against stability (slower learning is less susceptible to overfitting to transient anomalies or adversarial gaming). Formal guarantees of regret bounds (the cumulative performance gap between the online learner and the best static model in hindsight) provide theoretical grounding for online learning decision engines.
 
-- ### Provenance
+### Provenance
 

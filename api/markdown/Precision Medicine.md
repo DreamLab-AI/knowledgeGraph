@@ -1,28 +1,28 @@
-
 Precision Medicine utilises artificial intelligence to tailor medical treatment to individual patient characteristics, integrating genomic, proteomic, and clinical data to predict treatment response and stratify patient populations. AI-driven precision medicine enables personalised diagnosis, prognosis, and therapeutic selection based on multi-omic data integration and predictive modelling.
 
-- ### Semantic Classification
+### Semantic Classification
 
-- ### Content
-  - Precision Medicine utilises artificial intelligence to tailor medical treatment to individual patient characteristics, integrating genomic data, clinical information, lifestyle factors, and environmental data to predict treatment response, identify optimal therapies, and stratify patient populations. AI-driven precision medicine enables personalised diagnosis, prognosis, and therapeutic selection based on multi-omic data integration and predictive modelling.
+### Content
 
-  - ### Factors
+- Precision Medicine utilises artificial intelligence to tailor medical treatment to individual patient characteristics, integrating genomic data, clinical information, lifestyle factors, and environmental data to predict treatment response, identify optimal therapies, and stratify patient populations. AI-driven precision medicine enables personalised diagnosis, prognosis, and therapeutic selection based on multi-omic data integration and predictive modelling.
 
-  - ### Factors
+### Factors
 
-  ## Core Characteristics
+### Factors
 
-  - **Multi-Omic Integration**: Genomic, proteomic, metabolomic data fusion
-  - **Treatment Response Prediction**: Patient-specific therapy selection
-  - **Risk Stratification**: Individual disease risk assessment
-  - **Biomarker Discovery**: Identification of predictive and prognostic markers
-  - **Pharmacogenomics**: Genetic-based drug selection and dosing
+## Core Characteristics
+
+- **Multi-Omic Integration**: Genomic, proteomic, metabolomic data fusion
+- **Treatment Response Prediction**: Patient-specific therapy selection
+- **Risk Stratification**: Individual disease risk assessment
+- **Biomarker Discovery**: Identification of predictive and prognostic markers
+- **Pharmacogenomics**: Genetic-based drug selection and dosing
 
   ## Relationships
 
-  - **Superclass**: Medical AI
-  - **Related**: Genomics, Bioinformatics, Pharmacogenomics
-  - **Utilises**: Deep Learning, Multi-Modal Learning, Feature Selection
+- **Superclass**: Medical AI
+- **Related**: Genomics, Bioinformatics, Pharmacogenomics
+- **Utilises**: Deep Learning, Multi-Modal Learning, Feature Selection
 
   ## Key Literature
 
@@ -34,23 +34,23 @@ Precision Medicine utilises artificial intelligence to tailor medical treatment 
 
   ## See Also
 
-  - [[Medical AI]]
-  - [[Drug Discovery AI]]
-  - [[Genomics]]
+- [[Medical AI]]
+- [[Drug Discovery AI]]
+- [[Genomics]]
 
   ## Core Characteristics
 
-  - **Multi-Omic Integration**: Genomic, proteomic, metabolomic data fusion
-  - **Treatment Response Prediction**: Patient-specific therapy selection
-  - **Risk Stratification**: Individual disease risk assessment
-  - **Biomarker Discovery**: Identification of predictive and prognostic markers
-  - **Pharmacogenomics**: Genetic-based drug selection and dosing
+- **Multi-Omic Integration**: Genomic, proteomic, metabolomic data fusion
+- **Treatment Response Prediction**: Patient-specific therapy selection
+- **Risk Stratification**: Individual disease risk assessment
+- **Biomarker Discovery**: Identification of predictive and prognostic markers
+- **Pharmacogenomics**: Genetic-based drug selection and dosing
 
   ## Relationships
 
-  - **Superclass**: Medical AI
-  - **Related**: Genomics, Bioinformatics, Pharmacogenomics
-  - **Utilises**: Deep Learning, Multi-Modal Learning, Feature Selection
+- **Superclass**: Medical AI
+- **Related**: Genomics, Bioinformatics, Pharmacogenomics
+- **Utilises**: Deep Learning, Multi-Modal Learning, Feature Selection
 
   ## Key Literature
 
@@ -62,9 +62,9 @@ Precision Medicine utilises artificial intelligence to tailor medical treatment 
 
   ## See Also
 
-  - [[Medical AI]]
-  - [[Drug Discovery AI]]
-  - [[Genomics]]
+- [[Medical AI]]
+- [[Drug Discovery AI]]
+- [[Genomics]]
 
-- ### Provenance
+### Provenance
 

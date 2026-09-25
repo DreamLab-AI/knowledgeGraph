@@ -1,4 +1,3 @@
-
 The genesis block is the first block in a blockchain, hardcoded into the client software and serving as the immutable anchor from which the entire chain of subsequent blocks descends. It establishes the initial chain state, encodes the founding parameters of the network, and contains no reference to a previous block hash. Because it cannot be altered without invalidating all subsequent blocks, the genesis block is the ultimate root of trust for the distributed ledger.
 
 ### Definition

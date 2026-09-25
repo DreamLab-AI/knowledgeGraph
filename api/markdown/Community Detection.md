@@ -1,154 +1,157 @@
-
 Community detection is the computational task of identifying cohesive subgroups, or communities, within a network graph, where nodes within each group are more densely interconnected than they are with nodes in other groups. Algorithms such as the Louvain and Leiden methods optimise a modularity objective to partition the graph, whilst spectral clustering, label propagation, and stochastic block models offer alternative formulations. The problem is formally NP-hard in its general form, making approximation and heuristic approaches the practical norm. Applications span social-network analysis, bioinformatics, knowledge-graph organisation, recommendation systems, and cybersecurity anomaly detection.
 
-- ### Semantic Classification
+### Semantic Classification
 
-- ### Content
-  ## Compositional Relationships (Components)
-      SubClassOf(ml:CommunityDetection
-        ObjectSomeValuesFrom(ml:hasPart ml:LouvainAlgorithm))
-      SubClassOf(ml:CommunityDetection
-        ObjectSomeValuesFrom(ml:hasPart ml:LeidenAlgorithm))
-      SubClassOf(ml:CommunityDetection
-        ObjectSomeValuesFrom(ml:hasPart ml:SpectralClustering))
-      SubClassOf(ml:CommunityDetection
-        ObjectSomeValuesFrom(ml:hasPart ml:LabelPropagation))
-      SubClassOf(ml:CommunityDetection
-        ObjectSomeValuesFrom(ml:hasPart ml:StochasticBlockModel))
-      SubClassOf(ml:CommunityDetection
-        ObjectSomeValuesFrom(ml:hasPart ml:ModularityOptimisation))
-      SubClassOf(ml:CommunityDetection
-        ObjectSomeValuesFrom(ml:hasPart ml:RandomWalkMethod))
-      SubClassOf(ml:CommunityDetection
-        ObjectSomeValuesFrom(ml:hasPart ml:Infomap))
-      SubClassOf(ml:CommunityDetection
-        ObjectSomeValuesFrom(ml:hasPart ml:CliquePercolationMethod))
+### Content
 
-  ## Dependency Relationships
-      SubClassOf(ml:CommunityDetection
-        ObjectSomeValuesFrom(ml:requires ml:GraphTheory))
-      SubClassOf(ml:CommunityDetection
-        ObjectSomeValuesFrom(ml:requires ml:LinearAlgebra))
-      SubClassOf(ml:CommunityDetection
-        ObjectSomeValuesFrom(ml:dependsOn ml:MachineLearning))
-      SubClassOf(ml:CommunityDetection
-        ObjectSomeValuesFrom(ml:uses ml:GraphNeuralNetworks))
-      SubClassOf(ml:CommunityDetection
-        ObjectSomeValuesFrom(ml:uses ml:MatrixFactorisation))
-      SubClassOf(ml:CommunityDetection
-        ObjectSomeValuesFrom(ml:uses ml:InformationTheory))
-      SubClassOf(ml:CommunityDetection
-        ObjectSomeValuesFrom(ml:uses ml:NodeEmbedding))
+## Compositional Relationships (Components)
+    SubClassOf(ml:CommunityDetection
+      ObjectSomeValuesFrom(ml:hasPart ml:LouvainAlgorithm))
+    SubClassOf(ml:CommunityDetection
+      ObjectSomeValuesFrom(ml:hasPart ml:LeidenAlgorithm))
+    SubClassOf(ml:CommunityDetection
+      ObjectSomeValuesFrom(ml:hasPart ml:SpectralClustering))
+    SubClassOf(ml:CommunityDetection
+      ObjectSomeValuesFrom(ml:hasPart ml:LabelPropagation))
+    SubClassOf(ml:CommunityDetection
+      ObjectSomeValuesFrom(ml:hasPart ml:StochasticBlockModel))
+    SubClassOf(ml:CommunityDetection
+      ObjectSomeValuesFrom(ml:hasPart ml:ModularityOptimisation))
+    SubClassOf(ml:CommunityDetection
+      ObjectSomeValuesFrom(ml:hasPart ml:RandomWalkMethod))
+    SubClassOf(ml:CommunityDetection
+      ObjectSomeValuesFrom(ml:hasPart ml:Infomap))
+    SubClassOf(ml:CommunityDetection
+      ObjectSomeValuesFrom(ml:hasPart ml:CliquePercolationMethod))
 
-  ## Capability Relationships
-      SubClassOf(ml:CommunityDetection
-        ObjectSomeValuesFrom(ml:enables ml:AnomalyDetection))
-      SubClassOf(ml:CommunityDetection
-        ObjectSomeValuesFrom(ml:enables ml:RecommendationSystems))
-      SubClassOf(ml:CommunityDetection
-        ObjectSomeValuesFrom(ml:enables ml:KnowledgeGraphEmbedding))
-      SubClassOf(ml:CommunityDetection
-        ObjectSomeValuesFrom(ml:enables ml:FraudDetection))
-      SubClassOf(ml:CommunityDetection
-        ObjectSomeValuesFrom(ml:enables ml:DataAggregation))
-      SubClassOf(ml:CommunityDetection
-        ObjectSomeValuesFrom(ml:supports ml:KnowledgeGraph))
-      SubClassOf(ml:CommunityDetection
-        ObjectSomeValuesFrom(ml:supports ml:LinkedData))
+## Dependency Relationships
+    SubClassOf(ml:CommunityDetection
+      ObjectSomeValuesFrom(ml:requires ml:GraphTheory))
+    SubClassOf(ml:CommunityDetection
+      ObjectSomeValuesFrom(ml:requires ml:LinearAlgebra))
+    SubClassOf(ml:CommunityDetection
+      ObjectSomeValuesFrom(ml:dependsOn ml:MachineLearning))
+    SubClassOf(ml:CommunityDetection
+      ObjectSomeValuesFrom(ml:uses ml:GraphNeuralNetworks))
+    SubClassOf(ml:CommunityDetection
+      ObjectSomeValuesFrom(ml:uses ml:MatrixFactorisation))
+    SubClassOf(ml:CommunityDetection
+      ObjectSomeValuesFrom(ml:uses ml:InformationTheory))
+    SubClassOf(ml:CommunityDetection
+      ObjectSomeValuesFrom(ml:uses ml:NodeEmbedding))
 
-  ## Implementation Relationships
-      SubClassOf(ml:CommunityDetection
-        ObjectSomeValuesFrom(ml:implements ml:ModularityOptimisation))
-      SubClassOf(ml:CommunityDetection
-        ObjectSomeValuesFrom(ml:implements ml:MinimumDescriptionLength))
-      SubClassOf(ml:CommunityDetection
-        ObjectSomeValuesFrom(ml:uses ml:GraphConvolutionalNetwork))
-      SubClassOf(ml:CommunityDetection
-        ObjectSomeValuesFrom(ml:uses ml:VariationalAutoencoder))
-      SubClassOf(ml:CommunityDetection
-        ObjectSomeValuesFrom(ml:uses ml:TemporalGraphNetworks))
-      SubClassOf(ml:CommunityDetection
-        ObjectSomeValuesFrom(ml:uses ml:SelfSupervisedLearning))
+## Capability Relationships
+    SubClassOf(ml:CommunityDetection
+      ObjectSomeValuesFrom(ml:enables ml:AnomalyDetection))
+    SubClassOf(ml:CommunityDetection
+      ObjectSomeValuesFrom(ml:enables ml:RecommendationSystems))
+    SubClassOf(ml:CommunityDetection
+      ObjectSomeValuesFrom(ml:enables ml:KnowledgeGraphEmbedding))
+    SubClassOf(ml:CommunityDetection
+      ObjectSomeValuesFrom(ml:enables ml:FraudDetection))
+    SubClassOf(ml:CommunityDetection
+      ObjectSomeValuesFrom(ml:enables ml:DataAggregation))
+    SubClassOf(ml:CommunityDetection
+      ObjectSomeValuesFrom(ml:supports ml:KnowledgeGraph))
+    SubClassOf(ml:CommunityDetection
+      ObjectSomeValuesFrom(ml:supports ml:LinkedData))
 
-  ## Reduction Relationships
-      SubClassOf(ml:CommunityDetection
-        ObjectSomeValuesFrom(ml:reducesTo ml:GraphPartitioning))
-      SubClassOf(ml:CommunityDetection
-        ObjectSomeValuesFrom(ml:reducesTo ml:Clustering))
-      SubClassOf(ml:CommunityDetection
-        ObjectSomeValuesFrom(ml:reducesTo ml:NodeClassification))
-      SubClassOf(ml:CommunityDetection
-        ObjectSomeValuesFrom(ml:reducesTo ml:UnsupervisedLearning))
-      SubClassOf(ml:CommunityDetection
-        ObjectSomeValuesFrom(ml:isSubclassOf ml:GraphAnalysis))
-      SubClassOf(ml:CommunityDetection
-        ObjectSomeValuesFrom(ml:uses ml:ContrastiveLearning))
+## Implementation Relationships
+    SubClassOf(ml:CommunityDetection
+      ObjectSomeValuesFrom(ml:implements ml:ModularityOptimisation))
+    SubClassOf(ml:CommunityDetection
+      ObjectSomeValuesFrom(ml:implements ml:MinimumDescriptionLength))
+    SubClassOf(ml:CommunityDetection
+      ObjectSomeValuesFrom(ml:uses ml:GraphConvolutionalNetwork))
+    SubClassOf(ml:CommunityDetection
+      ObjectSomeValuesFrom(ml:uses ml:VariationalAutoencoder))
+    SubClassOf(ml:CommunityDetection
+      ObjectSomeValuesFrom(ml:uses ml:TemporalGraphNetworks))
+    SubClassOf(ml:CommunityDetection
+      ObjectSomeValuesFrom(ml:uses ml:SelfSupervisedLearning))
 
-  ## About
+## Reduction Relationships
+    SubClassOf(ml:CommunityDetection
+      ObjectSomeValuesFrom(ml:reducesTo ml:GraphPartitioning))
+    SubClassOf(ml:CommunityDetection
+      ObjectSomeValuesFrom(ml:reducesTo ml:Clustering))
+    SubClassOf(ml:CommunityDetection
+      ObjectSomeValuesFrom(ml:reducesTo ml:NodeClassification))
+    SubClassOf(ml:CommunityDetection
+      ObjectSomeValuesFrom(ml:reducesTo ml:UnsupervisedLearning))
+    SubClassOf(ml:CommunityDetection
+      ObjectSomeValuesFrom(ml:isSubclassOf ml:GraphAnalysis))
+    SubClassOf(ml:CommunityDetection
+      ObjectSomeValuesFrom(ml:uses ml:ContrastiveLearning))
 
-  Community detection reveals the latent modular organisation of complex networks. Real-world graphs — citation networks, protein-interaction maps, the web, social platforms, road networks, financial transaction graphs, and peer-to-peer overlays — exhibit a pronounced tendency for densely connected local subgraphs separated by sparser inter-group links. This mesoscale structure, intermediate between individual nodes and the whole network, is called community or modular structure, and identifying it is critical for understanding the system's functional organisation, designing efficient algorithms, and supporting downstream [[Machine Learning]] and analytical tasks.
+## About
 
-  The mathematical grounding of community detection is rooted in [[Graph Theory]] and [[Linear Algebra]]. A graph G = (V, E) with vertex set V and edge set E exhibits community structure if there exists a partition of V into k subsets C₁, …, Cₖ such that the number of edges within each Cᵢ substantially exceeds the expected number under a random null model (typically the configuration model that preserves degree sequence). This excess is quantified by the modularity function Q introduced by Newman and Girvan (2004): Q = (1/2m) Σᵢⱼ [Aᵢⱼ − kᵢkⱼ/(2m)] δ(cᵢ, cⱼ), where Aᵢⱼ is the adjacency matrix, kᵢ is the degree of node i, m is the total edge count, and δ(cᵢ, cⱼ) equals 1 if nodes i and j belong to the same community. Maximising Q over all partitions is NP-hard, necessitating the heuristic and approximate algorithms that dominate practice.
+Community detection reveals the latent modular organisation of complex networks. Real-world graphs — citation networks, protein-interaction maps, the web, social platforms, road networks, financial transaction graphs, and peer-to-peer overlays — exhibit a pronounced tendency for densely connected local subgraphs separated by sparser inter-group links. This mesoscale structure, intermediate between individual nodes and the whole network, is called community or modular structure, and identifying it is critical for understanding the system's functional organisation, designing efficient algorithms, and supporting downstream [[Machine Learning]] and analytical tasks.
 
-  A distinguishing property of community detection — relative to classical [[Graph Partitioning]] (which minimises cut edges for a fixed number of equally sized parts) — is that it is typically unsupervised: the number of communities and their sizes emerge from the data rather than being specified in advance. This makes community detection fundamentally an exploratory analysis tool, analogous to [[Clustering]] in the vector-space setting, but operating on topological structure rather than geometric distance. The absence of ground truth in real-world applications motivates the development of both internal quality metrics (modularity, conductance, coverage) and external metrics applicable when annotated communities exist (Normalised Mutual Information, Adjusted Rand Index).
+The mathematical grounding of community detection is rooted in [[Graph Theory]] and [[Linear Algebra]]. A graph G = (V, E) with vertex set V and edge set E exhibits community structure if there exists a partition of V into k subsets C₁, …, Cₖ such that the number of edges within each Cᵢ substantially exceeds the expected number under a random null model (typically the configuration model that preserves degree sequence). This excess is quantified by the modularity function Q introduced by Newman and Girvan (2004): Q = (1/2m) Σᵢⱼ [Aᵢⱼ − kᵢkⱼ/(2m)] δ(cᵢ, cⱼ), where Aᵢⱼ is the adjacency matrix, kᵢ is the degree of node i, m is the total edge count, and δ(cᵢ, cⱼ) equals 1 if nodes i and j belong to the same community. Maximising Q over all partitions is NP-hard, necessitating the heuristic and approximate algorithms that dominate practice.
 
-  The scalability requirement is severe: social networks like Twitter/X and LinkedIn contain hundreds of millions of nodes; biological interaction networks contain thousands of proteins but extremely dense connection patterns; knowledge graphs such as Wikidata contain hundreds of millions of entities. Algorithms must therefore achieve sub-quadratic — ideally near-linear — time complexity to be practical, driving the dominance of the [[Louvain Algorithm]] (near-linear in edges) and its variants in industrial deployments.
+A distinguishing property of community detection — relative to classical [[Graph Partitioning]] (which minimises cut edges for a fixed number of equally sized parts) — is that it is typically unsupervised: the number of communities and their sizes emerge from the data rather than being specified in advance. This makes community detection fundamentally an exploratory analysis tool, analogous to [[Clustering]] in the vector-space setting, but operating on topological structure rather than geometric distance. The absence of ground truth in real-world applications motivates the development of both internal quality metrics (modularity, conductance, coverage) and external metrics applicable when annotated communities exist (Normalised Mutual Information, Adjusted Rand Index).
 
-  ## Key Algorithmic Families
+The scalability requirement is severe: social networks like Twitter/X and LinkedIn contain hundreds of millions of nodes; biological interaction networks contain thousands of proteins but extremely dense connection patterns; knowledge graphs such as Wikidata contain hundreds of millions of entities. Algorithms must therefore achieve sub-quadratic — ideally near-linear — time complexity to be practical, driving the dominance of the [[Louvain Algorithm]] (near-linear in edges) and its variants in industrial deployments.
 
-  **Modularity Optimisation**
+## Key Algorithmic Families
 
-  The [[Louvain Algorithm]] (Blondel et al., 2008) maximises the modularity function Q through a two-phase greedy local optimisation. Phase 1: each node i is moved to the community of its neighbour j that produces the greatest positive gain in Q; this is repeated until no further gain is possible. Phase 2: each community is collapsed into a single super-node; edge weights are aggregated. The two phases iterate until global convergence. The algorithm achieves near-linear time complexity O(m log n) in practice and scales to graphs with hundreds of millions of edges, which explains its adoption as the default community detection method in Neo4j Graph Data Science, igraph, NetworkX, and TigerGraph.
+**Modularity Optimisation**
 
-  A critical limitation of the [[Louvain Algorithm]] is that it may yield internally disconnected communities — a partition may label two subsets as one community even though they are only weakly internally connected. The [[Leiden Algorithm]] (Traag, Waltman, and van Eck, 2019) corrects this by adding a refinement step that periodically subdivides communities into smaller, guaranteed well-connected sub-communities before merging. Leiden also provides stronger theoretical guarantees: at convergence, every community is guaranteed to be locally optimal with respect to the Constant Potts Model (CPM), a resolution-parameter-based quality function that avoids the resolution limit of standard modularity.
+The [[Louvain Algorithm]] (Blondel et al., 2008) maximises the modularity function Q through a two-phase greedy local optimisation. Phase 1: each node i is moved to the community of its neighbour j that produces the greatest positive gain in Q; this is repeated until no further gain is possible. Phase 2: each community is collapsed into a single super-node; edge weights are aggregated. The two phases iterate until global convergence. The algorithm achieves near-linear time complexity O(m log n) in practice and scales to graphs with hundreds of millions of edges, which explains its adoption as the default community detection method in Neo4j Graph Data Science, igraph, NetworkX, and TigerGraph.
 
-  Both Louvain and Leiden suffer from the resolution limit (Fortunato and Barthélemy, 2007): very small, tightly connected communities embedded in large networks may be merged artificially because the modularity function's null model has a resolution below which modules are invisible. This affects real-world applications in biology and social networks where micro-scale clusters (functional protein complexes, tight social cliques) are of interest.
+A critical limitation of the [[Louvain Algorithm]] is that it may yield internally disconnected communities — a partition may label two subsets as one community even though they are only weakly internally connected. The [[Leiden Algorithm]] (Traag, Waltman, and van Eck, 2019) corrects this by adding a refinement step that periodically subdivides communities into smaller, guaranteed well-connected sub-communities before merging. Leiden also provides stronger theoretical guarantees: at convergence, every community is guaranteed to be locally optimal with respect to the Constant Potts Model (CPM), a resolution-parameter-based quality function that avoids the resolution limit of standard modularity.
 
-  **Spectral Methods**
+Both Louvain and Leiden suffer from the resolution limit (Fortunato and Barthélemy, 2007): very small, tightly connected communities embedded in large networks may be merged artificially because the modularity function's null model has a resolution below which modules are invisible. This affects real-world applications in biology and social networks where micro-scale clusters (functional protein complexes, tight social cliques) are of interest.
 
-  [[Spectral Clustering]] leverages the eigenstructure of the graph Laplacian L = D − A (where D is the degree matrix and A the adjacency matrix). The k smallest eigenvectors of L (or its normalised variant L_sym = D^{−1/2}LD^{−1/2}) form an embedding of nodes into a k-dimensional Euclidean space in which community structure manifests as geometric separation; standard k-means applied to this embedding recovers the partition. The Fiedler vector (second eigenvector of L) bisects the graph at its minimum conductance cut and can be applied recursively for hierarchical decomposition. Spectral methods have strong theoretical guarantees under the Stochastic Block Model but require computing the leading eigenvectors, which costs O(n³) naively or O(nk²) with Lanczos iteration, limiting scalability relative to modularity-optimisation approaches. [[Matrix Factorisation]] variants (Non-Negative Matrix Factorisation of the adjacency or modularity matrix) produce soft membership vectors that naturally support overlapping community assignment.
+**Spectral Methods**
 
-  **Label Propagation**
+[[Spectral Clustering]] leverages the eigenstructure of the graph Laplacian L = D − A (where D is the degree matrix and A the adjacency matrix). The k smallest eigenvectors of L (or its normalised variant L_sym = D^{−1/2}LD^{−1/2}) form an embedding of nodes into a k-dimensional Euclidean space in which community structure manifests as geometric separation; standard k-means applied to this embedding recovers the partition. The Fiedler vector (second eigenvector of L) bisects the graph at its minimum conductance cut and can be applied recursively for hierarchical decomposition. Spectral methods have strong theoretical guarantees under the Stochastic Block Model but require computing the leading eigenvectors, which costs O(n³) naively or O(nk²) with Lanczos iteration, limiting scalability relative to modularity-optimisation approaches. [[Matrix Factorisation]] variants (Non-Negative Matrix Factorisation of the adjacency or modularity matrix) produce soft membership vectors that naturally support overlapping community assignment.
 
-  Each node adopts the label most frequently found among its neighbours; ties are broken at random; the process iterates until convergence. The algorithm runs in near-linear time O(m) per iteration and requires O(n) memory, making it the most scalable approach for very large graphs. The stochastic tie-breaking introduces natural randomness that ensemble variants exploit by averaging over multiple runs to produce stable partitions (MultiPlex Label Propagation, SLPA).
+**Label Propagation**
 
-  **Stochastic Block Model (SBM)**
+Each node adopts the label most frequently found among its neighbours; ties are broken at random; the process iterates until convergence. The algorithm runs in near-linear time O(m) per iteration and requires O(n) memory, making it the most scalable approach for very large graphs. The stochastic tie-breaking introduces natural randomness that ensemble variants exploit by averaging over multiple runs to produce stable partitions (MultiPlex Label Propagation, SLPA).
 
-  The [[Stochastic Block Model]] is a generative probabilistic model in which connection probability depends only on block (community) membership: nodes i ∈ Cₐ and j ∈ Cᵦ are connected independently with probability pₐᵦ. Inference recovers planted block structure via belief propagation (spectral method on the non-backtracking matrix), expectation-maximisation, or variational Bayes MCMC. Extensions include the degree-corrected SBM (accommodating heterogeneous degree distributions), the nested SBM (hierarchical multi-resolution communities), and overlapping SBMs. The SBM is particularly important for hypothesis testing — likelihood-ratio tests assess whether detected structure exceeds chance — and for information-theoretically optimal detection near the Kesten-Stigum threshold.
+**Stochastic Block Model (SBM)**
 
-  **Graph Neural Network Methods**
+The [[Stochastic Block Model]] is a generative probabilistic model in which connection probability depends only on block (community) membership: nodes i ∈ Cₐ and j ∈ Cᵦ are connected independently with probability pₐᵦ. Inference recovers planted block structure via belief propagation (spectral method on the non-backtracking matrix), expectation-maximisation, or variational Bayes MCMC. Extensions include the degree-corrected SBM (accommodating heterogeneous degree distributions), the nested SBM (hierarchical multi-resolution communities), and overlapping SBMs. The SBM is particularly important for hypothesis testing — likelihood-ratio tests assess whether detected structure exceeds chance — and for information-theoretically optimal detection near the Kesten-Stigum threshold.
 
-  [[Graph Neural Networks]] have substantially advanced community detection in attributed networks — graphs where nodes carry feature vectors (user profiles, protein expression levels, document word counts) in addition to structural connectivity. [[Graph Convolutional Network]] (Kipf and Welling, 2017) and [[Graph Attention Network]] architectures learn node embeddings that fuse structural and attribute information through iterated neighbourhood aggregation; community assignment is then obtained by applying k-means or soft clustering to the embedding space. Variational [[Graph Neural Networks]] (VGAE, Kipf and Welling, 2016) jointly learn encoder embeddings and a link-generation decoder in an unsupervised [[Self-Supervised Learning]] framework, producing probabilistic node-community assignments. DyFSS (2024) introduced dynamic fusion of multiple self-supervised signals with node-specific weights, achieving state-of-the-art performance on attributed graph benchmarks. The GCNRH architecture (2025) introduced a biaffine attention mechanism establishing fast high-order associations between remote nodes, improving detection of communities connected by indirect structural bridges. A 2025 IJCAI paper (Liu et al.) proposed an approach bridging topological and attributive cohesion via [[Graph Convolutional Network]]s, achieving improved NMI on benchmark attributed networks.
+**Graph Neural Network Methods**
 
-  GNN-based methods support end-to-end training when partial community labels are available (semi-supervised setting) and generalise to heterogeneous graphs (nodes and edges of multiple types) via heterogeneous GNN architectures — important for [[Knowledge Graph Embedding]] and biomedical [[Bioinformatics]] applications.
+[[Graph Neural Networks]] have substantially advanced community detection in attributed networks — graphs where nodes carry feature vectors (user profiles, protein expression levels, document word counts) in addition to structural connectivity. [[Graph Convolutional Network]] (Kipf and Welling, 2017) and [[Graph Attention Network]] architectures learn node embeddings that fuse structural and attribute information through iterated neighbourhood aggregation; community assignment is then obtained by applying k-means or soft clustering to the embedding space. Variational [[Graph Neural Networks]] (VGAE, Kipf and Welling, 2016) jointly learn encoder embeddings and a link-generation decoder in an unsupervised [[Self-Supervised Learning]] framework, producing probabilistic node-community assignments. DyFSS (2024) introduced dynamic fusion of multiple self-supervised signals with node-specific weights, achieving state-of-the-art performance on attributed graph benchmarks. The GCNRH architecture (2025) introduced a biaffine attention mechanism establishing fast high-order associations between remote nodes, improving detection of communities connected by indirect structural bridges. A 2025 IJCAI paper (Liu et al.) proposed an approach bridging topological and attributive cohesion via [[Graph Convolutional Network]]s, achieving improved NMI on benchmark attributed networks.
 
-  **Random Walk and Information-Theoretic Methods**
+GNN-based methods support end-to-end training when partial community labels are available (semi-supervised setting) and generalise to heterogeneous graphs (nodes and edges of multiple types) via heterogeneous GNN architectures — important for [[Knowledge Graph Embedding]] and biomedical [[Bioinformatics]] applications.
 
-  [[Random Walks]]-based algorithms encode community structure through the statistics of diffusion on the graph. The Infomap algorithm (Rosvall and Bergstrom, 2008) minimises the [[Minimum Description Length]] (map equation) of a random walk trajectory: an optimal partition allows the walk to be compactly encoded by reusing community-level codelengths within communities. This provides an [[Information Theory]]-grounded quality criterion that does not suffer from the resolution limit of modularity. Infomap also supports overlapping communities and hierarchical multi-level structure. The Walktrap algorithm (Pons and Latapy, 2005) uses random-walk distances to measure node proximity and applies [[Hierarchical Clustering]] agglomerative merging, revealing community structure at multiple resolutions. [[Temporal Graph Networks]] (Rossi et al., 2020) extend these ideas to dynamic networks where edges appear and disappear over time, supporting community detection in time-evolving graphs such as communication streams or financial transaction sequences.
+**Random Walk and Information-Theoretic Methods**
 
-  **Overlapping and Hierarchical Detection**
+[[Random Walks]]-based algorithms encode community structure through the statistics of diffusion on the graph. The Infomap algorithm (Rosvall and Bergstrom, 2008) minimises the [[Minimum Description Length]] (map equation) of a random walk trajectory: an optimal partition allows the walk to be compactly encoded by reusing community-level codelengths within communities. This provides an [[Information Theory]]-grounded quality criterion that does not suffer from the resolution limit of modularity. Infomap also supports overlapping communities and hierarchical multi-level structure. The Walktrap algorithm (Pons and Latapy, 2005) uses random-walk distances to measure node proximity and applies [[Hierarchical Clustering]] agglomerative merging, revealing community structure at multiple resolutions. [[Temporal Graph Networks]] (Rossi et al., 2020) extend these ideas to dynamic networks where edges appear and disappear over time, supporting community detection in time-evolving graphs such as communication streams or financial transaction sequences.
 
-  Most classical algorithms assign each node to exactly one community (hard partition). Overlapping methods allow nodes to belong to multiple communities — essential in social networks (people belong to multiple communities: work colleagues, family, hobby groups) and in [[Bioinformatics]] (proteins participate in multiple functional pathways). Algorithms include BIGCLAM (Yang and Leskovec, 2013), CPM (Clique Percolation Method, Palla et al., 2005), Overlapping Community Detection with [[Graph Neural Networks]] (Zhang et al., 2019), and [[Stochastic Block Model]] overlapping extensions. Hierarchical methods (Girvan-Newman edge-betweenness removal, Clauset-Newman-Moore agglomeration) produce a dendrogram representing communities at multiple levels of resolution.
+**Overlapping and Hierarchical Detection**
 
-  ## Quality Metrics and Evaluation
+Most classical algorithms assign each node to exactly one community (hard partition). Overlapping methods allow nodes to belong to multiple communities — essential in social networks (people belong to multiple communities: work colleagues, family, hobby groups) and in [[Bioinformatics]] (proteins participate in multiple functional pathways). Algorithms include BIGCLAM (Yang and Leskovec, 2013), CPM (Clique Percolation Method, Palla et al., 2005), Overlapping Community Detection with [[Graph Neural Networks]] (Zhang et al., 2019), and [[Stochastic Block Model]] overlapping extensions. Hierarchical methods (Girvan-Newman edge-betweenness removal, Clauset-Newman-Moore agglomeration) produce a dendrogram representing communities at multiple levels of resolution.
 
-  Internal quality metrics (applicable without ground truth):
-  - **Modularity (Q)**: fraction of intra-community edges minus the expected fraction under the configuration null model. Range −0.5 to 1; values above 0.3 indicate non-trivial structure. Susceptible to resolution limit and degeneracy of modularity landscape.
-  - **Conductance**: for a partition, the ratio of cut edges to the volume (sum of degrees) of the smaller partition. Lower conductance = more tightly bound community. Used in practice by Google and Neo4j to evaluate partition quality in production graph systems.
-  - **Coverage and Performance**: coverage is the fraction of edges that fall inside communities; performance is the fraction of correctly classified node pairs (both internally connected or externally disconnected). Complementary measures less susceptible to size bias than modularity.
-  - **Constant Potts Model (CPM)**: the [[Leiden Algorithm]]'s native quality function; replaces the null model with a resolution parameter γ, allowing detection at user-specified granularity without the resolution limit.
+## Quality Metrics and Evaluation
+
+Internal quality metrics (applicable without ground truth):
+
+- **Modularity (Q)**: fraction of intra-community edges minus the expected fraction under the configuration null model. Range −0.5 to 1; values above 0.3 indicate non-trivial structure. Susceptible to resolution limit and degeneracy of modularity landscape.
+- **Conductance**: for a partition, the ratio of cut edges to the volume (sum of degrees) of the smaller partition. Lower conductance = more tightly bound community. Used in practice by Google and Neo4j to evaluate partition quality in production graph systems.
+- **Coverage and Performance**: coverage is the fraction of edges that fall inside communities; performance is the fraction of correctly classified node pairs (both internally connected or externally disconnected). Complementary measures less susceptible to size bias than modularity.
+- **Constant Potts Model (CPM)**: the [[Leiden Algorithm]]'s native quality function; replaces the null model with a resolution parameter γ, allowing detection at user-specified granularity without the resolution limit.
 
   External quality metrics (require ground-truth communities):
-  - **Normalised Mutual Information (NMI)**: information-theoretic overlap between detected and ground-truth partitions. Value in [0,1]; 1 = perfect agreement.
-  - **Adjusted Rand Index (ARI)**: pairwise co-membership agreement corrected for chance. Range [−1, 1]; 1 = perfect, 0 = random baseline.
-  - **F1-score and Omega Index**: precision-recall variants for overlapping community benchmarks.
+
+- **Normalised Mutual Information (NMI)**: information-theoretic overlap between detected and ground-truth partitions. Value in [0,1]; 1 = perfect agreement.
+- **Adjusted Rand Index (ARI)**: pairwise co-membership agreement corrected for chance. Range [−1, 1]; 1 = perfect, 0 = random baseline.
+- **F1-score and Omega Index**: precision-recall variants for overlapping community benchmarks.
 
   Standard benchmark graphs:
-  - Zachary's Karate Club (34 nodes, 78 edges): canonical toy graph with known 2-community ground truth.
-  - LFR Benchmark (Lancichinetti, Fortunato, Radicchi, 2008): synthetic graphs with planted communities at tunable mixing parameter μ; the standard for algorithm comparison.
-  - SNAP social-network datasets (Stanford): ego networks from Facebook, Google+, Twitter with user-annotated community ground truth.
-  - SBM planted partition model: Bayesian gold standard for statistical detection theory.
-  - Open Graph Benchmark (OGB): includes large-scale community-relevant datasets (ogbn-products, ogbn-papers100M) for scalable GNN evaluation.
+
+- Zachary's Karate Club (34 nodes, 78 edges): canonical toy graph with known 2-community ground truth.
+- LFR Benchmark (Lancichinetti, Fortunato, Radicchi, 2008): synthetic graphs with planted communities at tunable mixing parameter μ; the standard for algorithm comparison.
+- SNAP social-network datasets (Stanford): ego networks from Facebook, Google+, Twitter with user-annotated community ground truth.
+- SBM planted partition model: Bayesian gold standard for statistical detection theory.
+- Open Graph Benchmark (OGB): includes large-scale community-relevant datasets (ogbn-products, ogbn-papers100M) for scalable GNN evaluation.
 
   ## Use Cases and Major Families
 
@@ -188,19 +191,19 @@ Community detection is the computational task of identifying cohesive subgroups,
 
   The modern formulation of community detection is commonly traced to Girvan and Newman (2002), who introduced edge-betweenness-removal as a principled hierarchical decomposition algorithm, and Newman and Girvan (2004) who defined the modularity function Q. The field was substantially surveyed by Fortunato (2010) in a comprehensive Physics Reports review that remains the standard reference. Key algorithmic milestones:
 
-  - 1998: Kernighan-Lin bisection and spectral bisection via Fiedler vector (linear algebra approach).
-  - 2002: Girvan-Newman edge betweenness removal (first widely cited algorithm).
-  - 2004: Newman and Girvan modularity definition; Newman's spectral modularity method.
-  - 2005: Pons and Latapy Walktrap [[Random Walks]] algorithm; Palla et al. Clique Percolation (CPM) overlapping communities.
-  - 2007: Fortunato and Barthélemy resolution limit analysis.
-  - 2008: Blondel et al. [[Louvain Algorithm]] — the dominant practical algorithm for the subsequent 15 years; Rosvall-Bergstrom Infomap.
-  - 2011: Yang and Leskovec BigClam for overlapping detection.
-  - 2013: Leskovec et al. community detection at scale (SNAP benchmarks).
-  - 2016: Variational Graph Autoencoder (Kipf and Welling, 2016) — first strong GNN-based community detection.
-  - 2019: [[Leiden Algorithm]] (Traag, Waltman, van Eck) guaranteeing well-connected communities; IJCAI survey on deep community detection.
-  - 2020: Liu et al. comprehensive survey on deep learning for community detection (IEEE TNNLS).
-  - 2024: DyFSS unsupervised GNN community detection; k-plex-based community detection (ScienceDirect).
-  - 2025: GCNRH high-order GNN community detection; IJCAI advanced GCN community detection; 3-way comparative Louvain/Leiden/Infomap study.
+- 1998: Kernighan-Lin bisection and spectral bisection via Fiedler vector (linear algebra approach).
+- 2002: Girvan-Newman edge betweenness removal (first widely cited algorithm).
+- 2004: Newman and Girvan modularity definition; Newman's spectral modularity method.
+- 2005: Pons and Latapy Walktrap [[Random Walks]] algorithm; Palla et al. Clique Percolation (CPM) overlapping communities.
+- 2007: Fortunato and Barthélemy resolution limit analysis.
+- 2008: Blondel et al. [[Louvain Algorithm]] — the dominant practical algorithm for the subsequent 15 years; Rosvall-Bergstrom Infomap.
+- 2011: Yang and Leskovec BigClam for overlapping detection.
+- 2013: Leskovec et al. community detection at scale (SNAP benchmarks).
+- 2016: Variational Graph Autoencoder (Kipf and Welling, 2016) — first strong GNN-based community detection.
+- 2019: [[Leiden Algorithm]] (Traag, Waltman, van Eck) guaranteeing well-connected communities; IJCAI survey on deep community detection.
+- 2020: Liu et al. comprehensive survey on deep learning for community detection (IEEE TNNLS).
+- 2024: DyFSS unsupervised GNN community detection; k-plex-based community detection (ScienceDirect).
+- 2025: GCNRH high-order GNN community detection; IJCAI advanced GCN community detection; 3-way comparative Louvain/Leiden/Infomap study.
 
   The community detection field spans statistical physics (Fortunato, Santo, ICTP Trieste; Barabási, Albert-László, network science), computer science (Leskovec, Jure, Stanford SNAP), [[Machine Learning]] (Kipf, Welling, Amsterdam/MPI; Hamilton, McGill), and applied biology (community detection for PPI networks across dozens of research groups worldwide).
 
@@ -282,30 +285,30 @@ Community detection is the computational task of identifying cohesive subgroups,
 
   No formal ISO or IEEE standard governs community detection algorithms. The field is standardised in practice through:
 
-  - **NetworkX (Python)**: the de-facto reference implementation for academic community detection; ships greedy modularity (Clauset-Newman-Moore), Louvain, Girvan-Newman, and label propagation; version 3.x (2024) includes [[Leiden Algorithm]] support.
-  - **igraph (R/Python/C)**: widely used in [[Bioinformatics]] and [[Social Network Analysis]]; Louvain, Leiden, Infomap, edge betweenness, leading eigenvector, walktrap, and spinglass algorithms are included.
-  - **Neo4j Graph Data Science Library**: production-grade community detection as a managed service; ships Louvain, Leiden, [[Label Propagation]], Weakly Connected Components, and K-1 Coloring; used by over 1000 enterprise customers (2025).
-  - **TigerGraph GSQL**: built-in community detection algorithms including Louvain and [[Label Propagation]] for distributed graph processing at scale.
-  - **SNAP (Stanford Network Analysis Project)**: benchmark datasets (ego networks, citation graphs, web graphs) and reference implementations used as the empirical evaluation standard since 2009.
-  - **LDBC Social Network Benchmark (SNB)**: the graph-database community benchmark includes community detection workloads; standardises performance comparison across Neo4j, TigerGraph, Amazon Neptune, and Memgraph at scale.
-  - **W3C RDF/OWL**: community detection is applied to knowledge graphs represented in RDF; [[Linked Data]] community structure guides ontology modularisation, satisfying OWL 2 DL reasoning complexity bounds per-module.
-  - **Open Graph Benchmark (OGB)**: Stanford benchmark suite standardising GNN performance on large-scale node classification, link prediction, and graph-level tasks; community detection is implicitly evaluated through node clustering metrics on ogbn-products and ogbn-papers100M.
+- **NetworkX (Python)**: the de-facto reference implementation for academic community detection; ships greedy modularity (Clauset-Newman-Moore), Louvain, Girvan-Newman, and label propagation; version 3.x (2024) includes [[Leiden Algorithm]] support.
+- **igraph (R/Python/C)**: widely used in [[Bioinformatics]] and [[Social Network Analysis]]; Louvain, Leiden, Infomap, edge betweenness, leading eigenvector, walktrap, and spinglass algorithms are included.
+- **Neo4j Graph Data Science Library**: production-grade community detection as a managed service; ships Louvain, Leiden, [[Label Propagation]], Weakly Connected Components, and K-1 Coloring; used by over 1000 enterprise customers (2025).
+- **TigerGraph GSQL**: built-in community detection algorithms including Louvain and [[Label Propagation]] for distributed graph processing at scale.
+- **SNAP (Stanford Network Analysis Project)**: benchmark datasets (ego networks, citation graphs, web graphs) and reference implementations used as the empirical evaluation standard since 2009.
+- **LDBC Social Network Benchmark (SNB)**: the graph-database community benchmark includes community detection workloads; standardises performance comparison across Neo4j, TigerGraph, Amazon Neptune, and Memgraph at scale.
+- **W3C RDF/OWL**: community detection is applied to knowledge graphs represented in RDF; [[Linked Data]] community structure guides ontology modularisation, satisfying OWL 2 DL reasoning complexity bounds per-module.
+- **Open Graph Benchmark (OGB)**: Stanford benchmark suite standardising GNN performance on large-scale node classification, link prediction, and graph-level tasks; community detection is implicitly evaluated through node clustering metrics on ogbn-products and ogbn-papers100M.
 
   ## Key Terminology
 
-  - **Community (Module)**: a subset of graph nodes with significantly more internal edges than expected by chance.
-  - **Modularity (Q)**: the Newman-Girvan (2004) quality function measuring the excess of intra-community edges over a random null model; the most widely used intrinsic community quality measure.
-  - **Resolution limit**: the property of modularity that prevents detection of communities smaller than approximately √(2m) nodes in a graph with m edges (Fortunato and Barthélemy, 2007).
-  - **Constant Potts Model (CPM)**: the [[Leiden Algorithm]]'s quality function, parameterised by a resolution constant γ, avoiding the resolution limit.
-  - **Conductance**: ratio of inter-community edges to the volume of the smaller partition side; lower values indicate tighter communities; used by Google and Neo4j in production.
-  - **LFR benchmark**: the Lancichinetti-Fortunato-Radicchi synthetic benchmark graph with planted communities at a tunable mixing ratio; the standard comparative evaluation framework.
-  - **Map equation**: the Infomap (Rosvall-Bergstrom, 2008) quality criterion minimising the [[Minimum Description Length]] of a random walker's itinerary — an [[Information Theory]] grounded alternative to modularity.
-  - **Degree-corrected SBM**: an extension of the [[Stochastic Block Model]] that accommodates heterogeneous degree distributions, preventing degree sequence from being conflated with block structure.
-  - **NMI (Normalised Mutual Information)**: the dominant external evaluation metric for comparing a detected partition to ground truth.
-  - **Kesten-Stigum threshold**: the information-theoretic phase transition in the [[Stochastic Block Model]] below which no polynomial-time algorithm can detect planted communities; sets a fundamental limit on community detection in sparse graphs.
-  - **Fiedler vector**: the eigenvector corresponding to the second-smallest eigenvalue of the graph Laplacian; its signs partition the graph at the minimum normalised cut.
-  - **BIGCLAM (Big Clique Affiliation Model)**: overlapping community detection model (Yang and Leskovec, 2013) representing each community as a bipartite core with non-negative factored membership strengths; scales to millions of nodes.
-  - **DyFSS**: Dynamic Fusion Self-Supervised (2024) GNN-based community detection that dynamically fuses structural and attribute embeddings with node-specific learnable weights.
+- **Community (Module)**: a subset of graph nodes with significantly more internal edges than expected by chance.
+- **Modularity (Q)**: the Newman-Girvan (2004) quality function measuring the excess of intra-community edges over a random null model; the most widely used intrinsic community quality measure.
+- **Resolution limit**: the property of modularity that prevents detection of communities smaller than approximately √(2m) nodes in a graph with m edges (Fortunato and Barthélemy, 2007).
+- **Constant Potts Model (CPM)**: the [[Leiden Algorithm]]'s quality function, parameterised by a resolution constant γ, avoiding the resolution limit.
+- **Conductance**: ratio of inter-community edges to the volume of the smaller partition side; lower values indicate tighter communities; used by Google and Neo4j in production.
+- **LFR benchmark**: the Lancichinetti-Fortunato-Radicchi synthetic benchmark graph with planted communities at a tunable mixing ratio; the standard comparative evaluation framework.
+- **Map equation**: the Infomap (Rosvall-Bergstrom, 2008) quality criterion minimising the [[Minimum Description Length]] of a random walker's itinerary — an [[Information Theory]] grounded alternative to modularity.
+- **Degree-corrected SBM**: an extension of the [[Stochastic Block Model]] that accommodates heterogeneous degree distributions, preventing degree sequence from being conflated with block structure.
+- **NMI (Normalised Mutual Information)**: the dominant external evaluation metric for comparing a detected partition to ground truth.
+- **Kesten-Stigum threshold**: the information-theoretic phase transition in the [[Stochastic Block Model]] below which no polynomial-time algorithm can detect planted communities; sets a fundamental limit on community detection in sparse graphs.
+- **Fiedler vector**: the eigenvector corresponding to the second-smallest eigenvalue of the graph Laplacian; its signs partition the graph at the minimum normalised cut.
+- **BIGCLAM (Big Clique Affiliation Model)**: overlapping community detection model (Yang and Leskovec, 2013) representing each community as a bipartite core with non-negative factored membership strengths; scales to millions of nodes.
+- **DyFSS**: Dynamic Fusion Self-Supervised (2024) GNN-based community detection that dynamically fuses structural and attribute embeddings with node-specific learnable weights.
 
   ## Research and Literature
 
@@ -340,5 +343,5 @@ Community detection is the computational task of identifying cohesive subgroups,
   29. Frontiers in AI (2025). "A systematic review of deep learning methods for community detection in social networks." https://www.frontiersin.org/journals/artificial-intelligence/articles/10.3389/frai.2025.1572645/full
   30. ArXiv (2025). "Discovering Communities in Continuous-Time Temporal Networks by Optimising L-Modularity." arXiv:2510.00741. https://arxiv.org/pdf/2510.00741
 
-- ### Provenance
+### Provenance
 

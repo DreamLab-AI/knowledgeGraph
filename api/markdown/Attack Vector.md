@@ -1,50 +1,54 @@
-
 A specific path, method, or mechanism that a threat actor uses to gain unauthorised access, exploit vulnerabilities, or cause damage to a system, network, or organisation. Attack vectors span network-based exploitation, social engineering, supply-chain compromise, and AI-specific techniques such as prompt injection or model poisoning, and are categorised by access method, target layer, and sophistication.
 
-- ### Semantic Classification
+### Semantic Classification
 
-- ### Content
+### Content
 
-  ## Definition
+## Definition
 
-  An **Attack Vector** is a specific path, method, or mechanism that a threat actor uses to gain unauthorized access, exploit vulnerabilities, or cause damage to a system, network, or organization.
+An **Attack Vector** is a specific path, method, or mechanism that a threat actor uses to gain unauthorized access, exploit vulnerabilities, or cause damage to a system, network, or organization.
 
-  ## Cross-Domain Manifestations
+## Cross-Domain Manifestations
 
-  ### Artificial Intelligence
-  - **Adversarial Attacks**: Crafted inputs causing model misclassification
-  - **Prompt Injection**: Malicious instructions embedded in LLM prompts
-  - **Model Poisoning**: Corrupting training data to compromise model integrity
-  - **Data Exfiltration**: Extracting training data through membership inference
-  - **API Abuse**: Overwhelming inference endpoints with malicious queries
+### Artificial Intelligence
+
+- **Adversarial Attacks**: Crafted inputs causing model misclassification
+- **Prompt Injection**: Malicious instructions embedded in LLM prompts
+- **Model Poisoning**: Corrupting training data to compromise model integrity
+- **Data Exfiltration**: Extracting training data through membership inference
+- **API Abuse**: Overwhelming inference endpoints with malicious queries
 
   ### Blockchain
-  - **51% Attacks**: Controlling majority of network hash power
-  - **Smart Contract Exploits**: Reentrancy, integer overflow, access control flaws
-  - **Bridge Hacks**: Exploiting cross-chain communication protocols
-  - **Private Key Theft**: Social engineering, malware, hardware compromise
-  - **Front-Running**: Manipulating transaction ordering for profit
+
+- **51% Attacks**: Controlling majority of network hash power
+- **Smart Contract Exploits**: Reentrancy, integer overflow, access control flaws
+- **Bridge Hacks**: Exploiting cross-chain communication protocols
+- **Private Key Theft**: Social engineering, malware, hardware compromise
+- **Front-Running**: Manipulating transaction ordering for profit
 
   ### Robotics
-  - **Sensor Spoofing**: Feeding false data to perception systems
-  - **Command Injection**: Manipulating control protocol communications
-  - **Physical Tampering**: Direct hardware modification or damage
-  - **GPS Jamming**: Disrupting positioning and navigation systems
-  - **Firmware Exploitation**: Compromising embedded system software
+
+- **Sensor Spoofing**: Feeding false data to perception systems
+- **Command Injection**: Manipulating control protocol communications
+- **Physical Tampering**: Direct hardware modification or damage
+- **GPS Jamming**: Disrupting positioning and navigation systems
+- **Firmware Exploitation**: Compromising embedded system software
 
   ### Metaverse
-  - **Avatar Hijacking**: Stealing virtual identity credentials
-  - **Virtual Property Theft**: Exploiting system bugs to steal digital assets
-  - **Griefing**: Intentional harassment and disruption of user experiences
-  - **Cross-Reality Phishing**: Social engineering in immersive environments
-  - **Exploit Chaining**: Combining multiple vulnerabilities for escalated access
+
+- **Avatar Hijacking**: Stealing virtual identity credentials
+- **Virtual Property Theft**: Exploiting system bugs to steal digital assets
+- **Griefing**: Intentional harassment and disruption of user experiences
+- **Cross-Reality Phishing**: Social engineering in immersive environments
+- **Exploit Chaining**: Combining multiple vulnerabilities for escalated access
 
   ### Telecommunications
-  - **Meeting Bombing**: Unauthorized joining of video conferences
-  - **Man-in-the-Middle**: Intercepting and modifying communications
-  - **VoIP Fraud**: Exploiting voice protocol vulnerabilities
-  - **SIM Swapping**: Social engineering to transfer phone numbers
-  - **Eavesdropping**: Passive surveillance of unencrypted communications
+
+- **Meeting Bombing**: Unauthorized joining of video conferences
+- **Man-in-the-Middle**: Intercepting and modifying communications
+- **VoIP Fraud**: Exploiting voice protocol vulnerabilities
+- **SIM Swapping**: Social engineering to transfer phone numbers
+- **Eavesdropping**: Passive surveillance of unencrypted communications
 
   ## Attack Vector Taxonomy
 
@@ -72,38 +76,43 @@ A specific path, method, or mechanism that a threat actor uses to gain unauthori
   ## Defensive Strategies
 
   ### Prevention
-  - **Attack Surface Reduction**: Minimize exposed interfaces and services
-  - **Security Architecture**: Defense-in-depth and zero-trust models
-  - **Input Validation**: Rigorous sanitization and bounds checking
-  - **Access Control**: Principle of least privilege enforcement
-  - **Security Awareness**: Training against social engineering
+
+- **Attack Surface Reduction**: Minimize exposed interfaces and services
+- **Security Architecture**: Defense-in-depth and zero-trust models
+- **Input Validation**: Rigorous sanitization and bounds checking
+- **Access Control**: Principle of least privilege enforcement
+- **Security Awareness**: Training against social engineering
 
   ### Detection
-  - **Intrusion Detection**: Signature and anomaly-based monitoring
-  - **Behavioral Analysis**: Identifying unusual activity patterns
-  - **Threat Intelligence**: Leveraging known attack indicators
-  - **Security Logging**: Comprehensive audit trail collection
-  - **Honeypots**: Decoy systems for attacker observation
+
+- **Intrusion Detection**: Signature and anomaly-based monitoring
+- **Behavioral Analysis**: Identifying unusual activity patterns
+- **Threat Intelligence**: Leveraging known attack indicators
+- **Security Logging**: Comprehensive audit trail collection
+- **Honeypots**: Decoy systems for attacker observation
 
   ### Response
-  - **Incident Response**: Prepared procedures for breach containment
-  - **Forensic Analysis**: Understanding attack methods and scope
-  - **System Isolation**: Quarantining compromised components
-  - **Threat Hunting**: Proactive searching for hidden compromises
-  - **Recovery Planning**: Restoration of normal operations
+
+- **Incident Response**: Prepared procedures for breach containment
+- **Forensic Analysis**: Understanding attack methods and scope
+- **System Isolation**: Quarantining compromised components
+- **Threat Hunting**: Proactive searching for hidden compromises
+- **Recovery Planning**: Restoration of normal operations
 
   #### Related Concepts
-  - [[Vulnerability]]: Weaknesses that attack vectors exploit
-  - [[Threat Actor]]: Entities using attack vectors
-  - [[Resilience]]: System ability to withstand attack vectors
-  - [[Security]]: Overall protection framework
-  - [[Risk]]: Potential impact of successful attacks
+
+- [[Vulnerability]]: Weaknesses that attack vectors exploit
+- [[Threat Actor]]: Entities using attack vectors
+- [[Resilience]]: System ability to withstand attack vectors
+- [[Security]]: Overall protection framework
+- [[Risk]]: Potential impact of successful attacks
 
   #### References
-  - MITRE ATT&CK Framework: Comprehensive attack vector taxonomy
-  - OWASP Top 10: Common web application attack vectors
-  - NIST Cybersecurity Framework: Attack vector mitigation strategies
-  - CWE (Common Weakness Enumeration): Vulnerability and attack vector catalog
 
-- ### Provenance
+- MITRE ATT&CK Framework: Comprehensive attack vector taxonomy
+- OWASP Top 10: Common web application attack vectors
+- NIST Cybersecurity Framework: Attack vector mitigation strategies
+- CWE (Common Weakness Enumeration): Vulnerability and attack vector catalog
+
+### Provenance
 

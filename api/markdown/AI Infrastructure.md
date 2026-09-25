@@ -1,75 +1,89 @@
-
 AI Infrastructure is the integrated ensemble of hardware, software, data systems, and operational tooling required to develop, train, deploy, monitor, and govern artificial intelligence and machine learning workloads at scale. It spans physical compute resources such as GPU and TPU clusters, networking fabrics, and storage systems through to cloud-managed AI platforms, model-serving runtimes, data pipelines, and MLOps toolchains. Unlike general-purpose computing infrastructure, AI Infrastructure is specifically optimised for tensor operations, distributed parallel training, high-throughput vector data ingestion, and low-latency inference serving. It constitutes the production backbone that determines the cost, velocity, reliability, and scalability of AI system development cycles.
 
-- ### Overview
-  - AI Infrastructure emerged as a distinct discipline as [[Machine Learning]] workloads grew too large and specialised for conventional IT infrastructure. The shift from CPU-centric general computing to GPU-dominated parallel compute, pioneered by [[High-Performance Computing]] clusters repurposed for [[Deep Learning]], created an entirely new infrastructure category.
-  - Modern AI Infrastructure is characterised by several cross-cutting concerns:
-    - **Heterogeneous compute**: workloads span training on large GPU/TPU clusters, inference on commodity servers, and edge deployment on specialised accelerators such as NPUs and FPGAs.
-    - **Scale**: [[Large Language Model]] training runs require thousands of accelerators operating in tight synchrony over high-bandwidth interconnects such as NVLink and InfiniBand.
-    - **Data-centricity**: the data plane — including feature stores, [[Vector Database]] systems, and streaming ingestion — is as critical as the compute plane.
-    - **Observability**: production AI systems require continuous monitoring for model drift, data quality, latency, and throughput, creating demand for specialised [[MLOps]] tooling beyond traditional application performance management.
-    - **Reproducibility**: experiment tracking, model versioning, and lineage tracing are first-class concerns that distinguish AI Infrastructure from ad-hoc research environments.
-  - Leading cloud providers offer fully managed AI Infrastructure stacks: AWS SageMaker, Google Vertex AI, Azure Machine Learning, and Oracle AI Infrastructure. On-premises deployments utilise platforms such as NVIDIA AI Enterprise, HPE Machine Learning Development Environment, and VMware Private AI Foundation. Open-source frameworks such as Ray, Kubeflow, and MLflow underpin many self-hosted stacks.
+### Overview
 
-- ### Key Components
-  - #### Compute Layer
-    - [[GPU Compute]] — the dominant training accelerator; NVIDIA H100/A100 GPU clusters with NVLink interconnect are the de-facto standard for large model training.
-    - [[Accelerated Computing]] — extends to TPUs (Google), Trainium/Inferentia (AWS), and custom ASICs for inference.
-    - [[High-Performance Computing]] — HPC clusters with RDMA-capable [[Networking Fabric]] (InfiniBand, RoCE) underpin distributed training jobs.
-    - [[Edge Computing]] — inference at the network edge using NPUs, embedded GPUs (Jetson), and specialised inference chips.
-  - #### Data Layer
-    - [[Data Pipeline]] — batch and streaming ingestion, transformation, and feature engineering using tools such as Apache Spark, Apache Flink, and dbt.
-    - [[Distributed Storage]] — object stores (S3, GCS, Azure Blob), distributed file systems (Lustre, GPFS), and high-throughput NVMe arrays for training data.
-    - [[Vector Database]] — purpose-built indices (Pinecone, Weaviate, Qdrant, pgvector) for [[Embedding]] storage and approximate nearest-neighbour search in [[Retrieval-Augmented Generation]] systems.
-    - Feature Store — centralised repository for computed features enabling training-serving consistency (Feast, Tecton, Vertex Feature Store).
-  - #### Orchestration Layer
-    - [[Kubernetes]] — the dominant orchestration platform; extended for AI workloads via operators such as Kubeflow, Volcano, and the NVIDIA GPU Operator.
-    - [[Containerisation]] — Docker and OCI containers encapsulate training and inference environments, enabling reproducible builds and portability across clusters.
-    - Workflow Engines — DAG-based orchestrators (Apache Airflow, Prefect, Argo Workflows) schedule and retry multi-step ML pipelines.
-  - #### Model Lifecycle Layer
-    - [[MLOps]] — the operational discipline covering model training automation, continuous integration and deployment for ML, and model governance.
-    - [[Experiment Tracking]] — platforms such as MLflow, Weights & Biases, and Comet ML record hyperparameters, metrics, artefacts, and code versions for reproducibility.
-    - [[Model Registry]] — centralised store for versioned, tagged model artefacts with promotion workflows (staging → production) and lineage metadata.
-    - [[Model Serving]] — runtimes such as NVIDIA Triton Inference Server, TorchServe, TF Serving, and vLLM expose models via REST/gRPC with batching, quantisation, and autoscaling.
-  - #### Networking Layer
-    - [[Networking Fabric]] — high-bandwidth, low-latency interconnects (InfiniBand HDR/NDR, RoCEv2) are essential for collective communication primitives (AllReduce, AllGather) in [[Distributed Training]].
-    - Software-Defined Networking and service meshes (Istio, Linkerd) manage east-west traffic between microservices in AI serving stacks.
+- AI Infrastructure emerged as a distinct discipline as [[Machine Learning]] workloads grew too large and specialised for conventional IT infrastructure. The shift from CPU-centric general computing to GPU-dominated parallel compute, pioneered by [[High-Performance Computing]] clusters repurposed for [[Deep Learning]], created an entirely new infrastructure category.
+- Modern AI Infrastructure is characterised by several cross-cutting concerns:
+  - **Heterogeneous compute**: workloads span training on large GPU/TPU clusters, inference on commodity servers, and edge deployment on specialised accelerators such as NPUs and FPGAs.
+  - **Scale**: [[Large Language Model]] training runs require thousands of accelerators operating in tight synchrony over high-bandwidth interconnects such as NVLink and InfiniBand.
+  - **Data-centricity**: the data plane — including feature stores, [[Vector Database]] systems, and streaming ingestion — is as critical as the compute plane.
+  - **Observability**: production AI systems require continuous monitoring for model drift, data quality, latency, and throughput, creating demand for specialised [[MLOps]] tooling beyond traditional application performance management.
+  - **Reproducibility**: experiment tracking, model versioning, and lineage tracing are first-class concerns that distinguish AI Infrastructure from ad-hoc research environments.
+- Leading cloud providers offer fully managed AI Infrastructure stacks: AWS SageMaker, Google Vertex AI, Azure Machine Learning, and Oracle AI Infrastructure. On-premises deployments utilise platforms such as NVIDIA AI Enterprise, HPE Machine Learning Development Environment, and VMware Private AI Foundation. Open-source frameworks such as Ray, Kubeflow, and MLflow underpin many self-hosted stacks.
 
-- ### Applications and Use Cases
-  - **Foundation Model Training**: large-scale pre-training of [[Large Language Model]] systems and multimodal models requires thousand-node GPU clusters, petabyte-scale data lakes, and fault-tolerant checkpoint systems.
-  - **Enterprise AI Platforms**: organisations build internal AI platforms atop cloud AI Infrastructure to expose standardised tooling for data scientists and ML engineers, enabling [[Federated Learning]] across business units.
-  - **Real-Time AI Services**: recommendation engines, fraud detection, and conversational AI require [[Real-Time Inference]] infrastructure with sub-100 ms SLAs, served via GPU-backed or CPU-quantised endpoints.
-  - **Edge AI**: autonomous vehicles, robotics, smart cameras, and IoT devices run inference on-device using AI-optimised chips, coordinated by [[Edge Computing]] infrastructure and periodically updated via over-the-air model delivery pipelines.
-  - **Scientific AI**: drug discovery, protein folding simulation, climate modelling, and materials science deploy specialised AI Infrastructure on HPC clusters, often blending traditional MPI workloads with [[Deep Learning]] training.
-  - **Decentralised AI**: emerging systems such as compute marketplaces (Akash, Bittensor) bridge AI Infrastructure to [[Blockchain]] networks, enabling permissionless access to distributed GPU compute resources — a cross-domain application linking AI Infrastructure to [[Decentralised AI]].
-  - **Spatial and XR AI**: [[Spatial Computing]] environments demand on-device AI inference for scene understanding, gesture recognition, and avatar animation, driving specialised edge AI Infrastructure co-located with spatial rendering pipelines.
+### Key Components
 
-- ### Standards and Context
-  - **MLOps maturity models**: Google's ML Test Score, Microsoft's MLOps maturity model, and the Linux Foundation AI & Data MLOps SIG define levels of AI Infrastructure maturity from ad-hoc to fully automated.
-  - **Open standards and frameworks**: OCI (Open Container Initiative) for container images, Kubernetes API standards, ONNX (Open Neural Network Exchange) for model portability, and OpenTelemetry for observability instrumentation apply directly to AI Infrastructure stacks.
-  - **Cloud-native AI**: the CNCF (Cloud Native Computing Foundation) AI Working Group and LF AI & Data Foundation host projects spanning [[MLOps]], [[Model Serving]], and data governance that form the open-source substrate for AI Infrastructure.
-  - **Hardware standards**: NVLink, PCIe Gen5, CXL (Compute Express Link), and InfiniBand NDR are hardware-level standards critical for AI Infrastructure interconnect design.
-  - **Regulatory context**: AI Infrastructure is increasingly subject to governance frameworks — the EU AI Act mandates risk management, logging, and auditability requirements that directly impose obligations on AI Infrastructure operators. [[Data Governance]] and [[Security]] controls (access management, encryption at rest and in transit, model provenance) are baseline compliance requirements.
-  - **Sustainability**: AI Infrastructure is a significant consumer of energy and water. Green data-centre standards (PUE, WUE metrics) and carbon-aware scheduling are emerging operational requirements for responsible AI Infrastructure management.
+#### Compute Layer
 
-- ### Semantic Classification
+- [[GPU Compute]] — the dominant training accelerator; NVIDIA H100/A100 GPU clusters with NVLink interconnect are the de-facto standard for large model training.
+- [[Accelerated Computing]] — extends to TPUs (Google), Trainium/Inferentia (AWS), and custom ASICs for inference.
+- [[High-Performance Computing]] — HPC clusters with RDMA-capable [[Networking Fabric]] (InfiniBand, RoCE) underpin distributed training jobs.
+- [[Edge Computing]] — inference at the network edge using NPUs, embedded GPUs (Jetson), and specialised inference chips.
 
-- ### Current Landscape (2026)
-  - Capital expenditure has reached historic scale: the five largest US hyperscalers (Amazon, Alphabet, Microsoft, Meta, Oracle) have committed roughly USD 660-725 billion for 2026, up around 60-77% on 2025, with Amazon alone guiding to about USD 200 billion; Dell'Oro projects worldwide data-centre capex to surpass USD 1 trillion in 2026, roughly a year ahead of prior forecasts.
-  - Nvidia dominates the accelerator layer: at GTC in March 2026 Jensen Huang guided to about USD 500 billion in combined Blackwell and Vera Rubin revenue through 2027 (later doubled toward USD 1 trillion), with GB200/GB300 systems sold out through mid-2026 and the Rubin platform entering production, delivering roughly 5x Blackwell inference performance.
-  - The binding constraint has decisively shifted from GPU supply to electricity and physical plant: analysts note over 60% of 2026 hyperscaler capex now goes to power and shells rather than chips, and nearly half of planned US data-centre capacity for 2026 has been delayed or cancelled, with only about one-third of the roughly 12 GW announced under active construction.
-  - Grid and supply-chain bottlenecks are structural: US interconnection queues average around five years (ERCOT's large-load queue surged from 63 GW to over 225 GW in a single year), power-transformer lead times run to about 128 weeks and generator step-up units to 144 weeks, and the PJM capacity auction cleared at USD 269.92/MW-day for 2025/2026, an 833% jump, before an emergency 15 GW procurement in April 2026.
-  - OpenAI's Stargate joint venture (with SoftBank and Oracle), announced at the White House in January 2025, has expanded to roughly seven US sites and about 7-9 GW of planned capacity with over USD 400 billion committed against a USD 500 billion / 10 GW target; Oracle broke ground on a sixth site in Saline Township, Michigan in June 2026.
-  - On-site generation and nuclear are the primary workarounds: tech firms have collectively committed to over 10-13 GW of nuclear capacity (restarts, PPAs, and SMR developers such as Oklo and TerraPower), while several Stargate sites use behind-the-meter natural gas and closed-loop liquid cooling to bypass multi-year grid delays.
-  - Frontier challenges as of 2026 include monetisation and financing risk (hyperscalers raised over USD 108 billion of debt in 2025, with free cash flow compressing sharply at Meta), a projected 1-11 GW US power deficit through 2028 even after all mitigations (Morgan Stanley), custom-silicon diversification (Google TPUs, Broadcom/AVGO XPUs, AWS Trainium) eroding pure-GPU dependence, and the IEA estimate that data centres will consume around 1,000 TWh annually, comparable to Japan's total electricity use.
+#### Data Layer
 
-- ### References
-  - 1. BloombergNEF (2026). AI Data Center Build Advances at Full Speed: Five Things to Know. https://about.bnef.com/insights/data-centers/ai-data-center-build-advances-at-full-speed-five-things-to-know/
-  - 2. Futurum Group (2026). AI Capex 2026: The $690B Infrastructure Sprint. https://futurumgroup.com/insights/ai-capex-2026-the-690b-infrastructure-sprint/
-  - 3. Dell'Oro Group (2026). Data Center Capex Surges 57 Percent in 2025 as AI Deployments Accelerate. https://www.delloro.com/news/data-center-capex-surges-57-percent-in-2025-as-ai-deployments-accelerate/
-  - 4. Economic Times / Data Centres (2026). AI Infrastructure Spending Hits $1 Trillion, Straining Power, Capital, Construction. https://datacenters.economictimes.indiatimes.com/news/ai-compute-infrastructure/ai-infrastructure-spending-hits-1-trillion-straining-power-capital-construction/132779107
-  - 5. Informed Clearly (2026). $650B Power Gap: AI Data Centers Collide with Grid Reality in 2026. https://informedclearly.com/en/ai/56053/ai-data-center-power-gap-grid-bottleneck-2026
-  - 6. TFTC (2026). Stargate 7 GW AI Buildout Squeezes Bitcoin Miners. https://www.tftc.io/stargate-ai-buildout-bitcoin-miners-power-grid
+- [[Data Pipeline]] — batch and streaming ingestion, transformation, and feature engineering using tools such as Apache Spark, Apache Flink, and dbt.
+- [[Distributed Storage]] — object stores (S3, GCS, Azure Blob), distributed file systems (Lustre, GPFS), and high-throughput NVMe arrays for training data.
+- [[Vector Database]] — purpose-built indices (Pinecone, Weaviate, Qdrant, pgvector) for [[Embedding]] storage and approximate nearest-neighbour search in [[Retrieval-Augmented Generation]] systems.
+- Feature Store — centralised repository for computed features enabling training-serving consistency (Feast, Tecton, Vertex Feature Store).
 
-- ### Provenance
+#### Orchestration Layer
+
+- [[Kubernetes]] — the dominant orchestration platform; extended for AI workloads via operators such as Kubeflow, Volcano, and the NVIDIA GPU Operator.
+- [[Containerisation]] — Docker and OCI containers encapsulate training and inference environments, enabling reproducible builds and portability across clusters.
+- Workflow Engines — DAG-based orchestrators (Apache Airflow, Prefect, Argo Workflows) schedule and retry multi-step ML pipelines.
+
+#### Model Lifecycle Layer
+
+- [[MLOps]] — the operational discipline covering model training automation, continuous integration and deployment for ML, and model governance.
+- [[Experiment Tracking]] — platforms such as MLflow, Weights & Biases, and Comet ML record hyperparameters, metrics, artefacts, and code versions for reproducibility.
+- [[Model Registry]] — centralised store for versioned, tagged model artefacts with promotion workflows (staging → production) and lineage metadata.
+- [[Model Serving]] — runtimes such as NVIDIA Triton Inference Server, TorchServe, TF Serving, and vLLM expose models via REST/gRPC with batching, quantisation, and autoscaling.
+
+#### Networking Layer
+
+- [[Networking Fabric]] — high-bandwidth, low-latency interconnects (InfiniBand HDR/NDR, RoCEv2) are essential for collective communication primitives (AllReduce, AllGather) in [[Distributed Training]].
+- Software-Defined Networking and service meshes (Istio, Linkerd) manage east-west traffic between microservices in AI serving stacks.
+
+### Applications and Use Cases
+
+- **Foundation Model Training**: large-scale pre-training of [[Large Language Model]] systems and multimodal models requires thousand-node GPU clusters, petabyte-scale data lakes, and fault-tolerant checkpoint systems.
+- **Enterprise AI Platforms**: organisations build internal AI platforms atop cloud AI Infrastructure to expose standardised tooling for data scientists and ML engineers, enabling [[Federated Learning]] across business units.
+- **Real-Time AI Services**: recommendation engines, fraud detection, and conversational AI require [[Real-Time Inference]] infrastructure with sub-100 ms SLAs, served via GPU-backed or CPU-quantised endpoints.
+- **Edge AI**: autonomous vehicles, robotics, smart cameras, and IoT devices run inference on-device using AI-optimised chips, coordinated by [[Edge Computing]] infrastructure and periodically updated via over-the-air model delivery pipelines.
+- **Scientific AI**: drug discovery, protein folding simulation, climate modelling, and materials science deploy specialised AI Infrastructure on HPC clusters, often blending traditional MPI workloads with [[Deep Learning]] training.
+- **Decentralised AI**: emerging systems such as compute marketplaces (Akash, Bittensor) bridge AI Infrastructure to [[Blockchain]] networks, enabling permissionless access to distributed GPU compute resources — a cross-domain application linking AI Infrastructure to [[Decentralised AI]].
+- **Spatial and XR AI**: [[Spatial Computing]] environments demand on-device AI inference for scene understanding, gesture recognition, and avatar animation, driving specialised edge AI Infrastructure co-located with spatial rendering pipelines.
+
+### Standards and Context
+
+- **MLOps maturity models**: Google's ML Test Score, Microsoft's MLOps maturity model, and the Linux Foundation AI & Data MLOps SIG define levels of AI Infrastructure maturity from ad-hoc to fully automated.
+- **Open standards and frameworks**: OCI (Open Container Initiative) for container images, Kubernetes API standards, ONNX (Open Neural Network Exchange) for model portability, and OpenTelemetry for observability instrumentation apply directly to AI Infrastructure stacks.
+- **Cloud-native AI**: the CNCF (Cloud Native Computing Foundation) AI Working Group and LF AI & Data Foundation host projects spanning [[MLOps]], [[Model Serving]], and data governance that form the open-source substrate for AI Infrastructure.
+- **Hardware standards**: NVLink, PCIe Gen5, CXL (Compute Express Link), and InfiniBand NDR are hardware-level standards critical for AI Infrastructure interconnect design.
+- **Regulatory context**: AI Infrastructure is increasingly subject to governance frameworks — the EU AI Act mandates risk management, logging, and auditability requirements that directly impose obligations on AI Infrastructure operators. [[Data Governance]] and [[Security]] controls (access management, encryption at rest and in transit, model provenance) are baseline compliance requirements.
+- **Sustainability**: AI Infrastructure is a significant consumer of energy and water. Green data-centre standards (PUE, WUE metrics) and carbon-aware scheduling are emerging operational requirements for responsible AI Infrastructure management.
+
+### Semantic Classification
+
+### Current Landscape (2026)
+
+- Capital expenditure has reached historic scale: the five largest US hyperscalers (Amazon, Alphabet, Microsoft, Meta, Oracle) have committed roughly USD 660-725 billion for 2026, up around 60-77% on 2025, with Amazon alone guiding to about USD 200 billion; Dell'Oro projects worldwide data-centre capex to surpass USD 1 trillion in 2026, roughly a year ahead of prior forecasts.
+- Nvidia dominates the accelerator layer: at GTC in March 2026 Jensen Huang guided to about USD 500 billion in combined Blackwell and Vera Rubin revenue through 2027 (later doubled toward USD 1 trillion), with GB200/GB300 systems sold out through mid-2026 and the Rubin platform entering production, delivering roughly 5x Blackwell inference performance.
+- The binding constraint has decisively shifted from GPU supply to electricity and physical plant: analysts note over 60% of 2026 hyperscaler capex now goes to power and shells rather than chips, and nearly half of planned US data-centre capacity for 2026 has been delayed or cancelled, with only about one-third of the roughly 12 GW announced under active construction.
+- Grid and supply-chain bottlenecks are structural: US interconnection queues average around five years (ERCOT's large-load queue surged from 63 GW to over 225 GW in a single year), power-transformer lead times run to about 128 weeks and generator step-up units to 144 weeks, and the PJM capacity auction cleared at USD 269.92/MW-day for 2025/2026, an 833% jump, before an emergency 15 GW procurement in April 2026.
+- OpenAI's Stargate joint venture (with SoftBank and Oracle), announced at the White House in January 2025, has expanded to roughly seven US sites and about 7-9 GW of planned capacity with over USD 400 billion committed against a USD 500 billion / 10 GW target; Oracle broke ground on a sixth site in Saline Township, Michigan in June 2026.
+- On-site generation and nuclear are the primary workarounds: tech firms have collectively committed to over 10-13 GW of nuclear capacity (restarts, PPAs, and SMR developers such as Oklo and TerraPower), while several Stargate sites use behind-the-meter natural gas and closed-loop liquid cooling to bypass multi-year grid delays.
+- Frontier challenges as of 2026 include monetisation and financing risk (hyperscalers raised over USD 108 billion of debt in 2025, with free cash flow compressing sharply at Meta), a projected 1-11 GW US power deficit through 2028 even after all mitigations (Morgan Stanley), custom-silicon diversification (Google TPUs, Broadcom/AVGO XPUs, AWS Trainium) eroding pure-GPU dependence, and the IEA estimate that data centres will consume around 1,000 TWh annually, comparable to Japan's total electricity use.
+
+### References
+
+- 1. BloombergNEF (2026). AI Data Center Build Advances at Full Speed: Five Things to Know. https://about.bnef.com/insights/data-centers/ai-data-center-build-advances-at-full-speed-five-things-to-know/
+- 2. Futurum Group (2026). AI Capex 2026: The $690B Infrastructure Sprint. https://futurumgroup.com/insights/ai-capex-2026-the-690b-infrastructure-sprint/
+- 3. Dell'Oro Group (2026). Data Center Capex Surges 57 Percent in 2025 as AI Deployments Accelerate. https://www.delloro.com/news/data-center-capex-surges-57-percent-in-2025-as-ai-deployments-accelerate/
+- 4. Economic Times / Data Centres (2026). AI Infrastructure Spending Hits $1 Trillion, Straining Power, Capital, Construction. https://datacenters.economictimes.indiatimes.com/news/ai-compute-infrastructure/ai-infrastructure-spending-hits-1-trillion-straining-power-capital-construction/132779107
+- 5. Informed Clearly (2026). $650B Power Gap: AI Data Centers Collide with Grid Reality in 2026. https://informedclearly.com/en/ai/56053/ai-data-center-power-gap-grid-bottleneck-2026
+- 6. TFTC (2026). Stargate 7 GW AI Buildout Squeezes Bitcoin Miners. https://www.tftc.io/stargate-ai-buildout-bitcoin-miners-power-grid
+
+### Provenance
 

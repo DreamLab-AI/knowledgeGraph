@@ -1,31 +1,31 @@
-
 Data compression that achieves high ratios by permanently discarding information judged perceptually or statistically less important, guided by rate-distortion theory and models of human vision and hearing; the basis of virtually all deployed image, audio and video coding — JPEG, MP3, AAC, Opus, H.264/HEVC/AV1 — where transform coding, quantisation and entropy coding together trade reconstruction fidelity against bitrate, in contrast to lossless methods that guarantee exact reconstruction.
 
-- ### Semantic Classification
+### Semantic Classification
 
-- ### Content
+### Content
 
-  ## Definition
+## Definition
 
-  **Lossy compression** reduces data size by throwing information away — irreversibly. Where [[Lossless Compression]] exploits only statistical redundancy and reconstructs the original bit-for-bit, lossy methods additionally exploit *irrelevance*: components of a signal that a human observer will not miss. The theoretical foundation is Shannon's rate-distortion theory, which characterises the minimum bitrate achievable for a given tolerated distortion; practical codecs approach this bound using perceptual models — the human eye's lower sensitivity to fine colour detail than to luminance, the ear's masking of quiet tones near loud ones — so that the discarded information is the least noticeable.
+**Lossy compression** reduces data size by throwing information away — irreversibly. Where [[Lossless Compression]] exploits only statistical redundancy and reconstructs the original bit-for-bit, lossy methods additionally exploit *irrelevance*: components of a signal that a human observer will not miss. The theoretical foundation is Shannon's rate-distortion theory, which characterises the minimum bitrate achievable for a given tolerated distortion; practical codecs approach this bound using perceptual models — the human eye's lower sensitivity to fine colour detail than to luminance, the ear's masking of quiet tones near loud ones — so that the discarded information is the least noticeable.
 
-  The canonical pipeline has three stages. A transform (the discrete cosine transform in JPEG and most video codecs, modified DCT in audio, wavelets in JPEG 2000) concentrates signal energy into few coefficients. Quantisation — the only lossy step — coarsens those coefficients, discarding precision according to perceptual weighting and a quality setting. Entropy coding then packs the quantised symbols losslessly. Video codecs add temporal prediction: motion estimation finds how blocks move between frames so that only residuals need coding, which is why H.264, HEVC and AV1 achieve ratios of 100:1 and beyond. The fidelity-bitrate trade-off is continuous, which is what makes [[Adaptive Bitrate Streaming]] possible: the same content is encoded at several quality rungs and clients switch between them as bandwidth fluctuates.
+The canonical pipeline has three stages. A transform (the discrete cosine transform in JPEG and most video codecs, modified DCT in audio, wavelets in JPEG 2000) concentrates signal energy into few coefficients. Quantisation — the only lossy step — coarsens those coefficients, discarding precision according to perceptual weighting and a quality setting. Entropy coding then packs the quantised symbols losslessly. Video codecs add temporal prediction: motion estimation finds how blocks move between frames so that only residuals need coding, which is why H.264, HEVC and AV1 achieve ratios of 100:1 and beyond. The fidelity-bitrate trade-off is continuous, which is what makes [[Adaptive Bitrate Streaming]] possible: the same content is encoded at several quality rungs and clients switch between them as bandwidth fluctuates.
 
-  Lossy compression is appropriate for perceptual media consumed by humans; it is categorically wrong for executables, text, medical imagery used diagnostically, or any archival master, where lossless methods or no compression are mandated. Repeated lossy re-encoding compounds error — generation loss — which is why production workflows keep lossless or lightly compressed mezzanine files.
+Lossy compression is appropriate for perceptual media consumed by humans; it is categorically wrong for executables, text, medical imagery used diagnostically, or any archival master, where lossless methods or no compression are mandated. Repeated lossy re-encoding compounds error — generation loss — which is why production workflows keep lossless or lightly compressed mezzanine files.
 
-  ## Current Landscape
+## Current Landscape
 
-  Royalty questions and streaming economics continue to drive codec evolution: AV1 (AOMedia, royalty-free) and HEVC/VVC (licensed) compete for video, AVIF and JPEG XL for images, while Opus dominates real-time audio and AAC persists in broadcast. Recent milestones sharpen the picture:
+Royalty questions and streaming economics continue to drive codec evolution: AV1 (AOMedia, royalty-free) and HEVC/VVC (licensed) compete for video, AVIF and JPEG XL for images, while Opus dominates real-time audio and AAC persists in broadcast. Recent milestones sharpen the picture:
 
-  - **AV2 released**: the Alliance for Open Media finalised its royalty-free AV2 specification in late May 2026 (announced 9 June 2026), with prototype results showing roughly 28-33% bitrate reduction over AV1 at equivalent quality; an AOMedia member survey reports 53% plan adoption within a year and 88% within two.
-  - **H.267 kick-off**: on 14 July 2025 JVET published requirements for the next-generation ITU-T/ISO video standard beyond VVC, targeting at least 40% bitrate reduction over VVC Main 10 for 4K content, with standardisation expected around 2028-2029; the Enhanced Compression Model (ECM) test model already demonstrates ~25% savings over VVC.
-  - **Learned codecs go mainstream in research**: by 2025-2026 the best end-to-end neural video codecs (DCVC-RT class) match or beat VVC while running in real time on a single GPU, and JPEG AI / MPEG-AI standardisation tracks are formalising learned image and video coding — though these ship as model weights rather than fixed bitstream specifications.
-  - **Licensing pressure persists**: Access Advance launched its Video Distribution Patent pool (covering HEVC, VVC, AV1 and VP9 content distribution) on 16 January 2025, with rates published July 2025 — keeping royalty economics central to codec selection for streaming at scale.
-  - The same rate-distortion machinery now also underpins compression of neural network weights themselves for edge deployment.
+- **AV2 released**: the Alliance for Open Media finalised its royalty-free AV2 specification in late May 2026 (announced 9 June 2026), with prototype results showing roughly 28-33% bitrate reduction over AV1 at equivalent quality; an AOMedia member survey reports 53% plan adoption within a year and 88% within two.
+- **H.267 kick-off**: on 14 July 2025 JVET published requirements for the next-generation ITU-T/ISO video standard beyond VVC, targeting at least 40% bitrate reduction over VVC Main 10 for 4K content, with standardisation expected around 2028-2029; the Enhanced Compression Model (ECM) test model already demonstrates ~25% savings over VVC.
+- **Learned codecs go mainstream in research**: by 2025-2026 the best end-to-end neural video codecs (DCVC-RT class) match or beat VVC while running in real time on a single GPU, and JPEG AI / MPEG-AI standardisation tracks are formalising learned image and video coding — though these ship as model weights rather than fixed bitstream specifications.
+- **Licensing pressure persists**: Access Advance launched its Video Distribution Patent pool (covering HEVC, VVC, AV1 and VP9 content distribution) on 16 January 2025, with rates published July 2025 — keeping royalty economics central to codec selection for streaming at scale.
+- The same rate-distortion machinery now also underpins compression of neural network weights themselves for edge deployment.
 
   **Sources**:
-  - https://en.wikipedia.org/wiki/AV2
-  - http://aomedia.org/press%20releases/Alliance-for-Open-Media-Releases-AV2-Codec/
-  - https://www.streamingmedia.com/Articles/Editorial/Featured-Articles/The-State-of-Streaming-Codecs-2026-173838.aspx
-  - https://www.cnx-software.com/2025/11/21/aomedia-av2-open-video-codec-release-nears-delivers-around-40-bandwidth-reduction/
+
+- https://en.wikipedia.org/wiki/AV2
+- http://aomedia.org/press%20releases/Alliance-for-Open-Media-Releases-AV2-Codec/
+- https://www.streamingmedia.com/Articles/Editorial/Featured-Articles/The-State-of-Streaming-Codecs-2026-173838.aspx
+- https://www.cnx-software.com/2025/11/21/aomedia-av2-open-video-codec-release-nears-delivers-around-40-bandwidth-reduction/
 

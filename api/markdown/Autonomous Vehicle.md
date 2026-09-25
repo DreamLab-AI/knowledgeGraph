@@ -1,19 +1,19 @@
-
 An Autonomous Vehicle is a self-driving vehicle capable of navigating and operating without human intervention, employing artificial intelligence for perception, localisation, path planning, motion control, and decision-making. Autonomous vehicles integrate sensor fusion, computer vision, deep learning, and control algorithms to achieve SAE automation levels ranging from Level 1 (driver assistance) to Level 5 (full automation).
 
-- ### Semantic Classification
+### Semantic Classification
 
-- ### Content
-  - An Autonomous Vehicle is a self-driving vehicle capable of navigating and operating without human intervention, employing artificial intelligence for perception, localisation, path planning, motion control, and decision-making. Autonomous vehicles integrate sensor fusion, computer vision, deep learning, and control algorithms to achieve SAE automation levels ranging from Level 1 (driver assistance) to Level 5 (full automation).
+### Content
+
+- An Autonomous Vehicle is a self-driving vehicle capable of navigating and operating without human intervention, employing artificial intelligence for perception, localisation, path planning, motion control, and decision-making. Autonomous vehicles integrate sensor fusion, computer vision, deep learning, and control algorithms to achieve SAE automation levels ranging from Level 1 (driver assistance) to Level 5 (full automation).
 
   ## Core Characteristics
 
-  - **Sensor Fusion**: Integration of camera, lidar, radar, and GPS data
-  - **Perception System**: Object detection, tracking, and scene understanding
-  - **Localisation**: Precise positioning using SLAM and HD maps
-  - **Path Planning**: Route planning and trajectory optimisation
-  - **Motion Control**: Steering, acceleration, and braking control
-  - **Decision Making**: Real-time tactical and strategic driving decisions
+- **Sensor Fusion**: Integration of camera, lidar, radar, and GPS data
+- **Perception System**: Object detection, tracking, and scene understanding
+- **Localisation**: Precise positioning using SLAM and HD maps
+- **Path Planning**: Route planning and trajectory optimisation
+- **Motion Control**: Steering, acceleration, and braking control
+- **Decision Making**: Real-time tactical and strategic driving decisions
 
   ## Applications
 
@@ -38,11 +38,11 @@ An Autonomous Vehicle is a self-driving vehicle capable of navigating and operat
 
   ## See Also
 
-  - [[Self Driving Car]]
-  - [[ADAS]]
-  - [[Perception System]]
-  - [[Sensor Fusion]]
-  - [[Path Planning]]
+- [[Self Driving Car]]
+- [[ADAS]]
+- [[Perception System]]
+- [[Sensor Fusion]]
+- [[Path Planning]]
 
-- ### Provenance
+### Provenance
 

@@ -1,12 +1,12 @@
-
 Crossover domain for ETSI metaverse categorisation addressing data infrastructure supporting creative content workflows, asset management, and version control systems.
 
-- ### Bridge-To
+### Bridge-To
 
-- ### Semantic Classification
+### Semantic Classification
 
-- ### Content
-  ETSI Domain: Data Management + Creative Media — content pending enrichment.
+### Content
 
-- ### Provenance
+ETSI Domain: Data Management + Creative Media — content pending enrichment.
+
+### Provenance
 

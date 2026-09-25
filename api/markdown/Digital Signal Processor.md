@@ -1,18 +1,23 @@
-
 A digital signal processor (DSP) is a specialised microprocessor architecture optimised for the high-throughput numerical operations of digital signal processing, such as multiply-accumulate, filtering and fast transforms. DSPs feature hardware support for fixed and floating-point arithmetic, parallel datapaths and efficient memory access to process audio, sensor and communication signals in real time at low power. They are a core building block of audio systems, embedded devices and spatial computing hardware.
 
-- ### Overview
-  - A digital signal processor is a processor whose instruction set and datapath are tailored to the repetitive arithmetic of digital signal processing. Hallmark features include single-cycle multiply-accumulate units, hardware loop control, circular buffering for filters, and parallel memory buses that keep operands flowing. These traits let a DSP run finite and infinite impulse response filters, fast Fourier transforms and convolution at high sample rates with low latency and modest power draw. In audio systems a DSP applies equalisation, echo cancellation and spatialisation; in microphone arrays it performs beamforming and noise suppression; and across embedded systems it shares duties with general-purpose microcontrollers.
-- ### Key aspects
-  - Hardware multiply-accumulate and SIMD datapaths for filtering and transforms.
-  - Fixed and floating-point arithmetic with deterministic real-time latency.
-  - Circular buffers and zero-overhead loops for streaming signal blocks.
-  - Low power profile suited to embedded and always-on audio devices.
-  - Often paired with a microcontroller in a heterogeneous embedded system.
-- ### Applications
-  - Real-time audio effects, equalisation and echo cancellation.
-  - Microphone-array beamforming and noise suppression.
-  - Spatial-audio rendering using head-related transfer functions.
-  - Wireless baseband and sensor signal conditioning.
-- ### Provenance
+### Overview
+
+- A digital signal processor is a processor whose instruction set and datapath are tailored to the repetitive arithmetic of digital signal processing. Hallmark features include single-cycle multiply-accumulate units, hardware loop control, circular buffering for filters, and parallel memory buses that keep operands flowing. These traits let a DSP run finite and infinite impulse response filters, fast Fourier transforms and convolution at high sample rates with low latency and modest power draw. In audio systems a DSP applies equalisation, echo cancellation and spatialisation; in microphone arrays it performs beamforming and noise suppression; and across embedded systems it shares duties with general-purpose microcontrollers.
+
+### Key aspects
+
+- Hardware multiply-accumulate and SIMD datapaths for filtering and transforms.
+- Fixed and floating-point arithmetic with deterministic real-time latency.
+- Circular buffers and zero-overhead loops for streaming signal blocks.
+- Low power profile suited to embedded and always-on audio devices.
+- Often paired with a microcontroller in a heterogeneous embedded system.
+
+### Applications
+
+- Real-time audio effects, equalisation and echo cancellation.
+- Microphone-array beamforming and noise suppression.
+- Spatial-audio rendering using head-related transfer functions.
+- Wireless baseband and sensor signal conditioning.
+
+### Provenance
 

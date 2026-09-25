@@ -1,76 +1,79 @@
-
 Decentralised Identity is a model for digital identity management in which individuals, organisations, and devices create, own, and control their own cryptographic identifiers and verifiable credentials without dependence on centralised identity providers or registries. Identifiers are anchored to a verifiable data registry — typically a blockchain or distributed ledger — as Decentralised Identifiers (DIDs) standardised by the W3C DID Core 1.0 specification, which defines a URI scheme resolving to a DID Document containing public keys and service endpoints. Credentials attesting to attributes of the DID subject are issued by trusted parties as W3C Verifiable Credentials, stored in a user-controlled digital wallet, and selectively disclosed to verifiers using zero-knowledge proofs or selective-disclosure mechanisms. The model operationalises Self-Sovereign Identity principles, giving subjects full autonomy over their identity data across systems and jurisdictions.
 
-- ### Overview
-  - **Why it matters**
-    - Traditional identity architectures require users to trust platform operators — social login providers, enterprise directories, or government registries — who may revoke access, share data with third parties, or become single points of failure. Decentralised Identity removes this dependency by making the user's own cryptographic key pair the root of trust.
-    - The model is foundational to [[Self-Sovereign Identity]] (SSI), a philosophy articulated by Christopher Allen (2016) asserting that individuals must control their own identities without surrendering authority to external intermediaries.
-    - Regulatory alignment: the EU [[eIDAS 2.0]] regulation mandates interoperable digital identity wallets for all EU member states, directly referencing W3C DID and Verifiable Credential infrastructure. The UK [[Digital Identity and Attributes Trust Framework]] (DIATF) pursues a similar goal.
-  - **How it works**
-    - A DID is a URI of the form `did:<method>:<method-specific-id>` that resolves — via a DID resolver — to a [[DID Document]] specifying the controller's public keys, authentication methods, and service endpoints.
-    - A [[DID Method]] defines the protocol for creating, reading, updating, and deactivating a DID on a particular [[Verifiable Data Registry]]. Methods include `did:key` (self-certifying, no ledger), `did:web` (DNS-anchored), `did:ethr` (Ethereum), `did:ion` (Bitcoin Sidetree), and `did:cheqd`.
-    - [[Credential Schema]] standards define the structure of claims; an issuer signs a credential as a JSON-LD or JWT document and delivers it to the holder's [[Digital Identity Wallet]]. The holder assembles a [[Verifiable Presentation]] for a verifier, optionally applying BBS+ signatures or [[Zero-Knowledge Proof]] techniques for selective disclosure.
+### Overview
 
-- ### Key Components
-  - **Decentralised Identifiers (DIDs)**
-    - Globally unique, resolvable URIs under W3C DID Core 1.0 (Recommendation, July 2022)
-    - Self-describing: the method segment identifies the resolution protocol
-    - Controller-authorised: key rotation and deactivation are signed by the current controlling key pair
-    - Related: [[DID Document]], [[DID Method]], [[DID Resolver]]
-  - **Verifiable Credentials (VCs)**
-    - JSON-LD or JWT-encoded claim sets signed by an issuer's DID keys
-    - Follow the W3C Verifiable Credentials Data Model 2.0 specification
-    - Cryptographic proofs enable offline verification without querying the issuer
-    - Related: [[Credential Schema]], [[Verifiable Presentation]], [[Credential Revocation]]
-  - **Digital Identity Wallet**
-    - Secure software (or hardware) store for private keys, DIDs, and received credentials
-    - Implements [[OpenID for Verifiable Credentials]] (OID4VC) for issuance (OID4VCI) and presentation (OID4VP) flows
-    - May interoperate with [[FIDO2]] / [[WebAuthn]] for device-bound authentication
-    - Related: [[Key Management]], [[Secure Enclave]], [[Mobile Device]]
-  - **Verifiable Data Registry**
-    - The anchoring layer — a [[Blockchain]], distributed ledger, or web server — from which DID Documents are resolvable
-    - Must provide persistence and tamper-evidence without disclosing identity data itself (privacy by design)
-    - Related: [[Distributed Ledger]], [[Blockchain]], [[IPFS]]
-  - **Zero-Knowledge Proofs and Selective Disclosure**
-    - Allow holders to prove properties of credentials (e.g., "over 18") without revealing the full credential or a correlatable identifier
-    - Implemented via BBS+ signatures, [[SD-JWT]] (Selective Disclosure JWT), or [[Pedersen Commitment]] schemes
-    - Related: [[Zero-Knowledge Proof]], [[Cryptography]], [[Privacy-Enhancing Technology]]
-  - **DID Methods**
-    - Each method is a mini-specification defining CRUD operations on a specific registry
-    - `did:key` — ephemeral, key material is the identifier; `did:web` — web-hosted DID Documents; `did:ethr` — Ethereum smart contract registry; `did:ion` — Bitcoin Sidetree overlay; `did:cheqd` — Cosmos SDK ledger with credential economics
-    - Method maturity varies: `did:key` and `did:web` are widely deployed; `did:ion` is production-grade on Bitcoin mainnet
+- **Why it matters**
+  - Traditional identity architectures require users to trust platform operators — social login providers, enterprise directories, or government registries — who may revoke access, share data with third parties, or become single points of failure. Decentralised Identity removes this dependency by making the user's own cryptographic key pair the root of trust.
+  - The model is foundational to [[Self-Sovereign Identity]] (SSI), a philosophy articulated by Christopher Allen (2016) asserting that individuals must control their own identities without surrendering authority to external intermediaries.
+  - Regulatory alignment: the EU [[eIDAS 2.0]] regulation mandates interoperable digital identity wallets for all EU member states, directly referencing W3C DID and Verifiable Credential infrastructure. The UK [[Digital Identity and Attributes Trust Framework]] (DIATF) pursues a similar goal.
+- **How it works**
+  - A DID is a URI of the form `did:<method>:<method-specific-id>` that resolves — via a DID resolver — to a [[DID Document]] specifying the controller's public keys, authentication methods, and service endpoints.
+  - A [[DID Method]] defines the protocol for creating, reading, updating, and deactivating a DID on a particular [[Verifiable Data Registry]]. Methods include `did:key` (self-certifying, no ledger), `did:web` (DNS-anchored), `did:ethr` (Ethereum), `did:ion` (Bitcoin Sidetree), and `did:cheqd`.
+  - [[Credential Schema]] standards define the structure of claims; an issuer signs a credential as a JSON-LD or JWT document and delivers it to the holder's [[Digital Identity Wallet]]. The holder assembles a [[Verifiable Presentation]] for a verifier, optionally applying BBS+ signatures or [[Zero-Knowledge Proof]] techniques for selective disclosure.
 
-- ### Applications and Use Cases
-  - **Workforce and Enterprise Identity**
-    - Employees hold cryptographically signed employment credentials in a corporate wallet, presenting them to internal systems and third-party partners without an enterprise IdP in the critical path
-    - Reduces dependency on [[Active Directory]] and centralised [[Single Sign-On]] infrastructure
-  - **Educational Credentials**
-    - Universities issue digitally signed degree and transcript credentials (ISO/IEC 23220, [[Europass Digital Credentials]], [[Open Badges]] v3)
-    - Graduates present verified academic records to employers directly, eliminating manual transcript requests
-  - **Healthcare**
-    - Patients hold portable health records and consent tokens; clinicians verify credentials without accessing a centralised EHR system
-    - Supports [[FHIR]]-aligned credential schemas for interoperability
-  - **Government and Civil Identity**
-    - [[eIDAS 2.0]] mandates EU Digital Identity Wallets for all member states by 2026, enabling cross-border recognition of national identities and professional qualifications
-    - The [[EUDI Wallet]] Architecture and Reference Framework (ARF) specifies technical requirements
-  - **Supply Chain Provenance**
-    - Products and shipments receive DIDs; provenance credentials flow between suppliers, logistics providers, and retailers without centralised platform intermediaries
-    - Aligns with [[GS1]] Digital Link standards
-  - **AI Agent Authentication**
-    - Autonomous [[AI Agent]] entities can hold DIDs and present verifiable credentials to access APIs, proving authorisation without hard-coded API keys
-    - Bridges [[Decentralised Identity]] into AI infrastructure — a key cross-domain application
+### Key Components
 
-- ### Standards and Context
-  - **W3C DID Core 1.0** (July 2022) — defines the DID URI scheme, DID Document structure, and abstract DID Resolution protocol
-  - **W3C Verifiable Credentials Data Model 2.0** — defines the credential and presentation envelope, proof mechanisms, and status methods
-  - **OpenID for Verifiable Credentials (OID4VC)** — profiles of [[OAuth 2.0]] and [[OpenID Connect]] for VC issuance (OID4VCI), presentation (OID4VP), and self-issued identity (SIOPv2)
-  - **SD-JWT** (IETF draft) — a compact format enabling selective disclosure of individual credential claims using hash-based disclosure commitments
-  - **ISO/IEC 18013-5** — mobile driving licence (mDL) standard; the first mainstream government DID-adjacent credential deployed at scale
-  - **eIDAS 2.0** (EU Regulation 2024/1183) — mandates EU Digital Identity Wallets, references W3C VC and DID for technical layer
-  - **DIATF** (UK Digital Identity and Attributes Trust Framework) — certifies identity service providers against assurance levels
-  - **Trust over IP (ToIP) Foundation** — cross-industry consortium defining a four-layer trust stack combining DIDs, VCs, governance frameworks, and utility layers
-  - **Decentralised Identity Foundation (DIF)** — produces interoperability specifications including DIDComm, Presentation Exchange, and Credential Manifest
-  - **OpenWallet Foundation** — Linux Foundation project standardising open-source wallet engine components
+- **Decentralised Identifiers (DIDs)**
+  - Globally unique, resolvable URIs under W3C DID Core 1.0 (Recommendation, July 2022)
+  - Self-describing: the method segment identifies the resolution protocol
+  - Controller-authorised: key rotation and deactivation are signed by the current controlling key pair
+  - Related: [[DID Document]], [[DID Method]], [[DID Resolver]]
+- **Verifiable Credentials (VCs)**
+  - JSON-LD or JWT-encoded claim sets signed by an issuer's DID keys
+  - Follow the W3C Verifiable Credentials Data Model 2.0 specification
+  - Cryptographic proofs enable offline verification without querying the issuer
+  - Related: [[Credential Schema]], [[Verifiable Presentation]], [[Credential Revocation]]
+- **Digital Identity Wallet**
+  - Secure software (or hardware) store for private keys, DIDs, and received credentials
+  - Implements [[OpenID for Verifiable Credentials]] (OID4VC) for issuance (OID4VCI) and presentation (OID4VP) flows
+  - May interoperate with [[FIDO2]] / [[WebAuthn]] for device-bound authentication
+  - Related: [[Key Management]], [[Secure Enclave]], [[Mobile Device]]
+- **Verifiable Data Registry**
+  - The anchoring layer — a [[Blockchain]], distributed ledger, or web server — from which DID Documents are resolvable
+  - Must provide persistence and tamper-evidence without disclosing identity data itself (privacy by design)
+  - Related: [[Distributed Ledger]], [[Blockchain]], [[IPFS]]
+- **Zero-Knowledge Proofs and Selective Disclosure**
+  - Allow holders to prove properties of credentials (e.g., "over 18") without revealing the full credential or a correlatable identifier
+  - Implemented via BBS+ signatures, [[SD-JWT]] (Selective Disclosure JWT), or [[Pedersen Commitment]] schemes
+  - Related: [[Zero-Knowledge Proof]], [[Cryptography]], [[Privacy-Enhancing Technology]]
+- **DID Methods**
+  - Each method is a mini-specification defining CRUD operations on a specific registry
+  - `did:key` — ephemeral, key material is the identifier; `did:web` — web-hosted DID Documents; `did:ethr` — Ethereum smart contract registry; `did:ion` — Bitcoin Sidetree overlay; `did:cheqd` — Cosmos SDK ledger with credential economics
+  - Method maturity varies: `did:key` and `did:web` are widely deployed; `did:ion` is production-grade on Bitcoin mainnet
 
-- ### Provenance
+### Applications and Use Cases
+
+- **Workforce and Enterprise Identity**
+  - Employees hold cryptographically signed employment credentials in a corporate wallet, presenting them to internal systems and third-party partners without an enterprise IdP in the critical path
+  - Reduces dependency on [[Active Directory]] and centralised [[Single Sign-On]] infrastructure
+- **Educational Credentials**
+  - Universities issue digitally signed degree and transcript credentials (ISO/IEC 23220, [[Europass Digital Credentials]], [[Open Badges]] v3)
+  - Graduates present verified academic records to employers directly, eliminating manual transcript requests
+- **Healthcare**
+  - Patients hold portable health records and consent tokens; clinicians verify credentials without accessing a centralised EHR system
+  - Supports [[FHIR]]-aligned credential schemas for interoperability
+- **Government and Civil Identity**
+  - [[eIDAS 2.0]] mandates EU Digital Identity Wallets for all member states by 2026, enabling cross-border recognition of national identities and professional qualifications
+  - The [[EUDI Wallet]] Architecture and Reference Framework (ARF) specifies technical requirements
+- **Supply Chain Provenance**
+  - Products and shipments receive DIDs; provenance credentials flow between suppliers, logistics providers, and retailers without centralised platform intermediaries
+  - Aligns with [[GS1]] Digital Link standards
+- **AI Agent Authentication**
+  - Autonomous [[AI Agent]] entities can hold DIDs and present verifiable credentials to access APIs, proving authorisation without hard-coded API keys
+  - Bridges [[Decentralised Identity]] into AI infrastructure — a key cross-domain application
+
+### Standards and Context
+
+- **W3C DID Core 1.0** (July 2022) — defines the DID URI scheme, DID Document structure, and abstract DID Resolution protocol
+- **W3C Verifiable Credentials Data Model 2.0** — defines the credential and presentation envelope, proof mechanisms, and status methods
+- **OpenID for Verifiable Credentials (OID4VC)** — profiles of [[OAuth 2.0]] and [[OpenID Connect]] for VC issuance (OID4VCI), presentation (OID4VP), and self-issued identity (SIOPv2)
+- **SD-JWT** (IETF draft) — a compact format enabling selective disclosure of individual credential claims using hash-based disclosure commitments
+- **ISO/IEC 18013-5** — mobile driving licence (mDL) standard; the first mainstream government DID-adjacent credential deployed at scale
+- **eIDAS 2.0** (EU Regulation 2024/1183) — mandates EU Digital Identity Wallets, references W3C VC and DID for technical layer
+- **DIATF** (UK Digital Identity and Attributes Trust Framework) — certifies identity service providers against assurance levels
+- **Trust over IP (ToIP) Foundation** — cross-industry consortium defining a four-layer trust stack combining DIDs, VCs, governance frameworks, and utility layers
+- **Decentralised Identity Foundation (DIF)** — produces interoperability specifications including DIDComm, Presentation Exchange, and Credential Manifest
+- **OpenWallet Foundation** — Linux Foundation project standardising open-source wallet engine components
+
+### Provenance
 

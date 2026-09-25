@@ -1,20 +1,21 @@
-
 A regression performance metric representing the average magnitude of errors between predicted and actual values, calculated as the arithmetic mean of absolute differences between predictions and ground truth across all instances, providing an intuitive measure of prediction accuracy in the same units as the target variable. MAE treats all errors equally regardless of direction and is less sensitive to outliers than squared error metrics such as RMSE.
 
-- ### Semantic Classification
+### Semantic Classification
 
-- ### Content
-  - A regression performance metric representing the average magnitude of errors between predicted and actual values, calculated as the arithmetic mean of absolute differences between predictions and ground truth across all instances, providing an intuitive measure of prediction accuracy in the same units as the target variable, treating all errors equally regardless of direction, and being less sensitive to outliers than squared error metrics.
+### Content
+
+- A regression performance metric representing the average magnitude of errors between predicted and actual values, calculated as the arithmetic mean of absolute differences between predictions and ground truth across all instances, providing an intuitive measure of prediction accuracy in the same units as the target variable, treating all errors equally regardless of direction, and being less sensitive to outliers than squared error metrics.
 
   ## Mathematical Definition
 
   $$\text{MAE} = \frac{1}{n}\sum_{i=1}^{n}|y_i - \hat{y}_i|$$
 
   Where:
-  - **n**: Number of instances
-  - **yᵢ**: Actual value for instance i
-  - **ŷᵢ**: Predicted value for instance i
-  - **|·|**: Absolute value function
+
+- **n**: Number of instances
+- **yᵢ**: Actual value for instance i
+- **ŷᵢ**: Predicted value for instance i
+- **|·|**: Absolute value function
 
   ## Context and Significance
 
@@ -23,196 +24,208 @@ A regression performance metric representing the average magnitude of errors bet
   This equal weighting has implications: MAE is appropriate when all errors have similar consequences, but may be less suitable when large errors are disproportionately costly. The choice between MAE and RMSE often reflects whether errors should be penalised linearly (MAE) or quadratically (RMSE), which depends on the application's cost function for prediction errors.
 
   #### Key Characteristics
-  - **Intuitive interpretation**: Average error in original units
-		  - **Outlier robust**: Less sensitive to outliers than RMSE
-		  - **Equal error weighting**: All errors contribute proportionally
-		  - **Non-differentiable at zero**: Complicates some optimization algorithms
-		  - **Scale-dependent**: Values only comparable within same target variable scale
-		  - **Always non-negative**: Range [0, ∞), lower is better
-		  - **Symmetric**: Treats over-predictions and under-predictions equally
 
-		  ## Appropriate Use Cases
+- **Intuitive interpretation**: Average error in original units
+  - **Outlier robust**: Less sensitive to outliers than RMSE
+  - **Equal error weighting**: All errors contribute proportionally
+  - **Non-differentiable at zero**: Complicates some optimization algorithms
+  - **Scale-dependent**: Values only comparable within same target variable scale
+  - **Always non-negative**: Range [0, ∞), lower is better
+  - **Symmetric**: Treats over-predictions and under-predictions equally
 
-		  **When MAE is Suitable:**
-		  - Errors have linear cost (doubling error doubles cost)
-		  - Outliers should not dominate performance assessment
-		  - Intuitive communication to non-technical stakeholders desired
-		  - All prediction errors equally important (no special concern for large errors)
-		  - Median-based predictions (MAE optimal for median predictions)
+    ## Appropriate Use Cases
 
-		  **When RMSE May Be Preferred:**
-		  - Large errors significantly more costly than small errors
-		  - Gaussian error distributions expected
-		  - Mean-based predictions (RMSE optimal for mean predictions)
-		  - Applications where squared error has natural interpretation
+    **When MAE is Suitable:**
 
-		  ## Relationships
+  - Errors have linear cost (doubling error doubles cost)
+  - Outliers should not dominate performance assessment
+  - Intuitive communication to non-technical stakeholders desired
+  - All prediction errors equally important (no special concern for large errors)
+  - Median-based predictions (MAE optimal for median predictions)
 
-		  - **Component of**: Model Performance assessment for regression
-		  - **Alternative to**: Root Mean Square Error (RMSE), Mean Squared Error (MSE)
-		  - **Related to**: Mean Absolute Percentage Error (MAPE) - relative version
-		  - **Optimized by**: Median predictions (MAE-optimal)
-		  - **Used in**: Model Evaluation, model comparison, performance monitoring
-		  - **Scale-dependent**: Unlike MAPE or R², requires same-scale comparisons
-		  - **Reported in**: Model Cards, performance dashboards, regression analysis
+    **When RMSE May Be Preferred:**
 
-		  ## Examples and Applications
+  - Large errors significantly more costly than small errors
+  - Gaussian error distributions expected
+  - Mean-based predictions (RMSE optimal for mean predictions)
+  - Applications where squared error has natural interpretation
 
-		  1. **House Price Prediction**: Model achieves MAE of £15,000 on house price predictions—average prediction is off by £15,000, intuitively interpretable by stakeholders and property professionals
-		  2. **Demand Forecasting**: Inventory demand forecast with MAE of 23 units—on average, forecasts miss actual demand by 23 units, directly informing safety stock calculations
-		  3. **Temperature Prediction**: Weather model MAE of 2.1°C—average temperature forecast error is 2.1 degrees, straightforward for weather service communication
-		  4. **Age Estimation**: Face age estimation with MAE of 4.7 years—predictions typically off by about 4.7 years, with occasional larger errors not dominating metric (unlike RMSE)
+    ## Relationships
 
-		  ## Calculation and Implementation
+  - **Component of**: Model Performance assessment for regression
+  - **Alternative to**: Root Mean Square Error (RMSE), Mean Squared Error (MSE)
+  - **Related to**: Mean Absolute Percentage Error (MAPE) - relative version
+  - **Optimized by**: Median predictions (MAE-optimal)
+  - **Used in**: Model Evaluation, model comparison, performance monitoring
+  - **Scale-dependent**: Unlike MAPE or R², requires same-scale comparisons
+  - **Reported in**: Model Cards, performance dashboards, regression analysis
 
-		  **Standard Calculation:**
-		  ```python
-		  from sklearn.metrics import mean_absolute_error
+    ## Examples and Applications
 
-		  mae = mean_absolute_error(y_true, y_pred)
-		  print(f'MAE: {mae:.2f}')
-		  ```
+    1. **House Price Prediction**: Model achieves MAE of £15,000 on house price predictions—average prediction is off by £15,000, intuitively interpretable by stakeholders and property professionals
+    2. **Demand Forecasting**: Inventory demand forecast with MAE of 23 units—on average, forecasts miss actual demand by 23 units, directly informing safety stock calculations
+    3. **Temperature Prediction**: Weather model MAE of 2.1°C—average temperature forecast error is 2.1 degrees, straightforward for weather service communication
+    4. **Age Estimation**: Face age estimation with MAE of 4.7 years—predictions typically off by about 4.7 years, with occasional larger errors not dominating metric (unlike RMSE)
 
-		  **Manual Calculation:**
-		  ```python
-		  import numpy as np
+    ## Calculation and Implementation
 
-		  mae = np.mean(np.abs(y_true - y_pred))
-		  ```
+    **Standard Calculation:**
+    ```python
+    from sklearn.metrics import mean_absolute_error
 
-		  **Weighted MAE:**
-		  ```python
-		  # Sample-weighted MAE
-		  mae_weighted = mean_absolute_error(y_true, y_pred, sample_weight=weights)
+    mae = mean_absolute_error(y_true, y_pred)
+    print(f'MAE: {mae:.2f}')
+    ```
 
-		  # Manual weighted calculation
-		  mae_weighted = np.sum(weights * np.abs(y_true - y_pred)) / np.sum(weights)
-		  ```
+    **Manual Calculation:**
+    ```python
+    import numpy as np
 
-		  ## Implementation Considerations
+    mae = np.mean(np.abs(y_true - y_pred))
+    ```
 
-		  **Best Practices:**
-		  - Report MAE in interpretable units with context (e.g., "MAE: £15,000 on properties averaging £250,000")
-		  - Compare MAE to baseline (e.g., predicting mean, predicting previous value)
-		  - Disaggregate MAE across subgroups or value ranges for fairness assessment
-		  - Examine error distribution, not just MAE, to detect systematic biases
-		  - Consider RMSE alongside MAE if large errors are disproportionately important
-		  - Monitor MAE trends over time to detect model degradation
+    **Weighted MAE:**
+    ```python
+    # Sample-weighted MAE
+    mae_weighted = mean_absolute_error(y_true, y_pred, sample_weight=weights)
 
-		  **Common Pitfalls:**
-		  - Comparing MAE across datasets with different target variable scales
-		  - Not accounting for heteroscedasticity (errors varying with predicted value)
-		  - Ignoring error distribution patterns revealed by MAE alone
-		  - Using MAE when large errors are critically important (consider RMSE)
-		  - Failing to contextualize MAE with baseline or target variable statistics
+    # Manual weighted calculation
+    mae_weighted = np.sum(weights * np.abs(y_true - y_pred)) / np.sum(weights)
+    ```
 
-		  **Comparison with RMSE:**
-		  - **MAE ≤ RMSE** always holds (equality only when all errors identical)
-		  - Larger RMSE-MAE gap indicates greater error variance or presence of outliers
-		  - RMSE / MAE ratio provides insight into error distribution spread
+    ## Implementation Considerations
 
-		  ## Variants and Related Metrics
+    **Best Practices:**
 
-		  **Median Absolute Error (MedAE)**: Median instead of mean of absolute errors
-		  - More robust to outliers than MAE
-		  - Provides different central tendency measure
+  - Report MAE in interpretable units with context (e.g., "MAE: £15,000 on properties averaging £250,000")
+  - Compare MAE to baseline (e.g., predicting mean, predicting previous value)
+  - Disaggregate MAE across subgroups or value ranges for fairness assessment
+  - Examine error distribution, not just MAE, to detect systematic biases
+  - Consider RMSE alongside MAE if large errors are disproportionately important
+  - Monitor MAE trends over time to detect model degradation
 
-		  **Mean Absolute Percentage Error (MAPE)**: Scale-independent version
-		  $$\text{MAPE} = \frac{100\%}{n}\sum_{i=1}^{n}\left|\frac{y_i - \hat{y}_i}{y_i}\right|$$
-		  - Interpretable as percentage error
-		  - Undefined when actual values are zero
-		  - Asymmetric (penalises over-predictions more than under-predictions)
+    **Common Pitfalls:**
 
-		  **Quantile Loss / Pinball Loss**: Asymmetric MAE variant
-		  - Allows different penalties for over- vs. under-prediction
-		  - Used in quantile regression
+  - Comparing MAE across datasets with different target variable scales
+  - Not accounting for heteroscedasticity (errors varying with predicted value)
+  - Ignoring error distribution patterns revealed by MAE alone
+  - Using MAE when large errors are critically important (consider RMSE)
+  - Failing to contextualize MAE with baseline or target variable statistics
 
-		  ## ISO/IEC and Standards Alignment
+    **Comparison with RMSE:**
 
-		  **ISO/IEC 25059** (Quality Model for AI Systems):
-		  - MAE as regression accuracy metric
-		  - Functional correctness measurement
+  - **MAE ≤ RMSE** always holds (equality only when all errors identical)
+  - Larger RMSE-MAE gap indicates greater error variance or presence of outliers
+  - RMSE / MAE ratio provides insight into error distribution spread
 
-		  **ISO/IEC 25024** (Data Quality Metrics):
-		  - Accuracy measurement for continuous outputs
+    ## Variants and Related Metrics
 
-		  ## NIST AI RMF Integration
+    **Median Absolute Error (MedAE)**: Median instead of mean of absolute errors
 
-		  **MEASURE Function**:
-		  - MEASURE-2.2: MAE as appropriate metric for regression tasks
-		  - MEASURE-2.3: MAE assessed across different contexts and subgroups
-		  - Supports Valid and Reliable trustworthiness characteristic
+  - More robust to outliers than MAE
+  - Provides different central tendency measure
 
-		  ## Statistical Properties
+    **Mean Absolute Percentage Error (MAPE)**: Scale-independent version
+    $$\text{MAPE} = \frac{100\%}{n}\sum_{i=1}^{n}\left|\frac{y_i - \hat{y}_i}{y_i}\right|$$
 
-		  **Optimal Predictor**: MAE is minimized by predicting the **median** of the conditional distribution P(y|x)
+  - Interpretable as percentage error
+  - Undefined when actual values are zero
+  - Asymmetric (penalises over-predictions more than under-predictions)
 
-		  **Robustness**: MAE uses L₁ norm, making it robust to outliers (unlike L₂ norm used in MSE/RMSE)
+    **Quantile Loss / Pinball Loss**: Asymmetric MAE variant
 
-		  **Non-differentiability**: Absolute value function non-differentiable at zero, requiring special handling in gradient-based optimization (subgradient methods)
+  - Allows different penalties for over- vs. under-prediction
+  - Used in quantile regression
 
-		  ## Related Terms
+    ## ISO/IEC and Standards Alignment
 
-		  - [[Model Performance]]: MAE as regression performance metric
-		  - [[Root Mean Square Error]]: Alternative squared-error metric
-		  - [[Mean Squared Error]]: Related squared-error metric
-		  - [[MAPE]]: Percentage-based variant
-		  - [[Regression]]: Task type for which MAE is appropriate
-		  - [[Outlier]]: MAE less sensitive than RMSE
-		  - [[Model Evaluation]]: Process using MAE
-		  - [[Error Analysis]]: Examination of prediction errors
+    **ISO/IEC 25059** (Quality Model for AI Systems):
 
-  ## Academic Context
+  - MAE as regression accuracy metric
+  - Functional correctness measurement
 
-  - Mean Absolute Error (MAE) is a fundamental regression performance metric quantifying the average magnitude of errors between predicted and actual values
-  - It is calculated as the arithmetic mean of the absolute differences between predictions and ground truth across all instances
-  - MAE treats all errors equally regardless of direction, providing an intuitive measure of prediction accuracy in the same units as the target variable
-  - The metric is grounded in statistical error analysis and regression diagnostics, offering a linear, interpretable loss function
-  - Unlike squared error metrics, MAE is less sensitive to outliers, making it a robust choice in many modelling scenarios
-  - Its simplicity and direct interpretability have made it a staple in both academic research and practical machine learning applications
+    **ISO/IEC 25024** (Data Quality Metrics):
+
+  - Accuracy measurement for continuous outputs
+
+    ## NIST AI RMF Integration
+
+    **MEASURE Function**:
+
+  - MEASURE-2.2: MAE as appropriate metric for regression tasks
+  - MEASURE-2.3: MAE assessed across different contexts and subgroups
+  - Supports Valid and Reliable trustworthiness characteristic
+
+    ## Statistical Properties
+
+    **Optimal Predictor**: MAE is minimized by predicting the **median** of the conditional distribution P(y|x)
+
+    **Robustness**: MAE uses L₁ norm, making it robust to outliers (unlike L₂ norm used in MSE/RMSE)
+
+    **Non-differentiability**: Absolute value function non-differentiable at zero, requiring special handling in gradient-based optimization (subgradient methods)
+
+    ## Related Terms
+
+  - [[Model Performance]]: MAE as regression performance metric
+  - [[Root Mean Square Error]]: Alternative squared-error metric
+  - [[Mean Squared Error]]: Related squared-error metric
+  - [[MAPE]]: Percentage-based variant
+  - [[Regression]]: Task type for which MAE is appropriate
+  - [[Outlier]]: MAE less sensitive than RMSE
+  - [[Model Evaluation]]: Process using MAE
+  - [[Error Analysis]]: Examination of prediction errors
+
+    ## Academic Context
+
+- Mean Absolute Error (MAE) is a fundamental regression performance metric quantifying the average magnitude of errors between predicted and actual values
+- It is calculated as the arithmetic mean of the absolute differences between predictions and ground truth across all instances
+- MAE treats all errors equally regardless of direction, providing an intuitive measure of prediction accuracy in the same units as the target variable
+- The metric is grounded in statistical error analysis and regression diagnostics, offering a linear, interpretable loss function
+- Unlike squared error metrics, MAE is less sensitive to outliers, making it a robust choice in many modelling scenarios
+- Its simplicity and direct interpretability have made it a staple in both academic research and practical machine learning applications
 
   ## Current Landscape (2025)
 
-  - MAE remains widely adopted in industry for evaluating regression models due to its straightforward interpretation and robustness
-  - It is implemented across major machine learning platforms and libraries such as scikit-learn, TensorFlow, and PyTorch
-  - Organisations prioritising explainability and fairness often prefer MAE over metrics like Mean Squared Error (MSE) because it does not disproportionately penalise large errors
-  - In the UK, MAE is commonly used in sectors such as healthcare analytics, financial forecasting, and public sector data science, where transparent and interpretable metrics are valued
-  - In North England, regional innovation hubs like the Hartree Centre in Liverpool and the Digital Catapult in Newcastle have incorporated MAE into their model evaluation frameworks for local industry partnerships
+- MAE remains widely adopted in industry for evaluating regression models due to its straightforward interpretation and robustness
+- It is implemented across major machine learning platforms and libraries such as scikit-learn, TensorFlow, and PyTorch
+- Organisations prioritising explainability and fairness often prefer MAE over metrics like Mean Squared Error (MSE) because it does not disproportionately penalise large errors
+- In the UK, MAE is commonly used in sectors such as healthcare analytics, financial forecasting, and public sector data science, where transparent and interpretable metrics are valued
+- In North England, regional innovation hubs like the Hartree Centre in Liverpool and the Digital Catapult in Newcastle have incorporated MAE into their model evaluation frameworks for local industry partnerships
 
   ## Research & Literature
 
-  - Key academic papers and sources
-  - Willmott, C. J., & Matsuura, K. (2005). Advantages of the mean absolute error (MAE) over the root mean square error (RMSE) in assessing average model performance. Climate Research, 30(1), 79–82. https://doi.org/10.3354/cr030079
-  - Hyndman, R. J., & Koehler, A. B. (2006). Another look at measures of forecast accuracy. International Journal of Forecasting, 22(4), 679–688. https://doi.org/10.1016/j.ijforecast.2006.03.001
-  - Arize (2025). Mean Absolute Error in Machine Learning: What You Need To Know. https://arize.com/blog-course/mean-absolute-error-in-machine-learning-what-you-need-to-know/
-  - Deepchecks (2025). What is Mean Absolute Error? Formula & Significance. https://www.deepchecks.com/glossary/mean-absolute-error/
-  - GeeksforGeeks (2025). How to Calculate Mean Absolute Error in Python. https://www.geeksforgeeks.org/python/how-to-calculate-mean-absolute-error-in-python/
-  - Ongoing research directions
-  - Exploring hybrid error metrics that combine MAE with other measures for improved robustness
-  - Investigating the impact of MAE in fairness-aware machine learning and explainable AI frameworks
+- Key academic papers and sources
+- Willmott, C. J., & Matsuura, K. (2005). Advantages of the mean absolute error (MAE) over the root mean square error (RMSE) in assessing average model performance. Climate Research, 30(1), 79–82. https://doi.org/10.3354/cr030079
+- Hyndman, R. J., & Koehler, A. B. (2006). Another look at measures of forecast accuracy. International Journal of Forecasting, 22(4), 679–688. https://doi.org/10.1016/j.ijforecast.2006.03.001
+- Arize (2025). Mean Absolute Error in Machine Learning: What You Need To Know. https://arize.com/blog-course/mean-absolute-error-in-machine-learning-what-you-need-to-know/
+- Deepchecks (2025). What is Mean Absolute Error? Formula & Significance. https://www.deepchecks.com/glossary/mean-absolute-error/
+- GeeksforGeeks (2025). How to Calculate Mean Absolute Error in Python. https://www.geeksforgeeks.org/python/how-to-calculate-mean-absolute-error-in-python/
+- Ongoing research directions
+- Exploring hybrid error metrics that combine MAE with other measures for improved robustness
+- Investigating the impact of MAE in fairness-aware machine learning and explainable AI frameworks
 
   ## UK Context
 
-  - British contributions and implementations
-  - UK universities and research institutions frequently use MAE in their published studies on regression models, particularly in environmental science and social sciences
-  - The Office for National Statistics (ONS) and other government bodies have adopted MAE for evaluating predictive models in public policy and economic forecasting
-  - North England innovation hubs
-  - The Hartree Centre in Liverpool has led several projects using MAE for model validation in energy and manufacturing sectors
-  - The Digital Catapult in Newcastle supports local startups and SMEs in adopting MAE for transparent model evaluation in digital health and smart city applications
-  - Regional case studies
-  - A recent collaboration between the University of Manchester and local healthcare providers used MAE to assess the accuracy of predictive models for patient readmission rates, highlighting its practical utility in real-world settings
+- British contributions and implementations
+- UK universities and research institutions frequently use MAE in their published studies on regression models, particularly in environmental science and social sciences
+- The Office for National Statistics (ONS) and other government bodies have adopted MAE for evaluating predictive models in public policy and economic forecasting
+- North England innovation hubs
+- The Hartree Centre in Liverpool has led several projects using MAE for model validation in energy and manufacturing sectors
+- The Digital Catapult in Newcastle supports local startups and SMEs in adopting MAE for transparent model evaluation in digital health and smart city applications
+- Regional case studies
+- A recent collaboration between the University of Manchester and local healthcare providers used MAE to assess the accuracy of predictive models for patient readmission rates, highlighting its practical utility in real-world settings
 
   ## Future Directions
 
-  - Emerging trends and developments
-  - Increasing integration of MAE in automated machine learning (AutoML) platforms for model selection and hyperparameter tuning
-  - Growing interest in MAE for evaluating models in edge computing and IoT applications, where interpretability and robustness are critical
-  - Anticipated challenges
-  - Balancing the need for robustness with the desire for more nuanced error metrics that capture different aspects of model performance
-  - Addressing the limitations of MAE in scenarios where the direction of errors is important
-  - Research priorities
-  - Developing new error metrics that combine the strengths of MAE with other measures
-  - Investigating the impact of MAE in fairness-aware and explainable AI frameworks
+- Emerging trends and developments
+- Increasing integration of MAE in automated machine learning (AutoML) platforms for model selection and hyperparameter tuning
+- Growing interest in MAE for evaluating models in edge computing and IoT applications, where interpretability and robustness are critical
+- Anticipated challenges
+- Balancing the need for robustness with the desire for more nuanced error metrics that capture different aspects of model performance
+- Addressing the limitations of MAE in scenarios where the direction of errors is important
+- Research priorities
+- Developing new error metrics that combine the strengths of MAE with other measures
+- Investigating the impact of MAE in fairness-aware and explainable AI frameworks
 
   ## References
 
@@ -224,10 +237,10 @@ A regression performance metric representing the average magnitude of errors bet
 
   ## Metadata
 
-  - Last Updated: 2025-11-11
-  - Review Status: Comprehensive editorial review
-  - Verification: Academic sources verified
-  - Regional Context: UK/North England where applicable
+- Last Updated: 2025-11-11
+- Review Status: Comprehensive editorial review
+- Verification: Academic sources verified
+- Regional Context: UK/North England where applicable
 
-- ### Provenance
+### Provenance
 

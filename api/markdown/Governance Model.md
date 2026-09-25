@@ -1,10 +1,10 @@
-
 Framework of rules and decision-making processes defining authority and accountability within a metaverse ecosystem.
 
-- ### Semantic Classification
+### Semantic Classification
 
-- ### Content
-  Governance Model — content pending enrichment.
+### Content
 
-- ### Provenance
+Governance Model — content pending enrichment.
+
+### Provenance
 

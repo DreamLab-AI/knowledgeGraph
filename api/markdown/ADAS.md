@@ -1,24 +1,24 @@
-
 Advanced Driver Assistance Systems (ADAS) are electronic systems that assist vehicle operators with driving and parking functions through automated technologies including adaptive cruise control, lane keeping assist, automatic emergency braking, blind spot detection, and parking assistance. ADAS operates at SAE Level 1–2 automation, augmenting rather than replacing the driver, and relies on sensor fusion across cameras, radar, and ultrasonic systems to perceive the vehicle's environment.
 
-- ### Semantic Classification
+### Semantic Classification
 
-- ### Content
-  - Advanced Driver Assistance Systems (ADAS) are electronic systems that assist vehicle operators with driving and parking functions through automated technologies including adaptive cruise control, lane keeping assist, automatic emergency braking, blind spot detection, and parking assistance. ADAS represents SAE Level 1-2 automation, providing driver support whilst requiring continuous driver supervision and intervention capability.
+### Content
+
+- Advanced Driver Assistance Systems (ADAS) are electronic systems that assist vehicle operators with driving and parking functions through automated technologies including adaptive cruise control, lane keeping assist, automatic emergency braking, blind spot detection, and parking assistance. ADAS represents SAE Level 1-2 automation, providing driver support whilst requiring continuous driver supervision and intervention capability.
 
   ## Core Characteristics
 
-  - **Driver Assistance**: Augments rather than replaces driver
-  - **Safety Features**: Collision avoidance and mitigation
-  - **Sensor-Based**: Camera, radar, ultrasonic sensor integration
-  - **Incremental Automation**: Specific function automation
-  - **Driver Monitoring**: Ensures driver attention and readiness
+- **Driver Assistance**: Augments rather than replaces driver
+- **Safety Features**: Collision avoidance and mitigation
+- **Sensor-Based**: Camera, radar, ultrasonic sensor integration
+- **Incremental Automation**: Specific function automation
+- **Driver Monitoring**: Ensures driver attention and readiness
 
   ## Relationships
 
-  - **Subclass**: Driver Assistance Technology
-  - **Related**: Autonomous Vehicle, Self-Driving Car, Sensor Fusion
-  - **Standards**: ISO 26262, Euro NCAP, NHTSA ratings
+- **Subclass**: Driver Assistance Technology
+- **Related**: Autonomous Vehicle, Self-Driving Car, Sensor Fusion
+- **Standards**: ISO 26262, Euro NCAP, NHTSA ratings
 
   ## Key Literature
 
@@ -28,23 +28,23 @@ Advanced Driver Assistance Systems (ADAS) are electronic systems that assist veh
 
   ## See Also
 
-  - [[Autonomous Vehicle]]
-  - [[Perception System]]
-  - [[Sensor Fusion]]
+- [[Autonomous Vehicle]]
+- [[Perception System]]
+- [[Sensor Fusion]]
 
   ## Core Characteristics
 
-  - **Driver Assistance**: Augments rather than replaces driver
-  - **Safety Features**: Collision avoidance and mitigation
-  - **Sensor-Based**: Camera, radar, ultrasonic sensor integration
-  - **Incremental Automation**: Specific function automation
-  - **Driver Monitoring**: Ensures driver attention and readiness
+- **Driver Assistance**: Augments rather than replaces driver
+- **Safety Features**: Collision avoidance and mitigation
+- **Sensor-Based**: Camera, radar, ultrasonic sensor integration
+- **Incremental Automation**: Specific function automation
+- **Driver Monitoring**: Ensures driver attention and readiness
 
   ## Relationships
 
-  - **Subclass**: Driver Assistance Technology
-  - **Related**: Autonomous Vehicle, Self-Driving Car, Sensor Fusion
-  - **Standards**: ISO 26262, Euro NCAP, NHTSA ratings
+- **Subclass**: Driver Assistance Technology
+- **Related**: Autonomous Vehicle, Self-Driving Car, Sensor Fusion
+- **Standards**: ISO 26262, Euro NCAP, NHTSA ratings
 
   ## Key Literature
 
@@ -54,9 +54,9 @@ Advanced Driver Assistance Systems (ADAS) are electronic systems that assist veh
 
   ## See Also
 
-  - [[Autonomous Vehicle]]
-  - [[Perception System]]
-  - [[Sensor Fusion]]
+- [[Autonomous Vehicle]]
+- [[Perception System]]
+- [[Sensor Fusion]]
 
-- ### Provenance
+### Provenance
 

@@ -1,19 +1,19 @@
-
 A meta-classification for properties, characteristics, and measurable attributes of machine learning models including performance metrics (accuracy, latency, throughput), architectural properties (parameters, layers, context length), and operational characteristics (memory footprint, inference co...
 
-- ### Semantic Classification
+### Semantic Classification
 
-- ### Content
+### Content
 
-  - #### Property Types (Inferred by Reasoner)
-		    - Accuracy is-a ModelProperty
-		    - Latency is-a ModelProperty
-		    - Throughput is-a ModelProperty
-		    - Parameter Count is-a ModelProperty
-		    - Context Length is-a ModelProperty
-		    - Memory Footprint is-a ModelProperty
-		    - Inference Cost is-a ModelProperty
-		    - Training Compute is-a ModelProperty
+#### Property Types (Inferred by Reasoner)
+
+- Accuracy is-a ModelProperty
+- Latency is-a ModelProperty
+- Throughput is-a ModelProperty
+- Parameter Count is-a ModelProperty
+- Context Length is-a ModelProperty
+- Memory Footprint is-a ModelProperty
+- Inference Cost is-a ModelProperty
+- Training Compute is-a ModelProperty
 
   ## Definition
 
@@ -57,15 +57,15 @@ A meta-classification for properties, characteristics, and measurable attributes
 
   ## Usage in Ontology
 
-
   ## Property Governance
 
   Model properties support:
-  - **Model Cards**: Standardised documentation
-  - **Benchmarking**: Performance comparison
-  - **Procurement**: Selection criteria
-  - **Regulation**: Compliance verification
-  - **Risk Assessment**: Capability evaluation
 
-- ### Provenance
+- **Model Cards**: Standardised documentation
+- **Benchmarking**: Performance comparison
+- **Procurement**: Selection criteria
+- **Regulation**: Compliance verification
+- **Risk Assessment**: Capability evaluation
+
+### Provenance
 

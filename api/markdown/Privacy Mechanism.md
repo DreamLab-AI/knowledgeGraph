@@ -1,16 +1,16 @@
-
 A Privacy Mechanism is a technical method or protocol designed to preserve individuals' data privacy during data collection, processing, or publication. Examples include differential privacy, federated learning, and homomorphic encryption, each providing mathematically grounded guarantees against disclosure of sensitive information.
 
-- ### Semantic Classification
+### Semantic Classification
 
-- ### Content
+### Content
 
-  ## Overview
+## Overview
 
-  Privacy Mechanism represents an abstract concept in the ai ontology hierarchy.
+Privacy Mechanism represents an abstract concept in the ai ontology hierarchy.
 
-  #### Related Concepts
-  - [[owl:Thing]]
+#### Related Concepts
 
-- ### Provenance
+- [[owl:Thing]]
+
+### Provenance
 

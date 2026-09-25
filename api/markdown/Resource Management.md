@@ -1,65 +1,69 @@
-
 Resource Management is the systematic discipline of allocating, scheduling, monitoring, and optimising computational and physical resources — including CPU, GPU, memory, storage, and network bandwidth — across applications, services, and infrastructure to ensure efficient utilisation, quality-of-service guarantees, and graceful degradation under load. It encompasses the full asset lifecycle from provisioning and pooling through dynamic scaling to decommissioning, balancing competing workload demands against capacity constraints. In distributed and cloud-native environments, resource management extends to orchestration of containerised workloads, quota enforcement, cost attribution, and autoscaling policies that respond to real-time demand signals. Effective resource management is a foundational prerequisite for reliable, cost-efficient, and performant infrastructure at scale.
 
-- ### Overview
-  - Resource Management addresses the fundamental tension between finite physical capacity and the dynamic, unpredictable demand patterns of modern workloads.
-  - At its core, the discipline involves three interrelated activities:
-    - **Allocation** — deciding how much of a given resource (CPU cores, RAM, GPU time, IOPS) each workload receives.
-    - **Scheduling** — ordering and timing resource assignments to minimise contention, latency, and starvation.
-    - **Monitoring & feedback** — continuously observing utilisation to detect saturation, waste, or drift from agreed service targets.
-  - In cloud-native environments, resource management is largely automated through [[Kubernetes]] and similar [[Container Orchestration]] platforms that implement declarative resource requests and limits, bin-packing algorithms, and [[Autoscaling]] controllers.
-  - The discipline is mature: the foundations (process scheduling, virtual memory, I/O queuing) date to mainframe operating systems of the 1960s, while cloud-era abstractions (quota hierarchies, spot-instance preemption, serverless burst) represent incremental refinements on those principles.
-  - Why it matters:
-    - Under-management leads to resource contention, performance cliffs, and cascading failures.
-    - Over-provisioning drives unnecessary cost and energy consumption.
-    - Effective resource management is a prerequisite for [[High Availability]], [[Fault Tolerance]], and predictable [[Service Level Agreement]] compliance.
+### Overview
 
-- ### Key Components
-  - **[[Scheduler]]** — the decision engine that assigns workloads to available capacity; ranges from OS-level CPU schedulers (CFS, real-time) to cluster-level batch schedulers (SLURM, Borg).
-  - **[[Resource Pool]]** — a logical grouping of homogeneous or heterogeneous capacity that can be dynamically drawn upon; enables [[Load Balancing]] across nodes.
-  - **[[Autoscaling]]** — reactive or predictive adjustment of resource quantity in response to demand signals; horizontal (more instances) or vertical (larger instances).
-  - **[[Quota Management]]** — enforcement of per-tenant, per-namespace, or per-project caps to prevent resource monopolisation in multi-tenant systems.
-  - **[[Virtualisation]]** — the hypervisor layer that multiplexes physical hardware into isolated virtual machines, enabling fine-grained allocation without physical repartitioning.
-  - **[[Containerisation]]** — lightweight process isolation (cgroups, namespaces) enabling dense packing of workloads with explicit CPU/memory limits and requests.
-  - **[[Load Balancing]]** — distributing incoming traffic or compute tasks across a pool to avoid hot-spots and maintain responsiveness.
-  - **[[Monitoring]] and [[Telemetry]]** — continuous collection of utilisation metrics (CPU%, memory RSS, network throughput, disk IOPS) feeding dashboards and alerting systems.
-  - **Admission Control** — gates new workload submissions to prevent overcommit beyond the capacity a cluster can safely serve.
-  - **Preemption and Eviction** — mechanisms to reclaim resources from lower-priority workloads when higher-priority demands arrive, common in Kubernetes and HPC schedulers.
-  - **Cost Attribution / Chargeback** — accounting subsystem that maps resource consumption to organisational units for financial governance; closely related to [[Cost Optimisation]].
+- Resource Management addresses the fundamental tension between finite physical capacity and the dynamic, unpredictable demand patterns of modern workloads.
+- At its core, the discipline involves three interrelated activities:
+  - **Allocation** — deciding how much of a given resource (CPU cores, RAM, GPU time, IOPS) each workload receives.
+  - **Scheduling** — ordering and timing resource assignments to minimise contention, latency, and starvation.
+  - **Monitoring & feedback** — continuously observing utilisation to detect saturation, waste, or drift from agreed service targets.
+- In cloud-native environments, resource management is largely automated through [[Kubernetes]] and similar [[Container Orchestration]] platforms that implement declarative resource requests and limits, bin-packing algorithms, and [[Autoscaling]] controllers.
+- The discipline is mature: the foundations (process scheduling, virtual memory, I/O queuing) date to mainframe operating systems of the 1960s, while cloud-era abstractions (quota hierarchies, spot-instance preemption, serverless burst) represent incremental refinements on those principles.
+- Why it matters:
+  - Under-management leads to resource contention, performance cliffs, and cascading failures.
+  - Over-provisioning drives unnecessary cost and energy consumption.
+  - Effective resource management is a prerequisite for [[High Availability]], [[Fault Tolerance]], and predictable [[Service Level Agreement]] compliance.
 
-- ### Mechanisms
-  - **Bin-packing** — NP-hard optimisation heuristic that fits workloads of varying sizes into fixed-capacity nodes to maximise density; Kubernetes scheduler approximates this with a scoring plugin model.
-  - **Fair-share scheduling** — algorithms (e.g. Dominant Resource Fairness used in Apache YARN) that allocate resources proportionally across competing tenants based on declared shares.
-  - **Resource limits vs. requests** — Kubernetes distinguishes between a guaranteed minimum (request) and a soft ceiling (limit), enabling overcommit on memory with OOM-kill eviction as a safety valve.
-  - **Spot / preemptible instances** — [[Cloud Computing]] providers offer excess capacity at deep discounts with eviction risk, requiring workloads to be fault-tolerant; resource management strategies must account for reclamation events.
-  - **Vertical Pod Autoscaler (VPA)** — continuously recommends or applies updated resource requests/limits based on observed usage, reducing manual tuning overhead.
-  - **Cluster Autoscaler** — adds or removes nodes from a cluster in response to pending unschedulable pods or under-utilised nodes.
-  - **eBPF-based observability** — modern Linux kernels allow low-overhead, in-kernel telemetry collection without modifying application code, enabling fine-grained resource accounting.
+### Key Components
 
-- ### Applications and Use Cases
-  - **Cloud-Native Application Hosting** — [[Kubernetes]] clusters enforce resource quotas per namespace, enabling multiple teams to share a cluster without interference.
-  - **High-Performance Computing (HPC)** — batch schedulers such as SLURM manage CPU-hour budgets across research jobs on supercomputer clusters, enforcing fair-share policies between departments.
-  - **[[Metaverse Infrastructure]]** — real-time 3D rendering and physics simulation workloads require GPU resource reservation with bounded latency; resource managers allocate GPU slices across concurrent users.
-  - **[[MLOps]] and AI Training** — GPU clusters for [[Deep Learning]] require sophisticated scheduling (gang scheduling, fractional GPU sharing) to maximise expensive accelerator utilisation while respecting job priorities.
-  - **[[Federated Learning]]** — resource management at the edge ensures that on-device training does not starve user-facing applications, with CPU/battery budget constraints enforced at the OS level.
-  - **[[Edge Computing]]** — constrained edge nodes require strict resource partitioning between latency-sensitive inference workloads and batch analytics pipelines.
-  - **Telco / 5G Network Slicing** — network resource management allocates spectrum, compute, and storage slices to different service tiers (eMBB, URLLC, mMTC) with QoS guarantees.
-  - **[[Distributed System]] coordination** — [[Microservices]] architectures rely on resource management to prevent the "noisy neighbour" effect where one service starves another sharing the same node.
-  - **Serverless / Function-as-a-Service** — platforms such as AWS Lambda manage CPU and memory allocation per invocation at millisecond granularity, abstracting resource management entirely from developers.
-  - **[[Content Delivery Network]] (CDN)** — edge PoPs dynamically allocate caching, CPU, and bandwidth across origin-pull and cache-serve workloads based on traffic patterns.
+- **[[Scheduler]]** — the decision engine that assigns workloads to available capacity; ranges from OS-level CPU schedulers (CFS, real-time) to cluster-level batch schedulers (SLURM, Borg).
+- **[[Resource Pool]]** — a logical grouping of homogeneous or heterogeneous capacity that can be dynamically drawn upon; enables [[Load Balancing]] across nodes.
+- **[[Autoscaling]]** — reactive or predictive adjustment of resource quantity in response to demand signals; horizontal (more instances) or vertical (larger instances).
+- **[[Quota Management]]** — enforcement of per-tenant, per-namespace, or per-project caps to prevent resource monopolisation in multi-tenant systems.
+- **[[Virtualisation]]** — the hypervisor layer that multiplexes physical hardware into isolated virtual machines, enabling fine-grained allocation without physical repartitioning.
+- **[[Containerisation]]** — lightweight process isolation (cgroups, namespaces) enabling dense packing of workloads with explicit CPU/memory limits and requests.
+- **[[Load Balancing]]** — distributing incoming traffic or compute tasks across a pool to avoid hot-spots and maintain responsiveness.
+- **[[Monitoring]] and [[Telemetry]]** — continuous collection of utilisation metrics (CPU%, memory RSS, network throughput, disk IOPS) feeding dashboards and alerting systems.
+- **Admission Control** — gates new workload submissions to prevent overcommit beyond the capacity a cluster can safely serve.
+- **Preemption and Eviction** — mechanisms to reclaim resources from lower-priority workloads when higher-priority demands arrive, common in Kubernetes and HPC schedulers.
+- **Cost Attribution / Chargeback** — accounting subsystem that maps resource consumption to organisational units for financial governance; closely related to [[Cost Optimisation]].
 
-- ### Standards and Context
-  - **IETF RFC 2475** — defines the Differentiated Services (DiffServ) architecture for network-layer [[Quality of Service]], directly informing bandwidth resource management in IP networks.
-  - **DMTF CIM / WBEM** — Common Information Model provides a standardised schema for representing managed resources (CPU, memory, storage) in heterogeneous environments.
-  - **OpenTelemetry** — CNCF standard for [[Telemetry]] collection; provides vendor-neutral instrumentation for resource utilisation metrics, traces, and logs feeding into resource managers.
-  - **Kubernetes Resource Model** — de facto standard for container-level resource declaration (requests/limits, LimitRange, ResourceQuota objects) adopted across all major cloud providers.
-  - **SLURM Workload Manager** — dominant open-source HPC scheduler; implements fair-share, backfill, and priority scheduling algorithms widely used in academic and national supercomputing facilities.
-  - **TOSCA (Topology and Orchestration Specification for Cloud Applications)** — OASIS standard for describing resource topology and orchestration workflows in cloud deployments.
-  - **FinOps Foundation** — emerging governance framework applying financial accountability principles to cloud resource consumption, bridging resource management and [[Cost Optimisation]].
-  - **CNCF Landscape** — the Cloud Native Computing Foundation catalogues tools spanning scheduling, autoscaling, and capacity planning that implement resource management patterns at scale.
-  - **ISO/IEC 19770** — IT asset management standard relevant to the lifecycle governance dimension of resource management (procurement through retirement).
+### Mechanisms
 
-- ### Semantic Classification
+- **Bin-packing** — NP-hard optimisation heuristic that fits workloads of varying sizes into fixed-capacity nodes to maximise density; Kubernetes scheduler approximates this with a scoring plugin model.
+- **Fair-share scheduling** — algorithms (e.g. Dominant Resource Fairness used in Apache YARN) that allocate resources proportionally across competing tenants based on declared shares.
+- **Resource limits vs. requests** — Kubernetes distinguishes between a guaranteed minimum (request) and a soft ceiling (limit), enabling overcommit on memory with OOM-kill eviction as a safety valve.
+- **Spot / preemptible instances** — [[Cloud Computing]] providers offer excess capacity at deep discounts with eviction risk, requiring workloads to be fault-tolerant; resource management strategies must account for reclamation events.
+- **Vertical Pod Autoscaler (VPA)** — continuously recommends or applies updated resource requests/limits based on observed usage, reducing manual tuning overhead.
+- **Cluster Autoscaler** — adds or removes nodes from a cluster in response to pending unschedulable pods or under-utilised nodes.
+- **eBPF-based observability** — modern Linux kernels allow low-overhead, in-kernel telemetry collection without modifying application code, enabling fine-grained resource accounting.
 
-- ### Provenance
+### Applications and Use Cases
+
+- **Cloud-Native Application Hosting** — [[Kubernetes]] clusters enforce resource quotas per namespace, enabling multiple teams to share a cluster without interference.
+- **High-Performance Computing (HPC)** — batch schedulers such as SLURM manage CPU-hour budgets across research jobs on supercomputer clusters, enforcing fair-share policies between departments.
+- **[[Metaverse Infrastructure]]** — real-time 3D rendering and physics simulation workloads require GPU resource reservation with bounded latency; resource managers allocate GPU slices across concurrent users.
+- **[[MLOps]] and AI Training** — GPU clusters for [[Deep Learning]] require sophisticated scheduling (gang scheduling, fractional GPU sharing) to maximise expensive accelerator utilisation while respecting job priorities.
+- **[[Federated Learning]]** — resource management at the edge ensures that on-device training does not starve user-facing applications, with CPU/battery budget constraints enforced at the OS level.
+- **[[Edge Computing]]** — constrained edge nodes require strict resource partitioning between latency-sensitive inference workloads and batch analytics pipelines.
+- **Telco / 5G Network Slicing** — network resource management allocates spectrum, compute, and storage slices to different service tiers (eMBB, URLLC, mMTC) with QoS guarantees.
+- **[[Distributed System]] coordination** — [[Microservices]] architectures rely on resource management to prevent the "noisy neighbour" effect where one service starves another sharing the same node.
+- **Serverless / Function-as-a-Service** — platforms such as AWS Lambda manage CPU and memory allocation per invocation at millisecond granularity, abstracting resource management entirely from developers.
+- **[[Content Delivery Network]] (CDN)** — edge PoPs dynamically allocate caching, CPU, and bandwidth across origin-pull and cache-serve workloads based on traffic patterns.
+
+### Standards and Context
+
+- **IETF RFC 2475** — defines the Differentiated Services (DiffServ) architecture for network-layer [[Quality of Service]], directly informing bandwidth resource management in IP networks.
+- **DMTF CIM / WBEM** — Common Information Model provides a standardised schema for representing managed resources (CPU, memory, storage) in heterogeneous environments.
+- **OpenTelemetry** — CNCF standard for [[Telemetry]] collection; provides vendor-neutral instrumentation for resource utilisation metrics, traces, and logs feeding into resource managers.
+- **Kubernetes Resource Model** — de facto standard for container-level resource declaration (requests/limits, LimitRange, ResourceQuota objects) adopted across all major cloud providers.
+- **SLURM Workload Manager** — dominant open-source HPC scheduler; implements fair-share, backfill, and priority scheduling algorithms widely used in academic and national supercomputing facilities.
+- **TOSCA (Topology and Orchestration Specification for Cloud Applications)** — OASIS standard for describing resource topology and orchestration workflows in cloud deployments.
+- **FinOps Foundation** — emerging governance framework applying financial accountability principles to cloud resource consumption, bridging resource management and [[Cost Optimisation]].
+- **CNCF Landscape** — the Cloud Native Computing Foundation catalogues tools spanning scheduling, autoscaling, and capacity planning that implement resource management patterns at scale.
+- **ISO/IEC 19770** — IT asset management standard relevant to the lifecycle governance dimension of resource management (procurement through retirement).
+
+### Semantic Classification
+
+### Provenance
 

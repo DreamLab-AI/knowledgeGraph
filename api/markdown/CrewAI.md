@@ -1,148 +1,159 @@
-
 CrewAI is an open-source Python framework for orchestrating teams of autonomous LLM-powered agents that collaborate on complex tasks through defined roles, backstories, goals, and structured processes. It models a crew of specialised agents—each with distinct capabilities and a designated toolset—that delegate work, share context through a shared memory system, and execute sequential, parallel, or hierarchical workflows toward a common objective. With 47,800+ GitHub stars, 27 million downloads, and adoption by 63% of the Fortune 500 as of mid-2026, CrewAI has become one of the fastest-growing multi-agent orchestration frameworks in the agentic AI ecosystem.
 
-- ### Semantic Classification
+### Semantic Classification
 
-- ### Content
-  ## Compositional Relationships (Components)
-  ```
-  SubClassOf(ai:CrewAI
-    ObjectSomeValuesFrom(ai:hasPart ai:Crew))
-  SubClassOf(ai:CrewAI
-    ObjectSomeValuesFrom(ai:hasPart ai:Agent))
-  SubClassOf(ai:CrewAI
-    ObjectSomeValuesFrom(ai:hasPart ai:Task))
-  SubClassOf(ai:CrewAI
-    ObjectSomeValuesFrom(ai:hasPart ai:Process))
-  SubClassOf(ai:CrewAI
-    ObjectSomeValuesFrom(ai:hasPart ai:Flow))
-  SubClassOf(ai:CrewAI
-    ObjectSomeValuesFrom(ai:hasPart ai:AgentMemory))
-  SubClassOf(ai:CrewAI
-    ObjectSomeValuesFrom(ai:hasPart ai:ToolIntegrationLayer))
-  ```
-  ## Dependency Relationships
-  ```
-  SubClassOf(ai:CrewAI
-    ObjectSomeValuesFrom(ai:requires ai:LargeLanguageModel))
-  SubClassOf(ai:CrewAI
-    ObjectSomeValuesFrom(ai:requires ai:APIIntegration))
-  SubClassOf(ai:CrewAI
-    ObjectSomeValuesFrom(ai:dependsOn ai:ContextWindow))
-  SubClassOf(ai:CrewAI
-    ObjectSomeValuesFrom(ai:dependsOn ai:FunctionCalling))
-  SubClassOf(ai:CrewAI
-    ObjectSomeValuesFrom(ai:dependsOn ai:PromptEngineering))
-  ```
-  ## Capability Relationships
-  ```
-  SubClassOf(ai:CrewAI
-    ObjectSomeValuesFrom(ai:enables ai:MultiAgentCoordination))
-  SubClassOf(ai:CrewAI
-    ObjectSomeValuesFrom(ai:enables ai:WorkflowAutomation))
-  SubClassOf(ai:CrewAI
-    ObjectSomeValuesFrom(ai:enables ai:TaskPlanning))
-  SubClassOf(ai:CrewAI
-    ObjectSomeValuesFrom(ai:enables ai:CodeExecution))
-  SubClassOf(ai:CrewAI
-    ObjectSomeValuesFrom(ai:supports ai:HumanInTheLoop))
-  SubClassOf(ai:CrewAI
-    ObjectSomeValuesFrom(ai:supports ai:AISafety))
-  ```
-  ## Implementation Relationships
-  ```
-  SubClassOf(ai:CrewAI
-    ObjectSomeValuesFrom(ai:uses ai:LargeLanguageModel))
-  SubClassOf(ai:CrewAI
-    ObjectSomeValuesFrom(ai:uses ai:ModelContextProtocol))
-  SubClassOf(ai:CrewAI
-    ObjectSomeValuesFrom(ai:uses ai:RetrievalAugmentedGeneration))
-  SubClassOf(ai:CrewAI
-    ObjectSomeValuesFrom(ai:implements ai:RoleBasedAgentOrchestration))
-  SubClassOf(ai:CrewAI
-    ObjectSomeValuesFrom(ai:implements ai:HierarchicalAgentCoordination))
-  ```
-  ## Reduction Relationships
-  ```
-  SubClassOf(ai:CrewAI
-    ObjectSomeValuesFrom(ai:reducesTo ai:MultiAgentSystem))
-  SubClassOf(ai:CrewAI
-    ObjectSomeValuesFrom(ai:reducesTo ai:LLMOrchestrationFramework))
-  ```
+### Content
 
-  ## About
-  CrewAI was released as an open-source Python package in January 2024 by João Moura, a Brazilian software engineer previously working in AI infrastructure. It was designed from scratch—explicitly without inheriting from LangChain, LlamaIndex, or any existing agent abstraction—to provide a clean, fast, ergonomic API for constructing [[Multi-Agent Systems]] in which each agent behaves as a role-playing specialist with a distinct identity and purpose. The framework's central insight is that task decomposition is most reliable when agents have clearly defined identities: a role (e.g., "Senior Research Analyst"), a goal (e.g., "uncover cutting-edge developments in AI and synthesise findings with high source quality standards"), and a backstory (natural-language context establishing the agent's professional history, expertise, and characteristic reasoning style). This identity-driven approach to [[Prompt Engineering]] produces more consistent and contextually appropriate [[Chain of Thought]] reasoning than generic single-agent prompts, because the backstory establishes role-consistent heuristics (a "sceptical investigative journalist" agent will naturally seek corroborating sources; a "rapid prototyping engineer" agent will prioritise working implementations over theoretical purity).
+## Compositional Relationships (Components)
+```
+SubClassOf(ai:CrewAI
+  ObjectSomeValuesFrom(ai:hasPart ai:Crew))
+SubClassOf(ai:CrewAI
+  ObjectSomeValuesFrom(ai:hasPart ai:Agent))
+SubClassOf(ai:CrewAI
+  ObjectSomeValuesFrom(ai:hasPart ai:Task))
+SubClassOf(ai:CrewAI
+  ObjectSomeValuesFrom(ai:hasPart ai:Process))
+SubClassOf(ai:CrewAI
+  ObjectSomeValuesFrom(ai:hasPart ai:Flow))
+SubClassOf(ai:CrewAI
+  ObjectSomeValuesFrom(ai:hasPart ai:AgentMemory))
+SubClassOf(ai:CrewAI
+  ObjectSomeValuesFrom(ai:hasPart ai:ToolIntegrationLayer))
+```
+## Dependency Relationships
+```
+SubClassOf(ai:CrewAI
+  ObjectSomeValuesFrom(ai:requires ai:LargeLanguageModel))
+SubClassOf(ai:CrewAI
+  ObjectSomeValuesFrom(ai:requires ai:APIIntegration))
+SubClassOf(ai:CrewAI
+  ObjectSomeValuesFrom(ai:dependsOn ai:ContextWindow))
+SubClassOf(ai:CrewAI
+  ObjectSomeValuesFrom(ai:dependsOn ai:FunctionCalling))
+SubClassOf(ai:CrewAI
+  ObjectSomeValuesFrom(ai:dependsOn ai:PromptEngineering))
+```
+## Capability Relationships
+```
+SubClassOf(ai:CrewAI
+  ObjectSomeValuesFrom(ai:enables ai:MultiAgentCoordination))
+SubClassOf(ai:CrewAI
+  ObjectSomeValuesFrom(ai:enables ai:WorkflowAutomation))
+SubClassOf(ai:CrewAI
+  ObjectSomeValuesFrom(ai:enables ai:TaskPlanning))
+SubClassOf(ai:CrewAI
+  ObjectSomeValuesFrom(ai:enables ai:CodeExecution))
+SubClassOf(ai:CrewAI
+  ObjectSomeValuesFrom(ai:supports ai:HumanInTheLoop))
+SubClassOf(ai:CrewAI
+  ObjectSomeValuesFrom(ai:supports ai:AISafety))
+```
+## Implementation Relationships
+```
+SubClassOf(ai:CrewAI
+  ObjectSomeValuesFrom(ai:uses ai:LargeLanguageModel))
+SubClassOf(ai:CrewAI
+  ObjectSomeValuesFrom(ai:uses ai:ModelContextProtocol))
+SubClassOf(ai:CrewAI
+  ObjectSomeValuesFrom(ai:uses ai:RetrievalAugmentedGeneration))
+SubClassOf(ai:CrewAI
+  ObjectSomeValuesFrom(ai:implements ai:RoleBasedAgentOrchestration))
+SubClassOf(ai:CrewAI
+  ObjectSomeValuesFrom(ai:implements ai:HierarchicalAgentCoordination))
+```
+## Reduction Relationships
+```
+SubClassOf(ai:CrewAI
+  ObjectSomeValuesFrom(ai:reducesTo ai:MultiAgentSystem))
+SubClassOf(ai:CrewAI
+  ObjectSomeValuesFrom(ai:reducesTo ai:LLMOrchestrationFramework))
+```
 
-  The initial CrewAI release supported sequential and hierarchical process types with a limited built-in toolset and basic agent memory. The framework's rapid adoption—reaching 10,000 GitHub stars within three months of release—drove equally rapid feature expansion. Memory systems were significantly extended (short-term in-context memory, long-term vector-store backed recall, entity memory, and user-specific memory) in Q2-Q3 2024. The Flows abstraction was introduced as a first-class feature in late 2024 (v0.60+), adding event-driven control flow—conditional branching, state machines with typed inputs and outputs, and persistence via checkpointing—alongside the original Crew-based declarative model. This dual-mode architecture (Crews for collaborative autonomy; Flows for deterministic production orchestration) directly addresses a persistent critique of early multi-agent frameworks: that autonomous delegation produces unpredictable execution paths unsuitable for regulated or high-stakes business processes. Flows allow operators to define exactly which decisions are delegated to agents and which are gated by hard-coded logic or [[Human-in-the-Loop]] review steps, recovering the predictability of traditional workflow orchestration while retaining LLM-native intelligence at appropriate decision points.
+## About
+CrewAI was released as an open-source Python package in January 2024 by João Moura, a Brazilian software engineer previously working in AI infrastructure. It was designed from scratch—explicitly without inheriting from LangChain, LlamaIndex, or any existing agent abstraction—to provide a clean, fast, ergonomic API for constructing [[Multi-Agent Systems]] in which each agent behaves as a role-playing specialist with a distinct identity and purpose. The framework's central insight is that task decomposition is most reliable when agents have clearly defined identities: a role (e.g., "Senior Research Analyst"), a goal (e.g., "uncover cutting-edge developments in AI and synthesise findings with high source quality standards"), and a backstory (natural-language context establishing the agent's professional history, expertise, and characteristic reasoning style). This identity-driven approach to [[Prompt Engineering]] produces more consistent and contextually appropriate [[Chain of Thought]] reasoning than generic single-agent prompts, because the backstory establishes role-consistent heuristics (a "sceptical investigative journalist" agent will naturally seek corroborating sources; a "rapid prototyping engineer" agent will prioritise working implementations over theoretical purity).
 
-  The [[Model Context Protocol]] (MCP) integration, added in 2025, significantly expanded CrewAI's tool ecosystem by making it a universal MCP client. Any MCP-compliant server—of which there were hundreds publicly available by mid-2025—can expose its tools to CrewAI agents without custom integration code, leveraging the protocol's standardised tool-description format. This positions CrewAI at the intersection of two rapidly scaling standards: the MCP ecosystem (driven by Anthropic and broadly adopted) and the CrewAI agent orchestration ecosystem, creating a network effect where each MCP tool automatically becomes available to every CrewAI deployment.
+The initial CrewAI release supported sequential and hierarchical process types with a limited built-in toolset and basic agent memory. The framework's rapid adoption—reaching 10,000 GitHub stars within three months of release—drove equally rapid feature expansion. Memory systems were significantly extended (short-term in-context memory, long-term vector-store backed recall, entity memory, and user-specific memory) in Q2-Q3 2024. The Flows abstraction was introduced as a first-class feature in late 2024 (v0.60+), adding event-driven control flow—conditional branching, state machines with typed inputs and outputs, and persistence via checkpointing—alongside the original Crew-based declarative model. This dual-mode architecture (Crews for collaborative autonomy; Flows for deterministic production orchestration) directly addresses a persistent critique of early multi-agent frameworks: that autonomous delegation produces unpredictable execution paths unsuitable for regulated or high-stakes business processes. Flows allow operators to define exactly which decisions are delegated to agents and which are gated by hard-coded logic or [[Human-in-the-Loop]] review steps, recovering the predictability of traditional workflow orchestration while retaining LLM-native intelligence at appropriate decision points.
 
-  CrewAI's growth trajectory—from open-source release in January 2024 to 2 billion agent executions in twelve months and adoption by 63% of the Fortune 500 by mid-2026—positions it as the dominant role-based multi-agent framework. The framework achieved recognition on the 2025 IA Enablers List alongside OpenAI and Anthropic, was integrated as a managed deployment option on AWS Bedrock, and secured scale-up investment from Insight Partners. The agentic AI market itself was experiencing explosive enterprise uptake in this period: Gartner forecast that 40% of enterprise applications would feature task-specific agents by end of 2026 (from <5% in 2025), with Deloitte projecting 25% of generative AI deployments to include agentic components by the same date. CrewAI's practical orientation—prioritising developer ergonomics and fast time-to-prototype over theoretical completeness—positioned it to capture this wave of enterprise experimentation, establishing it as the default framework for organisations beginning multi-agent exploration before potentially transitioning to more complex orchestration options as deployments matured.
+The [[Model Context Protocol]] (MCP) integration, added in 2025, significantly expanded CrewAI's tool ecosystem by making it a universal MCP client. Any MCP-compliant server—of which there were hundreds publicly available by mid-2025—can expose its tools to CrewAI agents without custom integration code, leveraging the protocol's standardised tool-description format. This positions CrewAI at the intersection of two rapidly scaling standards: the MCP ecosystem (driven by Anthropic and broadly adopted) and the CrewAI agent orchestration ecosystem, creating a network effect where each MCP tool automatically becomes available to every CrewAI deployment.
 
-  The competitive landscape surrounding CrewAI in 2025-2026 reflects a broader consolidation in the multi-agent framework space. Where 2023 saw dozens of experimental agent frameworks (BabyAGI, AgentGPT, AutoGPT, SuperAGI, and others), by 2026 the market had consolidated around three primary options—CrewAI (role-based, developer-friendly), [[LangGraph]] (graph-based, production-grade stateful workflows), and [[OpenAI Agents SDK]] (proprietary, OpenAI-native)—with [[AutoGen]] in maintenance mode and [[MetaGPT]] occupying a specialist software-engineering simulation niche. This consolidation reflects the maturation of enterprise requirements: organisations are prioritising reliability, maintainability, vendor support, and integration with existing cloud infrastructure over novelty or breadth of features.
+CrewAI's growth trajectory—from open-source release in January 2024 to 2 billion agent executions in twelve months and adoption by 63% of the Fortune 500 by mid-2026—positions it as the dominant role-based multi-agent framework. The framework achieved recognition on the 2025 IA Enablers List alongside OpenAI and Anthropic, was integrated as a managed deployment option on AWS Bedrock, and secured scale-up investment from Insight Partners. The agentic AI market itself was experiencing explosive enterprise uptake in this period: Gartner forecast that 40% of enterprise applications would feature task-specific agents by end of 2026 (from <5% in 2025), with Deloitte projecting 25% of generative AI deployments to include agentic components by the same date. CrewAI's practical orientation—prioritising developer ergonomics and fast time-to-prototype over theoretical completeness—positioned it to capture this wave of enterprise experimentation, establishing it as the default framework for organisations beginning multi-agent exploration before potentially transitioning to more complex orchestration options as deployments matured.
 
-  ## Components and Architecture
+The competitive landscape surrounding CrewAI in 2025-2026 reflects a broader consolidation in the multi-agent framework space. Where 2023 saw dozens of experimental agent frameworks (BabyAGI, AgentGPT, AutoGPT, SuperAGI, and others), by 2026 the market had consolidated around three primary options—CrewAI (role-based, developer-friendly), [[LangGraph]] (graph-based, production-grade stateful workflows), and [[OpenAI Agents SDK]] (proprietary, OpenAI-native)—with [[AutoGen]] in maintenance mode and [[MetaGPT]] occupying a specialist software-engineering simulation niche. This consolidation reflects the maturation of enterprise requirements: organisations are prioritising reliability, maintainability, vendor support, and integration with existing cloud infrastructure over novelty or breadth of features.
 
-  **Agent**
-  - The fundamental unit: an LLM-backed actor with a role, goal, backstory, and toolset.
-  - Each agent holds a configurable [[Agent Memory]] (short-term in-context state, long-term vector-store backed recall, entity memory for named entity tracking, and user-specific memory).
-  - Agents can be configured with `allow_delegation=True` to pass tasks to other agents, or `allow_interruption=True` to surface checkpoints for [[Human-in-the-Loop]] review.
-  - Supports any LLM via LiteLLM integration: GPT-4o, Claude 3.5/3.7, Gemini, Llama 3, and local Ollama models.
+## Components and Architecture
+
+**Agent**
+
+- The fundamental unit: an LLM-backed actor with a role, goal, backstory, and toolset.
+- Each agent holds a configurable [[Agent Memory]] (short-term in-context state, long-term vector-store backed recall, entity memory for named entity tracking, and user-specific memory).
+- Agents can be configured with `allow_delegation=True` to pass tasks to other agents, or `allow_interruption=True` to surface checkpoints for [[Human-in-the-Loop]] review.
+- Supports any LLM via LiteLLM integration: GPT-4o, Claude 3.5/3.7, Gemini, Llama 3, and local Ollama models.
 
   **Task**
-  - A unit of work assigned to an agent, specifying expected output, context dependencies (outputs of prior tasks), and optional output schema (Pydantic model or JSON).
-  - Tasks can carry `async_execution=True` for parallel dispatch within a crew, and `output_file` to persist results between crew invocations.
-  - Context injection allows any task to receive the output of any prior task as grounding context, enabling information flow across sequential steps.
+
+- A unit of work assigned to an agent, specifying expected output, context dependencies (outputs of prior tasks), and optional output schema (Pydantic model or JSON).
+- Tasks can carry `async_execution=True` for parallel dispatch within a crew, and `output_file` to persist results between crew invocations.
+- Context injection allows any task to receive the output of any prior task as grounding context, enabling information flow across sequential steps.
 
   **Crew**
-  - The top-level orchestration container: a list of agents, a list of tasks, and a process type.
-  - Process types: `sequential` (tasks executed in declaration order), `hierarchical` (a manager LLM—either user-defined or auto-generated—plans, delegates, and reviews task completion), `consensual` (experimental; agents vote on outputs before proceeding).
-  - Hierarchical process: the manager agent receives the crew's goal and task list, then autonomously assigns tasks to agents, validates outputs, and replans if outputs are insufficient—implementing a planning loop analogous to the [[ReAct Pattern]] at the crew level.
-  - Crews support `verbose=True` for full execution traces, `memory=True` for persistent [[Agent Memory]], and `max_rpm` rate-limiting for API cost control.
+
+- The top-level orchestration container: a list of agents, a list of tasks, and a process type.
+- Process types: `sequential` (tasks executed in declaration order), `hierarchical` (a manager LLM—either user-defined or auto-generated—plans, delegates, and reviews task completion), `consensual` (experimental; agents vote on outputs before proceeding).
+- Hierarchical process: the manager agent receives the crew's goal and task list, then autonomously assigns tasks to agents, validates outputs, and replans if outputs are insufficient—implementing a planning loop analogous to the [[ReAct Pattern]] at the crew level.
+- Crews support `verbose=True` for full execution traces, `memory=True` for persistent [[Agent Memory]], and `max_rpm` rate-limiting for API cost control.
 
   **Flow**
-  - Event-driven execution graph where methods decorated with `@start`, `@listen`, and `@router` define state transitions.
-  - Flows maintain typed state (Python dataclass or Pydantic model) that persists across steps, enabling resumability and branching on computed conditions.
-  - Checkpointing allows a Flow to replay from any completed step, fork with different inputs, or re-execute failed branches—critical for production reliability.
-  - Flows can embed Crew invocations as steps, combining declarative agent collaboration with deterministic control flow in a single coherent pipeline.
-  - Supports native async/await with streaming output, enabling real-time feedback in UI integrations.
+
+- Event-driven execution graph where methods decorated with `@start`, `@listen`, and `@router` define state transitions.
+- Flows maintain typed state (Python dataclass or Pydantic model) that persists across steps, enabling resumability and branching on computed conditions.
+- Checkpointing allows a Flow to replay from any completed step, fork with different inputs, or re-execute failed branches—critical for production reliability.
+- Flows can embed Crew invocations as steps, combining declarative agent collaboration with deterministic control flow in a single coherent pipeline.
+- Supports native async/await with streaming output, enabling real-time feedback in UI integrations.
 
   **Tool Integration**
-  - CrewAI ships hundreds of built-in tools: web search (SerperDevTool, EXATool), code execution (CodeInterpreterTool), file I/O, browser automation, database connectors, and vector-store RAG tools.
-  - First-class [[Model Context Protocol]] (MCP) support: agents can connect to any MCP server as a tool source, consuming tools exposed by external MCP-compliant services without custom wrappers.
-  - Custom tools are defined as Python callables annotated with `@tool`, automatically parsed for name, description, and argument schema via [[Function Calling]] conventions.
-  - Native sandbox tools provide safe [[Code Execution]] without host system exposure, using lightweight isolation.
+
+- CrewAI ships hundreds of built-in tools: web search (SerperDevTool, EXATool), code execution (CodeInterpreterTool), file I/O, browser automation, database connectors, and vector-store RAG tools.
+- First-class [[Model Context Protocol]] (MCP) support: agents can connect to any MCP server as a tool source, consuming tools exposed by external MCP-compliant services without custom wrappers.
+- Custom tools are defined as Python callables annotated with `@tool`, automatically parsed for name, description, and argument schema via [[Function Calling]] conventions.
+- Native sandbox tools provide safe [[Code Execution]] without host system exposure, using lightweight isolation.
 
   **Memory Architecture**
-  - Short-term memory: in-context [[Agent Memory]] within a single crew run, managed via a RAG-backed embedder.
-  - Long-term memory: persisted to a local SQLite store or external vector database ([[Retrieval-Augmented Generation]]-style retrieval for relevant prior runs).
-  - Entity memory: structured extraction and recall of named entities (people, organisations, locations) encountered during runs.
-  - User memory (Crew+): cloud-managed personalisation memory per user across runs, enabling adaptive agent behaviour.
+
+- Short-term memory: in-context [[Agent Memory]] within a single crew run, managed via a RAG-backed embedder.
+- Long-term memory: persisted to a local SQLite store or external vector database ([[Retrieval-Augmented Generation]]-style retrieval for relevant prior runs).
+- Entity memory: structured extraction and recall of named entities (people, organisations, locations) encountered during runs.
+- User memory (Crew+): cloud-managed personalisation memory per user across runs, enabling adaptive agent behaviour.
 
   ## Use Cases and Major Families
 
   **Enterprise Automation**
-  - Content pipeline automation: research agent gathers sources, writer agent drafts, editor agent reviews and revises, publisher agent formats for target platform.
-  - Customer support triage: intake agent classifies queries, specialist agents handle technical or billing sub-problems, coordinator agent synthesises resolution.
-  - Intelligent grid management and energy-sector automation (reported production deployments among Fortune 500 infrastructure operators).
+
+- Content pipeline automation: research agent gathers sources, writer agent drafts, editor agent reviews and revises, publisher agent formats for target platform.
+- Customer support triage: intake agent classifies queries, specialist agents handle technical or billing sub-problems, coordinator agent synthesises resolution.
+- Intelligent grid management and energy-sector automation (reported production deployments among Fortune 500 infrastructure operators).
 
   **Software Engineering**
-  - Automated code review crews: static-analysis agent, security-audit agent, and documentation agent operating in parallel on a pull request.
-  - Bug reproduction and fix crews: reproducer agent, debugger agent, test-writer agent, and code-fix agent in sequential or hierarchical configuration.
-  - Continuous integration pipeline automation integrating with CI/CD tools as crew tasks.
+
+- Automated code review crews: static-analysis agent, security-audit agent, and documentation agent operating in parallel on a pull request.
+- Bug reproduction and fix crews: reproducer agent, debugger agent, test-writer agent, and code-fix agent in sequential or hierarchical configuration.
+- Continuous integration pipeline automation integrating with CI/CD tools as crew tasks.
 
   **Research and Knowledge Work**
-  - Multi-source research crews: search agent, source-validation agent, synthesis agent, citation-formatter agent.
-  - Competitive intelligence: market data collector agent, analyst agent, and report writer agent running nightly via scheduled Flows.
-  - Academic literature review automation: topic-decomposition agent delegating to parallel literature-search agents, then merging results via a synthesis agent.
+
+- Multi-source research crews: search agent, source-validation agent, synthesis agent, citation-formatter agent.
+- Competitive intelligence: market data collector agent, analyst agent, and report writer agent running nightly via scheduled Flows.
+- Academic literature review automation: topic-decomposition agent delegating to parallel literature-search agents, then merging results via a synthesis agent.
 
   **AI Creativity (Research)**
-  - Published research (Sukhadia et al., 2024, ResearchGate) on "Unlocking AI Creativity" using CrewAI to orchestrate multi-agent creative writing, where separate agents handle plot construction, character development, and prose stylistics, demonstrating emergent quality from role specialisation.
-  - Combined with LangGraph for hybrid architectures in LLM multi-agent application development (Luo et al., arXiv 2411.18241, 2024).
+
+- Published research (Sukhadia et al., 2024, ResearchGate) on "Unlocking AI Creativity" using CrewAI to orchestrate multi-agent creative writing, where separate agents handle plot construction, character development, and prose stylistics, demonstrating emergent quality from role specialisation.
+- Combined with LangGraph for hybrid architectures in LLM multi-agent application development (Luo et al., arXiv 2411.18241, 2024).
 
   **Healthcare and Finance**
-  - Clinical-note summarisation crews with specialist agents for diagnostic, medication, and patient-history sub-tasks, with [[Human-in-the-Loop]] review before output commitment.
-  - Financial due-diligence crews combining data-retrieval, legal-risk analysis, and financial-modelling agents with structured output schemas for audit trails.
+
+- Clinical-note summarisation crews with specialist agents for diagnostic, medication, and patient-history sub-tasks, with [[Human-in-the-Loop]] review before output commitment.
+- Financial due-diligence crews combining data-retrieval, legal-risk analysis, and financial-modelling agents with structured output schemas for audit trails.
 
   ## Formal Analysis
 
@@ -203,19 +214,21 @@ CrewAI is an open-source Python framework for orchestrating teams of autonomous 
 
   **Tool Ecosystem**
   Built-in tools categorised by function:
-  - **Search and research**: SerperDevTool (Google SERP), EXASearchTool (semantic search), DuckDuckGoSearchRun, WikipediaQueryRun, YoutubeVideoSearchTool
-  - **Code and computation**: CodeInterpreterTool (sandboxed Python execution), DirectoryReadTool, FileReadTool, FileWriterTool, ShellTool
-  - **Data and APIs**: CSVSearchTool, JSONSearchTool, PDFSearchTool, DOCXSearchTool, XMLSearchTool
-  - **Web**: ScrapeWebsiteTool, BrowserbaseLoadTool, FirecrawlScrapeWebsiteTool
-  - **Database**: PGSearchTool (PostgreSQL), MySQLSearchTool
-  - **AI-powered**: DallETool (image generation via DALL·E), VisionTool (image analysis), EXAFindSimilarTool
-  - **MCP clients**: Any MCP-compliant server can be connected as a tool source, exposing its tools via the standardised MCP protocol
+
+- **Search and research**: SerperDevTool (Google SERP), EXASearchTool (semantic search), DuckDuckGoSearchRun, WikipediaQueryRun, YoutubeVideoSearchTool
+- **Code and computation**: CodeInterpreterTool (sandboxed Python execution), DirectoryReadTool, FileReadTool, FileWriterTool, ShellTool
+- **Data and APIs**: CSVSearchTool, JSONSearchTool, PDFSearchTool, DOCXSearchTool, XMLSearchTool
+- **Web**: ScrapeWebsiteTool, BrowserbaseLoadTool, FirecrawlScrapeWebsiteTool
+- **Database**: PGSearchTool (PostgreSQL), MySQLSearchTool
+- **AI-powered**: DallETool (image generation via DALL·E), VisionTool (image analysis), EXAFindSimilarTool
+- **MCP clients**: Any MCP-compliant server can be connected as a tool source, exposing its tools via the standardised MCP protocol
 
   **Cloud Platform Integrations**
-  - **AWS Bedrock**: Native CrewAI integration in AWS Bedrock Agents; deploy crews as serverless agent endpoints with IAM access control, CloudWatch monitoring, and S3 artifact storage.
-  - **Microsoft Azure AI Studio**: CrewAI deployable as Azure AI Agent services with Azure AD authentication, Key Vault secret management, and Azure Monitor integration.
-  - **Google Cloud Vertex AI**: Vertex AI Agent Builder supports CrewAI as a framework option with Gemini model integration and Cloud Logging for agent execution traces.
-  - **Langfuse / LangSmith**: Observability platforms providing distributed tracing, token usage analytics, and latency monitoring for CrewAI executions via LiteLLM's callback interface.
+
+- **AWS Bedrock**: Native CrewAI integration in AWS Bedrock Agents; deploy crews as serverless agent endpoints with IAM access control, CloudWatch monitoring, and S3 artifact storage.
+- **Microsoft Azure AI Studio**: CrewAI deployable as Azure AI Agent services with Azure AD authentication, Key Vault secret management, and Azure Monitor integration.
+- **Google Cloud Vertex AI**: Vertex AI Agent Builder supports CrewAI as a framework option with Gemini model integration and Cloud Logging for agent execution traces.
+- **Langfuse / LangSmith**: Observability platforms providing distributed tracing, token usage analytics, and latency monitoring for CrewAI executions via LiteLLM's callback interface.
 
   **Vector Store Memory Backends**
   Long-term [[Agent Memory]] in CrewAI can be backed by multiple vector store options: Chroma (default, local), Qdrant, Pinecone, Weaviate, PGVector (PostgreSQL), and others via the Embedchain library. Embedding model selection (default: OpenAI text-embedding-3-small; alternatives: local models via Sentence Transformers) determines memory retrieval quality and cost. Enterprise deployments typically use managed vector stores (Pinecone, Qdrant Cloud) for persistence, scalability, and operational simplicity.
@@ -226,27 +239,31 @@ CrewAI is an open-source Python framework for orchestrating teams of autonomous 
   ## UK Context
 
   **Enterprise Adoption**
-  - UK government AI adoption research (March–May 2025, GOV.UK) found agentic AI adoption at 7% among UK businesses, with barriers cited by 32% of respondents—the highest barrier rate of any AI technology surveyed. Sectors with above-average adoption include agriculture, mining, manufacturing, energy (12%) and information and communication (10%).
-  - HSBC, Lloyds Banking Group, and several large UK insurers have reported internal pilots of multi-agent orchestration for financial due-diligence and compliance automation, with CrewAI cited as a framework of choice for prototyping phases.
-  - Deloitte UK and KPMG UK AI practices have published case studies on agentic process automation, several using CrewAI as the reference implementation.
+
+- UK government AI adoption research (March–May 2025, GOV.UK) found agentic AI adoption at 7% among UK businesses, with barriers cited by 32% of respondents—the highest barrier rate of any AI technology surveyed. Sectors with above-average adoption include agriculture, mining, manufacturing, energy (12%) and information and communication (10%).
+- HSBC, Lloyds Banking Group, and several large UK insurers have reported internal pilots of multi-agent orchestration for financial due-diligence and compliance automation, with CrewAI cited as a framework of choice for prototyping phases.
+- Deloitte UK and KPMG UK AI practices have published case studies on agentic process automation, several using CrewAI as the reference implementation.
 
   **Academic Presence**
-  - University of Edinburgh: School of Informatics research on agent planning and task decomposition is directly relevant to CrewAI's hierarchical process model; the Alan Turing Institute (based in London) is studying agentic AI governance and safety.
-  - University College London (UCL): Department of Computer Science work on multi-agent reinforcement learning and [[Agentic AI]] safety evaluation.
-  - University of Cambridge: Leverhulme Centre for the Future of Intelligence examining implications of autonomous LLM agents for public administration and regulated industries.
-  - University of Manchester: Department of Computer Science active in multi-agent systems research (with direct lineage from the FIPA agent standards bodies), providing theoretical grounding for the coordination patterns CrewAI implements.
-  - Imperial College London: computing research on LLM reasoning and [[Chain of Thought]] provides foundational context for agent-level planning.
+
+- University of Edinburgh: School of Informatics research on agent planning and task decomposition is directly relevant to CrewAI's hierarchical process model; the Alan Turing Institute (based in London) is studying agentic AI governance and safety.
+- University College London (UCL): Department of Computer Science work on multi-agent reinforcement learning and [[Agentic AI]] safety evaluation.
+- University of Cambridge: Leverhulme Centre for the Future of Intelligence examining implications of autonomous LLM agents for public administration and regulated industries.
+- University of Manchester: Department of Computer Science active in multi-agent systems research (with direct lineage from the FIPA agent standards bodies), providing theoretical grounding for the coordination patterns CrewAI implements.
+- Imperial College London: computing research on LLM reasoning and [[Chain of Thought]] provides foundational context for agent-level planning.
 
   **Northern England**
-  - University of Sheffield: Insigneo Institute work on AI agents for healthcare data pipelines is representative of CrewAI use cases in regulated sectors.
-  - Manchester's Corridor Manchester tech cluster hosts AI startups building CrewAI-powered automation products for SME clients in logistics, retail, and professional services.
-  - Leeds Digital Festival and the Leeds-based BJSS consultancy have featured multi-agent automation (including CrewAI) as a primary theme in their 2025-2026 AI adoption programme for Northern businesses.
-  - Newcastle and Sunderland's software-sector clusters (home to Sage Group, a major enterprise software company) are integrating agentic workflows into finance and HR automation products.
+
+- University of Sheffield: Insigneo Institute work on AI agents for healthcare data pipelines is representative of CrewAI use cases in regulated sectors.
+- Manchester's Corridor Manchester tech cluster hosts AI startups building CrewAI-powered automation products for SME clients in logistics, retail, and professional services.
+- Leeds Digital Festival and the Leeds-based BJSS consultancy have featured multi-agent automation (including CrewAI) as a primary theme in their 2025-2026 AI adoption programme for Northern businesses.
+- Newcastle and Sunderland's software-sector clusters (home to Sage Group, a major enterprise software company) are integrating agentic workflows into finance and HR automation products.
 
   **Regulatory Context**
-  - [[EU AI Act]] Article 22 provisions on autonomous decision-making systems apply to high-risk CrewAI deployments in sectors such as employment, credit, and critical infrastructure; UK operators must assess whether post-Brexit equivalents apply.
-  - The AI Safety Institute (AISI), based in London, has flagged [[Prompt Injection]] vulnerabilities in multi-agent systems (including tool-output injection affecting frameworks like CrewAI) as a priority evaluation area.
-  - UK ICO (Information Commissioner's Office) guidance on automated decision-making under UK GDPR is directly relevant to CrewAI deployments where agent outputs influence individual-level decisions.
+
+- [[EU AI Act]] Article 22 provisions on autonomous decision-making systems apply to high-risk CrewAI deployments in sectors such as employment, credit, and critical infrastructure; UK operators must assess whether post-Brexit equivalents apply.
+- The AI Safety Institute (AISI), based in London, has flagged [[Prompt Injection]] vulnerabilities in multi-agent systems (including tool-output injection affecting frameworks like CrewAI) as a priority evaluation area.
+- UK ICO (Information Commissioner's Office) guidance on automated decision-making under UK GDPR is directly relevant to CrewAI deployments where agent outputs influence individual-level decisions.
 
   ## Design Patterns and Best Practices
 
@@ -367,20 +384,20 @@ CrewAI is an open-source Python framework for orchestrating teams of autonomous 
 
   ## Key Terminology
 
-  - **Crew**: The top-level orchestration unit in CrewAI; a composition of agents, tasks, and a process type that collectively executes toward a shared goal. Instantiated via `Crew(agents=[...], tasks=[...], process=Process.sequential)`. The Crew's `kickoff(inputs={...})` method triggers execution, returning the final task output.
-  - **Agent (CrewAI)**: An LLM-backed actor with a defined role (title), goal (objective), backstory (natural-language context), and toolset (list of callable Tool instances). Agents are instantiated with `Agent(role='...', goal='...', backstory='...', tools=[...], llm=...)`. The backstory is injected into the system prompt to condition LLM behaviour toward role-consistent [[Chain of Thought]] reasoning.
-  - **Task**: A discrete unit of work assigned to an agent, specifying the expected output description, context dependencies (list of prior Tasks whose outputs are injected as context), and optional output schema (Pydantic model enabling structured JSON output). Tasks support `async_execution=True` for parallel dispatch.
-  - **Process**: The execution strategy for a Crew. `Process.sequential` executes tasks in declaration order; `Process.hierarchical` introduces a manager LLM that dynamically delegates, validates, and replans; `Process.consensual` (experimental) routes task outputs through a voting mechanism before proceeding.
-  - **Flow**: An event-driven execution graph introduced in CrewAI v0.60+ (late 2024). Python class with typed state (Pydantic model), decorated methods (`@start`, `@listen`, `@router`), and built-in persistence. Flows enable resumable, branchable, streaming pipelines with deterministic control flow, complementing the autonomous-delegation Crew abstraction.
-  - **Delegation**: The mechanism by which a hierarchical manager agent or any agent with `allow_delegation=True` passes a sub-task to another crew member. The delegating agent produces a delegation instruction specifying the target agent, the task description, and any context; the receiving agent executes and returns an output that the delegating agent incorporates into its own reasoning.
-  - **Checkpointing**: Flow-level persistence of the typed state object after each completed `@listen` step, written to a configurable storage backend (local SQLite by default). Enables fault-tolerant execution: if a step fails, the flow restarts from the last persisted state rather than from the beginning, preventing re-execution of expensive prior LLM calls.
-  - **MCP (Model Context Protocol)**: Open protocol championed by Anthropic enabling standardised exposure of tools, resources, and prompts by servers to any compatible client. CrewAI supports MCP as a first-class tool source: agents can connect to any MCP server and consume its tools without custom wrapper code, dramatically expanding the available tool ecosystem.
-  - **Backstory**: A natural-language description of an agent's professional history, expertise, and disposition, injected into the LLM system prompt to bias its reasoning toward domain-appropriate [[Chain of Thought]] patterns. Example: "You are a veteran investment analyst with 20 years of experience in emerging markets, known for your sceptical approach to growth projections and rigorous quantitative verification."
-  - **LiteLLM**: The multi-provider LLM abstraction layer used by CrewAI to support 100+ model backends (OpenAI, Anthropic, Google, Cohere, Mistral, Llama via Ollama, and many others) through a unified API. LiteLLM handles token counting, rate limiting, retry logic, and provider-specific formatting differences, allowing crews to mix models per agent.
-  - **Tool (CrewAI)**: A Python callable decorated with `@tool` or instantiated from a `BaseTool` subclass, exposing a name, description, and argument schema that agents use to decide when and how to invoke external capabilities. CrewAI ships 100+ built-in tools; MCP integration and custom tool development extend this ecosystem arbitrarily.
-  - **Human-in-the-Loop (HITL)**: The pattern of inserting mandatory human review checkpoints at defined points in a crew or flow execution. Implemented via `human_input=True` on a Task (pauses execution and requests operator confirmation), or via Flow checkpoints that surface state for inspection before proceeding. Critical for regulated deployments where agent decisions have binding downstream consequences.
-  - **Hierarchical Manager Agent**: In `Process.hierarchical` mode, an automatically or manually defined LLM-backed orchestrator that receives the crew's goal and available agents, generates a task-assignment plan, dispatches tasks to agents, validates outputs against expected results, and triggers replanning if outputs are judged insufficient. Implements the [[ReAct Pattern]] at the crew coordination level.
-  - **Context Window Management**: CrewAI manages [[Context Window]] limits by selectively injecting agent memory, task context, and tool outputs into each LLM call. Long crew chains require awareness of accumulated context size: outputs from many preceding tasks may exhaust the context window, requiring summarisation or retrieval-based selective inclusion rather than full concatenation.
+- **Crew**: The top-level orchestration unit in CrewAI; a composition of agents, tasks, and a process type that collectively executes toward a shared goal. Instantiated via `Crew(agents=[...], tasks=[...], process=Process.sequential)`. The Crew's `kickoff(inputs={...})` method triggers execution, returning the final task output.
+- **Agent (CrewAI)**: An LLM-backed actor with a defined role (title), goal (objective), backstory (natural-language context), and toolset (list of callable Tool instances). Agents are instantiated with `Agent(role='...', goal='...', backstory='...', tools=[...], llm=...)`. The backstory is injected into the system prompt to condition LLM behaviour toward role-consistent [[Chain of Thought]] reasoning.
+- **Task**: A discrete unit of work assigned to an agent, specifying the expected output description, context dependencies (list of prior Tasks whose outputs are injected as context), and optional output schema (Pydantic model enabling structured JSON output). Tasks support `async_execution=True` for parallel dispatch.
+- **Process**: The execution strategy for a Crew. `Process.sequential` executes tasks in declaration order; `Process.hierarchical` introduces a manager LLM that dynamically delegates, validates, and replans; `Process.consensual` (experimental) routes task outputs through a voting mechanism before proceeding.
+- **Flow**: An event-driven execution graph introduced in CrewAI v0.60+ (late 2024). Python class with typed state (Pydantic model), decorated methods (`@start`, `@listen`, `@router`), and built-in persistence. Flows enable resumable, branchable, streaming pipelines with deterministic control flow, complementing the autonomous-delegation Crew abstraction.
+- **Delegation**: The mechanism by which a hierarchical manager agent or any agent with `allow_delegation=True` passes a sub-task to another crew member. The delegating agent produces a delegation instruction specifying the target agent, the task description, and any context; the receiving agent executes and returns an output that the delegating agent incorporates into its own reasoning.
+- **Checkpointing**: Flow-level persistence of the typed state object after each completed `@listen` step, written to a configurable storage backend (local SQLite by default). Enables fault-tolerant execution: if a step fails, the flow restarts from the last persisted state rather than from the beginning, preventing re-execution of expensive prior LLM calls.
+- **MCP (Model Context Protocol)**: Open protocol championed by Anthropic enabling standardised exposure of tools, resources, and prompts by servers to any compatible client. CrewAI supports MCP as a first-class tool source: agents can connect to any MCP server and consume its tools without custom wrapper code, dramatically expanding the available tool ecosystem.
+- **Backstory**: A natural-language description of an agent's professional history, expertise, and disposition, injected into the LLM system prompt to bias its reasoning toward domain-appropriate [[Chain of Thought]] patterns. Example: "You are a veteran investment analyst with 20 years of experience in emerging markets, known for your sceptical approach to growth projections and rigorous quantitative verification."
+- **LiteLLM**: The multi-provider LLM abstraction layer used by CrewAI to support 100+ model backends (OpenAI, Anthropic, Google, Cohere, Mistral, Llama via Ollama, and many others) through a unified API. LiteLLM handles token counting, rate limiting, retry logic, and provider-specific formatting differences, allowing crews to mix models per agent.
+- **Tool (CrewAI)**: A Python callable decorated with `@tool` or instantiated from a `BaseTool` subclass, exposing a name, description, and argument schema that agents use to decide when and how to invoke external capabilities. CrewAI ships 100+ built-in tools; MCP integration and custom tool development extend this ecosystem arbitrarily.
+- **Human-in-the-Loop (HITL)**: The pattern of inserting mandatory human review checkpoints at defined points in a crew or flow execution. Implemented via `human_input=True` on a Task (pauses execution and requests operator confirmation), or via Flow checkpoints that surface state for inspection before proceeding. Critical for regulated deployments where agent decisions have binding downstream consequences.
+- **Hierarchical Manager Agent**: In `Process.hierarchical` mode, an automatically or manually defined LLM-backed orchestrator that receives the crew's goal and available agents, generates a task-assignment plan, dispatches tasks to agents, validates outputs against expected results, and triggers replanning if outputs are judged insufficient. Implements the [[ReAct Pattern]] at the crew coordination level.
+- **Context Window Management**: CrewAI manages [[Context Window]] limits by selectively injecting agent memory, task context, and tool outputs into each LLM call. Long crew chains require awareness of accumulated context size: outputs from many preceding tasks may exhaust the context window, requiring summarisation or retrieval-based selective inclusion rather than full concatenation.
 
   ## Relationship to the Broader Agent Ecosystem
 
@@ -396,5 +413,5 @@ CrewAI is an open-source Python framework for orchestrating teams of autonomous 
 
   **Position in the DevOps/MLOps stack**: CrewAI sits above the inference infrastructure layer (LLM APIs, GPU compute, vector stores) and below the application layer (domain-specific workflows, user interfaces, business logic). As the multi-agent orchestration layer, it parallels traditional application server frameworks (FastAPI, Django) in its architectural role: providing abstractions for common coordination patterns (agent instantiation, task assignment, memory management) so that application developers can focus on business logic rather than infrastructure plumbing. The emerging MLOps discipline for agentic systems—covering agent evaluation, monitoring, versioning, and rollback—is developing tooling analogous to the MLOps tooling for model training and serving.
 
-- ### Provenance
+### Provenance
 

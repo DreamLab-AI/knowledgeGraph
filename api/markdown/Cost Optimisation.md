@@ -1,18 +1,23 @@
-
 Cost optimisation is the discipline of minimising the financial cost of computing infrastructure while preserving required performance, reliability and capacity. It combines right-sizing of resources, elimination of waste, demand-aligned scaling and commercial levers such as committed-use and spot pricing. In cloud environments it is operationalised through continuous measurement, allocation of spend to teams, and feedback loops that align consumption with actual need.
 
-- ### Overview
-  - Cost optimisation treats infrastructure spend as a managed engineering and financial objective rather than a fixed overhead. It starts with visibility: tagging and allocating spend so that consumption can be attributed to teams and services. It then applies right-sizing to match resource shapes to real utilisation, elasticity through autoscaling so capacity tracks demand, and commercial levers such as committed-use discounts and interruptible spot capacity for tolerant workloads. Continuous monitoring and observability close the loop, surfacing waste such as idle instances, over-provisioned volumes and unused reservations. Effective practice balances the saving against performance, reliability and engineering effort, and embeds the trade-offs into the same DevOps and capacity-planning workflows that govern the platform.
-- ### Key aspects
-  - Right-sizing resources to match measured utilisation.
-  - Elastic scaling so capacity follows demand rather than peak.
-  - Commercial levers: committed-use discounts and interruptible spot capacity.
-  - Spend attribution through tagging and allocation to teams.
-  - Continuous monitoring and observability to surface and remove waste.
-- ### Applications
-  - Cloud spend governance and FinOps programmes.
-  - Autoscaling of stateless services to demand.
-  - Batch and analytics workloads on interruptible capacity.
-  - Capacity planning that balances cost against headroom.
-- ### Provenance
+### Overview
+
+- Cost optimisation treats infrastructure spend as a managed engineering and financial objective rather than a fixed overhead. It starts with visibility: tagging and allocating spend so that consumption can be attributed to teams and services. It then applies right-sizing to match resource shapes to real utilisation, elasticity through autoscaling so capacity tracks demand, and commercial levers such as committed-use discounts and interruptible spot capacity for tolerant workloads. Continuous monitoring and observability close the loop, surfacing waste such as idle instances, over-provisioned volumes and unused reservations. Effective practice balances the saving against performance, reliability and engineering effort, and embeds the trade-offs into the same DevOps and capacity-planning workflows that govern the platform.
+
+### Key aspects
+
+- Right-sizing resources to match measured utilisation.
+- Elastic scaling so capacity follows demand rather than peak.
+- Commercial levers: committed-use discounts and interruptible spot capacity.
+- Spend attribution through tagging and allocation to teams.
+- Continuous monitoring and observability to surface and remove waste.
+
+### Applications
+
+- Cloud spend governance and FinOps programmes.
+- Autoscaling of stateless services to demand.
+- Batch and analytics workloads on interruptible capacity.
+- Capacity planning that balances cost against headroom.
+
+### Provenance
 

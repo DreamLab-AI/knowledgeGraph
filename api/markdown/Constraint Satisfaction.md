@@ -1,175 +1,176 @@
-
 Constraint Satisfaction is a paradigm in artificial intelligence and combinatorial mathematics in which a problem is represented as a set of variables, each with a domain of possible values, and a set of constraints that restrict the allowable combinations of those values. The goal is to find an assignment of values to all variables such that every constraint is simultaneously satisfied, or to determine that no such assignment exists. Solution methods combine systematic backtracking search with constraint propagation techniques — notably arc consistency and path consistency — that prune infeasible values early, dramatically reducing the search space. Constraint satisfaction underpins scheduling, configuration, planning, and combinatorial optimisation across virtually every engineering domain.
 
-- ### Semantic Classification
+### Semantic Classification
 
-- ### Content
-  ## Compositional Relationships (Components)
-  ```
-  SubClassOf(ai:ConstraintSatisfaction
-    ObjectSomeValuesFrom(ai:hasPart ai:ArcConsistency))
-  SubClassOf(ai:ConstraintSatisfaction
-    ObjectSomeValuesFrom(ai:hasPart ai:BacktrackingSearch))
-  SubClassOf(ai:ConstraintSatisfaction
-    ObjectSomeValuesFrom(ai:hasPart ai:ConstraintPropagation))
-  SubClassOf(ai:ConstraintSatisfaction
-    ObjectSomeValuesFrom(ai:hasPart ai:VariableOrderingHeuristic))
-  SubClassOf(ai:ConstraintSatisfaction
-    ObjectSomeValuesFrom(ai:hasPart ai:LocalSearch))
-  SubClassOf(ai:ConstraintSatisfaction
-    ObjectSomeValuesFrom(ai:hasPart ai:BranchAndBound))
-  SubClassOf(ai:ConstraintSatisfaction
-    ObjectSomeValuesFrom(ai:hasPart ai:InferenceEngine))
-  ```
-  ## Dependency Relationships
-  ```
-  SubClassOf(ai:ConstraintSatisfaction
-    ObjectSomeValuesFrom(ai:requires ai:SearchAlgorithm))
-  SubClassOf(ai:ConstraintSatisfaction
-    ObjectSomeValuesFrom(ai:requires ai:DomainRepresentation))
-  SubClassOf(ai:ConstraintSatisfaction
-    ObjectSomeValuesFrom(ai:dependsOn ai:GraphTheory))
-  SubClassOf(ai:ConstraintSatisfaction
-    ObjectSomeValuesFrom(ai:dependsOn ai:CombinatorialOptimisation))
-  SubClassOf(ai:ConstraintSatisfaction
-    ObjectSomeValuesFrom(ai:dependsOn ai:PropositionalLogic))
-  ```
-  ## Capability Relationships
-  ```
-  SubClassOf(ai:ConstraintSatisfaction
-    ObjectSomeValuesFrom(ai:enables ai:AutomatedPlanning))
-  SubClassOf(ai:ConstraintSatisfaction
-    ObjectSomeValuesFrom(ai:enables ai:PlanningAndScheduling))
-  SubClassOf(ai:ConstraintSatisfaction
-    ObjectSomeValuesFrom(ai:enables ai:ConfigurationManagement))
-  SubClassOf(ai:ConstraintSatisfaction
-    ObjectSomeValuesFrom(ai:enables ai:FormalVerification))
-  SubClassOf(ai:ConstraintSatisfaction
-    ObjectSomeValuesFrom(ai:enables ai:SupplyChainOptimisation))
-  SubClassOf(ai:ConstraintSatisfaction
-    ObjectSomeValuesFrom(ai:enables ai:MotionPlanning))
-  ```
-  ## Implementation Relationships
-  ```
-  SubClassOf(ai:ConstraintSatisfaction
-    ObjectSomeValuesFrom(ai:implements ai:SymbolicAI))
-  SubClassOf(ai:ConstraintSatisfaction
-    ObjectSomeValuesFrom(ai:implements ai:KnowledgeRepresentation))
-  SubClassOf(ai:ConstraintSatisfaction
-    ObjectSomeValuesFrom(ai:uses ai:LogicProgramming))
-  SubClassOf(ai:ConstraintSatisfaction
-    ObjectSomeValuesFrom(ai:uses ai:Heuristic))
-  ```
-  ## Reduction Relationships
-  ```
-  SubClassOf(ai:ConstraintSatisfaction
-    ObjectSomeValuesFrom(ai:reducesTo ai:Satisfiability))
-  SubClassOf(ai:ConstraintSatisfaction
-    ObjectSomeValuesFrom(ai:reducesTo ai:IntegerProgramming))
-  SubClassOf(ai:ConstraintSatisfaction
-    ObjectSomeValuesFrom(ai:reducesTo ai:BinaryCSP))
-  SubClassOf(ai:ConstraintSatisfaction
-    ObjectSomeValuesFrom(ai:contrastsWith ai:LinearProgramming))
-  SubClassOf(ai:ConstraintSatisfaction
-    ObjectSomeValuesFrom(ai:contrastsWith ai:ProbabilisticInference))
-  SubClassOf(ai:ConstraintSatisfaction
-    ObjectSomeValuesFrom(ai:contrastsWith ai:RuleBasedSystem))
-  SubClassOf(ai:ConstraintSatisfaction
-    ObjectSomeValuesFrom(ai:supports ai:NeuroSymbolicAI))
-  SubClassOf(ai:ConstraintSatisfaction
-    ObjectSomeValuesFrom(ai:supports ai:DigitalTwin))
-  SubClassOf(ai:ConstraintSatisfaction
-    ObjectSomeValuesFrom(ai:supports ai:CyberPhysicalSystems))
-  SubClassOf(ai:ConstraintSatisfaction
-    ObjectSomeValuesFrom(ai:enables ai:RoboticTaskPlanning))
-  SubClassOf(ai:ConstraintSatisfaction
-    ObjectSomeValuesFrom(ai:enables ai:NetworkConfiguration))
-  SubClassOf(ai:ConstraintSatisfaction
-    ObjectSomeValuesFrom(ai:enables ai:ConstraintBasedDesign))
-  SubClassOf(ai:ConstraintSatisfaction
-    ObjectSomeValuesFrom(ai:uses ai:LocalSearch))
-  SubClassOf(ai:ConstraintSatisfaction
-    ObjectSomeValuesFrom(ai:uses ai:EvolutionaryAlgorithm))
-  SubClassOf(ai:ConstraintSatisfaction
-    ObjectSomeValuesFrom(ai:uses ai:ReinforcementLearning))
-  SubClassOf(ai:ConstraintSatisfaction
-    ObjectSomeValuesFrom(ai:relatedTo ai:QuantumComputing))
-  SubClassOf(ai:ConstraintSatisfaction
-    ObjectSomeValuesFrom(ai:relatedTo ai:MachineLearning))
-  SubClassOf(ai:ConstraintSatisfaction
-    ObjectSomeValuesFrom(ai:relatedTo ai:DynamicProgramming))
-  SubClassOf(ai:ConstraintSatisfaction
-    ObjectSomeValuesFrom(ai:relatedTo ai:MultiObjectiveOptimisation))
-  SubClassOf(ai:ConstraintSatisfaction
-    ObjectSomeValuesFrom(ai:standardizedBy ai:MiniZinc))
-  SubClassOf(ai:ConstraintSatisfaction
-    ObjectSomeValuesFrom(ai:standardizedBy ai:XCSP3))
-  ```
+### Content
 
-  ## About
-  Constraint Satisfaction Problems (CSPs) constitute one of the most general and widely applicable problem representations in computer science and artificial intelligence. A CSP instance is formally a triple (X, D, C): X = {x₁, …, xₙ} is a set of variables; D = {D₁, …, Dₙ} associates each variable xᵢ with a finite or continuous domain Dᵢ of possible values; and C = {c₁, …, cₘ} is a set of constraints, each specifying a relation over a subset of variables that their joint assignment must satisfy. The task is to find a complete assignment — a function v: X → ∪Dᵢ with v(xᵢ) ∈ Dᵢ — such that every constraint cᵢ(v(scope(cᵢ))) holds. When no complete consistent assignment exists, a CSP is unsatisfiable. Constraint optimisation problems (COPs) augment this with an objective function to be minimised or maximised over the set of feasible assignments, connecting directly to [[Combinatorial Optimisation]] and [[Operations Research]].
+## Compositional Relationships (Components)
+```
+SubClassOf(ai:ConstraintSatisfaction
+  ObjectSomeValuesFrom(ai:hasPart ai:ArcConsistency))
+SubClassOf(ai:ConstraintSatisfaction
+  ObjectSomeValuesFrom(ai:hasPart ai:BacktrackingSearch))
+SubClassOf(ai:ConstraintSatisfaction
+  ObjectSomeValuesFrom(ai:hasPart ai:ConstraintPropagation))
+SubClassOf(ai:ConstraintSatisfaction
+  ObjectSomeValuesFrom(ai:hasPart ai:VariableOrderingHeuristic))
+SubClassOf(ai:ConstraintSatisfaction
+  ObjectSomeValuesFrom(ai:hasPart ai:LocalSearch))
+SubClassOf(ai:ConstraintSatisfaction
+  ObjectSomeValuesFrom(ai:hasPart ai:BranchAndBound))
+SubClassOf(ai:ConstraintSatisfaction
+  ObjectSomeValuesFrom(ai:hasPart ai:InferenceEngine))
+```
+## Dependency Relationships
+```
+SubClassOf(ai:ConstraintSatisfaction
+  ObjectSomeValuesFrom(ai:requires ai:SearchAlgorithm))
+SubClassOf(ai:ConstraintSatisfaction
+  ObjectSomeValuesFrom(ai:requires ai:DomainRepresentation))
+SubClassOf(ai:ConstraintSatisfaction
+  ObjectSomeValuesFrom(ai:dependsOn ai:GraphTheory))
+SubClassOf(ai:ConstraintSatisfaction
+  ObjectSomeValuesFrom(ai:dependsOn ai:CombinatorialOptimisation))
+SubClassOf(ai:ConstraintSatisfaction
+  ObjectSomeValuesFrom(ai:dependsOn ai:PropositionalLogic))
+```
+## Capability Relationships
+```
+SubClassOf(ai:ConstraintSatisfaction
+  ObjectSomeValuesFrom(ai:enables ai:AutomatedPlanning))
+SubClassOf(ai:ConstraintSatisfaction
+  ObjectSomeValuesFrom(ai:enables ai:PlanningAndScheduling))
+SubClassOf(ai:ConstraintSatisfaction
+  ObjectSomeValuesFrom(ai:enables ai:ConfigurationManagement))
+SubClassOf(ai:ConstraintSatisfaction
+  ObjectSomeValuesFrom(ai:enables ai:FormalVerification))
+SubClassOf(ai:ConstraintSatisfaction
+  ObjectSomeValuesFrom(ai:enables ai:SupplyChainOptimisation))
+SubClassOf(ai:ConstraintSatisfaction
+  ObjectSomeValuesFrom(ai:enables ai:MotionPlanning))
+```
+## Implementation Relationships
+```
+SubClassOf(ai:ConstraintSatisfaction
+  ObjectSomeValuesFrom(ai:implements ai:SymbolicAI))
+SubClassOf(ai:ConstraintSatisfaction
+  ObjectSomeValuesFrom(ai:implements ai:KnowledgeRepresentation))
+SubClassOf(ai:ConstraintSatisfaction
+  ObjectSomeValuesFrom(ai:uses ai:LogicProgramming))
+SubClassOf(ai:ConstraintSatisfaction
+  ObjectSomeValuesFrom(ai:uses ai:Heuristic))
+```
+## Reduction Relationships
+```
+SubClassOf(ai:ConstraintSatisfaction
+  ObjectSomeValuesFrom(ai:reducesTo ai:Satisfiability))
+SubClassOf(ai:ConstraintSatisfaction
+  ObjectSomeValuesFrom(ai:reducesTo ai:IntegerProgramming))
+SubClassOf(ai:ConstraintSatisfaction
+  ObjectSomeValuesFrom(ai:reducesTo ai:BinaryCSP))
+SubClassOf(ai:ConstraintSatisfaction
+  ObjectSomeValuesFrom(ai:contrastsWith ai:LinearProgramming))
+SubClassOf(ai:ConstraintSatisfaction
+  ObjectSomeValuesFrom(ai:contrastsWith ai:ProbabilisticInference))
+SubClassOf(ai:ConstraintSatisfaction
+  ObjectSomeValuesFrom(ai:contrastsWith ai:RuleBasedSystem))
+SubClassOf(ai:ConstraintSatisfaction
+  ObjectSomeValuesFrom(ai:supports ai:NeuroSymbolicAI))
+SubClassOf(ai:ConstraintSatisfaction
+  ObjectSomeValuesFrom(ai:supports ai:DigitalTwin))
+SubClassOf(ai:ConstraintSatisfaction
+  ObjectSomeValuesFrom(ai:supports ai:CyberPhysicalSystems))
+SubClassOf(ai:ConstraintSatisfaction
+  ObjectSomeValuesFrom(ai:enables ai:RoboticTaskPlanning))
+SubClassOf(ai:ConstraintSatisfaction
+  ObjectSomeValuesFrom(ai:enables ai:NetworkConfiguration))
+SubClassOf(ai:ConstraintSatisfaction
+  ObjectSomeValuesFrom(ai:enables ai:ConstraintBasedDesign))
+SubClassOf(ai:ConstraintSatisfaction
+  ObjectSomeValuesFrom(ai:uses ai:LocalSearch))
+SubClassOf(ai:ConstraintSatisfaction
+  ObjectSomeValuesFrom(ai:uses ai:EvolutionaryAlgorithm))
+SubClassOf(ai:ConstraintSatisfaction
+  ObjectSomeValuesFrom(ai:uses ai:ReinforcementLearning))
+SubClassOf(ai:ConstraintSatisfaction
+  ObjectSomeValuesFrom(ai:relatedTo ai:QuantumComputing))
+SubClassOf(ai:ConstraintSatisfaction
+  ObjectSomeValuesFrom(ai:relatedTo ai:MachineLearning))
+SubClassOf(ai:ConstraintSatisfaction
+  ObjectSomeValuesFrom(ai:relatedTo ai:DynamicProgramming))
+SubClassOf(ai:ConstraintSatisfaction
+  ObjectSomeValuesFrom(ai:relatedTo ai:MultiObjectiveOptimisation))
+SubClassOf(ai:ConstraintSatisfaction
+  ObjectSomeValuesFrom(ai:standardizedBy ai:MiniZinc))
+SubClassOf(ai:ConstraintSatisfaction
+  ObjectSomeValuesFrom(ai:standardizedBy ai:XCSP3))
+```
 
-  The roots of constraint satisfaction lie in scene labelling and picture interpretation work from the early 1970s. Waltz (1975) demonstrated that domain filtering — what is now called arc consistency — could eliminate most search in polyhedral scene interpretation, a result that inspired Alan Mackworth (1977) to formalise arc consistency, define the AC-3 algorithm, and establish the general notion of network consistency. Ugo Montanari (1974) had earlier described network constraint formulations. The seminal paper by Mackworth on AC-3 remains one of the most cited works in AI. Eugene Freuder (1978, 1982) extended these ideas to k-consistency and identified structural tractability: CSPs whose constraint hypergraph has bounded [[Treewidth]] can be solved in polynomial time via [[Dynamic Programming]] along a tree decomposition. Rina Dechter (2003) synthesised decades of results into the definitive monograph "Constraint Processing." The Russell & Norvig textbook devotes a chapter to CSP as a core AI technique, cementing its place in standard AI curricula. The constraint satisfaction paradigm is the formal substrate on which [[Constraint Based Design]] engineering methodology rests: engineering design problems — over dimensional parameters, material selections, process parameters, and topology variables — are encoded as CSPs or COPs and solved by the same algorithmic machinery that powers scheduling, planning, and verification.
+## About
+Constraint Satisfaction Problems (CSPs) constitute one of the most general and widely applicable problem representations in computer science and artificial intelligence. A CSP instance is formally a triple (X, D, C): X = {x₁, …, xₙ} is a set of variables; D = {D₁, …, Dₙ} associates each variable xᵢ with a finite or continuous domain Dᵢ of possible values; and C = {c₁, …, cₘ} is a set of constraints, each specifying a relation over a subset of variables that their joint assignment must satisfy. The task is to find a complete assignment — a function v: X → ∪Dᵢ with v(xᵢ) ∈ Dᵢ — such that every constraint cᵢ(v(scope(cᵢ))) holds. When no complete consistent assignment exists, a CSP is unsatisfiable. Constraint optimisation problems (COPs) augment this with an objective function to be minimised or maximised over the set of feasible assignments, connecting directly to [[Combinatorial Optimisation]] and [[Operations Research]].
 
-  The formal relationship between CSPs and other reasoning paradigms is deep. Any finite-domain CSP can be compiled into a [[Satisfiability]] (SAT) formula via a straightforward encoding, enabling SAT solvers (DPLL, CDCL) to serve as CSP backends. Dually, SAT is a special case of CSP (Boolean domains, clause constraints). [[Integer Programming]] is the continuous extension: replacing finite enumeration with polyhedral relaxations admits LP-based lower bounds inside [[Branch and Bound]]. [[Logic Programming]] — particularly Constraint Logic Programming (CLP) as realised in ECLiPSe and SICStus Prolog — embeds constraint solving into a logical inference framework, exposing the relationship between constraint propagation and logical deduction. [[Probabilistic Inference]] methods such as belief propagation operate on factor graphs that are directly analogous to constraint hypergraphs, with messages approximating marginal distributions rather than enforcing hard feasibility. The hypergraph interpretation, where constraint relations are hyperedges connecting multiple variable nodes, directly inspired the constraint hypergraph framework for [[Digital Twin]] modelling (arXiv:2507.05494, 2025), which positions CSP consistency maintenance as the underlying formalism for live [[Cyber Physical Systems]] validation.
+The roots of constraint satisfaction lie in scene labelling and picture interpretation work from the early 1970s. Waltz (1975) demonstrated that domain filtering — what is now called arc consistency — could eliminate most search in polyhedral scene interpretation, a result that inspired Alan Mackworth (1977) to formalise arc consistency, define the AC-3 algorithm, and establish the general notion of network consistency. Ugo Montanari (1974) had earlier described network constraint formulations. The seminal paper by Mackworth on AC-3 remains one of the most cited works in AI. Eugene Freuder (1978, 1982) extended these ideas to k-consistency and identified structural tractability: CSPs whose constraint hypergraph has bounded [[Treewidth]] can be solved in polynomial time via [[Dynamic Programming]] along a tree decomposition. Rina Dechter (2003) synthesised decades of results into the definitive monograph "Constraint Processing." The Russell & Norvig textbook devotes a chapter to CSP as a core AI technique, cementing its place in standard AI curricula. The constraint satisfaction paradigm is the formal substrate on which [[Constraint Based Design]] engineering methodology rests: engineering design problems — over dimensional parameters, material selections, process parameters, and topology variables — are encoded as CSPs or COPs and solved by the same algorithmic machinery that powers scheduling, planning, and verification.
 
-  Tractability analysis is a central theoretical concern. A binary CSP has a constraint graph where each node is a variable and each edge a binary constraint. The treewidth of this graph (the minimum over all tree decompositions of the maximum bag size minus one) is the key parameter: instances with treewidth w can be solved in O(n · d^(w+1)) time by the tree decomposition algorithm, polynomial for fixed w. Freuder (1990) showed that many practical instances have small or decomposable treewidth. Beyond treewidth, constraint language tractability — determined by the algebraic structure of constraint relations (polymorphisms, Galois theory of clones, the Dichotomy Theorem proved by Zhuk (2017) and Bulatov (2017) for finite domain CSPs) — guarantees that every finite-domain CSP is either in P or NP-complete, depending solely on the constraint language. This classification result is a landmark in computational complexity theory and directly informs the design of efficient CP filtering algorithms. Its implications connect to [[Knowledge Representation]] and [[Formal Verification]]: the polynomial/NP-complete dichotomy along constraint language boundaries means that the expressive power of a constraint language is directly related to its computational difficulty, guiding the design of tractable ontology languages (OWL EL, OWL QL) in the same algebraic-algebraic framework.
+The formal relationship between CSPs and other reasoning paradigms is deep. Any finite-domain CSP can be compiled into a [[Satisfiability]] (SAT) formula via a straightforward encoding, enabling SAT solvers (DPLL, CDCL) to serve as CSP backends. Dually, SAT is a special case of CSP (Boolean domains, clause constraints). [[Integer Programming]] is the continuous extension: replacing finite enumeration with polyhedral relaxations admits LP-based lower bounds inside [[Branch and Bound]]. [[Logic Programming]] — particularly Constraint Logic Programming (CLP) as realised in ECLiPSe and SICStus Prolog — embeds constraint solving into a logical inference framework, exposing the relationship between constraint propagation and logical deduction. [[Probabilistic Inference]] methods such as belief propagation operate on factor graphs that are directly analogous to constraint hypergraphs, with messages approximating marginal distributions rather than enforcing hard feasibility. The hypergraph interpretation, where constraint relations are hyperedges connecting multiple variable nodes, directly inspired the constraint hypergraph framework for [[Digital Twin]] modelling (arXiv:2507.05494, 2025), which positions CSP consistency maintenance as the underlying formalism for live [[Cyber Physical Systems]] validation.
 
-  The soft constraint extension — Valued CSPs (VCSPs), Weighted CSPs (WCSPs), and partially ordered CSPs — moves from binary feasibility to optimisation over relaxed or cost-augmented constraints. In WCSPs each constraint has an associated cost for each violation; the task is to find the assignment minimising total violation cost. Soft constraints are essential in real-world applications where hard constraint satisfaction is impossible (over-constrained systems) and the best achievable solution must be found. Optimistic and pessimistic soft arc consistency (EDAC, full arc consistency for WCSPs) were developed by de Givry and colleagues at INRAE Toulouse. [[Dynamic Programming]]-based WCSP solvers (MDDAL, DFBB) exploit variable interaction structure for tractable instances. The VCSP framework mathematically unifies CSPs, weighted partial MAX-SAT, and MAP inference in Markov random fields, connecting constraint satisfaction directly to the probabilistic graphical model and [[Machine Learning]] communities through a shared cost-function network representation.
+Tractability analysis is a central theoretical concern. A binary CSP has a constraint graph where each node is a variable and each edge a binary constraint. The treewidth of this graph (the minimum over all tree decompositions of the maximum bag size minus one) is the key parameter: instances with treewidth w can be solved in O(n · d^(w+1)) time by the tree decomposition algorithm, polynomial for fixed w. Freuder (1990) showed that many practical instances have small or decomposable treewidth. Beyond treewidth, constraint language tractability — determined by the algebraic structure of constraint relations (polymorphisms, Galois theory of clones, the Dichotomy Theorem proved by Zhuk (2017) and Bulatov (2017) for finite domain CSPs) — guarantees that every finite-domain CSP is either in P or NP-complete, depending solely on the constraint language. This classification result is a landmark in computational complexity theory and directly informs the design of efficient CP filtering algorithms. Its implications connect to [[Knowledge Representation]] and [[Formal Verification]]: the polynomial/NP-complete dichotomy along constraint language boundaries means that the expressive power of a constraint language is directly related to its computational difficulty, guiding the design of tractable ontology languages (OWL EL, OWL QL) in the same algebraic-algebraic framework.
 
-  ## Components and Architecture
-  A practical CSP solving architecture layers several cooperating components:
+The soft constraint extension — Valued CSPs (VCSPs), Weighted CSPs (WCSPs), and partially ordered CSPs — moves from binary feasibility to optimisation over relaxed or cost-augmented constraints. In WCSPs each constraint has an associated cost for each violation; the task is to find the assignment minimising total violation cost. Soft constraints are essential in real-world applications where hard constraint satisfaction is impossible (over-constrained systems) and the best achievable solution must be found. Optimistic and pessimistic soft arc consistency (EDAC, full arc consistency for WCSPs) were developed by de Givry and colleagues at INRAE Toulouse. [[Dynamic Programming]]-based WCSP solvers (MDDAL, DFBB) exploit variable interaction structure for tractable instances. The VCSP framework mathematically unifies CSPs, weighted partial MAX-SAT, and MAP inference in Markov random fields, connecting constraint satisfaction directly to the probabilistic graphical model and [[Machine Learning]] communities through a shared cost-function network representation.
 
-  - **Problem Representation Layer**
-    - Variables, domains, and constraints declared in MiniZinc, XCSP3, or solver-native Python/C++ APIs
-    - Global constraints (AllDifferent, Cumulative, GCC, Element, Regular, Circuit) specified declaratively
-    - Each global constraint carries a dedicated polynomial-time GAC filtering algorithm
-    - Symmetry-breaking constraints (symmetry-breaking inequalities, lex-leader constraints) reduce equivalent search regions
-    - MiniZinc compiles to FlatZinc for CP solvers, MPS/LP for MIP solvers, or native Python OR-Tools models
-  - **Propagation Engine**
-    - Worklist-based arc consistency loop (AC-3 / AC-4 / AC-6 / AC-2001 algorithms)
-    - AC-3: O(ed³) time; AC-4: O(ed²); AC-2001: optimal O(ed²) with space-efficient support tracking
-    - GAC for global constraints: AllDifferent via max bipartite matching, Cumulative via edge-finding (O(n log n)), GCC via network flow
-    - Propagation triggered lazily on domain reduction events; solver maintains a revision queue
-    - Failed literal detection: assigns and immediately propagates each domain value; detects arc-inconsistent values without full search
-  - **Search Module**
-    - Complete depth-first [[Backtracking Search]] with [[Variable Ordering Heuristic]]:
-      - MRV (Minimum Remaining Values / fail-first): selects variable with smallest current domain
-      - Degree heuristic: prefers variable with most remaining constraints
-      - Dom/deg (domain size / degree): balances domain reduction with constraint involvement
-    - Value ordering heuristics:
-      - Least-constraining value: selects value ruling out fewest domain values in neighbours
-      - Solution-counting-based ordering: prefers values present in most estimated solutions
-    - Non-chronological backtracking via conflict-directed backjumping (CBJ) or CDCL no-good learning
-    - Look-ahead techniques: MAC (Maintaining Arc Consistency) enforces AC after every assignment
-  - **Optimisation Layer**
-    - [[Branch and Bound]] with successive upper bound tightening via solution-bounding constraints
-    - LP relaxation at each search node provides dual-feasible lower bounds in hybrid CP/MIP solvers
-    - Large Neighbourhood Search (LNS): fix a random subset of variables, re-solve the sub-CSP; iterate
-    - Large Neighbourhood Search is the dominant metaheuristic in OR-Tools for vehicle routing COPs
-  - **Local Search Module**
-    - [[Local Search]] methods for large-scale approximate solving:
-      - Min-conflicts: assign each variable the value minimising conflict count; solved million-variable n-Queens in seconds (Minton et al. 1992)
-      - GSAT: Greedy SAT local search; random restart with steepest descent in conflict count space
-      - WalkSAT: probabilistic local search; randomly selects between best-improving flip and random flip in unsatisfied clauses
-      - Tabu search: maintains a tabu list of recently visited assignments to avoid cycling
-    - Effective for highly over-constrained instances and large-scale optimisation where completeness is not required
-  - **Modelling Language Interface**
-    - MiniZinc: high-level constraint modelling language with parameterised model types, solving annotations, and FlatZinc compilation target
-    - XCSP3: XML-based constraint problem format; supports all standard global constraint families for benchmarking interoperability
-    - OR-Tools Python API: direct programmatic model construction; widely used in data science and ML workflows
-    - SICStus Prolog / ECLiPSe: constraint logic programming interfaces exposing CP solving through Prolog's goal resolution mechanism
+## Components and Architecture
+A practical CSP solving architecture layers several cooperating components:
 
-  ## Use Cases and Major Families
-  - **Scheduling and Timetabling**: Nurse rostering (workforce [[Planning and Scheduling]] against shift patterns and regulatory constraints), university timetabling (avoiding room conflicts, satisfying preference constraints), railway slot allocation (conflict-free train path assignment), and job-shop scheduling (machine assignment minimising makespan) are archetypal CSP applications. The global Cumulative constraint models [[Resource Allocation]] capacity across time, enabling efficient propagation for scheduling domains. In the UK, Network Rail's engineering possession scheduling encodes tens of thousands of constraints (possession windows, train service impacts, equipment availability, safety clearances) in an OR-Tools CP-SAT model solved nightly to generate the following day's maintenance plan. NHS nurse rostering systems using constraint programming serve NHS trusts across England, balancing staff preferences against ward cover requirements and Working Time Directive constraints.
-  - **Configuration Management**: Product configurators for automobiles, computer systems, and telecommunications equipment ensure that selected components satisfy hundreds of compatibility constraints. SAP and Oracle embed CP engines for ERP [[Configuration Management]] product configuration; systems handling tens of thousands of constraints and millions of configurations at interactive response times have been deployed. Automotive configurators (BMW, Mercedes-Benz, Volkswagen Group) use CP technology with AllDifferent and global cardinality constraints to ensure consistent bill-of-materials under regulatory, logistic, and optional-feature compatibility rules. Dell's computer product configurator, historically one of the largest CP deployments, handled millions of configuration variables over a product space of billions of configurations. Product line engineering for aerospace and automotive systems models compatibility constraints between components using feature models and BDD (binary decision diagram) or SAT-based configurators — a direct application of CSP to [[Systems Engineering]] at scale.
-  - **Automated Planning and Temporal Reasoning**: Temporal CSPs encode durations, deadlines, and precedence relations; Simple Temporal Networks (STNs) generalise to STPs (Simple Temporal Problems), solvable in polynomial time using Bellman-Ford shortest path. CP-based planners (CPT, LPG-TD) integrate CSP technology with classical [[Automated Planning]] representations such as PDDL. NASA deployed constraint-based scheduling in the HSTS (Heuristic Scheduling Testbed System) for Hubble Space Telescope observation scheduling, where temporal and [[Resource Allocation]] constraints over thousands of observations must be satisfied within satellite visibility windows and battery capacity limits. Temporal [[Decision Making]] under uncertainty combines STN solving with probabilistic inference to handle durations specified as probability distributions rather than fixed values.
-  - **Robotic Motion Planning**: Kinematic constraints, joint limits, collision-avoidance requirements, and task ordering create rich CSP structures in [[Robotic Task Planning]] and [[Motion Planning]]. Continuous constraint systems (systems of nonlinear equations over real domains) arise in configuration space analysis for serial manipulators; interval constraint propagation over real intervals provides complete solving with guaranteed correctness. Inverse kinematics (IK) is a classical CSP: given a desired end-effector pose, find a joint configuration satisfying the kinematic chain equations while respecting joint limit constraints. Modern IK solvers use Newton-Raphson iterative refinement (local search on continuous CSP) augmented by random restarts or gradient-based optimisation. In [[Cyber Physical Systems]] manufacturing, constraint satisfaction validates that production cell configurations — robot poses, fixture placements, tool paths — satisfy collision-free and torque-limit constraints before physical execution.
-  - **Formal Verification and Hardware Design**: Bounded model checking translates finite-horizon reachability queries for hardware and software systems into [[Satisfiability]] instances, exploiting CSP/SAT solving at massive scale. Chip design verification (equivalence checking, property checking) routinely involves SAT instances with hundreds of millions of variables. The [[Formal Verification]] of safety-critical software — airborne software under DO-178C, medical device firmware under IEC 62304, automotive ECU software under ISO 26262 — increasingly uses SMT-based techniques (Z3, CVC5) for path feasibility analysis and absence-of-overflow proofs. [[Model Based Systems Engineering]] workflows use CSP-based constraint blocks (SysML v2, 2024) to formally verify that system architectures satisfy requirements constraints before implementation.
-  - **Network Design and Frequency Assignment**: Assigning radio frequencies, IP address ranges, or bandwidth slots subject to interference and capacity constraints is a canonical CSP modelling exercise, directly equivalent to a [[Graph Colouring]] problem on an interference graph. Ofcom (UK) uses constraint-based frequency planning for [[Network Configuration]] spectrum allocation across broadcast and mobile services. 5G network slicing allocation — assigning virtual network resources subject to latency, bandwidth, and isolation constraints — is a large-scale CSP that CP and MIP solvers increasingly address in real time.
-  - **Bioinformatics**: Protein structure prediction under experimental distance constraints (NMR-derived NOE constraints), multiple sequence alignment with gap and match constraints, and RNA secondary structure folding under base-pair constraints are CSPs; the ROSETTA suite uses CP-inspired sampling to explore conformational space. Glycan structure elucidation from mass spectrometry data encodes the combinatorial graph structure of branched carbohydrates as a CSP over a database of known monosaccharide compositions. Constrained molecular generation in [[Constraint Based Design]] drug discovery uses CSP to enforce ADMET property constraints, synthetic accessibility, and pharmacophore geometry constraints.
-  - **Energy and Smart Grids**: Unit commitment problems (which generators to operate at each time slot) and optimal power flow problems are large-scale COPs combining continuous power balance constraints with binary on/off decisions. CP and MIP solvers are used by transmission system operators (National Grid in the UK, RTE in France) for day-ahead generation [[Planning and Scheduling]]. Demand response — scheduling interruptible industrial loads against grid frequency constraints — is a real-time CSP deployed in industrial energy management systems. [[Supply Chain Optimisation]] for renewable energy equipment procurement (wind turbines, battery storage) uses CSP to satisfy delivery window, installation sequence, and grid connection constraints.
-  - **Puzzle Solving and Recreational Mathematics**: n-Queens, Sudoku, [[Graph Colouring]], Latin squares, and crossword generation are canonical benchmark CSPs with well-understood constraint graph structure, widely used to compare solver performance. Sudoku, in particular, is a 9×9 Latin square with 27 AllDifferent constraints; a CP solver enforcing GAC on AllDifferent solves any valid Sudoku puzzle without search, purely by propagation, demonstrating the power of constraint inference.
+- **Problem Representation Layer**
+  - Variables, domains, and constraints declared in MiniZinc, XCSP3, or solver-native Python/C++ APIs
+  - Global constraints (AllDifferent, Cumulative, GCC, Element, Regular, Circuit) specified declaratively
+  - Each global constraint carries a dedicated polynomial-time GAC filtering algorithm
+  - Symmetry-breaking constraints (symmetry-breaking inequalities, lex-leader constraints) reduce equivalent search regions
+  - MiniZinc compiles to FlatZinc for CP solvers, MPS/LP for MIP solvers, or native Python OR-Tools models
+- **Propagation Engine**
+  - Worklist-based arc consistency loop (AC-3 / AC-4 / AC-6 / AC-2001 algorithms)
+  - AC-3: O(ed³) time; AC-4: O(ed²); AC-2001: optimal O(ed²) with space-efficient support tracking
+  - GAC for global constraints: AllDifferent via max bipartite matching, Cumulative via edge-finding (O(n log n)), GCC via network flow
+  - Propagation triggered lazily on domain reduction events; solver maintains a revision queue
+  - Failed literal detection: assigns and immediately propagates each domain value; detects arc-inconsistent values without full search
+- **Search Module**
+  - Complete depth-first [[Backtracking Search]] with [[Variable Ordering Heuristic]]:
+    - MRV (Minimum Remaining Values / fail-first): selects variable with smallest current domain
+    - Degree heuristic: prefers variable with most remaining constraints
+    - Dom/deg (domain size / degree): balances domain reduction with constraint involvement
+  - Value ordering heuristics:
+    - Least-constraining value: selects value ruling out fewest domain values in neighbours
+    - Solution-counting-based ordering: prefers values present in most estimated solutions
+  - Non-chronological backtracking via conflict-directed backjumping (CBJ) or CDCL no-good learning
+  - Look-ahead techniques: MAC (Maintaining Arc Consistency) enforces AC after every assignment
+- **Optimisation Layer**
+  - [[Branch and Bound]] with successive upper bound tightening via solution-bounding constraints
+  - LP relaxation at each search node provides dual-feasible lower bounds in hybrid CP/MIP solvers
+  - Large Neighbourhood Search (LNS): fix a random subset of variables, re-solve the sub-CSP; iterate
+  - Large Neighbourhood Search is the dominant metaheuristic in OR-Tools for vehicle routing COPs
+- **Local Search Module**
+  - [[Local Search]] methods for large-scale approximate solving:
+    - Min-conflicts: assign each variable the value minimising conflict count; solved million-variable n-Queens in seconds (Minton et al. 1992)
+    - GSAT: Greedy SAT local search; random restart with steepest descent in conflict count space
+    - WalkSAT: probabilistic local search; randomly selects between best-improving flip and random flip in unsatisfied clauses
+    - Tabu search: maintains a tabu list of recently visited assignments to avoid cycling
+  - Effective for highly over-constrained instances and large-scale optimisation where completeness is not required
+- **Modelling Language Interface**
+  - MiniZinc: high-level constraint modelling language with parameterised model types, solving annotations, and FlatZinc compilation target
+  - XCSP3: XML-based constraint problem format; supports all standard global constraint families for benchmarking interoperability
+  - OR-Tools Python API: direct programmatic model construction; widely used in data science and ML workflows
+  - SICStus Prolog / ECLiPSe: constraint logic programming interfaces exposing CP solving through Prolog's goal resolution mechanism
+
+    ## Use Cases and Major Families
+
+- **Scheduling and Timetabling**: Nurse rostering (workforce [[Planning and Scheduling]] against shift patterns and regulatory constraints), university timetabling (avoiding room conflicts, satisfying preference constraints), railway slot allocation (conflict-free train path assignment), and job-shop scheduling (machine assignment minimising makespan) are archetypal CSP applications. The global Cumulative constraint models [[Resource Allocation]] capacity across time, enabling efficient propagation for scheduling domains. In the UK, Network Rail's engineering possession scheduling encodes tens of thousands of constraints (possession windows, train service impacts, equipment availability, safety clearances) in an OR-Tools CP-SAT model solved nightly to generate the following day's maintenance plan. NHS nurse rostering systems using constraint programming serve NHS trusts across England, balancing staff preferences against ward cover requirements and Working Time Directive constraints.
+- **Configuration Management**: Product configurators for automobiles, computer systems, and telecommunications equipment ensure that selected components satisfy hundreds of compatibility constraints. SAP and Oracle embed CP engines for ERP [[Configuration Management]] product configuration; systems handling tens of thousands of constraints and millions of configurations at interactive response times have been deployed. Automotive configurators (BMW, Mercedes-Benz, Volkswagen Group) use CP technology with AllDifferent and global cardinality constraints to ensure consistent bill-of-materials under regulatory, logistic, and optional-feature compatibility rules. Dell's computer product configurator, historically one of the largest CP deployments, handled millions of configuration variables over a product space of billions of configurations. Product line engineering for aerospace and automotive systems models compatibility constraints between components using feature models and BDD (binary decision diagram) or SAT-based configurators — a direct application of CSP to [[Systems Engineering]] at scale.
+- **Automated Planning and Temporal Reasoning**: Temporal CSPs encode durations, deadlines, and precedence relations; Simple Temporal Networks (STNs) generalise to STPs (Simple Temporal Problems), solvable in polynomial time using Bellman-Ford shortest path. CP-based planners (CPT, LPG-TD) integrate CSP technology with classical [[Automated Planning]] representations such as PDDL. NASA deployed constraint-based scheduling in the HSTS (Heuristic Scheduling Testbed System) for Hubble Space Telescope observation scheduling, where temporal and [[Resource Allocation]] constraints over thousands of observations must be satisfied within satellite visibility windows and battery capacity limits. Temporal [[Decision Making]] under uncertainty combines STN solving with probabilistic inference to handle durations specified as probability distributions rather than fixed values.
+- **Robotic Motion Planning**: Kinematic constraints, joint limits, collision-avoidance requirements, and task ordering create rich CSP structures in [[Robotic Task Planning]] and [[Motion Planning]]. Continuous constraint systems (systems of nonlinear equations over real domains) arise in configuration space analysis for serial manipulators; interval constraint propagation over real intervals provides complete solving with guaranteed correctness. Inverse kinematics (IK) is a classical CSP: given a desired end-effector pose, find a joint configuration satisfying the kinematic chain equations while respecting joint limit constraints. Modern IK solvers use Newton-Raphson iterative refinement (local search on continuous CSP) augmented by random restarts or gradient-based optimisation. In [[Cyber Physical Systems]] manufacturing, constraint satisfaction validates that production cell configurations — robot poses, fixture placements, tool paths — satisfy collision-free and torque-limit constraints before physical execution.
+- **Formal Verification and Hardware Design**: Bounded model checking translates finite-horizon reachability queries for hardware and software systems into [[Satisfiability]] instances, exploiting CSP/SAT solving at massive scale. Chip design verification (equivalence checking, property checking) routinely involves SAT instances with hundreds of millions of variables. The [[Formal Verification]] of safety-critical software — airborne software under DO-178C, medical device firmware under IEC 62304, automotive ECU software under ISO 26262 — increasingly uses SMT-based techniques (Z3, CVC5) for path feasibility analysis and absence-of-overflow proofs. [[Model Based Systems Engineering]] workflows use CSP-based constraint blocks (SysML v2, 2024) to formally verify that system architectures satisfy requirements constraints before implementation.
+- **Network Design and Frequency Assignment**: Assigning radio frequencies, IP address ranges, or bandwidth slots subject to interference and capacity constraints is a canonical CSP modelling exercise, directly equivalent to a [[Graph Colouring]] problem on an interference graph. Ofcom (UK) uses constraint-based frequency planning for [[Network Configuration]] spectrum allocation across broadcast and mobile services. 5G network slicing allocation — assigning virtual network resources subject to latency, bandwidth, and isolation constraints — is a large-scale CSP that CP and MIP solvers increasingly address in real time.
+- **Bioinformatics**: Protein structure prediction under experimental distance constraints (NMR-derived NOE constraints), multiple sequence alignment with gap and match constraints, and RNA secondary structure folding under base-pair constraints are CSPs; the ROSETTA suite uses CP-inspired sampling to explore conformational space. Glycan structure elucidation from mass spectrometry data encodes the combinatorial graph structure of branched carbohydrates as a CSP over a database of known monosaccharide compositions. Constrained molecular generation in [[Constraint Based Design]] drug discovery uses CSP to enforce ADMET property constraints, synthetic accessibility, and pharmacophore geometry constraints.
+- **Energy and Smart Grids**: Unit commitment problems (which generators to operate at each time slot) and optimal power flow problems are large-scale COPs combining continuous power balance constraints with binary on/off decisions. CP and MIP solvers are used by transmission system operators (National Grid in the UK, RTE in France) for day-ahead generation [[Planning and Scheduling]]. Demand response — scheduling interruptible industrial loads against grid frequency constraints — is a real-time CSP deployed in industrial energy management systems. [[Supply Chain Optimisation]] for renewable energy equipment procurement (wind turbines, battery storage) uses CSP to satisfy delivery window, installation sequence, and grid connection constraints.
+- **Puzzle Solving and Recreational Mathematics**: n-Queens, Sudoku, [[Graph Colouring]], Latin squares, and crossword generation are canonical benchmark CSPs with well-understood constraint graph structure, widely used to compare solver performance. Sudoku, in particular, is a 9×9 Latin square with 27 AllDifferent constraints; a CP solver enforcing GAC on AllDifferent solves any valid Sudoku puzzle without search, purely by propagation, demonstrating the power of constraint inference.
 
   ## Academic Context
   The formal foundations of constraint satisfaction were laid by Alan K. Mackworth (University of British Columbia) with the 1977 paper "Consistency in Networks of Relations" and by Ugo Montanari (University of Pisa) in 1974. Eugene Freuder (University of New Hampshire, later University College Cork) developed k-consistency theory and structural tractability in 1978 and 1982. Rina Dechter (UC Irvine) produced the defining textbook "Constraint Processing" (2003) and contributed the concept of hypertree decomposition and AND/OR search. The Association for Constraint Programming (ACP) organises the annual CP conference, the leading venue for constraint programming research. CPAIOR (Integration of Constraint Programming, Artificial Intelligence, and Operations Research) bridges CP and mathematical optimisation. The MiniZinc project (originated at Monash University under Peter Stuckey) provides the standard modelling benchmark language and hosts the annual MiniZinc Challenge competition.
@@ -193,22 +194,24 @@ Constraint Satisfaction is a paradigm in artificial intelligence and combinatori
   The United Kingdom has a distinguished tradition in constraint programming spanning both foundational theory and industrial application.
 
   **Academic Centres:**
-  - *University of St Andrews*: The Constraint Programming Research Group is one of the most active UK CP research groups, with work on constraint modelling, automated problem reformulation, and planning lifted to constraints. Recent (2024) publication "Plotting: a case study in lifted planning with constraints" (*Constraints* journal) exemplifies the group's focus on automatically translating high-level problem specifications into efficient constraint models. St Andrews hosts a dedicated CP research page at https://www.st-andrews.ac.uk/computer-science/research/groups/constraint-programming/.
-  - *University of Edinburgh*: The informatics school has historically contributed to [[Logic Programming]] and Constraint Logic Programming (CLP) through Prolog and concurrent constraint system research. Edinburgh's Autonomous Systems and Robotics group applies constraint satisfaction to [[Motion Planning]] and co-design of robot structures and controllers under task constraints.
-  - *Imperial College London*: Research threads connect CSP to [[Formal Verification]] and hardware model checking; the Department of Computing has published on SAT-based verification of safety-critical systems and constraint-based synthesis of controllers for cyber-physical systems.
-  - *University College London (UCL)*: The Department of Computer Science has produced work on SAT solving and its industrial application to bounded model checking for hardware and software verification, with connections to the European ERC-funded projects on automated formal analysis.
-  - *University of Manchester*: The Alan Turing Institute Manchester node and the School of Engineering work on constraint optimisation for manufacturing scheduling; strong links to precision engineering firms in the Northern Powerhouse corridor.
-  - *University of Sheffield*: The AMRC (Advanced Manufacturing Research Centre) applies constraint programming to manufacturing process planning and resource scheduling for advanced production systems.
-  - *University of Leeds*: Computational optimisation research in the School of Computing applies CP and hybrid CP/ML methods to logistics and transport scheduling, including rail network optimisation.
+
+- *University of St Andrews*: The Constraint Programming Research Group is one of the most active UK CP research groups, with work on constraint modelling, automated problem reformulation, and planning lifted to constraints. Recent (2024) publication "Plotting: a case study in lifted planning with constraints" (*Constraints* journal) exemplifies the group's focus on automatically translating high-level problem specifications into efficient constraint models. St Andrews hosts a dedicated CP research page at https://www.st-andrews.ac.uk/computer-science/research/groups/constraint-programming/.
+- *University of Edinburgh*: The informatics school has historically contributed to [[Logic Programming]] and Constraint Logic Programming (CLP) through Prolog and concurrent constraint system research. Edinburgh's Autonomous Systems and Robotics group applies constraint satisfaction to [[Motion Planning]] and co-design of robot structures and controllers under task constraints.
+- *Imperial College London*: Research threads connect CSP to [[Formal Verification]] and hardware model checking; the Department of Computing has published on SAT-based verification of safety-critical systems and constraint-based synthesis of controllers for cyber-physical systems.
+- *University College London (UCL)*: The Department of Computer Science has produced work on SAT solving and its industrial application to bounded model checking for hardware and software verification, with connections to the European ERC-funded projects on automated formal analysis.
+- *University of Manchester*: The Alan Turing Institute Manchester node and the School of Engineering work on constraint optimisation for manufacturing scheduling; strong links to precision engineering firms in the Northern Powerhouse corridor.
+- *University of Sheffield*: The AMRC (Advanced Manufacturing Research Centre) applies constraint programming to manufacturing process planning and resource scheduling for advanced production systems.
+- *University of Leeds*: Computational optimisation research in the School of Computing applies CP and hybrid CP/ML methods to logistics and transport scheduling, including rail network optimisation.
 
   **Industry:**
-  - *Network Rail*: OR-Tools CP-SAT models solve engineering possession scheduling (conflict-free maintenance windows across the UK rail network) nightly, with tens of thousands of constraints covering possession windows, train service impacts, equipment availability, and safety clearances.
-  - *NHS Trusts*: Constraint programming-based nurse rostering systems balance staff preferences against ward cover requirements and Working Time Directive constraints in multiple English NHS trusts, reducing manual scheduling effort and improving staff satisfaction scores.
-  - *Rolls-Royce* (Derby): CP-based scheduling tools for jet engine maintenance planning at Derby, optimising maintenance slot allocation subject to parts availability, engineer skill constraints, and aircraft return-to-service deadlines.
-  - *British Telecom (BT)*: An early industrial adopter of constraint technology for frequency assignment and workforce scheduling across the UK telecoms network; Ofcom uses constraint-based frequency planning for spectrum allocation.
-  - *STFC Hartree Centre* (Daresbury, Cheshire): Explores quantum-classical hybrid approaches to combinatorial optimisation problems, including CP/QUBO decomposition for large-scale scheduling and [[Resource Allocation]] problems.
-  - *Digital Catapult*: Constraint satisfaction research applied to 5G network slicing allocation, assigning virtual network resources subject to latency, bandwidth, and isolation constraints in real time.
-  - *Optima AI* (Edinburgh, active 2024-2026): Applies CP and [[Machine Learning]] hybrid methods to retail staff scheduling across UK supermarket chains, delivering improvements in schedule quality and compliance with Working Time Regulations.
+
+- *Network Rail*: OR-Tools CP-SAT models solve engineering possession scheduling (conflict-free maintenance windows across the UK rail network) nightly, with tens of thousands of constraints covering possession windows, train service impacts, equipment availability, and safety clearances.
+- *NHS Trusts*: Constraint programming-based nurse rostering systems balance staff preferences against ward cover requirements and Working Time Directive constraints in multiple English NHS trusts, reducing manual scheduling effort and improving staff satisfaction scores.
+- *Rolls-Royce* (Derby): CP-based scheduling tools for jet engine maintenance planning at Derby, optimising maintenance slot allocation subject to parts availability, engineer skill constraints, and aircraft return-to-service deadlines.
+- *British Telecom (BT)*: An early industrial adopter of constraint technology for frequency assignment and workforce scheduling across the UK telecoms network; Ofcom uses constraint-based frequency planning for spectrum allocation.
+- *STFC Hartree Centre* (Daresbury, Cheshire): Explores quantum-classical hybrid approaches to combinatorial optimisation problems, including CP/QUBO decomposition for large-scale scheduling and [[Resource Allocation]] problems.
+- *Digital Catapult*: Constraint satisfaction research applied to 5G network slicing allocation, assigning virtual network resources subject to latency, bandwidth, and isolation constraints in real time.
+- *Optima AI* (Edinburgh, active 2024-2026): Applies CP and [[Machine Learning]] hybrid methods to retail staff scheduling across UK supermarket chains, delivering improvements in schedule quality and compliance with Working Time Regulations.
 
   **Funding and Policy:**
   The EPSRC has funded constraint research via the Trustworthy Autonomous Systems (TAS) programme, where CSP underpins [[Formal Verification]] of safety-critical autonomy in aerospace and rail applications. The Alan Turing Institute has funded constraint programming research under its AI for Science programme. UK Research and Innovation (UKRI) supports constraint-based approaches to supply chain resilience, energy grid optimisation, and healthcare workforce planning under its Strategic Priorities Fund.
@@ -247,55 +250,60 @@ Constraint Satisfaction is a paradigm in artificial intelligence and combinatori
   A CSP is formally a directed constraint hypergraph H = (V, E) where V is the set of variables and E is the set of constraint hyperedges, each labelled with a relation R ⊆ D_{i₁} × … × D_{iₖ}. The constraint graph of a binary CSP has an edge between xᵢ and xⱼ for every binary constraint c(xᵢ, xⱼ). The **treewidth** tw(H) of this graph is the minimum over all tree decompositions of the maximum bag size minus one. The complexity of tree decomposition-based solving is O(n · d^(tw+1)), polynomial for fixed treewidth. This formal structure connects CSP to [[Graph Theory]] (structural parameters), to [[Probabilistic Inference]] (factor graphs with real-valued cost labels), to [[Integer Programming]] (LP relaxations at [[Branch and Bound]] nodes), and to [[Symbolic Reasoning]] (inference engines on symbolic domain representations). The [[Constraint Satisfaction]] framework also underpins the formal semantics of [[Description Logic]] knowledge bases — connecting AI reasoning to [[Knowledge Representation]] in ontology systems — and the [[Constraint Based Design]] formalism for engineering design problems.
 
   **Consistency hierarchy** — a progression of increasingly strong local consistency properties:
-  - *Node consistency*: every unary constraint is satisfied by pruning domain values violating it
-  - *Arc consistency (AC)*: for every binary constraint c(xᵢ, xⱼ) and value a ∈ Dᵢ, there exists a support b ∈ Dⱼ such that c(a, b) holds
-  - *Path consistency*: every pair assignment consistent with binary constraints can be extended to any third variable
-  - *k-consistency*: every consistent (k-1)-assignment can be extended to any k-th variable; requires exponential space for k ≥ 4 in general
-  - *Strong k-consistency*: i-consistency holds for all i ≤ k; guarantees backtrack-free search when k ≥ n
+
+- *Node consistency*: every unary constraint is satisfied by pruning domain values violating it
+- *Arc consistency (AC)*: for every binary constraint c(xᵢ, xⱼ) and value a ∈ Dᵢ, there exists a support b ∈ Dⱼ such that c(a, b) holds
+- *Path consistency*: every pair assignment consistent with binary constraints can be extended to any third variable
+- *k-consistency*: every consistent (k-1)-assignment can be extended to any k-th variable; requires exponential space for k ≥ 4 in general
+- *Strong k-consistency*: i-consistency holds for all i ≤ k; guarantees backtrack-free search when k ≥ n
 
   **Global constraints** — n-ary constraints with dedicated polynomial-time filtering algorithms:
-  - *AllDifferent*: all variable values must be distinct; enforced by maximum bipartite matching; O(n√n) filtering
-  - *Cumulative*: resource capacity constraint over time; edge-finding algorithm identifies mandatory intervals
-  - *GCC (Global Cardinality Constraint)*: each value appears between lv and uv times; enforced by network flow
-  - *Regular*: variable sequence must be accepted by a DFA; filtered by DP on the constraint automaton
-  - *Element*: x[i] = v; enforced by propagating index and value domains simultaneously
-  - *Circuit*: variables form a Hamiltonian circuit; enforced by constraint propagation on successor arcs
+
+- *AllDifferent*: all variable values must be distinct; enforced by maximum bipartite matching; O(n√n) filtering
+- *Cumulative*: resource capacity constraint over time; edge-finding algorithm identifies mandatory intervals
+- *GCC (Global Cardinality Constraint)*: each value appears between lv and uv times; enforced by network flow
+- *Regular*: variable sequence must be accepted by a DFA; filtered by DP on the constraint automaton
+- *Element*: x[i] = v; enforced by propagating index and value domains simultaneously
+- *Circuit*: variables form a Hamiltonian circuit; enforced by constraint propagation on successor arcs
 
   **Soft constraints and VCSP** — the Valued CSP framework for over-constrained problems:
-  - Constraints replaced by cost functions cᵢ: scope(cᵢ) → E (a cost semiring)
-  - Task: find assignment minimising sum of constraint costs ∑ cᵢ(v(scope(cᵢ)))
-  - Soft arc consistency algorithms (EDAC, full arc consistency for WCSPs) enforce lower bound propagation
-  - Cost function network representation unifies WCSPs, Markov random fields, and probabilistic graphical models
-  - Protein design, MAX-SAT, and weighted graph problems naturally encode as VCSPs
+
+- Constraints replaced by cost functions cᵢ: scope(cᵢ) → E (a cost semiring)
+- Task: find assignment minimising sum of constraint costs ∑ cᵢ(v(scope(cᵢ)))
+- Soft arc consistency algorithms (EDAC, full arc consistency for WCSPs) enforce lower bound propagation
+- Cost function network representation unifies WCSPs, Markov random fields, and probabilistic graphical models
+- Protein design, MAX-SAT, and weighted graph problems naturally encode as VCSPs
 
   **Temporal CSPs and Simple Temporal Networks (STNs)**:
-  - Temporal variables represent event times; difference constraints xⱼ - xᵢ ≤ wᵢⱼ encode precedences and windows
-  - STN consistency check equivalent to shortest-path computation (Bellman-Ford); O(n³) or O(n²) with Johnson's algorithm
-  - Temporal Constraint Satisfaction Problem (TCSP) adds disjunctive constraints; NP-complete in general, polynomial for STP
-  - Disjunctive Temporal Problems (DTPs) allow OR over multiple difference constraints per pair; solved by LP + enumeration
-  - Applied in [[Automated Planning]] (PDDL2.1 duratives), workflow scheduling, and temporal reasoning in AI agents
+
+- Temporal variables represent event times; difference constraints xⱼ - xᵢ ≤ wᵢⱼ encode precedences and windows
+- STN consistency check equivalent to shortest-path computation (Bellman-Ford); O(n³) or O(n²) with Johnson's algorithm
+- Temporal Constraint Satisfaction Problem (TCSP) adds disjunctive constraints; NP-complete in general, polynomial for STP
+- Disjunctive Temporal Problems (DTPs) allow OR over multiple difference constraints per pair; solved by LP + enumeration
+- Applied in [[Automated Planning]] (PDDL2.1 duratives), workflow scheduling, and temporal reasoning in AI agents
 
   ## Key Terminology Glossary
-  - **CSP** — Constraint Satisfaction Problem; the formal triple (X, D, C); the core problem formulation underlying [[Constraint Based Design]], [[Automated Planning]], [[Formal Verification]], and scheduling
-  - **COP** — Constraint Optimisation Problem; CSP augmented with an objective function; connects to [[Combinatorial Optimisation]] and [[Multi Objective Optimisation]]
-  - **VCSP** — Valued CSP; constraints replaced by cost functions over a semiring; bridges to [[Probabilistic Inference]] via cost-function network representation
-  - **Arc Consistency (AC)** — local consistency condition: for every pair (xᵢ, xⱼ) linked by a binary constraint, every value in Dᵢ has at least one support in Dⱼ
-  - **AC-3** — Mackworth's worklist algorithm for enforcing arc consistency; O(ed³) time; O(ed) in AC-4
-  - **GAC** — Generalised Arc Consistency; extension of arc consistency to non-binary (global) constraints; essential for AllDifferent, Cumulative, and GCC filtering
-  - **MRV** — Minimum Remaining Values [[Heuristic]]; also called fail-first or most-constrained-variable; a key [[Variable Ordering Heuristic]]
-  - **Backjumping** — non-chronological backtracking to the actual cause of failure rather than the chronological parent; used in [[Backtracking Search]] to avoid redundant search
-  - **CDCL** — Conflict-Driven Clause Learning; applied inside SAT cores embedded in CP-SAT solvers; enables non-chronological backtracking and persistent no-good avoidance
-  - **Treewidth** — graph parameter measuring closeness to a tree; low-treewidth instances are tractably solvable in O(n · d^(tw+1)) time; related to [[Dynamic Programming]] tree decomposition methods
-  - **MiniZinc** — standardised high-level constraint modelling language; compiles to multiple solver backends via FlatZinc; the ACP community's standard benchmarking language
-  - **XCSP3** — XML constraint problem format enabling solver-independent benchmarking across all CP solvers; complements MiniZinc as a representation standard
-  - **Global constraint** — constraint over an unbounded number of variables with a dedicated polynomial-time filtering algorithm (AllDifferent, Cumulative, GCC, Regular, Element, Circuit)
-  - **QUBO** — Quadratic Unconstrained Binary Optimisation; encoding used for [[Quantum Computing]] annealing hardware (D-Wave); transforms discrete CSPs into quadratic binary form
-  - **No-good** — a falsified assignment clause learned from a conflict in CDCL search; prevents revisiting the same failure; the CSP analog of learned clauses in SAT
-  - **Polymorphism** — algebraic operation preserving constraint relations; the algebraic dichotomy theory classifies CSP tractability by polymorphisms; connects to [[Knowledge Representation]] and description logic complexity theory
-  - **Tree decomposition** — a tree of variable bags covering all constraint scopes; minimum bag-size minus one is the [[Treewidth]]; the structural basis for polynomial-time solving of low-treewidth instances
-  - **LNS** — Large Neighbourhood Search; a metaheuristic that fixes a subset of variables and re-solves the sub-CSP; the dominant metaheuristic in Google [[Operations Research]] OR-Tools for vehicle routing
-  - **Soft constraint** — a constraint with an associated violation cost rather than a hard binary feasibility judgement; enables [[Decision Making]] under relaxed requirements in over-constrained systems
-  - **Constraint hypergraph** — a hypergraph representation of a CSP where variables are nodes and constraints are hyperedges; the formal basis for [[Digital Twin]] consistency frameworks (arXiv:2507.05494, 2025)
+
+- **CSP** — Constraint Satisfaction Problem; the formal triple (X, D, C); the core problem formulation underlying [[Constraint Based Design]], [[Automated Planning]], [[Formal Verification]], and scheduling
+- **COP** — Constraint Optimisation Problem; CSP augmented with an objective function; connects to [[Combinatorial Optimisation]] and [[Multi Objective Optimisation]]
+- **VCSP** — Valued CSP; constraints replaced by cost functions over a semiring; bridges to [[Probabilistic Inference]] via cost-function network representation
+- **Arc Consistency (AC)** — local consistency condition: for every pair (xᵢ, xⱼ) linked by a binary constraint, every value in Dᵢ has at least one support in Dⱼ
+- **AC-3** — Mackworth's worklist algorithm for enforcing arc consistency; O(ed³) time; O(ed) in AC-4
+- **GAC** — Generalised Arc Consistency; extension of arc consistency to non-binary (global) constraints; essential for AllDifferent, Cumulative, and GCC filtering
+- **MRV** — Minimum Remaining Values [[Heuristic]]; also called fail-first or most-constrained-variable; a key [[Variable Ordering Heuristic]]
+- **Backjumping** — non-chronological backtracking to the actual cause of failure rather than the chronological parent; used in [[Backtracking Search]] to avoid redundant search
+- **CDCL** — Conflict-Driven Clause Learning; applied inside SAT cores embedded in CP-SAT solvers; enables non-chronological backtracking and persistent no-good avoidance
+- **Treewidth** — graph parameter measuring closeness to a tree; low-treewidth instances are tractably solvable in O(n · d^(tw+1)) time; related to [[Dynamic Programming]] tree decomposition methods
+- **MiniZinc** — standardised high-level constraint modelling language; compiles to multiple solver backends via FlatZinc; the ACP community's standard benchmarking language
+- **XCSP3** — XML constraint problem format enabling solver-independent benchmarking across all CP solvers; complements MiniZinc as a representation standard
+- **Global constraint** — constraint over an unbounded number of variables with a dedicated polynomial-time filtering algorithm (AllDifferent, Cumulative, GCC, Regular, Element, Circuit)
+- **QUBO** — Quadratic Unconstrained Binary Optimisation; encoding used for [[Quantum Computing]] annealing hardware (D-Wave); transforms discrete CSPs into quadratic binary form
+- **No-good** — a falsified assignment clause learned from a conflict in CDCL search; prevents revisiting the same failure; the CSP analog of learned clauses in SAT
+- **Polymorphism** — algebraic operation preserving constraint relations; the algebraic dichotomy theory classifies CSP tractability by polymorphisms; connects to [[Knowledge Representation]] and description logic complexity theory
+- **Tree decomposition** — a tree of variable bags covering all constraint scopes; minimum bag-size minus one is the [[Treewidth]]; the structural basis for polynomial-time solving of low-treewidth instances
+- **LNS** — Large Neighbourhood Search; a metaheuristic that fixes a subset of variables and re-solves the sub-CSP; the dominant metaheuristic in Google [[Operations Research]] OR-Tools for vehicle routing
+- **Soft constraint** — a constraint with an associated violation cost rather than a hard binary feasibility judgement; enables [[Decision Making]] under relaxed requirements in over-constrained systems
+- **Constraint hypergraph** — a hypergraph representation of a CSP where variables are nodes and constraints are hyperedges; the formal basis for [[Digital Twin]] consistency frameworks (arXiv:2507.05494, 2025)
 
   ## Research and Literature
   1. Mackworth, A.K. (1977). "Consistency in Networks of Relations." *Artificial Intelligence*, 8(1), 99–118. https://doi.org/10.1016/0004-3702(77)90007-8
@@ -337,5 +345,5 @@ Constraint Satisfaction is a paradigm in artificial intelligence and combinatori
   37. Reinhardt, A. et al. (2025). "Constraint Hypergraphs as a Unifying Framework for Digital Twins." arXiv:2507.05494. https://arxiv.org/pdf/2507.05494
   38. Quantum Optimization Explained: Use Cases (2026). https://www.bqpsim.com/quantum-optimization/quantum-optimization-problems
 
-- ### Provenance
+### Provenance
 

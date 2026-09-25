@@ -1,18 +1,23 @@
-
 Network segmentation is the security practice of dividing a computer network into smaller, isolated zones so that traffic between them is controlled, inspected, and restricted by policy. By limiting the blast radius of a compromise, segmentation prevents an attacker who breaches one zone from moving laterally to others. It is a core control in defence-in-depth and a prerequisite for zero-trust network architectures.
 
-- ### Overview
-  - Segmentation can be implemented at several layers: physical separation of networks, virtual LANs and subnets enforced by switches and routers, firewall zones between trust boundaries, and software-defined microsegmentation that applies policy down to individual workloads. The finer the segmentation, the smaller the lateral-movement surface available to an intruder. Modern data-centre and cloud environments increasingly rely on identity-aware microsegmentation, where east-west traffic between workloads is permitted only by explicit policy, aligning segmentation with zero-trust principles.
-- ### Mechanisms
-  - VLANs and subnetting: partitioning broadcast domains and IP ranges to separate user, server, and management traffic.
-  - Firewall zoning: enforcing allow/deny policy at boundaries between segments of differing trust.
-  - Microsegmentation: workload-level policy that controls east-west traffic independent of network topology.
-  - Software-defined networking: programmatic, identity-aware policy enforcement across virtual and cloud fabrics.
-  - Demilitarised zones: isolating internet-facing services from internal networks behind layered controls.
-- ### Applications
-  - Isolating operational technology (OT) and industrial control systems from corporate IT.
-  - Constraining lateral movement after an endpoint compromise.
-  - Meeting regulatory scope-reduction requirements such as cardholder-data isolation.
-  - Separating multi-tenant workloads in cloud and data-centre environments.
-- ### Provenance
+### Overview
+
+- Segmentation can be implemented at several layers: physical separation of networks, virtual LANs and subnets enforced by switches and routers, firewall zones between trust boundaries, and software-defined microsegmentation that applies policy down to individual workloads. The finer the segmentation, the smaller the lateral-movement surface available to an intruder. Modern data-centre and cloud environments increasingly rely on identity-aware microsegmentation, where east-west traffic between workloads is permitted only by explicit policy, aligning segmentation with zero-trust principles.
+
+### Mechanisms
+
+- VLANs and subnetting: partitioning broadcast domains and IP ranges to separate user, server, and management traffic.
+- Firewall zoning: enforcing allow/deny policy at boundaries between segments of differing trust.
+- Microsegmentation: workload-level policy that controls east-west traffic independent of network topology.
+- Software-defined networking: programmatic, identity-aware policy enforcement across virtual and cloud fabrics.
+- Demilitarised zones: isolating internet-facing services from internal networks behind layered controls.
+
+### Applications
+
+- Isolating operational technology (OT) and industrial control systems from corporate IT.
+- Constraining lateral movement after an endpoint compromise.
+- Meeting regulatory scope-reduction requirements such as cardholder-data isolation.
+- Separating multi-tenant workloads in cloud and data-centre environments.
+
+### Provenance
 

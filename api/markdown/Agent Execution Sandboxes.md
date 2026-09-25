@@ -1,109 +1,110 @@
-
 Isolated execution environments providing secure, ephemeral containers and virtual machines for AI-generated code execution, tool use, and autonomous agent operation — including E2B, Daytona, Docker MCP Gateway, Cloudflare Sandboxes, Modal, Vercel Sandbox, and Fly Machines — with hardware-level isolation via Firecracker microVMs, gVisor syscall interception, or Kata Containers to prevent escape to host infrastructure.
 
-- ### Semantic Classification
+### Semantic Classification
 
-- ### Content
-  ## Compositional Relationships (Components)
-      SubClassOf(infrastructure:AgentExecutionSandboxes
-        ObjectSomeValuesFrom(infrastructure:hasPart infrastructure:ContainerRuntime))
-      SubClassOf(infrastructure:AgentExecutionSandboxes
-        ObjectSomeValuesFrom(infrastructure:hasPart infrastructure:MCPServer))
-      SubClassOf(infrastructure:AgentExecutionSandboxes
-        ObjectSomeValuesFrom(infrastructure:hasPart infrastructure:CodeExecutionEngine))
-      SubClassOf(infrastructure:AgentExecutionSandboxes
-        ObjectSomeValuesFrom(infrastructure:hasPart infrastructure:NetworkEgressPolicy))
-      SubClassOf(infrastructure:AgentExecutionSandboxes
-        ObjectSomeValuesFrom(infrastructure:hasPart infrastructure:FilesystemScope))
-      SubClassOf(infrastructure:AgentExecutionSandboxes
-        ObjectSomeValuesFrom(infrastructure:hasPart infrastructure:ResourceQuota))
-  ## Dependency Relationships
-      SubClassOf(infrastructure:AgentExecutionSandboxes
-        ObjectSomeValuesFrom(infrastructure:requires infrastructure:Containerisation))
-      SubClassOf(infrastructure:AgentExecutionSandboxes
-        ObjectSomeValuesFrom(infrastructure:requires ai:ToolUse))
-      SubClassOf(infrastructure:AgentExecutionSandboxes
-        ObjectSomeValuesFrom(infrastructure:dependsOn infrastructure:CloudComputing))
-      SubClassOf(infrastructure:AgentExecutionSandboxes
-        ObjectSomeValuesFrom(infrastructure:dependsOn infrastructure:ContainerOrchestration))
-      SubClassOf(infrastructure:AgentExecutionSandboxes
-        ObjectSomeValuesFrom(infrastructure:dependsOn infrastructure:OpenContainerInitiative))
-      SubClassOf(infrastructure:AgentExecutionSandboxes
-        ObjectSomeValuesFrom(infrastructure:dependsOn infrastructure:DockerContainerisationPlatform))
-  ## Capability Relationships
-      SubClassOf(infrastructure:AgentExecutionSandboxes
-        ObjectSomeValuesFrom(infrastructure:enables ai:AgenticWorkflow))
-      SubClassOf(infrastructure:AgentExecutionSandboxes
-        ObjectSomeValuesFrom(infrastructure:enables ai:AutonomousCoding))
-      SubClassOf(infrastructure:AgentExecutionSandboxes
-        ObjectSomeValuesFrom(infrastructure:enables ai:TerminalCodingAgents))
-      SubClassOf(infrastructure:AgentExecutionSandboxes
-        ObjectSomeValuesFrom(infrastructure:enables ai:MultiAgentSystems))
-      SubClassOf(infrastructure:AgentExecutionSandboxes
-        ObjectSomeValuesFrom(infrastructure:enables ai:AutonomousAgent))
-  ## Implementation Relationships
-      SubClassOf(infrastructure:AgentExecutionSandboxes
-        ObjectSomeValuesFrom(infrastructure:implements ai:ModelContextProtocol))
-      SubClassOf(infrastructure:AgentExecutionSandboxes
-        ObjectSomeValuesFrom(infrastructure:implements infrastructure:OpenContainerInitiative))
-      SubClassOf(infrastructure:AgentExecutionSandboxes
-        ObjectSomeValuesFrom(infrastructure:implements ai:ToolCallLoop))
-      SubClassOf(infrastructure:AgentExecutionSandboxes
-        ObjectSomeValuesFrom(infrastructure:implements ai:FunctionCalling))
-  ## Reduction Relationships
-      SubClassOf(infrastructure:AgentExecutionSandboxes
-        ObjectSomeValuesFrom(infrastructure:reducesTo infrastructure:ContainerRuntime))
-      SubClassOf(infrastructure:AgentExecutionSandboxes
-        ObjectSomeValuesFrom(infrastructure:reducesTo infrastructure:IsolationBoundary))
-  ## Support Relationships
-      SubClassOf(infrastructure:AgentExecutionSandboxes
-        ObjectSomeValuesFrom(infrastructure:supports ai:AISafety))
-      SubClassOf(infrastructure:AgentExecutionSandboxes
-        ObjectSomeValuesFrom(infrastructure:supports ai:HumanInTheLoop))
-      SubClassOf(infrastructure:AgentExecutionSandboxes
-        ObjectSomeValuesFrom(infrastructure:supports ai:AgentEvaluationBenchmarks))
-      SubClassOf(infrastructure:AgentExecutionSandboxes
-        ObjectSomeValuesFrom(infrastructure:supports ai:PromptInjectionDefence))
-      SubClassOf(infrastructure:AgentExecutionSandboxes
-        ObjectSomeValuesFrom(infrastructure:supports infrastructure:LeastPrivilegePrinciple))
-  ## Usage Relationships
-      SubClassOf(infrastructure:AgentExecutionSandboxes
-        ObjectSomeValuesFrom(infrastructure:uses ai:FunctionCalling))
-      SubClassOf(infrastructure:AgentExecutionSandboxes
-        ObjectSomeValuesFrom(infrastructure:uses ai:MCPServer))
-      SubClassOf(infrastructure:AgentExecutionSandboxes
-        ObjectSomeValuesFrom(infrastructure:uses ai:ExternalAIHarness))
-      SubClassOf(infrastructure:AgentExecutionSandboxes
-        ObjectSomeValuesFrom(infrastructure:uses infrastructure:VectorDatabase))
-  ## Contrast Relationships
-      SubClassOf(infrastructure:AgentExecutionSandboxes
-        ObjectSomeValuesFrom(infrastructure:contrastsWith infrastructure:InternalAIHarness))
-      SubClassOf(infrastructure:AgentExecutionSandboxes
-        ObjectSomeValuesFrom(infrastructure:contrastsWith infrastructure:RegulatorySandbox))
-      SubClassOf(infrastructure:AgentExecutionSandboxes
-        ObjectSomeValuesFrom(infrastructure:contrastsWith infrastructure:DockerRuncIsolation))
-  ## Standardisation Relationships
-      SubClassOf(infrastructure:AgentExecutionSandboxes
-        ObjectSomeValuesFrom(infrastructure:standardizedBy infrastructure:OpenContainerInitiative))
-      SubClassOf(infrastructure:AgentExecutionSandboxes
-        ObjectSomeValuesFrom(infrastructure:standardizedBy ai:ModelContextProtocol))
-      SubClassOf(infrastructure:AgentExecutionSandboxes
-        ObjectSomeValuesFrom(infrastructure:standardizedBy ai:EUAIAct))
+### Content
 
-  ## About
+## Compositional Relationships (Components)
+    SubClassOf(infrastructure:AgentExecutionSandboxes
+      ObjectSomeValuesFrom(infrastructure:hasPart infrastructure:ContainerRuntime))
+    SubClassOf(infrastructure:AgentExecutionSandboxes
+      ObjectSomeValuesFrom(infrastructure:hasPart infrastructure:MCPServer))
+    SubClassOf(infrastructure:AgentExecutionSandboxes
+      ObjectSomeValuesFrom(infrastructure:hasPart infrastructure:CodeExecutionEngine))
+    SubClassOf(infrastructure:AgentExecutionSandboxes
+      ObjectSomeValuesFrom(infrastructure:hasPart infrastructure:NetworkEgressPolicy))
+    SubClassOf(infrastructure:AgentExecutionSandboxes
+      ObjectSomeValuesFrom(infrastructure:hasPart infrastructure:FilesystemScope))
+    SubClassOf(infrastructure:AgentExecutionSandboxes
+      ObjectSomeValuesFrom(infrastructure:hasPart infrastructure:ResourceQuota))
+## Dependency Relationships
+    SubClassOf(infrastructure:AgentExecutionSandboxes
+      ObjectSomeValuesFrom(infrastructure:requires infrastructure:Containerisation))
+    SubClassOf(infrastructure:AgentExecutionSandboxes
+      ObjectSomeValuesFrom(infrastructure:requires ai:ToolUse))
+    SubClassOf(infrastructure:AgentExecutionSandboxes
+      ObjectSomeValuesFrom(infrastructure:dependsOn infrastructure:CloudComputing))
+    SubClassOf(infrastructure:AgentExecutionSandboxes
+      ObjectSomeValuesFrom(infrastructure:dependsOn infrastructure:ContainerOrchestration))
+    SubClassOf(infrastructure:AgentExecutionSandboxes
+      ObjectSomeValuesFrom(infrastructure:dependsOn infrastructure:OpenContainerInitiative))
+    SubClassOf(infrastructure:AgentExecutionSandboxes
+      ObjectSomeValuesFrom(infrastructure:dependsOn infrastructure:DockerContainerisationPlatform))
+## Capability Relationships
+    SubClassOf(infrastructure:AgentExecutionSandboxes
+      ObjectSomeValuesFrom(infrastructure:enables ai:AgenticWorkflow))
+    SubClassOf(infrastructure:AgentExecutionSandboxes
+      ObjectSomeValuesFrom(infrastructure:enables ai:AutonomousCoding))
+    SubClassOf(infrastructure:AgentExecutionSandboxes
+      ObjectSomeValuesFrom(infrastructure:enables ai:TerminalCodingAgents))
+    SubClassOf(infrastructure:AgentExecutionSandboxes
+      ObjectSomeValuesFrom(infrastructure:enables ai:MultiAgentSystems))
+    SubClassOf(infrastructure:AgentExecutionSandboxes
+      ObjectSomeValuesFrom(infrastructure:enables ai:AutonomousAgent))
+## Implementation Relationships
+    SubClassOf(infrastructure:AgentExecutionSandboxes
+      ObjectSomeValuesFrom(infrastructure:implements ai:ModelContextProtocol))
+    SubClassOf(infrastructure:AgentExecutionSandboxes
+      ObjectSomeValuesFrom(infrastructure:implements infrastructure:OpenContainerInitiative))
+    SubClassOf(infrastructure:AgentExecutionSandboxes
+      ObjectSomeValuesFrom(infrastructure:implements ai:ToolCallLoop))
+    SubClassOf(infrastructure:AgentExecutionSandboxes
+      ObjectSomeValuesFrom(infrastructure:implements ai:FunctionCalling))
+## Reduction Relationships
+    SubClassOf(infrastructure:AgentExecutionSandboxes
+      ObjectSomeValuesFrom(infrastructure:reducesTo infrastructure:ContainerRuntime))
+    SubClassOf(infrastructure:AgentExecutionSandboxes
+      ObjectSomeValuesFrom(infrastructure:reducesTo infrastructure:IsolationBoundary))
+## Support Relationships
+    SubClassOf(infrastructure:AgentExecutionSandboxes
+      ObjectSomeValuesFrom(infrastructure:supports ai:AISafety))
+    SubClassOf(infrastructure:AgentExecutionSandboxes
+      ObjectSomeValuesFrom(infrastructure:supports ai:HumanInTheLoop))
+    SubClassOf(infrastructure:AgentExecutionSandboxes
+      ObjectSomeValuesFrom(infrastructure:supports ai:AgentEvaluationBenchmarks))
+    SubClassOf(infrastructure:AgentExecutionSandboxes
+      ObjectSomeValuesFrom(infrastructure:supports ai:PromptInjectionDefence))
+    SubClassOf(infrastructure:AgentExecutionSandboxes
+      ObjectSomeValuesFrom(infrastructure:supports infrastructure:LeastPrivilegePrinciple))
+## Usage Relationships
+    SubClassOf(infrastructure:AgentExecutionSandboxes
+      ObjectSomeValuesFrom(infrastructure:uses ai:FunctionCalling))
+    SubClassOf(infrastructure:AgentExecutionSandboxes
+      ObjectSomeValuesFrom(infrastructure:uses ai:MCPServer))
+    SubClassOf(infrastructure:AgentExecutionSandboxes
+      ObjectSomeValuesFrom(infrastructure:uses ai:ExternalAIHarness))
+    SubClassOf(infrastructure:AgentExecutionSandboxes
+      ObjectSomeValuesFrom(infrastructure:uses infrastructure:VectorDatabase))
+## Contrast Relationships
+    SubClassOf(infrastructure:AgentExecutionSandboxes
+      ObjectSomeValuesFrom(infrastructure:contrastsWith infrastructure:InternalAIHarness))
+    SubClassOf(infrastructure:AgentExecutionSandboxes
+      ObjectSomeValuesFrom(infrastructure:contrastsWith infrastructure:RegulatorySandbox))
+    SubClassOf(infrastructure:AgentExecutionSandboxes
+      ObjectSomeValuesFrom(infrastructure:contrastsWith infrastructure:DockerRuncIsolation))
+## Standardisation Relationships
+    SubClassOf(infrastructure:AgentExecutionSandboxes
+      ObjectSomeValuesFrom(infrastructure:standardizedBy infrastructure:OpenContainerInitiative))
+    SubClassOf(infrastructure:AgentExecutionSandboxes
+      ObjectSomeValuesFrom(infrastructure:standardizedBy ai:ModelContextProtocol))
+    SubClassOf(infrastructure:AgentExecutionSandboxes
+      ObjectSomeValuesFrom(infrastructure:standardizedBy ai:EUAIAct))
 
-  Agent execution sandboxes constitute the security-critical execution layer of the modern [[Agentic AI]] stack, providing the hardware or OS-level boundary that permits [[Large Language Models]]-driven agents to invoke arbitrary code and system operations without endangering the hosting infrastructure, adjacent tenants, or sensitive data stores. The concept is architecturally distinct from conventional software sandboxing (browser JavaScript engines, Java sandbox, Python `ast.literal_eval` whitelisting) in one crucial respect: the agent driving execution is itself an intelligent system capable of reasoning about and potentially exploiting its containment boundary. Conventional software sandboxes are designed to contain known attack vectors from untrusted code supplied by potentially adversarial human developers. Agent execution sandboxes must additionally contain the emergent capability of frontier models to recognise and exploit novel attack vectors discovered through reasoning, environmental probing, and multi-step planning — a fundamentally more demanding threat model.
+## About
 
-  The urgency of this more demanding threat model was demonstrated empirically by SandboxEscapeBench (Marchand et al., March 2026, arXiv:2603.02277), the first rigorous benchmark for frontier AI container escape capabilities, co-developed with the UK AI Security Institute. The benchmark comprises 18 scenarios spanning orchestration, runtime, and kernel escape layers. When tested against GPT-5, Claude Opus 4.5, and other frontier models, the research confirmed that current frontier AI agents can exploit real container misconfigurations to achieve host filesystem access — and that more capable models achieve higher escape rates. Models discovered four unintended escape paths that the research team had not anticipated, including exploitation of default Vagrant SSH credentials to bypass container boundaries entirely. The cost of a successful escape attempt is approximately $1 at current API pricing. This finding reclassified container isolation ([[Docker Containerisation Platform]] runc) from an acceptable agent sandbox to an insufficient boundary: the 2026 practitioner consensus is that sub-microVM isolation is not acceptable for production agent workloads operating over sensitive data or with credentials to critical systems.
+Agent execution sandboxes constitute the security-critical execution layer of the modern [[Agentic AI]] stack, providing the hardware or OS-level boundary that permits [[Large Language Models]]-driven agents to invoke arbitrary code and system operations without endangering the hosting infrastructure, adjacent tenants, or sensitive data stores. The concept is architecturally distinct from conventional software sandboxing (browser JavaScript engines, Java sandbox, Python `ast.literal_eval` whitelisting) in one crucial respect: the agent driving execution is itself an intelligent system capable of reasoning about and potentially exploiting its containment boundary. Conventional software sandboxes are designed to contain known attack vectors from untrusted code supplied by potentially adversarial human developers. Agent execution sandboxes must additionally contain the emergent capability of frontier models to recognise and exploit novel attack vectors discovered through reasoning, environmental probing, and multi-step planning — a fundamentally more demanding threat model.
 
-  The market for agent execution sandbox infrastructure developed rapidly from a niche concern (2023–2024) to a contested infrastructure category (2025–2026). E2B, the earliest purpose-built agent sandbox provider, grew from 40,000 sandbox runs per month in March 2024 to 15 million per month in March 2025 — a 375× increase — reflecting the explosive growth of [[Agentic Workflow]] deployments requiring isolated execution. Daytona pivoted from developer environments to agent infrastructure in February 2025 and reported 850,000 daily sandbox runs by May 2026 with 74% month-over-month growth. Cloudflare Sandboxes reached general availability in April 2026, adding persistent isolated Linux environments for agent workloads to its global edge network. Vercel Sandbox deployed Firecracker microVMs on existing Vercel build infrastructure. Modal added GPU memory snapshot capability in 2025, enabling sub-1-second warm-restart latency for GPU-accelerated agent workloads — a differentiator for agents requiring local model inference rather than API calls.
+The urgency of this more demanding threat model was demonstrated empirically by SandboxEscapeBench (Marchand et al., March 2026, arXiv:2603.02277), the first rigorous benchmark for frontier AI container escape capabilities, co-developed with the UK AI Security Institute. The benchmark comprises 18 scenarios spanning orchestration, runtime, and kernel escape layers. When tested against GPT-5, Claude Opus 4.5, and other frontier models, the research confirmed that current frontier AI agents can exploit real container misconfigurations to achieve host filesystem access — and that more capable models achieve higher escape rates. Models discovered four unintended escape paths that the research team had not anticipated, including exploitation of default Vagrant SSH credentials to bypass container boundaries entirely. The cost of a successful escape attempt is approximately $1 at current API pricing. This finding reclassified container isolation ([[Docker Containerisation Platform]] runc) from an acceptable agent sandbox to an insufficient boundary: the 2026 practitioner consensus is that sub-microVM isolation is not acceptable for production agent workloads operating over sensitive data or with credentials to critical systems.
 
-  ## Components / Architecture
+The market for agent execution sandbox infrastructure developed rapidly from a niche concern (2023–2024) to a contested infrastructure category (2025–2026). E2B, the earliest purpose-built agent sandbox provider, grew from 40,000 sandbox runs per month in March 2024 to 15 million per month in March 2025 — a 375× increase — reflecting the explosive growth of [[Agentic Workflow]] deployments requiring isolated execution. Daytona pivoted from developer environments to agent infrastructure in February 2025 and reported 850,000 daily sandbox runs by May 2026 with 74% month-over-month growth. Cloudflare Sandboxes reached general availability in April 2026, adding persistent isolated Linux environments for agent workloads to its global edge network. Vercel Sandbox deployed Firecracker microVMs on existing Vercel build infrastructure. Modal added GPU memory snapshot capability in 2025, enabling sub-1-second warm-restart latency for GPU-accelerated agent workloads — a differentiator for agents requiring local model inference rather than API calls.
 
-  **Isolation Layer** — the fundamental security boundary separating agent-executed code from the host. Three main isolation technologies are deployed in 2026:
-  - **Firecracker microVMs** (E2B, Vercel Sandbox, Fly Machines, AWS Lambda): lightweight KVM virtual machines with their own Linux kernel, minimal device emulation, and hardware-level memory isolation. Firecracker boots in approximately 125 ms, uses less than 5 MiB of overhead per VM, and supports up to 150 VM launches per second per host. This is the dominant choice for CPU-bound code execution because it combines near-container speed with VM-grade security.
-  - **gVisor** (Modal Sandboxes, Google Cloud Run): a Google-developed container runtime that intercepts system calls in user space before they reach the host kernel, providing strong isolation without a full VM boundary. More portable than Firecracker (no KVM hardware requirement) but adds higher per-syscall overhead.
-  - **Kata Containers / Sysbox** (Daytona enhanced mode, some self-hosted deployments): OCI-compatible container runtimes that run containers inside lightweight VMs while maintaining Docker API compatibility. Sysbox enables systemd and Docker-in-Docker safely inside the container, making it suitable for agents that need to orchestrate their own container workloads.
+## Components / Architecture
+
+**Isolation Layer** — the fundamental security boundary separating agent-executed code from the host. Three main isolation technologies are deployed in 2026:
+
+- **Firecracker microVMs** (E2B, Vercel Sandbox, Fly Machines, AWS Lambda): lightweight KVM virtual machines with their own Linux kernel, minimal device emulation, and hardware-level memory isolation. Firecracker boots in approximately 125 ms, uses less than 5 MiB of overhead per VM, and supports up to 150 VM launches per second per host. This is the dominant choice for CPU-bound code execution because it combines near-container speed with VM-grade security.
+- **gVisor** (Modal Sandboxes, Google Cloud Run): a Google-developed container runtime that intercepts system calls in user space before they reach the host kernel, providing strong isolation without a full VM boundary. More portable than Firecracker (no KVM hardware requirement) but adds higher per-syscall overhead.
+- **Kata Containers / Sysbox** (Daytona enhanced mode, some self-hosted deployments): OCI-compatible container runtimes that run containers inside lightweight VMs while maintaining Docker API compatibility. Sysbox enables systemd and Docker-in-Docker safely inside the container, making it suitable for agents that need to orchestrate their own container workloads.
 
   **Filesystem and Network Scoping** — each sandbox receives an ephemeral root filesystem, typically overlayFS on a clean base image, with an optional persistent volume mount for workspaces requiring state across tool invocations. Network egress policies restrict outbound connections to allowlisted domains, preventing sandbox-compromised agents from exfiltrating data to attacker-controlled endpoints. [[Model Context Protocol]] integration exposes filesystem and network operations as typed MCP tools, enabling the [[Agent Harness]] to log and audit every filesystem write and network request at the tool-call level.
 
@@ -300,11 +301,12 @@ Isolated execution environments providing secure, ephemeral containers and virtu
   **Compatibility evaluation** — OCI-conformance testing verifies that the sandbox runtime correctly executes OCI-formatted container images built with standard tooling (Docker, Podman, Buildah). [[Model Context Protocol]] integration testing verifies that the sandbox's MCP endpoint correctly implements the MCP specification and interoperates with major MCP client implementations. Language runtime support testing verifies correct execution of Python, JavaScript/TypeScript, Go, Rust, Java, and Bash code within the sandbox environment.
 
   **Production benchmarks from major providers (2025–2026):**
-  - E2B: ~80 ms P50 same-region cold start; ~200 ms P50 cross-region cold start; 15M monthly sandbox runs (March 2025); $32M total funding; Firecracker microVM isolation; no GPU support; Python, JavaScript, R, Java, Bash runtime support.
-  - Daytona: <90 ms claimed cold start; 850K daily sandbox runs (May 2026); 74% MoM growth; Docker and Kata Containers isolation; MCP gateway; persistent workspace model; GPU via Docker GPU passthrough.
-  - Modal: 2–4 s cold start (CPU); <1 s warm restart via VRAM snapshots (GPU); gVisor isolation; GPU acceleration native; Python-native SDK; best for GPU-intensive code execution.
-  - Cloudflare Sandboxes: GA April 2026; global edge distribution (200+ locations); persistent isolated Linux environments; Firecracker microVM isolation; primary advantage is geographic proximity to users in latency-sensitive deployments.
-  - Vercel Sandbox: Firecracker microVM isolation; 5-minute default lifetime; up to 5 hours on Pro/Enterprise; tight integration with Vercel AI SDK and Next.js deployments.
+
+- E2B: ~80 ms P50 same-region cold start; ~200 ms P50 cross-region cold start; 15M monthly sandbox runs (March 2025); $32M total funding; Firecracker microVM isolation; no GPU support; Python, JavaScript, R, Java, Bash runtime support.
+- Daytona: <90 ms claimed cold start; 850K daily sandbox runs (May 2026); 74% MoM growth; Docker and Kata Containers isolation; MCP gateway; persistent workspace model; GPU via Docker GPU passthrough.
+- Modal: 2–4 s cold start (CPU); <1 s warm restart via VRAM snapshots (GPU); gVisor isolation; GPU acceleration native; Python-native SDK; best for GPU-intensive code execution.
+- Cloudflare Sandboxes: GA April 2026; global edge distribution (200+ locations); persistent isolated Linux environments; Firecracker microVM isolation; primary advantage is geographic proximity to users in latency-sensitive deployments.
+- Vercel Sandbox: Firecracker microVM isolation; 5-minute default lifetime; up to 5 hours on Pro/Enterprise; tight integration with Vercel AI SDK and Next.js deployments.
 
   ## Security Best Practices
 
@@ -327,29 +329,33 @@ Isolated execution environments providing secure, ephemeral containers and virtu
   ## Key Institutions and Ecosystem Actors
 
   **Commercial sandbox providers:**
-  - E2B (San Francisco, 2022): Firecracker microVM-based sandbox provider focused on Python code execution; $32M total funding ($21M Series A, Insight Partners, July 2025); 15 million monthly sandbox runs (March 2025); open-source core SDK with managed cloud offering. GitHub: github.com/e2b-dev/e2b.
-  - Daytona (Split, Croatia / San Francisco, 2022): pivoted from developer environments to AI agent infrastructure in February 2025; Docker and Kata Containers isolation; MCP gateway integration; 850K daily sandbox runs (May 2026); 74% month-over-month growth; CEO Ivan Burazin (formerly Codeanywhere). Daytona targets persistent workspace workloads for multi-step coding agents.
-  - Modal (New York, 2021): Python-native serverless cloud with gVisor isolation; GPU memory snapshots enabling sub-1-second warm restart for GPU workloads; primary differentiator is GPU-accelerated code execution for agents requiring local model inference.
-  - Cloudflare (San Francisco, 1010 NYSE: NET): Sandboxes GA April 2026; persistent isolated Linux environments for [[Agentic AI]] workloads on Cloudflare's global edge network; primary differentiator is geographic distribution (200+ locations) for latency-sensitive user-facing agent applications.
-  - Vercel (San Francisco, 2015): Sandbox product using Firecracker microVMs on existing Vercel build infrastructure; default lifetime 5 minutes to 5 hours on Pro/Enterprise; integrates with Vercel's AI SDK and deployment infrastructure; primary differentiator is tight integration with frontend deployment for full-stack AI applications.
-  - Fly.io (Chicago, 2017): Fly Machines — API-driven KVM-isolated VMs accepting any OCI container; primary differentiator is maximum engineering control and polyglot runtime support; used by teams building bespoke agent infrastructure rather than using managed sandbox services.
+
+- E2B (San Francisco, 2022): Firecracker microVM-based sandbox provider focused on Python code execution; $32M total funding ($21M Series A, Insight Partners, July 2025); 15 million monthly sandbox runs (March 2025); open-source core SDK with managed cloud offering. GitHub: github.com/e2b-dev/e2b.
+- Daytona (Split, Croatia / San Francisco, 2022): pivoted from developer environments to AI agent infrastructure in February 2025; Docker and Kata Containers isolation; MCP gateway integration; 850K daily sandbox runs (May 2026); 74% month-over-month growth; CEO Ivan Burazin (formerly Codeanywhere). Daytona targets persistent workspace workloads for multi-step coding agents.
+- Modal (New York, 2021): Python-native serverless cloud with gVisor isolation; GPU memory snapshots enabling sub-1-second warm restart for GPU workloads; primary differentiator is GPU-accelerated code execution for agents requiring local model inference.
+- Cloudflare (San Francisco, 1010 NYSE: NET): Sandboxes GA April 2026; persistent isolated Linux environments for [[Agentic AI]] workloads on Cloudflare's global edge network; primary differentiator is geographic distribution (200+ locations) for latency-sensitive user-facing agent applications.
+- Vercel (San Francisco, 2015): Sandbox product using Firecracker microVMs on existing Vercel build infrastructure; default lifetime 5 minutes to 5 hours on Pro/Enterprise; integrates with Vercel's AI SDK and deployment infrastructure; primary differentiator is tight integration with frontend deployment for full-stack AI applications.
+- Fly.io (Chicago, 2017): Fly Machines — API-driven KVM-isolated VMs accepting any OCI container; primary differentiator is maximum engineering control and polyglot runtime support; used by teams building bespoke agent infrastructure rather than using managed sandbox services.
 
   **Cloud provider implementations:**
-  - AWS Lambda: Firecracker-isolated serverless functions; used as the execution substrate for Amazon Bedrock Agents tool execution; provides the infrastructure layer that E2B's design was influenced by.
-  - Google Cloud Run: gVisor-isolated container execution; primary serverless execution environment for Google Agent Development Kit (ADK) tool workloads.
-  - Microsoft Azure Container Instances: Hyper-V isolated container instances; used in Azure AI Foundry agent deployments for tool execution.
+
+- AWS Lambda: Firecracker-isolated serverless functions; used as the execution substrate for Amazon Bedrock Agents tool execution; provides the infrastructure layer that E2B's design was influenced by.
+- Google Cloud Run: gVisor-isolated container execution; primary serverless execution environment for Google Agent Development Kit (ADK) tool workloads.
+- Microsoft Azure Container Instances: Hyper-V isolated container instances; used in Azure AI Foundry agent deployments for tool execution.
 
   **Security research organisations:**
-  - UK AI Security Institute (AISI): co-authored SandboxEscapeBench (2026); ControlArena framework includes sandbox security evaluation; primary UK government body for AI safety evaluation.
-  - Oxford University Systems Security Group: contributes to formal verification of isolation boundaries and container escape research.
-  - Zylos Research: published comprehensive 2026 survey of AI agent sandboxing technologies and threat landscape.
-  - Checkmarx Zero: published security risk analysis of [[Model Context Protocol]] deployments including sandbox interaction risks.
+
+- UK AI Security Institute (AISI): co-authored SandboxEscapeBench (2026); ControlArena framework includes sandbox security evaluation; primary UK government body for AI safety evaluation.
+- Oxford University Systems Security Group: contributes to formal verification of isolation boundaries and container escape research.
+- Zylos Research: published comprehensive 2026 survey of AI agent sandboxing technologies and threat landscape.
+- Checkmarx Zero: published security risk analysis of [[Model Context Protocol]] deployments including sandbox interaction risks.
 
   **Framework and tool integrations:**
-  - LangGraph: native [[Agent Execution Sandboxes]] integration via [[Model Context Protocol]] tool registration; E2B provides a LangGraph tool module.
-  - Claude Code (Anthropic): uses [[VisionClaw Agentic Container]] architecture as its primary sandbox implementation; demonstrates sandbox as first-class agent infrastructure component.
-  - Devin (Cognition AI): proprietary sandbox environment for autonomous software engineering; demonstrates purpose-built sandbox architecture optimised for multi-day coding agent sessions.
-  - SWE-Agent (Princeton NLP): uses sandboxed Docker environments for [[SWE-bench]] evaluation; demonstrates evaluation-grade sandbox requirements distinct from production deployment requirements.
+
+- LangGraph: native [[Agent Execution Sandboxes]] integration via [[Model Context Protocol]] tool registration; E2B provides a LangGraph tool module.
+- Claude Code (Anthropic): uses [[VisionClaw Agentic Container]] architecture as its primary sandbox implementation; demonstrates sandbox as first-class agent infrastructure component.
+- Devin (Cognition AI): proprietary sandbox environment for autonomous software engineering; demonstrates purpose-built sandbox architecture optimised for multi-day coding agent sessions.
+- SWE-Agent (Princeton NLP): uses sandboxed Docker environments for [[SWE-bench]] evaluation; demonstrates evaluation-grade sandbox requirements distinct from production deployment requirements.
 
   ## Research and Literature
 
@@ -392,5 +398,5 @@ Isolated execution environments providing secure, ephemeral containers and virtu
 
   Key freshness items to verify on next update (as of 2026-06-21): E2B GPU support timeline (roadmap item, no confirmed date); Cloudflare Sandboxes GPU beta (announced March 2026); AISI formal sandbox guidance (expected Q3 2026); ISO/IEC TC1/SC42 AI execution environment security draft (expected Q4 2026); UK AI Governance Bill sandbox provisions (parliamentary schedule subject to change). The [[Decentralised Agentic Infrastructure Stack]] concept in this ontology addresses the broader vision of composable agent infrastructure of which [[Agent Execution Sandboxes]] form one critical security layer.
 
-- ### Provenance
+### Provenance
 

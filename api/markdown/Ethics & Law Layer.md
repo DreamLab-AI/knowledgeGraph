@@ -1,119 +1,125 @@
-
 Framework layer defining norms, rights, and regulations for responsible conduct in metaverse environments through compliance mechanisms, ical AI governance, and legal frameworks.
 
-- ### Semantic Classification
+### Semantic Classification
 
-- ### Content
-  ## Compositional Relationships (Components)
-      SubClassOf(ai:EthicsLawLayer
-        ObjectSomeValuesFrom(ai:hasPart ai:ComplianceFramework))
-      SubClassOf(ai:EthicsLawLayer
-        ObjectSomeValuesFrom(ai:hasPart ai:EthicalAIGuidelines))
-      SubClassOf(ai:EthicsLawLayer
-        ObjectSomeValuesFrom(ai:hasPart ai:LegalRegulationSchema))
-      SubClassOf(ai:EthicsLawLayer
-        ObjectSomeValuesFrom(ai:hasPart ai:RightsManagementSystem))
-      SubClassOf(ai:EthicsLawLayer
-        ObjectSomeValuesFrom(ai:hasPart ai:PolicyEngine))
-      SubClassOf(ai:EthicsLawLayer
-        ObjectSomeValuesFrom(ai:hasPart ai:AuditLogging))
-      SubClassOf(ai:EthicsLawLayer
-        ObjectSomeValuesFrom(ai:hasPart ai:IdentityManagement))
-  ## Dependency Relationships
-      SubClassOf(ai:EthicsLawLayer
-        ObjectSomeValuesFrom(ai:requires ai:PolicyEngine))
-      SubClassOf(ai:EthicsLawLayer
-        ObjectSomeValuesFrom(ai:requires ai:IdentityManagement))
-      SubClassOf(ai:EthicsLawLayer
-        ObjectSomeValuesFrom(ai:requires ai:AuditLogging))
-      SubClassOf(ai:EthicsLawLayer
-        ObjectSomeValuesFrom(ai:requires ai:TrustFramework))
-      SubClassOf(ai:EthicsLawLayer
-        ObjectSomeValuesFrom(ai:requires ai:RegulatoryStandards))
-      SubClassOf(ai:EthicsLawLayer
-        ObjectSomeValuesFrom(ai:requires ai:EthicsPrinciples))
-  ## Capability Relationships
-      SubClassOf(ai:EthicsLawLayer
-        ObjectSomeValuesFrom(ai:enables ai:ResponsibleAI))
-      SubClassOf(ai:EthicsLawLayer
-        ObjectSomeValuesFrom(ai:enables ai:LegalCompliance))
-      SubClassOf(ai:EthicsLawLayer
-        ObjectSomeValuesFrom(ai:enables ai:EthicalGovernance))
-      SubClassOf(ai:EthicsLawLayer
-        ObjectSomeValuesFrom(ai:enables ai:RightsProtection))
-      SubClassOf(ai:EthicsLawLayer
-        ObjectSomeValuesFrom(ai:enables ai:Accountability))
-      SubClassOf(ai:EthicsLawLayer
-        ObjectSomeValuesFrom(ai:enables ai:Transparency))
-  ## Implementation Relationships
-      SubClassOf(ai:EthicsLawLayer
-        ObjectSomeValuesFrom(ai:implements ai:EUAIAct))
-      SubClassOf(ai:EthicsLawLayer
-        ObjectSomeValuesFrom(ai:implements ai:GDPR))
-      SubClassOf(ai:EthicsLawLayer
-        ObjectSomeValuesFrom(ai:implements ai:OECDAIPrinciples))
-      SubClassOf(ai:EthicsLawLayer
-        ObjectSomeValuesFrom(ai:implements ai:ISOIECFortyTwoZeroZeroOne))
-      SubClassOf(ai:EthicsLawLayer
-        ObjectSomeValuesFrom(ai:implements ai:NISTAIRMF))
-  ## Reduction Relationships
-      SubClassOf(ai:EthicsLawLayer
-        ObjectSomeValuesFrom(ai:reducesTo ai:ComplianceFramework))
-      SubClassOf(ai:EthicsLawLayer
-        ObjectSomeValuesFrom(ai:reducesTo ai:PolicyEngine))
-      SubClassOf(ai:EthicsLawLayer
-        ObjectSomeValuesFrom(ai:reducesTo ai:RightsManagementSystem))
-      SubClassOf(ai:EthicsLawLayer
-        ObjectSomeValuesFrom(ai:reducesTo ai:AuditLogging))
+### Content
 
-  ## About
+## Compositional Relationships (Components)
+    SubClassOf(ai:EthicsLawLayer
+      ObjectSomeValuesFrom(ai:hasPart ai:ComplianceFramework))
+    SubClassOf(ai:EthicsLawLayer
+      ObjectSomeValuesFrom(ai:hasPart ai:EthicalAIGuidelines))
+    SubClassOf(ai:EthicsLawLayer
+      ObjectSomeValuesFrom(ai:hasPart ai:LegalRegulationSchema))
+    SubClassOf(ai:EthicsLawLayer
+      ObjectSomeValuesFrom(ai:hasPart ai:RightsManagementSystem))
+    SubClassOf(ai:EthicsLawLayer
+      ObjectSomeValuesFrom(ai:hasPart ai:PolicyEngine))
+    SubClassOf(ai:EthicsLawLayer
+      ObjectSomeValuesFrom(ai:hasPart ai:AuditLogging))
+    SubClassOf(ai:EthicsLawLayer
+      ObjectSomeValuesFrom(ai:hasPart ai:IdentityManagement))
+## Dependency Relationships
+    SubClassOf(ai:EthicsLawLayer
+      ObjectSomeValuesFrom(ai:requires ai:PolicyEngine))
+    SubClassOf(ai:EthicsLawLayer
+      ObjectSomeValuesFrom(ai:requires ai:IdentityManagement))
+    SubClassOf(ai:EthicsLawLayer
+      ObjectSomeValuesFrom(ai:requires ai:AuditLogging))
+    SubClassOf(ai:EthicsLawLayer
+      ObjectSomeValuesFrom(ai:requires ai:TrustFramework))
+    SubClassOf(ai:EthicsLawLayer
+      ObjectSomeValuesFrom(ai:requires ai:RegulatoryStandards))
+    SubClassOf(ai:EthicsLawLayer
+      ObjectSomeValuesFrom(ai:requires ai:EthicsPrinciples))
+## Capability Relationships
+    SubClassOf(ai:EthicsLawLayer
+      ObjectSomeValuesFrom(ai:enables ai:ResponsibleAI))
+    SubClassOf(ai:EthicsLawLayer
+      ObjectSomeValuesFrom(ai:enables ai:LegalCompliance))
+    SubClassOf(ai:EthicsLawLayer
+      ObjectSomeValuesFrom(ai:enables ai:EthicalGovernance))
+    SubClassOf(ai:EthicsLawLayer
+      ObjectSomeValuesFrom(ai:enables ai:RightsProtection))
+    SubClassOf(ai:EthicsLawLayer
+      ObjectSomeValuesFrom(ai:enables ai:Accountability))
+    SubClassOf(ai:EthicsLawLayer
+      ObjectSomeValuesFrom(ai:enables ai:Transparency))
+## Implementation Relationships
+    SubClassOf(ai:EthicsLawLayer
+      ObjectSomeValuesFrom(ai:implements ai:EUAIAct))
+    SubClassOf(ai:EthicsLawLayer
+      ObjectSomeValuesFrom(ai:implements ai:GDPR))
+    SubClassOf(ai:EthicsLawLayer
+      ObjectSomeValuesFrom(ai:implements ai:OECDAIPrinciples))
+    SubClassOf(ai:EthicsLawLayer
+      ObjectSomeValuesFrom(ai:implements ai:ISOIECFortyTwoZeroZeroOne))
+    SubClassOf(ai:EthicsLawLayer
+      ObjectSomeValuesFrom(ai:implements ai:NISTAIRMF))
+## Reduction Relationships
+    SubClassOf(ai:EthicsLawLayer
+      ObjectSomeValuesFrom(ai:reducesTo ai:ComplianceFramework))
+    SubClassOf(ai:EthicsLawLayer
+      ObjectSomeValuesFrom(ai:reducesTo ai:PolicyEngine))
+    SubClassOf(ai:EthicsLawLayer
+      ObjectSomeValuesFrom(ai:reducesTo ai:RightsManagementSystem))
+    SubClassOf(ai:EthicsLawLayer
+      ObjectSomeValuesFrom(ai:reducesTo ai:AuditLogging))
 
-  The Ethics & Law Layer concept emerges from the recognition that ethical commitments and legal obligations cannot remain external to the systems they govern; they must be embedded as first-class architectural components that shape system behaviour at runtime rather than constraining it only through post-hoc audit. In early AI governance discourse, the dominant model was sequential: design a system, evaluate it against ethical criteria, adjust if needed, then deploy. This model proved inadequate because it treated ethics as a filter applied at deployment boundaries rather than as a continuous constraint woven through system operation. The layered architectural approach — treating ethics and law as an explicit middleware stratum — emerged from software engineering practice (particularly in enterprise compliance systems and security architectures) and was formalised in AI governance literature as the imperative to operationalise principles became urgent with large-scale AI deployment in high-risk domains.
+## About
 
-  In the context of the MSF (Metaverse Standards Forum) taxonomy from which this concept originates, the Ethics & Law Layer specifically addresses the governance challenges of persistent virtual environments: spaces where millions of users interact through avatars, economic transactions occur under novel property regimes, identity is fluid or pseudonymous, and the platform operator exercises quasi-governmental control over inhabitants. These environments expose the limits of pre-existing legal frameworks — territorial jurisdiction breaks down when users from 50 countries interact in a single virtual space; intellectual property law struggles with user-generated content that is simultaneously a creative work, an economic asset, and a software object; and personal data protection becomes complex when behavioural and biometric signals (gaze tracking, body movement, emotional response) are continuously harvested to drive experience personalisation. The Ethics & Law Layer provides the governance infrastructure to address these challenges through a combination of technical enforcement mechanisms (the [[Policy Engine]] that evaluates proposed actions), rights management systems (that assign, track, and enforce [[Rights Protection]] claims over virtual assets and personal data), and audit infrastructure (the [[Audit Logging]] system that creates the evidence trail needed for accountability).
+The Ethics & Law Layer concept emerges from the recognition that ethical commitments and legal obligations cannot remain external to the systems they govern; they must be embedded as first-class architectural components that shape system behaviour at runtime rather than constraining it only through post-hoc audit. In early AI governance discourse, the dominant model was sequential: design a system, evaluate it against ethical criteria, adjust if needed, then deploy. This model proved inadequate because it treated ethics as a filter applied at deployment boundaries rather than as a continuous constraint woven through system operation. The layered architectural approach — treating ethics and law as an explicit middleware stratum — emerged from software engineering practice (particularly in enterprise compliance systems and security architectures) and was formalised in AI governance literature as the imperative to operationalise principles became urgent with large-scale AI deployment in high-risk domains.
 
-  The layer's relationship to broader [[AI Governance and Ethics]] is one of instantiation: it takes abstract governance requirements — "AI systems should be transparent," "individuals should be able to contest automated decisions," "personal data should be processed only for specified purposes" — and transforms them into concrete system behaviours: transparency-by-design components that log model explanations alongside decisions; human escalation pathways that activate when algorithmic confidence falls below threshold; data minimisation controls that prevent collection of attributes beyond defined scope. This transformation is both technical and organisational: technical because it requires software components that enforce policies at runtime; organisational because it requires governance structures that maintain the policy set, conduct reviews when regulations change, and ensure human oversight for decisions that exceed automated authority. The [[Compliance Framework]] that the layer contains is not a static document but a living operational artefact that must be updated as the regulatory environment evolves — a challenging requirement given the pace of AI regulation in the 2024–2026 period, when the EU AI Act, South Korea's Basic Act on AI, the Council of Europe's AI Convention, and numerous national AI strategies all entered force within a twenty-four-month window.
+In the context of the MSF (Metaverse Standards Forum) taxonomy from which this concept originates, the Ethics & Law Layer specifically addresses the governance challenges of persistent virtual environments: spaces where millions of users interact through avatars, economic transactions occur under novel property regimes, identity is fluid or pseudonymous, and the platform operator exercises quasi-governmental control over inhabitants. These environments expose the limits of pre-existing legal frameworks — territorial jurisdiction breaks down when users from 50 countries interact in a single virtual space; intellectual property law struggles with user-generated content that is simultaneously a creative work, an economic asset, and a software object; and personal data protection becomes complex when behavioural and biometric signals (gaze tracking, body movement, emotional response) are continuously harvested to drive experience personalisation. The Ethics & Law Layer provides the governance infrastructure to address these challenges through a combination of technical enforcement mechanisms (the [[Policy Engine]] that evaluates proposed actions), rights management systems (that assign, track, and enforce [[Rights Protection]] claims over virtual assets and personal data), and audit infrastructure (the [[Audit Logging]] system that creates the evidence trail needed for accountability).
 
-  ## Components / Architecture
+The layer's relationship to broader [[AI Governance and Ethics]] is one of instantiation: it takes abstract governance requirements — "AI systems should be transparent," "individuals should be able to contest automated decisions," "personal data should be processed only for specified purposes" — and transforms them into concrete system behaviours: transparency-by-design components that log model explanations alongside decisions; human escalation pathways that activate when algorithmic confidence falls below threshold; data minimisation controls that prevent collection of attributes beyond defined scope. This transformation is both technical and organisational: technical because it requires software components that enforce policies at runtime; organisational because it requires governance structures that maintain the policy set, conduct reviews when regulations change, and ensure human oversight for decisions that exceed automated authority. The [[Compliance Framework]] that the layer contains is not a static document but a living operational artefact that must be updated as the regulatory environment evolves — a challenging requirement given the pace of AI regulation in the 2024–2026 period, when the EU AI Act, South Korea's Basic Act on AI, the Council of Europe's AI Convention, and numerous national AI strategies all entered force within a twenty-four-month window.
 
-  The Ethics & Law Layer is composed of six principal sub-components that work in concert to provide comprehensive normative governance:
+## Components / Architecture
 
-  **Policy Engine**
-  - The central enforcement component; evaluates proposed system actions against a multi-source rule-set derived from ethical guidelines, regulatory requirements, and organisational policies
-  - Implements both hard constraints (rules that cannot be overridden — the EU AI Act's prohibited AI practices under Article 5) and soft constraints (guidelines that trigger human review when breached)
-  - Integrates policy-as-code approaches (e.g., Open Policy Agent, Rego language) enabling declarative specification of governance rules that can be version-controlled and tested
-  - Interfaces with external regulatory APIs to receive real-time updates when regulatory guidance changes
-  - Escalation logic routes decisions that exceed automated authority to human reviewers with appropriate context
+The Ethics & Law Layer is composed of six principal sub-components that work in concert to provide comprehensive normative governance:
+
+**Policy Engine**
+
+- The central enforcement component; evaluates proposed system actions against a multi-source rule-set derived from ethical guidelines, regulatory requirements, and organisational policies
+- Implements both hard constraints (rules that cannot be overridden — the EU AI Act's prohibited AI practices under Article 5) and soft constraints (guidelines that trigger human review when breached)
+- Integrates policy-as-code approaches (e.g., Open Policy Agent, Rego language) enabling declarative specification of governance rules that can be version-controlled and tested
+- Interfaces with external regulatory APIs to receive real-time updates when regulatory guidance changes
+- Escalation logic routes decisions that exceed automated authority to human reviewers with appropriate context
 
   **Legal Regulation Schema**
-  - Structured ontological representation of applicable legal obligations mapped to system contexts
-  - Covers: EU AI Act risk tiers and obligations; GDPR data protection requirements; sector-specific instruments (FCA AI guidance, MHRA AI medical device requirements, NHS AIDE framework)
-  - Maintains jurisdiction mappings for cross-border deployments — EU, UK post-Brexit, US (state and federal), APAC regional requirements
-  - Versioned to track regulatory change; schema updates trigger policy engine rule reviews
+
+- Structured ontological representation of applicable legal obligations mapped to system contexts
+- Covers: EU AI Act risk tiers and obligations; GDPR data protection requirements; sector-specific instruments (FCA AI guidance, MHRA AI medical device requirements, NHS AIDE framework)
+- Maintains jurisdiction mappings for cross-border deployments — EU, UK post-Brexit, US (state and federal), APAC regional requirements
+- Versioned to track regulatory change; schema updates trigger policy engine rule reviews
 
   **Rights Management System**
-  - Tracks and enforces rights claims across: data subject rights (GDPR Articles 15-22); intellectual property rights over user-generated content; digital property rights in virtual environments; identity rights and pseudonymity preferences
-  - Implements automated rights fulfilment workflows (access request processing, deletion workflows, portability exports)
-  - Maintains consent ledger recording lawful basis for each data processing activity with timestamps and audit trails
-  - For metaverse contexts: manages avatar identity rights, virtual asset ownership claims, and cross-platform portability of user-created content
+
+- Tracks and enforces rights claims across: data subject rights (GDPR Articles 15-22); intellectual property rights over user-generated content; digital property rights in virtual environments; identity rights and pseudonymity preferences
+- Implements automated rights fulfilment workflows (access request processing, deletion workflows, portability exports)
+- Maintains consent ledger recording lawful basis for each data processing activity with timestamps and audit trails
+- For metaverse contexts: manages avatar identity rights, virtual asset ownership claims, and cross-platform portability of user-created content
 
   **Audit Logging Infrastructure**
-  - Immutable, timestamped records of all system decisions with full provenance: inputs, model version, policy rules applied, confidence scores, human reviewer actions
-  - Supports post-hoc accountability analysis, regulatory inspection, and incident investigation
-  - Integrates with [[Blockchain]]-based tamper-evident logging for high-assurance contexts requiring multi-party audit trust
-  - Retention policies aligned to regulatory requirements (GDPR data minimisation vs. EU AI Act post-market monitoring obligations — a tension requiring jurisdiction-specific configuration)
+
+- Immutable, timestamped records of all system decisions with full provenance: inputs, model version, policy rules applied, confidence scores, human reviewer actions
+- Supports post-hoc accountability analysis, regulatory inspection, and incident investigation
+- Integrates with [[Blockchain]]-based tamper-evident logging for high-assurance contexts requiring multi-party audit trust
+- Retention policies aligned to regulatory requirements (GDPR data minimisation vs. EU AI Act post-market monitoring obligations — a tension requiring jurisdiction-specific configuration)
 
   **Identity Management**
-  - Authenticates and authorises agents (humans, AI systems, automated processes) interacting with system components
-  - Maps actions to accountable principals enabling the "who did what, when" attribution required for legal accountability
-  - Manages identity in complex contexts: pseudonymous virtual world identities; AI agent identities in multi-agent systems; cross-jurisdictional identity federation
-  - Integrates with [[Trust Framework]] credential infrastructure for verifiable identity claims
+
+- Authenticates and authorises agents (humans, AI systems, automated processes) interacting with system components
+- Maps actions to accountable principals enabling the "who did what, when" attribution required for legal accountability
+- Manages identity in complex contexts: pseudonymous virtual world identities; AI agent identities in multi-agent systems; cross-jurisdictional identity federation
+- Integrates with [[Trust Framework]] credential infrastructure for verifiable identity claims
 
   **Ethical AI Guidelines Module**
-  - Operationalises ethical principles as system constraints: translates abstract requirements (fairness, non-maleficence, autonomy-preservation) into measurable metrics that the policy engine can evaluate
-  - Integrates algorithmic fairness libraries (disparate impact testing, counterfactual fairness evaluation) as runtime monitoring components
-  - Produces [[Algorithmic Impact Assessment]] artefacts documenting ethical review outcomes for high-risk decisions
-  - Interfaces with [[Explainable AI]] components to ensure explanations are generated and accessible to affected individuals
+
+- Operationalises ethical principles as system constraints: translates abstract requirements (fairness, non-maleficence, autonomy-preservation) into measurable metrics that the policy engine can evaluate
+- Integrates algorithmic fairness libraries (disparate impact testing, counterfactual fairness evaluation) as runtime monitoring components
+- Produces [[Algorithmic Impact Assessment]] artefacts documenting ethical review outcomes for high-risk decisions
+- Interfaces with [[Explainable AI]] components to ensure explanations are generated and accessible to affected individuals
 
   ## Use Cases / Major Families
 
@@ -203,5 +209,5 @@ Framework layer defining norms, rights, and regulations for responsible conduct 
   27. Morley, J., et al. (2021). From What to How: An Initial Review of Publicly Available AI Ethics Tools, Methods and Research to Translate Principles into Practices. *Science and Engineering Ethics*, 26, 2141–2168.
   28. AI21 Labs (2025). *9 Key AI Governance Frameworks in 2025*. AI21 Knowledge Base. https://www.ai21.com/knowledge/ai-governance-frameworks/
 
-- ### Provenance
+### Provenance
 

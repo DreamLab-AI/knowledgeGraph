@@ -1,163 +1,162 @@
-
 A Distributed Protocol is a formally specified set of rules, message formats, and procedures governing communication, coordination, and state synchronization among independent nodes in a distributed network without centralized control.
 
-- ### Semantic Classification
+### Semantic Classification
 
-- ### Content
+### Content
 
-  ## Class Declaration
-  Declaration(Class(:DistributedProtocol))
+## Class Declaration
+Declaration(Class(:DistributedProtocol))
 
-  ## Subclass Relationships
-  SubClassOf(:DistributedProtocol :BlockchainEntity)
+## Subclass Relationships
+SubClassOf(:DistributedProtocol :BlockchainEntity)
 
-  ## Essential Properties
-  SubClassOf(:DistributedProtocol
-    (ObjectMinCardinality 2 :implementedBy :Node))
+## Essential Properties
+SubClassOf(:DistributedProtocol
+  (ObjectMinCardinality 2 :implementedBy :Node))
 
-  SubClassOf(:DistributedProtocol
-    (DataHasValue :isDecentralized "true"^^xsd:boolean))
+SubClassOf(:DistributedProtocol
+  (DataHasValue :isDecentralized "true"^^xsd:boolean))
 
-  SubClassOf(:DistributedProtocol
-    (DataHasValue :hasFormalSpecification "true"^^xsd:boolean))
+SubClassOf(:DistributedProtocol
+  (DataHasValue :hasFormalSpecification "true"^^xsd:boolean))
 
-  ## Protocol Characteristics
-  SubClassOf(:DistributedProtocol
-    (ObjectSomeValuesFrom :definesMessageFormat :MessageFormat))
+## Protocol Characteristics
+SubClassOf(:DistributedProtocol
+  (ObjectSomeValuesFrom :definesMessageFormat :MessageFormat))
 
-  SubClassOf(:DistributedProtocol
-    (ObjectSomeValuesFrom :specifiesRule :ProtocolRule))
+SubClassOf(:DistributedProtocol
+  (ObjectSomeValuesFrom :specifiesRule :ProtocolRule))
 
-  ## Fault Tolerance Properties
-  SubClassOf(:DistributedProtocol
-    (DataSomeValuesFrom :toleratesByzantineFaults xsd:boolean))
+## Fault Tolerance Properties
+SubClassOf(:DistributedProtocol
+  (DataSomeValuesFrom :toleratesByzantineFaults xsd:boolean))
 
-  SubClassOf(:DistributedProtocol
-    (DataSomeValuesFrom :toleratesNetworkPartition xsd:boolean))
+SubClassOf(:DistributedProtocol
+  (DataSomeValuesFrom :toleratesNetworkPartition xsd:boolean))
 
-  SubClassOf(:DistributedProtocol
-    (DataSomeValuesFrom :toleratesAsynchrony xsd:boolean))
+SubClassOf(:DistributedProtocol
+  (DataSomeValuesFrom :toleratesAsynchrony xsd:boolean))
 
-  ## Data Properties
-  DataPropertyAssertion(:hasProtocolVersion :DistributedProtocol xsd:string)
-  DataPropertyAssertion(:hasCommunicationComplexity :DistributedProtocol xsd:string)
-  DataPropertyAssertion(:hasLatency :DistributedProtocol xsd:duration)
-  DataPropertyAssertion(:hasThroughput :DistributedProtocol xsd:decimal)
-  DataPropertyAssertion(:hasFaultToleranceThreshold :DistributedProtocol xsd:decimal)
+## Data Properties
+DataPropertyAssertion(:hasProtocolVersion :DistributedProtocol xsd:string)
+DataPropertyAssertion(:hasCommunicationComplexity :DistributedProtocol xsd:string)
+DataPropertyAssertion(:hasLatency :DistributedProtocol xsd:duration)
+DataPropertyAssertion(:hasThroughput :DistributedProtocol xsd:decimal)
+DataPropertyAssertion(:hasFaultToleranceThreshold :DistributedProtocol xsd:decimal)
 
-  ## Object Properties
-  ObjectPropertyAssertion(:implementedBy :DistributedProtocol :Node)
-  ObjectPropertyAssertion(:definesMessageFormat :DistributedProtocol :MessageFormat)
-  ObjectPropertyAssertion(:specifiesRule :DistributedProtocol :ProtocolRule)
-  ObjectPropertyAssertion(:coordinatesActivity :DistributedProtocol :DistributedActivity)
-  ObjectPropertyAssertion(:ensuresProperty :DistributedProtocol :SafetyProperty)
+## Object Properties
+ObjectPropertyAssertion(:implementedBy :DistributedProtocol :Node)
+ObjectPropertyAssertion(:definesMessageFormat :DistributedProtocol :MessageFormat)
+ObjectPropertyAssertion(:specifiesRule :DistributedProtocol :ProtocolRule)
+ObjectPropertyAssertion(:coordinatesActivity :DistributedProtocol :DistributedActivity)
+ObjectPropertyAssertion(:ensuresProperty :DistributedProtocol :SafetyProperty)
 
-  ## Property Characteristics
-  ObjectPropertyDomain(:implementedBy :DistributedProtocol)
-  ObjectPropertyRange(:implementedBy :Node)
+## Property Characteristics
+ObjectPropertyDomain(:implementedBy :DistributedProtocol)
+ObjectPropertyRange(:implementedBy :Node)
 
-  ObjectPropertyDomain(:definesMessageFormat :DistributedProtocol)
-  ObjectPropertyRange(:definesMessageFormat :MessageFormat)
+ObjectPropertyDomain(:definesMessageFormat :DistributedProtocol)
+ObjectPropertyRange(:definesMessageFormat :MessageFormat)
 
-  FunctionalDataProperty(:hasProtocolVersion)
+FunctionalDataProperty(:hasProtocolVersion)
 
-  ## Annotations
-  AnnotationAssertion(rdfs:label :DistributedProtocol "Distributed Protocol"@en)
-  AnnotationAssertion(rdfs:comment :DistributedProtocol
-    "Formal specification governing peer-to-peer coordination without central control"@en)
-  AnnotationAssertion(dct:description :DistributedProtocol
-    "Rules and procedures for communication and coordination among independent network nodes"@en)
-  AnnotationAssertion(:termID :DistributedProtocol "PC-0006")
-  AnnotationAssertion(:authorityScore :DistributedProtocol "0.95"^^xsd:decimal)
-  AnnotationAssertion(dct:created :DistributedProtocol "2025-11-08"^^xsd:date)
-  AnnotationAssertion(skos:definition :DistributedProtocol
-    "Formally specified rules governing coordination among independent nodes in distributed networks"@en)
+## Annotations
+AnnotationAssertion(rdfs:label :DistributedProtocol "Distributed Protocol"@en)
+AnnotationAssertion(rdfs:comment :DistributedProtocol
+  "Formal specification governing peer-to-peer coordination without central control"@en)
+AnnotationAssertion(dct:description :DistributedProtocol
+  "Rules and procedures for communication and coordination among independent network nodes"@en)
+AnnotationAssertion(:termID :DistributedProtocol "PC-0006")
+AnnotationAssertion(:authorityScore :DistributedProtocol "0.95"^^xsd:decimal)
+AnnotationAssertion(dct:created :DistributedProtocol "2025-11-08"^^xsd:date)
+AnnotationAssertion(skos:definition :DistributedProtocol
+  "Formally specified rules governing coordination among independent nodes in distributed networks"@en)
 
-  ## Protocol Categories
-  SubClassOf(:DistributedProtocol
-    (ObjectUnionOf :ConsensusProtocol :GossipProtocol :DiscoveryProtocol :SynchronizationProtocol))
+## Protocol Categories
+SubClassOf(:DistributedProtocol
+  (ObjectUnionOf :ConsensusProtocol :GossipProtocol :DiscoveryProtocol :SynchronizationProtocol))
 
-  ## Safety and Liveness Properties
-  SubClassOf(:DistributedProtocol
-    (ObjectSomeValuesFrom :ensuresProperty :SafetyProperty))
+## Safety and Liveness Properties
+SubClassOf(:DistributedProtocol
+  (ObjectSomeValuesFrom :ensuresProperty :SafetyProperty))
 
-  SubClassOf(:DistributedProtocol
-    (ObjectSomeValuesFrom :ensuresProperty :LivenessProperty))
-  )
+SubClassOf(:DistributedProtocol
+  (ObjectSomeValuesFrom :ensuresProperty :LivenessProperty))
+)
 
-  - ## About Distributed Protocol
+## About Distributed Protocol
 
-  - Distributed Protocols form the communication and coordination backbone of blockchain systems, enabling thousands of independent nodes to act as a coherent system without central coordination. These protocols solve one of distributed computing's hardest problems: how can mutually distrusting parties, communicating over unreliable networks with unpredictable delays, agree on a shared state?
+- Distributed Protocols form the communication and coordination backbone of blockchain systems, enabling thousands of independent nodes to act as a coherent system without central coordination. These protocols solve one of distributed computing's hardest problems: how can mutually distrusting parties, communicating over unreliable networks with unpredictable delays, agree on a shared state?
+- The fundamental challenges addressed by distributed protocols stem from the impossibility results of distributed computing: the FLP impossibility theorem proves that no deterministic protocol can guarantee consensus in asynchronous networks with even one crash failure; the CAP theorem demonstrates that distributed systems can't simultaneously guarantee consistency, availability, and partition tolerance; and the Byzantine Generals Problem shows the difficulty of reaching agreement when some participants may be malicious. Blockchain protocols navigate these impossibilities through careful design choices: Bitcoin accepts probabilistic rather than deterministic finality, achieving consensus with high probability; Ethereum 2.0 uses synchrony assumptions and finality gadgets for stronger guarantees; and various protocols make different CAP theorem trade-offs based on use case requirements.
+- Blockchain distributed protocols operate at multiple layers: gossip protocols disseminate transactions and blocks through peer-to-peer flooding, trading redundant communication for reliability; discovery protocols help nodes find peers through distributed hash tables or DNS seeds; synchronization protocols enable new nodes to download blockchain state from peers; and consensus protocols—the crown jewel—coordinate agreement on transaction ordering. Each protocol must specify message formats, state transitions, and failure handling while minimizing communication rounds (latency), message complexity (bandwidth), and computational requirements (scalability).
 
-  - The fundamental challenges addressed by distributed protocols stem from the impossibility results of distributed computing: the FLP impossibility theorem proves that no deterministic protocol can guarantee consensus in asynchronous networks with even one crash failure; the CAP theorem demonstrates that distributed systems can't simultaneously guarantee consistency, availability, and partition tolerance; and the Byzantine Generals Problem shows the difficulty of reaching agreement when some participants may be malicious. Blockchain protocols navigate these impossibilities through careful design choices: Bitcoin accepts probabilistic rather than deterministic finality, achieving consensus with high probability; Ethereum 2.0 uses synchrony assumptions and finality gadgets for stronger guarantees; and various protocols make different CAP theorem trade-offs based on use case requirements.
+### Key Characteristics
 
-  - Blockchain distributed protocols operate at multiple layers: gossip protocols disseminate transactions and blocks through peer-to-peer flooding, trading redundant communication for reliability; discovery protocols help nodes find peers through distributed hash tables or DNS seeds; synchronization protocols enable new nodes to download blockchain state from peers; and consensus protocols—the crown jewel—coordinate agreement on transaction ordering. Each protocol must specify message formats, state transitions, and failure handling while minimizing communication rounds (latency), message complexity (bandwidth), and computational requirements (scalability).
+- **Peer-to-Peer Communication**: Direct node-to-node interaction without intermediaries
+- **Formal Specification**: Mathematically precise rules for protocol execution
+- **Fault Tolerance**: Continues operating despite node failures or malicious behavior
+- **Asynchrony Handling**: Functions despite unpredictable network delays
+- **Message Ordering**: Coordinates event sequencing across distributed nodes
+- **State Consistency**: Ensures nodes converge to agreement on system state
+- **Byzantine Resistance**: Maintains correctness despite arbitrary node behavior
 
-  - ### Key Characteristics
-    - **Peer-to-Peer Communication**: Direct node-to-node interaction without intermediaries
-    - **Formal Specification**: Mathematically precise rules for protocol execution
-    - **Fault Tolerance**: Continues operating despite node failures or malicious behavior
-    - **Asynchrony Handling**: Functions despite unpredictable network delays
-    - **Message Ordering**: Coordinates event sequencing across distributed nodes
-    - **State Consistency**: Ensures nodes converge to agreement on system state
-    - **Byzantine Resistance**: Maintains correctness despite arbitrary node behavior
+### Subclasses
 
-  - ### Subclasses
-    - [[Consensus Mechanism]] (PC-0009, BC-0051) - Agreement on transaction ordering
-    - [[Gossip Protocol]] - Information dissemination through peer flooding
-    - [[Peer Discovery Protocol]] - Network topology management
-    - [[State Synchronization Protocol]] - New node bootstrapping
-    - [[Block Propagation Protocol]] - Efficient block distribution
-    - [[Transaction Broadcast Protocol]] - Transaction dissemination
-    - [[Agreement Protocol]] (PC-0007) - General distributed agreement mechanisms
+- [[Consensus Mechanism]] (PC-0009, BC-0051) - Agreement on transaction ordering
+- [[Gossip Protocol]] - Information dissemination through peer flooding
+- [[Peer Discovery Protocol]] - Network topology management
+- [[State Synchronization Protocol]] - New node bootstrapping
+- [[Block Propagation Protocol]] - Efficient block distribution
+- [[Transaction Broadcast Protocol]] - Transaction dissemination
+- [[Agreement Protocol]] (PC-0007) - General distributed agreement mechanisms
 
-  - ### Use in Ontology
-    - **Protocol Classification**: Parent for various distributed coordination mechanisms
-    - **Fault Tolerance Semantics**: Properties for Byzantine, crash, and partition tolerance
-    - **Performance Metrics**: Framework for latency, throughput, and communication complexity
-    - **Safety/Liveness Properties**: Formal guarantees about protocol correctness
-    - **Message Semantics**: Defines message formats and communication patterns
+### Use in Ontology
+
+- **Protocol Classification**: Parent for various distributed coordination mechanisms
+- **Fault Tolerance Semantics**: Properties for Byzantine, crash, and partition tolerance
+- **Performance Metrics**: Framework for latency, throughput, and communication complexity
+- **Safety/Liveness Properties**: Formal guarantees about protocol correctness
+- **Message Semantics**: Defines message formats and communication patterns
   ## Academic Context
-
-  - Distributed protocols are sets of rules enabling multiple independent computers (nodes) to coordinate and agree on shared data states without a central authority.
-  - They underpin technologies such as blockchain, cloud computing, and distributed databases by ensuring data consistency, security, and fault tolerance.
-  - The academic foundations lie in distributed computing theory, consensus algorithms, and cryptographic validation, with seminal protocols including Paxos and Byzantine Fault Tolerance models.
-  - Key developments include formal verification techniques that automate proving protocol correctness, enhancing trustworthiness and security in complex distributed systems.
+- Distributed protocols are sets of rules enabling multiple independent computers (nodes) to coordinate and agree on shared data states without a central authority.
+- They underpin technologies such as blockchain, cloud computing, and distributed databases by ensuring data consistency, security, and fault tolerance.
+- The academic foundations lie in distributed computing theory, consensus algorithms, and cryptographic validation, with seminal protocols including Paxos and Byzantine Fault Tolerance models.
+- Key developments include formal verification techniques that automate proving protocol correctness, enhancing trustworthiness and security in complex distributed systems.
 
   ## Current Landscape (2025)
 
-  - Distributed protocols are widely adopted across industries for decentralised applications, cloud services, and financial systems.
-  - Notable implementations include blockchain platforms like Ethereum and Hyperledger, cloud providers employing consensus protocols for reliability, and financial institutions leveraging distributed ledger technology (DLT) for transaction transparency.
-  - In the UK, especially in North England cities such as Manchester, Leeds, Newcastle, and Sheffield, innovation hubs focus on blockchain startups and distributed computing research, often collaborating with universities and tech incubators.
-  - Technical capabilities have advanced to support scalability, fault tolerance, and regulatory compliance, guided by standards such as IEEE Std 3220.01-2025, which categorises consensus mechanisms and defines their operational criteria.
-  - Limitations remain in balancing decentralisation with performance and energy efficiency, prompting hybrid consensus models and permissioned blockchain frameworks.
+- Distributed protocols are widely adopted across industries for decentralised applications, cloud services, and financial systems.
+- Notable implementations include blockchain platforms like Ethereum and Hyperledger, cloud providers employing consensus protocols for reliability, and financial institutions leveraging distributed ledger technology (DLT) for transaction transparency.
+- In the UK, especially in North England cities such as Manchester, Leeds, Newcastle, and Sheffield, innovation hubs focus on blockchain startups and distributed computing research, often collaborating with universities and tech incubators.
+- Technical capabilities have advanced to support scalability, fault tolerance, and regulatory compliance, guided by standards such as IEEE Std 3220.01-2025, which categorises consensus mechanisms and defines their operational criteria.
+- Limitations remain in balancing decentralisation with performance and energy efficiency, prompting hybrid consensus models and permissioned blockchain frameworks.
 
   ## Research & Literature
 
-  - Key academic sources include:
-  - Lamport, L., Shostak, R., & Pease, M. (1982). "The Byzantine Generals Problem." *ACM Transactions on Programming Languages and Systems*, 4(3), 382–401. DOI:10.1145/357172.357176
-  - Ongaro, D., & Ousterhout, J. (2014). "In Search of an Understandable Consensus Algorithm (Raft)." *USENIX Annual Technical Conference*. URL: https://raft.github.io/raft.pdf
-  - Goel, A., et al. (2024). "Towards an Automatic Proof of Lamport’s Paxos." *Formal Methods in Computer-Aided Design Conference*. arXiv: https://arxiv.org/abs/2410.12345
-  - IEEE Computer Society (2025). "IEEE Std 3220.01-2025: Blockchain Consensus Framework." IEEE Standards Association.
-  - Ongoing research focuses on automated formal verification, hybrid consensus protocols combining Proof of Stake and Byzantine Fault Tolerance, and enhancing protocol resilience against increasingly sophisticated cyber threats.
+- Key academic sources include:
+- Lamport, L., Shostak, R., & Pease, M. (1982). "The Byzantine Generals Problem." *ACM Transactions on Programming Languages and Systems*, 4(3), 382–401. DOI:10.1145/357172.357176
+- Ongaro, D., & Ousterhout, J. (2014). "In Search of an Understandable Consensus Algorithm (Raft)." *USENIX Annual Technical Conference*. URL: https://raft.github.io/raft.pdf
+- Goel, A., et al. (2024). "Towards an Automatic Proof of Lamport’s Paxos." *Formal Methods in Computer-Aided Design Conference*. arXiv: https://arxiv.org/abs/2410.12345
+- IEEE Computer Society (2025). "IEEE Std 3220.01-2025: Blockchain Consensus Framework." IEEE Standards Association.
+- Ongoing research focuses on automated formal verification, hybrid consensus protocols combining Proof of Stake and Byzantine Fault Tolerance, and enhancing protocol resilience against increasingly sophisticated cyber threats.
 
   ## UK Context
 
-  - The UK has been a significant contributor to distributed protocol research and application, with government-backed initiatives supporting blockchain and DLT adoption in finance and public services.
-  - North England hosts vibrant innovation clusters:
-  - Manchester’s tech scene includes blockchain startups and research partnerships with the University of Manchester.
-  - Leeds and Sheffield have growing fintech ecosystems exploring distributed ledger applications in supply chain and healthcare.
-  - Newcastle is notable for academic research in distributed systems and hosting conferences on distributed computing.
-  - Regional case studies highlight collaborations between universities and industry to pilot distributed protocols for secure data sharing and digital identity management.
+- The UK has been a significant contributor to distributed protocol research and application, with government-backed initiatives supporting blockchain and DLT adoption in finance and public services.
+- North England hosts vibrant innovation clusters:
+- Manchester’s tech scene includes blockchain startups and research partnerships with the University of Manchester.
+- Leeds and Sheffield have growing fintech ecosystems exploring distributed ledger applications in supply chain and healthcare.
+- Newcastle is notable for academic research in distributed systems and hosting conferences on distributed computing.
+- Regional case studies highlight collaborations between universities and industry to pilot distributed protocols for secure data sharing and digital identity management.
 
   ## Future Directions
 
-  - Emerging trends include:
-  - Increased automation in protocol verification to reduce human error and accelerate deployment.
-  - Development of energy-efficient consensus mechanisms to address environmental concerns.
-  - Expansion of permissioned blockchain models tailored for regulatory compliance in financial and governmental sectors.
-  - Anticipated challenges involve scaling protocols without compromising decentralisation, ensuring privacy in transparent ledgers, and integrating distributed protocols with legacy IT infrastructure.
-  - Research priorities emphasise cross-disciplinary approaches combining cryptography, formal methods, and network engineering to create robust, adaptable distributed protocols fit for diverse applications.
+- Emerging trends include:
+- Increased automation in protocol verification to reduce human error and accelerate deployment.
+- Development of energy-efficient consensus mechanisms to address environmental concerns.
+- Expansion of permissioned blockchain models tailored for regulatory compliance in financial and governmental sectors.
+- Anticipated challenges involve scaling protocols without compromising decentralisation, ensuring privacy in transparent ledgers, and integrating distributed protocols with legacy IT infrastructure.
+- Research priorities emphasise cross-disciplinary approaches combining cryptography, formal methods, and network engineering to create robust, adaptable distributed protocols fit for diverse applications.
 
   ## References
 
@@ -168,13 +167,12 @@ A Distributed Protocol is a formally specified set of rules, message formats, an
   5. Financial Stability Board. (2019). Decentralised Financial Technologies: Report on Financial Stability, Regulatory and Governance Implications.  
   6. ICMA. (2024). Distributed Ledger Technology and Blockchain in Bond Markets. International Capital Market Association.
 
-
   ## Metadata
 
-  - **Last Updated**: 2025-11-11
-  - **Review Status**: Comprehensive editorial review
-  - **Verification**: Academic sources verified
-  - **Regional Context**: UK/North England where applicable
+- **Last Updated**: 2025-11-11
+- **Review Status**: Comprehensive editorial review
+- **Verification**: Academic sources verified
+- **Regional Context**: UK/North England where applicable
 
-- ### Provenance
+### Provenance
 

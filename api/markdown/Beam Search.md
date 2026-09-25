@@ -1,170 +1,178 @@
-
 Beam search is a heuristic search algorithm that explores a graph by expanding the most promising nodes within a fixed-width frontier, called the beam, at each step. In sequence generation tasks it retains the top-k candidate sequences at each decoding step rather than pursuing a single greedy choice, balancing exploration against computational cost.
 
-- ### Semantic Classification
+### Semantic Classification
 
-- ### Content
+### Content
 
-  ## Compositional Relationships (Components)
-      SubClassOf(ai:BeamSearch
-        ObjectSomeValuesFrom(ai:hasPart ai:BeamWidth))
-      SubClassOf(ai:BeamSearch
-        ObjectSomeValuesFrom(ai:hasPart ai:LengthNormalisation))
-      SubClassOf(ai:BeamSearch
-        ObjectSomeValuesFrom(ai:hasPart ai:LogProbabilityScoring))
-      SubClassOf(ai:BeamSearch
-        ObjectSomeValuesFrom(ai:hasPart ai:HypothesisSet))
-      SubClassOf(ai:BeamSearch
-        ObjectSomeValuesFrom(ai:hasPart ai:CoveragePenalty))
-      SubClassOf(ai:BeamSearch
-        ObjectSomeValuesFrom(ai:hasPart ai:EndOfSequenceHandling))
-      SubClassOf(ai:BeamSearch
-        ObjectSomeValuesFrom(ai:hasPart ai:DiverseBeamSearch))
+## Compositional Relationships (Components)
+    SubClassOf(ai:BeamSearch
+      ObjectSomeValuesFrom(ai:hasPart ai:BeamWidth))
+    SubClassOf(ai:BeamSearch
+      ObjectSomeValuesFrom(ai:hasPart ai:LengthNormalisation))
+    SubClassOf(ai:BeamSearch
+      ObjectSomeValuesFrom(ai:hasPart ai:LogProbabilityScoring))
+    SubClassOf(ai:BeamSearch
+      ObjectSomeValuesFrom(ai:hasPart ai:HypothesisSet))
+    SubClassOf(ai:BeamSearch
+      ObjectSomeValuesFrom(ai:hasPart ai:CoveragePenalty))
+    SubClassOf(ai:BeamSearch
+      ObjectSomeValuesFrom(ai:hasPart ai:EndOfSequenceHandling))
+    SubClassOf(ai:BeamSearch
+      ObjectSomeValuesFrom(ai:hasPart ai:DiverseBeamSearch))
 
-  ## Dependency Relationships
-      SubClassOf(ai:BeamSearch
-        ObjectSomeValuesFrom(ai:requires ai:ProbabilityDistribution))
-      SubClassOf(ai:BeamSearch
-        ObjectSomeValuesFrom(ai:requires ai:SequenceModel))
-      SubClassOf(ai:BeamSearch
-        ObjectSomeValuesFrom(ai:requires ai:AutoregressiveModel))
-      SubClassOf(ai:BeamSearch
-        ObjectSomeValuesFrom(ai:dependsOn ai:LogProbability))
-      SubClassOf(ai:BeamSearch
-        ObjectSomeValuesFrom(ai:dependsOn ai:DynamicProgramming))
-      SubClassOf(ai:BeamSearch
-        ObjectSomeValuesFrom(ai:dependsOn ai:AttentionMechanism))
-      SubClassOf(ai:BeamSearch
-        ObjectSomeValuesFrom(ai:dependsOn ai:LanguageModel))
+## Dependency Relationships
+    SubClassOf(ai:BeamSearch
+      ObjectSomeValuesFrom(ai:requires ai:ProbabilityDistribution))
+    SubClassOf(ai:BeamSearch
+      ObjectSomeValuesFrom(ai:requires ai:SequenceModel))
+    SubClassOf(ai:BeamSearch
+      ObjectSomeValuesFrom(ai:requires ai:AutoregressiveModel))
+    SubClassOf(ai:BeamSearch
+      ObjectSomeValuesFrom(ai:dependsOn ai:LogProbability))
+    SubClassOf(ai:BeamSearch
+      ObjectSomeValuesFrom(ai:dependsOn ai:DynamicProgramming))
+    SubClassOf(ai:BeamSearch
+      ObjectSomeValuesFrom(ai:dependsOn ai:AttentionMechanism))
+    SubClassOf(ai:BeamSearch
+      ObjectSomeValuesFrom(ai:dependsOn ai:LanguageModel))
 
-  ## Capability Relationships
-      SubClassOf(ai:BeamSearch
-        ObjectSomeValuesFrom(ai:enables ai:TextGeneration))
-      SubClassOf(ai:BeamSearch
-        ObjectSomeValuesFrom(ai:enables ai:MachineTranslation))
-      SubClassOf(ai:BeamSearch
-        ObjectSomeValuesFrom(ai:enables ai:SpeechRecognition))
-      SubClassOf(ai:BeamSearch
-        ObjectSomeValuesFrom(ai:enables ai:TextSummarisation))
-      SubClassOf(ai:BeamSearch
-        ObjectSomeValuesFrom(ai:enables ai:CodeGeneration))
-      SubClassOf(ai:BeamSearch
-        ObjectSomeValuesFrom(ai:enables ai:NaturalLanguageGeneration))
-      SubClassOf(ai:BeamSearch
-        ObjectSomeValuesFrom(ai:supports ai:LargeLanguageModels))
-      SubClassOf(ai:BeamSearch
-        ObjectSomeValuesFrom(ai:supports ai:NaturalLanguageProcessing))
+## Capability Relationships
+    SubClassOf(ai:BeamSearch
+      ObjectSomeValuesFrom(ai:enables ai:TextGeneration))
+    SubClassOf(ai:BeamSearch
+      ObjectSomeValuesFrom(ai:enables ai:MachineTranslation))
+    SubClassOf(ai:BeamSearch
+      ObjectSomeValuesFrom(ai:enables ai:SpeechRecognition))
+    SubClassOf(ai:BeamSearch
+      ObjectSomeValuesFrom(ai:enables ai:TextSummarisation))
+    SubClassOf(ai:BeamSearch
+      ObjectSomeValuesFrom(ai:enables ai:CodeGeneration))
+    SubClassOf(ai:BeamSearch
+      ObjectSomeValuesFrom(ai:enables ai:NaturalLanguageGeneration))
+    SubClassOf(ai:BeamSearch
+      ObjectSomeValuesFrom(ai:supports ai:LargeLanguageModels))
+    SubClassOf(ai:BeamSearch
+      ObjectSomeValuesFrom(ai:supports ai:NaturalLanguageProcessing))
 
-  ## Implementation Relationships
-      SubClassOf(ai:BeamSearch
-        ObjectSomeValuesFrom(ai:implements ai:BreadthFirstSearch))
-      SubClassOf(ai:BeamSearch
-        ObjectSomeValuesFrom(ai:implements ai:DynamicProgramming))
-      SubClassOf(ai:BeamSearch
-        ObjectSomeValuesFrom(ai:implements ai:HeuristicSearch))
-      SubClassOf(ai:BeamSearch
-        ObjectSomeValuesFrom(ai:uses ai:LanguageModel))
-      SubClassOf(ai:BeamSearch
-        ObjectSomeValuesFrom(ai:uses ai:EncoderDecoderArchitecture))
-      SubClassOf(ai:BeamSearch
-        ObjectSomeValuesFrom(ai:uses ai:LengthNormalisation))
-      SubClassOf(ai:BeamSearch
-        ObjectSomeValuesFrom(ai:uses ai:LogProbability))
+## Implementation Relationships
+    SubClassOf(ai:BeamSearch
+      ObjectSomeValuesFrom(ai:implements ai:BreadthFirstSearch))
+    SubClassOf(ai:BeamSearch
+      ObjectSomeValuesFrom(ai:implements ai:DynamicProgramming))
+    SubClassOf(ai:BeamSearch
+      ObjectSomeValuesFrom(ai:implements ai:HeuristicSearch))
+    SubClassOf(ai:BeamSearch
+      ObjectSomeValuesFrom(ai:uses ai:LanguageModel))
+    SubClassOf(ai:BeamSearch
+      ObjectSomeValuesFrom(ai:uses ai:EncoderDecoderArchitecture))
+    SubClassOf(ai:BeamSearch
+      ObjectSomeValuesFrom(ai:uses ai:LengthNormalisation))
+    SubClassOf(ai:BeamSearch
+      ObjectSomeValuesFrom(ai:uses ai:LogProbability))
 
-  ## Reduction Relationships
-      SubClassOf(ai:BeamSearch
-        ObjectSomeValuesFrom(ai:reducesTo ai:GreedyDecoding))
-      SubClassOf(ai:BeamSearch
-        ObjectSomeValuesFrom(ai:reducesTo ai:ExhaustiveSearch))
-      SubClassOf(ai:BeamSearch
-        ObjectSomeValuesFrom(ai:reducesTo ai:BestFirstSearch))
-      SubClassOf(ai:BeamSearch
-        ObjectSomeValuesFrom(ai:reducesTo ai:ViterbiAlgorithm))
+## Reduction Relationships
+    SubClassOf(ai:BeamSearch
+      ObjectSomeValuesFrom(ai:reducesTo ai:GreedyDecoding))
+    SubClassOf(ai:BeamSearch
+      ObjectSomeValuesFrom(ai:reducesTo ai:ExhaustiveSearch))
+    SubClassOf(ai:BeamSearch
+      ObjectSomeValuesFrom(ai:reducesTo ai:BestFirstSearch))
+    SubClassOf(ai:BeamSearch
+      ObjectSomeValuesFrom(ai:reducesTo ai:ViterbiAlgorithm))
 
-  ## Contrastive Relationships
-      SubClassOf(ai:BeamSearch
-        ObjectSomeValuesFrom(ai:contrastsWith ai:GreedyDecoding))
-      SubClassOf(ai:BeamSearch
-        ObjectSomeValuesFrom(ai:contrastsWith ai:NucleusSampling))
-      SubClassOf(ai:BeamSearch
-        ObjectSomeValuesFrom(ai:contrastsWith ai:MonteCarloTreeSearch))
-      SubClassOf(ai:BeamSearch
-        ObjectSomeValuesFrom(ai:contrastsWith ai:SpeculativeDecoding))
-      SubClassOf(ai:BeamSearch
-        ObjectSomeValuesFrom(ai:relatedTo ai:ExposureBias))
-      SubClassOf(ai:BeamSearch
-        ObjectSomeValuesFrom(ai:relatedTo ai:InferenceTimeCompute))
-      SubClassOf(ai:BeamSearch
-        ObjectSomeValuesFrom(ai:relatedTo ai:ProcessRewardModel))
+## Contrastive Relationships
+    SubClassOf(ai:BeamSearch
+      ObjectSomeValuesFrom(ai:contrastsWith ai:GreedyDecoding))
+    SubClassOf(ai:BeamSearch
+      ObjectSomeValuesFrom(ai:contrastsWith ai:NucleusSampling))
+    SubClassOf(ai:BeamSearch
+      ObjectSomeValuesFrom(ai:contrastsWith ai:MonteCarloTreeSearch))
+    SubClassOf(ai:BeamSearch
+      ObjectSomeValuesFrom(ai:contrastsWith ai:SpeculativeDecoding))
+    SubClassOf(ai:BeamSearch
+      ObjectSomeValuesFrom(ai:relatedTo ai:ExposureBias))
+    SubClassOf(ai:BeamSearch
+      ObjectSomeValuesFrom(ai:relatedTo ai:InferenceTimeCompute))
+    SubClassOf(ai:BeamSearch
+      ObjectSomeValuesFrom(ai:relatedTo ai:ProcessRewardModel))
 
-  ## About
+## About
 
-  **Beam Search** is the dominant sequence decoding algorithm in modern [[Natural Language Processing]] and a foundational component of every major [[Machine Translation]] system, [[Text Summarisation]] pipeline, [[Speech Recognition]] framework, and [[Large Language Models]] inference stack. Its core insight is elegant: rather than committing to a single best token at each step (as [[Greedy Decoding]] does) or exhaustively enumerating all exponentially many possible output sequences, beam search maintains a fixed-width "beam" of the k most promising partial hypotheses and expands them jointly at each step, selecting the top-k successors by cumulative [[Log-Probability]] and discarding the rest. This simple width-constrained best-first expansion delivers dramatically better output quality than greedy decoding, typically raising BLEU scores on translation benchmarks by 2–5 points with beam widths of only 4–10, whilst remaining computationally tractable with O(k × |V|) scoring operations per step — a tiny fraction of the cost of exhaustive search.
+**Beam Search** is the dominant sequence decoding algorithm in modern [[Natural Language Processing]] and a foundational component of every major [[Machine Translation]] system, [[Text Summarisation]] pipeline, [[Speech Recognition]] framework, and [[Large Language Models]] inference stack. Its core insight is elegant: rather than committing to a single best token at each step (as [[Greedy Decoding]] does) or exhaustively enumerating all exponentially many possible output sequences, beam search maintains a fixed-width "beam" of the k most promising partial hypotheses and expands them jointly at each step, selecting the top-k successors by cumulative [[Log-Probability]] and discarding the rest. This simple width-constrained best-first expansion delivers dramatically better output quality than greedy decoding, typically raising BLEU scores on translation benchmarks by 2–5 points with beam widths of only 4–10, whilst remaining computationally tractable with O(k × |V|) scoring operations per step — a tiny fraction of the cost of exhaustive search.
 
-  The algorithm's origins lie not in language processing but in [[Speech Recognition]]. At Carnegie Mellon University in 1976, doctoral student Bruce Lowerre implemented what he called "beam search" in the HARPY speech recognition system — a winner of the DARPA connected-speech challenge — to tractably decode over a large phoneme lattice. Independently, Fred Jelinek and colleagues at IBM's Thomas J. Watson Research Center applied similar width-pruned search in statistical speech models throughout the 1980s. The algorithm migrated to [[Machine Translation]] via the IBM Candide system in the early 1990s (Brown et al., 1990–1993), where it was applied over phrase tables and word alignments rather than phoneme lattices. The neural era began in earnest with Sutskever, Vinyals, and Le's 2014 NIPS paper "Sequence to Sequence Learning with Neural Networks," which used an LSTM-based [[Encoder Decoder Architecture]] with a beam-search decoder and achieved state-of-the-art English-to-French translation. Bahdanau, Cho, and Bengio's 2015 attention paper provided richer conditioning signals that made beam search substantially more effective by allowing the decoder to focus on relevant source positions. The [[Transformer Architecture]] introduced by Vaswani et al. in 2017 — trained with teacher forcing and decoded with beam search — brought a further step-change in translation quality, and beam search with length normalisation became the universal standard for transformer-based [[Sequence-to-Sequence Learning]].
+The algorithm's origins lie not in language processing but in [[Speech Recognition]]. At Carnegie Mellon University in 1976, doctoral student Bruce Lowerre implemented what he called "beam search" in the HARPY speech recognition system — a winner of the DARPA connected-speech challenge — to tractably decode over a large phoneme lattice. Independently, Fred Jelinek and colleagues at IBM's Thomas J. Watson Research Center applied similar width-pruned search in statistical speech models throughout the 1980s. The algorithm migrated to [[Machine Translation]] via the IBM Candide system in the early 1990s (Brown et al., 1990–1993), where it was applied over phrase tables and word alignments rather than phoneme lattices. The neural era began in earnest with Sutskever, Vinyals, and Le's 2014 NIPS paper "Sequence to Sequence Learning with Neural Networks," which used an LSTM-based [[Encoder Decoder Architecture]] with a beam-search decoder and achieved state-of-the-art English-to-French translation. Bahdanau, Cho, and Bengio's 2015 attention paper provided richer conditioning signals that made beam search substantially more effective by allowing the decoder to focus on relevant source positions. The [[Transformer Architecture]] introduced by Vaswani et al. in 2017 — trained with teacher forcing and decoded with beam search — brought a further step-change in translation quality, and beam search with length normalisation became the universal standard for transformer-based [[Sequence-to-Sequence Learning]].
 
-  Google's Neural Machine Translation System (GNMT, Wu et al. 2016) made beam search refinements explicit in a production context: GNMT uses a beam width of 4 with a length normalisation penalty of the form score(Y|X) = log P(Y|X) / |Y|^α (where α is tuned per language pair) and a coverage penalty that prevents the model from leaving source tokens unattended. These engineering choices — small beam width, length normalisation, coverage penalty — remain standard practice in 2026 production translation at Google, DeepL, and Microsoft, reflecting the algorithm's practical maturity.
+Google's Neural Machine Translation System (GNMT, Wu et al. 2016) made beam search refinements explicit in a production context: GNMT uses a beam width of 4 with a length normalisation penalty of the form score(Y|X) = log P(Y|X) / |Y|^α (where α is tuned per language pair) and a coverage penalty that prevents the model from leaving source tokens unattended. These engineering choices — small beam width, length normalisation, coverage penalty — remain standard practice in 2026 production translation at Google, DeepL, and Microsoft, reflecting the algorithm's practical maturity.
 
-  A less-appreciated but important theoretical feature of beam search is its relationship to the Viterbi algorithm — the exact maximum-probability sequence decoder for Hidden Markov Models (HMMs) and Conditional Random Fields (CRFs). In the special case of a finite, acyclic sequence model (such as an HMM with finite vocabulary at each position), beam search with an infinite beam width is exactly equivalent to the Viterbi algorithm. For neural sequence models with softmax over continuous parameter spaces, exact Viterbi decoding is computationally intractable, making beam search the practical approximation. This connection helps explain why beam search was so naturally adopted from the [[Speech Recognition]] community (which had long used Viterbi decoding over HMMs) into the neural MT community: beam search is essentially a width-limited approximation to Viterbi decoding, trading optimality for tractability. The relationship also clarifies why beam search finds globally better solutions than greedy decoding despite being a heuristic: it maintains k competing Viterbi paths simultaneously, allowing a path that made a locally suboptimal early choice to eventually outcompete a path that appeared better early but deteriorated later.
+A less-appreciated but important theoretical feature of beam search is its relationship to the Viterbi algorithm — the exact maximum-probability sequence decoder for Hidden Markov Models (HMMs) and Conditional Random Fields (CRFs). In the special case of a finite, acyclic sequence model (such as an HMM with finite vocabulary at each position), beam search with an infinite beam width is exactly equivalent to the Viterbi algorithm. For neural sequence models with softmax over continuous parameter spaces, exact Viterbi decoding is computationally intractable, making beam search the practical approximation. This connection helps explain why beam search was so naturally adopted from the [[Speech Recognition]] community (which had long used Viterbi decoding over HMMs) into the neural MT community: beam search is essentially a width-limited approximation to Viterbi decoding, trading optimality for tractability. The relationship also clarifies why beam search finds globally better solutions than greedy decoding despite being a heuristic: it maintains k competing Viterbi paths simultaneously, allowing a path that made a locally suboptimal early choice to eventually outcompete a path that appeared better early but deteriorated later.
 
-  The theoretical analysis of when beam search finds the optimal output — and when it fails to — has been an active area since the early neural MT era. Murray & Chiang (2018) showed formally that beam search introduces a systematic length bias (shorter outputs are preferred unless length normalisation is applied) and derived the correct Bayesian adjustment. Stahlberg & Byrne (2019) demonstrated in the "NMT beam search curse" that the optimal beam search output (as scored by the model) can differ substantially from the human-reference translation, and that increasing beam width does not always improve BLEU — a phenomenon that motivated reranking methods and reward-model-guided beam search. Cohen & Beck (2019) proved that even with unlimited beam width, beam search does not guarantee finding the mode of the distribution for models with certain factorisation properties. These negative theoretical results have motivated the hybrid approaches now dominant in 2024–2026 [[Inference-Time Compute]] scaling: combining beam search (as a fast approximation) with reward model scoring (to select the best from the k-best list) achieves better outputs than either approach alone.
+The theoretical analysis of when beam search finds the optimal output — and when it fails to — has been an active area since the early neural MT era. Murray & Chiang (2018) showed formally that beam search introduces a systematic length bias (shorter outputs are preferred unless length normalisation is applied) and derived the correct Bayesian adjustment. Stahlberg & Byrne (2019) demonstrated in the "NMT beam search curse" that the optimal beam search output (as scored by the model) can differ substantially from the human-reference translation, and that increasing beam width does not always improve BLEU — a phenomenon that motivated reranking methods and reward-model-guided beam search. Cohen & Beck (2019) proved that even with unlimited beam width, beam search does not guarantee finding the mode of the distribution for models with certain factorisation properties. These negative theoretical results have motivated the hybrid approaches now dominant in 2024–2026 [[Inference-Time Compute]] scaling: combining beam search (as a fast approximation) with reward model scoring (to select the best from the k-best list) achieves better outputs than either approach alone.
 
-  ## Components and Algorithm Architecture
+## Components and Algorithm Architecture
 
-  **Beam Width k**
-  - The single most important hyperparameter. At k=1, beam search collapses to [[Greedy Decoding]], always selecting the locally highest-probability token; this is fastest but produces the lowest-quality outputs on most tasks.
-  - Typical values: k=4–10 for translation; k=10–50 for diverse generation; k=4–8 for code generation; k=1 for open-ended creative generation (where sampling is preferred).
-  - Increasing k beyond ~10–15 yields rapidly diminishing quality gains on most tasks but linear increases in memory and compute costs, as each beam hypothesis must carry its own KV-cache state in transformer models.
+**Beam Width k**
+
+- The single most important hyperparameter. At k=1, beam search collapses to [[Greedy Decoding]], always selecting the locally highest-probability token; this is fastest but produces the lowest-quality outputs on most tasks.
+- Typical values: k=4–10 for translation; k=10–50 for diverse generation; k=4–8 for code generation; k=1 for open-ended creative generation (where sampling is preferred).
+- Increasing k beyond ~10–15 yields rapidly diminishing quality gains on most tasks but linear increases in memory and compute costs, as each beam hypothesis must carry its own KV-cache state in transformer models.
 
   **Log-Probability Scoring and Accumulation**
-  - At each step t, for each of the k active hypotheses h_i, the model computes P(w | h_i) over the full vocabulary |V|. Beam search selects the top-k (w, h_i) pairs by cumulative log P(w_1 ... w_t | x).
-  - Scores are accumulated as sums of log-probabilities (equivalent to products of probabilities) to avoid numerical underflow.
-  - Without length normalisation, beam search systematically favours shorter sequences because each additional token multiplies the probability by a value ≤1, reducing total probability. Length normalisation divides the cumulative log-probability by |Y|^α (typically α ∈ [0.6, 0.8]) to correct this bias.
+
+- At each step t, for each of the k active hypotheses h_i, the model computes P(w | h_i) over the full vocabulary |V|. Beam search selects the top-k (w, h_i) pairs by cumulative log P(w_1 ... w_t | x).
+- Scores are accumulated as sums of log-probabilities (equivalent to products of probabilities) to avoid numerical underflow.
+- Without length normalisation, beam search systematically favours shorter sequences because each additional token multiplies the probability by a value ≤1, reducing total probability. Length normalisation divides the cumulative log-probability by |Y|^α (typically α ∈ [0.6, 0.8]) to correct this bias.
 
   **Hypothesis Management and End-of-Sequence (EOS) Handling**
-  - When a hypothesis generates the special EOS token, it is removed from the active beam and placed in a "completed hypotheses" set. The beam continues with the remaining (k−m) active hypotheses, where m is the number completed so far, until all k beams have completed or a maximum length is reached.
-  - The final output is the highest-scoring completed hypothesis (by length-normalised log-probability).
+
+- When a hypothesis generates the special EOS token, it is removed from the active beam and placed in a "completed hypotheses" set. The beam continues with the remaining (k−m) active hypotheses, where m is the number completed so far, until all k beams have completed or a maximum length is reached.
+- The final output is the highest-scoring completed hypothesis (by length-normalised log-probability).
 
   **Coverage Penalty**
-  - Applied in translation to penalise attention patterns that leave source tokens under- or over-attended. GNMT (Wu et al. 2016) uses: coverage penalty = β × Σ_i log(min(Σ_j a_{ij}, 1.0)), encouraging the decoder to cover each source token approximately once.
-  - Substantially reduces the "hallucination" of content unrelated to the source that beam search produces when attention is not constrained.
+
+- Applied in translation to penalise attention patterns that leave source tokens under- or over-attended. GNMT (Wu et al. 2016) uses: coverage penalty = β × Σ_i log(min(Σ_j a_{ij}, 1.0)), encouraging the decoder to cover each source token approximately once.
+- Substantially reduces the "hallucination" of content unrelated to the source that beam search produces when attention is not constrained.
 
   **No-Repeat N-Gram Penalty**
-  - A heuristic extension that blocks hypotheses from generating any n-gram (typically n=3) that has already appeared in that hypothesis, reducing repetitive text common in long-form generation.
-  - Widely used in text summarisation and open-ended generation; controlled via the `no_repeat_ngram_size` parameter in Hugging Face Transformers.
+
+- A heuristic extension that blocks hypotheses from generating any n-gram (typically n=3) that has already appeared in that hypothesis, reducing repetitive text common in long-form generation.
+- Widely used in text summarisation and open-ended generation; controlled via the `no_repeat_ngram_size` parameter in Hugging Face Transformers.
 
   ## Formal Algorithm
 
   **Input**: source context x (encoded), beam width k, maximum length T_max, vocabulary V, model P(· | ·), length normalisation exponent α, coverage penalty weight β
 
   **Initialisation**
-  - beam ← {([], 0.0, {attn_coverage: 0})} — one empty hypothesis with log-probability 0 and zero attention coverage
-  - completed ← []
+
+- beam ← {([], 0.0, {attn_coverage: 0})} — one empty hypothesis with log-probability 0 and zero attention coverage
+- completed ← []
 
   **Main Loop** (steps t = 1 to T_max)
   1. candidates ← empty set
   2. For each hypothesis (h, score, coverage) in beam:
-     - If h ends with EOS: add (h, score / |h|^α) to completed; continue
-     - Compute P(w | h, x) and attention weights A_t for all w ∈ V
-     - For top-2k tokens w by P(w | h, x):
-       - new_score ← score + log P(w | h, x) + β × coverage_penalty(A_t, coverage)
-       - Add (h + [w], new_score, updated_coverage) to candidates
-  3. beam ← top-k candidates by new_score / |h|^α (length-normalised)
-  4. If all hypotheses in beam are completed or t = T_max: break
 
-  **Output**: highest-scoring element of completed (length-normalised log-probability)
+  - If h ends with EOS: add (h, score / |h|^α) to completed; continue
+  - Compute P(w | h, x) and attention weights A_t for all w ∈ V
+  - For top-2k tokens w by P(w | h, x):
+    - new_score ← score + log P(w | h, x) + β × coverage_penalty(A_t, coverage)
+    - Add (h + [w], new_score, updated_coverage) to candidates
+      3. beam ← top-k candidates by new_score / |h|^α (length-normalised)
+      4. If all hypotheses in beam are completed or t = T_max: break
 
-  **Step-by-Step Example** (k=2, |V|=5, T=3, no coverage penalty):
-  - t=1: beam = {[]}; candidates = {[w1, 0.8], [w2, 0.7], [w3, 0.6], [w4, 0.5], [w5, 0.4]} × 2 continuations (from single initial hypothesis); top-2 = {[w1], [w2]}
-  - t=2: beam = {[w1], [w2]}; expand each: candidates = {[w1,w1,0.6], [w1,w3,0.5], [w2,w2,0.7], [w2,w4,0.4], ...}; top-2 = {[w2,w2], [w1,w1]}
-  - t=3: expand both; hypotheses generating EOS move to completed; remaining expand one more step; final output = highest completed hypothesis by score/length^α
+      **Output**: highest-scoring element of completed (length-normalised log-probability)
+
+      **Step-by-Step Example** (k=2, |V|=5, T=3, no coverage penalty):
+
+- t=1: beam = {[]}; candidates = {[w1, 0.8], [w2, 0.7], [w3, 0.6], [w4, 0.5], [w5, 0.4]} × 2 continuations (from single initial hypothesis); top-2 = {[w1], [w2]}
+- t=2: beam = {[w1], [w2]}; expand each: candidates = {[w1,w1,0.6], [w1,w3,0.5], [w2,w2,0.7], [w2,w4,0.4], ...}; top-2 = {[w2,w2], [w1,w1]}
+- t=3: expand both; hypotheses generating EOS move to completed; remaining expand one more step; final output = highest completed hypothesis by score/length^α
 
   **Complexity Analysis**
-  - **Time per step**: O(k × |V|) for vocabulary scoring + O(k × T) for hypothesis management
-  - **Total time**: O(T_max × k × |V|) scoring operations — for T=200, k=8, |V|=32000: ~51M scoring operations per request
-  - **Memory for hypothesis text**: O(k × T) token ids — negligible
-  - **Memory for KV-cache** (transformer inference): O(k × T × n_layers × d_model) — dominant term; for LLaMA-3-70B with k=8 at T=200: approximately 8 × 200 × 80 × 8192 × 2 bytes = ~21 GB per request. This is the primary constraint limiting beam width in production LLM deployments.
-  - **Memory reduction via GQA**: Grouped-Query Attention (Ainslie et al. 2023) reduces KV-cache by grouping multiple query heads to share a single KV pair, reducing KV memory by 2–8× and making beam search with k=4–8 tractable for 70B+ models on standard GPU hardware.
+
+- **Time per step**: O(k × |V|) for vocabulary scoring + O(k × T) for hypothesis management
+- **Total time**: O(T_max × k × |V|) scoring operations — for T=200, k=8, |V|=32000: ~51M scoring operations per request
+- **Memory for hypothesis text**: O(k × T) token ids — negligible
+- **Memory for KV-cache** (transformer inference): O(k × T × n_layers × d_model) — dominant term; for LLaMA-3-70B with k=8 at T=200: approximately 8 × 200 × 80 × 8192 × 2 bytes = ~21 GB per request. This is the primary constraint limiting beam width in production LLM deployments.
+- **Memory reduction via GQA**: Grouped-Query Attention (Ainslie et al. 2023) reduces KV-cache by grouping multiple query heads to share a single KV pair, reducing KV memory by 2–8× and making beam search with k=4–8 tractable for 70B+ models on standard GPU hardware.
 
   ## Major Variants
 
@@ -259,11 +267,11 @@ Beam search is a heuristic search algorithm that explores a graph by expanding t
   **Theoretical Failure Modes and Limitations**
   Understanding when beam search fails is as important as understanding when it succeeds:
 
-  - **The Beam Search Curse** (Stahlberg & Byrne 2019): Increasing beam width beyond a critical value (typically k=4–10) degrades task metrics such as BLEU because the probability-maximising hypothesis diverges from the human reference in systematic ways (using correct but rare vocabulary, different syntactic structure). This motivates MBR reranking over the k-best list rather than selecting the top-1 hypothesis.
-  - **Repetition and Degenerate Text** (Holtzman et al. 2020): Without no-repeat n-gram constraints, beam search produces text with degenerate repetition — repeating phrases or sentences — because repeating a recently generated sequence has high probability under the model's autoregressive distribution. The model assigns high probability to its own continuations because it was trained on human text where such repetition is rare; the repetition arises from probability maximisation amplifying self-referential patterns.
-  - **Hallucination Under Attention Deficiency**: In encoder-decoder MT without coverage penalty, beam search hypotheses may attend unevenly to source tokens, generating target content not grounded in any source token (hallucination) whilst ignoring source content that should be translated (omission). Coverage-penalised beam search substantially mitigates this but does not eliminate it.
-  - **Distribution Shift Between Training and Beam Width**: Models are typically trained and evaluated with the same beam width; deploying with a different beam width than used during evaluation hyperparameter tuning can unexpectedly degrade or improve quality. Production systems must retune length penalty α and coverage penalty β whenever beam width changes.
-  - **Hypothesis Collapse in PRM-Guided Beam Search**: When beam search is guided by a noisy [[Process Reward Model]], all k beams may converge to the same high-PRM-score hypothesis early in the reasoning chain, nullifying the benefit of the wide beam. Overestimation bias (arXiv 2603.15377, 2026) characterises this failure mode theoretically, establishing a maximum useful beam width as a function of PRM noise level.
+- **The Beam Search Curse** (Stahlberg & Byrne 2019): Increasing beam width beyond a critical value (typically k=4–10) degrades task metrics such as BLEU because the probability-maximising hypothesis diverges from the human reference in systematic ways (using correct but rare vocabulary, different syntactic structure). This motivates MBR reranking over the k-best list rather than selecting the top-1 hypothesis.
+- **Repetition and Degenerate Text** (Holtzman et al. 2020): Without no-repeat n-gram constraints, beam search produces text with degenerate repetition — repeating phrases or sentences — because repeating a recently generated sequence has high probability under the model's autoregressive distribution. The model assigns high probability to its own continuations because it was trained on human text where such repetition is rare; the repetition arises from probability maximisation amplifying self-referential patterns.
+- **Hallucination Under Attention Deficiency**: In encoder-decoder MT without coverage penalty, beam search hypotheses may attend unevenly to source tokens, generating target content not grounded in any source token (hallucination) whilst ignoring source content that should be translated (omission). Coverage-penalised beam search substantially mitigates this but does not eliminate it.
+- **Distribution Shift Between Training and Beam Width**: Models are typically trained and evaluated with the same beam width; deploying with a different beam width than used during evaluation hyperparameter tuning can unexpectedly degrade or improve quality. Production systems must retune length penalty α and coverage penalty β whenever beam width changes.
+- **Hypothesis Collapse in PRM-Guided Beam Search**: When beam search is guided by a noisy [[Process Reward Model]], all k beams may converge to the same high-PRM-score hypothesis early in the reasoning chain, nullifying the benefit of the wide beam. Overestimation bias (arXiv 2603.15377, 2026) characterises this failure mode theoretically, establishing a maximum useful beam width as a function of PRM noise level.
 
   **Standard Textbook Coverage**
   Jurafsky & Martin, "Speech and Language Processing" (3rd ed., 2023, Stanford draft) covers beam search in Chapters 8–10 (sequence models and machine translation) as the standard decoding algorithm. Goodfellow, Bengio & Courville, "Deep Learning" (2016) covers beam search in Chapter 10 (sequence modelling). Russell & Norvig, "Artificial Intelligence: A Modern Approach" (4th ed., 2022) covers beam search in Chapter 3 (local search as a variant). The algorithm appears in curricula for all advanced NLP courses worldwide.
@@ -297,14 +305,14 @@ Beam search is a heuristic search algorithm that explores a graph by expanding t
 
   UK academia and industry have made substantive contributions to beam search research and deployment across NLP, speech, and generative AI:
 
-  - **University of Edinburgh**: The Edinburgh NLP Group (EMNLP, ACL, WMT participants) has produced beam search research including multilingual MT decoding, constrained generation, and low-resource translation. The group's OPUS-MT open-source translation models use beam search as the default decoder. Edinburgh's School of Informatics has strong connections to the EU Horizon translation research community that advanced constrained beam search for domain-specific MT. Edinburgh researcher Rico Sennrich (now also at University of Vienna) has published extensively on beam search decoding for low-resource and multilingual NMT. The Edinburgh NLP Group holds a prominent position in the annual WMT shared tasks (2015–2026), with their systems consistently ranked top-5 for translation quality measured under beam search decoding.
-  - **University of Cambridge**: Computer Laboratory NLP group (led in part by Stephen Clark, Anna Korhonen, Simone Teufel) has worked on structured prediction decoding and transition-based parsing — closely related to beam search over discrete structure spaces. Cambridge English Language Technology (ELT) group uses beam search in speech recognition and dialogue systems research. The Cambridge Machine Intelligence Lab applies beam search in biomedical literature mining and clinical NLP tasks in collaboration with Addenbrooke's Hospital.
-  - **University of Sheffield**: Natural Language Processing group (USFD, associated with Kalchbrenner, Yvette Graham, and Mark Stevenson) contributed to WMT neural MT evaluation campaigns (2016–2022), where beam search quality is the central comparative metric. Sheffield contributed to the development of automatic quality estimation metrics (QuEst, 2013) now used to rerank beam search hypotheses. Sheffield Robotics applies beam search variants in human-robot dialogue planning systems for assistive robotics.
-  - **Imperial College London**: Department of Computing's speech and audio processing group (Mark Gales, collaborating with Cambridge) applies beam search in large-vocabulary continuous speech recognition. The machine learning group (Marc Deisenroth, Imperial-X) contributes to inference-time compute scaling research with applications to scientific discovery and drug design.
-  - **University College London**: UCL's NLP group (Sebastian Riedel, Pontus Stenetorp) has applied beam search decoding in information extraction, knowledge base completion, and question answering over knowledge graphs. UCL's AI Centre contributes to constrained beam search research for structured scientific literature mining.
-  - **DeepMind / Google DeepMind (London)**: AlphaCode (2022) used large-scale beam search combined with test-based filtering for competitive programming, demonstrating k=1000s beam widths tractable with batched GPU decoding. DeepMind has contributed to understanding beam search failure modes in long-form generation and to inference-time compute scaling research with beam search as a core operator. Google DeepMind's Gemini models use beam search in structured generation and code generation tasks.
-  - **Northern England**: Newcastle University's speech communication group applies beam search in dysarthric speech recognition systems for assistive technology — requiring robustly diverse beams to capture atypical pronunciations compared to standard ASR. The University of Leeds's NLP group has applied beam search to legal and biomedical text generation with medical terminology constraints. The University of Manchester's school of computer science contributes to energy-efficient beam search for edge deployment relevant to digital health and industrial IoT NLP applications.
-  - **Industry (Beyond London)**: Speechmatics (Cambridge) deploys beam search decoding in its commercial ASR API serving global enterprise customers. Wayve (London) applies beam search for action sequence generation in end-to-end neural driving. Synthesia (London) uses beam search for structured script generation for AI video avatars. Monzo and Starling Bank apply beam search decoding in regulatory compliance report generation under FCA guidelines.
+- **University of Edinburgh**: The Edinburgh NLP Group (EMNLP, ACL, WMT participants) has produced beam search research including multilingual MT decoding, constrained generation, and low-resource translation. The group's OPUS-MT open-source translation models use beam search as the default decoder. Edinburgh's School of Informatics has strong connections to the EU Horizon translation research community that advanced constrained beam search for domain-specific MT. Edinburgh researcher Rico Sennrich (now also at University of Vienna) has published extensively on beam search decoding for low-resource and multilingual NMT. The Edinburgh NLP Group holds a prominent position in the annual WMT shared tasks (2015–2026), with their systems consistently ranked top-5 for translation quality measured under beam search decoding.
+- **University of Cambridge**: Computer Laboratory NLP group (led in part by Stephen Clark, Anna Korhonen, Simone Teufel) has worked on structured prediction decoding and transition-based parsing — closely related to beam search over discrete structure spaces. Cambridge English Language Technology (ELT) group uses beam search in speech recognition and dialogue systems research. The Cambridge Machine Intelligence Lab applies beam search in biomedical literature mining and clinical NLP tasks in collaboration with Addenbrooke's Hospital.
+- **University of Sheffield**: Natural Language Processing group (USFD, associated with Kalchbrenner, Yvette Graham, and Mark Stevenson) contributed to WMT neural MT evaluation campaigns (2016–2022), where beam search quality is the central comparative metric. Sheffield contributed to the development of automatic quality estimation metrics (QuEst, 2013) now used to rerank beam search hypotheses. Sheffield Robotics applies beam search variants in human-robot dialogue planning systems for assistive robotics.
+- **Imperial College London**: Department of Computing's speech and audio processing group (Mark Gales, collaborating with Cambridge) applies beam search in large-vocabulary continuous speech recognition. The machine learning group (Marc Deisenroth, Imperial-X) contributes to inference-time compute scaling research with applications to scientific discovery and drug design.
+- **University College London**: UCL's NLP group (Sebastian Riedel, Pontus Stenetorp) has applied beam search decoding in information extraction, knowledge base completion, and question answering over knowledge graphs. UCL's AI Centre contributes to constrained beam search research for structured scientific literature mining.
+- **DeepMind / Google DeepMind (London)**: AlphaCode (2022) used large-scale beam search combined with test-based filtering for competitive programming, demonstrating k=1000s beam widths tractable with batched GPU decoding. DeepMind has contributed to understanding beam search failure modes in long-form generation and to inference-time compute scaling research with beam search as a core operator. Google DeepMind's Gemini models use beam search in structured generation and code generation tasks.
+- **Northern England**: Newcastle University's speech communication group applies beam search in dysarthric speech recognition systems for assistive technology — requiring robustly diverse beams to capture atypical pronunciations compared to standard ASR. The University of Leeds's NLP group has applied beam search to legal and biomedical text generation with medical terminology constraints. The University of Manchester's school of computer science contributes to energy-efficient beam search for edge deployment relevant to digital health and industrial IoT NLP applications.
+- **Industry (Beyond London)**: Speechmatics (Cambridge) deploys beam search decoding in its commercial ASR API serving global enterprise customers. Wayve (London) applies beam search for action sequence generation in end-to-end neural driving. Synthesia (London) uses beam search for structured script generation for AI video avatars. Monzo and Starling Bank apply beam search decoding in regulatory compliance report generation under FCA guidelines.
 
   ## Future Directions (2026–2030)
 
@@ -375,62 +383,66 @@ Beam search is a heuristic search algorithm that explores a graph by expanding t
 
   **Machine Translation Benchmarks (WMT — Workshop on Machine Translation)**
   The WMT annual evaluation campaign (run since 2006 under EMNLP/ACL) is the canonical benchmark for [[Machine Translation]] systems. The central metrics are:
-  - **BLEU (Bilingual Evaluation Understudy)**: Geometric mean of n-gram precision (n=1–4) relative to human reference translations, with a brevity penalty for outputs shorter than the reference. Beam search consistently outperforms greedy decoding by 1–4 BLEU points on WMT test sets. Higher beam width yields diminishing BLEU returns beyond k=4–8 on standard transformer models.
-  - **chrF (Character-level F-score)**: Harmonic mean of character n-gram precision and recall. More robust than BLEU to morphologically rich languages; correlates better with human judgment. WMT 2022–2024 primary metric shifted toward chrF and COMET.
-  - **COMET (Crosslingual Optimized Metric for Evaluation of Translation)**: Neural reference-based MT metric using mBART or XLM-R encoder trained to predict human MQM (Multidimensional Quality Metrics) scores. COMET scores are more sensitive to beam width effects than BLEU: COMET continues improving at k=8–16 where BLEU has plateaued.
-  - **MQM (Multidimensional Quality Metrics)**: Human annotation framework that rates fluency, adequacy, and error severity. WMT 2020+ uses MQM as the official human evaluation protocol; beam search settings (k, α, β) are tuned to maximise MQM in production systems.
+
+- **BLEU (Bilingual Evaluation Understudy)**: Geometric mean of n-gram precision (n=1–4) relative to human reference translations, with a brevity penalty for outputs shorter than the reference. Beam search consistently outperforms greedy decoding by 1–4 BLEU points on WMT test sets. Higher beam width yields diminishing BLEU returns beyond k=4–8 on standard transformer models.
+- **chrF (Character-level F-score)**: Harmonic mean of character n-gram precision and recall. More robust than BLEU to morphologically rich languages; correlates better with human judgment. WMT 2022–2024 primary metric shifted toward chrF and COMET.
+- **COMET (Crosslingual Optimized Metric for Evaluation of Translation)**: Neural reference-based MT metric using mBART or XLM-R encoder trained to predict human MQM (Multidimensional Quality Metrics) scores. COMET scores are more sensitive to beam width effects than BLEU: COMET continues improving at k=8–16 where BLEU has plateaued.
+- **MQM (Multidimensional Quality Metrics)**: Human annotation framework that rates fluency, adequacy, and error severity. WMT 2020+ uses MQM as the official human evaluation protocol; beam search settings (k, α, β) are tuned to maximise MQM in production systems.
 
   **Text Summarisation Benchmarks**
-  - **CNN/DailyMail**: 300K news article-summary pairs; the dominant English abstractive summarisation benchmark 2017–2024. BART, PEGASUS, and T5 results use beam search k=4–6 by default; beam search with no-repeat-3-gram reduces repetition artefacts that inflate ROUGE scores artificially.
-  - **XSum**: BBC extreme summarisation dataset (226K article-one-sentence summary pairs) requiring more abstractive generation than CNN/DM. Beam search k=6 is standard; nucleus sampling k=0.9 produces more diverse but less faithful summaries on XSum.
-  - **ROUGE (Recall-Oriented Understudy for Gisting Evaluation)**: The standard metric family (ROUGE-1, ROUGE-2, ROUGE-L) measuring n-gram overlap with reference summaries. Beam search consistently outperforms greedy decoding by 0.5–2 ROUGE-1 points on these benchmarks.
+
+- **CNN/DailyMail**: 300K news article-summary pairs; the dominant English abstractive summarisation benchmark 2017–2024. BART, PEGASUS, and T5 results use beam search k=4–6 by default; beam search with no-repeat-3-gram reduces repetition artefacts that inflate ROUGE scores artificially.
+- **XSum**: BBC extreme summarisation dataset (226K article-one-sentence summary pairs) requiring more abstractive generation than CNN/DM. Beam search k=6 is standard; nucleus sampling k=0.9 produces more diverse but less faithful summaries on XSum.
+- **ROUGE (Recall-Oriented Understudy for Gisting Evaluation)**: The standard metric family (ROUGE-1, ROUGE-2, ROUGE-L) measuring n-gram overlap with reference summaries. Beam search consistently outperforms greedy decoding by 0.5–2 ROUGE-1 points on these benchmarks.
 
   **Speech Recognition Benchmarks**
-  - **LibriSpeech**: 1,000-hour audiobook English speech corpus. Whisper (beam k=5) achieves 2.7% WER on the test-clean split vs. 3.1% with greedy decoding — a 15% relative improvement from beam search.
-  - **CommonVoice**: Mozilla's multilingual crowd-sourced speech dataset. Beam search provides larger WER reductions on low-resource languages (Arabic, Basque, Welsh) due to the model's greater output uncertainty in those languages, making beam exploration more valuable.
+
+- **LibriSpeech**: 1,000-hour audiobook English speech corpus. Whisper (beam k=5) achieves 2.7% WER on the test-clean split vs. 3.1% with greedy decoding — a 15% relative improvement from beam search.
+- **CommonVoice**: Mozilla's multilingual crowd-sourced speech dataset. Beam search provides larger WER reductions on low-resource languages (Arabic, Basque, Welsh) due to the model's greater output uncertainty in those languages, making beam exploration more valuable.
 
   **Reasoning and Code Generation Benchmarks (2024–2026)**
-  - **MATH benchmark** (Hendrycks et al. 2021): 12,500 competition mathematics problems across 5 difficulty levels (pre-algebra through competition). Beam search with PRM scoring (Lightman et al. 2023 style) improves accuracy from ~15% (greedy decode, GPT-4 class model) to ~40–60% (beam search k=8 with process reward model), demonstrating the substantial leverage of PRM-guided beam search for structured reasoning tasks.
-  - **HumanEval** (Chen et al. 2021): 164 Python programming problems with unit tests. pass@k (probability of at least one correct solution in k attempts) increases with beam width and is the primary evaluation metric for [[Code Generation]] systems; beam search with k=10–100 plus test-based filtering achieves pass@1 rates substantially above single-pass greedy decoding.
-  - **GSM8K** (Cobbe et al. 2021): 8,500 grade school math word problems. Beam search with PRM scoring on reasoning chains consistently outperforms best-of-N sampling at matched compute budgets in 2024–2026 research; DeepSeek-R1 reports significant performance gains from beam search with PRM guidance on GSM8K.
-  - **MBPP (Mostly Basic Python Programming)**: 374 crowd-sourced Python programming tasks. Used as a secondary code generation benchmark alongside HumanEval; beam search filtering by test case execution substantially improves pass@1 rates.
-  - **LiveCodeBench** (2024): Real-time programming contest problems from Codeforces, LeetCode, and AtCoder with temporal filtering to prevent training data contamination. The most rigorous code generation benchmark for 2025–2026; beam search with execution-guided filtering is the dominant approach for frontier models.
-  - **AIME / AMC** (American Mathematical Competition series): Olympiad-level mathematics problems at the frontier of [[Large Language Models]] reasoning capability. Beam search with PRM guidance is necessary for frontier performance; greedy decoding achieves near-zero accuracy on these benchmarks with GPT-4 class models without extended thinking.
+
+- **MATH benchmark** (Hendrycks et al. 2021): 12,500 competition mathematics problems across 5 difficulty levels (pre-algebra through competition). Beam search with PRM scoring (Lightman et al. 2023 style) improves accuracy from ~15% (greedy decode, GPT-4 class model) to ~40–60% (beam search k=8 with process reward model), demonstrating the substantial leverage of PRM-guided beam search for structured reasoning tasks.
+- **HumanEval** (Chen et al. 2021): 164 Python programming problems with unit tests. pass@k (probability of at least one correct solution in k attempts) increases with beam width and is the primary evaluation metric for [[Code Generation]] systems; beam search with k=10–100 plus test-based filtering achieves pass@1 rates substantially above single-pass greedy decoding.
+- **GSM8K** (Cobbe et al. 2021): 8,500 grade school math word problems. Beam search with PRM scoring on reasoning chains consistently outperforms best-of-N sampling at matched compute budgets in 2024–2026 research; DeepSeek-R1 reports significant performance gains from beam search with PRM guidance on GSM8K.
+- **MBPP (Mostly Basic Python Programming)**: 374 crowd-sourced Python programming tasks. Used as a secondary code generation benchmark alongside HumanEval; beam search filtering by test case execution substantially improves pass@1 rates.
+- **LiveCodeBench** (2024): Real-time programming contest problems from Codeforces, LeetCode, and AtCoder with temporal filtering to prevent training data contamination. The most rigorous code generation benchmark for 2025–2026; beam search with execution-guided filtering is the dominant approach for frontier models.
+- **AIME / AMC** (American Mathematical Competition series): Olympiad-level mathematics problems at the frontier of [[Large Language Models]] reasoning capability. Beam search with PRM guidance is necessary for frontier performance; greedy decoding achieves near-zero accuracy on these benchmarks with GPT-4 class models without extended thinking.
 
   ## Key Terminology
 
-  - **Beam Width (k)**: The number of candidate hypotheses maintained at each decoding step. Controls the quality–compute trade-off. k=1 gives greedy decoding; k→∞ approaches exhaustive search.
-  - **Hypothesis**: A partial or complete output sequence maintained in the beam, together with its cumulative log-probability score.
-  - **Cumulative Log-Probability**: The sum of log P(w_t | w_1...w_{t-1}, x) for all tokens in a hypothesis up to step t; used to rank hypotheses and select the top-k beam members.
-  - **Length Normalisation**: Division of cumulative log-probability by |Y|^α (α ∈ [0.6, 0.8]) to counteract the systematic preference for short sequences that would otherwise bias beam search.
-  - **Coverage Penalty**: An additional scoring term penalising hypotheses whose attention weight sums leave source tokens under- or over-attended; prevents hallucination in translation.
-  - **No-Repeat N-Gram Penalty**: A hard constraint that blocks hypotheses from generating any n-gram already present in the current hypothesis; reduces repetition in long-form generation.
-  - **EOS (End-of-Sequence) Token**: A special vocabulary item that signals hypothesis completion; upon generation, a hypothesis is moved from the active beam to the completed set.
-  - **BLEU Score**: Bilingual Evaluation Understudy score measuring geometric mean of n-gram precision between generated and reference text; primary metric for comparing beam search configurations in [[Machine Translation]] research.
-  - **COMET**: Neural MT evaluation metric correlating with human MQM scores; more sensitive to beam width effects than BLEU and widely used as a production optimisation target.
-  - **MQM (Multidimensional Quality Metrics)**: Human annotation framework for MT quality assessing fluency, adequacy, and error severity; the gold standard for calibrating beam search hyperparameters in production MT systems.
-  - **Exposure Bias**: The train-inference distribution mismatch arising because models are trained on ground-truth prefixes (teacher forcing) but must condition on their own (potentially erroneous) predictions at inference time with beam search.
-  - **Diverse Beam Search (DBS)**: A variant partitioning k beams into G groups and penalising inter-group similarity, producing more diverse output candidates than standard beam search.
-  - **Constrained Beam Search**: Beam search extended to enforce hard lexical, structural, or grammatical constraints, ensuring outputs match user-specified templates or schemas.
-  - **Minimum Bayes Risk (MBR) Decoding**: Post-hoc reranking of beam search k-best output lists by selecting the hypothesis that minimises expected loss under the model distribution; consistently outperforms top-1 beam search hypothesis selection.
-  - **Process Reward Model (PRM)**: A model that assigns quality scores to intermediate reasoning steps (rather than complete outputs) used to guide beam search in [[Inference-Time Compute]] scaling frameworks.
-  - **Teacher Forcing**: The training strategy of conditioning the model on ground-truth tokens (rather than its own predictions) at each step; creates exposure bias relative to beam search inference.
-  - **Hypothesis Collapse**: A failure mode of beam search where all k beams converge to nearly identical outputs, especially under strong length normalisation or large beam widths; a key limitation in inference-time scaling applications.
-  - **Stochastic Beam Search**: A probabilistic beam search variant that samples k hypotheses using the Gumbel-Top-k trick, producing more diverse outputs than deterministic beam search at modest compute overhead.
-  - **Beam Search Curse**: The empirical observation (Stahlberg & Byrne 2019) that beam search quality measured by task metrics (BLEU) degrades beyond a critical beam width, because the probability-maximising hypothesis diverges from human references in ways that task metrics penalise.
-  - **Trie-Based Beam Search**: Implementation using shared prefix trees to centralise KV-cache computation across beam hypotheses that share common token prefixes, reducing memory overhead in constrained generation.
-  - **Batched Beam Search**: GPU-optimised beam search that processes multiple independent sequences in a single batched computation, achieving 2–4× throughput improvement over sequential per-hypothesis decoding.
-  - **WER (Word Error Rate)**: The primary evaluation metric for [[Speech Recognition]] beam search decoding quality; reduction in WER from beam vs. greedy decoding ranges from 10–20% on standard benchmarks (e.g. LibriSpeech) to >20% on low-resource languages.
-  - **ROUGE**: Recall-Oriented Understudy for Gisting Evaluation; metric family measuring n-gram overlap with reference summaries; standard evaluation for [[Text Summarisation]] beam search quality.
-  - **pass@k**: For [[Code Generation]], the probability that at least one of k beam hypotheses is a correct solution to a programming problem; the primary evaluation metric for code generation with beam search.
-  - **Beam Search Curse**: The empirical phenomenon (Stahlberg & Byrne 2019) where increasing beam width beyond k=4–10 degrades BLEU and similar task metrics, because the probability-maximising hypothesis is increasingly distant from human reference translations. Motivates MBR reranking as a post-processing step.
-  - **Stochastic Beam Search**: A beam search variant using the Gumbel-Top-k trick to sample k candidates proportionally to their scores rather than deterministically selecting the top-k; produces more diverse outputs whilst retaining the quality floor of beam exploration.
-  - **Coverage Penalty**: Scoring bonus/penalty applied to beam hypotheses based on how evenly the decoder has attended to source tokens; prevents hallucination (attending to nothing) and over-generation (repeating attended content) in encoder-decoder [[Machine Translation]].
-  - **Language-Informed Beam Search (LiBS)**: A multilingual beam search variant that incorporates an off-the-shelf language identification model to penalise off-target translations (outputs in wrong language); reduces off-target rate by 60–80% in multilingual models without retraining (Artetxe et al. ACL 2024).
-  - **Beam Search Oracle Performance**: The quality of the best hypothesis in the k-best beam search output set, evaluated against ground truth; defines the upper bound of reranking improvement; oracle BLEU/COMET is typically 10–30% higher than top-1 beam hypothesis quality, motivating reranking research.
-  - **MBR-COMET**: The most effective MBR variant using COMET as the utility function; achieves the strongest translation quality in the 2024–2026 WMT evaluations; requires generating 100–1000 candidates (via beam search or sampling) for the MBR expectation computation.
-  - **Minimum Risk Training (MRT)**: A training methodology that directly optimises expected task metrics (BLEU, ROUGE, COMET) under model sampling, addressing the exposure bias that arises when training with teacher forcing and decoding with beam search. MRT-trained models produce better-calibrated beam search outputs than cross-entropy-trained models on their respective task metrics.
-  - **Inference Budget**: The maximum compute (FLOPs, GPU-hours, wall-clock time) allocated to generating a single response; beam width and chain-of-thought length are the primary levers for controlling inference budget in [[Inference-Time Compute]] scaling frameworks — beam search is favoured when budget is low, repeated sampling when budget is high.
+- **Beam Width (k)**: The number of candidate hypotheses maintained at each decoding step. Controls the quality–compute trade-off. k=1 gives greedy decoding; k→∞ approaches exhaustive search.
+- **Hypothesis**: A partial or complete output sequence maintained in the beam, together with its cumulative log-probability score.
+- **Cumulative Log-Probability**: The sum of log P(w_t | w_1...w_{t-1}, x) for all tokens in a hypothesis up to step t; used to rank hypotheses and select the top-k beam members.
+- **Length Normalisation**: Division of cumulative log-probability by |Y|^α (α ∈ [0.6, 0.8]) to counteract the systematic preference for short sequences that would otherwise bias beam search.
+- **Coverage Penalty**: An additional scoring term penalising hypotheses whose attention weight sums leave source tokens under- or over-attended; prevents hallucination in translation.
+- **No-Repeat N-Gram Penalty**: A hard constraint that blocks hypotheses from generating any n-gram already present in the current hypothesis; reduces repetition in long-form generation.
+- **EOS (End-of-Sequence) Token**: A special vocabulary item that signals hypothesis completion; upon generation, a hypothesis is moved from the active beam to the completed set.
+- **BLEU Score**: Bilingual Evaluation Understudy score measuring geometric mean of n-gram precision between generated and reference text; primary metric for comparing beam search configurations in [[Machine Translation]] research.
+- **COMET**: Neural MT evaluation metric correlating with human MQM scores; more sensitive to beam width effects than BLEU and widely used as a production optimisation target.
+- **MQM (Multidimensional Quality Metrics)**: Human annotation framework for MT quality assessing fluency, adequacy, and error severity; the gold standard for calibrating beam search hyperparameters in production MT systems.
+- **Exposure Bias**: The train-inference distribution mismatch arising because models are trained on ground-truth prefixes (teacher forcing) but must condition on their own (potentially erroneous) predictions at inference time with beam search.
+- **Diverse Beam Search (DBS)**: A variant partitioning k beams into G groups and penalising inter-group similarity, producing more diverse output candidates than standard beam search.
+- **Constrained Beam Search**: Beam search extended to enforce hard lexical, structural, or grammatical constraints, ensuring outputs match user-specified templates or schemas.
+- **Minimum Bayes Risk (MBR) Decoding**: Post-hoc reranking of beam search k-best output lists by selecting the hypothesis that minimises expected loss under the model distribution; consistently outperforms top-1 beam search hypothesis selection.
+- **Process Reward Model (PRM)**: A model that assigns quality scores to intermediate reasoning steps (rather than complete outputs) used to guide beam search in [[Inference-Time Compute]] scaling frameworks.
+- **Teacher Forcing**: The training strategy of conditioning the model on ground-truth tokens (rather than its own predictions) at each step; creates exposure bias relative to beam search inference.
+- **Hypothesis Collapse**: A failure mode of beam search where all k beams converge to nearly identical outputs, especially under strong length normalisation or large beam widths; a key limitation in inference-time scaling applications.
+- **Stochastic Beam Search**: A probabilistic beam search variant that samples k hypotheses using the Gumbel-Top-k trick, producing more diverse outputs than deterministic beam search at modest compute overhead.
+- **Beam Search Curse**: The empirical observation (Stahlberg & Byrne 2019) that beam search quality measured by task metrics (BLEU) degrades beyond a critical beam width, because the probability-maximising hypothesis diverges from human references in ways that task metrics penalise.
+- **Trie-Based Beam Search**: Implementation using shared prefix trees to centralise KV-cache computation across beam hypotheses that share common token prefixes, reducing memory overhead in constrained generation.
+- **Batched Beam Search**: GPU-optimised beam search that processes multiple independent sequences in a single batched computation, achieving 2–4× throughput improvement over sequential per-hypothesis decoding.
+- **WER (Word Error Rate)**: The primary evaluation metric for [[Speech Recognition]] beam search decoding quality; reduction in WER from beam vs. greedy decoding ranges from 10–20% on standard benchmarks (e.g. LibriSpeech) to >20% on low-resource languages.
+- **ROUGE**: Recall-Oriented Understudy for Gisting Evaluation; metric family measuring n-gram overlap with reference summaries; standard evaluation for [[Text Summarisation]] beam search quality.
+- **pass@k**: For [[Code Generation]], the probability that at least one of k beam hypotheses is a correct solution to a programming problem; the primary evaluation metric for code generation with beam search.
+- **Beam Search Curse**: The empirical phenomenon (Stahlberg & Byrne 2019) where increasing beam width beyond k=4–10 degrades BLEU and similar task metrics, because the probability-maximising hypothesis is increasingly distant from human reference translations. Motivates MBR reranking as a post-processing step.
+- **Stochastic Beam Search**: A beam search variant using the Gumbel-Top-k trick to sample k candidates proportionally to their scores rather than deterministically selecting the top-k; produces more diverse outputs whilst retaining the quality floor of beam exploration.
+- **Coverage Penalty**: Scoring bonus/penalty applied to beam hypotheses based on how evenly the decoder has attended to source tokens; prevents hallucination (attending to nothing) and over-generation (repeating attended content) in encoder-decoder [[Machine Translation]].
+- **Language-Informed Beam Search (LiBS)**: A multilingual beam search variant that incorporates an off-the-shelf language identification model to penalise off-target translations (outputs in wrong language); reduces off-target rate by 60–80% in multilingual models without retraining (Artetxe et al. ACL 2024).
+- **Beam Search Oracle Performance**: The quality of the best hypothesis in the k-best beam search output set, evaluated against ground truth; defines the upper bound of reranking improvement; oracle BLEU/COMET is typically 10–30% higher than top-1 beam hypothesis quality, motivating reranking research.
+- **MBR-COMET**: The most effective MBR variant using COMET as the utility function; achieves the strongest translation quality in the 2024–2026 WMT evaluations; requires generating 100–1000 candidates (via beam search or sampling) for the MBR expectation computation.
+- **Minimum Risk Training (MRT)**: A training methodology that directly optimises expected task metrics (BLEU, ROUGE, COMET) under model sampling, addressing the exposure bias that arises when training with teacher forcing and decoding with beam search. MRT-trained models produce better-calibrated beam search outputs than cross-entropy-trained models on their respective task metrics.
+- **Inference Budget**: The maximum compute (FLOPs, GPU-hours, wall-clock time) allocated to generating a single response; beam width and chain-of-thought length are the primary levers for controlling inference budget in [[Inference-Time Compute]] scaling frameworks — beam search is favoured when budget is low, repeated sampling when budget is high.
 
-- ### Provenance
+### Provenance
 

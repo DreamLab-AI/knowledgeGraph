@@ -1,101 +1,118 @@
-
 An Inertial Measurement Unit (IMU) is a self-contained electronic sensor module that integrates tri-axial accelerometers, gyroscopes, and optionally magnetometers to measure a rigid body's specific force, angular rate, and magnetic heading relative to an inertial reference frame without dependence on external infrastructure. MEMS-fabricated IMUs fuse their outputs through Kalman or complementary filter algorithms to yield real-time pose and orientation estimates at high sample rates, feeding inertial navigation, SLAM pipelines, and 6-DoF tracking systems. IMUs span performance grades from low-cost consumer MEMS units (bias instability >1°/hr) to navigation-grade fibre-optic and ring-laser gyro systems used in aerospace and submarine applications. They are integral to XR headsets, autonomous vehicles, UAVs, legged robots, wearables, and surgical instruments wherever low-latency, infrastructure-independent motion awareness is required.
 
-- ### Overview
-  - IMUs occupy a foundational role in any system that must know its own motion without external anchors. Unlike [[GPS]] (which requires line-of-sight to satellites) or [[Optical Tracking]] (which depends on cameras and scene features), an IMU operates entirely from onboard physics — measuring the forces and rotations that act on the device from one moment to the next.
-  - The core challenge is **drift**: integrating noisy sensor readings accumulates error over time, causing the estimated position or heading to wander from ground truth. IMU systems address drift through several complementary strategies:
-    - Complementary sensing — fusing IMU output with lower-drift modalities (cameras, [[LiDAR]], [[GNSS]], barometers) via [[Visual-Inertial Odometry]] or tightly-coupled GNSS/INS
-    - Advanced filter algorithms — [[Kalman Filter]] variants (EKF, UKF, ESKF), [[Complementary Filter]], Mahony and Madgwick filters
-    - Temperature compensation and factory calibration to suppress bias instability
-    - Factor-graph optimisation used in tightly-coupled [[SLAM]] (GTSAM, iSAM2) for global consistency
-  - The maturity of IMU technology reflects decades of convergence: military-grade inertial navigation using ring-laser gyros and fibre-optic gyros reached maturity in the 1970s–80s, while consumer [[MEMS]] fabrication that began in the 1990s drove costs from thousands of dollars to sub-$5. Today, MEMS IMUs deliver 1–8 kHz sample rates and noise densities adequate for [[Extended Reality]] and robotics.
-  - Modern IMUs often contain an onboard [[Digital Motion Processor]] (DMP) that runs [[Sensor Fusion]] algorithms on-chip, reducing latency and offloading the host processor — particularly important in power-constrained wearable and edge devices.
+### Overview
 
-- ### Key Components
-  - **Accelerometer** — measures specific force (gravity plus linear acceleration) along three orthogonal axes. MEMS variants use suspended proof masses whose capacitively-detected deflection is proportional to acceleration. Output is expressed in m/s² or g.
-    - see [[Accelerometer]], [[MEMS]]
-  - **Gyroscope** — measures angular velocity (rad/s) around three body-frame axes. MEMS gyros exploit the Coriolis effect on vibrating structures (tuning-fork, wine-glass, disc resonators). Bias instability (°/hr) and angle random walk (°/√hr) are the dominant error metrics.
-    - see [[Gyroscope]], [[Angular Velocity]]
-  - **Magnetometer** (optional, making a 9-axis IMU) — measures the local magnetic field vector to provide an absolute heading reference, correcting long-term gyroscope yaw drift. Susceptible to hard-iron and soft-iron magnetic disturbances from nearby electronics.
-    - see [[Magnetometer]], [[Magnetic Field]]
-  - **Signal Conditioning and ADC** — analogue sensor outputs pass through amplifiers and [[Analogue-to-Digital Converter]] stages (typically 16-bit resolution) before reaching a digital host interface (SPI, I²C, or UART).
-  - **Digital Motion Processor (DMP)** — an embedded processor found in higher-end IMUs (e.g. InvenSense ICM-42688-P, Bosch BMI270) that executes on-chip [[Sensor Fusion]], step counting, or gesture detection, offloading the host MCU and reducing power consumption.
-    - see [[Digital Motion Processor]]
-  - **Calibration Store** — factory-written coefficients (scale factor, cross-axis sensitivity, bias, temperature model) stored in OTP ROM and applied at power-on to correct systematic errors.
-  - **[[Rotation Matrix]] / [[Quaternion]] Engine** — the mathematical substrate for transforming accelerometer and gyroscope readings from the sensor body frame to the world frame, typically implemented using [[Quaternion]] arithmetic to avoid the singularities of [[Euler Angles]].
+- IMUs occupy a foundational role in any system that must know its own motion without external anchors. Unlike [[GPS]] (which requires line-of-sight to satellites) or [[Optical Tracking]] (which depends on cameras and scene features), an IMU operates entirely from onboard physics — measuring the forces and rotations that act on the device from one moment to the next.
+- The core challenge is **drift**: integrating noisy sensor readings accumulates error over time, causing the estimated position or heading to wander from ground truth. IMU systems address drift through several complementary strategies:
+  - Complementary sensing — fusing IMU output with lower-drift modalities (cameras, [[LiDAR]], [[GNSS]], barometers) via [[Visual-Inertial Odometry]] or tightly-coupled GNSS/INS
+  - Advanced filter algorithms — [[Kalman Filter]] variants (EKF, UKF, ESKF), [[Complementary Filter]], Mahony and Madgwick filters
+  - Temperature compensation and factory calibration to suppress bias instability
+  - Factor-graph optimisation used in tightly-coupled [[SLAM]] (GTSAM, iSAM2) for global consistency
+- The maturity of IMU technology reflects decades of convergence: military-grade inertial navigation using ring-laser gyros and fibre-optic gyros reached maturity in the 1970s–80s, while consumer [[MEMS]] fabrication that began in the 1990s drove costs from thousands of dollars to sub-$5. Today, MEMS IMUs deliver 1–8 kHz sample rates and noise densities adequate for [[Extended Reality]] and robotics.
+- Modern IMUs often contain an onboard [[Digital Motion Processor]] (DMP) that runs [[Sensor Fusion]] algorithms on-chip, reducing latency and offloading the host processor — particularly important in power-constrained wearable and edge devices.
 
-- ### IMU Grades and Performance
-  - IMU performance is classified primarily by gyroscope bias instability (°/hr) and angle random walk (°/√hr), characterised using [[Allan Variance]] (AVAR) per IEEE Std 952:
-    - **Consumer / MEMS** — bias instability >1°/hr; adequate for [[XR Headset]], smartphones, wearables, and consumer drones. Examples: Bosch BMI088, TDK ICM-42688-P, STMicro LSM6DSV.
-    - **Industrial / Tactical** — bias instability 0.01–1°/hr; used in [[Autonomous Vehicle]] (GNSS/INS fusion), survey-grade mapping, and precision agriculture. Examples: VectorNav VN-200, Xsens MTi-600, STIM300.
-    - **Navigation-grade** — bias instability <0.01°/hr; fibre-optic or ring-laser gyros for long-duration aerospace and submarine navigation. Highly expensive, not MEMS, and significantly larger.
-  - Key figures of merit: **Allan Variance** (characterises noise processes over integration time), angle random walk (ARW), velocity random walk (VRW), bias instability (°/hr), scale factor error (ppm), and in-run bias repeatability.
-  - **In-run calibration** — techniques such as in-field calibration using gravity and magnetic field references, or zero-velocity updates (ZUPTs) during pedestrian navigation, can partially compensate for bias drift in lower-grade units.
+### Key Components
 
-- ### Sensor Fusion Algorithms
-  - Raw IMU data is never used directly for long-duration pose estimation — fusion algorithms are essential to bound drift:
-    - **Extended Kalman Filter (EKF)** — linearises the nonlinear state-space model around the current estimate using first-order Taylor expansion; the industry standard for [[Visual-Inertial Odometry]] and GNSS/INS integration. See [[Kalman Filter]].
-    - **Error-State Kalman Filter (ESKF)** — operates on perturbations (error states) around a nominal trajectory propagated from IMU; numerically superior for rotation and widely used in VIO systems (MSCKF, VINS-Mono, OpenVINS).
-    - **Unscented Kalman Filter (UKF)** — propagates a set of deterministically-chosen sigma points through nonlinear functions; better accuracy than EKF for highly nonlinear systems at higher computational cost.
-    - **Complementary Filter** / Mahony / Madgwick — simple frequency-domain complementary filters that trust the gyroscope at high frequencies and the accelerometer/magnetometer at low frequencies; widely used in embedded [[UAV]] flight controllers (ArduPilot, PX4) due to low CPU cost.
-    - **Factor Graph Optimisation** — used in tightly-coupled [[SLAM]] backends (GTSAM, iSAM2, g2o); handles IMU pre-integration, loop closures, and re-localisation in a unified batch or incremental smoother.
-    - **IMU Preintegration** — a technique that compactly summarises IMU measurements between camera/lidar frames as a single preintegrated factor, enabling efficient joint optimisation in [[Visual-Inertial Odometry]] and [[SLAM]].
-  - see [[Kalman Filter]], [[SLAM]], [[Sensor Fusion]], [[Visual-Inertial Odometry]], [[Attitude Estimation]]
+- **Accelerometer** — measures specific force (gravity plus linear acceleration) along three orthogonal axes. MEMS variants use suspended proof masses whose capacitively-detected deflection is proportional to acceleration. Output is expressed in m/s² or g.
+  - see [[Accelerometer]], [[MEMS]]
+- **Gyroscope** — measures angular velocity (rad/s) around three body-frame axes. MEMS gyros exploit the Coriolis effect on vibrating structures (tuning-fork, wine-glass, disc resonators). Bias instability (°/hr) and angle random walk (°/√hr) are the dominant error metrics.
+  - see [[Gyroscope]], [[Angular Velocity]]
+- **Magnetometer** (optional, making a 9-axis IMU) — measures the local magnetic field vector to provide an absolute heading reference, correcting long-term gyroscope yaw drift. Susceptible to hard-iron and soft-iron magnetic disturbances from nearby electronics.
+  - see [[Magnetometer]], [[Magnetic Field]]
+- **Signal Conditioning and ADC** — analogue sensor outputs pass through amplifiers and [[Analogue-to-Digital Converter]] stages (typically 16-bit resolution) before reaching a digital host interface (SPI, I²C, or UART).
+- **Digital Motion Processor (DMP)** — an embedded processor found in higher-end IMUs (e.g. InvenSense ICM-42688-P, Bosch BMI270) that executes on-chip [[Sensor Fusion]], step counting, or gesture detection, offloading the host MCU and reducing power consumption.
+  - see [[Digital Motion Processor]]
+- **Calibration Store** — factory-written coefficients (scale factor, cross-axis sensitivity, bias, temperature model) stored in OTP ROM and applied at power-on to correct systematic errors.
+- **[[Rotation Matrix]] / [[Quaternion]] Engine** — the mathematical substrate for transforming accelerometer and gyroscope readings from the sensor body frame to the world frame, typically implemented using [[Quaternion]] arithmetic to avoid the singularities of [[Euler Angles]].
 
-- ### Applications
-  - #### Extended Reality (XR)
-    - [[XR Headset]] devices (Meta Quest, Apple Vision Pro, Microsoft HoloLens) run IMU sampling at 1000 Hz, feeding a tightly-coupled [[Visual-Inertial Odometry]] (VIO) pipeline alongside camera-based [[SLAM]] for inside-out [[6-DoF Tracking]].
-    - Low-latency IMU readout (photon-to-photon latency <20 ms) is critical to prevent [[Motion Sickness]] — the IMU's high-frequency pose update bridges inter-frame gaps in the camera pipeline.
-    - XR controllers and wrist-worn trackers use IMUs for [[Hand Tracking]] and gesture recognition; see [[Spatial Interaction]] and [[Extended Reality]].
-  - #### Robotics and Autonomous Vehicles
-    - [[Legged Robot]] platforms (Boston Dynamics Spot, ANYmal) use the IMU as the primary proprioceptive sensor for balance control and terrain adaptation, fused with joint encoders and [[LiDAR]]-based [[SLAM]]. See [[Robot Proprioception]].
-    - [[Autonomous Vehicle]] inertial navigation systems tightly couple IMU with wheel odometry and [[GNSS]] to bridge GPS outages in tunnels and urban canyons; the fused output feeds the localisation module.
-    - Underwater autonomous vehicles (AUVs) rely almost entirely on IMU plus [[Dead Reckoning]] since [[GPS]] and RF signals do not penetrate water.
-    - Industrial manipulators use IMU-based [[Attitude Estimation]] for end-effector orientation control when joint encoders alone are insufficient.
-  - #### UAV and Drone Stabilisation
-    - Flight controllers (PX4, ArduPilot, Betaflight) use 3-axis IMU running at 1–8 kHz for inner-loop attitude stabilisation and outer-loop [[Dead Reckoning]] in [[GPS]]-denied environments.
-    - [[Flight Controller]] designs typically integrate three redundant IMUs with majority-vote or chi-squared fault detection to exclude failed sensors during flight.
-  - #### Medical and Wearable Sensing
-    - Surgical robots use high-grade IMUs to track instrument tip orientation and suppress tremor during minimally-invasive procedures.
-    - Wearable [[Gait Analysis]] systems capture lower-limb kinematics for rehabilitation, prosthetics tuning, and sports biomechanics.
-    - Fall detection algorithms in elderly care use IMU-derived jerk thresholds; continuous activity recognition exploits spectral features of accelerometer and gyroscope data.
-    - [[Human Motion Capture]] for animation and film VFX employs dense IMU arrays (e.g. Xsens MVN suit) as an infrastructure-free alternative to optical marker systems.
-  - #### Aerospace and Navigation
-    - Strapdown [[Inertial Navigation System]] uses IMU as the primary input for computing position, velocity, and attitude of aircraft, missiles, and spacecraft in GPS-denied or GPS-jammed environments.
-    - Launch vehicles use ring-laser gyro IMUs for ascent trajectory guidance; the [[Strapdown Navigation]] algorithm integrates specific force and angular rate in real time to propagate the navigation state.
+### IMU Grades and Performance
 
-- ### Calibration and Error Characterisation
-  - **Deterministic errors** — bias offset, scale-factor error, cross-axis sensitivity, and temperature-induced drift are corrected using factory calibration coefficients stored in the IMU's OTP ROM or by the host.
-  - **Stochastic errors** — characterised by the Allan Variance (AVAR) curve, which reveals noise processes (angle/velocity random walk, bias instability, rate ramp) as a function of averaging interval.
-  - **Temperature compensation** — IMU bias and scale factor vary significantly with temperature; most industrial units include an on-chip thermometer and a polynomial compensation model.
-  - **In-field calibration** — six-position tumble calibration (aligning each axis to gravity in turn) and magnetic calibration (ellipsoid fitting to magnetometer data) are performed at manufacture and optionally repeated in the field.
-  - **Zero-velocity updates (ZUPTs)** — when a pedestrian or vehicle is stationary, the IMU output is used to estimate and correct accumulated bias, a key technique in personal navigation.
+- IMU performance is classified primarily by gyroscope bias instability (°/hr) and angle random walk (°/√hr), characterised using [[Allan Variance]] (AVAR) per IEEE Std 952:
+  - **Consumer / MEMS** — bias instability >1°/hr; adequate for [[XR Headset]], smartphones, wearables, and consumer drones. Examples: Bosch BMI088, TDK ICM-42688-P, STMicro LSM6DSV.
+  - **Industrial / Tactical** — bias instability 0.01–1°/hr; used in [[Autonomous Vehicle]] (GNSS/INS fusion), survey-grade mapping, and precision agriculture. Examples: VectorNav VN-200, Xsens MTi-600, STIM300.
+  - **Navigation-grade** — bias instability <0.01°/hr; fibre-optic or ring-laser gyros for long-duration aerospace and submarine navigation. Highly expensive, not MEMS, and significantly larger.
+- Key figures of merit: **Allan Variance** (characterises noise processes over integration time), angle random walk (ARW), velocity random walk (VRW), bias instability (°/hr), scale factor error (ppm), and in-run bias repeatability.
+- **In-run calibration** — techniques such as in-field calibration using gravity and magnetic field references, or zero-velocity updates (ZUPTs) during pedestrian navigation, can partially compensate for bias drift in lower-grade units.
 
-- ### Standards and Context
-  - **IEEE 1559** — standard for performance characterisation of strapdown IMUs, defining test procedures for bias instability, scale-factor error, and random walk.
-  - **IEEE Std 952** — defines the [[Allan Variance]] (AVAR) method for characterising IMU noise floor and bias instability from long static datasets; the canonical tool for comparing IMU grades.
-  - **MIL-STD-1760 / DO-160** — environmental qualification standards relevant to aerospace IMU certification covering vibration, shock, temperature, and electromagnetic interference.
-  - **ISO 26262** — functional safety standard applied to automotive-grade IMU integration in [[Autonomous Vehicle]] systems, requiring redundancy and diagnostic coverage.
-  - **SEMI standards** — govern wafer-level MEMS fabrication processes used in consumer and industrial IMU production.
-  - **ROS sensor_msgs/Imu** — de facto robotics interface message defining the data structure for IMU output (orientation quaternion, angular velocity, linear acceleration, covariance matrices); part of the Robot Operating System ecosystem feeding [[SLAM]] and [[Sensor Fusion]] pipelines.
-  - Key standards bodies: IEEE Aerospace and Electronic Systems Society (AESS), RTCA (aviation), SAE International (automotive).
+### Sensor Fusion Algorithms
 
-- ### Current Landscape (2026)
-  - At CES 2026 Bosch Sensortec unveiled its BMI5 platform (BMI560/BMI563/BMI570) built on a new MEMS architecture with sub-0.5 ms latency, ~0.6 µs time increments and 1 ns timing resolution, plus an on-sensor programmable edge-AI classification engine; the XR-optimised BMI560 targets head tracking, frame prediction and SLAM, with high-volume production slated for Q3 2026.
-  - Bosch also announced the BMI423 IMU (±32 g / ±4000 dps range, 25 µA always-on draw, 2.5×3×0.8 mm LGA) with bone-conduction voice-activity detection, sampling now and shipping via distribution in Q3 2026.
-  - STMicroelectronics extended its third-generation MEMS line: the LSM6DSV80X 6-axis IMU began distribution in November 2025, building on the LSM6DSV family's embedded Sensor Fusion Low Power (SFLP), machine-learning core and Qvar charge-variation sensing for head tracking and spatial audio in XR and hearables.
-  - Automotive-grade IMUs advanced with Murata's SCH1633-D05 (SCH1600 family), announced May 2026 for autonomous driving, ADAS and humanoid robotics, delivering ceramic-grade temperature stability (offset below 0.15 °/s) in a plastic SOIC package with factory calibration; the consumer-grade SCH16T-K20 (shown January 2026) pushed accelerometer noise density to ~33 µg/√Hz and gyro bias instability to 0.3 °/h.
-  - MEMS is closing the gap on fibre-optic and ring-laser gyros: Honeywell's all-silicon HG3900 tactical/near-navigation-grade IMU claimed a 20x performance improvement over the HG1900 and completed US Army/NTA environmental testing in 2025, with design verification in 2026 and initial production in 2027.
-  - On the algorithms side, camera-less inertial odometry matured — the MARIO framework (CVPR 2026) fused a primary IMU with magnetometer, barometer and a secondary IMU already present on commercial AR glasses to cut positional drift by up to 42% on the large Nymeria dataset.
-  - Open challenges as of 2026 remain long-horizon drift and bias-instability in fully inertial (GNSS/camera-denied) tracking, temperature-dependent offset without per-unit calibration, and balancing always-on edge-AI motion classification against microamp-level power budgets for glasses and hearables.
+- Raw IMU data is never used directly for long-duration pose estimation — fusion algorithms are essential to bound drift:
+  - **Extended Kalman Filter (EKF)** — linearises the nonlinear state-space model around the current estimate using first-order Taylor expansion; the industry standard for [[Visual-Inertial Odometry]] and GNSS/INS integration. See [[Kalman Filter]].
+  - **Error-State Kalman Filter (ESKF)** — operates on perturbations (error states) around a nominal trajectory propagated from IMU; numerically superior for rotation and widely used in VIO systems (MSCKF, VINS-Mono, OpenVINS).
+  - **Unscented Kalman Filter (UKF)** — propagates a set of deterministically-chosen sigma points through nonlinear functions; better accuracy than EKF for highly nonlinear systems at higher computational cost.
+  - **Complementary Filter** / Mahony / Madgwick — simple frequency-domain complementary filters that trust the gyroscope at high frequencies and the accelerometer/magnetometer at low frequencies; widely used in embedded [[UAV]] flight controllers (ArduPilot, PX4) due to low CPU cost.
+  - **Factor Graph Optimisation** — used in tightly-coupled [[SLAM]] backends (GTSAM, iSAM2, g2o); handles IMU pre-integration, loop closures, and re-localisation in a unified batch or incremental smoother.
+  - **IMU Preintegration** — a technique that compactly summarises IMU measurements between camera/lidar frames as a single preintegrated factor, enabling efficient joint optimisation in [[Visual-Inertial Odometry]] and [[SLAM]].
+- see [[Kalman Filter]], [[SLAM]], [[Sensor Fusion]], [[Visual-Inertial Odometry]], [[Attitude Estimation]]
 
-- ### References
-  - 1. Embedded.com (2026). Bosch Sensortec Debuts Motion Sensor Platform at CES. https://www.embedded.com/bosch-sensortec-debuts-motion-sensor-platform-at-ces/
-  - 2. Mouser Electronics (2025). STMicroelectronics' LSM6DSV80X 6-Axis IMU, Now at Mouser, Measures High-Impact Motion. https://www.mouser.com/newsroom/publicrelations-stmicroelectronics-lsm6dsv80x-2025final/
-  - 3. Murata Manufacturing (2026). Murata Launches High-Performance 6DoF IMU Optimised for Automated Driving. https://www.murata.com/en-global/news/sensor/gyro/2026/0526
-  - 4. Honeywell Aerospace (2025). MEMS the Word: Meet Our Near Navigation-Grade Tactical IMU (HG3900). https://www.honeywellaerospace.com/us/en/insights/articles/mems-the-word-meet-our-near-navigation-grade-tactical-imu
-  - 5. Li et al. (2026). MARIO: Motion-Augmented Real-Time Multi-Sensor Inertial Odometry (CVPR 2026). https://arxiv.org/html/2606.02996v1
-  - 6. MarketsandMarkets (2025). Inertial Measurement Unit (IMU) Market Trends & Outlook. https://www.marketsandmarkets.com/ResearchInsight/inertial-measurement-unit-market-future-outlook.asp
+### Applications
 
-- ### Provenance
+#### Extended Reality (XR)
+
+- [[XR Headset]] devices (Meta Quest, Apple Vision Pro, Microsoft HoloLens) run IMU sampling at 1000 Hz, feeding a tightly-coupled [[Visual-Inertial Odometry]] (VIO) pipeline alongside camera-based [[SLAM]] for inside-out [[6-DoF Tracking]].
+- Low-latency IMU readout (photon-to-photon latency <20 ms) is critical to prevent [[Motion Sickness]] — the IMU's high-frequency pose update bridges inter-frame gaps in the camera pipeline.
+- XR controllers and wrist-worn trackers use IMUs for [[Hand Tracking]] and gesture recognition; see [[Spatial Interaction]] and [[Extended Reality]].
+
+#### Robotics and Autonomous Vehicles
+
+- [[Legged Robot]] platforms (Boston Dynamics Spot, ANYmal) use the IMU as the primary proprioceptive sensor for balance control and terrain adaptation, fused with joint encoders and [[LiDAR]]-based [[SLAM]]. See [[Robot Proprioception]].
+- [[Autonomous Vehicle]] inertial navigation systems tightly couple IMU with wheel odometry and [[GNSS]] to bridge GPS outages in tunnels and urban canyons; the fused output feeds the localisation module.
+- Underwater autonomous vehicles (AUVs) rely almost entirely on IMU plus [[Dead Reckoning]] since [[GPS]] and RF signals do not penetrate water.
+- Industrial manipulators use IMU-based [[Attitude Estimation]] for end-effector orientation control when joint encoders alone are insufficient.
+
+#### UAV and Drone Stabilisation
+
+- Flight controllers (PX4, ArduPilot, Betaflight) use 3-axis IMU running at 1–8 kHz for inner-loop attitude stabilisation and outer-loop [[Dead Reckoning]] in [[GPS]]-denied environments.
+- [[Flight Controller]] designs typically integrate three redundant IMUs with majority-vote or chi-squared fault detection to exclude failed sensors during flight.
+
+#### Medical and Wearable Sensing
+
+- Surgical robots use high-grade IMUs to track instrument tip orientation and suppress tremor during minimally-invasive procedures.
+- Wearable [[Gait Analysis]] systems capture lower-limb kinematics for rehabilitation, prosthetics tuning, and sports biomechanics.
+- Fall detection algorithms in elderly care use IMU-derived jerk thresholds; continuous activity recognition exploits spectral features of accelerometer and gyroscope data.
+- [[Human Motion Capture]] for animation and film VFX employs dense IMU arrays (e.g. Xsens MVN suit) as an infrastructure-free alternative to optical marker systems.
+
+#### Aerospace and Navigation
+
+- Strapdown [[Inertial Navigation System]] uses IMU as the primary input for computing position, velocity, and attitude of aircraft, missiles, and spacecraft in GPS-denied or GPS-jammed environments.
+- Launch vehicles use ring-laser gyro IMUs for ascent trajectory guidance; the [[Strapdown Navigation]] algorithm integrates specific force and angular rate in real time to propagate the navigation state.
+
+### Calibration and Error Characterisation
+
+- **Deterministic errors** — bias offset, scale-factor error, cross-axis sensitivity, and temperature-induced drift are corrected using factory calibration coefficients stored in the IMU's OTP ROM or by the host.
+- **Stochastic errors** — characterised by the Allan Variance (AVAR) curve, which reveals noise processes (angle/velocity random walk, bias instability, rate ramp) as a function of averaging interval.
+- **Temperature compensation** — IMU bias and scale factor vary significantly with temperature; most industrial units include an on-chip thermometer and a polynomial compensation model.
+- **In-field calibration** — six-position tumble calibration (aligning each axis to gravity in turn) and magnetic calibration (ellipsoid fitting to magnetometer data) are performed at manufacture and optionally repeated in the field.
+- **Zero-velocity updates (ZUPTs)** — when a pedestrian or vehicle is stationary, the IMU output is used to estimate and correct accumulated bias, a key technique in personal navigation.
+
+### Standards and Context
+
+- **IEEE 1559** — standard for performance characterisation of strapdown IMUs, defining test procedures for bias instability, scale-factor error, and random walk.
+- **IEEE Std 952** — defines the [[Allan Variance]] (AVAR) method for characterising IMU noise floor and bias instability from long static datasets; the canonical tool for comparing IMU grades.
+- **MIL-STD-1760 / DO-160** — environmental qualification standards relevant to aerospace IMU certification covering vibration, shock, temperature, and electromagnetic interference.
+- **ISO 26262** — functional safety standard applied to automotive-grade IMU integration in [[Autonomous Vehicle]] systems, requiring redundancy and diagnostic coverage.
+- **SEMI standards** — govern wafer-level MEMS fabrication processes used in consumer and industrial IMU production.
+- **ROS sensor_msgs/Imu** — de facto robotics interface message defining the data structure for IMU output (orientation quaternion, angular velocity, linear acceleration, covariance matrices); part of the Robot Operating System ecosystem feeding [[SLAM]] and [[Sensor Fusion]] pipelines.
+- Key standards bodies: IEEE Aerospace and Electronic Systems Society (AESS), RTCA (aviation), SAE International (automotive).
+
+### Current Landscape (2026)
+
+- At CES 2026 Bosch Sensortec unveiled its BMI5 platform (BMI560/BMI563/BMI570) built on a new MEMS architecture with sub-0.5 ms latency, ~0.6 µs time increments and 1 ns timing resolution, plus an on-sensor programmable edge-AI classification engine; the XR-optimised BMI560 targets head tracking, frame prediction and SLAM, with high-volume production slated for Q3 2026.
+- Bosch also announced the BMI423 IMU (±32 g / ±4000 dps range, 25 µA always-on draw, 2.5×3×0.8 mm LGA) with bone-conduction voice-activity detection, sampling now and shipping via distribution in Q3 2026.
+- STMicroelectronics extended its third-generation MEMS line: the LSM6DSV80X 6-axis IMU began distribution in November 2025, building on the LSM6DSV family's embedded Sensor Fusion Low Power (SFLP), machine-learning core and Qvar charge-variation sensing for head tracking and spatial audio in XR and hearables.
+- Automotive-grade IMUs advanced with Murata's SCH1633-D05 (SCH1600 family), announced May 2026 for autonomous driving, ADAS and humanoid robotics, delivering ceramic-grade temperature stability (offset below 0.15 °/s) in a plastic SOIC package with factory calibration; the consumer-grade SCH16T-K20 (shown January 2026) pushed accelerometer noise density to ~33 µg/√Hz and gyro bias instability to 0.3 °/h.
+- MEMS is closing the gap on fibre-optic and ring-laser gyros: Honeywell's all-silicon HG3900 tactical/near-navigation-grade IMU claimed a 20x performance improvement over the HG1900 and completed US Army/NTA environmental testing in 2025, with design verification in 2026 and initial production in 2027.
+- On the algorithms side, camera-less inertial odometry matured — the MARIO framework (CVPR 2026) fused a primary IMU with magnetometer, barometer and a secondary IMU already present on commercial AR glasses to cut positional drift by up to 42% on the large Nymeria dataset.
+- Open challenges as of 2026 remain long-horizon drift and bias-instability in fully inertial (GNSS/camera-denied) tracking, temperature-dependent offset without per-unit calibration, and balancing always-on edge-AI motion classification against microamp-level power budgets for glasses and hearables.
+
+### References
+
+- 1. Embedded.com (2026). Bosch Sensortec Debuts Motion Sensor Platform at CES. https://www.embedded.com/bosch-sensortec-debuts-motion-sensor-platform-at-ces/
+- 2. Mouser Electronics (2025). STMicroelectronics' LSM6DSV80X 6-Axis IMU, Now at Mouser, Measures High-Impact Motion. https://www.mouser.com/newsroom/publicrelations-stmicroelectronics-lsm6dsv80x-2025final/
+- 3. Murata Manufacturing (2026). Murata Launches High-Performance 6DoF IMU Optimised for Automated Driving. https://www.murata.com/en-global/news/sensor/gyro/2026/0526
+- 4. Honeywell Aerospace (2025). MEMS the Word: Meet Our Near Navigation-Grade Tactical IMU (HG3900). https://www.honeywellaerospace.com/us/en/insights/articles/mems-the-word-meet-our-near-navigation-grade-tactical-imu
+- 5. Li et al. (2026). MARIO: Motion-Augmented Real-Time Multi-Sensor Inertial Odometry (CVPR 2026). https://arxiv.org/html/2606.02996v1
+- 6. MarketsandMarkets (2025). Inertial Measurement Unit (IMU) Market Trends & Outlook. https://www.marketsandmarkets.com/ResearchInsight/inertial-measurement-unit-market-future-outlook.asp
+
+### Provenance
 

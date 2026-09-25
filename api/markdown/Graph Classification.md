@@ -1,3 +1,2 @@
-
 Graph classification is the machine learning task of assigning a label to an entire graph, such as a molecule, social network or program dependency graph, based on its structure and node or edge attributes, in contrast to node classification which labels individual vertices. It is typically performed by a graph neural network that repeatedly aggregates neighbourhood information through message passing before pooling node representations into a single graph-level embedding for classification. Graph classification is applied to problems such as molecular property prediction, protein function prediction and program analysis.
 

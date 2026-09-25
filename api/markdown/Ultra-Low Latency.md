@@ -1,5 +1,4 @@
-
 Ultra-low latency describes network or compute paths engineered to keep end-to-end response times to a few milliseconds or less, well below what is achievable with standard best-effort infrastructure. It is achieved through techniques such as edge deployment, dedicated fibre paths, and mobile edge computing that shorten the physical and logical distance between request and response. Ultra-low latency is a requirement for applications such as real-time control, augmented reality, and high-frequency trading.
 
-- ### Provenance
+### Provenance
 

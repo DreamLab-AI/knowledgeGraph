@@ -1,138 +1,147 @@
-
 The execution of machine learning model inference on local edge devices rather than in centralised cloud infrastructure, close to where data is generated, enabling low-latency, privacy-preserving and bandwidth-efficient AI applications.
 
-- ### Semantic Classification
+### Semantic Classification
 
-- ### Content
-  ## Compositional Relationships (Components)
-      SubClassOf(ai:EdgeInference
-        ObjectSomeValuesFrom(ai:hasPart ai:ModelQuantisation))
-      SubClassOf(ai:EdgeInference
-        ObjectSomeValuesFrom(ai:hasPart ai:ModelPruning))
-      SubClassOf(ai:EdgeInference
-        ObjectSomeValuesFrom(ai:hasPart ai:KnowledgeDistillation))
-      SubClassOf(ai:EdgeInference
-        ObjectSomeValuesFrom(ai:hasPart ai:InferenceEngine))
-      SubClassOf(ai:EdgeInference
-        ObjectSomeValuesFrom(ai:hasPart ai:HardwareAccelerator))
-      SubClassOf(ai:EdgeInference
-        ObjectSomeValuesFrom(ai:hasPart ai:NeuralArchitectureSearch))
-      SubClassOf(ai:EdgeInference
-        ObjectSomeValuesFrom(ai:hasPart ai:ModelCompressionPipeline))
+### Content
 
-  ## Dependency Relationships
-      SubClassOf(ai:EdgeInference
-        ObjectSomeValuesFrom(ai:requires ai:InferenceEngine))
-      SubClassOf(ai:EdgeInference
-        ObjectSomeValuesFrom(ai:requires ai:NeuralProcessingUnit))
-      SubClassOf(ai:EdgeInference
-        ObjectSomeValuesFrom(ai:requires ai:EmbeddedSystems))
-      SubClassOf(ai:EdgeInference
-        ObjectSomeValuesFrom(ai:requires ai:ModelCompression))
-      SubClassOf(ai:EdgeInference
-        ObjectSomeValuesFrom(ai:requires ai:HardwareAcceleration))
-      SubClassOf(ai:EdgeInference
-        ObjectSomeValuesFrom(ai:dependsOn ai:EdgeComputing))
-      SubClassOf(ai:EdgeInference
-        ObjectSomeValuesFrom(ai:dependsOn ai:DeepLearning))
-      SubClassOf(ai:EdgeInference
-        ObjectSomeValuesFrom(ai:dependsOn ai:InternetOfThings))
+## Compositional Relationships (Components)
+    SubClassOf(ai:EdgeInference
+      ObjectSomeValuesFrom(ai:hasPart ai:ModelQuantisation))
+    SubClassOf(ai:EdgeInference
+      ObjectSomeValuesFrom(ai:hasPart ai:ModelPruning))
+    SubClassOf(ai:EdgeInference
+      ObjectSomeValuesFrom(ai:hasPart ai:KnowledgeDistillation))
+    SubClassOf(ai:EdgeInference
+      ObjectSomeValuesFrom(ai:hasPart ai:InferenceEngine))
+    SubClassOf(ai:EdgeInference
+      ObjectSomeValuesFrom(ai:hasPart ai:HardwareAccelerator))
+    SubClassOf(ai:EdgeInference
+      ObjectSomeValuesFrom(ai:hasPart ai:NeuralArchitectureSearch))
+    SubClassOf(ai:EdgeInference
+      ObjectSomeValuesFrom(ai:hasPart ai:ModelCompressionPipeline))
 
-  ## Capability Relationships
-      SubClassOf(ai:EdgeInference
-        ObjectSomeValuesFrom(ai:enables ai:RealTimeAIInference))
-      SubClassOf(ai:EdgeInference
-        ObjectSomeValuesFrom(ai:enables ai:OnDevicePrivacy))
-      SubClassOf(ai:EdgeInference
-        ObjectSomeValuesFrom(ai:enables ai:OfflineAI))
-      SubClassOf(ai:EdgeInference
-        ObjectSomeValuesFrom(ai:enables ai:FederatedLearning))
-      SubClassOf(ai:EdgeInference
-        ObjectSomeValuesFrom(ai:enables ai:AutonomousVehicleSafety))
-      SubClassOf(ai:EdgeInference
-        ObjectSomeValuesFrom(ai:enables ai:SmartManufacturing))
+## Dependency Relationships
+    SubClassOf(ai:EdgeInference
+      ObjectSomeValuesFrom(ai:requires ai:InferenceEngine))
+    SubClassOf(ai:EdgeInference
+      ObjectSomeValuesFrom(ai:requires ai:NeuralProcessingUnit))
+    SubClassOf(ai:EdgeInference
+      ObjectSomeValuesFrom(ai:requires ai:EmbeddedSystems))
+    SubClassOf(ai:EdgeInference
+      ObjectSomeValuesFrom(ai:requires ai:ModelCompression))
+    SubClassOf(ai:EdgeInference
+      ObjectSomeValuesFrom(ai:requires ai:HardwareAcceleration))
+    SubClassOf(ai:EdgeInference
+      ObjectSomeValuesFrom(ai:dependsOn ai:EdgeComputing))
+    SubClassOf(ai:EdgeInference
+      ObjectSomeValuesFrom(ai:dependsOn ai:DeepLearning))
+    SubClassOf(ai:EdgeInference
+      ObjectSomeValuesFrom(ai:dependsOn ai:InternetOfThings))
 
-  ## Implementation Relationships
-      SubClassOf(ai:EdgeInference
-        ObjectSomeValuesFrom(ai:implements ai:MachineLearningInference))
-      SubClassOf(ai:EdgeInference
-        ObjectSomeValuesFrom(ai:implements ai:DeepLearningDeployment))
-      SubClassOf(ai:EdgeInference
-        ObjectSomeValuesFrom(ai:uses ai:TensorFlowLite))
-      SubClassOf(ai:EdgeInference
-        ObjectSomeValuesFrom(ai:uses ai:ONNXRuntime))
-      SubClassOf(ai:EdgeInference
-        ObjectSomeValuesFrom(ai:uses ai:ExecuTorch))
-      SubClassOf(ai:EdgeInference
-        ObjectSomeValuesFrom(ai:uses ai:AppleCoreML))
+## Capability Relationships
+    SubClassOf(ai:EdgeInference
+      ObjectSomeValuesFrom(ai:enables ai:RealTimeAIInference))
+    SubClassOf(ai:EdgeInference
+      ObjectSomeValuesFrom(ai:enables ai:OnDevicePrivacy))
+    SubClassOf(ai:EdgeInference
+      ObjectSomeValuesFrom(ai:enables ai:OfflineAI))
+    SubClassOf(ai:EdgeInference
+      ObjectSomeValuesFrom(ai:enables ai:FederatedLearning))
+    SubClassOf(ai:EdgeInference
+      ObjectSomeValuesFrom(ai:enables ai:AutonomousVehicleSafety))
+    SubClassOf(ai:EdgeInference
+      ObjectSomeValuesFrom(ai:enables ai:SmartManufacturing))
 
-  ## Reduction Relationships
-      SubClassOf(ai:EdgeInference
-        ObjectSomeValuesFrom(ai:reducesTo ai:ModelQuantisation))
-      SubClassOf(ai:EdgeInference
-        ObjectSomeValuesFrom(ai:reducesTo ai:TinyML))
-      SubClassOf(ai:EdgeInference
-        ObjectSomeValuesFrom(ai:reducesTo ai:OnDeviceMLInference))
+## Implementation Relationships
+    SubClassOf(ai:EdgeInference
+      ObjectSomeValuesFrom(ai:implements ai:MachineLearningInference))
+    SubClassOf(ai:EdgeInference
+      ObjectSomeValuesFrom(ai:implements ai:DeepLearningDeployment))
+    SubClassOf(ai:EdgeInference
+      ObjectSomeValuesFrom(ai:uses ai:TensorFlowLite))
+    SubClassOf(ai:EdgeInference
+      ObjectSomeValuesFrom(ai:uses ai:ONNXRuntime))
+    SubClassOf(ai:EdgeInference
+      ObjectSomeValuesFrom(ai:uses ai:ExecuTorch))
+    SubClassOf(ai:EdgeInference
+      ObjectSomeValuesFrom(ai:uses ai:AppleCoreML))
 
-  ## About
-  Edge inference emerged as a practical discipline in the mid-2010s when it became clear that the rapid maturation of deep learning — producing models of extraordinary capability but also extraordinary computational cost — was on a collision course with the real-world constraints of deployment. The latency imposed by cloud round-trips (typically 50–500ms for mobile inference requests) was tolerable for asynchronous tasks such as cloud photo organisation, but entirely unacceptable for safety-critical applications such as automotive perception, industrial machinery anomaly detection, or real-time medical monitoring. At the same time, privacy regulation in the form of the EU General Data Protection Regulation (2018) and subsequent national frameworks created compliance pressure to minimise data egress from devices holding personal or sensitive information. These twin forces — latency imperatives and privacy regulation — drove a rapid industrialisation of model compression research and purpose-built inference silicon.
+## Reduction Relationships
+    SubClassOf(ai:EdgeInference
+      ObjectSomeValuesFrom(ai:reducesTo ai:ModelQuantisation))
+    SubClassOf(ai:EdgeInference
+      ObjectSomeValuesFrom(ai:reducesTo ai:TinyML))
+    SubClassOf(ai:EdgeInference
+      ObjectSomeValuesFrom(ai:reducesTo ai:OnDeviceMLInference))
 
-  The hardware trajectory was transformative. Apple introduced the A11 Bionic Neural Engine in 2017, delivering 600 billion operations per second in a mobile SoC; by 2024, the A17 Pro delivered 35 TOPS and the M4 Neural Engine reached 38 TOPS. Google's Edge TPU (2018) and Pixel Visual Core established on-device processing as a competitive differentiator in the Android ecosystem. Qualcomm's Hexagon NPU series became the dominant inference accelerator in Android flagship and mid-range smartphones worldwide, with Snapdragon 8 Elite (2024) capable of 100 TOPS. Arm's Ethos NPU IP, licensed to hundreds of silicon vendors, shaped the instruction-set landscape for Cortex-A and Cortex-M class devices. At the microcontroller frontier, the [[TinyML]] discipline — popularised by Warden and Situnayake (2019) and formalised in the MLPerf Tiny benchmark series — demonstrated that viable inference workloads (keyword spotting, visual wake word detection, anomaly detection) could execute on Cortex-M class devices with 256 KB of flash and 64 KB of SRAM, consuming microwatts of power and enabling inference from coin-cell batteries for weeks at a time.
+## About
+Edge inference emerged as a practical discipline in the mid-2010s when it became clear that the rapid maturation of deep learning — producing models of extraordinary capability but also extraordinary computational cost — was on a collision course with the real-world constraints of deployment. The latency imposed by cloud round-trips (typically 50–500ms for mobile inference requests) was tolerable for asynchronous tasks such as cloud photo organisation, but entirely unacceptable for safety-critical applications such as automotive perception, industrial machinery anomaly detection, or real-time medical monitoring. At the same time, privacy regulation in the form of the EU General Data Protection Regulation (2018) and subsequent national frameworks created compliance pressure to minimise data egress from devices holding personal or sensitive information. These twin forces — latency imperatives and privacy regulation — drove a rapid industrialisation of model compression research and purpose-built inference silicon.
 
-  The runtime software layer standardised around a small number of runtimes with broad hardware support. [[TensorFlow Lite]] became the de facto standard for mobile and embedded inference with a broad HAL-based delegate system for hardware acceleration. The [[ONNX]] ecosystem — initially a joint Facebook/Microsoft initiative, now governed by the Linux Foundation — provided model-format portability across training frameworks and inference runtimes. Meta's ExecuTorch hit GA in October 2025, targeting the full spectrum from microcontrollers to flagship smartphones with a 50 KB base footprint and support for 12+ hardware backends. The emergence of on-device [[Small Language Models]] (SLMs) — including Apple Intelligence's 3B parameter on-device model, Qualcomm-optimised Llama 3.2 variants, and Samsung Gauss — extended edge inference from narrow perception tasks into open-ended language understanding, marking a qualitative shift in the scope of what could be executed locally.
+The hardware trajectory was transformative. Apple introduced the A11 Bionic Neural Engine in 2017, delivering 600 billion operations per second in a mobile SoC; by 2024, the A17 Pro delivered 35 TOPS and the M4 Neural Engine reached 38 TOPS. Google's Edge TPU (2018) and Pixel Visual Core established on-device processing as a competitive differentiator in the Android ecosystem. Qualcomm's Hexagon NPU series became the dominant inference accelerator in Android flagship and mid-range smartphones worldwide, with Snapdragon 8 Elite (2024) capable of 100 TOPS. Arm's Ethos NPU IP, licensed to hundreds of silicon vendors, shaped the instruction-set landscape for Cortex-A and Cortex-M class devices. At the microcontroller frontier, the [[TinyML]] discipline — popularised by Warden and Situnayake (2019) and formalised in the MLPerf Tiny benchmark series — demonstrated that viable inference workloads (keyword spotting, visual wake word detection, anomaly detection) could execute on Cortex-M class devices with 256 KB of flash and 64 KB of SRAM, consuming microwatts of power and enabling inference from coin-cell batteries for weeks at a time.
 
-  ## Components / Architecture
+The runtime software layer standardised around a small number of runtimes with broad hardware support. [[TensorFlow Lite]] became the de facto standard for mobile and embedded inference with a broad HAL-based delegate system for hardware acceleration. The [[ONNX]] ecosystem — initially a joint Facebook/Microsoft initiative, now governed by the Linux Foundation — provided model-format portability across training frameworks and inference runtimes. Meta's ExecuTorch hit GA in October 2025, targeting the full spectrum from microcontrollers to flagship smartphones with a 50 KB base footprint and support for 12+ hardware backends. The emergence of on-device [[Small Language Models]] (SLMs) — including Apple Intelligence's 3B parameter on-device model, Qualcomm-optimised Llama 3.2 variants, and Samsung Gauss — extended edge inference from narrow perception tasks into open-ended language understanding, marking a qualitative shift in the scope of what could be executed locally.
 
-  **Model Compression Pipeline**
-  - **[[Model Quantisation]]**: Conversion of floating-point weights and activations to lower-precision integer representations (INT8, INT4, binary), reducing model size by 4–8× and enabling integer arithmetic units to accelerate computation. Post-training quantisation (PTQ) and quantisation-aware training (QAT) are the two principal approaches; QAT preserves accuracy better at aggressive precision levels. MLPerf Tiny v1.2 (2024) and v1.3 (2025) formalised INT8 as the reference quantisation target for benchmark submissions.
-  - **[[Model Pruning]]**: Removal of redundant weights (unstructured pruning) or entire channels/layers (structured pruning) to reduce parameter count and FLOP cost. Structured pruning yields hardware-friendly sparse networks compatible with dense matrix accelerators. Research has demonstrated 93% accuracy retention on Cortex-M4 image classification with combined structured pruning and INT8 quantisation.
-  - **[[Knowledge Distillation]]**: Training a compact "student" model to mimic the soft output distributions of a larger "teacher" model (Hinton et al. 2015). Distillation enables student networks to match teacher accuracy at a fraction of the parameter count, preserving the implicit knowledge encoded in inter-class probability distributions. DistilBERT exemplifies distillation applied to transformer-family models for on-device NLP.
-  - **[[Neural Architecture Search]]**: Automated search over the space of network topologies for architectures optimised against hardware efficiency metrics (latency, TOPS/Watt, model size). Hardware-aware NAS (e.g. ProxylessNAS, Once-for-All) directly minimises target-device latency rather than proxy metrics such as FLOP count, yielding architectures substantially more efficient than hand-designed counterparts like MobileNet or EfficientNet.
+## Components / Architecture
+
+**Model Compression Pipeline**
+
+- **[[Model Quantisation]]**: Conversion of floating-point weights and activations to lower-precision integer representations (INT8, INT4, binary), reducing model size by 4–8× and enabling integer arithmetic units to accelerate computation. Post-training quantisation (PTQ) and quantisation-aware training (QAT) are the two principal approaches; QAT preserves accuracy better at aggressive precision levels. MLPerf Tiny v1.2 (2024) and v1.3 (2025) formalised INT8 as the reference quantisation target for benchmark submissions.
+- **[[Model Pruning]]**: Removal of redundant weights (unstructured pruning) or entire channels/layers (structured pruning) to reduce parameter count and FLOP cost. Structured pruning yields hardware-friendly sparse networks compatible with dense matrix accelerators. Research has demonstrated 93% accuracy retention on Cortex-M4 image classification with combined structured pruning and INT8 quantisation.
+- **[[Knowledge Distillation]]**: Training a compact "student" model to mimic the soft output distributions of a larger "teacher" model (Hinton et al. 2015). Distillation enables student networks to match teacher accuracy at a fraction of the parameter count, preserving the implicit knowledge encoded in inter-class probability distributions. DistilBERT exemplifies distillation applied to transformer-family models for on-device NLP.
+- **[[Neural Architecture Search]]**: Automated search over the space of network topologies for architectures optimised against hardware efficiency metrics (latency, TOPS/Watt, model size). Hardware-aware NAS (e.g. ProxylessNAS, Once-for-All) directly minimises target-device latency rather than proxy metrics such as FLOP count, yielding architectures substantially more efficient than hand-designed counterparts like MobileNet or EfficientNet.
 
   **Inference Runtimes**
-  - **[[TensorFlow Lite]]**: Google's lightweight cross-platform inference runtime, with broad HAL delegate support for Arm NN, GPU, Hexagon DSP, and Coral Edge TPU. Reference implementation for MLPerf Tiny. TFLite Micro targets bare-metal microcontroller environments without OS dependencies.
-  - **[[ONNX Runtime]]**: Cross-framework execution engine supporting ONNX-format models on CPU (via MLAS), GPU (via CUDA/DirectML), and hardware-specific execution providers. Benchmarks show ONNX Runtime and OpenVINO are the most optimised frameworks for Intel CPU inference in FP32 format.
-  - **ExecuTorch (Meta)**: GA October 2025. 50 KB base footprint, portable delegate architecture supporting Arm Ethos NPU, Apple Neural Engine, Qualcomm Hexagon, and CUDA backends. Designed to execute llama.cpp-family models on mobile NPUs.
-  - **Apple Core ML**: iOS/macOS native runtime targeting Neural Engine and GPU; tight integration with Xcode ML model compilation pipeline. Supports quantised Core ML models at INT4/INT8 precision for Apple Silicon Neural Engine execution.
-  - **Vendor SDKs**: Qualcomm SNPE/QNN, MediaTek NeuroPilot, Arm NN, Samsung ONE-RT — each providing NPU-optimised execution for proprietary instruction sets, often exposing hardware-specific operator fusion and memory layout optimisations unavailable in generic runtimes.
+
+- **[[TensorFlow Lite]]**: Google's lightweight cross-platform inference runtime, with broad HAL delegate support for Arm NN, GPU, Hexagon DSP, and Coral Edge TPU. Reference implementation for MLPerf Tiny. TFLite Micro targets bare-metal microcontroller environments without OS dependencies.
+- **[[ONNX Runtime]]**: Cross-framework execution engine supporting ONNX-format models on CPU (via MLAS), GPU (via CUDA/DirectML), and hardware-specific execution providers. Benchmarks show ONNX Runtime and OpenVINO are the most optimised frameworks for Intel CPU inference in FP32 format.
+- **ExecuTorch (Meta)**: GA October 2025. 50 KB base footprint, portable delegate architecture supporting Arm Ethos NPU, Apple Neural Engine, Qualcomm Hexagon, and CUDA backends. Designed to execute llama.cpp-family models on mobile NPUs.
+- **Apple Core ML**: iOS/macOS native runtime targeting Neural Engine and GPU; tight integration with Xcode ML model compilation pipeline. Supports quantised Core ML models at INT4/INT8 precision for Apple Silicon Neural Engine execution.
+- **Vendor SDKs**: Qualcomm SNPE/QNN, MediaTek NeuroPilot, Arm NN, Samsung ONE-RT — each providing NPU-optimised execution for proprietary instruction sets, often exposing hardware-specific operator fusion and memory layout optimisations unavailable in generic runtimes.
 
   **Hardware Accelerator Classes**
-  - **Neural Processing Unit (NPU)**: Dedicated fixed-function silicon block for matrix-multiply-accumulate (GEMM) operations, standard in mobile SoCs since 2017. Delivers 10–100 TOPS at milliwatt power levels. Qualcomm Hexagon, Apple Neural Engine, Samsung Mobiletech NPU, MediaTek APU, and Arm Ethos cover the bulk of deployed mobile silicon.
-  - **Arm Cortex-M Microcontrollers with Helium**: Arm Cortex-M55 and M85 with Helium SIMD extension bring advanced DSP and ML instructions into the ultra-low-power MCU space, enabling MLPerf Tiny-class inference workloads at < 1 mW.
-  - **Microprocessor-class Edge Inference**: Google Edge TPU (2 TOPS, 2W), Raspberry Pi AI HAT+ (13 TOPS Hailo-8L), Nvidia Jetson Orin (275 TOPS in flagship config) serve the gateway and embedded server tier between MCUs and cloud.
-  - **FPGAs**: Xilinx/AMD Versal, Intel Agilex — programmable reconfigurable logic for latency-deterministic inference in industrial and defence applications, benchmarked in open-source FPGA-ML codesign work (Habib et al. 2022).
+
+- **Neural Processing Unit (NPU)**: Dedicated fixed-function silicon block for matrix-multiply-accumulate (GEMM) operations, standard in mobile SoCs since 2017. Delivers 10–100 TOPS at milliwatt power levels. Qualcomm Hexagon, Apple Neural Engine, Samsung Mobiletech NPU, MediaTek APU, and Arm Ethos cover the bulk of deployed mobile silicon.
+- **Arm Cortex-M Microcontrollers with Helium**: Arm Cortex-M55 and M85 with Helium SIMD extension bring advanced DSP and ML instructions into the ultra-low-power MCU space, enabling MLPerf Tiny-class inference workloads at < 1 mW.
+- **Microprocessor-class Edge Inference**: Google Edge TPU (2 TOPS, 2W), Raspberry Pi AI HAT+ (13 TOPS Hailo-8L), Nvidia Jetson Orin (275 TOPS in flagship config) serve the gateway and embedded server tier between MCUs and cloud.
+- **FPGAs**: Xilinx/AMD Versal, Intel Agilex — programmable reconfigurable logic for latency-deterministic inference in industrial and defence applications, benchmarked in open-source FPGA-ML codesign work (Habib et al. 2022).
 
   ## Use Cases / Major Families
 
   **Consumer and Mobile**
-  - Face unlock, scene understanding, photo enhancement, real-time object detection — executing on smartphone NPUs without cloud dependency
-  - Always-on keyword spotting (e.g. "Hey Siri", "OK Google") on ultra-low-power co-processors at microwatt power budgets
-  - On-device summarisation, smart reply, and image editing via Apple Intelligence (3B parameter on-device model), Samsung Gauss, and Qualcomm-optimised Llama 3.2 variants
-  - Voice assistant local ASR: Whisper-tiny and similar models running on NPUs to transcribe speech locally without network connection
+
+- Face unlock, scene understanding, photo enhancement, real-time object detection — executing on smartphone NPUs without cloud dependency
+- Always-on keyword spotting (e.g. "Hey Siri", "OK Google") on ultra-low-power co-processors at microwatt power budgets
+- On-device summarisation, smart reply, and image editing via Apple Intelligence (3B parameter on-device model), Samsung Gauss, and Qualcomm-optimised Llama 3.2 variants
+- Voice assistant local ASR: Whisper-tiny and similar models running on NPUs to transcribe speech locally without network connection
 
   **Automotive and Transport**
-  - [[Autonomous Vehicles]] perception stacks: multi-camera object detection, lane segmentation, pedestrian prediction — all executing on automotive-grade SoCs (Nvidia Drive Orin, Qualcomm Ride, Mobileye EyeQ) with deterministic sub-10 ms inference latency
-  - ADAS functions: forward collision warning, automatic emergency braking, lane-keep assist — ISO 26262 ASIL-B/D safety-certified inference pipelines
-  - Fleet telematics: onboard driver behaviour analysis (distraction, fatigue) processed locally for privacy compliance
+
+- [[Autonomous Vehicles]] perception stacks: multi-camera object detection, lane segmentation, pedestrian prediction — all executing on automotive-grade SoCs (Nvidia Drive Orin, Qualcomm Ride, Mobileye EyeQ) with deterministic sub-10 ms inference latency
+- ADAS functions: forward collision warning, automatic emergency braking, lane-keep assist — ISO 26262 ASIL-B/D safety-certified inference pipelines
+- Fleet telematics: onboard driver behaviour analysis (distraction, fatigue) processed locally for privacy compliance
 
   **Industrial and Smart Manufacturing**
-  - Visual quality inspection cameras on production lines using local defect detection, triggering rejection actuators in < 20 ms
-  - Predictive maintenance: vibration/temperature time-series anomaly detection on gateway hardware adjacent to machinery
-  - Agricultural drones and field sensors: crop disease identification and irrigation-need detection without cellular connectivity
+
+- Visual quality inspection cameras on production lines using local defect detection, triggering rejection actuators in < 20 ms
+- Predictive maintenance: vibration/temperature time-series anomaly detection on gateway hardware adjacent to machinery
+- Agricultural drones and field sensors: crop disease identification and irrigation-need detection without cellular connectivity
 
   **Healthcare and Wearables**
-  - Wearable ECG arrhythmia detection (e.g. Apple Watch, Withings Scanwatch) executing locally for continuous monitoring with appropriate medical device classification
-  - Point-of-care diagnostics: pathology slide image classification on tablet or dedicated device without hospital network dependency
-  - On-device speech-to-text for clinical note-taking with patient-data privacy compliance under NHS DSP Toolkit
+
+- Wearable ECG arrhythmia detection (e.g. Apple Watch, Withings Scanwatch) executing locally for continuous monitoring with appropriate medical device classification
+- Point-of-care diagnostics: pathology slide image classification on tablet or dedicated device without hospital network dependency
+- On-device speech-to-text for clinical note-taking with patient-data privacy compliance under NHS DSP Toolkit
 
   **Smart Infrastructure and [[TinyML]]**
-  - Smart city camera nodes: vehicle counting, pedestrian flow estimation — only aggregate statistics transmitted to city platforms
-  - Energy grid anomaly detection on substation edge nodes
-  - MLPerf Tiny benchmark tasks: visual wake words (96×96 grayscale image binary classification), keyword spotting (DS-CNN on 49 mel-frequency frames), anomaly detection (ToyADMOS autoencoder), and image classification (ResNet-8 on CIFAR-10)
+
+- Smart city camera nodes: vehicle counting, pedestrian flow estimation — only aggregate statistics transmitted to city platforms
+- Energy grid anomaly detection on substation edge nodes
+- MLPerf Tiny benchmark tasks: visual wake words (96×96 grayscale image binary classification), keyword spotting (DS-CNN on 49 mel-frequency frames), anomaly detection (ToyADMOS autoencoder), and image classification (ResNet-8 on CIFAR-10)
 
   **Spatial Computing and XR**
-  - [[Spatial Computing]] headsets (Apple Vision Pro, Meta Quest 3): hand tracking, gaze estimation, scene mesh reconstruction, semantic segmentation — all latency-critical inference paths must run on-device
-  - Passthrough AR: real-time semantic segmentation of video feed at 60–90 FPS frame rates incompatible with cloud round-trip latency
+
+- [[Spatial Computing]] headsets (Apple Vision Pro, Meta Quest 3): hand tracking, gaze estimation, scene mesh reconstruction, semantic segmentation — all latency-critical inference paths must run on-device
+- Passthrough AR: real-time semantic segmentation of video feed at 60–90 FPS frame rates incompatible with cloud round-trip latency
 
   ## Formal Inference Execution Pipeline
 
@@ -157,51 +166,51 @@ The execution of machine learning model inference on local edge devices rather t
 
   Edge inference is evaluated against standardised benchmark suites enabling hardware comparison:
 
-  - **MLPerf Tiny v1.3 (2025)** — four primary tasks:
-    - *Visual Wake Words*: binary classification (person/no-person) on 96×96 grayscale images; MobileNet-based reference model; target: < 250 KB flash
-    - *Keyword Spotting*: 12-class word recognition from mel-spectrogram frames; DS-CNN reference model; latency target: < 10 ms on Cortex-M4
-    - *Anomaly Detection*: unsupervised autoencoder on ToyADMOS industrial sensor dataset; target: AUC > 0.85
-    - *Image Classification*: ResNet-8 on CIFAR-10; 10-class accuracy target > 85%
-    - v1.3 adds a *Streaming Audio* benchmark representing always-on microphone inference workloads
-  - **MLPerf Mobile v4.x (2025)** — covers image classification (MobileNet-EdgeTPU), object detection (SSD-MobileNet), image segmentation (DeepLab v3+), language understanding (MobileBERT), super-resolution (ESRGAN) on smartphone hardware
-  - **EEMBC ULPMark-ML**: industry benchmark for ultra-low-power MCU inference from Embedded Microprocessor Benchmark Consortium; measures inference/second/mW
-  - **AI Benchmark (KD Group, ETH Zürich)**: comprehensive smartphone AI benchmarking across 100+ devices, updated annually
+- **MLPerf Tiny v1.3 (2025)** — four primary tasks:
+  - *Visual Wake Words*: binary classification (person/no-person) on 96×96 grayscale images; MobileNet-based reference model; target: < 250 KB flash
+  - *Keyword Spotting*: 12-class word recognition from mel-spectrogram frames; DS-CNN reference model; latency target: < 10 ms on Cortex-M4
+  - *Anomaly Detection*: unsupervised autoencoder on ToyADMOS industrial sensor dataset; target: AUC > 0.85
+  - *Image Classification*: ResNet-8 on CIFAR-10; 10-class accuracy target > 85%
+  - v1.3 adds a *Streaming Audio* benchmark representing always-on microphone inference workloads
+- **MLPerf Mobile v4.x (2025)** — covers image classification (MobileNet-EdgeTPU), object detection (SSD-MobileNet), image segmentation (DeepLab v3+), language understanding (MobileBERT), super-resolution (ESRGAN) on smartphone hardware
+- **EEMBC ULPMark-ML**: industry benchmark for ultra-low-power MCU inference from Embedded Microprocessor Benchmark Consortium; measures inference/second/mW
+- **AI Benchmark (KD Group, ETH Zürich)**: comprehensive smartphone AI benchmarking across 100+ devices, updated annually
 
   ## Key Terminology
 
-  | Term | Definition |
-  |------|------------|
-  | **TOPS** | Tera Operations Per Second — peak throughput metric for NPU and accelerator silicon |
-  | **INT8 / INT4** | 8-bit / 4-bit integer quantisation formats; INT8 is MLPerf Tiny reference; INT4 emerging for LLMs |
-  | **PTQ** | Post-Training Quantisation — quantise weights without retraining; fast but accuracy loss at low bit-width |
-  | **QAT** | Quantisation-Aware Training — simulate quantisation during training; better accuracy at INT4 and below |
-  | **FlatBuffer** | Memory-mapped serialisation format used by TFLite for zero-copy model loading |
-  | **Delegate** | TFLite hardware abstraction interface enabling operator dispatch to GPU, DSP, or NPU |
-  | **Execution Provider** | ONNX Runtime equivalent of TFLite delegate; e.g. CUDA EP, DirectML EP, QNN EP |
-  | **Kernel** | Low-level SIMD-optimised implementation of a single neural network operator for a specific hardware target |
-  | **Speculative Decoding** | Inference acceleration technique using small draft model to propose token sequences verified by larger model; 2.8× speedup on edge LLMs |
-  | **GGUF** | GPT-Generated Unified Format — de facto standard for distributing quantised LLM weights for llama.cpp and edge inference |
-  | **µNPU** | Micro-NPU — sub-milliwatt neural processing unit for always-on IoT inference; e.g. Arm Ethos-U55 |
-  | **Tiling** | Decomposition of large activation tensors into blocks fitting in on-chip SRAM to avoid expensive DRAM access |
+| Term | Definition |
+|------|------------|
+| **TOPS** | Tera Operations Per Second — peak throughput metric for NPU and accelerator silicon |
+| **INT8 / INT4** | 8-bit / 4-bit integer quantisation formats; INT8 is MLPerf Tiny reference; INT4 emerging for LLMs |
+| **PTQ** | Post-Training Quantisation — quantise weights without retraining; fast but accuracy loss at low bit-width |
+| **QAT** | Quantisation-Aware Training — simulate quantisation during training; better accuracy at INT4 and below |
+| **FlatBuffer** | Memory-mapped serialisation format used by TFLite for zero-copy model loading |
+| **Delegate** | TFLite hardware abstraction interface enabling operator dispatch to GPU, DSP, or NPU |
+| **Execution Provider** | ONNX Runtime equivalent of TFLite delegate; e.g. CUDA EP, DirectML EP, QNN EP |
+| **Kernel** | Low-level SIMD-optimised implementation of a single neural network operator for a specific hardware target |
+| **Speculative Decoding** | Inference acceleration technique using small draft model to propose token sequences verified by larger model; 2.8× speedup on edge LLMs |
+| **GGUF** | GPT-Generated Unified Format — de facto standard for distributing quantised LLM weights for llama.cpp and edge inference |
+| **µNPU** | Micro-NPU — sub-milliwatt neural processing unit for always-on IoT inference; e.g. Arm Ethos-U55 |
+| **Tiling** | Decomposition of large activation tensors into blocks fitting in on-chip SRAM to avoid expensive DRAM access |
 
-  ## Academic Context
+## Academic Context
 
-  The foundational theoretical substrate for edge inference spans three bodies of literature. Model compression theory draws on the lottery ticket hypothesis (Frankle & Carlin 2019), which demonstrated that sparse subnetworks capable of training to full accuracy exist within randomly initialised dense networks, providing a principled basis for pruning. Knowledge distillation was formalised as a coherent training paradigm by Hinton, Vanhoucke, and Dean (2015), building on earlier model compression work by Bucilua, Caruana, and Niculescu-Mizil (2006). Neural architecture search was systematised by Zoph and Le (2017) with NASNet, followed by hardware-aware variants including ProxylessNAS (Cai et al. 2019) and Once-for-All (Cai et al. 2020).
+The foundational theoretical substrate for edge inference spans three bodies of literature. Model compression theory draws on the lottery ticket hypothesis (Frankle & Carlin 2019), which demonstrated that sparse subnetworks capable of training to full accuracy exist within randomly initialised dense networks, providing a principled basis for pruning. Knowledge distillation was formalised as a coherent training paradigm by Hinton, Vanhoucke, and Dean (2015), building on earlier model compression work by Bucilua, Caruana, and Niculescu-Mizil (2006). Neural architecture search was systematised by Zoph and Le (2017) with NASNet, followed by hardware-aware variants including ProxylessNAS (Cai et al. 2019) and Once-for-All (Cai et al. 2020).
 
-  The [[TinyML]] academic community coalesced around the MLPerf Tiny benchmark (Banbury et al. 2021), which standardised four inference tasks and enabled reproducible comparison of microcontroller-class hardware and runtime combinations. MLPerf Tiny v1.2 was published in 2024 and v1.3 results released in 2025, adding a streaming audio benchmark. The MDPI Sensors survey by Njoku et al. (2025) provides a comprehensive review of TinyML applications, challenges, and future directions across 150+ papers.
+The [[TinyML]] academic community coalesced around the MLPerf Tiny benchmark (Banbury et al. 2021), which standardised four inference tasks and enabled reproducible comparison of microcontroller-class hardware and runtime combinations. MLPerf Tiny v1.2 was published in 2024 and v1.3 results released in 2025, adding a streaming audio benchmark. The MDPI Sensors survey by Njoku et al. (2025) provides a comprehensive review of TinyML applications, challenges, and future directions across 150+ papers.
 
-  Research on edge LLM inference — the newest frontier — is surveyed in the ACM Computing Surveys review by Xu et al. (2025), covering model architecture adaptations (grouped-query attention, sliding-window attention, mixture-of-experts sparsity), quantisation strategies (GPTQ, AWQ, SqueezeLLM), and runtime optimisation (speculative decoding, continuous batching). Intel and Weizmann Institute presented results at ICML 2025 showing that any small draft model can accelerate any larger LLM via speculative decoding regardless of vocabulary differences, achieving up to 2.8× faster inference.
+Research on edge LLM inference — the newest frontier — is surveyed in the ACM Computing Surveys review by Xu et al. (2025), covering model architecture adaptations (grouped-query attention, sliding-window attention, mixture-of-experts sparsity), quantisation strategies (GPTQ, AWQ, SqueezeLLM), and runtime optimisation (speculative decoding, continuous batching). Intel and Weizmann Institute presented results at ICML 2025 showing that any small draft model can accelerate any larger LLM via speculative decoding regardless of vocabulary differences, achieving up to 2.8× faster inference.
 
-  ## Current Landscape (2026)
+## Current Landscape (2026)
 
-  By 2026 edge inference has transitioned from an experimental capability to mandatory product infrastructure across consumer electronics, automotive, and industrial sectors. Key markers of this maturity:
+By 2026 edge inference has transitioned from an experimental capability to mandatory product infrastructure across consumer electronics, automotive, and industrial sectors. Key markers of this maturity:
 
-  - **NPU ubiquity**: NPUs are standard silicon in all mid-range and flagship smartphones from Apple, Qualcomm, Samsung, and MediaTek. Arm Cortex-M55/M85 Helium microcontrollers bring ML acceleration below the IoT gateway tier.
-  - **On-device SLMs**: Apple Intelligence (3B parameter on-device model for iOS 18+), Samsung Gauss, Qualcomm-optimised Llama 3.2 1B/3B, and Google Gemini Nano mark the arrival of general-purpose language model inference on consumer edge hardware.
-  - **ExecuTorch GA (October 2025)**: Meta's production-grade edge inference stack achieving 50 KB base footprint with 12+ hardware backends supports over 80% of popular edge LLMs on HuggingFace.
-  - **MLPerf Tiny v1.3 (2025)**: Extended benchmark suite including streaming audio inference, reflecting deployment of edge audio AI in commodity microcontrollers.
-  - **Collaborative inference**: Emerging pattern (surveyed by Ouyang et al. 2025) where small on-device SLMs handle routine inference locally and escalate complex queries to cloud LLMs, minimising latency and cost while preserving privacy for sensitive content.
-  - **Regulatory tailwinds**: EU AI Act (effective August 2024, tiered enforcement 2025–2026) classifies certain on-device AI systems in healthcare and safety contexts as high-risk, imposing conformity assessment obligations that may drive adoption of validated edge inference pipelines over unverified cloud APIs.
+- **NPU ubiquity**: NPUs are standard silicon in all mid-range and flagship smartphones from Apple, Qualcomm, Samsung, and MediaTek. Arm Cortex-M55/M85 Helium microcontrollers bring ML acceleration below the IoT gateway tier.
+- **On-device SLMs**: Apple Intelligence (3B parameter on-device model for iOS 18+), Samsung Gauss, Qualcomm-optimised Llama 3.2 1B/3B, and Google Gemini Nano mark the arrival of general-purpose language model inference on consumer edge hardware.
+- **ExecuTorch GA (October 2025)**: Meta's production-grade edge inference stack achieving 50 KB base footprint with 12+ hardware backends supports over 80% of popular edge LLMs on HuggingFace.
+- **MLPerf Tiny v1.3 (2025)**: Extended benchmark suite including streaming audio inference, reflecting deployment of edge audio AI in commodity microcontrollers.
+- **Collaborative inference**: Emerging pattern (surveyed by Ouyang et al. 2025) where small on-device SLMs handle routine inference locally and escalate complex queries to cloud LLMs, minimising latency and cost while preserving privacy for sensitive content.
+- **Regulatory tailwinds**: EU AI Act (effective August 2024, tiered enforcement 2025–2026) classifies certain on-device AI systems in healthcare and safety contexts as high-risk, imposing conformity assessment obligations that may drive adoption of validated edge inference pipelines over unverified cloud APIs.
 
   ## UK Context
 
@@ -213,12 +222,12 @@ The execution of machine learning model inference on local edge devices rather t
 
   ## Future Directions (2026–2030)
 
-  - **On-device LLM scaling**: Continued compression of frontier models for on-device deployment, targeting 7B–13B parameter SLMs on flagship mobile NPUs by 2028. Key research challenges include speculative decoding with heterogeneous draft models, lossless INT4/INT2 quantisation, and memory-efficient attention for long-context mobile inference.
-  - **Collaborative edge-cloud inference**: Dynamic partitioning of inference workloads between on-device SLMs and cloud LLMs based on query complexity, latency budget, and privacy sensitivity. The Ouyang et al. (2025) survey identifies this as the dominant emerging inference architecture.
-  - **Neuromorphic and analogue inference**: Intel Loihi 2 and BrainScaleS-2 represent potential successors to digital NPU-based edge inference, promising orders-of-magnitude better energy efficiency for sparse, event-driven workloads.
-  - **Federated learning integration**: Edge inference pipelines increasingly coupled with on-device [[Federated Learning]] for personalised model adaptation without raw data egress; key open problem is communication-efficient federated aggregation under heterogeneous device capabilities.
-  - **Formal verification of edge inference**: ISO 26262, IEC 62443, and EU AI Act conformity assessment requirements driving demand for formally verified inference pipelines, particularly in automotive and medical device contexts.
-  - **6G network-native AI**: ITU-T IMT-2030 (6G) framework explicitly integrates native AI/ML inference capabilities into the radio access network, blurring the boundary between edge inference and telecommunications infrastructure.
+- **On-device LLM scaling**: Continued compression of frontier models for on-device deployment, targeting 7B–13B parameter SLMs on flagship mobile NPUs by 2028. Key research challenges include speculative decoding with heterogeneous draft models, lossless INT4/INT2 quantisation, and memory-efficient attention for long-context mobile inference.
+- **Collaborative edge-cloud inference**: Dynamic partitioning of inference workloads between on-device SLMs and cloud LLMs based on query complexity, latency budget, and privacy sensitivity. The Ouyang et al. (2025) survey identifies this as the dominant emerging inference architecture.
+- **Neuromorphic and analogue inference**: Intel Loihi 2 and BrainScaleS-2 represent potential successors to digital NPU-based edge inference, promising orders-of-magnitude better energy efficiency for sparse, event-driven workloads.
+- **Federated learning integration**: Edge inference pipelines increasingly coupled with on-device [[Federated Learning]] for personalised model adaptation without raw data egress; key open problem is communication-efficient federated aggregation under heterogeneous device capabilities.
+- **Formal verification of edge inference**: ISO 26262, IEC 62443, and EU AI Act conformity assessment requirements driving demand for formally verified inference pipelines, particularly in automotive and medical device contexts.
+- **6G network-native AI**: ITU-T IMT-2030 (6G) framework explicitly integrates native AI/ML inference capabilities into the radio access network, blurring the boundary between edge inference and telecommunications infrastructure.
 
   ## Research & Literature
 
@@ -263,9 +272,10 @@ The execution of machine learning model inference on local edge devices rather t
 
   **Battery Life Estimation**
   For a device with 500 mAh battery at 3.7V = 1.85 Wh:
-  - Continuous keyword spotting at 500 µW: 1850 mWh / 0.5 mW = 3700 hours (154 days)
-  - Periodic image classification at 5 mW peak, 10% duty cycle = 0.5 mW average: 3700 hours equivalent
-  - Continuous vision inference at 100 mW: 18.5 hours
+
+- Continuous keyword spotting at 500 µW: 1850 mWh / 0.5 mW = 3700 hours (154 days)
+- Periodic image classification at 5 mW peak, 10% duty cycle = 0.5 mW average: 3700 hours equivalent
+- Continuous vision inference at 100 mW: 18.5 hours
   These calculations motivate the hardware architectural separation of ultra-low-power always-on processors from main application processors in smartphones and IoT devices.
 
   **Memory Bandwidth as Bottleneck**
@@ -343,66 +353,74 @@ The execution of machine learning model inference on local edge devices rather t
 
   **Step 3: Post-Training Optimisation**
   Apply compression pipeline:
-  - PTQ: Run calibration dataset (typically 100–1000 representative samples) through model to gather activation statistics; determine quantisation ranges; convert to INT8. Tools: PyTorch `torch.ao.quantization`, TFLite converter, ONNX quantisation toolkit.
-  - QAT (if PTQ accuracy insufficient): Insert fake quantisation nodes; fine-tune for 5–20 epochs with reduced learning rate; remove fake quantisation; export INT8 model.
-  - Pruning (optional): Apply magnitude-based or gradient-based structured pruning; retrain with sparsity regularisation; validate accuracy at target sparsity level.
-  - Knowledge Distillation (optional): If starting from large teacher, distill to student architecture as described above.
+
+- PTQ: Run calibration dataset (typically 100–1000 representative samples) through model to gather activation statistics; determine quantisation ranges; convert to INT8. Tools: PyTorch `torch.ao.quantization`, TFLite converter, ONNX quantisation toolkit.
+- QAT (if PTQ accuracy insufficient): Insert fake quantisation nodes; fine-tune for 5–20 epochs with reduced learning rate; remove fake quantisation; export INT8 model.
+- Pruning (optional): Apply magnitude-based or gradient-based structured pruning; retrain with sparsity regularisation; validate accuracy at target sparsity level.
+- Knowledge Distillation (optional): If starting from large teacher, distill to student architecture as described above.
 
   **Step 4: Model Export and Format Conversion**
   Export to deployment format:
-  - ONNX: `torch.onnx.export()` with appropriate opset version; validate with `onnxruntime.InferenceSession`
-  - TFLite: `TFLiteConverter.from_keras_model()` or `from_saved_model()`; apply quantisation configuration; build `.tflite` file
-  - Core ML: `coremltools.convert()` from PyTorch or TensorFlow; specify compute units (Neural Engine, GPU, CPU)
-  - ONNX → TFLite → QNN / SNPE: multi-step conversion for Qualcomm Hexagon targeting
+
+- ONNX: `torch.onnx.export()` with appropriate opset version; validate with `onnxruntime.InferenceSession`
+- TFLite: `TFLiteConverter.from_keras_model()` or `from_saved_model()`; apply quantisation configuration; build `.tflite` file
+- Core ML: `coremltools.convert()` from PyTorch or TensorFlow; specify compute units (Neural Engine, GPU, CPU)
+- ONNX → TFLite → QNN / SNPE: multi-step conversion for Qualcomm Hexagon targeting
 
   **Step 5: Hardware-Specific Compilation**
   Run target hardware compiler to generate optimised binary:
-  - Arm Ethos NPU: `vela` compiler; optimises for Ethos-U55/U65/U85 instruction set; reports SRAM, cycle, and energy estimates
-  - Qualcomm QNN: `qnn-onnx-converter` + `qnn-net-run`; generates `.serialized.bin` for Hexagon NPU
-  - Apple Core ML: Xcode `mlmodelc` compilation; generates `.mlmodelc` bundle for Neural Engine execution
-  - TVM / IREE: cross-framework compilation targeting custom hardware backends with operator fusion and memory planning
+
+- Arm Ethos NPU: `vela` compiler; optimises for Ethos-U55/U65/U85 instruction set; reports SRAM, cycle, and energy estimates
+- Qualcomm QNN: `qnn-onnx-converter` + `qnn-net-run`; generates `.serialized.bin` for Hexagon NPU
+- Apple Core ML: Xcode `mlmodelc` compilation; generates `.mlmodelc` bundle for Neural Engine execution
+- TVM / IREE: cross-framework compilation targeting custom hardware backends with operator fusion and memory planning
 
   **Step 6: On-Device Integration and Testing**
   Integrate compiled model binary into device application:
-  - Embed model binary as C array (TFLite Micro) or load from filesystem (mobile apps)
-  - Configure runtime (allocate tensor arena for MCU, set execution providers for ONNX Runtime mobile)
-  - Write pre-processing pipeline (image normalisation, mel-spectrogram extraction, tokenisation)
-  - Write post-processing pipeline (softmax, argmax, NMS, beam decode)
-  - Measure latency (percentile distributions), peak SRAM usage, power consumption (via current monitoring or vendor SDK profiling tools)
-  - Compare accuracy on hold-out evaluation set against cloud baseline; validate accuracy loss within acceptable threshold (typically < 1–2% accuracy degradation for vision tasks)
+
+- Embed model binary as C array (TFLite Micro) or load from filesystem (mobile apps)
+- Configure runtime (allocate tensor arena for MCU, set execution providers for ONNX Runtime mobile)
+- Write pre-processing pipeline (image normalisation, mel-spectrogram extraction, tokenisation)
+- Write post-processing pipeline (softmax, argmax, NMS, beam decode)
+- Measure latency (percentile distributions), peak SRAM usage, power consumption (via current monitoring or vendor SDK profiling tools)
+- Compare accuracy on hold-out evaluation set against cloud baseline; validate accuracy loss within acceptable threshold (typically < 1–2% accuracy degradation for vision tasks)
 
   **Step 7: OTA Update and Fleet Management**
   Production edge AI deployments require mechanisms for model updates without user-facing downtime:
-  - Delta updates: only changed model weights transmitted, not full model binary
-  - A/B testing: new model versions deployed to subset of fleet; accuracy and latency metrics monitored before full rollout
-  - Rollback capability: previous model version retained on-device for fallback
-  - Model signing and verification: cryptographic signature on model binary prevents tampered model injection
-  - Telemetry: anonymised accuracy and latency metrics reported from fleet (with GDPR-appropriate consent and data minimisation)
+
+- Delta updates: only changed model weights transmitted, not full model binary
+- A/B testing: new model versions deployed to subset of fleet; accuracy and latency metrics monitored before full rollout
+- Rollback capability: previous model version retained on-device for fallback
+- Model signing and verification: cryptographic signature on model binary prevents tampered model injection
+- Telemetry: anonymised accuracy and latency metrics reported from fleet (with GDPR-appropriate consent and data minimisation)
 
   ## Security Architecture of Edge Inference
 
   Edge inference deployments face a distinct security threat landscape compared to cloud inference, arising from the physical accessibility of edge devices and the sensitivity of models and data they process:
 
   **Threat Model**
-  - *Model Extraction / IP Theft*: An attacker with physical access to a device can attempt to read model weights from flash storage, extract them via JTAG/SWD debug interface, or use side-channel analysis (power consumption, electromagnetic emissions during inference) to reconstruct model parameters. Model IP is increasingly valuable; a proprietary vision model trained on months of compute represents significant commercial asset.
-  - *Adversarial Inputs*: Carefully crafted inputs that appear normal to human observers but cause systematic inference errors. For edge vision systems (face recognition, object detection), adversarial patches printed on physical surfaces can fool models. Automotive ADAS models have been shown vulnerable to adversarial lane markings and traffic sign modifications.
-  - *Model Poisoning via Federated Learning*: In federated edge inference deployments with on-device adaptation, malicious devices can submit poisoned model updates that shift the global model's behaviour. Byzantine-robust aggregation algorithms (Krum, coordinate-wise median) provide partial mitigation.
-  - *Side-Channel Timing Attacks*: Inference latency is data-dependent for certain architectures (early-exit networks, sparse models); timing measurements can leak information about input characteristics.
-  - *Firmware and Model Integrity Attacks*: Over-the-air update mechanisms for model and firmware can be targeted; compromised models could introduce backdoors (trojan neural networks) activated by specific trigger inputs.
+
+- *Model Extraction / IP Theft*: An attacker with physical access to a device can attempt to read model weights from flash storage, extract them via JTAG/SWD debug interface, or use side-channel analysis (power consumption, electromagnetic emissions during inference) to reconstruct model parameters. Model IP is increasingly valuable; a proprietary vision model trained on months of compute represents significant commercial asset.
+- *Adversarial Inputs*: Carefully crafted inputs that appear normal to human observers but cause systematic inference errors. For edge vision systems (face recognition, object detection), adversarial patches printed on physical surfaces can fool models. Automotive ADAS models have been shown vulnerable to adversarial lane markings and traffic sign modifications.
+- *Model Poisoning via Federated Learning*: In federated edge inference deployments with on-device adaptation, malicious devices can submit poisoned model updates that shift the global model's behaviour. Byzantine-robust aggregation algorithms (Krum, coordinate-wise median) provide partial mitigation.
+- *Side-Channel Timing Attacks*: Inference latency is data-dependent for certain architectures (early-exit networks, sparse models); timing measurements can leak information about input characteristics.
+- *Firmware and Model Integrity Attacks*: Over-the-air update mechanisms for model and firmware can be targeted; compromised models could introduce backdoors (trojan neural networks) activated by specific trigger inputs.
 
   **Defensive Countermeasures**
-  - *ARM TrustZone / TEE*: Isolates model weights and inference execution in a hardware-enforced secure enclave. Normal world OS cannot read secure world memory regions. Model binary decrypted in secure world; plaintext weights never exposed to potentially compromised OS. Deployed in production by major mobile vendors for on-device biometric verification.
-  - *Secure Boot and Model Signing*: Cryptographic chain of trust from hardware root-of-trust through bootloader to runtime; model binaries signed by manufacturer, verified before loading. Prevents injection of tampered or backdoored models.
-  - *Model Encryption at Rest*: AES-256 encryption of model binary stored in flash; decryption key held in hardware security module (TPM, SE050, DS28E83) accessible only after secure boot chain validation.
-  - *Adversarial Robustness Training*: Augmenting training data with adversarial examples (FGSM, PGD attack-generated samples) improves model robustness to adversarial inputs. Certified robustness methods (randomised smoothing, Lipschitz-constrained networks) provide provable robustness guarantees within ℓp-ball perturbation radius.
-  - *Runtime Anomaly Detection*: Monitor inference confidence distributions at runtime; low-confidence outputs or unusual input statistics may indicate adversarial attack or distribution shift. Reject-option classifiers with confidence thresholds provide a simple first-line defence.
-  - *Differential Privacy in Federated Aggregation*: DP-SGD (Abadi et al. 2016) clips per-sample gradients and adds calibrated Gaussian noise before aggregation, providing formal (ε, δ)-DP guarantees against model inversion attacks on federated updates.
+
+- *ARM TrustZone / TEE*: Isolates model weights and inference execution in a hardware-enforced secure enclave. Normal world OS cannot read secure world memory regions. Model binary decrypted in secure world; plaintext weights never exposed to potentially compromised OS. Deployed in production by major mobile vendors for on-device biometric verification.
+- *Secure Boot and Model Signing*: Cryptographic chain of trust from hardware root-of-trust through bootloader to runtime; model binaries signed by manufacturer, verified before loading. Prevents injection of tampered or backdoored models.
+- *Model Encryption at Rest*: AES-256 encryption of model binary stored in flash; decryption key held in hardware security module (TPM, SE050, DS28E83) accessible only after secure boot chain validation.
+- *Adversarial Robustness Training*: Augmenting training data with adversarial examples (FGSM, PGD attack-generated samples) improves model robustness to adversarial inputs. Certified robustness methods (randomised smoothing, Lipschitz-constrained networks) provide provable robustness guarantees within ℓp-ball perturbation radius.
+- *Runtime Anomaly Detection*: Monitor inference confidence distributions at runtime; low-confidence outputs or unusual input statistics may indicate adversarial attack or distribution shift. Reject-option classifiers with confidence thresholds provide a simple first-line defence.
+- *Differential Privacy in Federated Aggregation*: DP-SGD (Abadi et al. 2016) clips per-sample gradients and adds calibrated Gaussian noise before aggregation, providing formal (ε, δ)-DP guarantees against model inversion attacks on federated updates.
 
   **Regulatory Compliance**
-  - *ISO/SAE 21434 (Road Vehicles — Cybersecurity Engineering)*: Requires threat analysis and risk assessment (TARA) for automotive AI inference systems; cybersecurity goals and monitoring throughout vehicle lifetime.
-  - *IEC 62443 (Industrial Automation and Control Systems Security)*: Series of standards defining security levels for industrial edge systems; relevant for manufacturing-deployed edge inference.
-  - *NIST AI RMF (2023)*: Framework for managing AI risk including adversarial robustness, bias, and reliability; increasingly referenced in US federal procurement of AI systems including edge AI.
-  - *EU AI Act Annex III High-Risk Systems*: On-device biometric identification, emotion recognition, and AI used in critical infrastructure are classified high-risk; require conformity assessment including cybersecurity evaluation.
+
+- *ISO/SAE 21434 (Road Vehicles — Cybersecurity Engineering)*: Requires threat analysis and risk assessment (TARA) for automotive AI inference systems; cybersecurity goals and monitoring throughout vehicle lifetime.
+- *IEC 62443 (Industrial Automation and Control Systems Security)*: Series of standards defining security levels for industrial edge systems; relevant for manufacturing-deployed edge inference.
+- *NIST AI RMF (2023)*: Framework for managing AI risk including adversarial robustness, bias, and reliability; increasingly referenced in US federal procurement of AI systems including edge AI.
+- *EU AI Act Annex III High-Risk Systems*: On-device biometric identification, emotion recognition, and AI used in critical infrastructure are classified high-risk; require conformity assessment including cybersecurity evaluation.
 
   ## Edge Inference in XR and Spatial Computing
 
@@ -412,17 +430,19 @@ The execution of machine learning model inference on local edge devices rather t
   Human visual system detects display latency above ~20ms; discomfort arises at >30ms; motion sickness at >50ms. This creates a hard latency budget of 20ms end-to-end (sense → inference → display) that makes any cloud round-trip infeasible. All inference in the XR perception pipeline must execute on-device. This requirement has driven significant silicon investment: Apple Vision Pro deploys two dedicated R1 chips specifically for sensor processing and inference alongside the M2 SoC; Meta Quest 3 uses Snapdragon XR2 Gen 2 with dedicated DSP and NPU.
 
   **XR Inference Workloads**
-  - *Hand tracking*: 21-point hand keypoint regression from IR camera at 60–120 Hz; requires lightweight 2D landmark model + 3D lifting network executing in < 5ms. MediaPipe Hands reference solution; Meta's hand tracking runs on Quest NPU.
-  - *Eye tracking and foveal rendering*: Gaze estimation at 30–120 Hz; enables foveal rendering (render only where user is looking at full resolution, periphery at reduced quality); 6–10ms inference budget to feed rendering pipeline without perceptible lag.
-  - *Scene understanding and spatial mesh*: Depth estimation, plane detection, object segmentation for AR occlusion and physics. LiDAR (iPad Pro, iPhone 15 Pro) provides depth ground truth; learned monocular depth supplemented by sensor fusion. Spatial mesh reconstruction running continuously at 30 Hz.
-  - *Passthrough video augmentation*: Real-time semantic segmentation of passthrough video (Quest 3 colour passthrough, Vision Pro passthrough) to selectively apply AR overlays to recognised object categories; requires < 10ms at 90 Hz frame rate.
-  - *SLAM (Simultaneous Localisation and Mapping)*: Tracking device pose in 6DoF in real-time from camera/IMU fusion; increasingly augmented by neural network loop closure and localisation. VIO (Visual-Inertial Odometry) + learned relocalisaton hybrid.
+
+- *Hand tracking*: 21-point hand keypoint regression from IR camera at 60–120 Hz; requires lightweight 2D landmark model + 3D lifting network executing in < 5ms. MediaPipe Hands reference solution; Meta's hand tracking runs on Quest NPU.
+- *Eye tracking and foveal rendering*: Gaze estimation at 30–120 Hz; enables foveal rendering (render only where user is looking at full resolution, periphery at reduced quality); 6–10ms inference budget to feed rendering pipeline without perceptible lag.
+- *Scene understanding and spatial mesh*: Depth estimation, plane detection, object segmentation for AR occlusion and physics. LiDAR (iPad Pro, iPhone 15 Pro) provides depth ground truth; learned monocular depth supplemented by sensor fusion. Spatial mesh reconstruction running continuously at 30 Hz.
+- *Passthrough video augmentation*: Real-time semantic segmentation of passthrough video (Quest 3 colour passthrough, Vision Pro passthrough) to selectively apply AR overlays to recognised object categories; requires < 10ms at 90 Hz frame rate.
+- *SLAM (Simultaneous Localisation and Mapping)*: Tracking device pose in 6DoF in real-time from camera/IMU fusion; increasingly augmented by neural network loop closure and localisation. VIO (Visual-Inertial Odometry) + learned relocalisaton hybrid.
 
   **Developer Tooling**
-  - ARKit (Apple): Metal-accelerated inference integration; built-in hand tracking, face tracking, scene understanding APIs leveraging Neural Engine
-  - ARCore (Google): Android XR inference SDK with depth API, scene semantics
-  - Meta XR SDK: OpenXR-compliant SDK with hand tracking, face tracking, body tracking APIs for Quest hardware
-  - WebXR + WebNN: Web standards enabling browser-based XR with hardware-accelerated ML inference; enables cross-platform [[Edge Inference]] from web runtime
+
+- ARKit (Apple): Metal-accelerated inference integration; built-in hand tracking, face tracking, scene understanding APIs leveraging Neural Engine
+- ARCore (Google): Android XR inference SDK with depth API, scene semantics
+- Meta XR SDK: OpenXR-compliant SDK with hand tracking, face tracking, body tracking APIs for Quest hardware
+- WebXR + WebNN: Web standards enabling browser-based XR with hardware-accelerated ML inference; enables cross-platform [[Edge Inference]] from web runtime
 
   ## Cross-Domain Synthesis: Edge Inference Enabling Technologies
 
@@ -452,5 +472,5 @@ The execution of machine learning model inference on local edge devices rather t
 
   **Edge Inference vs. [[Fog Computing]]**: Fog computing (Bonomi et al. 2012) originally referred to computation at network intermediaries (routers, base stations) between IoT devices and cloud — the "fog" between device and cloud. ETSI MEC (Multi-Access Edge Computing) formalised this tier as co-located with 5G base stations. Edge inference at the fog/MEC tier occupies a middle position: more powerful than on-device MCUs, closer than cloud, appropriate for workloads requiring moderate GPU resources but with tight latency SLAs.
 
-- ### Provenance
+### Provenance
 

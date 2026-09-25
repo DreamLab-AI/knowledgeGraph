@@ -1,67 +1,71 @@
-
 A Collaboration Platform is an integrated software environment that unifies communication channels, shared workspaces, workflow automation, and content management tooling to enable coordinated work among distributed teams. Such platforms expose API-first architectures built atop real-time messaging protocols, WebRTC-based media pipelines, and cloud storage with conflict resolution, providing a composable substrate for synchronous and asynchronous teamwork. Enterprise-grade deployments layer in identity federation, data residency controls, compliance archiving, and extensible integration ecosystems, while modern platforms increasingly embed AI-driven capabilities such as meeting transcription, action-item extraction, and intelligent search. The category spans lightweight messaging tools through full unified-communications suites and extends into spatial and immersive collaboration modalities.
 
-- ### Overview
-  - Collaboration platforms emerged from the convergence of email, telephony, and file-sharing systems into unified digital work environments. The shift toward distributed and remote work dramatically accelerated platform adoption, transforming them from supplementary tooling into primary operational infrastructure.
-  - Key architectural drivers:
-    - **API-first design** — every platform capability is accessible via programmatic interfaces, enabling custom integrations and automation
-    - **Real-time synchronisation** — [[WebSocket]] connections and [[Operational Transformation]] algorithms keep shared state consistent across participants
-    - **Media infrastructure** — [[WebRTC]] peer-to-peer negotiation, TURN/STUN relay networks, and adaptive bitrate encoding underpin voice and video
-    - **Cloud-native backends** — [[Microservices Architecture]], container orchestration, and multi-region deployment provide scale and resilience
-    - **Security fabric** — [[End-to-End Encryption]], [[Single Sign-On]], multi-factor authentication, and data-loss prevention are first-class concerns
-  - Platforms are differentiated by their integration ecosystem breadth, governance capabilities, AI embedding depth, and support for spatial or immersive experiences.
+### Overview
 
-- ### Key Components
-  - **Communication channels**
-    - [[Real-Time Messaging]] — persistent, threaded channels organised by topic or team; supports rich media, reactions, and threading
-    - [[Video Conferencing]] — multi-party video calls with screen sharing, virtual backgrounds, and breakout rooms; relies on [[WebRTC]] and SRTP
-    - Voice calls and audio conferencing — PSTN bridge integration and VoIP endpoints
-    - Asynchronous video — short video messages as email alternatives
-  - **Shared workspaces**
-    - [[Shared Document Editing]] — collaborative, concurrent editing with operational transformation or CRDT-based conflict resolution (cf. [[CRDT]])
-    - Wikis and knowledge bases — persistent, structured content linked to channels and projects
-    - [[Knowledge Management]] — search indices, tagging, and versioned page history
-  - **Workflow and automation**
-    - [[Workflow Automation]] — no-code and low-code pipeline builders triggered by platform events
-    - Notification routing — intelligent alerting with digest summarisation and priority filtering
-    - Bots and integrations — webhooks, slash commands, and [[API Gateway]] connections to external SaaS
-  - **AI capabilities**
-    - Meeting transcription and summarisation powered by [[Speech Recognition]] and large language models
-    - Action-item extraction and task creation from conversational context
-    - Smart search over messages, documents, and meeting recordings
-    - [[AI Assistant]] embedded as a co-participant (e.g. Copilot in Teams, Slack AI)
-  - **Security and compliance**
-    - [[Identity and Access Management]] with [[Single Sign-On]] and SCIM provisioning
-    - [[End-to-End Encryption]] for messages, calls, and files
-    - [[Compliance and Governance]] — e-discovery, retention policies, audit logs, and data residency configuration
-    - [[Enterprise Security]] — data-loss prevention, conditional access, and threat protection
+- Collaboration platforms emerged from the convergence of email, telephony, and file-sharing systems into unified digital work environments. The shift toward distributed and remote work dramatically accelerated platform adoption, transforming them from supplementary tooling into primary operational infrastructure.
+- Key architectural drivers:
+  - **API-first design** — every platform capability is accessible via programmatic interfaces, enabling custom integrations and automation
+  - **Real-time synchronisation** — [[WebSocket]] connections and [[Operational Transformation]] algorithms keep shared state consistent across participants
+  - **Media infrastructure** — [[WebRTC]] peer-to-peer negotiation, TURN/STUN relay networks, and adaptive bitrate encoding underpin voice and video
+  - **Cloud-native backends** — [[Microservices Architecture]], container orchestration, and multi-region deployment provide scale and resilience
+  - **Security fabric** — [[End-to-End Encryption]], [[Single Sign-On]], multi-factor authentication, and data-loss prevention are first-class concerns
+- Platforms are differentiated by their integration ecosystem breadth, governance capabilities, AI embedding depth, and support for spatial or immersive experiences.
 
-- ### Applications and Use Cases
-  - **Enterprise knowledge work** — daily operations for geographically distributed teams: standup channels, project rooms, shared document libraries, and integrated task trackers
-  - **Engineering and DevOps** — CI/CD bot notifications, incident response channels, code-review alerts, and on-call escalation workflows tied to systems such as PagerDuty or Jira
-  - **Customer support and sales** — shared customer context across agents, CRM integration, and deal-room channels linking [[Enterprise Resource Planning]] data
-  - **Education and training** — virtual classrooms, recorded lectures, peer study groups, and instructor office hours via persistent channels
-  - **Healthcare coordination** — clinician communication, patient-round briefings, and HIPAA-compliant secure messaging between care teams
-  - **Immersive and spatial collaboration** — integration with [[XR Meeting Space]] and [[Augmented Reality Collaboration]] tools for 3D model review, virtual prototyping, and remote expert assistance
-  - **Digital twin review** — platform substrate for [[Digital Twin Collaboration]], where engineering teams share live sensor feeds and simulation results within conversation threads
-  - **Cross-organisational federation** — guest access and federated identity enabling B2B collaboration across company boundaries while maintaining [[Enterprise Security]] controls
+### Key Components
 
-- ### Standards and Context
-  - **[[IETF (Internet Engineering Task Force)]]** — MIMI (More Instant Messaging Interoperability) working group defining cross-platform message format and federation standards; SIP and XMPP specifications underpin many VoIP and messaging layers
-  - **W3C WebRTC** — standardises browser-native peer-to-peer media; underpins in-browser video conferencing without plugins
-  - **OpenID Connect / OAuth 2.0** — identity federation standards enabling [[Single Sign-On]] across enterprise platforms
-  - **SCIM (System for Cross-domain Identity Management)** — automates user provisioning and de-provisioning between identity providers and platform tenants
-  - **Matrix protocol** — open, decentralised real-time communication protocol enabling federated collaboration across independently operated homeservers
-  - **ISO/IEC 27001** — information security management standard frequently cited in enterprise platform compliance certifications
-  - **GDPR and regional data residency** — regulatory frameworks shaping data sovereignty controls built into multinational platform deployments
-  - Emerging **AI Act (EU)** requirements beginning to influence disclosure and auditability of AI features embedded within platforms
+- **Communication channels**
+  - [[Real-Time Messaging]] — persistent, threaded channels organised by topic or team; supports rich media, reactions, and threading
+  - [[Video Conferencing]] — multi-party video calls with screen sharing, virtual backgrounds, and breakout rooms; relies on [[WebRTC]] and SRTP
+  - Voice calls and audio conferencing — PSTN bridge integration and VoIP endpoints
+  - Asynchronous video — short video messages as email alternatives
+- **Shared workspaces**
+  - [[Shared Document Editing]] — collaborative, concurrent editing with operational transformation or CRDT-based conflict resolution (cf. [[CRDT]])
+  - Wikis and knowledge bases — persistent, structured content linked to channels and projects
+  - [[Knowledge Management]] — search indices, tagging, and versioned page history
+- **Workflow and automation**
+  - [[Workflow Automation]] — no-code and low-code pipeline builders triggered by platform events
+  - Notification routing — intelligent alerting with digest summarisation and priority filtering
+  - Bots and integrations — webhooks, slash commands, and [[API Gateway]] connections to external SaaS
+- **AI capabilities**
+  - Meeting transcription and summarisation powered by [[Speech Recognition]] and large language models
+  - Action-item extraction and task creation from conversational context
+  - Smart search over messages, documents, and meeting recordings
+  - [[AI Assistant]] embedded as a co-participant (e.g. Copilot in Teams, Slack AI)
+- **Security and compliance**
+  - [[Identity and Access Management]] with [[Single Sign-On]] and SCIM provisioning
+  - [[End-to-End Encryption]] for messages, calls, and files
+  - [[Compliance and Governance]] — e-discovery, retention policies, audit logs, and data residency configuration
+  - [[Enterprise Security]] — data-loss prevention, conditional access, and threat protection
 
-- ### Architectural Patterns
-  - **Microservices decomposition** — messaging, calling, storage, and notification subsystems run as independently deployable services sharing event buses (e.g. Kafka)
-  - **Event-driven backbone** — [[Event-Driven Architecture]] connects platform services and enables reliable integration with external systems via webhooks and streaming APIs
-  - **Multi-tenancy** — logical isolation of organisational data within shared infrastructure, with optional dedicated tenancy for regulated industries
-  - **Federation and interoperability** — gateway bridges between heterogeneous platforms (e.g. Teams–Zoom interop, Matrix federation) extending reach without requiring organisational alignment on a single vendor
-  - **Edge media processing** — [[Edge Computing]] nodes placed near users reduce round-trip latency for audio and video streams, critical for real-time collaboration quality
+### Applications and Use Cases
 
-- ### Provenance
+- **Enterprise knowledge work** — daily operations for geographically distributed teams: standup channels, project rooms, shared document libraries, and integrated task trackers
+- **Engineering and DevOps** — CI/CD bot notifications, incident response channels, code-review alerts, and on-call escalation workflows tied to systems such as PagerDuty or Jira
+- **Customer support and sales** — shared customer context across agents, CRM integration, and deal-room channels linking [[Enterprise Resource Planning]] data
+- **Education and training** — virtual classrooms, recorded lectures, peer study groups, and instructor office hours via persistent channels
+- **Healthcare coordination** — clinician communication, patient-round briefings, and HIPAA-compliant secure messaging between care teams
+- **Immersive and spatial collaboration** — integration with [[XR Meeting Space]] and [[Augmented Reality Collaboration]] tools for 3D model review, virtual prototyping, and remote expert assistance
+- **Digital twin review** — platform substrate for [[Digital Twin Collaboration]], where engineering teams share live sensor feeds and simulation results within conversation threads
+- **Cross-organisational federation** — guest access and federated identity enabling B2B collaboration across company boundaries while maintaining [[Enterprise Security]] controls
+
+### Standards and Context
+
+- **[[IETF (Internet Engineering Task Force)]]** — MIMI (More Instant Messaging Interoperability) working group defining cross-platform message format and federation standards; SIP and XMPP specifications underpin many VoIP and messaging layers
+- **W3C WebRTC** — standardises browser-native peer-to-peer media; underpins in-browser video conferencing without plugins
+- **OpenID Connect / OAuth 2.0** — identity federation standards enabling [[Single Sign-On]] across enterprise platforms
+- **SCIM (System for Cross-domain Identity Management)** — automates user provisioning and de-provisioning between identity providers and platform tenants
+- **Matrix protocol** — open, decentralised real-time communication protocol enabling federated collaboration across independently operated homeservers
+- **ISO/IEC 27001** — information security management standard frequently cited in enterprise platform compliance certifications
+- **GDPR and regional data residency** — regulatory frameworks shaping data sovereignty controls built into multinational platform deployments
+- Emerging **AI Act (EU)** requirements beginning to influence disclosure and auditability of AI features embedded within platforms
+
+### Architectural Patterns
+
+- **Microservices decomposition** — messaging, calling, storage, and notification subsystems run as independently deployable services sharing event buses (e.g. Kafka)
+- **Event-driven backbone** — [[Event-Driven Architecture]] connects platform services and enables reliable integration with external systems via webhooks and streaming APIs
+- **Multi-tenancy** — logical isolation of organisational data within shared infrastructure, with optional dedicated tenancy for regulated industries
+- **Federation and interoperability** — gateway bridges between heterogeneous platforms (e.g. Teams–Zoom interop, Matrix federation) extending reach without requiring organisational alignment on a single vendor
+- **Edge media processing** — [[Edge Computing]] nodes placed near users reduce round-trip latency for audio and video streams, critical for real-time collaboration quality
+
+### Provenance
 

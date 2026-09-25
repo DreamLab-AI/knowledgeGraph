@@ -1,142 +1,141 @@
-
 Frameworks enabling multiple AI agents to collaborate on complex tasks through role assignment, structured conversations, handoffs, and coordinated workflows — includes openai-agents-python, crewAI, autogen, MetaGPT, ChatDev, PraisonAI, and agent-squad.
 
-- ### Semantic Classification
+### Semantic Classification
 
-- ### Content
+### Content
 
-  ## Compositional Relationships (Components)
-      SubClassOf(ai:MultiAgentOrchestrationFrameworks
-        ObjectSomeValuesFrom(ai:hasPart ai:AgentOrchestrator))
-      SubClassOf(ai:MultiAgentOrchestrationFrameworks
-        ObjectSomeValuesFrom(ai:hasPart ai:MultiAgentCoordination))
-      SubClassOf(ai:MultiAgentOrchestrationFrameworks
-        ObjectSomeValuesFrom(ai:hasPart ai:AgentCommunicationProtocol))
-      SubClassOf(ai:MultiAgentOrchestrationFrameworks
-        ObjectSomeValuesFrom(ai:hasPart ai:AgentEventStream))
-      SubClassOf(ai:MultiAgentOrchestrationFrameworks
-        ObjectSomeValuesFrom(ai:hasPart ai:Checkpointing))
-      SubClassOf(ai:MultiAgentOrchestrationFrameworks
-        ObjectSomeValuesFrom(ai:hasPart ai:RoleBasedAccessControl))
-      SubClassOf(ai:MultiAgentOrchestrationFrameworks
-        ObjectSomeValuesFrom(ai:hasPart ai:AgentMemoryLayers))
+## Compositional Relationships (Components)
+    SubClassOf(ai:MultiAgentOrchestrationFrameworks
+      ObjectSomeValuesFrom(ai:hasPart ai:AgentOrchestrator))
+    SubClassOf(ai:MultiAgentOrchestrationFrameworks
+      ObjectSomeValuesFrom(ai:hasPart ai:MultiAgentCoordination))
+    SubClassOf(ai:MultiAgentOrchestrationFrameworks
+      ObjectSomeValuesFrom(ai:hasPart ai:AgentCommunicationProtocol))
+    SubClassOf(ai:MultiAgentOrchestrationFrameworks
+      ObjectSomeValuesFrom(ai:hasPart ai:AgentEventStream))
+    SubClassOf(ai:MultiAgentOrchestrationFrameworks
+      ObjectSomeValuesFrom(ai:hasPart ai:Checkpointing))
+    SubClassOf(ai:MultiAgentOrchestrationFrameworks
+      ObjectSomeValuesFrom(ai:hasPart ai:RoleBasedAccessControl))
+    SubClassOf(ai:MultiAgentOrchestrationFrameworks
+      ObjectSomeValuesFrom(ai:hasPart ai:AgentMemoryLayers))
 
-  ## Dependency Relationships
-      SubClassOf(ai:MultiAgentOrchestrationFrameworks
-        ObjectSomeValuesFrom(ai:requires ai:LargeLanguageModel))
-      SubClassOf(ai:MultiAgentOrchestrationFrameworks
-        ObjectSomeValuesFrom(ai:requires ai:ToolUse))
-      SubClassOf(ai:MultiAgentOrchestrationFrameworks
-        ObjectSomeValuesFrom(ai:requires ai:AgentExecutionSandboxes))
-      SubClassOf(ai:MultiAgentOrchestrationFrameworks
-        ObjectSomeValuesFrom(ai:dependsOn ai:AgentMemoryLayers))
-      SubClassOf(ai:MultiAgentOrchestrationFrameworks
-        ObjectSomeValuesFrom(ai:dependsOn ai:AgentEventStream))
-      SubClassOf(ai:MultiAgentOrchestrationFrameworks
-        ObjectSomeValuesFrom(ai:dependsOn ai:Checkpointing))
-      SubClassOf(ai:MultiAgentOrchestrationFrameworks
-        ObjectSomeValuesFrom(ai:dependsOn ai:LLMInference))
+## Dependency Relationships
+    SubClassOf(ai:MultiAgentOrchestrationFrameworks
+      ObjectSomeValuesFrom(ai:requires ai:LargeLanguageModel))
+    SubClassOf(ai:MultiAgentOrchestrationFrameworks
+      ObjectSomeValuesFrom(ai:requires ai:ToolUse))
+    SubClassOf(ai:MultiAgentOrchestrationFrameworks
+      ObjectSomeValuesFrom(ai:requires ai:AgentExecutionSandboxes))
+    SubClassOf(ai:MultiAgentOrchestrationFrameworks
+      ObjectSomeValuesFrom(ai:dependsOn ai:AgentMemoryLayers))
+    SubClassOf(ai:MultiAgentOrchestrationFrameworks
+      ObjectSomeValuesFrom(ai:dependsOn ai:AgentEventStream))
+    SubClassOf(ai:MultiAgentOrchestrationFrameworks
+      ObjectSomeValuesFrom(ai:dependsOn ai:Checkpointing))
+    SubClassOf(ai:MultiAgentOrchestrationFrameworks
+      ObjectSomeValuesFrom(ai:dependsOn ai:LLMInference))
 
-  ## Capability Relationships
-      SubClassOf(ai:MultiAgentOrchestrationFrameworks
-        ObjectSomeValuesFrom(ai:enables ai:WorkflowAutomation))
-      SubClassOf(ai:MultiAgentOrchestrationFrameworks
-        ObjectSomeValuesFrom(ai:enables ai:SoftwareEngineering))
-      SubClassOf(ai:MultiAgentOrchestrationFrameworks
-        ObjectSomeValuesFrom(ai:enables ai:HumanInTheLoop))
-      SubClassOf(ai:MultiAgentOrchestrationFrameworks
-        ObjectSomeValuesFrom(ai:enables ai:CodeExecution))
-      SubClassOf(ai:MultiAgentOrchestrationFrameworks
-        ObjectSomeValuesFrom(ai:enables ai:MultiAgentCoordination))
-      SubClassOf(ai:MultiAgentOrchestrationFrameworks
-        ObjectSomeValuesFrom(ai:supports ai:NaturalLanguageProcessing))
-      SubClassOf(ai:MultiAgentOrchestrationFrameworks
-        ObjectSomeValuesFrom(ai:supports ai:AgentEvaluationBenchmarks))
-      SubClassOf(ai:MultiAgentOrchestrationFrameworks
-        ObjectSomeValuesFrom(ai:supports ai:AIInfrastructure))
+## Capability Relationships
+    SubClassOf(ai:MultiAgentOrchestrationFrameworks
+      ObjectSomeValuesFrom(ai:enables ai:WorkflowAutomation))
+    SubClassOf(ai:MultiAgentOrchestrationFrameworks
+      ObjectSomeValuesFrom(ai:enables ai:SoftwareEngineering))
+    SubClassOf(ai:MultiAgentOrchestrationFrameworks
+      ObjectSomeValuesFrom(ai:enables ai:HumanInTheLoop))
+    SubClassOf(ai:MultiAgentOrchestrationFrameworks
+      ObjectSomeValuesFrom(ai:enables ai:CodeExecution))
+    SubClassOf(ai:MultiAgentOrchestrationFrameworks
+      ObjectSomeValuesFrom(ai:enables ai:MultiAgentCoordination))
+    SubClassOf(ai:MultiAgentOrchestrationFrameworks
+      ObjectSomeValuesFrom(ai:supports ai:NaturalLanguageProcessing))
+    SubClassOf(ai:MultiAgentOrchestrationFrameworks
+      ObjectSomeValuesFrom(ai:supports ai:AgentEvaluationBenchmarks))
+    SubClassOf(ai:MultiAgentOrchestrationFrameworks
+      ObjectSomeValuesFrom(ai:supports ai:AIInfrastructure))
 
-  ## Implementation Relationships
-      SubClassOf(ai:MultiAgentOrchestrationFrameworks
-        ObjectSomeValuesFrom(ai:implements ai:ModelContextProtocol))
-      SubClassOf(ai:MultiAgentOrchestrationFrameworks
-        ObjectSomeValuesFrom(ai:implements ai:Agent2AgentProtocol))
-      SubClassOf(ai:MultiAgentOrchestrationFrameworks
-        ObjectSomeValuesFrom(ai:implements ai:EventDrivenArchitecture))
-      SubClassOf(ai:MultiAgentOrchestrationFrameworks
-        ObjectSomeValuesFrom(ai:uses ai:LargeLanguageModel))
-      SubClassOf(ai:MultiAgentOrchestrationFrameworks
-        ObjectSomeValuesFrom(ai:uses ai:ToolUse))
-      SubClassOf(ai:MultiAgentOrchestrationFrameworks
-        ObjectSomeValuesFrom(ai:uses ai:DirectedAcyclicGraph))
-      SubClassOf(ai:MultiAgentOrchestrationFrameworks
-        ObjectSomeValuesFrom(ai:uses ai:StateMachine))
+## Implementation Relationships
+    SubClassOf(ai:MultiAgentOrchestrationFrameworks
+      ObjectSomeValuesFrom(ai:implements ai:ModelContextProtocol))
+    SubClassOf(ai:MultiAgentOrchestrationFrameworks
+      ObjectSomeValuesFrom(ai:implements ai:Agent2AgentProtocol))
+    SubClassOf(ai:MultiAgentOrchestrationFrameworks
+      ObjectSomeValuesFrom(ai:implements ai:EventDrivenArchitecture))
+    SubClassOf(ai:MultiAgentOrchestrationFrameworks
+      ObjectSomeValuesFrom(ai:uses ai:LargeLanguageModel))
+    SubClassOf(ai:MultiAgentOrchestrationFrameworks
+      ObjectSomeValuesFrom(ai:uses ai:ToolUse))
+    SubClassOf(ai:MultiAgentOrchestrationFrameworks
+      ObjectSomeValuesFrom(ai:uses ai:DirectedAcyclicGraph))
+    SubClassOf(ai:MultiAgentOrchestrationFrameworks
+      ObjectSomeValuesFrom(ai:uses ai:StateMachine))
 
-  ## Reduction Relationships
-      SubClassOf(ai:MultiAgentOrchestrationFrameworks
-        ObjectSomeValuesFrom(ai:reducesTo ai:AgentHarness))
-      SubClassOf(ai:MultiAgentOrchestrationFrameworks
-        ObjectSomeValuesFrom(ai:reducesTo ai:WorkflowAutomation))
+## Reduction Relationships
+    SubClassOf(ai:MultiAgentOrchestrationFrameworks
+      ObjectSomeValuesFrom(ai:reducesTo ai:AgentHarness))
+    SubClassOf(ai:MultiAgentOrchestrationFrameworks
+      ObjectSomeValuesFrom(ai:reducesTo ai:WorkflowAutomation))
 
-  ## About
-  **Multi-Agent Orchestration Frameworks** solve the fundamental problem of multi-agent coordination: how do you take a collection of individually capable but single-focus [[AI Agent System]] instances and compose them into a reliable, observable, controllable system that accomplishes tasks too complex for any one agent? The central insight motivating this category is that [[Large Language Model]] agents, despite their impressive individual capabilities, are bounded by context window limits, domain expertise, and error accumulation over long reasoning chains. By decomposing a task across specialised agents — a planner agent that breaks down requirements, a researcher agent that gathers information, a coder agent that writes implementation, a reviewer agent that validates output, and a critic agent that checks for errors — orchestration frameworks achieve both parallelism (multiple agents working simultaneously) and division of labour (each agent optimising for its narrow domain).
+## About
+**Multi-Agent Orchestration Frameworks** solve the fundamental problem of multi-agent coordination: how do you take a collection of individually capable but single-focus [[AI Agent System]] instances and compose them into a reliable, observable, controllable system that accomplishes tasks too complex for any one agent? The central insight motivating this category is that [[Large Language Model]] agents, despite their impressive individual capabilities, are bounded by context window limits, domain expertise, and error accumulation over long reasoning chains. By decomposing a task across specialised agents — a planner agent that breaks down requirements, a researcher agent that gathers information, a coder agent that writes implementation, a reviewer agent that validates output, and a critic agent that checks for errors — orchestration frameworks achieve both parallelism (multiple agents working simultaneously) and division of labour (each agent optimising for its narrow domain).
 
-  The intellectual lineage of multi-agent orchestration in AI traces to Classical Multi-Agent Systems (MAS) research: distributed AI and agent-based modelling (Wooldridge, Jennings, Durfee, Lesser through the 1980s–2000s), coordination theory (Malone and Crowston, 1994), and contract net protocols (Smith, 1980) for dynamic task assignment. These traditions provided the foundational vocabulary of orchestration — roles, task decomposition, negotiation, coordination — that LLM-era frameworks have repurposed for the new substrate of language model agents. The shift from symbolic to neural agents changed the implementation substrate but not the core coordination problems: agents still need to communicate, divide labour, and integrate partial results.
+The intellectual lineage of multi-agent orchestration in AI traces to Classical Multi-Agent Systems (MAS) research: distributed AI and agent-based modelling (Wooldridge, Jennings, Durfee, Lesser through the 1980s–2000s), coordination theory (Malone and Crowston, 1994), and contract net protocols (Smith, 1980) for dynamic task assignment. These traditions provided the foundational vocabulary of orchestration — roles, task decomposition, negotiation, coordination — that LLM-era frameworks have repurposed for the new substrate of language model agents. The shift from symbolic to neural agents changed the implementation substrate but not the core coordination problems: agents still need to communicate, divide labour, and integrate partial results.
 
-  The contemporary wave of LLM-grounded orchestration frameworks emerged in 2023 with AutoGen (Microsoft Research) and MetaGPT, crystallised into the dominant patterns by 2024 (CrewAI, LangGraph, ChatDev), and underwent major architectural maturation through 2025 (LangGraph 1.0, AutoGen v0.4/AG2, OpenAI Agents SDK, Google ADK). The field is now converging on a smaller set of fundamental architectural patterns — hierarchical delegation, graph-based state machines, event-driven conversation — while standardising around [[Model Context Protocol]] for tool access and [[Agent2Agent Protocol]] for cross-framework agent communication.
+The contemporary wave of LLM-grounded orchestration frameworks emerged in 2023 with AutoGen (Microsoft Research) and MetaGPT, crystallised into the dominant patterns by 2024 (CrewAI, LangGraph, ChatDev), and underwent major architectural maturation through 2025 (LangGraph 1.0, AutoGen v0.4/AG2, OpenAI Agents SDK, Google ADK). The field is now converging on a smaller set of fundamental architectural patterns — hierarchical delegation, graph-based state machines, event-driven conversation — while standardising around [[Model Context Protocol]] for tool access and [[Agent2Agent Protocol]] for cross-framework agent communication.
 
-  Multi-agent orchestration sits within the [[External AI Harness]] tradition in that it typically routes requests through networked agent processes, but it is categorically distinct from [[Personal Agent Runtimes]] in its multi-tenant, multi-agent, task-scoped orientation. Where a personal runtime accumulates a persistent identity for a single user over months, an orchestration framework instantiates a transient crew of agents for a defined task, executes the task, and terminates the crew — though LangGraph's [[Checkpointing]] architecture allows persistence across resumable sessions.
+Multi-agent orchestration sits within the [[External AI Harness]] tradition in that it typically routes requests through networked agent processes, but it is categorically distinct from [[Personal Agent Runtimes]] in its multi-tenant, multi-agent, task-scoped orientation. Where a personal runtime accumulates a persistent identity for a single user over months, an orchestration framework instantiates a transient crew of agents for a defined task, executes the task, and terminates the crew — though LangGraph's [[Checkpointing]] architecture allows persistence across resumable sessions.
 
-  ## Architecture Patterns
+## Architecture Patterns
 
-  **Pattern 1: Role-Based Crew (CrewAI)**
-  Each agent is assigned a named role (Engineer, Researcher, Critic, Manager), a goal description, a backstory providing personality and expertise context, and a tool list. Agents collaborate within a Crew under one of three process types: Sequential (agents execute in a fixed pipeline order), Hierarchical (a manager agent decomposes tasks and delegates to workers), or Consensual (agents vote on next steps). CrewAI Flows (introduced 2024) add event-driven triggers and conditional branching to the crew execution model, allowing fine-grained business logic control alongside high-level autonomous delegation. By 2025, Flows execute over 12 million times per day across industries from finance to federal government.
+**Pattern 1: Role-Based Crew (CrewAI)**
+Each agent is assigned a named role (Engineer, Researcher, Critic, Manager), a goal description, a backstory providing personality and expertise context, and a tool list. Agents collaborate within a Crew under one of three process types: Sequential (agents execute in a fixed pipeline order), Hierarchical (a manager agent decomposes tasks and delegates to workers), or Consensual (agents vote on next steps). CrewAI Flows (introduced 2024) add event-driven triggers and conditional branching to the crew execution model, allowing fine-grained business logic control alongside high-level autonomous delegation. By 2025, Flows execute over 12 million times per day across industries from finance to federal government.
 
-  **Pattern 2: Graph-Based State Machine (LangGraph)**
-  LangGraph models [[AI Agent System]] logic as directed graphs where nodes are Python/TypeScript functions that transform a shared [[State Machine]] object, and edges are conditional routing rules. The framework supports both [[Directed Acyclic Graph]] execution (linear pipelines) and cyclic graphs (agents that iterate until a condition is met), making it uniquely suited for complex branching workflows that require retry logic, error recovery, and human intervention. LangGraph's [[Checkpointing]] (using SQLite or PostgreSQL savers) persists the full graph state at every node execution, enabling fault-tolerant resumable workflows where a failed agent process can restart from the last successful state checkpoint — critical for long-running enterprise pipelines. LangGraph 1.0 (released October 2025) achieved production-grade stability and became the default runtime for all LangChain agents.
+**Pattern 2: Graph-Based State Machine (LangGraph)**
+LangGraph models [[AI Agent System]] logic as directed graphs where nodes are Python/TypeScript functions that transform a shared [[State Machine]] object, and edges are conditional routing rules. The framework supports both [[Directed Acyclic Graph]] execution (linear pipelines) and cyclic graphs (agents that iterate until a condition is met), making it uniquely suited for complex branching workflows that require retry logic, error recovery, and human intervention. LangGraph's [[Checkpointing]] (using SQLite or PostgreSQL savers) persists the full graph state at every node execution, enabling fault-tolerant resumable workflows where a failed agent process can restart from the last successful state checkpoint — critical for long-running enterprise pipelines. LangGraph 1.0 (released October 2025) achieved production-grade stability and became the default runtime for all LangChain agents.
 
-  **Pattern 3: Conversational Group Chat (AutoGen/AG2)**
-  Microsoft's AutoGen implements multi-agent collaboration as a structured conversation: agents are participants in a GroupChat object managed by a GroupChatManager that decides who speaks next. The v0.4 rewrite (released as AG2 in 2025) rearchitected AutoGen with an actor model at its core, enabling async-first, event-driven execution with pluggable orchestration strategies (RoundRobin, Selector, Swarm). AutoGen/AG2's Magentic-One (2024) is a generalised multi-agent system with a planner, web browser, file surfer, code executor, and code debugger as specialist agents, demonstrating strong performance on complex multi-step tasks requiring diverse tool use.
+**Pattern 3: Conversational Group Chat (AutoGen/AG2)**
+Microsoft's AutoGen implements multi-agent collaboration as a structured conversation: agents are participants in a GroupChat object managed by a GroupChatManager that decides who speaks next. The v0.4 rewrite (released as AG2 in 2025) rearchitected AutoGen with an actor model at its core, enabling async-first, event-driven execution with pluggable orchestration strategies (RoundRobin, Selector, Swarm). AutoGen/AG2's Magentic-One (2024) is a generalised multi-agent system with a planner, web browser, file surfer, code executor, and code debugger as specialist agents, demonstrating strong performance on complex multi-step tasks requiring diverse tool use.
 
-  **Pattern 4: Software Factory (MetaGPT, ChatDev)**
-  MetaGPT and ChatDev simulate software development organisations using agent personas mapped to engineering roles (Product Manager, Architect, Engineer, QA Tester). MetaGPT introduced structured output formats (PRD, architecture diagram, code file, test report) as agent-to-agent communication channels, replacing unstructured natural-language conversation with typed artefacts that reduce error propagation. ChatDev organises agents into a virtual company with hiring, design, coding, testing, and documentation phases, producing complete software repositories from a single natural-language specification.
+**Pattern 4: Software Factory (MetaGPT, ChatDev)**
+MetaGPT and ChatDev simulate software development organisations using agent personas mapped to engineering roles (Product Manager, Architect, Engineer, QA Tester). MetaGPT introduced structured output formats (PRD, architecture diagram, code file, test report) as agent-to-agent communication channels, replacing unstructured natural-language conversation with typed artefacts that reduce error propagation. ChatDev organises agents into a virtual company with hiring, design, coding, testing, and documentation phases, producing complete software repositories from a single natural-language specification.
 
-  **Pattern 5: Handoff-Based Delegation (OpenAI Agents SDK)**
-  The OpenAI Agents SDK (successor to the experimental Swarm, launched March 2025) implements the minimal viable orchestration primitive: handoffs between agents, where control and conversation context transfer from one agent to another via an explicit transfer-of-responsibility mechanism. Agents are defined with instructions, a model reference, tools, and a list of agents they can hand off to. The SDK supports both manager-pattern orchestration (a central orchestrator agent delegates to specialists) and decentralised handoffs (agents autonomously pass control). Guardrails run input/output validation in parallel with agent execution. The AgentKit visual builder (DevDay October 2025) provides a node-based canvas for composing handoff graphs without code.
+**Pattern 5: Handoff-Based Delegation (OpenAI Agents SDK)**
+The OpenAI Agents SDK (successor to the experimental Swarm, launched March 2025) implements the minimal viable orchestration primitive: handoffs between agents, where control and conversation context transfer from one agent to another via an explicit transfer-of-responsibility mechanism. Agents are defined with instructions, a model reference, tools, and a list of agents they can hand off to. The SDK supports both manager-pattern orchestration (a central orchestrator agent delegates to specialists) and decentralised handoffs (agents autonomously pass control). Guardrails run input/output validation in parallel with agent execution. The AgentKit visual builder (DevDay October 2025) provides a node-based canvas for composing handoff graphs without code.
 
-  **Pattern 6: Hierarchical Agent Tree (Google ADK)**
-  Google's Agent Development Kit (ADK, released April 2025) implements a hierarchical agent tree where a root agent decomposes tasks and delegates to sub-agents, with native support for the [[Agent2Agent Protocol]] (A2A) enabling cross-framework agent communication. ADK integrates with Google Cloud's Vertex AI infrastructure for deployment, model routing, and observability, and supports both Python and JavaScript/TypeScript implementations.
+**Pattern 6: Hierarchical Agent Tree (Google ADK)**
+Google's Agent Development Kit (ADK, released April 2025) implements a hierarchical agent tree where a root agent decomposes tasks and delegates to sub-agents, with native support for the [[Agent2Agent Protocol]] (A2A) enabling cross-framework agent communication. ADK integrates with Google Cloud's Vertex AI infrastructure for deployment, model routing, and observability, and supports both Python and JavaScript/TypeScript implementations.
 
-  ## Major Framework Implementations (2024–2026)
+## Major Framework Implementations (2024–2026)
 
-  **LangGraph** (Python/TypeScript, MIT licence; langchain-ai/langgraph, production-dominant)
-  LangGraph has the largest production deployment footprint in 2026, driven by its stateful graph architecture, first-class [[Checkpointing]], and close integration with the LangChain ecosystem. Enterprise users include financial services firms running multi-step document analysis pipelines, legal tech companies orchestrating contract review workflows, and software companies automating code review and testing pipelines. Gartner (2025) identified LangGraph as the dominant open-source choice for Python-first enterprise multi-agent teams.
+**LangGraph** (Python/TypeScript, MIT licence; langchain-ai/langgraph, production-dominant)
+LangGraph has the largest production deployment footprint in 2026, driven by its stateful graph architecture, first-class [[Checkpointing]], and close integration with the LangChain ecosystem. Enterprise users include financial services firms running multi-step document analysis pipelines, legal tech companies orchestrating contract review workflows, and software companies automating code review and testing pipelines. Gartner (2025) identified LangGraph as the dominant open-source choice for Python-first enterprise multi-agent teams.
 
-  **CrewAI** (Python, MIT licence; crewAIInc/crewAI, 25k+ GitHub stars)
-  CrewAI's role-playing abstraction is the most ergonomic entry point for teams new to multi-agent orchestration. Its dual-mode architecture (autonomous Crews + event-driven Flows) accommodates both exploratory task automation and deterministic business process automation. CrewAI Plus adds production features: API generation (converting Crews to REST endpoints in minutes), autoscaling, bearer-token security, and VPC deployment. Executed over 10 million agents in 30 days as of 2025. DeepLearning.AI offers a dedicated CrewAI course for practitioners.
+**CrewAI** (Python, MIT licence; crewAIInc/crewAI, 25k+ GitHub stars)
+CrewAI's role-playing abstraction is the most ergonomic entry point for teams new to multi-agent orchestration. Its dual-mode architecture (autonomous Crews + event-driven Flows) accommodates both exploratory task automation and deterministic business process automation. CrewAI Plus adds production features: API generation (converting Crews to REST endpoints in minutes), autoscaling, bearer-token security, and VPC deployment. Executed over 10 million agents in 30 days as of 2025. DeepLearning.AI offers a dedicated CrewAI course for practitioners.
 
-  **AutoGen / AG2** (Python, MIT licence; microsoft/autogen, 40k+ stars)
-  Microsoft Research's AutoGen is the most research-active framework, with the largest published literature evaluating multi-agent conversation patterns. The v0.4 rewrite (branded AG2 for the community fork) introduced a clean actor model architecture that superseded the earlier opaque GroupChat design. AutoGen Studio provides a no-code interface for building and testing multi-agent systems, widening access to non-technical users. Magentic-One (2024) demonstrated near-SOTA performance on GAIA, WebArena, and AssistantBench benchmarks using a 5-agent orchestrated system.
+**AutoGen / AG2** (Python, MIT licence; microsoft/autogen, 40k+ stars)
+Microsoft Research's AutoGen is the most research-active framework, with the largest published literature evaluating multi-agent conversation patterns. The v0.4 rewrite (branded AG2 for the community fork) introduced a clean actor model architecture that superseded the earlier opaque GroupChat design. AutoGen Studio provides a no-code interface for building and testing multi-agent systems, widening access to non-technical users. Magentic-One (2024) demonstrated near-SOTA performance on GAIA, WebArena, and AssistantBench benchmarks using a 5-agent orchestrated system.
 
-  **MetaGPT** (Python, Apache 2.0; geekan/MetaGPT, 45k+ stars)
-  MetaGPT's structured artefact communication model — where agents exchange typed documents (PRD, UML diagrams, code files, test reports) rather than free-form text — reduces hallucination propagation across agent handoffs. A 2024 SWE-bench evaluation found MetaGPT achieving competitive performance on real-world GitHub issue resolution. MetaGPT's role-based architecture with explicit SOP (Standard Operating Procedure) definitions inspired subsequent frameworks to adopt structured agent specifications.
+**MetaGPT** (Python, Apache 2.0; geekan/MetaGPT, 45k+ stars)
+MetaGPT's structured artefact communication model — where agents exchange typed documents (PRD, UML diagrams, code files, test reports) rather than free-form text — reduces hallucination propagation across agent handoffs. A 2024 SWE-bench evaluation found MetaGPT achieving competitive performance on real-world GitHub issue resolution. MetaGPT's role-based architecture with explicit SOP (Standard Operating Procedure) definitions inspired subsequent frameworks to adopt structured agent specifications.
 
-  **OpenAI Agents SDK** (Python, MIT licence; openai/openai-agents-python)
-  The production-ready successor to Swarm (experimental). Minimalist by design: four primitives (Agents, Handoffs, Guardrails, Tracing), supporting 100+ LLM backends via Chat Completions compatibility. Sandbox agents provide isolated code execution with manifest-defined environments. Session persistence maintains working context within and across agent loop invocations. AgentKit (DevDay 2025) visual builder enables non-programmers to assemble handoff graphs.
+**OpenAI Agents SDK** (Python, MIT licence; openai/openai-agents-python)
+The production-ready successor to Swarm (experimental). Minimalist by design: four primitives (Agents, Handoffs, Guardrails, Tracing), supporting 100+ LLM backends via Chat Completions compatibility. Sandbox agents provide isolated code execution with manifest-defined environments. Session persistence maintains working context within and across agent loop invocations. AgentKit (DevDay 2025) visual builder enables non-programmers to assemble handoff graphs.
 
-  **PraisonAI** (Python, MIT licence; MervinPraison/PraisonAI)
-  PraisonAI provides a YAML-first agent definition syntax and supports both AutoGen and CrewAI execution backends, enabling framework-agnostic agent definitions. Particularly popular in the community for rapid iteration and multi-backend flexibility.
+**PraisonAI** (Python, MIT licence; MervinPraison/PraisonAI)
+PraisonAI provides a YAML-first agent definition syntax and supports both AutoGen and CrewAI execution backends, enabling framework-agnostic agent definitions. Particularly popular in the community for rapid iteration and multi-backend flexibility.
 
-  **agent-squad (Amazon)** (Python/TypeScript, Apache 2.0; awslabs/agent-squad)
-  Amazon Web Services' multi-agent orchestration library, formerly known as Multi-Agent Orchestrator. Integrates natively with Amazon Bedrock (Claude, Titan, Jurassic, Cohere models), AWS Lambda, and DynamoDB for serverless agent deployment. Specialises in classifier-based routing where an intent classifier dynamically selects the best specialist agent for each incoming user turn.
+**agent-squad (Amazon)** (Python/TypeScript, Apache 2.0; awslabs/agent-squad)
+Amazon Web Services' multi-agent orchestration library, formerly known as Multi-Agent Orchestrator. Integrates natively with Amazon Bedrock (Claude, Titan, Jurassic, Cohere models), AWS Lambda, and DynamoDB for serverless agent deployment. Specialises in classifier-based routing where an intent classifier dynamically selects the best specialist agent for each incoming user turn.
 
-  ## Use Cases
+## Use Cases
 
-  - **Software engineering automation**: MetaGPT and ChatDev demonstrate end-to-end software development from specification to tested codebase. SWE-agent (Princeton), Devin (Cognition), and Claude Code use orchestrated agent loops for real-world [[Software Engineering]] tasks on GitHub Issues and pull requests.
-  - **Business process automation**: CrewAI and LangGraph are widely deployed for multi-step business workflows: marketing content pipelines (research → draft → review → publish), financial analysis (data collection → modelling → report generation → compliance check), and legal document review (clause extraction → risk scoring → summary generation).
-  - **Research and literature review**: AutoGen's group-chat pattern and LangGraph's branching workflows enable multi-agent research pipelines where specialist agents search literature, extract key claims, synthesise findings, and produce structured literature review outputs.
-  - **Customer service escalation**: agent-squad's classifier-routing pattern is deployed in customer service contexts where an intent classifier routes user queries to specialist agents (billing, technical support, returns) and escalates to human agents when confidence thresholds are not met.
-  - **Code review and testing**: orchestrated reviewer/tester agent pairs are deployed in CI/CD pipelines to provide automated code review comments, generate test cases, and validate that pull requests meet quality gates before human review.
-  - **Scientific research**: LLM-grounded multi-agent systems are being applied to hypothesis generation, experimental design, data analysis, and paper writing in life sciences, materials science, and physics research contexts.
+- **Software engineering automation**: MetaGPT and ChatDev demonstrate end-to-end software development from specification to tested codebase. SWE-agent (Princeton), Devin (Cognition), and Claude Code use orchestrated agent loops for real-world [[Software Engineering]] tasks on GitHub Issues and pull requests.
+- **Business process automation**: CrewAI and LangGraph are widely deployed for multi-step business workflows: marketing content pipelines (research → draft → review → publish), financial analysis (data collection → modelling → report generation → compliance check), and legal document review (clause extraction → risk scoring → summary generation).
+- **Research and literature review**: AutoGen's group-chat pattern and LangGraph's branching workflows enable multi-agent research pipelines where specialist agents search literature, extract key claims, synthesise findings, and produce structured literature review outputs.
+- **Customer service escalation**: agent-squad's classifier-routing pattern is deployed in customer service contexts where an intent classifier routes user queries to specialist agents (billing, technical support, returns) and escalates to human agents when confidence thresholds are not met.
+- **Code review and testing**: orchestrated reviewer/tester agent pairs are deployed in CI/CD pipelines to provide automated code review comments, generate test cases, and validate that pull requests meet quality gates before human review.
+- **Scientific research**: LLM-grounded multi-agent systems are being applied to hypothesis generation, experimental design, data analysis, and paper writing in life sciences, materials science, and physics research contexts.
 
   ## Academic Context
 
@@ -146,10 +145,11 @@ Frameworks enabling multiple AI agents to collaborate on complex tasks through r
   Wooldridge, M., & Jennings, N.R. (1995). "Intelligent Agents: Theory and Practice" established the conceptual vocabulary of agent communication, coordination, and role assignment. Smith (1980) introduced the Contract Net Protocol — arguably the first practical multi-agent task orchestration mechanism — in which a manager agent broadcasts a task announcement and worker agents submit bids; the winning bidder receives the task and reports results to the manager. This precisely prefigures modern orchestration frameworks' role assignment and handoff patterns.
 
   **LLM-Grounded Multi-Agent Literature**
-  - Wu et al. (2023/2024). "AutoGen: Enabling Next-Gen LLM Applications via Multi-Agent Conversation Framework." ICLR 2024. The seminal framework paper, demonstrating that multi-agent conversation patterns improve performance on coding, mathematical reasoning, and complex task-solving over single-agent baselines. https://arxiv.org/abs/2308.08155
-  - Hong et al. (2023). "MetaGPT: Meta Programming for Multi-Agent Collaborative Framework." ICLR 2024. Introduced structured artefact communication between agents; demonstrated that typed document exchange reduces error propagation versus free-form conversation. https://arxiv.org/abs/2308.00352
-  - Qian et al. (2023/2024). "ChatDev: Communicative Agents for Software Development." ACL 2024. Demonstrated complete software factory simulation using role-playing agents; introduced the idea of organised virtual-company agent topologies. https://arxiv.org/abs/2307.07924
-  - Li et al. (2025). "Multi-Agent Collaboration via Evolving Orchestration." arXiv 2025. Examines dynamic topology adaptation in multi-agent systems, showing that orchestration structures should evolve based on task progress rather than being fixed at design time. https://arxiv.org/abs/2505.19591
+
+- Wu et al. (2023/2024). "AutoGen: Enabling Next-Gen LLM Applications via Multi-Agent Conversation Framework." ICLR 2024. The seminal framework paper, demonstrating that multi-agent conversation patterns improve performance on coding, mathematical reasoning, and complex task-solving over single-agent baselines. https://arxiv.org/abs/2308.08155
+- Hong et al. (2023). "MetaGPT: Meta Programming for Multi-Agent Collaborative Framework." ICLR 2024. Introduced structured artefact communication between agents; demonstrated that typed document exchange reduces error propagation versus free-form conversation. https://arxiv.org/abs/2308.00352
+- Qian et al. (2023/2024). "ChatDev: Communicative Agents for Software Development." ACL 2024. Demonstrated complete software factory simulation using role-playing agents; introduced the idea of organised virtual-company agent topologies. https://arxiv.org/abs/2307.07924
+- Li et al. (2025). "Multi-Agent Collaboration via Evolving Orchestration." arXiv 2025. Examines dynamic topology adaptation in multi-agent systems, showing that orchestration structures should evolve based on task progress rather than being fixed at design time. https://arxiv.org/abs/2505.19591
 
   **Benchmarks and Evaluation**
   Key benchmarks for evaluating multi-agent orchestration frameworks include: SWE-bench (software engineering on real GitHub issues), GAIA (general AI assistant benchmark requiring tool use and web browsing), WebArena (web-based task automation), HumanEval and MBPP (code generation), and AgentBench (multi-dimensional agent evaluation across web, OS, database, and knowledge graph tasks). AutoGen Magentic-One achieved competitive results across GAIA, WebArena, and AssistantBench in 2024 evaluations.
@@ -176,12 +176,12 @@ Frameworks enabling multiple AI agents to collaborate on complex tasks through r
 
   ## Future Directions (2026–2030)
 
-  - **Dynamic topology adaptation**: current frameworks require topology (who talks to whom) to be specified at design time. Next-generation orchestrators will dynamically instantiate new agents, reassign roles, and restructure communication graphs based on task-time observations — moving from static crews to adaptive swarms.
-  - **Cross-framework federation via A2A**: the [[Agent2Agent Protocol]] will mature into a stable inter-operability layer, enabling enterprise deployments that mix agents from different frameworks (LangGraph planners, CrewAI workers, AutoGen critics) within a single orchestrated workflow without custom integration code.
-  - **Self-improving orchestration**: frameworks will incorporate meta-learning loops that analyse past orchestration failures and successes, automatically tuning role descriptions, handoff conditions, and agent selection heuristics to improve task completion rates over time — a form of [[Reinforcement Learning]] from orchestration experience.
-  - **Formal verification of agent workflows**: as multi-agent systems are deployed in safety-critical contexts (medical, legal, financial), there will be demand for formally verified orchestration guarantees — provable termination, bounded resource consumption, and safety constraint satisfaction — adapting model-checking techniques from traditional distributed systems to the LLM-agent context.
-  - **Embodied multi-agent coordination**: multi-agent orchestration will extend from pure software tasks into robotics and physical automation, with orchestration frameworks coordinating heterogeneous robot fleets alongside software agents in unified task pipelines.
-  - **Regulatory-driven auditability**: UK AI Act regulation and EU AI Act requirements will mandate that multi-agent orchestration frameworks provide complete, human-readable audit trails of all agent decisions and tool invocations — driving [[Agent Event Stream]] standards and structured logging APIs as first-class framework features.
+- **Dynamic topology adaptation**: current frameworks require topology (who talks to whom) to be specified at design time. Next-generation orchestrators will dynamically instantiate new agents, reassign roles, and restructure communication graphs based on task-time observations — moving from static crews to adaptive swarms.
+- **Cross-framework federation via A2A**: the [[Agent2Agent Protocol]] will mature into a stable inter-operability layer, enabling enterprise deployments that mix agents from different frameworks (LangGraph planners, CrewAI workers, AutoGen critics) within a single orchestrated workflow without custom integration code.
+- **Self-improving orchestration**: frameworks will incorporate meta-learning loops that analyse past orchestration failures and successes, automatically tuning role descriptions, handoff conditions, and agent selection heuristics to improve task completion rates over time — a form of [[Reinforcement Learning]] from orchestration experience.
+- **Formal verification of agent workflows**: as multi-agent systems are deployed in safety-critical contexts (medical, legal, financial), there will be demand for formally verified orchestration guarantees — provable termination, bounded resource consumption, and safety constraint satisfaction — adapting model-checking techniques from traditional distributed systems to the LLM-agent context.
+- **Embodied multi-agent coordination**: multi-agent orchestration will extend from pure software tasks into robotics and physical automation, with orchestration frameworks coordinating heterogeneous robot fleets alongside software agents in unified task pipelines.
+- **Regulatory-driven auditability**: UK AI Act regulation and EU AI Act requirements will mandate that multi-agent orchestration frameworks provide complete, human-readable audit trails of all agent decisions and tool invocations — driving [[Agent Event Stream]] standards and structured logging APIs as first-class framework features.
 
   ## Research and Literature
 
@@ -213,5 +213,5 @@ Frameworks enabling multiple AI agents to collaborate on complex tasks through r
   26. Yin, J., & Korhonen, A. (2025). "Orchestrator: Active Inference for Multi-Agent Systems in Long-Horizon Tasks." *arXiv*. https://arxiv.org/abs/2509.05651
   27. Hendrycks, D., et al. (2021). "Aligning AI With Shared Human Values." https://arxiv.org/abs/2008.02275
 
-- ### Provenance
+### Provenance
 

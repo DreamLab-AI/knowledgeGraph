@@ -1,20 +1,26 @@
-
 A protocol specification is a precise, unambiguous document that defines how independent systems must exchange messages to interoperate, covering message formats, encodings, sequencing, state machines, error handling and timing. It serves as the authoritative contract that implementers follow so that conforming systems built by different parties can communicate reliably. Well-formed specifications separate the wire format and behaviour from any particular implementation, and they are typically published and maintained by standards bodies to ensure long-term interoperability.
 
 - A protocol specification is the authoritative contract that tells implementers exactly how systems must talk to each other. It refines a [[Communication Protocol]] into a precise [[Message Format]], state machine and behaviour, and underpins [[Interoperability]] across independently built systems.
-- ### Overview
+
+### Overview
+
 - The specification separates what is sent on the wire and how parties must behave from any single [[Reference Implementation]]. By fixing the encoding, sequencing and error semantics, it allows vendors to build interoperable products without coordinating their internal code.
 - Authoritative specifications are usually published and version-controlled by a [[Standards Body]] such as the [[IETF]], with conformance criteria so that compliant implementations can be verified against the document rather than against each other.
-- ### Mechanisms
+
+### Mechanisms
+
 - Message format and encoding definitions that fix the wire representation.
 - Protocol state machines describing legal sequences of exchanges.
 - Error handling, timeouts and retransmission semantics.
 - Versioning and negotiation rules for backwards compatibility.
 - Conformance requirements that distinguish mandatory from optional behaviour.
-- ### Applications
+
+### Applications
+
 - Defining new network and application protocols in the [[Protocol Stack]].
 - Enabling multi-vendor [[Interoperability]] from a shared contract.
 - Producing a [[Reference Implementation]] that others test against.
 - Anchoring an [[Interoperability Standard]] published by a [[Standards Body]].
-- ### Provenance
+
+### Provenance
 

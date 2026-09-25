@@ -1,10 +1,10 @@
-
 The development, deployment, and use of artificial intelligence systems in accordance with moral principles and values that respect human dignity, rights, and wellbeing, incorporating considerations of fairness, transparency, accountability, privacy, safety, and beneficence throughout the AI lifecycle, whilst promoting human flourishing, social justice, and the common good through deliberate design choices, governance mechanisms, and operational practices that embed ethical reasoning into AI system functioning and organisational decision-making.
 
-- ### Semantic Classification
+### Semantic Classification
 
-- ### Content
-  - The development, deployment, and use of artificial intelligence systems in accordance with moral principles and values that respect human dignity, rights, and wellbeing, incorporating considerations of fairness, transparency, accountability, privacy, safety, and beneficence throughout the AI lifecycle, whilst promoting human flourishing, social justice, and the common good through deliberate design choices, governance mechanisms, and operational practices that embed ethical reasoning into AI system functioning and organisational decision-making.
+### Content
+
+- The development, deployment, and use of artificial intelligence systems in accordance with moral principles and values that respect human dignity, rights, and wellbeing, incorporating considerations of fairness, transparency, accountability, privacy, safety, and beneficence throughout the AI lifecycle, whilst promoting human flourishing, social justice, and the common good through deliberate design choices, governance mechanisms, and operational practices that embed ethical reasoning into AI system functioning and organisational decision-making.
 
   ## Context and Significance
 
@@ -16,101 +16,111 @@ The development, deployment, and use of artificial intelligence systems in accor
 
   ## Key Characteristics
 
-  - **Value-based**: Grounded in explicit moral principles and commitments
-  - **Human-centred**: Prioritises human dignity, rights, and wellbeing
-  - **Proactive**: Anticipates ethical implications rather than merely reacting to harms
-  - **Contextual**: Recognises that ethical requirements vary across applications and cultures
-  - **Participatory**: Involves diverse stakeholders in ethical deliberation
-  - **Actionable**: Translates principles into concrete design and governance practices
-  - **Accountable**: Establishes clear responsibility for ethical outcomes
-  - **Iterative**: Continuous ethical reflection and improvement
+- **Value-based**: Grounded in explicit moral principles and commitments
+- **Human-centred**: Prioritises human dignity, rights, and wellbeing
+- **Proactive**: Anticipates ethical implications rather than merely reacting to harms
+- **Contextual**: Recognises that ethical requirements vary across applications and cultures
+- **Participatory**: Involves diverse stakeholders in ethical deliberation
+- **Actionable**: Translates principles into concrete design and governance practices
+- **Accountable**: Establishes clear responsibility for ethical outcomes
+- **Iterative**: Continuous ethical reflection and improvement
 
   ## Core Ethical Principles
 
   ### 1. Human Dignity and Rights
-  - **Respect for persons**: Treating individuals as ends in themselves, not mere means
-  - **Human rights protection**: Safeguarding fundamental rights and freedoms
-  - **Autonomy**: Preserving meaningful human choice and self-determination
-  - **Non-discrimination**: Ensuring equal treatment and protecting against bias
-  - **Privacy**: Respecting personal information and informational self-determination
+
+- **Respect for persons**: Treating individuals as ends in themselves, not mere means
+- **Human rights protection**: Safeguarding fundamental rights and freedoms
+- **Autonomy**: Preserving meaningful human choice and self-determination
+- **Non-discrimination**: Ensuring equal treatment and protecting against bias
+- **Privacy**: Respecting personal information and informational self-determination
 
   ### 2. Fairness and Justice
-  - **Procedural fairness**: Just processes for AI-mediated decisions
-  - **Distributive justice**: Equitable allocation of AI benefits and burdens
-  - **Non-discrimination**: Prevention of unfair treatment based on protected characteristics
-  - **Inclusion**: Ensuring AI benefits reach all segments of society
-  - **Redress**: Access to remedies for those harmed by AI systems
+
+- **Procedural fairness**: Just processes for AI-mediated decisions
+- **Distributive justice**: Equitable allocation of AI benefits and burdens
+- **Non-discrimination**: Prevention of unfair treatment based on protected characteristics
+- **Inclusion**: Ensuring AI benefits reach all segments of society
+- **Redress**: Access to remedies for those harmed by AI systems
 
   ### 3. Beneficence and Non-maleficence
-  - **Benefit promotion**: Maximising positive contributions to human wellbeing
-  - **Harm prevention**: Avoiding or minimising risks of injury or damage
-  - **Safety**: Ensuring AI systems operate reliably without undue risk
-  - **Security**: Protecting against malicious use or attacks
-  - **Wellbeing**: Promoting physical, mental, and social health
+
+- **Benefit promotion**: Maximising positive contributions to human wellbeing
+- **Harm prevention**: Avoiding or minimising risks of injury or damage
+- **Safety**: Ensuring AI systems operate reliably without undue risk
+- **Security**: Protecting against malicious use or attacks
+- **Wellbeing**: Promoting physical, mental, and social health
 
   ### 4. Transparency and Explicability
-  - **Openness**: Appropriate disclosure of AI use and functioning
-  - **Explainability**: Providing understandable accounts of AI decisions
-  - **Traceability**: Maintaining records enabling accountability
-  - **Communication**: Clear information about capabilities and limitations
-  - **Contestability**: Enabling meaningful challenge of AI outputs
+
+- **Openness**: Appropriate disclosure of AI use and functioning
+- **Explainability**: Providing understandable accounts of AI decisions
+- **Traceability**: Maintaining records enabling accountability
+- **Communication**: Clear information about capabilities and limitations
+- **Contestability**: Enabling meaningful challenge of AI outputs
 
   ### 5. Accountability and Responsibility
-  - **Clear assignment**: Defined responsibility for AI system outcomes
-  - **Oversight**: Human supervision and control mechanisms
-  - **Auditability**: Enabling verification of compliance and performance
-  - **Liability**: Legal and moral responsibility for harms
-  - **Remediation**: Correcting errors and addressing negative impacts
+
+- **Clear assignment**: Defined responsibility for AI system outcomes
+- **Oversight**: Human supervision and control mechanisms
+- **Auditability**: Enabling verification of compliance and performance
+- **Liability**: Legal and moral responsibility for harms
+- **Remediation**: Correcting errors and addressing negative impacts
 
   ### 6. Privacy and Data Governance
-  - **Data minimisation**: Collecting only necessary information
-  - **Purpose limitation**: Using data only for specified purposes
-  - **Consent**: Obtaining informed agreement for data processing
-  - **Security**: Protecting data from unauthorized access
-  - **Individual rights**: Respecting data subject rights (access, correction, deletion)
+
+- **Data minimisation**: Collecting only necessary information
+- **Purpose limitation**: Using data only for specified purposes
+- **Consent**: Obtaining informed agreement for data processing
+- **Security**: Protecting data from unauthorized access
+- **Individual rights**: Respecting data subject rights (access, correction, deletion)
 
   ## Implementing Ethical AI
 
   ### Governance Mechanisms
-  - **Ethics committees**: Bodies reviewing AI ethical implications
-  - **Impact assessments**: Systematic evaluation of ethical effects
-  - **Ethics by design**: Embedding ethical principles in architecture and development
-  - **Codes of ethics**: Professional standards for AI practitioners
-  - **Whistleblower protections**: Safe channels for raising ethical concerns
+
+- **Ethics committees**: Bodies reviewing AI ethical implications
+- **Impact assessments**: Systematic evaluation of ethical effects
+- **Ethics by design**: Embedding ethical principles in architecture and development
+- **Codes of ethics**: Professional standards for AI practitioners
+- **Whistleblower protections**: Safe channels for raising ethical concerns
 
   ### Technical Approaches
-  - **Fairness constraints**: Algorithmic techniques ensuring equitable outcomes
-  - **Privacy-preserving methods**: Differential privacy, federated learning, encryption
-  - **Explainable AI**: Techniques making decisions interpretable
-  - **Safety engineering**: Formal verification, testing, monitoring
-  - **Value alignment**: Methods ensuring AI objectives match human values
+
+- **Fairness constraints**: Algorithmic techniques ensuring equitable outcomes
+- **Privacy-preserving methods**: Differential privacy, federated learning, encryption
+- **Explainable AI**: Techniques making decisions interpretable
+- **Safety engineering**: Formal verification, testing, monitoring
+- **Value alignment**: Methods ensuring AI objectives match human values
 
   ### Organizational Practices
-  - **Ethical training**: Education on AI ethics for development teams
-  - **Diverse teams**: Including varied perspectives in AI development
-  - **Stakeholder engagement**: Consulting affected parties
-  - **Ethical review**: Assessment before deployment
-  - **Continuous monitoring**: Ongoing evaluation of ethical performance
+
+- **Ethical training**: Education on AI ethics for development teams
+- **Diverse teams**: Including varied perspectives in AI development
+- **Stakeholder engagement**: Consulting affected parties
+- **Ethical review**: Assessment before deployment
+- **Continuous monitoring**: Ongoing evaluation of ethical performance
 
   ### 7. Professional Responsibility
-  - **Competence**: Maintaining expertise to make informed ethical judgments
-  - **Integrity**: Honesty and adherence to ethical commitments
-  - **Duty of care**: Taking reasonable steps to prevent harm
-  - **Speaking up**: Raising concerns about ethical issues
-  - **Continuous learning**: Staying informed on ethical best practices
+
+- **Competence**: Maintaining expertise to make informed ethical judgments
+- **Integrity**: Honesty and adherence to ethical commitments
+- **Duty of care**: Taking reasonable steps to prevent harm
+- **Speaking up**: Raising concerns about ethical issues
+- **Continuous learning**: Staying informed on ethical best practices
 
   ## Relationships
 
-  - **Enables**: Responsible AI, Trustworthy AI
-  - **Requires**: AI Governance, stakeholder engagement
-  - **Implemented through**: AI Impact Assessment, ethics by design
-  - **Includes principles**: Fairness, Transparency, Accountability, Privacy
-  - **Guides**: AI Lifecycle activities (development, deployment, monitoring)
-  - **Assessed via**: AI Audit, ethics review processes
-  - **Informed by**: Human rights frameworks, professional ethics codes
-  - **Supports**: Social licence, public trust in AI
-  - **Overlaps with**: Legal compliance, but extends beyond minimum requirements
-  - **Challenges**: Automation Bias, value conflicts, cultural differences
+- **Enables**: Responsible AI, Trustworthy AI
+- **Requires**: AI Governance, stakeholder engagement
+- **Implemented through**: AI Impact Assessment, ethics by design
+- **Includes principles**: Fairness, Transparency, Accountability, Privacy
+- **Guides**: AI Lifecycle activities (development, deployment, monitoring)
+- **Assessed via**: AI Audit, ethics review processes
+- **Informed by**: Human rights frameworks, professional ethics codes
+- **Supports**: Social licence, public trust in AI
+- **Overlaps with**: Legal compliance, but extends beyond minimum requirements
+- **Challenges**: Automation Bias, value conflicts, cultural differences
 
   ## Examples and Applications
 
@@ -122,76 +132,88 @@ The development, deployment, and use of artificial intelligence systems in accor
   ## ISO/IEC Standards Alignment
 
   **ISO/IEC 42001:2023** (AI Management Systems):
-  - Incorporates ethical considerations throughout AI management system
-  - Requires consideration of impacts on interested parties (ethical stakeholders)
-  - Mandates impact assessment addressing ethical dimensions
+
+- Incorporates ethical considerations throughout AI management system
+- Requires consideration of impacts on interested parties (ethical stakeholders)
+- Mandates impact assessment addressing ethical dimensions
 
   **ISO/IEC 24368** (Overview of Ethical and Societal Concerns):
-  - Framework for addressing ethical and societal concerns in AI
-  - Ethical principles and their application to AI systems
+
+- Framework for addressing ethical and societal concerns in AI
+- Ethical principles and their application to AI systems
 
   **ISO/IEC 24029-1** (Assessment of Robustness of Neural Networks):
-  - Technical approaches supporting safety and reliability (ethical requirements)
+
+- Technical approaches supporting safety and reliability (ethical requirements)
 
   **ISO/IEC 25059** (Quality Model for AI Systems):
-  - Quality characteristics including ethical dimensions (fairness, transparency)
+
+- Quality characteristics including ethical dimensions (fairness, transparency)
 
   ## NIST AI RMF Integration
 
   **GOVERN Function**:
-  - Policies and procedures embed ethical principles
-  - Leadership commitment to ethical AI
-  - Organisational culture promoting ethical awareness
-  - Stakeholder engagement on ethical concerns
+
+- Policies and procedures embed ethical principles
+- Leadership commitment to ethical AI
+- Organisational culture promoting ethical awareness
+- Stakeholder engagement on ethical concerns
 
   **MAP Function**:
-  - Ethical considerations in context mapping
-  - Values and principles identified for specific AI application
-  - Stakeholder ethical expectations documented
+
+- Ethical considerations in context mapping
+- Values and principles identified for specific AI application
+- Stakeholder ethical expectations documented
 
   **MEASURE Function**:
-  - Metrics addressing ethical dimensions (fairness, transparency, etc.)
-  - Measurement of alignment with ethical commitments
-  - Evaluation of ethical performance
+
+- Metrics addressing ethical dimensions (fairness, transparency, etc.)
+- Measurement of alignment with ethical commitments
+- Evaluation of ethical performance
 
   **MANAGE Function**:
-  - Ethical risk identification and mitigation
-  - Balancing competing ethical considerations
-  - Continuous improvement of ethical performance
+
+- Ethical risk identification and mitigation
+- Balancing competing ethical considerations
+- Continuous improvement of ethical performance
 
   **Trustworthiness Characteristics**:
-  - Valid and Reliable, Safe, Secure and Resilient, Accountable and Transparent, Explainable and Interpretable, Privacy-Enhanced, Fair—operationalize ethical principles
+
+- Valid and Reliable, Safe, Secure and Resilient, Accountable and Transparent, Explainable and Interpretable, Privacy-Enhanced, Fair—operationalize ethical principles
 
   ## Implementation Considerations
 
   **Ethical Deliberation**:
-  - Identifying relevant ethical principles and potential conflicts
-  - Engaging diverse perspectives in ethical reasoning
-  - Balancing competing values (e.g., privacy vs. safety, fairness vs. accuracy)
-  - Addressing cultural and contextual variation in ethical priorities
-  - Documenting ethical reasoning and trade-offs
+
+- Identifying relevant ethical principles and potential conflicts
+- Engaging diverse perspectives in ethical reasoning
+- Balancing competing values (e.g., privacy vs. safety, fairness vs. accuracy)
+- Addressing cultural and contextual variation in ethical priorities
+- Documenting ethical reasoning and trade-offs
 
   **Challenges**:
-  - Translating abstract principles into concrete technical requirements
-  - Addressing conflicting ethical principles (e.g., transparency vs. privacy)
-  - Navigating cultural differences in ethical values
-  - Balancing ethical considerations with business objectives
-  - Measuring and verifying ethical compliance
-  - Addressing novel ethical questions without established guidance
-  - Maintaining ethical commitment under competitive pressure
-  - Ensuring ethics is integrated, not cosmetic
+
+- Translating abstract principles into concrete technical requirements
+- Addressing conflicting ethical principles (e.g., transparency vs. privacy)
+- Navigating cultural differences in ethical values
+- Balancing ethical considerations with business objectives
+- Measuring and verifying ethical compliance
+- Addressing novel ethical questions without established guidance
+- Maintaining ethical commitment under competitive pressure
+- Ensuring ethics is integrated, not cosmetic
 
   **Best Practices**:
-  - Establish explicit ethical commitments and values
-  - Involve ethicists and diverse stakeholders in AI development
-  - Conduct ethical impact assessments before deployment
-  - Implement ethics by design throughout development
-  - Provide ethics training for AI practitioners
-  - Create safe channels for raising ethical concerns
-  - Monitor ethical performance continuously
-  - Learn from ethical failures and near-misses
-  - Maintain transparency about ethical considerations and trade-offs
-  - Prioritise long-term ethical reputation over short-term gains
+
+- Establish explicit ethical commitments and values
+- Involve ethicists and diverse stakeholders in AI development
+- Conduct ethical impact assessments before deployment
+- Implement ethics by design throughout development
+- Provide ethics training for AI practitioners
+- Create safe channels for raising ethical concerns
+- Monitor ethical performance continuously
+- Learn from ethical failures and near-misses
+- Maintain transparency about ethical considerations and trade-offs
+- Prioritise long-term ethical reputation over short-term gains
 
   ## Regulatory and Policy Context
 
@@ -209,16 +231,16 @@ The development, deployment, and use of artificial intelligence systems in accor
 
   ## Related Terms
 
-  - **Responsible AI**: Overlapping concept emphasizing accountability
-  - **Trustworthy AI**: Broader concept including ethics, legality, robustness
-  - **AI Governance**: Framework implementing ethical AI commitments
-  - **Fairness**: Core ethical principle
-  - **Transparency**: Core ethical principle
-  - **Accountability**: Core ethical principle
-  - **Privacy**: Core ethical principle
-  - **Human Rights**: Foundation for many ethical AI principles
-  - **AI Impact Assessment**: Tool for assessing ethical implications
-  - **Ethics by Design**: Approach embedding ethics in development
+- **Responsible AI**: Overlapping concept emphasizing accountability
+- **Trustworthy AI**: Broader concept including ethics, legality, robustness
+- **AI Governance**: Framework implementing ethical AI commitments
+- **Fairness**: Core ethical principle
+- **Transparency**: Core ethical principle
+- **Accountability**: Core ethical principle
+- **Privacy**: Core ethical principle
+- **Human Rights**: Foundation for many ethical AI principles
+- **AI Impact Assessment**: Tool for assessing ethical implications
+- **Ethics by Design**: Approach embedding ethics in development
 
   ## References
 
@@ -231,16 +253,16 @@ The development, deployment, and use of artificial intelligence systems in accor
 
   ## See Also
 
-  - [[Responsible AI]]
-  - [[Trustworthy AI]]
-  - [[AI Governance]]
-  - [[Fairness]]
-  - [[Transparency]]
-  - [[Accountability]]
-  - [[Privacy]]
-  - [[Human Rights]]
-  - [[AI Impact Assessment]]
-  - [[Ethics by Design]]
+- [[Responsible AI]]
+- [[Trustworthy AI]]
+- [[AI Governance]]
+- [[Fairness]]
+- [[Transparency]]
+- [[Accountability]]
+- [[Privacy]]
+- [[Human Rights]]
+- [[AI Impact Assessment]]
+- [[Ethics by Design]]
 
-- ### Provenance
+### Provenance
 

@@ -1,84 +1,90 @@
-
 Taproot is a soft-fork upgrade to the Bitcoin protocol, activated at block 709,632 in November 2021, comprising BIPs 340, 341, and 342. It introduces Schnorr signatures (BIP 340), Pay-to-Taproot (P2TR) outputs with Merkelised Abstract Syntax Tree (MAST) spending-condition commitments (BIP 341), and Tapscript — an updated Bitcoin Script dialect (BIP 342). Together these improvements enhance transaction privacy by making complex multi-condition spends indistinguishable from simple key-path spends, improve efficiency via Schnorr signature aggregation, and expand smart-contract expressiveness on Bitcoin's base layer.
 
-- ### Overview
-  - Taproot is widely regarded as Bitcoin's most impactful protocol upgrade since [[Segregated Witness]] (SegWit, 2017). Its development was initiated by Gregory Maxwell's 2018 proposal, synthesising years of prior discussion around Schnorr signatures and the MAST concept (first introduced by Johnson Lau in 2016). The three BIPs were refined through 2019–2020 with broad developer participation, and the Speedy Trial activation mechanism achieved miner lock-in in June 2021 ahead of November activation.
-  - The central motivation was twofold: privacy and efficiency. Before Taproot, a multi-signature or time-locked output broadcast its entire script on-chain when spent, leaking structural information. With Taproot, cooperative spends — where all participants agree on the outcome — appear identical to ordinary single-key spends, regardless of the complexity of the underlying spending conditions. Uncooperative spends must reveal only the executed script branch, not all branches.
-  - Taproot was also notable for its governance significance: unlike the contentious 2017 SegWit activation and the ensuing User Activated Soft Fork (UASF), the Taproot upgrade proceeded with minimal controversy, serving as a reference for future Bitcoin soft-fork governance.
+### Overview
 
-- ### Key Components
-  - **[[Schnorr Signatures]] (BIP 340)**
-    - Replace [[ECDSA]] as the default signature scheme for P2TR outputs.
-    - Mathematically linear, enabling [[Signature Aggregation]]: multiple parties can produce a single aggregate signature indistinguishable from a single-party signature.
-    - Based on the [[secp256k1]] elliptic curve, the same curve used for all prior [[Bitcoin Network]] signatures.
-    - Enable [[MuSig2]], the two-round interactive protocol for key aggregation, building [[Multi-Signature]] schemes without on-chain indication of the number of participants.
-  - **[[Pay-to-Taproot]] (P2TR) and [[Merkelised Abstract Syntax Tree]] (BIP 341)**
-    - A P2TR output commits to a tweaked public key: Q = P + H(P, m)G, where P is the internal (aggregate) key and m is the root of a [[Merkle Tree]] over all alternative script spending conditions.
-    - Key-path spending: all parties sign with the aggregate key, producing a Schnorr signature. On-chain appearance is identical to a simple single-key spend, providing maximum [[Transaction Privacy]].
-    - Script-path spending: if key-path cooperation fails, the spender reveals only the specific script branch executed and its Merkle proof, not all branches. Unused conditions remain private.
-    - Outputs are SegWit version 1 (bc1p… addresses), building on [[Segregated Witness]] infrastructure.
-  - **[[Tapscript]] (BIP 342)**
-    - A successor scripting language to the existing [[Bitcoin Script]], tuned for Taproot spending conditions.
-    - Redefines opcode semantics for Schnorr signature checking (OP_CHECKSIG, OP_CHECKMULTISIG replaced with OP_CHECKSIGADD).
-    - Enables future script upgrades via OP_SUCCESS opcodes, which always succeed in current execution but can be redefined by future soft forks without breaking existing scripts.
-    - Powers [[Point Time-Locked Contracts]] (PTLCs) as a privacy-preserving alternative to [[Hash Time-Locked Contracts]] (HTLCs) in [[Lightning Network]] payments.
+- Taproot is widely regarded as Bitcoin's most impactful protocol upgrade since [[Segregated Witness]] (SegWit, 2017). Its development was initiated by Gregory Maxwell's 2018 proposal, synthesising years of prior discussion around Schnorr signatures and the MAST concept (first introduced by Johnson Lau in 2016). The three BIPs were refined through 2019–2020 with broad developer participation, and the Speedy Trial activation mechanism achieved miner lock-in in June 2021 ahead of November activation.
+- The central motivation was twofold: privacy and efficiency. Before Taproot, a multi-signature or time-locked output broadcast its entire script on-chain when spent, leaking structural information. With Taproot, cooperative spends — where all participants agree on the outcome — appear identical to ordinary single-key spends, regardless of the complexity of the underlying spending conditions. Uncooperative spends must reveal only the executed script branch, not all branches.
+- Taproot was also notable for its governance significance: unlike the contentious 2017 SegWit activation and the ensuing User Activated Soft Fork (UASF), the Taproot upgrade proceeded with minimal controversy, serving as a reference for future Bitcoin soft-fork governance.
 
-- ### Applications and Use Cases
-  - **[[Lightning Network]] Enhancement**
-    - Taproot channels (announced and deployed incrementally by Lightning implementations) reduce the on-chain footprint of channel open and close transactions by using P2TR outputs.
-    - [[Point Time-Locked Contracts]] replace HTLCs in payment routing, removing the linkability of payments across hops and improving routing privacy.
-  - **[[Taproot Assets]] Protocol**
-    - Developed by Lightning Labs (formerly called Taro), [[Taproot Assets]] leverages MAST commitments to issue fungible tokens and NFTs on Bitcoin, with Lightning-routable transfers.
-    - Anchors asset state in Taproot outputs, inheriting Bitcoin's security model.
-    - Enables stablecoins and other tokenised assets to settle on the [[Lightning Network]].
-  - **[[BitVM]] Computation**
-    - The BitVM paradigm (2023–2024) uses Tapscript's expressiveness to encode arbitrary computation as large Taproot script trees.
-    - Enables optimistic verification of off-chain computations on Bitcoin without a consensus-level hard fork, significantly expanding [[Smart Contracts]] capabilities on the base layer.
-    - Serves as the verification layer for Bitcoin bridges and zkVM rollups.
-  - **[[Multi-Signature]] and Treasury Management**
-    - Enterprises and DAOs use [[MuSig2]] over P2TR outputs for k-of-n co-signers with a single on-chain key, reducing fees and concealing custody architecture.
-    - Hardware wallets (Ledger, Trezor, Coldcard) and software wallets (Bitcoin Core, Sparrow, Wasabi) have progressively adopted P2TR support.
-  - **Privacy-Preserving DeFi Bridges**
-    - Taproot's uniform output appearance reduces heuristic chain-analysis effectiveness, supporting [[Decentralised Finance]] use cases where participants wish to protect their on-chain footprint.
+### Key Components
 
-- ### Mechanisms
-  - **Key Tweaking**
-    - The tweaking formula Q = P + H(P, m)G binds a public key to a MAST root without revealing m unless necessary.
-    - Uses tagged hashes (domain-separated SHA-256 applications) defined in BIP 340 to prevent cross-protocol hash collisions.
-  - **Signature Aggregation via [[MuSig2]]**
-    - Two-round interactive signing: in round one, each signer commits a nonce; in round two, each produces a partial signature. Partial signatures sum to a valid Schnorr aggregate signature.
-    - Reduces n-of-n multisig from n signatures and n public keys to one aggregate key and one signature on-chain.
-  - **MAST Merkle Proof Verification**
-    - Script-path spends include the script leaf, its hash siblings up the [[Merkle Tree]], and the internal key P.
-    - Verification reconstructs the expected tweak and checks that P + H(P, m)G matches the output's key Q.
-  - **OP_SUCCESS Extensibility**
-    - Opcodes in the range 0x50–0xfe that are currently undefined in Tapscript are defined as OP_SUCCESS, making any script containing them immediately valid.
-    - Future soft forks can assign semantics to OP_SUCCESS opcodes (e.g., implementing [[Zero-Knowledge Proof]] verifiers as native opcodes without breaking existing scripts).
+- **[[Schnorr Signatures]] (BIP 340)**
+  - Replace [[ECDSA]] as the default signature scheme for P2TR outputs.
+  - Mathematically linear, enabling [[Signature Aggregation]]: multiple parties can produce a single aggregate signature indistinguishable from a single-party signature.
+  - Based on the [[secp256k1]] elliptic curve, the same curve used for all prior [[Bitcoin Network]] signatures.
+  - Enable [[MuSig2]], the two-round interactive protocol for key aggregation, building [[Multi-Signature]] schemes without on-chain indication of the number of participants.
+- **[[Pay-to-Taproot]] (P2TR) and [[Merkelised Abstract Syntax Tree]] (BIP 341)**
+  - A P2TR output commits to a tweaked public key: Q = P + H(P, m)G, where P is the internal (aggregate) key and m is the root of a [[Merkle Tree]] over all alternative script spending conditions.
+  - Key-path spending: all parties sign with the aggregate key, producing a Schnorr signature. On-chain appearance is identical to a simple single-key spend, providing maximum [[Transaction Privacy]].
+  - Script-path spending: if key-path cooperation fails, the spender reveals only the specific script branch executed and its Merkle proof, not all branches. Unused conditions remain private.
+  - Outputs are SegWit version 1 (bc1p… addresses), building on [[Segregated Witness]] infrastructure.
+- **[[Tapscript]] (BIP 342)**
+  - A successor scripting language to the existing [[Bitcoin Script]], tuned for Taproot spending conditions.
+  - Redefines opcode semantics for Schnorr signature checking (OP_CHECKSIG, OP_CHECKMULTISIG replaced with OP_CHECKSIGADD).
+  - Enables future script upgrades via OP_SUCCESS opcodes, which always succeed in current execution but can be redefined by future soft forks without breaking existing scripts.
+  - Powers [[Point Time-Locked Contracts]] (PTLCs) as a privacy-preserving alternative to [[Hash Time-Locked Contracts]] (HTLCs) in [[Lightning Network]] payments.
 
-- ### Standards and Context
-  - **BIP 340** — Schnorr Signatures for secp256k1 (Pieter Wuille, Jonas Nick, Tim Ruffing)
-  - **BIP 341** — Taproot: SegWit version 1 spending rules (Pieter Wuille, Jonas Nick, Anthony Towns, et al.)
-  - **BIP 342** — Validation of Taproot Scripts / Tapscript (same authors)
-  - Activation: Speedy Trial mechanism (BIP 8 variant with a short signalling window), miner lock-in June 2021, activation November 2021 at block 709,632.
-  - Bitcoin Core versions 0.21.1+ include Taproot activation logic; full wallet support from 22.0+.
-  - The [[Bitcoin Improvement Proposals]] process served as the governance framework; no hard fork or contentious split occurred, distinguishing Taproot's activation from the 2017 SegWit/BCH fork.
-  - Related to Ethereum's EIP process and similar smart-contract upgrade paths, but philosophically distinct: Taproot preserves Bitcoin's UTXO model and does not introduce a general-purpose VM at the consensus layer.
+### Applications and Use Cases
 
-- ### Current Landscape (2026)
-  - Taproot (P2TR) transaction share has fallen sharply from its early-2024 peak of roughly 42-54% (driven by Ordinals inscriptions and the Runes launch) to about 15-22% by early 2026, as inscription demand cooled and users grew wary of its quantum exposure; analyst Willy Woo flagged the decline in late 2025.
-  - Taproot's quantum weakness has become the dominant 2025-2026 discussion: P2TR encodes a 32-byte x-only Schnorr public key directly in the address, so coins are exposed on receipt with no hash protection. Google, Project Eleven and a HRF report estimate roughly 6.5-6.9M BTC (about a third of supply, including ~1.7M in ancient P2PK addresses attributed to Satoshi) sit in quantum-vulnerable outputs.
-  - BIP-360 (Pay-to-Quantum-Resistant-Hash / Pay-to-Merkle-Root, authored by Hunter Beast with Ethan Heilman and Isabel Foxen Duke, first proposed September 2024) was merged into the official Bitcoin Improvement Proposal repository on 11 February 2026. It adds a soft-fork output type on a new SegWit version (addresses prefixed bc1r/bc1z) that commits only to a script Merkle root, removing the vulnerable key-path spend while preserving Taproot's script tree.
-  - BTQ Technologies (Nasdaq: BTQ) shipped the first working BIP-360 implementation on its Bitcoin Quantum testnet v0.3.0 in March 2026, processing 100,000+ blocks with 50+ miners and contributions from 100+ cryptographers; no implementation work has yet begun in Bitcoin Core itself.
-  - A companion proposal, BIP-361 ("Post Quantum Migration and Legacy Signature Sunset", co-authored by Jameson Lopp and others, published 14 April 2026), sets a contentious three-phase timeline that would eventually stop honouring legacy ECDSA/Schnorr spends, potentially freezing non-migrated coins - the flashpoint of current governance debate.
-  - Underpinning the migration path, NIST finalised its three post-quantum standards in August 2024 (including ML-DSA/CRYSTALS-Dilithium), the algorithms BIP-360 successors are expected to adopt for signature verification.
-  - Open challenges as of 2026: no mainnet activation timeline, migration horizons stretching to 2029-2035 (5-10 years), P2MR still cannot defend against short-term mempool exposure attacks without a true PQC signature scheme, and the political question of whether to freeze dormant (including Satoshi-era) coins remains unresolved.
+- **[[Lightning Network]] Enhancement**
+  - Taproot channels (announced and deployed incrementally by Lightning implementations) reduce the on-chain footprint of channel open and close transactions by using P2TR outputs.
+  - [[Point Time-Locked Contracts]] replace HTLCs in payment routing, removing the linkability of payments across hops and improving routing privacy.
+- **[[Taproot Assets]] Protocol**
+  - Developed by Lightning Labs (formerly called Taro), [[Taproot Assets]] leverages MAST commitments to issue fungible tokens and NFTs on Bitcoin, with Lightning-routable transfers.
+  - Anchors asset state in Taproot outputs, inheriting Bitcoin's security model.
+  - Enables stablecoins and other tokenised assets to settle on the [[Lightning Network]].
+- **[[BitVM]] Computation**
+  - The BitVM paradigm (2023–2024) uses Tapscript's expressiveness to encode arbitrary computation as large Taproot script trees.
+  - Enables optimistic verification of off-chain computations on Bitcoin without a consensus-level hard fork, significantly expanding [[Smart Contracts]] capabilities on the base layer.
+  - Serves as the verification layer for Bitcoin bridges and zkVM rollups.
+- **[[Multi-Signature]] and Treasury Management**
+  - Enterprises and DAOs use [[MuSig2]] over P2TR outputs for k-of-n co-signers with a single on-chain key, reducing fees and concealing custody architecture.
+  - Hardware wallets (Ledger, Trezor, Coldcard) and software wallets (Bitcoin Core, Sparrow, Wasabi) have progressively adopted P2TR support.
+- **Privacy-Preserving DeFi Bridges**
+  - Taproot's uniform output appearance reduces heuristic chain-analysis effectiveness, supporting [[Decentralised Finance]] use cases where participants wish to protect their on-chain footprint.
 
-- ### References
-  - 1. Cointelegraph (2026). Bitcoiners To Quantum-Proof BTC 2026: BIP-360, Hash-Based Signatures. https://regional-front.cointelegraph.com/news/bitcoin-quantum-resistant-bip-360-post-quantum-signatures-taproot
-  - 2. Jared Watkins (2026). Bitcoin - Post-Quantum Cryptography Exposure and Migration. https://www.jaredwatkins.com/research/post-quantum-encryption/cryptocurrencies/bitcoin-pqc/
-  - 3. Gate.com (2026). Bitcoin BIP-360 Merge Analysis: The First Technical Defense of the Quantum Era (P2MR Soft Fork). https://www.gate.com/blog/bitcoin-bip-360-merge-quantum-era-technical-defense-p2mr-soft-fork-analysis
-  - 4. crypto.news (2026). Bitcoin is going quantum-proof: Inside BIP-360 and the migration. https://crypto.news/bitcoin-is-going-quantum-proof-inside-bip-360-and-the-migration/
-  - 5. Spark Money (2026). Bitcoin SegWit & Taproot Adoption Tracker. https://www.spark.money/tools/bitcoin-segwit-adoption-tracker
+### Mechanisms
 
-- ### Provenance
+- **Key Tweaking**
+  - The tweaking formula Q = P + H(P, m)G binds a public key to a MAST root without revealing m unless necessary.
+  - Uses tagged hashes (domain-separated SHA-256 applications) defined in BIP 340 to prevent cross-protocol hash collisions.
+- **Signature Aggregation via [[MuSig2]]**
+  - Two-round interactive signing: in round one, each signer commits a nonce; in round two, each produces a partial signature. Partial signatures sum to a valid Schnorr aggregate signature.
+  - Reduces n-of-n multisig from n signatures and n public keys to one aggregate key and one signature on-chain.
+- **MAST Merkle Proof Verification**
+  - Script-path spends include the script leaf, its hash siblings up the [[Merkle Tree]], and the internal key P.
+  - Verification reconstructs the expected tweak and checks that P + H(P, m)G matches the output's key Q.
+- **OP_SUCCESS Extensibility**
+  - Opcodes in the range 0x50–0xfe that are currently undefined in Tapscript are defined as OP_SUCCESS, making any script containing them immediately valid.
+  - Future soft forks can assign semantics to OP_SUCCESS opcodes (e.g., implementing [[Zero-Knowledge Proof]] verifiers as native opcodes without breaking existing scripts).
+
+### Standards and Context
+
+- **BIP 340** — Schnorr Signatures for secp256k1 (Pieter Wuille, Jonas Nick, Tim Ruffing)
+- **BIP 341** — Taproot: SegWit version 1 spending rules (Pieter Wuille, Jonas Nick, Anthony Towns, et al.)
+- **BIP 342** — Validation of Taproot Scripts / Tapscript (same authors)
+- Activation: Speedy Trial mechanism (BIP 8 variant with a short signalling window), miner lock-in June 2021, activation November 2021 at block 709,632.
+- Bitcoin Core versions 0.21.1+ include Taproot activation logic; full wallet support from 22.0+.
+- The [[Bitcoin Improvement Proposals]] process served as the governance framework; no hard fork or contentious split occurred, distinguishing Taproot's activation from the 2017 SegWit/BCH fork.
+- Related to Ethereum's EIP process and similar smart-contract upgrade paths, but philosophically distinct: Taproot preserves Bitcoin's UTXO model and does not introduce a general-purpose VM at the consensus layer.
+
+### Current Landscape (2026)
+
+- Taproot (P2TR) transaction share has fallen sharply from its early-2024 peak of roughly 42-54% (driven by Ordinals inscriptions and the Runes launch) to about 15-22% by early 2026, as inscription demand cooled and users grew wary of its quantum exposure; analyst Willy Woo flagged the decline in late 2025.
+- Taproot's quantum weakness has become the dominant 2025-2026 discussion: P2TR encodes a 32-byte x-only Schnorr public key directly in the address, so coins are exposed on receipt with no hash protection. Google, Project Eleven and a HRF report estimate roughly 6.5-6.9M BTC (about a third of supply, including ~1.7M in ancient P2PK addresses attributed to Satoshi) sit in quantum-vulnerable outputs.
+- BIP-360 (Pay-to-Quantum-Resistant-Hash / Pay-to-Merkle-Root, authored by Hunter Beast with Ethan Heilman and Isabel Foxen Duke, first proposed September 2024) was merged into the official Bitcoin Improvement Proposal repository on 11 February 2026. It adds a soft-fork output type on a new SegWit version (addresses prefixed bc1r/bc1z) that commits only to a script Merkle root, removing the vulnerable key-path spend while preserving Taproot's script tree.
+- BTQ Technologies (Nasdaq: BTQ) shipped the first working BIP-360 implementation on its Bitcoin Quantum testnet v0.3.0 in March 2026, processing 100,000+ blocks with 50+ miners and contributions from 100+ cryptographers; no implementation work has yet begun in Bitcoin Core itself.
+- A companion proposal, BIP-361 ("Post Quantum Migration and Legacy Signature Sunset", co-authored by Jameson Lopp and others, published 14 April 2026), sets a contentious three-phase timeline that would eventually stop honouring legacy ECDSA/Schnorr spends, potentially freezing non-migrated coins - the flashpoint of current governance debate.
+- Underpinning the migration path, NIST finalised its three post-quantum standards in August 2024 (including ML-DSA/CRYSTALS-Dilithium), the algorithms BIP-360 successors are expected to adopt for signature verification.
+- Open challenges as of 2026: no mainnet activation timeline, migration horizons stretching to 2029-2035 (5-10 years), P2MR still cannot defend against short-term mempool exposure attacks without a true PQC signature scheme, and the political question of whether to freeze dormant (including Satoshi-era) coins remains unresolved.
+
+### References
+
+- 1. Cointelegraph (2026). Bitcoiners To Quantum-Proof BTC 2026: BIP-360, Hash-Based Signatures. https://regional-front.cointelegraph.com/news/bitcoin-quantum-resistant-bip-360-post-quantum-signatures-taproot
+- 2. Jared Watkins (2026). Bitcoin - Post-Quantum Cryptography Exposure and Migration. https://www.jaredwatkins.com/research/post-quantum-encryption/cryptocurrencies/bitcoin-pqc/
+- 3. Gate.com (2026). Bitcoin BIP-360 Merge Analysis: The First Technical Defense of the Quantum Era (P2MR Soft Fork). https://www.gate.com/blog/bitcoin-bip-360-merge-quantum-era-technical-defense-p2mr-soft-fork-analysis
+- 4. crypto.news (2026). Bitcoin is going quantum-proof: Inside BIP-360 and the migration. https://crypto.news/bitcoin-is-going-quantum-proof-inside-bip-360-and-the-migration/
+- 5. Spark Money (2026). Bitcoin SegWit & Taproot Adoption Tracker. https://www.spark.money/tools/bitcoin-segwit-adoption-tracker
+
+### Provenance
 

@@ -1,138 +1,144 @@
-
 AI Safety is the interdisciplinary field of research and engineering practice dedicated to ensuring that artificial intelligence systems behave reliably, predictably, and in accordance with human values and intentions across their full operational lifecycle. It addresses near-term concerns such as robustness, distributional shift, and adversarial vulnerability, as well as longer-horizon concerns about advanced systems whose objectives may diverge from human welfare. Core techniques include formal verification of safety properties, interpretability methods that expose model internals, corrigibility mechanisms that preserve human oversight, and red-teaming to surface failure modes before deployment. AI Safety is increasingly embedded in regulatory frameworks and standard-setting processes governing high-risk AI applications.
 
-- ### Semantic Classification
+### Semantic Classification
 
-- ### Content
-  ## Compositional Relationships (Components)
-      SubClassOf(ai:AISafety
-        ObjectSomeValuesFrom(ai:hasPart ai:AIAlignment))
-      SubClassOf(ai:AISafety
-        ObjectSomeValuesFrom(ai:hasPart ai:Interpretability))
-      SubClassOf(ai:AISafety
-        ObjectSomeValuesFrom(ai:hasPart ai:FormalVerification))
-      SubClassOf(ai:AISafety
-        ObjectSomeValuesFrom(ai:hasPart ai:RedTeaming))
-      SubClassOf(ai:AISafety
-        ObjectSomeValuesFrom(ai:hasPart ai:ScalableOversight))
-      SubClassOf(ai:AISafety
-        ObjectSomeValuesFrom(ai:hasPart ai:Corrigibility))
-      SubClassOf(ai:AISafety
-        ObjectSomeValuesFrom(ai:hasPart ai:MechanisticInterpretability))
-  ## Dependency Relationships
-      SubClassOf(ai:AISafety
-        ObjectSomeValuesFrom(ai:requires ai:AIAlignment))
-      SubClassOf(ai:AISafety
-        ObjectSomeValuesFrom(ai:requires ai:Interpretability))
-      SubClassOf(ai:AISafety
-        ObjectSomeValuesFrom(ai:requires ai:FormalVerification))
-      SubClassOf(ai:AISafety
-        ObjectSomeValuesFrom(ai:requires ai:HumanOversight))
-      SubClassOf(ai:AISafety
-        ObjectSomeValuesFrom(ai:requires ai:Robustness))
-  ## Capability Relationships
-      SubClassOf(ai:AISafety
-        ObjectSomeValuesFrom(ai:enables ai:ResponsibleAI))
-      SubClassOf(ai:AISafety
-        ObjectSomeValuesFrom(ai:enables ai:TrustworthyAI))
-      SubClassOf(ai:AISafety
-        ObjectSomeValuesFrom(ai:enables ai:HumanAICollaboration))
-      SubClassOf(ai:AISafety
-        ObjectSomeValuesFrom(ai:enables ai:ModelEvaluation))
-  ## Implementation Relationships
-      SubClassOf(ai:AISafety
-        ObjectSomeValuesFrom(ai:implements ai:ConstitutionalAI))
-      SubClassOf(ai:AISafety
-        ObjectSomeValuesFrom(ai:implements ai:ReinforcementLearningFromHumanFeedback))
-      SubClassOf(ai:AISafety
-        ObjectSomeValuesFrom(ai:implements ai:DirectPreferenceOptimisation))
-      SubClassOf(ai:AISafety
-        ObjectSomeValuesFrom(ai:implements ai:AdversarialMachineLearning))
-  ## Reduction Relationships
-      SubClassOf(ai:AISafety
-        ObjectSomeValuesFrom(ai:reducesTo ai:AIAlignment))
-      SubClassOf(ai:AISafety
-        ObjectSomeValuesFrom(ai:reducesTo ai:Robustness))
-      SubClassOf(ai:AISafety
-        ObjectSomeValuesFrom(ai:reducesTo ai:Corrigibility))
-      SubClassOf(ai:AISafety
-        ObjectSomeValuesFrom(ai:reducesTo ai:FormalVerification))
-      SubClassOf(ai:AISafety
-        ObjectSomeValuesFrom(ai:reducesTo ai:Interpretability))
-  ## Support Relationships
-      SubClassOf(ai:AISafety
-        ObjectSomeValuesFrom(ai:supports ai:ExplainableAI))
-      SubClassOf(ai:AISafety
-        ObjectSomeValuesFrom(ai:supports ai:AIEthics))
-      SubClassOf(ai:AISafety
-        ObjectSomeValuesFrom(ai:supports ai:RiskManagement))
-      SubClassOf(ai:AISafety
-        ObjectSomeValuesFrom(ai:supports ai:AIRegulation))
-  ## Usage Relationships
-      SubClassOf(ai:AISafety
-        ObjectSomeValuesFrom(ai:uses ai:RedTeaming))
-      SubClassOf(ai:AISafety
-        ObjectSomeValuesFrom(ai:uses ai:SparseAutoencoder))
-      SubClassOf(ai:AISafety
-        ObjectSomeValuesFrom(ai:uses ai:AdversarialMachineLearning))
-      SubClassOf(ai:AISafety
-        ObjectSomeValuesFrom(ai:uses ai:ModelEvaluation))
-  ## Parthood Relationships
-      SubClassOf(ai:AISafety
-        ObjectSomeValuesFrom(ai:partOf ai:AIGovernance))
-      SubClassOf(ai:AISafety
-        ObjectSomeValuesFrom(ai:partOf ai:AIGovernanceAndEthics))
+### Content
 
-  ## Key Technical Concepts
+## Compositional Relationships (Components)
+    SubClassOf(ai:AISafety
+      ObjectSomeValuesFrom(ai:hasPart ai:AIAlignment))
+    SubClassOf(ai:AISafety
+      ObjectSomeValuesFrom(ai:hasPart ai:Interpretability))
+    SubClassOf(ai:AISafety
+      ObjectSomeValuesFrom(ai:hasPart ai:FormalVerification))
+    SubClassOf(ai:AISafety
+      ObjectSomeValuesFrom(ai:hasPart ai:RedTeaming))
+    SubClassOf(ai:AISafety
+      ObjectSomeValuesFrom(ai:hasPart ai:ScalableOversight))
+    SubClassOf(ai:AISafety
+      ObjectSomeValuesFrom(ai:hasPart ai:Corrigibility))
+    SubClassOf(ai:AISafety
+      ObjectSomeValuesFrom(ai:hasPart ai:MechanisticInterpretability))
+## Dependency Relationships
+    SubClassOf(ai:AISafety
+      ObjectSomeValuesFrom(ai:requires ai:AIAlignment))
+    SubClassOf(ai:AISafety
+      ObjectSomeValuesFrom(ai:requires ai:Interpretability))
+    SubClassOf(ai:AISafety
+      ObjectSomeValuesFrom(ai:requires ai:FormalVerification))
+    SubClassOf(ai:AISafety
+      ObjectSomeValuesFrom(ai:requires ai:HumanOversight))
+    SubClassOf(ai:AISafety
+      ObjectSomeValuesFrom(ai:requires ai:Robustness))
+## Capability Relationships
+    SubClassOf(ai:AISafety
+      ObjectSomeValuesFrom(ai:enables ai:ResponsibleAI))
+    SubClassOf(ai:AISafety
+      ObjectSomeValuesFrom(ai:enables ai:TrustworthyAI))
+    SubClassOf(ai:AISafety
+      ObjectSomeValuesFrom(ai:enables ai:HumanAICollaboration))
+    SubClassOf(ai:AISafety
+      ObjectSomeValuesFrom(ai:enables ai:ModelEvaluation))
+## Implementation Relationships
+    SubClassOf(ai:AISafety
+      ObjectSomeValuesFrom(ai:implements ai:ConstitutionalAI))
+    SubClassOf(ai:AISafety
+      ObjectSomeValuesFrom(ai:implements ai:ReinforcementLearningFromHumanFeedback))
+    SubClassOf(ai:AISafety
+      ObjectSomeValuesFrom(ai:implements ai:DirectPreferenceOptimisation))
+    SubClassOf(ai:AISafety
+      ObjectSomeValuesFrom(ai:implements ai:AdversarialMachineLearning))
+## Reduction Relationships
+    SubClassOf(ai:AISafety
+      ObjectSomeValuesFrom(ai:reducesTo ai:AIAlignment))
+    SubClassOf(ai:AISafety
+      ObjectSomeValuesFrom(ai:reducesTo ai:Robustness))
+    SubClassOf(ai:AISafety
+      ObjectSomeValuesFrom(ai:reducesTo ai:Corrigibility))
+    SubClassOf(ai:AISafety
+      ObjectSomeValuesFrom(ai:reducesTo ai:FormalVerification))
+    SubClassOf(ai:AISafety
+      ObjectSomeValuesFrom(ai:reducesTo ai:Interpretability))
+## Support Relationships
+    SubClassOf(ai:AISafety
+      ObjectSomeValuesFrom(ai:supports ai:ExplainableAI))
+    SubClassOf(ai:AISafety
+      ObjectSomeValuesFrom(ai:supports ai:AIEthics))
+    SubClassOf(ai:AISafety
+      ObjectSomeValuesFrom(ai:supports ai:RiskManagement))
+    SubClassOf(ai:AISafety
+      ObjectSomeValuesFrom(ai:supports ai:AIRegulation))
+## Usage Relationships
+    SubClassOf(ai:AISafety
+      ObjectSomeValuesFrom(ai:uses ai:RedTeaming))
+    SubClassOf(ai:AISafety
+      ObjectSomeValuesFrom(ai:uses ai:SparseAutoencoder))
+    SubClassOf(ai:AISafety
+      ObjectSomeValuesFrom(ai:uses ai:AdversarialMachineLearning))
+    SubClassOf(ai:AISafety
+      ObjectSomeValuesFrom(ai:uses ai:ModelEvaluation))
+## Parthood Relationships
+    SubClassOf(ai:AISafety
+      ObjectSomeValuesFrom(ai:partOf ai:AIGovernance))
+    SubClassOf(ai:AISafety
+      ObjectSomeValuesFrom(ai:partOf ai:AIGovernanceAndEthics))
 
-  **Near-term safety engineering concerns:**
-  - [[Robustness]] — resistance to input perturbations, adversarial attacks, and distribution shift
-  - [[Distributional Shift]] — degradation when deployment data diverges from training distribution
-  - [[Adversarial Machine Learning]] — crafted inputs that cause targeted mispredictions
-  - Calibration — ensuring stated confidence matches empirical accuracy
-  - Uncertainty quantification — communicating model uncertainty to downstream decision-makers
-  - OOD (out-of-distribution) detection — flagging inputs outside the training support
-  - Output consistency — maintaining consistent behaviour across semantically equivalent inputs
+## Key Technical Concepts
+
+**Near-term safety engineering concerns:**
+
+- [[Robustness]] — resistance to input perturbations, adversarial attacks, and distribution shift
+- [[Distributional Shift]] — degradation when deployment data diverges from training distribution
+- [[Adversarial Machine Learning]] — crafted inputs that cause targeted mispredictions
+- Calibration — ensuring stated confidence matches empirical accuracy
+- Uncertainty quantification — communicating model uncertainty to downstream decision-makers
+- OOD (out-of-distribution) detection — flagging inputs outside the training support
+- Output consistency — maintaining consistent behaviour across semantically equivalent inputs
 
   **[[AI Alignment]] techniques:**
-  - [[Reinforcement Learning from Human Feedback]] (RLHF) — training reward models on human preferences
-  - [[Constitutional AI]] — self-critique and revision against a written set of principles
-  - [[Direct Preference Optimisation]] (DPO) — direct contrastive training without explicit reward model
-  - Debate — two AI agents argue opposing positions, humans judge
-  - Iterated amplification — decomposing difficult tasks into human-evaluable subtasks
-  - [[Scalable Oversight]] — maintaining oversight quality as AI capabilities exceed human evaluation capacity
-  - Weak-to-strong generalisation — using human-level AI to supervise superhuman AI
+
+- [[Reinforcement Learning from Human Feedback]] (RLHF) — training reward models on human preferences
+- [[Constitutional AI]] — self-critique and revision against a written set of principles
+- [[Direct Preference Optimisation]] (DPO) — direct contrastive training without explicit reward model
+- Debate — two AI agents argue opposing positions, humans judge
+- Iterated amplification — decomposing difficult tasks into human-evaluable subtasks
+- [[Scalable Oversight]] — maintaining oversight quality as AI capabilities exceed human evaluation capacity
+- Weak-to-strong generalisation — using human-level AI to supervise superhuman AI
 
   **[[Interpretability]] and [[Mechanistic Interpretability]] tools:**
-  - [[Sparse Autoencoder]] (SAE) decomposition — recovering monosemantic features from polysemantic activations
-  - Circuit analysis — identifying minimal subnetworks responsible for specific behaviours
-  - Probing classifiers — linear probes on internal representations to detect target concepts
-  - Activation patching — causal intervention to isolate components responsible for specific outputs
-  - Logit lens — inspecting model "beliefs" at intermediate layers via unembedding projections
-  - Attention weight visualisation — inspecting information routing through transformer attention heads
+
+- [[Sparse Autoencoder]] (SAE) decomposition — recovering monosemantic features from polysemantic activations
+- Circuit analysis — identifying minimal subnetworks responsible for specific behaviours
+- Probing classifiers — linear probes on internal representations to detect target concepts
+- Activation patching — causal intervention to isolate components responsible for specific outputs
+- Logit lens — inspecting model "beliefs" at intermediate layers via unembedding projections
+- Attention weight visualisation — inspecting information routing through transformer attention heads
 
   **[[Corrigibility]] and control mechanisms:**
-  - Interruptibility — safe policy shutdown without objective frustration
-  - Low-impact objectives — penalising large changes to the world beyond task completion
-  - Conservative planning — preferring reversible actions over irreversible ones
-  - Tripwires — internal monitoring triggers that detect anomalous internal states
-  - Sandboxing — restricting resource access and action space for untrusted models
-  - AI control protocols — arrangements of trusted monitors and untrusted agents with provable safety properties
+
+- Interruptibility — safe policy shutdown without objective frustration
+- Low-impact objectives — penalising large changes to the world beyond task completion
+- Conservative planning — preferring reversible actions over irreversible ones
+- Tripwires — internal monitoring triggers that detect anomalous internal states
+- Sandboxing — restricting resource access and action space for untrusted models
+- AI control protocols — arrangements of trusted monitors and untrusted agents with provable safety properties
 
   **[[Formal Verification]] methods for neural networks:**
-  - SMT (satisfiability modulo theories) solving — Marabou, Reluplex
-  - Abstract interpretation — sound over-approximation of neural network output sets
-  - Linear bound propagation — alpha-beta-CROWN, efficient certified robustness verification
-  - Mixed-integer linear programming (MILP) — exact verification of piecewise-linear networks
-  - Statistical testing — property testing with probabilistic coverage guarantees
+
+- SMT (satisfiability modulo theories) solving — Marabou, Reluplex
+- Abstract interpretation — sound over-approximation of neural network output sets
+- Linear bound propagation — alpha-beta-CROWN, efficient certified robustness verification
+- Mixed-integer linear programming (MILP) — exact verification of piecewise-linear networks
+- Statistical testing — property testing with probabilistic coverage guarantees
 
   **[[Red Teaming]] and [[Model Evaluation]] tools:**
-  - HarmBench — standardised harmful capability evaluation benchmark
-  - WMDP — Weapons of Mass Destruction Proxy benchmark
-  - PAIR (Prompt Automatic Iterative Refinement) — black-box jailbreak attack framework
-  - GCG (Greedy Coordinate Gradient) — white-box adversarial suffix attack
-  - BeaverTails — safety-relevant preference dataset
-  - Inspect / InspectCyber / ControlArena — UK AISI evaluation frameworks
+
+- HarmBench — standardised harmful capability evaluation benchmark
+- WMDP — Weapons of Mass Destruction Proxy benchmark
+- PAIR (Prompt Automatic Iterative Refinement) — black-box jailbreak attack framework
+- GCG (Greedy Coordinate Gradient) — white-box adversarial suffix attack
+- BeaverTails — safety-relevant preference dataset
+- Inspect / InspectCyber / ControlArena — UK AISI evaluation frameworks
 
   ## About
 
@@ -243,27 +249,30 @@ AI Safety is the interdisciplinary field of research and engineering practice de
   ## Key Research Institutions and Organisations
 
   **Technical safety research labs:**
-  - **Anthropic** — AI company with a stated safety mission; developer of [[Constitutional AI]], Responsible Scaling Policy (RSP), and [[Mechanistic Interpretability]] tools. Principal source of Claude model family. Anthropic's safety team publishes externally on interpretability, scalable oversight, and AI control.
-  - **DeepMind Safety** — Research on specification gaming, safe exploration, amplified oversight, and [[Mechanistic Interpretability]]. Developed Gemma Scope interpretability toolkit. Publishes on agent foundations and safe exploration.
-  - **OpenAI Safety** — Preparedness Framework, [[Red Teaming]] programme, [[Scalable Oversight]] research. Developer of InstructGPT (first large-scale [[Reinforcement Learning from Human Feedback]] deployment) and superalignment initiative.
-  - **Apollo Research** — Specialises in [[Model Evaluation]] for deception, situational awareness, and self-preservation behaviours in frontier models. Partners with AISI on pre-deployment evaluations.
-  - **ARC Evals / Alignment Research Center** — Independent evaluation of frontier model dangerous capabilities; evaluation results inform AISI's Inspect framework baseline.
-  - **Redwood Research** — AI control research, shutdown safety valves, and [[Corrigibility]] empirical studies. Published "AI Control: Improving Safety Despite Intentional Subversion" (Greenblatt et al., 2024).
-  - **MIRI (Machine Intelligence Research Institute)** — Foundational mathematical research on agent [[AI Alignment]], logical induction, and embedded agency. Authors of the corrigibility formalisation (Soares et al., 2015).
-  - **Center for AI Safety (CAIS)** — Publishes the Statement on AI Risk (signed by Turing Award winners and AI lab leaders); field-building support for technical and governance safety research.
+
+- **Anthropic** — AI company with a stated safety mission; developer of [[Constitutional AI]], Responsible Scaling Policy (RSP), and [[Mechanistic Interpretability]] tools. Principal source of Claude model family. Anthropic's safety team publishes externally on interpretability, scalable oversight, and AI control.
+- **DeepMind Safety** — Research on specification gaming, safe exploration, amplified oversight, and [[Mechanistic Interpretability]]. Developed Gemma Scope interpretability toolkit. Publishes on agent foundations and safe exploration.
+- **OpenAI Safety** — Preparedness Framework, [[Red Teaming]] programme, [[Scalable Oversight]] research. Developer of InstructGPT (first large-scale [[Reinforcement Learning from Human Feedback]] deployment) and superalignment initiative.
+- **Apollo Research** — Specialises in [[Model Evaluation]] for deception, situational awareness, and self-preservation behaviours in frontier models. Partners with AISI on pre-deployment evaluations.
+- **ARC Evals / Alignment Research Center** — Independent evaluation of frontier model dangerous capabilities; evaluation results inform AISI's Inspect framework baseline.
+- **Redwood Research** — AI control research, shutdown safety valves, and [[Corrigibility]] empirical studies. Published "AI Control: Improving Safety Despite Intentional Subversion" (Greenblatt et al., 2024).
+- **MIRI (Machine Intelligence Research Institute)** — Foundational mathematical research on agent [[AI Alignment]], logical induction, and embedded agency. Authors of the corrigibility formalisation (Soares et al., 2015).
+- **Center for AI Safety (CAIS)** — Publishes the Statement on AI Risk (signed by Turing Award winners and AI lab leaders); field-building support for technical and governance safety research.
 
   **Government and policy bodies:**
-  - **UK AI Security Institute (AISI)** — Government evaluation body for frontier AI safety under DSIT. Operates Inspect, InspectCyber, and ControlArena evaluation frameworks. Published Frontier AI Trends Report (December 2025).
-  - **US AI Safety Institute (NIST)** — US counterpart; co-evaluates frontier models with AISI under bilateral information-sharing agreement. Developed NIST AI RMF and AI 600-1 Generative AI Profile.
-  - **EU AI Office** — EU body responsible for enforcing the [[EU AI Act]]'s general-purpose AI model requirements, including dangerous capability evaluations for frontier models.
-  - **OECD.AI** — International AI policy observatory tracking AI incidents, regulatory developments, and [[AI Safety]] research across member countries.
+
+- **UK AI Security Institute (AISI)** — Government evaluation body for frontier AI safety under DSIT. Operates Inspect, InspectCyber, and ControlArena evaluation frameworks. Published Frontier AI Trends Report (December 2025).
+- **US AI Safety Institute (NIST)** — US counterpart; co-evaluates frontier models with AISI under bilateral information-sharing agreement. Developed NIST AI RMF and AI 600-1 Generative AI Profile.
+- **EU AI Office** — EU body responsible for enforcing the [[EU AI Act]]'s general-purpose AI model requirements, including dangerous capability evaluations for frontier models.
+- **OECD.AI** — International AI policy observatory tracking AI incidents, regulatory developments, and [[AI Safety]] research across member countries.
 
   **Academic centres:**
-  - **Alan Turing Institute / CETaS** — Published International AI Safety Report 2026. National UK AI research body with safety, [[AI Governance]], and defence AI programmes.
-  - **Future of Humanity Institute (Oxford, closed 2024)** — Foundational [[Existential Risk]] and long-horizon AI safety research; successor researchers at Oxford, Anthropic, and independent organisations.
-  - **Cambridge Leverhulme Centre for the Future of Intelligence (CFI)** — Social, ethical, and governance dimensions of AI safety.
-  - **Edinburgh Turing AI Fellowship programme** — UK research fellowship programme supporting [[Trustworthy AI]], [[Robustness]], fairness, and transparency research.
-  - **UKRI TAS Hub (Nottingham lead)** — UK Trustworthy Autonomous Systems hub; five National Research Centres covering safety, reliability, [[Explainable AI]], responsibility, and security across autonomous systems.
+
+- **Alan Turing Institute / CETaS** — Published International AI Safety Report 2026. National UK AI research body with safety, [[AI Governance]], and defence AI programmes.
+- **Future of Humanity Institute (Oxford, closed 2024)** — Foundational [[Existential Risk]] and long-horizon AI safety research; successor researchers at Oxford, Anthropic, and independent organisations.
+- **Cambridge Leverhulme Centre for the Future of Intelligence (CFI)** — Social, ethical, and governance dimensions of AI safety.
+- **Edinburgh Turing AI Fellowship programme** — UK research fellowship programme supporting [[Trustworthy AI]], [[Robustness]], fairness, and transparency research.
+- **UKRI TAS Hub (Nottingham lead)** — UK Trustworthy Autonomous Systems hub; five National Research Centres covering safety, reliability, [[Explainable AI]], responsibility, and security across autonomous systems.
 
   ## Research & Literature
 
@@ -302,5 +311,5 @@ AI Safety is the interdisciplinary field of research and engineering practice de
   33. Cohen, J., Rosenfeld, E., and Kolter, J.Z. (2019). Certified Adversarial Robustness via Randomized Smoothing. ICML 2019.
   34. Madry, A., Makelov, A., Schmidt, L., Tsipras, D., and Vladu, A. (2018). Towards Deep Learning Models Resistant to Adversarial Attacks. ICLR 2018.
 
-- ### Provenance
+### Provenance
 

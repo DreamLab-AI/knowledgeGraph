@@ -1,3 +1,2 @@
-
 Counterfactual reasoning is the process of inferring what would have happened under a hypothetical intervention or alternative set of conditions, contrary to what was actually observed, given a causal model of a system. It sits at the top of Pearl's ladder of causation, above association and intervention, and requires a structural causal model rather than observational data alone to answer 'what if' questions such as the effect of a different action or policy. In machine learning, counterfactual reasoning underpins causal inference methods, explainable AI techniques and world models that must predict consequences of actions not actually taken.
 

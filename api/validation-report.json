@@ -117,16 +117,16 @@
   ],
   "pages_with_ontology": 8446,
   "public_pages": 8432,
-  "total_issues": 31319,
+  "total_issues": 31281,
   "errors": 0,
-  "warnings": 29086,
+  "warnings": 29048,
   "info": 2233,
   "by_code": {
     "DANGLING_LINK": 20559,
     "INVALID_ENUM": 39,
     "MULTI_PARENT": 2233,
     "PUBLIC_LINKS_PRIVATE": 2,
-    "UNTERMINATED_FENCE": 40,
+    "UNTERMINATED_FENCE": 2,
     "UNVERIFIED_STABLE": 8446
   },
   "issues": []

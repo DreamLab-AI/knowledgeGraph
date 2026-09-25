@@ -1,17 +1,17 @@
-
 The inherent transparency and understandability of a machine learning model's architecture and decision-making process, achieved through model design rather than external explanation techniques, enabling direct human comprehension without additional interpretability methods.
 
-- ### Semantic Classification
+### Semantic Classification
 
-- ### Content
-  - The inherent transparency and understandability of a machine learning model's architecture and decision-making process, achieved through model design rather than external explanation techniques, enabling direct human comprehension without additional interpretability methods.
+### Content
+
+- The inherent transparency and understandability of a machine learning model's architecture and decision-making process, achieved through model design rather than external explanation techniques, enabling direct human comprehension without additional interpretability methods.
 
   ## Related Terms
 
-  - **Broader**: [[Interpretable AI]], [[Model Interpretability]]
-  - **Narrower**: [[Decision Tree Approximation]], [[Rule Extraction]]
-  - **Related**: [[Explainable AI]], [[Model Transparency]]
-  - **Contrasts**: [[Post Hoc Explanation]], [[Black Box Model]]
+- **Broader**: [[Interpretable AI]], [[Model Interpretability]]
+- **Narrower**: [[Decision Tree Approximation]], [[Rule Extraction]]
+- **Related**: [[Explainable AI]], [[Model Transparency]]
+- **Contrasts**: [[Post Hoc Explanation]], [[Black Box Model]]
 
   ## Formal Specification
 
@@ -26,33 +26,35 @@ The inherent transparency and understandability of a machine learning model's ar
 
   A model `f: X → Y` has intrinsic interpretability if:
 
-  ```
-  ∀x ∈ X, reasoning(f, x) is directly observable from f's structure
-  ```
+```
+∀x ∈ X, reasoning(f, x) is directly observable from f's structure
+```
 
-  Where `reasoning(f, x)` represents the decision pathway from input to output.
+Where `reasoning(f, x)` represents the decision pathway from input to output.
 
-  ## Intrinsically Interpretable Models
+## Intrinsically Interpretable Models
 
-  ### Linear Models
+### Linear Models
 
-  #### Linear Regression
+#### Linear Regression
 
-  **Form**:
-  ```
-  y = β₀ + β₁x₁ + β₂x₂ + ... + βₙxₙ + ε
-  ```
+**Form**:
+```
+y = β₀ + β₁x₁ + β₂x₂ + ... + βₙxₙ + ε
+```
 
-  **Interpretability Properties**:
-  - **Coefficients** (βᵢ): Direct feature importance
-  - **Additive effects**: Marginal contribution of each feature
-  - **Sign**: Positive/negative relationship direction
-  - **Magnitude**: Relative influence strength
+**Interpretability Properties**:
+
+- **Coefficients** (βᵢ): Direct feature importance
+- **Additive effects**: Marginal contribution of each feature
+- **Sign**: Positive/negative relationship direction
+- **Magnitude**: Relative influence strength
 
   **Limitations**:
-  - Assumes linear relationships
-  - Feature interactions require explicit engineering
-  - Sensitive to multicollinearity
+
+- Assumes linear relationships
+- Feature interactions require explicit engineering
+- Sensitive to multicollinearity
 
   #### Logistic Regression
 
@@ -62,15 +64,17 @@ The inherent transparency and understandability of a machine learning model's ar
   ```
 
   **Interpretability**:
-  - **Coefficients**: Log-odds ratios
-  - **Odds Ratio**: e^(βᵢ) for unit increase in feature
-  - **Probability**: Direct probabilistic interpretation
-  - **Decision Boundary**: Linear hyperplane
+
+- **Coefficients**: Log-odds ratios
+- **Odds Ratio**: e^(βᵢ) for unit increase in feature
+- **Probability**: Direct probabilistic interpretation
+- **Decision Boundary**: Linear hyperplane
 
   **Use Cases**:
-  - Medical diagnosis (interpretable risk scores)
-  - Credit scoring (regulatory compliance)
-  - Binary classification with transparency requirements
+
+- Medical diagnosis (interpretable risk scores)
+- Credit scoring (regulatory compliance)
+- Binary classification with transparency requirements
 
   ### Tree-Based Models
 
@@ -82,20 +86,23 @@ The inherent transparency and understandability of a machine learning model's ar
   ```
 
   **Interpretability Properties**:
-  - **Path-based reasoning**: Explicit if-then rules
-  - **Feature selection**: Only relevant features used
-  - **Non-linear boundaries**: Piecewise constant approximations
-  - **Visualisable**: Graphical tree representation
+
+- **Path-based reasoning**: Explicit if-then rules
+- **Feature selection**: Only relevant features used
+- **Non-linear boundaries**: Piecewise constant approximations
+- **Visualisable**: Graphical tree representation
 
   **Advantages**:
-  - No feature scaling required
-  - Handles mixed data types
-  - Captures feature interactions implicitly
+
+- No feature scaling required
+- Handles mixed data types
+- Captures feature interactions implicitly
 
   **Disadvantages**:
-  - High variance (instability)
-  - Greedy splitting (suboptimal)
-  - Depth-complexity trade-off
+
+- High variance (instability)
+- Greedy splitting (suboptimal)
+- Depth-complexity trade-off
 
   #### Rule Sets
 
@@ -105,15 +112,17 @@ The inherent transparency and understandability of a machine learning model's ar
   ```
 
   **Examples**:
-  - **RuleFit**: Extract rules from tree ensembles
-  - **Skope-rules**: Supervised rule induction
-  - **OneR**: Single-feature rule classification
+
+- **RuleFit**: Extract rules from tree ensembles
+- **Skope-rules**: Supervised rule induction
+- **OneR**: Single-feature rule classification
 
   **Interpretability**:
-  - Explicit logical conditions
-  - Human-readable statements
-  - Easy audit and verification
-  - Domain expert validation
+
+- Explicit logical conditions
+- Human-readable statements
+- Easy audit and verification
+- Domain expert validation
 
   ### Generalised Additive Models (GAMs)
 
@@ -123,19 +132,22 @@ The inherent transparency and understandability of a machine learning model's ar
   ```
 
   **Interpretability**:
-  - **Additive structure**: Isolates individual feature effects
-  - **Shape functions** (fᵢ): Non-linear but visualisable
-  - **No interaction terms** (in basic GAM): Simplifies understanding
-  - **Partial dependence**: Direct from shape functions
+
+- **Additive structure**: Isolates individual feature effects
+- **Shape functions** (fᵢ): Non-linear but visualisable
+- **No interaction terms** (in basic GAM): Simplifies understanding
+- **Partial dependence**: Direct from shape functions
 
   **Modern Extensions**:
-  - **GA²M**: Pairwise interactions allowed
-  - **EBM (Explainable Boosting Machines)**: Bagged GAMs with interactions
+
+- **GA²M**: Pairwise interactions allowed
+- **EBM (Explainable Boosting Machines)**: Bagged GAMs with interactions
 
   **Applications**:
-  - Healthcare risk models (Caruana et al., 2015)
-  - Ecological modelling
-  - Econometric analysis
+
+- Healthcare risk models (Caruana et al., 2015)
+- Ecological modelling
+- Econometric analysis
 
   ### Sparse Linear Models
 
@@ -147,14 +159,16 @@ The inherent transparency and understandability of a machine learning model's ar
   ```
 
   **Interpretability Benefits**:
-  - **Automatic feature selection**: L1 penalty induces sparsity
-  - **Reduced dimensionality**: Fewer features to interpret
-  - **Simplified coefficients**: Only non-zero features considered
+
+- **Automatic feature selection**: L1 penalty induces sparsity
+- **Reduced dimensionality**: Fewer features to interpret
+- **Simplified coefficients**: Only non-zero features considered
 
   **Trade-offs**:
-  - May exclude correlated but relevant features
-  - Regularisation parameter tuning required
-  - Less stable than Ridge regression
+
+- May exclude correlated but relevant features
+- Regularisation parameter tuning required
+- Less stable than Ridge regression
 
   ### Prototype-Based Models
 
@@ -166,26 +180,30 @@ The inherent transparency and understandability of a machine learning model's ar
   ```
 
   **Interpretability**:
-  - **Instance-based**: Predictions explained by training examples
-  - **Similarity reasoning**: Nearest neighbours justify classification
-  - **No model parameters**: Directly uses training data
+
+- **Instance-based**: Predictions explained by training examples
+- **Similarity reasoning**: Nearest neighbours justify classification
+- **No model parameters**: Directly uses training data
 
   **Limitations**:
-  - Curse of dimensionality
-  - Computationally expensive at scale
-  - Requires meaningful distance metric
+
+- Curse of dimensionality
+- Computationally expensive at scale
+- Requires meaningful distance metric
 
   #### Case-Based Reasoning
 
   **Mechanism**:
-  - Retrieve similar past cases
-  - Adapt solution to current problem
-  - Store new case for future use
+
+- Retrieve similar past cases
+- Adapt solution to current problem
+- Store new case for future use
 
   **Transparency**:
-  - Explicit precedent-based reasoning
-  - Analogical explanation
-  - Traceable decision provenance
+
+- Explicit precedent-based reasoning
+- Analogical explanation
+- Traceable decision provenance
 
   ## Key Properties
 
@@ -194,14 +212,16 @@ The inherent transparency and understandability of a machine learning model's ar
   **Definition**: Can a human mentally simulate the model's operation?
 
   **Characteristics**:
-  - **Low complexity**: Limited depth/parameters
-  - **Transparent operations**: Understandable transformations
-  - **Traceable paths**: Follow decision logic manually
+
+- **Low complexity**: Limited depth/parameters
+- **Transparent operations**: Understandable transformations
+- **Traceable paths**: Follow decision logic manually
 
   **Examples**:
-  - Small decision trees (depth ≤ 5)
-  - Linear models with few features (< 10)
-  - Simple rule sets (< 20 rules)
+
+- Small decision trees (depth ≤ 5)
+- Linear models with few features (< 10)
+- Simple rule sets (< 20 rules)
 
   ### Decomposability
 
@@ -213,18 +233,20 @@ The inherent transparency and understandability of a machine learning model's ar
   3. **Algorithmic transparency**: Learning algorithm is understandable
 
   **Example** (Linear Regression):
-  - **Inputs**: Named features (age, income, etc.)
-  - **Parameters**: Coefficients with clear interpretation
-  - **Algorithm**: Ordinary least squares (closed-form solution)
+
+- **Inputs**: Named features (age, income, etc.)
+- **Parameters**: Coefficients with clear interpretation
+- **Algorithm**: Ordinary least squares (closed-form solution)
 
   ### Monotonicity
 
   **Definition**: Does the model preserve expected monotonic relationships?
 
   **Enforcement**:
-  - **Monotonic constraints**: Explicit in some frameworks (XGBoost)
-  - **Domain knowledge**: Ensures sensible behaviour
-  - **Regulatory compliance**: Required in some sectors (finance)
+
+- **Monotonic constraints**: Explicit in some frameworks (XGBoost)
+- **Domain knowledge**: Ensures sensible behaviour
+- **Regulatory compliance**: Required in some sectors (finance)
 
   **Example**:
   Credit scoring where higher income monotonically increases creditworthiness (all else equal).
@@ -241,39 +263,42 @@ The inherent transparency and understandability of a machine learning model's ar
 
   **Selection Matrix**:
 
-  | Model Type | Complexity | Accuracy | Interpretability | Use Case |
-  |------------|------------|----------|------------------|----------|
-  | Linear Regression | Low | Moderate | Very High | Baseline, regulated |
-  | Decision Tree | Low-Medium | Moderate | High | Exploratory, small data |
-  | GAM | Medium | High | High | Healthcare, ecology |
-  | Sparse Linear | Low | Moderate-High | Very High | High-dimensional, sparse |
-  | Small Neural Net | Medium | High | Medium | Moderate complexity |
+| Model Type | Complexity | Accuracy | Interpretability | Use Case |
+|------------|------------|----------|------------------|----------|
+| Linear Regression | Low | Moderate | Very High | Baseline, regulated |
+| Decision Tree | Low-Medium | Moderate | High | Exploratory, small data |
+| GAM | Medium | High | High | Healthcare, ecology |
+| Sparse Linear | Low | Moderate-High | Very High | High-dimensional, sparse |
+| Small Neural Net | Medium | High | Medium | Moderate complexity |
 
-  ### Complexity Constraints
+### Complexity Constraints
 
-  **Tree Depth Limitation**:
-  ```python
-  DecisionTreeClassifier(max_depth=5, max_leaf_nodes=32)
-  ```
-  - Enforces simulatability
-  - Prevents overfitting
-  - Maintains visualisability
+**Tree Depth Limitation**:
+```python
+DecisionTreeClassifier(max_depth=5, max_leaf_nodes=32)
+```
+
+- Enforces simulatability
+- Prevents overfitting
+- Maintains visualisability
 
   **Feature Sparsity**:
   ```python
   LassoCV(alpha=0.1)  # Stronger penalty → fewer features
   ```
-  - Reduces cognitive load
-  - Focuses on primary drivers
-  - Simplifies validation
+
+- Reduces cognitive load
+- Focuses on primary drivers
+- Simplifies validation
 
   **Interaction Constraints**:
   ```python
   ExplainableBoostingClassifier(max_interaction_bins=8)
   ```
-  - Limits pairwise interactions
-  - Balances accuracy and interpretability
-  - Controlled complexity growth
+
+- Limits pairwise interactions
+- Balances accuracy and interpretability
+- Controlled complexity growth
 
   ### Hybrid Approaches
 
@@ -281,112 +306,130 @@ The inherent transparency and understandability of a machine learning model's ar
   ```
   Train complex model (teacher) → Train simple model (student) to mimic teacher
   ```
-  - Preserves much of teacher accuracy
-  - Gains student interpretability
-  - Deployed student model is intrinsically interpretable
+
+- Preserves much of teacher accuracy
+- Gains student interpretability
+- Deployed student model is intrinsically interpretable
 
   **Modular Architecture**:
-  - **Interpretable components**: Critical decision-making
-  - **Black-box components**: Feature extraction/representation
-  - **Clear interfaces**: Explicit handoffs between modules
+
+- **Interpretable components**: Critical decision-making
+- **Black-box components**: Feature extraction/representation
+- **Clear interfaces**: Explicit handoffs between modules
 
   ## Application Domains
 
   ### Healthcare
 
   **Requirements**:
-  - Clinical validation by physicians
-  - Patient informed consent
-  - Regulatory approval (IEEE P2802, FDA)
+
+- Clinical validation by physicians
+- Patient informed consent
+- Regulatory approval (IEEE P2802, FDA)
 
   **Preferred Models**:
-  - Logistic regression (risk scores)
-  - Decision trees (diagnostic flowcharts)
-  - GAMs (disease risk models)
+
+- Logistic regression (risk scores)
+- Decision trees (diagnostic flowcharts)
+- GAMs (disease risk models)
 
   **Examples**:
-  - Pneumonia risk prediction (Caruana et al., 2015)
-  - Sepsis detection (Henry et al., 2015)
-  - Stroke risk assessment (Framingham Risk Score)
+
+- Pneumonia risk prediction (Caruana et al., 2015)
+- Sepsis detection (Henry et al., 2015)
+- Stroke risk assessment (Framingham Risk Score)
 
   ### Finance
 
   **Regulatory Context**:
-  - Fair lending laws (Equal Credit Opportunity Act)
-  - GDPR Article 22 (right to explanation)
-  - Model risk management (SR 11-7)
+
+- Fair lending laws (Equal Credit Opportunity Act)
+- GDPR Article 22 (right to explanation)
+- Model risk management (SR 11-7)
 
   **Model Choices**:
-  - Logistic regression (credit scoring)
-  - Scorecard models (rule-based)
-  - Linear models (stress testing)
+
+- Logistic regression (credit scoring)
+- Scorecard models (rule-based)
+- Linear models (stress testing)
 
   **Compliance**:
-  - Transparent adverse action explanations
-  - Auditability for regulators
-  - Bias detection and mitigation
+
+- Transparent adverse action explanations
+- Auditability for regulators
+- Bias detection and mitigation
 
   ### Criminal Justice
 
   **Ethical Requirements**:
-  - Due process considerations
-  - Avoiding discriminatory proxies
-  - Judicial review capability
+
+- Due process considerations
+- Avoiding discriminatory proxies
+- Judicial review capability
 
   **Deployed Systems**:
-  - **COMPAS**: Risk assessment for recidivism (controversial)
-  - **PSA (Public Safety Assessment)**: Pretrial risk evaluation
-  - **PATTERN**: Federal sentencing tool
+
+- **COMPAS**: Risk assessment for recidivism (controversial)
+- **PSA (Public Safety Assessment)**: Pretrial risk evaluation
+- **PATTERN**: Federal sentencing tool
 
   **Concerns**:
-  - Black-box COMPAS sparked calls for interpretability
-  - Trade-off between accuracy and fairness
-  - Judicial understanding requirement
+
+- Black-box COMPAS sparked calls for interpretability
+- Trade-off between accuracy and fairness
+- Judicial understanding requirement
 
   ## Standards & Compliance
 
   ### IEEE Standards
 
   **IEEE P2976 (XAI)**:
-  - Intrinsic interpretability as "strongly explainable AI"
-  - Highest tier in XAI classification
-  - Comprehensive explanation without auxiliary methods
+
+- Intrinsic interpretability as "strongly explainable AI"
+- Highest tier in XAI classification
+- Comprehensive explanation without auxiliary methods
 
   **IEEE 7001-2021 (Transparency)**:
-  - Intrinsic models meet purpose, process, and performance transparency
-  - Clear algorithmic transparency dimension
-  - Stakeholder-appropriate explanations
+
+- Intrinsic models meet purpose, process, and performance transparency
+- Clear algorithmic transparency dimension
+- Stakeholder-appropriate explanations
 
   **IEEE P2863 (Governance)**:
-  - Intrinsic interpretability for organisational accountability
-  - Substantive governance requirement satisfaction
-  - Simplified compliance auditing
+
+- Intrinsic interpretability for organisational accountability
+- Substantive governance requirement satisfaction
+- Simplified compliance auditing
 
   ### Industry Guidelines
 
   **Model Cards** (Mitchell et al., 2019):
-  - Document intrinsic interpretability properties
-  - Specify model architecture simplicity
-  - Disclose interpretability-accuracy trade-offs
+
+- Document intrinsic interpretability properties
+- Specify model architecture simplicity
+- Disclose interpretability-accuracy trade-offs
 
   **Responsible AI Maturity Model**:
-  - Intrinsic interpretability as gold standard
-  - Preferred for high-stakes applications
-  - Reduced reliance on post-hoc techniques
+
+- Intrinsic interpretability as gold standard
+- Preferred for high-stakes applications
+- Reduced reliance on post-hoc techniques
 
   ## Evaluation Metrics
 
   ### Complexity Measures
 
   **Model Size**:
-  - **Parameters**: Number of coefficients/weights
-  - **Tree metrics**: Depth, number of leaves, number of nodes
-  - **Rule count**: Total rules in rule set
+
+- **Parameters**: Number of coefficients/weights
+- **Tree metrics**: Depth, number of leaves, number of nodes
+- **Rule count**: Total rules in rule set
 
   **Cognitive Load**:
-  - **Simulatability threshold**: Can expert mentally simulate?
-  - **Explanation length**: Words/symbols needed to describe
-  - **Decision path length**: Steps from input to output
+
+- **Simulatability threshold**: Can expert mentally simulate?
+- **Explanation length**: Words/symbols needed to describe
+- **Decision path length**: Steps from input to output
 
   ### Performance Metrics
 
@@ -394,86 +437,99 @@ The inherent transparency and understandability of a machine learning model's ar
   ```
   Δ Accuracy = Accuracy(complex model) - Accuracy(interpretable model)
   ```
-  - Quantifies interpretability cost
-  - Informs model selection
-  - Context-dependent tolerance
+
+- Quantifies interpretability cost
+- Informs model selection
+- Context-dependent tolerance
 
   **Fidelity** (for surrogate approaches):
   ```
   Fidelity = Agreement(interpretable model, complex model)
   ```
-  - Measures approximation quality
-  - Validates distillation success
-  - Ensures explanation accuracy
+
+- Measures approximation quality
+- Validates distillation success
+- Ensures explanation accuracy
 
   ## Challenges & Limitations
 
   ### Expressiveness Constraints
 
   **Linear Assumptions**:
-  - Real-world relationships often non-linear
-  - Interaction effects require explicit engineering
-  - May underfit complex data
+
+- Real-world relationships often non-linear
+- Interaction effects require explicit engineering
+- May underfit complex data
 
   **Complexity-Accuracy Trade-off**:
-  - Intrinsically interpretable models typically less accurate
-  - Performance gap varies by domain
-  - Modern methods (EBM) narrow gap but don't eliminate
+
+- Intrinsically interpretable models typically less accurate
+- Performance gap varies by domain
+- Modern methods (EBM) narrow gap but don't eliminate
 
   ### Scalability Issues
 
   **High-Dimensional Data**:
-  - Visualisation challenges beyond 3D
-  - Feature selection becomes critical
-  - Curse of dimensionality for k-NN
+
+- Visualisation challenges beyond 3D
+- Feature selection becomes critical
+- Curse of dimensionality for k-NN
 
   **Computational Efficiency**:
-  - Decision trees slow to train at scale
-  - k-NN expensive at inference
-  - GAMs require iterative fitting
+
+- Decision trees slow to train at scale
+- k-NN expensive at inference
+- GAMs require iterative fitting
 
   ### Human Factors
 
   **Illusion of Understanding**:
-  - Simple models may appear more trustworthy than warranted
-  - Over-confidence in interpretability
-  - Neglect of model limitations
+
+- Simple models may appear more trustworthy than warranted
+- Over-confidence in interpretability
+- Neglect of model limitations
 
   **Expertise Dependency**:
-  - Domain knowledge required for validation
-  - Statistical literacy for coefficient interpretation
-  - Context-specific understanding
+
+- Domain knowledge required for validation
+- Statistical literacy for coefficient interpretation
+- Context-specific understanding
 
   ## Research Directions
 
   ### Emerging Models
 
   **Neural Additive Models (NAMs)**:
-  - Neural networks with GAM-like additive structure
-  - Learned shape functions via MLPs
-  - Higher capacity than linear GAMs
+
+- Neural networks with GAM-like additive structure
+- Learned shape functions via MLPs
+- Higher capacity than linear GAMs
 
   **Concept Bottleneck Models**:
-  - Intermediate layer representing human-understandable concepts
-  - Explicit concept-based reasoning
-  - Interventional debugging capability
+
+- Intermediate layer representing human-understandable concepts
+- Explicit concept-based reasoning
+- Interventional debugging capability
 
   **Monotonic Neural Networks**:
-  - Constrained architectures preserving monotonicity
-  - Lattice-based models (TensorFlow Lattice)
-  - Domain knowledge integration
+
+- Constrained architectures preserving monotonicity
+- Lattice-based models (TensorFlow Lattice)
+- Domain knowledge integration
 
   ### Theoretical Advances
 
   **Interpretability Bounds**:
-  - Formalising accuracy-interpretability trade-off
-  - Characterising minimum complexity for task
-  - Information-theoretic frameworks
+
+- Formalising accuracy-interpretability trade-off
+- Characterising minimum complexity for task
+- Information-theoretic frameworks
 
   **Causally Interpretable Models**:
-  - Structural causal models
-  - Counterfactual reasoning
-  - Interventional predictions
+
+- Structural causal models
+- Counterfactual reasoning
+- Interventional predictions
 
   ## Best Practices
 
@@ -487,36 +543,42 @@ The inherent transparency and understandability of a machine learning model's ar
   ### Development Workflow
 
   **Pre-training**:
-  - Engineer interpretable features
-  - Consult domain experts
-  - Define complexity budget
+
+- Engineer interpretable features
+- Consult domain experts
+- Define complexity budget
 
   **Training**:
-  - Apply regularisation/constraints
-  - Monitor complexity metrics
-  - Validate against interpretable baseline
+
+- Apply regularisation/constraints
+- Monitor complexity metrics
+- Validate against interpretable baseline
 
   **Post-training**:
-  - Expert review of learned model
-  - Sanity checks on parameters/rules
-  - User testing for comprehensibility
+
+- Expert review of learned model
+- Sanity checks on parameters/rules
+- User testing for comprehensibility
 
   ### Deployment Guidelines
 
   **Documentation**:
-  - Explicit model architecture description
-  - Parameter/rule interpretation guide
-  - Known limitations disclosure
+
+- Explicit model architecture description
+- Parameter/rule interpretation guide
+- Known limitations disclosure
 
   **Monitoring**:
-  - Track model complexity over time (retraining)
-  - Monitor for interpretability degradation
-  - User feedback on understandability
+
+- Track model complexity over time (retraining)
+- Monitor for interpretability degradation
+- User feedback on understandability
 
   **Maintenance**:
-  - Periodic expert validation
-  - Recalibrate as needed
-  - Update documentation with learnings
 
-- ### Provenance
+- Periodic expert validation
+- Recalibrate as needed
+- Update documentation with learnings
+
+### Provenance
 

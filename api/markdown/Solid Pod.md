@@ -1,19 +1,18 @@
-
 A Solid Pod (Personal Online Data store) is a W3C Linked Data Platform-compliant personal data vault that gives individuals and organisations sovereign control over their own data by hosting it at a user-chosen location and exposing it through a standards-based access control layer (WAC or ACP), ...
 
-- ### Semantic Classification
+### Semantic Classification
 
-- ### Content
+### Content
 
-  The Solid project was initiated by Sir Tim Berners-Lee at MIT in 2016 as a corrective to the data-silo model of the commercial web, where user data is hosted, owned, and monetised by application providers. The core insight is simple: if data is stored in a standardised personal vault (the Pod) rather than inside individual applications, then applications become thin clients that request access to the data they need. Users grant and revoke access at granular resource level — sharing a health profile with a GP application without exposing financial records, for instance — and can switch applications without losing their data.
+The Solid project was initiated by Sir Tim Berners-Lee at MIT in 2016 as a corrective to the data-silo model of the commercial web, where user data is hosted, owned, and monetised by application providers. The core insight is simple: if data is stored in a standardised personal vault (the Pod) rather than inside individual applications, then applications become thin clients that request access to the data they need. Users grant and revoke access at granular resource level — sharing a health profile with a GP application without exposing financial records, for instance — and can switch applications without losing their data.
 
-  #### Key Characteristics
+#### Key Characteristics
 
-  - **Linked Data Platform Compliance**: Every Solid Pod exposes an HTTP interface following the [[W3C Linked Data Platform]] specification; resources are RDF documents (Turtle, JSON-LD, or RDF/XML), and containers behave like directories with `ldp:contains` membership triples.
-  - **WebID Identity**: Pod owners are identified by a [[WebID]] — a dereferenceable HTTP URI pointing to an RDF profile document listing their public key, display name, and preferred contact channels.
-  - **Fine-Grained Access Control**: The [[Web Access Control]] (WAC) standard uses ACL resources (`.acl` files) to express read/write/append/control permissions per agent, per authenticated group, or for the public. The newer [[Access Control Policy]] (ACP) standard offers attribute-based access control with more expressive policy composition.
-  - **Application Interoperability**: Because all apps read from and write to the same RDF schemas (schema.org, vCard, FOAF, Solid Application Interoperability Spec panels), data created by one app is reusable by any other without ETL pipelines.
-  - **Self-Hosted or Managed**: Users can host a Pod on their own server (Community Solid Server, Node Solid Server) or use managed pod providers (Inrupt, solidcommunity.net), retaining the ability to migrate by copying files.
+- **Linked Data Platform Compliance**: Every Solid Pod exposes an HTTP interface following the [[W3C Linked Data Platform]] specification; resources are RDF documents (Turtle, JSON-LD, or RDF/XML), and containers behave like directories with `ldp:contains` membership triples.
+- **WebID Identity**: Pod owners are identified by a [[WebID]] — a dereferenceable HTTP URI pointing to an RDF profile document listing their public key, display name, and preferred contact channels.
+- **Fine-Grained Access Control**: The [[Web Access Control]] (WAC) standard uses ACL resources (`.acl` files) to express read/write/append/control permissions per agent, per authenticated group, or for the public. The newer [[Access Control Policy]] (ACP) standard offers attribute-based access control with more expressive policy composition.
+- **Application Interoperability**: Because all apps read from and write to the same RDF schemas (schema.org, vCard, FOAF, Solid Application Interoperability Spec panels), data created by one app is reusable by any other without ETL pipelines.
+- **Self-Hosted or Managed**: Users can host a Pod on their own server (Community Solid Server, Node Solid Server) or use managed pod providers (Inrupt, solidcommunity.net), retaining the ability to migrate by copying files.
 
   #### How It Works
 
@@ -31,11 +30,11 @@ A Solid Pod (Personal Online Data store) is a W3C Linked Data Platform-compliant
 
   #### Standards and References
 
-  - Mansour, E., et al. (2016). "A Demonstration of the Solid Platform for Social Web Applications." *WWW 2016 Companion*.
-  - W3C. (2022). *Solid Protocol*. https://solidproject.org/TR/protocol
-  - W3C. (2013). *Linked Data Platform 1.0*. https://www.w3.org/TR/ldp/
-  - Sambra, A., et al. (2016). *Solid: A Platform for Decentralised Social Applications Based on Linked Data*. MIT CSAIL Technical Report.
-  - Solid Application Interoperability Panel. (2025). *Solid Application Interoperability Specification*. https://solid.github.io/data-interoperability-panel/
+- Mansour, E., et al. (2016). "A Demonstration of the Solid Platform for Social Web Applications." *WWW 2016 Companion*.
+- W3C. (2022). *Solid Protocol*. https://solidproject.org/TR/protocol
+- W3C. (2013). *Linked Data Platform 1.0*. https://www.w3.org/TR/ldp/
+- Sambra, A., et al. (2016). *Solid: A Platform for Decentralised Social Applications Based on Linked Data*. MIT CSAIL Technical Report.
+- Solid Application Interoperability Panel. (2025). *Solid Application Interoperability Specification*. https://solid.github.io/data-interoperability-panel/
 
-- ### Provenance
+### Provenance
 

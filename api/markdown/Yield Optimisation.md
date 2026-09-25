@@ -1,3 +1,2 @@
-
 Yield optimisation is the automated process of allocating deposited capital across decentralised finance protocols and strategies to maximise risk-adjusted returns, typically by continuously monitoring yield rates, harvesting rewards and rebalancing positions between lending markets, liquidity pools and staking contracts. It is the strategic objective that yield aggregators and vaults implement on a user's behalf, reducing the manual effort and gas cost of chasing the best available rate. Yield optimisation strategies must balance expected return against smart-contract risk, impermanent loss and reward-token volatility.
 

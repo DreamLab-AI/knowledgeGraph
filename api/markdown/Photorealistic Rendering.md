@@ -1,98 +1,132 @@
-
 Photorealistic Rendering is the computational process of generating images from 3D scene descriptions that are visually indistinguishable from photographs, achieved through physically accurate simulation of light transport, material properties, camera optics, and atmospheric phenomena. Core algorithms include path tracing and bidirectional path tracing, which apply Monte Carlo integration over the rendering equation to compute global illumination, caustics, subsurface scattering, and volumetric effects. Modern implementations leverage GPU hardware ray-tracing acceleration, physically based rendering (PBR) material models such as the Cook-Torrance BRDF, and AI-driven denoising to make high-fidelity output feasible in interactive and real-time contexts. Photorealistic rendering underpins digital twin visualisation, cinematic virtual production, immersive XR experiences, and AI-generated synthetic training data.
 
-- ### Overview
-  - Photorealistic rendering has evolved from purely offline, CPU-bound batch processes used in feature film production into a discipline that now spans real-time interactive applications, leveraging decades of research in light simulation, hardware acceleration, and statistical sampling.
-  - The driving objective is perceptual fidelity: rendered images should match what a camera would capture if the scene existed physically, including specular highlights, interreflections, colour bleeding, depth-of-field blur, and lens flares.
-  - The discipline sits at the intersection of physics (radiometry, optics), mathematics (Monte Carlo methods, numerical integration), and computer science (data structures for acceleration, GPU programming, AI inference).
-  - Importance in spatial computing contexts has grown substantially as [[Mixed Reality]] and [[Digital Twin]] applications demand that virtual content blend seamlessly with the physical world.
-  - In cinematic production, software renderers such as Pixar's RenderMan, SideFX's Karma, and Autodesk's Arnold dominate offline pipelines, while NVIDIA's OptiX and Unreal Engine's Lumen push real-time boundaries.
+### Overview
 
-- ### Key Components
-  - #### Light Transport Algorithms
-    - [[Ray Tracing]] — casts rays from the camera into the scene, computing intersections and recursive reflections/refractions.
-    - [[Path Tracing]] — extends ray tracing with stochastic Monte Carlo sampling over all light paths, converging to physically correct [[Global Illumination]] in the limit.
-    - Bidirectional Path Tracing — traces paths from both the camera and light sources, joining them probabilistically to reduce variance especially in difficult lighting (caustics, enclosed spaces).
-    - Metropolis Light Transport — uses Markov chain Monte Carlo to preferentially sample high-contribution light paths.
-    - Photon Mapping — a two-pass algorithm: emit photons from lights, store them in a spatial map, then gather at shade points; efficient for caustics.
-  - #### Physically Based Material Models
-    - [[Physically Based Rendering]] (PBR) standardises material description via energy-conserving BRDFs such as the Cook-Torrance microfacet model.
-    - The metalness/roughness workflow (used in [[glTF]] and USD) encodes material parameters as texture maps, enabling consistent appearance across renderers and real-time engines.
-    - The [[Bidirectional Reflectance Distribution Function]] (BRDF) mathematically describes how surfaces scatter incoming radiance to outgoing directions.
-    - Bidirectional Transmittance Distribution Functions (BTDFs) and BSSRDFs (Bidirectional Scattering-Surface Reflectance Distribution Functions) handle transparency and [[Subsurface Scattering]] in skin, wax, and translucent materials.
-  - #### Sampling and Noise Reduction
-    - [[Monte Carlo Integration]] converts the rendering equation into a tractable estimator; convergence rate is O(1/√N) samples.
-    - Importance sampling concentrates samples in high-radiance directions, drastically reducing variance.
-    - Multiple Importance Sampling (MIS) combines BRDF and light-source sampling heuristics to minimise fireflies and noise.
-    - [[Denoising]] — AI-driven denoisers (NVIDIA DLSS, OptiX AI Denoiser, Intel Open Image Denoise) reconstruct clean images from low-sample renders by learning noise patterns.
-  - #### Acceleration Structures
-    - Bounding Volume Hierarchies ([[BVH]]) and kd-trees partition scene geometry, reducing ray-intersection complexity from O(n) to O(log n).
-    - GPU hardware ray-tracing units (NVIDIA RTX RT Cores, AMD RDNA Ray Accelerators) execute BVH traversal and triangle intersection in dedicated silicon, enabling interactive ray tracing.
-  - #### Scene Description and Geometry
-    - A [[Scene Graph]] hierarchically organises geometry, cameras, lights, and materials.
-    - [[Universal Scene Description]] (USD) by Pixar has become the dominant interchange format for complex scenes in production and [[Digital Twin]] workflows.
-    - [[3D Geometry]] representations include triangle meshes, NURBS surfaces, subdivision surfaces, and signed-distance fields (SDFs).
-    - [[Volumetric Rendering]] extends surface-only rendering to participating media (fog, smoke, fire, clouds) via the radiative transfer equation.
-  - #### GPU and Hardware Pipeline
-    - [[GPU Computing]] (CUDA, HIP, SYCL) provides the massive parallelism required for millions of ray-triangle intersection tests per frame.
-    - The [[Vulkan]] and DirectX 12 graphics APIs expose hardware ray-tracing extensions (VK_KHR_ray_tracing_pipeline, DXR) to application developers.
-    - Neural Radiance Fields ([[NeRF]]) / [[3D Gaussian Splatting]] represent an emergent paradigm where scene geometry is learned implicitly from images and rendered differentiably, blurring the boundary with AI.
+- Photorealistic rendering has evolved from purely offline, CPU-bound batch processes used in feature film production into a discipline that now spans real-time interactive applications, leveraging decades of research in light simulation, hardware acceleration, and statistical sampling.
+- The driving objective is perceptual fidelity: rendered images should match what a camera would capture if the scene existed physically, including specular highlights, interreflections, colour bleeding, depth-of-field blur, and lens flares.
+- The discipline sits at the intersection of physics (radiometry, optics), mathematics (Monte Carlo methods, numerical integration), and computer science (data structures for acceleration, GPU programming, AI inference).
+- Importance in spatial computing contexts has grown substantially as [[Mixed Reality]] and [[Digital Twin]] applications demand that virtual content blend seamlessly with the physical world.
+- In cinematic production, software renderers such as Pixar's RenderMan, SideFX's Karma, and Autodesk's Arnold dominate offline pipelines, while NVIDIA's OptiX and Unreal Engine's Lumen push real-time boundaries.
 
-- ### Applications and Use Cases
-  - #### Film and Animation
-    - All major animated features and visual-effects-heavy films use path-traced or ray-traced renders (Pixar RenderMan, Weta Digital Manuka, SideFX Karma).
-    - Offline render farms distribute scene chunks across thousands of CPU/GPU cores to meet production deadlines.
-  - #### Virtual Production
-    - [[Virtual Production]] on LED volume stages (e.g. The Volume by ILM) requires real-time photorealistic background rendering synchronised to the physical camera.
-    - Unreal Engine's Lumen global illumination and Nanite virtualised geometry enable in-camera VFX replacing green screens.
-  - #### Digital Twins and Simulation
-    - [[Digital Twin]] platforms such as NVIDIA Omniverse use USD and path tracing to produce physically accurate visualisations of factories, cities, and infrastructure.
-    - Engineering simulation (optical systems, automotive exterior lighting, building energy) relies on photorealistic rendering for realistic scene radiance computation.
-  - #### Extended Reality (XR)
-    - [[Mixed Reality]] and [[Augmented Reality]] applications demand that rendered virtual objects match real-world lighting; algorithms such as real-time radiance probes and screen-space reflections approximate photorealism under frame-rate constraints.
-    - [[Virtual Reality]] headsets benefit from foveated rendering (concentrating ray-tracing effort at the gaze point) to achieve photorealism within power budgets.
-  - #### Synthetic Data Generation
-    - [[Synthetic Data Generation]] for AI training exploits photorealistic rendering to produce labelled image datasets (object detection, segmentation, depth estimation) cheaply and at scale without real-world capture.
-    - Domain randomisation during rendering improves sim-to-real transfer for [[Computer Vision]] and [[Robotics]] perception systems.
-  - #### Architecture and Product Visualisation
-    - Architectural practices use photorealistic rendering for client presentations before construction begins.
-    - Product manufacturers render photorealistic marketing images directly from CAD data, replacing costly physical photography.
-  - #### Games
-    - Real-time path tracing is available in select high-end game titles (Minecraft RTX, Cyberpunk 2077 RT Overdrive mode) using DLSS upscaling and denoising to offset the per-frame cost.
+### Key Components
 
-- ### Standards and Context
-  - #### Key Standards Bodies
-    - [[Khronos Group]] — maintains [[OpenGL]], [[Vulkan]], [[glTF]], and the SPIRV shader intermediate representation; glTF's PBR material model has become the de facto web and real-time standard.
-    - Academy Software Foundation (ASWF) — hosts open-source rendering infrastructure including OpenColorIO, OpenEXR, and MaterialX.
-    - Pixar / USD — [[Universal Scene Description]] is now governed broadly and is the interchange spine of virtually all high-end rendering pipelines.
-  - #### Key Specifications
-    - The **Rendering Equation** (Kajiya, 1986) — foundational mathematical statement that all physically based renderers discretise and solve.
-    - **Cook-Torrance BRDF** — the microfacet specular model standardised across PBR workflows.
-    - **glTF 2.0** (Khronos) — JSON-based 3D format embedding PBR material parameters for interoperable real-time and offline rendering.
-    - **USD (Universal Scene Description)** — Pixar's open scene-composition format adopted by NVIDIA Omniverse, Apple RealityKit, and major DCC tools.
-    - **DLSS (Deep Learning Super Sampling)** and **FSR (FidelityFX Super Resolution)** — upscaling and denoising frameworks that complement ray-traced renders in real-time contexts.
-  - #### Regulatory and Industry Context
-    - No formal government regulation; industry practice is shaped by academy awards criteria, studio pipeline decisions, and hardware vendor driver certification programmes (NVIDIA, AMD).
-    - Adoption in [[Digital Twin]] and [[Building Information Modelling]] is influenced by ISO 19650 data management standards for the built environment.
+#### Light Transport Algorithms
 
-- ### Semantic Classification
+- [[Ray Tracing]] — casts rays from the camera into the scene, computing intersections and recursive reflections/refractions.
+- [[Path Tracing]] — extends ray tracing with stochastic Monte Carlo sampling over all light paths, converging to physically correct [[Global Illumination]] in the limit.
+- Bidirectional Path Tracing — traces paths from both the camera and light sources, joining them probabilistically to reduce variance especially in difficult lighting (caustics, enclosed spaces).
+- Metropolis Light Transport — uses Markov chain Monte Carlo to preferentially sample high-contribution light paths.
+- Photon Mapping — a two-pass algorithm: emit photons from lights, store them in a spatial map, then gather at shade points; efficient for caustics.
 
-- ### Current Landscape (2026)
-  - 3D Gaussian Splatting (3DGS), introduced by Inria at SIGGRAPH 2023, has become the dominant real-time radiance-field representation for photorealistic novel-view synthesis, rendering 60-200 FPS at 1080p-4K from a few hundred phone photos and training in 10-30 minutes on a single RTX 5080.
-  - Engine adoption reached production maturity in Q1 2026, with Unreal Engine 5.6 and Unity 6.2 both shipping native Gaussian-splatting renderers, and OTOY releasing OctaneRender 2026 with fully path-traced Gaussian splats.
-  - NVIDIA DLSS 4 launched at CES (January 2025) alongside the RTX 50 Series, replacing convolutional models with a transformer-based architecture for Super Resolution and Ray Reconstruction and adding Multi Frame Generation; it surpassed 175 supported titles by Gamescom (August 2025), making it NVIDIA's fastest-adopted game technology.
-  - NVIDIA's RTX Kit pushed neural rendering into the shader itself via RTX Neural Shaders and the RTX Neural Radiance Cache (learning multi-bounce indirect lighting), together with ReSTIR Path Tracing and RTX Mega Geometry for ray-tracing full-quality Nanite geometry.
-  - On standards, the Academy Software Foundation released OpenPBR 1.0 in June 2024 (spec now v1.1.1, dated 2026-04-17) as the MaterialX-based successor to Autodesk Standard Surface and Adobe Standard Material; it is now the default material in Maya, 3ds Max, Arnold, Blender 4.5, Redshift and V-Ray, with MaterialX 1.39.3 the default in OpenUSD 25.05.
-  - The AOUSD Materials Working Group (NVIDIA-led) is standardising MaterialX shader graphs within OpenUSD's UsdShade, targeting renderer-agnostic material interchange and future neural-material descriptions.
-  - A 2025-2026 research wave largely closed the relighting gap: methods such as GS-IR and Relightable 3DGS decompose captured splats into material and lighting for HDRI relighting and dynamic shadows, while temporal 4D Gaussians capture motion as walkable volumetric video.
-  - Open challenges as of 2026 include the large storage and streaming footprint of high-quality splats (200 MB-2 GB per scene, driving cloud splat-streaming from Luma, Niantic and AWS), robust physically based relighting of real-world captures, and the frame-rate cost of transformer denoisers on older RTX hardware.
+#### Physically Based Material Models
 
-- ### References
-  - 1. NVIDIA Developer (2025). NVIDIA RTX Neural Rendering Introduces Next Era of AI-Powered Graphics Innovation. https://developer.nvidia.com/blog/nvidia-rtx-neural-rendering-introduces-next-era-of-ai-powered-graphics-innovation/
-  - 2. NVIDIA (2025). NVIDIA DLSS 4 Introduces Multi Frame Generation and AI Innovations. https://www.nvidia.com/en-us/geforce/news/dlss4-multi-frame-generation-ai-innovations/
-  - 3. Academy Software Foundation (2024). Academy Software Foundation Releases OpenPBR 1.0. https://www.aswf.io/blog/academy-software-foundation-releases-openpbr-1-0/
-  - 4. NVIDIA Developer (2024). Unlock Seamless Material Interchange for Virtual Worlds with OpenUSD, MaterialX, and OpenPBR. https://developer.nvidia.com/blog/unlock-seamless-material-interchange-for-virtual-worlds-with-openusd-materialx-and-openpbr/
-  - 5. Internet Pros (2026). 3D Gaussian Splatting 2026 — Neural Rendering Revolution. https://internet-pros.com/blog/gaussian-splatting-neural-rendering-2026/
+- [[Physically Based Rendering]] (PBR) standardises material description via energy-conserving BRDFs such as the Cook-Torrance microfacet model.
+- The metalness/roughness workflow (used in [[glTF]] and USD) encodes material parameters as texture maps, enabling consistent appearance across renderers and real-time engines.
+- The [[Bidirectional Reflectance Distribution Function]] (BRDF) mathematically describes how surfaces scatter incoming radiance to outgoing directions.
+- Bidirectional Transmittance Distribution Functions (BTDFs) and BSSRDFs (Bidirectional Scattering-Surface Reflectance Distribution Functions) handle transparency and [[Subsurface Scattering]] in skin, wax, and translucent materials.
 
-- ### Provenance
+#### Sampling and Noise Reduction
+
+- [[Monte Carlo Integration]] converts the rendering equation into a tractable estimator; convergence rate is O(1/√N) samples.
+- Importance sampling concentrates samples in high-radiance directions, drastically reducing variance.
+- Multiple Importance Sampling (MIS) combines BRDF and light-source sampling heuristics to minimise fireflies and noise.
+- [[Denoising]] — AI-driven denoisers (NVIDIA DLSS, OptiX AI Denoiser, Intel Open Image Denoise) reconstruct clean images from low-sample renders by learning noise patterns.
+
+#### Acceleration Structures
+
+- Bounding Volume Hierarchies ([[BVH]]) and kd-trees partition scene geometry, reducing ray-intersection complexity from O(n) to O(log n).
+- GPU hardware ray-tracing units (NVIDIA RTX RT Cores, AMD RDNA Ray Accelerators) execute BVH traversal and triangle intersection in dedicated silicon, enabling interactive ray tracing.
+
+#### Scene Description and Geometry
+
+- A [[Scene Graph]] hierarchically organises geometry, cameras, lights, and materials.
+- [[Universal Scene Description]] (USD) by Pixar has become the dominant interchange format for complex scenes in production and [[Digital Twin]] workflows.
+- [[3D Geometry]] representations include triangle meshes, NURBS surfaces, subdivision surfaces, and signed-distance fields (SDFs).
+- [[Volumetric Rendering]] extends surface-only rendering to participating media (fog, smoke, fire, clouds) via the radiative transfer equation.
+
+#### GPU and Hardware Pipeline
+
+- [[GPU Computing]] (CUDA, HIP, SYCL) provides the massive parallelism required for millions of ray-triangle intersection tests per frame.
+- The [[Vulkan]] and DirectX 12 graphics APIs expose hardware ray-tracing extensions (VK_KHR_ray_tracing_pipeline, DXR) to application developers.
+- Neural Radiance Fields ([[NeRF]]) / [[3D Gaussian Splatting]] represent an emergent paradigm where scene geometry is learned implicitly from images and rendered differentiably, blurring the boundary with AI.
+
+### Applications and Use Cases
+
+#### Film and Animation
+
+- All major animated features and visual-effects-heavy films use path-traced or ray-traced renders (Pixar RenderMan, Weta Digital Manuka, SideFX Karma).
+- Offline render farms distribute scene chunks across thousands of CPU/GPU cores to meet production deadlines.
+
+#### Virtual Production
+
+- [[Virtual Production]] on LED volume stages (e.g. The Volume by ILM) requires real-time photorealistic background rendering synchronised to the physical camera.
+- Unreal Engine's Lumen global illumination and Nanite virtualised geometry enable in-camera VFX replacing green screens.
+
+#### Digital Twins and Simulation
+
+- [[Digital Twin]] platforms such as NVIDIA Omniverse use USD and path tracing to produce physically accurate visualisations of factories, cities, and infrastructure.
+- Engineering simulation (optical systems, automotive exterior lighting, building energy) relies on photorealistic rendering for realistic scene radiance computation.
+
+#### Extended Reality (XR)
+
+- [[Mixed Reality]] and [[Augmented Reality]] applications demand that rendered virtual objects match real-world lighting; algorithms such as real-time radiance probes and screen-space reflections approximate photorealism under frame-rate constraints.
+- [[Virtual Reality]] headsets benefit from foveated rendering (concentrating ray-tracing effort at the gaze point) to achieve photorealism within power budgets.
+
+#### Synthetic Data Generation
+
+- [[Synthetic Data Generation]] for AI training exploits photorealistic rendering to produce labelled image datasets (object detection, segmentation, depth estimation) cheaply and at scale without real-world capture.
+- Domain randomisation during rendering improves sim-to-real transfer for [[Computer Vision]] and [[Robotics]] perception systems.
+
+#### Architecture and Product Visualisation
+
+- Architectural practices use photorealistic rendering for client presentations before construction begins.
+- Product manufacturers render photorealistic marketing images directly from CAD data, replacing costly physical photography.
+
+#### Games
+
+- Real-time path tracing is available in select high-end game titles (Minecraft RTX, Cyberpunk 2077 RT Overdrive mode) using DLSS upscaling and denoising to offset the per-frame cost.
+
+### Standards and Context
+
+#### Key Standards Bodies
+
+- [[Khronos Group]] — maintains [[OpenGL]], [[Vulkan]], [[glTF]], and the SPIRV shader intermediate representation; glTF's PBR material model has become the de facto web and real-time standard.
+- Academy Software Foundation (ASWF) — hosts open-source rendering infrastructure including OpenColorIO, OpenEXR, and MaterialX.
+- Pixar / USD — [[Universal Scene Description]] is now governed broadly and is the interchange spine of virtually all high-end rendering pipelines.
+
+#### Key Specifications
+
+- The **Rendering Equation** (Kajiya, 1986) — foundational mathematical statement that all physically based renderers discretise and solve.
+- **Cook-Torrance BRDF** — the microfacet specular model standardised across PBR workflows.
+- **glTF 2.0** (Khronos) — JSON-based 3D format embedding PBR material parameters for interoperable real-time and offline rendering.
+- **USD (Universal Scene Description)** — Pixar's open scene-composition format adopted by NVIDIA Omniverse, Apple RealityKit, and major DCC tools.
+- **DLSS (Deep Learning Super Sampling)** and **FSR (FidelityFX Super Resolution)** — upscaling and denoising frameworks that complement ray-traced renders in real-time contexts.
+
+#### Regulatory and Industry Context
+
+- No formal government regulation; industry practice is shaped by academy awards criteria, studio pipeline decisions, and hardware vendor driver certification programmes (NVIDIA, AMD).
+- Adoption in [[Digital Twin]] and [[Building Information Modelling]] is influenced by ISO 19650 data management standards for the built environment.
+
+### Semantic Classification
+
+### Current Landscape (2026)
+
+- 3D Gaussian Splatting (3DGS), introduced by Inria at SIGGRAPH 2023, has become the dominant real-time radiance-field representation for photorealistic novel-view synthesis, rendering 60-200 FPS at 1080p-4K from a few hundred phone photos and training in 10-30 minutes on a single RTX 5080.
+- Engine adoption reached production maturity in Q1 2026, with Unreal Engine 5.6 and Unity 6.2 both shipping native Gaussian-splatting renderers, and OTOY releasing OctaneRender 2026 with fully path-traced Gaussian splats.
+- NVIDIA DLSS 4 launched at CES (January 2025) alongside the RTX 50 Series, replacing convolutional models with a transformer-based architecture for Super Resolution and Ray Reconstruction and adding Multi Frame Generation; it surpassed 175 supported titles by Gamescom (August 2025), making it NVIDIA's fastest-adopted game technology.
+- NVIDIA's RTX Kit pushed neural rendering into the shader itself via RTX Neural Shaders and the RTX Neural Radiance Cache (learning multi-bounce indirect lighting), together with ReSTIR Path Tracing and RTX Mega Geometry for ray-tracing full-quality Nanite geometry.
+- On standards, the Academy Software Foundation released OpenPBR 1.0 in June 2024 (spec now v1.1.1, dated 2026-04-17) as the MaterialX-based successor to Autodesk Standard Surface and Adobe Standard Material; it is now the default material in Maya, 3ds Max, Arnold, Blender 4.5, Redshift and V-Ray, with MaterialX 1.39.3 the default in OpenUSD 25.05.
+- The AOUSD Materials Working Group (NVIDIA-led) is standardising MaterialX shader graphs within OpenUSD's UsdShade, targeting renderer-agnostic material interchange and future neural-material descriptions.
+- A 2025-2026 research wave largely closed the relighting gap: methods such as GS-IR and Relightable 3DGS decompose captured splats into material and lighting for HDRI relighting and dynamic shadows, while temporal 4D Gaussians capture motion as walkable volumetric video.
+- Open challenges as of 2026 include the large storage and streaming footprint of high-quality splats (200 MB-2 GB per scene, driving cloud splat-streaming from Luma, Niantic and AWS), robust physically based relighting of real-world captures, and the frame-rate cost of transformer denoisers on older RTX hardware.
+
+### References
+
+- 1. NVIDIA Developer (2025). NVIDIA RTX Neural Rendering Introduces Next Era of AI-Powered Graphics Innovation. https://developer.nvidia.com/blog/nvidia-rtx-neural-rendering-introduces-next-era-of-ai-powered-graphics-innovation/
+- 2. NVIDIA (2025). NVIDIA DLSS 4 Introduces Multi Frame Generation and AI Innovations. https://www.nvidia.com/en-us/geforce/news/dlss4-multi-frame-generation-ai-innovations/
+- 3. Academy Software Foundation (2024). Academy Software Foundation Releases OpenPBR 1.0. https://www.aswf.io/blog/academy-software-foundation-releases-openpbr-1-0/
+- 4. NVIDIA Developer (2024). Unlock Seamless Material Interchange for Virtual Worlds with OpenUSD, MaterialX, and OpenPBR. https://developer.nvidia.com/blog/unlock-seamless-material-interchange-for-virtual-worlds-with-openusd-materialx-and-openpbr/
+- 5. Internet Pros (2026). 3D Gaussian Splatting 2026 — Neural Rendering Revolution. https://internet-pros.com/blog/gaussian-splatting-neural-rendering-2026/
+
+### Provenance
 

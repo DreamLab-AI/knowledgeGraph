@@ -1,18 +1,23 @@
-
 Graph optimisation is the set of compiler transformations applied to a model's computation graph to reduce latency, memory footprint and energy use without altering the model's semantics. Typical passes include operator fusion, constant folding, dead-node elimination, layout reordering and kernel selection. It is performed by inference runtimes and ahead-of-time compilers as a precursor to deployment on a target accelerator.
 
-- ### Overview
-  - Graph optimisation treats the model as a directed dataflow graph and rewrites it into an equivalent but cheaper-to-execute form. Operator fusion collapses adjacent elementwise and matrix operations into a single kernel, cutting memory round-trips; constant folding pre-computes subgraphs whose inputs are fixed at build time; layout transforms align tensors to the memory order preferred by the target hardware. These passes are hardware-aware: the optimal graph for a GPU differs from that for a CPU or an NPU.
-- ### Key aspects
-  - Operator fusion to reduce kernel-launch and memory-bandwidth overhead
-  - Constant folding and common-subexpression elimination
-  - Dead-code and identity-operation removal
-  - Memory-layout and data-format transformation for the target accelerator
-  - Kernel auto-tuning and selection per operator
-- ### Applications
-  - Lowering transformer inference latency in serving stacks
-  - Compiling models for edge NPUs and mobile GPUs
-  - Build-time optimisation in ONNX Runtime and TensorRT pipelines
-  - Reducing cold-start cost for serverless model endpoints
-- ### Provenance
+### Overview
+
+- Graph optimisation treats the model as a directed dataflow graph and rewrites it into an equivalent but cheaper-to-execute form. Operator fusion collapses adjacent elementwise and matrix operations into a single kernel, cutting memory round-trips; constant folding pre-computes subgraphs whose inputs are fixed at build time; layout transforms align tensors to the memory order preferred by the target hardware. These passes are hardware-aware: the optimal graph for a GPU differs from that for a CPU or an NPU.
+
+### Key aspects
+
+- Operator fusion to reduce kernel-launch and memory-bandwidth overhead
+- Constant folding and common-subexpression elimination
+- Dead-code and identity-operation removal
+- Memory-layout and data-format transformation for the target accelerator
+- Kernel auto-tuning and selection per operator
+
+### Applications
+
+- Lowering transformer inference latency in serving stacks
+- Compiling models for edge NPUs and mobile GPUs
+- Build-time optimisation in ONNX Runtime and TensorRT pipelines
+- Reducing cold-start cost for serverless model endpoints
+
+### Provenance
 

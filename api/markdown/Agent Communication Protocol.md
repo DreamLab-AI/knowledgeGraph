@@ -1,127 +1,127 @@
-
 An Agent Communication Protocol is a formalised specification governing the syntax, semantics, and pragmatics of message exchange between autonomous software agents, enabling them to coordinate actions, share information, delegate tasks, and negotiate goals across heterogeneous runtime environments. Such protocols define the speech act primitives, message envelope formats, conversation policies, and error-handling procedures that agents must implement to participate in a multi-agent system.
 
-- ### Semantic Classification
+### Semantic Classification
 
-- ### Content
-  ## Compositional Relationships (Components)
-  ```manchester-syntax
-  SubClassOf(ai:AgentCommunicationProtocol
-    ObjectSomeValuesFrom(ai:hasPart ai:MessagePassingLayer))
-  SubClassOf(ai:AgentCommunicationProtocol
-    ObjectSomeValuesFrom(ai:hasPart ai:PerformativeVocabulary))
-  SubClassOf(ai:AgentCommunicationProtocol
-    ObjectSomeValuesFrom(ai:hasPart ai:EnvelopeSchema))
-  SubClassOf(ai:AgentCommunicationProtocol
-    ObjectSomeValuesFrom(ai:hasPart ai:ConversationPolicy))
-  SubClassOf(ai:AgentCommunicationProtocol
-    ObjectSomeValuesFrom(ai:hasPart ai:CapabilityAdvertisement))
-  SubClassOf(ai:AgentCommunicationProtocol
-    ObjectSomeValuesFrom(ai:hasPart ai:ErrorHandling))
-  SubClassOf(ai:AgentCommunicationProtocol
-    ObjectSomeValuesFrom(ai:hasPart ai:Negotiation))
-  SubClassOf(ai:AgentCommunicationProtocol
-    ObjectSomeValuesFrom(ai:hasPart ai:TrustManagement))
-  ```
-  ## Dependency Relationships
-  ```manchester-syntax
-  SubClassOf(ai:AgentCommunicationProtocol
-    ObjectSomeValuesFrom(ai:requires ai:Ontology))
-  SubClassOf(ai:AgentCommunicationProtocol
-    ObjectSomeValuesFrom(ai:requires ai:TrustManagement))
-  SubClassOf(ai:AgentCommunicationProtocol
-    ObjectSomeValuesFrom(ai:dependsOn ai:DistributedSystems))
-  SubClassOf(ai:AgentCommunicationProtocol
-    ObjectSomeValuesFrom(ai:dependsOn ai:ConcurrentProgramming))
-  SubClassOf(ai:AgentCommunicationProtocol
-    ObjectSomeValuesFrom(ai:uses ai:SpeechActTheory))
-  SubClassOf(ai:AgentCommunicationProtocol
-    ObjectSomeValuesFrom(ai:uses ai:MessagePassing))
-  SubClassOf(ai:AgentCommunicationProtocol
-    ObjectSomeValuesFrom(ai:uses ai:JSONLD))
-  SubClassOf(ai:AgentCommunicationProtocol
-    ObjectSomeValuesFrom(ai:uses ai:JSONRPC20))
-  ```
-  ## Capability Relationships
-  ```manchester-syntax
-  SubClassOf(ai:AgentCommunicationProtocol
-    ObjectSomeValuesFrom(ai:enables ai:InterAgentCommunication))
-  SubClassOf(ai:AgentCommunicationProtocol
-    ObjectSomeValuesFrom(ai:enables ai:AgenticWorkflow))
-  SubClassOf(ai:AgentCommunicationProtocol
-    ObjectSomeValuesFrom(ai:enables ai:AutonomousTaskExecution))
-  SubClassOf(ai:AgentCommunicationProtocol
-    ObjectSomeValuesFrom(ai:enables ai:TaskDelegation))
-  SubClassOf(ai:AgentCommunicationProtocol
-    ObjectSomeValuesFrom(ai:enables ai:Negotiation))
-  SubClassOf(ai:AgentCommunicationProtocol
-    ObjectSomeValuesFrom(ai:enables ai:DistributedCollaboration))
-  SubClassOf(ai:AgentCommunicationProtocol
-    ObjectSomeValuesFrom(ai:enables ai:CapabilityAdvertisement))
-  ```
-  ## Implementation Relationships
-  ```manchester-syntax
-  SubClassOf(ai:AgentCommunicationProtocol
-    ObjectSomeValuesFrom(ai:implements ai:FIPAACL))
-  SubClassOf(ai:AgentCommunicationProtocol
-    ObjectSomeValuesFrom(ai:implements ai:ContractNetProtocol))
-  SubClassOf(ai:AgentCommunicationProtocol
-    ObjectSomeValuesFrom(ai:implements ai:KQML))
-  SubClassOf(ai:AgentCommunicationProtocol
-    ObjectSomeValuesFrom(ai:implements ai:AgentToAgentProtocol))
-  SubClassOf(ai:AgentCommunicationProtocol
-    ObjectSomeValuesFrom(ai:implements ai:ModelContextProtocol))
-  ```
-  ## Reduction Relationships
-  ```manchester-syntax
-  SubClassOf(ai:AgentCommunicationProtocol
-    ObjectSomeValuesFrom(ai:reducesTo ai:CoordinationProtocol))
-  SubClassOf(ai:AgentCommunicationProtocol
-    ObjectSomeValuesFrom(ai:reducesTo ai:MessagePassing))
-  SubClassOf(ai:AgentCommunicationProtocol
-    ObjectSomeValuesFrom(ai:reducesTo ai:InteroperabilityMechanism))
-  SubClassOf(ai:AgentCommunicationProtocol
-    ObjectSomeValuesFrom(ai:reducesTo ai:DistributedSystems))
-  SubClassOf(ai:AgentCommunicationProtocol
-    ObjectSomeValuesFrom(ai:uses ai:HTTPProtocol))
-  SubClassOf(ai:AgentCommunicationProtocol
-    ObjectSomeValuesFrom(ai:uses ai:WebSocket))
-  SubClassOf(ai:AgentCommunicationProtocol
-    ObjectSomeValuesFrom(ai:enables ai:MultiAgentSystem))
-  SubClassOf(ai:AgentCommunicationProtocol
-    ObjectSomeValuesFrom(ai:supports ai:WarehouseAutomation))
-  SubClassOf(ai:AgentCommunicationProtocol
-    ObjectSomeValuesFrom(ai:supports ai:AlgorithmicTrading))
-  SubClassOf(ai:AgentCommunicationProtocol
-    ObjectSomeValuesFrom(ai:supports ai:SmartGrid))
-  SubClassOf(ai:AgentCommunicationProtocol
-    ObjectSomeValuesFrom(ai:implements ai:AgentNetworkProtocol))
-  SubClassOf(ai:AgentCommunicationProtocol
-    ObjectSomeValuesFrom(ai:dependsOn ai:GameTheory))
-  SubClassOf(ai:AgentCommunicationProtocol
-    ObjectSomeValuesFrom(ai:relatedTo ai:MultiAgentReinforcementLearning))
-  ```
+### Content
 
-  ## About
+## Compositional Relationships (Components)
+```manchester-syntax
+SubClassOf(ai:AgentCommunicationProtocol
+  ObjectSomeValuesFrom(ai:hasPart ai:MessagePassingLayer))
+SubClassOf(ai:AgentCommunicationProtocol
+  ObjectSomeValuesFrom(ai:hasPart ai:PerformativeVocabulary))
+SubClassOf(ai:AgentCommunicationProtocol
+  ObjectSomeValuesFrom(ai:hasPart ai:EnvelopeSchema))
+SubClassOf(ai:AgentCommunicationProtocol
+  ObjectSomeValuesFrom(ai:hasPart ai:ConversationPolicy))
+SubClassOf(ai:AgentCommunicationProtocol
+  ObjectSomeValuesFrom(ai:hasPart ai:CapabilityAdvertisement))
+SubClassOf(ai:AgentCommunicationProtocol
+  ObjectSomeValuesFrom(ai:hasPart ai:ErrorHandling))
+SubClassOf(ai:AgentCommunicationProtocol
+  ObjectSomeValuesFrom(ai:hasPart ai:Negotiation))
+SubClassOf(ai:AgentCommunicationProtocol
+  ObjectSomeValuesFrom(ai:hasPart ai:TrustManagement))
+```
+## Dependency Relationships
+```manchester-syntax
+SubClassOf(ai:AgentCommunicationProtocol
+  ObjectSomeValuesFrom(ai:requires ai:Ontology))
+SubClassOf(ai:AgentCommunicationProtocol
+  ObjectSomeValuesFrom(ai:requires ai:TrustManagement))
+SubClassOf(ai:AgentCommunicationProtocol
+  ObjectSomeValuesFrom(ai:dependsOn ai:DistributedSystems))
+SubClassOf(ai:AgentCommunicationProtocol
+  ObjectSomeValuesFrom(ai:dependsOn ai:ConcurrentProgramming))
+SubClassOf(ai:AgentCommunicationProtocol
+  ObjectSomeValuesFrom(ai:uses ai:SpeechActTheory))
+SubClassOf(ai:AgentCommunicationProtocol
+  ObjectSomeValuesFrom(ai:uses ai:MessagePassing))
+SubClassOf(ai:AgentCommunicationProtocol
+  ObjectSomeValuesFrom(ai:uses ai:JSONLD))
+SubClassOf(ai:AgentCommunicationProtocol
+  ObjectSomeValuesFrom(ai:uses ai:JSONRPC20))
+```
+## Capability Relationships
+```manchester-syntax
+SubClassOf(ai:AgentCommunicationProtocol
+  ObjectSomeValuesFrom(ai:enables ai:InterAgentCommunication))
+SubClassOf(ai:AgentCommunicationProtocol
+  ObjectSomeValuesFrom(ai:enables ai:AgenticWorkflow))
+SubClassOf(ai:AgentCommunicationProtocol
+  ObjectSomeValuesFrom(ai:enables ai:AutonomousTaskExecution))
+SubClassOf(ai:AgentCommunicationProtocol
+  ObjectSomeValuesFrom(ai:enables ai:TaskDelegation))
+SubClassOf(ai:AgentCommunicationProtocol
+  ObjectSomeValuesFrom(ai:enables ai:Negotiation))
+SubClassOf(ai:AgentCommunicationProtocol
+  ObjectSomeValuesFrom(ai:enables ai:DistributedCollaboration))
+SubClassOf(ai:AgentCommunicationProtocol
+  ObjectSomeValuesFrom(ai:enables ai:CapabilityAdvertisement))
+```
+## Implementation Relationships
+```manchester-syntax
+SubClassOf(ai:AgentCommunicationProtocol
+  ObjectSomeValuesFrom(ai:implements ai:FIPAACL))
+SubClassOf(ai:AgentCommunicationProtocol
+  ObjectSomeValuesFrom(ai:implements ai:ContractNetProtocol))
+SubClassOf(ai:AgentCommunicationProtocol
+  ObjectSomeValuesFrom(ai:implements ai:KQML))
+SubClassOf(ai:AgentCommunicationProtocol
+  ObjectSomeValuesFrom(ai:implements ai:AgentToAgentProtocol))
+SubClassOf(ai:AgentCommunicationProtocol
+  ObjectSomeValuesFrom(ai:implements ai:ModelContextProtocol))
+```
+## Reduction Relationships
+```manchester-syntax
+SubClassOf(ai:AgentCommunicationProtocol
+  ObjectSomeValuesFrom(ai:reducesTo ai:CoordinationProtocol))
+SubClassOf(ai:AgentCommunicationProtocol
+  ObjectSomeValuesFrom(ai:reducesTo ai:MessagePassing))
+SubClassOf(ai:AgentCommunicationProtocol
+  ObjectSomeValuesFrom(ai:reducesTo ai:InteroperabilityMechanism))
+SubClassOf(ai:AgentCommunicationProtocol
+  ObjectSomeValuesFrom(ai:reducesTo ai:DistributedSystems))
+SubClassOf(ai:AgentCommunicationProtocol
+  ObjectSomeValuesFrom(ai:uses ai:HTTPProtocol))
+SubClassOf(ai:AgentCommunicationProtocol
+  ObjectSomeValuesFrom(ai:uses ai:WebSocket))
+SubClassOf(ai:AgentCommunicationProtocol
+  ObjectSomeValuesFrom(ai:enables ai:MultiAgentSystem))
+SubClassOf(ai:AgentCommunicationProtocol
+  ObjectSomeValuesFrom(ai:supports ai:WarehouseAutomation))
+SubClassOf(ai:AgentCommunicationProtocol
+  ObjectSomeValuesFrom(ai:supports ai:AlgorithmicTrading))
+SubClassOf(ai:AgentCommunicationProtocol
+  ObjectSomeValuesFrom(ai:supports ai:SmartGrid))
+SubClassOf(ai:AgentCommunicationProtocol
+  ObjectSomeValuesFrom(ai:implements ai:AgentNetworkProtocol))
+SubClassOf(ai:AgentCommunicationProtocol
+  ObjectSomeValuesFrom(ai:dependsOn ai:GameTheory))
+SubClassOf(ai:AgentCommunicationProtocol
+  ObjectSomeValuesFrom(ai:relatedTo ai:MultiAgentReinforcementLearning))
+```
 
-  Agent communication protocols address one of the oldest problems in distributed artificial intelligence: if autonomous software agents are to collaborate on tasks that no single agent can accomplish alone, they must share a common language for expressing not just information content but the pragmatics of how that content should be received and acted upon. A protocol that specifies only message format — that says "an agent message is a JSON object with sender and receiver fields and a content field" — is insufficient. The receiving agent also needs to know what the sender intends by sending the message: is this information to be believed and stored, a request to be acted upon, an offer to be accepted or rejected, or a notification to be forwarded? These distinctions — the illocutionary force of a communicative act — are precisely what speech act theory, developed by J. L. Austin (*How to Do Things with Words*, 1962) and John Searle (*Speech Acts*, 1969) in ordinary-language philosophy, was designed to illuminate. Searle's five-category taxonomy of illocutionary acts maps naturally onto the performative vocabulary of agent communication: assertives (the agent commits to the truth of a proposition — the INFORM performative in FIPA-ACL) represent the agent's epistemic commitment to shared world knowledge; directives (the agent attempts to get the receiver to perform an action — the REQUEST performative) represent goal-directed task initiation; commissives (the agent commits itself to a future course of action — the PROPOSE and AGREE performatives) represent negotiation and commitment-tracking; expressives (the agent expresses psychological states — THANK, SORRY, APOLOGISE) support social and trust-building communication; and declarations (the agent brings about the state of affairs described — few in agent systems, though contract awards approximate this category) represent authoritative acts that change the state of the multi-agent system.
+## About
 
-  The practical consequences of having a rigorous performative semantics are profound for multi-agent coordination. Without it, an agent receiving a message bearing the same syntactic form cannot distinguish whether another agent is informing it of a fact (and thus should update its beliefs), requesting it to perform an action (and thus should enter that action into its goal agenda), or proposing a deal contingent on certain conditions (and thus should reason about whether the conditions are acceptable before committing). The early multi-agent systems of the 1980s used ad hoc message formats, which worked within homogeneous, single-vendor systems but created combinatorial integration problems as the number of agent types grew. The DARPA Knowledge Sharing Effort (1990–1993) produced [[KQML]] to address this, defining a standardised performative vocabulary and a transport-neutral envelope format. KQML's performatives — ask-one, tell, achieve, subscribe, broker-all, recommend-one, and approximately 30 others — provided a shared vocabulary for knowledge-level agent communication, abstracting above the specific knowledge representation language used by each agent. KQML's weakness was its informal semantics: different implementors interpreted performative meanings differently, leading to interoperability failures between ostensibly KQML-compliant systems from different research groups. Singh's influential 1998 critique in *IEEE Computer* identified the core problem: without a formal model of agent mental states (beliefs, desires, intentions), the semantics of performatives could not be defined rigorously enough to specify what it means for an implementation to be correct.
+Agent communication protocols address one of the oldest problems in distributed artificial intelligence: if autonomous software agents are to collaborate on tasks that no single agent can accomplish alone, they must share a common language for expressing not just information content but the pragmatics of how that content should be received and acted upon. A protocol that specifies only message format — that says "an agent message is a JSON object with sender and receiver fields and a content field" — is insufficient. The receiving agent also needs to know what the sender intends by sending the message: is this information to be believed and stored, a request to be acted upon, an offer to be accepted or rejected, or a notification to be forwarded? These distinctions — the illocutionary force of a communicative act — are precisely what speech act theory, developed by J. L. Austin (*How to Do Things with Words*, 1962) and John Searle (*Speech Acts*, 1969) in ordinary-language philosophy, was designed to illuminate. Searle's five-category taxonomy of illocutionary acts maps naturally onto the performative vocabulary of agent communication: assertives (the agent commits to the truth of a proposition — the INFORM performative in FIPA-ACL) represent the agent's epistemic commitment to shared world knowledge; directives (the agent attempts to get the receiver to perform an action — the REQUEST performative) represent goal-directed task initiation; commissives (the agent commits itself to a future course of action — the PROPOSE and AGREE performatives) represent negotiation and commitment-tracking; expressives (the agent expresses psychological states — THANK, SORRY, APOLOGISE) support social and trust-building communication; and declarations (the agent brings about the state of affairs described — few in agent systems, though contract awards approximate this category) represent authoritative acts that change the state of the multi-agent system.
 
-  The historical trajectory of agent communication protocols moves through three clearly delineated eras, each defined by the dominant agent architecture and the standardisation landscape. The first era (1980s–early 1990s) was characterised by ad hoc message passing in closed systems: blackboard architectures (Hearsay-II, CAGE, REACT), distributed problem-solving networks with application-specific protocols, and procedural message-handling code embedded in individual agent implementations. The second era (early 1990s–2020s) was defined by the [[KQML]]/[[FIPA ACL]] standardisation movement. The FIPA Foundation for Intelligent Physical Agents (established 1996) produced the FIPA ACL specification (ratified 2000) with rigorously defined pre- and post-conditions on 22 communicative act types (ACCEPT-PROPOSAL, AGREE, CANCEL, CFP, CONFIRM, DISCONFIRM, FAILURE, INFORM, INFORM-IF, INFORM-REF, NOT-UNDERSTOOD, PROPOSE, QUERY-IF, QUERY-REF, REFUSE, REJECT-PROPOSAL, REQUEST, REQUEST-WHEN, REQUEST-WHENEVER, SUBSCRIBE, PROXY, PROPAGATE) grounded in a formal model of agent Beliefs, Desires, and Intentions (the BDI architecture formalised by Bratman's intention-based planning theory and operationalised by Rao and Georgeff's agent-oriented programming languages). FIPA also standardised interaction protocol templates — the FIPA Contract Net Interaction Protocol, FIPA Iterated Contract Net, FIPA Request, FIPA Subscribe, FIPA Brokering, FIPA English Auction, FIPA Dutch Auction, FIPA Recruiting — that agents could instantiate for common coordination patterns without designing conversation state machines from scratch. The [[Contract Net Protocol]], originally proposed by Reid Smith in 1980 for distributed task allocation in computing systems, was canonised within FIPA and became the dominant mechanism for market-based resource and task allocation: a manager agent announces a task via a Call-For-Proposals message; participant agents evaluate the task and respond with proposals that specify their capability to perform the task and the cost they would require; the manager awards the contract to the optimal bidder with an ACCEPT-PROPOSAL message; the winner acknowledges with an AGREE and subsequently reports completion or failure; losing bidders receive REJECT-PROPOSAL. The JADE (Java Agent DEvelopment Framework, 1999) open-source platform provided a FIPA-compliant MAS middleware that was used in hundreds of academic and industrial deployments across logistics, telecommunications network management, e-commerce, supply chain management, and air traffic control simulation.
+The practical consequences of having a rigorous performative semantics are profound for multi-agent coordination. Without it, an agent receiving a message bearing the same syntactic form cannot distinguish whether another agent is informing it of a fact (and thus should update its beliefs), requesting it to perform an action (and thus should enter that action into its goal agenda), or proposing a deal contingent on certain conditions (and thus should reason about whether the conditions are acceptable before committing). The early multi-agent systems of the 1980s used ad hoc message formats, which worked within homogeneous, single-vendor systems but created combinatorial integration problems as the number of agent types grew. The DARPA Knowledge Sharing Effort (1990–1993) produced [[KQML]] to address this, defining a standardised performative vocabulary and a transport-neutral envelope format. KQML's performatives — ask-one, tell, achieve, subscribe, broker-all, recommend-one, and approximately 30 others — provided a shared vocabulary for knowledge-level agent communication, abstracting above the specific knowledge representation language used by each agent. KQML's weakness was its informal semantics: different implementors interpreted performative meanings differently, leading to interoperability failures between ostensibly KQML-compliant systems from different research groups. Singh's influential 1998 critique in *IEEE Computer* identified the core problem: without a formal model of agent mental states (beliefs, desires, intentions), the semantics of performatives could not be defined rigorously enough to specify what it means for an implementation to be correct.
 
-  The third and current era began around 2023–2024 with the explosive emergence of [[Large Language Model]]-based agents as the dominant paradigm for autonomous software task execution. LLM agents differ architecturally from classical FIPA BDI agents in four fundamental ways: (1) they do not maintain explicit symbolic BDI mental state representations but rather encode agent context implicitly in neural network activations and conversation history; (2) their "communication" occurs through natural language prompts and structured JSON tool-call schemas rather than formal speech act performatives; (3) their coordination happens through orchestration frameworks — AutoGen's ConversableAgent graph, LangGraph's DAG-based control flow, CrewAI's role-based task assignment — rather than through standards-compliant ACL message exchange; and (4) their capabilities are not described in formal ontology terms but in natural-language tool descriptions and system prompt summaries that the LLM is expected to reason about. This architectural shift created urgent demand for new lightweight, LLM-native communication protocols that provide enough structure for reliable multi-agent coordination without requiring the full formal apparatus of FIPA — protocols that could bridge the gap between the unstructured natural language that LLMs excel at and the structured, verifiable message exchange that production multi-agent systems require. Anthropic's [[Model Context Protocol]] (MCP, November 2024) addressed the most pressing sub-problem: a standardised protocol for LLM-agent-to-tool communication, defining how an LLM agent host (MCP client) discovers available tools from a tool provider (MCP server), invokes tools with type-validated inputs, and receives structured results. MCP uses JSON-RPC 2.0 as its wire protocol and supports stdio, HTTP/SSE, and WebSocket transports. Google's [[Agent-to-Agent Protocol]] (A2A, April 2025) addressed the complementary problem of agent-to-agent delegation: how one LLM-based agent (a client agent) discovers another agent's capabilities, creates a task delegation request, monitors execution progress, and retrieves task artifacts, using HTTP/SSE transport and Agent Card JSON capability manifests. In June 2025, Google transferred A2A to [[Linux Foundation]] governance as the Agent2Agent project, with over 50 founding technology partners expanding to over 150 by April 2026. IBM's ACP (open-sourced to Linux Foundation AI in 2024–2025) provides a REST-native brokered architecture where an ACP Server acts as registry and router, with multipart MIME supporting multimodal agent responses. The community [[Agent Network Protocol]] uses W3C [[Decentralised Identifier]]s and [[JSON-LD]] messages for trustless cross-organisation agent identity and communication, targeting the open, permissionless "agentic internet" where agents from different organisations can discover, authenticate, and transact with each other without central registry dependency.
+The historical trajectory of agent communication protocols moves through three clearly delineated eras, each defined by the dominant agent architecture and the standardisation landscape. The first era (1980s–early 1990s) was characterised by ad hoc message passing in closed systems: blackboard architectures (Hearsay-II, CAGE, REACT), distributed problem-solving networks with application-specific protocols, and procedural message-handling code embedded in individual agent implementations. The second era (early 1990s–2020s) was defined by the [[KQML]]/[[FIPA ACL]] standardisation movement. The FIPA Foundation for Intelligent Physical Agents (established 1996) produced the FIPA ACL specification (ratified 2000) with rigorously defined pre- and post-conditions on 22 communicative act types (ACCEPT-PROPOSAL, AGREE, CANCEL, CFP, CONFIRM, DISCONFIRM, FAILURE, INFORM, INFORM-IF, INFORM-REF, NOT-UNDERSTOOD, PROPOSE, QUERY-IF, QUERY-REF, REFUSE, REJECT-PROPOSAL, REQUEST, REQUEST-WHEN, REQUEST-WHENEVER, SUBSCRIBE, PROXY, PROPAGATE) grounded in a formal model of agent Beliefs, Desires, and Intentions (the BDI architecture formalised by Bratman's intention-based planning theory and operationalised by Rao and Georgeff's agent-oriented programming languages). FIPA also standardised interaction protocol templates — the FIPA Contract Net Interaction Protocol, FIPA Iterated Contract Net, FIPA Request, FIPA Subscribe, FIPA Brokering, FIPA English Auction, FIPA Dutch Auction, FIPA Recruiting — that agents could instantiate for common coordination patterns without designing conversation state machines from scratch. The [[Contract Net Protocol]], originally proposed by Reid Smith in 1980 for distributed task allocation in computing systems, was canonised within FIPA and became the dominant mechanism for market-based resource and task allocation: a manager agent announces a task via a Call-For-Proposals message; participant agents evaluate the task and respond with proposals that specify their capability to perform the task and the cost they would require; the manager awards the contract to the optimal bidder with an ACCEPT-PROPOSAL message; the winner acknowledges with an AGREE and subsequently reports completion or failure; losing bidders receive REJECT-PROPOSAL. The JADE (Java Agent DEvelopment Framework, 1999) open-source platform provided a FIPA-compliant MAS middleware that was used in hundreds of academic and industrial deployments across logistics, telecommunications network management, e-commerce, supply chain management, and air traffic control simulation.
 
-  ## Components and Architecture
+The third and current era began around 2023–2024 with the explosive emergence of [[Large Language Model]]-based agents as the dominant paradigm for autonomous software task execution. LLM agents differ architecturally from classical FIPA BDI agents in four fundamental ways: (1) they do not maintain explicit symbolic BDI mental state representations but rather encode agent context implicitly in neural network activations and conversation history; (2) their "communication" occurs through natural language prompts and structured JSON tool-call schemas rather than formal speech act performatives; (3) their coordination happens through orchestration frameworks — AutoGen's ConversableAgent graph, LangGraph's DAG-based control flow, CrewAI's role-based task assignment — rather than through standards-compliant ACL message exchange; and (4) their capabilities are not described in formal ontology terms but in natural-language tool descriptions and system prompt summaries that the LLM is expected to reason about. This architectural shift created urgent demand for new lightweight, LLM-native communication protocols that provide enough structure for reliable multi-agent coordination without requiring the full formal apparatus of FIPA — protocols that could bridge the gap between the unstructured natural language that LLMs excel at and the structured, verifiable message exchange that production multi-agent systems require. Anthropic's [[Model Context Protocol]] (MCP, November 2024) addressed the most pressing sub-problem: a standardised protocol for LLM-agent-to-tool communication, defining how an LLM agent host (MCP client) discovers available tools from a tool provider (MCP server), invokes tools with type-validated inputs, and receives structured results. MCP uses JSON-RPC 2.0 as its wire protocol and supports stdio, HTTP/SSE, and WebSocket transports. Google's [[Agent-to-Agent Protocol]] (A2A, April 2025) addressed the complementary problem of agent-to-agent delegation: how one LLM-based agent (a client agent) discovers another agent's capabilities, creates a task delegation request, monitors execution progress, and retrieves task artifacts, using HTTP/SSE transport and Agent Card JSON capability manifests. In June 2025, Google transferred A2A to [[Linux Foundation]] governance as the Agent2Agent project, with over 50 founding technology partners expanding to over 150 by April 2026. IBM's ACP (open-sourced to Linux Foundation AI in 2024–2025) provides a REST-native brokered architecture where an ACP Server acts as registry and router, with multipart MIME supporting multimodal agent responses. The community [[Agent Network Protocol]] uses W3C [[Decentralised Identifier]]s and [[JSON-LD]] messages for trustless cross-organisation agent identity and communication, targeting the open, permissionless "agentic internet" where agents from different organisations can discover, authenticate, and transact with each other without central registry dependency.
 
-  **The Four-Layer Protocol Stack**
+## Components and Architecture
 
-  A complete agent communication protocol specifies behaviour across four interdependent layers:
+**The Four-Layer Protocol Stack**
 
-  - Transport layer: the physical mechanism for byte delivery. Classical FIPA agents used IIOP (CORBA), HTTP, and later XMPP. Modern LLM-based agents predominantly use HTTP/1.1 with Server-Sent Events (SSE) or [[WebSocket]] for long-lived connections, and stdio (standard input/output pipes) for subprocess agent communication (as in [[Model Context Protocol]]). AMQP and MQTT serve high-throughput IoT and robotics use cases.
-  - Envelope layer: the metadata wrapper that enables routing and context. FIPA's envelope specified sender and receiver agent identifiers, a conversation-id for multi-turn tracking, a language tag (FIPA-SL, Prolog, KIF), and an [[Ontology]] reference identifying the shared vocabulary. Modern equivalents include HTTP headers (Authorization, Content-Type), JSON-LD context references, and [[Agent-to-Agent Protocol]] Agent Cards (structured JSON documents advertising an agent's capabilities, endpoint URL, authentication requirements, and supported protocol version).
-  - Performative layer: the illocutionary force of the message. FIPA-ACL defines 22 performatives. Modern LLM agent frameworks compress this to simpler constructs: tool-call (equivalent to REQUEST), tool-result (equivalent to INFORM), delegate (equivalent to REQUEST combined with capability query), and error (equivalent to FAILURE or REFUSE). The [[Agent-to-Agent Protocol]] uses Task, TaskStatusUpdate, TaskArtifact, and AgentMessage primitives at the conversation layer.
-  - Conversation policy: the state machine governing valid message sequences. FIPA interaction protocols encode these as normative state machines with pre-conditions and post-conditions on each transition. Modern frameworks implement them as orchestration logic in LangGraph DAGs (directed acyclic graphs) or CrewAI role definitions, where the state machine is implicit in the graph topology rather than formally specified.
+A complete agent communication protocol specifies behaviour across four interdependent layers:
+
+- Transport layer: the physical mechanism for byte delivery. Classical FIPA agents used IIOP (CORBA), HTTP, and later XMPP. Modern LLM-based agents predominantly use HTTP/1.1 with Server-Sent Events (SSE) or [[WebSocket]] for long-lived connections, and stdio (standard input/output pipes) for subprocess agent communication (as in [[Model Context Protocol]]). AMQP and MQTT serve high-throughput IoT and robotics use cases.
+- Envelope layer: the metadata wrapper that enables routing and context. FIPA's envelope specified sender and receiver agent identifiers, a conversation-id for multi-turn tracking, a language tag (FIPA-SL, Prolog, KIF), and an [[Ontology]] reference identifying the shared vocabulary. Modern equivalents include HTTP headers (Authorization, Content-Type), JSON-LD context references, and [[Agent-to-Agent Protocol]] Agent Cards (structured JSON documents advertising an agent's capabilities, endpoint URL, authentication requirements, and supported protocol version).
+- Performative layer: the illocutionary force of the message. FIPA-ACL defines 22 performatives. Modern LLM agent frameworks compress this to simpler constructs: tool-call (equivalent to REQUEST), tool-result (equivalent to INFORM), delegate (equivalent to REQUEST combined with capability query), and error (equivalent to FAILURE or REFUSE). The [[Agent-to-Agent Protocol]] uses Task, TaskStatusUpdate, TaskArtifact, and AgentMessage primitives at the conversation layer.
+- Conversation policy: the state machine governing valid message sequences. FIPA interaction protocols encode these as normative state machines with pre-conditions and post-conditions on each transition. Modern frameworks implement them as orchestration logic in LangGraph DAGs (directed acyclic graphs) or CrewAI role definitions, where the state machine is implicit in the graph topology rather than formally specified.
 
   **Capability Advertisement and Discovery**
 
@@ -214,183 +214,200 @@ An Agent Communication Protocol is a formalised specification governing the synt
   ## Standards Landscape Summary
 
   **Active Standards (2026)**
-  - FIPA ACL SC00061G (2002): legacy but still authoritative reference for formal agent communication semantics; used as the theoretical baseline for comparing modern protocol designs.
-  - FIPA Contract Net Interaction Protocol SC00029H (2002): canonical reference for market-based task allocation; still cited in contemporary robotic coordination and [[Warehouse Automation]] implementations.
-  - W3C DID (Decentralised Identifiers) 1.0 (2022): W3C Recommendation; cryptographic, self-sovereign agent identity without central registry; foundation of [[Agent Network Protocol]].
-  - W3C Verifiable Credentials Data Model 2.0 (2024): W3C Recommendation; enables agents to hold and present verifiable credentials for capability attestation and trust establishment.
-  - OpenAPI 3.1 (2021): REST API description standard; used for ACP agent capability manifests and A2A task endpoint descriptions.
-  - JSON-RPC 2.0 (2010, IETF): wire protocol for [[Model Context Protocol]]; defines request/response/notification message structures over arbitrary transport.
-  - OAuth 2.0 (RFC 6749) + PKCE (RFC 7636): authentication framework used by A2A and MCP for agent identity verification and scoped capability authorisation.
-  - Server-Sent Events (W3C, 2021 WHATWG Living Standard): HTTP push notification mechanism; used by A2A and MCP for streaming task progress and tool result streaming.
-  - MQTT 5.0 (OASIS, 2019): publish-subscribe messaging protocol for IoT and edge agent coordination; quality-of-service levels 0 (at most once), 1 (at least once), 2 (exactly once).
-  - AMQP 1.0 (OASIS, 2012): enterprise messaging protocol; used in high-throughput agent communication in financial services and telecom network management.
+
+- FIPA ACL SC00061G (2002): legacy but still authoritative reference for formal agent communication semantics; used as the theoretical baseline for comparing modern protocol designs.
+- FIPA Contract Net Interaction Protocol SC00029H (2002): canonical reference for market-based task allocation; still cited in contemporary robotic coordination and [[Warehouse Automation]] implementations.
+- W3C DID (Decentralised Identifiers) 1.0 (2022): W3C Recommendation; cryptographic, self-sovereign agent identity without central registry; foundation of [[Agent Network Protocol]].
+- W3C Verifiable Credentials Data Model 2.0 (2024): W3C Recommendation; enables agents to hold and present verifiable credentials for capability attestation and trust establishment.
+- OpenAPI 3.1 (2021): REST API description standard; used for ACP agent capability manifests and A2A task endpoint descriptions.
+- JSON-RPC 2.0 (2010, IETF): wire protocol for [[Model Context Protocol]]; defines request/response/notification message structures over arbitrary transport.
+- OAuth 2.0 (RFC 6749) + PKCE (RFC 7636): authentication framework used by A2A and MCP for agent identity verification and scoped capability authorisation.
+- Server-Sent Events (W3C, 2021 WHATWG Living Standard): HTTP push notification mechanism; used by A2A and MCP for streaming task progress and tool result streaming.
+- MQTT 5.0 (OASIS, 2019): publish-subscribe messaging protocol for IoT and edge agent coordination; quality-of-service levels 0 (at most once), 1 (at least once), 2 (exactly once).
+- AMQP 1.0 (OASIS, 2012): enterprise messaging protocol; used in high-throughput agent communication in financial services and telecom network management.
 
   **Emerging and Proposed Standards**
-  - Linux Foundation Agent2Agent (A2A) Protocol v1.0 (expected 2026): vendor-neutral governance of the A2A specification; technical steering committee with multi-vendor representation.
-  - W3C Agent Identity Community Group: working on DID profile for AI agent identity use cases; informing [[Agent Network Protocol]] identity layer.
-  - IETF OAuth for Agents (2025 draft): OAuth 2.0 profile for autonomous agent authentication flows that do not involve human approval steps; addresses the "headless agent" authentication challenge.
-  - ISO/IEC JTC 1/SC 42 WG4 (AI Use Cases and Applications): working on vocabulary and framework for AI agent systems; may produce normative definitions relevant to agent communication protocol classification.
-  - NIST AI 100-1 (2023) Artificial Intelligence Risk Management Framework: provides risk management methodology applicable to multi-agent communication systems; informs organisational due diligence for [[Autonomous Task Execution]] workflows.
+
+- Linux Foundation Agent2Agent (A2A) Protocol v1.0 (expected 2026): vendor-neutral governance of the A2A specification; technical steering committee with multi-vendor representation.
+- W3C Agent Identity Community Group: working on DID profile for AI agent identity use cases; informing [[Agent Network Protocol]] identity layer.
+- IETF OAuth for Agents (2025 draft): OAuth 2.0 profile for autonomous agent authentication flows that do not involve human approval steps; addresses the "headless agent" authentication challenge.
+- ISO/IEC JTC 1/SC 42 WG4 (AI Use Cases and Applications): working on vocabulary and framework for AI agent systems; may produce normative definitions relevant to agent communication protocol classification.
+- NIST AI 100-1 (2023) Artificial Intelligence Risk Management Framework: provides risk management methodology applicable to multi-agent communication systems; informs organisational due diligence for [[Autonomous Task Execution]] workflows.
 
   ## Implementation Patterns and Deployment Architectures
 
   **Peer-to-Peer Agent Communication (A2A Pattern)**
-  - Client agent discovers server agent's Agent Card from a registry or well-known URL.
-  - Client initiates a task via POST to the server's task endpoint; receives a task ID.
-  - Client polls task status via GET or subscribes to server-sent events (SSE) for push updates.
-  - Server agent executes the task, streaming intermediate TaskArtifacts as they are produced.
-  - Client retrieves final TaskArtifacts on completion; stores or further processes results.
-  - Authentication: client obtains OAuth 2.0 bearer token; includes in Authorization header; server validates token and checks scope against task type.
-  - Error handling: HTTP 4xx for client errors (malformed task request, unauthorised capability); HTTP 5xx for server errors (agent runtime failure, model inference error); A2A TaskStatus with status "failed" for task-level failure with detailed error message.
+
+- Client agent discovers server agent's Agent Card from a registry or well-known URL.
+- Client initiates a task via POST to the server's task endpoint; receives a task ID.
+- Client polls task status via GET or subscribes to server-sent events (SSE) for push updates.
+- Server agent executes the task, streaming intermediate TaskArtifacts as they are produced.
+- Client retrieves final TaskArtifacts on completion; stores or further processes results.
+- Authentication: client obtains OAuth 2.0 bearer token; includes in Authorization header; server validates token and checks scope against task type.
+- Error handling: HTTP 4xx for client errors (malformed task request, unauthorised capability); HTTP 5xx for server errors (agent runtime failure, model inference error); A2A TaskStatus with status "failed" for task-level failure with detailed error message.
 
   **Brokered Architecture (ACP Pattern)**
-  - Agent clients register with the ACP Server, providing their capability manifest (similar to Agent Card but in ACP's schema).
-  - ACP Server maintains a registry of registered agents and their capabilities; provides capability-query API for agent discovery.
-  - Client agent sends a task message to the ACP Server with the desired capability specification; server routes to a matching registered agent.
-  - ACP Server acts as a logging and governance layer: logs all inter-agent messages; enforces access control policies; meters usage for billing; provides replay capability for audit.
-  - Multipart MIME responses support text, image, audio, code, and structured data in a single response; enables rich multimodal agent outputs.
-  - Enterprise integration: ACP Server deployed as an internal enterprise service; integrates with IAM (Identity and Access Management) for agent authentication; connects to enterprise API gateways and data loss prevention (DLP) systems.
+
+- Agent clients register with the ACP Server, providing their capability manifest (similar to Agent Card but in ACP's schema).
+- ACP Server maintains a registry of registered agents and their capabilities; provides capability-query API for agent discovery.
+- Client agent sends a task message to the ACP Server with the desired capability specification; server routes to a matching registered agent.
+- ACP Server acts as a logging and governance layer: logs all inter-agent messages; enforces access control policies; meters usage for billing; provides replay capability for audit.
+- Multipart MIME responses support text, image, audio, code, and structured data in a single response; enables rich multimodal agent outputs.
+- Enterprise integration: ACP Server deployed as an internal enterprise service; integrates with IAM (Identity and Access Management) for agent authentication; connects to enterprise API gateways and data loss prevention (DLP) systems.
 
   **Hub-and-Spoke Orchestration (LangGraph / AutoGen Pattern)**
-  - Orchestrator agent (hub) receives user request; decomposes into sub-tasks using a [[Task Planning]] algorithm or LLM reasoning.
-  - Orchestrator dispatches sub-tasks to specialist agents (spokes) via tool calls or structured [[Message Passing]].
-  - Specialist agents execute sub-tasks and return results to orchestrator; orchestrator aggregates and synthesises.
-  - State management: LangGraph encodes agent state as a typed dictionary passed between graph nodes; enables checkpoint-and-resume for long workflows.
-  - Conditional routing: LangGraph edges carry routing functions that select the next node based on the current state; enables dynamic task re-routing on failure or unexpected results.
-  - Human-in-the-loop: interrupt nodes in the LangGraph DAG pause execution and await human approval before proceeding; critical for high-stakes decisions.
+
+- Orchestrator agent (hub) receives user request; decomposes into sub-tasks using a [[Task Planning]] algorithm or LLM reasoning.
+- Orchestrator dispatches sub-tasks to specialist agents (spokes) via tool calls or structured [[Message Passing]].
+- Specialist agents execute sub-tasks and return results to orchestrator; orchestrator aggregates and synthesises.
+- State management: LangGraph encodes agent state as a typed dictionary passed between graph nodes; enables checkpoint-and-resume for long workflows.
+- Conditional routing: LangGraph edges carry routing functions that select the next node based on the current state; enables dynamic task re-routing on failure or unexpected results.
+- Human-in-the-loop: interrupt nodes in the LangGraph DAG pause execution and await human approval before proceeding; critical for high-stakes decisions.
 
   **Decentralised Agent Network (ANP Pattern)**
-  - Agent identity: each agent holds a W3C [[Decentralised Identifier]] (DID), resolvable to a DID Document containing public keys and service endpoints.
-  - Agent discovery: agents publish their DID and capability profile to a discovery index (comparable to a public DNS); other agents resolve DIDs and fetch capability documents.
-  - Authenticated channel establishment: agents use DID-based asymmetric key exchange (analogous to TLS mutual authentication) to establish an encrypted, authenticated communication channel.
-  - Message structure: [[JSON-LD]] messages with semantic context linking capability terms to shared [[Ontology]] definitions; enables machine-readable intent beyond informal natural-language descriptions.
-  - Trust without central authority: agents evaluate trust by verifying DID document integrity (cryptographic signature chain), checking verifiable credentials issued by trusted credential authorities, and consulting a distributed reputation ledger.
-  - Cross-organisation agent transactions: agent A (deployed by Organisation X) and agent B (deployed by Organisation Y) can communicate and transact without either organisation having a pre-existing commercial relationship or shared identity infrastructure.
+
+- Agent identity: each agent holds a W3C [[Decentralised Identifier]] (DID), resolvable to a DID Document containing public keys and service endpoints.
+- Agent discovery: agents publish their DID and capability profile to a discovery index (comparable to a public DNS); other agents resolve DIDs and fetch capability documents.
+- Authenticated channel establishment: agents use DID-based asymmetric key exchange (analogous to TLS mutual authentication) to establish an encrypted, authenticated communication channel.
+- Message structure: [[JSON-LD]] messages with semantic context linking capability terms to shared [[Ontology]] definitions; enables machine-readable intent beyond informal natural-language descriptions.
+- Trust without central authority: agents evaluate trust by verifying DID document integrity (cryptographic signature chain), checking verifiable credentials issued by trusted credential authorities, and consulting a distributed reputation ledger.
+- Cross-organisation agent transactions: agent A (deployed by Organisation X) and agent B (deployed by Organisation Y) can communicate and transact without either organisation having a pre-existing commercial relationship or shared identity infrastructure.
 
   ## Key Technical Components
 
   **Message Envelope Structure (FIPA ACL)**
-  - `:sender` — AID (Agent Identifier) of the sending agent; includes agent name, addresses (transport endpoints), and resolvers.
-  - `:receiver` — AID set of target agents; supports multicast by specifying multiple receivers.
-  - `:reply-to` — AID(s) to receive replies (if different from sender); enables broker and proxy patterns.
-  - `:content` — message payload; expressed in the specified language and ontology; may contain propositions, action descriptions, or referential expressions.
-  - `:language` — content language tag (e.g., `fipa-sl`, `kif`, `prolog`, `JSON`); enables heterogeneous agent knowledge representation.
-  - `:ontology` — shared ontology reference (OWL, RDF, or informal name string); grounds content interpretation.
-  - `:protocol` — interaction protocol name (e.g., `fipa-request`, `fipa-contract-net`, `fipa-subscribe`); identifies conversation type for state-machine management.
-  - `:conversation-id` — unique identifier for multi-turn conversation thread; links all messages in an interaction protocol instance.
-  - `:reply-with` — expression used by receiver to identify this message in its reply (analogous to HTTP request ID in REST correlation).
-  - `:in-reply-to` — the `:reply-with` value from the message being replied to; enables non-sequential out-of-order response handling.
-  - `:reply-by` — deadline timestamp for the expected reply; supports time-constrained negotiation protocols.
+
+- `:sender` — AID (Agent Identifier) of the sending agent; includes agent name, addresses (transport endpoints), and resolvers.
+- `:receiver` — AID set of target agents; supports multicast by specifying multiple receivers.
+- `:reply-to` — AID(s) to receive replies (if different from sender); enables broker and proxy patterns.
+- `:content` — message payload; expressed in the specified language and ontology; may contain propositions, action descriptions, or referential expressions.
+- `:language` — content language tag (e.g., `fipa-sl`, `kif`, `prolog`, `JSON`); enables heterogeneous agent knowledge representation.
+- `:ontology` — shared ontology reference (OWL, RDF, or informal name string); grounds content interpretation.
+- `:protocol` — interaction protocol name (e.g., `fipa-request`, `fipa-contract-net`, `fipa-subscribe`); identifies conversation type for state-machine management.
+- `:conversation-id` — unique identifier for multi-turn conversation thread; links all messages in an interaction protocol instance.
+- `:reply-with` — expression used by receiver to identify this message in its reply (analogous to HTTP request ID in REST correlation).
+- `:in-reply-to` — the `:reply-with` value from the message being replied to; enables non-sequential out-of-order response handling.
+- `:reply-by` — deadline timestamp for the expected reply; supports time-constrained negotiation protocols.
 
   **Contract Net Protocol State Machine**
-  - State 1 — INITIATE: manager agent determines task to be contracted out; constructs Call-For-Proposals (CFP) message with task description and deadline.
-  - State 2 — CFP BROADCAST: manager sends CFP to all potential contractor agents (broadcast or targeted subset based on directory lookup).
-  - State 3 — PROPOSAL COLLECTION: contractor agents evaluate the task against their capabilities and current workload; respond with either PROPOSE (including bid cost and capability evidence) or REFUSE (with reason).
-  - State 4 — PROPOSAL EVALUATION: manager evaluates all received proposals against selection criteria (cost, capability, reliability, deadline satisfaction); selects optimal bidder using a utility function or heuristic.
-  - State 5 — CONTRACT AWARD: manager sends ACCEPT-PROPOSAL to winning contractor; sends REJECT-PROPOSAL to all other contractors.
-  - State 6 — TASK EXECUTION: winning contractor executes the contracted task; sends progress updates if specified; sends INFORM with result upon completion or FAILURE if task cannot be completed.
-  - State 7 — RESULT PROCESSING: manager receives completion message; updates its world model; may re-contract if failure reported.
-  - Timeout handling: manager may CANCEL outstanding CFPs or contracts if `:reply-by` deadline exceeded; contractor may abandon if manager unresponsive.
-  - Iterated variant: manager issues multiple rounds of CFPs with progressively modified specifications; enables negotiation and refinement rather than single-round winner-take-all allocation.
+
+- State 1 — INITIATE: manager agent determines task to be contracted out; constructs Call-For-Proposals (CFP) message with task description and deadline.
+- State 2 — CFP BROADCAST: manager sends CFP to all potential contractor agents (broadcast or targeted subset based on directory lookup).
+- State 3 — PROPOSAL COLLECTION: contractor agents evaluate the task against their capabilities and current workload; respond with either PROPOSE (including bid cost and capability evidence) or REFUSE (with reason).
+- State 4 — PROPOSAL EVALUATION: manager evaluates all received proposals against selection criteria (cost, capability, reliability, deadline satisfaction); selects optimal bidder using a utility function or heuristic.
+- State 5 — CONTRACT AWARD: manager sends ACCEPT-PROPOSAL to winning contractor; sends REJECT-PROPOSAL to all other contractors.
+- State 6 — TASK EXECUTION: winning contractor executes the contracted task; sends progress updates if specified; sends INFORM with result upon completion or FAILURE if task cannot be completed.
+- State 7 — RESULT PROCESSING: manager receives completion message; updates its world model; may re-contract if failure reported.
+- Timeout handling: manager may CANCEL outstanding CFPs or contracts if `:reply-by` deadline exceeded; contractor may abandon if manager unresponsive.
+- Iterated variant: manager issues multiple rounds of CFPs with progressively modified specifications; enables negotiation and refinement rather than single-round winner-take-all allocation.
 
   **Agent-to-Agent Protocol (A2A) Message Primitives**
-  - Task: `{id, sessionId, status: "submitted", message: {role: "user", parts: [{type: "text", text: "…"}]}}`; initiates a new agent task; client-generated UUID id for correlation.
-  - TaskStatus: `{id, status: "working"|"completed"|"failed"|"canceled"|"input-required", message: {role: "agent", parts: [...]}}` ; streaming or polled progress updates from server agent.
-  - TaskArtifact: `{taskId, index, name, mimeType, parts: [{type: "text"|"file"|"data", …}]}` ; output fragments from agent execution; may be streamed as partial results during long-running tasks.
-  - AgentMessage: `{role: "user"|"agent", parts: [{type: "text", text: "…"}, {type: "image", mimeType: "image/png", data: "base64…"}]}` ; multi-modal message content supporting text, inline data, and file references.
-  - AgentCard: JSON document at `/.well-known/agent.json`; fields include `name`, `description`, `url` (task creation endpoint), `version`, `capabilities: {streaming: true, pushNotifications: false}`, `authentication: {schemes: ["bearer"]}`, `skills: [{id, name, description, inputModes, outputModes}]`.
+
+- Task: `{id, sessionId, status: "submitted", message: {role: "user", parts: [{type: "text", text: "…"}]}}`; initiates a new agent task; client-generated UUID id for correlation.
+- TaskStatus: `{id, status: "working"|"completed"|"failed"|"canceled"|"input-required", message: {role: "agent", parts: [...]}}` ; streaming or polled progress updates from server agent.
+- TaskArtifact: `{taskId, index, name, mimeType, parts: [{type: "text"|"file"|"data", …}]}` ; output fragments from agent execution; may be streamed as partial results during long-running tasks.
+- AgentMessage: `{role: "user"|"agent", parts: [{type: "text", text: "…"}, {type: "image", mimeType: "image/png", data: "base64…"}]}` ; multi-modal message content supporting text, inline data, and file references.
+- AgentCard: JSON document at `/.well-known/agent.json`; fields include `name`, `description`, `url` (task creation endpoint), `version`, `capabilities: {streaming: true, pushNotifications: false}`, `authentication: {schemes: ["bearer"]}`, `skills: [{id, name, description, inputModes, outputModes}]`.
 
   **Model Context Protocol (MCP) Primitives**
-  - Tool: `{name: string, description: string, inputSchema: JSONSchema}`; callable function exposed by MCP server; model-controlled (LLM decides when to call).
-  - Resource: `{uri: string, name: string, mimeType: string, description: string}`; data item exposed by MCP server for reading; application-controlled (host decides what to expose).
-  - Prompt: `{name: string, description: string, arguments: [{name, description, required}]}`; templated message sequence; user-controlled (human selects which prompt to use).
-  - `initialize` request: `{protocolVersion: "2024-11-05", capabilities: {sampling: {}, roots: {listChanged: true}}, clientInfo: {name: "claude-desktop", version: "1.0"}}`.
-  - `tools/call` request: `{name: "search_database", arguments: {"query": "affective computing 2025", "limit": 10}}`; JSON Schema-validated before forwarding.
-  - `CallToolResult`: `{content: [{type: "text", text: "…"}], isError: false}`; returned from server after tool execution; inserted into model context.
+
+- Tool: `{name: string, description: string, inputSchema: JSONSchema}`; callable function exposed by MCP server; model-controlled (LLM decides when to call).
+- Resource: `{uri: string, name: string, mimeType: string, description: string}`; data item exposed by MCP server for reading; application-controlled (host decides what to expose).
+- Prompt: `{name: string, description: string, arguments: [{name, description, required}]}`; templated message sequence; user-controlled (human selects which prompt to use).
+- `initialize` request: `{protocolVersion: "2024-11-05", capabilities: {sampling: {}, roots: {listChanged: true}}, clientInfo: {name: "claude-desktop", version: "1.0"}}`.
+- `tools/call` request: `{name: "search_database", arguments: {"query": "affective computing 2025", "limit": 10}}`; JSON Schema-validated before forwarding.
+- `CallToolResult`: `{content: [{type: "text", text: "…"}], isError: false}`; returned from server after tool execution; inserted into model context.
 
   ## Historical Development
 
   **Pre-KQML Era (1975–1992): Foundations in Distributed AI**
-  - 1975–1977: Hearsay-II speech understanding system at CMU establishes the blackboard architecture — knowledge sources communicate via a shared global data structure (the blackboard) rather than direct message exchange; precursor to multi-agent communication patterns.
-  - 1980: Reid Smith publishes "The Contract Net Protocol" in IEEE Transactions on Computers, providing the first formal task-allocation mechanism for heterogeneous distributed problem-solving networks; remains in active use 45 years later.
-  - 1981–1986: The Distributed Vehicle Monitoring Testbed (DVMT) at the University of Massachusetts (Victor Lesser's group) extends blackboard coordination to a fully distributed architecture, developing the concept of "partial global planning" for coordination without shared memory.
-  - 1988: Bond and Gasser compile *Readings in Distributed Artificial Intelligence*, institutionalising DAI as a research field and establishing the canonical framework distinguishing distributed problem solving, parallel AI, and multi-agent systems.
-  - 1990: DARPA Knowledge Sharing Effort (KSE) begins, funding development of a common knowledge representation and communication infrastructure for knowledge-based systems; produces the Knowledge Interchange Format (KIF) and initiates KQML development.
+
+- 1975–1977: Hearsay-II speech understanding system at CMU establishes the blackboard architecture — knowledge sources communicate via a shared global data structure (the blackboard) rather than direct message exchange; precursor to multi-agent communication patterns.
+- 1980: Reid Smith publishes "The Contract Net Protocol" in IEEE Transactions on Computers, providing the first formal task-allocation mechanism for heterogeneous distributed problem-solving networks; remains in active use 45 years later.
+- 1981–1986: The Distributed Vehicle Monitoring Testbed (DVMT) at the University of Massachusetts (Victor Lesser's group) extends blackboard coordination to a fully distributed architecture, developing the concept of "partial global planning" for coordination without shared memory.
+- 1988: Bond and Gasser compile *Readings in Distributed Artificial Intelligence*, institutionalising DAI as a research field and establishing the canonical framework distinguishing distributed problem solving, parallel AI, and multi-agent systems.
+- 1990: DARPA Knowledge Sharing Effort (KSE) begins, funding development of a common knowledge representation and communication infrastructure for knowledge-based systems; produces the Knowledge Interchange Format (KIF) and initiates KQML development.
 
   **KQML Era (1992–2000): First Agent Communication Languages**
-  - 1992: Finin, Fritzson, McKay, and McEntire propose KQML at the ACM CIKM-94 (presented 1993); first publication of a dedicated agent communication language with a vocabulary of communicative performatives and a transport-neutral message envelope.
-  - 1993: Shoham publishes "Agent-Oriented Programming" in Artificial Intelligence (AI journal), introducing AGENT-0 with commitment-based semantics; establishes the connection between speech act theory, BDI mental states, and agent programming.
-  - 1994–1996: Multiple KQML implementations appear: DARPA's Interoperability Testbed, the ULTRALOG logistics planning system, the RETSINA multi-agent infrastructure at Carnegie Mellon, and numerous academic MAS projects. Interoperability problems emerge as implementations diverge.
-  - 1995: Wooldridge and Jennings publish "Intelligent Agents: Theory and Practice" in *Knowledge Engineering Review*; becomes the most-cited paper in agent systems research.
-  - 1996: FIPA (Foundation for Intelligent Physical Agents) established in Geneva with founding members including Telecom Italia, British Telecom, Siemens, Nortel, NEC, and others; begins standardisation work on agent communication.
-  - 1997: Singh publishes critique of KQML's informal semantics in *IEEE Computer*, motivating the formal-semantics approach that FIPA would adopt.
+
+- 1992: Finin, Fritzson, McKay, and McEntire propose KQML at the ACM CIKM-94 (presented 1993); first publication of a dedicated agent communication language with a vocabulary of communicative performatives and a transport-neutral message envelope.
+- 1993: Shoham publishes "Agent-Oriented Programming" in Artificial Intelligence (AI journal), introducing AGENT-0 with commitment-based semantics; establishes the connection between speech act theory, BDI mental states, and agent programming.
+- 1994–1996: Multiple KQML implementations appear: DARPA's Interoperability Testbed, the ULTRALOG logistics planning system, the RETSINA multi-agent infrastructure at Carnegie Mellon, and numerous academic MAS projects. Interoperability problems emerge as implementations diverge.
+- 1995: Wooldridge and Jennings publish "Intelligent Agents: Theory and Practice" in *Knowledge Engineering Review*; becomes the most-cited paper in agent systems research.
+- 1996: FIPA (Foundation for Intelligent Physical Agents) established in Geneva with founding members including Telecom Italia, British Telecom, Siemens, Nortel, NEC, and others; begins standardisation work on agent communication.
+- 1997: Singh publishes critique of KQML's informal semantics in *IEEE Computer*, motivating the formal-semantics approach that FIPA would adopt.
 
   **FIPA Era (2000–2015): Standards and Industrial Deployment**
-  - 2000: FIPA ACL specification formally ratified; 22 communicative act types with BDI-grounded pre- and post-conditions; FIPA Interaction Protocol Library specifying Request, Contract Net, Subscribe, English Auction, Dutch Auction, Brokering, and Recruiting protocols.
-  - 1999–2001: JADE (Java Agent DEvelopment Framework) developed at TILAB/Telecom Italia Lab (Genova); FIPA-compliant middleware with AMS, DF, and message transport services; becomes the dominant open-source MAS platform.
-  - 2001–2010: Peak of FIPA-era academic and industrial deployment: JADE-based systems in telecom network management (fault diagnosis, service provisioning), logistics scheduling (DHL pilot, Dutch Port of Rotterdam coordination), air traffic flow management (Eurocontrol MASDOP project), electricity market simulation, and e-procurement.
-  - 2002: FIPA ceases active operations as a standards body (its specifications remain active and widely referenced); the agent.fipa.org website continues to serve the archived specifications.
-  - 2008: W3C OWL-S Web Service Ontology (drafted Southampton group) provides semantic web foundation for agent capability description; anticipates modern capability advertisement mechanisms in A2A Agent Cards.
-  - 2009: Shoham and Leyton-Brown publish *Multiagent Systems: Algorithmic, Game-Theoretic, and Logical Foundations* (Cambridge University Press); becomes the standard graduate-level MAS reference.
-  - 2013: AutoGen precursors begin appearing in Microsoft Research as lightweight LLM coordination frameworks; marks early experiments with LLM-based agent orchestration.
+
+- 2000: FIPA ACL specification formally ratified; 22 communicative act types with BDI-grounded pre- and post-conditions; FIPA Interaction Protocol Library specifying Request, Contract Net, Subscribe, English Auction, Dutch Auction, Brokering, and Recruiting protocols.
+- 1999–2001: JADE (Java Agent DEvelopment Framework) developed at TILAB/Telecom Italia Lab (Genova); FIPA-compliant middleware with AMS, DF, and message transport services; becomes the dominant open-source MAS platform.
+- 2001–2010: Peak of FIPA-era academic and industrial deployment: JADE-based systems in telecom network management (fault diagnosis, service provisioning), logistics scheduling (DHL pilot, Dutch Port of Rotterdam coordination), air traffic flow management (Eurocontrol MASDOP project), electricity market simulation, and e-procurement.
+- 2002: FIPA ceases active operations as a standards body (its specifications remain active and widely referenced); the agent.fipa.org website continues to serve the archived specifications.
+- 2008: W3C OWL-S Web Service Ontology (drafted Southampton group) provides semantic web foundation for agent capability description; anticipates modern capability advertisement mechanisms in A2A Agent Cards.
+- 2009: Shoham and Leyton-Brown publish *Multiagent Systems: Algorithmic, Game-Theoretic, and Logical Foundations* (Cambridge University Press); becomes the standard graduate-level MAS reference.
+- 2013: AutoGen precursors begin appearing in Microsoft Research as lightweight LLM coordination frameworks; marks early experiments with LLM-based agent orchestration.
 
   **LLM-Native Era (2023–Present): Emergence of New Protocol Standards**
-  - 2023: AutoGen (Microsoft Research) released as open-source multi-agent LLM framework; CrewAI launches; LangGraph released by LangChain. All use structured JSON for tool calls and natural language for inter-agent instruction; the "performative layer" becomes implicit.
-  - November 2024: Anthropic publishes [[Model Context Protocol]] specification v0.1; open-sourced immediately; first production-grade LLM-native agent-to-tool communication standard.
-  - March 2025: OpenAI releases Agents SDK (replacing experimental Swarm framework); provides handoff primitives for conversation state transfer between specialist LLM agents.
-  - April 2025: Google announces [[Agent-to-Agent Protocol]] (A2A) with 50+ founding technology partners; first production-grade LLM-native agent-to-agent task delegation standard; uses HTTP/SSE transport and Agent Cards for capability advertisement.
-  - June 2025: Google transfers A2A to [[Linux Foundation]] governance as Agent2Agent project; first vendor-neutral governance for a modern agent communication protocol.
-  - 2024–2025: IBM open-sources ACP (Agent Communication Protocol) to Linux Foundation AI; community releases [[Agent Network Protocol]] specification with W3C DID and JSON-LD foundations.
-  - February 2026: arXiv paper arXiv:2604.02369 ("Beyond Message Passing: A Semantic View of Agent Communication Protocols") argues for [[Ontology]]-grounded capability schemas as a precondition for true agent interoperability; marks re-emergence of Semantic Web approaches in agent protocol design.
-  - April 2026: A2A membership exceeds 150 organisations; MCP ecosystem exceeds 2,500 open-source server implementations.
+
+- 2023: AutoGen (Microsoft Research) released as open-source multi-agent LLM framework; CrewAI launches; LangGraph released by LangChain. All use structured JSON for tool calls and natural language for inter-agent instruction; the "performative layer" becomes implicit.
+- November 2024: Anthropic publishes [[Model Context Protocol]] specification v0.1; open-sourced immediately; first production-grade LLM-native agent-to-tool communication standard.
+- March 2025: OpenAI releases Agents SDK (replacing experimental Swarm framework); provides handoff primitives for conversation state transfer between specialist LLM agents.
+- April 2025: Google announces [[Agent-to-Agent Protocol]] (A2A) with 50+ founding technology partners; first production-grade LLM-native agent-to-agent task delegation standard; uses HTTP/SSE transport and Agent Cards for capability advertisement.
+- June 2025: Google transfers A2A to [[Linux Foundation]] governance as Agent2Agent project; first vendor-neutral governance for a modern agent communication protocol.
+- 2024–2025: IBM open-sources ACP (Agent Communication Protocol) to Linux Foundation AI; community releases [[Agent Network Protocol]] specification with W3C DID and JSON-LD foundations.
+- February 2026: arXiv paper arXiv:2604.02369 ("Beyond Message Passing: A Semantic View of Agent Communication Protocols") argues for [[Ontology]]-grounded capability schemas as a precondition for true agent interoperability; marks re-emergence of Semantic Web approaches in agent protocol design.
+- April 2026: A2A membership exceeds 150 organisations; MCP ecosystem exceeds 2,500 open-source server implementations.
 
   ## Protocol Specification Reference
 
   **FIPA ACL Message Fields**
-  - `:sender` — the identity of the agent sending the message (AID: Agent Identifier)
-  - `:receiver` — the agent or agents to whom the message is directed (a set of AIDs)
-  - `:reply-to` — the agent(s) to which subsequent replies should be addressed if different from sender
-  - `:content` — the content of the message expressed in the `:language` and `:ontology` specified
-  - `:language` — the language used to express the content (FIPA-SL, Prolog, KIF, etc.)
-  - `:encoding` — the encoding of the message content (UTF-8, base64, etc.)
-  - `:ontology` — the ontology used to give meaning to content expressions
-  - `:protocol` — the name of the interaction protocol to which this message belongs
-  - `:conversation-id` — an expression which is used to identify an ongoing sequence of communicative acts
-  - `:reply-with` — an expression that will be used by the responding agent to identify the message
-  - `:in-reply-to` — the expression contained in reply-with of the message to which this is a reply
-  - `:reply-by` — a time/date expression indicating the latest time by which the sender requires a reply
+
+- `:sender` — the identity of the agent sending the message (AID: Agent Identifier)
+- `:receiver` — the agent or agents to whom the message is directed (a set of AIDs)
+- `:reply-to` — the agent(s) to which subsequent replies should be addressed if different from sender
+- `:content` — the content of the message expressed in the `:language` and `:ontology` specified
+- `:language` — the language used to express the content (FIPA-SL, Prolog, KIF, etc.)
+- `:encoding` — the encoding of the message content (UTF-8, base64, etc.)
+- `:ontology` — the ontology used to give meaning to content expressions
+- `:protocol` — the name of the interaction protocol to which this message belongs
+- `:conversation-id` — an expression which is used to identify an ongoing sequence of communicative acts
+- `:reply-with` — an expression that will be used by the responding agent to identify the message
+- `:in-reply-to` — the expression contained in reply-with of the message to which this is a reply
+- `:reply-by` — a time/date expression indicating the latest time by which the sender requires a reply
 
   **FIPA ACL Performative Types (22 total)**
-  - ACCEPT-PROPOSAL: accept a previously submitted proposal
-  - AGREE: agree to perform a requested action
-  - CANCEL: inform that the sender is no longer committed to an earlier action
-  - CFP (Call For Proposals): initiate a negotiation to perform a given action
-  - CONFIRM: confirm the truth of a proposition already believed to be true
-  - DISCONFIRM: deny the truth of a proposition
-  - FAILURE: inform that an attempted action failed
-  - INFORM: inform the receiver that a given proposition is true
-  - INFORM-IF: request the receiver to inform whether a proposition is true or false
-  - INFORM-REF: request the receiver to inform what object a referential expression denotes
-  - NOT-UNDERSTOOD: notify sender that a message was not understood
-  - PROPOSE: submit a proposal in response to a CFP
-  - QUERY-IF: ask whether a proposition is true
-  - QUERY-REF: ask the value of a referential expression
-  - REFUSE: refuse to perform an action, explaining why
-  - REJECT-PROPOSAL: reject a previously submitted proposal
-  - REQUEST: request an action from the receiver
-  - REQUEST-WHEN: request an action to be performed when a condition becomes true
-  - REQUEST-WHENEVER: request an action to be performed whenever a condition becomes true
-  - SUBSCRIBE: register interest in an information source for ongoing updates
-  - PROXY: ask the receiver to select target agents and forward the embedded message
-  - PROPAGATE: ask the receiver to forward the embedded message to agents matching a description
+
+- ACCEPT-PROPOSAL: accept a previously submitted proposal
+- AGREE: agree to perform a requested action
+- CANCEL: inform that the sender is no longer committed to an earlier action
+- CFP (Call For Proposals): initiate a negotiation to perform a given action
+- CONFIRM: confirm the truth of a proposition already believed to be true
+- DISCONFIRM: deny the truth of a proposition
+- FAILURE: inform that an attempted action failed
+- INFORM: inform the receiver that a given proposition is true
+- INFORM-IF: request the receiver to inform whether a proposition is true or false
+- INFORM-REF: request the receiver to inform what object a referential expression denotes
+- NOT-UNDERSTOOD: notify sender that a message was not understood
+- PROPOSE: submit a proposal in response to a CFP
+- QUERY-IF: ask whether a proposition is true
+- QUERY-REF: ask the value of a referential expression
+- REFUSE: refuse to perform an action, explaining why
+- REJECT-PROPOSAL: reject a previously submitted proposal
+- REQUEST: request an action from the receiver
+- REQUEST-WHEN: request an action to be performed when a condition becomes true
+- REQUEST-WHENEVER: request an action to be performed whenever a condition becomes true
+- SUBSCRIBE: register interest in an information source for ongoing updates
+- PROXY: ask the receiver to select target agents and forward the embedded message
+- PROPAGATE: ask the receiver to forward the embedded message to agents matching a description
 
   **Modern A2A Protocol Task States**
-  - `submitted`: task received by agent server, queued for processing
-  - `working`: agent is actively processing the task; may emit intermediate TaskArtifact messages
-  - `input-required`: agent requires additional user input or clarification before proceeding
-  - `completed`: task successfully finished; final TaskArtifact(s) available
-  - `failed`: task could not be completed; error details provided in status message
-  - `canceled`: task was canceled by client request before completion
+
+- `submitted`: task received by agent server, queued for processing
+- `working`: agent is actively processing the task; may emit intermediate TaskArtifact messages
+- `input-required`: agent requires additional user input or clarification before proceeding
+- `completed`: task successfully finished; final TaskArtifact(s) available
+- `failed`: task could not be completed; error details provided in status message
+- `canceled`: task was canceled by client request before completion
 
   ## Research and Literature
 
@@ -423,5 +440,5 @@ An Agent Communication Protocol is a formalised specification governing the synt
   27. Zylos Research. (2026). "Agent Interoperability Protocols 2026: MCP, A2A, ACP and the Path to Convergence." https://zylos.ai/research/2026-03-26-agent-interoperability-protocols-mcp-a2a-acp-convergence/
   28. Digital Applied. (2026). "AI Agent Protocol Ecosystem Map 2026." https://www.digitalapplied.com/blog/ai-agent-protocol-ecosystem-map-2026-mcp-a2a-acp-ucp
 
-- ### Provenance
+### Provenance
 

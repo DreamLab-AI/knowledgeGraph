@@ -1,167 +1,167 @@
-
 A discipline that extends or supplants the optical and electromechanical capabilities of a camera system through digital computation, combining multiple sensor readings, learned priors, and algorithmic inference to produce images that no single physical exposure could yield. The field integrates optics, signal processing, machine learning, and human visual perception to reconstruct scene radiance, estimate scene geometry, and synthesise perceptually superior final images.
 
-- ### Semantic Classification
+### Semantic Classification
 
-- ### Content
-  ## Compositional Relationships (Components)
-  ```
-  SubClassOf(ai:ComputationalPhotography
-    ObjectSomeValuesFrom(ai:hasPart ai:MultiFrameFusion))
-  SubClassOf(ai:ComputationalPhotography
-    ObjectSomeValuesFrom(ai:hasPart ai:HDRImaging))
-  SubClassOf(ai:ComputationalPhotography
-    ObjectSomeValuesFrom(ai:hasPart ai:NeuralImageSignalProcessor))
-  SubClassOf(ai:ComputationalPhotography
-    ObjectSomeValuesFrom(ai:hasPart ai:DepthEstimation))
-  SubClassOf(ai:ComputationalPhotography
-    ObjectSomeValuesFrom(ai:hasPart ai:SemanticSegmentation))
-  SubClassOf(ai:ComputationalPhotography
-    ObjectSomeValuesFrom(ai:hasPart ai:SuperResolution))
-  SubClassOf(ai:ComputationalPhotography
-    ObjectSomeValuesFrom(ai:hasPart ai:BokehSimulation))
-  SubClassOf(ai:ComputationalPhotography
-    ObjectSomeValuesFrom(ai:hasPart ai:NightModePhotography))
-  SubClassOf(ai:ComputationalPhotography
-    ObjectSomeValuesFrom(ai:hasPart ai:ToneMapping))
-  SubClassOf(ai:ComputationalPhotography
-    ObjectSomeValuesFrom(ai:hasPart ai:Demosaicing))
-  SubClassOf(ai:ComputationalPhotography
-    ObjectSomeValuesFrom(ai:hasPart ai:ImageNoiseReduction))
-  SubClassOf(ai:ComputationalPhotography
-    ObjectSomeValuesFrom(ai:hasPart ai:VideoStabilisation))
-  SubClassOf(ai:ComputationalPhotography
-    ObjectSomeValuesFrom(ai:hasPart ai:ExposureFusion))
-  ```
-  ## Dependency Relationships
-  ```
-  SubClassOf(ai:ComputationalPhotography
-    ObjectSomeValuesFrom(ai:requires ai:Camera))
-  SubClassOf(ai:ComputationalPhotography
-    ObjectSomeValuesFrom(ai:requires ai:ImageSensor))
-  SubClassOf(ai:ComputationalPhotography
-    ObjectSomeValuesFrom(ai:requires ai:GPUCompute))
-  SubClassOf(ai:ComputationalPhotography
-    ObjectSomeValuesFrom(ai:requires ai:NeuralNetwork))
-  SubClassOf(ai:ComputationalPhotography
-    ObjectSomeValuesFrom(ai:requires ai:RawImagePipeline))
-  SubClassOf(ai:ComputationalPhotography
-    ObjectSomeValuesFrom(ai:requires ai:ImageFormationModel))
-  ```
-  ## Capability Relationships
-  ```
-  SubClassOf(ai:ComputationalPhotography
-    ObjectSomeValuesFrom(ai:enables ai:ComputerVision))
-  SubClassOf(ai:ComputationalPhotography
-    ObjectSomeValuesFrom(ai:enables ai:3DReconstruction))
-  SubClassOf(ai:ComputationalPhotography
-    ObjectSomeValuesFrom(ai:enables ai:AugmentedReality))
-  SubClassOf(ai:ComputationalPhotography
-    ObjectSomeValuesFrom(ai:enables ai:MedicalImaging))
-  SubClassOf(ai:ComputationalPhotography
-    ObjectSomeValuesFrom(ai:enables ai:SatelliteImagery))
-  SubClassOf(ai:ComputationalPhotography
-    ObjectSomeValuesFrom(ai:enables ai:SceneUnderstanding))
-  SubClassOf(ai:ComputationalPhotography
-    ObjectSomeValuesFrom(ai:enables ai:FaceDetection))
-  ```
-  ## Implementation Relationships
-  ```
-  SubClassOf(ai:ComputationalPhotography
-    ObjectSomeValuesFrom(ai:implements ai:DeepLearning))
-  SubClassOf(ai:ComputationalPhotography
-    ObjectSomeValuesFrom(ai:implements ai:ConvolutionalNeuralNetwork))
-  SubClassOf(ai:ComputationalPhotography
-    ObjectSomeValuesFrom(ai:implements ai:SignalProcessing))
-  SubClassOf(ai:ComputationalPhotography
-    ObjectSomeValuesFrom(ai:implements ai:OpticalFlow))
-  SubClassOf(ai:ComputationalPhotography
-    ObjectSomeValuesFrom(ai:implements ai:ColourScience))
-  SubClassOf(ai:ComputationalPhotography
-    ObjectSomeValuesFrom(ai:implements ai:GenerativeAdversarialNetwork))
-  SubClassOf(ai:ComputationalPhotography
-    ObjectSomeValuesFrom(ai:implements ai:TransformerArchitecture))
-  ```
-  ## Reduction Relationships
-  ```
-  SubClassOf(ai:ComputationalPhotography
-    ObjectSomeValuesFrom(ai:reducesTo ai:ImageProcessing))
-  SubClassOf(ai:ComputationalPhotography
-    ObjectSomeValuesFrom(ai:reducesTo ai:ComputationalImaging))
-  ```
-  ## Additional Axioms (Supports / Uses / ContrastsWith)
-  ```
-  SubClassOf(ai:ComputationalPhotography
-    ObjectSomeValuesFrom(ai:supports ai:Smartphone))
-  SubClassOf(ai:ComputationalPhotography
-    ObjectSomeValuesFrom(ai:supports ai:RealTimeRendering))
-  SubClassOf(ai:ComputationalPhotography
-    ObjectSomeValuesFrom(ai:uses ai:GenerativeAdversarialNetwork))
-  SubClassOf(ai:ComputationalPhotography
-    ObjectSomeValuesFrom(ai:uses ai:DiffusionModel))
-  SubClassOf(ai:ComputationalPhotography
-    ObjectSomeValuesFrom(ai:uses ai:TransformerArchitecture))
-  SubClassOf(ai:ComputationalPhotography
-    ObjectSomeValuesFrom(ai:uses ai:LightFieldCamera))
-  SubClassOf(ai:ComputationalPhotography
-    ObjectSomeValuesFrom(ai:contrastsWith ai:Optics))
-  SubClassOf(ai:ComputationalPhotography
-    ObjectSomeValuesFrom(ai:relatedTo ai:NeRF))
-  SubClassOf(ai:ComputationalPhotography
-    ObjectSomeValuesFrom(ai:relatedTo ai:SceneUnderstanding))
-  SubClassOf(ai:ComputationalPhotography
-    ObjectSomeValuesFrom(ai:relatedTo ai:VideoStabilisation))
-  ```
+### Content
 
-  ## About
+## Compositional Relationships (Components)
+```
+SubClassOf(ai:ComputationalPhotography
+  ObjectSomeValuesFrom(ai:hasPart ai:MultiFrameFusion))
+SubClassOf(ai:ComputationalPhotography
+  ObjectSomeValuesFrom(ai:hasPart ai:HDRImaging))
+SubClassOf(ai:ComputationalPhotography
+  ObjectSomeValuesFrom(ai:hasPart ai:NeuralImageSignalProcessor))
+SubClassOf(ai:ComputationalPhotography
+  ObjectSomeValuesFrom(ai:hasPart ai:DepthEstimation))
+SubClassOf(ai:ComputationalPhotography
+  ObjectSomeValuesFrom(ai:hasPart ai:SemanticSegmentation))
+SubClassOf(ai:ComputationalPhotography
+  ObjectSomeValuesFrom(ai:hasPart ai:SuperResolution))
+SubClassOf(ai:ComputationalPhotography
+  ObjectSomeValuesFrom(ai:hasPart ai:BokehSimulation))
+SubClassOf(ai:ComputationalPhotography
+  ObjectSomeValuesFrom(ai:hasPart ai:NightModePhotography))
+SubClassOf(ai:ComputationalPhotography
+  ObjectSomeValuesFrom(ai:hasPart ai:ToneMapping))
+SubClassOf(ai:ComputationalPhotography
+  ObjectSomeValuesFrom(ai:hasPart ai:Demosaicing))
+SubClassOf(ai:ComputationalPhotography
+  ObjectSomeValuesFrom(ai:hasPart ai:ImageNoiseReduction))
+SubClassOf(ai:ComputationalPhotography
+  ObjectSomeValuesFrom(ai:hasPart ai:VideoStabilisation))
+SubClassOf(ai:ComputationalPhotography
+  ObjectSomeValuesFrom(ai:hasPart ai:ExposureFusion))
+```
+## Dependency Relationships
+```
+SubClassOf(ai:ComputationalPhotography
+  ObjectSomeValuesFrom(ai:requires ai:Camera))
+SubClassOf(ai:ComputationalPhotography
+  ObjectSomeValuesFrom(ai:requires ai:ImageSensor))
+SubClassOf(ai:ComputationalPhotography
+  ObjectSomeValuesFrom(ai:requires ai:GPUCompute))
+SubClassOf(ai:ComputationalPhotography
+  ObjectSomeValuesFrom(ai:requires ai:NeuralNetwork))
+SubClassOf(ai:ComputationalPhotography
+  ObjectSomeValuesFrom(ai:requires ai:RawImagePipeline))
+SubClassOf(ai:ComputationalPhotography
+  ObjectSomeValuesFrom(ai:requires ai:ImageFormationModel))
+```
+## Capability Relationships
+```
+SubClassOf(ai:ComputationalPhotography
+  ObjectSomeValuesFrom(ai:enables ai:ComputerVision))
+SubClassOf(ai:ComputationalPhotography
+  ObjectSomeValuesFrom(ai:enables ai:3DReconstruction))
+SubClassOf(ai:ComputationalPhotography
+  ObjectSomeValuesFrom(ai:enables ai:AugmentedReality))
+SubClassOf(ai:ComputationalPhotography
+  ObjectSomeValuesFrom(ai:enables ai:MedicalImaging))
+SubClassOf(ai:ComputationalPhotography
+  ObjectSomeValuesFrom(ai:enables ai:SatelliteImagery))
+SubClassOf(ai:ComputationalPhotography
+  ObjectSomeValuesFrom(ai:enables ai:SceneUnderstanding))
+SubClassOf(ai:ComputationalPhotography
+  ObjectSomeValuesFrom(ai:enables ai:FaceDetection))
+```
+## Implementation Relationships
+```
+SubClassOf(ai:ComputationalPhotography
+  ObjectSomeValuesFrom(ai:implements ai:DeepLearning))
+SubClassOf(ai:ComputationalPhotography
+  ObjectSomeValuesFrom(ai:implements ai:ConvolutionalNeuralNetwork))
+SubClassOf(ai:ComputationalPhotography
+  ObjectSomeValuesFrom(ai:implements ai:SignalProcessing))
+SubClassOf(ai:ComputationalPhotography
+  ObjectSomeValuesFrom(ai:implements ai:OpticalFlow))
+SubClassOf(ai:ComputationalPhotography
+  ObjectSomeValuesFrom(ai:implements ai:ColourScience))
+SubClassOf(ai:ComputationalPhotography
+  ObjectSomeValuesFrom(ai:implements ai:GenerativeAdversarialNetwork))
+SubClassOf(ai:ComputationalPhotography
+  ObjectSomeValuesFrom(ai:implements ai:TransformerArchitecture))
+```
+## Reduction Relationships
+```
+SubClassOf(ai:ComputationalPhotography
+  ObjectSomeValuesFrom(ai:reducesTo ai:ImageProcessing))
+SubClassOf(ai:ComputationalPhotography
+  ObjectSomeValuesFrom(ai:reducesTo ai:ComputationalImaging))
+```
+## Additional Axioms (Supports / Uses / ContrastsWith)
+```
+SubClassOf(ai:ComputationalPhotography
+  ObjectSomeValuesFrom(ai:supports ai:Smartphone))
+SubClassOf(ai:ComputationalPhotography
+  ObjectSomeValuesFrom(ai:supports ai:RealTimeRendering))
+SubClassOf(ai:ComputationalPhotography
+  ObjectSomeValuesFrom(ai:uses ai:GenerativeAdversarialNetwork))
+SubClassOf(ai:ComputationalPhotography
+  ObjectSomeValuesFrom(ai:uses ai:DiffusionModel))
+SubClassOf(ai:ComputationalPhotography
+  ObjectSomeValuesFrom(ai:uses ai:TransformerArchitecture))
+SubClassOf(ai:ComputationalPhotography
+  ObjectSomeValuesFrom(ai:uses ai:LightFieldCamera))
+SubClassOf(ai:ComputationalPhotography
+  ObjectSomeValuesFrom(ai:contrastsWith ai:Optics))
+SubClassOf(ai:ComputationalPhotography
+  ObjectSomeValuesFrom(ai:relatedTo ai:NeRF))
+SubClassOf(ai:ComputationalPhotography
+  ObjectSomeValuesFrom(ai:relatedTo ai:SceneUnderstanding))
+SubClassOf(ai:ComputationalPhotography
+  ObjectSomeValuesFrom(ai:relatedTo ai:VideoStabilisation))
+```
 
-  Computational photography represents the convergence of physical imaging science with the full toolkit of modern [[Deep Learning]] and classical [[Signal Processing]]. The term was coined by Steve Mann in 1995 and re-defined with broader scope by Marc Levoy in his 2004 Stanford course and the 2005 IEEE International Symposium on Computational Photography. Where traditional imaging design asks "what lens and sensor configuration will capture a desired image?", computational photography reframes the question as "what [[Image Formation Model]] and reconstruction algorithm will produce the best result from the available light?" This shift decouples image quality from optics budget: a small-aperture [[Smartphone]] [[Camera]] can achieve dynamic range and resolution previously exclusive to studio equipment, through [[Multi-Frame Fusion]] of dozens of raw frames, [[Neural Network]]-based denoising, and [[Super Resolution]] upsampling. The economic consequences are profound: a smartphone costing under £500 now routinely produces images in low-light conditions that exceed what a £3,000 DSLR with a £1,000 fast prime lens could produce from a single exposure. This capability democratisation has compressed the professional imaging market while simultaneously creating a mass-market user base for computational photography that is orders of magnitude larger than the professional photography market ever was.
+## About
 
-  The critical enabling infrastructure is the [[Neural Image Signal Processor]] (Neural ISP), an end-to-end learned replacement for the classical hand-crafted camera ISP chain. Classical ISPs perform fixed-point arithmetic on the raw Bayer mosaic, applying [[Demosaicing]], white balance, tone curves, and sharpening in a fixed sequence tuned by imaging scientists through laborious manual calibration against test charts and scene categories. Neural ISPs instead train on paired RAW/reference datasets — typically millions of RAW frames paired with reference exposures from high-end cameras with fast lenses in controlled conditions — to jointly optimise all these steps end-to-end, achieving superior performance on difficult scenes that defeat hand-tuned pipelines: underexposed interiors with mixed colour temperature illumination, fast-moving subjects in dim environments, high-frequency texture in scenes with extreme luminance range. Qualcomm's Snapdragon 8 Gen 3 ISP (2024) integrates dedicated neural processing units enabling real-time on-device inference for computational photography tasks at up to 4K resolution, processing at sustained 30fps with total power budgets under 2W. The competitive landscape among chipset vendors — Qualcomm, MediaTek, Samsung Exynos, and Apple's own silicon — is now substantially defined by the quality of each vendor's neural ISP implementation, making computational photography a key differentiator in a smartphone hardware market where sensor and optics improvements have reached diminishing returns.
+Computational photography represents the convergence of physical imaging science with the full toolkit of modern [[Deep Learning]] and classical [[Signal Processing]]. The term was coined by Steve Mann in 1995 and re-defined with broader scope by Marc Levoy in his 2004 Stanford course and the 2005 IEEE International Symposium on Computational Photography. Where traditional imaging design asks "what lens and sensor configuration will capture a desired image?", computational photography reframes the question as "what [[Image Formation Model]] and reconstruction algorithm will produce the best result from the available light?" This shift decouples image quality from optics budget: a small-aperture [[Smartphone]] [[Camera]] can achieve dynamic range and resolution previously exclusive to studio equipment, through [[Multi-Frame Fusion]] of dozens of raw frames, [[Neural Network]]-based denoising, and [[Super Resolution]] upsampling. The economic consequences are profound: a smartphone costing under £500 now routinely produces images in low-light conditions that exceed what a £3,000 DSLR with a £1,000 fast prime lens could produce from a single exposure. This capability democratisation has compressed the professional imaging market while simultaneously creating a mass-market user base for computational photography that is orders of magnitude larger than the professional photography market ever was.
 
-  At the scene-understanding layer, [[Semantic Segmentation]] networks partition the frame into recognised objects — sky, skin, foliage, architecture, food, document — allowing the system to apply object-class-specific image enhancement tuned to the statistics and perceptual requirements of each object category. Human skin, for example, requires accurate hue preservation and gentle noise reduction that preserves pore-level texture; sky regions tolerate stronger noise reduction and benefit from saturation enhancement; foliage regions reward sharpening of high-frequency leaf detail. This spatially adaptive processing is executed in real-time on frames resolved at 12-50 megapixels, requiring inference speeds of 30-60ms per frame on the [[Neural Network]] accelerator. Google's Pixel 9 series (August 2024) introduced Zoom Enhance, which applies [[Super Resolution]] inference to telephoto crops, recovering detail that the 5× optical zoom lens's relatively small aperture (f/2.8) would not otherwise resolve; and improved Night Sight Panorama, which assembles wide-field night images from hundreds of aligned multi-frame captures across a physical panning sweep, effectively synthesising the angular resolution of a panoramic sensor from a single smartphone lens. Apple Night Mode on iPhone deploys adaptive exposure bracketing — selecting exposure durations from 1/30s to 1/4s depending on scene brightness — combined with a convolutional denoising network that runs on the Apple Neural Engine in 30–50 ms per captured burst, followed by multi-frame merging and spatial noise reduction. These deployments demonstrate that computational photography is no longer a research prototype technology: it is the dominant architecture for image capture in consumer devices shipping hundreds of millions of units annually, with more computational photography images captured per day than have ever been produced by film cameras across the entire history of photography.
+The critical enabling infrastructure is the [[Neural Image Signal Processor]] (Neural ISP), an end-to-end learned replacement for the classical hand-crafted camera ISP chain. Classical ISPs perform fixed-point arithmetic on the raw Bayer mosaic, applying [[Demosaicing]], white balance, tone curves, and sharpening in a fixed sequence tuned by imaging scientists through laborious manual calibration against test charts and scene categories. Neural ISPs instead train on paired RAW/reference datasets — typically millions of RAW frames paired with reference exposures from high-end cameras with fast lenses in controlled conditions — to jointly optimise all these steps end-to-end, achieving superior performance on difficult scenes that defeat hand-tuned pipelines: underexposed interiors with mixed colour temperature illumination, fast-moving subjects in dim environments, high-frequency texture in scenes with extreme luminance range. Qualcomm's Snapdragon 8 Gen 3 ISP (2024) integrates dedicated neural processing units enabling real-time on-device inference for computational photography tasks at up to 4K resolution, processing at sustained 30fps with total power budgets under 2W. The competitive landscape among chipset vendors — Qualcomm, MediaTek, Samsung Exynos, and Apple's own silicon — is now substantially defined by the quality of each vendor's neural ISP implementation, making computational photography a key differentiator in a smartphone hardware market where sensor and optics improvements have reached diminishing returns.
 
-  The global computational photography market was valued at approximately USD 15.2 billion in 2024 and is projected to reach USD 48.4 billion by 2032 (Fortune Business Insights, 2025), growing at a compound annual growth rate of approximately 15.5%. Growth is driven primarily by smartphone adoption across all price tiers — mid-range devices have adopted computational [[HDR Imaging]], [[Night Mode Photography]], and portrait [[Bokeh Simulation]] features previously exclusive to flagship devices — and is expanding into automotive ADAS perception, [[Medical Imaging]] reconstruction, [[Satellite Imagery]] analysis, and industrial inspection. The automotive segment is particularly significant: every Level 2+ ADAS system now includes multiple computational photography processing stages to handle the range of illumination, weather, and scene conditions encountered in real-world driving, and Level 4 autonomous vehicles require multiple camera ISPs running in parallel at very high frame rates with safety-certified deterministic performance.
+At the scene-understanding layer, [[Semantic Segmentation]] networks partition the frame into recognised objects — sky, skin, foliage, architecture, food, document — allowing the system to apply object-class-specific image enhancement tuned to the statistics and perceptual requirements of each object category. Human skin, for example, requires accurate hue preservation and gentle noise reduction that preserves pore-level texture; sky regions tolerate stronger noise reduction and benefit from saturation enhancement; foliage regions reward sharpening of high-frequency leaf detail. This spatially adaptive processing is executed in real-time on frames resolved at 12-50 megapixels, requiring inference speeds of 30-60ms per frame on the [[Neural Network]] accelerator. Google's Pixel 9 series (August 2024) introduced Zoom Enhance, which applies [[Super Resolution]] inference to telephoto crops, recovering detail that the 5× optical zoom lens's relatively small aperture (f/2.8) would not otherwise resolve; and improved Night Sight Panorama, which assembles wide-field night images from hundreds of aligned multi-frame captures across a physical panning sweep, effectively synthesising the angular resolution of a panoramic sensor from a single smartphone lens. Apple Night Mode on iPhone deploys adaptive exposure bracketing — selecting exposure durations from 1/30s to 1/4s depending on scene brightness — combined with a convolutional denoising network that runs on the Apple Neural Engine in 30–50 ms per captured burst, followed by multi-frame merging and spatial noise reduction. These deployments demonstrate that computational photography is no longer a research prototype technology: it is the dominant architecture for image capture in consumer devices shipping hundreds of millions of units annually, with more computational photography images captured per day than have ever been produced by film cameras across the entire history of photography.
 
-  The historical development of the field falls into three recognisable phases. The first phase (1995–2010) was characterised by algorithmic breakthroughs in well-posed sub-problems: [[HDR Imaging]] (Debevec and Malik, 1997), light field rendering (Levoy and Hanrahan, 1996), [[Panorama Stitching]] (Brown and Lowe, 2007), and computational [[Bokeh Simulation]] (Bae and Durand, 2007). These algorithms operated on principled analytical models of the imaging process and were implemented in classical signal processing pipelines. The second phase (2010–2020) was characterised by the introduction of [[Deep Learning]] — initially for individual stages (learned [[Demosaicing]], learned [[Super Resolution]], learned [[Depth Estimation]]) and progressively expanding to full pipeline replacement. The seminal "Learning to See in the Dark" (Chen et al., 2018) demonstrated that a [[Convolutional Neural Network]] trained on paired RAW/clean datasets could outperform all hand-crafted pipelines on extreme low-light photography, marking the decisive shift to neural approaches. The third phase (2020–present) is characterised by system-level integration of neural pipelines into production hardware, the emergence of [[Diffusion Model]]-based generative restoration, and the frontier challenge of managing authenticity as synthetic content becomes indistinguishable from optically captured imagery.
+The global computational photography market was valued at approximately USD 15.2 billion in 2024 and is projected to reach USD 48.4 billion by 2032 (Fortune Business Insights, 2025), growing at a compound annual growth rate of approximately 15.5%. Growth is driven primarily by smartphone adoption across all price tiers — mid-range devices have adopted computational [[HDR Imaging]], [[Night Mode Photography]], and portrait [[Bokeh Simulation]] features previously exclusive to flagship devices — and is expanding into automotive ADAS perception, [[Medical Imaging]] reconstruction, [[Satellite Imagery]] analysis, and industrial inspection. The automotive segment is particularly significant: every Level 2+ ADAS system now includes multiple computational photography processing stages to handle the range of illumination, weather, and scene conditions encountered in real-world driving, and Level 4 autonomous vehicles require multiple camera ISPs running in parallel at very high frame rates with safety-certified deterministic performance.
 
-  ## Components / Architecture
+The historical development of the field falls into three recognisable phases. The first phase (1995–2010) was characterised by algorithmic breakthroughs in well-posed sub-problems: [[HDR Imaging]] (Debevec and Malik, 1997), light field rendering (Levoy and Hanrahan, 1996), [[Panorama Stitching]] (Brown and Lowe, 2007), and computational [[Bokeh Simulation]] (Bae and Durand, 2007). These algorithms operated on principled analytical models of the imaging process and were implemented in classical signal processing pipelines. The second phase (2010–2020) was characterised by the introduction of [[Deep Learning]] — initially for individual stages (learned [[Demosaicing]], learned [[Super Resolution]], learned [[Depth Estimation]]) and progressively expanding to full pipeline replacement. The seminal "Learning to See in the Dark" (Chen et al., 2018) demonstrated that a [[Convolutional Neural Network]] trained on paired RAW/clean datasets could outperform all hand-crafted pipelines on extreme low-light photography, marking the decisive shift to neural approaches. The third phase (2020–present) is characterised by system-level integration of neural pipelines into production hardware, the emergence of [[Diffusion Model]]-based generative restoration, and the frontier challenge of managing authenticity as synthetic content becomes indistinguishable from optically captured imagery.
 
-  A contemporary computational photography pipeline in a flagship smartphone camera system (circa 2024–2026) comprises several cooperating stages operating on a common data substrate of raw sensor captures:
+## Components / Architecture
 
-  - **Optical acquisition layer** — the [[Camera]] with its [[Optics]] and [[Image Sensor]] (typically a Sony IMX or Samsung ISOCELL CMOS sensor, 50–200 MP effective resolution, 1/1.3"–1" optical format in flagship devices) captures raw photon counts across multiple exposures, multiple sub-apertures (dual-pixel PDAF dividing each photosite into two angular sub-pixels for phase detection), quad-Bayer or Tetracell arrangements that bin 4 photosites together in low light, or multiple physical lenses (0.6× ultra-wide, 1× main, 3.5–5× telephoto) each with their own ISP pipeline lane. Modern flagship systems capture 10–50 burst frames in 100–500 ms from the primary sensor simultaneously with auxiliary depth, ToF, or spectral sensor data.
-  - **[[Raw Image Pipeline]]** — [[Demosaicing]] converts the Bayer colour filter array mosaic (RGGB, RYYB, or four-channel arrangements) to full-resolution RGB through either classical linear interpolation (bi-linear, AHD) or learned convolutional demosaicing networks that jointly suppress demosaicing artefacts and luminance noise; black-level subtraction, flat-field correction, optical vignetting compensation, and chromatic aberration removal are applied. In Neural ISP deployments (Qualcomm Snapdragon 8 Gen 3, Apple A18 Pro), this entire stage is replaced by an end-to-end learned network that processes raw Bayer data directly to RGB output.
-  - **[[Multi-Frame Fusion]]** — burst frames captured across 20–200 ms are registered via [[Optical Flow]] dense correspondence estimation (EpicFlow, FlowNet, or device-specific learned flow models at 1–4 ms per pair) or feature-point RANSAC homography for scenes without independent motion, then merged using frequency-domain Wiener filtering, Gaussian pyramid merging, or learned attention-based fusion networks that identify and weight the sharpest, lowest-noise regions of each frame. Effective noise reduction is proportional to sqrt(N) frames for spatially stationary content, achieving 3–6 stops of effective dynamic range and noise floor improvement over a single exposure.
-  - **[[HDR Imaging]]** — [[Exposure Fusion]] algorithms select and blend bracketed exposures (typically 2–4 EVs apart) to recover both shadow detail and highlight structure, applying spatially varying blend weights based on local contrast, saturation, and well-exposedness measures. Alternatively, single-capture HDR uses the dual-gain readout of modern sensors (ISO 50 base + ISO 400 highlights read simultaneously) with computational blending. [[Tone Mapping]] operators then compress the recovered HDR radiance into the display output gamut: classical operators (Reinhard, Mantiuk, Filmic) apply global or local tone curves; modern approaches use learned tone mappers trained to match human perceptual preferences across diverse content.
-  - **[[Semantic Segmentation]] and spatial reasoning** — lightweight [[Convolutional Neural Network]]s (MobileNetV3, EfficientNet-lite, or device-specific architectures with 5–20M parameters) segment the scene into 20–80 semantic classes at 1/4 to 1/8 resolution in 2–8 ms; [[Depth Estimation]] from stereo baseline cameras (0.5–1 cm baseline in smartphone arrays), time-of-flight sensor (Sony DepthSense, STMicro FlightSense), or monocular neural estimation (DepthAnything, MiDAS) provides per-pixel distance maps at 1/4–1/2 resolution used for matting, bokeh simulation, and AR anchoring.
-  - **Enhancement and synthesis stages** — [[Bokeh Simulation]] applies a learned foreground/background matting network operating on the [[Semantic Segmentation]] mask and [[Depth Estimation]] map to produce a soft alpha channel, then renders variable-radius defocus blur kernels (lens blur, disc blur, or learned spatially varying convolution) that simulate the optical bokeh produced by an f/1.2 equivalent aperture. [[Super Resolution]] networks (ESRGAN, RealESRGAN, or device-specific distillation models) upsample the fused image by 2–8× with learned texture synthesis, recovering spatial frequencies above the sensor's Nyquist limit from learned natural image statistics. [[Night Mode Photography]] stacks 4–16 further sub-exposures under motion-compensated alignment for a total capture duration of 1–8 seconds, followed by multi-scale noise reduction. [[Video Stabilisation]] applies electronic image stabilisation (EIS) by warping each frame to a smoothed rolling reference trajectory estimated from gyroscope inertial measurements, compensating for hand tremor at 10–30 Hz.
-  - **Output formatting** — final [[Tone Mapping]] for SDR (BT.709, sRGB) or HDR (HLG, PQ/ST.2084) display gamuts, frequency-domain sharpening, JPEG/HEIF compression at target file size, and XMP metadata embedding including Content Authenticity Initiative (C2PA) provenance records of all applied computational operations.
+A contemporary computational photography pipeline in a flagship smartphone camera system (circa 2024–2026) comprises several cooperating stages operating on a common data substrate of raw sensor captures:
+
+- **Optical acquisition layer** — the [[Camera]] with its [[Optics]] and [[Image Sensor]] (typically a Sony IMX or Samsung ISOCELL CMOS sensor, 50–200 MP effective resolution, 1/1.3"–1" optical format in flagship devices) captures raw photon counts across multiple exposures, multiple sub-apertures (dual-pixel PDAF dividing each photosite into two angular sub-pixels for phase detection), quad-Bayer or Tetracell arrangements that bin 4 photosites together in low light, or multiple physical lenses (0.6× ultra-wide, 1× main, 3.5–5× telephoto) each with their own ISP pipeline lane. Modern flagship systems capture 10–50 burst frames in 100–500 ms from the primary sensor simultaneously with auxiliary depth, ToF, or spectral sensor data.
+- **[[Raw Image Pipeline]]** — [[Demosaicing]] converts the Bayer colour filter array mosaic (RGGB, RYYB, or four-channel arrangements) to full-resolution RGB through either classical linear interpolation (bi-linear, AHD) or learned convolutional demosaicing networks that jointly suppress demosaicing artefacts and luminance noise; black-level subtraction, flat-field correction, optical vignetting compensation, and chromatic aberration removal are applied. In Neural ISP deployments (Qualcomm Snapdragon 8 Gen 3, Apple A18 Pro), this entire stage is replaced by an end-to-end learned network that processes raw Bayer data directly to RGB output.
+- **[[Multi-Frame Fusion]]** — burst frames captured across 20–200 ms are registered via [[Optical Flow]] dense correspondence estimation (EpicFlow, FlowNet, or device-specific learned flow models at 1–4 ms per pair) or feature-point RANSAC homography for scenes without independent motion, then merged using frequency-domain Wiener filtering, Gaussian pyramid merging, or learned attention-based fusion networks that identify and weight the sharpest, lowest-noise regions of each frame. Effective noise reduction is proportional to sqrt(N) frames for spatially stationary content, achieving 3–6 stops of effective dynamic range and noise floor improvement over a single exposure.
+- **[[HDR Imaging]]** — [[Exposure Fusion]] algorithms select and blend bracketed exposures (typically 2–4 EVs apart) to recover both shadow detail and highlight structure, applying spatially varying blend weights based on local contrast, saturation, and well-exposedness measures. Alternatively, single-capture HDR uses the dual-gain readout of modern sensors (ISO 50 base + ISO 400 highlights read simultaneously) with computational blending. [[Tone Mapping]] operators then compress the recovered HDR radiance into the display output gamut: classical operators (Reinhard, Mantiuk, Filmic) apply global or local tone curves; modern approaches use learned tone mappers trained to match human perceptual preferences across diverse content.
+- **[[Semantic Segmentation]] and spatial reasoning** — lightweight [[Convolutional Neural Network]]s (MobileNetV3, EfficientNet-lite, or device-specific architectures with 5–20M parameters) segment the scene into 20–80 semantic classes at 1/4 to 1/8 resolution in 2–8 ms; [[Depth Estimation]] from stereo baseline cameras (0.5–1 cm baseline in smartphone arrays), time-of-flight sensor (Sony DepthSense, STMicro FlightSense), or monocular neural estimation (DepthAnything, MiDAS) provides per-pixel distance maps at 1/4–1/2 resolution used for matting, bokeh simulation, and AR anchoring.
+- **Enhancement and synthesis stages** — [[Bokeh Simulation]] applies a learned foreground/background matting network operating on the [[Semantic Segmentation]] mask and [[Depth Estimation]] map to produce a soft alpha channel, then renders variable-radius defocus blur kernels (lens blur, disc blur, or learned spatially varying convolution) that simulate the optical bokeh produced by an f/1.2 equivalent aperture. [[Super Resolution]] networks (ESRGAN, RealESRGAN, or device-specific distillation models) upsample the fused image by 2–8× with learned texture synthesis, recovering spatial frequencies above the sensor's Nyquist limit from learned natural image statistics. [[Night Mode Photography]] stacks 4–16 further sub-exposures under motion-compensated alignment for a total capture duration of 1–8 seconds, followed by multi-scale noise reduction. [[Video Stabilisation]] applies electronic image stabilisation (EIS) by warping each frame to a smoothed rolling reference trajectory estimated from gyroscope inertial measurements, compensating for hand tremor at 10–30 Hz.
+- **Output formatting** — final [[Tone Mapping]] for SDR (BT.709, sRGB) or HDR (HLG, PQ/ST.2084) display gamuts, frequency-domain sharpening, JPEG/HEIF compression at target file size, and XMP metadata embedding including Content Authenticity Initiative (C2PA) provenance records of all applied computational operations.
 
   Frontier architectures in active research (2024–2026) replace individual pipeline stages with a unified [[Diffusion Model]] or [[Transformer Architecture]] denoising backbone that processes the full burst stack end-to-end as a spatiotemporal attention problem — treating each burst frame as a token in a temporal sequence and attending across all frames simultaneously to produce the maximum-likelihood clean image. Models in this class (Google MFIR, academic burst denoising transformers) achieve superior performance on complex motion and defocus scenarios but currently require 100–500ms inference on server-grade GPU hardware, limiting smartphone deployment to preview algorithms whilst heavier processing occurs on a paired cloud backend.
 
   ## Use Cases / Major Families
 
-  - **Smartphone computational cameras** — the dominant deployment context, with all major OEMs (Apple, Google, Samsung, Xiaomi, Huawei) investing in proprietary neural ISPs and scene-specific pipelines. The smartphone segment held approximately 38.7% of the computational photography market in 2025.
-  - **[[Night Mode Photography]]** — Google Night Sight and Apple Night Mode use [[Multi-Frame Fusion]] with motion-tolerant alignment to capture usable images at sub-lux illuminance levels that defeat traditional longer exposures due to subject motion.
-  - **[[HDR Imaging]] in video** — logarithmic and HDR10/Dolby Vision capture modes apply real-time [[Tone Mapping]] and [[Exposure Fusion]] to maintain highlight detail in broadcast and consumer video workflows.
-  - **[[3D Reconstruction]] and [[NeRF]]** — [[Plenoptic Camera]] and multi-view capture systems underpin [[Augmented Reality]] spatial anchoring and industrial metrology; Neural Radiance Fields reconstruct dense 3D scene representations from unstructured photograph collections.
-  - **[[Medical Imaging]]** — computed tomography, fluorescence microscopy, and endoscopic imaging apply computational photography principles for reconstruction from incomplete measurements.
-  - **[[Satellite Imagery]]** — multi-spectral fusion, pan-sharpening, and cloud-removal algorithms apply [[Multi-Frame Fusion]] and [[Semantic Segmentation]] to Earth observation data.
-  - **Automotive perception** — camera ISP pipelines in ADAS systems apply [[Deep Learning]]-based [[Image Noise Reduction]] and [[Scene Understanding]] to handle adverse weather and night driving.
-  - **[[Light Field Camera]] systems** — Raytrix and Lytro (defunct) [[Plenoptic Camera]] platforms capture angular information for post-capture refocus, synthetic aperture imaging, and metric [[Depth Estimation]].
+- **Smartphone computational cameras** — the dominant deployment context, with all major OEMs (Apple, Google, Samsung, Xiaomi, Huawei) investing in proprietary neural ISPs and scene-specific pipelines. The smartphone segment held approximately 38.7% of the computational photography market in 2025.
+- **[[Night Mode Photography]]** — Google Night Sight and Apple Night Mode use [[Multi-Frame Fusion]] with motion-tolerant alignment to capture usable images at sub-lux illuminance levels that defeat traditional longer exposures due to subject motion.
+- **[[HDR Imaging]] in video** — logarithmic and HDR10/Dolby Vision capture modes apply real-time [[Tone Mapping]] and [[Exposure Fusion]] to maintain highlight detail in broadcast and consumer video workflows.
+- **[[3D Reconstruction]] and [[NeRF]]** — [[Plenoptic Camera]] and multi-view capture systems underpin [[Augmented Reality]] spatial anchoring and industrial metrology; Neural Radiance Fields reconstruct dense 3D scene representations from unstructured photograph collections.
+- **[[Medical Imaging]]** — computed tomography, fluorescence microscopy, and endoscopic imaging apply computational photography principles for reconstruction from incomplete measurements.
+- **[[Satellite Imagery]]** — multi-spectral fusion, pan-sharpening, and cloud-removal algorithms apply [[Multi-Frame Fusion]] and [[Semantic Segmentation]] to Earth observation data.
+- **Automotive perception** — camera ISP pipelines in ADAS systems apply [[Deep Learning]]-based [[Image Noise Reduction]] and [[Scene Understanding]] to handle adverse weather and night driving.
+- **[[Light Field Camera]] systems** — Raytrix and Lytro (defunct) [[Plenoptic Camera]] platforms capture angular information for post-capture refocus, synthetic aperture imaging, and metric [[Depth Estimation]].
 
   ## Academic Context
 
   Computational photography crystallised as a named discipline at the 2005 IEEE ICCP symposium co-organised by Marc Levoy (Stanford) and Ramesh Raskar (MIT Media Lab). Levoy's work on light field rendering (Levoy and Hanrahan, SIGGRAPH 1996) established the theoretical substrate of capturing the four-dimensional plenoptic function. Raskar and Tumblin's textbook "Computational Photography: Mastering New Techniques for Lenses, Lighting, and Sensors" (AK Peters, 2010) remains the authoritative field reference. Subsequent landmark contributions include:
 
-  - HDR imaging algorithms (Debevec and Malik, SIGGRAPH 1997; Mertens et al., 2009 exposure fusion).
-  - Multi-frame noise reduction theory (Hasinoff et al., "Burst Photography for HDR and Low-Light on Mobile Cameras", SIGGRAPH Asia 2016), which underpins Google Night Sight.
-  - End-to-end Neural ISP learning (Chen et al., "Learning to See in the Dark", CVPR 2018; Ignatov et al., "Replacing Mobile Camera ISP with a Single Deep Learning Model", CVPR 2020).
-  - Depth-from-defocus and [[Bokeh Simulation]] (Wadhwa et al., "Synthetic Shallow Depth of Field on a Light-Field Camera", TPAMI 2018; Wadhwa et al., "Synthetic Bokeh", ACM TOG 2021).
-  - Monocular [[Depth Estimation]] advances (Ranftl et al., DPT, ICCV 2021; Depth Anything, CVPR 2024).
-  - NeRF-family scene reconstruction (Mildenhall et al., NeRF, ECCV 2020; Barron et al., Mip-NeRF 360, CVPR 2022).
-  - Learned [[Demosaicing]] (Kokkinos and Lefkimmiatis, 2019; Gharbi et al., Joint Demosaicing and Denoising, SIGGRAPH 2016).
-  - Light field depth estimation from CNNs (Shin et al., 2018; Wang et al., IEEE TPAMI 2023).
+- HDR imaging algorithms (Debevec and Malik, SIGGRAPH 1997; Mertens et al., 2009 exposure fusion).
+- Multi-frame noise reduction theory (Hasinoff et al., "Burst Photography for HDR and Low-Light on Mobile Cameras", SIGGRAPH Asia 2016), which underpins Google Night Sight.
+- End-to-end Neural ISP learning (Chen et al., "Learning to See in the Dark", CVPR 2018; Ignatov et al., "Replacing Mobile Camera ISP with a Single Deep Learning Model", CVPR 2020).
+- Depth-from-defocus and [[Bokeh Simulation]] (Wadhwa et al., "Synthetic Shallow Depth of Field on a Light-Field Camera", TPAMI 2018; Wadhwa et al., "Synthetic Bokeh", ACM TOG 2021).
+- Monocular [[Depth Estimation]] advances (Ranftl et al., DPT, ICCV 2021; Depth Anything, CVPR 2024).
+- NeRF-family scene reconstruction (Mildenhall et al., NeRF, ECCV 2020; Barron et al., Mip-NeRF 360, CVPR 2022).
+- Learned [[Demosaicing]] (Kokkinos and Lefkimmiatis, 2019; Gharbi et al., Joint Demosaicing and Denoising, SIGGRAPH 2016).
+- Light field depth estimation from CNNs (Shin et al., 2018; Wang et al., IEEE TPAMI 2023).
 
   The ICCP annual conference remains the primary venue; CVPR, ICCV, ECCV, and SIGGRAPH/SIGGRAPH Asia also publish substantial computational photography work.
 
@@ -233,19 +233,19 @@ A discipline that extends or supplants the optical and electromechanical capabil
 
   ## Key Terminology Glossary
 
-  - **Bayer mosaic** — the standard colour filter array (CFA) pattern alternating red, green, and blue filters across the photosite grid of a CMOS sensor, requiring [[Demosaicing]] to reconstruct a full-colour image.
-  - **Burst photography** — the capture of a rapid sequence of short-exposure frames (typically 4–30 frames in 30–300 ms) that are subsequently aligned and fused to reduce noise, increase dynamic range, or recover high-resolution detail unavailable from any single frame.
-  - **Computational bokeh** — the simulation of the out-of-focus background blur characteristic of a wide-aperture lens, achieved computationally from [[Depth Estimation]] and layered alpha compositing rather than physical optics.
-  - **Dual-pixel autofocus (DPAF)** — a technology in which each photosite is split into two sub-pixels sensitive to light from slightly different angles, providing a parallax signal used for both phase-detection autofocus and stereo [[Depth Estimation]].
-  - **Exposure bracketing** — the capture of multiple frames at different exposure values (EVs) that are merged by [[Exposure Fusion]] or [[Tone Mapping]] algorithms to produce an [[HDR Imaging]] output spanning the full scene dynamic range.
-  - **Image Signal Processor (ISP)** — the dedicated hardware block in a camera [[Smartphone]] system-on-chip that executes the [[Raw Image Pipeline]] transforms, progressively replaced in premium devices by the [[Neural Image Signal Processor]].
-  - **Inverse tone mapping (ITM)** — the task of recovering or synthesising HDR scene radiance from an SDR input, relevant for upconverting legacy content to modern HDR displays; subject of the AIM 2025 challenge.
-  - **Neural Radiance Field ([[NeRF]])** — a scene representation that encodes 3D radiance and opacity as a continuous function parameterised by a [[Neural Network]], enabling novel-view synthesis from multi-view photographs without explicit geometry reconstruction.
-  - **Photon shot noise** — the fundamental quantum noise limit of photography, arising because photon arrival at a photosite follows a Poisson process; the signal-to-noise ratio of a shot-noise-limited measurement scales as sqrt(N) where N is the number of photons captured.
-  - **[[Plenoptic Camera]]** — a camera that captures the full four-dimensional light field (two spatial dimensions and two angular dimensions) using a microlens array in front of the sensor, enabling post-capture refocus, synthetic aperture, and dense [[Depth Estimation]].
-  - **[[Semantic Segmentation]]** — the dense per-pixel classification of an image into semantic object categories (sky, person, vehicle, vegetation), enabling spatially adaptive image enhancement tuned to each object class.
-  - **[[Super Resolution]]** — the reconstruction of a high-resolution image from one or more low-resolution observations, inverting the downsampling and blurring operations of the [[Image Formation Model]] through learned or regularised optimisation.
-  - **[[Tone Mapping]]** — the transformation of high dynamic range (HDR) scene radiance values into the limited dynamic range of a display or JPEG output whilst preserving perceived contrast and tonal relationships.
+- **Bayer mosaic** — the standard colour filter array (CFA) pattern alternating red, green, and blue filters across the photosite grid of a CMOS sensor, requiring [[Demosaicing]] to reconstruct a full-colour image.
+- **Burst photography** — the capture of a rapid sequence of short-exposure frames (typically 4–30 frames in 30–300 ms) that are subsequently aligned and fused to reduce noise, increase dynamic range, or recover high-resolution detail unavailable from any single frame.
+- **Computational bokeh** — the simulation of the out-of-focus background blur characteristic of a wide-aperture lens, achieved computationally from [[Depth Estimation]] and layered alpha compositing rather than physical optics.
+- **Dual-pixel autofocus (DPAF)** — a technology in which each photosite is split into two sub-pixels sensitive to light from slightly different angles, providing a parallax signal used for both phase-detection autofocus and stereo [[Depth Estimation]].
+- **Exposure bracketing** — the capture of multiple frames at different exposure values (EVs) that are merged by [[Exposure Fusion]] or [[Tone Mapping]] algorithms to produce an [[HDR Imaging]] output spanning the full scene dynamic range.
+- **Image Signal Processor (ISP)** — the dedicated hardware block in a camera [[Smartphone]] system-on-chip that executes the [[Raw Image Pipeline]] transforms, progressively replaced in premium devices by the [[Neural Image Signal Processor]].
+- **Inverse tone mapping (ITM)** — the task of recovering or synthesising HDR scene radiance from an SDR input, relevant for upconverting legacy content to modern HDR displays; subject of the AIM 2025 challenge.
+- **Neural Radiance Field ([[NeRF]])** — a scene representation that encodes 3D radiance and opacity as a continuous function parameterised by a [[Neural Network]], enabling novel-view synthesis from multi-view photographs without explicit geometry reconstruction.
+- **Photon shot noise** — the fundamental quantum noise limit of photography, arising because photon arrival at a photosite follows a Poisson process; the signal-to-noise ratio of a shot-noise-limited measurement scales as sqrt(N) where N is the number of photons captured.
+- **[[Plenoptic Camera]]** — a camera that captures the full four-dimensional light field (two spatial dimensions and two angular dimensions) using a microlens array in front of the sensor, enabling post-capture refocus, synthetic aperture, and dense [[Depth Estimation]].
+- **[[Semantic Segmentation]]** — the dense per-pixel classification of an image into semantic object categories (sky, person, vehicle, vegetation), enabling spatially adaptive image enhancement tuned to each object class.
+- **[[Super Resolution]]** — the reconstruction of a high-resolution image from one or more low-resolution observations, inverting the downsampling and blurring operations of the [[Image Formation Model]] through learned or regularised optimisation.
+- **[[Tone Mapping]]** — the transformation of high dynamic range (HDR) scene radiance values into the limited dynamic range of a display or JPEG output whilst preserving perceived contrast and tonal relationships.
 
   ## Research & Literature
 
@@ -278,5 +278,5 @@ A discipline that extends or supplants the optical and electromechanical capabil
   27. Qualcomm Technologies (2024). "Snapdragon 8 Gen 3 Mobile Platform." Technical brief. https://www.qualcomm.com/products/mobile/snapdragon/smartphones/snapdragon-8-series-mobile-platforms/snapdragon-8-gen-3-mobile-platform
   28. AttestTrail (2026). "C2PA Cameras and Phones 2026: Nikon, Canon, Sony, Leica, Samsung, Pixel." https://attesttrail.com/blog/c2pa-cameras-support [C2PA hardware adoption status across camera and smartphone OEMs]
 
-- ### Provenance
+### Provenance
 

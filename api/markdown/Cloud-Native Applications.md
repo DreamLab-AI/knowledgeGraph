@@ -1,18 +1,17 @@
-
 Cloud-native applications are software systems specifically designed and architected to exploit the capabilities of cloud computing environments, built from loosely coupled microservices deployed via containers and orchestrated across private, public, or hybrid cloud infrastructure. They prioritise scalability, resilience, observability, and automated lifecycle management over the characteristics of traditional monolithic systems. The paradigm is distinguished not by where an application runs but by how it is constructed, operated, and evolved.
 
-- ### Semantic Classification
+### Semantic Classification
 
-- ### Content
+### Content
 
-  #### Key Characteristics
-  Cloud-native applications exhibit several defining characteristics:
+#### Key Characteristics
+Cloud-native applications exhibit several defining characteristics:
 
-  - **Scalability**: Applications handle increased workloads without requiring software redesign or rewriting.[2]
-  - **Resilience**: Loosely coupled services ensure that individual component failures do not cascade across the system.[2]
-  - **Observability**: Built-in monitoring and logging capabilities provide visibility into system behaviour and performance.[1][2]
-  - **Manageability**: Automated lifecycle management from development through production reduces operational toil.[2]
-  - **Agility**: Shorter application lifecycles and frequent, predictable deployments enable rapid incorporation of user feedback.[4]
+- **Scalability**: Applications handle increased workloads without requiring software redesign or rewriting.[2]
+- **Resilience**: Loosely coupled services ensure that individual component failures do not cascade across the system.[2]
+- **Observability**: Built-in monitoring and logging capabilities provide visibility into system behaviour and performance.[1][2]
+- **Manageability**: Automated lifecycle management from development through production reduces operational toil.[2]
+- **Agility**: Shorter application lifecycles and frequent, predictable deployments enable rapid incorporation of user feedback.[4]
 
   ## Current State and Implementations (2024–2025)
 
@@ -53,10 +52,10 @@ Cloud-native applications are software systems specifically designed and archite
 
   For comprehensive academic engagement with cloud-native architectures, researchers typically reference:
 
-  - CNCF published materials and white papers on cloud-native technologies
-  - Industry reports from analyst firms specialising in cloud infrastructure
-  - Technical documentation from Kubernetes and container ecosystem projects
-  - DevOps and software engineering literature addressing microservices patterns
+- CNCF published materials and white papers on cloud-native technologies
+- Industry reports from analyst firms specialising in cloud infrastructure
+- Technical documentation from Kubernetes and container ecosystem projects
+- DevOps and software engineering literature addressing microservices patterns
 
   ## Future Outlook
 
@@ -77,26 +76,29 @@ Cloud-native applications are software systems specifically designed and archite
   The cloud-native paradigm represents a fundamental shift in how organisations design, construct, and operate software systems—moving from static, monolithic architectures toward dynamic, distributed, and highly automated systems optimised for modern cloud infrastructure.
 
   #### UK Context
-  - British contributions and implementations
-  - Research institutions and programmes
-  - Industry adoption
-  - North England innovation (where relevant)
 
-- ### Current Landscape (2026)
-  - The CNCF Annual Cloud Native Survey published 20 January 2026 (fielded 2025, "The Infrastructure of AI's Future") reports 98% of organisations now use cloud-native techniques and 82% of container users run Kubernetes in production, up from 66% in 2023 and 80% in 2024 — the technology has crossed from differentiator to enterprise default.
-  - Kubernetes has been reframed as the de facto "operating system for AI": 66% of organisations hosting generative-AI models now use it to run some or all of their inference workloads, though maturity remains early — only 7% deploy models daily and roughly half do not train models at all.
-  - Platform engineering and internal developer platforms (IDPs) have become the dominant operating model: Backstage ranks as the #5 CNCF project by velocity, and GitOps is now a clear maturity marker (used extensively by 58% of "innovators" versus 23% of "adopters").
-  - Serverless containers (Google Cloud Run, AWS Fargate) and lightweight distributions (K3s) are shifting workloads off self-managed clusters, producing a mixed operating model rather than a Kubernetes-versus-serverless choice; CNCF/SlashData's State of Cloud Native Development Q1 2026 counts roughly 20 million cloud-native developers, with 88% of backend developers working in standardised platform environments.
-  - WebAssembly (Wasm) is maturing from experimental to an operational server-side runtime for edge functions, plugin systems and high-density multi-tenant workloads (signalled by efforts such as Kube-Wasm), though mainstream adoption remains modest and gated on tooling and language support.
-  - For the first time the top adoption barrier is organisational rather than technical: 47% of respondents cite cultural change within development teams as their biggest challenge, ahead of training, security and complexity.
-  - Open frontiers as of 2026 include closing the gap between AI ambition and infrastructure readiness (GPU scheduling and inference at scale), FinOps-driven cost governance for multi-cluster estates (average 12+ clusters per organisation), and eBPF-based observability and zero-trust security via projects such as Cilium and OpenTelemetry.
+- British contributions and implementations
+- Research institutions and programmes
+- Industry adoption
+- North England innovation (where relevant)
 
-- ### References
-  - 1. Cloud Native Computing Foundation (2026). Kubernetes Established as the De Facto 'Operating System' for AI as Production Use Hits 82% in 2025 — CNCF Annual Cloud Native Survey. https://www.cncf.io/announcements/2026/01/20/kubernetes-established-as-the-de-facto-operating-system-for-ai-as-production-use-hits-82-in-2025-cncf-annual-cloud-native-survey/
-  - 2. Linux Foundation Research (2026). CNCF Annual Cloud Native Survey: The Infrastructure of AI's Future. https://www.linuxfoundation.org/research/cncf-2025-annual-survey
-  - 3. CNCF + SlashData (2026). State of Cloud Native Development Q1 2026. https://www.cncf.io/reports/state-of-cloud-native-development-q1-2026/
-  - 4. Cloud Native Computing Foundation (2026). Kubernetes Fuels AI Growth; Organizational Culture Remains the Decisive Factor. https://www.cncf.io/blog/2026/01/20/kubernetes-fuels-ai-growth-organizational-culture-remains-the-decisive-factor/
-  - 5. Apex Logic (2026). Cloud-Native 2026: The Microservices Evolution Beyond Containers. https://www.apex-logic.net/news/cloud-native-2026-the-microservices-evolution-beyond-containers
+### Current Landscape (2026)
 
-- ### Provenance
+- The CNCF Annual Cloud Native Survey published 20 January 2026 (fielded 2025, "The Infrastructure of AI's Future") reports 98% of organisations now use cloud-native techniques and 82% of container users run Kubernetes in production, up from 66% in 2023 and 80% in 2024 — the technology has crossed from differentiator to enterprise default.
+- Kubernetes has been reframed as the de facto "operating system for AI": 66% of organisations hosting generative-AI models now use it to run some or all of their inference workloads, though maturity remains early — only 7% deploy models daily and roughly half do not train models at all.
+- Platform engineering and internal developer platforms (IDPs) have become the dominant operating model: Backstage ranks as the #5 CNCF project by velocity, and GitOps is now a clear maturity marker (used extensively by 58% of "innovators" versus 23% of "adopters").
+- Serverless containers (Google Cloud Run, AWS Fargate) and lightweight distributions (K3s) are shifting workloads off self-managed clusters, producing a mixed operating model rather than a Kubernetes-versus-serverless choice; CNCF/SlashData's State of Cloud Native Development Q1 2026 counts roughly 20 million cloud-native developers, with 88% of backend developers working in standardised platform environments.
+- WebAssembly (Wasm) is maturing from experimental to an operational server-side runtime for edge functions, plugin systems and high-density multi-tenant workloads (signalled by efforts such as Kube-Wasm), though mainstream adoption remains modest and gated on tooling and language support.
+- For the first time the top adoption barrier is organisational rather than technical: 47% of respondents cite cultural change within development teams as their biggest challenge, ahead of training, security and complexity.
+- Open frontiers as of 2026 include closing the gap between AI ambition and infrastructure readiness (GPU scheduling and inference at scale), FinOps-driven cost governance for multi-cluster estates (average 12+ clusters per organisation), and eBPF-based observability and zero-trust security via projects such as Cilium and OpenTelemetry.
+
+### References
+
+- 1. Cloud Native Computing Foundation (2026). Kubernetes Established as the De Facto 'Operating System' for AI as Production Use Hits 82% in 2025 — CNCF Annual Cloud Native Survey. https://www.cncf.io/announcements/2026/01/20/kubernetes-established-as-the-de-facto-operating-system-for-ai-as-production-use-hits-82-in-2025-cncf-annual-cloud-native-survey/
+- 2. Linux Foundation Research (2026). CNCF Annual Cloud Native Survey: The Infrastructure of AI's Future. https://www.linuxfoundation.org/research/cncf-2025-annual-survey
+- 3. CNCF + SlashData (2026). State of Cloud Native Development Q1 2026. https://www.cncf.io/reports/state-of-cloud-native-development-q1-2026/
+- 4. Cloud Native Computing Foundation (2026). Kubernetes Fuels AI Growth; Organizational Culture Remains the Decisive Factor. https://www.cncf.io/blog/2026/01/20/kubernetes-fuels-ai-growth-organizational-culture-remains-the-decisive-factor/
+- 5. Apex Logic (2026). Cloud-Native 2026: The Microservices Evolution Beyond Containers. https://www.apex-logic.net/news/cloud-native-2026-the-microservices-evolution-beyond-containers
+
+### Provenance
 

@@ -1,94 +1,94 @@
-
 AI Accountability is the set of mechanisms, obligations, and institutional structures that ensure developers, deployers, and operators of AI systems can be held responsible for the outcomes those systems produce. It encompasses technical auditability, legal liability, organisational governance, and redress pathways for harms caused by algorithmic decisions. Accountability frameworks bind technical transparency measures to enforceable consequences, distinguishing it from voluntary explainability efforts. Effective AI accountability requires clear assignment of responsibility across the AI value chain—from data collection through deployment and monitoring.
 
-- ### Semantic Classification
+### Semantic Classification
 
-- ### Content
-  ## Compositional Relationships (Components)
-  ```manchester-syntax
-  SubClassOf(ai:AiAccountability
-    ObjectSomeValuesFrom(ai:hasPart ai:AuditTrail))
-  SubClassOf(ai:AiAccountability
-    ObjectSomeValuesFrom(ai:hasPart ai:AlgorithmicAuditing))
-  SubClassOf(ai:AiAccountability
-    ObjectSomeValuesFrom(ai:hasPart ai:AiImpactAssessment))
-  SubClassOf(ai:AiAccountability
-    ObjectSomeValuesFrom(ai:hasPart ai:ModelCard))
-  SubClassOf(ai:AiAccountability
-    ObjectSomeValuesFrom(ai:hasPart ai:ConformityAssessment))
-  SubClassOf(ai:AiAccountability
-    ObjectSomeValuesFrom(ai:hasPart ai:PostMarketMonitoring))
-  SubClassOf(ai:AiAccountability
-    ObjectSomeValuesFrom(ai:hasPart ai:RedressMechanism))
-  ```
-  ## Dependency Relationships
-  ```manchester-syntax
-  SubClassOf(ai:AiAccountability
-    ObjectSomeValuesFrom(ai:requires ai:Explainability))
-  SubClassOf(ai:AiAccountability
-    ObjectSomeValuesFrom(ai:requires ai:HumanOversight))
-  SubClassOf(ai:AiAccountability
-    ObjectSomeValuesFrom(ai:requires ai:Transparency))
-  SubClassOf(ai:AiAccountability
-    ObjectSomeValuesFrom(ai:requires ai:DataGovernance))
-  SubClassOf(ai:AiAccountability
-    ObjectSomeValuesFrom(ai:dependsOn ai:RiskManagement))
-  SubClassOf(ai:AiAccountability
-    ObjectSomeValuesFrom(ai:dependsOn ai:ExplainableAi))
-  ```
-  ## Capability Relationships
-  ```manchester-syntax
-  SubClassOf(ai:AiAccountability
-    ObjectSomeValuesFrom(ai:enables ai:AiTrustworthiness))
-  SubClassOf(ai:AiAccountability
-    ObjectSomeValuesFrom(ai:enables ai:DigitalRights))
-  SubClassOf(ai:AiAccountability
-    ObjectSomeValuesFrom(ai:enables ai:Fairness))
-  SubClassOf(ai:AiAccountability
-    ObjectSomeValuesFrom(ai:supports ai:RegulatoryCompliance))
-  SubClassOf(ai:AiAccountability
-    ObjectSomeValuesFrom(ai:supports ai:AiSafety))
-  SubClassOf(ai:AiAccountability
-    ObjectSomeValuesFrom(ai:supports ai:ResponsibleAi))
-  ```
-  ## Implementation Relationships
-  ```manchester-syntax
-  SubClassOf(ai:AiAccountability
-    ObjectSomeValuesFrom(ai:implements ai:EuAiActRegulatoryInstrument))
-  SubClassOf(ai:AiAccountability
-    ObjectSomeValuesFrom(ai:implements ai:NistAiRmf))
-  SubClassOf(ai:AiAccountability
-    ObjectSomeValuesFrom(ai:implements ai:IsoIec42001))
-  SubClassOf(ai:AiAccountability
-    ObjectSomeValuesFrom(ai:implements ai:Gdpr))
-  SubClassOf(ai:AiAccountability
-    ObjectSomeValuesFrom(ai:implements ai:OecdAiPrinciples))
-  ```
-  ## Reduction Relationships
-  ```manchester-syntax
-  SubClassOf(ai:AiAccountability
-    ObjectSomeValuesFrom(ai:reducesTo ai:Accountability))
-  SubClassOf(ai:AiAccountability
-    ObjectSomeValuesFrom(ai:reducesTo ai:AlgorithmicAccountability))
-  ```
+### Content
 
-  ## About
+## Compositional Relationships (Components)
+```manchester-syntax
+SubClassOf(ai:AiAccountability
+  ObjectSomeValuesFrom(ai:hasPart ai:AuditTrail))
+SubClassOf(ai:AiAccountability
+  ObjectSomeValuesFrom(ai:hasPart ai:AlgorithmicAuditing))
+SubClassOf(ai:AiAccountability
+  ObjectSomeValuesFrom(ai:hasPart ai:AiImpactAssessment))
+SubClassOf(ai:AiAccountability
+  ObjectSomeValuesFrom(ai:hasPart ai:ModelCard))
+SubClassOf(ai:AiAccountability
+  ObjectSomeValuesFrom(ai:hasPart ai:ConformityAssessment))
+SubClassOf(ai:AiAccountability
+  ObjectSomeValuesFrom(ai:hasPart ai:PostMarketMonitoring))
+SubClassOf(ai:AiAccountability
+  ObjectSomeValuesFrom(ai:hasPart ai:RedressMechanism))
+```
+## Dependency Relationships
+```manchester-syntax
+SubClassOf(ai:AiAccountability
+  ObjectSomeValuesFrom(ai:requires ai:Explainability))
+SubClassOf(ai:AiAccountability
+  ObjectSomeValuesFrom(ai:requires ai:HumanOversight))
+SubClassOf(ai:AiAccountability
+  ObjectSomeValuesFrom(ai:requires ai:Transparency))
+SubClassOf(ai:AiAccountability
+  ObjectSomeValuesFrom(ai:requires ai:DataGovernance))
+SubClassOf(ai:AiAccountability
+  ObjectSomeValuesFrom(ai:dependsOn ai:RiskManagement))
+SubClassOf(ai:AiAccountability
+  ObjectSomeValuesFrom(ai:dependsOn ai:ExplainableAi))
+```
+## Capability Relationships
+```manchester-syntax
+SubClassOf(ai:AiAccountability
+  ObjectSomeValuesFrom(ai:enables ai:AiTrustworthiness))
+SubClassOf(ai:AiAccountability
+  ObjectSomeValuesFrom(ai:enables ai:DigitalRights))
+SubClassOf(ai:AiAccountability
+  ObjectSomeValuesFrom(ai:enables ai:Fairness))
+SubClassOf(ai:AiAccountability
+  ObjectSomeValuesFrom(ai:supports ai:RegulatoryCompliance))
+SubClassOf(ai:AiAccountability
+  ObjectSomeValuesFrom(ai:supports ai:AiSafety))
+SubClassOf(ai:AiAccountability
+  ObjectSomeValuesFrom(ai:supports ai:ResponsibleAi))
+```
+## Implementation Relationships
+```manchester-syntax
+SubClassOf(ai:AiAccountability
+  ObjectSomeValuesFrom(ai:implements ai:EuAiActRegulatoryInstrument))
+SubClassOf(ai:AiAccountability
+  ObjectSomeValuesFrom(ai:implements ai:NistAiRmf))
+SubClassOf(ai:AiAccountability
+  ObjectSomeValuesFrom(ai:implements ai:IsoIec42001))
+SubClassOf(ai:AiAccountability
+  ObjectSomeValuesFrom(ai:implements ai:Gdpr))
+SubClassOf(ai:AiAccountability
+  ObjectSomeValuesFrom(ai:implements ai:OecdAiPrinciples))
+```
+## Reduction Relationships
+```manchester-syntax
+SubClassOf(ai:AiAccountability
+  ObjectSomeValuesFrom(ai:reducesTo ai:Accountability))
+SubClassOf(ai:AiAccountability
+  ObjectSomeValuesFrom(ai:reducesTo ai:AlgorithmicAccountability))
+```
 
-  AI Accountability emerged from policy debates in the mid-2010s as [[Machine Learning]] systems began making consequential decisions in credit scoring, criminal justice, and healthcare. Early frameworks borrowed from corporate governance and product liability law, asking who is responsible when an algorithm causes harm. The 2016 [[GDPR]] introduced a right to explanation under Article 22, marking the first major legislative attempt to encode accountability into automated decision-making—a principle subsequently operationalised at greater specificity and enforceability by the [[EU AI Act Regulatory Instrument]]. The concept is analytically distinct from [[Explainability]] and [[Transparency]]: those properties describe what information is available about a system and its behaviour, whereas accountability describes the institutional and legal structures that bind actors to consequences when things go wrong. A system can be fully explainable yet its developer still escape accountability if the legal and organisational structures are absent; conversely, accountability regimes can exist in principle without the technical tools to enforce them in practice. The two dimensions are therefore complementary rather than substitutable, which explains why modern governance frameworks such as the [[NIST AI Risk Management Framework]] treat them as jointly necessary components of trustworthy AI.
+## About
 
-  Accountability mechanisms operate across three interlocking levels. Technical accountability creates verifiable records and testable claims about system behaviour: [[Audit Trail]] systems log inputs, decisions, and outputs with cryptographic integrity guarantees; [[Model Card]] documentation discloses capabilities, limitations, and intended use contexts; [[Algorithmic Auditing]] processes systematically probe deployed systems for discriminatory patterns, calibration failures, and adversarial vulnerabilities. Organisational accountability assigns internal roles and processes: [[AI Ethics Board]] structures provide governance oversight; responsible AI officers carry designated accountability for deployment decisions; incident response protocols define escalation paths when harms occur. Legal accountability establishes binding consequences: [[Liability]] regimes—still evolving in most jurisdictions—determine who bears civil and criminal responsibility for AI-caused harm; complaint procedures give affected individuals enforceable rights of challenge; regulatory enforcement through bodies such as the [[Information Commissioner's Office]] in the UK or the EU AI Office imposes sanctions on non-compliant deployers. Effective accountability requires all three levels to function in coordination: technical tooling provides the evidentiary substrate, organisational structures deploy it operationally, and legal frameworks translate it into enforceable duties and consequences.
+AI Accountability emerged from policy debates in the mid-2010s as [[Machine Learning]] systems began making consequential decisions in credit scoring, criminal justice, and healthcare. Early frameworks borrowed from corporate governance and product liability law, asking who is responsible when an algorithm causes harm. The 2016 [[GDPR]] introduced a right to explanation under Article 22, marking the first major legislative attempt to encode accountability into automated decision-making—a principle subsequently operationalised at greater specificity and enforceability by the [[EU AI Act Regulatory Instrument]]. The concept is analytically distinct from [[Explainability]] and [[Transparency]]: those properties describe what information is available about a system and its behaviour, whereas accountability describes the institutional and legal structures that bind actors to consequences when things go wrong. A system can be fully explainable yet its developer still escape accountability if the legal and organisational structures are absent; conversely, accountability regimes can exist in principle without the technical tools to enforce them in practice. The two dimensions are therefore complementary rather than substitutable, which explains why modern governance frameworks such as the [[NIST AI Risk Management Framework]] treat them as jointly necessary components of trustworthy AI.
 
-  The significance of AI accountability is amplified by the scale and opacity of modern [[Deep Learning]] systems. A single [[Foundation Model]] deployed in customer-facing applications can affect millions of people, yet its decision logic may be opaque even to its creators. This creates accountability gaps that are structurally difficult to close: the upstream model developer may disclaim liability for downstream misuse, while the downstream deployer claims ignorance of the model's emergent capabilities. The [[EU AI Act Regulatory Instrument]], which entered into force in August 2024, addresses this through a value-chain model: general-purpose AI model providers face transparency and technical documentation obligations, while deployers bear responsibility for use-context risk assessment and [[Conformity Assessment]] for high-risk applications. The layered obligation structure is analogous to pharmaceutical regulation, where ingredient manufacturers and drug formulators carry distinct but complementary duties.
+Accountability mechanisms operate across three interlocking levels. Technical accountability creates verifiable records and testable claims about system behaviour: [[Audit Trail]] systems log inputs, decisions, and outputs with cryptographic integrity guarantees; [[Model Card]] documentation discloses capabilities, limitations, and intended use contexts; [[Algorithmic Auditing]] processes systematically probe deployed systems for discriminatory patterns, calibration failures, and adversarial vulnerabilities. Organisational accountability assigns internal roles and processes: [[AI Ethics Board]] structures provide governance oversight; responsible AI officers carry designated accountability for deployment decisions; incident response protocols define escalation paths when harms occur. Legal accountability establishes binding consequences: [[Liability]] regimes—still evolving in most jurisdictions—determine who bears civil and criminal responsibility for AI-caused harm; complaint procedures give affected individuals enforceable rights of challenge; regulatory enforcement through bodies such as the [[Information Commissioner's Office]] in the UK or the EU AI Office imposes sanctions on non-compliant deployers. Effective accountability requires all three levels to function in coordination: technical tooling provides the evidentiary substrate, organisational structures deploy it operationally, and legal frameworks translate it into enforceable duties and consequences.
 
-  ## Components / Architecture
+The significance of AI accountability is amplified by the scale and opacity of modern [[Deep Learning]] systems. A single [[Foundation Model]] deployed in customer-facing applications can affect millions of people, yet its decision logic may be opaque even to its creators. This creates accountability gaps that are structurally difficult to close: the upstream model developer may disclaim liability for downstream misuse, while the downstream deployer claims ignorance of the model's emergent capabilities. The [[EU AI Act Regulatory Instrument]], which entered into force in August 2024, addresses this through a value-chain model: general-purpose AI model providers face transparency and technical documentation obligations, while deployers bear responsibility for use-context risk assessment and [[Conformity Assessment]] for high-risk applications. The layered obligation structure is analogous to pharmaceutical regulation, where ingredient manufacturers and drug formulators carry distinct but complementary duties.
 
-  The accountability architecture of a compliant AI system spans five functional layers:
+## Components / Architecture
 
-  - **Governance layer**: [[AI Ethics Board]] oversight, designated responsible AI officers, board-level accountability statements, and internal escalation procedures for high-stakes deployment decisions
-  - **Documentation layer**: [[Model Card]] specifications of intended use, performance benchmarks by demographic subgroup, known failure modes, and recommended deployment constraints; [[AI Impact Assessment]] documentation prior to high-risk deployment
-  - **Audit layer**: Immutable [[Audit Trail]] records of all inputs, outputs, and intermediate decisions; third-party [[Algorithmic Auditing]] engagements using adversarial testing and bias probing toolkits; conformity self-assessments for medium-risk applications
-  - **Monitoring layer**: [[Post-Market Monitoring]] for performance drift, distributional shift, and emergent harms after deployment; incident logging with mandatory regulatory notification for serious failures
-  - **Redress layer**: Individual-facing [[Redress Mechanism]] procedures including human review of automated decisions, right of contestation, and compensation pathways; alignment with data subject rights under [[GDPR]] Article 22
+The accountability architecture of a compliant AI system spans five functional layers:
+
+- **Governance layer**: [[AI Ethics Board]] oversight, designated responsible AI officers, board-level accountability statements, and internal escalation procedures for high-stakes deployment decisions
+- **Documentation layer**: [[Model Card]] specifications of intended use, performance benchmarks by demographic subgroup, known failure modes, and recommended deployment constraints; [[AI Impact Assessment]] documentation prior to high-risk deployment
+- **Audit layer**: Immutable [[Audit Trail]] records of all inputs, outputs, and intermediate decisions; third-party [[Algorithmic Auditing]] engagements using adversarial testing and bias probing toolkits; conformity self-assessments for medium-risk applications
+- **Monitoring layer**: [[Post-Market Monitoring]] for performance drift, distributional shift, and emergent harms after deployment; incident logging with mandatory regulatory notification for serious failures
+- **Redress layer**: Individual-facing [[Redress Mechanism]] procedures including human review of automated decisions, right of contestation, and compensation pathways; alignment with data subject rights under [[GDPR]] Article 22
 
   Each layer maps to specific obligations under different regulatory instruments. The EU AI Act's high-risk tier mandates layers 1–5 in full. The NIST AI RMF's GOVERN, MAP, MEASURE, and MANAGE functions distribute these responsibilities across an organisation's lifecycle processes.
 
@@ -121,10 +121,11 @@ AI Accountability is the set of mechanisms, obligations, and institutional struc
   The UK has developed a distinctive approach to AI accountability that prioritises regulatory agility over comprehensive legislation. Rather than passing an AI-specific statute to match the EU AI Act, the government published a Pro-Innovation Approach to AI Regulation (DSIT, 2023) that tasks existing sector regulators—the ICO, Financial Conduct Authority (FCA), Medicines and Healthcare products Regulatory Agency (MHRA), and Ofcom—with applying their existing powers to AI applications within their remits, coordinated through a central AI Safety Institute (AISI). This creates a patchwork of accountability standards that are sector-specific rather than cross-cutting.
 
   Key institutional actors in the UK accountability ecosystem include:
-  - **[[Information Commissioner's Office]]**: Applies UK GDPR Article 22 automated decision-making obligations; issued detailed guidance on AI and data protection (2023, updated 2025); lead enforcement authority for AI-driven personal data processing across sectors
-  - **[[Centre for Data Ethics and Innovation]]**: Research and policy body producing impact assessment guidance, algorithmic transparency standards, and public-sector deployment frameworks
-  - **Alan Turing Institute**: Conducts foundational research on algorithmic accountability, fairness measurement, and audit methodology, with academic partnerships across Imperial College, Edinburgh, Oxford, and UCL
-  - **Financial Conduct Authority**: Enforcing accountability obligations for AI in financial services, including model validation, explainability of credit decisions, and consumer duty compliance
+
+- **[[Information Commissioner's Office]]**: Applies UK GDPR Article 22 automated decision-making obligations; issued detailed guidance on AI and data protection (2023, updated 2025); lead enforcement authority for AI-driven personal data processing across sectors
+- **[[Centre for Data Ethics and Innovation]]**: Research and policy body producing impact assessment guidance, algorithmic transparency standards, and public-sector deployment frameworks
+- **Alan Turing Institute**: Conducts foundational research on algorithmic accountability, fairness measurement, and audit methodology, with academic partnerships across Imperial College, Edinburgh, Oxford, and UCL
+- **Financial Conduct Authority**: Enforcing accountability obligations for AI in financial services, including model validation, explainability of credit decisions, and consumer duty compliance
 
   Northern English institutional contributions are substantial. The University of Manchester hosts the Alan Turing Institute node and has a dedicated AI Ethics and Society research group investigating accountability in clinical AI and public administration. The universities of Leeds and Sheffield collaborate on accountability frameworks for industrial AI applications in manufacturing and logistics. Newcastle University's Digital Institute has produced influential work on algorithmic accountability in public-sector benefits administration, with partnerships with local government authorities in the North East. The Manchester-Leeds-Sheffield triangle is also home to significant financial services and healthcare AI deployment, making it a natural laboratory for accountability frameworks in regulated industries.
 
@@ -198,5 +199,5 @@ AI Accountability is the set of mechanisms, obligations, and institutional struc
 
   27. DSIT (2023). *A Pro-Innovation Approach to AI Regulation*. Department for Science, Innovation and Technology, UK Government. Sets out the UK's sector-led regulatory model and accountability assignment principles.
 
-- ### Provenance
+### Provenance
 

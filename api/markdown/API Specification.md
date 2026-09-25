@@ -1,3 +1,2 @@
-
 An API Specification is a formal, machine-readable document that precisely defines the interface contract of a software API, including its endpoints, request and response schemas, authentication requirements, and error codes. It enables automated tooling such as code generation, validation, and interactive documentation to be derived directly from a single source of truth. Common specification formats include OpenAPI, AsyncAPI, and GraphQL SDL.
 

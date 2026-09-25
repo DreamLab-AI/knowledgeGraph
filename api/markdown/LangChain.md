@@ -1,20 +1,19 @@
-
 LangChain is an open-source Python and TypeScript framework for composing Large Language Model applications as chains of modular components — prompt templates, LLM wrappers, output parsers, memory stores, retrieval augmented generation pipelines, and tool-calling agents — providing a unified ...
 
-- ### Semantic Classification
+### Semantic Classification
 
-- ### Content
+### Content
 
-  LangChain was created by Harrison Chase and launched in October 2022, arriving precisely as the developer community was discovering that building useful LLM applications required more than a single API call. The first wave of use cases — document Q&A, code assistants, chatbots with context — all shared a common pattern: retrieve relevant context, inject it into a prompt, call the LLM, parse the output. LangChain codified this pattern into the Chain abstraction and provided composable building blocks (document loaders, text splitters, embedding models, vector stores, prompt templates) that could be wired together in Python. Its popularity grew rapidly, reaching 70,000 GitHub stars within six months.
+LangChain was created by Harrison Chase and launched in October 2022, arriving precisely as the developer community was discovering that building useful LLM applications required more than a single API call. The first wave of use cases — document Q&A, code assistants, chatbots with context — all shared a common pattern: retrieve relevant context, inject it into a prompt, call the LLM, parse the output. LangChain codified this pattern into the Chain abstraction and provided composable building blocks (document loaders, text splitters, embedding models, vector stores, prompt templates) that could be wired together in Python. Its popularity grew rapidly, reaching 70,000 GitHub stars within six months.
 
-  #### Key Characteristics
+#### Key Characteristics
 
-  - **LCEL (LangChain Expression Language)**: A declarative composition syntax using pipe operators (`|`) that chains components and handles streaming, async, and batch execution uniformly. `chain = prompt | llm | parser` expresses a full RAG pipeline in one line.
-  - **Runnable Interface**: All LangChain components implement a common `Runnable` interface with `invoke`, `stream`, `batch`, and `ainvoke` methods, making components interchangeable and enabling parallel composition.
-  - **Multi-Provider LLM Abstraction**: `ChatOpenAI`, `ChatAnthropic`, `ChatOllama`, and 50+ other integrations implement a common `BaseChatModel` interface, allowing applications to swap model providers without code changes.
-  - **Retrieval Augmented Generation (RAG)**: LangChain's retriever interface connects to vector databases (Chroma, FAISS, Pinecone, Weaviate), enabling semantic search over private document corpora. Document loaders ingest PDFs, web pages, Notion, Confluence, GitHub repositories, and more.
-  - **LangGraph**: An extension for stateful, graph-structured agent workflows. Unlike linear chains, LangGraph models agent state as nodes in a directed (or cyclic) graph, enabling loops (retry logic, self-reflection), branching, and parallel tool execution. It is the recommended pattern for production multi-step agents.
-  - **LangSmith**: An observability platform that traces every LLM call, tool invocation, and chain step, enabling debugging, evaluation, and dataset curation. Critical for production systems where prompt drift and hallucination rates must be monitored.
+- **LCEL (LangChain Expression Language)**: A declarative composition syntax using pipe operators (`|`) that chains components and handles streaming, async, and batch execution uniformly. `chain = prompt | llm | parser` expresses a full RAG pipeline in one line.
+- **Runnable Interface**: All LangChain components implement a common `Runnable` interface with `invoke`, `stream`, `batch`, and `ainvoke` methods, making components interchangeable and enabling parallel composition.
+- **Multi-Provider LLM Abstraction**: `ChatOpenAI`, `ChatAnthropic`, `ChatOllama`, and 50+ other integrations implement a common `BaseChatModel` interface, allowing applications to swap model providers without code changes.
+- **Retrieval Augmented Generation (RAG)**: LangChain's retriever interface connects to vector databases (Chroma, FAISS, Pinecone, Weaviate), enabling semantic search over private document corpora. Document loaders ingest PDFs, web pages, Notion, Confluence, GitHub repositories, and more.
+- **LangGraph**: An extension for stateful, graph-structured agent workflows. Unlike linear chains, LangGraph models agent state as nodes in a directed (or cyclic) graph, enabling loops (retry logic, self-reflection), branching, and parallel tool execution. It is the recommended pattern for production multi-step agents.
+- **LangSmith**: An observability platform that traces every LLM call, tool invocation, and chain step, enabling debugging, evaluation, and dataset curation. Critical for production systems where prompt drift and hallucination rates must be monitored.
 
   #### How It Works
 
@@ -32,11 +31,11 @@ LangChain is an open-source Python and TypeScript framework for composing Large 
 
   #### Standards and References
 
-  - Chase, H. (2022). *LangChain GitHub Repository*. https://github.com/langchain-ai/langchain
-  - LangChain AI. (2024). *LangChain Expression Language (LCEL) Documentation*. https://python.langchain.com/docs/expression_language/
-  - LangChain AI. (2024). *LangGraph Documentation*. https://langchain-ai.github.io/langgraph/
-  - Lewis, P., et al. (2020). "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks." *NeurIPS 2020*.
-  - Yao, S., et al. (2023). "ReAct: Synergising Reasoning and Acting in Language Models." *ICLR 2023*.
+- Chase, H. (2022). *LangChain GitHub Repository*. https://github.com/langchain-ai/langchain
+- LangChain AI. (2024). *LangChain Expression Language (LCEL) Documentation*. https://python.langchain.com/docs/expression_language/
+- LangChain AI. (2024). *LangGraph Documentation*. https://langchain-ai.github.io/langgraph/
+- Lewis, P., et al. (2020). "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks." *NeurIPS 2020*.
+- Yao, S., et al. (2023). "ReAct: Synergising Reasoning and Acting in Language Models." *ICLR 2023*.
 
-- ### Provenance
+### Provenance
 

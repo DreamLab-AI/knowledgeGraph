@@ -1,3 +1,2 @@
-
 A heartbeat mechanism is a distributed-systems technique in which a node periodically sends a lightweight signal to its peers or a coordinator to indicate that it remains alive and responsive, with the absence of expected heartbeats within a timeout interval treated as evidence of failure. It underlies failure detection in health checks, cluster membership protocols and consensus algorithms such as Raft, where a leader's heartbeats suppress follower election timeouts and its absence triggers a new leader election. The heartbeat interval and timeout must be tuned to balance fast failure detection against false positives caused by transient network delay.
 

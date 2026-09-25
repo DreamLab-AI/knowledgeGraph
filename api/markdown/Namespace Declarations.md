@@ -1,22 +1,24 @@
-
 XML and RDF syntax constructs that associate short prefix identifiers with full namespace URIs, enabling the use of qualified names (QNames) to abbreviate long IRIs into human-readable yet machine-processable references in semantic web documents.
 
-- ### Semantic Classification
+### Semantic Classification
 
-- ### Content
+### Content
 
-  - #### Technical Details
-		- Declared using xmlns:prefix syntax in XML documents
-		- RDF namespace IRI: http://www.w3.org/1999/02/22-rdf-syntax-ns#
-		- QNames consist of namespace prefix and local name
-		- Prefixed Names (PNames) extend QNames with more flexible abbreviation
-		- INamespaceMapper interface manages prefix-to-URI mappings
-  - #### Standard Namespaces
-		- rdf: for RDF syntax elements
-		- rdfs: for RDF Schema vocabulary
-		- owl: for OWL ontology language
-		- xsd: for XML Schema datatypes
-		- Custom namespaces for domain-specific vocabularies
+#### Technical Details
 
-- ### Provenance
+- Declared using xmlns:prefix syntax in XML documents
+- RDF namespace IRI: http://www.w3.org/1999/02/22-rdf-syntax-ns#
+- QNames consist of namespace prefix and local name
+- Prefixed Names (PNames) extend QNames with more flexible abbreviation
+- INamespaceMapper interface manages prefix-to-URI mappings
+
+#### Standard Namespaces
+
+- rdf: for RDF syntax elements
+- rdfs: for RDF Schema vocabulary
+- owl: for OWL ontology language
+- xsd: for XML Schema datatypes
+- Custom namespaces for domain-specific vocabularies
+
+### Provenance
 

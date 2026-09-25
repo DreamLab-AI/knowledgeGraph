@@ -1,21 +1,26 @@
-
 Principal Component Analysis (PCA) is an unsupervised linear technique that transforms correlated variables into a smaller set of uncorrelated components ordered by the variance they capture. The components are the eigenvectors of the data's covariance matrix, and projecting onto the leading components yields a lower-dimensional representation that preserves as much variance as possible. PCA is widely used for dimensionality reduction, noise reduction, visualisation, and feature decorrelation.
 
-- ### Overview
-  - PCA finds orthogonal directions of maximal variance in the data and re-expresses observations along those directions.
-  - It is computed via the eigendecomposition of the covariance matrix or, more numerically stably, the singular value decomposition of the centred data matrix.
-  - Retaining only the leading components compresses the data while discarding directions that contribute little variance, which often correspond to noise.
-  - Because PCA is linear and variance-based, it requires feature standardisation when variables differ in scale.
-- ### Mechanisms
-  - Centre and optionally standardise features before computing the covariance structure.
-  - Eigenvectors of the covariance matrix define the principal axes; eigenvalues quantify captured variance.
-  - The proportion of explained variance guides how many components to retain.
-  - Projection onto retained components yields decorrelated, lower-dimensional features.
-  - Relies on [[Linear Algebra]] operations such as eigendecomposition and singular value decomposition.
-- ### Applications
-  - Compressing high-dimensional feature sets before training a [[Machine Learning Model]].
-  - Two- or three-dimensional [[Data Visualisation]] of high-dimensional datasets.
-  - Noise reduction by reconstructing data from a truncated set of components.
-  - Decorrelating features as a [[Data Preprocessing]] step for downstream algorithms.
-- ### Provenance
+### Overview
+
+- PCA finds orthogonal directions of maximal variance in the data and re-expresses observations along those directions.
+- It is computed via the eigendecomposition of the covariance matrix or, more numerically stably, the singular value decomposition of the centred data matrix.
+- Retaining only the leading components compresses the data while discarding directions that contribute little variance, which often correspond to noise.
+- Because PCA is linear and variance-based, it requires feature standardisation when variables differ in scale.
+
+### Mechanisms
+
+- Centre and optionally standardise features before computing the covariance structure.
+- Eigenvectors of the covariance matrix define the principal axes; eigenvalues quantify captured variance.
+- The proportion of explained variance guides how many components to retain.
+- Projection onto retained components yields decorrelated, lower-dimensional features.
+- Relies on [[Linear Algebra]] operations such as eigendecomposition and singular value decomposition.
+
+### Applications
+
+- Compressing high-dimensional feature sets before training a [[Machine Learning Model]].
+- Two- or three-dimensional [[Data Visualisation]] of high-dimensional datasets.
+- Noise reduction by reconstructing data from a truncated set of components.
+- Decorrelating features as a [[Data Preprocessing]] step for downstream algorithms.
+
+### Provenance
 

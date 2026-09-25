@@ -1,10 +1,10 @@
-
 A centralized catalog managing structured metadata schemas, controlled vocabularies, and semantic relationships to enable consistent asset description, cross-platform interoperability, and intelligent discovery.
 
-- ### Semantic Classification
+### Semantic Classification
 
-- ### Content
-  Semantic Metadata Registry — content pending enrichment.
+### Content
 
-- ### Provenance
+Semantic Metadata Registry — content pending enrichment.
+
+### Provenance
 

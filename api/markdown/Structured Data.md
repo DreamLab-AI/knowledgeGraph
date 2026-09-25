@@ -1,22 +1,28 @@
-
 Structured data is information organised according to a predefined schema or model so that its meaning and relationships are explicit and machine-readable. By conforming to fixed fields, types, and constraints, it can be reliably queried, validated, exchanged, and reasoned over, in contrast to unstructured text or media. On the web it commonly takes the form of annotations such as Schema.org markup that let machines interpret page content.
 
 - Structured Data is information shaped by an explicit [[Data Model]] and [[Metadata]] so it is machine-readable, queryable, and validatable, often annotated with [[Schema.org]] on the web.
 - Its fixed fields and types enable [[Interoperability]] and reliable exchange.
-- ### Overview
+
+### Overview
+
 - Structured data is the foundation of databases, exchange formats, and the machine-readable web. Where unstructured content leaves meaning implicit, structured data makes it explicit by binding values to named fields with defined types and relationships.
 - This explicit organisation lets software validate inputs against a schema, query across records efficiently, merge data from multiple sources, and reason over relationships. Tabular databases, JSON and XML documents conforming to a schema, and RDF triples are all forms of structured data at different levels of expressivity.
 - On the public web, structured-data annotations such as Schema.org markup embedded in pages let search engines and assistants interpret entities, events, products, and reviews, powering rich results and knowledge panels.
-- ### Key aspects
+
+### Key aspects
+
 - A schema defines the permitted fields, types, and constraints that data must satisfy.
 - Explicit relationships connect records, enabling joins, graphs, and inference.
 - Validation checks conformance to the schema before data is trusted or stored.
 - Serialisation formats render structured data for storage and transmission.
 - Annotation embeds machine-readable structure within otherwise human-facing content.
-- ### Applications
+
+### Applications
+
 - Relational and graph databases that store and query typed records.
 - Web markup that drives search-engine rich results and knowledge graphs.
 - APIs exchanging schema-conformant JSON or XML between systems.
 - Linked data and semantic-web applications built on RDF and ontologies.
-- ### Provenance
+
+### Provenance
 

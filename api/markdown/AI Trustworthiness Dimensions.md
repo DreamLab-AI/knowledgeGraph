@@ -1,4 +1,3 @@
-
 AI Trustworthiness Dimensions are the seven interdependent assessment criteria—human agency and oversight, technical robustness and safety, privacy and data governance, transparency and explainability, diversity and non-discrimination and fairness, societal and environmental wellbeing, and accountability—that collectively determine whether an AI system meets the requirements for trustworthy deployment. Established by the EU High-Level Expert Group on AI Ethics Guidelines (2019) and operationalised through the EU AI Act, these dimensions are mutually reinforcing rather than substitutable: satisfying one does not compensate for deficiencies in another.
 
 ### Definition
@@ -19,5 +18,5 @@ Transparency and explainability mandates traceability of training data and model
 
 Accountability establishes the organisational and legal responsibilities for AI systems, requiring audit trails, redress mechanisms for affected individuals, and documented chains of responsibility. The EU AI Act translates these dimensions into binding requirements for high-risk AI systems, with conformity assessments conducted by notified bodies against harmonised standards developed by CEN/CENELEC and ISO/IEC JTC 1/SC 42.
 
-- ### Provenance
+### Provenance
 

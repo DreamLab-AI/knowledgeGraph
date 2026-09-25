@@ -1,22 +1,22 @@
-
 A structured specification defining metadata elements, their semantics, syntax, and relationships for describing and managing information resources. Metadata schemas establish standardised vocabularies and constraints that enable interoperability, discovery, and governance across data ecosystems through predefined sets of descriptive attributes tailored for specific domains or resource types.
 
-- ### Semantic Classification
+### Semantic Classification
 
-- ### Content
+### Content
 
-  ## Definition
+## Definition
 
-  A **Metadata Schema** is a formal specification that defines the structure, semantics, and constraints for metadata elements used to describe information resources. It establishes standardised vocabularies enabling consistent documentation of data assets across systems and organisations.
+A **Metadata Schema** is a formal specification that defines the structure, semantics, and constraints for metadata elements used to describe information resources. It establishes standardised vocabularies enabling consistent documentation of data assets across systems and organisations.
 
-  ## Core Components
+## Core Components
 
-  ### Schema Elements
-  - **Element Name**: Unique identifier for the metadata attribute
-  - **Semantics**: Formal meaning and interpretation rules
-  - **Syntax**: Data type, format, and encoding constraints
-  - **Cardinality**: Required, optional, or repeatable designations
-  - **Controlled Vocabularies**: Permitted value sets or taxonomies
+### Schema Elements
+
+- **Element Name**: Unique identifier for the metadata attribute
+- **Semantics**: Formal meaning and interpretation rules
+- **Syntax**: Data type, format, and encoding constraints
+- **Cardinality**: Required, optional, or repeatable designations
+- **Controlled Vocabularies**: Permitted value sets or taxonomies
 
   ### Schema Types
   1. **Descriptive Schemas**: Resource discovery and identification (Dublin Core)
@@ -27,35 +27,40 @@ A structured specification defining metadata elements, their semantics, syntax, 
   ## Standards and Frameworks
 
   ### Core Standards
-  - **Dublin Core Metadata Initiative**: 15 core elements for resource description
-  - **Schema.org**: Web content structured data vocabulary
-  - **Data Documentation Initiative (DDI)**: Survey and observational data
-  - **ISO 19115**: Geographic information metadata
+
+- **Dublin Core Metadata Initiative**: 15 core elements for resource description
+- **Schema.org**: Web content structured data vocabulary
+- **Data Documentation Initiative (DDI)**: Survey and observational data
+- **ISO 19115**: Geographic information metadata
 
   ### Semantic Web Standards
-  - **RDF Schema (RDFS)**: Vocabulary definition framework
-  - **Web Ontology Language (OWL)**: Complex ontology specification
-  - **SHACL**: Validation constraints and data quality rules
-  - **JSON-LD**: Semantic contexts for linked data
+
+- **RDF Schema (RDFS)**: Vocabulary definition framework
+- **Web Ontology Language (OWL)**: Complex ontology specification
+- **SHACL**: Validation constraints and data quality rules
+- **JSON-LD**: Semantic contexts for linked data
 
   ## Applications
 
   ### Data Governance
-  - Asset inventory and cataloguing
-  - Lineage and provenance tracking
-  - Quality assessment and compliance
-  - Access control and classification
+
+- Asset inventory and cataloguing
+- Lineage and provenance tracking
+- Quality assessment and compliance
+- Access control and classification
 
   ### Knowledge Management
-  - Semantic search and discovery
-  - Cross-system interoperability
-  - Knowledge graph construction
-  - Automated metadata generation
+
+- Semantic search and discovery
+- Cross-system interoperability
+- Knowledge graph construction
+- Automated metadata generation
 
   #### References
-  - [OpenMetadata Standards](https://openmetadatastandards.org/)
-  - [Metadata Standard - Wikipedia](https://en.wikipedia.org/wiki/Metadata_standard)
-  - [How to FAIR - Metadata](https://www.howtofair.dk/how-to-fair/metadata/)
 
-- ### Provenance
+- [OpenMetadata Standards](https://openmetadatastandards.org/)
+- [Metadata Standard - Wikipedia](https://en.wikipedia.org/wiki/Metadata_standard)
+- [How to FAIR - Metadata](https://www.howtofair.dk/how-to-fair/metadata/)
+
+### Provenance
 

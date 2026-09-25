@@ -1,22 +1,28 @@
-
 RDF/XML is the original World Wide Web Consortium serialisation format for the Resource Description Framework, expressing RDF triples as XML documents. It encodes subjects, predicates, and objects using XML elements and attributes, making RDF data parseable by generic XML tooling. Although verbose and historically awkward to read, it remains a standardised interchange format alongside more concise alternatives such as Turtle and JSON-LD.
 
 - Rdf Xml is the original XML serialisation of [[RDF]], encoding triples within [[XML]] documents as a standardised [[Data Format]] for the [[Semantic Web]].
 - It lets generic XML tooling parse linked data, alongside concise alternatives like [[Turtle]].
-- ### Overview
+
+### Overview
+
 - RDF/XML was the first standard concrete syntax for the Resource Description Framework, defined so that the abstract graph of subject-predicate-object triples could be written down, stored, and exchanged. By mapping RDF onto XML, it allowed early semantic-web systems to reuse the mature ecosystem of XML parsers and validators.
 - The format nests XML elements to represent resources and their properties, using namespaces and URI references to identify subjects, predicates, and objects. While faithful to the RDF data model, the syntax is notoriously verbose and its many abbreviation shortcuts make hand-authoring and reading difficult.
 - For these reasons newer serialisations such as Turtle, N-Triples, and JSON-LD have largely displaced RDF/XML for authoring, though it persists as a standardised interchange format that many tools still emit and consume.
-- ### Key aspects
+
+### Key aspects
+
 - Triples are expressed through nested XML elements and attributes referencing URIs.
 - Namespaces map XML prefixes to vocabulary and ontology URIs.
 - The syntax supports several abbreviated forms, increasing flexibility but reducing readability.
 - It reuses existing XML parsing, validation, and transformation tooling.
 - It is one of several interchangeable RDF serialisations of the same underlying graph.
-- ### Applications
+
+### Applications
+
 - Interchange of RDF data between semantic-web systems and triplestores.
 - Publishing vocabularies and ontologies in a standardised, parseable form.
 - Legacy linked-data pipelines built on XML infrastructure.
 - Tooling that emits or ingests RDF where XML compatibility is required.
-- ### Provenance
+
+### Provenance
 

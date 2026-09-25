@@ -1,144 +1,160 @@
-
 Software platforms that deliver, track, and manage educational content and training programmes, increasingly integrating with VR, AR, and metaverse technologies through SCORM, xAPI, and LTI standards to enable immersive learning experiences.
 
-- ### Semantic Classification
+### Semantic Classification
 
-- ### Content
+### Content
 
-  ## Metaverse-Compatible LMS
+## Metaverse-Compatible LMS
 
-  ### Technical Requirements
-  - VR and AR support
-  - 3D simulation capability
-  - Cloud-based infrastructure
-  - Device scalability
-  - AI and ML integration
+### Technical Requirements
+
+- VR and AR support
+- 3D simulation capability
+- Cloud-based infrastructure
+- Device scalability
+- AI and ML integration
 
   ### Advanced Features
-  - Blockchain credential verification
-  - Interoperability standards
-  - Multi-platform support
-  - Multi-device compatibility
-  - Multi-format handling
+
+- Blockchain credential verification
+- Interoperability standards
+- Multi-platform support
+- Multi-device compatibility
+- Multi-format handling
 
   ## Integration Standards
 
   ### SCORM Support
-  - VR lesson export capability
-  - Package upload functionality
-  - No coding required
-  - Direct LMS integration
-  - Immersive VR delivery
+
+- VR lesson export capability
+- Package upload functionality
+- No coding required
+- Direct LMS integration
+- Immersive VR delivery
 
   ### xAPI Protocol
-  - Experience tracking
-  - Activity recording
-  - Cross-platform data
-  - Detailed analytics
-  - Learning path tracking
+
+- Experience tracking
+- Activity recording
+- Cross-platform data
+- Detailed analytics
+- Learning path tracking
 
   ### LTI Integration
-  - Tool interoperability
-  - Platform connection
-  - Content sharing
-  - Grade passback
-  - User authentication
+
+- Tool interoperability
+- Platform connection
+- Content sharing
+- Grade passback
+- User authentication
 
   ## Platform Integrations
 
   ### SimLab VR Studio
-  - Moodle integration
-  - Blackboard support
-  - Canvas compatibility
-  - Seamless connection
-  - VR content delivery
+
+- Moodle integration
+- Blackboard support
+- Canvas compatibility
+- Seamless connection
+- VR content delivery
 
   ### Enterprise LMS Support
-  - SAP Successfactors
-  - Workday integration
-  - Cornerstone support
-  - Saba connectivity
-  - Cross-platform operation
+
+- SAP Successfactors
+- Workday integration
+- Cornerstone support
+- Saba connectivity
+- Cross-platform operation
 
   ## Benefits of VR-LMS Integration
 
   ### Learning Enhancement
-  - Immersive environment creation
-  - Attention capture improvement
-  - Information retention boost
-  - Complex concept understanding
-  - Deeper learning engagement
+
+- Immersive environment creation
+- Attention capture improvement
+- Information retention boost
+- Complex concept understanding
+- Deeper learning engagement
 
   ### Outcome Improvement
-  - 75% learning improvement
-  - Traditional method comparison
-  - Measurable effectiveness
-  - Skill acquisition acceleration
-  - Knowledge application
+
+- 75% learning improvement
+- Traditional method comparison
+- Measurable effectiveness
+- Skill acquisition acceleration
+- Knowledge application
 
   ## Enterprise Applications
 
   ### Training Delivery
-  - Hands-on experience provision
-  - Operational efficiency improvement
-  - Package handling simulation
-  - Engine repair training
-  - Complex task practice
+
+- Hands-on experience provision
+- Operational efficiency improvement
+- Package handling simulation
+- Engine repair training
+- Complex task practice
 
   ### Metaverse Training
-  - Step-by-step assistance
-  - VR headset utilisation
-  - Practical skill development
-  - Real-world application
-  - Performance improvement
+
+- Step-by-step assistance
+- VR headset utilisation
+- Practical skill development
+- Real-world application
+- Performance improvement
 
   ## Future of LMS
 
   ### AI Integration
-  - Online learning revolution
-  - Educational experience transformation
-  - Adaptive learning engines
-  - Real-time analytics
-  - Personalised pathways
+
+- Online learning revolution
+- Educational experience transformation
+- Adaptive learning engines
+- Real-time analytics
+- Personalised pathways
 
   ### VR/AR Advancement
-  - Metaverse-based learning growth
-  - Immersive solution centrality
-  - Interactive capability expansion
-  - Advanced feature integration
-  - Continuous evolution
+
+- Metaverse-based learning growth
+- Immersive solution centrality
+- Interactive capability expansion
+- Advanced feature integration
+- Continuous evolution
 
   ## Technical Considerations
 
   ### Deployment Options
-  - Cloud-hosted solutions
-  - On-premise installation
-  - Hybrid configurations
-  - Mobile access
-  - Offline capability
+
+- Cloud-hosted solutions
+- On-premise installation
+- Hybrid configurations
+- Mobile access
+- Offline capability
 
   ### VR Training Companies (2024)
-  - Immersive experience leaders
-  - Skill acquisition focus
-  - LMS integration priority
-  - Interoperability emphasis
-  - Progress tracking support
+
+- Immersive experience leaders
+- Skill acquisition focus
+- LMS integration priority
+- Interoperability emphasis
+- Progress tracking support
 
   ## Implementation Best Practices
 
   ### Integration Planning
-  - Platform compatibility assessment
-  - Standard protocol selection
-  - Data flow design
-  - User experience mapping
-  - Performance optimisation
+
+- Platform compatibility assessment
+- Standard protocol selection
+- Data flow design
+- User experience mapping
+- Performance optimisation
 
   ### Content Strategy
-  - SCORM/xAPI compliance
-  - VR content creation
-  - Assessment integration
-  - Progress tracking
-  - Reporting configuration
 
-- ### Provenance
+- SCORM/xAPI compliance
+- VR content creation
+- Assessment integration
+- Progress tracking
+- Reporting configuration
+
+### Provenance
 

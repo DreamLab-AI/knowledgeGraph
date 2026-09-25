@@ -1,25 +1,27 @@
-
 Semi-Supervised Learning is a artificial intelligence concept and a type of Machine Learning. that enables Data-Efficient Learning.
 
-- ### Semantic Classification
+### Semantic Classification
 
-- ### Content
+### Content
 
-  ### Definition
-  Semi-supervised learning is a machine learning paradigm that combines small amounts of labeled data with large amounts of unlabeled data during training. It addresses the practical challenge that labeling data is expensive and time-consuming, while unlabeled data is abundant, by leveraging the structure and patterns in unlabeled data to improve model performance beyond what labeled data alone could achieve.
+### Definition
+Semi-supervised learning is a machine learning paradigm that combines small amounts of labeled data with large amounts of unlabeled data during training. It addresses the practical challenge that labeling data is expensive and time-consuming, while unlabeled data is abundant, by leveraging the structure and patterns in unlabeled data to improve model performance beyond what labeled data alone could achieve.
 
-  ### Core Assumptions
-  **Smoothness Assumption:**
-  - Points close together likely share same label
-  - Decision boundaries in low-density regions
+### Core Assumptions
+**Smoothness Assumption:**
+
+- Points close together likely share same label
+- Decision boundaries in low-density regions
 
   **Cluster Assumption:**
-  - Data forms distinct clusters
-  - Points in same cluster share labels
+
+- Data forms distinct clusters
+- Points in same cluster share labels
 
   **Manifold Assumption:**
-  - High-dimensional data lies on lower-dimensional manifold
-  - Learn manifold structure from unlabeled data
+
+- High-dimensional data lies on lower-dimensional manifold
+- Learn manifold structure from unlabeled data
 
   ### Common Techniques
   **Self-Training:**
@@ -29,51 +31,59 @@ Semi-Supervised Learning is a artificial intelligence concept and a type of Mach
   4. Retrain iteratively
 
   **Co-Training:**
-  - Split features into independent views
-  - Train separate classifiers on each view
-  - Exchange high-confidence predictions
-  - Effective when views are conditionally independent
+
+- Split features into independent views
+- Train separate classifiers on each view
+- Exchange high-confidence predictions
+- Effective when views are conditionally independent
 
   **Graph-Based Methods:**
-  - Represent data as graph
-  - Propagate labels through edges
-  - Label spreading/propagation algorithms
+
+- Represent data as graph
+- Propagate labels through edges
+- Label spreading/propagation algorithms
 
   **Generative Models:**
-  - Model joint distribution P(X,Y)
-  - Use unlabeled data to improve P(X)
-  - Examples: Gaussian mixture models, VAEs
+
+- Model joint distribution P(X,Y)
+- Use unlabeled data to improve P(X)
+- Examples: Gaussian mixture models, VAEs
 
   **Consistency Regularization:**
-  - Model should give consistent predictions for perturbed versions of same input
-  - Used in modern deep learning (MixMatch, FixMatch)
+
+- Model should give consistent predictions for perturbed versions of same input
+- Used in modern deep learning (MixMatch, FixMatch)
 
   ### Modern Deep Learning Approaches
-  - Pseudo-labeling
-  - Mean Teacher
-  - MixMatch / FixMatch / FlexMatch
-  - Contrastive learning with labels
-  - Pre-training + fine-tuning
+
+- Pseudo-labeling
+- Mean Teacher
+- MixMatch / FixMatch / FlexMatch
+- Contrastive learning with labels
+- Pre-training + fine-tuning
 
   ### Applications
-  - Text classification (limited labeled documents)
-  - Image recognition (few labeled images)
-  - Speech recognition
-  - Medical diagnosis (limited expert annotations)
-  - Natural language processing
-  - Computer vision
+
+- Text classification (limited labeled documents)
+- Image recognition (few labeled images)
+- Speech recognition
+- Medical diagnosis (limited expert annotations)
+- Natural language processing
+- Computer vision
 
   ### Advantages
-  - Reduces labeling costs dramatically
-  - Improves performance with limited labels
-  - Leverages abundant unlabeled data
-  - Practical for real-world scenarios
+
+- Reduces labeling costs dramatically
+- Improves performance with limited labels
+- Leverages abundant unlabeled data
+- Practical for real-world scenarios
 
   ### Challenges
-  - Risk of confirmation bias in self-training
-  - Quality depends on initial labeled data
-  - Can amplify errors if assumptions violated
-  - Computational cost of iterative methods
 
-- ### Provenance
+- Risk of confirmation bias in self-training
+- Quality depends on initial labeled data
+- Can amplify errors if assumptions violated
+- Computational cost of iterative methods
+
+### Provenance
 

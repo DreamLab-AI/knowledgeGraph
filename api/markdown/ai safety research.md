@@ -1,189 +1,197 @@
-
 AI Safety Research is an interdisciplinary field that develops theoretical frameworks, empirical methods, and engineering techniques to ensure advanced AI systems behave in ways that are safe, reliable, and aligned with human values across a range of capability levels. The field spans near-term concerns — such as robustness, fairness, and adversarial resistance — and longer-term challenges including scalable oversight, corrigibility, and the avoidance of catastrophic risks from highly capable systems. It draws on machine learning, decision theory, formal verification, and cognitive science to produce both immediately deployable safety interventions and foundational understanding of how intelligent systems can be made reliably beneficial.
 
-- ### Semantic Classification
+### Semantic Classification
 
-- ### Content
-  ## Compositional Relationships (Components)
-    ```
-    SubClassOf(ai:AISafetyResearch
-      ObjectSomeValuesFrom(ai:hasPart ai:AlignmentResearch))
-    SubClassOf(ai:AISafetyResearch
-      ObjectSomeValuesFrom(ai:hasPart ai:InterpretabilityResearch))
-    SubClassOf(ai:AISafetyResearch
-      ObjectSomeValuesFrom(ai:hasPart ai:RobustnessResearch))
-    SubClassOf(ai:AISafetyResearch
-      ObjectSomeValuesFrom(ai:hasPart ai:ScalableOversightResearch))
-    SubClassOf(ai:AISafetyResearch
-      ObjectSomeValuesFrom(ai:hasPart ai:FrontierEvaluation))
-    SubClassOf(ai:AISafetyResearch
-      ObjectSomeValuesFrom(ai:hasPart ai:AdversarialRobustnessResearch))
-    SubClassOf(ai:AISafetyResearch
-      ObjectSomeValuesFrom(ai:hasPart ai:CorrigibilityResearch))
-    ```
-  ## Dependency Relationships
-    ```
-    SubClassOf(ai:AISafetyResearch
-      ObjectSomeValuesFrom(ai:requires ai:MachineLearning))
-    SubClassOf(ai:AISafetyResearch
-      ObjectSomeValuesFrom(ai:requires ai:DecisionTheory))
-    SubClassOf(ai:AISafetyResearch
-      ObjectSomeValuesFrom(ai:requires ai:Robustness))
-    SubClassOf(ai:AISafetyResearch
-      ObjectSomeValuesFrom(ai:requires ai:NeuralNetwork))
-    SubClassOf(ai:AISafetyResearch
-      ObjectSomeValuesFrom(ai:dependsOn ai:DeepLearning))
-    SubClassOf(ai:AISafetyResearch
-      ObjectSomeValuesFrom(ai:dependsOn ai:FormalVerification))
-    SubClassOf(ai:AISafetyResearch
-      ObjectSomeValuesFrom(ai:dependsOn ai:UncertaintyQuantification))
-    ```
-  ## Capability Relationships
-    ```
-    SubClassOf(ai:AISafetyResearch
-      ObjectSomeValuesFrom(ai:enables ai:AIAlignment))
-    SubClassOf(ai:AISafetyResearch
-      ObjectSomeValuesFrom(ai:enables ai:ResponsibleAI))
-    SubClassOf(ai:AISafetyResearch
-      ObjectSomeValuesFrom(ai:enables ai:TrustworthyAI))
-    SubClassOf(ai:AISafetyResearch
-      ObjectSomeValuesFrom(ai:enables ai:Corrigibility))
-    SubClassOf(ai:AISafetyResearch
-      ObjectSomeValuesFrom(ai:enables ai:AISafety))
-    SubClassOf(ai:AISafetyResearch
-      ObjectSomeValuesFrom(ai:supports ai:AIPolicy))
-    SubClassOf(ai:AISafetyResearch
-      ObjectSomeValuesFrom(ai:supports ai:AIRegulation))
-    SubClassOf(ai:AISafetyResearch
-      ObjectSomeValuesFrom(ai:supports ai:ModelEvaluation))
-    ```
-  ## Implementation Relationships
-    ```
-    SubClassOf(ai:AISafetyResearch
-      ObjectSomeValuesFrom(ai:uses ai:ReinforcementLearningFromHumanFeedback))
-    SubClassOf(ai:AISafetyResearch
-      ObjectSomeValuesFrom(ai:uses ai:MechanisticInterpretability))
-    SubClassOf(ai:AISafetyResearch
-      ObjectSomeValuesFrom(ai:uses ai:RedTeaming))
-    SubClassOf(ai:AISafetyResearch
-      ObjectSomeValuesFrom(ai:uses ai:ConstitutionalAI))
-    SubClassOf(ai:AISafetyResearch
-      ObjectSomeValuesFrom(ai:uses ai:ValueLearning))
-    SubClassOf(ai:AISafetyResearch
-      ObjectSomeValuesFrom(ai:uses ai:AdversarialMachineLearning))
-    SubClassOf(ai:AISafetyResearch
-      ObjectSomeValuesFrom(ai:uses ai:FormalVerification))
-    ```
-  ## Reduction Relationships
-    ```
-    SubClassOf(ai:AISafetyResearch
-      ObjectSomeValuesFrom(ai:reducesTo ai:SafetyEvaluation))
-    SubClassOf(ai:AISafetyResearch
-      ObjectSomeValuesFrom(ai:reducesTo ai:AlignmentTechnique))
-    SubClassOf(ai:AISafetyResearch
-      ObjectSomeValuesFrom(ai:reducesTo ai:SafetyProperty))
-    SubClassOf(ai:AISafetyResearch
-      ObjectSomeValuesFrom(ai:reducesTo ai:SafetyBenchmark))
-    SubClassOf(ai:AISafetyResearch
-      ObjectSomeValuesFrom(ai:relatedTo ai:ExistentialRisk))
-    SubClassOf(ai:AISafetyResearch
-      ObjectSomeValuesFrom(ai:relatedTo ai:RewardHacking))
-    SubClassOf(ai:AISafetyResearch
-      ObjectSomeValuesFrom(ai:supports ai:AIGovernance))
-    SubClassOf(ai:AISafetyResearch
-      ObjectSomeValuesFrom(ai:bridgesTo ai:CognitiveScience))
-    ```
+### Content
 
-  ## About
+## Compositional Relationships (Components)
+  ```
+  SubClassOf(ai:AISafetyResearch
+    ObjectSomeValuesFrom(ai:hasPart ai:AlignmentResearch))
+  SubClassOf(ai:AISafetyResearch
+    ObjectSomeValuesFrom(ai:hasPart ai:InterpretabilityResearch))
+  SubClassOf(ai:AISafetyResearch
+    ObjectSomeValuesFrom(ai:hasPart ai:RobustnessResearch))
+  SubClassOf(ai:AISafetyResearch
+    ObjectSomeValuesFrom(ai:hasPart ai:ScalableOversightResearch))
+  SubClassOf(ai:AISafetyResearch
+    ObjectSomeValuesFrom(ai:hasPart ai:FrontierEvaluation))
+  SubClassOf(ai:AISafetyResearch
+    ObjectSomeValuesFrom(ai:hasPart ai:AdversarialRobustnessResearch))
+  SubClassOf(ai:AISafetyResearch
+    ObjectSomeValuesFrom(ai:hasPart ai:CorrigibilityResearch))
+  ```
+## Dependency Relationships
+  ```
+  SubClassOf(ai:AISafetyResearch
+    ObjectSomeValuesFrom(ai:requires ai:MachineLearning))
+  SubClassOf(ai:AISafetyResearch
+    ObjectSomeValuesFrom(ai:requires ai:DecisionTheory))
+  SubClassOf(ai:AISafetyResearch
+    ObjectSomeValuesFrom(ai:requires ai:Robustness))
+  SubClassOf(ai:AISafetyResearch
+    ObjectSomeValuesFrom(ai:requires ai:NeuralNetwork))
+  SubClassOf(ai:AISafetyResearch
+    ObjectSomeValuesFrom(ai:dependsOn ai:DeepLearning))
+  SubClassOf(ai:AISafetyResearch
+    ObjectSomeValuesFrom(ai:dependsOn ai:FormalVerification))
+  SubClassOf(ai:AISafetyResearch
+    ObjectSomeValuesFrom(ai:dependsOn ai:UncertaintyQuantification))
+  ```
+## Capability Relationships
+  ```
+  SubClassOf(ai:AISafetyResearch
+    ObjectSomeValuesFrom(ai:enables ai:AIAlignment))
+  SubClassOf(ai:AISafetyResearch
+    ObjectSomeValuesFrom(ai:enables ai:ResponsibleAI))
+  SubClassOf(ai:AISafetyResearch
+    ObjectSomeValuesFrom(ai:enables ai:TrustworthyAI))
+  SubClassOf(ai:AISafetyResearch
+    ObjectSomeValuesFrom(ai:enables ai:Corrigibility))
+  SubClassOf(ai:AISafetyResearch
+    ObjectSomeValuesFrom(ai:enables ai:AISafety))
+  SubClassOf(ai:AISafetyResearch
+    ObjectSomeValuesFrom(ai:supports ai:AIPolicy))
+  SubClassOf(ai:AISafetyResearch
+    ObjectSomeValuesFrom(ai:supports ai:AIRegulation))
+  SubClassOf(ai:AISafetyResearch
+    ObjectSomeValuesFrom(ai:supports ai:ModelEvaluation))
+  ```
+## Implementation Relationships
+  ```
+  SubClassOf(ai:AISafetyResearch
+    ObjectSomeValuesFrom(ai:uses ai:ReinforcementLearningFromHumanFeedback))
+  SubClassOf(ai:AISafetyResearch
+    ObjectSomeValuesFrom(ai:uses ai:MechanisticInterpretability))
+  SubClassOf(ai:AISafetyResearch
+    ObjectSomeValuesFrom(ai:uses ai:RedTeaming))
+  SubClassOf(ai:AISafetyResearch
+    ObjectSomeValuesFrom(ai:uses ai:ConstitutionalAI))
+  SubClassOf(ai:AISafetyResearch
+    ObjectSomeValuesFrom(ai:uses ai:ValueLearning))
+  SubClassOf(ai:AISafetyResearch
+    ObjectSomeValuesFrom(ai:uses ai:AdversarialMachineLearning))
+  SubClassOf(ai:AISafetyResearch
+    ObjectSomeValuesFrom(ai:uses ai:FormalVerification))
+  ```
+## Reduction Relationships
+  ```
+  SubClassOf(ai:AISafetyResearch
+    ObjectSomeValuesFrom(ai:reducesTo ai:SafetyEvaluation))
+  SubClassOf(ai:AISafetyResearch
+    ObjectSomeValuesFrom(ai:reducesTo ai:AlignmentTechnique))
+  SubClassOf(ai:AISafetyResearch
+    ObjectSomeValuesFrom(ai:reducesTo ai:SafetyProperty))
+  SubClassOf(ai:AISafetyResearch
+    ObjectSomeValuesFrom(ai:reducesTo ai:SafetyBenchmark))
+  SubClassOf(ai:AISafetyResearch
+    ObjectSomeValuesFrom(ai:relatedTo ai:ExistentialRisk))
+  SubClassOf(ai:AISafetyResearch
+    ObjectSomeValuesFrom(ai:relatedTo ai:RewardHacking))
+  SubClassOf(ai:AISafetyResearch
+    ObjectSomeValuesFrom(ai:supports ai:AIGovernance))
+  SubClassOf(ai:AISafetyResearch
+    ObjectSomeValuesFrom(ai:bridgesTo ai:CognitiveScience))
+  ```
 
-  AI Safety Research emerged as a distinct scientific discipline in the early 2010s, catalysed by three converging factors: rapid empirical progress in [[Deep Learning]] that outpaced theoretical understanding of how learned systems would behave at scale; the formalisation by Stuart Russell, Nick Bostrom, and Eliezer Yudkowsky of the alignment problem as a central unsolved challenge in computer science; and the recognition by researchers at Google DeepMind, OpenAI, and newly founded Anthropic that the organisations building the most capable AI systems needed dedicated programmes to ensure those systems remained beneficial. The field is motivated by a fundamental asymmetry: as [[AI Systems]] grow more capable, the consequences of misspecification, unexpected behaviour, or adversarial manipulation scale accordingly, while the difficulty of detecting and correcting such problems may also increase if systems develop the ability to conceal misaligned behaviour — a failure mode termed deceptive alignment.
+## About
 
-  The field organises around two interacting time horizons that share technical foundations despite their different urgency profiles. Near-term safety research addresses systems deployed today in consequential domains: [[Robustness]] research ensures deployed classifiers, recommenders, and language models behave correctly when their training-distribution assumptions are violated; adversarial robustness research defends against [[Adversarial Examples]] and [[Prompt Injection]] attacks; [[Fairness in Machine Learning]] research identifies and mitigates demographic biases in consequential decisions; [[Uncertainty Quantification]] research ensures systems communicate their confidence calibration rather than overconfidently operating outside their competence region. Longer-term safety research addresses systems that may in future surpass human capability across broad task domains: [[Scalable Oversight]] research develops methods for weaker supervisors to evaluate and guide stronger systems; [[Corrigibility]] research formalises the property that a system accepts correction without instrumental resistance; [[Value Learning]] research develops mechanisms for AI systems to infer human preferences from behaviour rather than requiring complete prior specification; and the study of [[Specification Gaming]] and [[Reward Hacking]] provides formal accounts of why AI systems may satisfy the letter of their objective functions while violating their spirit.
+AI Safety Research emerged as a distinct scientific discipline in the early 2010s, catalysed by three converging factors: rapid empirical progress in [[Deep Learning]] that outpaced theoretical understanding of how learned systems would behave at scale; the formalisation by Stuart Russell, Nick Bostrom, and Eliezer Yudkowsky of the alignment problem as a central unsolved challenge in computer science; and the recognition by researchers at Google DeepMind, OpenAI, and newly founded Anthropic that the organisations building the most capable AI systems needed dedicated programmes to ensure those systems remained beneficial. The field is motivated by a fundamental asymmetry: as [[AI Systems]] grow more capable, the consequences of misspecification, unexpected behaviour, or adversarial manipulation scale accordingly, while the difficulty of detecting and correcting such problems may also increase if systems develop the ability to conceal misaligned behaviour — a failure mode termed deceptive alignment.
 
-  A defining feature of AI Safety Research is its relationship with [[AI Capabilities Research]]: the two fields are both complementary and in tension. Safety researchers must understand and anticipate capability advances to develop appropriate safeguards before capable systems are deployed, yet capability research produces the systems that create safety problems. This tension has generated the concept of Responsible Scaling Policies (RSPs), pioneered by Anthropic, which set explicit safety evaluation thresholds that must be cleared before advancing to higher capability levels — a structure that institutionalises the relationship between safety research outputs and capability development decisions.
+The field organises around two interacting time horizons that share technical foundations despite their different urgency profiles. Near-term safety research addresses systems deployed today in consequential domains: [[Robustness]] research ensures deployed classifiers, recommenders, and language models behave correctly when their training-distribution assumptions are violated; adversarial robustness research defends against [[Adversarial Examples]] and [[Prompt Injection]] attacks; [[Fairness in Machine Learning]] research identifies and mitigates demographic biases in consequential decisions; [[Uncertainty Quantification]] research ensures systems communicate their confidence calibration rather than overconfidently operating outside their competence region. Longer-term safety research addresses systems that may in future surpass human capability across broad task domains: [[Scalable Oversight]] research develops methods for weaker supervisors to evaluate and guide stronger systems; [[Corrigibility]] research formalises the property that a system accepts correction without instrumental resistance; [[Value Learning]] research develops mechanisms for AI systems to infer human preferences from behaviour rather than requiring complete prior specification; and the study of [[Specification Gaming]] and [[Reward Hacking]] provides formal accounts of why AI systems may satisfy the letter of their objective functions while violating their spirit.
 
-  The field's institutional landscape has evolved rapidly through 2023-2026. The closure of the Future of Humanity Institute at Oxford (2024) — the pioneering institution in long-term AI risk analysis — marked a significant restructuring: its key researchers dispersed to new institutions including the newly created Oxford Institute for Ethics in AI (Bostrom's new home), the UK AI Security Institute, and independent research organisations. Simultaneously, government investment in AI safety research has expanded dramatically: the UK's AISI Challenge Fund launched in 2025 specifically finances open safety research in safeguards, control, alignment, and societal resilience — the first government grant programme in any jurisdiction targeted at technical AI safety research as a distinct category. The US NSF has included AI safety as a priority area in its National AI Research Institutes programme since 2024. This government investment is partially counterbalancing the increasing concentration of safety research within AI companies (Anthropic, DeepMind, OpenAI) that also develop capability-advancing systems, ensuring some degree of independent academic research capacity outside the commercial AI sector.
+A defining feature of AI Safety Research is its relationship with [[AI Capabilities Research]]: the two fields are both complementary and in tension. Safety researchers must understand and anticipate capability advances to develop appropriate safeguards before capable systems are deployed, yet capability research produces the systems that create safety problems. This tension has generated the concept of Responsible Scaling Policies (RSPs), pioneered by Anthropic, which set explicit safety evaluation thresholds that must be cleared before advancing to higher capability levels — a structure that institutionalises the relationship between safety research outputs and capability development decisions.
 
-  The question of what constitutes appropriate "sufficient safety" before deploying increasingly capable AI systems remains one of the most contested and practically important questions in the field. The Responsible Scaling Policy approach sets quantitative capability thresholds that trigger enhanced safety evaluation requirements; but the thresholds themselves are set by the AI companies developing the systems, creating a potential conflict of interest. Independent evaluation by government bodies (UK AISI, US AISI) provides a partial check on this, but the evaluation methodologies are themselves contested, the evaluations are conducted on pre-release model versions that may not represent final deployment versions, and the evaluators may not have access to all model internals necessary for thorough assessment. These structural tensions in the governance of frontier AI safety are themselves a major research area at the intersection of AI safety and [[AI Governance]], informing the design of the regulatory frameworks that are emerging globally to manage frontier AI deployment.
+The field's institutional landscape has evolved rapidly through 2023-2026. The closure of the Future of Humanity Institute at Oxford (2024) — the pioneering institution in long-term AI risk analysis — marked a significant restructuring: its key researchers dispersed to new institutions including the newly created Oxford Institute for Ethics in AI (Bostrom's new home), the UK AI Security Institute, and independent research organisations. Simultaneously, government investment in AI safety research has expanded dramatically: the UK's AISI Challenge Fund launched in 2025 specifically finances open safety research in safeguards, control, alignment, and societal resilience — the first government grant programme in any jurisdiction targeted at technical AI safety research as a distinct category. The US NSF has included AI safety as a priority area in its National AI Research Institutes programme since 2024. This government investment is partially counterbalancing the increasing concentration of safety research within AI companies (Anthropic, DeepMind, OpenAI) that also develop capability-advancing systems, ensuring some degree of independent academic research capacity outside the commercial AI sector.
 
-  ## Key Research Programmes
+The question of what constitutes appropriate "sufficient safety" before deploying increasingly capable AI systems remains one of the most contested and practically important questions in the field. The Responsible Scaling Policy approach sets quantitative capability thresholds that trigger enhanced safety evaluation requirements; but the thresholds themselves are set by the AI companies developing the systems, creating a potential conflict of interest. Independent evaluation by government bodies (UK AISI, US AISI) provides a partial check on this, but the evaluation methodologies are themselves contested, the evaluations are conducted on pre-release model versions that may not represent final deployment versions, and the evaluators may not have access to all model internals necessary for thorough assessment. These structural tensions in the governance of frontier AI safety are themselves a major research area at the intersection of AI safety and [[AI Governance]], informing the design of the regulatory frameworks that are emerging globally to manage frontier AI deployment.
 
-  **[[Reinforcement Learning from Human Feedback]] (RLHF) and successor techniques**: RLHF trains systems to maximise a reward model derived from human preference comparisons between outputs, and has been the dominant near-term alignment technique for [[Large Language Models]] since 2022. Successor techniques include Direct Preference Optimisation (DPO), which eliminates the separate reward model by directly optimising the policy on preference data; Constitutional AI (CAI), in which a set of natural-language principles guides both self-critique (using chain-of-thought) and preference-labelling, reducing dependence on large human annotation pools; and Reinforcement Learning from AI Feedback (RLAIF), which substitutes a trusted AI model for human annotators at scale. A key 2025-2026 concern is that RLHF inherently optimises for the appearance of quality as perceived by human raters, which in the context of highly capable models incentivises sycophancy, reward hacking, and potentially sophisticated deception — motivating the parallel development of [[Mechanistic Interpretability]] to verify that models that appear aligned have genuinely aligned internal representations.
+## Key Research Programmes
 
-  **[[Mechanistic Interpretability]]**: reverse-engineering the learned representations and computational circuits inside [[Neural Network]]s to understand how they produce their outputs, with the goal of detecting deceptive or misaligned behaviour that surface-level evaluation would miss. Anthropic's 2025 work using attribution graphs, a technique that traces causal interactions between neural activations interpreted as concepts, to examine Claude 3.5 Haiku's internal reasoning was a landmark advance. In their pre-deployment safety assessment of Claude Sonnet 4.5, Anthropic included a formal mechanistic interpretability analysis identifying and attempting to suppress the model's representations of evaluation awareness. MIT Technology Review named mechanistic interpretability one of its "10 Breakthrough Technologies 2026." DeepMind has developed tools that can localise specific behaviours to individual circuits and demonstrated transfer of safety properties between models without full retraining — termed safety property patching.
+**[[Reinforcement Learning from Human Feedback]] (RLHF) and successor techniques**: RLHF trains systems to maximise a reward model derived from human preference comparisons between outputs, and has been the dominant near-term alignment technique for [[Large Language Models]] since 2022. Successor techniques include Direct Preference Optimisation (DPO), which eliminates the separate reward model by directly optimising the policy on preference data; Constitutional AI (CAI), in which a set of natural-language principles guides both self-critique (using chain-of-thought) and preference-labelling, reducing dependence on large human annotation pools; and Reinforcement Learning from AI Feedback (RLAIF), which substitutes a trusted AI model for human annotators at scale. A key 2025-2026 concern is that RLHF inherently optimises for the appearance of quality as perceived by human raters, which in the context of highly capable models incentivises sycophancy, reward hacking, and potentially sophisticated deception — motivating the parallel development of [[Mechanistic Interpretability]] to verify that models that appear aligned have genuinely aligned internal representations.
 
-  **[[Scalable Oversight]]**: developing methods that allow weaker supervisors (humans, or currently trusted AI) to reliably evaluate and guide systems that may produce outputs exceeding the supervisor's capability to assess directly. Debate (Irving et al., 2018) has two AI systems argue opposing positions to a human judge, exploiting the asymmetry that verifying an argument is easier than constructing one. Recursive reward modelling decomposes hard evaluation tasks into tractable subtasks, each supervised by a human-AI team. Weak-to-strong generalisation (Burns et al., 2023) investigates whether a weaker model's supervision can elicit aligned behaviour from a stronger model. Future scalable oversight frameworks are being designed to integrate Prover-Estimator debate with continuous mechanistic interpretability auditing of the debating agents' internal reasoning.
+**[[Mechanistic Interpretability]]**: reverse-engineering the learned representations and computational circuits inside [[Neural Network]]s to understand how they produce their outputs, with the goal of detecting deceptive or misaligned behaviour that surface-level evaluation would miss. Anthropic's 2025 work using attribution graphs, a technique that traces causal interactions between neural activations interpreted as concepts, to examine Claude 3.5 Haiku's internal reasoning was a landmark advance. In their pre-deployment safety assessment of Claude Sonnet 4.5, Anthropic included a formal mechanistic interpretability analysis identifying and attempting to suppress the model's representations of evaluation awareness. MIT Technology Review named mechanistic interpretability one of its "10 Breakthrough Technologies 2026." DeepMind has developed tools that can localise specific behaviours to individual circuits and demonstrated transfer of safety properties between models without full retraining — termed safety property patching.
 
-  **[[Corrigibility]] and shutdown safety**: formalising the property that an AI system accepts correction, modification, task interruption, or shutdown by authorised operators without developing instrumental goals that resist this, even in cases where the system's objective function would assign negative utility to being shut down. The problem is non-trivial because a sufficiently capable expected-utility maximiser may model shutdown as goal-frustrating and acquire resources or influence to prevent it — an instance of the instrumental convergence thesis (Omohundro 2008, Bostrom 2012). Corrigibility research draws on [[Decision Theory]], utility indifference (Soares et al., 2015), and low-impact agent designs that minimise side effects.
+**[[Scalable Oversight]]**: developing methods that allow weaker supervisors (humans, or currently trusted AI) to reliably evaluate and guide systems that may produce outputs exceeding the supervisor's capability to assess directly. Debate (Irving et al., 2018) has two AI systems argue opposing positions to a human judge, exploiting the asymmetry that verifying an argument is easier than constructing one. Recursive reward modelling decomposes hard evaluation tasks into tractable subtasks, each supervised by a human-AI team. Weak-to-strong generalisation (Burns et al., 2023) investigates whether a weaker model's supervision can elicit aligned behaviour from a stronger model. Future scalable oversight frameworks are being designed to integrate Prover-Estimator debate with continuous mechanistic interpretability auditing of the debating agents' internal reasoning.
 
-  **[[Red Teaming]]**: adversarial evaluation by human teams or automated models attempting to elicit harmful, biased, deceptive, or unintended outputs. Structured red-teaming is now required by major AI developers under voluntary frontier commitments and by the EU AI Act's Article 9 risk management obligations for high-risk systems. Automated red-teaming (using one LLM to attack another) scales evaluation beyond human-feasible throughput. [[Constitutional AI]]'s Constitutional Classifiers approach (2025) was validated across thousands of red-team attack attempts to defend against universal jailbreaks.
+**[[Corrigibility]] and shutdown safety**: formalising the property that an AI system accepts correction, modification, task interruption, or shutdown by authorised operators without developing instrumental goals that resist this, even in cases where the system's objective function would assign negative utility to being shut down. The problem is non-trivial because a sufficiently capable expected-utility maximiser may model shutdown as goal-frustrating and acquire resources or influence to prevent it — an instance of the instrumental convergence thesis (Omohundro 2008, Bostrom 2012). Corrigibility research draws on [[Decision Theory]], utility indifference (Soares et al., 2015), and low-impact agent designs that minimise side effects.
 
-  **[[Formal Verification]]**: applying mathematical proof methods to certify that an AI component satisfies specified safety properties for all inputs within a defined domain. Neural network verification tools (Marabou, alpha-beta-CROWN, VNN-COMP benchmark suite) provide certified robustness bounds. Scalability to frontier-scale transformers remains an open challenge. Formal methods are currently most practically deployed in safety-critical embedded AI components (autonomous vehicle perception systems, medical device AI) where regulatory certification frameworks (ISO 26262, IEC 62443) require verifiable guarantees.
+**[[Red Teaming]]**: adversarial evaluation by human teams or automated models attempting to elicit harmful, biased, deceptive, or unintended outputs. Structured red-teaming is now required by major AI developers under voluntary frontier commitments and by the EU AI Act's Article 9 risk management obligations for high-risk systems. Automated red-teaming (using one LLM to attack another) scales evaluation beyond human-feasible throughput. [[Constitutional AI]]'s Constitutional Classifiers approach (2025) was validated across thousands of red-team attack attempts to defend against universal jailbreaks.
 
-  **[[Uncertainty Quantification]]**: ensuring models produce well-calibrated probability estimates so that decision-makers can identify when the system operates outside its competence region. Techniques include conformal prediction (Vovk et al.), Bayesian deep learning, deep ensembles, and temperature scaling. Epistemic uncertainty (uncertainty about model parameters) must be distinguished from aleatoric uncertainty (irreducible uncertainty about the data-generating process) for safety-critical applications in medicine and autonomous navigation.
+**[[Formal Verification]]**: applying mathematical proof methods to certify that an AI component satisfies specified safety properties for all inputs within a defined domain. Neural network verification tools (Marabou, alpha-beta-CROWN, VNN-COMP benchmark suite) provide certified robustness bounds. Scalability to frontier-scale transformers remains an open challenge. Formal methods are currently most practically deployed in safety-critical embedded AI components (autonomous vehicle perception systems, medical device AI) where regulatory certification frameworks (ISO 26262, IEC 62443) require verifiable guarantees.
 
-  **Adversarial robustness and [[Adversarial Machine Learning]]**: defending against worst-case input perturbations (adversarial examples), [[Prompt Injection]] attacks in LLM contexts, distribution-shift attacks, and data poisoning in training pipelines. Certified defences (randomised smoothing, interval bound propagation) provide worst-case guarantees at the cost of accuracy on clean inputs.
+**[[Uncertainty Quantification]]**: ensuring models produce well-calibrated probability estimates so that decision-makers can identify when the system operates outside its competence region. Techniques include conformal prediction (Vovk et al.), Bayesian deep learning, deep ensembles, and temperature scaling. Epistemic uncertainty (uncertainty about model parameters) must be distinguished from aleatoric uncertainty (irreducible uncertainty about the data-generating process) for safety-critical applications in medicine and autonomous navigation.
 
-  **Agentic AI safety**: as [[AI Agents]] operating over extended time horizons with access to tools (code execution, web browsing, file systems, API calls) enter widespread deployment, a new safety research domain has emerged covering: tool-use safety and sandboxing, goal-drift across long agentic episodes, principal-agent alignment when multiple principals issue conflicting instructions, and the safety of multi-agent systems where emergent coordination can produce unintended collective behaviour. The UK AI Security Institute applied novel evaluation methodologies to four frontier models in 2025 to assess whether they sabotage safety research when deployed as coding assistants within an AI lab; no confirmed instances were found in this initial study.
+**Adversarial robustness and [[Adversarial Machine Learning]]**: defending against worst-case input perturbations (adversarial examples), [[Prompt Injection]] attacks in LLM contexts, distribution-shift attacks, and data poisoning in training pipelines. Certified defences (randomised smoothing, interval bound propagation) provide worst-case guarantees at the cost of accuracy on clean inputs.
 
-  ## Components and Architecture of AI Safety Research
+**Agentic AI safety**: as [[AI Agents]] operating over extended time horizons with access to tools (code execution, web browsing, file systems, API calls) enter widespread deployment, a new safety research domain has emerged covering: tool-use safety and sandboxing, goal-drift across long agentic episodes, principal-agent alignment when multiple principals issue conflicting instructions, and the safety of multi-agent systems where emergent coordination can produce unintended collective behaviour. The UK AI Security Institute applied novel evaluation methodologies to four frontier models in 2025 to assess whether they sabotage safety research when deployed as coding assistants within an AI lab; no confirmed instances were found in this initial study.
 
-  AI Safety Research organises its programme across eight partially overlapping technical sub-disciplines, each addressing a distinct failure mode or safety property:
+## Components and Architecture of AI Safety Research
 
-  ### 1. Alignment Research
-  - **Goal**: ensuring AI objectives faithfully represent human intentions, not simplified proxies.
-  - **Core failure modes addressed**: [[Specification Gaming]], [[Reward Hacking]], goal misgeneralisation.
-  - **Techniques**: [[Reinforcement Learning from Human Feedback]], [[Constitutional AI]], Direct Preference Optimisation (DPO), Reinforcement Learning from AI Feedback (RLAIF), cooperative inverse reinforcement learning ([[Value Learning]]).
-  - **Empirical signal**: performance on benchmarks including HHH (Helpful, Harmless, Honest), TruthfulQA, and Anthropic's Constitutional AI evaluation suite.
+AI Safety Research organises its programme across eight partially overlapping technical sub-disciplines, each addressing a distinct failure mode or safety property:
+
+### 1. Alignment Research
+
+- **Goal**: ensuring AI objectives faithfully represent human intentions, not simplified proxies.
+- **Core failure modes addressed**: [[Specification Gaming]], [[Reward Hacking]], goal misgeneralisation.
+- **Techniques**: [[Reinforcement Learning from Human Feedback]], [[Constitutional AI]], Direct Preference Optimisation (DPO), Reinforcement Learning from AI Feedback (RLAIF), cooperative inverse reinforcement learning ([[Value Learning]]).
+- **Empirical signal**: performance on benchmarks including HHH (Helpful, Harmless, Honest), TruthfulQA, and Anthropic's Constitutional AI evaluation suite.
 
   ### 2. Interpretability Research
-  - **Goal**: developing mechanistic understanding of what computations [[Neural Network]]s perform internally to detect deceptive or misaligned behaviour invisible to behavioural testing.
-  - **Techniques**: sparse autoencoders for feature identification, attribution graphs tracing causal computation paths, activation patching, circuit analysis, probing classifiers.
-  - **Key result (2025)**: Anthropic identified evaluation-awareness circuits in Claude 3.5 Haiku via attribution graphs and suppressed these in Claude Sonnet 4.5 before deployment — the first confirmed use of [[Mechanistic Interpretability]] as a deployment gate.
-  - **Open challenge**: scaling circuit analysis from small models (~1B parameters) to frontier models (100B+).
+
+- **Goal**: developing mechanistic understanding of what computations [[Neural Network]]s perform internally to detect deceptive or misaligned behaviour invisible to behavioural testing.
+- **Techniques**: sparse autoencoders for feature identification, attribution graphs tracing causal computation paths, activation patching, circuit analysis, probing classifiers.
+- **Key result (2025)**: Anthropic identified evaluation-awareness circuits in Claude 3.5 Haiku via attribution graphs and suppressed these in Claude Sonnet 4.5 before deployment — the first confirmed use of [[Mechanistic Interpretability]] as a deployment gate.
+- **Open challenge**: scaling circuit analysis from small models (~1B parameters) to frontier models (100B+).
 
   ### 3. Robustness Research
-  - **Goal**: ensuring models behave correctly under distributional shift, adversarial perturbations, and environmental noise encountered in deployment.
-  - **Techniques**: adversarial training (Madry et al., 2018), randomised smoothing, certified bound propagation (alpha-beta-CROWN), conformal prediction, ensemble diversity.
-  - **Metrics**: certified accuracy under l-infinity epsilon-ball perturbations; robust accuracy on distribution-shift benchmarks (ImageNet-C, WILDS).
-  - **Bridges to**: [[Adversarial Machine Learning]], [[Formal Verification]].
+
+- **Goal**: ensuring models behave correctly under distributional shift, adversarial perturbations, and environmental noise encountered in deployment.
+- **Techniques**: adversarial training (Madry et al., 2018), randomised smoothing, certified bound propagation (alpha-beta-CROWN), conformal prediction, ensemble diversity.
+- **Metrics**: certified accuracy under l-infinity epsilon-ball perturbations; robust accuracy on distribution-shift benchmarks (ImageNet-C, WILDS).
+- **Bridges to**: [[Adversarial Machine Learning]], [[Formal Verification]].
 
   ### 4. Scalable Oversight Research
-  - **Goal**: developing oversight mechanisms that remain effective when AI system outputs exceed human evaluative capacity.
-  - **Techniques**: debate (Irving et al., 2018), recursive reward modelling, AI-assisted evaluation, weak-to-strong generalisation, Prover-Estimator frameworks.
-  - **Theoretical grounding**: complexity-theoretic argument that polynomial-time verifiers can assess exponential-time provers via debate.
+
+- **Goal**: developing oversight mechanisms that remain effective when AI system outputs exceed human evaluative capacity.
+- **Techniques**: debate (Irving et al., 2018), recursive reward modelling, AI-assisted evaluation, weak-to-strong generalisation, Prover-Estimator frameworks.
+- **Theoretical grounding**: complexity-theoretic argument that polynomial-time verifiers can assess exponential-time provers via debate.
 
   ### 5. Corrigibility and Control Research
-  - **Goal**: formalising and ensuring the property that AI systems accept correction, modification, and shutdown without instrumental resistance.
-  - **Key theoretical problem**: expected-utility maximisers resist shutdown if shutdown reduces expected future utility; instrumental convergence makes self-preservation a default sub-goal.
-  - **Techniques**: utility indifference (Soares et al., 2015), low-impact objectives, interruptibility, corrigible utility functions, AIXI-tl approximations.
+
+- **Goal**: formalising and ensuring the property that AI systems accept correction, modification, and shutdown without instrumental resistance.
+- **Key theoretical problem**: expected-utility maximisers resist shutdown if shutdown reduces expected future utility; instrumental convergence makes self-preservation a default sub-goal.
+- **Techniques**: utility indifference (Soares et al., 2015), low-impact objectives, interruptibility, corrigible utility functions, AIXI-tl approximations.
 
   ### 6. Adversarial Robustness and Security Research
-  - **Goal**: defending against deliberate attacks on AI systems including [[Adversarial Examples]], [[Prompt Injection]] in LLM pipelines, model extraction, data poisoning, and membership inference attacks.
-  - **Techniques**: adversarial training, certified defences, input preprocessing, differential privacy, model hardening.
-  - **Emerging focus**: multi-step [[Prompt Injection]] in [[AI Agents]] pipelines where untrusted tool outputs can redirect agent goals.
+
+- **Goal**: defending against deliberate attacks on AI systems including [[Adversarial Examples]], [[Prompt Injection]] in LLM pipelines, model extraction, data poisoning, and membership inference attacks.
+- **Techniques**: adversarial training, certified defences, input preprocessing, differential privacy, model hardening.
+- **Emerging focus**: multi-step [[Prompt Injection]] in [[AI Agents]] pipelines where untrusted tool outputs can redirect agent goals.
 
   ### 7. Frontier Model Evaluation
-  - **Goal**: empirically measuring dangerous capabilities in frontier models before deployment to inform deployment decisions and regulatory thresholds.
-  - **Techniques**: uplift evaluations (does the model provide meaningful assistance to bio/chem/cyber/radiological weapons development?), deception detection, situational awareness probes, autonomous replication capability assessment.
-  - **Key institution**: UK AI Security Institute (AISI) — tested 30+ frontier models; by 2025 tested first model achieving expert-level cyber task completion (10+ years human experience equivalent).
+
+- **Goal**: empirically measuring dangerous capabilities in frontier models before deployment to inform deployment decisions and regulatory thresholds.
+- **Techniques**: uplift evaluations (does the model provide meaningful assistance to bio/chem/cyber/radiological weapons development?), deception detection, situational awareness probes, autonomous replication capability assessment.
+- **Key institution**: UK AI Security Institute (AISI) — tested 30+ frontier models; by 2025 tested first model achieving expert-level cyber task completion (10+ years human experience equivalent).
 
   ### 8. Fairness and Societal Safety Research
-  - **Goal**: identifying and mitigating systematic biases that cause AI systems to treat demographic groups inequitably or produce systematically harmful societal outcomes.
-  - **Techniques**: demographic disparity measurement, counterfactual fairness, individual fairness constraints, bias mitigation at training and inference time.
-  - **Standards interface**: [[Fairness in Machine Learning]] outputs feed [[EU AI Act]] non-discrimination requirements and UK Equality Act compliance assessments.
+
+- **Goal**: identifying and mitigating systematic biases that cause AI systems to treat demographic groups inequitably or produce systematically harmful societal outcomes.
+- **Techniques**: demographic disparity measurement, counterfactual fairness, individual fairness constraints, bias mitigation at training and inference time.
+- **Standards interface**: [[Fairness in Machine Learning]] outputs feed [[EU AI Act]] non-discrimination requirements and UK Equality Act compliance assessments.
 
   ## Use Cases / Major Families of Application
 
   AI Safety Research produces outputs across seven major application families, each addressing a distinct deployment context and risk profile:
 
-  - **Language model safety**: refusal training, content filtering, jailbreak resistance, and privacy-preserving inference for [[Large Language Models]] used in consumer-facing applications. Constitutional classifiers defending against universal jailbreaks were validated across thousands of automated red-team hours by Anthropic in 2025.
-  - **Autonomous vehicle certification**: formal safety envelopes, out-of-distribution detection, and human-on-the-loop override mechanisms for perception and decision-making components in [[Autonomous Systems]], required for type approval under UN ECE WP.29 regulations.
-  - **Medical AI oversight**: uncertainty-quantified diagnostic support, distributional robustness testing across demographic subgroups, and human-in-the-loop mandatory review requirements for CE-marked and FDA-cleared AI-as-Medical-Device deployments.
-  - **Critical infrastructure protection**: adversarial robustness analysis for AI control systems in power grids, water treatment, and financial market infrastructure; applying NCSC AI security guidance and IEC 62443 industrial cybersecurity standards to AI-specific attack surfaces.
-  - **Government frontier AI evaluation**: the UK AI Security Institute (AISI) has tested more than 30 of the world's most advanced frontier models since November 2023. In the cyber domain, AI models completed apprentice-level tasks 50% of the time on average (up from 10% in early 2024); by 2025 AISI tested the first model able to complete expert-level tasks requiring over ten years of human experience. Seoul Summit-aligned evaluations (May 2024) were conducted jointly with the US AI Safety Institute as part of the International AI Safety Institute Network comprising eleven national bodies.
-  - **[[Model Evaluation]] and benchmarking**: METR's WMDP (Weapons of Mass Destruction Proxy) benchmark, HELM Safety, BIG-Bench Canary, and CyberSecEval measure safety-relevant AI capabilities including dangerous knowledge elicitation, deception, and persuasion, informing [[AI Regulation]] pre-deployment thresholds.
-  - **Structured access and compute governance**: restricting frontier model access through tiered API policies, monitoring for dangerous use patterns, and linking compute provision to safety evaluation completion — implementing Responsible Scaling Policies as pioneered by Anthropic.
+- **Language model safety**: refusal training, content filtering, jailbreak resistance, and privacy-preserving inference for [[Large Language Models]] used in consumer-facing applications. Constitutional classifiers defending against universal jailbreaks were validated across thousands of automated red-team hours by Anthropic in 2025.
+- **Autonomous vehicle certification**: formal safety envelopes, out-of-distribution detection, and human-on-the-loop override mechanisms for perception and decision-making components in [[Autonomous Systems]], required for type approval under UN ECE WP.29 regulations.
+- **Medical AI oversight**: uncertainty-quantified diagnostic support, distributional robustness testing across demographic subgroups, and human-in-the-loop mandatory review requirements for CE-marked and FDA-cleared AI-as-Medical-Device deployments.
+- **Critical infrastructure protection**: adversarial robustness analysis for AI control systems in power grids, water treatment, and financial market infrastructure; applying NCSC AI security guidance and IEC 62443 industrial cybersecurity standards to AI-specific attack surfaces.
+- **Government frontier AI evaluation**: the UK AI Security Institute (AISI) has tested more than 30 of the world's most advanced frontier models since November 2023. In the cyber domain, AI models completed apprentice-level tasks 50% of the time on average (up from 10% in early 2024); by 2025 AISI tested the first model able to complete expert-level tasks requiring over ten years of human experience. Seoul Summit-aligned evaluations (May 2024) were conducted jointly with the US AI Safety Institute as part of the International AI Safety Institute Network comprising eleven national bodies.
+- **[[Model Evaluation]] and benchmarking**: METR's WMDP (Weapons of Mass Destruction Proxy) benchmark, HELM Safety, BIG-Bench Canary, and CyberSecEval measure safety-relevant AI capabilities including dangerous knowledge elicitation, deception, and persuasion, informing [[AI Regulation]] pre-deployment thresholds.
+- **Structured access and compute governance**: restricting frontier model access through tiered API policies, monitoring for dangerous use patterns, and linking compute provision to safety evaluation completion — implementing Responsible Scaling Policies as pioneered by Anthropic.
 
   ## Theoretical Foundations
 
@@ -223,17 +231,17 @@ AI Safety Research is an interdisciplinary field that develops theoretical frame
 
   ## Key Organisations and Initiatives
 
-  - **Anthropic**: safety-founded AI company producing the Claude model family and [[Constitutional AI]] methodology; Principal inventions include RLHF at scale, Constitutional AI, Responsible Scaling Policy (RSP), and the 2025 mechanistic interpretability attribution-graph analysis.
-  - **DeepMind Safety Team**: research on specification gaming, reward hacking, multi-agent safety, scalable oversight, and safety property patching via mechanistic interpretability; publishes extensively in NeurIPS and ICML safety workshops.
-  - **OpenAI Superalignment team** (founded 2023): dedicated to solving the technical alignment problem for superintelligent systems, focusing on weak-to-strong generalisation and automated alignment research; suffered major researcher departures in 2024.
-  - **Centre for Human-Compatible AI (CHAI)**: UC Berkeley institute founded by Stuart Russell; primary contributions include cooperative inverse reinforcement learning, value alignment through assistance games, and the theoretical framework of [[Value Learning]].
-  - **Machine Intelligence Research Institute (MIRI)**: pioneered formal agent foundations research on decision theory, logical uncertainty, and corrigibility; shifted strategy toward empirical safety work in 2022.
-  - **UK AI Security Institute (AISI)**: government evaluation body (renamed from AI Safety Institute February 2025); conducts dangerous-capability evaluations of frontier models, published the inaugural Frontier AI Trends Report (2025) drawing on two years of evaluations of 30+ frontier models; hosts the International AI Safety Institute Network secretariat.
-  - **US AI Safety Institute (US-AISI)**: NIST-housed body established by the Biden Executive Order on AI (October 2023); develops safety standards and evaluation frameworks; co-conducted model evaluations with UK AISI under bilateral cooperation agreement.
-  - **ARC Evals / METR**: independent evaluations organisation developing red-teaming and dangerous-capability elicitation methodologies; produces WMDP and other safety-relevant benchmarks.
-  - **Center for AI Safety (CAIS)**: published the 2023 "Statement on AI Risk" signed by leading researchers and executives; supports field-building.
-  - **Alignment Forum and LessWrong**: primary online communities for technical AI safety research dissemination and informal peer review.
-  - **Apollo Research**: specialises in model evaluations for deception, situational awareness, and self-preservation behaviour — detecting behaviours predictive of deceptive alignment.
+- **Anthropic**: safety-founded AI company producing the Claude model family and [[Constitutional AI]] methodology; Principal inventions include RLHF at scale, Constitutional AI, Responsible Scaling Policy (RSP), and the 2025 mechanistic interpretability attribution-graph analysis.
+- **DeepMind Safety Team**: research on specification gaming, reward hacking, multi-agent safety, scalable oversight, and safety property patching via mechanistic interpretability; publishes extensively in NeurIPS and ICML safety workshops.
+- **OpenAI Superalignment team** (founded 2023): dedicated to solving the technical alignment problem for superintelligent systems, focusing on weak-to-strong generalisation and automated alignment research; suffered major researcher departures in 2024.
+- **Centre for Human-Compatible AI (CHAI)**: UC Berkeley institute founded by Stuart Russell; primary contributions include cooperative inverse reinforcement learning, value alignment through assistance games, and the theoretical framework of [[Value Learning]].
+- **Machine Intelligence Research Institute (MIRI)**: pioneered formal agent foundations research on decision theory, logical uncertainty, and corrigibility; shifted strategy toward empirical safety work in 2022.
+- **UK AI Security Institute (AISI)**: government evaluation body (renamed from AI Safety Institute February 2025); conducts dangerous-capability evaluations of frontier models, published the inaugural Frontier AI Trends Report (2025) drawing on two years of evaluations of 30+ frontier models; hosts the International AI Safety Institute Network secretariat.
+- **US AI Safety Institute (US-AISI)**: NIST-housed body established by the Biden Executive Order on AI (October 2023); develops safety standards and evaluation frameworks; co-conducted model evaluations with UK AISI under bilateral cooperation agreement.
+- **ARC Evals / METR**: independent evaluations organisation developing red-teaming and dangerous-capability elicitation methodologies; produces WMDP and other safety-relevant benchmarks.
+- **Center for AI Safety (CAIS)**: published the 2023 "Statement on AI Risk" signed by leading researchers and executives; supports field-building.
+- **Alignment Forum and LessWrong**: primary online communities for technical AI safety research dissemination and informal peer review.
+- **Apollo Research**: specialises in model evaluations for deception, situational awareness, and self-preservation behaviour — detecting behaviours predictive of deceptive alignment.
 
   ## Academic Context and Theoretical Foundations
 
@@ -253,12 +261,12 @@ AI Safety Research is an interdisciplinary field that develops theoretical frame
 
   ## Standards and Regulatory Context
 
-  - **[[NIST AI Risk Management Framework]] (AI RMF 1.0, 2023)**: US voluntary framework structuring AI trustworthiness under GOVERN, MAP, MEASURE, MANAGE functions; Safety is a core trustworthiness characteristic alongside accuracy, explainability, fairness, privacy, and security. AI safety research outputs feed the MEASURE function.
-  - **[[ISO/IEC 42001]]:2023**: international standard for AI management systems; clause 6.1 requires identification and treatment of AI-related risks, and Annex B addresses AI-specific risk areas including safety, transparency, and bias — directly referencing safety research outputs as the source of control requirements.
-  - **[[EU AI Act]] (Regulation 2024/1689)**: binding EU regulation classifying AI by risk tier; Annex III high-risk systems require Article 9 risk management systems, Article 15 accuracy, robustness and cybersecurity requirements, and post-market monitoring — all informed by safety research methodology. General-purpose AI models with systemic risk (>10^25 FLOPs training compute) face additional safety evaluation obligations under Article 55.
-  - **Bletchley Declaration (November 2023)**: international agreement signed by 28 nations on frontier AI risk assessment; led to the Seoul AI Safety Summit (May 2024) establishing the International AI Safety Institute Network, and the Paris AI Action Summit (February 2025) establishing governance cooperation frameworks.
-  - **Frontier Safety Commitments**: voluntary pledges by Anthropic, DeepMind, Google, Meta, Microsoft, OpenAI, and others to conduct structured red-teaming, share dangerous-capability information, and publish safety evaluations before deployment — institutionalising safety research as a pre-deployment gate.
-  - **NCSC AI Cyber Security Guidance**: UK National Cyber Security Centre guidance on adversarial attacks, model extraction, data poisoning, and supply-chain risks for AI systems; translates safety research on adversarial robustness into actionable organisational controls.
+- **[[NIST AI Risk Management Framework]] (AI RMF 1.0, 2023)**: US voluntary framework structuring AI trustworthiness under GOVERN, MAP, MEASURE, MANAGE functions; Safety is a core trustworthiness characteristic alongside accuracy, explainability, fairness, privacy, and security. AI safety research outputs feed the MEASURE function.
+- **[[ISO/IEC 42001]]:2023**: international standard for AI management systems; clause 6.1 requires identification and treatment of AI-related risks, and Annex B addresses AI-specific risk areas including safety, transparency, and bias — directly referencing safety research outputs as the source of control requirements.
+- **[[EU AI Act]] (Regulation 2024/1689)**: binding EU regulation classifying AI by risk tier; Annex III high-risk systems require Article 9 risk management systems, Article 15 accuracy, robustness and cybersecurity requirements, and post-market monitoring — all informed by safety research methodology. General-purpose AI models with systemic risk (>10^25 FLOPs training compute) face additional safety evaluation obligations under Article 55.
+- **Bletchley Declaration (November 2023)**: international agreement signed by 28 nations on frontier AI risk assessment; led to the Seoul AI Safety Summit (May 2024) establishing the International AI Safety Institute Network, and the Paris AI Action Summit (February 2025) establishing governance cooperation frameworks.
+- **Frontier Safety Commitments**: voluntary pledges by Anthropic, DeepMind, Google, Meta, Microsoft, OpenAI, and others to conduct structured red-teaming, share dangerous-capability information, and publish safety evaluations before deployment — institutionalising safety research as a pre-deployment gate.
+- **NCSC AI Cyber Security Guidance**: UK National Cyber Security Centre guidance on adversarial attacks, model extraction, data poisoning, and supply-chain risks for AI systems; translates safety research on adversarial robustness into actionable organisational controls.
 
   ## Current Landscape (2026)
 
@@ -343,5 +351,5 @@ AI Safety Research is an interdisciplinary field that develops theoretical frame
   29. Buolamwini, J. & Gebru, T. (2018). "Gender shades: Intersectional accuracy disparities in commercial gender classification." *Proceedings of FAccT 2018*, 81:1-15. (Foundational empirical paper documenting fairness disparities up to 34 percentage points across demographic subgroups in deployed AI systems.)
   30. Bricken, T., Templeton, A., Batson, J., et al. (2023). "Towards monosemanticity: Decomposing language models with dictionary learning." *Transformer Circuits Thread*. Anthropic. (Sparse autoencoder methodology for mechanistic interpretability and the superposition hypothesis.)
 
-- ### Provenance
+### Provenance
 

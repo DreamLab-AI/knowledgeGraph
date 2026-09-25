@@ -1,140 +1,146 @@
-
 An integrated assembly of software, hardware, data, and processes that employs machine learning or related techniques to perceive inputs, infer patterns or decisions, and produce outputs that affect its environment or users. AI systems range from narrow task-specific classifiers to general-purpose language models and autonomous agents, and they are characterised by behaviour that emerges from learned parameters rather than explicit programming. Regulatory definitions such as that codified in the EU AI Act emphasise the system-level perspective, encompassing the full sociotechnical context of deployment.
 
-- ### Semantic Classification
+### Semantic Classification
 
-- ### Content
-  ## Compositional Relationships (Components)
-      SubClassOf(ai:AISystem
-        ObjectSomeValuesFrom(ai:hasPart ai:AIModel))
-      SubClassOf(ai:AISystem
-        ObjectSomeValuesFrom(ai:hasPart ai:DataPipeline))
-      SubClassOf(ai:AISystem
-        ObjectSomeValuesFrom(ai:hasPart ai:InferenceRuntime))
-      SubClassOf(ai:AISystem
-        ObjectSomeValuesFrom(ai:hasPart ai:MonitoringInstrumentation))
-      SubClassOf(ai:AISystem
-        ObjectSomeValuesFrom(ai:hasPart ai:AIInference))
-  ## Dependency Relationships
-      SubClassOf(ai:AISystem
-        ObjectSomeValuesFrom(ai:requires ai:ComputeInfrastructure))
-      SubClassOf(ai:AISystem
-        ObjectSomeValuesFrom(ai:requires ai:TrainingData))
-      SubClassOf(ai:AISystem
-        ObjectSomeValuesFrom(ai:requires ai:MachineLearningAlgorithm))
-      SubClassOf(ai:AISystem
-        ObjectSomeValuesFrom(ai:dependsOn ai:MLOps))
-      SubClassOf(ai:AISystem
-        ObjectSomeValuesFrom(ai:dependsOn ai:DataGovernance))
-      SubClassOf(ai:AISystem
-        ObjectSomeValuesFrom(ai:dependsOn ai:ModelServing))
-  ## Capability Relationships
-      SubClassOf(ai:AISystem
-        ObjectSomeValuesFrom(ai:enables ai:AIRiskAssessment))
-      SubClassOf(ai:AISystem
-        ObjectSomeValuesFrom(ai:enables ai:AutonomousDecisionMaking))
-      SubClassOf(ai:AISystem
-        ObjectSomeValuesFrom(ai:enables ai:IntelligentAutomation))
-      SubClassOf(ai:AISystem
-        ObjectSomeValuesFrom(ai:enables ai:AgenticAI))
-  ## Implementation Relationships
-      SubClassOf(ai:AISystem
-        ObjectSomeValuesFrom(ai:implements ai:MachineLearningAlgorithm))
-      SubClassOf(ai:AISystem
-        ObjectSomeValuesFrom(ai:implements ai:DeepLearning))
-      SubClassOf(ai:AISystem
-        ObjectSomeValuesFrom(ai:implements ai:TransformerArchitecture))
-  ## Reduction Relationships
-      SubClassOf(ai:AISystem
-        ObjectSomeValuesFrom(ai:reducesTo ai:AIModel))
-      SubClassOf(ai:AISystem
-        ObjectSomeValuesFrom(ai:reducesTo ai:MachineLearningAlgorithm))
-  ## Support Relationships
-      SubClassOf(ai:AISystem
-        ObjectSomeValuesFrom(ai:supports ai:AIGovernance))
-      SubClassOf(ai:AISystem
-        ObjectSomeValuesFrom(ai:supports ai:Explainability))
-      SubClassOf(ai:AISystem
-        ObjectSomeValuesFrom(ai:supports ai:AISafety))
-  ## Usage Relationships
-      SubClassOf(ai:AISystem
-        ObjectSomeValuesFrom(ai:uses ai:NaturalLanguageProcessing))
-      SubClassOf(ai:AISystem
-        ObjectSomeValuesFrom(ai:uses ai:ComputerVision))
-      SubClassOf(ai:AISystem
-        ObjectSomeValuesFrom(ai:uses ai:APIGateway))
-      SubClassOf(ai:AISystem
-        ObjectSomeValuesFrom(ai:uses ai:CloudComputing))
-      SubClassOf(ai:AISystem
-        ObjectSomeValuesFrom(ai:uses ai:ModelRegistry))
-  ## Standardisation Relationships
-      SubClassOf(ai:AISystem
-        ObjectSomeValuesFrom(ai:standardizedBy ai:ISOIECFortyTwoThousandOne))
-      SubClassOf(ai:AISystem
-        ObjectSomeValuesFrom(ai:standardizedBy ai:EUAIAct))
-      SubClassOf(ai:AISystem
-        ObjectSomeValuesFrom(ai:standardizedBy ai:NISTAIRiskManagementFramework))
-  ## Parthood Relationships
-      SubClassOf(ai:AISystem
-        ObjectSomeValuesFrom(ai:partOf ai:SociotechnicalSystem))
-  ## Contrast Relationships
-      SubClassOf(ai:AISystem
-        ObjectSomeValuesFrom(ai:contrastsWith ai:RuleBasedSystem))
-  ## Bridge Relationships
-      SubClassOf(ai:AISystem
-        ObjectSomeValuesFrom(ai:bridgesTo ai:DigitalInfrastructure))
-      SubClassOf(ai:AISystem
-        ObjectSomeValuesFrom(ai:bridgesTo ai:RegulatoryCompliance))
+### Content
 
-  ## Key Technical Concepts
+## Compositional Relationships (Components)
+    SubClassOf(ai:AISystem
+      ObjectSomeValuesFrom(ai:hasPart ai:AIModel))
+    SubClassOf(ai:AISystem
+      ObjectSomeValuesFrom(ai:hasPart ai:DataPipeline))
+    SubClassOf(ai:AISystem
+      ObjectSomeValuesFrom(ai:hasPart ai:InferenceRuntime))
+    SubClassOf(ai:AISystem
+      ObjectSomeValuesFrom(ai:hasPart ai:MonitoringInstrumentation))
+    SubClassOf(ai:AISystem
+      ObjectSomeValuesFrom(ai:hasPart ai:AIInference))
+## Dependency Relationships
+    SubClassOf(ai:AISystem
+      ObjectSomeValuesFrom(ai:requires ai:ComputeInfrastructure))
+    SubClassOf(ai:AISystem
+      ObjectSomeValuesFrom(ai:requires ai:TrainingData))
+    SubClassOf(ai:AISystem
+      ObjectSomeValuesFrom(ai:requires ai:MachineLearningAlgorithm))
+    SubClassOf(ai:AISystem
+      ObjectSomeValuesFrom(ai:dependsOn ai:MLOps))
+    SubClassOf(ai:AISystem
+      ObjectSomeValuesFrom(ai:dependsOn ai:DataGovernance))
+    SubClassOf(ai:AISystem
+      ObjectSomeValuesFrom(ai:dependsOn ai:ModelServing))
+## Capability Relationships
+    SubClassOf(ai:AISystem
+      ObjectSomeValuesFrom(ai:enables ai:AIRiskAssessment))
+    SubClassOf(ai:AISystem
+      ObjectSomeValuesFrom(ai:enables ai:AutonomousDecisionMaking))
+    SubClassOf(ai:AISystem
+      ObjectSomeValuesFrom(ai:enables ai:IntelligentAutomation))
+    SubClassOf(ai:AISystem
+      ObjectSomeValuesFrom(ai:enables ai:AgenticAI))
+## Implementation Relationships
+    SubClassOf(ai:AISystem
+      ObjectSomeValuesFrom(ai:implements ai:MachineLearningAlgorithm))
+    SubClassOf(ai:AISystem
+      ObjectSomeValuesFrom(ai:implements ai:DeepLearning))
+    SubClassOf(ai:AISystem
+      ObjectSomeValuesFrom(ai:implements ai:TransformerArchitecture))
+## Reduction Relationships
+    SubClassOf(ai:AISystem
+      ObjectSomeValuesFrom(ai:reducesTo ai:AIModel))
+    SubClassOf(ai:AISystem
+      ObjectSomeValuesFrom(ai:reducesTo ai:MachineLearningAlgorithm))
+## Support Relationships
+    SubClassOf(ai:AISystem
+      ObjectSomeValuesFrom(ai:supports ai:AIGovernance))
+    SubClassOf(ai:AISystem
+      ObjectSomeValuesFrom(ai:supports ai:Explainability))
+    SubClassOf(ai:AISystem
+      ObjectSomeValuesFrom(ai:supports ai:AISafety))
+## Usage Relationships
+    SubClassOf(ai:AISystem
+      ObjectSomeValuesFrom(ai:uses ai:NaturalLanguageProcessing))
+    SubClassOf(ai:AISystem
+      ObjectSomeValuesFrom(ai:uses ai:ComputerVision))
+    SubClassOf(ai:AISystem
+      ObjectSomeValuesFrom(ai:uses ai:APIGateway))
+    SubClassOf(ai:AISystem
+      ObjectSomeValuesFrom(ai:uses ai:CloudComputing))
+    SubClassOf(ai:AISystem
+      ObjectSomeValuesFrom(ai:uses ai:ModelRegistry))
+## Standardisation Relationships
+    SubClassOf(ai:AISystem
+      ObjectSomeValuesFrom(ai:standardizedBy ai:ISOIECFortyTwoThousandOne))
+    SubClassOf(ai:AISystem
+      ObjectSomeValuesFrom(ai:standardizedBy ai:EUAIAct))
+    SubClassOf(ai:AISystem
+      ObjectSomeValuesFrom(ai:standardizedBy ai:NISTAIRiskManagementFramework))
+## Parthood Relationships
+    SubClassOf(ai:AISystem
+      ObjectSomeValuesFrom(ai:partOf ai:SociotechnicalSystem))
+## Contrast Relationships
+    SubClassOf(ai:AISystem
+      ObjectSomeValuesFrom(ai:contrastsWith ai:RuleBasedSystem))
+## Bridge Relationships
+    SubClassOf(ai:AISystem
+      ObjectSomeValuesFrom(ai:bridgesTo ai:DigitalInfrastructure))
+    SubClassOf(ai:AISystem
+      ObjectSomeValuesFrom(ai:bridgesTo ai:RegulatoryCompliance))
 
-  **Core AI system architectural layers:**
-  - [[Data Pipeline]] — ingestion, preprocessing, feature engineering, validation, versioning
-  - [[AI Model]] — the learned artefact (weights, architecture, tokeniser, configuration)
-  - [[AI Inference]] — the process of generating predictions from the model given inputs
-  - [[Inference Runtime]] — the software infrastructure executing model inference (vLLM, Triton, TorchServe)
-  - [[API Gateway]] — the interface layer exposing AI capabilities to consuming applications
-  - [[Monitoring Instrumentation]] — telemetry for data drift, prediction drift, latency, throughput
-  - Feedback loop — collecting production labels, corrections, and preferences for model improvement
+## Key Technical Concepts
+
+**Core AI system architectural layers:**
+
+- [[Data Pipeline]] — ingestion, preprocessing, feature engineering, validation, versioning
+- [[AI Model]] — the learned artefact (weights, architecture, tokeniser, configuration)
+- [[AI Inference]] — the process of generating predictions from the model given inputs
+- [[Inference Runtime]] — the software infrastructure executing model inference (vLLM, Triton, TorchServe)
+- [[API Gateway]] — the interface layer exposing AI capabilities to consuming applications
+- [[Monitoring Instrumentation]] — telemetry for data drift, prediction drift, latency, throughput
+- Feedback loop — collecting production labels, corrections, and preferences for model improvement
 
   **[[MLOps]] and [[LLMOps]] practices:**
-  - Experiment tracking — logging hyperparameters, metrics, and model artefacts (MLflow, Weights & Biases)
-  - [[Model Registry]] — versioned storage of model artefacts with metadata and deployment history
-  - CI/CD for ML — automated pipelines triggering retraining, evaluation, and deployment on model/data changes
-  - Shadow deployment — running new model alongside production model on live traffic for comparison
-  - A/B testing — controlled live traffic split between model versions for metric-driven selection
-  - Canary releases — gradual rollout of new model with automatic rollback on metric degradation
-  - Feature store — centralised feature computation for consistent training-serving feature parity
+
+- Experiment tracking — logging hyperparameters, metrics, and model artefacts (MLflow, Weights & Biases)
+- [[Model Registry]] — versioned storage of model artefacts with metadata and deployment history
+- CI/CD for ML — automated pipelines triggering retraining, evaluation, and deployment on model/data changes
+- Shadow deployment — running new model alongside production model on live traffic for comparison
+- A/B testing — controlled live traffic split between model versions for metric-driven selection
+- Canary releases — gradual rollout of new model with automatic rollback on metric degradation
+- Feature store — centralised feature computation for consistent training-serving feature parity
 
   **[[Compute Infrastructure]] tiers:**
-  - Training infrastructure — large GPU clusters (H100, A100) with high-bandwidth NVLink interconnects
-  - Serving infrastructure — optimised inference clusters with speculative decoding, continuous batching
-  - [[Edge AI System]] hardware — NPUs (Apple Neural Engine, Qualcomm Hexagon), microcontrollers (STM32, Nordic nRF)
-  - [[Cloud Computing]] providers — AWS SageMaker, Google Vertex AI, Azure ML, Databricks
+
+- Training infrastructure — large GPU clusters (H100, A100) with high-bandwidth NVLink interconnects
+- Serving infrastructure — optimised inference clusters with speculative decoding, continuous batching
+- [[Edge AI System]] hardware — NPUs (Apple Neural Engine, Qualcomm Hexagon), microcontrollers (STM32, Nordic nRF)
+- [[Cloud Computing]] providers — AWS SageMaker, Google Vertex AI, Azure ML, Databricks
 
   **[[Multi-Agent System]] and [[Compound AI System]] patterns:**
-  - Orchestrator-worker pattern — a central orchestrator agent delegates to specialised sub-agents
-  - RAG (retrieval-augmented generation) — retriever + re-ranker + generator pipeline
-  - Chain-of-thought (CoT) — explicit intermediate reasoning steps improve complex task performance
-  - Tree-of-thought (ToT) — branching exploration of multiple reasoning paths for hard problems
-  - ReAct (Reasoning + Acting) — interleaving reasoning traces with tool calls in agentic loops
-  - Model Context Protocol (MCP) — standardised tool access interface for AI agent tool ecosystems
+
+- Orchestrator-worker pattern — a central orchestrator agent delegates to specialised sub-agents
+- RAG (retrieval-augmented generation) — retriever + re-ranker + generator pipeline
+- Chain-of-thought (CoT) — explicit intermediate reasoning steps improve complex task performance
+- Tree-of-thought (ToT) — branching exploration of multiple reasoning paths for hard problems
+- ReAct (Reasoning + Acting) — interleaving reasoning traces with tool calls in agentic loops
+- Model Context Protocol (MCP) — standardised tool access interface for AI agent tool ecosystems
 
   **[[AI Risk Assessment]] dimensions:**
-  - Technical risk — model failure modes, [[Distributional Shift]], adversarial vulnerability
-  - Data risk — training data quality, bias, privacy, legal compliance
-  - Operational risk — [[Monitoring Instrumentation]] gaps, drift detection latency, incident response
-  - Governance risk — [[AI Governance]] gaps, accountability gaps, regulatory non-compliance
-  - Reputational risk — harmful outputs, discriminatory behaviour, public trust erosion
-  - Third-party risk — AI system components sourced from external providers without full transparency
+
+- Technical risk — model failure modes, [[Distributional Shift]], adversarial vulnerability
+- Data risk — training data quality, bias, privacy, legal compliance
+- Operational risk — [[Monitoring Instrumentation]] gaps, drift detection latency, incident response
+- Governance risk — [[AI Governance]] gaps, accountability gaps, regulatory non-compliance
+- Reputational risk — harmful outputs, discriminatory behaviour, public trust erosion
+- Third-party risk — AI system components sourced from external providers without full transparency
 
   **[[Data Governance]] for AI systems:**
-  - Data lineage tracking — recording the provenance of every training and evaluation dataset
-  - Data quality management — schema validation, completeness checks, distribution monitoring
-  - Privacy impact assessment — DPIA for AI systems processing personal data under GDPR
-  - Consent management — tracking data subject consent status for training data usage
-  - Data minimisation — limiting training data to what is necessary for the AI system's purpose
-  - Data retention and deletion — managing the lifecycle of training data including deletion obligations
+
+- Data lineage tracking — recording the provenance of every training and evaluation dataset
+- Data quality management — schema validation, completeness checks, distribution monitoring
+- Privacy impact assessment — DPIA for AI systems processing personal data under GDPR
+- Consent management — tracking data subject consent status for training data usage
+- Data minimisation — limiting training data to what is necessary for the AI system's purpose
+- Data retention and deletion — managing the lifecycle of training data including deletion obligations
 
   ## About
 
@@ -242,67 +248,73 @@ An integrated assembly of software, hardware, data, and processes that employs m
 
   AI systems are the primary subject of the emerging international AI standards and regulatory landscape. The following key instruments define the obligations, evaluation requirements, and documentation standards that AI system operators must navigate as of 2026:
 
-  - **[[EU AI Act]] (Regulation 2024/1689)** — The world's first horizontal AI law, classifying AI systems by risk and imposing conformity obligations on deployers of high-risk systems. Prohibited practices (August 2024), high-risk system obligations (August 2026).
-  - **[[ISO IEC 42001]]:2023** — The first international AI Management System standard. Provides the operational framework for governing an AI system portfolio, including risk management, impact assessment, system lifecycle management, and continuous improvement processes. Certificates awarded by accredited bodies (BSI, SGS, Bureau Veritas in the UK).
-  - **[[NIST AI RMF]] 1.0 (2023)** — US voluntary framework for AI risk management across four functions: Govern (establish organisational AI risk management culture), Map (identify and categorise AI risks), Measure (quantify risk level), Manage (prioritise and address risks). Companion NIST AI 600-1 Generative AI Profile (2024) extends the framework to [[Large Language Model]] and generative AI system-specific risks.
-  - **ISO/IEC 22989:2022** — AI concepts and terminology standard, providing the definitional basis for regulatory and contractual AI system descriptions.
-  - **ISO/IEC 23894:2023** — AI risk management standard, complementing [[ISO IEC 42001]] with specific risk assessment methodology for AI systems.
-  - **IEEE P7000 series** — Standards for ethically aligned AI system design, covering algorithmic bias (7003), privacy (7002), transparency (7001), and fail-safe design (7009).
-  - **UK FCA AI and Machine Learning Guidance (2022, updated 2024)** — Sector-specific [[Regulatory Compliance]] requirements for AI systems in financial services, covering model risk management, explainability, and governance.
-  - **NHS DTAC (Digital Technology Assessment Criteria)** — UK public health sector AI system procurement standard covering clinical safety, [[Data Governance]], interoperability, usability, and cybersecurity.
-  - **MHRA AI Medical Device Guidance (UK)** — Classification and conformity pathway for AI systems that qualify as medical devices under UK Medical Devices Regulations 2002 (as amended post-Brexit).
-  - **IEC 61508 / IEC 62443** — Functional safety and industrial cybersecurity standards applicable to AI systems embedded in safety-critical operational technology environments (manufacturing, energy, transport).
+- **[[EU AI Act]] (Regulation 2024/1689)** — The world's first horizontal AI law, classifying AI systems by risk and imposing conformity obligations on deployers of high-risk systems. Prohibited practices (August 2024), high-risk system obligations (August 2026).
+- **[[ISO IEC 42001]]:2023** — The first international AI Management System standard. Provides the operational framework for governing an AI system portfolio, including risk management, impact assessment, system lifecycle management, and continuous improvement processes. Certificates awarded by accredited bodies (BSI, SGS, Bureau Veritas in the UK).
+- **[[NIST AI RMF]] 1.0 (2023)** — US voluntary framework for AI risk management across four functions: Govern (establish organisational AI risk management culture), Map (identify and categorise AI risks), Measure (quantify risk level), Manage (prioritise and address risks). Companion NIST AI 600-1 Generative AI Profile (2024) extends the framework to [[Large Language Model]] and generative AI system-specific risks.
+- **ISO/IEC 22989:2022** — AI concepts and terminology standard, providing the definitional basis for regulatory and contractual AI system descriptions.
+- **ISO/IEC 23894:2023** — AI risk management standard, complementing [[ISO IEC 42001]] with specific risk assessment methodology for AI systems.
+- **IEEE P7000 series** — Standards for ethically aligned AI system design, covering algorithmic bias (7003), privacy (7002), transparency (7001), and fail-safe design (7009).
+- **UK FCA AI and Machine Learning Guidance (2022, updated 2024)** — Sector-specific [[Regulatory Compliance]] requirements for AI systems in financial services, covering model risk management, explainability, and governance.
+- **NHS DTAC (Digital Technology Assessment Criteria)** — UK public health sector AI system procurement standard covering clinical safety, [[Data Governance]], interoperability, usability, and cybersecurity.
+- **MHRA AI Medical Device Guidance (UK)** — Classification and conformity pathway for AI systems that qualify as medical devices under UK Medical Devices Regulations 2002 (as amended post-Brexit).
+- **IEC 61508 / IEC 62443** — Functional safety and industrial cybersecurity standards applicable to AI systems embedded in safety-critical operational technology environments (manufacturing, energy, transport).
 
   ## Key Tools, Frameworks, and Platforms
 
   **Training and experimentation frameworks:**
-  - PyTorch — dominant [[Deep Learning]] training framework; foundation for most frontier [[AI Model]] training
-  - TensorFlow/Keras — Google's framework; widely used in production mobile and [[Edge AI System]] deployments
-  - JAX — accelerator-optimised ML framework; used at DeepMind, Google, and Anthropic for large-scale [[Transformer Architecture]] training
-  - Hugging Face Transformers — standardised interface to 300,000+ pre-trained [[AI Model]] checkpoints
-  - MLflow — open-source [[Model Registry]], experiment tracking, and deployment platform (Databricks)
-  - Weights and Biases (W&B) — experiment tracking, hyperparameter optimisation, and [[Model Evaluation]]
+
+- PyTorch — dominant [[Deep Learning]] training framework; foundation for most frontier [[AI Model]] training
+- TensorFlow/Keras — Google's framework; widely used in production mobile and [[Edge AI System]] deployments
+- JAX — accelerator-optimised ML framework; used at DeepMind, Google, and Anthropic for large-scale [[Transformer Architecture]] training
+- Hugging Face Transformers — standardised interface to 300,000+ pre-trained [[AI Model]] checkpoints
+- MLflow — open-source [[Model Registry]], experiment tracking, and deployment platform (Databricks)
+- Weights and Biases (W&B) — experiment tracking, hyperparameter optimisation, and [[Model Evaluation]]
 
   **[[Inference Runtime]] and serving frameworks:**
-  - vLLM — high-throughput [[Large Language Model]] serving with PagedAttention and speculative decoding
-  - NVIDIA Triton Inference Server — multi-framework GPU [[AI Inference]] serving
-  - TorchServe — PyTorch model serving with REST/gRPC endpoints
-  - ONNX Runtime — cross-platform inference for ONNX-format [[AI Model]] (CPU, GPU, NPU)
-  - TensorFlow Lite — mobile and [[Edge AI System]] inference framework
-  - Apple CoreML — on-device inference for Apple Neural Engine
+
+- vLLM — high-throughput [[Large Language Model]] serving with PagedAttention and speculative decoding
+- NVIDIA Triton Inference Server — multi-framework GPU [[AI Inference]] serving
+- TorchServe — PyTorch model serving with REST/gRPC endpoints
+- ONNX Runtime — cross-platform inference for ONNX-format [[AI Model]] (CPU, GPU, NPU)
+- TensorFlow Lite — mobile and [[Edge AI System]] inference framework
+- Apple CoreML — on-device inference for Apple Neural Engine
 
   **[[MLOps]] and [[LLMOps]] platforms:**
-  - AWS SageMaker — end-to-end [[MLOps]] platform with integrated training, serving, and monitoring
-  - Google Vertex AI — Google Cloud [[MLOps]] platform with AutoML and custom [[AI Model]] support
-  - Azure Machine Learning — Microsoft's [[MLOps]] platform with responsible AI dashboards
-  - Databricks MLflow and Unity Catalog — open-source [[MLOps]] with enterprise [[Data Governance]]
-  - Kubeflow — Kubernetes-native ML pipeline orchestration for [[Data Pipeline]] automation
-  - LangSmith — [[LLMOps]] platform for [[Large Language Model]] observability, evaluation, and prompt management
+
+- AWS SageMaker — end-to-end [[MLOps]] platform with integrated training, serving, and monitoring
+- Google Vertex AI — Google Cloud [[MLOps]] platform with AutoML and custom [[AI Model]] support
+- Azure Machine Learning — Microsoft's [[MLOps]] platform with responsible AI dashboards
+- Databricks MLflow and Unity Catalog — open-source [[MLOps]] with enterprise [[Data Governance]]
+- Kubeflow — Kubernetes-native ML pipeline orchestration for [[Data Pipeline]] automation
+- LangSmith — [[LLMOps]] platform for [[Large Language Model]] observability, evaluation, and prompt management
 
   **[[Multi-Agent System]] and [[Agentic AI]] frameworks:**
-  - LangGraph — stateful agent workflow framework using directed graphs (LangChain)
-  - AutoGen — Microsoft's conversational [[Multi-Agent System]] coordination framework
-  - CrewAI — role-based [[Multi-Agent System]] orchestration with sequential and hierarchical task delegation
-  - Semantic Kernel — enterprise [[Agentic AI]] SDK for .NET and Python (Microsoft)
-  - Model Context Protocol (MCP) — standardised tool access protocol for [[Agentic AI]] ecosystems (Anthropic, 2024)
-  - LangChain — [[Large Language Model]] application framework with chain and agent abstractions
+
+- LangGraph — stateful agent workflow framework using directed graphs (LangChain)
+- AutoGen — Microsoft's conversational [[Multi-Agent System]] coordination framework
+- CrewAI — role-based [[Multi-Agent System]] orchestration with sequential and hierarchical task delegation
+- Semantic Kernel — enterprise [[Agentic AI]] SDK for .NET and Python (Microsoft)
+- Model Context Protocol (MCP) — standardised tool access protocol for [[Agentic AI]] ecosystems (Anthropic, 2024)
+- LangChain — [[Large Language Model]] application framework with chain and agent abstractions
 
   **[[AI Risk Assessment]], [[Monitoring Instrumentation]], and [[AI Governance]] tools:**
-  - IBM Watson OpenScale — [[AI Model]] bias detection, drift monitoring, and [[Explainability]]
-  - Microsoft Responsible AI Dashboard — integrated fairness, [[Explainability]], error analysis
-  - Fiddler AI — enterprise AI observability with drift detection and [[Explainability]]
-  - Arthur AI — [[AI System]] monitoring with data drift, performance, and bias tracking
-  - Great Expectations — data quality validation framework for [[Data Pipeline]] governance
-  - Evidently AI — open-source [[MLOps]] monitoring with drift detection and data quality reports
-  - Arize AI — [[AI System]] observability platform with root cause analysis for model degradation
+
+- IBM Watson OpenScale — [[AI Model]] bias detection, drift monitoring, and [[Explainability]]
+- Microsoft Responsible AI Dashboard — integrated fairness, [[Explainability]], error analysis
+- Fiddler AI — enterprise AI observability with drift detection and [[Explainability]]
+- Arthur AI — [[AI System]] monitoring with data drift, performance, and bias tracking
+- Great Expectations — data quality validation framework for [[Data Pipeline]] governance
+- Evidently AI — open-source [[MLOps]] monitoring with drift detection and data quality reports
+- Arize AI — [[AI System]] observability platform with root cause analysis for model degradation
 
   **[[Compute Infrastructure]] and hardware platforms:**
-  - NVIDIA H100 / H200 / B100 — dominant GPU hardware for [[AI Model]] training and inference
-  - Google TPU v4/v5 — tensor processing units optimised for [[Transformer Architecture]] workloads
-  - AWS Trainium / Inferentia — purpose-built ML training and inference chips (AWS)
-  - Apple Neural Engine — on-device NPU for [[Edge AI System]] inference on Apple platforms
-  - Qualcomm AI Stack — [[Edge AI System]] NPU and software stack for mobile and automotive
-  - Groq LPU — ultra-low-latency inference hardware for [[Large Language Model]] serving
+
+- NVIDIA H100 / H200 / B100 — dominant GPU hardware for [[AI Model]] training and inference
+- Google TPU v4/v5 — tensor processing units optimised for [[Transformer Architecture]] workloads
+- AWS Trainium / Inferentia — purpose-built ML training and inference chips (AWS)
+- Apple Neural Engine — on-device NPU for [[Edge AI System]] inference on Apple platforms
+- Qualcomm AI Stack — [[Edge AI System]] NPU and software stack for mobile and automotive
+- Groq LPU — ultra-low-latency inference hardware for [[Large Language Model]] serving
 
   ## Research & Literature
 
@@ -341,5 +353,5 @@ An integrated assembly of software, hardware, data, and processes that employs m
   33. Prudential Regulation Authority (2023). SS1/23 — Model Risk Management Principles for Banks.
   34. UK Government (2025). AI Opportunities Action Plan. Department for Science, Innovation and Technology.
 
-- ### Provenance
+### Provenance
 

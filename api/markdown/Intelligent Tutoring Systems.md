@@ -1,3 +1,2 @@
-
 Intelligent tutoring systems are computer-based instructional systems that model an individual learner's knowledge, misconceptions and progress in order to provide adaptive, personalised feedback and instruction comparable to one-on-one human tutoring. They typically combine a domain model of the subject matter, a student model that tracks the learner's mastery, and a pedagogical module that selects the next problem or hint. Intelligent tutoring systems draw on cognitive architectures and cognitive science research to represent how learners acquire and apply knowledge, and have been applied across mathematics, programming and language learning.
 

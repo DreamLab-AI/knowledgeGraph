@@ -1,14 +1,14 @@
-
 Delta robot employs parallel kinematics where three or more kinematic chains connect actuators to an end-effector platform, constraining motion through parallelogram linkages to pure translation.
 
-- ### Semantic Classification
+### Semantic Classification
 
-- ### Content
-  Delta robots achieve exceptional speed through structural efficiency and distributed actuation. The three motor-driven kinematic chains share load bearing responsibilities, and the parallel architecture distributes inertia across all moving members rather than concentrating it in a single arm. The constraint to translational motion simplifies control—the end-effector orientation remains fixed—and enables high-bandwidth servo control without the complexity of multi-axis trajectory coordination.
+### Content
 
-  The parallel kinematic structure creates a bounded workspace shaped like an inverted pyramid, and unlike serial robots, delta robots exhibit improved stiffness-to-weight ratios and smaller maximum forces in non-principal directions. Inverse kinematics is computationally tractable, though more complex than articulated robots, and control must precisely synchronise all three motor drives to maintain platform alignment. Delta robots excel in [[Food Processing]], [[Electronics Assembly]], and [[Small Parts Handling]] where speed and precision matter more than workspace volume.
+Delta robots achieve exceptional speed through structural efficiency and distributed actuation. The three motor-driven kinematic chains share load bearing responsibilities, and the parallel architecture distributes inertia across all moving members rather than concentrating it in a single arm. The constraint to translational motion simplifies control—the end-effector orientation remains fixed—and enables high-bandwidth servo control without the complexity of multi-axis trajectory coordination.
 
-  Contemporary delta designs extend [[End-Effector]] capability through passive wrist mechanisms, add vision systems for part location flexibility, and incorporate adaptive control compensating for linkage compliance and friction. Research explores reconfigurable delta robots with adjustable link lengths enabling workspace customisation, soft delta robots using compliant materials for safe human-robot collaboration, and control approaches leveraging [[Machine Learning Discipline]] to optimise speed profiles whilst respecting dynamic constraints and collision avoidance requirements.
+The parallel kinematic structure creates a bounded workspace shaped like an inverted pyramid, and unlike serial robots, delta robots exhibit improved stiffness-to-weight ratios and smaller maximum forces in non-principal directions. Inverse kinematics is computationally tractable, though more complex than articulated robots, and control must precisely synchronise all three motor drives to maintain platform alignment. Delta robots excel in [[Food Processing]], [[Electronics Assembly]], and [[Small Parts Handling]] where speed and precision matter more than workspace volume.
 
-- ### Provenance
+Contemporary delta designs extend [[End-Effector]] capability through passive wrist mechanisms, add vision systems for part location flexibility, and incorporate adaptive control compensating for linkage compliance and friction. Research explores reconfigurable delta robots with adjustable link lengths enabling workspace customisation, soft delta robots using compliant materials for safe human-robot collaboration, and control approaches leveraging [[Machine Learning Discipline]] to optimise speed profiles whilst respecting dynamic constraints and collision avoidance requirements.
+
+### Provenance
 

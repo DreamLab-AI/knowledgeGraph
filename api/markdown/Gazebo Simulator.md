@@ -1,19 +1,18 @@
-
 Gazebo Simulator (now branded Gz Sim following the Open Robotics / Intrinsic rebranding) is an open-source, physics-accurate 3D robotics simulator providing rigid-body dynamics (via ODE, Bullet, DART, or Simbody), sensor simulation (cameras, LiDAR, IMU, GPS), and a plugin architecture for custom ...
 
-- ### Semantic Classification
+### Semantic Classification
 
-- ### Content
+### Content
 
-  Gazebo was originally developed by Andrew Howard and Nate Koenig at the University of Southern California in 2002–2004, becoming the primary simulation environment for the DARPA Urban Challenge. Open Robotics (formerly Willow Garage) took stewardship of the project as it grew alongside [[Robot Operating System]], and the two became deeply coupled: `gazebo_ros_pkgs` provided bidirectional bridge plugins that mapped Gazebo sensors and actuators onto ROS topics. In 2022, Open Robotics released a completely rewritten simulator under the "Ignition Gazebo" name (subsequently renamed to "Gz Sim" following Intrinsic's acquisition of Open Robotics in 2022), featuring a modular component architecture, a new `gz-transport` middleware (based on ZeroMQ and Protobuf), and a cleaner plugin API.
+Gazebo was originally developed by Andrew Howard and Nate Koenig at the University of Southern California in 2002–2004, becoming the primary simulation environment for the DARPA Urban Challenge. Open Robotics (formerly Willow Garage) took stewardship of the project as it grew alongside [[Robot Operating System]], and the two became deeply coupled: `gazebo_ros_pkgs` provided bidirectional bridge plugins that mapped Gazebo sensors and actuators onto ROS topics. In 2022, Open Robotics released a completely rewritten simulator under the "Ignition Gazebo" name (subsequently renamed to "Gz Sim" following Intrinsic's acquisition of Open Robotics in 2022), featuring a modular component architecture, a new `gz-transport` middleware (based on ZeroMQ and Protobuf), and a cleaner plugin API.
 
-  #### Key Characteristics
+#### Key Characteristics
 
-  - **Physics Plugin Architecture**: Gz Sim supports multiple physics engines through an abstract physics plugin interface: ODE (default, mature), Bullet (collision-optimised), DART (articulated body dynamics), and Simbody (biomechanics-grade). Swapping physics engines allows benchmarking simulation accuracy versus computational cost.
-  - **Sensor Simulation**: The `gz-sensors` library provides camera (RGB, depth, thermal), LiDAR (ray casting), IMU, altimeter, GPS, contact, and force-torque sensors. Sensors publish on `gz-transport` topics; the ROS 2 bridge republishes them as ROS messages, making them indistinguishable from real hardware to a ROS node.
-  - **SDFormat (SDF)**: The Simulation Description Format is an XML schema for describing robot and world models, including joint dynamics, visual meshes, collision geometries, sensor parameters, and material properties. SDF is richer than URDF (which ROS 1 popularised) and supports nested model hierarchies.
-  - **Gz Transport**: The inter-process communication layer uses ZeroMQ for transport and Protobuf for serialisation. Publishers and subscribers discover peers via a distributed discovery mechanism without a central broker, aligning with the decentralised architecture philosophy of ROS 2.
-  - **Cloud Simulation**: The Ignition Fuel web service provides a curated library of robot and world models downloadable directly into simulations via URI, dramatically reducing bootstrapping time for common robot platforms (TurtleBot 4, Spot, UR5).
+- **Physics Plugin Architecture**: Gz Sim supports multiple physics engines through an abstract physics plugin interface: ODE (default, mature), Bullet (collision-optimised), DART (articulated body dynamics), and Simbody (biomechanics-grade). Swapping physics engines allows benchmarking simulation accuracy versus computational cost.
+- **Sensor Simulation**: The `gz-sensors` library provides camera (RGB, depth, thermal), LiDAR (ray casting), IMU, altimeter, GPS, contact, and force-torque sensors. Sensors publish on `gz-transport` topics; the ROS 2 bridge republishes them as ROS messages, making them indistinguishable from real hardware to a ROS node.
+- **SDFormat (SDF)**: The Simulation Description Format is an XML schema for describing robot and world models, including joint dynamics, visual meshes, collision geometries, sensor parameters, and material properties. SDF is richer than URDF (which ROS 1 popularised) and supports nested model hierarchies.
+- **Gz Transport**: The inter-process communication layer uses ZeroMQ for transport and Protobuf for serialisation. Publishers and subscribers discover peers via a distributed discovery mechanism without a central broker, aligning with the decentralised architecture philosophy of ROS 2.
+- **Cloud Simulation**: The Ignition Fuel web service provides a curated library of robot and world models downloadable directly into simulations via URI, dramatically reducing bootstrapping time for common robot platforms (TurtleBot 4, Spot, UR5).
 
   #### How It Works
 
@@ -31,11 +30,11 @@ Gazebo Simulator (now branded Gz Sim following the Open Robotics / Intrinsic reb
 
   #### Standards and References
 
-  - Koenig, N., & Howard, A. (2004). "Design and Use Paradigms for Gazebo, an Open-Source Multi-Robot Simulator." *IEEE/RSJ IROS 2004*.
-  - Open Robotics. (2024). *Gz Sim Documentation — Ionic Release*. https://gazebosim.org/docs/ionic/
-  - SDFormat Specification. (2024). *SDFormat Version 1.10*. https://sdformat.org/spec
-  - Todorov, E., et al. (2012). "MuJoCo: A Physics Engine for Model-Based Control." *IEEE/RSJ IROS 2012* (comparative reference).
-  - Ignition Fuel. (2024). *Fuel Model Database*. https://app.gazebosim.org/
+- Koenig, N., & Howard, A. (2004). "Design and Use Paradigms for Gazebo, an Open-Source Multi-Robot Simulator." *IEEE/RSJ IROS 2004*.
+- Open Robotics. (2024). *Gz Sim Documentation — Ionic Release*. https://gazebosim.org/docs/ionic/
+- SDFormat Specification. (2024). *SDFormat Version 1.10*. https://sdformat.org/spec
+- Todorov, E., et al. (2012). "MuJoCo: A Physics Engine for Model-Based Control." *IEEE/RSJ IROS 2012* (comparative reference).
+- Ignition Fuel. (2024). *Fuel Model Database*. https://app.gazebosim.org/
 
-- ### Provenance
+### Provenance
 

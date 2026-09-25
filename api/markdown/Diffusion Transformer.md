@@ -1,110 +1,110 @@
-
 A Diffusion Transformer (DiT) is a generative model architecture that replaces the convolutional U-Net backbone traditionally used in diffusion models with a scalable transformer architecture operating in a compressed latent space. DiT conditions the denoising process on class labels or text embeddings injected via adaptive layer normalisation or cross-attention, and processes image or video patches as sequences of tokens, enabling the model to leverage the scaling laws well-established for language transformers. Introduced by Peebles and Xie (2023), DiT demonstrated that transformer-based denoisers match or surpass U-Net performance while scaling predictably with model size and compute, forming the basis for state-of-the-art image and video generation systems including Stable Diffusion 3, FLUX, and OpenAI's Sora.
 
-- ### Semantic Classification
+### Semantic Classification
 
-- ### Content
-  ## Compositional Relationships (Components)
-      SubClassOf(ml:DiffusionTransformer
-        ObjectSomeValuesFrom(ml:hasPart ml:SelfAttentionBlock))
-      SubClassOf(ml:DiffusionTransformer
-        ObjectSomeValuesFrom(ml:hasPart ml:AdaptiveLayerNormalisation))
-      SubClassOf(ml:DiffusionTransformer
-        ObjectSomeValuesFrom(ml:hasPart ml:PatchEmbeddingLayer))
-      SubClassOf(ml:DiffusionTransformer
-        ObjectSomeValuesFrom(ml:hasPart ml:FeedForwardNetwork))
-      SubClassOf(ml:DiffusionTransformer
-        ObjectSomeValuesFrom(ml:hasPart ml:PositionalEncoding))
-      SubClassOf(ml:DiffusionTransformer
-        ObjectSomeValuesFrom(ml:hasPart ml:MultiHeadAttention))
-      SubClassOf(ml:DiffusionTransformer
-        ObjectSomeValuesFrom(ml:hasPart ml:NoiseScheduler))
-      SubClassOf(ml:DiffusionTransformer
-        ObjectSomeValuesFrom(ml:hasPart ml:DenoisingHead))
+### Content
 
-  ## Dependency Relationships
-      SubClassOf(ml:DiffusionTransformer
-        ObjectSomeValuesFrom(ml:requires ml:LatentDiffusion))
-      SubClassOf(ml:DiffusionTransformer
-        ObjectSomeValuesFrom(ml:requires ml:VariationalAutoencoder))
-      SubClassOf(ml:DiffusionTransformer
-        ObjectSomeValuesFrom(ml:requires ml:DenoisingScoreMatching))
-      SubClassOf(ml:DiffusionTransformer
-        ObjectSomeValuesFrom(ml:requires ml:NoiseSchedule))
-      SubClassOf(ml:DiffusionTransformer
-        ObjectSomeValuesFrom(ml:requires ml:DeepLearning))
-      SubClassOf(ml:DiffusionTransformer
-        ObjectSomeValuesFrom(ml:requires ml:Backpropagation))
-      SubClassOf(ml:DiffusionTransformer
-        ObjectSomeValuesFrom(ml:requires ml:PatchTokenisation))
+## Compositional Relationships (Components)
+    SubClassOf(ml:DiffusionTransformer
+      ObjectSomeValuesFrom(ml:hasPart ml:SelfAttentionBlock))
+    SubClassOf(ml:DiffusionTransformer
+      ObjectSomeValuesFrom(ml:hasPart ml:AdaptiveLayerNormalisation))
+    SubClassOf(ml:DiffusionTransformer
+      ObjectSomeValuesFrom(ml:hasPart ml:PatchEmbeddingLayer))
+    SubClassOf(ml:DiffusionTransformer
+      ObjectSomeValuesFrom(ml:hasPart ml:FeedForwardNetwork))
+    SubClassOf(ml:DiffusionTransformer
+      ObjectSomeValuesFrom(ml:hasPart ml:PositionalEncoding))
+    SubClassOf(ml:DiffusionTransformer
+      ObjectSomeValuesFrom(ml:hasPart ml:MultiHeadAttention))
+    SubClassOf(ml:DiffusionTransformer
+      ObjectSomeValuesFrom(ml:hasPart ml:NoiseScheduler))
+    SubClassOf(ml:DiffusionTransformer
+      ObjectSomeValuesFrom(ml:hasPart ml:DenoisingHead))
 
-  ## Capability Relationships
-      SubClassOf(ml:DiffusionTransformer
-        ObjectSomeValuesFrom(ml:enables ml:ImageGeneration))
-      SubClassOf(ml:DiffusionTransformer
-        ObjectSomeValuesFrom(ml:enables ml:VideoGeneration))
-      SubClassOf(ml:DiffusionTransformer
-        ObjectSomeValuesFrom(ml:enables ml:TextToImage))
-      SubClassOf(ml:DiffusionTransformer
-        ObjectSomeValuesFrom(ml:enables ml:ThreeDContentGeneration))
-      SubClassOf(ml:DiffusionTransformer
-        ObjectSomeValuesFrom(ml:enables ml:AudioGeneration))
-      SubClassOf(ml:DiffusionTransformer
-        ObjectSomeValuesFrom(ml:enables ml:ConditionalGeneration))
-      SubClassOf(ml:DiffusionTransformer
-        ObjectSomeValuesFrom(ml:enables ml:DiffusionPolicy))
+## Dependency Relationships
+    SubClassOf(ml:DiffusionTransformer
+      ObjectSomeValuesFrom(ml:requires ml:LatentDiffusion))
+    SubClassOf(ml:DiffusionTransformer
+      ObjectSomeValuesFrom(ml:requires ml:VariationalAutoencoder))
+    SubClassOf(ml:DiffusionTransformer
+      ObjectSomeValuesFrom(ml:requires ml:DenoisingScoreMatching))
+    SubClassOf(ml:DiffusionTransformer
+      ObjectSomeValuesFrom(ml:requires ml:NoiseSchedule))
+    SubClassOf(ml:DiffusionTransformer
+      ObjectSomeValuesFrom(ml:requires ml:DeepLearning))
+    SubClassOf(ml:DiffusionTransformer
+      ObjectSomeValuesFrom(ml:requires ml:Backpropagation))
+    SubClassOf(ml:DiffusionTransformer
+      ObjectSomeValuesFrom(ml:requires ml:PatchTokenisation))
 
-  ## Implementation Relationships
-      SubClassOf(ml:DiffusionTransformer
-        ObjectSomeValuesFrom(ml:implements ml:ScalableArchitecture))
-      SubClassOf(ml:DiffusionTransformer
-        ObjectSomeValuesFrom(ml:implements ml:TransformerArchitecture))
-      SubClassOf(ml:DiffusionTransformer
-        ObjectSomeValuesFrom(ml:implements ml:FlowMatchingObjective))
-      SubClassOf(ml:DiffusionTransformer
-        ObjectSomeValuesFrom(ml:implements ml:ClassifierFreeGuidance))
+## Capability Relationships
+    SubClassOf(ml:DiffusionTransformer
+      ObjectSomeValuesFrom(ml:enables ml:ImageGeneration))
+    SubClassOf(ml:DiffusionTransformer
+      ObjectSomeValuesFrom(ml:enables ml:VideoGeneration))
+    SubClassOf(ml:DiffusionTransformer
+      ObjectSomeValuesFrom(ml:enables ml:TextToImage))
+    SubClassOf(ml:DiffusionTransformer
+      ObjectSomeValuesFrom(ml:enables ml:ThreeDContentGeneration))
+    SubClassOf(ml:DiffusionTransformer
+      ObjectSomeValuesFrom(ml:enables ml:AudioGeneration))
+    SubClassOf(ml:DiffusionTransformer
+      ObjectSomeValuesFrom(ml:enables ml:ConditionalGeneration))
+    SubClassOf(ml:DiffusionTransformer
+      ObjectSomeValuesFrom(ml:enables ml:DiffusionPolicy))
 
-  ## Reduction Relationships
-      SubClassOf(ml:DiffusionTransformer
-        ObjectSomeValuesFrom(ml:reducesTo ml:LatentDiffusionModel))
-      SubClassOf(ml:DiffusionTransformer
-        ObjectSomeValuesFrom(ml:reducesTo ml:VisionTransformer))
-      SubClassOf(ml:DiffusionTransformer
-        ObjectSomeValuesFrom(ml:reducesTo ml:SequenceToSequenceModel))
-      SubClassOf(ml:DiffusionTransformer
-        ObjectSomeValuesFrom(ml:reducesTo ml:ConditionalGenerativeModel))
+## Implementation Relationships
+    SubClassOf(ml:DiffusionTransformer
+      ObjectSomeValuesFrom(ml:implements ml:ScalableArchitecture))
+    SubClassOf(ml:DiffusionTransformer
+      ObjectSomeValuesFrom(ml:implements ml:TransformerArchitecture))
+    SubClassOf(ml:DiffusionTransformer
+      ObjectSomeValuesFrom(ml:implements ml:FlowMatchingObjective))
+    SubClassOf(ml:DiffusionTransformer
+      ObjectSomeValuesFrom(ml:implements ml:ClassifierFreeGuidance))
 
-  ## Contrastive Relationships
-      SubClassOf(ml:DiffusionTransformer
-        ObjectAllValuesFrom(ml:contrastsWith ml:UNetDenoiser))
-      SubClassOf(ml:DiffusionTransformer
-        ObjectAllValuesFrom(ml:contrastsWith ml:ConvolutionalNeuralNetwork))
-      SubClassOf(ml:DiffusionTransformer
-        ObjectAllValuesFrom(ml:contrastsWith ml:GenerativeAdversarialNetwork))
-      SubClassOf(ml:DiffusionTransformer
-        ObjectAllValuesFrom(ml:contrastsWith ml:AutoregressiveImageModel))
-      SubClassOf(ml:DiffusionTransformer
-        ObjectAllValuesFrom(ml:contrastsWith ml:NormalisingFlowModel))
+## Reduction Relationships
+    SubClassOf(ml:DiffusionTransformer
+      ObjectSomeValuesFrom(ml:reducesTo ml:LatentDiffusionModel))
+    SubClassOf(ml:DiffusionTransformer
+      ObjectSomeValuesFrom(ml:reducesTo ml:VisionTransformer))
+    SubClassOf(ml:DiffusionTransformer
+      ObjectSomeValuesFrom(ml:reducesTo ml:SequenceToSequenceModel))
+    SubClassOf(ml:DiffusionTransformer
+      ObjectSomeValuesFrom(ml:reducesTo ml:ConditionalGenerativeModel))
 
-  ## About
+## Contrastive Relationships
+    SubClassOf(ml:DiffusionTransformer
+      ObjectAllValuesFrom(ml:contrastsWith ml:UNetDenoiser))
+    SubClassOf(ml:DiffusionTransformer
+      ObjectAllValuesFrom(ml:contrastsWith ml:ConvolutionalNeuralNetwork))
+    SubClassOf(ml:DiffusionTransformer
+      ObjectAllValuesFrom(ml:contrastsWith ml:GenerativeAdversarialNetwork))
+    SubClassOf(ml:DiffusionTransformer
+      ObjectAllValuesFrom(ml:contrastsWith ml:AutoregressiveImageModel))
+    SubClassOf(ml:DiffusionTransformer
+      ObjectAllValuesFrom(ml:contrastsWith ml:NormalisingFlowModel))
 
-  The Diffusion Transformer emerged as a response to a fundamental tension in generative image modelling: the [[U-Net]] architecture that dominated diffusion models from 2020 onwards had been engineered with strong inductive biases for spatial locality and multi-scale resolution processing, which were beneficial at small scales but increasingly limiting as the field sought to leverage the aggressive compute scaling that had transformed language modelling. Convolutional inductive biases impose a fixed hierarchical structure that resists trivial scaling: adding more parameters requires either deeper U-Net encoder/decoder stacks or wider feature maps, neither of which cleanly follows the token-count-independent power laws observed in transformer language models. William Peebles and Saining Xie at UC Berkeley recognised that if image patches could be treated as discrete tokens — a strategy proven in the [[Vision Transformer]] (ViT) for discriminative tasks — then the iterative denoising process could be recast as a sequence-to-sequence transformation, enabling the entire transformer scaling machinery (depth, width, number of heads, FLOPs) to be applied directly to diffusion. Their 2023 ICCV paper "Scalable Diffusion Models with Transformers" demonstrated that DiT-XL/2 achieved a Fréchet Inception Distance (FID) of 2.27 on class-conditional ImageNet 256×256 generation, surpassing all prior diffusion and [[Generative Adversarial Network]] methods, while showing that Giga-FLOPs per forward pass correlated monotonically with generation quality — a clean scaling law analogous to those established for [[Large Language Model]] pre-training.
+## About
 
-  The mechanism by which DiT conditions the denoising network on external signals is particularly significant. Rather than injecting conditioning through cross-attention over a separate key-value sequence (which adds quadratic cost), DiT employs [[Adaptive Layer Normalisation]] with a zero-initialised gating mechanism (adaLN-Zero). For each transformer block, a small MLP ingests the concatenation of the timestep sinusoidal embedding and any class or text embedding, and outputs per-channel scale (γ) and shift (β) parameters that modulate the normalised activations. The zero initialisation of the final projection ensures that at training onset each block acts as an identity transformation, enabling stable gradient flow from depth. This conditioning approach is substantially more parameter-efficient than full cross-attention conditioning while maintaining expressive class-conditional and text-conditional generation. In the Multimodal DiT (MMDiT) variant used in Stable Diffusion 3 and its successors, separate token streams for image latents and text tokens are maintained through the transformer depth, with modality-specific weight matrices but shared attention pattern computation, allowing deeper semantic integration of visual and linguistic representations than adaLN alone provides.
+The Diffusion Transformer emerged as a response to a fundamental tension in generative image modelling: the [[U-Net]] architecture that dominated diffusion models from 2020 onwards had been engineered with strong inductive biases for spatial locality and multi-scale resolution processing, which were beneficial at small scales but increasingly limiting as the field sought to leverage the aggressive compute scaling that had transformed language modelling. Convolutional inductive biases impose a fixed hierarchical structure that resists trivial scaling: adding more parameters requires either deeper U-Net encoder/decoder stacks or wider feature maps, neither of which cleanly follows the token-count-independent power laws observed in transformer language models. William Peebles and Saining Xie at UC Berkeley recognised that if image patches could be treated as discrete tokens — a strategy proven in the [[Vision Transformer]] (ViT) for discriminative tasks — then the iterative denoising process could be recast as a sequence-to-sequence transformation, enabling the entire transformer scaling machinery (depth, width, number of heads, FLOPs) to be applied directly to diffusion. Their 2023 ICCV paper "Scalable Diffusion Models with Transformers" demonstrated that DiT-XL/2 achieved a Fréchet Inception Distance (FID) of 2.27 on class-conditional ImageNet 256×256 generation, surpassing all prior diffusion and [[Generative Adversarial Network]] methods, while showing that Giga-FLOPs per forward pass correlated monotonically with generation quality — a clean scaling law analogous to those established for [[Large Language Model]] pre-training.
 
-  Video generation with DiT architectures generalises patchification from 2D image grids to 3D space-time volumes, treating each non-overlapping spatial-temporal cube as a single token. OpenAI's Sora, announced in February 2024, applies this principle at scale, encoding video sequences through a [[Variational Autoencoder]] into compressed latent tokens and processing them with a full space-time [[Self Attention]] transformer. The quadratic complexity of attention with respect to the number of tokens is managed through factorised attention strategies, sparse attention patterns, and temporal compression, but the fundamental scalability of the architecture with model size and training compute provides a clear path to longer, higher-resolution, and more temporally coherent video generation. As of 2025–2026, video DiT models have achieved 1080p generation at multi-second durations with photorealistic quality in commercial systems from OpenAI, Google (Veo 2/3), and Chinese labs (Wan, HunyuanVideo from Tencent), with the architecture establishing itself as the canonical approach for generative video.
+The mechanism by which DiT conditions the denoising network on external signals is particularly significant. Rather than injecting conditioning through cross-attention over a separate key-value sequence (which adds quadratic cost), DiT employs [[Adaptive Layer Normalisation]] with a zero-initialised gating mechanism (adaLN-Zero). For each transformer block, a small MLP ingests the concatenation of the timestep sinusoidal embedding and any class or text embedding, and outputs per-channel scale (γ) and shift (β) parameters that modulate the normalised activations. The zero initialisation of the final projection ensures that at training onset each block acts as an identity transformation, enabling stable gradient flow from depth. This conditioning approach is substantially more parameter-efficient than full cross-attention conditioning while maintaining expressive class-conditional and text-conditional generation. In the Multimodal DiT (MMDiT) variant used in Stable Diffusion 3 and its successors, separate token streams for image latents and text tokens are maintained through the transformer depth, with modality-specific weight matrices but shared attention pattern computation, allowing deeper semantic integration of visual and linguistic representations than adaLN alone provides.
 
-  ## Components / Architecture
+Video generation with DiT architectures generalises patchification from 2D image grids to 3D space-time volumes, treating each non-overlapping spatial-temporal cube as a single token. OpenAI's Sora, announced in February 2024, applies this principle at scale, encoding video sequences through a [[Variational Autoencoder]] into compressed latent tokens and processing them with a full space-time [[Self Attention]] transformer. The quadratic complexity of attention with respect to the number of tokens is managed through factorised attention strategies, sparse attention patterns, and temporal compression, but the fundamental scalability of the architecture with model size and training compute provides a clear path to longer, higher-resolution, and more temporally coherent video generation. As of 2025–2026, video DiT models have achieved 1080p generation at multi-second durations with photorealistic quality in commercial systems from OpenAI, Google (Veo 2/3), and Chinese labs (Wan, HunyuanVideo from Tencent), with the architecture establishing itself as the canonical approach for generative video.
 
-  The canonical DiT block processes a sequence of N patch tokens of dimension d through the following sub-modules in each of L transformer layers:
+## Components / Architecture
 
-  - **Patch Tokenisation**: An input latent image of shape (H/f × W/f × C) — where f is the VAE compression factor — is divided into p×p non-overlapping patches and projected to dimension d via a learned [[Patch Embedding]] linear layer. Learnable or sinusoidal 2D [[Positional Encoding]] vectors are added before the first block.
-  - **Conditioning Injection via adaLN-Zero**: A scalar-gated [[Adaptive Layer Normalisation]] layer computes per-block (α, γ, β) modulation parameters from a timestep-plus-class MLP. The block output is scaled by α (initialised to zero) before the residual add, producing identity-initialised depth.
-  - **Multi-Head Self-Attention**: Standard [[Multi-Head Attention]] with query/key/value projections. Rotary [[Positional Encoding]] (RoPE) is used in FLUX-family models for improved length extrapolation; 2D RoPE handles image coordinates directly.
-  - **Feed-Forward Network**: A two-layer MLP with GeLU activation and an expansion ratio of 4× applied after the second adaLN-Zero modulation. Mixture-of-Experts (MoE) routing replaces the dense MLP in some large-scale variants (e.g., Mixture-of-Diffusers).
-  - **Output Projection**: A final LayerNorm and linear layer maps each token's hidden state to the denoised latent patch prediction or noise residual.
-  - **Classifier-Free Guidance (CFG)**: During inference, the model evaluates both conditional and unconditional denoising directions; guidance scale interpolation amplifies the conditional signal, trading diversity for fidelity.
-  - **Variational Autoencoder Decoder**: The denoised latent sequence is unpatchified and decoded by a pre-trained [[Variational Autoencoder]] into pixel space. The VAE encoder/decoder is frozen during DiT training in most configurations.
+The canonical DiT block processes a sequence of N patch tokens of dimension d through the following sub-modules in each of L transformer layers:
+
+- **Patch Tokenisation**: An input latent image of shape (H/f × W/f × C) — where f is the VAE compression factor — is divided into p×p non-overlapping patches and projected to dimension d via a learned [[Patch Embedding]] linear layer. Learnable or sinusoidal 2D [[Positional Encoding]] vectors are added before the first block.
+- **Conditioning Injection via adaLN-Zero**: A scalar-gated [[Adaptive Layer Normalisation]] layer computes per-block (α, γ, β) modulation parameters from a timestep-plus-class MLP. The block output is scaled by α (initialised to zero) before the residual add, producing identity-initialised depth.
+- **Multi-Head Self-Attention**: Standard [[Multi-Head Attention]] with query/key/value projections. Rotary [[Positional Encoding]] (RoPE) is used in FLUX-family models for improved length extrapolation; 2D RoPE handles image coordinates directly.
+- **Feed-Forward Network**: A two-layer MLP with GeLU activation and an expansion ratio of 4× applied after the second adaLN-Zero modulation. Mixture-of-Experts (MoE) routing replaces the dense MLP in some large-scale variants (e.g., Mixture-of-Diffusers).
+- **Output Projection**: A final LayerNorm and linear layer maps each token's hidden state to the denoised latent patch prediction or noise residual.
+- **Classifier-Free Guidance (CFG)**: During inference, the model evaluates both conditional and unconditional denoising directions; guidance scale interpolation amplifies the conditional signal, trading diversity for fidelity.
+- **Variational Autoencoder Decoder**: The denoised latent sequence is unpatchified and decoded by a pre-trained [[Variational Autoencoder]] into pixel space. The VAE encoder/decoder is frozen during DiT training in most configurations.
 
   Model families are defined by block count L and hidden dimension d: DiT-S (small), DiT-B (base), DiT-L (large), DiT-XL (extra-large), with FLUX scaling to 12B parameters.
 
@@ -112,37 +112,37 @@ A Diffusion Transformer (DiT) is a generative model architecture that replaces t
 
   DiT is trained with the denoising diffusion probabilistic model (DDPM) objective or its flow-matching generalisation. In the standard DDPM formulation, the model ε_θ(x_t, t, c) predicts the noise ε added to clean latent x_0 at timestep t under conditioning c:
 
-      L_simple = E_{x_0, ε, t, c} [ || ε - ε_θ(x_t, t, c) ||^2 ]
+    L_simple = E_{x_0, ε, t, c} [ || ε - ε_θ(x_t, t, c) ||^2 ]
 
   where x_t = √(ᾱ_t) x_0 + √(1 − ᾱ_t) ε is the noisy latent at timestep t, ᾱ_t is the cumulative product of the noise schedule, and ε ~ N(0, I). In the [[Flow Matching]] variant (used by FLUX and SD3), the model instead predicts the velocity field v_θ(x_t, t, c) that transports noise to data along a straight-line path, yielding lower-variance gradients and fewer required sampling steps:
 
-      L_FM = E_{x_0, x_1, t, c} [ || (x_1 - x_0) - v_θ(x_t, t, c) ||^2 ]
+    L_FM = E_{x_0, x_1, t, c} [ || (x_1 - x_0) - v_θ(x_t, t, c) ||^2 ]
 
   Both objectives are compatible with the same DiT backbone; the training target and the [[Noise Schedule]] parameterisation differ.
 
   ## Major Variants and Families
 
-  - **DiT (Peebles & Xie, 2023)**: Original class-conditional ImageNet model. adaLN-Zero conditioning, ViT-style tokenisation. Sizes S/B/L/XL with /2 or /4 patch sizes.
-  - **Stable Diffusion 3 / MMDiT (Esser et al., Stability AI, 2024)**: Multimodal DiT with dual image and text token streams, rectified flow training, and T5+CLIP text encoding. Supports multi-aspect ratios via dynamic token count.
-  - **FLUX.1 (Black Forest Labs, 2024)**: Flow-matching transformer at 12B parameters with RoPE, parallel attention-MLP computation (similar to PaLM), and an optional distilled fast-sampling variant (FLUX.1-schnell). Open-weights release.
-  - **Sora (OpenAI, 2024)**: Space-time patch tokenisation, variable-length video tokens, caption-conditioned generation. Not open-weight; inference via API.
-  - **CogVideoX (Zhipu AI, 2024)**: Open-source video DiT with 3D full attention and expert transformer blocks. Supports text-to-video and image-to-video.
-  - **HunyuanVideo (Tencent, 2024)**: 13B-parameter open-weight video DiT with dual-stream text-image processing, 720p generation.
-  - **Wan (Alibaba, 2025)**: Flow-matching video DiT with efficient attention and support for ultra-long video generation.
-  - **Dynamic DiT / DyDiT++ (2025)**: Timestep-adaptive token routing that reduces FLOPs by skipping redundant computation at early denoising steps where global structure is established but fine detail has not yet emerged.
-  - **SparseDiT (2024)**: Tri-segment token sparsification achieving 55% FLOPs reduction and 175% inference speedup on DiT-XL/2 with comparable FID.
-  - **Field-DiT (2025)**: Unified generation across video, 3D scenes, and game environments using a probabilistic field representation.
-  - **UDiT-QC (2025)**: DiT adapted for quantum circuit synthesis, demonstrating cross-domain applicability of the architecture.
+- **DiT (Peebles & Xie, 2023)**: Original class-conditional ImageNet model. adaLN-Zero conditioning, ViT-style tokenisation. Sizes S/B/L/XL with /2 or /4 patch sizes.
+- **Stable Diffusion 3 / MMDiT (Esser et al., Stability AI, 2024)**: Multimodal DiT with dual image and text token streams, rectified flow training, and T5+CLIP text encoding. Supports multi-aspect ratios via dynamic token count.
+- **FLUX.1 (Black Forest Labs, 2024)**: Flow-matching transformer at 12B parameters with RoPE, parallel attention-MLP computation (similar to PaLM), and an optional distilled fast-sampling variant (FLUX.1-schnell). Open-weights release.
+- **Sora (OpenAI, 2024)**: Space-time patch tokenisation, variable-length video tokens, caption-conditioned generation. Not open-weight; inference via API.
+- **CogVideoX (Zhipu AI, 2024)**: Open-source video DiT with 3D full attention and expert transformer blocks. Supports text-to-video and image-to-video.
+- **HunyuanVideo (Tencent, 2024)**: 13B-parameter open-weight video DiT with dual-stream text-image processing, 720p generation.
+- **Wan (Alibaba, 2025)**: Flow-matching video DiT with efficient attention and support for ultra-long video generation.
+- **Dynamic DiT / DyDiT++ (2025)**: Timestep-adaptive token routing that reduces FLOPs by skipping redundant computation at early denoising steps where global structure is established but fine detail has not yet emerged.
+- **SparseDiT (2024)**: Tri-segment token sparsification achieving 55% FLOPs reduction and 175% inference speedup on DiT-XL/2 with comparable FID.
+- **Field-DiT (2025)**: Unified generation across video, 3D scenes, and game environments using a probabilistic field representation.
+- **UDiT-QC (2025)**: DiT adapted for quantum circuit synthesis, demonstrating cross-domain applicability of the architecture.
 
   ## Use Cases / Major Families
 
-  - **Commercial image generation**: FLUX.1 and SD3-family models underpin Midjourney v7, Stability AI's consumer products, and Adobe Firefly's next-generation synthesis pipeline, generating hundreds of millions of images weekly.
-  - **Video content creation**: Sora, Veo 2/3 (Google DeepMind), Runway Gen-3, and CogVideoX power professional video tooling for advertising, film pre-visualisation, and social media content at scales that were impossible with U-Net diffusion models.
-  - **3D asset generation**: DiT-based multi-view synthesis models (e.g., Zero123++, Stable Video 3D) generate consistent multi-view images and full meshes from single images, serving AR/VR content pipelines in [[Spatial Computing]] contexts.
-  - **Robotic diffusion policies**: DiT backbones underpin diffusion policy models for robot manipulation, where the denoising network learns a multi-modal action distribution over motor trajectories from visual observations. Used in OpenVLA, π0 (Physical Intelligence), and related embodied AI systems.
-  - **Audio synthesis**: Treating mel-spectrograms as 2D image grids, DiT architectures produce state-of-the-art audio and music generation (Stable Audio 2, EzAudio).
-  - **Scientific simulation**: DiT-based diffusion is applied to molecular dynamics trajectory generation, protein structure prediction augmentation, and weather field downscaling, treating physical fields as spatial token grids.
-  - **Medical imaging**: Generative DiT models augment rare-disease training sets, synthesise realistic CT/MRI volumes for surgical planning, and enable privacy-preserving data sharing in clinical AI pipelines.
+- **Commercial image generation**: FLUX.1 and SD3-family models underpin Midjourney v7, Stability AI's consumer products, and Adobe Firefly's next-generation synthesis pipeline, generating hundreds of millions of images weekly.
+- **Video content creation**: Sora, Veo 2/3 (Google DeepMind), Runway Gen-3, and CogVideoX power professional video tooling for advertising, film pre-visualisation, and social media content at scales that were impossible with U-Net diffusion models.
+- **3D asset generation**: DiT-based multi-view synthesis models (e.g., Zero123++, Stable Video 3D) generate consistent multi-view images and full meshes from single images, serving AR/VR content pipelines in [[Spatial Computing]] contexts.
+- **Robotic diffusion policies**: DiT backbones underpin diffusion policy models for robot manipulation, where the denoising network learns a multi-modal action distribution over motor trajectories from visual observations. Used in OpenVLA, π0 (Physical Intelligence), and related embodied AI systems.
+- **Audio synthesis**: Treating mel-spectrograms as 2D image grids, DiT architectures produce state-of-the-art audio and music generation (Stable Audio 2, EzAudio).
+- **Scientific simulation**: DiT-based diffusion is applied to molecular dynamics trajectory generation, protein structure prediction augmentation, and weather field downscaling, treating physical fields as spatial token grids.
+- **Medical imaging**: Generative DiT models augment rare-disease training sets, synthesise realistic CT/MRI volumes for surgical planning, and enable privacy-preserving data sharing in clinical AI pipelines.
 
   ## Academic Context
 
@@ -184,21 +184,21 @@ A Diffusion Transformer (DiT) is a generative model architecture that replaces t
 
   Key safety dimensions specific to DiT architectures include:
 
-  - **Training Data Poisoning**: DiT models trained on web-scraped data inherit biases from the training corpus including racial and gender stereotypes, cultural representation imbalances, and political skews in visual culture. Red-teaming studies on DALL-E 3 and FLUX have shown that text prompts for "CEO," "scientist," and "criminal" produce demographically skewed outputs. Mitigation requires diverse curation, demographic distribution monitoring during training data construction, and classifier-based safety filtering of generated outputs.
-  - **NSFW and CSAM Generation**: Diffusion models can generate explicit sexual content and — absent robust safeguards — child sexual abuse material (CSAM). UK law (Protection of Children Act 1978, as amended) creates strict liability for generation, possession, and distribution of AI-generated CSAM; the Online Safety Act 2023 imposes additional obligations on platform operators to prevent AI-generated CSAM. Commercial DiT deployments implement multi-layer NSFW classifiers at inference, keyword blocklists in the text encoder, and training-time safety fine-tuning (e.g., erasing adult content concepts from model weights using gradient-based unlearning).
-  - **Deepfake Detection and Provenance**: The C2PA (Coalition for Content Provenance and Authenticity) content credentials standard, backed by Adobe, Microsoft, BBC, and major camera manufacturers, embeds cryptographically signed provenance metadata into generated images and videos, recording the tool used, the generation timestamp, and optional additional context. FLUX.1 and SD3.5 implement C2PA credential embedding by default in their API offerings. The UK Online Safety Act 2023 includes provisions requiring platforms to label AI-generated content; forthcoming Ofcom codes of practice are expected to mandate C2PA-compatible labelling for AI-generated imagery from 2027.
-  - **Copyright and Intellectual Property**: Multiple pending legal cases (Getty Images v. Stability AI; several class actions by artists in the US) challenge whether training DiT models on copyrighted images without licence constitutes copyright infringement. The EU AI Act (effective August 2024) requires providers of general-purpose AI models (including image generation models) to publish training data summaries sufficient for copyright holders to identify training on their works and exercise opt-out rights under the Text and Data Mining exception of the DSM Directive. UK copyright law treatment of AI-generated works and training data use remains in flux pending government response to the IPO consultation (2023–2024).
-  - **Open-Weight Model Risks**: The open-weight release of FLUX.1 (12B parameters) by Black Forest Labs, and of earlier Stable Diffusion and SD3 models by Stability AI, has enabled fine-tuning for specific targeted misuse (face-swapping deepfakes of specific individuals using LoRA fine-tuning on as few as 20 reference images). The UK AI Safety Institute (AISI) has assessed open-weight foundation model risks under the Frontier AI Taskforce mandate; its 2024 and 2025 reports on diffusion model dual-use risks informed the voluntary commitments on open-weight release practices negotiated with Stability AI and Black Forest Labs through the Seoul AI Safety Summit process.
+- **Training Data Poisoning**: DiT models trained on web-scraped data inherit biases from the training corpus including racial and gender stereotypes, cultural representation imbalances, and political skews in visual culture. Red-teaming studies on DALL-E 3 and FLUX have shown that text prompts for "CEO," "scientist," and "criminal" produce demographically skewed outputs. Mitigation requires diverse curation, demographic distribution monitoring during training data construction, and classifier-based safety filtering of generated outputs.
+- **NSFW and CSAM Generation**: Diffusion models can generate explicit sexual content and — absent robust safeguards — child sexual abuse material (CSAM). UK law (Protection of Children Act 1978, as amended) creates strict liability for generation, possession, and distribution of AI-generated CSAM; the Online Safety Act 2023 imposes additional obligations on platform operators to prevent AI-generated CSAM. Commercial DiT deployments implement multi-layer NSFW classifiers at inference, keyword blocklists in the text encoder, and training-time safety fine-tuning (e.g., erasing adult content concepts from model weights using gradient-based unlearning).
+- **Deepfake Detection and Provenance**: The C2PA (Coalition for Content Provenance and Authenticity) content credentials standard, backed by Adobe, Microsoft, BBC, and major camera manufacturers, embeds cryptographically signed provenance metadata into generated images and videos, recording the tool used, the generation timestamp, and optional additional context. FLUX.1 and SD3.5 implement C2PA credential embedding by default in their API offerings. The UK Online Safety Act 2023 includes provisions requiring platforms to label AI-generated content; forthcoming Ofcom codes of practice are expected to mandate C2PA-compatible labelling for AI-generated imagery from 2027.
+- **Copyright and Intellectual Property**: Multiple pending legal cases (Getty Images v. Stability AI; several class actions by artists in the US) challenge whether training DiT models on copyrighted images without licence constitutes copyright infringement. The EU AI Act (effective August 2024) requires providers of general-purpose AI models (including image generation models) to publish training data summaries sufficient for copyright holders to identify training on their works and exercise opt-out rights under the Text and Data Mining exception of the DSM Directive. UK copyright law treatment of AI-generated works and training data use remains in flux pending government response to the IPO consultation (2023–2024).
+- **Open-Weight Model Risks**: The open-weight release of FLUX.1 (12B parameters) by Black Forest Labs, and of earlier Stable Diffusion and SD3 models by Stability AI, has enabled fine-tuning for specific targeted misuse (face-swapping deepfakes of specific individuals using LoRA fine-tuning on as few as 20 reference images). The UK AI Safety Institute (AISI) has assessed open-weight foundation model risks under the Frontier AI Taskforce mandate; its 2024 and 2025 reports on diffusion model dual-use risks informed the voluntary commitments on open-weight release practices negotiated with Stability AI and Black Forest Labs through the Seoul AI Safety Summit process.
 
   ## Comparative Analysis: DiT vs. Alternative Generative Architectures
 
   The Diffusion Transformer has not achieved dominance by default — it has outcompeted several alternative generative paradigms on key metrics of quality, diversity, and controllability:
 
-  - **DiT vs. [[Generative Adversarial Network]] (GAN)**: GANs, including StyleGAN3 and BigGAN, are trained through adversarial game between generator and discriminator networks, often achieving very high quality on in-distribution data but suffering from mode collapse (failure to represent full diversity of training data), training instability, and difficulty conditioning on complex structured inputs like free-form text. DiT models surpass StyleGAN-XL FID on ImageNet at 256×256 and offer native text conditioning that GAN architectures cannot match without significant architectural modifications. As of 2025, GANs are primarily used for real-time inference applications (video game character generation, face animation) where the single-step generation advantage of GANs outweighs DiT's quality advantage.
-  - **DiT vs. [[Variational Autoencoder]] (VAE)**: VAE-based generators (e.g., VQVAE-2) produce blurry outputs due to the pixel-space reconstruction objective averaging over multiple valid reconstructions. DiT supersedes VAE generators entirely on image quality benchmarks. VAEs remain critical as the latent space encoder/decoder that DiT operates within, but are not competitive as standalone generative models.
-  - **DiT vs. Autoregressive Token Models (VQGAN, LlamaGen, MAR)**: Autoregressive image generation (training a transformer to predict the next image token in raster-scan order, as in DALL-E 1 and VQ-Diffusion) was the dominant text-to-image paradigm before Stable Diffusion's latent diffusion approach. Autoregressive models offer exact likelihood computation and natural language model integration but generate images token-by-token (O(N) sequential steps), making inference slow for high-resolution images. Masked Autoregressive Diffusion (MAR, 2024) hybridises the two paradigms by applying a diffusion-like denoising process within the autoregressive generation order. DiT maintains advantages in controllability and generation diversity over AR models, though LlamaGen demonstrates that standard language model backbones can generate competitive quality images with architecture simplifications.
-  - **DiT vs. Flow-Based Models (Glow, NICE, RealNVP)**: Normalising flow models construct exact invertible mappings between data and noise distributions, enabling exact likelihood computation. However, their invertibility constraint limits architecture expressivity, and flow models have not achieved competitive image quality on large-scale benchmarks. Flow Matching relaxes the exact invertibility constraint, retaining the conceptual benefits of straight-line transport paths while permitting non-invertible (non-exact) training objectives. DiT + Flow Matching (as in FLUX) effectively merges the best of diffusion and flow architectures.
-  - **DiT vs. State Space Models (Mamba-Diffusion, S4D)**: Linear-time state space models (SSMs) offer O(N) attention-equivalent computation, making them attractive for very-high-resolution generation. Mamba-DiT and S4D-DiT variants demonstrate competitive quality at 1024×1024 resolution with 4× lower FLOPs than standard attention DiT. However, SSMs sacrifice the expressive global attention that makes DiT effective at compositional generation (combining multiple objects, spatial relationships), and have not yet surpassed standard DiT on compositional benchmarks. The 2026 expectation is convergence: hybrid DiT architectures that use full attention for a subset of layers and SSM for the majority of layers.
+- **DiT vs. [[Generative Adversarial Network]] (GAN)**: GANs, including StyleGAN3 and BigGAN, are trained through adversarial game between generator and discriminator networks, often achieving very high quality on in-distribution data but suffering from mode collapse (failure to represent full diversity of training data), training instability, and difficulty conditioning on complex structured inputs like free-form text. DiT models surpass StyleGAN-XL FID on ImageNet at 256×256 and offer native text conditioning that GAN architectures cannot match without significant architectural modifications. As of 2025, GANs are primarily used for real-time inference applications (video game character generation, face animation) where the single-step generation advantage of GANs outweighs DiT's quality advantage.
+- **DiT vs. [[Variational Autoencoder]] (VAE)**: VAE-based generators (e.g., VQVAE-2) produce blurry outputs due to the pixel-space reconstruction objective averaging over multiple valid reconstructions. DiT supersedes VAE generators entirely on image quality benchmarks. VAEs remain critical as the latent space encoder/decoder that DiT operates within, but are not competitive as standalone generative models.
+- **DiT vs. Autoregressive Token Models (VQGAN, LlamaGen, MAR)**: Autoregressive image generation (training a transformer to predict the next image token in raster-scan order, as in DALL-E 1 and VQ-Diffusion) was the dominant text-to-image paradigm before Stable Diffusion's latent diffusion approach. Autoregressive models offer exact likelihood computation and natural language model integration but generate images token-by-token (O(N) sequential steps), making inference slow for high-resolution images. Masked Autoregressive Diffusion (MAR, 2024) hybridises the two paradigms by applying a diffusion-like denoising process within the autoregressive generation order. DiT maintains advantages in controllability and generation diversity over AR models, though LlamaGen demonstrates that standard language model backbones can generate competitive quality images with architecture simplifications.
+- **DiT vs. Flow-Based Models (Glow, NICE, RealNVP)**: Normalising flow models construct exact invertible mappings between data and noise distributions, enabling exact likelihood computation. However, their invertibility constraint limits architecture expressivity, and flow models have not achieved competitive image quality on large-scale benchmarks. Flow Matching relaxes the exact invertibility constraint, retaining the conceptual benefits of straight-line transport paths while permitting non-invertible (non-exact) training objectives. DiT + Flow Matching (as in FLUX) effectively merges the best of diffusion and flow architectures.
+- **DiT vs. State Space Models (Mamba-Diffusion, S4D)**: Linear-time state space models (SSMs) offer O(N) attention-equivalent computation, making them attractive for very-high-resolution generation. Mamba-DiT and S4D-DiT variants demonstrate competitive quality at 1024×1024 resolution with 4× lower FLOPs than standard attention DiT. However, SSMs sacrifice the expressive global attention that makes DiT effective at compositional generation (combining multiple objects, spatial relationships), and have not yet surpassed standard DiT on compositional benchmarks. The 2026 expectation is convergence: hybrid DiT architectures that use full attention for a subset of layers and SSM for the majority of layers.
 
   ## Benchmark Datasets and Evaluation
 
@@ -212,57 +212,57 @@ A Diffusion Transformer (DiT) is a generative model architecture that replaces t
 
   ## Key Terminology
 
-  - **DiT**: Diffusion Transformer; the class of architectures replacing U-Net denoisers with transformer backbones.
-  - **adaLN-Zero**: Adaptive Layer Normalisation with zero-initialised output gating; the primary conditioning mechanism in original DiT models.
-  - **Patchification**: The process of dividing a 2D (or 3D) latent into non-overlapping p×p patches and projecting them to token embeddings.
-  - **FID**: Fréchet Inception Distance; lower scores indicate better image quality and diversity.
-  - **CFG**: Classifier-Free Guidance; inference-time technique amplifying conditional signal by linearly combining conditional and unconditional model outputs.
-  - **MMDiT**: Multimodal Diffusion Transformer; variant maintaining separate token streams for image and text modalities with shared attention computation.
-  - **DDPM**: Denoising Diffusion Probabilistic Model; the noise-prediction training objective underpinning most DiT training regimes.
-  - **Flow Matching**: Alternative training objective where the model predicts the velocity field transporting data to noise along straight paths; used in FLUX and SD3.
-  - **GFLOPs**: Giga Floating-Point Operations; the compute metric used in DiT scaling law analysis, showing monotonic FID improvement as GFLOPs increase.
-  - **RoPE**: Rotary Positional Encoding; length-extrapolatable positional encoding used in FLUX and later DiT variants for better handling of variable-resolution inputs.
-  - **VAE**: Variational Autoencoder; the encoder/decoder that compresses pixel-space images into the latent space on which DiT operates.
-  - **Diffusion Policy**: DiT-based architecture for robot action generation, where the model learns a multi-modal distribution over motor trajectories via denoising.
-  - **SparseDiT**: Token sparsification variant of DiT achieving 55% FLOPs reduction through adaptive token density routing.
-  - **MoE-DiT**: Mixture-of-Experts DiT variant routing tokens through specialised expert MLPs for higher capacity without proportionate active compute cost.
+- **DiT**: Diffusion Transformer; the class of architectures replacing U-Net denoisers with transformer backbones.
+- **adaLN-Zero**: Adaptive Layer Normalisation with zero-initialised output gating; the primary conditioning mechanism in original DiT models.
+- **Patchification**: The process of dividing a 2D (or 3D) latent into non-overlapping p×p patches and projecting them to token embeddings.
+- **FID**: Fréchet Inception Distance; lower scores indicate better image quality and diversity.
+- **CFG**: Classifier-Free Guidance; inference-time technique amplifying conditional signal by linearly combining conditional and unconditional model outputs.
+- **MMDiT**: Multimodal Diffusion Transformer; variant maintaining separate token streams for image and text modalities with shared attention computation.
+- **DDPM**: Denoising Diffusion Probabilistic Model; the noise-prediction training objective underpinning most DiT training regimes.
+- **Flow Matching**: Alternative training objective where the model predicts the velocity field transporting data to noise along straight paths; used in FLUX and SD3.
+- **GFLOPs**: Giga Floating-Point Operations; the compute metric used in DiT scaling law analysis, showing monotonic FID improvement as GFLOPs increase.
+- **RoPE**: Rotary Positional Encoding; length-extrapolatable positional encoding used in FLUX and later DiT variants for better handling of variable-resolution inputs.
+- **VAE**: Variational Autoencoder; the encoder/decoder that compresses pixel-space images into the latent space on which DiT operates.
+- **Diffusion Policy**: DiT-based architecture for robot action generation, where the model learns a multi-modal distribution over motor trajectories via denoising.
+- **SparseDiT**: Token sparsification variant of DiT achieving 55% FLOPs reduction through adaptive token density routing.
+- **MoE-DiT**: Mixture-of-Experts DiT variant routing tokens through specialised expert MLPs for higher capacity without proportionate active compute cost.
 
   ## Domain Adaptation and Fine-Tuning
 
   A key practical advantage of the DiT architecture over prior generative models is the rich ecosystem of efficient fine-tuning and adaptation techniques that has developed around it, enabling domain specialisation without retraining from scratch. These methods are particularly important for commercial applications requiring brand consistency, specific artistic styles, or domain-specific content:
 
-  - **LoRA (Low-Rank Adaptation, Hu et al. 2021)**: Inserts trainable low-rank matrix pairs (A and B where ΔW = BA, rank r ≪ d) into the attention projection layers of a frozen DiT, updating only the LoRA parameters (~1-5% of total parameters) on domain-specific data. LoRA fine-tuning of FLUX.1 on 20-50 reference images of a specific face or style takes 15-30 minutes on a single A100 GPU and produces high-quality identity-consistent or style-consistent generation. The LoRA parameters can be merged back into the base model weights or applied at inference via additive residual scaling.
-  - **DreamBooth (Ruiz et al. 2022)**: Fine-tunes the full DiT (or specific layers) on a small set of reference images (3-30) with a unique token identifier bound to the subject. DreamBooth enables few-shot subject personalisation but requires more compute than LoRA and risks overfitting to the training images.
-  - **ControlNet (Zhang et al. 2023)**: Trains a trainable copy of the DiT encoder (or U-Net encoder in hybrid architectures) to process structural conditioning inputs (Canny edges, depth maps, human pose skeletons, segmentation maps) and inject their activations into the main DiT backbone via zero-convolution connections. Multiple ControlNet models can be combined at inference to enforce multiple spatial constraints simultaneously.
-  - **IP-Adapter (Ye et al. 2023)**: Trains lightweight cross-attention modules that inject CLIP image embeddings into the DiT's attention layers, enabling content and style transfer from reference images without modifying the base model weights.
-  - **Textual Inversion (Gal et al. 2022)**: Optimises a new text embedding (a "word") in the frozen text encoder's embedding space to represent a target concept, enabling concept injection via simple text prompting without model weight modification.
-  - **Hypernetwork and Embedding Conditioning**: Trains a small auxiliary network to generate DiT layer conditioning vectors from metadata inputs (target resolution, aspect ratio, aesthetic score, time period, geographic region), enabling soft guidance of generation characteristics without per-concept fine-tuning.
+- **LoRA (Low-Rank Adaptation, Hu et al. 2021)**: Inserts trainable low-rank matrix pairs (A and B where ΔW = BA, rank r ≪ d) into the attention projection layers of a frozen DiT, updating only the LoRA parameters (~1-5% of total parameters) on domain-specific data. LoRA fine-tuning of FLUX.1 on 20-50 reference images of a specific face or style takes 15-30 minutes on a single A100 GPU and produces high-quality identity-consistent or style-consistent generation. The LoRA parameters can be merged back into the base model weights or applied at inference via additive residual scaling.
+- **DreamBooth (Ruiz et al. 2022)**: Fine-tunes the full DiT (or specific layers) on a small set of reference images (3-30) with a unique token identifier bound to the subject. DreamBooth enables few-shot subject personalisation but requires more compute than LoRA and risks overfitting to the training images.
+- **ControlNet (Zhang et al. 2023)**: Trains a trainable copy of the DiT encoder (or U-Net encoder in hybrid architectures) to process structural conditioning inputs (Canny edges, depth maps, human pose skeletons, segmentation maps) and inject their activations into the main DiT backbone via zero-convolution connections. Multiple ControlNet models can be combined at inference to enforce multiple spatial constraints simultaneously.
+- **IP-Adapter (Ye et al. 2023)**: Trains lightweight cross-attention modules that inject CLIP image embeddings into the DiT's attention layers, enabling content and style transfer from reference images without modifying the base model weights.
+- **Textual Inversion (Gal et al. 2022)**: Optimises a new text embedding (a "word") in the frozen text encoder's embedding space to represent a target concept, enabling concept injection via simple text prompting without model weight modification.
+- **Hypernetwork and Embedding Conditioning**: Trains a small auxiliary network to generate DiT layer conditioning vectors from metadata inputs (target resolution, aspect ratio, aesthetic score, time period, geographic region), enabling soft guidance of generation characteristics without per-concept fine-tuning.
 
   ## Relationship to Large Language Models and Multimodal AI
 
   The Diffusion Transformer is not merely an image generation architecture — it is increasingly positioned as the visual generation component of broader multimodal AI systems that unify language understanding and visual synthesis. This integration takes several forms that are reshaping the boundary between [[Large Language Model]] and generative visual model research:
 
-  - **Vision-Language-Action (VLA) Models**: Physical Intelligence's π0, DeepMind's RT-2, and OpenVLA combine a large language model backbone for instruction following with a DiT-based diffusion head for action generation. The LLM processes natural language task instructions and visual observations and produces a latent conditioning vector; the DiT generates the motor trajectory (sequence of joint angles or end-effector positions) as a continuous multimodal distribution via denoising. This VLA + DiT combination enables instruction-following robot manipulation that generalises to novel objects and tasks without task-specific programming.
-  - **Native Multimodal LLMs with Diffusion Heads**: Show-o (2024), Transfusion (2024), and related architectures combine autoregressive [[Large Language Model]] generation for text tokens with diffusion generation (via a DiT head) for image tokens, within a single unified model. In Transfusion, the model is trained on a mixed objective: next-token prediction loss for text sequences and diffusion denoising loss for image patches, sharing a single transformer backbone for both modalities. This enables a single model to understand images (vision-language understanding) and generate images (text-to-image synthesis) without separate vision encoder and diffusion decoder components.
-  - **CLIP-Conditioned Video Understanding**: DiT video generation models conditioned on dense video captions (generated by a VLM applied to the training videos) learn richer semantic associations than models conditioned on simple text descriptions. The Sora technical report specifically mentions using a recaptioning approach where a LLM generates detailed video descriptions from a preliminary vision model, and these rich descriptions form the conditioning signal for the video DiT — creating a virtuous training dynamic where better descriptions yield better generation yields better video understanding.
-  - **Retrieval-Augmented Diffusion**: Analogous to Retrieval-Augmented Generation (RAG) in [[Large Language Model]] systems, retrieval-augmented diffusion models (RDM, kNN-Diffusion) retrieve visually similar images from a database and condition the DiT on these reference images as in-context examples, without encoding the reference content in model weights. This enables personalisation and domain adaptation without fine-tuning, at the cost of retrieval infrastructure and potentially longer inference time.
+- **Vision-Language-Action (VLA) Models**: Physical Intelligence's π0, DeepMind's RT-2, and OpenVLA combine a large language model backbone for instruction following with a DiT-based diffusion head for action generation. The LLM processes natural language task instructions and visual observations and produces a latent conditioning vector; the DiT generates the motor trajectory (sequence of joint angles or end-effector positions) as a continuous multimodal distribution via denoising. This VLA + DiT combination enables instruction-following robot manipulation that generalises to novel objects and tasks without task-specific programming.
+- **Native Multimodal LLMs with Diffusion Heads**: Show-o (2024), Transfusion (2024), and related architectures combine autoregressive [[Large Language Model]] generation for text tokens with diffusion generation (via a DiT head) for image tokens, within a single unified model. In Transfusion, the model is trained on a mixed objective: next-token prediction loss for text sequences and diffusion denoising loss for image patches, sharing a single transformer backbone for both modalities. This enables a single model to understand images (vision-language understanding) and generate images (text-to-image synthesis) without separate vision encoder and diffusion decoder components.
+- **CLIP-Conditioned Video Understanding**: DiT video generation models conditioned on dense video captions (generated by a VLM applied to the training videos) learn richer semantic associations than models conditioned on simple text descriptions. The Sora technical report specifically mentions using a recaptioning approach where a LLM generates detailed video descriptions from a preliminary vision model, and these rich descriptions form the conditioning signal for the video DiT — creating a virtuous training dynamic where better descriptions yield better generation yields better video understanding.
+- **Retrieval-Augmented Diffusion**: Analogous to Retrieval-Augmented Generation (RAG) in [[Large Language Model]] systems, retrieval-augmented diffusion models (RDM, kNN-Diffusion) retrieve visually similar images from a database and condition the DiT on these reference images as in-context examples, without encoding the reference content in model weights. This enables personalisation and domain adaptation without fine-tuning, at the cost of retrieval infrastructure and potentially longer inference time.
 
   ## Regulatory and IP Landscape
 
   The Diffusion Transformer ecosystem sits at the intersection of several active regulatory and intellectual property developments that will shape its commercial deployment through 2026-2030:
 
-  - **EU AI Act (2024, effective 2026-2027)**: The EU AI Act classifies GPAI (General Purpose AI) models with training compute exceeding 10²⁵ FLOPs as "systemic risk" models subject to enhanced obligations including: systematic red-teaming and evaluation; incident reporting to the EU AI Office; documentation of training datasets and processes; and copyright compliance mechanisms. FLUX.1 (12B parameters, estimated 10²³ FLOPs for training) is below this threshold but the threshold is expected to drop as compute efficiency improves. Providers of GPAI models must publish summaries of training data sufficient for copyright opt-out requests under DSM Directive Article 4.
-  - **UK AI Regulation (2025-2026)**: The UK government published its AI Action Plan in January 2025, confirming a sector-specific, principles-based regulatory approach through existing regulators (ICO for data protection, Ofcom for online safety, CMA for competition) rather than a standalone AI Act. The AI Safety Institute (AISI) continues frontier model safety evaluations, with DiT-based video generation models included in the scope of evaluation from 2025.
-  - **US Copyright Office Guidance**: The US Copyright Office has issued guidance (2023, 2024) that AI-generated images produced without sufficient human authorship are not eligible for copyright protection. Courts are expected to clarify the scope of copyright in AI-assisted works through ongoing litigation. This uncertainty affects the intellectual property value chain for DiT-generated commercial content.
-  - **C2PA Watermarking Mandates**: The EU AI Act Article 50 requires that AI-generated content be labelled. The Coalition for Content Provenance and Authenticity (C2PA) technical standard, supported by major DiT model providers, embeds cryptographically verifiable provenance metadata in generated content. Several national regulators (Germany's BNetzA, Ofcom UK) have indicated that C2PA-compatible labelling will form the technical basis for their AI content labelling codes of practice.
+- **EU AI Act (2024, effective 2026-2027)**: The EU AI Act classifies GPAI (General Purpose AI) models with training compute exceeding 10²⁵ FLOPs as "systemic risk" models subject to enhanced obligations including: systematic red-teaming and evaluation; incident reporting to the EU AI Office; documentation of training datasets and processes; and copyright compliance mechanisms. FLUX.1 (12B parameters, estimated 10²³ FLOPs for training) is below this threshold but the threshold is expected to drop as compute efficiency improves. Providers of GPAI models must publish summaries of training data sufficient for copyright opt-out requests under DSM Directive Article 4.
+- **UK AI Regulation (2025-2026)**: The UK government published its AI Action Plan in January 2025, confirming a sector-specific, principles-based regulatory approach through existing regulators (ICO for data protection, Ofcom for online safety, CMA for competition) rather than a standalone AI Act. The AI Safety Institute (AISI) continues frontier model safety evaluations, with DiT-based video generation models included in the scope of evaluation from 2025.
+- **US Copyright Office Guidance**: The US Copyright Office has issued guidance (2023, 2024) that AI-generated images produced without sufficient human authorship are not eligible for copyright protection. Courts are expected to clarify the scope of copyright in AI-assisted works through ongoing litigation. This uncertainty affects the intellectual property value chain for DiT-generated commercial content.
+- **C2PA Watermarking Mandates**: The EU AI Act Article 50 requires that AI-generated content be labelled. The Coalition for Content Provenance and Authenticity (C2PA) technical standard, supported by major DiT model providers, embeds cryptographically verifiable provenance metadata in generated content. Several national regulators (Germany's BNetzA, Ofcom UK) have indicated that C2PA-compatible labelling will form the technical basis for their AI content labelling codes of practice.
 
   ## Conditioning Strategies: Text, Image, and Multimodal Inputs
 
   Production DiT systems require conditioning on diverse input modalities beyond simple class labels. Text conditioning is the most important for commercial text-to-image and text-to-video systems. The standard approach uses a pre-trained language model to encode the input text into a dense embedding sequence, which is then injected into the DiT via cross-attention, adaLN, or in-context token concatenation. The choice of text encoder significantly affects generation quality:
 
-  - **CLIP (Contrastive Language-Image Pretraining, Radford et al. 2021)**: Encodes text as a single vector (CLIP-L outputs 768-dimensional vectors, CLIP-G outputs 1280-dimensional vectors) trained to align image and text representations contrastively. CLIP encoders are compact and fast but have limited sequence length (77 tokens) and compress sentence-level semantics into a single vector, losing fine-grained compositional structure. Used in SDXL and many open-weight models as a fast conditioning encoder.
-  - **T5 (Raffel et al. 2020)**: Sequence-to-sequence encoder producing per-token embeddings (T5-XXL outputs 4096-dimensional per-token vectors for sequences up to 512 tokens). Substantially better at encoding compositional prompts (multiple objects with spatial relationships, style instructions, negations) than CLIP. SD3 and FLUX use T5-XXL alongside CLIP, injecting T5 embeddings via cross-attention to the image token stream while using CLIP pooled embeddings for adaLN conditioning.
-  - **Combined CLIP + T5 conditioning**: MMDiT in SD3 concatenates CLIP-G and CLIP-L pooled embeddings (1280+768=2048 dimensions) into a single vector for adaLN-Zero timestep modulation, while T5-XXL per-token embeddings form a separate token sequence that participates in the joint image-text attention. This dual-encoder design exploits CLIP's strong visual semantics for global conditioning and T5's linguistic structure for fine-grained compositional conditioning.
+- **CLIP (Contrastive Language-Image Pretraining, Radford et al. 2021)**: Encodes text as a single vector (CLIP-L outputs 768-dimensional vectors, CLIP-G outputs 1280-dimensional vectors) trained to align image and text representations contrastively. CLIP encoders are compact and fast but have limited sequence length (77 tokens) and compress sentence-level semantics into a single vector, losing fine-grained compositional structure. Used in SDXL and many open-weight models as a fast conditioning encoder.
+- **T5 (Raffel et al. 2020)**: Sequence-to-sequence encoder producing per-token embeddings (T5-XXL outputs 4096-dimensional per-token vectors for sequences up to 512 tokens). Substantially better at encoding compositional prompts (multiple objects with spatial relationships, style instructions, negations) than CLIP. SD3 and FLUX use T5-XXL alongside CLIP, injecting T5 embeddings via cross-attention to the image token stream while using CLIP pooled embeddings for adaLN conditioning.
+- **Combined CLIP + T5 conditioning**: MMDiT in SD3 concatenates CLIP-G and CLIP-L pooled embeddings (1280+768=2048 dimensions) into a single vector for adaLN-Zero timestep modulation, while T5-XXL per-token embeddings form a separate token sequence that participates in the joint image-text attention. This dual-encoder design exploits CLIP's strong visual semantics for global conditioning and T5's linguistic structure for fine-grained compositional conditioning.
 
   Image conditioning extends text-to-image DiTs to image editing, inpainting, and image-to-image translation. A masked image (with inpainting regions zeroed out) is encoded by the VAE and concatenated channel-wise with the noisy latent, increasing the U-Net/DiT input channels from 4 (standard latent channel count for SD-family VAEs) to 8 (or 9 including the inpainting mask). ControlNet (Zhang et al., 2023) trains a parallel copy of a frozen DiT or U-Net encoder to process structural conditioning inputs (depth maps, edge maps, pose skeletons, segmentation masks) and inject their activations into the main network via additive residual connections, enabling spatially precise control of generated content without retraining the main model.
 
@@ -272,21 +272,21 @@ A Diffusion Transformer (DiT) is a generative model architecture that replaces t
 
   The abstraction of patchification — treating any structured data with a spatial or sequential organisation as a grid of tokens amenable to denoising — has made DiT the generative architecture of choice in domains far beyond the original image synthesis context:
 
-  - **Protein Structure Generation**: Diffusion models for protein structure generation (RFdiffusion, FrameDiff, AlphaFold 3's diffusion head) treat protein backbone coordinates as spatial tokens and apply diffusion over 3D atomic coordinates. DiT-style architectures with [[Self Attention]] over residue-level representations enable generating novel protein structures conditioned on functional constraints, amino acid sequence, or binding pocket geometry. This represents one of the highest-value applications of the DiT paradigm, with direct implications for drug discovery timelines and therapeutic protein design.
-  - **Weather and Climate Simulation**: Neuronal weather prediction models (ECMWF AIFS, Google NeuralGCM, Nvidia FourCastNet) treat atmospheric fields (temperature, wind velocity, humidity at multiple pressure levels) as spatial tokens on a latitude-longitude grid and apply transformer-based models to predict future atmospheric states. Diffusion-based approaches (GenCast, Google DeepMind 2024) extend this to probabilistic ensemble weather forecasting, using DiT-style denoising to generate multiple plausible future atmospheric trajectories conditioned on the current state.
-  - **Drug Molecule Design**: Generative models for molecular design (DiffSBDD, TargetDiff, DiffDock) represent molecular graphs as sets of atom tokens with 3D coordinate attributes and apply diffusion over atom types and 3D positions conditioned on protein binding site structure. DiT-style [[Attention Mechanism]] over atom-level representations captures long-range molecular interactions that graph neural networks model less effectively.
-  - **Materials Science**: DiT-based generation of crystal structures (DiffCSP, CDVAE) represents crystalline materials as periodic spatial grids of atom types and lattice parameters, enabling conditional generation of novel stable crystal structures from composition and property targets. Applications include battery electrode material design and photovoltaic semiconductor discovery.
-  - **Autonomous Driving World Models**: DiT-style video generation conditioned on driving actions (steering angle, acceleration) is used as a world model for training and evaluating autonomous driving policies. Waymo and Wayve have explored generative world models that simulate diverse driving scenarios (weather, pedestrian behaviour, edge-case incidents) for policy training without requiring physical exposure to rare events.
-  - **Medical Image Synthesis**: DiT models generate synthetic CT, MRI, and pathology image data for augmenting under-represented disease classes in clinical AI training datasets. Conditional generation on anatomical segmentation masks enables realistic pathology injection (tumour growth, bone fracture synthesis) into normal baseline scans, creating balanced training sets without patient data privacy risks.
+- **Protein Structure Generation**: Diffusion models for protein structure generation (RFdiffusion, FrameDiff, AlphaFold 3's diffusion head) treat protein backbone coordinates as spatial tokens and apply diffusion over 3D atomic coordinates. DiT-style architectures with [[Self Attention]] over residue-level representations enable generating novel protein structures conditioned on functional constraints, amino acid sequence, or binding pocket geometry. This represents one of the highest-value applications of the DiT paradigm, with direct implications for drug discovery timelines and therapeutic protein design.
+- **Weather and Climate Simulation**: Neuronal weather prediction models (ECMWF AIFS, Google NeuralGCM, Nvidia FourCastNet) treat atmospheric fields (temperature, wind velocity, humidity at multiple pressure levels) as spatial tokens on a latitude-longitude grid and apply transformer-based models to predict future atmospheric states. Diffusion-based approaches (GenCast, Google DeepMind 2024) extend this to probabilistic ensemble weather forecasting, using DiT-style denoising to generate multiple plausible future atmospheric trajectories conditioned on the current state.
+- **Drug Molecule Design**: Generative models for molecular design (DiffSBDD, TargetDiff, DiffDock) represent molecular graphs as sets of atom tokens with 3D coordinate attributes and apply diffusion over atom types and 3D positions conditioned on protein binding site structure. DiT-style [[Attention Mechanism]] over atom-level representations captures long-range molecular interactions that graph neural networks model less effectively.
+- **Materials Science**: DiT-based generation of crystal structures (DiffCSP, CDVAE) represents crystalline materials as periodic spatial grids of atom types and lattice parameters, enabling conditional generation of novel stable crystal structures from composition and property targets. Applications include battery electrode material design and photovoltaic semiconductor discovery.
+- **Autonomous Driving World Models**: DiT-style video generation conditioned on driving actions (steering angle, acceleration) is used as a world model for training and evaluating autonomous driving policies. Waymo and Wayve have explored generative world models that simulate diverse driving scenarios (weather, pedestrian behaviour, edge-case incidents) for policy training without requiring physical exposure to rare events.
+- **Medical Image Synthesis**: DiT models generate synthetic CT, MRI, and pathology image data for augmenting under-represented disease classes in clinical AI training datasets. Conditional generation on anatomical segmentation masks enables realistic pathology injection (tumour growth, bone fracture synthesis) into normal baseline scans, creating balanced training sets without patient data privacy risks.
 
   ## Production Deployment Considerations
 
   Deploying DiT models at production scale introduces engineering challenges that differ qualitatively from academic research implementations:
 
-  - **Latency and User Experience**: Acceptable text-to-image latency for consumer products is under 5 seconds. Standard DiT-XL/2 inference with 50 DDIM steps at 512×512 requires approximately 22 seconds on a single A100 GPU. Achieving under 5 seconds requires either: (a) 4-step distilled models (LCM, FLUX.1-schnell); (b) multi-GPU tensor parallelism splitting the DiT's attention heads across 4+ GPUs; (c) batching user requests for throughput efficiency at the cost of per-user latency; or (d) progressive generation that streams partial outputs at lower resolution while computing higher resolution in the background.
-  - **Memory Management**: DiT-XL/2 (675M parameters) at FP16 precision requires approximately 1.35 GB for model weights. FLUX.1 (12B parameters) requires approximately 24 GB at FP16, exceeding single A100 (40 GB) headroom when combined with intermediate activations and attention KV caches for long sequences. Serving FLUX.1 at production scale requires either 80 GB A100 GPUs, multi-GPU deployment with tensor parallelism, or 8-bit quantised weights (approximately 12 GB) with acceptable quality trade-off.
-  - **Content Safety at Inference**: Multiple layers of safety filtering are required in production: (a) input text safety classifier to block prompts that violate terms of service; (b) image output classifier applied to every generated image to block NSFW content before delivery to the user; (c) rate limiting per user/IP to prevent enumeration attacks that systematically probe safety filter boundaries; and (d) human review queues for edge cases flagged by automated classifiers.
-  - **Cost Economics**: At production scale, DiT inference cost is dominated by GPU compute. Generating 1 million images per day (typical for a mid-size commercial image generation product) at 4-step inference on FLUX.1-schnell requires approximately 12,000 A100-hours per day, at a cloud compute cost of approximately £144,000/day at 2026 spot pricing — motivating aggressive investment in inference efficiency optimisation to reduce cost per image.
+- **Latency and User Experience**: Acceptable text-to-image latency for consumer products is under 5 seconds. Standard DiT-XL/2 inference with 50 DDIM steps at 512×512 requires approximately 22 seconds on a single A100 GPU. Achieving under 5 seconds requires either: (a) 4-step distilled models (LCM, FLUX.1-schnell); (b) multi-GPU tensor parallelism splitting the DiT's attention heads across 4+ GPUs; (c) batching user requests for throughput efficiency at the cost of per-user latency; or (d) progressive generation that streams partial outputs at lower resolution while computing higher resolution in the background.
+- **Memory Management**: DiT-XL/2 (675M parameters) at FP16 precision requires approximately 1.35 GB for model weights. FLUX.1 (12B parameters) requires approximately 24 GB at FP16, exceeding single A100 (40 GB) headroom when combined with intermediate activations and attention KV caches for long sequences. Serving FLUX.1 at production scale requires either 80 GB A100 GPUs, multi-GPU deployment with tensor parallelism, or 8-bit quantised weights (approximately 12 GB) with acceptable quality trade-off.
+- **Content Safety at Inference**: Multiple layers of safety filtering are required in production: (a) input text safety classifier to block prompts that violate terms of service; (b) image output classifier applied to every generated image to block NSFW content before delivery to the user; (c) rate limiting per user/IP to prevent enumeration attacks that systematically probe safety filter boundaries; and (d) human review queues for edge cases flagged by automated classifiers.
+- **Cost Economics**: At production scale, DiT inference cost is dominated by GPU compute. Generating 1 million images per day (typical for a mid-size commercial image generation product) at 4-step inference on FLUX.1-schnell requires approximately 12,000 A100-hours per day, at a cloud compute cost of approximately £144,000/day at 2026 spot pricing — motivating aggressive investment in inference efficiency optimisation to reduce cost per image.
 
   ## Research & Literature
 
@@ -356,9 +356,10 @@ A Diffusion Transformer (DiT) is a generative model architecture that replaces t
   ## Detailed Architectural Analysis: adaLN-Zero Conditioning
 
   The adaLN-Zero conditioning mechanism warrants detailed treatment because it represents the key design decision that distinguished DiT from naive U-Net-to-transformer substitutions. Prior conditioning strategies in transformer generative models had used prefix tokens (prepending the conditioning embedding as an extra sequence element), cross-attention (maintaining a separate key-value memory of conditioning vectors), or in-context conditioning (concatenating condition tokens with input tokens). Each strategy has drawbacks:
-  - Prefix tokens add constant overhead but limit the number of conditioning dimensions to the token dimension d.
-  - Cross-attention adds O(N·M) cost where M is the conditioning sequence length, which for text-conditioned models with long prompts becomes significant.
-  - In-context conditioning doubles the effective sequence length, doubling attention compute.
+
+- Prefix tokens add constant overhead but limit the number of conditioning dimensions to the token dimension d.
+- Cross-attention adds O(N·M) cost where M is the conditioning sequence length, which for text-conditioned models with long prompts becomes significant.
+- In-context conditioning doubles the effective sequence length, doubling attention compute.
 
   adaLN-Zero avoids all these drawbacks by generating per-channel (γ, β) modulation parameters from a small MLP that takes the concatenated timestep embedding and class/text embedding as input. The computation cost is O(d²) from the MLP alone — negligible relative to the O(N²·d) self-attention cost. The Zero initialisation means the final linear layer of each MLP head starts at zero weight, so α (the output gating scalar) starts at zero: each DiT block begins training as an identity transformation, allowing gradient signal to propagate cleanly through arbitrary depth. This property — borrowed from the Zero initialisation strategy in ControlNet and similar architectures — is critical for stable training of deep DiT models (L=28 blocks for DiT-XL).
 
@@ -378,9 +379,9 @@ A Diffusion Transformer (DiT) is a generative model architecture that replaces t
 
   DiT models at production scale require infrastructure that significantly exceeds academic compute budgets. Training data requirements reflect both the generative model's need for diversity and the conditioning model's need for alignment:
 
-  - **FLUX.1** (12B parameters, Black Forest Labs, 2024): Trained on a filtered subset of LAION-5B plus proprietary licensed content, approximately 600M image-text pairs, using flow-matching objective. Training compute is estimated at approximately 10²³ FLOPs on a cluster of H100 GPUs (order of 1000 GPU-days at 80 TFLOP/s/GPU).
-  - **Stable Diffusion 3** (Stability AI, 2024): Trained on an internal dataset of 2B+ image-text pairs with quality filtering and safety screening. Uses T5-XXL (4.7B parameters) and CLIP-L and CLIP-G text encoders alongside the MMDiT backbone.
-  - **Sora** (OpenAI, 2024): Trained on a large proprietary dataset of licensed video content with dense captioning generated by a [[Large Language Model]] trained on human-annotated video descriptions. Video duration range: 1 second to 1 minute. Training compute not disclosed; estimated at 10²⁴–10²⁵ FLOPs based on model size and reported capabilities.
+- **FLUX.1** (12B parameters, Black Forest Labs, 2024): Trained on a filtered subset of LAION-5B plus proprietary licensed content, approximately 600M image-text pairs, using flow-matching objective. Training compute is estimated at approximately 10²³ FLOPs on a cluster of H100 GPUs (order of 1000 GPU-days at 80 TFLOP/s/GPU).
+- **Stable Diffusion 3** (Stability AI, 2024): Trained on an internal dataset of 2B+ image-text pairs with quality filtering and safety screening. Uses T5-XXL (4.7B parameters) and CLIP-L and CLIP-G text encoders alongside the MMDiT backbone.
+- **Sora** (OpenAI, 2024): Trained on a large proprietary dataset of licensed video content with dense captioning generated by a [[Large Language Model]] trained on human-annotated video descriptions. Video duration range: 1 second to 1 minute. Training compute not disclosed; estimated at 10²⁴–10²⁵ FLOPs based on model size and reported capabilities.
 
   Data curation for DiT training is as important as architecture — high-quality image-text pairs require filtering for aesthetic quality (using aesthetic scoring models), alignment quality (using CLIP score filtering), safety (using NSFW classifiers), deduplication (using near-duplicate hashing), and legal compliance (licensing verification). The LAION-5B dataset (used widely in academic DiT research) has faced copyright litigation from stock photography agencies and individual photographers, creating legal uncertainty for commercial DiT systems using open-weight models trained on it.
 
@@ -390,19 +391,20 @@ A Diffusion Transformer (DiT) is a generative model architecture that replaces t
 
   At inference time, DiT models face specific optimisation challenges distinct from those of language models:
 
-  - **Consistency Distillation**: Training a student model to match the teacher DiT's output in 2–4 steps rather than 50–1000 steps. Latent Consistency Models (LCM) applied to SDXL demonstrated 4-step generation with quality comparable to 50-step DDIM sampling. FLUX.1-schnell is a distilled variant achieving 4-step generation.
-  - **Token Caching**: Across the 50+ denoising steps at inference, attention patterns for background/low-frequency regions are highly similar across adjacent timesteps. Token caching techniques (e.g., [[Attention Mechanism]] value caching, DeepCache) reuse these computations, reducing the effective compute per step by 40–60% with negligible quality degradation.
-  - **Quantisation**: Post-training quantisation of DiT weights from FP16 to INT8 or INT4 reduces model memory footprint and accelerates matrix-vector operations on hardware with dedicated integer compute units (NVIDIA Tensor Cores in INT8 mode). ViDiT-Q (2024) demonstrates FP8 quantisation of DiT-XL with near-lossless FID.
-  - **Hardware-Specific Optimisation**: [[Transformer Architecture]] compute on H100/A100 GPUs is bottlenecked by memory bandwidth (matrix-vector products during inference when batch size is 1). Operator fusion (fusing attention, layer norm, and MLP into single CUDA kernels), FlashAttention-3, and speculative decoding analogues (SpecDiff, 2025) address these bottlenecks.
-  - **Progressive Upscaling**: Generating at lower resolution (256×256) for the first 80% of denoising steps and upscaling for the final 20% of high-frequency detail steps, exploiting the observation that global structure emerges early and local detail emerges late in the denoising trajectory. DynamicDiT (ICLR 2025) formalises this intuition as timestep-adaptive token routing.
+- **Consistency Distillation**: Training a student model to match the teacher DiT's output in 2–4 steps rather than 50–1000 steps. Latent Consistency Models (LCM) applied to SDXL demonstrated 4-step generation with quality comparable to 50-step DDIM sampling. FLUX.1-schnell is a distilled variant achieving 4-step generation.
+- **Token Caching**: Across the 50+ denoising steps at inference, attention patterns for background/low-frequency regions are highly similar across adjacent timesteps. Token caching techniques (e.g., [[Attention Mechanism]] value caching, DeepCache) reuse these computations, reducing the effective compute per step by 40–60% with negligible quality degradation.
+- **Quantisation**: Post-training quantisation of DiT weights from FP16 to INT8 or INT4 reduces model memory footprint and accelerates matrix-vector operations on hardware with dedicated integer compute units (NVIDIA Tensor Cores in INT8 mode). ViDiT-Q (2024) demonstrates FP8 quantisation of DiT-XL with near-lossless FID.
+- **Hardware-Specific Optimisation**: [[Transformer Architecture]] compute on H100/A100 GPUs is bottlenecked by memory bandwidth (matrix-vector products during inference when batch size is 1). Operator fusion (fusing attention, layer norm, and MLP into single CUDA kernels), FlashAttention-3, and speculative decoding analogues (SpecDiff, 2025) address these bottlenecks.
+- **Progressive Upscaling**: Generating at lower resolution (256×256) for the first 80% of denoising steps and upscaling for the final 20% of high-frequency detail steps, exploiting the observation that global structure emerges early and local detail emerges late in the denoising trajectory. DynamicDiT (ICLR 2025) formalises this intuition as timestep-adaptive token routing.
 
   ## Sampling Algorithms and Numerical Integration
 
   DiT inference requires numerically solving the reverse SDE or ODE to traverse from noise to data. Several samplers have been developed, each offering different trade-offs between quality, step count, and computational cost:
-  - **DDIM (Denoising Diffusion Implicit Models, Song et al. 2020)**: Deterministic implicit sampler that reduces generation steps from 1000 (DDPM) to 50–100 with comparable quality by solving the reverse ODE rather than SDE. The deterministic trajectory enables latent space interpolation and image inversion.
-  - **DPM-Solver / DPM-Solver++ (Lu et al. 2022)**: High-order ODE solver tailored to the specific structure of the DDPM reverse ODE, achieving 10–25 step generation with quality competitive with 100-step DDIM. Used widely in production FLUX and SD3 deployments.
-  - **UniPC (Zhao et al. 2023)**: Predictor-corrector sampler combining a predictor step (estimating the next latent) with a corrector step (refining the estimate), achieving even fewer required steps for a given quality target than DPM-Solver.
-  - **Euler/Heun for Flow Matching (Black Forest Labs, 2024)**: First and second-order ODE solvers applied to the straight-line flow paths in FLUX's flow-matching objective. The simplicity of straight flow paths makes Euler sampling effective at very low step counts (4–8 steps in FLUX.1-dev), unlike DDPM's curved paths that require higher-order solvers.
 
-- ### Provenance
+- **DDIM (Denoising Diffusion Implicit Models, Song et al. 2020)**: Deterministic implicit sampler that reduces generation steps from 1000 (DDPM) to 50–100 with comparable quality by solving the reverse ODE rather than SDE. The deterministic trajectory enables latent space interpolation and image inversion.
+- **DPM-Solver / DPM-Solver++ (Lu et al. 2022)**: High-order ODE solver tailored to the specific structure of the DDPM reverse ODE, achieving 10–25 step generation with quality competitive with 100-step DDIM. Used widely in production FLUX and SD3 deployments.
+- **UniPC (Zhao et al. 2023)**: Predictor-corrector sampler combining a predictor step (estimating the next latent) with a corrector step (refining the estimate), achieving even fewer required steps for a given quality target than DPM-Solver.
+- **Euler/Heun for Flow Matching (Black Forest Labs, 2024)**: First and second-order ODE solvers applied to the straight-line flow paths in FLUX's flow-matching objective. The simplicity of straight flow paths makes Euler sampling effective at very low step counts (4–8 steps in FLUX.1-dev), unlike DDPM's curved paths that require higher-order solvers.
+
+### Provenance
 

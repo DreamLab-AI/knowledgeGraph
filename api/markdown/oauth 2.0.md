@@ -1,95 +1,105 @@
-
 OAuth 2.0 is an open authorisation framework standardised as RFC 6749 (2012) that enables a resource owner to delegate scoped, time-limited access to their protected resources on a resource server to a third-party client application, without exposing credentials. The framework separates four distinct roles—resource owner, client, authorisation server, and resource server—and defines multiple grant types (authorisation code, client credentials, device code, refresh token) suited to different trust levels and client profiles. Access tokens with explicit scopes enforce the principle of least privilege, while extensions such as PKCE (RFC 7636), JWT access tokens (RFC 9068), token introspection (RFC 7662), and token revocation (RFC 7009) complete the lifecycle. OAuth 2.0 serves as the foundation upon which OpenID Connect 1.0 adds federated authentication, together underpinning modern Identity and Access Management platforms and Zero Trust Architecture policies.
 
-- ### Overview
-  - OAuth 2.0 was published in October 2012, superseding OAuth 1.0a, which required cumbersome request signing. The new framework delegated complexity to the transport layer ([[HTTPS]] is mandatory) and introduced a simpler token model understood by ordinary HTTP clients.
-  - The framework does not specify token formats, instead leaving that to profiles. RFC 9068 standardises [[JSON Web Token]] (JWT) access tokens with a well-known claim set, enabling stateless validation by resource servers without a round-trip to the [[Authorisation Server]].
-  - OAuth 2.0 is universally adopted: every major cloud platform (AWS, Azure, GCP), consumer identity provider (Google, Apple, Facebook), and enterprise identity system (Okta, Auth0, Keycloak, Azure AD / Entra ID, Ping Identity) exposes OAuth 2.0 endpoints.
+### Overview
 
-- ### Core Roles
-  - **Resource Owner** — the entity (typically a human user) that owns the protected resource and can grant access.
-  - **Client** — the application requesting access on behalf of the resource owner. Clients are classified as *confidential* (can keep a secret) or *public* (cannot).
-  - **Authorisation Server** — issues access tokens after authenticating the resource owner and obtaining consent. May also issue refresh tokens.
-  - **Resource Server** — hosts the protected resources and validates bearer tokens presented by the client. May be co-located with the authorisation server.
+- OAuth 2.0 was published in October 2012, superseding OAuth 1.0a, which required cumbersome request signing. The new framework delegated complexity to the transport layer ([[HTTPS]] is mandatory) and introduced a simpler token model understood by ordinary HTTP clients.
+- The framework does not specify token formats, instead leaving that to profiles. RFC 9068 standardises [[JSON Web Token]] (JWT) access tokens with a well-known claim set, enabling stateless validation by resource servers without a round-trip to the [[Authorisation Server]].
+- OAuth 2.0 is universally adopted: every major cloud platform (AWS, Azure, GCP), consumer identity provider (Google, Apple, Facebook), and enterprise identity system (Okta, Auth0, Keycloak, Azure AD / Entra ID, Ping Identity) exposes OAuth 2.0 endpoints.
 
-- ### Grant Types (Flows)
-  - **Authorisation Code Flow** — the primary [[Authorisation Code Flow]] for confidential clients (server-side web apps). The client receives a short-lived code which is exchanged for tokens on the back channel, preventing token leakage in the browser URL.
-  - **Authorisation Code + [[PKCE]]** — mandatory extension (RFC 7636) for public clients (SPAs, mobile apps) that adds a code verifier/challenge pair to defeat code-interception attacks. Replaces the now-deprecated Implicit flow.
-  - **[[Client Credentials Flow]]** — machine-to-machine flows where no human user is involved; the client authenticates directly with its own credentials. Used extensively for microservice-to-microservice [[API Security]].
-  - **Device Authorisation Grant** (RFC 8628) — designed for input-constrained devices (smart TVs, CLI tools) that display a code for the user to approve on a secondary device.
-  - **Refresh Token** — a long-lived credential exchanged for a new [[Access Token]] without re-prompting the user; subject to rotation and sender-constraint policies.
-  - **Resource Owner Password Credentials (ROPC)** — deprecated; clients collected the user's password directly. Strongly discouraged in modern deployments.
+### Core Roles
 
-- ### Key Extensions & RFCs
-  - **RFC 6750** — Bearer Token Usage; defines how [[Bearer Token]]s are transmitted in the `Authorization` header.
-  - **RFC 7009** — Token Revocation; allows clients and servers to proactively invalidate tokens.
-  - **RFC 7662** — Token Introspection; resource servers call back to the authorisation server to validate opaque tokens and retrieve metadata.
-  - **RFC 7636** — PKCE; Proof Key for Code Exchange hardens public clients against code-interception.
-  - **RFC 9068** — JWT Profile for OAuth 2.0 Access Tokens; standardises the [[JSON Web Token]] claim structure so resource servers can validate tokens without introspection.
-  - **RFC 9101** — JWT-Secured Authorisation Request (JAR); wraps the authorisation request in a signed JWT.
-  - **RFC 9126** — Pushed Authorisation Requests (PAR); client POSTs the authorisation request directly to the server, receiving a request URI, preventing parameter tampering.
-  - **RFC 9207** — OAuth 2.0 Authorisation Server Issuer Identification; prevents mix-up attacks across multiple authorisation servers.
-  - **OAuth 2.1** (draft) — ongoing consolidation removing deprecated flows (ROPC, Implicit) and mandating PKCE, redirect-URI exact matching, and [[Bearer Token]] security.
+- **Resource Owner** — the entity (typically a human user) that owns the protected resource and can grant access.
+- **Client** — the application requesting access on behalf of the resource owner. Clients are classified as *confidential* (can keep a secret) or *public* (cannot).
+- **Authorisation Server** — issues access tokens after authenticating the resource owner and obtaining consent. May also issue refresh tokens.
+- **Resource Server** — hosts the protected resources and validates bearer tokens presented by the client. May be co-located with the authorisation server.
 
-- ### Security Model
-  - OAuth 2.0 relies on [[HTTPS]] for confidentiality; tokens are bearer credentials and must be protected in transit and at rest.
-  - Scopes implement [[Least Privilege]]; clients request only the permissions they need, and resource owners can consent to a subset.
-  - Threat model (RFC 6819) and Security Best Current Practice (RFC 9700) document attacks including CSRF on the redirect URI, open redirectors, mix-up attacks, and token leakage.
-  - Sender-constrained tokens (DPoP, RFC 9449) bind a token cryptographically to the client's key pair, mitigating bearer-token theft.
-  - [[Zero Trust Architecture]] deployments issue short-lived access tokens with rich context claims (user, device, location) and enforce continuous authorisation rather than long-lived sessions.
+### Grant Types (Flows)
 
-- ### Relationship to OpenID Connect
-  - [[OpenID Connect]] 1.0 (OIDC) is a thin identity layer built on top of OAuth 2.0's authorisation code flow. It adds:
-    - **ID Token** — a [[JSON Web Token]] proving user identity, issued alongside the access token.
-    - **UserInfo Endpoint** — returns standardised user profile claims.
-    - **Discovery** (OIDC Discovery) — JSON document at `/.well-known/openid-configuration` advertising server capabilities.
-    - **Dynamic Client Registration** — programmatic client onboarding.
-  - OIDC enables [[Single Sign-On]] and [[Identity Federation]] across multiple relying parties sharing a common identity provider.
+- **Authorisation Code Flow** — the primary [[Authorisation Code Flow]] for confidential clients (server-side web apps). The client receives a short-lived code which is exchanged for tokens on the back channel, preventing token leakage in the browser URL.
+- **Authorisation Code + [[PKCE]]** — mandatory extension (RFC 7636) for public clients (SPAs, mobile apps) that adds a code verifier/challenge pair to defeat code-interception attacks. Replaces the now-deprecated Implicit flow.
+- **[[Client Credentials Flow]]** — machine-to-machine flows where no human user is involved; the client authenticates directly with its own credentials. Used extensively for microservice-to-microservice [[API Security]].
+- **Device Authorisation Grant** (RFC 8628) — designed for input-constrained devices (smart TVs, CLI tools) that display a code for the user to approve on a secondary device.
+- **Refresh Token** — a long-lived credential exchanged for a new [[Access Token]] without re-prompting the user; subject to rotation and sender-constraint policies.
+- **Resource Owner Password Credentials (ROPC)** — deprecated; clients collected the user's password directly. Strongly discouraged in modern deployments.
 
-- ### Applications and Use Cases
-  - **Consumer social login** — "Sign in with Google/Apple/GitHub" buttons use OIDC over OAuth 2.0, reducing password-reuse risk and friction.
-  - **API authorisation** — REST and GraphQL APIs use Bearer tokens from OAuth 2.0 to authenticate machine clients and enforce per-scope rate limits.
-  - **Microservice mesh** — [[Client Credentials Flow]] issues short-lived tokens for service-to-service calls within a service mesh or [[Zero Trust Architecture]] perimeter.
-  - **Mobile applications** — Authorisation code + PKCE is the recommended pattern for native mobile apps; tokens are stored in the platform secure keychain.
-  - **Single-page applications** — Modern SPAs use authorisation code + PKCE via a BFF (Backend For Frontend) proxy to keep tokens out of the browser.
-  - **Enterprise SSO** — Enterprises federate Active Directory / LDAP identity into cloud SaaS via OAuth 2.0 / OIDC, replacing legacy [[SAML]] in greenfield deployments.
-  - **IoT and smart devices** — Device Authorisation Grant (RFC 8628) enables headless devices to request authorisation from a companion device.
-  - **[[Decentralised Identity]]** — Wallet and DID ecosystems (e.g., OpenID for Verifiable Presentations) build on OAuth 2.0 to present [[Verifiable Credentials]] to relying parties without a central identity hub.
+### Key Extensions & RFCs
 
-- ### Standards & Context
-  - **Standardisation body**: [[IETF]] OAuth Working Group (oauth@ietf.org).
-  - **Core specification**: RFC 6749 (framework), RFC 6750 (bearer tokens) — both published October 2012.
-  - **Security guidance**: RFC 6819 (threat model), RFC 9700 (Security Best Current Practice, 2025).
-  - **Token formats**: RFC 9068 (JWT access tokens), RFC 7519 ([[JSON Web Token]]), RFC 7523 (JWT client authentication).
-  - **Token lifecycle**: RFC 7009 (revocation), RFC 7662 (introspection).
-  - **Public client hardening**: RFC 7636 (PKCE), RFC 8252 (OAuth for native apps), RFC 9449 (DPoP sender-constraining).
-  - **Advanced request security**: RFC 9101 (JAR), RFC 9126 (PAR), RFC 9207 (issuer identification).
-  - **Consolidation**: OAuth 2.1 draft merges the above best practices into a single normative document; expected to supersede RFC 6749.
-  - **Regulatory relevance**: eIDAS 2.0 (EU) mandates OIDC/OAuth 2.0 for electronic identity wallets; FAPI 2.0 (Financial-grade API) profiles OAuth 2.0 for open banking under PSD2.
+- **RFC 6750** — Bearer Token Usage; defines how [[Bearer Token]]s are transmitted in the `Authorization` header.
+- **RFC 7009** — Token Revocation; allows clients and servers to proactively invalidate tokens.
+- **RFC 7662** — Token Introspection; resource servers call back to the authorisation server to validate opaque tokens and retrieve metadata.
+- **RFC 7636** — PKCE; Proof Key for Code Exchange hardens public clients against code-interception.
+- **RFC 9068** — JWT Profile for OAuth 2.0 Access Tokens; standardises the [[JSON Web Token]] claim structure so resource servers can validate tokens without introspection.
+- **RFC 9101** — JWT-Secured Authorisation Request (JAR); wraps the authorisation request in a signed JWT.
+- **RFC 9126** — Pushed Authorisation Requests (PAR); client POSTs the authorisation request directly to the server, receiving a request URI, preventing parameter tampering.
+- **RFC 9207** — OAuth 2.0 Authorisation Server Issuer Identification; prevents mix-up attacks across multiple authorisation servers.
+- **OAuth 2.1** (draft) — ongoing consolidation removing deprecated flows (ROPC, Implicit) and mandating PKCE, redirect-URI exact matching, and [[Bearer Token]] security.
 
-- ### Implementation Notes
-  - Authorisation servers must enforce exact redirect-URI matching to prevent open-redirect attacks.
-  - Tokens must be transmitted only over TLS; client libraries should validate `state` and `nonce` parameters to prevent CSRF.
-  - Short token lifetimes (minutes to hours) with refresh-token rotation are preferred over long-lived access tokens.
-  - Token binding (DPoP) should be adopted where the client runtime supports asymmetric keys, particularly for high-value API access.
-  - Resource servers validating JWT access tokens must verify the `iss`, `aud`, `exp`, `nbf`, and signature; ignoring any one of these opens vulnerability windows.
+### Security Model
 
-- ### Current Landscape (2026)
-  - The IETF published RFC 9700 (BCP 240), "Best Current Practice for OAuth 2.0 Security", in January 2025, consolidating a decade of hardening: it formally deprecates the Implicit and Resource Owner Password Credentials grants, mandates PKCE and exact redirect-URI matching, and requires sender-constrained or rotated refresh tokens for public clients.
-  - OAuth 2.1 remains an in-progress IETF draft (draft-ietf-oauth-v2-1-15, last revised 2 March 2026) authored by Dick Hardt, Aaron Parecki and Torsten Lodderstedt; it consolidates RFC 6749/6750 plus PKCE, native-app and browser-app guidance, with the working-group milestone to submit to the IESG targeted for December 2026.
-  - Sender-constrained tokens have moved into the mainstream via RFC 9449 (DPoP, Demonstrating Proof-of-Possession); FAPI 2.0 and OAuth 2.1 now accept DPoP or mutual-TLS (RFC 8705) as equivalent binding mechanisms, and Bluesky's atproto profile mandates DPoP on every authorised request.
-  - The OpenID Foundation approved the FAPI 2.0 Security Profile as a Final specification in February 2025, with final conformance tests and certifications for both the Security Profile and Message Signing published on 9 July 2025, cementing the open-banking/high-assurance baseline.
-  - Anthropic's Model Context Protocol has become a major new consumer of the stack: the 2025-11-25 MCP authorisation spec makes OAuth 2.1 with PKCE (S256) mandatory for all client types, classes MCP servers strictly as OAuth 2.0 resource servers, and requires RFC 9728 Protected Resource Metadata, RFC 8414 server metadata and RFC 8707 resource indicators, whilst forbidding token pass-through to upstream APIs.
-  - Fresh RFCs have filled long-standing gaps: RFC 9728 (Protected Resource Metadata, April 2025) and RFC 9701 (JWT Response for Token Introspection), enabling the resource-server-first discovery pattern that agentic deployments depend on.
-  - Open challenges as of 2026 centre on agent and machine-to-machine identity: the working group is progressing draft-ietf-oauth-security-topics-update (addressing cross-user session-fixation and multi-tenant OAuth-connection attacks), and MCP is shifting from open Dynamic Client Registration (RFC 7591) toward Client ID Metadata Documents (CIMD) to counter client-impersonation risk at agent-fleet scale.
+- OAuth 2.0 relies on [[HTTPS]] for confidentiality; tokens are bearer credentials and must be protected in transit and at rest.
+- Scopes implement [[Least Privilege]]; clients request only the permissions they need, and resource owners can consent to a subset.
+- Threat model (RFC 6819) and Security Best Current Practice (RFC 9700) document attacks including CSRF on the redirect URI, open redirectors, mix-up attacks, and token leakage.
+- Sender-constrained tokens (DPoP, RFC 9449) bind a token cryptographically to the client's key pair, mitigating bearer-token theft.
+- [[Zero Trust Architecture]] deployments issue short-lived access tokens with rich context claims (user, device, location) and enforce continuous authorisation rather than long-lived sessions.
 
-- ### References
-  - 1. IETF (2025). RFC 9700: Best Current Practice for OAuth 2.0 Security (BCP 240). https://datatracker.ietf.org/doc/rfc9700/
-  - 2. Hardt, Parecki & Lodderstedt / IETF (2026). draft-ietf-oauth-v2-1-15: The OAuth 2.1 Authorization Framework. https://datatracker.ietf.org/doc/draft-ietf-oauth-v2-1/
-  - 3. OAuth.net / OpenID Foundation (2025). RFC 9449: OAuth 2.0 Demonstrating Proof-of-Possession (DPoP). https://oauth.net/2/dpop/
-  - 4. OpenID Foundation (2025). FAPI 2.0 Security Profile and Message Signing: Final Conformance Tests and Certifications Now Available. https://openid.net/fapi2-0-final-conformance-tests-available/
-  - 5. Anthropic / Model Context Protocol (2025). Authorization — MCP Specification 2025-11-25. https://modelcontextprotocol.io/specification/2025-11-25/basic/authorization
-  - 6. WorkOS (2026). DPoP (RFC 9449) explained: How sender-constrained OAuth tokens work. https://workos.com/blog/dpop-rfc-9449-explained
+### Relationship to OpenID Connect
 
-- ### Provenance
+- [[OpenID Connect]] 1.0 (OIDC) is a thin identity layer built on top of OAuth 2.0's authorisation code flow. It adds:
+  - **ID Token** — a [[JSON Web Token]] proving user identity, issued alongside the access token.
+  - **UserInfo Endpoint** — returns standardised user profile claims.
+  - **Discovery** (OIDC Discovery) — JSON document at `/.well-known/openid-configuration` advertising server capabilities.
+  - **Dynamic Client Registration** — programmatic client onboarding.
+- OIDC enables [[Single Sign-On]] and [[Identity Federation]] across multiple relying parties sharing a common identity provider.
+
+### Applications and Use Cases
+
+- **Consumer social login** — "Sign in with Google/Apple/GitHub" buttons use OIDC over OAuth 2.0, reducing password-reuse risk and friction.
+- **API authorisation** — REST and GraphQL APIs use Bearer tokens from OAuth 2.0 to authenticate machine clients and enforce per-scope rate limits.
+- **Microservice mesh** — [[Client Credentials Flow]] issues short-lived tokens for service-to-service calls within a service mesh or [[Zero Trust Architecture]] perimeter.
+- **Mobile applications** — Authorisation code + PKCE is the recommended pattern for native mobile apps; tokens are stored in the platform secure keychain.
+- **Single-page applications** — Modern SPAs use authorisation code + PKCE via a BFF (Backend For Frontend) proxy to keep tokens out of the browser.
+- **Enterprise SSO** — Enterprises federate Active Directory / LDAP identity into cloud SaaS via OAuth 2.0 / OIDC, replacing legacy [[SAML]] in greenfield deployments.
+- **IoT and smart devices** — Device Authorisation Grant (RFC 8628) enables headless devices to request authorisation from a companion device.
+- **[[Decentralised Identity]]** — Wallet and DID ecosystems (e.g., OpenID for Verifiable Presentations) build on OAuth 2.0 to present [[Verifiable Credentials]] to relying parties without a central identity hub.
+
+### Standards & Context
+
+- **Standardisation body**: [[IETF]] OAuth Working Group (oauth@ietf.org).
+- **Core specification**: RFC 6749 (framework), RFC 6750 (bearer tokens) — both published October 2012.
+- **Security guidance**: RFC 6819 (threat model), RFC 9700 (Security Best Current Practice, 2025).
+- **Token formats**: RFC 9068 (JWT access tokens), RFC 7519 ([[JSON Web Token]]), RFC 7523 (JWT client authentication).
+- **Token lifecycle**: RFC 7009 (revocation), RFC 7662 (introspection).
+- **Public client hardening**: RFC 7636 (PKCE), RFC 8252 (OAuth for native apps), RFC 9449 (DPoP sender-constraining).
+- **Advanced request security**: RFC 9101 (JAR), RFC 9126 (PAR), RFC 9207 (issuer identification).
+- **Consolidation**: OAuth 2.1 draft merges the above best practices into a single normative document; expected to supersede RFC 6749.
+- **Regulatory relevance**: eIDAS 2.0 (EU) mandates OIDC/OAuth 2.0 for electronic identity wallets; FAPI 2.0 (Financial-grade API) profiles OAuth 2.0 for open banking under PSD2.
+
+### Implementation Notes
+
+- Authorisation servers must enforce exact redirect-URI matching to prevent open-redirect attacks.
+- Tokens must be transmitted only over TLS; client libraries should validate `state` and `nonce` parameters to prevent CSRF.
+- Short token lifetimes (minutes to hours) with refresh-token rotation are preferred over long-lived access tokens.
+- Token binding (DPoP) should be adopted where the client runtime supports asymmetric keys, particularly for high-value API access.
+- Resource servers validating JWT access tokens must verify the `iss`, `aud`, `exp`, `nbf`, and signature; ignoring any one of these opens vulnerability windows.
+
+### Current Landscape (2026)
+
+- The IETF published RFC 9700 (BCP 240), "Best Current Practice for OAuth 2.0 Security", in January 2025, consolidating a decade of hardening: it formally deprecates the Implicit and Resource Owner Password Credentials grants, mandates PKCE and exact redirect-URI matching, and requires sender-constrained or rotated refresh tokens for public clients.
+- OAuth 2.1 remains an in-progress IETF draft (draft-ietf-oauth-v2-1-15, last revised 2 March 2026) authored by Dick Hardt, Aaron Parecki and Torsten Lodderstedt; it consolidates RFC 6749/6750 plus PKCE, native-app and browser-app guidance, with the working-group milestone to submit to the IESG targeted for December 2026.
+- Sender-constrained tokens have moved into the mainstream via RFC 9449 (DPoP, Demonstrating Proof-of-Possession); FAPI 2.0 and OAuth 2.1 now accept DPoP or mutual-TLS (RFC 8705) as equivalent binding mechanisms, and Bluesky's atproto profile mandates DPoP on every authorised request.
+- The OpenID Foundation approved the FAPI 2.0 Security Profile as a Final specification in February 2025, with final conformance tests and certifications for both the Security Profile and Message Signing published on 9 July 2025, cementing the open-banking/high-assurance baseline.
+- Anthropic's Model Context Protocol has become a major new consumer of the stack: the 2025-11-25 MCP authorisation spec makes OAuth 2.1 with PKCE (S256) mandatory for all client types, classes MCP servers strictly as OAuth 2.0 resource servers, and requires RFC 9728 Protected Resource Metadata, RFC 8414 server metadata and RFC 8707 resource indicators, whilst forbidding token pass-through to upstream APIs.
+- Fresh RFCs have filled long-standing gaps: RFC 9728 (Protected Resource Metadata, April 2025) and RFC 9701 (JWT Response for Token Introspection), enabling the resource-server-first discovery pattern that agentic deployments depend on.
+- Open challenges as of 2026 centre on agent and machine-to-machine identity: the working group is progressing draft-ietf-oauth-security-topics-update (addressing cross-user session-fixation and multi-tenant OAuth-connection attacks), and MCP is shifting from open Dynamic Client Registration (RFC 7591) toward Client ID Metadata Documents (CIMD) to counter client-impersonation risk at agent-fleet scale.
+
+### References
+
+- 1. IETF (2025). RFC 9700: Best Current Practice for OAuth 2.0 Security (BCP 240). https://datatracker.ietf.org/doc/rfc9700/
+- 2. Hardt, Parecki & Lodderstedt / IETF (2026). draft-ietf-oauth-v2-1-15: The OAuth 2.1 Authorization Framework. https://datatracker.ietf.org/doc/draft-ietf-oauth-v2-1/
+- 3. OAuth.net / OpenID Foundation (2025). RFC 9449: OAuth 2.0 Demonstrating Proof-of-Possession (DPoP). https://oauth.net/2/dpop/
+- 4. OpenID Foundation (2025). FAPI 2.0 Security Profile and Message Signing: Final Conformance Tests and Certifications Now Available. https://openid.net/fapi2-0-final-conformance-tests-available/
+- 5. Anthropic / Model Context Protocol (2025). Authorization — MCP Specification 2025-11-25. https://modelcontextprotocol.io/specification/2025-11-25/basic/authorization
+- 6. WorkOS (2026). DPoP (RFC 9449) explained: How sender-constrained OAuth tokens work. https://workos.com/blog/dpop-rfc-9449-explained
+
+### Provenance
 

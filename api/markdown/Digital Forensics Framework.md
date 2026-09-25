@@ -1,34 +1,36 @@
-
 A structured modology and toolset for identifying, preserving, analysing, and documenting digital evidence from computing systems, networks, and virtual environments to support cybersecurity investigations, legal proceedings, and incident response within metaverse and blockchain contexts.
 
-- ### Semantic Classification
+### Semantic Classification
 
-- ### Content
+### Content
 
-  - ## Technical Details
-  - **NIST Framework Phases**:
-		- Collection: Identify and acquire data sources
-		- Examination: Assess and extract relevant data
-		- Analysis: Study information to answer investigative questions
-		- Reporting: Document procedures, methods, and findings
-  - **D4I Framework**:
-		- Digital forensics for Industrie 4.0 and digitalization
-		- Cyber-Kill-Chain mapping for attack analysis
-		- Enhanced examination and analysis phases
-  - **DFIR Integration**:
-		- Digital Forensics + Incident Response combined
-		- Real-time threat mitigation with evidence preservation
-		- Common tools: EDR, SIEM, forensic imaging
-  - **Recent Developments (2025–2026)**:
-		- AI/ML for pattern recognition in evidence analysis
-		- Market size estimated at $10–16B in 2026; forecasts to 2032 range from $17–27B at 9–12% CAGR depending on methodology
-		- Metaverse-specific forensic methodologies emerging
-  - ## Applications
-  - Cybercrime investigation
-  - Virtual world incident response
-  - Blockchain transaction tracing
-  - NFT fraud detection
-  - Enterprise security auditing
+## Technical Details
 
-- ### Provenance
+- **NIST Framework Phases**:
+  - Collection: Identify and acquire data sources
+  - Examination: Assess and extract relevant data
+  - Analysis: Study information to answer investigative questions
+  - Reporting: Document procedures, methods, and findings
+- **D4I Framework**:
+  - Digital forensics for Industrie 4.0 and digitalization
+  - Cyber-Kill-Chain mapping for attack analysis
+  - Enhanced examination and analysis phases
+- **DFIR Integration**:
+  - Digital Forensics + Incident Response combined
+  - Real-time threat mitigation with evidence preservation
+  - Common tools: EDR, SIEM, forensic imaging
+- **Recent Developments (2025–2026)**:
+  - AI/ML for pattern recognition in evidence analysis
+  - Market size estimated at $10–16B in 2026; forecasts to 2032 range from $17–27B at 9–12% CAGR depending on methodology
+  - Metaverse-specific forensic methodologies emerging
+
+## Applications
+
+- Cybercrime investigation
+- Virtual world incident response
+- Blockchain transaction tracing
+- NFT fraud detection
+- Enterprise security auditing
+
+### Provenance
 

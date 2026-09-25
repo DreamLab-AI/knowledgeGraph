@@ -1,76 +1,82 @@
-
 An Inference Engine is a specialised software runtime optimised for executing trained machine learning models in production environments, transforming input data into predictions, classifications, embeddings, or generated content with primary objectives of minimising latency, maximising throughput, and efficiently utilising hardware accelerators such as GPUs, TPUs, and NPUs. Inference engines apply techniques including operator fusion, kernel auto-tuning, mixed-precision quantisation, and memory layout optimisation to close the performance gap between a training-time model representation and optimal hardware utilisation. They typically accept models in portable interchange formats such as ONNX or TensorRT engine plans, decoupling model architecture from the serving runtime, and are deployed within MLOps pipelines to serve AI applications at production scale. Modern inference engines address both traditional deep learning models (CNNs, transformers for classification and detection) and large language model serving, where techniques such as continuous batching, paged KV-cache management, and speculative decoding are critical to economic viability.
 
-- ### Overview
-  - The distinction between training frameworks and inference engines emerged as deep learning models grew too large for interpreted Python dispatch to meet production latency requirements. Early deep learning deployments (2013–2016) used the same Caffe, TensorFlow, or Theano graphs for both training and serving, accepting the overhead of Python interpreter dispatch and unoptimised memory layouts.
-  - NVIDIA TensorRT (2017) was among the first purpose-built inference optimisers: it ingested a trained TensorFlow or Caffe model, applied layer fusion, precision calibration (FP16, INT8), and kernel auto-selection, then compiled a hardware-specific engine plan that executed significantly faster than the original framework with a reduced memory footprint.
-  - The [[ONNX]] (Open Neural Network Exchange) format, introduced by Facebook and Microsoft in 2017, created a model interchange layer that decoupled model definition from inference runtime, enabling competition among engine vendors and hardware providers.
-  - Modern inference engines address two broad problem domains:
-    - **Discriminative and generative deep learning** (CNNs, vision transformers, diffusion models) where batch-compile-and-deploy patterns dominate.
-    - **[[Large Language Model Serving]]** where autoregressive token generation introduces unique challenges of variable sequence length, [[KV Cache]] memory management, and continuous batching.
+### Overview
 
-- ### Key Components and Mechanisms
-  - **Graph Optimisation**
-    - Constant folding: pre-computes fixed subgraphs at compile time to eliminate redundant runtime computation.
-    - Dead code elimination: removes unused operators and tensor paths from the execution graph.
-    - [[Operator Fusion]]: merges sequences of operations (e.g., convolution → batch norm → ReLU) into a single kernel, reducing memory round-trips and kernel launch overhead. This is arguably the single highest-impact optimisation technique in inference engines.
-  - **Precision Reduction and [[Quantisation]]**
-    - Post-training quantisation (PTQ): calibrates weight and activation ranges on a representative dataset, then maps FP32 tensors to FP16 or INT8, recovering accuracy while delivering 2–4× throughput improvement and equivalent memory footprint reduction.
-    - Quantisation-aware training (QAT): simulates quantisation noise during the training forward pass, producing models that tolerate lower-precision arithmetic with minimal accuracy degradation.
-    - INT4 and sub-byte quantisation (GPTQ, AWQ, GGUF formats) are actively used for [[Large Language Model Serving]] on constrained hardware, enabling multi-billion parameter models to run on consumer GPUs or [[Neural Processing Unit]] chips.
-  - **[[Kernel Auto-Tuning]]**
-    - Engines profile candidate [[CUDA]] kernels for each operator given specific input tensor shapes, selecting the fastest validated implementation at compile time. NVIDIA TensorRT, Apache TVM, and Triton Inference Server all employ variants of this approach.
-  - **[[Dynamic Batching]]**
-    - Middleware collects individual inference requests within a configurable time window and assembles them into a single batched tensor, improving [[GPU Computing]] occupancy without increasing per-request latency beyond the batching window threshold.
-  - **Continuous and Paged Batching (LLM-specific)**
-    - [[KV Cache]] management via paged attention (as in vLLM) allocates KV cache memory in fixed-size blocks rather than contiguous sequences, enabling fine-grained sharing, eviction, and reuse across concurrent requests — the critical mechanism enabling high-throughput [[Large Language Model Serving]].
-    - [[Speculative Decoding]] uses a smaller draft model to propose multiple tokens, which the larger target model verifies in parallel, increasing effective token throughput on autoregressive generation without changing output distribution.
+- The distinction between training frameworks and inference engines emerged as deep learning models grew too large for interpreted Python dispatch to meet production latency requirements. Early deep learning deployments (2013–2016) used the same Caffe, TensorFlow, or Theano graphs for both training and serving, accepting the overhead of Python interpreter dispatch and unoptimised memory layouts.
+- NVIDIA TensorRT (2017) was among the first purpose-built inference optimisers: it ingested a trained TensorFlow or Caffe model, applied layer fusion, precision calibration (FP16, INT8), and kernel auto-selection, then compiled a hardware-specific engine plan that executed significantly faster than the original framework with a reduced memory footprint.
+- The [[ONNX]] (Open Neural Network Exchange) format, introduced by Facebook and Microsoft in 2017, created a model interchange layer that decoupled model definition from inference runtime, enabling competition among engine vendors and hardware providers.
+- Modern inference engines address two broad problem domains:
+  - **Discriminative and generative deep learning** (CNNs, vision transformers, diffusion models) where batch-compile-and-deploy patterns dominate.
+  - **[[Large Language Model Serving]]** where autoregressive token generation introduces unique challenges of variable sequence length, [[KV Cache]] memory management, and continuous batching.
 
-- ### Applications and Use Cases
-  - **Conversational AI and [[Large Language Model Serving]]**: Production serving of GPT-class, LLaMA-class, and Gemma-class models at scale using engines such as vLLM, TensorRT-LLM, and SGLang.
-  - **Computer Vision at the Edge**: Deploying object detection (YOLO variants, EfficientDet) and image classification models on mobile devices and IoT hardware via TensorFlow Lite, ONNX Runtime, ExecuTorch (Meta), and Core ML (Apple).
-  - **Autonomous Systems**: Real-time perception pipelines in autonomous vehicles where sub-20ms inference latency over fused camera, LiDAR, and radar inputs is a safety-critical requirement, enabled by engines running on dedicated [[Inference Hardware]] such as NVIDIA Drive Orin and Mobileye EyeQ.
-  - **Recommendation and Ranking**: High-throughput inference over embedding models and ranking networks in online advertising and search, where millions of queries per second drive demand for throughput-optimised deployment on [[GPU Computing]] clusters.
-  - **Medical Imaging and Diagnostics**: Deployment of segmentation and classification models in clinical settings where regulatory requirements demand deterministic, auditable inference pipelines with hardware-specific optimisations.
-  - **[[Real-Time Inference at Edge]]**: On-device voice recognition, face detection, and natural language understanding on [[Neural Processing Unit]] hardware in smartphones, wearables, and smart home devices.
-  - **Multimodal AI**: Emerging unified inference pipelines for vision-language models (LLaVA, Qwen-VL, Gemini-class architectures) that span heterogeneous compute graphs combining vision encoders and autoregressive text transformers.
+### Key Components and Mechanisms
 
-- ### Ecosystem and Major Implementations
-  - **TensorRT** (NVIDIA): Flagship commercial inference optimiser for NVIDIA GPU targets; outputs serialised engine plans with kernel fusion and INT8/FP16 precision.
-  - **TensorRT-LLM** (NVIDIA): TensorRT extension specialised for large language models with paged attention, inflight batching, and quantisation-aware kernels.
-  - **vLLM** (UC Berkeley / open-source): Introduced PagedAttention for [[KV Cache]] management; now a widely adopted production LLM serving framework.
-  - **SGLang**: Structured generation language runtime with RadixAttention for prefix-sharing KV cache, optimised for constrained generation workloads.
-  - **ONNX Runtime** (Microsoft): Cross-platform inference engine accepting [[ONNX]] models, with execution providers for CUDA, TensorRT, DirectML, Core ML, and NNAPI.
-  - **TensorFlow Lite / LiteRT**: Lightweight inference runtime for mobile and embedded targets, with hardware delegate interfaces for [[Neural Processing Unit]] acceleration.
-  - **ExecuTorch** (Meta): PyTorch Mobile successor with XNNPACK, CoreML, and Vulkan backends; designed for heterogeneous edge deployment.
-  - **MLC LLM**: Device-agnostic LLM inference via TVM compilation to WebGPU, CUDA, Metal, and Vulkan backends.
-  - **llama.cpp**: Portable C++ inference engine for quantised LLMs, widely used for local [[Real-Time Inference at Edge]] deployment on CPUs and consumer GPUs.
-  - **Ollama**: User-facing wrapper around llama.cpp providing model management and a REST API for local LLM inference.
-  - **Apache TVM**: Open-source deep learning compiler and inference framework with ML-guided kernel tuning via Ansor/MetaSchedule.
-  - **Triton Inference Server** (NVIDIA): Model-serving middleware layer providing batching, concurrency management, and multi-model ensemble orchestration across TensorRT, ONNX Runtime, and PyTorch backends.
+- **Graph Optimisation**
+  - Constant folding: pre-computes fixed subgraphs at compile time to eliminate redundant runtime computation.
+  - Dead code elimination: removes unused operators and tensor paths from the execution graph.
+  - [[Operator Fusion]]: merges sequences of operations (e.g., convolution → batch norm → ReLU) into a single kernel, reducing memory round-trips and kernel launch overhead. This is arguably the single highest-impact optimisation technique in inference engines.
+- **Precision Reduction and [[Quantisation]]**
+  - Post-training quantisation (PTQ): calibrates weight and activation ranges on a representative dataset, then maps FP32 tensors to FP16 or INT8, recovering accuracy while delivering 2–4× throughput improvement and equivalent memory footprint reduction.
+  - Quantisation-aware training (QAT): simulates quantisation noise during the training forward pass, producing models that tolerate lower-precision arithmetic with minimal accuracy degradation.
+  - INT4 and sub-byte quantisation (GPTQ, AWQ, GGUF formats) are actively used for [[Large Language Model Serving]] on constrained hardware, enabling multi-billion parameter models to run on consumer GPUs or [[Neural Processing Unit]] chips.
+- **[[Kernel Auto-Tuning]]**
+  - Engines profile candidate [[CUDA]] kernels for each operator given specific input tensor shapes, selecting the fastest validated implementation at compile time. NVIDIA TensorRT, Apache TVM, and Triton Inference Server all employ variants of this approach.
+- **[[Dynamic Batching]]**
+  - Middleware collects individual inference requests within a configurable time window and assembles them into a single batched tensor, improving [[GPU Computing]] occupancy without increasing per-request latency beyond the batching window threshold.
+- **Continuous and Paged Batching (LLM-specific)**
+  - [[KV Cache]] management via paged attention (as in vLLM) allocates KV cache memory in fixed-size blocks rather than contiguous sequences, enabling fine-grained sharing, eviction, and reuse across concurrent requests — the critical mechanism enabling high-throughput [[Large Language Model Serving]].
+  - [[Speculative Decoding]] uses a smaller draft model to propose multiple tokens, which the larger target model verifies in parallel, increasing effective token throughput on autoregressive generation without changing output distribution.
 
-- ### Standards and Context
-  - **[[ONNX]]** (Open Neural Network Exchange): The dominant model interchange format that allows inference engines to accept models trained in any major framework (PyTorch, TensorFlow, JAX, PaddlePaddle). ONNX opset versioning governs operator compatibility across engine implementations.
-  - **ONNX Runtime Execution Providers**: A standardised plug-in interface allowing hardware vendors (NVIDIA, Intel, Qualcomm, ARM) to register accelerated kernel implementations without modifying the core engine — an effective de facto standard for hardware abstraction in inference.
-  - **MLPerf Inference Benchmark** (MLCommons): The industry-standard benchmark suite measuring inference engine performance across datacenter (server, offline) and edge scenarios, with defined metrics for throughput, latency, and accuracy at multiple precision levels. Results drive procurement decisions across hyperscaler and enterprise deployments.
-  - **OpenAI-compatible REST API**: An informal but widely adopted API standard (originally from OpenAI) that vLLM, Ollama, LM Studio, and many other inference servers implement, enabling application portability across self-hosted and cloud-hosted inference backends.
-  - **GGUF format** (GPT-Generated Unified Format): A binary model serialisation format used by llama.cpp and compatible engines for storing quantised LLM weights with metadata, increasingly adopted as a distribution format for quantised open-weight models.
+### Applications and Use Cases
 
-- ### Current Landscape (2026)
-  - By 2026 the term "inference engine" in AI most commonly denotes an LLM serving runtime, where vLLM (v0.25.x, Red Hat/community, PagedAttention plus a fully async V1 engine), SGLang (v0.5.x, LMSYS, RadixAttention prefix-tree KV reuse) and NVIDIA's compiled TensorRT-LLM (v1.2.1, April 2026) are the three dominant open engines, alongside LMDeploy and local runtimes such as Ollama and llama.cpp.
-  - Prefill-decode (PD) disaggregation, splitting GPU pools into prefill-optimised and decode-optimised workers connected by a KV-cache transfer layer, moved from research (UCSD/Splitwise, DeepSeek-V3) to the de-facto large-scale architecture, productised in NVIDIA Dynamo, the llm-d project and SGLang during 2025-2026.
-  - Speculative decoding matured into a standard cost lever, with EAGLE-3 / EAGLE 3.1 (self-drafting, no separate model), P-EAGLE/PEARL parallel variants and heterogeneous draft-target vocabulary support landing in vLLM through 2026, typically delivering 2-3x latency reduction.
-  - Independent H100 benchmarks in 2026 show the raw feature gap has largely closed (all three do continuous batching, paged KV cache and FP8): TensorRT-LLM leads peak throughput on dense NVIDIA models by roughly 10-25% but needs ~28 minutes to compile an engine, while SGLang's RadixAttention gives ~29% higher throughput on prefix-heavy Llama 3.1 8B workloads (about 16,200 vs 12,500 tok/s); vLLM remains the broad default with 200-400+ supported architectures and ~60s cold start.
-  - Low-bit quantisation shifted the cost curve: FP8 became the default on Hopper (roughly 30% faster, near-lossless) and NVIDIA Blackwell / NVFP4 kernels (via FlashInfer, CUTLASS, TensorRT-LLM) drove FP4 MoE serving, with vLLM reporting ~25K tokens/sec/GPU on Qwen3.5-class models in August 2026.
-  - Hardware and modality coverage broadened beyond NVIDIA: vLLM added AMD ROCm, Google TPU, Intel Gaudi/XPU and Arm CPU paths, EAGLE3 speculative decoding runs on AMD Instinct, and edge stacks (LiteRT, ExecuTorch, OpenVINO, Qualcomm, Apple MLX) turned on-device inference into an NPU/WebGPU packaging contest.
-  - Open frontier challenges as of 2026 include efficient long-context and 1M-token multimodal serving, sparse/MoE expert-routing and cache-layout pressure from models like DeepSeek, Kimi, GLM and Qwen3.5, dynamic prefill/decode worker rebalancing, and operational complexity of multi-node disaggregated clusters versus simpler single-node deployments.
+- **Conversational AI and [[Large Language Model Serving]]**: Production serving of GPT-class, LLaMA-class, and Gemma-class models at scale using engines such as vLLM, TensorRT-LLM, and SGLang.
+- **Computer Vision at the Edge**: Deploying object detection (YOLO variants, EfficientDet) and image classification models on mobile devices and IoT hardware via TensorFlow Lite, ONNX Runtime, ExecuTorch (Meta), and Core ML (Apple).
+- **Autonomous Systems**: Real-time perception pipelines in autonomous vehicles where sub-20ms inference latency over fused camera, LiDAR, and radar inputs is a safety-critical requirement, enabled by engines running on dedicated [[Inference Hardware]] such as NVIDIA Drive Orin and Mobileye EyeQ.
+- **Recommendation and Ranking**: High-throughput inference over embedding models and ranking networks in online advertising and search, where millions of queries per second drive demand for throughput-optimised deployment on [[GPU Computing]] clusters.
+- **Medical Imaging and Diagnostics**: Deployment of segmentation and classification models in clinical settings where regulatory requirements demand deterministic, auditable inference pipelines with hardware-specific optimisations.
+- **[[Real-Time Inference at Edge]]**: On-device voice recognition, face detection, and natural language understanding on [[Neural Processing Unit]] hardware in smartphones, wearables, and smart home devices.
+- **Multimodal AI**: Emerging unified inference pipelines for vision-language models (LLaVA, Qwen-VL, Gemini-class architectures) that span heterogeneous compute graphs combining vision encoders and autoregressive text transformers.
 
-- ### References
-  - 1. vLLM Project (2026). vLLM Blog — release and engineering updates (Qwen3.5 25K TPS/GPU, disaggregated serving, EAGLE 3.1, day-0 model support). https://vllm-project.github.io/
-  - 2. Packet.ai (2026). SGLang vs vLLM vs TensorRT-LLM: Decision Guide 2026. https://packet.ai/blog/sglang-vs-vllm-vs-tensorrt-llm
-  - 3. zhuoqidev (2026). LLM Inference Engine Selection: A 2026 Map from Local Single-GPU to PD Disaggregation. https://zhuoqidev.com/en/posts/llm-inference-engine-selection/
-  - 4. Red Hat Developers (2026). Optimizing distributed AI inference: Advanced deployment patterns. https://developers.redhat.com/articles/2026/06/24/optimizing-distributed-ai-inference-advanced-deployment-patterns
-  - 5. MarkTechPost (2025). Comparing the Top 6 Inference Runtimes for LLM Serving in 2025. https://www.marktechpost.com/2025/11/07/comparing-the-top-6-inference-runtimes-for-llm-serving-in-2025/
+### Ecosystem and Major Implementations
 
-- ### Provenance
+- **TensorRT** (NVIDIA): Flagship commercial inference optimiser for NVIDIA GPU targets; outputs serialised engine plans with kernel fusion and INT8/FP16 precision.
+- **TensorRT-LLM** (NVIDIA): TensorRT extension specialised for large language models with paged attention, inflight batching, and quantisation-aware kernels.
+- **vLLM** (UC Berkeley / open-source): Introduced PagedAttention for [[KV Cache]] management; now a widely adopted production LLM serving framework.
+- **SGLang**: Structured generation language runtime with RadixAttention for prefix-sharing KV cache, optimised for constrained generation workloads.
+- **ONNX Runtime** (Microsoft): Cross-platform inference engine accepting [[ONNX]] models, with execution providers for CUDA, TensorRT, DirectML, Core ML, and NNAPI.
+- **TensorFlow Lite / LiteRT**: Lightweight inference runtime for mobile and embedded targets, with hardware delegate interfaces for [[Neural Processing Unit]] acceleration.
+- **ExecuTorch** (Meta): PyTorch Mobile successor with XNNPACK, CoreML, and Vulkan backends; designed for heterogeneous edge deployment.
+- **MLC LLM**: Device-agnostic LLM inference via TVM compilation to WebGPU, CUDA, Metal, and Vulkan backends.
+- **llama.cpp**: Portable C++ inference engine for quantised LLMs, widely used for local [[Real-Time Inference at Edge]] deployment on CPUs and consumer GPUs.
+- **Ollama**: User-facing wrapper around llama.cpp providing model management and a REST API for local LLM inference.
+- **Apache TVM**: Open-source deep learning compiler and inference framework with ML-guided kernel tuning via Ansor/MetaSchedule.
+- **Triton Inference Server** (NVIDIA): Model-serving middleware layer providing batching, concurrency management, and multi-model ensemble orchestration across TensorRT, ONNX Runtime, and PyTorch backends.
+
+### Standards and Context
+
+- **[[ONNX]]** (Open Neural Network Exchange): The dominant model interchange format that allows inference engines to accept models trained in any major framework (PyTorch, TensorFlow, JAX, PaddlePaddle). ONNX opset versioning governs operator compatibility across engine implementations.
+- **ONNX Runtime Execution Providers**: A standardised plug-in interface allowing hardware vendors (NVIDIA, Intel, Qualcomm, ARM) to register accelerated kernel implementations without modifying the core engine — an effective de facto standard for hardware abstraction in inference.
+- **MLPerf Inference Benchmark** (MLCommons): The industry-standard benchmark suite measuring inference engine performance across datacenter (server, offline) and edge scenarios, with defined metrics for throughput, latency, and accuracy at multiple precision levels. Results drive procurement decisions across hyperscaler and enterprise deployments.
+- **OpenAI-compatible REST API**: An informal but widely adopted API standard (originally from OpenAI) that vLLM, Ollama, LM Studio, and many other inference servers implement, enabling application portability across self-hosted and cloud-hosted inference backends.
+- **GGUF format** (GPT-Generated Unified Format): A binary model serialisation format used by llama.cpp and compatible engines for storing quantised LLM weights with metadata, increasingly adopted as a distribution format for quantised open-weight models.
+
+### Current Landscape (2026)
+
+- By 2026 the term "inference engine" in AI most commonly denotes an LLM serving runtime, where vLLM (v0.25.x, Red Hat/community, PagedAttention plus a fully async V1 engine), SGLang (v0.5.x, LMSYS, RadixAttention prefix-tree KV reuse) and NVIDIA's compiled TensorRT-LLM (v1.2.1, April 2026) are the three dominant open engines, alongside LMDeploy and local runtimes such as Ollama and llama.cpp.
+- Prefill-decode (PD) disaggregation, splitting GPU pools into prefill-optimised and decode-optimised workers connected by a KV-cache transfer layer, moved from research (UCSD/Splitwise, DeepSeek-V3) to the de-facto large-scale architecture, productised in NVIDIA Dynamo, the llm-d project and SGLang during 2025-2026.
+- Speculative decoding matured into a standard cost lever, with EAGLE-3 / EAGLE 3.1 (self-drafting, no separate model), P-EAGLE/PEARL parallel variants and heterogeneous draft-target vocabulary support landing in vLLM through 2026, typically delivering 2-3x latency reduction.
+- Independent H100 benchmarks in 2026 show the raw feature gap has largely closed (all three do continuous batching, paged KV cache and FP8): TensorRT-LLM leads peak throughput on dense NVIDIA models by roughly 10-25% but needs ~28 minutes to compile an engine, while SGLang's RadixAttention gives ~29% higher throughput on prefix-heavy Llama 3.1 8B workloads (about 16,200 vs 12,500 tok/s); vLLM remains the broad default with 200-400+ supported architectures and ~60s cold start.
+- Low-bit quantisation shifted the cost curve: FP8 became the default on Hopper (roughly 30% faster, near-lossless) and NVIDIA Blackwell / NVFP4 kernels (via FlashInfer, CUTLASS, TensorRT-LLM) drove FP4 MoE serving, with vLLM reporting ~25K tokens/sec/GPU on Qwen3.5-class models in August 2026.
+- Hardware and modality coverage broadened beyond NVIDIA: vLLM added AMD ROCm, Google TPU, Intel Gaudi/XPU and Arm CPU paths, EAGLE3 speculative decoding runs on AMD Instinct, and edge stacks (LiteRT, ExecuTorch, OpenVINO, Qualcomm, Apple MLX) turned on-device inference into an NPU/WebGPU packaging contest.
+- Open frontier challenges as of 2026 include efficient long-context and 1M-token multimodal serving, sparse/MoE expert-routing and cache-layout pressure from models like DeepSeek, Kimi, GLM and Qwen3.5, dynamic prefill/decode worker rebalancing, and operational complexity of multi-node disaggregated clusters versus simpler single-node deployments.
+
+### References
+
+- 1. vLLM Project (2026). vLLM Blog — release and engineering updates (Qwen3.5 25K TPS/GPU, disaggregated serving, EAGLE 3.1, day-0 model support). https://vllm-project.github.io/
+- 2. Packet.ai (2026). SGLang vs vLLM vs TensorRT-LLM: Decision Guide 2026. https://packet.ai/blog/sglang-vs-vllm-vs-tensorrt-llm
+- 3. zhuoqidev (2026). LLM Inference Engine Selection: A 2026 Map from Local Single-GPU to PD Disaggregation. https://zhuoqidev.com/en/posts/llm-inference-engine-selection/
+- 4. Red Hat Developers (2026). Optimizing distributed AI inference: Advanced deployment patterns. https://developers.redhat.com/articles/2026/06/24/optimizing-distributed-ai-inference-advanced-deployment-patterns
+- 5. MarkTechPost (2025). Comparing the Top 6 Inference Runtimes for LLM Serving in 2025. https://www.marktechpost.com/2025/11/07/comparing-the-top-6-inference-runtimes-for-llm-serving-in-2025/
+
+### Provenance
 

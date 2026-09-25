@@ -1,16 +1,16 @@
-
 Language translation is the automated or human-assisted conversion of text or speech from a source language into a target language whilst preserving semantic meaning, tone, and cultural context. Modern neural machine translation systems, built on transformer architectures and large language models, enable real-time multilingual communication across distributed collaboration platforms and metaverse environments.
 
-- ### Semantic Classification
+### Semantic Classification
 
-- ### Content
+### Content
 
-  ## Overview
+## Overview
 
-  Language Translation represents an abstract concept in the telecollaboration ontology hierarchy.
+Language Translation represents an abstract concept in the telecollaboration ontology hierarchy.
 
-  #### Related Concepts
-  - [[owl:Thing]]
+#### Related Concepts
 
-- ### Provenance
+- [[owl:Thing]]
+
+### Provenance
 

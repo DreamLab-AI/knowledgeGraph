@@ -1,174 +1,180 @@
-
 Autonomous driving is the technical capability enabling a vehicle to perceive its environment, predict the behaviour of surrounding agents, plan a safe trajectory, and execute actuator commands without direct human intervention. The system architecture decomposes into perception (camera, Lidar, radar fusion), localisation (HD map matching, SLAM), prediction (probabilistic motion modelling), planning (route, behaviour, and motion planning layers), and control (longitudinal and lateral actuation). Safety assurance draws on formal verification, simulation, and real-world validation mileage, with regulatory oversight governed by frameworks such as SAE J3016, ISO 26262, and UN ECE WP.29. The field bridges robotics, machine learning, embedded systems, and transport infrastructure.
 
-- ### Semantic Classification
+### Semantic Classification
 
-- ### Content
-  ## Compositional Relationships (Components)
-      SubClassOf(ai:AutonomousDriving
-        ObjectSomeValuesFrom(ai:hasPart ai:AutonomousDrivingPerception))
-      SubClassOf(ai:AutonomousDriving
-        ObjectSomeValuesFrom(ai:hasPart ai:MotionPlanning))
-      SubClassOf(ai:AutonomousDriving
-        ObjectSomeValuesFrom(ai:hasPart ai:SimultaneousLocalisationAndMapping))
-      SubClassOf(ai:AutonomousDriving
-        ObjectSomeValuesFrom(ai:hasPart ai:BehaviourPrediction))
-      SubClassOf(ai:AutonomousDriving
-        ObjectSomeValuesFrom(ai:hasPart ai:VehicleControl))
-      SubClassOf(ai:AutonomousDriving
-        ObjectSomeValuesFrom(ai:hasPart ai:PathPlanning))
-      SubClassOf(ai:AutonomousDriving
-        ObjectSomeValuesFrom(ai:hasPart ai:HDMaps))
-  ## Dependency Relationships
-      SubClassOf(ai:AutonomousDriving
-        ObjectSomeValuesFrom(ai:requires ai:ComputerVision))
-      SubClassOf(ai:AutonomousDriving
-        ObjectSomeValuesFrom(ai:requires ai:SensorFusion))
-      SubClassOf(ai:AutonomousDriving
-        ObjectSomeValuesFrom(ai:requires ai:Lidar))
-      SubClassOf(ai:AutonomousDriving
-        ObjectSomeValuesFrom(ai:requires ai:FunctionalSafety))
-      SubClassOf(ai:AutonomousDriving
-        ObjectSomeValuesFrom(ai:requires ai:EdgeComputing))
-      SubClassOf(ai:AutonomousDriving
-        ObjectSomeValuesFrom(ai:requires ai:GNSS))
-  ## Capability Relationships
-      SubClassOf(ai:AutonomousDriving
-        ObjectSomeValuesFrom(ai:enables ai:AutonomousVehicle))
-      SubClassOf(ai:AutonomousDriving
-        ObjectSomeValuesFrom(ai:enables ai:Robotaxi))
-      SubClassOf(ai:AutonomousDriving
-        ObjectSomeValuesFrom(ai:enables ai:LastMileDelivery))
-      SubClassOf(ai:AutonomousDriving
-        ObjectSomeValuesFrom(ai:enables ai:SmartCityInfrastructure))
-      SubClassOf(ai:AutonomousDriving
-        ObjectSomeValuesFrom(ai:enables ai:AutonomousFreight))
-  ## Implementation Relationships
-      SubClassOf(ai:AutonomousDriving
-        ObjectSomeValuesFrom(ai:implements ai:SAEJ3016))
-      SubClassOf(ai:AutonomousDriving
-        ObjectSomeValuesFrom(ai:implements ai:OccupancyPrediction))
-      SubClassOf(ai:AutonomousDriving
-        ObjectSomeValuesFrom(ai:implements ai:EndToEndDriving))
-      SubClassOf(ai:AutonomousDriving
-        ObjectSomeValuesFrom(ai:implements ai:SensorFusion))
-  ## Reduction Relationships
-      SubClassOf(ai:AutonomousDriving
-        ObjectSomeValuesFrom(ai:reducesTo ai:Robotics))
-      SubClassOf(ai:AutonomousDriving
-        ObjectSomeValuesFrom(ai:reducesTo ai:AIApplication))
-  ## Association Relationships
-      SubClassOf(ai:AutonomousDriving
-        ObjectSomeValuesFrom(ai:contrasts ai:AdvancedDriverAssistanceSystems))
-      SubClassOf(ai:AutonomousDriving
-        ObjectSomeValuesFrom(ai:contrasts ai:Teleoperation))
-      SubClassOf(ai:AutonomousDriving
-        ObjectSomeValuesFrom(ai:relatedTo ai:DigitalTwin))
-      SubClassOf(ai:AutonomousDriving
-        ObjectSomeValuesFrom(ai:relatedTo ai:SafetyCriticalSystems))
-      SubClassOf(ai:AutonomousDriving
-        ObjectSomeValuesFrom(ai:bridgesTo ai:SmartCityInfrastructure))
-      SubClassOf(ai:AutonomousDriving
-        ObjectSomeValuesFrom(ai:bridgesTo ai:5GNetworks))
-      SubClassOf(ai:AutonomousDriving
-        ObjectSomeValuesFrom(ai:standardizedBy ai:SAEJ3016))
-      SubClassOf(ai:AutonomousDriving
-        ObjectSomeValuesFrom(ai:standardizedBy ai:ISO26262))
-      SubClassOf(ai:AutonomousDriving
-        ObjectSomeValuesFrom(ai:standardizedBy ai:ISOAE21448))
-      SubClassOf(ai:AutonomousDriving
-        ObjectSomeValuesFrom(ai:supports ai:ZeroEmissionVehicles))
-      SubClassOf(ai:AutonomousDriving
-        ObjectSomeValuesFrom(ai:supports ai:AccessibleMobility))
+### Content
 
-  ## About
+## Compositional Relationships (Components)
+    SubClassOf(ai:AutonomousDriving
+      ObjectSomeValuesFrom(ai:hasPart ai:AutonomousDrivingPerception))
+    SubClassOf(ai:AutonomousDriving
+      ObjectSomeValuesFrom(ai:hasPart ai:MotionPlanning))
+    SubClassOf(ai:AutonomousDriving
+      ObjectSomeValuesFrom(ai:hasPart ai:SimultaneousLocalisationAndMapping))
+    SubClassOf(ai:AutonomousDriving
+      ObjectSomeValuesFrom(ai:hasPart ai:BehaviourPrediction))
+    SubClassOf(ai:AutonomousDriving
+      ObjectSomeValuesFrom(ai:hasPart ai:VehicleControl))
+    SubClassOf(ai:AutonomousDriving
+      ObjectSomeValuesFrom(ai:hasPart ai:PathPlanning))
+    SubClassOf(ai:AutonomousDriving
+      ObjectSomeValuesFrom(ai:hasPart ai:HDMaps))
+## Dependency Relationships
+    SubClassOf(ai:AutonomousDriving
+      ObjectSomeValuesFrom(ai:requires ai:ComputerVision))
+    SubClassOf(ai:AutonomousDriving
+      ObjectSomeValuesFrom(ai:requires ai:SensorFusion))
+    SubClassOf(ai:AutonomousDriving
+      ObjectSomeValuesFrom(ai:requires ai:Lidar))
+    SubClassOf(ai:AutonomousDriving
+      ObjectSomeValuesFrom(ai:requires ai:FunctionalSafety))
+    SubClassOf(ai:AutonomousDriving
+      ObjectSomeValuesFrom(ai:requires ai:EdgeComputing))
+    SubClassOf(ai:AutonomousDriving
+      ObjectSomeValuesFrom(ai:requires ai:GNSS))
+## Capability Relationships
+    SubClassOf(ai:AutonomousDriving
+      ObjectSomeValuesFrom(ai:enables ai:AutonomousVehicle))
+    SubClassOf(ai:AutonomousDriving
+      ObjectSomeValuesFrom(ai:enables ai:Robotaxi))
+    SubClassOf(ai:AutonomousDriving
+      ObjectSomeValuesFrom(ai:enables ai:LastMileDelivery))
+    SubClassOf(ai:AutonomousDriving
+      ObjectSomeValuesFrom(ai:enables ai:SmartCityInfrastructure))
+    SubClassOf(ai:AutonomousDriving
+      ObjectSomeValuesFrom(ai:enables ai:AutonomousFreight))
+## Implementation Relationships
+    SubClassOf(ai:AutonomousDriving
+      ObjectSomeValuesFrom(ai:implements ai:SAEJ3016))
+    SubClassOf(ai:AutonomousDriving
+      ObjectSomeValuesFrom(ai:implements ai:OccupancyPrediction))
+    SubClassOf(ai:AutonomousDriving
+      ObjectSomeValuesFrom(ai:implements ai:EndToEndDriving))
+    SubClassOf(ai:AutonomousDriving
+      ObjectSomeValuesFrom(ai:implements ai:SensorFusion))
+## Reduction Relationships
+    SubClassOf(ai:AutonomousDriving
+      ObjectSomeValuesFrom(ai:reducesTo ai:Robotics))
+    SubClassOf(ai:AutonomousDriving
+      ObjectSomeValuesFrom(ai:reducesTo ai:AIApplication))
+## Association Relationships
+    SubClassOf(ai:AutonomousDriving
+      ObjectSomeValuesFrom(ai:contrasts ai:AdvancedDriverAssistanceSystems))
+    SubClassOf(ai:AutonomousDriving
+      ObjectSomeValuesFrom(ai:contrasts ai:Teleoperation))
+    SubClassOf(ai:AutonomousDriving
+      ObjectSomeValuesFrom(ai:relatedTo ai:DigitalTwin))
+    SubClassOf(ai:AutonomousDriving
+      ObjectSomeValuesFrom(ai:relatedTo ai:SafetyCriticalSystems))
+    SubClassOf(ai:AutonomousDriving
+      ObjectSomeValuesFrom(ai:bridgesTo ai:SmartCityInfrastructure))
+    SubClassOf(ai:AutonomousDriving
+      ObjectSomeValuesFrom(ai:bridgesTo ai:5GNetworks))
+    SubClassOf(ai:AutonomousDriving
+      ObjectSomeValuesFrom(ai:standardizedBy ai:SAEJ3016))
+    SubClassOf(ai:AutonomousDriving
+      ObjectSomeValuesFrom(ai:standardizedBy ai:ISO26262))
+    SubClassOf(ai:AutonomousDriving
+      ObjectSomeValuesFrom(ai:standardizedBy ai:ISOAE21448))
+    SubClassOf(ai:AutonomousDriving
+      ObjectSomeValuesFrom(ai:supports ai:ZeroEmissionVehicles))
+    SubClassOf(ai:AutonomousDriving
+      ObjectSomeValuesFrom(ai:supports ai:AccessibleMobility))
 
-  Autonomous driving — the aspiration of building a machine that can navigate public roads without human intervention — has been a defining challenge of applied [[Artificial Intelligence]] and [[Robotics]] for four decades. Early academic roots trace to the DARPA Autonomous Land Vehicle programme of the mid-1980s, which produced several ground-breaking demonstrations of camera-guided vehicle navigation at low speeds on structured roads using rule-based [[Computer Vision]] and expert systems. The pivotal ALVINN system (Pomerleau, Carnegie Mellon University, 1989) used a shallow [[Neural Network]] trained end-to-end on human-driving data to predict steering angles from camera images — a paradigm that would be rediscovered and scaled dramatically three decades later by Tesla's FSD v12 and Wayve's embodied AI. These early systems were fragile: ALVINN transferred poorly to novel road geometries, had no [[Object Detection]] capability beyond learned steering, and required continuous human monitoring. Nevertheless, ALVINN established the theoretical template of learned sensorimotor policies from [[Training Data]] that underpins every modern end-to-end [[Autonomous Driving]] system.
+## About
 
-  The DARPA Grand Challenge (2004–2005) and Urban Challenge (2007) catalysed a step-change in AV capability by providing competitive milestones and forcing teams to integrate multiple sensing modalities with principled probabilistic representations. Stanley (Stanford, Thrun et al., 2005) combined stereo cameras with five planar LIDAR units, GPS, and a learned terrain classifier trained on [[Training Data]] from human-driven test laps to navigate 211 km of Mojave Desert terrain — demonstrating for the first time that a robotic vehicle could complete a long-range navigation task in an uncontrolled natural environment. Boss (CMU, Urmson et al., 2007) achieved L4-equivalent performance in the Urban Challenge's simulated city, handling traffic, obeying stop signs, merging, and avoiding both static and dynamic obstacles — demonstrating that the full [[Autonomous Driving]] stack from [[Autonomous Driving Perception]] to [[Motion Planning]] to actuation could be integrated at road speed. These competitions established the modular sense-plan-act architecture — with distinct [[Autonomous Driving Perception]], localisation ([[Simultaneous Localisation and Mapping]]), [[Behaviour Prediction]], [[Motion Planning]], and [[Vehicle Control]] subsystems — that became the industrial standard and underpinned the founding of Waymo (Google Self-Driving Car Project, 2009), Uber Advanced Technologies Group, Cruise, Mobileye, nuTonomy, and dozens of startups.
+Autonomous driving — the aspiration of building a machine that can navigate public roads without human intervention — has been a defining challenge of applied [[Artificial Intelligence]] and [[Robotics]] for four decades. Early academic roots trace to the DARPA Autonomous Land Vehicle programme of the mid-1980s, which produced several ground-breaking demonstrations of camera-guided vehicle navigation at low speeds on structured roads using rule-based [[Computer Vision]] and expert systems. The pivotal ALVINN system (Pomerleau, Carnegie Mellon University, 1989) used a shallow [[Neural Network]] trained end-to-end on human-driving data to predict steering angles from camera images — a paradigm that would be rediscovered and scaled dramatically three decades later by Tesla's FSD v12 and Wayve's embodied AI. These early systems were fragile: ALVINN transferred poorly to novel road geometries, had no [[Object Detection]] capability beyond learned steering, and required continuous human monitoring. Nevertheless, ALVINN established the theoretical template of learned sensorimotor policies from [[Training Data]] that underpins every modern end-to-end [[Autonomous Driving]] system.
 
-  The [[Deep Learning]] era transformed AV development after 2012. Deep [[Convolutional Neural Network]] architectures supplanted handcrafted feature engineering for [[Autonomous Driving Perception]], and from 2017 onward large-scale annotated driving datasets (KITTI, nuScenes, Waymo Open Dataset, Argoverse) provided [[Training Data]] at the scale required for safe real-world deployment. The [[Attention Mechanism]] and [[Transformer Architecture]] enabled multi-modal [[Sensor Fusion]] architectures that jointly process camera and [[Lidar]] features in a unified Bird's Eye View space, dramatically improving 3D [[Object Detection]], lane-level [[HD Maps]] prediction, and trajectory [[Behaviour Prediction]] accuracy. [[Reinforcement Learning]] from demonstrations proved effective for both [[Motion Planning]] policy learning and for fine-tuning end-to-end networks beyond the performance achievable by pure imitation of human data.
+The DARPA Grand Challenge (2004–2005) and Urban Challenge (2007) catalysed a step-change in AV capability by providing competitive milestones and forcing teams to integrate multiple sensing modalities with principled probabilistic representations. Stanley (Stanford, Thrun et al., 2005) combined stereo cameras with five planar LIDAR units, GPS, and a learned terrain classifier trained on [[Training Data]] from human-driven test laps to navigate 211 km of Mojave Desert terrain — demonstrating for the first time that a robotic vehicle could complete a long-range navigation task in an uncontrolled natural environment. Boss (CMU, Urmson et al., 2007) achieved L4-equivalent performance in the Urban Challenge's simulated city, handling traffic, obeying stop signs, merging, and avoiding both static and dynamic obstacles — demonstrating that the full [[Autonomous Driving]] stack from [[Autonomous Driving Perception]] to [[Motion Planning]] to actuation could be integrated at road speed. These competitions established the modular sense-plan-act architecture — with distinct [[Autonomous Driving Perception]], localisation ([[Simultaneous Localisation and Mapping]]), [[Behaviour Prediction]], [[Motion Planning]], and [[Vehicle Control]] subsystems — that became the industrial standard and underpinned the founding of Waymo (Google Self-Driving Car Project, 2009), Uber Advanced Technologies Group, Cruise, Mobileye, nuTonomy, and dozens of startups.
 
-  The shift from modular to end-to-end [[Autonomous Driving]] architectures — where a single [[Neural Network]] maps raw sensor data to driving commands without explicit intermediate stages — represents the most significant architectural transition since the deep learning revolution. End-to-end systems trained with [[Reinforcement Learning]] or imitation learning on billions of kilometres of human driving video can discover representations that no hand-designed [[Autonomous Driving Perception]] pipeline would produce, and they generalise differently across the [[Long-Tail Edge Cases]] distribution. Tesla's FSD v12 (2024) was the first mass-deployed end-to-end system; Wayve's AV2.0 generalises the approach to [[Embodied AI]] with multimodal reasoning. Whether end-to-end systems can achieve the formal safety certification required by [[ISO 26262]] for L4+ remains the open regulatory question of 2026.
+The [[Deep Learning]] era transformed AV development after 2012. Deep [[Convolutional Neural Network]] architectures supplanted handcrafted feature engineering for [[Autonomous Driving Perception]], and from 2017 onward large-scale annotated driving datasets (KITTI, nuScenes, Waymo Open Dataset, Argoverse) provided [[Training Data]] at the scale required for safe real-world deployment. The [[Attention Mechanism]] and [[Transformer Architecture]] enabled multi-modal [[Sensor Fusion]] architectures that jointly process camera and [[Lidar]] features in a unified Bird's Eye View space, dramatically improving 3D [[Object Detection]], lane-level [[HD Maps]] prediction, and trajectory [[Behaviour Prediction]] accuracy. [[Reinforcement Learning]] from demonstrations proved effective for both [[Motion Planning]] policy learning and for fine-tuning end-to-end networks beyond the performance achievable by pure imitation of human data.
 
-  As of mid-2026, the field stands at an inflection point: Waymo operates a genuine commercial [[Robotaxi]] service with 3,700 vehicles providing 500,000 rides per week across ten US cities; Tesla FSD v14 is a supervised end-to-end system in mass-market deployment covering Europe and North America; Wayve, Aurora, and Kodiak are expanding [[Autonomous Freight]] trials; Chinese players (Baidu Apollo, DiDi, WeRide, AutoX) are operating commercial robotaxi services in multiple cities; and the UK's Automated Vehicles Act 2024 has enabled the first commercial driverless trials on public roads from Spring 2026. The global [[Autonomous Driving]] market revenue is projected at USD 627 billion in 2026, rising toward USD 1 trillion by 2028, though current robotaxi operating costs of approximately $5/km must fall to sub-$1/km for widespread economic viability.
+The shift from modular to end-to-end [[Autonomous Driving]] architectures — where a single [[Neural Network]] maps raw sensor data to driving commands without explicit intermediate stages — represents the most significant architectural transition since the deep learning revolution. End-to-end systems trained with [[Reinforcement Learning]] or imitation learning on billions of kilometres of human driving video can discover representations that no hand-designed [[Autonomous Driving Perception]] pipeline would produce, and they generalise differently across the [[Long-Tail Edge Cases]] distribution. Tesla's FSD v12 (2024) was the first mass-deployed end-to-end system; Wayve's AV2.0 generalises the approach to [[Embodied AI]] with multimodal reasoning. Whether end-to-end systems can achieve the formal safety certification required by [[ISO 26262]] for L4+ remains the open regulatory question of 2026.
 
-  ## Key Terminology
+As of mid-2026, the field stands at an inflection point: Waymo operates a genuine commercial [[Robotaxi]] service with 3,700 vehicles providing 500,000 rides per week across ten US cities; Tesla FSD v14 is a supervised end-to-end system in mass-market deployment covering Europe and North America; Wayve, Aurora, and Kodiak are expanding [[Autonomous Freight]] trials; Chinese players (Baidu Apollo, DiDi, WeRide, AutoX) are operating commercial robotaxi services in multiple cities; and the UK's Automated Vehicles Act 2024 has enabled the first commercial driverless trials on public roads from Spring 2026. The global [[Autonomous Driving]] market revenue is projected at USD 627 billion in 2026, rising toward USD 1 trillion by 2028, though current robotaxi operating costs of approximately $5/km must fall to sub-$1/km for widespread economic viability.
 
-  - **Operational Design Domain (ODD)**: the formally specified set of environmental and operational conditions (geography, weather, speed range, time of day, road class) within which a given [[Autonomous Driving]] system is designed and certified to operate; central to L3/L4 type-approval under [[SAE J3016]] and [[UN ECE WP.29]]
-  - **Minimal Risk Condition (MRC)**: the fail-safe state — typically "slow down and stop safely" — that an [[Autonomous Driving]] system must achieve when it cannot continue operating within its ODD; required by all L3+ regulatory frameworks
-  - **Authorised Self-Driving Entity (ASDE)**: the new legal category introduced by the UK Automated Vehicles Act 2024; the ASDE is responsible for ensuring the vehicle's [[Autonomous Driving]] system drives safely and legally throughout its operational lifetime, shifting liability from the vehicle owner/user to the technology developer
-  - **No User In Charge (NUiC)**: the UK AV Act operating mode equivalent to SAE L4–L5; the vehicle can operate fully driverlessly without any human occupant being responsible for the driving task
-  - **End-to-end [[Autonomous Driving]]**: a system architecture where a single [[Neural Network]] trained on [[Training Data]] maps raw sensor inputs directly to actuator commands (steering, throttle, brake), bypassing explicit [[Autonomous Driving Perception]], [[Behaviour Prediction]], and [[Motion Planning]] modules; pioneered in production by Tesla FSD v12
-  - **Sim-to-real gap**: the distributional difference between simulated driving environments used for [[Reinforcement Learning]] and training data generation, and real-world driving conditions; a major challenge for validating [[Autonomous Driving]] systems trained in simulation
-  - **Safety case**: a structured argument with supporting evidence that a system is acceptably safe for a specified application in a specified environment; required by [[ISO 26262]] and [[ISO/SAE PAS 21448]] for AV [[Autonomous Driving]] systems, building on [[Functional Safety]] assessment
+## Key Terminology
+
+- **Operational Design Domain (ODD)**: the formally specified set of environmental and operational conditions (geography, weather, speed range, time of day, road class) within which a given [[Autonomous Driving]] system is designed and certified to operate; central to L3/L4 type-approval under [[SAE J3016]] and [[UN ECE WP.29]]
+- **Minimal Risk Condition (MRC)**: the fail-safe state — typically "slow down and stop safely" — that an [[Autonomous Driving]] system must achieve when it cannot continue operating within its ODD; required by all L3+ regulatory frameworks
+- **Authorised Self-Driving Entity (ASDE)**: the new legal category introduced by the UK Automated Vehicles Act 2024; the ASDE is responsible for ensuring the vehicle's [[Autonomous Driving]] system drives safely and legally throughout its operational lifetime, shifting liability from the vehicle owner/user to the technology developer
+- **No User In Charge (NUiC)**: the UK AV Act operating mode equivalent to SAE L4–L5; the vehicle can operate fully driverlessly without any human occupant being responsible for the driving task
+- **End-to-end [[Autonomous Driving]]**: a system architecture where a single [[Neural Network]] trained on [[Training Data]] maps raw sensor inputs directly to actuator commands (steering, throttle, brake), bypassing explicit [[Autonomous Driving Perception]], [[Behaviour Prediction]], and [[Motion Planning]] modules; pioneered in production by Tesla FSD v12
+- **Sim-to-real gap**: the distributional difference between simulated driving environments used for [[Reinforcement Learning]] and training data generation, and real-world driving conditions; a major challenge for validating [[Autonomous Driving]] systems trained in simulation
+- **Safety case**: a structured argument with supporting evidence that a system is acceptably safe for a specified application in a specified environment; required by [[ISO 26262]] and [[ISO/SAE PAS 21448]] for AV [[Autonomous Driving]] systems, building on [[Functional Safety]] assessment
 
   ## Key Components
 
   **Perception** — builds a real-time model of the environment from sensor data. [[Autonomous Driving Perception]] is the safety-critical subsystem that transforms raw sensor streams into structured environmental representations. See [[Autonomous Driving Perception]] for full treatment. Core sensor modalities and their roles:
-  - [[Computer Vision]]: [[Semantic Segmentation]], [[Object Detection]], [[Depth Estimation]], lane detection, traffic sign/signal recognition — the primary texture and semantic information source
-  - [[Lidar]]: 3D [[Point Cloud]] generation for precise range measurements at up to 200m; robust to lighting variation; basis for occupancy prediction and metric-scale [[Simultaneous Localisation and Mapping]]
-  - Radar: long-range velocity estimation via Doppler effect; resilient to fog, rain, and dust; 4D imaging radar adding elevation resolution approaches [[Lidar]] spatial quality
-  - Cameras: rich texture, colour, and semantic information; cost-effective at sub-$100/unit; sensitive to illumination but cheapest high-information-density modality; used in 6–8 camera surround configurations
-  - [[Sensor Fusion]]: combines camera, [[Lidar]], and radar modalities in a unified Bird's Eye View (BEV) grid using [[Transformer Architecture]]-based cross-attention (BEVFormer) or lifted image [[Feature Extraction]] projection (Lift-Splat-Shoot); BEVFusion achieves new state-of-the-art by concatenating camera and [[Lidar]] BEV features in a shared channel space
+
+- [[Computer Vision]]: [[Semantic Segmentation]], [[Object Detection]], [[Depth Estimation]], lane detection, traffic sign/signal recognition — the primary texture and semantic information source
+- [[Lidar]]: 3D [[Point Cloud]] generation for precise range measurements at up to 200m; robust to lighting variation; basis for occupancy prediction and metric-scale [[Simultaneous Localisation and Mapping]]
+- Radar: long-range velocity estimation via Doppler effect; resilient to fog, rain, and dust; 4D imaging radar adding elevation resolution approaches [[Lidar]] spatial quality
+- Cameras: rich texture, colour, and semantic information; cost-effective at sub-$100/unit; sensitive to illumination but cheapest high-information-density modality; used in 6–8 camera surround configurations
+- [[Sensor Fusion]]: combines camera, [[Lidar]], and radar modalities in a unified Bird's Eye View (BEV) grid using [[Transformer Architecture]]-based cross-attention (BEVFormer) or lifted image [[Feature Extraction]] projection (Lift-Splat-Shoot); BEVFusion achieves new state-of-the-art by concatenating camera and [[Lidar]] BEV features in a shared channel space
 
   **Localisation and Mapping**
-  - [[Simultaneous Localisation and Mapping]] (SLAM): real-time map construction and vehicle pose estimation in unknown environments; foundational to [[Autonomous Driving]] since the Stanford and CMU DARPA Challenge systems; key algorithms include Extended Kalman Filter SLAM, particle filter FastSLAM, and [[Deep Learning]]-augmented variants
-  - [[HD Maps]]: centimetre-level prior maps encoding lane geometry, speed limits, traffic signs, crosswalk positions, and road topology; consumed by localisation modules for absolute pose fixing via [[Lidar]]-to-map Normal Distributions Transform or Iterative Closest Point scan matching; [[HD Maps]] published by HERE Technologies, TomTom, Mobileye RoadBook, and AV fleet operators
-  - [[GNSS]]: global positioning via GPS/GLONASS/Galileo constellation, typically combined with RTK corrections for lane-level accuracy; degraded in urban canyons, tunnels, and multi-storey car parks; supplemented by [[Sensor Fusion]] with IMU [[Dead Reckoning]] during [[GNSS]] outages
-  - Online [[HD Maps]] prediction (MapTR, BeMapNet, NMP): [[Neural Network]] inference of real-time vectorised lane topology from sensor data, eliminating [[HD Maps]] staleness risk and enabling operation in unmapped territories
+
+- [[Simultaneous Localisation and Mapping]] (SLAM): real-time map construction and vehicle pose estimation in unknown environments; foundational to [[Autonomous Driving]] since the Stanford and CMU DARPA Challenge systems; key algorithms include Extended Kalman Filter SLAM, particle filter FastSLAM, and [[Deep Learning]]-augmented variants
+- [[HD Maps]]: centimetre-level prior maps encoding lane geometry, speed limits, traffic signs, crosswalk positions, and road topology; consumed by localisation modules for absolute pose fixing via [[Lidar]]-to-map Normal Distributions Transform or Iterative Closest Point scan matching; [[HD Maps]] published by HERE Technologies, TomTom, Mobileye RoadBook, and AV fleet operators
+- [[GNSS]]: global positioning via GPS/GLONASS/Galileo constellation, typically combined with RTK corrections for lane-level accuracy; degraded in urban canyons, tunnels, and multi-storey car parks; supplemented by [[Sensor Fusion]] with IMU [[Dead Reckoning]] during [[GNSS]] outages
+- Online [[HD Maps]] prediction (MapTR, BeMapNet, NMP): [[Neural Network]] inference of real-time vectorised lane topology from sensor data, eliminating [[HD Maps]] staleness risk and enabling operation in unmapped territories
 
   **Behaviour Prediction**
 
   Prediction models the future trajectories of all surrounding dynamic agents — pedestrians, cyclists, vehicles, motorcyclists — over a 3–8 second horizon. The outputs of prediction directly constrain [[Motion Planning]] by defining the probability distribution over future occupied space. Approaches include:
-  - Gaussian Process regression for smooth unimodal trajectory prediction
-  - Social Force models capturing pedestrian group dynamics and personal space constraints
-  - [[Transformer Architecture]]-based Transformer-TF, AgentFormer, and MTR: cross-attention over the scene graph of all agents jointly models agent-agent interactions and multi-modal trajectory distributions
-  - Diffusion-based prediction (diffusion transformers for multi-modal trajectory sampling): generates diverse plausible futures rather than a single best-estimate trajectory, enabling risk-sensitive [[Motion Planning]]
-  - Interaction-aware prediction accounts for the influence of the ego-vehicle's planned actions on other agents' behaviour — critical for safe gap acceptance at junctions
+
+- Gaussian Process regression for smooth unimodal trajectory prediction
+- Social Force models capturing pedestrian group dynamics and personal space constraints
+- [[Transformer Architecture]]-based Transformer-TF, AgentFormer, and MTR: cross-attention over the scene graph of all agents jointly models agent-agent interactions and multi-modal trajectory distributions
+- Diffusion-based prediction (diffusion transformers for multi-modal trajectory sampling): generates diverse plausible futures rather than a single best-estimate trajectory, enabling risk-sensitive [[Motion Planning]]
+- Interaction-aware prediction accounts for the influence of the ego-vehicle's planned actions on other agents' behaviour — critical for safe gap acceptance at junctions
 
   **Motion Planning**
 
   [[Motion Planning]] selects the safest, most comfortable, and most efficient trajectory for the ego vehicle. The three-layer planning hierarchy is:
-  - Route planning: graph search (Dijkstra's algorithm, A*) over the road network graph derived from [[HD Maps]] or live map inference
-  - Behavioural planning: high-level decisions (lane change, overtake, merge, yield, emergency stop) governed by finite-state machines, Monte Carlo Tree Search, or learned policy networks trained with [[Reinforcement Learning]]
-  - [[Motion Planning]] (trajectory optimisation): local trajectory optimisation satisfying vehicle kinematic and dynamic constraints, passenger comfort limits (jerk, lateral acceleration), and collision-avoidance requirements; classical approaches include [[Model Predictive Control]], lattice planners, and sampling-based methods (RRT*, MPPI); [[Deep Learning]]-based approaches learn cost functions from [[Training Data]]
-  - End-to-end [[Motion Planning]]: unified [[Neural Network]]s (UniAD, VAD, DiffusionDrive) jointly address [[Autonomous Driving Perception]], prediction, and planning in a single differentiable pipeline, enabling gradient flow across all stages and eliminating error accumulation between modular components
+
+- Route planning: graph search (Dijkstra's algorithm, A*) over the road network graph derived from [[HD Maps]] or live map inference
+- Behavioural planning: high-level decisions (lane change, overtake, merge, yield, emergency stop) governed by finite-state machines, Monte Carlo Tree Search, or learned policy networks trained with [[Reinforcement Learning]]
+- [[Motion Planning]] (trajectory optimisation): local trajectory optimisation satisfying vehicle kinematic and dynamic constraints, passenger comfort limits (jerk, lateral acceleration), and collision-avoidance requirements; classical approaches include [[Model Predictive Control]], lattice planners, and sampling-based methods (RRT*, MPPI); [[Deep Learning]]-based approaches learn cost functions from [[Training Data]]
+- End-to-end [[Motion Planning]]: unified [[Neural Network]]s (UniAD, VAD, DiffusionDrive) jointly address [[Autonomous Driving Perception]], prediction, and planning in a single differentiable pipeline, enabling gradient flow across all stages and eliminating error accumulation between modular components
 
   **Vehicle Control**
 
   The control layer translates planned trajectories into physical actuator commands:
-  - Longitudinal control: throttle and brake actuation to follow planned speed profiles; PID controllers and [[Model Predictive Control]] are common approaches; feed-forward models of powertrain dynamics improve response
-  - Lateral control: steering actuation to follow planned path curvature; pure pursuit, Stanley controller, and [[Model Predictive Control]]-based approaches handle curvature tracking
-  - Actuator interfaces: drive-by-wire (DbW) systems translate software torque/angle commands to electrohydraulic or electromechanical brake, throttle, and steer actuators with watchdog fail-safe and hardware redundancy compliant with [[ISO 26262]] ASIL-D
-  - Chassis dynamics: vehicle speed, lateral acceleration, yaw rate, and roll angle bounds constrain [[Motion Planning]] feasible trajectory set; tyre friction models limit aggressive manoeuvres
+
+- Longitudinal control: throttle and brake actuation to follow planned speed profiles; PID controllers and [[Model Predictive Control]] are common approaches; feed-forward models of powertrain dynamics improve response
+- Lateral control: steering actuation to follow planned path curvature; pure pursuit, Stanley controller, and [[Model Predictive Control]]-based approaches handle curvature tracking
+- Actuator interfaces: drive-by-wire (DbW) systems translate software torque/angle commands to electrohydraulic or electromechanical brake, throttle, and steer actuators with watchdog fail-safe and hardware redundancy compliant with [[ISO 26262]] ASIL-D
+- Chassis dynamics: vehicle speed, lateral acceleration, yaw rate, and roll angle bounds constrain [[Motion Planning]] feasible trajectory set; tyre friction models limit aggressive manoeuvres
 
   **Safety and Validation**
 
   [[Autonomous Driving]] safety assurance is multi-layered, combining hardware redundancy, software fault detection, probabilistic testing, and formal verification:
-  - [[Functional Safety]] per [[ISO 26262]]: systematic Hazard Analysis and Risk Assessment (HARA), Automotive Safety Integrity Level (ASIL A–D) rating, fault-tolerant system architecture, diagnostic coverage monitoring; ASIL-D is the highest level, requiring dual-redundant primary safety channels and continuous watchdog monitoring
-  - SOTIF per ISO/SAE PAS 21448: addresses [[Functional Safety]] limitations from [[Autonomous Driving Perception]] insufficiency and foreseeable misuse, complementing [[ISO 26262]]'s fault-model scope; requires triggering condition cataloguing and residual risk assessment
-  - Simulation-based testing in high-fidelity virtual environments (CARLA open-source, NVIDIA DRIVE Sim, Waymo Carcraft) for scenario coverage infeasible on real roads; critical for long-tail edge case validation
-  - [[Digital Twin]] environments replicating specific real-world locations for regression testing after software updates
-  - Shadow mode: new [[Autonomous Driving Perception]] and [[Motion Planning]] models run silently alongside production systems on live fleet vehicles, accumulating statistical performance estimates without influencing the vehicle
-  - Statistical safety metrics: SOTIF uses probability of harm per ODD-hour; regulatory bodies are developing type-approval thresholds for L3/L4 systems
+
+- [[Functional Safety]] per [[ISO 26262]]: systematic Hazard Analysis and Risk Assessment (HARA), Automotive Safety Integrity Level (ASIL A–D) rating, fault-tolerant system architecture, diagnostic coverage monitoring; ASIL-D is the highest level, requiring dual-redundant primary safety channels and continuous watchdog monitoring
+- SOTIF per ISO/SAE PAS 21448: addresses [[Functional Safety]] limitations from [[Autonomous Driving Perception]] insufficiency and foreseeable misuse, complementing [[ISO 26262]]'s fault-model scope; requires triggering condition cataloguing and residual risk assessment
+- Simulation-based testing in high-fidelity virtual environments (CARLA open-source, NVIDIA DRIVE Sim, Waymo Carcraft) for scenario coverage infeasible on real roads; critical for long-tail edge case validation
+- [[Digital Twin]] environments replicating specific real-world locations for regression testing after software updates
+- Shadow mode: new [[Autonomous Driving Perception]] and [[Motion Planning]] models run silently alongside production systems on live fleet vehicles, accumulating statistical performance estimates without influencing the vehicle
+- Statistical safety metrics: SOTIF uses probability of harm per ODD-hour; regulatory bodies are developing type-approval thresholds for L3/L4 systems
 
   **Compute Platforms**
 
-  - [[Edge Computing]] on-board: automotive SoCs — NVIDIA DRIVE Orin (254 TOPS for [[Deep Learning]] inference), DRIVE Thor (2,000 TOPS, 2024), Mobileye EyeQ6H, Qualcomm Snapdragon Ride Flex, Texas Instruments TDA4 — providing teraflop-class [[Neural Network]] inference at constrained power budgets under 200W total for the full [[Autonomous Driving]] stack
-  - [[GPU Compute]] cloud back-end: large-scale offline [[Deep Learning]] model training (petaflop-scale), fleet-wide [[Training Data]] mining and annotation, [[HD Maps]] updates, OTA software deployment; Waymo uses Google TPU pods; Tesla uses custom Dojo supercomputer
-  - Sensor interface hardware: time-synchronised sensor data collection across camera, [[Lidar]], radar, [[GNSS]], and IMU at nanosecond-level timestamping precision; critical for [[Sensor Fusion]] accuracy
+- [[Edge Computing]] on-board: automotive SoCs — NVIDIA DRIVE Orin (254 TOPS for [[Deep Learning]] inference), DRIVE Thor (2,000 TOPS, 2024), Mobileye EyeQ6H, Qualcomm Snapdragon Ride Flex, Texas Instruments TDA4 — providing teraflop-class [[Neural Network]] inference at constrained power budgets under 200W total for the full [[Autonomous Driving]] stack
+- [[GPU Compute]] cloud back-end: large-scale offline [[Deep Learning]] model training (petaflop-scale), fleet-wide [[Training Data]] mining and annotation, [[HD Maps]] updates, OTA software deployment; Waymo uses Google TPU pods; Tesla uses custom Dojo supercomputer
+- Sensor interface hardware: time-synchronised sensor data collection across camera, [[Lidar]], radar, [[GNSS]], and IMU at nanosecond-level timestamping precision; critical for [[Sensor Fusion]] accuracy
 
   ## SAE Automation Levels
 
   The Society of Automotive Engineers' [[SAE J3016]] standard defines six levels of driving automation, widely used as the reference taxonomy by industry, regulators, and media. The standard distinguishes the driving task between "dynamic driving task" (DDT) execution by the driver versus the automated system, and "DDT fallback" responsibility when the automation fails or reaches its limits:
 
-  - **L0 — No Automation**: the human driver performs all dynamic driving tasks at all times; the system may issue warnings, momentary brake interventions (AEB), or provide information only; most vehicles globally are L0
-  - **L1 — Driver Assistance**: a single automated function — either longitudinal control (adaptive cruise control / automatic emergency braking) or lateral control (lane-keeping assist) — but not both simultaneously; driver monitors the environment and performs all other driving tasks; commercially widespread in vehicles since approximately 2010
-  - **L2 — Partial Automation**: simultaneous automated lateral and longitudinal control (combined lane-keeping + adaptive cruise); driver must continuously monitor the environment and remain immediately ready to retake control; driver is responsible for safe operation at all times; Tesla Autopilot Basic, Volvo Pilot Assist, and most OEM "highway assist" systems are L2; widespread in mass-market vehicles since 2018
-  - **L3 — Conditional Automation**: the [[Autonomous Driving]] system handles all driving within a defined Operational Design Domain (ODD) without driver monitoring; driver may disengage attention from the driving task but must respond to handover requests within a specified time; driver resumes responsibility when the system requests it or when the ODD is exited; legally approved in Germany (Autonomous Driving Act 2021), Japan (2023), Nevada USA (2023, Mercedes-Benz), and under the UK AV Act 2024; considered the most legally complex level due to liability ambiguity during automated driving phases
-  - **L4 — High Automation**: the system handles all driving within a defined ODD without driver intervention; if the vehicle cannot continue operating safely (e.g., [[Autonomous Driving Perception]] failure in heavy snow), it performs a Minimal Risk Condition (MRC — typically: slow down and safely stop) rather than requesting human intervention; no human driver is required within the ODD; Waymo One [[Robotaxi]], Aurora freight, and Baidu Apollo Go are L4 within their respective ODDs
-  - **L5 — Full Automation**: the system performs all driving tasks in all conditions worldwide with no ODD restriction — no human driver, no steering wheel required; considered a long-horizon aspirational target not expected at commercial scale before the 2030s at the earliest
+- **L0 — No Automation**: the human driver performs all dynamic driving tasks at all times; the system may issue warnings, momentary brake interventions (AEB), or provide information only; most vehicles globally are L0
+- **L1 — Driver Assistance**: a single automated function — either longitudinal control (adaptive cruise control / automatic emergency braking) or lateral control (lane-keeping assist) — but not both simultaneously; driver monitors the environment and performs all other driving tasks; commercially widespread in vehicles since approximately 2010
+- **L2 — Partial Automation**: simultaneous automated lateral and longitudinal control (combined lane-keeping + adaptive cruise); driver must continuously monitor the environment and remain immediately ready to retake control; driver is responsible for safe operation at all times; Tesla Autopilot Basic, Volvo Pilot Assist, and most OEM "highway assist" systems are L2; widespread in mass-market vehicles since 2018
+- **L3 — Conditional Automation**: the [[Autonomous Driving]] system handles all driving within a defined Operational Design Domain (ODD) without driver monitoring; driver may disengage attention from the driving task but must respond to handover requests within a specified time; driver resumes responsibility when the system requests it or when the ODD is exited; legally approved in Germany (Autonomous Driving Act 2021), Japan (2023), Nevada USA (2023, Mercedes-Benz), and under the UK AV Act 2024; considered the most legally complex level due to liability ambiguity during automated driving phases
+- **L4 — High Automation**: the system handles all driving within a defined ODD without driver intervention; if the vehicle cannot continue operating safely (e.g., [[Autonomous Driving Perception]] failure in heavy snow), it performs a Minimal Risk Condition (MRC — typically: slow down and safely stop) rather than requesting human intervention; no human driver is required within the ODD; Waymo One [[Robotaxi]], Aurora freight, and Baidu Apollo Go are L4 within their respective ODDs
+- **L5 — Full Automation**: the system performs all driving tasks in all conditions worldwide with no ODD restriction — no human driver, no steering wheel required; considered a long-horizon aspirational target not expected at commercial scale before the 2030s at the earliest
 
   In the United Kingdom, the Automated Vehicles Act 2024 maps to these [[SAE J3016]] levels with a "user in charge" (UiC) regime corresponding to L3 (a human must be present and available to retake control) and a "no user in charge" (NUiC) regime corresponding to L4–L5 (no human required to be capable of driving). Each regime has distinct legal liability — the ASDE (technology developer) is responsible for safe [[Autonomous Driving]] in NUiC mode — and authorisation requirements through the Vehicle Certifying Authority.
 
@@ -208,13 +214,13 @@ Autonomous driving is the technical capability enabling a vehicle to perceive it
 
   **Key Recent Research Milestones**
 
-  - BEVFormer (Li et al., Shanghai AI Lab, ECCV 2022): [[Transformer Architecture]]-based camera-to-BEV lifting via deformable spatial cross-attention achieving 56.9% NDS on nuScenes [[Object Detection]] benchmark — matching [[Lidar]]-based baselines using cameras alone; spatiotemporal extension enables temporal [[Autonomous Driving Perception]] feature propagation
-  - BEVFusion (Liu et al., MIT CSAIL, 2022): [[Sensor Fusion]] of camera and [[Lidar]] features in shared BEV channel space via simple concatenation; joint multi-task decoding for 3D [[Object Detection]] and BEV [[Semantic Segmentation]]; independently published by Baidu ADLab (Liang et al.) same year
-  - UniAD (Hu et al., Shanghai AI Lab, CVPR 2023 Best Paper): unified end-to-end [[Neural Network]] for [[Autonomous Driving Perception]], trajectory prediction, occupancy forecasting, and [[Motion Planning]] jointly trained; the most cited recent [[Autonomous Driving]] planning paper; demonstrates joint optimisation substantially outperforms modular pipeline
-  - GAIA-1 (Hu et al., Wayve, 2023): generative world model for [[Autonomous Driving]] producing photorealistic synthetic driving video from text prompts, action sequences, and past video frames — enabling synthetic [[Training Data]] generation for rare scenarios and [[Reinforcement Learning]] environment creation
-  - DriveX / DriveLM (OpenDriveLab, 2023): language-grounded [[Autonomous Driving Perception]] and planning enabling scene understanding queries in natural language; aligns [[Large Language Models]] pre-training with AV-specific knowledge
-  - NAVSIM (Dauner et al., TU Munich, NeurIPS 2024): data-driven non-reactive evaluation benchmark for end-to-end planners built from real human driving logs; addresses simulation-to-real gap and enables fair comparison of closed-loop planner performance without bias from simulator physics
-  - DiffusionDrive (Liao et al., CVPR 2025): truncated diffusion model for multi-modal trajectory generation in end-to-end [[Autonomous Driving]]; achieves state-of-the-art performance on nuPlan closed-loop [[Motion Planning]] benchmark by generating diverse plausible trajectories from a denoising process conditioned on BEV [[Autonomous Driving Perception]] features
+- BEVFormer (Li et al., Shanghai AI Lab, ECCV 2022): [[Transformer Architecture]]-based camera-to-BEV lifting via deformable spatial cross-attention achieving 56.9% NDS on nuScenes [[Object Detection]] benchmark — matching [[Lidar]]-based baselines using cameras alone; spatiotemporal extension enables temporal [[Autonomous Driving Perception]] feature propagation
+- BEVFusion (Liu et al., MIT CSAIL, 2022): [[Sensor Fusion]] of camera and [[Lidar]] features in shared BEV channel space via simple concatenation; joint multi-task decoding for 3D [[Object Detection]] and BEV [[Semantic Segmentation]]; independently published by Baidu ADLab (Liang et al.) same year
+- UniAD (Hu et al., Shanghai AI Lab, CVPR 2023 Best Paper): unified end-to-end [[Neural Network]] for [[Autonomous Driving Perception]], trajectory prediction, occupancy forecasting, and [[Motion Planning]] jointly trained; the most cited recent [[Autonomous Driving]] planning paper; demonstrates joint optimisation substantially outperforms modular pipeline
+- GAIA-1 (Hu et al., Wayve, 2023): generative world model for [[Autonomous Driving]] producing photorealistic synthetic driving video from text prompts, action sequences, and past video frames — enabling synthetic [[Training Data]] generation for rare scenarios and [[Reinforcement Learning]] environment creation
+- DriveX / DriveLM (OpenDriveLab, 2023): language-grounded [[Autonomous Driving Perception]] and planning enabling scene understanding queries in natural language; aligns [[Large Language Models]] pre-training with AV-specific knowledge
+- NAVSIM (Dauner et al., TU Munich, NeurIPS 2024): data-driven non-reactive evaluation benchmark for end-to-end planners built from real human driving logs; addresses simulation-to-real gap and enables fair comparison of closed-loop planner performance without bias from simulator physics
+- DiffusionDrive (Liao et al., CVPR 2025): truncated diffusion model for multi-modal trajectory generation in end-to-end [[Autonomous Driving]]; achieves state-of-the-art performance on nuPlan closed-loop [[Motion Planning]] benchmark by generating diverse plausible trajectories from a denoising process conditioned on BEV [[Autonomous Driving Perception]] features
 
   **Central Research Venues**
 
@@ -222,13 +228,13 @@ Autonomous driving is the technical capability enabling a vehicle to perceive it
 
   ## Standards and Regulatory Context
 
-  - **[[SAE J3016]]** — Society of Automotive Engineers taxonomy and definitions for driving automation levels (L0–L5); the universal reference framework used by industry, regulators, and insurers internationally
-  - **[[ISO 26262]]** — Functional safety standard for road vehicles; prescribes Hazard Analysis and Risk Assessment (HARA), Automotive Safety Integrity Level (ASIL) rating A–D, and systematic safety development lifecycle for safety-critical automotive electronic systems
-  - **ISO/SAE PAS 21448 (SOTIF)** — Safety Of The Intended Functionality; addresses functional insufficiency, sensor performance limitations, and foreseeable misuse that fall outside ISO 26262's fault-model scope
-  - **[[UN ECE WP.29]]** — United Nations Economic Commission for Europe Working Party 29 develops internationally harmonised vehicle regulations through GRVA (automated and connected vehicles) including ALKS (Automated Lane Keeping Systems, R157), AEB, and general AV framework regulation
-  - **UK Automated Vehicles Act 2024** — One of the world's most comprehensive AV legal frameworks; introduces the "Authorised Self-Driving Entity" (ASDE) role, "user in charge" (L3) and "no user in charge" (L4) operating modes with distinct liability regimes; enables commercial driverless trials from Spring 2026
-  - **EU AI Act (2024)** — Classifies AV AI systems as high-risk under Article 6/Annex III; requires conformity assessment, transparency, human oversight, robustness testing, and registration in the EU AI database before market placement
-  - **US NHTSA AV framework** — Standing General Order requiring incident reporting within 1 day (serious) and 10 days (minor); AV STEP programme for commercial fleet authorisation; Federal AV Policy guidance documents
+- **[[SAE J3016]]** — Society of Automotive Engineers taxonomy and definitions for driving automation levels (L0–L5); the universal reference framework used by industry, regulators, and insurers internationally
+- **[[ISO 26262]]** — Functional safety standard for road vehicles; prescribes Hazard Analysis and Risk Assessment (HARA), Automotive Safety Integrity Level (ASIL) rating A–D, and systematic safety development lifecycle for safety-critical automotive electronic systems
+- **ISO/SAE PAS 21448 (SOTIF)** — Safety Of The Intended Functionality; addresses functional insufficiency, sensor performance limitations, and foreseeable misuse that fall outside ISO 26262's fault-model scope
+- **[[UN ECE WP.29]]** — United Nations Economic Commission for Europe Working Party 29 develops internationally harmonised vehicle regulations through GRVA (automated and connected vehicles) including ALKS (Automated Lane Keeping Systems, R157), AEB, and general AV framework regulation
+- **UK Automated Vehicles Act 2024** — One of the world's most comprehensive AV legal frameworks; introduces the "Authorised Self-Driving Entity" (ASDE) role, "user in charge" (L3) and "no user in charge" (L4) operating modes with distinct liability regimes; enables commercial driverless trials from Spring 2026
+- **EU AI Act (2024)** — Classifies AV AI systems as high-risk under Article 6/Annex III; requires conformity assessment, transparency, human oversight, robustness testing, and registration in the EU AI database before market placement
+- **US NHTSA AV framework** — Standing General Order requiring incident reporting within 1 day (serious) and 10 days (minor); AV STEP programme for commercial fleet authorisation; Federal AV Policy guidance documents
 
   ## Technical Challenges
 
@@ -280,14 +286,14 @@ Autonomous driving is the technical capability enabling a vehicle to perceive it
 
   A succession of large-scale annotated driving datasets has driven [[Autonomous Driving]] [[Autonomous Driving Perception]] and [[Motion Planning]] research:
 
-  - **KITTI** (Geiger et al., Karlsruhe Institute of Technology, 2012): first standardised AV benchmark; stereo [[Depth Estimation]], optical flow, 3D [[Object Detection]], [[Object Tracking]], [[Semantic Segmentation]]; 15,000 stereo pairs + [[Lidar]] scans; defined baseline evaluation protocols still used for [[Convolutional Neural Network]] architecture comparison
-  - **Cityscapes** (Cordts et al., Daimler, 2016): 25,000 finely annotated urban driving images across 50 cities; 30 [[Semantic Segmentation]] classes; standard benchmark for semantic scene understanding [[Convolutional Neural Network]] architectures
-  - **nuScenes** (Caesar et al., Motional, 2020): 700 scenes × 40 seconds in Boston and Singapore; 23 object classes; 3D bounding boxes, [[Lidar]] [[Point Cloud]], all cameras, radar; nuScenes Detection Score (NDS) is the dominant metric for multi-modal [[Autonomous Driving Perception]]
-  - **Waymo Open Dataset** (Sun et al., Waymo, 2020): 1,150 scenes × 20 seconds; highest [[Lidar]] range (200m, 64-beam); dense 3D annotation; camera-[[Lidar]] time-synchronised; largest high-resolution LiDAR [[Autonomous Driving Perception]] benchmark
-  - **Argoverse 2** (Argo AI, 2021): trajectory [[Behaviour Prediction]] and online [[HD Maps]] construction focus; 1,000 hours of driving in six US cities; ring camera + 2 stereo cameras + LiDAR; open-set 3D [[Object Detection]]
-  - **nuPlan** (Caesar et al., Motional, 2021): reactive closed-loop [[Motion Planning]] benchmark; 1,282 hours of expert driving logs; first benchmark enabling fair closed-loop planner comparison
-  - **OpenOccupancy** (Wang et al., 2023): first large-scale 3D occupancy annotation on nuScenes scenes; enables occupancy prediction network benchmarking; occupancy labels derived from accumulated [[Lidar]] scans projected into voxel grid
-  - **Waymo Open Motion Dataset** (Ettinger et al., Waymo, 2021): 100,000 driving scenes with 3D box tracks; multi-agent trajectory [[Behaviour Prediction]] benchmark with interactive scenario focus
+- **KITTI** (Geiger et al., Karlsruhe Institute of Technology, 2012): first standardised AV benchmark; stereo [[Depth Estimation]], optical flow, 3D [[Object Detection]], [[Object Tracking]], [[Semantic Segmentation]]; 15,000 stereo pairs + [[Lidar]] scans; defined baseline evaluation protocols still used for [[Convolutional Neural Network]] architecture comparison
+- **Cityscapes** (Cordts et al., Daimler, 2016): 25,000 finely annotated urban driving images across 50 cities; 30 [[Semantic Segmentation]] classes; standard benchmark for semantic scene understanding [[Convolutional Neural Network]] architectures
+- **nuScenes** (Caesar et al., Motional, 2020): 700 scenes × 40 seconds in Boston and Singapore; 23 object classes; 3D bounding boxes, [[Lidar]] [[Point Cloud]], all cameras, radar; nuScenes Detection Score (NDS) is the dominant metric for multi-modal [[Autonomous Driving Perception]]
+- **Waymo Open Dataset** (Sun et al., Waymo, 2020): 1,150 scenes × 20 seconds; highest [[Lidar]] range (200m, 64-beam); dense 3D annotation; camera-[[Lidar]] time-synchronised; largest high-resolution LiDAR [[Autonomous Driving Perception]] benchmark
+- **Argoverse 2** (Argo AI, 2021): trajectory [[Behaviour Prediction]] and online [[HD Maps]] construction focus; 1,000 hours of driving in six US cities; ring camera + 2 stereo cameras + LiDAR; open-set 3D [[Object Detection]]
+- **nuPlan** (Caesar et al., Motional, 2021): reactive closed-loop [[Motion Planning]] benchmark; 1,282 hours of expert driving logs; first benchmark enabling fair closed-loop planner comparison
+- **OpenOccupancy** (Wang et al., 2023): first large-scale 3D occupancy annotation on nuScenes scenes; enables occupancy prediction network benchmarking; occupancy labels derived from accumulated [[Lidar]] scans projected into voxel grid
+- **Waymo Open Motion Dataset** (Ettinger et al., Waymo, 2021): 100,000 driving scenes with 3D box tracks; multi-agent trajectory [[Behaviour Prediction]] benchmark with interactive scenario focus
 
   ## UK Context
 
@@ -297,32 +303,36 @@ Autonomous driving is the technical capability enabling a vehicle to perceive it
   The Automated Vehicles Act 2024 (AV Act) received Royal Assent on 20 May 2024 and provides the primary legal framework for AV deployment on Great Britain's public roads. The AV Act creates the "Authorised Self-Driving Entity" (ASDE) role — the legal entity responsible for ensuring a vehicle drives safely and legally throughout its operational lifetime — and distinguishes "user in charge" (L3-equivalent, driver remains in vehicle and may need to take control) from "no user in charge" (L4-equivalent, fully driverless operation) modes. From Spring 2026, commercial firms can pilot driverless vehicles on England's roads without a safety driver for the first time. The government fast-tracked AV trials under Project PACE (Preparing for Autonomy in Commercial Environments) and has earmarked investment through the Zenzic public-private partnership.
 
   **Industry**
-  - Wayve (London, founded 2017): most valuable UK deep-tech AV company; £1 billion+ funding from Microsoft, SoftBank, NVIDIA; co-founded by Cambridge PhD graduate Alex Kendall; pioneered end-to-end AI for driving; LINGO-2 multimodal reasoning model; Uber UK trials 2026
-  - Oxa (Oxford, formerly Oxbotica): L4 software stack for logistics and industrial mobility; CAM Testbed participant; Gatwick Airport trial; Ocado autonomous fulfilment logistics
-  - Five AI (Edinburgh, acquired by Bosch 2021): open autonomous driving research; produced FLIR-UK dataset for Scottish urban driving
-  - Arrival (Banbury, UK): electric autonomous delivery vehicles (paused production 2024)
-  - BYD, SAIC (Chinese OEMs): UK market entry with ADAS-equipped EVs including L2 systems tested under AEVA requirements
+
+- Wayve (London, founded 2017): most valuable UK deep-tech AV company; £1 billion+ funding from Microsoft, SoftBank, NVIDIA; co-founded by Cambridge PhD graduate Alex Kendall; pioneered end-to-end AI for driving; LINGO-2 multimodal reasoning model; Uber UK trials 2026
+- Oxa (Oxford, formerly Oxbotica): L4 software stack for logistics and industrial mobility; CAM Testbed participant; Gatwick Airport trial; Ocado autonomous fulfilment logistics
+- Five AI (Edinburgh, acquired by Bosch 2021): open autonomous driving research; produced FLIR-UK dataset for Scottish urban driving
+- Arrival (Banbury, UK): electric autonomous delivery vehicles (paused production 2024)
+- BYD, SAIC (Chinese OEMs): UK market entry with ADAS-equipped EVs including L2 systems tested under AEVA requirements
 
   **Northern England Industrial Context**
   Northern England has distinctive AV relevance driven by its automotive manufacturing and port logistics heritage:
-  - **Sunderland / North East**: Nissan Motor Manufacturing UK is the largest automotive plant in the UK; the North East Vehicle Autonomous Corridor feasibility study (led by iC4DTI) is developing driver-out autonomous HGV services between the Sunderland Nissan plant and the Port of Tyne — leveraging existing logistics routes for L4 freight trials
-  - **Teesside**: The Tactic feasibility study investigates autonomous yard tractors on the Vantec-Nissan route and cargo-handling vehicles within Teesside Freeport; Teesport to Teesside International Airport corridor is being assessed for driver-out CAM freight
-  - **Manchester**: Greater Manchester authorities are collaborating with central government on AV regulatory frameworks for dense urban operation; Project Synergy has conducted trials of driverless vehicles on Manchester streets; Manchester has been designated a UK 5G testbed city, providing the connectivity substrate for V2X cooperative perception; the University of Manchester has published research on edge AI for vehicle embedded systems
-  - **Leeds**: Project Synergy trials included Leeds city centre; University of Leeds research on vulnerable road user (pedestrian and cyclist) detection and AV interaction; Leeds City Region electric vehicle and AV integration strategy
-  - **Sheffield**: University of Sheffield research in embedded AI and neuromorphic event cameras for high-dynamic-range AV perception; Mobileye maintains engineering presence in Sheffield and Coventry
+
+- **Sunderland / North East**: Nissan Motor Manufacturing UK is the largest automotive plant in the UK; the North East Vehicle Autonomous Corridor feasibility study (led by iC4DTI) is developing driver-out autonomous HGV services between the Sunderland Nissan plant and the Port of Tyne — leveraging existing logistics routes for L4 freight trials
+- **Teesside**: The Tactic feasibility study investigates autonomous yard tractors on the Vantec-Nissan route and cargo-handling vehicles within Teesside Freeport; Teesport to Teesside International Airport corridor is being assessed for driver-out CAM freight
+- **Manchester**: Greater Manchester authorities are collaborating with central government on AV regulatory frameworks for dense urban operation; Project Synergy has conducted trials of driverless vehicles on Manchester streets; Manchester has been designated a UK 5G testbed city, providing the connectivity substrate for V2X cooperative perception; the University of Manchester has published research on edge AI for vehicle embedded systems
+- **Leeds**: Project Synergy trials included Leeds city centre; University of Leeds research on vulnerable road user (pedestrian and cyclist) detection and AV interaction; Leeds City Region electric vehicle and AV integration strategy
+- **Sheffield**: University of Sheffield research in embedded AI and neuromorphic event cameras for high-dynamic-range AV perception; Mobileye maintains engineering presence in Sheffield and Coventry
 
   **Academic Research**
-  - University of Oxford: Applied AI Lab; Active Vision Lab; Dynamic Vision and Robotics Lab — research in real-time semantic segmentation, 3D reconstruction, adversarial robustness; Oxa spun out of Oxford Mobile Robotics Group
-  - University of Cambridge: Machine Intelligence Laboratory; Wayve co-founders from Cambridge PhD programme; research in monocular depth estimation, uncertainty quantification (aleatoric/epistemic decomposition by Kendall and Gal), embodied AI and world models
-  - University of Edinburgh: Institute of Perception, Action and Behaviour (IPAB); research in long-term robot autonomy, probabilistic mapping, and 3D scene understanding
-  - Imperial College London: Intelligent Systems and Networks; real-time LiDAR processing; neural network compression for automotive SoCs
-  - University of Leeds: Institute for Transport Studies; pedestrian behaviour modelling; adverse weather sensor degradation
+
+- University of Oxford: Applied AI Lab; Active Vision Lab; Dynamic Vision and Robotics Lab — research in real-time semantic segmentation, 3D reconstruction, adversarial robustness; Oxa spun out of Oxford Mobile Robotics Group
+- University of Cambridge: Machine Intelligence Laboratory; Wayve co-founders from Cambridge PhD programme; research in monocular depth estimation, uncertainty quantification (aleatoric/epistemic decomposition by Kendall and Gal), embodied AI and world models
+- University of Edinburgh: Institute of Perception, Action and Behaviour (IPAB); research in long-term robot autonomy, probabilistic mapping, and 3D scene understanding
+- Imperial College London: Intelligent Systems and Networks; real-time LiDAR processing; neural network compression for automotive SoCs
+- University of Leeds: Institute for Transport Studies; pedestrian behaviour modelling; adverse weather sensor degradation
 
   **UK Testing Infrastructure**
-  - MIRA (Motor Industry Research Association, Nuneaton): closed and public-road AV testing facility; CAM Testbed UK partner
-  - Millbrook Proving Ground (Bedfordshire): structured AV test tracks and rural road simulation; ADAS/AV validation
-  - AutoDrive 2 (Milton Keynes / Coventry): public road AV trials corridors; Autodrive Phase 1/2 demonstrated 100+ L4 scenarios
-  - Connected Places Catapult: coordinates UK AV innovation; Transport Systems Catapult (now merged) delivered Connected Autonomous Mobility programme
+
+- MIRA (Motor Industry Research Association, Nuneaton): closed and public-road AV testing facility; CAM Testbed UK partner
+- Millbrook Proving Ground (Bedfordshire): structured AV test tracks and rural road simulation; ADAS/AV validation
+- AutoDrive 2 (Milton Keynes / Coventry): public road AV trials corridors; Autodrive Phase 1/2 demonstrated 100+ L4 scenarios
+- Connected Places Catapult: coordinates UK AV innovation; Transport Systems Catapult (now merged) delivered Connected Autonomous Mobility programme
 
   ## Future Directions (2026–2030)
 
@@ -359,32 +369,37 @@ Autonomous driving is the technical capability enabling a vehicle to perceive it
   Independent and regulatory safety data on operational [[Autonomous Driving]] systems is accumulating, providing empirical grounding for regulatory confidence:
 
   **Waymo (L4 Commercial [[Robotaxi]])**
-  - 200 million+ cumulative fully autonomous miles (March 2026)
-  - Reported crash rate in San Francisco (2023–2025): 2.1 crashes per million miles (vs. human driver rate of ~2.5 per million miles in California)
-  - Zero fatalities attributable to Waymo [[Autonomous Driving]] system in commercial service as of mid-2026
-  - NHTSA Standing General Order (SGO) incident reports: serious injury incidents represent <0.001% of trips
-  - Waymo internal safety metric: Waymo Driver avoids 90% of serious or fatal crashes that a comparable human driver would have had (internal comparison against California DMV human driver collision statistics)
+
+- 200 million+ cumulative fully autonomous miles (March 2026)
+- Reported crash rate in San Francisco (2023–2025): 2.1 crashes per million miles (vs. human driver rate of ~2.5 per million miles in California)
+- Zero fatalities attributable to Waymo [[Autonomous Driving]] system in commercial service as of mid-2026
+- NHTSA Standing General Order (SGO) incident reports: serious injury incidents represent <0.001% of trips
+- Waymo internal safety metric: Waymo Driver avoids 90% of serious or fatal crashes that a comparable human driver would have had (internal comparison against California DMV human driver collision statistics)
 
   **Tesla FSD (L2+ ADAS, supervised)**
-  - FSD v12 active on 6+ million vehicles globally (2026)
-  - Tesla Q4 2025 safety report: 1 accident per 5.3 million miles with FSD active (vs. NHTSA average of 1 per 670,000 miles for human drivers in all conditions) — however, FSD is disproportionately used on easier driving conditions (highways, good weather), creating selection bias
-  - NHTSA investigation (2023–2024) into FSD performance under adverse lighting conditions; Tesla issued OTA updates in response
+
+- FSD v12 active on 6+ million vehicles globally (2026)
+- Tesla Q4 2025 safety report: 1 accident per 5.3 million miles with FSD active (vs. NHTSA average of 1 per 670,000 miles for human drivers in all conditions) — however, FSD is disproportionately used on easier driving conditions (highways, good weather), creating selection bias
+- NHTSA investigation (2023–2024) into FSD performance under adverse lighting conditions; Tesla issued OTA updates in response
 
   **UK-Specific Safety Data (2025–2026)**
-  - No commercial L4 [[Autonomous Driving]] operations on UK public roads before Spring 2026 (AV Act implementation)
-  - MIRA and Millbrook test track data not publicly available under commercial confidentiality
-  - AutoDrive Phase 2 (Milton Keynes/Coventry): 100+ L4 test scenarios completed without safety incidents (public corridor trials 2023–2025)
-  - Project Synergy (Manchester/Leeds): trial results include adverse weather scenarios in northern England conditions
+
+- No commercial L4 [[Autonomous Driving]] operations on UK public roads before Spring 2026 (AV Act implementation)
+- MIRA and Millbrook test track data not publicly available under commercial confidentiality
+- AutoDrive Phase 2 (Milton Keynes/Coventry): 100+ L4 test scenarios completed without safety incidents (public corridor trials 2023–2025)
+- Project Synergy (Manchester/Leeds): trial results include adverse weather scenarios in northern England conditions
 
   **International Comparison Points**
-  - Baidu Apollo Go: 100M+ robot-taxi trips across Chinese cities as of 2026; comparable safety metrics to Waymo in urban environments
-  - Chinese regulatory framework (2022 road testing regulations): requires 3 months and 100,000 km of supervised testing before driverless permits
-  - California DMV disengagement reports: Waymo performed 79,271 miles per disengagement in 2023 (highest of any reporting company); Cruise 10,447 miles/disengagement before suspension
+
+- Baidu Apollo Go: 100M+ robot-taxi trips across Chinese cities as of 2026; comparable safety metrics to Waymo in urban environments
+- Chinese regulatory framework (2022 road testing regulations): requires 3 months and 100,000 km of supervised testing before driverless permits
+- California DMV disengagement reports: Waymo performed 79,271 miles per disengagement in 2023 (highest of any reporting company); Cruise 10,447 miles/disengagement before suspension
 
   **Academic Safety Estimates**
-  - Kalra & Paddock (RAND, 2016): estimated 500 million to 11 billion miles of [[Autonomous Driving]] required to statistically validate safety improvements over human driving at 95% confidence — motivating the shift to simulation-based validation and Bayesian safety case construction
-  - Zhao et al. (2016): accelerated evaluation methods using importance sampling reduce required test miles by factor of 100-1000x for specific scenario families
-  - Current state-of-the-art: combination of real-world miles, simulation, shadow mode validation, and statistical sampling methods is accepted as adequate for national type-approval at L4 within bounded ODDs
+
+- Kalra & Paddock (RAND, 2016): estimated 500 million to 11 billion miles of [[Autonomous Driving]] required to statistically validate safety improvements over human driving at 95% confidence — motivating the shift to simulation-based validation and Bayesian safety case construction
+- Zhao et al. (2016): accelerated evaluation methods using importance sampling reduce required test miles by factor of 100-1000x for specific scenario families
+- Current state-of-the-art: combination of real-world miles, simulation, shadow mode validation, and statistical sampling methods is accepted as adequate for national type-approval at L4 within bounded ODDs
 
   ## Research and Literature
 
@@ -431,31 +446,33 @@ Autonomous driving is the technical capability enabling a vehicle to perceive it
 
   [[Autonomous Driving]] must be distinguished from related but distinct capabilities:
 
-  - **vs. [[Advanced Driver Assistance Systems]]**: ADAS (L1/L2) requires continuous human driver monitoring and assumes human fallback; [[Autonomous Driving]] (L3+) allows driver disengagement or eliminates the driver role entirely; the legal liability boundary is the critical distinction — ADAS incidents are driver's fault, [[Autonomous Driving]] incidents within the ODD are the ASDE's responsibility
-  - **vs. [[Teleoperation]]**: teleoperation replaces a human in the vehicle with a remote human operator connected via [[V2X Communication]]; [[Autonomous Driving]] replaces the human decision-making entirely with onboard AI; teleoperation requires low-latency network connectivity (under 100ms for safe vehicle control) and provides limited scalability; [[Autonomous Driving]] is network-independent and scales to large fleets
-  - **vs. Automated Parking**: automated parking systems (SAE L2 parking assist, valet parking) operate at very low speeds in highly constrained environments; [[Autonomous Driving]] must handle high-speed, dynamic, open-road environments at all times
-  - **vs. Connected Autonomous Vehicles (CAV)**: connected vehicles use [[V2X Communication]] to share sensor data and coordinate manoeuvres; [[Autonomous Driving]] does not require connectivity — Waymo One operates fully offline from V2X infrastructure; CAV extends [[Autonomous Driving]] capabilities through cooperative [[Autonomous Driving Perception]] but is not a prerequisite
-  - **vs. Remote Sensing**: remote sensing uses [[Lidar]], radar, and cameras to survey terrain or monitor environments without vehicle navigation intent; [[Autonomous Driving Perception]] produces real-time structured scene representations specifically for safe vehicle navigation and [[Motion Planning]]
-  - **vs. [[Digital Twin]] simulation**: [[Digital Twin]] environments replicate real-world scenes in software for testing and validation of [[Autonomous Driving]] systems without real-world risk; [[Autonomous Driving]] systems operate in the real physical world with real consequences for failure
-  - **vs. Mobility as a Service (MaaS)**: MaaS is a transport policy and commercial concept for on-demand multimodal mobility; [[Autonomous Driving]] is the enabling technology that can make MaaS economically viable by eliminating driver costs at scale
-  - **vs. Electric Vehicle Technology**: EVs and [[Autonomous Driving]] are complementary but independent technologies; most leading [[Robotaxi]] deployments (Waymo, Tesla, Wayve) use EVs for range, silent operation, and torque response advantages, but [[Autonomous Driving]] technology is platform-agnostic in principle
+- **vs. [[Advanced Driver Assistance Systems]]**: ADAS (L1/L2) requires continuous human driver monitoring and assumes human fallback; [[Autonomous Driving]] (L3+) allows driver disengagement or eliminates the driver role entirely; the legal liability boundary is the critical distinction — ADAS incidents are driver's fault, [[Autonomous Driving]] incidents within the ODD are the ASDE's responsibility
+- **vs. [[Teleoperation]]**: teleoperation replaces a human in the vehicle with a remote human operator connected via [[V2X Communication]]; [[Autonomous Driving]] replaces the human decision-making entirely with onboard AI; teleoperation requires low-latency network connectivity (under 100ms for safe vehicle control) and provides limited scalability; [[Autonomous Driving]] is network-independent and scales to large fleets
+- **vs. Automated Parking**: automated parking systems (SAE L2 parking assist, valet parking) operate at very low speeds in highly constrained environments; [[Autonomous Driving]] must handle high-speed, dynamic, open-road environments at all times
+- **vs. Connected Autonomous Vehicles (CAV)**: connected vehicles use [[V2X Communication]] to share sensor data and coordinate manoeuvres; [[Autonomous Driving]] does not require connectivity — Waymo One operates fully offline from V2X infrastructure; CAV extends [[Autonomous Driving]] capabilities through cooperative [[Autonomous Driving Perception]] but is not a prerequisite
+- **vs. Remote Sensing**: remote sensing uses [[Lidar]], radar, and cameras to survey terrain or monitor environments without vehicle navigation intent; [[Autonomous Driving Perception]] produces real-time structured scene representations specifically for safe vehicle navigation and [[Motion Planning]]
+- **vs. [[Digital Twin]] simulation**: [[Digital Twin]] environments replicate real-world scenes in software for testing and validation of [[Autonomous Driving]] systems without real-world risk; [[Autonomous Driving]] systems operate in the real physical world with real consequences for failure
+- **vs. Mobility as a Service (MaaS)**: MaaS is a transport policy and commercial concept for on-demand multimodal mobility; [[Autonomous Driving]] is the enabling technology that can make MaaS economically viable by eliminating driver costs at scale
+- **vs. Electric Vehicle Technology**: EVs and [[Autonomous Driving]] are complementary but independent technologies; most leading [[Robotaxi]] deployments (Waymo, Tesla, Wayve) use EVs for range, silent operation, and torque response advantages, but [[Autonomous Driving]] technology is platform-agnostic in principle
 
-- ### Current Landscape (2026)
-  - Waymo consolidated its US lead through 2025-2026, running paid public service in 11 metros and passing 200 million cumulative rider-only miles by February 2026; it closed a $16 billion Series D in February 2026 at a $126 billion post-money valuation and is targeting 1 million paid rides per week by year-end, having flipped Las Vegas to fully driverless on 8 July 2026 with Denver, San Diego and Tampa following.
-  - Tesla moved its Robotaxi service from the supervised Austin pilot (June 2025) to launching fully driverless from day one in Miami on 3 July 2026, reaching seven US metros; it crossed 10 billion cumulative supervised FSD miles in May 2026 and filed a Nevada AV Network permit in June 2026, though large-scale unsupervised deployment remains tied to the FSD v14/v15 rewrite and slipped towards late 2026-early 2027.
-  - China overtook the US on deployment scale: a June 2026 Road to Autonomy Index placed Baidu's Apollo Go first globally (81.7 vs Waymo's 77.6), with Apollo Go past 100 million cumulative rides across ~27 cities, Pony.ai above 1,700 vehicles and WeRide around 1,300, all racing to roughly 3,000-3,500-vehicle fleets by end-2026.
-  - The technical frontier shifted decisively to end-to-end learned driving: vision-language-action and world-model stacks (XPeng's VLA 2.0 and lidar-free 3,000-TOPS Turing-chip robotaxi mass-produced from May 2026, Pony.ai's PonyWorld 2.0 reinforcement-learning engine) and calls from firms like DeepRoute.ai to move to generalising foundation models over rule-heavy modular pipelines.
-  - Regulation advanced on multiple fronts: UNECE's GRVA published a draft Level 4 ADS international regulation in February 2026 (extending R157), NHTSA streamlined FMVSS exemptions for AVs in June 2025, Germany's remote-control act (StVFernLV) took effect in December 2025, and the UK's Automated Vehicles Act 2024 progressed towards commercial automated passenger-service pilots from spring 2026 with its framework call-for-evidence closing 5 March 2026.
-  - Hardware and unit economics improved sharply, with next-generation platforms cutting autonomous-driving-kit and sensor costs by 50-80 percent (WeRide, Baidu RT6, Pony.ai Gen-7 targeting sub-RMB 230,000 total vehicle cost by 2027), pushing per-ride costs below conventional ride-hailing in mature zones such as Wuhan.
-  - Open challenges as of 2026 centre on fleet-wide operational fragility (Baidu's 31 March 2026 Wuhan outage stalled ~100 vehicles and triggered a Chinese permit pause), highway and construction-zone edge cases (Waymo paused then restored freeway rides mid-2026 under recall 26E035), manufacturing and charging-infrastructure scaling bottlenecks, and unresolved liability, insurance and safety-assurance regimes for driverless operation.
+### Current Landscape (2026)
 
-- ### References
-  - 1. The Charge Port (2026). Robotaxi Status July 2026 — Waymo, Tesla & Zoox. https://thechargeport.com/robotaxi-tracker
-  - 2. CNBC (2025). Waymo, Zoox and Tesla drive 2025 robotaxi boom. https://www.cnbc.com/2025/12/16/waymo-amazon-zoox-tesla-robotaxi-expansion.html
-  - 3. EqualOcean (2026). Baidu's Apollo Go Overtakes Waymo as Chinese Robotaxi Operators Claim Three Top Spots. https://equalocean.com/news/2026062521966-baidus-apollo-go-overtakes-waymo-as-chinese-robotaxi-operators-claim-three-top
-  - 4. Electrek (2026). XPeng rolls first mass-produced robotaxi off the production line. https://electrek.co/2026/05/18/xpeng-robotaxi-mass-production-china-first/
-  - 5. MarkLines (2026). Global Trends in Autonomous Driving Regulations (2026). https://www.marklines.com/en/report/vsi034_202606
-  - 6. UK Department for Transport / CCAV (2025). Developing the automated vehicles regulatory framework. https://www.gov.uk/government/speeches/developing-the-automated-vehicles-regulatory-framework
+- Waymo consolidated its US lead through 2025-2026, running paid public service in 11 metros and passing 200 million cumulative rider-only miles by February 2026; it closed a $16 billion Series D in February 2026 at a $126 billion post-money valuation and is targeting 1 million paid rides per week by year-end, having flipped Las Vegas to fully driverless on 8 July 2026 with Denver, San Diego and Tampa following.
+- Tesla moved its Robotaxi service from the supervised Austin pilot (June 2025) to launching fully driverless from day one in Miami on 3 July 2026, reaching seven US metros; it crossed 10 billion cumulative supervised FSD miles in May 2026 and filed a Nevada AV Network permit in June 2026, though large-scale unsupervised deployment remains tied to the FSD v14/v15 rewrite and slipped towards late 2026-early 2027.
+- China overtook the US on deployment scale: a June 2026 Road to Autonomy Index placed Baidu's Apollo Go first globally (81.7 vs Waymo's 77.6), with Apollo Go past 100 million cumulative rides across ~27 cities, Pony.ai above 1,700 vehicles and WeRide around 1,300, all racing to roughly 3,000-3,500-vehicle fleets by end-2026.
+- The technical frontier shifted decisively to end-to-end learned driving: vision-language-action and world-model stacks (XPeng's VLA 2.0 and lidar-free 3,000-TOPS Turing-chip robotaxi mass-produced from May 2026, Pony.ai's PonyWorld 2.0 reinforcement-learning engine) and calls from firms like DeepRoute.ai to move to generalising foundation models over rule-heavy modular pipelines.
+- Regulation advanced on multiple fronts: UNECE's GRVA published a draft Level 4 ADS international regulation in February 2026 (extending R157), NHTSA streamlined FMVSS exemptions for AVs in June 2025, Germany's remote-control act (StVFernLV) took effect in December 2025, and the UK's Automated Vehicles Act 2024 progressed towards commercial automated passenger-service pilots from spring 2026 with its framework call-for-evidence closing 5 March 2026.
+- Hardware and unit economics improved sharply, with next-generation platforms cutting autonomous-driving-kit and sensor costs by 50-80 percent (WeRide, Baidu RT6, Pony.ai Gen-7 targeting sub-RMB 230,000 total vehicle cost by 2027), pushing per-ride costs below conventional ride-hailing in mature zones such as Wuhan.
+- Open challenges as of 2026 centre on fleet-wide operational fragility (Baidu's 31 March 2026 Wuhan outage stalled ~100 vehicles and triggered a Chinese permit pause), highway and construction-zone edge cases (Waymo paused then restored freeway rides mid-2026 under recall 26E035), manufacturing and charging-infrastructure scaling bottlenecks, and unresolved liability, insurance and safety-assurance regimes for driverless operation.
 
-- ### Provenance
+### References
+
+- 1. The Charge Port (2026). Robotaxi Status July 2026 — Waymo, Tesla & Zoox. https://thechargeport.com/robotaxi-tracker
+- 2. CNBC (2025). Waymo, Zoox and Tesla drive 2025 robotaxi boom. https://www.cnbc.com/2025/12/16/waymo-amazon-zoox-tesla-robotaxi-expansion.html
+- 3. EqualOcean (2026). Baidu's Apollo Go Overtakes Waymo as Chinese Robotaxi Operators Claim Three Top Spots. https://equalocean.com/news/2026062521966-baidus-apollo-go-overtakes-waymo-as-chinese-robotaxi-operators-claim-three-top
+- 4. Electrek (2026). XPeng rolls first mass-produced robotaxi off the production line. https://electrek.co/2026/05/18/xpeng-robotaxi-mass-production-china-first/
+- 5. MarkLines (2026). Global Trends in Autonomous Driving Regulations (2026). https://www.marklines.com/en/report/vsi034_202606
+- 6. UK Department for Transport / CCAV (2025). Developing the automated vehicles regulatory framework. https://www.gov.uk/government/speeches/developing-the-automated-vehicles-regulatory-framework
+
+### Provenance
 

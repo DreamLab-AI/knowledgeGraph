@@ -1,237 +1,255 @@
-
 Standardised benchmark suites and evaluation frameworks for measuring autonomous agent capabilities across software engineering, web navigation, reasoning, and general task completion — includes SWE-bench, WebArena, ARC-AGI-2, inspect_ai, AgentBench, and VitaBench.
 
-- ### Semantic Classification
+### Semantic Classification
 
-- ### Content
-  ## Compositional Relationships (Components)
-      SubClassOf(ai:AgentEvaluationBenchmarks
-        ObjectSomeValuesFrom(ai:hasPart ai:SWEbench))
-      SubClassOf(ai:AgentEvaluationBenchmarks
-        ObjectSomeValuesFrom(ai:hasPart ai:WebArena))
-      SubClassOf(ai:AgentEvaluationBenchmarks
-        ObjectSomeValuesFrom(ai:hasPart ai:GAIABenchmark))
-      SubClassOf(ai:AgentEvaluationBenchmarks
-        ObjectSomeValuesFrom(ai:hasPart ai:OSWorld))
-      SubClassOf(ai:AgentEvaluationBenchmarks
-        ObjectSomeValuesFrom(ai:hasPart ai:AgentBench))
-      SubClassOf(ai:AgentEvaluationBenchmarks
-        ObjectSomeValuesFrom(ai:hasPart ai:VitaBench))
-      SubClassOf(ai:AgentEvaluationBenchmarks
-        ObjectSomeValuesFrom(ai:hasPart ai:METRHCAST))
-      SubClassOf(ai:AgentEvaluationBenchmarks
-        ObjectSomeValuesFrom(ai:hasPart ai:TAUbench))
-      SubClassOf(ai:AgentEvaluationBenchmarks
-        ObjectSomeValuesFrom(ai:hasPart ai:InspectAI))
+### Content
 
-  ## Dependency Relationships
-      SubClassOf(ai:AgentEvaluationBenchmarks
-        ObjectSomeValuesFrom(ai:requires ai:AgentExecutionSandboxes))
-      SubClassOf(ai:AgentEvaluationBenchmarks
-        ObjectSomeValuesFrom(ai:requires ai:LargeLanguageModel))
-      SubClassOf(ai:AgentEvaluationBenchmarks
-        ObjectSomeValuesFrom(ai:requires ai:ToolUse))
-      SubClassOf(ai:AgentEvaluationBenchmarks
-        ObjectSomeValuesFrom(ai:requires ai:ReActPattern))
-      SubClassOf(ai:AgentEvaluationBenchmarks
-        ObjectSomeValuesFrom(ai:requires ai:SandboxedEnvironment))
-      SubClassOf(ai:AgentEvaluationBenchmarks
-        ObjectSomeValuesFrom(ai:requires ai:FoundationModels))
+## Compositional Relationships (Components)
+    SubClassOf(ai:AgentEvaluationBenchmarks
+      ObjectSomeValuesFrom(ai:hasPart ai:SWEbench))
+    SubClassOf(ai:AgentEvaluationBenchmarks
+      ObjectSomeValuesFrom(ai:hasPart ai:WebArena))
+    SubClassOf(ai:AgentEvaluationBenchmarks
+      ObjectSomeValuesFrom(ai:hasPart ai:GAIABenchmark))
+    SubClassOf(ai:AgentEvaluationBenchmarks
+      ObjectSomeValuesFrom(ai:hasPart ai:OSWorld))
+    SubClassOf(ai:AgentEvaluationBenchmarks
+      ObjectSomeValuesFrom(ai:hasPart ai:AgentBench))
+    SubClassOf(ai:AgentEvaluationBenchmarks
+      ObjectSomeValuesFrom(ai:hasPart ai:VitaBench))
+    SubClassOf(ai:AgentEvaluationBenchmarks
+      ObjectSomeValuesFrom(ai:hasPart ai:METRHCAST))
+    SubClassOf(ai:AgentEvaluationBenchmarks
+      ObjectSomeValuesFrom(ai:hasPart ai:TAUbench))
+    SubClassOf(ai:AgentEvaluationBenchmarks
+      ObjectSomeValuesFrom(ai:hasPart ai:InspectAI))
 
-  ## Capability Relationships
-      SubClassOf(ai:AgentEvaluationBenchmarks
-        ObjectSomeValuesFrom(ai:enables ai:AISafety))
-      SubClassOf(ai:AgentEvaluationBenchmarks
-        ObjectSomeValuesFrom(ai:enables ai:HumanInTheLoop))
-      SubClassOf(ai:AgentEvaluationBenchmarks
-        ObjectSomeValuesFrom(ai:enables ai:AutonomousCoding))
-      SubClassOf(ai:AgentEvaluationBenchmarks
-        ObjectSomeValuesFrom(ai:enables ai:ComputerUse))
-      SubClassOf(ai:AgentEvaluationBenchmarks
-        ObjectSomeValuesFrom(ai:enables ai:BrowserAutomation))
-      SubClassOf(ai:AgentEvaluationBenchmarks
-        ObjectSomeValuesFrom(ai:enables ai:AgentCapabilityDisclosure))
+## Dependency Relationships
+    SubClassOf(ai:AgentEvaluationBenchmarks
+      ObjectSomeValuesFrom(ai:requires ai:AgentExecutionSandboxes))
+    SubClassOf(ai:AgentEvaluationBenchmarks
+      ObjectSomeValuesFrom(ai:requires ai:LargeLanguageModel))
+    SubClassOf(ai:AgentEvaluationBenchmarks
+      ObjectSomeValuesFrom(ai:requires ai:ToolUse))
+    SubClassOf(ai:AgentEvaluationBenchmarks
+      ObjectSomeValuesFrom(ai:requires ai:ReActPattern))
+    SubClassOf(ai:AgentEvaluationBenchmarks
+      ObjectSomeValuesFrom(ai:requires ai:SandboxedEnvironment))
+    SubClassOf(ai:AgentEvaluationBenchmarks
+      ObjectSomeValuesFrom(ai:requires ai:FoundationModels))
 
-  ## Implementation Relationships
-      SubClassOf(ai:AgentEvaluationBenchmarks
-        ObjectSomeValuesFrom(ai:implements ai:LLMEvaluation))
-      SubClassOf(ai:AgentEvaluationBenchmarks
-        ObjectSomeValuesFrom(ai:implements ai:ReinforcementLearning))
-      SubClassOf(ai:AgentEvaluationBenchmarks
-        ObjectSomeValuesFrom(ai:implements ai:TaskCompletionScoring))
-      SubClassOf(ai:AgentEvaluationBenchmarks
-        ObjectSomeValuesFrom(ai:implements ai:SafetyRubric))
-      SubClassOf(ai:AgentEvaluationBenchmarks
-        ObjectSomeValuesFrom(ai:implements ai:PlanAndExecutePattern))
+## Capability Relationships
+    SubClassOf(ai:AgentEvaluationBenchmarks
+      ObjectSomeValuesFrom(ai:enables ai:AISafety))
+    SubClassOf(ai:AgentEvaluationBenchmarks
+      ObjectSomeValuesFrom(ai:enables ai:HumanInTheLoop))
+    SubClassOf(ai:AgentEvaluationBenchmarks
+      ObjectSomeValuesFrom(ai:enables ai:AutonomousCoding))
+    SubClassOf(ai:AgentEvaluationBenchmarks
+      ObjectSomeValuesFrom(ai:enables ai:ComputerUse))
+    SubClassOf(ai:AgentEvaluationBenchmarks
+      ObjectSomeValuesFrom(ai:enables ai:BrowserAutomation))
+    SubClassOf(ai:AgentEvaluationBenchmarks
+      ObjectSomeValuesFrom(ai:enables ai:AgentCapabilityDisclosure))
 
-  ## Reduction Relationships
-      SubClassOf(ai:AgentEvaluationBenchmarks
-        ObjectSomeValuesFrom(ai:reducesTo ai:LLMEvaluation))
-      SubClassOf(ai:AgentEvaluationBenchmarks
-        ObjectSomeValuesFrom(ai:reducesTo ai:SoftwareEngineeringBenchmark))
-      SubClassOf(ai:AgentEvaluationBenchmarks
-        ObjectSomeValuesFrom(ai:reducesTo ai:TaskCompletionMetric))
+## Implementation Relationships
+    SubClassOf(ai:AgentEvaluationBenchmarks
+      ObjectSomeValuesFrom(ai:implements ai:LLMEvaluation))
+    SubClassOf(ai:AgentEvaluationBenchmarks
+      ObjectSomeValuesFrom(ai:implements ai:ReinforcementLearning))
+    SubClassOf(ai:AgentEvaluationBenchmarks
+      ObjectSomeValuesFrom(ai:implements ai:TaskCompletionScoring))
+    SubClassOf(ai:AgentEvaluationBenchmarks
+      ObjectSomeValuesFrom(ai:implements ai:SafetyRubric))
+    SubClassOf(ai:AgentEvaluationBenchmarks
+      ObjectSomeValuesFrom(ai:implements ai:PlanAndExecutePattern))
 
-  ## Support Relationships
-      SubClassOf(ai:AgentEvaluationBenchmarks
-        ObjectSomeValuesFrom(ai:supports ai:AgenticAI))
-      SubClassOf(ai:AgentEvaluationBenchmarks
-        ObjectSomeValuesFrom(ai:supports ai:MultiAgentOrchestrationFrameworks))
-      SubClassOf(ai:AgentEvaluationBenchmarks
-        ObjectSomeValuesFrom(ai:supports ai:AgentDevelopmentSDKs))
-      SubClassOf(ai:AgentEvaluationBenchmarks
-        ObjectSomeValuesFrom(ai:supports ai:AgentFrameworks))
-      SubClassOf(ai:AgentEvaluationBenchmarks
-        ObjectSomeValuesFrom(ai:supports ai:ResponsibleScalingPolicy))
-      SubClassOf(ai:AgentEvaluationBenchmarks
-        ObjectSomeValuesFrom(ai:supports ai:RegulatoryConformityAssessment))
+## Reduction Relationships
+    SubClassOf(ai:AgentEvaluationBenchmarks
+      ObjectSomeValuesFrom(ai:reducesTo ai:LLMEvaluation))
+    SubClassOf(ai:AgentEvaluationBenchmarks
+      ObjectSomeValuesFrom(ai:reducesTo ai:SoftwareEngineeringBenchmark))
+    SubClassOf(ai:AgentEvaluationBenchmarks
+      ObjectSomeValuesFrom(ai:reducesTo ai:TaskCompletionMetric))
 
-  ## Contrasting Relationships
-      SubClassOf(ai:AgentEvaluationBenchmarks
-        ObjectSomeValuesFrom(ai:contrastsWith ai:RewardHacking))
-      SubClassOf(ai:AgentEvaluationBenchmarks
-        ObjectSomeValuesFrom(ai:contrastsWith ai:StaticNLPBenchmark))
+## Support Relationships
+    SubClassOf(ai:AgentEvaluationBenchmarks
+      ObjectSomeValuesFrom(ai:supports ai:AgenticAI))
+    SubClassOf(ai:AgentEvaluationBenchmarks
+      ObjectSomeValuesFrom(ai:supports ai:MultiAgentOrchestrationFrameworks))
+    SubClassOf(ai:AgentEvaluationBenchmarks
+      ObjectSomeValuesFrom(ai:supports ai:AgentDevelopmentSDKs))
+    SubClassOf(ai:AgentEvaluationBenchmarks
+      ObjectSomeValuesFrom(ai:supports ai:AgentFrameworks))
+    SubClassOf(ai:AgentEvaluationBenchmarks
+      ObjectSomeValuesFrom(ai:supports ai:ResponsibleScalingPolicy))
+    SubClassOf(ai:AgentEvaluationBenchmarks
+      ObjectSomeValuesFrom(ai:supports ai:RegulatoryConformityAssessment))
 
-  ## About
+## Contrasting Relationships
+    SubClassOf(ai:AgentEvaluationBenchmarks
+      ObjectSomeValuesFrom(ai:contrastsWith ai:RewardHacking))
+    SubClassOf(ai:AgentEvaluationBenchmarks
+      ObjectSomeValuesFrom(ai:contrastsWith ai:StaticNLPBenchmark))
 
-  ### Historical Origins and Motivation
+## About
 
-  Agent evaluation benchmarks arose from the recognition that static language-model benchmarks measure a fundamentally different capability than autonomous goal-directed action. A model that scores well on multiple-choice reasoning may still fail catastrophically when required to coordinate dozens of sequential tool calls, maintain state across a long context window, recover from tool errors mid-sequence, make irrecoverable decisions in live environments, and produce side-effects that accumulate across turns. The earliest agent-oriented evaluations grew out of the interactive code execution tradition exemplified by HumanEval (Chen et al., 2021) and MBPP, but those benchmarks evaluated single-function completion in isolation rather than multi-step goal pursuit. The transition to genuine agent evaluation required several innovations: interactive environments that the agent could modify (not just observe), verifiable success criteria that could not be gamed by surface-level text similarity, long-horizon tasks decomposable into discrete measurable subtasks, and reproducible sandboxed infrastructure so that results across different agent scaffolding approaches could be meaningfully compared.
+### Historical Origins and Motivation
 
-  The field achieved its first mature exemplar with the WebArena paper (Zhou et al., 2024), which instantiated five real web applications — an e-commerce shop, a Reddit-style forum, a GitLab code repository, a content management system, and Wikipedia — in Docker containers, constructed 812 natural language tasks spanning multi-step navigation, form-filling, search, and cross-application workflows, and provided a graded automatic scoring system. Critically, WebArena used functional verification (checking the actual state of the sandboxed application after agent action) rather than string matching, making it far harder to game than prior benchmarks. The SWE-bench paper (Jimenez et al., 2024), published around the same time, achieved a different kind of ground truth: it curated 2,294 real GitHub issues from twelve popular Python repositories (Django, Flask, pytest, astropy, scikit-learn, and others), paired each issue with the actual developer-written patch and the test suite that distinguishes the broken from the fixed state, and evaluated agents on their ability to submit a patch that makes the failing tests pass without breaking existing tests. This approach gave SWE-bench an unusually robust evaluation signal: test-suite pass/fail is binary, deterministic, and directly reflects what developers actually care about, making it the de facto leaderboard for software engineering agents.
+Agent evaluation benchmarks arose from the recognition that static language-model benchmarks measure a fundamentally different capability than autonomous goal-directed action. A model that scores well on multiple-choice reasoning may still fail catastrophically when required to coordinate dozens of sequential tool calls, maintain state across a long context window, recover from tool errors mid-sequence, make irrecoverable decisions in live environments, and produce side-effects that accumulate across turns. The earliest agent-oriented evaluations grew out of the interactive code execution tradition exemplified by HumanEval (Chen et al., 2021) and MBPP, but those benchmarks evaluated single-function completion in isolation rather than multi-step goal pursuit. The transition to genuine agent evaluation required several innovations: interactive environments that the agent could modify (not just observe), verifiable success criteria that could not be gamed by surface-level text similarity, long-horizon tasks decomposable into discrete measurable subtasks, and reproducible sandboxed infrastructure so that results across different agent scaffolding approaches could be meaningfully compared.
 
-  ### The GAIA and OSWorld Generations
+The field achieved its first mature exemplar with the WebArena paper (Zhou et al., 2024), which instantiated five real web applications — an e-commerce shop, a Reddit-style forum, a GitLab code repository, a content management system, and Wikipedia — in Docker containers, constructed 812 natural language tasks spanning multi-step navigation, form-filling, search, and cross-application workflows, and provided a graded automatic scoring system. Critically, WebArena used functional verification (checking the actual state of the sandboxed application after agent action) rather than string matching, making it far harder to game than prior benchmarks. The SWE-bench paper (Jimenez et al., 2024), published around the same time, achieved a different kind of ground truth: it curated 2,294 real GitHub issues from twelve popular Python repositories (Django, Flask, pytest, astropy, scikit-learn, and others), paired each issue with the actual developer-written patch and the test suite that distinguishes the broken from the fixed state, and evaluated agents on their ability to submit a patch that makes the failing tests pass without breaking existing tests. This approach gave SWE-bench an unusually robust evaluation signal: test-suite pass/fail is binary, deterministic, and directly reflects what developers actually care about, making it the de facto leaderboard for software engineering agents.
 
-  GAIA (Mialon et al., 2024) addressed the general assistant capability axis: tasks requiring a combination of web search, file processing, code execution, and multi-step reasoning to arrive at a factual answer that could be verified against a human-annotated reference. GAIA's three difficulty levels (Level 1: straightforward web lookup; Level 2: multi-step reasoning across several tools; Level 3: complex multi-hop requiring sustained planning) provided a capability spectrum that allowed fine-grained progress tracking. The benchmark's explicit requirement for human-annotated reference answers and its continuous refresh from recent web content made contamination harder than for static knowledge benchmarks. OSWorld (Xie et al., 2024) moved evaluation to the full desktop computer-use domain: an agent interacts with a real operating system (Ubuntu or Windows) through screenshot observations and simulated keyboard/mouse actions, completing 369 tasks involving file management, application control (LibreOffice, Chrome, GIMP, VS Code), and cross-application workflows that mirror what a professional knowledge worker would do across a normal workday. OSWorld's success as a benchmark catalysed an entire sub-field of computer-use research and directly motivated Anthropic's development of the computer-use capability subsequently exposed through the Claude Agent SDK.
+### The GAIA and OSWorld Generations
 
-  ### Safety Evaluation: Time Horizons and Red-Teaming
+GAIA (Mialon et al., 2024) addressed the general assistant capability axis: tasks requiring a combination of web search, file processing, code execution, and multi-step reasoning to arrive at a factual answer that could be verified against a human-annotated reference. GAIA's three difficulty levels (Level 1: straightforward web lookup; Level 2: multi-step reasoning across several tools; Level 3: complex multi-hop requiring sustained planning) provided a capability spectrum that allowed fine-grained progress tracking. The benchmark's explicit requirement for human-annotated reference answers and its continuous refresh from recent web content made contamination harder than for static knowledge benchmarks. OSWorld (Xie et al., 2024) moved evaluation to the full desktop computer-use domain: an agent interacts with a real operating system (Ubuntu or Windows) through screenshot observations and simulated keyboard/mouse actions, completing 369 tasks involving file management, application control (LibreOffice, Chrome, GIMP, VS Code), and cross-application workflows that mirror what a professional knowledge worker would do across a normal workday. OSWorld's success as a benchmark catalysed an entire sub-field of computer-use research and directly motivated Anthropic's development of the computer-use capability subsequently exposed through the Claude Agent SDK.
 
-  A parallel and equally important strand of evaluation focuses not on task success but on safety: what harmful actions might an agent take, how long can it operate autonomously before requiring human oversight, and how robust is it to adversarial prompts designed to redirect its actions? METR (Model Evaluation and Threat Research) developed HCAST (Human-Calibrated Autonomy Software Tasks) specifically to address the time-horizon question: by recruiting 140 skilled engineers to attempt the same tasks under controlled conditions, METR obtained empirical estimates of how long each task would take a skilled human, allowing them to situate AI agent performance in a human-relative frame. Their longitudinal findings — that the effective time horizon of frontier agents has been doubling every four months since 2024, with the capability frontier compressing from tasks that would take a human less than a minute to tasks taking hours — provide a concrete empirical basis for responsible scaling policies adopted by frontier labs.
+### Safety Evaluation: Time Horizons and Red-Teaming
 
-  A critical and sometimes under-appreciated dimension is benchmark manipulation and [[Reward Hacking]]. UC Berkeley's Center for Responsible Decentralised Intelligence published research in 2025 demonstrating that an automated scanning agent could exploit scoring loopholes in all eight major agent benchmarks simultaneously — SWE-bench, WebArena, OSWorld, GAIA, Terminal-Bench, FieldWorkArena, CAR-bench, and AgentBench — achieving near-perfect scores without solving any of the underlying tasks. The mechanism in each case was different: in SWE-bench, a February 2026 audit found that 59.4% of the hardest tasks had tests that would pass even when the underlying bug remained unfixed, and roughly one-third of all SWE-bench issues contained solution hints in the issue comments themselves. This contamination problem prompted the community to introduce more rigorous anti-exploitation constraints, commission independent evaluation organisations (METR, AISI, Apollo Research), and adopt multi-scorer consensus protocols for high-stakes assessments.
+A parallel and equally important strand of evaluation focuses not on task success but on safety: what harmful actions might an agent take, how long can it operate autonomously before requiring human oversight, and how robust is it to adversarial prompts designed to redirect its actions? METR (Model Evaluation and Threat Research) developed HCAST (Human-Calibrated Autonomy Software Tasks) specifically to address the time-horizon question: by recruiting 140 skilled engineers to attempt the same tasks under controlled conditions, METR obtained empirical estimates of how long each task would take a skilled human, allowing them to situate AI agent performance in a human-relative frame. Their longitudinal findings — that the effective time horizon of frontier agents has been doubling every four months since 2024, with the capability frontier compressing from tasks that would take a human less than a minute to tasks taking hours — provide a concrete empirical basis for responsible scaling policies adopted by frontier labs.
 
-  ### The Rapid Performance Escalation of 2024–2026
+A critical and sometimes under-appreciated dimension is benchmark manipulation and [[Reward Hacking]]. UC Berkeley's Center for Responsible Decentralised Intelligence published research in 2025 demonstrating that an automated scanning agent could exploit scoring loopholes in all eight major agent benchmarks simultaneously — SWE-bench, WebArena, OSWorld, GAIA, Terminal-Bench, FieldWorkArena, CAR-bench, and AgentBench — achieving near-perfect scores without solving any of the underlying tasks. The mechanism in each case was different: in SWE-bench, a February 2026 audit found that 59.4% of the hardest tasks had tests that would pass even when the underlying bug remained unfixed, and roughly one-third of all SWE-bench issues contained solution hints in the issue comments themselves. This contamination problem prompted the community to introduce more rigorous anti-exploitation constraints, commission independent evaluation organisations (METR, AISI, Apollo Research), and adopt multi-scorer consensus protocols for high-stakes assessments.
 
-  The period from 2024 to mid-2026 witnessed arguably the fastest performance escalation on empirical AI benchmarks in the field's history. SWE-bench Verified SOTA moved from below 10% in early 2024 to 87.6% by mid-2026. GAIA top-1 moved from around 20% to 74.6%. OSWorld moved from around 10% to 73%. These improvements were driven by a combination of more capable base models (reasoning-mode models like o1, Claude 3.7, Gemini 2.5 Pro), significantly improved agent scaffolding (structured [[ReAct Pattern]] loops with automatic retry, better tool schemas, longer context), and dedicated fine-tuning for tool use and multi-step planning. The [[Chain-of-Thought]] and extended thinking capabilities of frontier models proved especially impactful for long-horizon tasks requiring decomposition and sub-goal tracking. METR's empirical doubling-time research documented that the model time horizon computed from SWE-bench Verified tasks follows an exponential trend, with a doubling time of approximately 70 days from late 2023 through mid-2025, accelerating above the long-run trend predicted by HCAST.
+### The Rapid Performance Escalation of 2024–2026
 
-  However, the rapid performance escalation has also revealed a structural limitation: benchmark saturation. As SOTA approaches or exceeds human performance on a benchmark, the benchmark loses its discriminative power for frontier model comparison, and the community must move to harder tasks. This dynamic drove the creation of SWE-bench Verified (a harder curated subset), ARC-AGI-2 (to replace ARC-AGI-1 after it was cracked by reasoning models in late 2024), and ultimately ARC-AGI-3 (launched March 2026, with all frontier systems below 1%). The ecosystem has learned to treat any benchmark not as a permanent measuring standard but as a temporary probe that must be continually refreshed or replaced as the capability frontier advances.
+The period from 2024 to mid-2026 witnessed arguably the fastest performance escalation on empirical AI benchmarks in the field's history. SWE-bench Verified SOTA moved from below 10% in early 2024 to 87.6% by mid-2026. GAIA top-1 moved from around 20% to 74.6%. OSWorld moved from around 10% to 73%. These improvements were driven by a combination of more capable base models (reasoning-mode models like o1, Claude 3.7, Gemini 2.5 Pro), significantly improved agent scaffolding (structured [[ReAct Pattern]] loops with automatic retry, better tool schemas, longer context), and dedicated fine-tuning for tool use and multi-step planning. The [[Chain-of-Thought]] and extended thinking capabilities of frontier models proved especially impactful for long-horizon tasks requiring decomposition and sub-goal tracking. METR's empirical doubling-time research documented that the model time horizon computed from SWE-bench Verified tasks follows an exponential trend, with a doubling time of approximately 70 days from late 2023 through mid-2025, accelerating above the long-run trend predicted by HCAST.
 
-  ## Major Benchmark Families
+However, the rapid performance escalation has also revealed a structural limitation: benchmark saturation. As SOTA approaches or exceeds human performance on a benchmark, the benchmark loses its discriminative power for frontier model comparison, and the community must move to harder tasks. This dynamic drove the creation of SWE-bench Verified (a harder curated subset), ARC-AGI-2 (to replace ARC-AGI-1 after it was cracked by reasoning models in late 2024), and ultimately ARC-AGI-3 (launched March 2026, with all frontier systems below 1%). The ecosystem has learned to treat any benchmark not as a permanent measuring standard but as a temporary probe that must be continually refreshed or replaced as the capability frontier advances.
 
-  ### Software Engineering Benchmarks
+## Major Benchmark Families
 
-  **[[SWE-bench]] (Jimenez et al., 2024)**
-  - 2,294 real GitHub issues across twelve Python repositories (Django, Flask, pytest, scikit-learn, astropy, sympy, sphinx, pylint, pydicom, and others)
-  - Success criterion: submitted patch makes failing tests pass without breaking other tests; fully automated verification via Docker-sandboxed test execution
-  - SWE-bench Verified: 500-instance human-validated subset with manual quality checks and coarse completion-time labels (<15 minutes, 15 minutes to 1 hour, 1 to 4 hours, >4 hours)
-  - SOTA as of mid-2026: 87.6% (Claude Opus 4.7) on Verified; leaderboard maintained at vals.ai and Princeton HAL
-  - Known vulnerability: February 2026 OpenAI audit found 59.4% of hardest tasks have tests that pass even without fixing the underlying bug
+### Software Engineering Benchmarks
+
+**[[SWE-bench]] (Jimenez et al., 2024)**
+
+- 2,294 real GitHub issues across twelve Python repositories (Django, Flask, pytest, scikit-learn, astropy, sympy, sphinx, pylint, pydicom, and others)
+- Success criterion: submitted patch makes failing tests pass without breaking other tests; fully automated verification via Docker-sandboxed test execution
+- SWE-bench Verified: 500-instance human-validated subset with manual quality checks and coarse completion-time labels (<15 minutes, 15 minutes to 1 hour, 1 to 4 hours, >4 hours)
+- SOTA as of mid-2026: 87.6% (Claude Opus 4.7) on Verified; leaderboard maintained at vals.ai and Princeton HAL
+- Known vulnerability: February 2026 OpenAI audit found 59.4% of hardest tasks have tests that pass even without fixing the underlying bug
 
   **[[Terminal-Bench]]**
-  - Command-line task completion in a sandboxed shell environment
-  - Tests file manipulation, package installation, process management, environment configuration, and system-level scripting
-  - Particularly relevant for SRE agents and infrastructure automation use cases
-  - Includes tasks that require multi-command pipelines and error recovery after failed commands
+
+- Command-line task completion in a sandboxed shell environment
+- Tests file manipulation, package installation, process management, environment configuration, and system-level scripting
+- Particularly relevant for SRE agents and infrastructure automation use cases
+- Includes tasks that require multi-command pipelines and error recovery after failed commands
 
   **HumanEval / MBPP**
-  - Function-level code generation from docstrings; SOTA >99%; largely saturated as of 2025
-  - No longer considered a meaningful agent signal but retained for model comparison continuity
-  - HumanEval+ and similar extensions add edge-case tests and adversarial inputs to restore discriminative power
+
+- Function-level code generation from docstrings; SOTA >99%; largely saturated as of 2025
+- No longer considered a meaningful agent signal but retained for model comparison continuity
+- HumanEval+ and similar extensions add edge-case tests and adversarial inputs to restore discriminative power
 
   **EnterpriseBench / Corecraft (ICLR 2026)**
-  - High-fidelity RL environments targeting enterprise workflows (ERP systems, CRM integrations, document processing)
-  - Designed to resist the kind of reward hacking that affected consumer-facing benchmarks
-  - Tasks calibrated to real enterprise deployment requirements including multi-step approval workflows
+
+- High-fidelity RL environments targeting enterprise workflows (ERP systems, CRM integrations, document processing)
+- Designed to resist the kind of reward hacking that affected consumer-facing benchmarks
+- Tasks calibrated to real enterprise deployment requirements including multi-step approval workflows
 
   ### Web and GUI Benchmarks
 
   **[[WebArena]] (Zhou et al., 2024)**
-  - 812 tasks across five sandboxed real web applications: Shopping (OpenCart), Social Forum (Reddit clone), Development (GitLab), CMS (Drupal), and Knowledge (Wikipedia)
-  - Tasks require multi-step navigation, form-filling, cross-application data synthesis, and state verification
-  - SOTA progress: from 14.41% baseline in 2024 to 61.7% (IBM CUGA) by early 2025
-  - Full Docker deployment for reproducibility; grading via functional state inspection rather than text matching
+
+- 812 tasks across five sandboxed real web applications: Shopping (OpenCart), Social Forum (Reddit clone), Development (GitLab), CMS (Drupal), and Knowledge (Wikipedia)
+- Tasks require multi-step navigation, form-filling, cross-application data synthesis, and state verification
+- SOTA progress: from 14.41% baseline in 2024 to 61.7% (IBM CUGA) by early 2025
+- Full Docker deployment for reproducibility; grading via functional state inspection rather than text matching
 
   **[[OSWorld]] (Xie et al., 2024)**
-  - 369 tasks on a live Windows or Ubuntu desktop accessed via VM screenshot plus simulated keyboard/mouse action API
-  - Task domains: file management, email, calendar, LibreOffice (Writer, Calc, Impress), Chrome, GIMP, VS Code, and cross-application workflows
-  - SOTA 73% by mid-2026, a massive improvement from ~10% at initial release
-  - Inspired Anthropic's development of the computer-use capability and the [[Computer Use]] API
+
+- 369 tasks on a live Windows or Ubuntu desktop accessed via VM screenshot plus simulated keyboard/mouse action API
+- Task domains: file management, email, calendar, LibreOffice (Writer, Calc, Impress), Chrome, GIMP, VS Code, and cross-application workflows
+- SOTA 73% by mid-2026, a massive improvement from ~10% at initial release
+- Inspired Anthropic's development of the computer-use capability and the [[Computer Use]] API
 
   **ScreenSpot / Mind2Web**
-  - Web element localisation and GUI element understanding; tests the perceptual grounding needed before any navigation action
-  - Mind2Web: 2,000 tasks from 137 real websites with human-annotated action sequences
+
+- Web element localisation and GUI element understanding; tests the perceptual grounding needed before any navigation action
+- Mind2Web: 2,000 tasks from 137 real websites with human-annotated action sequences
 
   **WorkArena / AssistGUI**
-  - Enterprise GUI automation specifically targeting ServiceNow and Microsoft Office workflows
-  - Reflects the business process automation use case rather than general web navigation
+
+- Enterprise GUI automation specifically targeting ServiceNow and Microsoft Office workflows
+- Reflects the business process automation use case rather than general web navigation
 
   ### General Assistant Benchmarks
 
   **[[GAIA Benchmark]] (Mialon et al., 2024)**
-  - Factual multi-hop tasks requiring combination of web search, file processing, code execution, and sustained reasoning
-  - Three difficulty levels; Level 3 tasks can require ten or more sequential tool calls across multiple web sources
-  - Reference answers human-annotated; leaderboard maintained at Princeton HAL (Holistic Agent Leaderboard)
-  - SOTA 74.6% (Claude Sonnet 4.5, mid-2026); Anthropic models occupy top six positions
-  - Designed for contamination resistance: tasks reference recent web content and require multi-modal processing
+
+- Factual multi-hop tasks requiring combination of web search, file processing, code execution, and sustained reasoning
+- Three difficulty levels; Level 3 tasks can require ten or more sequential tool calls across multiple web sources
+- Reference answers human-annotated; leaderboard maintained at Princeton HAL (Holistic Agent Leaderboard)
+- SOTA 74.6% (Claude Sonnet 4.5, mid-2026); Anthropic models occupy top six positions
+- Designed for contamination resistance: tasks reference recent web content and require multi-modal processing
 
   **[[AgentBench]] (Liu et al., 2024)**
-  - Eight heterogeneous environments: operating system shell, database (SQL), web browsing, knowledge graph navigation, card games, lateral-thinking puzzles, house-holding, and a web shopping simulation
-  - Tests generalisation breadth across modalities and action spaces
-  - Revealed stark generalisation gaps: models that scored well on one environment often failed on others, motivating research into transfer learning for agents
+
+- Eight heterogeneous environments: operating system shell, database (SQL), web browsing, knowledge graph navigation, card games, lateral-thinking puzzles, house-holding, and a web shopping simulation
+- Tests generalisation breadth across modalities and action spaces
+- Revealed stark generalisation gaps: models that scored well on one environment often failed on others, motivating research into transfer learning for agents
 
   **[[VitaBench]] (ICLR 2026)**
-  - 400 tasks: 100 cross-scenario tasks and 300 single-scenario tasks
-  - Grounded in three real-world application domains: food delivery, in-store consumption, and online travel services
-  - 66 tools; tasks require proactive clarification of ambiguous instructions, tracking shifting user intent, and reasoning across temporal and spatial dimensions
-  - Evaluation via rubric-based sliding-window evaluator, enabling robust assessment of diverse solution pathways in stochastic interaction environments
-  - Best models achieve <30% on cross-scenario tasks (ICLR 2026); reflects the difficulty of real-world service interaction
-  - VitaBench 2.0 (arXiv 2605.27141): extends to personalised and proactive agents in long-term user interaction sessions
+
+- 400 tasks: 100 cross-scenario tasks and 300 single-scenario tasks
+- Grounded in three real-world application domains: food delivery, in-store consumption, and online travel services
+- 66 tools; tasks require proactive clarification of ambiguous instructions, tracking shifting user intent, and reasoning across temporal and spatial dimensions
+- Evaluation via rubric-based sliding-window evaluator, enabling robust assessment of diverse solution pathways in stochastic interaction environments
+- Best models achieve <30% on cross-scenario tasks (ICLR 2026); reflects the difficulty of real-world service interaction
+- VitaBench 2.0 (arXiv 2605.27141): extends to personalised and proactive agents in long-term user interaction sessions
 
   ### Safety and Time-Horizon Benchmarks
 
   **[[METR HCAST]] (METR, 2025)**
-  - ~230 software tasks calibrated against 563 skilled human attempts by 140 participants with relevant domain expertise
-  - Provides human time-calibrated reference: tasks are annotated by median human completion time, enabling direct AI-to-human comparison
-  - Primary measurement: effective time horizon — the longest task completable at ≥50% pass@1
-  - Longitudinal finding: frontier model time horizon has doubled approximately every 4 months since mid-2024, accelerating above the long-run 7-month doubling trend documented back to 2019
-  - Used by frontier labs (Anthropic, OpenAI, Google DeepMind) in responsible scaling policy commitments as a gating criterion for expanded autonomy
+
+- ~230 software tasks calibrated against 563 skilled human attempts by 140 participants with relevant domain expertise
+- Provides human time-calibrated reference: tasks are annotated by median human completion time, enabling direct AI-to-human comparison
+- Primary measurement: effective time horizon — the longest task completable at ≥50% pass@1
+- Longitudinal finding: frontier model time horizon has doubled approximately every 4 months since mid-2024, accelerating above the long-run 7-month doubling trend documented back to 2019
+- Used by frontier labs (Anthropic, OpenAI, Google DeepMind) in responsible scaling policy commitments as a gating criterion for expanded autonomy
 
   **[[TAU-bench]]**
-  - Tool-agent-user interaction benchmark; measures policy adherence in multi-turn conversations with simulated users
-  - Tasks: customer service scenarios with explicit policy constraints (return policies, eligibility rules, approval thresholds)
-  - Evaluates whether agents follow organisational policy even when users pressure them to deviate
-  - Particularly relevant for deploying agents in regulated business contexts (financial services, healthcare, insurance)
+
+- Tool-agent-user interaction benchmark; measures policy adherence in multi-turn conversations with simulated users
+- Tasks: customer service scenarios with explicit policy constraints (return policies, eligibility rules, approval thresholds)
+- Evaluates whether agents follow organisational policy even when users pressure them to deviate
+- Particularly relevant for deploying agents in regulated business contexts (financial services, healthcare, insurance)
 
   **ARC-AGI-1 / 2 / 3 (ARC Prize)**
-  - Procedurally generated visual reasoning puzzles requiring abstraction from a few examples
-  - ARC-AGI-1: exceeded human baseline by reasoning-mode frontier models in late 2024, effectively retired
-  - ARC-AGI-2: SOTA 77.1% (Gemini 3.1 Pro, February 2026); tests harder abstract pattern induction
-  - ARC-AGI-3: launched March 2026; all frontier systems below 1%; tests aspects of abstract reasoning not yet captured by current architectures
+
+- Procedurally generated visual reasoning puzzles requiring abstraction from a few examples
+- ARC-AGI-1: exceeded human baseline by reasoning-mode frontier models in late 2024, effectively retired
+- ARC-AGI-2: SOTA 77.1% (Gemini 3.1 Pro, February 2026); tests harder abstract pattern induction
+- ARC-AGI-3: launched March 2026; all frontier systems below 1%; tests aspects of abstract reasoning not yet captured by current architectures
 
   **OWASP Agentic Application Top 10 (2026)**
-  - Red-team evaluation suite targeting adversarial vulnerabilities in deployed agents
-  - Tests: prompt injection, data exfiltration, content policy bypass, decision and behaviour manipulation, denial of service, system and tool compromise, content injection
-  - Adopted by enterprise security teams as a pre-deployment checklist for production agent systems
+
+- Red-team evaluation suite targeting adversarial vulnerabilities in deployed agents
+- Tests: prompt injection, data exfiltration, content policy bypass, decision and behaviour manipulation, denial of service, system and tool compromise, content injection
+- Adopted by enterprise security teams as a pre-deployment checklist for production agent systems
 
   ### Evaluation Frameworks
 
   **[[inspect_ai]] (UK AISI)**
-  - Open-source Python framework for reproducible LLM and agent evaluations
-  - Primitives: Dataset → Task → Solver → Scorer; supports multi-turn agent workflows with full tool integration
-  - Built-in Docker sandboxing for code execution; optional Kubernetes and Proxmox adapters
-  - 200+ pre-built evaluation suites in inspect_evals repository, co-maintained with Arcadia Impact and the Canadian Vector Institute
-  - Adopted by METR, Apollo Research, other government AISIs, and multiple frontier safety labs
-  - VS Code log viewer and web-based Inspect View for interactive result analysis
+
+- Open-source Python framework for reproducible LLM and agent evaluations
+- Primitives: Dataset → Task → Solver → Scorer; supports multi-turn agent workflows with full tool integration
+- Built-in Docker sandboxing for code execution; optional Kubernetes and Proxmox adapters
+- 200+ pre-built evaluation suites in inspect_evals repository, co-maintained with Arcadia Impact and the Canadian Vector Institute
+- Adopted by METR, Apollo Research, other government AISIs, and multiple frontier safety labs
+- VS Code log viewer and web-based Inspect View for interactive result analysis
 
   **AgentEval / LangSmith / Braintrust**
-  - Commercial evaluation platforms providing continuous regression testing for production agents
-  - Enable CI/CD integration so that agent capability regressions are caught on every model or scaffold update
-  - Support custom rubric definition, human annotation review, and dataset versioning
+
+- Commercial evaluation platforms providing continuous regression testing for production agents
+- Enable CI/CD integration so that agent capability regressions are caught on every model or scaffold update
+- Support custom rubric definition, human annotation review, and dataset versioning
 
   **Princeton HAL (Holistic Agent Leaderboard)**
-  - Aggregates results from GAIA and related general-assistant benchmarks
-  - Provides standardised submission and verification protocol to reduce self-reported score inflation
-  - Leaderboard maintained at hal.cs.princeton.edu
+
+- Aggregates results from GAIA and related general-assistant benchmarks
+- Provides standardised submission and verification protocol to reduce self-reported score inflation
+- Leaderboard maintained at hal.cs.princeton.edu
 
   ## Use Cases / Major Deployment Contexts
 
@@ -268,15 +286,16 @@ Standardised benchmark suites and evaluation frameworks for measuring autonomous
   **Information Theory and Benchmark Compression**: The field has increasingly recognised that aggregating benchmark scores into a single number loses important distributional information. METR HCAST's time-horizon framing is an information-theoretically motivated compression: rather than reporting pass rates across tasks of varying difficulty, it reports the single threshold task-length at which the agent's pass rate crosses 50%, a more interpretable and less gameable summary statistic.
 
   Key papers establishing the field:
-  - Chen et al. (2021) HumanEval: first widely-adopted code generation benchmark with functional tests
-  - Jimenez et al. (2024) SWE-bench: real-world issue resolution as agent evaluation
-  - Zhou et al. (2024) WebArena: sandboxed web navigation at scale
-  - Liu et al. (2024) AgentBench: heterogeneous multi-environment evaluation
-  - Mialon et al. (2024) GAIA: verified factual multi-step reasoning
-  - Xie et al. (2024) OSWorld: full desktop computer-use evaluation
-  - METR (2025) HCAST: human-calibrated time-horizon measurement
-  - VitaBench team (ICLR 2026): real-world service interaction evaluation
-  - Wang et al. (2025) 2025 AI Agent Index: landscape survey of deployed systems
+
+- Chen et al. (2021) HumanEval: first widely-adopted code generation benchmark with functional tests
+- Jimenez et al. (2024) SWE-bench: real-world issue resolution as agent evaluation
+- Zhou et al. (2024) WebArena: sandboxed web navigation at scale
+- Liu et al. (2024) AgentBench: heterogeneous multi-environment evaluation
+- Mialon et al. (2024) GAIA: verified factual multi-step reasoning
+- Xie et al. (2024) OSWorld: full desktop computer-use evaluation
+- METR (2025) HCAST: human-calibrated time-horizon measurement
+- VitaBench team (ICLR 2026): real-world service interaction evaluation
+- Wang et al. (2025) 2025 AI Agent Index: landscape survey of deployed systems
 
   ## Current Landscape (2026)
 
@@ -302,52 +321,56 @@ Standardised benchmark suites and evaluation frameworks for measuring autonomous
 
   ## Future Directions (2026–2030)
 
-  - **Dynamic benchmark generation**: procedural environment synthesis making contamination structurally impossible; extends the ARC-AGI approach to software engineering and web navigation domains
-  - **Longitudinal evaluation**: tracking agent performance over week-scale tasks requiring persistent memory, external tool state management, and coordination with human collaborators — a dimension not captured by any current benchmark
-  - **Adversarial co-evolution**: benchmarks that update in response to agent strategies (similar to competitive programming leaderboards), maintaining discriminative power through an evolutionary arms race
-  - **Multi-agent evaluation**: benchmarks measuring coordination quality, specialisation, role division, and emergent capability in agent collectives, not just individual agent competence — critical for the [[Multi-Agent Orchestration Frameworks]] ecosystem
-  - **Physical and embodied extension**: extending evaluation from digital environments to robot manipulation (IsaacLab, RLBench), factory control systems, and mixed physical-digital tasks combining computer-use with physical robot action
-  - **Regulatory standardisation**: NIST AI RMF updates and EU AI Act implementing acts expected 2026 to 2027 are anticipated to mandate specific benchmark coverage for high-risk agentic deployments, creating a new class of compliance-driven evaluation requirements
-  - **Economic and societal impact measurement**: moving beyond task success rates to measure the actual economic value delivered by agents in real deployments, providing a bridge between laboratory evaluation and business case assessment
+- **Dynamic benchmark generation**: procedural environment synthesis making contamination structurally impossible; extends the ARC-AGI approach to software engineering and web navigation domains
+- **Longitudinal evaluation**: tracking agent performance over week-scale tasks requiring persistent memory, external tool state management, and coordination with human collaborators — a dimension not captured by any current benchmark
+- **Adversarial co-evolution**: benchmarks that update in response to agent strategies (similar to competitive programming leaderboards), maintaining discriminative power through an evolutionary arms race
+- **Multi-agent evaluation**: benchmarks measuring coordination quality, specialisation, role division, and emergent capability in agent collectives, not just individual agent competence — critical for the [[Multi-Agent Orchestration Frameworks]] ecosystem
+- **Physical and embodied extension**: extending evaluation from digital environments to robot manipulation (IsaacLab, RLBench), factory control systems, and mixed physical-digital tasks combining computer-use with physical robot action
+- **Regulatory standardisation**: NIST AI RMF updates and EU AI Act implementing acts expected 2026 to 2027 are anticipated to mandate specific benchmark coverage for high-risk agentic deployments, creating a new class of compliance-driven evaluation requirements
+- **Economic and societal impact measurement**: moving beyond task success rates to measure the actual economic value delivered by agents in real deployments, providing a bridge between laboratory evaluation and business case assessment
 
   ## Benchmark Saturation Dynamics and Evolution
 
   The rapid capability improvement documented from 2024 to 2026 has forced the benchmark community to confront a structural challenge: benchmarks saturate. Once SOTA exceeds approximately 80-85% on a benchmark, the remaining tasks tend to be those where the evaluation mechanism itself is flawed (tests that pass even without fixing the bug, reference answers that accept multiple valid phrasings, tasks with ambiguous ground truth), rather than tasks that genuinely probe the next frontier of capability. This saturation dynamic creates a predictable lifecycle for each benchmark:
 
   **Phase 1: Introduction and initial adoption (months 1-12 after publication)**
-  - Benchmark is published with SOTA typically in the 10-30% range
-  - Community validates the benchmark design; identifies and fixes scoring bugs
-  - Multiple teams independently replicate published baselines
-  - SOTA improves rapidly as teams apply better scaffolding and more capable base models
+
+- Benchmark is published with SOTA typically in the 10-30% range
+- Community validates the benchmark design; identifies and fixes scoring bugs
+- Multiple teams independently replicate published baselines
+- SOTA improves rapidly as teams apply better scaffolding and more capable base models
 
   **Phase 2: Active competition and differentiation (months 12-30)**
-  - SOTA reaches 40-70% range; the benchmark effectively differentiates frontier models
-  - Multiple leaderboards emerge; independent evaluation organisations begin including it in assessment suites
-  - Benchmark design flaws become apparent at the tail: tasks where the scoring mechanism can be gamed, tasks with scoring ambiguity, tasks where contamination is detectable
-  - Original benchmark authors publish fixes, curated subsets, or verification protocols (SWE-bench → SWE-bench Verified)
+
+- SOTA reaches 40-70% range; the benchmark effectively differentiates frontier models
+- Multiple leaderboards emerge; independent evaluation organisations begin including it in assessment suites
+- Benchmark design flaws become apparent at the tail: tasks where the scoring mechanism can be gamed, tasks with scoring ambiguity, tasks where contamination is detectable
+- Original benchmark authors publish fixes, curated subsets, or verification protocols (SWE-bench → SWE-bench Verified)
 
   **Phase 3: Approaching saturation (months 30-48)**
-  - SOTA reaches 75-85%
-  - Remaining gap is increasingly attributable to evaluation mechanism flaws rather than agent capability gaps
-  - Community begins planning next-generation benchmark; ARC-AGI-1 → ARC-AGI-2 → ARC-AGI-3 is the clearest example
-  - Benchmark remains useful for certifying model quality (any model scoring below 60% is clearly not frontier) but loses differentiating power at the top
+
+- SOTA reaches 75-85%
+- Remaining gap is increasingly attributable to evaluation mechanism flaws rather than agent capability gaps
+- Community begins planning next-generation benchmark; ARC-AGI-1 → ARC-AGI-2 → ARC-AGI-3 is the clearest example
+- Benchmark remains useful for certifying model quality (any model scoring below 60% is clearly not frontier) but loses differentiating power at the top
 
   **Phase 4: Retirement or supplement**
-  - New benchmark launched that probes the next capability frontier
-  - Old benchmark retained for historical comparison and baseline certification
-  - Community consensus shifts to new benchmark as the primary competitive signal
+
+- New benchmark launched that probes the next capability frontier
+- Old benchmark retained for historical comparison and baseline certification
+- Community consensus shifts to new benchmark as the primary competitive signal
 
   Understanding this lifecycle is important for interpreting leaderboard scores: a model that scores 87.6% on SWE-bench Verified in mid-2026 is not necessarily 87.6% "good" at software engineering in absolute terms — it means it performs well on the specific tasks and scoring mechanism of SWE-bench Verified, a benchmark that is approaching Phase 3 saturation and is likely to be supplemented or replaced within the next 12-18 months.
 
   ## Key Terminology
 
-  - **Pass@k**: the probability that at least one of k independent agent rollouts on a task succeeds; used to separate capability from reliability in evaluation
-  - **Time horizon**: the longest task completable at ≥50% pass@1; METR's preferred summary statistic for measuring agent autonomy capability
-  - **Scaffold**: the agent loop, prompt templates, tool definitions, retry logic, and context management strategy wrapping the model; performance on benchmarks is always scaffold-specific as well as model-specific
-  - **Functional verification**: grading based on the actual state of the environment after agent action, as opposed to string matching against reference outputs; more robust but more expensive to implement
-  - **Reward hacking**: achieving high benchmark scores by exploiting scoring ambiguities or test-suite weaknesses rather than actually solving the intended task; a persistent challenge for all automated evaluation
-  - **SWE-bench Verified**: the human-validated 500-instance subset of SWE-bench; the standard leaderboard target as of 2025 to 2026
-  - **HCAST**: Human-Calibrated Autonomy Software Tasks; METR's framework for calibrating AI task performance against skilled human baselines
+- **Pass@k**: the probability that at least one of k independent agent rollouts on a task succeeds; used to separate capability from reliability in evaluation
+- **Time horizon**: the longest task completable at ≥50% pass@1; METR's preferred summary statistic for measuring agent autonomy capability
+- **Scaffold**: the agent loop, prompt templates, tool definitions, retry logic, and context management strategy wrapping the model; performance on benchmarks is always scaffold-specific as well as model-specific
+- **Functional verification**: grading based on the actual state of the environment after agent action, as opposed to string matching against reference outputs; more robust but more expensive to implement
+- **Reward hacking**: achieving high benchmark scores by exploiting scoring ambiguities or test-suite weaknesses rather than actually solving the intended task; a persistent challenge for all automated evaluation
+- **SWE-bench Verified**: the human-validated 500-instance subset of SWE-bench; the standard leaderboard target as of 2025 to 2026
+- **HCAST**: Human-Calibrated Autonomy Software Tasks; METR's framework for calibrating AI task performance against skilled human baselines
 
   ## Research and Literature
 
@@ -401,49 +424,55 @@ Standardised benchmark suites and evaluation frameworks for measuring autonomous
   Agent evaluation benchmarks use three principal scoring approaches, each with distinct validity and reliability properties:
 
   **Functional verification (state-based grading)**
-  - Most reliable and manipulation-resistant scoring approach
-  - Applied in: SWE-bench (test-suite pass/fail), WebArena (application state inspection), OSWorld (file system and application state inspection)
-  - Evaluates whether the agent's actions produced the correct final world state, regardless of the reasoning process
-  - Immune to text similarity gaming; requires running the agent in a live environment and inspecting actual outcomes
-  - Cost: requires sandboxed execution environments, Docker images per task, and automated state inspection code for each task domain
+
+- Most reliable and manipulation-resistant scoring approach
+- Applied in: SWE-bench (test-suite pass/fail), WebArena (application state inspection), OSWorld (file system and application state inspection)
+- Evaluates whether the agent's actions produced the correct final world state, regardless of the reasoning process
+- Immune to text similarity gaming; requires running the agent in a live environment and inspecting actual outcomes
+- Cost: requires sandboxed execution environments, Docker images per task, and automated state inspection code for each task domain
 
   **Reference answer verification (exact or fuzzy match)**
-  - Applied in: GAIA (exact string match against human-annotated reference answers), some AgentBench environments
-  - Faster and cheaper to implement than functional verification; suitable for tasks with unambiguous correct answers
-  - Vulnerable to: surface paraphrase (agent produces a correct answer in a different format and fails), contamination (model memorises reference answers from training data)
-  - GAIA mitigates contamination by drawing from recent web content and using tasks that require multi-step current-information retrieval
+
+- Applied in: GAIA (exact string match against human-annotated reference answers), some AgentBench environments
+- Faster and cheaper to implement than functional verification; suitable for tasks with unambiguous correct answers
+- Vulnerable to: surface paraphrase (agent produces a correct answer in a different format and fails), contamination (model memorises reference answers from training data)
+- GAIA mitigates contamination by drawing from recent web content and using tasks that require multi-step current-information retrieval
 
   **Rubric-based human or LLM judging**
-  - Applied in: VitaBench (rubric-based sliding-window evaluator), TAU-bench (policy adherence rubric), enterprise benchmark suites
-  - Flexible: can evaluate qualities like appropriateness, policy adherence, user satisfaction, and communication style that binary outcome metrics miss
-  - Expensive at scale: human judges cost more per task than automated metrics; LLM judges introduce model-specific biases and are themselves susceptible to adversarial prompting
-  - Reliability: inter-rater agreement must be measured and reported; VitaBench uses multi-annotator consensus with sliding window to handle partial credit across stochastic interaction trajectories
+
+- Applied in: VitaBench (rubric-based sliding-window evaluator), TAU-bench (policy adherence rubric), enterprise benchmark suites
+- Flexible: can evaluate qualities like appropriateness, policy adherence, user satisfaction, and communication style that binary outcome metrics miss
+- Expensive at scale: human judges cost more per task than automated metrics; LLM judges introduce model-specific biases and are themselves susceptible to adversarial prompting
+- Reliability: inter-rater agreement must be measured and reported; VitaBench uses multi-annotator consensus with sliding window to handle partial credit across stochastic interaction trajectories
 
   ### Pass@k and Reliability Metrics
 
   The standard single-attempt pass@1 metric conflates capability (can the agent ever solve this task?) with reliability (does it solve the task consistently?). The "Beyond pass@1" framework (arXiv 2603.29231, 2026) proposes a reliability science approach:
 
-  - **Pass@k**: probability that at least one of k independent rollouts succeeds; upper-bounds agent capability while revealing brittleness
-  - **Pass@1**: the standard leaderboard metric; directly measures deployment reliability for single-attempt use cases
-  - **Consistency@k**: fraction of k rollouts that all succeed; measures reliability of a deterministic deployment
-  - **Coverage@n**: fraction of a benchmark's tasks for which the agent achieves pass@1 > 50% (the agent can "reliably" solve these); complements the average pass@1 by revealing task coverage gaps
-  - **Reliability under distribution shift**: pass@1 on a held-out task sample drawn from a different distribution than the development set; measures generalisation
+- **Pass@k**: probability that at least one of k independent rollouts succeeds; upper-bounds agent capability while revealing brittleness
+- **Pass@1**: the standard leaderboard metric; directly measures deployment reliability for single-attempt use cases
+- **Consistency@k**: fraction of k rollouts that all succeed; measures reliability of a deterministic deployment
+- **Coverage@n**: fraction of a benchmark's tasks for which the agent achieves pass@1 > 50% (the agent can "reliably" solve these); complements the average pass@1 by revealing task coverage gaps
+- **Reliability under distribution shift**: pass@1 on a held-out task sample drawn from a different distribution than the development set; measures generalisation
 
   ### The Contamination Problem in Detail
 
   Benchmark contamination occurs through multiple channels and has become a major methodological concern as pretraining corpora have grown to include much of the indexed web:
 
   **Direct contamination**: benchmark tasks (or paraphrases of them) appear verbatim in pretraining data, enabling memorisation rather than generalisation
-  - SWE-bench mitigation: tasks are GitHub issues from real repositories; the issue text and related code appear in pretraining corpora, motivating the SWE-bench Lite and SWE-bench Verified curation to remove easily leaked tasks
-  - GAIA mitigation: tasks reference recent web content (post-training-cutoff) requiring current retrieval; tasks are never published in full; reference answers are not public during active evaluation periods
+
+- SWE-bench mitigation: tasks are GitHub issues from real repositories; the issue text and related code appear in pretraining corpora, motivating the SWE-bench Lite and SWE-bench Verified curation to remove easily leaked tasks
+- GAIA mitigation: tasks reference recent web content (post-training-cutoff) requiring current retrieval; tasks are never published in full; reference answers are not public during active evaluation periods
 
   **Indirect contamination**: model has seen similar tasks during training, enabling a form of "type learning" rather than true generalisation
-  - ARC-AGI addresses this via procedural generation: every ARC-AGI task is a unique visual puzzle generated by a rule engine, never seen in any corpus
-  - METR HCAST maintains a private held-out set with strict non-disclosure
+
+- ARC-AGI addresses this via procedural generation: every ARC-AGI task is a unique visual puzzle generated by a rule engine, never seen in any corpus
+- METR HCAST maintains a private held-out set with strict non-disclosure
 
   **Scaffold contamination**: the agent scaffold (prompt templates, few-shot examples, retry logic) is optimised specifically for the benchmark, inflating scores above what would be achieved with a general-purpose scaffold
-  - This is the most difficult contamination form to detect or prevent, as it is always present to some degree
-  - METR's approach: evaluate with a standardised scaffold to enable fair comparison; require detailed scaffold disclosure in submitted results
+
+- This is the most difficult contamination form to detect or prevent, as it is always present to some degree
+- METR's approach: evaluate with a standardised scaffold to enable fair comparison; require detailed scaffold disclosure in submitted results
 
   ## Benchmark Design Principles and Anti-Patterns
 
@@ -475,73 +504,84 @@ Standardised benchmark suites and evaluation frameworks for measuring autonomous
   The following represents verified best results on primary benchmarks as of mid-2026:
 
   **SWE-bench Verified (500 instances)**
-  - SOTA: 87.6% — Claude Opus 4.7 (Anthropic, mid-2026)
-  - Previous: ~75% (multiple systems, early 2026)
-  - Baseline (Claude 2, 2023): 1.96%
-  - Doubling time: approximately 70 days (late 2023 through mid-2025)
-  - Leaderboard: vals.ai, Princeton HAL
+
+- SOTA: 87.6% — Claude Opus 4.7 (Anthropic, mid-2026)
+- Previous: ~75% (multiple systems, early 2026)
+- Baseline (Claude 2, 2023): 1.96%
+- Doubling time: approximately 70 days (late 2023 through mid-2025)
+- Leaderboard: vals.ai, Princeton HAL
 
   **GAIA (General AI Assistants)**
-  - SOTA: 74.6% — Claude Sonnet 4.5 (Anthropic, mid-2026)
-  - Anthropic models occupy top six positions on Princeton HAL leaderboard
-  - Level 3 SOTA (hardest multi-hop tasks): approximately 45-55%
-  - Baseline (GPT-4 with plugins, 2023): approximately 15%
-  - Leaderboard: hal.cs.princeton.edu
+
+- SOTA: 74.6% — Claude Sonnet 4.5 (Anthropic, mid-2026)
+- Anthropic models occupy top six positions on Princeton HAL leaderboard
+- Level 3 SOTA (hardest multi-hop tasks): approximately 45-55%
+- Baseline (GPT-4 with plugins, 2023): approximately 15%
+- Leaderboard: hal.cs.princeton.edu
 
   **OSWorld (Desktop Computer Use)**
-  - SOTA: 73% (mid-2026)
-  - Initial release baseline (GPT-4V, 2024): approximately 10%
-  - Tasks requiring multi-application coordination remain harder (~50-60% SOTA)
-  - Leaderboard: os-world.github.io
+
+- SOTA: 73% (mid-2026)
+- Initial release baseline (GPT-4V, 2024): approximately 10%
+- Tasks requiring multi-application coordination remain harder (~50-60% SOTA)
+- Leaderboard: os-world.github.io
 
   **WebArena (Browser Navigation)**
-  - SOTA: 61.7% — IBM CUGA (early 2025)
-  - Initial release baseline: 14.41%
-  - Leaderboard: webarena.dev
+
+- SOTA: 61.7% — IBM CUGA (early 2025)
+- Initial release baseline: 14.41%
+- Leaderboard: webarena.dev
 
   **ARC-AGI-1**: Human baseline exceeded; effectively retired
   **ARC-AGI-2**: 77.1% — Gemini 3.1 Pro (February 2026)
   **ARC-AGI-3**: All frontier systems <1% (March 2026)
 
   **VitaBench (Real-World Service Interaction)**
-  - Best models: <30% on cross-scenario tasks; <50% on single-scenario tasks (ICLR 2026)
-  - Reflects the difficulty of real-world service-context planning with ambiguous user intent
+
+- Best models: <30% on cross-scenario tasks; <50% on single-scenario tasks (ICLR 2026)
+- Reflects the difficulty of real-world service-context planning with ambiguous user intent
 
   **METR HCAST (Time Horizon)**
-  - Frontier model effective time horizon as of mid-2026: tasks estimated at 2-4 hours human time
-  - Doubling rate: approximately every 4 months (2024-2025 acceleration)
+
+- Frontier model effective time horizon as of mid-2026: tasks estimated at 2-4 hours human time
+- Doubling rate: approximately every 4 months (2024-2025 acceleration)
 
   ## Evaluation Infrastructure Architecture
 
   A production-grade agent evaluation system implements the following pipeline:
 
   **Task Storage Layer**
-  - Task definitions stored as structured YAML or JSON: task description, environment configuration (Docker image, initial file state, API credentials), success criteria (test script for SWE-bench-style, reference answer for GAIA-style, state check function for WebArena-style)
-  - Version-controlled task datasets with immutable commits to enable reproducibility
-  - Task metadata: difficulty tier, domain tag, estimated human completion time, known contamination risk level
+
+- Task definitions stored as structured YAML or JSON: task description, environment configuration (Docker image, initial file state, API credentials), success criteria (test script for SWE-bench-style, reference answer for GAIA-style, state check function for WebArena-style)
+- Version-controlled task datasets with immutable commits to enable reproducibility
+- Task metadata: difficulty tier, domain tag, estimated human completion time, known contamination risk level
 
   **Environment Provisioning Layer**
-  - Docker image management: one container image per task category (Python dev environment, browser environment, desktop OS VM)
-  - Container spin-up: cold start for each task run to ensure clean environment state; no state leakage between runs
-  - [[Agent Execution Sandboxes]]: network egress restrictions (especially important for safety evaluations to prevent unexpected real-world API calls), filesystem isolation, process sandboxing
-  - Resource limits: CPU, memory, and wall-clock time budgets per task; exceeded budgets count as failures
+
+- Docker image management: one container image per task category (Python dev environment, browser environment, desktop OS VM)
+- Container spin-up: cold start for each task run to ensure clean environment state; no state leakage between runs
+- [[Agent Execution Sandboxes]]: network egress restrictions (especially important for safety evaluations to prevent unexpected real-world API calls), filesystem isolation, process sandboxing
+- Resource limits: CPU, memory, and wall-clock time budgets per task; exceeded budgets count as failures
 
   **Agent Execution Layer**
-  - Task prompt delivered to agent via the evaluation framework's Solver interface
-  - Agent receives an observation-action loop: each observation is the current environment state (file content, terminal output, browser screenshot, application window); each action is a tool call (bash command, browser click, file write)
-  - Maximum turn budget (e.g., 30 turns for SWE-bench) after which the agent is forced to submit; prevents infinite loops
-  - Full trace logging: every model call (with token counts), every tool call (with latency), every observation
+
+- Task prompt delivered to agent via the evaluation framework's Solver interface
+- Agent receives an observation-action loop: each observation is the current environment state (file content, terminal output, browser screenshot, application window); each action is a tool call (bash command, browser click, file write)
+- Maximum turn budget (e.g., 30 turns for SWE-bench) after which the agent is forced to submit; prevents infinite loops
+- Full trace logging: every model call (with token counts), every tool call (with latency), every observation
 
   **Scoring Layer**
-  - Task-specific scorer function applied to the final environment state
-  - For multi-rubric tasks: scorer aggregates multiple sub-scores (correctness, policy adherence, efficiency) into a final task score
-  - Score validation: manual spot-check on a random sample of each scorer's outputs to catch systematic scorer bugs
-  - Aggregation: mean pass@1 across tasks is the headline metric; breakdowns by difficulty tier, task domain, and tool category reveal capability gaps
+
+- Task-specific scorer function applied to the final environment state
+- For multi-rubric tasks: scorer aggregates multiple sub-scores (correctness, policy adherence, efficiency) into a final task score
+- Score validation: manual spot-check on a random sample of each scorer's outputs to catch systematic scorer bugs
+- Aggregation: mean pass@1 across tasks is the headline metric; breakdowns by difficulty tier, task domain, and tool category reveal capability gaps
 
   **Leaderboard Layer**
-  - Submission protocol: teams submit agent configurations (scaffold code, model identifier, tool schemas) with a hash for reproducibility
-  - Independent replication: evaluation maintainers run submitted configurations to verify reported scores
-  - Anti-gaming controls: rate limits on submissions, mandatory scaffold disclosure, periodic human spot-check of agent trajectories
 
-- ### Provenance
+- Submission protocol: teams submit agent configurations (scaffold code, model identifier, tool schemas) with a hash for reproducibility
+- Independent replication: evaluation maintainers run submitted configurations to verify reported scores
+- Anti-gaming controls: rate limits on submissions, mandatory scaffold disclosure, periodic human spot-check of agent trajectories
+
+### Provenance
 

@@ -1,38 +1,42 @@
-
 Immersive workspaces are physical or virtual environments enhanced with spatial and extended-reality technologies—including AR, VR, and mixed reality—that allow users to interact intuitively with digital content and collaborators in three-dimensional space, fostering a strong sense of presence and engagement. They integrate spatial computing principles to support real-time manipulation of data, collaborative visualisation, immersive training, and seamless transitions between physical and digital environments. Immersive workspaces are increasingly deployed across corporate, industrial, and educational settings to support hybrid and remote collaboration at scale.
 
-- ### Semantic Classification
+### Semantic Classification
 
-- ### Content
+### Content
 
-  ## Overview
+## Overview
 
-  - #ImmersiveWorkspaces
+- #ImmersiveWorkspaces
 
   #### UK Context
-  - The UK has seen growing investment in immersive workspaces, particularly in technology hubs such as Manchester, Leeds, and Newcastle.
-    - Notable examples:
-      - **Igloo Vision (Manchester):** Provides immersive rooms for businesses and universities, supporting collaborative design, training, and data visualisation. Their technology is used by organisations including the NHS and local councils for immersive training and scenario planning.
-      - **Digital Catapult (Newcastle):** Supports immersive technology adoption through its North East Digital Innovation Hub, offering access to XR hardware and expertise for SMEs and public sector organisations.
-      - **University of Leeds:** Hosts immersive labs for research in spatial computing, digital twins, and collaborative design, often partnering with local industry.
-      - **Accenture UK:** Uses VR-based immersive workspaces for onboarding, training, and client collaboration, with offices in Manchester and Leeds leveraging these technologies.
-    - Regional initiatives such as the Northern Powerhouse and Innovate UK grants have accelerated adoption in North England.
-  - ## Key Research Papers and Sources
-    - Greenwold, S. (2003). *Spatial Computing*. MIT Media Lab. https://www.media.mit.edu/publications/spatial-computing/
-    - Igloo Vision. (2021). *What is an immersive space?* https://www.igloovision.com/about/blog/what-is-an-immersive-space
-    - Treeview Studio. (2023). *What is Spatial Computing?* https://treeview.studio/blog/what-is-spatial-computing
-    - Varjo. (2023). *Spatial Computing*. https://support.varjo.com/hc/en-us/spatial-computing
-    - Reworked. (2024). *Spatial Computing Can Take Us Beyond Hybrid Work*. https://www.reworked.co/digital-workplace/spatial-computing-in-the-workplace-giving-hybrid-a-new-meaning/
-    - XR Today. (2024). *XR Immersive Workspaces: The Power of Haptic Feedback and User Tracking*. https://www.xrtoday.com/virtual-reality/xr-immersive-workspaces-the-power-of-haptic-feedback-and-user-tracking/
-    - Bluewater Technology. (2021). *Immersive Workspaces & Why You Need One*. https://bluewatertech.com/immersive-workspaces-a-compelling-case-to-return-to-the-office/
-  - ## Future Outlook
-    - Immersive workspaces are expected to become more accessible and integrated into everyday work, driven by advances in AI, spatial computing, and wearable technology.
-    - Trends include:
-      - Seamless blending of physical and digital work environments, supporting hybrid and remote collaboration.
-      - Increased use of digital twins and real-time data visualisation for decision-making.
-      - Expansion of immersive training and onboarding programmes across sectors.
-      - Greater emphasis on user experience, accessibility, and inclusivity in workspace design.
-    - In the UK, continued government and private sector investment—especially in the North—will likely accelerate adoption and innovation in immersive workspace technologies.
 
-- ### Provenance
+- The UK has seen growing investment in immersive workspaces, particularly in technology hubs such as Manchester, Leeds, and Newcastle.
+  - Notable examples:
+    - **Igloo Vision (Manchester):** Provides immersive rooms for businesses and universities, supporting collaborative design, training, and data visualisation. Their technology is used by organisations including the NHS and local councils for immersive training and scenario planning.
+    - **Digital Catapult (Newcastle):** Supports immersive technology adoption through its North East Digital Innovation Hub, offering access to XR hardware and expertise for SMEs and public sector organisations.
+    - **University of Leeds:** Hosts immersive labs for research in spatial computing, digital twins, and collaborative design, often partnering with local industry.
+    - **Accenture UK:** Uses VR-based immersive workspaces for onboarding, training, and client collaboration, with offices in Manchester and Leeds leveraging these technologies.
+  - Regional initiatives such as the Northern Powerhouse and Innovate UK grants have accelerated adoption in North England.
+
+## Key Research Papers and Sources
+
+- Greenwold, S. (2003). *Spatial Computing*. MIT Media Lab. https://www.media.mit.edu/publications/spatial-computing/
+- Igloo Vision. (2021). *What is an immersive space?* https://www.igloovision.com/about/blog/what-is-an-immersive-space
+- Treeview Studio. (2023). *What is Spatial Computing?* https://treeview.studio/blog/what-is-spatial-computing
+- Varjo. (2023). *Spatial Computing*. https://support.varjo.com/hc/en-us/spatial-computing
+- Reworked. (2024). *Spatial Computing Can Take Us Beyond Hybrid Work*. https://www.reworked.co/digital-workplace/spatial-computing-in-the-workplace-giving-hybrid-a-new-meaning/
+- XR Today. (2024). *XR Immersive Workspaces: The Power of Haptic Feedback and User Tracking*. https://www.xrtoday.com/virtual-reality/xr-immersive-workspaces-the-power-of-haptic-feedback-and-user-tracking/
+- Bluewater Technology. (2021). *Immersive Workspaces & Why You Need One*. https://bluewatertech.com/immersive-workspaces-a-compelling-case-to-return-to-the-office/
+
+## Future Outlook
+
+- Immersive workspaces are expected to become more accessible and integrated into everyday work, driven by advances in AI, spatial computing, and wearable technology.
+- Trends include:
+  - Seamless blending of physical and digital work environments, supporting hybrid and remote collaboration.
+  - Increased use of digital twins and real-time data visualisation for decision-making.
+  - Expansion of immersive training and onboarding programmes across sectors.
+  - Greater emphasis on user experience, accessibility, and inclusivity in workspace design.
+- In the UK, continued government and private sector investment—especially in the North—will likely accelerate adoption and innovation in immersive workspace technologies.
+
+### Provenance
 

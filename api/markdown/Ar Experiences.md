@@ -1,21 +1,22 @@
-
 AR Experiences are interactive augmented reality applications that overlay digital content onto the physical world in real-time through smartphones, tablets, or AR headsets, enabling enhanced visualization, contextual information display, and immersive interaction with virtual objects anchored in...
 
-- ### Semantic Classification
+### Semantic Classification
 
-- ### Content
+### Content
 
-  ### Technical Details
-  Key components include:
-  - **Environment Capture**: Cameras and sensors compiling real-world surrounding data
-  - **Computer Vision**: AI analyzing captured data to understand physical space and position
-  - **Object Recognition**: Identifying physical triggers like QR codes or image markers
-  - **Content Overlay**: Rendering images and video onto real-world view via device screen or headset
+### Technical Details
+Key components include:
+
+- **Environment Capture**: Cameras and sensors compiling real-world surrounding data
+- **Computer Vision**: AI analyzing captured data to understand physical space and position
+- **Object Recognition**: Identifying physical triggers like QR codes or image markers
+- **Content Overlay**: Rendering images and video onto real-world view via device screen or headset
 
   ### Experience Types
-  - **Marker-Based AR**: Digital content triggered by physical markers (QR codes, images)
-  - **Marker-less AR**: Using GPS, accelerometers, and cameras for spontaneous experiences
-  - **Hand/Eye Tracking**: Natural gesture and gaze-based interaction (HoloLens 2)
+
+- **Marker-Based AR**: Digital content triggered by physical markers (QR codes, images)
+- **Marker-less AR**: Using GPS, accelerometers, and cameras for spontaneous experiences
+- **Hand/Eye Tracking**: Natural gesture and gaze-based interaction (HoloLens 2)
 
   ### Market Context
   AR user penetration reached 81% in 2024, expected to rise to 83.3% by 2029.
@@ -23,5 +24,5 @@ AR Experiences are interactive augmented reality applications that overlay digit
   ### Industry Applications
   Manufacturing visualization, healthcare training, retail product preview, navigation, and Industry 4.0 interactive environments.
 
-- ### Provenance
+### Provenance
 

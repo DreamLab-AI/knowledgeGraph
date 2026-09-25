@@ -1,10 +1,10 @@
-
 Under EU AI Act Article 3(44), a Serious Incident is any incident or malfunctioning of an AI system that directly or indirectly causes death, serious health damage, serious disruption of critical infrastructure, or serious infringement of fundamental rights. Such incidents trigger mandatory reporting obligations for providers and deployers of high-risk AI systems and GPAI models with systemic risk, enabling rapid regulatory response and market surveillance under Article 73.
 
-- ### Semantic Classification
+### Semantic Classification
 
-- ### Content
-  - An incident or malfunctioning of an AI system that directly or indirectly leads to death, serious health damage, serious disruption of critical infrastructure, or serious fundamental rights infringements.
+### Content
+
+- An incident or malfunctioning of an AI system that directly or indirectly leads to death, serious health damage, serious disruption of critical infrastructure, or serious fundamental rights infringements.
 
   ## Source
 
@@ -19,51 +19,59 @@ Under EU AI Act Article 3(44), a Serious Incident is any incident or malfunction
 
   ### 1. Death
   AI system malfunction or operation directly or indirectly causing:
-  - Loss of human life
-  - Contribution to fatal outcome
+
+- Loss of human life
+- Contribution to fatal outcome
 
   **Examples**:
-  - Autonomous vehicle fatal collision
-  - Medical diagnosis AI missed critical condition
-  - Critical infrastructure failure causing casualties
+
+- Autonomous vehicle fatal collision
+- Medical diagnosis AI missed critical condition
+- Critical infrastructure failure causing casualties
 
   ### 2. Serious Health Damage
   Injury or health impairment requiring medical intervention:
-  - Serious physical injury
-  - Serious psychological harm
-  - Long-term health consequences
+
+- Serious physical injury
+- Serious psychological harm
+- Long-term health consequences
 
   **Examples**:
-  - Surgical robot malfunction causing injury
-  - Incorrect medication dosage recommendation
-  - Mental health crisis from AI-driven content
+
+- Surgical robot malfunction causing injury
+- Incorrect medication dosage recommendation
+- Mental health crisis from AI-driven content
 
   ### 3. Serious Disruption of Critical Infrastructure
   Impairment of essential services:
-  - Energy supply interruption
-  - Transportation system failure
-  - Water/sanitation disruption
-  - Digital infrastructure outage
-  - Financial system instability
+
+- Energy supply interruption
+- Transportation system failure
+- Water/sanitation disruption
+- Digital infrastructure outage
+- Financial system instability
 
   **Examples**:
-  - AI-managed grid causing blackout
-  - Air traffic control AI failure
-  - Banking system AI malfunction
+
+- AI-managed grid causing blackout
+- Air traffic control AI failure
+- Banking system AI malfunction
 
   ### 4. Serious Fundamental Rights Infringements
   Violation of Charter of Fundamental Rights including:
-  - **Non-discrimination**: Systematic bias causing exclusion
-  - **Privacy**: Unauthorised data exposure
-  - **Fair trial**: Wrongful conviction contribution
-  - **Freedom of expression**: Censorship or manipulation
-  - **Human dignity**: Degrading treatment
+
+- **Non-discrimination**: Systematic bias causing exclusion
+- **Privacy**: Unauthorised data exposure
+- **Fair trial**: Wrongful conviction contribution
+- **Freedom of expression**: Censorship or manipulation
+- **Human dignity**: Degrading treatment
 
   **Examples**:
-  - Hiring AI discriminating against protected groups
-  - Biometric system false positives leading to detention
-  - Social scoring causing service denial
-  - Emotion recognition causing stigmatisation
+
+- Hiring AI discriminating against protected groups
+- Biometric system false positives leading to detention
+- Social scoring causing service denial
+- Emotion recognition causing stigmatisation
 
   ## Reporting Obligations
 
@@ -71,16 +79,18 @@ Under EU AI Act Article 3(44), a Serious Incident is any incident or malfunction
   **Timing**: Without undue delay upon awareness
 
   **Recipient**:
-  - Market surveillance authorities of Member States where incident occurred
-  - AI Office (for certain categories)
+
+- Market surveillance authorities of Member States where incident occurred
+- AI Office (for certain categories)
 
   **Content**:
-  - Incident description
-  - AI system identification
-  - Severity and consequences
-  - Affected persons (anonymised)
-  - Immediate measures taken
-  - Root cause analysis (if available)
+
+- Incident description
+- AI system identification
+- Severity and consequences
+- Affected persons (anonymised)
+- Immediate measures taken
+- Root cause analysis (if available)
 
   ### For High-Risk AI Deployers (Article 73(2))
   **Trigger**: Serious incident during system use
@@ -99,9 +109,10 @@ Under EU AI Act Article 3(44), a Serious Incident is any incident or malfunction
   ## "Without Undue Delay" Interpretation
 
   While not precisely defined, Commission guidance suggests:
-  - **Initial notification**: Within 24-72 hours of awareness
-  - **Follow-up report**: Within 15 days with root cause analysis
-  - **Final report**: Comprehensive analysis within reasonable timeframe
+
+- **Initial notification**: Within 24-72 hours of awareness
+- **Follow-up report**: Within 15 days with root cause analysis
+- **Final report**: Comprehensive analysis within reasonable timeframe
 
   ## Information to Be Reported
 
@@ -121,27 +132,29 @@ Under EU AI Act Article 3(44), a Serious Incident is any incident or malfunction
 
   ## Confidentiality and Data Protection
 
-  - **Anonymisation**: Personal data of affected persons
-  - **Confidentiality**: Commercial secrets protection
-  - **Cybersecurity**: Vulnerability details may be redacted
-  - **GDPR compliance**: Reporting consistent with data protection rules
+- **Anonymisation**: Personal data of affected persons
+- **Confidentiality**: Commercial secrets protection
+- **Cybersecurity**: Vulnerability details may be redacted
+- **GDPR compliance**: Reporting consistent with data protection rules
 
   ## Market Surveillance Response
 
   Upon receiving serious incident reports, authorities may:
-  - **Investigate**: Technical inspection, document review
-  - **Corrective measures**: Order product recall, modification
-  - **Market withdrawal**: Require removal from sale
-  - **Public warning**: Alert users and deployers
-  - **Sanctions**: Impose fines for non-compliance
+
+- **Investigate**: Technical inspection, document review
+- **Corrective measures**: Order product recall, modification
+- **Market withdrawal**: Require removal from sale
+- **Public warning**: Alert users and deployers
+- **Sanctions**: Impose fines for non-compliance
 
   ## Non-Reporting Consequences
 
   Failure to report serious incidents:
-  - **Penalties**: Up to €15 million or 3% of global turnover (Article 99)
-  - **Increased scrutiny**: Enhanced market surveillance
-  - **Liability**: Potential civil and criminal liability
-  - **Reputational damage**: Loss of trust
+
+- **Penalties**: Up to €15 million or 3% of global turnover (Article 99)
+- **Increased scrutiny**: Enhanced market surveillance
+- **Liability**: Potential civil and criminal liability
+- **Reputational damage**: Loss of trust
 
   ## Reporting Mechanisms
 
@@ -153,16 +166,18 @@ Under EU AI Act Article 3(44), a Serious Incident is any incident or malfunction
 
   ### Expected Infrastructure
   Commission to establish:
-  - Standardised reporting templates
-  - Digital submission system
-  - Incident database (anonymised for research)
+
+- Standardised reporting templates
+- Digital submission system
+- Incident database (anonymised for research)
 
   ## Relationship to Other Reporting
 
   ### Medical Device Incidents (Regulation 2017/745)
   AI in medical devices: Dual reporting to:
-  - AI Act authorities (serious incidents)
-  - Medical device vigilance systems
+
+- AI Act authorities (serious incidents)
+- Medical device vigilance systems
 
   ### Product Safety (GPSD)
   Consumer products with AI: Coordinate with RAPEX alerts.
@@ -174,15 +189,17 @@ Under EU AI Act Article 3(44), a Serious Incident is any incident or malfunction
 
   ### Risk Management Integration
   Serious incident scenarios inform:
-  - Risk management system updates (Article 9)
-  - Post-market monitoring plans (Article 72)
-  - Testing and validation (Article 15)
+
+- Risk management system updates (Article 9)
+- Post-market monitoring plans (Article 72)
+- Testing and validation (Article 15)
 
   ### Industry Learning
   Aggregated incident data enables:
-  - Sectoral safety improvements
-  - Standard development
-  - Best practice dissemination
+
+- Sectoral safety improvements
+- Standard development
+- Best practice dissemination
 
   ## Source
 
@@ -197,51 +214,59 @@ Under EU AI Act Article 3(44), a Serious Incident is any incident or malfunction
 
   ### 1. Death
   AI system malfunction or operation directly or indirectly causing:
-  - Loss of human life
-  - Contribution to fatal outcome
+
+- Loss of human life
+- Contribution to fatal outcome
 
   **Examples**:
-  - Autonomous vehicle fatal collision
-  - Medical diagnosis AI missed critical condition
-  - Critical infrastructure failure causing casualties
+
+- Autonomous vehicle fatal collision
+- Medical diagnosis AI missed critical condition
+- Critical infrastructure failure causing casualties
 
   ### 2. Serious Health Damage
   Injury or health impairment requiring medical intervention:
-  - Serious physical injury
-  - Serious psychological harm
-  - Long-term health consequences
+
+- Serious physical injury
+- Serious psychological harm
+- Long-term health consequences
 
   **Examples**:
-  - Surgical robot malfunction causing injury
-  - Incorrect medication dosage recommendation
-  - Mental health crisis from AI-driven content
+
+- Surgical robot malfunction causing injury
+- Incorrect medication dosage recommendation
+- Mental health crisis from AI-driven content
 
   ### 3. Serious Disruption of Critical Infrastructure
   Impairment of essential services:
-  - Energy supply interruption
-  - Transportation system failure
-  - Water/sanitation disruption
-  - Digital infrastructure outage
-  - Financial system instability
+
+- Energy supply interruption
+- Transportation system failure
+- Water/sanitation disruption
+- Digital infrastructure outage
+- Financial system instability
 
   **Examples**:
-  - AI-managed grid causing blackout
-  - Air traffic control AI failure
-  - Banking system AI malfunction
+
+- AI-managed grid causing blackout
+- Air traffic control AI failure
+- Banking system AI malfunction
 
   ### 4. Serious Fundamental Rights Infringements
   Violation of Charter of Fundamental Rights including:
-  - **Non-discrimination**: Systematic bias causing exclusion
-  - **Privacy**: Unauthorised data exposure
-  - **Fair trial**: Wrongful conviction contribution
-  - **Freedom of expression**: Censorship or manipulation
-  - **Human dignity**: Degrading treatment
+
+- **Non-discrimination**: Systematic bias causing exclusion
+- **Privacy**: Unauthorised data exposure
+- **Fair trial**: Wrongful conviction contribution
+- **Freedom of expression**: Censorship or manipulation
+- **Human dignity**: Degrading treatment
 
   **Examples**:
-  - Hiring AI discriminating against protected groups
-  - Biometric system false positives leading to detention
-  - Social scoring causing service denial
-  - Emotion recognition causing stigmatisation
+
+- Hiring AI discriminating against protected groups
+- Biometric system false positives leading to detention
+- Social scoring causing service denial
+- Emotion recognition causing stigmatisation
 
   ## Reporting Obligations
 
@@ -249,16 +274,18 @@ Under EU AI Act Article 3(44), a Serious Incident is any incident or malfunction
   **Timing**: Without undue delay upon awareness
 
   **Recipient**:
-  - Market surveillance authorities of Member States where incident occurred
-  - AI Office (for certain categories)
+
+- Market surveillance authorities of Member States where incident occurred
+- AI Office (for certain categories)
 
   **Content**:
-  - Incident description
-  - AI system identification
-  - Severity and consequences
-  - Affected persons (anonymised)
-  - Immediate measures taken
-  - Root cause analysis (if available)
+
+- Incident description
+- AI system identification
+- Severity and consequences
+- Affected persons (anonymised)
+- Immediate measures taken
+- Root cause analysis (if available)
 
   ### For High-Risk AI Deployers (Article 73(2))
   **Trigger**: Serious incident during system use
@@ -277,9 +304,10 @@ Under EU AI Act Article 3(44), a Serious Incident is any incident or malfunction
   ## "Without Undue Delay" Interpretation
 
   While not precisely defined, Commission guidance suggests:
-  - **Initial notification**: Within 24-72 hours of awareness
-  - **Follow-up report**: Within 15 days with root cause analysis
-  - **Final report**: Comprehensive analysis within reasonable timeframe
+
+- **Initial notification**: Within 24-72 hours of awareness
+- **Follow-up report**: Within 15 days with root cause analysis
+- **Final report**: Comprehensive analysis within reasonable timeframe
 
   ## Information to Be Reported
 
@@ -299,27 +327,29 @@ Under EU AI Act Article 3(44), a Serious Incident is any incident or malfunction
 
   ## Confidentiality and Data Protection
 
-  - **Anonymisation**: Personal data of affected persons
-  - **Confidentiality**: Commercial secrets protection
-  - **Cybersecurity**: Vulnerability details may be redacted
-  - **GDPR compliance**: Reporting consistent with data protection rules
+- **Anonymisation**: Personal data of affected persons
+- **Confidentiality**: Commercial secrets protection
+- **Cybersecurity**: Vulnerability details may be redacted
+- **GDPR compliance**: Reporting consistent with data protection rules
 
   ## Market Surveillance Response
 
   Upon receiving serious incident reports, authorities may:
-  - **Investigate**: Technical inspection, document review
-  - **Corrective measures**: Order product recall, modification
-  - **Market withdrawal**: Require removal from sale
-  - **Public warning**: Alert users and deployers
-  - **Sanctions**: Impose fines for non-compliance
+
+- **Investigate**: Technical inspection, document review
+- **Corrective measures**: Order product recall, modification
+- **Market withdrawal**: Require removal from sale
+- **Public warning**: Alert users and deployers
+- **Sanctions**: Impose fines for non-compliance
 
   ## Non-Reporting Consequences
 
   Failure to report serious incidents:
-  - **Penalties**: Up to €15 million or 3% of global turnover (Article 99)
-  - **Increased scrutiny**: Enhanced market surveillance
-  - **Liability**: Potential civil and criminal liability
-  - **Reputational damage**: Loss of trust
+
+- **Penalties**: Up to €15 million or 3% of global turnover (Article 99)
+- **Increased scrutiny**: Enhanced market surveillance
+- **Liability**: Potential civil and criminal liability
+- **Reputational damage**: Loss of trust
 
   ## Reporting Mechanisms
 
@@ -331,16 +361,18 @@ Under EU AI Act Article 3(44), a Serious Incident is any incident or malfunction
 
   ### Expected Infrastructure
   Commission to establish:
-  - Standardised reporting templates
-  - Digital submission system
-  - Incident database (anonymised for research)
+
+- Standardised reporting templates
+- Digital submission system
+- Incident database (anonymised for research)
 
   ## Relationship to Other Reporting
 
   ### Medical Device Incidents (Regulation 2017/745)
   AI in medical devices: Dual reporting to:
-  - AI Act authorities (serious incidents)
-  - Medical device vigilance systems
+
+- AI Act authorities (serious incidents)
+- Medical device vigilance systems
 
   ### Product Safety (GPSD)
   Consumer products with AI: Coordinate with RAPEX alerts.
@@ -352,27 +384,30 @@ Under EU AI Act Article 3(44), a Serious Incident is any incident or malfunction
 
   ### Risk Management Integration
   Serious incident scenarios inform:
-  - Risk management system updates (Article 9)
-  - Post-market monitoring plans (Article 72)
-  - Testing and validation (Article 15)
+
+- Risk management system updates (Article 9)
+- Post-market monitoring plans (Article 72)
+- Testing and validation (Article 15)
 
   ### Industry Learning
   Aggregated incident data enables:
-  - Sectoral safety improvements
-  - Standard development
-  - Best practice dissemination
+
+- Sectoral safety improvements
+- Standard development
+- Best practice dissemination
 
   #### Related Concepts
-  - **Post-Market Monitoring** (AI-0151): Proactive surveillance
-  - **Corrective Action** (Provider obligation after incident)
-  - **Market Surveillance** (AI-0134): Authority enforcement
-  - **Risk Management System** (AI-0136): Preventive framework
+
+- **Post-Market Monitoring** (AI-0151): Proactive surveillance
+- **Corrective Action** (Provider obligation after incident)
+- **Market Surveillance** (AI-0134): Authority enforcement
+- **Risk Management System** (AI-0136): Preventive framework
 
   ## See Also
 
-  - EU AI Act Article 73 (Reporting of Serious Incidents)
-  - Commission Draft Guidance and Reporting Template (published for consultation September 2025; final guidance expected to apply from 2 August 2026)
-  - Market Surveillance Regulation (EU) 2019/1020
+- EU AI Act Article 73 (Reporting of Serious Incidents)
+- Commission Draft Guidance and Reporting Template (published for consultation September 2025; final guidance expected to apply from 2 August 2026)
+- Market Surveillance Regulation (EU) 2019/1020
 
-- ### Provenance
+### Provenance
 

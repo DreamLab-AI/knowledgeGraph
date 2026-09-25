@@ -1,10 +1,10 @@
-
 Dagger is a programmable CI/CD engine that unifies pipeline definition and execution within typed, composable functions authored in general-purpose languages such as Go, Python, or TypeScript. Unlike traditional Dockerfile-and-shell-script approaches, Dagger caches the result of every function call at fine granularity, achieves CI/local parity by running identically on developer machines and cloud runners, and exposes pipelines as strongly-typed APIs discoverable via `dagger functions`.
 
-- ### Semantic Classification
+### Semantic Classification
 
-- ### Content
-  - Of course! This is an excellent question and a perfect use case for comparing the traditional Docker wrapper script pattern with Dagger. Your `powerdev.sh` and `Dockerfile` are a very well-structured and powerful example of the conventional approach.
+### Content
+
+- Of course! This is an excellent question and a perfect use case for comparing the traditional Docker wrapper script pattern with Dagger. Your `powerdev.sh` and `Dockerfile` are a very well-structured and powerful example of the conventional approach.
   Let's break down how Dagger would be different, focusing on the advantages and disadvantages.
   Your current setup uses two distinct tools:
   1.  **`Dockerfile`**: A declarative text file to **define** the image's contents.
@@ -53,69 +53,84 @@ Dagger is a programmable CI/CD engine that unifies pipeline definition and execu
   *   You find yourself copy-pasting your `Dockerfile` to create slightly different environments.
   *   You want to treat your environment definition like any other piece of testable, reusable software.
   Dagger is an investment. It has a steeper initial learning curve but pays significant dividends in reproducibility, portability, and speed for complex, team-based projects.
-  - [Build an AI Agent | Dagger](https://docs.dagger.io/quickstart/agent)
-  - [Building AI agent from scratch using Dagger - YouTube](https://www.youtube.com/watch?v=1rDcyiR0wZE)
+- [Build an AI Agent | Dagger](https://docs.dagger.io/quickstart/agent)
+- [Building AI agent from scratch using Dagger - YouTube](https://www.youtube.com/watch?v=1rDcyiR0wZE)
 
-  - ### High-Level Summary
-  - ### Advantages of Dagger
-  - #### 1. Portability & Language
-  - #### 2. Unmatched Caching
-  - **Dockerfile example:**
+### High-Level Summary
+
+### Advantages of Dagger
+
+#### 1. Portability & Language
+
+#### 2. Unmatched Caching
+
+- **Dockerfile example:**
   ```dockerfile
   # STEP 2: Install the core, heavy ML frameworks.
   RUN /opt/venv312/bin/pip install --no-cache-dir \
-    tensorflow \
-    torch torchvision torchaudio \
-    keras
+  tensorflow \
+  torch torchvision torchaudio \
+  keras
 
   # STEP 3: Install other common data science libraries.
   RUN /opt/venv312/bin/pip install --no-cache-dir \
-    h2o xgboost
+  h2o xgboost
   ```
-  - **Dagger equivalent (Go):**
+
+- **Dagger equivalent (Go):**
   ```go
   // Simplified Dagger Go example
   mlStack := base.
-    WithExec([]string{"/opt/venv312/bin/pip", "install", "tensorflow", "torch", ...}).
-    WithExec([]string{"/opt/venv312/bin/pip", "install", "h2o", "xgboost"})
+  WithExec([]string{"/opt/venv312/bin/pip", "install", "tensorflow", "torch", ...}).
+  WithExec([]string{"/opt/venv312/bin/pip", "install", "h2o", "xgboost"})
   ```
-  - #### 3. Modularity & Reusability
-  ```go
-  // In your Dagger module
-  func (m *MyModule) WithBase(ctx context.Context) *dagger.Container {
-    // Installs build-essential, git, etc.
-  }
 
-  func (m *MyModule) WithPython(ctx context.Context, ctr *dagger.Container) *dagger.Container {
-    // Adds PPA, installs python, creates venvs
-  }
+#### 3. Modularity & Reusability
 
-  func (m *MyModule) WithMLStack(ctx context.Context, ctr *dagger.Container) *dagger.Container {
-    // Does all the pip installs for the ML stack
-  }
+```go
+// In your Dagger module
+func (m *MyModule) WithBase(ctx context.Context) *dagger.Container {
+// Installs build-essential, git, etc.
+}
 
-  func (m *MyModule) WithRust(ctx context.Context, ctr *dagger.Container) *dagger.Container {
-    // Installs the Rust toolchain
-  }
+func (m *MyModule) WithPython(ctx context.Context, ctr *dagger.Container) *dagger.Container {
+// Adds PPA, installs python, creates venvs
+}
 
-  // Your main dev environment function
-  func (m *MyModule) PowerDev(ctx context.Context) *dagger.Container {
-    return m.WithRust(ctx, m.WithMLStack(ctx, m.WithPython(ctx, m.WithBase(ctx))))
-  }
+func (m *MyModule) WithMLStack(ctx context.Context, ctr *dagger.Container) *dagger.Container {
+// Does all the pip installs for the ML stack
+}
 
-  // A different environment for a Rust-only project
-  func (m *MyModule) RustDev(ctx context.Context) *dagger.Container {
-    return m.WithRust(ctx, m.WithBase(ctx))
-  }
-  ```
-  - #### 4. CI/Local Parity
-  - #### 5. Discoverability & Type Safety
-  - ### Disadvantages & Considerations
-  - #### 1. Mindset Shift & Learning Curve
-  - #### 2. Verbosity for Simple Commands
-  - #### 3. Host Device Integration (like GPUs)
-  - ### How Your `powerdev` would look in Dagger (Conceptual)
-  - ### Conclusion
+func (m *MyModule) WithRust(ctx context.Context, ctr *dagger.Container) *dagger.Container {
+// Installs the Rust toolchain
+}
 
-- ### Provenance
+// Your main dev environment function
+func (m *MyModule) PowerDev(ctx context.Context) *dagger.Container {
+return m.WithRust(ctx, m.WithMLStack(ctx, m.WithPython(ctx, m.WithBase(ctx))))
+}
+
+// A different environment for a Rust-only project
+func (m *MyModule) RustDev(ctx context.Context) *dagger.Container {
+return m.WithRust(ctx, m.WithBase(ctx))
+}
+```
+
+#### 4. CI/Local Parity
+
+#### 5. Discoverability & Type Safety
+
+### Disadvantages & Considerations
+
+#### 1. Mindset Shift & Learning Curve
+
+#### 2. Verbosity for Simple Commands
+
+#### 3. Host Device Integration (like GPUs)
+
+### How Your `powerdev` would look in Dagger (Conceptual)
+
+### Conclusion
+
+### Provenance
 

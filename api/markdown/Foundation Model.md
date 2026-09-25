@@ -1,78 +1,86 @@
-
 A Foundation Model is a large-scale machine learning model trained on broad, diverse datasets using self-supervised or semi-supervised objectives, producing a general-purpose parametric representation that can be adapted to a wide range of downstream tasks through fine-tuning, prompting, or retrieval augmentation without retraining from scratch. Introduced as a conceptual category by the Stanford HAI Centre for Research on Foundation Models in 2021, the term emphasises the homogenising role such models play across AI research and application domains: a single pre-trained artefact serves as the foundation for specialised systems in natural language processing, computer vision, speech, multimodal reasoning, scientific discovery, and robotics. Foundation models are characterised by emergent capabilities that arise from scale — properties not present in smaller models that appear as parameter count and training-data volume increase — and by their fundamentally transferable representations, which dramatically lower the cost of building capable task-specific systems. The category encompasses large language models, vision-language models, diffusion models, and cross-modal architectures such as GPT-4, BERT, DALL-E, Stable Diffusion, and Segment Anything.
 
-- ### Overview
-  - Foundation models represent a paradigm shift from the prior regime of training separate models per task, which required large labelled datasets and domain expertise for each application.
-  - [[Transfer Learning]] is the theoretical underpinning: representations learned from broad pre-training on unlabelled data encode rich statistical regularities of the domain that transfer efficiently to downstream tasks with far less task-specific supervision.
-  - [[Self-Supervised Learning]] objectives — such as next-token prediction for text models or masked autoencoding for vision models — allow training on vast quantities of unlabelled data, eliminating the bottleneck of manual annotation.
-  - The scale of foundation model pre-training places them at the frontier of [[Compute Infrastructure]] demands, requiring GPU clusters, specialised interconnects, and months of training on large proportions of internet-scale corpora.
-  - The computational and data investment in pre-training is amortised across all downstream uses: because fine-tuning or prompting is cheap relative to pre-training, foundation models dramatically reduce the marginal cost of building a capable specialised system.
-  - The paradigm has become the dominant approach to state-of-the-art performance across natural language processing, [[Computer Vision]], speech, [[Multimodal AI]], code generation, and scientific applications including protein structure prediction and weather modelling.
+### Overview
 
-- ### Key Components and Mechanisms
+- Foundation models represent a paradigm shift from the prior regime of training separate models per task, which required large labelled datasets and domain expertise for each application.
+- [[Transfer Learning]] is the theoretical underpinning: representations learned from broad pre-training on unlabelled data encode rich statistical regularities of the domain that transfer efficiently to downstream tasks with far less task-specific supervision.
+- [[Self-Supervised Learning]] objectives — such as next-token prediction for text models or masked autoencoding for vision models — allow training on vast quantities of unlabelled data, eliminating the bottleneck of manual annotation.
+- The scale of foundation model pre-training places them at the frontier of [[Compute Infrastructure]] demands, requiring GPU clusters, specialised interconnects, and months of training on large proportions of internet-scale corpora.
+- The computational and data investment in pre-training is amortised across all downstream uses: because fine-tuning or prompting is cheap relative to pre-training, foundation models dramatically reduce the marginal cost of building a capable specialised system.
+- The paradigm has become the dominant approach to state-of-the-art performance across natural language processing, [[Computer Vision]], speech, [[Multimodal AI]], code generation, and scientific applications including protein structure prediction and weather modelling.
 
-  - #### Pre-Training
-    - [[Pre-Training]] on diverse, large-scale corpora is the defining operation: the model learns a rich parametric prior over the data distribution that encodes syntax, semantics, factual knowledge, visual structure, or domain-specific regularities depending on modality.
-    - Text foundation models predominantly use autoregressive next-token prediction (as in the GPT family) or masked language modelling (as in [[BERT]]), with some models combining both.
-    - Vision and multimodal models extend these objectives to image patches, contrastive cross-modal alignment, or denoising, as in [[Diffusion Model]] architectures.
-    - [[Large Language Model Training]] involves careful data curation, tokenisation, distributed training across thousands of GPUs, and checkpoint management to produce stable, high-quality base models.
+### Key Components and Mechanisms
 
-  - #### Adaptation Mechanisms
-    - [[Instruction Tuning]]: Supervised fine-tuning on curated instruction-response pairs transforms a raw language model into an instruction-following assistant capable of following natural-language task descriptions.
-    - [[RLHF]] (Reinforcement Learning from Human Feedback): Human preference labels train a reward model used to further fine-tune the foundation model towards outputs rated as more helpful, honest, and harmless.
-    - [[In-Context Learning]]: At inference time, the model conditions on a few labelled examples embedded in the prompt to generalise to a new task without gradient updates — a distinctively emergent property of scale.
-    - [[Few-Shot Learning]]: A related capability in which minimal examples suffice for high-quality task performance, eliminating the need for large labelled datasets in many practical settings.
-    - [[LoRA Fine-Tuning]] and other parameter-efficient fine-tuning methods (PEFT) allow task-specific adaptation at low computational cost by updating only a small subset of parameters or low-rank adapter matrices.
-    - [[Domain Adaptation]]: Fine-tuning or continual pre-training on domain-specific corpora (e.g., legal text, clinical notes, code) produces specialised variants that outperform the base model on those domains.
-    - [[Prompt Engineering]]: Systematic design of input prompts exploits the model's pre-trained representations to elicit desired outputs without any parameter updates.
+#### Pre-Training
 
-  - #### Emergent Properties
-    - [[Emergent Capabilities]] are qualitative behaviours that arise unpredictably above certain scale thresholds — including chain-of-thought reasoning, arithmetic, code synthesis, and instruction following — not present in smaller-scale predecessors.
-    - [[Context Window]] length determines the maximum information available to the model at inference time; modern foundation models have expanded context windows from thousands to millions of tokens, enabling long-document processing, multi-turn dialogue, and agentic task completion.
-    - Retrieval augmentation via [[Retrieval-Augmented Generation]] extends the effective knowledge of a foundation model beyond its training cut-off by conditioning generation on documents retrieved from an external corpus at inference time.
+- [[Pre-Training]] on diverse, large-scale corpora is the defining operation: the model learns a rich parametric prior over the data distribution that encodes syntax, semantics, factual knowledge, visual structure, or domain-specific regularities depending on modality.
+- Text foundation models predominantly use autoregressive next-token prediction (as in the GPT family) or masked language modelling (as in [[BERT]]), with some models combining both.
+- Vision and multimodal models extend these objectives to image patches, contrastive cross-modal alignment, or denoising, as in [[Diffusion Model]] architectures.
+- [[Large Language Model Training]] involves careful data curation, tokenisation, distributed training across thousands of GPUs, and checkpoint management to produce stable, high-quality base models.
 
-- ### Taxonomy and Variants
-  - **[[Large Language Models]]**: Text-dominant foundation models trained on web-scale corpora (GPT series, Claude, Gemini, Llama). Primary output modality is text; capabilities include reasoning, coding, summarisation, dialogue, and tool use.
-  - **[[Multimodal Models]]**: Foundation models trained on paired or interleaved text-image (and increasingly text-image-audio-video) data. Examples include GPT-4 (vision), Gemini, Flamingo, and [[Vision-Language-Action Models]] for robotics.
-  - **[[Diffusion Model]] families**: Generative foundation models trained on image (Stable Diffusion, DALL-E), video (Sora), and audio (AudioLDM) data using denoising objectives, achieving state-of-the-art generative quality.
-  - **Code foundation models**: Specialised on source code corpora, enabling [[Code Generation]], code completion, bug detection, and software synthesis (Codex, AlphaCode, DeepSeek-Coder).
-  - **Scientific foundation models**: Domain-adapted models for biology (protein language models such as ESMFold), chemistry, climate modelling, and medical imaging, adapting the foundation model paradigm to structured scientific data.
+#### Adaptation Mechanisms
 
-- ### Applications and Use Cases
-  - **[[Conversational AI]] and virtual assistants**: Foundation models power dialogue systems capable of multi-turn, context-sensitive, instruction-following conversations at human-level fluency.
-  - **[[Code Generation]] and software development**: Autocomplete, documentation generation, test synthesis, and refactoring in IDEs and developer tools.
-  - **Document intelligence**: Summarisation, extraction, classification, and question answering over long-form documents in legal, financial, medical, and regulatory domains.
-  - **[[Generative AI]] content creation**: Text, image, video, and audio synthesis for media, marketing, education, and creative applications.
-  - **[[Agentic Workflow]] orchestration**: Foundation models serve as the reasoning core in multi-step autonomous agents that plan, use tools, browse the web, write and execute code, and coordinate sub-agents.
-  - **Scientific discovery**: Protein structure prediction, drug candidate screening, climate modelling, and materials science — applications where pre-trained representations over scientific corpora accelerate hypothesis generation.
-  - **[[Multimodal AI]] perception**: Vision-language models enable image captioning, visual question answering, document layout understanding, and embodied agent perception in robotics.
-  - **[[Retrieval-Augmented Generation]]**: Enterprise knowledge management systems use foundation models as the generative backbone, augmented by retrieval over proprietary document corpora.
-  - **[[Prompt Engineering]] and few-shot task deployment**: Rapid prototyping of new task-specific systems without labelled data or model training, using prompt design alone.
+- [[Instruction Tuning]]: Supervised fine-tuning on curated instruction-response pairs transforms a raw language model into an instruction-following assistant capable of following natural-language task descriptions.
+- [[RLHF]] (Reinforcement Learning from Human Feedback): Human preference labels train a reward model used to further fine-tune the foundation model towards outputs rated as more helpful, honest, and harmless.
+- [[In-Context Learning]]: At inference time, the model conditions on a few labelled examples embedded in the prompt to generalise to a new task without gradient updates — a distinctively emergent property of scale.
+- [[Few-Shot Learning]]: A related capability in which minimal examples suffice for high-quality task performance, eliminating the need for large labelled datasets in many practical settings.
+- [[LoRA Fine-Tuning]] and other parameter-efficient fine-tuning methods (PEFT) allow task-specific adaptation at low computational cost by updating only a small subset of parameters or low-rank adapter matrices.
+- [[Domain Adaptation]]: Fine-tuning or continual pre-training on domain-specific corpora (e.g., legal text, clinical notes, code) produces specialised variants that outperform the base model on those domains.
+- [[Prompt Engineering]]: Systematic design of input prompts exploits the model's pre-trained representations to elicit desired outputs without any parameter updates.
 
-- ### Standards and Governance Context
-  - **[[AI Safety]] and alignment**: Foundation models are the primary subject of contemporary [[AI Safety]] research, including interpretability, scalable oversight, [[RLHF]], and [[AI Alignment]] methodology, given that their emergent capabilities and broad deployment surface require novel alignment approaches.
-  - **EU AI Act**: Classifies providers of general-purpose AI models (the EU's regulatory term encompassing foundation models) with systemic risk characteristics — defined by training compute thresholds — as subject to heightened obligations including capability evaluations, incident reporting, and adversarial testing.
-  - **UK AI Safety Institute**: Conducts frontier model evaluations — pre-deployment assessments of foundation model capability and risk — targeting the largest foundation models from major AI labs.
-  - **Responsible Scaling Policies**: Labs including Anthropic publish [[Responsible Scaling Policy]] documents committing to capability-gated safety evaluations before scaling foundation models above defined thresholds.
-  - **[[Benchmark Evaluation]]**: Foundation model capability is assessed through standardised benchmarks (MMLU, HellaSwag, HumanEval, BIG-Bench, MATH, GPQA) that test reasoning, coding, factual knowledge, and instruction following across modalities.
-  - **[[Compute Governance]]**: Policy discussions increasingly target foundation model training compute as a proxy for capability and risk, with proposals for compute thresholds, export controls on AI chips, and training run registries.
-  - **Open versus closed weights**: A significant policy and ecosystem dimension is whether foundation model weights are publicly released (open-weight models: Llama, Mistral, Falcon) or held proprietary (closed models: GPT-4, Claude, Gemini). Open-weight models enable community fine-tuning and auditing; closed models provide tighter access controls.
+#### Emergent Properties
 
-- ### Current Landscape (2026)
-  - The reasoning-model paradigm has become the frontier default: following OpenAI's o1/o3 (2024), test-time (inference-time) compute reshaped how foundation models are scaled, with o1 scoring 74.4% on an IMO qualifying exam versus GPT-4o's 9.3% — but at roughly 6x the cost and 30x the latency, forcing a new training-versus-inference cost trade-off.
-  - Open-weight models have essentially closed the quality gap: Stanford HAI's 2025 AI Index found the leading open-weight-versus-closed gap on the Chatbot Arena narrowed from about 8% (Jan 2024) to 1.7% (Feb 2025), and on MMLU from roughly 16 points to 0.1 points, with permissive releases from DeepSeek, Meta Llama, Alibaba Qwen and Mistral driving adoption.
-  - Efficiency and cost collapsed: inference for GPT-3.5-equivalent quality fell more than 280-fold (roughly $20 to $0.07 per million tokens) between Nov 2022 and Oct 2024, while DeepSeek-V3 reportedly trained for around $6M against frontier runs estimated in the hundreds of millions to $1bn-plus.
-  - The competitive field broadened and Chinese labs reached near parity: US institutions produced 40 notable models in 2024 to China's 15, yet benchmark gaps (MMLU, MATH, HumanEval) shrank to low single digits, and around 90% of notable 2024 models came from industry rather than academia.
-  - Regulation moved from principle to obligation: the EU AI Act's general-purpose AI (GPAI) provider obligations took effect on 2 August 2025 (technical documentation, copyright policy, published training-data summaries; systemic-risk duties above 10^25 FLOP), the voluntary GPAI Code of Practice was finalised on 10 July 2025, and the Commission's enforcement powers and fines apply from 2 August 2026.
-  - Labs are recalibrating their openness strategies: OpenAI shipped gpt-oss-20b/120b in August 2025, its first open-weight release since GPT-2, while several previously open-first providers have begun keeping their most capable flagships proprietary, and 2025-26 releases increasingly optimise for agentic, long-horizon tool-use and multi-hundred-thousand to million-token context windows.
-  - Open challenges as of 2026 centre on the looming data wall (Epoch AI projects the usable stock of public training text could be exhausted between 2026 and 2032, pushing synthetic data), the rising energy and carbon footprint of training (Llama 3.1 405B at roughly 8,930 tons CO2), and durable gaps in reliability on long-running autonomous tasks, provenance and copyright compliance, and systemic-risk evaluation.
+- [[Emergent Capabilities]] are qualitative behaviours that arise unpredictably above certain scale thresholds — including chain-of-thought reasoning, arithmetic, code synthesis, and instruction following — not present in smaller-scale predecessors.
+- [[Context Window]] length determines the maximum information available to the model at inference time; modern foundation models have expanded context windows from thousands to millions of tokens, enabling long-document processing, multi-turn dialogue, and agentic task completion.
+- Retrieval augmentation via [[Retrieval-Augmented Generation]] extends the effective knowledge of a foundation model beyond its training cut-off by conditioning generation on documents retrieved from an external corpus at inference time.
 
-- ### References
-  - 1. Stanford HAI (2025). The 2025 AI Index Report — Technical Performance and R&D chapters. https://hai.stanford.edu/ai-index/2025-ai-index-report
-  - 2. European Commission (2025). The General-Purpose AI Code of Practice (final version, 10 July 2025). https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai
-  - 3. European Commission (2025). General-purpose AI obligations under the AI Act. https://digital-strategy.ec.europa.eu/en/factpages/general-purpose-ai-obligations-under-ai-act
-  - 4. Future of Life Institute (2025). An Introduction to the Code of Practice for General-Purpose AI. https://artificialintelligenceact.eu/introduction-to-code-of-practice/
-  - 5. Stanford HAI (2025). Chapter 1: Research and Development (2025 AI Index Report). https://hai.stanford.edu/assets/files/hai_ai-index-report-2025_chapter1_final.pdf
+### Taxonomy and Variants
 
-- ### Provenance
+- **[[Large Language Models]]**: Text-dominant foundation models trained on web-scale corpora (GPT series, Claude, Gemini, Llama). Primary output modality is text; capabilities include reasoning, coding, summarisation, dialogue, and tool use.
+- **[[Multimodal Models]]**: Foundation models trained on paired or interleaved text-image (and increasingly text-image-audio-video) data. Examples include GPT-4 (vision), Gemini, Flamingo, and [[Vision-Language-Action Models]] for robotics.
+- **[[Diffusion Model]] families**: Generative foundation models trained on image (Stable Diffusion, DALL-E), video (Sora), and audio (AudioLDM) data using denoising objectives, achieving state-of-the-art generative quality.
+- **Code foundation models**: Specialised on source code corpora, enabling [[Code Generation]], code completion, bug detection, and software synthesis (Codex, AlphaCode, DeepSeek-Coder).
+- **Scientific foundation models**: Domain-adapted models for biology (protein language models such as ESMFold), chemistry, climate modelling, and medical imaging, adapting the foundation model paradigm to structured scientific data.
+
+### Applications and Use Cases
+
+- **[[Conversational AI]] and virtual assistants**: Foundation models power dialogue systems capable of multi-turn, context-sensitive, instruction-following conversations at human-level fluency.
+- **[[Code Generation]] and software development**: Autocomplete, documentation generation, test synthesis, and refactoring in IDEs and developer tools.
+- **Document intelligence**: Summarisation, extraction, classification, and question answering over long-form documents in legal, financial, medical, and regulatory domains.
+- **[[Generative AI]] content creation**: Text, image, video, and audio synthesis for media, marketing, education, and creative applications.
+- **[[Agentic Workflow]] orchestration**: Foundation models serve as the reasoning core in multi-step autonomous agents that plan, use tools, browse the web, write and execute code, and coordinate sub-agents.
+- **Scientific discovery**: Protein structure prediction, drug candidate screening, climate modelling, and materials science — applications where pre-trained representations over scientific corpora accelerate hypothesis generation.
+- **[[Multimodal AI]] perception**: Vision-language models enable image captioning, visual question answering, document layout understanding, and embodied agent perception in robotics.
+- **[[Retrieval-Augmented Generation]]**: Enterprise knowledge management systems use foundation models as the generative backbone, augmented by retrieval over proprietary document corpora.
+- **[[Prompt Engineering]] and few-shot task deployment**: Rapid prototyping of new task-specific systems without labelled data or model training, using prompt design alone.
+
+### Standards and Governance Context
+
+- **[[AI Safety]] and alignment**: Foundation models are the primary subject of contemporary [[AI Safety]] research, including interpretability, scalable oversight, [[RLHF]], and [[AI Alignment]] methodology, given that their emergent capabilities and broad deployment surface require novel alignment approaches.
+- **EU AI Act**: Classifies providers of general-purpose AI models (the EU's regulatory term encompassing foundation models) with systemic risk characteristics — defined by training compute thresholds — as subject to heightened obligations including capability evaluations, incident reporting, and adversarial testing.
+- **UK AI Safety Institute**: Conducts frontier model evaluations — pre-deployment assessments of foundation model capability and risk — targeting the largest foundation models from major AI labs.
+- **Responsible Scaling Policies**: Labs including Anthropic publish [[Responsible Scaling Policy]] documents committing to capability-gated safety evaluations before scaling foundation models above defined thresholds.
+- **[[Benchmark Evaluation]]**: Foundation model capability is assessed through standardised benchmarks (MMLU, HellaSwag, HumanEval, BIG-Bench, MATH, GPQA) that test reasoning, coding, factual knowledge, and instruction following across modalities.
+- **[[Compute Governance]]**: Policy discussions increasingly target foundation model training compute as a proxy for capability and risk, with proposals for compute thresholds, export controls on AI chips, and training run registries.
+- **Open versus closed weights**: A significant policy and ecosystem dimension is whether foundation model weights are publicly released (open-weight models: Llama, Mistral, Falcon) or held proprietary (closed models: GPT-4, Claude, Gemini). Open-weight models enable community fine-tuning and auditing; closed models provide tighter access controls.
+
+### Current Landscape (2026)
+
+- The reasoning-model paradigm has become the frontier default: following OpenAI's o1/o3 (2024), test-time (inference-time) compute reshaped how foundation models are scaled, with o1 scoring 74.4% on an IMO qualifying exam versus GPT-4o's 9.3% — but at roughly 6x the cost and 30x the latency, forcing a new training-versus-inference cost trade-off.
+- Open-weight models have essentially closed the quality gap: Stanford HAI's 2025 AI Index found the leading open-weight-versus-closed gap on the Chatbot Arena narrowed from about 8% (Jan 2024) to 1.7% (Feb 2025), and on MMLU from roughly 16 points to 0.1 points, with permissive releases from DeepSeek, Meta Llama, Alibaba Qwen and Mistral driving adoption.
+- Efficiency and cost collapsed: inference for GPT-3.5-equivalent quality fell more than 280-fold (roughly $20 to $0.07 per million tokens) between Nov 2022 and Oct 2024, while DeepSeek-V3 reportedly trained for around $6M against frontier runs estimated in the hundreds of millions to $1bn-plus.
+- The competitive field broadened and Chinese labs reached near parity: US institutions produced 40 notable models in 2024 to China's 15, yet benchmark gaps (MMLU, MATH, HumanEval) shrank to low single digits, and around 90% of notable 2024 models came from industry rather than academia.
+- Regulation moved from principle to obligation: the EU AI Act's general-purpose AI (GPAI) provider obligations took effect on 2 August 2025 (technical documentation, copyright policy, published training-data summaries; systemic-risk duties above 10^25 FLOP), the voluntary GPAI Code of Practice was finalised on 10 July 2025, and the Commission's enforcement powers and fines apply from 2 August 2026.
+- Labs are recalibrating their openness strategies: OpenAI shipped gpt-oss-20b/120b in August 2025, its first open-weight release since GPT-2, while several previously open-first providers have begun keeping their most capable flagships proprietary, and 2025-26 releases increasingly optimise for agentic, long-horizon tool-use and multi-hundred-thousand to million-token context windows.
+- Open challenges as of 2026 centre on the looming data wall (Epoch AI projects the usable stock of public training text could be exhausted between 2026 and 2032, pushing synthetic data), the rising energy and carbon footprint of training (Llama 3.1 405B at roughly 8,930 tons CO2), and durable gaps in reliability on long-running autonomous tasks, provenance and copyright compliance, and systemic-risk evaluation.
+
+### References
+
+- 1. Stanford HAI (2025). The 2025 AI Index Report — Technical Performance and R&D chapters. https://hai.stanford.edu/ai-index/2025-ai-index-report
+- 2. European Commission (2025). The General-Purpose AI Code of Practice (final version, 10 July 2025). https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai
+- 3. European Commission (2025). General-purpose AI obligations under the AI Act. https://digital-strategy.ec.europa.eu/en/factpages/general-purpose-ai-obligations-under-ai-act
+- 4. Future of Life Institute (2025). An Introduction to the Code of Practice for General-Purpose AI. https://artificialintelligenceact.eu/introduction-to-code-of-practice/
+- 5. Stanford HAI (2025). Chapter 1: Research and Development (2025 AI Index Report). https://hai.stanford.edu/assets/files/hai_ai-index-report-2025_chapter1_final.pdf
+
+### Provenance
 

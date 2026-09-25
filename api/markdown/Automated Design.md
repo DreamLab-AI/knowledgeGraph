@@ -1,125 +1,129 @@
-
 Automated Design is the application of computational algorithms, machine learning, and optimisation techniques — spanning combinatorial search, gradient-based topology optimisation, evolutionary algorithms, reinforcement learning, and deep generative modelling — to generate, evaluate, and iteratively refine design artefacts with minimal or no step-by-step human direction. The field encompasses electronic design automation (EDA) for integrated circuits and printed circuit boards, neural architecture search (NAS) for machine-learning model topologies, topology optimisation for structural engineering, generative architectural layout synthesis, and LLM-assisted hardware description language generation. The unifying abstraction is the design space traversal guided by evaluation functions encoding physical, functional, economic, or aesthetic criteria: the algorithm explores candidate designs, evaluates each against the specified criteria, and updates its search strategy to navigate toward regions of the space satisfying design objectives. Commercial impact has been transformative across semiconductor, aerospace, automotive, and construction sectors, where design cycles have been compressed from months to days whilst exploring solution spaces too large for human enumeration.
 
-- ### Semantic Classification
+### Semantic Classification
 
-- ### Content
-  ## Compositional Relationships (Components)
-      SubClassOf(ai:AutomatedDesign
-        ObjectSomeValuesFrom(ai:hasPart ai:NeuralArchitectureSearch))
-      SubClassOf(ai:AutomatedDesign
-        ObjectSomeValuesFrom(ai:hasPart ai:TopologyOptimisation))
-      SubClassOf(ai:AutomatedDesign
-        ObjectSomeValuesFrom(ai:hasPart ai:ElectronicDesignAutomation))
-      SubClassOf(ai:AutomatedDesign
-        ObjectSomeValuesFrom(ai:hasPart ai:HyperparameterOptimisation))
-      SubClassOf(ai:AutomatedDesign
-        ObjectSomeValuesFrom(ai:hasPart ai:SurrogateModel))
-  ## Dependency Relationships
-      SubClassOf(ai:AutomatedDesign
-        ObjectSomeValuesFrom(ai:requires ai:Simulation))
-      SubClassOf(ai:AutomatedDesign
-        ObjectSomeValuesFrom(ai:requires ai:PhysicsSimulation))
-      SubClassOf(ai:AutomatedDesign
-        ObjectSomeValuesFrom(ai:requires ai:CADSoftware))
-      SubClassOf(ai:AutomatedDesign
-        ObjectSomeValuesFrom(ai:requires ai:ConstraintBasedDesign))
-      SubClassOf(ai:AutomatedDesign
-        ObjectSomeValuesFrom(ai:dependsOn ai:MultiObjectiveOptimisation))
-      SubClassOf(ai:AutomatedDesign
-        ObjectSomeValuesFrom(ai:dependsOn ai:SurrogateModel))
-  ## Capability Relationships
-      SubClassOf(ai:AutomatedDesign
-        ObjectSomeValuesFrom(ai:enables ai:GenerativeDesignTool))
-      SubClassOf(ai:AutomatedDesign
-        ObjectSomeValuesFrom(ai:enables ai:SmartManufacturing))
-      SubClassOf(ai:AutomatedDesign
-        ObjectSomeValuesFrom(ai:enables ai:DigitalTwin))
-      SubClassOf(ai:AutomatedDesign
-        ObjectSomeValuesFrom(ai:enables ai:AutoML))
-      SubClassOf(ai:AutomatedDesign
-        ObjectSomeValuesFrom(ai:enables ai:AdditiveManufacturing))
-  ## Implementation Relationships
-      SubClassOf(ai:AutomatedDesign
-        ObjectSomeValuesFrom(ai:implements ai:ParametricDesignMethodology))
-      SubClassOf(ai:AutomatedDesign
-        ObjectSomeValuesFrom(ai:implements ai:MultiObjectiveOptimisation))
-      SubClassOf(ai:AutomatedDesign
-        ObjectSomeValuesFrom(ai:implements ai:EvolutionaryAlgorithm))
-  ## Reduction Relationships
-      SubClassOf(ai:AutomatedDesign
-        ObjectSomeValuesFrom(ai:reducesTo ai:Optimisation))
-      SubClassOf(ai:AutomatedDesign
-        ObjectSomeValuesFrom(ai:reducesTo ai:GenerativeDesign))
-      SubClassOf(ai:AutomatedDesign
-        ObjectSomeValuesFrom(ai:reducesTo ai:Algorithm))
-  ## Usage Relationships
-      SubClassOf(ai:AutomatedDesign
-        ObjectSomeValuesFrom(ai:uses ai:MachineLearningDiscipline))
-      SubClassOf(ai:AutomatedDesign
-        ObjectSomeValuesFrom(ai:uses ai:DeepGenerativeModel))
-      SubClassOf(ai:AutomatedDesign
-        ObjectSomeValuesFrom(ai:uses ai:GraphNeuralNetwork))
-      SubClassOf(ai:AutomatedDesign
-        ObjectSomeValuesFrom(ai:uses ai:ReinforcementLearning))
-      SubClassOf(ai:AutomatedDesign
-        ObjectSomeValuesFrom(ai:uses ai:DiffusionModel))
-      SubClassOf(ai:AutomatedDesign
-        ObjectSomeValuesFrom(ai:uses ai:LargeLanguageModels))
-      SubClassOf(ai:AutomatedDesign
-        ObjectSomeValuesFrom(ai:uses ai:GradientDescent))
-      SubClassOf(ai:AutomatedDesign
-        ObjectSomeValuesFrom(ai:uses ai:TransferLearning))
-  ## Support Relationships
-      SubClassOf(ai:AutomatedDesign
-        ObjectSomeValuesFrom(ai:supports ai:HumanInTheLoop))
-      SubClassOf(ai:AutomatedDesign
-        ObjectSomeValuesFrom(ai:supports ai:FormalVerification))
-      SubClassOf(ai:AutomatedDesign
-        ObjectSomeValuesFrom(ai:supports ai:Explainability))
-      SubClassOf(ai:AutomatedDesign
-        ObjectSomeValuesFrom(ai:supports ai:SmartManufacturing))
-  ## Contrast Relationships
-      SubClassOf(ai:AutomatedDesign
-        ObjectSomeValuesFrom(ai:contrastsWith ai:ParametricModeling))
-      SubClassOf(ai:AutomatedDesign
-        ObjectSomeValuesFrom(ai:contrastsWith ai:ManualDesign))
+### Content
 
-  ## About
+## Compositional Relationships (Components)
+    SubClassOf(ai:AutomatedDesign
+      ObjectSomeValuesFrom(ai:hasPart ai:NeuralArchitectureSearch))
+    SubClassOf(ai:AutomatedDesign
+      ObjectSomeValuesFrom(ai:hasPart ai:TopologyOptimisation))
+    SubClassOf(ai:AutomatedDesign
+      ObjectSomeValuesFrom(ai:hasPart ai:ElectronicDesignAutomation))
+    SubClassOf(ai:AutomatedDesign
+      ObjectSomeValuesFrom(ai:hasPart ai:HyperparameterOptimisation))
+    SubClassOf(ai:AutomatedDesign
+      ObjectSomeValuesFrom(ai:hasPart ai:SurrogateModel))
+## Dependency Relationships
+    SubClassOf(ai:AutomatedDesign
+      ObjectSomeValuesFrom(ai:requires ai:Simulation))
+    SubClassOf(ai:AutomatedDesign
+      ObjectSomeValuesFrom(ai:requires ai:PhysicsSimulation))
+    SubClassOf(ai:AutomatedDesign
+      ObjectSomeValuesFrom(ai:requires ai:CADSoftware))
+    SubClassOf(ai:AutomatedDesign
+      ObjectSomeValuesFrom(ai:requires ai:ConstraintBasedDesign))
+    SubClassOf(ai:AutomatedDesign
+      ObjectSomeValuesFrom(ai:dependsOn ai:MultiObjectiveOptimisation))
+    SubClassOf(ai:AutomatedDesign
+      ObjectSomeValuesFrom(ai:dependsOn ai:SurrogateModel))
+## Capability Relationships
+    SubClassOf(ai:AutomatedDesign
+      ObjectSomeValuesFrom(ai:enables ai:GenerativeDesignTool))
+    SubClassOf(ai:AutomatedDesign
+      ObjectSomeValuesFrom(ai:enables ai:SmartManufacturing))
+    SubClassOf(ai:AutomatedDesign
+      ObjectSomeValuesFrom(ai:enables ai:DigitalTwin))
+    SubClassOf(ai:AutomatedDesign
+      ObjectSomeValuesFrom(ai:enables ai:AutoML))
+    SubClassOf(ai:AutomatedDesign
+      ObjectSomeValuesFrom(ai:enables ai:AdditiveManufacturing))
+## Implementation Relationships
+    SubClassOf(ai:AutomatedDesign
+      ObjectSomeValuesFrom(ai:implements ai:ParametricDesignMethodology))
+    SubClassOf(ai:AutomatedDesign
+      ObjectSomeValuesFrom(ai:implements ai:MultiObjectiveOptimisation))
+    SubClassOf(ai:AutomatedDesign
+      ObjectSomeValuesFrom(ai:implements ai:EvolutionaryAlgorithm))
+## Reduction Relationships
+    SubClassOf(ai:AutomatedDesign
+      ObjectSomeValuesFrom(ai:reducesTo ai:Optimisation))
+    SubClassOf(ai:AutomatedDesign
+      ObjectSomeValuesFrom(ai:reducesTo ai:GenerativeDesign))
+    SubClassOf(ai:AutomatedDesign
+      ObjectSomeValuesFrom(ai:reducesTo ai:Algorithm))
+## Usage Relationships
+    SubClassOf(ai:AutomatedDesign
+      ObjectSomeValuesFrom(ai:uses ai:MachineLearningDiscipline))
+    SubClassOf(ai:AutomatedDesign
+      ObjectSomeValuesFrom(ai:uses ai:DeepGenerativeModel))
+    SubClassOf(ai:AutomatedDesign
+      ObjectSomeValuesFrom(ai:uses ai:GraphNeuralNetwork))
+    SubClassOf(ai:AutomatedDesign
+      ObjectSomeValuesFrom(ai:uses ai:ReinforcementLearning))
+    SubClassOf(ai:AutomatedDesign
+      ObjectSomeValuesFrom(ai:uses ai:DiffusionModel))
+    SubClassOf(ai:AutomatedDesign
+      ObjectSomeValuesFrom(ai:uses ai:LargeLanguageModels))
+    SubClassOf(ai:AutomatedDesign
+      ObjectSomeValuesFrom(ai:uses ai:GradientDescent))
+    SubClassOf(ai:AutomatedDesign
+      ObjectSomeValuesFrom(ai:uses ai:TransferLearning))
+## Support Relationships
+    SubClassOf(ai:AutomatedDesign
+      ObjectSomeValuesFrom(ai:supports ai:HumanInTheLoop))
+    SubClassOf(ai:AutomatedDesign
+      ObjectSomeValuesFrom(ai:supports ai:FormalVerification))
+    SubClassOf(ai:AutomatedDesign
+      ObjectSomeValuesFrom(ai:supports ai:Explainability))
+    SubClassOf(ai:AutomatedDesign
+      ObjectSomeValuesFrom(ai:supports ai:SmartManufacturing))
+## Contrast Relationships
+    SubClassOf(ai:AutomatedDesign
+      ObjectSomeValuesFrom(ai:contrastsWith ai:ParametricModeling))
+    SubClassOf(ai:AutomatedDesign
+      ObjectSomeValuesFrom(ai:contrastsWith ai:ManualDesign))
 
-  Automated Design has roots reaching to the earliest days of digital computing. In the 1960s and 1970s, IBM and Bell Labs developed programs to automatically place and route transistors on integrated circuit layouts, driven by the rapidly increasing component counts that made manual placement impractical. By the 1980s, [[Electronic Design Automation]] vendors — most notably Cadence Design Systems (founded 1988) and Synopsys (founded 1986) — had constructed commercial tool suites covering logic synthesis, static timing analysis, placement and routing, and design-rule checking, enabling the semiconductor industry to scale from thousands to billions of transistors per die. These EDA tools represent the first industrially deployed automated design systems at scale, and the semiconductor industry's dependence on them remains total in 2026: no modern chip could be designed, verified, or manufactured without automated design tools at every stage of the development flow.
+## About
 
-  The structural mathematics underlying physical automated design emerged in parallel with EDA. Structural [[Topology Optimisation]], pioneered by Bendsøe and Kikuchi in 1988 through the Solid Isotropic Material with Penalisation (SIMP) method, provided a mathematically rigorous framework for redistributing material density within a finite-element design domain to minimise compliance (maximise stiffness) subject to volume constraints. SIMP iteratively solves the finite-element structural analysis equations, computes sensitivity gradients of the objective with respect to each element's material density, and applies [[Gradient Descent]] updates to move material toward regions where it contributes most to structural performance and away from regions where it contributes least. The process produces characteristic biomorphic lattice structures — forms that look organic because they have been optimised for the same physical laws that shaped biological structures through evolution. Early industrial SIMP applications appeared in aerospace: Airbus brackets, Boeing seat track fittings, and helicopter rotor hub components produced through topology-optimised designs and [[Additive Manufacturing]] achieved 30–70% mass reductions relative to conventional designs, directly translating to fuel and operational cost savings over the aircraft's lifetime.
+Automated Design has roots reaching to the earliest days of digital computing. In the 1960s and 1970s, IBM and Bell Labs developed programs to automatically place and route transistors on integrated circuit layouts, driven by the rapidly increasing component counts that made manual placement impractical. By the 1980s, [[Electronic Design Automation]] vendors — most notably Cadence Design Systems (founded 1988) and Synopsys (founded 1986) — had constructed commercial tool suites covering logic synthesis, static timing analysis, placement and routing, and design-rule checking, enabling the semiconductor industry to scale from thousands to billions of transistors per die. These EDA tools represent the first industrially deployed automated design systems at scale, and the semiconductor industry's dependence on them remains total in 2026: no modern chip could be designed, verified, or manufactured without automated design tools at every stage of the development flow.
 
-  The introduction of [[Neural Architecture Search]] in 2016–2017 extended automated design from physical artefacts to [[Machine Learning Discipline]] models themselves. NAS treats the network architecture (layer types, channel widths, skip connections, activation functions) as a design space and searches it using [[Reinforcement Learning]] (Zoph and Le, 2016), evolutionary strategies (Real et al., 2017), or differentiable architecture search ([[Gradient Descent]] over a continuous relaxation of the architecture space — DARTS, Liu et al., 2018). The original NAS paper by Zoph and Le consumed 800 GPUs over four weeks to discover architectures matching the best human-designed networks on CIFAR-10; subsequent efficiency improvements (one-shot NAS, weight sharing, zero-cost proxies) reduced search costs by orders of magnitude, making NAS accessible without large compute clusters. By 2024–2026, LLM-guided NAS approaches (RZ-NAS and related methods) use [[Large Language Models]] to generate architecture proposals with humanoid reflections and training-free zero-cost proxy metrics to evaluate them, further reducing the search cost whilst maintaining the diversity of explored topologies. NAS is now a standard sub-component of [[AutoML]] pipelines, and architectures discovered by NAS — most notably the EfficientNet family (Tan and Le, 2019) and MobileNet-V3 — have been widely deployed in production computer vision systems at Google, Apple, and across the mobile device ecosystem.
+The structural mathematics underlying physical automated design emerged in parallel with EDA. Structural [[Topology Optimisation]], pioneered by Bendsøe and Kikuchi in 1988 through the Solid Isotropic Material with Penalisation (SIMP) method, provided a mathematically rigorous framework for redistributing material density within a finite-element design domain to minimise compliance (maximise stiffness) subject to volume constraints. SIMP iteratively solves the finite-element structural analysis equations, computes sensitivity gradients of the objective with respect to each element's material density, and applies [[Gradient Descent]] updates to move material toward regions where it contributes most to structural performance and away from regions where it contributes least. The process produces characteristic biomorphic lattice structures — forms that look organic because they have been optimised for the same physical laws that shaped biological structures through evolution. Early industrial SIMP applications appeared in aerospace: Airbus brackets, Boeing seat track fittings, and helicopter rotor hub components produced through topology-optimised designs and [[Additive Manufacturing]] achieved 30–70% mass reductions relative to conventional designs, directly translating to fuel and operational cost savings over the aircraft's lifetime.
 
-  ## Components / Architecture
+The introduction of [[Neural Architecture Search]] in 2016–2017 extended automated design from physical artefacts to [[Machine Learning Discipline]] models themselves. NAS treats the network architecture (layer types, channel widths, skip connections, activation functions) as a design space and searches it using [[Reinforcement Learning]] (Zoph and Le, 2016), evolutionary strategies (Real et al., 2017), or differentiable architecture search ([[Gradient Descent]] over a continuous relaxation of the architecture space — DARTS, Liu et al., 2018). The original NAS paper by Zoph and Le consumed 800 GPUs over four weeks to discover architectures matching the best human-designed networks on CIFAR-10; subsequent efficiency improvements (one-shot NAS, weight sharing, zero-cost proxies) reduced search costs by orders of magnitude, making NAS accessible without large compute clusters. By 2024–2026, LLM-guided NAS approaches (RZ-NAS and related methods) use [[Large Language Models]] to generate architecture proposals with humanoid reflections and training-free zero-cost proxy metrics to evaluate them, further reducing the search cost whilst maintaining the diversity of explored topologies. NAS is now a standard sub-component of [[AutoML]] pipelines, and architectures discovered by NAS — most notably the EfficientNet family (Tan and Le, 2019) and MobileNet-V3 — have been widely deployed in production computer vision systems at Google, Apple, and across the mobile device ecosystem.
 
-  The computational infrastructure of automated design is best understood as a layered architecture: a representation layer encoding the design as a searchable parameter space, an evaluation layer assessing candidate designs against objectives, a search layer navigating the parameter space, and an output layer generating manufacturable artefacts.
+## Components / Architecture
 
-  **Design Representation**
-  - Parametric representations encode designs as vectors of numerical parameters (dimensions, material properties, layer counts, connection weights). Efficient for [[Gradient Descent]]-based optimisation but limited to topologies pre-specified by the parametric template.
-  - Topological representations (finite-element density grids for [[Topology Optimisation]], directed acyclic graphs for [[Neural Architecture Search]], netlist graphs for [[Electronic Design Automation]]) allow structural variation but require non-gradient search methods.
-  - Implicit neural representations (neural radiance fields, occupancy networks, signed distance functions) enable smooth interpolation between topologically distinct designs and are well-suited to [[Diffusion Model]]-based generative approaches.
-  - Grammar-based representations (shape grammars, L-systems, PCG grammars) encode design intent as production rules, constraining the search space to structurally valid designs by construction.
+The computational infrastructure of automated design is best understood as a layered architecture: a representation layer encoding the design as a searchable parameter space, an evaluation layer assessing candidate designs against objectives, a search layer navigating the parameter space, and an output layer generating manufacturable artefacts.
+
+**Design Representation**
+
+- Parametric representations encode designs as vectors of numerical parameters (dimensions, material properties, layer counts, connection weights). Efficient for [[Gradient Descent]]-based optimisation but limited to topologies pre-specified by the parametric template.
+- Topological representations (finite-element density grids for [[Topology Optimisation]], directed acyclic graphs for [[Neural Architecture Search]], netlist graphs for [[Electronic Design Automation]]) allow structural variation but require non-gradient search methods.
+- Implicit neural representations (neural radiance fields, occupancy networks, signed distance functions) enable smooth interpolation between topologically distinct designs and are well-suited to [[Diffusion Model]]-based generative approaches.
+- Grammar-based representations (shape grammars, L-systems, PCG grammars) encode design intent as production rules, constraining the search space to structurally valid designs by construction.
 
   **Evaluation Layer**
-  - [[Physics Simulation]] (finite element analysis for structural mechanics, computational fluid dynamics, electromagnetic field simulation) provides high-fidelity objective function evaluation at significant computational cost. FEA for a single topology-optimisation iteration may take minutes to hours for complex 3D geometries at production mesh resolution.
-  - [[Surrogate Model]]s (Gaussian process regression, neural network approximators, [[Graph Neural Network]] predictors) learn to approximate simulation outputs from design parameters, enabling evaluation at millisecond latency after initial training. Cadence's Mental Model architecture (2025) grounds agent actions in EDA tool constraints via neural surrogate models trained on proprietary chip-design datasets, illustrating the central role of high-quality surrogate models in making agentic automated-design workflows computationally tractable at production scale.
-  - Multi-fidelity evaluation hierarchies use cheap low-fidelity surrogates for early-stage exploration and progressively more expensive high-fidelity simulators for candidate refinement — concentrating computational budget on the most promising design regions.
-  - [[Formal Verification]] provides exact correctness guarantees for digital logic designs (model checking, SAT/SMT solving, equivalence checking), supplementing simulation-based evaluation in safety-critical applications where statistical sampling cannot provide sufficient confidence.
+
+- [[Physics Simulation]] (finite element analysis for structural mechanics, computational fluid dynamics, electromagnetic field simulation) provides high-fidelity objective function evaluation at significant computational cost. FEA for a single topology-optimisation iteration may take minutes to hours for complex 3D geometries at production mesh resolution.
+- [[Surrogate Model]]s (Gaussian process regression, neural network approximators, [[Graph Neural Network]] predictors) learn to approximate simulation outputs from design parameters, enabling evaluation at millisecond latency after initial training. Cadence's Mental Model architecture (2025) grounds agent actions in EDA tool constraints via neural surrogate models trained on proprietary chip-design datasets, illustrating the central role of high-quality surrogate models in making agentic automated-design workflows computationally tractable at production scale.
+- Multi-fidelity evaluation hierarchies use cheap low-fidelity surrogates for early-stage exploration and progressively more expensive high-fidelity simulators for candidate refinement — concentrating computational budget on the most promising design regions.
+- [[Formal Verification]] provides exact correctness guarantees for digital logic designs (model checking, SAT/SMT solving, equivalence checking), supplementing simulation-based evaluation in safety-critical applications where statistical sampling cannot provide sufficient confidence.
 
   **Search Layer**
-  - [[Gradient Descent]]-based methods (topology optimisation, differentiable NAS, parameter optimisation) are most efficient when the evaluation function is differentiable with respect to design parameters, enabling direct computation of improvement directions. SIMP topology optimisation typically converges in 50–200 iterations; DARTS NAS converges in hours on a single GPU.
-  - [[Evolutionary Algorithm]]s (genetic algorithms, CMA-ES, NSGA-II for [[Multi-Objective Optimisation]]) operate on populations of candidate designs, applying crossover and mutation operators to produce new candidates and selection to retain the best. Evolutionary methods are parameter-free, handle discrete and mixed design spaces, and naturally produce Pareto-optimal sets for multi-objective problems, but converge more slowly than gradient methods for smooth, unimodal objectives.
-  - [[Reinforcement Learning]] trains a policy to propose design modifications or, in NAS, architecture structures, using evaluation results as reward signals. The Google chip floorplanning work (Mirhoseini et al., Nature 2021) used RL to place chip macro blocks on a grid, claiming human-competitive results in under six hours. This claim was substantially contested by Markov et al. (2023), who demonstrated through meta-analysis that the RL method was outperformed by both simulated annealing and commercially available placement tools on equivalent benchmarks, and that the Nature paper withheld critical methodology steps. The controversy highlights the difficulty of fair comparison in automated design and the risk of over-claiming in high-profile AI design publications.
-  - [[Deep Generative Model]] approaches (variational autoencoders, generative adversarial networks, [[Diffusion Model]]s) learn distributions over valid designs from datasets of prior design instances, enabling fast sampling of novel candidates and latent-space interpolation between known designs. By 2024–2025, [[Diffusion Model]]-based approaches are being applied to 2D and 3D geometry generation for product design, architectural concept generation, and molecular structure generation in drug discovery.
+
+- [[Gradient Descent]]-based methods (topology optimisation, differentiable NAS, parameter optimisation) are most efficient when the evaluation function is differentiable with respect to design parameters, enabling direct computation of improvement directions. SIMP topology optimisation typically converges in 50–200 iterations; DARTS NAS converges in hours on a single GPU.
+- [[Evolutionary Algorithm]]s (genetic algorithms, CMA-ES, NSGA-II for [[Multi-Objective Optimisation]]) operate on populations of candidate designs, applying crossover and mutation operators to produce new candidates and selection to retain the best. Evolutionary methods are parameter-free, handle discrete and mixed design spaces, and naturally produce Pareto-optimal sets for multi-objective problems, but converge more slowly than gradient methods for smooth, unimodal objectives.
+- [[Reinforcement Learning]] trains a policy to propose design modifications or, in NAS, architecture structures, using evaluation results as reward signals. The Google chip floorplanning work (Mirhoseini et al., Nature 2021) used RL to place chip macro blocks on a grid, claiming human-competitive results in under six hours. This claim was substantially contested by Markov et al. (2023), who demonstrated through meta-analysis that the RL method was outperformed by both simulated annealing and commercially available placement tools on equivalent benchmarks, and that the Nature paper withheld critical methodology steps. The controversy highlights the difficulty of fair comparison in automated design and the risk of over-claiming in high-profile AI design publications.
+- [[Deep Generative Model]] approaches (variational autoencoders, generative adversarial networks, [[Diffusion Model]]s) learn distributions over valid designs from datasets of prior design instances, enabling fast sampling of novel candidates and latent-space interpolation between known designs. By 2024–2025, [[Diffusion Model]]-based approaches are being applied to 2D and 3D geometry generation for product design, architectural concept generation, and molecular structure generation in drug discovery.
 
   **Output and Downstream Integration**
-  - Geometry post-processing converts optimised density fields or implicit representations into boundary representations (B-rep) or mesh formats compatible with [[CAD Software]] and manufacturing toolchains.
-  - Design-rule checking validates generated designs against manufacturing constraints before committing to production.
-  - [[Digital Twin]] integration connects generated designs to operational monitoring: the design is instantiated as a digital twin that accumulates sensor data over its operational lifetime, feeding performance data back to improve future automated-design iterations.
-  - [[Additive Manufacturing]] compatibility analysis ensures generated geometries are producible by the target manufacturing process: support structure requirements, minimum feature size, surface finish achievability, and build orientation optimisation.
+
+- Geometry post-processing converts optimised density fields or implicit representations into boundary representations (B-rep) or mesh formats compatible with [[CAD Software]] and manufacturing toolchains.
+- Design-rule checking validates generated designs against manufacturing constraints before committing to production.
+- [[Digital Twin]] integration connects generated designs to operational monitoring: the design is instantiated as a digital twin that accumulates sensor data over its operational lifetime, feeding performance data back to improve future automated-design iterations.
+- [[Additive Manufacturing]] compatibility analysis ensures generated geometries are producible by the target manufacturing process: support structure requirements, minimum feature size, surface finish achievability, and build orientation optimisation.
 
   ## Use Cases / Major Families
 
@@ -167,27 +171,30 @@ Automated Design is the application of computational algorithms, machine learnin
   The UK has a strong position in automated design research and industry, anchored by world-class academic groups in structural optimisation, electronic design automation, and ML-based design tools, combined with a significant industrial presence in aerospace, semiconductor, and defence sectors that are primary consumers of automated design technology.
 
   **Academic research:**
-  - University of Manchester, School of Engineering: Structural topology optimisation research under Professor Shen et al. applies advanced SIMP methods to additive manufacturing constraints, with industrial collaboration through Rolls-Royce and BAE Systems for aerospace and defence component optimisation. The Manchester Digital Futures hub investigates AI-augmented design processes, including human-AI collaborative design workflows where automated tools generate alternatives for human curation.
-  - Imperial College London, Department of Civil Engineering and Aeronautics: Level-set and phase-field topology optimisation methods developed at Imperial have been applied to aircraft structural components in collaboration with Airbus UK. The Aeronautics department's computational design group has published extensively on combined topology optimisation and additive manufacturing path planning for titanium aerospace components.
-  - University of Cambridge, Engineering Design Centre: NAS and [[AutoML]] research at Cambridge investigates efficient architecture search methods for edge deployment, with particular focus on architectures for the Arm Cortex-M processor family used in IoT and embedded systems — a collaboration reflecting Arm's Cambridge headquarters and the university's proximity to the Cambridge Silicon Fen semiconductor ecosystem.
-  - University of Edinburgh, School of Informatics: Evolutionary approaches to NAS and multi-objective optimisation for ML models at the Edinburgh ML lab have produced contributions to the DARTS and weight-sharing NAS literature. The group's work on differentiable programming has applications to differentiable design optimisation across physical and computational design spaces.
-  - University of Southampton, Aeronautics and Astronautics: Southampton's computational engineering group has produced internationally recognised research in computational fluid dynamics (CFD)-driven aerodynamic shape optimisation, with adjoint-based gradient computation enabling gradient-descent optimisation of full aircraft external geometry. The Rolls-Royce University Technology Centre at Southampton focuses on turbine blade geometry optimisation using AI-augmented CFD design loops.
-  - University of Leeds, School of Mechanical Engineering: Structural automated design for biomedical implants (orthopaedic and dental applications) — particularly patient-specific implants generated from medical imaging data and optimised for osseointegration. The Leeds Digital Health group collaborates with NHS Trusts to evaluate clinical workflows for automatically designed orthopaedic devices.
-  - University of Sheffield, AMRC (Advanced Manufacturing Research Centre): As part of the High Value Manufacturing Catapult, the AMRC investigates automated design workflows for aerospace manufacturing — including NAS for inspection system architectures, topology optimisation for composite structure design, and AI-driven process parameter optimisation for near-net-shape titanium components.
+
+- University of Manchester, School of Engineering: Structural topology optimisation research under Professor Shen et al. applies advanced SIMP methods to additive manufacturing constraints, with industrial collaboration through Rolls-Royce and BAE Systems for aerospace and defence component optimisation. The Manchester Digital Futures hub investigates AI-augmented design processes, including human-AI collaborative design workflows where automated tools generate alternatives for human curation.
+- Imperial College London, Department of Civil Engineering and Aeronautics: Level-set and phase-field topology optimisation methods developed at Imperial have been applied to aircraft structural components in collaboration with Airbus UK. The Aeronautics department's computational design group has published extensively on combined topology optimisation and additive manufacturing path planning for titanium aerospace components.
+- University of Cambridge, Engineering Design Centre: NAS and [[AutoML]] research at Cambridge investigates efficient architecture search methods for edge deployment, with particular focus on architectures for the Arm Cortex-M processor family used in IoT and embedded systems — a collaboration reflecting Arm's Cambridge headquarters and the university's proximity to the Cambridge Silicon Fen semiconductor ecosystem.
+- University of Edinburgh, School of Informatics: Evolutionary approaches to NAS and multi-objective optimisation for ML models at the Edinburgh ML lab have produced contributions to the DARTS and weight-sharing NAS literature. The group's work on differentiable programming has applications to differentiable design optimisation across physical and computational design spaces.
+- University of Southampton, Aeronautics and Astronautics: Southampton's computational engineering group has produced internationally recognised research in computational fluid dynamics (CFD)-driven aerodynamic shape optimisation, with adjoint-based gradient computation enabling gradient-descent optimisation of full aircraft external geometry. The Rolls-Royce University Technology Centre at Southampton focuses on turbine blade geometry optimisation using AI-augmented CFD design loops.
+- University of Leeds, School of Mechanical Engineering: Structural automated design for biomedical implants (orthopaedic and dental applications) — particularly patient-specific implants generated from medical imaging data and optimised for osseointegration. The Leeds Digital Health group collaborates with NHS Trusts to evaluate clinical workflows for automatically designed orthopaedic devices.
+- University of Sheffield, AMRC (Advanced Manufacturing Research Centre): As part of the High Value Manufacturing Catapult, the AMRC investigates automated design workflows for aerospace manufacturing — including NAS for inspection system architectures, topology optimisation for composite structure design, and AI-driven process parameter optimisation for near-net-shape titanium components.
 
   **Industry and commercial presence:**
-  - Arm Ltd., Cambridge: Arm's machine learning group applies NAS to optimise inference architectures for Arm Mali and Ethos NPU processors, with area, power, and performance jointly optimised using multi-objective NAS. Arm's IP licensing model means NAS-discovered architectures deployed across billions of devices represent the largest-scale real-world application of neural architecture search in the UK ecosystem.
-  - Siemens Electronic Design Automation Ltd (UK subsidiary): Siemens EDA has UK operations serving the British semiconductor and defence electronics sectors, and the Siemens EDA AI tools announced at DAC 2025 are directly available to UK design teams at firms such as Infineon UK, Dialog Semiconductor (now part of Renesas), and Spirent Communications.
-  - Rolls-Royce (Derby): Rolls-Royce's Computational Engineering group applies topology optimisation extensively to turbine component design, with weight reduction in fan blades, disc structures, and nacelle components reducing fuel consumption and environmental impact. The group collaborates with Imperial, Southampton, and Oxford on advanced automated design methods.
-  - BAE Systems (Warton, Lancashire; Rochester, Kent): BAE Systems Digital Intelligence division applies automated design to airframe structures, electronic warfare system architectures, and radar array geometries, with security requirements creating demand for internally developed automated-design platforms rather than commercial cloud services.
-  - Dyson (Malmesbury, Wiltshire): Dyson's engineering AI team applies automated design methods to motor, fluid dynamics, and acoustic component design for consumer products, using proprietary generative design tools integrated with in-house high-fidelity simulation.
-  - e-Therapeutics (Oxford): Drug target discovery and automated molecular design using reinforcement learning and diffusion models, a representative example of the growing UK life sciences automated-design cluster.
+
+- Arm Ltd., Cambridge: Arm's machine learning group applies NAS to optimise inference architectures for Arm Mali and Ethos NPU processors, with area, power, and performance jointly optimised using multi-objective NAS. Arm's IP licensing model means NAS-discovered architectures deployed across billions of devices represent the largest-scale real-world application of neural architecture search in the UK ecosystem.
+- Siemens Electronic Design Automation Ltd (UK subsidiary): Siemens EDA has UK operations serving the British semiconductor and defence electronics sectors, and the Siemens EDA AI tools announced at DAC 2025 are directly available to UK design teams at firms such as Infineon UK, Dialog Semiconductor (now part of Renesas), and Spirent Communications.
+- Rolls-Royce (Derby): Rolls-Royce's Computational Engineering group applies topology optimisation extensively to turbine component design, with weight reduction in fan blades, disc structures, and nacelle components reducing fuel consumption and environmental impact. The group collaborates with Imperial, Southampton, and Oxford on advanced automated design methods.
+- BAE Systems (Warton, Lancashire; Rochester, Kent): BAE Systems Digital Intelligence division applies automated design to airframe structures, electronic warfare system architectures, and radar array geometries, with security requirements creating demand for internally developed automated-design platforms rather than commercial cloud services.
+- Dyson (Malmesbury, Wiltshire): Dyson's engineering AI team applies automated design methods to motor, fluid dynamics, and acoustic component design for consumer products, using proprietary generative design tools integrated with in-house high-fidelity simulation.
+- e-Therapeutics (Oxford): Drug target discovery and automated molecular design using reinforcement learning and diffusion models, a representative example of the growing UK life sciences automated-design cluster.
 
   **Northern England industrial applications:**
-  - Sheffield (AMRC and Steel/Advanced Manufacturing): Automated topology optimisation for forged and additively manufactured structural components, with net-shape titanium aerostructure components produced by Sheffield-based firms under BAE Systems supply chain programmes.
-  - Leeds (medical devices and healthcare): Patient-specific implant design from CT data, automated for orthopaedic and dental applications, with the Leeds General Infirmary involved in clinical evaluation of automatically designed implant geometries.
-  - Newcastle (offshore energy and marine): Automated structural design for offshore wind turbine support structures and marine propulsion components, where the North Sea focus creates a cluster of firms applying topology optimisation to steel and composite maritime structures.
-  - Manchester (digital design and data analytics): Automated design tools for data centre thermal management and semiconductor packaging, reflecting Manchester's strength in computational engineering and proximity to the growing Northern data centre corridor.
+
+- Sheffield (AMRC and Steel/Advanced Manufacturing): Automated topology optimisation for forged and additively manufactured structural components, with net-shape titanium aerostructure components produced by Sheffield-based firms under BAE Systems supply chain programmes.
+- Leeds (medical devices and healthcare): Patient-specific implant design from CT data, automated for orthopaedic and dental applications, with the Leeds General Infirmary involved in clinical evaluation of automatically designed implant geometries.
+- Newcastle (offshore energy and marine): Automated structural design for offshore wind turbine support structures and marine propulsion components, where the North Sea focus creates a cluster of firms applying topology optimisation to steel and composite maritime structures.
+- Manchester (digital design and data analytics): Automated design tools for data centre thermal management and semiconductor packaging, reflecting Manchester's strength in computational engineering and proximity to the growing Northern data centre corridor.
 
   ## Future Directions (2026-2030)
 
@@ -233,127 +240,141 @@ Automated Design is the application of computational algorithms, machine learnin
 
   Definitions of core automated design terminology as used in the research literature and commercial tools:
 
-  - **Topology Optimisation**: computational method for optimising material layout within a design domain subject to load, boundary, and manufacturing constraints
-  - **SIMP (Solid Isotropic Material with Penalisation)**: the standard continuous density-field approach to topology optimisation; material properties scale as density^p (typically p=3)
-  - **Neural Architecture Search (NAS)**: automated search over neural network architecture choices (layer types, widths, connectivity) to find topologies maximising performance metrics
-  - **DARTS (Differentiable Architecture Search)**: NAS method using continuous relaxation of architecture choices to enable [[Gradient Descent]]-based search
-  - **EDA (Electronic Design Automation)**: the domain of automated tools for designing electronic circuits and systems, from logic synthesis through physical verification
-  - **HDL (Hardware Description Language)**: formal language (Verilog, VHDL, SystemVerilog) for specifying digital circuit behaviour; the target for LLM-based EDA code generation
-  - **RTL (Register Transfer Level)**: abstraction level for hardware description specifying data flow between registers; the primary NL-to-RTL generation target
-  - **Surrogate Model**: an approximation of an expensive simulation or objective function, trained on a sample of evaluations, used to reduce evaluation cost during optimisation
-  - **Multi-Objective Optimisation**: optimisation over multiple conflicting objectives simultaneously, seeking the Pareto-optimal set of trade-off solutions
-  - **Pareto Frontier**: the set of solutions for which no improvement in any objective is possible without degrading at least one other objective
-  - **Generative Design**: commercial term (Autodesk) for multi-objective topology optimisation packaged for non-specialist CAD users; mathematically equivalent to topology optimisation
-  - **Hyperparameter Optimisation (HPO)**: automated search for optimal hyperparameter values for a machine learning model or pipeline
-  - **Design Space**: the set of all feasible designs expressible in a given representation; bounded by design variables and constraints
-  - **Compliance (structural)**: the inverse of stiffness; the standard objective minimised in structural topology optimisation (lower compliance = stiffer structure)
-  - **Volume Fraction**: the ratio of material volume to total design domain volume; the standard constraint in topology optimisation
-  - **FEA (Finite Element Analysis)**: numerical method for simulating structural, thermal, or electromagnetic performance by discretising the design domain into finite elements
-  - **Differentiable Simulation**: simulation implementations whose outputs can be differentiated with respect to input parameters, enabling gradient-based optimisation through the simulation
+- **Topology Optimisation**: computational method for optimising material layout within a design domain subject to load, boundary, and manufacturing constraints
+- **SIMP (Solid Isotropic Material with Penalisation)**: the standard continuous density-field approach to topology optimisation; material properties scale as density^p (typically p=3)
+- **Neural Architecture Search (NAS)**: automated search over neural network architecture choices (layer types, widths, connectivity) to find topologies maximising performance metrics
+- **DARTS (Differentiable Architecture Search)**: NAS method using continuous relaxation of architecture choices to enable [[Gradient Descent]]-based search
+- **EDA (Electronic Design Automation)**: the domain of automated tools for designing electronic circuits and systems, from logic synthesis through physical verification
+- **HDL (Hardware Description Language)**: formal language (Verilog, VHDL, SystemVerilog) for specifying digital circuit behaviour; the target for LLM-based EDA code generation
+- **RTL (Register Transfer Level)**: abstraction level for hardware description specifying data flow between registers; the primary NL-to-RTL generation target
+- **Surrogate Model**: an approximation of an expensive simulation or objective function, trained on a sample of evaluations, used to reduce evaluation cost during optimisation
+- **Multi-Objective Optimisation**: optimisation over multiple conflicting objectives simultaneously, seeking the Pareto-optimal set of trade-off solutions
+- **Pareto Frontier**: the set of solutions for which no improvement in any objective is possible without degrading at least one other objective
+- **Generative Design**: commercial term (Autodesk) for multi-objective topology optimisation packaged for non-specialist CAD users; mathematically equivalent to topology optimisation
+- **Hyperparameter Optimisation (HPO)**: automated search for optimal hyperparameter values for a machine learning model or pipeline
+- **Design Space**: the set of all feasible designs expressible in a given representation; bounded by design variables and constraints
+- **Compliance (structural)**: the inverse of stiffness; the standard objective minimised in structural topology optimisation (lower compliance = stiffer structure)
+- **Volume Fraction**: the ratio of material volume to total design domain volume; the standard constraint in topology optimisation
+- **FEA (Finite Element Analysis)**: numerical method for simulating structural, thermal, or electromagnetic performance by discretising the design domain into finite elements
+- **Differentiable Simulation**: simulation implementations whose outputs can be differentiated with respect to input parameters, enabling gradient-based optimisation through the simulation
 
   ## Key Algorithms and Performance Benchmarks
 
   The following algorithm specifications and benchmark results provide quantitative grounding for the qualitative comparisons in the literature and allow practitioners to calibrate computational requirements and expected performance.
 
   **SIMP Topology Optimisation — Key Metrics**
-  - Standard MBB beam (60x20 elements, V_f=0.5): compliance = 188.37, 86 FEA iterations to convergence using OC update
-  - Computational cost: O(n^2) for direct FEA solver (n = number of elements); O(n^1.5) for iterative solver (preconditioned conjugate gradient)
-  - Memory requirement: approximately 8n bytes for density field + stiffness matrix storage
-  - Parallelisation: embarassingly parallel sensitivity computation; GPU-accelerated FEA reduces wall-clock time 10-100x
-  - Manufacturing constraint enforcement: overhang constraint adds ~15-25% to convergence iterations; minimum length scale adds ~10-20%
-  - Practical problem sizes (2026): up to 10^8 elements on single GPU node; up to 10^9 elements on HPC clusters
+
+- Standard MBB beam (60x20 elements, V_f=0.5): compliance = 188.37, 86 FEA iterations to convergence using OC update
+- Computational cost: O(n^2) for direct FEA solver (n = number of elements); O(n^1.5) for iterative solver (preconditioned conjugate gradient)
+- Memory requirement: approximately 8n bytes for density field + stiffness matrix storage
+- Parallelisation: embarassingly parallel sensitivity computation; GPU-accelerated FEA reduces wall-clock time 10-100x
+- Manufacturing constraint enforcement: overhang constraint adds ~15-25% to convergence iterations; minimum length scale adds ~10-20%
+- Practical problem sizes (2026): up to 10^8 elements on single GPU node; up to 10^9 elements on HPC clusters
 
   **DARTS Neural Architecture Search — Key Metrics**
-  - CIFAR-10 final accuracy: 97.24% (± 0.09) — competitive with state-of-the-art hand-designed architectures
-  - Search cost: 4 GPU-days on a single V100 GPU for the full CIFAR-10 search
-  - Architecture transfer: CIFAR-10 architecture transferred to ImageNet achieves 73.3% top-1 accuracy at 4.7M parameters
-  - Known limitations: performance collapse on certain search spaces (skip connections dominate); mitigated by perturbation-based DARTS-PT
-  - Zero-cost proxy search cost: under 1 second per architecture on GPU; achieves 0.7-0.85 Spearman correlation with trained accuracy depending on search space
+
+- CIFAR-10 final accuracy: 97.24% (± 0.09) — competitive with state-of-the-art hand-designed architectures
+- Search cost: 4 GPU-days on a single V100 GPU for the full CIFAR-10 search
+- Architecture transfer: CIFAR-10 architecture transferred to ImageNet achieves 73.3% top-1 accuracy at 4.7M parameters
+- Known limitations: performance collapse on certain search spaces (skip connections dominate); mitigated by perturbation-based DARTS-PT
+- Zero-cost proxy search cost: under 1 second per architecture on GPU; achieves 0.7-0.85 Spearman correlation with trained accuracy depending on search space
 
   **Once-for-All (OFA) — Deployment-Time NAS**
-  - Trains a single supernet supporting 10^19 sub-networks (varying depth, width, kernel size)
-  - Training cost: 1200 GPU-hours (once); deployment-time search: under 1 minute without retraining
-  - Achieves 80.0% top-1 ImageNet accuracy at 595 MFLOP (equivalent to MobileNetV3-Large)
-  - Demonstrated on diverse hardware: Pixel 1, Note 10, V100 GPU — each with different optimal sub-network
+
+- Trains a single supernet supporting 10^19 sub-networks (varying depth, width, kernel size)
+- Training cost: 1200 GPU-hours (once); deployment-time search: under 1 minute without retraining
+- Achieves 80.0% top-1 ImageNet accuracy at 595 MFLOP (equivalent to MobileNetV3-Large)
+- Demonstrated on diverse hardware: Pixel 1, Note 10, V100 GPU — each with different optimal sub-network
 
   **Synopsys/Cadence AI-Enhanced EDA — Industry Performance**
-  - Synopsys Fusion Compiler ML-augmented placement: 5-15% wire length reduction vs baseline on representative SoC designs
-  - Cadence JedAI natural language query: 40-60% reduction in time to find relevant documentation vs manual search
-  - LLM-based Verilog generation correctness: 45.3% pass rate (single-pass); 78.9% pass rate with EDA-tool-feedback iteration loop (3 iterations)
-  - AI-augmented DRC (design rule checking): 30% reduction in first-pass violation count vs conventional flow on 7nm node designs
+
+- Synopsys Fusion Compiler ML-augmented placement: 5-15% wire length reduction vs baseline on representative SoC designs
+- Cadence JedAI natural language query: 40-60% reduction in time to find relevant documentation vs manual search
+- LLM-based Verilog generation correctness: 45.3% pass rate (single-pass); 78.9% pass rate with EDA-tool-feedback iteration loop (3 iterations)
+- AI-augmented DRC (design rule checking): 30% reduction in first-pass violation count vs conventional flow on 7nm node designs
 
   ## Commercial Tool Landscape (2026)
 
   The commercial automated design tool market in 2026 spans EDA, structural CAD, generative design platforms, and NAS / AutoML services. Key tools and vendors:
 
   **Electronic Design Automation (EDA)**
-  - Synopsys Fusion Compiler: ML-augmented placement and routing; Synopsys.ai Copilot for NL-to-EDA queries; AgentEngineer multi-agent RTL development framework
-  - Cadence Innovus: AI-assisted timing closure and congestion management; Cadence JedAI for natural language EDA assistance; CadenceLIVE 2026 focus on agentic AI for 3D IC design
-  - Siemens EDA AI (Calibre, Xcelium, Questa): generative AI schematic design; enterprise-grade security and customisable access; unveiled at DAC 2025
-  - NVIDIA ChipNeMo: specialised LLM for chip design (RTL coding, EDA scripting, bug summarisation); integrated with NVIDIA's own chip design flows
-  - Cadence JedAI: multimodal AI assistant integrated across Cadence design flow for technical queries and guided automation
-  - Synopsys.ai Copilot: LLM-based assistant across synthesis, implementation, verification; RTL generation and debug
+
+- Synopsys Fusion Compiler: ML-augmented placement and routing; Synopsys.ai Copilot for NL-to-EDA queries; AgentEngineer multi-agent RTL development framework
+- Cadence Innovus: AI-assisted timing closure and congestion management; Cadence JedAI for natural language EDA assistance; CadenceLIVE 2026 focus on agentic AI for 3D IC design
+- Siemens EDA AI (Calibre, Xcelium, Questa): generative AI schematic design; enterprise-grade security and customisable access; unveiled at DAC 2025
+- NVIDIA ChipNeMo: specialised LLM for chip design (RTL coding, EDA scripting, bug summarisation); integrated with NVIDIA's own chip design flows
+- Cadence JedAI: multimodal AI assistant integrated across Cadence design flow for technical queries and guided automation
+- Synopsys.ai Copilot: LLM-based assistant across synthesis, implementation, verification; RTL generation and debug
 
   **Structural Topology Optimisation**
-  - Autodesk Generative Design (Fusion 360): cloud-based multi-method topology optimisation; manufacturing method constraints; Pareto-optimal result sets
-  - nTopology: lattice and topology optimisation for [[Additive Manufacturing]]; implicit geometry representations; API-driven automation
-  - Altair Inspire (OptiStruct): topology optimisation with manufacturing constraints; integrated FEA; aerospace and automotive focus
-  - Ansys Mechanical / Discovery: gradient-based topology optimisation; multi-physics coupling; embedded in Ansys Workbench simulation environment
-  - Siemens NX Topology Optimiser: integrated with NX CAD environment; direct B-rep output for manufacturing; part-of-tool-suite advantage
+
+- Autodesk Generative Design (Fusion 360): cloud-based multi-method topology optimisation; manufacturing method constraints; Pareto-optimal result sets
+- nTopology: lattice and topology optimisation for [[Additive Manufacturing]]; implicit geometry representations; API-driven automation
+- Altair Inspire (OptiStruct): topology optimisation with manufacturing constraints; integrated FEA; aerospace and automotive focus
+- Ansys Mechanical / Discovery: gradient-based topology optimisation; multi-physics coupling; embedded in Ansys Workbench simulation environment
+- Siemens NX Topology Optimiser: integrated with NX CAD environment; direct B-rep output for manufacturing; part-of-tool-suite advantage
 
   **Generative Design / Architectural**
-  - Autodesk Forma (formerly Spacemaker): site layout generation; solar, noise, density optimisation; BIM integration
-  - Ark Design AI: AI platform for architectural schematic design; floor plan generation from area and functional requirements
-  - Finch (Computational Design): graph-based apartment plan generation; regulatory compliance checking; developer market focus
-  - TestFit: site planning automation for multifamily residential; programme optimisation against land and zoning constraints
+
+- Autodesk Forma (formerly Spacemaker): site layout generation; solar, noise, density optimisation; BIM integration
+- Ark Design AI: AI platform for architectural schematic design; floor plan generation from area and functional requirements
+- Finch (Computational Design): graph-based apartment plan generation; regulatory compliance checking; developer market focus
+- TestFit: site planning automation for multifamily residential; programme optimisation against land and zoning constraints
 
   **Neural Architecture Search and AutoML**
-  - Google Cloud AutoML: proprietary NAS for image classification and object detection on Google Cloud TPU infrastructure
-  - Azure Automated ML: end-to-end ML pipeline search including feature engineering, model selection, and [[Hyperparameter Optimisation]]
-  - Amazon SageMaker Autopilot: automated ML pipeline with NAS and HPO; direct SageMaker deployment integration
-  - Auto-sklearn 2.0 (open-source): Bayesian optimisation over scikit-learn ML pipelines; ensemble construction
-  - SMAC / Optuna / Hyperopt (open-source): standalone Bayesian optimisation for HPO; framework-agnostic
-  - Ludwig AutoML (open-source): declarative ML pipeline definition with automated component search; Uber / Linux Foundation stewardship
+
+- Google Cloud AutoML: proprietary NAS for image classification and object detection on Google Cloud TPU infrastructure
+- Azure Automated ML: end-to-end ML pipeline search including feature engineering, model selection, and [[Hyperparameter Optimisation]]
+- Amazon SageMaker Autopilot: automated ML pipeline with NAS and HPO; direct SageMaker deployment integration
+- Auto-sklearn 2.0 (open-source): Bayesian optimisation over scikit-learn ML pipelines; ensemble construction
+- SMAC / Optuna / Hyperopt (open-source): standalone Bayesian optimisation for HPO; framework-agnostic
+- Ludwig AutoML (open-source): declarative ML pipeline definition with automated component search; Uber / Linux Foundation stewardship
 
   **Molecular Design**
-  - Insilico Medicine Chemistry42: generative chemistry platform using [[Deep Generative Model]]s for lead candidate generation; demonstrated Phase II clinical candidate
-  - Schrödinger FEP+: free energy perturbation-based molecular property prediction integrated with generative design
-  - Exscientia Centaur Chemist: AI-human collaborative drug design; automated synthesis planning integration
-  - Recursion Pharmaceuticals RxRx: large-scale biological imaging and ML-guided compound optimisation platform
+
+- Insilico Medicine Chemistry42: generative chemistry platform using [[Deep Generative Model]]s for lead candidate generation; demonstrated Phase II clinical candidate
+- Schrödinger FEP+: free energy perturbation-based molecular property prediction integrated with generative design
+- Exscientia Centaur Chemist: AI-human collaborative drug design; automated synthesis planning integration
+- Recursion Pharmaceuticals RxRx: large-scale biological imaging and ML-guided compound optimisation platform
 
   ## Domain Taxonomy of Automated Design Methods
 
   Automated design methods are best understood through a taxonomy that organises them by design domain, problem representation, and search paradigm. The following taxonomy covers the major families of automated design methods as practised in 2026.
 
   **Physical Structural Design**
-  - Topology Optimisation (continuous density fields, SIMP method, [[Gradient Descent]], FEA-driven): aerospace brackets, automotive chassis, medical implants, wind turbine blades
-  - Shape Optimisation (boundary parametrisation, [[Gradient Descent]] on shape parameters, adjoint sensitivity): aerodynamic surfaces, turbine blade profiles, hydrodynamic hull forms
-  - Size Optimisation (discrete structural member sizing, cross-section selection): steel frame structures, truss bridges, mechanical linkages
-  - Multi-Scale Optimisation (lattice infill structures, graded material density): [[Additive Manufacturing]]-native components, bone-mimicking implants, heat exchanger cores
+
+- Topology Optimisation (continuous density fields, SIMP method, [[Gradient Descent]], FEA-driven): aerospace brackets, automotive chassis, medical implants, wind turbine blades
+- Shape Optimisation (boundary parametrisation, [[Gradient Descent]] on shape parameters, adjoint sensitivity): aerodynamic surfaces, turbine blade profiles, hydrodynamic hull forms
+- Size Optimisation (discrete structural member sizing, cross-section selection): steel frame structures, truss bridges, mechanical linkages
+- Multi-Scale Optimisation (lattice infill structures, graded material density): [[Additive Manufacturing]]-native components, bone-mimicking implants, heat exchanger cores
 
   **Electronic Circuit Design**
-  - Logic Synthesis (HDL to gate-level netlist, technology mapping, [[Formal Verification]] integration): digital ASICs, FPGAs
-  - Placement and Routing (physical layout of gates and wires, wire length minimisation, timing closure): system-on-chip design, PCB layout
-  - Macro Floorplanning (block-level placement of large IP blocks, [[Reinforcement Learning]]-assisted, controversial as per AlphaChip debate): complex SoC design
-  - Analog Circuit Synthesis (transistor sizing, topology selection, [[Evolutionary Algorithm]]s): RF amplifiers, ADC/DAC circuits, power management ICs
-  - Natural Language to RTL (LLM-based [[Hardware Description Language]] generation, EDA-tool-feedback-guided iteration): specification-to-implementation automation
+
+- Logic Synthesis (HDL to gate-level netlist, technology mapping, [[Formal Verification]] integration): digital ASICs, FPGAs
+- Placement and Routing (physical layout of gates and wires, wire length minimisation, timing closure): system-on-chip design, PCB layout
+- Macro Floorplanning (block-level placement of large IP blocks, [[Reinforcement Learning]]-assisted, controversial as per AlphaChip debate): complex SoC design
+- Analog Circuit Synthesis (transistor sizing, topology selection, [[Evolutionary Algorithm]]s): RF amplifiers, ADC/DAC circuits, power management ICs
+- Natural Language to RTL (LLM-based [[Hardware Description Language]] generation, EDA-tool-feedback-guided iteration): specification-to-implementation automation
 
   **Machine Learning Model Design**
-  - Neural Architecture Search (cell search, macro search, differentiable search, zero-cost search): CNN, Transformer, and GNN architecture optimisation
-  - [[Hyperparameter Optimisation]] (Bayesian optimisation, Hyperband, successive halving): learning rate, regularisation, batch size, loss function selection
-  - AutoML Pipeline Optimisation (feature engineering, preprocessing, model selection, ensembling): end-to-end ML pipeline design
-  - Efficient Model Derivation (pruning, quantisation, knowledge distillation, NAS for target hardware): model compression for edge inference on specific hardware targets
+
+- Neural Architecture Search (cell search, macro search, differentiable search, zero-cost search): CNN, Transformer, and GNN architecture optimisation
+- [[Hyperparameter Optimisation]] (Bayesian optimisation, Hyperband, successive halving): learning rate, regularisation, batch size, loss function selection
+- AutoML Pipeline Optimisation (feature engineering, preprocessing, model selection, ensembling): end-to-end ML pipeline design
+- Efficient Model Derivation (pruning, quantisation, knowledge distillation, NAS for target hardware): model compression for edge inference on specific hardware targets
 
   **Architectural and Built Environment Design**
-  - Generative Site Layout (multi-objective optimisation of building footprint, orientation, massing for solar, noise, density): urban planning and site development
-  - Structural System Generation (AI-generated structural systems for buildings optimised for carbon, cost, seismic performance): building structures
-  - MEP Layout Automation (mechanical, electrical, plumbing routing subject to clearance and performance constraints): building services design
-  - Facade Optimisation (parametric facade performance optimisation for solar gain, daylighting, thermal mass): energy-efficient building envelopes
+
+- Generative Site Layout (multi-objective optimisation of building footprint, orientation, massing for solar, noise, density): urban planning and site development
+- Structural System Generation (AI-generated structural systems for buildings optimised for carbon, cost, seismic performance): building structures
+- MEP Layout Automation (mechanical, electrical, plumbing routing subject to clearance and performance constraints): building services design
+- Facade Optimisation (parametric facade performance optimisation for solar gain, daylighting, thermal mass): energy-efficient building envelopes
 
   **Molecular and Materials Design**
-  - De Novo Drug Design ([[Diffusion Model]]s, VAE, RL, property-optimised generative models for bioactive molecules): pharmaceutical candidate generation
-  - Materials Property Optimisation ([[Machine Learning Discipline]] surrogate models of DFT calculations, genetic algorithms over composition space): battery electrode materials, structural alloys, catalysts
-  - Protein Design (inverse folding models, diffusion-based protein backbone generation): therapeutic proteins, industrial enzymes, structural biomaterials
+
+- De Novo Drug Design ([[Diffusion Model]]s, VAE, RL, property-optimised generative models for bioactive molecules): pharmaceutical candidate generation
+- Materials Property Optimisation ([[Machine Learning Discipline]] surrogate models of DFT calculations, genetic algorithms over composition space): battery electrode materials, structural alloys, catalysts
+- Protein Design (inverse folding models, diffusion-based protein backbone generation): therapeutic proteins, industrial enzymes, structural biomaterials
 
   ## Mathematical Foundations of Automated Design
 
@@ -418,5 +439,5 @@ Automated Design is the application of computational algorithms, machine learnin
   27. PatSnap Eureka (2025). Generative AI Topology Optimisation: Patent Landscape Analysis. PatSnap Research. patsnap.com.
   28. Systematic Review on Neural Architecture Search (2024). Artificial Intelligence Review. Springer Nature. doi:10.1007/s10462-024-11058-w.
 
-- ### Provenance
+### Provenance
 

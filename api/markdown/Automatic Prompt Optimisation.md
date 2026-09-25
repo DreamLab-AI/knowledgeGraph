@@ -1,119 +1,118 @@
-
 Automatic Prompt Optimisation (APO) is the family of algorithmic techniques that search for, refine, or generate the most effective natural-language or soft-token instructions for a large language model, replacing manual prompt crafting with automated search processes guided by an objective function. Methods span gradient-free discrete search (APE, OPRO, ProTeGi), evolutionary self-improvement loops (PromptBreeder, GEPA), LLM-as-optimiser meta-prompting, textual back-propagation (TextGrad), and compiler-based programmatic optimisation (DSPy), each scoring candidate prompts against a held-out evaluation metric and iteratively retaining the highest-performing variants. APO addresses the brittleness and labour cost of hand-tuned prompting and has become a core component of production LLM pipelines, enabling measurable, reproducible performance gains without requiring access to model weights.
 
-- ### Semantic Classification
+### Semantic Classification
 
-- ### Content
+### Content
 
-  ## Compositional Relationships (Components)
-      SubClassOf(ai:AutomaticPromptOptimisation
-        ObjectSomeValuesFrom(ai:hasPart ai:AutomaticPromptEngineering))
-      SubClassOf(ai:AutomaticPromptOptimisation
-        ObjectSomeValuesFrom(ai:hasPart ai:DSPy))
-      SubClassOf(ai:AutomaticPromptOptimisation
-        ObjectSomeValuesFrom(ai:hasPart ai:OPRO))
-      SubClassOf(ai:AutomaticPromptOptimisation
-        ObjectSomeValuesFrom(ai:hasPart ai:ProTeGi))
-      SubClassOf(ai:AutomaticPromptOptimisation
-        ObjectSomeValuesFrom(ai:hasPart ai:TextGrad))
-      SubClassOf(ai:AutomaticPromptOptimisation
-        ObjectSomeValuesFrom(ai:hasPart ai:PromptBreeder))
-      SubClassOf(ai:AutomaticPromptOptimisation
-        ObjectSomeValuesFrom(ai:hasPart ai:SoftPromptTuning))
-      SubClassOf(ai:AutomaticPromptOptimisation
-        ObjectSomeValuesFrom(ai:hasPart ai:PrefixTuning))
+## Compositional Relationships (Components)
+    SubClassOf(ai:AutomaticPromptOptimisation
+      ObjectSomeValuesFrom(ai:hasPart ai:AutomaticPromptEngineering))
+    SubClassOf(ai:AutomaticPromptOptimisation
+      ObjectSomeValuesFrom(ai:hasPart ai:DSPy))
+    SubClassOf(ai:AutomaticPromptOptimisation
+      ObjectSomeValuesFrom(ai:hasPart ai:OPRO))
+    SubClassOf(ai:AutomaticPromptOptimisation
+      ObjectSomeValuesFrom(ai:hasPart ai:ProTeGi))
+    SubClassOf(ai:AutomaticPromptOptimisation
+      ObjectSomeValuesFrom(ai:hasPart ai:TextGrad))
+    SubClassOf(ai:AutomaticPromptOptimisation
+      ObjectSomeValuesFrom(ai:hasPart ai:PromptBreeder))
+    SubClassOf(ai:AutomaticPromptOptimisation
+      ObjectSomeValuesFrom(ai:hasPart ai:SoftPromptTuning))
+    SubClassOf(ai:AutomaticPromptOptimisation
+      ObjectSomeValuesFrom(ai:hasPart ai:PrefixTuning))
 
-  ## Dependency Relationships
-      SubClassOf(ai:AutomaticPromptOptimisation
-        ObjectSomeValuesFrom(ai:requires ai:LargeLanguageModel))
-      SubClassOf(ai:AutomaticPromptOptimisation
-        ObjectSomeValuesFrom(ai:requires ai:InContextLearning))
-      SubClassOf(ai:AutomaticPromptOptimisation
-        ObjectSomeValuesFrom(ai:requires ai:InstructionFollowing))
-      SubClassOf(ai:AutomaticPromptOptimisation
-        ObjectSomeValuesFrom(ai:requires ai:EvaluationBenchmark))
-      SubClassOf(ai:AutomaticPromptOptimisation
-        ObjectSomeValuesFrom(ai:dependsOn ai:TransformerArchitecture))
-      SubClassOf(ai:AutomaticPromptOptimisation
-        ObjectSomeValuesFrom(ai:dependsOn ai:ContextWindow))
-      SubClassOf(ai:AutomaticPromptOptimisation
-        ObjectSomeValuesFrom(ai:dependsOn ai:FewShotPrompting))
+## Dependency Relationships
+    SubClassOf(ai:AutomaticPromptOptimisation
+      ObjectSomeValuesFrom(ai:requires ai:LargeLanguageModel))
+    SubClassOf(ai:AutomaticPromptOptimisation
+      ObjectSomeValuesFrom(ai:requires ai:InContextLearning))
+    SubClassOf(ai:AutomaticPromptOptimisation
+      ObjectSomeValuesFrom(ai:requires ai:InstructionFollowing))
+    SubClassOf(ai:AutomaticPromptOptimisation
+      ObjectSomeValuesFrom(ai:requires ai:EvaluationBenchmark))
+    SubClassOf(ai:AutomaticPromptOptimisation
+      ObjectSomeValuesFrom(ai:dependsOn ai:TransformerArchitecture))
+    SubClassOf(ai:AutomaticPromptOptimisation
+      ObjectSomeValuesFrom(ai:dependsOn ai:ContextWindow))
+    SubClassOf(ai:AutomaticPromptOptimisation
+      ObjectSomeValuesFrom(ai:dependsOn ai:FewShotPrompting))
 
-  ## Capability Relationships
-      SubClassOf(ai:AutomaticPromptOptimisation
-        ObjectSomeValuesFrom(ai:enables ai:AgenticSystem))
-      SubClassOf(ai:AutomaticPromptOptimisation
-        ObjectSomeValuesFrom(ai:enables ai:RetrievalAugmentedGeneration))
-      SubClassOf(ai:AutomaticPromptOptimisation
-        ObjectSomeValuesFrom(ai:enables ai:CodeGeneration))
-      SubClassOf(ai:AutomaticPromptOptimisation
-        ObjectSomeValuesFrom(ai:enables ai:ReasoningTraces))
-      SubClassOf(ai:AutomaticPromptOptimisation
-        ObjectSomeValuesFrom(ai:enables ai:StructuredOutput))
-      SubClassOf(ai:AutomaticPromptOptimisation
-        ObjectSomeValuesFrom(ai:supports ai:AIAlignment))
-      SubClassOf(ai:AutomaticPromptOptimisation
-        ObjectSomeValuesFrom(ai:supports ai:EvaluationBenchmarks))
+## Capability Relationships
+    SubClassOf(ai:AutomaticPromptOptimisation
+      ObjectSomeValuesFrom(ai:enables ai:AgenticSystem))
+    SubClassOf(ai:AutomaticPromptOptimisation
+      ObjectSomeValuesFrom(ai:enables ai:RetrievalAugmentedGeneration))
+    SubClassOf(ai:AutomaticPromptOptimisation
+      ObjectSomeValuesFrom(ai:enables ai:CodeGeneration))
+    SubClassOf(ai:AutomaticPromptOptimisation
+      ObjectSomeValuesFrom(ai:enables ai:ReasoningTraces))
+    SubClassOf(ai:AutomaticPromptOptimisation
+      ObjectSomeValuesFrom(ai:enables ai:StructuredOutput))
+    SubClassOf(ai:AutomaticPromptOptimisation
+      ObjectSomeValuesFrom(ai:supports ai:AIAlignment))
+    SubClassOf(ai:AutomaticPromptOptimisation
+      ObjectSomeValuesFrom(ai:supports ai:EvaluationBenchmarks))
 
-  ## Implementation Relationships
-      SubClassOf(ai:AutomaticPromptOptimisation
-        ObjectSomeValuesFrom(ai:implements ai:EvolutionaryAlgorithm))
-      SubClassOf(ai:AutomaticPromptOptimisation
-        ObjectSomeValuesFrom(ai:implements ai:BayesianOptimisation))
-      SubClassOf(ai:AutomaticPromptOptimisation
-        ObjectSomeValuesFrom(ai:implements ai:MetaLearning))
-      SubClassOf(ai:AutomaticPromptOptimisation
-        ObjectSomeValuesFrom(ai:implements ai:ReinforcementLearning))
-      SubClassOf(ai:AutomaticPromptOptimisation
-        ObjectSomeValuesFrom(ai:implements ai:ActiveLearning))
+## Implementation Relationships
+    SubClassOf(ai:AutomaticPromptOptimisation
+      ObjectSomeValuesFrom(ai:implements ai:EvolutionaryAlgorithm))
+    SubClassOf(ai:AutomaticPromptOptimisation
+      ObjectSomeValuesFrom(ai:implements ai:BayesianOptimisation))
+    SubClassOf(ai:AutomaticPromptOptimisation
+      ObjectSomeValuesFrom(ai:implements ai:MetaLearning))
+    SubClassOf(ai:AutomaticPromptOptimisation
+      ObjectSomeValuesFrom(ai:implements ai:ReinforcementLearning))
+    SubClassOf(ai:AutomaticPromptOptimisation
+      ObjectSomeValuesFrom(ai:implements ai:ActiveLearning))
 
-  ## Reduction Relationships
-      SubClassOf(ai:AutomaticPromptOptimisation
-        ObjectSomeValuesFrom(ai:reducesTo ai:PromptEngineering))
-      SubClassOf(ai:AutomaticPromptOptimisation
-        ObjectSomeValuesFrom(ai:reducesTo ai:InContextLearning))
-      SubClassOf(ai:AutomaticPromptOptimisation
-        ObjectSomeValuesFrom(ai:reducesTo ai:MetaLearning))
-      SubClassOf(ai:AutomaticPromptOptimisation
-        ObjectSomeValuesFrom(ai:reducesTo ai:BlackBoxOptimisation))
-      SubClassOf(ai:AutomaticPromptOptimisation
-        ObjectSomeValuesFrom(ai:reducesTo ai:FewShotLearning))
+## Reduction Relationships
+    SubClassOf(ai:AutomaticPromptOptimisation
+      ObjectSomeValuesFrom(ai:reducesTo ai:PromptEngineering))
+    SubClassOf(ai:AutomaticPromptOptimisation
+      ObjectSomeValuesFrom(ai:reducesTo ai:InContextLearning))
+    SubClassOf(ai:AutomaticPromptOptimisation
+      ObjectSomeValuesFrom(ai:reducesTo ai:MetaLearning))
+    SubClassOf(ai:AutomaticPromptOptimisation
+      ObjectSomeValuesFrom(ai:reducesTo ai:BlackBoxOptimisation))
+    SubClassOf(ai:AutomaticPromptOptimisation
+      ObjectSomeValuesFrom(ai:reducesTo ai:FewShotLearning))
 
-  ## Contrastive Relationships
-      SubClassOf(ai:AutomaticPromptOptimisation
-        ObjectSomeValuesFrom(ai:contrastsWith ai:FullFineTuning))
-      SubClassOf(ai:AutomaticPromptOptimisation
-        ObjectSomeValuesFrom(ai:contrastsWith ai:SoftPromptTuning))
-      SubClassOf(ai:AutomaticPromptOptimisation
-        ObjectSomeValuesFrom(ai:contrastsWith ai:ManualPromptEngineering))
-      SubClassOf(ai:AutomaticPromptOptimisation
-        ObjectSomeValuesFrom(ai:supports ai:HallucinationReduction))
-      SubClassOf(ai:AutomaticPromptOptimisation
-        ObjectSomeValuesFrom(ai:supports ai:BiasReduction))
-      SubClassOf(ai:AutomaticPromptOptimisation
-        ObjectSomeValuesFrom(ai:supports ai:PromptCaching))
+## Contrastive Relationships
+    SubClassOf(ai:AutomaticPromptOptimisation
+      ObjectSomeValuesFrom(ai:contrastsWith ai:FullFineTuning))
+    SubClassOf(ai:AutomaticPromptOptimisation
+      ObjectSomeValuesFrom(ai:contrastsWith ai:SoftPromptTuning))
+    SubClassOf(ai:AutomaticPromptOptimisation
+      ObjectSomeValuesFrom(ai:contrastsWith ai:ManualPromptEngineering))
+    SubClassOf(ai:AutomaticPromptOptimisation
+      ObjectSomeValuesFrom(ai:supports ai:HallucinationReduction))
+    SubClassOf(ai:AutomaticPromptOptimisation
+      ObjectSomeValuesFrom(ai:supports ai:BiasReduction))
+    SubClassOf(ai:AutomaticPromptOptimisation
+      ObjectSomeValuesFrom(ai:supports ai:PromptCaching))
 
-  ## About
+## About
 
-  Automatic Prompt Optimisation (APO) emerged from the observation that the performance of [[Large Language Models]] is exquisitely sensitive to the exact phrasing, structure, and exemplar selection of their input instructions, yet hand-tuning these prompts is laborious, non-reproducible, and dependent on practitioner intuition. The foundational insight motivating APO is that prompt selection is itself an optimisation problem: given an objective function measuring task performance and a space of candidate prompts, automated search can discover instructions that outperform those crafted by skilled engineers. The seminal work on Automatic Prompt Engineering (APE, Zhou et al. 2022) demonstrated this by using an LLM to generate and score instruction candidates, surpassing human-authored prompts on 24 out of 24 instruction-induction tasks from natural instruction datasets; APE-generated prompts scored on average 3.5 percentage points higher than human-authored instructions on the BIG-Bench Hard suite. Subsequent work diversified the search strategies: Optimisation by PROmpting (OPRO, Yang et al. 2024) maintained a trajectory of prompt–score pairs that an LLM treats as a meta-in-context optimisation problem, iteratively generating improved candidates without gradient information; on GSM8K grade-school maths, OPRO elevated accuracy from 63.2% (hand-authored) to 77.8% on GPT-4 — a 14.6-point gain. ProTeGi (Pryzant et al. 2023) edited prompts via natural-language critiques identifying systematic model errors, using beam search and bandit-guided selection; evaluation on 9 classification and generation benchmarks showed average 7.4% absolute improvement over zero-shot baselines. PromptBreeder (Fernando et al. 2023) applied evolutionary self-improvement, treating both the task-prompt and the mutation-prompt as co-evolving populations; it showed superior performance over APE and human prompts on 13 of 18 BIG-Bench tasks. TextGrad (Yuksekgonul et al. 2024) drew an explicit analogy to gradient descent: a "backward engine" LLM generates textual feedback for each module in a multi-step pipeline, propagating error signals through compositions of LLM calls analogously to backpropagation through a computational graph; on multi-step medical and scientific reasoning tasks, TextGrad improved accuracy by 15–22% over chain-of-thought prompting alone.
+Automatic Prompt Optimisation (APO) emerged from the observation that the performance of [[Large Language Models]] is exquisitely sensitive to the exact phrasing, structure, and exemplar selection of their input instructions, yet hand-tuning these prompts is laborious, non-reproducible, and dependent on practitioner intuition. The foundational insight motivating APO is that prompt selection is itself an optimisation problem: given an objective function measuring task performance and a space of candidate prompts, automated search can discover instructions that outperform those crafted by skilled engineers. The seminal work on Automatic Prompt Engineering (APE, Zhou et al. 2022) demonstrated this by using an LLM to generate and score instruction candidates, surpassing human-authored prompts on 24 out of 24 instruction-induction tasks from natural instruction datasets; APE-generated prompts scored on average 3.5 percentage points higher than human-authored instructions on the BIG-Bench Hard suite. Subsequent work diversified the search strategies: Optimisation by PROmpting (OPRO, Yang et al. 2024) maintained a trajectory of prompt–score pairs that an LLM treats as a meta-in-context optimisation problem, iteratively generating improved candidates without gradient information; on GSM8K grade-school maths, OPRO elevated accuracy from 63.2% (hand-authored) to 77.8% on GPT-4 — a 14.6-point gain. ProTeGi (Pryzant et al. 2023) edited prompts via natural-language critiques identifying systematic model errors, using beam search and bandit-guided selection; evaluation on 9 classification and generation benchmarks showed average 7.4% absolute improvement over zero-shot baselines. PromptBreeder (Fernando et al. 2023) applied evolutionary self-improvement, treating both the task-prompt and the mutation-prompt as co-evolving populations; it showed superior performance over APE and human prompts on 13 of 18 BIG-Bench tasks. TextGrad (Yuksekgonul et al. 2024) drew an explicit analogy to gradient descent: a "backward engine" LLM generates textual feedback for each module in a multi-step pipeline, propagating error signals through compositions of LLM calls analogously to backpropagation through a computational graph; on multi-step medical and scientific reasoning tasks, TextGrad improved accuracy by 15–22% over chain-of-thought prompting alone.
 
-  The most industrially impactful APO framework is [[DSPy]] (Khattab et al. 2024, ICLR), which reframes LLM pipelines as declarative programs with parameterised Signature modules and compiles them end-to-end using optimisers including MIPRO (bootstrapped few-shot with Bayesian hyperparameter search), COPRO (coordinate ascent over per-module instructions), and GEPA (genetic Pareto optimisation, July 2025), reporting 12–65% improvement over hand-written baseline prompts on reasoning, classification, and retrieval tasks. The DSPy Signature abstraction is particularly powerful: rather than writing a detailed English prompt, the engineer declares `question: str -> answer: str` and the DSPy compiler infers task description, few-shot examples, and chain-of-thought instructions jointly, then optimises all modules simultaneously using Bayesian search over the combined hyperparameter space of instruction phrasing and demonstration selection. DSPy v3.0 (late 2025) extended support to multimodal inputs, vision-language Signatures, and a streamlit-based prompt inspection UI enabling practitioners to audit which prompt variants were evaluated and why the optimiser selected the winner, cementing its status as the de-facto standard for programmatic prompt compilation in enterprise pipelines. By December 2025, enterprise adopters including Databricks (classification and RAG optimisation; reported 40% reduction in LLM API call costs via shorter optimised prompts), JetBlue (chatbot latency reduction after replacing LangChain with DSPy; processing speed improvement of 3×), Replit (code generation quality), VMware (RAG pipeline accuracy), and Moody's (financial workflow automation) had deployed DSPy-based APO pipelines in production.
+The most industrially impactful APO framework is [[DSPy]] (Khattab et al. 2024, ICLR), which reframes LLM pipelines as declarative programs with parameterised Signature modules and compiles them end-to-end using optimisers including MIPRO (bootstrapped few-shot with Bayesian hyperparameter search), COPRO (coordinate ascent over per-module instructions), and GEPA (genetic Pareto optimisation, July 2025), reporting 12–65% improvement over hand-written baseline prompts on reasoning, classification, and retrieval tasks. The DSPy Signature abstraction is particularly powerful: rather than writing a detailed English prompt, the engineer declares `question: str -> answer: str` and the DSPy compiler infers task description, few-shot examples, and chain-of-thought instructions jointly, then optimises all modules simultaneously using Bayesian search over the combined hyperparameter space of instruction phrasing and demonstration selection. DSPy v3.0 (late 2025) extended support to multimodal inputs, vision-language Signatures, and a streamlit-based prompt inspection UI enabling practitioners to audit which prompt variants were evaluated and why the optimiser selected the winner, cementing its status as the de-facto standard for programmatic prompt compilation in enterprise pipelines. By December 2025, enterprise adopters including Databricks (classification and RAG optimisation; reported 40% reduction in LLM API call costs via shorter optimised prompts), JetBlue (chatbot latency reduction after replacing LangChain with DSPy; processing speed improvement of 3×), Replit (code generation quality), VMware (RAG pipeline accuracy), and Moody's (financial workflow automation) had deployed DSPy-based APO pipelines in production.
 
-  APO splits into two broad paradigms along the continuous/discrete axis. Discrete (hard-prompt) optimisation operates in the space of natural-language strings and requires no gradient signal from the target model, making it applicable to black-box API-accessible models — a critical practical advantage when practitioners have access only to inference endpoints such as OpenAI's GPT-4o or Anthropic's Claude 3.5 Sonnet APIs. Continuous (soft-prompt) optimisation includes Prefix Tuning (Li and Liang 2021) and Soft Prompt Tuning (Lester et al. 2021), which prepend learned continuous vectors to the input sequence and optimise them via standard gradient descent on frozen model weights; these approaches achieve near full fine-tuning accuracy with 1000× fewer trainable parameters (10,000–200,000 parameters vs the billions of the base model) but require white-box model access and are vulnerable to distribution shift when the base model is updated. P-Tuning v2 (Liu et al. 2022) extended prefix tuning to all layers rather than only the input layer, further closing the gap with full fine-tuning on understanding tasks like NER and QA. An emerging third category — meta-optimisation — trains or prompts an LLM specifically to serve as a prompt optimiser, exemplified by metaTextGrad (2025) which optimises the TextGrad optimiser itself (achieving second-order gains of 5–12% additional accuracy beyond single-level TextGrad), and automated red-teaming frameworks which use APO to discover adversarial prompts probing safety boundaries and model refusal behaviour. The EU AI Act's Article 15 mandate for high-risk system red-teaming has accelerated adversarial APO research in the European context.
+APO splits into two broad paradigms along the continuous/discrete axis. Discrete (hard-prompt) optimisation operates in the space of natural-language strings and requires no gradient signal from the target model, making it applicable to black-box API-accessible models — a critical practical advantage when practitioners have access only to inference endpoints such as OpenAI's GPT-4o or Anthropic's Claude 3.5 Sonnet APIs. Continuous (soft-prompt) optimisation includes Prefix Tuning (Li and Liang 2021) and Soft Prompt Tuning (Lester et al. 2021), which prepend learned continuous vectors to the input sequence and optimise them via standard gradient descent on frozen model weights; these approaches achieve near full fine-tuning accuracy with 1000× fewer trainable parameters (10,000–200,000 parameters vs the billions of the base model) but require white-box model access and are vulnerable to distribution shift when the base model is updated. P-Tuning v2 (Liu et al. 2022) extended prefix tuning to all layers rather than only the input layer, further closing the gap with full fine-tuning on understanding tasks like NER and QA. An emerging third category — meta-optimisation — trains or prompts an LLM specifically to serve as a prompt optimiser, exemplified by metaTextGrad (2025) which optimises the TextGrad optimiser itself (achieving second-order gains of 5–12% additional accuracy beyond single-level TextGrad), and automated red-teaming frameworks which use APO to discover adversarial prompts probing safety boundaries and model refusal behaviour. The EU AI Act's Article 15 mandate for high-risk system red-teaming has accelerated adversarial APO research in the European context.
 
-  ## Mathematical Framework
+## Mathematical Framework
 
-  The formal structure of discrete APO can be stated as a combinatorial optimisation problem. Let P denote the discrete space of all natural-language prompt strings, and let f: P → ℝ be the task evaluation function assigning a scalar score to each candidate prompt p ∈ P when applied to a fixed target LLM M on development set D. The goal is:
+The formal structure of discrete APO can be stated as a combinatorial optimisation problem. Let P denote the discrete space of all natural-language prompt strings, and let f: P → ℝ be the task evaluation function assigning a scalar score to each candidate prompt p ∈ P when applied to a fixed target LLM M on development set D. The goal is:
 
-      p* = argmax_{p ∈ P} f(p, M, D)
+    p* = argmax_{p ∈ P} f(p, M, D)
 
-  Because P is exponentially large and f is non-differentiable (it involves discrete token sampling from M), classical gradient-based methods are inapplicable. APO methods instead implement diverse gradient-free approximations:
+Because P is exponentially large and f is non-differentiable (it involves discrete token sampling from M), classical gradient-based methods are inapplicable. APO methods instead implement diverse gradient-free approximations:
 
-  - **APE / OPRO (LLM-guided search)**: Generate a beam B = {p₁, ..., p_k} of candidates, score each, then prompt a "proposer" LLM L_prop with the history {(pᵢ, f(pᵢ))} to generate B' with predicted higher scores. Formally: B_{t+1} = L_prop(concat(B_t, scores_t)), iterating until convergence. Time complexity O(k · |D| · T_M + k · T_{L_prop}) per iteration where T_M and T_{L_prop} are forward-pass costs.
-  - **ProTeGi (bandit-guided critique)**: Treats prompt selection as a K-armed bandit where each arm is a proposed edit. Uses UCB1 selection to balance exploration of novel edits against exploitation of high-scoring variants. Critique generation identifies the mode of failure (e.g., "the model consistently misses negation") and produces targeted rewrites.
-  - **TextGrad (pseudo-gradient propagation)**: For a pipeline M₁ → M₂ → ... → M_n, computes textual "gradients" ∂L/∂pᵢ by prompting a critic LLM with the output and expected output at each stage, then propagates these textual updates backward through the composition. This is analogous to backpropagation but operates over natural language strings rather than continuous tensors.
-  - **DSPy MIPRO (Bayesian programme optimisation)**: Models the joint prompt-demonstration space as a Gaussian Process surrogate, fitting a surrogate from observed (instruction, few-shot config) → metric samples, then using Expected Improvement to propose next configurations. The acquisition function balances exploration and exploitation across the multi-dimensional configuration space.
-  - **Evolutionary (PromptBreeder / GEPA)**: Maintains a population {p₁, ..., p_N} with associated fitness scores f(pᵢ). Each generation applies: (i) selection of top-k parents via tournament selection; (ii) crossover recombining segments of two parent prompts; (iii) mutation via LLM paraphrasing of individual sentences. GEPA adds a Pareto multi-objective front balancing accuracy against prompt token length, enabling cost-constrained optimisation.
+- **APE / OPRO (LLM-guided search)**: Generate a beam B = {p₁, ..., p_k} of candidates, score each, then prompt a "proposer" LLM L_prop with the history {(pᵢ, f(pᵢ))} to generate B' with predicted higher scores. Formally: B_{t+1} = L_prop(concat(B_t, scores_t)), iterating until convergence. Time complexity O(k · |D| · T_M + k · T_{L_prop}) per iteration where T_M and T_{L_prop} are forward-pass costs.
+- **ProTeGi (bandit-guided critique)**: Treats prompt selection as a K-armed bandit where each arm is a proposed edit. Uses UCB1 selection to balance exploration of novel edits against exploitation of high-scoring variants. Critique generation identifies the mode of failure (e.g., "the model consistently misses negation") and produces targeted rewrites.
+- **TextGrad (pseudo-gradient propagation)**: For a pipeline M₁ → M₂ → ... → M_n, computes textual "gradients" ∂L/∂pᵢ by prompting a critic LLM with the output and expected output at each stage, then propagates these textual updates backward through the composition. This is analogous to backpropagation but operates over natural language strings rather than continuous tensors.
+- **DSPy MIPRO (Bayesian programme optimisation)**: Models the joint prompt-demonstration space as a Gaussian Process surrogate, fitting a surrogate from observed (instruction, few-shot config) → metric samples, then using Expected Improvement to propose next configurations. The acquisition function balances exploration and exploitation across the multi-dimensional configuration space.
+- **Evolutionary (PromptBreeder / GEPA)**: Maintains a population {p₁, ..., p_N} with associated fitness scores f(pᵢ). Each generation applies: (i) selection of top-k parents via tournament selection; (ii) crossover recombining segments of two parent prompts; (iii) mutation via LLM paraphrasing of individual sentences. GEPA adds a Pareto multi-objective front balancing accuracy against prompt token length, enabling cost-constrained optimisation.
 
   Soft-prompt methods operate in continuous space: the prepended token embeddings e_prefix ∈ ℝ^{n×d} are updated via gradient descent ∇_e Loss(M(e_prefix; x), y) with the model weights θ frozen, where n is the prefix length (typically 1–100 tokens) and d is the model embedding dimension. Prefix lengths above 100 tokens yield diminishing returns while increasing inference cost quadratically in attention computation.
 
@@ -121,12 +120,12 @@ Automatic Prompt Optimisation (APO) is the family of algorithmic techniques that
 
   The canonical APO pipeline consists of five modules that interact in an iterative loop:
 
-  - **Prompt Population** — an initial set of candidate instructions, seeded either by human-authored prompts, LLM-generated paraphrases of a task description, or random perturbations of a seed. APE generates ~100 LLM candidates via few-shot generation from the task description; OPRO and ProTeGi typically maintain a beam of 5–20 candidates to limit scoring cost. DSPy's BootstrapFewShot generates candidate (instruction, demonstrations) tuples by running the teacher pipeline on training examples and collecting correct outputs as few-shot exemplars. Population initialisation quality has a substantial impact on final accuracy, with diverse initialisation outperforming uniform initialisation by 4–8% in ablations.
-  - **Execution Engine** — the target LLM (which may be distinct from the proposer LLM) evaluates each candidate prompt on a labelled development set of typically 50–500 examples, producing model outputs. The target and proposer can be the same model (self-improvement loop, as in OPRO) or different models (cross-model transfer, where a stronger proposer like GPT-4o optimises prompts for a weaker target like GPT-3.5, with 60–70% of gains transferring). Execution is the primary cost bottleneck: each scoring iteration requires N_cands × |D_dev| LLM forward passes, so most methods bound the population size and development set via budget constraints.
-  - **Scoring Function** — maps model outputs to a scalar reward used to rank candidates and guide the proposer. Standard metrics: task-specific accuracy (exact-match F1, classification accuracy, BLEU/ROUGE for generation); LLM-as-judge ratings (1–10 Likert scale assessed by a separate judge LLM, correlating 0.85–0.92 with human ratings on subjective tasks); or composite multi-metric objectives trading off accuracy, output length, latency, and cost. DSPy supports custom Python metric functions including semantic similarity metrics and task-specific assertion checks. The choice of scoring function critically determines the quality of the optimised prompt: misalignment between the development set metric and the production deployment objective (metric hacking) is the leading cause of APO failure in practice.
-  - **Candidate Proposer** — the optimisation step generating new candidate prompts given the current population and their scores. Strategies: (i) LLM paraphrasing conditioned on high-scoring exemplars (APE, OPRO); (ii) natural-language critique identifying systematic error patterns followed by targeted edits (ProTeGi generates critiques like "the model fails when the subject is implicitly referenced; add explicit co-reference instructions"; TextGrad propagates textual gradients); (iii) crossover recombining high-scoring prompt segments at sentence boundaries and mutation via LLM rewriting of individual clauses (PromptBreeder, GEPA); (iv) Bayesian optimisation over a learned surrogate model of the score surface (DSPy MIPRO fits a Gaussian Process over the (instruction embedding, few-shot count) → score mapping, then uses Expected Improvement acquisition). Proposer LLM temperature is a critical hyperparameter: low temperature (0.0–0.3) yields refinements of existing prompts, while high temperature (0.7–1.0) explores novel phrasings at the cost of consistency.
-  - **Selection and Termination** — survival selection retaining the top-k candidates after each generation (typically k = 3–10), with early stopping triggered by plateau detection (no improvement over 3 consecutive generations), budget exhaustion (total API call count exceeds a limit), or a performance threshold (accuracy ≥ 0.95). GEPA adds Pareto front maintenance: candidates are retained if they are non-dominated on the (accuracy, prompt length) objective pair, enabling the practitioner to select the cost–accuracy trade-off that matches their deployment budget.
-  - **Transfer and Deployment** — the winning prompt is deployed to the production LLM endpoint. Transfer success rates vary: prompts optimised on GPT-4o achieve 60–75% of gains when transferred to Claude 3.5 Sonnet or Llama 3.1-70B; prompts optimised on smaller models frequently degrade on larger models due to capability gaps. Production monitoring of prompt performance against a rolling sample is recommended to detect distribution shift.
+- **Prompt Population** — an initial set of candidate instructions, seeded either by human-authored prompts, LLM-generated paraphrases of a task description, or random perturbations of a seed. APE generates ~100 LLM candidates via few-shot generation from the task description; OPRO and ProTeGi typically maintain a beam of 5–20 candidates to limit scoring cost. DSPy's BootstrapFewShot generates candidate (instruction, demonstrations) tuples by running the teacher pipeline on training examples and collecting correct outputs as few-shot exemplars. Population initialisation quality has a substantial impact on final accuracy, with diverse initialisation outperforming uniform initialisation by 4–8% in ablations.
+- **Execution Engine** — the target LLM (which may be distinct from the proposer LLM) evaluates each candidate prompt on a labelled development set of typically 50–500 examples, producing model outputs. The target and proposer can be the same model (self-improvement loop, as in OPRO) or different models (cross-model transfer, where a stronger proposer like GPT-4o optimises prompts for a weaker target like GPT-3.5, with 60–70% of gains transferring). Execution is the primary cost bottleneck: each scoring iteration requires N_cands × |D_dev| LLM forward passes, so most methods bound the population size and development set via budget constraints.
+- **Scoring Function** — maps model outputs to a scalar reward used to rank candidates and guide the proposer. Standard metrics: task-specific accuracy (exact-match F1, classification accuracy, BLEU/ROUGE for generation); LLM-as-judge ratings (1–10 Likert scale assessed by a separate judge LLM, correlating 0.85–0.92 with human ratings on subjective tasks); or composite multi-metric objectives trading off accuracy, output length, latency, and cost. DSPy supports custom Python metric functions including semantic similarity metrics and task-specific assertion checks. The choice of scoring function critically determines the quality of the optimised prompt: misalignment between the development set metric and the production deployment objective (metric hacking) is the leading cause of APO failure in practice.
+- **Candidate Proposer** — the optimisation step generating new candidate prompts given the current population and their scores. Strategies: (i) LLM paraphrasing conditioned on high-scoring exemplars (APE, OPRO); (ii) natural-language critique identifying systematic error patterns followed by targeted edits (ProTeGi generates critiques like "the model fails when the subject is implicitly referenced; add explicit co-reference instructions"; TextGrad propagates textual gradients); (iii) crossover recombining high-scoring prompt segments at sentence boundaries and mutation via LLM rewriting of individual clauses (PromptBreeder, GEPA); (iv) Bayesian optimisation over a learned surrogate model of the score surface (DSPy MIPRO fits a Gaussian Process over the (instruction embedding, few-shot count) → score mapping, then uses Expected Improvement acquisition). Proposer LLM temperature is a critical hyperparameter: low temperature (0.0–0.3) yields refinements of existing prompts, while high temperature (0.7–1.0) explores novel phrasings at the cost of consistency.
+- **Selection and Termination** — survival selection retaining the top-k candidates after each generation (typically k = 3–10), with early stopping triggered by plateau detection (no improvement over 3 consecutive generations), budget exhaustion (total API call count exceeds a limit), or a performance threshold (accuracy ≥ 0.95). GEPA adds Pareto front maintenance: candidates are retained if they are non-dominated on the (accuracy, prompt length) objective pair, enabling the practitioner to select the cost–accuracy trade-off that matches their deployment budget.
+- **Transfer and Deployment** — the winning prompt is deployed to the production LLM endpoint. Transfer success rates vary: prompts optimised on GPT-4o achieve 60–75% of gains when transferred to Claude 3.5 Sonnet or Llama 3.1-70B; prompts optimised on smaller models frequently degrade on larger models due to capability gaps. Production monitoring of prompt performance against a rolling sample is recommended to detect distribution shift.
 
   Soft-prompt methods replace the Candidate Proposer with a gradient computation: the continuous prompt embedding is updated by backpropagating the task loss through the frozen LLM's forward pass, analogous to standard [[Training and Fine Tuning]] but operating only on the prepended tokens. This requires storing the activation graph for backward pass, so batch sizes are limited by GPU memory; typical configurations use batch size 8–32 over prefix lengths of 10–100 tokens, with training converging in 500–5,000 steps on task-specific data.
 
@@ -152,12 +151,12 @@ Automatic Prompt Optimisation (APO) is the family of algorithmic techniques that
 
   The Systematic Survey (arXiv:2502.16923, EMNLP 2025) benchmarked 12 APO methods across 45 tasks spanning classification, generation, reasoning, and extraction. Key findings by method family:
 
-  - **DSPy MIPRO**: Best average across 45 tasks (+24.3% over baseline); strongest on multi-module RAG (+38.7%) and classification (+31.2%); weakest on open-ended generation tasks where the metric is harder to specify (only +8.4%).
-  - **TextGrad**: Best on multi-step reasoning (+29.1% on MATH dataset, +22.4% on MedQA); competitive on extraction (+18.3% F1 on NER); slower convergence (10–20 iterations vs 3–5 for APE).
-  - **OPRO**: Fastest to a good solution (5–8 API iterations); best performance on arithmetic and commonsense reasoning (+14.6% GSM8K); weaker on complex multi-turn tasks.
-  - **GEPA**: Pareto-best on constrained-budget scenarios; at 100 API calls, outperforms all other methods; above 500 calls, DSPy MIPRO is superior. Reduces prompt length by 28% at iso-accuracy versus unconstrained methods.
-  - **APE**: Most widely tested as a baseline; +12.8% average over zero-shot; fastest to implement; lowest ceiling.
-  - **Soft Prompt (P-Tuning v2)**: Highest ceiling on NLU tasks (+31.4% MNLI accuracy vs few-shot prompting) when model weights are accessible; inapplicable to API-only deployments.
+- **DSPy MIPRO**: Best average across 45 tasks (+24.3% over baseline); strongest on multi-module RAG (+38.7%) and classification (+31.2%); weakest on open-ended generation tasks where the metric is harder to specify (only +8.4%).
+- **TextGrad**: Best on multi-step reasoning (+29.1% on MATH dataset, +22.4% on MedQA); competitive on extraction (+18.3% F1 on NER); slower convergence (10–20 iterations vs 3–5 for APE).
+- **OPRO**: Fastest to a good solution (5–8 API iterations); best performance on arithmetic and commonsense reasoning (+14.6% GSM8K); weaker on complex multi-turn tasks.
+- **GEPA**: Pareto-best on constrained-budget scenarios; at 100 API calls, outperforms all other methods; above 500 calls, DSPy MIPRO is superior. Reduces prompt length by 28% at iso-accuracy versus unconstrained methods.
+- **APE**: Most widely tested as a baseline; +12.8% average over zero-shot; fastest to implement; lowest ceiling.
+- **Soft Prompt (P-Tuning v2)**: Highest ceiling on NLU tasks (+31.4% MNLI accuracy vs few-shot prompting) when model weights are accessible; inapplicable to API-only deployments.
 
   The survey's headline finding: no single APO method dominates all task types; method selection should be guided by (i) budget in API calls, (ii) model access level (black-box vs white-box), (iii) task structure (single vs multi-module), and (iv) metric specifiability.
 
@@ -182,14 +181,15 @@ Automatic Prompt Optimisation (APO) is the family of algorithmic techniques that
   By mid-2026, APO has transitioned from a research curiosity to a standard production practice for enterprise LLM deployments. The [[DSPy]] framework (v3.0+) is the de-facto standard for discrete APO in multi-module pipelines, with GEPA (July 2025) providing sample-efficient evolutionary optimisation that routinely surpasses human-engineered prompts while simultaneously optimising prompt token count — a commercially significant gain as API costs are directly proportional to token count. The "promptolution" unified framework (arxiv 2512.02840) has standardised comparison of APO methods across 12 optimisers on 45 tasks, providing the field with a reproducible benchmark analogous to the role LibriSpeech plays in ASR or GLUE in NLP. LLM providers including Anthropic and OpenAI have integrated prompt optimisation tooling directly into their developer platforms: Anthropic's "Prompt Improver" (launched 2024) uses constitutional AI principles to iteratively refine user-submitted prompts for specificity, completeness, and alignment; OpenAI's Prompt Playground provides A/B testing infrastructure for comparing candidate prompts on user-defined test sets.
 
   Key 2025–2026 developments in approximate chronological order:
-  - **LLM-AutoDiff (January 2025, arXiv:2501.16673)** — extends TextGrad's textual differentiation to arbitrary LLM computation graphs; provides a general-purpose auto-differentiation library for LLM workflows, enabling APO of complex systems including retrieval pipelines and multi-agent coordination loops
-  - **GEPA (July 2025)** — genetic Pareto optimisation achieving Pareto-optimal trade-offs between accuracy and prompt length; reduces token costs by 20–40% relative to unconstrained APO at iso-accuracy settings; rapidly adopted within the DSPy community
-  - **metaTextGrad (May 2025, arXiv:2505.18524)** — optimises the TextGrad optimiser itself via a second-order meta-loop, achieving additional 5–12% accuracy over single-level TextGrad; demonstrates that meta-optimisation is feasible and worthwhile
-  - **HAPO (January 2026, arXiv:2601.02683)** — Hierarchical Attribution Prompt Optimisation; attributes task performance to individual prompt segments via causal intervention and independently optimises each segment, reducing the search space and improving interpretability of optimisation decisions
-  - **Error Taxonomy APO (February 2026, arXiv:2602.00997)** — classifies systematic failure modes of the current prompt into a taxonomy (e.g., reference resolution failures, negation handling errors, domain vocabulary gaps) and generates category-targeted instruction edits; reduces the frequency of each error class by 30–50% in empirical evaluation on classification and extraction tasks
-  - **Prompt Segmentation and Annotation Optimisation (May 2026, arXiv:2605.14561)** — decomposes prompts into annotated segments and uses segment-level labels to control LLM behaviour at sub-prompt granularity; applicable to structured prompts with XML or Markdown section headers
-  - **Environment-Grounded APO for LLM Game Agents (June 2026, arXiv:2606.17838)** — extends APO to non-stationary reward environments (games, web navigation, robotic simulation) where the scoring function is itself dynamic; uses online bandit algorithms to adapt the prompt search to changing environment distributions
-  - **APO for Knowledge Graph Construction (June 2026, arXiv:2506.19773)** — comprehensive empirical study comparing DSPy, APE, and TextGrad for entity, relation, and triple extraction; finds that DSPy MIPRO yields the best F1 on complex relational extraction (+38.7% over zero-shot) while APE is faster and competitive for simpler entity extraction (+12.4%)
+
+- **LLM-AutoDiff (January 2025, arXiv:2501.16673)** — extends TextGrad's textual differentiation to arbitrary LLM computation graphs; provides a general-purpose auto-differentiation library for LLM workflows, enabling APO of complex systems including retrieval pipelines and multi-agent coordination loops
+- **GEPA (July 2025)** — genetic Pareto optimisation achieving Pareto-optimal trade-offs between accuracy and prompt length; reduces token costs by 20–40% relative to unconstrained APO at iso-accuracy settings; rapidly adopted within the DSPy community
+- **metaTextGrad (May 2025, arXiv:2505.18524)** — optimises the TextGrad optimiser itself via a second-order meta-loop, achieving additional 5–12% accuracy over single-level TextGrad; demonstrates that meta-optimisation is feasible and worthwhile
+- **HAPO (January 2026, arXiv:2601.02683)** — Hierarchical Attribution Prompt Optimisation; attributes task performance to individual prompt segments via causal intervention and independently optimises each segment, reducing the search space and improving interpretability of optimisation decisions
+- **Error Taxonomy APO (February 2026, arXiv:2602.00997)** — classifies systematic failure modes of the current prompt into a taxonomy (e.g., reference resolution failures, negation handling errors, domain vocabulary gaps) and generates category-targeted instruction edits; reduces the frequency of each error class by 30–50% in empirical evaluation on classification and extraction tasks
+- **Prompt Segmentation and Annotation Optimisation (May 2026, arXiv:2605.14561)** — decomposes prompts into annotated segments and uses segment-level labels to control LLM behaviour at sub-prompt granularity; applicable to structured prompts with XML or Markdown section headers
+- **Environment-Grounded APO for LLM Game Agents (June 2026, arXiv:2606.17838)** — extends APO to non-stationary reward environments (games, web navigation, robotic simulation) where the scoring function is itself dynamic; uses online bandit algorithms to adapt the prompt search to changing environment distributions
+- **APO for Knowledge Graph Construction (June 2026, arXiv:2506.19773)** — comprehensive empirical study comparing DSPy, APE, and TextGrad for entity, relation, and triple extraction; finds that DSPy MIPRO yields the best F1 on complex relational extraction (+38.7% over zero-shot) while APE is faster and competitive for simpler entity extraction (+12.4%)
 
   Commercial benchmarking by mid-2026 (Systematic Survey, arXiv:2502.16923): DSPy MIPRO outperforms hand-authored prompts on 78% of evaluated tasks and all method baselines on average; TextGrad wins on multi-step pipeline tasks (67% win rate vs other methods); OPRO is preferred for rapid prototyping given its simplicity; evolutionary methods (GEPA) excel in constrained-budget scenarios; and soft-prompt methods (P-Tuning v2) dominate when white-box weight access is available.
 
@@ -311,16 +311,16 @@ Automatic Prompt Optimisation (APO) is the family of algorithmic techniques that
 
   The APO ecosystem as of mid-2026 includes the following key components:
 
-  - **[[DSPy]]** (Stanford NLP, Apache 2.0, Python): de-facto standard for compiler-based APO; 18,000+ GitHub stars; integrations with LangSmith, Weights & Biases, Hugging Face Hub for prompt artefact versioning
-  - **[[LangChain]] LangSmith**: prompt versioning, A/B testing, and evaluation platform; APO-adjacent tooling for tracking prompt performance over time and across model versions
-  - **Anthropic Prompt Improver**: integrated into Anthropic Console; uses constitutional AI principles to iteratively strengthen submitted prompts for clarity, specificity, and alignment
-  - **OpenAI Prompt Playground**: A/B testing, metric comparison, and history tracking for prompt variants
-  - **Weights & Biases Weave**: experiment tracking specifically for LLM pipelines including prompt versioning and sweep-style prompt hyperparameter search
-  - **Humanloop**: commercial prompt management platform with built-in APO-style evaluation loops and human rating collection
-  - **promptolution** (arXiv:2512.02840): unified research framework implementing 12 APO algorithms with standardised interfaces for benchmarking comparisons
-  - **TextGrad** (MIT, Apache 2.0): auto-differentiation library for LLM pipelines; text gradient propagation through arbitrary LLM compositions
+- **[[DSPy]]** (Stanford NLP, Apache 2.0, Python): de-facto standard for compiler-based APO; 18,000+ GitHub stars; integrations with LangSmith, Weights & Biases, Hugging Face Hub for prompt artefact versioning
+- **[[LangChain]] LangSmith**: prompt versioning, A/B testing, and evaluation platform; APO-adjacent tooling for tracking prompt performance over time and across model versions
+- **Anthropic Prompt Improver**: integrated into Anthropic Console; uses constitutional AI principles to iteratively strengthen submitted prompts for clarity, specificity, and alignment
+- **OpenAI Prompt Playground**: A/B testing, metric comparison, and history tracking for prompt variants
+- **Weights & Biases Weave**: experiment tracking specifically for LLM pipelines including prompt versioning and sweep-style prompt hyperparameter search
+- **Humanloop**: commercial prompt management platform with built-in APO-style evaluation loops and human rating collection
+- **promptolution** (arXiv:2512.02840): unified research framework implementing 12 APO algorithms with standardised interfaces for benchmarking comparisons
+- **TextGrad** (MIT, Apache 2.0): auto-differentiation library for LLM pipelines; text gradient propagation through arbitrary LLM compositions
 
   Interoperability: most APO frameworks output prompts as plain text or JSON artefacts that can be consumed by any LLM inference library (OpenAI SDK, Anthropic SDK, Hugging Face transformers, LiteLLM). DSPy additionally exports compiled programs as Python modules that reproduce the full optimised pipeline. Version control of APO-discovered prompts via Git or dedicated registries (Weights & Biases Artifact Registry, MLflow Model Registry) is an emerging practice mirroring model versioning in traditional MLOps.
 
-- ### Provenance
+### Provenance
 

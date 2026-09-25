@@ -1,17 +1,22 @@
-
 Scarcity is the economic condition in which a resource is limited relative to demand for it, giving rise to value, price and the need for allocation choices. In monetary and token economics scarcity is often engineered through fixed or capped supply, issuance schedules or burning mechanisms to support a store-of-value proposition. It is the foundational premise from which supply-and-demand pricing dynamics emerge.
 
-- ### Overview
-  - Scarcity underlies all of economics: without it there would be no trade-offs and no prices. In digital asset design scarcity is deliberately constructed, since bits are trivially copyable, by capping supply or destroying tokens to mimic the limited availability of precious commodities.
-- ### Key aspects
-  - Absolute scarcity from a hard supply cap versus relative scarcity from controlled issuance
-  - Engineered scarcity via token burning and disinflationary emission schedules
-  - The relationship between scarcity, demand and equilibrium price
-  - Perceived scarcity and its influence on speculative behaviour
-- ### Applications
-  - Fixed-supply cryptocurrency monetary policy
-  - Deflationary token burn mechanisms
-  - Non-fungible asset uniqueness and provenance
-  - Commodity and resource pricing
-- ### Provenance
+### Overview
+
+- Scarcity underlies all of economics: without it there would be no trade-offs and no prices. In digital asset design scarcity is deliberately constructed, since bits are trivially copyable, by capping supply or destroying tokens to mimic the limited availability of precious commodities.
+
+### Key aspects
+
+- Absolute scarcity from a hard supply cap versus relative scarcity from controlled issuance
+- Engineered scarcity via token burning and disinflationary emission schedules
+- The relationship between scarcity, demand and equilibrium price
+- Perceived scarcity and its influence on speculative behaviour
+
+### Applications
+
+- Fixed-supply cryptocurrency monetary policy
+- Deflationary token burn mechanisms
+- Non-fungible asset uniqueness and provenance
+- Commodity and resource pricing
+
+### Provenance
 

@@ -1,11 +1,11 @@
-
 A smart-contract system that lets users supply assets to earn interest and borrow against deposited collateral, with interest rates and liquidations governed by on-chain code rather than intermediaries.
 
-- ### Semantic Classification
+### Semantic Classification
 
-- ### Content
-  - A lending protocol pools supplied assets and lends them to borrowers who post collateral worth more than the amount borrowed. Interest rates typically adjust algorithmically with the ratio of borrowed to supplied funds, balancing demand for loans against available liquidity.
-  - Loans are overcollateralised, and the protocol monitors collateral value through price feeds. If a borrower's collateral falls below a required threshold, the position is liquidated by third parties who repay part of the debt in exchange for discounted collateral. The mechanism relies on accurate oracles and timely liquidation to remain solvent.
+### Content
 
-- ### Provenance
+- A lending protocol pools supplied assets and lends them to borrowers who post collateral worth more than the amount borrowed. Interest rates typically adjust algorithmically with the ratio of borrowed to supplied funds, balancing demand for loans against available liquidity.
+- Loans are overcollateralised, and the protocol monitors collateral value through price feeds. If a borrower's collateral falls below a required threshold, the position is liquidated by third parties who repay part of the debt in exchange for discounted collateral. The mechanism relies on accurate oracles and timely liquidation to remain solvent.
+
+### Provenance
 

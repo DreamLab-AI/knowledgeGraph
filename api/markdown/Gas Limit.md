@@ -1,4 +1,3 @@
-
 A Gas Limit is the maximum amount of gas — the unit measuring computational effort — that a sender authorises for a blockchain transaction or that a block may contain in aggregate. It serves as a hard cap preventing unbounded resource consumption, protecting network nodes from denial-of-service attacks and ensuring predictable block processing times. On Ethereum, each transaction carries a user-set gas limit and each block carries a protocol-enforced block gas limit that validators adjust over time.
 
 ### Definition
@@ -19,7 +18,7 @@ The interaction between Gas Limit and the Fee Market is critical for Blockchain 
 
 Blockchain Scalability is directly constrained by block gas limits. Layer-2 solutions — optimistic rollups and ZK-rollups — batch many L2 transactions into a single L1 transaction that consumes a bounded amount of gas, effectively multiplying throughput without raising the L1 gas limit. Adjusting the gas limit involves a trade-off: higher limits increase throughput but raise the computational and storage burden on every Validator Node, risking centralisation as only high-performance nodes can keep up.
 
-- ### Semantic Classification
+### Semantic Classification
 
-- ### Provenance
+### Provenance
 

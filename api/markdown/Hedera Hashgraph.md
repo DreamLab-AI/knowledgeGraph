@@ -1,11 +1,11 @@
-
 Hedera is a public distributed ledger that uses the hashgraph consensus algorithm based on gossip about gossip and virtual voting. It is governed by a council of organisations and uses the HBAR token.
 
-- ### Semantic Classification
+### Semantic Classification
 
-- ### Content
-  - Hedera Hashgraph is a public network that records transactions using a directed acyclic graph rather than a linear chain. Its hashgraph consensus spreads transaction information by gossip and reaches agreement through virtual voting, providing asynchronous Byzantine fault tolerant finality.
-  - The network is overseen by the Hedera Governing Council, a group of organisations that run nodes and steer the platform, and it uses the HBAR cryptocurrency for fees and staking. It supports smart contracts, token issuance and a consensus service for ordered event logging.
+### Content
 
-- ### Provenance
+- Hedera Hashgraph is a public network that records transactions using a directed acyclic graph rather than a linear chain. Its hashgraph consensus spreads transaction information by gossip and reaches agreement through virtual voting, providing asynchronous Byzantine fault tolerant finality.
+- The network is overseen by the Hedera Governing Council, a group of organisations that run nodes and steer the platform, and it uses the HBAR cryptocurrency for fees and staking. It supports smart contracts, token issuance and a consensus service for ordered event logging.
+
+### Provenance
 

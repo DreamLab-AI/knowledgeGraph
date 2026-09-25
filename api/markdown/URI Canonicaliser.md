@@ -1,29 +1,28 @@
-
 The canonical URI minting and resolution engine implementing the VisionClaw Agentic Container|VisionClaw urn:visionclaw: grammar (ADR-013, R1–R3 rules) for stable, content-addressed, and scope-bearing identifiers, enabling deterministic roundtrip serialisation and cryptographic verification o...
 
-- ### Semantic Classification
+### Semantic Classification
 
-- ### Content
+### Content
 
-  The URI Canonicaliser is a name service that generates and resolves all identifiers issued by [[VisionClaw Agentic Container|VisionClaw]]. It is the critical link between agent-emitted objects (credentials, receipts, events) and the global semantic web.
+The URI Canonicaliser is a name service that generates and resolves all identifiers issued by [[VisionClaw Agentic Container|VisionClaw]]. It is the critical link between agent-emitted objects (credentials, receipts, events) and the global semantic web.
 
-  #### The urn:visionclaw: Grammar
+#### The urn:visionclaw: Grammar
 
-  All canonical URIs follow the pattern:
+All canonical URIs follow the pattern:
 
-  ```
-  urn:visionclaw:<kind>:[<scope>:]<local>
-  ```
+```
+urn:visionclaw:<kind>:[<scope>:]<local>
+```
 
-  **Kind**: The resource type (concept, relation, credential, mandate, receipt, activity, event, pod, envelope, bead, dataset, skill, mcp, adr, prd, ddd, thing, agent, meta).
+**Kind**: The resource type (concept, relation, credential, mandate, receipt, activity, event, pod, envelope, bead, dataset, skill, mcp, adr, prd, ddd, thing, agent, meta).
 
-  **Scope**: For owner-bearing kinds (credential, mandate, receipt, activity, event, pod, envelope, bead, dataset), the scope is the agent's [[BIP-340 Schnorr Keypair|BIP-340 x-only pubkey]] in lowercase hex (64 chars). For static kinds (skill, adr, mcp, thing), there is no scope.
+**Scope**: For owner-bearing kinds (credential, mandate, receipt, activity, event, pod, envelope, bead, dataset), the scope is the agent's [[BIP-340 Schnorr Keypair|BIP-340 x-only pubkey]] in lowercase hex (64 chars). For static kinds (skill, adr, mcp, thing), there is no scope.
 
-  **Local**: The final segment, derived by one of three rules:
+**Local**: The final segment, derived by one of three rules:
 
-  - **R1 (Content-Addressed)**: For objects determined entirely by their payload (credentials, receipts, events), `<local> = sha256-12-<first 12 hex chars of SHA-256(stableStringify(payload))>`. Same input always yields the same URI.
-  - **R2 (Scope-Bearing with Slug)**: For datasets and beads owned by an agent, `<local>` is a human-readable slug (e.g., `task-123`, `training-set-a`). The URI is stable on identity, but unique within the agent's scope.
-  - **R3 (Stable-on-Identity)**: For static artefacts (skills, ADRs, MCPs), `<local>` is the preferred term converted to kebab-case, e.g., `urn:visionclaw:skill:console-buddy`.
+- **R1 (Content-Addressed)**: For objects determined entirely by their payload (credentials, receipts, events), `<local> = sha256-12-<first 12 hex chars of SHA-256(stableStringify(payload))>`. Same input always yields the same URI.
+- **R2 (Scope-Bearing with Slug)**: For datasets and beads owned by an agent, `<local>` is a human-readable slug (e.g., `task-123`, `training-set-a`). The URI is stable on identity, but unique within the agent's scope.
+- **R3 (Stable-on-Identity)**: For static artefacts (skills, ADRs, MCPs), `<local>` is the preferred term converted to kebab-case, e.g., `urn:visionclaw:skill:console-buddy`.
 
   #### Minting in Practice
 
@@ -48,58 +47,58 @@ The canonical URI minting and resolution engine implementing the VisionClaw Agen
 
   For example:
 
-  - `urn:visionclaw:credential:0abc...ef:sha256-12-deadbeef` → `https://agentbox.local/v1/agent/0abc...ef/credential/deadbeef`
-  - `urn:visionclaw:skill:console-buddy` → `https://agentbox.local/v1/skills/console-buddy`
+- `urn:visionclaw:credential:0abc...ef:sha256-12-deadbeef` → `https://agentbox.local/v1/agent/0abc...ef/credential/deadbeef`
+- `urn:visionclaw:skill:console-buddy` → `https://agentbox.local/v1/skills/console-buddy`
 
   #### Content-Hash Computation
 
   The content hash is computed over a **canonical payload** consisting of:
 
-  ```json
-  {
-    "definition": "<definition text>",
-    "owlClass": "<owl-class string>",
-    "relationships": {
-      "subclassOf": [<subclass URIs>],
-      "hasPart": [<component URIs>],
-      "requires": [<dependency URIs>],
-      "enables": [<capability URIs>],
-      "implements": [<implementation URIs>],
-      "bridgesTo": [<cross-domain URIs>]
-    }
+```json
+{
+  "definition": "<definition text>",
+  "owlClass": "<owl-class string>",
+  "relationships": {
+    "subclassOf": [<subclass URIs>],
+    "hasPart": [<component URIs>],
+    "requires": [<dependency URIs>],
+    "enables": [<capability URIs>],
+    "implements": [<implementation URIs>],
+    "bridgesTo": [<cross-domain URIs>]
   }
-  ```
+}
+```
 
-  The payload is stringified using **stable JSON** (keys in alphabetical order, no whitespace), then hashed with SHA-256. The first 12 hex chars become the content hash. This ensures:
+The payload is stringified using **stable JSON** (keys in alphabetical order, no whitespace), then hashed with SHA-256. The first 12 hex chars become the content hash. This ensures:
 
-  1. **Determinism**: Same payload always produces the same hash.
-  2. **Stability Across Serialisations**: Whether the credential is stored as JSON, YAML, or RDF, the content hash remains constant.
-  3. **Short, Readable Hashes**: 12 hex chars (48 bits) are short enough for URLs whilst providing collision resistance for practical use cases.
+1. **Determinism**: Same payload always produces the same hash.
+2. **Stability Across Serialisations**: Whether the credential is stored as JSON, YAML, or RDF, the content hash remains constant.
+3. **Short, Readable Hashes**: 12 hex chars (48 bits) are short enough for URLs whilst providing collision resistance for practical use cases.
 
-  #### Ontology Integration
+#### Ontology Integration
 
-  The Canonicaliser is also used to mint ontology concept URIs. Given a concept's preferred term (e.g., "AI Agent System") and domain (ai), the Canonicaliser derives a slug:
+The Canonicaliser is also used to mint ontology concept URIs. Given a concept's preferred term (e.g., "AI Agent System") and domain (ai), the Canonicaliser derives a slug:
 
-  ```
-  preferred-term = "AI Agent System"
-  domain = "ai"
-  slug = kebab-case("AI Agent System") = "ai-agent-system"
-  URI = urn:visionclaw:concept:ai:ai-agent-system
-  IRI = http://narrativegoldmine.com/artificial-intelligence#AIAgentSystem
-  ```
+```
+preferred-term = "AI Agent System"
+domain = "ai"
+slug = kebab-case("AI Agent System") = "ai-agent-system"
+URI = urn:visionclaw:concept:ai:ai-agent-system
+IRI = http://narrativegoldmine.com/artificial-intelligence#AIAgentSystem
+```
 
-  This ensures that the same concept always has the same URI, across rebuilds and federated systems.
+This ensures that the same concept always has the same URI, across rebuilds and federated systems.
 
-  #### Verifiability and Signing
+#### Verifiability and Signing
 
-  When an agent signs a credential, the signature is computed over the credential's **content-hash**. Because the content hash is deterministic, anyone can:
+When an agent signs a credential, the signature is computed over the credential's **content-hash**. Because the content hash is deterministic, anyone can:
 
-  1. Retrieve the credential.
-  2. Recompute the content hash.
-  3. Look up the agent's public key (from its [[DID Nostr Identity|did:nostr]]).
-  4. Verify the Schnorr signature using the hash and public key.
+1. Retrieve the credential.
+2. Recompute the content hash.
+3. Look up the agent's public key (from its [[DID Nostr Identity|did:nostr]]).
+4. Verify the Schnorr signature using the hash and public key.
 
-  This enables **offline verification**: no central authority is needed to confirm whether a credential is genuine.
+This enables **offline verification**: no central authority is needed to confirm whether a credential is genuine.
 
-- ### Provenance
+### Provenance
 

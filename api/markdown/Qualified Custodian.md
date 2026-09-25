@@ -1,24 +1,31 @@
-
 A qualified custodian is a regulated financial institution authorised to hold client assets, including digital assets, under fiduciary and supervisory standards set by securities regulators. It provides segregated accounts, independent audit and statutory protections that distinguish it from informal custody arrangements. For institutional investors, using a qualified custodian is often a regulatory precondition for holding crypto assets.
 
-- ### Overview
-  - Securities rules in many jurisdictions require investment advisers and funds to hold client assets with a qualified custodian — an entity such as a bank, trust company or regulated custodian subject to supervision and audit.
-  - Applied to digital assets, this concept raises questions about how cryptographic keys are held, segregated and audited in a way that satisfies traditional custody obligations.
-  - Qualified custody combines regulatory authorisation with hardened operational security, giving institutional investors a defensible, compliant route to holding crypto assets.
-- ### Key aspects
-  - Regulatory authorisation: the custodian operates under a supervisory regime.
-  - Segregation: client assets are held separately from the custodian's own.
-  - Fiduciary duty: the custodian acts in clients' interests, with attendant liability.
-  - Independent audit: holdings are verified by external examination.
-  - Statutory protection: clients gain legal safeguards on insolvency.
-- ### Mechanisms
-  - Cold storage and multi-party key management for security of digital assets.
-  - Segregated on-chain and ledger accounts per client.
-  - Proof-of-reserve and audit trails to evidence holdings.
-  - KYC/AML and reporting controls to satisfy regulators.
-- ### Applications
-  - Custody for funds, advisers and institutional crypto holders.
-  - Enabling regulated investment products backed by digital assets.
-  - Supporting tokenised securities under existing custody rules.
-- ### Provenance
+### Overview
+
+- Securities rules in many jurisdictions require investment advisers and funds to hold client assets with a qualified custodian — an entity such as a bank, trust company or regulated custodian subject to supervision and audit.
+- Applied to digital assets, this concept raises questions about how cryptographic keys are held, segregated and audited in a way that satisfies traditional custody obligations.
+- Qualified custody combines regulatory authorisation with hardened operational security, giving institutional investors a defensible, compliant route to holding crypto assets.
+
+### Key aspects
+
+- Regulatory authorisation: the custodian operates under a supervisory regime.
+- Segregation: client assets are held separately from the custodian's own.
+- Fiduciary duty: the custodian acts in clients' interests, with attendant liability.
+- Independent audit: holdings are verified by external examination.
+- Statutory protection: clients gain legal safeguards on insolvency.
+
+### Mechanisms
+
+- Cold storage and multi-party key management for security of digital assets.
+- Segregated on-chain and ledger accounts per client.
+- Proof-of-reserve and audit trails to evidence holdings.
+- KYC/AML and reporting controls to satisfy regulators.
+
+### Applications
+
+- Custody for funds, advisers and institutional crypto holders.
+- Enabling regulated investment products backed by digital assets.
+- Supporting tokenised securities under existing custody rules.
+
+### Provenance
 

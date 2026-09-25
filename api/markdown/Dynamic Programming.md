@@ -1,186 +1,190 @@
-
 Dynamic programming is an algorithmic technique for solving problems by breaking them into overlapping subproblems whose solutions are stored and reused rather than recomputed. It applies to problems exhibiting optimal substructure, combining subproblem solutions to construct an optimal whole. By memoising or tabulating intermediate results it converts exponential brute-force searches into polynomial-time algorithms.
 
-- ### Semantic Classification
+### Semantic Classification
 
-- ### Content
+### Content
 
-  ## Compositional Relationships (Components)
-      SubClassOf(ai:DynamicProgramming
-        ObjectSomeValuesFrom(ai:hasPart ai:Memoization))
-      SubClassOf(ai:DynamicProgramming
-        ObjectSomeValuesFrom(ai:hasPart ai:Tabulation))
-      SubClassOf(ai:DynamicProgramming
-        ObjectSomeValuesFrom(ai:hasPart ai:RecurrenceRelation))
-      SubClassOf(ai:DynamicProgramming
-        ObjectSomeValuesFrom(ai:hasPart ai:StateSpace))
-      SubClassOf(ai:DynamicProgramming
-        ObjectSomeValuesFrom(ai:hasPart ai:BellmanEquation))
-      SubClassOf(ai:DynamicProgramming
-        ObjectSomeValuesFrom(ai:hasPart ai:OptimalSubstructure))
-      SubClassOf(ai:DynamicProgramming
-        ObjectSomeValuesFrom(ai:hasPart ai:OverlappingSubproblems))
-      SubClassOf(ai:DynamicProgramming
-        ObjectSomeValuesFrom(ai:hasPart ai:ValueFunction))
+## Compositional Relationships (Components)
+    SubClassOf(ai:DynamicProgramming
+      ObjectSomeValuesFrom(ai:hasPart ai:Memoization))
+    SubClassOf(ai:DynamicProgramming
+      ObjectSomeValuesFrom(ai:hasPart ai:Tabulation))
+    SubClassOf(ai:DynamicProgramming
+      ObjectSomeValuesFrom(ai:hasPart ai:RecurrenceRelation))
+    SubClassOf(ai:DynamicProgramming
+      ObjectSomeValuesFrom(ai:hasPart ai:StateSpace))
+    SubClassOf(ai:DynamicProgramming
+      ObjectSomeValuesFrom(ai:hasPart ai:BellmanEquation))
+    SubClassOf(ai:DynamicProgramming
+      ObjectSomeValuesFrom(ai:hasPart ai:OptimalSubstructure))
+    SubClassOf(ai:DynamicProgramming
+      ObjectSomeValuesFrom(ai:hasPart ai:OverlappingSubproblems))
+    SubClassOf(ai:DynamicProgramming
+      ObjectSomeValuesFrom(ai:hasPart ai:ValueFunction))
 
-  ## Dependency Relationships
-      SubClassOf(ai:DynamicProgramming
-        ObjectSomeValuesFrom(ai:requires ai:OptimalSubstructure))
-      SubClassOf(ai:DynamicProgramming
-        ObjectSomeValuesFrom(ai:requires ai:OverlappingSubproblems))
-      SubClassOf(ai:DynamicProgramming
-        ObjectSomeValuesFrom(ai:requires ai:StateSpaceRepresentation))
-      SubClassOf(ai:DynamicProgramming
-        ObjectSomeValuesFrom(ai:requires ai:Recursion))
-      SubClassOf(ai:DynamicProgramming
-        ObjectSomeValuesFrom(ai:requires ai:DataStructure))
-      SubClassOf(ai:DynamicProgramming
-        ObjectSomeValuesFrom(ai:dependsOn ai:GraphTheory))
-      SubClassOf(ai:DynamicProgramming
-        ObjectSomeValuesFrom(ai:dependsOn ai:DirectedAcyclicGraph))
+## Dependency Relationships
+    SubClassOf(ai:DynamicProgramming
+      ObjectSomeValuesFrom(ai:requires ai:OptimalSubstructure))
+    SubClassOf(ai:DynamicProgramming
+      ObjectSomeValuesFrom(ai:requires ai:OverlappingSubproblems))
+    SubClassOf(ai:DynamicProgramming
+      ObjectSomeValuesFrom(ai:requires ai:StateSpaceRepresentation))
+    SubClassOf(ai:DynamicProgramming
+      ObjectSomeValuesFrom(ai:requires ai:Recursion))
+    SubClassOf(ai:DynamicProgramming
+      ObjectSomeValuesFrom(ai:requires ai:DataStructure))
+    SubClassOf(ai:DynamicProgramming
+      ObjectSomeValuesFrom(ai:dependsOn ai:GraphTheory))
+    SubClassOf(ai:DynamicProgramming
+      ObjectSomeValuesFrom(ai:dependsOn ai:DirectedAcyclicGraph))
 
-  ## Capability Relationships
-      SubClassOf(ai:DynamicProgramming
-        ObjectSomeValuesFrom(ai:enables ai:ReinforcementLearning))
-      SubClassOf(ai:DynamicProgramming
-        ObjectSomeValuesFrom(ai:enables ai:ValueIteration))
-      SubClassOf(ai:DynamicProgramming
-        ObjectSomeValuesFrom(ai:enables ai:PolicyIteration))
-      SubClassOf(ai:DynamicProgramming
-        ObjectSomeValuesFrom(ai:enables ai:SequenceAlignment))
-      SubClassOf(ai:DynamicProgramming
-        ObjectSomeValuesFrom(ai:enables ai:SpeechRecognition))
-      SubClassOf(ai:DynamicProgramming
-        ObjectSomeValuesFrom(ai:enables ai:NaturalLanguageProcessing))
-      SubClassOf(ai:DynamicProgramming
-        ObjectSomeValuesFrom(ai:enables ai:StochasticControl))
-      SubClassOf(ai:DynamicProgramming
-        ObjectSomeValuesFrom(ai:enables ai:CombinatoricsOptimisation))
+## Capability Relationships
+    SubClassOf(ai:DynamicProgramming
+      ObjectSomeValuesFrom(ai:enables ai:ReinforcementLearning))
+    SubClassOf(ai:DynamicProgramming
+      ObjectSomeValuesFrom(ai:enables ai:ValueIteration))
+    SubClassOf(ai:DynamicProgramming
+      ObjectSomeValuesFrom(ai:enables ai:PolicyIteration))
+    SubClassOf(ai:DynamicProgramming
+      ObjectSomeValuesFrom(ai:enables ai:SequenceAlignment))
+    SubClassOf(ai:DynamicProgramming
+      ObjectSomeValuesFrom(ai:enables ai:SpeechRecognition))
+    SubClassOf(ai:DynamicProgramming
+      ObjectSomeValuesFrom(ai:enables ai:NaturalLanguageProcessing))
+    SubClassOf(ai:DynamicProgramming
+      ObjectSomeValuesFrom(ai:enables ai:StochasticControl))
+    SubClassOf(ai:DynamicProgramming
+      ObjectSomeValuesFrom(ai:enables ai:CombinatoricsOptimisation))
 
-  ## Implementation Relationships
-      SubClassOf(ai:DynamicProgramming
-        ObjectSomeValuesFrom(ai:implements ai:OptimisationAlgorithm))
-      SubClassOf(ai:DynamicProgramming
-        ObjectSomeValuesFrom(ai:implements ai:BellmanEquation))
-      SubClassOf(ai:DynamicProgramming
-        ObjectSomeValuesFrom(ai:implements ai:PrincipleOfOptimality))
-      SubClassOf(ai:DynamicProgramming
-        ObjectSomeValuesFrom(ai:supports ai:MarkovDecisionProcess))
-      SubClassOf(ai:DynamicProgramming
-        ObjectSomeValuesFrom(ai:supports ai:HiddenMarkovModel))
-      SubClassOf(ai:DynamicProgramming
-        ObjectSomeValuesFrom(ai:supports ai:OperationsResearch))
-      SubClassOf(ai:DynamicProgramming
-        ObjectSomeValuesFrom(ai:supports ai:Bioinformatics))
+## Implementation Relationships
+    SubClassOf(ai:DynamicProgramming
+      ObjectSomeValuesFrom(ai:implements ai:OptimisationAlgorithm))
+    SubClassOf(ai:DynamicProgramming
+      ObjectSomeValuesFrom(ai:implements ai:BellmanEquation))
+    SubClassOf(ai:DynamicProgramming
+      ObjectSomeValuesFrom(ai:implements ai:PrincipleOfOptimality))
+    SubClassOf(ai:DynamicProgramming
+      ObjectSomeValuesFrom(ai:supports ai:MarkovDecisionProcess))
+    SubClassOf(ai:DynamicProgramming
+      ObjectSomeValuesFrom(ai:supports ai:HiddenMarkovModel))
+    SubClassOf(ai:DynamicProgramming
+      ObjectSomeValuesFrom(ai:supports ai:OperationsResearch))
+    SubClassOf(ai:DynamicProgramming
+      ObjectSomeValuesFrom(ai:supports ai:Bioinformatics))
 
-  ## Reduction Relationships
-      SubClassOf(ai:DynamicProgramming
-        ObjectSomeValuesFrom(ai:reducesTo ai:Memoization))
-      SubClassOf(ai:DynamicProgramming
-        ObjectSomeValuesFrom(ai:reducesTo ai:Tabulation))
-      SubClassOf(ai:ValueIteration
-        ObjectSomeValuesFrom(ai:reducesTo ai:DynamicProgramming))
-      SubClassOf(ai:PolicyIteration
-        ObjectSomeValuesFrom(ai:reducesTo ai:DynamicProgramming))
-      SubClassOf(ai:SequenceAlignment
-        ObjectSomeValuesFrom(ai:reducesTo ai:DynamicProgramming))
+## Reduction Relationships
+    SubClassOf(ai:DynamicProgramming
+      ObjectSomeValuesFrom(ai:reducesTo ai:Memoization))
+    SubClassOf(ai:DynamicProgramming
+      ObjectSomeValuesFrom(ai:reducesTo ai:Tabulation))
+    SubClassOf(ai:ValueIteration
+      ObjectSomeValuesFrom(ai:reducesTo ai:DynamicProgramming))
+    SubClassOf(ai:PolicyIteration
+      ObjectSomeValuesFrom(ai:reducesTo ai:DynamicProgramming))
+    SubClassOf(ai:SequenceAlignment
+      ObjectSomeValuesFrom(ai:reducesTo ai:DynamicProgramming))
 
-  ## About
-  **Dynamic programming** is among the most consequential algorithmic discoveries of the twentieth century, providing the computational skeleton for fields as diverse as bioinformatics, operational research, computational linguistics, economic theory, and modern artificial intelligence. The technique originated with Richard Bellman's work at RAND Corporation in the early 1950s, published in a celebrated 1957 Princeton monograph that transformed how mathematicians and engineers thought about multi-stage optimisation. Bellman coined the term "dynamic programming" partly as a deliberate act of obfuscation — as he later explained in his autobiography, the Secretary of Defense at the time was hostile to anything that used the word "mathematical" or "research," and Bellman chose the phrase precisely because it was vague enough to escape bureaucratic disapproval while still conveying the idea of time-varying computational process. The underlying mathematics, however, was anything but vague: Bellman recognised that an enormous class of optimisation problems across planning, control, combinatorics, and probability theory could be reduced to a single canonical recursive structure, and that this structure could be exploited computationally to convert exponential search problems into polynomial ones.
+## About
+**Dynamic programming** is among the most consequential algorithmic discoveries of the twentieth century, providing the computational skeleton for fields as diverse as bioinformatics, operational research, computational linguistics, economic theory, and modern artificial intelligence. The technique originated with Richard Bellman's work at RAND Corporation in the early 1950s, published in a celebrated 1957 Princeton monograph that transformed how mathematicians and engineers thought about multi-stage optimisation. Bellman coined the term "dynamic programming" partly as a deliberate act of obfuscation — as he later explained in his autobiography, the Secretary of Defense at the time was hostile to anything that used the word "mathematical" or "research," and Bellman chose the phrase precisely because it was vague enough to escape bureaucratic disapproval while still conveying the idea of time-varying computational process. The underlying mathematics, however, was anything but vague: Bellman recognised that an enormous class of optimisation problems across planning, control, combinatorics, and probability theory could be reduced to a single canonical recursive structure, and that this structure could be exploited computationally to convert exponential search problems into polynomial ones.
 
-  The central insight is Bellman's **principle of optimality**: any truncation of an optimal plan must itself be optimal for the subproblem it defines. Formally, if π* is an optimal policy for a decision problem starting in state s, and if π* prescribes action a in s leading to state s', then the restriction of π* to the subproblem starting in s' must be optimal for that subproblem. This seemingly simple observation has profound computational consequences: it means that in constructing the globally optimal solution, it is never necessary to reconsider the optimal sub-solutions; they can be computed once, stored, and retrieved at will. The property holds precisely when a problem has *optimal substructure* — the formal criterion that captures Bellman's principle — combined with *overlapping subproblems*, the observation that the same sub-decision recurs in many contexts within a naive exhaustive search, so caching the solved subproblems produces not just a modest improvement but often an exponential speedup. Together these two conditions define the class of problems amenable to dynamic programming, and identifying whether a problem belongs to this class is the central skill of the dynamic programming practitioner.
+The central insight is Bellman's **principle of optimality**: any truncation of an optimal plan must itself be optimal for the subproblem it defines. Formally, if π* is an optimal policy for a decision problem starting in state s, and if π* prescribes action a in s leading to state s', then the restriction of π* to the subproblem starting in s' must be optimal for that subproblem. This seemingly simple observation has profound computational consequences: it means that in constructing the globally optimal solution, it is never necessary to reconsider the optimal sub-solutions; they can be computed once, stored, and retrieved at will. The property holds precisely when a problem has *optimal substructure* — the formal criterion that captures Bellman's principle — combined with *overlapping subproblems*, the observation that the same sub-decision recurs in many contexts within a naive exhaustive search, so caching the solved subproblems produces not just a modest improvement but often an exponential speedup. Together these two conditions define the class of problems amenable to dynamic programming, and identifying whether a problem belongs to this class is the central skill of the dynamic programming practitioner.
 
-  The two classical implementation strategies — **top-down memoisation** and **bottom-up tabulation** — represent complementary approaches to exploiting the DP structure. Top-down memoisation preserves the natural recursive problem decomposition: the programmer writes the solution as a recursive function that, before computing anything, checks whether the current subproblem has been solved and cached in a hash table or array; if so, it returns the cached result immediately; if not, it computes the result, stores it, and returns it. This approach is conceptually simple, solves only those subproblems actually required (making it efficient when the subproblem space is large but sparsely accessed), and degrades gracefully to the recursive solution if the memoisation cache is disabled. Bottom-up tabulation reverses the order: all subproblems are enumerated, their dependencies are determined (often forming a [[Directed Acyclic Graph]]), and they are solved iteratively from smallest to largest in dependency order, filling a flat array or table. Because this approach uses iterative loops rather than recursive calls, it avoids call-stack overhead and memory fragmentation, and often enables further space optimisations: for example, the classic O(min(m,n)) space reduction for the longest common subsequence (LCS) problem discards all but the two most recent rows of the full n×m table, since each entry depends only on the row and column immediately above and to the left. Both approaches yield identical asymptotic complexity when the subproblem count is the same; the choice is an engineering decision driven by access patterns, stack depth limits, and cache locality.
+The two classical implementation strategies — **top-down memoisation** and **bottom-up tabulation** — represent complementary approaches to exploiting the DP structure. Top-down memoisation preserves the natural recursive problem decomposition: the programmer writes the solution as a recursive function that, before computing anything, checks whether the current subproblem has been solved and cached in a hash table or array; if so, it returns the cached result immediately; if not, it computes the result, stores it, and returns it. This approach is conceptually simple, solves only those subproblems actually required (making it efficient when the subproblem space is large but sparsely accessed), and degrades gracefully to the recursive solution if the memoisation cache is disabled. Bottom-up tabulation reverses the order: all subproblems are enumerated, their dependencies are determined (often forming a [[Directed Acyclic Graph]]), and they are solved iteratively from smallest to largest in dependency order, filling a flat array or table. Because this approach uses iterative loops rather than recursive calls, it avoids call-stack overhead and memory fragmentation, and often enables further space optimisations: for example, the classic O(min(m,n)) space reduction for the longest common subsequence (LCS) problem discards all but the two most recent rows of the full n×m table, since each entry depends only on the row and column immediately above and to the left. Both approaches yield identical asymptotic complexity when the subproblem count is the same; the choice is an engineering decision driven by access patterns, stack depth limits, and cache locality.
 
-  The design of an effective DP solution requires three foundational steps that must be executed in strict logical order: first, defining the **state** — a compact representation that captures exactly the information needed to solve the subproblem, with no redundancy that would inflate the state space and no missing information that would make the subproblem ill-defined; second, writing the **recurrence relation** — a formula expressing the value or optimal cost of a state in terms of strictly smaller or simpler states, ensuring that the dependency graph is acyclic and thus admits a valid computation order; and third, identifying the **base cases** — states so small that they can be solved directly without further decomposition. Getting the state definition right is the critical artistic judgment of DP design: an overly coarse state may lose information needed for correctness, while an overly fine state that incorporates irrelevant information may explode the state space and negate the polynomial-time advantage. Classic illustrations span the full range of state designs: in the 0/1 [[Knapsack Problem]] the state is (item index, remaining capacity); in [[Edit Distance]] (Levenshtein distance) it is the pair of prefix lengths in the two strings being compared; in the shortest-path problem on a [[Weighted Graph]] it is simply the destination vertex; in [[Value Iteration]] for a finite [[Markov Decision Process]] it is the current state of the environment; in the [[CYK Algorithm]] for parsing it is the triple (grammar nonterminal, start position, end position) of a substring of the input.
+The design of an effective DP solution requires three foundational steps that must be executed in strict logical order: first, defining the **state** — a compact representation that captures exactly the information needed to solve the subproblem, with no redundancy that would inflate the state space and no missing information that would make the subproblem ill-defined; second, writing the **recurrence relation** — a formula expressing the value or optimal cost of a state in terms of strictly smaller or simpler states, ensuring that the dependency graph is acyclic and thus admits a valid computation order; and third, identifying the **base cases** — states so small that they can be solved directly without further decomposition. Getting the state definition right is the critical artistic judgment of DP design: an overly coarse state may lose information needed for correctness, while an overly fine state that incorporates irrelevant information may explode the state space and negate the polynomial-time advantage. Classic illustrations span the full range of state designs: in the 0/1 [[Knapsack Problem]] the state is (item index, remaining capacity); in [[Edit Distance]] (Levenshtein distance) it is the pair of prefix lengths in the two strings being compared; in the shortest-path problem on a [[Weighted Graph]] it is simply the destination vertex; in [[Value Iteration]] for a finite [[Markov Decision Process]] it is the current state of the environment; in the [[CYK Algorithm]] for parsing it is the triple (grammar nonterminal, start position, end position) of a substring of the input.
 
-  ## Formal Algorithm and Recurrence Structures
+## Formal Algorithm and Recurrence Structures
 
-  The prototypical DP recurrence for the Fibonacci sequence, F(n) = F(n-1) + F(n-2) with F(0)=0, F(1)=1, illustrates the transformation from exponential to linear time in its most elementary form. Without memoisation the naive recursion runs in O(2^n) time because it recomputes F(2) approximately F(n-2) times, recomputes F(3) approximately F(n-3) times, and so on, creating an exponentially growing redundancy tree. With memoisation or tabulation, each of the n unique subproblems F(0), F(1), ..., F(n) is solved exactly once, producing O(n) total time and O(n) space; with the space-optimised rolling-variable approach (keeping only F(k-1) and F(k-2) at each step), this reduces further to O(1) space. The pattern scales directly to higher-dimensional state spaces with increasing richness:
+The prototypical DP recurrence for the Fibonacci sequence, F(n) = F(n-1) + F(n-2) with F(0)=0, F(1)=1, illustrates the transformation from exponential to linear time in its most elementary form. Without memoisation the naive recursion runs in O(2^n) time because it recomputes F(2) approximately F(n-2) times, recomputes F(3) approximately F(n-3) times, and so on, creating an exponentially growing redundancy tree. With memoisation or tabulation, each of the n unique subproblems F(0), F(1), ..., F(n) is solved exactly once, producing O(n) total time and O(n) space; with the space-optimised rolling-variable approach (keeping only F(k-1) and F(k-2) at each step), this reduces further to O(1) space. The pattern scales directly to higher-dimensional state spaces with increasing richness:
 
-  **Longest Common Subsequence (LCS):** dp[i][j] = dp[i-1][j-1] + 1 if s1[i] = s2[j], else max(dp[i-1][j], dp[i][j-1]). The recurrence computes the length of the longest common subsequence of the first i characters of s1 and the first j characters of s2. Time complexity O(mn), space O(mn) reducible to O(min(m,n)) by keeping only two table rows. Foundation of [[Sequence Alignment]] and the UNIX diff command.
+**Longest Common Subsequence (LCS):** dp[i][j] = dp[i-1][j-1] + 1 if s1[i] = s2[j], else max(dp[i-1][j], dp[i][j-1]). The recurrence computes the length of the longest common subsequence of the first i characters of s1 and the first j characters of s2. Time complexity O(mn), space O(mn) reducible to O(min(m,n)) by keeping only two table rows. Foundation of [[Sequence Alignment]] and the UNIX diff command.
 
-  **Edit Distance (Levenshtein Distance):** dp[i][j] = min(dp[i-1][j]+1, dp[i][j-1]+1, dp[i-1][j-1] + cost(s1[i],s2[j])), where cost is 0 for matching characters and 1 for substitutions. Counts the minimum number of single-character insertions, deletions, and substitutions required to transform one string into another. Used in spell-checking, DNA sequence comparison, and computing similarity between protein sequences.
+**Edit Distance (Levenshtein Distance):** dp[i][j] = min(dp[i-1][j]+1, dp[i][j-1]+1, dp[i-1][j-1] + cost(s1[i],s2[j])), where cost is 0 for matching characters and 1 for substitutions. Counts the minimum number of single-character insertions, deletions, and substitutions required to transform one string into another. Used in spell-checking, DNA sequence comparison, and computing similarity between protein sequences.
 
-  **0/1 Knapsack Problem:** dp[i][w] = max(dp[i-1][w], dp[i-1][w-weight[i]] + value[i]) for weight[i] ≤ w, else dp[i-1][w]. Computes the maximum total value achievable by selecting a subset of n items such that their total weight does not exceed W. Time O(n·W) (pseudo-polynomial in W), space O(W) after the standard one-dimensional optimisation.
+**0/1 Knapsack Problem:** dp[i][w] = max(dp[i-1][w], dp[i-1][w-weight[i]] + value[i]) for weight[i] ≤ w, else dp[i-1][w]. Computes the maximum total value achievable by selecting a subset of n items such that their total weight does not exceed W. Time O(n·W) (pseudo-polynomial in W), space O(W) after the standard one-dimensional optimisation.
 
-  **Bellman Equation for MDPs:** V*(s) = max_{a ∈ A(s)} [ R(s,a) + γ · Σ_{s'} P(s'|s,a) · V*(s') ]. Solved iteratively by [[Value Iteration]]: V_{k+1}(s) ← max_a [R(s,a) + γ · Σ P(s'|s,a) · V_k(s')]. Alternatively, by [[Policy Iteration]]: alternating policy evaluation (solving the linear system V_π = R_π + γ P_π V_π) and policy improvement (π_{k+1}(s) ← argmax_a [R(s,a) + γ Σ P(s'|s,a) V_π_k(s')]).
+**Bellman Equation for MDPs:** V*(s) = max_{a ∈ A(s)} [ R(s,a) + γ · Σ_{s'} P(s'|s,a) · V*(s') ]. Solved iteratively by [[Value Iteration]]: V_{k+1}(s) ← max_a [R(s,a) + γ · Σ P(s'|s,a) · V_k(s')]. Alternatively, by [[Policy Iteration]]: alternating policy evaluation (solving the linear system V_π = R_π + γ P_π V_π) and policy improvement (π_{k+1}(s) ← argmax_a [R(s,a) + γ Σ P(s'|s,a) V_π_k(s')]).
 
-  **Matrix Chain Multiplication:** dp[i][j] = min_{i≤k<j} (dp[i][k] + dp[k+1][j] + dims[i-1]·dims[k]·dims[j]). Finds the optimal parenthesisation of a chain of n matrix multiplications to minimise total scalar multiplications. Time O(n^3), the canonical example of interval DP.
+**Matrix Chain Multiplication:** dp[i][j] = min_{i≤k<j} (dp[i][k] + dp[k+1][j] + dims[i-1]·dims[k]·dims[j]). Finds the optimal parenthesisation of a chain of n matrix multiplications to minimise total scalar multiplications. Time O(n^3), the canonical example of interval DP.
 
-  **CYK Algorithm for Context-Free Parsing:** dp[A][i][j] = true iff nonterminal A can derive the substring s[i..j]. Recurrence: dp[A][i][j] = ∨_{B,C,i≤k<j} (A → BC ∈ grammar) ∧ dp[B][i][k] ∧ dp[C][k+1][j]. Time O(n^3 · |G|), space O(n^2 · |G|). The foundational parsing algorithm for [[Natural Language Processing]] and compiler theory.
+**CYK Algorithm for Context-Free Parsing:** dp[A][i][j] = true iff nonterminal A can derive the substring s[i..j]. Recurrence: dp[A][i][j] = ∨_{B,C,i≤k<j} (A → BC ∈ grammar) ∧ dp[B][i][k] ∧ dp[C][k+1][j]. Time O(n^3 · |G|), space O(n^2 · |G|). The foundational parsing algorithm for [[Natural Language Processing]] and compiler theory.
 
-  **Value Iteration Algorithm (Exact Procedure):**
-  Inputs: MDP (S, A, P, R, γ), convergence threshold ε > 0.
-  - Initialise: V_0(s) ← 0 for all s ∈ S (or any finite initial estimate)
-  - Repeat until max_s |V_{k+1}(s) - V_k(s)| < ε(1-γ)/(2γ):
-    - For each state s ∈ S:
-      - V_{k+1}(s) ← max_{a ∈ A(s)} [ R(s,a) + γ · Σ_{s'} P(s'|s,a) · V_k(s') ]
-  - Output: V* ≈ V_k, π*(s) ← argmax_a [ R(s,a) + γ Σ P(s'|s,a) V*(s') ]
-  - Convergence: geometric with rate γ per iteration; ε-optimal policy extracted when ||V_k - V*||_∞ < ε/2
-  - Time per iteration: O(|S|·|A|·|S|) = O(|S|^2·|A|) for dense transitions
-  - Space: O(|S|) for two value function vectors (current and previous)
+**Value Iteration Algorithm (Exact Procedure):**
+Inputs: MDP (S, A, P, R, γ), convergence threshold ε > 0.
+
+- Initialise: V_0(s) ← 0 for all s ∈ S (or any finite initial estimate)
+- Repeat until max_s |V_{k+1}(s) - V_k(s)| < ε(1-γ)/(2γ):
+  - For each state s ∈ S:
+    - V_{k+1}(s) ← max_{a ∈ A(s)} [ R(s,a) + γ · Σ_{s'} P(s'|s,a) · V_k(s') ]
+- Output: V* ≈ V_k, π*(s) ← argmax_a [ R(s,a) + γ Σ P(s'|s,a) V*(s') ]
+- Convergence: geometric with rate γ per iteration; ε-optimal policy extracted when ||V_k - V*||_∞ < ε/2
+- Time per iteration: O(|S|·|A|·|S|) = O(|S|^2·|A|) for dense transitions
+- Space: O(|S|) for two value function vectors (current and previous)
 
   **Policy Iteration Algorithm (Exact Procedure):**
   Inputs: MDP (S, A, P, R, γ), initial policy π_0.
-  - Repeat until policy stable:
-    - Policy Evaluation: solve the linear system (I - γP_{π_k})V_{π_k} = R_{π_k}
-      - Direct: Gaussian elimination in O(|S|^3), or iterative: apply Bellman expectation operator until convergence
-    - Policy Improvement: for each s: π_{k+1}(s) ← argmax_a [ R(s,a) + γ Σ P(s'|s,a) V_{π_k}(s') ]
-    - If π_{k+1} = π_k: break (policy has converged to π*)
-  - Output: π* = π_k, V* = V_{π*}
-  - Convergence: finite in at most |A|^{|S|} steps (all policies); in practice much fewer
-  - Modified Policy Iteration: evaluate policy for m Bellman sweeps rather than to convergence (interpolates between value and policy iteration)
+
+- Repeat until policy stable:
+  - Policy Evaluation: solve the linear system (I - γP_{π_k})V_{π_k} = R_{π_k}
+    - Direct: Gaussian elimination in O(|S|^3), or iterative: apply Bellman expectation operator until convergence
+  - Policy Improvement: for each s: π_{k+1}(s) ← argmax_a [ R(s,a) + γ Σ P(s'|s,a) V_{π_k}(s') ]
+  - If π_{k+1} = π_k: break (policy has converged to π*)
+- Output: π* = π_k, V* = V_{π*}
+- Convergence: finite in at most |A|^{|S|} steps (all policies); in practice much fewer
+- Modified Policy Iteration: evaluate policy for m Bellman sweeps rather than to convergence (interpolates between value and policy iteration)
 
   **Q-Learning Algorithm (Model-Free Approximate DP):**
   Inputs: environment (unknown P, R), learning rate α, discount γ, exploration schedule ε(t).
-  - Initialise: Q(s,a) ← 0 for all s, a (or random small values)
-  - For each episode:
-    - Observe state s; choose action a with ε-greedy policy (a = argmax Q(s,·) with prob 1-ε, random with prob ε)
-    - Execute a; observe reward r and next state s'
-    - Update: Q(s,a) ← Q(s,a) + α · [r + γ · max_{a'} Q(s',a') - Q(s,a)]
-    - s ← s'
-  - Convergence: Q → Q* under GLIE conditions (Greedy in the Limit with Infinite Exploration) with α → 0 at appropriate rate
-  - Deep Q-Network (DQN): replace table Q(s,a) with neural network Q_θ(s,a); use experience replay buffer and periodic target network freeze to stabilise training
+
+- Initialise: Q(s,a) ← 0 for all s, a (or random small values)
+- For each episode:
+  - Observe state s; choose action a with ε-greedy policy (a = argmax Q(s,·) with prob 1-ε, random with prob ε)
+  - Execute a; observe reward r and next state s'
+  - Update: Q(s,a) ← Q(s,a) + α · [r + γ · max_{a'} Q(s',a') - Q(s,a)]
+  - s ← s'
+- Convergence: Q → Q* under GLIE conditions (Greedy in the Limit with Infinite Exploration) with α → 0 at appropriate rate
+- Deep Q-Network (DQN): replace table Q(s,a) with neural network Q_θ(s,a); use experience replay buffer and periodic target network freeze to stabilise training
 
   ## State Space Design Heuristics and Implementation Patterns
   The most difficult part of applying DP to a new problem is identifying an adequate state representation. The state must satisfy the Markov property — containing all information required to optimally decide future actions without reference to history. The following heuristics guide state space design in practice.
-  - **Sufficiency**: if two histories have identical states under your representation, the optimal future decisions should be identical; violating this causes incorrect DP tables
-  - **Minimality**: include no information in the state beyond what is necessary; every extra dimension multiplies the table size exponentially (the curse of dimensionality)
-  - **Discretisability**: for tabular DP, the state must be finitely enumerable; continuous states require discretisation (grid-based) or function approximation (neural/linear)
-  - **Incrementality**: prefer representations that can be updated cheaply from one step to the next; string states require hashing, not copying
-  - **Commonality**: the core justification for DP efficiency is that many distinct computation paths share subproblems; if your state space rarely overlaps, memoisation adds overhead with little benefit
-  - **Boundary clarity**: define base cases before recurrences; misspecified base cases are the most common source of incorrect DP implementations
-  - **Ordering**: in bottom-up tabulation, ensure subproblems are solved before they are needed; topological sort of the DAG of subproblem dependencies determines valid fill orders
-  - **Dimension reduction**: sometimes a 2D state can be collapsed to 1D by observing that one dimension is always determined by the recurrence index
+
+- **Sufficiency**: if two histories have identical states under your representation, the optimal future decisions should be identical; violating this causes incorrect DP tables
+- **Minimality**: include no information in the state beyond what is necessary; every extra dimension multiplies the table size exponentially (the curse of dimensionality)
+- **Discretisability**: for tabular DP, the state must be finitely enumerable; continuous states require discretisation (grid-based) or function approximation (neural/linear)
+- **Incrementality**: prefer representations that can be updated cheaply from one step to the next; string states require hashing, not copying
+- **Commonality**: the core justification for DP efficiency is that many distinct computation paths share subproblems; if your state space rarely overlaps, memoisation adds overhead with little benefit
+- **Boundary clarity**: define base cases before recurrences; misspecified base cases are the most common source of incorrect DP implementations
+- **Ordering**: in bottom-up tabulation, ensure subproblems are solved before they are needed; topological sort of the DAG of subproblem dependencies determines valid fill orders
+- **Dimension reduction**: sometimes a 2D state can be collapsed to 1D by observing that one dimension is always determined by the recurrence index
   Common state representations in competitive programming and algorithmic interviews:
-  - Prefix index (LCS, Edit Distance, LIS): state = (i, j) for two prefixes, or (i) for a single prefix
-  - Subset (Held-Karp TSP): state = (visited bitmask, current node); |S| = 2^n · n
-  - Interval (MCM, Optimal BST): state = (left, right); |S| = O(n^2)
-  - Tree (Tree DP, subtree problems): state = (node, boolean flag); filled via DFS post-order
-  - Digit (counting problems with digit constraints): state = (position, tight constraint flag, digit accumulated)
-  - Profile (broken profile DP for tiling): state = (column, profile of previous column boundary)
-  - Rank/sorted-order (patience sorting, scheduling): state = (processed prefix, current top-of-stack element)
-  - Graph vertex with distance label (BFS/Dijkstra hybrid DP): state = (node, distance bucket)
-  - Stock transaction DP: state = (day, number-of-transactions-remaining, holding-stock-flag); 3D table, O(n·k·2) time
-  - Minimum path cover on DAG (matching DP): state = (node set covered, last node); reduces to bipartite matching
+- Prefix index (LCS, Edit Distance, LIS): state = (i, j) for two prefixes, or (i) for a single prefix
+- Subset (Held-Karp TSP): state = (visited bitmask, current node); |S| = 2^n · n
+- Interval (MCM, Optimal BST): state = (left, right); |S| = O(n^2)
+- Tree (Tree DP, subtree problems): state = (node, boolean flag); filled via DFS post-order
+- Digit (counting problems with digit constraints): state = (position, tight constraint flag, digit accumulated)
+- Profile (broken profile DP for tiling): state = (column, profile of previous column boundary)
+- Rank/sorted-order (patience sorting, scheduling): state = (processed prefix, current top-of-stack element)
+- Graph vertex with distance label (BFS/Dijkstra hybrid DP): state = (node, distance bucket)
+- Stock transaction DP: state = (day, number-of-transactions-remaining, holding-stock-flag); 3D table, O(n·k·2) time
+- Minimum path cover on DAG (matching DP): state = (node set covered, last node); reduces to bipartite matching
 
   ## Debugging and Correctness Verification
   Debugging DP solutions requires a systematic approach distinct from standard algorithmic debugging.
-  - **Verify base cases first**: print all base case values and check them by hand for small inputs
-  - **Verify recurrence on small examples**: trace through a 3–4 element example manually and compare to computed table
-  - **Off-by-one audit**: DP is notoriously prone to off-by-one errors in loop bounds, index mappings, and base case initialisation
-  - **Memoisation completeness**: ensure every branch of the recursive function either returns a memoised value or computes and stores before returning
-  - **Initial value choice**: initialise the DP table to -∞ (for maximisation), +∞ (for minimisation), or 0 (for counting); wrong initialisation silently corrupts results when the recurrence takes min/max with uninitialised cells
-  - **Dimension overflow**: for large n, dp[n+1][n+1] may exceed memory; compute required memory (bytes = dimensions × element size) before allocating
-  - **Cyclic dependency check**: tabular DP requires a DAG of dependencies; if the recurrence references dp[i] from dp[i-1] AND dp[i] from dp[i+1] simultaneously, the problem is not solvable with standard DP
-  - **Rollout testing**: for approximate DP (neural Q-functions), perform greedy rollouts from the current policy and measure empirical return; compare to theoretical Bellman residual to diagnose training stability
-  - **Test with known-optimal instances**: for classic problems (LCS, LIS, Knapsack), use small examples where the optimal solution is verifiable by exhaustive search; automate this regression-style during development
-  - **Profile memory access patterns**: in large 2D DP tables (n > 10^4), row-major vs. column-major access can cause a 5–10× slowdown due to cache miss rates; measure with perf or Valgrind massif before optimising algorithmic complexity
-  - **Reconstruct the solution (not just the value)**: maintaining a parent pointer array dp_parent[i][j] recording the choice taken at each state enables solution reconstruction via traceback; forgetting to store parent pointers means only the optimal value (not the actual solution) is recoverable
-  - **Validate state transitions exhaustively**: for each state, enumerate all possible transitions in the recurrence and verify none is omitted; a missing transition yields a subtly incorrect DP that is hard to catch without domain knowledge of the correct answer
-  - **Check output sensitivity to base cases**: perturb base case values by ±1 and verify the final answer changes predictably; if it does not change when it should, the base case is not reachable from the recurrence (indicating a state ordering or indexing bug)
-  - **Stress-test against brute force**: for problems where brute force is feasible for small n (n ≤ 10–15), implement both naive recursive search and DP side-by-side; randomised stress testing across thousands of small inputs will catch subtle recurrence errors with high probability
+
+- **Verify base cases first**: print all base case values and check them by hand for small inputs
+- **Verify recurrence on small examples**: trace through a 3–4 element example manually and compare to computed table
+- **Off-by-one audit**: DP is notoriously prone to off-by-one errors in loop bounds, index mappings, and base case initialisation
+- **Memoisation completeness**: ensure every branch of the recursive function either returns a memoised value or computes and stores before returning
+- **Initial value choice**: initialise the DP table to -∞ (for maximisation), +∞ (for minimisation), or 0 (for counting); wrong initialisation silently corrupts results when the recurrence takes min/max with uninitialised cells
+- **Dimension overflow**: for large n, dp[n+1][n+1] may exceed memory; compute required memory (bytes = dimensions × element size) before allocating
+- **Cyclic dependency check**: tabular DP requires a DAG of dependencies; if the recurrence references dp[i] from dp[i-1] AND dp[i] from dp[i+1] simultaneously, the problem is not solvable with standard DP
+- **Rollout testing**: for approximate DP (neural Q-functions), perform greedy rollouts from the current policy and measure empirical return; compare to theoretical Bellman residual to diagnose training stability
+- **Test with known-optimal instances**: for classic problems (LCS, LIS, Knapsack), use small examples where the optimal solution is verifiable by exhaustive search; automate this regression-style during development
+- **Profile memory access patterns**: in large 2D DP tables (n > 10^4), row-major vs. column-major access can cause a 5–10× slowdown due to cache miss rates; measure with perf or Valgrind massif before optimising algorithmic complexity
+- **Reconstruct the solution (not just the value)**: maintaining a parent pointer array dp_parent[i][j] recording the choice taken at each state enables solution reconstruction via traceback; forgetting to store parent pointers means only the optimal value (not the actual solution) is recoverable
+- **Validate state transitions exhaustively**: for each state, enumerate all possible transitions in the recurrence and verify none is omitted; a missing transition yields a subtly incorrect DP that is hard to catch without domain knowledge of the correct answer
+- **Check output sensitivity to base cases**: perturb base case values by ±1 and verify the final answer changes predictably; if it does not change when it should, the base case is not reachable from the recurrence (indicating a state ordering or indexing bug)
+- **Stress-test against brute force**: for problems where brute force is feasible for small n (n ≤ 10–15), implement both naive recursive search and DP side-by-side; randomised stress testing across thousands of small inputs will catch subtle recurrence errors with high probability
 
   **Longest Increasing Subsequence (LIS):** A classically elegant DP that illustrates how the same problem can be solved naively in O(n^2) time by DP and then improved dramatically by combining DP insight with a patience-sorting data structure to achieve O(n log n). The O(n^2) DP: dp[i] = max(dp[j] + 1 for all j < i where A[j] < A[i]), with dp[i] representing the length of the longest increasing subsequence ending at index i. The O(n log n) improvement maintains a sorted array tails[] where tails[k] is the smallest tail element of all increasing subsequences of length k+1; each new element A[i] is binary-searched into tails to either extend or refine it. The LIS problem is fundamental in patience sorting, RNA secondary structure prediction, network packet sequencing, and the theory of Young tableaux in algebraic combinatorics. The connection between LIS and the Robinson-Schensted correspondence in combinatorics — which maps permutations to pairs of Young tableaux where the first tableau's first row length is the LIS length — is one of the most beautiful links between DP and pure mathematics.
 
@@ -253,66 +257,76 @@ Dynamic programming is an algorithmic technique for solving problems by breaking
   The United Kingdom has exceptional institutional depth in dynamic programming research and application, spanning academic theory, computational biology, industrial AI, and public sector optimisation:
 
   **London AI and Bioinformatics Ecosystem:**
-  - [[DeepMind]] (London, subsidiary of Alphabet): produces the world's most prominent approximate DP research in [[Reinforcement Learning]]; the AlphaFold work received the 2024 Nobel Prize in Chemistry, and the bioinformatics pipeline underpinning AlphaFold depends on DP sequence alignment (HHblits, Jackhmmer).
-  - Wellcome Sanger Institute (Hinxton, Cambridgeshire): uses large-scale DP alignment — Smith-Waterman, Viterbi-based HMMs, and profile-profile alignment tools — as core bioinformatics infrastructure for the 100,000 Genomes Project and Genomics England's clinical sequencing programme.
-  - EMBL-EBI (European Bioinformatics Institute, Hinxton, Cambridgeshire): maintains UniProt, Ensembl, and other bioinformatics databases; DP alignment is the computational backbone of all comparative genomics analyses hosted here.
-  - Alan Turing Institute (London, British Library): hosts projects on combinatorial optimisation and DP for NHS resource scheduling, supply chain optimisation, and energy systems planning; the Turing's Data Centric Engineering programme applies DP methods to infrastructure maintenance scheduling.
+
+- [[DeepMind]] (London, subsidiary of Alphabet): produces the world's most prominent approximate DP research in [[Reinforcement Learning]]; the AlphaFold work received the 2024 Nobel Prize in Chemistry, and the bioinformatics pipeline underpinning AlphaFold depends on DP sequence alignment (HHblits, Jackhmmer).
+- Wellcome Sanger Institute (Hinxton, Cambridgeshire): uses large-scale DP alignment — Smith-Waterman, Viterbi-based HMMs, and profile-profile alignment tools — as core bioinformatics infrastructure for the 100,000 Genomes Project and Genomics England's clinical sequencing programme.
+- EMBL-EBI (European Bioinformatics Institute, Hinxton, Cambridgeshire): maintains UniProt, Ensembl, and other bioinformatics databases; DP alignment is the computational backbone of all comparative genomics analyses hosted here.
+- Alan Turing Institute (London, British Library): hosts projects on combinatorial optimisation and DP for NHS resource scheduling, supply chain optimisation, and energy systems planning; the Turing's Data Centric Engineering programme applies DP methods to infrastructure maintenance scheduling.
 
   **Major Universities — Theoretical Computer Science:**
-  - University of Edinburgh (LFCS — Laboratory for Foundations of Computer Science): strong theory group with research in complexity, algorithms, and formal languages; CYK-related parsing algorithms and formal language theory are active research areas.
-  - University of Oxford (Combinatorics and Optimisation group, Computer Science Theory group): research on approximation algorithms for NP-hard problems (many based on DP relaxations), integer programming, and algorithmic game theory.
-  - University of Cambridge (Computer Laboratory Theory group, DAMTP): research on algorithms, complexity, and mathematical programming; the Cambridge Mathematics of Information (CMI) initiative bridges DP, information theory, and machine learning.
-  - University of Warwick (DIMAP — Centre for Discrete Mathematics and its Applications): the UK's leading centre for combinatorial optimisation and algorithms; strong research in scheduling algorithms, network flow, and DP-based combinatorial problems.
+
+- University of Edinburgh (LFCS — Laboratory for Foundations of Computer Science): strong theory group with research in complexity, algorithms, and formal languages; CYK-related parsing algorithms and formal language theory are active research areas.
+- University of Oxford (Combinatorics and Optimisation group, Computer Science Theory group): research on approximation algorithms for NP-hard problems (many based on DP relaxations), integer programming, and algorithmic game theory.
+- University of Cambridge (Computer Laboratory Theory group, DAMTP): research on algorithms, complexity, and mathematical programming; the Cambridge Mathematics of Information (CMI) initiative bridges DP, information theory, and machine learning.
+- University of Warwick (DIMAP — Centre for Discrete Mathematics and its Applications): the UK's leading centre for combinatorial optimisation and algorithms; strong research in scheduling algorithms, network flow, and DP-based combinatorial problems.
 
   **Northern England — Industrial and Applied Contexts:**
-  - University of Manchester (School of Computer Science, Theory and Algorithms group): long tradition in formal languages, parsing, and CYK-related DP algorithms; also active in OR applications of DP to scheduling and logistics.
-  - University of Sheffield (AI group, Operations Research group): research on combinatorial optimisation applicable to Northern England's manufacturing sector; DP methods for job shop scheduling, resource allocation, and supply chain resilience.
-  - University of Leeds (Business School Operations Research group, School of Computing): research applying DP to healthcare scheduling (NHS waiting list management), rail network optimisation (Network Rail collaboration), and energy grid operation — all areas of direct Northern Powerhouse relevance.
-  - University of Newcastle (School of Computing Science): research in formal verification and model checking of software systems; DP-based state space exploration underlies model checking algorithms (BDD-based symbolic model checking is a form of DP over boolean state spaces).
+
+- University of Manchester (School of Computer Science, Theory and Algorithms group): long tradition in formal languages, parsing, and CYK-related DP algorithms; also active in OR applications of DP to scheduling and logistics.
+- University of Sheffield (AI group, Operations Research group): research on combinatorial optimisation applicable to Northern England's manufacturing sector; DP methods for job shop scheduling, resource allocation, and supply chain resilience.
+- University of Leeds (Business School Operations Research group, School of Computing): research applying DP to healthcare scheduling (NHS waiting list management), rail network optimisation (Network Rail collaboration), and energy grid operation — all areas of direct Northern Powerhouse relevance.
+- University of Newcastle (School of Computing Science): research in formal verification and model checking of software systems; DP-based state space exploration underlies model checking algorithms (BDD-based symbolic model checking is a form of DP over boolean state spaces).
 
   **Government and Public Sector:**
-  - GCHQ and NCSC (Cheltenham): apply DP algorithms for optimal cryptanalysis scheduling, network vulnerability analysis (shortest path in attack graphs), and protocol verification (DP-based model checking).
-  - Network Rail and HS2: deploy DP methods for timetable optimisation, maintenance scheduling, and infrastructure investment prioritisation across the national rail network; DP scheduling is particularly relevant to the Northern Powerhouse Rail (NPR) development.
-  - NHS England: scheduling of elective surgical procedures, radiotherapy planning (treatment sequence optimisation), and resource allocation across integrated care boards use DP-based optimisation models developed in partnership with UK universities and the Alan Turing Institute.
+
+- GCHQ and NCSC (Cheltenham): apply DP algorithms for optimal cryptanalysis scheduling, network vulnerability analysis (shortest path in attack graphs), and protocol verification (DP-based model checking).
+- Network Rail and HS2: deploy DP methods for timetable optimisation, maintenance scheduling, and infrastructure investment prioritisation across the national rail network; DP scheduling is particularly relevant to the Northern Powerhouse Rail (NPR) development.
+- NHS England: scheduling of elective surgical procedures, radiotherapy planning (treatment sequence optimisation), and resource allocation across integrated care boards use DP-based optimisation models developed in partnership with UK universities and the Alan Turing Institute.
 
   ## Future Directions (2026-2030)
 
   **Differentiable Dynamic Programming:**
-  - Embedding DP operators as smooth, differentiable layers in neural networks using temperature-softened relaxations (soft-argmin, perturbation-based differentiation via the Gumbel-max trick).
-  - End-to-end learning of structured combinatorial problems: differentiable sorting networks, differentiable shortest-path layers for learning-to-route, differentiable sequence alignment for end-to-end trainable bioinformatics pipelines.
-  - Differentiable CYK layers enabling grammar induction from raw text — training the grammar simultaneously with the parsing structure.
-  - Differentiable Bellman layers in model-based RL: embedding a finite-horizon value iteration pass as a differentiable module within a world model, enabling gradient flow through the planning computation.
-  - Theoretical convergence analysis of differentiable DP training; bounding the bias introduced by temperature-softening and how it affects the correctness of learned combinatorial structures.
+
+- Embedding DP operators as smooth, differentiable layers in neural networks using temperature-softened relaxations (soft-argmin, perturbation-based differentiation via the Gumbel-max trick).
+- End-to-end learning of structured combinatorial problems: differentiable sorting networks, differentiable shortest-path layers for learning-to-route, differentiable sequence alignment for end-to-end trainable bioinformatics pipelines.
+- Differentiable CYK layers enabling grammar induction from raw text — training the grammar simultaneously with the parsing structure.
+- Differentiable Bellman layers in model-based RL: embedding a finite-horizon value iteration pass as a differentiable module within a world model, enabling gradient flow through the planning computation.
+- Theoretical convergence analysis of differentiable DP training; bounding the bias introduced by temperature-softening and how it affects the correctness of learned combinatorial structures.
 
   **Neural-Symbolic Dynamic Programming:**
-  - Using large language models (LLMs) to automatically define DP state spaces and recurrences for novel problem classes described in natural language, with the symbolic DP procedure ensuring computational correctness.
-  - Hybrid architectures where an LLM proposes candidate DP formulations, and a verifier automatically checks the acyclicity of the subproblem dependency graph and the correctness of base cases.
-  - LLM-guided approximate DP: the language model approximates the value function in natural language state representations (e.g., in text planning or narrative generation tasks), with DP guaranteeing structured output consistency.
-  - Automated discovery of DP recurrences for new classes of combinatorial problems, reducing the human effort required to design novel DP algorithms to that of problem specification.
+
+- Using large language models (LLMs) to automatically define DP state spaces and recurrences for novel problem classes described in natural language, with the symbolic DP procedure ensuring computational correctness.
+- Hybrid architectures where an LLM proposes candidate DP formulations, and a verifier automatically checks the acyclicity of the subproblem dependency graph and the correctness of base cases.
+- LLM-guided approximate DP: the language model approximates the value function in natural language state representations (e.g., in text planning or narrative generation tasks), with DP guaranteeing structured output consistency.
+- Automated discovery of DP recurrences for new classes of combinatorial problems, reducing the human effort required to design novel DP algorithms to that of problem specification.
 
   **Quantum-Accelerated Dynamic Programming:**
-  - Near-term quantum advantage demonstrations for subset-sum and certain path problems using quantum annealing (D-Wave) and variational quantum algorithms (QAOA).
-  - Quantum speedups for specific DP subproblems: O(sqrt(n)) Grover search within each DP state expansion could yield O(sqrt(n)·S·T) algorithms for DP with a search component.
-  - Quantum-classical hybrid DP: classical DP outer structure with quantum oracle evaluations for expensive subproblem computations, applicable to quantum chemistry simulation as a subproblem within classical optimisation.
-  - Projected timeline: polynomial quantum speedup for specific DP classes (e.g., subset-sum, 0/1 knapsack with bounded items) by 2028-2030 on fault-tolerant quantum computers.
+
+- Near-term quantum advantage demonstrations for subset-sum and certain path problems using quantum annealing (D-Wave) and variational quantum algorithms (QAOA).
+- Quantum speedups for specific DP subproblems: O(sqrt(n)) Grover search within each DP state expansion could yield O(sqrt(n)·S·T) algorithms for DP with a search component.
+- Quantum-classical hybrid DP: classical DP outer structure with quantum oracle evaluations for expensive subproblem computations, applicable to quantum chemistry simulation as a subproblem within classical optimisation.
+- Projected timeline: polynomial quantum speedup for specific DP classes (e.g., subset-sum, 0/1 knapsack with bounded items) by 2028-2030 on fault-tolerant quantum computers.
 
   **Distributed and Federated Dynamic Programming:**
-  - GPU-parallel value iteration for very large MDPs (millions to billions of states): distributing the state space across GPU threads, enabling real-time planning for large-scale supply chain and logistics MDPs.
-  - Federated DP for NHS resource scheduling: solving multi-hospital bed allocation and staff scheduling DP across geographically distributed hospital trusts without sharing patient-level data.
-  - Asynchronous distributed DP: allowing different states to be updated by different compute nodes at different rates, with convergence analysis borrowed from asynchronous stochastic gradient descent theory.
-  - Privacy-preserving DP via differential privacy noise injection into the Bellman backup, enabling federated RL without exposing individual patient trajectories.
+
+- GPU-parallel value iteration for very large MDPs (millions to billions of states): distributing the state space across GPU threads, enabling real-time planning for large-scale supply chain and logistics MDPs.
+- Federated DP for NHS resource scheduling: solving multi-hospital bed allocation and staff scheduling DP across geographically distributed hospital trusts without sharing patient-level data.
+- Asynchronous distributed DP: allowing different states to be updated by different compute nodes at different rates, with convergence analysis borrowed from asynchronous stochastic gradient descent theory.
+- Privacy-preserving DP via differential privacy noise injection into the Bellman backup, enabling federated RL without exposing individual patient trajectories.
 
   **Robust and Distributionally-Robust Dynamic Programming:**
-  - Extending the Bellman framework to handle distributional uncertainty in transition dynamics using worst-case (robust) or average-case (distributionally-robust) formulations.
-  - Rectangular uncertainty sets for distributionally-robust MDPs: solving the minimax Bellman equation over all transition distributions within a Wasserstein ball around the empirical distribution.
-  - Applications to climate-resilient infrastructure planning: solving DP allocation problems where transition probabilities reflect climate uncertainty scenarios (RCP 2.6 vs RCP 8.5 pathways).
-  - Coherent risk measures (CVaR, entropic risk) integrated into the Bellman equation for financial risk-adjusted DP, enabling portfolio optimisation that explicitly controls tail risk.
+
+- Extending the Bellman framework to handle distributional uncertainty in transition dynamics using worst-case (robust) or average-case (distributionally-robust) formulations.
+- Rectangular uncertainty sets for distributionally-robust MDPs: solving the minimax Bellman equation over all transition distributions within a Wasserstein ball around the empirical distribution.
+- Applications to climate-resilient infrastructure planning: solving DP allocation problems where transition probabilities reflect climate uncertainty scenarios (RCP 2.6 vs RCP 8.5 pathways).
+- Coherent risk measures (CVaR, entropic risk) integrated into the Bellman equation for financial risk-adjusted DP, enabling portfolio optimisation that explicitly controls tail risk.
 
   **Dynamic Programming for Foundation Model Alignment:**
-  - Framing RLHF (Reinforcement Learning from Human Feedback) fine-tuning as a KL-regularised DP problem: V*(s) = max_a [R_human(s,a) + γV*(s') - β·KL(π_θ(·|s) || π_ref(·|s))].
-  - Direct Preference Optimisation (DPO) as a closed-form DP solution to the KL-regularised RLHF problem, enabling preference learning without an explicit reward model.
-  - Constitutional AI and RLAIF as multi-step DP where each step applies a Bellman-like backup with a constitutional principle as the reward signal.
-  - Theoretical analysis of RLHF stability and convergence as a stochastic approximate DP, identifying conditions under which preference learning converges to a stable aligned policy.
+
+- Framing RLHF (Reinforcement Learning from Human Feedback) fine-tuning as a KL-regularised DP problem: V*(s) = max_a [R_human(s,a) + γV*(s') - β·KL(π_θ(·|s) || π_ref(·|s))].
+- Direct Preference Optimisation (DPO) as a closed-form DP solution to the KL-regularised RLHF problem, enabling preference learning without an explicit reward model.
+- Constitutional AI and RLAIF as multi-step DP where each step applies a Bellman-like backup with a constitutional principle as the reward signal.
+- Theoretical analysis of RLHF stability and convergence as a stochastic approximate DP, identifying conditions under which preference learning converges to a stable aligned policy.
 
   ## Research and Literature
   1. Bellman, R. (1957). *Dynamic Programming*. Princeton University Press. [The founding monograph; introduces the principle of optimality, value functions, and the Bellman equation]
@@ -349,31 +363,35 @@ Dynamic programming is an algorithmic technique for solving problems by breaking
   Dynamic programming is most clearly understood by contrasting it with the other major algorithm design paradigms — divide and conquer, greedy algorithms, and exhaustive search — and by understanding the precise structural conditions that determine which paradigm is applicable:
 
   **DP vs. Divide and Conquer:**
-  - Both paradigms recursively decompose problems into subproblems and combine their solutions.
-  - Key distinction: in divide-and-conquer (Merge Sort, Quick Sort, FFT), the subproblems are *independent* and *non-overlapping* — the same subproblem is never encountered twice in the recursion tree. Storing and reusing results provides zero benefit; the algorithm processes each subproblem exactly once by design.
-  - In DP, subproblems *overlap* — the same subproblem appears in many different recursive branches. Storing and reusing results converts the exponential recursion tree into a polynomial computation graph.
-  - Example: Fibonacci computed naively by divide-and-conquer (each F(k) spawns two sub-calls F(k-1) and F(k-2)) is O(2^n) because F(2) is recomputed F(n-2) times. DP (memoisation) makes it O(n) because F(2) is computed once and cached.
-  - Matrix multiplication is divide-and-conquer for single pairs but DP when optimising a chain; merge sort is divide-and-conquer but optimal merge order for a sequence of merges is a DP problem.
+
+- Both paradigms recursively decompose problems into subproblems and combine their solutions.
+- Key distinction: in divide-and-conquer (Merge Sort, Quick Sort, FFT), the subproblems are *independent* and *non-overlapping* — the same subproblem is never encountered twice in the recursion tree. Storing and reusing results provides zero benefit; the algorithm processes each subproblem exactly once by design.
+- In DP, subproblems *overlap* — the same subproblem appears in many different recursive branches. Storing and reusing results converts the exponential recursion tree into a polynomial computation graph.
+- Example: Fibonacci computed naively by divide-and-conquer (each F(k) spawns two sub-calls F(k-1) and F(k-2)) is O(2^n) because F(2) is recomputed F(n-2) times. DP (memoisation) makes it O(n) because F(2) is computed once and cached.
+- Matrix multiplication is divide-and-conquer for single pairs but DP when optimising a chain; merge sort is divide-and-conquer but optimal merge order for a sequence of merges is a DP problem.
 
   **DP vs. Greedy Algorithms:**
-  - Greedy algorithms make locally optimal choices at each step without reconsidering previous decisions, running in O(n log n) or O(n) time for many problems.
-  - DP explores all possible choices at each step (or their optimal subset via the recurrence), achieving global optimality at the cost of higher time and space complexity.
-  - A greedy algorithm is correct when the greedy choice property holds: a globally optimal solution can always be reached by making the locally optimal choice at each step. When this property holds, DP is unnecessarily expensive; the greedy approach dominates.
-  - Example: Fractional Knapsack is solvable greedily (sort by value/weight ratio, fill greedily) in O(n log n). The 0/1 Knapsack (integer quantities) does NOT have the greedy choice property and requires DP (O(n·W)).
-  - Huffman coding (greedy) achieves optimal prefix-free codes; Shortest Path from a single source (Dijkstra, greedy) achieves optimal paths when edge weights are non-negative. In both cases, the greedy choice property holds and DP is unnecessary.
-  - Some problems (like Activity Selection, Job Scheduling with deadlines) can be solved both greedily and by DP; the greedy solution is simpler and more efficient when both are correct.
+
+- Greedy algorithms make locally optimal choices at each step without reconsidering previous decisions, running in O(n log n) or O(n) time for many problems.
+- DP explores all possible choices at each step (or their optimal subset via the recurrence), achieving global optimality at the cost of higher time and space complexity.
+- A greedy algorithm is correct when the greedy choice property holds: a globally optimal solution can always be reached by making the locally optimal choice at each step. When this property holds, DP is unnecessarily expensive; the greedy approach dominates.
+- Example: Fractional Knapsack is solvable greedily (sort by value/weight ratio, fill greedily) in O(n log n). The 0/1 Knapsack (integer quantities) does NOT have the greedy choice property and requires DP (O(n·W)).
+- Huffman coding (greedy) achieves optimal prefix-free codes; Shortest Path from a single source (Dijkstra, greedy) achieves optimal paths when edge weights are non-negative. In both cases, the greedy choice property holds and DP is unnecessary.
+- Some problems (like Activity Selection, Job Scheduling with deadlines) can be solved both greedily and by DP; the greedy solution is simpler and more efficient when both are correct.
 
   **DP vs. Exhaustive Search / Backtracking:**
-  - Exhaustive search (backtracking) explores all possible solutions, pruning branches only via constraint propagation or bound checking. Worst-case is O(n!) or O(2^n) with minimal reduction.
-  - DP achieves the same completeness guarantee (finding the globally optimal solution) but exploits optimal substructure to avoid re-exploring subproblems already solved.
-  - The canonical comparison: the naive recursive solution to Fibonacci (O(2^n)) is exhaustive search; DP (O(n)) is the structured reuse of its results.
-  - For TSP with n=20: backtracking explores up to 20! / 2 ≈ 10^{18} tours; Held-Karp DP explores O(n^2·2^n) ≈ 4×10^8 states — a dramatic improvement even though both are exponential.
-  - Many NP-hard problems are solved by DP on exponentially large but structured state spaces (bitmask DP, interval DP) that are nevertheless far more efficient than unstructured backtracking.
+
+- Exhaustive search (backtracking) explores all possible solutions, pruning branches only via constraint propagation or bound checking. Worst-case is O(n!) or O(2^n) with minimal reduction.
+- DP achieves the same completeness guarantee (finding the globally optimal solution) but exploits optimal substructure to avoid re-exploring subproblems already solved.
+- The canonical comparison: the naive recursive solution to Fibonacci (O(2^n)) is exhaustive search; DP (O(n)) is the structured reuse of its results.
+- For TSP with n=20: backtracking explores up to 20! / 2 ≈ 10^{18} tours; Held-Karp DP explores O(n^2·2^n) ≈ 4×10^8 states — a dramatic improvement even though both are exponential.
+- Many NP-hard problems are solved by DP on exponentially large but structured state spaces (bitmask DP, interval DP) that are nevertheless far more efficient than unstructured backtracking.
 
   **DP vs. Linear Programming (LP) Relaxation:**
-  - LP relaxation of integer programmes (knapsack, set cover, TSP) provides polynomial-time lower bounds but may not achieve integer solutions.
-  - DP achieves exact integer solutions in pseudo-polynomial time; LP provides polynomial-time approximations or lower bounds used within branch-and-bound.
-  - Interplay: modern MIP solvers (CPLEX, Gurobi) use LP relaxation for lower bounds, branch-and-bound for search, and DP-based pricing (column generation) for large-scale structured LPs. The combination often dramatically outperforms either approach alone.
+
+- LP relaxation of integer programmes (knapsack, set cover, TSP) provides polynomial-time lower bounds but may not achieve integer solutions.
+- DP achieves exact integer solutions in pseudo-polynomial time; LP provides polynomial-time approximations or lower bounds used within branch-and-bound.
+- Interplay: modern MIP solvers (CPLEX, Gurobi) use LP relaxation for lower bounds, branch-and-bound for search, and DP-based pricing (column generation) for large-scale structured LPs. The combination often dramatically outperforms either approach alone.
 
   ## Algorithmic Design Patterns and Common Mistakes
 
@@ -396,87 +414,97 @@ Dynamic programming is an algorithmic technique for solving problems by breaking
   Dynamic programming is validated against a well-known canon of benchmark problems used in algorithms education, competitive programming, and operations research:
 
   **Competitive Programming Benchmarks:**
-  - LeetCode DP tag: 600+ problems rated Easy/Medium/Hard; covers 1D DP, 2D DP, interval DP, bitmask DP, tree DP, digit DP, and stock/transaction problems.
-  - AtCoder DP Educational Contest (2019): 26 progressive problems from simple 1D recurrences through LIS, Knapsack variants, Tree DP, Digit DP, and Interval DP; the most widely used structured DP curriculum worldwide.
-  - ICPC (International Collegiate Programming Contest): DP problems appear at every difficulty level; canonical examples include "Vase" (IOI 1995, interval DP), "Race" (IOI 2011, tree DP on shortest-path tree), "Cave" (IOI 2013, tree DP).
-  - Codeforces DP archive: 1200+ DP-tagged problems with difficulty ratings from 800 to 3500; includes novel DP formulations discovered by competitive programmers and not found in textbooks.
-  - SPOJ (Sphere Online Judge): classic DP problems including ACODE (number of decodings), EDIST (edit distance), FARIDA (0/1 knapsack on a tree), and MINSTTREE (minimum spanning tree DP).
+
+- LeetCode DP tag: 600+ problems rated Easy/Medium/Hard; covers 1D DP, 2D DP, interval DP, bitmask DP, tree DP, digit DP, and stock/transaction problems.
+- AtCoder DP Educational Contest (2019): 26 progressive problems from simple 1D recurrences through LIS, Knapsack variants, Tree DP, Digit DP, and Interval DP; the most widely used structured DP curriculum worldwide.
+- ICPC (International Collegiate Programming Contest): DP problems appear at every difficulty level; canonical examples include "Vase" (IOI 1995, interval DP), "Race" (IOI 2011, tree DP on shortest-path tree), "Cave" (IOI 2013, tree DP).
+- Codeforces DP archive: 1200+ DP-tagged problems with difficulty ratings from 800 to 3500; includes novel DP formulations discovered by competitive programmers and not found in textbooks.
+- SPOJ (Sphere Online Judge): classic DP problems including ACODE (number of decodings), EDIST (edit distance), FARIDA (0/1 knapsack on a tree), and MINSTTREE (minimum spanning tree DP).
 
   **Bioinformatics Benchmarks:**
-  - BLAST benchmark: Smith-Waterman DP is the reference exact aligner; approximate BLAST heuristics evaluated against SW ground truth on UniProtKB/Swiss-Prot (565,254 manually annotated sequences as of 2024).
-  - SCOP/SCOPe superfamily benchmark: tests profile HMM alignment (Viterbi DP) for remote homology detection across evolutionarily distant protein families; standard measure of HMM alignment quality.
-  - CASP (Critical Assessment of protein Structure Prediction): measures AlphaFold and competing methods on protein structure prediction; the MSA preprocessing step (DP alignment) directly affects prediction quality.
-  - BAliBASE (Benchmark Alignment dataBASE): multiple sequence alignment benchmark with manually curated reference alignments; tests progressive and iterative alignment algorithms that use pairwise DP as their inner loop.
+
+- BLAST benchmark: Smith-Waterman DP is the reference exact aligner; approximate BLAST heuristics evaluated against SW ground truth on UniProtKB/Swiss-Prot (565,254 manually annotated sequences as of 2024).
+- SCOP/SCOPe superfamily benchmark: tests profile HMM alignment (Viterbi DP) for remote homology detection across evolutionarily distant protein families; standard measure of HMM alignment quality.
+- CASP (Critical Assessment of protein Structure Prediction): measures AlphaFold and competing methods on protein structure prediction; the MSA preprocessing step (DP alignment) directly affects prediction quality.
+- BAliBASE (Benchmark Alignment dataBASE): multiple sequence alignment benchmark with manually curated reference alignments; tests progressive and iterative alignment algorithms that use pairwise DP as their inner loop.
 
   **Operations Research Benchmarks:**
-  - MIPLIB (Mixed-Integer Programming Library): standard benchmark for MIP solvers (CPLEX, Gurobi) where DP-based branch-and-bound is the core algorithm; instances range from trivially solvable to unsolved after weeks of computation.
-  - TSPLIB: Travelling Salesman Problem instances; Held-Karp DP (O(n^2 · 2^n)) is the reference exact solution for small n ≤ 20; standard benchmarks for heuristics (LKH3, Concorde) for larger n.
-  - OR-Library knapsack instances (Beasley 1990): 0/1 knapsack benchmarks with n up to 10,000 items and various capacity-to-total-weight ratios; standard evaluation for pseudo-polynomial DP vs. branch-and-bound.
-  - FlowShop benchmark (Taillard 1993): 120 permutation flowshop scheduling instances; solved by DP-based branch-and-bound and metaheuristics; standard for comparing scheduling algorithms.
+
+- MIPLIB (Mixed-Integer Programming Library): standard benchmark for MIP solvers (CPLEX, Gurobi) where DP-based branch-and-bound is the core algorithm; instances range from trivially solvable to unsolved after weeks of computation.
+- TSPLIB: Travelling Salesman Problem instances; Held-Karp DP (O(n^2 · 2^n)) is the reference exact solution for small n ≤ 20; standard benchmarks for heuristics (LKH3, Concorde) for larger n.
+- OR-Library knapsack instances (Beasley 1990): 0/1 knapsack benchmarks with n up to 10,000 items and various capacity-to-total-weight ratios; standard evaluation for pseudo-polynomial DP vs. branch-and-bound.
+- FlowShop benchmark (Taillard 1993): 120 permutation flowshop scheduling instances; solved by DP-based branch-and-bound and metaheuristics; standard for comparing scheduling algorithms.
 
   **Reinforcement Learning Benchmarks:**
-  - Gymnasium (formerly OpenAI Gym): FrozenLake (small finite MDP, exact value iteration converges in <0.01s), Taxi-v3 (500-state MDP, exact value iteration in <0.1s), CartPole and MountainCar (continuous state, approximate DP needed).
-  - MuJoCo physics benchmarks (HalfCheetah, Ant, Humanoid, Swimmer): continuous-action environments requiring approximate DP; standard PPO, SAC, TD3 results reported at 1M-3M environment steps.
-  - Atari-57: 57 Atari 2600 games used to benchmark DQN and subsequent approximate DP algorithms; human-normalised score across all 57 games is the standard comparison metric.
-  - D4RL (offline RL benchmarks): offline dataset versions of MuJoCo environments for testing conservative Q-learning and other offline approximate DP methods.
+
+- Gymnasium (formerly OpenAI Gym): FrozenLake (small finite MDP, exact value iteration converges in <0.01s), Taxi-v3 (500-state MDP, exact value iteration in <0.1s), CartPole and MountainCar (continuous state, approximate DP needed).
+- MuJoCo physics benchmarks (HalfCheetah, Ant, Humanoid, Swimmer): continuous-action environments requiring approximate DP; standard PPO, SAC, TD3 results reported at 1M-3M environment steps.
+- Atari-57: 57 Atari 2600 games used to benchmark DQN and subsequent approximate DP algorithms; human-normalised score across all 57 games is the standard comparison metric.
+- D4RL (offline RL benchmarks): offline dataset versions of MuJoCo environments for testing conservative Q-learning and other offline approximate DP methods.
 
   **Planning Benchmarks:**
-  - International Planning Competition (IPC, 1998-2023): PDDL-encoded domains (Logistics, Blocksworld, Sokoban, Nomystery, Elevators, Parking); optimal DP planners (Fast Downward, A1, LAMA-first) evaluated on coverage and plan cost.
-  - NetHack Learning Environment (NLE): roguelike game benchmark requiring long-horizon planning; tests RL agents' ability to approximate long-horizon DP in partially observable stochastic settings.
-  - MinAtar: compact Atari-like benchmark for efficient approximate DP research; 5 games with smaller observation spaces enabling faster iteration.
+
+- International Planning Competition (IPC, 1998-2023): PDDL-encoded domains (Logistics, Blocksworld, Sokoban, Nomystery, Elevators, Parking); optimal DP planners (Fast Downward, A1, LAMA-first) evaluated on coverage and plan cost.
+- NetHack Learning Environment (NLE): roguelike game benchmark requiring long-horizon planning; tests RL agents' ability to approximate long-horizon DP in partially observable stochastic settings.
+- MinAtar: compact Atari-like benchmark for efficient approximate DP research; 5 games with smaller observation spaces enabling faster iteration.
 
   ## Complexity Analysis and Theoretical Properties
 
   The computational complexity of dynamic programming solutions depends critically on the size of the state space and the cost of computing each state's value. Mastery of DP complexity analysis is essential for determining whether a proposed DP solution is practically efficient or merely theoretically correct:
 
   **Time Complexity — The S·T Principle:**
-  - For a DP with S distinct states, each requiring O(T) time to compute (where T is the number of transitions or choices at each state), the total time is O(S · T).
-  - LCS/Edit Distance: S = mn states, T = O(1) per state → time O(mn). For n,m = 10^4, this is 10^8 operations — borderline real-time; Smith-Waterman GPU implementations achieve ~10^10 cell updates per second.
-  - 0/1 Knapsack: S = n·W states, T = O(1) → time O(n·W). Pseudo-polynomial: if W = 10^6 and n = 10^3, this is 10^9 operations; feasible but slow for very large W.
-  - Floyd-Warshall (APSP): S = V^2 states, T = O(V) → time O(V^3). For V = 10^4 (10k-node graph), this is 10^{12} operations — intractable; only practical for V ≤ ~10^3.
-  - Held-Karp (TSP): S = n·2^n states, T = O(n) → time O(n^2·2^n). For n=20: 400×10^6 ≈ 4×10^8 operations, ~1 second on modern hardware. For n=30: already requires hours.
-  - The key insight: DP converts T_brute-force (often n! or 2^n) into T_DP = O(S·T) where S·T is typically polynomial or exponential with a much smaller base.
+
+- For a DP with S distinct states, each requiring O(T) time to compute (where T is the number of transitions or choices at each state), the total time is O(S · T).
+- LCS/Edit Distance: S = mn states, T = O(1) per state → time O(mn). For n,m = 10^4, this is 10^8 operations — borderline real-time; Smith-Waterman GPU implementations achieve ~10^10 cell updates per second.
+- 0/1 Knapsack: S = n·W states, T = O(1) → time O(n·W). Pseudo-polynomial: if W = 10^6 and n = 10^3, this is 10^9 operations; feasible but slow for very large W.
+- Floyd-Warshall (APSP): S = V^2 states, T = O(V) → time O(V^3). For V = 10^4 (10k-node graph), this is 10^{12} operations — intractable; only practical for V ≤ ~10^3.
+- Held-Karp (TSP): S = n·2^n states, T = O(n) → time O(n^2·2^n). For n=20: 400×10^6 ≈ 4×10^8 operations, ~1 second on modern hardware. For n=30: already requires hours.
+- The key insight: DP converts T_brute-force (often n! or 2^n) into T_DP = O(S·T) where S·T is typically polynomial or exponential with a much smaller base.
 
   **Space Complexity and Optimisation Techniques:**
-  - Naïve tabulation: O(S) space to store all states.
-  - Rolling array optimisation: when dp[i][j] depends only on dp[i-1][j] and dp[i][j-1], only two rows needed → O(min(m,n)) space for LCS/Edit Distance.
-  - Hirschberg's divide-and-conquer (1975): computes the LCS alignment (not just length) in O(min(m,n)) space via linear-space recursion that computes the midpoint of the optimal alignment.
-  - 1D optimisation for Knapsack: since dp[i][w] depends only on dp[i-1][w] and dp[i-1][w-wt[i]], iterate w in decreasing order to update in-place: O(W) space.
-  - Tree DP space: O(n) for the tree structure; careful DFS ordering ensures we only keep O(depth) stack frames alive simultaneously.
-  - Memory-efficient value iteration: for very large MDPs, store only the current and previous value function vectors (O(S) total), discarding older iterates.
+
+- Naïve tabulation: O(S) space to store all states.
+- Rolling array optimisation: when dp[i][j] depends only on dp[i-1][j] and dp[i][j-1], only two rows needed → O(min(m,n)) space for LCS/Edit Distance.
+- Hirschberg's divide-and-conquer (1975): computes the LCS alignment (not just length) in O(min(m,n)) space via linear-space recursion that computes the midpoint of the optimal alignment.
+- 1D optimisation for Knapsack: since dp[i][w] depends only on dp[i-1][w] and dp[i-1][w-wt[i]], iterate w in decreasing order to update in-place: O(W) space.
+- Tree DP space: O(n) for the tree structure; careful DFS ordering ensures we only keep O(depth) stack frames alive simultaneously.
+- Memory-efficient value iteration: for very large MDPs, store only the current and previous value function vectors (O(S) total), discarding older iterates.
 
   **Pseudo-polynomial vs. True Polynomial Complexity:**
-  - O(n·W) Knapsack is pseudo-polynomial: W is a numeric value in the binary input, so the runtime is exponential in log(W) = the number of bits encoding W.
-  - This is why Knapsack is NP-hard in the strong computational complexity sense (unbounded W) yet has practical DP solutions for bounded numerical W.
-  - Contrast with strongly polynomial algorithms (e.g., max-flow via Edmonds-Karp, O(V·E^2)) that are polynomial in the number of items/nodes/edges irrespective of numeric values.
-  - The distinction matters practically: in financial portfolio optimisation, W may represent dollar amounts in the billions, making the pseudo-polynomial DP solution infeasible while LP relaxation + branch-and-bound remains practical.
+
+- O(n·W) Knapsack is pseudo-polynomial: W is a numeric value in the binary input, so the runtime is exponential in log(W) = the number of bits encoding W.
+- This is why Knapsack is NP-hard in the strong computational complexity sense (unbounded W) yet has practical DP solutions for bounded numerical W.
+- Contrast with strongly polynomial algorithms (e.g., max-flow via Edmonds-Karp, O(V·E^2)) that are polynomial in the number of items/nodes/edges irrespective of numeric values.
+- The distinction matters practically: in financial portfolio optimisation, W may represent dollar amounts in the billions, making the pseudo-polynomial DP solution infeasible while LP relaxation + branch-and-bound remains practical.
 
   **Convergence of Value Iteration in MDPs:**
-  - Geometric convergence rate: ||V_{k+1} - V*||_∞ ≤ γ · ||V_k - V*||_∞, so error after k iterations is ≤ γ^k · ||V_0 - V*||_∞.
-  - For γ = 0.99, achieving 10^{-6} accuracy requires k ≥ log(10^{-6}) / log(0.99) ≈ 1380 iterations — each iteration O(S·A) where S is state count and A is action count.
-  - Policy iteration converges in fewer iterations (each more expensive) but guarantees finite convergence in O(S^A) steps worst case (each step improves the policy on at least one state).
-  - The deadly triad (Sutton 1995): off-policy learning + function approximation + bootstrapping can cause divergence in approximate DP; DQN addresses this via experience replay (breaks temporal correlations) and a frozen target network (stabilises bootstrap targets).
-  - TD(λ): interpolates between TD(0) (full bootstrapping, low variance but biased) and Monte Carlo (no bootstrapping, unbiased but high variance), controlled by eligibility trace decay parameter λ ∈ [0,1].
+
+- Geometric convergence rate: ||V_{k+1} - V*||_∞ ≤ γ · ||V_k - V*||_∞, so error after k iterations is ≤ γ^k · ||V_0 - V*||_∞.
+- For γ = 0.99, achieving 10^{-6} accuracy requires k ≥ log(10^{-6}) / log(0.99) ≈ 1380 iterations — each iteration O(S·A) where S is state count and A is action count.
+- Policy iteration converges in fewer iterations (each more expensive) but guarantees finite convergence in O(S^A) steps worst case (each step improves the policy on at least one state).
+- The deadly triad (Sutton 1995): off-policy learning + function approximation + bootstrapping can cause divergence in approximate DP; DQN addresses this via experience replay (breaks temporal correlations) and a frozen target network (stabilises bootstrap targets).
+- TD(λ): interpolates between TD(0) (full bootstrapping, low variance but biased) and Monte Carlo (no bootstrapping, unbiased but high variance), controlled by eligibility trace decay parameter λ ∈ [0,1].
 
   ## Key Terminology
-  - **Optimal Substructure:** The property that an optimal solution to the full problem contains optimal solutions to its constituent subproblems; the necessary condition for DP applicability. Contrast with problems like the Longest Simple Path that lack this property.
-  - **Overlapping Subproblems:** The property that the same subproblem recurs in multiple branches of the recursion tree; the property that makes caching worthwhile and distinguishes DP from divide-and-conquer (where subproblems do not overlap).
-  - **Memoisation:** Top-down caching of subproblem results keyed by their arguments, implemented via a hash table or multidimensional array. Python's functools.lru_cache and @functools.cache decorators automate memoisation.
-  - **Tabulation:** Bottom-up iterative filling of a table of subproblem results in topological dependency order, avoiding recursive call overhead and stack depth limitations.
-  - **State:** A compact representation encoding exactly the information required to solve a subproblem without reference to how it was reached. Getting the state right is the key design decision in any DP solution.
-  - **Recurrence Relation:** The formula expressing a state's value in terms of strictly smaller or simpler states; the definitional equation of a DP algorithm. Must define a valid (acyclic) computation order.
-  - **Base Case:** The trivially solvable smallest state from which the recurrence builds upward; equivalent to initial conditions in recursive equations.
-  - **Principle of Optimality:** Bellman's fundamental theorem: any truncation of an optimal plan is itself optimal for the corresponding subproblem. The necessary and sufficient condition for DP applicability.
-  - **Pseudo-polynomial Complexity:** Complexity that is polynomial in the numeric values of input parameters (e.g., O(n·W) for Knapsack) but exponential in the binary encoding length of those parameters; technically not polynomial but practically efficient for small parameter values.
-  - **Approximate Dynamic Programming (ADP):** DP with function approximation (typically neural networks) for the value function, used when state spaces are too large for exact tabulation. Encompasses all major deep RL algorithms.
-  - **Value Iteration:** The algorithm that repeatedly applies the Bellman optimality operator T*: V ← max_a [R(s,a) + γ Σ P V] until convergence to the unique fixed point V*. Convergence guaranteed by the contraction-mapping property of T* under γ < 1.
-  - **Policy Iteration:** The two-phase algorithm alternating between exact policy evaluation (solving the linear system (I - γP_π)V_π = R_π) and greedy policy improvement (π' ← greedy(V_π)) until convergence to the optimal policy π*. Finitely many policies guarantee finite-step convergence.
-  - **Temporal Difference (TD) Learning:** Model-free approximate DP; updates V(s) toward the Bellman target R + γV(s') using only sampled experience, without access to P or R. Foundation of Q-learning, SARSA, and deep RL.
-  - **Bellman Residual:** The quantity V(s) - max_a[R(s,a) + γ Σ P(s'|s,a) V(s')]; measures how far a value function V is from satisfying the Bellman equation. DQN trains by minimising the mean-squared Bellman residual.
-  - **Contraction Mapping:** The Bellman optimality operator T* is a contraction mapping in the supremum norm with contraction factor γ; Banach's fixed-point theorem guarantees the existence of a unique fixed point V* and the convergence of repeated application T*V → V* from any initial V.
-  - **Interval DP:** DP variant where states represent intervals [i,j] of the input; recurrence splits the interval at a midpoint k. Used in matrix chain multiplication (O(n^3)), optimal triangulation (O(n^3)), and CYK parsing (O(n^3|G|)).
-  - **Bitmask DP:** DP variant where the state includes a bitmask encoding subset membership; enables exact TSP in O(n^2 · 2^n) via Held-Karp, vastly better than O(n!) enumeration.
-  - **Differential Dynamic Programming (DDP):** Trajectory optimisation via second-order expansion of the value function around a nominal trajectory; iteratively computes a locally optimal feedback controller. Core algorithm in modern robotic motion planning and MPC.
 
-- ### Provenance
+- **Optimal Substructure:** The property that an optimal solution to the full problem contains optimal solutions to its constituent subproblems; the necessary condition for DP applicability. Contrast with problems like the Longest Simple Path that lack this property.
+- **Overlapping Subproblems:** The property that the same subproblem recurs in multiple branches of the recursion tree; the property that makes caching worthwhile and distinguishes DP from divide-and-conquer (where subproblems do not overlap).
+- **Memoisation:** Top-down caching of subproblem results keyed by their arguments, implemented via a hash table or multidimensional array. Python's functools.lru_cache and @functools.cache decorators automate memoisation.
+- **Tabulation:** Bottom-up iterative filling of a table of subproblem results in topological dependency order, avoiding recursive call overhead and stack depth limitations.
+- **State:** A compact representation encoding exactly the information required to solve a subproblem without reference to how it was reached. Getting the state right is the key design decision in any DP solution.
+- **Recurrence Relation:** The formula expressing a state's value in terms of strictly smaller or simpler states; the definitional equation of a DP algorithm. Must define a valid (acyclic) computation order.
+- **Base Case:** The trivially solvable smallest state from which the recurrence builds upward; equivalent to initial conditions in recursive equations.
+- **Principle of Optimality:** Bellman's fundamental theorem: any truncation of an optimal plan is itself optimal for the corresponding subproblem. The necessary and sufficient condition for DP applicability.
+- **Pseudo-polynomial Complexity:** Complexity that is polynomial in the numeric values of input parameters (e.g., O(n·W) for Knapsack) but exponential in the binary encoding length of those parameters; technically not polynomial but practically efficient for small parameter values.
+- **Approximate Dynamic Programming (ADP):** DP with function approximation (typically neural networks) for the value function, used when state spaces are too large for exact tabulation. Encompasses all major deep RL algorithms.
+- **Value Iteration:** The algorithm that repeatedly applies the Bellman optimality operator T*: V ← max_a [R(s,a) + γ Σ P V] until convergence to the unique fixed point V*. Convergence guaranteed by the contraction-mapping property of T* under γ < 1.
+- **Policy Iteration:** The two-phase algorithm alternating between exact policy evaluation (solving the linear system (I - γP_π)V_π = R_π) and greedy policy improvement (π' ← greedy(V_π)) until convergence to the optimal policy π*. Finitely many policies guarantee finite-step convergence.
+- **Temporal Difference (TD) Learning:** Model-free approximate DP; updates V(s) toward the Bellman target R + γV(s') using only sampled experience, without access to P or R. Foundation of Q-learning, SARSA, and deep RL.
+- **Bellman Residual:** The quantity V(s) - max_a[R(s,a) + γ Σ P(s'|s,a) V(s')]; measures how far a value function V is from satisfying the Bellman equation. DQN trains by minimising the mean-squared Bellman residual.
+- **Contraction Mapping:** The Bellman optimality operator T* is a contraction mapping in the supremum norm with contraction factor γ; Banach's fixed-point theorem guarantees the existence of a unique fixed point V* and the convergence of repeated application T*V → V* from any initial V.
+- **Interval DP:** DP variant where states represent intervals [i,j] of the input; recurrence splits the interval at a midpoint k. Used in matrix chain multiplication (O(n^3)), optimal triangulation (O(n^3)), and CYK parsing (O(n^3|G|)).
+- **Bitmask DP:** DP variant where the state includes a bitmask encoding subset membership; enables exact TSP in O(n^2 · 2^n) via Held-Karp, vastly better than O(n!) enumeration.
+- **Differential Dynamic Programming (DDP):** Trajectory optimisation via second-order expansion of the value function around a nominal trajectory; iteratively computes a locally optimal feedback controller. Core algorithm in modern robotic motion planning and MPC.
+
+### Provenance
 

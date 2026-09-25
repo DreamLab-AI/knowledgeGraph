@@ -1,139 +1,143 @@
-
 Answer.AI is an applied artificial intelligence research and development laboratory co-founded in December 2023 by Jeremy Howard and Eric Ries, whose mission is to build practical, openly shared tools and techniques that make modern machine learning accessible and useful to the widest possible audience. Distinct from capability-frontier laboratories, Answer.AI explicitly does not develop new foundation models or pursue artificial general intelligence; instead it focuses on taking existing models and determining what maximally practical applications can be built with them, continuing the fast.ai tradition of pragmatic, accessibility-first research. The lab operates as a small, fully remote team of deep-technology generalists and releases open-source libraries, frameworks, and educational resources covering efficient fine-tuning, parameter-efficient adaptation, distributed training on consumer hardware, and developer ergonomics for building AI-powered applications.
 
-- ### Semantic Classification
+### Semantic Classification
 
-- ### Content
-  ## Compositional Relationships (Components)
-    ```
-    SubClassOf(ai:AnswerAI
-      ObjectSomeValuesFrom(ai:hasPart ai:FastAI))
-    SubClassOf(ai:AnswerAI
-      ObjectSomeValuesFrom(ai:hasPart ai:FastHTML))
-    SubClassOf(ai:AnswerAI
-      ObjectSomeValuesFrom(ai:hasPart ai:FSDPQLoRA))
-    SubClassOf(ai:AnswerAI
-      ObjectSomeValuesFrom(ai:hasPart ai:Solveit))
-    SubClassOf(ai:AnswerAI
-      ObjectSomeValuesFrom(ai:hasPart ai:OpenSourceLibraryOutput))
-    SubClassOf(ai:AnswerAI
-      ObjectSomeValuesFrom(ai:hasPart ai:PracticalResearchAgenda))
-    SubClassOf(ai:AnswerAI
-      ObjectSomeValuesFrom(ai:hasPart ai:EducationalContent))
-    ```
-  ## Dependency Relationships
-    ```
-    SubClassOf(ai:AnswerAI
-      ObjectSomeValuesFrom(ai:requires ai:FoundationModel))
-    SubClassOf(ai:AnswerAI
-      ObjectSomeValuesFrom(ai:requires ai:LargeLanguageModels))
-    SubClassOf(ai:AnswerAI
-      ObjectSomeValuesFrom(ai:requires ai:PythonProgrammingLanguage))
-    SubClassOf(ai:AnswerAI
-      ObjectSomeValuesFrom(ai:dependsOn ai:DeepLearning))
-    SubClassOf(ai:AnswerAI
-      ObjectSomeValuesFrom(ai:dependsOn ai:TransferLearning))
-    SubClassOf(ai:AnswerAI
-      ObjectSomeValuesFrom(ai:dependsOn ai:MachineLearningFramework))
-    SubClassOf(ai:AnswerAI
-      ObjectSomeValuesFrom(ai:dependsOn ai:DeepLearningFramework))
-    ```
-  ## Capability Relationships
-    ```
-    SubClassOf(ai:AnswerAI
-      ObjectSomeValuesFrom(ai:enables ai:AppliedMachineLearning))
-    SubClassOf(ai:AnswerAI
-      ObjectSomeValuesFrom(ai:enables ai:AgenticAI))
-    SubClassOf(ai:AnswerAI
-      ObjectSomeValuesFrom(ai:enables ai:InstructionTuning))
-    SubClassOf(ai:AnswerAI
-      ObjectSomeValuesFrom(ai:enables ai:EducationAndAI))
-    SubClassOf(ai:AnswerAI
-      ObjectSomeValuesFrom(ai:supports ai:OpenSourceAI))
-    SubClassOf(ai:AnswerAI
-      ObjectSomeValuesFrom(ai:supports ai:MachineLearningInfrastructure))
-    ```
-  ## Implementation Relationships
-    ```
-    SubClassOf(ai:AnswerAI
-      ObjectSomeValuesFrom(ai:implements ai:ParameterEfficientFineTuning))
-    SubClassOf(ai:AnswerAI
-      ObjectSomeValuesFrom(ai:implements ai:DistributedTraining))
-    SubClassOf(ai:AnswerAI
-      ObjectSomeValuesFrom(ai:uses ai:LoRAFineTuning))
-    SubClassOf(ai:AnswerAI
-      ObjectSomeValuesFrom(ai:uses ai:Quantisation))
-    SubClassOf(ai:AnswerAI
-      ObjectSomeValuesFrom(ai:uses ai:FoundationModel))
-    ```
-  ## Reduction Relationships
-    ```
-    SubClassOf(ai:AnswerAI
-      ObjectSomeValuesFrom(ai:reducesTo ai:AppliedMLResearchLab))
-    SubClassOf(ai:AnswerAI
-      ObjectSomeValuesFrom(ai:reducesTo ai:OpenSourceLibrary))
-    SubClassOf(ai:AnswerAI
-      ObjectSomeValuesFrom(ai:reducesTo ai:PracticalFineTuningRecipe))
-    SubClassOf(ai:AnswerAI
-      ObjectSomeValuesFrom(ai:reducesTo ai:AccessibleAITooling))
-    SubClassOf(ai:AnswerAI
-      ObjectSomeValuesFrom(ai:relatedTo ai:FastAI))
-    SubClassOf(ai:AnswerAI
-      ObjectSomeValuesFrom(ai:relatedTo ai:DirectPreferenceOptimisation))
-    SubClassOf(ai:AnswerAI
-      ObjectSomeValuesFrom(ai:relatedTo ai:ReinforcementLearningFromHumanFeedback))
-    SubClassOf(ai:AnswerAI
-      ObjectSomeValuesFrom(ai:contrastsWith ai:FrontierAILaboratory))
-    SubClassOf(ai:AnswerAI
-      ObjectSomeValuesFrom(ai:contrastsWith ai:OpenAIResearchOrganisation))
-    SubClassOf(ai:AnswerAI
-      ObjectSomeValuesFrom(ai:bridgesTo ai:DeepLearning))
-    SubClassOf(ai:AnswerAI
-      ObjectSomeValuesFrom(ai:bridgesTo ai:EducationAndAI))
-    SubClassOf(ai:AnswerAI
-      ObjectSomeValuesFrom(ai:bridgesTo ai:MachineLearningInfrastructure))
-    ```
+### Content
 
-  ## About
+## Compositional Relationships (Components)
+  ```
+  SubClassOf(ai:AnswerAI
+    ObjectSomeValuesFrom(ai:hasPart ai:FastAI))
+  SubClassOf(ai:AnswerAI
+    ObjectSomeValuesFrom(ai:hasPart ai:FastHTML))
+  SubClassOf(ai:AnswerAI
+    ObjectSomeValuesFrom(ai:hasPart ai:FSDPQLoRA))
+  SubClassOf(ai:AnswerAI
+    ObjectSomeValuesFrom(ai:hasPart ai:Solveit))
+  SubClassOf(ai:AnswerAI
+    ObjectSomeValuesFrom(ai:hasPart ai:OpenSourceLibraryOutput))
+  SubClassOf(ai:AnswerAI
+    ObjectSomeValuesFrom(ai:hasPart ai:PracticalResearchAgenda))
+  SubClassOf(ai:AnswerAI
+    ObjectSomeValuesFrom(ai:hasPart ai:EducationalContent))
+  ```
+## Dependency Relationships
+  ```
+  SubClassOf(ai:AnswerAI
+    ObjectSomeValuesFrom(ai:requires ai:FoundationModel))
+  SubClassOf(ai:AnswerAI
+    ObjectSomeValuesFrom(ai:requires ai:LargeLanguageModels))
+  SubClassOf(ai:AnswerAI
+    ObjectSomeValuesFrom(ai:requires ai:PythonProgrammingLanguage))
+  SubClassOf(ai:AnswerAI
+    ObjectSomeValuesFrom(ai:dependsOn ai:DeepLearning))
+  SubClassOf(ai:AnswerAI
+    ObjectSomeValuesFrom(ai:dependsOn ai:TransferLearning))
+  SubClassOf(ai:AnswerAI
+    ObjectSomeValuesFrom(ai:dependsOn ai:MachineLearningFramework))
+  SubClassOf(ai:AnswerAI
+    ObjectSomeValuesFrom(ai:dependsOn ai:DeepLearningFramework))
+  ```
+## Capability Relationships
+  ```
+  SubClassOf(ai:AnswerAI
+    ObjectSomeValuesFrom(ai:enables ai:AppliedMachineLearning))
+  SubClassOf(ai:AnswerAI
+    ObjectSomeValuesFrom(ai:enables ai:AgenticAI))
+  SubClassOf(ai:AnswerAI
+    ObjectSomeValuesFrom(ai:enables ai:InstructionTuning))
+  SubClassOf(ai:AnswerAI
+    ObjectSomeValuesFrom(ai:enables ai:EducationAndAI))
+  SubClassOf(ai:AnswerAI
+    ObjectSomeValuesFrom(ai:supports ai:OpenSourceAI))
+  SubClassOf(ai:AnswerAI
+    ObjectSomeValuesFrom(ai:supports ai:MachineLearningInfrastructure))
+  ```
+## Implementation Relationships
+  ```
+  SubClassOf(ai:AnswerAI
+    ObjectSomeValuesFrom(ai:implements ai:ParameterEfficientFineTuning))
+  SubClassOf(ai:AnswerAI
+    ObjectSomeValuesFrom(ai:implements ai:DistributedTraining))
+  SubClassOf(ai:AnswerAI
+    ObjectSomeValuesFrom(ai:uses ai:LoRAFineTuning))
+  SubClassOf(ai:AnswerAI
+    ObjectSomeValuesFrom(ai:uses ai:Quantisation))
+  SubClassOf(ai:AnswerAI
+    ObjectSomeValuesFrom(ai:uses ai:FoundationModel))
+  ```
+## Reduction Relationships
+  ```
+  SubClassOf(ai:AnswerAI
+    ObjectSomeValuesFrom(ai:reducesTo ai:AppliedMLResearchLab))
+  SubClassOf(ai:AnswerAI
+    ObjectSomeValuesFrom(ai:reducesTo ai:OpenSourceLibrary))
+  SubClassOf(ai:AnswerAI
+    ObjectSomeValuesFrom(ai:reducesTo ai:PracticalFineTuningRecipe))
+  SubClassOf(ai:AnswerAI
+    ObjectSomeValuesFrom(ai:reducesTo ai:AccessibleAITooling))
+  SubClassOf(ai:AnswerAI
+    ObjectSomeValuesFrom(ai:relatedTo ai:FastAI))
+  SubClassOf(ai:AnswerAI
+    ObjectSomeValuesFrom(ai:relatedTo ai:DirectPreferenceOptimisation))
+  SubClassOf(ai:AnswerAI
+    ObjectSomeValuesFrom(ai:relatedTo ai:ReinforcementLearningFromHumanFeedback))
+  SubClassOf(ai:AnswerAI
+    ObjectSomeValuesFrom(ai:contrastsWith ai:FrontierAILaboratory))
+  SubClassOf(ai:AnswerAI
+    ObjectSomeValuesFrom(ai:contrastsWith ai:OpenAIResearchOrganisation))
+  SubClassOf(ai:AnswerAI
+    ObjectSomeValuesFrom(ai:bridgesTo ai:DeepLearning))
+  SubClassOf(ai:AnswerAI
+    ObjectSomeValuesFrom(ai:bridgesTo ai:EducationAndAI))
+  SubClassOf(ai:AnswerAI
+    ObjectSomeValuesFrom(ai:bridgesTo ai:MachineLearningInfrastructure))
+  ```
 
-  ### Founding Context and Institutional Niche
+## About
 
-  Answer.AI was founded in December 2023 at a specific moment in the AI development landscape — immediately following the public release of GPT-4 and the explosive growth of large language model adoption — when the gap between frontier model capability and practitioner accessibility had become sharper than at any previous point in the history of deep learning. Frontier models with GPT-4-level capability were available only through commercial APIs at per-token pricing structures that made high-volume domain-specific applications prohibitively expensive; fine-tuning those models was not supported; and open-weight alternatives were only beginning to mature to the point of practical deployment utility. Answer.AI positioned itself to address this gap: to take the research results on efficient fine-tuning (LoRA, QLoRA, FSDP) that were beginning to appear in the academic literature and translate them into accessible, documented, reproducible pipelines for practitioners without ML systems expertise.
+### Founding Context and Institutional Niche
 
-  The lab's structure as a "new old kind of R&D lab" — as Howard described it in the founding manifesto — reflects a specific historical analysis. Howard and Ries identified Bell Labs (1925-1984) and Xerox PARC (1970-) as exemplars of a model in which a small group of exceptional researchers, free from the pressure of quarterly commercial targets and publication metrics, could produce technology with transformative practical impact while publishing openly. The key enabling condition for this model, Howard and Ries argued, was sufficient funding independence to operate on a multi-year horizon without product-revenue pressure. Decibel VC's $10 million investment provides this independence for Answer.AI's initial phase, enabling it to release open-source work without requiring a revenue model for each project.
+Answer.AI was founded in December 2023 at a specific moment in the AI development landscape — immediately following the public release of GPT-4 and the explosive growth of large language model adoption — when the gap between frontier model capability and practitioner accessibility had become sharper than at any previous point in the history of deep learning. Frontier models with GPT-4-level capability were available only through commercial APIs at per-token pricing structures that made high-volume domain-specific applications prohibitively expensive; fine-tuning those models was not supported; and open-weight alternatives were only beginning to mature to the point of practical deployment utility. Answer.AI positioned itself to address this gap: to take the research results on efficient fine-tuning (LoRA, QLoRA, FSDP) that were beginning to appear in the academic literature and translate them into accessible, documented, reproducible pipelines for practitioners without ML systems expertise.
 
-  Answer.AI occupies a distinctive position in the landscape of artificial intelligence organisations. Founded in December 2023, it is neither a frontier capability laboratory developing new [[Foundation Model]]s at enormous computational scale, nor a traditional academic research group constrained by publication timelines. Instead, it is explicitly modelled on what its founders describe as "a new old kind of R&D lab": one that takes existing scientific breakthroughs and systematically develops practical applications and enabling tooling that would otherwise remain confined to the research community. The lab acknowledges historical antecedents including Bell Labs and Xerox PARC, which similarly bridged the gap between foundational scientific results and deployable technology — though Answer.AI operates at a fraction of the scale, relying on a small team of generalists rather than large multidisciplinary divisions.
+The lab's structure as a "new old kind of R&D lab" — as Howard described it in the founding manifesto — reflects a specific historical analysis. Howard and Ries identified Bell Labs (1925-1984) and Xerox PARC (1970-) as exemplars of a model in which a small group of exceptional researchers, free from the pressure of quarterly commercial targets and publication metrics, could produce technology with transformative practical impact while publishing openly. The key enabling condition for this model, Howard and Ries argued, was sufficient funding independence to operate on a multi-year horizon without product-revenue pressure. Decibel VC's $10 million investment provides this independence for Answer.AI's initial phase, enabling it to release open-source work without requiring a revenue model for each project.
 
-  Jeremy Howard, the lab's founding chief executive officer, brings a specific intellectual programme to Answer.AI that has evolved across three decades of work at the intersection of machine learning, data science, and software engineering. Howard co-founded [[fast.ai]] in 2016 with Rachel Thomas, building the most widely used practical deep learning course in the world (Practical Deep Learning for Coders) and producing influential [[Transfer Learning]] methods including ULMFiT — the universal language model fine-tuning approach that directly prefigured the now-dominant pattern of pre-training a large [[Language Model]] and then adapting it to specific tasks via fine-tuning. Howard also created nbdev, a literate programming system for [[Python Programming Language]] that enables notebook-based software development with automatic documentation and testing generation. At Kaggle, where Howard served as president and chief scientist, he was a leading competitive data scientist who demonstrated that careful application of existing techniques on scarce hardware could match or outperform approaches requiring vast computational resources — a philosophy that carries directly into Answer.AI's research agenda. Eric Ries, the lab's founding director, contributed the Lean Startup methodology to technology entrepreneurship and created the Long-Term Stock Exchange, a stock exchange designed to reward long-term thinking over short-term quarterly optimisation; at Answer.AI, Ries contributes operational and organisational thinking grounded in building institutions that produce durable value rather than speculative demonstrations.
+Answer.AI occupies a distinctive position in the landscape of artificial intelligence organisations. Founded in December 2023, it is neither a frontier capability laboratory developing new [[Foundation Model]]s at enormous computational scale, nor a traditional academic research group constrained by publication timelines. Instead, it is explicitly modelled on what its founders describe as "a new old kind of R&D lab": one that takes existing scientific breakthroughs and systematically develops practical applications and enabling tooling that would otherwise remain confined to the research community. The lab acknowledges historical antecedents including Bell Labs and Xerox PARC, which similarly bridged the gap between foundational scientific results and deployable technology — though Answer.AI operates at a fraction of the scale, relying on a small team of generalists rather than large multidisciplinary divisions.
 
-  The lab's technical programme as of 2025–2026 centres on three interconnected problems. First, efficient fine-tuning and adaptation of large models: how to take a 7B, 13B, or 70B parameter pre-trained [[Foundation Model]] and adapt it to a specific domain or task using [[Parameter-Efficient Fine-Tuning]] techniques such as [[LoRA Fine-Tuning]], [[Quantisation]], and Fully Sharded Data Parallel (FSDP) training, achieving results competitive with full fine-tuning while requiring only consumer-grade GPU hardware. The lab released FSDP+QLoRA, a system enabling training of 70B parameter models on dual NVIDIA 4090 GPUs — a capability previously requiring expensive cluster infrastructure, making it accessible to individual researchers and small organisations. Second, web application frameworks optimised for AI-native development: FastHTML, Answer.AI's primary open-source project outside the fine-tuning domain, is a [[Python Programming Language]] web framework designed for building applications in which AI inference is a core component of the interaction model, emphasising minimal code, tight integration with Python's data science ecosystem, and rapid iteration. Third, AI-assisted learning and productivity: the Solveit system, launched in October 2025, provides AI-assisted coding and problem-solving that emphasises learning and skill development rather than simply generating opaque solutions — reflecting Howard's long-standing concern that heavy reliance on AI-generated code without understanding undermines practitioner competence.
+Jeremy Howard, the lab's founding chief executive officer, brings a specific intellectual programme to Answer.AI that has evolved across three decades of work at the intersection of machine learning, data science, and software engineering. Howard co-founded [[fast.ai]] in 2016 with Rachel Thomas, building the most widely used practical deep learning course in the world (Practical Deep Learning for Coders) and producing influential [[Transfer Learning]] methods including ULMFiT — the universal language model fine-tuning approach that directly prefigured the now-dominant pattern of pre-training a large [[Language Model]] and then adapting it to specific tasks via fine-tuning. Howard also created nbdev, a literate programming system for [[Python Programming Language]] that enables notebook-based software development with automatic documentation and testing generation. At Kaggle, where Howard served as president and chief scientist, he was a leading competitive data scientist who demonstrated that careful application of existing techniques on scarce hardware could match or outperform approaches requiring vast computational resources — a philosophy that carries directly into Answer.AI's research agenda. Eric Ries, the lab's founding director, contributed the Lean Startup methodology to technology entrepreneurship and created the Long-Term Stock Exchange, a stock exchange designed to reward long-term thinking over short-term quarterly optimisation; at Answer.AI, Ries contributes operational and organisational thinking grounded in building institutions that produce durable value rather than speculative demonstrations.
 
-  ## Components / Architecture
+The lab's technical programme as of 2025–2026 centres on three interconnected problems. First, efficient fine-tuning and adaptation of large models: how to take a 7B, 13B, or 70B parameter pre-trained [[Foundation Model]] and adapt it to a specific domain or task using [[Parameter-Efficient Fine-Tuning]] techniques such as [[LoRA Fine-Tuning]], [[Quantisation]], and Fully Sharded Data Parallel (FSDP) training, achieving results competitive with full fine-tuning while requiring only consumer-grade GPU hardware. The lab released FSDP+QLoRA, a system enabling training of 70B parameter models on dual NVIDIA 4090 GPUs — a capability previously requiring expensive cluster infrastructure, making it accessible to individual researchers and small organisations. Second, web application frameworks optimised for AI-native development: FastHTML, Answer.AI's primary open-source project outside the fine-tuning domain, is a [[Python Programming Language]] web framework designed for building applications in which AI inference is a core component of the interaction model, emphasising minimal code, tight integration with Python's data science ecosystem, and rapid iteration. Third, AI-assisted learning and productivity: the Solveit system, launched in October 2025, provides AI-assisted coding and problem-solving that emphasises learning and skill development rather than simply generating opaque solutions — reflecting Howard's long-standing concern that heavy reliance on AI-generated code without understanding undermines practitioner competence.
 
-  Answer.AI's output organises around four primary product and research streams:
+## Components / Architecture
 
-  **FastHTML (2024–present)**
-  - A Python web framework designed for rapid development of AI-integrated web applications, positioned as an alternative to JavaScript-heavy stacks for Python AI practitioners.
-  - Applications are written entirely in Python, enabling tight integration with PyTorch, NumPy, and the broader data science ecosystem without a context switch to JavaScript.
-  - MonsterUI extends FastHTML with Tailwind CSS components for building production-quality user interfaces with minimal markup.
-  - The GitHub repository has accumulated over 6,900 commits in the first year, indicating rapid development velocity by a small team.
-  - Positioned as the web layer for the Answer.AI development philosophy: lightweight, Pythonic, composable, and designed to ship working software quickly.
+Answer.AI's output organises around four primary product and research streams:
+
+**FastHTML (2024–present)**
+
+- A Python web framework designed for rapid development of AI-integrated web applications, positioned as an alternative to JavaScript-heavy stacks for Python AI practitioners.
+- Applications are written entirely in Python, enabling tight integration with PyTorch, NumPy, and the broader data science ecosystem without a context switch to JavaScript.
+- MonsterUI extends FastHTML with Tailwind CSS components for building production-quality user interfaces with minimal markup.
+- The GitHub repository has accumulated over 6,900 commits in the first year, indicating rapid development velocity by a small team.
+- Positioned as the web layer for the Answer.AI development philosophy: lightweight, Pythonic, composable, and designed to ship working software quickly.
 
   **FSDP+QLoRA (2024)**
-  - A system for distributed fine-tuning of large language models combining Fully Sharded Data Parallel (FSDP) training with Quantised Low-Rank Adaptation (QLoRA), enabling 70B-parameter model fine-tuning on two consumer GPUs.
-  - Addresses the primary barrier to entry for fine-tuning state-of-the-art open-weight models: the GPU memory requirement, which this system reduces by approximately 8–16× compared to standard full fine-tuning through quantisation and gradient checkpointing.
-  - Published as open source via the AnswerDotAI GitHub organisation, with detailed documentation and reproducible training recipes, consistent with the lab's accessible-research philosophy.
-  - Enables organisations with modest GPU budgets — including universities, small enterprises, and individual researchers — to adapt frontier-scale models to domain-specific tasks that would otherwise require cloud GPU spend of tens of thousands of dollars.
+
+- A system for distributed fine-tuning of large language models combining Fully Sharded Data Parallel (FSDP) training with Quantised Low-Rank Adaptation (QLoRA), enabling 70B-parameter model fine-tuning on two consumer GPUs.
+- Addresses the primary barrier to entry for fine-tuning state-of-the-art open-weight models: the GPU memory requirement, which this system reduces by approximately 8–16× compared to standard full fine-tuning through quantisation and gradient checkpointing.
+- Published as open source via the AnswerDotAI GitHub organisation, with detailed documentation and reproducible training recipes, consistent with the lab's accessible-research philosophy.
+- Enables organisations with modest GPU budgets — including universities, small enterprises, and individual researchers — to adapt frontier-scale models to domain-specific tasks that would otherwise require cloud GPU spend of tens of thousands of dollars.
 
   **Solveit (2025–present)**
-  - A purpose-built AI-assisted coding and problem-solving tool developed initially for an Advent of Code programming course and subsequently generalised as a productive AI coding companion that preserves and develops practitioner skills rather than substituting for them.
-  - Embodies Howard's "solveit method": using AI assistance as a learning scaffold that helps users understand solutions rather than consuming opaque generated code without comprehension.
-  - Reflects Answer.AI's position on [[Agentic AI]] generally: sceptical of maximally autonomous agents that displace human agency, in favour of tools that augment practitioner capability while preserving the growth of understanding.
+
+- A purpose-built AI-assisted coding and problem-solving tool developed initially for an Advent of Code programming course and subsequently generalised as a productive AI coding companion that preserves and develops practitioner skills rather than substituting for them.
+- Embodies Howard's "solveit method": using AI assistance as a learning scaffold that helps users understand solutions rather than consuming opaque generated code without comprehension.
+- Reflects Answer.AI's position on [[Agentic AI]] generally: sceptical of maximally autonomous agents that displace human agency, in favour of tools that augment practitioner capability while preserving the growth of understanding.
 
   **Research publications and nbdev ecosystem**
-  - Answer.AI maintains active research publication on efficient fine-tuning, including investigations of QLoRA, QDoRA (quantised weight-decomposed low-rank adaptation), and updated BERT variants for 2025 workloads.
-  - nbdev, developed by Howard prior to Answer.AI, continues to evolve as a notebook-first software development system that reduces friction between exploratory data science and production-quality library development.
-  - The AnswerDotAI GitHub organisation hosts 199+ repositories, spanning fastasyncpg (async PostgreSQL utilities), fastllm (LLM serving utilities), fastcflare (Cloudflare integration), llms-txt (structured context for LLMs), and dozens of experimental projects demonstrating FastHTML and fine-tuning techniques.
+
+- Answer.AI maintains active research publication on efficient fine-tuning, including investigations of QLoRA, QDoRA (quantised weight-decomposed low-rank adaptation), and updated BERT variants for 2025 workloads.
+- nbdev, developed by Howard prior to Answer.AI, continues to evolve as a notebook-first software development system that reduces friction between exploratory data science and production-quality library development.
+- The AnswerDotAI GitHub organisation hosts 199+ repositories, spanning fastasyncpg (async PostgreSQL utilities), fastllm (LLM serving utilities), fastcflare (Cloudflare integration), llms-txt (structured context for LLMs), and dozens of experimental projects demonstrating FastHTML and fine-tuning techniques.
 
   ## Technical Architecture of Key Systems
 
@@ -155,10 +159,10 @@ Answer.AI is an applied artificial intelligence research and development laborat
 
   FastHTML is built on a small number of design decisions that differentiate it from mainstream Python web frameworks (Flask, Django, FastAPI):
 
-  - **HTMX-native**: HTML responses are generated server-side and partial updates are handled by HTMX (a JavaScript library that enables dynamic HTML updates without full-page reloads), eliminating the need for a separate client-side JavaScript framework. This matches the working model of data scientists familiar with Python but not React or Vue.
-  - **Python-as-HTML**: HTML elements are represented as Python function calls (e.g. `Div(H1("Title"), P("Content"))`) rather than templating strings, enabling Python's IDE support (autocomplete, type checking) to apply to HTML authoring. The `ft` (FastHTML tags) module provides Python constructors for every HTML element.
-  - **Starlette backend**: FastHTML is built on Starlette, providing ASGI compatibility, WebSocket support, and standard Python async/await syntax for request handling.
-  - **Minimal dependency footprint**: the core FastHTML package has a small dependency tree, reducing deployment complexity and cold-start time in serverless environments.
+- **HTMX-native**: HTML responses are generated server-side and partial updates are handled by HTMX (a JavaScript library that enables dynamic HTML updates without full-page reloads), eliminating the need for a separate client-side JavaScript framework. This matches the working model of data scientists familiar with Python but not React or Vue.
+- **Python-as-HTML**: HTML elements are represented as Python function calls (e.g. `Div(H1("Title"), P("Content"))`) rather than templating strings, enabling Python's IDE support (autocomplete, type checking) to apply to HTML authoring. The `ft` (FastHTML tags) module provides Python constructors for every HTML element.
+- **Starlette backend**: FastHTML is built on Starlette, providing ASGI compatibility, WebSocket support, and standard Python async/await syntax for request handling.
+- **Minimal dependency footprint**: the core FastHTML package has a small dependency tree, reducing deployment complexity and cold-start time in serverless environments.
 
   This design philosophy reflects a deliberate choice to prioritise Python data scientists' productivity over the runtime performance optimisations that motivate the JavaScript SPA pattern — consistent with Answer.AI's broader positioning as tooling optimised for practitioner-developers rather than web engineering specialists.
 
@@ -298,5 +302,5 @@ Answer.AI is an applied artificial intelligence research and development laborat
   26. Good Science Project (2024). "Lessons Answer.AI can learn from history's greatest R&D labs." https://goodscienceproject.org/articles/lessons-answer-ai-can-learn-from-historys-greatest-rd-labs. (Analysis of Answer.AI's institutional model relative to Bell Labs and Xerox PARC.)
   27. Futurum Group (2023). "Answer.AI R&D Lab Aims to Bring Practical AI Products." https://futurumgroup.com/insights/answer-ai-rd-lab-aims-to-bring-practical-ai-products/. (Industry analysis of Answer.AI's founding.)
 
-- ### Provenance
+### Provenance
 

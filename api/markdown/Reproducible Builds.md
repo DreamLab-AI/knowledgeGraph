@@ -1,23 +1,29 @@
-
 Reproducible builds are a software build practice in which compiling the same source code under the same recorded conditions always yields bit-for-bit identical artifacts. By removing sources of non-determinism such as timestamps, build paths, and ordering, independent parties can verify that a published binary corresponds exactly to its claimed source. This independent verifiability strengthens software supply-chain security and trust in distributed binaries.
 
 - [[Reproducible Builds]] ensure that compiling the same source under the same recorded conditions always yields bit-for-bit identical artifacts.
 - By eliminating non-determinism they let independent parties perform [[Verification]] that a binary matches its source, strengthening [[Trust]].
 - The practice is a pillar of [[Supply Chain Security]] and the [[Software Supply Chain]].
-- ### Overview
+
+### Overview
+
 - A build is reproducible when any party, given the same source, dependencies, and a documented build environment, can regenerate the exact same output. Achieving this requires removing non-deterministic inputs such as embedded timestamps, absolute build paths, locale settings, and non-stable file or symbol ordering.
 - The motivation is verifiable trust. Rather than trusting a single build server or publisher, downstream users and auditors can rebuild the software themselves and compare cryptographic hashes. If the hashes match, the binary provably corresponds to the audited source, closing a major supply-chain attack vector where compromised build infrastructure injects malicious code.
 - Reproducible builds complement provenance and attestation efforts: provenance records how and from what an artifact was built, while reproducibility lets anyone independently confirm those claims. Content-addressed storage and hashing provide the comparison backbone, and continuous integration systems automate rebuild-and-compare checks.
-- ### Mechanisms
+
+### Mechanisms
+
 - Determinism control: normalising timestamps, paths, environment, and ordering so output is invariant.
 - Recorded build environment: pinning toolchain and dependency versions to make rebuilds faithful.
 - Hash comparison: using cryptographic digests to confirm two builds are byte-identical.
 - Independent rebuild: allowing third parties to regenerate and verify artifacts.
 - Automated verification: integrating rebuild-and-compare steps into CI pipelines.
-- ### Applications
+
+### Applications
+
 - Verifying that distributed binaries match audited source in the [[Software Supply Chain]].
 - Producing trustworthy [[Attestation]] and [[Provenance]] records for release artifacts.
 - Detecting tampering in build infrastructure via [[Hash Function]] comparison.
 - Enabling deterministic [[Caching]] and rebuilds within [[Continuous Integration]] systems.
-- ### Provenance
+
+### Provenance
 

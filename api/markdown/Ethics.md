@@ -1,102 +1,106 @@
-
 Ethics is the systematic study of what is right, good and obligatory, and of the principles that should guide conduct. In the context of artificial intelligence it concerns how systems should be designed, deployed and governed so that their effects on people and society are beneficial, fair and accountable. AI ethics draws on long-standing moral philosophy while addressing new questions raised by autonomous and data-driven systems.
 
-- ### Semantic Classification
+### Semantic Classification
 
-- ### Content
-  ## Compositional Relationships (Components)
-      SubClassOf(ai:Ethics
-        ObjectSomeValuesFrom(ai:hasPart ai:Fairness))
-      SubClassOf(ai:Ethics
-        ObjectSomeValuesFrom(ai:hasPart ai:Accountability))
-      SubClassOf(ai:Ethics
-        ObjectSomeValuesFrom(ai:hasPart ai:Transparency))
-      SubClassOf(ai:Ethics
-        ObjectSomeValuesFrom(ai:hasPart ai:ValueAlignment))
-      SubClassOf(ai:Ethics
-        ObjectSomeValuesFrom(ai:hasPart ai:HumanOversight))
-      SubClassOf(ai:Ethics
-        ObjectSomeValuesFrom(ai:hasPart ai:EthicsPrinciples))
-  ## Dependency Relationships
-      SubClassOf(ai:Ethics
-        ObjectSomeValuesFrom(ai:requires ai:Transparency))
-      SubClassOf(ai:Ethics
-        ObjectSomeValuesFrom(ai:requires ai:Accountability))
-      SubClassOf(ai:Ethics
-        ObjectSomeValuesFrom(ai:requires ai:Governance))
-      SubClassOf(ai:Ethics
-        ObjectSomeValuesFrom(ai:requires ai:HumanOversight))
-  ## Capability Relationships
-      SubClassOf(ai:Ethics
-        ObjectSomeValuesFrom(ai:enables ai:Accountability))
-      SubClassOf(ai:Ethics
-        ObjectSomeValuesFrom(ai:enables ai:Transparency))
-      SubClassOf(ai:Ethics
-        ObjectSomeValuesFrom(ai:enables ai:Fairness))
-      SubClassOf(ai:Ethics
-        ObjectSomeValuesFrom(ai:enables ai:ResponsibleAI))
-      SubClassOf(ai:Ethics
-        ObjectSomeValuesFrom(ai:enables ai:TrustworthyAI))
-      SubClassOf(ai:Ethics
-        ObjectSomeValuesFrom(ai:enables ai:LegalCompliance))
-  ## Implementation Relationships
-      SubClassOf(ai:Ethics
-        ObjectSomeValuesFrom(ai:implements ai:EthicsPrinciples))
-      SubClassOf(ai:Ethics
-        ObjectSomeValuesFrom(ai:implements ai:OECDAIPrinciples))
-      SubClassOf(ai:Ethics
-        ObjectSomeValuesFrom(ai:implements ai:EUEthicsGuidelinesForTrustworthyAI))
-      SubClassOf(ai:Ethics
-        ObjectSomeValuesFrom(ai:implements ai:UNESCOAIEthicsRecommendation))
-  ## Reduction Relationships
-      SubClassOf(ai:Ethics
-        ObjectSomeValuesFrom(ai:reducesTo ai:MoralPhilosophy))
-      SubClassOf(ai:Ethics
-        ObjectSomeValuesFrom(ai:reducesTo ai:NormativePrinciples))
-      SubClassOf(ai:Ethics
-        ObjectSomeValuesFrom(ai:reducesTo ai:ValueAlignment))
+### Content
 
-  ## About
+## Compositional Relationships (Components)
+    SubClassOf(ai:Ethics
+      ObjectSomeValuesFrom(ai:hasPart ai:Fairness))
+    SubClassOf(ai:Ethics
+      ObjectSomeValuesFrom(ai:hasPart ai:Accountability))
+    SubClassOf(ai:Ethics
+      ObjectSomeValuesFrom(ai:hasPart ai:Transparency))
+    SubClassOf(ai:Ethics
+      ObjectSomeValuesFrom(ai:hasPart ai:ValueAlignment))
+    SubClassOf(ai:Ethics
+      ObjectSomeValuesFrom(ai:hasPart ai:HumanOversight))
+    SubClassOf(ai:Ethics
+      ObjectSomeValuesFrom(ai:hasPart ai:EthicsPrinciples))
+## Dependency Relationships
+    SubClassOf(ai:Ethics
+      ObjectSomeValuesFrom(ai:requires ai:Transparency))
+    SubClassOf(ai:Ethics
+      ObjectSomeValuesFrom(ai:requires ai:Accountability))
+    SubClassOf(ai:Ethics
+      ObjectSomeValuesFrom(ai:requires ai:Governance))
+    SubClassOf(ai:Ethics
+      ObjectSomeValuesFrom(ai:requires ai:HumanOversight))
+## Capability Relationships
+    SubClassOf(ai:Ethics
+      ObjectSomeValuesFrom(ai:enables ai:Accountability))
+    SubClassOf(ai:Ethics
+      ObjectSomeValuesFrom(ai:enables ai:Transparency))
+    SubClassOf(ai:Ethics
+      ObjectSomeValuesFrom(ai:enables ai:Fairness))
+    SubClassOf(ai:Ethics
+      ObjectSomeValuesFrom(ai:enables ai:ResponsibleAI))
+    SubClassOf(ai:Ethics
+      ObjectSomeValuesFrom(ai:enables ai:TrustworthyAI))
+    SubClassOf(ai:Ethics
+      ObjectSomeValuesFrom(ai:enables ai:LegalCompliance))
+## Implementation Relationships
+    SubClassOf(ai:Ethics
+      ObjectSomeValuesFrom(ai:implements ai:EthicsPrinciples))
+    SubClassOf(ai:Ethics
+      ObjectSomeValuesFrom(ai:implements ai:OECDAIPrinciples))
+    SubClassOf(ai:Ethics
+      ObjectSomeValuesFrom(ai:implements ai:EUEthicsGuidelinesForTrustworthyAI))
+    SubClassOf(ai:Ethics
+      ObjectSomeValuesFrom(ai:implements ai:UNESCOAIEthicsRecommendation))
+## Reduction Relationships
+    SubClassOf(ai:Ethics
+      ObjectSomeValuesFrom(ai:reducesTo ai:MoralPhilosophy))
+    SubClassOf(ai:Ethics
+      ObjectSomeValuesFrom(ai:reducesTo ai:NormativePrinciples))
+    SubClassOf(ai:Ethics
+      ObjectSomeValuesFrom(ai:reducesTo ai:ValueAlignment))
 
-  Ethics as an academic discipline traces to ancient Greek philosophy — Socrates's insistence that the examined life requires persistent questioning of values; Aristotle's systematic treatment of virtue, eudaimonia (human flourishing), and practical wisdom in the Nicomachean Ethics; and Plato's dialogues on justice, piety, and the good life. The field diversified substantially in the Enlightenment: Kant's deontological ethics grounded morality in the categorical imperative — act only according to maxims that you could will to become universal laws — providing a framework that generates absolute duties regardless of outcomes. Mill and Bentham's utilitarianism grounded morality in aggregate welfare maximisation — the greatest happiness of the greatest number — providing an explicitly consequentialist framework that has been enormously influential in economic policy and cost-benefit analysis. Rawls's contractarian framework in "A Theory of Justice" (1971) proposed principles of justice that rational agents would endorse from behind a veil of ignorance about their social position, generating principles of equal basic liberties and the difference principle (inequalities are just only if they benefit the least advantaged). These classical frameworks remain the primary theoretical tools of applied AI ethics: deontological principles ground absolute prohibitions; consequentialist frameworks structure impact assessments; Rawlsian approaches inform fairness definitions; virtue ethics increasingly informs discussions about AI character and trustworthiness.
+## About
 
-  The application of ethics to computing technologies began with the emergence of computer ethics as a distinct field in the 1980s. James Moor's seminal 1985 paper "What is Computer Ethics?" identified the distinctive ethical challenges posed by computing — the malleability of software, the logical invisibility of computation, and the lack of established policy frameworks for novel computing applications — and proposed an analytical approach that has shaped the field since. Deborah Johnson's "Computer Ethics" textbook (first edition 1985) consolidated the field, addressing privacy, intellectual property, professional responsibility, and the social implications of computing. The internet's expansion in the 1990s brought new concerns — online privacy, digital surveillance, platform power, information access — that existing ethics frameworks addressed imperfectly, motivating the development of internet ethics and information ethics as sub-disciplines.
+Ethics as an academic discipline traces to ancient Greek philosophy — Socrates's insistence that the examined life requires persistent questioning of values; Aristotle's systematic treatment of virtue, eudaimonia (human flourishing), and practical wisdom in the Nicomachean Ethics; and Plato's dialogues on justice, piety, and the good life. The field diversified substantially in the Enlightenment: Kant's deontological ethics grounded morality in the categorical imperative — act only according to maxims that you could will to become universal laws — providing a framework that generates absolute duties regardless of outcomes. Mill and Bentham's utilitarianism grounded morality in aggregate welfare maximisation — the greatest happiness of the greatest number — providing an explicitly consequentialist framework that has been enormously influential in economic policy and cost-benefit analysis. Rawls's contractarian framework in "A Theory of Justice" (1971) proposed principles of justice that rational agents would endorse from behind a veil of ignorance about their social position, generating principles of equal basic liberties and the difference principle (inequalities are just only if they benefit the least advantaged). These classical frameworks remain the primary theoretical tools of applied AI ethics: deontological principles ground absolute prohibitions; consequentialist frameworks structure impact assessments; Rawlsian approaches inform fairness definitions; virtue ethics increasingly informs discussions about AI character and trustworthiness.
 
-  AI ethics as a distinct sub-field emerged from this broader computer ethics tradition but acquired specific urgency with the deployment of machine learning systems in high-stakes decisions. The publication of the seminal "Gender Shades" study by Buolamwini and Gebru (2018) demonstrated that commercial facial recognition systems from major technology companies exhibited significantly higher error rates for darker-skinned and female faces — concrete evidence that algorithmic systems embed and amplify social biases with real distributional consequences. The ProPublica investigation into COMPAS (a criminal recidivism risk scoring system used in US courts) published in 2016 showed the system predicted higher recidivism risk for Black defendants at roughly twice the rate for white defendants with equivalent actual recidivism rates, triggering a major debate about fairness in algorithmic decision-making that directly shaped the field of algorithmic fairness. The European Parliament's adoption of the General Data Protection Regulation (GDPR) in 2016 introduced, in Article 22, a right not to be subject to solely automated decisions with significant legal or personal effects — the first major legislative instantiation of AI ethics principles in binding law. These events converged to create AI ethics as a recognised and urgent discipline with academic, industrial, and regulatory dimensions.
+The application of ethics to computing technologies began with the emergence of computer ethics as a distinct field in the 1980s. James Moor's seminal 1985 paper "What is Computer Ethics?" identified the distinctive ethical challenges posed by computing — the malleability of software, the logical invisibility of computation, and the lack of established policy frameworks for novel computing applications — and proposed an analytical approach that has shaped the field since. Deborah Johnson's "Computer Ethics" textbook (first edition 1985) consolidated the field, addressing privacy, intellectual property, professional responsibility, and the social implications of computing. The internet's expansion in the 1990s brought new concerns — online privacy, digital surveillance, platform power, information access — that existing ethics frameworks addressed imperfectly, motivating the development of internet ethics and information ethics as sub-disciplines.
 
-  The relationship between philosophical ethics and AI ethics is not one-way transmission: working through the specific challenges posed by AI — the inscrutability of large neural network decisions; the distributional nature of bias at scale; the difficulty of specifying values precisely enough for optimisation; the collective action problems in AI governance — has generated insights that feed back into moral philosophy. The specification problem (the difficulty of stating what you want precisely enough for an AI system to pursue it without gaming the specification) is a technical instantiation of the philosophical problem of expressing values, which philosophers have long recognised as irreducibly context-dependent and holistic. The debate over fairness definitions in algorithmic systems — whether fairness means equal error rates across groups, equal positive prediction rates, calibrated probability scores, individual fairness (similar individuals treated similarly), or counterfactual fairness (an individual should receive the same outcome regardless of which protected group they belong to) — has produced mathematical proofs of incompatibility between certain fairness criteria, enriching ethics with formal results that constrain possible value choices.
+AI ethics as a distinct sub-field emerged from this broader computer ethics tradition but acquired specific urgency with the deployment of machine learning systems in high-stakes decisions. The publication of the seminal "Gender Shades" study by Buolamwini and Gebru (2018) demonstrated that commercial facial recognition systems from major technology companies exhibited significantly higher error rates for darker-skinned and female faces — concrete evidence that algorithmic systems embed and amplify social biases with real distributional consequences. The ProPublica investigation into COMPAS (a criminal recidivism risk scoring system used in US courts) published in 2016 showed the system predicted higher recidivism risk for Black defendants at roughly twice the rate for white defendants with equivalent actual recidivism rates, triggering a major debate about fairness in algorithmic decision-making that directly shaped the field of algorithmic fairness. The European Parliament's adoption of the General Data Protection Regulation (GDPR) in 2016 introduced, in Article 22, a right not to be subject to solely automated decisions with significant legal or personal effects — the first major legislative instantiation of AI ethics principles in binding law. These events converged to create AI ethics as a recognised and urgent discipline with academic, industrial, and regulatory dimensions.
 
-  ## Components / Architecture
+The relationship between philosophical ethics and AI ethics is not one-way transmission: working through the specific challenges posed by AI — the inscrutability of large neural network decisions; the distributional nature of bias at scale; the difficulty of specifying values precisely enough for optimisation; the collective action problems in AI governance — has generated insights that feed back into moral philosophy. The specification problem (the difficulty of stating what you want precisely enough for an AI system to pursue it without gaming the specification) is a technical instantiation of the philosophical problem of expressing values, which philosophers have long recognised as irreducibly context-dependent and holistic. The debate over fairness definitions in algorithmic systems — whether fairness means equal error rates across groups, equal positive prediction rates, calibrated probability scores, individual fairness (similar individuals treated similarly), or counterfactual fairness (an individual should receive the same outcome regardless of which protected group they belong to) — has produced mathematical proofs of incompatibility between certain fairness criteria, enriching ethics with formal results that constrain possible value choices.
 
-  Ethics as applied to AI operates across four levels that correspond to progressively more concrete instantiations of normative principles:
+## Components / Architecture
 
-  **Normative Framework Level — the philosophical foundations**
-  - Consequentialism: evaluates AI system design and deployment by aggregate welfare effects; directly informs cost-benefit analysis of AI applications, utilitarian approaches to content moderation (maximising net user wellbeing), and welfare economics of AI's labour market effects
-  - Deontology: grounds absolute prohibitions regardless of aggregate benefit; motivates EU AI Act Article 5 prohibited practices (the reasoning is deontological — certain AI applications violate human dignity as ends in themselves, regardless of their net utilitarian benefits); grounds informed consent requirements as duties owed to individuals rather than welfare instruments
-  - Virtue ethics: asks what character an AI system should embody and what professional character an AI developer should cultivate; increasingly applied to large language model training (Constitutional AI can be read as instilling virtues in a model); informs professional ethics codes for AI practitioners
-  - Contractarianism: grounds fairness principles as what rational agents would endorse under conditions of equality; directly informs maximin fairness definitions (which favour distributions that maximise the minimum welfare) and procedural fairness requirements (ensuring those affected by AI decisions have a voice in their design)
-  - Care ethics: foregrounds particular relationships and vulnerabilities rather than universal principles; particularly applicable to AI in care contexts (healthcare, social care, mental health support) where the ethical salience of individual relationships exceeds what universal principles capture
+Ethics as applied to AI operates across four levels that correspond to progressively more concrete instantiations of normative principles:
+
+**Normative Framework Level — the philosophical foundations**
+
+- Consequentialism: evaluates AI system design and deployment by aggregate welfare effects; directly informs cost-benefit analysis of AI applications, utilitarian approaches to content moderation (maximising net user wellbeing), and welfare economics of AI's labour market effects
+- Deontology: grounds absolute prohibitions regardless of aggregate benefit; motivates EU AI Act Article 5 prohibited practices (the reasoning is deontological — certain AI applications violate human dignity as ends in themselves, regardless of their net utilitarian benefits); grounds informed consent requirements as duties owed to individuals rather than welfare instruments
+- Virtue ethics: asks what character an AI system should embody and what professional character an AI developer should cultivate; increasingly applied to large language model training (Constitutional AI can be read as instilling virtues in a model); informs professional ethics codes for AI practitioners
+- Contractarianism: grounds fairness principles as what rational agents would endorse under conditions of equality; directly informs maximin fairness definitions (which favour distributions that maximise the minimum welfare) and procedural fairness requirements (ensuring those affected by AI decisions have a voice in their design)
+- Care ethics: foregrounds particular relationships and vulnerabilities rather than universal principles; particularly applicable to AI in care contexts (healthcare, social care, mental health support) where the ethical salience of individual relationships exceeds what universal principles capture
 
   **Principles Level — mid-level normative requirements**
-  - The four Georgetown bioethics principles (beneficence, non-maleficence, autonomy, justice) have been widely adopted as the foundational principles of AI ethics following their application in Floridi et al.'s AI4People framework (2018)
-  - Beneficence: AI systems should produce benefit for individuals and society; operationalised through impact assessment and value of information analysis
-  - Non-maleficence: AI systems should not cause harm; operationalised through risk assessment, harm taxonomies, and prohibitions on specific high-harm applications
-  - Autonomy: AI systems should respect and support human decision-making capacity; operationalised through explainability requirements, consent architecture, and human oversight obligations
-  - Justice/Fairness: AI systems should distribute benefits and burdens fairly; operationalised through algorithmic fairness metrics and anti-discrimination requirements
-  - Transparency: a cross-cutting principle requiring legibility of AI systems to those affected; operationalised through model cards, system documentation, and explanation generation
-  - Accountability: requires that those responsible for AI systems can be held answerable for their effects; operationalised through governance structures, audit trails, and liability frameworks
+
+- The four Georgetown bioethics principles (beneficence, non-maleficence, autonomy, justice) have been widely adopted as the foundational principles of AI ethics following their application in Floridi et al.'s AI4People framework (2018)
+- Beneficence: AI systems should produce benefit for individuals and society; operationalised through impact assessment and value of information analysis
+- Non-maleficence: AI systems should not cause harm; operationalised through risk assessment, harm taxonomies, and prohibitions on specific high-harm applications
+- Autonomy: AI systems should respect and support human decision-making capacity; operationalised through explainability requirements, consent architecture, and human oversight obligations
+- Justice/Fairness: AI systems should distribute benefits and burdens fairly; operationalised through algorithmic fairness metrics and anti-discrimination requirements
+- Transparency: a cross-cutting principle requiring legibility of AI systems to those affected; operationalised through model cards, system documentation, and explanation generation
+- Accountability: requires that those responsible for AI systems can be held answerable for their effects; operationalised through governance structures, audit trails, and liability frameworks
 
   **Applied Ethics Level — domain-specific analysis**
-  - Healthcare AI ethics: patient autonomy, clinical non-maleficence, equitable access to AI-enhanced care, uncertainty communication to clinicians, liability for AI-assisted diagnostic errors
-  - Criminal justice AI ethics: due process requirements, equal protection, right to reasons for adverse decisions, prohibition on protected characteristics as direct determinants of liberty-affecting decisions
-  - Financial AI ethics: fair lending requirements, prohibition of proxy discrimination, transparency for credit refusals, model risk management as ethical duty
-  - Labour market AI ethics: prohibition of illegal discrimination in hiring AI, transparency about AI use in recruitment, worker rights to contest algorithmic performance management
+
+- Healthcare AI ethics: patient autonomy, clinical non-maleficence, equitable access to AI-enhanced care, uncertainty communication to clinicians, liability for AI-assisted diagnostic errors
+- Criminal justice AI ethics: due process requirements, equal protection, right to reasons for adverse decisions, prohibition on protected characteristics as direct determinants of liberty-affecting decisions
+- Financial AI ethics: fair lending requirements, prohibition of proxy discrimination, transparency for credit refusals, model risk management as ethical duty
+- Labour market AI ethics: prohibition of illegal discrimination in hiring AI, transparency about AI use in recruitment, worker rights to contest algorithmic performance management
 
   **Operational Ethics Level — embedded in system design and organisational practice**
-  - Ethics by design: embedding normative requirements as technical constraints (fairness-aware training, differential privacy, access control for sensitive attributes)
-  - Ethics review processes: internal ethics boards, red-teaming for ethical risks, algorithmic impact assessment prior to deployment
-  - Stakeholder engagement: involving those affected by AI systems in their design and governance
-  - Ongoing monitoring: tracking ethical metrics (fairness indicators, harm incident rates, transparency audit compliance) in production
+
+- Ethics by design: embedding normative requirements as technical constraints (fairness-aware training, differential privacy, access control for sensitive attributes)
+- Ethics review processes: internal ethics boards, red-teaming for ethical risks, algorithmic impact assessment prior to deployment
+- Stakeholder engagement: involving those affected by AI systems in their design and governance
+- Ongoing monitoring: tracking ethical metrics (fairness indicators, harm incident rates, transparency audit compliance) in production
 
   ## Use Cases / Major Families
 
@@ -168,10 +172,11 @@ Ethics is the systematic study of what is right, good and obligatory, and of the
   **Step 1 — Situation Analysis**: Characterise the morally relevant features of the situation: agents involved; potential affected parties and their interests; actions available; likely consequences of each action; applicable rules, rights, or duties; the values at stake.
 
   **Step 2 — Framework Application**: Apply each major normative framework:
-  - Consequentialist analysis: What aggregate welfare does each action produce? Who gains, who loses, and by how much? Does the action maximise overall wellbeing or produce an unfair distribution of harms and benefits?
-  - Deontological analysis: Does any available action violate a categorical moral rule? Does the action treat any person merely as a means rather than as an end? Would the action's maxim survive universalisation?
-  - Virtue ethics analysis: What would a person of good character do in this situation? Which action reflects the virtues of honesty, justice, compassion, and practical wisdom?
-  - Contractarian analysis: What norm would rational, self-interested agents endorse if they did not know their position in the social outcome? Does the action violate principles that affected parties could reasonably reject?
+
+- Consequentialist analysis: What aggregate welfare does each action produce? Who gains, who loses, and by how much? Does the action maximise overall wellbeing or produce an unfair distribution of harms and benefits?
+- Deontological analysis: Does any available action violate a categorical moral rule? Does the action treat any person merely as a means rather than as an end? Would the action's maxim survive universalisation?
+- Virtue ethics analysis: What would a person of good character do in this situation? Which action reflects the virtues of honesty, justice, compassion, and practical wisdom?
+- Contractarian analysis: What norm would rational, self-interested agents endorse if they did not know their position in the social outcome? Does the action violate principles that affected parties could reasonably reject?
 
   **Step 3 — Convergence and Divergence Assessment**: Identify where frameworks converge (strong moral signal) and where they diverge (genuine moral complexity requiring judgment). Divergence between frameworks typically indicates a genuine moral dilemma where any choice involves some moral cost.
 
@@ -187,29 +192,29 @@ Ethics is the systematic study of what is right, good and obligatory, and of the
 
   Ethics as an empirical research field increasingly relies on datasets and benchmarks to study moral reasoning and ethical performance:
 
-  - **Moral Machine (MIT, 2016–2018)**: Crowdsourced responses to autonomous vehicle trolley-problem scenarios across 233 countries; revealed significant cross-cultural variation in moral intuitions about priority between passengers, pedestrians, age groups, and animals. Data: 40+ million decisions from 3+ million participants.
-  - **MoralBench (2024)**: Benchmark for evaluating moral cognition in large language models across consequentialist, deontological, and virtue ethics scenarios; reveals systematic biases toward certain ethical frameworks and cultural parochialism in LLM moral reasoning.
-  - **Moral Compass (IJCAI 2025)**: Data-driven benchmark for ethical cognition in AI, testing model responses across culturally diverse ethical scenarios to identify gaps between stated ethical principles and model behaviour.
-  - **WinoBias / WinoGender**: Datasets for evaluating gender bias in coreference resolution systems — early technical implementations of ethical fairness testing.
-  - **CrowS-Pairs**: Dataset for evaluating stereotypes in masked language models across nine categories of social bias.
-  - **BiasBios**: Dataset for evaluating occupational gender bias in biographical text.
-  - **COMPAS recidivism dataset** (ProPublica analysis, 2016): The analysis of COMPAS racial bias in recidivism prediction drove foundational empirical AI ethics research; the dataset and methodology are extensively studied in algorithmic fairness literature.
-  - **Ethics Dataset (Hendrycks et al., 2021)**: Large-scale dataset of ethical scenarios across five areas — justice, deontology, virtue ethics, utilitarianism, and commonsense morality — used to evaluate LLM ethical reasoning. Models trained or evaluated on this dataset show stronger performance on standardised ethics benchmarks but may not generalise to real-world moral complexity.
+- **Moral Machine (MIT, 2016–2018)**: Crowdsourced responses to autonomous vehicle trolley-problem scenarios across 233 countries; revealed significant cross-cultural variation in moral intuitions about priority between passengers, pedestrians, age groups, and animals. Data: 40+ million decisions from 3+ million participants.
+- **MoralBench (2024)**: Benchmark for evaluating moral cognition in large language models across consequentialist, deontological, and virtue ethics scenarios; reveals systematic biases toward certain ethical frameworks and cultural parochialism in LLM moral reasoning.
+- **Moral Compass (IJCAI 2025)**: Data-driven benchmark for ethical cognition in AI, testing model responses across culturally diverse ethical scenarios to identify gaps between stated ethical principles and model behaviour.
+- **WinoBias / WinoGender**: Datasets for evaluating gender bias in coreference resolution systems — early technical implementations of ethical fairness testing.
+- **CrowS-Pairs**: Dataset for evaluating stereotypes in masked language models across nine categories of social bias.
+- **BiasBios**: Dataset for evaluating occupational gender bias in biographical text.
+- **COMPAS recidivism dataset** (ProPublica analysis, 2016): The analysis of COMPAS racial bias in recidivism prediction drove foundational empirical AI ethics research; the dataset and methodology are extensively studied in algorithmic fairness literature.
+- **Ethics Dataset (Hendrycks et al., 2021)**: Large-scale dataset of ethical scenarios across five areas — justice, deontology, virtue ethics, utilitarianism, and commonsense morality — used to evaluate LLM ethical reasoning. Models trained or evaluated on this dataset show stronger performance on standardised ethics benchmarks but may not generalise to real-world moral complexity.
 
   ## Key Terminology
 
-  - **Beneficence**: The principle that one should act in ways that promote the wellbeing of others; in AI ethics, grounds obligations on AI developers and deployers to ensure systems produce net benefit.
-  - **Non-maleficence**: The principle that one should not cause harm; grounds the precautionary requirements on high-risk AI applications and the ethical red lines in the EU AI Act.
-  - **Autonomy**: In Kantian ethics, the capacity for self-legislation — acting according to principles one gives to oneself through reason. In AI ethics, grounds rights to informed consent, to human oversight of AI decisions, and to contest automated decisions.
-  - **Justice / Fairness**: The principle of equal treatment and equitable distribution; operationalised in AI ethics through algorithmic fairness metrics (demographic parity, equalised odds, calibration) with known mathematical incompatibility results constraining which combinations can be simultaneously satisfied.
-  - **Transparency**: The obligation to make AI systems, their data, and their reasoning accessible and comprehensible to those affected; operationalised through model cards, impact assessments, and explanation generation.
-  - **Accountability**: The requirement that agents who make decisions be answerable for them — that responsibility can be traced, attributed, and enforced; operationalised through audit trails, governance structures, and liability frameworks.
-  - **Value Alignment**: The technical and philosophical project of ensuring AI systems pursue objectives consistent with human values; connects ethics to AI safety through the specification problem.
-  - **Algorithmic Bias**: Systematic error in AI output that produces unjust disparities across demographic groups; a primary empirical concern of applied AI ethics.
-  - **Moral Uncertainty**: The epistemically appropriate recognition that one's moral judgements may be wrong; motivates risk-aversion regarding irreversible moral harms and supports multi-framework analysis rather than dogmatic commitment to a single ethical theory.
-  - **Ethics Washing**: The use of ethics language and ethics processes to create the appearance of ethical AI practice without substantive normative constraint on system design or deployment; identified as a risk by Bietti (2020) and motivating the shift toward binding regulatory requirements.
-  - **Decolonial AI**: A framework that critiques the embedding of Western liberal values in AI systems and AI ethics discourse, and proposes centring the perspectives and values of communities in the global South affected by AI deployment.
-  - **Prosocial AI**: AI systems designed to promote cooperative, prosocial behaviour and to support community wellbeing rather than optimising narrow engagement or commercial metrics.
+- **Beneficence**: The principle that one should act in ways that promote the wellbeing of others; in AI ethics, grounds obligations on AI developers and deployers to ensure systems produce net benefit.
+- **Non-maleficence**: The principle that one should not cause harm; grounds the precautionary requirements on high-risk AI applications and the ethical red lines in the EU AI Act.
+- **Autonomy**: In Kantian ethics, the capacity for self-legislation — acting according to principles one gives to oneself through reason. In AI ethics, grounds rights to informed consent, to human oversight of AI decisions, and to contest automated decisions.
+- **Justice / Fairness**: The principle of equal treatment and equitable distribution; operationalised in AI ethics through algorithmic fairness metrics (demographic parity, equalised odds, calibration) with known mathematical incompatibility results constraining which combinations can be simultaneously satisfied.
+- **Transparency**: The obligation to make AI systems, their data, and their reasoning accessible and comprehensible to those affected; operationalised through model cards, impact assessments, and explanation generation.
+- **Accountability**: The requirement that agents who make decisions be answerable for them — that responsibility can be traced, attributed, and enforced; operationalised through audit trails, governance structures, and liability frameworks.
+- **Value Alignment**: The technical and philosophical project of ensuring AI systems pursue objectives consistent with human values; connects ethics to AI safety through the specification problem.
+- **Algorithmic Bias**: Systematic error in AI output that produces unjust disparities across demographic groups; a primary empirical concern of applied AI ethics.
+- **Moral Uncertainty**: The epistemically appropriate recognition that one's moral judgements may be wrong; motivates risk-aversion regarding irreversible moral harms and supports multi-framework analysis rather than dogmatic commitment to a single ethical theory.
+- **Ethics Washing**: The use of ethics language and ethics processes to create the appearance of ethical AI practice without substantive normative constraint on system design or deployment; identified as a risk by Bietti (2020) and motivating the shift toward binding regulatory requirements.
+- **Decolonial AI**: A framework that critiques the embedding of Western liberal values in AI systems and AI ethics discourse, and proposes centring the perspectives and values of communities in the global South affected by AI deployment.
+- **Prosocial AI**: AI systems designed to promote cooperative, prosocial behaviour and to support community wellbeing rather than optimising narrow engagement or commercial metrics.
 
   ## Research & Literature
 
@@ -242,5 +247,5 @@ Ethics is the systematic study of what is right, good and obligatory, and of the
   27. Wieringa, M., et al. (2022). Responsible AI Under the Law. *AI and Society*, 37, 1171–1183.
   28. Future AGI (2026). AI Ethics Frameworks in 2026: EU AI Act and Best Practices. https://futureagi.com/blog/ethics-of-ai-framework-2025/
 
-- ### Provenance
+### Provenance
 

@@ -1,3 +1,2 @@
-
 Policy simulation is the use of computational models — typically agent-based or system-dynamics models — to project the likely outcomes of a proposed policy before it is enacted, allowing decision-makers to compare interventions under varying assumptions. It represents a population of heterogeneous actors and the rules governing their interactions, then runs the model forward to observe emergent, aggregate effects such as economic output, public health or resource use. Policy simulation is widely used in government, urban planning and public health to reduce the risk of costly real-world policy failures.
 

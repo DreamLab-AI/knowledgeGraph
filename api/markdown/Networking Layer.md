@@ -1,10 +1,10 @@
-
 Communication systems that connect components and users across distributed metaverse environments through network protocols and software.
 
-- ### Semantic Classification
+### Semantic Classification
 
-- ### Content
-  Networking Layer — content pending enrichment.
+### Content
 
-- ### Provenance
+Networking Layer — content pending enrichment.
+
+### Provenance
 

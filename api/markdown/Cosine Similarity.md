@@ -1,142 +1,142 @@
-
 Cosine Similarity is a metric that measures the cosine of the angle between two non-zero vectors in an inner product space, yielding a value in [−1, 1] that quantifies directional similarity independently of vector magnitude. It is the dominant similarity measure for comparing high-dimensional sparse and dense vector representations of text, images, and other data in information retrieval and machine learning systems.
 
-- ### Semantic Classification
+### Semantic Classification
 
-- ### Content
-  ## Compositional Relationships (Components)
-  ```
-  SubClassOf(ai:CosineSimilarity
-    ObjectSomeValuesFrom(ai:hasPart ai:DotProductOperation))
-  SubClassOf(ai:CosineSimilarity
-    ObjectSomeValuesFrom(ai:hasPart ai:L2NormComputation))
-  SubClassOf(ai:CosineSimilarity
-    ObjectSomeValuesFrom(ai:hasPart ai:VectorNormalisation))
-  SubClassOf(ai:CosineSimilarity
-    ObjectSomeValuesFrom(ai:hasPart ai:AngleComputation))
-  SubClassOf(ai:CosineSimilarity
-    ObjectSomeValuesFrom(ai:hasPart ai:InnerProductSpace))
-  ```
-  ## Dependency Relationships
-  ```
-  SubClassOf(ai:CosineSimilarity
-    ObjectSomeValuesFrom(ai:requires ai:EmbeddingRepresentation))
-  SubClassOf(ai:CosineSimilarity
-    ObjectSomeValuesFrom(ai:requires ai:VectorSpaceModel))
-  SubClassOf(ai:CosineSimilarity
-    ObjectSomeValuesFrom(ai:requires ai:InnerProductDefinition))
-  SubClassOf(ai:CosineSimilarity
-    ObjectSomeValuesFrom(ai:dependsOn ai:EncoderModel))
-  SubClassOf(ai:CosineSimilarity
-    ObjectSomeValuesFrom(ai:dependsOn ai:EmbeddingModel))
-  SubClassOf(ai:CosineSimilarity
-    ObjectSomeValuesFrom(ai:dependsOn ai:ContrastiveLearning))
-  ```
-  ## Capability Relationships
-  ```
-  SubClassOf(ai:CosineSimilarity
-    ObjectSomeValuesFrom(ai:enables ai:SemanticSearch))
-  SubClassOf(ai:CosineSimilarity
-    ObjectSomeValuesFrom(ai:enables ai:RetrievalAugmentedGeneration))
-  SubClassOf(ai:CosineSimilarity
-    ObjectSomeValuesFrom(ai:enables ai:DocumentSimilarityRanking))
-  SubClassOf(ai:CosineSimilarity
-    ObjectSomeValuesFrom(ai:enables ai:NearestNeighbourRetrieval))
-  SubClassOf(ai:CosineSimilarity
-    ObjectSomeValuesFrom(ai:enables ai:DuplicateDetection))
-  SubClassOf(ai:CosineSimilarity
-    ObjectSomeValuesFrom(ai:enables ai:CrossLingualRetrieval))
-  SubClassOf(ai:CosineSimilarity
-    ObjectSomeValuesFrom(ai:enables ai:RecommendationSystem))
-  ```
-  ## Implementation Relationships
-  ```
-  SubClassOf(ai:CosineSimilarity
-    ObjectSomeValuesFrom(ai:implements ai:DenseRetrieval))
-  SubClassOf(ai:CosineSimilarity
-    ObjectSomeValuesFrom(ai:implements ai:BiEncoderArchitecture))
-  SubClassOf(ai:CosineSimilarity
-    ObjectSomeValuesFrom(ai:implements ai:ApproximateNearestNeighbour))
-  SubClassOf(ai:CosineSimilarity
-    ObjectSomeValuesFrom(ai:implements ai:VectorIndexing))
-  SubClassOf(ai:CosineSimilarity
-    ObjectSomeValuesFrom(ai:implements ai:HNSWIndex))
-  SubClassOf(ai:CosineSimilarity
-    ObjectSomeValuesFrom(ai:implements ai:FAISSInnerProductSearch))
-  ```
-  ## Reduction Relationships
-  ```
-  SubClassOf(ai:CosineSimilarity
-    ObjectSomeValuesFrom(ai:reducesTo ai:NormalisedDotProduct))
-  SubClassOf(ai:CosineSimilarity
-    ObjectSomeValuesFrom(ai:reducesTo ai:InnerProductOnUnitSphere))
-  SubClassOf(ai:CosineSimilarity
-    ObjectSomeValuesFrom(ai:reducesTo ai:AngularDistance))
-  SubClassOf(ai:CosineSimilarity
-    ObjectSomeValuesFrom(ai:reducesTo ai:PearsonCorrelationOnMeanCentredVectors))
-  ```
-  ## Contrastive Relationships
-  ```
-  SubClassOf(ai:CosineSimilarity
-    ObjectComplementOf(ai:EuclideanDistanceMeasure))
-  SubClassOf(ai:CosineSimilarity
-    ObjectComplementOf(ai:MagnitudeAwareSimilarity))
-  SubClassOf(ai:CosineSimilarity
-    ObjectSomeValuesFrom(ai:contrastsWith ai:CrossEncoderReranking))
-  SubClassOf(ai:CosineSimilarity
-    ObjectSomeValuesFrom(ai:contrastsWith ai:BM25KeywordRetrieval))
-  SubClassOf(ai:CosineSimilarity
-    ObjectSomeValuesFrom(ai:contrastsWith ai:HyperbolicDistanceMeasure))
-  SubClassOf(ai:CosineSimilarity
-    ObjectSomeValuesFrom(ai:contrastsWith ai:JaccardSimilarity))
-  SubClassOf(ai:CosineSimilarity
-    ObjectSomeValuesFrom(ai:contrastsWith ai:EditDistanceMeasure))
-  ```
+### Content
 
-  ## About
+## Compositional Relationships (Components)
+```
+SubClassOf(ai:CosineSimilarity
+  ObjectSomeValuesFrom(ai:hasPart ai:DotProductOperation))
+SubClassOf(ai:CosineSimilarity
+  ObjectSomeValuesFrom(ai:hasPart ai:L2NormComputation))
+SubClassOf(ai:CosineSimilarity
+  ObjectSomeValuesFrom(ai:hasPart ai:VectorNormalisation))
+SubClassOf(ai:CosineSimilarity
+  ObjectSomeValuesFrom(ai:hasPart ai:AngleComputation))
+SubClassOf(ai:CosineSimilarity
+  ObjectSomeValuesFrom(ai:hasPart ai:InnerProductSpace))
+```
+## Dependency Relationships
+```
+SubClassOf(ai:CosineSimilarity
+  ObjectSomeValuesFrom(ai:requires ai:EmbeddingRepresentation))
+SubClassOf(ai:CosineSimilarity
+  ObjectSomeValuesFrom(ai:requires ai:VectorSpaceModel))
+SubClassOf(ai:CosineSimilarity
+  ObjectSomeValuesFrom(ai:requires ai:InnerProductDefinition))
+SubClassOf(ai:CosineSimilarity
+  ObjectSomeValuesFrom(ai:dependsOn ai:EncoderModel))
+SubClassOf(ai:CosineSimilarity
+  ObjectSomeValuesFrom(ai:dependsOn ai:EmbeddingModel))
+SubClassOf(ai:CosineSimilarity
+  ObjectSomeValuesFrom(ai:dependsOn ai:ContrastiveLearning))
+```
+## Capability Relationships
+```
+SubClassOf(ai:CosineSimilarity
+  ObjectSomeValuesFrom(ai:enables ai:SemanticSearch))
+SubClassOf(ai:CosineSimilarity
+  ObjectSomeValuesFrom(ai:enables ai:RetrievalAugmentedGeneration))
+SubClassOf(ai:CosineSimilarity
+  ObjectSomeValuesFrom(ai:enables ai:DocumentSimilarityRanking))
+SubClassOf(ai:CosineSimilarity
+  ObjectSomeValuesFrom(ai:enables ai:NearestNeighbourRetrieval))
+SubClassOf(ai:CosineSimilarity
+  ObjectSomeValuesFrom(ai:enables ai:DuplicateDetection))
+SubClassOf(ai:CosineSimilarity
+  ObjectSomeValuesFrom(ai:enables ai:CrossLingualRetrieval))
+SubClassOf(ai:CosineSimilarity
+  ObjectSomeValuesFrom(ai:enables ai:RecommendationSystem))
+```
+## Implementation Relationships
+```
+SubClassOf(ai:CosineSimilarity
+  ObjectSomeValuesFrom(ai:implements ai:DenseRetrieval))
+SubClassOf(ai:CosineSimilarity
+  ObjectSomeValuesFrom(ai:implements ai:BiEncoderArchitecture))
+SubClassOf(ai:CosineSimilarity
+  ObjectSomeValuesFrom(ai:implements ai:ApproximateNearestNeighbour))
+SubClassOf(ai:CosineSimilarity
+  ObjectSomeValuesFrom(ai:implements ai:VectorIndexing))
+SubClassOf(ai:CosineSimilarity
+  ObjectSomeValuesFrom(ai:implements ai:HNSWIndex))
+SubClassOf(ai:CosineSimilarity
+  ObjectSomeValuesFrom(ai:implements ai:FAISSInnerProductSearch))
+```
+## Reduction Relationships
+```
+SubClassOf(ai:CosineSimilarity
+  ObjectSomeValuesFrom(ai:reducesTo ai:NormalisedDotProduct))
+SubClassOf(ai:CosineSimilarity
+  ObjectSomeValuesFrom(ai:reducesTo ai:InnerProductOnUnitSphere))
+SubClassOf(ai:CosineSimilarity
+  ObjectSomeValuesFrom(ai:reducesTo ai:AngularDistance))
+SubClassOf(ai:CosineSimilarity
+  ObjectSomeValuesFrom(ai:reducesTo ai:PearsonCorrelationOnMeanCentredVectors))
+```
+## Contrastive Relationships
+```
+SubClassOf(ai:CosineSimilarity
+  ObjectComplementOf(ai:EuclideanDistanceMeasure))
+SubClassOf(ai:CosineSimilarity
+  ObjectComplementOf(ai:MagnitudeAwareSimilarity))
+SubClassOf(ai:CosineSimilarity
+  ObjectSomeValuesFrom(ai:contrastsWith ai:CrossEncoderReranking))
+SubClassOf(ai:CosineSimilarity
+  ObjectSomeValuesFrom(ai:contrastsWith ai:BM25KeywordRetrieval))
+SubClassOf(ai:CosineSimilarity
+  ObjectSomeValuesFrom(ai:contrastsWith ai:HyperbolicDistanceMeasure))
+SubClassOf(ai:CosineSimilarity
+  ObjectSomeValuesFrom(ai:contrastsWith ai:JaccardSimilarity))
+SubClassOf(ai:CosineSimilarity
+  ObjectSomeValuesFrom(ai:contrastsWith ai:EditDistanceMeasure))
+```
 
-  Cosine similarity is one of the oldest and most widely deployed mathematical tools in information retrieval and machine learning, with roots in Gerard Salton's Cornell vector space model of the 1960s and continuing relevance in 2026 production [[Retrieval-Augmented Generation|RAG]] stacks processing billions of queries daily. Its defining property — measuring angular proximity rather than absolute distance — makes it uniquely suited to the high-dimensional sparse representations that characterise text: a bag-of-words [[TF-IDF]] vector's magnitude encodes document length rather than topical content, so cosine normalisation correctly removes this confound. The same logic applies to dense neural embeddings from [[Transformer Architecture|transformer]] models: embedding magnitude carries incidental information about token frequency and model calibration, while semantic content is encoded in direction.
+## About
 
-  Formally, for vectors A and B in R^n, the cosine similarity is defined as:
+Cosine similarity is one of the oldest and most widely deployed mathematical tools in information retrieval and machine learning, with roots in Gerard Salton's Cornell vector space model of the 1960s and continuing relevance in 2026 production [[Retrieval-Augmented Generation|RAG]] stacks processing billions of queries daily. Its defining property — measuring angular proximity rather than absolute distance — makes it uniquely suited to the high-dimensional sparse representations that characterise text: a bag-of-words [[TF-IDF]] vector's magnitude encodes document length rather than topical content, so cosine normalisation correctly removes this confound. The same logic applies to dense neural embeddings from [[Transformer Architecture|transformer]] models: embedding magnitude carries incidental information about token frequency and model calibration, while semantic content is encoded in direction.
 
-      cos(θ) = (A · B) / (‖A‖₂ · ‖B‖₂) = Σᵢ AᵢBᵢ / (√(Σᵢ Aᵢ²) · √(Σᵢ Bᵢ²))
+Formally, for vectors A and B in R^n, the cosine similarity is defined as:
 
-  On the unit hypersphere (‖A‖₂ = ‖B‖₂ = 1), this reduces to the dot product A · B. This algebraic identity is practically important: all major approximate nearest-neighbour (ANN) libraries — FAISS (Facebook AI Research), HNSWlib (hierarchical navigable small world graphs), ScaNN (Google), Qdrant, Weaviate — implement cosine search as inner-product search over L2-normalised vectors, enabling computation via highly optimised BLAS Level 3 routines (SGEMM on CPU, cuBLAS on GPU). For a corpus of N documents with embedding dimension d, cosine similarity between a query and all documents requires O(N·d) multiply-accumulate operations; ANN indices reduce this to O(log N · d) per query at the cost of approximate rather than exact results.
+    cos(θ) = (A · B) / (‖A‖₂ · ‖B‖₂) = Σᵢ AᵢBᵢ / (√(Σᵢ Aᵢ²) · √(Σᵢ Bᵢ²))
 
-  The transition from sparse [[TF-IDF]] representations to dense neural embeddings, accelerated by the Sentence-BERT paper (Reimers and Gurevych, 2019) and subsequent work on [[Bi-Encoder|bi-encoder architectures]], dramatically expanded the scope of cosine similarity as a retrieval primitive. Sentence-BERT ([[Sentence-BERT]]) demonstrated that BERT sentence embeddings optimised with a cosine similarity objective on natural language inference (NLI) and semantic textual similarity (STS) benchmarks outperformed previous state-of-the-art methods by orders of magnitude, while being computationally feasible for corpus-scale retrieval. The BEIR benchmark (Thakur et al., 2021) systematised evaluation of bi-encoder + cosine similarity retrieval across 18 heterogeneous retrieval tasks, becoming the standard for comparing [[Embedding]] models. MTEB (Massive Text Embedding Benchmark, Muennighoff et al., 2023) extended this to 56 datasets across 8 tasks, covering [[Semantic Search|semantic search]], classification, clustering, and retrieval. On MTEB, state-of-the-art models (text-embedding-3-large from OpenAI, E5-mistral-7B, NV-Embed from NVIDIA) achieve cosine similarity-based retrieval performance in the 65–75% NDCG@10 range on average across tasks, with substantial variation by domain.
+On the unit hypersphere (‖A‖₂ = ‖B‖₂ = 1), this reduces to the dot product A · B. This algebraic identity is practically important: all major approximate nearest-neighbour (ANN) libraries — FAISS (Facebook AI Research), HNSWlib (hierarchical navigable small world graphs), ScaNN (Google), Qdrant, Weaviate — implement cosine search as inner-product search over L2-normalised vectors, enabling computation via highly optimised BLAS Level 3 routines (SGEMM on CPU, cuBLAS on GPU). For a corpus of N documents with embedding dimension d, cosine similarity between a query and all documents requires O(N·d) multiply-accumulate operations; ANN indices reduce this to O(log N · d) per query at the cost of approximate rather than exact results.
 
-  The [[Retrieval-Augmented Generation]] (RAG) architecture, popularised by the Lewis et al. (2020) NeurIPS paper, placed cosine similarity at the heart of production AI systems. In a RAG pipeline, a user query is encoded by a [[Bi-Encoder|bi-encoder model]], the resulting embedding is compared against a pre-indexed corpus of document chunk embeddings using cosine similarity (or equivalently, inner product on normalised vectors), and the top-k most similar chunks are retrieved and prepended to the language model's context window. This architecture separates knowledge storage (the vector index, updated continuously) from reasoning (the language model, updated through expensive retraining), making cosine similarity the bridge between dynamic knowledge and frozen model weights. As of 2026, RAG has become the dominant enterprise AI deployment pattern, with virtually every major [[Vector Database]] offering cosine similarity as a native distance metric and major cloud providers (AWS Bedrock, Azure OpenAI Service, Google Vertex AI) providing managed RAG services built on cosine similarity retrieval.
+The transition from sparse [[TF-IDF]] representations to dense neural embeddings, accelerated by the Sentence-BERT paper (Reimers and Gurevych, 2019) and subsequent work on [[Bi-Encoder|bi-encoder architectures]], dramatically expanded the scope of cosine similarity as a retrieval primitive. Sentence-BERT ([[Sentence-BERT]]) demonstrated that BERT sentence embeddings optimised with a cosine similarity objective on natural language inference (NLI) and semantic textual similarity (STS) benchmarks outperformed previous state-of-the-art methods by orders of magnitude, while being computationally feasible for corpus-scale retrieval. The BEIR benchmark (Thakur et al., 2021) systematised evaluation of bi-encoder + cosine similarity retrieval across 18 heterogeneous retrieval tasks, becoming the standard for comparing [[Embedding]] models. MTEB (Massive Text Embedding Benchmark, Muennighoff et al., 2023) extended this to 56 datasets across 8 tasks, covering [[Semantic Search|semantic search]], classification, clustering, and retrieval. On MTEB, state-of-the-art models (text-embedding-3-large from OpenAI, E5-mistral-7B, NV-Embed from NVIDIA) achieve cosine similarity-based retrieval performance in the 65–75% NDCG@10 range on average across tasks, with substantial variation by domain.
 
-  ## Components / Architecture
+The [[Retrieval-Augmented Generation]] (RAG) architecture, popularised by the Lewis et al. (2020) NeurIPS paper, placed cosine similarity at the heart of production AI systems. In a RAG pipeline, a user query is encoded by a [[Bi-Encoder|bi-encoder model]], the resulting embedding is compared against a pre-indexed corpus of document chunk embeddings using cosine similarity (or equivalently, inner product on normalised vectors), and the top-k most similar chunks are retrieved and prepended to the language model's context window. This architecture separates knowledge storage (the vector index, updated continuously) from reasoning (the language model, updated through expensive retraining), making cosine similarity the bridge between dynamic knowledge and frozen model weights. As of 2026, RAG has become the dominant enterprise AI deployment pattern, with virtually every major [[Vector Database]] offering cosine similarity as a native distance metric and major cloud providers (AWS Bedrock, Azure OpenAI Service, Google Vertex AI) providing managed RAG services built on cosine similarity retrieval.
 
-  The cosine similarity computation pipeline in a modern retrieval system comprises several interdependent components, each contributing to the overall retrieval quality and efficiency:
+## Components / Architecture
 
-  - **Encoder model (query and document encoders):** A [[Bi-Encoder]] architecture uses a [[Transformer Architecture|transformer encoder model]] — typically a fine-tuned BERT variant, or models in the E5, BGE, or GTE families — to produce fixed-size [[Embedding|embeddings]] for both queries and documents. The encoder applies mean pooling or CLS token extraction over the final [[Transformer Architecture|transformer layer]]. [[Contrastive Learning|Contrastive training]] with in-batch negatives and hard negative mining optimises the embeddings specifically for cosine similarity retrieval. The choice of encoder model is the most important factor affecting cosine similarity retrieval quality — even with the same index and retrieval strategy, switching from a BERT-base model to a state-of-the-art E5-large model typically improves NDCG@10 by 8-15 percentage points.
-  - **L2 normalisation:** Before storage and comparison, [[Embedding|embeddings]] are L2-normalised: v̂ = v / ‖v‖₂. This projects all vectors onto the unit hypersphere, converting cosine similarity to [[Dot Product|dot product]] and enabling [[Approximate Nearest Neighbour|ANN]] inner-product search. Some systems omit explicit normalisation when the encoder model already outputs approximately unit-norm vectors, though explicit normalisation is always safer. The normalisation step can be fused with the encoding step in production pipelines.
-  - **Vector index (ANN structure):** Production systems use approximate nearest-neighbour indices rather than exact cosine search because exact cosine search (flat L2 search over all vectors) scales as O(N·d) per query, which is prohibitive for N > 1M documents. The dominant ANN structures are:
-    - **HNSW (Hierarchical Navigable Small World graphs):** Graph-based index providing O(log N) approximate search with high recall (>0.95 at top-10). Used by HNSWlib, Weaviate, Qdrant, and Milvus. Best for high-quality retrieval with moderate memory usage.
-    - **IVF (Inverted File Index) + PQ (Product Quantisation):** [[FAISS]]-style index that clusters vectors into Voronoi cells and applies lossy [[Embedding|embedding]] compression, trading recall for memory efficiency. Suitable for billion-scale corpora where HNSW memory requirements are prohibitive.
-    - **SCANN (Scalable Approximate Nearest Neighbors):** Google's tree-based [[Approximate Nearest Neighbour|ANN index]] with anisotropic quantisation optimised for inner product search. Achieves the best recall-latency trade-off for many large-scale retrieval tasks.
-    - **Flat index (exact search):** Exact cosine similarity computation without approximation, providing perfect recall at O(N·d) latency. Practical for N < 10k documents; infeasible for large corpora. [[FAISS]] provides flat index implementations optimised for GPU batch computation.
-  - **Query-time retrieval:** At inference time, the query is encoded, L2-normalised, and compared against the indexed corpus using the [[Approximate Nearest Neighbour|ANN index]], returning the top-k most similar documents measured by cosine similarity. The speed of this step depends on index type, hardware (CPU vs. GPU), and corpus size.
-  - **Reranking stage:** Retrieved candidates are passed to a [[Cross-Encoder Reranking|cross-encoder reranker]] that processes the full query-document pair through a [[Transformer Architecture|transformer]] with cross-attention, providing substantially more accurate relevance scores at higher computational cost. This two-stage architecture (bi-encoder cosine recall + cross-encoder precision) is the dominant production pattern for high-quality [[Retrieval-Augmented Generation|RAG]] and [[Semantic Search]] applications.
-  - **Hybrid retrieval integration:** Many production systems combine cosine similarity over dense [[Embedding|embeddings]] with [[BM25]] keyword matching via Reciprocal Rank Fusion (RRF) or learned fusion, producing [[Hybrid Search]] that captures both semantic (cosine) and lexical ([[BM25]]) relevance. The hybrid approach consistently outperforms either dense cosine or sparse BM25 alone on BEIR benchmarks.
-  - **Caching and batching:** Production cosine similarity pipelines cache frequently-queried embeddings, batch multiple query embedding computations, and pre-compute document [[Embedding|embeddings]] offline. These engineering optimisations can reduce effective per-query latency by 10–100x relative to naive implementations.
+The cosine similarity computation pipeline in a modern retrieval system comprises several interdependent components, each contributing to the overall retrieval quality and efficiency:
+
+- **Encoder model (query and document encoders):** A [[Bi-Encoder]] architecture uses a [[Transformer Architecture|transformer encoder model]] — typically a fine-tuned BERT variant, or models in the E5, BGE, or GTE families — to produce fixed-size [[Embedding|embeddings]] for both queries and documents. The encoder applies mean pooling or CLS token extraction over the final [[Transformer Architecture|transformer layer]]. [[Contrastive Learning|Contrastive training]] with in-batch negatives and hard negative mining optimises the embeddings specifically for cosine similarity retrieval. The choice of encoder model is the most important factor affecting cosine similarity retrieval quality — even with the same index and retrieval strategy, switching from a BERT-base model to a state-of-the-art E5-large model typically improves NDCG@10 by 8-15 percentage points.
+- **L2 normalisation:** Before storage and comparison, [[Embedding|embeddings]] are L2-normalised: v̂ = v / ‖v‖₂. This projects all vectors onto the unit hypersphere, converting cosine similarity to [[Dot Product|dot product]] and enabling [[Approximate Nearest Neighbour|ANN]] inner-product search. Some systems omit explicit normalisation when the encoder model already outputs approximately unit-norm vectors, though explicit normalisation is always safer. The normalisation step can be fused with the encoding step in production pipelines.
+- **Vector index (ANN structure):** Production systems use approximate nearest-neighbour indices rather than exact cosine search because exact cosine search (flat L2 search over all vectors) scales as O(N·d) per query, which is prohibitive for N > 1M documents. The dominant ANN structures are:
+  - **HNSW (Hierarchical Navigable Small World graphs):** Graph-based index providing O(log N) approximate search with high recall (>0.95 at top-10). Used by HNSWlib, Weaviate, Qdrant, and Milvus. Best for high-quality retrieval with moderate memory usage.
+  - **IVF (Inverted File Index) + PQ (Product Quantisation):** [[FAISS]]-style index that clusters vectors into Voronoi cells and applies lossy [[Embedding|embedding]] compression, trading recall for memory efficiency. Suitable for billion-scale corpora where HNSW memory requirements are prohibitive.
+  - **SCANN (Scalable Approximate Nearest Neighbors):** Google's tree-based [[Approximate Nearest Neighbour|ANN index]] with anisotropic quantisation optimised for inner product search. Achieves the best recall-latency trade-off for many large-scale retrieval tasks.
+  - **Flat index (exact search):** Exact cosine similarity computation without approximation, providing perfect recall at O(N·d) latency. Practical for N < 10k documents; infeasible for large corpora. [[FAISS]] provides flat index implementations optimised for GPU batch computation.
+- **Query-time retrieval:** At inference time, the query is encoded, L2-normalised, and compared against the indexed corpus using the [[Approximate Nearest Neighbour|ANN index]], returning the top-k most similar documents measured by cosine similarity. The speed of this step depends on index type, hardware (CPU vs. GPU), and corpus size.
+- **Reranking stage:** Retrieved candidates are passed to a [[Cross-Encoder Reranking|cross-encoder reranker]] that processes the full query-document pair through a [[Transformer Architecture|transformer]] with cross-attention, providing substantially more accurate relevance scores at higher computational cost. This two-stage architecture (bi-encoder cosine recall + cross-encoder precision) is the dominant production pattern for high-quality [[Retrieval-Augmented Generation|RAG]] and [[Semantic Search]] applications.
+- **Hybrid retrieval integration:** Many production systems combine cosine similarity over dense [[Embedding|embeddings]] with [[BM25]] keyword matching via Reciprocal Rank Fusion (RRF) or learned fusion, producing [[Hybrid Search]] that captures both semantic (cosine) and lexical ([[BM25]]) relevance. The hybrid approach consistently outperforms either dense cosine or sparse BM25 alone on BEIR benchmarks.
+- **Caching and batching:** Production cosine similarity pipelines cache frequently-queried embeddings, batch multiple query embedding computations, and pre-compute document [[Embedding|embeddings]] offline. These engineering optimisations can reduce effective per-query latency by 10–100x relative to naive implementations.
 
   ## Use Cases / Major Families
 
   Cosine similarity is deployed across a broad spectrum of retrieval and similarity tasks, with each domain exploiting the magnitude-invariant directional similarity property for different purposes:
 
-  - **[[Retrieval-Augmented Generation]] (RAG):** The core retrieval operation in RAG pipelines: query embeddings are compared against chunk embeddings in a [[Vector Database]] (Pinecone, Weaviate, Milvus, Qdrant, Chroma) to retrieve context passages for language model conditioning. As of 2026, RAG has become the dominant enterprise AI deployment pattern, making cosine similarity one of the most-executed mathematical operations in production AI systems. Typical enterprise RAG deployments index hundreds of millions of document chunks and process millions of cosine similarity queries daily.
-  - **[[Semantic Search]] engines:** Enterprise search products (Microsoft Azure AI Search, Google Vertex AI Search, Elasticsearch with [[Dense Retrieval|dense retrieval]], OpenSearch with k-NN plugin) use cosine similarity over dense [[Embedding|embeddings]] as the primary semantic relevance signal, replacing or supplementing [[BM25]] keyword matching. The semantic search capability allows users to find relevant documents using natural language questions rather than precise keywords, substantially improving retrieval recall for novice users.
-  - **[[Recommendation System|Recommendation systems]]:** Collaborative filtering and content-based recommendation encode items and users as [[Embedding|embeddings]]; cosine similarity retrieves the most relevant items for a given user state. Spotify's audio2vec, Netflix's embedding-based recommendation, and Amazon's product recommendation systems all use cosine similarity at scale, with item-to-item similarity computed offline and user-to-item similarity computed at query time.
-  - **De-duplication and clustering:** Cosine similarity identifies near-duplicate documents, sentences, or code fragments, enabling large-scale corpus de-duplication (used in LLM pre-training data pipelines to reduce training data redundancy) and [[Representation Learning|semantic clustering]] of large document collections. MinHash with cosine approximate matching is used for fuzzy de-duplication at web scale.
-  - **Cross-lingual retrieval:** Multilingual [[Embedding]] models (mBERT, XLM-R, LASER, LaBSE, mE5, multilingual E5) map queries and documents from different languages into a shared [[Embedding|embedding space]]; cosine similarity enables cross-lingual retrieval without translation. This is critical for multilingual [[Retrieval-Augmented Generation|RAG]] applications in organisations with documentation in multiple languages.
-  - **[[Knowledge Graph Embedding|Knowledge graph completion]]:** Entity and relation [[Embedding|embeddings]] in knowledge graphs (TransE, DistMult, ComplEx, RotatE) use cosine similarity or dot product to score candidate triples, enabling link prediction and ontology alignment. The cosine of head-relation-tail embeddings in DistMult directly predicts triple plausibility.
-  - **Plagiarism detection and sentence similarity:** Academic plagiarism detection systems (Turnitin, iThenticate) and semantic textual similarity (STS) benchmarks rely on cosine similarity over sentence [[Embedding|embeddings]] as the primary measure of textual overlap beyond exact word matching.
-  - **Code search and completion:** Code [[Embedding]] models (UniXcoder, CodeBERT, StarCoder embeddings) enable cosine similarity search over code repositories, powering features in GitHub Copilot (Copilot uses cosine similarity to retrieve relevant code context), Sourcegraph, and similar tools. Cosine similarity between code [[Embedding|embeddings]] captures semantic functionality similarity even when implementation details differ.
-  - **Clinical NLP and healthcare retrieval:** Medical [[Embedding]] models (BioMedBERT, PubMedBERT, ClinicalBERT) trained on clinical text use cosine similarity for patient cohort identification, similar case retrieval, and clinical trial matching. NHS and US healthcare systems increasingly use cosine similarity over clinical note embeddings for retrospective research and decision support.
-  - **Financial intelligence:** [[Natural Language Processing|NLP]] systems processing financial documents (SEC filings, earnings calls, regulatory disclosures) use cosine similarity over [[Sentence-BERT|sentence embeddings]] to identify similar reporting entities, detect regulatory language changes, and track sentiment evolution across document corpora. The UK's FCA uses embedding-based similarity search for regulatory monitoring applications.
+- **[[Retrieval-Augmented Generation]] (RAG):** The core retrieval operation in RAG pipelines: query embeddings are compared against chunk embeddings in a [[Vector Database]] (Pinecone, Weaviate, Milvus, Qdrant, Chroma) to retrieve context passages for language model conditioning. As of 2026, RAG has become the dominant enterprise AI deployment pattern, making cosine similarity one of the most-executed mathematical operations in production AI systems. Typical enterprise RAG deployments index hundreds of millions of document chunks and process millions of cosine similarity queries daily.
+- **[[Semantic Search]] engines:** Enterprise search products (Microsoft Azure AI Search, Google Vertex AI Search, Elasticsearch with [[Dense Retrieval|dense retrieval]], OpenSearch with k-NN plugin) use cosine similarity over dense [[Embedding|embeddings]] as the primary semantic relevance signal, replacing or supplementing [[BM25]] keyword matching. The semantic search capability allows users to find relevant documents using natural language questions rather than precise keywords, substantially improving retrieval recall for novice users.
+- **[[Recommendation System|Recommendation systems]]:** Collaborative filtering and content-based recommendation encode items and users as [[Embedding|embeddings]]; cosine similarity retrieves the most relevant items for a given user state. Spotify's audio2vec, Netflix's embedding-based recommendation, and Amazon's product recommendation systems all use cosine similarity at scale, with item-to-item similarity computed offline and user-to-item similarity computed at query time.
+- **De-duplication and clustering:** Cosine similarity identifies near-duplicate documents, sentences, or code fragments, enabling large-scale corpus de-duplication (used in LLM pre-training data pipelines to reduce training data redundancy) and [[Representation Learning|semantic clustering]] of large document collections. MinHash with cosine approximate matching is used for fuzzy de-duplication at web scale.
+- **Cross-lingual retrieval:** Multilingual [[Embedding]] models (mBERT, XLM-R, LASER, LaBSE, mE5, multilingual E5) map queries and documents from different languages into a shared [[Embedding|embedding space]]; cosine similarity enables cross-lingual retrieval without translation. This is critical for multilingual [[Retrieval-Augmented Generation|RAG]] applications in organisations with documentation in multiple languages.
+- **[[Knowledge Graph Embedding|Knowledge graph completion]]:** Entity and relation [[Embedding|embeddings]] in knowledge graphs (TransE, DistMult, ComplEx, RotatE) use cosine similarity or dot product to score candidate triples, enabling link prediction and ontology alignment. The cosine of head-relation-tail embeddings in DistMult directly predicts triple plausibility.
+- **Plagiarism detection and sentence similarity:** Academic plagiarism detection systems (Turnitin, iThenticate) and semantic textual similarity (STS) benchmarks rely on cosine similarity over sentence [[Embedding|embeddings]] as the primary measure of textual overlap beyond exact word matching.
+- **Code search and completion:** Code [[Embedding]] models (UniXcoder, CodeBERT, StarCoder embeddings) enable cosine similarity search over code repositories, powering features in GitHub Copilot (Copilot uses cosine similarity to retrieve relevant code context), Sourcegraph, and similar tools. Cosine similarity between code [[Embedding|embeddings]] captures semantic functionality similarity even when implementation details differ.
+- **Clinical NLP and healthcare retrieval:** Medical [[Embedding]] models (BioMedBERT, PubMedBERT, ClinicalBERT) trained on clinical text use cosine similarity for patient cohort identification, similar case retrieval, and clinical trial matching. NHS and US healthcare systems increasingly use cosine similarity over clinical note embeddings for retrospective research and decision support.
+- **Financial intelligence:** [[Natural Language Processing|NLP]] systems processing financial documents (SEC filings, earnings calls, regulatory disclosures) use cosine similarity over [[Sentence-BERT|sentence embeddings]] to identify similar reporting entities, detect regulatory language changes, and track sentiment evolution across document corpora. The UK's FCA uses embedding-based similarity search for regulatory monitoring applications.
 
   ## Academic Context
 
@@ -256,17 +256,17 @@ Cosine Similarity is a metric that measures the cosine of the angle between two 
 
   ## Future Directions (2026–2030)
 
-  - **Post-anisotropy embedding training:** New [[Contrastive Learning|contrastive learning]] objectives and regularisation methods that explicitly promote isotropy in embedding spaces, ensuring cosine similarity discriminates on semantic content rather than geometric bias. Calibration-first embedding training, applying isotonic regression as part of the training objective, is an emerging approach connecting [[Representation Learning]] theory with production retrieval engineering.
-  - **Beyond cosine: magnitude-aware similarity:** The MADS (Magnitude and Direction Similarity) framework and related approaches argue that [[Embedding|embedding]] magnitude encodes semantic confidence or specificity that cosine similarity discards. Hybrid magnitude-direction metrics may become standard for tasks where certainty calibration matters — particularly in scientific and medical [[Semantic Search]] where evidence strength should modulate similarity.
-  - **Binary and ternary embeddings:** Information-theoretic binarisation of embeddings (arXiv:2601.11557, 2026) explores replacing float32 cosine similarity with binary Hamming distance operations, achieving orders-of-magnitude speedup at modest recall cost — enabling trillion-scale cosine-equivalent retrieval on commodity hardware. This direction is particularly relevant for edge deployment and on-device [[Semantic Search]].
-  - **Late-interaction generalisation:** ColBERT-style MaxSim operators and PLAID-style compression may displace single-vector cosine as the standard retrieval primitive when accuracy requirements are high, with single-vector cosine retained for efficiency-first applications. The convergence of [[Dense Retrieval]] and [[Cross-Encoder Reranking]] quality in late-interaction models is a key driver of this shift.
-  - **Learned similarity functions:** Neural rerankers that replace fixed cosine with learned pairwise or listwise similarity functions, conditioned on query type, domain, or task, may provide substantial improvements over fixed cosine for specialised retrieval domains. [[Contrastive Learning|Contrastive]] meta-learning approaches that adapt the similarity function to domain shift are an active direction.
-  - **Multimodal cosine similarity:** Aligning vision, audio, and text in shared [[Embedding|embedding spaces]] (CLIP-style training from OpenAI and its successors, SigLIP from Google, ImageBind from Meta) such that cosine similarity is meaningful across modalities is an active direction for multimodal [[Retrieval-Augmented Generation|RAG]] and cross-modal [[Semantic Search]]. Multimodal [[Vector Database|vector databases]] (Weaviate multimodal, LanceDB) increasingly support mixed-modality cosine retrieval.
-  - **Regulatory implications:** As EU AI Act transparency requirements for AI-based decision systems extend to retrieval, documenting the [[Embedding]] model, dimensionality, and distance metric used in a retrieval pipeline (including cosine similarity) becomes a compliance requirement, driving standardisation of retrieval metric documentation and audit trails for [[Semantic Search]] decisions.
-  - **Personalised similarity:** Learned user-specific transformations of the cosine similarity space — where different users have different semantic proximity preferences — are an emerging direction for [[Recommendation System|recommendation]] and personalised [[Semantic Search]] applications. User-conditioned embedding transformations that modify the effective cosine metric per user while sharing a common base embedding model reduce personalisation cost substantially.
-  - **Efficiency innovations:** Scalar quantisation (8-bit, 4-bit), binary quantisation, and product quantisation techniques that maintain cosine similarity ranking while reducing memory footprint by 4–32x are in rapid development, driven by the economics of serving billion-scale [[Vector Database|vector databases]] in production. The information-theoretic limits of lossy cosine similarity approximation — how much recall can be maintained at a given compression ratio — are an open theoretical question.
-  - **Federated cosine similarity:** As [[Vector Database|vector databases]] are deployed in privacy-sensitive contexts (healthcare, finance, legal), federated cosine similarity search — computing approximate cosine similarity across distributed, privacy-preserving [[Embedding|embedding indices]] without centralising raw embeddings — is emerging. Homomorphic encryption and differential privacy techniques for approximate nearest-neighbour search are active research areas.
-  - **Adaptive retrieval:** Systems that dynamically choose between cosine similarity, [[BM25]], late-interaction MaxSim, or [[Cross-Encoder Reranking|cross-encoder]] scoring depending on query characteristics (length, entity density, novelty) — using meta-learning to select the optimal retrieval strategy per query — represent a convergence direction beyond fixed-metric retrieval architectures.
+- **Post-anisotropy embedding training:** New [[Contrastive Learning|contrastive learning]] objectives and regularisation methods that explicitly promote isotropy in embedding spaces, ensuring cosine similarity discriminates on semantic content rather than geometric bias. Calibration-first embedding training, applying isotonic regression as part of the training objective, is an emerging approach connecting [[Representation Learning]] theory with production retrieval engineering.
+- **Beyond cosine: magnitude-aware similarity:** The MADS (Magnitude and Direction Similarity) framework and related approaches argue that [[Embedding|embedding]] magnitude encodes semantic confidence or specificity that cosine similarity discards. Hybrid magnitude-direction metrics may become standard for tasks where certainty calibration matters — particularly in scientific and medical [[Semantic Search]] where evidence strength should modulate similarity.
+- **Binary and ternary embeddings:** Information-theoretic binarisation of embeddings (arXiv:2601.11557, 2026) explores replacing float32 cosine similarity with binary Hamming distance operations, achieving orders-of-magnitude speedup at modest recall cost — enabling trillion-scale cosine-equivalent retrieval on commodity hardware. This direction is particularly relevant for edge deployment and on-device [[Semantic Search]].
+- **Late-interaction generalisation:** ColBERT-style MaxSim operators and PLAID-style compression may displace single-vector cosine as the standard retrieval primitive when accuracy requirements are high, with single-vector cosine retained for efficiency-first applications. The convergence of [[Dense Retrieval]] and [[Cross-Encoder Reranking]] quality in late-interaction models is a key driver of this shift.
+- **Learned similarity functions:** Neural rerankers that replace fixed cosine with learned pairwise or listwise similarity functions, conditioned on query type, domain, or task, may provide substantial improvements over fixed cosine for specialised retrieval domains. [[Contrastive Learning|Contrastive]] meta-learning approaches that adapt the similarity function to domain shift are an active direction.
+- **Multimodal cosine similarity:** Aligning vision, audio, and text in shared [[Embedding|embedding spaces]] (CLIP-style training from OpenAI and its successors, SigLIP from Google, ImageBind from Meta) such that cosine similarity is meaningful across modalities is an active direction for multimodal [[Retrieval-Augmented Generation|RAG]] and cross-modal [[Semantic Search]]. Multimodal [[Vector Database|vector databases]] (Weaviate multimodal, LanceDB) increasingly support mixed-modality cosine retrieval.
+- **Regulatory implications:** As EU AI Act transparency requirements for AI-based decision systems extend to retrieval, documenting the [[Embedding]] model, dimensionality, and distance metric used in a retrieval pipeline (including cosine similarity) becomes a compliance requirement, driving standardisation of retrieval metric documentation and audit trails for [[Semantic Search]] decisions.
+- **Personalised similarity:** Learned user-specific transformations of the cosine similarity space — where different users have different semantic proximity preferences — are an emerging direction for [[Recommendation System|recommendation]] and personalised [[Semantic Search]] applications. User-conditioned embedding transformations that modify the effective cosine metric per user while sharing a common base embedding model reduce personalisation cost substantially.
+- **Efficiency innovations:** Scalar quantisation (8-bit, 4-bit), binary quantisation, and product quantisation techniques that maintain cosine similarity ranking while reducing memory footprint by 4–32x are in rapid development, driven by the economics of serving billion-scale [[Vector Database|vector databases]] in production. The information-theoretic limits of lossy cosine similarity approximation — how much recall can be maintained at a given compression ratio — are an open theoretical question.
+- **Federated cosine similarity:** As [[Vector Database|vector databases]] are deployed in privacy-sensitive contexts (healthcare, finance, legal), federated cosine similarity search — computing approximate cosine similarity across distributed, privacy-preserving [[Embedding|embedding indices]] without centralising raw embeddings — is emerging. Homomorphic encryption and differential privacy techniques for approximate nearest-neighbour search are active research areas.
+- **Adaptive retrieval:** Systems that dynamically choose between cosine similarity, [[BM25]], late-interaction MaxSim, or [[Cross-Encoder Reranking|cross-encoder]] scoring depending on query characteristics (length, entity density, novelty) — using meta-learning to select the optimal retrieval strategy per query — represent a convergence direction beyond fixed-metric retrieval architectures.
 
   ## Cosine Similarity and Explainability
 
@@ -327,21 +327,21 @@ Cosine Similarity is a metric that measures the cosine of the angle between two 
 
   ## Key Terminology
 
-  - **Angular similarity:** The conceptual foundation of cosine similarity — measuring the angle between vectors rather than their absolute distance. Angular distance d(A, B) = arccos(cos(A, B)) / π is the corresponding metric (satisfies triangle inequality).
-  - **L2 normalisation:** Division of a vector by its Euclidean norm (‖v‖₂ = √(Σᵢ vᵢ²)), projecting it onto the unit hypersphere, which converts cosine similarity to [[Dot Product|dot product]] and enables BLAS-optimised inner-product search.
-  - **[[Dot Product]] (inner product):** The sum Σᵢ AᵢBᵢ; equals cosine similarity when both vectors are unit-normalised. The algebraic identity cos(A, B) = A · B for unit vectors is the computational foundation of production cosine similarity search.
-  - **Anisotropy:** The geometric property of a set of [[Embedding|embedding]] vectors concentrated in a narrow cone rather than distributed across the full unit hypersphere; reduces cosine similarity's discriminative power by causing unrelated items to share high cosine similarity due to shared directional bias.
-  - **HNSW (Hierarchical Navigable Small World):** A graph-based [[Approximate Nearest Neighbour|approximate nearest-neighbour index]] that supports efficient cosine/inner-product search in high-dimensional spaces, providing O(log N) search with high recall. Used by HNSWlib, Weaviate, Qdrant, and Milvus.
-  - **[[Bi-Encoder]]:** A retrieval architecture using two encoder models (one for queries, one for documents) that produces embeddings compared by cosine similarity; contrasts with [[Cross-Encoder Reranking|cross-encoders]] that process query-document pairs jointly through cross-attention.
-  - **MaxSim:** The ColBERT late-interaction operator that takes the maximum cosine similarity between each query token [[Embedding|embedding]] and all document token embeddings, then sums these maxima as the overall relevance score. Provides better retrieval quality than single-vector cosine at higher storage cost.
-  - **[[Matryoshka Representation Learning|Matryoshka embeddings]]:** Embeddings trained so that prefix sub-vectors at multiple dimensionalities (e.g., 64, 128, 256) retain cosine similarity ordering, enabling adaptive-size retrieval and quality-latency trade-offs without reindexing.
-  - **Whitening:** A linear transformation that normalises the covariance matrix of an [[Embedding|embedding]] distribution to identity, promoting isotropy and improving cosine similarity discrimination. More aggressive than mean-centring but requires more computation and a representative corpus sample.
-  - **[[Hybrid Search]]:** A retrieval strategy combining dense cosine similarity over [[Embedding|embeddings]] with sparse [[BM25]] keyword matching, typically fused via Reciprocal Rank Fusion (RRF). The dominant production retrieval pattern in 2026, combining semantic matching from cosine similarity with exact term matching from BM25.
-  - **Mean-centring:** Subtracting the empirical mean of all [[Embedding|embeddings]] from each embedding, partially correcting anisotropy by shifting the cluster distribution to be centred on the origin. Equivalent to computing cosine similarity on deviation vectors.
-  - **Reciprocal Rank Fusion (RRF):** The most common method for combining cosine similarity and [[BM25]] rankings in [[Hybrid Search]]: score(d) = Σ_{r in results} 1/(k + rank(d, r)) where k=60 is the standard parameter. Robust to score scale differences between cosine and BM25 because it operates on ranks.
-  - **Product Quantisation (PQ):** A lossy compression technique for [[Embedding|embedding]] vectors used in FAISS indices that approximates cosine similarity computation, reducing memory by 8–32x at the cost of approximate rather than exact cosine scores. Enables billion-scale cosine retrieval on limited hardware.
-  - **Hard negatives:** In [[Contrastive Learning|contrastive training]] for [[Bi-Encoder|bi-encoder embedding models]], hard negatives are documents that are superficially similar to a query but not relevant. Training on hard negatives forces the model to produce sharper cosine similarity distinctions, improving retrieval quality.
-  - **Query encoder asymmetry:** The practice of using different encoding strategies (different prompts, pooling methods, or even different models) for query embeddings versus document embeddings, exploiting the fact that queries and documents are stylistically different even when semantically related.
+- **Angular similarity:** The conceptual foundation of cosine similarity — measuring the angle between vectors rather than their absolute distance. Angular distance d(A, B) = arccos(cos(A, B)) / π is the corresponding metric (satisfies triangle inequality).
+- **L2 normalisation:** Division of a vector by its Euclidean norm (‖v‖₂ = √(Σᵢ vᵢ²)), projecting it onto the unit hypersphere, which converts cosine similarity to [[Dot Product|dot product]] and enables BLAS-optimised inner-product search.
+- **[[Dot Product]] (inner product):** The sum Σᵢ AᵢBᵢ; equals cosine similarity when both vectors are unit-normalised. The algebraic identity cos(A, B) = A · B for unit vectors is the computational foundation of production cosine similarity search.
+- **Anisotropy:** The geometric property of a set of [[Embedding|embedding]] vectors concentrated in a narrow cone rather than distributed across the full unit hypersphere; reduces cosine similarity's discriminative power by causing unrelated items to share high cosine similarity due to shared directional bias.
+- **HNSW (Hierarchical Navigable Small World):** A graph-based [[Approximate Nearest Neighbour|approximate nearest-neighbour index]] that supports efficient cosine/inner-product search in high-dimensional spaces, providing O(log N) search with high recall. Used by HNSWlib, Weaviate, Qdrant, and Milvus.
+- **[[Bi-Encoder]]:** A retrieval architecture using two encoder models (one for queries, one for documents) that produces embeddings compared by cosine similarity; contrasts with [[Cross-Encoder Reranking|cross-encoders]] that process query-document pairs jointly through cross-attention.
+- **MaxSim:** The ColBERT late-interaction operator that takes the maximum cosine similarity between each query token [[Embedding|embedding]] and all document token embeddings, then sums these maxima as the overall relevance score. Provides better retrieval quality than single-vector cosine at higher storage cost.
+- **[[Matryoshka Representation Learning|Matryoshka embeddings]]:** Embeddings trained so that prefix sub-vectors at multiple dimensionalities (e.g., 64, 128, 256) retain cosine similarity ordering, enabling adaptive-size retrieval and quality-latency trade-offs without reindexing.
+- **Whitening:** A linear transformation that normalises the covariance matrix of an [[Embedding|embedding]] distribution to identity, promoting isotropy and improving cosine similarity discrimination. More aggressive than mean-centring but requires more computation and a representative corpus sample.
+- **[[Hybrid Search]]:** A retrieval strategy combining dense cosine similarity over [[Embedding|embeddings]] with sparse [[BM25]] keyword matching, typically fused via Reciprocal Rank Fusion (RRF). The dominant production retrieval pattern in 2026, combining semantic matching from cosine similarity with exact term matching from BM25.
+- **Mean-centring:** Subtracting the empirical mean of all [[Embedding|embeddings]] from each embedding, partially correcting anisotropy by shifting the cluster distribution to be centred on the origin. Equivalent to computing cosine similarity on deviation vectors.
+- **Reciprocal Rank Fusion (RRF):** The most common method for combining cosine similarity and [[BM25]] rankings in [[Hybrid Search]]: score(d) = Σ_{r in results} 1/(k + rank(d, r)) where k=60 is the standard parameter. Robust to score scale differences between cosine and BM25 because it operates on ranks.
+- **Product Quantisation (PQ):** A lossy compression technique for [[Embedding|embedding]] vectors used in FAISS indices that approximates cosine similarity computation, reducing memory by 8–32x at the cost of approximate rather than exact cosine scores. Enables billion-scale cosine retrieval on limited hardware.
+- **Hard negatives:** In [[Contrastive Learning|contrastive training]] for [[Bi-Encoder|bi-encoder embedding models]], hard negatives are documents that are superficially similar to a query but not relevant. Training on hard negatives forces the model to produce sharper cosine similarity distinctions, improving retrieval quality.
+- **Query encoder asymmetry:** The practice of using different encoding strategies (different prompts, pooling methods, or even different models) for query embeddings versus document embeddings, exploiting the fact that queries and documents are stylistically different even when semantically related.
 
   ## Computational Complexity and Scaling
 
@@ -375,27 +375,27 @@ Cosine Similarity is a metric that measures the cosine of the angle between two 
 
   The following pages in this knowledge graph are directly related to Cosine Similarity and should be consulted for adjacent concepts:
 
-  - [[Semantic Search]] — the primary application domain; cosine similarity is the retrieval primitive that enables [[Semantic Search]]
-  - [[Retrieval-Augmented Generation]] — the dominant production use case; cosine similarity is the query-document matching mechanism in RAG pipelines
-  - [[Embedding]] — the vector representation over which cosine similarity is computed; embedding quality directly determines cosine similarity retrieval quality
-  - [[Vector Database]] — the storage and indexing infrastructure for cosine similarity search at scale; all major [[Vector Database|vector databases]] implement cosine similarity natively
-  - [[Approximate Nearest Neighbour]] — the algorithmic approach for efficient cosine similarity search over large corpora; HNSW and IVF+PQ are the dominant indexing strategies
-  - [[Bi-Encoder]] — the retrieval architecture that produces embeddings for cosine similarity comparison; bi-encoders are trained with contrastive objectives that directly optimise cosine similarity ranking
-  - [[Cross-Encoder Reranking]] — the complementary high-precision retrieval approach that follows cosine similarity recall; the two-stage pipeline is the production standard
-  - [[BM25]] — the sparse retrieval baseline combined with cosine similarity in [[Hybrid Search]]; BM25 and cosine similarity are complementary rather than competing
-  - [[Dense Retrieval]] — the retrieval paradigm built on cosine similarity over dense embeddings; contrasts with sparse retrieval (BM25)
-  - [[Hybrid Search]] — the production standard combining cosine similarity and [[BM25]] via Reciprocal Rank Fusion
-  - [[Matryoshka Representation Learning]] — the embedding training technique that preserves cosine similarity ordering at multiple dimensionalities
-  - [[Contrastive Learning]] — the training objective that optimises embedding models for cosine similarity retrieval
-  - [[Natural Language Processing]] — the broader field; cosine similarity over text embeddings is a fundamental NLP operation
-  - [[Information Retrieval]] — the historical field from which cosine similarity originates; Salton's vector space model is the direct ancestor
-  - [[Knowledge Graph Embedding]] — a specialised application of cosine similarity to entity and relation representation in knowledge graphs
-  - [[Recommendation System]] — a major application domain using cosine similarity for user-item and item-item matching
-  - [[Transformer Architecture]] — the model architecture producing the dense embeddings over which cosine similarity is most commonly computed
+- [[Semantic Search]] — the primary application domain; cosine similarity is the retrieval primitive that enables [[Semantic Search]]
+- [[Retrieval-Augmented Generation]] — the dominant production use case; cosine similarity is the query-document matching mechanism in RAG pipelines
+- [[Embedding]] — the vector representation over which cosine similarity is computed; embedding quality directly determines cosine similarity retrieval quality
+- [[Vector Database]] — the storage and indexing infrastructure for cosine similarity search at scale; all major [[Vector Database|vector databases]] implement cosine similarity natively
+- [[Approximate Nearest Neighbour]] — the algorithmic approach for efficient cosine similarity search over large corpora; HNSW and IVF+PQ are the dominant indexing strategies
+- [[Bi-Encoder]] — the retrieval architecture that produces embeddings for cosine similarity comparison; bi-encoders are trained with contrastive objectives that directly optimise cosine similarity ranking
+- [[Cross-Encoder Reranking]] — the complementary high-precision retrieval approach that follows cosine similarity recall; the two-stage pipeline is the production standard
+- [[BM25]] — the sparse retrieval baseline combined with cosine similarity in [[Hybrid Search]]; BM25 and cosine similarity are complementary rather than competing
+- [[Dense Retrieval]] — the retrieval paradigm built on cosine similarity over dense embeddings; contrasts with sparse retrieval (BM25)
+- [[Hybrid Search]] — the production standard combining cosine similarity and [[BM25]] via Reciprocal Rank Fusion
+- [[Matryoshka Representation Learning]] — the embedding training technique that preserves cosine similarity ordering at multiple dimensionalities
+- [[Contrastive Learning]] — the training objective that optimises embedding models for cosine similarity retrieval
+- [[Natural Language Processing]] — the broader field; cosine similarity over text embeddings is a fundamental NLP operation
+- [[Information Retrieval]] — the historical field from which cosine similarity originates; Salton's vector space model is the direct ancestor
+- [[Knowledge Graph Embedding]] — a specialised application of cosine similarity to entity and relation representation in knowledge graphs
+- [[Recommendation System]] — a major application domain using cosine similarity for user-item and item-item matching
+- [[Transformer Architecture]] — the model architecture producing the dense embeddings over which cosine similarity is most commonly computed
 
   ## Summary
 
   Cosine similarity is a measure of the angle between two vectors in a high-dimensional space, expressed as the normalised [[Dot Product]] of the vectors. Its magnitude-invariant directional similarity property makes it the canonical measure for comparing [[Embedding|text and neural embeddings]], and it underpins the retrieval layer of virtually all production [[Semantic Search]] and [[Retrieval-Augmented Generation|RAG]] systems as of 2026. Originating in Gerard Salton's 1960s [[Information Retrieval]] work, it achieved renewed centrality through the dense [[Embedding]] retrieval paradigm established by [[Sentence-BERT]], DPR, and the BEIR/MTEB benchmarks. Its systematic limitation — anisotropy in [[Transformer Architecture|transformer]] [[Embedding|embedding spaces]] that reduces discriminative power — is actively addressed through post-processing (whitening, mean-centring), training-time regularisation, and late-interaction alternatives (ColBERT MaxSim). Despite these limitations, cosine similarity's hardware optimisability, mathematical simplicity, and proven effectiveness across a vast range of applications ensure its continued dominance as the primary vector similarity measure in the 2026–2030 AI systems landscape. UK contributions — from Karen Spärck Jones's IDF to Stephen Robertson's [[BM25]], Glasgow's PyTerrier, and Sheffield's NLP benchmarking work — have shaped the field throughout its history and continue through the Alan Turing Institute and university research groups. The technical foundation of cosine similarity — the algebraic identity between normalised [[Dot Product|dot product]] and angular similarity — is the link that makes the 60-year tradition of [[Information Retrieval]] research directly applicable to the modern [[Retrieval-Augmented Generation]] era.
 
-- ### Provenance
+### Provenance
 

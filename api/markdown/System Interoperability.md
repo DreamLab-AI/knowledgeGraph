@@ -1,44 +1,46 @@
-
 System interoperability is the ability of different information technology systems, applications, and devices to exchange data, interpret shared information, and use it in a mutually useful way without requiring special translation or middleware. It enables diverse systems to communicate and work together seamlessly through adherence to common standards, protocols, and data formats, facilitating efficient information flow across organisational and technical boundaries.
 
-- ### Semantic Classification
+### Semantic Classification
 
-- ### Content
+### Content
 
-  ## Components
+## Components
 
-  ### Types of Interoperability
+### Types of Interoperability
 
-  #### Technical Interoperability
-  The foundation for data exchange, encompassing connection services, middleware, security, and communication protocols. Ensures all system members can access platforms and exchange information securely and efficiently.
+#### Technical Interoperability
+The foundation for data exchange, encompassing connection services, middleware, security, and communication protocols. Ensures all system members can access platforms and exchange information securely and efficiently.
 
-  #### Semantic Interoperability
-  The ability to automatically interpret exchanged information meaningfully and accurately. Requires common information exchange reference models and shared vocabularies to ensure what is sent is exactly what is understood.
+#### Semantic Interoperability
+The ability to automatically interpret exchanged information meaningfully and accurately. Requires common information exchange reference models and shared vocabularies to ensure what is sent is exactly what is understood.
 
-  #### Syntactic Interoperability
-  Agreement on data formats and encoding for exchange. Ensures systems can parse and process messages correctly using standard formats like XML, JSON, or protocol buffers.
+#### Syntactic Interoperability
+Agreement on data formats and encoding for exchange. Ensures systems can parse and process messages correctly using standard formats like XML, JSON, or protocol buffers.
 
-  #### Organisational Interoperability
-  Alignment of business processes, workflows, and governance across organisations. Addresses the human and procedural aspects of cross-system collaboration.
+#### Organisational Interoperability
+Alignment of business processes, workflows, and governance across organisations. Addresses the human and procedural aspects of cross-system collaboration.
 
-  ### Interoperability vs Integration
-  - **Integration**: Systems connected to operate as a single unified system
-  - **Interoperability**: Separate systems that can securely share data in real time through standard interfaces
-  - Interoperable systems speak the same language without requiring connectors or middleware
+### Interoperability vs Integration
+
+- **Integration**: Systems connected to operate as a single unified system
+- **Interoperability**: Separate systems that can securely share data in real time through standard interfaces
+- Interoperable systems speak the same language without requiring connectors or middleware
 
   ### Standards and Protocols
-  - **Data Formats**: XML, JSON, CSV, Protocol Buffers
-  - **Web Services**: REST, SOAP, GraphQL
-  - **Messaging**: AMQP, MQTT, Kafka
-  - **APIs**: OpenAPI/Swagger, AsyncAPI
-  - **Identity**: SAML, OAuth, OIDC, SCIM
+
+- **Data Formats**: XML, JSON, CSV, Protocol Buffers
+- **Web Services**: REST, SOAP, GraphQL
+- **Messaging**: AMQP, MQTT, Kafka
+- **APIs**: OpenAPI/Swagger, AsyncAPI
+- **Identity**: SAML, OAuth, OIDC, SCIM
 
   ### Architecture Components
-  - **API Gateways**: Central points for API management and routing
-  - **Integration Platforms**: iPaaS solutions for connecting systems
-  - **Message Brokers**: Asynchronous communication infrastructure
-  - **Data Transformation**: ETL/ELT tools for format conversion
-  - **Service Mesh**: Microservices communication layer
+
+- **API Gateways**: Central points for API management and routing
+- **Integration Platforms**: iPaaS solutions for connecting systems
+- **Message Brokers**: Asynchronous communication infrastructure
+- **Data Transformation**: ETL/ELT tools for format conversion
+- **Service Mesh**: Microservices communication layer
 
   ## Implementation
 
@@ -50,11 +52,12 @@ System interoperability is the ability of different information technology syste
   5. **Event-Driven Architecture**: Loose coupling through event streams
 
   ### Modern Integration Trends
-  - **Hybrid Integration Platforms (HIP)**: Unified management of on-premises and cloud integrations
-  - **Low-Code/No-Code Platforms**: Enable non-technical users to build integrations
-  - **API Ecosystems**: Open standards promoting broad compatibility
-  - **Microservices Architecture**: Decomposed services with well-defined interfaces
-  - **iPaaS (Integration Platform as a Service)**: Cloud-based integration services
+
+- **Hybrid Integration Platforms (HIP)**: Unified management of on-premises and cloud integrations
+- **Low-Code/No-Code Platforms**: Enable non-technical users to build integrations
+- **API Ecosystems**: Open standards promoting broad compatibility
+- **Microservices Architecture**: Decomposed services with well-defined interfaces
+- **iPaaS (Integration Platform as a Service)**: Cloud-based integration services
 
   ### Standards Adoption Strategy
   1. Identify applicable industry and technical standards
@@ -65,13 +68,14 @@ System interoperability is the ability of different information technology syste
   6. Monitor and measure interoperability metrics
 
   ### Best Practices
-  - Adopt open standards to avoid vendor lock-in
-  - Design APIs for extensibility and versioning
-  - Implement robust error handling and retry logic
-  - Use asynchronous patterns where appropriate
-  - Document interfaces comprehensively
-  - Test interoperability scenarios thoroughly
-  - Plan for backward compatibility
 
-- ### Provenance
+- Adopt open standards to avoid vendor lock-in
+- Design APIs for extensibility and versioning
+- Implement robust error handling and retry logic
+- Use asynchronous patterns where appropriate
+- Document interfaces comprehensively
+- Test interoperability scenarios thoroughly
+- Plan for backward compatibility
+
+### Provenance
 

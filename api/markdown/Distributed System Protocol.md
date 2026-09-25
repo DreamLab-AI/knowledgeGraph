@@ -1,101 +1,117 @@
-
 A Distributed System Protocol is a formal specification of rules, message formats, and coordination procedures that govern how autonomous nodes in a networked system communicate, synchronise state, and jointly accomplish tasks without centralised control. Such protocols address the fundamental challenges of partial failure, network partitioning, and asynchronous message delivery described by the CAP theorem, providing mechanisms for consensus, leader election, gossip dissemination, and fault recovery. They underpin peer-to-peer networks, blockchain infrastructures, distributed databases, and large-scale cloud orchestration systems. Correctness properties — safety, liveness, and eventual consistency — are formally analysed and proven against adversarial models such as Byzantine fault tolerance.
 
-- ### Overview
-  - Distributed System Protocols emerged from decades of research in concurrent and distributed computing, beginning with seminal work on [[Consensus Protocol]] design (Paxos, 1989; Raft, 2014) and epidemic dissemination algorithms. Their practical importance grew dramatically with the proliferation of internet-scale services, cloud computing, and [[Blockchain]] networks, which demand coordination across thousands of geographically dispersed nodes.
-  - The core challenge is that no node has a complete, instantaneous view of global system state. Nodes may crash, send incorrect messages (Byzantine behaviour), or experience transient network delays. A well-designed protocol specifies precisely how nodes should behave in each scenario to preserve correctness.
-  - Key theoretical constraints include:
-    - **CAP Theorem**: A distributed system can guarantee at most two of Consistency, Availability, and Partition Tolerance simultaneously.
-    - **FLP Impossibility**: In a fully asynchronous system, no deterministic consensus protocol can tolerate even a single crash failure while always terminating.
-    - **Byzantine Generals Problem**: Generalised adversarial model requiring that honest nodes reach agreement even when some nodes send arbitrary or malicious messages.
-  - Modern distributed protocols navigate these constraints through partial synchrony assumptions, probabilistic guarantees, and economic incentives (as in [[Proof of Stake]]).
+### Overview
 
-- ### Key Mechanisms
-  - #### Consensus and Agreement
-    - [[Consensus Protocol]] — the core problem of getting all non-faulty nodes to agree on a single value or sequence of values.
-    - [[Paxos]] — the foundational single-decree and multi-decree consensus algorithm; underpins Google Chubby, Apache Zookeeper.
-    - [[Raft Consensus]] — a leader-based consensus algorithm designed for understandability; used in etcd, CockroachDB, TiKV.
-    - [[Byzantine Fault Tolerance]] — extends crash-fault consensus to the adversarial model; requires 3f+1 nodes to tolerate f Byzantine faults.
-    - PBFT (Practical Byzantine Fault Tolerance) — the canonical BFT protocol for permissioned networks with O(n²) message complexity.
-    - [[Leader Election]] — sub-protocol by which nodes agree on a coordinator; used by Raft, Zab (ZooKeeper Atomic Broadcast), and view-change procedures.
+- Distributed System Protocols emerged from decades of research in concurrent and distributed computing, beginning with seminal work on [[Consensus Protocol]] design (Paxos, 1989; Raft, 2014) and epidemic dissemination algorithms. Their practical importance grew dramatically with the proliferation of internet-scale services, cloud computing, and [[Blockchain]] networks, which demand coordination across thousands of geographically dispersed nodes.
+- The core challenge is that no node has a complete, instantaneous view of global system state. Nodes may crash, send incorrect messages (Byzantine behaviour), or experience transient network delays. A well-designed protocol specifies precisely how nodes should behave in each scenario to preserve correctness.
+- Key theoretical constraints include:
+  - **CAP Theorem**: A distributed system can guarantee at most two of Consistency, Availability, and Partition Tolerance simultaneously.
+  - **FLP Impossibility**: In a fully asynchronous system, no deterministic consensus protocol can tolerate even a single crash failure while always terminating.
+  - **Byzantine Generals Problem**: Generalised adversarial model requiring that honest nodes reach agreement even when some nodes send arbitrary or malicious messages.
+- Modern distributed protocols navigate these constraints through partial synchrony assumptions, probabilistic guarantees, and economic incentives (as in [[Proof of Stake]]).
 
-  - #### Information Dissemination
-    - [[Gossip Protocol]] — probabilistic epidemic dissemination in which each node periodically forwards messages to a random subset of peers, achieving O(log n) convergence with high probability.
-    - Flood and Prune — deterministic broadcast used in early [[Peer-to-Peer Network]] designs; superseded by gossip for scale.
-    - Publish-Subscribe — decoupled dissemination pattern used in event-driven [[Distributed System]] designs (Apache Kafka, NATS).
-    - Reliable Multicast — ordered, reliable group communication protocols (e.g., ISIS, JGroups) used in tightly coupled clusters.
+### Key Mechanisms
 
-  - #### Peer Discovery and Routing
-    - [[Distributed Hash Table]] — structured overlay network enabling O(log n) key-value lookup without central directories; Kademlia (used by BitTorrent, Ethereum devp2p), Chord, Pastry are prominent DHT designs.
-    - Bootstrap and Discovery — initial peer acquisition via DNS seeds (Bitcoin), rendezvous servers, or hardcoded bootstrap nodes.
-    - Overlay Network — logical topology constructed atop the physical network to optimise routing and resilience.
+#### Consensus and Agreement
 
-  - #### State Synchronisation
-    - Fast Sync / Snap Sync — downloading a trusted recent snapshot of global state rather than replaying the full transaction history from genesis; used in [[Ethereum]] clients.
-    - Warp Sync — checkpoint-based bootstrap (Parity/OpenEthereum) allowing nodes to skip to a finalised state root.
-    - Light Client Protocol — probabilistic or fraud-proof based verification allowing resource-constrained devices to participate without full state; [[Ethereum]] light clients use Merkle proofs against block headers.
-    - Vector Clocks and Lamport Timestamps — logical time mechanisms enabling causal ordering of events across nodes without global clock synchronisation.
+- [[Consensus Protocol]] — the core problem of getting all non-faulty nodes to agree on a single value or sequence of values.
+- [[Paxos]] — the foundational single-decree and multi-decree consensus algorithm; underpins Google Chubby, Apache Zookeeper.
+- [[Raft Consensus]] — a leader-based consensus algorithm designed for understandability; used in etcd, CockroachDB, TiKV.
+- [[Byzantine Fault Tolerance]] — extends crash-fault consensus to the adversarial model; requires 3f+1 nodes to tolerate f Byzantine faults.
+- PBFT (Practical Byzantine Fault Tolerance) — the canonical BFT protocol for permissioned networks with O(n²) message complexity.
+- [[Leader Election]] — sub-protocol by which nodes agree on a coordinator; used by Raft, Zab (ZooKeeper Atomic Broadcast), and view-change procedures.
 
-  - #### Failure Detection and Recovery
-    - Heartbeat Mechanisms — periodic liveness signals allowing peers to detect unresponsive nodes; tunable via timeout parameters (Phi Accrual Detector, used in Akka and Cassandra).
-    - Fork Resolution — protocols for choosing among competing chain branches; e.g., longest-chain rule (Bitcoin), GHOST (Ethereum PoW), finality voting (Casper FFG, Tendermint).
-    - View Change Protocol — in BFT consensus, the procedure by which nodes replace a faulty leader and resume progress.
-    - Network Partition Recovery — reconciliation procedures for merging diverged state after a partition heals; anti-entropy protocols exchange Merkle trees to identify divergences.
+#### Information Dissemination
 
-  - #### Security and Authentication
-    - [[Cryptographic Protocol]] — underpins node identity and message authenticity; every inter-node message is signed using [[Digital Signature]] schemes (ECDSA, Ed25519).
-    - Transport Layer Security — encrypted channels (TLS 1.3, Noise Protocol Framework) protecting against eavesdropping and man-in-the-middle attacks.
-    - [[Message Passing]] integrity — MACs (message authentication codes) and nonce-based replay protection prevent message forging and replay attacks.
-    - Sybil Resistance — [[Proof of Work]], [[Proof of Stake]], or identity attestation mechanisms preventing an adversary from creating disproportionate numbers of fake nodes.
+- [[Gossip Protocol]] — probabilistic epidemic dissemination in which each node periodically forwards messages to a random subset of peers, achieving O(log n) convergence with high probability.
+- Flood and Prune — deterministic broadcast used in early [[Peer-to-Peer Network]] designs; superseded by gossip for scale.
+- Publish-Subscribe — decoupled dissemination pattern used in event-driven [[Distributed System]] designs (Apache Kafka, NATS).
+- Reliable Multicast — ordered, reliable group communication protocols (e.g., ISIS, JGroups) used in tightly coupled clusters.
 
-- ### Applications and Use Cases
-  - #### Blockchain and Decentralised Finance
-    - Bitcoin's peer discovery and block propagation rely on a gossip-based [[Distributed System Protocol]] over TCP; the longest-chain rule resolves forks.
-    - [[Ethereum]] uses devp2p (Kademlia-based DHT for peer discovery) and a libp2p-based gossip sub for block and attestation propagation under the post-Merge Beacon Chain consensus.
-    - [[Inter-Blockchain Communication]] (IBC, Cosmos) and XCMP (Polkadot) are cross-chain messaging protocols enabling trustless asset and data transfer between heterogeneous [[Blockchain Network]] instances.
-    - [[Lightning Network]] — payment channel protocol enabling off-chain micropayments with atomic multi-hop routing via Hash Time-Locked Contracts (HTLCs).
+#### Peer Discovery and Routing
 
-  - #### Distributed Databases
-    - Google Spanner uses TrueTime-assisted Paxos for globally consistent transactions across data centres.
-    - Apache Cassandra and DynamoDB apply gossip-based membership and anti-entropy for [[Eventual Consistency]] with tunable consistency levels.
-    - CockroachDB and YugabyteDB use [[Raft Consensus]] per shard to provide serialisable transactions across geo-distributed replicas.
+- [[Distributed Hash Table]] — structured overlay network enabling O(log n) key-value lookup without central directories; Kademlia (used by BitTorrent, Ethereum devp2p), Chord, Pastry are prominent DHT designs.
+- Bootstrap and Discovery — initial peer acquisition via DNS seeds (Bitcoin), rendezvous servers, or hardcoded bootstrap nodes.
+- Overlay Network — logical topology constructed atop the physical network to optimise routing and resilience.
 
-  - #### Cloud Orchestration
-    - etcd (Kubernetes' backing store) uses Raft for strongly consistent key-value storage underpinning cluster state.
-    - [[Microservices]] service meshes (Istio, Consul) employ health-check gossip and distributed configuration protocols to manage dynamic service discovery.
+#### State Synchronisation
 
-  - #### Federated and Collaborative AI
-    - [[Federated Learning]] aggregation protocols coordinate parameter updates across distributed model trainers without centralising raw data, inheriting fault-tolerance requirements from distributed consensus research.
-    - Distributed inference networks require protocol-level coordination for load balancing, model shard routing, and result aggregation across heterogeneous compute nodes.
+- Fast Sync / Snap Sync — downloading a trusted recent snapshot of global state rather than replaying the full transaction history from genesis; used in [[Ethereum]] clients.
+- Warp Sync — checkpoint-based bootstrap (Parity/OpenEthereum) allowing nodes to skip to a finalised state root.
+- Light Client Protocol — probabilistic or fraud-proof based verification allowing resource-constrained devices to participate without full state; [[Ethereum]] light clients use Merkle proofs against block headers.
+- Vector Clocks and Lamport Timestamps — logical time mechanisms enabling causal ordering of events across nodes without global clock synchronisation.
 
-  - #### Peer-to-Peer File Sharing and Content Delivery
-    - BitTorrent's tracker-less operation relies on Kademlia DHT for peer discovery and piece availability exchange.
-    - IPFS (InterPlanetary File System) combines Kademlia DHT, Bitswap content exchange, and Merkle DAGs into a unified content-addressed [[Distributed System]].
+#### Failure Detection and Recovery
 
-- ### Standards and Context
-  - **IETF RFCs** — numerous protocols are standardised through the IETF process: RFC 6762 (mDNS), RFC 8484 (DoH), and transport-layer specifications underpinning distributed communication.
-  - **Cosmos IBC** — the Inter-Blockchain Communication protocol specification maintained by the Interchain Foundation defines a standard for cross-chain messaging, packet relay, and light-client verification.
-  - **libp2p** — a modular [[Peer-to-Peer Network]] library (originally from IPFS, adopted by [[Ethereum]] and Polkadot) providing a composable suite of distributed system sub-protocols: transport, multiplexing, peer identity, content routing, and publish-subscribe.
-  - **W3C DID / Verifiable Credentials** — decentralised identity standards that interact with distributed system authentication layers, enabling protocol-level node identity without centralised PKI.
-  - **IEEE and ACM** — academic standardisation and peer review of consensus and distributed protocol correctness through venues such as PODC (Principles of Distributed Computing) and SOSP.
-  - **NIST Post-Quantum Cryptography Standards** — as distributed protocols rely on cryptographic primitives for authentication and confidentiality, the adoption of NIST-standardised post-quantum algorithms (ML-KEM, ML-DSA) is progressively being integrated into protocol specifications.
+- Heartbeat Mechanisms — periodic liveness signals allowing peers to detect unresponsive nodes; tunable via timeout parameters (Phi Accrual Detector, used in Akka and Cassandra).
+- Fork Resolution — protocols for choosing among competing chain branches; e.g., longest-chain rule (Bitcoin), GHOST (Ethereum PoW), finality voting (Casper FFG, Tendermint).
+- View Change Protocol — in BFT consensus, the procedure by which nodes replace a faulty leader and resume progress.
+- Network Partition Recovery — reconciliation procedures for merging diverged state after a partition heals; anti-entropy protocols exchange Merkle trees to identify divergences.
 
-- ### Semantic Classification
+#### Security and Authentication
 
-- ### Current Landscape (2026)
-  - Raft consolidated as the de-facto crash-fault-tolerant default (etcd/Kubernetes, CockroachDB, TiKV, YugabyteDB), while Kafka completed its move off ZooKeeper to the built-in Raft-based KRaft protocol — ZooKeeper was deprecated in Kafka 3.5 and fully removed in Kafka 4.0 (2025).
-  - DAG-based Byzantine fault-tolerant protocols matured rapidly: Sailfish was published at IEEE S&P 2025, and Shoal++ (arXiv, March 2025) cut end-to-end DAG-BFT commit latency to roughly 4.5 message delays, around a 60% reduction versus prior state-of-the-art such as Shoal.
-  - Production blockchains standardised on the Narwhal/Bullshark DAG lineage — Sui shipped Mysticeti (Mysticeti-C reaching the theoretical 3-message-round latency lower bound), while Aptos and others iterate on Shoal/Bullshark variants.
-  - Leaderless and geo-distributed designs advanced on the CFT side: Apache Cassandra's Accord (EPaxos-style) targets strict-serialisable multi-partition transactions, and research protocols like Cabinet (weighted/heterogeneous consensus, 2025) and Autobahn (seamless high-speed BFT) push throughput and WAN latency.
-  - Formal verification and automated bug-finding became a live concern: a 2026 study (the "Agora" LLM-agent effort) reported 15 previously unknown protocol-level logic bugs across Raft, EPaxos, HotStuff and Bullshark implementations, reinforcing "do not roll your own consensus".
-  - Open challenges as of 2026 centre on cutting WAN write latency below cross-region RTT bounds, making BFT practical for federated/partially-trusted infrastructure, taming DAG-BFT implementation complexity, and closing the persistent gap between verified specifications and deployed code.
+- [[Cryptographic Protocol]] — underpins node identity and message authenticity; every inter-node message is signed using [[Digital Signature]] schemes (ECDSA, Ed25519).
+- Transport Layer Security — encrypted channels (TLS 1.3, Noise Protocol Framework) protecting against eavesdropping and man-in-the-middle attacks.
+- [[Message Passing]] integrity — MACs (message authentication codes) and nonce-based replay protection prevent message forging and replay attacks.
+- Sybil Resistance — [[Proof of Work]], [[Proof of Stake]], or identity attestation mechanisms preventing an adversary from creating disproportionate numbers of fake nodes.
 
-- ### References
-  - 1. Youngju (2026). Distributed Consensus Deep Dive — Paxos, Raft, ZAB, FLP, etcd, KRaft, BFT, CRDT (2025 landscape). https://www.youngju.dev/blog/culture/2026-04-15-distributed-consensus-paxos-raft-zab-flp-etcd-zookeeper-kraft-bft-crdt-deep-dive-guide-2025.en
-  - 2. Nanotech Insight (2026). Consensus Algorithms in Distributed Systems: Engineering Guide 2026. https://nanotechinsight.com/post/distributed-systems-consensus-algorithms-engineering-guide-2026
-  - 3. Decentralized Thoughts (2025). What's DAG got to do with it? https://decentralizedthoughts.github.io/2025-08-08-DAGs/
-  - 4. Arun, B. et al. (2025). Shoal++: High Throughput DAG BFT Can Be Fast! arXiv:2405.20488v2. https://arxiv.org/pdf/2405.20488.pdf
-  - 5. Ding, J. & Qin, Y. (2026). Raft and Beyond: Practical Consensus Mechanisms for Geo-Distributed Data Systems. Computer Life 14(1). http://computer-life.org/index.php/ojs/article/view/37
+### Applications and Use Cases
 
-- ### Provenance
+#### Blockchain and Decentralised Finance
+
+- Bitcoin's peer discovery and block propagation rely on a gossip-based [[Distributed System Protocol]] over TCP; the longest-chain rule resolves forks.
+- [[Ethereum]] uses devp2p (Kademlia-based DHT for peer discovery) and a libp2p-based gossip sub for block and attestation propagation under the post-Merge Beacon Chain consensus.
+- [[Inter-Blockchain Communication]] (IBC, Cosmos) and XCMP (Polkadot) are cross-chain messaging protocols enabling trustless asset and data transfer between heterogeneous [[Blockchain Network]] instances.
+- [[Lightning Network]] — payment channel protocol enabling off-chain micropayments with atomic multi-hop routing via Hash Time-Locked Contracts (HTLCs).
+
+#### Distributed Databases
+
+- Google Spanner uses TrueTime-assisted Paxos for globally consistent transactions across data centres.
+- Apache Cassandra and DynamoDB apply gossip-based membership and anti-entropy for [[Eventual Consistency]] with tunable consistency levels.
+- CockroachDB and YugabyteDB use [[Raft Consensus]] per shard to provide serialisable transactions across geo-distributed replicas.
+
+#### Cloud Orchestration
+
+- etcd (Kubernetes' backing store) uses Raft for strongly consistent key-value storage underpinning cluster state.
+- [[Microservices]] service meshes (Istio, Consul) employ health-check gossip and distributed configuration protocols to manage dynamic service discovery.
+
+#### Federated and Collaborative AI
+
+- [[Federated Learning]] aggregation protocols coordinate parameter updates across distributed model trainers without centralising raw data, inheriting fault-tolerance requirements from distributed consensus research.
+- Distributed inference networks require protocol-level coordination for load balancing, model shard routing, and result aggregation across heterogeneous compute nodes.
+
+#### Peer-to-Peer File Sharing and Content Delivery
+
+- BitTorrent's tracker-less operation relies on Kademlia DHT for peer discovery and piece availability exchange.
+- IPFS (InterPlanetary File System) combines Kademlia DHT, Bitswap content exchange, and Merkle DAGs into a unified content-addressed [[Distributed System]].
+
+### Standards and Context
+
+- **IETF RFCs** — numerous protocols are standardised through the IETF process: RFC 6762 (mDNS), RFC 8484 (DoH), and transport-layer specifications underpinning distributed communication.
+- **Cosmos IBC** — the Inter-Blockchain Communication protocol specification maintained by the Interchain Foundation defines a standard for cross-chain messaging, packet relay, and light-client verification.
+- **libp2p** — a modular [[Peer-to-Peer Network]] library (originally from IPFS, adopted by [[Ethereum]] and Polkadot) providing a composable suite of distributed system sub-protocols: transport, multiplexing, peer identity, content routing, and publish-subscribe.
+- **W3C DID / Verifiable Credentials** — decentralised identity standards that interact with distributed system authentication layers, enabling protocol-level node identity without centralised PKI.
+- **IEEE and ACM** — academic standardisation and peer review of consensus and distributed protocol correctness through venues such as PODC (Principles of Distributed Computing) and SOSP.
+- **NIST Post-Quantum Cryptography Standards** — as distributed protocols rely on cryptographic primitives for authentication and confidentiality, the adoption of NIST-standardised post-quantum algorithms (ML-KEM, ML-DSA) is progressively being integrated into protocol specifications.
+
+### Semantic Classification
+
+### Current Landscape (2026)
+
+- Raft consolidated as the de-facto crash-fault-tolerant default (etcd/Kubernetes, CockroachDB, TiKV, YugabyteDB), while Kafka completed its move off ZooKeeper to the built-in Raft-based KRaft protocol — ZooKeeper was deprecated in Kafka 3.5 and fully removed in Kafka 4.0 (2025).
+- DAG-based Byzantine fault-tolerant protocols matured rapidly: Sailfish was published at IEEE S&P 2025, and Shoal++ (arXiv, March 2025) cut end-to-end DAG-BFT commit latency to roughly 4.5 message delays, around a 60% reduction versus prior state-of-the-art such as Shoal.
+- Production blockchains standardised on the Narwhal/Bullshark DAG lineage — Sui shipped Mysticeti (Mysticeti-C reaching the theoretical 3-message-round latency lower bound), while Aptos and others iterate on Shoal/Bullshark variants.
+- Leaderless and geo-distributed designs advanced on the CFT side: Apache Cassandra's Accord (EPaxos-style) targets strict-serialisable multi-partition transactions, and research protocols like Cabinet (weighted/heterogeneous consensus, 2025) and Autobahn (seamless high-speed BFT) push throughput and WAN latency.
+- Formal verification and automated bug-finding became a live concern: a 2026 study (the "Agora" LLM-agent effort) reported 15 previously unknown protocol-level logic bugs across Raft, EPaxos, HotStuff and Bullshark implementations, reinforcing "do not roll your own consensus".
+- Open challenges as of 2026 centre on cutting WAN write latency below cross-region RTT bounds, making BFT practical for federated/partially-trusted infrastructure, taming DAG-BFT implementation complexity, and closing the persistent gap between verified specifications and deployed code.
+
+### References
+
+- 1. Youngju (2026). Distributed Consensus Deep Dive — Paxos, Raft, ZAB, FLP, etcd, KRaft, BFT, CRDT (2025 landscape). https://www.youngju.dev/blog/culture/2026-04-15-distributed-consensus-paxos-raft-zab-flp-etcd-zookeeper-kraft-bft-crdt-deep-dive-guide-2025.en
+- 2. Nanotech Insight (2026). Consensus Algorithms in Distributed Systems: Engineering Guide 2026. https://nanotechinsight.com/post/distributed-systems-consensus-algorithms-engineering-guide-2026
+- 3. Decentralized Thoughts (2025). What's DAG got to do with it? https://decentralizedthoughts.github.io/2025-08-08-DAGs/
+- 4. Arun, B. et al. (2025). Shoal++: High Throughput DAG BFT Can Be Fast! arXiv:2405.20488v2. https://arxiv.org/pdf/2405.20488.pdf
+- 5. Ding, J. & Qin, Y. (2026). Raft and Beyond: Practical Consensus Mechanisms for Geo-Distributed Data Systems. Computer Life 14(1). http://computer-life.org/index.php/ojs/article/view/37
+
+### Provenance
 

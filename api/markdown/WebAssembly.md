@@ -1,20 +1,19 @@
-
 WebAssembly (Wasm) is a binary instruction format for a stack-based virtual machine, standardised by the W3C, that provides a portable compilation target for high-level languages such as C, C++, Rust, and Go, enabling near-native execution speed inside Web Browser sandboxes and server-side ru...
 
-- ### Semantic Classification
+### Semantic Classification
 
-- ### Content
+### Content
 
-  WebAssembly emerged from a joint effort by Mozilla, Google, Microsoft, and Apple to provide a universal low-level compilation target for the web, becoming a W3C recommendation in December 2019. Unlike [[JavaScript]], which is interpreted and JIT-compiled at runtime, Wasm modules are delivered as pre-compiled binary blobs that decode and validate faster than JavaScript parses, then execute at near-native speed within a memory-safe, capability-restricted sandbox. This combination of performance, safety, and portability makes WebAssembly the preferred substrate for running untrusted or performance-sensitive agent code within [[VisionClaw Agentic Container]].
+WebAssembly emerged from a joint effort by Mozilla, Google, Microsoft, and Apple to provide a universal low-level compilation target for the web, becoming a W3C recommendation in December 2019. Unlike [[JavaScript]], which is interpreted and JIT-compiled at runtime, Wasm modules are delivered as pre-compiled binary blobs that decode and validate faster than JavaScript parses, then execute at near-native speed within a memory-safe, capability-restricted sandbox. This combination of performance, safety, and portability makes WebAssembly the preferred substrate for running untrusted or performance-sensitive agent code within [[VisionClaw Agentic Container]].
 
-  #### Key Characteristics
+#### Key Characteristics
 
-  - **Stack-Based Architecture**: Instructions operate on a typed operand stack; there are no general-purpose registers, making the format compact and easy to verify.
-  - **Linear Memory Model**: Each module has a contiguous, bounds-checked byte array (linear memory) that it manages exclusively; the host and other modules cannot access it without explicit sharing.
-  - **Strong Type System**: Wasm's four value types (i32, i64, f32, f64) and function signatures are checked at load time, preventing entire classes of memory corruption bugs.
-  - **Capability-Based Security**: Modules cannot perform I/O, make syscalls, or access the DOM without explicit host-provided imports; WASI extends this to a capability-oriented filesystem and network API.
-  - **Deterministic Execution**: Given the same inputs, a Wasm module produces identical outputs on any conforming host, enabling reproducible computation and cryptographic audit trails.
-  - **Compact Binary Format**: Modules are typically 40–80 % smaller than equivalent native binaries, reducing cold-start latency on edge and mobile deployments.
+- **Stack-Based Architecture**: Instructions operate on a typed operand stack; there are no general-purpose registers, making the format compact and easy to verify.
+- **Linear Memory Model**: Each module has a contiguous, bounds-checked byte array (linear memory) that it manages exclusively; the host and other modules cannot access it without explicit sharing.
+- **Strong Type System**: Wasm's four value types (i32, i64, f32, f64) and function signatures are checked at load time, preventing entire classes of memory corruption bugs.
+- **Capability-Based Security**: Modules cannot perform I/O, make syscalls, or access the DOM without explicit host-provided imports; WASI extends this to a capability-oriented filesystem and network API.
+- **Deterministic Execution**: Given the same inputs, a Wasm module produces identical outputs on any conforming host, enabling reproducible computation and cryptographic audit trails.
+- **Compact Binary Format**: Modules are typically 40–80 % smaller than equivalent native binaries, reducing cold-start latency on edge and mobile deployments.
 
   #### How It Works
 
@@ -32,11 +31,11 @@ WebAssembly (Wasm) is a binary instruction format for a stack-based virtual mach
 
   #### Standards and References
 
-  - W3C WebAssembly Working Group. (2019). *WebAssembly Core Specification*. W3C Recommendation. https://www.w3.org/TR/wasm-core-1/
-  - Haas, A., et al. (2017). "Bringing the Web Up to Speed with WebAssembly." *ACM SIGPLAN PLDI 2017*.
-  - Bytecode Alliance. (2024). *WASI Preview 2 and the Component Model*. https://bytecodealliance.org/
-  - Cloudflare. (2025). "Workers Runtime: WebAssembly at the Edge." Cloudflare Developer Documentation.
-  - W3C WASM CG. (2024). *WebAssembly Component Model Specification*. https://github.com/WebAssembly/component-model
+- W3C WebAssembly Working Group. (2019). *WebAssembly Core Specification*. W3C Recommendation. https://www.w3.org/TR/wasm-core-1/
+- Haas, A., et al. (2017). "Bringing the Web Up to Speed with WebAssembly." *ACM SIGPLAN PLDI 2017*.
+- Bytecode Alliance. (2024). *WASI Preview 2 and the Component Model*. https://bytecodealliance.org/
+- Cloudflare. (2025). "Workers Runtime: WebAssembly at the Edge." Cloudflare Developer Documentation.
+- W3C WASM CG. (2024). *WebAssembly Component Model Specification*. https://github.com/WebAssembly/component-model
 
-- ### Provenance
+### Provenance
 

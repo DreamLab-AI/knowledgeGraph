@@ -1,177 +1,176 @@
-
 Novel view synthesis and 3D scene representation technique introduced by Kerbl, Kopanas, Leimkühler and Drettakis at SIGGRAPH 2023 (INRIA Sophia Antlis), representing scenes as explicit collections of s of anisotropic 3D Gaussian primitives — each defined by a 3D mean position μ ∈ ℝ³, a 3×3 covar...
 
-- ### Semantic Classification
+### Semantic Classification
 
-- ### Content
+### Content
 
-  ## Compositional Relationships (Components)
-	    SubClassOf(sc:GaussianSplatting
-	      ObjectSomeValuesFrom(sc:hasPart sc:GaussianPrimitive))
-	    SubClassOf(sc:GaussianSplatting
-	      ObjectSomeValuesFrom(sc:hasPart sc:SphericalHarmonicCoefficients))
-	    SubClassOf(sc:GaussianSplatting
-	      ObjectSomeValuesFrom(sc:hasPart sc:DifferentiableRasterizer))
-	    SubClassOf(sc:GaussianSplatting
-	      ObjectSomeValuesFrom(sc:hasPart sc:AdaptiveDensificationController))
-	    SubClassOf(sc:GaussianSplatting
-	      ObjectSomeValuesFrom(sc:hasPart sc:SfMPointCloudInitialiser))
-	    SubClassOf(sc:GaussianSplatting
-	      ObjectSomeValuesFrom(sc:hasPart sc:DepthSortingModule))
-	    SubClassOf(sc:GaussianSplatting
-	      ObjectSomeValuesFrom(sc:hasPart sc:AlphaCompositingPipeline))
-	    SubClassOf(sc:GaussianSplatting
-	      ObjectSomeValuesFrom(sc:hasPart sc:TileBasedGPURasteriser))
+## Compositional Relationships (Components)
+    SubClassOf(sc:GaussianSplatting
+      ObjectSomeValuesFrom(sc:hasPart sc:GaussianPrimitive))
+    SubClassOf(sc:GaussianSplatting
+      ObjectSomeValuesFrom(sc:hasPart sc:SphericalHarmonicCoefficients))
+    SubClassOf(sc:GaussianSplatting
+      ObjectSomeValuesFrom(sc:hasPart sc:DifferentiableRasterizer))
+    SubClassOf(sc:GaussianSplatting
+      ObjectSomeValuesFrom(sc:hasPart sc:AdaptiveDensificationController))
+    SubClassOf(sc:GaussianSplatting
+      ObjectSomeValuesFrom(sc:hasPart sc:SfMPointCloudInitialiser))
+    SubClassOf(sc:GaussianSplatting
+      ObjectSomeValuesFrom(sc:hasPart sc:DepthSortingModule))
+    SubClassOf(sc:GaussianSplatting
+      ObjectSomeValuesFrom(sc:hasPart sc:AlphaCompositingPipeline))
+    SubClassOf(sc:GaussianSplatting
+      ObjectSomeValuesFrom(sc:hasPart sc:TileBasedGPURasteriser))
 
-	    ## Dependency Relationships
-	    SubClassOf(sc:GaussianSplatting
-	      ObjectSomeValuesFrom(sc:requires sc:StructureFromMotionCloud))
-	    SubClassOf(sc:GaussianSplatting
-	      ObjectSomeValuesFrom(sc:requires sc:MultiViewPhotographyInput))
-	    SubClassOf(sc:GaussianSplatting
-	      ObjectSomeValuesFrom(sc:requires sc:GPUComputeCapability))
-	    SubClassOf(sc:GaussianSplatting
-	      ObjectSomeValuesFrom(sc:requires sc:CameraCalibrationData))
-	    SubClassOf(sc:GaussianSplatting
-	      ObjectSomeValuesFrom(sc:requires sc:AdamOptimiserGradientDescent))
-	    SubClassOf(sc:GaussianSplatting
-	      ObjectSomeValuesFrom(sc:dependsOn sc:LinearAlgebra))
-	    SubClassOf(sc:GaussianSplatting
-	      ObjectSomeValuesFrom(sc:dependsOn sc:GaussianDistributionMathematics))
-	    SubClassOf(sc:GaussianSplatting
-	      ObjectSomeValuesFrom(sc:dependsOn sc:DifferentiableRenderingFramework))
-	    SubClassOf(sc:GaussianSplatting
-	      ObjectSomeValuesFrom(sc:dependsOn sc:EWASplattingPredecessor))
+    ## Dependency Relationships
+    SubClassOf(sc:GaussianSplatting
+      ObjectSomeValuesFrom(sc:requires sc:StructureFromMotionCloud))
+    SubClassOf(sc:GaussianSplatting
+      ObjectSomeValuesFrom(sc:requires sc:MultiViewPhotographyInput))
+    SubClassOf(sc:GaussianSplatting
+      ObjectSomeValuesFrom(sc:requires sc:GPUComputeCapability))
+    SubClassOf(sc:GaussianSplatting
+      ObjectSomeValuesFrom(sc:requires sc:CameraCalibrationData))
+    SubClassOf(sc:GaussianSplatting
+      ObjectSomeValuesFrom(sc:requires sc:AdamOptimiserGradientDescent))
+    SubClassOf(sc:GaussianSplatting
+      ObjectSomeValuesFrom(sc:dependsOn sc:LinearAlgebra))
+    SubClassOf(sc:GaussianSplatting
+      ObjectSomeValuesFrom(sc:dependsOn sc:GaussianDistributionMathematics))
+    SubClassOf(sc:GaussianSplatting
+      ObjectSomeValuesFrom(sc:dependsOn sc:DifferentiableRenderingFramework))
+    SubClassOf(sc:GaussianSplatting
+      ObjectSomeValuesFrom(sc:dependsOn sc:EWASplattingPredecessor))
 
-	    ## Capability Relationships
-	    SubClassOf(sc:GaussianSplatting
-	      ObjectSomeValuesFrom(sc:enables sc:RealTimeNovelViewSynthesis))
-	    SubClassOf(sc:GaussianSplatting
-	      ObjectSomeValuesFrom(sc:enables sc:PhotorealisticSceneCapture))
-	    SubClassOf(sc:GaussianSplatting
-	      ObjectSomeValuesFrom(sc:enables sc:ImmersiveAugmentedReality))
-	    SubClassOf(sc:GaussianSplatting
-	      ObjectSomeValuesFrom(sc:enables sc:DigitalTwinCreation))
-	    SubClassOf(sc:GaussianSplatting
-	      ObjectSomeValuesFrom(sc:enables sc:SmartphoneSceneCapture))
-	    SubClassOf(sc:GaussianSplatting
-	      ObjectSomeValuesFrom(sc:supports sc:ARHeadsetRendering))
-	    SubClassOf(sc:GaussianSplatting
-	      ObjectSomeValuesFrom(sc:supports sc:VolumetricVideoConferencing))
-	    SubClassOf(sc:GaussianSplatting
-	      ObjectSomeValuesFrom(sc:supports sc:RoboticsSceneMapping))
-	    SubClassOf(sc:GaussianSplatting
-	      ObjectSomeValuesFrom(sc:supports sc:ArchaeologicalDigitisation))
-	    SubClassOf(sc:GaussianSplatting
-	      ObjectSomeValuesFrom(sc:supports sc:IndustrialDigitalTwin))
+    ## Capability Relationships
+    SubClassOf(sc:GaussianSplatting
+      ObjectSomeValuesFrom(sc:enables sc:RealTimeNovelViewSynthesis))
+    SubClassOf(sc:GaussianSplatting
+      ObjectSomeValuesFrom(sc:enables sc:PhotorealisticSceneCapture))
+    SubClassOf(sc:GaussianSplatting
+      ObjectSomeValuesFrom(sc:enables sc:ImmersiveAugmentedReality))
+    SubClassOf(sc:GaussianSplatting
+      ObjectSomeValuesFrom(sc:enables sc:DigitalTwinCreation))
+    SubClassOf(sc:GaussianSplatting
+      ObjectSomeValuesFrom(sc:enables sc:SmartphoneSceneCapture))
+    SubClassOf(sc:GaussianSplatting
+      ObjectSomeValuesFrom(sc:supports sc:ARHeadsetRendering))
+    SubClassOf(sc:GaussianSplatting
+      ObjectSomeValuesFrom(sc:supports sc:VolumetricVideoConferencing))
+    SubClassOf(sc:GaussianSplatting
+      ObjectSomeValuesFrom(sc:supports sc:RoboticsSceneMapping))
+    SubClassOf(sc:GaussianSplatting
+      ObjectSomeValuesFrom(sc:supports sc:ArchaeologicalDigitisation))
+    SubClassOf(sc:GaussianSplatting
+      ObjectSomeValuesFrom(sc:supports sc:IndustrialDigitalTwin))
 
-	    ## Implementation Relationships
-	    SubClassOf(sc:GaussianSplatting
-	      ObjectSomeValuesFrom(sc:implements sc:EWASplattingProjection))
-	    SubClassOf(sc:GaussianSplatting
-	      ObjectSomeValuesFrom(sc:implements sc:AlphaBlendingCompositing))
-	    SubClassOf(sc:GaussianSplatting
-	      ObjectSomeValuesFrom(sc:implements sc:CovarianceDecompositionRS))
-	    SubClassOf(sc:GaussianSplatting
-	      ObjectSomeValuesFrom(sc:implements sc:SphericalHarmonicColourModel))
-	    SubClassOf(sc:GaussianSplatting
-	      ObjectSomeValuesFrom(sc:implements sc:TileBasedRasterisationPipeline))
-	    SubClassOf(sc:GaussianSplatting
-	      ObjectSomeValuesFrom(sc:uses sc:CUDAParallelCompute))
-	    SubClassOf(sc:GaussianSplatting
-	      ObjectSomeValuesFrom(sc:uses sc:COLMAPSfMPipeline))
-	    SubClassOf(sc:GaussianSplatting
-	      ObjectSomeValuesFrom(sc:uses sc:SSIMLossFunction))
-	    SubClassOf(sc:GaussianSplatting
-	      ObjectSomeValuesFrom(sc:uses sc:AdaptiveDensificationControl))
+    ## Implementation Relationships
+    SubClassOf(sc:GaussianSplatting
+      ObjectSomeValuesFrom(sc:implements sc:EWASplattingProjection))
+    SubClassOf(sc:GaussianSplatting
+      ObjectSomeValuesFrom(sc:implements sc:AlphaBlendingCompositing))
+    SubClassOf(sc:GaussianSplatting
+      ObjectSomeValuesFrom(sc:implements sc:CovarianceDecompositionRS))
+    SubClassOf(sc:GaussianSplatting
+      ObjectSomeValuesFrom(sc:implements sc:SphericalHarmonicColourModel))
+    SubClassOf(sc:GaussianSplatting
+      ObjectSomeValuesFrom(sc:implements sc:TileBasedRasterisationPipeline))
+    SubClassOf(sc:GaussianSplatting
+      ObjectSomeValuesFrom(sc:uses sc:CUDAParallelCompute))
+    SubClassOf(sc:GaussianSplatting
+      ObjectSomeValuesFrom(sc:uses sc:COLMAPSfMPipeline))
+    SubClassOf(sc:GaussianSplatting
+      ObjectSomeValuesFrom(sc:uses sc:SSIMLossFunction))
+    SubClassOf(sc:GaussianSplatting
+      ObjectSomeValuesFrom(sc:uses sc:AdaptiveDensificationControl))
 
-	    ## Reduction Relationships
-	    SubClassOf(sc:GaussianSplatting
-	      ObjectSomeValuesFrom(sc:reduces sc:NeRFRenderingLatency))
-	    SubClassOf(sc:GaussianSplatting
-	      ObjectSomeValuesFrom(sc:reduces sc:SceneTrainingTime))
-	    SubClassOf(sc:GaussianSplatting
-	      ObjectSomeValuesFrom(sc:reduces sc:AnnotationRequirement))
-	    SubClassOf(sc:GaussianSplatting
-	      ObjectSomeValuesFrom(sc:reduces sc:ContentCreationCost))
-	    SubClassOf(sc:GaussianSplatting
-	      ObjectSomeValuesFrom(sc:reduces sc:RealTimeRenderingBarrier))
+    ## Reduction Relationships
+    SubClassOf(sc:GaussianSplatting
+      ObjectSomeValuesFrom(sc:reduces sc:NeRFRenderingLatency))
+    SubClassOf(sc:GaussianSplatting
+      ObjectSomeValuesFrom(sc:reduces sc:SceneTrainingTime))
+    SubClassOf(sc:GaussianSplatting
+      ObjectSomeValuesFrom(sc:reduces sc:AnnotationRequirement))
+    SubClassOf(sc:GaussianSplatting
+      ObjectSomeValuesFrom(sc:reduces sc:ContentCreationCost))
+    SubClassOf(sc:GaussianSplatting
+      ObjectSomeValuesFrom(sc:reduces sc:RealTimeRenderingBarrier))
 
-	    ## Association Relationships
-	    SubClassOf(sc:GaussianSplatting
-	      ObjectSomeValuesFrom(sc:contrastsWith sc:NeuralRadianceField))
-	    SubClassOf(sc:GaussianSplatting
-	      ObjectSomeValuesFrom(sc:contrastsWith sc:ImplicitNeuralRepresentation))
-	    SubClassOf(sc:GaussianSplatting
-	      ObjectSomeValuesFrom(sc:relatedTo sc:InstantNGP))
-	    SubClassOf(sc:GaussianSplatting
-	      ObjectSomeValuesFrom(sc:relatedTo sc:PointCloudRepresentation))
-	    SubClassOf(sc:GaussianSplatting
-	      ObjectSomeValuesFrom(sc:relatedTo sc:DynamicSceneReconstruction))
+    ## Association Relationships
+    SubClassOf(sc:GaussianSplatting
+      ObjectSomeValuesFrom(sc:contrastsWith sc:NeuralRadianceField))
+    SubClassOf(sc:GaussianSplatting
+      ObjectSomeValuesFrom(sc:contrastsWith sc:ImplicitNeuralRepresentation))
+    SubClassOf(sc:GaussianSplatting
+      ObjectSomeValuesFrom(sc:relatedTo sc:InstantNGP))
+    SubClassOf(sc:GaussianSplatting
+      ObjectSomeValuesFrom(sc:relatedTo sc:PointCloudRepresentation))
+    SubClassOf(sc:GaussianSplatting
+      ObjectSomeValuesFrom(sc:relatedTo sc:DynamicSceneReconstruction))
 
-	    ## Data Properties
-	    DataPropertyAssertion(sc:hasIdentifier sc:GaussianSplatting "SC-0813"^^xsd:string)
-	    DataPropertyAssertion(sc:authorityScore sc:GaussianSplatting "0.87"^^xsd:decimal)
-	    DataPropertyAssertion(sc:renderingFPS sc:GaussianSplatting "150"^^xsd:integer)
-	    DataPropertyAssertion(sc:trainingMinutes sc:GaussianSplatting "30"^^xsd:integer)
-	    DataPropertyAssertion(sc:siggraphYear sc:GaussianSplatting "2023"^^xsd:integer)
-	    DataPropertyAssertion(sc:githubStars sc:GaussianSplatting "14000"^^xsd:integer)
+    ## Data Properties
+    DataPropertyAssertion(sc:hasIdentifier sc:GaussianSplatting "SC-0813"^^xsd:string)
+    DataPropertyAssertion(sc:authorityScore sc:GaussianSplatting "0.87"^^xsd:decimal)
+    DataPropertyAssertion(sc:renderingFPS sc:GaussianSplatting "150"^^xsd:integer)
+    DataPropertyAssertion(sc:trainingMinutes sc:GaussianSplatting "30"^^xsd:integer)
+    DataPropertyAssertion(sc:siggraphYear sc:GaussianSplatting "2023"^^xsd:integer)
+    DataPropertyAssertion(sc:githubStars sc:GaussianSplatting "14000"^^xsd:integer)
 
-	    ## Property Constraints
-	    SubClassOf(sc:GaussianSplatting
-	      DataAllValuesFrom(sc:requiresGPU xsd:boolean))
-	    SubClassOf(sc:GaussianSplatting
-	      DataSomeValuesFrom(sc:gaussianCount xsd:integer))
-	    SubClassOf(sc:GaussianSplatting
-	      DataMinCardinality(1 sc:hasMultiViewInput xsd:integer))
+    ## Property Constraints
+    SubClassOf(sc:GaussianSplatting
+      DataAllValuesFrom(sc:requiresGPU xsd:boolean))
+    SubClassOf(sc:GaussianSplatting
+      DataSomeValuesFrom(sc:gaussianCount xsd:integer))
+    SubClassOf(sc:GaussianSplatting
+      DataMinCardinality(1 sc:hasMultiViewInput xsd:integer))
 
-	    ## Annotations
-	    AnnotationAssertion(rdfs:label sc:GaussianSplatting "Gaussian Splatting"@en)
-	    AnnotationAssertion(rdfs:comment sc:GaussianSplatting "Novel view synthesis technique representing 3D scenes as explicit collections of anisotropic Gaussian primitives rendered via differentiable rasterisation at 100-300 FPS, 100x faster than NeRF, enabling real-time AR/VR deployment; Kerbl et al. SIGGRAPH 2023."@en)
-	    AnnotationAssertion(dcterms:identifier sc:GaussianSplatting "SC-0813"^^xsd:string)
-	    AnnotationAssertion(dcterms:subject sc:GaussianSplatting "Novel View Synthesis, Neural Rendering, Spatial Computing, AR/VR, 3D Reconstruction"@en)
+    ## Annotations
+    AnnotationAssertion(rdfs:label sc:GaussianSplatting "Gaussian Splatting"@en)
+    AnnotationAssertion(rdfs:comment sc:GaussianSplatting "Novel view synthesis technique representing 3D scenes as explicit collections of anisotropic Gaussian primitives rendered via differentiable rasterisation at 100-300 FPS, 100x faster than NeRF, enabling real-time AR/VR deployment; Kerbl et al. SIGGRAPH 2023."@en)
+    AnnotationAssertion(dcterms:identifier sc:GaussianSplatting "SC-0813"^^xsd:string)
+    AnnotationAssertion(dcterms:subject sc:GaussianSplatting "Novel View Synthesis, Neural Rendering, Spatial Computing, AR/VR, 3D Reconstruction"@en)
 
-  ## About Gaussian Splatting
+## About Gaussian Splatting
 
-  **Gaussian Splatting** — formally 3D Gaussian Splatting (3DGS) — is a breakthrough technique for novel view synthesis and photorealistic 3D scene representation published at SIGGRAPH 2023 by Bernhard Kerbl, Georgios Kopanas, Thomas Leimkühler, and George Drettakis at INRIA Sophia Antipolis. It represents a fundamental architectural departure from the implicit neural representations popularised by [[Neural Radiance Fields]] (NeRF, Mildenhall et al. 2020): rather than encoding scene geometry and appearance inside the weights of a multilayer perceptron queried through differentiable volumetric ray marching, Gaussian Splatting stores scene information as an **explicit, editable set of 3D Gaussian primitives** that are rendered through GPU-accelerated rasterisation.
+**Gaussian Splatting** — formally 3D Gaussian Splatting (3DGS) — is a breakthrough technique for novel view synthesis and photorealistic 3D scene representation published at SIGGRAPH 2023 by Bernhard Kerbl, Georgios Kopanas, Thomas Leimkühler, and George Drettakis at INRIA Sophia Antipolis. It represents a fundamental architectural departure from the implicit neural representations popularised by [[Neural Radiance Fields]] (NeRF, Mildenhall et al. 2020): rather than encoding scene geometry and appearance inside the weights of a multilayer perceptron queried through differentiable volumetric ray marching, Gaussian Splatting stores scene information as an **explicit, editable set of 3D Gaussian primitives** that are rendered through GPU-accelerated rasterisation.
 
-  The practical consequence of this representational choice is dramatic: Gaussian Splatting achieves 100–300 FPS at 1080p resolution on a single consumer GPU (RTX 4090), over 100× faster than vanilla NeRF, whilst training in 20–40 minutes versus 12–48 hours — all at comparable or superior photometric fidelity on standard benchmarks (Tanks and Temples, Mip-NeRF 360 outdoor scenes, Deep Blending indoor scenes). This combination of rendering speed, training efficiency, and scene quality broke the practical barrier that had prevented neural rendering from being deployed in real-time applications — especially immersive AR/VR experiences requiring sustained 90+ FPS.
+The practical consequence of this representational choice is dramatic: Gaussian Splatting achieves 100–300 FPS at 1080p resolution on a single consumer GPU (RTX 4090), over 100× faster than vanilla NeRF, whilst training in 20–40 minutes versus 12–48 hours — all at comparable or superior photometric fidelity on standard benchmarks (Tanks and Temples, Mip-NeRF 360 outdoor scenes, Deep Blending indoor scenes). This combination of rendering speed, training efficiency, and scene quality broke the practical barrier that had prevented neural rendering from being deployed in real-time applications — especially immersive AR/VR experiences requiring sustained 90+ FPS.
 
-  The intellectual lineage of the splatting projection step traces to Matthias Zwicker's EWA (Elliptical Weighted Average) Splatting framework (Zwicker et al. 2001, 2002), which formalised the mathematical basis for projecting 3D volumetric kernels onto 2D image planes in a signal-theoretically principled manner. Kerbl et al. adapted and differentiably reimplemented this projection within a CUDA tile-based rasteriser that processes millions of Gaussians per frame through GPU parallelism, enabling gradient flow through the entire rendering pipeline for end-to-end optimisation from multi-view photographs.
+The intellectual lineage of the splatting projection step traces to Matthias Zwicker's EWA (Elliptical Weighted Average) Splatting framework (Zwicker et al. 2001, 2002), which formalised the mathematical basis for projecting 3D volumetric kernels onto 2D image planes in a signal-theoretically principled manner. Kerbl et al. adapted and differentiably reimplemented this projection within a CUDA tile-based rasteriser that processes millions of Gaussians per frame through GPU parallelism, enabling gradient flow through the entire rendering pipeline for end-to-end optimisation from multi-view photographs.
 
-  ### Core Representation: Gaussian Primitives
+### Core Representation: Gaussian Primitives
 
-  Each Gaussian primitive Gᵢ in a 3DGS scene is parameterised by five learnable attribute groups:
+Each Gaussian primitive Gᵢ in a 3DGS scene is parameterised by five learnable attribute groups:
 
-  **Position (μᵢ ∈ ℝ³)**: The 3D centre of the Gaussian in world space, initialised from a sparse SfM point cloud produced by [[COLMAP]] run on the input photograph set.
+**Position (μᵢ ∈ ℝ³)**: The 3D centre of the Gaussian in world space, initialised from a sparse SfM point cloud produced by [[COLMAP]] run on the input photograph set.
 
-  **Covariance matrix (Σᵢ ∈ ℝ³ˣ³)**: Encodes the ellipsoidal shape and orientation of the Gaussian. To ensure the covariance matrix remains positive semi-definite during optimisation, Σ is parameterised as Σ = RSSᵀRᵀ where R is a rotation matrix (stored as a unit quaternion q ∈ ℝ⁴) and S = diag(s₁, s₂, s₃) is a diagonal scaling matrix with per-axis scale factors s ∈ ℝ³. This decomposition provides an unconstrained optimisation space — gradients flow through the quaternion and scale parameters — whilst guaranteeing geometric validity.
+**Covariance matrix (Σᵢ ∈ ℝ³ˣ³)**: Encodes the ellipsoidal shape and orientation of the Gaussian. To ensure the covariance matrix remains positive semi-definite during optimisation, Σ is parameterised as Σ = RSSᵀRᵀ where R is a rotation matrix (stored as a unit quaternion q ∈ ℝ⁴) and S = diag(s₁, s₂, s₃) is a diagonal scaling matrix with per-axis scale factors s ∈ ℝ³. This decomposition provides an unconstrained optimisation space — gradients flow through the quaternion and scale parameters — whilst guaranteeing geometric validity.
 
-  **Spherical harmonic coefficients (cᵢ ∈ ℝ⁴⁸)**: View-dependent colour is modelled by spherical harmonics evaluated at the unit direction vector from camera to Gaussian centre. 3DGS uses degree-3 SH (16 coefficients per RGB channel = 48 total), capable of representing specular highlights, mirror reflections, and anisotropic appearance. At degree 0 (3 coefficients) the colour becomes view-independent; higher degrees capture progressively complex angular variation.
+**Spherical harmonic coefficients (cᵢ ∈ ℝ⁴⁸)**: View-dependent colour is modelled by spherical harmonics evaluated at the unit direction vector from camera to Gaussian centre. 3DGS uses degree-3 SH (16 coefficients per RGB channel = 48 total), capable of representing specular highlights, mirror reflections, and anisotropic appearance. At degree 0 (3 coefficients) the colour becomes view-independent; higher degrees capture progressively complex angular variation.
 
-  **Opacity (αᵢ ∈ [0,1])**: A per-Gaussian scalar transparency value stored as a sigmoid-activated parameter σᵢ, so αᵢ = sigmoid(σᵢ). This ensures α remains physically bounded during unconstrained gradient descent.
+**Opacity (αᵢ ∈ [0,1])**: A per-Gaussian scalar transparency value stored as a sigmoid-activated parameter σᵢ, so αᵢ = sigmoid(σᵢ). This ensures α remains physically bounded during unconstrained gradient descent.
 
-  A typical scene is represented by 1–6 million Gaussian primitives, occupying 200–800 MB in full precision (fp32) or 50–150 MB after quantisation-based compression. The explicit nature of the representation — unlike MLP weights — makes scenes directly editable: individual Gaussians can be deleted, translated, recoloured, or merged, enabling intuitive scene manipulation workflows analogous to point cloud or mesh editing.
+A typical scene is represented by 1–6 million Gaussian primitives, occupying 200–800 MB in full precision (fp32) or 50–150 MB after quantisation-based compression. The explicit nature of the representation — unlike MLP weights — makes scenes directly editable: individual Gaussians can be deleted, translated, recoloured, or merged, enabling intuitive scene manipulation workflows analogous to point cloud or mesh editing.
 
-  ### Rendering Pipeline
+### Rendering Pipeline
 
-  Rendering a 3DGS scene from a novel viewpoint proceeds through four GPU-parallelised stages implemented in CUDA:
+Rendering a 3DGS scene from a novel viewpoint proceeds through four GPU-parallelised stages implemented in CUDA:
 
-  **Stage 1 — Projection**: Each 3D Gaussian is projected from world space to the 2D image plane. The 3D mean μᵢ is transformed by the view-projection matrix to obtain the 2D projected centre μ̃ᵢ ∈ ℝ². The 3D covariance Σᵢ is approximated as a 2D covariance Σ̃ᵢ ∈ ℝ²ˣ² via the Jacobian J of the local affine approximation to the perspective projection: Σ̃ = JWΣWᵀJᵀ, where W is the world-to-camera rotation. This EWA-derived approximation preserves the Gaussian shape under perspective projection. The spherical harmonic coefficients are evaluated at the current view direction to obtain the RGB colour cᵢ.
+**Stage 1 — Projection**: Each 3D Gaussian is projected from world space to the 2D image plane. The 3D mean μᵢ is transformed by the view-projection matrix to obtain the 2D projected centre μ̃ᵢ ∈ ℝ². The 3D covariance Σᵢ is approximated as a 2D covariance Σ̃ᵢ ∈ ℝ²ˣ² via the Jacobian J of the local affine approximation to the perspective projection: Σ̃ = JWΣWᵀJᵀ, where W is the world-to-camera rotation. This EWA-derived approximation preserves the Gaussian shape under perspective projection. The spherical harmonic coefficients are evaluated at the current view direction to obtain the RGB colour cᵢ.
 
-  **Stage 2 — Sorting**: All projected Gaussians visible within the camera frustum are sorted by depth (distance along the camera z-axis) using a GPU radix sort — typically counting sort over quantised depth bins — to produce a depth-ordered list. This enables correct alpha-compositing via the painter's algorithm.
+**Stage 2 — Sorting**: All projected Gaussians visible within the camera frustum are sorted by depth (distance along the camera z-axis) using a GPU radix sort — typically counting sort over quantised depth bins — to produce a depth-ordered list. This enables correct alpha-compositing via the painter's algorithm.
 
-  **Stage 3 — Tile-Based Rasterisation**: The image plane is partitioned into 16×16 pixel tiles. Each tile is assigned a list of Gaussians whose 2D footprints overlap it. GPU thread blocks process each tile in parallel: for every pixel within the tile, the renderer traverses the Gaussian list front-to-back, accumulating colour and opacity via alpha compositing C = Σᵢ cᵢ αᵢ Πⱼ<ᵢ (1 − αⱼ), stopping early when accumulated opacity T = Πⱼ<ᵢ (1 − αⱼ) < ε (saturation threshold). This early-stop mechanism provides substantial throughput gains in densely occluded scenes.
+**Stage 3 — Tile-Based Rasterisation**: The image plane is partitioned into 16×16 pixel tiles. Each tile is assigned a list of Gaussians whose 2D footprints overlap it. GPU thread blocks process each tile in parallel: for every pixel within the tile, the renderer traverses the Gaussian list front-to-back, accumulating colour and opacity via alpha compositing C = Σᵢ cᵢ αᵢ Πⱼ<ᵢ (1 − αⱼ), stopping early when accumulated opacity T = Πⱼ<ᵢ (1 − αⱼ) < ε (saturation threshold). This early-stop mechanism provides substantial throughput gains in densely occluded scenes.
 
-  **Stage 4 — Loss and Backward Pass**: The rendered image is compared to the ground-truth photograph via a combined loss L = (1 − λ) L₁ + λ L_SSIM with λ = 0.2 (default). Gradients are backpropagated through the tile rasteriser to each Gaussian's parameters (position, quaternion, scale, SH coefficients, opacity) using the Adam optimiser (β₁=0.9, β₂=0.999, learning rate schedule with per-parameter warmup).
+**Stage 4 — Loss and Backward Pass**: The rendered image is compared to the ground-truth photograph via a combined loss L = (1 − λ) L₁ + λ L_SSIM with λ = 0.2 (default). Gradients are backpropagated through the tile rasteriser to each Gaussian's parameters (position, quaternion, scale, SH coefficients, opacity) using the Adam optimiser (β₁=0.9, β₂=0.999, learning rate schedule with per-parameter warmup).
 
-  ### Adaptive Densification
+### Adaptive Densification
 
-  A critical innovation distinguishing 3DGS from prior splatting methods is adaptive density control: a periodic heuristic applied every 100 training iterations that modulates the Gaussian count to match scene complexity:
+A critical innovation distinguishing 3DGS from prior splatting methods is adaptive density control: a periodic heuristic applied every 100 training iterations that modulates the Gaussian count to match scene complexity:
 
-  - **Splitting**: Gaussians with high positional gradient magnitude (∥∇_μ∥ > τ_pos, default 0.0002) in under-reconstructed regions are split into two smaller Gaussians, each scaled by a factor of 1/1.6 along the largest principal axis, improving local detail resolution.
-  - **Cloning**: Gaussians in under-reconstructed regions with small scale (below τ_size) are duplicated and displaced in the gradient direction, filling spatial gaps.
-  - **Pruning**: Gaussians with opacity α < τ_α = 0.005 after sigmoid activation are removed as visually transparent. Gaussians exceeding a maximum world-space footprint threshold (preventing floaters) are also pruned.
+- **Splitting**: Gaussians with high positional gradient magnitude (∥∇_μ∥ > τ_pos, default 0.0002) in under-reconstructed regions are split into two smaller Gaussians, each scaled by a factor of 1/1.6 along the largest principal axis, improving local detail resolution.
+- **Cloning**: Gaussians in under-reconstructed regions with small scale (below τ_size) are duplicated and displaced in the gradient direction, filling spatial gaps.
+- **Pruning**: Gaussians with opacity α < τ_α = 0.005 after sigmoid activation are removed as visually transparent. Gaussians exceeding a maximum world-space footprint threshold (preventing floaters) are also pruned.
 
   This adaptive scheme allows the Gaussian count to grow from ~100K SfM-initialised primitives to 1–6M over the course of training, concentrating representational capacity on high-frequency content (edges, fine texture) whilst minimising redundancy in smooth, low-information regions.
 
@@ -277,50 +276,51 @@ Novel view synthesis and 3D scene representation technique introduced by Kerbl, 
 
   **Near-Term (2026–2027)**:
 
-  - **Real-time capture from single RGB-D stream**: iPhone 16 Pro LiDAR + Neural Engine pipeline targeting sub-10-minute online Gaussian reconstruction from walking video, enabling casual photorealistic 3D sharing as routinely as smartphone video. NVIDIA Maxine Gaussian Avatar (announced GTC 2026) promises 30 Hz streaming Gaussian head avatars at 500 kbps.
-  - **Gaussian compression to <10 MB**: Implicit neural compression (INR-based Gaussian codec, Vector Quantised VAE for SH coefficients) targeting streaming over 4G LTE for global accessibility. EAGLES-2 (INRIA/Imperial collaboration, 2026) targets 8× further compression beyond original EAGLES.
-  - **Semantic Gaussian Splatting**: Every Gaussian labelled with semantic class (CLIP or DINO-V2 feature embedding attached to each primitive), enabling language-driven scene editing ("change the sofa colour to blue") and scene graph generation from photorealistic captures for AR overlay and robotics task planning.
+- **Real-time capture from single RGB-D stream**: iPhone 16 Pro LiDAR + Neural Engine pipeline targeting sub-10-minute online Gaussian reconstruction from walking video, enabling casual photorealistic 3D sharing as routinely as smartphone video. NVIDIA Maxine Gaussian Avatar (announced GTC 2026) promises 30 Hz streaming Gaussian head avatars at 500 kbps.
+- **Gaussian compression to <10 MB**: Implicit neural compression (INR-based Gaussian codec, Vector Quantised VAE for SH coefficients) targeting streaming over 4G LTE for global accessibility. EAGLES-2 (INRIA/Imperial collaboration, 2026) targets 8× further compression beyond original EAGLES.
+- **Semantic Gaussian Splatting**: Every Gaussian labelled with semantic class (CLIP or DINO-V2 feature embedding attached to each primitive), enabling language-driven scene editing ("change the sofa colour to blue") and scene graph generation from photorealistic captures for AR overlay and robotics task planning.
 
   **Medium-Term (2027–2029)**:
 
-  - **Full-body photorealistic avatars**: Generalised Gaussian Avatar systems (building on GaussianAvatars, X-Avatar, HumanGaussian) enabling real-time photorealistic telepresence from a single reference photograph or 30-second video. Targeted at Meta Presence Platform, Apple FaceTime Spatial, and enterprise video conferencing (Zoom, Teams).
-  - **Gaussian neural codecs in 6G**: 3GPP Release 22 (2028 target) NR Scene Representation includes Gaussian primitives as a standardised volumetric media format for 6G holographic communications, with 100× compression over 3D mesh streaming enabling real-time holographic telepresence.
-  - **Physically-based relighting in Gaussian scenes**: Decomposing Gaussian appearance into base colour, roughness, metallic (PBR material model), and environment lighting — enabling coherent relighting of Gaussian scenes under novel illumination, critical for AR compositing where virtual Gaussian objects must be rendered under real-world lighting estimated from smartphone HDR capture.
+- **Full-body photorealistic avatars**: Generalised Gaussian Avatar systems (building on GaussianAvatars, X-Avatar, HumanGaussian) enabling real-time photorealistic telepresence from a single reference photograph or 30-second video. Targeted at Meta Presence Platform, Apple FaceTime Spatial, and enterprise video conferencing (Zoom, Teams).
+- **Gaussian neural codecs in 6G**: 3GPP Release 22 (2028 target) NR Scene Representation includes Gaussian primitives as a standardised volumetric media format for 6G holographic communications, with 100× compression over 3D mesh streaming enabling real-time holographic telepresence.
+- **Physically-based relighting in Gaussian scenes**: Decomposing Gaussian appearance into base colour, roughness, metallic (PBR material model), and environment lighting — enabling coherent relighting of Gaussian scenes under novel illumination, critical for AR compositing where virtual Gaussian objects must be rendered under real-world lighting estimated from smartphone HDR capture.
 
   **Long-Term (2029–2030+)**:
 
-  - **Holographic light-field display rendering**: Gaussian Splatting as the scene representation layer for holographic displays (Looking Glass Pro, Sony Spatial Reality Display, future consumer light-field panels), replacing polygon rasterisation with native Gaussian hologram generation.
-  - **Gaussian World Models for embodied AI**: Using [[Neural Radiance Fields]] and Gaussian Splatting as the 3D world model layer in vision-language-action (VLA) robotics systems, enabling generalised spatial reasoning grounded in photorealistic scene memory.
-  - **Neural-Gaussian hybrid streaming codecs**: Combining sparse neural MLP global appearance priors with explicit Gaussian local detail layers, achieving 100× compression (< 5 MB scenes) whilst maintaining photorealistic quality for global streaming of cultural heritage and live events.
+- **Holographic light-field display rendering**: Gaussian Splatting as the scene representation layer for holographic displays (Looking Glass Pro, Sony Spatial Reality Display, future consumer light-field panels), replacing polygon rasterisation with native Gaussian hologram generation.
+- **Gaussian World Models for embodied AI**: Using [[Neural Radiance Fields]] and Gaussian Splatting as the 3D world model layer in vision-language-action (VLA) robotics systems, enabling generalised spatial reasoning grounded in photorealistic scene memory.
+- **Neural-Gaussian hybrid streaming codecs**: Combining sparse neural MLP global appearance priors with explicit Gaussian local detail layers, achieving 100× compression (< 5 MB scenes) whilst maintaining photorealistic quality for global streaming of cultural heritage and live events.
 
   ## Research and Literature
 
   Core publications:
-  - Kerbl, B., Kopanas, G., Leimkühler, T., & Drettakis, G. (2023). 3D Gaussian Splatting for Real-Time Radiance Field Rendering. *ACM Transactions on Graphics* (SIGGRAPH 2023), 42(4), 139:1–14. https://repo-sam.inria.fr/fungraph/3d-gaussian-splatting/
-  - Zwicker, M., Pfister, H., van Baar, J., & Gross, M. (2001). EWA Volume Splatting. *IEEE Visualization 2001*, 29–36.
-  - Zwicker, M., Pfister, H., van Baar, J., & Gross, M. (2002). EWA Splatting. *IEEE Transactions on Visualization and Computer Graphics*, 8(3), 223–238.
-  - Mildenhall, B., Srinivasan, P. P., Tancik, M., Barron, J. T., Ramamoorthi, R., & Ng, R. (2020). NeRF: Representing Scenes as Neural Radiance Fields for View Synthesis. *ECCV 2020*. https://arxiv.org/abs/2003.08934
-  - Müller, T., Evans, A., Schied, C., & Keller, A. (2022). Instant Neural Graphics Primitives with a Multiresolution Hash Encoding. *ACM SIGGRAPH 2022*. https://arxiv.org/abs/2201.05989
-  - Wu, G., Yi, T., Fang, J., Xie, L., Zhang, X., Wei, W., Liu, W., Tian, Q., & Wang, X. (2024). 4D Gaussian Splatting for Real-Time Dynamic Scene Rendering. *CVPR 2024*. https://arxiv.org/abs/2310.08528
-  - Yang, Z., Gao, X., Zhou, W., Jiao, S., Zhang, Y., & Jin, X. (2024). Deformable 3D Gaussians for High-Fidelity Monocular Dynamic Scene Reconstruction. *CVPR 2024*. https://arxiv.org/abs/2309.13101
-  - Qian, S., Kirschstein, T., Schoneveld, L., Davoli, D., Giebenhain, S., & Niessner, M. (2024). GaussianAvatars: Photorealistic Head Avatars with Rigged 3D Gaussians. *CVPR 2024*. https://arxiv.org/abs/2312.02069
-  - Guédon, A., & Lepetit, V. (2024). SuGaR: Surface-Aligned Gaussian Splatting for Efficient 3D Mesh Reconstruction. *CVPR 2024*. https://arxiv.org/abs/2311.12775
-  - Huang, B.-J., Yu, Z., Chen, A., Geiger, A., & Gao, S. (2024). 2D Gaussian Splatting for Geometrically Accurate Radiance Fields. *SIGGRAPH 2024*. https://arxiv.org/abs/2403.17888
-  - Fan, Z., Wang, K., Wen, K., Zhu, Z., Xu, D., & Wang, Z. (2024). LightGaussian: Unbounded 3D Gaussian Compression with 15x Reduction and 200+ FPS. *NeurIPS 2024*. https://arxiv.org/abs/2311.17245
-  - Girish, S., Gupta, K., & Shrivastava, A. (2024). EAGLES: Efficient Accelerated 3D Gaussians with Lightweight EncoderS. *ICLR 2024*. https://arxiv.org/abs/2312.04564
-  - Lu, T., Yu, M., Xu, L., Xiangli, Y., Wang, L., Lin, D., & Dai, B. (2024). Scaffold-GS: Structured 3D Gaussians for View-Adaptive Rendering. *CVPR 2024*. https://arxiv.org/abs/2312.00109
-  - Barron, J. T., Mildenhall, B., Verbin, D., Srinivasan, P. P., & Hedman, P. (2022). Mip-NeRF 360: Unbounded Anti-Aliased Neural Radiance Fields. *CVPR 2022*. https://arxiv.org/abs/2111.12077
-  - Keetha, N., Karhade, J., Jatavallabhula, K. M., Yang, G., Scherer, S., Ramanan, D., & Luiten, J. (2024). SplaTAM: Splat, Track & Map 3D Gaussians for Dense RGB-D SLAM. *CVPR 2024*. https://arxiv.org/abs/2312.02126
-  - Niedermayr, S., Stammer, J., & Westermann, R. (2024). Compressed 3D Gaussian Splatting for Accelerated Novel View Synthesis. *CVPR 2024 Workshop*. https://arxiv.org/abs/2401.02436
-  - Luiten, J., Kopanas, G., Leibe, B., & Ramanan, D. (2024). Dynamic 3D Gaussians: Tracking by Persistent Dynamic View Synthesis. *3DV 2024*. https://arxiv.org/abs/2308.09785
-  - Pfister, H., Zwicker, M., van Baar, J., & Gross, M. (2000). Surfels: Surface Elements as Rendering Primitives. *ACM SIGGRAPH 2000*, 335–342.
-  - Yu, Z., Chen, A., Huang, B., Salzmann, M., & Geiger, A. (2024). Gaussian Opacity Fields: Efficient and Compact Surface Reconstruction in Unbounded Scenes. *SIGGRAPH Asia 2024*. https://arxiv.org/abs/2404.10772
-  - Wang, Y., Han, Q., Habermann, M., Daniilidis, K., Theobalt, C., & Liu, L. (2024). SCGS: Semantic 3D Gaussian Splatting for Scene Understanding. *arXiv*. https://arxiv.org/abs/2403.14241
-  - Weng, L., Zhu, H., Xu, Y., & Loy, C. C. (2025). Survey: Neural Scene Representations 2024–2025. *arXiv*.
-  - INRIA. (2023). Official 3DGS Repository. GitHub: https://github.com/graphdeco-inria/gaussian-splatting
-  - Ye, V., et al. (2024). gsplat: An Open-Source Library for Gaussian Splatting. *arXiv*. https://arxiv.org/abs/2409.06765
-  - Luma AI. (2024). LumaAI API for 3DGS Capture and Export. Technical Blog. https://lumalabs.ai
-  - Polycam. (2024). Gaussian Splatting in Polycam 3.0. Product Documentation. https://poly.cam
+
+- Kerbl, B., Kopanas, G., Leimkühler, T., & Drettakis, G. (2023). 3D Gaussian Splatting for Real-Time Radiance Field Rendering. *ACM Transactions on Graphics* (SIGGRAPH 2023), 42(4), 139:1–14. https://repo-sam.inria.fr/fungraph/3d-gaussian-splatting/
+- Zwicker, M., Pfister, H., van Baar, J., & Gross, M. (2001). EWA Volume Splatting. *IEEE Visualization 2001*, 29–36.
+- Zwicker, M., Pfister, H., van Baar, J., & Gross, M. (2002). EWA Splatting. *IEEE Transactions on Visualization and Computer Graphics*, 8(3), 223–238.
+- Mildenhall, B., Srinivasan, P. P., Tancik, M., Barron, J. T., Ramamoorthi, R., & Ng, R. (2020). NeRF: Representing Scenes as Neural Radiance Fields for View Synthesis. *ECCV 2020*. https://arxiv.org/abs/2003.08934
+- Müller, T., Evans, A., Schied, C., & Keller, A. (2022). Instant Neural Graphics Primitives with a Multiresolution Hash Encoding. *ACM SIGGRAPH 2022*. https://arxiv.org/abs/2201.05989
+- Wu, G., Yi, T., Fang, J., Xie, L., Zhang, X., Wei, W., Liu, W., Tian, Q., & Wang, X. (2024). 4D Gaussian Splatting for Real-Time Dynamic Scene Rendering. *CVPR 2024*. https://arxiv.org/abs/2310.08528
+- Yang, Z., Gao, X., Zhou, W., Jiao, S., Zhang, Y., & Jin, X. (2024). Deformable 3D Gaussians for High-Fidelity Monocular Dynamic Scene Reconstruction. *CVPR 2024*. https://arxiv.org/abs/2309.13101
+- Qian, S., Kirschstein, T., Schoneveld, L., Davoli, D., Giebenhain, S., & Niessner, M. (2024). GaussianAvatars: Photorealistic Head Avatars with Rigged 3D Gaussians. *CVPR 2024*. https://arxiv.org/abs/2312.02069
+- Guédon, A., & Lepetit, V. (2024). SuGaR: Surface-Aligned Gaussian Splatting for Efficient 3D Mesh Reconstruction. *CVPR 2024*. https://arxiv.org/abs/2311.12775
+- Huang, B.-J., Yu, Z., Chen, A., Geiger, A., & Gao, S. (2024). 2D Gaussian Splatting for Geometrically Accurate Radiance Fields. *SIGGRAPH 2024*. https://arxiv.org/abs/2403.17888
+- Fan, Z., Wang, K., Wen, K., Zhu, Z., Xu, D., & Wang, Z. (2024). LightGaussian: Unbounded 3D Gaussian Compression with 15x Reduction and 200+ FPS. *NeurIPS 2024*. https://arxiv.org/abs/2311.17245
+- Girish, S., Gupta, K., & Shrivastava, A. (2024). EAGLES: Efficient Accelerated 3D Gaussians with Lightweight EncoderS. *ICLR 2024*. https://arxiv.org/abs/2312.04564
+- Lu, T., Yu, M., Xu, L., Xiangli, Y., Wang, L., Lin, D., & Dai, B. (2024). Scaffold-GS: Structured 3D Gaussians for View-Adaptive Rendering. *CVPR 2024*. https://arxiv.org/abs/2312.00109
+- Barron, J. T., Mildenhall, B., Verbin, D., Srinivasan, P. P., & Hedman, P. (2022). Mip-NeRF 360: Unbounded Anti-Aliased Neural Radiance Fields. *CVPR 2022*. https://arxiv.org/abs/2111.12077
+- Keetha, N., Karhade, J., Jatavallabhula, K. M., Yang, G., Scherer, S., Ramanan, D., & Luiten, J. (2024). SplaTAM: Splat, Track & Map 3D Gaussians for Dense RGB-D SLAM. *CVPR 2024*. https://arxiv.org/abs/2312.02126
+- Niedermayr, S., Stammer, J., & Westermann, R. (2024). Compressed 3D Gaussian Splatting for Accelerated Novel View Synthesis. *CVPR 2024 Workshop*. https://arxiv.org/abs/2401.02436
+- Luiten, J., Kopanas, G., Leibe, B., & Ramanan, D. (2024). Dynamic 3D Gaussians: Tracking by Persistent Dynamic View Synthesis. *3DV 2024*. https://arxiv.org/abs/2308.09785
+- Pfister, H., Zwicker, M., van Baar, J., & Gross, M. (2000). Surfels: Surface Elements as Rendering Primitives. *ACM SIGGRAPH 2000*, 335–342.
+- Yu, Z., Chen, A., Huang, B., Salzmann, M., & Geiger, A. (2024). Gaussian Opacity Fields: Efficient and Compact Surface Reconstruction in Unbounded Scenes. *SIGGRAPH Asia 2024*. https://arxiv.org/abs/2404.10772
+- Wang, Y., Han, Q., Habermann, M., Daniilidis, K., Theobalt, C., & Liu, L. (2024). SCGS: Semantic 3D Gaussian Splatting for Scene Understanding. *arXiv*. https://arxiv.org/abs/2403.14241
+- Weng, L., Zhu, H., Xu, Y., & Loy, C. C. (2025). Survey: Neural Scene Representations 2024–2025. *arXiv*.
+- INRIA. (2023). Official 3DGS Repository. GitHub: https://github.com/graphdeco-inria/gaussian-splatting
+- Ye, V., et al. (2024). gsplat: An Open-Source Library for Gaussian Splatting. *arXiv*. https://arxiv.org/abs/2409.06765
+- Luma AI. (2024). LumaAI API for 3DGS Capture and Export. Technical Blog. https://lumalabs.ai
+- Polycam. (2024). Gaussian Splatting in Polycam 3.0. Product Documentation. https://poly.cam
 
   ## Metadata
 
@@ -328,6 +328,7 @@ Novel view synthesis and 3D scene representation technique introduced by Kerbl, 
 
   Worker model: claude-sonnet-4-6. Enriched: 2026-05-17.
 
-- ### Provenance
-  - **domain-correction:** artificial-intelligence -> spatial-computing (IRI, URI, owl-class, same-as, legacy-term-id updated; original domain did not reflect rendering/spatial nature of concept)
+### Provenance
+
+- **domain-correction:** artificial-intelligence -> spatial-computing (IRI, URI, owl-class, same-as, legacy-term-id updated; original domain did not reflect rendering/spatial nature of concept)
 

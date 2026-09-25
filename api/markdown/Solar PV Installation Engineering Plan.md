@@ -1,24 +1,25 @@
-
 Solar plans are engineered configurations and optimisation analyses for solar photovoltaic (PV) installations, specifying panel tilt angles, array tiering, MPPT string layout, and economic projections for a given site's latitude and climate. This page documents a three-tier cascading solar panel system designed for Cumbria, England (54.5°N), where seasonal solar variation is extreme; the optimal configuration (43–45° tilt, 20% horizontal overlap, 18 panels at 6.3 kW peak) achieves approximately 3,179 kWh/year — three times the output of a conventional single-layer array in the same 10 m² footprint.
 
 **Solar plans** describe engineered configurations and simulation-driven optimisation analyses for solar PV installations. This page focuses on a three-tier cascading array designed for Cumbria, England, using a differential evolution algorithm to maximise annual energy yield within a constrained 10 m² footprint at 54.5°N latitude. The resulting design — 18 panels across three tiers at 43–45° tilt with 20% horizontal overlap — achieves 3,179 kWh/year, compared to ~1,065 kWh/year for a conventional flat array.
 
-- ### Semantic Classification
+### Semantic Classification
 
-- ### Content
-  # Three-Tier Solar Collector System Analysis for Cumbria, England
-  This report presents a comprehensive simulation and optimization of a three-tier cascading solar panel system designed specifically for Cumbria, England (54.5°N latitude). The analysis demonstrates that **a properly optimized three-tier system can generate approximately 3x more energy** than a conventional single-layer installation within the same 10m² footprint.
-  - **Annual Energy Production**: 3,179 kWh
-  - **Energy Density**: 318 kWh/m²/year
-  - **Total Panel Count**: 18 panels (6 per tier)
-  - **Peak Power Capacity**: 6.3 kW
-  - **Improvement vs Flat Array**: +198.6%
-  - **Improvement vs Standard Rooftop**: +199.4%
-  - **Latitude**: 54.5°N (Northern England)
-  - **Climate Type**: Temperate Maritime
-  - **Annual Solar Irradiance**: 900-1000 kWh/m²
-  - **Key Challenge**: Low winter sun angles (15° minimum elevation)
-  - **Opportunity**: Extended summer daylight hours
+### Content
+
+# Three-Tier Solar Collector System Analysis for Cumbria, England
+This report presents a comprehensive simulation and optimization of a three-tier cascading solar panel system designed specifically for Cumbria, England (54.5°N latitude). The analysis demonstrates that **a properly optimized three-tier system can generate approximately 3x more energy** than a conventional single-layer installation within the same 10m² footprint.
+
+- **Annual Energy Production**: 3,179 kWh
+- **Energy Density**: 318 kWh/m²/year
+- **Total Panel Count**: 18 panels (6 per tier)
+- **Peak Power Capacity**: 6.3 kW
+- **Improvement vs Flat Array**: +198.6%
+- **Improvement vs Standard Rooftop**: +199.4%
+- **Latitude**: 54.5°N (Northern England)
+- **Climate Type**: Temperate Maritime
+- **Annual Solar Irradiance**: 900-1000 kWh/m²
+- **Key Challenge**: Low winter sun angles (15° minimum elevation)
+- **Opportunity**: Extended summer daylight hours
   Cumbria experiences extreme seasonal variations in both sun angle and daylight hours:
   | Season | Sun Elevation Range | Daylight Hours | % of Annual Generation |
   |--------|-------------------|----------------|----------------------|
@@ -28,16 +29,16 @@ Solar plans are engineered configurations and optimisation analyses for solar ph
   | Autumn | 25-45° | 8-12 hours | 9.2% |
   The optimization algorithm identified the following optimal configuration:
   **Tier Specifications:**
-  - **Tier 1 (Top)**: 43.0° tilt angle
-  - **Tier 2 (Middle)**: 42.5° tilt angle
-  - **Tier 3 (Bottom)**: 45.0° tilt angle
-  - **Vertical Spacing**: 0.40m between tiers
-  - **Horizontal Overlap**: 20%
-  - **Type**: Standard 60-cell residential panels
-  - **Dimensions**: 1.65m × 1.0m per panel
-  - **Power Rating**: 350W per panel
-  - **Efficiency**: 20%
-  - **Configuration**: 6 panels per tier × 3 tiers = 18 total panels
+- **Tier 1 (Top)**: 43.0° tilt angle
+- **Tier 2 (Middle)**: 42.5° tilt angle
+- **Tier 3 (Bottom)**: 45.0° tilt angle
+- **Vertical Spacing**: 0.40m between tiers
+- **Horizontal Overlap**: 20%
+- **Type**: Standard 60-cell residential panels
+- **Dimensions**: 1.65m × 1.0m per panel
+- **Power Rating**: 350W per panel
+- **Efficiency**: 20%
+- **Configuration**: 6 panels per tier × 3 tiers = 18 total panels
   The system shows strong seasonal variation typical of northern latitudes:
   ```
   **Summer (June) Peak Day**: Up to 25 kWh/day
@@ -109,10 +110,10 @@ Solar plans are engineered configurations and optimisation analyses for solar ph
   - Summer: Reduce all angles by 10°
   - Winter: Increase all angles by 10°
   - Potential gain: +5-8% annual production
-	  2. **Bifacial Panels**: Use bifacial panels on Tiers 2 and 3
+  2. **Bifacial Panels**: Use bifacial panels on Tiers 2 and 3
   - Capture reflected light from upper tiers
   - Potential gain: +10-15% on lower tiers
-	  3. **Smart Tracking**: Add single-axis tracking to top tier only
+  3. **Smart Tracking**: Add single-axis tracking to top tier only
   - Maintains structural simplicity
   - Potential gain: +15-20% on top tier
   The three-tier cascading solar panel system represents a viable solution for maximizing solar energy generation in space-constrained locations in Cumbria, England. Despite the northern latitude and challenging weather conditions, the optimized configuration can achieve:
@@ -165,25 +166,44 @@ Solar plans are engineered configurations and optimisation analyses for solar ph
   October        73           ▓▓▓▓░░░░░░
   November       12           ▓░░░░░░░░░
   December        7           ▓░░░░░░░░░
-  - ### Daily Generation Profile
-  - ### Shadow Analysis
-  - ## Comparison with Alternative Configurations
-  - ### System Comparisons (10m² footprint)
-  - ### Configuration Trade-offs Tested
-  - ## Implementation Considerations
-  - ### Structural Requirements
-  - ### Electrical Configuration
-  - ### Installation Access
-  - ### Economic Analysis
-  - ## Advantages of Three-Tier Design
-  - ### Pros:
-  - ### Cons:
-  - ## Recommendations
-  - ### Ideal Applications
-  - ### Not Recommended For:
-  - ### Future Optimizations
-  - ## Conclusion
-  - ### Next Steps
 
-- ### Provenance
+### Daily Generation Profile
+
+### Shadow Analysis
+
+## Comparison with Alternative Configurations
+
+### System Comparisons (10m² footprint)
+
+### Configuration Trade-offs Tested
+
+## Implementation Considerations
+
+### Structural Requirements
+
+### Electrical Configuration
+
+### Installation Access
+
+### Economic Analysis
+
+## Advantages of Three-Tier Design
+
+### Pros:
+
+### Cons:
+
+## Recommendations
+
+### Ideal Applications
+
+### Not Recommended For:
+
+### Future Optimizations
+
+## Conclusion
+
+### Next Steps
+
+### Provenance
 

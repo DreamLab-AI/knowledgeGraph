@@ -1,44 +1,44 @@
-
 A computational paradigm in which jobs are accumulated and executed as a group rather than individually in real-time. Batch processing optimises throughput by amortising fixed overhead across many records, enabling efficient ETL pipelines, model training over large datasets, report generation, and vulnerability scanning. Scheduling may be time-based, event-triggered, or dependency-driven.
 
-- ### Semantic Classification
+### Semantic Classification
 
-- ### Content
+### Content
 
-  ### SKOS Conceptual Structure
+### SKOS Conceptual Structure
 
-  ## Processing Patterns
+## Processing Patterns
 
-  ### Simple Batch Pattern
-  ```
-  [Accumulate Data] → [Batch Trigger] → [Process Batch] → [Output Results]
-  ```
+### Simple Batch Pattern
+```
+[Accumulate Data] → [Batch Trigger] → [Process Batch] → [Output Results]
+```
 
-  ### ETL Pipeline Pattern
-  ```
-  [Extract] → [Transform] → [Load] → [Validate]
-   ↓           ↓            ↓
-  [Source]    [Staging]    [Target]
-  ```
+### ETL Pipeline Pattern
+```
+[Extract] → [Transform] → [Load] → [Validate]
+ ↓           ↓            ↓
+[Source]    [Staging]    [Target]
+```
 
-  ### MapReduce Pattern
-  ```
-  [Input Data] → [Map Phase] → [Shuffle] → [Reduce Phase] → [Output]
-                (parallel)               (parallel)
-  ```
+### MapReduce Pattern
+```
+[Input Data] → [Map Phase] → [Shuffle] → [Reduce Phase] → [Output]
+              (parallel)               (parallel)
+```
 
-  ### Lambda Architecture (Batch Layer)
-  ```
-  Historical Data → [Batch Layer] → [Master Dataset] → [Batch Views]
-                   (high latency, high accuracy)
-  ```
+### Lambda Architecture (Batch Layer)
+```
+Historical Data → [Batch Layer] → [Master Dataset] → [Batch Views]
+                 (high latency, high accuracy)
+```
 
-  ## Implementation Considerations
+## Implementation Considerations
 
-  ### Batch Size Optimization
-  - **Small Batches (< 100 records)**: Frequent, low-latency processing
-  - **Medium Batches (100-10K records)**: Balanced throughput and latency
-  - **Large Batches (10K+ records)**: Maximum throughput, higher latency
+### Batch Size Optimization
+
+- **Small Batches (< 100 records)**: Frequent, low-latency processing
+- **Medium Batches (100-10K records)**: Balanced throughput and latency
+- **Large Batches (10K+ records)**: Maximum throughput, higher latency
 
   ### Scheduling Strategies
   1. **Time-Based**: Cron-style periodic execution
@@ -47,16 +47,18 @@ A computational paradigm in which jobs are accumulated and executed as a group r
   4. **Resource-Aware**: Schedule based on availability
 
   ### Error Handling
-  - **Retry Logic**: Automatic retry on transient failures
-  - **Checkpoint/Restart**: Resume from last successful point
-  - **Dead Letter Queue**: Store failed records for investigation
-  - **Partial Success**: Continue despite individual record failures
+
+- **Retry Logic**: Automatic retry on transient failures
+- **Checkpoint/Restart**: Resume from last successful point
+- **Dead Letter Queue**: Store failed records for investigation
+- **Partial Success**: Continue despite individual record failures
 
   ### Performance Factors
-  - **Parallelization**: Distribute batch across workers
-  - **I/O Optimization**: Minimize disk/network operations
-  - **Memory Management**: Process in chunks if batch too large
-  - **Compression**: Reduce data transfer overhead
+
+- **Parallelization**: Distribute batch across workers
+- **I/O Optimization**: Minimize disk/network operations
+- **Memory Management**: Process in chunks if batch too large
+- **Compression**: Reduce data transfer overhead
 
   ## Cross-Domain Examples
 
@@ -67,39 +69,39 @@ A computational paradigm in which jobs are accumulated and executed as a group r
   type: ReportGeneration
   system: ManufacturingPlantDigitalTwin
   schedule:
-    frequency: daily
-    time: "02:00:00"
-    timezone: UTC
+  frequency: daily
+  time: "02:00:00"
+  timezone: UTC
   input:
-    dataSource: SensorTimeSeriesDatabase
-    timeRange:
-      start: yesterday_00:00:00
-      end: yesterday_23:59:59
-    recordCount: 86400000  # 1000 sensors * 60 sec/min * 60 min/hr * 24 hr
-    dataVolume: 3.2GB
+  dataSource: SensorTimeSeriesDatabase
+  timeRange:
+    start: yesterday_00:00:00
+    end: yesterday_23:59:59
+  recordCount: 86400000  # 1000 sensors * 60 sec/min * 60 min/hr * 24 hr
+  dataVolume: 3.2GB
   processing:
-    - extraction:
-        duration: PT5M
-        operation: QueryDatabase
-    - transformation:
-        duration: PT15M
-        operations:
-          - DataCleaning
-          - Aggregation
-          - StatisticalAnalysis
-    - visualization:
-        duration: PT10M
-        chartCount: 50
-    - reportGeneration:
-        duration: PT5M
-        format: PDF
+  - extraction:
+      duration: PT5M
+      operation: QueryDatabase
+  - transformation:
+      duration: PT15M
+      operations:
+        - DataCleaning
+        - Aggregation
+        - StatisticalAnalysis
+  - visualization:
+      duration: PT10M
+      chartCount: 50
+  - reportGeneration:
+      duration: PT5M
+      format: PDF
   output:
-    reportUrl: "/reports/plant_daily_2025-11-24.pdf"
-    emailRecipients: [operations@company.com]
+  reportUrl: "/reports/plant_daily_2025-11-24.pdf"
+  emailRecipients: [operations@company.com]
   totalDuration: PT35M
   resourceUsage:
-    cpuHours: 4.5
-    memoryGB: 32
+  cpuHours: 4.5
+  memoryGB: 32
   ```
 
   ### Example 2: Agent Policy Training Batch
@@ -109,47 +111,47 @@ A computational paradigm in which jobs are accumulated and executed as a group r
   type: ReinforcementLearningTraining
   agent: AutonomousWarehouseRobot
   schedule:
-    frequency: weekly
-    day: Sunday
-    time: "00:00:00"
+  frequency: weekly
+  day: Sunday
+  time: "00:00:00"
   input:
-    experienceData:
-      source: ExperienceReplayBuffer
-      recordCount: 1000000
-      dataVolume: 5GB
-      timeRange: PT168H  # Last 7 days
+  experienceData:
+    source: ExperienceReplayBuffer
+    recordCount: 1000000
+    dataVolume: 5GB
+    timeRange: PT168H  # Last 7 days
   processing:
-    - preprocessing:
-        duration: PT30M
-        operations:
-          - DataNormalization
-          - OutlierRemoval
-          - StateEncoding
-    - training:
-        duration: PT6H
-        algorithm: PPO
-        epochs: 100
-        batchSize: 1024
-        parallelWorkers: 8
-    - evaluation:
-        duration: PT1H
-        testScenarios: 100
-        metrics:
-          - AverageReward
-          - SuccessRate
-          - CollisionRate
-    - modelDeployment:
-        duration: PT15M
-        validation: true
-        rollback: onFailure
+  - preprocessing:
+      duration: PT30M
+      operations:
+        - DataNormalization
+        - OutlierRemoval
+        - StateEncoding
+  - training:
+      duration: PT6H
+      algorithm: PPO
+      epochs: 100
+      batchSize: 1024
+      parallelWorkers: 8
+  - evaluation:
+      duration: PT1H
+      testScenarios: 100
+      metrics:
+        - AverageReward
+        - SuccessRate
+        - CollisionRate
+  - modelDeployment:
+      duration: PT15M
+      validation: true
+      rollback: onFailure
   output:
-    modelVersion: v2.3.5
-    performanceImprovement: 12%
-    deploymentStatus: success
+  modelVersion: v2.3.5
+  performanceImprovement: 12%
+  deploymentStatus: success
   totalDuration: PT7H45M
   resourceUsage:
-    gpuHours: 48
-    memoryGB: 64
+  gpuHours: 48
+  memoryGB: 64
   ```
 
   ### Example 3: Security Vulnerability Scan Batch
@@ -159,46 +161,46 @@ A computational paradigm in which jobs are accumulated and executed as a group r
   type: VulnerabilityScan
   system: EnterpriseInfrastructure
   schedule:
-    frequency: weekly
-    day: Saturday
-    time: "22:00:00"
+  frequency: weekly
+  day: Saturday
+  time: "22:00:00"
   input:
-    targets:
-      servers: 500
-      applications: 150
-      networkDevices: 200
-    scanScope: comprehensive
+  targets:
+    servers: 500
+    applications: 150
+    networkDevices: 200
+  scanScope: comprehensive
   processing:
-    - discovery:
-        duration: PT30M
-        operation: NetworkDiscovery
-        activeHosts: 850
-    - portScanning:
-        duration: PT1H
-        portsScanned: 1000
-        parallelScans: 50
-    - vulnerabilityDetection:
-        duration: PT4H
-        cveDatabase: 200000 signatures
-        threadsPerHost: 10
-    - riskAssessment:
-        duration: PT30M
-        scoringModel: CVSS_v3
-    - reportGeneration:
-        duration: PT30M
-        format: [PDF, JSON, CSV]
+  - discovery:
+      duration: PT30M
+      operation: NetworkDiscovery
+      activeHosts: 850
+  - portScanning:
+      duration: PT1H
+      portsScanned: 1000
+      parallelScans: 50
+  - vulnerabilityDetection:
+      duration: PT4H
+      cveDatabase: 200000 signatures
+      threadsPerHost: 10
+  - riskAssessment:
+      duration: PT30M
+      scoringModel: CVSS_v3
+  - reportGeneration:
+      duration: PT30M
+      format: [PDF, JSON, CSV]
   output:
-    vulnerabilitiesFound:
-      critical: 15
-      high: 47
-      medium: 123
-      low: 89
-    reportUrl: "/security/scans/vuln_scan_2025-11-24.pdf"
-    remediationPlan: auto-generated
+  vulnerabilitiesFound:
+    critical: 15
+    high: 47
+    medium: 123
+    low: 89
+  reportUrl: "/security/scans/vuln_scan_2025-11-24.pdf"
+  remediationPlan: auto-generated
   totalDuration: PT6H30M
   resourceUsage:
-    cpuHours: 12
-    networkBandwidth: 100GB
+  cpuHours: 12
+  networkBandwidth: 100GB
   ```
 
   ## Query Patterns
@@ -211,9 +213,9 @@ A computational paradigm in which jobs are accumulated and executed as a group r
   SELECT ?batchJob ?duration ?dataVolume ?status
   WHERE {
   ?batchJob a dt:BatchProcessing ;
-    dt:hasDuration ?duration ;
-    dt:processesDataVolume ?dataVolume ;
-    dt:hasStatus ?status .
+  dt:hasDuration ?duration ;
+  dt:processesDataVolume ?dataVolume ;
+  dt:hasStatus ?status .
 
   FILTER (?duration > "PT2H"^^xsd:duration)
   }
@@ -227,10 +229,10 @@ A computational paradigm in which jobs are accumulated and executed as a group r
   SELECT ?batchJob ?frequency ?nextRun
   WHERE {
   ?batchJob a dt:BatchProcessing ;
-    dt:hasSchedule ?schedule .
+  dt:hasSchedule ?schedule .
 
   ?schedule dt:hasFrequency ?frequency ;
-    dt:nextExecutionTime ?nextRun .
+  dt:nextExecutionTime ?nextRun .
   }
   ORDER BY ?nextRun
   ```
@@ -238,22 +240,25 @@ A computational paradigm in which jobs are accumulated and executed as a group r
   ## Related Standards & Frameworks
 
   ### Batch Processing Frameworks
-  - **Apache Spark**: Unified batch and streaming
-  - **Apache Hadoop MapReduce**: Distributed batch processing
-  - **Apache Flink**: Batch and stream processing
-  - **Spring Batch**: Java batch processing framework
+
+- **Apache Spark**: Unified batch and streaming
+- **Apache Hadoop MapReduce**: Distributed batch processing
+- **Apache Flink**: Batch and stream processing
+- **Spring Batch**: Java batch processing framework
 
   ### Job Scheduling Systems
-  - **Apache Airflow**: Workflow orchestration
-  - **Luigi**: Python batch pipeline framework
-  - **Kubernetes CronJobs**: Container-based scheduling
-  - **Apache Oozie**: Hadoop workflow scheduler
+
+- **Apache Airflow**: Workflow orchestration
+- **Luigi**: Python batch pipeline framework
+- **Kubernetes CronJobs**: Container-based scheduling
+- **Apache Oozie**: Hadoop workflow scheduler
 
   ### Data Integration Tools
-  - **Talend**: ETL platform
-  - **Apache NiFi**: Data flow automation
-  - **Informatica**: Enterprise data integration
-  - **AWS Glue**: Managed ETL service
+
+- **Talend**: ETL platform
+- **Apache NiFi**: Data flow automation
+- **Informatica**: Enterprise data integration
+- **AWS Glue**: Managed ETL service
 
   ## Best Practices
 
@@ -265,11 +270,12 @@ A computational paradigm in which jobs are accumulated and executed as a group r
   5. **Monitoring**: Track batch job health and performance
 
   ### Anti-Patterns to Avoid
-  - **Monster Batches**: Excessively large batches causing failures
-  - **Sequential Bottlenecks**: Lack of parallelization
-  - **Tight Coupling**: Batch jobs with hard dependencies
-  - **No Error Handling**: Missing retry and recovery logic
-  - **Resource Contention**: Competing with production workloads
+
+- **Monster Batches**: Excessively large batches causing failures
+- **Sequential Bottlenecks**: Lack of parallelization
+- **Tight Coupling**: Batch jobs with hard dependencies
+- **No Error Handling**: Missing retry and recovery logic
+- **Resource Contention**: Competing with production workloads
 
   ## Performance Optimization
 
@@ -281,30 +287,34 @@ A computational paradigm in which jobs are accumulated and executed as a group r
   5. **Resource Allocation**: Right-size compute resources
 
   ### Monitoring Metrics
-  - **Batch Duration**: Time to complete batch
-  - **Throughput**: Records processed per minute
-  - **Success Rate**: Percentage of successful batches
-  - **Resource Utilization**: CPU, memory, disk, network usage
-  - **Data Skew**: Distribution of data across partitions
+
+- **Batch Duration**: Time to complete batch
+- **Throughput**: Records processed per minute
+- **Success Rate**: Percentage of successful batches
+- **Resource Utilization**: CPU, memory, disk, network usage
+- **Data Skew**: Distribution of data across partitions
 
   #### References
   ### Academic Literature
-  - Dean, J., & Ghemawat, S. (2004). "MapReduce: Simplified Data Processing on Large Clusters"
-  - Zaharia, M., et al. (2016). "Apache Spark: A Unified Engine for Big Data Processing"
+
+- Dean, J., & Ghemawat, S. (2004). "MapReduce: Simplified Data Processing on Large Clusters"
+- Zaharia, M., et al. (2016). "Apache Spark: A Unified Engine for Big Data Processing"
 
   ### Technical Resources
-  - Apache Spark Documentation
-  - Spring Batch Reference Guide
+
+- Apache Spark Documentation
+- Spring Batch Reference Guide
 
   ## Maintenance Notes
-  - **Last Updated**: 2025-11-24
-  - **Review Cycle**: Quarterly
-  - **Stakeholders**: Data Engineers, System Architects
-  - **Change Log**: Initial template creation
+
+- **Last Updated**: 2025-11-24
+- **Review Cycle**: Quarterly
+- **Stakeholders**: Data Engineers, System Architects
+- **Change Log**: Initial template creation
 
   ---
 
   **Tags**: #temporal-concept #processing-model #batch #ETL #data-processing #cross-domain #DT-1007
 
-- ### Provenance
+### Provenance
 

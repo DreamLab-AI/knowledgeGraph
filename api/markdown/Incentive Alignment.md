@@ -1,4 +1,3 @@
-
 Incentive Alignment is the design principle by which blockchain protocols structure economic rewards and penalties such that individual rational behaviour converges with the collective goals of the network. When correctly engineered, participants who act in their own self-interest—validators confirming blocks, miners extending chains, token holders participating in governance—simultaneously reinforce system security, liveness, and integrity. Misaligned incentives produce attack vectors such as selfish mining, validator collusion, or governance capture.
 
 ### Definition
@@ -19,5 +18,5 @@ Incentive alignment becomes more complex in multi-layer ecosystems. Layer-2 oper
 
 Governance tokens extend incentive alignment to protocol upgrades: holders benefit from improvements that increase token value, aligning improvement proposals with broader network health. However, large token concentrations can create misalignment where a minority captures disproportionate governance power—motivating research into quadratic voting, time-locked governance, and delegation mechanisms.
 
-- ### Provenance
+### Provenance
 

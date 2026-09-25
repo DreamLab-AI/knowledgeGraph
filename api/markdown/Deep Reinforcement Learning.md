@@ -1,144 +1,149 @@
-
 Deep Reinforcement Learning (DRL) is a machine learning paradigm that combines deep neural networks with reinforcement learning, enabling agents to learn optimal policies for sequential decision-making tasks by interacting with an environment, receiving scalar reward signals, and updating neural network parameters through gradient-based optimisation. Grounded in the Markov Decision Process framework, DRL applies the Bellman equation recursively to approximate value functions or directly optimise policies using methods such as DQN, PPO, SAC, and MuZero, achieving superhuman performance in games, robotics control, chip design, and language model alignment.
 
-- ### Semantic Classification
+### Semantic Classification
 
-- ### Content
+### Content
 
-  ## Compositional Relationships (Components)
-      SubClassOf(ai:DeepReinforcementLearning
-        ObjectSomeValuesFrom(ai:hasPart ai:ValueFunction))
-      SubClassOf(ai:DeepReinforcementLearning
-        ObjectSomeValuesFrom(ai:hasPart ai:PolicyNetwork))
-      SubClassOf(ai:DeepReinforcementLearning
-        ObjectSomeValuesFrom(ai:hasPart ai:RewardSignal))
-      SubClassOf(ai:DeepReinforcementLearning
-        ObjectSomeValuesFrom(ai:hasPart ai:ActionSpace))
-      SubClassOf(ai:DeepReinforcementLearning
-        ObjectSomeValuesFrom(ai:hasPart ai:ExperienceReplay))
-      SubClassOf(ai:DeepReinforcementLearning
-        ObjectSomeValuesFrom(ai:hasPart ai:ExplorationExploitationTradeoff))
-      SubClassOf(ai:DeepReinforcementLearning
-        ObjectSomeValuesFrom(ai:hasPart ai:BellmanEquation))
-      SubClassOf(ai:DeepReinforcementLearning
-        ObjectSomeValuesFrom(ai:hasPart ai:EnvironmentModel))
+## Compositional Relationships (Components)
+    SubClassOf(ai:DeepReinforcementLearning
+      ObjectSomeValuesFrom(ai:hasPart ai:ValueFunction))
+    SubClassOf(ai:DeepReinforcementLearning
+      ObjectSomeValuesFrom(ai:hasPart ai:PolicyNetwork))
+    SubClassOf(ai:DeepReinforcementLearning
+      ObjectSomeValuesFrom(ai:hasPart ai:RewardSignal))
+    SubClassOf(ai:DeepReinforcementLearning
+      ObjectSomeValuesFrom(ai:hasPart ai:ActionSpace))
+    SubClassOf(ai:DeepReinforcementLearning
+      ObjectSomeValuesFrom(ai:hasPart ai:ExperienceReplay))
+    SubClassOf(ai:DeepReinforcementLearning
+      ObjectSomeValuesFrom(ai:hasPart ai:ExplorationExploitationTradeoff))
+    SubClassOf(ai:DeepReinforcementLearning
+      ObjectSomeValuesFrom(ai:hasPart ai:BellmanEquation))
+    SubClassOf(ai:DeepReinforcementLearning
+      ObjectSomeValuesFrom(ai:hasPart ai:EnvironmentModel))
 
-  ## Dependency Relationships
-      SubClassOf(ai:DeepReinforcementLearning
-        ObjectSomeValuesFrom(ai:requires ai:MarkovDecisionProcess))
-      SubClassOf(ai:DeepReinforcementLearning
-        ObjectSomeValuesFrom(ai:requires ai:Backpropagation))
-      SubClassOf(ai:DeepReinforcementLearning
-        ObjectSomeValuesFrom(ai:requires ai:SimulationEnvironment))
-      SubClassOf(ai:DeepReinforcementLearning
-        ObjectSomeValuesFrom(ai:requires ai:ExperienceReplay))
-      SubClassOf(ai:DeepReinforcementLearning
-        ObjectSomeValuesFrom(ai:requires ai:GPUAcceleration))
-      SubClassOf(ai:DeepReinforcementLearning
-        ObjectSomeValuesFrom(ai:dependsOn ai:NeuralNetwork))
-      SubClassOf(ai:DeepReinforcementLearning
-        ObjectSomeValuesFrom(ai:dependsOn ai:BellmanEquation))
-      SubClassOf(ai:DeepReinforcementLearning
-        ObjectSomeValuesFrom(ai:dependsOn ai:RewardSignal))
+## Dependency Relationships
+    SubClassOf(ai:DeepReinforcementLearning
+      ObjectSomeValuesFrom(ai:requires ai:MarkovDecisionProcess))
+    SubClassOf(ai:DeepReinforcementLearning
+      ObjectSomeValuesFrom(ai:requires ai:Backpropagation))
+    SubClassOf(ai:DeepReinforcementLearning
+      ObjectSomeValuesFrom(ai:requires ai:SimulationEnvironment))
+    SubClassOf(ai:DeepReinforcementLearning
+      ObjectSomeValuesFrom(ai:requires ai:ExperienceReplay))
+    SubClassOf(ai:DeepReinforcementLearning
+      ObjectSomeValuesFrom(ai:requires ai:GPUAcceleration))
+    SubClassOf(ai:DeepReinforcementLearning
+      ObjectSomeValuesFrom(ai:dependsOn ai:NeuralNetwork))
+    SubClassOf(ai:DeepReinforcementLearning
+      ObjectSomeValuesFrom(ai:dependsOn ai:BellmanEquation))
+    SubClassOf(ai:DeepReinforcementLearning
+      ObjectSomeValuesFrom(ai:dependsOn ai:RewardSignal))
 
-  ## Capability Relationships
-      SubClassOf(ai:DeepReinforcementLearning
-        ObjectSomeValuesFrom(ai:enables ai:Agent))
-      SubClassOf(ai:DeepReinforcementLearning
-        ObjectSomeValuesFrom(ai:enables ai:AgenticAI))
-      SubClassOf(ai:DeepReinforcementLearning
-        ObjectSomeValuesFrom(ai:enables ai:AutonomousRobotics))
-      SubClassOf(ai:DeepReinforcementLearning
-        ObjectSomeValuesFrom(ai:enables ai:ReinforcementLearningFromHumanFeedback))
-      SubClassOf(ai:DeepReinforcementLearning
-        ObjectSomeValuesFrom(ai:enables ai:MultiAgentReinforcementLearning))
-      SubClassOf(ai:DeepReinforcementLearning
-        ObjectSomeValuesFrom(ai:supports ai:LargeLanguageModel))
-      SubClassOf(ai:DeepReinforcementLearning
-        ObjectSomeValuesFrom(ai:supports ai:SafeAI))
+## Capability Relationships
+    SubClassOf(ai:DeepReinforcementLearning
+      ObjectSomeValuesFrom(ai:enables ai:Agent))
+    SubClassOf(ai:DeepReinforcementLearning
+      ObjectSomeValuesFrom(ai:enables ai:AgenticAI))
+    SubClassOf(ai:DeepReinforcementLearning
+      ObjectSomeValuesFrom(ai:enables ai:AutonomousRobotics))
+    SubClassOf(ai:DeepReinforcementLearning
+      ObjectSomeValuesFrom(ai:enables ai:ReinforcementLearningFromHumanFeedback))
+    SubClassOf(ai:DeepReinforcementLearning
+      ObjectSomeValuesFrom(ai:enables ai:MultiAgentReinforcementLearning))
+    SubClassOf(ai:DeepReinforcementLearning
+      ObjectSomeValuesFrom(ai:supports ai:LargeLanguageModel))
+    SubClassOf(ai:DeepReinforcementLearning
+      ObjectSomeValuesFrom(ai:supports ai:SafeAI))
 
-  ## Implementation Relationships
-      SubClassOf(ai:DeepReinforcementLearning
-        ObjectSomeValuesFrom(ai:implements ai:QLearning))
-      SubClassOf(ai:DeepReinforcementLearning
-        ObjectSomeValuesFrom(ai:implements ai:TemporalDifferenceLearning))
-      SubClassOf(ai:DeepReinforcementLearning
-        ObjectSomeValuesFrom(ai:implements ai:ProximalPolicyOptimisation))
-      SubClassOf(ai:DeepReinforcementLearning
-        ObjectSomeValuesFrom(ai:implements ai:PolicyGradientMethods))
-      SubClassOf(ai:DeepReinforcementLearning
-        ObjectSomeValuesFrom(ai:uses ai:ConvolutionalNeuralNetwork))
-      SubClassOf(ai:DeepReinforcementLearning
-        ObjectSomeValuesFrom(ai:uses ai:MonteCarloTreeSearch))
-      SubClassOf(ai:DeepReinforcementLearning
-        ObjectSomeValuesFrom(ai:uses ai:GPUAcceleration))
+## Implementation Relationships
+    SubClassOf(ai:DeepReinforcementLearning
+      ObjectSomeValuesFrom(ai:implements ai:QLearning))
+    SubClassOf(ai:DeepReinforcementLearning
+      ObjectSomeValuesFrom(ai:implements ai:TemporalDifferenceLearning))
+    SubClassOf(ai:DeepReinforcementLearning
+      ObjectSomeValuesFrom(ai:implements ai:ProximalPolicyOptimisation))
+    SubClassOf(ai:DeepReinforcementLearning
+      ObjectSomeValuesFrom(ai:implements ai:PolicyGradientMethods))
+    SubClassOf(ai:DeepReinforcementLearning
+      ObjectSomeValuesFrom(ai:uses ai:ConvolutionalNeuralNetwork))
+    SubClassOf(ai:DeepReinforcementLearning
+      ObjectSomeValuesFrom(ai:uses ai:MonteCarloTreeSearch))
+    SubClassOf(ai:DeepReinforcementLearning
+      ObjectSomeValuesFrom(ai:uses ai:GPUAcceleration))
 
-  ## Reduction Relationships
-      SubClassOf(ai:DeepReinforcementLearning
-        ObjectSomeValuesFrom(ai:reducesTo ai:ReinforcementLearning))
-      SubClassOf(ai:DeepReinforcementLearning
-        ObjectSomeValuesFrom(ai:reducesTo ai:DeepLearning))
-      SubClassOf(ai:DeepReinforcementLearning
-        ObjectSomeValuesFrom(ai:reducesTo ai:MarkovDecisionProcess))
-      SubClassOf(ai:DeepReinforcementLearning
-        ObjectSomeValuesFrom(ai:reducesTo ai:SequentialDecisionMaking))
-      SubClassOf(ai:DeepReinforcementLearning
-        ObjectSomeValuesFrom(ai:contrastsWith ai:SupervisedLearning))
-      SubClassOf(ai:DeepReinforcementLearning
-        ObjectSomeValuesFrom(ai:contrastsWith ai:ImitationLearning))
+## Reduction Relationships
+    SubClassOf(ai:DeepReinforcementLearning
+      ObjectSomeValuesFrom(ai:reducesTo ai:ReinforcementLearning))
+    SubClassOf(ai:DeepReinforcementLearning
+      ObjectSomeValuesFrom(ai:reducesTo ai:DeepLearning))
+    SubClassOf(ai:DeepReinforcementLearning
+      ObjectSomeValuesFrom(ai:reducesTo ai:MarkovDecisionProcess))
+    SubClassOf(ai:DeepReinforcementLearning
+      ObjectSomeValuesFrom(ai:reducesTo ai:SequentialDecisionMaking))
+    SubClassOf(ai:DeepReinforcementLearning
+      ObjectSomeValuesFrom(ai:contrastsWith ai:SupervisedLearning))
+    SubClassOf(ai:DeepReinforcementLearning
+      ObjectSomeValuesFrom(ai:contrastsWith ai:ImitationLearning))
 
-  ## About
+## About
 
-  **Deep Reinforcement Learning** occupies a singular position in modern [[Artificial Intelligence]]: it is the only major learning paradigm in which an [[Agent]] acquires behaviour purely from the interaction loop of action, observation, and scalar feedback — with no labelled ground-truth output ever provided by a human. This makes it simultaneously the most powerful approach for acquiring superhuman policies in closed, simulable domains and one of the most technically challenging to deploy in open-world settings. The paradigm unifies two of the most powerful ideas in computational intelligence: the representational power of [[Deep Learning]] — which transforms raw high-dimensional inputs such as pixel images, point clouds, or natural language tokens into abstract feature vectors via learned hierarchical transformations — and the decision-making optimality of [[Reinforcement Learning]], which frames the agent-world interaction as a sequential optimisation problem governed by the mathematics of dynamic programming. Neither ingredient alone achieves what their combination does: deep learning without RL can recognise patterns but cannot plan, and classical RL without deep approximators cannot scale beyond toy state spaces to real-world complexity.
+**Deep Reinforcement Learning** occupies a singular position in modern [[Artificial Intelligence]]: it is the only major learning paradigm in which an [[Agent]] acquires behaviour purely from the interaction loop of action, observation, and scalar feedback — with no labelled ground-truth output ever provided by a human. This makes it simultaneously the most powerful approach for acquiring superhuman policies in closed, simulable domains and one of the most technically challenging to deploy in open-world settings. The paradigm unifies two of the most powerful ideas in computational intelligence: the representational power of [[Deep Learning]] — which transforms raw high-dimensional inputs such as pixel images, point clouds, or natural language tokens into abstract feature vectors via learned hierarchical transformations — and the decision-making optimality of [[Reinforcement Learning]], which frames the agent-world interaction as a sequential optimisation problem governed by the mathematics of dynamic programming. Neither ingredient alone achieves what their combination does: deep learning without RL can recognise patterns but cannot plan, and classical RL without deep approximators cannot scale beyond toy state spaces to real-world complexity.
 
-  The fundamental mathematical object underpinning all DRL is the [[Markov Decision Process]], which models the world as a tuple (S, A, P, R, γ) of states, actions, stochastic transition dynamics P(s'|s,a), reward function R(s,a,s'), and discount factor γ ∈ [0,1) that down-weights future rewards to ensure convergence of the infinite-horizon return. The Markov property — that future states depend only on the current state and action, not on the full history — is what makes the framework mathematically tractable. The agent's goal is to find a policy π: S → A (deterministic) or π: S → Δ(A) (stochastic) that maximises the expected discounted return J(π) = E[Σ_{t=0}^∞ γ^t r_t]. For continuous or infinite state spaces — which include all pixel-based and sensor-based observations — the exact policy and value function cannot be represented in tabular form; the decisive innovation of DRL was to parameterise them as deep [[Neural Network]]s and optimise via [[Backpropagation]].
+The fundamental mathematical object underpinning all DRL is the [[Markov Decision Process]], which models the world as a tuple (S, A, P, R, γ) of states, actions, stochastic transition dynamics P(s'|s,a), reward function R(s,a,s'), and discount factor γ ∈ [0,1) that down-weights future rewards to ensure convergence of the infinite-horizon return. The Markov property — that future states depend only on the current state and action, not on the full history — is what makes the framework mathematically tractable. The agent's goal is to find a policy π: S → A (deterministic) or π: S → Δ(A) (stochastic) that maximises the expected discounted return J(π) = E[Σ_{t=0}^∞ γ^t r_t]. For continuous or infinite state spaces — which include all pixel-based and sensor-based observations — the exact policy and value function cannot be represented in tabular form; the decisive innovation of DRL was to parameterise them as deep [[Neural Network]]s and optimise via [[Backpropagation]].
 
-  The historical trajectory of DRL divides into three phases. The **pre-DRL era** (1950s–2012) established the mathematical foundations: Richard Bellman's dynamic programming and the [[Bellman Equation]] (1957), Christopher Watkins' Q-learning (1989), and Richard Sutton and Andrew Barto's unification of these ideas in the textbook "Reinforcement Learning: An Introduction" (1998, 2nd ed. 2018). During this period, RL was applied successfully to backgammon (TD-Gammon, Tesauro 1992 — an early neural function approximator), helicopter aerobatics, and robotic locomotion, but was fundamentally limited to low-dimensional, hand-engineered state representations. The **DRL era** began with DeepMind's DQN (2013 preprint, 2015 Nature publication), which demonstrated that a [[Convolutional Neural Network]] trained end-to-end from raw Atari pixel frames could achieve human-level performance on 49 games without any domain knowledge. The **post-DRL era** (2020–present) is characterised by the convergence of DRL with large-scale pre-trained foundation models, the rise of [[Reinforcement Learning from Human Feedback]] as the standard alignment mechanism for [[Large Language Model]]s, and the application of DRL-derived policy optimisation algorithms (GRPO, RLVR) to elicit complex chain-of-thought reasoning from language models.
+The historical trajectory of DRL divides into three phases. The **pre-DRL era** (1950s–2012) established the mathematical foundations: Richard Bellman's dynamic programming and the [[Bellman Equation]] (1957), Christopher Watkins' Q-learning (1989), and Richard Sutton and Andrew Barto's unification of these ideas in the textbook "Reinforcement Learning: An Introduction" (1998, 2nd ed. 2018). During this period, RL was applied successfully to backgammon (TD-Gammon, Tesauro 1992 — an early neural function approximator), helicopter aerobatics, and robotic locomotion, but was fundamentally limited to low-dimensional, hand-engineered state representations. The **DRL era** began with DeepMind's DQN (2013 preprint, 2015 Nature publication), which demonstrated that a [[Convolutional Neural Network]] trained end-to-end from raw Atari pixel frames could achieve human-level performance on 49 games without any domain knowledge. The **post-DRL era** (2020–present) is characterised by the convergence of DRL with large-scale pre-trained foundation models, the rise of [[Reinforcement Learning from Human Feedback]] as the standard alignment mechanism for [[Large Language Model]]s, and the application of DRL-derived policy optimisation algorithms (GRPO, RLVR) to elicit complex chain-of-thought reasoning from language models.
 
-  The theoretical bridge from classical RL to deep neural networks rests on the [[Bellman Equation]]. For a given policy π, the state-value function V^π(s) = E_π[Σ γ^t r_t | s_0=s] and action-value function Q^π(s,a) = E_π[Σ γ^t r_t | s_0=s, a_0=a] satisfy Bellman consistency equations that can be solved iteratively: value iteration and policy iteration converge to the optimal V* and Q* in tabular (finite state/action) settings. The decisive insight of the DRL era, pioneered by DeepMind's DQN paper (Mnih et al., 2013/2015), was to approximate Q*(s,a) with a [[Convolutional Neural Network]] parameterised by weights θ, updating θ via [[Backpropagation]] on the mean-squared Bellman error loss L(θ) = E[(r + γ max_{a'} Q(s',a';θ^-) - Q(s,a;θ))^2], where θ^- denotes a periodically synchronised target network. Two stabilisation innovations made this work on raw pixel inputs from Atari 2600 games: (1) [[Experience Replay]] — shuffling transitions stored in a circular buffer breaks the harmful temporal correlations in consecutive frames, allowing independent and identically distributed mini-batch sampling for stable stochastic gradient descent; and (2) the target network — maintaining a slowly-updated copy of Q prevents the regression target from chasing a moving optimisation objective. DQN achieved human-level or better performance on 49 of 57 Atari games, a result that effectively launched the modern DRL era.
+The theoretical bridge from classical RL to deep neural networks rests on the [[Bellman Equation]]. For a given policy π, the state-value function V^π(s) = E_π[Σ γ^t r_t | s_0=s] and action-value function Q^π(s,a) = E_π[Σ γ^t r_t | s_0=s, a_0=a] satisfy Bellman consistency equations that can be solved iteratively: value iteration and policy iteration converge to the optimal V* and Q* in tabular (finite state/action) settings. The decisive insight of the DRL era, pioneered by DeepMind's DQN paper (Mnih et al., 2013/2015), was to approximate Q*(s,a) with a [[Convolutional Neural Network]] parameterised by weights θ, updating θ via [[Backpropagation]] on the mean-squared Bellman error loss L(θ) = E[(r + γ max_{a'} Q(s',a';θ^-) - Q(s,a;θ))^2], where θ^- denotes a periodically synchronised target network. Two stabilisation innovations made this work on raw pixel inputs from Atari 2600 games: (1) [[Experience Replay]] — shuffling transitions stored in a circular buffer breaks the harmful temporal correlations in consecutive frames, allowing independent and identically distributed mini-batch sampling for stable stochastic gradient descent; and (2) the target network — maintaining a slowly-updated copy of Q prevents the regression target from chasing a moving optimisation objective. DQN achieved human-level or better performance on 49 of 57 Atari games, a result that effectively launched the modern DRL era.
 
-  In parallel to value-based methods, **policy gradient** approaches — typified by REINFORCE (Williams, 1992), Trust Region Policy Optimisation (TRPO, Schulman et al., 2015), and the now-dominant [[Proximal Policy Optimisation]] (PPO, Schulman et al., 2017) — directly parameterise the policy π_θ and optimise J(π_θ) via gradient ascent using the policy gradient theorem: ∇_θ J(π_θ) = E_{s,a ~ π_θ}[∇_θ log π_θ(a|s) · Q^π(s,a)]. PPO stabilises this with a clipped surrogate objective that prevents destructively large policy updates — a critical property for the RLHF pipeline that now underpins [[Large Language Model]] alignment. Actor-critic architectures (A3C, SAC, TD3) combine a policy network (actor) with a separately trained value-function approximator (critic), using the critic's output as a lower-variance baseline for gradient estimates. Soft Actor-Critic (SAC, Haarnoja et al., 2018) adds an entropy regularisation term to the objective — maximising both expected return and policy entropy — producing robust, exploration-encouraging policies that excel on continuous control benchmarks.
+In parallel to value-based methods, **policy gradient** approaches — typified by REINFORCE (Williams, 1992), Trust Region Policy Optimisation (TRPO, Schulman et al., 2015), and the now-dominant [[Proximal Policy Optimisation]] (PPO, Schulman et al., 2017) — directly parameterise the policy π_θ and optimise J(π_θ) via gradient ascent using the policy gradient theorem: ∇_θ J(π_θ) = E_{s,a ~ π_θ}[∇_θ log π_θ(a|s) · Q^π(s,a)]. PPO stabilises this with a clipped surrogate objective that prevents destructively large policy updates — a critical property for the RLHF pipeline that now underpins [[Large Language Model]] alignment. Actor-critic architectures (A3C, SAC, TD3) combine a policy network (actor) with a separately trained value-function approximator (critic), using the critic's output as a lower-variance baseline for gradient estimates. Soft Actor-Critic (SAC, Haarnoja et al., 2018) adds an entropy regularisation term to the objective — maximising both expected return and policy entropy — producing robust, exploration-encouraging policies that excel on continuous control benchmarks.
 
-  The relationship between DRL and neuroscience is more than superficial analogy. The [[Bellman Equation]]'s temporal-difference error — the discrepancy between predicted and actual value — has been proposed as a computational account of dopaminergic reward prediction error signals in the brain's basal ganglia, first articulated by Schultz, Dayan, and Montague (1997). Actor-critic architectures have anatomical parallels in the interaction between cortex (actor) and striatum (critic). Deep Q-networks trained on Atari show internal representations that exhibit orientation selectivity, motion tuning, and multi-scale feature hierarchies reminiscent of primate visual cortex, a convergence noted by Yamins and DiCarlo (2016). This bidirectional relationship motivates neuroscience-informed DRL designs (biologically-plausible exploration mechanisms, successor representations) and reciprocally uses DRL models to test hypotheses about animal and human decision-making, as evidenced by the 2025 research showing that DRL advances enabled better predictions of human behaviour in time-continuous control tasks (PMC:12677501).
+The relationship between DRL and neuroscience is more than superficial analogy. The [[Bellman Equation]]'s temporal-difference error — the discrepancy between predicted and actual value — has been proposed as a computational account of dopaminergic reward prediction error signals in the brain's basal ganglia, first articulated by Schultz, Dayan, and Montague (1997). Actor-critic architectures have anatomical parallels in the interaction between cortex (actor) and striatum (critic). Deep Q-networks trained on Atari show internal representations that exhibit orientation selectivity, motion tuning, and multi-scale feature hierarchies reminiscent of primate visual cortex, a convergence noted by Yamins and DiCarlo (2016). This bidirectional relationship motivates neuroscience-informed DRL designs (biologically-plausible exploration mechanisms, successor representations) and reciprocally uses DRL models to test hypotheses about animal and human decision-making, as evidenced by the 2025 research showing that DRL advances enabled better predictions of human behaviour in time-continuous control tasks (PMC:12677501).
 
-  ## Algorithm Families and Architecture
+## Algorithm Families and Architecture
 
-  DRL algorithms are organised along three primary axes: (1) **on-policy vs. off-policy** — whether the training data distribution matches the current policy; (2) **value-based vs. policy-based vs. actor-critic** — what the neural network approximates; and (3) **model-free vs. [[Model Based Reinforcement Learning]]** — whether an explicit transition model is learned or bypassed. The choice among these axes depends on the environment's action-space topology (discrete vs. continuous), the reward density (dense vs. sparse), the sample budget, and the computational resources available.
+DRL algorithms are organised along three primary axes: (1) **on-policy vs. off-policy** — whether the training data distribution matches the current policy; (2) **value-based vs. policy-based vs. actor-critic** — what the neural network approximates; and (3) **model-free vs. [[Model Based Reinforcement Learning]]** — whether an explicit transition model is learned or bypassed. The choice among these axes depends on the environment's action-space topology (discrete vs. continuous), the reward density (dense vs. sparse), the sample budget, and the computational resources available.
 
-  **Value-Based Methods**
-  - **DQN (Deep Q-Network)**: [[Convolutional Neural Network]] maps state → Q-values over all discrete actions; trained with experience replay and target networks (Mnih et al., 2015).
-  - **Double DQN**: separates action selection from action evaluation to eliminate overestimation bias (van Hasselt et al., 2016).
-  - **Dueling DQN**: decomposes Q(s,a) = V(s) + A(s,a) where A is the advantage function; more efficient credit assignment (Wang et al., 2016).
-  - **Rainbow**: combines six DQN improvements (double DQN, prioritised replay, dueling, multi-step, distributional RL, noisy nets) into a single unified agent (Hessel et al., 2018), achieving state-of-the-art on Atari.
-  - **Distributional RL (C51, QR-DQN, IQN)**: learns the full distribution of returns rather than only their expectation, yielding more stable training and improved performance on multi-modal reward signals.
+**Value-Based Methods**
+
+- **DQN (Deep Q-Network)**: [[Convolutional Neural Network]] maps state → Q-values over all discrete actions; trained with experience replay and target networks (Mnih et al., 2015).
+- **Double DQN**: separates action selection from action evaluation to eliminate overestimation bias (van Hasselt et al., 2016).
+- **Dueling DQN**: decomposes Q(s,a) = V(s) + A(s,a) where A is the advantage function; more efficient credit assignment (Wang et al., 2016).
+- **Rainbow**: combines six DQN improvements (double DQN, prioritised replay, dueling, multi-step, distributional RL, noisy nets) into a single unified agent (Hessel et al., 2018), achieving state-of-the-art on Atari.
+- **Distributional RL (C51, QR-DQN, IQN)**: learns the full distribution of returns rather than only their expectation, yielding more stable training and improved performance on multi-modal reward signals.
 
   **Policy Gradient Methods**
-  - **REINFORCE**: Monte Carlo policy gradient — sample full episodes, compute returns, ascend gradient (Williams, 1992). High variance, no bootstrapping.
-  - **A3C / A2C**: asynchronous / synchronous advantage actor-critic; multiple parallel workers share gradient updates, dramatically increasing sample throughput (Mnih et al., 2016).
-  - **TRPO**: uses a KL-divergence trust region constraint to limit policy update size; provably monotone improvement under approximation (Schulman et al., 2015).
-  - **[[Proximal Policy Optimisation]] (PPO)**: replaces TRPO's constraint with a clipped probability-ratio objective; simpler, equally stable, widely adopted including for RLHF of LLMs (Schulman et al., 2017).
-  - **GRPO (Group Relative Policy Optimisation)**: eliminates the critic entirely by normalising rewards within groups of sampled rollouts; used in DeepSeek-R1 to train chain-of-thought reasoning (DeepSeek AI, 2025).
+
+- **REINFORCE**: Monte Carlo policy gradient — sample full episodes, compute returns, ascend gradient (Williams, 1992). High variance, no bootstrapping.
+- **A3C / A2C**: asynchronous / synchronous advantage actor-critic; multiple parallel workers share gradient updates, dramatically increasing sample throughput (Mnih et al., 2016).
+- **TRPO**: uses a KL-divergence trust region constraint to limit policy update size; provably monotone improvement under approximation (Schulman et al., 2015).
+- **[[Proximal Policy Optimisation]] (PPO)**: replaces TRPO's constraint with a clipped probability-ratio objective; simpler, equally stable, widely adopted including for RLHF of LLMs (Schulman et al., 2017).
+- **GRPO (Group Relative Policy Optimisation)**: eliminates the critic entirely by normalising rewards within groups of sampled rollouts; used in DeepSeek-R1 to train chain-of-thought reasoning (DeepSeek AI, 2025).
 
   **Actor-Critic Architectures**
-  - **SAC (Soft Actor-Critic)**: off-policy actor-critic with entropy maximisation; excels on continuous control with high sample efficiency (Haarnoja et al., 2018).
-  - **TD3 (Twin Delayed DDPG)**: addresses overestimation in continuous-action actor-critic by using two critics and delayed policy updates (Fujimoto et al., 2018).
-  - **PPG (Phasic Policy Gradient)**: separates auxiliary value learning from policy gradient updates into separate phases (Cobbe et al., 2021).
+
+- **SAC (Soft Actor-Critic)**: off-policy actor-critic with entropy maximisation; excels on continuous control with high sample efficiency (Haarnoja et al., 2018).
+- **TD3 (Twin Delayed DDPG)**: addresses overestimation in continuous-action actor-critic by using two critics and delayed policy updates (Fujimoto et al., 2018).
+- **PPG (Phasic Policy Gradient)**: separates auxiliary value learning from policy gradient updates into separate phases (Cobbe et al., 2021).
 
   **Model-Based DRL**
-  - **Dreamer / DreamerV2 / DreamerV3**: learns a compact latent-space world model using a recurrent state-space model (RSSM); imagines rollouts in latent space to train actor-critic without further environment interaction, achieving high sample efficiency across diverse domains (Hafner et al., 2020–2023).
-  - **MuZero**: combines [[Monte Carlo Tree Search]] with a learned latent dynamics model, achieving superhuman performance in Go, Chess, Shogi, and Atari without knowledge of the game rules (Schrittwieser et al., 2020).
-  - **EfficientZero / EfficientZero-V2**: improves MuZero sample efficiency dramatically for Atari (Ye et al., 2021; Wang et al., 2024).
+
+- **Dreamer / DreamerV2 / DreamerV3**: learns a compact latent-space world model using a recurrent state-space model (RSSM); imagines rollouts in latent space to train actor-critic without further environment interaction, achieving high sample efficiency across diverse domains (Hafner et al., 2020–2023).
+- **MuZero**: combines [[Monte Carlo Tree Search]] with a learned latent dynamics model, achieving superhuman performance in Go, Chess, Shogi, and Atari without knowledge of the game rules (Schrittwieser et al., 2020).
+- **EfficientZero / EfficientZero-V2**: improves MuZero sample efficiency dramatically for Atari (Ye et al., 2021; Wang et al., 2024).
 
   **[[Offline Reinforcement Learning]]**
-  - **BCQ (Batch-Constrained Q-learning)**: constrains the policy to select only actions well-represented in the offline dataset via a generative model of the behavioural policy (Fujimoto et al., 2019).
-  - **CQL (Conservative Q-Learning)**: penalises Q-values on out-of-distribution actions by adding a regularisation term that minimises Q on unseen state-action pairs while maximising on dataset pairs (Kumar et al., 2020).
-  - **IQL (Implicit Q-Learning)**: avoids querying out-of-distribution actions entirely by training with expectile regression on the dataset's return distribution; compatible with pre-training on large offline corpora (Kostrikov et al., 2021).
-  - **Decision Transformer**: recasts offline RL as a conditional sequence modelling problem, predicting next actions conditioned on desired return-to-go via a Transformer architecture; enables zero-shot generalisation to new return targets (Chen et al., 2021).
+
+- **BCQ (Batch-Constrained Q-learning)**: constrains the policy to select only actions well-represented in the offline dataset via a generative model of the behavioural policy (Fujimoto et al., 2019).
+- **CQL (Conservative Q-Learning)**: penalises Q-values on out-of-distribution actions by adding a regularisation term that minimises Q on unseen state-action pairs while maximising on dataset pairs (Kumar et al., 2020).
+- **IQL (Implicit Q-Learning)**: avoids querying out-of-distribution actions entirely by training with expectile regression on the dataset's return distribution; compatible with pre-training on large offline corpora (Kostrikov et al., 2021).
+- **Decision Transformer**: recasts offline RL as a conditional sequence modelling problem, predicting next actions conditioned on desired return-to-go via a Transformer architecture; enables zero-shot generalisation to new return targets (Chen et al., 2021).
 
   **Multi-Agent and Hierarchical DRL**
-  - **QMIX / MAPPO**: value decomposition and policy gradient methods for cooperative [[Multi-Agent Reinforcement Learning]]; QMIX uses a monotonic mixing network to factorise the joint action-value function across agents.
-  - **Population-based self-play**: trains a population of agents against each other; used in AlphaStar, AlphaZero, and OpenAI Five to discover diverse and robust strategies.
-  - **Hierarchical RL (HRL)**: decomposes long-horizon tasks into a hierarchy of subgoals managed by a meta-policy; lower-level primitive policies execute subgoal-conditioned behaviour. Methods include Option-Critic, HAC, and HIRO.
+
+- **QMIX / MAPPO**: value decomposition and policy gradient methods for cooperative [[Multi-Agent Reinforcement Learning]]; QMIX uses a monotonic mixing network to factorise the joint action-value function across agents.
+- **Population-based self-play**: trains a population of agents against each other; used in AlphaStar, AlphaZero, and OpenAI Five to discover diverse and robust strategies.
+- **Hierarchical RL (HRL)**: decomposes long-horizon tasks into a hierarchy of subgoals managed by a meta-policy; lower-level primitive policies execute subgoal-conditioned behaviour. Methods include Option-Critic, HAC, and HIRO.
 
   ## Key Technical Challenges
 
@@ -248,17 +253,19 @@ Deep Reinforcement Learning (DRL) is a machine learning paradigm that combines d
   The United Kingdom holds a uniquely central position in DRL's history through Google DeepMind, headquartered in London, which produced DQN (2015), AlphaGo (2016), AlphaZero (2017), AlphaStar (2019), MuZero (2020), AlphaChip (2021), and AlphaFold 3 (2024). Demis Hassabis and John Jumper (Google DeepMind) were awarded the 2024 Nobel Prize in Chemistry for AlphaFold, recognising the broader programme of DRL-adjacent AI research at the London lab.
 
   **Academic centres:**
-  - **University College London (UCL)**: David Silver (UCL/DeepMind) led the AlphaGo and AlphaZero programmes and is a professor at UCL; his deep RL course (COMPM050) has trained hundreds of researchers. Hado van Hasselt (UCL/DeepMind) developed Double DQN. UCL's DARK Lab and Gatsby Computational Neuroscience Unit maintain strong DRL research programmes.
-  - **Imperial College London**: The Adaptive and Intelligent Robotics Lab (AIRL) and the Intelligent Systems and Networks group apply DRL to robot manipulation, autonomous driving, and healthcare treatment planning. Imperial's ML group publishes in safe RL and multi-agent settings.
-  - **University of Edinburgh**: The School of Informatics houses active DRL research including natural language grounded policies and program synthesis. The Edinburgh Centre for Robotics (ECR) applies DRL to mobile robot navigation.
-  - **University of Cambridge**: The Machine Learning Group and the Cambridge Centre for AI in Medicine apply DRL to clinical treatment optimisation and adaptive experimental design.
-  - **University of Oxford**: The AIMS CDT (Autonomous Intelligent Machines and Systems) at Oxford trains DPhil students in DRL with robotics application tracks. The OATML group (Oxford Applied and Theoretical Machine Learning) works on uncertainty and safe RL.
+
+- **University College London (UCL)**: David Silver (UCL/DeepMind) led the AlphaGo and AlphaZero programmes and is a professor at UCL; his deep RL course (COMPM050) has trained hundreds of researchers. Hado van Hasselt (UCL/DeepMind) developed Double DQN. UCL's DARK Lab and Gatsby Computational Neuroscience Unit maintain strong DRL research programmes.
+- **Imperial College London**: The Adaptive and Intelligent Robotics Lab (AIRL) and the Intelligent Systems and Networks group apply DRL to robot manipulation, autonomous driving, and healthcare treatment planning. Imperial's ML group publishes in safe RL and multi-agent settings.
+- **University of Edinburgh**: The School of Informatics houses active DRL research including natural language grounded policies and program synthesis. The Edinburgh Centre for Robotics (ECR) applies DRL to mobile robot navigation.
+- **University of Cambridge**: The Machine Learning Group and the Cambridge Centre for AI in Medicine apply DRL to clinical treatment optimisation and adaptive experimental design.
+- **University of Oxford**: The AIMS CDT (Autonomous Intelligent Machines and Systems) at Oxford trains DPhil students in DRL with robotics application tracks. The OATML group (Oxford Applied and Theoretical Machine Learning) works on uncertainty and safe RL.
 
   **Northern England industry and research:**
-  - **University of Sheffield**: The Machine Learning Research Group (ACSE/CS) applies DRL to adaptive control of industrial systems, including diesel engine emission control (published 2023). The AMRC (Advanced Manufacturing Research Centre) collaborates on DRL-driven process optimisation.
-  - **University of Leeds**: A PhD programme in Robot Skill Learning Using Deep Reinforcement Learning trains researchers in manipulation tasks for manufacturing contexts. The Robotics at Leeds initiative applies DRL to assembly automation.
-  - **University of Manchester**: The Institute for Data Science and AI (IDSAI) hosted the Advances in Data Science and AI Conference 2025; DRL for smart city resource management and energy systems is a research theme. The National Innovation Centre for Data (NICD) at Newcastle facilitates industry DRL adoption for predictive maintenance and supply chain optimisation.
-  - **UK Financial Services**: DRL is applied to algorithmic trading, portfolio optimisation, and risk management across London-headquartered firms; the Bank of England's research group has noted DRL's increasing use in market-making systems.
+
+- **University of Sheffield**: The Machine Learning Research Group (ACSE/CS) applies DRL to adaptive control of industrial systems, including diesel engine emission control (published 2023). The AMRC (Advanced Manufacturing Research Centre) collaborates on DRL-driven process optimisation.
+- **University of Leeds**: A PhD programme in Robot Skill Learning Using Deep Reinforcement Learning trains researchers in manipulation tasks for manufacturing contexts. The Robotics at Leeds initiative applies DRL to assembly automation.
+- **University of Manchester**: The Institute for Data Science and AI (IDSAI) hosted the Advances in Data Science and AI Conference 2025; DRL for smart city resource management and energy systems is a research theme. The National Innovation Centre for Data (NICD) at Newcastle facilitates industry DRL adoption for predictive maintenance and supply chain optimisation.
+- **UK Financial Services**: DRL is applied to algorithmic trading, portfolio optimisation, and risk management across London-headquartered firms; the Bank of England's research group has noted DRL's increasing use in market-making systems.
 
   UK EPSRC funding has supported DRL through the Alan Turing Institute (hosted at the British Library, London), multiple CDTs in AI/ML, and Prosperity Partnership grants with DeepMind, Amazon, and other industry partners.
 
@@ -385,5 +392,5 @@ Deep Reinforcement Learning (DRL) is a machine learning paradigm that combines d
   **Distributional RL**: learns the full return distribution Z(s,a) — not just its expectation Q(s,a) — enabling risk-sensitive policies and more stable training via return quantile regression (QR-DQN, IQN) or categorical return distributions (C51).
   **Safe RL**: constrained MDP formulations where the agent maximises expected return subject to a constraint E[Σ c_t] ≤ d on expected cumulative cost; addressed by Lagrangian methods, interior-point RL, and projection-based approaches. Required by the EU AI Act for high-stakes autonomous systems.
 
-- ### Provenance
+### Provenance
 

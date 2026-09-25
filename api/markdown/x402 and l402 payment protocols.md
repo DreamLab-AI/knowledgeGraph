@@ -1,49 +1,51 @@
-
 x402 and l402 payment protocols is a blockchain and distributed systems concept and a type of blockchain.
 
-- ### Semantic Classification
+### Semantic Classification
 
-- ### Content
-  # X402 and L402 Payment Protocols
+### Content
 
-  ## Overview: The Payment Protocol Revolution
+# X402 and L402 Payment Protocols
 
-  [[X402]] and [[L402]] represent a fundamental paradigm shift in how [[HTTP]]-based services monetize access through native [[cryptocurrency]] integration. Both protocols leverage the [[HTTP 402 Payment Required]] status code—originally reserved in [[RFC 7231]] but never widely implemented—to create seamless [[machine-to-machine]] value transfer at the [[API]] layer.
+## Overview: The Payment Protocol Revolution
 
-  **Key Innovation**: These protocols transform the [[web]] from a [[free-or-subscription]] model to a true [[micropayment]]-enabled [[metered-access]] economy where [[AI agents]], [[robots]], [[IoT devices]], and traditional applications can autonomously pay for [[computational resources]], [[data]], and [[services]].
+[[X402]] and [[L402]] represent a fundamental paradigm shift in how [[HTTP]]-based services monetize access through native [[cryptocurrency]] integration. Both protocols leverage the [[HTTP 402 Payment Required]] status code—originally reserved in [[RFC 7231]] but never widely implemented—to create seamless [[machine-to-machine]] value transfer at the [[API]] layer.
 
-  The emergence of these protocols in 2023-2025 reflects the convergence of three technological trends:
-  1. **[[Lightning Network]] maturity** - Enabling instant, low-fee [[Bitcoin Proof-of-Work Protocol]] payments
-  2. **[[AI agent]] proliferation** - [[LLM]]-powered systems needing autonomous payment capabilities
-  3. **[[API economy]] expansion** - Growing demand for granular, [[usage-based]] [[monetization]]
+**Key Innovation**: These protocols transform the [[web]] from a [[free-or-subscription]] model to a true [[micropayment]]-enabled [[metered-access]] economy where [[AI agents]], [[robots]], [[IoT devices]], and traditional applications can autonomously pay for [[computational resources]], [[data]], and [[services]].
 
-  ## L402 Protocol: Lightning-Based Payment Authentication
+The emergence of these protocols in 2023-2025 reflects the convergence of three technological trends:
+1. **[[Lightning Network]] maturity** - Enabling instant, low-fee [[Bitcoin Proof-of-Work Protocol]] payments
+2. **[[AI agent]] proliferation** - [[LLM]]-powered systems needing autonomous payment capabilities
+3. **[[API economy]] expansion** - Growing demand for granular, [[usage-based]] [[monetization]]
 
-  ### Origins and HTTP 402 Status Code
+## L402 Protocol: Lightning-Based Payment Authentication
 
-  [[L402]] (formerly [[LSAT]] - Lightning Service Authentication Token) was pioneered by [[Lightning Labs]] as a native [[Bitcoin Lightning Network]] protocol for [[HTTP API]] monetization. The protocol resurrects the long-dormant [[HTTP 402 Payment Required]] status code, originally defined in [[HTTP/1.1]] specification [[RFC 2616]] (1999) and later [[RFC 7231]] (2014).
+### Origins and HTTP 402 Status Code
 
-  **Historical Context**: The [[402 status code]] was intentionally reserved for "future use" with [[digital payment systems]], but remained unimplemented for over two decades due to lack of viable [[micropayment]] infrastructure. [[Lightning Network]]'s sub-satoshi fee structure finally made the vision practical.
+[[L402]] (formerly [[LSAT]] - Lightning Service Authentication Token) was pioneered by [[Lightning Labs]] as a native [[Bitcoin Lightning Network]] protocol for [[HTTP API]] monetization. The protocol resurrects the long-dormant [[HTTP 402 Payment Required]] status code, originally defined in [[HTTP/1.1]] specification [[RFC 2616]] (1999) and later [[RFC 7231]] (2014).
 
-  ### Technical Architecture
+**Historical Context**: The [[402 status code]] was intentionally reserved for "future use" with [[digital payment systems]], but remained unimplemented for over two decades due to lack of viable [[micropayment]] infrastructure. [[Lightning Network]]'s sub-satoshi fee structure finally made the vision practical.
 
-  [[L402]] combines two cryptographic primitives:
-  1. **[[Macaroon]]** - Flexible [[bearer token]] with embedded [[caveats]] and [[attenuation]]
-  2. **[[Lightning Invoice]]** - [[BOLT11]]-formatted payment request with [[preimage]] proof
+### Technical Architecture
 
-  #### Core Components
+[[L402]] combines two cryptographic primitives:
+1. **[[Macaroon]]** - Flexible [[bearer token]] with embedded [[caveats]] and [[attenuation]]
+2. **[[Lightning Invoice]]** - [[BOLT11]]-formatted payment request with [[preimage]] proof
 
-  **Macaroon Structure**:
-  - **Identifier**: Unique token ID tied to payment hash
-  - **Location**: API service [[endpoint]]
-  - **Caveats**: Constraints on usage (time limits, [[IP restrictions]], [[rate limits]])
-  - **Signature**: [[HMAC]]-based verification chain
+#### Core Components
+
+**Macaroon Structure**:
+
+- **Identifier**: Unique token ID tied to payment hash
+- **Location**: API service [[endpoint]]
+- **Caveats**: Constraints on usage (time limits, [[IP restrictions]], [[rate limits]])
+- **Signature**: [[HMAC]]-based verification chain
 
   **Lightning Invoice Integration**:
-  - **Payment Hash**: [[SHA-256]] hash of payment [[preimage]]
-  - **Amount**: Denominated in [[satoshis]] or [[millisatoshis]]
-  - **Expiry**: Time-bounded validity (typically 3600 seconds)
-  - **Route Hints**: Optional [[channel]] routing information for [[private channels]]
+
+- **Payment Hash**: [[SHA-256]] hash of payment [[preimage]]
+- **Amount**: Denominated in [[satoshis]] or [[millisatoshis]]
+- **Expiry**: Time-bounded validity (typically 3600 seconds)
+- **Route Hints**: Optional [[channel]] routing information for [[private channels]]
 
   ### LSAT Authentication Flow
 
@@ -69,19 +71,21 @@ x402 and l402 payment protocols is a blockchain and distributed systems concept 
   ```
 
   The server returns:
-  - **Fresh [[macaroon]]**: Cryptographically bound to payment hash
-  - **[[Lightning invoice]]**: [[BOLT11]] payment request
-  - **Payment details**: Amount, expiry, description
+
+- **Fresh [[macaroon]]**: Cryptographically bound to payment hash
+- **[[Lightning invoice]]**: [[BOLT11]] payment request
+- **Payment details**: Amount, expiry, description
 
   #### 3. Client Payment Execution
 
   The [[client]] (which may be an [[AI agent]], [[application]], or [[human]] user) pays the [[Lightning invoice]] using any [[Lightning wallet]]:
-  - [[LND]] (Lightning Network Daemon)
-  - [[c-lightning]]/[[Core Lightning]]
-  - [[Eclair]]
-  - [[Phoenix]]
-  - [[Breez]]
-  - Mobile wallets ([[Muun]], [[BlueWallet]], [[Zeus]])
+
+- [[LND]] (Lightning Network Daemon)
+- [[c-lightning]]/[[Core Lightning]]
+- [[Eclair]]
+- [[Phoenix]]
+- [[Breez]]
+- Mobile wallets ([[Muun]], [[BlueWallet]], [[Zeus]])
 
   Upon successful payment, the client receives the **[[preimage]]** - cryptographic proof of payment.
 
@@ -128,15 +132,17 @@ x402 and l402 payment protocols is a blockchain and distributed systems concept 
   ### L402 Implementation Stack
 
   **Server-Side Components**:
-  - **[[Aperture]]**: [[Lightning Labs]]' reference [[L402 reverse proxy]]
-  - **[[LND]]**: [[Lightning Network Daemon]] for payment processing
-  - **[[btcd]]** or [[bitcoind]]: [[Bitcoin Proof-of-Work Protocol]] [[full node]]
-  - **Custom middleware**: [[Go]], [[Node.js]], [[Python]] libraries
+
+- **[[Aperture]]**: [[Lightning Labs]]' reference [[L402 reverse proxy]]
+- **[[LND]]**: [[Lightning Network Daemon]] for payment processing
+- **[[btcd]]** or [[bitcoind]]: [[Bitcoin Proof-of-Work Protocol]] [[full node]]
+- **Custom middleware**: [[Go]], [[Node.js]], [[Python]] libraries
 
   **Client Libraries**:
-  - **[[lsat-js]]**: [[JavaScript]]/[[TypeScript]] client
-  - **[[aperture-client-go]]**: [[Go]] implementation
-  - **[[lnd-grpc]]**: Low-level [[gRPC]] interface
+
+- **[[lsat-js]]**: [[JavaScript]]/[[TypeScript]] client
+- **[[aperture-client-go]]**: [[Go]] implementation
+- **[[lnd-grpc]]**: Low-level [[gRPC]] interface
 
   ### Use Cases and Applications
 
@@ -145,18 +151,20 @@ x402 and l402 payment protocols is a blockchain and distributed systems concept 
   **Traditional Problem**: [[API providers]] face binary choice between free [[open access]] or [[subscription]] gates. [[Rate limiting]] doesn't capture value.
 
   **L402 Solution**: Pay-per-request or [[pay-per-bandwidth]] model:
-  - **[[Data API]]**: $0.0001 per [[query]]
-  - **[[AI inference]]**: $0.001 per [[LLM]] request
-  - **[[Satellite imagery]]**: $0.05 per [[high-resolution tile]]
+
+- **[[Data API]]**: $0.0001 per [[query]]
+- **[[AI inference]]**: $0.001 per [[LLM]] request
+- **[[Satellite imagery]]**: $0.05 per [[high-resolution tile]]
 
   **Example**: [[Lightning Loop]] uses [[L402]] to monetize [[submarine swap]] services - users pay [[satoshis]] for each [[on-chain]]↔[[off-chain]] exchange.
 
   #### 2. Content Paywalls
 
   **[[News websites]]**, **[[research papers]]**, **[[premium content]]**:
-  - Replace [[cookie-banner]] fatigue with instant [[micropayments]]
-  - No [[account registration]] or [[subscription]] required
-  - Read-one-article for 10 satoshis (~$0.01)
+
+- Replace [[cookie-banner]] fatigue with instant [[micropayments]]
+- No [[account registration]] or [[subscription]] required
+- Read-one-article for 10 satoshis (~$0.01)
 
   #### 3. Machine-to-Machine Payments
 
@@ -173,10 +181,11 @@ x402 and l402 payment protocols is a blockchain and distributed systems concept 
   #### 4. Anti-DDoS and Spam Prevention
 
   [[L402]] inherently mitigates [[denial-of-service]] attacks:
-  - Each request requires [[Lightning payment]]
-  - [[Spam]] becomes economically infeasible
-  - [[Legitimate users]] pay negligible amounts
-  - [[Attackers]] face linear cost scaling
+
+- Each request requires [[Lightning payment]]
+- [[Spam]] becomes economically infeasible
+- [[Legitimate users]] pay negligible amounts
+- [[Attackers]] face linear cost scaling
 
   ### Projects and Adoption (2025)
 
@@ -190,31 +199,36 @@ x402 and l402 payment protocols is a blockchain and distributed systems concept 
   7. **[[Kollider]]** - [[Derivatives exchange]] API
 
   **Developer Adoption**:
-  - **1,200+ GitHub stars** on [[Aperture]] repository
-  - **500+ integrations** in [[Lightning]] applications
-  - **[[BTCPay Server]]** exploring L402 for [[plugin marketplace]]
+
+- **1,200+ GitHub stars** on [[Aperture]] repository
+- **500+ integrations** in [[Lightning]] applications
+- **[[BTCPay Server]]** exploring L402 for [[plugin marketplace]]
 
   ### L402 Protocol Advantages
 
   **[[Bitcoin-Native]]**:
-  - No [[custodial]] intermediaries
-  - [[Self-sovereign]] payment infrastructure
-  - [[Censorship-resistant]]
+
+- No [[custodial]] intermediaries
+- [[Self-sovereign]] payment infrastructure
+- [[Censorship-resistant]]
 
   **[[Privacy-Preserving]]**:
-  - No [[KYC]] requirements
-  - [[Pseudonymous]] payments
-  - Optional [[channel]] privacy via [[Tor]]
+
+- No [[KYC]] requirements
+- [[Pseudonymous]] payments
+- Optional [[channel]] privacy via [[Tor]]
 
   **[[Programmable Money]]**:
-  - [[Smart contract]]-like [[caveats]]
-  - [[Atomic]] payment and access
-  - [[Time-locked]] authorization
+
+- [[Smart contract]]-like [[caveats]]
+- [[Atomic]] payment and access
+- [[Time-locked]] authorization
 
   **[[Low Overhead]]**:
-  - Typical fees: 0-1 [[satoshi]]
-  - Sub-second settlement
-  - Minimal [[computational cost]]
+
+- Typical fees: 0-1 [[satoshi]]
+- Sub-second settlement
+- Minimal [[computational cost]]
 
   ## X402 Protocol: Google's Agents-to-Payments (AP2)
 
@@ -229,17 +243,19 @@ x402 and l402 payment protocols is a blockchain and distributed systems concept 
   [[X402]] diverges from [[L402]]'s [[Bitcoin-only]] approach by supporting **multiple [[payment rails]]**:
 
   **Supported Cryptocurrencies**:
-  - [[Bitcoin Proof-of-Work Protocol]] ([[BTC]])
-  - [[Ethereum Smart Contract Platform]] ([[ETH]])
-  - [[USD Coin]] ([[USDC]])
-  - [[Solana]] ([[SOL]])
-  - [[Polygon]] ([[MATIC]])
-  - [[Base]] (Coinbase [[L2]])
+
+- [[Bitcoin Proof-of-Work Protocol]] ([[BTC]])
+- [[Ethereum Smart Contract Platform]] ([[ETH]])
+- [[USD Coin]] ([[USDC]])
+- [[Solana]] ([[SOL]])
+- [[Polygon]] ([[MATIC]])
+- [[Base]] (Coinbase [[L2]])
 
   **Payment Processing Layer**:
-  - **[[Coinbase Commerce]]**: Primary [[payment gateway]]
-  - **[[Coinbase Wallet SDK]]**: Client-side integration
-  - **[[MCP]] (Model Context Protocol)**: [[AI agent]] interface layer
+
+- **[[Coinbase Commerce]]**: Primary [[payment gateway]]
+- **[[Coinbase Wallet SDK]]**: Client-side integration
+- **[[MCP]] (Model Context Protocol)**: [[AI agent]] interface layer
 
   ### X402 Protocol Flow
 
@@ -281,18 +297,18 @@ x402 and l402 payment protocols is a blockchain and distributed systems concept 
 
   {
   "payment_request": {
-    "id": "pay_abc123",
-    "amount": 0.01,
-    "currency": "USDC",
-    "chains": ["ethereum", "polygon", "base"],
-    "wallet": "0x742d35...",
-    "qr_code": "https://...",
-    "deeplink": "coinbase://pay/..."
+  "id": "pay_abc123",
+  "amount": 0.01,
+  "currency": "USDC",
+  "chains": ["ethereum", "polygon", "base"],
+  "wallet": "0x742d35...",
+  "qr_code": "https://...",
+  "deeplink": "coinbase://pay/..."
   },
   "service_info": {
-    "tokens_estimated": 500,
-    "model": "gemini-2.0-ultra",
-    "pricing_tier": "premium"
+  "tokens_estimated": 500,
+  "model": "gemini-2.0-ultra",
+  "pricing_tier": "premium"
   }
   }
   ```
@@ -311,11 +327,12 @@ x402 and l402 payment protocols is a blockchain and distributed systems concept 
   ```
 
   The [[MCP server]] (e.g., [[Coinbase MCP]]) handles:
-  - [[Wallet]] [[authentication]]
-  - [[Transaction]] signing
-  - [[Gas fee]] estimation
-  - [[Blockchain]] submission
-  - [[Confirmation]] waiting
+
+- [[Wallet]] [[authentication]]
+- [[Transaction]] signing
+- [[Gas fee]] estimation
+- [[Blockchain]] submission
+- [[Confirmation]] waiting
 
   #### 4. Payment Proof and Service Access
   ```http
@@ -342,9 +359,9 @@ x402 and l402 payment protocols is a blockchain and distributed systems concept 
   {
   "response": "Based on the dataset analysis...",
   "metadata": {
-    "model": "gemini-2.0-ultra",
-    "tokens_used": 487,
-    "processing_time_ms": 342
+  "model": "gemini-2.0-ultra",
+  "tokens_used": 487,
+  "processing_time_ms": 342
   }
   }
   ```
@@ -363,22 +380,22 @@ x402 and l402 payment protocols is a blockchain and distributed systems concept 
   ```json
   {
   "mcpServers": {
-    "coinbase-wallet": {
-      "command": "npx",
-      "args": ["@coinbase/mcp-server"],
-      "env": {
-        "COINBASE_API_KEY": "...",
-        "SUPPORTED_CHAINS": "ethereum,base,polygon"
-      }
-    },
-    "x402-payments": {
-      "command": "npx",
-      "args": ["@google/x402-mcp"],
-      "env": {
-        "PAYMENT_NETWORK": "mainnet",
-        "AUTO_APPROVE_UNDER": "0.10"
-      }
+  "coinbase-wallet": {
+    "command": "npx",
+    "args": ["@coinbase/mcp-server"],
+    "env": {
+      "COINBASE_API_KEY": "...",
+      "SUPPORTED_CHAINS": "ethereum,base,polygon"
     }
+  },
+  "x402-payments": {
+    "command": "npx",
+    "args": ["@google/x402-mcp"],
+    "env": {
+      "PAYMENT_NETWORK": "mainnet",
+      "AUTO_APPROVE_UNDER": "0.10"
+    }
+  }
   }
   }
   ```
@@ -388,17 +405,19 @@ x402 and l402 payment protocols is a blockchain and distributed systems concept 
   **[[Coinbase Commerce]]** provides [[enterprise-grade]] payment infrastructure:
 
   **Features**:
-  - [[Multi-chain]] support ([[Ethereum Smart Contract Platform]], [[Polygon]], [[Base]], [[Bitcoin Proof-of-Work Protocol]])
-  - [[Instant settlement]] for [[stablecoins]] ([[USDC]], [[USDT]])
-  - [[Fiat]] conversion options
-  - [[Compliance]] and [[KYC]] for regulated entities
-  - [[Merchant]] dashboards and [[analytics]]
+
+- [[Multi-chain]] support ([[Ethereum Smart Contract Platform]], [[Polygon]], [[Base]], [[Bitcoin Proof-of-Work Protocol]])
+- [[Instant settlement]] for [[stablecoins]] ([[USDC]], [[USDT]])
+- [[Fiat]] conversion options
+- [[Compliance]] and [[KYC]] for regulated entities
+- [[Merchant]] dashboards and [[analytics]]
 
   **Security Model**:
-  - [[Hardware wallet]] integration ([[Ledger]], [[Trezor]])
-  - [[Multi-signature]] wallets for [[enterprise]]
-  - [[Rate limiting]] and [[fraud detection]]
-  - [[Transaction monitoring]] for [[AML compliance]]
+
+- [[Hardware wallet]] integration ([[Ledger]], [[Trezor]])
+- [[Multi-signature]] wallets for [[enterprise]]
+- [[Rate limiting]] and [[fraud detection]]
+- [[Transaction monitoring]] for [[AML compliance]]
 
   ### Vercel Implementation
 
@@ -414,20 +433,20 @@ x402 and l402 payment protocols is a blockchain and distributed systems concept 
   const payment = await verifyX402Payment(req);
 
   if (!payment.verified) {
-    return res.status(402).json({
-      error: 'Payment required',
-      payment_request: {
-        amount: 0.01,
-        currency: 'USDC',
-        wallet: process.env.VERCEL_WALLET_ADDRESS
-      }
-    });
+  return res.status(402).json({
+    error: 'Payment required',
+    payment_request: {
+      amount: 0.01,
+      currency: 'USDC',
+      wallet: process.env.VERCEL_WALLET_ADDRESS
+    }
+  });
   }
 
   // Execute AI service
   const result = await openai.createCompletion({
-    model: 'gpt-4-turbo',
-    prompt: req.body.prompt
+  model: 'gpt-4-turbo',
+  prompt: req.body.prompt
   });
 
   return res.json(result);
@@ -435,10 +454,11 @@ x402 and l402 payment protocols is a blockchain and distributed systems concept 
   ```
 
   **Vercel Integration Benefits**:
-  - [[Edge]] deployment (120+ [[data centers]])
-  - [[Global]] payment acceptance
-  - [[Automatic scaling]]
-  - [[Built-in monitoring]]
+
+- [[Edge]] deployment (120+ [[data centers]])
+- [[Global]] payment acceptance
+- [[Automatic scaling]]
+- [[Built-in monitoring]]
 
   ### AI Agent Capabilities
 
@@ -461,28 +481,28 @@ x402 and l402 payment protocols is a blockchain and distributed systems concept 
   ```python
   # Autonomous research pipeline
   class ResearchAgent:
-    async def conduct_research(self, topic):
-        # Pay for academic database access
-        papers = await self.pay_and_fetch(
-            "https://api.scholar.google.com/search",
-            payment={"amount": 0.05, "currency": "USDC"}
-        )
+  async def conduct_research(self, topic):
+      # Pay for academic database access
+      papers = await self.pay_and_fetch(
+          "https://api.scholar.google.com/search",
+          payment={"amount": 0.05, "currency": "USDC"}
+      )
 
-        # Pay analysis agent
-        insights = await self.call_agent(
-            "analysis-agent-id",
-            data=papers,
-            payment={"amount": 0.10, "currency": "USDC"}
-        )
+      # Pay analysis agent
+      insights = await self.call_agent(
+          "analysis-agent-id",
+          data=papers,
+          payment={"amount": 0.10, "currency": "USDC"}
+      )
 
-        # Pay for cloud storage
-        await self.pay_and_store(
-            storage_service="gcp-storage",
-            data=insights,
-            payment={"amount": 0.01, "currency": "USDC"}
-        )
+      # Pay for cloud storage
+      await self.pay_and_store(
+          storage_service="gcp-storage",
+          data=insights,
+          payment={"amount": 0.01, "currency": "USDC"}
+      )
 
-        return insights
+      return insights
   ```
 
   ### Google's Strategic Vision
@@ -494,10 +514,11 @@ x402 and l402 payment protocols is a blockchain and distributed systems concept 
   4. **[[Blockchain]] integration**: Position [[Google AI Technology Corporation]] in [[Web3]] ecosystem
 
   **Announced Use Cases**:
-  - [[Google Cloud AI]] services with [[usage-based billing]]
-  - [[Vertex AI]] [[model serving]] with [[crypto]] payments
-  - [[BigQuery]] [[data access]] for [[AI agents]]
-  - [[Cloud Run]] [[function]] monetization
+
+- [[Google Cloud AI]] services with [[usage-based billing]]
+- [[Vertex AI]] [[model serving]] with [[crypto]] payments
+- [[BigQuery]] [[data access]] for [[AI agents]]
+- [[Cloud Run]] [[function]] monetization
 
   ## Technical Architecture Comparison
 
@@ -509,35 +530,38 @@ x402 and l402 payment protocols is a blockchain and distributed systems concept 
   > "The 402 (Payment Required) status code is reserved for future use."
 
   **Modern Interpretation**:
-  - **Challenge-response** authentication pattern
-  - **Payment metadata** in [[WWW-Authenticate]] header
-  - **Proof-of-payment** in [[Authorization]] header
-  - **Standardized error format**
+
+- **Challenge-response** authentication pattern
+- **Payment metadata** in [[WWW-Authenticate]] header
+- **Proof-of-payment** in [[Authorization]] header
+- **Standardized error format**
 
   ### Challenge-Response Flow Comparison
 
-  | Phase | L402 (Lightning) | X402 (Multi-Chain) |
-  |-------|------------------|---------------------|
-  | **Challenge** | [[Macaroon]] + [[BOLT11 invoice]] | Payment ID + [[multi-chain]] [[wallet addresses]] |
-  | **Payment** | [[Lightning Network]] [[off-chain]] | [[On-chain]] [[blockchain]] [[transaction]] |
-  | **Proof** | [[Preimage]] ([[32 bytes]]) | [[Transaction hash]] + [[block confirmation]] |
-  | **Latency** | <1 second | 5-60 seconds (chain-dependent) |
-  | **Fees** | 0-1 [[satoshi]] | $0.01-$5.00 ([[gas fees]]) |
-  | **Finality** | Instant | Probabilistic (6+ blocks) |
+| Phase | L402 (Lightning) | X402 (Multi-Chain) |
+|-------|------------------|---------------------|
+| **Challenge** | [[Macaroon]] + [[BOLT11 invoice]] | Payment ID + [[multi-chain]] [[wallet addresses]] |
+| **Payment** | [[Lightning Network]] [[off-chain]] | [[On-chain]] [[blockchain]] [[transaction]] |
+| **Proof** | [[Preimage]] ([[32 bytes]]) | [[Transaction hash]] + [[block confirmation]] |
+| **Latency** | <1 second | 5-60 seconds (chain-dependent) |
+| **Fees** | 0-1 [[satoshi]] | $0.01-$5.00 ([[gas fees]]) |
+| **Finality** | Instant | Probabilistic (6+ blocks) |
 
-  ### Authentication Mechanisms
+### Authentication Mechanisms
 
-  **L402 Macaroon-Based**:
-  - [[Bearer token]] with [[cryptographic binding]]
-  - [[Caveat]]-based authorization
-  - [[HMAC]] signature chain
-  - [[Attenuation]] support
+**L402 Macaroon-Based**:
+
+- [[Bearer token]] with [[cryptographic binding]]
+- [[Caveat]]-based authorization
+- [[HMAC]] signature chain
+- [[Attenuation]] support
 
   **X402 Payment-ID Based**:
-  - [[Transaction hash]] verification
-  - [[Blockchain]] [[receipt]] validation
-  - [[Smart contract]] [[event logs]]
-  - [[Blockchain Oracle]]-based [[price feeds]]
+
+- [[Transaction hash]] verification
+- [[Blockchain]] [[receipt]] validation
+- [[Smart contract]] [[event logs]]
+- [[Blockchain Oracle]]-based [[price feeds]]
 
   ### Payment Verification
 
@@ -561,10 +585,11 @@ x402 and l402 payment protocols is a blockchain and distributed systems concept 
   ### AI and GenAI Integration
 
   **[[Large Language Model]] Monetization**:
-  - [[OpenAI Research Organisation]], [[Anthropic]], [[Google AI Technology Corporation]] charging [[per-token]]
-  - [[AI agents]] paying for [[API calls]] autonomously
-  - [[Fine-tuning]] services with [[usage-based pricing]]
-  - [[Embedding]] generation [[micropayments]]
+
+- [[OpenAI Research Organisation]], [[Anthropic]], [[Google AI Technology Corporation]] charging [[per-token]]
+- [[AI agents]] paying for [[API calls]] autonomously
+- [[Fine-tuning]] services with [[usage-based pricing]]
+- [[Embedding]] generation [[micropayments]]
 
   **Example: [[Autonomous Research Agent]]**:
   ```
@@ -577,16 +602,18 @@ x402 and l402 payment protocols is a blockchain and distributed systems concept 
   ```
 
   **[[Prompt Marketplace]]**:
-  - [[Developers]] selling [[optimized prompts]]
-  - [[AI agents]] purchasing [[few-shot examples]]
-  - [[RAG]] ([[Retrieval-Augmented Generation]]) data access
+
+- [[Developers]] selling [[optimized prompts]]
+- [[AI agents]] purchasing [[few-shot examples]]
+- [[RAG]] ([[Retrieval-Augmented Generation]]) data access
 
   ### Robotics and IoT Applications
 
   **[[Industrial Robotics]]**:
-  - [[Manufacturing robots]] paying for [[CAD]] [[model]] access
-  - [[Quality control]] [[AI]] purchasing [[sensor]] data
-  - [[Predictive maintenance]] agents buying [[telemetry]]
+
+- [[Manufacturing robots]] paying for [[CAD]] [[model]] access
+- [[Quality control]] [[AI]] purchasing [[sensor]] data
+- [[Predictive maintenance]] agents buying [[telemetry]]
 
   **[[Smart Cities]]**:
   ```
@@ -596,92 +623,101 @@ x402 and l402 payment protocols is a blockchain and distributed systems concept 
   ```
 
   **[[Agriculture Automation]]**:
-  - [[Drones]] paying for [[satellite imagery]] ([[X402]])
-  - [[Irrigation]] systems purchasing [[weather forecasts]] ([[L402]])
-  - [[Harvesting robots]] accessing [[crop analytics]] ([[X402]])
+
+- [[Drones]] paying for [[satellite imagery]] ([[X402]])
+- [[Irrigation]] systems purchasing [[weather forecasts]] ([[L402]])
+- [[Harvesting robots]] accessing [[crop analytics]] ([[X402]])
 
   **[[Supply Chain]]**:
-  - [[RFID]] tags paying for [[blockchain]] [[ledger]] writes
-  - [[Shipping containers]] purchasing [[route optimization]]
-  - [[Inventory robots]] accessing [[demand forecasting]] [[APIs]]
+
+- [[RFID]] tags paying for [[blockchain]] [[ledger]] writes
+- [[Shipping containers]] purchasing [[route optimization]]
+- [[Inventory robots]] accessing [[demand forecasting]] [[APIs]]
 
   ### Web Services and API Monetization
 
   **[[Developer APIs]]**:
-  - [[GitHub]] charging for [[code analysis]] ([[L402]])
-  - [[Stripe]] offering [[fraud detection]] [[per-transaction]] ([[X402]])
-  - [[AWS Lambda]] functions with [[crypto]] billing ([[X402]])
+
+- [[GitHub]] charging for [[code analysis]] ([[L402]])
+- [[Stripe]] offering [[fraud detection]] [[per-transaction]] ([[X402]])
+- [[AWS Lambda]] functions with [[crypto]] billing ([[X402]])
 
   **[[Content Delivery Networks]]**:
-  - [[Cloudflare]] [[bandwidth]] pricing in [[satoshis]]
-  - [[Video streaming]] [[per-second]] [[micropayments]]
-  - [[Image optimization]] [[pay-per-transform]]
+
+- [[Cloudflare]] [[bandwidth]] pricing in [[satoshis]]
+- [[Video streaming]] [[per-second]] [[micropayments]]
+- [[Image optimization]] [[pay-per-transform]]
 
   **[[Data Marketplaces]]**:
-  - [[Financial]] [[market data]] ([[Bloomberg]], [[Reuters]]) via [[L402]]
-  - [[Social media]] [[API]] access ([[Twitter]], [[Reddit]]) via [[X402]]
-  - [[Geospatial]] data ([[Mapbox]], [[Google Maps]]) hybrid model
+
+- [[Financial]] [[market data]] ([[Bloomberg]], [[Reuters]]) via [[L402]]
+- [[Social media]] [[API]] access ([[Twitter]], [[Reddit]]) via [[X402]]
+- [[Geospatial]] data ([[Mapbox]], [[Google Maps]]) hybrid model
 
   ## Protocol Comparison: L402 vs X402
 
   ### Philosophical Differences
 
   **L402 Philosophy**:
-  - **[[Bitcoin-maximalist]]** approach
-  - **[[Decentralization]]** first
-  - **[[Privacy]]** by default
-  - **[[Minimal dependencies]]** ([[Lightning]] only)
-  - **[[Cypherpunk]]** ethos
+
+- **[[Bitcoin-maximalist]]** approach
+- **[[Decentralization]]** first
+- **[[Privacy]]** by default
+- **[[Minimal dependencies]]** ([[Lightning]] only)
+- **[[Cypherpunk]]** ethos
 
   **X402 Philosophy**:
-  - **[[Multi-chain]]** pragmatism
-  - **[[Enterprise]]** adoption focus
-  - **[[Compliance]]** compatibility
-  - **[[Ecosystem integration]]** ([[Google AI Technology Corporation]], [[Coinbase]])
-  - **[[Developer experience]]** priority
+
+- **[[Multi-chain]]** pragmatism
+- **[[Enterprise]]** adoption focus
+- **[[Compliance]]** compatibility
+- **[[Ecosystem integration]]** ([[Google AI Technology Corporation]], [[Coinbase]])
+- **[[Developer experience]]** priority
 
   ### Technical Trade-offs
 
-  | Dimension | L402 Advantages | X402 Advantages |
-  |-----------|-----------------|-----------------|
-  | **Latency** | <1s settlement | 5-60s confirmation |
-  | **Fees** | ~0 satoshis | $0.01-$5 gas fees |
-  | **Privacy** | High (Lightning channels) | Low (public blockchains) |
-  | **Crypto Support** | Bitcoin only | BTC, ETH, USDC, SOL, etc. |
-  | **Fiat Bridge** | Complex | Easy (Coinbase) |
-  | **Enterprise** | Limited tooling | Full GCP integration |
-  | **Scalability** | Millions TPS | 1000-5000 TPS |
-  | **Finality** | Instant | Probabilistic |
+| Dimension | L402 Advantages | X402 Advantages |
+|-----------|-----------------|-----------------|
+| **Latency** | <1s settlement | 5-60s confirmation |
+| **Fees** | ~0 satoshis | $0.01-$5 gas fees |
+| **Privacy** | High (Lightning channels) | Low (public blockchains) |
+| **Crypto Support** | Bitcoin only | BTC, ETH, USDC, SOL, etc. |
+| **Fiat Bridge** | Complex | Easy (Coinbase) |
+| **Enterprise** | Limited tooling | Full GCP integration |
+| **Scalability** | Millions TPS | 1000-5000 TPS |
+| **Finality** | Instant | Probabilistic |
 
-  ### Adoption Barriers
+### Adoption Barriers
 
-  **L402 Challenges**:
-  1. [[Lightning]] [[wallet]] complexity for non-crypto users
-  2. [[Channel]] [[liquidity]] requirements
-  3. [[Bitcoin-only]] limits [[stablecoin]] use cases
-  4. Limited [[enterprise]] [[compliance]] tooling
+**L402 Challenges**:
+1. [[Lightning]] [[wallet]] complexity for non-crypto users
+2. [[Channel]] [[liquidity]] requirements
+3. [[Bitcoin-only]] limits [[stablecoin]] use cases
+4. Limited [[enterprise]] [[compliance]] tooling
 
-  **X402 Challenges**:
-  1. [[Gas fees]] make true [[micropayments]] impractical (<$0.01)
-  2. [[Blockchain confirmation]] latency
-  3. [[Regulatory]] uncertainty for [[crypto]] payments
-  4. [[Wallet]] [[custody]] and [[key management]]
+**X402 Challenges**:
+1. [[Gas fees]] make true [[micropayments]] impractical (<$0.01)
+2. [[Blockchain confirmation]] latency
+3. [[Regulatory]] uncertainty for [[crypto]] payments
+4. [[Wallet]] [[custody]] and [[key management]]
 
-  ### Use Case Fit
+### Use Case Fit
 
-  **Choose L402 When**:
-  - [[Micropayments]] under $0.01
-  - [[Sub-second]] settlement required
-  - [[Privacy]] is critical
-  - [[Bitcoin-native]] ecosystem
-  - [[Censorship resistance]] needed
+**Choose L402 When**:
+
+- [[Micropayments]] under $0.01
+- [[Sub-second]] settlement required
+- [[Privacy]] is critical
+- [[Bitcoin-native]] ecosystem
+- [[Censorship resistance]] needed
 
   **Choose X402 When**:
-  - [[Multi-cryptocurrency]] support required
-  - [[Enterprise]] [[compliance]] needed
-  - [[AI agent]] integration via [[MCP]]
-  - [[Fiat]] [[on-ramp]]/[[off-ramp]] important
-  - [[Google Cloud]] [[Technology Infrastructure Domain]] used
+
+- [[Multi-cryptocurrency]] support required
+- [[Enterprise]] [[compliance]] needed
+- [[AI agent]] integration via [[MCP]]
+- [[Fiat]] [[on-ramp]]/[[off-ramp]] important
+- [[Google Cloud]] [[Technology Infrastructure Domain]] used
 
   ## Implementation Patterns
 
@@ -690,38 +726,38 @@ x402 and l402 payment protocols is a blockchain and distributed systems concept 
   **L402 Server (Go + Aperture)**:
   ```go
   import (
-    "github.com/lightninglabs/aperture/lsat"
-    "github.com/lightningnetwork/lnd/lnrpc"
+  "github.com/lightninglabs/aperture/lsat"
+  "github.com/lightningnetwork/lnd/lnrpc"
   )
 
   func PaymentMiddleware(next http.Handler) http.Handler {
-    return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
-        // Extract LSAT token
-        token := extractLSAT(r.Header.Get("Authorization"))
+  return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
+      // Extract LSAT token
+      token := extractLSAT(r.Header.Get("Authorization"))
 
-        if token == nil {
-            // Generate new LSAT challenge
-            macaroon := generateMacaroon()
-            invoice := lndClient.AddInvoice(&lnrpc.Invoice{
-                Value: 1000, // 1000 satoshis
-                Memo: "API Access",
-            })
+      if token == nil {
+          // Generate new LSAT challenge
+          macaroon := generateMacaroon()
+          invoice := lndClient.AddInvoice(&lnrpc.Invoice{
+              Value: 1000, // 1000 satoshis
+              Memo: "API Access",
+          })
 
-            w.Header().Set("WWW-Authenticate",
-                fmt.Sprintf(`LSAT macaroon="%s", invoice="%s"`,
-                    macaroon, invoice.PaymentRequest))
-            w.WriteHeader(402)
-            return
-        }
+          w.Header().Set("WWW-Authenticate",
+              fmt.Sprintf(`LSAT macaroon="%s", invoice="%s"`,
+                  macaroon, invoice.PaymentRequest))
+          w.WriteHeader(402)
+          return
+      }
 
-        // Verify preimage
-        if !verifyPreimage(token.Preimage, token.PaymentHash) {
-            w.WriteHeader(401)
-            return
-        }
+      // Verify preimage
+      if !verifyPreimage(token.Preimage, token.PaymentHash) {
+          w.WriteHeader(401)
+          return
+      }
 
-        next.ServeHTTP(w, r)
-    })
+      next.ServeHTTP(w, r)
+  })
   }
   ```
 
@@ -733,27 +769,27 @@ x402 and l402 payment protocols is a blockchain and distributed systems concept 
   const authHeader = req.headers.authorization;
 
   if (!authHeader || !authHeader.startsWith('X402 ')) {
-    // Challenge with payment request
-    const charge = await CoinbaseCommerce.charges.create({
-      name: 'API Access',
-      description: '1000 API tokens',
-      pricing_type: 'fixed_price',
-      local_price: {
-        amount: '0.01',
-        currency: 'USDC'
-      }
-    });
+  // Challenge with payment request
+  const charge = await CoinbaseCommerce.charges.create({
+    name: 'API Access',
+    description: '1000 API tokens',
+    pricing_type: 'fixed_price',
+    local_price: {
+      amount: '0.01',
+      currency: 'USDC'
+    }
+  });
 
-    res.status(402).json({
-      payment_request: {
-        id: charge.id,
-        wallet: charge.addresses.usdc,
-        amount: '0.01',
-        currency: 'USDC',
-        qr_code: charge.hosted_url
-      }
-    });
-    return;
+  res.status(402).json({
+    payment_request: {
+      id: charge.id,
+      wallet: charge.addresses.usdc,
+      amount: '0.01',
+      currency: 'USDC',
+      qr_code: charge.hosted_url
+    }
+  });
+  return;
   }
 
   // Verify payment
@@ -761,9 +797,9 @@ x402 and l402 payment protocols is a blockchain and distributed systems concept 
   const charge = await CoinbaseCommerce.charges.retrieve(paymentId);
 
   if (charge.timeline.find(e => e.status === 'COMPLETED')) {
-    next(); // Payment verified
+  next(); // Payment verified
   } else {
-    res.status(401).json({ error: 'Payment not confirmed' });
+  res.status(401).json({ error: 'Payment not confirmed' });
   }
   });
   ```
@@ -783,19 +819,19 @@ x402 and l402 payment protocols is a blockchain and distributed systems concept 
   let response = await fetch(endpoint);
 
   if (response.status === 402) {
-    // Extract LSAT challenge
-    const challenge = response.headers.get('WWW-Authenticate');
-    const { macaroon, invoice } = parseLSAT(challenge);
+  // Extract LSAT challenge
+  const challenge = response.headers.get('WWW-Authenticate');
+  const { macaroon, invoice } = parseLSAT(challenge);
 
-    // Pay invoice
-    const preimage = await client.payInvoice(invoice);
+  // Pay invoice
+  const preimage = await client.payInvoice(invoice);
 
-    // Retry with payment proof
-    response = await fetch(endpoint, {
-      headers: {
-        'Authorization': `LSAT ${macaroon}:${preimage}`
-      }
-    });
+  // Retry with payment proof
+  response = await fetch(endpoint, {
+    headers: {
+      'Authorization': `LSAT ${macaroon}:${preimage}`
+    }
+  });
   }
 
   return response.json();
@@ -809,28 +845,28 @@ x402 and l402 payment protocols is a blockchain and distributed systems concept 
   from mcp import MCPClient
 
   async def call_api_with_payment(url, mcp_server):
-    response = requests.get(url)
+  response = requests.get(url)
 
-    if response.status_code == 402:
-        payment_request = response.json()['payment_request']
+  if response.status_code == 402:
+      payment_request = response.json()['payment_request']
 
-        # Execute payment via MCP
-        mcp = MCPClient(server=mcp_server)
-        tx_hash = await mcp.execute_payment(
-            amount=payment_request['amount'],
-            currency=payment_request['currency'],
-            recipient=payment_request['wallet']
-        )
+      # Execute payment via MCP
+      mcp = MCPClient(server=mcp_server)
+      tx_hash = await mcp.execute_payment(
+          amount=payment_request['amount'],
+          currency=payment_request['currency'],
+          recipient=payment_request['wallet']
+      )
 
-        # Wait for confirmation
-        await mcp.wait_for_confirmation(tx_hash, confirmations=1)
+      # Wait for confirmation
+      await mcp.wait_for_confirmation(tx_hash, confirmations=1)
 
-        # Retry with proof
-        response = requests.get(url, headers={
-            'Authorization': f'X402 payment_id={payment_request["id"]} tx_hash={tx_hash}'
-        })
+      # Retry with proof
+      response = requests.get(url, headers={
+          'Authorization': f'X402 payment_id={payment_request["id"]} tx_hash={tx_hash}'
+      })
 
-    return response.json()
+  return response.json()
   ```
 
   ## 2025 Adoption and Market Status
@@ -838,18 +874,20 @@ x402 and l402 payment protocols is a blockchain and distributed systems concept 
   ### Market Metrics (Q4 2025)
 
   **L402 Ecosystem**:
-  - **Active implementations**: 1,500+
-  - **Monthly payment volume**: $250,000+ (Lightning BTC)
-  - **Average payment size**: $0.05
-  - **Primary industries**: [[Developer tools]], [[VPN services]], [[Content creators]]
-  - **Geographic concentration**: [[North America]] (45%), [[Europe]] (35%), [[Asia]] (20%)
+
+- **Active implementations**: 1,500+
+- **Monthly payment volume**: $250,000+ (Lightning BTC)
+- **Average payment size**: $0.05
+- **Primary industries**: [[Developer tools]], [[VPN services]], [[Content creators]]
+- **Geographic concentration**: [[North America]] (45%), [[Europe]] (35%), [[Asia]] (20%)
 
   **X402 Ecosystem**:
-  - **Active implementations**: 500+ (launched Dec 2024)
-  - **Monthly payment volume**: $2.1M+ (multi-chain)
-  - **Average payment size**: $0.50
-  - **Primary industries**: [[AI/ML]], [[Cloud services]], [[Enterprise SaaS]]
-  - **[[Google Cloud]] integration**: 15,000+ [[GCP]] accounts enabled
+
+- **Active implementations**: 500+ (launched Dec 2024)
+- **Monthly payment volume**: $2.1M+ (multi-chain)
+- **Average payment size**: $0.50
+- **Primary industries**: [[AI/ML]], [[Cloud services]], [[Enterprise SaaS]]
+- **[[Google Cloud]] integration**: 15,000+ [[GCP]] accounts enabled
 
   ### Enterprise Adoption
 
@@ -871,31 +909,36 @@ x402 and l402 payment protocols is a blockchain and distributed systems concept 
   ### Regulatory Landscape
 
   **United States**:
-  - [[FinCEN]] treating [[L402]] as [[money transmission]] in some states
-  - [[SEC]] monitoring [[X402]] for [[securities]] concerns
-  - [[CFTC]] examining [[AI agent]] [[commodity trading]]
+
+- [[FinCEN]] treating [[L402]] as [[money transmission]] in some states
+- [[SEC]] monitoring [[X402]] for [[securities]] concerns
+- [[CFTC]] examining [[AI agent]] [[commodity trading]]
 
   **European Union**:
-  - [[MiCA]] ([[Markets in Crypto-Assets]]) compliance required for [[X402]]
-  - [[GDPR]] implications for [[payment metadata]]
-  - [[PSD2]] potential coverage for [[crypto]] [[API payments]]
+
+- [[MiCA]] ([[Markets in Crypto-Assets]]) compliance required for [[X402]]
+- [[GDPR]] implications for [[payment metadata]]
+- [[PSD2]] potential coverage for [[crypto]] [[API payments]]
 
   **Asia-Pacific**:
-  - [[Singapore]] [[MAS]] sandbox for [[payment protocols]]
-  - [[Japan]] [[FSA]] licenses for [[crypto]] [[API]] providers
-  - [[Hong Kong]] exploring [[CBDC]] integration
+
+- [[Singapore]] [[MAS]] sandbox for [[payment protocols]]
+- [[Japan]] [[FSA]] licenses for [[crypto]] [[API]] providers
+- [[Hong Kong]] exploring [[CBDC]] integration
 
   ### Developer Ecosystem
 
   **Open Source Projects**:
-  - **L402**: 50+ [[GitHub]] repos, 3,000+ stars
-  - **X402**: 30+ repos (newer protocol)
-  - **Combined SDK downloads**: 100,000+ monthly
+
+- **L402**: 50+ [[GitHub]] repos, 3,000+ stars
+- **X402**: 30+ repos (newer protocol)
+- **Combined SDK downloads**: 100,000+ monthly
 
   **Developer Communities**:
-  - [[Lightning Developers]] Slack: 5,000+ members
-  - [[X402 Discord]]: 2,000+ members
-  - [[Stack Overflow]] tags: 500+ questions
+
+- [[Lightning Developers]] Slack: 5,000+ members
+- [[X402 Discord]]: 2,000+ members
+- [[Stack Overflow]] tags: 500+ questions
 
   #### Future Directions
   ### Technical Roadmap
@@ -920,20 +963,22 @@ x402 and l402 payment protocols is a blockchain and distributed systems concept 
   Future systems may support both protocols:
   ```http
   WWW-Authenticate: L402 macaroon="...", invoice="...",
-                  X402 payment_id="...", methods="btc,eth,usdc"
+                X402 payment_id="...", methods="btc,eth,usdc"
   ```
 
   Clients choose based on:
-  - **Payment size**: L402 for <$0.01, X402 for >$0.10
-  - **Latency requirements**: L402 for real-time
-  - **Currency preference**: User/agent wallet holdings
+
+- **Payment size**: L402 for <$0.01, X402 for >$0.10
+- **Latency requirements**: L402 for real-time
+- **Currency preference**: User/agent wallet holdings
 
   ### AI Agent Economy
 
   **Projected Growth**:
-  - **2025**: $500M in [[AI agent]] [[API payments]]
-  - **2026**: $2.5B (5x growth)
-  - **2027**: $10B+ as [[autonomous agents]] proliferate
+
+- **2025**: $500M in [[AI agent]] [[API payments]]
+- **2026**: $2.5B (5x growth)
+- **2027**: $10B+ as [[autonomous agents]] proliferate
 
   **Agent Economic Models**:
   1. **[[DAO]]-Governed Agents**: [[Smart contracts]] controlling budgets
@@ -944,17 +989,20 @@ x402 and l402 payment protocols is a blockchain and distributed systems concept 
   ### Standardization Efforts
 
   **[[IETF]]** (Internet Engineering Task Force):
-  - Draft [[RFC]] for HTTP 402 implementation
-  - [[WWW-Authenticate]] header [[schema]] for [[payment protocols]]
-  - [[Authorization]] header [[proof-of-payment]] formats
+
+- Draft [[RFC]] for HTTP 402 implementation
+- [[WWW-Authenticate]] header [[schema]] for [[payment protocols]]
+- [[Authorization]] header [[proof-of-payment]] formats
 
   **[[W3C]]** (World Wide Web Consortium):
-  - [[Web Payments]] [[working group]] exploring [[crypto]] integration
-  - [[Payment Request API]] extensions for [[Lightning]] and [[blockchain]]
+
+- [[Web Payments]] [[working group]] exploring [[crypto]] integration
+- [[Payment Request API]] extensions for [[Lightning]] and [[blockchain]]
 
   **[[ISO]]** (International Organization for Standardization):
-  - [[ISO 20022]] [[messaging]] for [[crypto]] payments
-  - [[API]] [[security]] standards ([[ISO 27001]])
+
+- [[ISO 20022]] [[messaging]] for [[crypto]] payments
+- [[API]] [[security]] standards ([[ISO 27001]])
 
   ## Original Reference Materials
 
@@ -1000,10 +1048,11 @@ x402 and l402 payment protocols is a blockchain and distributed systems concept 
   5. **[[Developer Opportunity]]**: The [[API economy]] is transitioning from [[rate-limited]] [[free tiers]] to [[granular]] [[usage-based]] [[monetization]]
 
   The question is no longer *whether* [[HTTP 402]] [[payment protocols]] will succeed, but *which protocol* will dominate *which markets*. The next decade will likely see:
-  - [[L402]] becoming the standard for [[Lightning-native]] [[apps]]
-  - [[X402]] powering [[AI agent]] [[ecosystems]] in [[enterprise]]
-  - Hybrid implementations supporting both [[payment rails]]
-  - New protocols emerging for [[specific niches]] ([[IoT]], [[gaming]], [[metaverse]])
+
+- [[L402]] becoming the standard for [[Lightning-native]] [[apps]]
+- [[X402]] powering [[AI agent]] [[ecosystems]] in [[enterprise]]
+- Hybrid implementations supporting both [[payment rails]]
+- New protocols emerging for [[specific niches]] ([[IoT]], [[gaming]], [[metaverse]])
 
   We are witnessing the birth of the **[[programmable money]] [[web]]**—where every [[HTTP]] [[request]] can carry a [[payment]], every [[API]] can be monetized at [[satoshi]] [[granularity]], and [[machines]] can [[transact]] autonomously at the [[speed of computation]].
 
@@ -1013,5 +1062,5 @@ x402 and l402 payment protocols is a blockchain and distributed systems concept 
 
   *Last updated: 2025-11-15 | Quality Score: 0.94 | Expert-Level Technical Analysis*
 
-- ### Provenance
+### Provenance
 

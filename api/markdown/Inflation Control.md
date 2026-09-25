@@ -1,4 +1,3 @@
-
 Inflation Control encompasses the mechanisms, policies, and economic design patterns used within virtual and metaverse economies to regulate the creation, circulation, and destruction of virtual currency and digital assets. These controls prevent hyperinflation and value collapse by balancing supply-side minting with demand-side sinks. Effective inflation control underpins the long-term viability of play-to-earn ecosystems, NFT markets, and decentralised finance platforms built on virtual worlds.
 
 ### Definition
@@ -19,7 +18,7 @@ Tokenomics governance — whether centralised (developer-controlled) or decentra
 
 Inflation control intersects with cross-metaverse commerce as interoperability between virtual worlds creates new arbitrage and capital flow dynamics. An economy that achieves stability in isolation may face inflationary pressure from external asset bridges. As the metaverse matures, inflation control frameworks will need to account for cross-platform liquidity, real-world currency pegs, and regulatory requirements imposed by central bank digital currency frameworks operating alongside virtual currencies.
 
-- ### Semantic Classification
+### Semantic Classification
 
-- ### Provenance
+### Provenance
 

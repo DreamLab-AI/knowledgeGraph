@@ -1,12 +1,12 @@
-
 Domain marker for ETSI metaverse categorisation covering data storage, processing, synchronisation, and lifecycle management for distributed virtual environments.
 
-- ### Bridge-To
+### Bridge-To
 
-- ### Semantic Classification
+### Semantic Classification
 
-- ### Content
-  ETSI Domain: Data Management — content pending enrichment.
+### Content
 
-- ### Provenance
+ETSI Domain: Data Management — content pending enrichment.
+
+### Provenance
 

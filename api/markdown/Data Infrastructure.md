@@ -1,21 +1,27 @@
-
 Data infrastructure is the integrated set of systems, platforms, and pipelines that ingest, store, process, govern, and serve data across an organisation. It encompasses storage layers such as data warehouses and data lakes, processing and integration pipelines, cataloguing and governance, and the compute fabric that supports analytics and machine learning. Data infrastructure provides the reliable, scalable foundation on which data products and decision-making depend.
 
 - Data infrastructure is the [[Infrastructure]] layer that ingests, stores, processes, and serves data across an organisation. It binds together a [[Data Warehouse]], a [[Data Lake]], and [[Data Pipeline]] systems on top of [[Cloud Computing]] and [[Database]] technologies to deliver reliable, governed data at scale.
-- ### Overview
+
+### Overview
+
 - The discipline organises raw and refined data into storage tiers, moves it through ingestion and transformation pipelines, and exposes it through serving layers for analytics and applications.
 - Modern data infrastructure is typically cloud-native and elastic, separating storage from compute so that workloads scale independently and cost tracks usage.
 - Governance, lineage, cataloguing, and observability are woven through the stack so that data is trustworthy, discoverable, and auditable rather than merely available.
-- ### Key aspects
+
+### Key aspects
+
 - Layered storage spanning warehouses, lakes, and lakehouses.
 - Ingestion and transformation pipelines for batch and streaming data.
 - Compute fabric decoupled from storage for elastic scaling.
 - Cataloguing, lineage, and observability for trust and discoverability.
 - Governance and access control enforced across the stack.
-- ### Applications
+
+### Applications
+
 - Powering [[Business Intelligence]] dashboards and reporting.
 - Feeding feature stores and training data for [[Machine Learning]].
 - Supporting operational analytics and real-time decisioning.
 - Underpinning regulated workloads requiring [[Data Governance]].
-- ### Provenance
+
+### Provenance
 

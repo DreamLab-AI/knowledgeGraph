@@ -1,4 +1,3 @@
-
 A Consensus Rule is a protocol-level validation requirement that every fully-validating node in a blockchain network must enforce uniformly to reach and maintain agreement on the canonical chain state. Consensus rules define which blocks and transactions are valid, covering aspects such as block structure, cryptographic proofs, transaction format, gas limits, and state-transition logic. Deviation from consensus rules — whether accidental or deliberate — results in a fork, splitting the network into incompatible chains.
 
 ### Definition
@@ -19,7 +18,7 @@ Ethereum's consensus rules are more complex due to the EVM, covering gas account
 
 Byzantine Fault Tolerance theory informs the security guarantees of consensus rules: in an asynchronous network, agreement is achievable only if fewer than one-third of validators violate the rules (in BFT-style protocols) or fewer than half the hash rate produces dishonest blocks (in proof-of-work). A 51% Attack is the scenario where this tolerance threshold is breached — an attacker controlling sufficient resources can reorganise the chain and effectively rewrite recent consensus history. Well-designed consensus rules minimise the attack surface by making such violations expensive relative to the honest-mining or honest-staking economic incentive.
 
-- ### Semantic Classification
+### Semantic Classification
 
-- ### Provenance
+### Provenance
 

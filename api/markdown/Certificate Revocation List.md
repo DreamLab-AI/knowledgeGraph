@@ -1,24 +1,30 @@
-
 A Certificate Revocation List (CRL) is a digitally signed, periodically published list of digital certificates that a certificate authority has revoked before their scheduled expiry. Each entry records the serial number of a revoked certificate, the revocation date, and an optional reason code, allowing relying parties to reject certificates that are no longer trustworthy. CRLs are a core revocation mechanism of X.509 public key infrastructure, complemented or replaced in many deployments by the Online Certificate Status Protocol.
 
 - A **Certificate Revocation List** is a signed list, issued by a [[Certificate Authority]], of [[X.509 Certificate]]s that have been revoked before expiry.
 - It is a [[Revocation Registry]] within a [[Public Key Infrastructure]] that lets relying parties reject compromised or invalidated certificates.
 - Its structure and processing are defined by [[RFC 5280]], and each list is protected by a [[Digital Signature]].
-- ### Overview
+
+### Overview
+
 - When a certificate must be invalidated early — for example because its private key is compromised, the subject has changed, or the certificate was mis-issued — the issuing CA adds the certificate's serial number to a CRL.
 - The CRL is itself a signed object; relying parties verify the CA's signature over the list before trusting its contents, ensuring the revocation information has not been forged or tampered with.
 - CRLs are published at well-known distribution points (referenced in the certificate's CRL Distribution Point extension) and are reissued on a schedule with a defined next-update time.
 - Because full CRLs can grow large, deployments use delta CRLs, partitioned CRLs, or shift entirely to online status checking to keep revocation data fresh and bandwidth-efficient.
-- ### Mechanisms
+
+### Mechanisms
+
 - Entry structure: each revoked certificate is identified by serial number with a revocation date and optional reason code.
 - Signing: the whole list is signed by the issuing CA so it is self-authenticating.
 - Distribution points: certificates carry pointers to where their controlling CRL can be fetched.
 - Freshness: thisUpdate and nextUpdate fields bound how stale a cached CRL may be.
 - Delta CRLs: incremental lists that reference a base CRL to reduce transfer size.
-- ### Applications
+
+### Applications
+
 - TLS clients checking whether a server's certificate has been revoked.
 - Enterprise PKI validating employee, device, and code-signing certificates.
 - Browser and operating-system trust stores consuming revocation feeds.
 - Smart-card and government identity systems relying on periodic revocation publication.
-- ### Provenance
+
+### Provenance
 

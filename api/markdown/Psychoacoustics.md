@@ -1,24 +1,32 @@
-
 Psychoacoustics is the scientific study of how humans perceive sound, relating physical properties of acoustic signals such as frequency, intensity and timing to subjective sensations of pitch, loudness, timbre and spatial location. It characterises perceptual phenomena including auditory masking, critical bands and localisation cues, and explains the limits and biases of the human auditory system. Its findings underpin perceptual audio coding, spatial audio rendering and hearing-aid design.
 
 - Psychoacoustics studies how physical sound maps to subjective auditory [[Perception]], grounded in [[Cognitive Science]] and analysed with [[Signal Processing]].
 - It explains masking, loudness, pitch and localisation and the limits of human hearing.
-- ### Overview
+
+### Overview
+
 - The discipline measures perceptual thresholds and effects to build models of what listeners actually hear, distinct from what a microphone records.
 - Key results such as auditory masking and critical-band filtering reveal that much acoustic detail is imperceptible, a fact exploited heavily by audio compression.
 - Spatial hearing models, including interaural time and level differences, drive binaural and [[Spatial Audio]] rendering.
-- ### Key aspects
+
+### Key aspects
+
 - Loudness perception and equal-loudness contours.
 - Frequency and temporal masking phenomena.
 - Critical-band filtering of the cochlea.
 - Localisation cues for directional and distance perception.
 - Pitch and timbre perception.
-- ### Mechanisms
+
+### Mechanisms
+
 - Controlled listening experiments quantify thresholds and sensitivities, which are encoded into computational perceptual models used by audio systems.
-- ### Applications
+
+### Applications
+
 - Perceptual coding underpinning [[Audio Codec]] formats that discard inaudible detail.
 - Spatial and [[Immersive Audio]] rendering, including [[Ambisonics]].
 - Hearing-aid and cochlear-implant design.
 - Sound-quality evaluation and product tuning.
-- ### Provenance
+
+### Provenance
 

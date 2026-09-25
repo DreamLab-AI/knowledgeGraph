@@ -1,110 +1,110 @@
-
 FIPA ACL is the Agent Communication Language standardised by the Foundation for Intelligent Physical Agents, defining a message format and a library of communicative acts that autonomous software agents use to exchange information and coordinate behaviour. Each message carries a performative such as inform, request, or propose, drawn from speech-act theory, together with parameters identifying sender, receiver, content language, and ontology. It provides the interoperability layer that lets heterogeneous agents in a multi-agent system understand one another's intentions.
 
-- ### Semantic Classification
+### Semantic Classification
 
-- ### Content
-  ## Compositional Relationships (Components)
-      SubClassOf(ai:FIPAACL
-        ObjectSomeValuesFrom(ai:hasPart ai:Performative))
-      SubClassOf(ai:FIPAACL
-        ObjectSomeValuesFrom(ai:hasPart ai:MessageEnvelope))
-      SubClassOf(ai:FIPAACL
-        ObjectSomeValuesFrom(ai:hasPart ai:InteractionProtocol))
-      SubClassOf(ai:FIPAACL
-        ObjectSomeValuesFrom(ai:hasPart ai:ContentLanguage))
-      SubClassOf(ai:FIPAACL
-        ObjectSomeValuesFrom(ai:hasPart ai:Ontology))
-      SubClassOf(ai:FIPAACL
-        ObjectSomeValuesFrom(ai:hasPart ai:ContractNetProtocol))
-      SubClassOf(ai:FIPAACL
-        ObjectSomeValuesFrom(ai:hasPart ai:ConversationIdentifier))
+### Content
 
-  ## Dependency Relationships
-      SubClassOf(ai:FIPAACL
-        ObjectSomeValuesFrom(ai:requires ai:Ontology))
-      SubClassOf(ai:FIPAACL
-        ObjectSomeValuesFrom(ai:requires ai:SpeechActTheory))
-      SubClassOf(ai:FIPAACL
-        ObjectSomeValuesFrom(ai:requires ai:MessagePassing))
-      SubClassOf(ai:FIPAACL
-        ObjectSomeValuesFrom(ai:requires ai:AgentPlatform))
-      SubClassOf(ai:FIPAACL
-        ObjectSomeValuesFrom(ai:requires ai:KnowledgeInterchangeFormat))
-      SubClassOf(ai:FIPAACL
-        ObjectSomeValuesFrom(ai:dependsOn ai:DistributedSystems))
-      SubClassOf(ai:FIPAACL
-        ObjectSomeValuesFrom(ai:dependsOn ai:AutonomousAgent))
+## Compositional Relationships (Components)
+    SubClassOf(ai:FIPAACL
+      ObjectSomeValuesFrom(ai:hasPart ai:Performative))
+    SubClassOf(ai:FIPAACL
+      ObjectSomeValuesFrom(ai:hasPart ai:MessageEnvelope))
+    SubClassOf(ai:FIPAACL
+      ObjectSomeValuesFrom(ai:hasPart ai:InteractionProtocol))
+    SubClassOf(ai:FIPAACL
+      ObjectSomeValuesFrom(ai:hasPart ai:ContentLanguage))
+    SubClassOf(ai:FIPAACL
+      ObjectSomeValuesFrom(ai:hasPart ai:Ontology))
+    SubClassOf(ai:FIPAACL
+      ObjectSomeValuesFrom(ai:hasPart ai:ContractNetProtocol))
+    SubClassOf(ai:FIPAACL
+      ObjectSomeValuesFrom(ai:hasPart ai:ConversationIdentifier))
 
-  ## Capability Relationships
-      SubClassOf(ai:FIPAACL
-        ObjectSomeValuesFrom(ai:enables ai:MultiAgentCoordination))
-      SubClassOf(ai:FIPAACL
-        ObjectSomeValuesFrom(ai:enables ai:Interoperability))
-      SubClassOf(ai:FIPAACL
-        ObjectSomeValuesFrom(ai:enables ai:DistributedDecisionMaking))
-      SubClassOf(ai:FIPAACL
-        ObjectSomeValuesFrom(ai:enables ai:ContractNetProtocol))
-      SubClassOf(ai:FIPAACL
-        ObjectSomeValuesFrom(ai:enables ai:AgenticWorkflow))
-      SubClassOf(ai:FIPAACL
-        ObjectSomeValuesFrom(ai:supports ai:AutonomousAgent))
-      SubClassOf(ai:FIPAACL
-        ObjectSomeValuesFrom(ai:supports ai:AgentPlatform))
+## Dependency Relationships
+    SubClassOf(ai:FIPAACL
+      ObjectSomeValuesFrom(ai:requires ai:Ontology))
+    SubClassOf(ai:FIPAACL
+      ObjectSomeValuesFrom(ai:requires ai:SpeechActTheory))
+    SubClassOf(ai:FIPAACL
+      ObjectSomeValuesFrom(ai:requires ai:MessagePassing))
+    SubClassOf(ai:FIPAACL
+      ObjectSomeValuesFrom(ai:requires ai:AgentPlatform))
+    SubClassOf(ai:FIPAACL
+      ObjectSomeValuesFrom(ai:requires ai:KnowledgeInterchangeFormat))
+    SubClassOf(ai:FIPAACL
+      ObjectSomeValuesFrom(ai:dependsOn ai:DistributedSystems))
+    SubClassOf(ai:FIPAACL
+      ObjectSomeValuesFrom(ai:dependsOn ai:AutonomousAgent))
 
-  ## Implementation Relationships
-      SubClassOf(ai:FIPAACL
-        ObjectSomeValuesFrom(ai:implements ai:SpeechActTheory))
-      SubClassOf(ai:FIPAACL
-        ObjectSomeValuesFrom(ai:implements ai:CommunicationProtocol))
-      SubClassOf(ai:FIPAACL
-        ObjectSomeValuesFrom(ai:implements ai:InterAgentCommunication))
-      SubClassOf(ai:FIPAACL
-        ObjectSomeValuesFrom(ai:uses ai:Ontology))
-      SubClassOf(ai:FIPAACL
-        ObjectSomeValuesFrom(ai:uses ai:KnowledgeInterchangeFormat))
-      SubClassOf(ai:FIPAACL
-        ObjectSomeValuesFrom(ai:uses ai:MessagePassing))
+## Capability Relationships
+    SubClassOf(ai:FIPAACL
+      ObjectSomeValuesFrom(ai:enables ai:MultiAgentCoordination))
+    SubClassOf(ai:FIPAACL
+      ObjectSomeValuesFrom(ai:enables ai:Interoperability))
+    SubClassOf(ai:FIPAACL
+      ObjectSomeValuesFrom(ai:enables ai:DistributedDecisionMaking))
+    SubClassOf(ai:FIPAACL
+      ObjectSomeValuesFrom(ai:enables ai:ContractNetProtocol))
+    SubClassOf(ai:FIPAACL
+      ObjectSomeValuesFrom(ai:enables ai:AgenticWorkflow))
+    SubClassOf(ai:FIPAACL
+      ObjectSomeValuesFrom(ai:supports ai:AutonomousAgent))
+    SubClassOf(ai:FIPAACL
+      ObjectSomeValuesFrom(ai:supports ai:AgentPlatform))
 
-  ## Reduction Relationships
-      SubClassOf(ai:FIPAACL
-        ObjectSomeValuesFrom(ai:reducesTo ai:AgentCommunicationLanguage))
-      SubClassOf(ai:FIPAACL
-        ObjectSomeValuesFrom(ai:reducesTo ai:CommunicationProtocol))
-      SubClassOf(ai:FIPAACL
-        ObjectSomeValuesFrom(ai:contrastsWith ai:KQML))
-      SubClassOf(ai:FIPAACL
-        ObjectSomeValuesFrom(ai:contrastsWith ai:ModelContextProtocol))
-      SubClassOf(ai:FIPAACL
-        ObjectSomeValuesFrom(ai:bridgesTo ai:SemanticWeb))
+## Implementation Relationships
+    SubClassOf(ai:FIPAACL
+      ObjectSomeValuesFrom(ai:implements ai:SpeechActTheory))
+    SubClassOf(ai:FIPAACL
+      ObjectSomeValuesFrom(ai:implements ai:CommunicationProtocol))
+    SubClassOf(ai:FIPAACL
+      ObjectSomeValuesFrom(ai:implements ai:InterAgentCommunication))
+    SubClassOf(ai:FIPAACL
+      ObjectSomeValuesFrom(ai:uses ai:Ontology))
+    SubClassOf(ai:FIPAACL
+      ObjectSomeValuesFrom(ai:uses ai:KnowledgeInterchangeFormat))
+    SubClassOf(ai:FIPAACL
+      ObjectSomeValuesFrom(ai:uses ai:MessagePassing))
 
-  ## About
+## Reduction Relationships
+    SubClassOf(ai:FIPAACL
+      ObjectSomeValuesFrom(ai:reducesTo ai:AgentCommunicationLanguage))
+    SubClassOf(ai:FIPAACL
+      ObjectSomeValuesFrom(ai:reducesTo ai:CommunicationProtocol))
+    SubClassOf(ai:FIPAACL
+      ObjectSomeValuesFrom(ai:contrastsWith ai:KQML))
+    SubClassOf(ai:FIPAACL
+      ObjectSomeValuesFrom(ai:contrastsWith ai:ModelContextProtocol))
+    SubClassOf(ai:FIPAACL
+      ObjectSomeValuesFrom(ai:bridgesTo ai:SemanticWeb))
 
-  FIPA ACL occupies a singular position in the history of agent communication standards: it is the most formally grounded, most broadly adopted classical [[Agent Communication Language]], and simultaneously the most instructive example of how theoretical elegance and practical adoption sometimes diverge in software engineering history. Its intellectual lineage begins with [[Speech Act Theory]], a philosophy of language developed by J. L. Austin in his 1962 Oxford lectures (published posthumously as "How to Do Things with Words") and systematised by John Searle in "Speech Acts" (1969). The core insight is that language is not merely a vehicle for transmitting information about external states of affairs but is itself a form of action: saying "I promise to deliver this by Friday" does not describe a promise but constitutes the promise. Searle's taxonomy of illocutionary acts — representatives (asserting), directives (requesting), commissives (promising), expressives (declaring mental state), and declarations (changing institutional reality) — provided the conceptual scaffold on which KQML and subsequently FIPA ACL constructed their performative libraries.
+## About
 
-  The immediate predecessor to FIPA ACL was KQML (Knowledge Query and Manipulation Language), developed by the DARPA Knowledge Sharing Effort in the early 1990s (Finin et al., 1994). KQML was influential but suffered from a critical defect: it specified the syntax of performative messages but provided no formal semantics defining what an agent must believe, desire, or intend in order to legitimately issue a given performative, or what the recipient was rationally entitled to infer from receiving one. Different implementations of KQML interpreted the same performative differently, undermining the interoperability that was the protocol's primary goal. FIPA set out to correct this by grounding each communicative act in a formal semantics based on modal logic: the FIPA Semantic Language (SL) and the associated semantic framework specified pre-conditions and rational effects in terms of modal operators B (belief), U (uncertainty), D (desire), and I (intention) over the agent's own mental state and its beliefs about the receiver's mental state. This made FIPA ACL dramatically more formally rigorous than KQML: the inform performative, for instance, requires that the sender believe the proposition in the content to be true, believe that the receiver does not already know it, and not believe that the receiver would refuse to be informed — conditions that are precisely stated and in principle verifiable against a formal model, even if verification in practice is typically left to engineering conventions.
+FIPA ACL occupies a singular position in the history of agent communication standards: it is the most formally grounded, most broadly adopted classical [[Agent Communication Language]], and simultaneously the most instructive example of how theoretical elegance and practical adoption sometimes diverge in software engineering history. Its intellectual lineage begins with [[Speech Act Theory]], a philosophy of language developed by J. L. Austin in his 1962 Oxford lectures (published posthumously as "How to Do Things with Words") and systematised by John Searle in "Speech Acts" (1969). The core insight is that language is not merely a vehicle for transmitting information about external states of affairs but is itself a form of action: saying "I promise to deliver this by Friday" does not describe a promise but constitutes the promise. Searle's taxonomy of illocutionary acts — representatives (asserting), directives (requesting), commissives (promising), expressives (declaring mental state), and declarations (changing institutional reality) — provided the conceptual scaffold on which KQML and subsequently FIPA ACL constructed their performative libraries.
 
-  The institutional history of FIPA reflects the dynamics of standardisation in a rapidly evolving field. Founded in Geneva in 1996 with strong industrial sponsorship from Japanese electronics majors, Canadian telecommunications firms, and European research groups, FIPA produced eleven annual specification releases before publishing its final consolidated specifications in December 2002. The three specifications that constitute the canonical FIPA ACL standard — SC00061G (message structure), SC00037J (communicative act library), and SC00008I (semantic language) — were the product of six years of intensive standardisation work involving dozens of organisations. Somewhat unexpectedly, FIPA then dissolved its Swiss legal entity in 2005, transferring the intellectual property and normative authority of its specifications to the IEEE Computer Society Standards Activities Board, where they remain the reference standard. The practical consequence of this transition is that FIPA ACL specifications are still normatively active IEEE standards, available from the IEEE Computer Society, and cited in new work — particularly in the power systems and smart grid domain where JADE (Java Agent DEvelopment Framework) remains in active industrial deployment.
+The immediate predecessor to FIPA ACL was KQML (Knowledge Query and Manipulation Language), developed by the DARPA Knowledge Sharing Effort in the early 1990s (Finin et al., 1994). KQML was influential but suffered from a critical defect: it specified the syntax of performative messages but provided no formal semantics defining what an agent must believe, desire, or intend in order to legitimately issue a given performative, or what the recipient was rationally entitled to infer from receiving one. Different implementations of KQML interpreted the same performative differently, undermining the interoperability that was the protocol's primary goal. FIPA set out to correct this by grounding each communicative act in a formal semantics based on modal logic: the FIPA Semantic Language (SL) and the associated semantic framework specified pre-conditions and rational effects in terms of modal operators B (belief), U (uncertainty), D (desire), and I (intention) over the agent's own mental state and its beliefs about the receiver's mental state. This made FIPA ACL dramatically more formally rigorous than KQML: the inform performative, for instance, requires that the sender believe the proposition in the content to be true, believe that the receiver does not already know it, and not believe that the receiver would refuse to be informed — conditions that are precisely stated and in principle verifiable against a formal model, even if verification in practice is typically left to engineering conventions.
 
-  ## Components / Architecture
+The institutional history of FIPA reflects the dynamics of standardisation in a rapidly evolving field. Founded in Geneva in 1996 with strong industrial sponsorship from Japanese electronics majors, Canadian telecommunications firms, and European research groups, FIPA produced eleven annual specification releases before publishing its final consolidated specifications in December 2002. The three specifications that constitute the canonical FIPA ACL standard — SC00061G (message structure), SC00037J (communicative act library), and SC00008I (semantic language) — were the product of six years of intensive standardisation work involving dozens of organisations. Somewhat unexpectedly, FIPA then dissolved its Swiss legal entity in 2005, transferring the intellectual property and normative authority of its specifications to the IEEE Computer Society Standards Activities Board, where they remain the reference standard. The practical consequence of this transition is that FIPA ACL specifications are still normatively active IEEE standards, available from the IEEE Computer Society, and cited in new work — particularly in the power systems and smart grid domain where JADE (Java Agent DEvelopment Framework) remains in active industrial deployment.
 
-  **Message Structure (SC00061G)**
+## Components / Architecture
 
-  The FIPA ACL message structure defines thirteen named parameters, all optional except the performative:
+**Message Structure (SC00061G)**
 
-  - **performative**: Mandatory. One of the 22 typed communicative acts from SC00037J: inform, request, query-if, query-ref, subscribe, request-when, request-whenever, cfp (call for proposals), propose, accept-proposal, reject-proposal, counter-proposal, agree, cancel, inform-if, inform-ref, not-understood, disconfirm, proxy, propagate, recruit, failure.
-  - **sender**: An agent identifier in the form of a transport-layer address or symbolic name resolvable via the Directory Facilitator.
-  - **receiver**: One or more agent identifiers of the intended message recipients.
-  - **reply-to**: The agent identifier to which replies to this message should be directed, if different from sender.
-  - **content**: The propositional content of the message, encoded in the language identified by the language parameter and interpreted under the ontology identified by the ontology parameter.
-  - **language**: A string identifying the content language. Common values include "SL" (FIPA Semantic Language), "fipa-sl" (same), "Prolog", "KIF", and custom domain-specific languages.
-  - **encoding**: The encoding of the message body, e.g. "UTF-8" or "base64".
-  - **ontology**: A string identifying the domain ontology that provides the denotations of terms in the content. This is where FIPA ACL connects to the broader [[Semantic Web]] and [[Ontology]] engineering traditions.
-  - **protocol**: The name of the interaction protocol this message participates in, e.g. "fipa-request" or "fipa-contract-net".
-  - **conversation-id**: A string that identifies this message as part of a broader dialogue, linking it to all other messages in the same conversation.
-  - **reply-with**: An expression that a responding agent should include in its reply to link the reply to this request.
-  - **in-reply-to**: The reply-with expression from the message this message is replying to.
-  - **reply-by**: A deadline by which a reply is expected, as a timestamp.
+The FIPA ACL message structure defines thirteen named parameters, all optional except the performative:
+
+- **performative**: Mandatory. One of the 22 typed communicative acts from SC00037J: inform, request, query-if, query-ref, subscribe, request-when, request-whenever, cfp (call for proposals), propose, accept-proposal, reject-proposal, counter-proposal, agree, cancel, inform-if, inform-ref, not-understood, disconfirm, proxy, propagate, recruit, failure.
+- **sender**: An agent identifier in the form of a transport-layer address or symbolic name resolvable via the Directory Facilitator.
+- **receiver**: One or more agent identifiers of the intended message recipients.
+- **reply-to**: The agent identifier to which replies to this message should be directed, if different from sender.
+- **content**: The propositional content of the message, encoded in the language identified by the language parameter and interpreted under the ontology identified by the ontology parameter.
+- **language**: A string identifying the content language. Common values include "SL" (FIPA Semantic Language), "fipa-sl" (same), "Prolog", "KIF", and custom domain-specific languages.
+- **encoding**: The encoding of the message body, e.g. "UTF-8" or "base64".
+- **ontology**: A string identifying the domain ontology that provides the denotations of terms in the content. This is where FIPA ACL connects to the broader [[Semantic Web]] and [[Ontology]] engineering traditions.
+- **protocol**: The name of the interaction protocol this message participates in, e.g. "fipa-request" or "fipa-contract-net".
+- **conversation-id**: A string that identifies this message as part of a broader dialogue, linking it to all other messages in the same conversation.
+- **reply-with**: An expression that a responding agent should include in its reply to link the reply to this request.
+- **in-reply-to**: The reply-with expression from the message this message is replying to.
+- **reply-by**: A deadline by which a reply is expected, as a timestamp.
 
   **Communicative Act Library (SC00037J)**
 
@@ -114,13 +114,13 @@ FIPA ACL is the Agent Communication Language standardised by the Foundation for 
 
   Interaction protocols compose individual ACL messages into structured conversations with defined sequencing constraints. The FIPA-defined protocols include:
 
-  - **fipa-request**: A simple two-step exchange where the initiator sends a request and the participant either agrees and later informs, or refuses.
-  - **fipa-contract-net** ([[Contract Net Protocol]]): Initiator broadcasts cfp; participants respond with proposals or refuse; initiator accepts or rejects proposals; participants perform accepted proposals and inform.
-  - **fipa-iterated-contract-net**: Multiple rounds of cfp-propose before acceptance.
-  - **fipa-dutch-auction**: Descending-price auction protocol with cfp, propose, and accept/reject.
-  - **fipa-english-auction**: Ascending-price auction.
-  - **fipa-brokering** and **fipa-recruiting**: Protocols for third-party agent discovery through a broker.
-  - **fipa-subscribe**: Long-running protocol for event notification subscriptions.
+- **fipa-request**: A simple two-step exchange where the initiator sends a request and the participant either agrees and later informs, or refuses.
+- **fipa-contract-net** ([[Contract Net Protocol]]): Initiator broadcasts cfp; participants respond with proposals or refuse; initiator accepts or rejects proposals; participants perform accepted proposals and inform.
+- **fipa-iterated-contract-net**: Multiple rounds of cfp-propose before acceptance.
+- **fipa-dutch-auction**: Descending-price auction protocol with cfp, propose, and accept/reject.
+- **fipa-english-auction**: Ascending-price auction.
+- **fipa-brokering** and **fipa-recruiting**: Protocols for third-party agent discovery through a broker.
+- **fipa-subscribe**: Long-running protocol for event notification subscriptions.
 
   **Content Languages**
 
@@ -262,21 +262,21 @@ FIPA ACL is the Agent Communication Language standardised by the Foundation for 
 
   ## Key Terminology Glossary
 
-  - **Performative**: The typed communicative act carried in the outer envelope of a FIPA ACL message; classifies the illocutionary force of the message (inform, request, cfp, propose, etc.) according to the SC00037J library.
-  - **ACL (Agent Communication Language)**: A language designed for communication between autonomous software agents; FIPA ACL is the formally specified standard instance.
-  - **SL (Semantic Language)**: FIPA's content language defined in SC00008I; exists in three levels of expressivity — SL0 (propositional), SL1 (first-order), and SL2 (modal with belief/desire/intention operators).
-  - **JADE (Java Agent DEvelopment Framework)**: The canonical open-source FIPA-compliant agent runtime, providing the AMS, DF, and ACC infrastructure defined in the FIPA agent management specifications.
-  - **DF (Directory Facilitator)**: The yellow-pages service in a FIPA agent platform that maps agent capabilities to agent identifiers, enabling service discovery without a priori knowledge of agent addresses.
-  - **AMS (Agent Management System)**: The white-pages and life-cycle management service in a FIPA agent platform, responsible for registering agent identifiers and managing the agent life cycle (created, active, waiting, suspended, transit, deleted).
-  - **ACC (Agent Communication Channel)**: The transport layer in a FIPA agent platform responsible for delivering ACL messages between agents, potentially spanning multiple agent platforms and transport protocols.
-  - **Interaction Protocol**: A named sequence of ACL messages that defines a structured conversation; the Contract Net Protocol and request protocol are the canonical examples.
-  - **Contract Net Protocol**: An interaction protocol for task allocation in which an initiator broadcasts a call-for-proposals, receives and evaluates proposals, and accepts or rejects them — the primary MAS mechanism for distributed task assignment.
-  - **Pre-condition**: In the formal semantics of a performative, the mental state conditions that must hold in the sending agent for the performative to be felicitously (appropriately) issued.
-  - **Rational effect**: In the formal semantics of a performative, the intended change in the receiving agent's mental state that the sending agent aims to produce by issuing the performative.
-  - **KQML (Knowledge Query and Manipulation Language)**: FIPA ACL's immediate predecessor; lacks formal semantics for performatives, leading to interoperability failures that motivated FIPA ACL's development.
-  - **BDI (Belief-Desire-Intention)**: An agent architecture model in which agents maintain explicit representations of beliefs (information about the world), desires (goals), and intentions (committed plans); the standard architecture for FIPA ACL-capable agents.
-  - **Ontology (in FIPA ACL context)**: A shared conceptual vocabulary and formal specification of domain terms that gives meaning to the content field of a FIPA ACL message; identified by the ontology parameter of the message envelope.
-  - **Speech Act Theory**: The philosophical theory (Austin, Searle) holding that utterances are actions with illocutionary force — the theoretical foundation for FIPA ACL performatives.
+- **Performative**: The typed communicative act carried in the outer envelope of a FIPA ACL message; classifies the illocutionary force of the message (inform, request, cfp, propose, etc.) according to the SC00037J library.
+- **ACL (Agent Communication Language)**: A language designed for communication between autonomous software agents; FIPA ACL is the formally specified standard instance.
+- **SL (Semantic Language)**: FIPA's content language defined in SC00008I; exists in three levels of expressivity — SL0 (propositional), SL1 (first-order), and SL2 (modal with belief/desire/intention operators).
+- **JADE (Java Agent DEvelopment Framework)**: The canonical open-source FIPA-compliant agent runtime, providing the AMS, DF, and ACC infrastructure defined in the FIPA agent management specifications.
+- **DF (Directory Facilitator)**: The yellow-pages service in a FIPA agent platform that maps agent capabilities to agent identifiers, enabling service discovery without a priori knowledge of agent addresses.
+- **AMS (Agent Management System)**: The white-pages and life-cycle management service in a FIPA agent platform, responsible for registering agent identifiers and managing the agent life cycle (created, active, waiting, suspended, transit, deleted).
+- **ACC (Agent Communication Channel)**: The transport layer in a FIPA agent platform responsible for delivering ACL messages between agents, potentially spanning multiple agent platforms and transport protocols.
+- **Interaction Protocol**: A named sequence of ACL messages that defines a structured conversation; the Contract Net Protocol and request protocol are the canonical examples.
+- **Contract Net Protocol**: An interaction protocol for task allocation in which an initiator broadcasts a call-for-proposals, receives and evaluates proposals, and accepts or rejects them — the primary MAS mechanism for distributed task assignment.
+- **Pre-condition**: In the formal semantics of a performative, the mental state conditions that must hold in the sending agent for the performative to be felicitously (appropriately) issued.
+- **Rational effect**: In the formal semantics of a performative, the intended change in the receiving agent's mental state that the sending agent aims to produce by issuing the performative.
+- **KQML (Knowledge Query and Manipulation Language)**: FIPA ACL's immediate predecessor; lacks formal semantics for performatives, leading to interoperability failures that motivated FIPA ACL's development.
+- **BDI (Belief-Desire-Intention)**: An agent architecture model in which agents maintain explicit representations of beliefs (information about the world), desires (goals), and intentions (committed plans); the standard architecture for FIPA ACL-capable agents.
+- **Ontology (in FIPA ACL context)**: A shared conceptual vocabulary and formal specification of domain terms that gives meaning to the content field of a FIPA ACL message; identified by the ontology parameter of the message envelope.
+- **Speech Act Theory**: The philosophical theory (Austin, Searle) holding that utterances are actions with illocutionary force — the theoretical foundation for FIPA ACL performatives.
 
-- ### Provenance
+### Provenance
 

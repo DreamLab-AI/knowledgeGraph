@@ -1,10 +1,10 @@
-
 Coordinated set of standards and specifications enabling interaction between heterogeneous systems in metaverse environments.
 
-- ### Semantic Classification
+### Semantic Classification
 
-- ### Content
-  Interoperability Framework — content pending enrichment.
+### Content
 
-- ### Provenance
+Interoperability Framework — content pending enrichment.
+
+### Provenance
 

@@ -1,24 +1,24 @@
-
 Medical Diagnosis AI refers to artificial intelligence systems that automate or assist in the diagnostic process by analysing patient symptoms, medical history, laboratory results, imaging findings, and other clinical data to generate differential diagnoses, diagnostic hypotheses, and diagnostic ...
 
-- ### Semantic Classification
+### Semantic Classification
 
-- ### Content
-  - Medical Diagnosis AI refers to artificial intelligence systems that automate or assist in the diagnostic process by analysing patient symptoms, medical history, laboratory results, imaging findings, and other clinical data to generate differential diagnoses, diagnostic hypotheses, and diagnostic recommendations. These systems employ machine learning, knowledge representation, and clinical reasoning algorithms validated against expert physician performance.
+### Content
+
+- Medical Diagnosis AI refers to artificial intelligence systems that automate or assist in the diagnostic process by analysing patient symptoms, medical history, laboratory results, imaging findings, and other clinical data to generate differential diagnoses, diagnostic hypotheses, and diagnostic recommendations. These systems employ machine learning, knowledge representation, and clinical reasoning algorithms validated against expert physician performance.
 
   ## Core Characteristics
 
-  - **Differential Diagnosis Generation**: Ranked list of possible diagnoses
-  - **Multi-Modal Data Integration**: Symptoms, labs, imaging, history synthesis
-  - **Evidence-Based Reasoning**: Clinical guideline adherence
-  - **Uncertainty Quantification**: Confidence scores and diagnostic uncertainty
-  - **Explainable Outputs**: Clinically interpretable diagnostic reasoning
+- **Differential Diagnosis Generation**: Ranked list of possible diagnoses
+- **Multi-Modal Data Integration**: Symptoms, labs, imaging, history synthesis
+- **Evidence-Based Reasoning**: Clinical guideline adherence
+- **Uncertainty Quantification**: Confidence scores and diagnostic uncertainty
+- **Explainable Outputs**: Clinically interpretable diagnostic reasoning
 
   ## Relationships
 
-  - **Superclass**: Medical AI
-  - **Related**: Clinical Decision Support, Medical Imaging AI, Clinical Reasoning
-  - **Utilises**: Deep Learning, Knowledge Graphs, Probabilistic Reasoning
+- **Superclass**: Medical AI
+- **Related**: Clinical Decision Support, Medical Imaging AI, Clinical Reasoning
+- **Utilises**: Deep Learning, Knowledge Graphs, Probabilistic Reasoning
 
   ## Key Literature
 
@@ -28,23 +28,23 @@ Medical Diagnosis AI refers to artificial intelligence systems that automate or 
 
   ## See Also
 
-  - [[Medical AI]]
-  - [[Clinical Decision Support]]
-  - [[Treatment Planning AI]]
+- [[Medical AI]]
+- [[Clinical Decision Support]]
+- [[Treatment Planning AI]]
 
   ## Core Characteristics
 
-  - **Differential Diagnosis Generation**: Ranked list of possible diagnoses
-  - **Multi-Modal Data Integration**: Symptoms, labs, imaging, history synthesis
-  - **Evidence-Based Reasoning**: Clinical guideline adherence
-  - **Uncertainty Quantification**: Confidence scores and diagnostic uncertainty
-  - **Explainable Outputs**: Clinically interpretable diagnostic reasoning
+- **Differential Diagnosis Generation**: Ranked list of possible diagnoses
+- **Multi-Modal Data Integration**: Symptoms, labs, imaging, history synthesis
+- **Evidence-Based Reasoning**: Clinical guideline adherence
+- **Uncertainty Quantification**: Confidence scores and diagnostic uncertainty
+- **Explainable Outputs**: Clinically interpretable diagnostic reasoning
 
   ## Relationships
 
-  - **Superclass**: Medical AI
-  - **Related**: Clinical Decision Support, Medical Imaging AI, Clinical Reasoning
-  - **Utilises**: Deep Learning, Knowledge Graphs, Probabilistic Reasoning
+- **Superclass**: Medical AI
+- **Related**: Clinical Decision Support, Medical Imaging AI, Clinical Reasoning
+- **Utilises**: Deep Learning, Knowledge Graphs, Probabilistic Reasoning
 
   ## Key Literature
 
@@ -54,9 +54,9 @@ Medical Diagnosis AI refers to artificial intelligence systems that automate or 
 
   ## See Also
 
-  - [[Medical AI]]
-  - [[Clinical Decision Support]]
-  - [[Treatment Planning AI]]
+- [[Medical AI]]
+- [[Clinical Decision Support]]
+- [[Treatment Planning AI]]
 
-- ### Provenance
+### Provenance
 

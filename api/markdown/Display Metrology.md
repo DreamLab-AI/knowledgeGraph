@@ -1,12 +1,12 @@
-
 Standardized measurement equipment and instruments for assessing visual performance parameters of XR displays, including colorimeters, photometers, and specialised testing hardware.
 
-- ### Bridge-To
+### Bridge-To
 
-- ### Semantic Classification
+### Semantic Classification
 
-- ### Content
-  Display Metrology — content pending enrichment.
+### Content
 
-- ### Provenance
+Display Metrology — content pending enrichment.
+
+### Provenance
 

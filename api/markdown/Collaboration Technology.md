@@ -1,16 +1,16 @@
-
 Software and hardware systems that enable multiple participants to coordinate, communicate, and jointly produce work across physical or virtual spaces. In spatial computing contexts, collaboration technology encompasses shared XR environments, co-presence avatars, spatial audio, and synchronised digital workspace tools that support telecollaboration at a distance.
 
-- ### Semantic Classification
+### Semantic Classification
 
-- ### Content
+### Content
 
-  ## Overview
+## Overview
 
-  Collaboration Technology represents an abstract concept in the metaverse ontology hierarchy.
+Collaboration Technology represents an abstract concept in the metaverse ontology hierarchy.
 
-  #### Related Concepts
-  - [[owl:Thing]]
+#### Related Concepts
 
-- ### Provenance
+- [[owl:Thing]]
+
+### Provenance
 

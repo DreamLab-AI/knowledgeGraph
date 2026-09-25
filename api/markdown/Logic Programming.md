@@ -1,4 +1,3 @@
-
 Logic Programming is a programming paradigm in which computation is expressed as logical inference over a set of facts and rules written in formal logic. Programs describe what is true rather than how to compute, and an inference engine derives answers by applying resolution and unification. Prolog is the canonical language; descendant systems include Datalog, Answer Set Programming, and constraint logic programming.
 
 ### Definition
@@ -19,7 +18,7 @@ Contemporary relevance spans several domains. Semantic Web technologies — RDF,
 
 Database Query systems, particularly recursive query evaluation in SQL:1999 (WITH RECURSIVE) and graph databases, owe direct debt to Datalog's formalisation of recursive Horn clauses. Software Engineering benefits from logic programming through constraint-based configuration tools, test-case generation via constraint solving, and program analysis frameworks such as Doop and CodeQL which compile analysis problems into Datalog.
 
-- ### Semantic Classification
+### Semantic Classification
 
-- ### Provenance
+### Provenance
 

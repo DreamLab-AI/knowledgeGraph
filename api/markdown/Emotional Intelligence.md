@@ -1,4 +1,3 @@
-
 Emotional Intelligence in AI refers to the capacity of artificial systems to recognise, interpret, and respond appropriately to human emotional states, expressed through text, voice, facial expression, or physiological signals. It extends classical AI with affective computing capabilities, enabling machines to calibrate their outputs based on a user's emotional context. Applications span conversational agents, digital humans, therapeutic tools, and immersive experience design where user engagement depends on emotionally-resonant interaction.
 
 ### Definition
@@ -19,7 +18,7 @@ Applications are expanding rapidly. In conversational AI, emotionally intelligen
 
 The limitations of current approaches are significant. Emotion is culturally situated, contextually dependent, and often deliberately masked or performed — all factors that complicate reliable machine inference. Hyper-personalisation driven by emotional AI also raises surveillance and manipulation concerns. As emotional intelligence matures as a research area, establishing privacy-preserving architectures for affective data and developing standards for transparency in emotionally-adaptive systems will be as important as accuracy improvements.
 
-- ### Semantic Classification
+### Semantic Classification
 
-- ### Provenance
+### Provenance
 

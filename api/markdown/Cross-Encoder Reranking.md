@@ -1,126 +1,128 @@
-
 Cross-Encoder Reranking is a two-stage information retrieval technique in which a cross-encoder transformer model receives a query and a candidate document concatenated as a single input sequence, performs full bidirectional self-attention across both, and outputs a relevance score used to re-order an initial candidate set retrieved by a faster but less accurate first-stage retriever. It typically yields substantially higher ranking quality than bi-encoder first-stage retrieval at the cost of higher computational latency.
 
-- ### Semantic Classification
+### Semantic Classification
 
-- ### Content
-  ## Compositional Relationships (Components)
-  ```
-  SubClassOf(ai:CrossEncoderReranking
-    ObjectSomeValuesFrom(ai:hasPart ai:TransformerEncoder))
-  SubClassOf(ai:CrossEncoderReranking
-    ObjectSomeValuesFrom(ai:hasPart ai:SelfAttentionMechanism))
-  SubClassOf(ai:CrossEncoderReranking
-    ObjectSomeValuesFrom(ai:hasPart ai:RelevanceScoringHead))
-  SubClassOf(ai:CrossEncoderReranking
-    ObjectSomeValuesFrom(ai:hasPart ai:QueryDocumentConcatenation))
-  SubClassOf(ai:CrossEncoderReranking
-    ObjectSomeValuesFrom(ai:hasPart ai:CandidateSet))
-  SubClassOf(ai:CrossEncoderReranking
-    ObjectSomeValuesFrom(ai:hasPart ai:RankingOutputLayer))
-  SubClassOf(ai:CrossEncoderReranking
-    ObjectSomeValuesFrom(ai:hasPart ai:TokenisationPipeline))
-  ```
-  ## Dependency Relationships
-  ```
-  SubClassOf(ai:CrossEncoderReranking
-    ObjectSomeValuesFrom(ai:requires ai:FirstStageRetriever))
-  SubClassOf(ai:CrossEncoderReranking
-    ObjectSomeValuesFrom(ai:requires ai:DenseRetrieval))
-  SubClassOf(ai:CrossEncoderReranking
-    ObjectSomeValuesFrom(ai:requires ai:GPUInference))
-  SubClassOf(ai:CrossEncoderReranking
-    ObjectSomeValuesFrom(ai:dependsOn ai:ApproximateNearestNeighbourSearch))
-  SubClassOf(ai:CrossEncoderReranking
-    ObjectSomeValuesFrom(ai:dependsOn ai:CandidateDocument))
-  SubClassOf(ai:CrossEncoderReranking
-    ObjectSomeValuesFrom(ai:dependsOn ai:QueryRepresentation))
-  SubClassOf(ai:CrossEncoderReranking
-    ObjectSomeValuesFrom(ai:dependsOn ai:ContrastiveLearning))
-  ```
-  ## Capability Relationships
-  ```
-  SubClassOf(ai:CrossEncoderReranking
-    ObjectSomeValuesFrom(ai:enables ai:RetrievalAugmentedGeneration))
-  SubClassOf(ai:CrossEncoderReranking
-    ObjectSomeValuesFrom(ai:enables ai:QuestionAnswering))
-  SubClassOf(ai:CrossEncoderReranking
-    ObjectSomeValuesFrom(ai:enables ai:DocumentRetrieval))
-  SubClassOf(ai:CrossEncoderReranking
-    ObjectSomeValuesFrom(ai:enables ai:KnowledgeRetrieval))
-  SubClassOf(ai:CrossEncoderReranking
-    ObjectSomeValuesFrom(ai:enables ai:AgenticRAG))
-  SubClassOf(ai:CrossEncoderReranking
-    ObjectSomeValuesFrom(ai:supports ai:EnterpriseSearch))
-  SubClassOf(ai:CrossEncoderReranking
-    ObjectSomeValuesFrom(ai:supports ai:RAGPipeline))
-  ```
-  ## Implementation Relationships
-  ```
-  SubClassOf(ai:CrossEncoderReranking
-    ObjectSomeValuesFrom(ai:implements ai:NeuralRanking))
-  SubClassOf(ai:CrossEncoderReranking
-    ObjectSomeValuesFrom(ai:implements ai:TwoStageRetrieval))
-  SubClassOf(ai:CrossEncoderReranking
-    ObjectSomeValuesFrom(ai:implements ai:PointwiseRelevanceScoring))
-  SubClassOf(ai:CrossEncoderReranking
-    ObjectSomeValuesFrom(ai:implements ai:ProbabilityRankingPrinciple))
-  SubClassOf(ai:CrossEncoderReranking
-    ObjectSomeValuesFrom(ai:implements ai:LearningToRank))
-  SubClassOf(ai:CrossEncoderReranking
-    ObjectSomeValuesFrom(ai:uses ai:BidirectionalSelfAttention))
-  SubClassOf(ai:CrossEncoderReranking
-    ObjectSomeValuesFrom(ai:uses ai:BERT))
-  SubClassOf(ai:CrossEncoderReranking
-    ObjectSomeValuesFrom(ai:uses ai:KnowledgeDistillation))
-  SubClassOf(ai:CrossEncoderReranking
-    ObjectSomeValuesFrom(ai:uses ai:HardNegativeMining))
-  ```
-  ## Reduction Relationships
-  ```
-  SubClassOf(ai:CrossEncoderReranking
-    ObjectSomeValuesFrom(ai:reducesTo ai:RelevanceScoring))
-  SubClassOf(ai:CrossEncoderReranking
-    ObjectSomeValuesFrom(ai:reducesTo ai:DocumentRanking))
-  SubClassOf(ai:CrossEncoderReranking
-    ObjectSomeValuesFrom(ai:reducesTo ai:BinaryRelevanceClassification))
-  SubClassOf(ai:CrossEncoderReranking
-    ObjectSomeValuesFrom(ai:reducesTo ai:PassageRanking))
-  SubClassOf(ai:CrossEncoderReranking
-    ObjectSomeValuesFrom(ai:reducesTo ai:TwoStageRetrieval))
-  ```
+### Content
 
-  ## About
-  Cross-encoder reranking is the practice of applying a transformer model that jointly processes a query and a candidate document as a single input to produce a fine-grained relevance score, which is then used to reorder the short-list of candidates returned by a faster first-stage retriever. The paradigm resolves a fundamental tension in large-scale [[Information Retrieval]]: the need to search across millions of documents in milliseconds precludes exhaustive pair-wise scoring by an accurate but expensive model, so a two-stage architecture is used. The first stage — typically [[Dense Retrieval]] with [[Approximate Nearest Neighbour Search]] over pre-computed [[Embedding Model]] vectors, or sparse [[BM25]] retrieval over an inverted index, or [[Hybrid Retrieval]] combining both — rapidly reduces the candidate set to hundreds of documents. The cross-encoder then scores each candidate against the query with full cross-attention, producing a re-ranked list whose precision typically exceeds the first-stage ranking by five to fifteen NDCG@10 points on established benchmarks including BEIR and the TREC Deep Learning Track.
+## Compositional Relationships (Components)
+```
+SubClassOf(ai:CrossEncoderReranking
+  ObjectSomeValuesFrom(ai:hasPart ai:TransformerEncoder))
+SubClassOf(ai:CrossEncoderReranking
+  ObjectSomeValuesFrom(ai:hasPart ai:SelfAttentionMechanism))
+SubClassOf(ai:CrossEncoderReranking
+  ObjectSomeValuesFrom(ai:hasPart ai:RelevanceScoringHead))
+SubClassOf(ai:CrossEncoderReranking
+  ObjectSomeValuesFrom(ai:hasPart ai:QueryDocumentConcatenation))
+SubClassOf(ai:CrossEncoderReranking
+  ObjectSomeValuesFrom(ai:hasPart ai:CandidateSet))
+SubClassOf(ai:CrossEncoderReranking
+  ObjectSomeValuesFrom(ai:hasPart ai:RankingOutputLayer))
+SubClassOf(ai:CrossEncoderReranking
+  ObjectSomeValuesFrom(ai:hasPart ai:TokenisationPipeline))
+```
+## Dependency Relationships
+```
+SubClassOf(ai:CrossEncoderReranking
+  ObjectSomeValuesFrom(ai:requires ai:FirstStageRetriever))
+SubClassOf(ai:CrossEncoderReranking
+  ObjectSomeValuesFrom(ai:requires ai:DenseRetrieval))
+SubClassOf(ai:CrossEncoderReranking
+  ObjectSomeValuesFrom(ai:requires ai:GPUInference))
+SubClassOf(ai:CrossEncoderReranking
+  ObjectSomeValuesFrom(ai:dependsOn ai:ApproximateNearestNeighbourSearch))
+SubClassOf(ai:CrossEncoderReranking
+  ObjectSomeValuesFrom(ai:dependsOn ai:CandidateDocument))
+SubClassOf(ai:CrossEncoderReranking
+  ObjectSomeValuesFrom(ai:dependsOn ai:QueryRepresentation))
+SubClassOf(ai:CrossEncoderReranking
+  ObjectSomeValuesFrom(ai:dependsOn ai:ContrastiveLearning))
+```
+## Capability Relationships
+```
+SubClassOf(ai:CrossEncoderReranking
+  ObjectSomeValuesFrom(ai:enables ai:RetrievalAugmentedGeneration))
+SubClassOf(ai:CrossEncoderReranking
+  ObjectSomeValuesFrom(ai:enables ai:QuestionAnswering))
+SubClassOf(ai:CrossEncoderReranking
+  ObjectSomeValuesFrom(ai:enables ai:DocumentRetrieval))
+SubClassOf(ai:CrossEncoderReranking
+  ObjectSomeValuesFrom(ai:enables ai:KnowledgeRetrieval))
+SubClassOf(ai:CrossEncoderReranking
+  ObjectSomeValuesFrom(ai:enables ai:AgenticRAG))
+SubClassOf(ai:CrossEncoderReranking
+  ObjectSomeValuesFrom(ai:supports ai:EnterpriseSearch))
+SubClassOf(ai:CrossEncoderReranking
+  ObjectSomeValuesFrom(ai:supports ai:RAGPipeline))
+```
+## Implementation Relationships
+```
+SubClassOf(ai:CrossEncoderReranking
+  ObjectSomeValuesFrom(ai:implements ai:NeuralRanking))
+SubClassOf(ai:CrossEncoderReranking
+  ObjectSomeValuesFrom(ai:implements ai:TwoStageRetrieval))
+SubClassOf(ai:CrossEncoderReranking
+  ObjectSomeValuesFrom(ai:implements ai:PointwiseRelevanceScoring))
+SubClassOf(ai:CrossEncoderReranking
+  ObjectSomeValuesFrom(ai:implements ai:ProbabilityRankingPrinciple))
+SubClassOf(ai:CrossEncoderReranking
+  ObjectSomeValuesFrom(ai:implements ai:LearningToRank))
+SubClassOf(ai:CrossEncoderReranking
+  ObjectSomeValuesFrom(ai:uses ai:BidirectionalSelfAttention))
+SubClassOf(ai:CrossEncoderReranking
+  ObjectSomeValuesFrom(ai:uses ai:BERT))
+SubClassOf(ai:CrossEncoderReranking
+  ObjectSomeValuesFrom(ai:uses ai:KnowledgeDistillation))
+SubClassOf(ai:CrossEncoderReranking
+  ObjectSomeValuesFrom(ai:uses ai:HardNegativeMining))
+```
+## Reduction Relationships
+```
+SubClassOf(ai:CrossEncoderReranking
+  ObjectSomeValuesFrom(ai:reducesTo ai:RelevanceScoring))
+SubClassOf(ai:CrossEncoderReranking
+  ObjectSomeValuesFrom(ai:reducesTo ai:DocumentRanking))
+SubClassOf(ai:CrossEncoderReranking
+  ObjectSomeValuesFrom(ai:reducesTo ai:BinaryRelevanceClassification))
+SubClassOf(ai:CrossEncoderReranking
+  ObjectSomeValuesFrom(ai:reducesTo ai:PassageRanking))
+SubClassOf(ai:CrossEncoderReranking
+  ObjectSomeValuesFrom(ai:reducesTo ai:TwoStageRetrieval))
+```
 
-  The theoretical basis for the cross-encoder's superiority lies in the expressiveness of full bidirectional [[Self-Attention]]. In a bi-encoder, the query representation is fixed at query time and compared to pre-computed document representations via dot-product [[Cosine Similarity]]; the document representation cannot be conditioned on the specific query. A cross-encoder, by contrast, applies [[Attention Mechanism]] across the joint token sequence at every layer, allowing the query tokens to dynamically influence how document tokens are weighted and vice versa. This cross-attention captures query-dependent document salience, enabling the model to identify whether a document addresses the specific aspect of a topic implied by the query, rather than simply whether it is topically related. The [[BERT]] architecture — pre-trained with masked language modelling and next-sentence prediction, then fine-tuned with a relevance head on labelled query-passage pairs — was established as the canonical cross-encoder backbone by Nogueira and Cho's 2019 "Passage Re-ranking with BERT" paper, which achieved a 27% relative improvement in MRR@10 on MS MARCO over prior state of the art.
+## About
+Cross-encoder reranking is the practice of applying a transformer model that jointly processes a query and a candidate document as a single input to produce a fine-grained relevance score, which is then used to reorder the short-list of candidates returned by a faster first-stage retriever. The paradigm resolves a fundamental tension in large-scale [[Information Retrieval]]: the need to search across millions of documents in milliseconds precludes exhaustive pair-wise scoring by an accurate but expensive model, so a two-stage architecture is used. The first stage — typically [[Dense Retrieval]] with [[Approximate Nearest Neighbour Search]] over pre-computed [[Embedding Model]] vectors, or sparse [[BM25]] retrieval over an inverted index, or [[Hybrid Retrieval]] combining both — rapidly reduces the candidate set to hundreds of documents. The cross-encoder then scores each candidate against the query with full cross-attention, producing a re-ranked list whose precision typically exceeds the first-stage ranking by five to fifteen NDCG@10 points on established benchmarks including BEIR and the TREC Deep Learning Track.
 
-  The historical lineage of cross-encoder reranking extends well before the transformer era. Learning-to-rank (LTR) methods from the mid-2000s — RankNet (Burges et al., 2005), LambdaMART (Burges, 2010), and the gradient-boosted tree models used in the Microsoft LETOR benchmark — already concatenated query and document feature vectors as a joint input for relevance scoring. These models used handcrafted features (TF-IDF, BM25 scores, anchor text statistics, document freshness) rather than learned representations, but the fundamental idea of joint query-document encoding as a precondition for accurate relevance scoring was already established. The transition from handcrafted-feature LTR to transformer cross-encoders was primarily a representation-learning advance rather than an architectural one: by replacing the manual feature engineering with contextualised token embeddings from pre-trained language models, the cross-encoder gained both the expressive power to capture long-range semantic dependencies and the ability to generalise from a relatively small labelled ranking dataset to diverse new domains.
+The theoretical basis for the cross-encoder's superiority lies in the expressiveness of full bidirectional [[Self-Attention]]. In a bi-encoder, the query representation is fixed at query time and compared to pre-computed document representations via dot-product [[Cosine Similarity]]; the document representation cannot be conditioned on the specific query. A cross-encoder, by contrast, applies [[Attention Mechanism]] across the joint token sequence at every layer, allowing the query tokens to dynamically influence how document tokens are weighted and vice versa. This cross-attention captures query-dependent document salience, enabling the model to identify whether a document addresses the specific aspect of a topic implied by the query, rather than simply whether it is topically related. The [[BERT]] architecture — pre-trained with masked language modelling and next-sentence prediction, then fine-tuned with a relevance head on labelled query-passage pairs — was established as the canonical cross-encoder backbone by Nogueira and Cho's 2019 "Passage Re-ranking with BERT" paper, which achieved a 27% relative improvement in MRR@10 on MS MARCO over prior state of the art.
 
-  Understanding why two-stage retrieve-and-rerank is economically justified requires analysing the computational trade-off explicitly. For a corpus of N documents and a query, a cross-encoder forward pass costs O(L² · d) per query-document pair, where L is the joint token sequence length and d is the model dimension. Performing this for all N documents would cost O(N · L² · d) per query — completely infeasible for N in the millions. By contrast, a bi-encoder or [[BM25]] first stage costs O(log N · d) per query via [[Approximate Nearest Neighbour Search]] or inverted-index lookup. The two-stage pipeline restricts cross-encoder inference to the top-k candidates (typically k = 50–200), reducing cost to O(k · L² · d), a tractable operation on a single GPU. The gain in NDCG from cross-encoder reranking over bi-encoder first-stage ordering is consistent enough across benchmarks — measured at 5–15 points on MS MARCO Passage Ranking and at 3–8 points on BEIR zero-shot tasks — that the additional latency budget (typically 100–500ms for k = 100 on a GPU) is considered acceptable for the vast majority of production RAG and [[Enterprise Search]] applications.
+The historical lineage of cross-encoder reranking extends well before the transformer era. Learning-to-rank (LTR) methods from the mid-2000s — RankNet (Burges et al., 2005), LambdaMART (Burges, 2010), and the gradient-boosted tree models used in the Microsoft LETOR benchmark — already concatenated query and document feature vectors as a joint input for relevance scoring. These models used handcrafted features (TF-IDF, BM25 scores, anchor text statistics, document freshness) rather than learned representations, but the fundamental idea of joint query-document encoding as a precondition for accurate relevance scoring was already established. The transition from handcrafted-feature LTR to transformer cross-encoders was primarily a representation-learning advance rather than an architectural one: by replacing the manual feature engineering with contextualised token embeddings from pre-trained language models, the cross-encoder gained both the expressive power to capture long-range semantic dependencies and the ability to generalise from a relatively small labelled ranking dataset to diverse new domains.
 
-  Training dynamics of cross-encoders are significantly influenced by the choice of negative examples. With only positive query-passage pairs and random negatives, cross-encoders learn a coarse relevance discriminator but fail to distinguish subtly relevant from irrelevant passages. Hard negative mining — retrieving top-ranked passages from [[BM25]] or a dense retriever that are labelled irrelevant — dramatically improves model quality by forcing the cross-encoder to learn fine-grained distinctions. The iterative hard negative mining process (alternating between mining new negatives with the current model and retraining on them) converges to a stable high-quality solution in two or three rounds. Knowledge distillation from a large teacher cross-encoder (e.g., a fine-tuned DeBERTa-v3-large with 435M parameters) to a smaller student (e.g., MiniLM-L-6 with 22M parameters) further enables production deployment: the student preserves within 2 NDCG@10 points of the teacher at 10–15× faster inference. This distillation pipeline is the primary approach taken by the Sentence-Transformers ms-marco-MiniLM series, which remains the most widely deployed open cross-encoder family across LangChain, LlamaIndex, and Haystack integrations.
+Understanding why two-stage retrieve-and-rerank is economically justified requires analysing the computational trade-off explicitly. For a corpus of N documents and a query, a cross-encoder forward pass costs O(L² · d) per query-document pair, where L is the joint token sequence length and d is the model dimension. Performing this for all N documents would cost O(N · L² · d) per query — completely infeasible for N in the millions. By contrast, a bi-encoder or [[BM25]] first stage costs O(log N · d) per query via [[Approximate Nearest Neighbour Search]] or inverted-index lookup. The two-stage pipeline restricts cross-encoder inference to the top-k candidates (typically k = 50–200), reducing cost to O(k · L² · d), a tractable operation on a single GPU. The gain in NDCG from cross-encoder reranking over bi-encoder first-stage ordering is consistent enough across benchmarks — measured at 5–15 points on MS MARCO Passage Ranking and at 3–8 points on BEIR zero-shot tasks — that the additional latency budget (typically 100–500ms for k = 100 on a GPU) is considered acceptable for the vast majority of production RAG and [[Enterprise Search]] applications.
 
-  The relationship between cross-encoder reranking and [[Retrieval-Augmented Generation]] quality deserves careful examination. In a RAG pipeline, the generator [[Large Language Models]] receives a context window containing the top-k retrieved passages. The precision of these passages — whether they actually address the user's question — directly determines both the accuracy and the hallucination rate of the generated response. Context windows filled with loosely relevant or irrelevant passages cause the generator to be distracted by noisy information, produce hedged non-answers, or confabulate details to fill the gap between what was retrieved and what was needed. A 2024 systematic study found that adding a cross-encoder reranker between the first-stage dense retriever and the generator improved downstream answer quality (measured by ROUGE-L and human evaluation) by 18–40% across diverse QA benchmarks, with the gains particularly pronounced for multi-hop questions requiring multiple independent facts to be assembled. This explains why cross-encoder reranking has become the single most recommended optimisation for production RAG systems in enterprise AI deployment guides for 2025–2026.
+Training dynamics of cross-encoders are significantly influenced by the choice of negative examples. With only positive query-passage pairs and random negatives, cross-encoders learn a coarse relevance discriminator but fail to distinguish subtly relevant from irrelevant passages. Hard negative mining — retrieving top-ranked passages from [[BM25]] or a dense retriever that are labelled irrelevant — dramatically improves model quality by forcing the cross-encoder to learn fine-grained distinctions. The iterative hard negative mining process (alternating between mining new negatives with the current model and retraining on them) converges to a stable high-quality solution in two or three rounds. Knowledge distillation from a large teacher cross-encoder (e.g., a fine-tuned DeBERTa-v3-large with 435M parameters) to a smaller student (e.g., MiniLM-L-6 with 22M parameters) further enables production deployment: the student preserves within 2 NDCG@10 points of the teacher at 10–15× faster inference. This distillation pipeline is the primary approach taken by the Sentence-Transformers ms-marco-MiniLM series, which remains the most widely deployed open cross-encoder family across LangChain, LlamaIndex, and Haystack integrations.
 
-  ## Components and Architecture
-  - **Input Formatting**: The standard input is `[CLS] query [SEP] document [SEP]`, concatenating query and document with special separator tokens. For very long documents, passage-level chunking is applied upstream, and the cross-encoder scores each chunk independently. The maximum input length is bounded by the model's context window (typically 512 tokens for BERT-base; 4096–8192 for modern reranking models). When queries and passages exceed the context length, sliding-window passage chunking with stride overlap ensures complete document coverage.
-  - **Transformer Backbone**: Typically a BERT-class encoder (12–24 layers, 110M–340M parameters), though larger models (DeBERTa-v3, Qwen-2.5, NLI-fine-tuned variants) have been shown to improve ranking quality. The bidirectional [[Self-Attention]] in all layers allows complete cross-attention between query and document tokens. BERT's Next Sentence Prediction objective during pre-training implicitly primes the model for the query-document relevance task: the [CLS] token is trained to represent the coherence between two text segments, which maps directly onto relevance scoring.
-  - **Classification Head**: A linear projection from the `[CLS]` token representation to a scalar logit, passed through a sigmoid for binary relevance probability or used raw as a ranking score. Pointwise training maximises the probability of positive pairs; pairwise training uses margin ranking loss; listwise training (LAMBDARANK-style) optimises rank-based metrics directly. The choice of training objective has measurable impact: listwise objectives typically produce 1–2 NDCG@10 points higher than pointwise on MS MARCO, but require sorting gradients (LAMBDALOSS) or list-level normalisation that complicate implementation.
-  - **Hard Negative Mining**: Effective training requires negatives that are semantically close to the query but irrelevant. BM25-sampled negatives, in-batch negatives, and negatives retrieved by the current model iteration (online hard negatives) are standard. The Mixedbread mxbai-rerank-large-v2 and BGE-Reranker-v2 models use a three-stage training regime combining supervised hard negatives, [[Contrastive Learning]], and preference learning via Group Relative Policy Optimisation (GRPO). This represents the convergence of LLM alignment techniques with ranking model training.
-  - **[[Knowledge Distillation]]**: A large teacher cross-encoder distils soft relevance scores to a smaller student cross-encoder, preserving most ranking quality (within 2 NDCG of teacher) at 2–3× reduced latency. This is the primary route to low-latency deployment. The distillation loss is typically a combination of KL divergence between teacher and student score distributions plus a standard pointwise cross-entropy term, weighted by a temperature hyperparameter that controls how much to trust the soft teacher labels versus hard relevance annotations.
-  - **Serving Infrastructure**: Inference is batch-parallelised over the candidate set on GPU. FlashAttention v2/v3 and int8/fp8 quantisation reduce per-pair latency, enabling reranking of 100 candidates in under 200ms on a single A100 GPU. TorchServe, vLLM (for generative rerankers), and ONNX Runtime deployments are standard. For cloud APIs (Cohere, Voyage, Jina), the reranking call is a single HTTP endpoint invocation that accepts query + candidate list and returns a ranked list with scores, abstracting the entire infrastructure burden.
-  - **Context Length Handling**: Modern reranking models (BGE-Reranker-v2-m3, Jina Reranker v2) support up to 8,192 tokens per query-document pair, enabling reranking of full-page documents rather than 512-token passages. This eliminates the chunking step for shorter documents but increases per-pair inference time proportionally to sequence length squared.
+The relationship between cross-encoder reranking and [[Retrieval-Augmented Generation]] quality deserves careful examination. In a RAG pipeline, the generator [[Large Language Models]] receives a context window containing the top-k retrieved passages. The precision of these passages — whether they actually address the user's question — directly determines both the accuracy and the hallucination rate of the generated response. Context windows filled with loosely relevant or irrelevant passages cause the generator to be distracted by noisy information, produce hedged non-answers, or confabulate details to fill the gap between what was retrieved and what was needed. A 2024 systematic study found that adding a cross-encoder reranker between the first-stage dense retriever and the generator improved downstream answer quality (measured by ROUGE-L and human evaluation) by 18–40% across diverse QA benchmarks, with the gains particularly pronounced for multi-hop questions requiring multiple independent facts to be assembled. This explains why cross-encoder reranking has become the single most recommended optimisation for production RAG systems in enterprise AI deployment guides for 2025–2026.
+
+## Components and Architecture
+
+- **Input Formatting**: The standard input is `[CLS] query [SEP] document [SEP]`, concatenating query and document with special separator tokens. For very long documents, passage-level chunking is applied upstream, and the cross-encoder scores each chunk independently. The maximum input length is bounded by the model's context window (typically 512 tokens for BERT-base; 4096–8192 for modern reranking models). When queries and passages exceed the context length, sliding-window passage chunking with stride overlap ensures complete document coverage.
+- **Transformer Backbone**: Typically a BERT-class encoder (12–24 layers, 110M–340M parameters), though larger models (DeBERTa-v3, Qwen-2.5, NLI-fine-tuned variants) have been shown to improve ranking quality. The bidirectional [[Self-Attention]] in all layers allows complete cross-attention between query and document tokens. BERT's Next Sentence Prediction objective during pre-training implicitly primes the model for the query-document relevance task: the [CLS] token is trained to represent the coherence between two text segments, which maps directly onto relevance scoring.
+- **Classification Head**: A linear projection from the `[CLS]` token representation to a scalar logit, passed through a sigmoid for binary relevance probability or used raw as a ranking score. Pointwise training maximises the probability of positive pairs; pairwise training uses margin ranking loss; listwise training (LAMBDARANK-style) optimises rank-based metrics directly. The choice of training objective has measurable impact: listwise objectives typically produce 1–2 NDCG@10 points higher than pointwise on MS MARCO, but require sorting gradients (LAMBDALOSS) or list-level normalisation that complicate implementation.
+- **Hard Negative Mining**: Effective training requires negatives that are semantically close to the query but irrelevant. BM25-sampled negatives, in-batch negatives, and negatives retrieved by the current model iteration (online hard negatives) are standard. The Mixedbread mxbai-rerank-large-v2 and BGE-Reranker-v2 models use a three-stage training regime combining supervised hard negatives, [[Contrastive Learning]], and preference learning via Group Relative Policy Optimisation (GRPO). This represents the convergence of LLM alignment techniques with ranking model training.
+- **[[Knowledge Distillation]]**: A large teacher cross-encoder distils soft relevance scores to a smaller student cross-encoder, preserving most ranking quality (within 2 NDCG of teacher) at 2–3× reduced latency. This is the primary route to low-latency deployment. The distillation loss is typically a combination of KL divergence between teacher and student score distributions plus a standard pointwise cross-entropy term, weighted by a temperature hyperparameter that controls how much to trust the soft teacher labels versus hard relevance annotations.
+- **Serving Infrastructure**: Inference is batch-parallelised over the candidate set on GPU. FlashAttention v2/v3 and int8/fp8 quantisation reduce per-pair latency, enabling reranking of 100 candidates in under 200ms on a single A100 GPU. TorchServe, vLLM (for generative rerankers), and ONNX Runtime deployments are standard. For cloud APIs (Cohere, Voyage, Jina), the reranking call is a single HTTP endpoint invocation that accepts query + candidate list and returns a ranked list with scores, abstracting the entire infrastructure burden.
+- **Context Length Handling**: Modern reranking models (BGE-Reranker-v2-m3, Jina Reranker v2) support up to 8,192 tokens per query-document pair, enabling reranking of full-page documents rather than 512-token passages. This eliminates the chunking step for shorter documents but increases per-pair inference time proportionally to sequence length squared.
 
   ## Major Variants and Families
-  - **Pointwise Reranking (standard cross-encoder)**: Scores each query-document pair independently. The most widely deployed pattern; models include ms-marco-MiniLM-L-6-v2, ms-marco-MiniLM-L-12-v2, and the BGE-Reranker series from BAAI. Inference complexity is O(k) forward passes. The pointwise objective (binary cross-entropy on positive/negative pairs) is straightforward to implement and scale, making this the standard baseline.
-  - **Pairwise Reranking**: Scores pairs of documents jointly, using the model to directly predict which document is more relevant. More sample-efficient from a training perspective — the model learns relative preferences rather than absolute scores — but slower at inference (O(k²) pairs for k candidates). RankNet and its derivatives provide the theoretical foundation; pairwise cross-encoders are used in legal document ranking where relative preference signals are available from case citation patterns.
-  - **Listwise Reranking (LLM-based)**: Uses a [[Large Language Models]] prompted with a list of passages to output a ranked ordering. RankGPT and similar approaches can achieve higher accuracy ceilings on reasoning-heavy queries but add 4–6 seconds of latency and cost one to three US cents per query at GPT-4 pricing, making them suitable only for offline or low-volume applications. The approach scales poorly with candidate set size because the entire ranked list must fit within the LLM's context window.
-  - **Late Interaction Models ([[ColBERT]])**: A middle ground between bi-encoder and full cross-encoder — pre-computes document token embeddings offline, performs MaxSim scoring (maximum similarity over token pairs) at query time. Two orders of magnitude faster than full cross-encoders at reranking time with nDCG within 3 points, but requiring specialised indexed storage (approximately 50–150 GB for large corpora at full precision). ColBERT bridges the retrieve-and-rerank paradigm by enabling dense token-level interaction without the full inference cost.
-  - **Multi-Stage Distillation Cascades**: A large cross-encoder teacher (e.g., MonoT5-3B with 3 billion parameters) distils soft relevance scores to a medium cross-encoder (e.g., DeBERTa-v3-base, 184M), which in turn distils to a bi-encoder (e.g., TAS-B, 110M), creating a three-stage cascade that balances quality and latency at each stage. Each stage processes all candidates from the previous stage, progressively narrowing the set. This cascaded distillation architecture is used in web-scale search engines where multiple stages of ranking are applied before the final cross-encoder rescoring.
-  - **Generative Reranking (Seq2Seq)**: Seq2Seq models (T5, LLaMA fine-tunes) that output "true" or "false" tokens given a query-document pair and derive relevance scores from the conditional probability of the "true" token. MonoT5 (Nogueira et al., 2020) and RankT5 are the canonical examples. The generative framing allows the model to leverage pre-trained generative capabilities for relevance estimation, and larger generative models (T5-3B, T5-11B) consistently outperform BERT-class cross-encoders, at the cost of 10–30× higher inference latency.
-  - **Multimodal Cross-Encoders**: Cross-encoder architectures adapted for image-text or table-text relevance scoring. The model receives interleaved image patch embeddings and text tokens as a joint sequence, applying cross-attention across both modalities. Used in e-commerce product search (text query vs. product image+description) and scientific document retrieval (text query vs. figure+caption).
-  - **Efficient Early-Exit Cross-Encoders (MICE)**: Early-exit architectures (MICE, arXiv 2602.16299, 2025) that halt inference at intermediate transformer layers when the model's confidence exceeds a threshold, reducing average FLOPs by 50% with less than 1 NDCG@10 regression. A classifier attached to each layer predicts whether the current representation is sufficient for reliable relevance scoring; easy query-document pairs exit at layer 4–6 while difficult ones run the full depth. This adaptive computation approach is particularly valuable for real-time consumer search applications with strict latency budgets.
+
+- **Pointwise Reranking (standard cross-encoder)**: Scores each query-document pair independently. The most widely deployed pattern; models include ms-marco-MiniLM-L-6-v2, ms-marco-MiniLM-L-12-v2, and the BGE-Reranker series from BAAI. Inference complexity is O(k) forward passes. The pointwise objective (binary cross-entropy on positive/negative pairs) is straightforward to implement and scale, making this the standard baseline.
+- **Pairwise Reranking**: Scores pairs of documents jointly, using the model to directly predict which document is more relevant. More sample-efficient from a training perspective — the model learns relative preferences rather than absolute scores — but slower at inference (O(k²) pairs for k candidates). RankNet and its derivatives provide the theoretical foundation; pairwise cross-encoders are used in legal document ranking where relative preference signals are available from case citation patterns.
+- **Listwise Reranking (LLM-based)**: Uses a [[Large Language Models]] prompted with a list of passages to output a ranked ordering. RankGPT and similar approaches can achieve higher accuracy ceilings on reasoning-heavy queries but add 4–6 seconds of latency and cost one to three US cents per query at GPT-4 pricing, making them suitable only for offline or low-volume applications. The approach scales poorly with candidate set size because the entire ranked list must fit within the LLM's context window.
+- **Late Interaction Models ([[ColBERT]])**: A middle ground between bi-encoder and full cross-encoder — pre-computes document token embeddings offline, performs MaxSim scoring (maximum similarity over token pairs) at query time. Two orders of magnitude faster than full cross-encoders at reranking time with nDCG within 3 points, but requiring specialised indexed storage (approximately 50–150 GB for large corpora at full precision). ColBERT bridges the retrieve-and-rerank paradigm by enabling dense token-level interaction without the full inference cost.
+- **Multi-Stage Distillation Cascades**: A large cross-encoder teacher (e.g., MonoT5-3B with 3 billion parameters) distils soft relevance scores to a medium cross-encoder (e.g., DeBERTa-v3-base, 184M), which in turn distils to a bi-encoder (e.g., TAS-B, 110M), creating a three-stage cascade that balances quality and latency at each stage. Each stage processes all candidates from the previous stage, progressively narrowing the set. This cascaded distillation architecture is used in web-scale search engines where multiple stages of ranking are applied before the final cross-encoder rescoring.
+- **Generative Reranking (Seq2Seq)**: Seq2Seq models (T5, LLaMA fine-tunes) that output "true" or "false" tokens given a query-document pair and derive relevance scores from the conditional probability of the "true" token. MonoT5 (Nogueira et al., 2020) and RankT5 are the canonical examples. The generative framing allows the model to leverage pre-trained generative capabilities for relevance estimation, and larger generative models (T5-3B, T5-11B) consistently outperform BERT-class cross-encoders, at the cost of 10–30× higher inference latency.
+- **Multimodal Cross-Encoders**: Cross-encoder architectures adapted for image-text or table-text relevance scoring. The model receives interleaved image patch embeddings and text tokens as a joint sequence, applying cross-attention across both modalities. Used in e-commerce product search (text query vs. product image+description) and scientific document retrieval (text query vs. figure+caption).
+- **Efficient Early-Exit Cross-Encoders (MICE)**: Early-exit architectures (MICE, arXiv 2602.16299, 2025) that halt inference at intermediate transformer layers when the model's confidence exceeds a threshold, reducing average FLOPs by 50% with less than 1 NDCG@10 regression. A classifier attached to each layer predicts whether the current representation is sufficient for reliable relevance scoring; easy query-document pairs exit at layer 4–6 while difficult ones run the full depth. This adaptive computation approach is particularly valuable for real-time consumer search applications with strict latency budgets.
 
   ## Efficiency Analysis and Latency Budget
   Production deployment of cross-encoder reranking requires careful latency analysis. The computational cost scales as:
@@ -183,20 +185,21 @@ Cross-Encoder Reranking is a two-stage information retrieval technique in which 
   The theoretical relationship between cross-encoder scoring and the probability ranking principle (PRP, Robertson 1977) is noteworthy. The PRP states that the optimal document ranking for a query, under independence assumptions, is by descending probability of relevance P(R | d, q). Cross-encoder outputs approximate this probability directly (when trained with binary cross-entropy on relevance labels and passed through sigmoid), making them the closest modern realisation of the PRP from the neural ranker family. This theoretical alignment gives cross-encoders a principled statistical interpretation, complementing their empirical superiority on benchmarks.
 
   Benchmark performance as of early 2026 on standard tasks:
-  - MS MARCO Passage Ranking (NDCG@10, Dev Set): BM25 baseline ≈ 31; bi-encoder first stage ≈ 40–45; cross-encoder reranker ≈ 70–74 (monoBERT class); DeBERTa-v3 cross-encoder ≈ 74–76; distilled MiniLM cross-encoder ≈ 68–70
-  - BEIR Average NDCG@10 (zero-shot, 18 domains): BM25 ≈ 43; bi-encoder ≈ 45–48; cross-encoder ≈ 50–55
-  - TREC Deep Learning 2022 (NDCG@10): state-of-the-art reranker ≈ 78–82
+
+- MS MARCO Passage Ranking (NDCG@10, Dev Set): BM25 baseline ≈ 31; bi-encoder first stage ≈ 40–45; cross-encoder reranker ≈ 70–74 (monoBERT class); DeBERTa-v3 cross-encoder ≈ 74–76; distilled MiniLM cross-encoder ≈ 68–70
+- BEIR Average NDCG@10 (zero-shot, 18 domains): BM25 ≈ 43; bi-encoder ≈ 45–48; cross-encoder ≈ 50–55
+- TREC Deep Learning 2022 (NDCG@10): state-of-the-art reranker ≈ 78–82
 
   The RAGSmith framework (arXiv 2511.01386, 2025) systematically evaluates retrieval pipeline configurations, demonstrating that cross-encoder reranking is the single most impactful component in a RAG pipeline optimisation budget, ahead of chunking strategy, embedding model choice, and hybrid retrieval configuration.
 
   ## Training Methodology and Data Considerations
   The quality of a cross-encoder reranking model depends critically on the training data composition, negative sampling strategy, and fine-tuning objective. The principal training datasets are:
 
-  - **MS MARCO Passage Ranking** (Nguyen et al., 2016): approximately 530,000 queries with human-annotated relevant passages selected from Bing retrieval results. Each query has on average one relevant passage (sparse relevance labels). The training set covers queries across a wide range of information needs. BM25-sampled negatives were the original standard; current practice supplements these with hard negatives mined by the cross-encoder being trained (online hard negative mining) in iterative training rounds.
-  - **MSMARCO Document Ranking**: A document-level variant with full document inputs rather than passages. Training cross-encoders on document-level data requires sliding-window passage extraction during both training and inference, significantly complicating the data pipeline.
-  - **Natural Questions (Kwiatkowski et al., 2019)**: 300,000 factoid questions derived from Google search queries with Wikipedia paragraph annotations. Used for QA-specific fine-tuning of cross-encoders.
-  - **BEIR corpora**: The 18 BEIR domains (including Arguana, NFCorpus, CQADupStack, Quora, SCIDOCS, and others) are used as zero-shot evaluation targets. Fine-tuning on individual BEIR domains produces domain-adapted cross-encoders substantially outperforming the zero-shot baseline.
-  - **Synthetic training data**: Instruction-tuned LLMs can generate synthetic (query, relevant passage, negative passage) triples from unlabelled text corpora at scale, providing training data for domains where human-annotated relevance judgements are unavailable. GPT-4-generated synthetic training data has been used to train competitive domain-specific cross-encoders for legal and biomedical IR without any human annotation.
+- **MS MARCO Passage Ranking** (Nguyen et al., 2016): approximately 530,000 queries with human-annotated relevant passages selected from Bing retrieval results. Each query has on average one relevant passage (sparse relevance labels). The training set covers queries across a wide range of information needs. BM25-sampled negatives were the original standard; current practice supplements these with hard negatives mined by the cross-encoder being trained (online hard negative mining) in iterative training rounds.
+- **MSMARCO Document Ranking**: A document-level variant with full document inputs rather than passages. Training cross-encoders on document-level data requires sliding-window passage extraction during both training and inference, significantly complicating the data pipeline.
+- **Natural Questions (Kwiatkowski et al., 2019)**: 300,000 factoid questions derived from Google search queries with Wikipedia paragraph annotations. Used for QA-specific fine-tuning of cross-encoders.
+- **BEIR corpora**: The 18 BEIR domains (including Arguana, NFCorpus, CQADupStack, Quora, SCIDOCS, and others) are used as zero-shot evaluation targets. Fine-tuning on individual BEIR domains produces domain-adapted cross-encoders substantially outperforming the zero-shot baseline.
+- **Synthetic training data**: Instruction-tuned LLMs can generate synthetic (query, relevant passage, negative passage) triples from unlabelled text corpora at scale, providing training data for domains where human-annotated relevance judgements are unavailable. GPT-4-generated synthetic training data has been used to train competitive domain-specific cross-encoders for legal and biomedical IR without any human annotation.
 
   Hard negative mining is the single most impactful training data decision. Three negative sampling strategies have established empirical dominance:
   1. **BM25 negatives**: Passages ranked highly by BM25 for the query but annotated as non-relevant. These are lexically similar to the query but semantically distinct — challenging for cross-encoders trained on random negatives but easier than retriever-based hard negatives.
@@ -204,16 +207,18 @@ Cross-Encoder Reranking is a two-stage information retrieval technique in which 
   3. **Cross-encoder teacher negatives (online)**: In distillation-based training, the teacher cross-encoder generates soft relevance scores for all candidates; the student is trained to match this score distribution rather than hard binary labels. This provides richer gradient information and produces students within 2 NDCG@10 of the teacher.
 
   The training objective has measurable impact on final model quality:
-  - **Pointwise binary cross-entropy** (sigmoid on [CLS] score): Standard baseline; simple to implement; produces calibrated relevance probabilities amenable to score thresholding.
-  - **Pairwise margin ranking loss**: max(0, margin - score(q, d⁺) + score(q, d⁻)); directly optimises the relative ordering of positive and negative passages; typically 0.5–1.0 NDCG@10 higher than pointwise on MS MARCO.
-  - **Listwise LambdaLoss / LAMBDARANK**: Optimises a smooth approximation to NDCG directly; typically 1.0–2.0 NDCG@10 higher than pointwise; more complex to implement correctly (requires sorting operations in the backward pass).
+
+- **Pointwise binary cross-entropy** (sigmoid on [CLS] score): Standard baseline; simple to implement; produces calibrated relevance probabilities amenable to score thresholding.
+- **Pairwise margin ranking loss**: max(0, margin - score(q, d⁺) + score(q, d⁻)); directly optimises the relative ordering of positive and negative passages; typically 0.5–1.0 NDCG@10 higher than pointwise on MS MARCO.
+- **Listwise LambdaLoss / LAMBDARANK**: Optimises a smooth approximation to NDCG directly; typically 1.0–2.0 NDCG@10 higher than pointwise; more complex to implement correctly (requires sorting operations in the backward pass).
 
   ## Current Landscape (2026)
   By mid-2026, cross-encoder reranking has become a standard component of production RAG stacks. The dominant open-source families are:
-  - **BGE-Reranker-v2-m3 and v2-gemma** (BAAI, Beijing Academy of Artificial Intelligence): multilingual, supports up to 8k token context, 568M parameters (v2-gemma uses Gemma-2 backbone for improved multilingual coverage). BEIR average NDCG@10 ≈ 55–57.
-  - **mxbai-rerank-large-v2** (Mixedbread AI): 570M parameters, three-stage training with GRPO + contrastive learning + preference learning, state-of-the-art on BEIR 2025 for open models. Multilingual support for 100+ languages.
-  - **Jina Reranker v2** (Jina AI): 137M parameters, 8k context window, multilingual, Apache 2.0 licence. Optimised for low-latency production deployment.
-  - **ms-marco-MiniLM series** (Sentence-Transformers): The original workhorse models; ms-marco-MiniLM-L-6-v2 (22M parameters) and ms-marco-MiniLM-L-12-v2 (33M parameters) remain the most widely deployed open models due to their balance of quality and inference speed.
+
+- **BGE-Reranker-v2-m3 and v2-gemma** (BAAI, Beijing Academy of Artificial Intelligence): multilingual, supports up to 8k token context, 568M parameters (v2-gemma uses Gemma-2 backbone for improved multilingual coverage). BEIR average NDCG@10 ≈ 55–57.
+- **mxbai-rerank-large-v2** (Mixedbread AI): 570M parameters, three-stage training with GRPO + contrastive learning + preference learning, state-of-the-art on BEIR 2025 for open models. Multilingual support for 100+ languages.
+- **Jina Reranker v2** (Jina AI): 137M parameters, 8k context window, multilingual, Apache 2.0 licence. Optimised for low-latency production deployment.
+- **ms-marco-MiniLM series** (Sentence-Transformers): The original workhorse models; ms-marco-MiniLM-L-6-v2 (22M parameters) and ms-marco-MiniLM-L-12-v2 (33M parameters) remain the most widely deployed open models due to their balance of quality and inference speed.
 
   Commercial APIs include Cohere Rerank 3 / Rerank 3 Nimble (100+ languages, supports 4096 token documents), Voyage Rerank-2 (instruction-following, optimised for agentic and conversational use cases), Google Vertex AI Reranking API (integrated with Google Cloud RAG), and AWS Bedrock Reranking (available via Amazon Bedrock Agent frameworks). Integration into LangChain, LlamaIndex, Haystack, DSPy, and LlamaStack frameworks is native and idiomatic: a single method call wraps the entire reranking pipeline.
 
@@ -245,40 +250,42 @@ Cross-Encoder Reranking is a two-stage information retrieval technique in which 
   The UKRI-funded EPSRC projects on trustworthy AI and information retrieval safety have funded research into cross-encoder robustness: adversarial queries that exploit cross-encoder blind spots, out-of-distribution retrieval failure modes, and fairness in relevance scoring (whether cross-encoders systematically disadvantage certain demographic groups' query styles). This safety-oriented IR research is particularly relevant to UK public sector AI deployment contexts.
 
   ## Future Directions (2026–2030)
-  - **Learned sparse + cross-encoder hybrid scoring**: Combining SPLADE-style sparse lexical scores with cross-encoder semantic scores at training time, rather than as separate retrieval and reranking stages, may yield a single-stage system with the precision of cross-encoders at lower latency. Unified learned sparse-dense retrieval models that natively support reranking-quality scoring without a separate second-stage pass are an active research direction.
-  - **Speculative reranking**: Analogous to speculative decoding in generation, a small draft reranker proposes a tentative ordering that a large oracle reranker verifies only where the draft model is uncertain, reducing average compute per query while maintaining the quality of the oracle on difficult queries. Early results (unpublished 2025) suggest 30–50% FLOPs reduction with less than 0.5 NDCG regression.
-  - **Self-supervised reranker training from LLM preferences**: Using [[Large Language Models]] to automatically generate training signal (preferred relevance orderings) from unlabelled corpora reduces dependence on expensive human-annotated relevance judgements. Distillation-from-LLM approaches generate synthetic query-passage relevance labels at scale, enabling competitive zero-shot cross-encoders for specialised domains without any human annotation.
-  - **Multi-modal reranking**: Cross-encoder architectures adapted for query-image, query-table, and query-code scoring, using interleaved text-image token sequences. As RAG expands from text-only to multi-modal corpora (PDFs with figures, code repositories, scientific tables), rerankers must evaluate the relevance of heterogeneous multi-modal passages against text queries.
-  - **Personalised reranking**: Conditioning the cross-encoder on user interaction history or persona embeddings to produce user-adaptive relevance scores. Personalisation signals (click history, document preference patterns, organisational context) can be injected as additional tokens in the cross-encoder input or as conditioning vectors on the [CLS] representation.
-  - **On-device reranking**: Sub-100M parameter cross-encoders distilled for mobile and edge deployment, enabling private local RAG without cloud API calls. Models like ms-marco-MiniLM-L-6-v2 (22M parameters) can already run on-device; further quantisation (4-bit) and architectural optimisation (MobileNet-style efficient transformer blocks) will enable real-time reranking on smartphones.
-  - **Integrated retrieval-reranking architectures**: Research into end-to-end differentiable two-stage systems where the first-stage retriever and second-stage cross-encoder are trained jointly, with the cross-encoder's gradient signal flowing back through the retriever to improve first-stage recall for cases that the cross-encoder correctly identifies as relevant but that the retriever initially misses.
-  - **Conversational and session-aware reranking**: Extending cross-encoder inputs to include conversation history and previous query-passage interactions, enabling rerankers that model how the user's information need evolves across a multi-turn dialogue, providing better context-aware relevance scoring for [[Agentic RAG]] systems with persistent memory.
+
+- **Learned sparse + cross-encoder hybrid scoring**: Combining SPLADE-style sparse lexical scores with cross-encoder semantic scores at training time, rather than as separate retrieval and reranking stages, may yield a single-stage system with the precision of cross-encoders at lower latency. Unified learned sparse-dense retrieval models that natively support reranking-quality scoring without a separate second-stage pass are an active research direction.
+- **Speculative reranking**: Analogous to speculative decoding in generation, a small draft reranker proposes a tentative ordering that a large oracle reranker verifies only where the draft model is uncertain, reducing average compute per query while maintaining the quality of the oracle on difficult queries. Early results (unpublished 2025) suggest 30–50% FLOPs reduction with less than 0.5 NDCG regression.
+- **Self-supervised reranker training from LLM preferences**: Using [[Large Language Models]] to automatically generate training signal (preferred relevance orderings) from unlabelled corpora reduces dependence on expensive human-annotated relevance judgements. Distillation-from-LLM approaches generate synthetic query-passage relevance labels at scale, enabling competitive zero-shot cross-encoders for specialised domains without any human annotation.
+- **Multi-modal reranking**: Cross-encoder architectures adapted for query-image, query-table, and query-code scoring, using interleaved text-image token sequences. As RAG expands from text-only to multi-modal corpora (PDFs with figures, code repositories, scientific tables), rerankers must evaluate the relevance of heterogeneous multi-modal passages against text queries.
+- **Personalised reranking**: Conditioning the cross-encoder on user interaction history or persona embeddings to produce user-adaptive relevance scores. Personalisation signals (click history, document preference patterns, organisational context) can be injected as additional tokens in the cross-encoder input or as conditioning vectors on the [CLS] representation.
+- **On-device reranking**: Sub-100M parameter cross-encoders distilled for mobile and edge deployment, enabling private local RAG without cloud API calls. Models like ms-marco-MiniLM-L-6-v2 (22M parameters) can already run on-device; further quantisation (4-bit) and architectural optimisation (MobileNet-style efficient transformer blocks) will enable real-time reranking on smartphones.
+- **Integrated retrieval-reranking architectures**: Research into end-to-end differentiable two-stage systems where the first-stage retriever and second-stage cross-encoder are trained jointly, with the cross-encoder's gradient signal flowing back through the retriever to improve first-stage recall for cases that the cross-encoder correctly identifies as relevant but that the retriever initially misses.
+- **Conversational and session-aware reranking**: Extending cross-encoder inputs to include conversation history and previous query-passage interactions, enabling rerankers that model how the user's information need evolves across a multi-turn dialogue, providing better context-aware relevance scoring for [[Agentic RAG]] systems with persistent memory.
 
   ## Comparison of Reranking Approaches (2026 Summary)
   The following comparison summarises the key approaches across the accuracy-latency-cost dimensions:
 
-  | Approach | Latency | NDCG@10 (MS MARCO) | Cost/query | Use Case |
-  |---|---|---|---|---|
-  | BM25 only | <10ms | ~31 | negligible | Keyword-heavy queries, resource-constrained |
-  | Bi-encoder (dense) | <20ms | ~40-45 | low (GPU amortised) | General semantic search |
-  | [[Hybrid Retrieval]] + BM25 | <30ms | ~44-48 | low | Production first stage |
-  | [[ColBERT]] late interaction | 50-100ms | ~68-70 | medium | Quality-first with latency budget |
-  | MiniLM cross-encoder | 80-120ms | ~68-72 | medium | Standard RAG reranking |
-  | DeBERTa cross-encoder | 300-500ms | ~74-76 | medium-high | High-precision enterprise search |
-  | LLM listwise (GPT-4) | 4000-8000ms | ~76-80 | high ($0.01-0.03/query) | Offline batch, premium use cases |
+| Approach | Latency | NDCG@10 (MS MARCO) | Cost/query | Use Case |
+|---|---|---|---|---|
+| BM25 only | <10ms | ~31 | negligible | Keyword-heavy queries, resource-constrained |
+| Bi-encoder (dense) | <20ms | ~40-45 | low (GPU amortised) | General semantic search |
+| [[Hybrid Retrieval]] + BM25 | <30ms | ~44-48 | low | Production first stage |
+| [[ColBERT]] late interaction | 50-100ms | ~68-70 | medium | Quality-first with latency budget |
+| MiniLM cross-encoder | 80-120ms | ~68-72 | medium | Standard RAG reranking |
+| DeBERTa cross-encoder | 300-500ms | ~74-76 | medium-high | High-precision enterprise search |
+| LLM listwise (GPT-4) | 4000-8000ms | ~76-80 | high ($0.01-0.03/query) | Offline batch, premium use cases |
 
-  This landscape illustrates the fundamental accuracy-latency Pareto frontier: more accurate approaches uniformly require more compute. Cross-encoder reranking occupies the "sweet spot" for most production applications — achieving 90%+ of LLM-quality ranking at 10–100× lower latency and cost.
+This landscape illustrates the fundamental accuracy-latency Pareto frontier: more accurate approaches uniformly require more compute. Cross-encoder reranking occupies the "sweet spot" for most production applications — achieving 90%+ of LLM-quality ranking at 10–100× lower latency and cost.
 
-  ## Practical Implementation Guide
-  Implementing cross-encoder reranking in a production RAG pipeline requires decisions across three dimensions: model selection, integration architecture, and evaluation methodology.
+## Practical Implementation Guide
+Implementing cross-encoder reranking in a production RAG pipeline requires decisions across three dimensions: model selection, integration architecture, and evaluation methodology.
 
-  **Model Selection**
+**Model Selection**
 
-  The choice of cross-encoder model should be driven by latency budget, language coverage, and domain specificity:
-  - For English-only, latency-sensitive RAG (< 150ms for k=100): ms-marco-MiniLM-L-6-v2 (22M params, ~80ms for k=100 on A100) or ms-marco-MiniLM-L-12-v2 (33M params, ~110ms)
-  - For multilingual RAG: BGE-Reranker-v2-m3 (568M params, 8k context) or Jina Reranker v2 (137M params, Apache 2.0)
-  - For maximum quality (< 500ms budget): DeBERTa-v3-large fine-tuned on MS MARCO (435M params)
-  - For cloud API convenience: Cohere Rerank 3 (single API call, pricing ~$0.002/search unit), Voyage Rerank-2 (instruction-following, better for conversational queries)
+The choice of cross-encoder model should be driven by latency budget, language coverage, and domain specificity:
+
+- For English-only, latency-sensitive RAG (< 150ms for k=100): ms-marco-MiniLM-L-6-v2 (22M params, ~80ms for k=100 on A100) or ms-marco-MiniLM-L-12-v2 (33M params, ~110ms)
+- For multilingual RAG: BGE-Reranker-v2-m3 (568M params, 8k context) or Jina Reranker v2 (137M params, Apache 2.0)
+- For maximum quality (< 500ms budget): DeBERTa-v3-large fine-tuned on MS MARCO (435M params)
+- For cloud API convenience: Cohere Rerank 3 (single API call, pricing ~$0.002/search unit), Voyage Rerank-2 (instruction-following, better for conversational queries)
 
   **Integration Architecture**
 
@@ -300,49 +307,55 @@ Cross-Encoder Reranking is a two-stage information retrieval technique in which 
   **Failure Modes and Mitigations**
 
   Common failure modes in cross-encoder reranking:
-  - **Domain shift**: A cross-encoder trained on general web data (MS MARCO) may underperform on specialised domains (legal, medical, financial) where terminology and relevance patterns differ substantially. Mitigation: domain-adapt with fine-tuning on 1,000–10,000 labelled domain-specific query-passage pairs.
-  - **Long document mismatch**: Cross-encoders trained on short passages (256 tokens) may not perform well on longer documents (1024–8192 tokens). Use models specifically trained at the target context length, or apply passage-level chunking and max-pool the chunk scores.
-  - **Adversarial queries**: Cross-encoders can be fooled by keyword-stuffed documents that score high despite being irrelevant. Monitoring the score distribution of reranked candidates flags unusual patterns.
-  - **Out-of-vocabulary terms**: Despite subword tokenisation, highly specialised technical terms (new drug names, emerging technology acronyms) may not be well-represented in the cross-encoder's pre-training vocabulary. Combining cross-encoder reranking with BM25 exact-match retrieval ensures that exact-term matches are retained.
+
+- **Domain shift**: A cross-encoder trained on general web data (MS MARCO) may underperform on specialised domains (legal, medical, financial) where terminology and relevance patterns differ substantially. Mitigation: domain-adapt with fine-tuning on 1,000–10,000 labelled domain-specific query-passage pairs.
+- **Long document mismatch**: Cross-encoders trained on short passages (256 tokens) may not perform well on longer documents (1024–8192 tokens). Use models specifically trained at the target context length, or apply passage-level chunking and max-pool the chunk scores.
+- **Adversarial queries**: Cross-encoders can be fooled by keyword-stuffed documents that score high despite being irrelevant. Monitoring the score distribution of reranked candidates flags unusual patterns.
+- **Out-of-vocabulary terms**: Despite subword tokenisation, highly specialised technical terms (new drug names, emerging technology acronyms) may not be well-represented in the cross-encoder's pre-training vocabulary. Combining cross-encoder reranking with BM25 exact-match retrieval ensures that exact-term matches are retained.
 
   ## Cross-Encoder Reranking vs. Alternative Architectures: Detailed Comparison
 
   The cross-encoder reranking paradigm must be understood in relation to the full spectrum of neural information retrieval architectures. Each approach makes different trade-offs between offline/online computation, accuracy, and infrastructure requirements:
 
   **Inverted Index + BM25 (Classical IR)**
-  - Offline: Build inverted index from term frequencies; O(N × L) space
-  - Online: Score query terms against inverted index; O(|query| × k) FLOPs where k is average document frequency
-  - Strengths: Exact term matching; no GPU required; perfect recall for exact-match queries; highly interpretable scores
-  - Weaknesses: Cannot handle synonyms, paraphrases, or conceptual queries without keyword overlap; no cross-attention between query and document
-  - NDCG@10 on MS MARCO Passage: ~31; BEIR average: ~43
+
+- Offline: Build inverted index from term frequencies; O(N × L) space
+- Online: Score query terms against inverted index; O(|query| × k) FLOPs where k is average document frequency
+- Strengths: Exact term matching; no GPU required; perfect recall for exact-match queries; highly interpretable scores
+- Weaknesses: Cannot handle synonyms, paraphrases, or conceptual queries without keyword overlap; no cross-attention between query and document
+- NDCG@10 on MS MARCO Passage: ~31; BEIR average: ~43
 
   **Bi-Encoder + [[Approximate Nearest Neighbour Search]] (Dense Retrieval)**
-  - Offline: Encode all documents once with a fine-tuned transformer; store in vector index (HNSW, IVF-PQ); O(N × d) space
-  - Online: Encode query; ANN lookup in vector index; O(log N × d) FLOPs
-  - Strengths: Captures semantic similarity beyond keyword overlap; fast online inference; scales to billions of documents with product quantisation
-  - Weaknesses: Document representation is independent of query; cannot capture fine-grained query-conditional relevance; requires GPU for encoding
-  - NDCG@10 on MS MARCO Passage: ~40-45; BEIR average: ~45-48
+
+- Offline: Encode all documents once with a fine-tuned transformer; store in vector index (HNSW, IVF-PQ); O(N × d) space
+- Online: Encode query; ANN lookup in vector index; O(log N × d) FLOPs
+- Strengths: Captures semantic similarity beyond keyword overlap; fast online inference; scales to billions of documents with product quantisation
+- Weaknesses: Document representation is independent of query; cannot capture fine-grained query-conditional relevance; requires GPU for encoding
+- NDCG@10 on MS MARCO Passage: ~40-45; BEIR average: ~45-48
 
   **[[ColBERT]] Late Interaction**
-  - Offline: Encode all document tokens with ColBERT; store token embeddings (with optional compression); O(N × L × d) space
-  - Online: Encode query tokens; compute MaxSim between query and document token embeddings via ANN lookup; O(|query| × k × d) FLOPs
-  - Strengths: Token-level cross-attention without full cross-encoder cost; 100-1000× faster than cross-encoder at inference; near cross-encoder accuracy
-  - Weaknesses: Large index size (50–150 GB for 8.8M MS MARCO passages at full precision); specialised infrastructure; limited to text
-  - NDCG@10 on MS MARCO Passage: ~68-71; BEIR average: ~50-52
+
+- Offline: Encode all document tokens with ColBERT; store token embeddings (with optional compression); O(N × L × d) space
+- Online: Encode query tokens; compute MaxSim between query and document token embeddings via ANN lookup; O(|query| × k × d) FLOPs
+- Strengths: Token-level cross-attention without full cross-encoder cost; 100-1000× faster than cross-encoder at inference; near cross-encoder accuracy
+- Weaknesses: Large index size (50–150 GB for 8.8M MS MARCO passages at full precision); specialised infrastructure; limited to text
+- NDCG@10 on MS MARCO Passage: ~68-71; BEIR average: ~50-52
 
   **Cross-Encoder Reranking (Full Cross-Attention)**
-  - Offline: No document pre-encoding required
-  - Online: Joint forward pass over [CLS] query [SEP] document [SEP]; O(k × L² × d) FLOPs where k is candidate set size and L is joint sequence length
-  - Strengths: Full cross-attention between query and all document tokens; highest precision; can condition document salience on the specific query aspect
-  - Weaknesses: Cannot scale to full corpus; requires pre-retrieval stage; O(k) forward passes per query; GPU required for sub-second latency
-  - NDCG@10 on MS MARCO Passage: ~72-76; BEIR average: ~52-56
+
+- Offline: No document pre-encoding required
+- Online: Joint forward pass over [CLS] query [SEP] document [SEP]; O(k × L² × d) FLOPs where k is candidate set size and L is joint sequence length
+- Strengths: Full cross-attention between query and all document tokens; highest precision; can condition document salience on the specific query aspect
+- Weaknesses: Cannot scale to full corpus; requires pre-retrieval stage; O(k) forward passes per query; GPU required for sub-second latency
+- NDCG@10 on MS MARCO Passage: ~72-76; BEIR average: ~52-56
 
   **LLM Listwise Reranking (RankGPT, LLM-based)**
-  - Offline: None
-  - Online: Prompt LLM with query + list of k passages; generate ranked order; O(k × L × d_LLM) FLOPs
-  - Strengths: Highest accuracy ceiling (access to LLM's full reasoning capabilities); handles queries requiring multi-hop reasoning and nuanced preference discrimination
-  - Weaknesses: Extremely high latency (4–8 seconds) and cost ($0.01–0.05/query at GPT-4 pricing); not viable for real-time applications; candidate set limited by LLM context window
-  - NDCG@10 on MS MARCO Passage: ~76-80; BEIR average: ~54-58
+
+- Offline: None
+- Online: Prompt LLM with query + list of k passages; generate ranked order; O(k × L × d_LLM) FLOPs
+- Strengths: Highest accuracy ceiling (access to LLM's full reasoning capabilities); handles queries requiring multi-hop reasoning and nuanced preference discrimination
+- Weaknesses: Extremely high latency (4–8 seconds) and cost ($0.01–0.05/query at GPT-4 pricing); not viable for real-time applications; candidate set limited by LLM context window
+- NDCG@10 on MS MARCO Passage: ~76-80; BEIR average: ~54-58
 
   This comparison reveals the clear niche for cross-encoder reranking: it provides the highest accuracy achievable with sub-500ms latency, making it the optimal choice for the vast majority of production retrieval applications that require both quality and real-time response.
 
@@ -375,14 +388,15 @@ Cross-Encoder Reranking is a two-stage information retrieval technique in which 
 
   **BEIR (Benchmarking IR) Benchmark Structure**
   BEIR comprises 18 datasets spanning diverse retrieval tasks:
-  - Argument retrieval: Arguana, Touché-2020
-  - Citation prediction: Scidocs, Signal-1M, TREC-News
-  - Duplicate question retrieval: CQADupStack, Quora
-  - Entity retrieval: DBPedia-Entity
-  - Fact checking: Climate-FEVER, FEVER, SciFact
-  - Question answering: FiQA-2018, NQ, HotpotQA, BioASQ
-  - Tweet retrieval: Signal-1M
-  - Other: TREC-COVID, NFCorpus, Robust04
+
+- Argument retrieval: Arguana, Touché-2020
+- Citation prediction: Scidocs, Signal-1M, TREC-News
+- Duplicate question retrieval: CQADupStack, Quora
+- Entity retrieval: DBPedia-Entity
+- Fact checking: Climate-FEVER, FEVER, SciFact
+- Question answering: FiQA-2018, NQ, HotpotQA, BioASQ
+- Tweet retrieval: Signal-1M
+- Other: TREC-COVID, NFCorpus, Robust04
 
   Zero-shot evaluation on BEIR (training on MS MARCO only, evaluation without fine-tuning) reveals generalisation quality. Cross-encoders generalise better than bi-encoders on most BEIR domains, with particular advantages on argument retrieval (Arguana) and fact-checking (Climate-FEVER) where deep semantic understanding matters more than keyword overlap.
 
@@ -421,18 +435,19 @@ Cross-Encoder Reranking is a two-stage information retrieval technique in which 
   ## Connections to Related Retrieval Paradigms
   Cross-encoder reranking exists within a broader landscape of neural retrieval approaches, each occupying a distinct point in the accuracy-latency trade-off space. Understanding these connections illuminates when each approach is appropriate:
 
-  - **[[Dense Retrieval]] (bi-encoder)**: Pre-computes document embeddings offline; at query time, embeds the query and retrieves via [[Approximate Nearest Neighbour Search]]. Latency O(log N) — suitable for first-stage retrieval over millions of documents. Quality limited by the inability to condition document representation on the specific query.
-  - **[[BM25]] (sparse retrieval)**: Retrieves using exact lexical term matching and statistical term weighting; zero training required; excellent at rare term queries; misses paraphrase and synonymy. Still the most commonly used first-stage retriever in production systems due to its simplicity, speed, and interpretability.
-  - **[[Hybrid Retrieval]]**: Combines BM25 and dense retrieval via [[Reciprocal Rank Fusion]] or learned score combination. Captures both lexical precision and semantic recall. In practice, hybrid first-stage retrieval improves recall over either method alone, providing the cross-encoder with a better candidate set.
-  - **[[ColBERT]] (late interaction)**: Pre-computes all document token embeddings; at query time, computes MaxSim scores between query token embeddings and pre-computed document embeddings. 100–1000× faster than full cross-encoder inference; within 2–3 NDCG@10 of cross-encoder. Requires specialised vector storage (approximately 50–150 GB for 8.8M MS MARCO passages).
-  - **Cross-encoder reranking**: Full bidirectional cross-attention between query and document tokens; highest accuracy; no precomputation possible; O(k) forward passes at query time. Optimal for precision-critical applications with sufficient latency budget (>100ms per query).
-  - **LLM listwise reranking (RankGPT)**: Uses a generative LLM to directly output a ranked list; highest accuracy ceiling for reasoning-heavy queries; orders of magnitude higher latency and cost. Suitable only for offline batch reranking or very high-value, low-volume queries.
+- **[[Dense Retrieval]] (bi-encoder)**: Pre-computes document embeddings offline; at query time, embeds the query and retrieves via [[Approximate Nearest Neighbour Search]]. Latency O(log N) — suitable for first-stage retrieval over millions of documents. Quality limited by the inability to condition document representation on the specific query.
+- **[[BM25]] (sparse retrieval)**: Retrieves using exact lexical term matching and statistical term weighting; zero training required; excellent at rare term queries; misses paraphrase and synonymy. Still the most commonly used first-stage retriever in production systems due to its simplicity, speed, and interpretability.
+- **[[Hybrid Retrieval]]**: Combines BM25 and dense retrieval via [[Reciprocal Rank Fusion]] or learned score combination. Captures both lexical precision and semantic recall. In practice, hybrid first-stage retrieval improves recall over either method alone, providing the cross-encoder with a better candidate set.
+- **[[ColBERT]] (late interaction)**: Pre-computes all document token embeddings; at query time, computes MaxSim scores between query token embeddings and pre-computed document embeddings. 100–1000× faster than full cross-encoder inference; within 2–3 NDCG@10 of cross-encoder. Requires specialised vector storage (approximately 50–150 GB for 8.8M MS MARCO passages).
+- **Cross-encoder reranking**: Full bidirectional cross-attention between query and document tokens; highest accuracy; no precomputation possible; O(k) forward passes at query time. Optimal for precision-critical applications with sufficient latency budget (>100ms per query).
+- **LLM listwise reranking (RankGPT)**: Uses a generative LLM to directly output a ranked list; highest accuracy ceiling for reasoning-heavy queries; orders of magnitude higher latency and cost. Suitable only for offline batch reranking or very high-value, low-volume queries.
 
   The architectural choice should be driven by the specific application's requirements:
-  - Real-time consumer search (< 50ms budget): [[BM25]] or bi-encoder only
-  - Production RAG with 200ms budget: [[Hybrid Retrieval]] first stage + cross-encoder reranking
-  - High-precision enterprise search with 500ms budget: [[Hybrid Retrieval]] + large cross-encoder + optional LLM reranking for top-5 results
-  - Offline document ranking (no latency constraint): LLM listwise reranking over full cross-encoder candidates
+
+- Real-time consumer search (< 50ms budget): [[BM25]] or bi-encoder only
+- Production RAG with 200ms budget: [[Hybrid Retrieval]] first stage + cross-encoder reranking
+- High-precision enterprise search with 500ms budget: [[Hybrid Retrieval]] + large cross-encoder + optional LLM reranking for top-5 results
+- Offline document ranking (no latency constraint): LLM listwise reranking over full cross-encoder candidates
 
   The integration of [[Knowledge Distillation]] across these paradigms has created a coherent training pipeline: a large LLM generates ranking supervision (listwise), which trains a large cross-encoder teacher, which distils to a smaller cross-encoder student, which in turn distils to a bi-encoder with dense retrieval capability. This distillation cascade transfers accuracy from the most powerful (but slowest) reranker to the most efficient (but less accurate) retriever, enabling the entire accuracy of the teacher to propagate through the retrieval stack.
 
@@ -450,50 +465,52 @@ Cross-Encoder Reranking is a two-stage information retrieval technique in which 
   **Compute Cost and Carbon Footprint**: Cross-encoder inference is GPU-intensive. For large-scale deployments, the energy cost of reranking 100 candidates × millions of queries/day is substantial. Distilled small cross-encoders (MiniLM, 22M params) reduce energy consumption by 10–15× versus full DeBERTa-v3 (435M params) with acceptable quality reduction, enabling more sustainable deployment decisions.
 
   ## Key Terminology
-  - **Cross-encoder**: A transformer model that takes query and document concatenated as a single input and produces a joint representation, enabling full cross-attention between all query and document tokens.
-  - **Bi-encoder**: A model with two independent encoding towers (one for query, one for document) that computes relevance via dot-product between independent representations; query and document cannot attend to each other.
-  - **NDCG@k**: Normalised Discounted Cumulative Gain at rank k; the primary ranking quality metric, discounting gains from lower-ranked relevant items logarithmically. Higher is better; maximum value 1.0.
-  - **MRR@k**: Mean Reciprocal Rank at k; evaluates the rank of the first relevant result, useful when only one correct answer exists. Common in QA evaluation.
-  - **BEIR**: Benchmarking Information Retrieval; an 18-domain zero-shot evaluation benchmark spanning heterogeneous retrieval tasks from argument retrieval to biomedical search.
-  - **MS MARCO**: Microsoft MAchine Reading COmprehension; the dominant passage ranking training and evaluation dataset, derived from Bing search logs with human-annotated relevance labels; approximately 530,000 training queries.
-  - **Hard negatives**: Training negatives retrieved by a strong retriever (BM25 or dense retriever) that are semantically close to the query but annotated as non-relevant; more informative training signal than random negatives.
-  - **Listwise reranking**: A reranking approach that considers all candidates jointly and produces a ranked list output, rather than scoring each pair independently (pointwise) or each pair of documents (pairwise).
-  - **Two-stage retrieval**: The retrieve-then-rerank paradigm: fast first-stage (bi-encoder/BM25) followed by precise second-stage (cross-encoder).
-  - **Recall@k**: The fraction of relevant documents appearing in the top-k retrieved results; the primary metric for first-stage retrieval quality, as cross-encoder reranking cannot recover documents not in the candidate set.
-  - **TREC Deep Learning Track**: The annual TREC evaluation track for passage and document ranking, providing human-graded relevance judgements at scale (hundreds of queries × thousands of assessed documents per query).
-  - **MaxSim (ColBERT)**: The maximum similarity score between a query token embedding and any document token embedding; the interaction mechanism in late-interaction models.
-  - **LambdaRANK/LambdaLoss**: Gradient estimation methods for ranking metrics (NDCG) that are not directly differentiable; enables direct optimisation of ranking metrics in the cross-encoder training objective.
-  - **Probability Ranking Principle (PRP)**: Robertson's 1977 principle that the optimal document ranking is by descending probability of relevance; cross-encoder sigmoid outputs directly approximate this probability.
-  - **Teacher-forcing in ranking distillation**: Using soft relevance scores from a large teacher cross-encoder as training targets for a smaller student, providing richer gradient information than hard binary relevance labels.
+
+- **Cross-encoder**: A transformer model that takes query and document concatenated as a single input and produces a joint representation, enabling full cross-attention between all query and document tokens.
+- **Bi-encoder**: A model with two independent encoding towers (one for query, one for document) that computes relevance via dot-product between independent representations; query and document cannot attend to each other.
+- **NDCG@k**: Normalised Discounted Cumulative Gain at rank k; the primary ranking quality metric, discounting gains from lower-ranked relevant items logarithmically. Higher is better; maximum value 1.0.
+- **MRR@k**: Mean Reciprocal Rank at k; evaluates the rank of the first relevant result, useful when only one correct answer exists. Common in QA evaluation.
+- **BEIR**: Benchmarking Information Retrieval; an 18-domain zero-shot evaluation benchmark spanning heterogeneous retrieval tasks from argument retrieval to biomedical search.
+- **MS MARCO**: Microsoft MAchine Reading COmprehension; the dominant passage ranking training and evaluation dataset, derived from Bing search logs with human-annotated relevance labels; approximately 530,000 training queries.
+- **Hard negatives**: Training negatives retrieved by a strong retriever (BM25 or dense retriever) that are semantically close to the query but annotated as non-relevant; more informative training signal than random negatives.
+- **Listwise reranking**: A reranking approach that considers all candidates jointly and produces a ranked list output, rather than scoring each pair independently (pointwise) or each pair of documents (pairwise).
+- **Two-stage retrieval**: The retrieve-then-rerank paradigm: fast first-stage (bi-encoder/BM25) followed by precise second-stage (cross-encoder).
+- **Recall@k**: The fraction of relevant documents appearing in the top-k retrieved results; the primary metric for first-stage retrieval quality, as cross-encoder reranking cannot recover documents not in the candidate set.
+- **TREC Deep Learning Track**: The annual TREC evaluation track for passage and document ranking, providing human-graded relevance judgements at scale (hundreds of queries × thousands of assessed documents per query).
+- **MaxSim (ColBERT)**: The maximum similarity score between a query token embedding and any document token embedding; the interaction mechanism in late-interaction models.
+- **LambdaRANK/LambdaLoss**: Gradient estimation methods for ranking metrics (NDCG) that are not directly differentiable; enables direct optimisation of ranking metrics in the cross-encoder training objective.
+- **Probability Ranking Principle (PRP)**: Robertson's 1977 principle that the optimal document ranking is by descending probability of relevance; cross-encoder sigmoid outputs directly approximate this probability.
+- **Teacher-forcing in ranking distillation**: Using soft relevance scores from a large teacher cross-encoder as training targets for a smaller student, providing richer gradient information than hard binary relevance labels.
 
   ## LinkResolutionAnnotations
-  - [[Information Retrieval]] → urn:ngm:class:information-retrieval
-  - [[Semantic Search]] → urn:ngm:class:semantic-search
-  - [[Dense Retrieval]] → urn:ngm:class:dense-retrieval
-  - [[BM25]] → urn:ngm:class:bm25
-  - [[Hybrid Retrieval]] → urn:ngm:class:hybrid-retrieval
-  - [[Embedding Model]] → urn:ngm:class:embedding-model
-  - [[BERT]] → urn:ngm:class:bert
-  - [[Self-Attention]] → urn:ngm:class:self-attention
-  - [[Attention Mechanism]] → urn:ngm:class:attention-mechanism
-  - [[Transformer]] → urn:ngm:class:transformer
-  - [[Retrieval-Augmented Generation]] → urn:ngm:class:retrieval-augmented-generation
-  - [[RAG Pipeline]] → urn:ngm:class:rag-pipeline
-  - [[ColBERT]] → urn:ngm:class:colbert
-  - [[Knowledge Distillation]] → urn:ngm:class:knowledge-distillation
-  - [[Large Language Models]] → urn:ngm:class:large-language-models
-  - [[Approximate Nearest Neighbour Search]] → urn:ngm:class:approximate-nearest-neighbour-search
-  - [[Cosine Similarity]] → urn:ngm:class:cosine-similarity
-  - [[Contrastive Learning]] → urn:ngm:class:contrastive-learning
-  - [[Reciprocal Rank Fusion]] → urn:ngm:class:reciprocal-rank-fusion
-  - [[Document Retrieval]] → urn:ngm:class:document-retrieval
-  - [[Question Answering]] → urn:ngm:class:question-answering
-  - [[Enterprise Search]] → urn:ngm:class:enterprise-search
-  - [[Natural Language Processing]] → urn:ngm:class:natural-language-processing
-  - [[Agentic RAG]] → urn:ngm:class:agentic-rag
-  - [[Dense Passage Retrieval]] → urn:ngm:class:dense-passage-retrieval
-  - [[Knowledge Retrieval]] → urn:ngm:class:knowledge-retrieval
-  - [[Neural Information Retrieval]] → urn:ngm:class:neural-information-retrieval
 
-- ### Provenance
+- [[Information Retrieval]] → urn:ngm:class:information-retrieval
+- [[Semantic Search]] → urn:ngm:class:semantic-search
+- [[Dense Retrieval]] → urn:ngm:class:dense-retrieval
+- [[BM25]] → urn:ngm:class:bm25
+- [[Hybrid Retrieval]] → urn:ngm:class:hybrid-retrieval
+- [[Embedding Model]] → urn:ngm:class:embedding-model
+- [[BERT]] → urn:ngm:class:bert
+- [[Self-Attention]] → urn:ngm:class:self-attention
+- [[Attention Mechanism]] → urn:ngm:class:attention-mechanism
+- [[Transformer]] → urn:ngm:class:transformer
+- [[Retrieval-Augmented Generation]] → urn:ngm:class:retrieval-augmented-generation
+- [[RAG Pipeline]] → urn:ngm:class:rag-pipeline
+- [[ColBERT]] → urn:ngm:class:colbert
+- [[Knowledge Distillation]] → urn:ngm:class:knowledge-distillation
+- [[Large Language Models]] → urn:ngm:class:large-language-models
+- [[Approximate Nearest Neighbour Search]] → urn:ngm:class:approximate-nearest-neighbour-search
+- [[Cosine Similarity]] → urn:ngm:class:cosine-similarity
+- [[Contrastive Learning]] → urn:ngm:class:contrastive-learning
+- [[Reciprocal Rank Fusion]] → urn:ngm:class:reciprocal-rank-fusion
+- [[Document Retrieval]] → urn:ngm:class:document-retrieval
+- [[Question Answering]] → urn:ngm:class:question-answering
+- [[Enterprise Search]] → urn:ngm:class:enterprise-search
+- [[Natural Language Processing]] → urn:ngm:class:natural-language-processing
+- [[Agentic RAG]] → urn:ngm:class:agentic-rag
+- [[Dense Passage Retrieval]] → urn:ngm:class:dense-passage-retrieval
+- [[Knowledge Retrieval]] → urn:ngm:class:knowledge-retrieval
+- [[Neural Information Retrieval]] → urn:ngm:class:neural-information-retrieval
+
+### Provenance
 

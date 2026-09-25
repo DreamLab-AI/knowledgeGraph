@@ -1,157 +1,157 @@
-
 Concept art is a discipline of visual development practice in which illustrators, designers, and increasingly AI-assisted workflows produce preliminary visual representations of characters, environments, vehicles, creatures, and props to establish the aesthetic, mood, and functional parameters of an intended creative production before commitment to the labour-intensive downstream stages of 3D modelling, animation, and rendering. It functions as the design language and communication medium between creative direction and production teams across games, film, animation, and extended reality.
 
-- ### Semantic Classification
+### Semantic Classification
 
-- ### Content
-  ## Compositional Relationships (Components)
-  ```
-  SubClassOf(ai:ConceptArt
-    ObjectSomeValuesFrom(ai:hasPart ai:CharacterDesign))
-  SubClassOf(ai:ConceptArt
-    ObjectSomeValuesFrom(ai:hasPart ai:EnvironmentDesign))
-  SubClassOf(ai:ConceptArt
-    ObjectSomeValuesFrom(ai:hasPart ai:PropDesign))
-  SubClassOf(ai:ConceptArt
-    ObjectSomeValuesFrom(ai:hasPart ai:SilhouetteDesign))
-  SubClassOf(ai:ConceptArt
-    ObjectSomeValuesFrom(ai:hasPart ai:ColourPalette))
-  SubClassOf(ai:ConceptArt
-    ObjectSomeValuesFrom(ai:hasPart ai:Moodboard))
-  SubClassOf(ai:ConceptArt
-    ObjectSomeValuesFrom(ai:hasPart ai:Storyboard))
-  ```
-  ## Dependency Relationships
-  ```
-  SubClassOf(ai:ConceptArt
-    ObjectSomeValuesFrom(ai:requires ai:PreProduction))
-  SubClassOf(ai:ConceptArt
-    ObjectSomeValuesFrom(ai:requires ai:ArtDirection))
-  SubClassOf(ai:ConceptArt
-    ObjectSomeValuesFrom(ai:requires ai:VisualNarrative))
-  SubClassOf(ai:ConceptArt
-    ObjectSomeValuesFrom(ai:dependsOn ai:IntellectualProperty))
-  ```
-  ## Capability Relationships
-  ```
-  SubClassOf(ai:ConceptArt
-    ObjectSomeValuesFrom(ai:enables ai:3DModeling))
-  SubClassOf(ai:ConceptArt
-    ObjectSomeValuesFrom(ai:enables ai:Animation))
-  SubClassOf(ai:ConceptArt
-    ObjectSomeValuesFrom(ai:enables ai:AssetPipeline))
-  SubClassOf(ai:ConceptArt
-    ObjectSomeValuesFrom(ai:enables ai:FilmProduction))
-  SubClassOf(ai:ConceptArt
-    ObjectSomeValuesFrom(ai:enables ai:GameAssetGeneration))
-  SubClassOf(ai:ConceptArt
-    ObjectSomeValuesFrom(ai:enables ai:FilmVFX))
-  ```
-  ## Implementation Relationships
-  ```
-  SubClassOf(ai:ConceptArt
-    ObjectSomeValuesFrom(ai:implements ai:GenerativeAI))
-  SubClassOf(ai:ConceptArt
-    ObjectSomeValuesFrom(ai:implements ai:DiffusionModel))
-  SubClassOf(ai:ConceptArt
-    ObjectSomeValuesFrom(ai:implements ai:TextToImageGeneration))
-  SubClassOf(ai:ConceptArt
-    ObjectSomeValuesFrom(ai:implements ai:StyleTransfer))
-  SubClassOf(ai:ConceptArt
-    ObjectSomeValuesFrom(ai:implements ai:FineTuning))
-  SubClassOf(ai:ConceptArt
-    ObjectSomeValuesFrom(ai:implements ai:PromptEngineering))
-  ```
-  ## Reduction Relationships
-  ```
-  SubClassOf(ai:ConceptArt
-    ObjectSomeValuesFrom(ai:reducesTo ai:VisualDevelopment))
-  SubClassOf(ai:ConceptArt
-    ObjectSomeValuesFrom(ai:reducesTo ai:AIApplication))
-  ```
-  ## Additional Axioms (Supports / Uses / ContrastsWith / RelatedTo / DependsOn)
-  ```
-  SubClassOf(ai:ConceptArt
-    ObjectSomeValuesFrom(ai:supports ai:IntellectualProperty))
-  SubClassOf(ai:ConceptArt
-    ObjectSomeValuesFrom(ai:supports ai:ContentProductionWorkflow))
-  SubClassOf(ai:ConceptArt
-    ObjectSomeValuesFrom(ai:supports ai:CreativeAI))
-  SubClassOf(ai:ConceptArt
-    ObjectSomeValuesFrom(ai:supports ai:VirtualProductionWorkflow))
-  SubClassOf(ai:ConceptArt
-    ObjectSomeValuesFrom(ai:supports ai:AnimationSoftware))
-  SubClassOf(ai:ConceptArt
-    ObjectSomeValuesFrom(ai:uses ai:MidjourneyTextToImageService))
-  SubClassOf(ai:ConceptArt
-    ObjectSomeValuesFrom(ai:uses ai:StableDiffusion))
-  SubClassOf(ai:ConceptArt
-    ObjectSomeValuesFrom(ai:uses ai:ControlNet))
-  SubClassOf(ai:ConceptArt
-    ObjectSomeValuesFrom(ai:uses ai:LoRA))
-  SubClassOf(ai:ConceptArt
-    ObjectSomeValuesFrom(ai:uses ai:PromptEngineering))
-  SubClassOf(ai:ConceptArt
-    ObjectSomeValuesFrom(ai:uses ai:AdobeFirefly))
-  SubClassOf(ai:ConceptArt
-    ObjectSomeValuesFrom(ai:uses ai:ProprietaryImageGeneration))
-  SubClassOf(ai:ConceptArt
-    ObjectSomeValuesFrom(ai:contrastsWith ai:FilmVFX))
-  SubClassOf(ai:ConceptArt
-    ObjectSomeValuesFrom(ai:contrastsWith ai:3DContentGeneration))
-  SubClassOf(ai:ConceptArt
-    ObjectSomeValuesFrom(ai:relatedTo ai:SyntheticMedia))
-  SubClassOf(ai:ConceptArt
-    ObjectSomeValuesFrom(ai:relatedTo ai:ProceduralContentGeneration))
-  SubClassOf(ai:ConceptArt
-    ObjectSomeValuesFrom(ai:relatedTo ai:AIArt))
-  SubClassOf(ai:ConceptArt
-    ObjectSomeValuesFrom(ai:relatedTo ai:Copyright))
-  SubClassOf(ai:ConceptArt
-    ObjectSomeValuesFrom(ai:relatedTo ai:VirtualProductionWorkflow))
-  SubClassOf(ai:ConceptArt
-    ObjectSomeValuesFrom(ai:relatedTo ai:GameEngine))
-  SubClassOf(ai:ConceptArt
-    ObjectSomeValuesFrom(ai:relatedTo ai:CreativeSoftware))
-  SubClassOf(ai:ConceptArt
-    ObjectSomeValuesFrom(ai:relatedTo ai:Storytelling))
-  SubClassOf(ai:ConceptArt
-    ObjectSomeValuesFrom(ai:dependsOn ai:Copyright))
-  SubClassOf(ai:ConceptArt
-    ObjectSomeValuesFrom(ai:dependsOn ai:CreativeCommons))
-  ```
+### Content
 
-  ## About
+## Compositional Relationships (Components)
+```
+SubClassOf(ai:ConceptArt
+  ObjectSomeValuesFrom(ai:hasPart ai:CharacterDesign))
+SubClassOf(ai:ConceptArt
+  ObjectSomeValuesFrom(ai:hasPart ai:EnvironmentDesign))
+SubClassOf(ai:ConceptArt
+  ObjectSomeValuesFrom(ai:hasPart ai:PropDesign))
+SubClassOf(ai:ConceptArt
+  ObjectSomeValuesFrom(ai:hasPart ai:SilhouetteDesign))
+SubClassOf(ai:ConceptArt
+  ObjectSomeValuesFrom(ai:hasPart ai:ColourPalette))
+SubClassOf(ai:ConceptArt
+  ObjectSomeValuesFrom(ai:hasPart ai:Moodboard))
+SubClassOf(ai:ConceptArt
+  ObjectSomeValuesFrom(ai:hasPart ai:Storyboard))
+```
+## Dependency Relationships
+```
+SubClassOf(ai:ConceptArt
+  ObjectSomeValuesFrom(ai:requires ai:PreProduction))
+SubClassOf(ai:ConceptArt
+  ObjectSomeValuesFrom(ai:requires ai:ArtDirection))
+SubClassOf(ai:ConceptArt
+  ObjectSomeValuesFrom(ai:requires ai:VisualNarrative))
+SubClassOf(ai:ConceptArt
+  ObjectSomeValuesFrom(ai:dependsOn ai:IntellectualProperty))
+```
+## Capability Relationships
+```
+SubClassOf(ai:ConceptArt
+  ObjectSomeValuesFrom(ai:enables ai:3DModeling))
+SubClassOf(ai:ConceptArt
+  ObjectSomeValuesFrom(ai:enables ai:Animation))
+SubClassOf(ai:ConceptArt
+  ObjectSomeValuesFrom(ai:enables ai:AssetPipeline))
+SubClassOf(ai:ConceptArt
+  ObjectSomeValuesFrom(ai:enables ai:FilmProduction))
+SubClassOf(ai:ConceptArt
+  ObjectSomeValuesFrom(ai:enables ai:GameAssetGeneration))
+SubClassOf(ai:ConceptArt
+  ObjectSomeValuesFrom(ai:enables ai:FilmVFX))
+```
+## Implementation Relationships
+```
+SubClassOf(ai:ConceptArt
+  ObjectSomeValuesFrom(ai:implements ai:GenerativeAI))
+SubClassOf(ai:ConceptArt
+  ObjectSomeValuesFrom(ai:implements ai:DiffusionModel))
+SubClassOf(ai:ConceptArt
+  ObjectSomeValuesFrom(ai:implements ai:TextToImageGeneration))
+SubClassOf(ai:ConceptArt
+  ObjectSomeValuesFrom(ai:implements ai:StyleTransfer))
+SubClassOf(ai:ConceptArt
+  ObjectSomeValuesFrom(ai:implements ai:FineTuning))
+SubClassOf(ai:ConceptArt
+  ObjectSomeValuesFrom(ai:implements ai:PromptEngineering))
+```
+## Reduction Relationships
+```
+SubClassOf(ai:ConceptArt
+  ObjectSomeValuesFrom(ai:reducesTo ai:VisualDevelopment))
+SubClassOf(ai:ConceptArt
+  ObjectSomeValuesFrom(ai:reducesTo ai:AIApplication))
+```
+## Additional Axioms (Supports / Uses / ContrastsWith / RelatedTo / DependsOn)
+```
+SubClassOf(ai:ConceptArt
+  ObjectSomeValuesFrom(ai:supports ai:IntellectualProperty))
+SubClassOf(ai:ConceptArt
+  ObjectSomeValuesFrom(ai:supports ai:ContentProductionWorkflow))
+SubClassOf(ai:ConceptArt
+  ObjectSomeValuesFrom(ai:supports ai:CreativeAI))
+SubClassOf(ai:ConceptArt
+  ObjectSomeValuesFrom(ai:supports ai:VirtualProductionWorkflow))
+SubClassOf(ai:ConceptArt
+  ObjectSomeValuesFrom(ai:supports ai:AnimationSoftware))
+SubClassOf(ai:ConceptArt
+  ObjectSomeValuesFrom(ai:uses ai:MidjourneyTextToImageService))
+SubClassOf(ai:ConceptArt
+  ObjectSomeValuesFrom(ai:uses ai:StableDiffusion))
+SubClassOf(ai:ConceptArt
+  ObjectSomeValuesFrom(ai:uses ai:ControlNet))
+SubClassOf(ai:ConceptArt
+  ObjectSomeValuesFrom(ai:uses ai:LoRA))
+SubClassOf(ai:ConceptArt
+  ObjectSomeValuesFrom(ai:uses ai:PromptEngineering))
+SubClassOf(ai:ConceptArt
+  ObjectSomeValuesFrom(ai:uses ai:AdobeFirefly))
+SubClassOf(ai:ConceptArt
+  ObjectSomeValuesFrom(ai:uses ai:ProprietaryImageGeneration))
+SubClassOf(ai:ConceptArt
+  ObjectSomeValuesFrom(ai:contrastsWith ai:FilmVFX))
+SubClassOf(ai:ConceptArt
+  ObjectSomeValuesFrom(ai:contrastsWith ai:3DContentGeneration))
+SubClassOf(ai:ConceptArt
+  ObjectSomeValuesFrom(ai:relatedTo ai:SyntheticMedia))
+SubClassOf(ai:ConceptArt
+  ObjectSomeValuesFrom(ai:relatedTo ai:ProceduralContentGeneration))
+SubClassOf(ai:ConceptArt
+  ObjectSomeValuesFrom(ai:relatedTo ai:AIArt))
+SubClassOf(ai:ConceptArt
+  ObjectSomeValuesFrom(ai:relatedTo ai:Copyright))
+SubClassOf(ai:ConceptArt
+  ObjectSomeValuesFrom(ai:relatedTo ai:VirtualProductionWorkflow))
+SubClassOf(ai:ConceptArt
+  ObjectSomeValuesFrom(ai:relatedTo ai:GameEngine))
+SubClassOf(ai:ConceptArt
+  ObjectSomeValuesFrom(ai:relatedTo ai:CreativeSoftware))
+SubClassOf(ai:ConceptArt
+  ObjectSomeValuesFrom(ai:relatedTo ai:Storytelling))
+SubClassOf(ai:ConceptArt
+  ObjectSomeValuesFrom(ai:dependsOn ai:Copyright))
+SubClassOf(ai:ConceptArt
+  ObjectSomeValuesFrom(ai:dependsOn ai:CreativeCommons))
+```
 
-  Concept art occupies the earliest, most ambiguous, and arguably most consequential phase of any large-scale creative production. It is the stage at which an abstract brief — "a gothic cyber-city in a flooded future world" or "a warrior whose armour embodies mourning" — is translated into visually specific and communicable form, creating the shared reference language that aligns the diverse specialists who will subsequently realise the vision in [[3D Modelling]], [[Animation]], [[Film VFX]], and interactive real-time systems. Without concept art, downstream production teams operate on divergent mental models, producing costly design conflicts that require expensive revision. With it, a single approved [[Character Design]] turnaround sheet provides a modeller, a rigger, a texture artist, and a lighting director with unambiguous visual intent that constrains interpretation without eliminating the craft contributions each specialist brings to realisation. The financial stakes are significant: in AAA game development, each revision cycle after production commitment (when assets are already partially built) can cost tens of thousands of pounds per character in modelling, rigging, and texture rework — making the upstream investment in thorough concept art a high-leverage economic decision, not merely an aesthetic one.
+## About
 
-  The discipline draws on the full history of commercial illustration, industrial design, architecture, and fine art, and is genuinely interdisciplinary in its method. Concept artists must understand perspective, anatomy, material properties, light behaviour, colour theory, and narrative communication — the full toolkit of representational visual art — whilst simultaneously being literate in the technical constraints of their target medium: polygon budgets, texture memory, bone hierarchies for [[Animation]] rigs, shader capabilities, real-time rendering trade-offs, and the expectations of game engines or film compositing pipelines. Key formative practitioners who established the discipline's professional identity include Ralph McQuarrie, whose production paintings defined the visual language of Star Wars (1977) — establishing concept art as a distinct pre-production role separate from storyboarding; Syd Mead, whose industrial design training shaped the aesthetic of Blade Runner (1982) and TRON (1982) with meticulously detailed mechanical designs that could be directly translated to physical props and miniature construction; and H. R. Giger, whose biomechanical paintings became the direct production reference for Alien (1979), demonstrating that concept art could be the primary creative contribution of an external artist to a major film production. In game development, the concept art tradition developed through Blizzard Entertainment (World of Warcraft's high-fantasy style, Diablo's dark gothic palette, StarCraft's science-fantasy aesthetics), Square Enix (Final Fantasy series' distinctive character design language), and Rare (Banjo-Kazooie, Conker's Bad Fur Day), each developing internally distinctive visual vocabularies that became franchised [[Intellectual Property]] anchors sustaining multi-decade sequel programmes.
+Concept art occupies the earliest, most ambiguous, and arguably most consequential phase of any large-scale creative production. It is the stage at which an abstract brief — "a gothic cyber-city in a flooded future world" or "a warrior whose armour embodies mourning" — is translated into visually specific and communicable form, creating the shared reference language that aligns the diverse specialists who will subsequently realise the vision in [[3D Modelling]], [[Animation]], [[Film VFX]], and interactive real-time systems. Without concept art, downstream production teams operate on divergent mental models, producing costly design conflicts that require expensive revision. With it, a single approved [[Character Design]] turnaround sheet provides a modeller, a rigger, a texture artist, and a lighting director with unambiguous visual intent that constrains interpretation without eliminating the craft contributions each specialist brings to realisation. The financial stakes are significant: in AAA game development, each revision cycle after production commitment (when assets are already partially built) can cost tens of thousands of pounds per character in modelling, rigging, and texture rework — making the upstream investment in thorough concept art a high-leverage economic decision, not merely an aesthetic one.
 
-  The structural position of concept art within a [[Content Production Workflow]] is as a sequence of design gates: each phase of [[Pre-Production]] (exploratory ideation, directional refinement, director approval, production-readiness sign-off) is mediated by concept art deliverables, and production cannot responsibly proceed past any gate without approved designs. This gate function means concept art directly controls production risk and expenditure commitment. A concept artist who can rapidly explore twenty [[Silhouette Design]] directions in a morning — whether through traditional marker sketching, digital painting, or [[Generative AI]] thumbnail generation — compresses a decision cycle that might otherwise take days, enabling faster creative director alignment and earlier budget commitment. The risk-reduction function is why even studios that have ethical or contractual reservations about AI-generated imagery often incorporate it at the earliest thumbnail stage, where no final deliverable is produced and the creative output is purely exploratory. The subsequent refinement and approved-final-art stages — where the [[Intellectual Property]] that will be trademarked, licensed, and merchandised is actually produced — remain substantially the work of skilled human concept artists, regardless of how much AI-assisted exploration preceded them.
+The discipline draws on the full history of commercial illustration, industrial design, architecture, and fine art, and is genuinely interdisciplinary in its method. Concept artists must understand perspective, anatomy, material properties, light behaviour, colour theory, and narrative communication — the full toolkit of representational visual art — whilst simultaneously being literate in the technical constraints of their target medium: polygon budgets, texture memory, bone hierarchies for [[Animation]] rigs, shader capabilities, real-time rendering trade-offs, and the expectations of game engines or film compositing pipelines. Key formative practitioners who established the discipline's professional identity include Ralph McQuarrie, whose production paintings defined the visual language of Star Wars (1977) — establishing concept art as a distinct pre-production role separate from storyboarding; Syd Mead, whose industrial design training shaped the aesthetic of Blade Runner (1982) and TRON (1982) with meticulously detailed mechanical designs that could be directly translated to physical props and miniature construction; and H. R. Giger, whose biomechanical paintings became the direct production reference for Alien (1979), demonstrating that concept art could be the primary creative contribution of an external artist to a major film production. In game development, the concept art tradition developed through Blizzard Entertainment (World of Warcraft's high-fantasy style, Diablo's dark gothic palette, StarCraft's science-fantasy aesthetics), Square Enix (Final Fantasy series' distinctive character design language), and Rare (Banjo-Kazooie, Conker's Bad Fur Day), each developing internally distinctive visual vocabularies that became franchised [[Intellectual Property]] anchors sustaining multi-decade sequel programmes.
 
-  The discipline has a complex relationship with [[Generative AI]] precisely because it is simultaneously a design practice (exploring and selecting among possibilities) and an illustration practice (producing polished, specific visual statements). [[Diffusion Model]]s are genuinely useful for the former and significantly less useful for the latter. A [[Midjourney Text-to-Image Service]] prompt can generate dozens of interesting [[Moodboard]] images that expose unexpected aesthetic directions — a cyberpunk city bathed in bioluminescent green that no human artist on the team had explicitly considered — in minutes. But translating that mood reference into a fully consistent, technically specified [[Environment Design]] that a modelling team can build from requires the inferential, iterative, annotation-rich work of an experienced concept artist working in close dialogue with [[Art Direction]]. This division of labour — AI for divergent exploration, human for convergent specification — is the emerging norm across studios navigating both productivity pressure and [[Intellectual Property]] risk.
+The structural position of concept art within a [[Content Production Workflow]] is as a sequence of design gates: each phase of [[Pre-Production]] (exploratory ideation, directional refinement, director approval, production-readiness sign-off) is mediated by concept art deliverables, and production cannot responsibly proceed past any gate without approved designs. This gate function means concept art directly controls production risk and expenditure commitment. A concept artist who can rapidly explore twenty [[Silhouette Design]] directions in a morning — whether through traditional marker sketching, digital painting, or [[Generative AI]] thumbnail generation — compresses a decision cycle that might otherwise take days, enabling faster creative director alignment and earlier budget commitment. The risk-reduction function is why even studios that have ethical or contractual reservations about AI-generated imagery often incorporate it at the earliest thumbnail stage, where no final deliverable is produced and the creative output is purely exploratory. The subsequent refinement and approved-final-art stages — where the [[Intellectual Property]] that will be trademarked, licensed, and merchandised is actually produced — remain substantially the work of skilled human concept artists, regardless of how much AI-assisted exploration preceded them.
 
-  ## Components / Architecture
+The discipline has a complex relationship with [[Generative AI]] precisely because it is simultaneously a design practice (exploring and selecting among possibilities) and an illustration practice (producing polished, specific visual statements). [[Diffusion Model]]s are genuinely useful for the former and significantly less useful for the latter. A [[Midjourney Text-to-Image Service]] prompt can generate dozens of interesting [[Moodboard]] images that expose unexpected aesthetic directions — a cyberpunk city bathed in bioluminescent green that no human artist on the team had explicitly considered — in minutes. But translating that mood reference into a fully consistent, technically specified [[Environment Design]] that a modelling team can build from requires the inferential, iterative, annotation-rich work of an experienced concept artist working in close dialogue with [[Art Direction]]. This division of labour — AI for divergent exploration, human for convergent specification — is the emerging norm across studios navigating both productivity pressure and [[Intellectual Property]] risk.
 
-  A typical concept art production pipeline for a major game or film comprises the following interlocking deliverables:
+## Components / Architecture
 
-  - **Brief intake and reference gathering**: [[Art Direction]] documents specify target mood, cultural reference, genre conventions, and competitor differentiation. [[Moodboard]]s aggregate photographic, painterly, and historical references into shared visual vocabulary.
-  - **[[Silhouette Design]] exploration**: Early [[Character Design]] work focuses on readable two-tone silhouettes independent of surface detail, ensuring designs read at game distance or on-screen.
-  - **[[Character Design]] sheets**: Three-quarter views, orthographic turnarounds, expression sheets, and comparative scale charts with other cast members. These are the primary handoff documents to the [[3D Modelling]] team.
-  - **[[Environment Design]] panels**: Keyframe paintings establishing lighting, atmosphere, architectural grammar, and spatial hierarchy. Wide establishing shots and close-detail panels at multiple scales.
-  - **[[Prop Design]] schematics**: Mechanical props, weapons, vehicles, and interactive objects require both aesthetic and functional intent documentation, often including annotations for rigging and animation constraints.
-  - **[[Colour Palette]] documents**: Master palettes per character, per environment biome, and per narrative act, constraining texture artists and lighting departments to deliberate chromatic choices.
-  - **[[Storyboard]]s and animatics**: Sequential panels illustrating camera placement, character action, and editorial pacing in action sequences or cinematics, bridging concept art and [[Animation]] departments.
-  - **AI-augmented variant generation**: Using [[Midjourney Text-to-Image Service]], [[Stable Diffusion]] with [[ControlNet]] for composition constraints, and studio-specific [[LoRA]] adaptors [[Fine-Tuning]] base models on approved house styles, artists generate rapid variant explorations before committing to polished hand-painted sheets.
+A typical concept art production pipeline for a major game or film comprises the following interlocking deliverables:
+
+- **Brief intake and reference gathering**: [[Art Direction]] documents specify target mood, cultural reference, genre conventions, and competitor differentiation. [[Moodboard]]s aggregate photographic, painterly, and historical references into shared visual vocabulary.
+- **[[Silhouette Design]] exploration**: Early [[Character Design]] work focuses on readable two-tone silhouettes independent of surface detail, ensuring designs read at game distance or on-screen.
+- **[[Character Design]] sheets**: Three-quarter views, orthographic turnarounds, expression sheets, and comparative scale charts with other cast members. These are the primary handoff documents to the [[3D Modelling]] team.
+- **[[Environment Design]] panels**: Keyframe paintings establishing lighting, atmosphere, architectural grammar, and spatial hierarchy. Wide establishing shots and close-detail panels at multiple scales.
+- **[[Prop Design]] schematics**: Mechanical props, weapons, vehicles, and interactive objects require both aesthetic and functional intent documentation, often including annotations for rigging and animation constraints.
+- **[[Colour Palette]] documents**: Master palettes per character, per environment biome, and per narrative act, constraining texture artists and lighting departments to deliberate chromatic choices.
+- **[[Storyboard]]s and animatics**: Sequential panels illustrating camera placement, character action, and editorial pacing in action sequences or cinematics, bridging concept art and [[Animation]] departments.
+- **AI-augmented variant generation**: Using [[Midjourney Text-to-Image Service]], [[Stable Diffusion]] with [[ControlNet]] for composition constraints, and studio-specific [[LoRA]] adaptors [[Fine-Tuning]] base models on approved house styles, artists generate rapid variant explorations before committing to polished hand-painted sheets.
 
   ## Use Cases / Major Families
 
-  - **AAA Game [[Pre-Production]]** — studios such as Ubisoft, CD Projekt Red, Naughty Dog, and Rockstar employ concept art departments of 15–50+ artists who develop hundreds of design sheets across multi-year production cycles before a single in-engine asset is built. Concept art defines the style guide constraining all downstream [[Game Asset Generation]].
-  - **[[Film Production]] and [[Film VFX]]** — major VFX houses (Industrial Light and Magic, Weta FX, DNEG, Double Negative) employ concept artists and visual development artists for both traditional pre-production and for in-production previz and techvis that guides [[Virtual Production Workflow]] decisions on LED volume stages.
-  - **Animation pre-production** — feature animation (Pixar, DreamWorks, Sony Pictures Animation, Aardman) and series animation (Netflix, BBC, Channel 4 Animation) use extensive concept art phases to define character rigs, environment assets, and style bibles governing the entire production.
-  - **Extended reality and game engines** — as real-time [[Game Engine]]s (Unreal Engine 5, Unity) take over from offline rendering in both games and film, concept art must anticipate real-time technical constraints (polygon counts, shader complexity, LOD implications) alongside pure aesthetic goals.
-  - **[[Generative AI]] ideation workflows** — across all above sectors, artists in 2024–2026 employ [[Midjourney Text-to-Image Service]] for ultra-fast visual exploration, [[Stable Diffusion]] with [[ControlNet]] for structurally constrained variants, and [[Adobe Firefly]] for legally cleared (commercially safe training data) generation within Adobe Creative Cloud workflows. Hybrid workflows typically use AI for thumbnail and mood exploration, then transition to traditional digital painting for approved finals.
-  - **Indie and small-studio production** — [[Generative AI]] has disproportionately benefited small teams, enabling a 2–5 person indie studio to explore visual directions previously accessible only to large art departments.
+- **AAA Game [[Pre-Production]]** — studios such as Ubisoft, CD Projekt Red, Naughty Dog, and Rockstar employ concept art departments of 15–50+ artists who develop hundreds of design sheets across multi-year production cycles before a single in-engine asset is built. Concept art defines the style guide constraining all downstream [[Game Asset Generation]].
+- **[[Film Production]] and [[Film VFX]]** — major VFX houses (Industrial Light and Magic, Weta FX, DNEG, Double Negative) employ concept artists and visual development artists for both traditional pre-production and for in-production previz and techvis that guides [[Virtual Production Workflow]] decisions on LED volume stages.
+- **Animation pre-production** — feature animation (Pixar, DreamWorks, Sony Pictures Animation, Aardman) and series animation (Netflix, BBC, Channel 4 Animation) use extensive concept art phases to define character rigs, environment assets, and style bibles governing the entire production.
+- **Extended reality and game engines** — as real-time [[Game Engine]]s (Unreal Engine 5, Unity) take over from offline rendering in both games and film, concept art must anticipate real-time technical constraints (polygon counts, shader complexity, LOD implications) alongside pure aesthetic goals.
+- **[[Generative AI]] ideation workflows** — across all above sectors, artists in 2024–2026 employ [[Midjourney Text-to-Image Service]] for ultra-fast visual exploration, [[Stable Diffusion]] with [[ControlNet]] for structurally constrained variants, and [[Adobe Firefly]] for legally cleared (commercially safe training data) generation within Adobe Creative Cloud workflows. Hybrid workflows typically use AI for thumbnail and mood exploration, then transition to traditional digital painting for approved finals.
+- **Indie and small-studio production** — [[Generative AI]] has disproportionately benefited small teams, enabling a 2–5 person indie studio to explore visual directions previously accessible only to large art departments.
 
   ## Academic Context
 
@@ -261,19 +261,19 @@ Concept art is a discipline of visual development practice in which illustrators
 
   ## Key Terminology Glossary
 
-  - **Art bible / style guide** — the master reference document produced at the conclusion of [[Pre-Production]] that codifies approved designs, [[Colour Palette]] constraints, proportion conventions, lighting language, and surface material standards that all downstream artists must adhere to.
-  - **[[Art Direction]]** — the creative leadership role responsible for establishing and maintaining visual coherence across a production, working directly with concept artists to develop and approve design directions before they become production commitments.
-  - **[[Character Design]]** — the branch of concept art concerned with defining the physical appearance, costume, expression range, and posture vocabulary of characters appearing in a production, typically delivered as multi-view orthographic turnarounds and expression sheets.
-  - **[[ControlNet]]** — a neural network architecture (Zhang and Agrawala, 2023) that augments [[Stable Diffusion]] with additional conditioning inputs — edge maps, depth maps, pose skeletons, segmentation masks — enabling structural control over AI-generated images, which is critical for concept art applications where compositional intent must be preserved.
-  - **[[Environment Design]]** — the branch of concept art concerned with establishing the architectural language, spatial hierarchy, atmospheric properties, and material vocabulary of locations and settings in a production.
-  - **[[Fine-Tuning]]** — the supervised adaptation of a pretrained [[Diffusion Model]] to a specific visual style or subject domain using a small curated dataset, typically employing [[LoRA]] or DreamBooth techniques; used in concept art workflows to adapt base models to a franchise's established aesthetic.
-  - **[[LoRA]] (Low-Rank Adaptation)** — a parameter-efficient fine-tuning technique (Hu et al., 2021) that trains a small set of low-rank weight delta matrices to adapt a large base model to a specific style domain; widely used by concept artists to create studio-specific generation models without the computational cost of full fine-tuning.
-  - **[[Moodboard]]** — a curated collage of photographic, painted, and archival visual references assembled to communicate a target mood, atmosphere, colour temperature, lighting quality, and cultural register before primary concept art production begins.
-  - **[[Pre-Production]]** — the phase of a creative project preceding principal production in which the creative vision is defined, visual design is established, technical pipeline is architected, and production plans are locked; concept art is the primary visual output of this phase.
-  - **[[Prompt Engineering]]** — the practice of crafting and iterating natural-language prompts to guide [[Text-to-Image Generation]] models toward desired aesthetic outputs; an emerging skill in concept art workflows requiring understanding of both creative intent and model behaviour.
-  - **[[Silhouette Design]]** — the design discipline of evaluating character and prop designs against their two-colour (black silhouette on white ground) read, ensuring designs are distinguishable and communicative at viewing distances and resolutions where surface detail is invisible.
-  - **Style transfer** — the application of the surface stylistic properties (brushwork, palette, texture character) of a reference artwork to a new subject composition, implemented computationally via [[Generative Adversarial Network]] or [[Diffusion Model]]-based methods; applied in concept art to explore how a known style would render a new subject.
-  - **Visual development** — the broader discipline of which concept art is the primary practice: the totality of visual problem-solving and design communication activities in [[Pre-Production]], encompassing character, environment, prop, colour, lighting, and narrative design.
+- **Art bible / style guide** — the master reference document produced at the conclusion of [[Pre-Production]] that codifies approved designs, [[Colour Palette]] constraints, proportion conventions, lighting language, and surface material standards that all downstream artists must adhere to.
+- **[[Art Direction]]** — the creative leadership role responsible for establishing and maintaining visual coherence across a production, working directly with concept artists to develop and approve design directions before they become production commitments.
+- **[[Character Design]]** — the branch of concept art concerned with defining the physical appearance, costume, expression range, and posture vocabulary of characters appearing in a production, typically delivered as multi-view orthographic turnarounds and expression sheets.
+- **[[ControlNet]]** — a neural network architecture (Zhang and Agrawala, 2023) that augments [[Stable Diffusion]] with additional conditioning inputs — edge maps, depth maps, pose skeletons, segmentation masks — enabling structural control over AI-generated images, which is critical for concept art applications where compositional intent must be preserved.
+- **[[Environment Design]]** — the branch of concept art concerned with establishing the architectural language, spatial hierarchy, atmospheric properties, and material vocabulary of locations and settings in a production.
+- **[[Fine-Tuning]]** — the supervised adaptation of a pretrained [[Diffusion Model]] to a specific visual style or subject domain using a small curated dataset, typically employing [[LoRA]] or DreamBooth techniques; used in concept art workflows to adapt base models to a franchise's established aesthetic.
+- **[[LoRA]] (Low-Rank Adaptation)** — a parameter-efficient fine-tuning technique (Hu et al., 2021) that trains a small set of low-rank weight delta matrices to adapt a large base model to a specific style domain; widely used by concept artists to create studio-specific generation models without the computational cost of full fine-tuning.
+- **[[Moodboard]]** — a curated collage of photographic, painted, and archival visual references assembled to communicate a target mood, atmosphere, colour temperature, lighting quality, and cultural register before primary concept art production begins.
+- **[[Pre-Production]]** — the phase of a creative project preceding principal production in which the creative vision is defined, visual design is established, technical pipeline is architected, and production plans are locked; concept art is the primary visual output of this phase.
+- **[[Prompt Engineering]]** — the practice of crafting and iterating natural-language prompts to guide [[Text-to-Image Generation]] models toward desired aesthetic outputs; an emerging skill in concept art workflows requiring understanding of both creative intent and model behaviour.
+- **[[Silhouette Design]]** — the design discipline of evaluating character and prop designs against their two-colour (black silhouette on white ground) read, ensuring designs are distinguishable and communicative at viewing distances and resolutions where surface detail is invisible.
+- **Style transfer** — the application of the surface stylistic properties (brushwork, palette, texture character) of a reference artwork to a new subject composition, implemented computationally via [[Generative Adversarial Network]] or [[Diffusion Model]]-based methods; applied in concept art to explore how a known style would render a new subject.
+- **Visual development** — the broader discipline of which concept art is the primary practice: the totality of visual problem-solving and design communication activities in [[Pre-Production]], encompassing character, environment, prop, colour, lighting, and narrative design.
 
   ## Research & Literature
 
@@ -306,5 +306,5 @@ Concept art is a discipline of visual development practice in which illustrators
   27. Darvideo (2025). "AI Animation Tools 2025: The Future of AI-Generated Video and Creative Production." https://darvideo.tv/blog/ai-animation-tools-2025-the-future-of-ai-generated-video-and-creative-production/
   28. Concept Art Association (2023). "CAA Policy Position on Generative AI and Copyright in Visual Development." Concept Art Association. https://www.conceptartassociation.com/
 
-- ### Provenance
+### Provenance
 

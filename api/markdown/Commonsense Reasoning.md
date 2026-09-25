@@ -1,139 +1,142 @@
-
 Commonsense reasoning is the ability of an artificial system to make plausible inferences about everyday situations using broad background knowledge that humans take for granted. It covers naive physics, folk psychology, temporal causality, social norms, and typical cause-and-effect expectations that are rarely stated explicitly in text. It remains a long-standing challenge because such knowledge is vast, tacit, and context-dependent, requiring both large-scale knowledge resources and flexible defeasible inference mechanisms.
 
-- ### Semantic Classification
+### Semantic Classification
 
-- ### Content
-  ## Compositional Relationships (Components)
-      SubClassOf(ai:CommonsenseReasoning
-        ObjectSomeValuesFrom(ai:hasPart ai:NonMonotonicReasoning))
-      SubClassOf(ai:CommonsenseReasoning
-        ObjectSomeValuesFrom(ai:hasPart ai:DefaultLogic))
-      SubClassOf(ai:CommonsenseReasoning
-        ObjectSomeValuesFrom(ai:hasPart ai:FrameSemantics))
-      SubClassOf(ai:CommonsenseReasoning
-        ObjectSomeValuesFrom(ai:hasPart ai:NaivePhysicsKnowledge))
-      SubClassOf(ai:CommonsenseReasoning
-        ObjectSomeValuesFrom(ai:hasPart ai:FolkPsychologyKnowledge))
-      SubClassOf(ai:CommonsenseReasoning
-        ObjectSomeValuesFrom(ai:hasPart ai:SocialNormsKnowledge))
-      SubClassOf(ai:CommonsenseReasoning
-        ObjectSomeValuesFrom(ai:hasPart ai:TemporalCausalKnowledge))
-      SubClassOf(ai:CommonsenseReasoning
-        ObjectSomeValuesFrom(ai:hasPart ai:CausalReasoning))
-      SubClassOf(ai:CommonsenseReasoning
-        ObjectSomeValuesFrom(ai:hasPart ai:TheoryOfMind))
+### Content
 
-  ## Dependency Relationships
-      SubClassOf(ai:CommonsenseReasoning
-        ObjectSomeValuesFrom(ai:requires ai:KnowledgeBase))
-      SubClassOf(ai:CommonsenseReasoning
-        ObjectSomeValuesFrom(ai:requires ai:WorldModel))
-      SubClassOf(ai:CommonsenseReasoning
-        ObjectSomeValuesFrom(ai:requires ai:Inference))
-      SubClassOf(ai:CommonsenseReasoning
-        ObjectSomeValuesFrom(ai:requires ai:KnowledgeRepresentation))
-      SubClassOf(ai:CommonsenseReasoning
-        ObjectSomeValuesFrom(ai:dependsOn ai:SemanticNetwork))
-      SubClassOf(ai:CommonsenseReasoning
-        ObjectSomeValuesFrom(ai:dependsOn ai:Grounding))
-      SubClassOf(ai:CommonsenseReasoning
-        ObjectSomeValuesFrom(ai:dependsOn ai:FoundationModel))
-      SubClassOf(ai:CommonsenseReasoning
-        ObjectSomeValuesFrom(ai:dependsOn ai:DeepLearning))
+## Compositional Relationships (Components)
+    SubClassOf(ai:CommonsenseReasoning
+      ObjectSomeValuesFrom(ai:hasPart ai:NonMonotonicReasoning))
+    SubClassOf(ai:CommonsenseReasoning
+      ObjectSomeValuesFrom(ai:hasPart ai:DefaultLogic))
+    SubClassOf(ai:CommonsenseReasoning
+      ObjectSomeValuesFrom(ai:hasPart ai:FrameSemantics))
+    SubClassOf(ai:CommonsenseReasoning
+      ObjectSomeValuesFrom(ai:hasPart ai:NaivePhysicsKnowledge))
+    SubClassOf(ai:CommonsenseReasoning
+      ObjectSomeValuesFrom(ai:hasPart ai:FolkPsychologyKnowledge))
+    SubClassOf(ai:CommonsenseReasoning
+      ObjectSomeValuesFrom(ai:hasPart ai:SocialNormsKnowledge))
+    SubClassOf(ai:CommonsenseReasoning
+      ObjectSomeValuesFrom(ai:hasPart ai:TemporalCausalKnowledge))
+    SubClassOf(ai:CommonsenseReasoning
+      ObjectSomeValuesFrom(ai:hasPart ai:CausalReasoning))
+    SubClassOf(ai:CommonsenseReasoning
+      ObjectSomeValuesFrom(ai:hasPart ai:TheoryOfMind))
 
-  ## Capability Relationships
-      SubClassOf(ai:CommonsenseReasoning
-        ObjectSomeValuesFrom(ai:enables ai:NaturalLanguageUnderstanding))
-      SubClassOf(ai:CommonsenseReasoning
-        ObjectSomeValuesFrom(ai:enables ai:QuestionAnswering))
-      SubClassOf(ai:CommonsenseReasoning
-        ObjectSomeValuesFrom(ai:enables ai:Planning))
-      SubClassOf(ai:CommonsenseReasoning
-        ObjectSomeValuesFrom(ai:enables ai:ConversationalAI))
-      SubClassOf(ai:CommonsenseReasoning
-        ObjectSomeValuesFrom(ai:enables ai:EmbodiedAI))
-      SubClassOf(ai:CommonsenseReasoning
-        ObjectSomeValuesFrom(ai:enables ai:VisualQuestionAnswering))
-      SubClassOf(ai:CommonsenseReasoning
-        ObjectSomeValuesFrom(ai:enables ai:Robotics))
-      SubClassOf(ai:CommonsenseReasoning
-        ObjectSomeValuesFrom(ai:enables ai:AIAgents))
-      SubClassOf(ai:CommonsenseReasoning
-        ObjectSomeValuesFrom(ai:supports ai:AISafety))
-      SubClassOf(ai:CommonsenseReasoning
-        ObjectSomeValuesFrom(ai:supports ai:ExplainableAI))
-      SubClassOf(ai:CommonsenseReasoning
-        ObjectSomeValuesFrom(ai:supports ai:AIAlignment))
-      SubClassOf(ai:CommonsenseReasoning
-        ObjectSomeValuesFrom(ai:supports ai:NaturalLanguageProcessing))
+## Dependency Relationships
+    SubClassOf(ai:CommonsenseReasoning
+      ObjectSomeValuesFrom(ai:requires ai:KnowledgeBase))
+    SubClassOf(ai:CommonsenseReasoning
+      ObjectSomeValuesFrom(ai:requires ai:WorldModel))
+    SubClassOf(ai:CommonsenseReasoning
+      ObjectSomeValuesFrom(ai:requires ai:Inference))
+    SubClassOf(ai:CommonsenseReasoning
+      ObjectSomeValuesFrom(ai:requires ai:KnowledgeRepresentation))
+    SubClassOf(ai:CommonsenseReasoning
+      ObjectSomeValuesFrom(ai:dependsOn ai:SemanticNetwork))
+    SubClassOf(ai:CommonsenseReasoning
+      ObjectSomeValuesFrom(ai:dependsOn ai:Grounding))
+    SubClassOf(ai:CommonsenseReasoning
+      ObjectSomeValuesFrom(ai:dependsOn ai:FoundationModel))
+    SubClassOf(ai:CommonsenseReasoning
+      ObjectSomeValuesFrom(ai:dependsOn ai:DeepLearning))
 
-  ## Implementation Relationships
-      SubClassOf(ai:CommonsenseReasoning
-        ObjectSomeValuesFrom(ai:uses ai:LargeLanguageModel))
-      SubClassOf(ai:CommonsenseReasoning
-        ObjectSomeValuesFrom(ai:uses ai:KnowledgeGraph))
-      SubClassOf(ai:CommonsenseReasoning
-        ObjectSomeValuesFrom(ai:uses ai:NeuralSymbolicIntegration))
-      SubClassOf(ai:CommonsenseReasoning
-        ObjectSomeValuesFrom(ai:uses ai:ChainOfThoughtPrompting))
-      SubClassOf(ai:CommonsenseReasoning
-        ObjectSomeValuesFrom(ai:uses ai:RetrievalAugmentedGeneration))
-      SubClassOf(ai:CommonsenseReasoning
-        ObjectSomeValuesFrom(ai:uses ai:FineTuning))
-      SubClassOf(ai:CommonsenseReasoning
-        ObjectSomeValuesFrom(ai:uses ai:TransferLearning))
-      SubClassOf(ai:CommonsenseReasoning
-        ObjectSomeValuesFrom(ai:implements ai:Grounding))
-      SubClassOf(ai:CommonsenseReasoning
-        ObjectSomeValuesFrom(ai:implements ai:DefeasibleInference))
+## Capability Relationships
+    SubClassOf(ai:CommonsenseReasoning
+      ObjectSomeValuesFrom(ai:enables ai:NaturalLanguageUnderstanding))
+    SubClassOf(ai:CommonsenseReasoning
+      ObjectSomeValuesFrom(ai:enables ai:QuestionAnswering))
+    SubClassOf(ai:CommonsenseReasoning
+      ObjectSomeValuesFrom(ai:enables ai:Planning))
+    SubClassOf(ai:CommonsenseReasoning
+      ObjectSomeValuesFrom(ai:enables ai:ConversationalAI))
+    SubClassOf(ai:CommonsenseReasoning
+      ObjectSomeValuesFrom(ai:enables ai:EmbodiedAI))
+    SubClassOf(ai:CommonsenseReasoning
+      ObjectSomeValuesFrom(ai:enables ai:VisualQuestionAnswering))
+    SubClassOf(ai:CommonsenseReasoning
+      ObjectSomeValuesFrom(ai:enables ai:Robotics))
+    SubClassOf(ai:CommonsenseReasoning
+      ObjectSomeValuesFrom(ai:enables ai:AIAgents))
+    SubClassOf(ai:CommonsenseReasoning
+      ObjectSomeValuesFrom(ai:supports ai:AISafety))
+    SubClassOf(ai:CommonsenseReasoning
+      ObjectSomeValuesFrom(ai:supports ai:ExplainableAI))
+    SubClassOf(ai:CommonsenseReasoning
+      ObjectSomeValuesFrom(ai:supports ai:AIAlignment))
+    SubClassOf(ai:CommonsenseReasoning
+      ObjectSomeValuesFrom(ai:supports ai:NaturalLanguageProcessing))
 
-  ## Reduction Relationships
-      SubClassOf(ai:CommonsenseReasoning
-        ObjectSomeValuesFrom(ai:reducesTo ai:PlausibleInference))
-      SubClassOf(ai:CommonsenseReasoning
-        ObjectSomeValuesFrom(ai:reducesTo ai:DefaultRuleApplication))
-      SubClassOf(ai:CommonsenseReasoning
-        ObjectSomeValuesFrom(ai:reducesTo ai:ContextSensitiveInference))
-      SubClassOf(ai:CommonsenseReasoning
-        ObjectSomeValuesFrom(ai:reducesTo ai:AbductiveInference))
-      SubClassOf(ai:CommonsenseReasoning
-        ObjectSomeValuesFrom(ai:reducesTo ai:ScriptBasedInference))
+## Implementation Relationships
+    SubClassOf(ai:CommonsenseReasoning
+      ObjectSomeValuesFrom(ai:uses ai:LargeLanguageModel))
+    SubClassOf(ai:CommonsenseReasoning
+      ObjectSomeValuesFrom(ai:uses ai:KnowledgeGraph))
+    SubClassOf(ai:CommonsenseReasoning
+      ObjectSomeValuesFrom(ai:uses ai:NeuralSymbolicIntegration))
+    SubClassOf(ai:CommonsenseReasoning
+      ObjectSomeValuesFrom(ai:uses ai:ChainOfThoughtPrompting))
+    SubClassOf(ai:CommonsenseReasoning
+      ObjectSomeValuesFrom(ai:uses ai:RetrievalAugmentedGeneration))
+    SubClassOf(ai:CommonsenseReasoning
+      ObjectSomeValuesFrom(ai:uses ai:FineTuning))
+    SubClassOf(ai:CommonsenseReasoning
+      ObjectSomeValuesFrom(ai:uses ai:TransferLearning))
+    SubClassOf(ai:CommonsenseReasoning
+      ObjectSomeValuesFrom(ai:implements ai:Grounding))
+    SubClassOf(ai:CommonsenseReasoning
+      ObjectSomeValuesFrom(ai:implements ai:DefeasibleInference))
 
-  ## About
+## Reduction Relationships
+    SubClassOf(ai:CommonsenseReasoning
+      ObjectSomeValuesFrom(ai:reducesTo ai:PlausibleInference))
+    SubClassOf(ai:CommonsenseReasoning
+      ObjectSomeValuesFrom(ai:reducesTo ai:DefaultRuleApplication))
+    SubClassOf(ai:CommonsenseReasoning
+      ObjectSomeValuesFrom(ai:reducesTo ai:ContextSensitiveInference))
+    SubClassOf(ai:CommonsenseReasoning
+      ObjectSomeValuesFrom(ai:reducesTo ai:AbductiveInference))
+    SubClassOf(ai:CommonsenseReasoning
+      ObjectSomeValuesFrom(ai:reducesTo ai:ScriptBasedInference))
 
-  Commonsense reasoning sits at the intersection of [[Knowledge Representation]], [[Natural Language Processing]], [[Cognitive Architecture]] research, and [[Machine Learning]]. Its central challenge is not lack of processing power but rather the sheer tacitness of human background knowledge: the vast majority of what people know about the everyday world is never written down, making automatic acquisition from text corpora incomplete by design. A person who reads "Jane put the cake in the oven and went to answer the phone" knows without being told that the cake is still in the oven after Jane answers the phone, that the oven is hot, that an unattended oven is a fire risk, and that Jane will probably return to the kitchen. No text explicitly states these facts, yet a reader draws on naive physics, causal reasoning, temporal persistence (the "frame problem" in AI), and social expectations simultaneously to build a coherent situation model.
+## About
 
-  The difficulty is compounded by defeasibility: commonsense conclusions are not logically necessary but contextually appropriate defaults. A person who knows "birds fly" will infer that a bird in a tree can fly away, but revise this inference upon learning the bird is a penguin or has an injured wing. Encoding such default inference in a formal system requires [[Non-Monotonic Reasoning]] frameworks (Reiter's [[Default Logic]], McCarthy's circumscription, Pearl's system Z) that have proven brittle at scale and difficult to integrate with modern deep-learning pipelines.
+Commonsense reasoning sits at the intersection of [[Knowledge Representation]], [[Natural Language Processing]], [[Cognitive Architecture]] research, and [[Machine Learning]]. Its central challenge is not lack of processing power but rather the sheer tacitness of human background knowledge: the vast majority of what people know about the everyday world is never written down, making automatic acquisition from text corpora incomplete by design. A person who reads "Jane put the cake in the oven and went to answer the phone" knows without being told that the cake is still in the oven after Jane answers the phone, that the oven is hot, that an unattended oven is a fire risk, and that Jane will probably return to the kitchen. No text explicitly states these facts, yet a reader draws on naive physics, causal reasoning, temporal persistence (the "frame problem" in AI), and social expectations simultaneously to build a coherent situation model.
 
-  The 1984 Cyc project (Lenat et al.) attempted to manually encode millions of commonsense axioms in first-order logic; it produced a large but narrow knowledge base that was difficult to maintain and update. The 2004 ConceptNet knowledge graph (Singh et al., MIT Media Lab) took a more crowdsourced, semi-formal approach, accumulating over 1.6 million English-language commonsense assertions. The 2019 ATOMIC knowledge base (Sap et al., Allen Institute) contributed 880 K if-then social causal tuples (PersonX does Y → PersonX feels Z) capturing folk psychology dimensions absent from ConceptNet. The 2021 ATOMIC-2020 extension (Hwang et al.) unified both resources into a single graph with 23 relation types.
+The difficulty is compounded by defeasibility: commonsense conclusions are not logically necessary but contextually appropriate defaults. A person who knows "birds fly" will infer that a bird in a tree can fly away, but revise this inference upon learning the bird is a penguin or has an injured wing. Encoding such default inference in a formal system requires [[Non-Monotonic Reasoning]] frameworks (Reiter's [[Default Logic]], McCarthy's circumscription, Pearl's system Z) that have proven brittle at scale and difficult to integrate with modern deep-learning pipelines.
 
-  The rise of [[Large Language Model]]s from GPT-2 onwards revealed that transformer-scale pretraining absorbs considerable commonsense knowledge implicitly. By 2021, fine-tuned models achieved near-human performance on benchmarks such as CommonsenseQA (Talmor et al., 2019), WinoGrande (Sakaguchi et al., 2021), PIQA (Bisk et al., 2020), HellaSwag (Zellers et al., 2019), and Social IQa (Sap et al., 2019). However, subsequent adversarial evaluations (e.g., WinoGrande adversarial, HellaSwag-Hard) demonstrated that many of these gains reflected surface-level statistical pattern matching rather than genuine [[World Model]] reasoning. A 2025 study introduced BrainBench to expose specific categories of reasoning failure; a 2025 viral evaluation found that many frontier LLMs recommended walking to a car wash rather than driving, failing to reason about the purpose of the errand — a canonical commonsense failure rooted in inadequate [[Grounding]].
+The 1984 Cyc project (Lenat et al.) attempted to manually encode millions of commonsense axioms in first-order logic; it produced a large but narrow knowledge base that was difficult to maintain and update. The 2004 ConceptNet knowledge graph (Singh et al., MIT Media Lab) took a more crowdsourced, semi-formal approach, accumulating over 1.6 million English-language commonsense assertions. The 2019 ATOMIC knowledge base (Sap et al., Allen Institute) contributed 880 K if-then social causal tuples (PersonX does Y → PersonX feels Z) capturing folk psychology dimensions absent from ConceptNet. The 2021 ATOMIC-2020 extension (Hwang et al.) unified both resources into a single graph with 23 relation types.
 
-  ## Components and Mechanisms
+The rise of [[Large Language Model]]s from GPT-2 onwards revealed that transformer-scale pretraining absorbs considerable commonsense knowledge implicitly. By 2021, fine-tuned models achieved near-human performance on benchmarks such as CommonsenseQA (Talmor et al., 2019), WinoGrande (Sakaguchi et al., 2021), PIQA (Bisk et al., 2020), HellaSwag (Zellers et al., 2019), and Social IQa (Sap et al., 2019). However, subsequent adversarial evaluations (e.g., WinoGrande adversarial, HellaSwag-Hard) demonstrated that many of these gains reflected surface-level statistical pattern matching rather than genuine [[World Model]] reasoning. A 2025 study introduced BrainBench to expose specific categories of reasoning failure; a 2025 viral evaluation found that many frontier LLMs recommended walking to a car wash rather than driving, failing to reason about the purpose of the errand — a canonical commonsense failure rooted in inadequate [[Grounding]].
 
-  **Knowledge Dimensions**
-  - Naive physics: objects have mass, solidity, gravity acts on unsupported objects, liquids take the shape of their containers, rigid objects can break. This knowledge domain was the focus of early AI work by Hayes (1978) and the "Naive Physics Manifesto."
-  - Folk psychology (Theory of Mind): people have beliefs, desires, intentions, and emotions that cause their actions. Systems must attribute mental states to agents to predict and explain behaviour — a capacity evaluated by Social IQa and the ToMi benchmark.
-  - Temporal and causal regularity: events have preconditions and postconditions (scripts, Schank 1977); temporal ordering and persistence must be tracked (the frame problem, McCarthy and Hayes 1969).
-  - Social norms and pragmatics: cooperative conversational maxims (Grice 1975), politeness, culturally specific behavioural expectations.
-  - Encyclopaedic-taxonomic background: general world facts that support discourse — capital cities, basic biology, typical object properties — that straddle commonsense and encyclopaedic knowledge.
+## Components and Mechanisms
+
+**Knowledge Dimensions**
+
+- Naive physics: objects have mass, solidity, gravity acts on unsupported objects, liquids take the shape of their containers, rigid objects can break. This knowledge domain was the focus of early AI work by Hayes (1978) and the "Naive Physics Manifesto."
+- Folk psychology (Theory of Mind): people have beliefs, desires, intentions, and emotions that cause their actions. Systems must attribute mental states to agents to predict and explain behaviour — a capacity evaluated by Social IQa and the ToMi benchmark.
+- Temporal and causal regularity: events have preconditions and postconditions (scripts, Schank 1977); temporal ordering and persistence must be tracked (the frame problem, McCarthy and Hayes 1969).
+- Social norms and pragmatics: cooperative conversational maxims (Grice 1975), politeness, culturally specific behavioural expectations.
+- Encyclopaedic-taxonomic background: general world facts that support discourse — capital cities, basic biology, typical object properties — that straddle commonsense and encyclopaedic knowledge.
 
   **Inference Mechanisms**
-  - Default reasoning: draw the most typical conclusion unless defeated by evidence. Encoded in [[Default Logic]] (Reiter, 1980) and [[Non-Monotonic Reasoning]] frameworks.
-  - Abductive inference: given an observation, infer the most plausible explanation. Central to story understanding and diagnostic reasoning.
-  - Analogical reasoning: apply structural mappings from familiar situations to novel ones. Evaluated by novel physical analogy benchmarks.
-  - Script-based inference: sequences of prototypical event frames (scripts) allow prediction of likely next actions — "going to a restaurant" involves ordering, eating, paying.
-  - Neural inference: large pretrained models act as soft knowledge bases, retrieving commonsense-consistent continuations via next-token prediction.
+
+- Default reasoning: draw the most typical conclusion unless defeated by evidence. Encoded in [[Default Logic]] (Reiter, 1980) and [[Non-Monotonic Reasoning]] frameworks.
+- Abductive inference: given an observation, infer the most plausible explanation. Central to story understanding and diagnostic reasoning.
+- Analogical reasoning: apply structural mappings from familiar situations to novel ones. Evaluated by novel physical analogy benchmarks.
+- Script-based inference: sequences of prototypical event frames (scripts) allow prediction of likely next actions — "going to a restaurant" involves ordering, eating, paying.
+- Neural inference: large pretrained models act as soft knowledge bases, retrieving commonsense-consistent continuations via next-token prediction.
 
   **Evaluation Benchmarks (Selected)**
-  - HellaSwag (Zellers et al., 2019): physical activity completion, 10 K / 70 K examples; frontier LLMs score >95% but adversarial hard variants expose residual brittleness.
-  - WinoGrande (Sakaguchi et al., 2021): 44 K Winograd-style pronoun coreference problems requiring commonsense disambiguation.
-  - CommonsenseQA (Talmor et al., 2019): 12 K multiple-choice questions derived from ConceptNet, requiring retrieval over conceptual relations.
-  - PIQA (Bisk et al., 2020): physical intuition QA; 20 K problems about everyday physical actions and their outcomes.
-  - Social IQa (Sap et al., 2019): 38 K questions about social interactions, motivations, and emotional reactions.
-  - Logical-CommonsenseQA (2026): pairs atomic answers under AND/OR/NEITHER logical operators, testing compositional integration of commonsense with logical structure.
-  - BrainBench (2026): systematic taxonomy of commonsense failure modes in frontier LLMs; categorises spatial, temporal, causal, and social failure patterns.
+
+- HellaSwag (Zellers et al., 2019): physical activity completion, 10 K / 70 K examples; frontier LLMs score >95% but adversarial hard variants expose residual brittleness.
+- WinoGrande (Sakaguchi et al., 2021): 44 K Winograd-style pronoun coreference problems requiring commonsense disambiguation.
+- CommonsenseQA (Talmor et al., 2019): 12 K multiple-choice questions derived from ConceptNet, requiring retrieval over conceptual relations.
+- PIQA (Bisk et al., 2020): physical intuition QA; 20 K problems about everyday physical actions and their outcomes.
+- Social IQa (Sap et al., 2019): 38 K questions about social interactions, motivations, and emotional reactions.
+- Logical-CommonsenseQA (2026): pairs atomic answers under AND/OR/NEITHER logical operators, testing compositional integration of commonsense with logical structure.
+- BrainBench (2026): systematic taxonomy of commonsense failure modes in frontier LLMs; categorises spatial, temporal, causal, and social failure patterns.
 
   ## Use Cases
 
@@ -298,32 +301,32 @@ Commonsense reasoning is the ability of an artificial system to make plausible i
 
   There are no ISO or IEEE standards specifically governing commonsense reasoning systems. However, several community-driven resources and norms have quasi-standard status:
 
-  - **ConceptNet 5.5 API**: The Commonsense Computing Group at MIT provides a public REST API returning ConceptNet assertions for any concept; it is the most widely used external commonsense knowledge resource in NLP research.
-  - **ATOMIC-2020 release**: Hugging Face hosts ATOMIC-2020 as a downloadable dataset; the COMET model (trained to generate ATOMIC inferences) is available as a Hugging Face model hub checkpoint, establishing a de facto standard for generative commonsense augmentation.
-  - **HellaSwag, WinoGrande, CommonsenseQA on SuperGLUE**: These benchmarks are included in or adjacent to the SuperGLUE benchmark suite, the dominant NLU evaluation framework for English-language models.
-  - **BIG-Bench (2022)**: Google's Beyond the Imitation Game Benchmark includes multiple commonsense-reasoning tasks as part of its 204-task diverse evaluation suite, influencing how frontier model providers (Anthropic, Google, OpenAI) report commonsense performance.
-  - **EU AI Act (2024) and UK AI Safety Institute**: Both reference benchmark robustness as a requirement for high-risk AI system evaluation; commonsense benchmarks are cited as exemplars of domain-general capability assessment. The UK AI Safety Institute's evaluation framework (2024) includes commonsense reasoning stress-testing as part of its pre-deployment model assessment protocol.
-  - **NIST AI RMF (2023)**: The Risk Management Framework's MEASURE function references behavioural testing across diverse everyday situations — implicitly targeting commonsense robustness — as part of AI system evaluation.
+- **ConceptNet 5.5 API**: The Commonsense Computing Group at MIT provides a public REST API returning ConceptNet assertions for any concept; it is the most widely used external commonsense knowledge resource in NLP research.
+- **ATOMIC-2020 release**: Hugging Face hosts ATOMIC-2020 as a downloadable dataset; the COMET model (trained to generate ATOMIC inferences) is available as a Hugging Face model hub checkpoint, establishing a de facto standard for generative commonsense augmentation.
+- **HellaSwag, WinoGrande, CommonsenseQA on SuperGLUE**: These benchmarks are included in or adjacent to the SuperGLUE benchmark suite, the dominant NLU evaluation framework for English-language models.
+- **BIG-Bench (2022)**: Google's Beyond the Imitation Game Benchmark includes multiple commonsense-reasoning tasks as part of its 204-task diverse evaluation suite, influencing how frontier model providers (Anthropic, Google, OpenAI) report commonsense performance.
+- **EU AI Act (2024) and UK AI Safety Institute**: Both reference benchmark robustness as a requirement for high-risk AI system evaluation; commonsense benchmarks are cited as exemplars of domain-general capability assessment. The UK AI Safety Institute's evaluation framework (2024) includes commonsense reasoning stress-testing as part of its pre-deployment model assessment protocol.
+- **NIST AI RMF (2023)**: The Risk Management Framework's MEASURE function references behavioural testing across diverse everyday situations — implicitly targeting commonsense robustness — as part of AI system evaluation.
 
   ## Key Terminology
 
-  - **Defeasibility**: the property of commonsense conclusions that they hold by default but can be overridden by exceptional information.
-  - **Frame problem**: the difficulty of efficiently representing which facts in a [[World Model]] change (and which persist) when an action is performed.
-  - **Script**: a schematic knowledge structure (Schank 1977) encoding a prototypical sequence of events for a recurring situation type (e.g. "restaurant script").
-  - **Default Logic**: Reiter's (1980) formal framework for defeasible reasoning using defaults of the form "if A and not known ¬B, then conclude C."
-  - **ATOMIC**: the Atlas of Machine Commonsense for If-Then Reasoning (Sap et al., 2019); a large-scale commonsense knowledge graph focusing on social causal inference.
-  - **ConceptNet**: a crowdsourced semantic network encoding 1.6 M+ commonsense assertions across 34 relation types (Liu and Singh, 2004; Speer et al., 2017).
-  - **HellaSwag**: a physical-activity sentence-completion benchmark (Zellers et al., 2019) designed to defeat BERT-era models; frontier LLMs now exceed 95% accuracy.
-  - **WinoGrande**: a large-scale Winograd schema challenge (Sakaguchi et al., 2021) requiring commonsense disambiguation of pronouns in adversarially constructed sentences.
-  - **Circumscription**: McCarthy's (1980) second-order logical framework for abnormality minimisation; models the closed-world assumption underlying default reasoning.
-  - **Markov Logic Network (MLN)**: Richardson and Domingos (2006) probabilistic-logical framework encoding commonsense rules as weighted first-order clauses in a log-linear model.
-  - **Resolution limit**: in the context of commonsense benchmarks, refers to the phenomenon where improving on a benchmark does not necessarily improve real-world commonsense performance due to data leakage or shallow statistical patterns.
-  - **COMET**: Commonsense Transformers (Bosselut et al., 2019) — a generative [[Large Language Model]] trained to produce ATOMIC-style if-then commonsense inferences for arbitrary input events.
-  - **Open World Assumption (OWA)**: the epistemic stance (from [[Knowledge Representation]] and [[Description Logic]]) that absence of a fact from a knowledge base does not imply the fact is false; appropriate for commonsense reasoning where the knowledge base is necessarily incomplete.
-  - **Theory of Mind (ToM)**: the ability to attribute mental states — beliefs, desires, intentions, emotions — to other agents and to reason about their likely behaviour; folk psychology's core competence; evaluated by the ToMi benchmark and Social IQa.
-  - **Counterfactual Reasoning**: a form of commonsense reasoning about what would have happened if circumstances had been different ("If I had not left the tap on, the floor would not be wet"); evaluated by the COUNTERFACTUAL benchmark and implicitly probed by temporal causality tests in BrainBench.
-  - **Tacit Knowledge**: the portion of commonsense knowledge that is never explicitly stated in any text or formal document and can only be acquired through experience or interaction with the physical and social world; the primary source of difficulty in building comprehensive commonsense AI systems. The vast majority of what people know about everyday life — the resistance of objects to penetration, the social awkwardness of silence in conversation, the predictable behaviour of containers and liquids — belongs to this category. Tacit knowledge acquisition motivates [[Embodied AI]], [[Multi-Modal Learning]], and grounded simulation approaches, and explains why purely text-trained [[Large Language Model]]s retain systematic commonsense gaps despite training on internet-scale corpora where only articulable knowledge is represented.
-  - **Naive Physics**: the domain of commonsense knowledge governing the behaviour of everyday physical objects and substances — solidity, gravity, thermal properties, containment, rigidity, buoyancy, and motion. Naive physics is evaluated by PIQA, and constitutes the physical-world sub-component of [[Embodied AI]] reasoning requirements. It was the focus of Patrick Hayes's (1978) Naive Physics Manifesto, which argued that AI would need a formal theory of everyday physics far less mathematically demanding than Newtonian mechanics but far more comprehensive than any existing formalism.
+- **Defeasibility**: the property of commonsense conclusions that they hold by default but can be overridden by exceptional information.
+- **Frame problem**: the difficulty of efficiently representing which facts in a [[World Model]] change (and which persist) when an action is performed.
+- **Script**: a schematic knowledge structure (Schank 1977) encoding a prototypical sequence of events for a recurring situation type (e.g. "restaurant script").
+- **Default Logic**: Reiter's (1980) formal framework for defeasible reasoning using defaults of the form "if A and not known ¬B, then conclude C."
+- **ATOMIC**: the Atlas of Machine Commonsense for If-Then Reasoning (Sap et al., 2019); a large-scale commonsense knowledge graph focusing on social causal inference.
+- **ConceptNet**: a crowdsourced semantic network encoding 1.6 M+ commonsense assertions across 34 relation types (Liu and Singh, 2004; Speer et al., 2017).
+- **HellaSwag**: a physical-activity sentence-completion benchmark (Zellers et al., 2019) designed to defeat BERT-era models; frontier LLMs now exceed 95% accuracy.
+- **WinoGrande**: a large-scale Winograd schema challenge (Sakaguchi et al., 2021) requiring commonsense disambiguation of pronouns in adversarially constructed sentences.
+- **Circumscription**: McCarthy's (1980) second-order logical framework for abnormality minimisation; models the closed-world assumption underlying default reasoning.
+- **Markov Logic Network (MLN)**: Richardson and Domingos (2006) probabilistic-logical framework encoding commonsense rules as weighted first-order clauses in a log-linear model.
+- **Resolution limit**: in the context of commonsense benchmarks, refers to the phenomenon where improving on a benchmark does not necessarily improve real-world commonsense performance due to data leakage or shallow statistical patterns.
+- **COMET**: Commonsense Transformers (Bosselut et al., 2019) — a generative [[Large Language Model]] trained to produce ATOMIC-style if-then commonsense inferences for arbitrary input events.
+- **Open World Assumption (OWA)**: the epistemic stance (from [[Knowledge Representation]] and [[Description Logic]]) that absence of a fact from a knowledge base does not imply the fact is false; appropriate for commonsense reasoning where the knowledge base is necessarily incomplete.
+- **Theory of Mind (ToM)**: the ability to attribute mental states — beliefs, desires, intentions, emotions — to other agents and to reason about their likely behaviour; folk psychology's core competence; evaluated by the ToMi benchmark and Social IQa.
+- **Counterfactual Reasoning**: a form of commonsense reasoning about what would have happened if circumstances had been different ("If I had not left the tap on, the floor would not be wet"); evaluated by the COUNTERFACTUAL benchmark and implicitly probed by temporal causality tests in BrainBench.
+- **Tacit Knowledge**: the portion of commonsense knowledge that is never explicitly stated in any text or formal document and can only be acquired through experience or interaction with the physical and social world; the primary source of difficulty in building comprehensive commonsense AI systems. The vast majority of what people know about everyday life — the resistance of objects to penetration, the social awkwardness of silence in conversation, the predictable behaviour of containers and liquids — belongs to this category. Tacit knowledge acquisition motivates [[Embodied AI]], [[Multi-Modal Learning]], and grounded simulation approaches, and explains why purely text-trained [[Large Language Model]]s retain systematic commonsense gaps despite training on internet-scale corpora where only articulable knowledge is represented.
+- **Naive Physics**: the domain of commonsense knowledge governing the behaviour of everyday physical objects and substances — solidity, gravity, thermal properties, containment, rigidity, buoyancy, and motion. Naive physics is evaluated by PIQA, and constitutes the physical-world sub-component of [[Embodied AI]] reasoning requirements. It was the focus of Patrick Hayes's (1978) Naive Physics Manifesto, which argued that AI would need a formal theory of everyday physics far less mathematically demanding than Newtonian mechanics but far more comprehensive than any existing formalism.
 
   ## Connections to Ontology and Knowledge Engineering
 
@@ -363,5 +366,5 @@ Commonsense reasoning is the ability of an artificial system to make plausible i
   26. Hitzler, P. et al. (2022). "Neuro-Symbolic Approaches in Artificial Intelligence." National Science Review 9(6).
   27. Grice, H. P. (1975). "Logic and Conversation." In Cole, P. and Morgan, J. (Eds.), Syntax and Semantics vol. 3. Academic Press.
 
-- ### Provenance
+### Provenance
 

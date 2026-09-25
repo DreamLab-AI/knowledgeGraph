@@ -1,19 +1,26 @@
-
 A superchain is a network of independent Layer-2 blockchains that share a common technical standard, security model, and communication layer so they interoperate as a unified system rather than isolated silos. Pioneered by the OP Stack ecosystem around Optimism, superchains let many rollups inherit the same upgrade path, governance, and eventually a shared sequencer, enabling low-latency cross-chain messaging and a consistent developer experience. The model addresses blockchain fragmentation by treating horizontal scaling as a coordinated mesh of homogeneous chains that settle to a common Layer 1.
 
-- ### Overview
-  - Superchain sits within the broader category of [[Rollup]], which it specialises.
-  - It connects to a network of 11 related classes across the knowledge graph, anchoring edges that previously pointed to an undefined node.
-- ### Key aspects
-  - hasPart: [[Base]]
-  - uses: [[Optimistic Rollup]]
-  - uses: [[Bridge]]
-  - requires: [[Governance]]
-- ### Mechanisms
-  - Superchain operates through its constituent parts and dependencies, integrating with adjacent systems to deliver its function within blockchain.
-  - Depends on [[Ethereum]] for correct operation.
-- ### Applications
-  - Applied to advance [[Blockchain Scalability]].
-  - Applied to advance [[Interoperability]].
-- ### Provenance
+### Overview
+
+- Superchain sits within the broader category of [[Rollup]], which it specialises.
+- It connects to a network of 11 related classes across the knowledge graph, anchoring edges that previously pointed to an undefined node.
+
+### Key aspects
+
+- hasPart: [[Base]]
+- uses: [[Optimistic Rollup]]
+- uses: [[Bridge]]
+- requires: [[Governance]]
+
+### Mechanisms
+
+- Superchain operates through its constituent parts and dependencies, integrating with adjacent systems to deliver its function within blockchain.
+- Depends on [[Ethereum]] for correct operation.
+
+### Applications
+
+- Applied to advance [[Blockchain Scalability]].
+- Applied to advance [[Interoperability]].
+
+### Provenance
 

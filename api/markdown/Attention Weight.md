@@ -1,161 +1,166 @@
-
 A scalar coefficient produced by an attention mechanism that quantifies the relevance of one position (key/value) to another (query) in a sequence or across modalities. Attention weights are computed via a softmax over scaled dot-products of query and key vectors, and govern how much each value contributes to the output representation. They are the core computational primitive of Transformer-based models.
 
-- ### Semantic Classification
+### Semantic Classification
 
-- ### Content
-  ## Compositional Relationships (Components)
-    ```
-    SubClassOf(ai:AttentionWeight
-      ObjectSomeValuesFrom(ai:hasPart ai:SoftmaxFunction))
-    SubClassOf(ai:AttentionWeight
-      ObjectSomeValuesFrom(ai:hasPart ai:QueryKeyValue))
-    SubClassOf(ai:AttentionWeight
-      ObjectSomeValuesFrom(ai:partOf ai:AttentionMechanism))
-    SubClassOf(ai:AttentionWeight
-      ObjectSomeValuesFrom(ai:partOf ai:TransformerArchitecture))
-    SubClassOf(ai:AttentionWeight
-      ObjectSomeValuesFrom(ai:partOf ai:MultiHeadAttention))
-    SubClassOf(ai:AttentionWeight
-      ObjectSomeValuesFrom(ai:partOf ai:SelfAttention))
-    SubClassOf(ai:AttentionWeight
-      ObjectSomeValuesFrom(ai:partOf ai:CrossAttention))
-    ```
-  ## Dependency Relationships
-    ```
-    SubClassOf(ai:AttentionWeight
-      ObjectSomeValuesFrom(ai:requires ai:MatrixMultiplication))
-    SubClassOf(ai:AttentionWeight
-      ObjectSomeValuesFrom(ai:requires ai:Embedding))
-    SubClassOf(ai:AttentionWeight
-      ObjectSomeValuesFrom(ai:requires ai:PositionalEncoding))
-    SubClassOf(ai:AttentionWeight
-      ObjectSomeValuesFrom(ai:dependsOn ai:Backpropagation))
-    SubClassOf(ai:AttentionWeight
-      ObjectSomeValuesFrom(ai:dependsOn ai:GradientDescent))
-    SubClassOf(ai:AttentionWeight
-      ObjectSomeValuesFrom(ai:uses ai:NeuralNetwork))
-    SubClassOf(ai:AttentionWeight
-      ObjectSomeValuesFrom(ai:uses ai:EncoderDecoderArchitecture))
-    ```
-  ## Capability Relationships
-    ```
-    SubClassOf(ai:AttentionWeight
-      ObjectSomeValuesFrom(ai:enables ai:LargeLanguageModels))
-    SubClassOf(ai:AttentionWeight
-      ObjectSomeValuesFrom(ai:enables ai:ExplainableAI))
-    SubClassOf(ai:AttentionWeight
-      ObjectSomeValuesFrom(ai:enables ai:MachineTranslation))
-    SubClassOf(ai:AttentionWeight
-      ObjectSomeValuesFrom(ai:enables ai:ImageCaptioning))
-    SubClassOf(ai:AttentionWeight
-      ObjectSomeValuesFrom(ai:enables ai:SpeechRecognition))
-    SubClassOf(ai:AttentionWeight
-      ObjectSomeValuesFrom(ai:enables ai:NaturalLanguageProcessing))
-    SubClassOf(ai:AttentionWeight
-      ObjectSomeValuesFrom(ai:enables ai:SequenceToSequenceLearning))
-    ```
-  ## Implementation Relationships
-    ```
-    SubClassOf(ai:AttentionWeight
-      ObjectSomeValuesFrom(ai:implements ai:ScaledDotProductAttention))
-    SubClassOf(ai:AttentionWeight
-      ObjectSomeValuesFrom(ai:implements ai:SoftmaxNormalisation))
-    SubClassOf(ai:AttentionWeight
-      ObjectSomeValuesFrom(ai:supports ai:ComputerVision))
-    SubClassOf(ai:AttentionWeight
-      ObjectSomeValuesFrom(ai:supports ai:MultimodalAI))
-    SubClassOf(ai:AttentionWeight
-      ObjectSomeValuesFrom(ai:supports ai:GraphNeuralNetwork))
-    ```
-  ## Reduction Relationships
-    ```
-    SubClassOf(ai:AttentionWeight
-      ObjectSomeValuesFrom(ai:reducesTo ai:ScalarCoefficient))
-    SubClassOf(ai:AttentionWeight
-      ObjectSomeValuesFrom(ai:reducesTo ai:ProbabilityDistribution))
-    SubClassOf(ai:AttentionWeight
-      ObjectSomeValuesFrom(ai:contrastsWith ai:RecurrentNeuralNetwork))
-    SubClassOf(ai:AttentionWeight
-      ObjectSomeValuesFrom(ai:contrastsWith ai:StateSpaceModel))
-    SubClassOf(ai:AttentionWeight
-      ObjectSomeValuesFrom(ai:contrastsWith ai:LongShortTermMemory))
-    SubClassOf(ai:AttentionWeight
-      ObjectSomeValuesFrom(ai:relatedTo ai:BERT))
-    SubClassOf(ai:AttentionWeight
-      ObjectSomeValuesFrom(ai:relatedTo ai:GPT))
-    SubClassOf(ai:AttentionWeight
-      ObjectSomeValuesFrom(ai:relatedTo ai:MixtureOfExperts))
-    SubClassOf(ai:AttentionWeight
-      ObjectSomeValuesFrom(ai:relatedTo ai:LayerNormalisation))
-    SubClassOf(ai:AttentionWeight
-      ObjectSomeValuesFrom(ai:supports ai:SpeechRecognition))
-    SubClassOf(ai:AttentionWeight
-      ObjectSomeValuesFrom(ai:uses ai:FeedForwardNetwork))
-    SubClassOf(ai:AttentionWeight
-      ObjectSomeValuesFrom(ai:bridges ai:MultimodalAI))
-    SubClassOf(ai:AttentionWeight
-      ObjectSomeValuesFrom(ai:bridges ai:ComputerVision))
-    SubClassOf(ai:AttentionWeight
-      ObjectSomeValuesFrom(ai:implements ai:SequenceToSequenceLearning))
-    SubClassOf(ai:AttentionWeight
-      ObjectSomeValuesFrom(ai:relatedTo ai:GraphNeuralNetwork))
-    SubClassOf(ai:AttentionWeight
-      ObjectSomeValuesFrom(ai:enables ai:ImageCaptioning))
-    ```
+### Content
 
-  ## About
+## Compositional Relationships (Components)
+  ```
+  SubClassOf(ai:AttentionWeight
+    ObjectSomeValuesFrom(ai:hasPart ai:SoftmaxFunction))
+  SubClassOf(ai:AttentionWeight
+    ObjectSomeValuesFrom(ai:hasPart ai:QueryKeyValue))
+  SubClassOf(ai:AttentionWeight
+    ObjectSomeValuesFrom(ai:partOf ai:AttentionMechanism))
+  SubClassOf(ai:AttentionWeight
+    ObjectSomeValuesFrom(ai:partOf ai:TransformerArchitecture))
+  SubClassOf(ai:AttentionWeight
+    ObjectSomeValuesFrom(ai:partOf ai:MultiHeadAttention))
+  SubClassOf(ai:AttentionWeight
+    ObjectSomeValuesFrom(ai:partOf ai:SelfAttention))
+  SubClassOf(ai:AttentionWeight
+    ObjectSomeValuesFrom(ai:partOf ai:CrossAttention))
+  ```
+## Dependency Relationships
+  ```
+  SubClassOf(ai:AttentionWeight
+    ObjectSomeValuesFrom(ai:requires ai:MatrixMultiplication))
+  SubClassOf(ai:AttentionWeight
+    ObjectSomeValuesFrom(ai:requires ai:Embedding))
+  SubClassOf(ai:AttentionWeight
+    ObjectSomeValuesFrom(ai:requires ai:PositionalEncoding))
+  SubClassOf(ai:AttentionWeight
+    ObjectSomeValuesFrom(ai:dependsOn ai:Backpropagation))
+  SubClassOf(ai:AttentionWeight
+    ObjectSomeValuesFrom(ai:dependsOn ai:GradientDescent))
+  SubClassOf(ai:AttentionWeight
+    ObjectSomeValuesFrom(ai:uses ai:NeuralNetwork))
+  SubClassOf(ai:AttentionWeight
+    ObjectSomeValuesFrom(ai:uses ai:EncoderDecoderArchitecture))
+  ```
+## Capability Relationships
+  ```
+  SubClassOf(ai:AttentionWeight
+    ObjectSomeValuesFrom(ai:enables ai:LargeLanguageModels))
+  SubClassOf(ai:AttentionWeight
+    ObjectSomeValuesFrom(ai:enables ai:ExplainableAI))
+  SubClassOf(ai:AttentionWeight
+    ObjectSomeValuesFrom(ai:enables ai:MachineTranslation))
+  SubClassOf(ai:AttentionWeight
+    ObjectSomeValuesFrom(ai:enables ai:ImageCaptioning))
+  SubClassOf(ai:AttentionWeight
+    ObjectSomeValuesFrom(ai:enables ai:SpeechRecognition))
+  SubClassOf(ai:AttentionWeight
+    ObjectSomeValuesFrom(ai:enables ai:NaturalLanguageProcessing))
+  SubClassOf(ai:AttentionWeight
+    ObjectSomeValuesFrom(ai:enables ai:SequenceToSequenceLearning))
+  ```
+## Implementation Relationships
+  ```
+  SubClassOf(ai:AttentionWeight
+    ObjectSomeValuesFrom(ai:implements ai:ScaledDotProductAttention))
+  SubClassOf(ai:AttentionWeight
+    ObjectSomeValuesFrom(ai:implements ai:SoftmaxNormalisation))
+  SubClassOf(ai:AttentionWeight
+    ObjectSomeValuesFrom(ai:supports ai:ComputerVision))
+  SubClassOf(ai:AttentionWeight
+    ObjectSomeValuesFrom(ai:supports ai:MultimodalAI))
+  SubClassOf(ai:AttentionWeight
+    ObjectSomeValuesFrom(ai:supports ai:GraphNeuralNetwork))
+  ```
+## Reduction Relationships
+  ```
+  SubClassOf(ai:AttentionWeight
+    ObjectSomeValuesFrom(ai:reducesTo ai:ScalarCoefficient))
+  SubClassOf(ai:AttentionWeight
+    ObjectSomeValuesFrom(ai:reducesTo ai:ProbabilityDistribution))
+  SubClassOf(ai:AttentionWeight
+    ObjectSomeValuesFrom(ai:contrastsWith ai:RecurrentNeuralNetwork))
+  SubClassOf(ai:AttentionWeight
+    ObjectSomeValuesFrom(ai:contrastsWith ai:StateSpaceModel))
+  SubClassOf(ai:AttentionWeight
+    ObjectSomeValuesFrom(ai:contrastsWith ai:LongShortTermMemory))
+  SubClassOf(ai:AttentionWeight
+    ObjectSomeValuesFrom(ai:relatedTo ai:BERT))
+  SubClassOf(ai:AttentionWeight
+    ObjectSomeValuesFrom(ai:relatedTo ai:GPT))
+  SubClassOf(ai:AttentionWeight
+    ObjectSomeValuesFrom(ai:relatedTo ai:MixtureOfExperts))
+  SubClassOf(ai:AttentionWeight
+    ObjectSomeValuesFrom(ai:relatedTo ai:LayerNormalisation))
+  SubClassOf(ai:AttentionWeight
+    ObjectSomeValuesFrom(ai:supports ai:SpeechRecognition))
+  SubClassOf(ai:AttentionWeight
+    ObjectSomeValuesFrom(ai:uses ai:FeedForwardNetwork))
+  SubClassOf(ai:AttentionWeight
+    ObjectSomeValuesFrom(ai:bridges ai:MultimodalAI))
+  SubClassOf(ai:AttentionWeight
+    ObjectSomeValuesFrom(ai:bridges ai:ComputerVision))
+  SubClassOf(ai:AttentionWeight
+    ObjectSomeValuesFrom(ai:implements ai:SequenceToSequenceLearning))
+  SubClassOf(ai:AttentionWeight
+    ObjectSomeValuesFrom(ai:relatedTo ai:GraphNeuralNetwork))
+  SubClassOf(ai:AttentionWeight
+    ObjectSomeValuesFrom(ai:enables ai:ImageCaptioning))
+  ```
 
-  Attention weights are the fundamental computational currency of the [[Transformer Architecture]] family and, by extension, of the [[Large Language Models]] that have come to dominate [[Natural Language Processing]] since 2017. As scalar probability values summing to one over the source positions for each target position, they act as a differentiable, learned selection mechanism: the model is trained end-to-end via [[Backpropagation]] to assign high attention weights to source positions whose [[Embedding]] representations are most relevant for predicting or generating each output element. This contrasts sharply with the fixed, position-by-position processing of [[Recurrent Neural Network]] and [[Long Short Term Memory]] architectures, where information from distant positions must survive many sequential state transitions — a process that degrades signal strength and makes long-range dependencies difficult to learn. By learning to place high weight on relevant positions regardless of distance, attention weights elegantly sidestep this bottleneck, enabling models to handle sequences of arbitrary length in a single forward pass (subject only to the quadratic memory cost of the full attention matrix).
+## About
 
-  The mathematical derivation of attention weights begins with projecting an input sequence x ∈ ℝ^{n×d_model} into query Q = xW_Q, key K = xW_K, and value V = xW_V matrices through learned weight matrices W_Q, W_K, W_V ∈ ℝ^{d_model×d_k}. The raw (logit) attention scores are the matrix A_raw = QKᵀ / √d_k ∈ ℝ^{n×n}. Dividing by √d_k prevents the dot products from growing large in high-dimensional spaces, which would push the [[Softmax Function]] into saturation regions where [[Gradient Descent]] becomes ineffective due to vanishingly small gradients. The final attention weight matrix is A = softmax(A_raw) ∈ ℝ^{n×n}, where softmax is applied row-wise so each row sums to one. The output for the attention layer is then simply Z = AV, a weighted combination of the value vectors. In practice, a causal mask is applied for autoregressive generation (as in [[GPT]]) to prevent positions from attending to future positions, setting masked logit entries to −∞ before the softmax so their resulting weights are zero. After computing Z, the result passes through a [[Layer Normalisation]] sublayer followed by a [[Feed Forward Network]] with residual skip connections — the standard [[Encoder Decoder Architecture]] block structure — before the combined representation advances to the next layer.
+Attention weights are the fundamental computational currency of the [[Transformer Architecture]] family and, by extension, of the [[Large Language Models]] that have come to dominate [[Natural Language Processing]] since 2017. As scalar probability values summing to one over the source positions for each target position, they act as a differentiable, learned selection mechanism: the model is trained end-to-end via [[Backpropagation]] to assign high attention weights to source positions whose [[Embedding]] representations are most relevant for predicting or generating each output element. This contrasts sharply with the fixed, position-by-position processing of [[Recurrent Neural Network]] and [[Long Short Term Memory]] architectures, where information from distant positions must survive many sequential state transitions — a process that degrades signal strength and makes long-range dependencies difficult to learn. By learning to place high weight on relevant positions regardless of distance, attention weights elegantly sidestep this bottleneck, enabling models to handle sequences of arbitrary length in a single forward pass (subject only to the quadratic memory cost of the full attention matrix).
 
-  The computational cost of full attention is O(n²d) in time and O(n²) in memory, where n is the sequence length and d is the head dimension. For a model processing a 128K-token context with 96 heads, this yields attention weight matrices with 128K × 128K = 16.4 billion entries per head per layer — far exceeding VRAM capacity if materialised naively. Flash Attention solves this by decomposing the computation into tiles that fit in fast on-chip SRAM, computing the softmax incrementally using the online softmax algorithm of Milakov and Gimelshein (2018), and never writing the full attention matrix to slow DRAM. This hardware-aware implementation achieves exact (non-approximated) attention results while dramatically reducing memory bandwidth requirements — a prerequisite for the very-long-context capability of models like Gemini 1.5 Pro and Claude 3 Opus. Flash Attention 4, released March 2026 with NVIDIA B200 GPU support, achieves approximately 1,605 TFLOPs/s with 71% hardware utilisation.
+The mathematical derivation of attention weights begins with projecting an input sequence x ∈ ℝ^{n×d_model} into query Q = xW_Q, key K = xW_K, and value V = xW_V matrices through learned weight matrices W_Q, W_K, W_V ∈ ℝ^{d_model×d_k}. The raw (logit) attention scores are the matrix A_raw = QKᵀ / √d_k ∈ ℝ^{n×n}. Dividing by √d_k prevents the dot products from growing large in high-dimensional spaces, which would push the [[Softmax Function]] into saturation regions where [[Gradient Descent]] becomes ineffective due to vanishingly small gradients. The final attention weight matrix is A = softmax(A_raw) ∈ ℝ^{n×n}, where softmax is applied row-wise so each row sums to one. The output for the attention layer is then simply Z = AV, a weighted combination of the value vectors. In practice, a causal mask is applied for autoregressive generation (as in [[GPT]]) to prevent positions from attending to future positions, setting masked logit entries to −∞ before the softmax so their resulting weights are zero. After computing Z, the result passes through a [[Layer Normalisation]] sublayer followed by a [[Feed Forward Network]] with residual skip connections — the standard [[Encoder Decoder Architecture]] block structure — before the combined representation advances to the next layer.
 
-  The debate over whether attention weights constitute valid explanations for model decisions has produced a rich and technically sophisticated sub-literature that has matured into the broader mechanistic interpretability programme. Jain and Wallace (2019) demonstrated that attention weights over input tokens can be permuted or replaced with adversarial distributions without substantially changing model predictions, calling into question the naive reading of attention weights as causal feature importances. Wiegreffe and Pinter (2019) challenged these conclusions, arguing that the definition of "explanation" matters — under a functional characterisation, attention distributions that produce the same outputs as human-interpretable distributions do constitute a form of explanation. Serrano and Smith (2019) showed that zeroing out the highest-attention input tokens does affect predictions more than zeroing low-attention tokens, suggesting some signal is present even if not causally sufficient. Pruthi et al. (2020) demonstrated that models can be trained to produce deceptively plausible attention distributions that bear no relationship to actual prediction-relevant computation, further cautioning against uncritical use of attention weights as explanations.
+The computational cost of full attention is O(n²d) in time and O(n²) in memory, where n is the sequence length and d is the head dimension. For a model processing a 128K-token context with 96 heads, this yields attention weight matrices with 128K × 128K = 16.4 billion entries per head per layer — far exceeding VRAM capacity if materialised naively. Flash Attention solves this by decomposing the computation into tiles that fit in fast on-chip SRAM, computing the softmax incrementally using the online softmax algorithm of Milakov and Gimelshein (2018), and never writing the full attention matrix to slow DRAM. This hardware-aware implementation achieves exact (non-approximated) attention results while dramatically reducing memory bandwidth requirements — a prerequisite for the very-long-context capability of models like Gemini 1.5 Pro and Claude 3 Opus. Flash Attention 4, released March 2026 with NVIDIA B200 GPU support, achieves approximately 1,605 TFLOPs/s with 71% hardware utilisation.
 
-  By 2025–2026, the mechanistic interpretability programme (Elhage et al. 2021; Sharkey et al. 2025; Conmy et al. 2023) has moved definitively beyond raw attention weight inspection toward circuit-level analysis. Rather than reading off which tokens received high attention weights, circuit analysis identifies which attention heads implement which computational operations by intervening on activations: patching the output of one forward pass into another (activation patching), decomposing the residual stream into additive contributions from each layer and head (path patching), and tracing information flow through the model (logit lens analysis). Using these techniques, researchers have characterised specific functional head types: induction heads that detect and continue repeating patterns by attending to tokens that previously followed the current token; name-mover heads that copy entity names to the current output position; duplicate token heads that attend to other occurrences of the current token; negative heads that suppress the most likely next token to force consideration of alternatives. The [[Explainable AI]] implications of these findings are significant: rather than expecting raw attention weights to be interpretable, the field now understands that the interpretable unit is the circuit — a composition of attention heads, [[Feed Forward Network]] MLP layers, and residual stream interactions that collectively implement a well-defined algorithm.
+The debate over whether attention weights constitute valid explanations for model decisions has produced a rich and technically sophisticated sub-literature that has matured into the broader mechanistic interpretability programme. Jain and Wallace (2019) demonstrated that attention weights over input tokens can be permuted or replaced with adversarial distributions without substantially changing model predictions, calling into question the naive reading of attention weights as causal feature importances. Wiegreffe and Pinter (2019) challenged these conclusions, arguing that the definition of "explanation" matters — under a functional characterisation, attention distributions that produce the same outputs as human-interpretable distributions do constitute a form of explanation. Serrano and Smith (2019) showed that zeroing out the highest-attention input tokens does affect predictions more than zeroing low-attention tokens, suggesting some signal is present even if not causally sufficient. Pruthi et al. (2020) demonstrated that models can be trained to produce deceptively plausible attention distributions that bear no relationship to actual prediction-relevant computation, further cautioning against uncritical use of attention weights as explanations.
 
-  The relationship between attention weights and [[Graph Neural Network]] architectures deserves specific note. Attention-weighted message aggregation in Graph Attention Networks (GATs, Veličković et al. 2018) applies the same scaled dot-product attention paradigm to graph-structured data: for each node, attention weights are computed over its neighbours' feature representations, determining how much each neighbour contributes to the updated node embedding. This unification of sequence attention and graph attention has enabled cross-pollination of architectural advances — including multi-head graph attention, sparse graph attention, and hierarchical graph transformers — that extend the attention weight primitive beyond sequence modelling into relational reasoning over structured knowledge graphs.
+By 2025–2026, the mechanistic interpretability programme (Elhage et al. 2021; Sharkey et al. 2025; Conmy et al. 2023) has moved definitively beyond raw attention weight inspection toward circuit-level analysis. Rather than reading off which tokens received high attention weights, circuit analysis identifies which attention heads implement which computational operations by intervening on activations: patching the output of one forward pass into another (activation patching), decomposing the residual stream into additive contributions from each layer and head (path patching), and tracing information flow through the model (logit lens analysis). Using these techniques, researchers have characterised specific functional head types: induction heads that detect and continue repeating patterns by attending to tokens that previously followed the current token; name-mover heads that copy entity names to the current output position; duplicate token heads that attend to other occurrences of the current token; negative heads that suppress the most likely next token to force consideration of alternatives. The [[Explainable AI]] implications of these findings are significant: rather than expecting raw attention weights to be interpretable, the field now understands that the interpretable unit is the circuit — a composition of attention heads, [[Feed Forward Network]] MLP layers, and residual stream interactions that collectively implement a well-defined algorithm.
 
-  [[Multimodal AI]] systems introduce [[Cross Attention]] as the inter-modal bridge: a vision encoder (typically a ViT — Vision Transformer — which applies [[Self Attention]] over image patches) produces a sequence of patch-level representations that serve as keys and values, while the language decoder generates queries that attend into this visual context via cross-attention. The attention weights in these cross-attention layers constitute the model's learned visual grounding mechanism — the mapping between language tokens and image regions. When a model correctly answers a question about a photograph, the cross-attention weights ideally concentrate on the image region that is relevant to the question. This interpretability property, though subject to the same caveats as text attention, has made cross-attention weight visualisation a standard diagnostic tool in [[Computer Vision]] and visual question answering research.
+The relationship between attention weights and [[Graph Neural Network]] architectures deserves specific note. Attention-weighted message aggregation in Graph Attention Networks (GATs, Veličković et al. 2018) applies the same scaled dot-product attention paradigm to graph-structured data: for each node, attention weights are computed over its neighbours' feature representations, determining how much each neighbour contributes to the updated node embedding. This unification of sequence attention and graph attention has enabled cross-pollination of architectural advances — including multi-head graph attention, sparse graph attention, and hierarchical graph transformers — that extend the attention weight primitive beyond sequence modelling into relational reasoning over structured knowledge graphs.
 
-  ## Components and Architecture
+[[Multimodal AI]] systems introduce [[Cross Attention]] as the inter-modal bridge: a vision encoder (typically a ViT — Vision Transformer — which applies [[Self Attention]] over image patches) produces a sequence of patch-level representations that serve as keys and values, while the language decoder generates queries that attend into this visual context via cross-attention. The attention weights in these cross-attention layers constitute the model's learned visual grounding mechanism — the mapping between language tokens and image regions. When a model correctly answers a question about a photograph, the cross-attention weights ideally concentrate on the image region that is relevant to the question. This interpretability property, though subject to the same caveats as text attention, has made cross-attention weight visualisation a standard diagnostic tool in [[Computer Vision]] and visual question answering research.
 
-  The [[Query Key Value]] triple is the architectural foundation of scaled dot-product attention. Each token (or patch, or node) in the sequence is mapped to three learned vectors through separate linear projections:
-  - **Query (Q)**: represents what this position is "looking for" — the comparison vector that is matched against keys across all source positions.
-  - **Key (K)**: represents what information this position "advertises" — the label that other positions' queries match against to determine relevance.
-  - **Value (V)**: represents the actual content this position contributes when selected — the information payload transferred to the output when this position receives high attention weight.
+## Components and Architecture
+
+The [[Query Key Value]] triple is the architectural foundation of scaled dot-product attention. Each token (or patch, or node) in the sequence is mapped to three learned vectors through separate linear projections:
+
+- **Query (Q)**: represents what this position is "looking for" — the comparison vector that is matched against keys across all source positions.
+- **Key (K)**: represents what information this position "advertises" — the label that other positions' queries match against to determine relevance.
+- **Value (V)**: represents the actual content this position contributes when selected — the information payload transferred to the output when this position receives high attention weight.
 
   The scaled dot-product attention computation proceeds through the following steps:
-  - Project input representations into Q, K, V: Q = xW_Q, K = xW_K, V = xW_V
-  - Compute pairwise similarity logit matrix: A_raw = QKᵀ / √d_k ∈ ℝ^{n×n}
-  - Apply optional masking: causal masks (−∞ for future positions in autoregressive generation), padding masks (−∞ for padding tokens to prevent attention to non-content positions)
-  - Apply [[Softmax Function]] row-wise to obtain normalised attention weights: A = softmax(A_raw), where each row sums to 1.0
-  - Compute output as weighted combination of values: Z = AV ∈ ℝ^{n×d_v}
-  - The output Z is the context-aware representation of each input position, incorporating information from all positions weighted by their computed relevance.
+
+- Project input representations into Q, K, V: Q = xW_Q, K = xW_K, V = xW_V
+- Compute pairwise similarity logit matrix: A_raw = QKᵀ / √d_k ∈ ℝ^{n×n}
+- Apply optional masking: causal masks (−∞ for future positions in autoregressive generation), padding masks (−∞ for padding tokens to prevent attention to non-content positions)
+- Apply [[Softmax Function]] row-wise to obtain normalised attention weights: A = softmax(A_raw), where each row sums to 1.0
+- Compute output as weighted combination of values: Z = AV ∈ ℝ^{n×d_v}
+- The output Z is the context-aware representation of each input position, incorporating information from all positions weighted by their computed relevance.
 
   In [[Multi-Head Attention]] (MHA), this entire computation is replicated h times in parallel using independently learned projection matrices:
-  - Head_i output: Z_i = Attention(xW_Q^i, xW_K^i, xW_V^i) for i = 1, ..., h
-  - Concatenate: Concat(Z_1, ..., Z_h) ∈ ℝ^{n×(h·d_v)}
-  - Project to model dimension: MHA(x) = Concat(Z_1,...,Z_h) · W_O
-  - This produces h distinct attention weight matrices A_1,...,A_h per layer
-  - Modern frontier models (GPT-4 class) use h = 96 heads with d_k = d_v = 128, yielding 96 distinct n×n attention weight matrices per layer per forward pass.
-  - Each head specialises on different aspects of the input relationship: syntactic heads, semantic heads, positional heads, copy heads, induction heads — as revealed by mechanistic interpretability studies.
+
+- Head_i output: Z_i = Attention(xW_Q^i, xW_K^i, xW_V^i) for i = 1, ..., h
+- Concatenate: Concat(Z_1, ..., Z_h) ∈ ℝ^{n×(h·d_v)}
+- Project to model dimension: MHA(x) = Concat(Z_1,...,Z_h) · W_O
+- This produces h distinct attention weight matrices A_1,...,A_h per layer
+- Modern frontier models (GPT-4 class) use h = 96 heads with d_k = d_v = 128, yielding 96 distinct n×n attention weight matrices per layer per forward pass.
+- Each head specialises on different aspects of the input relationship: syntactic heads, semantic heads, positional heads, copy heads, induction heads — as revealed by mechanistic interpretability studies.
 
   [[Positional Encoding]] interacts with attention weights by injecting sequence order information into the query and key representations:
-  - Without positional information, dot-product scores would be permutation-invariant — the model would treat "the dog bit the man" and "the man bit the dog" as identical.
-  - Absolute sinusoidal positional encodings (original Vaswani et al. 2017): add fixed position vectors to input embeddings before attention.
-  - Learned absolute positional embeddings (BERT, GPT-2): learn position-specific embedding additions.
-  - Relative positional encodings (Shaw et al. 2018; T5 relative bias): add position-relative bias terms to attention logits before softmax.
-  - Rotary Positional Embedding / RoPE (Su et al. 2024): rotate Q and K vectors in embedding space by angles proportional to position, encoding relative distance as dot-product phase; the resulting attention weights naturally decay with positional distance and generalise to contexts much longer than training sequences.
-  - RoPE is now standard across Llama 3, Mistral, Phi-3, Gemma, and most 2024–2026 model families.
+
+- Without positional information, dot-product scores would be permutation-invariant — the model would treat "the dog bit the man" and "the man bit the dog" as identical.
+- Absolute sinusoidal positional encodings (original Vaswani et al. 2017): add fixed position vectors to input embeddings before attention.
+- Learned absolute positional embeddings (BERT, GPT-2): learn position-specific embedding additions.
+- Relative positional encodings (Shaw et al. 2018; T5 relative bias): add position-relative bias terms to attention logits before softmax.
+- Rotary Positional Embedding / RoPE (Su et al. 2024): rotate Q and K vectors in embedding space by angles proportional to position, encoding relative distance as dot-product phase; the resulting attention weights naturally decay with positional distance and generalise to contexts much longer than training sequences.
+- RoPE is now standard across Llama 3, Mistral, Phi-3, Gemma, and most 2024–2026 model families.
 
   [[Layer Normalisation]] and residual connections provide the training stability context within which attention weights are learned:
-  - Each transformer layer applies: x = LayerNorm(x + MHA(x)) followed by x = LayerNorm(x + FFN(x))
-  - Residual connections (He et al. 2016) allow gradients to flow directly from output layers to early layers during [[Backpropagation]], enabling reliable training of deep stacks of 96+ attention layers.
-  - Layer normalisation stabilises the scale of activations entering attention weight computation, preventing the softmax from saturating due to abnormally large or small logit magnitudes.
-  - The resulting attention weights are learned in an implicit coordination environment: each head's weights develop in the context of what other heads are attending to, mediated through the shared residual stream.
+
+- Each transformer layer applies: x = LayerNorm(x + MHA(x)) followed by x = LayerNorm(x + FFN(x))
+- Residual connections (He et al. 2016) allow gradients to flow directly from output layers to early layers during [[Backpropagation]], enabling reliable training of deep stacks of 96+ attention layers.
+- Layer normalisation stabilises the scale of activations entering attention weight computation, preventing the softmax from saturating due to abnormally large or small logit magnitudes.
+- The resulting attention weights are learned in an implicit coordination environment: each head's weights develop in the context of what other heads are attending to, mediated through the shared residual stream.
 
   ## Variants and Major Families
 
@@ -293,5 +298,5 @@ A scalar coefficient produced by an attention mechanism that quantifies the rele
   26. Child, R., Gray, S., Radford, A., & Sutskever, I. (2019). Generating Long Sequences with Sparse Transformers. *arXiv*:1904.10509.
   27. Chefer, H., Gur, S., & Wolf, L. (2021). Transformer Interpretability Beyond Attention Visualization. *CVPR 2021*. arXiv:2012.09838.
 
-- ### Provenance
+### Provenance
 

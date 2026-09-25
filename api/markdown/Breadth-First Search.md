@@ -1,219 +1,232 @@
-
 Breadth-first search (BFS) is a graph and tree traversal algorithm that explores all neighbours of a node before moving to nodes at the next depth level, expanding the search frontier in order of increasing distance from the source. It is implemented with a first-in-first-out queue and, on unweighted graphs, finds the shortest path in terms of edge count from the start vertex to every reachable vertex. BFS runs in time linear in the number of vertices and edges and is foundational to pathfinding, connectivity analysis and level-order processing.
 
-- ### Semantic Classification
+### Semantic Classification
 
-- ### Content
+### Content
 
-  ## Compositional Relationships (Components)
-      SubClassOf(ai:BreadthFirstSearch
-        ObjectSomeValuesFrom(ai:hasPart ai:QueueDataStructure))
-      SubClassOf(ai:BreadthFirstSearch
-        ObjectSomeValuesFrom(ai:hasPart ai:VisitedSet))
-      SubClassOf(ai:BreadthFirstSearch
-        ObjectSomeValuesFrom(ai:hasPart ai:Frontier))
-      SubClassOf(ai:BreadthFirstSearch
-        ObjectSomeValuesFrom(ai:hasPart ai:DistanceArray))
-      SubClassOf(ai:BreadthFirstSearch
-        ObjectSomeValuesFrom(ai:hasPart ai:ParentPointerArray))
-      SubClassOf(ai:BreadthFirstSearch
-        ObjectSomeValuesFrom(ai:hasPart ai:AdjacencyRepresentation))
+## Compositional Relationships (Components)
+    SubClassOf(ai:BreadthFirstSearch
+      ObjectSomeValuesFrom(ai:hasPart ai:QueueDataStructure))
+    SubClassOf(ai:BreadthFirstSearch
+      ObjectSomeValuesFrom(ai:hasPart ai:VisitedSet))
+    SubClassOf(ai:BreadthFirstSearch
+      ObjectSomeValuesFrom(ai:hasPart ai:Frontier))
+    SubClassOf(ai:BreadthFirstSearch
+      ObjectSomeValuesFrom(ai:hasPart ai:DistanceArray))
+    SubClassOf(ai:BreadthFirstSearch
+      ObjectSomeValuesFrom(ai:hasPart ai:ParentPointerArray))
+    SubClassOf(ai:BreadthFirstSearch
+      ObjectSomeValuesFrom(ai:hasPart ai:AdjacencyRepresentation))
 
-  ## Dependency Relationships
-      SubClassOf(ai:BreadthFirstSearch
-        ObjectSomeValuesFrom(ai:requires ai:QueueDataStructure))
-      SubClassOf(ai:BreadthFirstSearch
-        ObjectSomeValuesFrom(ai:requires ai:GraphRepresentation))
-      SubClassOf(ai:BreadthFirstSearch
-        ObjectSomeValuesFrom(ai:requires ai:AdjacencyList))
-      SubClassOf(ai:BreadthFirstSearch
-        ObjectSomeValuesFrom(ai:dependsOn ai:VisitedSet))
-      SubClassOf(ai:BreadthFirstSearch
-        ObjectSomeValuesFrom(ai:dependsOn ai:GraphTheory))
-      SubClassOf(ai:BreadthFirstSearch
-        ObjectSomeValuesFrom(ai:dependsOn ai:FIFOQueue))
+## Dependency Relationships
+    SubClassOf(ai:BreadthFirstSearch
+      ObjectSomeValuesFrom(ai:requires ai:QueueDataStructure))
+    SubClassOf(ai:BreadthFirstSearch
+      ObjectSomeValuesFrom(ai:requires ai:GraphRepresentation))
+    SubClassOf(ai:BreadthFirstSearch
+      ObjectSomeValuesFrom(ai:requires ai:AdjacencyList))
+    SubClassOf(ai:BreadthFirstSearch
+      ObjectSomeValuesFrom(ai:dependsOn ai:VisitedSet))
+    SubClassOf(ai:BreadthFirstSearch
+      ObjectSomeValuesFrom(ai:dependsOn ai:GraphTheory))
+    SubClassOf(ai:BreadthFirstSearch
+      ObjectSomeValuesFrom(ai:dependsOn ai:FIFOQueue))
 
-  ## Capability Relationships
-      SubClassOf(ai:BreadthFirstSearch
-        ObjectSomeValuesFrom(ai:enables ai:ShortestPath))
-      SubClassOf(ai:BreadthFirstSearch
-        ObjectSomeValuesFrom(ai:enables ai:Pathfinding))
-      SubClassOf(ai:BreadthFirstSearch
-        ObjectSomeValuesFrom(ai:enables ai:ConnectedComponents))
-      SubClassOf(ai:BreadthFirstSearch
-        ObjectSomeValuesFrom(ai:enables ai:BipartiteGraphDetection))
-      SubClassOf(ai:BreadthFirstSearch
-        ObjectSomeValuesFrom(ai:enables ai:WebCrawling))
-      SubClassOf(ai:BreadthFirstSearch
-        ObjectSomeValuesFrom(ai:enables ai:SocialNetworkAnalysis))
-      SubClassOf(ai:BreadthFirstSearch
-        ObjectSomeValuesFrom(ai:enables ai:LevelOrderTraversal))
-      SubClassOf(ai:BreadthFirstSearch
-        ObjectSomeValuesFrom(ai:enables ai:ReachabilityAnalysis))
+## Capability Relationships
+    SubClassOf(ai:BreadthFirstSearch
+      ObjectSomeValuesFrom(ai:enables ai:ShortestPath))
+    SubClassOf(ai:BreadthFirstSearch
+      ObjectSomeValuesFrom(ai:enables ai:Pathfinding))
+    SubClassOf(ai:BreadthFirstSearch
+      ObjectSomeValuesFrom(ai:enables ai:ConnectedComponents))
+    SubClassOf(ai:BreadthFirstSearch
+      ObjectSomeValuesFrom(ai:enables ai:BipartiteGraphDetection))
+    SubClassOf(ai:BreadthFirstSearch
+      ObjectSomeValuesFrom(ai:enables ai:WebCrawling))
+    SubClassOf(ai:BreadthFirstSearch
+      ObjectSomeValuesFrom(ai:enables ai:SocialNetworkAnalysis))
+    SubClassOf(ai:BreadthFirstSearch
+      ObjectSomeValuesFrom(ai:enables ai:LevelOrderTraversal))
+    SubClassOf(ai:BreadthFirstSearch
+      ObjectSomeValuesFrom(ai:enables ai:ReachabilityAnalysis))
 
-  ## Implementation Relationships
-      SubClassOf(ai:BreadthFirstSearch
-        ObjectSomeValuesFrom(ai:implements ai:SearchAlgorithm))
-      SubClassOf(ai:BreadthFirstSearch
-        ObjectSomeValuesFrom(ai:implements ai:GraphSearch))
-      SubClassOf(ai:BreadthFirstSearch
-        ObjectSomeValuesFrom(ai:implements ai:UninformedSearch))
-      SubClassOf(ai:BreadthFirstSearch
-        ObjectSomeValuesFrom(ai:implements ai:LevelOrderTraversal))
-      SubClassOf(ai:BreadthFirstSearch
-        ObjectSomeValuesFrom(ai:implements ai:CompleteSearch))
+## Implementation Relationships
+    SubClassOf(ai:BreadthFirstSearch
+      ObjectSomeValuesFrom(ai:implements ai:SearchAlgorithm))
+    SubClassOf(ai:BreadthFirstSearch
+      ObjectSomeValuesFrom(ai:implements ai:GraphSearch))
+    SubClassOf(ai:BreadthFirstSearch
+      ObjectSomeValuesFrom(ai:implements ai:UninformedSearch))
+    SubClassOf(ai:BreadthFirstSearch
+      ObjectSomeValuesFrom(ai:implements ai:LevelOrderTraversal))
+    SubClassOf(ai:BreadthFirstSearch
+      ObjectSomeValuesFrom(ai:implements ai:CompleteSearch))
 
-  ## Reduction Relationships
-      SubClassOf(ai:BreadthFirstSearch
-        ObjectSomeValuesFrom(ai:reducesTo ai:UniformCostSearch))
-      SubClassOf(ai:BreadthFirstSearch
-        ObjectSomeValuesFrom(ai:reducesTo ai:DijkstraAlgorithm))
-      SubClassOf(ai:BreadthFirstSearch
-        ObjectSomeValuesFrom(ai:reducesTo ai:LevelOrderTraversal))
-      SubClassOf(ai:BreadthFirstSearch
-        ObjectSomeValuesFrom(ai:reducesTo ai:MultiSourceBFS))
+## Reduction Relationships
+    SubClassOf(ai:BreadthFirstSearch
+      ObjectSomeValuesFrom(ai:reducesTo ai:UniformCostSearch))
+    SubClassOf(ai:BreadthFirstSearch
+      ObjectSomeValuesFrom(ai:reducesTo ai:DijkstraAlgorithm))
+    SubClassOf(ai:BreadthFirstSearch
+      ObjectSomeValuesFrom(ai:reducesTo ai:LevelOrderTraversal))
+    SubClassOf(ai:BreadthFirstSearch
+      ObjectSomeValuesFrom(ai:reducesTo ai:MultiSourceBFS))
 
-  ## Contrastive Relationships
-      SubClassOf(ai:BreadthFirstSearch
-        ObjectSomeValuesFrom(ai:contrastsWith ai:DepthFirstSearch))
-      SubClassOf(ai:BreadthFirstSearch
-        ObjectSomeValuesFrom(ai:contrastsWith ai:IterativeDeepeningDFS))
-      SubClassOf(ai:BreadthFirstSearch
-        ObjectSomeValuesFrom(ai:contrastsWith ai:AStarAlgorithm))
-      SubClassOf(ai:BreadthFirstSearch
-        ObjectSomeValuesFrom(ai:contrastsWith ai:BeamSearch))
-      SubClassOf(ai:BreadthFirstSearch
-        ObjectSomeValuesFrom(ai:contrastsWith ai:GreedyBestFirstSearch))
-      SubClassOf(ai:BreadthFirstSearch
-        ObjectSomeValuesFrom(ai:contrastsWith ai:MonteCarlTreeSearch))
+## Contrastive Relationships
+    SubClassOf(ai:BreadthFirstSearch
+      ObjectSomeValuesFrom(ai:contrastsWith ai:DepthFirstSearch))
+    SubClassOf(ai:BreadthFirstSearch
+      ObjectSomeValuesFrom(ai:contrastsWith ai:IterativeDeepeningDFS))
+    SubClassOf(ai:BreadthFirstSearch
+      ObjectSomeValuesFrom(ai:contrastsWith ai:AStarAlgorithm))
+    SubClassOf(ai:BreadthFirstSearch
+      ObjectSomeValuesFrom(ai:contrastsWith ai:BeamSearch))
+    SubClassOf(ai:BreadthFirstSearch
+      ObjectSomeValuesFrom(ai:contrastsWith ai:GreedyBestFirstSearch))
+    SubClassOf(ai:BreadthFirstSearch
+      ObjectSomeValuesFrom(ai:contrastsWith ai:MonteCarlTreeSearch))
 
-  ## About
+## About
 
-  **Breadth-first search (BFS)** occupies a foundational position in computer science and artificial intelligence as one of the earliest and most broadly applicable graph exploration strategies. Its core insight — that exploring all vertices at the current distance before advancing to greater distances guarantees minimality of the discovered path in terms of edge count — is both intuitively obvious and mathematically rigorous. The algorithm's historical trajectory began with Konrad Zuse's 1945 graph-traversal formulations for the Plankalkül language and was independently reinvented for practical maze-routing by Edward F. Moore (1959) and C.Y. Lee (1961). The name "breadth-first search" was popularised by the AI community through the search-strategy taxonomy developed in Nilsson's "Problem Solving Methods in Artificial Intelligence" (1971) and later canonised in Russell and Norvig's "Artificial Intelligence: A Modern Approach." Today BFS is universally taught as the first graph algorithm in undergraduate curricula worldwide and appears as a fundamental primitive in every major algorithms library and competitive programming platform.
+**Breadth-first search (BFS)** occupies a foundational position in computer science and artificial intelligence as one of the earliest and most broadly applicable graph exploration strategies. Its core insight — that exploring all vertices at the current distance before advancing to greater distances guarantees minimality of the discovered path in terms of edge count — is both intuitively obvious and mathematically rigorous. The algorithm's historical trajectory began with Konrad Zuse's 1945 graph-traversal formulations for the Plankalkül language and was independently reinvented for practical maze-routing by Edward F. Moore (1959) and C.Y. Lee (1961). The name "breadth-first search" was popularised by the AI community through the search-strategy taxonomy developed in Nilsson's "Problem Solving Methods in Artificial Intelligence" (1971) and later canonised in Russell and Norvig's "Artificial Intelligence: A Modern Approach." Today BFS is universally taught as the first graph algorithm in undergraduate curricula worldwide and appears as a fundamental primitive in every major algorithms library and competitive programming platform.
 
-  The historical development of BFS reflects the broader maturation of computer science as a discipline. Konrad Zuse, working in near-isolation in wartime Germany, described graph traversal procedures in Plankalkül — the world's first high-level programming language — but this work remained unknown to the wider community until its 1972 publication. Edward F. Moore, at Bell Laboratories, rediscovered BFS in 1959 while solving the problem of finding the shortest path through an arbitrary maze, motivated by telephone network routing problems. C.Y. Lee, also at Bell Labs, independently applied Moore's technique in 1961 to circuit board routing, giving BFS one of its earliest and most commercially consequential applications. These parallel discoveries reflect that BFS naturally emerges whenever shortest-path thinking is applied to grid or graph structures — a "discoverable" algorithm whose time had come by the late 1950s.
+The historical development of BFS reflects the broader maturation of computer science as a discipline. Konrad Zuse, working in near-isolation in wartime Germany, described graph traversal procedures in Plankalkül — the world's first high-level programming language — but this work remained unknown to the wider community until its 1972 publication. Edward F. Moore, at Bell Laboratories, rediscovered BFS in 1959 while solving the problem of finding the shortest path through an arbitrary maze, motivated by telephone network routing problems. C.Y. Lee, also at Bell Labs, independently applied Moore's technique in 1961 to circuit board routing, giving BFS one of its earliest and most commercially consequential applications. These parallel discoveries reflect that BFS naturally emerges whenever shortest-path thinking is applied to grid or graph structures — a "discoverable" algorithm whose time had come by the late 1950s.
 
-  In the AI search taxonomy, BFS is the prototypical uninformed (blind) search strategy: it requires no domain-specific knowledge or heuristic estimates, operating purely on the graph topology. This makes it a baseline against which all informed algorithms are measured. BFS is complete (will find a solution if one exists, provided the branching factor and graph are finite) and optimal for unit-cost step problems (finds the shallowest goal). These guarantees come at a space cost: BFS must store the entire frontier, which grows exponentially with depth — O(b^d) where b is the branching factor and d the shallowest goal depth. This space explosion motivated the development of iterative deepening depth-first search (IDDFS), which achieves BFS's completeness and optimality with DFS's linear O(bd) space, at the expense of recomputing upper levels of the tree. Despite this limitation, BFS remains the algorithm of choice for shallow graphs, dense networks, and applications where shortest-path optimality is paramount and depth is bounded. In practice, many real-world problems have bounded depth (social network degrees of separation rarely exceed 6, web graph diameter is typically 20–30 hops) where BFS's space cost is manageable.
+In the AI search taxonomy, BFS is the prototypical uninformed (blind) search strategy: it requires no domain-specific knowledge or heuristic estimates, operating purely on the graph topology. This makes it a baseline against which all informed algorithms are measured. BFS is complete (will find a solution if one exists, provided the branching factor and graph are finite) and optimal for unit-cost step problems (finds the shallowest goal). These guarantees come at a space cost: BFS must store the entire frontier, which grows exponentially with depth — O(b^d) where b is the branching factor and d the shallowest goal depth. This space explosion motivated the development of iterative deepening depth-first search (IDDFS), which achieves BFS's completeness and optimality with DFS's linear O(bd) space, at the expense of recomputing upper levels of the tree. Despite this limitation, BFS remains the algorithm of choice for shallow graphs, dense networks, and applications where shortest-path optimality is paramount and depth is bounded. In practice, many real-world problems have bounded depth (social network degrees of separation rarely exceed 6, web graph diameter is typically 20–30 hops) where BFS's space cost is manageable.
 
-  The formal correctness of BFS rests on a simple invariant: when a vertex u is dequeued, d[u] equals the true shortest-path distance from source s to u. This is proved by induction on d[u]. Base case: d[s]=0 when s is enqueued. Inductive step: when u is dequeued, all vertices at distance d[u]−1 have already been dequeued (FIFO ordering ensures level-by-level processing). Every neighbour v of u with d[v]=∞ is discovered now for the first time at distance d[u]+1, which is the shortest possible (any shorter path would have been found at an earlier BFS level). This argument is the prototype for correctness proofs of [[Dijkstra Algorithm]] and [[A Star Algorithm]], showing how BFS's simplicity generates insight for its successors.
+The formal correctness of BFS rests on a simple invariant: when a vertex u is dequeued, d[u] equals the true shortest-path distance from source s to u. This is proved by induction on d[u]. Base case: d[s]=0 when s is enqueued. Inductive step: when u is dequeued, all vertices at distance d[u]−1 have already been dequeued (FIFO ordering ensures level-by-level processing). Every neighbour v of u with d[v]=∞ is discovered now for the first time at distance d[u]+1, which is the shortest possible (any shorter path would have been found at an earlier BFS level). This argument is the prototype for correctness proofs of [[Dijkstra Algorithm]] and [[A Star Algorithm]], showing how BFS's simplicity generates insight for its successors.
 
-  The relationship between BFS and [[Dijkstra Algorithm]] is particularly illuminating: Dijkstra's algorithm is exactly BFS on weighted graphs, replacing the FIFO queue with a priority queue ordered by cumulative cost g(v). [[A Star Algorithm]] extends Dijkstra by adding a heuristic estimate h(v) to the priority ordering, making the priority f(v) = g(v) + h(v). This hierarchy — BFS → Dijkstra → A* — represents the progression from uninformed to increasingly informed search, each generalising the previous. BFS also underlies many network-level algorithms: Prim's minimum spanning tree is BFS on edge weights; Kahn's topological sort is BFS on in-degree counts; the Hopcroft-Karp bipartite matching uses alternating BFS phases to find augmenting paths; and the Edmonds-Karp maximum-flow algorithm uses BFS to find shortest augmenting paths, yielding an O(VE^2) flow algorithm. BFS is thus not merely a standalone algorithm but a substrate from which a large fraction of classical graph algorithms are constructed.
+The relationship between BFS and [[Dijkstra Algorithm]] is particularly illuminating: Dijkstra's algorithm is exactly BFS on weighted graphs, replacing the FIFO queue with a priority queue ordered by cumulative cost g(v). [[A Star Algorithm]] extends Dijkstra by adding a heuristic estimate h(v) to the priority ordering, making the priority f(v) = g(v) + h(v). This hierarchy — BFS → Dijkstra → A* — represents the progression from uninformed to increasingly informed search, each generalising the previous. BFS also underlies many network-level algorithms: Prim's minimum spanning tree is BFS on edge weights; Kahn's topological sort is BFS on in-degree counts; the Hopcroft-Karp bipartite matching uses alternating BFS phases to find augmenting paths; and the Edmonds-Karp maximum-flow algorithm uses BFS to find shortest augmenting paths, yielding an O(VE^2) flow algorithm. BFS is thus not merely a standalone algorithm but a substrate from which a large fraction of classical graph algorithms are constructed.
 
-  The scalability of BFS to very large graphs is a major research challenge and engineering concern. Social networks, the Web graph, and biological interaction networks routinely have billions of vertices and hundreds of billions of edges. Running serial BFS on such graphs is infeasible; parallel BFS on multi-core CPUs, GPU clusters, and distributed memory systems is required. The Graph500 benchmark, introduced in 2010, has made parallel BFS the primary measure of supercomputer performance on graph workloads, driving a decade of algorithmic innovation. A key breakthrough was Beamer, Asanović, and Patterson's "direction-optimising" BFS (SC 2012), which switches between top-down (expanding frontier outward) and bottom-up (checking if any neighbour is in the frontier) phases depending on frontier size, dramatically reducing work on low-diameter graphs such as social networks. As of 2025, optimised implementations process tens of billions of edges per second on commodity multi-core servers. BFSBlitz (2025 FastCode challenge winner) achieves record edge traversal rates using bit-parallel frontier compression.
+The scalability of BFS to very large graphs is a major research challenge and engineering concern. Social networks, the Web graph, and biological interaction networks routinely have billions of vertices and hundreds of billions of edges. Running serial BFS on such graphs is infeasible; parallel BFS on multi-core CPUs, GPU clusters, and distributed memory systems is required. The Graph500 benchmark, introduced in 2010, has made parallel BFS the primary measure of supercomputer performance on graph workloads, driving a decade of algorithmic innovation. A key breakthrough was Beamer, Asanović, and Patterson's "direction-optimising" BFS (SC 2012), which switches between top-down (expanding frontier outward) and bottom-up (checking if any neighbour is in the frontier) phases depending on frontier size, dramatically reducing work on low-diameter graphs such as social networks. As of 2025, optimised implementations process tens of billions of edges per second on commodity multi-core servers. BFSBlitz (2025 FastCode challenge winner) achieves record edge traversal rates using bit-parallel frontier compression.
 
-  BFS occupies an interesting position in the relationship between classical algorithms and modern machine learning. GNNs have partially supplanted classical BFS for feature learning on graphs — GNNs propagate features along edges in a manner analogous to BFS layers but in a learned, differentiable fashion. However, BFS and BFS-derived distance labelling are used as structural features to initialise GNN node embeddings, providing graph-aware inductive biases. The Local Vertex Colouring GNN paper (arXiv:2403.06080, 2024) uses breadth-first colouring (BFC) — a BFS-derived node colouring scheme — to improve the expressivity of message-passing neural networks beyond the Weisfeiler-Lehman test. In the LLM reasoning domain, BFS-style [[Beam Search Decoding]] and Tree-of-Thought frameworks explore reasoning paths breadth-first to improve answer quality.
+BFS occupies an interesting position in the relationship between classical algorithms and modern machine learning. GNNs have partially supplanted classical BFS for feature learning on graphs — GNNs propagate features along edges in a manner analogous to BFS layers but in a learned, differentiable fashion. However, BFS and BFS-derived distance labelling are used as structural features to initialise GNN node embeddings, providing graph-aware inductive biases. The Local Vertex Colouring GNN paper (arXiv:2403.06080, 2024) uses breadth-first colouring (BFC) — a BFS-derived node colouring scheme — to improve the expressivity of message-passing neural networks beyond the Weisfeiler-Lehman test. In the LLM reasoning domain, BFS-style [[Beam Search Decoding]] and Tree-of-Thought frameworks explore reasoning paths breadth-first to improve answer quality.
 
-  ## Formal Algorithm
+## Formal Algorithm
 
-  BFS from source vertex s in graph G=(V,E):
+BFS from source vertex s in graph G=(V,E):
 
-  **Initialisation**
-  - For all v in V: colour[v] = WHITE, d[v] = ∞, parent[v] = NIL
-  - Set colour[s] = GREY, d[s] = 0, parent[s] = NIL
-  - Enqueue source vertex s into FIFO queue Q
-  - (For multi-source BFS: enqueue all sources at step 0 with d = 0)
+**Initialisation**
+
+- For all v in V: colour[v] = WHITE, d[v] = ∞, parent[v] = NIL
+- Set colour[s] = GREY, d[s] = 0, parent[s] = NIL
+- Enqueue source vertex s into FIFO queue Q
+- (For multi-source BFS: enqueue all sources at step 0 with d = 0)
 
   **Main Loop** (while Q is not empty)
-  - u = Dequeue(Q) — remove the front element
-  - For each vertex v in Adj[u] (neighbours of u):
-    - If colour[v] = WHITE (not yet discovered):
-      - colour[v] = GREY (discovered, in queue)
-      - d[v] = d[u] + 1
-      - parent[v] = u
-      - Enqueue(Q, v)
-  - colour[u] = BLACK (fully expanded)
+
+- u = Dequeue(Q) — remove the front element
+- For each vertex v in Adj[u] (neighbours of u):
+  - If colour[v] = WHITE (not yet discovered):
+    - colour[v] = GREY (discovered, in queue)
+    - d[v] = d[u] + 1
+    - parent[v] = u
+    - Enqueue(Q, v)
+- colour[u] = BLACK (fully expanded)
 
   **Termination**: Queue Q becomes empty when all reachable vertices have been expanded.
 
   **Result**
-  - d[v] = shortest path distance from s to v (∞ if v unreachable from s)
-  - parent[v] = predecessor of v on a shortest path from s to v
-  - Path reconstruction from s to target t: [t, parent[t], parent[parent[t]], ..., s] (reversed)
-  - BFS tree = spanning tree induced by parent[] over all reachable vertices
+
+- d[v] = shortest path distance from s to v (∞ if v unreachable from s)
+- parent[v] = predecessor of v on a shortest path from s to v
+- Path reconstruction from s to target t: [t, parent[t], parent[parent[t]], ..., s] (reversed)
+- BFS tree = spanning tree induced by parent[] over all reachable vertices
 
   **Complexity Analysis**
-  - Time: O(V + E)
-    - Each vertex: enqueued exactly once, dequeued exactly once → O(V) total enqueue/dequeue operations
-    - Each edge: examined at most twice (once for each endpoint in undirected graph) → O(E) total edge examinations
-    - Total: O(V + E) — linear in graph size
-  - Space: O(V)
-    - Queue holds at most all vertices: O(V)
-    - colour[], d[], parent[] arrays: each O(V)
-    - Total working memory: O(V)
-  - Branching-factor analysis (implicit state spaces):
-    - Branching factor b: average number of successors per state
-    - Shallowest goal depth d: BFS expands O(b^0 + b^1 + ... + b^d) = O(b^d) states
-    - Both time and space are O(b^d) — this exponential space is BFS's main limitation for deep searches
 
-  **Correctness Proof (sketch)**
-  - Claim: when vertex v is first dequeued, d[v] = δ(s,v) (true shortest distance)
-  - Proof by induction on BFS level k = d[v]:
-    - Base: s is enqueued with d[s] = 0 = δ(s,s) ✓
-    - Inductive step: assume all vertices at distance k have correct d[] when dequeued
-    - When vertex u at level k is expanded, it discovers neighbours v at level k+1 for the first time
-    - Any path from s to v has length ≥ k+1 (since no path can skip a level in BFS order)
-    - Therefore d[v] = k+1 = δ(s,v) ✓
-  - Consequence: BFS provides shortest paths — optimal for unit-cost edge problems
+- Time: O(V + E)
+  - Each vertex: enqueued exactly once, dequeued exactly once → O(V) total enqueue/dequeue operations
+  - Each edge: examined at most twice (once for each endpoint in undirected graph) → O(E) total edge examinations
+  - Total: O(V + E) — linear in graph size
+- Space: O(V)
+  - Queue holds at most all vertices: O(V)
+  - colour[], d[], parent[] arrays: each O(V)
+  - Total working memory: O(V)
+- Branching-factor analysis (implicit state spaces):
+  - Branching factor b: average number of successors per state
+  - Shallowest goal depth d: BFS expands O(b^0 + b^1 + ... + b^d) = O(b^d) states
+  - Both time and space are O(b^d) — this exponential space is BFS's main limitation for deep searches
+
+    **Correctness Proof (sketch)**
+
+- Claim: when vertex v is first dequeued, d[v] = δ(s,v) (true shortest distance)
+- Proof by induction on BFS level k = d[v]:
+  - Base: s is enqueued with d[s] = 0 = δ(s,s) ✓
+  - Inductive step: assume all vertices at distance k have correct d[] when dequeued
+  - When vertex u at level k is expanded, it discovers neighbours v at level k+1 for the first time
+  - Any path from s to v has length ≥ k+1 (since no path can skip a level in BFS order)
+  - Therefore d[v] = k+1 = δ(s,v) ✓
+- Consequence: BFS provides shortest paths — optimal for unit-cost edge problems
 
   ## Components / Architecture
 
   **FIFO Queue**
-  - The core data structure; determines BFS's level-by-level exploration order
-  - Standard implementation as a circular array or doubly-linked list with O(1) enqueue/dequeue
-  - Array-based queue is cache-friendlier than linked-list queue for dense graphs
-  - For multi-source BFS, initialise the queue with all source vertices simultaneously
-  - In parallel BFS, the queue is replaced with a distributed frontier data structure
+
+- The core data structure; determines BFS's level-by-level exploration order
+- Standard implementation as a circular array or doubly-linked list with O(1) enqueue/dequeue
+- Array-based queue is cache-friendlier than linked-list queue for dense graphs
+- For multi-source BFS, initialise the queue with all source vertices simultaneously
+- In parallel BFS, the queue is replaced with a distributed frontier data structure
 
   **Visited / Colour Array**
-  - Boolean or tri-colour (WHITE/GREY/BLACK) array indexed over all vertices
-  - WHITE = undiscovered, GREY = discovered but not yet expanded, BLACK = fully processed
-  - Prevents revisiting and allows detection of discovery vs. processing events
-  - Simple boolean visited[] suffices for most applications; tri-colour needed for edge classification
-  - In distributed BFS, distributed hash sets or bit-arrays partitioned across machines
+
+- Boolean or tri-colour (WHITE/GREY/BLACK) array indexed over all vertices
+- WHITE = undiscovered, GREY = discovered but not yet expanded, BLACK = fully processed
+- Prevents revisiting and allows detection of discovery vs. processing events
+- Simple boolean visited[] suffices for most applications; tri-colour needed for edge classification
+- In distributed BFS, distributed hash sets or bit-arrays partitioned across machines
 
   **Distance Array (d[v])**
-  - Integer array recording shortest path distance from source to each vertex
-  - Initialised to infinity (or −1 for unreachable); updated exactly once when vertex first discovered
-  - Values are guaranteed final at point of vertex discovery in BFS (no re-relaxation needed)
-  - For multi-source BFS: d[v] = distance from v to nearest source
+
+- Integer array recording shortest path distance from source to each vertex
+- Initialised to infinity (or −1 for unreachable); updated exactly once when vertex first discovered
+- Values are guaranteed final at point of vertex discovery in BFS (no re-relaxation needed)
+- For multi-source BFS: d[v] = distance from v to nearest source
 
   **Parent / Predecessor Array**
-  - parent[v] records the BFS tree predecessor of vertex v on the shortest path from source
-  - Path reconstruction: trace parent[] pointers back from target to source, then reverse
-  - Defines the BFS spanning tree: a subgraph of the input graph containing all tree edges
+
+- parent[v] records the BFS tree predecessor of vertex v on the shortest path from source
+- Path reconstruction: trace parent[] pointers back from target to source, then reverse
+- Defines the BFS spanning tree: a subgraph of the input graph containing all tree edges
 
   **BFS Tree and Edge Classification**
-  - BFS spanning tree: all tree edges (u,v) satisfy d[v] = d[u]+1
-  - In undirected BFS: all non-tree edges are cross edges with d[v] ≤ d[u]+1 (span at most one level)
-  - In directed BFS: edges can be tree, back (d[v] < d[u]), forward (d[v] > d[u]+1), or cross
-  - BFS trees are always shortest-path trees: every root-to-leaf path is a shortest path in the graph
+
+- BFS spanning tree: all tree edges (u,v) satisfy d[v] = d[u]+1
+- In undirected BFS: all non-tree edges are cross edges with d[v] ≤ d[u]+1 (span at most one level)
+- In directed BFS: edges can be tree, back (d[v] < d[u]), forward (d[v] > d[u]+1), or cross
+- BFS trees are always shortest-path trees: every root-to-leaf path is a shortest path in the graph
 
   **Adjacency Representation**
-  - BFS iterates over the neighbour list of each dequeued vertex
-  - Adjacency list: O(V+E) total work across entire BFS; preferred for sparse graphs
-  - Adjacency matrix: O(V) work per vertex expansion, O(V^2) total; only practical for dense small graphs
-  - Compressed Sparse Row (CSR) format: cache-efficient adjacency list for static graphs; standard in HPC BFS
+
+- BFS iterates over the neighbour list of each dequeued vertex
+- Adjacency list: O(V+E) total work across entire BFS; preferred for sparse graphs
+- Adjacency matrix: O(V) work per vertex expansion, O(V^2) total; only practical for dense small graphs
+- Compressed Sparse Row (CSR) format: cache-efficient adjacency list for static graphs; standard in HPC BFS
 
   **Multi-source BFS**
-  - Initialise queue with multiple source vertices simultaneously at distance 0
-  - Computes nearest-source distances for every vertex: d[v] = min distance from v to any source
-  - Used in Voronoi partitioning (assign each vertex to nearest facility)
-  - Used in nearest-facility queries (nearest hospital, nearest charging station)
-  - Used in bipartite connected component analysis and network load balancing
+
+- Initialise queue with multiple source vertices simultaneously at distance 0
+- Computes nearest-source distances for every vertex: d[v] = min distance from v to any source
+- Used in Voronoi partitioning (assign each vertex to nearest facility)
+- Used in nearest-facility queries (nearest hospital, nearest charging station)
+- Used in bipartite connected component analysis and network load balancing
 
   **Bidirectional BFS**
-  - Run BFS simultaneously from source s (forward) and target t (backward) 
-  - Alternate between expanding one level from each side until the two frontiers meet
-  - Reduces the explored frontier from O(b^d) to O(b^{d/2}): quadratic speedup in frontier size
-  - Convergence criterion (Kaindl & Kainz 1997): naive stopping when frontiers intersect is incorrect; must check that the meeting path is truly shortest
-  - Used in production map routing (Google Maps, Bing Maps) with contraction hierarchies for sub-ms queries
+
+- Run BFS simultaneously from source s (forward) and target t (backward) 
+- Alternate between expanding one level from each side until the two frontiers meet
+- Reduces the explored frontier from O(b^d) to O(b^{d/2}): quadratic speedup in frontier size
+- Convergence criterion (Kaindl & Kainz 1997): naive stopping when frontiers intersect is incorrect; must check that the meeting path is truly shortest
+- Used in production map routing (Google Maps, Bing Maps) with contraction hierarchies for sub-ms queries
 
   **Direction-Optimising BFS (Beamer, Asanovic, Patterson 2012)**
-  - Top-down phase: for each node u in current frontier, examine all neighbours and add unvisited ones
-  - Bottom-up phase: for each unvisited node v, check if any of its neighbours is in the frontier
-  - Switches from top-down to bottom-up when frontier becomes large (> ~5% of graph)
-  - Bottom-up phase dramatically reduces work on low-diameter graphs (social networks, web graphs)
-  - The key algorithmic innovation that makes parallel BFS practical for billion-node social graphs
+
+- Top-down phase: for each node u in current frontier, examine all neighbours and add unvisited ones
+- Bottom-up phase: for each unvisited node v, check if any of its neighbours is in the frontier
+- Switches from top-down to bottom-up when frontier becomes large (> ~5% of graph)
+- Bottom-up phase dramatically reduces work on low-diameter graphs (social networks, web graphs)
+- The key algorithmic innovation that makes parallel BFS practical for billion-node social graphs
 
   ## Comparison with Related Algorithms
 
@@ -232,92 +245,104 @@ Breadth-first search (BFS) is a graph and tree traversal algorithm that explores
   **1. Shortest Path in Unweighted Graphs**
   BFS computes single-source shortest paths in O(V+E) for unweighted graphs.
   Applications include:
-  - Network routing: hop count minimisation in router-level routing protocols (e.g. RIP, which uses hop count as its metric)
-  - Word-ladder puzzles: transform "cold" to "warm" via single-letter substitutions; each valid word is a vertex, edges connect words differing by one letter; BFS finds the minimum-step chain
-  - Six degrees of separation in social networks: BFS from any person node to discover the shortest acquaintance path to any other person in the network
-  - Minimum-step solutions to sliding-tile puzzles (8-puzzle, 15-puzzle) at shallow depth before switching to A* or IDA*
-  - Minimum-hop paths in computer networks, optical networks, and communication graphs
+
+- Network routing: hop count minimisation in router-level routing protocols (e.g. RIP, which uses hop count as its metric)
+- Word-ladder puzzles: transform "cold" to "warm" via single-letter substitutions; each valid word is a vertex, edges connect words differing by one letter; BFS finds the minimum-step chain
+- Six degrees of separation in social networks: BFS from any person node to discover the shortest acquaintance path to any other person in the network
+- Minimum-step solutions to sliding-tile puzzles (8-puzzle, 15-puzzle) at shallow depth before switching to A* or IDA*
+- Minimum-hop paths in computer networks, optical networks, and communication graphs
 
   **2. Web Crawling**
   Search engine crawlers (Googlebot, Bingbot, Baidu Spider) use BFS-like frontier expansion to discover web pages systematically.
-  - The frontier queue holds URLs to visit; each dequeued URL is fetched, parsed for outbound hyperlinks, and newly discovered links are enqueued
-  - BFS naturally discovers shallow/high-authority pages before deep ones, aligning with PageRank importance heuristics
-  - Production crawlers use a bounded priority queue combining BFS level with link authority signals
-  - Politeness constraints (robots.txt compliance, crawl rate limiting) are superimposed on the BFS frontier
-  - Focused crawling extends BFS with topic relevance filtering to constrain the frontier to topically relevant pages
+
+- The frontier queue holds URLs to visit; each dequeued URL is fetched, parsed for outbound hyperlinks, and newly discovered links are enqueued
+- BFS naturally discovers shallow/high-authority pages before deep ones, aligning with PageRank importance heuristics
+- Production crawlers use a bounded priority queue combining BFS level with link authority signals
+- Politeness constraints (robots.txt compliance, crawl rate limiting) are superimposed on the BFS frontier
+- Focused crawling extends BFS with topic relevance filtering to constrain the frontier to topically relevant pages
 
   **3. Social Network Analysis**
   BFS is the foundational algorithm for social graph neighbourhood exploration.
-  - LinkedIn "People You May Know" and "2nd-degree connections": BFS from a user node finds all users within k hops
-  - Facebook social distance computation: BFS computes minimum friendship hops between any two users; "six degrees" studies use BFS-derived histograms
-  - Twitter follower graph analysis: BFS-based reachability determines information diffusion bounds in the follower network
-  - Erdős number computation: BFS over the mathematics co-authorship graph from Paul Erdős's node gives each mathematician's Erdős number
-  - "People You May Know" feature scores candidate nodes by BFS distance + mutual friend count, weighted and filtered by ML ranking models
+
+- LinkedIn "People You May Know" and "2nd-degree connections": BFS from a user node finds all users within k hops
+- Facebook social distance computation: BFS computes minimum friendship hops between any two users; "six degrees" studies use BFS-derived histograms
+- Twitter follower graph analysis: BFS-based reachability determines information diffusion bounds in the follower network
+- Erdős number computation: BFS over the mathematics co-authorship graph from Paul Erdős's node gives each mathematician's Erdős number
+- "People You May Know" feature scores candidate nodes by BFS distance + mutual friend count, weighted and filtered by ML ranking models
 
   **4. Connected Components and Bipartite Detection**
   In an undirected graph, launching BFS from each unvisited vertex identifies all connected components in O(V+E).
-  - Component labelling: each BFS from a WHITE vertex colours an entire connected component with a unique label
-  - Bipartite detection: 2-colour vertices during BFS (alternating RED/BLUE by distance parity); if any edge connects two vertices of the same colour, an odd cycle exists and the graph is not bipartite
-  - Applications: job-scheduling conflict detection (bipartite = no conflicting constraint cycles), Sudoku validity checking (bipartite constraint graph), matching problem feasibility
-  - Network partition analysis: connected component structure reveals isolated subnetworks, facilitating fault diagnosis
+
+- Component labelling: each BFS from a WHITE vertex colours an entire connected component with a unique label
+- Bipartite detection: 2-colour vertices during BFS (alternating RED/BLUE by distance parity); if any edge connects two vertices of the same colour, an odd cycle exists and the graph is not bipartite
+- Applications: job-scheduling conflict detection (bipartite = no conflicting constraint cycles), Sudoku validity checking (bipartite constraint graph), matching problem feasibility
+- Network partition analysis: connected component structure reveals isolated subnetworks, facilitating fault diagnosis
 
   **5. Circuit Board Routing (Lee's Algorithm)**
   Lee (1961) applied BFS to VLSI printed-circuit-board routing.
-  - Grid cells represent routing locations; blocked cells (obstacles, existing traces) are impassable
-  - BFS from a source pin expands through the routing grid; goal is the target pin's cell
-  - Produces a shortest-path route (minimum wire length in terms of grid steps) avoiding all obstacles
-  - Modern EDA tools (Cadence, Synopsys) use BFS-derived maze routing as a fallback for complex net topologies where analytic routing fails
-  - The original Lee's algorithm has O(V) space for the grid; hierarchical variants reduce complexity for billion-cell modern VLSI designs
+
+- Grid cells represent routing locations; blocked cells (obstacles, existing traces) are impassable
+- BFS from a source pin expands through the routing grid; goal is the target pin's cell
+- Produces a shortest-path route (minimum wire length in terms of grid steps) avoiding all obstacles
+- Modern EDA tools (Cadence, Synopsys) use BFS-derived maze routing as a fallback for complex net topologies where analytic routing fails
+- The original Lee's algorithm has O(V) space for the grid; hierarchical variants reduce complexity for billion-cell modern VLSI designs
 
   **6. AI Game Playing and State-Space Search**
   BFS is used for state-space search in deterministic, fully observable environments with small branching factors.
-  - 8-puzzle and 15-puzzle: BFS finds optimal solutions at shallow depths (≤15 moves for 8-puzzle)
-  - Corn-maze, grid-maze, and labyrinth problems: BFS finds exit paths with minimum steps
-  - Base algorithm for IDDFS: BFS determines the correct depth threshold for iterative deepening
-  - Bidirectional BFS for two-player games at shallow depth: meet-in-the-middle approach halves search space
-  - In NPC pathfinding on unweighted tile maps, BFS provides a simple correct baseline; A* is used when weights (terrain cost) are present
+
+- 8-puzzle and 15-puzzle: BFS finds optimal solutions at shallow depths (≤15 moves for 8-puzzle)
+- Corn-maze, grid-maze, and labyrinth problems: BFS finds exit paths with minimum steps
+- Base algorithm for IDDFS: BFS determines the correct depth threshold for iterative deepening
+- Bidirectional BFS for two-player games at shallow depth: meet-in-the-middle approach halves search space
+- In NPC pathfinding on unweighted tile maps, BFS provides a simple correct baseline; A* is used when weights (terrain cost) are present
 
   **7. Network Topology Discovery and Spanning Trees**
   Network management tools use BFS to map router adjacencies and compute spanning trees for loop-free broadcast.
-  - Spanning Tree Protocol (STP) in Ethernet networks: BFS-derived tree construction from a root bridge eliminates switching loops
-  - OSPF (Open Shortest Path First): each router runs Dijkstra (= BFS on weighted graph) on the link-state database to compute its shortest-path tree to all other routers
-  - Network topology discovery: SNMP-based network management tools use BFS over LLDP/CDP adjacency data to build network topology maps
-  - Broadcast tree construction: BFS from a gateway router computes the broadcast spanning tree for multicast routing
+
+- Spanning Tree Protocol (STP) in Ethernet networks: BFS-derived tree construction from a root bridge eliminates switching loops
+- OSPF (Open Shortest Path First): each router runs Dijkstra (= BFS on weighted graph) on the link-state database to compute its shortest-path tree to all other routers
+- Network topology discovery: SNMP-based network management tools use BFS over LLDP/CDP adjacency data to build network topology maps
+- Broadcast tree construction: BFS from a gateway router computes the broadcast spanning tree for multicast routing
 
   **8. Parallel and GPU BFS for Graph Analytics**
   Large-scale graph processing systems implement parallel BFS for trillion-edge web graphs and social networks.
-  - GraphX (Apache Spark), Ligra (shared-memory), Gunrock (GPU), BFSBlitz (manycore): all implement parallel BFS as a core primitive
-  - Graph500 supercomputer benchmark: BFS is the primary workload; leading entries process >100 teraedge-traversals per second
-  - As of 2025, optimised parallel BFS achieves 9.5× speedup over serial on 48-thread CPU servers
-  - BFSBlitz (FastCode 2025 winner): record 9.3 billion edges per second on dense synthetic graphs using bit-parallel frontier compression
-  - GPU BFS for dynamic networks (Euro-Par 2024): maintains BFS trees under streaming edge arrivals
+
+- GraphX (Apache Spark), Ligra (shared-memory), Gunrock (GPU), BFSBlitz (manycore): all implement parallel BFS as a core primitive
+- Graph500 supercomputer benchmark: BFS is the primary workload; leading entries process >100 teraedge-traversals per second
+- As of 2025, optimised parallel BFS achieves 9.5× speedup over serial on 48-thread CPU servers
+- BFSBlitz (FastCode 2025 winner): record 9.3 billion edges per second on dense synthetic graphs using bit-parallel frontier compression
+- GPU BFS for dynamic networks (Euro-Par 2024): maintains BFS trees under streaming edge arrivals
 
   ## Benchmark Datasets and Performance Standards
 
   **Graph500 Benchmark**
-  - The primary HPC benchmark for graph analytics; BFS is the core workload
-  - Problem specification: generate a random Kronecker graph of scale s (2^s vertices) and 16×2^s edges, then run BFS from 64 random start vertices and report Traversed Edges Per Second (TEPS)
-  - Graph500 scale levels: Toy (26 vertices), Mini (29), Small (232), Medium (236), Large (239), Huge (242)
-  - 2025 rankings: leading petascale HPC systems achieve >100 teraedge-traversals per second on scale-42 inputs
-  - The benchmark evaluates memory bandwidth, irregular access patterns, and parallel communication overhead — not floating-point throughput
+
+- The primary HPC benchmark for graph analytics; BFS is the core workload
+- Problem specification: generate a random Kronecker graph of scale s (2^s vertices) and 16×2^s edges, then run BFS from 64 random start vertices and report Traversed Edges Per Second (TEPS)
+- Graph500 scale levels: Toy (26 vertices), Mini (29), Small (232), Medium (236), Large (239), Huge (242)
+- 2025 rankings: leading petascale HPC systems achieve >100 teraedge-traversals per second on scale-42 inputs
+- The benchmark evaluates memory bandwidth, irregular access patterns, and parallel communication overhead — not floating-point throughput
 
   **Moving AI Lab Pathfinding Benchmarks (BFS Baseline)**
-  - Nathan Sturtevant's benchmark suite provides 2D grid maps where BFS serves as the unweighted shortest-path baseline
-  - Dragon Age Origins maps (156 maps), StarCraft maps (75 maps), Baldur's Gate maps (75 maps)
-  - Random grid maps at varying obstacle densities (5%–40% blocked cells)
-  - BFS node expansion counts and path lengths serve as the optimality lower bound; A* and JPS are measured against BFS-optimal solutions
-  - Available at: https://movingai.com/benchmarks/
+
+- Nathan Sturtevant's benchmark suite provides 2D grid maps where BFS serves as the unweighted shortest-path baseline
+- Dragon Age Origins maps (156 maps), StarCraft maps (75 maps), Baldur's Gate maps (75 maps)
+- Random grid maps at varying obstacle densities (5%–40% blocked cells)
+- BFS node expansion counts and path lengths serve as the optimality lower bound; A* and JPS are measured against BFS-optimal solutions
+- Available at: https://movingai.com/benchmarks/
 
   **Graph Processing System Benchmarks**
-  - GAP Benchmark Suite (Beamer 2015): 6 graph kernels including BFS on 6 real-world graphs (road network, Twitter, web crawl, kron synthetic, urand, LiveJournal)
-  - GraphChallenge: HPC and ML graph algorithm challenges including BFS performance on static and dynamic graphs
-  - LDBC Social Network Benchmark: BFS-based shortest-path queries on synthetic social network graphs
-  - Stanford Large Network Dataset Collection (SNAP): BFS-derived metrics (diameter, clustering) on 100+ real social and web graphs
+
+- GAP Benchmark Suite (Beamer 2015): 6 graph kernels including BFS on 6 real-world graphs (road network, Twitter, web crawl, kron synthetic, urand, LiveJournal)
+- GraphChallenge: HPC and ML graph algorithm challenges including BFS performance on static and dynamic graphs
+- LDBC Social Network Benchmark: BFS-based shortest-path queries on synthetic social network graphs
+- Stanford Large Network Dataset Collection (SNAP): BFS-derived metrics (diameter, clustering) on 100+ real social and web graphs
 
   **Social Network Datasets for BFS Analysis**
-  - Twitter follow graph (1.5 billion edges): BFS-based degree-of-separation analysis; most pairs are within 4.67 hops (2012 study)
-  - Facebook friendship graph: BFS showed average degrees of separation ~3.5 (2016 study); the "six degrees" finding validated
-  - SNAP ego-networks: BFS from ego nodes to characterise local neighbourhood structure in Facebook, Twitter, Google+ networks
+
+- Twitter follow graph (1.5 billion edges): BFS-based degree-of-separation analysis; most pairs are within 4.67 hops (2012 study)
+- Facebook friendship graph: BFS showed average degrees of separation ~3.5 (2016 study); the "six degrees" finding validated
+- SNAP ego-networks: BFS from ego nodes to characterise local neighbourhood structure in Facebook, Twitter, Google+ networks
 
   ## Academic Context
 
@@ -338,27 +363,31 @@ Breadth-first search (BFS) is a graph and tree traversal algorithm that explores
   BFS remains universally taught in undergraduate algorithms curricula and is one of the most used graph primitives in production software. Key developments as of 2024–2026:
 
   **High-Performance Parallel BFS**
-  - Graph500 benchmark (2025): petascale HPC systems (Frontier at ORNL, Leonardo in Europe) process trillion-vertex BFS traversals, with leading entries exceeding 100 teraedge-traversals per second
-  - BFSBlitz (2025, ACM FastCode winner): record edge traversal rates using bit-parallel frontier compression on manycore systems
-  - Optimised Parallel BFS with Adaptive Strategies (FastCode 2025, ACM DL 10.1145/3711708.3723449): 9.5× speedup, 9.3 billion edges/second on 48-thread server
-  - Parallel Cluster-BFS (ALENEX 2025): hierarchical parallel BFS exploiting cluster structure, 2–5× improvement on power-law graphs
-  - GPU-Accelerated BFS for Dynamic Networks (Euro-Par 2024): BFS tree maintenance under continuous edge insertions/deletions, targeting real-time social network monitoring
+
+- Graph500 benchmark (2025): petascale HPC systems (Frontier at ORNL, Leonardo in Europe) process trillion-vertex BFS traversals, with leading entries exceeding 100 teraedge-traversals per second
+- BFSBlitz (2025, ACM FastCode winner): record edge traversal rates using bit-parallel frontier compression on manycore systems
+- Optimised Parallel BFS with Adaptive Strategies (FastCode 2025, ACM DL 10.1145/3711708.3723449): 9.5× speedup, 9.3 billion edges/second on 48-thread server
+- Parallel Cluster-BFS (ALENEX 2025): hierarchical parallel BFS exploiting cluster structure, 2–5× improvement on power-law graphs
+- GPU-Accelerated BFS for Dynamic Networks (Euro-Par 2024): BFS tree maintenance under continuous edge insertions/deletions, targeting real-time social network monitoring
 
   **BFS in Graph Neural Networks**
-  - Local Vertex Colouring GNNs (arXiv:2403.06080, 2024): BFS-derived breadth-first colouring improves GNN expressivity beyond 1-WL Weisfeiler-Lehman test
-  - BFS level structure used as structural position encodings in Graph Transformers (2024–2025), improving long-range dependency modelling
-  - BFS distance labels as node features in knowledge graph embedding models, providing topological context for entity representation
+
+- Local Vertex Colouring GNNs (arXiv:2403.06080, 2024): BFS-derived breadth-first colouring improves GNN expressivity beyond 1-WL Weisfeiler-Lehman test
+- BFS level structure used as structural position encodings in Graph Transformers (2024–2025), improving long-range dependency modelling
+- BFS distance labels as node features in knowledge graph embedding models, providing topological context for entity representation
 
   **BFS in LLM Reasoning**
-  - Tree-of-Thought (Yao et al., 2023): BFS-style exploration of multi-step reasoning paths improves LLM performance on mathematical and logical tasks
-  - Graph-of-Thought paradigm (2024): explicit BFS-like exploration over knowledge graph neighbourhoods for complex QA
-  - [[Beam Search Decoding]] in LLMs: bounded-frontier BFS over token sequences; BFS informs the theoretical analysis of beam search completeness and optimality trade-offs
-  - RAG (retrieval-augmented generation) with knowledge graph BFS: multi-hop BFS over knowledge graph neighbourhoods enables retrieval of multi-step reasoning paths rather than single documents
+
+- Tree-of-Thought (Yao et al., 2023): BFS-style exploration of multi-step reasoning paths improves LLM performance on mathematical and logical tasks
+- Graph-of-Thought paradigm (2024): explicit BFS-like exploration over knowledge graph neighbourhoods for complex QA
+- [[Beam Search Decoding]] in LLMs: bounded-frontier BFS over token sequences; BFS informs the theoretical analysis of beam search completeness and optimality trade-offs
+- RAG (retrieval-augmented generation) with knowledge graph BFS: multi-hop BFS over knowledge graph neighbourhoods enables retrieval of multi-step reasoning paths rather than single documents
 
   **Space-Efficient and Streaming BFS**
-  - Semi-external BFS (arXiv:2507.12925, 2025): BFS on graphs where vertices fit in RAM but edges must be streamed from disk, enabling web-scale single-machine processing
-  - Approximate BFS via HyperBall and HyperANF sketching: sublinear-space approximation of BFS-derived distance distribution statistics for trillion-vertex web graphs
-  - Quantum BFS proposals: theoretical quadratic speedup using Grover-search-enhanced frontier expansion; circuit designs emerging but no near-term hardware demonstrations
+
+- Semi-external BFS (arXiv:2507.12925, 2025): BFS on graphs where vertices fit in RAM but edges must be streamed from disk, enabling web-scale single-machine processing
+- Approximate BFS via HyperBall and HyperANF sketching: sublinear-space approximation of BFS-derived distance distribution statistics for trillion-vertex web graphs
+- Quantum BFS proposals: theoretical quadratic speedup using Grover-search-enhanced frontier expansion; circuit designs emerging but no near-term hardware demonstrations
 
   ## UK Context
 
@@ -430,62 +459,71 @@ Breadth-first search (BFS) is a graph and tree traversal algorithm that explores
   ## Key Terminology
 
   **BFS tree**
-  - The spanning tree of BFS-discovered edges; all tree edges (u,v) satisfy d[v] = d[u]+1
-  - Defines the structure of shortest paths from the source to all reachable vertices
-  - Every root-to-leaf path in the BFS tree is a shortest path in the original graph
-  - In undirected graphs: non-tree edges can only connect vertices within the same level or adjacent levels
+
+- The spanning tree of BFS-discovered edges; all tree edges (u,v) satisfy d[v] = d[u]+1
+- Defines the structure of shortest paths from the source to all reachable vertices
+- Every root-to-leaf path in the BFS tree is a shortest path in the original graph
+- In undirected graphs: non-tree edges can only connect vertices within the same level or adjacent levels
 
   **Level / BFS layer**
-  - The set of all vertices at distance k from the source; written L_k = {v : d[v] = k}
-  - BFS processes levels in strictly increasing order: L_0, L_1, L_2, ...
-  - The queue at any moment contains at most two consecutive levels (level k and level k+1)
-  - Level structure is the defining property that gives BFS its shortest-path guarantee
+
+- The set of all vertices at distance k from the source; written L_k = {v : d[v] = k}
+- BFS processes levels in strictly increasing order: L_0, L_1, L_2, ...
+- The queue at any moment contains at most two consecutive levels (level k and level k+1)
+- Level structure is the defining property that gives BFS its shortest-path guarantee
 
   **Frontier**
-  - The current set of GREY (discovered but not yet expanded) vertices held in the FIFO queue
-  - At any moment during BFS, the frontier spans at most two consecutive levels (k and k+1)
-  - Frontier size determines BFS space requirement: O(|L_k| + |L_{k+1}|) at level k
-  - In parallel BFS: the frontier is partitioned across processors or GPU threads
+
+- The current set of GREY (discovered but not yet expanded) vertices held in the FIFO queue
+- At any moment during BFS, the frontier spans at most two consecutive levels (k and k+1)
+- Frontier size determines BFS space requirement: O(|L_k| + |L_{k+1}|) at level k
+- In parallel BFS: the frontier is partitioned across processors or GPU threads
 
   **Shortest path (unweighted)**
-  - The path from source s to vertex v with minimum edge count; BFS finds this optimally in O(V+E)
-  - The first time BFS reaches v, it uses the shortest route (minimum number of hops)
-  - For weighted graphs, BFS does NOT find the minimum-weight path — Dijkstra or A* is required
-  - On unit-weight graphs, BFS shortest path = minimum-weight path
+
+- The path from source s to vertex v with minimum edge count; BFS finds this optimally in O(V+E)
+- The first time BFS reaches v, it uses the shortest route (minimum number of hops)
+- For weighted graphs, BFS does NOT find the minimum-weight path — Dijkstra or A* is required
+- On unit-weight graphs, BFS shortest path = minimum-weight path
 
   **Direction-optimising BFS**
-  - Beamer et al.'s (SC 2012) technique switching between top-down and bottom-up phases
-  - Top-down: for each frontier vertex u, check all of u's neighbours and enqueue unvisited ones
-  - Bottom-up: for each unvisited vertex v, check if any of v's neighbours is in the frontier
-  - Switches to bottom-up when frontier size > ~5% of total vertices (heuristic threshold)
-  - Reduces work from O(frontier × average degree) to O(unvisited vertices) during large-frontier phases
-  - Critically important for power-law graphs (social networks) where frontier can be very large
+
+- Beamer et al.'s (SC 2012) technique switching between top-down and bottom-up phases
+- Top-down: for each frontier vertex u, check all of u's neighbours and enqueue unvisited ones
+- Bottom-up: for each unvisited vertex v, check if any of v's neighbours is in the frontier
+- Switches to bottom-up when frontier size > ~5% of total vertices (heuristic threshold)
+- Reduces work from O(frontier × average degree) to O(unvisited vertices) during large-frontier phases
+- Critically important for power-law graphs (social networks) where frontier can be very large
 
   **Multi-source BFS**
-  - BFS initialised from multiple source vertices simultaneously at distance 0
-  - Computes the nearest-source distance for every reachable vertex: d[v] = min_{s in Sources} δ(s,v)
-  - Used for Voronoi partitioning (assign each vertex to nearest facility)
-  - Used for nearest-facility queries (nearest hospital, nearest emergency service)
-  - Used in graph partitioning: multi-source BFS from k seeds produces a k-partition of the graph
+
+- BFS initialised from multiple source vertices simultaneously at distance 0
+- Computes the nearest-source distance for every reachable vertex: d[v] = min_{s in Sources} δ(s,v)
+- Used for Voronoi partitioning (assign each vertex to nearest facility)
+- Used for nearest-facility queries (nearest hospital, nearest emergency service)
+- Used in graph partitioning: multi-source BFS from k seeds produces a k-partition of the graph
 
   **Bidirectional BFS**
-  - BFS run from source s (forward) and target t (backward) simultaneously
-  - Optimal meeting-in-the-middle strategy: reduces frontier size from O(b^d) to O(2×b^{d/2})
-  - Requires careful convergence criterion (Kaindl & Kainz 1997) to guarantee shortest path optimality
-  - Used in production map routing with contraction hierarchies for sub-millisecond queries on continental road networks
+
+- BFS run from source s (forward) and target t (backward) simultaneously
+- Optimal meeting-in-the-middle strategy: reduces frontier size from O(b^d) to O(2×b^{d/2})
+- Requires careful convergence criterion (Kaindl & Kainz 1997) to guarantee shortest path optimality
+- Used in production map routing with contraction hierarchies for sub-millisecond queries on continental road networks
 
   **[[Beam Search Decoding]]**
-  - Memory-bounded BFS variant keeping only the k best frontier nodes (the "beam") per level
-  - Used in language model sequence decoding: k = beam width, levels = token positions
-  - Sacrifices completeness (may miss the optimal sequence) and optimality for tractability on very wide frontiers
-  - BFS is the theoretical limit of beam search as k → ∞ (complete search)
+
+- Memory-bounded BFS variant keeping only the k best frontier nodes (the "beam") per level
+- Used in language model sequence decoding: k = beam width, levels = token positions
+- Sacrifices completeness (may miss the optimal sequence) and optimality for tractability on very wide frontiers
+- BFS is the theoretical limit of beam search as k → ∞ (complete search)
 
   **Graph500**
-  - The primary HPC benchmark for graph analytics, measuring supercomputer performance on graph workloads
-  - Core workload: BFS from 64 random start vertices on a large Kronecker random graph
-  - Performance metric: Traversed Edges Per Second (TEPS) — edges explored per second of wall time
-  - Representative of irregular memory access patterns (cache misses, random DRAM accesses) in real graphs
-  - 2025 Top-10 systems achieve >100 TTEPS (tera-traversed-edges-per-second) on scale-42 inputs
 
-- ### Provenance
+- The primary HPC benchmark for graph analytics, measuring supercomputer performance on graph workloads
+- Core workload: BFS from 64 random start vertices on a large Kronecker random graph
+- Performance metric: Traversed Edges Per Second (TEPS) — edges explored per second of wall time
+- Representative of irregular memory access patterns (cache misses, random DRAM accesses) in real graphs
+- 2025 Top-10 systems achieve >100 TTEPS (tera-traversed-edges-per-second) on scale-42 inputs
+
+### Provenance
 

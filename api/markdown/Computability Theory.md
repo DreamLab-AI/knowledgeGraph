@@ -1,119 +1,118 @@
-
 Computability theory, also known as recursion theory, is the branch of mathematical logic and theoretical computer science that studies which problems can be solved algorithmically in principle, independent of resource constraints. It defines models of computation such as the Turing machine, establishes the existence of undecidable problems like the halting problem, and characterises the limits of effective procedures via the Church-Turing thesis. It contrasts with complexity theory, which asks how efficiently solvable problems can be solved.
 
-- ### Semantic Classification
+### Semantic Classification
 
-- ### Content
+### Content
 
-  ## Compositional Relationships (Components)
-      SubClassOf(ai:ComputabilityTheory
-        ObjectSomeValuesFrom(ai:hasPart ai:TuringMachine))
-      SubClassOf(ai:ComputabilityTheory
-        ObjectSomeValuesFrom(ai:hasPart ai:LambdaCalculus))
-      SubClassOf(ai:ComputabilityTheory
-        ObjectSomeValuesFrom(ai:hasPart ai:RecursiveFunction))
-      SubClassOf(ai:ComputabilityTheory
-        ObjectSomeValuesFrom(ai:hasPart ai:AutomataTheory))
-      SubClassOf(ai:ComputabilityTheory
-        ObjectSomeValuesFrom(ai:hasPart ai:FormalLanguage))
-      SubClassOf(ai:ComputabilityTheory
-        ObjectSomeValuesFrom(ai:hasPart ai:Decidability))
-      SubClassOf(ai:ComputabilityTheory
-        ObjectSomeValuesFrom(ai:hasPart ai:TuringDegree))
+## Compositional Relationships (Components)
+    SubClassOf(ai:ComputabilityTheory
+      ObjectSomeValuesFrom(ai:hasPart ai:TuringMachine))
+    SubClassOf(ai:ComputabilityTheory
+      ObjectSomeValuesFrom(ai:hasPart ai:LambdaCalculus))
+    SubClassOf(ai:ComputabilityTheory
+      ObjectSomeValuesFrom(ai:hasPart ai:RecursiveFunction))
+    SubClassOf(ai:ComputabilityTheory
+      ObjectSomeValuesFrom(ai:hasPart ai:AutomataTheory))
+    SubClassOf(ai:ComputabilityTheory
+      ObjectSomeValuesFrom(ai:hasPart ai:FormalLanguage))
+    SubClassOf(ai:ComputabilityTheory
+      ObjectSomeValuesFrom(ai:hasPart ai:Decidability))
+    SubClassOf(ai:ComputabilityTheory
+      ObjectSomeValuesFrom(ai:hasPart ai:TuringDegree))
 
-  ## Dependency Relationships
-      SubClassOf(ai:ComputabilityTheory
-        ObjectSomeValuesFrom(ai:requires ai:MathematicalLogic))
-      SubClassOf(ai:ComputabilityTheory
-        ObjectSomeValuesFrom(ai:requires ai:SetTheory))
-      SubClassOf(ai:ComputabilityTheory
-        ObjectSomeValuesFrom(ai:requires ai:ProofTheory))
-      SubClassOf(ai:ComputabilityTheory
-        ObjectSomeValuesFrom(ai:dependsOn ai:MathematicalLogic))
-      SubClassOf(ai:ComputabilityTheory
-        ObjectSomeValuesFrom(ai:dependsOn ai:SetTheory))
-      SubClassOf(ai:ComputabilityTheory
-        ObjectSomeValuesFrom(ai:uses ai:GodelIncompletenessTheorems))
-      SubClassOf(ai:ComputabilityTheory
-        ObjectSomeValuesFrom(ai:uses ai:FixedPointTheorem))
-      SubClassOf(ai:ComputabilityTheory
-        ObjectSomeValuesFrom(ai:uses ai:Reduction))
+## Dependency Relationships
+    SubClassOf(ai:ComputabilityTheory
+      ObjectSomeValuesFrom(ai:requires ai:MathematicalLogic))
+    SubClassOf(ai:ComputabilityTheory
+      ObjectSomeValuesFrom(ai:requires ai:SetTheory))
+    SubClassOf(ai:ComputabilityTheory
+      ObjectSomeValuesFrom(ai:requires ai:ProofTheory))
+    SubClassOf(ai:ComputabilityTheory
+      ObjectSomeValuesFrom(ai:dependsOn ai:MathematicalLogic))
+    SubClassOf(ai:ComputabilityTheory
+      ObjectSomeValuesFrom(ai:dependsOn ai:SetTheory))
+    SubClassOf(ai:ComputabilityTheory
+      ObjectSomeValuesFrom(ai:uses ai:GodelIncompletenessTheorems))
+    SubClassOf(ai:ComputabilityTheory
+      ObjectSomeValuesFrom(ai:uses ai:FixedPointTheorem))
+    SubClassOf(ai:ComputabilityTheory
+      ObjectSomeValuesFrom(ai:uses ai:Reduction))
 
-  ## Capability Relationships
-      SubClassOf(ai:ComputabilityTheory
-        ObjectSomeValuesFrom(ai:enables ai:AutomataTheory))
-      SubClassOf(ai:ComputabilityTheory
-        ObjectSomeValuesFrom(ai:enables ai:ProgrammeVerification))
-      SubClassOf(ai:ComputabilityTheory
-        ObjectSomeValuesFrom(ai:enables ai:AutomatedTheoremProving))
-      SubClassOf(ai:ComputabilityTheory
-        ObjectSomeValuesFrom(ai:enables ai:ModelChecking))
-      SubClassOf(ai:ComputabilityTheory
-        ObjectSomeValuesFrom(ai:enables ai:ProgrammingLanguageTheory))
-      SubClassOf(ai:ComputabilityTheory
-        ObjectSomeValuesFrom(ai:supports ai:KnowledgeRepresentation))
-      SubClassOf(ai:ComputabilityTheory
-        ObjectSomeValuesFrom(ai:supports ai:AutomatedReasoning))
-      SubClassOf(ai:ComputabilityTheory
-        ObjectSomeValuesFrom(ai:supports ai:AISafety))
-      SubClassOf(ai:ComputabilityTheory
-        ObjectSomeValuesFrom(ai:supports ai:Cryptography))
+## Capability Relationships
+    SubClassOf(ai:ComputabilityTheory
+      ObjectSomeValuesFrom(ai:enables ai:AutomataTheory))
+    SubClassOf(ai:ComputabilityTheory
+      ObjectSomeValuesFrom(ai:enables ai:ProgrammeVerification))
+    SubClassOf(ai:ComputabilityTheory
+      ObjectSomeValuesFrom(ai:enables ai:AutomatedTheoremProving))
+    SubClassOf(ai:ComputabilityTheory
+      ObjectSomeValuesFrom(ai:enables ai:ModelChecking))
+    SubClassOf(ai:ComputabilityTheory
+      ObjectSomeValuesFrom(ai:enables ai:ProgrammingLanguageTheory))
+    SubClassOf(ai:ComputabilityTheory
+      ObjectSomeValuesFrom(ai:supports ai:KnowledgeRepresentation))
+    SubClassOf(ai:ComputabilityTheory
+      ObjectSomeValuesFrom(ai:supports ai:AutomatedReasoning))
+    SubClassOf(ai:ComputabilityTheory
+      ObjectSomeValuesFrom(ai:supports ai:AISafety))
+    SubClassOf(ai:ComputabilityTheory
+      ObjectSomeValuesFrom(ai:supports ai:Cryptography))
 
-  ## Implementation Relationships
-      SubClassOf(ai:ComputabilityTheory
-        ObjectSomeValuesFrom(ai:implements ai:ChurchTuringThesis))
-      SubClassOf(ai:ComputabilityTheory
-        ObjectSomeValuesFrom(ai:implements ai:Reduction))
-      SubClassOf(ai:ComputabilityTheory
-        ObjectSomeValuesFrom(ai:relatedTo ai:Algorithm))
-      SubClassOf(ai:ComputabilityTheory
-        ObjectSomeValuesFrom(ai:relatedTo ai:InformationTheory))
-      SubClassOf(ai:ComputabilityTheory
-        ObjectSomeValuesFrom(ai:relatedTo ai:KolmogorovComplexity))
-      SubClassOf(ai:ComputabilityTheory
-        ObjectSomeValuesFrom(ai:relatedTo ai:QuantumComputing))
-      SubClassOf(ai:ComputabilityTheory
-        ObjectSomeValuesFrom(ai:relatedTo ai:TypeTheory))
+## Implementation Relationships
+    SubClassOf(ai:ComputabilityTheory
+      ObjectSomeValuesFrom(ai:implements ai:ChurchTuringThesis))
+    SubClassOf(ai:ComputabilityTheory
+      ObjectSomeValuesFrom(ai:implements ai:Reduction))
+    SubClassOf(ai:ComputabilityTheory
+      ObjectSomeValuesFrom(ai:relatedTo ai:Algorithm))
+    SubClassOf(ai:ComputabilityTheory
+      ObjectSomeValuesFrom(ai:relatedTo ai:InformationTheory))
+    SubClassOf(ai:ComputabilityTheory
+      ObjectSomeValuesFrom(ai:relatedTo ai:KolmogorovComplexity))
+    SubClassOf(ai:ComputabilityTheory
+      ObjectSomeValuesFrom(ai:relatedTo ai:QuantumComputing))
+    SubClassOf(ai:ComputabilityTheory
+      ObjectSomeValuesFrom(ai:relatedTo ai:TypeTheory))
 
-  ## Reduction Relationships
-      SubClassOf(ai:ComputabilityTheory
-        ObjectSomeValuesFrom(ai:reducesTo ai:MathematicalLogic))
-      SubClassOf(ai:ComputabilityTheory
-        ObjectSomeValuesFrom(ai:reducesTo ai:ProofTheory))
-      SubClassOf(ai:ComputabilityTheory
-        ObjectSomeValuesFrom(ai:contrastsWith ai:ComputationalComplexityTheory))
-      SubClassOf(ai:ComputabilityTheory
-        ObjectSomeValuesFrom(ai:contrastsWith ai:Hypercomputation))
-      SubClassOf(ai:ComputabilityTheory
-        ObjectSomeValuesFrom(ai:bridgesTo ai:ArtificialIntelligence))
-      SubClassOf(ai:ComputabilityTheory
-        ObjectSomeValuesFrom(ai:relatedTo ai:MachineLearning))
-      SubClassOf(ai:ComputabilityTheory
-        ObjectSomeValuesFrom(ai:relatedTo ai:DescriptiveComplexity))
-      SubClassOf(ai:ComputabilityTheory
-        ObjectSomeValuesFrom(ai:supports ai:ReversMathematics))
-      SubClassOf(ai:ComputabilityTheory
-        ObjectSomeValuesFrom(ai:implements ai:Enumeration))
-      SubClassOf(ai:ComputabilityTheory
-        ObjectSomeValuesFrom(ai:implements ai:SemiDecidability))
-      SubClassOf(ai:ComputabilityTheory
-        ObjectSomeValuesFrom(ai:dependsOn ai:GodelIncompletenessTheorems))
+## Reduction Relationships
+    SubClassOf(ai:ComputabilityTheory
+      ObjectSomeValuesFrom(ai:reducesTo ai:MathematicalLogic))
+    SubClassOf(ai:ComputabilityTheory
+      ObjectSomeValuesFrom(ai:reducesTo ai:ProofTheory))
+    SubClassOf(ai:ComputabilityTheory
+      ObjectSomeValuesFrom(ai:contrastsWith ai:ComputationalComplexityTheory))
+    SubClassOf(ai:ComputabilityTheory
+      ObjectSomeValuesFrom(ai:contrastsWith ai:Hypercomputation))
+    SubClassOf(ai:ComputabilityTheory
+      ObjectSomeValuesFrom(ai:bridgesTo ai:ArtificialIntelligence))
+    SubClassOf(ai:ComputabilityTheory
+      ObjectSomeValuesFrom(ai:relatedTo ai:MachineLearning))
+    SubClassOf(ai:ComputabilityTheory
+      ObjectSomeValuesFrom(ai:relatedTo ai:DescriptiveComplexity))
+    SubClassOf(ai:ComputabilityTheory
+      ObjectSomeValuesFrom(ai:supports ai:ReversMathematics))
+    SubClassOf(ai:ComputabilityTheory
+      ObjectSomeValuesFrom(ai:implements ai:Enumeration))
+    SubClassOf(ai:ComputabilityTheory
+      ObjectSomeValuesFrom(ai:implements ai:SemiDecidability))
+    SubClassOf(ai:ComputabilityTheory
+      ObjectSomeValuesFrom(ai:dependsOn ai:GodelIncompletenessTheorems))
 
-  ## About
-  Computability theory emerged in the 1930s as a response to David Hilbert's Entscheidungsproblem — the decision problem asking whether every mathematical statement expressible in [[Mathematical Logic|first-order logic]] is decidable by a mechanical procedure. Hilbert's programme, articulated at the 1928 International Congress of Mathematicians, sought to mechanise mathematical truth itself: to find an [[Algorithm]] that, given any well-formed mathematical sentence, would determine in finite time whether it was a theorem of the relevant axiom system. The programme was dramatically undermined by Kurt [[Gödel Incompleteness Theorems|Gödel's Incompleteness Theorems]] (1931), which showed that sufficiently expressive formal systems contain true but unprovable statements, and further that no consistent system can prove its own consistency. But it was Alonzo Church (1936) and Alan Turing (1936) who delivered the decisive blow: Church proved a negative answer to the Entscheidungsproblem using his [[Lambda Calculus]] (showing that the equality of lambda terms is not decidable), and Turing provided an equivalent negative answer using his abstract [[Turing Machine]] model (constructing the [[Halting Problem]] as an undecidable problem and reducing the Entscheidungsproblem to it). These results were quickly shown equivalent, and the [[Church-Turing Thesis]] crystallised: every effectively calculable function is Turing computable. This was not a mathematical theorem but a philosophical thesis — a claim about the extensional content of the intuitive notion of effective procedure — supported by the empirical observation that all other proposed computation models (Emil Post's canonical systems 1936, Stephen Kleene's [[Recursive Function]] theory 1936, register machines, tag systems, [[Cellular Automata]], [[Combinatory Logic]]) compute exactly the same class of functions. No counterexample to the [[Church-Turing Thesis]] in the classical setting has ever been found, though its status in quantum and continuous physics remains philosophically contested.
+## About
+Computability theory emerged in the 1930s as a response to David Hilbert's Entscheidungsproblem — the decision problem asking whether every mathematical statement expressible in [[Mathematical Logic|first-order logic]] is decidable by a mechanical procedure. Hilbert's programme, articulated at the 1928 International Congress of Mathematicians, sought to mechanise mathematical truth itself: to find an [[Algorithm]] that, given any well-formed mathematical sentence, would determine in finite time whether it was a theorem of the relevant axiom system. The programme was dramatically undermined by Kurt [[Gödel Incompleteness Theorems|Gödel's Incompleteness Theorems]] (1931), which showed that sufficiently expressive formal systems contain true but unprovable statements, and further that no consistent system can prove its own consistency. But it was Alonzo Church (1936) and Alan Turing (1936) who delivered the decisive blow: Church proved a negative answer to the Entscheidungsproblem using his [[Lambda Calculus]] (showing that the equality of lambda terms is not decidable), and Turing provided an equivalent negative answer using his abstract [[Turing Machine]] model (constructing the [[Halting Problem]] as an undecidable problem and reducing the Entscheidungsproblem to it). These results were quickly shown equivalent, and the [[Church-Turing Thesis]] crystallised: every effectively calculable function is Turing computable. This was not a mathematical theorem but a philosophical thesis — a claim about the extensional content of the intuitive notion of effective procedure — supported by the empirical observation that all other proposed computation models (Emil Post's canonical systems 1936, Stephen Kleene's [[Recursive Function]] theory 1936, register machines, tag systems, [[Cellular Automata]], [[Combinatory Logic]]) compute exactly the same class of functions. No counterexample to the [[Church-Turing Thesis]] in the classical setting has ever been found, though its status in quantum and continuous physics remains philosophically contested.
 
-  The undecidability of the [[Halting Problem]] — proved by Turing via a diagonalisation argument showing that the set HALT = {(M, w) : [[Turing Machine]] M halts on input w} is not recursive (i.e., not decidable) — is the paradigmatic incomputability result and one of the most influential theorems in the history of mathematics. The proof is elegant and direct: assume for contradiction that a total computable function HALT(M, w) exists that outputs 1 if M halts on w and 0 otherwise. Construct a machine D that, on input ⟨M⟩ (the encoding of machine M), runs HALT(M, ⟨M⟩) and halts if the result is 0 and loops if the result is 1. Now consider running D on its own encoding ⟨D⟩: HALT(D, ⟨D⟩) = 1 (D halts on ⟨D⟩) implies D loops on ⟨D⟩ — contradiction; HALT(D, ⟨D⟩) = 0 (D does not halt) implies D halts — contradiction. The assumption of a total computable HALT function is therefore untenable. The proof technique, reducing HALT to the self-halting problem HP = {M : M halts on its own encoding}, established the method of many-one and Turing reductions that became the central technical tool of the discipline. A many-one reduction from problem A to problem B (written A ≤_m B) is a total computable function f such that x ∈ A iff f(x) ∈ B; a Turing reduction (A ≤_T B) permits oracle calls to B, making it a strictly weaker reducibility notion. These reduction techniques enable the systematic transfer of decidability and undecidability results across an ever-growing class of problems. [[Rice's Theorem]] — provable by reduction from the [[Halting Problem]] — shows that the entire landscape of semantic programme properties is undecidable in one stroke, establishing a permanent boundary on what static analysis and formal verification tools can achieve in full generality.
+The undecidability of the [[Halting Problem]] — proved by Turing via a diagonalisation argument showing that the set HALT = {(M, w) : [[Turing Machine]] M halts on input w} is not recursive (i.e., not decidable) — is the paradigmatic incomputability result and one of the most influential theorems in the history of mathematics. The proof is elegant and direct: assume for contradiction that a total computable function HALT(M, w) exists that outputs 1 if M halts on w and 0 otherwise. Construct a machine D that, on input ⟨M⟩ (the encoding of machine M), runs HALT(M, ⟨M⟩) and halts if the result is 0 and loops if the result is 1. Now consider running D on its own encoding ⟨D⟩: HALT(D, ⟨D⟩) = 1 (D halts on ⟨D⟩) implies D loops on ⟨D⟩ — contradiction; HALT(D, ⟨D⟩) = 0 (D does not halt) implies D halts — contradiction. The assumption of a total computable HALT function is therefore untenable. The proof technique, reducing HALT to the self-halting problem HP = {M : M halts on its own encoding}, established the method of many-one and Turing reductions that became the central technical tool of the discipline. A many-one reduction from problem A to problem B (written A ≤_m B) is a total computable function f such that x ∈ A iff f(x) ∈ B; a Turing reduction (A ≤_T B) permits oracle calls to B, making it a strictly weaker reducibility notion. These reduction techniques enable the systematic transfer of decidability and undecidability results across an ever-growing class of problems. [[Rice's Theorem]] — provable by reduction from the [[Halting Problem]] — shows that the entire landscape of semantic programme properties is undecidable in one stroke, establishing a permanent boundary on what static analysis and formal verification tools can achieve in full generality.
 
-  The arithmetical hierarchy (Σ⁰_n / Π⁰_n / Δ⁰_n) provides a fine-grained classification of problems by the logical complexity of their definitions over the natural numbers. Σ⁰₁ sets are the computably enumerable (c.e.) sets — those for which a [[Turing Machine]] can enumerate all members without necessarily deciding non-membership — while Π⁰₁ sets are the complements of c.e. sets (co-c.e. sets). HALT is a canonical Σ⁰₁-complete set; its complement (the set of configurations that never halt) is Π⁰₁-complete. Σ⁰₂ sets are those definable by ∃∀ formulas over decidable predicates — "there exists a stage after which the property always holds" — capturing the behaviour of eventually-settling limit computations such as the index set of total computable functions. Problems higher in the hierarchy require [[Oracle Computation|oracle access]] to lower levels to decide, yielding the [[Turing Degree]] structure: an intricate, non-linearly ordered partial order of equivalence classes of problems under mutual Turing reducibility. The degrees form a rich combinatorial structure: the Friedberg-Muchnik theorem (1956, independently by Richard Friedberg and Albert Muchnik) established that there exist c.e. degrees strictly between 0 (the decidable degree) and 0' (the degree of HALT) — solving Post's problem and proving that the c.e. degrees form a non-trivial lattice rather than a two-element structure. This result is directly connected to the broader landscape of [[Computational Complexity Theory]], which studies the resource-bounded version of the same question: which problems are feasibly solvable, not merely solvable in principle. The relationship between [[Computability Theory]] and [[Computational Complexity Theory]] is therefore not adversarial but complementary — computability draws the outer boundary of the possible; complexity draws the inner boundary of the tractable.
+The arithmetical hierarchy (Σ⁰_n / Π⁰_n / Δ⁰_n) provides a fine-grained classification of problems by the logical complexity of their definitions over the natural numbers. Σ⁰₁ sets are the computably enumerable (c.e.) sets — those for which a [[Turing Machine]] can enumerate all members without necessarily deciding non-membership — while Π⁰₁ sets are the complements of c.e. sets (co-c.e. sets). HALT is a canonical Σ⁰₁-complete set; its complement (the set of configurations that never halt) is Π⁰₁-complete. Σ⁰₂ sets are those definable by ∃∀ formulas over decidable predicates — "there exists a stage after which the property always holds" — capturing the behaviour of eventually-settling limit computations such as the index set of total computable functions. Problems higher in the hierarchy require [[Oracle Computation|oracle access]] to lower levels to decide, yielding the [[Turing Degree]] structure: an intricate, non-linearly ordered partial order of equivalence classes of problems under mutual Turing reducibility. The degrees form a rich combinatorial structure: the Friedberg-Muchnik theorem (1956, independently by Richard Friedberg and Albert Muchnik) established that there exist c.e. degrees strictly between 0 (the decidable degree) and 0' (the degree of HALT) — solving Post's problem and proving that the c.e. degrees form a non-trivial lattice rather than a two-element structure. This result is directly connected to the broader landscape of [[Computational Complexity Theory]], which studies the resource-bounded version of the same question: which problems are feasibly solvable, not merely solvable in principle. The relationship between [[Computability Theory]] and [[Computational Complexity Theory]] is therefore not adversarial but complementary — computability draws the outer boundary of the possible; complexity draws the inner boundary of the tractable.
 
-  ### The Church-Turing Thesis in Detail
+### The Church-Turing Thesis in Detail
 
-  The [[Church-Turing Thesis]] is arguably the most important informal claim in all of computer science, providing the conceptual foundation for the entire enterprise of algorithm design and analysis. Its content is the identification of the intuitive notion of "effective procedure" or "mechanical computation" with the formal notion of partial recursive function or Turing computable function. Several variants with different logical strengths are distinguished:
+The [[Church-Turing Thesis]] is arguably the most important informal claim in all of computer science, providing the conceptual foundation for the entire enterprise of algorithm design and analysis. Its content is the identification of the intuitive notion of "effective procedure" or "mechanical computation" with the formal notion of partial recursive function or Turing computable function. Several variants with different logical strengths are distinguished:
 
-  - **The Classical Church-Turing Thesis**: every function computable by any effective mechanical procedure is Turing computable. This is the original thesis, universally accepted among computability theorists.
-  - **The Physical Church-Turing Thesis (Weak)**: every function physically computable by any physically realisable machine is Turing computable. This stronger claim asserts that the laws of physics impose no additional computational power beyond Turing computability, ruling out [[Hypercomputation]] by physical means.
-  - **The Physical Church-Turing Thesis (Strong / Extended)**: every function physically computable can be efficiently simulated by a (probabilistic) [[Turing Machine]]. This incorporates polynomial-time efficiency and was partially motivating for the development of [[Quantum Computing]] research, since quantum systems might violate this strong version even whilst respecting the weak version.
-  - **The Effective Church-Turing Thesis (Complexity-Theoretic)**: every physically computable function can be computed in polynomial time by a probabilistic [[Turing Machine]]. This is more controversial and is implicitly challenged by quantum speedups (Shor's algorithm for factoring, Grover's search).
+- **The Classical Church-Turing Thesis**: every function computable by any effective mechanical procedure is Turing computable. This is the original thesis, universally accepted among computability theorists.
+- **The Physical Church-Turing Thesis (Weak)**: every function physically computable by any physically realisable machine is Turing computable. This stronger claim asserts that the laws of physics impose no additional computational power beyond Turing computability, ruling out [[Hypercomputation]] by physical means.
+- **The Physical Church-Turing Thesis (Strong / Extended)**: every function physically computable can be efficiently simulated by a (probabilistic) [[Turing Machine]]. This incorporates polynomial-time efficiency and was partially motivating for the development of [[Quantum Computing]] research, since quantum systems might violate this strong version even whilst respecting the weak version.
+- **The Effective Church-Turing Thesis (Complexity-Theoretic)**: every physically computable function can be computed in polynomial time by a probabilistic [[Turing Machine]]. This is more controversial and is implicitly challenged by quantum speedups (Shor's algorithm for factoring, Grover's search).
 
   The thesis cannot be proved within formal mathematics — it is a claim about the relationship between a formal concept (Turing computability) and an informal one (effective procedure). Evidence for it includes: (1) the mathematical convergence of all independently proposed models to the same function class; (2) the failure of all proposed extensions (analogue computation, random oracles, physical processes) to demonstrably exceed Turing computability; (3) the intuitive plausibility of Turing's analysis of "effective procedure" in terms of a human computer following explicit instructions.
 
@@ -128,39 +127,44 @@ Computability theory, also known as recursion theory, is the branch of mathemati
   ## Components / Architecture
 
   ### Formal Models of Computation
-  - **[[Turing Machine]]**: a 7-tuple (Q, Σ, Γ, δ, q₀, q_accept, q_reject) where Q is a finite state set, Σ is the input alphabet, Γ is the tape alphabet (Σ ⊆ Γ), δ: Q × Γ → Q × Γ × {L, R} is the transition function, q₀ is the start state, and q_accept, q_reject are distinguished terminal states. Variants (multi-tape, non-deterministic, probabilistic) are all equivalent in computing power to the basic single-tape deterministic model. The [[Turing Machine]] is the theoretical precursor of all modern [[Computer Architecture]] and [[Stored Programme Computer]] systems, directly inspiring the design of the Manchester Baby (1948) and the von Neumann architecture.
-  - **[[Lambda Calculus]]**: a formal system with three constructs — variables x, abstraction λx.M (function creation), and application (MN) (function application) — together with β-reduction (λx.M)N → M[N/x]. Church numerals encode natural numbers; combinators S and K suffice for full Turing equivalence. [[Lambda Calculus]] underpins functional programming languages (Haskell, ML, Scheme) and [[Type Theory]] (Curry-Howard correspondence: types are propositions, programmes are proofs). Its influence extends to [[Denotational Semantics]], [[Category Theory]] models of computation, and the design of [[Functional Programming]] languages.
-  - **[[Recursive Function]]s (μ-recursive functions)**: defined inductively from zero Z(x)=0, successor S(x)=x+1, and projections U^n_i(x₁,...,xₙ)=xᵢ via composition, primitive recursion, and minimisation (μ-operator). All three formalisms compute exactly the same class — the partial recursive functions — confirming the [[Church-Turing Thesis]]. Primitive recursive functions (without the μ-operator) form a strict subclass corresponding to provably total functions in [[Peano Arithmetic]].
-  - **[[Automata Theory]] and the Chomsky Hierarchy**: finite automata (FA) recognise regular languages (Type 3); pushdown automata (PDA) recognise context-free languages (Type 2); linear bounded automata (LBA) recognise context-sensitive languages (Type 1); Turing machines recognise recursively enumerable languages (Type 0). This hierarchy maps directly onto [[Formal Language]] grammars and has deep implications for [[Compiler Theory|parsing, compiler design]], and protocol specification. The regular languages correspond to [[Regular Expressions]] and are the theoretical foundation of pattern matching in [[String Processing]] systems and [[Lexical Analysis]] in compilers.
+
+- **[[Turing Machine]]**: a 7-tuple (Q, Σ, Γ, δ, q₀, q_accept, q_reject) where Q is a finite state set, Σ is the input alphabet, Γ is the tape alphabet (Σ ⊆ Γ), δ: Q × Γ → Q × Γ × {L, R} is the transition function, q₀ is the start state, and q_accept, q_reject are distinguished terminal states. Variants (multi-tape, non-deterministic, probabilistic) are all equivalent in computing power to the basic single-tape deterministic model. The [[Turing Machine]] is the theoretical precursor of all modern [[Computer Architecture]] and [[Stored Programme Computer]] systems, directly inspiring the design of the Manchester Baby (1948) and the von Neumann architecture.
+- **[[Lambda Calculus]]**: a formal system with three constructs — variables x, abstraction λx.M (function creation), and application (MN) (function application) — together with β-reduction (λx.M)N → M[N/x]. Church numerals encode natural numbers; combinators S and K suffice for full Turing equivalence. [[Lambda Calculus]] underpins functional programming languages (Haskell, ML, Scheme) and [[Type Theory]] (Curry-Howard correspondence: types are propositions, programmes are proofs). Its influence extends to [[Denotational Semantics]], [[Category Theory]] models of computation, and the design of [[Functional Programming]] languages.
+- **[[Recursive Function]]s (μ-recursive functions)**: defined inductively from zero Z(x)=0, successor S(x)=x+1, and projections U^n_i(x₁,...,xₙ)=xᵢ via composition, primitive recursion, and minimisation (μ-operator). All three formalisms compute exactly the same class — the partial recursive functions — confirming the [[Church-Turing Thesis]]. Primitive recursive functions (without the μ-operator) form a strict subclass corresponding to provably total functions in [[Peano Arithmetic]].
+- **[[Automata Theory]] and the Chomsky Hierarchy**: finite automata (FA) recognise regular languages (Type 3); pushdown automata (PDA) recognise context-free languages (Type 2); linear bounded automata (LBA) recognise context-sensitive languages (Type 1); Turing machines recognise recursively enumerable languages (Type 0). This hierarchy maps directly onto [[Formal Language]] grammars and has deep implications for [[Compiler Theory|parsing, compiler design]], and protocol specification. The regular languages correspond to [[Regular Expressions]] and are the theoretical foundation of pattern matching in [[String Processing]] systems and [[Lexical Analysis]] in compilers.
 
   ### Key Theorems and Results
-  - **Halting Problem Undecidability** (Turing 1936): HALT is not decidable. Proof: assume a decider D for HALT; construct machine H(x) = if D(x,x)=halt then loop else halt; running H on its own encoding yields a contradiction. This is the fundamental result from which most undecidability proofs flow.
-  - **[[Rice's Theorem]]** (Rice 1953): every non-trivial semantic property of partial functions computed by Turing machines is undecidable. Formally, if P is a set of partial functions such that ∅ ≠ P ≠ (all partial functions), then {M : φ_M ∈ P} is undecidable. This immediately implies undecidability of: does a programme ever output zero? does a programme halt on all inputs? does a programme compute the identity function? — and analogously, does an AI system satisfy a non-trivial behavioural specification?
-  - **Post Correspondence Problem** ([[Post Correspondence Problem]], Post 1946): given a finite set of pairs of strings {(u₁,v₁),...,(uₖ,vₖ)}, determine whether there exists a finite sequence of indices i₁,...,iₘ such that u_{i₁}...u_{iₘ} = v_{i₁}...v_{iₘ}. Undecidable; widely used as a source for undecidability reductions in formal language theory and context-free grammar ambiguity.
-  - **[[Fixed-Point Theorem]]** (Kleene's Recursion Theorem, 1938): for any total computable function f, there exists an e such that φ_e = φ_{f(e)}, where φ_e denotes the function computed by machine e. Equivalently, every programme transformation has a fixed point — a programme that computes the same function as its transformation. This underpins self-reproducing programmes (quines), viral code theory, and the semantics of recursion in [[Programming Language Theory]].
-  - **[[Gödel Incompleteness Theorems]]** (1931, predating but deeply connected to computability): the First Incompleteness Theorem states that any consistent, sufficiently expressive formal system has true statements it cannot prove; the Second states it cannot prove its own consistency. The connection to computability theory is intimate: Gödel's provability predicate can be encoded as a computable function, and the unprovable sentence encodes a form of self-reference equivalent to the Halting Problem diagonalisation.
+
+- **Halting Problem Undecidability** (Turing 1936): HALT is not decidable. Proof: assume a decider D for HALT; construct machine H(x) = if D(x,x)=halt then loop else halt; running H on its own encoding yields a contradiction. This is the fundamental result from which most undecidability proofs flow.
+- **[[Rice's Theorem]]** (Rice 1953): every non-trivial semantic property of partial functions computed by Turing machines is undecidable. Formally, if P is a set of partial functions such that ∅ ≠ P ≠ (all partial functions), then {M : φ_M ∈ P} is undecidable. This immediately implies undecidability of: does a programme ever output zero? does a programme halt on all inputs? does a programme compute the identity function? — and analogously, does an AI system satisfy a non-trivial behavioural specification?
+- **Post Correspondence Problem** ([[Post Correspondence Problem]], Post 1946): given a finite set of pairs of strings {(u₁,v₁),...,(uₖ,vₖ)}, determine whether there exists a finite sequence of indices i₁,...,iₘ such that u_{i₁}...u_{iₘ} = v_{i₁}...v_{iₘ}. Undecidable; widely used as a source for undecidability reductions in formal language theory and context-free grammar ambiguity.
+- **[[Fixed-Point Theorem]]** (Kleene's Recursion Theorem, 1938): for any total computable function f, there exists an e such that φ_e = φ_{f(e)}, where φ_e denotes the function computed by machine e. Equivalently, every programme transformation has a fixed point — a programme that computes the same function as its transformation. This underpins self-reproducing programmes (quines), viral code theory, and the semantics of recursion in [[Programming Language Theory]].
+- **[[Gödel Incompleteness Theorems]]** (1931, predating but deeply connected to computability): the First Incompleteness Theorem states that any consistent, sufficiently expressive formal system has true statements it cannot prove; the Second states it cannot prove its own consistency. The connection to computability theory is intimate: Gödel's provability predicate can be encoded as a computable function, and the unprovable sentence encodes a form of self-reference equivalent to the Halting Problem diagonalisation.
 
   ### Computably Enumerable Sets and the Arithmetical Hierarchy
-  - A set S ⊆ ℕ is **decidable** (recursive) if there is a total Turing machine that correctly answers "yes/no" for all inputs — HALT is not decidable.
-  - A set S is **[[Semi-Decidability|semi-decidable]]** (computably enumerable, c.e., or recursively enumerable) if there is a Turing machine that halts and accepts on input n iff n ∈ S, and may loop if n ∉ S — HALT is semi-decidable.
-  - The **arithmetical hierarchy** classifies definable sets by alternations of quantifiers: Σ⁰₁ = c.e. sets; Π⁰₁ = co-c.e. sets; Δ⁰₁ = decidable sets; Σ⁰₂ = sets definable by ∃∀ formulas over decidable predicates, etc. [[Programme Verification]] questions typically lie at Σ⁰₁ (does the programme ever reach state X?) or Π⁰₁ (does the programme always satisfy property Y?) levels.
-  - **Index sets** (sets of indices of [[Turing Machine]]s with a given property) provide the canonical examples at each level: Tot = {e : φ_e is total} is Π⁰₂-complete; Fin = {e : φ_e has finite domain} is Σ⁰₂-complete; Rec = {e : φ_e is total and computable} is Π⁰₃-complete. These classifications follow from Rice's theorem (all are non-trivial) and detailed analysis of the logical complexity of the defining formula.
-  - **[[Oracle Computation]] and relativisation**: for any set A, the Turing-jump A' = {e : Turing machine e with oracle A halts on input e} is a Σ⁰₁(A)-complete set, generalising HALT = ∅'. The jump operator is monotone (A <_T A') and the sequence ∅, ∅', ∅'', ... represents the canonical representatives of the arithmetical hierarchy levels 0, 1, 2, .... The class of hyperarithmetical sets — those computable from ∅^(α) for some computable ordinal α — forms the effective counterpart of the Borel sets in [[Descriptive Complexity]].
+
+- A set S ⊆ ℕ is **decidable** (recursive) if there is a total Turing machine that correctly answers "yes/no" for all inputs — HALT is not decidable.
+- A set S is **[[Semi-Decidability|semi-decidable]]** (computably enumerable, c.e., or recursively enumerable) if there is a Turing machine that halts and accepts on input n iff n ∈ S, and may loop if n ∉ S — HALT is semi-decidable.
+- The **arithmetical hierarchy** classifies definable sets by alternations of quantifiers: Σ⁰₁ = c.e. sets; Π⁰₁ = co-c.e. sets; Δ⁰₁ = decidable sets; Σ⁰₂ = sets definable by ∃∀ formulas over decidable predicates, etc. [[Programme Verification]] questions typically lie at Σ⁰₁ (does the programme ever reach state X?) or Π⁰₁ (does the programme always satisfy property Y?) levels.
+- **Index sets** (sets of indices of [[Turing Machine]]s with a given property) provide the canonical examples at each level: Tot = {e : φ_e is total} is Π⁰₂-complete; Fin = {e : φ_e has finite domain} is Σ⁰₂-complete; Rec = {e : φ_e is total and computable} is Π⁰₃-complete. These classifications follow from Rice's theorem (all are non-trivial) and detailed analysis of the logical complexity of the defining formula.
+- **[[Oracle Computation]] and relativisation**: for any set A, the Turing-jump A' = {e : Turing machine e with oracle A halts on input e} is a Σ⁰₁(A)-complete set, generalising HALT = ∅'. The jump operator is monotone (A <_T A') and the sequence ∅, ∅', ∅'', ... represents the canonical representatives of the arithmetical hierarchy levels 0, 1, 2, .... The class of hyperarithmetical sets — those computable from ∅^(α) for some computable ordinal α — forms the effective counterpart of the Borel sets in [[Descriptive Complexity]].
 
   ### Additional Theorems and Classical Results
-  - **Rogers's Fixed-Point Theorem (extended)**: in any acceptable numbering of partial computable functions, for every total computable function f there is a programme index n such that φ_n = φ_{f(n)}. Kleene's recursion theorem is the special case where the acceptable numbering is standard. This yields the existence of self-reproducing programmes, self-applying programmes, and the undecidability of the halting problem by a different route (since a fixed point of the "complement" function would be a machine that halts iff it doesn't halt).
-  - **Myhill-Nerode Theorem**: a language L ⊆ Σ* is regular (recognisable by a finite automaton) iff the equivalence relation x ≡_L y (defined by: for all z, xz ∈ L iff yz ∈ L) has finitely many equivalence classes. This provides the canonical characterisation of regular languages and the basis for the DFA minimisation algorithm, connecting automata theory to the algebraic theory of monoids.
-  - **Pumping Lemma for Context-Free Languages**: any sufficiently long string in a context-free language can be "pumped" — a portion repeated arbitrarily many times — remaining in the language. This is the standard tool for proving that specific languages (e.g., {a^n b^n c^n}) are not context-free, establishing boundaries between levels of the [[Formal Language]] hierarchy.
-  - **The s-m-n Theorem (Parameter Theorem)**: for any partial computable function f(m,x), there is a total computable function s such that for all m, φ_{s(m)}(x) = f(m,x). This enables the construction of programmes that take parameters as inputs and return programmes — the foundation of partial evaluation, currying in [[Lambda Calculus]], and the theory of programming language compilers.
-  - **The Enumeration Theorem**: there exists a universal partial computable function U(e,x) = φ_e(x). [[Turing Machine]] e is a programme, x is its input, and U simulates e on x. This is the computability-theoretic basis of the universal [[Turing Machine]] concept and the theoretical foundation of the stored-programme computer architecture (which Turing implemented in practice on the Manchester Baby, 1948).
+
+- **Rogers's Fixed-Point Theorem (extended)**: in any acceptable numbering of partial computable functions, for every total computable function f there is a programme index n such that φ_n = φ_{f(n)}. Kleene's recursion theorem is the special case where the acceptable numbering is standard. This yields the existence of self-reproducing programmes, self-applying programmes, and the undecidability of the halting problem by a different route (since a fixed point of the "complement" function would be a machine that halts iff it doesn't halt).
+- **Myhill-Nerode Theorem**: a language L ⊆ Σ* is regular (recognisable by a finite automaton) iff the equivalence relation x ≡_L y (defined by: for all z, xz ∈ L iff yz ∈ L) has finitely many equivalence classes. This provides the canonical characterisation of regular languages and the basis for the DFA minimisation algorithm, connecting automata theory to the algebraic theory of monoids.
+- **Pumping Lemma for Context-Free Languages**: any sufficiently long string in a context-free language can be "pumped" — a portion repeated arbitrarily many times — remaining in the language. This is the standard tool for proving that specific languages (e.g., {a^n b^n c^n}) are not context-free, establishing boundaries between levels of the [[Formal Language]] hierarchy.
+- **The s-m-n Theorem (Parameter Theorem)**: for any partial computable function f(m,x), there is a total computable function s such that for all m, φ_{s(m)}(x) = f(m,x). This enables the construction of programmes that take parameters as inputs and return programmes — the foundation of partial evaluation, currying in [[Lambda Calculus]], and the theory of programming language compilers.
+- **The Enumeration Theorem**: there exists a universal partial computable function U(e,x) = φ_e(x). [[Turing Machine]] e is a programme, x is its input, and U simulates e on x. This is the computability-theoretic basis of the universal [[Turing Machine]] concept and the theoretical foundation of the stored-programme computer architecture (which Turing implemented in practice on the Manchester Baby, 1948).
 
   ## Use Cases / Major Families
 
   ### The Priority Method and Degree Theory
   The construction of c.e. sets with prescribed degree-theoretic properties requires the **priority method** — a sophisticated technique for simultaneous satisfaction of countably many requirements while managing conflicts between them. Each requirement R_e is assigned a priority level (typically its index e in an effective enumeration), and requirements are "injured" (temporarily violated) by higher-priority requirements. The **finite injury priority method** (Friedberg 1957, Muchnik 1957) uses only finitely many injuries per requirement, yielding a convergent construction. The **infinite injury priority method** (Sacks 1963) allows infinitely many injuries but requires a more delicate argument for convergence. Priority arguments yield results such as:
-  - The Density Theorem: between any two c.e. Turing degrees a < b, there exists a c.e. degree c with a < c < b (Sacks 1964) — proving the c.e. degrees are dense.
-  - The Minimal Pair Theorem: there exist c.e. degrees a, b > 0 whose greatest lower bound is 0 — meaning no non-zero c.e. degree is computable from both a and b.
-  - The Sack Splitting Theorem: every c.e. degree b > 0 is the join of two incomparable c.e. degrees a₀, a₁ with a₀ ∪ a₁ = b.
+
+- The Density Theorem: between any two c.e. Turing degrees a < b, there exists a c.e. degree c with a < c < b (Sacks 1964) — proving the c.e. degrees are dense.
+- The Minimal Pair Theorem: there exist c.e. degrees a, b > 0 whose greatest lower bound is 0 — meaning no non-zero c.e. degree is computable from both a and b.
+- The Sack Splitting Theorem: every c.e. degree b > 0 is the join of two incomparable c.e. degrees a₀, a₁ with a₀ ∪ a₁ = b.
   These constructions provide the raw material for understanding the fine structure of the c.e. degrees and their role in understanding computational difficulty at the boundary of decidability.
 
   ### Programme Verification and Static Analysis
@@ -195,16 +199,17 @@ Computability theory, also known as recursion theory, is the branch of mathemati
   Computability theory has deep connections to the philosophy of mind and [[Artificial Intelligence]]. Turing's 1950 paper "Computing Machinery and Intelligence" (Mind) — where he introduced the Turing Test — was motivated directly by his work on computability. Turing argued that if a machine can pass as human in conversation, we have no principled grounds to deny it intelligence. The philosophical debate between functionalism (the view that mental states are computational states — Putnam 1967, Fodor 1975) and its critics (Searle's Chinese Room argument 1980, which invokes the distinction between syntax and semantics) hinges on claims about what computation can and cannot achieve. Penrose's Gödelian arguments (The Emperor's New Mind, 1989; Shadows of the Mind, 1994) claim that human mathematical insight exceeds the capabilities of any [[Turing Machine]], based on an application of the [[Gödel Incompleteness Theorems]]; these arguments have been extensively criticised on the grounds that the Gödelian diagonalisation applies to any consistent formal system, including one that encodes the human reasoner's behaviour. The relationship between computability and [[AI Safety]] has gained renewed attention: if an AI system's behaviour is described by a Turing-complete language, then [[Rice's Theorem]] establishes that no non-trivial semantic property of the system's behaviour is algorithmically verifiable.
 
   ### Key Terminology Glossary
-  - **[[Turing Machine]]**: a formal computational model consisting of an infinite tape, a read/write head, a finite set of states, and a transition function; the canonical definition of what it means to compute.
-  - **[[Halting Problem]]**: the decision problem of determining whether a given [[Turing Machine]] halts on a given input; undecidable by Turing's 1936 diagonalisation argument.
-  - **[[Decidability]]**: a problem is decidable if a [[Turing Machine]] exists that always halts and correctly classifies every instance.
-  - **[[Semi-Decidability]]**: a problem is semi-decidable (computably enumerable) if a [[Turing Machine]] halts and accepts on all positive instances but may loop on negative instances.
-  - **[[Church-Turing Thesis]]**: the informal claim that every effectively computable function is Turing computable; universally accepted among theorists.
-  - **[[Reduction]]**: a transformation from one problem to another showing that an [[Algorithm]] for the target problem solves the source problem; the central tool for proving undecidability.
-  - **[[Turing Degree]]**: an equivalence class of problems under mutual Turing reducibility; the degree structure classifies problems by their relative computational difficulty.
-  - **[[Kolmogorov Complexity]]**: the length of the shortest description of a string under a universal [[Turing Machine]]; a measure of the algorithmic information content of individual strings.
-  - **[[Fixed-Point Theorem]]**: Kleene's recursion theorem: for every total computable function f, there exists a programme e that computes the same function as f(e); the foundation of self-referential programme constructions.
-  - **[[Rice's Theorem]]**: every non-trivial semantic property of programmes is undecidable; the most powerful single tool for establishing undecidability of verification problems.
+
+- **[[Turing Machine]]**: a formal computational model consisting of an infinite tape, a read/write head, a finite set of states, and a transition function; the canonical definition of what it means to compute.
+- **[[Halting Problem]]**: the decision problem of determining whether a given [[Turing Machine]] halts on a given input; undecidable by Turing's 1936 diagonalisation argument.
+- **[[Decidability]]**: a problem is decidable if a [[Turing Machine]] exists that always halts and correctly classifies every instance.
+- **[[Semi-Decidability]]**: a problem is semi-decidable (computably enumerable) if a [[Turing Machine]] halts and accepts on all positive instances but may loop on negative instances.
+- **[[Church-Turing Thesis]]**: the informal claim that every effectively computable function is Turing computable; universally accepted among theorists.
+- **[[Reduction]]**: a transformation from one problem to another showing that an [[Algorithm]] for the target problem solves the source problem; the central tool for proving undecidability.
+- **[[Turing Degree]]**: an equivalence class of problems under mutual Turing reducibility; the degree structure classifies problems by their relative computational difficulty.
+- **[[Kolmogorov Complexity]]**: the length of the shortest description of a string under a universal [[Turing Machine]]; a measure of the algorithmic information content of individual strings.
+- **[[Fixed-Point Theorem]]**: Kleene's recursion theorem: for every total computable function f, there exists a programme e that computes the same function as f(e); the foundation of self-referential programme constructions.
+- **[[Rice's Theorem]]**: every non-trivial semantic property of programmes is undecidable; the most powerful single tool for establishing undecidability of verification problems.
 
   ## Current Landscape (2026)
 
@@ -246,39 +251,40 @@ Computability theory, also known as recursion theory, is the branch of mathemati
 
   Unlike empirical fields, computability theory does not use numerical benchmark datasets in the machine learning sense. Instead, the field employs a set of canonical undecidable and decidable problems that serve as anchors for reducibility arguments and as test cases for new proof techniques:
 
-  - **The Halting Problem (HALT)**: the canonical Σ⁰₁-complete problem. Any c.e. set that is not decidable can be shown undecidable by reduction from HALT. The complement of HALT is the canonical Π⁰₁-complete problem.
-  - **The Post Correspondence Problem (PCP)**: the canonical combinatorial undecidable problem, widely used to derive undecidability of context-free grammar ambiguity, two-counter machine intersection emptiness, and matrix mortality problems. Its restricted variants (bounded PCP, 2-pair PCP) have been shown decidable or undecidable, mapping the exact boundary of solvability.
-  - **The Entscheidungsproblem for First-Order Logic**: undecidable (Church, Turing 1936). Contrast with the decidable monadic second-order theory of the natural numbers (Büchi 1960, decidable by automata-theoretic methods) and Presburger arithmetic (linear integer arithmetic, decidable in doubly-exponential time).
-  - **The Word Problem for Groups**: given a group presentation ⟨generators | relations⟩ and a word in the generators, determine if the word equals the identity. Undecidable in general (Novikov 1955, Boone 1957); decidable for hyperbolic groups, abelian groups, and free groups.
-  - **Trakhtenbrot's Theorem**: satisfiability of a first-order sentence over finite structures is undecidable (∑₀₁-complete). This contrasts with the decidability of first-order logic over specific classes of finite structures (e.g., trees), and motivates the field of finite model theory and [[Descriptive Complexity]].
-  - **10th Hilbert Problem (Diophantine equations)**: do integer solutions exist for a given polynomial Diophantine equation? Undecidable (Davis, Matiyasevich, Putnam, Robinson, 1970 — DPRM theorem), connecting computability to number theory.
-  - **The Busy Beaver Function Σ(n)**: defined as the maximum number of 1s a halting n-state, 2-symbol [[Turing Machine]] can write before halting. Σ(n) grows faster than any computable function — it is a non-computable function that dominates all total computable functions. Known values: Σ(1)=1, Σ(2)=4, Σ(3)=6, Σ(4)=13, Σ(5)=4098, Σ(6) unknown and likely exceeding 10^{10^{10^{10^{18705353}}}}. The Busy Beaver function measures the maximum computational depth achievable within resource bounds and is relevant to proof-theoretic strength: computing Σ(n) for large n requires axiom systems of increasing set-existence strength, connecting computability to mathematical logic.
-  - **Accepted Computability Benchmarks for Verification Research**: the SV-COMP (Competition on Software Verification) provides standardised C programme verification benchmarks with known correctness labels; TACLE provides real-world embedded software for timing analysis; the ProofWiki formalisation project provides structured theorem statements amenable to automated verification. These benchmarks operationalise the theoretical distinction between decidable subclasses (amenable to bounded model checking) and undecidable general cases (where semi-decision procedures are the best available tools).
+- **The Halting Problem (HALT)**: the canonical Σ⁰₁-complete problem. Any c.e. set that is not decidable can be shown undecidable by reduction from HALT. The complement of HALT is the canonical Π⁰₁-complete problem.
+- **The Post Correspondence Problem (PCP)**: the canonical combinatorial undecidable problem, widely used to derive undecidability of context-free grammar ambiguity, two-counter machine intersection emptiness, and matrix mortality problems. Its restricted variants (bounded PCP, 2-pair PCP) have been shown decidable or undecidable, mapping the exact boundary of solvability.
+- **The Entscheidungsproblem for First-Order Logic**: undecidable (Church, Turing 1936). Contrast with the decidable monadic second-order theory of the natural numbers (Büchi 1960, decidable by automata-theoretic methods) and Presburger arithmetic (linear integer arithmetic, decidable in doubly-exponential time).
+- **The Word Problem for Groups**: given a group presentation ⟨generators | relations⟩ and a word in the generators, determine if the word equals the identity. Undecidable in general (Novikov 1955, Boone 1957); decidable for hyperbolic groups, abelian groups, and free groups.
+- **Trakhtenbrot's Theorem**: satisfiability of a first-order sentence over finite structures is undecidable (∑₀₁-complete). This contrasts with the decidability of first-order logic over specific classes of finite structures (e.g., trees), and motivates the field of finite model theory and [[Descriptive Complexity]].
+- **10th Hilbert Problem (Diophantine equations)**: do integer solutions exist for a given polynomial Diophantine equation? Undecidable (Davis, Matiyasevich, Putnam, Robinson, 1970 — DPRM theorem), connecting computability to number theory.
+- **The Busy Beaver Function Σ(n)**: defined as the maximum number of 1s a halting n-state, 2-symbol [[Turing Machine]] can write before halting. Σ(n) grows faster than any computable function — it is a non-computable function that dominates all total computable functions. Known values: Σ(1)=1, Σ(2)=4, Σ(3)=6, Σ(4)=13, Σ(5)=4098, Σ(6) unknown and likely exceeding 10^{10^{10^{10^{18705353}}}}. The Busy Beaver function measures the maximum computational depth achievable within resource bounds and is relevant to proof-theoretic strength: computing Σ(n) for large n requires axiom systems of increasing set-existence strength, connecting computability to mathematical logic.
+- **Accepted Computability Benchmarks for Verification Research**: the SV-COMP (Competition on Software Verification) provides standardised C programme verification benchmarks with known correctness labels; TACLE provides real-world embedded software for timing analysis; the ProofWiki formalisation project provides structured theorem statements amenable to automated verification. These benchmarks operationalise the theoretical distinction between decidable subclasses (amenable to bounded model checking) and undecidable general cases (where semi-decision procedures are the best available tools).
 
   ## Key Terminology
 
-  - **Computable / Recursive**: a function or set is computable (equivalently, recursive or decidable) if there is a total [[Turing Machine]] that correctly computes/decides it on all inputs. The class of computable functions is exactly the class of μ-recursive functions and of [[Lambda Calculus]]-definable functions.
-  - **Computably Enumerable (c.e.) / Recursively Enumerable (r.e.)**: a set is c.e. if a [[Turing Machine]] can enumerate all its members; it need not halt on non-members. Every computable set is c.e., but not vice versa (HALT is c.e. but not computable).
-  - **Many-one Reduction (≤_m)**: a total computable function f such that x ∈ A iff f(x) ∈ B. Used to transfer (un)decidability: if A ≤_m B and B is decidable, A is decidable; if A is undecidable and A ≤_m B, B is undecidable.
-  - **Turing Reduction (≤_T)**: A ≤_T B if an [[Oracle Computation]] for A can be built using B as an oracle subroutine. A strictly weaker notion than ≤_m; if A ≤_m B then A ≤_T B but not conversely.
-  - **[[Turing Degree]] (Degree of Unsolvability)**: the equivalence class of a set under mutual Turing reducibility (A ≡_T B if A ≤_T B and B ≤_T A). The degrees form a partially ordered set under ≤_T; degree 0 contains all decidable sets; degree 0' contains HALT.
-  - **Arithmetical Hierarchy (Σ⁰_n, Π⁰_n, Δ⁰_n)**: a classification of definable subsets of ℕ by the number of alternating quantifier blocks in their definitions. Σ⁰₁ = c.e.; Π⁰₁ = co-c.e.; Δ⁰₁ = decidable; higher levels capture "limit computability" requiring oracle access.
-  - **[[Kolmogorov Complexity]] K(x)**: the length of the shortest binary programme for a universal [[Turing Machine]] that outputs x. K is not computable (since computing K would solve HALT), but is approximable from above. K(x) ≈ |x| for most strings (incompressible / "random" strings).
-  - **Martin-Löf Randomness**: an infinite binary sequence is Martin-Löf random if it passes all effective statistical tests (equivalently, if every initial segment x has K(x) ≥ |x| - c for some fixed constant c, by Schnorr's theorem). Most real numbers are Martin-Löf random, and Chaitin's Ω is a canonical example.
-  - **[[Oracle Computation]]**: a [[Turing Machine]] augmented with a black-box oracle for some fixed set B, formalising "computation relative to B." Used to define the jump operator (A' = the [[Halting Problem]] relativised to A), iterated jumps (A⁽ⁿ⁾), and the arithmetical hierarchy.
-  - **Priority Method**: the primary proof technique in c.e. degree theory — constructing a c.e. set by satisfying countably many requirements (of the form: A ≠ φ_e, or A ≢_T B, etc.) arranged in priority order, with higher-priority requirements permitted to injure lower-priority ones finitely (finite injury) or infinitely (infinite injury) but always ensuring each requirement is ultimately satisfied.
-  - **Computable Analysis**: the study of computability and computational complexity for problems over real numbers, continuous functions, and other analytical structures. Key questions: given a continuous function f and an approximation of its input to precision 2^{-n}, can f's output be approximated to precision 2^{-n}? The Weihrauch lattice classifies the computational complexity of analysis theorems by the type of oracle access required.
-  - **Descriptive Set Theory**: the study of definable subsets of Polish spaces (complete separable metric spaces such as the real line, Baire space ℕ^ℕ, and Cantor space {0,1}^ω). Effective descriptive set theory identifies the computable content of Borel and analytic set hierarchy via the arithmetical and analytical hierarchies respectively. Connections to [[Reverse Mathematics]] and algorithmic randomness are established through the study of Π⁰₁ classes (effectively closed sets) and their relationship to [[Turing Degree]] structure.
-  - **Arithmetical Hierarchy vs Analytical Hierarchy**: the arithmetical hierarchy (Σ⁰_n, Π⁰_n) classifies sets definable using only quantifiers over natural numbers and computable predicates; the analytical hierarchy (Σ¹_n, Π¹_n) additionally permits quantifiers over sets of naturals. The Σ¹₁ sets (projections of Π⁰₁ sets) are the computably analytic sets — the effective counterpart of analytic (continuously-projected Borel) sets in descriptive set theory. The Σ¹₁ sets include all c.e. sets but extend strictly beyond the arithmetical hierarchy.
-  - **Effective Descriptive Set Theory**: the intersection of classical descriptive set theory (studying Borel, analytic, co-analytic, and projective subsets of Polish spaces) with computability theory. Lightface pointclasses (Σ⁰₁, Π⁰₁, ...) are the effective counterparts of Borel classes (open, closed, Fσ, Gδ, ...). Key theorems: the Spector-Gandy theorem characterises Π¹₁ sets as projections of closed sets of "hyperarithmetical" trees; the Kleene Basis Theorem establishes that every non-empty Σ¹₁ set contains a member computable from the complete Π⁰₁ set ∅'. The connections between effective descriptive set theory, [[Reverse Mathematics]], and algorithmic randomness form one of the most active interfaces in modern mathematical logic.
-  - **Polynomial-Time Computability (FP)**: within the Church-Turing framework, polynomial-time computability (functions in FP, feasibly computable) is the standard model for tractable computation. The P vs NP question asks whether every decision problem whose solutions can be verified in polynomial time can also be decided in polynomial time. Though belonging to [[Computational Complexity Theory]] rather than pure computability theory, the question is stated in computability-theoretic terms and its resolution would have profound implications for [[Cryptography]], [[Automated Theorem Proving]], and the theoretical limits of [[Machine Learning]] algorithms.
+- **Computable / Recursive**: a function or set is computable (equivalently, recursive or decidable) if there is a total [[Turing Machine]] that correctly computes/decides it on all inputs. The class of computable functions is exactly the class of μ-recursive functions and of [[Lambda Calculus]]-definable functions.
+- **Computably Enumerable (c.e.) / Recursively Enumerable (r.e.)**: a set is c.e. if a [[Turing Machine]] can enumerate all its members; it need not halt on non-members. Every computable set is c.e., but not vice versa (HALT is c.e. but not computable).
+- **Many-one Reduction (≤_m)**: a total computable function f such that x ∈ A iff f(x) ∈ B. Used to transfer (un)decidability: if A ≤_m B and B is decidable, A is decidable; if A is undecidable and A ≤_m B, B is undecidable.
+- **Turing Reduction (≤_T)**: A ≤_T B if an [[Oracle Computation]] for A can be built using B as an oracle subroutine. A strictly weaker notion than ≤_m; if A ≤_m B then A ≤_T B but not conversely.
+- **[[Turing Degree]] (Degree of Unsolvability)**: the equivalence class of a set under mutual Turing reducibility (A ≡_T B if A ≤_T B and B ≤_T A). The degrees form a partially ordered set under ≤_T; degree 0 contains all decidable sets; degree 0' contains HALT.
+- **Arithmetical Hierarchy (Σ⁰_n, Π⁰_n, Δ⁰_n)**: a classification of definable subsets of ℕ by the number of alternating quantifier blocks in their definitions. Σ⁰₁ = c.e.; Π⁰₁ = co-c.e.; Δ⁰₁ = decidable; higher levels capture "limit computability" requiring oracle access.
+- **[[Kolmogorov Complexity]] K(x)**: the length of the shortest binary programme for a universal [[Turing Machine]] that outputs x. K is not computable (since computing K would solve HALT), but is approximable from above. K(x) ≈ |x| for most strings (incompressible / "random" strings).
+- **Martin-Löf Randomness**: an infinite binary sequence is Martin-Löf random if it passes all effective statistical tests (equivalently, if every initial segment x has K(x) ≥ |x| - c for some fixed constant c, by Schnorr's theorem). Most real numbers are Martin-Löf random, and Chaitin's Ω is a canonical example.
+- **[[Oracle Computation]]**: a [[Turing Machine]] augmented with a black-box oracle for some fixed set B, formalising "computation relative to B." Used to define the jump operator (A' = the [[Halting Problem]] relativised to A), iterated jumps (A⁽ⁿ⁾), and the arithmetical hierarchy.
+- **Priority Method**: the primary proof technique in c.e. degree theory — constructing a c.e. set by satisfying countably many requirements (of the form: A ≠ φ_e, or A ≢_T B, etc.) arranged in priority order, with higher-priority requirements permitted to injure lower-priority ones finitely (finite injury) or infinitely (infinite injury) but always ensuring each requirement is ultimately satisfied.
+- **Computable Analysis**: the study of computability and computational complexity for problems over real numbers, continuous functions, and other analytical structures. Key questions: given a continuous function f and an approximation of its input to precision 2^{-n}, can f's output be approximated to precision 2^{-n}? The Weihrauch lattice classifies the computational complexity of analysis theorems by the type of oracle access required.
+- **Descriptive Set Theory**: the study of definable subsets of Polish spaces (complete separable metric spaces such as the real line, Baire space ℕ^ℕ, and Cantor space {0,1}^ω). Effective descriptive set theory identifies the computable content of Borel and analytic set hierarchy via the arithmetical and analytical hierarchies respectively. Connections to [[Reverse Mathematics]] and algorithmic randomness are established through the study of Π⁰₁ classes (effectively closed sets) and their relationship to [[Turing Degree]] structure.
+- **Arithmetical Hierarchy vs Analytical Hierarchy**: the arithmetical hierarchy (Σ⁰_n, Π⁰_n) classifies sets definable using only quantifiers over natural numbers and computable predicates; the analytical hierarchy (Σ¹_n, Π¹_n) additionally permits quantifiers over sets of naturals. The Σ¹₁ sets (projections of Π⁰₁ sets) are the computably analytic sets — the effective counterpart of analytic (continuously-projected Borel) sets in descriptive set theory. The Σ¹₁ sets include all c.e. sets but extend strictly beyond the arithmetical hierarchy.
+- **Effective Descriptive Set Theory**: the intersection of classical descriptive set theory (studying Borel, analytic, co-analytic, and projective subsets of Polish spaces) with computability theory. Lightface pointclasses (Σ⁰₁, Π⁰₁, ...) are the effective counterparts of Borel classes (open, closed, Fσ, Gδ, ...). Key theorems: the Spector-Gandy theorem characterises Π¹₁ sets as projections of closed sets of "hyperarithmetical" trees; the Kleene Basis Theorem establishes that every non-empty Σ¹₁ set contains a member computable from the complete Π⁰₁ set ∅'. The connections between effective descriptive set theory, [[Reverse Mathematics]], and algorithmic randomness form one of the most active interfaces in modern mathematical logic.
+- **Polynomial-Time Computability (FP)**: within the Church-Turing framework, polynomial-time computability (functions in FP, feasibly computable) is the standard model for tractable computation. The P vs NP question asks whether every decision problem whose solutions can be verified in polynomial time can also be decided in polynomial time. Though belonging to [[Computational Complexity Theory]] rather than pure computability theory, the question is stated in computability-theoretic terms and its resolution would have profound implications for [[Cryptography]], [[Automated Theorem Proving]], and the theoretical limits of [[Machine Learning]] algorithms.
 
   ## Practical Software Ecosystem
-  - **Proof Assistants and Type Theory**: Coq (INRIA, built on Calculus of Inductive Constructions), Lean 4 (Microsoft Research / community), Agda (Chalmers / Gothenburg), Isabelle/HOL (Cambridge/TU Munich), PVS (SRI International). Each implements a decidable fragment of [[Type Theory]] to ensure type-checking terminates; all are grounded in computability-theoretic normalisation proofs.
-  - **[[Model Checking]] Tools**: SPIN (Bell Labs, process algebras and LTL), nuSMV (Carnegie Mellon / ITC-IRST, symbolic BDD-based), CBMC (Oxford / CMU, SAT-based bounded model checking for C programmes), Java Pathfinder (NASA, explicit-state Java model checker). All are semi-decision procedures — sound but incomplete — because of the [[Halting Problem]].
-  - **[[Automated Theorem Proving]]**: Vampire (Manchester), E (TU Munich), SPASS (MPI Saarbrücken) are high-performance first-order theorem provers; Z3 (Microsoft Research) and CVC5 (Stanford, Iowa, NYU) are SMT solvers (Satisfiability Modulo Theories) for quantifier-free fragments. All apply semi-decision procedures; provers for undecidable first-order logic may loop on unprovable conjectures.
-  - **Abstract Interpretation Frameworks**: Astrée (ASTREE SA, industrial-grade analyzer for avionics C code), Frama-C (CEA LIST, open-source), PolySpace (MathWorks). These implement decidable abstract domains (intervals, octagons, polyhedra) to sound-but-incomplete over-approximations of infinite-state programme semantics, deriving practical safety certificates despite the underlying undecidability.
-  - **Learning-Theoretic Tools**: Gold-style language learning (Angluin's L* algorithm for regular languages) and query learning are implemented in the libalf library; formal verification of [[Machine Learning]] components uses tools from verification (MARABOU for neural network properties, α,β-CROWN for certified robustness) that exploit the finite computational resources of neural networks to reduce [[Rice's Theorem]]-level undecidability to decidable bounded problems.
+
+- **Proof Assistants and Type Theory**: Coq (INRIA, built on Calculus of Inductive Constructions), Lean 4 (Microsoft Research / community), Agda (Chalmers / Gothenburg), Isabelle/HOL (Cambridge/TU Munich), PVS (SRI International). Each implements a decidable fragment of [[Type Theory]] to ensure type-checking terminates; all are grounded in computability-theoretic normalisation proofs.
+- **[[Model Checking]] Tools**: SPIN (Bell Labs, process algebras and LTL), nuSMV (Carnegie Mellon / ITC-IRST, symbolic BDD-based), CBMC (Oxford / CMU, SAT-based bounded model checking for C programmes), Java Pathfinder (NASA, explicit-state Java model checker). All are semi-decision procedures — sound but incomplete — because of the [[Halting Problem]].
+- **[[Automated Theorem Proving]]**: Vampire (Manchester), E (TU Munich), SPASS (MPI Saarbrücken) are high-performance first-order theorem provers; Z3 (Microsoft Research) and CVC5 (Stanford, Iowa, NYU) are SMT solvers (Satisfiability Modulo Theories) for quantifier-free fragments. All apply semi-decision procedures; provers for undecidable first-order logic may loop on unprovable conjectures.
+- **Abstract Interpretation Frameworks**: Astrée (ASTREE SA, industrial-grade analyzer for avionics C code), Frama-C (CEA LIST, open-source), PolySpace (MathWorks). These implement decidable abstract domains (intervals, octagons, polyhedra) to sound-but-incomplete over-approximations of infinite-state programme semantics, deriving practical safety certificates despite the underlying undecidability.
+- **Learning-Theoretic Tools**: Gold-style language learning (Angluin's L* algorithm for regular languages) and query learning are implemented in the libalf library; formal verification of [[Machine Learning]] components uses tools from verification (MARABOU for neural network properties, α,β-CROWN for certified robustness) that exploit the finite computational resources of neural networks to reduce [[Rice's Theorem]]-level undecidability to decidable bounded problems.
 
   ## Future Directions (2026-2030)
 
@@ -329,5 +335,5 @@ Computability theory, also known as recursion theory, is the branch of mathemati
   27. Cousot, P. & Cousot, R. (1977). "Abstract Interpretation: A Unified Lattice Model for Static Analysis." *Proceedings of POPL*, 238-252. https://doi.org/10.1145/512950.512973
   28. Logic Colloquium 2026 (LC2026). European Summer Meeting of the Association for Symbolic Logic. Swansea University, 29 June – 3 July 2026. https://logiccolloquium2026.github.io/; Swansea Theoretical Computer Science Group: https://swansea-theory.github.io
 
-- ### Provenance
+### Provenance
 

@@ -1,17 +1,16 @@
-
 The degree to which a human can understand the cause-effect relationships within a machine learning model's decision-making process, encompassing both the model's internal mechanisms and the reasoning behind specific predictions.
 
-- ### Semantic Classification
+### Semantic Classification
 
-- ### Content
-  - The degree to which a human can understand the cause-effect relationships within a machine learning model's decision-making process, encompassing both the model's internal mechanisms and the reasoning behind specific predictions.
+### Content
 
+- The degree to which a human can understand the cause-effect relationships within a machine learning model's decision-making process, encompassing both the model's internal mechanisms and the reasoning behind specific predictions.
 
   ## Related Terms
 
-  - **Broader**: [[Explainable AI]], [[Machine Learning Discipline]]
-  - **Narrower**: [[Local Explanation]], [[Global Explanation]], [[Feature Importance]]
-  - **Related**: [[Interpretable AI]], [[Model Transparency]], [[Intrinsic Interpretability]]
+- **Broader**: [[Explainable AI]], [[Machine Learning Discipline]]
+- **Narrower**: [[Local Explanation]], [[Global Explanation]], [[Feature Importance]]
+- **Related**: [[Interpretable AI]], [[Model Transparency]], [[Intrinsic Interpretability]]
 
   ## Formal Specification
 
@@ -24,19 +23,22 @@ The degree to which a human can understand the cause-effect relationships within
   ### Levels of Interpretability
 
   **Global Interpretability**:
-  - Understanding entire model logic
-  - Overall feature importance rankings
-  - General decision-making patterns
+
+- Understanding entire model logic
+- Overall feature importance rankings
+- General decision-making patterns
 
   **Local Interpretability**:
-  - Explaining individual predictions
-  - Instance-specific feature contributions
-  - Decision boundaries for particular cases
+
+- Explaining individual predictions
+- Instance-specific feature contributions
+- Decision boundaries for particular cases
 
   **Modular Interpretability**:
-  - Understanding specific model components
-  - Layer-wise analysis in neural networks
-  - Subsystem behaviour characterisation
+
+- Understanding specific model components
+- Layer-wise analysis in neural networks
+- Subsystem behaviour characterisation
 
   ## Taxonomy
 
@@ -45,42 +47,48 @@ The degree to which a human can understand the cause-effect relationships within
   #### Global Interpretability Methods
 
   **Feature Importance**:
-  - Permutation importance
-  - Shapley values (global)
-  - LASSO coefficients
+
+- Permutation importance
+- Shapley values (global)
+- LASSO coefficients
 
   **Model Behaviour**:
-  - Partial dependence plots (PDP)
-  - Accumulated local effects (ALE)
-  - Individual conditional expectation (ICE)
+
+- Partial dependence plots (PDP)
+- Accumulated local effects (ALE)
+- Individual conditional expectation (ICE)
 
   #### Local Interpretability Methods
 
   **Instance-Level Explanations**:
-  - SHAP values (local)
-  - LIME approximations
-  - Counterfactual explanations
+
+- SHAP values (local)
+- LIME approximations
+- Counterfactual explanations
 
   **Prediction Analysis**:
-  - Influence functions
-  - Attention weights
-  - Saliency maps
+
+- Influence functions
+- Attention weights
+- Saliency maps
 
   ### By Mechanism
 
   #### Intrinsic Methods
 
   Built into model architecture:
-  - Linear regression coefficients
-  - Decision tree paths
-  - Rule-based systems
+
+- Linear regression coefficients
+- Decision tree paths
+- Rule-based systems
 
   #### Post-Hoc Methods
 
   Applied after training:
-  - Model-agnostic techniques (SHAP, LIME)
-  - Model-specific visualisations (Grad-CAM)
-  - Surrogate models
+
+- Model-agnostic techniques (SHAP, LIME)
+- Model-specific visualisations (Grad-CAM)
+- Surrogate models
 
   ## Key Properties
 
@@ -89,29 +97,32 @@ The degree to which a human can understand the cause-effect relationships within
   **Definition**: Accuracy with which interpretation reflects true model behaviour
 
   **Measurement**:
-  - Correlation between interpretation scores and actual predictions
-  - Agreement with ground truth in synthetic experiments
-  - Stability across similar inputs
+
+- Correlation between interpretation scores and actual predictions
+- Agreement with ground truth in synthetic experiments
+- Stability across similar inputs
 
   ### Comprehensibility
 
   **Definition**: Ease with which humans understand explanations
 
   **Factors**:
-  - Cognitive load
-  - Required technical expertise
-  - Presentation format
-  - Context appropriateness
+
+- Cognitive load
+- Required technical expertise
+- Presentation format
+- Context appropriateness
 
   ### Completeness
 
   **Definition**: Degree to which interpretation covers all relevant model aspects
 
   **Considerations**:
-  - Feature coverage
-  - Interaction effects
-  - Temporal dynamics
-  - Multi-modal aspects
+
+- Feature coverage
+- Interaction effects
+- Temporal dynamics
+- Multi-modal aspects
 
   ## Implementation Approaches
 
@@ -120,205 +131,237 @@ The degree to which a human can understand the cause-effect relationships within
   **SHAP (SHapley Additive exPlanations)**:
   ```
   φᵢ = Σ |S|!(|F|-|S|-1)! / |F|! [f(S∪{i}) - f(S)]
-     S⊆F\{i}
+   S⊆F\{i}
   ```
-  - Game-theoretic feature attribution
-  - Consistent and locally accurate
-  - Computationally expensive for large models
+
+- Game-theoretic feature attribution
+- Consistent and locally accurate
+- Computationally expensive for large models
 
   **LIME (Local Interpretable Model-agnostic Explanations)**:
   ```
   ξ(x) = argmin L(f, g, πₓ) + Ω(g)
-       g∈G
+     g∈G
   ```
-  - Local linear approximations
-  - Fast computation
-  - Instability across similar inputs
+
+- Local linear approximations
+- Fast computation
+- Instability across similar inputs
 
   ### Model-Specific Techniques
 
   **Neural Networks**:
-  - Integrated gradients
-  - Layer-wise relevance propagation
-  - Attention visualisation
+
+- Integrated gradients
+- Layer-wise relevance propagation
+- Attention visualisation
 
   **Tree Ensembles**:
-  - Feature importance from splits
-  - SHAP TreeExplainer (fast)
-  - Individual tree path analysis
+
+- Feature importance from splits
+- SHAP TreeExplainer (fast)
+- Individual tree path analysis
 
   **Linear Models**:
-  - Coefficient interpretation
-  - Standardised coefficients for comparison
-  - Confidence intervals
+
+- Coefficient interpretation
+- Standardised coefficients for comparison
+- Confidence intervals
 
   ## Application Domains
 
   ### Healthcare
 
   **Requirements**:
-  - Clinical decision support transparency (IEEE P2802)
-  - Physician trust and adoption
-  - Patient informed consent
+
+- Clinical decision support transparency (IEEE P2802)
+- Physician trust and adoption
+- Patient informed consent
 
   **Methods**:
-  - Instance-level explanations for diagnoses
-  - Global feature importance for clinical validation
-  - Counterfactuals for treatment alternatives
+
+- Instance-level explanations for diagnoses
+- Global feature importance for clinical validation
+- Counterfactuals for treatment alternatives
 
   ### Finance
 
   **Regulatory Context**:
-  - GDPR Article 22 right to explanation
-  - Fair lending regulations
-  - Audit trail requirements
+
+- GDPR Article 22 right to explanation
+- Fair lending regulations
+- Audit trail requirements
 
   **Applications**:
-  - Credit scoring interpretability
-  - Fraud detection explanation
-  - Risk assessment transparency
+
+- Credit scoring interpretability
+- Fraud detection explanation
+- Risk assessment transparency
 
   ### Autonomous Systems
 
   **Standards**:
-  - IEEE 7001-2021 transparency requirements
-  - Safety-critical decision explanation
-  - Failure mode analysis
+
+- IEEE 7001-2021 transparency requirements
+- Safety-critical decision explanation
+- Failure mode analysis
 
   **Techniques**:
-  - Real-time local explanations
-  - Global behaviour characterisation
-  - Uncertainty quantification
+
+- Real-time local explanations
+- Global behaviour characterisation
+- Uncertainty quantification
 
   ## Standards & Frameworks
 
   ### IEEE Standards
 
   **IEEE P2976 (XAI)**:
-  - Interpretability as core XAI component
-  - Classification by interpretability level
-  - Mandatory vs. optional interpretability requirements
+
+- Interpretability as core XAI component
+- Classification by interpretability level
+- Mandatory vs. optional interpretability requirements
 
   **IEEE 7001-2021 (Transparency)**:
-  - Five transparency dimensions
-  - Interpretability for autonomous systems
-  - Stakeholder-appropriate explanations
+
+- Five transparency dimensions
+- Interpretability for autonomous systems
+- Stakeholder-appropriate explanations
 
   **IEEE P2863 (Governance)**:
-  - Transparency as governance criterion
-  - Interpretability for accountability
-  - Organisational interpretability policies
+
+- Transparency as governance criterion
+- Interpretability for accountability
+- Organisational interpretability policies
 
   ### Documentation Standards
 
   **Model Cards** (Mitchell et al. 2019):
-  - Intended use
-  - Performance characteristics
-  - Limitations disclosure
-  - Interpretability methods employed
+
+- Intended use
+- Performance characteristics
+- Limitations disclosure
+- Interpretability methods employed
 
   **Data Cards** (Gebru et al. 2021):
-  - Dataset characteristics affecting interpretability
-  - Known biases
-  - Recommended interpretation approaches
+
+- Dataset characteristics affecting interpretability
+- Known biases
+- Recommended interpretation approaches
 
   ## Evaluation Metrics
 
   ### Quantitative Measures
 
   **Fidelity Metrics**:
-  - R² between explanation and model
-  - Mean absolute error of approximation
-  - Rank correlation for feature importance
+
+- R² between explanation and model
+- Mean absolute error of approximation
+- Rank correlation for feature importance
 
   **Stability Metrics**:
-  - Lipschitz continuity of explanations
-  - Consistency across similar instances
-  - Robustness to input perturbations
+
+- Lipschitz continuity of explanations
+- Consistency across similar instances
+- Robustness to input perturbations
 
   **Efficiency Metrics**:
-  - Computation time
-  - Memory requirements
-  - Scalability characteristics
+
+- Computation time
+- Memory requirements
+- Scalability characteristics
 
   ### Qualitative Assessment
 
   **User Studies**:
-  - Task completion time with/without explanations
-  - Decision accuracy improvement
-  - Trust calibration
+
+- Task completion time with/without explanations
+- Decision accuracy improvement
+- Trust calibration
 
   **Expert Evaluation**:
-  - Domain specialist validation
-  - Alignment with prior knowledge
-  - Utility for decision support
+
+- Domain specialist validation
+- Alignment with prior knowledge
+- Utility for decision support
 
   ## Challenges & Limitations
 
   ### Technical Challenges
 
   **Computational Cost**:
-  - SHAP requires 2^n model evaluations
-  - Real-time constraints in production
-  - Scalability to high-dimensional data
+
+- SHAP requires 2^n model evaluations
+- Real-time constraints in production
+- Scalability to high-dimensional data
 
   **Approximation Errors**:
-  - Local methods may misrepresent global behaviour
-  - Surrogate model fidelity limitations
-  - Sampling-based uncertainty
+
+- Local methods may misrepresent global behaviour
+- Surrogate model fidelity limitations
+- Sampling-based uncertainty
 
   **Interaction Effects**:
-  - Difficulty explaining high-order interactions
-  - Pairwise interaction visualisation complexity
-  - Combinatorial explosion in feature combinations
+
+- Difficulty explaining high-order interactions
+- Pairwise interaction visualisation complexity
+- Combinatorial explosion in feature combinations
 
   ### Methodological Issues
 
   **Rashomon Effect**:
-  - Multiple equally accurate models with different interpretations
-  - No unique "correct" explanation
-  - Context-dependent interpretation validity
+
+- Multiple equally accurate models with different interpretations
+- No unique "correct" explanation
+- Context-dependent interpretation validity
 
   **Audience Heterogeneity**:
-  - Technical vs. non-technical users
-  - Domain expertise variations
-  - Cultural interpretation differences
+
+- Technical vs. non-technical users
+- Domain expertise variations
+- Cultural interpretation differences
 
   ## Research Directions
 
   ### Emerging Areas
 
   **Causal Interpretability**:
-  - Moving beyond correlational explanations
-  - Interventional reasoning
-  - Counterfactual causal models
+
+- Moving beyond correlational explanations
+- Interventional reasoning
+- Counterfactual causal models
 
   **Interactive Interpretability**:
-  - Dialogue-based explanation refinement
-  - User-guided interpretation exploration
-  - Personalised explanation generation
+
+- Dialogue-based explanation refinement
+- User-guided interpretation exploration
+- Personalised explanation generation
 
   **Multi-modal Interpretability**:
-  - Cross-modal explanation consistency
-  - Vision-language model interpretation
-  - Unified multimodal frameworks
+
+- Cross-modal explanation consistency
+- Vision-language model interpretation
+- Unified multimodal frameworks
 
   ### Industry Innovation
 
   **Microsoft InterpretML**:
-  - Explainable boosting machines (EBM)
-  - Unified interpretation API
-  - Interactive visualisations
+
+- Explainable boosting machines (EBM)
+- Unified interpretation API
+- Interactive visualisations
 
   **Google Cloud Explainable AI**:
-  - Integrated with ML platform
-  - Feature attributions at scale
-  - What-if tool for counterfactuals
+
+- Integrated with ML platform
+- Feature attributions at scale
+- What-if tool for counterfactuals
 
   **DALEX (Descriptive mAchine Learning EXplanations)**:
-  - Language-agnostic framework
-  - Comprehensive interpretation suite
-  - R and Python implementations
+
+- Language-agnostic framework
+- Comprehensive interpretation suite
+- R and Python implementations
 
   ## Best Practices
 
@@ -332,47 +375,50 @@ The degree to which a human can understand the cause-effect relationships within
   ### Deployment Recommendations
 
   **Pre-deployment**:
-  - Validate interpretation correctness with domain experts
-  - Assess computational feasibility for production
-  - Test across diverse input scenarios
+
+- Validate interpretation correctness with domain experts
+- Assess computational feasibility for production
+- Test across diverse input scenarios
 
   **Production**:
-  - Monitor interpretation stability over time
-  - Track user engagement with explanations
-  - Update interpretations as model evolves
+
+- Monitor interpretation stability over time
+- Track user engagement with explanations
+- Update interpretations as model evolves
 
   **Post-deployment**:
-  - Collect feedback on interpretation utility
-  - Refine methods based on user needs
-  - Audit interpretation accuracy periodically
+
+- Collect feedback on interpretation utility
+- Refine methods based on user needs
+- Audit interpretation accuracy periodically
 
   #### References
   ### Standards
 
-  - IEEE. (2023). *IEEE P2976: Standard for eXplainable Artificial Intelligence*
-  - IEEE. (2021). *IEEE 7001-2021: Standard for Transparency of Autonomous Systems*
-  - IEEE. (2020). *IEEE P2863: Recommended Practice for Organisational Governance of AI*
+- IEEE. (2023). *IEEE P2976: Standard for eXplainable Artificial Intelligence*
+- IEEE. (2021). *IEEE 7001-2021: Standard for Transparency of Autonomous Systems*
+- IEEE. (2020). *IEEE P2863: Recommended Practice for Organisational Governance of AI*
 
   ### Academic Literature
 
-  - Molnar, C. (2022). *Interpretable Machine Learning: A Guide for Making Black Box Models Explainable*
-  - Lundberg, S. M., & Lee, S. I. (2017). "A unified approach to interpreting model predictions." *NeurIPS*
-  - Ribeiro, M. T., Singh, S., & Guestrin, C. (2016). "'Why should I trust you?': Explaining predictions of any classifier." *KDD*
+- Molnar, C. (2022). *Interpretable Machine Learning: A Guide for Making Black Box Models Explainable*
+- Lundberg, S. M., & Lee, S. I. (2017). "A unified approach to interpreting model predictions." *NeurIPS*
+- Ribeiro, M. T., Singh, S., & Guestrin, C. (2016). "'Why should I trust you?': Explaining predictions of any classifier." *KDD*
 
   ### Tools & Frameworks
 
-  - Nori, H., et al. (2019). "InterpretML: A unified framework for machine learning interpretability." *arXiv:1909.09223*
-  - Biecek, P. (2018). "DALEX: Explainers for complex predictive models in R." *Journal of Machine Learning Research*, 19(84), 1-5
+- Nori, H., et al. (2019). "InterpretML: A unified framework for machine learning interpretability." *arXiv:1909.09223*
+- Biecek, P. (2018). "DALEX: Explainers for complex predictive models in R." *Journal of Machine Learning Research*, 19(84), 1-5
 
   ## See Also
 
-  - [[Explainable AI]]
-  - [[Interpretable AI]]
-  - [[Local Explanation]]
-  - [[Global Explanation]]
-  - [[Feature Importance]]
-  - [[SHAP]]
-  - [[LIME]]
+- [[Explainable AI]]
+- [[Interpretable AI]]
+- [[Local Explanation]]
+- [[Global Explanation]]
+- [[Feature Importance]]
+- [[SHAP]]
+- [[LIME]]
 
-- ### Provenance
+### Provenance
 

@@ -1,19 +1,24 @@
-
 A/B testing is a controlled experimentation method that compares two or more variants by randomly assigning subjects to each and measuring a defined outcome metric. By holding all factors constant except the variant under test, it isolates causal effects and supports data-driven decisions with statistical rigour. It is widely used to optimise digital products, content and user experiences.
 
-- ### Overview
-  - A/B testing applies the logic of the randomised controlled experiment to product and content decisions. Users are split at random between a control and one or more treatments, and a pre-registered metric is measured to detect whether a change produces a statistically significant improvement. Robust practice requires adequate sample sizes, guarding against peeking and multiple-comparison errors, and accounting for novelty and network effects.
-- ### Key aspects
-  - Random assignment of subjects to control and treatment groups
-  - Pre-defined primary metric and minimum detectable effect
-  - Statistical significance and confidence interval estimation
-  - Sample-size and power calculation before launch
-  - Guardrails against peeking, p-hacking and biased segmentation
-- ### Applications
-  - Website and landing-page conversion optimisation
-  - Feature rollout and product experimentation
-  - Email and marketing campaign tuning
-  - Recommendation and ranking algorithm evaluation
-  - Pricing and onboarding flow optimisation
-- ### Provenance
+### Overview
+
+- A/B testing applies the logic of the randomised controlled experiment to product and content decisions. Users are split at random between a control and one or more treatments, and a pre-registered metric is measured to detect whether a change produces a statistically significant improvement. Robust practice requires adequate sample sizes, guarding against peeking and multiple-comparison errors, and accounting for novelty and network effects.
+
+### Key aspects
+
+- Random assignment of subjects to control and treatment groups
+- Pre-defined primary metric and minimum detectable effect
+- Statistical significance and confidence interval estimation
+- Sample-size and power calculation before launch
+- Guardrails against peeking, p-hacking and biased segmentation
+
+### Applications
+
+- Website and landing-page conversion optimisation
+- Feature rollout and product experimentation
+- Email and marketing campaign tuning
+- Recommendation and ranking algorithm evaluation
+- Pricing and onboarding flow optimisation
+
+### Provenance
 

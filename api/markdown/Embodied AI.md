@@ -1,158 +1,163 @@
-
 Embodied AI is a research paradigm holding that intelligence emerges from the continuous sensorimotor interaction of an agent with its physical or simulated environment, rather than from purely symbolic or disembodied language-based reasoning. Embodied agents perceive the world through sensors — cameras, proprioceptive IMUs, force-torque sensors, tactile arrays — and act upon it through actuators, learning to navigate, manipulate objects, and cooperate via reinforcement learning or imitation learning in physics simulators. The field unifies robotics, cognitive science, and deep learning, with applications spanning household manipulation, autonomous navigation, humanoid motor control, and grounded natural language understanding. A central hypothesis is that richer, more transferable representations arise from interactive physical engagement with an environment rather than from passive statistical learning over corpora.
 
-- ### Semantic Classification
+### Semantic Classification
 
-- ### Content
-  ## Compositional Relationships (Components)
-      SubClassOf(ai:EmbodiedAI
-        ObjectSomeValuesFrom(ai:hasPart ai:SimToRealTransfer))
-      SubClassOf(ai:EmbodiedAI
-        ObjectSomeValuesFrom(ai:hasPart ai:RobotLearning))
-      SubClassOf(ai:EmbodiedAI
-        ObjectSomeValuesFrom(ai:hasPart ai:DomainRandomisation))
-      SubClassOf(ai:EmbodiedAI
-        ObjectSomeValuesFrom(ai:hasPart ai:AffordanceLearning))
-      SubClassOf(ai:EmbodiedAI
-        ObjectSomeValuesFrom(ai:hasPart ai:WorldModel))
-      SubClassOf(ai:EmbodiedAI
-        ObjectSomeValuesFrom(ai:hasPart ai:EmbodiedAISimulation))
-      SubClassOf(ai:EmbodiedAI
-        ObjectSomeValuesFrom(ai:hasPart ai:VisionLanguageActionModel))
+### Content
 
-  ## Dependency Relationships
-      SubClassOf(ai:EmbodiedAI
-        ObjectSomeValuesFrom(ai:requires ai:Simulation))
-      SubClassOf(ai:EmbodiedAI
-        ObjectSomeValuesFrom(ai:requires ai:ReinforcementLearning))
-      SubClassOf(ai:EmbodiedAI
-        ObjectSomeValuesFrom(ai:requires ai:PhysicsEngine))
-      SubClassOf(ai:EmbodiedAI
-        ObjectSomeValuesFrom(ai:requires ai:SensorFusion))
-      SubClassOf(ai:EmbodiedAI
-        ObjectSomeValuesFrom(ai:dependsOn ai:ComputerVision))
-      SubClassOf(ai:EmbodiedAI
-        ObjectSomeValuesFrom(ai:dependsOn ai:DeepLearning))
-      SubClassOf(ai:EmbodiedAI
-        ObjectSomeValuesFrom(ai:dependsOn ai:ImitationLearning))
+## Compositional Relationships (Components)
+    SubClassOf(ai:EmbodiedAI
+      ObjectSomeValuesFrom(ai:hasPart ai:SimToRealTransfer))
+    SubClassOf(ai:EmbodiedAI
+      ObjectSomeValuesFrom(ai:hasPart ai:RobotLearning))
+    SubClassOf(ai:EmbodiedAI
+      ObjectSomeValuesFrom(ai:hasPart ai:DomainRandomisation))
+    SubClassOf(ai:EmbodiedAI
+      ObjectSomeValuesFrom(ai:hasPart ai:AffordanceLearning))
+    SubClassOf(ai:EmbodiedAI
+      ObjectSomeValuesFrom(ai:hasPart ai:WorldModel))
+    SubClassOf(ai:EmbodiedAI
+      ObjectSomeValuesFrom(ai:hasPart ai:EmbodiedAISimulation))
+    SubClassOf(ai:EmbodiedAI
+      ObjectSomeValuesFrom(ai:hasPart ai:VisionLanguageActionModel))
 
-  ## Capability Relationships
-      SubClassOf(ai:EmbodiedAI
-        ObjectSomeValuesFrom(ai:enables ai:AutonomousNavigation))
-      SubClassOf(ai:EmbodiedAI
-        ObjectSomeValuesFrom(ai:enables ai:RoboticManipulation))
-      SubClassOf(ai:EmbodiedAI
-        ObjectSomeValuesFrom(ai:enables ai:GroundedLanguageUnderstanding))
-      SubClassOf(ai:EmbodiedAI
-        ObjectSomeValuesFrom(ai:enables ai:SimToRealTransfer))
-      SubClassOf(ai:EmbodiedAI
-        ObjectSomeValuesFrom(ai:enables ai:RobotLearning))
-      SubClassOf(ai:EmbodiedAI
-        ObjectSomeValuesFrom(ai:enables ai:CollaborativeRobot))
-      SubClassOf(ai:EmbodiedAI
-        ObjectSomeValuesFrom(ai:enables ai:AutonomousRobot))
+## Dependency Relationships
+    SubClassOf(ai:EmbodiedAI
+      ObjectSomeValuesFrom(ai:requires ai:Simulation))
+    SubClassOf(ai:EmbodiedAI
+      ObjectSomeValuesFrom(ai:requires ai:ReinforcementLearning))
+    SubClassOf(ai:EmbodiedAI
+      ObjectSomeValuesFrom(ai:requires ai:PhysicsEngine))
+    SubClassOf(ai:EmbodiedAI
+      ObjectSomeValuesFrom(ai:requires ai:SensorFusion))
+    SubClassOf(ai:EmbodiedAI
+      ObjectSomeValuesFrom(ai:dependsOn ai:ComputerVision))
+    SubClassOf(ai:EmbodiedAI
+      ObjectSomeValuesFrom(ai:dependsOn ai:DeepLearning))
+    SubClassOf(ai:EmbodiedAI
+      ObjectSomeValuesFrom(ai:dependsOn ai:ImitationLearning))
 
-  ## Implementation Relationships
-      SubClassOf(ai:EmbodiedAI
-        ObjectSomeValuesFrom(ai:implements ai:SensoriomotorLoop))
-      SubClassOf(ai:EmbodiedAI
-        ObjectSomeValuesFrom(ai:implements ai:SituatedCognition))
-      SubClassOf(ai:EmbodiedAI
-        ObjectSomeValuesFrom(ai:implements ai:ActivePerception))
-      SubClassOf(ai:EmbodiedAI
-        ObjectSomeValuesFrom(ai:uses ai:TransformerArchitecture))
-      SubClassOf(ai:EmbodiedAI
-        ObjectSomeValuesFrom(ai:uses ai:LargeLanguageModel))
-      SubClassOf(ai:EmbodiedAI
-        ObjectSomeValuesFrom(ai:uses ai:VisionLanguageModel))
+## Capability Relationships
+    SubClassOf(ai:EmbodiedAI
+      ObjectSomeValuesFrom(ai:enables ai:AutonomousNavigation))
+    SubClassOf(ai:EmbodiedAI
+      ObjectSomeValuesFrom(ai:enables ai:RoboticManipulation))
+    SubClassOf(ai:EmbodiedAI
+      ObjectSomeValuesFrom(ai:enables ai:GroundedLanguageUnderstanding))
+    SubClassOf(ai:EmbodiedAI
+      ObjectSomeValuesFrom(ai:enables ai:SimToRealTransfer))
+    SubClassOf(ai:EmbodiedAI
+      ObjectSomeValuesFrom(ai:enables ai:RobotLearning))
+    SubClassOf(ai:EmbodiedAI
+      ObjectSomeValuesFrom(ai:enables ai:CollaborativeRobot))
+    SubClassOf(ai:EmbodiedAI
+      ObjectSomeValuesFrom(ai:enables ai:AutonomousRobot))
 
-  ## Support Relationships
-      SubClassOf(ai:EmbodiedAI
-        ObjectSomeValuesFrom(ai:supports ai:AutonomousNavigation))
-      SubClassOf(ai:EmbodiedAI
-        ObjectSomeValuesFrom(ai:supports ai:RoboticManipulation))
-      SubClassOf(ai:EmbodiedAI
-        ObjectSomeValuesFrom(ai:supports ai:SurgicalRobotics))
-      SubClassOf(ai:EmbodiedAI
-        ObjectSomeValuesFrom(ai:supports ai:AgriculturalRobotics))
-      SubClassOf(ai:EmbodiedAI
-        ObjectSomeValuesFrom(ai:supports ai:AutonomousMobileRobots))
-      SubClassOf(ai:EmbodiedAI
-        ObjectSomeValuesFrom(ai:supports ai:HumanoidRobotics))
+## Implementation Relationships
+    SubClassOf(ai:EmbodiedAI
+      ObjectSomeValuesFrom(ai:implements ai:SensoriomotorLoop))
+    SubClassOf(ai:EmbodiedAI
+      ObjectSomeValuesFrom(ai:implements ai:SituatedCognition))
+    SubClassOf(ai:EmbodiedAI
+      ObjectSomeValuesFrom(ai:implements ai:ActivePerception))
+    SubClassOf(ai:EmbodiedAI
+      ObjectSomeValuesFrom(ai:uses ai:TransformerArchitecture))
+    SubClassOf(ai:EmbodiedAI
+      ObjectSomeValuesFrom(ai:uses ai:LargeLanguageModel))
+    SubClassOf(ai:EmbodiedAI
+      ObjectSomeValuesFrom(ai:uses ai:VisionLanguageModel))
 
-  ## Reduction Relationships
-      SubClassOf(ai:EmbodiedAI
-        ObjectSomeValuesFrom(ai:reducesTo ai:ReinforcementLearning))
-      SubClassOf(ai:EmbodiedAI
-        ObjectSomeValuesFrom(ai:reducesTo ai:RobotLearning))
-      SubClassOf(ai:EmbodiedAI
-        ObjectSomeValuesFrom(ai:reducesTo ai:SensoriomotorControl))
-      SubClassOf(ai:EmbodiedAI
-        ObjectSomeValuesFrom(ai:reducesTo ai:MarkovDecisionProcess))
+## Support Relationships
+    SubClassOf(ai:EmbodiedAI
+      ObjectSomeValuesFrom(ai:supports ai:AutonomousNavigation))
+    SubClassOf(ai:EmbodiedAI
+      ObjectSomeValuesFrom(ai:supports ai:RoboticManipulation))
+    SubClassOf(ai:EmbodiedAI
+      ObjectSomeValuesFrom(ai:supports ai:SurgicalRobotics))
+    SubClassOf(ai:EmbodiedAI
+      ObjectSomeValuesFrom(ai:supports ai:AgriculturalRobotics))
+    SubClassOf(ai:EmbodiedAI
+      ObjectSomeValuesFrom(ai:supports ai:AutonomousMobileRobots))
+    SubClassOf(ai:EmbodiedAI
+      ObjectSomeValuesFrom(ai:supports ai:HumanoidRobotics))
 
-  ## About
-  The dominant view in AI through the 1980s and 1990s held that intelligence could be implemented as context-free computation over abstract symbols — the physical substrate was irrelevant, cognition was pattern matching over propositional representations. Roboticists and cognitive scientists challenged this systematically. Rodney Brooks' behaviour-based robotics (1986–1990s) demonstrated that complex, adaptive behaviours could arise from layered reactive systems with direct sensorimotor coupling, without any central symbolic world-model. His seminal papers "A Robust Layered Control System for a Mobile Robot" (1986) and "Intelligence Without Representation" (1991) argued that the internal world models required by symbolic AI were computational overhead that biological intelligence had never needed — a real organism navigates by reacting to its perceptual world, not by maintaining propositional representations of that world and running inference over them. Simultaneously, phenomenologists in the continental tradition — Heidegger's concept of Dasein-in-the-world, Merleau-Ponty's phenomenology of the lived body — argued that cognition is constitutively embodied and situationally embedded, not separable from the organism's engagement with a particular environment. In cognitive science, the "embodied cognition" movement (Lakoff & Johnson, 1980; Varela, Thompson & Rosch, 1991) made parallel arguments: conceptual structure is grounded in bodily experience — our understanding of "above", "heavy", "warm" and thousands of other concepts is inseparable from having a body that experiences spatial orientation, gravity, and temperature. This is not merely a philosophical position: it predicts that AI systems without embodied grounding will fail to develop robust physical understanding, a prediction supported by the brittleness of purely language-trained models when applied to physical reasoning tasks.
+## Reduction Relationships
+    SubClassOf(ai:EmbodiedAI
+      ObjectSomeValuesFrom(ai:reducesTo ai:ReinforcementLearning))
+    SubClassOf(ai:EmbodiedAI
+      ObjectSomeValuesFrom(ai:reducesTo ai:RobotLearning))
+    SubClassOf(ai:EmbodiedAI
+      ObjectSomeValuesFrom(ai:reducesTo ai:SensoriomotorControl))
+    SubClassOf(ai:EmbodiedAI
+      ObjectSomeValuesFrom(ai:reducesTo ai:MarkovDecisionProcess))
 
-  The tension between embodied and disembodied approaches to AI became starkly visible in the 2020s. Large language models trained on trillions of tokens of text achieved remarkable performance on language tasks but exhibited systematic failures on physical reasoning: they confused spatial relationships, misunderstood causal chains involving contact forces, and generated physically impossible object configurations. Meanwhile, embodied systems trained through interaction — even shallow reward-based policies in simple physics engines — demonstrated robust handling of contact and gravity that eluded text-trained models. The conclusion drawn by many researchers is that physical competence requires physical experience: no amount of reading about manipulation will substitute for having manipulated. The embodied AI research programme operationalises this conclusion at scale, using massive parallelised simulation to provide the experiential substrate that text corpora cannot supply.
+## About
+The dominant view in AI through the 1980s and 1990s held that intelligence could be implemented as context-free computation over abstract symbols — the physical substrate was irrelevant, cognition was pattern matching over propositional representations. Roboticists and cognitive scientists challenged this systematically. Rodney Brooks' behaviour-based robotics (1986–1990s) demonstrated that complex, adaptive behaviours could arise from layered reactive systems with direct sensorimotor coupling, without any central symbolic world-model. His seminal papers "A Robust Layered Control System for a Mobile Robot" (1986) and "Intelligence Without Representation" (1991) argued that the internal world models required by symbolic AI were computational overhead that biological intelligence had never needed — a real organism navigates by reacting to its perceptual world, not by maintaining propositional representations of that world and running inference over them. Simultaneously, phenomenologists in the continental tradition — Heidegger's concept of Dasein-in-the-world, Merleau-Ponty's phenomenology of the lived body — argued that cognition is constitutively embodied and situationally embedded, not separable from the organism's engagement with a particular environment. In cognitive science, the "embodied cognition" movement (Lakoff & Johnson, 1980; Varela, Thompson & Rosch, 1991) made parallel arguments: conceptual structure is grounded in bodily experience — our understanding of "above", "heavy", "warm" and thousands of other concepts is inseparable from having a body that experiences spatial orientation, gravity, and temperature. This is not merely a philosophical position: it predicts that AI systems without embodied grounding will fail to develop robust physical understanding, a prediction supported by the brittleness of purely language-trained models when applied to physical reasoning tasks.
 
-  The integration of foundation models with embodied training — the defining methodological development of 2023–2026 — represents a synthesis rather than a repudiation of disembodied pre-training. Large vision-language models bring encyclopaedic world knowledge, semantic flexibility, and strong zero-shot generalisation to embodied systems; what they lack is the physical grounding to translate that knowledge into reliable motor sequences. VLA models bridge this gap by fine-tuning VLM backbones on robot trajectory datasets, enabling models to "know" from their language pre-training that a mug should be grasped by the handle while also "knowing" from trajectory fine-tuning how to execute that grasp reliably across handle orientations, approach angles, and object weights. RT-2 demonstrated this synthesis most clearly: a VLM fine-tuned on robot demonstrations could follow instructions about previously unseen objects described in natural language, transferring semantic knowledge to physical execution without object-specific training.
+The tension between embodied and disembodied approaches to AI became starkly visible in the 2020s. Large language models trained on trillions of tokens of text achieved remarkable performance on language tasks but exhibited systematic failures on physical reasoning: they confused spatial relationships, misunderstood causal chains involving contact forces, and generated physically impossible object configurations. Meanwhile, embodied systems trained through interaction — even shallow reward-based policies in simple physics engines — demonstrated robust handling of contact and gravity that eluded text-trained models. The conclusion drawn by many researchers is that physical competence requires physical experience: no amount of reading about manipulation will substitute for having manipulated. The embodied AI research programme operationalises this conclusion at scale, using massive parallelised simulation to provide the experiential substrate that text corpora cannot supply.
 
-  The modern machine learning instantiation of these ideas emerged in the 2010s as deep [[Reinforcement Learning]] matured and photorealistic physics simulation became accessible at research scale. DQN (Mnih et al., 2015) demonstrated that neural policies could learn directly from raw pixel observations; subsequent work extended this to continuous action spaces (DDPG, SAC, PPO) and three-dimensional manipulation environments. The key innovation was coupling these learning algorithms with physics simulators — MuJoCo (Todorov et al., 2012), PyBullet, later NVIDIA Isaac Gym — enabling agents to accumulate millions of environment interactions cheaply in parallel, building up experience that would be impossible to gather from physical hardware at comparable cost and speed.
+The integration of foundation models with embodied training — the defining methodological development of 2023–2026 — represents a synthesis rather than a repudiation of disembodied pre-training. Large vision-language models bring encyclopaedic world knowledge, semantic flexibility, and strong zero-shot generalisation to embodied systems; what they lack is the physical grounding to translate that knowledge into reliable motor sequences. VLA models bridge this gap by fine-tuning VLM backbones on robot trajectory datasets, enabling models to "know" from their language pre-training that a mug should be grasped by the handle while also "knowing" from trajectory fine-tuning how to execute that grasp reliably across handle orientations, approach angles, and object weights. RT-2 demonstrated this synthesis most clearly: a VLM fine-tuned on robot demonstrations could follow instructions about previously unseen objects described in natural language, transferring semantic knowledge to physical execution without object-specific training.
 
-  The 2022–2026 period has seen a further phase transition: the integration of foundation models (pre-trained on internet-scale vision and language data) as policy backbones, giving rise to vision-language-action (VLA) models. Google's RT-2 (Brohan et al., 2023) demonstrated that a vision-language model fine-tuned on robot trajectory data could perform semantic generalisation — understanding novel instructions about objects and spatial relationships — that purely reward-trained policies could not. Physical Intelligence's π0 (2024) showed that a single generalist policy trained across diverse robotic platforms could acquire emergent manipulation capabilities. OpenVLA (Kim et al., 2024), a 7-billion-parameter open-source VLA based on the Prismatic visual language model, achieved competitive performance with RT-2 at a fraction of the computational cost. By 2026, ICLR received 164 submissions on VLA models alone, signalling the maturation of this paradigm from research curiosity to dominant methodology.
+The modern machine learning instantiation of these ideas emerged in the 2010s as deep [[Reinforcement Learning]] matured and photorealistic physics simulation became accessible at research scale. DQN (Mnih et al., 2015) demonstrated that neural policies could learn directly from raw pixel observations; subsequent work extended this to continuous action spaces (DDPG, SAC, PPO) and three-dimensional manipulation environments. The key innovation was coupling these learning algorithms with physics simulators — MuJoCo (Todorov et al., 2012), PyBullet, later NVIDIA Isaac Gym — enabling agents to accumulate millions of environment interactions cheaply in parallel, building up experience that would be impossible to gather from physical hardware at comparable cost and speed.
 
-  ## Reinforcement Learning Foundations
+The 2022–2026 period has seen a further phase transition: the integration of foundation models (pre-trained on internet-scale vision and language data) as policy backbones, giving rise to vision-language-action (VLA) models. Google's RT-2 (Brohan et al., 2023) demonstrated that a vision-language model fine-tuned on robot trajectory data could perform semantic generalisation — understanding novel instructions about objects and spatial relationships — that purely reward-trained policies could not. Physical Intelligence's π0 (2024) showed that a single generalist policy trained across diverse robotic platforms could acquire emergent manipulation capabilities. OpenVLA (Kim et al., 2024), a 7-billion-parameter open-source VLA based on the Prismatic visual language model, achieved competitive performance with RT-2 at a fraction of the computational cost. By 2026, ICLR received 164 submissions on VLA models alone, signalling the maturation of this paradigm from research curiosity to dominant methodology.
 
-  The mathematical framework underpinning embodied AI learning is the [[Markov Decision Process]] (MDP), defined by a tuple (S, A, T, R, γ) where S is the state space (all possible configurations of the robot and environment), A is the action space (all possible motor commands), T: S × A → Δ(S) is the transition function (a probability distribution over next states given current state and action), R: S × A → ℝ is the reward function (scalar signal indicating the desirability of a state-action pair), and γ ∈ [0,1) is the discount factor (weighting future rewards). The learning objective is to find a policy π: S → Δ(A) that maximises the expected discounted cumulative reward E[Σ_{t=0}^{∞} γ^t R(s_t, a_t)].
+## Reinforcement Learning Foundations
 
-  For embodied AI, the state space is typically the robot's proprioceptive state (joint angles, velocities, end-effector pose) concatenated with visual or tactile observations. The action space is continuous (target joint angles, Cartesian velocities, or torques) rather than discrete, requiring policy gradient or actor-critic methods rather than value-based tabular approaches. The reward function is typically designed to encode the task objective — positive reward for task completion, negative reward for collisions or constraint violations — but reward engineering is one of the most difficult aspects of embodied AI system design. Poorly specified rewards produce unintended policies: an agent rewarded for "reaching the goal quickly" may knock objects out of the way rather than manipulating them carefully.
+The mathematical framework underpinning embodied AI learning is the [[Markov Decision Process]] (MDP), defined by a tuple (S, A, T, R, γ) where S is the state space (all possible configurations of the robot and environment), A is the action space (all possible motor commands), T: S × A → Δ(S) is the transition function (a probability distribution over next states given current state and action), R: S × A → ℝ is the reward function (scalar signal indicating the desirability of a state-action pair), and γ ∈ [0,1) is the discount factor (weighting future rewards). The learning objective is to find a policy π: S → Δ(A) that maximises the expected discounted cumulative reward E[Σ_{t=0}^{∞} γ^t R(s_t, a_t)].
 
-  Policy gradient methods such as PPO (Proximal Policy Optimisation, Schulman et al. 2017) remain the workhorse of simulation-trained embodied AI policies. PPO maintains a trust-region constraint on policy updates to prevent catastrophic forgetting, uses a clipped objective to ensure stable gradient updates, and is readily parallelisable across thousands of simulation instances. For continuous robotic control with off-policy data reuse, Soft Actor-Critic (SAC, Haarnoja et al. 2018) and TD-MPC2 (Hansen et al. 2023) are preferred, maximising both task reward and action entropy to encourage exploration and avoid premature convergence to suboptimal behaviours.
+For embodied AI, the state space is typically the robot's proprioceptive state (joint angles, velocities, end-effector pose) concatenated with visual or tactile observations. The action space is continuous (target joint angles, Cartesian velocities, or torques) rather than discrete, requiring policy gradient or actor-critic methods rather than value-based tabular approaches. The reward function is typically designed to encode the task objective — positive reward for task completion, negative reward for collisions or constraint violations — but reward engineering is one of the most difficult aspects of embodied AI system design. Poorly specified rewards produce unintended policies: an agent rewarded for "reaching the goal quickly" may knock objects out of the way rather than manipulating them carefully.
 
-  Model-based methods such as DreamerV3 (Hafner et al. 2023) learn a latent-space [[World Model]] — a compact recurrent neural network that predicts the distribution of future latent states given a sequence of actions — and train policies entirely within this imagined model rather than in the real (or simulated) environment. This dramatically reduces the number of real environment interactions required during training and enables rich planning by imagining action trajectories before committing to them. The latent world model also serves as an environment-invariant representation that transfers more readily across robot morphologies and task variations than raw pixel policies.
+Policy gradient methods such as PPO (Proximal Policy Optimisation, Schulman et al. 2017) remain the workhorse of simulation-trained embodied AI policies. PPO maintains a trust-region constraint on policy updates to prevent catastrophic forgetting, uses a clipped objective to ensure stable gradient updates, and is readily parallelisable across thousands of simulation instances. For continuous robotic control with off-policy data reuse, Soft Actor-Critic (SAC, Haarnoja et al. 2018) and TD-MPC2 (Hansen et al. 2023) are preferred, maximising both task reward and action entropy to encourage exploration and avoid premature convergence to suboptimal behaviours.
 
-  ## Imitation Learning and Data Collection
+Model-based methods such as DreamerV3 (Hafner et al. 2023) learn a latent-space [[World Model]] — a compact recurrent neural network that predicts the distribution of future latent states given a sequence of actions — and train policies entirely within this imagined model rather than in the real (or simulated) environment. This dramatically reduces the number of real environment interactions required during training and enables rich planning by imagining action trajectories before committing to them. The latent world model also serves as an environment-invariant representation that transfers more readily across robot morphologies and task variations than raw pixel policies.
 
-  [[Imitation Learning]] provides an alternative to reward engineering by learning directly from demonstrations of expert behaviour. The two primary paradigms are behaviour cloning (BC) and inverse reinforcement learning (IRL). Behaviour cloning treats demonstration data as a supervised learning problem: learn a policy π(a|s) that mimics the demonstrated action distribution from a dataset of (state, action) pairs. BC is simple and computationally efficient but suffers from distribution shift — the policy inevitably encounters states not present in the demonstration data, and errors compound over long task horizons without corrective feedback.
+## Imitation Learning and Data Collection
 
-  The ALOHA system (Zhao et al., 2023) demonstrates the power of high-quality human demonstration data: using a low-cost bi-manual teleoperation setup to collect 50 demonstrations per task, action chunking with Transformers (ACT) achieves 80-90% success on household manipulation tasks including egg beating, slot-car assembly, and laundry folding. Mobile ALOHA extends this to whole-body locomotion and manipulation. The key insight is that demonstration quality (precise, consistent demonstrations capturing the full task variation) matters more than demonstration quantity for behaviour cloning approaches.
+[[Imitation Learning]] provides an alternative to reward engineering by learning directly from demonstrations of expert behaviour. The two primary paradigms are behaviour cloning (BC) and inverse reinforcement learning (IRL). Behaviour cloning treats demonstration data as a supervised learning problem: learn a policy π(a|s) that mimics the demonstrated action distribution from a dataset of (state, action) pairs. BC is simple and computationally efficient but suffers from distribution shift — the policy inevitably encounters states not present in the demonstration data, and errors compound over long task horizons without corrective feedback.
 
-  Inverse reinforcement learning infers the latent reward function that best explains the demonstrator's behaviour, then uses this inferred reward to train a generative policy via standard RL. IRL is more robust to demonstration noise and distribution shift than BC, but computationally intensive. Recent work on diffusion-based imitation (Diffusion Policy, Chi et al. 2023) represents actions as denoising diffusion trajectories, enabling multi-modal action distributions — critical for tasks with multiple valid grasp points or approach directions — and producing smoother, more human-like trajectories than deterministic BC.
+The ALOHA system (Zhao et al., 2023) demonstrates the power of high-quality human demonstration data: using a low-cost bi-manual teleoperation setup to collect 50 demonstrations per task, action chunking with Transformers (ACT) achieves 80-90% success on household manipulation tasks including egg beating, slot-car assembly, and laundry folding. Mobile ALOHA extends this to whole-body locomotion and manipulation. The key insight is that demonstration quality (precise, consistent demonstrations capturing the full task variation) matters more than demonstration quantity for behaviour cloning approaches.
 
-  Dataset aggregation (DAGGER, Ross et al. 2011) addresses the distribution shift problem by iteratively querying an expert to label states encountered by the current policy, expanding the training distribution to cover the policy's actual operating regime. In practice, physical DAGGER requires a human expert to observe robot behaviour in real-time and intervene — expensive but effective for closing the gap between simulation and real-world performance.
+Inverse reinforcement learning infers the latent reward function that best explains the demonstrator's behaviour, then uses this inferred reward to train a generative policy via standard RL. IRL is more robust to demonstration noise and distribution shift than BC, but computationally intensive. Recent work on diffusion-based imitation (Diffusion Policy, Chi et al. 2023) represents actions as denoising diffusion trajectories, enabling multi-modal action distributions — critical for tasks with multiple valid grasp points or approach directions — and producing smoother, more human-like trajectories than deterministic BC.
 
-  ## Components / Architecture
+Dataset aggregation (DAGGER, Ross et al. 2011) addresses the distribution shift problem by iteratively querying an expert to label states encountered by the current policy, expanding the training distribution to cover the policy's actual operating regime. In practice, physical DAGGER requires a human expert to observe robot behaviour in real-time and intervene — expensive but effective for closing the gap between simulation and real-world performance.
 
-  **Perception pipeline**
-  - [[Computer Vision]]: RGB-D cameras providing colour and depth; semantic segmentation identifying object boundaries and class; 6-DOF pose estimation localising grasped objects; optical flow estimating scene motion
-  - [[Sensor Fusion]]: integrating visual, proprioceptive (joint angles, velocities), force-torque, and tactile sensor streams into a unified state representation, typically via learned encoders
-  - Depth sensing: LiDAR (rotating and solid-state), structured light (Intel RealSense), stereo vision for spatial mapping and obstacle avoidance
-  - Proprioception: joint encoders, IMUs, foot-force sensors for legged robots; wrist-mounted force-torque for manipulation
+## Components / Architecture
+
+**Perception pipeline**
+
+- [[Computer Vision]]: RGB-D cameras providing colour and depth; semantic segmentation identifying object boundaries and class; 6-DOF pose estimation localising grasped objects; optical flow estimating scene motion
+- [[Sensor Fusion]]: integrating visual, proprioceptive (joint angles, velocities), force-torque, and tactile sensor streams into a unified state representation, typically via learned encoders
+- Depth sensing: LiDAR (rotating and solid-state), structured light (Intel RealSense), stereo vision for spatial mapping and obstacle avoidance
+- Proprioception: joint encoders, IMUs, foot-force sensors for legged robots; wrist-mounted force-torque for manipulation
 
   **Action representations**
-  - End-effector Cartesian control: specifying target position and orientation of robot hand, delegating inverse kinematics to a controller
-  - Joint-space control: commanding individual joint angles or torques; required for compliant whole-body control
-  - Primitive action vocabularies: discrete high-level actions (grasp, push, place, navigate-to) composed into [[Robotic Manipulation]] sequences
-  - Diffusion-based action policies: representing continuous action distributions as denoising diffusion processes, enabling multi-modal action distributions for dexterous tasks
+
+- End-effector Cartesian control: specifying target position and orientation of robot hand, delegating inverse kinematics to a controller
+- Joint-space control: commanding individual joint angles or torques; required for compliant whole-body control
+- Primitive action vocabularies: discrete high-level actions (grasp, push, place, navigate-to) composed into [[Robotic Manipulation]] sequences
+- Diffusion-based action policies: representing continuous action distributions as denoising diffusion processes, enabling multi-modal action distributions for dexterous tasks
 
   **Learning algorithms**
-  - [[Reinforcement Learning]]: policy gradient methods (PPO, SAC, TD-MPC) optimised against dense or sparse reward signals in simulation; model-free methods dominate for contact-rich manipulation
-  - [[Imitation Learning]]: behaviour cloning from human demonstrations via teleoperation (ALOHA, UMI); inverse RL; data augmentation
-  - [[World Model]]s: latent-space predictive models (DreamerV3, TDMPC2) learning compact representations of environment dynamics, enabling model-based planning without environment access at test time
-  - [[Affordance Learning]]: learning which actions are feasible for which object-surface combinations from visual observation
-  - Vision-Language-Action (VLA) fine-tuning: initialising policy networks from pre-trained [[Vision-Language Model]] weights (PaLI, Prismatic) then fine-tuning on robot trajectory datasets
+
+- [[Reinforcement Learning]]: policy gradient methods (PPO, SAC, TD-MPC) optimised against dense or sparse reward signals in simulation; model-free methods dominate for contact-rich manipulation
+- [[Imitation Learning]]: behaviour cloning from human demonstrations via teleoperation (ALOHA, UMI); inverse RL; data augmentation
+- [[World Model]]s: latent-space predictive models (DreamerV3, TDMPC2) learning compact representations of environment dynamics, enabling model-based planning without environment access at test time
+- [[Affordance Learning]]: learning which actions are feasible for which object-surface combinations from visual observation
+- Vision-Language-Action (VLA) fine-tuning: initialising policy networks from pre-trained [[Vision-Language Model]] weights (PaLI, Prismatic) then fine-tuning on robot trajectory datasets
 
   **Simulation environments**
-  - MuJoCo and IsaacGym / Isaac Lab: fast, parallelised rigid-body and contact simulation for manipulation at thousands of environments per second
-  - Habitat 3.0: photorealistic indoor navigation, rearrangement, and social navigation benchmarks
-  - AI2-THOR, RoboSuite, ManiSkill: object-interaction benchmarks for household and tabletop manipulation
-  - NVIDIA Omniverse / Isaac Sim: GPU-accelerated physically-based rendering enabling photorealistic [[Domain Randomisation]] for sim-to-real transfer
-  - RoboTwin, RoboCasa365: large-scale simulation frameworks designed as "data factories" for training generalist policies
+
+- MuJoCo and IsaacGym / Isaac Lab: fast, parallelised rigid-body and contact simulation for manipulation at thousands of environments per second
+- Habitat 3.0: photorealistic indoor navigation, rearrangement, and social navigation benchmarks
+- AI2-THOR, RoboSuite, ManiSkill: object-interaction benchmarks for household and tabletop manipulation
+- NVIDIA Omniverse / Isaac Sim: GPU-accelerated physically-based rendering enabling photorealistic [[Domain Randomisation]] for sim-to-real transfer
+- RoboTwin, RoboCasa365: large-scale simulation frameworks designed as "data factories" for training generalist policies
 
   **Foundation model integration**
-  - [[Vision-Language Model]]s (CLIP, SigLIP, PaLI) as visual encoders providing semantic grounding and zero-shot object recognition
-  - [[Large Language Model]]s as high-level task planners (SayCan, Code as Policies, Voyager) decomposing natural language instructions into executable sub-goals
-  - Vision-language-action (VLA) models: RT-2, OpenVLA, π0 — end-to-end policies fine-tuned from VLMs on robot trajectory data, tokenising robot actions as text-like discrete tokens
+
+- [[Vision-Language Model]]s (CLIP, SigLIP, PaLI) as visual encoders providing semantic grounding and zero-shot object recognition
+- [[Large Language Model]]s as high-level task planners (SayCan, Code as Policies, Voyager) decomposing natural language instructions into executable sub-goals
+- Vision-language-action (VLA) models: RT-2, OpenVLA, π0 — end-to-end policies fine-tuned from VLMs on robot trajectory data, tokenising robot actions as text-like discrete tokens
 
   ## Sim-to-Real Transfer
 
@@ -223,11 +228,12 @@ Embodied AI is a research paradigm holding that intelligence emerges from the co
   **Cambridge** — CMR Surgical (headquarters: Cambridge) has deployed the Versius surgical robot system with embodied AI-assisted instrument tracking across NHS trusts and international hospitals. The Cambridge Engineering Department's Information Engineering Division conducts research in probabilistic robotics and Bayesian approaches to state estimation for embodied systems.
 
   **Northern England** — Key research and industrial activities:
-  - **Manchester**: University of Manchester Robotics Cluster collaborates with Ocado Technology and other logistics firms on autonomous picking systems. Manchester's AI sector applies embodied AI to warehouse automation and last-mile delivery.
-  - **Sheffield**: Advanced Manufacturing Research Centre (AMRC) works with Rolls-Royce and Airbus to deploy embodied AI for precision aerostructure inspection and assembly. The University of Sheffield Automatic Control and Systems Engineering department contributes to compliant manipulation and force-controlled assembly.
-  - **Leeds**: University of Leeds collaborates with Fieldwork Robotics on soft-fruit harvesting embodied AI. The Institute for Transport Studies applies autonomous navigation research to urban mobility and freight.
-  - **Newcastle**: Newcastle University's Robotics and Autonomous Systems Group contributes to collaborative robotics for cultural heritage (Hadrian's Wall monitoring, museum applications) and healthcare-adjacent environments.
-  - **Bristol**: University of Bristol's Robotics Lab (Sebastian Risi's former group) contributes to evolutionary robotics and adaptive embodied systems. Bristol-based agricultural technology firms apply embodied AI to vertical farming and polytunnel harvest automation.
+
+- **Manchester**: University of Manchester Robotics Cluster collaborates with Ocado Technology and other logistics firms on autonomous picking systems. Manchester's AI sector applies embodied AI to warehouse automation and last-mile delivery.
+- **Sheffield**: Advanced Manufacturing Research Centre (AMRC) works with Rolls-Royce and Airbus to deploy embodied AI for precision aerostructure inspection and assembly. The University of Sheffield Automatic Control and Systems Engineering department contributes to compliant manipulation and force-controlled assembly.
+- **Leeds**: University of Leeds collaborates with Fieldwork Robotics on soft-fruit harvesting embodied AI. The Institute for Transport Studies applies autonomous navigation research to urban mobility and freight.
+- **Newcastle**: Newcastle University's Robotics and Autonomous Systems Group contributes to collaborative robotics for cultural heritage (Hadrian's Wall monitoring, museum applications) and healthcare-adjacent environments.
+- **Bristol**: University of Bristol's Robotics Lab (Sebastian Risi's former group) contributes to evolutionary robotics and adaptive embodied systems. Bristol-based agricultural technology firms apply embodied AI to vertical farming and polytunnel harvest automation.
 
   **Government and Industry** — UKRI's AI for Science programme funds embodied AI applications in drug discovery, climate monitoring, and nuclear decommissioning. The Offshore Robotics for Certification of Assets (ORCA) Hub (led by Edinburgh, with partners Edinburgh, Heriot-Watt, Manchester, and Oxford) develops embodied AI for offshore oil-platform inspection, reducing human exposure to hazardous environments. The AI Safety Institute (AISI, DSIT) is developing evaluation frameworks for embodied AI systems deployed in high-risk public-facing contexts, addressing failure modes specific to physical agents that software-only AI safety frameworks do not capture.
 
@@ -358,5 +364,5 @@ Embodied AI is a research paradigm holding that intelligence emerges from the co
 
   **Whole-body control** — a control approach for humanoid or multi-limbed robots that simultaneously optimises all joint trajectories to achieve a task goal whilst satisfying balance constraints, joint limits, and interaction force bounds; typically formulated as a quadratic programme solved at high frequency.
 
-- ### Provenance
+### Provenance
 

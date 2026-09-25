@@ -1,25 +1,24 @@
-
 The collaborative technology and innovation ecosystem spanning Manchester, Leeds, Liverpool, Sheffield, and Newcastle that constitutes the Northern Powerhouse. The corridor links world-class research universities, NHS trusts, advanced manufacturing facilities, and digital startups through coordinated investment, shared infrastructure, and regional development frameworks aimed at closing the productivity gap between North and South England.
 
 The collaborative technology and innovation ecosystem spanning Manchester, Leeds, Liverpool, Sheffield, and Newcastle that constitutes the Northern Powerhouse. The corridor links research universities, NHS trusts, advanced manufacturing, and digital startups through coordinated investment and regional development frameworks.
 
-- ### Content
+### Content
 
-  ## Regional Technology Hub
+## Regional Technology Hub
 
-  I appreciate your detailed query, however I must clarify that the search results provided do not contain specific information about a "North England Innovation Corridor" as a formally named or distinct entity within the Northern Powerhouse initiative.
+I appreciate your detailed query, however I must clarify that the search results provided do not contain specific information about a "North England Innovation Corridor" as a formally named or distinct entity within the Northern Powerhouse initiative.
 
-  What the search results do reveal is a broader **Northern Powerhouse strategy** focused on regional economic development across North England, with innovation as a key component. Rather than a single "Innovation Corridor," the Northern Powerhouse framework encompasses multiple cities and innovation ecosystems working collaboratively.
+What the search results do reveal is a broader **Northern Powerhouse strategy** focused on regional economic development across North England, with innovation as a key component. Rather than a single "Innovation Corridor," the Northern Powerhouse framework encompasses multiple cities and innovation ecosystems working collaboratively.
 
-  ## What the Search Results Reveal
+## What the Search Results Reveal
 
-  **Regional Innovation Framework**
+**Regional Innovation Framework**
 
-  The Northern Powerhouse approach to innovation is structured around several key principles[4]:
+The Northern Powerhouse approach to innovation is structured around several key principles[4]:
 
-  - **Technology adoption** as a crucial driver of productivity, including AI, IoT, and automation systems[4]
-  - **Skills development** and workforce capabilities to enable efficient operations and technology use[4]
-  - **Absorptive capacity** and structural factors that support innovation ecosystems[4]
+- **Technology adoption** as a crucial driver of productivity, including AI, IoT, and automation systems[4]
+- **Skills development** and workforce capabilities to enable efficient operations and technology use[4]
+- **Absorptive capacity** and structural factors that support innovation ecosystems[4]
 
   **Multi-City Collaboration Model**
 
@@ -35,12 +34,11 @@ The collaborative technology and innovation ecosystem spanning Manchester, Leeds
 
   If you're seeking information about specific innovation hubs, technology clusters, or particular cities within the Northern Powerhouse, I'd be happy to provide more targeted information with additional search results focused on those areas.
 
-
   ## Related Hubs
 
-  - [[North England Innovation Corridor]]
-  - [[Northern Powerhouse]]
-  - [[UK Tech Ecosystem]]
+- [[North England Innovation Corridor]]
+- [[Northern Powerhouse]]
+- [[UK Tech Ecosystem]]
 
   #### References
   1. [https://www.british-business-bank.co.uk/sites/g/files/sovrnj166/files/2022-11/BBB-Northern-Powerhouse-Report_SINGLE-PAGES.pdf](https://www.british-business-bank.co.uk/sites/g/files/sovrnj166/files/2022-11/BBB-Northern-Powerhouse-Report_SINGLE-PAGES.pdf)
@@ -59,5 +57,5 @@ The collaborative technology and innovation ecosystem spanning Manchester, Leeds
 
   8. [https://www.np11.org.uk/wp-content/uploads/2024/02/NP11-InnovationClusters_D3.pdf](https://www.np11.org.uk/wp-content/uploads/2024/02/NP11-InnovationClusters_D3.pdf)
 
-- ### Provenance
+### Provenance
 

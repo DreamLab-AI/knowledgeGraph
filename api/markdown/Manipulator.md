@@ -1,89 +1,97 @@
-
 A manipulator is a mechanically programmable device comprising a series of rigid links connected by actuated joints arranged in a serial or parallel kinematic chain, capable of displacing objects or tools through a defined workspace. The distal end carries an end-effector that interfaces directly with the task environment, enabling grasping, welding, assembly, or other physical interactions. Manipulators are parameterised by their degrees of freedom, workspace geometry, payload capacity, and control architecture, and are the foundational actuator subsystem in industrial, collaborative, and service robots. The ISO 8373:2021 standard defines a manipulator as the machine mechanism of a robot.
 
-- ### Overview
-  - Manipulators are the most widely deployed class of robotic mechanism in industrial and research settings, with a technology lineage traceable to the Unimate arm deployed at General Motors in 1961.
-  - A manipulator converts electrical or hydraulic energy into precise Cartesian motion of its end-effector by coordinating multiple actuated joints under closed-loop control.
-  - The distinction between a manipulator and a complete [[Robot]] is taxonomic: the manipulator is the *mechanical* subsystem; the robot is the complete system including controller, sensors, and software.
-  - Modern manipulators span a spectrum from heavy industrial arms with payloads exceeding 1,000 kg to collaborative desktop units weighing under 10 kg.
-  - [[Collaborative Robot]] (cobot) manipulators are designed for direct human-robot proximity through compliant control, force limiting, and rounded geometries.
-  - [[Parallel Robot]] manipulators (e.g. Stewart platforms, Delta robots) contrast with serial-chain architectures by connecting the end-effector to the base through multiple independent kinematic branches, yielding higher stiffness and speed at the cost of reduced workspace volume.
+### Overview
 
-- ### Key Components
-  - **[[Link]]** — rigid structural segment transmitting forces and torques between adjacent joints; geometry determines workspace and stiffness.
-  - **[[Joint]]** — the kinematic pair connecting adjacent links; typically revolute (rotational) or prismatic (translational); each powered joint provides one degree of freedom.
-  - **[[End-Effector]]** — the tool or gripper attached at the wrist; may be a vacuum cup, magnetic gripper, welding torch, surgical instrument, or dexterous robotic hand.
-  - **[[Wrist]]** — the subset of joints closest to the end-effector; typically a spherical wrist (three intersecting rotational axes) enabling arbitrary end-effector orientation.
-  - **[[Actuator]]** — the power source for each joint; electric servo motors dominate modern manipulators, with hydraulic actuation retained for heavy-duty applications.
-  - **[[Servo Motor]]** — brushless DC or AC motors with high-resolution encoders providing the torque and position feedback required for precise trajectory tracking.
-  - **[[Force-Torque Sensor]]** — mounted at the wrist to provide real-time contact force and torque data, enabling compliant assembly, surface following, and safe human-robot contact.
-  - **[[Robot Controller]]** — the real-time embedded system executing joint-space control loops (typically at 1–8 kHz), interpreting task-space commands, and enforcing safety limits.
+- Manipulators are the most widely deployed class of robotic mechanism in industrial and research settings, with a technology lineage traceable to the Unimate arm deployed at General Motors in 1961.
+- A manipulator converts electrical or hydraulic energy into precise Cartesian motion of its end-effector by coordinating multiple actuated joints under closed-loop control.
+- The distinction between a manipulator and a complete [[Robot]] is taxonomic: the manipulator is the *mechanical* subsystem; the robot is the complete system including controller, sensors, and software.
+- Modern manipulators span a spectrum from heavy industrial arms with payloads exceeding 1,000 kg to collaborative desktop units weighing under 10 kg.
+- [[Collaborative Robot]] (cobot) manipulators are designed for direct human-robot proximity through compliant control, force limiting, and rounded geometries.
+- [[Parallel Robot]] manipulators (e.g. Stewart platforms, Delta robots) contrast with serial-chain architectures by connecting the end-effector to the base through multiple independent kinematic branches, yielding higher stiffness and speed at the cost of reduced workspace volume.
 
-- ### Kinematic Architecture
-  - **Serial (Open-Chain) Manipulators** — the dominant commercial form; joints arranged in a single chain from base to end-effector; workspace is large but stiffness and accuracy degrade at reach extremes.
-    - [[Denavit-Hartenberg Convention]] (DH parameters) provides the canonical 4-parameter per-joint description of serial-chain geometry used universally in robot modelling.
-    - Six degrees of freedom (6-DOF) is the minimum for arbitrary placement and orientation of the end-effector in 3D space.
-    - Seven or more DOF yields a [[Redundant Manipulator]] with null-space motion enabling obstacle avoidance and singularity avoidance while maintaining end-effector pose.
-  - **Parallel Manipulators** — multiple kinematic chains connect base to end-effector; higher stiffness, lower inertia, higher speed; limited workspace; examples include [[Delta Robot]] and [[Stewart Platform]].
-  - **Hybrid Manipulators** — combine serial and parallel sub-structures to balance workspace with stiffness.
+### Key Components
 
-- ### Kinematics and Control
-  - **[[Forward Kinematics]]** — computes end-effector pose from joint angles; analytically tractable for any serial chain via the DH product-of-transforms method.
-  - **[[Inverse Kinematics]]** — computes joint angles achieving a desired end-effector pose; generally non-linear; may have multiple solutions, no solution (outside workspace), or a continuum of solutions (redundant arm).
-  - **[[Trajectory Planning]]** — interpolates smooth joint-space or Cartesian-space paths between waypoints, respecting velocity and acceleration limits.
-  - **[[Motion Planning]]** — higher-level planning in configuration space (C-space) to find collision-free paths; algorithms include RRT, PRM, and their variants.
-  - **[[Jacobian Matrix]]** — the linear mapping from joint velocities to end-effector velocities; used in resolved-motion rate control and in detecting kinematic singularities.
-  - **Torque/Impedance Control** — replaces pure position control with force-aware schemes; essential for assembly, grinding, and collaborative tasks where contact dynamics must be regulated.
+- **[[Link]]** — rigid structural segment transmitting forces and torques between adjacent joints; geometry determines workspace and stiffness.
+- **[[Joint]]** — the kinematic pair connecting adjacent links; typically revolute (rotational) or prismatic (translational); each powered joint provides one degree of freedom.
+- **[[End-Effector]]** — the tool or gripper attached at the wrist; may be a vacuum cup, magnetic gripper, welding torch, surgical instrument, or dexterous robotic hand.
+- **[[Wrist]]** — the subset of joints closest to the end-effector; typically a spherical wrist (three intersecting rotational axes) enabling arbitrary end-effector orientation.
+- **[[Actuator]]** — the power source for each joint; electric servo motors dominate modern manipulators, with hydraulic actuation retained for heavy-duty applications.
+- **[[Servo Motor]]** — brushless DC or AC motors with high-resolution encoders providing the torque and position feedback required for precise trajectory tracking.
+- **[[Force-Torque Sensor]]** — mounted at the wrist to provide real-time contact force and torque data, enabling compliant assembly, surface following, and safe human-robot contact.
+- **[[Robot Controller]]** — the real-time embedded system executing joint-space control loops (typically at 1–8 kHz), interpreting task-space commands, and enforcing safety limits.
 
-- ### Applications
-  - **Industrial Automation**
-    - [[Robot Welding]] — arc and spot welding in automotive body shops; manipulators provide repeatable torch positioning at high duty cycles.
-    - [[Assembly Automation]] — precision insertion, fastening, and mating operations in electronics and aerospace manufacturing.
-    - [[Pick and Place]] — high-speed transfer of components between conveyors, magazines, and fixtures; Delta robots dominate in food and pharmaceutical lines.
-    - Painting, sealing, and surface treatment using path-following manipulators with spray end-effectors.
-  - **Collaborative and Human-Proximate Tasks**
-    - [[Human-Robot Collaboration]] — cobots such as Universal Robots UR-series and KUKA LBR iiwa work directly beside human operators on shared assembly cells.
-    - [[Teleoperation]] — bilateral teleoperation systems use a master manipulator to control a remote slave; applications span nuclear decommissioning, underwater intervention, and robotic surgery (e.g. da Vinci Surgical System).
-  - **Research and Emerging Domains**
-    - Agricultural harvesting robots using vision-guided manipulators for fruit picking.
-    - [[Digital Twin]] simulation of manipulator work cells for virtual commissioning and offline programming.
-    - [[Reinforcement Learning]] applied to dexterous manipulation — learning contact-rich tasks (peg insertion, cloth folding) from simulation with sim-to-real transfer.
-    - Space manipulation — free-floating robotic arms on satellites and the International Space Station (SSRMS Canadarm2).
+### Kinematic Architecture
 
-- ### Taxonomy
-  - By kinematic structure: serial / parallel / hybrid
-  - By actuation: electric / hydraulic / pneumatic / cable-driven / soft/continuum
-  - By deployment context: industrial / collaborative / service / surgical / space
-  - By workspace geometry: Cartesian (PPP) / cylindrical (RPP) / spherical (RRP) / SCARA (RRP) / articulated (RRR) / delta (parallel)
-  - [[Collaborative Robot]] — torque-limited, force-sensing variant designed for proximity to humans without barriers.
-  - [[Redundant Manipulator]] — 7+ DOF arm with null-space exploitable for secondary objectives.
-  - [[Continuum Manipulator]] — lacks rigid links; motion via elastic deformation; inspired by elephant trunks and octopus arms; suited to confined spaces.
+- **Serial (Open-Chain) Manipulators** — the dominant commercial form; joints arranged in a single chain from base to end-effector; workspace is large but stiffness and accuracy degrade at reach extremes.
+  - [[Denavit-Hartenberg Convention]] (DH parameters) provides the canonical 4-parameter per-joint description of serial-chain geometry used universally in robot modelling.
+  - Six degrees of freedom (6-DOF) is the minimum for arbitrary placement and orientation of the end-effector in 3D space.
+  - Seven or more DOF yields a [[Redundant Manipulator]] with null-space motion enabling obstacle avoidance and singularity avoidance while maintaining end-effector pose.
+- **Parallel Manipulators** — multiple kinematic chains connect base to end-effector; higher stiffness, lower inertia, higher speed; limited workspace; examples include [[Delta Robot]] and [[Stewart Platform]].
+- **Hybrid Manipulators** — combine serial and parallel sub-structures to balance workspace with stiffness.
 
-- ### Standards & Context
-  - **[[ISO 8373:2021]]** — *Robotics — Vocabulary* — the primary international standard defining manipulator and related robot terminology; defines manipulator as "the machine mechanism of a robot" (clause 3.16).
-  - **ISO 9283:1998** — *Manipulating Industrial Robots — Performance Criteria and Related Test Methods* — specifies how to measure pose accuracy, repeatability, path accuracy, and velocity performance.
-  - **ISO/TS 15066:2016** — safety requirements for collaborative robot systems, including power-and-force-limiting manipulators operating alongside humans.
-  - **IEC 62061 / ISO 13849** — functional safety standards governing the design of safety-rated control and monitoring functions in robot controllers.
-  - **ROS (Robot Operating System)** — the dominant open-source middleware for manipulator programming; provides URDF (Unified Robot Description Format) for kinematic modelling, MoveIt for [[Motion Planning]], and ros_control for hardware abstraction.
-  - **URDF / SDF** — XML-based formats describing manipulator geometry, inertia, and joint properties for simulation and planning.
-  - Major commercial families: KUKA KR-series, ABB IRB-series, Fanuc M-series, YASKAWA Motoman, Universal Robots UR-series, Franka Emika Panda.
+### Kinematics and Control
 
-- ### Current Landscape (2026)
-  - Manipulator control has shifted decisively toward learned vision-language-action (VLA) foundation policies: Physical Intelligence's pi0 for dexterous bimanual work, Google DeepMind's Gemini Robotics (2025), NVIDIA's GR00T N1 open humanoid model (March 2025) and Tsinghua's 1.2B-parameter RDT-1B diffusion model now let arms generalise to unseen objects from as few as one to five demonstrations.
-  - Dexterity-first hand foundation models emerged in 2026, including RLWRLD's RLDX-1 (May 2026) and Genesis AI's GENE-26.5 (announced 6 May 2026), the latter paired with a human-scale dexterous hand and a data engine to claim human-level physical manipulation.
-  - Multi-fingered end-effectors proliferated: Tesla Optimus Gen 3 (22-DoF, tactile), Unitree Dex5-1 (20-DoF), Tesollo DG-3F and EFORT Dexterous I, alongside maturing tactile sensing (GelSight, Meta's open-source DIGIT at roughly 20 USD, BioTac) and tactile foundation models such as UniTouch enabling in-hand regrasping and tool use.
-  - The core safety framework was rewritten: ISO 10218-1:2025 (Edition 3) and ISO 10218-2:2025 (Edition 2) came into force on 1 April 2025, replacing the 2011 editions, folding the former ISO/TS 15066 power-and-force-limiting content into ISO 10218-2 and adding first-time cybersecurity requirements plus new Class 1/Class 2 robot classifications.
-  - The US aligned within months via ANSI/A3 R15.06-2025 (Parts 1 and 2 published September-October 2025, Part 3 early November 2025), reframing the field around "collaborative applications" rather than the "cobot" as a product category; the EU Cyber Resilience Act applies to connected robots from 11 December 2027.
-  - Market momentum remains strong: the collaborative-robot segment was valued at roughly USD 1.9 billion in 2025 and USD 2.28 billion in 2026, projected toward USD 5.72 billion by 2031 (~20% CAGR), with sub-5 kg arms holding about 52% share and 10-20 kg payload classes growing fastest; ABB, FANUC, KUKA, Yaskawa and Universal Robots remain the incumbent manipulator OEMs.
-  - Open frontiers as of 2026 include the data bottleneck for high-DoF hands (still reliant on teleoperation, human demonstration and simulation such as DexGraspNet), reliable sim-to-real transfer, robust contact-rich in-hand manipulation, and certifying learned policies against the tightened functional-safety and cybersecurity clauses of ISO 10218:2025.
+- **[[Forward Kinematics]]** — computes end-effector pose from joint angles; analytically tractable for any serial chain via the DH product-of-transforms method.
+- **[[Inverse Kinematics]]** — computes joint angles achieving a desired end-effector pose; generally non-linear; may have multiple solutions, no solution (outside workspace), or a continuum of solutions (redundant arm).
+- **[[Trajectory Planning]]** — interpolates smooth joint-space or Cartesian-space paths between waypoints, respecting velocity and acceleration limits.
+- **[[Motion Planning]]** — higher-level planning in configuration space (C-space) to find collision-free paths; algorithms include RRT, PRM, and their variants.
+- **[[Jacobian Matrix]]** — the linear mapping from joint velocities to end-effector velocities; used in resolved-motion rate control and in detecting kinematic singularities.
+- **Torque/Impedance Control** — replaces pure position control with force-aware schemes; essential for assembly, grinding, and collaborative tasks where contact dynamics must be regulated.
 
-- ### References
-  - 1. Li, G. et al. (2025). The Developments and Challenges towards Dexterous and Embodied Robotic Manipulation: A Survey. arXiv. https://arxiv.org/html/2507.11840v1
-  - 2. Genesis AI (2026). Genesis AI Unveils GENE-26.5, the First AI Brain to Enable Robots with Human-Level Physical Manipulation Capabilities. PR Newswire. https://www.prnewswire.com/news-releases/genesis-ai-unveils-gene-26-5--the-first-ai-brain-to-enable-robots-with-human-level-physical-manipulation-capabilities-302763638.html
-  - 3. EVS International (2026). Collaborative Robot Safety Standards 2026: ISO 10218:2025 and TS 15066. https://www.evsint.com/collaborative-robot-safety-standards-2026-iso-10218-2025-ts-15066/
-  - 4. InMotion (2026). Collaborative Robot Safety Standards: ISO 10218, ISO/TS 15066, ANSI/A3 R15.06. https://www.inmotion.global/resources/cobot-safety/collaborative-robot-safety-standards/
-  - 5. Mordor Intelligence (2026). Collaborative Robots Market Size, Share & Forecast, 2031. https://www.mordorintelligence.com/industry-reports/collaborative-robot-market
-  - 6. RoboCloud (2026). Tactile Sensing for Dexterous Manipulation: 2026 State of the Art. https://robocloud-dashboard.vercel.app/learn/blog/tactile-dexterous-manipulation-2026
+### Applications
 
-- ### Provenance
+- **Industrial Automation**
+  - [[Robot Welding]] — arc and spot welding in automotive body shops; manipulators provide repeatable torch positioning at high duty cycles.
+  - [[Assembly Automation]] — precision insertion, fastening, and mating operations in electronics and aerospace manufacturing.
+  - [[Pick and Place]] — high-speed transfer of components between conveyors, magazines, and fixtures; Delta robots dominate in food and pharmaceutical lines.
+  - Painting, sealing, and surface treatment using path-following manipulators with spray end-effectors.
+- **Collaborative and Human-Proximate Tasks**
+  - [[Human-Robot Collaboration]] — cobots such as Universal Robots UR-series and KUKA LBR iiwa work directly beside human operators on shared assembly cells.
+  - [[Teleoperation]] — bilateral teleoperation systems use a master manipulator to control a remote slave; applications span nuclear decommissioning, underwater intervention, and robotic surgery (e.g. da Vinci Surgical System).
+- **Research and Emerging Domains**
+  - Agricultural harvesting robots using vision-guided manipulators for fruit picking.
+  - [[Digital Twin]] simulation of manipulator work cells for virtual commissioning and offline programming.
+  - [[Reinforcement Learning]] applied to dexterous manipulation — learning contact-rich tasks (peg insertion, cloth folding) from simulation with sim-to-real transfer.
+  - Space manipulation — free-floating robotic arms on satellites and the International Space Station (SSRMS Canadarm2).
+
+### Taxonomy
+
+- By kinematic structure: serial / parallel / hybrid
+- By actuation: electric / hydraulic / pneumatic / cable-driven / soft/continuum
+- By deployment context: industrial / collaborative / service / surgical / space
+- By workspace geometry: Cartesian (PPP) / cylindrical (RPP) / spherical (RRP) / SCARA (RRP) / articulated (RRR) / delta (parallel)
+- [[Collaborative Robot]] — torque-limited, force-sensing variant designed for proximity to humans without barriers.
+- [[Redundant Manipulator]] — 7+ DOF arm with null-space exploitable for secondary objectives.
+- [[Continuum Manipulator]] — lacks rigid links; motion via elastic deformation; inspired by elephant trunks and octopus arms; suited to confined spaces.
+
+### Standards & Context
+
+- **[[ISO 8373:2021]]** — *Robotics — Vocabulary* — the primary international standard defining manipulator and related robot terminology; defines manipulator as "the machine mechanism of a robot" (clause 3.16).
+- **ISO 9283:1998** — *Manipulating Industrial Robots — Performance Criteria and Related Test Methods* — specifies how to measure pose accuracy, repeatability, path accuracy, and velocity performance.
+- **ISO/TS 15066:2016** — safety requirements for collaborative robot systems, including power-and-force-limiting manipulators operating alongside humans.
+- **IEC 62061 / ISO 13849** — functional safety standards governing the design of safety-rated control and monitoring functions in robot controllers.
+- **ROS (Robot Operating System)** — the dominant open-source middleware for manipulator programming; provides URDF (Unified Robot Description Format) for kinematic modelling, MoveIt for [[Motion Planning]], and ros_control for hardware abstraction.
+- **URDF / SDF** — XML-based formats describing manipulator geometry, inertia, and joint properties for simulation and planning.
+- Major commercial families: KUKA KR-series, ABB IRB-series, Fanuc M-series, YASKAWA Motoman, Universal Robots UR-series, Franka Emika Panda.
+
+### Current Landscape (2026)
+
+- Manipulator control has shifted decisively toward learned vision-language-action (VLA) foundation policies: Physical Intelligence's pi0 for dexterous bimanual work, Google DeepMind's Gemini Robotics (2025), NVIDIA's GR00T N1 open humanoid model (March 2025) and Tsinghua's 1.2B-parameter RDT-1B diffusion model now let arms generalise to unseen objects from as few as one to five demonstrations.
+- Dexterity-first hand foundation models emerged in 2026, including RLWRLD's RLDX-1 (May 2026) and Genesis AI's GENE-26.5 (announced 6 May 2026), the latter paired with a human-scale dexterous hand and a data engine to claim human-level physical manipulation.
+- Multi-fingered end-effectors proliferated: Tesla Optimus Gen 3 (22-DoF, tactile), Unitree Dex5-1 (20-DoF), Tesollo DG-3F and EFORT Dexterous I, alongside maturing tactile sensing (GelSight, Meta's open-source DIGIT at roughly 20 USD, BioTac) and tactile foundation models such as UniTouch enabling in-hand regrasping and tool use.
+- The core safety framework was rewritten: ISO 10218-1:2025 (Edition 3) and ISO 10218-2:2025 (Edition 2) came into force on 1 April 2025, replacing the 2011 editions, folding the former ISO/TS 15066 power-and-force-limiting content into ISO 10218-2 and adding first-time cybersecurity requirements plus new Class 1/Class 2 robot classifications.
+- The US aligned within months via ANSI/A3 R15.06-2025 (Parts 1 and 2 published September-October 2025, Part 3 early November 2025), reframing the field around "collaborative applications" rather than the "cobot" as a product category; the EU Cyber Resilience Act applies to connected robots from 11 December 2027.
+- Market momentum remains strong: the collaborative-robot segment was valued at roughly USD 1.9 billion in 2025 and USD 2.28 billion in 2026, projected toward USD 5.72 billion by 2031 (~20% CAGR), with sub-5 kg arms holding about 52% share and 10-20 kg payload classes growing fastest; ABB, FANUC, KUKA, Yaskawa and Universal Robots remain the incumbent manipulator OEMs.
+- Open frontiers as of 2026 include the data bottleneck for high-DoF hands (still reliant on teleoperation, human demonstration and simulation such as DexGraspNet), reliable sim-to-real transfer, robust contact-rich in-hand manipulation, and certifying learned policies against the tightened functional-safety and cybersecurity clauses of ISO 10218:2025.
+
+### References
+
+- 1. Li, G. et al. (2025). The Developments and Challenges towards Dexterous and Embodied Robotic Manipulation: A Survey. arXiv. https://arxiv.org/html/2507.11840v1
+- 2. Genesis AI (2026). Genesis AI Unveils GENE-26.5, the First AI Brain to Enable Robots with Human-Level Physical Manipulation Capabilities. PR Newswire. https://www.prnewswire.com/news-releases/genesis-ai-unveils-gene-26-5--the-first-ai-brain-to-enable-robots-with-human-level-physical-manipulation-capabilities-302763638.html
+- 3. EVS International (2026). Collaborative Robot Safety Standards 2026: ISO 10218:2025 and TS 15066. https://www.evsint.com/collaborative-robot-safety-standards-2026-iso-10218-2025-ts-15066/
+- 4. InMotion (2026). Collaborative Robot Safety Standards: ISO 10218, ISO/TS 15066, ANSI/A3 R15.06. https://www.inmotion.global/resources/cobot-safety/collaborative-robot-safety-standards/
+- 5. Mordor Intelligence (2026). Collaborative Robots Market Size, Share & Forecast, 2031. https://www.mordorintelligence.com/industry-reports/collaborative-robot-market
+- 6. RoboCloud (2026). Tactile Sensing for Dexterous Manipulation: 2026 State of the Art. https://robocloud-dashboard.vercel.app/learn/blog/tactile-dexterous-manipulation-2026
+
+### Provenance
 

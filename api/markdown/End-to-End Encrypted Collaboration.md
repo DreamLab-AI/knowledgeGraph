@@ -1,3 +1,2 @@
-
 End-to-end encrypted collaboration refers to real-time co-editing and communication systems in which content is encrypted on the sender's device and can only be decrypted by intended recipients, with no plaintext accessible to intermediary servers. Implementing E2EE in collaborative contexts requires careful key management, since features like conflict resolution, server-side search, and access control must operate on ciphertext or be handled entirely client-side. Protocols such as Matrix's Megolm and systems built on the Signal Protocol provide practical frameworks for achieving this in group collaboration scenarios.
 

@@ -1,99 +1,105 @@
-
 A graded classification (typically 0–5) quantifying the degree to which an agent perceives, decides, and acts without human intervention, ranging from fully manual operation through partial and conditional autonomy to full self-governance, with domain-specific scales for AI, robotics, blockchain DAOs, and multi-agent systems.
 
-- ### Semantic Classification
+### Semantic Classification
 
-- ### Content
+### Content
 
-  ## Definition
+## Definition
 
-  **Autonomy Level** quantifies the degree to which an [[Agent]] can:
-  - **Perceive** its environment independently
-  - **Decide** on actions without human input
-  - **Execute** actions without human approval
-  - **Adapt** to changing conditions autonomously
-  - **Recover** from failures without intervention
+**Autonomy Level** quantifies the degree to which an [[Agent]] can:
+
+- **Perceive** its environment independently
+- **Decide** on actions without human input
+- **Execute** actions without human approval
+- **Adapt** to changing conditions autonomously
+- **Recover** from failures without intervention
 
   ## Autonomy Spectrum
 
   ### Five-Level Classification (General Agents)
 
-  ```
-  Level 0: No Autonomy (Manual)
-    ↓
-  Level 1: Assisted (Human decides, agent executes)
-    ↓
-  Level 2: Partial Autonomy (Agent suggests, human approves)
-    ↓
-  Level 3: Conditional Autonomy (Agent acts, human monitors)
-    ↓
-  Level 4: High Autonomy (Agent acts independently, human available)
-    ↓
-  Level 5: Full Autonomy (Agent operates completely independently)
-  ```
+```
+Level 0: No Autonomy (Manual)
+  ↓
+Level 1: Assisted (Human decides, agent executes)
+  ↓
+Level 2: Partial Autonomy (Agent suggests, human approves)
+  ↓
+Level 3: Conditional Autonomy (Agent acts, human monitors)
+  ↓
+Level 4: High Autonomy (Agent acts independently, human available)
+  ↓
+Level 5: Full Autonomy (Agent operates completely independently)
+```
 
-  ### Detailed Level Descriptions
+### Detailed Level Descriptions
 
-  #### Level 0: No Autonomy
-  - **Description**: Fully manual operation, agent is merely a tool
-  - **Human Role**: Makes all decisions and executes all actions
-  - **Agent Role**: None or passive execution only
-  - **Example**: Manual teleoperation of a robot
+#### Level 0: No Autonomy
+
+- **Description**: Fully manual operation, agent is merely a tool
+- **Human Role**: Makes all decisions and executes all actions
+- **Agent Role**: None or passive execution only
+- **Example**: Manual teleoperation of a robot
 
   #### Level 1: Driver Assistance
-  - **Description**: Agent provides assistance but human controls all actions
-  - **Human Role**: Maintains full control, receives agent suggestions
-  - **Agent Role**: Monitors environment, provides alerts and recommendations
-  - **Examples**:
-  - AI: Autocomplete suggestions
-  - BC: Transaction fee estimators
-  - RB: Lane departure warnings
-  - MV: Pathfinding hints
-  - TC: Workflow suggestions
+
+- **Description**: Agent provides assistance but human controls all actions
+- **Human Role**: Maintains full control, receives agent suggestions
+- **Agent Role**: Monitors environment, provides alerts and recommendations
+- **Examples**:
+- AI: Autocomplete suggestions
+- BC: Transaction fee estimators
+- RB: Lane departure warnings
+- MV: Pathfinding hints
+- TC: Workflow suggestions
 
   #### Level 2: Partial Autonomy
-  - **Description**: Agent can perform specific tasks, human approves major decisions
-  - **Human Role**: Monitors agent, approves critical actions
-  - **Agent Role**: Executes routine tasks, escalates edge cases
-  - **Examples**:
-  - AI: Email filters (user trains spam detector)
-  - BC: Automated trading with approval thresholds
-  - RB: Adaptive cruise control
-  - MV: NPC patrol routes with scripted behaviors
-  - TC: Document routing with human approval gates
+
+- **Description**: Agent can perform specific tasks, human approves major decisions
+- **Human Role**: Monitors agent, approves critical actions
+- **Agent Role**: Executes routine tasks, escalates edge cases
+- **Examples**:
+- AI: Email filters (user trains spam detector)
+- BC: Automated trading with approval thresholds
+- RB: Adaptive cruise control
+- MV: NPC patrol routes with scripted behaviors
+- TC: Document routing with human approval gates
 
   #### Level 3: Conditional Autonomy
-  - **Description**: Agent handles most situations, human intervenes when requested
-  - **Human Role**: Available for edge cases, monitors alerts
-  - **Agent Role**: Autonomous operation with exception handling
-  - **Examples**:
-  - AI: Chatbots with human escalation
-  - BC: DAO voting with quorum requirements
-  - RB: Autonomous vehicles (highway only)
-  - MV: Dynamic quest generation with oversight
-  - TC: Automated workflows with audit logs
+
+- **Description**: Agent handles most situations, human intervenes when requested
+- **Human Role**: Available for edge cases, monitors alerts
+- **Agent Role**: Autonomous operation with exception handling
+- **Examples**:
+- AI: Chatbots with human escalation
+- BC: DAO voting with quorum requirements
+- RB: Autonomous vehicles (highway only)
+- MV: Dynamic quest generation with oversight
+- TC: Automated workflows with audit logs
 
   #### Level 4: High Autonomy
-  - **Description**: Agent operates independently in defined domains
-  - **Human Role**: Sets goals and constraints, reviews outcomes
-  - **Agent Role**: Full autonomy within operational design domain
-  - **Examples**:
-  - AI: Personal AI assistants (scheduling, email)
-  - BC: Fully automated smart contracts
-  - RB: Warehouse robots, delivery drones
-  - MV: Advanced NPC companions
-  - TC: Multi-agent coordination without human coordination
+
+- **Description**: Agent operates independently in defined domains
+- **Human Role**: Sets goals and constraints, reviews outcomes
+- **Agent Role**: Full autonomy within operational design domain
+- **Examples**:
+- AI: Personal AI assistants (scheduling, email)
+- BC: Fully automated smart contracts
+- RB: Warehouse robots, delivery drones
+- MV: Advanced NPC companions
+- TC: Multi-agent coordination without human coordination
 
   #### Level 5: Full Autonomy
-  - **Description**: Agent operates completely independently across all domains
-  - **Human Role**: None (may set high-level goals)
-  - **Agent Role**: Complete self-governance
-  - **Examples**:
-  - AI: Hypothetical AGI (not yet achieved)
-  - BC: Fully autonomous DAOs
-  - RB: General-purpose humanoid robots
-  - MV: Sentient NPCs (fictional)
-  - TC: Self-organizing agent networks
+
+- **Description**: Agent operates completely independently across all domains
+- **Human Role**: None (may set high-level goals)
+- **Agent Role**: Complete self-governance
+- **Examples**:
+- AI: Hypothetical AGI (not yet achieved)
+- BC: Fully autonomous DAOs
+- RB: General-purpose humanoid robots
+- MV: Sentient NPCs (fictional)
+- TC: Self-organizing agent networks
 
   ## Domain-Specific Autonomy Levels
 
@@ -102,33 +108,35 @@ A graded classification (typically 0–5) quantifying the degree to which an age
   **SAE-Inspired AI Agent Levels**:
 
   **Examples**:
-  - **Level 1**: GitHub Copilot suggests code
-  - **Level 2**: ChatGPT generates content, human edits
-  - **Level 3**: LangChain agents with human approval nodes
-  - **Level 4**: AutoGPT, BabyAGI (limited domains)
-  - **Level 5**: Not yet achieved
+
+- **Level 1**: GitHub Copilot suggests code
+- **Level 2**: ChatGPT generates content, human edits
+- **Level 3**: LangChain agents with human approval nodes
+- **Level 4**: AutoGPT, BabyAGI (limited domains)
+- **Level 5**: Not yet achieved
 
   ### Blockchain (BC)
 
   **DAO Governance Autonomy**:
   ```solidity
   enum DAOAutonomyLevel {
-    Manual,           // Multisig wallet (human approves all)
-    Assisted,         // Proposal templates
-    Supervised,       // Token voting required
-    Conditional,      // Automatic execution above quorum
-    HighAutonomy,     // Autonomous contracts with parameters
-    FullAutonomy      // Self-evolving smart contracts
+  Manual,           // Multisig wallet (human approves all)
+  Assisted,         // Proposal templates
+  Supervised,       // Token voting required
+  Conditional,      // Automatic execution above quorum
+  HighAutonomy,     // Autonomous contracts with parameters
+  FullAutonomy      // Self-evolving smart contracts
   }
   ```
 
   **Examples**:
-  - **Level 0**: Multisig wallets (3-of-5 approval)
-  - **Level 1**: DAO voting tools (Snapshot)
-  - **Level 2**: Token-weighted voting (Compound)
-  - **Level 3**: Automatic execution after vote (MakerDAO)
-  - **Level 4**: Algorithmic monetary policy (Ampleforth)
-  - **Level 5**: Fully autonomous DAOs (future goal)
+
+- **Level 0**: Multisig wallets (3-of-5 approval)
+- **Level 1**: DAO voting tools (Snapshot)
+- **Level 2**: Token-weighted voting (Compound)
+- **Level 3**: Automatic execution after vote (MakerDAO)
+- **Level 4**: Algorithmic monetary policy (Ampleforth)
+- **Level 5**: Fully autonomous DAOs (future goal)
 
   ### Robotics (RB)
 
@@ -143,55 +151,58 @@ A graded classification (typically 0–5) quantifying the degree to which an age
   ```
 
   **General Robotics Autonomy**:
-  - **Level 0**: Remote teleoperation (surgical robots)
-  - **Level 1**: Assisted operation (power steering, stabilization)
-  - **Level 2**: Supervised autonomy (obstacle detection, human confirms)
-  - **Level 3**: Conditional autonomy (warehouse robots with human oversight)
-  - **Level 4**: High autonomy (delivery robots in mapped areas)
-  - **Level 5**: Full autonomy (hypothetical general-purpose robots)
+
+- **Level 0**: Remote teleoperation (surgical robots)
+- **Level 1**: Assisted operation (power steering, stabilization)
+- **Level 2**: Supervised autonomy (obstacle detection, human confirms)
+- **Level 3**: Conditional autonomy (warehouse robots with human oversight)
+- **Level 4**: High autonomy (delivery robots in mapped areas)
+- **Level 5**: Full autonomy (hypothetical general-purpose robots)
 
   ### Metaverse (MV)
 
   **NPC Autonomy Levels**:
   ```javascript
   const NPCAutonomyLevel = {
-    SCRIPTED: 0,           // Fixed behavior trees
-    REACTIVE: 1,           // Respond to player actions
-    GOAL_ORIENTED: 2,      // Pursue objectives
-    ADAPTIVE: 3,           // Learn from player behavior
-    EMERGENT: 4,           // Complex interactions with world
-    SENTIENT: 5            // Fully autonomous (sci-fi)
+  SCRIPTED: 0,           // Fixed behavior trees
+  REACTIVE: 1,           // Respond to player actions
+  GOAL_ORIENTED: 2,      // Pursue objectives
+  ADAPTIVE: 3,           // Learn from player behavior
+  EMERGENT: 4,           // Complex interactions with world
+  SENTIENT: 5            // Fully autonomous (sci-fi)
   };
   ```
 
   **Examples**:
-  - **Level 0**: Minecraft villagers (fixed trades)
-  - **Level 1**: Skyrim NPCs (scripted schedules)
-  - **Level 2**: The Sims (goal-based behavior)
-  - **Level 3**: Shadow of Mordor Nemesis system
-  - **Level 4**: Red Dead Redemption 2 NPCs
-  - **Level 5**: Westworld-style hosts (fictional)
+
+- **Level 0**: Minecraft villagers (fixed trades)
+- **Level 1**: Skyrim NPCs (scripted schedules)
+- **Level 2**: The Sims (goal-based behavior)
+- **Level 3**: Shadow of Mordor Nemesis system
+- **Level 4**: Red Dead Redemption 2 NPCs
+- **Level 5**: Westworld-style hosts (fictional)
 
   ### Trusted Collaboration (TC)
 
   **Multi-Agent Coordination Autonomy**:
   ```python
   class CollaborationAutonomyLevel(Enum):
-    MANUAL = 0          # Human coordinates all agents
-    ASSISTED = 1        # System suggests coordination
-    SUPERVISED = 2      # Agents coordinate, human approves
-    CONDITIONAL = 3     # Agents coordinate within rules
-    HIGH = 4            # Agents self-organize
-    FULL = 5            # Fully emergent organization
+  MANUAL = 0          # Human coordinates all agents
+  ASSISTED = 1        # System suggests coordination
+  SUPERVISED = 2      # Agents coordinate, human approves
+  CONDITIONAL = 3     # Agents coordinate within rules
+  HIGH = 4            # Agents self-organize
+  FULL = 5            # Fully emergent organization
   ```
 
   **Examples**:
-  - **Level 0**: Email threads (manual coordination)
-  - **Level 1**: Shared calendars (suggested meeting times)
-  - **Level 2**: Workflow automation (Zapier with approval steps)
-  - **Level 3**: Multi-agent systems with policies
-  - **Level 4**: Swarm robotics, autonomous drone fleets
-  - **Level 5**: Self-organizing agent economies (theoretical)
+
+- **Level 0**: Email threads (manual coordination)
+- **Level 1**: Shared calendars (suggested meeting times)
+- **Level 2**: Workflow automation (Zapier with approval steps)
+- **Level 3**: Multi-agent systems with policies
+- **Level 4**: Swarm robotics, autonomous drone fleets
+- **Level 5**: Self-organizing agent economies (theoretical)
 
   ## Measuring Autonomy
 
@@ -241,26 +252,29 @@ A graded classification (typically 0–5) quantifying the degree to which an age
 
   ### Domain Comparisons
 
-  | Aspect | AI | BC | RB | MV | TC |
-  |--------|----|----|----|----|-----|
-  | **Current Max** | Level 3-4 | Level 3-4 | Level 3-4 | Level 4 | Level 3-4 |
-  | **Constraint** | Alignment | Consensus | Safety | Realism | Trust |
-  | **Enabler** | LLMs | Smart contracts | Sensors | Game engines | Protocols |
-  | **Bottleneck** | General reasoning | Scalability | Physical world | Compute | Coordination |
+| Aspect | AI | BC | RB | MV | TC |
+|--------|----|----|----|----|-----|
+| **Current Max** | Level 3-4 | Level 3-4 | Level 3-4 | Level 4 | Level 3-4 |
+| **Constraint** | Alignment | Consensus | Safety | Realism | Trust |
+| **Enabler** | LLMs | Smart contracts | Sensors | Game engines | Protocols |
+| **Bottleneck** | General reasoning | Scalability | Physical world | Compute | Coordination |
 
-  ## Autonomy and Other Concepts
+## Autonomy and Other Concepts
 
-  ### Relationship with Goals
-  - **Low Autonomy**: Human specifies goals explicitly and frequently
-  - **High Autonomy**: Agent infers or generates goals from high-level directives
+### Relationship with Goals
+
+- **Low Autonomy**: Human specifies goals explicitly and frequently
+- **High Autonomy**: Agent infers or generates goals from high-level directives
 
   ### Relationship with Learning
-  - **Low Autonomy**: Fixed behavior, no learning
-  - **High Autonomy**: Continuous learning and adaptation
+
+- **Low Autonomy**: Fixed behavior, no learning
+- **High Autonomy**: Continuous learning and adaptation
 
   ### Relationship with Trust
-  - **Low Autonomy**: Low trust requirements (human verifies)
-  - **High Autonomy**: High trust requirements (agent acts independently)
+
+- **Low Autonomy**: Low trust requirements (human verifies)
+- **High Autonomy**: High trust requirements (agent acts independently)
 
   ## Implementation Considerations
 
@@ -276,45 +290,45 @@ A graded classification (typically 0–5) quantifying the degree to which an age
   **Decision Framework**:
   ```python
   def select_autonomy_level(task):
-    score = 0
+  score = 0
 
-    # Add points for autonomy enablers
-    if task.is_repetitive: score += 2
-    if task.environment_is_structured: score += 2
-    if task.human_unavailable: score += 1
+  # Add points for autonomy enablers
+  if task.is_repetitive: score += 2
+  if task.environment_is_structured: score += 2
+  if task.human_unavailable: score += 1
 
-    # Subtract points for autonomy barriers
-    if task.is_safety_critical: score -= 3
-    if task.has_legal_implications: score -= 2
-    if task.requires_creativity: score -= 1
-    if task.is_high_stakes: score -= 2
+  # Subtract points for autonomy barriers
+  if task.is_safety_critical: score -= 3
+  if task.has_legal_implications: score -= 2
+  if task.requires_creativity: score -= 1
+  if task.is_high_stakes: score -= 2
 
-    # Map score to level
-    if score < 0: return AutonomyLevel.LEVEL_1
-    elif score < 3: return AutonomyLevel.LEVEL_2
-    elif score < 5: return AutonomyLevel.LEVEL_3
-    elif score < 7: return AutonomyLevel.LEVEL_4
-    else: return AutonomyLevel.LEVEL_5
+  # Map score to level
+  if score < 0: return AutonomyLevel.LEVEL_1
+  elif score < 3: return AutonomyLevel.LEVEL_2
+  elif score < 5: return AutonomyLevel.LEVEL_3
+  elif score < 7: return AutonomyLevel.LEVEL_4
+  else: return AutonomyLevel.LEVEL_5
   ```
 
   ### Gradual Autonomy Increase
   ```python
   class GradualAutonomyAgent:
-    def __init__(self):
-        self.autonomy_level = AutonomyLevel.LEVEL_1
-        self.performance_history = []
+  def __init__(self):
+      self.autonomy_level = AutonomyLevel.LEVEL_1
+      self.performance_history = []
 
-    def evaluate_performance(self):
-        # Track success rate, error rate, user satisfaction
-        if self.should_increase_autonomy():
-            self.autonomy_level = min(self.autonomy_level + 1, 5)
-        elif self.should_decrease_autonomy():
-            self.autonomy_level = max(self.autonomy_level - 1, 1)
+  def evaluate_performance(self):
+      # Track success rate, error rate, user satisfaction
+      if self.should_increase_autonomy():
+          self.autonomy_level = min(self.autonomy_level + 1, 5)
+      elif self.should_decrease_autonomy():
+          self.autonomy_level = max(self.autonomy_level - 1, 1)
 
-    def should_increase_autonomy(self):
-        return (self.success_rate > 0.95 and
-                self.error_rate < 0.01 and
-                self.user_trust > 0.8)
+  def should_increase_autonomy(self):
+      return (self.success_rate > 0.95 and
+              self.error_rate < 0.01 and
+              self.user_trust > 0.8)
   ```
 
   ## Challenges and Risks
@@ -322,16 +336,18 @@ A graded classification (typically 0–5) quantifying the degree to which an age
   ### Autonomy-Related Risks
 
   #### Technical Risks
-  - **Misalignment**: Agent goals diverge from human intent
-  - **Unpredictability**: Emergent behaviors in complex environments
-  - **Brittleness**: Failure in out-of-distribution scenarios
-  - **Escalation**: Small errors compound into major failures
+
+- **Misalignment**: Agent goals diverge from human intent
+- **Unpredictability**: Emergent behaviors in complex environments
+- **Brittleness**: Failure in out-of-distribution scenarios
+- **Escalation**: Small errors compound into major failures
 
   #### Ethical and Legal Risks
-  - **Accountability**: Who is responsible for autonomous agent actions?
-  - **Transparency**: Can we explain why the agent acted?
-  - **Fairness**: Do autonomous agents perpetuate biases?
-  - **Control**: Can we override or shut down autonomous agents?
+
+- **Accountability**: Who is responsible for autonomous agent actions?
+- **Transparency**: Can we explain why the agent acted?
+- **Fairness**: Do autonomous agents perpetuate biases?
+- **Control**: Can we override or shut down autonomous agents?
 
   ### Mitigation Strategies
   1. **Bounded Autonomy**: Limit operational design domain
@@ -345,30 +361,34 @@ A graded classification (typically 0–5) quantifying the degree to which an age
   ## Future Trends
 
   ### Increasing Autonomy
-  - **AI**: Progress toward Level 4-5 agents in narrow domains
-  - **BC**: More sophisticated DAOs with adaptive governance
-  - **RB**: Widespread Level 4 autonomous vehicles
-  - **MV**: NPCs with believable, emergent personalities
-  - **TC**: Self-organizing multi-agent systems
+
+- **AI**: Progress toward Level 4-5 agents in narrow domains
+- **BC**: More sophisticated DAOs with adaptive governance
+- **RB**: Widespread Level 4 autonomous vehicles
+- **MV**: NPCs with believable, emergent personalities
+- **TC**: Self-organizing multi-agent systems
 
   ### Research Frontiers
-  - **Safe AGI**: Achieving Level 5 AI autonomy safely
-  - **Decentralized Autonomy**: Blockchain-based agent coordination
-  - **Explainable Autonomy**: Transparent autonomous decision-making
-  - **Human-Agent Teaming**: Optimal division of labor
+
+- **Safe AGI**: Achieving Level 5 AI autonomy safely
+- **Decentralized Autonomy**: Blockchain-based agent coordination
+- **Explainable Autonomy**: Transparent autonomous decision-making
+- **Human-Agent Teaming**: Optimal division of labor
 
   ## Relationships
 
   ### Parent Concepts
-  - [[Agent Property]] - Broader category of agent characteristics
+
+- [[Agent Property]] - Broader category of agent characteristics
 
   #### Related Concepts
-  - [[Agent]] (DT-1008) - Entity exhibiting autonomy
-  - [[Goal]] (DT-1010) - What autonomous agents pursue
-  - [[BDI Model]] (DT-1012) - Architecture for autonomous reasoning
-  - [[Human in the Loop]] - Counterpoint to full autonomy
-  - [[Trust]] - Required for accepting agent autonomy
-  - [[Alignment]] - Ensuring autonomous agents serve human values
+
+- [[Agent]] (DT-1008) - Entity exhibiting autonomy
+- [[Goal]] (DT-1010) - What autonomous agents pursue
+- [[BDI Model]] (DT-1012) - Architecture for autonomous reasoning
+- [[Human in the Loop]] - Counterpoint to full autonomy
+- [[Trust]] - Required for accepting agent autonomy
+- [[Alignment]] - Ensuring autonomous agents serve human values
 
   ## Best Practices
 
@@ -397,14 +417,16 @@ A graded classification (typically 0–5) quantifying the degree to which an age
 
   #### References
   ### Standards and Guidelines
-  - SAE J3016 - Taxonomy for Autonomous Vehicles
-  - ISO 21448 - SOTIF (Safety Of The Intended Functionality)
-  - EU AI Act - Risk-based regulation by autonomy level
+
+- SAE J3016 - Taxonomy for Autonomous Vehicles
+- ISO 21448 - SOTIF (Safety Of The Intended Functionality)
+- EU AI Act - Risk-based regulation by autonomy level
 
   ### Academic
-  - Parasuraman et al. - "Model for Types and Levels of Human Interaction"
-  - Sheridan & Verplank - "Human and Computer Control of Undersea Teleoperators"
-  - Beer et al. - "Toward a Framework for Levels of Robot Autonomy"
+
+- Parasuraman et al. - "Model for Types and Levels of Human Interaction"
+- Sheridan & Verplank - "Human and Computer Control of Undersea Teleoperators"
+- Beer et al. - "Toward a Framework for Levels of Robot Autonomy"
 
   ## Tags
 
@@ -414,5 +436,5 @@ A graded classification (typically 0–5) quantifying the degree to which an age
 
   **See Also**: [[Agent]], [[Goal]], [[Objective]], [[BDI Model]], [[Human in the Loop]], [[Trust]], [[Safety]]
 
-- ### Provenance
+### Provenance
 

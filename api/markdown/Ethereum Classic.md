@@ -1,11 +1,11 @@
-
 A proof-of-work blockchain that continued the original Ethereum chain after the 2016 DAO hard fork, preserving the unaltered transaction history. It maintains the principle that the ledger should not be reversed by social intervention.
 
-- ### Semantic Classification
+### Semantic Classification
 
-- ### Content
-  - Ethereum Classic is the chain that kept the pre-fork transaction record after the Ethereum community executed a hard fork to reverse losses from the 2016 DAO exploit. Its supporters held that an immutable ledger should stand even when its outcome is contested.
-  - It remains compatible with the Ethereum Virtual Machine, so smart contracts written for Ethereum can in principle run on it, and it retained proof-of-work consensus after Ethereum moved to proof of stake.
+### Content
 
-- ### Provenance
+- Ethereum Classic is the chain that kept the pre-fork transaction record after the Ethereum community executed a hard fork to reverse losses from the 2016 DAO exploit. Its supporters held that an immutable ledger should stand even when its outcome is contested.
+- It remains compatible with the Ethereum Virtual Machine, so smart contracts written for Ethereum can in principle run on it, and it retained proof-of-work consensus after Ethereum moved to proof of stake.
+
+### Provenance
 

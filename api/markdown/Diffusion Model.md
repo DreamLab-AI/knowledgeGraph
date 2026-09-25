@@ -1,127 +1,131 @@
-
 A Diffusion Model is a class of probabilistic generative model that learns to synthesise data by reversing a learned forward diffusion process in which training examples are progressively corrupted with Gaussian noise across a fixed Markov chain of timesteps. At inference time the model iteratively denoises a sample drawn from pure noise, guided by a parametrised score function or noise-prediction network, until a high-fidelity output is recovered. Architecturally, the denoising backbone is typically a U-Net or Vision Transformer conditioned on timestep embeddings and optional guidance signals such as text or class labels. Diffusion models achieve state-of-the-art quality on image, audio, video, and molecular generation tasks and underpin production systems including Stable Diffusion, DALL-E 3, Sora, and AudioLDM.
 
-- ### Semantic Classification
+### Semantic Classification
 
-- ### Content
-  ## Compositional Relationships (Components)
-      SubClassOf(ai:DiffusionModel
-        ObjectSomeValuesFrom(ai:hasPart ai:ForwardDiffusionProcess))
-      SubClassOf(ai:DiffusionModel
-        ObjectSomeValuesFrom(ai:hasPart ai:ReverseDiffusionProcess))
-      SubClassOf(ai:DiffusionModel
-        ObjectSomeValuesFrom(ai:hasPart ai:NoiseSchedule))
-      SubClassOf(ai:DiffusionModel
-        ObjectSomeValuesFrom(ai:hasPart ai:ScoreFunction))
-      SubClassOf(ai:DiffusionModel
-        ObjectSomeValuesFrom(ai:hasPart ai:DiffusionTransformer))
-      SubClassOf(ai:DiffusionModel
-        ObjectSomeValuesFrom(ai:hasPart ai:ClassifierFreeGuidance))
-      SubClassOf(ai:DiffusionModel
-        ObjectSomeValuesFrom(ai:hasPart ai:LatentEncoder))
-      SubClassOf(ai:LatentDiffusionModel
-        ObjectSomeValuesFrom(ai:hasPart ai:VariationalAutoencoder))
-  ## Dependency Relationships
-      SubClassOf(ai:DiffusionModel
-        ObjectSomeValuesFrom(ai:requires ai:TrainingData))
-      SubClassOf(ai:DiffusionModel
-        ObjectSomeValuesFrom(ai:requires ai:GPUCompute))
-      SubClassOf(ai:DiffusionModel
-        ObjectSomeValuesFrom(ai:requires ai:LatentSpace))
-      SubClassOf(ai:DiffusionModel
-        ObjectSomeValuesFrom(ai:requires ai:Backpropagation))
-      SubClassOf(ai:DiffusionModel
-        ObjectSomeValuesFrom(ai:dependsOn ai:MarkovChain))
-      SubClassOf(ai:DiffusionModel
-        ObjectSomeValuesFrom(ai:dependsOn ai:StochasticDifferentialEquation))
-      SubClassOf(ai:DiffusionModel
-        ObjectSomeValuesFrom(ai:dependsOn ai:GaussianDistribution))
-  ## Capability Relationships
-      SubClassOf(ai:DiffusionModel
-        ObjectSomeValuesFrom(ai:enables ai:ImageGeneration))
-      SubClassOf(ai:DiffusionModel
-        ObjectSomeValuesFrom(ai:enables ai:TextToImage))
-      SubClassOf(ai:DiffusionModel
-        ObjectSomeValuesFrom(ai:enables ai:VideoGeneration))
-      SubClassOf(ai:DiffusionModel
-        ObjectSomeValuesFrom(ai:enables ai:AudioSynthesis))
-      SubClassOf(ai:DiffusionModel
-        ObjectSomeValuesFrom(ai:enables ai:DrugDiscovery))
-      SubClassOf(ai:DiffusionModel
-        ObjectSomeValuesFrom(ai:enables ai:ProteinStructureDesign))
-      SubClassOf(ai:DiffusionModel
-        ObjectSomeValuesFrom(ai:enables ai:SyntheticDataGeneration))
-      SubClassOf(ai:DiffusionModel
-        ObjectSomeValuesFrom(ai:enables ai:MedicalImagingSynthesis))
-  ## Implementation Relationships
-      SubClassOf(ai:DiffusionModel
-        ObjectSomeValuesFrom(ai:implements ai:ScoreMatching))
-      SubClassOf(ai:DiffusionModel
-        ObjectSomeValuesFrom(ai:implements ai:VariationalLowerBound))
-      SubClassOf(ai:DiffusionModel
-        ObjectSomeValuesFrom(ai:implements ai:DenoisingObjective))
-      SubClassOf(ai:DiffusionModel
-        ObjectSomeValuesFrom(ai:uses ai:UNet))
-      SubClassOf(ai:DiffusionModel
-        ObjectSomeValuesFrom(ai:uses ai:AttentionMechanism))
-      SubClassOf(ai:DiffusionModel
-        ObjectSomeValuesFrom(ai:uses ai:ClassifierFreeGuidance))
-  ## Reduction Relationships
-      SubClassOf(ai:DiffusionModel
-        ObjectSomeValuesFrom(ai:reducesTo ai:GenerativeModel))
-      SubClassOf(ai:LatentDiffusionModel
-        ObjectSomeValuesFrom(ai:reducesTo ai:DiffusionModel))
-      SubClassOf(ai:RectifiedFlowModel
-        ObjectSomeValuesFrom(ai:reducesTo ai:DiffusionModel))
-      SubClassOf(ai:ScoreBasedGenerativeModel
-        ObjectSomeValuesFrom(ai:reducesTo ai:DiffusionModel))
-      SubClassOf(ai:DiffusionModel
-        ObjectSomeValuesFrom(ai:contrastsWith ai:GenerativeAdversarialNetwork))
-      SubClassOf(ai:DiffusionModel
-        ObjectSomeValuesFrom(ai:contrastsWith ai:VariationalAutoencoder))
-      SubClassOf(ai:DiffusionModel
-        ObjectSomeValuesFrom(ai:relatedTo ai:StochasticDifferentialEquation))
-      SubClassOf(ai:DiffusionTransformer
-        ObjectSomeValuesFrom(ai:reducesTo ai:DiffusionModel))
+### Content
 
-  ## About
-  Diffusion models constitute a probabilistic generative paradigm that has risen from relative obscurity to dominate practical generative AI across modalities in under five years. The core mathematical intuition is to define a forward process that gradually destroys the structure of real data by adding Gaussian noise, and then to train a neural network to reverse this destruction step by step. Because the forward process is analytically tractable — the marginal q(x_t | x_0) at any arbitrary timestep t can be computed in closed form without iterating through all intermediate steps — training is efficient via a simple denoising mean-squared-error loss on the predicted noise. The reverse process, approximated by the trained network, reconstructs data from noise by iterating the learned denoising steps from t = T (pure noise) down to t = 0 (clean sample).
+## Compositional Relationships (Components)
+    SubClassOf(ai:DiffusionModel
+      ObjectSomeValuesFrom(ai:hasPart ai:ForwardDiffusionProcess))
+    SubClassOf(ai:DiffusionModel
+      ObjectSomeValuesFrom(ai:hasPart ai:ReverseDiffusionProcess))
+    SubClassOf(ai:DiffusionModel
+      ObjectSomeValuesFrom(ai:hasPart ai:NoiseSchedule))
+    SubClassOf(ai:DiffusionModel
+      ObjectSomeValuesFrom(ai:hasPart ai:ScoreFunction))
+    SubClassOf(ai:DiffusionModel
+      ObjectSomeValuesFrom(ai:hasPart ai:DiffusionTransformer))
+    SubClassOf(ai:DiffusionModel
+      ObjectSomeValuesFrom(ai:hasPart ai:ClassifierFreeGuidance))
+    SubClassOf(ai:DiffusionModel
+      ObjectSomeValuesFrom(ai:hasPart ai:LatentEncoder))
+    SubClassOf(ai:LatentDiffusionModel
+      ObjectSomeValuesFrom(ai:hasPart ai:VariationalAutoencoder))
+## Dependency Relationships
+    SubClassOf(ai:DiffusionModel
+      ObjectSomeValuesFrom(ai:requires ai:TrainingData))
+    SubClassOf(ai:DiffusionModel
+      ObjectSomeValuesFrom(ai:requires ai:GPUCompute))
+    SubClassOf(ai:DiffusionModel
+      ObjectSomeValuesFrom(ai:requires ai:LatentSpace))
+    SubClassOf(ai:DiffusionModel
+      ObjectSomeValuesFrom(ai:requires ai:Backpropagation))
+    SubClassOf(ai:DiffusionModel
+      ObjectSomeValuesFrom(ai:dependsOn ai:MarkovChain))
+    SubClassOf(ai:DiffusionModel
+      ObjectSomeValuesFrom(ai:dependsOn ai:StochasticDifferentialEquation))
+    SubClassOf(ai:DiffusionModel
+      ObjectSomeValuesFrom(ai:dependsOn ai:GaussianDistribution))
+## Capability Relationships
+    SubClassOf(ai:DiffusionModel
+      ObjectSomeValuesFrom(ai:enables ai:ImageGeneration))
+    SubClassOf(ai:DiffusionModel
+      ObjectSomeValuesFrom(ai:enables ai:TextToImage))
+    SubClassOf(ai:DiffusionModel
+      ObjectSomeValuesFrom(ai:enables ai:VideoGeneration))
+    SubClassOf(ai:DiffusionModel
+      ObjectSomeValuesFrom(ai:enables ai:AudioSynthesis))
+    SubClassOf(ai:DiffusionModel
+      ObjectSomeValuesFrom(ai:enables ai:DrugDiscovery))
+    SubClassOf(ai:DiffusionModel
+      ObjectSomeValuesFrom(ai:enables ai:ProteinStructureDesign))
+    SubClassOf(ai:DiffusionModel
+      ObjectSomeValuesFrom(ai:enables ai:SyntheticDataGeneration))
+    SubClassOf(ai:DiffusionModel
+      ObjectSomeValuesFrom(ai:enables ai:MedicalImagingSynthesis))
+## Implementation Relationships
+    SubClassOf(ai:DiffusionModel
+      ObjectSomeValuesFrom(ai:implements ai:ScoreMatching))
+    SubClassOf(ai:DiffusionModel
+      ObjectSomeValuesFrom(ai:implements ai:VariationalLowerBound))
+    SubClassOf(ai:DiffusionModel
+      ObjectSomeValuesFrom(ai:implements ai:DenoisingObjective))
+    SubClassOf(ai:DiffusionModel
+      ObjectSomeValuesFrom(ai:uses ai:UNet))
+    SubClassOf(ai:DiffusionModel
+      ObjectSomeValuesFrom(ai:uses ai:AttentionMechanism))
+    SubClassOf(ai:DiffusionModel
+      ObjectSomeValuesFrom(ai:uses ai:ClassifierFreeGuidance))
+## Reduction Relationships
+    SubClassOf(ai:DiffusionModel
+      ObjectSomeValuesFrom(ai:reducesTo ai:GenerativeModel))
+    SubClassOf(ai:LatentDiffusionModel
+      ObjectSomeValuesFrom(ai:reducesTo ai:DiffusionModel))
+    SubClassOf(ai:RectifiedFlowModel
+      ObjectSomeValuesFrom(ai:reducesTo ai:DiffusionModel))
+    SubClassOf(ai:ScoreBasedGenerativeModel
+      ObjectSomeValuesFrom(ai:reducesTo ai:DiffusionModel))
+    SubClassOf(ai:DiffusionModel
+      ObjectSomeValuesFrom(ai:contrastsWith ai:GenerativeAdversarialNetwork))
+    SubClassOf(ai:DiffusionModel
+      ObjectSomeValuesFrom(ai:contrastsWith ai:VariationalAutoencoder))
+    SubClassOf(ai:DiffusionModel
+      ObjectSomeValuesFrom(ai:relatedTo ai:StochasticDifferentialEquation))
+    SubClassOf(ai:DiffusionTransformer
+      ObjectSomeValuesFrom(ai:reducesTo ai:DiffusionModel))
 
-  The framework was formalised as Denoising Diffusion Probabilistic Models (DDPMs) by Ho, Jain, and Abbeel (NeurIPS 2020), building on the score-matching literature of Hyvärinen (2005) and the Langevin dynamics samplers studied by Song and Ermon (NeurIPS 2019). The decisive practical breakthrough came with Rombach et al.'s Latent Diffusion Models (CVPR 2022), which moved the diffusion chain from pixel space into the compressed latent space of a pretrained [[Variational Autoencoder]], reducing the spatial dimensionality by 4–16× and enabling high-resolution synthesis on consumer hardware. This architecture forms the basis of Stable Diffusion and its successors. A parallel line of theoretical work by Song, Sohl-Dickstein, Kingma, Kumar, Ermon, and Poole (ICLR 2021) reformulated diffusion models in the continuous-time language of [[Stochastic Differential Equations]], unifying DDPM (VP-SDE), SMLD (VE-SDE), and sub-VPSDE under a single framework and enabling more flexible training and sampling.
+## About
+Diffusion models constitute a probabilistic generative paradigm that has risen from relative obscurity to dominate practical generative AI across modalities in under five years. The core mathematical intuition is to define a forward process that gradually destroys the structure of real data by adding Gaussian noise, and then to train a neural network to reverse this destruction step by step. Because the forward process is analytically tractable — the marginal q(x_t | x_0) at any arbitrary timestep t can be computed in closed form without iterating through all intermediate steps — training is efficient via a simple denoising mean-squared-error loss on the predicted noise. The reverse process, approximated by the trained network, reconstructs data from noise by iterating the learned denoising steps from t = T (pure noise) down to t = 0 (clean sample).
 
-  The period 2023–2026 has been defined by the architectural shift from [[U-Net]] backbones to [[Diffusion Transformer]] (DiT) backbones combined with Rectified Flow or Flow Matching training objectives. The DiT architecture, introduced by Peebles and Xie (ICCV 2023), treats the image as a sequence of patch tokens processed by a transformer with adaptive layer normalisation conditioned on timestep and class embeddings. Stable Diffusion 3 (Esser et al. 2024) introduced the Multimodal Diffusion Transformer (MMDiT) which applies separate sets of weights for text and image tokens and allows bidirectional attention between modalities. The FLUX family (Black Forest Labs, 2024–2025) — FLUX.1, FLUX 1.1 Pro, and FLUX 2 (32B parameters, November 2025) — implements this architecture at scale, achieving near-photorealistic quality with 4.5-second generation times on professional hardware. By late 2025, MLCommons introduced FLUX.1 as the benchmark workload in MLPerf Training Round 5.0, cementing its position as the standard reference architecture.
+The framework was formalised as Denoising Diffusion Probabilistic Models (DDPMs) by Ho, Jain, and Abbeel (NeurIPS 2020), building on the score-matching literature of Hyvärinen (2005) and the Langevin dynamics samplers studied by Song and Ermon (NeurIPS 2019). The decisive practical breakthrough came with Rombach et al.'s Latent Diffusion Models (CVPR 2022), which moved the diffusion chain from pixel space into the compressed latent space of a pretrained [[Variational Autoencoder]], reducing the spatial dimensionality by 4–16× and enabling high-resolution synthesis on consumer hardware. This architecture forms the basis of Stable Diffusion and its successors. A parallel line of theoretical work by Song, Sohl-Dickstein, Kingma, Kumar, Ermon, and Poole (ICLR 2021) reformulated diffusion models in the continuous-time language of [[Stochastic Differential Equations]], unifying DDPM (VP-SDE), SMLD (VE-SDE), and sub-VPSDE under a single framework and enabling more flexible training and sampling.
 
-  ## Formal Algorithm
+The period 2023–2026 has been defined by the architectural shift from [[U-Net]] backbones to [[Diffusion Transformer]] (DiT) backbones combined with Rectified Flow or Flow Matching training objectives. The DiT architecture, introduced by Peebles and Xie (ICCV 2023), treats the image as a sequence of patch tokens processed by a transformer with adaptive layer normalisation conditioned on timestep and class embeddings. Stable Diffusion 3 (Esser et al. 2024) introduced the Multimodal Diffusion Transformer (MMDiT) which applies separate sets of weights for text and image tokens and allows bidirectional attention between modalities. The FLUX family (Black Forest Labs, 2024–2025) — FLUX.1, FLUX 1.1 Pro, and FLUX 2 (32B parameters, November 2025) — implements this architecture at scale, achieving near-photorealistic quality with 4.5-second generation times on professional hardware. By late 2025, MLCommons introduced FLUX.1 as the benchmark workload in MLPerf Training Round 5.0, cementing its position as the standard reference architecture.
 
-  **Forward Process (q):**
-  - Define q(x_t | x_{t-1}) = N(x_t; √(1-β_t) x_{t-1}, β_t I) for a noise schedule β₁, ..., β_T.
-  - The marginal is q(x_t | x_0) = N(x_t; √ᾱ_t x_0, (1-ᾱ_t) I) where ᾱ_t = Π_{s=1}^t (1-β_s).
-  - This closed-form marginal allows direct sampling of x_t from x_0 without iterating intermediate steps.
+## Formal Algorithm
+
+**Forward Process (q):**
+
+- Define q(x_t | x_{t-1}) = N(x_t; √(1-β_t) x_{t-1}, β_t I) for a noise schedule β₁, ..., β_T.
+- The marginal is q(x_t | x_0) = N(x_t; √ᾱ_t x_0, (1-ᾱ_t) I) where ᾱ_t = Π_{s=1}^t (1-β_s).
+- This closed-form marginal allows direct sampling of x_t from x_0 without iterating intermediate steps.
 
   **Reverse Process (p_θ):**
-  - Model p_θ(x_{t-1} | x_t) = N(x_{t-1}; μ_θ(x_t, t), Σ_θ(x_t, t)).
-  - Training objective: L = E_{x_0,ε,t}[‖ε - ε_θ(√ᾱ_t x_0 + √(1-ᾱ_t) ε, t)‖²], minimising MSE between predicted and actual noise.
-  - At inference: iteratively apply p_θ(x_{t-1} | x_t) from t=T down to t=0.
+
+- Model p_θ(x_{t-1} | x_t) = N(x_{t-1}; μ_θ(x_t, t), Σ_θ(x_t, t)).
+- Training objective: L = E_{x_0,ε,t}[‖ε - ε_θ(√ᾱ_t x_0 + √(1-ᾱ_t) ε, t)‖²], minimising MSE between predicted and actual noise.
+- At inference: iteratively apply p_θ(x_{t-1} | x_t) from t=T down to t=0.
 
   **Score Formulation (Song et al. 2021):**
-  - The denoising network implicitly learns the score: ε_θ(x_t, t) ≈ -√(1-ᾱ_t) ∇_{x_t} log q(x_t).
-  - Langevin MCMC sampling follows: x_{t-1} = x_t + η ∇ log p(x_t) + √(2η) z, where z ~ N(0,I).
+
+- The denoising network implicitly learns the score: ε_θ(x_t, t) ≈ -√(1-ᾱ_t) ∇_{x_t} log q(x_t).
+- Langevin MCMC sampling follows: x_{t-1} = x_t + η ∇ log p(x_t) + √(2η) z, where z ~ N(0,I).
 
   **Rectified Flow (Liu et al. 2022; Esser et al. 2024):**
-  - Defines straight-line trajectories between noise and data: x_t = (1-t)x_0 + t ε.
-  - Training objective: L = E_{t,x_0,ε}[‖(x_0 - ε) - v_θ(x_t, t)‖²], learning the velocity field v_θ.
-  - Near-linear trajectories enable accurate ODE integration with very few function evaluations.
+
+- Defines straight-line trajectories between noise and data: x_t = (1-t)x_0 + t ε.
+- Training objective: L = E_{t,x_0,ε}[‖(x_0 - ε) - v_θ(x_t, t)‖²], learning the velocity field v_θ.
+- Near-linear trajectories enable accurate ODE integration with very few function evaluations.
 
   ## Components / Architecture
 
   A complete modern latent diffusion system comprises five interacting components:
 
-  - **Encoder-Decoder (VAE or Tokeniser)**: Compresses inputs from pixel/token space into a compact latent representation. In SDXL the VAE operates at 8× spatial downsampling; in SD3/FLUX, continuous latent tokens enable higher compression ratios. The decoder inverts the latent at inference time.
-  - **Denoising Backbone (U-Net or DiT)**: The primary parametric component. [[U-Net]] variants use hierarchical encoder-decoder with skip connections and cross-attention for conditioning. [[Diffusion Transformer]] (DiT/MMDiT) variants process image patches as sequences with full self-attention, enabling better scalability and text understanding. FLUX 2's 32B parameter MMDiT architecture applies separate learned projections for image and text tokens with parallel cross-modal attention.
-  - **[[Noise Schedule]]**: Determines the variance trajectory β_t (or, in flow matching, the interpolation path). Linear schedules (DDPM) have been largely superseded by cosine (Improved DDPM), log-linear (SDXL), and logit-normal (SD3) schedules that provide more uniform loss weighting across timesteps.
-  - **[[Classifier-Free Guidance]] (CFG)**: During training, the conditioning signal c (e.g., text embedding from CLIP or T5) is randomly dropped with probability p (typically 10–20%), training both conditional and unconditional branches jointly. At inference: ε̂ = ε_θ(x_t, ∅) + w(ε_θ(x_t, c) - ε_θ(x_t, ∅)) where w is the guidance scale (typical values 3–12).
-  - **Conditioning Encoder**: Projects the conditioning signal into the backbone. CLIP ViT-L/14 encodes text for cross-attention in SDXL; T5-XXL and CLIP are used jointly in SD3/FLUX for richer semantic understanding. IP-Adapter provides image-prompt conditioning via decoupled cross-attention. ControlNet adds zero-convolution spatial conditioning branches (depth, edge, pose) that bypass the frozen backbone.
-  - **Sampler (ODE/SDE Solver)**: Implements the discrete-time reverse process. DDPM uses ancestral sampling (T=1000 steps). DDIM (Song et al. 2020) enables deterministic non-Markovian sampling at 50–100 steps. DPM-Solver (Lu et al. 2022), PNDM, and UniPC reduce steps to 10–25. Latent Consistency Models (LCM, Song et al. 2023) and Turbo Diffusion distillation achieve 1–4 steps by learning consistency functions. Flow matching / rectified flow enables high-quality generation with 20 ODE steps.
+- **Encoder-Decoder (VAE or Tokeniser)**: Compresses inputs from pixel/token space into a compact latent representation. In SDXL the VAE operates at 8× spatial downsampling; in SD3/FLUX, continuous latent tokens enable higher compression ratios. The decoder inverts the latent at inference time.
+- **Denoising Backbone (U-Net or DiT)**: The primary parametric component. [[U-Net]] variants use hierarchical encoder-decoder with skip connections and cross-attention for conditioning. [[Diffusion Transformer]] (DiT/MMDiT) variants process image patches as sequences with full self-attention, enabling better scalability and text understanding. FLUX 2's 32B parameter MMDiT architecture applies separate learned projections for image and text tokens with parallel cross-modal attention.
+- **[[Noise Schedule]]**: Determines the variance trajectory β_t (or, in flow matching, the interpolation path). Linear schedules (DDPM) have been largely superseded by cosine (Improved DDPM), log-linear (SDXL), and logit-normal (SD3) schedules that provide more uniform loss weighting across timesteps.
+- **[[Classifier-Free Guidance]] (CFG)**: During training, the conditioning signal c (e.g., text embedding from CLIP or T5) is randomly dropped with probability p (typically 10–20%), training both conditional and unconditional branches jointly. At inference: ε̂ = ε_θ(x_t, ∅) + w(ε_θ(x_t, c) - ε_θ(x_t, ∅)) where w is the guidance scale (typical values 3–12).
+- **Conditioning Encoder**: Projects the conditioning signal into the backbone. CLIP ViT-L/14 encodes text for cross-attention in SDXL; T5-XXL and CLIP are used jointly in SD3/FLUX for richer semantic understanding. IP-Adapter provides image-prompt conditioning via decoupled cross-attention. ControlNet adds zero-convolution spatial conditioning branches (depth, edge, pose) that bypass the frozen backbone.
+- **Sampler (ODE/SDE Solver)**: Implements the discrete-time reverse process. DDPM uses ancestral sampling (T=1000 steps). DDIM (Song et al. 2020) enables deterministic non-Markovian sampling at 50–100 steps. DPM-Solver (Lu et al. 2022), PNDM, and UniPC reduce steps to 10–25. Latent Consistency Models (LCM, Song et al. 2023) and Turbo Diffusion distillation achieve 1–4 steps by learning consistency functions. Flow matching / rectified flow enables high-quality generation with 20 ODE steps.
 
   ## Use Cases / Major Families
 
@@ -201,5 +205,5 @@ A Diffusion Model is a class of probabilistic generative model that learns to sy
   27. GenRA / AIUnpacking (2026). "DALL-E Is Dead: OpenAI Retires Its Image Models on May 12." https://aiunpacking.com/review/dall-e/; https://genra.ai/blog/dall-e-retired-may-2026-what-replaces-it
   28. Kittl Blog (2026). "AI image generation complete guide for designers in 2026." https://www.kittl.com/blogs/ai-image-generation-guide-ais/
 
-- ### Provenance
+### Provenance
 

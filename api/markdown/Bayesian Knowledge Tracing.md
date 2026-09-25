@@ -1,132 +1,135 @@
-
 Bayesian Knowledge Tracing (BKT) is a probabilistic modelling technique that estimates a learner's mastery of a skill over time by treating knowledge as a latent binary state inferred from a sequence of correct and incorrect responses. Using a hidden Markov model with parameters for prior knowledge, learning, guessing, and slipping, BKT updates the probability that a student has mastered each skill after every interaction. It is a cornerstone of intelligent tutoring systems and adaptive learning, enabling personalised pacing and content selection.
 
-- ### Semantic Classification
+### Semantic Classification
 
-- ### Content
+### Content
 
-  ## Compositional Relationships (Components)
-      SubClassOf(edu:BayesianKnowledgeTracing
-        ObjectSomeValuesFrom(edu:hasPart edu:HiddenMarkovModel))
-      SubClassOf(edu:BayesianKnowledgeTracing
-        ObjectSomeValuesFrom(edu:hasPart edu:KnowledgeComponentModel))
-      SubClassOf(edu:BayesianKnowledgeTracing
-        ObjectSomeValuesFrom(edu:hasPart edu:ProbabilisticInference))
-      SubClassOf(edu:BayesianKnowledgeTracing
-        ObjectSomeValuesFrom(edu:hasPart edu:MasteryThreshold))
-      SubClassOf(edu:BayesianKnowledgeTracing
-        ObjectSomeValuesFrom(edu:hasPart edu:ParameterEstimation))
-      SubClassOf(edu:BayesianKnowledgeTracing
-        ObjectSomeValuesFrom(edu:hasPart edu:BayesianInference))
+## Compositional Relationships (Components)
+    SubClassOf(edu:BayesianKnowledgeTracing
+      ObjectSomeValuesFrom(edu:hasPart edu:HiddenMarkovModel))
+    SubClassOf(edu:BayesianKnowledgeTracing
+      ObjectSomeValuesFrom(edu:hasPart edu:KnowledgeComponentModel))
+    SubClassOf(edu:BayesianKnowledgeTracing
+      ObjectSomeValuesFrom(edu:hasPart edu:ProbabilisticInference))
+    SubClassOf(edu:BayesianKnowledgeTracing
+      ObjectSomeValuesFrom(edu:hasPart edu:MasteryThreshold))
+    SubClassOf(edu:BayesianKnowledgeTracing
+      ObjectSomeValuesFrom(edu:hasPart edu:ParameterEstimation))
+    SubClassOf(edu:BayesianKnowledgeTracing
+      ObjectSomeValuesFrom(edu:hasPart edu:BayesianInference))
 
-  ## Dependency Relationships
-      SubClassOf(edu:BayesianKnowledgeTracing
-        ObjectSomeValuesFrom(edu:requires edu:KnowledgeComponentModel))
-      SubClassOf(edu:BayesianKnowledgeTracing
-        ObjectSomeValuesFrom(edu:requires edu:EducationalTechnology))
-      SubClassOf(edu:BayesianKnowledgeTracing
-        ObjectSomeValuesFrom(edu:requires edu:FormativeAssessment))
-      SubClassOf(edu:BayesianKnowledgeTracing
-        ObjectSomeValuesFrom(edu:dependsOn edu:HiddenMarkovModel))
-      SubClassOf(edu:BayesianKnowledgeTracing
-        ObjectSomeValuesFrom(edu:dependsOn edu:BayesianInference))
-      SubClassOf(edu:BayesianKnowledgeTracing
-        ObjectSomeValuesFrom(edu:dependsOn edu:ExpectationMaximisation))
-      SubClassOf(edu:BayesianKnowledgeTracing
-        ObjectSomeValuesFrom(edu:dependsOn edu:Psychometrics))
+## Dependency Relationships
+    SubClassOf(edu:BayesianKnowledgeTracing
+      ObjectSomeValuesFrom(edu:requires edu:KnowledgeComponentModel))
+    SubClassOf(edu:BayesianKnowledgeTracing
+      ObjectSomeValuesFrom(edu:requires edu:EducationalTechnology))
+    SubClassOf(edu:BayesianKnowledgeTracing
+      ObjectSomeValuesFrom(edu:requires edu:FormativeAssessment))
+    SubClassOf(edu:BayesianKnowledgeTracing
+      ObjectSomeValuesFrom(edu:dependsOn edu:HiddenMarkovModel))
+    SubClassOf(edu:BayesianKnowledgeTracing
+      ObjectSomeValuesFrom(edu:dependsOn edu:BayesianInference))
+    SubClassOf(edu:BayesianKnowledgeTracing
+      ObjectSomeValuesFrom(edu:dependsOn edu:ExpectationMaximisation))
+    SubClassOf(edu:BayesianKnowledgeTracing
+      ObjectSomeValuesFrom(edu:dependsOn edu:Psychometrics))
 
-  ## Capability Relationships
-      SubClassOf(edu:BayesianKnowledgeTracing
-        ObjectSomeValuesFrom(edu:enables edu:PersonalisedLearning))
-      SubClassOf(edu:BayesianKnowledgeTracing
-        ObjectSomeValuesFrom(edu:enables edu:MasteryLearning))
-      SubClassOf(edu:BayesianKnowledgeTracing
-        ObjectSomeValuesFrom(edu:enables edu:FormativeAssessment))
-      SubClassOf(edu:BayesianKnowledgeTracing
-        ObjectSomeValuesFrom(edu:enables edu:LearningAnalytics))
-      SubClassOf(edu:BayesianKnowledgeTracing
-        ObjectSomeValuesFrom(edu:enables edu:ComputerisedAdaptiveTesting))
-      SubClassOf(edu:BayesianKnowledgeTracing
-        ObjectSomeValuesFrom(edu:supports edu:ComputerisedAdaptiveTesting))
-      SubClassOf(edu:BayesianKnowledgeTracing
-        ObjectSomeValuesFrom(edu:supports edu:AdaptiveLearning))
-      SubClassOf(edu:BayesianKnowledgeTracing
-        ObjectSomeValuesFrom(edu:supports edu:OpenLearnerModel))
+## Capability Relationships
+    SubClassOf(edu:BayesianKnowledgeTracing
+      ObjectSomeValuesFrom(edu:enables edu:PersonalisedLearning))
+    SubClassOf(edu:BayesianKnowledgeTracing
+      ObjectSomeValuesFrom(edu:enables edu:MasteryLearning))
+    SubClassOf(edu:BayesianKnowledgeTracing
+      ObjectSomeValuesFrom(edu:enables edu:FormativeAssessment))
+    SubClassOf(edu:BayesianKnowledgeTracing
+      ObjectSomeValuesFrom(edu:enables edu:LearningAnalytics))
+    SubClassOf(edu:BayesianKnowledgeTracing
+      ObjectSomeValuesFrom(edu:enables edu:ComputerisedAdaptiveTesting))
+    SubClassOf(edu:BayesianKnowledgeTracing
+      ObjectSomeValuesFrom(edu:supports edu:ComputerisedAdaptiveTesting))
+    SubClassOf(edu:BayesianKnowledgeTracing
+      ObjectSomeValuesFrom(edu:supports edu:AdaptiveLearning))
+    SubClassOf(edu:BayesianKnowledgeTracing
+      ObjectSomeValuesFrom(edu:supports edu:OpenLearnerModel))
 
-  ## Implementation Relationships
-      SubClassOf(edu:BayesianKnowledgeTracing
-        ObjectSomeValuesFrom(edu:implements edu:AdaptiveLearning))
-      SubClassOf(edu:BayesianKnowledgeTracing
-        ObjectSomeValuesFrom(edu:implements edu:MasteryLearning))
-      SubClassOf(edu:BayesianKnowledgeTracing
-        ObjectSomeValuesFrom(edu:implements edu:BayesianInference))
-      SubClassOf(edu:BayesianKnowledgeTracing
-        ObjectSomeValuesFrom(edu:uses edu:HiddenMarkovModel))
-      SubClassOf(edu:BayesianKnowledgeTracing
-        ObjectSomeValuesFrom(edu:uses edu:ExpectationMaximisation))
-      SubClassOf(edu:BayesianKnowledgeTracing
-        ObjectSomeValuesFrom(edu:uses edu:KnowledgeComponentModel))
+## Implementation Relationships
+    SubClassOf(edu:BayesianKnowledgeTracing
+      ObjectSomeValuesFrom(edu:implements edu:AdaptiveLearning))
+    SubClassOf(edu:BayesianKnowledgeTracing
+      ObjectSomeValuesFrom(edu:implements edu:MasteryLearning))
+    SubClassOf(edu:BayesianKnowledgeTracing
+      ObjectSomeValuesFrom(edu:implements edu:BayesianInference))
+    SubClassOf(edu:BayesianKnowledgeTracing
+      ObjectSomeValuesFrom(edu:uses edu:HiddenMarkovModel))
+    SubClassOf(edu:BayesianKnowledgeTracing
+      ObjectSomeValuesFrom(edu:uses edu:ExpectationMaximisation))
+    SubClassOf(edu:BayesianKnowledgeTracing
+      ObjectSomeValuesFrom(edu:uses edu:KnowledgeComponentModel))
 
-  ## Reduction Relationships
-      SubClassOf(edu:BayesianKnowledgeTracing
-        ObjectSomeValuesFrom(edu:reducesTo edu:TwoStateProbabilisticModel))
-      SubClassOf(edu:BayesianKnowledgeTracing
-        ObjectSomeValuesFrom(edu:relatedTo edu:ItemResponseTheory))
-      SubClassOf(edu:BayesianKnowledgeTracing
-        ObjectSomeValuesFrom(edu:relatedTo edu:DeepKnowledgeTracing))
-      SubClassOf(edu:BayesianKnowledgeTracing
-        ObjectSomeValuesFrom(edu:relatedTo edu:SpacedRepetition))
-      SubClassOf(edu:BayesianKnowledgeTracing
-        ObjectSomeValuesFrom(edu:relatedTo edu:CognitiveTutor))
-      SubClassOf(edu:BayesianKnowledgeTracing
-        ObjectSomeValuesFrom(edu:bridgesTo edu:ExplainableAI))
-      SubClassOf(edu:BayesianKnowledgeTracing
-        ObjectSomeValuesFrom(edu:bridgesTo edu:DeepKnowledgeTracing))
-      SubClassOf(edu:BayesianKnowledgeTracing
-        ObjectSomeValuesFrom(edu:bridgesTo edu:LargeLanguageModel))
+## Reduction Relationships
+    SubClassOf(edu:BayesianKnowledgeTracing
+      ObjectSomeValuesFrom(edu:reducesTo edu:TwoStateProbabilisticModel))
+    SubClassOf(edu:BayesianKnowledgeTracing
+      ObjectSomeValuesFrom(edu:relatedTo edu:ItemResponseTheory))
+    SubClassOf(edu:BayesianKnowledgeTracing
+      ObjectSomeValuesFrom(edu:relatedTo edu:DeepKnowledgeTracing))
+    SubClassOf(edu:BayesianKnowledgeTracing
+      ObjectSomeValuesFrom(edu:relatedTo edu:SpacedRepetition))
+    SubClassOf(edu:BayesianKnowledgeTracing
+      ObjectSomeValuesFrom(edu:relatedTo edu:CognitiveTutor))
+    SubClassOf(edu:BayesianKnowledgeTracing
+      ObjectSomeValuesFrom(edu:bridgesTo edu:ExplainableAI))
+    SubClassOf(edu:BayesianKnowledgeTracing
+      ObjectSomeValuesFrom(edu:bridgesTo edu:DeepKnowledgeTracing))
+    SubClassOf(edu:BayesianKnowledgeTracing
+      ObjectSomeValuesFrom(edu:bridgesTo edu:LargeLanguageModel))
 
-  ## About
-  Bayesian Knowledge Tracing stands as one of the most enduring and practically deployed algorithms at the intersection of [[Cognitive Science]], [[Psychometrics]], and [[Machine Learning]]. Its origins lie in the cognitive tutoring research programme led by John R. Anderson at Carnegie Mellon University in the late 1980s and early 1990s, which sought to create computational models of human skill acquisition grounded in Anderson's ACT-R (Adaptive Control of Thought—Rational) cognitive architecture. Albert Corbett and John Anderson formalised BKT in a 1994 technical report and a canonical 1995 journal paper in User Modeling and User-Adapted Interaction, presenting it as the mastery-tracking component of the CMU Cognitive Tutor for algebra — a system that went on to be deployed in hundreds of thousands of US high school classrooms. The insight was elegant: rather than treating a student's knowledge state as directly observable (as in simple right/wrong tallies), or as a continuous latent variable requiring expensive psychometric testing (as in [[Item Response Theory]]), BKT treats knowledge acquisition as a two-state latent Markov process. The learner occupies either the "not mastered" state or the "mastered" state, and Bayesian updating after each observed response maintains a calibrated posterior probability over which state the learner currently occupies. This posterior then drives the adaptive tutoring decision: practise more (if P(L_t) < threshold) or advance (if P(L_t) ≥ threshold). The mathematical machinery is deliberately minimal: four parameters fully characterise a skill's learning dynamics, these parameters carry direct pedagogical meaning (prior knowledge, learning rate, guessing tendency, slipping tendency), and the update equations are analytically tractable without any approximation, GPU, or deep learning infrastructure required.
+## About
+Bayesian Knowledge Tracing stands as one of the most enduring and practically deployed algorithms at the intersection of [[Cognitive Science]], [[Psychometrics]], and [[Machine Learning]]. Its origins lie in the cognitive tutoring research programme led by John R. Anderson at Carnegie Mellon University in the late 1980s and early 1990s, which sought to create computational models of human skill acquisition grounded in Anderson's ACT-R (Adaptive Control of Thought—Rational) cognitive architecture. Albert Corbett and John Anderson formalised BKT in a 1994 technical report and a canonical 1995 journal paper in User Modeling and User-Adapted Interaction, presenting it as the mastery-tracking component of the CMU Cognitive Tutor for algebra — a system that went on to be deployed in hundreds of thousands of US high school classrooms. The insight was elegant: rather than treating a student's knowledge state as directly observable (as in simple right/wrong tallies), or as a continuous latent variable requiring expensive psychometric testing (as in [[Item Response Theory]]), BKT treats knowledge acquisition as a two-state latent Markov process. The learner occupies either the "not mastered" state or the "mastered" state, and Bayesian updating after each observed response maintains a calibrated posterior probability over which state the learner currently occupies. This posterior then drives the adaptive tutoring decision: practise more (if P(L_t) < threshold) or advance (if P(L_t) ≥ threshold). The mathematical machinery is deliberately minimal: four parameters fully characterise a skill's learning dynamics, these parameters carry direct pedagogical meaning (prior knowledge, learning rate, guessing tendency, slipping tendency), and the update equations are analytically tractable without any approximation, GPU, or deep learning infrastructure required.
 
-  The model's durability in the face of more powerful neural competitors is explained by four interconnected factors. First, interpretability: BKT's parameters have direct cognitive and pedagogical meaning, making it possible for curriculum designers and teachers to understand and validate the model's behaviour in ways that [[Neural Network|LSTM]] or [[Transformer Architecture]]-based [[Learner Model]]s do not permit; a product manager can interrogate why a student was held on a skill and receive an intelligible answer in terms of four parameters rather than 175 million attention weights. Second, data efficiency: BKT requires only dozens of observations per skill to converge on reasonable parameter estimates — critical in educational contexts where rare curriculum skills may appear only a handful of times per student — while deep learning approaches require hundreds or thousands of observations to achieve stable predictions. Third, regulatory compliance: [[Explainable AI]] requirements under GDPR Article 22 and the UK Department for Education's 2024 guidance on automated educational decisions favour models whose recommendations can be traced to interpretable parameters and explained to learners and parents. Fourth, integration with [[Mastery Learning]]-based pedagogy: BKT directly operationalises Benjamin Bloom's mastery learning vision — no student advances until mastery is demonstrated — in a way that is structurally natural for the fixed-threshold BKT mastery criterion, and less so for continuous neural predictions that lack a principled natural threshold. These advantages have kept BKT in active production use at Carnegie Learning (MATHia), Duolingo (hybrid implementations with [[Spaced Repetition]]), and ASSISTments, even as research benchmarks increasingly favour its deep learning successors. The platform-scale evidence is substantial: Carnegie Learning's MATHia system, which uses BKT as its mastery model for ~500 algebra and geometry knowledge components, reports learning gains consistent with Bloom's [[Two-Sigma Problem]] predictions when students engage for 30+ minutes per week.
+The model's durability in the face of more powerful neural competitors is explained by four interconnected factors. First, interpretability: BKT's parameters have direct cognitive and pedagogical meaning, making it possible for curriculum designers and teachers to understand and validate the model's behaviour in ways that [[Neural Network|LSTM]] or [[Transformer Architecture]]-based [[Learner Model]]s do not permit; a product manager can interrogate why a student was held on a skill and receive an intelligible answer in terms of four parameters rather than 175 million attention weights. Second, data efficiency: BKT requires only dozens of observations per skill to converge on reasonable parameter estimates — critical in educational contexts where rare curriculum skills may appear only a handful of times per student — while deep learning approaches require hundreds or thousands of observations to achieve stable predictions. Third, regulatory compliance: [[Explainable AI]] requirements under GDPR Article 22 and the UK Department for Education's 2024 guidance on automated educational decisions favour models whose recommendations can be traced to interpretable parameters and explained to learners and parents. Fourth, integration with [[Mastery Learning]]-based pedagogy: BKT directly operationalises Benjamin Bloom's mastery learning vision — no student advances until mastery is demonstrated — in a way that is structurally natural for the fixed-threshold BKT mastery criterion, and less so for continuous neural predictions that lack a principled natural threshold. These advantages have kept BKT in active production use at Carnegie Learning (MATHia), Duolingo (hybrid implementations with [[Spaced Repetition]]), and ASSISTments, even as research benchmarks increasingly favour its deep learning successors. The platform-scale evidence is substantial: Carnegie Learning's MATHia system, which uses BKT as its mastery model for ~500 algebra and geometry knowledge components, reports learning gains consistent with Bloom's [[Two-Sigma Problem]] predictions when students engage for 30+ minutes per week.
 
-  ## Formal Model and Algorithm
-  The BKT model is a two-state first-order [[Hidden Markov Model]] in which the latent state L_t ∈ {0, 1} (not mastered, mastered) evolves as a Markov chain and generates the observable response O_t ∈ {correct, incorrect} according to emission probabilities parameterised by the guess and slip rates. Formally, for each [[Knowledge Component Model|knowledge component]] k:
+## Formal Model and Algorithm
+The BKT model is a two-state first-order [[Hidden Markov Model]] in which the latent state L_t ∈ {0, 1} (not mastered, mastered) evolves as a Markov chain and generates the observable response O_t ∈ {correct, incorrect} according to emission probabilities parameterised by the guess and slip rates. Formally, for each [[Knowledge Component Model|knowledge component]] k:
 
-  **State transition:** P(L_t = 1 | L_{t-1} = 0) = P(T) (learn); P(L_t = 1 | L_{t-1} = 1) = 1 (no forgetting in standard BKT, reflecting within-session retention).
+**State transition:** P(L_t = 1 | L_{t-1} = 0) = P(T) (learn); P(L_t = 1 | L_{t-1} = 1) = 1 (no forgetting in standard BKT, reflecting within-session retention).
 
-  **Emission probabilities:** P(O_t = correct | L_t = 1) = 1 − P(S); P(O_t = correct | L_t = 0) = P(G).
+**Emission probabilities:** P(O_t = correct | L_t = 1) = 1 − P(S); P(O_t = correct | L_t = 0) = P(G).
 
-  **Update equations after observing O_t via [[Bayesian Inference]]:**
+**Update equations after observing O_t via [[Bayesian Inference]]:**
 
-  Stage 1 — update on observed response (Bayesian filtering):
-  - If O_t = correct: P(L_t | O_t) = [P(L_{t−1}) × (1 − P(S))] / [P(L_{t−1}) × (1 − P(S)) + (1 − P(L_{t−1})) × P(G)]
-  - If O_t = incorrect: P(L_t | O_t) = [P(L_{t−1}) × P(S)] / [P(L_{t−1}) × P(S) + (1 − P(L_{t−1})) × (1 − P(G))]
+Stage 1 — update on observed response (Bayesian filtering):
+
+- If O_t = correct: P(L_t | O_t) = [P(L_{t−1}) × (1 − P(S))] / [P(L_{t−1}) × (1 − P(S)) + (1 − P(L_{t−1})) × P(G)]
+- If O_t = incorrect: P(L_t | O_t) = [P(L_{t−1}) × P(S)] / [P(L_{t−1}) × P(S) + (1 − P(L_{t−1})) × (1 − P(G))]
 
   Stage 2 — propagate through the learning transition:
-  - P(L_{t+1}) = P(L_t | O_t) + (1 − P(L_t | O_t)) × P(T)
+
+- P(L_{t+1}) = P(L_t | O_t) + (1 − P(L_t | O_t)) × P(T)
 
   **Mastery decision:** Declare mastery when P(L_t) ≥ θ, where θ = 0.95 is the conventional threshold used in Carnegie Learning deployments, corresponding to a 95% posterior probability of mastery.
 
   **Parameter estimation:** Parameters {P(L₀), P(T), P(G), P(S)} are estimated from historical response logs using the Baum-Welch algorithm — a special case of [[Expectation-Maximisation]] for [[Hidden Markov Model]]s. The E-step computes expected state occupancy counts; the M-step updates parameters to maximise expected log-likelihood. Constraints P(G) + P(S) < 1 (degenerate if not enforced) and P(T) ∈ (0, 1) are applied. Baker et al. (2008) documented model identifiability problems where multiple parameter settings produce identical likelihoods on training data, leading to contextual slip estimation extensions and grid search with degeneracy checks as standard practice.
 
   ## Extensions and Variants
-  - **Individualised BKT (Yudelson et al., 2013)**: fits separate P(L₀) and P(T) for each student–skill combination, treating student ability as a modifier on population-level parameters. Demonstrated on the KDD 2010 Algebra dataset, achieving 3–5% AUC improvement over standard BKT at the cost of requiring sufficient per-student data — typically 20+ observations per skill per student — for stable estimation.
-  - **KT-IDEM (Pardos & Heffernan, 2011)**: Item-Difficulty Effect Model separates slip and guess parameters by item, allowing items of varying difficulty within the same skill to have different emission probabilities — a bridge between BKT and [[Item Response Theory]] that improves performance on heterogeneous item banks.
-  - **BKT+Forget (Qiu et al., 2011)**: introduces a non-zero forgetting parameter P(F) = P(L_t = 0 | L_{t−1} = 1) to capture skill decay between practice sessions, important for longitudinal tracking across days or weeks where [[Spaced Repetition]] scheduling interacts with knowledge retention.
-  - **BKT-LSTM hybrid**: augments an [[Neural Network|LSTM]] predictor with the BKT posterior P(L_t) as an explicit input feature alongside raw response history embeddings, yielding interpretable BKT-calibrated predictions with the sequential representation learning of deep networks. Performance comparable to [[Deep Knowledge Tracing]] on ASSISTments benchmarks with enhanced interpretability.
-  - **B²KT — Bayesian-Bayesian Knowledge Tracing (van der Graaf et al., 2022)**: treats the per-student BKT parameter vector itself as a random variable with a hierarchical prior, enabling online Bayesian updating of both the knowledge state and the skill parameters simultaneously. Published at EDM 2022, this approach was shown to be more equitable across learners of varying reading ability and demographic groups than classical BKT, directly addressing the fairness concerns dominant in contemporary BKT literature. EDM 2025 presented follow-on work specifically on BKT fairness for math learners of different reading ability.
-  - **Neural-Symbolic BKT (arXiv:2604.08263, 2026)**: injects [[Knowledge Graph]] structure from curriculum prerequisite graphs into BKT-derived learner models using [[Graph Neural Network]] priors, enabling parameter transfer from well-observed to data-sparse skills and combining BKT's interpretability with the representational power of symbolic knowledge representations.
-  - **Sparse Binary Representation Learning for KT (arXiv:2501.09893, 2025)**: introduces sparse binary latent codes alongside response prediction, improving interpretability and enabling compression of knowledge state representations for deployment on resource-constrained tutoring devices.
-  - **LLM-BKT integration (2024–2026)**: emerging architectures use [[Large Language Model]] backends for dialogue tutoring and explanation generation, with BKT handling the structured mastery-state estimation and pacing decisions — an explicit division of labour that plays to both components' strengths, deployed in platforms such as Carnegie Learning's MathGPT and Khan Academy's Khanmigo.
+
+- **Individualised BKT (Yudelson et al., 2013)**: fits separate P(L₀) and P(T) for each student–skill combination, treating student ability as a modifier on population-level parameters. Demonstrated on the KDD 2010 Algebra dataset, achieving 3–5% AUC improvement over standard BKT at the cost of requiring sufficient per-student data — typically 20+ observations per skill per student — for stable estimation.
+- **KT-IDEM (Pardos & Heffernan, 2011)**: Item-Difficulty Effect Model separates slip and guess parameters by item, allowing items of varying difficulty within the same skill to have different emission probabilities — a bridge between BKT and [[Item Response Theory]] that improves performance on heterogeneous item banks.
+- **BKT+Forget (Qiu et al., 2011)**: introduces a non-zero forgetting parameter P(F) = P(L_t = 0 | L_{t−1} = 1) to capture skill decay between practice sessions, important for longitudinal tracking across days or weeks where [[Spaced Repetition]] scheduling interacts with knowledge retention.
+- **BKT-LSTM hybrid**: augments an [[Neural Network|LSTM]] predictor with the BKT posterior P(L_t) as an explicit input feature alongside raw response history embeddings, yielding interpretable BKT-calibrated predictions with the sequential representation learning of deep networks. Performance comparable to [[Deep Knowledge Tracing]] on ASSISTments benchmarks with enhanced interpretability.
+- **B²KT — Bayesian-Bayesian Knowledge Tracing (van der Graaf et al., 2022)**: treats the per-student BKT parameter vector itself as a random variable with a hierarchical prior, enabling online Bayesian updating of both the knowledge state and the skill parameters simultaneously. Published at EDM 2022, this approach was shown to be more equitable across learners of varying reading ability and demographic groups than classical BKT, directly addressing the fairness concerns dominant in contemporary BKT literature. EDM 2025 presented follow-on work specifically on BKT fairness for math learners of different reading ability.
+- **Neural-Symbolic BKT (arXiv:2604.08263, 2026)**: injects [[Knowledge Graph]] structure from curriculum prerequisite graphs into BKT-derived learner models using [[Graph Neural Network]] priors, enabling parameter transfer from well-observed to data-sparse skills and combining BKT's interpretability with the representational power of symbolic knowledge representations.
+- **Sparse Binary Representation Learning for KT (arXiv:2501.09893, 2025)**: introduces sparse binary latent codes alongside response prediction, improving interpretability and enabling compression of knowledge state representations for deployment on resource-constrained tutoring devices.
+- **LLM-BKT integration (2024–2026)**: emerging architectures use [[Large Language Model]] backends for dialogue tutoring and explanation generation, with BKT handling the structured mastery-state estimation and pacing decisions — an explicit division of labour that plays to both components' strengths, deployed in platforms such as Carnegie Learning's MathGPT and Khan Academy's Khanmigo.
 
   ## Use Cases
-  - **Carnegie Learning MATHia (K-12 mathematics, USA)**: the production deployment environment for BKT since the 1990s; the current platform serves over 700,000 students annually across 4,000+ US schools. Each of the platform's approximately 500 mathematics [[Knowledge Component Model|knowledge components]] has BKT parameters estimated from millions of logged student–tutor interactions. The system's mastery-based gating — holding students on a skill until P(L_t) ≥ 0.95 — directly operationalises [[Mastery Learning]] and is the basis for Carnegie Learning's published learning gain evidence in algebra and geometry.
-  - **ASSISTments online homework platform**: the canonical open-science deployment and benchmarking platform for knowledge tracing, with 170,000+ students across 800+ US schools. ASSISTments provides the reference datasets (ASSISTments 2009, 2015, 2017) used in all knowledge tracing benchmarking studies. BKT serves as the baseline against which [[Deep Knowledge Tracing]], DKVMN, SAKT, AKT, and [[Transformer Architecture]]-based models are evaluated.
-  - **Duolingo (language learning, 500+ million users)**: employs a hybrid BKT-derived model for scheduling review exercises based on estimated word and grammar skill mastery, combining BKT's probabilistic mastery tracking with [[Spaced Repetition]] scheduling algorithms (Half-Life Regression, Settles & Meeder 2016) to optimise long-term vocabulary and grammar retention. The A/B testing programme at Duolingo has demonstrated that BKT-informed scheduling reduces retention errors by 23% versus random scheduling baselines.
-  - **[[Computerised Adaptive Testing]] and [[Formative Assessment]]**: BKT parameters inform item selection in formative assessment systems — when P(L_t) is near the mastery threshold, the system selects maximally diagnostic items to resolve uncertainty, mirroring the maximum-information item selection principle of [[Computerised Adaptive Testing]] grounded in [[Item Response Theory]]. The BKT and IRT approaches converge in high-stakes testing pipelines where online parameter updating is critical.
-  - **MOOC and corporate learning platforms**: Coursera, edX, and enterprise learning platforms (Degreed, Cornerstone) use BKT-inspired mastery models to generate skill-mastery credentials, identify learners stuck on specific skills, and trigger instructor alerts when class-level BKT mastery distributions indicate systematic instructional gaps.
-  - **Special education and remediation**: BKT's per-skill parameter estimation makes it particularly effective for identifying anomalous learning patterns — very high slip rates suggesting test anxiety, very high guess rates indicating strategic guessing without comprehension, extremely low learn rates indicating prerequisite skill gaps — enabling targeted human intervention and [[Domain Model]]-informed remediation.
+
+- **Carnegie Learning MATHia (K-12 mathematics, USA)**: the production deployment environment for BKT since the 1990s; the current platform serves over 700,000 students annually across 4,000+ US schools. Each of the platform's approximately 500 mathematics [[Knowledge Component Model|knowledge components]] has BKT parameters estimated from millions of logged student–tutor interactions. The system's mastery-based gating — holding students on a skill until P(L_t) ≥ 0.95 — directly operationalises [[Mastery Learning]] and is the basis for Carnegie Learning's published learning gain evidence in algebra and geometry.
+- **ASSISTments online homework platform**: the canonical open-science deployment and benchmarking platform for knowledge tracing, with 170,000+ students across 800+ US schools. ASSISTments provides the reference datasets (ASSISTments 2009, 2015, 2017) used in all knowledge tracing benchmarking studies. BKT serves as the baseline against which [[Deep Knowledge Tracing]], DKVMN, SAKT, AKT, and [[Transformer Architecture]]-based models are evaluated.
+- **Duolingo (language learning, 500+ million users)**: employs a hybrid BKT-derived model for scheduling review exercises based on estimated word and grammar skill mastery, combining BKT's probabilistic mastery tracking with [[Spaced Repetition]] scheduling algorithms (Half-Life Regression, Settles & Meeder 2016) to optimise long-term vocabulary and grammar retention. The A/B testing programme at Duolingo has demonstrated that BKT-informed scheduling reduces retention errors by 23% versus random scheduling baselines.
+- **[[Computerised Adaptive Testing]] and [[Formative Assessment]]**: BKT parameters inform item selection in formative assessment systems — when P(L_t) is near the mastery threshold, the system selects maximally diagnostic items to resolve uncertainty, mirroring the maximum-information item selection principle of [[Computerised Adaptive Testing]] grounded in [[Item Response Theory]]. The BKT and IRT approaches converge in high-stakes testing pipelines where online parameter updating is critical.
+- **MOOC and corporate learning platforms**: Coursera, edX, and enterprise learning platforms (Degreed, Cornerstone) use BKT-inspired mastery models to generate skill-mastery credentials, identify learners stuck on specific skills, and trigger instructor alerts when class-level BKT mastery distributions indicate systematic instructional gaps.
+- **Special education and remediation**: BKT's per-skill parameter estimation makes it particularly effective for identifying anomalous learning patterns — very high slip rates suggesting test anxiety, very high guess rates indicating strategic guessing without comprehension, extremely low learn rates indicating prerequisite skill gaps — enabling targeted human intervention and [[Domain Model]]-informed remediation.
 
   ## Academic Context
   BKT emerged from the ACT-R cognitive modelling tradition at CMU. The foundational 1995 Corbett & Anderson paper in User Modeling and User-Adapted Interaction remains one of the most cited papers in educational computing, with over 3,500 citations as of 2026. The International Conference on Educational Data Mining (EDM, first held 2008) and the AIED conference have both treated BKT as the reference baseline for new knowledge tracing models. Key theoretical debates in the BKT literature include: identifiability and degeneracy of parameter estimates (Baker et al., 2008, 2010); the value of individualised vs. population-level parameter estimation (Yudelson et al., 2013); the relationship between BKT and [[Item Response Theory]] (Ruopp et al., arXiv:1803.05926, 2018); fairness and demographic bias in BKT-driven adaptive systems (van der Graaf et al., 2022; EDM 2025); and the relative merits of interpretable BKT versus [[Deep Knowledge Tracing]] for high-stakes deployment. The pyBKT library (Badrinath & Pardos, MDPI 2023) democratised BKT implementation, providing GPU-accelerated Python implementations of standard and extended BKT variants used in over 200 research groups.
@@ -135,19 +138,21 @@ Bayesian Knowledge Tracing (BKT) is a probabilistic modelling technique that est
   In 2026, BKT occupies a distinctive production niche: no longer state-of-the-art on held-out prediction benchmarks — [[Deep Knowledge Tracing]] and [[Transformer Architecture]]-based successors (SAKT, AKT, DIMKT) achieve 5–15% higher AUC by capturing cross-skill dependencies and richer temporal dynamics that BKT's per-skill independence assumption ignores — but dominant in production ITS deployments due to interpretability, data efficiency, and regulatory compliance. The EDM 2025 conference explicitly highlighted a fairness track following multiple studies documenting demographic disparities in BKT-driven systems; the "Fairness of Bayesian Knowledge Tracing for Math Learners of Different Reading Ability" paper (EDM 2025) demonstrates that reading ability confounds BKT mastery estimates in mathematics, producing inequitable gating decisions. B²KT frameworks treating BKT parameters as per-student posteriors directly address this by naturally individualising instruction and producing more equitable curricula across reading ability and demographic groups. LLM integration has created the hybrid architecture most deployment teams favour for 2026: BKT manages skill-state estimation and mastery-based pacing (interpretable, auditable), while [[Large Language Model]] backends power Socratic dialogue, explanation generation, and dynamic problem creation — as in Carnegie Learning's MathGPT and Khanmigo. Neural-Symbolic Knowledge Tracing (arXiv:2604.08263, 2026) injects [[Knowledge Graph]] prerequisite structure into deep [[Learner Model]]s, offering a convergence path toward models that combine BKT's structural grounding with DKT's predictive power. The Language Bottleneck Model for Qualitative Knowledge State Modeling (arXiv:2506.16982, 2026) uses language models to produce qualitative knowledge state descriptions rather than binary mastery judgements — a potential paradigm shift toward semantically richer learner models that go beyond BKT's binary latent state.
 
   ## UK Context
-  - **University College London (UCL) Knowledge Lab**: Dr Mutlu Cukurova and colleagues research multimodal learner modelling combining BKT-style mastery tracking with facial expression, speech, and physiological signals from [[Affective Computing]], enabling affect-aware [[Adaptive Learning]] beyond response-only BKT. UCL is a partner in the EU-funded BOOST project evaluating adaptive learning and [[Knowledge Component Model]]-based mastery tracking at scale in European higher education, and leads UK policy-oriented research on whether adaptive systems serve or disadvantage learners with special educational needs or from low-income backgrounds — directly informing UK DfE evidence reviews.
-  - **Open University (Milton Keynes)**: the OU's Learning Analytics team, working with Jisc, deploys BKT-inspired skill mastery tracking for the OpenLearn platform, combining it with [[Learning Analytics]] dashboards that surface skill-level mastery estimates to tutors and personal advisors. The OU's scale — 170,000+ students on 600+ courses — provides unique datasets for large-scale BKT parameter estimation, fairness evaluation across demographic groups, and longitudinal validation of BKT-based mastery predictions against delayed assessment outcomes.
-  - **Century Tech (London)**: Century's adaptive platform, deployed in 1,500+ UK schools, uses BKT-derived mastery signals combined with deep learning content recommendation to generate micro-lesson pathways at sub-skill granularity within mathematics, English, and science. The platform tracks mastery across hundreds of [[Knowledge Component Model|knowledge components]] per subject, with granularity distinguishing between specific misconception types within skills (e.g., sign-error vs. procedure-order errors in algebra). Century has published RCT evidence of 15–35% additional learning gain in UK secondary schools, constituting the strongest UK-based evidence for BKT-informed [[Adaptive Learning]].
-  - **University of Edinburgh**: Edinburgh's AI in Education group within the School of Informatics works on Bayesian learner modelling and uncertainty-aware knowledge tracing for dialogue-based tutoring. Collaboration with Heriot-Watt University's Interaction Lab applies BKT-style skill tracking to phonological and lexical [[Knowledge Component Model|knowledge components]] in second-language acquisition spoken dialogue tutors.
-  - **Regulatory context**: the UK DfE's Generative AI in Education guidance (2024) requires transparency about algorithmic content sequencing; GDPR Article 22 is particularly relevant where BKT mastery gating has consequential effects — blocking a student's advance to the next topic without teacher override constitutes an automated decision subject to transparency, contestability, and [[Explainable AI]] requirements. [[Federated Learning]] approaches for cross-institutional BKT parameter estimation without centralising [[Data Privacy|student data]] are being piloted by Jisc.
+
+- **University College London (UCL) Knowledge Lab**: Dr Mutlu Cukurova and colleagues research multimodal learner modelling combining BKT-style mastery tracking with facial expression, speech, and physiological signals from [[Affective Computing]], enabling affect-aware [[Adaptive Learning]] beyond response-only BKT. UCL is a partner in the EU-funded BOOST project evaluating adaptive learning and [[Knowledge Component Model]]-based mastery tracking at scale in European higher education, and leads UK policy-oriented research on whether adaptive systems serve or disadvantage learners with special educational needs or from low-income backgrounds — directly informing UK DfE evidence reviews.
+- **Open University (Milton Keynes)**: the OU's Learning Analytics team, working with Jisc, deploys BKT-inspired skill mastery tracking for the OpenLearn platform, combining it with [[Learning Analytics]] dashboards that surface skill-level mastery estimates to tutors and personal advisors. The OU's scale — 170,000+ students on 600+ courses — provides unique datasets for large-scale BKT parameter estimation, fairness evaluation across demographic groups, and longitudinal validation of BKT-based mastery predictions against delayed assessment outcomes.
+- **Century Tech (London)**: Century's adaptive platform, deployed in 1,500+ UK schools, uses BKT-derived mastery signals combined with deep learning content recommendation to generate micro-lesson pathways at sub-skill granularity within mathematics, English, and science. The platform tracks mastery across hundreds of [[Knowledge Component Model|knowledge components]] per subject, with granularity distinguishing between specific misconception types within skills (e.g., sign-error vs. procedure-order errors in algebra). Century has published RCT evidence of 15–35% additional learning gain in UK secondary schools, constituting the strongest UK-based evidence for BKT-informed [[Adaptive Learning]].
+- **University of Edinburgh**: Edinburgh's AI in Education group within the School of Informatics works on Bayesian learner modelling and uncertainty-aware knowledge tracing for dialogue-based tutoring. Collaboration with Heriot-Watt University's Interaction Lab applies BKT-style skill tracking to phonological and lexical [[Knowledge Component Model|knowledge components]] in second-language acquisition spoken dialogue tutors.
+- **Regulatory context**: the UK DfE's Generative AI in Education guidance (2024) requires transparency about algorithmic content sequencing; GDPR Article 22 is particularly relevant where BKT mastery gating has consequential effects — blocking a student's advance to the next topic without teacher override constitutes an automated decision subject to transparency, contestability, and [[Explainable AI]] requirements. [[Federated Learning]] approaches for cross-institutional BKT parameter estimation without centralising [[Data Privacy|student data]] are being piloted by Jisc.
 
   ## Future Directions (2026–2030)
-  - **Equity-by-design BKT**: B²KT and successor frameworks that learn student-specific parameters online will supersede population-level parameter sets encoding demographic confounds; equity auditing toolkits for BKT-driven systems are under development by the EDM fairness working group, targeting deployment as standard practice by 2028.
-  - **BKT–LLM hybrid architectures**: BKT provides the interpretable mastery-state backbone while [[Large Language Model]] backends generate diagnostic questions calibrated to P(L_t), adaptive explanations targeting specific misconceptions inferred from slip patterns, and natural-language transparency reports — closing the [[Explainable AI]] gap that prevents broader deployment in regulated UK and EU educational contexts.
-  - **Federated BKT for privacy-preserving cross-institutional deployment**: fitting BKT parameters across distributed institutional datasets without centralising raw student response logs under [[Federated Learning]] protocols, enabling cross-institutional parameter sharing in compliance with GDPR and FERPA — piloted by Jisc's federated analytics infrastructure.
-  - **Multi-skill BKT with [[Graph Neural Network]] structure**: using the prerequisite graph of a curriculum as a structural prior over BKT parameter sharing — skills with similar prerequisite dependencies share parameters — enabling robust estimation for low-frequency skills with sparse interaction logs.
-  - **[[Affective Computing]] integration**: adaptive tutoring platforms combining BKT skill mastery with physiological signals from wearable devices to detect frustration and cognitive overload, enabling affect-aware mastery gating that adjusts modality and pace as well as content.
-  - **Neuroimaging calibration**: emerging research using fMRI and EEG during mathematics learning at CMU, UCL, and Stanford explores whether neural signatures of skill acquisition can calibrate or validate BKT P(T) estimates, providing neuroscientific grounding for the cognitive assumptions embedded in the model.
+
+- **Equity-by-design BKT**: B²KT and successor frameworks that learn student-specific parameters online will supersede population-level parameter sets encoding demographic confounds; equity auditing toolkits for BKT-driven systems are under development by the EDM fairness working group, targeting deployment as standard practice by 2028.
+- **BKT–LLM hybrid architectures**: BKT provides the interpretable mastery-state backbone while [[Large Language Model]] backends generate diagnostic questions calibrated to P(L_t), adaptive explanations targeting specific misconceptions inferred from slip patterns, and natural-language transparency reports — closing the [[Explainable AI]] gap that prevents broader deployment in regulated UK and EU educational contexts.
+- **Federated BKT for privacy-preserving cross-institutional deployment**: fitting BKT parameters across distributed institutional datasets without centralising raw student response logs under [[Federated Learning]] protocols, enabling cross-institutional parameter sharing in compliance with GDPR and FERPA — piloted by Jisc's federated analytics infrastructure.
+- **Multi-skill BKT with [[Graph Neural Network]] structure**: using the prerequisite graph of a curriculum as a structural prior over BKT parameter sharing — skills with similar prerequisite dependencies share parameters — enabling robust estimation for low-frequency skills with sparse interaction logs.
+- **[[Affective Computing]] integration**: adaptive tutoring platforms combining BKT skill mastery with physiological signals from wearable devices to detect frustration and cognitive overload, enabling affect-aware mastery gating that adjusts modality and pace as well as content.
+- **Neuroimaging calibration**: emerging research using fMRI and EEG during mathematics learning at CMU, UCL, and Stanford explores whether neural signatures of skill acquisition can calibrate or validate BKT P(T) estimates, providing neuroscientific grounding for the cognitive assumptions embedded in the model.
 
   ## Relationship to Item Response Theory and Psychometrics
   Bayesian Knowledge Tracing and [[Item Response Theory]] (IRT) are the two dominant probabilistic frameworks in [[Educational Technology]], and their comparison illuminates fundamental choices in learner modelling. IRT models the probability of a correct response as a function of latent student ability θ and item parameters (difficulty b, discrimination a, guessing c), using a logistic function P(correct|θ,a,b,c) = c + (1-c)/(1+exp(-a(θ-b))). The latent variable θ is continuous (on a scale analogous to a z-score), stable within a testing session, and not assumed to change between items — making IRT a static measurement model designed for the snapshot assessment context. BKT, by contrast, models a binary latent state per skill that is explicitly designed to change between observations: its learning transition P(T) is the mechanism by which practice drives mastery acquisition, making BKT a dynamic learning model designed for the formative, mastery-based tutoring context.
@@ -160,11 +165,12 @@ Bayesian Knowledge Tracing (BKT) is a probabilistic modelling technique that est
   The practical implementation of Bayesian Knowledge Tracing in production tutoring platforms involves a series of engineering and pedagogical decisions that the academic literature often glosses over but that significantly affect real-world performance. **Parameter estimation frequency**: in production systems, BKT parameters are typically estimated offline in periodic batch updates (weekly or monthly) from accumulated interaction logs, rather than in real time. Online re-estimation as new student data accumulates is theoretically attractive but computationally expensive at scale and can introduce instability when individual student populations shift. **Skill granularity**: the appropriate level of granularity for [[Knowledge Component Model|knowledge components]] significantly affects BKT behaviour — too coarse (treating all of algebra as one KC) and the model cannot identify specific gaps; too fine (treating every minor procedural variant as a separate KC) and insufficient data accumulates per KC for reliable parameter estimation. Carnegie Learning's experience suggests that 50–500 KCs per course represents the practical sweet spot. **Mastery threshold calibration**: the conventional 0.95 threshold is often calibrated in practice to trading off advancement speed against mastery assurance — lower thresholds (0.85–0.90) advance students faster and reduce disengagement from repetitive practice but increase the probability of premature advancement and downstream difficulty. **Multi-KC dependencies**: standard BKT assumes independence across KCs; in practice, teachers and curriculum designers know that failure to master prerequisite skills will predictably slow mastery of dependent skills, and this signal — visible in the BKT parameter learning rates across the prerequisite graph — is often used to trigger prerequisite remediation rather than continued practice on the dependent skill.
 
   The pyBKT library (Badrinath & Pardos, 2021; MDPI 2023) has standardised production-quality BKT implementation in Python, providing:
-  - Vectorised parameter estimation for hundreds of KCs simultaneously using GPU-accelerated EM
-  - Multiple BKT variants: standard, Individualised (per-student P(L₀)/P(T)), KT-IDEM (per-item parameters), BKT+Forget (forgetting parameter)
-  - Cross-validation and model selection utilities for choosing between BKT variants
-  - Mastery prediction and curriculum sequencing utilities that translate BKT posteriors into adaptive decisions
-  - Integration with ASSISTments data format and the standardised KT benchmark evaluation pipeline
+
+- Vectorised parameter estimation for hundreds of KCs simultaneously using GPU-accelerated EM
+- Multiple BKT variants: standard, Individualised (per-student P(L₀)/P(T)), KT-IDEM (per-item parameters), BKT+Forget (forgetting parameter)
+- Cross-validation and model selection utilities for choosing between BKT variants
+- Mastery prediction and curriculum sequencing utilities that translate BKT posteriors into adaptive decisions
+- Integration with ASSISTments data format and the standardised KT benchmark evaluation pipeline
 
   The library's adoption across 200+ research groups and multiple commercial platforms has de-facto standardised BKT implementation, making pyBKT the reference implementation for reproduction and benchmarking — analogous to the role scikit-learn plays for general [[Machine Learning]] algorithms.
 
@@ -249,15 +255,16 @@ Bayesian Knowledge Tracing (BKT) is a probabilistic modelling technique that est
   Algorithmic bias is a particularly acute concern in BKT systems. The model learns P(G) and P(S) from historical data in which confounding demographic factors (socioeconomic status, reading ability in cross-curricular skills, English as additional language, neurodivergence) are entangled with measured performance. A student with high reading difficulty performing mathematics on a text-heavy platform will show elevated P(G) estimates and depressed P(T) estimates that reflect reading confounds rather than mathematical knowledge state — leading to inequitable gating decisions. EDM 2025's dedicated fairness track and the Fairness of BKT paper (2025) directly address this: BKT models trained on heterogeneous populations may produce systematically inequitable decisions across demographic groups unless fairness constraints are applied during parameter estimation. B²KT's per-student parameter treatment provides a partial solution by allowing reading-ability and other student-specific factors to be modelled as sources of parameter variation rather than noise, but requires sufficient per-student data to estimate student-specific posteriors reliably. [[Open Learner Model]] transparency — making P(L_t) and its basis visible and challengeable by learners — is recommended as an equity-promoting practice, allowing students to contest automated mastery decisions that may reflect confounded rather than genuine knowledge state estimates.
 
   ## Key Terminology
-  - **Knowledge Component (KC)**: the unit of knowledge tracked by BKT; corresponds to a discrete procedural skill or declarative fact in the [[Knowledge Component Model]], mapped from curriculum objectives via cognitive task analysis.
-  - **Mastery threshold**: the P(L_t) value above which the system declares mastery and advances the learner; conventionally θ = 0.95 in Carnegie Learning deployments, reflecting a 95% posterior probability of having acquired the skill.
-  - **Slip rate P(S)**: probability of an incorrect response despite true mastery — captures test anxiety, careless errors, time pressure, and random lapses; typically estimated at 0.1–0.25 in well-calibrated BKT models.
-  - **Guess rate P(G)**: probability of a correct response without mastery — captures lucky guessing, multiple-choice format effects, and partial knowledge; should satisfy P(G) < 0.5 and P(G) + P(S) < 1 for a non-degenerate model.
-  - **Learn rate P(T)**: per-practice-opportunity probability of transitioning from unmastered to mastered state; high P(T) indicates a skill easily acquired within a session; low P(T) indicates slow accretion requiring many opportunities.
-  - **Prior knowledge P(L₀)**: probability of mastery before any interaction; encodes the expected fraction of learners who enter with prior knowledge of the skill from previous instruction or experience.
-  - **Degeneracy**: pathological parameter configuration where P(G) + P(S) ≥ 1, making the model's mastery predictions uninformative; Baker et al. (2010) showed approximately 20% of skills in unconstrained BKT fitting on real datasets exhibit degeneracy, requiring post-hoc correction.
-  - **Baum-Welch algorithm**: the [[Expectation-Maximisation]] algorithm applied to [[Hidden Markov Model]]s; alternates between computing expected state occupancies (E-step) and re-estimating parameters to maximise expected log-likelihood (M-step); the standard fitting procedure for BKT.
-  - **Open Learner Model (OLM)**: a transparency technique displaying the system's current belief P(L_t) to the learner, enabling self-regulated learning and providing contestability of automated mastery decisions; recommended under UK DfE 2024 governance guidelines for AI in education.
 
-- ### Provenance
+- **Knowledge Component (KC)**: the unit of knowledge tracked by BKT; corresponds to a discrete procedural skill or declarative fact in the [[Knowledge Component Model]], mapped from curriculum objectives via cognitive task analysis.
+- **Mastery threshold**: the P(L_t) value above which the system declares mastery and advances the learner; conventionally θ = 0.95 in Carnegie Learning deployments, reflecting a 95% posterior probability of having acquired the skill.
+- **Slip rate P(S)**: probability of an incorrect response despite true mastery — captures test anxiety, careless errors, time pressure, and random lapses; typically estimated at 0.1–0.25 in well-calibrated BKT models.
+- **Guess rate P(G)**: probability of a correct response without mastery — captures lucky guessing, multiple-choice format effects, and partial knowledge; should satisfy P(G) < 0.5 and P(G) + P(S) < 1 for a non-degenerate model.
+- **Learn rate P(T)**: per-practice-opportunity probability of transitioning from unmastered to mastered state; high P(T) indicates a skill easily acquired within a session; low P(T) indicates slow accretion requiring many opportunities.
+- **Prior knowledge P(L₀)**: probability of mastery before any interaction; encodes the expected fraction of learners who enter with prior knowledge of the skill from previous instruction or experience.
+- **Degeneracy**: pathological parameter configuration where P(G) + P(S) ≥ 1, making the model's mastery predictions uninformative; Baker et al. (2010) showed approximately 20% of skills in unconstrained BKT fitting on real datasets exhibit degeneracy, requiring post-hoc correction.
+- **Baum-Welch algorithm**: the [[Expectation-Maximisation]] algorithm applied to [[Hidden Markov Model]]s; alternates between computing expected state occupancies (E-step) and re-estimating parameters to maximise expected log-likelihood (M-step); the standard fitting procedure for BKT.
+- **Open Learner Model (OLM)**: a transparency technique displaying the system's current belief P(L_t) to the learner, enabling self-regulated learning and providing contestability of automated mastery decisions; recommended under UK DfE 2024 governance guidelines for AI in education.
+
+### Provenance
 

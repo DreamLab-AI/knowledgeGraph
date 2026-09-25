@@ -1,137 +1,141 @@
-
 Benchmarks are standardised tasks, datasets, or workloads used to measure and compare the capabilities or performance of systems, models, or components under controlled, reproducible conditions. In artificial intelligence they encompass curated evaluation suites that probe language understanding, mathematical reasoning, coding, and multimodal perception to produce comparable scores across model generations and research groups. In computing, robotics, and hardware engineering, benchmarks quantify throughput, latency, accuracy, and energy efficiency against fixed reference workloads. Benchmark results are published via leaderboards and model cards to support reproducible science, informed procurement, and regulatory accountability.
 
-- ### In Plain Terms
-  - Standard tests that AI models are all put through so their results can be compared fairly. Like a common exam, they give each model a score on the same tasks, letting you see which is stronger at reasoning, coding and so on.
+### In Plain Terms
 
-- ### Semantic Classification
+- Standard tests that AI models are all put through so their results can be compared fairly. Like a common exam, they give each model a score on the same tasks, letting you see which is stronger at reasoning, coding and so on.
 
-- ### Content
-  ## Compositional Relationships (Components)
-      SubClassOf(ai:Benchmarks
-        ObjectSomeValuesFrom(ai:hasPart ai:EvaluationMetric))
-      SubClassOf(ai:Benchmarks
-        ObjectSomeValuesFrom(ai:hasPart ai:GroundTruthLabels))
-      SubClassOf(ai:Benchmarks
-        ObjectSomeValuesFrom(ai:hasPart ai:HeldOutTestSet))
-      SubClassOf(ai:Benchmarks
-        ObjectSomeValuesFrom(ai:hasPart ai:Leaderboard))
-      SubClassOf(ai:Benchmarks
-        ObjectSomeValuesFrom(ai:hasPart ai:AnnotationPipeline))
-      SubClassOf(ai:Benchmarks
-        ObjectSomeValuesFrom(ai:hasPart ai:ScoringProtocol))
-      SubClassOf(ai:Benchmarks
-        ObjectSomeValuesFrom(ai:hasPart ai:TaskFormulation))
+### Semantic Classification
 
-  ## Dependency Relationships
-      SubClassOf(ai:Benchmarks
-        ObjectSomeValuesFrom(ai:requires ai:DataCuration))
-      SubClassOf(ai:Benchmarks
-        ObjectSomeValuesFrom(ai:requires ai:AnnotationPipelines))
-      SubClassOf(ai:Benchmarks
-        ObjectSomeValuesFrom(ai:requires ai:StatisticalTesting))
-      SubClassOf(ai:Benchmarks
-        ObjectSomeValuesFrom(ai:dependsOn ai:HeldOutTestSets))
-      SubClassOf(ai:Benchmarks
-        ObjectSomeValuesFrom(ai:dependsOn ai:EvaluationProtocol))
-      SubClassOf(ai:Benchmarks
-        ObjectSomeValuesFrom(ai:uses ai:EvaluationMetric))
-      SubClassOf(ai:Benchmarks
-        ObjectSomeValuesFrom(ai:uses ai:Datasets))
+### Content
 
-  ## Capability Relationships
-      SubClassOf(ai:Benchmarks
-        ObjectSomeValuesFrom(ai:enables ai:ModelEvaluationResults))
-      SubClassOf(ai:Benchmarks
-        ObjectSomeValuesFrom(ai:enables ai:Reproducibility))
-      SubClassOf(ai:Benchmarks
-        ObjectSomeValuesFrom(ai:enables ai:ModelSelection))
-      SubClassOf(ai:Benchmarks
-        ObjectSomeValuesFrom(ai:enables ai:ModelComparison))
-      SubClassOf(ai:Benchmarks
-        ObjectSomeValuesFrom(ai:supports ai:AIGovernance))
-      SubClassOf(ai:Benchmarks
-        ObjectSomeValuesFrom(ai:supports ai:MLOps))
-      SubClassOf(ai:Benchmarks
-        ObjectSomeValuesFrom(ai:supports ai:AISafety))
+## Compositional Relationships (Components)
+    SubClassOf(ai:Benchmarks
+      ObjectSomeValuesFrom(ai:hasPart ai:EvaluationMetric))
+    SubClassOf(ai:Benchmarks
+      ObjectSomeValuesFrom(ai:hasPart ai:GroundTruthLabels))
+    SubClassOf(ai:Benchmarks
+      ObjectSomeValuesFrom(ai:hasPart ai:HeldOutTestSet))
+    SubClassOf(ai:Benchmarks
+      ObjectSomeValuesFrom(ai:hasPart ai:Leaderboard))
+    SubClassOf(ai:Benchmarks
+      ObjectSomeValuesFrom(ai:hasPart ai:AnnotationPipeline))
+    SubClassOf(ai:Benchmarks
+      ObjectSomeValuesFrom(ai:hasPart ai:ScoringProtocol))
+    SubClassOf(ai:Benchmarks
+      ObjectSomeValuesFrom(ai:hasPart ai:TaskFormulation))
 
-  ## Implementation Relationships
-      SubClassOf(ai:Benchmarks
-        ObjectSomeValuesFrom(ai:implements ai:EvaluationProtocol))
-      SubClassOf(ai:Benchmarks
-        ObjectSomeValuesFrom(ai:implements ai:ScoringFunction))
-      SubClassOf(ai:Benchmarks
-        ObjectSomeValuesFrom(ai:bridges ai:RegulatoryCompliance))
-      SubClassOf(ai:Benchmarks
-        ObjectSomeValuesFrom(ai:standardizedBy ai:MLCommons))
+## Dependency Relationships
+    SubClassOf(ai:Benchmarks
+      ObjectSomeValuesFrom(ai:requires ai:DataCuration))
+    SubClassOf(ai:Benchmarks
+      ObjectSomeValuesFrom(ai:requires ai:AnnotationPipelines))
+    SubClassOf(ai:Benchmarks
+      ObjectSomeValuesFrom(ai:requires ai:StatisticalTesting))
+    SubClassOf(ai:Benchmarks
+      ObjectSomeValuesFrom(ai:dependsOn ai:HeldOutTestSets))
+    SubClassOf(ai:Benchmarks
+      ObjectSomeValuesFrom(ai:dependsOn ai:EvaluationProtocol))
+    SubClassOf(ai:Benchmarks
+      ObjectSomeValuesFrom(ai:uses ai:EvaluationMetric))
+    SubClassOf(ai:Benchmarks
+      ObjectSomeValuesFrom(ai:uses ai:Datasets))
 
-  ## Reduction Relationships
-      SubClassOf(ai:Benchmarks
-        ObjectSomeValuesFrom(ai:reducesTo ai:PerformanceScore))
-      SubClassOf(ai:Benchmarks
-        ObjectSomeValuesFrom(ai:reducesTo ai:EvaluationMetric))
-      SubClassOf(ai:Benchmarks
-        ObjectSomeValuesFrom(ai:reducesTo ai:CapabilityRanking))
-      SubClassOf(ai:Benchmarks
-        ObjectSomeValuesFrom(ai:reducesTo ai:LeaderboardScore))
-      SubClassOf(ai:Benchmarks
-        ObjectSomeValuesFrom(ai:reducesTo ai:AccuracyScore))
-      SubClassOf(ai:Benchmarks
-        ObjectSomeValuesFrom(ai:contrastsWith ai:HumanEvaluation))
-      SubClassOf(ai:Benchmarks
-        ObjectSomeValuesFrom(ai:relatedTo ai:BenignOverfitting))
-      SubClassOf(ai:Benchmarks
-        ObjectSomeValuesFrom(ai:relatedTo ai:GoodhartLaw))
-      SubClassOf(ai:Benchmarks
-        ObjectSomeValuesFrom(ai:supports ai:ResponsibleAI))
-      SubClassOf(ai:Benchmarks
-        ObjectSomeValuesFrom(ai:bridges ai:AIRegulation))
+## Capability Relationships
+    SubClassOf(ai:Benchmarks
+      ObjectSomeValuesFrom(ai:enables ai:ModelEvaluationResults))
+    SubClassOf(ai:Benchmarks
+      ObjectSomeValuesFrom(ai:enables ai:Reproducibility))
+    SubClassOf(ai:Benchmarks
+      ObjectSomeValuesFrom(ai:enables ai:ModelSelection))
+    SubClassOf(ai:Benchmarks
+      ObjectSomeValuesFrom(ai:enables ai:ModelComparison))
+    SubClassOf(ai:Benchmarks
+      ObjectSomeValuesFrom(ai:supports ai:AIGovernance))
+    SubClassOf(ai:Benchmarks
+      ObjectSomeValuesFrom(ai:supports ai:MLOps))
+    SubClassOf(ai:Benchmarks
+      ObjectSomeValuesFrom(ai:supports ai:AISafety))
 
-  ## About
-  Benchmarks are the empirical foundation on which the scientific credibility of [[Machine Learning]] and [[Artificial Intelligence]] research rests. Without standardised evaluation protocols, claims of model improvement are unfalsifiable: two research groups using different datasets, metrics, or experimental conditions cannot compare their results in any meaningful way. The benchmark disciplines this chaos by fixing the task formulation, the test split, the scoring function, and the inference protocol, transforming subjective claims of superiority into reproducible, comparable measurements.
+## Implementation Relationships
+    SubClassOf(ai:Benchmarks
+      ObjectSomeValuesFrom(ai:implements ai:EvaluationProtocol))
+    SubClassOf(ai:Benchmarks
+      ObjectSomeValuesFrom(ai:implements ai:ScoringFunction))
+    SubClassOf(ai:Benchmarks
+      ObjectSomeValuesFrom(ai:bridges ai:RegulatoryCompliance))
+    SubClassOf(ai:Benchmarks
+      ObjectSomeValuesFrom(ai:standardizedBy ai:MLCommons))
 
-  The history of benchmarks in computing predates machine learning. The Standard Performance Evaluation Corporation (SPEC) introduced CPU benchmark suites in 1988 to provide hardware vendors and buyers with comparable performance data. The Transaction Processing Performance Council (TPC) standardised database workloads in the same era. This tradition migrated into AI via pattern recognition competitions — the pioneering MNIST digit classification benchmark (1998) and the Pascal VOC challenge (2005) — before achieving landmark status with ImageNet (Deng et al., 2009; Russakovsky et al., 2015), whose annual Large Scale Visual Recognition Challenge (ILSVRC) drove convolutional neural network development from 2010 through to 2017. The NLP community developed analogous shared tasks through SemEval, CoNLL shared tasks, and GLUE (Wang et al., 2018), creating comparable evaluation conditions across machine translation, named-entity recognition, and reading comprehension.
+## Reduction Relationships
+    SubClassOf(ai:Benchmarks
+      ObjectSomeValuesFrom(ai:reducesTo ai:PerformanceScore))
+    SubClassOf(ai:Benchmarks
+      ObjectSomeValuesFrom(ai:reducesTo ai:EvaluationMetric))
+    SubClassOf(ai:Benchmarks
+      ObjectSomeValuesFrom(ai:reducesTo ai:CapabilityRanking))
+    SubClassOf(ai:Benchmarks
+      ObjectSomeValuesFrom(ai:reducesTo ai:LeaderboardScore))
+    SubClassOf(ai:Benchmarks
+      ObjectSomeValuesFrom(ai:reducesTo ai:AccuracyScore))
+    SubClassOf(ai:Benchmarks
+      ObjectSomeValuesFrom(ai:contrastsWith ai:HumanEvaluation))
+    SubClassOf(ai:Benchmarks
+      ObjectSomeValuesFrom(ai:relatedTo ai:BenignOverfitting))
+    SubClassOf(ai:Benchmarks
+      ObjectSomeValuesFrom(ai:relatedTo ai:GoodhartLaw))
+    SubClassOf(ai:Benchmarks
+      ObjectSomeValuesFrom(ai:supports ai:ResponsibleAI))
+    SubClassOf(ai:Benchmarks
+      ObjectSomeValuesFrom(ai:bridges ai:AIRegulation))
 
-  The [[Large Language Models]] era, inaugurated by GPT-3 (Brown et al., 2020) and BERT (Devlin et al., 2019), produced a proliferation of capability benchmarks probing emergent properties of scale. MMLU (Hendrycks et al., 2020) covered 57 academic subjects; BIG-Bench (Srivastava et al., 2022) enumerated 204 tasks beyond few-shot prompting; HELM (Liang et al., 2022) provided holistic multi-metric evaluation across 42 scenarios. The speed of model capability growth repeatedly saturated these suites within 12-18 months, producing the cycle of benchmark saturation that now characterises the field. By 2026, MMLU, GSM8K, HumanEval, and HellaSwag are effectively saturated — frontier models cluster above 90% on all of them — driving adoption of harder replacements: MMLU-Pro, GPQA Diamond (graduate-level science reasoning), HLE (Humanity's Last Exam), FrontierMath, ARC-AGI-2, and LiveCodeBench.
+## About
+Benchmarks are the empirical foundation on which the scientific credibility of [[Machine Learning]] and [[Artificial Intelligence]] research rests. Without standardised evaluation protocols, claims of model improvement are unfalsifiable: two research groups using different datasets, metrics, or experimental conditions cannot compare their results in any meaningful way. The benchmark disciplines this chaos by fixing the task formulation, the test split, the scoring function, and the inference protocol, transforming subjective claims of superiority into reproducible, comparable measurements.
 
-  ## Components / Architecture
-  A fully specified benchmark comprises seven interacting components:
+The history of benchmarks in computing predates machine learning. The Standard Performance Evaluation Corporation (SPEC) introduced CPU benchmark suites in 1988 to provide hardware vendors and buyers with comparable performance data. The Transaction Processing Performance Council (TPC) standardised database workloads in the same era. This tradition migrated into AI via pattern recognition competitions — the pioneering MNIST digit classification benchmark (1998) and the Pascal VOC challenge (2005) — before achieving landmark status with ImageNet (Deng et al., 2009; Russakovsky et al., 2015), whose annual Large Scale Visual Recognition Challenge (ILSVRC) drove convolutional neural network development from 2010 through to 2017. The NLP community developed analogous shared tasks through SemEval, CoNLL shared tasks, and GLUE (Wang et al., 2018), creating comparable evaluation conditions across machine translation, named-entity recognition, and reading comprehension.
 
-  - **Task Formulation**: the input-output mapping defining what a system must do — multiple-choice answers, code generation, span extraction, sequence-to-sequence generation, or structured prediction. Task formulation determines what capability is being measured and must be precise enough to remove ambiguity without constraining the solution space unnecessarily.
-  - **Evaluation Split**: train / validation / test partitions with the test set held out from all model development. Leakage between splits — through data contamination or prompt engineering using leaked test items — invalidates score comparability. The integrity of the split is the most critical safeguard against inflated results.
-  - **[[Evaluation Metric]]**: the scoring function that reduces model outputs to a comparable number — accuracy, BLEU/ROUGE for generation, pass@k for code, F1, Exact Match, or specialised metrics such as BERTScore and FID for multimodal tasks. The metric encodes what "good" means; metric choice has first-order consequences for what behaviours models are rewarded for optimising.
-  - **[[Ground Truth Labels]]**: human-annotated or programmatically generated reference outputs. Annotation quality is a direct function of [[Annotation Pipelines]] — inter-annotator agreement, quality control, expertise of annotators, and cultural representativeness of the labelling workforce.
-  - **Scoring Protocol**: deterministic inference settings — temperature, prompt templates, number of samples, context window size, and token budget — that must be fixed to prevent variance in experimental conditions from inflating or deflating scores.
-  - **[[Leaderboards]]**: public ranking tables that aggregate and display scores across systems. Leaderboards incentivise progress but also concentrate optimisation pressure on narrow benchmark slices, producing Goodhart's Law dynamics where the benchmark ceases to measure the underlying capability it was designed to probe.
-  - **[[Model Cards]]**: structured documentation that contextualises benchmark scores alongside training details, intended use, known limitations, and disaggregated evaluation results — a practice institutionalised by Mitchell et al. (2019).
+The [[Large Language Models]] era, inaugurated by GPT-3 (Brown et al., 2020) and BERT (Devlin et al., 2019), produced a proliferation of capability benchmarks probing emergent properties of scale. MMLU (Hendrycks et al., 2020) covered 57 academic subjects; BIG-Bench (Srivastava et al., 2022) enumerated 204 tasks beyond few-shot prompting; HELM (Liang et al., 2022) provided holistic multi-metric evaluation across 42 scenarios. The speed of model capability growth repeatedly saturated these suites within 12-18 months, producing the cycle of benchmark saturation that now characterises the field. By 2026, MMLU, GSM8K, HumanEval, and HellaSwag are effectively saturated — frontier models cluster above 90% on all of them — driving adoption of harder replacements: MMLU-Pro, GPQA Diamond (graduate-level science reasoning), HLE (Humanity's Last Exam), FrontierMath, ARC-AGI-2, and LiveCodeBench.
+
+## Components / Architecture
+A fully specified benchmark comprises seven interacting components:
+
+- **Task Formulation**: the input-output mapping defining what a system must do — multiple-choice answers, code generation, span extraction, sequence-to-sequence generation, or structured prediction. Task formulation determines what capability is being measured and must be precise enough to remove ambiguity without constraining the solution space unnecessarily.
+- **Evaluation Split**: train / validation / test partitions with the test set held out from all model development. Leakage between splits — through data contamination or prompt engineering using leaked test items — invalidates score comparability. The integrity of the split is the most critical safeguard against inflated results.
+- **[[Evaluation Metric]]**: the scoring function that reduces model outputs to a comparable number — accuracy, BLEU/ROUGE for generation, pass@k for code, F1, Exact Match, or specialised metrics such as BERTScore and FID for multimodal tasks. The metric encodes what "good" means; metric choice has first-order consequences for what behaviours models are rewarded for optimising.
+- **[[Ground Truth Labels]]**: human-annotated or programmatically generated reference outputs. Annotation quality is a direct function of [[Annotation Pipelines]] — inter-annotator agreement, quality control, expertise of annotators, and cultural representativeness of the labelling workforce.
+- **Scoring Protocol**: deterministic inference settings — temperature, prompt templates, number of samples, context window size, and token budget — that must be fixed to prevent variance in experimental conditions from inflating or deflating scores.
+- **[[Leaderboards]]**: public ranking tables that aggregate and display scores across systems. Leaderboards incentivise progress but also concentrate optimisation pressure on narrow benchmark slices, producing Goodhart's Law dynamics where the benchmark ceases to measure the underlying capability it was designed to probe.
+- **[[Model Cards]]**: structured documentation that contextualises benchmark scores alongside training details, intended use, known limitations, and disaggregated evaluation results — a practice institutionalised by Mitchell et al. (2019).
 
   ## Taxonomy of Benchmark Types
-  - **Capability benchmarks**: probe specific cognitive or task skills. Reasoning: GSM8K (mathematical word problems), MATH (competition mathematics), AIME 2025 (olympiad problems). Coding: HumanEval, SWE-bench Verified, LiveCodeBench (contamination-resistant programming). Knowledge: MMLU, MMLU-Pro, GPQA Diamond (graduate expert reasoning). Multilingual: FLORES-200, M-MMLU.
-  - **Safety and alignment benchmarks**: evaluate refusal behaviour, bias, toxicity, and instruction-following fidelity — TruthfulQA (Truthfulness), HellaSwag (commonsense reasoning), BBQ (bias), WMDP (hazardous knowledge). AISI (UK AI Security Institute) published AgentHarm (ICLR 2025), a benchmark for LLM agent misuse.
-  - **Robustness benchmarks**: test generalisation under distribution shift, adversarial inputs, and paraphrase variation — AdvGLUE, CheckList, ANLI, related to [[Adversarial Testing]].
-  - **Hardware benchmarks**: MLPerf Training v6.0 and Inference v6.0 (2026) measure tokens-per-second, time-to-train, and energy-per-inference across GPU, TPU, and specialised accelerator platforms for 24 participating organisations including AMD, Google, Intel, and NVIDIA.
-  - **Agentic and long-context benchmarks**: GAIA, AgentBench, HELMET, RULER, τ-bench, and BFCL evaluate multi-step [[AI Agents]] on tool use, web navigation, long-document synthesis, and function-calling.
-  - **Multimodal benchmarks**: MMBench, MMMU, MMMU-Pro, SeedBench, VideoMME combine vision and language for [[Multimodal AI]] evaluation.
-  - **Domain-specific benchmarks**: MedQA (clinical medicine), MedMCQA (Indian medical licensing), LegalBench (legal reasoning), FinanceBench (financial QA), CODEMEDICAL (medical coding).
-  - **Dynamic benchmarks**: LiveCodeBench (continuously refreshes programming problems from Leetcode, AtCoder, Codeforces), LiveBench, and HELM-Lite use time-segmented or programmatically regenerated test cases to defeat training contamination.
+
+- **Capability benchmarks**: probe specific cognitive or task skills. Reasoning: GSM8K (mathematical word problems), MATH (competition mathematics), AIME 2025 (olympiad problems). Coding: HumanEval, SWE-bench Verified, LiveCodeBench (contamination-resistant programming). Knowledge: MMLU, MMLU-Pro, GPQA Diamond (graduate expert reasoning). Multilingual: FLORES-200, M-MMLU.
+- **Safety and alignment benchmarks**: evaluate refusal behaviour, bias, toxicity, and instruction-following fidelity — TruthfulQA (Truthfulness), HellaSwag (commonsense reasoning), BBQ (bias), WMDP (hazardous knowledge). AISI (UK AI Security Institute) published AgentHarm (ICLR 2025), a benchmark for LLM agent misuse.
+- **Robustness benchmarks**: test generalisation under distribution shift, adversarial inputs, and paraphrase variation — AdvGLUE, CheckList, ANLI, related to [[Adversarial Testing]].
+- **Hardware benchmarks**: MLPerf Training v6.0 and Inference v6.0 (2026) measure tokens-per-second, time-to-train, and energy-per-inference across GPU, TPU, and specialised accelerator platforms for 24 participating organisations including AMD, Google, Intel, and NVIDIA.
+- **Agentic and long-context benchmarks**: GAIA, AgentBench, HELMET, RULER, τ-bench, and BFCL evaluate multi-step [[AI Agents]] on tool use, web navigation, long-document synthesis, and function-calling.
+- **Multimodal benchmarks**: MMBench, MMMU, MMMU-Pro, SeedBench, VideoMME combine vision and language for [[Multimodal AI]] evaluation.
+- **Domain-specific benchmarks**: MedQA (clinical medicine), MedMCQA (Indian medical licensing), LegalBench (legal reasoning), FinanceBench (financial QA), CODEMEDICAL (medical coding).
+- **Dynamic benchmarks**: LiveCodeBench (continuously refreshes programming problems from Leetcode, AtCoder, Codeforces), LiveBench, and HELM-Lite use time-segmented or programmatically regenerated test cases to defeat training contamination.
 
   ## Benchmark Contamination
   Training corpora drawn from the open web may include benchmark test sets verbatim or in paraphrase, inflating apparent performance without genuine capability gain. This is the central measurement integrity challenge of the LLM era. Methodological responses include:
-  - Held-out evaluation sets with pre-publication embargo and cryptographic watermarking.
-  - Dynamic benchmarks that regenerate problems programmatically (LiveCodeBench, HELM-Lite, ARC-AGI-2 private eval set).
-  - Third-party blind evaluation services and closed test sets inaccessible to model developers.
-  - Time-segmented evaluations: problems whose publication dates postdate the model's training data cutoff.
-  - Data deduplication pipelines that flag benchmark membership in training corpora.
+
+- Held-out evaluation sets with pre-publication embargo and cryptographic watermarking.
+- Dynamic benchmarks that regenerate problems programmatically (LiveCodeBench, HELM-Lite, ARC-AGI-2 private eval set).
+- Third-party blind evaluation services and closed test sets inaccessible to model developers.
+- Time-segmented evaluations: problems whose publication dates postdate the model's training data cutoff.
+- Data deduplication pipelines that flag benchmark membership in training corpora.
   Contamination detection is a growing research area (Golchin and Surdeanu, 2023; Dong et al., 2024) and a central concern of [[AI Governance]] frameworks.
 
   ## Use Cases
-  - **Model selection and procurement**: practitioners use benchmark scores to choose between models for deployment, particularly where compute constraints, latency requirements, or domain specificity are paramount — supports [[Model Selection]] workflows in [[MLOps]].
-  - **Research progress tracking**: the ML community tracks annual progress on canonical benchmarks to identify capability jumps and emergent behaviours in [[Large Language Models]]. Stanford HAI's AI Index 2025 documents SWE-bench performance rising from 4.4% (2023) to 71.7% (2024) as a landmark capability progression.
-  - **Regulatory compliance evidence**: the EU AI Act (2024) and NIST AI Risk Management Framework increasingly reference benchmark performance as evidence for conformity assessments — bridging into [[Regulatory Compliance]]. The COMPL-AI framework maps benchmark coverage to EU AI Act requirements; Bench-2-CoP uses LLM-as-judge analysis to validate coverage against regulatory taxonomies.
-  - **Hardware procurement**: data-centre operators use MLPerf scores to compare accelerators; cloud providers publish inference throughput benchmarks as part of SLA documentation.
-  - **MLOps regression testing**: CI/CD pipelines run lightweight benchmark slices after each model update to detect capability regressions — extends [[Software Testing]] into ML workflows.
-  - **Red-teaming and safety evaluation**: safety teams use curated adversarial benchmark suites to probe for harmful outputs before public release, feeding into [[AI Governance]] processes. The UK AISI uses evaluation suites across cybersecurity, chemistry, biology assistance, and autonomous task-completion in its frontier model evaluations.
-  - **Competition and reproducibility**: benchmark-centric competitions (BIG-bench Collaboration, HELM, LMSYS Chatbot Arena / LMArena) accelerate community participation and [[Reproducibility]] of results.
+
+- **Model selection and procurement**: practitioners use benchmark scores to choose between models for deployment, particularly where compute constraints, latency requirements, or domain specificity are paramount — supports [[Model Selection]] workflows in [[MLOps]].
+- **Research progress tracking**: the ML community tracks annual progress on canonical benchmarks to identify capability jumps and emergent behaviours in [[Large Language Models]]. Stanford HAI's AI Index 2025 documents SWE-bench performance rising from 4.4% (2023) to 71.7% (2024) as a landmark capability progression.
+- **Regulatory compliance evidence**: the EU AI Act (2024) and NIST AI Risk Management Framework increasingly reference benchmark performance as evidence for conformity assessments — bridging into [[Regulatory Compliance]]. The COMPL-AI framework maps benchmark coverage to EU AI Act requirements; Bench-2-CoP uses LLM-as-judge analysis to validate coverage against regulatory taxonomies.
+- **Hardware procurement**: data-centre operators use MLPerf scores to compare accelerators; cloud providers publish inference throughput benchmarks as part of SLA documentation.
+- **MLOps regression testing**: CI/CD pipelines run lightweight benchmark slices after each model update to detect capability regressions — extends [[Software Testing]] into ML workflows.
+- **Red-teaming and safety evaluation**: safety teams use curated adversarial benchmark suites to probe for harmful outputs before public release, feeding into [[AI Governance]] processes. The UK AISI uses evaluation suites across cybersecurity, chemistry, biology assistance, and autonomous task-completion in its frontier model evaluations.
+- **Competition and reproducibility**: benchmark-centric competitions (BIG-bench Collaboration, HELM, LMSYS Chatbot Arena / LMArena) accelerate community participation and [[Reproducibility]] of results.
 
   ## Goodhart's Law and Benchmark Saturation
   Goodhart's Law — "when a measure becomes a target, it ceases to be a good measure" — is the epistemological nemesis of benchmark-based evaluation. The history of AI benchmarks is a history of this dynamic playing out: models trained to maximise MMLU scores do not necessarily exhibit the general knowledge the benchmark was intended to measure; models that pass HumanEval's 164 programming problems do not necessarily generalise to real-world software engineering tasks. The 2025 "Leaderboard Illusion" paper documented systematic divergence between leaderboard rankings and head-to-head deployment performance, underscoring the danger of treating benchmark scores as proxies for real-world capability. Defences include: multi-metric evaluation suites (HELM); adversarial and dynamic benchmarks that resist optimisation; disaggregated reporting that surfaces performance variation across subpopulations; and complementary [[Human Evaluation]] to validate automated metric choices.
@@ -152,12 +156,13 @@ Benchmarks are standardised tasks, datasets, or workloads used to measure and co
   **Era 6: Dynamic, preference-based, and regulatory benchmarks (2024-2026)**. The convergence of three pressures — contamination of static datasets, saturation of capability benchmarks, and regulatory demand for evaluation evidence — produced a shift toward dynamic, preference-based, and compliance-oriented evaluation frameworks. LiveCodeBench (Jain et al., 2024) demonstrated that continuous harvesting of fresh competitive programming problems from Leetcode, AtCoder, and Codeforces can maintain contamination resistance indefinitely. Chatbot Arena / LMArena operationalised large-scale human preference evaluation, accumulating millions of pairwise preference votes to produce Elo rankings that correlate well with deployment quality. The UK AISI's frontier model evaluation programme introduced bespoke safety evaluation suites covering cybersecurity, chemistry/biology assistance, and autonomous task-completion — the first government-mandated benchmark regime for frontier AI. The EU AI Act's conformity assessment requirements created demand for benchmark-based compliance evidence, driving development of regulatory benchmark frameworks including COMPL-AI (2024) and Bench-2-CoP (2025).
 
   ## Academic Context
-  - **Foundational benchmarks**: MNIST (LeCun et al., 1998), Pascal VOC (Everingham et al., 2010), ImageNet (Deng et al., 2009; Russakovsky et al., 2015), CIFAR-10/100 (Krizhevsky, 2009) established the pattern of shared visual recognition challenges.
-  - **NLP era**: GLUE (Wang et al., 2018) and SuperGLUE (Wang et al., 2019) standardised multi-task NLP evaluation; SQuAD (Rajpurkar et al., 2016) established machine reading comprehension; CoNLL shared tasks (Tjong Kim Sang, 2003) defined sequence labelling.
-  - **LLM era**: MMLU (Hendrycks et al., 2020) probed multidisciplinary knowledge; GSM8K (Cobbe et al., 2021) tested mathematical reasoning; HumanEval (Chen et al., 2021) evaluated code generation; BIG-Bench (Srivastava et al., 2022) compiled 204 diverse tasks; HELM (Liang et al., 2022) introduced holistic multi-scenario evaluation; TruthfulQA (Lin et al., 2022) tested factual accuracy.
-  - **Agentic era**: GAIA (Mialon et al., 2023), SWE-bench (Jimenez et al., 2023), AgentBench (Liu et al., 2023), GPQA (Rein et al., 2023), HLE (Collins et al., 2025), ARC-AGI-2 (Chollet, 2024) push evaluation toward harder, more realistic, and more agentic challenges.
-  - **Dynamic evaluation**: LiveCodeBench (Jain et al., 2024) demonstrated contamination-resistant evaluation through continuous problem harvesting; HEIM and VideoMME pushed multimodal evaluation frontiers.
-  - **Meta-evaluation**: The Leaderboard Illusion (2025), Bench-2-CoP (2025), and the AIReg-Bench regulatory compliance benchmark (2025) study benchmark validity at a meta level.
+
+- **Foundational benchmarks**: MNIST (LeCun et al., 1998), Pascal VOC (Everingham et al., 2010), ImageNet (Deng et al., 2009; Russakovsky et al., 2015), CIFAR-10/100 (Krizhevsky, 2009) established the pattern of shared visual recognition challenges.
+- **NLP era**: GLUE (Wang et al., 2018) and SuperGLUE (Wang et al., 2019) standardised multi-task NLP evaluation; SQuAD (Rajpurkar et al., 2016) established machine reading comprehension; CoNLL shared tasks (Tjong Kim Sang, 2003) defined sequence labelling.
+- **LLM era**: MMLU (Hendrycks et al., 2020) probed multidisciplinary knowledge; GSM8K (Cobbe et al., 2021) tested mathematical reasoning; HumanEval (Chen et al., 2021) evaluated code generation; BIG-Bench (Srivastava et al., 2022) compiled 204 diverse tasks; HELM (Liang et al., 2022) introduced holistic multi-scenario evaluation; TruthfulQA (Lin et al., 2022) tested factual accuracy.
+- **Agentic era**: GAIA (Mialon et al., 2023), SWE-bench (Jimenez et al., 2023), AgentBench (Liu et al., 2023), GPQA (Rein et al., 2023), HLE (Collins et al., 2025), ARC-AGI-2 (Chollet, 2024) push evaluation toward harder, more realistic, and more agentic challenges.
+- **Dynamic evaluation**: LiveCodeBench (Jain et al., 2024) demonstrated contamination-resistant evaluation through continuous problem harvesting; HEIM and VideoMME pushed multimodal evaluation frontiers.
+- **Meta-evaluation**: The Leaderboard Illusion (2025), Bench-2-CoP (2025), and the AIReg-Bench regulatory compliance benchmark (2025) study benchmark validity at a meta level.
 
   ## Current Landscape (2026)
   By June 2026, the benchmark landscape is characterised by saturation of 2022-2023 canonical suites and rapid adoption of harder replacements. MMLU, GSM8K, HumanEval, and HellaSwag are saturated, with GPT-5.x, Claude Opus 4.6, Gemini 3.x, and Llama 4 family models clustered above 90% on all of them. GPQA Diamond remains partially discriminative with Gemini 3.1 Pro at 94.3%, Claude Opus 4.6 at 91.3%, and GPT-5.3 Codex at 81%. The frontier lab model cards in 2026 report primarily on HLE, FrontierMath, ARC-AGI-2, GPQA Diamond, SWE-bench Verified, Aider Polyglot, AIME 2025, τ-bench, BFCL, MMMU-Pro, RULER, and LiveBench.
@@ -170,12 +175,13 @@ Benchmarks are standardised tasks, datasets, or workloads used to measure and co
 
   ## UK Context
   The United Kingdom has distinctive benchmark infrastructure and governance engagement:
-  - **AISI (AI Security Institute)**: the DSIT-funded AISI conducts mandatory evaluations of frontier AI systems ahead of deployment, using bespoke benchmark suites across cybersecurity, chemistry/biology assistance, and autonomous task-completion. AISI published AgentHarm at ICLR 2025 — a benchmark for LLM agent misuse that has been cited by OpenAI and Anthropic and downloaded thousands of times. The inaugural Frontier AI Trends Report (December 2025) documented capability trajectories across 30+ frontier models evaluated since November 2023.
-  - **Imperial College London**: ranked second globally in QS 2025, houses the UK's largest concentration of computing and AI researchers; contributes to benchmark methodology research across NLP and multimodal AI.
-  - **University of Edinburgh (EPCC)**: the Spending Review committed up to £750 million to a national supercomputer at Edinburgh Parallel Computing Centre, planned for 2027 — infrastructure that will support large-scale benchmark evaluation for UK researchers.
-  - **Alan Turing Institute**: hosts the AI for Science programme and contributes evaluation methodology research supporting [[Reproducibility]] in ML research across UK universities.
-  - **Northern England**: Manchester (National AI Research Institute Turing-Manchester node), Leeds (LIDA data innovation centre), Sheffield (NLP research groups), and Newcastle (digital health AI) all conduct domain-specific benchmark development and evaluation for healthcare, manufacturing, and transport applications.
-  - **EU AI Act engagement**: UK-based AI firms operating in the EU market must comply with conformity assessment requirements under the Act, driving UK adoption of benchmark-based compliance evaluation workflows.
+
+- **AISI (AI Security Institute)**: the DSIT-funded AISI conducts mandatory evaluations of frontier AI systems ahead of deployment, using bespoke benchmark suites across cybersecurity, chemistry/biology assistance, and autonomous task-completion. AISI published AgentHarm at ICLR 2025 — a benchmark for LLM agent misuse that has been cited by OpenAI and Anthropic and downloaded thousands of times. The inaugural Frontier AI Trends Report (December 2025) documented capability trajectories across 30+ frontier models evaluated since November 2023.
+- **Imperial College London**: ranked second globally in QS 2025, houses the UK's largest concentration of computing and AI researchers; contributes to benchmark methodology research across NLP and multimodal AI.
+- **University of Edinburgh (EPCC)**: the Spending Review committed up to £750 million to a national supercomputer at Edinburgh Parallel Computing Centre, planned for 2027 — infrastructure that will support large-scale benchmark evaluation for UK researchers.
+- **Alan Turing Institute**: hosts the AI for Science programme and contributes evaluation methodology research supporting [[Reproducibility]] in ML research across UK universities.
+- **Northern England**: Manchester (National AI Research Institute Turing-Manchester node), Leeds (LIDA data innovation centre), Sheffield (NLP research groups), and Newcastle (digital health AI) all conduct domain-specific benchmark development and evaluation for healthcare, manufacturing, and transport applications.
+- **EU AI Act engagement**: UK-based AI firms operating in the EU market must comply with conformity assessment requirements under the Act, driving UK adoption of benchmark-based compliance evaluation workflows.
 
   ## Standards and Governance Context
   The benchmark ecosystem intersects with a growing set of international standards and regulatory frameworks that are reshaping how evaluation evidence must be documented and used:
@@ -240,14 +246,15 @@ Benchmarks are standardised tasks, datasets, or workloads used to measure and co
   **Benchmark proliferation**: the rate at which new benchmarks are introduced — hundreds per year in the LLM era — creates a curation and meta-evaluation challenge. Researchers face difficulty identifying which benchmarks are most predictive of real-world capability, most resistant to contamination, and most relevant for their specific use case. Benchmark meta-evaluation frameworks (HELM's benchmark-of-benchmarks analysis; Papers With Code leaderboard aggregation) are emerging tools but are still immature.
 
   ## Future Directions (2026-2030)
-  - **Adaptive and adversarial benchmarks**: automated red-teaming that continuously generates novel evaluation instances the model has not been exposed to, maintaining discriminative power indefinitely. Techniques from adversarial machine learning — worst-case input generation, distribution shift simulation, and compositional generalisation tests — are being incorporated into evaluation pipelines.
-  - **Agent and long-horizon evaluation**: as AI systems operate autonomously across longer horizons and multi-step tasks, benchmark design must capture not just accuracy but reliability, safety, and alignment across extended trajectories. τ-bench, OSWorld, WebArena, and GAIA point in this direction, requiring multi-turn interaction logs, tool-use traces, and success-rate-at-completion rather than single-turn accuracy.
-  - **Regulatory benchmark suites**: convergence between benchmark methodology and regulatory conformity assessment is expected, with EU and UK regulatory bodies developing official benchmark suites analogous to NIST cybersecurity frameworks. The COMPL-AI mapping and Bench-2-CoP analysis represent first steps; full regulatory benchmark suites with legal standing are anticipated by 2028.
-  - **Efficiency-aware benchmarks**: as sustainability and compute efficiency become regulatory priorities, benchmarks that report performance-per-watt and performance-per-dollar alongside raw capability scores (extending MLPerf's approach) are expected to become standard. The EU AI Act's energy consumption reporting requirements for GPAI models will drive adoption.
-  - **Multimodal and embodied evaluation**: benchmarks for video, audio, sensor fusion, and robotics perception (building on VideoMME, EmbodiedBench, and robotics manipulation suites) will grow in importance as [[Multimodal AI]] systems proliferate in physical deployment contexts.
-  - **Living benchmarks with versioning**: the community is moving toward benchmark suites with explicit versioning, provenance tracking, and community governance — analogous to software dependency management — to ensure longevity and cross-version comparability. Papers With Code's benchmark versioning infrastructure and Hugging Face datasets versioning are early implementations.
-  - **AI-generated benchmark instances**: LLM-assisted benchmark creation is accelerating (BenchBuilder, task-synthesis pipelines), enabling rapid development of domain-specific suites while raising new validity questions about AI-generated ground truth. The quality, diversity, and difficulty calibration of AI-generated items require human expert validation that may constrain scale.
-  - **Sociotechnical evaluation**: as AI systems deploy at societal scale, benchmarks measuring individual model capability are insufficient. Evaluation frameworks that assess systemic effects — market concentration, labour displacement, environmental footprint, and epistemic homogenisation — are nascent but will become more prominent in regulatory and governance contexts.
+
+- **Adaptive and adversarial benchmarks**: automated red-teaming that continuously generates novel evaluation instances the model has not been exposed to, maintaining discriminative power indefinitely. Techniques from adversarial machine learning — worst-case input generation, distribution shift simulation, and compositional generalisation tests — are being incorporated into evaluation pipelines.
+- **Agent and long-horizon evaluation**: as AI systems operate autonomously across longer horizons and multi-step tasks, benchmark design must capture not just accuracy but reliability, safety, and alignment across extended trajectories. τ-bench, OSWorld, WebArena, and GAIA point in this direction, requiring multi-turn interaction logs, tool-use traces, and success-rate-at-completion rather than single-turn accuracy.
+- **Regulatory benchmark suites**: convergence between benchmark methodology and regulatory conformity assessment is expected, with EU and UK regulatory bodies developing official benchmark suites analogous to NIST cybersecurity frameworks. The COMPL-AI mapping and Bench-2-CoP analysis represent first steps; full regulatory benchmark suites with legal standing are anticipated by 2028.
+- **Efficiency-aware benchmarks**: as sustainability and compute efficiency become regulatory priorities, benchmarks that report performance-per-watt and performance-per-dollar alongside raw capability scores (extending MLPerf's approach) are expected to become standard. The EU AI Act's energy consumption reporting requirements for GPAI models will drive adoption.
+- **Multimodal and embodied evaluation**: benchmarks for video, audio, sensor fusion, and robotics perception (building on VideoMME, EmbodiedBench, and robotics manipulation suites) will grow in importance as [[Multimodal AI]] systems proliferate in physical deployment contexts.
+- **Living benchmarks with versioning**: the community is moving toward benchmark suites with explicit versioning, provenance tracking, and community governance — analogous to software dependency management — to ensure longevity and cross-version comparability. Papers With Code's benchmark versioning infrastructure and Hugging Face datasets versioning are early implementations.
+- **AI-generated benchmark instances**: LLM-assisted benchmark creation is accelerating (BenchBuilder, task-synthesis pipelines), enabling rapid development of domain-specific suites while raising new validity questions about AI-generated ground truth. The quality, diversity, and difficulty calibration of AI-generated items require human expert validation that may constrain scale.
+- **Sociotechnical evaluation**: as AI systems deploy at societal scale, benchmarks measuring individual model capability are insufficient. Evaluation frameworks that assess systemic effects — market concentration, labour displacement, environmental footprint, and epistemic homogenisation — are nascent but will become more prominent in regulatory and governance contexts.
 
   ## Key Terminology
   A glossary of core benchmark concepts essential for correctly reading and interpreting benchmark reports:
@@ -339,5 +346,5 @@ Benchmarks are standardised tasks, datasets, or workloads used to measure and co
   26. Chollet, F. (2024). ARC-AGI-2: A new evaluation for AGI. ARC Prize Foundation.
   27. Collins, E., et al. (2025). HLE: Humanity's Last Exam. Scale AI / ARC Prize.
 
-- ### Provenance
+### Provenance
 

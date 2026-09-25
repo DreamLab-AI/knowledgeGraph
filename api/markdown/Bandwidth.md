@@ -1,11 +1,11 @@
-
 The maximum rate at which data can be transferred over a network path or communication channel, commonly measured in bits per second. In signal processing it also refers to the range of frequencies a channel can carry.
 
-- ### Semantic Classification
+### Semantic Classification
 
-- ### Content
-  - In networking, bandwidth describes the capacity of a link, typically expressed in bits per second, and sets an upper bound on throughput. It is distinct from latency, which measures delay rather than capacity.
-  - In signal processing and communications, bandwidth refers to the width of a frequency band. Available bandwidth limits how much data services such as video streaming can deliver within a given time.
+### Content
 
-- ### Provenance
+- In networking, bandwidth describes the capacity of a link, typically expressed in bits per second, and sets an upper bound on throughput. It is distinct from latency, which measures delay rather than capacity.
+- In signal processing and communications, bandwidth refers to the width of a frequency band. Available bandwidth limits how much data services such as video streaming can deliver within a given time.
+
+### Provenance
 

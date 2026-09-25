@@ -1,11 +1,11 @@
-
 ISO/IEC 23053 establishes a framework for describing artificial intelligence systems that use machine learning, including their components and terminology.
 
-- ### Semantic Classification
+### Semantic Classification
 
-- ### Content
-  - ISO/IEC 23053 establishes a framework for describing artificial intelligence systems that use machine learning, including their components and terminology.
-  - Topic area: framework for AI using machine learning.
+### Content
 
-- ### Provenance
+- ISO/IEC 23053 establishes a framework for describing artificial intelligence systems that use machine learning, including their components and terminology.
+- Topic area: framework for AI using machine learning.
+
+### Provenance
 

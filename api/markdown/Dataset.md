@@ -1,139 +1,139 @@
-
 A Dataset is a structured collection of data records sharing a common schema, gathered for a specific purpose such as training machine learning models, conducting research, or supporting analytics. Datasets are characterised by their size, modality (text, image, tabular, audio, video, graph, etc.), provenance, and licensing terms, all of which affect their fitness for use. Data quality, curation methodology, and bias documentation are critical attributes that determine the reliability of downstream AI systems. The movement from model-centric to data-centric AI has elevated dataset engineering to a first-class research and engineering discipline, with dataset documentation frameworks such as Datasheets for Datasets, Dataset Nutrition Labels, and the Croissant machine-readable format formalising the metadata contract between dataset creators and downstream consumers.
 
-- ### Semantic Classification
+### Semantic Classification
 
-- ### Content
-  ## Compositional Relationships (Components)
-  ```
-  SubClassOf(ai:Dataset
-    ObjectSomeValuesFrom(ai:hasPart ai:DataRecord))
-  SubClassOf(ai:Dataset
-    ObjectSomeValuesFrom(ai:hasPart ai:Schema))
-  SubClassOf(ai:Dataset
-    ObjectSomeValuesFrom(ai:hasPart ai:GroundTruthLabels))
-  SubClassOf(ai:Dataset
-    ObjectSomeValuesFrom(ai:hasPart ai:Metadata))
-  SubClassOf(ai:Dataset
-    ObjectSomeValuesFrom(ai:hasPart ai:DataSplit))
-  SubClassOf(ai:Dataset
-    ObjectSomeValuesFrom(ai:hasPart ai:EvaluationMetric))
-  SubClassOf(ai:LabelledDataset
-    ObjectSomeValuesFrom(ai:hasPart ai:Annotation))
-  SubClassOf(ai:MultimodalDataset
-    ObjectSomeValuesFrom(ai:hasPart ai:ModalityPair))
-  ```
-  ## Dependency Relationships
-  ```
-  SubClassOf(ai:Dataset
-    ObjectSomeValuesFrom(ai:requires ai:DataCollection))
-  SubClassOf(ai:Dataset
-    ObjectSomeValuesFrom(ai:requires ai:DataCleaning))
-  SubClassOf(ai:Dataset
-    ObjectSomeValuesFrom(ai:requires ai:DataAnnotation))
-  SubClassOf(ai:Dataset
-    ObjectSomeValuesFrom(ai:requires ai:DataGovernance))
-  SubClassOf(ai:Dataset
-    ObjectSomeValuesFrom(ai:requires ai:DataLineage))
-  SubClassOf(ai:BenchmarkDataset
-    ObjectSomeValuesFrom(ai:requires ai:GroundTruthLabels))
-  SubClassOf(ai:TrainingDataset
-    ObjectSomeValuesFrom(ai:requires ai:DataLabelling))
-  SubClassOf(ai:SyntheticDataset
-    ObjectSomeValuesFrom(ai:requires ai:GenerativeModel))
-  ```
-  ## Capability Relationships
-  ```
-  SubClassOf(ai:Dataset
-    ObjectSomeValuesFrom(ai:enables ai:MachineLearning))
-  SubClassOf(ai:Dataset
-    ObjectSomeValuesFrom(ai:enables ai:ModelEvaluation))
-  SubClassOf(ai:Dataset
-    ObjectSomeValuesFrom(ai:enables ai:Benchmarking))
-  SubClassOf(ai:Dataset
-    ObjectSomeValuesFrom(ai:enables ai:DataAnalysis))
-  SubClassOf(ai:TrainingDataset
-    ObjectSomeValuesFrom(ai:enables ai:SupervisedLearning))
-  SubClassOf(ai:LargeScaleDataset
-    ObjectSomeValuesFrom(ai:enables ai:FoundationModel))
-  SubClassOf(ai:BenchmarkDataset
-    ObjectSomeValuesFrom(ai:enables ai:Reproducibility))
-  ```
-  ## Implementation Relationships
-  ```
-  SubClassOf(ai:Dataset
-    ObjectSomeValuesFrom(ai:implements ai:DataGovernanceFramework))
-  SubClassOf(ai:Dataset
-    ObjectSomeValuesFrom(ai:implements ai:Reproducibility))
-  SubClassOf(ai:DocumentedDataset
-    ObjectSomeValuesFrom(ai:implements ai:DatasheetsForDatasets))
-  SubClassOf(ai:CuratedDataset
-    ObjectSomeValuesFrom(ai:implements ai:DataQualityStandard))
-  ```
-  ## Reduction Relationships
-  ```
-  SubClassOf(ai:Dataset
-    ObjectSomeValuesFrom(ai:reducesTo ai:DataRecord))
-  SubClassOf(ai:MultimodalDataset
-    ObjectSomeValuesFrom(ai:reducesTo ai:UnimodalDataset))
-  SubClassOf(ai:LargeScaleDataset
-    ObjectSomeValuesFrom(ai:reducesTo ai:SampledDataset))
-  SubClassOf(ai:AnnotatedDataset
-    ObjectSomeValuesFrom(ai:reducesTo ai:RawDataset))
-  SubClassOf(ai:CuratedDataset
-    ObjectSomeValuesFrom(ai:reducesTo ai:UnprocessedCorpus))
-  ```
-  ## Support Relationships
-  ```
-  SubClassOf(ai:Dataset
-    ObjectSomeValuesFrom(ai:supports ai:NaturalLanguageProcessing))
-  SubClassOf(ai:Dataset
-    ObjectSomeValuesFrom(ai:supports ai:ComputerVision))
-  SubClassOf(ai:Dataset
-    ObjectSomeValuesFrom(ai:supports ai:ExplainableAI))
-  SubClassOf(ai:LargeScaleDataset
-    ObjectSomeValuesFrom(ai:supports ai:LargeLanguageModels))
-  SubClassOf(ai:FederatedDataset
-    ObjectSomeValuesFrom(ai:supports ai:FederatedLearning))
-  ```
+### Content
 
-  ## About
+## Compositional Relationships (Components)
+```
+SubClassOf(ai:Dataset
+  ObjectSomeValuesFrom(ai:hasPart ai:DataRecord))
+SubClassOf(ai:Dataset
+  ObjectSomeValuesFrom(ai:hasPart ai:Schema))
+SubClassOf(ai:Dataset
+  ObjectSomeValuesFrom(ai:hasPart ai:GroundTruthLabels))
+SubClassOf(ai:Dataset
+  ObjectSomeValuesFrom(ai:hasPart ai:Metadata))
+SubClassOf(ai:Dataset
+  ObjectSomeValuesFrom(ai:hasPart ai:DataSplit))
+SubClassOf(ai:Dataset
+  ObjectSomeValuesFrom(ai:hasPart ai:EvaluationMetric))
+SubClassOf(ai:LabelledDataset
+  ObjectSomeValuesFrom(ai:hasPart ai:Annotation))
+SubClassOf(ai:MultimodalDataset
+  ObjectSomeValuesFrom(ai:hasPart ai:ModalityPair))
+```
+## Dependency Relationships
+```
+SubClassOf(ai:Dataset
+  ObjectSomeValuesFrom(ai:requires ai:DataCollection))
+SubClassOf(ai:Dataset
+  ObjectSomeValuesFrom(ai:requires ai:DataCleaning))
+SubClassOf(ai:Dataset
+  ObjectSomeValuesFrom(ai:requires ai:DataAnnotation))
+SubClassOf(ai:Dataset
+  ObjectSomeValuesFrom(ai:requires ai:DataGovernance))
+SubClassOf(ai:Dataset
+  ObjectSomeValuesFrom(ai:requires ai:DataLineage))
+SubClassOf(ai:BenchmarkDataset
+  ObjectSomeValuesFrom(ai:requires ai:GroundTruthLabels))
+SubClassOf(ai:TrainingDataset
+  ObjectSomeValuesFrom(ai:requires ai:DataLabelling))
+SubClassOf(ai:SyntheticDataset
+  ObjectSomeValuesFrom(ai:requires ai:GenerativeModel))
+```
+## Capability Relationships
+```
+SubClassOf(ai:Dataset
+  ObjectSomeValuesFrom(ai:enables ai:MachineLearning))
+SubClassOf(ai:Dataset
+  ObjectSomeValuesFrom(ai:enables ai:ModelEvaluation))
+SubClassOf(ai:Dataset
+  ObjectSomeValuesFrom(ai:enables ai:Benchmarking))
+SubClassOf(ai:Dataset
+  ObjectSomeValuesFrom(ai:enables ai:DataAnalysis))
+SubClassOf(ai:TrainingDataset
+  ObjectSomeValuesFrom(ai:enables ai:SupervisedLearning))
+SubClassOf(ai:LargeScaleDataset
+  ObjectSomeValuesFrom(ai:enables ai:FoundationModel))
+SubClassOf(ai:BenchmarkDataset
+  ObjectSomeValuesFrom(ai:enables ai:Reproducibility))
+```
+## Implementation Relationships
+```
+SubClassOf(ai:Dataset
+  ObjectSomeValuesFrom(ai:implements ai:DataGovernanceFramework))
+SubClassOf(ai:Dataset
+  ObjectSomeValuesFrom(ai:implements ai:Reproducibility))
+SubClassOf(ai:DocumentedDataset
+  ObjectSomeValuesFrom(ai:implements ai:DatasheetsForDatasets))
+SubClassOf(ai:CuratedDataset
+  ObjectSomeValuesFrom(ai:implements ai:DataQualityStandard))
+```
+## Reduction Relationships
+```
+SubClassOf(ai:Dataset
+  ObjectSomeValuesFrom(ai:reducesTo ai:DataRecord))
+SubClassOf(ai:MultimodalDataset
+  ObjectSomeValuesFrom(ai:reducesTo ai:UnimodalDataset))
+SubClassOf(ai:LargeScaleDataset
+  ObjectSomeValuesFrom(ai:reducesTo ai:SampledDataset))
+SubClassOf(ai:AnnotatedDataset
+  ObjectSomeValuesFrom(ai:reducesTo ai:RawDataset))
+SubClassOf(ai:CuratedDataset
+  ObjectSomeValuesFrom(ai:reducesTo ai:UnprocessedCorpus))
+```
+## Support Relationships
+```
+SubClassOf(ai:Dataset
+  ObjectSomeValuesFrom(ai:supports ai:NaturalLanguageProcessing))
+SubClassOf(ai:Dataset
+  ObjectSomeValuesFrom(ai:supports ai:ComputerVision))
+SubClassOf(ai:Dataset
+  ObjectSomeValuesFrom(ai:supports ai:ExplainableAI))
+SubClassOf(ai:LargeScaleDataset
+  ObjectSomeValuesFrom(ai:supports ai:LargeLanguageModels))
+SubClassOf(ai:FederatedDataset
+  ObjectSomeValuesFrom(ai:supports ai:FederatedLearning))
+```
 
-  A Dataset is the foundational unit of empirical artificial intelligence and machine learning research. In the supervised learning paradigm, a dataset pairs each input example with one or more target labels that a trained model should reproduce for unseen inputs; in unsupervised settings, inputs are provided without labels so the model must discover latent structure through dimensionality reduction, clustering, or density estimation; in reinforcement learning, the "dataset" is an experience replay buffer of state-action-reward-next-state tuples accumulated through environmental interaction. Regardless of paradigm, the statistical properties of the dataset—class balance and marginal distributions, feature range and covariance structure, sample diversity and geographic or demographic coverage, noise level and corruption patterns, and label consistency across annotators—are the dominant determinants of model quality in practical settings, often outweighing architectural choices for sufficiently large training regimes (Sun et al., 2017; Zha et al., 2023).
+## About
 
-  The field has undergone a fundamental shift from hand-curated, domain-specific datasets to web-scale corpora assembled through automated crawling and filtering. ImageNet (Deng et al., 2009), with 14 million labelled images across 21,000 WordNet synsets (a 1,000-class subset used for ILSVRC), became the benchmark that catalysed the deep learning revolution; its annual competition (ILSVRC, 2010–2017) drove successive accuracy improvements—from 26.2% top-5 error in 2011 to 2.25% in 2017, surpassing human-level performance—that transformed computer vision from an academic curiosity into a production technology. The transition to foundation model training has escalated dataset scale by orders of magnitude: Common Crawl provides over 300 billion web pages and grows by 3–5 billion pages monthly, representing hundreds of trillions of tokens. LAION-5B, released in 2022 by the LAION association, contains 5.85 billion image-text pairs derived from Common Crawl and was used to train open multimodal models including Stable Diffusion and OpenCLIP. At this scale, data quality cannot be enforced by human inspection; instead, automated filtering pipelines using classifier models (e.g., a CLIP ViT-L/14 model used to filter LAION by image-text alignment score), deduplication hashing (MinHash, exact URL deduplication), toxicity classifiers, and quality scoring are applied, with the trade-off that aggressive filtering may remove linguistically marginal or culturally non-Western but legitimate examples.
+A Dataset is the foundational unit of empirical artificial intelligence and machine learning research. In the supervised learning paradigm, a dataset pairs each input example with one or more target labels that a trained model should reproduce for unseen inputs; in unsupervised settings, inputs are provided without labels so the model must discover latent structure through dimensionality reduction, clustering, or density estimation; in reinforcement learning, the "dataset" is an experience replay buffer of state-action-reward-next-state tuples accumulated through environmental interaction. Regardless of paradigm, the statistical properties of the dataset—class balance and marginal distributions, feature range and covariance structure, sample diversity and geographic or demographic coverage, noise level and corruption patterns, and label consistency across annotators—are the dominant determinants of model quality in practical settings, often outweighing architectural choices for sufficiently large training regimes (Sun et al., 2017; Zha et al., 2023).
 
-  The concept of dataset provenance—systematic documentation of where, when, how, and by whom data was collected, processed, and annotated—has emerged as a first-class research and engineering concern. The Datasheets for Datasets framework (Gebru et al., 2018, published 2021 in CACM) provides a structured questionnaire covering seven dimensions: motivation, composition, collection process, preprocessing and cleaning, uses, distribution, and maintenance. A 2024 assessment of 60 NeurIPS Datasets and Benchmarks track submissions found significant variation in documentation quality, with many datasets omitting critical information about data sources, annotation procedures, and known limitations. The trend toward machine-readable documentation—Open Datasheets (2024), Croissant metadata format (Akhtar et al., 2024, adopted by Hugging Face, Kaggle, and OpenML)—aims to automate dataset discovery, compatibility checking, and regulatory compliance verification across repositories.
+The field has undergone a fundamental shift from hand-curated, domain-specific datasets to web-scale corpora assembled through automated crawling and filtering. ImageNet (Deng et al., 2009), with 14 million labelled images across 21,000 WordNet synsets (a 1,000-class subset used for ILSVRC), became the benchmark that catalysed the deep learning revolution; its annual competition (ILSVRC, 2010–2017) drove successive accuracy improvements—from 26.2% top-5 error in 2011 to 2.25% in 2017, surpassing human-level performance—that transformed computer vision from an academic curiosity into a production technology. The transition to foundation model training has escalated dataset scale by orders of magnitude: Common Crawl provides over 300 billion web pages and grows by 3–5 billion pages monthly, representing hundreds of trillions of tokens. LAION-5B, released in 2022 by the LAION association, contains 5.85 billion image-text pairs derived from Common Crawl and was used to train open multimodal models including Stable Diffusion and OpenCLIP. At this scale, data quality cannot be enforced by human inspection; instead, automated filtering pipelines using classifier models (e.g., a CLIP ViT-L/14 model used to filter LAION by image-text alignment score), deduplication hashing (MinHash, exact URL deduplication), toxicity classifiers, and quality scoring are applied, with the trade-off that aggressive filtering may remove linguistically marginal or culturally non-Western but legitimate examples.
 
-  ## Components / Architecture
+The concept of dataset provenance—systematic documentation of where, when, how, and by whom data was collected, processed, and annotated—has emerged as a first-class research and engineering concern. The Datasheets for Datasets framework (Gebru et al., 2018, published 2021 in CACM) provides a structured questionnaire covering seven dimensions: motivation, composition, collection process, preprocessing and cleaning, uses, distribution, and maintenance. A 2024 assessment of 60 NeurIPS Datasets and Benchmarks track submissions found significant variation in documentation quality, with many datasets omitting critical information about data sources, annotation procedures, and known limitations. The trend toward machine-readable documentation—Open Datasheets (2024), Croissant metadata format (Akhtar et al., 2024, adopted by Hugging Face, Kaggle, and OpenML)—aims to automate dataset discovery, compatibility checking, and regulatory compliance verification across repositories.
 
-  A fully specified dataset comprises several distinct components that together determine its fitness for a given downstream use:
+## Components / Architecture
 
-  - **Data records**: The atomic units of a dataset—images, text passages, tabular rows, graph triples, audio waveforms, sensor readings—constituting its content. Record format determines storage layout (CSV, Parquet, HDF5, TFRecord, WebDataset shards, Arrow) and access patterns during training. Large-scale datasets are typically sharded across many files to support parallel loading and avoid I/O bottlenecks during [[Deep Learning]] training runs on distributed GPU clusters.
-  - **Schema**: The formal specification of field names, data types, value ranges, cardinality constraints, and semantic meanings. A schema enables automated validation, prevents silent data corruption during pipeline transforms, and documents the mapping from raw data to model-ready features. Schema registries (Apache Avro, Protocol Buffers, JSON Schema) support schema evolution across dataset versions.
-  - **Annotations and ground-truth labels**: For supervised datasets, the target values paired with each input record—class labels, bounding boxes, segmentation masks, transcriptions, preference rankings. [[Ground Truth Labels]] quality is the single most impactful quality dimension: Northcutt et al. (2021) estimated error rates of 3.3%–5.8% in 10 canonical image classification benchmarks, with some benchmarks showing over 10% mislabelling. Consensus annotation protocols (majority vote, Dawid-Skene model, MACE) and active disagreement flagging are used to manage inter-annotator disagreement in tasks with subjective ground truth.
-  - **Metadata**: Dataset-level descriptors covering size, creation date, language, geographic coverage, collection methodology, licensing terms (open Creative Commons, restricted research-only, commercial, or proprietary), and version history. [[Metadata]] enables catalogue-based discovery via tools like Hugging Face Datasets Hub, Papers With Code, and OpenML. Well-structured metadata is the prerequisite for regulatory compliance documentation under the EU AI Act's Article 10.
-  - **Data splits**: Predefined partitions into training, validation, and test subsets, with held-out test sets sometimes withheld from public release (as in SuperGLUE and MMLU) to prevent benchmark contamination—the phenomenon where model pre-training inadvertently exposes the model to test examples, inflating apparent performance. The standard train/val/test split hides a subtle distribution assumption: all splits must be drawn from the same underlying distribution as deployment inputs, which fails when dataset collection is geographically, temporally, or demographically stratified.
-  - **Evaluation metrics and protocols**: Defined scoring functions—accuracy, macro-F1, BLEU, FID (Fréchet Inception Distance), AUC-ROC, NDCG—and evaluation harnesses (EleutherAI lm-evaluation-harness, Stanford HELM) that standardise comparison across models and prevent cherry-picking of favourable metrics.
-  - **Data cards and datasheets**: Structured documentation artefacts accompanying the dataset, increasingly mandatory for dataset submissions to major venues (NeurIPS, ICML) and for high-risk AI systems under the EU AI Act. Data cards specify intended use cases, known limitations, demographic composition, and bias characterisation results.
-  - **Data pipeline and versioning**: The software artefacts responsible for downloading, preprocessing, transforming, and loading the dataset. [[Data Pipeline]] code is increasingly version-controlled alongside dataset releases (DVC—Data Version Control, MLflow Artifacts) to ensure that model training is reproducible across compute environments. [[Data Versioning]] tools track changes in dataset content over time, enabling regression analysis when data quality changes cause model performance shifts.
+A fully specified dataset comprises several distinct components that together determine its fitness for a given downstream use:
+
+- **Data records**: The atomic units of a dataset—images, text passages, tabular rows, graph triples, audio waveforms, sensor readings—constituting its content. Record format determines storage layout (CSV, Parquet, HDF5, TFRecord, WebDataset shards, Arrow) and access patterns during training. Large-scale datasets are typically sharded across many files to support parallel loading and avoid I/O bottlenecks during [[Deep Learning]] training runs on distributed GPU clusters.
+- **Schema**: The formal specification of field names, data types, value ranges, cardinality constraints, and semantic meanings. A schema enables automated validation, prevents silent data corruption during pipeline transforms, and documents the mapping from raw data to model-ready features. Schema registries (Apache Avro, Protocol Buffers, JSON Schema) support schema evolution across dataset versions.
+- **Annotations and ground-truth labels**: For supervised datasets, the target values paired with each input record—class labels, bounding boxes, segmentation masks, transcriptions, preference rankings. [[Ground Truth Labels]] quality is the single most impactful quality dimension: Northcutt et al. (2021) estimated error rates of 3.3%–5.8% in 10 canonical image classification benchmarks, with some benchmarks showing over 10% mislabelling. Consensus annotation protocols (majority vote, Dawid-Skene model, MACE) and active disagreement flagging are used to manage inter-annotator disagreement in tasks with subjective ground truth.
+- **Metadata**: Dataset-level descriptors covering size, creation date, language, geographic coverage, collection methodology, licensing terms (open Creative Commons, restricted research-only, commercial, or proprietary), and version history. [[Metadata]] enables catalogue-based discovery via tools like Hugging Face Datasets Hub, Papers With Code, and OpenML. Well-structured metadata is the prerequisite for regulatory compliance documentation under the EU AI Act's Article 10.
+- **Data splits**: Predefined partitions into training, validation, and test subsets, with held-out test sets sometimes withheld from public release (as in SuperGLUE and MMLU) to prevent benchmark contamination—the phenomenon where model pre-training inadvertently exposes the model to test examples, inflating apparent performance. The standard train/val/test split hides a subtle distribution assumption: all splits must be drawn from the same underlying distribution as deployment inputs, which fails when dataset collection is geographically, temporally, or demographically stratified.
+- **Evaluation metrics and protocols**: Defined scoring functions—accuracy, macro-F1, BLEU, FID (Fréchet Inception Distance), AUC-ROC, NDCG—and evaluation harnesses (EleutherAI lm-evaluation-harness, Stanford HELM) that standardise comparison across models and prevent cherry-picking of favourable metrics.
+- **Data cards and datasheets**: Structured documentation artefacts accompanying the dataset, increasingly mandatory for dataset submissions to major venues (NeurIPS, ICML) and for high-risk AI systems under the EU AI Act. Data cards specify intended use cases, known limitations, demographic composition, and bias characterisation results.
+- **Data pipeline and versioning**: The software artefacts responsible for downloading, preprocessing, transforming, and loading the dataset. [[Data Pipeline]] code is increasingly version-controlled alongside dataset releases (DVC—Data Version Control, MLflow Artifacts) to ensure that model training is reproducible across compute environments. [[Data Versioning]] tools track changes in dataset content over time, enabling regression analysis when data quality changes cause model performance shifts.
 
   ## Use Cases / Major Families
 
   Datasets divide into several major families by modality, scale, and intended use:
 
-  - **Image classification**: ImageNet-1k/21k (ILSVRC), CIFAR-10/100, iNaturalist, EuroSAT—benchmarks for visual recognition models including CNNs and Vision Transformers. ImageNet-1k with 1.2 million training images in 1,000 classes remains the canonical transfer learning source for [[Computer Vision]] models.
-  - **Object detection and segmentation**: MS-COCO (330,000 images, 80 categories), Pascal VOC, Open Images V7 (9 million images)—multi-class detection with bounding box and pixel-level annotations used for autonomous driving, surveillance, and medical imaging applications.
-  - **Natural language pre-training corpora**: C4 (Colossal Clean Crawled Corpus, 180 billion tokens), The Pile (825 GB, EleutherAI), RedPajama (1.2 trillion tokens), FineWeb (2024, 15 trillion tokens after quality filtering)—the primary training data for [[Large Language Models]]. Quality filtering strategies using perplexity scoring, n-gram deduplication, and content classification have substantial effects on downstream model performance.
-  - **Natural language evaluation benchmarks**: SQuAD (reading comprehension), GLUE and SuperGLUE (multi-task NLP), BIG-Bench (challenging NLP tasks), MMLU (57-subject multiple choice), HumanEval (code generation)—structured evaluation sets for [[Natural Language Processing]] models with standardised metrics.
-  - **Multimodal image-text datasets**: LAION-5B (5.85 billion image-caption pairs), CC3M (Conceptual Captions), YFCC100M, WIT (Wikipedia-based Image Text)—large-scale noisy corpora for training multimodal [[Foundation Model]] architectures including CLIP, DALL-E, and Stable Diffusion. DataComp (2023) provides a controlled framework for comparing dataset curation strategies on a fixed compute budget.
-  - **Audio and speech**: LibriSpeech (960 hours, audiobook), Common Voice (Mozilla, 100+ languages, 20,000+ hours), VoxCeleb (speaker verification), AudioSet (2 million YouTube clips with sound event labels)—for speech recognition, speaker diarisation, and audio classification.
-  - **Medical and clinical**: MIMIC-III/IV (ICU records for 40,000+ patients, PhysioNet), UK Biobank (genetic and imaging data from 500,000 UK participants), ChestX-ray14 (100,000+ chest X-rays), TCGA (The Cancer Genome Atlas)—highly regulated datasets with strict access controls, data use agreements, and IRB/ethics requirements. [[Federated Learning]] is the primary mechanism for accessing distributed medical datasets that cannot be centralised.
-  - **Tabular and structured**: UCI ML Repository (500+ datasets), OpenML (4,000+ datasets), Kaggle competition datasets—heterogeneous collections for classical [[Machine Learning]] benchmarking across domains including finance, chemistry, genomics, and social science.
-  - **Graph datasets**: OGB (Open Graph Benchmark, molecular and citation graphs), TUDatasets (60+ graph classification datasets), SNAP Datasets (social network graphs)—used for graph neural network [[Benchmarking]].
-  - **Synthetic datasets**: Generated via GANs, diffusion models (Stable Diffusion, DALL-E 3), or physics simulation engines to supplement real-world data in scarce or privacy-sensitive domains. [[Synthetic Data]] can be used for data augmentation, domain randomisation (robotics), or privacy-preserving surrogates, but introduces the risk of model collapse when models are iteratively trained on self-generated data (Shumailov et al., 2023).
-  - **Federated learning benchmarks**: LEAF (Caldas et al., 2018—Shakespeare, FEMNIST, CelebA), FLamby (du Terrail et al., 2022—medical imaging across institutions)—designed for [[Federated Learning]] evaluation where data is distributed across heterogeneous client partitions without centralisation.
-  - **Reinforcement learning environments**: Atari Learning Environment (57 Atari games, Bellemare et al., 2013), MuJoCo continuous control tasks (OpenAI Gym), D4RL (offline RL datasets from expert and sub-expert policies)—datasets generated from environment interactions for [[Reinforcement Learning]] training and evaluation.
+- **Image classification**: ImageNet-1k/21k (ILSVRC), CIFAR-10/100, iNaturalist, EuroSAT—benchmarks for visual recognition models including CNNs and Vision Transformers. ImageNet-1k with 1.2 million training images in 1,000 classes remains the canonical transfer learning source for [[Computer Vision]] models.
+- **Object detection and segmentation**: MS-COCO (330,000 images, 80 categories), Pascal VOC, Open Images V7 (9 million images)—multi-class detection with bounding box and pixel-level annotations used for autonomous driving, surveillance, and medical imaging applications.
+- **Natural language pre-training corpora**: C4 (Colossal Clean Crawled Corpus, 180 billion tokens), The Pile (825 GB, EleutherAI), RedPajama (1.2 trillion tokens), FineWeb (2024, 15 trillion tokens after quality filtering)—the primary training data for [[Large Language Models]]. Quality filtering strategies using perplexity scoring, n-gram deduplication, and content classification have substantial effects on downstream model performance.
+- **Natural language evaluation benchmarks**: SQuAD (reading comprehension), GLUE and SuperGLUE (multi-task NLP), BIG-Bench (challenging NLP tasks), MMLU (57-subject multiple choice), HumanEval (code generation)—structured evaluation sets for [[Natural Language Processing]] models with standardised metrics.
+- **Multimodal image-text datasets**: LAION-5B (5.85 billion image-caption pairs), CC3M (Conceptual Captions), YFCC100M, WIT (Wikipedia-based Image Text)—large-scale noisy corpora for training multimodal [[Foundation Model]] architectures including CLIP, DALL-E, and Stable Diffusion. DataComp (2023) provides a controlled framework for comparing dataset curation strategies on a fixed compute budget.
+- **Audio and speech**: LibriSpeech (960 hours, audiobook), Common Voice (Mozilla, 100+ languages, 20,000+ hours), VoxCeleb (speaker verification), AudioSet (2 million YouTube clips with sound event labels)—for speech recognition, speaker diarisation, and audio classification.
+- **Medical and clinical**: MIMIC-III/IV (ICU records for 40,000+ patients, PhysioNet), UK Biobank (genetic and imaging data from 500,000 UK participants), ChestX-ray14 (100,000+ chest X-rays), TCGA (The Cancer Genome Atlas)—highly regulated datasets with strict access controls, data use agreements, and IRB/ethics requirements. [[Federated Learning]] is the primary mechanism for accessing distributed medical datasets that cannot be centralised.
+- **Tabular and structured**: UCI ML Repository (500+ datasets), OpenML (4,000+ datasets), Kaggle competition datasets—heterogeneous collections for classical [[Machine Learning]] benchmarking across domains including finance, chemistry, genomics, and social science.
+- **Graph datasets**: OGB (Open Graph Benchmark, molecular and citation graphs), TUDatasets (60+ graph classification datasets), SNAP Datasets (social network graphs)—used for graph neural network [[Benchmarking]].
+- **Synthetic datasets**: Generated via GANs, diffusion models (Stable Diffusion, DALL-E 3), or physics simulation engines to supplement real-world data in scarce or privacy-sensitive domains. [[Synthetic Data]] can be used for data augmentation, domain randomisation (robotics), or privacy-preserving surrogates, but introduces the risk of model collapse when models are iteratively trained on self-generated data (Shumailov et al., 2023).
+- **Federated learning benchmarks**: LEAF (Caldas et al., 2018—Shakespeare, FEMNIST, CelebA), FLamby (du Terrail et al., 2022—medical imaging across institutions)—designed for [[Federated Learning]] evaluation where data is distributed across heterogeneous client partitions without centralisation.
+- **Reinforcement learning environments**: Atari Learning Environment (57 Atari games, Bellemare et al., 2013), MuJoCo continuous control tasks (OpenAI Gym), D4RL (offline RL datasets from expert and sub-expert policies)—datasets generated from environment interactions for [[Reinforcement Learning]] training and evaluation.
 
   ## Formal Analysis
 
@@ -189,13 +189,13 @@ A Dataset is a structured collection of data records sharing a common schema, ga
 
   ## Future Directions (2026–2030)
 
-  - **Autonomous dataset curation**: LLM-powered curation agents (benchmarked by DCA-Bench, 2024) will automate quality assessment, deduplication, bias detection, and documentation generation, dramatically reducing the human annotation bottleneck. Agents will iteratively sample from candidate corpora, assess quality using learned quality signals, and build curated datasets to specified quality targets within compute budgets.
-  - **Dynamic and adversarial benchmarks**: Static test sets will increasingly be replaced by dynamically generated evaluation tasks that cannot be memorised during pre-training. Dynabench (Kiela et al., 2021) and LiveBench (White et al., 2024) represent early implementations; by 2028, most competitive NLP and vision benchmarks will use dynamic test generation or frequent dataset refresh cycles to prevent contamination.
-  - **Cryptographic provenance and data lineage**: Blockchain-anchored or cryptographically signed provenance registries will emerge to address legal uncertainty around web-scraped training data challenged by copyright litigation. Watermarking techniques applied at data collection time will enable tracing of specific content through training pipelines, supporting both copyright enforcement and contamination detection.
-  - **Federated data markets**: Formal mechanisms for pricing, accessing, and trading data assets—the European Health Data Space, the UK National Data Library, and commercial data trusts—will enable controlled data sharing across organisational boundaries while preserving [[Privacy]] through [[Differential Privacy]] guarantees and federated access protocols.
-  - **Croissant and machine-readable dataset metadata at scale**: The Croissant metadata format will become the universal standard for dataset description, enabling automated dataset discovery, compatibility matching, compliance checking, and integration into data pipelines without manual configuration.
-  - **Multi-modal and embodied datasets**: Robotics and embodied AI research will drive demand for large-scale datasets integrating egocentric vision, proprioception, language instructions, and action sequences (Open X-Embodiment, DROID). Simulation-to-real transfer will require paired sim and real datasets with domain gap characterisation.
-  - **Model collapse mitigation**: As synthetic data proliferates, techniques for detecting and preventing model collapse—mixing requirements, provenance-aware training curricula, and collapse detection metrics—will become standard components of large-scale training pipelines.
+- **Autonomous dataset curation**: LLM-powered curation agents (benchmarked by DCA-Bench, 2024) will automate quality assessment, deduplication, bias detection, and documentation generation, dramatically reducing the human annotation bottleneck. Agents will iteratively sample from candidate corpora, assess quality using learned quality signals, and build curated datasets to specified quality targets within compute budgets.
+- **Dynamic and adversarial benchmarks**: Static test sets will increasingly be replaced by dynamically generated evaluation tasks that cannot be memorised during pre-training. Dynabench (Kiela et al., 2021) and LiveBench (White et al., 2024) represent early implementations; by 2028, most competitive NLP and vision benchmarks will use dynamic test generation or frequent dataset refresh cycles to prevent contamination.
+- **Cryptographic provenance and data lineage**: Blockchain-anchored or cryptographically signed provenance registries will emerge to address legal uncertainty around web-scraped training data challenged by copyright litigation. Watermarking techniques applied at data collection time will enable tracing of specific content through training pipelines, supporting both copyright enforcement and contamination detection.
+- **Federated data markets**: Formal mechanisms for pricing, accessing, and trading data assets—the European Health Data Space, the UK National Data Library, and commercial data trusts—will enable controlled data sharing across organisational boundaries while preserving [[Privacy]] through [[Differential Privacy]] guarantees and federated access protocols.
+- **Croissant and machine-readable dataset metadata at scale**: The Croissant metadata format will become the universal standard for dataset description, enabling automated dataset discovery, compatibility matching, compliance checking, and integration into data pipelines without manual configuration.
+- **Multi-modal and embodied datasets**: Robotics and embodied AI research will drive demand for large-scale datasets integrating egocentric vision, proprioception, language instructions, and action sequences (Open X-Embodiment, DROID). Simulation-to-real transfer will require paired sim and real datasets with domain gap characterisation.
+- **Model collapse mitigation**: As synthetic data proliferates, techniques for detecting and preventing model collapse—mixing requirements, provenance-aware training curricula, and collapse detection metrics—will become standard components of large-scale training pipelines.
 
   ## Data-Centric AI: Principles and Practice
 
@@ -263,14 +263,14 @@ A Dataset is a structured collection of data records sharing a common schema, ga
 
   The [[Data Architecture]] ecosystem has developed several standards and interchange formats that promote dataset interoperability across frameworks, organisations, and jurisdictions:
 
-  - **Apache Parquet**: The dominant columnar storage format for large tabular datasets, widely supported by Spark, Pandas, Arrow, and cloud data warehouses. Parquet's columnar layout enables efficient predicate pushdown and projection pruning, dramatically reducing I/O for analytical queries over large datasets.
-  - **Apache Arrow**: An in-memory columnar data format providing zero-copy data exchange between analytics frameworks (Pandas, Spark, DuckDB, database connectors). The Hugging Face Datasets library uses Arrow as its internal format, enabling efficient loading of large NLP datasets with memory-mapped access.
-  - **TFRecord**: TensorFlow's binary record format, optimised for reading sequential mini-batches during neural network training. TFRecords support both fixed-length and variable-length features and are efficient for image, text, and audio data at scale.
-  - **WebDataset**: A format wrapping TAR archives as streaming datasets, enabling efficient reading from cloud object storage (S3, GCS, Azure Blob) during training without full local materialisation. Used extensively for LAION-5B and other large-scale vision datasets.
-  - **Croissant**: A machine-readable metadata format (2024, adopted by Hugging Face, Kaggle, and OpenML) describing dataset structure, features, splits, and licensing in JSON-LD. Croissant metadata enables automated tooling for dataset loading, compatibility checking, and compliance documentation generation.
-  - **DCAT (Data Catalog Vocabulary)**: W3C standard for describing datasets in RDF, enabling [[Knowledge Graph]] integration and semantic search over dataset metadata. Used by open government data portals and research data repositories.
-  - **Schema.org Dataset**: JSON-LD markup standard enabling dataset metadata embedding in web pages, supporting search engine indexing of datasets for discovery. Google Dataset Search indexes Schema.org Dataset markup from publisher websites.
-  - **ISO 8000 / ISO 25012**: International standards for data quality specification and measurement, providing a formal framework for the quality dimensions (accuracy, completeness, consistency, timeliness) applicable to datasets used in [[Machine Learning]] and analytics contexts.
+- **Apache Parquet**: The dominant columnar storage format for large tabular datasets, widely supported by Spark, Pandas, Arrow, and cloud data warehouses. Parquet's columnar layout enables efficient predicate pushdown and projection pruning, dramatically reducing I/O for analytical queries over large datasets.
+- **Apache Arrow**: An in-memory columnar data format providing zero-copy data exchange between analytics frameworks (Pandas, Spark, DuckDB, database connectors). The Hugging Face Datasets library uses Arrow as its internal format, enabling efficient loading of large NLP datasets with memory-mapped access.
+- **TFRecord**: TensorFlow's binary record format, optimised for reading sequential mini-batches during neural network training. TFRecords support both fixed-length and variable-length features and are efficient for image, text, and audio data at scale.
+- **WebDataset**: A format wrapping TAR archives as streaming datasets, enabling efficient reading from cloud object storage (S3, GCS, Azure Blob) during training without full local materialisation. Used extensively for LAION-5B and other large-scale vision datasets.
+- **Croissant**: A machine-readable metadata format (2024, adopted by Hugging Face, Kaggle, and OpenML) describing dataset structure, features, splits, and licensing in JSON-LD. Croissant metadata enables automated tooling for dataset loading, compatibility checking, and compliance documentation generation.
+- **DCAT (Data Catalog Vocabulary)**: W3C standard for describing datasets in RDF, enabling [[Knowledge Graph]] integration and semantic search over dataset metadata. Used by open government data portals and research data repositories.
+- **Schema.org Dataset**: JSON-LD markup standard enabling dataset metadata embedding in web pages, supporting search engine indexing of datasets for discovery. Google Dataset Search indexes Schema.org Dataset markup from publisher websites.
+- **ISO 8000 / ISO 25012**: International standards for data quality specification and measurement, providing a formal framework for the quality dimensions (accuracy, completeness, consistency, timeliness) applicable to datasets used in [[Machine Learning]] and analytics contexts.
 
   ## Dataset Regulation and Legal Landscape
 
@@ -336,68 +336,74 @@ A Dataset is a structured collection of data records sharing a common schema, ga
 
   The Dataset concept admits a rich taxonomy of specialised sub-types differentiated by construction methodology, access regime, and intended application:
 
-  - **[[Training Data]] / training split**: The largest partition of a labelled dataset, used to fit model parameters. The training set size is the primary determinant of model capacity utilisation, and the curation quality of the training set has outsized influence on generalisation performance relative to the validation or test partitions.
-  - **[[Benchmark Dataset]]**: A fixed, publicly released dataset paired with a standardised evaluation protocol and metric, used to compare model performance across research groups. Benchmark datasets serve a dual function as evaluation standards and as implicit training targets—once a benchmark becomes widely known, researchers implicitly optimise for it. Key benchmarks include MNIST (digit recognition), ImageNet (image classification), SQuAD (reading comprehension), GLUE/SuperGLUE (NLP multi-task), MMLU (knowledge-intensive multiple choice), and HumanEval (code synthesis).
-  - **[[Open Data]]**: Datasets released under permissive licences (Creative Commons CC-BY, CC0, Open Database License) enabling reuse, modification, and redistribution without restriction. Open datasets accelerate research but create legal risk when used for commercial model training if the licence terms are ambiguous or if the underlying data was itself generated from non-open sources.
-  - **Proprietary dataset**: A dataset held as a competitive asset by an organisation, not publicly released. Large proprietary datasets—Google's internal search query logs, Meta's social graph interaction data, Amazon's purchase history corpus—confer significant advantage in training specialised models and are the subject of antitrust scrutiny in multiple jurisdictions.
-  - **Web-scraped corpus**: A dataset assembled by automated crawling of publicly accessible web content. Common Crawl is the canonical example; LAION-5B, The Pile, and FineWeb are curated subsets. Web-scraped corpora are subject to copyright uncertainty, as the legal status of model training on copyrighted web content is contested globally.
-  - **Curated research dataset**: A carefully assembled, human-reviewed dataset targeting a specific research task. Curated datasets typically have higher label quality and better documentation than web-scraped corpora but are orders of magnitude smaller. Examples include MNIST (60,000 images), CIFAR-10 (60,000 images), and SQuAD v2 (150,000 question-answer pairs).
-  - **Longitudinal dataset**: A dataset tracking the same subjects or entities over time, enabling analysis of temporal dynamics, treatment effects, and developmental trajectories. UK Biobank with its 500,000-participant longitudinal health tracking cohort and MIMIC-IV with longitudinal ICU patient records are examples. Longitudinal datasets enable causal inference analyses that cross-sectional snapshots cannot support.
-  - **Synthetic dataset**: A dataset generated programmatically through simulation, generative modelling (GANs, diffusion models, LLMs), or rule-based data generation, rather than collected from real-world observations. Synthetic datasets can be generated at arbitrary scale, preserve [[Privacy]] by construction, and can be engineered to have specific statistical properties, but may not fully capture the distribution of real-world data and carry model collapse risk.
-  - **Federated dataset**: A collection of locally held, non-centralised data partitions across multiple organisations or devices, used in [[Federated Learning]] settings where data cannot be shared due to privacy, regulatory, or competitive constraints. Federated datasets are characterised by non-IID (independently and identically distributed) partition structure, as different parties hold different subpopulations or measurement protocols.
-  - **Multi-modal dataset**: A dataset containing aligned records across multiple data modalities—image-text pairs (LAION-5B), video-audio-transcript triples (AudioSet, HowTo100M), or document-table pairs. Multi-modal datasets enable training of joint embedding models and cross-modal retrieval systems. Modality alignment—ensuring that the paired modalities genuinely correspond semantically—is a significant curation challenge.
-  - **Instruction tuning / alignment dataset**: A dataset of (instruction, response) pairs used for supervised fine-tuning of pre-trained [[Large Language Models]] to follow natural language instructions. Examples include FLAN (fine-tuned language model collection), Alpaca (generated from GPT-3), and high-quality human-curated sets such as OpenAssistant. The quality and diversity of instruction tuning data has a disproportionate impact on model helpfulness and safety relative to its size.
+- **[[Training Data]] / training split**: The largest partition of a labelled dataset, used to fit model parameters. The training set size is the primary determinant of model capacity utilisation, and the curation quality of the training set has outsized influence on generalisation performance relative to the validation or test partitions.
+- **[[Benchmark Dataset]]**: A fixed, publicly released dataset paired with a standardised evaluation protocol and metric, used to compare model performance across research groups. Benchmark datasets serve a dual function as evaluation standards and as implicit training targets—once a benchmark becomes widely known, researchers implicitly optimise for it. Key benchmarks include MNIST (digit recognition), ImageNet (image classification), SQuAD (reading comprehension), GLUE/SuperGLUE (NLP multi-task), MMLU (knowledge-intensive multiple choice), and HumanEval (code synthesis).
+- **[[Open Data]]**: Datasets released under permissive licences (Creative Commons CC-BY, CC0, Open Database License) enabling reuse, modification, and redistribution without restriction. Open datasets accelerate research but create legal risk when used for commercial model training if the licence terms are ambiguous or if the underlying data was itself generated from non-open sources.
+- **Proprietary dataset**: A dataset held as a competitive asset by an organisation, not publicly released. Large proprietary datasets—Google's internal search query logs, Meta's social graph interaction data, Amazon's purchase history corpus—confer significant advantage in training specialised models and are the subject of antitrust scrutiny in multiple jurisdictions.
+- **Web-scraped corpus**: A dataset assembled by automated crawling of publicly accessible web content. Common Crawl is the canonical example; LAION-5B, The Pile, and FineWeb are curated subsets. Web-scraped corpora are subject to copyright uncertainty, as the legal status of model training on copyrighted web content is contested globally.
+- **Curated research dataset**: A carefully assembled, human-reviewed dataset targeting a specific research task. Curated datasets typically have higher label quality and better documentation than web-scraped corpora but are orders of magnitude smaller. Examples include MNIST (60,000 images), CIFAR-10 (60,000 images), and SQuAD v2 (150,000 question-answer pairs).
+- **Longitudinal dataset**: A dataset tracking the same subjects or entities over time, enabling analysis of temporal dynamics, treatment effects, and developmental trajectories. UK Biobank with its 500,000-participant longitudinal health tracking cohort and MIMIC-IV with longitudinal ICU patient records are examples. Longitudinal datasets enable causal inference analyses that cross-sectional snapshots cannot support.
+- **Synthetic dataset**: A dataset generated programmatically through simulation, generative modelling (GANs, diffusion models, LLMs), or rule-based data generation, rather than collected from real-world observations. Synthetic datasets can be generated at arbitrary scale, preserve [[Privacy]] by construction, and can be engineered to have specific statistical properties, but may not fully capture the distribution of real-world data and carry model collapse risk.
+- **Federated dataset**: A collection of locally held, non-centralised data partitions across multiple organisations or devices, used in [[Federated Learning]] settings where data cannot be shared due to privacy, regulatory, or competitive constraints. Federated datasets are characterised by non-IID (independently and identically distributed) partition structure, as different parties hold different subpopulations or measurement protocols.
+- **Multi-modal dataset**: A dataset containing aligned records across multiple data modalities—image-text pairs (LAION-5B), video-audio-transcript triples (AudioSet, HowTo100M), or document-table pairs. Multi-modal datasets enable training of joint embedding models and cross-modal retrieval systems. Modality alignment—ensuring that the paired modalities genuinely correspond semantically—is a significant curation challenge.
+- **Instruction tuning / alignment dataset**: A dataset of (instruction, response) pairs used for supervised fine-tuning of pre-trained [[Large Language Models]] to follow natural language instructions. Examples include FLAN (fine-tuned language model collection), Alpaca (generated from GPT-3), and high-quality human-curated sets such as OpenAssistant. The quality and diversity of instruction tuning data has a disproportionate impact on model helpfulness and safety relative to its size.
 
   ## Key Terminology
 
-  - **Training set**: The partition of a dataset used to fit model parameters during the learning algorithm. Comprises the majority (typically 60–80%) of labelled examples.
-  - **Validation set**: A held-out partition used to tune hyperparameters and monitor for [[Overfitting]] during training. Distinct from the test set to avoid implicit optimisation pressure on evaluation metrics.
-  - **Test set**: A held-out partition used exclusively for final evaluation of trained models; should be used only once to avoid test set contamination through hyperparameter tuning cycles.
-  - **Data split**: The division of a dataset into train/validation/test partitions, stratified to preserve class distribution. Cross-validation generalises this by rotating the validation set across k folds.
-  - **[[Imbalanced Data]]**: A dataset in which class labels are distributed non-uniformly, often severely so (e.g., fraud detection datasets where fraudulent transactions are 0.1% of samples). Imbalance causes naive classifiers to default to the majority class and is addressed through oversampling (SMOTE), undersampling, or class-weighted loss functions.
-  - **Data leakage**: The contamination of model training or validation with information that would not be available at inference time, including test set examples appearing in training data, future-looking features in time series, or label-derived features.
-  - **Annotation artefact**: A spurious statistical pattern in the dataset that correlates with labels due to annotation methodology rather than genuine signal—e.g., presence of camera watermarks as a proxy for certain classes. Models exploit annotation artefacts, producing high benchmark performance that fails to generalise.
-  - **Datasheet**: A structured documentation artefact (Gebru et al., 2021) accompanying a dataset, covering motivation, composition, collection process, preprocessing, uses, distribution, and maintenance. Analogous to a product specification sheet.
-  - **Data card**: Google's variant of the datasheet framework, covering dataset description, intended use, source information, and known limitations. Used for documentation of Google's publicly released datasets.
-  - **Croissant**: A machine-readable metadata format (2024) for ML-ready datasets, adopted by Hugging Face, Kaggle, and OpenML. Enables automated tooling for dataset discovery, loading, and compliance verification.
-  - **[[Data Provenance]]**: The documented lineage of data from collection source through all transformations to the final dataset. Critical for copyright compliance, regulatory accountability, and debugging of dataset-induced model failures.
+- **Training set**: The partition of a dataset used to fit model parameters during the learning algorithm. Comprises the majority (typically 60–80%) of labelled examples.
+- **Validation set**: A held-out partition used to tune hyperparameters and monitor for [[Overfitting]] during training. Distinct from the test set to avoid implicit optimisation pressure on evaluation metrics.
+- **Test set**: A held-out partition used exclusively for final evaluation of trained models; should be used only once to avoid test set contamination through hyperparameter tuning cycles.
+- **Data split**: The division of a dataset into train/validation/test partitions, stratified to preserve class distribution. Cross-validation generalises this by rotating the validation set across k folds.
+- **[[Imbalanced Data]]**: A dataset in which class labels are distributed non-uniformly, often severely so (e.g., fraud detection datasets where fraudulent transactions are 0.1% of samples). Imbalance causes naive classifiers to default to the majority class and is addressed through oversampling (SMOTE), undersampling, or class-weighted loss functions.
+- **Data leakage**: The contamination of model training or validation with information that would not be available at inference time, including test set examples appearing in training data, future-looking features in time series, or label-derived features.
+- **Annotation artefact**: A spurious statistical pattern in the dataset that correlates with labels due to annotation methodology rather than genuine signal—e.g., presence of camera watermarks as a proxy for certain classes. Models exploit annotation artefacts, producing high benchmark performance that fails to generalise.
+- **Datasheet**: A structured documentation artefact (Gebru et al., 2021) accompanying a dataset, covering motivation, composition, collection process, preprocessing, uses, distribution, and maintenance. Analogous to a product specification sheet.
+- **Data card**: Google's variant of the datasheet framework, covering dataset description, intended use, source information, and known limitations. Used for documentation of Google's publicly released datasets.
+- **Croissant**: A machine-readable metadata format (2024) for ML-ready datasets, adopted by Hugging Face, Kaggle, and OpenML. Enables automated tooling for dataset discovery, loading, and compliance verification.
+- **[[Data Provenance]]**: The documented lineage of data from collection source through all transformations to the final dataset. Critical for copyright compliance, regulatory accountability, and debugging of dataset-induced model failures.
 
   ## Benchmark Dataset Families and Their Roles
 
   The following canonical benchmark datasets define performance standards across major AI research domains. Each represents a carefully constructed evaluation resource that has shaped the development of its field:
 
   **Natural Language Processing benchmarks:**
-  - GLUE (Wang et al., 2018): 9-task multi-task NLP benchmark covering entailment, similarity, sentiment, grammar. Saturated by 2020 with models exceeding human performance.
-  - SuperGLUE (Wang et al., 2019): Harder successor to GLUE; 8 tasks requiring reading comprehension, co-reference, causal reasoning. Near-saturated by 2022.
-  - MMLU (Hendrycks et al., 2021): 57-subject multiple-choice covering STEM, law, medicine, social sciences. 14,000 questions. Top models score above 90% as of 2025.
-  - BIG-Bench Hard (Suzgun et al., 2022): 23 challenging tasks from BIG-Bench where average human performance exceeded prior LLM performance. Chain-of-thought prompting provides substantial benefit.
-  - HumanEval (Chen et al., 2021): 164 programming problems for code generation. Top models achieve over 90% pass@1 as of 2025.
-  - SQuAD v2 (Rajpurkar et al., 2018): Reading comprehension with unanswerable questions; 150,000 question-answer pairs over Wikipedia passages.
+
+- GLUE (Wang et al., 2018): 9-task multi-task NLP benchmark covering entailment, similarity, sentiment, grammar. Saturated by 2020 with models exceeding human performance.
+- SuperGLUE (Wang et al., 2019): Harder successor to GLUE; 8 tasks requiring reading comprehension, co-reference, causal reasoning. Near-saturated by 2022.
+- MMLU (Hendrycks et al., 2021): 57-subject multiple-choice covering STEM, law, medicine, social sciences. 14,000 questions. Top models score above 90% as of 2025.
+- BIG-Bench Hard (Suzgun et al., 2022): 23 challenging tasks from BIG-Bench where average human performance exceeded prior LLM performance. Chain-of-thought prompting provides substantial benefit.
+- HumanEval (Chen et al., 2021): 164 programming problems for code generation. Top models achieve over 90% pass@1 as of 2025.
+- SQuAD v2 (Rajpurkar et al., 2018): Reading comprehension with unanswerable questions; 150,000 question-answer pairs over Wikipedia passages.
 
   **Computer Vision benchmarks:**
-  - ImageNet-1k ILSVRC: 1.28M training, 50K validation, 1,000 classes. Top-5 error reduced from 26.2% (2011) to under 1.5% (2023) by the best models.
-  - MS-COCO 2017: 123,000 images, 80 object categories with bounding boxes, keypoints, and captions. Standard for object detection and image captioning research.
-  - ADE20K: 25,000 images with pixel-level semantic segmentation across 150 categories. Standard for scene understanding and semantic segmentation.
+
+- ImageNet-1k ILSVRC: 1.28M training, 50K validation, 1,000 classes. Top-5 error reduced from 26.2% (2011) to under 1.5% (2023) by the best models.
+- MS-COCO 2017: 123,000 images, 80 object categories with bounding boxes, keypoints, and captions. Standard for object detection and image captioning research.
+- ADE20K: 25,000 images with pixel-level semantic segmentation across 150 categories. Standard for scene understanding and semantic segmentation.
 
   **Multimodal benchmarks:**
-  - VQAv2 (Goyal et al., 2017): 265,000 images with 1.1M questions; evaluates visual question answering and visual grounding.
-  - MMMU (Yue et al., 2024): Massive Multidisciplinary Multimodal Understanding—college-level multimodal questions across 30 subjects. Top models score around 70%.
-  - DocVQA: Document-oriented visual question answering over scanned documents with OCR-dependent reasoning.
+
+- VQAv2 (Goyal et al., 2017): 265,000 images with 1.1M questions; evaluates visual question answering and visual grounding.
+- MMMU (Yue et al., 2024): Massive Multidisciplinary Multimodal Understanding—college-level multimodal questions across 30 subjects. Top models score around 70%.
+- DocVQA: Document-oriented visual question answering over scanned documents with OCR-dependent reasoning.
 
   **Medical and scientific benchmarks:**
-  - MedQA (Jin et al., 2021): USMLE-style medical licensing questions. Top models now exceed passing threshold; clinical deployment requires higher standards.
-  - PubMedQA (Jin et al., 2019): 1,000 biomedical research questions from PubMed abstracts.
-  - CAMELYON16: Whole slide imaging for breast cancer metastasis detection; standard for digital pathology AI evaluation.
+
+- MedQA (Jin et al., 2021): USMLE-style medical licensing questions. Top models now exceed passing threshold; clinical deployment requires higher standards.
+- PubMedQA (Jin et al., 2019): 1,000 biomedical research questions from PubMed abstracts.
+- CAMELYON16: Whole slide imaging for breast cancer metastasis detection; standard for digital pathology AI evaluation.
 
   **Code and mathematical reasoning:**
-  - MATH (Hendrycks et al., 2021): 12,500 competition mathematics problems across 7 difficulty levels. Top models achieve over 80% as of 2025.
-  - LiveCodeBench (Jain et al., 2024): Dynamic, contamination-resistant coding benchmark with problems from recent competitive programming contests.
-  - SWE-Bench (Jimenez et al., 2024): Real GitHub issue resolution across 12 Python repositories; tests practical software engineering capability.
+
+- MATH (Hendrycks et al., 2021): 12,500 competition mathematics problems across 7 difficulty levels. Top models achieve over 80% as of 2025.
+- LiveCodeBench (Jain et al., 2024): Dynamic, contamination-resistant coding benchmark with problems from recent competitive programming contests.
+- SWE-Bench (Jimenez et al., 2024): Real GitHub issue resolution across 12 Python repositories; tests practical software engineering capability.
 
   **Robustness and out-of-distribution benchmarks:**
-  - WILDS (Koh et al., 2021): Distribution shift benchmark across 10 real-world datasets spanning genomics, satellite imagery, healthcare, and NLP.
-  - ImageNet-C (Hendrycks & Dietterich, 2019): ImageNet with 19 types of common corruptions (blur, noise, weather) at 5 severity levels.
-  - ANLI (Nie et al., 2020): Adversarially collected NLI dataset specifically designed to defeat current models through human-in-the-loop adversarial collection.
+
+- WILDS (Koh et al., 2021): Distribution shift benchmark across 10 real-world datasets spanning genomics, satellite imagery, healthcare, and NLP.
+- ImageNet-C (Hendrycks & Dietterich, 2019): ImageNet with 19 types of common corruptions (blur, noise, weather) at 5 severity levels.
+- ANLI (Nie et al., 2020): Adversarially collected NLI dataset specifically designed to defeat current models through human-in-the-loop adversarial collection.
 
   ## Dataset Discovery and Access Infrastructure
 
@@ -431,5 +437,5 @@ A Dataset is a structured collection of data records sharing a common schema, ga
 
   **Domain-specific data commons**: Federated data sharing consortia in genomics (GA4GH Data Commons), climate science (PANGAEA, NCAR Research Data Archive), and astronomy (CDS, VizieR, ESO Science Archive) provide domain-expert-curated, high-quality datasets with strong metadata standards and access governance frameworks appropriate for scientific [[Deep Learning]] research.
 
-- ### Provenance
+### Provenance
 

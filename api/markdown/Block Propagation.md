@@ -1,53 +1,52 @@
-
 Block Propagation is the process by which a newly mined or validated block is broadcast across a blockchain peer-to-peer network so that all full nodes can update their local copy of the chain. Propagation latency directly influences the orphan/stale block rate, security against selfish mining, and the degree of centralisation pressure towards large, well-connected mining pools. Techniques such as Compact Block Relay (Bitcoin BIP 152) and Graphene reduce bandwidth requirements by sending block sketches rather than full transaction lists, exploiting the fact that recipient nodes already hold most transactions in their mempools.
 
 Block Propagation is the process by which a newly mined or validated block is broadcast across a blockchain peer-to-peer network so that all full nodes can update their local copy of the chain. Propagation latency directly influences the orphan/stale block rate, security against selfish mining, and the degree of centralisation pressure towards large, well-connected mining pools. Compact Block Relay (Bitcoin BIP 152) and Graphene reduce bandwidth by sending block sketches rather than full transaction lists.
 
-- ### Semantic Classification
+### Semantic Classification
 
-- ### Content
+### Content
 
-  ## Class Declaration
-  Declaration(Class(:BlockPropagation))
+## Class Declaration
+Declaration(Class(:BlockPropagation))
 
-  ## Subclass Relationships
-  SubClassOf(:BlockPropagation :ConsensusProtocol)
-  SubClassOf(:BlockPropagation :BlockchainEntity)
+## Subclass Relationships
+SubClassOf(:BlockPropagation :ConsensusProtocol)
+SubClassOf(:BlockPropagation :BlockchainEntity)
 
-  ## Essential Properties
-  SubClassOf(:BlockPropagation
-    (ObjectSomeValuesFrom :partOf :Blockchain))
+## Essential Properties
+SubClassOf(:BlockPropagation
+  (ObjectSomeValuesFrom :partOf :Blockchain))
 
-  SubClassOf(:BlockPropagation
-    (ObjectSomeValuesFrom :hasProperty :Property))
+SubClassOf(:BlockPropagation
+  (ObjectSomeValuesFrom :hasProperty :Property))
 
-  ## Data Properties
-  DataPropertyAssertion(:hasIdentifier :BlockPropagation "BC-0062"^^xsd:string)
-  DataPropertyAssertion(:hasAuthorityScore :BlockPropagation "1.0"^^xsd:decimal)
-  DataPropertyAssertion(:isFoundational :BlockPropagation "true"^^xsd:boolean)
+## Data Properties
+DataPropertyAssertion(:hasIdentifier :BlockPropagation "BC-0062"^^xsd:string)
+DataPropertyAssertion(:hasAuthorityScore :BlockPropagation "1.0"^^xsd:decimal)
+DataPropertyAssertion(:isFoundational :BlockPropagation "true"^^xsd:boolean)
 
-  ## Object Properties
-  ObjectPropertyAssertion(:enablesFeature :BlockPropagation :BlockchainFeature)
-  ObjectPropertyAssertion(:relatesTo :BlockPropagation :RelatedConcept)
+## Object Properties
+ObjectPropertyAssertion(:enablesFeature :BlockPropagation :BlockchainFeature)
+ObjectPropertyAssertion(:relatesTo :BlockPropagation :RelatedConcept)
 
-  ## Annotations
-  AnnotationAssertion(rdfs:label :BlockPropagation "Block Propagation"@en)
-  AnnotationAssertion(rdfs:comment :BlockPropagation
-    "Network block distribution"@en)
-  AnnotationAssertion(dct:description :BlockPropagation
-    "Foundational blockchain concept with formal ontological definition"@en)
-  AnnotationAssertion(:termID :BlockPropagation "BC-0062")
-  AnnotationAssertion(:priority :BlockPropagation "1"^^xsd:integer)
-  AnnotationAssertion(:category :BlockPropagation "consensus-fundamentals"@en)
-  )
+## Annotations
+AnnotationAssertion(rdfs:label :BlockPropagation "Block Propagation"@en)
+AnnotationAssertion(rdfs:comment :BlockPropagation
+  "Network block distribution"@en)
+AnnotationAssertion(dct:description :BlockPropagation
+  "Foundational blockchain concept with formal ontological definition"@en)
+AnnotationAssertion(:termID :BlockPropagation "BC-0062")
+AnnotationAssertion(:priority :BlockPropagation "1"^^xsd:integer)
+AnnotationAssertion(:category :BlockPropagation "consensus-fundamentals"@en)
+)
 
-  When a miner or validator produces a valid block, it must flood that block through the peer-to-peer gossip network as rapidly as possible. Every millisecond of delay increases the probability that another node discovers a competing block at the same height, creating a fork that the network must resolve by discarding one branch. The discarded branch's transactions return to the mempool and its miner's revenue is wasted, creating a strong economic incentive for fast propagation.
+When a miner or validator produces a valid block, it must flood that block through the peer-to-peer gossip network as rapidly as possible. Every millisecond of delay increases the probability that another node discovers a competing block at the same height, creating a fork that the network must resolve by discarding one branch. The discarded branch's transactions return to the mempool and its miner's revenue is wasted, creating a strong economic incentive for fast propagation.
 
-  Bitcoin's original block announcement protocol required sending the full block payload, wasting bandwidth on transactions the receiving peer already held. BIP 152 Compact Blocks (2016) addressed this by sending only short transaction identifiers; the receiver reconstructs the full block from its own mempool and requests only the small fraction of missing transactions. Graphene (a research proposal) further compresses the sketch using invertible Bloom lookup tables and Bloom filters, achieving compression ratios an order of magnitude better than Compact Blocks for typical mempool overlap.
+Bitcoin's original block announcement protocol required sending the full block payload, wasting bandwidth on transactions the receiving peer already held. BIP 152 Compact Blocks (2016) addressed this by sending only short transaction identifiers; the receiver reconstructs the full block from its own mempool and requests only the small fraction of missing transactions. Graphene (a research proposal) further compresses the sketch using invertible Bloom lookup tables and Bloom filters, achieving compression ratios an order of magnitude better than Compact Blocks for typical mempool overlap.
 
-  The relationship between block size and propagation time has significant security consequences. In the selfish mining attack, a pool that propagates its blocks faster than competitors can withhold discovered blocks briefly to gain a head start on the next block, earning more than its fair share of rewards. Geographic concentration of miners around high-bandwidth data centres reduces average propagation times for those miners, creating centralisation pressure that undermines the decentralisation goals of proof-of-work chains.
+The relationship between block size and propagation time has significant security consequences. In the selfish mining attack, a pool that propagates its blocks faster than competitors can withhold discovered blocks briefly to gain a head start on the next block, earning more than its fair share of rewards. Geographic concentration of miners around high-bandwidth data centres reduces average propagation times for those miners, creating centralisation pressure that undermines the decentralisation goals of proof-of-work chains.
 
-  Block propagation is a key variable in blockchain scalability research. Systems that tolerate high block frequencies (such as PHANTOM/GHOSTDAG DAG-based protocols) must propagate blocks before the next block arrives, requiring propagation to complete within seconds rather than the ten-minute Bitcoin interval. This imposes network topology constraints that large-scale deployments must carefully architect.
+Block propagation is a key variable in blockchain scalability research. Systems that tolerate high block frequencies (such as PHANTOM/GHOSTDAG DAG-based protocols) must propagate blocks before the next block arrives, requiring propagation to complete within seconds rather than the ten-minute Bitcoin interval. This imposes network topology constraints that large-scale deployments must carefully architect.
 
-- ### Provenance
+### Provenance
 

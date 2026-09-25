@@ -1,3 +1,2 @@
-
 A disentangled representation is a learned representation in which distinct, semantically meaningful factors of variation in the data — such as an object's shape, colour and pose — are captured by separate, largely independent dimensions of the latent space, so that changing one factor leaves the others unaffected. It is a goal of representation learning that improves interpretability and enables controlled generation, since manipulating a single latent dimension produces a predictable, isolated change in the output. Variational autoencoders and related generative models are commonly used to encourage disentanglement, for example through additional regularisation terms that penalise correlation between latent dimensions.
 

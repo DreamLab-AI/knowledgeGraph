@@ -1,64 +1,81 @@
-
 Imperial College London is a public research university in South Kensington, London, specialising in science, engineering, medicine, and business, founded in 1907 through the merger of the Royal College of Science, the Royal School of Mines, and the City and Guilds College. It gained full independence from the University of London on its centenary in 2007, and is consistently ranked among the world's top universities for STEM disciplines. The college is internationally recognised for research across artificial intelligence, machine learning, bioengineering, robotics, quantum computing, climate science, and computational biology. As a founding member of the Russell Group and a partner in numerous global research consortia, Imperial serves as a key node in the United Kingdom's knowledge and innovation infrastructure.
 
-- ### Overview
-  - Imperial College London occupies a distinctive position in global higher education as one of a small number of universities focused almost exclusively on STEM and medical disciplines. This focus has made it a concentration point for applied research that bridges academia and industry.
-  - The college operates through multiple faculties — Engineering, Natural Sciences, Medicine, and Business — and supports a growing portfolio of interdisciplinary institutes.
-  - Strategically, Imperial functions as a knowledge-production and [[Technology Transfer]] hub, with strong industry partnerships and an active [[Spin-out Company]] ecosystem. Its White City Innovation District campus is dedicated to large-scale collaborative research with industry.
-  - Imperial is a member of the [[Russell Group]] of research-intensive UK universities and a key partner of the [[Alan Turing Institute]], the UK's national institute for data science and artificial intelligence.
+### Overview
 
-- ### Key Components
-  - #### Faculties and Departments
-    - [[Department of Computing]] — one of the UK's leading computing departments, covering [[Artificial Intelligence Research]], [[Machine Learning]], [[Natural Language Processing]], [[Computer Vision]], [[Distributed Systems]], and [[Security]]
-    - [[Faculty of Medicine]] — a major UK medical school with research spanning epidemiology, genomics, immunology, and [[Bioengineering]]
-    - Faculty of Engineering — covers [[Robotics]], [[Biomedical Engineering]], civil, mechanical, chemical, and electrical engineering
-    - Faculty of Natural Sciences — covers physics, chemistry, mathematics, earth sciences, and [[Life Sciences]]
-    - Imperial College Business School — research in finance, data analytics, entrepreneurship
-  - #### Research Centres and Institutes
-    - [[Imperial-X]] — a cross-faculty initiative at White City focused on translation of research into real-world applications
-    - Hamlyn Centre — world-leading centre for [[Medical Robotics]] and image-guided intervention
-    - Data Science Institute — coordinates activities in [[Data Science]], [[Machine Learning]], and [[Open Science]]
-    - Institute for Security Science and Technology — interdisciplinary work in [[Security]] and resilience
-    - Grantham Institute — climate change research bridging to [[Sustainability]] and environmental governance
-  - #### Infrastructure
-    - [[High Performance Computing]] cluster (Imperial HPC) underpinning large-scale simulations and [[Deep Learning]] training
-    - Cloud research partnerships with hyperscale providers enabling scalable [[Machine Learning]] workflows
-    - South Kensington and [[White City Innovation District]] campuses
-    - Extensive wet laboratory, clinical research, and fabrication facilities
+- Imperial College London occupies a distinctive position in global higher education as one of a small number of universities focused almost exclusively on STEM and medical disciplines. This focus has made it a concentration point for applied research that bridges academia and industry.
+- The college operates through multiple faculties — Engineering, Natural Sciences, Medicine, and Business — and supports a growing portfolio of interdisciplinary institutes.
+- Strategically, Imperial functions as a knowledge-production and [[Technology Transfer]] hub, with strong industry partnerships and an active [[Spin-out Company]] ecosystem. Its White City Innovation District campus is dedicated to large-scale collaborative research with industry.
+- Imperial is a member of the [[Russell Group]] of research-intensive UK universities and a key partner of the [[Alan Turing Institute]], the UK's national institute for data science and artificial intelligence.
 
-- ### Applications and Use Cases
-  - #### Artificial Intelligence and Machine Learning
-    - Research on [[Federated Learning]], [[Reinforcement Learning]], [[Probabilistic Machine Learning]], and [[Causal Inference]] conducted within the Department of Computing
-    - Medical AI applications including early disease detection, diagnostic imaging analysis using [[Computer Vision]], and clinical [[Natural Language Processing]]
-    - Contributions to [[Explainable AI]] and algorithmic fairness, relevant to [[AI Governance]]
-  - #### Robotics and Autonomous Systems
-    - Surgical [[Robotics]] systems developed at the Hamlyn Centre used in clinical practice internationally
-    - Autonomous drone and ground-vehicle research across Engineering faculty
-    - Soft robotics and [[Biomedical Engineering]] devices bridging into [[Medical Devices]]
-  - #### Computational and Data Science
-    - Large-scale epidemiological modelling (including pandemic response modelling)
-    - [[Digital Twin]] frameworks for built environment and energy systems
-    - [[Quantum Computing]] algorithms research, contributing to [[Distributed Systems]] and cryptographic security
-  - #### Technology Transfer and Industry Collaboration
-    - [[Spin-out Company]] formation through Imperial Innovations and Imperial College Enterprise
-    - Structured [[Technology Transfer]] pathways for IP developed within the university
-    - Co-location with industry partners at White City enabling rapid [[Open Innovation]] cycles
+### Key Components
 
-- ### Standards and Context
-  - As a UK research university, Imperial operates under the framework of the [[UK Research and Innovation]] (UKRI) funding landscape, receiving grants from EPSRC (engineering and physical sciences), BBSRC (biosciences), MRC (medical research), and other research councils.
-  - The college adheres to the [[Concordat to Support Research Integrity]] and follows FAIR data principles (Findable, Accessible, Interoperable, Reusable) across its data science outputs, aligning with [[Open Science]] norms.
-  - As a partner of the [[Alan Turing Institute]], Imperial contributes to the national strategy for [[Artificial Intelligence Research]] and [[Data Science]] governance in the UK.
-  - Research Ethics frameworks govern AI and biomedical research, connecting to [[AI Ethics]] and [[Responsible AI]] principles increasingly mandated by UK and EU regulators.
-  - Imperial is signatory to the San Francisco Declaration on Research Assessment (DORA), influencing how it evaluates research impact — relevant to [[Knowledge Management]] and academic governance.
+#### Faculties and Departments
 
-- ### Notable Research Contributions
-  - Foundational work in [[Bayesian Machine Learning]] and [[Probabilistic Machine Learning]] (including Gaussian processes)
-  - Contributions to [[Reinforcement Learning]] theory and applications
-  - Pioneering work in [[Medical Robotics]] and minimally invasive surgery
-  - COVID-19 modelling (MRC Centre for Global Infectious Disease Analysis) that informed UK and global policy
-  - Research into [[Quantum Computing]] algorithms applicable to cryptography and [[Optimisation]]
-  - Environmental and climate modelling connecting to [[Digital Twin]] representations of Earth systems
+- [[Department of Computing]] — one of the UK's leading computing departments, covering [[Artificial Intelligence Research]], [[Machine Learning]], [[Natural Language Processing]], [[Computer Vision]], [[Distributed Systems]], and [[Security]]
+- [[Faculty of Medicine]] — a major UK medical school with research spanning epidemiology, genomics, immunology, and [[Bioengineering]]
+- Faculty of Engineering — covers [[Robotics]], [[Biomedical Engineering]], civil, mechanical, chemical, and electrical engineering
+- Faculty of Natural Sciences — covers physics, chemistry, mathematics, earth sciences, and [[Life Sciences]]
+- Imperial College Business School — research in finance, data analytics, entrepreneurship
 
-- ### Provenance
-  - **domain-remap-note:** Original domain was "governance"; remapped to "ai" reflecting the college's primary ontological role in this knowledge graph as an AI/ML research institution; governance domain reserved for regulatory and policy entities
+#### Research Centres and Institutes
+
+- [[Imperial-X]] — a cross-faculty initiative at White City focused on translation of research into real-world applications
+- Hamlyn Centre — world-leading centre for [[Medical Robotics]] and image-guided intervention
+- Data Science Institute — coordinates activities in [[Data Science]], [[Machine Learning]], and [[Open Science]]
+- Institute for Security Science and Technology — interdisciplinary work in [[Security]] and resilience
+- Grantham Institute — climate change research bridging to [[Sustainability]] and environmental governance
+
+#### Infrastructure
+
+- [[High Performance Computing]] cluster (Imperial HPC) underpinning large-scale simulations and [[Deep Learning]] training
+- Cloud research partnerships with hyperscale providers enabling scalable [[Machine Learning]] workflows
+- South Kensington and [[White City Innovation District]] campuses
+- Extensive wet laboratory, clinical research, and fabrication facilities
+
+### Applications and Use Cases
+
+#### Artificial Intelligence and Machine Learning
+
+- Research on [[Federated Learning]], [[Reinforcement Learning]], [[Probabilistic Machine Learning]], and [[Causal Inference]] conducted within the Department of Computing
+- Medical AI applications including early disease detection, diagnostic imaging analysis using [[Computer Vision]], and clinical [[Natural Language Processing]]
+- Contributions to [[Explainable AI]] and algorithmic fairness, relevant to [[AI Governance]]
+
+#### Robotics and Autonomous Systems
+
+- Surgical [[Robotics]] systems developed at the Hamlyn Centre used in clinical practice internationally
+- Autonomous drone and ground-vehicle research across Engineering faculty
+- Soft robotics and [[Biomedical Engineering]] devices bridging into [[Medical Devices]]
+
+#### Computational and Data Science
+
+- Large-scale epidemiological modelling (including pandemic response modelling)
+- [[Digital Twin]] frameworks for built environment and energy systems
+- [[Quantum Computing]] algorithms research, contributing to [[Distributed Systems]] and cryptographic security
+
+#### Technology Transfer and Industry Collaboration
+
+- [[Spin-out Company]] formation through Imperial Innovations and Imperial College Enterprise
+- Structured [[Technology Transfer]] pathways for IP developed within the university
+- Co-location with industry partners at White City enabling rapid [[Open Innovation]] cycles
+
+### Standards and Context
+
+- As a UK research university, Imperial operates under the framework of the [[UK Research and Innovation]] (UKRI) funding landscape, receiving grants from EPSRC (engineering and physical sciences), BBSRC (biosciences), MRC (medical research), and other research councils.
+- The college adheres to the [[Concordat to Support Research Integrity]] and follows FAIR data principles (Findable, Accessible, Interoperable, Reusable) across its data science outputs, aligning with [[Open Science]] norms.
+- As a partner of the [[Alan Turing Institute]], Imperial contributes to the national strategy for [[Artificial Intelligence Research]] and [[Data Science]] governance in the UK.
+- Research Ethics frameworks govern AI and biomedical research, connecting to [[AI Ethics]] and [[Responsible AI]] principles increasingly mandated by UK and EU regulators.
+- Imperial is signatory to the San Francisco Declaration on Research Assessment (DORA), influencing how it evaluates research impact — relevant to [[Knowledge Management]] and academic governance.
+
+### Notable Research Contributions
+
+- Foundational work in [[Bayesian Machine Learning]] and [[Probabilistic Machine Learning]] (including Gaussian processes)
+- Contributions to [[Reinforcement Learning]] theory and applications
+- Pioneering work in [[Medical Robotics]] and minimally invasive surgery
+- COVID-19 modelling (MRC Centre for Global Infectious Disease Analysis) that informed UK and global policy
+- Research into [[Quantum Computing]] algorithms applicable to cryptography and [[Optimisation]]
+- Environmental and climate modelling connecting to [[Digital Twin]] representations of Earth systems
+
+### Provenance
+
+- **domain-remap-note:** Original domain was "governance"; remapped to "ai" reflecting the college's primary ontological role in this knowledge graph as an AI/ML research institution; governance domain reserved for regulatory and policy entities
 

@@ -1,16 +1,16 @@
-
 The organisational framework governing how a story's events, character arcs, and thematic elements are arranged across time to produce meaning and audience engagement. In spatial and interactive contexts, narrative structure governs branching paths, player agency, and the sequencing of immersive experiences within virtual worlds and game environments.
 
-- ### Semantic Classification
+### Semantic Classification
 
-- ### Content
+### Content
 
-  ## Overview
+## Overview
 
-  Narrative Structure represents an abstract concept in the metaverse ontology hierarchy.
+Narrative Structure represents an abstract concept in the metaverse ontology hierarchy.
 
-  #### Related Concepts
-  - [[owl:Thing]]
+#### Related Concepts
 
-- ### Provenance
+- [[owl:Thing]]
+
+### Provenance
 

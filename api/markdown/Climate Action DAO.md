@@ -1,133 +1,149 @@
-
 A decentralized autonomous organization (DAO) governed by blockchain-based smart contracts and token-weighted voting that coordinates collective action toward climate change mitigation, adaptation, and environmental sustainability through transparent, democratic mechanisms for funding climate pro...
 
-- ### Semantic Classification
+### Semantic Classification
 
-- ### Content
-  Climate Action DAOs represent an innovative intersection of blockchain technology, decentralized governance, and environmental sustainability, emerging as a key component of the Regenerative Finance (ReFi) movement. These organizations leverage smart contracts to create transparent, democratic systems for collective climate action, addressing coordination failures in traditional environmental governance where disparate actors (governments, NGOs, corporations, individuals) struggle to align incentives and mobilize capital efficiently toward shared climate goals.
+### Content
 
-  Unlike traditional climate organizations with opaque decision-making and high overhead costs, Climate Action DAOs operate through on-chain governance where token holders propose, debate, and vote on climate initiatives, carbon credit purchases, project funding allocations, and treasury management strategies. All transactions, votes, and treasury balances are publicly auditable on the blockchain, ensuring accountability and reducing corruption risks. Smart contracts automate execution of approved proposals, eliminating administrative delays and reducing intermediary costs by 60-80% compared to conventional grant-making institutions.
+Climate Action DAOs represent an innovative intersection of blockchain technology, decentralized governance, and environmental sustainability, emerging as a key component of the Regenerative Finance (ReFi) movement. These organizations leverage smart contracts to create transparent, democratic systems for collective climate action, addressing coordination failures in traditional environmental governance where disparate actors (governments, NGOs, corporations, individuals) struggle to align incentives and mobilize capital efficiently toward shared climate goals.
 
-  The total market capitalization of climate-focused DAOs exceeded **$500 million** in 2025, with **KlimaDAO** managing the largest carbon credit treasury (over **20 million tonnes CO₂e tokenized**), **Gitcoin Climate Solutions** distributing **$15 million+** to 250+ climate projects via quadratic funding, and **Celo Climate Collective** coordinating **$100 million** carbon-negative blockchain infrastructure. These organizations demonstrate that decentralized coordination can achieve climate impact at scale, though challenges persist around governance capture by large token holders, verification of carbon credit quality, and regulatory uncertainty.
+Unlike traditional climate organizations with opaque decision-making and high overhead costs, Climate Action DAOs operate through on-chain governance where token holders propose, debate, and vote on climate initiatives, carbon credit purchases, project funding allocations, and treasury management strategies. All transactions, votes, and treasury balances are publicly auditable on the blockchain, ensuring accountability and reducing corruption risks. Smart contracts automate execution of approved proposals, eliminating administrative delays and reducing intermediary costs by 60-80% compared to conventional grant-making institutions.
 
-  ### Core Mechanisms of Climate Action DAOs
+The total market capitalization of climate-focused DAOs exceeded **$500 million** in 2025, with **KlimaDAO** managing the largest carbon credit treasury (over **20 million tonnes CO₂e tokenized**), **Gitcoin Climate Solutions** distributing **$15 million+** to 250+ climate projects via quadratic funding, and **Celo Climate Collective** coordinating **$100 million** carbon-negative blockchain infrastructure. These organizations demonstrate that decentralized coordination can achieve climate impact at scale, though challenges persist around governance capture by large token holders, verification of carbon credit quality, and regulatory uncertainty.
 
-  **Governance Token Distribution:**
-  - **Purpose**: Tokens represent voting power and align participant incentives with DAO mission
-  - **Allocation models**:
-  - **Airdrop** to climate project contributors (Gitcoin GTC token to past donors)
-  - **Bonding** carbon credits or liquidity provision (KlimaDAO KLIMA token via bonding BCT/MCO2)
-  - **Retroactive rewards** for verified climate impact (Optimism RetroPGF, Celo cLabs grants)
-  - **Quadratic funding** participation (Gitcoin Grants)
-  - **Risks**: Whale dominance (large holders controlling votes), sybil attacks (fake identities for airdrops), mercenary capital (extractive liquidity mining)
+### Core Mechanisms of Climate Action DAOs
+
+**Governance Token Distribution:**
+
+- **Purpose**: Tokens represent voting power and align participant incentives with DAO mission
+- **Allocation models**:
+- **Airdrop** to climate project contributors (Gitcoin GTC token to past donors)
+- **Bonding** carbon credits or liquidity provision (KlimaDAO KLIMA token via bonding BCT/MCO2)
+- **Retroactive rewards** for verified climate impact (Optimism RetroPGF, Celo cLabs grants)
+- **Quadratic funding** participation (Gitcoin Grants)
+- **Risks**: Whale dominance (large holders controlling votes), sybil attacks (fake identities for airdrops), mercenary capital (extractive liquidity mining)
 
   **Proposal and Voting Systems:**
-  - **On-chain voting**: Snapshot (gas-free voting), Governor Alpha/Bravo (on-chain execution), Tally (governance dashboard)
-  - **Quorum requirements**: Typically 5-15% of circulating supply must participate for valid vote
-  - **Voting strategies**: Simple majority, supermajority (66.7%), quadratic voting (diminishing returns for large holders)
-  - **Delegation**: Token holders delegate voting power to subject-matter experts or active community members
-  - **Time-lock**: Executed proposals delayed 24-72 hours to allow community reaction and emergency veto
+
+- **On-chain voting**: Snapshot (gas-free voting), Governor Alpha/Bravo (on-chain execution), Tally (governance dashboard)
+- **Quorum requirements**: Typically 5-15% of circulating supply must participate for valid vote
+- **Voting strategies**: Simple majority, supermajority (66.7%), quadratic voting (diminishing returns for large holders)
+- **Delegation**: Token holders delegate voting power to subject-matter experts or active community members
+- **Time-lock**: Executed proposals delayed 24-72 hours to allow community reaction and emergency veto
 
   **Treasury Management:**
-  - **Assets held**: Stablecoins (USDC, DAI), carbon credit tokens (BCT, NCT, MCO2), native tokens (KLIMA, GTC)
-  - **Diversification strategies**: 50-70% stablecoins for operational stability, 20-40% carbon credits for mission alignment, 10% native token for incentives
-  - **Yield optimization**: DeFi protocols (Aave, Compound) for treasury interest, liquidity provision on Uniswap/Curve
-  - **Spending proposals**: Community votes on grants (10-500k USDC per project), carbon credit retirements (1,000-10,000 tonnes CO₂e), operational expenses (development, audits, marketing)
+
+- **Assets held**: Stablecoins (USDC, DAI), carbon credit tokens (BCT, NCT, MCO2), native tokens (KLIMA, GTC)
+- **Diversification strategies**: 50-70% stablecoins for operational stability, 20-40% carbon credits for mission alignment, 10% native token for incentives
+- **Yield optimization**: DeFi protocols (Aave, Compound) for treasury interest, liquidity provision on Uniswap/Curve
+- **Spending proposals**: Community votes on grants (10-500k USDC per project), carbon credit retirements (1,000-10,000 tonnes CO₂e), operational expenses (development, audits, marketing)
 
   **Impact Verification and Metrics:**
-  - **Carbon credits**: Third-party verification (Verra VCS, Gold Standard, Climate Action Reserve) before DAO purchase
-  - **Project milestones**: Deliverable-based funding tranches with community review
-  - **Impact dashboards**: Dune Analytics, Token Terminal tracking tonnes CO₂e retired, funds distributed, projects funded
-  - **Greenwashing prevention**: DAO members audit projects, blacklist low-quality credits (e.g., REDD+ projects with reversal risk)
+
+- **Carbon credits**: Third-party verification (Verra VCS, Gold Standard, Climate Action Reserve) before DAO purchase
+- **Project milestones**: Deliverable-based funding tranches with community review
+- **Impact dashboards**: Dune Analytics, Token Terminal tracking tonnes CO₂e retired, funds distributed, projects funded
+- **Greenwashing prevention**: DAO members audit projects, blacklist low-quality credits (e.g., REDD+ projects with reversal risk)
 
   ### Major Climate Action DAOs (2024-2026)
 
   **KlimaDAO (Polygon, Launched 2021)**
-  - **Mission**: Accelerate carbon credit price appreciation to make polluting expensive
-  - **Mechanism**: "Carbon-backed currency" where KLIMA token backed by 1+ tonne CO₂e, treasury accumulation via bonding
-  - **Treasury**: 20 million tonnes CO₂e (peak), $400 million market cap (2021), declined to $15 million (2024) amid broader DAO bear market
-  - **Impact**: Retired 17 million tonnes CO₂e, drove carbon credit tokenization boom, exposed low-quality credit issues
-  - **Governance**: 15,000+ KLIMA holders, proposals via Snapshot, 4% quorum requirement
-  - **Criticism**: Token price crash (99.5% from peak), mercenary liquidity mining, questionable carbon credit quality (REDD+ projects)
+
+- **Mission**: Accelerate carbon credit price appreciation to make polluting expensive
+- **Mechanism**: "Carbon-backed currency" where KLIMA token backed by 1+ tonne CO₂e, treasury accumulation via bonding
+- **Treasury**: 20 million tonnes CO₂e (peak), $400 million market cap (2021), declined to $15 million (2024) amid broader DAO bear market
+- **Impact**: Retired 17 million tonnes CO₂e, drove carbon credit tokenization boom, exposed low-quality credit issues
+- **Governance**: 15,000+ KLIMA holders, proposals via Snapshot, 4% quorum requirement
+- **Criticism**: Token price crash (99.5% from peak), mercenary liquidity mining, questionable carbon credit quality (REDD+ projects)
 
   **Toucan Protocol (Celo/Polygon, Launched 2021)**
-  - **Mission**: Bridge voluntary carbon credits to blockchain for transparent, liquid carbon markets
-  - **Products**: Base Carbon Tonnes (BCT), Nature Carbon Tonnes (NCT) tokenized carbon pools
-  - **Scale**: 27 million tonnes CO₂e bridged, $150 million market cap (2024)
-  - **Integration**: KlimaDAO (primary buyer), Celo (carbon-negative blockchain), Uniswap (liquidity pools)
-  - **Governance**: Toucan DAO with TCO2 governance token (launched 2024)
-  - **Challenges**: Verra ban on tokenization (May 2023, reversed Nov 2023), regulatory scrutiny
+
+- **Mission**: Bridge voluntary carbon credits to blockchain for transparent, liquid carbon markets
+- **Products**: Base Carbon Tonnes (BCT), Nature Carbon Tonnes (NCT) tokenized carbon pools
+- **Scale**: 27 million tonnes CO₂e bridged, $150 million market cap (2024)
+- **Integration**: KlimaDAO (primary buyer), Celo (carbon-negative blockchain), Uniswap (liquidity pools)
+- **Governance**: Toucan DAO with TCO2 governance token (launched 2024)
+- **Challenges**: Verra ban on tokenization (May 2023, reversed Nov 2023), regulatory scrutiny
 
   **Gitcoin Climate Solutions (Ethereum, Launched 2022)**
-  - **Mission**: Fund open-source climate technology via quadratic funding (QF)
-  - **Mechanism**: Community donations matched by sponsors with QF algorithm (favors many small donors over few large)
-  - **Impact**: $15 million distributed (2022-2025), 250+ climate projects funded (renewable energy software, carbon accounting tools, climate education)
-  - **Notable projects**: Hypercerts (impact certificates), ReFi DAO coordination, MRV (measurement, reporting, verification) tools
-  - **Governance**: GTC token holders vote on matching pool allocations, grant categories, anti-sybil measures
+
+- **Mission**: Fund open-source climate technology via quadratic funding (QF)
+- **Mechanism**: Community donations matched by sponsors with QF algorithm (favors many small donors over few large)
+- **Impact**: $15 million distributed (2022-2025), 250+ climate projects funded (renewable energy software, carbon accounting tools, climate education)
+- **Notable projects**: Hypercerts (impact certificates), ReFi DAO coordination, MRV (measurement, reporting, verification) tools
+- **Governance**: GTC token holders vote on matching pool allocations, grant categories, anti-sybil measures
 
   **Celo Climate Collective (Celo Blockchain, Launched 2021)**
-  - **Mission**: Offset Celo blockchain's carbon footprint and fund regenerative finance
-  - **Treasury**: $100 million (cUSD, CELO) from protocol transaction fees
-  - **Mechanism**: Automatic carbon offset of every transaction (0.001% transaction fee to climate fund)
-  - **Projects funded**: 30+ regenerative agriculture, reforestation, renewable energy in developing countries
-  - **Governance**: Celo token holders propose climate initiatives via governance forum
+
+- **Mission**: Offset Celo blockchain's carbon footprint and fund regenerative finance
+- **Treasury**: $100 million (cUSD, CELO) from protocol transaction fees
+- **Mechanism**: Automatic carbon offset of every transaction (0.001% transaction fee to climate fund)
+- **Projects funded**: 30+ regenerative agriculture, reforestation, renewable energy in developing countries
+- **Governance**: Celo token holders propose climate initiatives via governance forum
 
   **Regen Network (Cosmos, Launched 2021)**
-  - **Mission**: Ecological data marketplace for verified environmental outcomes
-  - **Products**: Regen Registry (MRV for carbon, biodiversity, soil health), ecocredits (tokenized ecological benefits)
-  - **Scale**: 500,000+ hectares monitored, 1 million tonnes CO₂e verified
-  - **Governance**: REGEN token voting on registry methodologies, credit approval, treasury allocation
-  - **Innovation**: Remote sensing + IoT integration for automated ecological monitoring
+
+- **Mission**: Ecological data marketplace for verified environmental outcomes
+- **Products**: Regen Registry (MRV for carbon, biodiversity, soil health), ecocredits (tokenized ecological benefits)
+- **Scale**: 500,000+ hectares monitored, 1 million tonnes CO₂e verified
+- **Governance**: REGEN token voting on registry methodologies, credit approval, treasury allocation
+- **Innovation**: Remote sensing + IoT integration for automated ecological monitoring
 
   ### Quadratic Funding for Climate Projects
 
   Quadratic Funding (QF), pioneered by Vitalik Buterin, Zoë Hitzig, and Glen Weyl (2018), represents a mathematically optimal mechanism for public goods funding by prioritizing projects with broad community support rather than large individual donors. The formula calculates matching funds as the square of the sum of square roots of individual contributions, creating quadratic returns for projects with many supporters.
 
   **Mathematical Example:**
-  - Project A: 1 donor × $100 = √100 = 10 → 10² = $100 match
-  - Project B: 100 donors × $1 = (√1 × 100) = 100 → 100² = $10,000 match
+
+- Project A: 1 donor × $100 = √100 = 10 → 10² = $100 match
+- Project B: 100 donors × $1 = (√1 × 100) = 100 → 100² = $10,000 match
 
   Despite equal total donations ($100), Project B receives 100× matching funds due to broader support, incentivizing grassroots mobilization over plutocratic influence.
 
   **Gitcoin Climate Rounds** (GR13-GR18, 2022-2024):
-  - **Total distributed**: $15 million to 250+ projects
-  - **Donor participation**: 50,000+ unique contributors
-  - **Matching pool**: $2-3 million per round from sponsors (Protocol Labs, Ethereum Foundation, Polygon)
-  - **Top categories**: Renewable energy software (15%), carbon accounting tools (12%), climate education (10%), regenerative agriculture (8%)
+
+- **Total distributed**: $15 million to 250+ projects
+- **Donor participation**: 50,000+ unique contributors
+- **Matching pool**: $2-3 million per round from sponsors (Protocol Labs, Ethereum Foundation, Polygon)
+- **Top categories**: Renewable energy software (15%), carbon accounting tools (12%), climate education (10%), regenerative agriculture (8%)
 
   **Challenges in QF for Climate:**
-  - **Sybil attacks**: Fake identities splitting donations to game matching algorithm
-  - **Collusion**: Donors coordinating to funnel funds to specific projects
-  - **Verification**: Ensuring funded projects deliver claimed climate impact
-  - **Solutions**: Gitcoin Passport (proof-of-humanity via stamps), BrightID (social graph verification), milestones-based disbursement
+
+- **Sybil attacks**: Fake identities splitting donations to game matching algorithm
+- **Collusion**: Donors coordinating to funnel funds to specific projects
+- **Verification**: Ensuring funded projects deliver claimed climate impact
+- **Solutions**: Gitcoin Passport (proof-of-humanity via stamps), BrightID (social graph verification), milestones-based disbursement
 
   ### Governance Challenges and Solutions
 
   **Plutocracy Risk (Whale Dominance):**
-  - **Problem**: Large token holders (whales) control votes, extracting value or directing funds to pet projects
-  - **Mitigation**:
-  - **Quadratic voting**: Vote cost increases quadratically (1 vote = 1 token, 2 votes = 4 tokens, 10 votes = 100 tokens), reducing whale influence
-  - **Vote delegation**: Whales delegate to subject-matter experts (e.g., climate scientists vote on carbon credit quality)
-  - **Reputation-weighted voting**: Combine token holdings with participation history, expertise credentials
+
+- **Problem**: Large token holders (whales) control votes, extracting value or directing funds to pet projects
+- **Mitigation**:
+- **Quadratic voting**: Vote cost increases quadratically (1 vote = 1 token, 2 votes = 4 tokens, 10 votes = 100 tokens), reducing whale influence
+- **Vote delegation**: Whales delegate to subject-matter experts (e.g., climate scientists vote on carbon credit quality)
+- **Reputation-weighted voting**: Combine token holdings with participation history, expertise credentials
 
   **Low Participation:**
-  - **Problem**: <5% voter turnout typical, enabling minority rule
-  - **Solutions**:
-  - **Incentivized voting**: Governance mining rewards for participation (Compound COMP distribution)
-  - **Conviction voting**: Voters lock tokens for periods (1 week → 1x weight, 12 weeks → 4x weight), favoring long-term commitment
-  - **Liquid democracy**: Delegated voting with instant recall, enabling passive holders to empower active community members
+
+- **Problem**: <5% voter turnout typical, enabling minority rule
+- **Solutions**:
+- **Incentivized voting**: Governance mining rewards for participation (Compound COMP distribution)
+- **Conviction voting**: Voters lock tokens for periods (1 week → 1x weight, 12 weeks → 4x weight), favoring long-term commitment
+- **Liquid democracy**: Delegated voting with instant recall, enabling passive holders to empower active community members
 
   **Governance Attacks:**
-  - **Flash loan attacks**: Borrow massive token amounts to pass malicious proposal within single transaction
-  - **Mitigation**: Time-locks (24-72 hour delays), quorum requirements, proposal deposits (slashed if malicious)
-  - **Hostile takeovers**: Acquire >50% tokens to control treasury
-  - **Mitigation**: Circulating supply caps, gradual token unlocks, multi-sig emergency pauses
+
+- **Flash loan attacks**: Borrow massive token amounts to pass malicious proposal within single transaction
+- **Mitigation**: Time-locks (24-72 hour delays), quorum requirements, proposal deposits (slashed if malicious)
+- **Hostile takeovers**: Acquire >50% tokens to control treasury
+- **Mitigation**: Circulating supply caps, gradual token unlocks, multi-sig emergency pauses
 
   **Regulatory Uncertainty:**
-  - **Securities classification**: DAOs issuing governance tokens may violate securities laws (SEC Howey Test)
-  - **Tax treatment**: Unclear whether DAO treasuries subject to corporate tax, token holders to capital gains
-  - **Legal liability**: Who is liable if DAO-funded project fails or causes harm?
-  - **Emerging frameworks**: Wyoming DAO LLC (legal wrapper for DAOs), Cayman Islands Foundation Company
+
+- **Securities classification**: DAOs issuing governance tokens may violate securities laws (SEC Howey Test)
+- **Tax treatment**: Unclear whether DAO treasuries subject to corporate tax, token holders to capital gains
+- **Legal liability**: Who is liable if DAO-funded project fails or causes harm?
+- **Emerging frameworks**: Wyoming DAO LLC (legal wrapper for DAOs), Cayman Islands Foundation Company
 
   #### Current Landscape
   The Regenerative Finance (ReFi) movement represents the most significant expansion of climate-focused blockchain activity, with **ReFi DAO Alliance** coordinating 50+ DAOs managing over $1 billion in climate-aligned treasuries. This explosion stems from converging trends: (1) **DeFi maturation** providing infrastructure for treasury management and carbon credit liquidity, (2) **regulatory clarity** on token classifications in key jurisdictions, (3) **corporate ESG mandates** driving demand for transparent carbon offsetting, and (4) **Web3 for Good** narrative attracting mission-aligned developers and investors.
@@ -199,28 +215,34 @@ A decentralized autonomous organization (DAO) governed by blockchain-based smart
 
   #### Research & Literature
   **DAO Governance and Mechanism Design:**
-  - Buterin, V. (2017). *Notes on Blockchain Governance*. Available at: https://vitalik.eth.limo/general/2017/12/17/voting.html
-  - Buterin, V., Hitzig, Z., & Weyl, E. G. (2018). Liberal Radicalism: A Flexible Design For Philanthropic Matching Funds. *SSRN Electronic Journal*. DOI: 10.2139/ssrn.3243656
-  - Hsieh, Y.-Y., Vergne, J.-P., Anderson, P., Lakhani, K., & Reitzig, M. (2018). Bitcoin and the rise of decentralized autonomous organizations. *Journal of Organization Design*, 7(1), 14. DOI: 10.1186/s41469-018-0038-1
+
+- Buterin, V. (2017). *Notes on Blockchain Governance*. Available at: https://vitalik.eth.limo/general/2017/12/17/voting.html
+- Buterin, V., Hitzig, Z., & Weyl, E. G. (2018). Liberal Radicalism: A Flexible Design For Philanthropic Matching Funds. *SSRN Electronic Journal*. DOI: 10.2139/ssrn.3243656
+- Hsieh, Y.-Y., Vergne, J.-P., Anderson, P., Lakhani, K., & Reitzig, M. (2018). Bitcoin and the rise of decentralized autonomous organizations. *Journal of Organization Design*, 7(1), 14. DOI: 10.1186/s41469-018-0038-1
 
   **Carbon Markets and Climate Finance:**
-  - Coase, R. H. (1960). The Problem of Social Cost. *Journal of Law and Economics*, 3, 1-44. DOI: 10.1086/466560
-  - Howson, P. (2020). Building trust and equity in marine conservation and fisheries supply chain management with blockchain. *Marine Policy*, 115, 103873. DOI: 10.1016/j.marpol.2020.103873
-  - Klöck, C., Nuñez-Jimenez, A., & Lam, L. (2024). Carbon credit tokenization: Opportunities, risks, and governance challenges. *Nature Climate Change*, 14, 120-127. DOI: 10.1038/s41558-023-01912-5
+
+- Coase, R. H. (1960). The Problem of Social Cost. *Journal of Law and Economics*, 3, 1-44. DOI: 10.1086/466560
+- Howson, P. (2020). Building trust and equity in marine conservation and fisheries supply chain management with blockchain. *Marine Policy*, 115, 103873. DOI: 10.1016/j.marpol.2020.103873
+- Klöck, C., Nuñez-Jimenez, A., & Lam, L. (2024). Carbon credit tokenization: Opportunities, risks, and governance challenges. *Nature Climate Change*, 14, 120-127. DOI: 10.1038/s41558-023-01912-5
 
   **Collective Action and Public Goods:**
-  - Olson, M. (1965). *The Logic of Collective Action: Public Goods and the Theory of Groups*. Harvard University Press.
-  - Ostrom, E. (1990). *Governing the Commons: The Evolution of Institutions for Collective Action*. Cambridge University Press.
+
+- Olson, M. (1965). *The Logic of Collective Action: Public Goods and the Theory of Groups*. Harvard University Press.
+- Ostrom, E. (1990). *Governing the Commons: The Evolution of Institutions for Collective Action*. Cambridge University Press.
 
   **Quadratic Funding Empirics:**
-  - Patel, V., & Szuromi, N. (2023). Quadratic funding in practice: A case study of Gitcoin Grants. *Journal of Economic Behavior & Organization*, 215, 187-205. DOI: 10.1016/j.jebo.2023.09.012
+
+- Patel, V., & Szuromi, N. (2023). Quadratic funding in practice: A case study of Gitcoin Grants. *Journal of Economic Behavior & Organization*, 215, 187-205. DOI: 10.1016/j.jebo.2023.09.012
 
   **ReFi and Blockchain Climate Action:**
-  - ReFi DAO. (2024). *State of Regenerative Finance Report 2024*. Available at: https://refidao.com/reports/2024
-  - Toucan Protocol. (2023). *The Carbon Reference Currency: Bringing Transparency to Voluntary Carbon Markets*. Toucan Technical Whitepaper v2.1.
+
+- ReFi DAO. (2024). *State of Regenerative Finance Report 2024*. Available at: https://refidao.com/reports/2024
+- Toucan Protocol. (2023). *The Carbon Reference Currency: Bringing Transparency to Voluntary Carbon Markets*. Toucan Technical Whitepaper v2.1.
 
   **UK Climate Policy:**
-  - Committee on Climate Change. (2023). *Progress in Reducing UK Emissions: 2023 Report to Parliament*. Available at: https://www.theccc.org.uk/publication/2023-progress-report-to-parliament/
+
+- Committee on Climate Change. (2023). *Progress in Reducing UK Emissions: 2023 Report to Parliament*. Available at: https://www.theccc.org.uk/publication/2023-progress-report-to-parliament/
 
   #### References
   1. Buterin, V. (2017). *Notes on Blockchain Governance*. Available at: https://vitalik.eth.limo/general/2017/12/17/voting.html
@@ -247,5 +269,5 @@ A decentralized autonomous organization (DAO) governed by blockchain-based smart
 
   12. ReFi DAO. (2024). *State of Regenerative Finance Report 2024*. Available at: https://refidao.com/reports/2024
 
-- ### Provenance
+### Provenance
 

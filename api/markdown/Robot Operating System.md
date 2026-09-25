@@ -1,20 +1,19 @@
-
 The Robot Operating System (ROS / ROS 2) is an open-source middleware framework providing a structured communication layer, tool ecosystem, and package repository for robotic software development, enabling modular composition of perception, planning, and actuation subsystems through a publish-sub...
 
-- ### Semantic Classification
+### Semantic Classification
 
-- ### Content
+### Content
 
-  The Robot Operating System originated at Stanford AI Lab and Willow Garage around 2007 as a pragmatic solution to the code-duplication crisis in academic robotics: every lab was re-implementing the same wheel odometry, camera drivers, and path planners. ROS 1 introduced a peer-to-peer graph of lightweight processes ([[ROS Node]]s) exchanging typed messages on named channels ([[ROS Topic]]s), coordinated via a central parameter server called `rosmaster`. This architecture proved so productive that ROS became the dominant robotics middleware worldwide within five years.
+The Robot Operating System originated at Stanford AI Lab and Willow Garage around 2007 as a pragmatic solution to the code-duplication crisis in academic robotics: every lab was re-implementing the same wheel odometry, camera drivers, and path planners. ROS 1 introduced a peer-to-peer graph of lightweight processes ([[ROS Node]]s) exchanging typed messages on named channels ([[ROS Topic]]s), coordinated via a central parameter server called `rosmaster`. This architecture proved so productive that ROS became the dominant robotics middleware worldwide within five years.
 
-  #### Key Characteristics
+#### Key Characteristics
 
-  - **Node-Based Composition**: Functionality is decomposed into independent processes (nodes) that communicate over topics, services, and actions; this isolates faults and enables language mixing (Python nodes alongside C++ nodes).
-  - **Typed Interfaces**: Messages, services, and actions are defined in `.msg`, `.srv`, and `.action` files; the build system generates language-specific bindings, enforcing interface contracts across the graph.
-  - **DDS Transport (ROS 2)**: ROS 2 replaces the bespoke TCPROS/UDPROS transports with the OMG DDS standard, gaining Quality of Service (QoS) profiles — reliable, best-effort, transient-local — suitable for both real-time control loops and best-effort sensor streams.
-  - **Launch System**: Declarative XML or Python launch files describe multi-node topologies, parameter overrides, and remappings, enabling reproducible system bring-up.
-  - **Security (SROS2)**: DDS-Security plugins provide authentication (X.509 certificates), authorisation (access control), and encryption (RTPS payload encryption) at the middleware layer.
-  - **Tool Ecosystem**: `rviz2` for 3D visualisation, `rqt` for GUI tooling, `rosbag2` for recording and playback, `ros2 doctor` for diagnostics, and the `nav2` and `MoveIt 2` framework stacks for navigation and manipulation.
+- **Node-Based Composition**: Functionality is decomposed into independent processes (nodes) that communicate over topics, services, and actions; this isolates faults and enables language mixing (Python nodes alongside C++ nodes).
+- **Typed Interfaces**: Messages, services, and actions are defined in `.msg`, `.srv`, and `.action` files; the build system generates language-specific bindings, enforcing interface contracts across the graph.
+- **DDS Transport (ROS 2)**: ROS 2 replaces the bespoke TCPROS/UDPROS transports with the OMG DDS standard, gaining Quality of Service (QoS) profiles — reliable, best-effort, transient-local — suitable for both real-time control loops and best-effort sensor streams.
+- **Launch System**: Declarative XML or Python launch files describe multi-node topologies, parameter overrides, and remappings, enabling reproducible system bring-up.
+- **Security (SROS2)**: DDS-Security plugins provide authentication (X.509 certificates), authorisation (access control), and encryption (RTPS payload encryption) at the middleware layer.
+- **Tool Ecosystem**: `rviz2` for 3D visualisation, `rqt` for GUI tooling, `rosbag2` for recording and playback, `ros2 doctor` for diagnostics, and the `nav2` and `MoveIt 2` framework stacks for navigation and manipulation.
 
   #### How It Works
 
@@ -32,11 +31,11 @@ The Robot Operating System (ROS / ROS 2) is an open-source middleware framework 
 
   #### Standards and References
 
-  - Open Robotics. (2024). *ROS 2 Documentation — Jazzy Jalisco*. https://docs.ros.org/en/jazzy/
-  - OMG. (2015). *Data Distribution Service (DDS) Specification v1.4*. Object Management Group.
-  - Macenski, S., et al. (2022). "Robot Operating System 2: Design, Architecture, and Uses in the Wild." *Science Robotics*, 7(66).
-  - Open Robotics. (2023). *SROS2: Security for ROS 2*. https://design.ros2.org/articles/ros2_dds_security.html
-  - micro-ROS. (2024). *micro-ROS: ROS 2 on Microcontrollers*. https://micro.ros.org/
+- Open Robotics. (2024). *ROS 2 Documentation — Jazzy Jalisco*. https://docs.ros.org/en/jazzy/
+- OMG. (2015). *Data Distribution Service (DDS) Specification v1.4*. Object Management Group.
+- Macenski, S., et al. (2022). "Robot Operating System 2: Design, Architecture, and Uses in the Wild." *Science Robotics*, 7(66).
+- Open Robotics. (2023). *SROS2: Security for ROS 2*. https://design.ros2.org/articles/ros2_dds_security.html
+- micro-ROS. (2024). *micro-ROS: ROS 2 on Microcontrollers*. https://micro.ros.org/
 
-- ### Provenance
+### Provenance
 

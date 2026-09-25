@@ -1,18 +1,23 @@
-
 A Soft Fork is a backward-compatible change to a blockchain's consensus rules in which the set of valid blocks is tightened so that newly produced blocks remain acceptable to non-upgraded nodes. Because old nodes still recognise the stricter blocks as valid, the network does not split provided a majority of hash power or stake enforces the new rules. Soft forks are commonly used to deploy protocol upgrades such as new script types without requiring every participant to update.
 
-- ### Overview
-  - A soft fork narrows the rules: every block valid under the new rules is also valid under the old rules, but not vice versa. This one-way compatibility lets upgraded miners enforce stricter validation while legacy nodes continue to follow the chain. Activation typically proceeds via miner signalling or user-activated mechanisms, and once a supermajority enforces the rules the upgrade becomes effective without a chain split.
-- ### Mechanisms
-  - **Rule tightening** — the new valid block set is a subset of the old set.
-  - **Backward compatibility** — non-upgraded nodes still accept upgraded blocks.
-  - **Activation signalling** — miner-activated or user-activated deployment paths.
-  - **Enforcement threshold** — a hash-power or stake supermajority secures the upgrade.
-  - **Reversibility risk** — insufficient enforcement can lead to temporary forks.
-- ### Applications
-  - Deploying new script opcodes and address types.
-  - Bitcoin upgrades such as SegWit and Taproot.
-  - Incremental consensus changes without coordinated network-wide updates.
-  - Fixing protocol vulnerabilities while preserving compatibility.
-- ### Provenance
+### Overview
+
+- A soft fork narrows the rules: every block valid under the new rules is also valid under the old rules, but not vice versa. This one-way compatibility lets upgraded miners enforce stricter validation while legacy nodes continue to follow the chain. Activation typically proceeds via miner signalling or user-activated mechanisms, and once a supermajority enforces the rules the upgrade becomes effective without a chain split.
+
+### Mechanisms
+
+- **Rule tightening** — the new valid block set is a subset of the old set.
+- **Backward compatibility** — non-upgraded nodes still accept upgraded blocks.
+- **Activation signalling** — miner-activated or user-activated deployment paths.
+- **Enforcement threshold** — a hash-power or stake supermajority secures the upgrade.
+- **Reversibility risk** — insufficient enforcement can lead to temporary forks.
+
+### Applications
+
+- Deploying new script opcodes and address types.
+- Bitcoin upgrades such as SegWit and Taproot.
+- Incremental consensus changes without coordinated network-wide updates.
+- Fixing protocol vulnerabilities while preserving compatibility.
+
+### Provenance
 

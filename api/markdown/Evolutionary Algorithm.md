@@ -1,102 +1,105 @@
-
 An evolutionary algorithm is a population-based, stochastic optimisation method inspired by biological evolution, in which a population of candidate solutions is iteratively improved through selection, recombination (crossover) and mutation guided by a fitness function. Because they require only the ability to evaluate a fitness score, evolutionary algorithms are derivative-free and well suited to non-differentiable, noisy, multimodal or black-box optimisation problems where gradient methods struggle.
 
-- ### Semantic Classification
+### Semantic Classification
 
-- ### Content
-  ## Compositional Relationships (Components)
-      SubClassOf(ai:EvolutionaryAlgorithm
-        ObjectSomeValuesFrom(ai:hasPart ai:GeneticAlgorithm))
-      SubClassOf(ai:EvolutionaryAlgorithm
-        ObjectSomeValuesFrom(ai:hasPart ai:FitnessFunction))
-      SubClassOf(ai:EvolutionaryAlgorithm
-        ObjectSomeValuesFrom(ai:hasPart ai:SelectionOperator))
-      SubClassOf(ai:EvolutionaryAlgorithm
-        ObjectSomeValuesFrom(ai:hasPart ai:CrossoverOperator))
-      SubClassOf(ai:EvolutionaryAlgorithm
-        ObjectSomeValuesFrom(ai:hasPart ai:MutationOperator))
-      SubClassOf(ai:EvolutionaryAlgorithm
-        ObjectSomeValuesFrom(ai:hasPart ai:Population))
-      SubClassOf(ai:EvolutionaryAlgorithm
-        ObjectSomeValuesFrom(ai:hasPart ai:Neuroevolution))
-      SubClassOf(ai:EvolutionaryAlgorithm
-        ObjectSomeValuesFrom(ai:hasPart ai:QualityDiversityAlgorithm))
-  ## Dependency Relationships
-      SubClassOf(ai:EvolutionaryAlgorithm
-        ObjectSomeValuesFrom(ai:requires ai:FitnessFunction))
-      SubClassOf(ai:EvolutionaryAlgorithm
-        ObjectSomeValuesFrom(ai:requires ai:Sampling))
-      SubClassOf(ai:EvolutionaryAlgorithm
-        ObjectSomeValuesFrom(ai:requires ai:PopulationRepresentation))
-      SubClassOf(ai:EvolutionaryAlgorithm
-        ObjectSomeValuesFrom(ai:requires ai:FitnessLandscape))
-      SubClassOf(ai:EvolutionaryAlgorithm
-        ObjectSomeValuesFrom(ai:requires ai:PopulationDiversity))
-  ## Capability Relationships
-      SubClassOf(ai:EvolutionaryAlgorithm
-        ObjectSomeValuesFrom(ai:enables ai:NeuralArchitectureSearch))
-      SubClassOf(ai:EvolutionaryAlgorithm
-        ObjectSomeValuesFrom(ai:enables ai:HyperparameterOptimisation))
-      SubClassOf(ai:EvolutionaryAlgorithm
-        ObjectSomeValuesFrom(ai:enables ai:MultiObjectiveOptimisation))
-      SubClassOf(ai:EvolutionaryAlgorithm
-        ObjectSomeValuesFrom(ai:enables ai:Neuroevolution))
-      SubClassOf(ai:EvolutionaryAlgorithm
-        ObjectSomeValuesFrom(ai:enables ai:AlgorithmDesign))
-      SubClassOf(ai:EvolutionaryAlgorithm
-        ObjectSomeValuesFrom(ai:enables ai:ReinforcementLearning))
-  ## Implementation Relationships
-      SubClassOf(ai:EvolutionaryAlgorithm
-        ObjectSomeValuesFrom(ai:implements ai:SearchAlgorithm))
-      SubClassOf(ai:EvolutionaryAlgorithm
-        ObjectSomeValuesFrom(ai:implements ai:Metaheuristic))
-      SubClassOf(ai:EvolutionaryAlgorithm
-        ObjectSomeValuesFrom(ai:implements ai:OptimisationAlgorithm))
-  ## Reduction Relationships
-      SubClassOf(ai:EvolutionaryAlgorithm
-        ObjectSomeValuesFrom(ai:reducesTo ai:GeneticAlgorithm))
-      SubClassOf(ai:EvolutionaryAlgorithm
-        ObjectSomeValuesFrom(ai:reducesTo ai:EvolutionStrategy))
-      SubClassOf(ai:EvolutionaryAlgorithm
-        ObjectSomeValuesFrom(ai:reducesTo ai:GeneticProgramming))
-      SubClassOf(ai:EvolutionaryAlgorithm
-        ObjectSomeValuesFrom(ai:reducesTo ai:DifferentialEvolution))
+### Content
 
-  ## About
+## Compositional Relationships (Components)
+    SubClassOf(ai:EvolutionaryAlgorithm
+      ObjectSomeValuesFrom(ai:hasPart ai:GeneticAlgorithm))
+    SubClassOf(ai:EvolutionaryAlgorithm
+      ObjectSomeValuesFrom(ai:hasPart ai:FitnessFunction))
+    SubClassOf(ai:EvolutionaryAlgorithm
+      ObjectSomeValuesFrom(ai:hasPart ai:SelectionOperator))
+    SubClassOf(ai:EvolutionaryAlgorithm
+      ObjectSomeValuesFrom(ai:hasPart ai:CrossoverOperator))
+    SubClassOf(ai:EvolutionaryAlgorithm
+      ObjectSomeValuesFrom(ai:hasPart ai:MutationOperator))
+    SubClassOf(ai:EvolutionaryAlgorithm
+      ObjectSomeValuesFrom(ai:hasPart ai:Population))
+    SubClassOf(ai:EvolutionaryAlgorithm
+      ObjectSomeValuesFrom(ai:hasPart ai:Neuroevolution))
+    SubClassOf(ai:EvolutionaryAlgorithm
+      ObjectSomeValuesFrom(ai:hasPart ai:QualityDiversityAlgorithm))
+## Dependency Relationships
+    SubClassOf(ai:EvolutionaryAlgorithm
+      ObjectSomeValuesFrom(ai:requires ai:FitnessFunction))
+    SubClassOf(ai:EvolutionaryAlgorithm
+      ObjectSomeValuesFrom(ai:requires ai:Sampling))
+    SubClassOf(ai:EvolutionaryAlgorithm
+      ObjectSomeValuesFrom(ai:requires ai:PopulationRepresentation))
+    SubClassOf(ai:EvolutionaryAlgorithm
+      ObjectSomeValuesFrom(ai:requires ai:FitnessLandscape))
+    SubClassOf(ai:EvolutionaryAlgorithm
+      ObjectSomeValuesFrom(ai:requires ai:PopulationDiversity))
+## Capability Relationships
+    SubClassOf(ai:EvolutionaryAlgorithm
+      ObjectSomeValuesFrom(ai:enables ai:NeuralArchitectureSearch))
+    SubClassOf(ai:EvolutionaryAlgorithm
+      ObjectSomeValuesFrom(ai:enables ai:HyperparameterOptimisation))
+    SubClassOf(ai:EvolutionaryAlgorithm
+      ObjectSomeValuesFrom(ai:enables ai:MultiObjectiveOptimisation))
+    SubClassOf(ai:EvolutionaryAlgorithm
+      ObjectSomeValuesFrom(ai:enables ai:Neuroevolution))
+    SubClassOf(ai:EvolutionaryAlgorithm
+      ObjectSomeValuesFrom(ai:enables ai:AlgorithmDesign))
+    SubClassOf(ai:EvolutionaryAlgorithm
+      ObjectSomeValuesFrom(ai:enables ai:ReinforcementLearning))
+## Implementation Relationships
+    SubClassOf(ai:EvolutionaryAlgorithm
+      ObjectSomeValuesFrom(ai:implements ai:SearchAlgorithm))
+    SubClassOf(ai:EvolutionaryAlgorithm
+      ObjectSomeValuesFrom(ai:implements ai:Metaheuristic))
+    SubClassOf(ai:EvolutionaryAlgorithm
+      ObjectSomeValuesFrom(ai:implements ai:OptimisationAlgorithm))
+## Reduction Relationships
+    SubClassOf(ai:EvolutionaryAlgorithm
+      ObjectSomeValuesFrom(ai:reducesTo ai:GeneticAlgorithm))
+    SubClassOf(ai:EvolutionaryAlgorithm
+      ObjectSomeValuesFrom(ai:reducesTo ai:EvolutionStrategy))
+    SubClassOf(ai:EvolutionaryAlgorithm
+      ObjectSomeValuesFrom(ai:reducesTo ai:GeneticProgramming))
+    SubClassOf(ai:EvolutionaryAlgorithm
+      ObjectSomeValuesFrom(ai:reducesTo ai:DifferentialEvolution))
 
-  Evolutionary computation traces its origins to the independent but convergent work of three groups in the 1960s. John Holland at the University of Michigan developed genetic algorithms, inspired by the chromosome metaphor of natural heredity; his 1975 book "Adaptation in Natural and Artificial Systems" established the theoretical framework via schema theory, demonstrating that a genetic algorithm implicitly evaluates an exponential number of hyperplane cross-sections (schemata) in each generation — the so-called "implicit parallelism" that explains why genetic algorithms explore efficiently. Independently, Ingo Rechenberg and Hans-Paul Schwefel at the Technical University of Berlin developed evolution strategies (Evolutionsstrategie), using self-adaptive real-valued mutation parameters — the first adaptive mutation rate control, which remains a theoretical centrepiece of modern continuous evolutionary optimisation. Lawrence Fogel in San Diego developed evolutionary programming, which evolved finite-state machines for prediction tasks, emphasising behavioural rather than structural similarity between parent and offspring. A third convergent tradition, genetic programming — evolved computer programs rather than parameter vectors — was popularised by John Koza's 1992 book. These threads unified under the umbrella term "evolutionary computation" in the early 1990s, forming the community around the journal IEEE Transactions on Evolutionary Computation (founded 1997) and the GECCO and PPSN conference series. The field's intellectual charter is the No Free Lunch theorem (Wolpert and Macready, 1997), which proves that averaged over all possible objective functions, no optimisation algorithm outperforms any other — evolutionary algorithms are not universally superior but are structurally matched to the class of objectives that characterises engineering design, ecological simulation, and combinatorial planning.
+## About
 
-  The biological metaphor runs deep but is not literally accurate. Natural evolution operates on genotypes (DNA sequences) that are transcribed and translated into phenotypes (organism bodies) through development, and selection acts on phenotype fitness in a specific ecological context. Computational evolutionary algorithms compress this multi-level process: the "genome" is a data structure representing a candidate solution, "transcription" is either absent (direct encoding) or a simple mapping (indirect encoding via growth rules or neural development models), and "fitness" is an objective function value or a simulation result. This compression enables orders-of-magnitude faster evolution (millions of generations in minutes, rather than millions of years) but loses the open-ended generativity of biological evolution and the robustness of developmental buffering (canalization). The field has increasingly turned to quality-diversity algorithms — MAP-Elites, AURORA, Open-Ended Learning (OEL) — as a response to the limitation that single-objective evolutionary search converges rather than diversifies, seeking to maintain large archives of behaviorally diverse solutions rather than a single best solution.
+Evolutionary computation traces its origins to the independent but convergent work of three groups in the 1960s. John Holland at the University of Michigan developed genetic algorithms, inspired by the chromosome metaphor of natural heredity; his 1975 book "Adaptation in Natural and Artificial Systems" established the theoretical framework via schema theory, demonstrating that a genetic algorithm implicitly evaluates an exponential number of hyperplane cross-sections (schemata) in each generation — the so-called "implicit parallelism" that explains why genetic algorithms explore efficiently. Independently, Ingo Rechenberg and Hans-Paul Schwefel at the Technical University of Berlin developed evolution strategies (Evolutionsstrategie), using self-adaptive real-valued mutation parameters — the first adaptive mutation rate control, which remains a theoretical centrepiece of modern continuous evolutionary optimisation. Lawrence Fogel in San Diego developed evolutionary programming, which evolved finite-state machines for prediction tasks, emphasising behavioural rather than structural similarity between parent and offspring. A third convergent tradition, genetic programming — evolved computer programs rather than parameter vectors — was popularised by John Koza's 1992 book. These threads unified under the umbrella term "evolutionary computation" in the early 1990s, forming the community around the journal IEEE Transactions on Evolutionary Computation (founded 1997) and the GECCO and PPSN conference series. The field's intellectual charter is the No Free Lunch theorem (Wolpert and Macready, 1997), which proves that averaged over all possible objective functions, no optimisation algorithm outperforms any other — evolutionary algorithms are not universally superior but are structurally matched to the class of objectives that characterises engineering design, ecological simulation, and combinatorial planning.
 
-  The relationship between evolutionary algorithms and [[Gradient Descent]] defines one of the central debates in optimisation methodology. Gradient-based methods are catastrophically sample-efficient when gradients are available (learning rate times gradient norm per step), but require differentiability, unimodality (for convergence guarantees), and access to the computational graph. Evolutionary algorithms are gradient-free but dramatically less sample-efficient in high dimensions — a CMA-ES with population size proportional to the square root of the dimension still requires order-of-magnitude more objective evaluations than gradient descent for smooth, unimodal objectives. The practical consequence is a clear division of labour: gradient-based methods dominate differentiable machine learning (backpropagation for [[Neural Network]] training, policy gradient for differentiable [[Reinforcement Learning]]); evolutionary algorithms dominate black-box, discontinuous, or multi-objective settings (hardware-in-the-loop optimisation, combinatorial scheduling, [[Neural Architecture Search]], policy search in non-differentiable environments). The emergence of [[Large Language Model]] systems as evolutionary operators in 2024–2025 has opened a third paradigm: LLM-guided evolutionary search, in which language model proposals replace random mutation by conditioning on the history of past evaluations and generating targeted candidate improvements — a form of model-based evolutionary search that dramatically improves sample efficiency on structured discrete problems.
+The biological metaphor runs deep but is not literally accurate. Natural evolution operates on genotypes (DNA sequences) that are transcribed and translated into phenotypes (organism bodies) through development, and selection acts on phenotype fitness in a specific ecological context. Computational evolutionary algorithms compress this multi-level process: the "genome" is a data structure representing a candidate solution, "transcription" is either absent (direct encoding) or a simple mapping (indirect encoding via growth rules or neural development models), and "fitness" is an objective function value or a simulation result. This compression enables orders-of-magnitude faster evolution (millions of generations in minutes, rather than millions of years) but loses the open-ended generativity of biological evolution and the robustness of developmental buffering (canalization). The field has increasingly turned to quality-diversity algorithms — MAP-Elites, AURORA, Open-Ended Learning (OEL) — as a response to the limitation that single-objective evolutionary search converges rather than diversifies, seeking to maintain large archives of behaviorally diverse solutions rather than a single best solution.
 
-  ## Components / Architecture
+The relationship between evolutionary algorithms and [[Gradient Descent]] defines one of the central debates in optimisation methodology. Gradient-based methods are catastrophically sample-efficient when gradients are available (learning rate times gradient norm per step), but require differentiability, unimodality (for convergence guarantees), and access to the computational graph. Evolutionary algorithms are gradient-free but dramatically less sample-efficient in high dimensions — a CMA-ES with population size proportional to the square root of the dimension still requires order-of-magnitude more objective evaluations than gradient descent for smooth, unimodal objectives. The practical consequence is a clear division of labour: gradient-based methods dominate differentiable machine learning (backpropagation for [[Neural Network]] training, policy gradient for differentiable [[Reinforcement Learning]]); evolutionary algorithms dominate black-box, discontinuous, or multi-objective settings (hardware-in-the-loop optimisation, combinatorial scheduling, [[Neural Architecture Search]], policy search in non-differentiable environments). The emergence of [[Large Language Model]] systems as evolutionary operators in 2024–2025 has opened a third paradigm: LLM-guided evolutionary search, in which language model proposals replace random mutation by conditioning on the history of past evaluations and generating targeted candidate improvements — a form of model-based evolutionary search that dramatically improves sample efficiency on structured discrete problems.
 
-  **Population representation:** The encoding scheme for candidate solutions determines which genetic operators are meaningful and which crossover operations preserve building blocks. Binary encodings (original genetic algorithm substrate) support simple crossover and bitwise mutation but require a mapping to continuous problem domains. Real-valued encodings (native to evolution strategies) support Gaussian mutation and arithmetic recombination, directly preserving gradient structure in smooth sub-regions of the landscape. Tree encodings (genetic programming) support subtree crossover and point mutation, enabling evolution of programs and symbolic expressions. Neural network weight encodings (neuroevolution) can be direct (all weights as a parameter vector) or indirect (HyperNEAT encoding network patterns through a compositional pattern-producing network).
+## Components / Architecture
 
-  **Selection mechanisms:**
-  - Tournament selection: randomly sample k individuals, reproduce the fittest — controls selection pressure via tournament size k
-  - Roulette-wheel (fitness-proportionate) selection: probability of reproduction proportional to fitness value — prone to premature convergence when fit individuals dominate
-  - Rank-based selection: reproductive probability proportional to fitness rank rather than value — reduces dominance effects of outlier fitness values
-  - Elitism: always carry forward the top-k individuals unchanged — guarantees monotone improvement in the best fitness observed
-  - NSGA-II crowding distance: in multi-objective optimisation, prefer individuals at less dense regions of the Pareto front, maintaining front diversity
+**Population representation:** The encoding scheme for candidate solutions determines which genetic operators are meaningful and which crossover operations preserve building blocks. Binary encodings (original genetic algorithm substrate) support simple crossover and bitwise mutation but require a mapping to continuous problem domains. Real-valued encodings (native to evolution strategies) support Gaussian mutation and arithmetic recombination, directly preserving gradient structure in smooth sub-regions of the landscape. Tree encodings (genetic programming) support subtree crossover and point mutation, enabling evolution of programs and symbolic expressions. Neural network weight encodings (neuroevolution) can be direct (all weights as a parameter vector) or indirect (HyperNEAT encoding network patterns through a compositional pattern-producing network).
+
+**Selection mechanisms:**
+
+- Tournament selection: randomly sample k individuals, reproduce the fittest — controls selection pressure via tournament size k
+- Roulette-wheel (fitness-proportionate) selection: probability of reproduction proportional to fitness value — prone to premature convergence when fit individuals dominate
+- Rank-based selection: reproductive probability proportional to fitness rank rather than value — reduces dominance effects of outlier fitness values
+- Elitism: always carry forward the top-k individuals unchanged — guarantees monotone improvement in the best fitness observed
+- NSGA-II crowding distance: in multi-objective optimisation, prefer individuals at less dense regions of the Pareto front, maintaining front diversity
 
   **Variation operators:**
-  - One-point crossover: split parent chromosomes at a random locus, swap tails — disrupts long building blocks
-  - Uniform crossover: swap each gene position independently with probability 0.5 — position-independent mixing
-  - SBX (Simulated Binary Crossover): mimics single-point binary crossover in real-valued space, preserving mean of parents
-  - Differential mutation (DE): perturb a base vector by a scaled difference of two randomly chosen population members — DE/rand/1, DE/best/1 and variants
-  - Gaussian mutation (ES): add zero-mean Gaussian noise scaled by the strategy parameter σ — self-adaptive σ update enables CMA-ES
-  - LLM mutation (EvoLLM): use a language model's next-token prediction to propose improved candidate solutions conditioned on the history of (solution, fitness) pairs
+
+- One-point crossover: split parent chromosomes at a random locus, swap tails — disrupts long building blocks
+- Uniform crossover: swap each gene position independently with probability 0.5 — position-independent mixing
+- SBX (Simulated Binary Crossover): mimics single-point binary crossover in real-valued space, preserving mean of parents
+- Differential mutation (DE): perturb a base vector by a scaled difference of two randomly chosen population members — DE/rand/1, DE/best/1 and variants
+- Gaussian mutation (ES): add zero-mean Gaussian noise scaled by the strategy parameter σ — self-adaptive σ update enables CMA-ES
+- LLM mutation (EvoLLM): use a language model's next-token prediction to propose improved candidate solutions conditioned on the history of (solution, fitness) pairs
 
   **Step-size adaptation (CMA-ES):** The Covariance Matrix Adaptation Evolution Strategy maintains a full covariance matrix of the search distribution, updated via cumulative step-size adaptation (CSA) for isotropic step size and rank-one and rank-μ updates for directional adaptation. This enables CMA-ES to automatically recover the local gradient direction, rotate the search distribution to align with elongated fitness contours, and escape saddle points — properties that make CMA-ES the de facto gold standard for continuous black-box optimisation up to roughly 200 dimensions.
 
   **Multi-objective frameworks:**
-  - NSGA-II (Deb et al., 2002): non-dominated sorting with crowding distance diversity maintenance — dominant paradigm for 2-4 objectives
-  - NSGA-III (Deb and Jain, 2014): reference-point-based diversity for many-objective (5+ objective) problems
-  - MOEA/D (Zhang and Li, 2007): decomposition into scalar subproblems using weight vectors — computationally efficient, strong on structured Pareto fronts
-  - SMS-EMOA: hypervolume-indicator-based selection ensuring maximum hypervolume contribution
-  - MAP-Elites (Mouret and Clune, 2015): quality-diversity illumination algorithm that fills a feature-behaviour space with best-performing solutions per cell
+
+- NSGA-II (Deb et al., 2002): non-dominated sorting with crowding distance diversity maintenance — dominant paradigm for 2-4 objectives
+- NSGA-III (Deb and Jain, 2014): reference-point-based diversity for many-objective (5+ objective) problems
+- MOEA/D (Zhang and Li, 2007): decomposition into scalar subproblems using weight vectors — computationally efficient, strong on structured Pareto fronts
+- SMS-EMOA: hypervolume-indicator-based selection ensuring maximum hypervolume contribution
+- MAP-Elites (Mouret and Clune, 2015): quality-diversity illumination algorithm that fills a feature-behaviour space with best-performing solutions per cell
 
   ## Use Cases / Major Families
 
@@ -181,5 +184,5 @@ An evolutionary algorithm is a population-based, stochastic optimisation method 
   27. Mouret, J.-B. (2025). Neuroevolution: Harnessing Creativity in AI Model Design. MIT Press.
   28. Zoph, B. and Le, Q.V. (2017). Neural Architecture Search with Reinforcement Learning. ICLR 2017.
 
-- ### Provenance
+### Provenance
 

@@ -1,10 +1,10 @@
-
 Digital Identity Framework is a type of Infrastructure in the infrastructure domain.
 
-- ### Semantic Classification
+### Semantic Classification
 
-- ### Content
-  Digital Identity Framework — content pending enrichment.
+### Content
 
-- ### Provenance
+Digital Identity Framework — content pending enrichment.
+
+### Provenance
 

@@ -1,129 +1,136 @@
-
 Teacher-Student Training is a machine learning paradigm in which a larger, higher-capacity teacher model supervises the training of a smaller student model, transferring knowledge through soft probability distributions (dark knowledge), intermediate feature representations, or attention maps rather than hard labels alone. The approach underpins knowledge distillation for model compression and is widely used to deploy efficient models on edge hardware without sacrificing task performance.
 
-- ### Semantic Classification
+### Semantic Classification
 
-- ### Content
-  - A training paradigm where a larger, more capable "teacher" model guides the training of a smaller "student" model. Teacher-student training transfers knowledge from the teacher's learned representations or predictions to improve student model performance.
+### Content
 
-  - ### Khanmigo
-  - https://open.spotify.com/episode/7EBXdFqRGw6PKDrDnadaid?
-  - Current Capabilities:
-		- Khanmigo is an AI chatbot tutor created by Khan Academy. It is built on GPT-4 and fine-tuned by Khan Academy to be an education-focused AI.
-		- It can have natural language conversations and explain concepts Socratically, especially for maths and other Khan Academy course content.
-		- Khanmigo provides feedback on writing assignments based on rubrics set by teachers. It works collaboratively with students in an ethical way, not writing essays for them.
-		- It has some memory and note-taking abilities to track student progress over time.
-		- Khanmigo can act as a teaching assistant, helping teachers with grading, progress reports, lesson plans. This saves teachers time on repetitive tasks.
+- A training paradigm where a larger, more capable "teacher" model guides the training of a smaller "student" model. Teacher-student training transfers knowledge from the teacher's learned representations or predictions to improve student model performance.
 
-		  Key Features:
-			- Designed specifically for education and avoids inappropriate content.
-			- Won't cheat or make things up like ChatGPT. Anchored in Khan Academy content.
-			- Has guardrails for under 18 users like notifying parents/teachers of issues and keeping conversations transparent.
-			- Gives better maths explanations than ChatGPT.
-			- Provides a holistic student profile to teachers over time.
+### Khanmigo
 
-			  Vision:
-			- Scale up to provide a digital tutor for every student and teaching assistant for every teacher.
-			- Expand beyond just Khan Academy content to be an always-available guide and companion for learning anything.
-			- Add video conferences, deeper memory/continuity, guardian features for internet use.
-			- Provide multi-year narrative and support students' mental health/happiness.
-			- Help "invert the labour pyramid" so more people can participate as knowledge workers and entrepreneurs.
+- https://open.spotify.com/episode/7EBXdFqRGw6PKDrDnadaid?
+- Current Capabilities:
+  - Khanmigo is an AI chatbot tutor created by Khan Academy. It is built on GPT-4 and fine-tuned by Khan Academy to be an education-focused AI.
+  - It can have natural language conversations and explain concepts Socratically, especially for maths and other Khan Academy course content.
+  - Khanmigo provides feedback on writing assignments based on rubrics set by teachers. It works collaboratively with students in an ethical way, not writing essays for them.
+  - It has some memory and note-taking abilities to track student progress over time.
+  - Khanmigo can act as a teaching assistant, helping teachers with grading, progress reports, lesson plans. This saves teachers time on repetitive tasks.
 
-			  [Class Companion Puts AI To Work Helping Teachers Help Students (forbes.com)](https://www.forbes.com/sites/rayravaglia/2023/10/05/class-companion-puts-ai-to-work-helping-teachers-help-students/)
+    Key Features:
 
-  - ### Khanmigo
-  - https://open.spotify.com/episode/7EBXdFqRGw6PKDrDnadaid?
-  - Current Capabilities:
-		- Khanmigo is an AI chatbot tutor created by Khan Academy. It is built on GPT-4 and fine-tuned by Khan Academy to be an education-focused AI.
-		- It can have natural language conversations and explain concepts Socratically, especially for maths and other Khan Academy course content.
-		- Khanmigo provides feedback on writing assignments based on rubrics set by teachers. It works collaboratively with students in an ethical way, not writing essays for them.
-		- It has some memory and note-taking abilities to track student progress over time.
-		- Khanmigo can act as a teaching assistant, helping teachers with grading, progress reports, lesson plans. This saves teachers time on repetitive tasks.
+    - Designed specifically for education and avoids inappropriate content.
+    - Won't cheat or make things up like ChatGPT. Anchored in Khan Academy content.
+    - Has guardrails for under 18 users like notifying parents/teachers of issues and keeping conversations transparent.
+    - Gives better maths explanations than ChatGPT.
+    - Provides a holistic student profile to teachers over time.
 
-		  Key Features:
-			- Designed specifically for education and avoids inappropriate content.
-			- Won't cheat or make things up like ChatGPT. Anchored in Khan Academy content.
-			- Has guardrails for under 18 users like notifying parents/teachers of issues and keeping conversations transparent.
-			- Gives better maths explanations than ChatGPT.
-			- Provides a holistic student profile to teachers over time.
+      Vision:
 
-			  Vision:
-			- Scale up to provide a digital tutor for every student and teaching assistant for every teacher.
-			- Expand beyond just Khan Academy content to be an always-available guide and companion for learning anything.
-			- Add video conferences, deeper memory/continuity, guardian features for internet use.
-			- Provide multi-year narrative and support students' mental health/happiness.
-			- Help "invert the labour pyramid" so more people can participate as knowledge workers and entrepreneurs.
+    - Scale up to provide a digital tutor for every student and teaching assistant for every teacher.
+    - Expand beyond just Khan Academy content to be an always-available guide and companion for learning anything.
+    - Add video conferences, deeper memory/continuity, guardian features for internet use.
+    - Provide multi-year narrative and support students' mental health/happiness.
+    - Help "invert the labour pyramid" so more people can participate as knowledge workers and entrepreneurs.
 
-			  [Class Companion Puts AI To Work Helping Teachers Help Students (forbes.com)](https://www.forbes.com/sites/rayravaglia/2023/10/05/class-companion-puts-ai-to-work-helping-teachers-help-students/)
+      [Class Companion Puts AI To Work Helping Teachers Help Students (forbes.com)](https://www.forbes.com/sites/rayravaglia/2023/10/05/class-companion-puts-ai-to-work-helping-teachers-help-students/)
 
-  - # Mess
-  ![1713028555251.jpg](assets/1713028555251_1713029092792_0.jpg){:height 2309, :width 999}
-		- It can have natural language conversations and explain concepts Socratically, especially for maths and other Khan Academy course content.
-		- Khanmigo provides feedback on writing assignments based on rubrics set by teachers. It works collaboratively with students in an ethical way, not writing essays for them.
-		- It has some memory and note-taking abilities to track student progress over time.
-		- Khanmigo can act as a teaching assistant, helping teachers with grading, progress reports, lesson plans. This saves teachers time on repetitive tasks.
+### Khanmigo
 
-			- Provides a holistic student profile to teachers over time.
+- https://open.spotify.com/episode/7EBXdFqRGw6PKDrDnadaid?
+- Current Capabilities:
+  - Khanmigo is an AI chatbot tutor created by Khan Academy. It is built on GPT-4 and fine-tuned by Khan Academy to be an education-focused AI.
+  - It can have natural language conversations and explain concepts Socratically, especially for maths and other Khan Academy course content.
+  - Khanmigo provides feedback on writing assignments based on rubrics set by teachers. It works collaboratively with students in an ethical way, not writing essays for them.
+  - It has some memory and note-taking abilities to track student progress over time.
+  - Khanmigo can act as a teaching assistant, helping teachers with grading, progress reports, lesson plans. This saves teachers time on repetitive tasks.
 
-			  Vision:
-			- Scale up to provide a digital tutor for every student and teaching assistant for every teacher.
-			- Expand beyond just Khan Academy content to be an always-available guide and companion for learning anything.
+    Key Features:
 
-			  [Class Companion Puts AI To Work Helping Teachers Help Students (forbes.com)](https://www.forbes.com/sites/rayravaglia/2023/10/05/class-companion-puts-ai-to-work-helping-teachers-help-students/)
+    - Designed specifically for education and avoids inappropriate content.
+    - Won't cheat or make things up like ChatGPT. Anchored in Khan Academy content.
+    - Has guardrails for under 18 users like notifying parents/teachers of issues and keeping conversations transparent.
+    - Gives better maths explanations than ChatGPT.
+    - Provides a holistic student profile to teachers over time.
 
-  #### Key Characteristics
-  - Teacher guides student training
-		  - Knowledge transfer mechanism
-		  - Enables model compression
-		  - Improves student performance
-		  - Can use soft targets or intermediate representations
-		  - Foundation for distillation
+      Vision:
 
-  #### Academic Context
-  Teacher-student training provides a framework for knowledge transfer and model compression, enabling efficient deployment whilst retaining teacher model capabilities.
+    - Scale up to provide a digital tutor for every student and teaching assistant for every teacher.
+    - Expand beyond just Khan Academy content to be an always-available guide and companion for learning anything.
+    - Add video conferences, deeper memory/continuity, guardian features for internet use.
+    - Provide multi-year narrative and support students' mental health/happiness.
+    - Help "invert the labour pyramid" so more people can participate as knowledge workers and entrepreneurs.
 
-  #### Related Concepts
-  - **Knowledge Distillation**: Specific implementation
-		  - **Teacher Model**: Source model
-		  - **Student Model**: Target model
-		  - **Transfer Learning**: Broader paradigm
+      [Class Companion Puts AI To Work Helping Teachers Help Students (forbes.com)](https://www.forbes.com/sites/rayravaglia/2023/10/05/class-companion-puts-ai-to-work-helping-teachers-help-students/)
 
-		  ## UK English Notes
+# Mess
 
-		  - "Whilst retaining" (British usage)
+![1713028555251.jpg|999](assets/1713028555251_1713029092792_0.jpg)
 
-		  **Last Updated**: 2025-10-27
-		  **Verification Status**: Verified against distillation literature
+- It can have natural language conversations and explain concepts Socratically, especially for maths and other Khan Academy course content.
+- Khanmigo provides feedback on writing assignments based on rubrics set by teachers. It works collaboratively with students in an ethical way, not writing essays for them.
+- It has some memory and note-taking abilities to track student progress over time.
+- Khanmigo can act as a teaching assistant, helping teachers with grading, progress reports, lesson plans. This saves teachers time on repetitive tasks.
+  - Provides a holistic student profile to teachers over time.
 
+    Vision:
 
+  - Scale up to provide a digital tutor for every student and teaching assistant for every teacher.
+  - Expand beyond just Khan Academy content to be an always-available guide and companion for learning anything.
 
+    [Class Companion Puts AI To Work Helping Teachers Help Students (forbes.com)](https://www.forbes.com/sites/rayravaglia/2023/10/05/class-companion-puts-ai-to-work-helping-teachers-help-students/)
 
+    #### Key Characteristics
 
+- Teacher guides student training
+  - Knowledge transfer mechanism
+  - Enables model compression
+  - Improves student performance
+  - Can use soft targets or intermediate representations
+  - Foundation for distillation
 
-  I appreciate your request, but I must clarify an important distinction: the search results provided address **AI in education and teacher professional development**, not the machine learning concept of **teacher-student training** (knowledge distillation).
+    #### Academic Context
+    Teacher-student training provides a framework for knowledge transfer and model compression, enabling efficient deployment whilst retaining teacher model capabilities.
 
-  Your ontology entry describes a technical machine learning paradigm where a larger neural network model trains a smaller one—a well-established technique in model compression and transfer learning. The search results, conversely, discuss how human educators can be trained to use AI tools effectively in classrooms, and how AI frameworks define teacher competencies.
+    #### Related Concepts
 
-  These are fundamentally different domains:
+- **Knowledge Distillation**: Specific implementation
+  - **Teacher Model**: Source model
+  - **Student Model**: Target model
+  - **Transfer Learning**: Broader paradigm
 
-  - **Your ontology topic**: A computational method for model optimisation
-  - **Search results content**: Pedagogical approaches to educator development in the AI era
+    ## UK English Notes
+
+  - "Whilst retaining" (British usage)
+
+    **Last Updated**: 2025-10-27
+    **Verification Status**: Verified against distillation literature
+
+    I appreciate your request, but I must clarify an important distinction: the search results provided address **AI in education and teacher professional development**, not the machine learning concept of **teacher-student training** (knowledge distillation).
+
+    Your ontology entry describes a technical machine learning paradigm where a larger neural network model trains a smaller one—a well-established technique in model compression and transfer learning. The search results, conversely, discuss how human educators can be trained to use AI tools effectively in classrooms, and how AI frameworks define teacher competencies.
+
+    These are fundamentally different domains:
+
+- **Your ontology topic**: A computational method for model optimisation
+- **Search results content**: Pedagogical approaches to educator development in the AI era
 
   ## Why I Cannot Proceed as Requested
 
   The search results do not contain information about:
-  - Knowledge distillation or model compression techniques
-  - Teacher-student neural network architectures
-  - Technical implementations of this training paradigm
-  - Academic literature on the computational method itself
-  - UK-based research institutions working on this specific technique
+
+- Knowledge distillation or model compression techniques
+- Teacher-student neural network architectures
+- Technical implementations of this training paradigm
+- Academic literature on the computational method itself
+- UK-based research institutions working on this specific technique
 
   To provide an accurate, rigorous ontology entry for teacher-student training in machine learning, I would require search results covering:
-  - Foundational papers (Hinton et al. on knowledge distillation)
-  - Contemporary implementations and variants
-  - Performance benchmarks and limitations
-  - Current applications in industry
-  - Recent academic developments
+
+- Foundational papers (Hinton et al. on knowledge distillation)
+- Contemporary implementations and variants
+- Performance benchmarks and limitations
+- Current applications in industry
+- Recent academic developments
 
   ## Recommendation
 
@@ -131,13 +138,12 @@ Teacher-Student Training is a machine learning paradigm in which a larger, highe
 
   Which direction would be most helpful?
 
-
   ## Metadata
 
-  - **Last Updated**: 2025-11-11
-  - **Review Status**: Comprehensive editorial review
-  - **Verification**: Academic sources verified
-  - **Regional Context**: UK/North England where applicable
+- **Last Updated**: 2025-11-11
+- **Review Status**: Comprehensive editorial review
+- **Verification**: Academic sources verified
+- **Regional Context**: UK/North England where applicable
 
-- ### Provenance
+### Provenance
 

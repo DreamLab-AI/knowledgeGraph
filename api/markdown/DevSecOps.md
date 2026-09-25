@@ -1,162 +1,172 @@
-
 DevSecOps is a software engineering practice that integrates security controls, testing, and policy enforcement directly into the continuous integration and delivery pipeline, making security a shared responsibility across development, operations, and security teams. It applies the principle of shift-left security, automating vulnerability scanning, dependency auditing, and policy-as-code checks at every stage from code commit through production deployment.
 
-- ### Semantic Classification
+### Semantic Classification
 
-- ### Content
+### Content
 
-  ## Compositional Relationships (Components)
-      SubClassOf(ai:DevSecOps
-        ObjectSomeValuesFrom(ai:hasPart ai:StaticApplicationSecurityTesting))
-      SubClassOf(ai:DevSecOps
-        ObjectSomeValuesFrom(ai:hasPart ai:DynamicApplicationSecurityTesting))
-      SubClassOf(ai:DevSecOps
-        ObjectSomeValuesFrom(ai:hasPart ai:SoftwareCompositionAnalysis))
-      SubClassOf(ai:DevSecOps
-        ObjectSomeValuesFrom(ai:hasPart ai:PolicyAsCode))
-      SubClassOf(ai:DevSecOps
-        ObjectSomeValuesFrom(ai:hasPart ai:PenetrationTesting))
-      SubClassOf(ai:DevSecOps
-        ObjectSomeValuesFrom(ai:hasPart ai:ContinuousMonitoring))
-      SubClassOf(ai:DevSecOps
-        ObjectSomeValuesFrom(ai:hasPart ai:VulnerabilityScanner))
-      SubClassOf(ai:DevSecOps
-        ObjectSomeValuesFrom(ai:hasPart ai:SoftwareBillOfMaterials))
-      SubClassOf(ai:DevSecOps
-        ObjectSomeValuesFrom(ai:hasPart ai:ContainerSecurity))
-      SubClassOf(ai:DevSecOps
-        ObjectSomeValuesFrom(ai:hasPart ai:InfrastructureAsCode))
+## Compositional Relationships (Components)
+    SubClassOf(ai:DevSecOps
+      ObjectSomeValuesFrom(ai:hasPart ai:StaticApplicationSecurityTesting))
+    SubClassOf(ai:DevSecOps
+      ObjectSomeValuesFrom(ai:hasPart ai:DynamicApplicationSecurityTesting))
+    SubClassOf(ai:DevSecOps
+      ObjectSomeValuesFrom(ai:hasPart ai:SoftwareCompositionAnalysis))
+    SubClassOf(ai:DevSecOps
+      ObjectSomeValuesFrom(ai:hasPart ai:PolicyAsCode))
+    SubClassOf(ai:DevSecOps
+      ObjectSomeValuesFrom(ai:hasPart ai:PenetrationTesting))
+    SubClassOf(ai:DevSecOps
+      ObjectSomeValuesFrom(ai:hasPart ai:ContinuousMonitoring))
+    SubClassOf(ai:DevSecOps
+      ObjectSomeValuesFrom(ai:hasPart ai:VulnerabilityScanner))
+    SubClassOf(ai:DevSecOps
+      ObjectSomeValuesFrom(ai:hasPart ai:SoftwareBillOfMaterials))
+    SubClassOf(ai:DevSecOps
+      ObjectSomeValuesFrom(ai:hasPart ai:ContainerSecurity))
+    SubClassOf(ai:DevSecOps
+      ObjectSomeValuesFrom(ai:hasPart ai:InfrastructureAsCode))
 
-  ## Dependency Relationships
-      SubClassOf(ai:DevSecOps
-        ObjectSomeValuesFrom(ai:requires ai:CICDAutomation))
-      SubClassOf(ai:DevSecOps
-        ObjectSomeValuesFrom(ai:requires ai:ContinuousIntegration))
-      SubClassOf(ai:DevSecOps
-        ObjectSomeValuesFrom(ai:requires ai:VulnerabilityScanner))
-      SubClassOf(ai:DevSecOps
-        ObjectSomeValuesFrom(ai:requires ai:CybersecurityFramework))
-      SubClassOf(ai:DevSecOps
-        ObjectSomeValuesFrom(ai:requires ai:SourceControl))
-      SubClassOf(ai:DevSecOps
-        ObjectSomeValuesFrom(ai:requires ai:ContainerSecurity))
-      SubClassOf(ai:DevSecOps
-        ObjectSomeValuesFrom(ai:requires ai:CloudSecurity))
+## Dependency Relationships
+    SubClassOf(ai:DevSecOps
+      ObjectSomeValuesFrom(ai:requires ai:CICDAutomation))
+    SubClassOf(ai:DevSecOps
+      ObjectSomeValuesFrom(ai:requires ai:ContinuousIntegration))
+    SubClassOf(ai:DevSecOps
+      ObjectSomeValuesFrom(ai:requires ai:VulnerabilityScanner))
+    SubClassOf(ai:DevSecOps
+      ObjectSomeValuesFrom(ai:requires ai:CybersecurityFramework))
+    SubClassOf(ai:DevSecOps
+      ObjectSomeValuesFrom(ai:requires ai:SourceControl))
+    SubClassOf(ai:DevSecOps
+      ObjectSomeValuesFrom(ai:requires ai:ContainerSecurity))
+    SubClassOf(ai:DevSecOps
+      ObjectSomeValuesFrom(ai:requires ai:CloudSecurity))
 
-  ## Capability Relationships
-      SubClassOf(ai:DevSecOps
-        ObjectSomeValuesFrom(ai:enables ai:VulnerabilityManagement))
-      SubClassOf(ai:DevSecOps
-        ObjectSomeValuesFrom(ai:enables ai:SoftwareBillOfMaterials))
-      SubClassOf(ai:DevSecOps
-        ObjectSomeValuesFrom(ai:enables ai:SupplyChainSecurity))
-      SubClassOf(ai:DevSecOps
-        ObjectSomeValuesFrom(ai:enables ai:RegulatoryCompliance))
-      SubClassOf(ai:DevSecOps
-        ObjectSomeValuesFrom(ai:enables ai:AISecurityAssurance))
-      SubClassOf(ai:DevSecOps
-        ObjectSomeValuesFrom(ai:enables ai:MLSecOps))
-      SubClassOf(ai:DevSecOps
-        ObjectSomeValuesFrom(ai:enables ai:ZeroTrustArchitecture))
+## Capability Relationships
+    SubClassOf(ai:DevSecOps
+      ObjectSomeValuesFrom(ai:enables ai:VulnerabilityManagement))
+    SubClassOf(ai:DevSecOps
+      ObjectSomeValuesFrom(ai:enables ai:SoftwareBillOfMaterials))
+    SubClassOf(ai:DevSecOps
+      ObjectSomeValuesFrom(ai:enables ai:SupplyChainSecurity))
+    SubClassOf(ai:DevSecOps
+      ObjectSomeValuesFrom(ai:enables ai:RegulatoryCompliance))
+    SubClassOf(ai:DevSecOps
+      ObjectSomeValuesFrom(ai:enables ai:AISecurityAssurance))
+    SubClassOf(ai:DevSecOps
+      ObjectSomeValuesFrom(ai:enables ai:MLSecOps))
+    SubClassOf(ai:DevSecOps
+      ObjectSomeValuesFrom(ai:enables ai:ZeroTrustArchitecture))
 
-  ## Implementation Relationships
-      SubClassOf(ai:DevSecOps
-        ObjectSomeValuesFrom(ai:implements ai:ShiftLeftSecurity))
-      SubClassOf(ai:DevSecOps
-        ObjectSomeValuesFrom(ai:implements ai:SLSAFramework))
-      SubClassOf(ai:DevSecOps
-        ObjectSomeValuesFrom(ai:implements ai:NISTCybersecurityFramework))
-      SubClassOf(ai:DevSecOps
-        ObjectSomeValuesFrom(ai:implements ai:PolicyAsCode))
-      SubClassOf(ai:DevSecOps
-        ObjectSomeValuesFrom(ai:implements ai:SecureSoftwareDevelopmentLifecycle))
-      SubClassOf(ai:DevSecOps
-        ObjectSomeValuesFrom(ai:implements ai:BlamelessPostMortem))
-      SubClassOf(ai:DevSecOps
-        ObjectSomeValuesFrom(ai:implements ai:ContinuousCompliance))
+## Implementation Relationships
+    SubClassOf(ai:DevSecOps
+      ObjectSomeValuesFrom(ai:implements ai:ShiftLeftSecurity))
+    SubClassOf(ai:DevSecOps
+      ObjectSomeValuesFrom(ai:implements ai:SLSAFramework))
+    SubClassOf(ai:DevSecOps
+      ObjectSomeValuesFrom(ai:implements ai:NISTCybersecurityFramework))
+    SubClassOf(ai:DevSecOps
+      ObjectSomeValuesFrom(ai:implements ai:PolicyAsCode))
+    SubClassOf(ai:DevSecOps
+      ObjectSomeValuesFrom(ai:implements ai:SecureSoftwareDevelopmentLifecycle))
+    SubClassOf(ai:DevSecOps
+      ObjectSomeValuesFrom(ai:implements ai:BlamelessPostMortem))
+    SubClassOf(ai:DevSecOps
+      ObjectSomeValuesFrom(ai:implements ai:ContinuousCompliance))
 
-  ## Reduction Relationships
-      SubClassOf(ai:DevSecOps
-        ObjectSomeValuesFrom(ai:reducesTo ai:ContinuousSecurityIntegration))
-      SubClassOf(ai:DevSecOps
-        ObjectSomeValuesFrom(ai:reducesTo ai:AutomatedSecurityGating))
-      SubClassOf(ai:DevSecOps
-        ObjectSomeValuesFrom(ai:reducesTo ai:ShiftLeftSecurity))
-      SubClassOf(ai:DevSecOps
-        ObjectSomeValuesFrom(ai:reducesTo ai:SecurityAsCode))
-      SubClassOf(ai:DevSecOps
-        ObjectSomeValuesFrom(ai:reducesTo ai:ContinuousCompliance))
+## Reduction Relationships
+    SubClassOf(ai:DevSecOps
+      ObjectSomeValuesFrom(ai:reducesTo ai:ContinuousSecurityIntegration))
+    SubClassOf(ai:DevSecOps
+      ObjectSomeValuesFrom(ai:reducesTo ai:AutomatedSecurityGating))
+    SubClassOf(ai:DevSecOps
+      ObjectSomeValuesFrom(ai:reducesTo ai:ShiftLeftSecurity))
+    SubClassOf(ai:DevSecOps
+      ObjectSomeValuesFrom(ai:reducesTo ai:SecurityAsCode))
+    SubClassOf(ai:DevSecOps
+      ObjectSomeValuesFrom(ai:reducesTo ai:ContinuousCompliance))
 
-  ## About
+## About
 
-  **DevSecOps** emerged from the collision of two independent but convergent movements in software delivery. The first was DevOps itself — the 2008-2012 recognition by engineers such as Patrick Debois and Gene Kim that the organisational wall between software development and IT operations was the primary cause of slow, brittle deployments characterised by big-bang release events, long lead times, and fragile manual processes. DevOps proposed collapsing that wall through shared tooling, shared ownership, and shared accountability for the full delivery pipeline from commit to production. The second movement was the mounting evidence that "bolt-on" security — penetration tests and code audits tacked onto the end of a release cycle — was categorically incompatible with the release velocity that cloud-native teams were achieving. When a team ships multiple times per day, a two-week security review cycle creates an intolerable backlog and a false sense of assurance: by the time findings are returned, the codebase has moved on and the context for remediation is lost.
+**DevSecOps** emerged from the collision of two independent but convergent movements in software delivery. The first was DevOps itself — the 2008-2012 recognition by engineers such as Patrick Debois and Gene Kim that the organisational wall between software development and IT operations was the primary cause of slow, brittle deployments characterised by big-bang release events, long lead times, and fragile manual processes. DevOps proposed collapsing that wall through shared tooling, shared ownership, and shared accountability for the full delivery pipeline from commit to production. The second movement was the mounting evidence that "bolt-on" security — penetration tests and code audits tacked onto the end of a release cycle — was categorically incompatible with the release velocity that cloud-native teams were achieving. When a team ships multiple times per day, a two-week security review cycle creates an intolerable backlog and a false sense of assurance: by the time findings are returned, the codebase has moved on and the context for remediation is lost.
 
-  The term "DevSecOps" crystallised around 2012 and gained widespread traction following catastrophic breaches directly attributable to vulnerabilities that automated scanning would have caught: the 2017 Equifax breach (an unpatched Apache Struts dependency identifiable in minutes by [[Software Composition Analysis]] tooling), the 2020 SolarWinds supply chain attack (build environment compromise that signed malicious artefacts — precisely the threat that [[SLSA Framework]] build provenance attestation addresses), and the 2021 Log4Shell vulnerability embedded in transitive Java dependencies across millions of applications worldwide. Each of these incidents demonstrated that late-stage security reviews created unacceptable risk windows measured in weeks rather than the hours that automated pipeline gates would enable.
+The term "DevSecOps" crystallised around 2012 and gained widespread traction following catastrophic breaches directly attributable to vulnerabilities that automated scanning would have caught: the 2017 Equifax breach (an unpatched Apache Struts dependency identifiable in minutes by [[Software Composition Analysis]] tooling), the 2020 SolarWinds supply chain attack (build environment compromise that signed malicious artefacts — precisely the threat that [[SLSA Framework]] build provenance attestation addresses), and the 2021 Log4Shell vulnerability embedded in transitive Java dependencies across millions of applications worldwide. Each of these incidents demonstrated that late-stage security reviews created unacceptable risk windows measured in weeks rather than the hours that automated pipeline gates would enable.
 
-  The conceptual core of DevSecOps is the pipeline as policy: every code change traverses an automated sequence of security gates that either pass or block the change. Pre-commit hooks run secret detection tools (Gitleaks, Trufflehog) to prevent credentials entering version control. The [[Continuous Integration]] stage executes SAST tools — Semgrep, Checkmarx, or Snyk Code — against every pull request, surfacing injection flaws, insecure deserialisation, path traversal vulnerabilities, and hardcoded credentials within seconds. Software composition analysis (SCA) audits open-source dependency trees against the CVE database and EPSS (Exploit Prediction Scoring System) scores, blocking merges that introduce critically exploitable transitive dependencies not just direct ones. Container builds are scanned by Trivy or Grype before any image is pushed to a registry, catching OS-level and library-level CVEs. Infrastructure-as-code templates (Terraform, CloudFormation, Kubernetes manifests) are validated against compliance policies encoded in Open Policy Agent (OPA) or Checkov, ensuring misconfiguration — the leading cause of cloud data breaches — cannot be deployed. Dynamic application security testing (DAST) tools probe running applications in staging environments for runtime vulnerabilities not visible to static analysis.
+The conceptual core of DevSecOps is the pipeline as policy: every code change traverses an automated sequence of security gates that either pass or block the change. Pre-commit hooks run secret detection tools (Gitleaks, Trufflehog) to prevent credentials entering version control. The [[Continuous Integration]] stage executes SAST tools — Semgrep, Checkmarx, or Snyk Code — against every pull request, surfacing injection flaws, insecure deserialisation, path traversal vulnerabilities, and hardcoded credentials within seconds. Software composition analysis (SCA) audits open-source dependency trees against the CVE database and EPSS (Exploit Prediction Scoring System) scores, blocking merges that introduce critically exploitable transitive dependencies not just direct ones. Container builds are scanned by Trivy or Grype before any image is pushed to a registry, catching OS-level and library-level CVEs. Infrastructure-as-code templates (Terraform, CloudFormation, Kubernetes manifests) are validated against compliance policies encoded in Open Policy Agent (OPA) or Checkov, ensuring misconfiguration — the leading cause of cloud data breaches — cannot be deployed. Dynamic application security testing (DAST) tools probe running applications in staging environments for runtime vulnerabilities not visible to static analysis.
 
-  The organisational dimension of DevSecOps is as significant as its tooling dimension. Gene Kim's three-ways framing of DevOps — flow (making work visible and moving it forward), feedback (detecting problems as quickly as possible), and continuous learning (improving the system based on what is learned) — maps directly onto DevSecOps practice. Security expertise must flow into developer toolchains rather than being siloed in a separate security team; feedback on vulnerabilities must be fast enough to be actionable by the engineer who introduced them while the code is still fresh in their mind; and security incidents must be treated as learning opportunities that improve both detection tooling and developer education. This cultural transformation requires investment in developer security training, security champion programmes that embed security expertise within product engineering squads, and metrics that track MTTR for vulnerabilities rather than merely counting open CVE counts.
+The organisational dimension of DevSecOps is as significant as its tooling dimension. Gene Kim's three-ways framing of DevOps — flow (making work visible and moving it forward), feedback (detecting problems as quickly as possible), and continuous learning (improving the system based on what is learned) — maps directly onto DevSecOps practice. Security expertise must flow into developer toolchains rather than being siloed in a separate security team; feedback on vulnerabilities must be fast enough to be actionable by the engineer who introduced them while the code is still fresh in their mind; and security incidents must be treated as learning opportunities that improve both detection tooling and developer education. This cultural transformation requires investment in developer security training, security champion programmes that embed security expertise within product engineering squads, and metrics that track MTTR for vulnerabilities rather than merely counting open CVE counts.
 
-  The 2025-2026 evolution of DevSecOps is characterised by three major shifts. First, AI-assisted security tooling has moved from experimental to production: LLMs now triage vulnerability findings with context-aware severity assessment, suggest and generate remediation patches, and auto-submit fix pull requests for a growing proportion of common vulnerability classes. Second, the SLSA framework has graduated from a Google-internal practice to a widely adopted open standard, with SLSA Level 2 now a minimum expectation for enterprise software procurement. Third, platform engineering has absorbed DevSecOps tooling configuration as a platform responsibility, with internal developer portals providing compliance-as-code scaffolding so that new services are instantiated already compliant with organisational and regulatory policy baselines.
+The 2025-2026 evolution of DevSecOps is characterised by three major shifts. First, AI-assisted security tooling has moved from experimental to production: LLMs now triage vulnerability findings with context-aware severity assessment, suggest and generate remediation patches, and auto-submit fix pull requests for a growing proportion of common vulnerability classes. Second, the SLSA framework has graduated from a Google-internal practice to a widely adopted open standard, with SLSA Level 2 now a minimum expectation for enterprise software procurement. Third, platform engineering has absorbed DevSecOps tooling configuration as a platform responsibility, with internal developer portals providing compliance-as-code scaffolding so that new services are instantiated already compliant with organisational and regulatory policy baselines.
 
-  ## Pipeline Architecture and Components
+## Pipeline Architecture and Components
 
-  **Pre-commit layer**
-  - Secret detection: Gitleaks and Trufflehog scan code changes for hardcoded credentials, API keys, and tokens before they enter version control history. Pre-commit hooks enforce this locally; server-side push hooks enforce it at the repository level.
-  - Lint and style enforcement: Security-oriented lint rules (bandit for Python, gosec for Go, semgrep rules) flag known insecure coding patterns at authorship time without requiring a full CI run.
-  - Licence compliance: FOSSA, Black Duck, and Licence Finder check that open-source licences in new dependencies are compatible with the project's commercial distribution model.
-  - Commit signing: Sigstore cosign and traditional GPG signing establish author non-repudiation from the moment code enters version control, providing build provenance chain-of-custody.
+**Pre-commit layer**
+
+- Secret detection: Gitleaks and Trufflehog scan code changes for hardcoded credentials, API keys, and tokens before they enter version control history. Pre-commit hooks enforce this locally; server-side push hooks enforce it at the repository level.
+- Lint and style enforcement: Security-oriented lint rules (bandit for Python, gosec for Go, semgrep rules) flag known insecure coding patterns at authorship time without requiring a full CI run.
+- Licence compliance: FOSSA, Black Duck, and Licence Finder check that open-source licences in new dependencies are compatible with the project's commercial distribution model.
+- Commit signing: Sigstore cosign and traditional GPG signing establish author non-repudiation from the moment code enters version control, providing build provenance chain-of-custody.
 
   **SAST — Static Application Security Testing**
-  - Semgrep (open-source, pattern-based, 30+ languages) is the dominant open-source SAST tool, with pre-built rule sets for OWASP Top 10 vulnerabilities and the ability to write custom rules in a simple YAML DSL. It integrates with GitHub Actions, GitLab CI, Bitbucket Pipelines, and Azure Pipelines as a first-class PR check.
-  - Checkmarx SAST and Snyk Code are the leading commercial SAST products, offering deeper data-flow analysis, taint tracking across module boundaries, and AI-assisted finding descriptions with remediation guidance.
-  - IDE integration (VS Code, IntelliJ, PyCharm) allows findings to be surfaced at authorship time — shift-even-further-left — before a commit is made.
+
+- Semgrep (open-source, pattern-based, 30+ languages) is the dominant open-source SAST tool, with pre-built rule sets for OWASP Top 10 vulnerabilities and the ability to write custom rules in a simple YAML DSL. It integrates with GitHub Actions, GitLab CI, Bitbucket Pipelines, and Azure Pipelines as a first-class PR check.
+- Checkmarx SAST and Snyk Code are the leading commercial SAST products, offering deeper data-flow analysis, taint tracking across module boundaries, and AI-assisted finding descriptions with remediation guidance.
+- IDE integration (VS Code, IntelliJ, PyCharm) allows findings to be surfaced at authorship time — shift-even-further-left — before a commit is made.
 
   **SCA — Software Composition Analysis**
-  - OWASP Dependency-Check and Dependabot audit the full transitive dependency tree (npm, Maven, pip, Go modules, Cargo, NuGet) against the NVD CVE database enriched with EPSS scores.
-  - Snyk Open Source and Socket.dev additionally detect malicious packages (dependency confusion, typosquatting) and monitor for new vulnerabilities in already-merged dependencies.
-  - Reachability analysis (available in Snyk and Semgrep) determines whether a vulnerable function in a dependency is actually called by the application, dramatically reducing false-positive rates.
+
+- OWASP Dependency-Check and Dependabot audit the full transitive dependency tree (npm, Maven, pip, Go modules, Cargo, NuGet) against the NVD CVE database enriched with EPSS scores.
+- Snyk Open Source and Socket.dev additionally detect malicious packages (dependency confusion, typosquatting) and monitor for new vulnerabilities in already-merged dependencies.
+- Reachability analysis (available in Snyk and Semgrep) determines whether a vulnerable function in a dependency is actually called by the application, dramatically reducing false-positive rates.
 
   **Container and Image Scanning**
-  - Trivy (Aqua Security, open-source) and Grype (Anchore, open-source) scan container images for OS-level CVEs (Debian, Ubuntu, Alpine, RHEL packages) and application-layer library CVEs across Java JARs, Python wheels, npm packages, and Go binaries.
-  - Distroless and scratch-based base images are mandated in platform golden paths to reduce attack surface: a distroless Node.js image has 70-90% fewer CVEs than a standard node:18 image.
-  - Image signing with Sigstore cosign and policy enforcement in Kubernetes admission controllers (Kyverno, OPA Gatekeeper) ensures only signed, scanned images from approved registries are schedulable.
+
+- Trivy (Aqua Security, open-source) and Grype (Anchore, open-source) scan container images for OS-level CVEs (Debian, Ubuntu, Alpine, RHEL packages) and application-layer library CVEs across Java JARs, Python wheels, npm packages, and Go binaries.
+- Distroless and scratch-based base images are mandated in platform golden paths to reduce attack surface: a distroless Node.js image has 70-90% fewer CVEs than a standard node:18 image.
+- Image signing with Sigstore cosign and policy enforcement in Kubernetes admission controllers (Kyverno, OPA Gatekeeper) ensures only signed, scanned images from approved registries are schedulable.
 
   **IaC Scanning — Infrastructure as Code**
-  - Checkov (Bridgecrew/Palo Alto Networks), tfsec (Aqua), Terrascan (Tenable), and KICS (Checkmarx) validate Terraform, CloudFormation, Kubernetes, Helm, and Bicep templates against CIS Benchmarks, NIST 800-53 controls, and PCI-DSS requirements.
-  - Common findings blocked: public S3 buckets, over-permissive IAM roles (AdministratorAccess attached to Lambda functions), unencrypted RDS databases, Kubernetes pods running as root, missing network policies.
-  - OPA Gatekeeper with Kubernetes admission control blocks non-compliant workloads from being scheduled, providing a runtime enforcement layer complementary to pre-deployment IaC scanning.
+
+- Checkov (Bridgecrew/Palo Alto Networks), tfsec (Aqua), Terrascan (Tenable), and KICS (Checkmarx) validate Terraform, CloudFormation, Kubernetes, Helm, and Bicep templates against CIS Benchmarks, NIST 800-53 controls, and PCI-DSS requirements.
+- Common findings blocked: public S3 buckets, over-permissive IAM roles (AdministratorAccess attached to Lambda functions), unencrypted RDS databases, Kubernetes pods running as root, missing network policies.
+- OPA Gatekeeper with Kubernetes admission control blocks non-compliant workloads from being scheduled, providing a runtime enforcement layer complementary to pre-deployment IaC scanning.
 
   **Build Provenance — SLSA**
-  - SLSA (Supply-chain Levels for Software Artefacts) Level 1 requires build definitions in version control; Level 2 requires a hosted build service with provenance attestations; Level 3 requires a hardened build environment with isolated build infrastructure.
-  - SLSA Level 3 build attestations produced by GitHub Actions, GitLab CI, or Tekton record the exact source commit, build environment hash, dependency versions, and build command used to produce each artefact. Attestations are stored in the Sigstore Rekor transparency log and verified at deployment time.
-  - This directly addresses the SolarWinds class of attack: even if an attacker compromises a developer's machine, they cannot produce an artefact with a valid SLSA Level 3 attestation because the attestation is signed by the build service's ephemeral private key, not the developer's key.
+
+- SLSA (Supply-chain Levels for Software Artefacts) Level 1 requires build definitions in version control; Level 2 requires a hosted build service with provenance attestations; Level 3 requires a hardened build environment with isolated build infrastructure.
+- SLSA Level 3 build attestations produced by GitHub Actions, GitLab CI, or Tekton record the exact source commit, build environment hash, dependency versions, and build command used to produce each artefact. Attestations are stored in the Sigstore Rekor transparency log and verified at deployment time.
+- This directly addresses the SolarWinds class of attack: even if an attacker compromises a developer's machine, they cannot produce an artefact with a valid SLSA Level 3 attestation because the attestation is signed by the build service's ephemeral private key, not the developer's key.
 
   **SBOM — Software Bill of Materials**
-  - Syft (Anchore), Microsoft SBOM Tool, and cdxgen generate SBOMs in SPDX 2.3 and CycloneDX 1.6 formats for every release artefact, enumerating all components, their versions, and their licence declarations.
-  - VEX (Vulnerability Exploitability eXchange) documents assert which CVEs listed in the SBOM are not exploitable in the deployed configuration (e.g., a vulnerable function is never called, or the vulnerable component is not included in the final build), reducing false-positive noise for downstream consumers.
-  - Living SBOMs — SBOMs continuously updated as new CVEs are disclosed — are the 2026 direction, replacing static point-in-time SBOMs with continuously enriched inventory linked to CVE feeds and EPSS data.
+
+- Syft (Anchore), Microsoft SBOM Tool, and cdxgen generate SBOMs in SPDX 2.3 and CycloneDX 1.6 formats for every release artefact, enumerating all components, their versions, and their licence declarations.
+- VEX (Vulnerability Exploitability eXchange) documents assert which CVEs listed in the SBOM are not exploitable in the deployed configuration (e.g., a vulnerable function is never called, or the vulnerable component is not included in the final build), reducing false-positive noise for downstream consumers.
+- Living SBOMs — SBOMs continuously updated as new CVEs are disclosed — are the 2026 direction, replacing static point-in-time SBOMs with continuously enriched inventory linked to CVE feeds and EPSS data.
 
   **Policy-as-Code — OPA and Gatekeeper**
-  - Open Policy Agent (OPA) with Rego policy language provides a general-purpose policy engine for admission control, API authorisation, and configuration validation across Kubernetes, Terraform, CI pipelines, and microservice APIs.
-  - Rego policies are version-controlled, unit-tested, and deployed via CI pipelines — applying the same software engineering disciplines (review, testing, automated deployment) to security policy that DevOps applies to application code.
-  - AWS Service Control Policies (SCPs), Azure Policy, and GCP Organisation Policies encode cloud-level guardrails that cannot be overridden even by account administrators, providing a hard outer boundary complementing the softer inner boundary of pipeline SAST/SCA checks.
+
+- Open Policy Agent (OPA) with Rego policy language provides a general-purpose policy engine for admission control, API authorisation, and configuration validation across Kubernetes, Terraform, CI pipelines, and microservice APIs.
+- Rego policies are version-controlled, unit-tested, and deployed via CI pipelines — applying the same software engineering disciplines (review, testing, automated deployment) to security policy that DevOps applies to application code.
+- AWS Service Control Policies (SCPs), Azure Policy, and GCP Organisation Policies encode cloud-level guardrails that cannot be overridden even by account administrators, providing a hard outer boundary complementing the softer inner boundary of pipeline SAST/SCA checks.
 
   **DAST and Runtime**
-  - OWASP ZAP (Zed Attack Proxy), Burp Suite Enterprise Edition, and Nuclei probe running applications in staging for authentication bypasses, IDOR (Insecure Direct Object Reference), injection flaws, SSRF (Server-Side Request Forgery), and API-specific vulnerabilities not visible to static analysis.
-  - Runtime Application Self-Protection (RASP) agents (Sqreen, Imperva, Contrast Security) monitor application behaviour from inside the process at runtime, detecting and blocking exploitation attempts based on call stack analysis rather than network signatures.
-  - Extended Detection and Response (XDR) and SIEM integration (Splunk, Elastic Security, Microsoft Sentinel) aggregates logs, events, and alerts across the pipeline and production environment into a unified security operations view.
+
+- OWASP ZAP (Zed Attack Proxy), Burp Suite Enterprise Edition, and Nuclei probe running applications in staging for authentication bypasses, IDOR (Insecure Direct Object Reference), injection flaws, SSRF (Server-Side Request Forgery), and API-specific vulnerabilities not visible to static analysis.
+- Runtime Application Self-Protection (RASP) agents (Sqreen, Imperva, Contrast Security) monitor application behaviour from inside the process at runtime, detecting and blocking exploitation attempts based on call stack analysis rather than network signatures.
+- Extended Detection and Response (XDR) and SIEM integration (Splunk, Elastic Security, Microsoft Sentinel) aggregates logs, events, and alerts across the pipeline and production environment into a unified security operations view.
 
   **Platform Engineering and IDPs**
-  - Internal Developer Portals (IDPs) built on Backstage (89% market share among IDP adopters), Port, or Cortex provide security scorecards, vulnerability posture dashboards, and golden-path scaffolding templates.
-  - Backstage's TechDocs plugin surfaces security documentation; its Software Catalogue tracks component ownership and security posture; its Scaffolder plugin instantiates new services pre-configured with all security tooling.
-  - Gartner projects 80% of software engineering organisations will have platform teams by 2026 and 75% of those will provide IDPs, embedding DevSecOps into the paved road rather than requiring individual teams to configure security tooling independently.
+
+- Internal Developer Portals (IDPs) built on Backstage (89% market share among IDP adopters), Port, or Cortex provide security scorecards, vulnerability posture dashboards, and golden-path scaffolding templates.
+- Backstage's TechDocs plugin surfaces security documentation; its Software Catalogue tracks component ownership and security posture; its Scaffolder plugin instantiates new services pre-configured with all security tooling.
+- Gartner projects 80% of software engineering organisations will have platform teams by 2026 and 75% of those will provide IDPs, embedding DevSecOps into the paved road rather than requiring individual teams to configure security tooling independently.
 
   **AI/ML Supply Chain Security (MLSecOps)**
-  - Model artefact signing via Sigstore cosign: model weights files are hashed, signed, and the signature is stored in the Rekor transparency log, enabling downstream consumers to verify model provenance.
-  - Training data provenance attestation: data pipeline outputs are hashed and linked to their source datasets, enabling detection of training data poisoning if an unexpected hash change is observed.
-  - OWASP LLM Top 10 automated scanning: ML security tools (Rebuff, Garak) probe deployed inference endpoints for prompt injection, training data extraction, and model theft attack vectors.
-  - MITRE ATLAS v5.1.0 (November 2025) adds 18 new techniques focused on AI agent security, including Command and Control (AML.TA0015) and AI-specific initial access and execution techniques, providing the threat model that MLSecOps pipeline checks are mapped against.
+
+- Model artefact signing via Sigstore cosign: model weights files are hashed, signed, and the signature is stored in the Rekor transparency log, enabling downstream consumers to verify model provenance.
+- Training data provenance attestation: data pipeline outputs are hashed and linked to their source datasets, enabling detection of training data poisoning if an unexpected hash change is observed.
+- OWASP LLM Top 10 automated scanning: ML security tools (Rebuff, Garak) probe deployed inference endpoints for prompt injection, training data extraction, and model theft attack vectors.
+- MITRE ATLAS v5.1.0 (November 2025) adds 18 new techniques focused on AI agent security, including Command and Control (AML.TA0015) and AI-specific initial access and execution techniques, providing the threat model that MLSecOps pipeline checks are mapped against.
 
   ## Maturity Models and Assessment Frameworks
 
@@ -253,102 +263,114 @@ DevSecOps is a software engineering practice that integrates security controls, 
   Zero trust principles applied to software supply chains require that every artefact be verified cryptographically before use, regardless of the trust implied by its source (even internal build systems are not implicitly trusted). SLSA attestations provide the artefact-level verification; Sigstore cosign verifications at container registry pull time (via Kubernetes admission controller webhook) implement the runtime enforcement. This prevents a compromised internal build system from deploying malicious artefacts even to production environments that normally accept internally-built images.
 
   ## Research & Literature
-  - 1. Debois, P. (2008). "Agile Infrastructure and Operations: How Infra-gile Are You?" *Agile Conference 2008*, Toronto.
-  - 2. Kim, G., Humble, J., Debois, P., & Willis, J. (2016). *The DevOps Handbook*. IT Revolution Press.
-  - 3. Sánchez-Gordón, M., & Colomo-Palacios, R. (2021). "Security as Culture: A Systematic Literature Review of DevSecOps." *IEEE Access*, 9, 123985-124014.
-  - 4. Myrbakken, H., & Colomo-Palacios, R. (2017). "DevSecOps: A Multivocal Literature Review." *Software Process Improvement and Capability Determination (SPICE)*, CCIS 770.
-  - 5. Rahman, A., & Williams, L. (2019). "Security Smells in Ansible and Chef Scripts: A Replication Study." *ACM Transactions on Software Engineering and Methodology*, 28(4).
-  - 6. McGraw, G., Migues, S., & West, J. (2020). *BSIMM12: Building Security In Maturity Model*. Synopsis Research.
-  - 7. NIST (2022). *Secure Software Development Framework (SSDF) SP 800-218*. National Institute of Standards and Technology.
-  - 8. Shostack, A. (2014). *Threat Modeling: Designing for Security*. Wiley.
-  - 9. Howard, M., & Lipner, S. (2006). *The Security Development Lifecycle*. Microsoft Press.
-  - 10. Humble, J., & Farley, D. (2010). *Continuous Delivery*. Addison-Wesley.
-  - 11. Fitzgerald, B., & Stol, K.J. (2017). "Continuous Software Engineering: A Roadmap and Agenda." *Journal of Systems and Software*, 123, 176-189.
-  - 12. OWASP (2023). *OWASP Top 10 for Large Language Model Applications v1.1*. OWASP Foundation.
-  - 13. OWASP (2026). *OWASP Top 10 for Agentic Applications*. OWASP Foundation.
-  - 14. MITRE (2025). *ATLAS v5.1.0: Adversarial Threat Landscape for Artificial-Intelligence Systems*. MITRE Corporation.
-  - 15. OpenSSF / Google (2021-2024). *SLSA: Supply-chain Levels for Software Artefacts v1.0*. OpenSSF.
-  - 16. NCSC (2022). *Secure Development and Deployment Guidance*. National Cyber Security Centre, GCHQ.
-  - 17. NCSC (2024). *Principles for the Security of Machine Learning*. National Cyber Security Centre, GCHQ.
-  - 18. Mohan, V., & Othmane, L. (2016). "SecDevOps: Is It a Marketing Buzzword? Mapping Research on Security in DevOps." *IEEE Security & Privacy Workshop on IoT Security and Privacy*.
-  - 19. Pohl, C., & Hof, H.J. (2015). "Secure Scrum: Development of Secure Software with Scrum." *ICSEA 2015*.
-  - 20. ENISA (2026). *SBOM Adoption State of Play 2026*. European Union Agency for Cybersecurity.
-  - 21. Market Research Future (2026). *DevSecOps Market Size, Share, Growth Analysis to 2035*. MRFR.
-  - 22. Gartner (2026). *Magic Quadrant for DevSecOps Platforms 2026*. Gartner Research.
-  - 23. Gartner (2025). *Strategic Trends in Platform Engineering, 2025*. Gartner Research.
-  - 24. DSIT (2026). *Cyber Security Sectoral Analysis 2026*. UK Department for Science, Innovation and Technology.
-  - 25. arXiv (2025). "Comparative Analysis of AI-Driven Security Approaches in DevSecOps: Challenges, Solutions, and Future Directions." arXiv:2504.19154.
-  - 26. MDPI Technologies (2025). "Evolution of DevSecOps and Its Influence on Application Security: A Systematic Literature Review." *Technologies*, 13(12), 548.
-  - 27. Cloudsmith (2026). "The 2026 Guide to Software Supply Chain Security: From Static SBOMs to Agentic Governance." cloudsmith.com/blog.
-  - 28. Practical DevSecOps (2026). "DevSecOps Trends 2026: The Ultimate Guide." practical-devsecops.com/devsecops-trends-2026/.
+
+- 1. Debois, P. (2008). "Agile Infrastructure and Operations: How Infra-gile Are You?" *Agile Conference 2008*, Toronto.
+- 2. Kim, G., Humble, J., Debois, P., & Willis, J. (2016). *The DevOps Handbook*. IT Revolution Press.
+- 3. Sánchez-Gordón, M., & Colomo-Palacios, R. (2021). "Security as Culture: A Systematic Literature Review of DevSecOps." *IEEE Access*, 9, 123985-124014.
+- 4. Myrbakken, H., & Colomo-Palacios, R. (2017). "DevSecOps: A Multivocal Literature Review." *Software Process Improvement and Capability Determination (SPICE)*, CCIS 770.
+- 5. Rahman, A., & Williams, L. (2019). "Security Smells in Ansible and Chef Scripts: A Replication Study." *ACM Transactions on Software Engineering and Methodology*, 28(4).
+- 6. McGraw, G., Migues, S., & West, J. (2020). *BSIMM12: Building Security In Maturity Model*. Synopsis Research.
+- 7. NIST (2022). *Secure Software Development Framework (SSDF) SP 800-218*. National Institute of Standards and Technology.
+- 8. Shostack, A. (2014). *Threat Modeling: Designing for Security*. Wiley.
+- 9. Howard, M., & Lipner, S. (2006). *The Security Development Lifecycle*. Microsoft Press.
+- 10. Humble, J., & Farley, D. (2010). *Continuous Delivery*. Addison-Wesley.
+- 11. Fitzgerald, B., & Stol, K.J. (2017). "Continuous Software Engineering: A Roadmap and Agenda." *Journal of Systems and Software*, 123, 176-189.
+- 12. OWASP (2023). *OWASP Top 10 for Large Language Model Applications v1.1*. OWASP Foundation.
+- 13. OWASP (2026). *OWASP Top 10 for Agentic Applications*. OWASP Foundation.
+- 14. MITRE (2025). *ATLAS v5.1.0: Adversarial Threat Landscape for Artificial-Intelligence Systems*. MITRE Corporation.
+- 15. OpenSSF / Google (2021-2024). *SLSA: Supply-chain Levels for Software Artefacts v1.0*. OpenSSF.
+- 16. NCSC (2022). *Secure Development and Deployment Guidance*. National Cyber Security Centre, GCHQ.
+- 17. NCSC (2024). *Principles for the Security of Machine Learning*. National Cyber Security Centre, GCHQ.
+- 18. Mohan, V., & Othmane, L. (2016). "SecDevOps: Is It a Marketing Buzzword? Mapping Research on Security in DevOps." *IEEE Security & Privacy Workshop on IoT Security and Privacy*.
+- 19. Pohl, C., & Hof, H.J. (2015). "Secure Scrum: Development of Secure Software with Scrum." *ICSEA 2015*.
+- 20. ENISA (2026). *SBOM Adoption State of Play 2026*. European Union Agency for Cybersecurity.
+- 21. Market Research Future (2026). *DevSecOps Market Size, Share, Growth Analysis to 2035*. MRFR.
+- 22. Gartner (2026). *Magic Quadrant for DevSecOps Platforms 2026*. Gartner Research.
+- 23. Gartner (2025). *Strategic Trends in Platform Engineering, 2025*. Gartner Research.
+- 24. DSIT (2026). *Cyber Security Sectoral Analysis 2026*. UK Department for Science, Innovation and Technology.
+- 25. arXiv (2025). "Comparative Analysis of AI-Driven Security Approaches in DevSecOps: Challenges, Solutions, and Future Directions." arXiv:2504.19154.
+- 26. MDPI Technologies (2025). "Evolution of DevSecOps and Its Influence on Application Security: A Systematic Literature Review." *Technologies*, 13(12), 548.
+- 27. Cloudsmith (2026). "The 2026 Guide to Software Supply Chain Security: From Static SBOMs to Agentic Governance." cloudsmith.com/blog.
+- 28. Practical DevSecOps (2026). "DevSecOps Trends 2026: The Ultimate Guide." practical-devsecops.com/devsecops-trends-2026/.
 
   ## Tool Ecosystem and Integration Landscape (2026)
 
   The 2026 DevSecOps tool ecosystem spans several layers and hundreds of products. The following is a structured overview of the primary tool categories and their leading implementations:
 
   **Secret Detection**
-  - Gitleaks (open-source): pre-commit and CI integration, 150+ secret pattern types, custom rule support
-  - Trufflehog (open-source, Trufflesecurity): high-recall secret detection with verified secret checking (actually tests if found credentials are active)
-  - GitGuardian: SaaS platform with 350+ secret types, developer-facing remediation dashboard, historical secret monitoring
+
+- Gitleaks (open-source): pre-commit and CI integration, 150+ secret pattern types, custom rule support
+- Trufflehog (open-source, Trufflesecurity): high-recall secret detection with verified secret checking (actually tests if found credentials are active)
+- GitGuardian: SaaS platform with 350+ secret types, developer-facing remediation dashboard, historical secret monitoring
 
   **SAST Tools**
-  - Semgrep (open-source + enterprise): 3,000+ community rules, custom rule YAML DSL, 30+ language support, P0-P4 severity triage
-  - Checkmarx SAST: enterprise-grade data-flow taint analysis, CxOne platform with AI-assisted remediation
-  - Snyk Code: AI-powered SAST with fix suggestions, IDE and CI integration, high precision focus
-  - Fortify SAST (Opentext): comprehensive CWE/OWASP coverage, regulated-sector certifications
-  - CodeQL (GitHub Advanced Security): semantic code analysis using query language, deep data-flow analysis
+
+- Semgrep (open-source + enterprise): 3,000+ community rules, custom rule YAML DSL, 30+ language support, P0-P4 severity triage
+- Checkmarx SAST: enterprise-grade data-flow taint analysis, CxOne platform with AI-assisted remediation
+- Snyk Code: AI-powered SAST with fix suggestions, IDE and CI integration, high precision focus
+- Fortify SAST (Opentext): comprehensive CWE/OWASP coverage, regulated-sector certifications
+- CodeQL (GitHub Advanced Security): semantic code analysis using query language, deep data-flow analysis
 
   **SCA Tools**
-  - Snyk Open Source: 1M+ vulnerability database, license compliance, reachability analysis
-  - OWASP Dependency-Check: open-source, NVD-backed, Maven/Gradle/npm support
-  - Dependabot (GitHub): automatic dependency update PRs, security advisory integration
-  - Socket.dev: real-time npm/PyPI malicious package detection beyond CVE databases
-  - Mend (formerly WhiteSource): enterprise SCA with policy engine and SBOM generation
+
+- Snyk Open Source: 1M+ vulnerability database, license compliance, reachability analysis
+- OWASP Dependency-Check: open-source, NVD-backed, Maven/Gradle/npm support
+- Dependabot (GitHub): automatic dependency update PRs, security advisory integration
+- Socket.dev: real-time npm/PyPI malicious package detection beyond CVE databases
+- Mend (formerly WhiteSource): enterprise SCA with policy engine and SBOM generation
 
   **Container Scanning**
-  - Trivy (Aqua Security, open-source): multi-target (containers, filesystems, git repos, IaC), fast scan, SBOM generation
-  - Grype (Anchore, open-source): container and filesystem scanning with SBOM integration (Syft)
-  - Clair (Red Hat, open-source): static analysis of container images, API-driven for registry integration
-  - Snyk Container: container and Kubernetes manifest scanning with base image recommendations
+
+- Trivy (Aqua Security, open-source): multi-target (containers, filesystems, git repos, IaC), fast scan, SBOM generation
+- Grype (Anchore, open-source): container and filesystem scanning with SBOM integration (Syft)
+- Clair (Red Hat, open-source): static analysis of container images, API-driven for registry integration
+- Snyk Container: container and Kubernetes manifest scanning with base image recommendations
 
   **IaC Scanning**
-  - Checkov (Bridgecrew/Palo Alto Networks, open-source): 750+ policies for Terraform, CloudFormation, K8s, ARM, Bicep
-  - tfsec (Aqua Security, open-source): Terraform-focused, fast, with SARIF output for IDE integration
-  - Terrascan (Tenable, open-source): multi-cloud IaC scanning, policy-as-code with Rego
-  - KICS (Checkmarx, open-source): multi-IaC scanning with 2,400+ vulnerability queries
+
+- Checkov (Bridgecrew/Palo Alto Networks, open-source): 750+ policies for Terraform, CloudFormation, K8s, ARM, Bicep
+- tfsec (Aqua Security, open-source): Terraform-focused, fast, with SARIF output for IDE integration
+- Terrascan (Tenable, open-source): multi-cloud IaC scanning, policy-as-code with Rego
+- KICS (Checkmarx, open-source): multi-IaC scanning with 2,400+ vulnerability queries
 
   **SBOM Generation**
-  - Syft (Anchore, open-source): generates CycloneDX and SPDX SBOMs from container images, filesystems, source trees
-  - Microsoft SBOM Tool (open-source): SPDX 2.2/2.3 generation, integrated with Azure DevOps pipelines
-  - cdxgen (CycloneDX): CycloneDX BOM generation across 20+ languages and frameworks
+
+- Syft (Anchore, open-source): generates CycloneDX and SPDX SBOMs from container images, filesystems, source trees
+- Microsoft SBOM Tool (open-source): SPDX 2.2/2.3 generation, integrated with Azure DevOps pipelines
+- cdxgen (CycloneDX): CycloneDX BOM generation across 20+ languages and frameworks
 
   **Build Provenance (SLSA)**
-  - Sigstore cosign: signing container images, blobs, and OCI artefacts with short-lived ephemeral keys
-  - Sigstore Rekor: immutable transparency log storing build provenance attestations
-  - SLSA GitHub Generator: SLSA Level 3 provenance generation for GitHub Actions workflows
+
+- Sigstore cosign: signing container images, blobs, and OCI artefacts with short-lived ephemeral keys
+- Sigstore Rekor: immutable transparency log storing build provenance attestations
+- SLSA GitHub Generator: SLSA Level 3 provenance generation for GitHub Actions workflows
 
   **Policy-as-Code Platforms**
-  - Open Policy Agent (OPA) + Gatekeeper: Kubernetes admission control with Rego policies
-  - Kyverno: Kubernetes-native policy engine using YAML policy definitions (no Rego)
-  - AWS Service Control Policies: organisation-wide AWS guardrails
-  - Terraform Sentinel: policy-as-code for Terraform Cloud and Enterprise
+
+- Open Policy Agent (OPA) + Gatekeeper: Kubernetes admission control with Rego policies
+- Kyverno: Kubernetes-native policy engine using YAML policy definitions (no Rego)
+- AWS Service Control Policies: organisation-wide AWS guardrails
+- Terraform Sentinel: policy-as-code for Terraform Cloud and Enterprise
 
   **DAST and Fuzzing**
-  - OWASP ZAP (open-source): active and passive scanning, scriptable, API scanning support
-  - Burp Suite Enterprise Edition (PortSwigger): enterprise DAST with CI integration, advanced active scanner
-  - Nuclei (ProjectDiscovery, open-source): template-based vulnerability scanner, 9,000+ templates
-  - RESTler (Microsoft Research, open-source): automated REST API fuzzing for stateful sequences
+
+- OWASP ZAP (open-source): active and passive scanning, scriptable, API scanning support
+- Burp Suite Enterprise Edition (PortSwigger): enterprise DAST with CI integration, advanced active scanner
+- Nuclei (ProjectDiscovery, open-source): template-based vulnerability scanner, 9,000+ templates
+- RESTler (Microsoft Research, open-source): automated REST API fuzzing for stateful sequences
 
   **Runtime Security**
-  - Falco (CNCF, open-source): container runtime security with eBPF-based syscall detection
-  - Aqua Security Runtime: commercial container and Kubernetes runtime protection
-  - Lacework: cloud-native security platform with behavioural anomaly detection
-  - Wiz: agentless cloud security posture management (CSPM) and workload protection
+
+- Falco (CNCF, open-source): container runtime security with eBPF-based syscall detection
+- Aqua Security Runtime: commercial container and Kubernetes runtime protection
+- Lacework: cloud-native security platform with behavioural anomaly detection
+- Wiz: agentless cloud security posture management (CSPM) and workload protection
 
   **AI/ML Security**
-  - Garak (open-source): LLM vulnerability scanner for prompt injection, hallucination, and data extraction
-  - Rebuff (open-source): prompt injection detection with self-hardening capabilities
-  - ModelScan (open-source, ProtectAI): scan ML model files for embedded malicious code
+
+- Garak (open-source): LLM vulnerability scanner for prompt injection, hallucination, and data extraction
+- Rebuff (open-source): prompt injection detection with self-hardening capabilities
+- ModelScan (open-source, ProtectAI): scan ML model files for embedded malicious code
 
   ## Developer Security Culture and Organisational Transformation
 
@@ -393,42 +415,47 @@ DevSecOps is a software engineering practice that integrates security controls, 
   DevSecOps practices map directly to regulatory and standards obligations across multiple frameworks. Understanding these mappings is essential for organisations in regulated sectors where DevSecOps adoption must be justified and documented in terms of regulatory compliance outcomes.
 
   **PCI-DSS v4.0 Mapping**
-  - Requirement 6.2 (Bespoke and custom software are developed securely): Satisfied by SAST pipeline integration, secure coding training, and peer code review processes.
-  - Requirement 6.3 (Security vulnerabilities are identified and addressed): Satisfied by SCA dependency scanning with CVSS-scored findings, patch management workflows triggered by CVE publications, and SBOM generation enabling proactive vulnerability tracking.
-  - Requirement 6.4 (Public-facing web applications are protected against attacks): Satisfied by DAST integration and Web Application Firewall (WAF) policy management through IaC.
-  - Requirement 6.5 (Changes to all system components are managed securely): Satisfied by pipeline-as-code, SLSA build attestations, and change management integration with ServiceNow or Jira.
-  - Requirement 11 (Test security of systems and networks regularly): Satisfied by automated penetration testing in CI pipelines and continuous vulnerability scanning.
+
+- Requirement 6.2 (Bespoke and custom software are developed securely): Satisfied by SAST pipeline integration, secure coding training, and peer code review processes.
+- Requirement 6.3 (Security vulnerabilities are identified and addressed): Satisfied by SCA dependency scanning with CVSS-scored findings, patch management workflows triggered by CVE publications, and SBOM generation enabling proactive vulnerability tracking.
+- Requirement 6.4 (Public-facing web applications are protected against attacks): Satisfied by DAST integration and Web Application Firewall (WAF) policy management through IaC.
+- Requirement 6.5 (Changes to all system components are managed securely): Satisfied by pipeline-as-code, SLSA build attestations, and change management integration with ServiceNow or Jira.
+- Requirement 11 (Test security of systems and networks regularly): Satisfied by automated penetration testing in CI pipelines and continuous vulnerability scanning.
 
   **HIPAA Technical Safeguards Mapping**
-  - §164.312(a)(2)(iv) Encryption and decryption: Enforced through IaC scanning policies that block unencrypted storage configurations.
-  - §164.312(b) Audit controls: Satisfied by pipeline audit logs, SLSA provenance attestations, and container runtime audit logging via Falco.
-  - §164.312(c)(1) Integrity: Satisfied by artefact signing with Sigstore cosign, SBOM generation, and cryptographic hash verification of all deployed artefacts.
+
+- §164.312(a)(2)(iv) Encryption and decryption: Enforced through IaC scanning policies that block unencrypted storage configurations.
+- §164.312(b) Audit controls: Satisfied by pipeline audit logs, SLSA provenance attestations, and container runtime audit logging via Falco.
+- §164.312(c)(1) Integrity: Satisfied by artefact signing with Sigstore cosign, SBOM generation, and cryptographic hash verification of all deployed artefacts.
 
   **ISO 27001:2022 Annex A Controls Mapping**
-  - A.8.25 Secure development lifecycle: Satisfied by the full DevSecOps pipeline including threat modelling, SAST, SCA, DAST, and penetration testing integration.
-  - A.8.26 Application security requirements: Satisfied by security requirement specifications derived from threat models, encoded as automated pipeline checks.
-  - A.8.27 Secure system architecture and engineering principles: Satisfied by IaC golden paths encoding secure-by-default architecture patterns.
-  - A.8.28 Secure coding: Satisfied by SAST tools with language-specific secure coding rule sets and developer training programmes.
-  - A.8.29 Security testing in development and acceptance: Satisfied by SAST, SCA, DAST, and penetration testing pipeline integration with documented acceptance criteria.
+
+- A.8.25 Secure development lifecycle: Satisfied by the full DevSecOps pipeline including threat modelling, SAST, SCA, DAST, and penetration testing integration.
+- A.8.26 Application security requirements: Satisfied by security requirement specifications derived from threat models, encoded as automated pipeline checks.
+- A.8.27 Secure system architecture and engineering principles: Satisfied by IaC golden paths encoding secure-by-default architecture patterns.
+- A.8.28 Secure coding: Satisfied by SAST tools with language-specific secure coding rule sets and developer training programmes.
+- A.8.29 Security testing in development and acceptance: Satisfied by SAST, SCA, DAST, and penetration testing pipeline integration with documented acceptance criteria.
 
   **NIST SP 800-218 (SSDF) Track Mapping**
-  - PO.1 (Define security requirements): Satisfied by threat modelling outputs, security user stories, and OWASP ASVS requirement mapping.
-  - PS.1 (Protect all code from unauthorised access and tampering): Satisfied by source control access controls, branch protection rules, commit signing, and SLSA build attestations.
-  - PW.1 (Design software to meet security requirements and mitigate security risks): Satisfied by threat modelling, security architecture review, and design-phase security review gates.
-  - PW.4 (Reuse existing, well-secured software): Satisfied by SCA tools identifying approved components, internal approved dependency registries, and SBOM provenance tracking.
-  - PW.5 (Create source code by adhering to coding practices): Satisfied by SAST pipeline integration with coding standard enforcement.
-  - PW.7 (Review and/or analyse human-readable code to identify vulnerabilities): Satisfied by SAST and peer code review with mandatory security reviewer approval for high-risk changes.
-  - PW.8 (Test executable code to identify vulnerabilities): Satisfied by DAST, fuzzing, and penetration testing integration.
-  - PW.9 (Configure the compilation, interpreter, and build processes to improve executable security): Satisfied by IaC scanning and build configuration security checks.
-  - RV.1 (Identify and confirm vulnerabilities on an ongoing basis): Satisfied by continuous SCA scanning against live CVE feeds and SBOM-based vulnerability tracking.
-  - RV.2 (Assess, prioritise, and remediate vulnerabilities): Satisfied by EPSS-based prioritisation, MTTR tracking, and automated remediation PR generation.
+
+- PO.1 (Define security requirements): Satisfied by threat modelling outputs, security user stories, and OWASP ASVS requirement mapping.
+- PS.1 (Protect all code from unauthorised access and tampering): Satisfied by source control access controls, branch protection rules, commit signing, and SLSA build attestations.
+- PW.1 (Design software to meet security requirements and mitigate security risks): Satisfied by threat modelling, security architecture review, and design-phase security review gates.
+- PW.4 (Reuse existing, well-secured software): Satisfied by SCA tools identifying approved components, internal approved dependency registries, and SBOM provenance tracking.
+- PW.5 (Create source code by adhering to coding practices): Satisfied by SAST pipeline integration with coding standard enforcement.
+- PW.7 (Review and/or analyse human-readable code to identify vulnerabilities): Satisfied by SAST and peer code review with mandatory security reviewer approval for high-risk changes.
+- PW.8 (Test executable code to identify vulnerabilities): Satisfied by DAST, fuzzing, and penetration testing integration.
+- PW.9 (Configure the compilation, interpreter, and build processes to improve executable security): Satisfied by IaC scanning and build configuration security checks.
+- RV.1 (Identify and confirm vulnerabilities on an ongoing basis): Satisfied by continuous SCA scanning against live CVE feeds and SBOM-based vulnerability tracking.
+- RV.2 (Assess, prioritise, and remediate vulnerabilities): Satisfied by EPSS-based prioritisation, MTTR tracking, and automated remediation PR generation.
 
   **UK NCSC Cyber Essentials Plus Mapping**
-  - Boundary firewalls and internet gateways: Enforced through IaC scanning policies blocking unrestricted inbound rules and missing network segmentation.
-  - Secure configuration: Enforced through container image baseline scanning, Kubernetes pod security policies, and cloud configuration scanning (Prowler, ScoutSuite).
-  - Access control: Enforced through IAM policy scanning, least-privilege role enforcement, and MFA requirement checks.
-  - Malware protection: Enforced through container runtime security (Falco) and software supply chain integrity (SLSA, Sigstore).
-  - Patch management: Enforced through continuous SCA scanning with vulnerability age tracking and automated dependency update PRs (Dependabot, Renovate).
+
+- Boundary firewalls and internet gateways: Enforced through IaC scanning policies blocking unrestricted inbound rules and missing network segmentation.
+- Secure configuration: Enforced through container image baseline scanning, Kubernetes pod security policies, and cloud configuration scanning (Prowler, ScoutSuite).
+- Access control: Enforced through IAM policy scanning, least-privilege role enforcement, and MFA requirement checks.
+- Malware protection: Enforced through container runtime security (Falco) and software supply chain integrity (SLSA, Sigstore).
+- Patch management: Enforced through continuous SCA scanning with vulnerability age tracking and automated dependency update PRs (Dependabot, Renovate).
 
   ## Benchmark Studies and Empirical Evidence
 
@@ -506,5 +533,5 @@ DevSecOps is a software engineering practice that integrates security controls, 
 
   **API Security and DevSecOps**: Application Programming Interface (API) security is an increasingly critical DevSecOps domain as organisations expose more functionality through APIs and microservice architectures increase the internal API attack surface. The OWASP API Security Top 10 (2023 edition) identifies the primary API vulnerability classes: Broken Object Level Authorisation (BOLA/IDOR), Broken Authentication, Broken Object Property Level Authorisation, Unrestricted Resource Consumption, Broken Function Level Authorisation, Unrestricted Access to Sensitive Business Flows, Server Side Request Forgery, Security Misconfiguration, Improper Inventory Management, and Unsafe Consumption of APIs. DevSecOps pipelines address API security through: OpenAPI/Swagger contract linting for security property validation, API fuzzing (RESTler, CATS) in staging environments, GraphQL-specific introspection and injection testing, and API gateway policy enforcement (rate limiting, authentication enforcement, JWT validation) through IaC-managed gateway configurations.
 
-- ### Provenance
+### Provenance
 

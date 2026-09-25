@@ -1,11 +1,11 @@
-
 Weaviate is an open-source vector database for storing objects and their vector embeddings to support semantic search and retrieval. It is developed by Weaviate B.V.
 
-- ### Semantic Classification
+### Semantic Classification
 
-- ### Content
-  - Weaviate stores data objects alongside vector representations and indexes them for approximate nearest-neighbour search. It supports combining vector similarity with keyword filtering and structured queries.
-  - The system integrates with embedding models so that text and other media can be vectorised at ingestion time. It is commonly used to build retrieval pipelines for question answering and recommendation.
+### Content
 
-- ### Provenance
+- Weaviate stores data objects alongside vector representations and indexes them for approximate nearest-neighbour search. It supports combining vector similarity with keyword filtering and structured queries.
+- The system integrates with embedding models so that text and other media can be vectorised at ingestion time. It is commonly used to build retrieval pipelines for question answering and recommendation.
+
+### Provenance
 

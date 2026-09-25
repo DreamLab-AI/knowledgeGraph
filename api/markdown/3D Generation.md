@@ -1,134 +1,126 @@
-
 3D Generation refers to the automated or semi-automated creation of three-dimensional geometry, appearance, and scene representations using machine learning models, procedural algorithms, or hybrid approaches. Techniques include text-to-3D, image-to-3D, and scene-level generation via neural radiance fields, Gaussian splatting, diffusion models, and large multi-modal networks. The field aims to dramatically reduce the time and skill threshold required to produce photorealistic or stylised 3D content for gaming, film, spatial computing, e-commerce, digital twins, and robotics simulation.
 
-- ### Semantic Classification
+### Semantic Classification
 
-- ### Content
+### Content
 
-  ## Compositional Relationships (Components)
-      SubClassOf(ai:3DGeneration
-        ObjectSomeValuesFrom(ai:hasPart ai:TextTo3D))
-      SubClassOf(ai:3DGeneration
-        ObjectSomeValuesFrom(ai:hasPart ai:NeuralRadianceField))
-      SubClassOf(ai:3DGeneration
-        ObjectSomeValuesFrom(ai:hasPart ai:GaussianSplatting))
-      SubClassOf(ai:3DGeneration
-        ObjectSomeValuesFrom(ai:hasPart ai:MeshGeneration))
-      SubClassOf(ai:3DGeneration
-        ObjectSomeValuesFrom(ai:hasPart ai:NovelViewSynthesis))
-      SubClassOf(ai:3DGeneration
-        ObjectSomeValuesFrom(ai:hasPart ai:SceneGeneration))
-      SubClassOf(ai:3DGeneration
-        ObjectSomeValuesFrom(ai:hasPart ai:TextureSynthesis))
+## Compositional Relationships (Components)
+    SubClassOf(ai:3DGeneration
+      ObjectSomeValuesFrom(ai:hasPart ai:TextTo3D))
+    SubClassOf(ai:3DGeneration
+      ObjectSomeValuesFrom(ai:hasPart ai:NeuralRadianceField))
+    SubClassOf(ai:3DGeneration
+      ObjectSomeValuesFrom(ai:hasPart ai:GaussianSplatting))
+    SubClassOf(ai:3DGeneration
+      ObjectSomeValuesFrom(ai:hasPart ai:MeshGeneration))
+    SubClassOf(ai:3DGeneration
+      ObjectSomeValuesFrom(ai:hasPart ai:NovelViewSynthesis))
+    SubClassOf(ai:3DGeneration
+      ObjectSomeValuesFrom(ai:hasPart ai:SceneGeneration))
+    SubClassOf(ai:3DGeneration
+      ObjectSomeValuesFrom(ai:hasPart ai:TextureSynthesis))
 
-  ## Dependency Relationships
-      SubClassOf(ai:3DGeneration
-        ObjectSomeValuesFrom(ai:requires ai:GPUCompute))
-      SubClassOf(ai:3DGeneration
-        ObjectSomeValuesFrom(ai:requires ai:Objaverse))
-      SubClassOf(ai:3DGeneration
-        ObjectSomeValuesFrom(ai:requires ai:DifferentiableRendering))
-      SubClassOf(ai:3DGeneration
-        ObjectSomeValuesFrom(ai:dependsOn ai:DiffusionModel))
-      SubClassOf(ai:3DGeneration
-        ObjectSomeValuesFrom(ai:dependsOn ai:ImplicitNeuralRepresentation))
-      SubClassOf(ai:3DGeneration
-        ObjectSomeValuesFrom(ai:dependsOn ai:Triplane))
-      SubClassOf(ai:3DGeneration
-        ObjectSomeValuesFrom(ai:dependsOn ai:CLIP))
-      SubClassOf(ai:3DGeneration
-        ObjectSomeValuesFrom(ai:dependsOn ai:DeepLearning))
+## Dependency Relationships
+    SubClassOf(ai:3DGeneration
+      ObjectSomeValuesFrom(ai:requires ai:GPUCompute))
+    SubClassOf(ai:3DGeneration
+      ObjectSomeValuesFrom(ai:requires ai:Objaverse))
+    SubClassOf(ai:3DGeneration
+      ObjectSomeValuesFrom(ai:requires ai:DifferentiableRendering))
+    SubClassOf(ai:3DGeneration
+      ObjectSomeValuesFrom(ai:dependsOn ai:DiffusionModel))
+    SubClassOf(ai:3DGeneration
+      ObjectSomeValuesFrom(ai:dependsOn ai:ImplicitNeuralRepresentation))
+    SubClassOf(ai:3DGeneration
+      ObjectSomeValuesFrom(ai:dependsOn ai:Triplane))
+    SubClassOf(ai:3DGeneration
+      ObjectSomeValuesFrom(ai:dependsOn ai:CLIP))
+    SubClassOf(ai:3DGeneration
+      ObjectSomeValuesFrom(ai:dependsOn ai:DeepLearning))
 
-  ## Capability Relationships
-      SubClassOf(ai:3DGeneration
-        ObjectSomeValuesFrom(ai:enables ai:3DContentCreation))
-      SubClassOf(ai:3DGeneration
-        ObjectSomeValuesFrom(ai:enables ai:DigitalTwinGeneration))
-      SubClassOf(ai:3DGeneration
-        ObjectSomeValuesFrom(ai:enables ai:GameAssetGeneration))
-      SubClassOf(ai:3DGeneration
-        ObjectSomeValuesFrom(ai:enables ai:SceneGeneration))
-      SubClassOf(ai:3DGeneration
-        ObjectSomeValuesFrom(ai:enables ai:SpatialComputing))
-      SubClassOf(ai:3DGeneration
-        ObjectSomeValuesFrom(ai:enables ai:ExtendedReality))
-      SubClassOf(ai:3DGeneration
-        ObjectSomeValuesFrom(ai:supports ai:ECommerce))
-      SubClassOf(ai:3DGeneration
-        ObjectSomeValuesFrom(ai:supports ai:RoboticsSimulation))
-      SubClassOf(ai:3DGeneration
-        ObjectSomeValuesFrom(ai:supports ai:FilmPrevisualisation))
+## Capability Relationships
+    SubClassOf(ai:3DGeneration
+      ObjectSomeValuesFrom(ai:enables ai:3DContentCreation))
+    SubClassOf(ai:3DGeneration
+      ObjectSomeValuesFrom(ai:enables ai:DigitalTwinGeneration))
+    SubClassOf(ai:3DGeneration
+      ObjectSomeValuesFrom(ai:enables ai:GameAssetGeneration))
+    SubClassOf(ai:3DGeneration
+      ObjectSomeValuesFrom(ai:enables ai:SceneGeneration))
+    SubClassOf(ai:3DGeneration
+      ObjectSomeValuesFrom(ai:enables ai:SpatialComputing))
+    SubClassOf(ai:3DGeneration
+      ObjectSomeValuesFrom(ai:enables ai:ExtendedReality))
+    SubClassOf(ai:3DGeneration
+      ObjectSomeValuesFrom(ai:supports ai:ECommerce))
+    SubClassOf(ai:3DGeneration
+      ObjectSomeValuesFrom(ai:supports ai:RoboticsSimulation))
+    SubClassOf(ai:3DGeneration
+      ObjectSomeValuesFrom(ai:supports ai:FilmPrevisualisation))
 
-  ## Implementation Relationships
-      SubClassOf(ai:3DGeneration
-        ObjectSomeValuesFrom(ai:implements ai:ScoreDistillationSampling))
-      SubClassOf(ai:3DGeneration
-        ObjectSomeValuesFrom(ai:implements ai:FeedForwardReconstruction))
-      SubClassOf(ai:3DGeneration
-        ObjectSomeValuesFrom(ai:implements ai:GaussianSplatting))
-      SubClassOf(ai:3DGeneration
-        ObjectSomeValuesFrom(ai:implements ai:NeuralRadianceField))
-      SubClassOf(ai:3DGeneration
-        ObjectSomeValuesFrom(ai:uses ai:DiffusionModel))
-      SubClassOf(ai:3DGeneration
-        ObjectSomeValuesFrom(ai:uses ai:CLIP))
-      SubClassOf(ai:3DGeneration
-        ObjectSomeValuesFrom(ai:uses ai:UNet))
-      SubClassOf(ai:3DGeneration
-        ObjectSomeValuesFrom(ai:uses ai:VisionTransformer))
+## Implementation Relationships
+    SubClassOf(ai:3DGeneration
+      ObjectSomeValuesFrom(ai:implements ai:ScoreDistillationSampling))
+    SubClassOf(ai:3DGeneration
+      ObjectSomeValuesFrom(ai:implements ai:FeedForwardReconstruction))
+    SubClassOf(ai:3DGeneration
+      ObjectSomeValuesFrom(ai:implements ai:GaussianSplatting))
+    SubClassOf(ai:3DGeneration
+      ObjectSomeValuesFrom(ai:implements ai:NeuralRadianceField))
+    SubClassOf(ai:3DGeneration
+      ObjectSomeValuesFrom(ai:uses ai:DiffusionModel))
+    SubClassOf(ai:3DGeneration
+      ObjectSomeValuesFrom(ai:uses ai:CLIP))
+    SubClassOf(ai:3DGeneration
+      ObjectSomeValuesFrom(ai:uses ai:UNet))
+    SubClassOf(ai:3DGeneration
+      ObjectSomeValuesFrom(ai:uses ai:VisionTransformer))
 
-  ## Reduction Relationships
-      SubClassOf(ai:3DGeneration
-        ObjectSomeValuesFrom(ai:reducesTo ai:ImageGeneration))
-      SubClassOf(ai:3DGeneration
-        ObjectSomeValuesFrom(ai:reducesTo ai:GenerativeAdversarialNetwork))
-      SubClassOf(ai:3DGeneration
-        ObjectSomeValuesFrom(ai:reducesTo ai:VariationalAutoencoder))
+## Reduction Relationships
+    SubClassOf(ai:3DGeneration
+      ObjectSomeValuesFrom(ai:reducesTo ai:ImageGeneration))
+    SubClassOf(ai:3DGeneration
+      ObjectSomeValuesFrom(ai:reducesTo ai:GenerativeAdversarialNetwork))
+    SubClassOf(ai:3DGeneration
+      ObjectSomeValuesFrom(ai:reducesTo ai:VariationalAutoencoder))
 
-  ## About
-  **3D Generation** encompasses the full pipeline from conditioning signal (text, image, video, point cloud) to a usable three-dimensional asset or scene representation. The challenge it solves is both perceptual — ensuring novel viewpoints of the generated scene look photorealistic or stylistically coherent — and geometric — ensuring the underlying 3D structure is consistent, watertight, and suitable for downstream tasks such as real-time rendering, physics simulation, or fabrication. Unlike [[Image Generation]], which operates in a well-structured 2D pixel domain, 3D generation must contend with the fundamental ambiguities of projective geometry: an infinite family of 3D scenes can produce the same 2D image, so learning a generative model that produces geometrically plausible 3D structure requires either strong 3D supervision, multi-view consistency constraints, or the kind of diffusion-model-lifted priors that Score Distillation Sampling provides.
+## About
+**3D Generation** encompasses the full pipeline from conditioning signal (text, image, video, point cloud) to a usable three-dimensional asset or scene representation. The challenge it solves is both perceptual — ensuring novel viewpoints of the generated scene look photorealistic or stylistically coherent — and geometric — ensuring the underlying 3D structure is consistent, watertight, and suitable for downstream tasks such as real-time rendering, physics simulation, or fabrication. Unlike [[Image Generation]], which operates in a well-structured 2D pixel domain, 3D generation must contend with the fundamental ambiguities of projective geometry: an infinite family of 3D scenes can produce the same 2D image, so learning a generative model that produces geometrically plausible 3D structure requires either strong 3D supervision, multi-view consistency constraints, or the kind of diffusion-model-lifted priors that Score Distillation Sampling provides.
 
-  The intellectual genealogy of the field runs from classical procedural modelling (L-systems, constructive solid geometry, fractal terrain, 1970s–1990s) through statistical shape models (active shape models, morphable face models, Blanz & Vetter 3D Morphable Model 1999, 2000s), early generative deep learning on 3D voxel grids and [[Point Cloud]] structures (Wu et al. 3D-GAN 2016; Fan et al. PointNet 2017; Achlioptas et al. 2018), the implicit-representation revolution initiated by [[Occupancy Network]] (Mescheder et al. 2019) and [[Signed Distance Function]]-based methods (Park et al. 2019 DeepSDF), the neural radiance field breakthrough (Mildenhall et al. 2020 [[NeRF]]), and the subsequent explosion of diffusion-based and feed-forward reconstruction systems from 2022 onward. Each generation of technique inherited the prior generation's evaluation metrics and benchmark datasets while dramatically expanding quality and scope.
+The intellectual genealogy of the field runs from classical procedural modelling (L-systems, constructive solid geometry, fractal terrain, 1970s–1990s) through statistical shape models (active shape models, morphable face models, Blanz & Vetter 3D Morphable Model 1999, 2000s), early generative deep learning on 3D voxel grids and [[Point Cloud]] structures (Wu et al. 3D-GAN 2016; Fan et al. PointNet 2017; Achlioptas et al. 2018), the implicit-representation revolution initiated by [[Occupancy Network]] (Mescheder et al. 2019) and [[Signed Distance Function]]-based methods (Park et al. 2019 DeepSDF), the neural radiance field breakthrough (Mildenhall et al. 2020 [[NeRF]]), and the subsequent explosion of diffusion-based and feed-forward reconstruction systems from 2022 onward. Each generation of technique inherited the prior generation's evaluation metrics and benchmark datasets while dramatically expanding quality and scope.
 
-  The pivotal scaling moment arrived when the [[Objaverse]] dataset (Deitke et al. 2023) made 800K+ annotated 3D assets publicly available, followed by Objaverse-XL expanding to 10M+ objects. This gave researchers the large-scale 3D training corpus needed to train feed-forward reconstruction networks capable of generalising across object categories. Previously, models trained on ShapeNet (55 categories, ~50K models) showed poor cross-category transfer and were largely confined to cars, chairs, and aeroplanes. Objaverse scale broke this bottleneck, enabling Zero123, MVDream, CRM, and TRELLIS to generalise to arbitrary object types.
+The pivotal scaling moment arrived when the [[Objaverse]] dataset (Deitke et al. 2023) made 800K+ annotated 3D assets publicly available, followed by Objaverse-XL expanding to 10M+ objects. This gave researchers the large-scale 3D training corpus needed to train feed-forward reconstruction networks capable of generalising across object categories. Previously, models trained on ShapeNet (55 categories, ~50K models) showed poor cross-category transfer and were largely confined to cars, chairs, and aeroplanes. Objaverse scale broke this bottleneck, enabling Zero123, MVDream, CRM, and TRELLIS to generalise to arbitrary object types.
 
-  As of 2026, the object-level single-image-to-3D subsector has reached near-production maturity. Microsoft's TRELLIS model (released December 2024, open-sourced under MIT licence) is a 4-billion-parameter structured latent diffusion model using a triplane-Gaussian hybrid representation that produces 1536-resolution 3D assets in under 20 seconds on a single 24 GB GPU, with PBR texture output and mesh topology suitable for game engine import. Meshy has generated over 30 million 3D assets for more than 3 million creators globally. The Tripo AI, Hitem3D, and Kaedim platforms offer competing API services. Full [[Scene Generation]] — producing cohesive environments with consistent material properties, lighting, and semantic structure across many objects — remains an active frontier where compositional generation, layout-conditioned diffusion, and world-model approaches (Google's Genie 2, DeepMind's DreamerV3) are competing paradigms.
+As of 2026, the object-level single-image-to-3D subsector has reached near-production maturity. Microsoft's TRELLIS model (released December 2024, open-sourced under MIT licence) is a 4-billion-parameter structured latent diffusion model using a triplane-Gaussian hybrid representation that produces 1536-resolution 3D assets in under 20 seconds on a single 24 GB GPU, with PBR texture output and mesh topology suitable for game engine import. Meshy has generated over 30 million 3D assets for more than 3 million creators globally. The Tripo AI, Hitem3D, and Kaedim platforms offer competing API services. Full [[Scene Generation]] — producing cohesive environments with consistent material properties, lighting, and semantic structure across many objects — remains an active frontier where compositional generation, layout-conditioned diffusion, and world-model approaches (Google's Genie 2, DeepMind's DreamerV3) are competing paradigms.
 
-  The economic impact is beginning to materialise: the global 3D content creation market (estimated at $3.2 billion in 2024 by market research firms) is projected to grow at 18% CAGR through 2030, with AI-generated content expected to constitute 30–40% of all newly created 3D assets by 2028. Game studios, architectural visualisation firms, and e-commerce platforms are the early adopters; digital twin generation for manufacturing and infrastructure is the emerging enterprise wedge.
+The economic impact is beginning to materialise: the global 3D content creation market (estimated at $3.2 billion in 2024 by market research firms) is projected to grow at 18% CAGR through 2030, with AI-generated content expected to constitute 30–40% of all newly created 3D assets by 2028. Game studios, architectural visualisation firms, and e-commerce platforms are the early adopters; digital twin generation for manufacturing and infrastructure is the emerging enterprise wedge.
 
-  The technical barriers that remain significant in 2026 are: (1) **material and lighting disentanglement** — separating geometry, albedo, roughness, metallicity, and lighting from appearance observations is an ill-posed problem still not fully solved; (2) **topological quality** — automatically generating production-quality mesh topology (quad-dominant, suitable for animation rigging) rather than dense triangle soups remains challenging; (3) **scale consistency** — generated objects often have ambiguous real-world scale; (4) **scene-level coherence** — multi-object scenes require relational reasoning beyond object-centric generation; and (5) **physical plausibility** — generated assets frequently violate structural physics (floating objects, interpenetrating geometry) in ways that require post-processing or constrained generation.
+The technical barriers that remain significant in 2026 are: (1) **material and lighting disentanglement** — separating geometry, albedo, roughness, metallicity, and lighting from appearance observations is an ill-posed problem still not fully solved; (2) **topological quality** — automatically generating production-quality mesh topology (quad-dominant, suitable for animation rigging) rather than dense triangle soups remains challenging; (3) **scale consistency** — generated objects often have ambiguous real-world scale; (4) **scene-level coherence** — multi-object scenes require relational reasoning beyond object-centric generation; and (5) **physical plausibility** — generated assets frequently violate structural physics (floating objects, interpenetrating geometry) in ways that require post-processing or constrained generation.
 
-  ## Components and Architecture
+## Components and Architecture
 
-  **3D Representation Families**
+**3D Representation Families**
 
-  - **Neural Radiance Fields ([[NeRF]])**: Implicitly encode a scene as a continuous volumetric function mapping 3D coordinates (x,y,z) and viewing directions (θ,φ) to colour (r,g,b) and volume density σ. Rendered via differentiable ray marching: for each camera ray, sample points along the ray, evaluate the MLP at each sample, and composite colour and density using the volume rendering equation C(r) = ∫ T(t) σ(r(t)) c(r(t),d) dt where T(t) = exp(-∫₀ᵗ σ(r(s)) ds) is the accumulated transmittance. High photorealism but slow per-scene optimisation (hours to days in the original 2020 implementation). [[Instant-NGP]] (Müller et al. 2022) replaced the single MLP with a hash-grid encoding, reducing training to seconds on a single GPU. Key subsequent variants: Zip-NeRF (2023), Nerfacto (Nerfstudio), and mip-NeRF 360 for unbounded scenes.
-
-  - **[[Gaussian Splatting]] (3DGS)**: Represent scenes as collections of parametric 3D Gaussian primitives, each characterised by a 3D centre position μ, a full 3×3 covariance matrix Σ (decomposed as Σ = RSS^T R^T for rotation R and scale S), colour represented as low-degree spherical harmonics coefficients, and an opacity scalar α. Rendering proceeds by projecting 3D Gaussians to 2D screen-space ellipses and alpha-compositing them in depth-sorted order using a tile-based rasteriser. Training requires only minutes; rendering at 100+ FPS on consumer GPUs; representation is explicit and directly editable. Widely adopted for capture (Luma AI, Polycam) and is becoming the preferred format for real-time XR experiences in 2025–2026.
-
-  - **[[Triplane]] Representations**: Factor the 3D volume into three axis-aligned 2D feature planes (XY, XZ, YZ). For a 3D query point p=(x,y,z), the triplane feature is obtained by projecting p onto each plane and bilinearly interpolating, then concatenating the three feature vectors and decoding with a small MLP. This hybrid approach allows efficient use of 2D convolutional backbones (e.g., [[U-Net]] or [[Vision Transformer]]) for generating 3D content, since triplane features are simply three channel images. Used in EG3D (Chan et al. 2022), GET3D (Gao et al. 2022), and as the structured latent format in TRELLIS (Xiang et al. 2024) which denoises triplane tokens with a DiT (Diffusion Transformer) backbone.
-
-  - **Mesh-Based Representations**: Polyhedral meshes with UV-mapped textures remain the industry standard for real-time game engines, VFX pipelines, and physical manufacturing. Most 3D generation pipelines convert their intermediate representation to mesh as a final step. Methods include classical marching cubes (limited to axis-aligned voxels), Deep Marching Tetrahedra (DMTet, Shen et al. 2021) which learns a differentiable mesh extraction from SDF fields, and FlexiCubes (Shen et al. 2023) which allows gradient flow through mesh topology. CraftsMan and TRELLIS produce UV-ready meshes suitable for direct import into Unreal Engine or Blender without manual retopology.
-
-  - **[[Point Cloud]] Methods**: Direct generation over sets of 3D points (unordered). Point-E (OpenAI 2022) uses a two-stage pipeline: a text-conditioned CLIP-guided image generator followed by a point cloud diffusion model conditioned on the generated image. Fast (seconds) but lower quality than mesh-based methods; primarily useful for initialising downstream refinement.
+- **Neural Radiance Fields ([[NeRF]])**: Implicitly encode a scene as a continuous volumetric function mapping 3D coordinates (x,y,z) and viewing directions (θ,φ) to colour (r,g,b) and volume density σ. Rendered via differentiable ray marching: for each camera ray, sample points along the ray, evaluate the MLP at each sample, and composite colour and density using the volume rendering equation C(r) = ∫ T(t) σ(r(t)) c(r(t),d) dt where T(t) = exp(-∫₀ᵗ σ(r(s)) ds) is the accumulated transmittance. High photorealism but slow per-scene optimisation (hours to days in the original 2020 implementation). [[Instant-NGP]] (Müller et al. 2022) replaced the single MLP with a hash-grid encoding, reducing training to seconds on a single GPU. Key subsequent variants: Zip-NeRF (2023), Nerfacto (Nerfstudio), and mip-NeRF 360 for unbounded scenes.
+- **[[Gaussian Splatting]] (3DGS)**: Represent scenes as collections of parametric 3D Gaussian primitives, each characterised by a 3D centre position μ, a full 3×3 covariance matrix Σ (decomposed as Σ = RSS^T R^T for rotation R and scale S), colour represented as low-degree spherical harmonics coefficients, and an opacity scalar α. Rendering proceeds by projecting 3D Gaussians to 2D screen-space ellipses and alpha-compositing them in depth-sorted order using a tile-based rasteriser. Training requires only minutes; rendering at 100+ FPS on consumer GPUs; representation is explicit and directly editable. Widely adopted for capture (Luma AI, Polycam) and is becoming the preferred format for real-time XR experiences in 2025–2026.
+- **[[Triplane]] Representations**: Factor the 3D volume into three axis-aligned 2D feature planes (XY, XZ, YZ). For a 3D query point p=(x,y,z), the triplane feature is obtained by projecting p onto each plane and bilinearly interpolating, then concatenating the three feature vectors and decoding with a small MLP. This hybrid approach allows efficient use of 2D convolutional backbones (e.g., [[U-Net]] or [[Vision Transformer]]) for generating 3D content, since triplane features are simply three channel images. Used in EG3D (Chan et al. 2022), GET3D (Gao et al. 2022), and as the structured latent format in TRELLIS (Xiang et al. 2024) which denoises triplane tokens with a DiT (Diffusion Transformer) backbone.
+- **Mesh-Based Representations**: Polyhedral meshes with UV-mapped textures remain the industry standard for real-time game engines, VFX pipelines, and physical manufacturing. Most 3D generation pipelines convert their intermediate representation to mesh as a final step. Methods include classical marching cubes (limited to axis-aligned voxels), Deep Marching Tetrahedra (DMTet, Shen et al. 2021) which learns a differentiable mesh extraction from SDF fields, and FlexiCubes (Shen et al. 2023) which allows gradient flow through mesh topology. CraftsMan and TRELLIS produce UV-ready meshes suitable for direct import into Unreal Engine or Blender without manual retopology.
+- **[[Point Cloud]] Methods**: Direct generation over sets of 3D points (unordered). Point-E (OpenAI 2022) uses a two-stage pipeline: a text-conditioned CLIP-guided image generator followed by a point cloud diffusion model conditioned on the generated image. Fast (seconds) but lower quality than mesh-based methods; primarily useful for initialising downstream refinement.
 
   **Generative Conditioning Mechanisms**
 
-  - **[[Score Distillation Sampling]] (SDS)**: The key insight of DreamFusion (Poole et al. 2022) is that a pre-trained 2D diffusion model implicitly defines a probability distribution over images that A* can treat as a score function. Given a 3D representation θ (e.g., NeRF parameters), differentiable rendering produces a 2D image x from a random camera viewpoint. The score gradient from the diffusion model — evaluated at a randomly perturbed version of x at noise level t — provides a signal ∇_θ L_SDS = E_t,ε[w(t)(ε̂_φ(x_t; y, t) - ε)∂x/∂θ] that pushes the 3D scene to look like images the diffusion model assigns high probability. Original SDS produces over-saturated, low-diversity, sometimes multi-faced (Janus problem) outputs. Improved variants: Variational Score Distillation (VSD, Wang et al. 2023 ProlificDreamer) treats the 3D parameters as samples from a variational distribution, dramatically improving quality and diversity. Score Distillation via Reparametrised DDIM (SRDD, 2024) reparametrises the SDS objective to avoid the mode-collapse tendency.
-
-  - **Feed-Forward Multi-View Reconstruction (Large Reconstruction Models)**: Train a large [[Transformer Architecture]] directly on (image, camera pose, 3D representation) triples drawn from rendered [[Objaverse]] assets. At inference, a single conditioning image (or a text-to-image generation from Stable Diffusion / DALL-E) is passed through an image encoder; camera-conditioned cross-attention decodes a 3D representation in a single forward pass. Key examples: Zero123 (Liu et al. 2023) fine-tuned Stable Diffusion for novel-view synthesis; CRM (Wang et al. 2024) uses a convolutional reconstruction model outputting a triplane mesh; TRELLIS (Xiang et al. 2024) denoises structured triplane latents with a 4B-parameter DiT.
-
-  - **Multi-View Consistency Networks**: Generate multiple consistent views of an object simultaneously, then fuse into 3D via traditional multi-view stereo or Gaussian splatting. MVDream (Shi et al. 2023) generates four consistent views from a text prompt; Zero123++ (Liu et al. 2023) generates six views from a single image. Consistent multi-view generation is the current best-practice first stage before 3D reconstruction.
-
-  - **Native 3D Diffusion**: Directly diffuse over 3D representations without 2D lifting. Point-E (OpenAI 2022) diffuses over point clouds; Shap-E (OpenAI 2023) diffuses over implicit function parameters; GaussianDreamer (Yi et al. 2024) and LGM (Tang et al. 2024) diffuse over Gaussian parameters. Quality historically lagged 2D-lifted approaches but the gap is narrowing rapidly; native 3D diffusion avoids the multi-view inconsistency problem inherent in SDS.
+- **[[Score Distillation Sampling]] (SDS)**: The key insight of DreamFusion (Poole et al. 2022) is that a pre-trained 2D diffusion model implicitly defines a probability distribution over images that A* can treat as a score function. Given a 3D representation θ (e.g., NeRF parameters), differentiable rendering produces a 2D image x from a random camera viewpoint. The score gradient from the diffusion model — evaluated at a randomly perturbed version of x at noise level t — provides a signal ∇_θ L_SDS = E_t,ε[w(t)(ε̂_φ(x_t; y, t) - ε)∂x/∂θ] that pushes the 3D scene to look like images the diffusion model assigns high probability. Original SDS produces over-saturated, low-diversity, sometimes multi-faced (Janus problem) outputs. Improved variants: Variational Score Distillation (VSD, Wang et al. 2023 ProlificDreamer) treats the 3D parameters as samples from a variational distribution, dramatically improving quality and diversity. Score Distillation via Reparametrised DDIM (SRDD, 2024) reparametrises the SDS objective to avoid the mode-collapse tendency.
+- **Feed-Forward Multi-View Reconstruction (Large Reconstruction Models)**: Train a large [[Transformer Architecture]] directly on (image, camera pose, 3D representation) triples drawn from rendered [[Objaverse]] assets. At inference, a single conditioning image (or a text-to-image generation from Stable Diffusion / DALL-E) is passed through an image encoder; camera-conditioned cross-attention decodes a 3D representation in a single forward pass. Key examples: Zero123 (Liu et al. 2023) fine-tuned Stable Diffusion for novel-view synthesis; CRM (Wang et al. 2024) uses a convolutional reconstruction model outputting a triplane mesh; TRELLIS (Xiang et al. 2024) denoises structured triplane latents with a 4B-parameter DiT.
+- **Multi-View Consistency Networks**: Generate multiple consistent views of an object simultaneously, then fuse into 3D via traditional multi-view stereo or Gaussian splatting. MVDream (Shi et al. 2023) generates four consistent views from a text prompt; Zero123++ (Liu et al. 2023) generates six views from a single image. Consistent multi-view generation is the current best-practice first stage before 3D reconstruction.
+- **Native 3D Diffusion**: Directly diffuse over 3D representations without 2D lifting. Point-E (OpenAI 2022) diffuses over point clouds; Shap-E (OpenAI 2023) diffuses over implicit function parameters; GaussianDreamer (Yi et al. 2024) and LGM (Tang et al. 2024) diffuse over Gaussian parameters. Quality historically lagged 2D-lifted approaches but the gap is narrowing rapidly; native 3D diffusion avoids the multi-view inconsistency problem inherent in SDS.
 
   **Training Data Ecosystem**
 
-  - **[[Objaverse]]** (Deitke et al. 2023, CVPR): 800K+ 3D assets scraped from Sketchfab under CC licences; includes diverse object categories with text annotations and rendered images. The dominant training corpus for object-level generation from 2023 onward.
-  - **Objaverse-XL** (Deitke et al. 2023, Stability AI): Extends to 10M+ objects across GitHub, Thingiverse, Sketchfab, and other web sources. Provides the scale needed for large foundation models.
-  - **Rendered multi-view datasets**: Objaverse rendered at 32–256 viewpoints per object under variable lighting provides paired (image, 3D) supervision; Zero123's training used 100M+ such renders; CRM used 280 views per object.
-  - **ShapeNet** (Chang et al. 2015): The original benchmark dataset, 55 categories and ~50K models; now considered too small and category-limited for modern foundation model training but still used for evaluation.
-  - **ScanNet and ScanNet++**: Real-world indoor scene scans used for scene-level reconstruction and generation research.
+- **[[Objaverse]]** (Deitke et al. 2023, CVPR): 800K+ 3D assets scraped from Sketchfab under CC licences; includes diverse object categories with text annotations and rendered images. The dominant training corpus for object-level generation from 2023 onward.
+- **Objaverse-XL** (Deitke et al. 2023, Stability AI): Extends to 10M+ objects across GitHub, Thingiverse, Sketchfab, and other web sources. Provides the scale needed for large foundation models.
+- **Rendered multi-view datasets**: Objaverse rendered at 32–256 viewpoints per object under variable lighting provides paired (image, 3D) supervision; Zero123's training used 100M+ such renders; CRM used 280 views per object.
+- **ShapeNet** (Chang et al. 2015): The original benchmark dataset, 55 categories and ~50K models; now considered too small and category-limited for modern foundation model training but still used for evaluation.
+- **ScanNet and ScanNet++**: Real-world indoor scene scans used for scene-level reconstruction and generation research.
 
   ## Mathematical Foundations and Technical Deep Dive
 
@@ -159,22 +151,24 @@
   Training minimises a combination of L1 and D-SSIM loss: L = (1−λ)L1 + λ L_D-SSIM with λ=0.2 typically. Adaptive densification adds new Gaussians in under-reconstructed regions.
 
   **3D Representation Comparison Table**
-  - NeRF: continuous, differentiable, slow to train (minutes–hours), slow to render (ms/frame), no native mesh output
-  - Instant-NGP: continuous with hash grid, fast to train (seconds), moderate render speed, no native mesh
-  - 3D Gaussian Splatting: explicit Gaussian primitives, fast to train (minutes), real-time render (30–150 FPS), editable but no native mesh; convert via GaussianObject or SuGaR
-  - Triplane: hybrid 2D/3D, amenable to 2D CNNs, fast inference with feed-forward decoders, mesh via SDF
-  - DMTet/FlexiCubes: differentiable mesh extraction, production-quality topology, not standalone representations
-  - Point Cloud: simple, unordered, easy to generate with MLP diffusion, low quality for rendering
+
+- NeRF: continuous, differentiable, slow to train (minutes–hours), slow to render (ms/frame), no native mesh output
+- Instant-NGP: continuous with hash grid, fast to train (seconds), moderate render speed, no native mesh
+- 3D Gaussian Splatting: explicit Gaussian primitives, fast to train (minutes), real-time render (30–150 FPS), editable but no native mesh; convert via GaussianObject or SuGaR
+- Triplane: hybrid 2D/3D, amenable to 2D CNNs, fast inference with feed-forward decoders, mesh via SDF
+- DMTet/FlexiCubes: differentiable mesh extraction, production-quality topology, not standalone representations
+- Point Cloud: simple, unordered, easy to generate with MLP diffusion, low quality for rendering
 
   **Evaluation Metrics**
   3D generation quality is evaluated using:
-  - **PSNR (Peak Signal-to-Noise Ratio)**: dB value comparing rendered novel-view images to ground truth; typical values 25–35 dB for state-of-the-art.
-  - **SSIM / LPIPS**: Structural similarity and perceptual image patch similarity for rendered appearance.
-  - **Chamfer Distance (CD)**: Point-to-point mean squared distance between generated and ground-truth point clouds; lower is better.
-  - **Earth Mover's Distance (EMD)**: Distribution distance between point clouds; more sensitive to outliers than CD.
-  - **FID (Fréchet Inception Distance)**: Distribution-level quality metric comparing rendered image distributions; adapted from 2D image generation evaluation.
-  - **Mesh quality metrics**: Watertightness (no holes), manifoldness (no non-manifold edges), regularity of triangle size distribution.
-  - **User studies**: Human preference ratings comparing generated assets to baselines and to human-created assets; increasingly used for text-to-3D evaluation where ground-truth 3D is unavailable.
+
+- **PSNR (Peak Signal-to-Noise Ratio)**: dB value comparing rendered novel-view images to ground truth; typical values 25–35 dB for state-of-the-art.
+- **SSIM / LPIPS**: Structural similarity and perceptual image patch similarity for rendered appearance.
+- **Chamfer Distance (CD)**: Point-to-point mean squared distance between generated and ground-truth point clouds; lower is better.
+- **Earth Mover's Distance (EMD)**: Distribution distance between point clouds; more sensitive to outliers than CD.
+- **FID (Fréchet Inception Distance)**: Distribution-level quality metric comparing rendered image distributions; adapted from 2D image generation evaluation.
+- **Mesh quality metrics**: Watertightness (no holes), manifoldness (no non-manifold edges), regularity of triangle size distribution.
+- **User studies**: Human preference ratings comparing generated assets to baselines and to human-created assets; increasingly used for text-to-3D evaluation where ground-truth 3D is unavailable.
 
   ## Use Cases and Major Families
 
@@ -220,10 +214,11 @@
 
   **Computational Cost**
   Despite significant progress, 3D generation remains substantially more expensive than 2D generation:
-  - TRELLIS: 20 seconds on NVIDIA 4090 (24 GB VRAM) — fast but requires high-end consumer GPU
-  - SDS-based methods (ProlificDreamer): 30–60 minutes on A100 — research-grade only
-  - Multi-view rendering + Gaussian fitting: 5–30 minutes for high quality — moderate
-  - Point-E/Shap-E (2022 OpenAI, point cloud diffusion): 1–20 seconds — fast but low quality
+
+- TRELLIS: 20 seconds on NVIDIA 4090 (24 GB VRAM) — fast but requires high-end consumer GPU
+- SDS-based methods (ProlificDreamer): 30–60 minutes on A100 — research-grade only
+- Multi-view rendering + Gaussian fitting: 5–30 minutes for high quality — moderate
+- Point-E/Shap-E (2022 OpenAI, point cloud diffusion): 1–20 seconds — fast but low quality
 
   Democratising 3D generation to consumer hardware (mobile, low-end GPU) remains a significant engineering challenge requiring model compression, efficient representations, and hardware-specific optimisation.
 
@@ -250,26 +245,30 @@
   The year 2025 marked the inflection point where 3D generation transitioned from primarily research demonstrations to production-adjacent tooling. The structural shift is twofold: open-source models have reached production quality, and the commercial moat has migrated from model weights to tooling, integrations, and fine-tuning services.
 
   **Foundation Models for 3D**
-  - **TRELLIS** (Microsoft Research Asia, December 2024, MIT licence): 4B-parameter structured latent diffusion model using a DiT (Diffusion Transformer) backbone and a SLAT (Structured LATent) triplane-Gaussian hybrid representation. Produces 1536-resolution 3D assets in under 20 seconds on a single NVIDIA 4090 (24 GB), with physically-based rendering (PBR) texture output and export to GLB, OBJ, or Gaussian Splat formats. TRELLIS v2 (2025) further scales the model and improves texture quality; benchmarks on Google Scanned Objects and OmniObject3D show PSNR improvements of 2–3 dB over prior state-of-the-art.
-  - **CraftsMan** (2025): Focuses on production-quality topology — the generated meshes use intelligent edge flow suitable for subdivision surface smoothing and animation rigging, addressing a key pain point of earlier methods that produced irregular dense triangle soups.
-  - **Tripo AI, Hitem3D**: Independent commercial platforms competing in the text/image-to-3D API market, targeting game developers and e-commerce providers.
+
+- **TRELLIS** (Microsoft Research Asia, December 2024, MIT licence): 4B-parameter structured latent diffusion model using a DiT (Diffusion Transformer) backbone and a SLAT (Structured LATent) triplane-Gaussian hybrid representation. Produces 1536-resolution 3D assets in under 20 seconds on a single NVIDIA 4090 (24 GB), with physically-based rendering (PBR) texture output and export to GLB, OBJ, or Gaussian Splat formats. TRELLIS v2 (2025) further scales the model and improves texture quality; benchmarks on Google Scanned Objects and OmniObject3D show PSNR improvements of 2–3 dB over prior state-of-the-art.
+- **CraftsMan** (2025): Focuses on production-quality topology — the generated meshes use intelligent edge flow suitable for subdivision surface smoothing and animation rigging, addressing a key pain point of earlier methods that produced irregular dense triangle soups.
+- **Tripo AI, Hitem3D**: Independent commercial platforms competing in the text/image-to-3D API market, targeting game developers and e-commerce providers.
 
   **Commercial Platform Ecosystem**
-  - **Meshy** (Meshy 5, July 2025): Over 30 million 3D assets generated for 3 million+ creators globally. Meshy 5 introduced smarter material decomposition, improved animation potential (blend shape generation from reference poses), and API access for integration into game engines and pipeline tools.
-  - **Luma AI**: Dominates photorealistic Gaussian-splat and NeRF capture from consumer video; expanding into text-to-3D generation via a generative model trained on its large capture dataset. The Luma Unreal Engine plugin and Luma Web SDK provide direct integration pathways.
-  - **Kaedim**: SaaS platform targeting 3D game asset production; accepts sketch or image references and delivers production-quality mesh with materials in hours, combining AI generation with human artist QA.
-  - **Scenario, Blockade Labs, Skybox AI**: Specialise in AI-generated game environments and skybox textures; beginning to integrate 3D generation (scene blocking, asset population) as the next layer above 2D generation.
+
+- **Meshy** (Meshy 5, July 2025): Over 30 million 3D assets generated for 3 million+ creators globally. Meshy 5 introduced smarter material decomposition, improved animation potential (blend shape generation from reference poses), and API access for integration into game engines and pipeline tools.
+- **Luma AI**: Dominates photorealistic Gaussian-splat and NeRF capture from consumer video; expanding into text-to-3D generation via a generative model trained on its large capture dataset. The Luma Unreal Engine plugin and Luma Web SDK provide direct integration pathways.
+- **Kaedim**: SaaS platform targeting 3D game asset production; accepts sketch or image references and delivers production-quality mesh with materials in hours, combining AI generation with human artist QA.
+- **Scenario, Blockade Labs, Skybox AI**: Specialise in AI-generated game environments and skybox textures; beginning to integrate 3D generation (scene blocking, asset population) as the next layer above 2D generation.
 
   **XR Integration Progress**
-  - Gaussian Splatting assets are deployable in WebXR via three.js, Babylon.js, and PlayCanvas libraries, enabling browser-based 3D visualisation without plugin installation.
-  - Apple Vision Pro's visionOS 2.1 (2025) added native Gaussian splat rendering via RealityKit, enabling direct capture → spatial computing workflows.
-  - Meta Quest's OpenXR integration supports GLB and USD import, with community tooling for Gaussian splat → USD conversion.
+
+- Gaussian Splatting assets are deployable in WebXR via three.js, Babylon.js, and PlayCanvas libraries, enabling browser-based 3D visualisation without plugin installation.
+- Apple Vision Pro's visionOS 2.1 (2025) added native Gaussian splat rendering via RealityKit, enabling direct capture → spatial computing workflows.
+- Meta Quest's OpenXR integration supports GLB and USD import, with community tooling for Gaussian splat → USD conversion.
 
   **Industry Adoption Patterns**
-  - **Gaming**: Ubisoft AI Lab, EA's SEED research group, Epic Games' AI initiatives, and startup studios are testing 3D generation for environment blocking (rough 3D layout of game levels), secondary asset population (rocks, crates, debris, vegetation), and concept visualisation. The workflow model is "AI draft → human artist polish" rather than full AI replacement.
-  - **E-commerce**: Shopify Magic, Amazon's product 3D viewer, and Wayfair Room Planner are using image-to-3D APIs to create interactive product visualisations at scale. The glTF 2.0 format is the interchange standard for this use case.
-  - **Architectural visualisation**: ArchViz firms are using AI-generated 3D props and furniture to accelerate scene population; the primary adoption driver is reducing the time to populate a rendered interior from days to hours.
-  - **Film and TV pre-production**: VFX studios and animation houses are evaluating 3D generation for pre-visualisation (previs) — rough 3D animatics showing scene composition and camera moves before full production begins.
+
+- **Gaming**: Ubisoft AI Lab, EA's SEED research group, Epic Games' AI initiatives, and startup studios are testing 3D generation for environment blocking (rough 3D layout of game levels), secondary asset population (rocks, crates, debris, vegetation), and concept visualisation. The workflow model is "AI draft → human artist polish" rather than full AI replacement.
+- **E-commerce**: Shopify Magic, Amazon's product 3D viewer, and Wayfair Room Planner are using image-to-3D APIs to create interactive product visualisations at scale. The glTF 2.0 format is the interchange standard for this use case.
+- **Architectural visualisation**: ArchViz firms are using AI-generated 3D props and furniture to accelerate scene population; the primary adoption driver is reducing the time to populate a rendered interior from days to hours.
+- **Film and TV pre-production**: VFX studios and animation houses are evaluating 3D generation for pre-visualisation (previs) — rough 3D animatics showing scene composition and camera moves before full production begins.
 
   **Open-Source Ecosystem**
   The consolidation of high-quality open-source models (TRELLIS MIT, CRM Apache 2.0, Zero123++ community licence, GaussianObject, LGM) means that model weights are no longer a defensible commercial moat. The competitive differentiators in 2026 are user experience, pipeline integration, fine-tuning services for domain-specific assets, quality assurance workflows, and enterprise support.
@@ -292,15 +291,17 @@
 
   **Northern England Industrial Context**
   Northern English universities are applying 3D generation to manufacturing-adjacent digital twin and inspection problems:
-  - **University of Manchester**: Digital twin research for advanced manufacturing; collaborations with Siemens Energy and BAE Systems on AI-assisted 3D modelling from sensor data; applying NeRF-based reconstruction to nuclear decommissioning inspection (hazardous environments inaccessible to humans).
-  - **University of Sheffield — AMRC (Advanced Manufacturing Research Centre)**: 3D generation and reconstruction applied to quality inspection, defect detection, and digital twin creation for aerospace components manufactured at the Airbus Sheffield facility.
-  - **University of Newcastle**: Digital Heritage and Cultural Computing; applying photogrammetry and NeRF-based 3D capture to heritage building documentation (Northumberland castles, Roman sites along Hadrian's Wall).
+
+- **University of Manchester**: Digital twin research for advanced manufacturing; collaborations with Siemens Energy and BAE Systems on AI-assisted 3D modelling from sensor data; applying NeRF-based reconstruction to nuclear decommissioning inspection (hazardous environments inaccessible to humans).
+- **University of Sheffield — AMRC (Advanced Manufacturing Research Centre)**: 3D generation and reconstruction applied to quality inspection, defect detection, and digital twin creation for aerospace components manufactured at the Airbus Sheffield facility.
+- **University of Newcastle**: Digital Heritage and Cultural Computing; applying photogrammetry and NeRF-based 3D capture to heritage building documentation (Northumberland castles, Roman sites along Hadrian's Wall).
 
   **UK Industrial Players**
-  - Foundry (London): Developer of Mari, Katana, and Modo — professional 3D tools for VFX; investing in AI-assisted texturing, material generation, and 3D asset generation integrations.
-  - Rebellion Developments (Oxford): AAA game studio evaluating AI-generated 3D environments and assets for their game production pipeline.
-  - Improbable (London): Spatial computing and simulation; using AI-generated 3D environments for virtual worlds and defence simulation.
-  - Digital Catapult (London): National innovation centre facilitating industry-academia collaboration on XR and 3D generation applications for UK creative industries.
+
+- Foundry (London): Developer of Mari, Katana, and Modo — professional 3D tools for VFX; investing in AI-assisted texturing, material generation, and 3D asset generation integrations.
+- Rebellion Developments (Oxford): AAA game studio evaluating AI-generated 3D environments and assets for their game production pipeline.
+- Improbable (London): Spatial computing and simulation; using AI-generated 3D environments for virtual worlds and defence simulation.
+- Digital Catapult (London): National innovation centre facilitating industry-academia collaboration on XR and 3D generation applications for UK creative industries.
 
   ## Future Directions (2026–2030)
 
@@ -309,9 +310,10 @@
 
   **Real-Time Generation on Edge Hardware**
   Distillation, quantisation, and architecture search are targeting 3D generation on consumer and embedded hardware:
-  - Apple Silicon (M4, M5 series Neural Engine): Target is sub-5-second text-to-3D on device, enabling AR authoring directly on iPhone or iPad.
-  - NVIDIA RTX 4070/5080 laptops (8–12 GB VRAM): Quantised TRELLIS-style models are expected to run at 30–60 seconds per asset by 2027.
-  - Meta Quest 4 (2026 expected): Onboard neural processing enabling real-time Gaussian splat capture and lightweight generation for spatial computing authoring.
+
+- Apple Silicon (M4, M5 series Neural Engine): Target is sub-5-second text-to-3D on device, enabling AR authoring directly on iPhone or iPad.
+- NVIDIA RTX 4070/5080 laptops (8–12 GB VRAM): Quantised TRELLIS-style models are expected to run at 30–60 seconds per asset by 2027.
+- Meta Quest 4 (2026 expected): Onboard neural processing enabling real-time Gaussian splat capture and lightweight generation for spatial computing authoring.
 
   **Physics-Consistent and Simulation-Ready Generation**
   A key gap in 2026 is that generated 3D assets are visually plausible but physically inconsistent — objects can float, interpenetrate, or have mass distributions that make them fall over. Research directions: (1) physics simulation loss during generation (differentiable rigid-body simulation); (2) structural-integrity constraints (ensuring generated furniture, architecture, and vehicles could physically support their stated loads); (3) material property prediction alongside geometry (density, elasticity, friction coefficient) to enable physics simulation.
@@ -321,10 +323,11 @@
 
   **Fine-Grained Editing and Part-Level Control**
   Moving beyond "generate then manually fix" to interactive, semantically-aware editing:
-  - Part segmentation during generation: automatically identifying and labelling semantic parts (chair leg, seat, backrest) in the generated mesh, enabling selective replacement or restyling.
-  - Material and appearance transfer: applying the material style of a reference photograph to a generated geometry.
-  - Pose and animation control: generating 3D characters in specified poses or with specified skeletal rigs from text or image references.
-  - Geometric constraints: generating objects with specified measurements (a table exactly 75 cm high and 120 cm wide) or from engineering specifications (dimensions from a 2D drawing).
+
+- Part segmentation during generation: automatically identifying and labelling semantic parts (chair leg, seat, backrest) in the generated mesh, enabling selective replacement or restyling.
+- Material and appearance transfer: applying the material style of a reference photograph to a generated geometry.
+- Pose and animation control: generating 3D characters in specified poses or with specified skeletal rigs from text or image references.
+- Geometric constraints: generating objects with specified measurements (a table exactly 75 cm high and 120 cm wide) or from engineering specifications (dimensions from a 2D drawing).
 
   **Regulatory and Intellectual Property Landscape**
   The training data for most 3D generation models includes Sketchfab assets under Creative Commons licences; Objaverse's 800K+ assets are CC-BY licenced but many originate from commercial sources. The UK's Intellectual Property Office is actively consulting (as of 2025–2026) on AI-generated works and training data copyright, with specific relevance to 3D assets embedded in commercial products (games, films, architectural designs). The EU AI Act's transparency requirements for training data are creating additional compliance overhead for commercial 3D generation service providers operating in European markets.
@@ -339,11 +342,12 @@
 
   **Standardisation and Interoperability**
   The 3D format landscape in 2026 is fragmented:
-  - **glTF 2.0** (Khronos Group): The dominant open standard for web and game engine delivery; supported by Babylon.js, three.js, PlayCanvas, Unity, Unreal, Blender.
-  - **USD (Universal Scene Description)** (Pixar/Apple): Increasingly dominant for film VFX pipelines and Apple Vision Pro spatial computing; Apple's RealityKit uses USDZ (zip-compressed USD).
-  - **3MF**: Additive manufacturing (3D printing) format; not relevant to neural 3D generation but important for physical fabrication workflows downstream of generation.
-  - **Gaussian Splat formats**: No unified standard as of 2026; .ply (PLY with Gaussian properties) is de facto, with active Khronos working group developing an extension to glTF for Gaussian Splatting.
-  - **OpenXR and WebXR**: The cross-platform XR standards used for spatial computing; glTF support is native; Gaussian splat support is achieved via WebGL-based splatting renderers.
+
+- **glTF 2.0** (Khronos Group): The dominant open standard for web and game engine delivery; supported by Babylon.js, three.js, PlayCanvas, Unity, Unreal, Blender.
+- **USD (Universal Scene Description)** (Pixar/Apple): Increasingly dominant for film VFX pipelines and Apple Vision Pro spatial computing; Apple's RealityKit uses USDZ (zip-compressed USD).
+- **3MF**: Additive manufacturing (3D printing) format; not relevant to neural 3D generation but important for physical fabrication workflows downstream of generation.
+- **Gaussian Splat formats**: No unified standard as of 2026; .ply (PLY with Gaussian properties) is de facto, with active Khronos working group developing an extension to glTF for Gaussian Splatting.
+- **OpenXR and WebXR**: The cross-platform XR standards used for spatial computing; glTF support is native; Gaussian splat support is achieved via WebGL-based splatting renderers.
 
   The lack of a unified 3D generation output standard means that assets generated by TRELLIS, Meshy, or Luma AI require format conversion steps before import into production pipelines, creating friction that tool vendors are addressing via direct plugin integrations (Luma → Unreal, Meshy → Blender, TRELLIS → Blender/Unity).
 
@@ -383,16 +387,16 @@
 
   ## Key Terminology
 
-  - **SDS (Score Distillation Sampling)**: Technique for distilling 2D diffusion model knowledge into 3D optimisation via score gradient backpropagation; introduced in DreamFusion (2022).
-  - **VSD (Variational Score Distillation)**: Improvement over SDS that treats 3D parameters as samples from a variational posterior, reducing over-saturation; from ProlificDreamer (2023).
-  - **Janus Problem**: The artifact in SDS-based text-to-3D where the generated object has multiple faces (e.g., a face on both front and back of a generated head) because the 2D prior has no 3D consistency.
-  - **PBR (Physically Based Rendering)**: Material representation using albedo, roughness, metallicity, and normal maps that enables correct appearance under arbitrary lighting; the target output format for production 3D generation.
-  - **UV Mapping**: The process of projecting a 3D mesh's surface onto a 2D texture atlas; required for PBR materials and production asset workflows.
-  - **Triplane**: A 3D feature representation using three perpendicular 2D feature planes; enables efficient hybrid 2D/3D generative networks.
-  - **SDF (Signed Distance Function)**: Implicit surface representation where the value at each point encodes the signed distance to the nearest surface; negative inside, positive outside.
-  - **Novel View Synthesis**: The task of rendering a 3D scene from a new camera viewpoint given one or more reference views; the core evaluation task for NeRF-based methods.
-  - **Objaverse**: The dominant large-scale 3D asset dataset (800K+ CC-licenced objects from Sketchfab), released by Deitke et al. 2023; the training backbone for most modern 3D generation models.
-  - **Gaussian Splat**: A single 3D Gaussian primitive in a 3DGS scene representation; characterised by position, covariance (encoding shape and orientation), opacity, and spherical harmonic colour coefficients.
+- **SDS (Score Distillation Sampling)**: Technique for distilling 2D diffusion model knowledge into 3D optimisation via score gradient backpropagation; introduced in DreamFusion (2022).
+- **VSD (Variational Score Distillation)**: Improvement over SDS that treats 3D parameters as samples from a variational posterior, reducing over-saturation; from ProlificDreamer (2023).
+- **Janus Problem**: The artifact in SDS-based text-to-3D where the generated object has multiple faces (e.g., a face on both front and back of a generated head) because the 2D prior has no 3D consistency.
+- **PBR (Physically Based Rendering)**: Material representation using albedo, roughness, metallicity, and normal maps that enables correct appearance under arbitrary lighting; the target output format for production 3D generation.
+- **UV Mapping**: The process of projecting a 3D mesh's surface onto a 2D texture atlas; required for PBR materials and production asset workflows.
+- **Triplane**: A 3D feature representation using three perpendicular 2D feature planes; enables efficient hybrid 2D/3D generative networks.
+- **SDF (Signed Distance Function)**: Implicit surface representation where the value at each point encodes the signed distance to the nearest surface; negative inside, positive outside.
+- **Novel View Synthesis**: The task of rendering a 3D scene from a new camera viewpoint given one or more reference views; the core evaluation task for NeRF-based methods.
+- **Objaverse**: The dominant large-scale 3D asset dataset (800K+ CC-licenced objects from Sketchfab), released by Deitke et al. 2023; the training backbone for most modern 3D generation models.
+- **Gaussian Splat**: A single 3D Gaussian primitive in a 3DGS scene representation; characterised by position, covariance (encoding shape and orientation), opacity, and spherical harmonic colour coefficients.
 
-- ### Provenance
+### Provenance
 

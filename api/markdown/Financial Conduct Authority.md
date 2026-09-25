@@ -1,67 +1,70 @@
-
 The Financial Conduct Authority (FCA) is the independent conduct and prudential regulator for financial services firms and markets in the United Kingdom, established under the Financial Services Act 2012 as successor to the Financial Services Authority. It is responsible for protecting consumers from harm, maintaining the integrity of UK financial markets, and promoting effective competition in the interests of consumers. The FCA authorises and supervises approximately 50,000 financial services firms, sets binding conduct rules through the FCA Handbook, and exercises enforcement powers including fines, prohibition orders, and market bans. Its remit has expanded to include cryptoasset registration, sustainability-related disclosure requirements, and Consumer Duty obligations.
 
-- ### Overview
-  - The FCA was created following the 2008 financial crisis and the subsequent Turner Review, which identified structural failures in the tripartite regulatory system (FSA, Bank of England, HM Treasury). The [[Financial Services Act 2012]] abolished the FSA and split its functions between the FCA for conduct and the [[Prudential Regulation Authority]] (PRA) for systemic/prudential supervision.
-  - The FCA is the sole regulator for firms not subject to PRA oversight (including investment advisers, insurance intermediaries, consumer credit firms, and payment service providers) and the conduct regulator for dual-regulated firms (banks, insurers, and major investment firms). This twin-peaks model separates prudential soundness from conduct risk.
-  - The FCA sets rules through the [[FCA Handbook]], a comprehensive rulebook comprising sourcebooks (SYSC, COBS, BCOBS, MCOB, ICOBS, etc.) that translate EU-origin directives and domestic legislation into binding conduct requirements. Post-Brexit, retained EU law such as [[MiFID II]], [[EMIR]], and [[UK MAR]] has been onshored into the FCA's regulatory perimeter.
-  - The FCA's budget is funded entirely by fees and levies charged to authorised firms and market participants, preserving its independence from government appropriations.
+### Overview
 
-- ### Key Mechanisms
-  - **Authorisation and Registration**
-    - Firms carrying out [[regulated activities]] under the [[Financial Services and Markets Act 2000]] (FSMA) must obtain FCA authorisation or registration before commencing business. The statutory gateway applies to activities including deposit-taking, investment advice, [[securities dealing]], arranging investments, insurance distribution, and payment services.
-    - Post-[[Fifth Anti-Money Laundering Directive]] (5AMLD) and [[Cryptoasset Regulation]] under the Money Laundering Regulations 2017, cryptoasset businesses must also register with the FCA before marketing to UK consumers.
-    - [[Approved Persons Regime]] (being replaced by [[Senior Managers and Certification Regime]], SMCR) governs accountability of senior individuals within regulated firms.
-  - **Conduct Rules and Supervision**
-    - The FCA Handbook sets principles for businesses (Principles 1–12 plus the new [[Consumer Duty]] Principle 12, effective July 2023) that govern how firms must treat customers and operate markets.
-    - [[Consumer Duty]] (PS22/9) introduced a higher standard of consumer outcomes across four outcome areas: products and services, price and value, consumer understanding, and consumer support.
-    - [[Supervisory Technology]] (SupTech) tools including automated data collection, machine-readable regulatory reporting (XBRL), and advanced analytics are increasingly used for real-time market surveillance.
-    - The FCA operates a [[Regulatory Sandbox]] (Project Innovate, launched 2016) that allows fintech firms to test novel products and services in a controlled environment with regulatory support.
-  - **Enforcement Powers**
-    - Civil and criminal enforcement: the FCA can impose unlimited financial penalties, issue public censures, cancel authorisations, and impose prohibition orders on individuals.
-    - Under FSMA s.380-381, the FCA may apply to court for injunctions and restitution orders.
-    - Under the [[Proceeds of Crime Act 2002]] and [[Financial Crime Prevention]] legislation, the FCA coordinates with the [[National Crime Agency]] on serious [[Anti-Money Laundering]] failures.
-    - [[Market Abuse Regulation]] (UK MAR) empowers the FCA to investigate and sanction insider dealing, market manipulation, and unlawful disclosure of inside information.
-  - **Market Oversight**
-    - The FCA is the UK Listing Authority ([[UKLA]]) for [[Primary Market Listings]] on regulated markets and operates the Official List.
-    - It supervises recognised investment exchanges ([[RIEs]]), recognised clearing houses, and benchmark administrators under the [[UK Benchmarks Regulation]].
-    - Post-Brexit, the FCA has assumed responsibility for the UK's equivalence determinations and has developed a new [[Edinburgh Reforms]] agenda to recalibrate aspects of retained EU financial regulation.
+- The FCA was created following the 2008 financial crisis and the subsequent Turner Review, which identified structural failures in the tripartite regulatory system (FSA, Bank of England, HM Treasury). The [[Financial Services Act 2012]] abolished the FSA and split its functions between the FCA for conduct and the [[Prudential Regulation Authority]] (PRA) for systemic/prudential supervision.
+- The FCA is the sole regulator for firms not subject to PRA oversight (including investment advisers, insurance intermediaries, consumer credit firms, and payment service providers) and the conduct regulator for dual-regulated firms (banks, insurers, and major investment firms). This twin-peaks model separates prudential soundness from conduct risk.
+- The FCA sets rules through the [[FCA Handbook]], a comprehensive rulebook comprising sourcebooks (SYSC, COBS, BCOBS, MCOB, ICOBS, etc.) that translate EU-origin directives and domestic legislation into binding conduct requirements. Post-Brexit, retained EU law such as [[MiFID II]], [[EMIR]], and [[UK MAR]] has been onshored into the FCA's regulatory perimeter.
+- The FCA's budget is funded entirely by fees and levies charged to authorised firms and market participants, preserving its independence from government appropriations.
 
-- ### Applications and Use Cases
-  - **Consumer Credit and Retail Finance**
-    - The FCA took over consumer credit regulation from the Office of Fair Trading in 2014, bringing credit cards, payday lending, motor finance, and buy-now-pay-later ([[BNPL]]) products within scope. The 2023–2024 motor finance discretionary commission arrangement (DCA) review became a significant redress exercise.
-  - **Investment Management and Advisory**
-    - Wealth managers, discretionary fund managers, robo-advisers, and [[ETF]] providers must comply with [[COBS]] (Conduct of Business Sourcebook) and [[MiFID II]] suitability and appropriateness requirements.
-  - **Insurance and Long-Term Savings**
-    - Life insurers, general insurers, and intermediaries are subject to [[ICOBS]] (Insurance Conduct of Business Sourcebook) and [[Product Governance]] obligations under [[IDD]] (Insurance Distribution Directive, onshored).
-  - **Payments and Open Banking**
-    - Payment institutions and e-money institutions are regulated under the [[Payment Services Regulations 2017]] (PSR 2017), implementing [[PSD2]]. The FCA co-governs [[Open Banking]] infrastructure alongside the [[Payment Systems Regulator]] (PSR).
-  - **Cryptoassets and Digital Assets**
-    - The FCA's cryptoasset register requires firms offering exchange, custody, or peer-to-peer services to demonstrate AML/CTF controls. Financial promotions for cryptoassets became subject to FCA approval requirements from October 2023 under the Financial Services and Markets Act 2023.
-  - **Sustainable Finance**
-    - The FCA mandates [[Sustainability Disclosure Requirements]] (SDR) and investment labels for UK funds, and has adopted the [[Task Force on Climate-related Financial Disclosures]] (TCFD) framework for premium-listed issuers and large asset managers.
-  - **RegTech Integration**
-    - The FCA's TechSprint programme convenes industry participants to develop [[RegTech]] solutions covering regulatory reporting automation, KYC/identity verification, and [[AML]] transaction monitoring using [[Machine Learning]] and graph analytics.
+### Key Mechanisms
 
-- ### Standards and Regulatory Context
-  - **UK Domestic Legislation**
-    - [[Financial Services and Markets Act 2000]] (FSMA 2000) — foundational statute establishing the regulatory perimeter and FCA powers.
-    - [[Financial Services Act 2012]] — created the FCA and PRA twin-peaks model.
-    - [[Financial Services and Markets Act 2023]] (FSMA 2023) — expanded FCA rulemaking authority post-Brexit (the Future Regulatory Framework).
-    - [[Money Laundering Regulations 2017]] (as amended) — AML/CTF registration and supervision obligations.
-  - **Onshored EU Frameworks**
-    - [[MiFID II]] / [[UK MiFIR]] — investment services, trading venues, best execution, inducements.
-    - [[UK MAR]] (Market Abuse Regulation) — market manipulation, insider dealing, disclosure.
-    - [[EMIR UK]] — OTC derivatives reporting and clearing obligations.
-    - [[UK AIFMD]] — alternative investment fund managers.
-    - [[UK UCITS]] Directive — UCITS scheme authorisation and disclosure.
-    - [[Solvency II]] (UK) — insurance capital and governance (prudential elements overseen by PRA; conduct by FCA).
-  - **International Coordination**
-    - The FCA participates in the [[International Organisation of Securities Commissions]] (IOSCO), the [[Financial Stability Board]] (FSB), and bilateral memoranda of understanding with regulators including the [[Securities and Exchange Commission]] and [[European Securities and Markets Authority]].
-    - [[Basel III]] implementation (capital standards) is led by the PRA and [[Bank of England]], but FCA-regulated firms face complementary liquidity and disclosure requirements.
-  - **Regulatory Guidance and Policy Statements**
-    - Policy Statements (PS), Consultation Papers (CP), and Discussion Papers (DP) form the FCA's primary law-making pipeline, with public consultation periods typically of 3 months.
-    - The [[FCA Handbook]] is maintained in a machine-readable format and is the authoritative binding rulebook; Guidance Notes are non-binding interpretive aids.
+- **Authorisation and Registration**
+  - Firms carrying out [[regulated activities]] under the [[Financial Services and Markets Act 2000]] (FSMA) must obtain FCA authorisation or registration before commencing business. The statutory gateway applies to activities including deposit-taking, investment advice, [[securities dealing]], arranging investments, insurance distribution, and payment services.
+  - Post-[[Fifth Anti-Money Laundering Directive]] (5AMLD) and [[Cryptoasset Regulation]] under the Money Laundering Regulations 2017, cryptoasset businesses must also register with the FCA before marketing to UK consumers.
+  - [[Approved Persons Regime]] (being replaced by [[Senior Managers and Certification Regime]], SMCR) governs accountability of senior individuals within regulated firms.
+- **Conduct Rules and Supervision**
+  - The FCA Handbook sets principles for businesses (Principles 1–12 plus the new [[Consumer Duty]] Principle 12, effective July 2023) that govern how firms must treat customers and operate markets.
+  - [[Consumer Duty]] (PS22/9) introduced a higher standard of consumer outcomes across four outcome areas: products and services, price and value, consumer understanding, and consumer support.
+  - [[Supervisory Technology]] (SupTech) tools including automated data collection, machine-readable regulatory reporting (XBRL), and advanced analytics are increasingly used for real-time market surveillance.
+  - The FCA operates a [[Regulatory Sandbox]] (Project Innovate, launched 2016) that allows fintech firms to test novel products and services in a controlled environment with regulatory support.
+- **Enforcement Powers**
+  - Civil and criminal enforcement: the FCA can impose unlimited financial penalties, issue public censures, cancel authorisations, and impose prohibition orders on individuals.
+  - Under FSMA s.380-381, the FCA may apply to court for injunctions and restitution orders.
+  - Under the [[Proceeds of Crime Act 2002]] and [[Financial Crime Prevention]] legislation, the FCA coordinates with the [[National Crime Agency]] on serious [[Anti-Money Laundering]] failures.
+  - [[Market Abuse Regulation]] (UK MAR) empowers the FCA to investigate and sanction insider dealing, market manipulation, and unlawful disclosure of inside information.
+- **Market Oversight**
+  - The FCA is the UK Listing Authority ([[UKLA]]) for [[Primary Market Listings]] on regulated markets and operates the Official List.
+  - It supervises recognised investment exchanges ([[RIEs]]), recognised clearing houses, and benchmark administrators under the [[UK Benchmarks Regulation]].
+  - Post-Brexit, the FCA has assumed responsibility for the UK's equivalence determinations and has developed a new [[Edinburgh Reforms]] agenda to recalibrate aspects of retained EU financial regulation.
 
-- ### Provenance
+### Applications and Use Cases
+
+- **Consumer Credit and Retail Finance**
+  - The FCA took over consumer credit regulation from the Office of Fair Trading in 2014, bringing credit cards, payday lending, motor finance, and buy-now-pay-later ([[BNPL]]) products within scope. The 2023–2024 motor finance discretionary commission arrangement (DCA) review became a significant redress exercise.
+- **Investment Management and Advisory**
+  - Wealth managers, discretionary fund managers, robo-advisers, and [[ETF]] providers must comply with [[COBS]] (Conduct of Business Sourcebook) and [[MiFID II]] suitability and appropriateness requirements.
+- **Insurance and Long-Term Savings**
+  - Life insurers, general insurers, and intermediaries are subject to [[ICOBS]] (Insurance Conduct of Business Sourcebook) and [[Product Governance]] obligations under [[IDD]] (Insurance Distribution Directive, onshored).
+- **Payments and Open Banking**
+  - Payment institutions and e-money institutions are regulated under the [[Payment Services Regulations 2017]] (PSR 2017), implementing [[PSD2]]. The FCA co-governs [[Open Banking]] infrastructure alongside the [[Payment Systems Regulator]] (PSR).
+- **Cryptoassets and Digital Assets**
+  - The FCA's cryptoasset register requires firms offering exchange, custody, or peer-to-peer services to demonstrate AML/CTF controls. Financial promotions for cryptoassets became subject to FCA approval requirements from October 2023 under the Financial Services and Markets Act 2023.
+- **Sustainable Finance**
+  - The FCA mandates [[Sustainability Disclosure Requirements]] (SDR) and investment labels for UK funds, and has adopted the [[Task Force on Climate-related Financial Disclosures]] (TCFD) framework for premium-listed issuers and large asset managers.
+- **RegTech Integration**
+  - The FCA's TechSprint programme convenes industry participants to develop [[RegTech]] solutions covering regulatory reporting automation, KYC/identity verification, and [[AML]] transaction monitoring using [[Machine Learning]] and graph analytics.
+
+### Standards and Regulatory Context
+
+- **UK Domestic Legislation**
+  - [[Financial Services and Markets Act 2000]] (FSMA 2000) — foundational statute establishing the regulatory perimeter and FCA powers.
+  - [[Financial Services Act 2012]] — created the FCA and PRA twin-peaks model.
+  - [[Financial Services and Markets Act 2023]] (FSMA 2023) — expanded FCA rulemaking authority post-Brexit (the Future Regulatory Framework).
+  - [[Money Laundering Regulations 2017]] (as amended) — AML/CTF registration and supervision obligations.
+- **Onshored EU Frameworks**
+  - [[MiFID II]] / [[UK MiFIR]] — investment services, trading venues, best execution, inducements.
+  - [[UK MAR]] (Market Abuse Regulation) — market manipulation, insider dealing, disclosure.
+  - [[EMIR UK]] — OTC derivatives reporting and clearing obligations.
+  - [[UK AIFMD]] — alternative investment fund managers.
+  - [[UK UCITS]] Directive — UCITS scheme authorisation and disclosure.
+  - [[Solvency II]] (UK) — insurance capital and governance (prudential elements overseen by PRA; conduct by FCA).
+- **International Coordination**
+  - The FCA participates in the [[International Organisation of Securities Commissions]] (IOSCO), the [[Financial Stability Board]] (FSB), and bilateral memoranda of understanding with regulators including the [[Securities and Exchange Commission]] and [[European Securities and Markets Authority]].
+  - [[Basel III]] implementation (capital standards) is led by the PRA and [[Bank of England]], but FCA-regulated firms face complementary liquidity and disclosure requirements.
+- **Regulatory Guidance and Policy Statements**
+  - Policy Statements (PS), Consultation Papers (CP), and Discussion Papers (DP) form the FCA's primary law-making pipeline, with public consultation periods typically of 3 months.
+  - The [[FCA Handbook]] is maintained in a machine-readable format and is the authoritative binding rulebook; Guidance Notes are non-binding interpretive aids.
+
+### Provenance
 

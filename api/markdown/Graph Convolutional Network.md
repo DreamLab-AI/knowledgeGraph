@@ -1,33 +1,33 @@
-
 A graph neural network architecture that generalises convolution to graph-structured data: each layer updates every node's feature vector by aggregating the degree-normalised features of its neighbours and transforming them with a shared learned weight matrix, so stacked layers propagate information across progressively larger neighbourhoods; formalised by Kipf and Welling in 2017 as a first-order approximation of spectral graph convolution, the GCN is the canonical baseline for node classification, link prediction, and graph-level learning.
 
-- ### Semantic Classification
+### Semantic Classification
 
-- ### Content
+### Content
 
-  ## Definition
+## Definition
 
-  A **graph convolutional network (GCN)** extends the idea of convolution — a shared local filter slid across a regular grid — to irregular graph domains where nodes have varying numbers of neighbours and no canonical ordering. Each GCN layer computes a new representation for every node by averaging the feature vectors of the node and its neighbours (with symmetric degree normalisation, so high-degree hubs do not dominate), multiplying by a weight matrix shared across all nodes, and applying a non-linearity. Stacking k layers lets information flow across k-hop neighbourhoods, so the network learns representations that blend a node's own attributes with the structure and attributes of its surroundings.
+A **graph convolutional network (GCN)** extends the idea of convolution — a shared local filter slid across a regular grid — to irregular graph domains where nodes have varying numbers of neighbours and no canonical ordering. Each GCN layer computes a new representation for every node by averaging the feature vectors of the node and its neighbours (with symmetric degree normalisation, so high-degree hubs do not dominate), multiplying by a weight matrix shared across all nodes, and applying a non-linearity. Stacking k layers lets information flow across k-hop neighbourhoods, so the network learns representations that blend a node's own attributes with the structure and attributes of its surroundings.
 
-  The architecture descends from spectral graph theory: Bruna et al. (2014) defined convolution via the eigenbasis of the graph Laplacian, ChebNet (2016) made it local and cheap with Chebyshev polynomial filters, and Kipf and Welling's 2017 ICLR paper reduced it to the simple first-order propagation rule that made [[Graph Neural Network]] research mainstream. Trained semi-supervised — labels on a few nodes, the graph and features over all of them — GCNs became the standard baseline for node classification (citation networks, fraud detection), link prediction (recommendation, knowledge-graph completion), and, with pooling, whole-graph tasks such as molecular property prediction.
+The architecture descends from spectral graph theory: Bruna et al. (2014) defined convolution via the eigenbasis of the graph Laplacian, ChebNet (2016) made it local and cheap with Chebyshev polynomial filters, and Kipf and Welling's 2017 ICLR paper reduced it to the simple first-order propagation rule that made [[Graph Neural Network]] research mainstream. Trained semi-supervised — labels on a few nodes, the graph and features over all of them — GCNs became the standard baseline for node classification (citation networks, fraud detection), link prediction (recommendation, knowledge-graph completion), and, with pooling, whole-graph tasks such as molecular property prediction.
 
-  Its fixed, structure-determined weighting is the key contrast with the [[Graph Attention Network]], which learns per-edge attention coefficients so that informative neighbours count for more; GraphSAGE similarly replaces full-graph propagation with sampled-neighbourhood aggregation for inductive, web-scale settings. GCNs trade that flexibility for simplicity, few parameters, and strong performance on homophilous graphs where neighbours genuinely resemble each other.
+Its fixed, structure-determined weighting is the key contrast with the [[Graph Attention Network]], which learns per-edge attention coefficients so that informative neighbours count for more; GraphSAGE similarly replaces full-graph propagation with sampled-neighbourhood aggregation for inductive, web-scale settings. GCNs trade that flexibility for simplicity, few parameters, and strong performance on homophilous graphs where neighbours genuinely resemble each other.
 
-  ## Technical Details
+## Technical Details
 
-  The layer rule is H^(l+1) = σ(D̃^(-1/2) Ã D̃^(-1/2) H^(l) W^(l)), where Ã = A + I adds self-loops, D̃ is Ã's degree matrix, and W^(l) is the learned weight matrix — a first-order Chebyshev approximation with the "renormalisation trick" for stability. Complexity is linear in the number of edges, but full-batch propagation over huge graphs motivates sampled and clustered variants (GraphSAGE, Cluster-GCN, GraphSAINT). Two well-characterised failure modes shape practice: **over-smoothing** — repeated Laplacian averaging drives node representations towards indistinguishability, so vanilla GCNs are typically only 2–4 layers deep, mitigated by residual/initial connections (GCNII), jumping knowledge, or decoupled propagation (APPNP, SGC) — and weak performance on **heterophilous** graphs, addressed by signed or separated aggregation schemes. Standard tooling is PyTorch Geometric and DGL; production deployments include recommendation at Pinterest (PinSage), fraud and abuse detection at scale, traffic forecasting, and molecular screening, and GCN-style message passing remains the reference point against which graph transformers and newer geometric architectures are measured.
+The layer rule is H^(l+1) = σ(D̃^(-1/2) Ã D̃^(-1/2) H^(l) W^(l)), where Ã = A + I adds self-loops, D̃ is Ã's degree matrix, and W^(l) is the learned weight matrix — a first-order Chebyshev approximation with the "renormalisation trick" for stability. Complexity is linear in the number of edges, but full-batch propagation over huge graphs motivates sampled and clustered variants (GraphSAGE, Cluster-GCN, GraphSAINT). Two well-characterised failure modes shape practice: **over-smoothing** — repeated Laplacian averaging drives node representations towards indistinguishability, so vanilla GCNs are typically only 2–4 layers deep, mitigated by residual/initial connections (GCNII), jumping knowledge, or decoupled propagation (APPNP, SGC) — and weak performance on **heterophilous** graphs, addressed by signed or separated aggregation schemes. Standard tooling is PyTorch Geometric and DGL; production deployments include recommendation at Pinterest (PinSage), fraud and abuse detection at scale, traffic forecasting, and molecular screening, and GCN-style message passing remains the reference point against which graph transformers and newer geometric architectures are measured.
 
-  ## Current Landscape
+## Current Landscape
 
-  - **Over-smoothing is now theory, not just folklore**: Kipf & Welling (2017) already showed vanilla GCNs peak at 2-3 layers and degrade sharply beyond ~7; Rusch et al.'s 2023 survey formalised over-smoothing as exponential convergence of node features to a constant, and 2024 analyses (e.g. NeurIPS 2024's Gaussian-process treatment) identify a non-over-smoothing "chaotic" phase reachable with large initial weight variance, letting GCNs on Cora stay informative beyond 100 layers.
-  - **Depth fixes are mature**: GCNII (initial-residual + identity mapping), APPNP/SGC (decoupled propagation), PairNorm and principal-eigenvector removal reliably enable deep GCNs; a 2024 TMLR study nonetheless notes deep GNNs still rarely beat shallow ones on standard node-classification benchmarks.
-  - **Position in 2025**: GCN remains the canonical baseline rather than the state of the art — graph transformers and attention-based variants (GAT) lead many leaderboards — but message passing is still the reference formulation, and GCNs stay competitive on homophilous graphs with few parameters.
-  - **Tooling**: PyTorch Geometric and DGL are the standard libraries; production lineage includes PinSage-style recommendation, fraud/abuse detection, traffic forecasting and molecular property prediction.
+- **Over-smoothing is now theory, not just folklore**: Kipf & Welling (2017) already showed vanilla GCNs peak at 2-3 layers and degrade sharply beyond ~7; Rusch et al.'s 2023 survey formalised over-smoothing as exponential convergence of node features to a constant, and 2024 analyses (e.g. NeurIPS 2024's Gaussian-process treatment) identify a non-over-smoothing "chaotic" phase reachable with large initial weight variance, letting GCNs on Cora stay informative beyond 100 layers.
+- **Depth fixes are mature**: GCNII (initial-residual + identity mapping), APPNP/SGC (decoupled propagation), PairNorm and principal-eigenvector removal reliably enable deep GCNs; a 2024 TMLR study nonetheless notes deep GNNs still rarely beat shallow ones on standard node-classification benchmarks.
+- **Position in 2025**: GCN remains the canonical baseline rather than the state of the art — graph transformers and attention-based variants (GAT) lead many leaderboards — but message passing is still the reference formulation, and GCNs stay competitive on homophilous graphs with few parameters.
+- **Tooling**: PyTorch Geometric and DGL are the standard libraries; production lineage includes PinSage-style recommendation, fraud/abuse detection, traffic forecasting and molecular property prediction.
 
   **Sources**:
-  - https://arxiv.org/abs/1609.02907
-  - https://ar5iv.labs.arxiv.org/html/2007.02133
-  - https://proceedings.neurips.cc/paper_files/paper/2024/file/5623c35f3ab5e2c72aeb3abce27dc28f-Paper-Conference.pdf
 
-- ### Provenance
+- https://arxiv.org/abs/1609.02907
+- https://ar5iv.labs.arxiv.org/html/2007.02133
+- https://proceedings.neurips.cc/paper_files/paper/2024/file/5623c35f3ab5e2c72aeb3abce27dc28f-Paper-Conference.pdf
+
+### Provenance
 

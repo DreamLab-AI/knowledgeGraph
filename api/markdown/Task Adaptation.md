@@ -1,17 +1,16 @@
-
 The process of specialising a pre-trained or general-purpose machine learning model to perform well on a specific downstream task by adjusting its parameters, architecture, or inference behaviour. Task adaptation encompasses techniques such as fine-tuning, instruction tuning, prompt engineering, and parameter-efficient methods (LoRA, adapters) that bridge the gap between a model's pre-training distribution and the requirements of a target application.
 
 The process of specialising a pre-trained or general-purpose model to perform well on a specific downstream task by adjusting parameters, architecture, or inference behaviour. Encompasses fine-tuning, instruction tuning, prompt engineering, and parameter-efficient methods that bridge the gap between pre-training distribution and target application requirements.
 
-- ### Content
+### Content
 
-  Task adaptation sits at the operational intersection of pre-training and deployment. Modern large-scale models are trained on broad distributions of data that confer general capabilities, but real-world applications typically require performance on narrow, well-defined tasks with specific input-output formats, domain vocabulary, and quality constraints.
+Task adaptation sits at the operational intersection of pre-training and deployment. Modern large-scale models are trained on broad distributions of data that confer general capabilities, but real-world applications typically require performance on narrow, well-defined tasks with specific input-output formats, domain vocabulary, and quality constraints.
 
-  The classical approach is full fine-tuning: continuing gradient-based optimisation on labelled task data, updating all model parameters. This is effective but computationally expensive and risks catastrophic forgetting of pre-training knowledge, particularly when task data is scarce. Regularisation strategies (L2 penalty on deviations from pre-trained weights, elastic weight consolidation) can mitigate forgetting.
+The classical approach is full fine-tuning: continuing gradient-based optimisation on labelled task data, updating all model parameters. This is effective but computationally expensive and risks catastrophic forgetting of pre-training knowledge, particularly when task data is scarce. Regularisation strategies (L2 penalty on deviations from pre-trained weights, elastic weight consolidation) can mitigate forgetting.
 
-  Parameter-efficient adaptation methods — LoRA (Low-Rank Adaptation), prefix tuning, adapters, and prompt tuning — address the cost and forgetting problems by freezing most pre-trained parameters and introducing a small number of task-specific parameters. LoRA, for example, decomposes weight update matrices into low-rank products, reducing trainable parameter count by orders of magnitude while achieving competitive performance with full fine-tuning.
+Parameter-efficient adaptation methods — LoRA (Low-Rank Adaptation), prefix tuning, adapters, and prompt tuning — address the cost and forgetting problems by freezing most pre-trained parameters and introducing a small number of task-specific parameters. LoRA, for example, decomposes weight update matrices into low-rank products, reducing trainable parameter count by orders of magnitude while achieving competitive performance with full fine-tuning.
 
-  Instruction tuning is a specialised form of task adaptation that teaches models to follow natural-language instructions rather than completing specific narrow tasks, producing models that generalise across task formats. Few-shot and zero-shot prompting represent soft adaptation without parameter updates, relying on in-context examples to steer model behaviour toward target task characteristics.
+Instruction tuning is a specialised form of task adaptation that teaches models to follow natural-language instructions rather than completing specific narrow tasks, producing models that generalise across task formats. Few-shot and zero-shot prompting represent soft adaptation without parameter updates, relying on in-context examples to steer model behaviour toward target task characteristics.
 
-- ### Provenance
+### Provenance
 

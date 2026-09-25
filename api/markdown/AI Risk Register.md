@@ -1,140 +1,140 @@
-
 An AI Risk Register is a structured artefact that systematically documents, tracks, and manages identified risks associated with AI systems throughout their lifecycle. Each entry records a risk identifier, description, affected systems and stakeholders, likelihood and consequence ratings, overall risk level, assigned owner, current mitigation controls, residual risk, and review history. The register supports risk-based governance by enabling prioritisation of mitigation efforts, regulatory compliance demonstration, and continuous monitoring across technical, ethical, legal, operational, security, and societal risk categories.
 
-- ### Semantic Classification
+### Semantic Classification
 
-- ### Content
-  ## Compositional Relationships (Components)
-    ```
-    SubClassOf(ai:AIRiskRegister
-      ObjectSomeValuesFrom(ai:hasPart ai:AuditTrail))
-    SubClassOf(ai:AIRiskRegister
-      ObjectSomeValuesFrom(ai:hasPart ai:RiskAssessment))
-    SubClassOf(ai:AIRiskRegister
-      ObjectSomeValuesFrom(ai:hasPart ai:ImpactAssessment))
-    SubClassOf(ai:AIRiskRegister
-      ObjectSomeValuesFrom(ai:hasPart ai:RiskAppetiteStatement))
-    SubClassOf(ai:AIRiskRegister
-      ObjectSomeValuesFrom(ai:hasPart ai:RiskTreatmentPlan))
-    SubClassOf(ai:AIRiskRegister
-      ObjectSomeValuesFrom(ai:hasPart ai:ResidualRiskRecord))
-    SubClassOf(ai:AIRiskRegister
-      ObjectSomeValuesFrom(ai:hasPart ai:RiskOwnerAssignment))
-    ```
-  ## Dependency Relationships
-    ```
-    SubClassOf(ai:AIRiskRegister
-      ObjectSomeValuesFrom(ai:requires ai:AIGovernance))
-    SubClassOf(ai:AIRiskRegister
-      ObjectSomeValuesFrom(ai:requires ai:ComplianceFramework))
-    SubClassOf(ai:AIRiskRegister
-      ObjectSomeValuesFrom(ai:requires ai:Accountability))
-    SubClassOf(ai:AIRiskRegister
-      ObjectSomeValuesFrom(ai:requires ai:DataGovernance))
-    SubClassOf(ai:AIRiskRegister
-      ObjectSomeValuesFrom(ai:requires ai:ThreatModelling))
-    SubClassOf(ai:AIRiskRegister
-      ObjectSomeValuesFrom(ai:dependsOn ai:IncidentResponse))
-    SubClassOf(ai:AIRiskRegister
-      ObjectSomeValuesFrom(ai:dependsOn ai:AIImpactAssessment))
-    ```
-  ## Capability Relationships
-    ```
-    SubClassOf(ai:AIRiskRegister
-      ObjectSomeValuesFrom(ai:enables ai:ComplianceMonitoring))
-    SubClassOf(ai:AIRiskRegister
-      ObjectSomeValuesFrom(ai:enables ai:AISafety))
-    SubClassOf(ai:AIRiskRegister
-      ObjectSomeValuesFrom(ai:enables ai:Transparency))
-    SubClassOf(ai:AIRiskRegister
-      ObjectSomeValuesFrom(ai:enables ai:ResponsibleAI))
-    SubClassOf(ai:AIRiskRegister
-      ObjectSomeValuesFrom(ai:enables ai:TrustworthyAI))
-    SubClassOf(ai:AIRiskRegister
-      ObjectSomeValuesFrom(ai:supports ai:AIGovernanceFramework))
-    SubClassOf(ai:AIRiskRegister
-      ObjectSomeValuesFrom(ai:supports ai:RegulatoryCompliance))
-    ```
-  ## Implementation Relationships
-    ```
-    SubClassOf(ai:AIRiskRegister
-      ObjectSomeValuesFrom(ai:implements ai:ISO31000))
-    SubClassOf(ai:AIRiskRegister
-      ObjectSomeValuesFrom(ai:implements ai:ISOIEC23894))
-    SubClassOf(ai:AIRiskRegister
-      ObjectSomeValuesFrom(ai:implements ai:NISTAIRiskManagementFramework))
-    SubClassOf(ai:AIRiskRegister
-      ObjectSomeValuesFrom(ai:implements ai:EUAIActArticle9))
-    SubClassOf(ai:AIRiskRegister
-      ObjectSomeValuesFrom(ai:uses ai:RedTeaming))
-    SubClassOf(ai:AIRiskRegister
-      ObjectSomeValuesFrom(ai:uses ai:AlgorithmicAuditing))
-    SubClassOf(ai:AIRiskRegister
-      ObjectSomeValuesFrom(ai:uses ai:ContinuousMonitoring))
-    ```
-  ## Reduction Relationships
-    ```
-    SubClassOf(ai:AIRiskRegister
-      ObjectSomeValuesFrom(ai:reducesTo ai:RiskLog))
-    SubClassOf(ai:AIRiskRegister
-      ObjectSomeValuesFrom(ai:reducesTo ai:ControlInventory))
-    SubClassOf(ai:AIRiskRegister
-      ObjectSomeValuesFrom(ai:reducesTo ai:ComplianceChecklist))
-    SubClassOf(ai:AIRiskRegister
-      ObjectSomeValuesFrom(ai:reducesTo ai:RiskMatrix))
-    SubClassOf(ai:AIRiskRegister
-      ObjectSomeValuesFrom(ai:relatedTo ai:EnterpriseRiskManagement))
-    SubClassOf(ai:AIRiskRegister
-      ObjectSomeValuesFrom(ai:relatedTo ai:ModelDrift))
-    SubClassOf(ai:AIRiskRegister
-      ObjectSomeValuesFrom(ai:supports ai:ModelGovernance))
-    SubClassOf(ai:AIRiskRegister
-      ObjectSomeValuesFrom(ai:requires ai:RiskAppetiteStatement))
-    ```
+### Content
 
-  ## About
+## Compositional Relationships (Components)
+  ```
+  SubClassOf(ai:AIRiskRegister
+    ObjectSomeValuesFrom(ai:hasPart ai:AuditTrail))
+  SubClassOf(ai:AIRiskRegister
+    ObjectSomeValuesFrom(ai:hasPart ai:RiskAssessment))
+  SubClassOf(ai:AIRiskRegister
+    ObjectSomeValuesFrom(ai:hasPart ai:ImpactAssessment))
+  SubClassOf(ai:AIRiskRegister
+    ObjectSomeValuesFrom(ai:hasPart ai:RiskAppetiteStatement))
+  SubClassOf(ai:AIRiskRegister
+    ObjectSomeValuesFrom(ai:hasPart ai:RiskTreatmentPlan))
+  SubClassOf(ai:AIRiskRegister
+    ObjectSomeValuesFrom(ai:hasPart ai:ResidualRiskRecord))
+  SubClassOf(ai:AIRiskRegister
+    ObjectSomeValuesFrom(ai:hasPart ai:RiskOwnerAssignment))
+  ```
+## Dependency Relationships
+  ```
+  SubClassOf(ai:AIRiskRegister
+    ObjectSomeValuesFrom(ai:requires ai:AIGovernance))
+  SubClassOf(ai:AIRiskRegister
+    ObjectSomeValuesFrom(ai:requires ai:ComplianceFramework))
+  SubClassOf(ai:AIRiskRegister
+    ObjectSomeValuesFrom(ai:requires ai:Accountability))
+  SubClassOf(ai:AIRiskRegister
+    ObjectSomeValuesFrom(ai:requires ai:DataGovernance))
+  SubClassOf(ai:AIRiskRegister
+    ObjectSomeValuesFrom(ai:requires ai:ThreatModelling))
+  SubClassOf(ai:AIRiskRegister
+    ObjectSomeValuesFrom(ai:dependsOn ai:IncidentResponse))
+  SubClassOf(ai:AIRiskRegister
+    ObjectSomeValuesFrom(ai:dependsOn ai:AIImpactAssessment))
+  ```
+## Capability Relationships
+  ```
+  SubClassOf(ai:AIRiskRegister
+    ObjectSomeValuesFrom(ai:enables ai:ComplianceMonitoring))
+  SubClassOf(ai:AIRiskRegister
+    ObjectSomeValuesFrom(ai:enables ai:AISafety))
+  SubClassOf(ai:AIRiskRegister
+    ObjectSomeValuesFrom(ai:enables ai:Transparency))
+  SubClassOf(ai:AIRiskRegister
+    ObjectSomeValuesFrom(ai:enables ai:ResponsibleAI))
+  SubClassOf(ai:AIRiskRegister
+    ObjectSomeValuesFrom(ai:enables ai:TrustworthyAI))
+  SubClassOf(ai:AIRiskRegister
+    ObjectSomeValuesFrom(ai:supports ai:AIGovernanceFramework))
+  SubClassOf(ai:AIRiskRegister
+    ObjectSomeValuesFrom(ai:supports ai:RegulatoryCompliance))
+  ```
+## Implementation Relationships
+  ```
+  SubClassOf(ai:AIRiskRegister
+    ObjectSomeValuesFrom(ai:implements ai:ISO31000))
+  SubClassOf(ai:AIRiskRegister
+    ObjectSomeValuesFrom(ai:implements ai:ISOIEC23894))
+  SubClassOf(ai:AIRiskRegister
+    ObjectSomeValuesFrom(ai:implements ai:NISTAIRiskManagementFramework))
+  SubClassOf(ai:AIRiskRegister
+    ObjectSomeValuesFrom(ai:implements ai:EUAIActArticle9))
+  SubClassOf(ai:AIRiskRegister
+    ObjectSomeValuesFrom(ai:uses ai:RedTeaming))
+  SubClassOf(ai:AIRiskRegister
+    ObjectSomeValuesFrom(ai:uses ai:AlgorithmicAuditing))
+  SubClassOf(ai:AIRiskRegister
+    ObjectSomeValuesFrom(ai:uses ai:ContinuousMonitoring))
+  ```
+## Reduction Relationships
+  ```
+  SubClassOf(ai:AIRiskRegister
+    ObjectSomeValuesFrom(ai:reducesTo ai:RiskLog))
+  SubClassOf(ai:AIRiskRegister
+    ObjectSomeValuesFrom(ai:reducesTo ai:ControlInventory))
+  SubClassOf(ai:AIRiskRegister
+    ObjectSomeValuesFrom(ai:reducesTo ai:ComplianceChecklist))
+  SubClassOf(ai:AIRiskRegister
+    ObjectSomeValuesFrom(ai:reducesTo ai:RiskMatrix))
+  SubClassOf(ai:AIRiskRegister
+    ObjectSomeValuesFrom(ai:relatedTo ai:EnterpriseRiskManagement))
+  SubClassOf(ai:AIRiskRegister
+    ObjectSomeValuesFrom(ai:relatedTo ai:ModelDrift))
+  SubClassOf(ai:AIRiskRegister
+    ObjectSomeValuesFrom(ai:supports ai:ModelGovernance))
+  SubClassOf(ai:AIRiskRegister
+    ObjectSomeValuesFrom(ai:requires ai:RiskAppetiteStatement))
+  ```
 
-  The AI Risk Register adapts established enterprise risk management practices — principally codified in [[ISO 31000]] — to the distinctive failure modes and governance challenges of AI systems. Unlike conventional IT risk registers, which address relatively static systems with deterministic behaviour, AI risk registers must account for the dynamic nature of learned models: [[Model Drift]] as deployment input distributions diverge from training distributions, distributional shift that may produce systematically biased or harmful outputs, the risk of feedback loops where model outputs influence future training data, and emergent behaviour in complex multi-agent pipelines that may not manifest until systems are operating at scale. These characteristics demand that risk identification is a continuous, lifecycle-spanning activity rather than a one-time pre-deployment exercise.
+## About
 
-  The register operates as the central artefact within a broader [[AI Risk Management]] programme. It integrates upstream outputs from [[Risk Assessment]] workshops, [[Red Teaming]] exercises, fairness audits, and [[Bias Detection]] analyses as candidate risk entries, and downstream outputs flow into [[Compliance Monitoring]] dashboards, [[Incident Response]] procedures, and board-level governance reporting. The [[Audit Trail]] component ensures that every status change — risk rating revision, control update, owner reassignment, accepted residual risk — is logged with actor identity, timestamp, and decision rationale, satisfying the immutable evidence requirements of [[Regulatory Compliance]] audits under the EU AI Act, UK ICO guidance, and financial services regulators including the PRA and FCA.
+The AI Risk Register adapts established enterprise risk management practices — principally codified in [[ISO 31000]] — to the distinctive failure modes and governance challenges of AI systems. Unlike conventional IT risk registers, which address relatively static systems with deterministic behaviour, AI risk registers must account for the dynamic nature of learned models: [[Model Drift]] as deployment input distributions diverge from training distributions, distributional shift that may produce systematically biased or harmful outputs, the risk of feedback loops where model outputs influence future training data, and emergent behaviour in complex multi-agent pipelines that may not manifest until systems are operating at scale. These characteristics demand that risk identification is a continuous, lifecycle-spanning activity rather than a one-time pre-deployment exercise.
 
-  The register's risk classification taxonomy is central to its utility. Six primary risk domains span the AI lifecycle: (1) Technical and operational risks — model errors, [[Model Drift]], inference failures, infrastructure vulnerabilities, and supply-chain risks from third-party models and open-source components; (2) Ethical and societal risks — [[Bias]], [[Fairness]] violations, and discriminatory outcomes for protected groups; (3) Legal and regulatory risks — non-compliance with [[EU AI Act]], UK AI regulation, GDPR, financial services regulation, and sector-specific rules; (4) Security risks — adversarial attacks, model extraction, data poisoning, and prompt injection threats; (5) Business and reputational risks — financial loss and brand damage from AI-caused failures; (6) Privacy risks — data-subject harm under GDPR or UK GDPR from training data leakage, inference attacks, or unauthorised processing. Each category demands specialist assessment methodology: ethical risks require demographic impact analysis; security risks require [[Threat Modelling]] and adversarial testing; privacy risks require Data Protection Impact Assessments (DPIAs) as mandated by UK GDPR Article 35.
+The register operates as the central artefact within a broader [[AI Risk Management]] programme. It integrates upstream outputs from [[Risk Assessment]] workshops, [[Red Teaming]] exercises, fairness audits, and [[Bias Detection]] analyses as candidate risk entries, and downstream outputs flow into [[Compliance Monitoring]] dashboards, [[Incident Response]] procedures, and board-level governance reporting. The [[Audit Trail]] component ensures that every status change — risk rating revision, control update, owner reassignment, accepted residual risk — is logged with actor identity, timestamp, and decision rationale, satisfying the immutable evidence requirements of [[Regulatory Compliance]] audits under the EU AI Act, UK ICO guidance, and financial services regulators including the PRA and FCA.
 
-  The risk identification process that populates the register draws on multiple input sources, each surfacing different failure modes. Structured risk identification workshops bring together AI engineers, product managers, legal counsel, data protection officers, and domain experts to systematically enumerate failure scenarios by working through the AI system's lifecycle stages — data collection and curation, model training, evaluation, deployment, integration, and monitoring. Threat modelling (using STRIDE or PASTA methodologies adapted for AI) identifies adversarial failure modes: attempts by external actors to corrupt training data, extract model parameters, infer training data membership, or manipulate model outputs through adversarial inputs. Fairness audits using demographic disparity analysis identify potential discriminatory failure modes across protected characteristics. Red-teaming by independent internal or external teams attempts to elicit harmful outputs, jailbreaks, or unsafe behaviours from the AI system, particularly in the case of [[Large Language Models]] and multi-modal AI. Operational monitoring data from deployed systems surfaces empirical failure modes observed in production, which may not have been anticipated during pre-deployment risk identification. Each of these input channels generates candidate register entries that are then assessed, prioritised, and assigned to risk owners through a standardised intake process.
+The register's risk classification taxonomy is central to its utility. Six primary risk domains span the AI lifecycle: (1) Technical and operational risks — model errors, [[Model Drift]], inference failures, infrastructure vulnerabilities, and supply-chain risks from third-party models and open-source components; (2) Ethical and societal risks — [[Bias]], [[Fairness]] violations, and discriminatory outcomes for protected groups; (3) Legal and regulatory risks — non-compliance with [[EU AI Act]], UK AI regulation, GDPR, financial services regulation, and sector-specific rules; (4) Security risks — adversarial attacks, model extraction, data poisoning, and prompt injection threats; (5) Business and reputational risks — financial loss and brand damage from AI-caused failures; (6) Privacy risks — data-subject harm under GDPR or UK GDPR from training data leakage, inference attacks, or unauthorised processing. Each category demands specialist assessment methodology: ethical risks require demographic impact analysis; security risks require [[Threat Modelling]] and adversarial testing; privacy risks require Data Protection Impact Assessments (DPIAs) as mandated by UK GDPR Article 35.
 
-  Critically, the AI risk register must be treated as a living document subject to mandatory periodic review rather than a static artefact completed at system launch. The EU AI Act Article 9 requirement for a "continuous" risk management system reflects the reality that AI-specific risks evolve dynamically: a model that performs within acceptable bounds at deployment may degrade as the world changes and its training distribution becomes stale; an attack surface that did not exist at deployment may emerge as adversarial techniques advance; a risk that was assessed as low probability may materialise as the system is scaled to a larger user population. Best practice mandates at least quarterly review of high-risk register entries and annual comprehensive review of the full register, with trigger-based reviews whenever significant system changes occur, major incidents are reported, or regulatory guidance is updated.
+The risk identification process that populates the register draws on multiple input sources, each surfacing different failure modes. Structured risk identification workshops bring together AI engineers, product managers, legal counsel, data protection officers, and domain experts to systematically enumerate failure scenarios by working through the AI system's lifecycle stages — data collection and curation, model training, evaluation, deployment, integration, and monitoring. Threat modelling (using STRIDE or PASTA methodologies adapted for AI) identifies adversarial failure modes: attempts by external actors to corrupt training data, extract model parameters, infer training data membership, or manipulate model outputs through adversarial inputs. Fairness audits using demographic disparity analysis identify potential discriminatory failure modes across protected characteristics. Red-teaming by independent internal or external teams attempts to elicit harmful outputs, jailbreaks, or unsafe behaviours from the AI system, particularly in the case of [[Large Language Models]] and multi-modal AI. Operational monitoring data from deployed systems surfaces empirical failure modes observed in production, which may not have been anticipated during pre-deployment risk identification. Each of these input channels generates candidate register entries that are then assessed, prioritised, and assigned to risk owners through a standardised intake process.
 
-  The link between the AI risk register and [[AI Governance]] structures is operationalised through the risk appetite statement — a board-level governance document that specifies the maximum level of residual risk the organisation is willing to accept for each risk category. The risk appetite establishes the thresholds that determine whether a given register entry requires formal treatment (risk above appetite must be treated), monitoring (risk at or below appetite but approaching threshold), or acceptance (risk comfortably below appetite). Risk appetite for AI systems in high-stakes domains (medical diagnosis, credit decisioning, criminal justice) is typically set more conservatively than for experimental or low-stakes AI deployments, reflecting the severity and irreversibility of potential harms. Documenting and communicating the risk appetite is itself a governance obligation under [[ISO/IEC 42001]] and the EU AI Act, as it demonstrates that the organisation has made conscious and documented decisions about acceptable AI risk levels rather than treating AI deployment as unconditionally permissible.
+Critically, the AI risk register must be treated as a living document subject to mandatory periodic review rather than a static artefact completed at system launch. The EU AI Act Article 9 requirement for a "continuous" risk management system reflects the reality that AI-specific risks evolve dynamically: a model that performs within acceptable bounds at deployment may degrade as the world changes and its training distribution becomes stale; an attack surface that did not exist at deployment may emerge as adversarial techniques advance; a risk that was assessed as low probability may materialise as the system is scaled to a larger user population. Best practice mandates at least quarterly review of high-risk register entries and annual comprehensive review of the full register, with trigger-based reviews whenever significant system changes occur, major incidents are reported, or regulatory guidance is updated.
 
-  ## Lifecycle Integration and Governance Workflows
+The link between the AI risk register and [[AI Governance]] structures is operationalised through the risk appetite statement — a board-level governance document that specifies the maximum level of residual risk the organisation is willing to accept for each risk category. The risk appetite establishes the thresholds that determine whether a given register entry requires formal treatment (risk above appetite must be treated), monitoring (risk at or below appetite but approaching threshold), or acceptance (risk comfortably below appetite). Risk appetite for AI systems in high-stakes domains (medical diagnosis, credit decisioning, criminal justice) is typically set more conservatively than for experimental or low-stakes AI deployments, reflecting the severity and irreversibility of potential harms. Documenting and communicating the risk appetite is itself a governance obligation under [[ISO/IEC 42001]] and the EU AI Act, as it demonstrates that the organisation has made conscious and documented decisions about acceptable AI risk levels rather than treating AI deployment as unconditionally permissible.
 
-  The AI risk register is not a standalone document but the central node in a governance information flow that spans the entire AI system lifecycle. During the design phase, risk identification workshops produce the initial register entries that inform architectural choices: a high-rated risk of discriminatory outcome may lead to the selection of a model architecture with built-in fairness constraints or to a decision to deploy human-in-the-loop review for affected subgroups. During data curation and training, data governance processes (data lineage tracking, training data profiling, and bias audits) generate evidence that updates risk assessments in the register for data-related risk categories. During model validation, performance testing across demographic subgroups, adversarial robustness evaluation, distributional shift testing, and [[Red Teaming]] exercises generate evidence that either confirms or revises risk level ratings, and identify new failure modes not anticipated in the initial risk identification.
+## Lifecycle Integration and Governance Workflows
 
-  At deployment, the register is used as an input to the deployment approval decision: risks rated Critical must have documented mitigation plans and confirmed controls before deployment is authorised. Post-deployment, [[Continuous Monitoring]] pipelines feed operational evidence back into the register, updating the empirical basis for risk ratings and triggering reassessment when performance anomalies are detected. At model update or retraining, the entire risk assessment must be re-evaluated because model updates can change the risk profile in non-obvious ways: a model fine-tuned to improve performance on a specific demographic subgroup may inadvertently worsen fairness for another subgroup. At decommissioning, the register provides the evidence base for demonstrating that any regulatory obligations that required documentation during the model's operational life have been satisfied, and that data retention or deletion obligations for training data have been fulfilled.
+The AI risk register is not a standalone document but the central node in a governance information flow that spans the entire AI system lifecycle. During the design phase, risk identification workshops produce the initial register entries that inform architectural choices: a high-rated risk of discriminatory outcome may lead to the selection of a model architecture with built-in fairness constraints or to a decision to deploy human-in-the-loop review for affected subgroups. During data curation and training, data governance processes (data lineage tracking, training data profiling, and bias audits) generate evidence that updates risk assessments in the register for data-related risk categories. During model validation, performance testing across demographic subgroups, adversarial robustness evaluation, distributional shift testing, and [[Red Teaming]] exercises generate evidence that either confirms or revises risk level ratings, and identify new failure modes not anticipated in the initial risk identification.
 
-  This lifecycle integration requires the risk register to be technically integrated with the organisation's MLOps tooling: model versioning systems (enabling register entries to be tied to specific model versions), data provenance tracking systems (enabling evidence links from training data profiling to data risk register entries), performance monitoring dashboards (enabling automated alert generation when monitored metrics cross risk-level thresholds), and incident management systems (enabling incident reports to trigger review and update of relevant register entries). Building this technical integration is a significant engineering and governance investment, but without it the register is a static document that rapidly becomes disconnected from the actual state of the AI system it purports to document — a compliance theatre artefact rather than an operational governance instrument.
+At deployment, the register is used as an input to the deployment approval decision: risks rated Critical must have documented mitigation plans and confirmed controls before deployment is authorised. Post-deployment, [[Continuous Monitoring]] pipelines feed operational evidence back into the register, updating the empirical basis for risk ratings and triggering reassessment when performance anomalies are detected. At model update or retraining, the entire risk assessment must be re-evaluated because model updates can change the risk profile in non-obvious ways: a model fine-tuned to improve performance on a specific demographic subgroup may inadvertently worsen fairness for another subgroup. At decommissioning, the register provides the evidence base for demonstrating that any regulatory obligations that required documentation during the model's operational life have been satisfied, and that data retention or deletion obligations for training data have been fulfilled.
 
-  ## Components and Architecture
+This lifecycle integration requires the risk register to be technically integrated with the organisation's MLOps tooling: model versioning systems (enabling register entries to be tied to specific model versions), data provenance tracking systems (enabling evidence links from training data profiling to data risk register entries), performance monitoring dashboards (enabling automated alert generation when monitored metrics cross risk-level thresholds), and incident management systems (enabling incident reports to trigger review and update of relevant register entries). Building this technical integration is a significant engineering and governance investment, but without it the register is a static document that rapidly becomes disconnected from the actual state of the AI system it purports to document — a compliance theatre artefact rather than an operational governance instrument.
 
-  A well-structured AI risk register entry contains the following standardised fields:
+## Components and Architecture
 
-  - **Risk ID**: Unique alphanumeric identifier for traceability across documents and systems (e.g., AI-TECH-023).
-  - **AI System / Asset**: Precise specification of the affected system, including model name, version, and deployment context (e.g., "Customer credit scoring model v3.2 — retail lending pipeline").
-  - **Data Sensitivity Classification**: Public / Internal / Confidential / Restricted — drives DPIA obligations and access-control requirements for the register entry itself.
-  - **Risk Description**: A structured narrative covering: (a) the failure mode, (b) its causal pathway from trigger to harm, (c) the population of affected persons, and (d) the deployment context.
-  - **Risk Category**: One or more of Technical, Ethical, Legal, Security, Business, Privacy — drives the assessment methodology and the regulatory mapping.
-  - **Likelihood Rating**: Five-point scale (1 Rare — 5 Almost Certain), calibrated to deployment volume. A "rare" event for a system processing ten million transactions daily may still cause ten thousand harm events annually.
-  - **Consequence Rating**: Five-point scale (1 Insignificant — 5 Catastrophic) across financial, physical, discriminatory, reputational, and regulatory consequence dimensions.
-  - **Inherent Risk Level**: The product of likelihood × consequence before controls, expressed as Low / Medium / High / Critical.
-  - **Current Controls**: Description of existing technical, procedural, and governance controls with assessed effectiveness (Effective / Partial / Ineffective).
-  - **Residual Risk Level**: Risk level after controls — if Critical or High, a formal treatment plan is mandatory.
-  - **Risk Owner**: Named individual with seniority, budget authority, and accountability for treatment progress.
-  - **Treatment Plan**: Specific actions, milestones, budget, and target residual risk level.
-  - **Review Date**: Scheduled reassessment date; high-risk entries reviewed at least quarterly.
-  - **Review History**: Immutable log of all status changes with actor, timestamp, and rationale.
-  - **Regulatory Mapping**: Explicit links from the risk entry to the specific regulatory article, standard clause, or governance requirement that the risk relates to (e.g., "EU AI Act Article 9(2)(b) — identified risk affecting fundamental rights", "UK GDPR Article 22 — automated individual decision-making risk").
-  - **Evidence Links**: References to the specific test reports, audit results, red-team exercise reports, or monitoring data that provide the empirical basis for the risk assessment.
-  - **Linked Systems**: Cross-references to related risk register entries for dependent or downstream AI systems that may be affected by the materialisation of this risk.
+A well-structured AI risk register entry contains the following standardised fields:
+
+- **Risk ID**: Unique alphanumeric identifier for traceability across documents and systems (e.g., AI-TECH-023).
+- **AI System / Asset**: Precise specification of the affected system, including model name, version, and deployment context (e.g., "Customer credit scoring model v3.2 — retail lending pipeline").
+- **Data Sensitivity Classification**: Public / Internal / Confidential / Restricted — drives DPIA obligations and access-control requirements for the register entry itself.
+- **Risk Description**: A structured narrative covering: (a) the failure mode, (b) its causal pathway from trigger to harm, (c) the population of affected persons, and (d) the deployment context.
+- **Risk Category**: One or more of Technical, Ethical, Legal, Security, Business, Privacy — drives the assessment methodology and the regulatory mapping.
+- **Likelihood Rating**: Five-point scale (1 Rare — 5 Almost Certain), calibrated to deployment volume. A "rare" event for a system processing ten million transactions daily may still cause ten thousand harm events annually.
+- **Consequence Rating**: Five-point scale (1 Insignificant — 5 Catastrophic) across financial, physical, discriminatory, reputational, and regulatory consequence dimensions.
+- **Inherent Risk Level**: The product of likelihood × consequence before controls, expressed as Low / Medium / High / Critical.
+- **Current Controls**: Description of existing technical, procedural, and governance controls with assessed effectiveness (Effective / Partial / Ineffective).
+- **Residual Risk Level**: Risk level after controls — if Critical or High, a formal treatment plan is mandatory.
+- **Risk Owner**: Named individual with seniority, budget authority, and accountability for treatment progress.
+- **Treatment Plan**: Specific actions, milestones, budget, and target residual risk level.
+- **Review Date**: Scheduled reassessment date; high-risk entries reviewed at least quarterly.
+- **Review History**: Immutable log of all status changes with actor, timestamp, and rationale.
+- **Regulatory Mapping**: Explicit links from the risk entry to the specific regulatory article, standard clause, or governance requirement that the risk relates to (e.g., "EU AI Act Article 9(2)(b) — identified risk affecting fundamental rights", "UK GDPR Article 22 — automated individual decision-making risk").
+- **Evidence Links**: References to the specific test reports, audit results, red-team exercise reports, or monitoring data that provide the empirical basis for the risk assessment.
+- **Linked Systems**: Cross-references to related risk register entries for dependent or downstream AI systems that may be affected by the materialisation of this risk.
 
   The MIT AI Risk Repository (April 2025 update, version 4) catalogues 1,612 classified AI risks across a seven-domain taxonomy, providing a reference corpus that organisations can use as a starting point for populating their own registers, particularly for risks associated with novel deployment contexts such as [[Large Language Models]] and multi-agent AI systems.
 
@@ -260,5 +260,5 @@ An AI Risk Register is a structured artefact that systematically documents, trac
   26. Nemko Digital (2025). "ISO IEC 23894 AI Risk Management Guide 2025: Manage Risks Now." digital.nemko.com.
   27. CDDO (2025). *Algorithmic Transparency Recording Standard Guidance*. UK Central Digital and Data Office.
 
-- ### Provenance
+### Provenance
 

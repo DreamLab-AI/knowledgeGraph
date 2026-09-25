@@ -1,118 +1,118 @@
-
 The subsystem of an autonomous vehicle responsible for interpreting sensor data to construct a structured understanding of the vehicle's immediate environment, including the detection, classification, and tracking of objects, lane geometry, road surfaces, traffic signage, and dynamic actors. Autonomous driving perception fuses inputs from cameras, LiDAR, radar, and ultrasonic sensors to produce a real-time scene representation sufficient for safe navigation decisions.
 
-- ### Semantic Classification
+### Semantic Classification
 
-- ### Content
-  ## Compositional Relationships (Components)
-      SubClassOf(ai:AutonomousDrivingPerception
-        ObjectSomeValuesFrom(ai:hasPart ai:ObjectDetection))
-      SubClassOf(ai:AutonomousDrivingPerception
-        ObjectSomeValuesFrom(ai:hasPart ai:SemanticSegmentation))
-      SubClassOf(ai:AutonomousDrivingPerception
-        ObjectSomeValuesFrom(ai:hasPart ai:DepthEstimation))
-      SubClassOf(ai:AutonomousDrivingPerception
-        ObjectSomeValuesFrom(ai:hasPart ai:ObjectTracking))
-      SubClassOf(ai:AutonomousDrivingPerception
-        ObjectSomeValuesFrom(ai:hasPart ai:BirdsEyeView))
-      SubClassOf(ai:AutonomousDrivingPerception
-        ObjectSomeValuesFrom(ai:hasPart ai:OccupancyPrediction))
-      SubClassOf(ai:AutonomousDrivingPerception
-        ObjectSomeValuesFrom(ai:hasPart ai:LaneDetection))
-  ## Dependency Relationships
-      SubClassOf(ai:AutonomousDrivingPerception
-        ObjectSomeValuesFrom(ai:requires ai:EdgeComputing))
-      SubClassOf(ai:AutonomousDrivingPerception
-        ObjectSomeValuesFrom(ai:requires ai:GPUCompute))
-      SubClassOf(ai:AutonomousDrivingPerception
-        ObjectSomeValuesFrom(ai:requires ai:TrainingData))
-      SubClassOf(ai:AutonomousDrivingPerception
-        ObjectSomeValuesFrom(ai:requires ai:FunctionalSafety))
-      SubClassOf(ai:AutonomousDrivingPerception
-        ObjectSomeValuesFrom(ai:requires ai:SensorCalibration))
-      SubClassOf(ai:AutonomousDrivingPerception
-        ObjectSomeValuesFrom(ai:requires ai:Lidar))
-  ## Capability Relationships
-      SubClassOf(ai:AutonomousDrivingPerception
-        ObjectSomeValuesFrom(ai:enables ai:AutonomousDriving))
-      SubClassOf(ai:AutonomousDrivingPerception
-        ObjectSomeValuesFrom(ai:enables ai:SceneUnderstanding))
-      SubClassOf(ai:AutonomousDrivingPerception
-        ObjectSomeValuesFrom(ai:enables ai:MotionPlanning))
-      SubClassOf(ai:AutonomousDrivingPerception
-        ObjectSomeValuesFrom(ai:enables ai:CollisionAvoidance))
-      SubClassOf(ai:AutonomousDrivingPerception
-        ObjectSomeValuesFrom(ai:enables ai:Robotaxi))
-  ## Implementation Relationships
-      SubClassOf(ai:AutonomousDrivingPerception
-        ObjectSomeValuesFrom(ai:implements ai:SensorFusion))
-      SubClassOf(ai:AutonomousDrivingPerception
-        ObjectSomeValuesFrom(ai:implements ai:BirdsEyeViewRepresentation))
-      SubClassOf(ai:AutonomousDrivingPerception
-        ObjectSomeValuesFrom(ai:implements ai:DeepLearning))
-      SubClassOf(ai:AutonomousDrivingPerception
-        ObjectSomeValuesFrom(ai:implements ai:TransformerArchitecture))
-  ## Reduction Relationships
-      SubClassOf(ai:AutonomousDrivingPerception
-        ObjectSomeValuesFrom(ai:reducesTo ai:ComputerVision))
-      SubClassOf(ai:AutonomousDrivingPerception
-        ObjectSomeValuesFrom(ai:reducesTo ai:PerceptionSystem))
-  ## Association Relationships
-      SubClassOf(ai:AutonomousDrivingPerception
-        ObjectSomeValuesFrom(ai:uses ai:OccupancyPrediction))
-      SubClassOf(ai:AutonomousDrivingPerception
-        ObjectSomeValuesFrom(ai:supports ai:SimultaneousLocalisationAndMapping))
-      SubClassOf(ai:AutonomousDrivingPerception
-        ObjectSomeValuesFrom(ai:supports ai:BehaviourPrediction))
-      SubClassOf(ai:AutonomousDrivingPerception
-        ObjectSomeValuesFrom(ai:supports ai:PathPlanning))
-      SubClassOf(ai:AutonomousDrivingPerception
-        ObjectSomeValuesFrom(ai:contrasts ai:RemoteSensing))
-      SubClassOf(ai:AutonomousDrivingPerception
-        ObjectSomeValuesFrom(ai:contrasts ai:Teleoperation))
-      SubClassOf(ai:AutonomousDrivingPerception
-        ObjectSomeValuesFrom(ai:relatedTo ai:DigitalTwin))
-      SubClassOf(ai:AutonomousDrivingPerception
-        ObjectSomeValuesFrom(ai:relatedTo ai:V2XCommunication))
-      SubClassOf(ai:AutonomousDrivingPerception
-        ObjectSomeValuesFrom(ai:standardizedBy ai:ISO26262))
-      SubClassOf(ai:AutonomousDrivingPerception
-        ObjectSomeValuesFrom(ai:standardizedBy ai:ISOTSAE21448))
-      SubClassOf(ai:AutonomousDrivingPerception
-        ObjectSomeValuesFrom(ai:uses ai:Radar))
+### Content
 
-  ## About
+## Compositional Relationships (Components)
+    SubClassOf(ai:AutonomousDrivingPerception
+      ObjectSomeValuesFrom(ai:hasPart ai:ObjectDetection))
+    SubClassOf(ai:AutonomousDrivingPerception
+      ObjectSomeValuesFrom(ai:hasPart ai:SemanticSegmentation))
+    SubClassOf(ai:AutonomousDrivingPerception
+      ObjectSomeValuesFrom(ai:hasPart ai:DepthEstimation))
+    SubClassOf(ai:AutonomousDrivingPerception
+      ObjectSomeValuesFrom(ai:hasPart ai:ObjectTracking))
+    SubClassOf(ai:AutonomousDrivingPerception
+      ObjectSomeValuesFrom(ai:hasPart ai:BirdsEyeView))
+    SubClassOf(ai:AutonomousDrivingPerception
+      ObjectSomeValuesFrom(ai:hasPart ai:OccupancyPrediction))
+    SubClassOf(ai:AutonomousDrivingPerception
+      ObjectSomeValuesFrom(ai:hasPart ai:LaneDetection))
+## Dependency Relationships
+    SubClassOf(ai:AutonomousDrivingPerception
+      ObjectSomeValuesFrom(ai:requires ai:EdgeComputing))
+    SubClassOf(ai:AutonomousDrivingPerception
+      ObjectSomeValuesFrom(ai:requires ai:GPUCompute))
+    SubClassOf(ai:AutonomousDrivingPerception
+      ObjectSomeValuesFrom(ai:requires ai:TrainingData))
+    SubClassOf(ai:AutonomousDrivingPerception
+      ObjectSomeValuesFrom(ai:requires ai:FunctionalSafety))
+    SubClassOf(ai:AutonomousDrivingPerception
+      ObjectSomeValuesFrom(ai:requires ai:SensorCalibration))
+    SubClassOf(ai:AutonomousDrivingPerception
+      ObjectSomeValuesFrom(ai:requires ai:Lidar))
+## Capability Relationships
+    SubClassOf(ai:AutonomousDrivingPerception
+      ObjectSomeValuesFrom(ai:enables ai:AutonomousDriving))
+    SubClassOf(ai:AutonomousDrivingPerception
+      ObjectSomeValuesFrom(ai:enables ai:SceneUnderstanding))
+    SubClassOf(ai:AutonomousDrivingPerception
+      ObjectSomeValuesFrom(ai:enables ai:MotionPlanning))
+    SubClassOf(ai:AutonomousDrivingPerception
+      ObjectSomeValuesFrom(ai:enables ai:CollisionAvoidance))
+    SubClassOf(ai:AutonomousDrivingPerception
+      ObjectSomeValuesFrom(ai:enables ai:Robotaxi))
+## Implementation Relationships
+    SubClassOf(ai:AutonomousDrivingPerception
+      ObjectSomeValuesFrom(ai:implements ai:SensorFusion))
+    SubClassOf(ai:AutonomousDrivingPerception
+      ObjectSomeValuesFrom(ai:implements ai:BirdsEyeViewRepresentation))
+    SubClassOf(ai:AutonomousDrivingPerception
+      ObjectSomeValuesFrom(ai:implements ai:DeepLearning))
+    SubClassOf(ai:AutonomousDrivingPerception
+      ObjectSomeValuesFrom(ai:implements ai:TransformerArchitecture))
+## Reduction Relationships
+    SubClassOf(ai:AutonomousDrivingPerception
+      ObjectSomeValuesFrom(ai:reducesTo ai:ComputerVision))
+    SubClassOf(ai:AutonomousDrivingPerception
+      ObjectSomeValuesFrom(ai:reducesTo ai:PerceptionSystem))
+## Association Relationships
+    SubClassOf(ai:AutonomousDrivingPerception
+      ObjectSomeValuesFrom(ai:uses ai:OccupancyPrediction))
+    SubClassOf(ai:AutonomousDrivingPerception
+      ObjectSomeValuesFrom(ai:supports ai:SimultaneousLocalisationAndMapping))
+    SubClassOf(ai:AutonomousDrivingPerception
+      ObjectSomeValuesFrom(ai:supports ai:BehaviourPrediction))
+    SubClassOf(ai:AutonomousDrivingPerception
+      ObjectSomeValuesFrom(ai:supports ai:PathPlanning))
+    SubClassOf(ai:AutonomousDrivingPerception
+      ObjectSomeValuesFrom(ai:contrasts ai:RemoteSensing))
+    SubClassOf(ai:AutonomousDrivingPerception
+      ObjectSomeValuesFrom(ai:contrasts ai:Teleoperation))
+    SubClassOf(ai:AutonomousDrivingPerception
+      ObjectSomeValuesFrom(ai:relatedTo ai:DigitalTwin))
+    SubClassOf(ai:AutonomousDrivingPerception
+      ObjectSomeValuesFrom(ai:relatedTo ai:V2XCommunication))
+    SubClassOf(ai:AutonomousDrivingPerception
+      ObjectSomeValuesFrom(ai:standardizedBy ai:ISO26262))
+    SubClassOf(ai:AutonomousDrivingPerception
+      ObjectSomeValuesFrom(ai:standardizedBy ai:ISOTSAE21448))
+    SubClassOf(ai:AutonomousDrivingPerception
+      ObjectSomeValuesFrom(ai:uses ai:Radar))
 
-  Autonomous driving perception is the technical discipline that bridges raw sensor physics and the high-level scene representations required for safe vehicle navigation. The field emerged from classical [[Computer Vision]] and [[Robotics]] in the 1980s, when the DARPA Autonomous Land Vehicle programme and Carnegie Mellon's ALVINN neural-network steering controller (Pomerleau, 1989) demonstrated that [[Neural Network]] models could learn sensorimotor associations from camera images entirely from [[Training Data]] without hand-coded feature detectors. These pioneering systems were fragile, operating only in highly constrained environments at low speeds, but they established the paradigm of learned perceptual policies that would dominate the field three decades later. The ALVINN architecture — a single 3-layer network mapping 30×32 pixel camera images to 30 discrete steering commands — was the direct intellectual ancestor of the end-to-end systems shipped by [[Autonomous Driving]] companies such as Tesla and Wayve in 2024–2026.
+## About
 
-  The DARPA Grand Challenge (2004–2005) and Urban Challenge (2007) catalysed a generation of academic and industry teams combining [[GNSS]], laser range finders, probabilistic localisation (simultaneously developed as [[Simultaneous Localisation and Mapping]] algorithms), and early [[Machine Learning]] for obstacle detection. Stanford's Stanley and CMU's Boss demonstrated that GPS-guided planning augmented by obstacle-avoidance perception could navigate tens of kilometres of unprepared terrain and structured urban streets respectively. These competitions established the modular sense-plan-act pipeline — a separate [[Autonomous Driving Perception]] module produces structured scene descriptions, a [[Motion Planning]] module selects safe manoeuvres, and a [[Model Predictive Control]] or PID controller executes them — an architecture that remained dominant until approximately 2022 and that is still used by Waymo, Mobileye, and most ADAS suppliers.
+Autonomous driving perception is the technical discipline that bridges raw sensor physics and the high-level scene representations required for safe vehicle navigation. The field emerged from classical [[Computer Vision]] and [[Robotics]] in the 1980s, when the DARPA Autonomous Land Vehicle programme and Carnegie Mellon's ALVINN neural-network steering controller (Pomerleau, 1989) demonstrated that [[Neural Network]] models could learn sensorimotor associations from camera images entirely from [[Training Data]] without hand-coded feature detectors. These pioneering systems were fragile, operating only in highly constrained environments at low speeds, but they established the paradigm of learned perceptual policies that would dominate the field three decades later. The ALVINN architecture — a single 3-layer network mapping 30×32 pixel camera images to 30 discrete steering commands — was the direct intellectual ancestor of the end-to-end systems shipped by [[Autonomous Driving]] companies such as Tesla and Wayve in 2024–2026.
 
-  The [[Deep Learning]] revolution transformed AV perception dramatically after 2012. The ImageNet moment (Krizhevsky, Sutskever, Hinton 2012) demonstrated that deep [[Convolutional Neural Network]] architectures could surpass human-level accuracy on large-scale [[Image Classification]], and within two years research groups were applying CNNs to pedestrian [[Object Detection]], lane marking [[Semantic Segmentation]], and traffic sign recognition with similar gains. The KITTI benchmark (Geiger et al., Karlsruhe Institute of Technology, 2012) established standardised evaluation protocols for stereo depth estimation, 3D object detection, tracking, and segmentation that enabled rapid progress through open comparison. By 2017–2018, the combination of large annotated driving datasets (KITTI, nuScenes, Waymo Open Dataset), high-performance rotating [[Lidar]] sensors (Velodyne HDL-64E at $75,000/unit in 2016, falling to sub-$1,000 for solid-state units by 2024), and [[GPU Compute]]-accelerated training had produced [[Autonomous Driving Perception]] systems competitive with human-level performance in standard driving scenarios. Today, perception remains the most research-intensive component of the AV stack, with thousands of annual publications advancing detection accuracy, cross-modal [[Sensor Fusion]] architectures, robustness to adverse weather conditions, and uncertainty quantification for [[Functional Safety]].
+The DARPA Grand Challenge (2004–2005) and Urban Challenge (2007) catalysed a generation of academic and industry teams combining [[GNSS]], laser range finders, probabilistic localisation (simultaneously developed as [[Simultaneous Localisation and Mapping]] algorithms), and early [[Machine Learning]] for obstacle detection. Stanford's Stanley and CMU's Boss demonstrated that GPS-guided planning augmented by obstacle-avoidance perception could navigate tens of kilometres of unprepared terrain and structured urban streets respectively. These competitions established the modular sense-plan-act pipeline — a separate [[Autonomous Driving Perception]] module produces structured scene descriptions, a [[Motion Planning]] module selects safe manoeuvres, and a [[Model Predictive Control]] or PID controller executes them — an architecture that remained dominant until approximately 2022 and that is still used by Waymo, Mobileye, and most ADAS suppliers.
 
-  The transition from modular 2D camera-based perception to unified 3D multi-modal representations was driven by two parallel developments: the maturation of automotive [[Lidar]] (falling from $75,000 to below $500 per unit between 2016 and 2024 for solid-state designs such as Luminar Iris and Innoviz Pro), and the discovery that [[Transformer Architecture]] cross-attention layers could fuse camera and LiDAR features in a shared Bird's Eye View (BEV) representation space without alignment loss. The BEV paradigm — projecting all sensor data into a unified ego-centric top-down metric grid — resolved a long-standing problem: 2D camera detections and 3D LiDAR point clouds had previously been fused only at the object-list level (late fusion), discarding complementary information. Feature-level BEV fusion (BEVFusion, MIT CSAIL, 2022) achieves substantially higher accuracy by allowing the network to learn which sensor modality is most reliable for each spatial region and object class. The same BEV representation is directly consumed by [[Motion Planning]] modules as a probabilistic occupancy map, eliminating the need for explicit coordinate transforms between perception and planning stages.
+The [[Deep Learning]] revolution transformed AV perception dramatically after 2012. The ImageNet moment (Krizhevsky, Sutskever, Hinton 2012) demonstrated that deep [[Convolutional Neural Network]] architectures could surpass human-level accuracy on large-scale [[Image Classification]], and within two years research groups were applying CNNs to pedestrian [[Object Detection]], lane marking [[Semantic Segmentation]], and traffic sign recognition with similar gains. The KITTI benchmark (Geiger et al., Karlsruhe Institute of Technology, 2012) established standardised evaluation protocols for stereo depth estimation, 3D object detection, tracking, and segmentation that enabled rapid progress through open comparison. By 2017–2018, the combination of large annotated driving datasets (KITTI, nuScenes, Waymo Open Dataset), high-performance rotating [[Lidar]] sensors (Velodyne HDL-64E at $75,000/unit in 2016, falling to sub-$1,000 for solid-state units by 2024), and [[GPU Compute]]-accelerated training had produced [[Autonomous Driving Perception]] systems competitive with human-level performance in standard driving scenarios. Today, perception remains the most research-intensive component of the AV stack, with thousands of annual publications advancing detection accuracy, cross-modal [[Sensor Fusion]] architectures, robustness to adverse weather conditions, and uncertainty quantification for [[Functional Safety]].
 
-  ## Components / Architecture
+The transition from modular 2D camera-based perception to unified 3D multi-modal representations was driven by two parallel developments: the maturation of automotive [[Lidar]] (falling from $75,000 to below $500 per unit between 2016 and 2024 for solid-state designs such as Luminar Iris and Innoviz Pro), and the discovery that [[Transformer Architecture]] cross-attention layers could fuse camera and LiDAR features in a shared Bird's Eye View (BEV) representation space without alignment loss. The BEV paradigm — projecting all sensor data into a unified ego-centric top-down metric grid — resolved a long-standing problem: 2D camera detections and 3D LiDAR point clouds had previously been fused only at the object-list level (late fusion), discarding complementary information. Feature-level BEV fusion (BEVFusion, MIT CSAIL, 2022) achieves substantially higher accuracy by allowing the network to learn which sensor modality is most reliable for each spatial region and object class. The same BEV representation is directly consumed by [[Motion Planning]] modules as a probabilistic occupancy map, eliminating the need for explicit coordinate transforms between perception and planning stages.
 
-  **Camera Perception Pipeline**
+## Components / Architecture
 
-  Camera-based [[Computer Vision]] is the highest-information-density sensor input available to an AV. Modern AV camera suites use 6–8 [[Camera Sensor]]s covering 360° surround, a long-range forward camera (typically 35° FOV at 2MP resolution) for motorway lane-keeping, and optional fisheye near-field cameras for parking. The backbone [[Feature Extraction]] network — typically a ResNet-50/101, EfficientDet, or Swin [[Transformer Architecture]] — converts raw camera images to dense spatial feature maps at multiple scales. These features are passed to task-specific heads:
+**Camera Perception Pipeline**
 
-  - [[Object Detection]] heads (YOLO, DETR, Deformable DETR) produce 2D axis-aligned bounding boxes with class scores for vehicles, pedestrians, cyclists, traffic cones, and other dynamic agents
-  - [[Semantic Segmentation]] heads (DeepLabV3+, SegFormer) classify each pixel into road surface, lane marking, kerb, vegetation, sky, building — providing the free-space map for [[Motion Planning]]
-  - [[Depth Estimation]] heads (MiDaS, DepthAnything, DPT) infer per-pixel metric depth from monocular images using scale-ambiguity-aware training; stereo cameras eliminate this ambiguity by triangulation
-  - Panoptic segmentation combines semantic (background "stuff") and instance (individual "things") understanding in a single decoder, enabling consistent tracking of individual dynamic agents
-  - Temporal fusion via cross-frame attention (incorporating multiple historical frames) improves detection of occluded, slow-moving, or partially visible objects that are ambiguous in any single frame
+Camera-based [[Computer Vision]] is the highest-information-density sensor input available to an AV. Modern AV camera suites use 6–8 [[Camera Sensor]]s covering 360° surround, a long-range forward camera (typically 35° FOV at 2MP resolution) for motorway lane-keeping, and optional fisheye near-field cameras for parking. The backbone [[Feature Extraction]] network — typically a ResNet-50/101, EfficientDet, or Swin [[Transformer Architecture]] — converts raw camera images to dense spatial feature maps at multiple scales. These features are passed to task-specific heads:
+
+- [[Object Detection]] heads (YOLO, DETR, Deformable DETR) produce 2D axis-aligned bounding boxes with class scores for vehicles, pedestrians, cyclists, traffic cones, and other dynamic agents
+- [[Semantic Segmentation]] heads (DeepLabV3+, SegFormer) classify each pixel into road surface, lane marking, kerb, vegetation, sky, building — providing the free-space map for [[Motion Planning]]
+- [[Depth Estimation]] heads (MiDaS, DepthAnything, DPT) infer per-pixel metric depth from monocular images using scale-ambiguity-aware training; stereo cameras eliminate this ambiguity by triangulation
+- Panoptic segmentation combines semantic (background "stuff") and instance (individual "things") understanding in a single decoder, enabling consistent tracking of individual dynamic agents
+- Temporal fusion via cross-frame attention (incorporating multiple historical frames) improves detection of occluded, slow-moving, or partially visible objects that are ambiguous in any single frame
 
   **LiDAR Perception Pipeline**
 
   [[Lidar]] sensors emit pulsed laser beams and measure return times to construct sparse 3D [[Point Cloud]] representations of the environment at 10–20 Hz with centimetre-level range accuracy up to 200m. Rotating mechanical LiDAR (Velodyne HDL-64E, Ouster OS2-128) provide dense 360° coverage; solid-state LiDAR (Luminar Iris, Innoviz Pro, Valeo SCALA) offer longer range and lower cost with a fixed field of view. LiDAR [[Point Cloud]] processing for [[Object Detection]] proceeds through:
 
-  - Pre-processing: ground plane removal (RANSAC, plane fitting), intensity normalisation, spatial quantisation into voxels or pillars
-  - VoxelNet (2018): pioneered end-to-end voxel-based [[Deep Learning]] for 3D [[Object Detection]], using a voxel feature encoding layer followed by 3D sparse convolutions and a region proposal network
-  - SECOND (2018): introduced sparse 3D convolutions via hash-map based indexing, making VoxelNet computationally tractable for real-time inference on automotive SoCs
-  - PointPillars (2019): simplified LiDAR representation to 2D pillars (vertical columns over a BEV grid) with pseudo-image 2D [[Convolutional Neural Network]] processing, enabling 62 Hz inference on a single GPU
-  - CenterPoint (2021): reformulates 3D [[Object Detection]] as a heatmap-based center-point detection followed by property regression, enabling rotation-invariant detections and state-of-the-art nuScenes performance
-  - Temporal LiDAR fusion: concatenating voxel features across 5–10 historical frames dramatically improves detection of stationary low-reflectivity objects and occlusion recovery
+- Pre-processing: ground plane removal (RANSAC, plane fitting), intensity normalisation, spatial quantisation into voxels or pillars
+- VoxelNet (2018): pioneered end-to-end voxel-based [[Deep Learning]] for 3D [[Object Detection]], using a voxel feature encoding layer followed by 3D sparse convolutions and a region proposal network
+- SECOND (2018): introduced sparse 3D convolutions via hash-map based indexing, making VoxelNet computationally tractable for real-time inference on automotive SoCs
+- PointPillars (2019): simplified LiDAR representation to 2D pillars (vertical columns over a BEV grid) with pseudo-image 2D [[Convolutional Neural Network]] processing, enabling 62 Hz inference on a single GPU
+- CenterPoint (2021): reformulates 3D [[Object Detection]] as a heatmap-based center-point detection followed by property regression, enabling rotation-invariant detections and state-of-the-art nuScenes performance
+- Temporal LiDAR fusion: concatenating voxel features across 5–10 historical frames dramatically improves detection of stationary low-reflectivity objects and occlusion recovery
 
   **Radar Perception**
 
@@ -122,30 +122,30 @@ The subsystem of an autonomous vehicle responsible for interpreting sensor data 
 
   The Bird's Eye View (BEV) representation is an ego-centric top-down metric grid — typically 100m × 100m at 0.1m/cell resolution — onto which features from all sensor modalities are projected and concatenated. This unified spatial coordinate system enables cross-modal [[Feature Extraction]] and direct consumption by grid-based [[Motion Planning]] algorithms. Three families of camera-to-BEV lifting approaches have emerged:
 
-  - Geometry-based: stereo triangulation or depth completion from sparse LiDAR; accurate but requires tight sensor calibration
-  - Implicit-depth distribution (Lift-Splat-Shoot, Philion and Fidler, NVIDIA/University of Toronto, 2020): each image pixel is assigned a learned depth distribution; image features are "lifted" into 3D by scattering along the depth dimension; "splat" pools these 3D features onto the BEV grid via orthographic projection
-  - [[Transformer Architecture]]-based attention (BEVFormer, Shanghai AI Lab, 2022): learnable BEV grid queries attend to image feature maps using deformable spatial cross-attention, learning which image regions contribute most to each BEV cell; achieves 56.9% NDS on nuScenes — matching LiDAR-only baselines using cameras alone; spatiotemporal extension enables temporal feature propagation via recurrent BEV queries
-  - BEVFusion (MIT CSAIL, 2022): concatenates LiDAR BEV features with camera BEV features in a shared channel dimension; joint decoding heads for 3D [[Object Detection]], [[Semantic Segmentation]], and BEV [[HD Maps]] prediction achieve new state-of-the-art across all tasks simultaneously
+- Geometry-based: stereo triangulation or depth completion from sparse LiDAR; accurate but requires tight sensor calibration
+- Implicit-depth distribution (Lift-Splat-Shoot, Philion and Fidler, NVIDIA/University of Toronto, 2020): each image pixel is assigned a learned depth distribution; image features are "lifted" into 3D by scattering along the depth dimension; "splat" pools these 3D features onto the BEV grid via orthographic projection
+- [[Transformer Architecture]]-based attention (BEVFormer, Shanghai AI Lab, 2022): learnable BEV grid queries attend to image feature maps using deformable spatial cross-attention, learning which image regions contribute most to each BEV cell; achieves 56.9% NDS on nuScenes — matching LiDAR-only baselines using cameras alone; spatiotemporal extension enables temporal feature propagation via recurrent BEV queries
+- BEVFusion (MIT CSAIL, 2022): concatenates LiDAR BEV features with camera BEV features in a shared channel dimension; joint decoding heads for 3D [[Object Detection]], [[Semantic Segmentation]], and BEV [[HD Maps]] prediction achieve new state-of-the-art across all tasks simultaneously
 
   **Occupancy Prediction Networks**
 
   Classical AV perception stacks require [[Object Detection]] to enumerate a finite set of object categories (car, truck, pedestrian, cyclist, cone). Occupancy prediction removes this constraint by predicting a dense semantic label for every voxel in the surrounding volume: free space, occupied by known category, or occupied by unknown obstacle. This representation is richer for [[Motion Planning]] — occupancy grids are the native format consumed by grid-based planners — and handles arbitrary obstacle shapes and categories not present in the [[Training Data]].
 
-  - Tesla Occupancy Network (2022): first production deployment; processes camera BEV features to output per-voxel occupancy probability; enables detection of shopping trolleys, low-height debris, and other out-of-distribution obstacles that confound bounding-box detectors
-  - SurroundOcc (2023): multi-camera 3D occupancy prediction from [[Transformer Architecture]] BEV encoding trained on nuScenes-Occupancy annotations
-  - OpenOccupancy and OccNet (2023): academic baselines demonstrating that occupancy prediction substantially outperforms bounding-box detection for mAP on the nuScenes occupancy benchmark
-  - UniOcc (2024): jointly predicts occupancy and 3D scene flow (velocity fields per voxel), enabling [[Behaviour Prediction]] and [[Motion Planning]] integration in a single forward pass
-  - Information Fusion review (Xu et al., 2025): surveys 150+ occupancy methods across voxel resolution, sensor modality, temporal modelling, and computational efficiency dimensions
+- Tesla Occupancy Network (2022): first production deployment; processes camera BEV features to output per-voxel occupancy probability; enables detection of shopping trolleys, low-height debris, and other out-of-distribution obstacles that confound bounding-box detectors
+- SurroundOcc (2023): multi-camera 3D occupancy prediction from [[Transformer Architecture]] BEV encoding trained on nuScenes-Occupancy annotations
+- OpenOccupancy and OccNet (2023): academic baselines demonstrating that occupancy prediction substantially outperforms bounding-box detection for mAP on the nuScenes occupancy benchmark
+- UniOcc (2024): jointly predicts occupancy and 3D scene flow (velocity fields per voxel), enabling [[Behaviour Prediction]] and [[Motion Planning]] integration in a single forward pass
+- Information Fusion review (Xu et al., 2025): surveys 150+ occupancy methods across voxel resolution, sensor modality, temporal modelling, and computational efficiency dimensions
 
   **[[Object Tracking]] and Multi-Object Tracking**
 
   Perception systems must not only detect objects but maintain consistent identities and predict short-term trajectories across frames. Multi-Object Tracking (MOT) associates detections from frame t to tracks established in frames t-1, t-2, ... using [[Bayesian Inference]] (Kalman filter state estimation) and Hungarian algorithm assignment. Key methods:
 
-  - SORT (Simple Online and Realtime Tracking, 2016): Kalman filter for velocity-based motion prediction, IoU-based assignment; high speed at moderate accuracy
-  - DeepSORT (2017): extends SORT with deep appearance features from a re-identification CNN; robust to occlusion
-  - CenterTrack (2020): jointly detects and tracks in a single-stage heatmap network by predicting per-object displacements to previous-frame detections
-  - AB3DMOT (2020): 3D MOT operating on LiDAR bounding boxes with 3D Kalman filters; maintains metric-space track state for direct consumption by trajectory predictors
-  - Velocity from occupancy flow: UniOcc-style flow fields provide per-voxel velocity directly from [[Deep Learning]], bypassing explicit association
+- SORT (Simple Online and Realtime Tracking, 2016): Kalman filter for velocity-based motion prediction, IoU-based assignment; high speed at moderate accuracy
+- DeepSORT (2017): extends SORT with deep appearance features from a re-identification CNN; robust to occlusion
+- CenterTrack (2020): jointly detects and tracks in a single-stage heatmap network by predicting per-object displacements to previous-frame detections
+- AB3DMOT (2020): 3D MOT operating on LiDAR bounding boxes with 3D Kalman filters; maintains metric-space track state for direct consumption by trajectory predictors
+- Velocity from occupancy flow: UniOcc-style flow fields provide per-voxel velocity directly from [[Deep Learning]], bypassing explicit association
 
   **[[HD Maps]] and Online Mapping**
 
@@ -184,33 +184,35 @@ The subsystem of an autonomous vehicle responsible for interpreting sensor data 
   UniAD (Hu et al., Shanghai AI Lab, CVPR 2023 Best Paper) extended the BEV perception paradigm to a unified end-to-end [[Deep Learning]] network jointly addressing [[Object Detection]], [[Object Tracking]], trajectory [[Behaviour Prediction]], occupancy prediction, and [[Motion Planning]] — demonstrating that joint optimisation across all tasks substantially improves each individual task compared to modular pipelines. The information fusion perspective on 3D occupancy methods was surveyed comprehensively by Xu et al. (2025), cataloguing 150+ methods across voxel resolution, [[Sensor Fusion]] modality, temporal modelling approach, and computational efficiency.
 
   **Key Research Groups**
-  - Waymo Research (Mountain View/Seattle): Waymo Open Dataset; CenterPoint; large-scale perception evaluation
-  - Tesla AI (Palo Alto): Occupancy Network (2022); end-to-end FSD v12 [[Neural Network]] architecture; HydraNet multi-task backbone
-  - Mobileye Research (Jerusalem/Munich): Responsibility-Sensitive Safety; Free Space estimation; EyeQ SoC neural accelerator
-  - NVIDIA DRIVE Labs (Santa Clara): Lift-Splat-Shoot; DRIVE Sim; DRIVE Orin platform for [[Autonomous Driving Perception]] inference
-  - MIT CSAIL (Cambridge, Massachusetts): BEVFusion; cooperative perception; adversarial robustness
-  - Shanghai AI Lab / OpenDriveLab: BEVFormer, UniAD, DriveLM, OpenOccupancy — most cited recent BEV works
-  - Oxford Active Vision Lab / Applied AI Lab: adversarial robustness of [[Semantic Segmentation]]; RefineNet efficient segmentation
-  - Cambridge Machine Intelligence Lab: uncertainty-aware [[Depth Estimation]] (Kendall, Gal); embodied AI; world models for [[Autonomous Driving]]
-  - Carnegie Mellon Robotics Institute: SLAM and probabilistic [[Robotics]] foundations; nuScenes team alumni
+
+- Waymo Research (Mountain View/Seattle): Waymo Open Dataset; CenterPoint; large-scale perception evaluation
+- Tesla AI (Palo Alto): Occupancy Network (2022); end-to-end FSD v12 [[Neural Network]] architecture; HydraNet multi-task backbone
+- Mobileye Research (Jerusalem/Munich): Responsibility-Sensitive Safety; Free Space estimation; EyeQ SoC neural accelerator
+- NVIDIA DRIVE Labs (Santa Clara): Lift-Splat-Shoot; DRIVE Sim; DRIVE Orin platform for [[Autonomous Driving Perception]] inference
+- MIT CSAIL (Cambridge, Massachusetts): BEVFusion; cooperative perception; adversarial robustness
+- Shanghai AI Lab / OpenDriveLab: BEVFormer, UniAD, DriveLM, OpenOccupancy — most cited recent BEV works
+- Oxford Active Vision Lab / Applied AI Lab: adversarial robustness of [[Semantic Segmentation]]; RefineNet efficient segmentation
+- Cambridge Machine Intelligence Lab: uncertainty-aware [[Depth Estimation]] (Kendall, Gal); embodied AI; world models for [[Autonomous Driving]]
+- Carnegie Mellon Robotics Institute: SLAM and probabilistic [[Robotics]] foundations; nuScenes team alumni
 
   **Major Benchmark Datasets**
-  - KITTI (Geiger et al., KIT, 2012): stereo [[Depth Estimation]], optical flow, 3D [[Object Detection]], tracking, [[Semantic Segmentation]] — the original standardised AV benchmark, 15,000 driving frames
-  - nuScenes (Caesar et al., Motional, 2020): 700 scenes, 23 object classes, 3D bounding boxes, LiDAR [[Point Cloud]], radar, camera; nuScenes Detection Score (NDS) is the dominant [[Object Detection]] metric
-  - Waymo Open Dataset (2020): 1,150 scenes at 200m LiDAR range; highest-density 3D annotation; camera-LiDAR synchronised
-  - Argoverse 2 (Argo AI, 2021): trajectory [[Behaviour Prediction]] and mapping focus; 1,000 driving hours; diverse US urban geography
-  - OpenOccupancy (Wang et al., 2023): first large-scale 3D occupancy annotation on nuScenes; enables occupancy prediction benchmarking
-  - nuPlan (Caesar et al., Motional, 2021): reactive closed-loop [[Motion Planning]] benchmark; 1,282 hours of expert driving logs
+
+- KITTI (Geiger et al., KIT, 2012): stereo [[Depth Estimation]], optical flow, 3D [[Object Detection]], tracking, [[Semantic Segmentation]] — the original standardised AV benchmark, 15,000 driving frames
+- nuScenes (Caesar et al., Motional, 2020): 700 scenes, 23 object classes, 3D bounding boxes, LiDAR [[Point Cloud]], radar, camera; nuScenes Detection Score (NDS) is the dominant [[Object Detection]] metric
+- Waymo Open Dataset (2020): 1,150 scenes at 200m LiDAR range; highest-density 3D annotation; camera-LiDAR synchronised
+- Argoverse 2 (Argo AI, 2021): trajectory [[Behaviour Prediction]] and mapping focus; 1,000 driving hours; diverse US urban geography
+- OpenOccupancy (Wang et al., 2023): first large-scale 3D occupancy annotation on nuScenes; enables occupancy prediction benchmarking
+- nuPlan (Caesar et al., Motional, 2021): reactive closed-loop [[Motion Planning]] benchmark; 1,282 hours of expert driving logs
 
   ## Key Terminology
 
-  - **Operational Design Domain (ODD)**: the set of conditions (geography, weather, speed range, road type, time of day) within which an [[Autonomous Driving Perception]] system is certified to operate safely; perception must degrade gracefully at ODD boundaries
-  - **Bird's Eye View (BEV)**: an ego-centric top-down coordinate system in which all sensor modalities are expressed; the dominant spatial representation for modern [[Autonomous Driving Perception]] systems because it naturally aligns with [[Motion Planning]] grid representations
-  - **nuScenes Detection Score (NDS)**: composite [[Object Detection]] metric weighting mean Average Precision (mAP) equally with velocity, attribute, and orientation accuracy; standard metric for comparing AV [[Autonomous Driving Perception]] systems on the nuScenes benchmark
-  - **Epistemic uncertainty**: uncertainty arising from insufficient [[Training Data]] or model capacity; reducible in principle by more data; relevant to long-tail edge case detection in [[Autonomous Driving Perception]]
-  - **Aleatoric uncertainty**: irreducible uncertainty from sensor noise and ambiguous observations (e.g., occluded pedestrian behind a parked vehicle); must be propagated to [[Motion Planning]] for safe planning under observation uncertainty
-  - **Closed-world assumption**: the assumption that all obstacle categories present at inference are represented in [[Training Data]]; violated in practice (unusual vehicles, novel debris, country-specific road markings); occupancy prediction networks explicitly relax this assumption
-  - **Minimal Risk Condition (MRC)**: the safe state an [[Autonomous Driving]] system must achieve if it cannot continue operating safely (typically: pull over and stop); triggered by [[Functional Safety]] monitors detecting critical perception degradation
+- **Operational Design Domain (ODD)**: the set of conditions (geography, weather, speed range, road type, time of day) within which an [[Autonomous Driving Perception]] system is certified to operate safely; perception must degrade gracefully at ODD boundaries
+- **Bird's Eye View (BEV)**: an ego-centric top-down coordinate system in which all sensor modalities are expressed; the dominant spatial representation for modern [[Autonomous Driving Perception]] systems because it naturally aligns with [[Motion Planning]] grid representations
+- **nuScenes Detection Score (NDS)**: composite [[Object Detection]] metric weighting mean Average Precision (mAP) equally with velocity, attribute, and orientation accuracy; standard metric for comparing AV [[Autonomous Driving Perception]] systems on the nuScenes benchmark
+- **Epistemic uncertainty**: uncertainty arising from insufficient [[Training Data]] or model capacity; reducible in principle by more data; relevant to long-tail edge case detection in [[Autonomous Driving Perception]]
+- **Aleatoric uncertainty**: irreducible uncertainty from sensor noise and ambiguous observations (e.g., occluded pedestrian behind a parked vehicle); must be propagated to [[Motion Planning]] for safe planning under observation uncertainty
+- **Closed-world assumption**: the assumption that all obstacle categories present at inference are represented in [[Training Data]]; violated in practice (unusual vehicles, novel debris, country-specific road markings); occupancy prediction networks explicitly relax this assumption
+- **Minimal Risk Condition (MRC)**: the safe state an [[Autonomous Driving]] system must achieve if it cannot continue operating safely (typically: pull over and stop); triggered by [[Functional Safety]] monitors detecting critical perception degradation
 
   ## Current Landscape (2026)
 
@@ -240,22 +242,22 @@ The subsystem of an autonomous vehicle responsible for interpreting sensor data 
 
   **Academic Research**
 
-  - University of Oxford: the Dynamic Vision and Robotics Lab and the Applied Artificial Intelligence Lab focus on real-time [[Semantic Segmentation]] (RefineNet, ERFNet architectures for efficient [[Convolutional Neural Network]] segmentation), 3D reconstruction, [[Object Detection]] adversarial robustness, and uncertainty-aware [[Deep Learning]] for [[Computer Vision]]. Oxa (formerly Oxbotica) spun out from Oxford Mobile Robotics Group and continues close research collaboration. The Active Vision Lab maintains research in active [[Object Tracking]] and selective visual attention
-  - University of Cambridge: Wayve was co-founded (2017) by Alex Kendall during his PhD at Cambridge; Cambridge's Machine Intelligence Laboratory continues research in monocular [[Depth Estimation]] — Kendall and Gal's pioneering 2017 NeurIPS paper decomposed [[Deep Learning]] uncertainty into aleatoric (sensor noise, irreducible) and epistemic (training data gap, reducible) components, which is now foundational to [[Functional Safety]] uncertainty propagation in AV stacks — embodied AI, world models, and [[Reinforcement Learning]] from demonstrations
-  - University of Edinburgh: the Institute of Perception, Action and Behaviour (IPAB) works on probabilistic 3D scene understanding, online [[Simultaneous Localisation and Mapping]], long-term [[Robotics]] autonomy, and active [[Object Tracking]] in dynamic environments. Five AI (acquired by Bosch 2021), which produced open-source urban driving datasets, was Edinburgh-headquartered
-  - University of Leeds: research on vehicle and pedestrian [[Object Detection]] in adverse weather conditions (rain, fog, low winter sun), ADAS evaluation under UK-specific driving conditions (left-hand traffic, UK road markings, roundabout-heavy road network), and [[Sensor Fusion]] degradation modelling. The Institute for Transport Studies provides transport engineering context for AV deployment policy
-  - University of Newcastle: research on connected and [[Autonomous Driving]] systems; V2X [[Communication]] infrastructure; Northern English freight corridor AV deployment feasibility studies connected to the North East Vehicle Autonomous Corridor initiative
-  - University of Sheffield: embedded AI for automotive [[Autonomous Driving Perception]]; neuromorphic event camera research for high-dynamic-range [[Computer Vision]] in low-light driving scenarios; [[Neural Network]] compression for deployment on automotive SoCs
-  - Imperial College London: real-time [[Lidar]] [[Point Cloud]] processing on [[Edge Computing]] hardware; [[Neural Network]] quantisation and pruning for automotive SoC deployment; [[Functional Safety]]-aware [[Deep Learning]] model verification
+- University of Oxford: the Dynamic Vision and Robotics Lab and the Applied Artificial Intelligence Lab focus on real-time [[Semantic Segmentation]] (RefineNet, ERFNet architectures for efficient [[Convolutional Neural Network]] segmentation), 3D reconstruction, [[Object Detection]] adversarial robustness, and uncertainty-aware [[Deep Learning]] for [[Computer Vision]]. Oxa (formerly Oxbotica) spun out from Oxford Mobile Robotics Group and continues close research collaboration. The Active Vision Lab maintains research in active [[Object Tracking]] and selective visual attention
+- University of Cambridge: Wayve was co-founded (2017) by Alex Kendall during his PhD at Cambridge; Cambridge's Machine Intelligence Laboratory continues research in monocular [[Depth Estimation]] — Kendall and Gal's pioneering 2017 NeurIPS paper decomposed [[Deep Learning]] uncertainty into aleatoric (sensor noise, irreducible) and epistemic (training data gap, reducible) components, which is now foundational to [[Functional Safety]] uncertainty propagation in AV stacks — embodied AI, world models, and [[Reinforcement Learning]] from demonstrations
+- University of Edinburgh: the Institute of Perception, Action and Behaviour (IPAB) works on probabilistic 3D scene understanding, online [[Simultaneous Localisation and Mapping]], long-term [[Robotics]] autonomy, and active [[Object Tracking]] in dynamic environments. Five AI (acquired by Bosch 2021), which produced open-source urban driving datasets, was Edinburgh-headquartered
+- University of Leeds: research on vehicle and pedestrian [[Object Detection]] in adverse weather conditions (rain, fog, low winter sun), ADAS evaluation under UK-specific driving conditions (left-hand traffic, UK road markings, roundabout-heavy road network), and [[Sensor Fusion]] degradation modelling. The Institute for Transport Studies provides transport engineering context for AV deployment policy
+- University of Newcastle: research on connected and [[Autonomous Driving]] systems; V2X [[Communication]] infrastructure; Northern English freight corridor AV deployment feasibility studies connected to the North East Vehicle Autonomous Corridor initiative
+- University of Sheffield: embedded AI for automotive [[Autonomous Driving Perception]]; neuromorphic event camera research for high-dynamic-range [[Computer Vision]] in low-light driving scenarios; [[Neural Network]] compression for deployment on automotive SoCs
+- Imperial College London: real-time [[Lidar]] [[Point Cloud]] processing on [[Edge Computing]] hardware; [[Neural Network]] quantisation and pruning for automotive SoC deployment; [[Functional Safety]]-aware [[Deep Learning]] model verification
 
   **Industry and Policy**
 
-  - Wayve (London, founded 2017 by Cambridge PhD alumni): pioneer of end-to-end [[Deep Learning]] for [[Autonomous Driving Perception]]; received £1 billion+ in funding from Microsoft, SoftBank, and NVIDIA; LINGO-2 multimodal reasoning model provides language-grounded explanations of [[Autonomous Driving Perception]] decisions; Uber partnership for L4 London road trials announced June 2025; plans first UK commercial robotaxi operations under AV Act 2026
-  - Oxa (Oxford, formerly Oxbotica): L4 [[Autonomous Driving Perception]] and planning stack for logistics, ports, and airports; SELENIUM [[Simultaneous Localisation and Mapping]] engine; LOCUS mapping; Gatwick Airport pilot; Ocado autonomous fulfilment vehicles; CAM Testbed UK participant
-  - Five AI (Edinburgh, acquired by Bosch 2021): developed open-source AV research datasets for Scottish and UK urban driving; Bosch integration into ADAS perception algorithm development
-  - Mobileye UK R&D (Sheffield/Coventry): ADAS [[Object Detection]] and [[Semantic Segmentation]] silicon development; EyeQ SoC neural accelerator for [[Convolutional Neural Network]] inference
-  - UK Government infrastructure: Zenzic public-private partnership for AV testing coordination; CAM Testbed UK at MIRA (Nuneaton), Millbrook Proving Ground (Bedfordshire), and AutoDrive corridors (Milton Keynes, Coventry) provide structured [[Autonomous Driving Perception]] evaluation environments; Project Synergy tested [[Autonomous Driving]] in Manchester and Leeds urban environments
-  - The UK's Automated Vehicles Act 2024 provides one of the most comprehensive [[Autonomous Driving]] regulatory frameworks globally, covering both "user in charge" (L3-equivalent [[Autonomous Driving Perception]] with driver monitoring) and "no user in charge" (L4, fully autonomous [[Autonomous Driving Perception]] without human backup) operating modes, with vehicle authorisation through the ASDE regime requiring ongoing [[Functional Safety]] and perception performance demonstration
+- Wayve (London, founded 2017 by Cambridge PhD alumni): pioneer of end-to-end [[Deep Learning]] for [[Autonomous Driving Perception]]; received £1 billion+ in funding from Microsoft, SoftBank, and NVIDIA; LINGO-2 multimodal reasoning model provides language-grounded explanations of [[Autonomous Driving Perception]] decisions; Uber partnership for L4 London road trials announced June 2025; plans first UK commercial robotaxi operations under AV Act 2026
+- Oxa (Oxford, formerly Oxbotica): L4 [[Autonomous Driving Perception]] and planning stack for logistics, ports, and airports; SELENIUM [[Simultaneous Localisation and Mapping]] engine; LOCUS mapping; Gatwick Airport pilot; Ocado autonomous fulfilment vehicles; CAM Testbed UK participant
+- Five AI (Edinburgh, acquired by Bosch 2021): developed open-source AV research datasets for Scottish and UK urban driving; Bosch integration into ADAS perception algorithm development
+- Mobileye UK R&D (Sheffield/Coventry): ADAS [[Object Detection]] and [[Semantic Segmentation]] silicon development; EyeQ SoC neural accelerator for [[Convolutional Neural Network]] inference
+- UK Government infrastructure: Zenzic public-private partnership for AV testing coordination; CAM Testbed UK at MIRA (Nuneaton), Millbrook Proving Ground (Bedfordshire), and AutoDrive corridors (Milton Keynes, Coventry) provide structured [[Autonomous Driving Perception]] evaluation environments; Project Synergy tested [[Autonomous Driving]] in Manchester and Leeds urban environments
+- The UK's Automated Vehicles Act 2024 provides one of the most comprehensive [[Autonomous Driving]] regulatory frameworks globally, covering both "user in charge" (L3-equivalent [[Autonomous Driving Perception]] with driver monitoring) and "no user in charge" (L4, fully autonomous [[Autonomous Driving Perception]] without human backup) operating modes, with vehicle authorisation through the ASDE regime requiring ongoing [[Functional Safety]] and perception performance demonstration
 
   ## Future Directions (2026–2030)
 
@@ -331,33 +333,34 @@ The subsystem of an autonomous vehicle responsible for interpreting sensor data 
   **nuScenes [[Object Detection]] Benchmark (3D Detection, NDS metric)**
 
   The nuScenes Detection Score (NDS) is the standard composite metric combining mAP, velocity, orientation, and attribute accuracy. Selected published results (as of mid-2024):
-  - LiDAR-only CenterPoint (Waymo/UT Austin, 2021): NDS 65.5% on nuScenes test set
-  - Camera-only BEVFormer v2 (Shanghai AI Lab, 2022): NDS 56.9% — matching [[Lidar]]-only baselines with cameras alone
-  - Camera+LiDAR BEVFusion (MIT CSAIL, 2022): NDS 70.2% — state-of-the-art at publication
-  - Voxel Mamba (2024): NDS 74.2% on nuScenes — highest published single-model result
-  - LION (2024): leading method for car, truck, bus, pedestrian, cyclist sub-categories on nuScenes
+
+- LiDAR-only CenterPoint (Waymo/UT Austin, 2021): NDS 65.5% on nuScenes test set
+- Camera-only BEVFormer v2 (Shanghai AI Lab, 2022): NDS 56.9% — matching [[Lidar]]-only baselines with cameras alone
+- Camera+LiDAR BEVFusion (MIT CSAIL, 2022): NDS 70.2% — state-of-the-art at publication
+- Voxel Mamba (2024): NDS 74.2% on nuScenes — highest published single-model result
+- LION (2024): leading method for car, truck, bus, pedestrian, cyclist sub-categories on nuScenes
 
   **nuScenes [[Semantic Segmentation]] Benchmark (BEV, mIoU)**
 
-  - LSS baseline (Philion & Fidler, 2020): 32.1% mIoU BEV [[Semantic Segmentation]]
-  - BEVFusion (MIT, 2022): 62.7% mIoU — large improvement from [[Sensor Fusion]]
-  - BEVFusion-ROS online variant: 60.2% mIoU at real-time inference speed
+- LSS baseline (Philion & Fidler, 2020): 32.1% mIoU BEV [[Semantic Segmentation]]
+- BEVFusion (MIT, 2022): 62.7% mIoU — large improvement from [[Sensor Fusion]]
+- BEVFusion-ROS online variant: 60.2% mIoU at real-time inference speed
 
   **nuScenes Occupancy Prediction (occupancy mIoU)**
 
-  - MonoScene (camera-only baseline, 2022): 6.1% mIoU on SemanticKITTI occupancy
-  - BEVFormer-based OccNet (2023): 21.6% mIoU on nuScenes occupancy benchmark
-  - SurroundOcc (2023): 20.3% mIoU across 16 semantic categories
-  - UniOcc (2024): 23.8% mIoU with integrated flow prediction
+- MonoScene (camera-only baseline, 2022): 6.1% mIoU on SemanticKITTI occupancy
+- BEVFormer-based OccNet (2023): 21.6% mIoU on nuScenes occupancy benchmark
+- SurroundOcc (2023): 20.3% mIoU across 16 semantic categories
+- UniOcc (2024): 23.8% mIoU with integrated flow prediction
 
   **Inference Speed and Compute Requirements**
 
-  - PointPillars (LiDAR only): 62 Hz on single consumer GPU (RTX 3090) — suitable for real-time AV
-  - CenterPoint (LiDAR only): 18 Hz on single GPU, 52 Hz with TensorRT optimisation
-  - BEVFormer v1 (camera only): 4 Hz on single A100 GPU — too slow for production without optimisation
-  - BEVFormer v2 with FP16 optimisation: 8 Hz — approaching real-time for camera-only AV
-  - BEVFusion (camera + LiDAR): 9 Hz on 3× A100 GPUs — currently requiring multi-GPU [[Edge Computing]]
-  - Production Waymo system (custom ASIC): full [[Autonomous Driving Perception]] stack at 25 Hz across 29 cameras + 5 LiDAR
+- PointPillars (LiDAR only): 62 Hz on single consumer GPU (RTX 3090) — suitable for real-time AV
+- CenterPoint (LiDAR only): 18 Hz on single GPU, 52 Hz with TensorRT optimisation
+- BEVFormer v1 (camera only): 4 Hz on single A100 GPU — too slow for production without optimisation
+- BEVFormer v2 with FP16 optimisation: 8 Hz — approaching real-time for camera-only AV
+- BEVFusion (camera + LiDAR): 9 Hz on 3× A100 GPUs — currently requiring multi-GPU [[Edge Computing]]
+- Production Waymo system (custom ASIC): full [[Autonomous Driving Perception]] stack at 25 Hz across 29 cameras + 5 LiDAR
 
   ## Formal Architecture: The BEV-Fusion Perception Pipeline
 
@@ -366,39 +369,41 @@ The subsystem of an autonomous vehicle responsible for interpreting sensor data 
   **Step 1 — Camera [[Feature Extraction]]**
 
   For each camera c_i (i = 1, ..., N, where N is typically 6–8):
-  - Input: raw image I_i ∈ R^(H×W×3) at resolution H × W
-  - Backbone [[Feature Extraction]] F_cam: I_i → f_i^{2D} ∈ R^(H/s × W/s × C_feat), where s is the stride (typically 8 or 16)
-  - [[Depth Estimation]] head D: f_i^{2D} → d_i ∈ R^(H/s × W/s × D_bins), predicting categorical depth distribution over D_bins discrete depth values
-  - Feature lifting (Lift-Splat): scatter f_i^{2D} into 3D frustum, pooling onto BEV grid G ∈ R^(X×Y×C_bev) via predicted depth weights
+
+- Input: raw image I_i ∈ R^(H×W×3) at resolution H × W
+- Backbone [[Feature Extraction]] F_cam: I_i → f_i^{2D} ∈ R^(H/s × W/s × C_feat), where s is the stride (typically 8 or 16)
+- [[Depth Estimation]] head D: f_i^{2D} → d_i ∈ R^(H/s × W/s × D_bins), predicting categorical depth distribution over D_bins discrete depth values
+- Feature lifting (Lift-Splat): scatter f_i^{2D} into 3D frustum, pooling onto BEV grid G ∈ R^(X×Y×C_bev) via predicted depth weights
 
   **Step 2 — [[Lidar]] [[Point Cloud]] Processing**
 
-  - Input: [[Point Cloud]] P = {(x_j, y_j, z_j, r_j)} | j = 1, ..., M} (M typically 100,000–300,000 points per scan)
-  - Voxelisation: partition space into voxels V ∈ R^(V_x × V_y × V_z), apply PointNet-style feature aggregation per voxel
-  - Sparse 3D convolution (SECOND): process occupied voxels only via hash-indexed sparse operations
-  - BEV projection: collapse voxel features along Z axis → BEV feature map F_lidar ∈ R^(X × Y × C_lidar)
+- Input: [[Point Cloud]] P = {(x_j, y_j, z_j, r_j)} | j = 1, ..., M} (M typically 100,000–300,000 points per scan)
+- Voxelisation: partition space into voxels V ∈ R^(V_x × V_y × V_z), apply PointNet-style feature aggregation per voxel
+- Sparse 3D convolution (SECOND): process occupied voxels only via hash-indexed sparse operations
+- BEV projection: collapse voxel features along Z axis → BEV feature map F_lidar ∈ R^(X × Y × C_lidar)
 
   **Step 3 — [[Sensor Fusion]] in BEV Space**
 
-  - Channel concatenation: F_fused = Concat(F_cam, F_lidar) ∈ R^(X × Y × (C_bev + C_lidar))
-  - Optional: add radar BEV features F_radar for Doppler velocity information
-  - Joint BEV encoder: 2D [[Convolutional Neural Network]] or [[Transformer Architecture]] self-attention over fused BEV grid
-  - Temporal fusion: concatenate current BEV features with stored features from K prior timesteps (K = 3–10)
+- Channel concatenation: F_fused = Concat(F_cam, F_lidar) ∈ R^(X × Y × (C_bev + C_lidar))
+- Optional: add radar BEV features F_radar for Doppler velocity information
+- Joint BEV encoder: 2D [[Convolutional Neural Network]] or [[Transformer Architecture]] self-attention over fused BEV grid
+- Temporal fusion: concatenate current BEV features with stored features from K prior timesteps (K = 3–10)
 
   **Step 4 — Multi-Task Decoding**
 
   Multiple task heads decode from the shared BEV representation F_fused:
-  - [[Object Detection]] head: heatmap-based (CenterPoint-style) → 3D bounding box detections with class, velocity, heading
-  - [[Semantic Segmentation]] head: BEV lane/road segmentation → vectorised lane boundaries for [[HD Maps]] generation
-  - Occupancy prediction head: per-voxel categorical label → dense occupancy grid for [[Motion Planning]]
-  - [[Object Tracking]] head: displacement prediction for temporal association of detections across frames
+
+- [[Object Detection]] head: heatmap-based (CenterPoint-style) → 3D bounding box detections with class, velocity, heading
+- [[Semantic Segmentation]] head: BEV lane/road segmentation → vectorised lane boundaries for [[HD Maps]] generation
+- Occupancy prediction head: per-voxel categorical label → dense occupancy grid for [[Motion Planning]]
+- [[Object Tracking]] head: displacement prediction for temporal association of detections across frames
 
   **Step 5 — [[Autonomous Driving Perception]] Output**
 
-  - Structured scene representation consumed by [[Motion Planning]] module
-  - Object list: {class, 3D box, velocity, confidence, track_id} for each detected dynamic agent
-  - Occupancy grid: {semantic_label, probability} for each voxel in 50m × 50m × 5m volume at 0.2m resolution
-  - BEV [[HD Maps]]: vectorised lane boundaries, road edges, crosswalks, traffic sign positions
+- Structured scene representation consumed by [[Motion Planning]] module
+- Object list: {class, 3D box, velocity, confidence, track_id} for each detected dynamic agent
+- Occupancy grid: {semantic_label, probability} for each voxel in 50m × 50m × 5m volume at 0.2m resolution
+- BEV [[HD Maps]]: vectorised lane boundaries, road edges, crosswalks, traffic sign positions
 
   ## Standards and Regulatory Context for [[Autonomous Driving Perception]]
 
@@ -456,26 +461,26 @@ The subsystem of an autonomous vehicle responsible for interpreting sensor data 
 
   Key open research problems in [[Autonomous Driving Perception]] requiring community focus:
 
-  - **Open-world [[Object Detection]]**: current [[Deep Learning]] [[Autonomous Driving Perception]] detects only objects from a closed vocabulary of categories defined at training time; truly novel obstacles (unusual large objects, debris types not in training, animals not in dataset) may be silently missed; occupancy prediction networks partially address this by detecting any occupied voxel regardless of category
-  - **Consistent 3D multi-camera calibration under real-world perturbation**: camera [[Autonomous Driving Perception]] BEV lifting accuracy depends on precise sensor calibration; vehicle vibration, temperature cycling, and minor collisions cause calibration drift that degrades metric-scale accuracy; online self-calibration methods (DETR-based calibration prediction) are needed for production robustness
-  - **Scalable annotation pipelines for [[Autonomous Driving Perception]] [[Training Data]]**: collecting and annotating 3D bounding boxes, [[Semantic Segmentation]] masks, and occupancy labels from [[Lidar]] and camera data is expensive — approximately $0.10–$2.00 per 3D annotation frame depending on object count and labeller skill; semi-supervised, self-supervised, and annotation transfer methods to reduce labelling cost are critical for [[Training Data]] economics at scale
-  - **Certified uncertainty quantification for [[Functional Safety]]**: current [[Deep Learning]] [[Autonomous Driving Perception]] models produce confidence scores that are poorly calibrated (do not correspond to empirical accuracy rates); conformal prediction and [[Bayesian Inference]] methods that provide certified coverage guarantees are needed for [[ISO 26262]] and [[ISO/SAE PAS 21448]] safety case construction
+- **Open-world [[Object Detection]]**: current [[Deep Learning]] [[Autonomous Driving Perception]] detects only objects from a closed vocabulary of categories defined at training time; truly novel obstacles (unusual large objects, debris types not in training, animals not in dataset) may be silently missed; occupancy prediction networks partially address this by detecting any occupied voxel regardless of category
+- **Consistent 3D multi-camera calibration under real-world perturbation**: camera [[Autonomous Driving Perception]] BEV lifting accuracy depends on precise sensor calibration; vehicle vibration, temperature cycling, and minor collisions cause calibration drift that degrades metric-scale accuracy; online self-calibration methods (DETR-based calibration prediction) are needed for production robustness
+- **Scalable annotation pipelines for [[Autonomous Driving Perception]] [[Training Data]]**: collecting and annotating 3D bounding boxes, [[Semantic Segmentation]] masks, and occupancy labels from [[Lidar]] and camera data is expensive — approximately $0.10–$2.00 per 3D annotation frame depending on object count and labeller skill; semi-supervised, self-supervised, and annotation transfer methods to reduce labelling cost are critical for [[Training Data]] economics at scale
+- **Certified uncertainty quantification for [[Functional Safety]]**: current [[Deep Learning]] [[Autonomous Driving Perception]] models produce confidence scores that are poorly calibrated (do not correspond to empirical accuracy rates); conformal prediction and [[Bayesian Inference]] methods that provide certified coverage guarantees are needed for [[ISO 26262]] and [[ISO/SAE PAS 21448]] safety case construction
 
   ## Contrasts and Distinctions
 
   [[Autonomous Driving Perception]] must be distinguished from related but different concepts:
 
-  - **vs. Remote Sensing**: remote sensing (satellite imagery, aerial LiDAR surveys) acquires terrain or object data without real-time navigation intent; [[Autonomous Driving Perception]] produces structured scene representations specifically for real-time [[Motion Planning]] at 25+ Hz
-  - **vs. General [[Computer Vision]]**: general [[Computer Vision]] encompasses image classification, generation, medical imaging, face recognition, and other tasks without navigation intent; [[Autonomous Driving Perception]] is a specialised [[Computer Vision]] application with strict real-time requirements, safety-critical failure modes, and specific task head combinations (3D [[Object Detection]], BEV [[Semantic Segmentation]], occupancy prediction)
-  - **vs. [[Teleoperation]] Perception**: teleoperation provides a camera feed to a remote human operator for human-driven decision-making; [[Autonomous Driving Perception]] replaces the human perceptual and decision loop entirely with onboard [[Deep Learning]] models
-  - **vs. [[Simultaneous Localisation and Mapping]]**: SLAM builds and maintains a map of the environment while estimating the agent's pose within it; [[Autonomous Driving Perception]] produces dynamic scene understanding (object states, semantic labels, occupancy) beyond the static structure that SLAM captures; both are required for a complete [[Autonomous Driving]] stack and consume each other's outputs
-  - **vs. Robot Perception**: general robot [[Autonomous Driving Perception]] covers manipulation, indoor navigation, and unstructured terrain; AV [[Autonomous Driving Perception]] is specialised for high-speed road environments with specific sensor configurations (automotive cameras, automotive-grade LiDAR), specific object categories (vehicles, pedestrians, cyclists), and [[Functional Safety]] certification requirements
-  - **Closed-world vs. open-world [[Autonomous Driving Perception]]**: bounding-box [[Object Detection]] assumes a closed vocabulary of object classes defined at training time; occupancy prediction networks implement open-world [[Autonomous Driving Perception]] by detecting any occupied voxel regardless of category membership — the key advantage for detecting novel obstacle types
-  - **Early vs. late [[Sensor Fusion]]**: early fusion combines raw sensor data (pixel-level or point-level) before any [[Feature Extraction]]; late fusion runs separate [[Deep Learning]] models per modality and merges [[Object Detection]] lists; feature-level (mid) fusion merges learned representations in BEV space — the dominant approach as it preserves complementary information while sharing training signal across modalities
-  - **Modular vs. end-to-end [[Autonomous Driving Perception]]**: modular stacks use separate trained models for [[Object Detection]], [[Semantic Segmentation]], and [[Object Tracking]] with hand-engineered interfaces; end-to-end networks learn the full mapping from raw sensors to driving commands; the trade-off is between interpretability and joint optimisation for driving quality
-  - **Online vs. offline [[Autonomous Driving Perception]]**: online [[Autonomous Driving Perception]] runs in real-time during vehicle operation at 25+ Hz; offline [[Autonomous Driving Perception]] processes recorded sensor logs at any speed for annotation, map building, or fleet-level safety analysis; production AV systems require both — online for safe operation, offline for [[Training Data]] pipeline
-  - **Single-frame vs. temporal [[Autonomous Driving Perception]]**: single-frame [[Autonomous Driving Perception]] processes each sensor sweep independently; temporal [[Autonomous Driving Perception]] (as in BEVFormer's spatiotemporal attention, or multi-frame [[Lidar]] concatenation) fuses information across multiple sweeps for improved detection of occluded, slow, or stationary objects that are ambiguous in any single frame
-  - **Active vs. passive sensing**: [[Lidar]] and radar are active sensors (emit their own energy and detect reflections); cameras are passive sensors (detect ambient reflected light); passive [[Autonomous Driving Perception]] from cameras alone is more challenging because it requires inferring 3D geometry from 2D projections without direct range measurement, but is more cost-effective and provides richer appearance information
+- **vs. Remote Sensing**: remote sensing (satellite imagery, aerial LiDAR surveys) acquires terrain or object data without real-time navigation intent; [[Autonomous Driving Perception]] produces structured scene representations specifically for real-time [[Motion Planning]] at 25+ Hz
+- **vs. General [[Computer Vision]]**: general [[Computer Vision]] encompasses image classification, generation, medical imaging, face recognition, and other tasks without navigation intent; [[Autonomous Driving Perception]] is a specialised [[Computer Vision]] application with strict real-time requirements, safety-critical failure modes, and specific task head combinations (3D [[Object Detection]], BEV [[Semantic Segmentation]], occupancy prediction)
+- **vs. [[Teleoperation]] Perception**: teleoperation provides a camera feed to a remote human operator for human-driven decision-making; [[Autonomous Driving Perception]] replaces the human perceptual and decision loop entirely with onboard [[Deep Learning]] models
+- **vs. [[Simultaneous Localisation and Mapping]]**: SLAM builds and maintains a map of the environment while estimating the agent's pose within it; [[Autonomous Driving Perception]] produces dynamic scene understanding (object states, semantic labels, occupancy) beyond the static structure that SLAM captures; both are required for a complete [[Autonomous Driving]] stack and consume each other's outputs
+- **vs. Robot Perception**: general robot [[Autonomous Driving Perception]] covers manipulation, indoor navigation, and unstructured terrain; AV [[Autonomous Driving Perception]] is specialised for high-speed road environments with specific sensor configurations (automotive cameras, automotive-grade LiDAR), specific object categories (vehicles, pedestrians, cyclists), and [[Functional Safety]] certification requirements
+- **Closed-world vs. open-world [[Autonomous Driving Perception]]**: bounding-box [[Object Detection]] assumes a closed vocabulary of object classes defined at training time; occupancy prediction networks implement open-world [[Autonomous Driving Perception]] by detecting any occupied voxel regardless of category membership — the key advantage for detecting novel obstacle types
+- **Early vs. late [[Sensor Fusion]]**: early fusion combines raw sensor data (pixel-level or point-level) before any [[Feature Extraction]]; late fusion runs separate [[Deep Learning]] models per modality and merges [[Object Detection]] lists; feature-level (mid) fusion merges learned representations in BEV space — the dominant approach as it preserves complementary information while sharing training signal across modalities
+- **Modular vs. end-to-end [[Autonomous Driving Perception]]**: modular stacks use separate trained models for [[Object Detection]], [[Semantic Segmentation]], and [[Object Tracking]] with hand-engineered interfaces; end-to-end networks learn the full mapping from raw sensors to driving commands; the trade-off is between interpretability and joint optimisation for driving quality
+- **Online vs. offline [[Autonomous Driving Perception]]**: online [[Autonomous Driving Perception]] runs in real-time during vehicle operation at 25+ Hz; offline [[Autonomous Driving Perception]] processes recorded sensor logs at any speed for annotation, map building, or fleet-level safety analysis; production AV systems require both — online for safe operation, offline for [[Training Data]] pipeline
+- **Single-frame vs. temporal [[Autonomous Driving Perception]]**: single-frame [[Autonomous Driving Perception]] processes each sensor sweep independently; temporal [[Autonomous Driving Perception]] (as in BEVFormer's spatiotemporal attention, or multi-frame [[Lidar]] concatenation) fuses information across multiple sweeps for improved detection of occluded, slow, or stationary objects that are ambiguous in any single frame
+- **Active vs. passive sensing**: [[Lidar]] and radar are active sensors (emit their own energy and detect reflections); cameras are passive sensors (detect ambient reflected light); passive [[Autonomous Driving Perception]] from cameras alone is more challenging because it requires inferring 3D geometry from 2D projections without direct range measurement, but is more cost-effective and provides richer appearance information
 
-- ### Provenance
+### Provenance
 

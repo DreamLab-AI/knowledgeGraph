@@ -1,10 +1,10 @@
-
 Graphics and rendering systems responsible for displaying virtual environments, objects, and interfaces through advanced rendering pipelines and visual processing.
 
-- ### Semantic Classification
+### Semantic Classification
 
-- ### Content
-  Visualization Layer — content pending enrichment.
+### Content
 
-- ### Provenance
+Visualization Layer — content pending enrichment.
+
+### Provenance
 

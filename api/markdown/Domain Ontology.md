@@ -1,718 +1,735 @@
-
 A Domain Ontology is a formal, explicit, machine-readable specification of a shared conceptualisation restricted to a delimited subject domain (clinical medicine, financial instruments, cultural heritage, manufacturing robotics, gene products, scholarly publications, e-commerce products), followi...
 
-- ### Semantic Classification
-
-- ### Content
-
-  ## Compositional Relationships (Components)
-	    SubClassOf(infrastructure:DomainOntology
-	      ObjectSomeValuesFrom(infrastructure:hasPart infrastructure:ClassHierarchy))
-	    SubClassOf(infrastructure:DomainOntology
-	      ObjectSomeValuesFrom(infrastructure:hasPart infrastructure:ObjectProperty))
-	    SubClassOf(infrastructure:DomainOntology
-	      ObjectSomeValuesFrom(infrastructure:hasPart infrastructure:DataProperty))
-	    SubClassOf(infrastructure:DomainOntology
-	      ObjectSomeValuesFrom(infrastructure:hasPart infrastructure:AxiomSet))
-	    SubClassOf(infrastructure:DomainOntology
-	      ObjectSomeValuesFrom(infrastructure:hasPart infrastructure:AnnotationProperty))
-	    SubClassOf(infrastructure:DomainOntology
-	      ObjectSomeValuesFrom(infrastructure:hasPart infrastructure:NamedIndividual))
-	    SubClassOf(infrastructure:DomainOntology
-	      ObjectSomeValuesFrom(infrastructure:hasPart infrastructure:NamespaceIRI))
-	    SubClassOf(infrastructure:DomainOntology
-	      ObjectSomeValuesFrom(infrastructure:hasPart infrastructure:OntologyDesignPattern))
-
-	    ## Dependency Relationships
-	    SubClassOf(infrastructure:DomainOntology
-	      ObjectSomeValuesFrom(infrastructure:requires infrastructure:LogicalFormalism))
-	    SubClassOf(infrastructure:DomainOntology
-	      ObjectSomeValuesFrom(infrastructure:requires infrastructure:IdentifierScheme))
-	    SubClassOf(infrastructure:DomainOntology
-	      ObjectSomeValuesFrom(infrastructure:requires infrastructure:Conceptualisation))
-	    SubClassOf(infrastructure:DomainOntology
-	      ObjectSomeValuesFrom(infrastructure:requires infrastructure:DomainExpert))
-	    SubClassOf(infrastructure:DomainOntology
-	      ObjectSomeValuesFrom(infrastructure:requires infrastructure:KnowledgeEngineer))
-	    SubClassOf(infrastructure:DomainOntology
-	      ObjectSomeValuesFrom(infrastructure:dependsOn infrastructure:DescriptionLogic))
-	    SubClassOf(infrastructure:DomainOntology
-	      ObjectSomeValuesFrom(infrastructure:dependsOn infrastructure:FirstOrderLogic))
-	    SubClassOf(infrastructure:DomainOntology
-	      ObjectSomeValuesFrom(infrastructure:dependsOn infrastructure:RDF))
-	    SubClassOf(infrastructure:DomainOntology
-	      ObjectSomeValuesFrom(infrastructure:dependsOn infrastructure:ModelTheory))
-	    SubClassOf(infrastructure:DomainOntology
-	      ObjectSomeValuesFrom(infrastructure:dependsOn infrastructure:SetTheory))
-
-	    ## Capability Relationships
-	    SubClassOf(infrastructure:DomainOntology
-	      ObjectSomeValuesFrom(infrastructure:enables infrastructure:SemanticInteroperability))
-	    SubClassOf(infrastructure:DomainOntology
-	      ObjectSomeValuesFrom(infrastructure:enables infrastructure:AutomatedReasoning))
-	    SubClassOf(infrastructure:DomainOntology
-	      ObjectSomeValuesFrom(infrastructure:enables infrastructure:KnowledgeReuse))
-	    SubClassOf(infrastructure:DomainOntology
-	      ObjectSomeValuesFrom(infrastructure:enables infrastructure:DataIntegration))
-	    SubClassOf(infrastructure:DomainOntology
-	      ObjectSomeValuesFrom(infrastructure:enables infrastructure:LinkedDataPublication))
-	    SubClassOf(infrastructure:DomainOntology
-	      ObjectSomeValuesFrom(infrastructure:enables infrastructure:FAIRDataPrinciples))
-	    SubClassOf(infrastructure:DomainOntology
-	      ObjectSomeValuesFrom(infrastructure:supports infrastructure:KnowledgeGraph))
-	    SubClassOf(infrastructure:DomainOntology
-	      ObjectSomeValuesFrom(infrastructure:supports infrastructure:SemanticWeb))
-	    SubClassOf(infrastructure:DomainOntology
-	      ObjectSomeValuesFrom(infrastructure:supports infrastructure:ClinicalDecisionSupport))
-	    SubClassOf(infrastructure:DomainOntology
-	      ObjectSomeValuesFrom(infrastructure:supports infrastructure:ScientificDataSharing))
-	    SubClassOf(infrastructure:DomainOntology
-	      ObjectSomeValuesFrom(infrastructure:supports infrastructure:RegulatoryReporting))
-
-	    ## Implementation Relationships
-	    SubClassOf(infrastructure:DomainOntology
-	      ObjectSomeValuesFrom(infrastructure:implements infrastructure:DescriptionLogicSemantics))
-	    SubClassOf(infrastructure:DomainOntology
-	      ObjectSomeValuesFrom(infrastructure:implements infrastructure:OWL2DLSemantics))
-	    SubClassOf(infrastructure:DomainOntology
-	      ObjectSomeValuesFrom(infrastructure:implements infrastructure:RDFSchemaSemantics))
-	    SubClassOf(infrastructure:DomainOntology
-	      ObjectSomeValuesFrom(infrastructure:implements infrastructure:SKOSConceptScheme))
-	    SubClassOf(infrastructure:DomainOntology
-	      ObjectSomeValuesFrom(infrastructure:implements infrastructure:OpenWorldAssumption))
-	    SubClassOf(infrastructure:DomainOntology
-	      ObjectSomeValuesFrom(infrastructure:uses infrastructure:OWL2))
-	    SubClassOf(infrastructure:DomainOntology
-	      ObjectSomeValuesFrom(infrastructure:uses infrastructure:SPARQL))
-	    SubClassOf(infrastructure:DomainOntology
-	      ObjectSomeValuesFrom(infrastructure:uses infrastructure:SHACL))
-	    SubClassOf(infrastructure:DomainOntology
-	      ObjectSomeValuesFrom(infrastructure:uses infrastructure:TableauxReasoning))
-	    SubClassOf(infrastructure:DomainOntology
-	      ObjectSomeValuesFrom(infrastructure:uses infrastructure:Protege))
-
-	    ## Reduction Relationships
-	    SubClassOf(infrastructure:DomainOntology
-	      ObjectSomeValuesFrom(infrastructure:reduces infrastructure:SemanticAmbiguity))
-	    SubClassOf(infrastructure:DomainOntology
-	      ObjectSomeValuesFrom(infrastructure:reduces infrastructure:DataSiloFragmentation))
-	    SubClassOf(infrastructure:DomainOntology
-	      ObjectSomeValuesFrom(infrastructure:reduces infrastructure:IntegrationCost))
-	    SubClassOf(infrastructure:DomainOntology
-	      ObjectSomeValuesFrom(infrastructure:reduces infrastructure:KnowledgeDuplication))
-	    SubClassOf(infrastructure:DomainOntology
-	      ObjectSomeValuesFrom(infrastructure:reduces infrastructure:TerminologicalInconsistency))
-
-	    ## Association Relationships
-	    SubClassOf(infrastructure:DomainOntology
-	      ObjectSomeValuesFrom(infrastructure:relatedTo infrastructure:UpperOntology))
-	    SubClassOf(infrastructure:DomainOntology
-	      ObjectSomeValuesFrom(infrastructure:relatedTo infrastructure:ApplicationOntology))
-	    SubClassOf(infrastructure:DomainOntology
-	      ObjectSomeValuesFrom(infrastructure:relatedTo infrastructure:Thesaurus))
-	    SubClassOf(infrastructure:DomainOntology
-	      ObjectSomeValuesFrom(infrastructure:relatedTo infrastructure:Taxonomy))
-	    SubClassOf(infrastructure:DomainOntology
-	      ObjectSomeValuesFrom(infrastructure:relatedTo infrastructure:KnowledgeGraph))
-	    SubClassOf(infrastructure:DomainOntology
-	      ObjectSomeValuesFrom(infrastructure:contrastsWith infrastructure:RelationalSchema))
-	    SubClassOf(infrastructure:DomainOntology
-	      ObjectSomeValuesFrom(infrastructure:contrastsWith infrastructure:Folksonomy))
-	    SubClassOf(infrastructure:DomainOntology
-	      ObjectSomeValuesFrom(infrastructure:contrastsWith infrastructure:NaturalLanguageKnowledgeBase))
-	    SubClassOf(infrastructure:DomainOntology
-	      ObjectSomeValuesFrom(infrastructure:contrastsWith infrastructure:PropertyGraph))
-
-	    ## Data Properties (Characteristics)
-	    DataPropertyAssertion(infrastructure:hasIdentifier infrastructure:DomainOntology "IF-1057"^^xsd:string)
-	    DataPropertyAssertion(infrastructure:authorityScore infrastructure:DomainOntology "0.87"^^xsd:decimal)
-	    DataPropertyAssertion(infrastructure:foundationalYear infrastructure:DomainOntology "1993"^^xsd:integer)
-	    DataPropertyAssertion(infrastructure:owlVersion infrastructure:DomainOntology "2.0"^^xsd:decimal)
-	    DataPropertyAssertion(infrastructure:snomedConceptCount infrastructure:DomainOntology "350000"^^xsd:integer)
-	    DataPropertyAssertion(infrastructure:geneOntologyTermCount infrastructure:DomainOntology "47000"^^xsd:integer)
-	    DataPropertyAssertion(infrastructure:wikidataItemCount infrastructure:DomainOntology "110000000"^^xsd:integer)
-	    DataPropertyAssertion(infrastructure:schemaOrgTypeCount infrastructure:DomainOntology "850"^^xsd:integer)
-	    DataPropertyAssertion(infrastructure:protegeUserCount infrastructure:DomainOntology "600000"^^xsd:integer)
-
-	    ## Property Constraints
-	    SubClassOf(infrastructure:DomainOntology
-	      DataMinCardinality(1 infrastructure:hasNamespaceIRI xsd:anyURI))
-	    SubClassOf(infrastructure:DomainOntology
-	      DataMinCardinality(1 infrastructure:hasFormalism xsd:string))
-	    SubClassOf(infrastructure:DomainOntology
-	      DataSomeValuesFrom(infrastructure:hasOWLProfile xsd:string))
-	    SubClassOf(infrastructure:DomainOntology
-	      DataAllValuesFrom(infrastructure:isMachineReadable xsd:boolean))
-	    SubClassOf(infrastructure:DomainOntology
-	      DataMaxCardinality(1 infrastructure:hasVersionIRI xsd:anyURI))
+### Semantic Classification
+
+### Content
+
+## Compositional Relationships (Components)
+    SubClassOf(infrastructure:DomainOntology
+      ObjectSomeValuesFrom(infrastructure:hasPart infrastructure:ClassHierarchy))
+    SubClassOf(infrastructure:DomainOntology
+      ObjectSomeValuesFrom(infrastructure:hasPart infrastructure:ObjectProperty))
+    SubClassOf(infrastructure:DomainOntology
+      ObjectSomeValuesFrom(infrastructure:hasPart infrastructure:DataProperty))
+    SubClassOf(infrastructure:DomainOntology
+      ObjectSomeValuesFrom(infrastructure:hasPart infrastructure:AxiomSet))
+    SubClassOf(infrastructure:DomainOntology
+      ObjectSomeValuesFrom(infrastructure:hasPart infrastructure:AnnotationProperty))
+    SubClassOf(infrastructure:DomainOntology
+      ObjectSomeValuesFrom(infrastructure:hasPart infrastructure:NamedIndividual))
+    SubClassOf(infrastructure:DomainOntology
+      ObjectSomeValuesFrom(infrastructure:hasPart infrastructure:NamespaceIRI))
+    SubClassOf(infrastructure:DomainOntology
+      ObjectSomeValuesFrom(infrastructure:hasPart infrastructure:OntologyDesignPattern))
+
+    ## Dependency Relationships
+    SubClassOf(infrastructure:DomainOntology
+      ObjectSomeValuesFrom(infrastructure:requires infrastructure:LogicalFormalism))
+    SubClassOf(infrastructure:DomainOntology
+      ObjectSomeValuesFrom(infrastructure:requires infrastructure:IdentifierScheme))
+    SubClassOf(infrastructure:DomainOntology
+      ObjectSomeValuesFrom(infrastructure:requires infrastructure:Conceptualisation))
+    SubClassOf(infrastructure:DomainOntology
+      ObjectSomeValuesFrom(infrastructure:requires infrastructure:DomainExpert))
+    SubClassOf(infrastructure:DomainOntology
+      ObjectSomeValuesFrom(infrastructure:requires infrastructure:KnowledgeEngineer))
+    SubClassOf(infrastructure:DomainOntology
+      ObjectSomeValuesFrom(infrastructure:dependsOn infrastructure:DescriptionLogic))
+    SubClassOf(infrastructure:DomainOntology
+      ObjectSomeValuesFrom(infrastructure:dependsOn infrastructure:FirstOrderLogic))
+    SubClassOf(infrastructure:DomainOntology
+      ObjectSomeValuesFrom(infrastructure:dependsOn infrastructure:RDF))
+    SubClassOf(infrastructure:DomainOntology
+      ObjectSomeValuesFrom(infrastructure:dependsOn infrastructure:ModelTheory))
+    SubClassOf(infrastructure:DomainOntology
+      ObjectSomeValuesFrom(infrastructure:dependsOn infrastructure:SetTheory))
+
+    ## Capability Relationships
+    SubClassOf(infrastructure:DomainOntology
+      ObjectSomeValuesFrom(infrastructure:enables infrastructure:SemanticInteroperability))
+    SubClassOf(infrastructure:DomainOntology
+      ObjectSomeValuesFrom(infrastructure:enables infrastructure:AutomatedReasoning))
+    SubClassOf(infrastructure:DomainOntology
+      ObjectSomeValuesFrom(infrastructure:enables infrastructure:KnowledgeReuse))
+    SubClassOf(infrastructure:DomainOntology
+      ObjectSomeValuesFrom(infrastructure:enables infrastructure:DataIntegration))
+    SubClassOf(infrastructure:DomainOntology
+      ObjectSomeValuesFrom(infrastructure:enables infrastructure:LinkedDataPublication))
+    SubClassOf(infrastructure:DomainOntology
+      ObjectSomeValuesFrom(infrastructure:enables infrastructure:FAIRDataPrinciples))
+    SubClassOf(infrastructure:DomainOntology
+      ObjectSomeValuesFrom(infrastructure:supports infrastructure:KnowledgeGraph))
+    SubClassOf(infrastructure:DomainOntology
+      ObjectSomeValuesFrom(infrastructure:supports infrastructure:SemanticWeb))
+    SubClassOf(infrastructure:DomainOntology
+      ObjectSomeValuesFrom(infrastructure:supports infrastructure:ClinicalDecisionSupport))
+    SubClassOf(infrastructure:DomainOntology
+      ObjectSomeValuesFrom(infrastructure:supports infrastructure:ScientificDataSharing))
+    SubClassOf(infrastructure:DomainOntology
+      ObjectSomeValuesFrom(infrastructure:supports infrastructure:RegulatoryReporting))
+
+    ## Implementation Relationships
+    SubClassOf(infrastructure:DomainOntology
+      ObjectSomeValuesFrom(infrastructure:implements infrastructure:DescriptionLogicSemantics))
+    SubClassOf(infrastructure:DomainOntology
+      ObjectSomeValuesFrom(infrastructure:implements infrastructure:OWL2DLSemantics))
+    SubClassOf(infrastructure:DomainOntology
+      ObjectSomeValuesFrom(infrastructure:implements infrastructure:RDFSchemaSemantics))
+    SubClassOf(infrastructure:DomainOntology
+      ObjectSomeValuesFrom(infrastructure:implements infrastructure:SKOSConceptScheme))
+    SubClassOf(infrastructure:DomainOntology
+      ObjectSomeValuesFrom(infrastructure:implements infrastructure:OpenWorldAssumption))
+    SubClassOf(infrastructure:DomainOntology
+      ObjectSomeValuesFrom(infrastructure:uses infrastructure:OWL2))
+    SubClassOf(infrastructure:DomainOntology
+      ObjectSomeValuesFrom(infrastructure:uses infrastructure:SPARQL))
+    SubClassOf(infrastructure:DomainOntology
+      ObjectSomeValuesFrom(infrastructure:uses infrastructure:SHACL))
+    SubClassOf(infrastructure:DomainOntology
+      ObjectSomeValuesFrom(infrastructure:uses infrastructure:TableauxReasoning))
+    SubClassOf(infrastructure:DomainOntology
+      ObjectSomeValuesFrom(infrastructure:uses infrastructure:Protege))
+
+    ## Reduction Relationships
+    SubClassOf(infrastructure:DomainOntology
+      ObjectSomeValuesFrom(infrastructure:reduces infrastructure:SemanticAmbiguity))
+    SubClassOf(infrastructure:DomainOntology
+      ObjectSomeValuesFrom(infrastructure:reduces infrastructure:DataSiloFragmentation))
+    SubClassOf(infrastructure:DomainOntology
+      ObjectSomeValuesFrom(infrastructure:reduces infrastructure:IntegrationCost))
+    SubClassOf(infrastructure:DomainOntology
+      ObjectSomeValuesFrom(infrastructure:reduces infrastructure:KnowledgeDuplication))
+    SubClassOf(infrastructure:DomainOntology
+      ObjectSomeValuesFrom(infrastructure:reduces infrastructure:TerminologicalInconsistency))
+
+    ## Association Relationships
+    SubClassOf(infrastructure:DomainOntology
+      ObjectSomeValuesFrom(infrastructure:relatedTo infrastructure:UpperOntology))
+    SubClassOf(infrastructure:DomainOntology
+      ObjectSomeValuesFrom(infrastructure:relatedTo infrastructure:ApplicationOntology))
+    SubClassOf(infrastructure:DomainOntology
+      ObjectSomeValuesFrom(infrastructure:relatedTo infrastructure:Thesaurus))
+    SubClassOf(infrastructure:DomainOntology
+      ObjectSomeValuesFrom(infrastructure:relatedTo infrastructure:Taxonomy))
+    SubClassOf(infrastructure:DomainOntology
+      ObjectSomeValuesFrom(infrastructure:relatedTo infrastructure:KnowledgeGraph))
+    SubClassOf(infrastructure:DomainOntology
+      ObjectSomeValuesFrom(infrastructure:contrastsWith infrastructure:RelationalSchema))
+    SubClassOf(infrastructure:DomainOntology
+      ObjectSomeValuesFrom(infrastructure:contrastsWith infrastructure:Folksonomy))
+    SubClassOf(infrastructure:DomainOntology
+      ObjectSomeValuesFrom(infrastructure:contrastsWith infrastructure:NaturalLanguageKnowledgeBase))
+    SubClassOf(infrastructure:DomainOntology
+      ObjectSomeValuesFrom(infrastructure:contrastsWith infrastructure:PropertyGraph))
+
+    ## Data Properties (Characteristics)
+    DataPropertyAssertion(infrastructure:hasIdentifier infrastructure:DomainOntology "IF-1057"^^xsd:string)
+    DataPropertyAssertion(infrastructure:authorityScore infrastructure:DomainOntology "0.87"^^xsd:decimal)
+    DataPropertyAssertion(infrastructure:foundationalYear infrastructure:DomainOntology "1993"^^xsd:integer)
+    DataPropertyAssertion(infrastructure:owlVersion infrastructure:DomainOntology "2.0"^^xsd:decimal)
+    DataPropertyAssertion(infrastructure:snomedConceptCount infrastructure:DomainOntology "350000"^^xsd:integer)
+    DataPropertyAssertion(infrastructure:geneOntologyTermCount infrastructure:DomainOntology "47000"^^xsd:integer)
+    DataPropertyAssertion(infrastructure:wikidataItemCount infrastructure:DomainOntology "110000000"^^xsd:integer)
+    DataPropertyAssertion(infrastructure:schemaOrgTypeCount infrastructure:DomainOntology "850"^^xsd:integer)
+    DataPropertyAssertion(infrastructure:protegeUserCount infrastructure:DomainOntology "600000"^^xsd:integer)
 
-	    ## Annotations
-	    AnnotationAssertion(rdfs:label infrastructure:DomainOntology "Domain Ontology"@en)
-	    AnnotationAssertion(rdfs:comment infrastructure:DomainOntology "Formal, explicit, machine-readable specification of a shared conceptualisation restricted to a delimited subject domain (clinical medicine, financial instruments, cultural heritage, gene products, e-commerce), encoded in description-logic-grounded languages (OWL 2 EL/QL/RL/DL, RDF/RDFS, SKOS) materialising TBox class/property axioms, ABox individual assertions, lexical annotations, and dereferenceable IRIs. Distinguished from top-level ontologies (BFO ISO/IEC 21838-2:2020, DOLCE, SUMO) and application ontologies. Methodologies include METHONTOLOGY, OTKM, NeOn, Lean OE, Pattern-based engineering (200+ ODPs at ontologydesignpatterns.org). Landmark deployments: SNOMED CT (350K+ concepts), Gene Ontology (47K terms), MeSH, ICD-11, FOAF, Dublin Core, schema.org (45M+ websites), Wikidata (110M+ items), DBpedia (4.6B triples), CIDOC CRM, FIBO. Reasoning via Pellet/HermiT/ELK/Konclude/Fact++/Whelk-rs. Authored in Protégé (600K+ users), TopBraid, PoolParty. Stored in RDFox, GraphDB, Stardog, Jena, Oxigraph, TerminusDB. Queried via SPARQL 1.1. 2024-2026 LLM integration through OntoGPT, RAG over KGs, neuro-symbolic hybrid reasoners. UK contributions from Manchester (ELK reasoner, OWL API), Open University KMI, Aberdeen, Imperial, UCL, Edinburgh, Southampton (TBL). Contrasts with relational schemas, folksonomies, natural-language knowledge bases."@en)
-	    AnnotationAssertion(dcterms:identifier infrastructure:DomainOntology "IF-1057"^^xsd:string)
-	    AnnotationAssertion(dcterms:subject infrastructure:DomainOntology "Ontology Engineering, Knowledge Representation, Semantic Web, Description Logic, OWL 2, Domain Modelling"@en)
-	  )
+    ## Property Constraints
+    SubClassOf(infrastructure:DomainOntology
+      DataMinCardinality(1 infrastructure:hasNamespaceIRI xsd:anyURI))
+    SubClassOf(infrastructure:DomainOntology
+      DataMinCardinality(1 infrastructure:hasFormalism xsd:string))
+    SubClassOf(infrastructure:DomainOntology
+      DataSomeValuesFrom(infrastructure:hasOWLProfile xsd:string))
+    SubClassOf(infrastructure:DomainOntology
+      DataAllValuesFrom(infrastructure:isMachineReadable xsd:boolean))
+    SubClassOf(infrastructure:DomainOntology
+      DataMaxCardinality(1 infrastructure:hasVersionIRI xsd:anyURI))
 
-	  ## Property Characteristics
-	  AsymmetricObjectProperty(infrastructure:requires)
-	  AsymmetricObjectProperty(infrastructure:enables)
-	  AsymmetricObjectProperty(infrastructure:implements)
-	  AsymmetricObjectProperty(infrastructure:contrastsWith)
-	  TransitiveObjectProperty(infrastructure:dependsOn)
-	  TransitiveObjectProperty(infrastructure:isSubClassOf)
-	  FunctionalDataProperty(infrastructure:foundationalYear)
-	  FunctionalDataProperty(infrastructure:owlVersion)
+    ## Annotations
+    AnnotationAssertion(rdfs:label infrastructure:DomainOntology "Domain Ontology"@en)
+    AnnotationAssertion(rdfs:comment infrastructure:DomainOntology "Formal, explicit, machine-readable specification of a shared conceptualisation restricted to a delimited subject domain (clinical medicine, financial instruments, cultural heritage, gene products, e-commerce), encoded in description-logic-grounded languages (OWL 2 EL/QL/RL/DL, RDF/RDFS, SKOS) materialising TBox class/property axioms, ABox individual assertions, lexical annotations, and dereferenceable IRIs. Distinguished from top-level ontologies (BFO ISO/IEC 21838-2:2020, DOLCE, SUMO) and application ontologies. Methodologies include METHONTOLOGY, OTKM, NeOn, Lean OE, Pattern-based engineering (200+ ODPs at ontologydesignpatterns.org). Landmark deployments: SNOMED CT (350K+ concepts), Gene Ontology (47K terms), MeSH, ICD-11, FOAF, Dublin Core, schema.org (45M+ websites), Wikidata (110M+ items), DBpedia (4.6B triples), CIDOC CRM, FIBO. Reasoning via Pellet/HermiT/ELK/Konclude/Fact++/Whelk-rs. Authored in Protégé (600K+ users), TopBraid, PoolParty. Stored in RDFox, GraphDB, Stardog, Jena, Oxigraph, TerminusDB. Queried via SPARQL 1.1. 2024-2026 LLM integration through OntoGPT, RAG over KGs, neuro-symbolic hybrid reasoners. UK contributions from Manchester (ELK reasoner, OWL API), Open University KMI, Aberdeen, Imperial, UCL, Edinburgh, Southampton (TBL). Contrasts with relational schemas, folksonomies, natural-language knowledge bases."@en)
+    AnnotationAssertion(dcterms:identifier infrastructure:DomainOntology "IF-1057"^^xsd:string)
+    AnnotationAssertion(dcterms:subject infrastructure:DomainOntology "Ontology Engineering, Knowledge Representation, Semantic Web, Description Logic, OWL 2, Domain Modelling"@en)
+  )
 
-  - ## About Domain Ontology
+  ## Property Characteristics
+  AsymmetricObjectProperty(infrastructure:requires)
+  AsymmetricObjectProperty(infrastructure:enables)
+  AsymmetricObjectProperty(infrastructure:implements)
+  AsymmetricObjectProperty(infrastructure:contrastsWith)
+  TransitiveObjectProperty(infrastructure:dependsOn)
+  TransitiveObjectProperty(infrastructure:isSubClassOf)
+  FunctionalDataProperty(infrastructure:foundationalYear)
+  FunctionalDataProperty(infrastructure:owlVersion)
 
-	  **Domain Ontology** is the canonical knowledge-representation artefact for capturing the concepts, relationships, axioms and identifiers that constitute the shared understanding of a delimited subject area.
+## About Domain Ontology
 
-	  It sits at the intersection of three intellectual traditions:
+**Domain Ontology** is the canonical knowledge-representation artefact for capturing the concepts, relationships, axioms and identifiers that constitute the shared understanding of a delimited subject area.
 
-	  - **Philosophy** — Aristotelian categories, Husserlian regional ontology, Quine's "to be is to be the value of a variable", Whitehead's process metaphysics, Peirce's triadic semiotics.
-	  - **Formal logic** — description logic, first-order logic, modal logic, model theory, set theory, the *Description Logic Handbook* canon.
-	  - **Computer science** — knowledge engineering, semantic web, data integration, ontology-driven information systems, the W3C Semantic Web stack.
+It sits at the intersection of three intellectual traditions:
 
-	  Where a database schema models the records a particular application stores, a domain ontology aspires to model **what is actually believed-to-exist** in the domain, independent of any particular system that will consume it. This makes domain ontologies the natural lingua franca for cross-system data exchange, federated query, regulatory harmonisation, and — since 2023 — for grounding the outputs of large language models in checkable, machine-actionable knowledge.
+- **Philosophy** — Aristotelian categories, Husserlian regional ontology, Quine's "to be is to be the value of a variable", Whitehead's process metaphysics, Peirce's triadic semiotics.
+- **Formal logic** — description logic, first-order logic, modal logic, model theory, set theory, the *Description Logic Handbook* canon.
+- **Computer science** — knowledge engineering, semantic web, data integration, ontology-driven information systems, the W3C Semantic Web stack.
 
-	  The defining property of a domain ontology, in the modern technical sense established by Tom Gruber's 1993 paper *A Translation Approach to Portable Ontology Specifications*, is that the conceptualisation is **specified** — written down in a formal language whose semantics are mathematically defined and whose entailments can be computed by a reasoner. This contrasts with the looser senses of "ontology" used in software architecture and information modelling, where the word sometimes denotes any UML class diagram or JSON schema. A proper domain ontology in the Gruberian sense is:
+  Where a database schema models the records a particular application stores, a domain ontology aspires to model **what is actually believed-to-exist** in the domain, independent of any particular system that will consume it. This makes domain ontologies the natural lingua franca for cross-system data exchange, federated query, regulatory harmonisation, and — since 2023 — for grounding the outputs of large language models in checkable, machine-actionable knowledge.
 
-	  - **Explicit** — concepts and their relationships are named, not implicit in code.
-	  - **Shared** — multiple parties have agreed to use it.
-	  - **Formal** — it has model-theoretic semantics, so two readers cannot disagree about what an axiom means.
-	  - **Machine-actionable** — a reasoner can compute classifications, consistency checks, and entailments.
-  - ### Foundations: Gruber, Sowa, Smith, Guarino
+  The defining property of a domain ontology, in the modern technical sense established by Tom Gruber's 1993 paper *A Translation Approach to Portable Ontology Specifications*, is that the conceptualisation is **specified** — written down in a formal language whose semantics are mathematically defined and whose entailments can be computed by a reasoner. This contrasts with the looser senses of "ontology" used in software architecture and information modelling, where the word sometimes denotes any UML class diagram or JSON schema. A proper domain ontology in the Gruberian sense is:
 
-	  Four canonical figures shaped the modern field of ontology engineering.
+- **Explicit** — concepts and their relationships are named, not implicit in code.
+- **Shared** — multiple parties have agreed to use it.
+- **Formal** — it has model-theoretic semantics, so two readers cannot disagree about what an axiom means.
+- **Machine-actionable** — a reasoner can compute classifications, consistency checks, and entailments.
 
-	  **Tom Gruber** (Stanford Knowledge Systems Laboratory, later Apple Siri co-founder) authored the 1993 paper that gave the field its working definition and proposed the **translation approach**, in which a portable ontology is one whose specification can be mechanically translated from a neutral interlingua (such as KIF, the Knowledge Interchange Format) into the target representation system.
+### Foundations: Gruber, Sowa, Smith, Guarino
 
-	  Gruber's later refinement with Studer, Benjamins and Fensel (1998) added the words "formal" and "shared" to yield the now-standard phrase: *"a formal, explicit specification of a shared conceptualisation."*
+Four canonical figures shaped the modern field of ontology engineering.
 
-	  **John Sowa** (formerly IBM Research, author of *Knowledge Representation: Logical, Philosophical, and Computational Foundations* 2000) developed Conceptual Graphs as a graph-theoretic representation rooted in Peirce's existential graphs and Charles Sanders Peirce's semiotics, and authored the chapter on knowledge representation that has shaped two generations of textbooks.
+**Tom Gruber** (Stanford Knowledge Systems Laboratory, later Apple Siri co-founder) authored the 1993 paper that gave the field its working definition and proposed the **translation approach**, in which a portable ontology is one whose specification can be mechanically translated from a neutral interlingua (such as KIF, the Knowledge Interchange Format) into the target representation system.
 
-	  Sowa's emphasis on grounding knowledge representation in formal philosophy — Aristotle's categories, Whitehead's process metaphysics, Peirce's triadic sign theory — established the discipline as a serious intellectual project rather than a software-engineering convenience.
+Gruber's later refinement with Studer, Benjamins and Fensel (1998) added the words "formal" and "shared" to yield the now-standard phrase: *"a formal, explicit specification of a shared conceptualisation."*
 
-	  **Barry Smith** (Buffalo Department of Philosophy, director of the National Center for Ontological Research) led the development of **Basic Formal Ontology (BFO)**, now standardised as ISO/IEC 21838-2:2020.
+**John Sowa** (formerly IBM Research, author of *Knowledge Representation: Logical, Philosophical, and Computational Foundations* 2000) developed Conceptual Graphs as a graph-theoretic representation rooted in Peirce's existential graphs and Charles Sanders Peirce's semiotics, and authored the chapter on knowledge representation that has shaped two generations of textbooks.
 
-	  BFO divides the universe into:
+Sowa's emphasis on grounding knowledge representation in formal philosophy — Aristotle's categories, Whitehead's process metaphysics, Peirce's triadic sign theory — established the discipline as a serious intellectual project rather than a software-engineering convenience.
 
-	  - **Continuants** — objects, qualities, dispositions that persist through time.
-	  - **Occurrents** — processes, events, temporal regions that unfold in time.
-	  - With sub-categories for material/immaterial entities, specifically dependent vs generically dependent continuants, and roles vs dispositions.
+**Barry Smith** (Buffalo Department of Philosophy, director of the National Center for Ontological Research) led the development of **Basic Formal Ontology (BFO)**, now standardised as ISO/IEC 21838-2:2020.
 
-	  BFO underpins 600+ OBO Foundry biomedical ontologies and has become the de-facto upper ontology for life-science applications.
+BFO divides the universe into:
 
-	  **Nicola Guarino** (Laboratory for Applied Ontology, ISTC-CNR Trento) developed **DOLCE** (Descriptive Ontology for Linguistic and Cognitive Engineering, 2002+), an alternative upper ontology emphasising cognitive realism — it aims to capture the categories humans actually use to think about the world rather than imposing a strict realist metaphysics.
+- **Continuants** — objects, qualities, dispositions that persist through time.
+- **Occurrents** — processes, events, temporal regions that unfold in time.
+- With sub-categories for material/immaterial entities, specifically dependent vs generically dependent continuants, and roles vs dispositions.
 
-	  DOLCE's four-fold taxonomy of **endurants, perdurants, qualities** and **abstracts** has been particularly influential in semantic-web and natural-language-processing communities, and is the dominant alternative to BFO in European ontology engineering.
+  BFO underpins 600+ OBO Foundry biomedical ontologies and has become the de-facto upper ontology for life-science applications.
 
-	  Beyond these four:
+  **Nicola Guarino** (Laboratory for Applied Ontology, ISTC-CNR Trento) developed **DOLCE** (Descriptive Ontology for Linguistic and Cognitive Engineering, 2002+), an alternative upper ontology emphasising cognitive realism — it aims to capture the categories humans actually use to think about the world rather than imposing a strict realist metaphysics.
 
-	  - **Adam Pease** and **Ian Niles** developed **SUMO** (Suggested Upper Merged Ontology) with 25,000 terms under an open licence and a mapping to WordNet, used by the IEEE Standard Upper Ontology working group as a candidate standard.
-	  - **Aldo Gangemi** (CNR Rome, Open University KMI) led the development of **Ontology Design Patterns** (ODPs) catalogued at ontologydesignpatterns.org, exporting Christopher Alexander's pattern-language paradigm into ontology engineering with 200+ reusable content, logical and architectural patterns.
-	  - **Giancarlo Guizzardi** (University of Twente, formerly Free University Bolzano) developed **UFO** (Unified Foundational Ontology) and **OntoUML**, integrating BFO-style realism with UML conceptual modelling.
-	  - **Heinrich Herre** (Leipzig) developed **GFO** (General Formal Ontology) as a third major upper-ontology alternative.
-  - ### Languages and Standards
+  DOLCE's four-fold taxonomy of **endurants, perdurants, qualities** and **abstracts** has been particularly influential in semantic-web and natural-language-processing communities, and is the dominant alternative to BFO in European ontology engineering.
 
-	  Domain ontologies are written in one of several formal languages, with W3C OWL 2 dominant since 2009.
+  Beyond these four:
 
-	  **W3C OWL 2 Web Ontology Language** (Recommendation October 2009, Document Overview Second Edition December 2012) provides description-logic-grounded semantics in three computational profiles for tractable reasoning, plus full DL and RDF-based variants:
+- **Adam Pease** and **Ian Niles** developed **SUMO** (Suggested Upper Merged Ontology) with 25,000 terms under an open licence and a mapping to WordNet, used by the IEEE Standard Upper Ontology working group as a candidate standard.
+- **Aldo Gangemi** (CNR Rome, Open University KMI) led the development of **Ontology Design Patterns** (ODPs) catalogued at ontologydesignpatterns.org, exporting Christopher Alexander's pattern-language paradigm into ontology engineering with 200+ reusable content, logical and architectural patterns.
+- **Giancarlo Guizzardi** (University of Twente, formerly Free University Bolzano) developed **UFO** (Unified Foundational Ontology) and **OntoUML**, integrating BFO-style realism with UML conceptual modelling.
+- **Heinrich Herre** (Leipzig) developed **GFO** (General Formal Ontology) as a third major upper-ontology alternative.
 
-	  - **OWL 2 EL** — polynomial-time reasoning, used by SNOMED CT and Gene Ontology.
-	  - **OWL 2 QL** — LogSpace data complexity, for query rewriting over relational databases.
-	  - **OWL 2 RL** — polynomial rule-based reasoning, implementable in production-rule systems and Datalog.
-	  - **OWL 2 DL** — decidable but NEXPTIME, the full description-logic SROIQ(D).
-	  - **OWL 2 Full** — RDF-compatible but undecidable.
+### Languages and Standards
 
-	  Functional-Syntax, Manchester Syntax, OWL/XML and RDF/XML are the four normative serialisations; Turtle has become the de-facto preferred human-readable form.
+Domain ontologies are written in one of several formal languages, with W3C OWL 2 dominant since 2009.
 
-	  **RDF 1.1** (W3C Recommendation February 2014) provides the underlying graph data model — subject/predicate/object triples with IRIs and literals — together with the SPARQL 1.1 query language (W3C Recommendation March 2013) supporting SELECT, CONSTRUCT, ASK, DESCRIBE, federated queries via SERVICE, property paths, and SPARQL Update for triplestore mutation.
+**W3C OWL 2 Web Ontology Language** (Recommendation October 2009, Document Overview Second Edition December 2012) provides description-logic-grounded semantics in three computational profiles for tractable reasoning, plus full DL and RDF-based variants:
 
-	  **Companion vocabularies and constraint languages**:
+- **OWL 2 EL** — polynomial-time reasoning, used by SNOMED CT and Gene Ontology.
+- **OWL 2 QL** — LogSpace data complexity, for query rewriting over relational databases.
+- **OWL 2 RL** — polynomial rule-based reasoning, implementable in production-rule systems and Datalog.
+- **OWL 2 DL** — decidable but NEXPTIME, the full description-logic SROIQ(D).
+- **OWL 2 Full** — RDF-compatible but undecidable.
 
-	  - **RDFS** (RDF Schema, W3C Recommendation February 2014) provides lightweight class/property hierarchies.
-	  - **SKOS** (Simple Knowledge Organization System, W3C Recommendation August 2009) provides skos:Concept, skos:broader/narrower/related, skos:prefLabel/altLabel/hiddenLabel for thesauri, taxonomies and concept schemes lacking the axiomatic strength of OWL but offering simpler authoring.
-	  - **SHACL** (Shapes Constraint Language, W3C Recommendation July 2017) and **ShEx** (Shape Expressions) provide closed-world data validation atop the open-world RDF/OWL substrate.
+  Functional-Syntax, Manchester Syntax, OWL/XML and RDF/XML are the four normative serialisations; Turtle has become the de-facto preferred human-readable form.
 
-	  **ISO standards**:
+  **RDF 1.1** (W3C Recommendation February 2014) provides the underlying graph data model — subject/predicate/object triples with IRIs and literals — together with the SPARQL 1.1 query language (W3C Recommendation March 2013) supporting SELECT, CONSTRUCT, ASK, DESCRIBE, federated queries via SERVICE, property paths, and SPARQL Update for triplestore mutation.
 
-	  - **ISO/IEC 21838-2:2020 (BFO)** standardises Basic Formal Ontology as a top-level ontology.
-	  - **ISO/IEC 24707:2018 (Common Logic)** provides an interchange framework for logic-based languages.
-	  - **ISO 21127:2014 (CIDOC CRM)** standardises the cultural-heritage core ontology.
+  **Companion vocabularies and constraint languages**:
 
-	  **OBO Foundry** (Open Biological and Biomedical Ontology Foundry at obofoundry.org) operates a coordinated registry of 250+ biomedical ontologies under shared best-practice principles — orthogonality, BFO grounding, public version control, scientific governance.
-  - ### Methodologies: From Waterfall to Lean
+- **RDFS** (RDF Schema, W3C Recommendation February 2014) provides lightweight class/property hierarchies.
+- **SKOS** (Simple Knowledge Organization System, W3C Recommendation August 2009) provides skos:Concept, skos:broader/narrower/related, skos:prefLabel/altLabel/hiddenLabel for thesauri, taxonomies and concept schemes lacking the axiomatic strength of OWL but offering simpler authoring.
+- **SHACL** (Shapes Constraint Language, W3C Recommendation July 2017) and **ShEx** (Shape Expressions) provide closed-world data validation atop the open-world RDF/OWL substrate.
 
-	  How should a domain ontology actually be built? Six methodologies have shaped engineering practice.
+  **ISO standards**:
 
-	  **METHONTOLOGY** (Fernández-López, Gómez-Pérez, Juristo 1997, Universidad Politécnica de Madrid OEG group) was the first comprehensive waterfall-style methodology, defining seven activities supported by life-cycle management and project documentation:
+- **ISO/IEC 21838-2:2020 (BFO)** standardises Basic Formal Ontology as a top-level ontology.
+- **ISO/IEC 24707:2018 (Common Logic)** provides an interchange framework for logic-based languages.
+- **ISO 21127:2014 (CIDOC CRM)** standardises the cultural-heritage core ontology.
 
-	  1. Specification (requirements).
-	  2. Conceptualisation (informal model).
-	  3. Formalisation (transformation to semi-formal).
-	  4. Implementation (encoding in a target language).
-	  5. Maintenance.
-	  6. Learning.
-	  7. Evaluation.
+  **OBO Foundry** (Open Biological and Biomedical Ontology Foundry at obofoundry.org) operates a coordinated registry of 250+ biomedical ontologies under shared best-practice principles — orthogonality, BFO grounding, public version control, scientific governance.
 
-	  Heavily adopted in 1990s/2000s knowledge-engineering projects.
+### Methodologies: From Waterfall to Lean
 
-	  **OTKM (On-To-Knowledge Methodology)** (Sure, Staab, Studer 2002, Karlsruhe AIFB) integrated ontology engineering with knowledge-management deployment, emphasising kick-off → refinement → evaluation → application & evolution phases, and was influential in the European-funded OntoKnowledge project.
+How should a domain ontology actually be built? Six methodologies have shaped engineering practice.
 
-	  **NeOn Methodology** (Suárez-Figueroa, Gómez-Pérez 2009-2012) shifted the field from monolithic build-from-scratch projects to network-of-ontologies engineering, defining nine scenarios for reusing/reengineering/aligning/merging existing ontological resources and patterns. NeOn produced both a methodology textbook and an accompanying ontology engineering platform.
+**METHONTOLOGY** (Fernández-López, Gómez-Pérez, Juristo 1997, Universidad Politécnica de Madrid OEG group) was the first comprehensive waterfall-style methodology, defining seven activities supported by life-cycle management and project documentation:
 
-	  **Pattern-based Ontology Engineering (POE)** popularised by Aldo Gangemi and Valentina Presutti (CNR Rome) treats ontology construction as composition of pre-validated **Ontology Design Patterns** (ODPs) catalogued at ontologydesignpatterns.org:
+1. Specification (requirements).
+2. Conceptualisation (informal model).
+3. Formalisation (transformation to semi-formal).
+4. Implementation (encoding in a target language).
+5. Maintenance.
+6. Learning.
+7. Evaluation.
 
-	  - **Content patterns** — e.g. Participation, AgentRole, TimeIndexedSituation.
-	  - **Logical patterns** — e.g. property chains, qualified cardinality.
-	  - **Architectural patterns** — modular ontologies, ODP composition.
+Heavily adopted in 1990s/2000s knowledge-engineering projects.
 
-	  POE draws explicit analogy with Christopher Alexander's pattern languages and Gamma et al.'s software design patterns.
+**OTKM (On-To-Knowledge Methodology)** (Sure, Staab, Studer 2002, Karlsruhe AIFB) integrated ontology engineering with knowledge-management deployment, emphasising kick-off → refinement → evaluation → application & evolution phases, and was influential in the European-funded OntoKnowledge project.
 
-	  **Lean Ontology Engineering** (Wisniewski, Potoniec, Lawrynowicz, Keet 2019) adapts agile/lean software-engineering principles — minimum-viable ontology, iterative deployment, continuous validation — to ontology development, emphasising fast feedback loops with domain experts and competency-question-driven scope control.
+**NeOn Methodology** (Suárez-Figueroa, Gómez-Pérez 2009-2012) shifted the field from monolithic build-from-scratch projects to network-of-ontologies engineering, defining nine scenarios for reusing/reengineering/aligning/merging existing ontological resources and patterns. NeOn produced both a methodology textbook and an accompanying ontology engineering platform.
 
-	  **DILIGENT** (Pinto, Tempich, Staab 2004) and **HCOME** (Human-Centered Ontology Engineering Methodology, Kotis, Vouros 2006) addressed distributed collaborative engineering, providing protocols for argument-based negotiation among geographically dispersed experts — particularly relevant in modern large-scale projects like Wikidata or the OBO Foundry where thousands of contributors edit a shared knowledge base.
-  - ### Reasoning: Description Logic and the Reasoner Ecosystem
+**Pattern-based Ontology Engineering (POE)** popularised by Aldo Gangemi and Valentina Presutti (CNR Rome) treats ontology construction as composition of pre-validated **Ontology Design Patterns** (ODPs) catalogued at ontologydesignpatterns.org:
 
-	  A domain ontology is not merely a class hierarchy: it carries logical axioms whose entailments are computed by **description-logic reasoners**.
+- **Content patterns** — e.g. Participation, AgentRole, TimeIndexedSituation.
+- **Logical patterns** — e.g. property chains, qualified cardinality.
+- **Architectural patterns** — modular ontologies, ODP composition.
 
-	  The standard reasoning tasks are:
+  POE draws explicit analogy with Christopher Alexander's pattern languages and Gamma et al.'s software design patterns.
 
-	  - **Consistency checking** — does the ontology have a model?
-	  - **Classification** — compute the full subclass hierarchy from axioms.
-	  - **Realisation** — compute the most-specific class for each named individual.
-	  - **Conjunctive query answering** — SPARQL with OWL entailment regime.
-	  - **Explanation** — generate human-readable proofs for entailments (used in clinical decision support and regulatory audit).
+  **Lean Ontology Engineering** (Wisniewski, Potoniec, Lawrynowicz, Keet 2019) adapts agile/lean software-engineering principles — minimum-viable ontology, iterative deployment, continuous validation — to ontology development, emphasising fast feedback loops with domain experts and competency-question-driven scope control.
 
-	  **Tableaux-based DL reasoners** for OWL 2 DL:
+  **DILIGENT** (Pinto, Tempich, Staab 2004) and **HCOME** (Human-Centered Ontology Engineering Methodology, Kotis, Vouros 2006) addressed distributed collaborative engineering, providing protocols for argument-based negotiation among geographically dispersed experts — particularly relevant in modern large-scale projects like Wikidata or the OBO Foundry where thousands of contributors edit a shared knowledge base.
 
-	  - **Pellet** — Clark & Parsia / Stardog, open-source SROIQ(D).
-	  - **HermiT** — Oxford Information Systems Group by Birte Glimm, Ian Horrocks, Boris Motik, employing the hypertableau calculus.
-	  - **Fact++** — Manchester University, Dmitry Tsarkov.
-	  - **Konclude** — University of Ulm, winner of OWL Reasoner Evaluation 2014-2019.
-	  - **RacerPro** — commercial, Volker Haarslev and Ralf Möller.
+### Reasoning: Description Logic and the Reasoner Ecosystem
 
-	  **Polynomial-time profile reasoners** target the OWL 2 EL fragment used by SNOMED CT and the Gene Ontology:
+A domain ontology is not merely a class hierarchy: it carries logical axioms whose entailments are computed by **description-logic reasoners**.
 
-	  - **ELK** — the Manchester ELK Reasoner authored by Yevgeny Kazakov, Markus Krötzsch, František Simančík at Karlsruhe/Oxford/Manchester, classifies the entire SNOMED CT (~350K classes) in under 5 seconds versus hours for full-DL reasoners.
-	  - **ELepHant** and **jcel** — alternative EL reasoners.
-	  - **Rapid** and **Requiem** — target OWL 2 QL via query rewriting.
+The standard reasoning tasks are:
 
-	  **Modern Rust-native reasoners** for high-throughput pipelines:
+- **Consistency checking** — does the ontology have a model?
+- **Classification** — compute the full subclass hierarchy from axioms.
+- **Realisation** — compute the most-specific class for each named individual.
+- **Conjunctive query answering** — SPARQL with OWL entailment regime.
+- **Explanation** — generate human-readable proofs for entailments (used in clinical decision support and regulatory audit).
 
-	  - **Whelk-rs** — INCATools/Monarch Initiative 2023-2024, porting the Whelk Scala EL reasoner to Rust, achieving 5-10× performance gains in OBO-Foundry pipelines that classify hundreds of biomedical ontologies daily.
-	  - **horned-owl** — broader Rust crate ecosystem for OWL manipulation.
+  **Tableaux-based DL reasoners** for OWL 2 DL:
 
-	  **Datalog and rule-based reasoners**:
+- **Pellet** — Clark & Parsia / Stardog, open-source SROIQ(D).
+- **HermiT** — Oxford Information Systems Group by Birte Glimm, Ian Horrocks, Boris Motik, employing the hypertableau calculus.
+- **Fact++** — Manchester University, Dmitry Tsarkov.
+- **Konclude** — University of Ulm, winner of OWL Reasoner Evaluation 2014-2019.
+- **RacerPro** — commercial, Volker Haarslev and Ralf Möller.
 
-	  - **RDFox** — Oxford Semantic Technologies, in-memory Datalog with OWL 2 RL materialisation handling 100M-100B triples; deployed at Siemens (industrial knowledge graphs), Festo, Bosch Connected Industry, and the UK Office for National Statistics for production graph reasoning.
-	  - **Jena Inference API** — Apache Jena's rule engine with built-in RDFS, OWL Lite, and custom-rule reasoners.
-	  - **Pellet's rule engine** — SWRL (Semantic Web Rule Language) rule support layered over OWL DL.
-	  - **OWL 2 RL implementations** atop Apache Spark, Apache Flink and Ray for cluster-scale reasoning on billion-triple graphs.
-	  - **VLog** (TU Dresden) — high-performance Datalog reasoner with chase-based reasoning over existential rules.
+  **Polynomial-time profile reasoners** target the OWL 2 EL fragment used by SNOMED CT and the Gene Ontology:
 
-	  **Benchmarking and evaluation**:
+- **ELK** — the Manchester ELK Reasoner authored by Yevgeny Kazakov, Markus Krötzsch, František Simančík at Karlsruhe/Oxford/Manchester, classifies the entire SNOMED CT (~350K classes) in under 5 seconds versus hours for full-DL reasoners.
+- **ELepHant** and **jcel** — alternative EL reasoners.
+- **Rapid** and **Requiem** — target OWL 2 QL via query rewriting.
 
-	  - The **OWL Reasoner Evaluation (ORE)** workshop series runs annual reasoner competitions across OWL 2 DL, EL and RL tracks, with Konclude leading the DL track and ELK dominating EL.
-	  - The **LUBM** (Lehigh University Benchmark) and **UOBM** (University Ontology Benchmark) provide synthetic ABox workloads.
-	  - The **BSBM** (Berlin SPARQL Benchmark) measures SPARQL query performance over RDF/OWL stores.
-  - ### Tooling: Authoring, Storage, Query
+  **Modern Rust-native reasoners** for high-throughput pipelines:
 
-	  A typical domain-ontology team uses three concentric tool layers — authoring, storage, and programmatic access.
+- **Whelk-rs** — INCATools/Monarch Initiative 2023-2024, porting the Whelk Scala EL reasoner to Rust, achieving 5-10× performance gains in OBO-Foundry pipelines that classify hundreds of biomedical ontologies daily.
+- **horned-owl** — broader Rust crate ecosystem for OWL manipulation.
 
-	  **Authoring environments**:
+  **Datalog and rule-based reasoners**:
 
-	  - **Protégé** — Stanford BMIR open-source, 600K+ registered users, plugin ecosystem including OPLA Pattern Library, OntoGraf, Cellfie spreadsheet import, OWL Diff version comparison; remains the dominant IDE.
-	  - **WebProtégé** — browser-based collaborative editing on the Protégé core.
-	  - **TopBraid Composer** — commercial (TopQuadrant), enterprise tooling with SHACL editing.
-	  - **PoolParty** — Semantic Web Company Vienna, targets thesaurus and taxonomy authoring with strong SKOS support.
-	  - **VocBench 3** — commissioned by FAO and EU Publications Office, specialises in SKOS thesaurus management.
-	  - **Fluent Editor** — Cognitum, uses controlled natural language for ontology authoring.
-	  - **OBO-Edit** — legacy biomedical workflows.
+- **RDFox** — Oxford Semantic Technologies, in-memory Datalog with OWL 2 RL materialisation handling 100M-100B triples; deployed at Siemens (industrial knowledge graphs), Festo, Bosch Connected Industry, and the UK Office for National Statistics for production graph reasoning.
+- **Jena Inference API** — Apache Jena's rule engine with built-in RDFS, OWL Lite, and custom-rule reasoners.
+- **Pellet's rule engine** — SWRL (Semantic Web Rule Language) rule support layered over OWL DL.
+- **OWL 2 RL implementations** atop Apache Spark, Apache Flink and Ray for cluster-scale reasoning on billion-triple graphs.
+- **VLog** (TU Dresden) — high-performance Datalog reasoner with chase-based reasoning over existential rules.
 
-	  **Storage layer (triplestores and graph databases)**:
+  **Benchmarking and evaluation**:
 
-	  - **RDFox** — in-memory Datalog (Oxford Semantic Technologies).
-	  - **GraphDB** — Ontotext, free/commercial editions, GraphDB Cluster.
-	  - **Stardog** — enterprise knowledge graph platform with virtual graphs over RDB sources.
-	  - **Apache Jena Fuseki + TDB2** — open-source Java.
-	  - **Blazegraph** — powers Wikidata Query Service, ~13B triples.
-	  - **Virtuoso** — OpenLink, powers DBpedia.
-	  - **Oxigraph** — Rust-native SPARQL store.
-	  - **TerminusDB** — git-like versioned graph database.
-	  - **AnzoGraph** — Cambridge Semantics, distributed analytical.
-	  - **Amazon Neptune** — managed AWS service.
-	  - **Microsoft Azure Cosmos DB Gremlin API** — multi-model cloud graph.
-	  - **Neo4j with neosemantics (n10s) plugin** — property-graph store with RDF/OWL import/export.
+- The **OWL Reasoner Evaluation (ORE)** workshop series runs annual reasoner competitions across OWL 2 DL, EL and RL tracks, with Konclude leading the DL track and ELK dominating EL.
+- The **LUBM** (Lehigh University Benchmark) and **UOBM** (University Ontology Benchmark) provide synthetic ABox workloads.
+- The **BSBM** (Berlin SPARQL Benchmark) measures SPARQL query performance over RDF/OWL stores.
 
-	  **Programming libraries**:
+### Tooling: Authoring, Storage, Query
 
-	  - **OWL API** (Manchester, Java) — the de-facto reference implementation used by Protégé and most academic reasoners.
-	  - **Apache Jena** (Java) — RDF/OWL framework.
-	  - **RDFlib** (Python, 7K+ GitHub stars).
-	  - **Owlready2** (Python with reasoner integration, Lamy 2017).
-	  - **rdflib-jsonld** (Python JSON-LD).
-	  - **horned-owl** (Rust).
-	  - **N3.js** (JavaScript).
-	  - **rdf4j** (Eclipse Foundation, formerly Sesame).
-  - ### Landmark Domain Ontologies
+A typical domain-ontology team uses three concentric tool layers — authoring, storage, and programmatic access.
 
-	  Twelve domain ontologies illustrate the field's reach across science, commerce and culture.
+**Authoring environments**:
 
-	  **SNOMED CT** (Systematized Nomenclature of Medicine Clinical Terms):
+- **Protégé** — Stanford BMIR open-source, 600K+ registered users, plugin ecosystem including OPLA Pattern Library, OntoGraf, Cellfie spreadsheet import, OWL Diff version comparison; remains the dominant IDE.
+- **WebProtégé** — browser-based collaborative editing on the Protégé core.
+- **TopBraid Composer** — commercial (TopQuadrant), enterprise tooling with SHACL editing.
+- **PoolParty** — Semantic Web Company Vienna, targets thesaurus and taxonomy authoring with strong SKOS support.
+- **VocBench 3** — commissioned by FAO and EU Publications Office, specialises in SKOS thesaurus management.
+- **Fluent Editor** — Cognitum, uses controlled natural language for ontology authoring.
+- **OBO-Edit** — legacy biomedical workflows.
 
-	  - Maintained by SNOMED International with **350,000+ active concepts** and 1.36M relationships.
-	  - Covers anatomy, clinical findings, procedures, organisms, substances, situations.
-	  - Licensed by 80+ national medicines agencies including NHS England (since 2018 as the mandated clinical-terminology standard), the US Department of Health and Human Services, and the Australian Digital Health Agency.
-	  - Uses an OWL 2 EL representation classified by ELK in under five seconds.
+  **Storage layer (triplestores and graph databases)**:
 
-	  **Gene Ontology (GO)**:
+- **RDFox** — in-memory Datalog (Oxford Semantic Technologies).
+- **GraphDB** — Ontotext, free/commercial editions, GraphDB Cluster.
+- **Stardog** — enterprise knowledge graph platform with virtual graphs over RDB sources.
+- **Apache Jena Fuseki + TDB2** — open-source Java.
+- **Blazegraph** — powers Wikidata Query Service, ~13B triples.
+- **Virtuoso** — OpenLink, powers DBpedia.
+- **Oxigraph** — Rust-native SPARQL store.
+- **TerminusDB** — git-like versioned graph database.
+- **AnzoGraph** — Cambridge Semantics, distributed analytical.
+- **Amazon Neptune** — managed AWS service.
+- **Microsoft Azure Cosmos DB Gremlin API** — multi-model cloud graph.
+- **Neo4j with neosemantics (n10s) plugin** — property-graph store with RDF/OWL import/export.
 
-	  - Founded 1998 by Michael Ashburner, Suzanna Lewis, Judith Blake.
-	  - **47,000+ terms** across three aspects — Biological Process, Molecular Function, Cellular Component.
-	  - Annotates 1.5M+ gene products across 5,200 species.
-	  - Hosted at geneontology.org and underpins bioinformatics workflows globally.
+  **Programming libraries**:
 
-	  **MeSH (Medical Subject Headings)**: US National Library of Medicine, **30,000 descriptors** indexing 30M+ PubMed citations, used by every biomedical literature-search system.
+- **OWL API** (Manchester, Java) — the de-facto reference implementation used by Protégé and most academic reasoners.
+- **Apache Jena** (Java) — RDF/OWL framework.
+- **RDFlib** (Python, 7K+ GitHub stars).
+- **Owlready2** (Python with reasoner integration, Lamy 2017).
+- **rdflib-jsonld** (Python JSON-LD).
+- **horned-owl** (Rust).
+- **N3.js** (JavaScript).
+- **rdf4j** (Eclipse Foundation, formerly Sesame).
 
-	  **ICD-11**: WHO International Classification of Diseases revision 11 ratified May 2019, effective January 2022, with **17,000+ categories** and an underlying foundation component encoded in description logic.
+### Landmark Domain Ontologies
 
-	  **FOAF (Friend-of-a-Friend)**: Dan Brickley & Libby Miller (2000), social-graph vocabulary embedded in **100M+ web profiles** and academic-author pages, with foaf:Person, foaf:knows, foaf:Document.
+Twelve domain ontologies illustrate the field's reach across science, commerce and culture.
 
-	  **Dublin Core (DCMI)**: **15 core metadata terms** standardised as ISO 15836:2017, used by 60% of digital libraries; extended into DCMI Terms with 70+ properties.
+**SNOMED CT** (Systematized Nomenclature of Medicine Clinical Terms):
 
-	  **schema.org**:
+- Maintained by SNOMED International with **350,000+ active concepts** and 1.36M relationships.
+- Covers anatomy, clinical findings, procedures, organisms, substances, situations.
+- Licensed by 80+ national medicines agencies including NHS England (since 2018 as the mandated clinical-terminology standard), the US Department of Health and Human Services, and the Australian Digital Health Agency.
+- Uses an OWL 2 EL representation classified by ELK in under five seconds.
 
-	  - Launched June 2011 by Google, Bing, Yahoo and Yandex.
-	  - **850+ types** and 1,400+ properties.
-	  - Deployed on **45M+ websites** (W3Techs 2024 surveys).
-	  - Drives Google rich-result snippets, Bing entity cards, and Pinterest rich-pin metadata.
-	  - Embedded via JSON-LD, Microdata or RDFa.
+  **Gene Ontology (GO)**:
 
-	  **Wikidata**:
+- Founded 1998 by Michael Ashburner, Suzanna Lewis, Judith Blake.
+- **47,000+ terms** across three aspects — Biological Process, Molecular Function, Cellular Component.
+- Annotates 1.5M+ gene products across 5,200 species.
+- Hosted at geneontology.org and underpins bioinformatics workflows globally.
 
-	  - Collaborative knowledge base launched 2012.
-	  - **110M+ items** and 9,500+ properties.
-	  - Multilingual labels in 400+ languages.
-	  - ~13B RDF triples in its SPARQL endpoint (query.wikidata.org).
-	  - Feeds Wikipedia infoboxes and a generation of knowledge-graph-powered AI applications.
+  **MeSH (Medical Subject Headings)**: US National Library of Medicine, **30,000 descriptors** indexing 30M+ PubMed citations, used by every biomedical literature-search system.
 
-	  **DBpedia**: RDF extraction from Wikipedia infoboxes by FU Berlin and Mannheim; **4.6B triples** across 138 languages.
+  **ICD-11**: WHO International Classification of Diseases revision 11 ratified May 2019, effective January 2022, with **17,000+ categories** and an underlying foundation component encoded in description logic.
 
-	  **CIDOC CRM**:
+  **FOAF (Friend-of-a-Friend)**: Dan Brickley & Libby Miller (2000), social-graph vocabulary embedded in **100M+ web profiles** and academic-author pages, with foaf:Person, foaf:knows, foaf:Document.
 
-	  - ISO 21127:2014, cultural-heritage core ontology.
-	  - **81 classes** and 160 properties.
-	  - Deployed at the British Museum, Rijksmuseum, Smithsonian, J. Paul Getty Trust, Europeana digital library.
-	  - Extensions: **FRBRoo** (library catalogues) and **CRMsci** (scientific observation).
+  **Dublin Core (DCMI)**: **15 core metadata terms** standardised as ISO 15836:2017, used by 60% of digital libraries; extended into DCMI Terms with 70+ properties.
 
-	  **FIBO (Financial Industry Business Ontology)**:
+  **schema.org**:
 
-	  - EDM Council with **11,000+ terms** covering financial instruments, business entities, contracts, regulatory reporting.
-	  - Adopted by 30+ G-SIBs and central banks (Bank of England, ECB, Federal Reserve, Monetary Authority of Singapore) for regulatory data harmonisation.
-	  - Aligned with ISO 20022 financial-messaging standards.
+- Launched June 2011 by Google, Bing, Yahoo and Yandex.
+- **850+ types** and 1,400+ properties.
+- Deployed on **45M+ websites** (W3Techs 2024 surveys).
+- Drives Google rich-result snippets, Bing entity cards, and Pinterest rich-pin metadata.
+- Embedded via JSON-LD, Microdata or RDFa.
 
-	  **GoodRelations**: Martin Hepp's e-commerce ontology, folded into schema.org Product/Offer hierarchy in 2012.
+  **Wikidata**:
 
-	  **OBO Foundry biomedical ontologies**: 250+ coordinated ontologies including ChEBI (chemicals), HPO (human phenotype), Mondo (diseases), CL (cell ontology), GO, UBERON (anatomy), Protein Ontology, Plant Ontology — all sharing BFO grounding and reciprocal cross-references.
-  - ### Use Cases / Major Families
+- Collaborative knowledge base launched 2012.
+- **110M+ items** and 9,500+ properties.
+- Multilingual labels in 400+ languages.
+- ~13B RDF triples in its SPARQL endpoint (query.wikidata.org).
+- Feeds Wikipedia infoboxes and a generation of knowledge-graph-powered AI applications.
 
-	  Domain ontologies discharge several distinct functional roles across science, industry and the public sector.
+  **DBpedia**: RDF extraction from Wikipedia infoboxes by FU Berlin and Mannheim; **4.6B triples** across 138 languages.
 
-	  **Semantic interoperability across heterogeneous systems**:
+  **CIDOC CRM**:
 
-	  - Data exchange between EHR vendors using SNOMED CT, ICD-11, LOINC and RxNorm under HL7 FHIR profiles.
-	  - Museum and gallery cataloguing exchange via CIDOC CRM, FRBRoo, EDM (Europeana Data Model).
-	  - Investment-bank over-the-counter swap reporting under EMIR / Dodd-Frank using FIBO and ISDA's Common Domain Model.
-	  - Supply-chain product-master alignment via GS1 Web Vocabulary and schema.org Product.
+- ISO 21127:2014, cultural-heritage core ontology.
+- **81 classes** and 160 properties.
+- Deployed at the British Museum, Rijksmuseum, Smithsonian, J. Paul Getty Trust, Europeana digital library.
+- Extensions: **FRBRoo** (library catalogues) and **CRMsci** (scientific observation).
 
-	  **Automated reasoning and consistency checking**:
+  **FIBO (Financial Industry Business Ontology)**:
 
-	  - Detecting logical contradictions in clinical-decision-support knowledge bases (NCBO BioPortal validation tools).
-	  - Inferring drug-drug interactions from pharmacological-role axioms in NDF-RT and DrugBank.
-	  - Classifying patient subtypes from comorbidities via OWL 2 EL classification over SNOMED CT.
-	  - Consistency-checking regulatory rule bases (FIBO-aligned reporting templates).
+- EDM Council with **11,000+ terms** covering financial instruments, business entities, contracts, regulatory reporting.
+- Adopted by 30+ G-SIBs and central banks (Bank of England, ECB, Federal Reserve, Monetary Authority of Singapore) for regulatory data harmonisation.
+- Aligned with ISO 20022 financial-messaging standards.
 
-	  **Search and discovery enhancement**:
+  **GoodRelations**: Martin Hepp's e-commerce ontology, folded into schema.org Product/Offer hierarchy in 2012.
 
-	  - Powering Google's Knowledge Graph and rich-result snippets via schema.org.
-	  - Pinterest pin metadata and structured-data enrichment.
-	  - LinkedIn skill ontology and job-matching graph.
-	  - Amazon product taxonomy and Alexa shopping intents.
-	  - eBay product knowledge graph, BBC sports/programmes/music linked data.
+  **OBO Foundry biomedical ontologies**: 250+ coordinated ontologies including ChEBI (chemicals), HPO (human phenotype), Mondo (diseases), CL (cell ontology), GO, UBERON (anatomy), Protein Ontology, Plant Ontology — all sharing BFO grounding and reciprocal cross-references.
 
-	  **Scientific data integration**:
+### Use Cases / Major Families
 
-	  - Federated query across bioinformatics resources — UniProt, ChEBI, Ensembl, Reactome — annotated by OBO Foundry ontologies.
-	  - Cross-trial harmonisation in clinical research via CDISC SDTM and BRIDG.
-	  - Astronomy data via the International Virtual Observatory Alliance (IVOA) vocabularies.
-	  - Supports the **FAIR data principles** (Findable, Accessible, Interoperable, Reusable; Wilkinson et al. 2016).
+Domain ontologies discharge several distinct functional roles across science, industry and the public sector.
 
-	  **Regulatory reporting and compliance**:
+**Semantic interoperability across heterogeneous systems**:
 
-	  - FIBO underpins ISO 20022 financial-messaging extensions and EBA regulatory reporting.
-	  - CDISC standards (SDTM, ADaM) annotate clinical-trial datasets for FDA submissions.
-	  - CRO data-harmonisation pipelines align study terminology under ICH E6(R3).
-	  - EU AI Act dataset-provenance obligations from August 2026 drive ontology-typed annotation.
+- Data exchange between EHR vendors using SNOMED CT, ICD-11, LOINC and RxNorm under HL7 FHIR profiles.
+- Museum and gallery cataloguing exchange via CIDOC CRM, FRBRoo, EDM (Europeana Data Model).
+- Investment-bank over-the-counter swap reporting under EMIR / Dodd-Frank using FIBO and ISDA's Common Domain Model.
+- Supply-chain product-master alignment via GS1 Web Vocabulary and schema.org Product.
 
-	  **AI grounding and explainability**:
+  **Automated reasoning and consistency checking**:
 
-	  - Providing typed, checkable evidence trails for Retrieval-Augmented Generation, enabling provenance attribution down to the specific OWL class, axiom and source document underpinning each LLM-generated claim.
-	  - Supplying ontology-typed entities to Large Language Models for hallucination reduction — empirical work (Pan et al. 2024, *Unifying Large Language Models and Knowledge Graphs: A Roadmap*) shows ontology-grounded RAG cuts factual error rates by 30-60% across biomedical, financial and legal benchmarks.
-	  - Anchoring neuro-symbolic hybrid reasoners (OWL 2 entailment plus neural retrieval), supporting both forward inference (deriving new facts from axioms and evidence) and backward explanation (tracing an inference to its premises).
-	  - Driving the emerging Graph-RAG pattern (Microsoft Research 2024; LangChain, LlamaIndex, Neo4j, Stardog adoption) where community-detected sub-graphs of an ontology-typed knowledge graph are used as the retrieval unit rather than chunked plain text.
-	  - Supplying the typed dataset-provenance trails required under the EU AI Act high-risk-system documentation regime and the parallel UK AI Regulation framework, where the specific ontology version used for training-data annotation must be declared and audit-trailed.
-  - ### Components / Architecture
+- Detecting logical contradictions in clinical-decision-support knowledge bases (NCBO BioPortal validation tools).
+- Inferring drug-drug interactions from pharmacological-role axioms in NDF-RT and DrugBank.
+- Classifying patient subtypes from comorbidities via OWL 2 EL classification over SNOMED CT.
+- Consistency-checking regulatory rule bases (FIBO-aligned reporting templates).
 
-	  A production domain ontology comprises five architectural layers, each with its own conventions, tooling and quality criteria.
+  **Search and discovery enhancement**:
 
-	  **TBox (Terminological Box)** — the schema of the domain:
+- Powering Google's Knowledge Graph and rich-result snippets via schema.org.
+- Pinterest pin metadata and structured-data enrichment.
+- LinkedIn skill ontology and job-matching graph.
+- Amazon product taxonomy and Alexa shopping intents.
+- eBay product knowledge graph, BBC sports/programmes/music linked data.
 
-	  - Named **classes** (rdfs:Class, owl:Class) and **class expressions** (intersection, union, complement, restriction).
-	  - **Object properties** (owl:ObjectProperty) linking individuals to individuals.
-	  - **Data properties** (owl:DataProperty) linking individuals to XSD literals.
-	  - Axioms: **SubClassOf**, **EquivalentClasses**, **DisjointClasses**, **DisjointUnion**, property restrictions, cardinality constraints (Min/Max/Exact), property characteristics (Transitive, Symmetric, Functional, InverseFunctional, Asymmetric, Reflexive, Irreflexive), property chains, and key axioms (HasKey).
+  **Scientific data integration**:
 
-	  **ABox (Assertional Box)** — the instance data:
+- Federated query across bioinformatics resources — UniProt, ChEBI, Ensembl, Reactome — annotated by OBO Foundry ontologies.
+- Cross-trial harmonisation in clinical research via CDISC SDTM and BRIDG.
+- Astronomy data via the International Virtual Observatory Alliance (IVOA) vocabularies.
+- Supports the **FAIR data principles** (Findable, Accessible, Interoperable, Reusable; Wilkinson et al. 2016).
 
-	  - Named individuals (owl:NamedIndividual) — concrete entities like *Aspirin*, *Patient12345*, *MozartSymphony40*.
-	  - Class assertions (ClassAssertion) — instance-of facts.
-	  - Property assertions (ObjectPropertyAssertion, DataPropertyAssertion) — facts about relationships and attribute values.
-	  - SameIndividual / DifferentIndividuals assertions resolving identity under the open-world / no-unique-name assumption.
+  **Regulatory reporting and compliance**:
 
-	  **RBox (Role Box)** — present in expressive description logics SROIQ:
+- FIBO underpins ISO 20022 financial-messaging extensions and EBA regulatory reporting.
+- CDISC standards (SDTM, ADaM) annotate clinical-trial datasets for FDA submissions.
+- CRO data-harmonisation pipelines align study terminology under ICH E6(R3).
+- EU AI Act dataset-provenance obligations from August 2026 drive ontology-typed annotation.
 
-	  - Role hierarchies (SubObjectPropertyOf), role chains (e.g. *hasParent ∘ hasParent ⊑ hasGrandparent*).
-	  - Role disjointness, role symmetry/asymmetry constraints, inverse-property declarations.
+  **AI grounding and explainability**:
 
-	  **Lexical / Annotation layer**:
+- Providing typed, checkable evidence trails for Retrieval-Augmented Generation, enabling provenance attribution down to the specific OWL class, axiom and source document underpinning each LLM-generated claim.
+- Supplying ontology-typed entities to Large Language Models for hallucination reduction — empirical work (Pan et al. 2024, *Unifying Large Language Models and Knowledge Graphs: A Roadmap*) shows ontology-grounded RAG cuts factual error rates by 30-60% across biomedical, financial and legal benchmarks.
+- Anchoring neuro-symbolic hybrid reasoners (OWL 2 entailment plus neural retrieval), supporting both forward inference (deriving new facts from axioms and evidence) and backward explanation (tracing an inference to its premises).
+- Driving the emerging Graph-RAG pattern (Microsoft Research 2024; LangChain, LlamaIndex, Neo4j, Stardog adoption) where community-detected sub-graphs of an ontology-typed knowledge graph are used as the retrieval unit rather than chunked plain text.
+- Supplying the typed dataset-provenance trails required under the EU AI Act high-risk-system documentation regime and the parallel UK AI Regulation framework, where the specific ontology version used for training-data annotation must be declared and audit-trailed.
 
-	  - rdfs:label and rdfs:comment for primary natural-language labels.
-	  - skos:prefLabel, skos:altLabel, skos:hiddenLabel, skos:definition with multilingual @lang tags (@en, @de, @ja, @zh).
-	  - dcterms:title, dc:creator, dcterms:license, dcterms:modified, foaf:maker for bibliographic metadata.
+### Components / Architecture
 
-	  **Identifier and Provenance layer**:
+A production domain ontology comprises five architectural layers, each with its own conventions, tooling and quality criteria.
 
-	  - Dereferenceable IRIs following Cool URI principles (Berners-Lee 2006).
-	  - Namespace prefixes (foaf:, schema:, dct:, sio:, geo:, prov:).
-	  - PROV-O provenance triples (prov:wasDerivedFrom, prov:wasGeneratedBy, prov:wasAttributedTo).
-	  - Version IRIs, owl:versionInfo, dcterms:isVersionOf, OWL Imports closures.
-  - ### Academic Context
+**TBox (Terminological Box)** — the schema of the domain:
 
-	  Domain-ontology research is anchored in four overlapping research traditions.
+- Named **classes** (rdfs:Class, owl:Class) and **class expressions** (intersection, union, complement, restriction).
+- **Object properties** (owl:ObjectProperty) linking individuals to individuals.
+- **Data properties** (owl:DataProperty) linking individuals to XSD literals.
+- Axioms: **SubClassOf**, **EquivalentClasses**, **DisjointClasses**, **DisjointUnion**, property restrictions, cardinality constraints (Min/Max/Exact), property characteristics (Transitive, Symmetric, Functional, InverseFunctional, Asymmetric, Reflexive, Irreflexive), property chains, and key axioms (HasKey).
 
-	  **Description Logic community** (Franz Baader, Diego Calvanese, Carsten Lutz, Uli Sattler, Ian Horrocks, Boris Motik) provides the formal foundation:
+  **ABox (Assertional Box)** — the instance data:
 
-	  - The *Description Logic Handbook* (Baader, Calvanese, McGuinness, Nardi, Patel-Schneider 2003, second edition 2010) is the standard reference.
-	  - The annual DL Workshop and the conference series ISWC/ESWC drive theoretical advance.
-	  - **SROIQ(D)** is the description logic underpinning OWL 2 DL.
-	  - **EL++** underpins OWL 2 EL.
-	  - **DL-Lite** underpins OWL 2 QL.
+- Named individuals (owl:NamedIndividual) — concrete entities like *Aspirin*, *Patient12345*, *MozartSymphony40*.
+- Class assertions (ClassAssertion) — instance-of facts.
+- Property assertions (ObjectPropertyAssertion, DataPropertyAssertion) — facts about relationships and attribute values.
+- SameIndividual / DifferentIndividuals assertions resolving identity under the open-world / no-unique-name assumption.
 
-	  **Semantic Web community** was launched by Tim Berners-Lee, James Hendler and Ora Lassila's 2001 *Scientific American* article. Flagship venues include:
+  **RBox (Role Box)** — present in expressive description logics SROIQ:
 
-	  - The **International Semantic Web Conference (ISWC)** and the **Extended Semantic Web Conference (ESWC)**.
-	  - The *Journal of Web Semantics*, *Semantic Web Journal*, *Applied Ontology*.
-	  - The Linked Open Data movement (Berners-Lee 2006 five-star scheme; Bizer, Heath, Berners-Lee 2009) operationalised the Semantic Web vision into the 1,300+ datasets of the Linked Open Data Cloud.
+- Role hierarchies (SubObjectPropertyOf), role chains (e.g. *hasParent ∘ hasParent ⊑ hasGrandparent*).
+- Role disjointness, role symmetry/asymmetry constraints, inverse-property declarations.
 
-	  **Biomedical informatics community** emerged from the Gene Ontology consortium and the OBO Foundry. Anchors include:
+  **Lexical / Annotation layer**:
 
-	  - The **International Conference on Biomedical Ontology (ICBO)**.
-	  - The *Journal of Biomedical Semantics* and *Bioinformatics* journals.
-	  - Barry Smith's Buffalo group, Suzanna Lewis (LBNL), Chris Mungall (Monarch Initiative) and Michel Dumontier (Maastricht).
+- rdfs:label and rdfs:comment for primary natural-language labels.
+- skos:prefLabel, skos:altLabel, skos:hiddenLabel, skos:definition with multilingual @lang tags (@en, @de, @ja, @zh).
+- dcterms:title, dc:creator, dcterms:license, dcterms:modified, foaf:maker for bibliographic metadata.
 
-	  **Knowledge engineering community** traces a lineage from:
+  **Identifier and Provenance layer**:
 
-	  - **MYCIN** and **EMYCIN** (Stanford 1970s) — first generation expert systems demonstrating rule-based reasoning over symbolic knowledge bases.
-	  - **CYC** (Doug Lenat, MCC then Cycorp, 1984+) — the largest hand-engineered upper ontology, with 1.5M assertions and an associated reasoner (CycL, ResearchCyc, OpenCyc).
-	  - **KADS / CommonKADS** (Schreiber et al. 1999) — methodological framework for knowledge-based-system development.
-	  - **Ontology-driven information systems** (Guarino 1998) — repositioning ontology as an information-systems engineering discipline.
-	  - **Ontology-driven conceptual modelling** — Giancarlo Guizzardi's OntoUML and UFO, integrating BFO-style realism with UML.
+- Dereferenceable IRIs following Cool URI principles (Berners-Lee 2006).
+- Namespace prefixes (foaf:, schema:, dct:, sio:, geo:, prov:).
+- PROV-O provenance triples (prov:wasDerivedFrom, prov:wasGeneratedBy, prov:wasAttributedTo).
+- Version IRIs, owl:versionInfo, dcterms:isVersionOf, OWL Imports closures.
 
-	  The **Applied Ontology** journal (IOS Press, founded 2005 by Nicola Guarino and Mark Musen) is the field's interdisciplinary venue spanning philosophy, computer science and information systems.
-  - ### Current Landscape (2026)
+### Academic Context
 
-	  Five trends define the 2024-2026 state of domain-ontology practice.
+Domain-ontology research is anchored in four overlapping research traditions.
 
-	  **LLM-assisted ontology engineering**:
+**Description Logic community** (Franz Baader, Diego Calvanese, Carsten Lutz, Uli Sattler, Ian Horrocks, Boris Motik) provides the formal foundation:
 
-	  - **OntoGPT** (Chris Mungall and Monarch Initiative 2023+) generates structured ontology-typed extractions from natural-language text via constrained prompt templates.
-	  - **Onto-GPT**, **OWL Concept Drift Detection LLM**, and Protégé plugins invoking GPT-4/Claude/Gemini for axiom suggestion have moved from research prototype to production pilots at major OBO Foundry projects, EBI EMBL, and Wikimedia.
-	  - Empirical benchmarks (Caufield et al. 2024) show LLMs achieve **75-85% F1** against expert-curated gold standards for relation extraction in narrow biomedical domains.
+- The *Description Logic Handbook* (Baader, Calvanese, McGuinness, Nardi, Patel-Schneider 2003, second edition 2010) is the standard reference.
+- The annual DL Workshop and the conference series ISWC/ESWC drive theoretical advance.
+- **SROIQ(D)** is the description logic underpinning OWL 2 DL.
+- **EL++** underpins OWL 2 EL.
+- **DL-Lite** underpins OWL 2 QL.
 
-	  **Retrieval-Augmented Generation (RAG) over knowledge graphs**:
+  **Semantic Web community** was launched by Tim Berners-Lee, James Hendler and Ora Lassila's 2001 *Scientific American* article. Flagship venues include:
 
-	  - Vector embeddings of OWL classes (via SentenceTransformers, OpenAI text-embedding-3, Cohere embed-multilingual-v3) are joined to symbolic SPARQL retrieval to ground LLM answers in ontology-typed evidence.
-	  - Production deployments include Mayo Clinic clinical-decision support, Bloomberg financial KG, AstraZeneca drug-target retrieval.
-	  - The broader emergence of "Graph-RAG" patterns popularised by Microsoft Research (2024) and adopted by LangChain, LlamaIndex, Neo4j and Stardog.
+- The **International Semantic Web Conference (ISWC)** and the **Extended Semantic Web Conference (ESWC)**.
+- The *Journal of Web Semantics*, *Semantic Web Journal*, *Applied Ontology*.
+- The Linked Open Data movement (Berners-Lee 2006 five-star scheme; Bizer, Heath, Berners-Lee 2009) operationalised the Semantic Web vision into the 1,300+ datasets of the Linked Open Data Cloud.
 
-	  **Neuro-symbolic hybrid reasoners** combining OWL 2 entailment with neural inference:
+  **Biomedical informatics community** emerged from the Gene Ontology consortium and the OBO Foundry. Anchors include:
 
-	  - **EmEL++** — embedding-based EL reasoning.
-	  - **OWL2Vec\*** — knowledge-graph embeddings respecting OWL semantics.
-	  - **TransOWL** — translation-based OWL embeddings.
-	  - **BoxEL** — box embeddings for EL.
-	  - The broader programme of geometric description-logic embeddings (cone, ball, box).
+- The **International Conference on Biomedical Ontology (ICBO)**.
+- The *Journal of Biomedical Semantics* and *Bioinformatics* journals.
+- Barry Smith's Buffalo group, Suzanna Lewis (LBNL), Chris Mungall (Monarch Initiative) and Michel Dumontier (Maastricht).
 
-	  **FAIR and Open Science compliance**:
+  **Knowledge engineering community** traces a lineage from:
 
-	  - EU Horizon Europe and UKRI grant conditions increasingly require ontology-annotated data deposits.
-	  - The ELIXIR European bioinformatics infrastructure, the Joint Research Centre Knowledge for Policy platform, and the UK Data Service mandate ontology-grounded metadata.
-	  - Persistent identifier infrastructure (ORCID, ROR, DOI) increasingly integrates with ontology-typed provenance.
+- **MYCIN** and **EMYCIN** (Stanford 1970s) — first generation expert systems demonstrating rule-based reasoning over symbolic knowledge bases.
+- **CYC** (Doug Lenat, MCC then Cycorp, 1984+) — the largest hand-engineered upper ontology, with 1.5M assertions and an associated reasoner (CycL, ResearchCyc, OpenCyc).
+- **KADS / CommonKADS** (Schreiber et al. 1999) — methodological framework for knowledge-based-system development.
+- **Ontology-driven information systems** (Guarino 1998) — repositioning ontology as an information-systems engineering discipline.
+- **Ontology-driven conceptual modelling** — Giancarlo Guizzardi's OntoUML and UFO, integrating BFO-style realism with UML.
 
-	  **Regulatory adoption**:
+  The **Applied Ontology** journal (IOS Press, founded 2005 by Nicola Guarino and Mark Musen) is the field's interdisciplinary venue spanning philosophy, computer science and information systems.
 
-	  - NHS Digital's 2024 update to the Standard for Clinical Information Modelling mandates SNOMED CT.
-	  - The European Banking Authority (EBA) regulatory reporting standards align with FIBO.
-	  - The EU AI Act (Regulation 2024/1689) high-risk-system documentation requirements drive ontology-typed dataset provenance.
-	  - ISO/IEC 5259 series on data quality for analytics and machine learning leans on ontology-grounded annotation.
-  - ### UK Context
+### Current Landscape (2026)
 
-	  The United Kingdom is the largest single national contributor to ontology engineering after the United States, with leadership concentrated in Manchester, Oxford, Southampton, the Open University, Aberdeen, Imperial, UCL and Edinburgh, plus a Northern English industrial-translation belt running from Manchester through Leeds and Sheffield to Newcastle.
+Five trends define the 2024-2026 state of domain-ontology practice.
 
-	  **University of Manchester Information Management Group** (School of Computer Science) is arguably the world centre of OWL reasoning research:
+**LLM-assisted ontology engineering**:
 
-	  - **Uli Sattler** — co-author of OWL 2 DL with Ian Horrocks and Peter Patel-Schneider.
-	  - **Bijan Parsia** — long-time editor of the OWL specifications and author of the OWL API.
-	  - **Robert Stevens** — biomedical ontology engineering, OPPL.
-	  - **Yevgeny Kazakov** (now Ulm) — co-developer of ELK while at Manchester.
-	  - **Markus Krötzsch** (now Dresden) — ELK, OWL 2 EL theory.
+- **OntoGPT** (Chris Mungall and Monarch Initiative 2023+) generates structured ontology-typed extractions from natural-language text via constrained prompt templates.
+- **Onto-GPT**, **OWL Concept Drift Detection LLM**, and Protégé plugins invoking GPT-4/Claude/Gemini for axiom suggestion have moved from research prototype to production pilots at major OBO Foundry projects, EBI EMBL, and Wikimedia.
+- Empirical benchmarks (Caufield et al. 2024) show LLMs achieve **75-85% F1** against expert-curated gold standards for relation extraction in narrow biomedical domains.
 
-	  Together they have written most of the foundational software the field uses: the OWL API, the ELK reasoner, the Protégé OWL plugin lineage, and OPPL (the Ontology Pre-Processor Language). The Manchester syntax remains the dominant human-readable OWL serialisation in textbooks.
+  **Retrieval-Augmented Generation (RAG) over knowledge graphs**:
 
-	  **University of Oxford Information Systems Group** (Computer Science Department):
+- Vector embeddings of OWL classes (via SentenceTransformers, OpenAI text-embedding-3, Cohere embed-multilingual-v3) are joined to symbolic SPARQL retrieval to ground LLM answers in ontology-typed evidence.
+- Production deployments include Mayo Clinic clinical-decision support, Bloomberg financial KG, AstraZeneca drug-target retrieval.
+- The broader emergence of "Graph-RAG" patterns popularised by Microsoft Research (2024) and adopted by LangChain, LlamaIndex, Neo4j and Stardog.
 
-	  - **Ian Horrocks** (FREng, FRS, Royal Society Wolfson Research Merit Award) — OWL 2 DL co-author, HermiT co-author.
-	  - **Boris Motik** — HermiT, RDFox.
-	  - **Bernardo Cuenca Grau** — modular ontologies.
+  **Neuro-symbolic hybrid reasoners** combining OWL 2 entailment with neural inference:
 
-	  Oxford has produced **HermiT**, **RDFox** (Oxford Semantic Technologies spin-out), and the **SROIQ** description logic underpinning OWL 2 DL. RDFox is the leading in-memory Datalog/OWL 2 RL reasoner with deployments at Siemens, Festo, and the UK Office for National Statistics.
+- **EmEL++** — embedding-based EL reasoning.
+- **OWL2Vec\*** — knowledge-graph embeddings respecting OWL semantics.
+- **TransOWL** — translation-based OWL embeddings.
+- **BoxEL** — box embeddings for EL.
+- The broader programme of geometric description-logic embeddings (cone, ball, box).
 
-	  **University of Southampton Web and Internet Science** (Electronics and Computer Science) is the spiritual home of the Semantic Web:
+  **FAIR and Open Science compliance**:
 
-	  - **Sir Tim Berners-Lee** holds a chair there.
-	  - **Dame Wendy Hall** and **Sir Nigel Shadbolt** (now Oxford) anchor the Web Science Trust.
-	  - 20 years of linked-data, decentralised-web (Solid), and ontology-engineering research.
+- EU Horizon Europe and UKRI grant conditions increasingly require ontology-annotated data deposits.
+- The ELIXIR European bioinformatics infrastructure, the Joint Research Centre Knowledge for Policy platform, and the UK Data Service mandate ontology-grounded metadata.
+- Persistent identifier infrastructure (ORCID, ROR, DOI) increasingly integrates with ontology-typed provenance.
 
-	  **Open University Knowledge Media Institute (KMI)** under **Enrico Motta**, **John Domingue**, and (formerly) **Aldo Gangemi** has produced ODP catalogues, the Lyrasis ontology engineering environment, and the EU-funded NeOn methodology. KMI authored a generation of EU H2020 ontology-engineering deliverables.
+  **Regulatory adoption**:
 
-	  **University of Aberdeen Computing Science** under (formerly) **Wilfred Bonney**, **Derek Sleeman**, and the Computing Science department has long-standing strengths in medical-informatics ontology research, AI in medicine, and ontology-driven decision support.
+- NHS Digital's 2024 update to the Standard for Clinical Information Modelling mandates SNOMED CT.
+- The European Banking Authority (EBA) regulatory reporting standards align with FIBO.
+- The EU AI Act (Regulation 2024/1689) high-risk-system documentation requirements drive ontology-typed dataset provenance.
+- ISO/IEC 5259 series on data quality for analytics and machine learning leans on ontology-grounded annotation.
 
-	  **Imperial College Department of Computing** hosts active description-logic and semantic-web research. **UCL Web and Internet Science** anchors London-based ontology research, closely tied to Solid (Inrupt) and the Open Data Institute. **University of Edinburgh Centre for Intelligent Systems and their Applications (CISA)** under **Alan Bundy**, **David Robertson**, and the Artificial Intelligence Applications Institute (AIAI) drives ontology-mediated multi-agent systems and proof-planning research.
+### UK Context
 
-	  **UK industrial and public-sector deployments**:
+The United Kingdom is the largest single national contributor to ontology engineering after the United States, with leadership concentrated in Manchester, Oxford, Southampton, the Open University, Aberdeen, Imperial, UCL and Edinburgh, plus a Northern English industrial-translation belt running from Manchester through Leeds and Sheffield to Newcastle.
 
-	  - **NHS England** — SNOMED CT national licensing since 2018.
-	  - **Ordnance Survey** — Linked Data publication, ontology-mediated geospatial reasoning.
-	  - **BBC** — programme/music/sport linked-data ontologies powering bbc.co.uk.
-	  - **British Library** — BL bibliographic ontology, ISNI authority files.
-	  - **The National Archives** — Discovery catalogue ontology, digital-preservation ontologies.
-	  - **UK Office for National Statistics** — RDF Data Cube vocabulary, FIBO alignment.
-	  - **HM Land Registry** — RDF/OWL property ontology.
-	  - **Met Office** — climate-data ontology.
-	  - **Alan Turing Institute** — cross-domain knowledge-graph research.
+**University of Manchester Information Management Group** (School of Computer Science) is arguably the world centre of OWL reasoning research:
 
-	  The Northern English industrial belt provides the translation layer between academic research and commercial deployment:
+- **Uli Sattler** — co-author of OWL 2 DL with Ian Horrocks and Peter Patel-Schneider.
+- **Bijan Parsia** — long-time editor of the OWL specifications and author of the OWL API.
+- **Robert Stevens** — biomedical ontology engineering, OPPL.
+- **Yevgeny Kazakov** (now Ulm) — co-developer of ELK while at Manchester.
+- **Markus Krötzsch** (now Dresden) — ELK, OWL 2 EL theory.
 
-	  - **Manchester** — Ontotext UK office, IBM Hursley spillover, OpenLink Software UK, and the spin-out trail from the University of Manchester Information Management Group feeding into both global vendors and bespoke NHS-Digital consultancies.
-	  - **Leeds** — NHS Digital (operator of the UK SNOMED CT National Release Centre), Tessella, Northern Health Science Alliance, and the broader healthcare-IT ecosystem clustered around Leeds General Infirmary and the University of Leeds School of Computing.
-	  - **Sheffield** — NLP and information-extraction strength at the Sheffield NLP group (which authored the influential GATE — General Architecture for Text Engineering — toolkit underpinning many ontology-population pipelines), Sheffield Hallam's machine-learning groups, and a dense cluster of legal-tech and life-sciences startups.
-	  - **Newcastle** — Newcastle University Digital Institute, the Open Lab human-computer-interaction group, and semantic-systems consultancies serving Northumbrian Water, Sage, and regional NHS trusts.
+  Together they have written most of the foundational software the field uses: the OWL API, the ELK reasoner, the Protégé OWL plugin lineage, and OPPL (the Ontology Pre-Processor Language). The Manchester syntax remains the dominant human-readable OWL serialisation in textbooks.
 
-	  The UK's Royal Society and the British Computer Society have run sustained programmes on knowledge representation and the Semantic Web since the early 2000s, with the BCS Specialist Group on Artificial Intelligence (SGAI) hosting an annual ontology-engineering stream and the Royal Society 2017 *Machine Learning* report explicitly singling out ontology engineering as a strategic UK strength to be preserved and extended.
+  **University of Oxford Information Systems Group** (Computer Science Department):
 
-	  UKRI funding via EPSRC (Engineering and Physical Sciences Research Council), BBSRC (Biotechnology and Biological Sciences Research Council) and MRC (Medical Research Council) has sustained ontology-engineering research through Centres for Doctoral Training (CDTs) at Manchester, Oxford, Southampton and Edinburgh, and through programme grants such as the £6M *WhatIf Machine Learning over Knowledge Graphs* (Manchester / Oxford 2019-2024) and the £8M *Trustworthy Autonomous Systems Hub* (Southampton-led, 2020-2025) which routes substantial work-package funding into ontology-grounded provenance and explainability research aligned with the EU AI Act compliance regime.
-  - ### Future Directions (2026-2030)
+- **Ian Horrocks** (FREng, FRS, Royal Society Wolfson Research Merit Award) — OWL 2 DL co-author, HermiT co-author.
+- **Boris Motik** — HermiT, RDFox.
+- **Bernardo Cuenca Grau** — modular ontologies.
 
-	  Six trajectories will shape the next half-decade.
+  Oxford has produced **HermiT**, **RDFox** (Oxford Semantic Technologies spin-out), and the **SROIQ** description logic underpinning OWL 2 DL. RDFox is the leading in-memory Datalog/OWL 2 RL reasoner with deployments at Siemens, Festo, and the UK Office for National Statistics.
 
-	  **LLM-Ontology Co-Engineering**:
+  **University of Southampton Web and Internet Science** (Electronics and Computer Science) is the spiritual home of the Semantic Web:
 
-	  - The 2025-2026 generation of LLM-assisted authoring tools will mature into integrated environments where domain experts express requirements in natural language while LLMs propose candidate axioms validated against description-logic consistency checks.
-	  - Caufield et al. 2024 OntoGPT benchmarks suggest the technology will reach production parity with expert curators for narrow biomedical relation extraction by **2027**.
-	  - Protégé and TopBraid plugin marketplaces will offer LLM-powered axiom drafting, competency-question generation, and pattern selection assistants.
+- **Sir Tim Berners-Lee** holds a chair there.
+- **Dame Wendy Hall** and **Sir Nigel Shadbolt** (now Oxford) anchor the Web Science Trust.
+- 20 years of linked-data, decentralised-web (Solid), and ontology-engineering research.
 
-	  **Neuro-symbolic Reasoning at Scale**:
+  **Open University Knowledge Media Institute (KMI)** under **Enrico Motta**, **John Domingue**, and (formerly) **Aldo Gangemi** has produced ODP catalogues, the Lyrasis ontology engineering environment, and the EU-funded NeOn methodology. KMI authored a generation of EU H2020 ontology-engineering deliverables.
 
-	  - Hybrid systems combining OWL 2 entailment with vector-based retrieval will dominate enterprise knowledge graphs.
-	  - Vendors (Stardog, Ontotext, Neo4j, RDFox) embed RAG-over-KG capabilities natively.
-	  - Convergence with the broader Graph-RAG paradigm pioneered by Microsoft Research, LangChain and LlamaIndex will mainstream ontology grounding in LLM applications.
-	  - Description-logic embedding methods (BoxEL, EmEL++, OWL2Vec\*) will reach competitive performance with symbolic reasoners on subclass-classification benchmarks.
+  **University of Aberdeen Computing Science** under (formerly) **Wilfred Bonney**, **Derek Sleeman**, and the Computing Science department has long-standing strengths in medical-informatics ontology research, AI in medicine, and ontology-driven decision support.
 
-	  **Decentralised Ontology Publication via Solid and IPFS**:
+  **Imperial College Department of Computing** hosts active description-logic and semantic-web research. **UCL Web and Internet Science** anchors London-based ontology research, closely tied to Solid (Inrupt) and the Open Data Institute. **University of Edinburgh Centre for Intelligent Systems and their Applications (CISA)** under **Alan Bundy**, **David Robertson**, and the Artificial Intelligence Applications Institute (AIAI) drives ontology-mediated multi-agent systems and proof-planning research.
 
-	  - Building on Tim Berners-Lee's Solid Project, ontology publication will increasingly use content-addressed identifiers (CIDs over IPFS) and Decentralised Identifiers (DIDs, W3C Recommendation 2022) for verifiable, censorship-resistant vocabulary publication.
-	  - The 2025 W3C Data Privacy Vocabularies and Controls Community Group standardisation work points this direction.
-	  - Cryptographic vocabulary signing via Verifiable Credentials will become standard for high-stakes ontologies (clinical, regulatory).
+  **UK industrial and public-sector deployments**:
 
-	  **AI Act Compliance and Ontology-Backed Provenance**:
+- **NHS England** — SNOMED CT national licensing since 2018.
+- **Ordnance Survey** — Linked Data publication, ontology-mediated geospatial reasoning.
+- **BBC** — programme/music/sport linked-data ontologies powering bbc.co.uk.
+- **British Library** — BL bibliographic ontology, ISNI authority files.
+- **The National Archives** — Discovery catalogue ontology, digital-preservation ontologies.
+- **UK Office for National Statistics** — RDF Data Cube vocabulary, FIBO alignment.
+- **HM Land Registry** — RDF/OWL property ontology.
+- **Met Office** — climate-data ontology.
+- **Alan Turing Institute** — cross-domain knowledge-graph research.
 
-	  - EU Regulation 2024/1689 (AI Act, in force August 2024 with high-risk-system obligations from August 2026) requires high-risk AI systems to maintain detailed dataset provenance, including domain ontology versions used for annotation.
-	  - PROV-O extensions and DCAT-AP integration will become mandatory infrastructure.
-	  - UK regulators (ICO, FCA, MHRA) will adopt analogous ontology-grounded provenance requirements under the UK AI Regulation White Paper.
+  The Northern English industrial belt provides the translation layer between academic research and commercial deployment:
 
-	  **Foundation Models for Ontology Alignment**:
+- **Manchester** — Ontotext UK office, IBM Hursley spillover, OpenLink Software UK, and the spin-out trail from the University of Manchester Information Management Group feeding into both global vendors and bespoke NHS-Digital consultancies.
+- **Leeds** — NHS Digital (operator of the UK SNOMED CT National Release Centre), Tessella, Northern Health Science Alliance, and the broader healthcare-IT ecosystem clustered around Leeds General Infirmary and the University of Leeds School of Computing.
+- **Sheffield** — NLP and information-extraction strength at the Sheffield NLP group (which authored the influential GATE — General Architecture for Text Engineering — toolkit underpinning many ontology-population pipelines), Sheffield Hallam's machine-learning groups, and a dense cluster of legal-tech and life-sciences startups.
+- **Newcastle** — Newcastle University Digital Institute, the Open Lab human-computer-interaction group, and semantic-systems consultancies serving Northumbrian Water, Sage, and regional NHS trusts.
 
-	  - The long-standing OAEI (Ontology Alignment Evaluation Initiative) benchmark series will shift toward LLM-grounded systems that combine lexical, structural and semantic embedding-based matching.
-	  - Measurable gains on the OAEI Anatomy, Biodiversity, and Multifarm tracks expected through 2027.
-	  - Cross-lingual ontology alignment will accelerate, particularly for low-resource biomedical and cultural-heritage domains.
+  The UK's Royal Society and the British Computer Society have run sustained programmes on knowledge representation and the Semantic Web since the early 2000s, with the BCS Specialist Group on Artificial Intelligence (SGAI) hosting an annual ontology-engineering stream and the Royal Society 2017 *Machine Learning* report explicitly singling out ontology engineering as a strategic UK strength to be preserved and extended.
 
-	  **Domain-Specific Foundation Ontologies**:
+  UKRI funding via EPSRC (Engineering and Physical Sciences Research Council), BBSRC (Biotechnology and Biological Sciences Research Council) and MRC (Medical Research Council) has sustained ontology-engineering research through Centres for Doctoral Training (CDTs) at Manchester, Oxford, Southampton and Edinburgh, and through programme grants such as the £6M *WhatIf Machine Learning over Knowledge Graphs* (Manchester / Oxford 2019-2024) and the £8M *Trustworthy Autonomous Systems Hub* (Southampton-led, 2020-2025) which routes substantial work-package funding into ontology-grounded provenance and explainability research aligned with the EU AI Act compliance regime.
 
-	  - BFO ISO/IEC 21838-2:2020 will be joined by domain-specific ISO standards.
-	  - In progress: ISO/IEC 21838-3 for the **Industrial Ontologies Foundry** and nascent work on a digital-twin reference ontology under ISO 23247 leveraging BFO and the Common Core Ontologies.
-	  - UK contributions will include the proposed **Ordnance Survey Foundation Data Reference Ontology** and the Alan Turing Institute's cross-domain knowledge-graph reference architecture.
-  - ### Research and Literature
-	  Foundational and contemporary references that frame the domain-ontology field.
-	  - **Foundational Works**:
-	    1. Gruber, T.R. (1993). *A Translation Approach to Portable Ontology Specifications*. Knowledge Acquisition 5(2): 199-220. DOI: 10.1006/knac.1993.1008. [Definitive 1993 paper coining the working definition]
-	    2. Studer, R., Benjamins, V.R., & Fensel, D. (1998). *Knowledge Engineering: Principles and Methods*. Data & Knowledge Engineering 25(1-2): 161-197. DOI: 10.1016/S0169-023X(97)00056-6. [The "formal, explicit, shared" refinement]
-	    3. Sowa, J.F. (2000). *Knowledge Representation: Logical, Philosophical, and Computational Foundations*. Brooks/Cole. ISBN 978-0-534-94965-5. [Canonical textbook]
-	    4. Smith, B., & Ceusters, W. (2010). Ontological Realism: A Methodology for Coordinated Evolution of Scientific Ontologies. *Applied Ontology* 5(3-4): 139-188. [BFO realist methodology]
-	    5. Guarino, N. (1998). Formal Ontology and Information Systems. *Proceedings of FOIS 1998*: 3-15. IOS Press. [DOLCE foundations]
-	  - **Languages and Standards**:
-	    6. W3C OWL 2 Web Ontology Language Document Overview (Second Edition). W3C Recommendation 11 December 2012. https://www.w3.org/TR/owl2-overview/
-	    7. W3C RDF 1.1 Concepts and Abstract Syntax. W3C Recommendation 25 February 2014. https://www.w3.org/TR/rdf11-concepts/
-	    8. W3C SKOS Simple Knowledge Organization System Reference. W3C Recommendation 18 August 2009. https://www.w3.org/TR/skos-reference/
-	    9. W3C SPARQL 1.1 Query Language. W3C Recommendation 21 March 2013. https://www.w3.org/TR/sparql11-query/
-	    10. ISO/IEC 21838-2:2020 *Information technology — Top-level ontologies (TLO) — Part 2: Basic Formal Ontology (BFO)*. International Organization for Standardization, Geneva.
-	    11. ISO/IEC 24707:2018 *Information technology — Common Logic (CL) — A framework for a family of logic-based languages*. International Organization for Standardization, Geneva.
-	    12. ISO 21127:2014 *Information and documentation — A reference ontology for the interchange of cultural heritage information (CIDOC CRM)*. International Organization for Standardization, Geneva.
-	  - **Methodologies**:
-	    13. Fernández-López, M., Gómez-Pérez, A., & Juristo, N. (1997). METHONTOLOGY: From Ontological Art Towards Ontological Engineering. *AAAI-97 Spring Symposium on Ontological Engineering*. [METHONTOLOGY]
-	    14. Suárez-Figueroa, M.C., Gómez-Pérez, A., Motta, E., & Gangemi, A. (eds.) (2012). *Ontology Engineering in a Networked World*. Springer. ISBN 978-3-642-24793-4. [NeOn methodology compendium]
-	    15. Gangemi, A., & Presutti, V. (2009). Ontology Design Patterns. In Staab & Studer (eds.) *Handbook on Ontologies* (2nd ed.), Springer: 221-243. [ODP foundations]
-	    16. Wisniewski, D., Potoniec, J., Lawrynowicz, A., & Keet, C.M. (2019). Analysis of Ontology Competency Questions and Their Formalisations. *Journal of Web Semantics* 59: 100534. [Lean OE / competency questions]
-	  - **Description Logic and Reasoning**:
-	    17. Baader, F., Calvanese, D., McGuinness, D.L., Nardi, D., & Patel-Schneider, P.F. (eds.) (2010). *The Description Logic Handbook: Theory, Implementation, and Applications* (2nd edition). Cambridge University Press. ISBN 978-0-521-15011-8.
-	    18. Horrocks, I., Kutz, O., & Sattler, U. (2006). The Even More Irresistible SROIQ. *Proceedings of KR 2006*: 57-67. [SROIQ logic underlying OWL 2 DL]
-	    19. Kazakov, Y., Krötzsch, M., & Simančík, F. (2014). The Incredible ELK: From Polynomial Procedures to Efficient Reasoning with EL Ontologies. *Journal of Automated Reasoning* 53(1): 1-61. [ELK reasoner]
-	    20. Glimm, B., Horrocks, I., Motik, B., Stoilos, G., & Wang, Z. (2014). HermiT: An OWL 2 Reasoner. *Journal of Automated Reasoning* 53(3): 245-269.
-	  - **Landmark Domain Ontologies**:
-	    21. Ashburner, M., Ball, C.A., Blake, J.A., Botstein, D., Butler, H., Cherry, J.M., Davis, A.P., et al. (2000). Gene Ontology: Tool for the Unification of Biology. *Nature Genetics* 25: 25-29. DOI: 10.1038/75556. [GO founding paper]
-	    22. Spackman, K.A., Campbell, K.E., & Côté, R.A. (1997). SNOMED RT: A Reference Terminology for Health Care. *Proceedings of AMIA Annual Symposium*: 640-644. [SNOMED CT predecessor]
-	    23. Hepp, M. (2008). GoodRelations: An Ontology for Describing Products and Services Offers on the Web. *EKAW 2008* LNAI 5268: 329-346. [E-commerce ontology absorbed by schema.org]
-	    24. Doerr, M. (2003). The CIDOC Conceptual Reference Module: An Ontological Approach to Semantic Interoperability of Metadata. *AI Magazine* 24(3): 75-92. [CIDOC CRM]
-	    25. Bennett, M., Allemang, D., et al. (2018). FIBO: The Financial Industry Business Ontology. EDM Council technical report. https://spec.edmcouncil.org/fibo/
-	  - **Linked Data and Knowledge Graphs**:
-	    26. Berners-Lee, T. (2006). Linked Data — Design Issues. W3C Note. https://www.w3.org/DesignIssues/LinkedData.html [Five-star LOD scheme]
-	    27. Bizer, C., Heath, T., & Berners-Lee, T. (2009). Linked Data — The Story So Far. *International Journal on Semantic Web and Information Systems* 5(3): 1-22.
-	    28. Hogan, A., Blomqvist, E., Cochez, M., d'Amato, C., de Melo, G., Gutierrez, C., et al. (2021). Knowledge Graphs. *ACM Computing Surveys* 54(4): Article 71, 37 pages. DOI: 10.1145/3447772. [Comprehensive KG survey]
-	    29. Wilkinson, M.D., Dumontier, M., Aalbersberg, I.J., et al. (2016). The FAIR Guiding Principles for Scientific Data Management and Stewardship. *Scientific Data* 3: 160018. DOI: 10.1038/sdata.2016.18. [FAIR principles]
-	  - **2024-2026 LLM-Ontology Integration**:
-	    30. Caufield, J.H., Hegde, H., Emonet, V., Harris, N.L., Joachimiak, M.P., Matentzoglu, N., et al. (2024). Structured Prompt Interrogation and Recursive Extraction of Semantics (SPIRES): A Method for Populating Knowledge Bases Using Zero-Shot Learning. *Bioinformatics* 40(3): btae104. DOI: 10.1093/bioinformatics/btae104. [OntoGPT]
-	    31. Edge, D., Trinh, H., Cheng, N., Bradley, J., Chao, A., Mody, A., et al. (2024). From Local to Global: A Graph RAG Approach to Query-Focused Summarization. Microsoft Research arXiv:2404.16130.
-  - ## Metadata
-	  - **Last Updated**: 2026-05-16
-	  - **Review Status**: Comprehensive editorial review during Phase 6 enrichment sprint
-	  - **Verification**: Standards references verified against W3C published Recommendations (OWL 2 2009/2012, RDF 1.1 2014, SKOS 2009, SPARQL 1.1 2013) and ISO official catalogue (ISO/IEC 21838-2:2020, ISO/IEC 24707:2018, ISO 21127:2014); academic citations verified against DOI registries, Springer/Elsevier/Cambridge University Press metadata, arXiv, and Journal of Web Semantics archives; deployment statistics cross-referenced against SNOMED International annual report 2024, Gene Ontology Consortium annual report, schema.org W3Techs surveys 2024, Wikidata statistics dashboard
-	  - **Regional Context**: UK academic institutions covered (Manchester Information Management Group as OWL reasoner / OWL API origin, Oxford Information Systems Group as HermiT/RDFox origin, Southampton Web Science as Semantic Web origin under Berners-Lee/Hall/Shadbolt, Open University KMI for ODPs and NeOn methodology, Aberdeen Computing Science for medical-informatics ontologies, Imperial Department of Computing, UCL Web and Internet Science, Edinburgh CISA/AIAI); UK industrial deployments (NHS England SNOMED CT, Ordnance Survey, BBC, British Library, The National Archives, ONS, HM Land Registry, Met Office, Alan Turing Institute); Northern English industrial belt (Manchester, Leeds, Sheffield, Newcastle) translation layer detailed
-	  - **Domain Note**: Retained existing `domain:: infrastructure` classification — consistent with corpus convention placing ontology and knowledge-representation infrastructure (alongside [[Decentralised Web]] IF-1024, [[Data Layer]] IF-1042) under the infrastructure namespace rather than introducing a new `knowledge-representation` domain. IRI/URI unchanged from prior stub
-	  - **Domain Drift Correction**: Stub legacy term-id `RB-9005` (robotics domain) and stub "robotics and automation" body content removed — original migration mis-assigned this concept to robotics. Corrected `legacy-term-id` to `IF-1057` (infrastructure series) reflecting the concept's general knowledge-representation scope rather than a robotics-specific specialisation
-	  - **Production-Ready**: Complete OWL formal semantics (43 axioms across compositional/dependency/capability/implementation/reduction/association/data-property/property-constraint families), comprehensive content coverage (foundations, languages and standards, methodologies, reasoning ecosystem, tooling, landmark ontologies, use cases, components/architecture, academic context, current landscape 2026, UK context, future directions 2026-2030), 31 academic and standards citations
-	  - **Authority Score**: 0.87 (foundational knowledge-representation concept underpinning Semantic Web, FAIR data, regulatory data harmonisation, LLM grounding; W3C-standardised through OWL 2 / RDF / SKOS / SPARQL; ISO-standardised through BFO / Common Logic / CIDOC CRM; deployed across 60+ national health systems via SNOMED CT, 45M+ websites via schema.org, 110M+ items via Wikidata, 30+ G-SIBs via FIBO; strong UK contributions through Manchester / Oxford / Southampton / Open University / Aberdeen)
+### Future Directions (2026-2030)
 
-- ### Provenance
-  - **domain-note:** Stub `legacy-term-id:: RB-9005` (robotics) corrected to `IF-1057` (infrastructure) reflecting the concept's general knowledge-representation scope rather than robotics-specific specialisation; original stub body discussed only IEEE 1872-2015 robotics ontology, replaced with full Phase-6 coverage of Gruber/Sowa/Smith/Guarino foundations, OWL 2 / RDF / SKOS / SPARQL standards, METHONTOLOGY/NeOn/ODP/Lean methodologies, landmark domain ontologies (SNOMED CT / GO / MeSH / ICD-11 / FOAF / DCMI / schema.org / Wikidata / DBpedia / CIDOC CRM / FIBO), reasoner ecosystem (Pellet/HermiT/ELK/Konclude/Fact++/Whelk-rs), tooling (Protégé / TopBraid / PoolParty / RDFox / GraphDB / Stardog / Jena / Oxigraph / TerminusDB), and 2024-2026 LLM integration (OntoGPT / Graph-RAG / neuro-symbolic)
+Six trajectories will shape the next half-decade.
+
+**LLM-Ontology Co-Engineering**:
+
+- The 2025-2026 generation of LLM-assisted authoring tools will mature into integrated environments where domain experts express requirements in natural language while LLMs propose candidate axioms validated against description-logic consistency checks.
+- Caufield et al. 2024 OntoGPT benchmarks suggest the technology will reach production parity with expert curators for narrow biomedical relation extraction by **2027**.
+- Protégé and TopBraid plugin marketplaces will offer LLM-powered axiom drafting, competency-question generation, and pattern selection assistants.
+
+  **Neuro-symbolic Reasoning at Scale**:
+
+- Hybrid systems combining OWL 2 entailment with vector-based retrieval will dominate enterprise knowledge graphs.
+- Vendors (Stardog, Ontotext, Neo4j, RDFox) embed RAG-over-KG capabilities natively.
+- Convergence with the broader Graph-RAG paradigm pioneered by Microsoft Research, LangChain and LlamaIndex will mainstream ontology grounding in LLM applications.
+- Description-logic embedding methods (BoxEL, EmEL++, OWL2Vec\*) will reach competitive performance with symbolic reasoners on subclass-classification benchmarks.
+
+  **Decentralised Ontology Publication via Solid and IPFS**:
+
+- Building on Tim Berners-Lee's Solid Project, ontology publication will increasingly use content-addressed identifiers (CIDs over IPFS) and Decentralised Identifiers (DIDs, W3C Recommendation 2022) for verifiable, censorship-resistant vocabulary publication.
+- The 2025 W3C Data Privacy Vocabularies and Controls Community Group standardisation work points this direction.
+- Cryptographic vocabulary signing via Verifiable Credentials will become standard for high-stakes ontologies (clinical, regulatory).
+
+  **AI Act Compliance and Ontology-Backed Provenance**:
+
+- EU Regulation 2024/1689 (AI Act, in force August 2024 with high-risk-system obligations from August 2026) requires high-risk AI systems to maintain detailed dataset provenance, including domain ontology versions used for annotation.
+- PROV-O extensions and DCAT-AP integration will become mandatory infrastructure.
+- UK regulators (ICO, FCA, MHRA) will adopt analogous ontology-grounded provenance requirements under the UK AI Regulation White Paper.
+
+  **Foundation Models for Ontology Alignment**:
+
+- The long-standing OAEI (Ontology Alignment Evaluation Initiative) benchmark series will shift toward LLM-grounded systems that combine lexical, structural and semantic embedding-based matching.
+- Measurable gains on the OAEI Anatomy, Biodiversity, and Multifarm tracks expected through 2027.
+- Cross-lingual ontology alignment will accelerate, particularly for low-resource biomedical and cultural-heritage domains.
+
+  **Domain-Specific Foundation Ontologies**:
+
+- BFO ISO/IEC 21838-2:2020 will be joined by domain-specific ISO standards.
+- In progress: ISO/IEC 21838-3 for the **Industrial Ontologies Foundry** and nascent work on a digital-twin reference ontology under ISO 23247 leveraging BFO and the Common Core Ontologies.
+- UK contributions will include the proposed **Ordnance Survey Foundation Data Reference Ontology** and the Alan Turing Institute's cross-domain knowledge-graph reference architecture.
+
+### Research and Literature
+
+Foundational and contemporary references that frame the domain-ontology field.
+
+- **Foundational Works**:
+  1. Gruber, T.R. (1993). *A Translation Approach to Portable Ontology Specifications*. Knowledge Acquisition 5(2): 199-220. DOI: 10.1006/knac.1993.1008. [Definitive 1993 paper coining the working definition]
+  2. Studer, R., Benjamins, V.R., & Fensel, D. (1998). *Knowledge Engineering: Principles and Methods*. Data & Knowledge Engineering 25(1-2): 161-197. DOI: 10.1016/S0169-023X(97)00056-6. [The "formal, explicit, shared" refinement]
+  3. Sowa, J.F. (2000). *Knowledge Representation: Logical, Philosophical, and Computational Foundations*. Brooks/Cole. ISBN 978-0-534-94965-5. [Canonical textbook]
+  4. Smith, B., & Ceusters, W. (2010). Ontological Realism: A Methodology for Coordinated Evolution of Scientific Ontologies. *Applied Ontology* 5(3-4): 139-188. [BFO realist methodology]
+  5. Guarino, N. (1998). Formal Ontology and Information Systems. *Proceedings of FOIS 1998*: 3-15. IOS Press. [DOLCE foundations]
+- **Languages and Standards**:
+  6. W3C OWL 2 Web Ontology Language Document Overview (Second Edition). W3C Recommendation 11 December 2012. https://www.w3.org/TR/owl2-overview/
+  7. W3C RDF 1.1 Concepts and Abstract Syntax. W3C Recommendation 25 February 2014. https://www.w3.org/TR/rdf11-concepts/
+  8. W3C SKOS Simple Knowledge Organization System Reference. W3C Recommendation 18 August 2009. https://www.w3.org/TR/skos-reference/
+  9. W3C SPARQL 1.1 Query Language. W3C Recommendation 21 March 2013. https://www.w3.org/TR/sparql11-query/
+  10. ISO/IEC 21838-2:2020 *Information technology — Top-level ontologies (TLO) — Part 2: Basic Formal Ontology (BFO)*. International Organization for Standardization, Geneva.
+  11. ISO/IEC 24707:2018 *Information technology — Common Logic (CL) — A framework for a family of logic-based languages*. International Organization for Standardization, Geneva.
+  12. ISO 21127:2014 *Information and documentation — A reference ontology for the interchange of cultural heritage information (CIDOC CRM)*. International Organization for Standardization, Geneva.
+- **Methodologies**:
+  13. Fernández-López, M., Gómez-Pérez, A., & Juristo, N. (1997). METHONTOLOGY: From Ontological Art Towards Ontological Engineering. *AAAI-97 Spring Symposium on Ontological Engineering*. [METHONTOLOGY]
+  14. Suárez-Figueroa, M.C., Gómez-Pérez, A., Motta, E., & Gangemi, A. (eds.) (2012). *Ontology Engineering in a Networked World*. Springer. ISBN 978-3-642-24793-4. [NeOn methodology compendium]
+  15. Gangemi, A., & Presutti, V. (2009). Ontology Design Patterns. In Staab & Studer (eds.) *Handbook on Ontologies* (2nd ed.), Springer: 221-243. [ODP foundations]
+  16. Wisniewski, D., Potoniec, J., Lawrynowicz, A., & Keet, C.M. (2019). Analysis of Ontology Competency Questions and Their Formalisations. *Journal of Web Semantics* 59: 100534. [Lean OE / competency questions]
+- **Description Logic and Reasoning**:
+  17. Baader, F., Calvanese, D., McGuinness, D.L., Nardi, D., & Patel-Schneider, P.F. (eds.) (2010). *The Description Logic Handbook: Theory, Implementation, and Applications* (2nd edition). Cambridge University Press. ISBN 978-0-521-15011-8.
+  18. Horrocks, I., Kutz, O., & Sattler, U. (2006). The Even More Irresistible SROIQ. *Proceedings of KR 2006*: 57-67. [SROIQ logic underlying OWL 2 DL]
+  19. Kazakov, Y., Krötzsch, M., & Simančík, F. (2014). The Incredible ELK: From Polynomial Procedures to Efficient Reasoning with EL Ontologies. *Journal of Automated Reasoning* 53(1): 1-61. [ELK reasoner]
+  20. Glimm, B., Horrocks, I., Motik, B., Stoilos, G., & Wang, Z. (2014). HermiT: An OWL 2 Reasoner. *Journal of Automated Reasoning* 53(3): 245-269.
+- **Landmark Domain Ontologies**:
+  21. Ashburner, M., Ball, C.A., Blake, J.A., Botstein, D., Butler, H., Cherry, J.M., Davis, A.P., et al. (2000). Gene Ontology: Tool for the Unification of Biology. *Nature Genetics* 25: 25-29. DOI: 10.1038/75556. [GO founding paper]
+  22. Spackman, K.A., Campbell, K.E., & Côté, R.A. (1997). SNOMED RT: A Reference Terminology for Health Care. *Proceedings of AMIA Annual Symposium*: 640-644. [SNOMED CT predecessor]
+  23. Hepp, M. (2008). GoodRelations: An Ontology for Describing Products and Services Offers on the Web. *EKAW 2008* LNAI 5268: 329-346. [E-commerce ontology absorbed by schema.org]
+  24. Doerr, M. (2003). The CIDOC Conceptual Reference Module: An Ontological Approach to Semantic Interoperability of Metadata. *AI Magazine* 24(3): 75-92. [CIDOC CRM]
+  25. Bennett, M., Allemang, D., et al. (2018). FIBO: The Financial Industry Business Ontology. EDM Council technical report. https://spec.edmcouncil.org/fibo/
+- **Linked Data and Knowledge Graphs**:
+  26. Berners-Lee, T. (2006). Linked Data — Design Issues. W3C Note. https://www.w3.org/DesignIssues/LinkedData.html [Five-star LOD scheme]
+  27. Bizer, C., Heath, T., & Berners-Lee, T. (2009). Linked Data — The Story So Far. *International Journal on Semantic Web and Information Systems* 5(3): 1-22.
+  28. Hogan, A., Blomqvist, E., Cochez, M., d'Amato, C., de Melo, G., Gutierrez, C., et al. (2021). Knowledge Graphs. *ACM Computing Surveys* 54(4): Article 71, 37 pages. DOI: 10.1145/3447772. [Comprehensive KG survey]
+  29. Wilkinson, M.D., Dumontier, M., Aalbersberg, I.J., et al. (2016). The FAIR Guiding Principles for Scientific Data Management and Stewardship. *Scientific Data* 3: 160018. DOI: 10.1038/sdata.2016.18. [FAIR principles]
+- **2024-2026 LLM-Ontology Integration**:
+  30. Caufield, J.H., Hegde, H., Emonet, V., Harris, N.L., Joachimiak, M.P., Matentzoglu, N., et al. (2024). Structured Prompt Interrogation and Recursive Extraction of Semantics (SPIRES): A Method for Populating Knowledge Bases Using Zero-Shot Learning. *Bioinformatics* 40(3): btae104. DOI: 10.1093/bioinformatics/btae104. [OntoGPT]
+  31. Edge, D., Trinh, H., Cheng, N., Bradley, J., Chao, A., Mody, A., et al. (2024). From Local to Global: A Graph RAG Approach to Query-Focused Summarization. Microsoft Research arXiv:2404.16130.
+
+## Metadata
+
+- **Last Updated**: 2026-05-16
+- **Review Status**: Comprehensive editorial review during Phase 6 enrichment sprint
+- **Verification**: Standards references verified against W3C published Recommendations (OWL 2 2009/2012, RDF 1.1 2014, SKOS 2009, SPARQL 1.1 2013) and ISO official catalogue (ISO/IEC 21838-2:2020, ISO/IEC 24707:2018, ISO 21127:2014); academic citations verified against DOI registries, Springer/Elsevier/Cambridge University Press metadata, arXiv, and Journal of Web Semantics archives; deployment statistics cross-referenced against SNOMED International annual report 2024, Gene Ontology Consortium annual report, schema.org W3Techs surveys 2024, Wikidata statistics dashboard
+- **Regional Context**: UK academic institutions covered (Manchester Information Management Group as OWL reasoner / OWL API origin, Oxford Information Systems Group as HermiT/RDFox origin, Southampton Web Science as Semantic Web origin under Berners-Lee/Hall/Shadbolt, Open University KMI for ODPs and NeOn methodology, Aberdeen Computing Science for medical-informatics ontologies, Imperial Department of Computing, UCL Web and Internet Science, Edinburgh CISA/AIAI); UK industrial deployments (NHS England SNOMED CT, Ordnance Survey, BBC, British Library, The National Archives, ONS, HM Land Registry, Met Office, Alan Turing Institute); Northern English industrial belt (Manchester, Leeds, Sheffield, Newcastle) translation layer detailed
+- **Domain Note**: Retained existing `domain:: infrastructure` classification — consistent with corpus convention placing ontology and knowledge-representation infrastructure (alongside [[Decentralised Web]] IF-1024, [[Data Layer]] IF-1042) under the infrastructure namespace rather than introducing a new `knowledge-representation` domain. IRI/URI unchanged from prior stub
+- **Domain Drift Correction**: Stub legacy term-id `RB-9005` (robotics domain) and stub "robotics and automation" body content removed — original migration mis-assigned this concept to robotics. Corrected `legacy-term-id` to `IF-1057` (infrastructure series) reflecting the concept's general knowledge-representation scope rather than a robotics-specific specialisation
+- **Production-Ready**: Complete OWL formal semantics (43 axioms across compositional/dependency/capability/implementation/reduction/association/data-property/property-constraint families), comprehensive content coverage (foundations, languages and standards, methodologies, reasoning ecosystem, tooling, landmark ontologies, use cases, components/architecture, academic context, current landscape 2026, UK context, future directions 2026-2030), 31 academic and standards citations
+- **Authority Score**: 0.87 (foundational knowledge-representation concept underpinning Semantic Web, FAIR data, regulatory data harmonisation, LLM grounding; W3C-standardised through OWL 2 / RDF / SKOS / SPARQL; ISO-standardised through BFO / Common Logic / CIDOC CRM; deployed across 60+ national health systems via SNOMED CT, 45M+ websites via schema.org, 110M+ items via Wikidata, 30+ G-SIBs via FIBO; strong UK contributions through Manchester / Oxford / Southampton / Open University / Aberdeen)
+
+### Provenance
+
+- **domain-note:** Stub `legacy-term-id:: RB-9005` (robotics) corrected to `IF-1057` (infrastructure) reflecting the concept's general knowledge-representation scope rather than robotics-specific specialisation; original stub body discussed only IEEE 1872-2015 robotics ontology, replaced with full Phase-6 coverage of Gruber/Sowa/Smith/Guarino foundations, OWL 2 / RDF / SKOS / SPARQL standards, METHONTOLOGY/NeOn/ODP/Lean methodologies, landmark domain ontologies (SNOMED CT / GO / MeSH / ICD-11 / FOAF / DCMI / schema.org / Wikidata / DBpedia / CIDOC CRM / FIBO), reasoner ecosystem (Pellet/HermiT/ELK/Konclude/Fact++/Whelk-rs), tooling (Protégé / TopBraid / PoolParty / RDFox / GraphDB / Stardog / Jena / Oxigraph / TerminusDB), and 2024-2026 LLM integration (OntoGPT / Graph-RAG / neuro-symbolic)
 

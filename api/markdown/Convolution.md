@@ -1,166 +1,171 @@
-
 Convolution is a mathematical operation that combines two functions by sliding one (the kernel or filter) over another (the input signal or image) and computing a weighted sum of overlapping values at each position, producing a third function that expresses how the shape of one modifies the other. In deep learning and signal processing it provides a translation-equivariant mechanism for local feature extraction with shared parameter weights. The discrete 2D form underpins convolutional neural networks; the continuous form via the Convolution Theorem connects to Fourier analysis and frequency-domain filtering.
 
-- ### Semantic Classification
+### Semantic Classification
 
-- ### Content
-  ## Compositional Relationships (Components)
-      SubClassOf(ai:Convolution
-        ObjectSomeValuesFrom(ai:hasPart ai:ConvolutionKernel))
-      SubClassOf(ai:Convolution
-        ObjectSomeValuesFrom(ai:hasPart ai:FeatureMap))
-      SubClassOf(ai:Convolution
-        ObjectSomeValuesFrom(ai:hasPart ai:ReceptiveField))
-      SubClassOf(ai:Convolution
-        ObjectSomeValuesFrom(ai:hasPart ai:Stride))
-      SubClassOf(ai:Convolution
-        ObjectSomeValuesFrom(ai:hasPart ai:Padding))
-      SubClassOf(ai:Convolution
-        ObjectSomeValuesFrom(ai:hasPart ai:BiasParameter))
-  ## Dependency Relationships
-      SubClassOf(ai:Convolution
-        ObjectSomeValuesFrom(ai:requires ai:LinearAlgebra))
-      SubClassOf(ai:Convolution
-        ObjectSomeValuesFrom(ai:requires ai:MatrixMultiplication))
-      SubClassOf(ai:Convolution
-        ObjectSomeValuesFrom(ai:requires ai:GPUAcceleration))
-      SubClassOf(ai:Convolution
-        ObjectSomeValuesFrom(ai:dependsOn ai:FourierAnalysis))
-      SubClassOf(ai:Convolution
-        ObjectSomeValuesFrom(ai:dependsOn ai:WeightSharing))
-      SubClassOf(ai:Convolution
-        ObjectSomeValuesFrom(ai:dependsOn ai:LocalConnectivity))
-  ## Capability Relationships
-      SubClassOf(ai:Convolution
-        ObjectSomeValuesFrom(ai:enables ai:ConvolutionalNeuralNetwork))
-      SubClassOf(ai:Convolution
-        ObjectSomeValuesFrom(ai:enables ai:FeatureExtraction))
-      SubClassOf(ai:Convolution
-        ObjectSomeValuesFrom(ai:enables ai:ObjectDetection))
-      SubClassOf(ai:Convolution
-        ObjectSomeValuesFrom(ai:enables ai:ImageSegmentation))
-      SubClassOf(ai:Convolution
-        ObjectSomeValuesFrom(ai:enables ai:AudioProcessing))
-      SubClassOf(ai:Convolution
-        ObjectSomeValuesFrom(ai:enables ai:TranslationEquivariantRepresentation))
-      SubClassOf(ai:Convolution
-        ObjectSomeValuesFrom(ai:supports ai:DeepLearning))
-      SubClassOf(ai:Convolution
-        ObjectSomeValuesFrom(ai:supports ai:ComputerVision))
-      SubClassOf(ai:Convolution
-        ObjectSomeValuesFrom(ai:supports ai:SignalProcessing))
-  ## Implementation Relationships
-      SubClassOf(ai:Convolution
-        ObjectSomeValuesFrom(ai:implements ai:TranslationEquivariance))
-      SubClassOf(ai:Convolution
-        ObjectSomeValuesFrom(ai:implements ai:WeightSharing))
-      SubClassOf(ai:Convolution
-        ObjectSomeValuesFrom(ai:implements ai:LocalReceptiveField))
-      SubClassOf(ai:Convolution
-        ObjectSomeValuesFrom(ai:uses ai:FastFourierTransform))
-      SubClassOf(ai:Convolution
-        ObjectSomeValuesFrom(ai:uses ai:MatrixMultiplication))
-      SubClassOf(ai:Convolution
-        ObjectSomeValuesFrom(ai:uses ai:Im2ColTransformation))
-  ## Reduction Relationships
-      SubClassOf(ai:Convolution
-        ObjectSomeValuesFrom(ai:reducesTo ai:DotProduct))
-      SubClassOf(ai:Convolution
-        ObjectSomeValuesFrom(ai:reducesTo ai:CrossCorrelation))
-      SubClassOf(ai:Convolution
-        ObjectSomeValuesFrom(ai:reducesTo ai:LinearFilter))
-  ## Variant Relationships
-      SubClassOf(ai:DepthwiseSeparableConvolution
-        ObjectSomeValuesFrom(ai:isVariantOf ai:Convolution))
-      SubClassOf(ai:DilatedConvolution
-        ObjectSomeValuesFrom(ai:isVariantOf ai:Convolution))
-      SubClassOf(ai:TransposedConvolution
-        ObjectSomeValuesFrom(ai:isVariantOf ai:Convolution))
-      SubClassOf(ai:GroupedConvolution
-        ObjectSomeValuesFrom(ai:isVariantOf ai:Convolution))
-      SubClassOf(ai:SpectralGraphConvolution
-        ObjectSomeValuesFrom(ai:isVariantOf ai:Convolution))
-      SubClassOf(ai:Convolution
-        ObjectSomeValuesFrom(ai:optimisedBy ai:WinogradMinimalFiltering))
-      SubClassOf(ai:Convolution
-        ObjectSomeValuesFrom(ai:optimisedBy ai:Im2ColTransformation))
-      SubClassOf(ai:Convolution
-        ObjectSomeValuesFrom(ai:optimisedBy ai:FastFourierTransform))
+### Content
 
-  ## About
+## Compositional Relationships (Components)
+    SubClassOf(ai:Convolution
+      ObjectSomeValuesFrom(ai:hasPart ai:ConvolutionKernel))
+    SubClassOf(ai:Convolution
+      ObjectSomeValuesFrom(ai:hasPart ai:FeatureMap))
+    SubClassOf(ai:Convolution
+      ObjectSomeValuesFrom(ai:hasPart ai:ReceptiveField))
+    SubClassOf(ai:Convolution
+      ObjectSomeValuesFrom(ai:hasPart ai:Stride))
+    SubClassOf(ai:Convolution
+      ObjectSomeValuesFrom(ai:hasPart ai:Padding))
+    SubClassOf(ai:Convolution
+      ObjectSomeValuesFrom(ai:hasPart ai:BiasParameter))
+## Dependency Relationships
+    SubClassOf(ai:Convolution
+      ObjectSomeValuesFrom(ai:requires ai:LinearAlgebra))
+    SubClassOf(ai:Convolution
+      ObjectSomeValuesFrom(ai:requires ai:MatrixMultiplication))
+    SubClassOf(ai:Convolution
+      ObjectSomeValuesFrom(ai:requires ai:GPUAcceleration))
+    SubClassOf(ai:Convolution
+      ObjectSomeValuesFrom(ai:dependsOn ai:FourierAnalysis))
+    SubClassOf(ai:Convolution
+      ObjectSomeValuesFrom(ai:dependsOn ai:WeightSharing))
+    SubClassOf(ai:Convolution
+      ObjectSomeValuesFrom(ai:dependsOn ai:LocalConnectivity))
+## Capability Relationships
+    SubClassOf(ai:Convolution
+      ObjectSomeValuesFrom(ai:enables ai:ConvolutionalNeuralNetwork))
+    SubClassOf(ai:Convolution
+      ObjectSomeValuesFrom(ai:enables ai:FeatureExtraction))
+    SubClassOf(ai:Convolution
+      ObjectSomeValuesFrom(ai:enables ai:ObjectDetection))
+    SubClassOf(ai:Convolution
+      ObjectSomeValuesFrom(ai:enables ai:ImageSegmentation))
+    SubClassOf(ai:Convolution
+      ObjectSomeValuesFrom(ai:enables ai:AudioProcessing))
+    SubClassOf(ai:Convolution
+      ObjectSomeValuesFrom(ai:enables ai:TranslationEquivariantRepresentation))
+    SubClassOf(ai:Convolution
+      ObjectSomeValuesFrom(ai:supports ai:DeepLearning))
+    SubClassOf(ai:Convolution
+      ObjectSomeValuesFrom(ai:supports ai:ComputerVision))
+    SubClassOf(ai:Convolution
+      ObjectSomeValuesFrom(ai:supports ai:SignalProcessing))
+## Implementation Relationships
+    SubClassOf(ai:Convolution
+      ObjectSomeValuesFrom(ai:implements ai:TranslationEquivariance))
+    SubClassOf(ai:Convolution
+      ObjectSomeValuesFrom(ai:implements ai:WeightSharing))
+    SubClassOf(ai:Convolution
+      ObjectSomeValuesFrom(ai:implements ai:LocalReceptiveField))
+    SubClassOf(ai:Convolution
+      ObjectSomeValuesFrom(ai:uses ai:FastFourierTransform))
+    SubClassOf(ai:Convolution
+      ObjectSomeValuesFrom(ai:uses ai:MatrixMultiplication))
+    SubClassOf(ai:Convolution
+      ObjectSomeValuesFrom(ai:uses ai:Im2ColTransformation))
+## Reduction Relationships
+    SubClassOf(ai:Convolution
+      ObjectSomeValuesFrom(ai:reducesTo ai:DotProduct))
+    SubClassOf(ai:Convolution
+      ObjectSomeValuesFrom(ai:reducesTo ai:CrossCorrelation))
+    SubClassOf(ai:Convolution
+      ObjectSomeValuesFrom(ai:reducesTo ai:LinearFilter))
+## Variant Relationships
+    SubClassOf(ai:DepthwiseSeparableConvolution
+      ObjectSomeValuesFrom(ai:isVariantOf ai:Convolution))
+    SubClassOf(ai:DilatedConvolution
+      ObjectSomeValuesFrom(ai:isVariantOf ai:Convolution))
+    SubClassOf(ai:TransposedConvolution
+      ObjectSomeValuesFrom(ai:isVariantOf ai:Convolution))
+    SubClassOf(ai:GroupedConvolution
+      ObjectSomeValuesFrom(ai:isVariantOf ai:Convolution))
+    SubClassOf(ai:SpectralGraphConvolution
+      ObjectSomeValuesFrom(ai:isVariantOf ai:Convolution))
+    SubClassOf(ai:Convolution
+      ObjectSomeValuesFrom(ai:optimisedBy ai:WinogradMinimalFiltering))
+    SubClassOf(ai:Convolution
+      ObjectSomeValuesFrom(ai:optimisedBy ai:Im2ColTransformation))
+    SubClassOf(ai:Convolution
+      ObjectSomeValuesFrom(ai:optimisedBy ai:FastFourierTransform))
 
-  ### Historical and Mathematical Origins
+## About
 
-  Convolution as a mathematical construct has roots tracing back to the 18th century. The integral transform that defines continuous convolution emerged from the study of partial differential equations governing wave propagation and heat flow. Jean d'Alembert's 1754 analysis of a vibrating string introduced discrete recursive formulae that implicitly encoded the convolution structure. Leonhard Euler's generalisation and Joseph-Louis Lagrange's contributions to trigonometric series laid the groundwork for Fourier's 1822 Théorie Analytique de la Chaleur, which established the Fourier series and the integral transform now bearing his name. The Convolution Theorem — that convolution in the time domain equals pointwise multiplication in the frequency domain after a Fourier transform — was proved as a consequence of these developments and formalised into L² functional analysis by the early 20th century through the work of Lebesgue and Hilbert.
+### Historical and Mathematical Origins
 
-  In engineering terms, the continuous-time convolution integral y(t) = ∫ x(τ)h(t-τ)dτ describes how a linear time-invariant (LTI) system with impulse response h transforms an input signal x. The impulse response h is the system's "kernel" — its complete characterisation as a linear operator. This LTI system framework is the mathematical backbone of all of classical [[Signal Processing]]: electronic filters, sonar matched-filters, optical imaging systems, and communications channel equalisers are all described as convolution operations. The Z-transform and discrete-time equivalents (Jury stability criterion, bilinear transform for digital filter design) are the engineering implementation of this framework, formalised in the decades following World War II alongside the development of digital computing.
+Convolution as a mathematical construct has roots tracing back to the 18th century. The integral transform that defines continuous convolution emerged from the study of partial differential equations governing wave propagation and heat flow. Jean d'Alembert's 1754 analysis of a vibrating string introduced discrete recursive formulae that implicitly encoded the convolution structure. Leonhard Euler's generalisation and Joseph-Louis Lagrange's contributions to trigonometric series laid the groundwork for Fourier's 1822 Théorie Analytique de la Chaleur, which established the Fourier series and the integral transform now bearing his name. The Convolution Theorem — that convolution in the time domain equals pointwise multiplication in the frequency domain after a Fourier transform — was proved as a consequence of these developments and formalised into L² functional analysis by the early 20th century through the work of Lebesgue and Hilbert.
 
-  The Cooley–Tukey Fast Fourier Transform algorithm, published in 1965 (and later found to have been independently discovered by Gauss circa 1805), made frequency-domain convolution computationally tractable for the first time on digital hardware. The FFT reduces the complexity of computing the discrete Fourier transform (DFT) of N samples from O(N²) to O(N log N), enabling real-time digital signal processing at audio rates and later video rates. This single algorithmic breakthrough enabled the entire ecosystem of digital telecommunications, CD-quality audio, and JPEG/MPEG compression that defined the late 20th century.
+In engineering terms, the continuous-time convolution integral y(t) = ∫ x(τ)h(t-τ)dτ describes how a linear time-invariant (LTI) system with impulse response h transforms an input signal x. The impulse response h is the system's "kernel" — its complete characterisation as a linear operator. This LTI system framework is the mathematical backbone of all of classical [[Signal Processing]]: electronic filters, sonar matched-filters, optical imaging systems, and communications channel equalisers are all described as convolution operations. The Z-transform and discrete-time equivalents (Jury stability criterion, bilinear transform for digital filter design) are the engineering implementation of this framework, formalised in the decades following World War II alongside the development of digital computing.
 
-  ### Neural Network Adoption and the Deep Learning Revolution
+The Cooley–Tukey Fast Fourier Transform algorithm, published in 1965 (and later found to have been independently discovered by Gauss circa 1805), made frequency-domain convolution computationally tractable for the first time on digital hardware. The FFT reduces the complexity of computing the discrete Fourier transform (DFT) of N samples from O(N²) to O(N log N), enabling real-time digital signal processing at audio rates and later video rates. This single algorithmic breakthrough enabled the entire ecosystem of digital telecommunications, CD-quality audio, and JPEG/MPEG compression that defined the late 20th century.
 
-  The transition of convolution from signal processing into machine learning began with Kunihiko Fukushima's Neocognitron (1980), a hierarchical neural network explicitly modelled on the visual cortex's organisation of simple cells (detecting oriented edges) and complex cells (providing local translation invariance), both of which implement forms of convolution over their input fields. Fukushima's architecture introduced the key ideas of local receptive fields, weight sharing (the same kernel applied at all positions), and subsampling between layers — the three pillars of modern CNNs.
+### Neural Network Adoption and the Deep Learning Revolution
 
-  Yann LeCun, Léon Bottou, Yoshua Bengio, and Patrick Haffner formalised gradient-based training of convolutional networks with [[Backpropagation]] in 1989 (LeCun et al., "Backpropagation applied to handwritten zip code recognition," Neural Computation), demonstrating that convolution kernels could be learned from data rather than hand-crafted. The LeNet-5 architecture (1998) applied this to cheque digit recognition at scale for US banks, processing millions of items per day and demonstrating industrial viability. However, the computational demands of larger convolutional networks on 1990s hardware limited widespread adoption; SVMs and other kernel methods dominated the field through the 2000s.
+The transition of convolution from signal processing into machine learning began with Kunihiko Fukushima's Neocognitron (1980), a hierarchical neural network explicitly modelled on the visual cortex's organisation of simple cells (detecting oriented edges) and complex cells (providing local translation invariance), both of which implement forms of convolution over their input fields. Fukushima's architecture introduced the key ideas of local receptive fields, weight sharing (the same kernel applied at all positions), and subsampling between layers — the three pillars of modern CNNs.
 
-  The paradigm shifted irrevocably with AlexNet at ILSVRC 2012. Alex Krizhevsky, Ilya Sutskever, and Geoffrey Hinton's deep convolutional network achieved 15.3% top-5 error on ImageNet (vs 26.2% for the best non-CNN entrant), a gap so large it convinced the computer vision community to abandon hand-crafted features. Two key enabling factors distinguished AlexNet from prior work: the use of rectified linear units (ReLU) instead of sigmoid activations (accelerating training by eliminating the vanishing gradient problem in shallow activations), and the use of NVIDIA GPUs (GTX 580, 3GB) to parallelise the convolution operations, achieving practical training times of ~6 days instead of months. The AlexNet paper has been cited over 100,000 times and is arguably the most impactful paper in the history of AI.
+Yann LeCun, Léon Bottou, Yoshua Bengio, and Patrick Haffner formalised gradient-based training of convolutional networks with [[Backpropagation]] in 1989 (LeCun et al., "Backpropagation applied to handwritten zip code recognition," Neural Computation), demonstrating that convolution kernels could be learned from data rather than hand-crafted. The LeNet-5 architecture (1998) applied this to cheque digit recognition at scale for US banks, processing millions of items per day and demonstrating industrial viability. However, the computational demands of larger convolutional networks on 1990s hardware limited widespread adoption; SVMs and other kernel methods dominated the field through the 2000s.
 
-  ### Computational Infrastructure: From GPU to NPU
+The paradigm shifted irrevocably with AlexNet at ILSVRC 2012. Alex Krizhevsky, Ilya Sutskever, and Geoffrey Hinton's deep convolutional network achieved 15.3% top-5 error on ImageNet (vs 26.2% for the best non-CNN entrant), a gap so large it convinced the computer vision community to abandon hand-crafted features. Two key enabling factors distinguished AlexNet from prior work: the use of rectified linear units (ReLU) instead of sigmoid activations (accelerating training by eliminating the vanishing gradient problem in shallow activations), and the use of NVIDIA GPUs (GTX 580, 3GB) to parallelise the convolution operations, achieving practical training times of ~6 days instead of months. The AlexNet paper has been cited over 100,000 times and is arguably the most impactful paper in the history of AI.
 
-  The explosion of CNN-based deep learning drove dramatic hardware specialisation for convolution. NVIDIA's cuDNN library (2014–present) provides hand-tuned GPU convolution kernels that exploit the parallel architecture of CUDA cores to maximise convolution throughput. Key algorithmic innovations in cuDNN include: (1) **implicit GEMM** via im2col, which reshapes the convolution as a matrix multiplication amenable to highly optimised BLAS routines; (2) **Winograd minimal filtering**, which reduces the arithmetic intensity of 3×3 convolution by ~2.25× through a domain transformation; (3) **FFT-based convolution** for large kernels (k ≥ 7) where frequency-domain multiplication amortises the O(k²) per-output cost; and (4) **tensor core convolution** on NVIDIA Volta, Turing, and Ampere/Hopper architectures, which perform 4×4 matrix multiply-accumulate in mixed FP16/FP32 precision in a single cycle.
+### Computational Infrastructure: From GPU to NPU
 
-  Beyond NVIDIA, the specialised hardware ecosystem for convolution includes: Google's Tensor Processing Units (TPUs), which use systolic arrays — grids of multiply-accumulate units that stream data through in a wave, highly suited to the matrix-multiply formulation of convolution; Apple's Neural Engine (ANE) in iPhone and M-series chips, which executes depthwise and pointwise convolution natively at INT8 precision for on-device [[Convolutional Neural Network]] inference; Qualcomm's Hexagon NPU in Snapdragon SoCs, used for mobile vision; and emerging RISC-V based ML accelerators in the Chinese semiconductor industry (Cambricon, Biren) that expose programmable convolution primitives.
+The explosion of CNN-based deep learning drove dramatic hardware specialisation for convolution. NVIDIA's cuDNN library (2014–present) provides hand-tuned GPU convolution kernels that exploit the parallel architecture of CUDA cores to maximise convolution throughput. Key algorithmic innovations in cuDNN include: (1) **implicit GEMM** via im2col, which reshapes the convolution as a matrix multiplication amenable to highly optimised BLAS routines; (2) **Winograd minimal filtering**, which reduces the arithmetic intensity of 3×3 convolution by ~2.25× through a domain transformation; (3) **FFT-based convolution** for large kernels (k ≥ 7) where frequency-domain multiplication amortises the O(k²) per-output cost; and (4) **tensor core convolution** on NVIDIA Volta, Turing, and Ampere/Hopper architectures, which perform 4×4 matrix multiply-accumulate in mixed FP16/FP32 precision in a single cycle.
 
-  The interaction between convolution algorithms and memory hierarchy is critical for performance. Convolutional workloads are often memory-bandwidth-bound (not compute-bound) on GPUs, particularly for small batch sizes and large feature maps. Loop tiling, kernel fusion, and on-chip SRAM buffering strategies (explored via TVM and MLIR compiler backends) maximise arithmetic intensity by reusing loaded feature map patches for multiple kernel positions before they are evicted from L2 cache. This is the same challenge addressed by the Winograd algorithm: reducing memory bandwidth by reducing the total number of floating-point operations, so the same bandwidth budget sustains higher throughput.
+Beyond NVIDIA, the specialised hardware ecosystem for convolution includes: Google's Tensor Processing Units (TPUs), which use systolic arrays — grids of multiply-accumulate units that stream data through in a wave, highly suited to the matrix-multiply formulation of convolution; Apple's Neural Engine (ANE) in iPhone and M-series chips, which executes depthwise and pointwise convolution natively at INT8 precision for on-device [[Convolutional Neural Network]] inference; Qualcomm's Hexagon NPU in Snapdragon SoCs, used for mobile vision; and emerging RISC-V based ML accelerators in the Chinese semiconductor industry (Cambricon, Biren) that expose programmable convolution primitives.
 
-  Convolution is one of the oldest and most widely deployed computational primitives in both classical signal processing and modern machine learning. In engineering terms, a convolution filter imposes an inductive bias: each output value depends only on a local neighbourhood of the input, and the same kernel weights are reused at every position. This locality and weight-sharing are precisely the properties that make convolutional layers highly parameter-efficient relative to fully connected layers for inputs with spatial or temporal structure. The continuous convolution operation, formalised through the work of d'Alembert, Euler, and Fourier in the 18th–19th centuries, underpins the Convolution Theorem, which states that convolution in the time or spatial domain is equivalent to pointwise multiplication in the frequency domain after a Fourier transform. This duality enables the [[Fast Fourier Transform]] (FFT) — whose O(N log N) complexity, published by Cooley and Tukey in 1965, was independently prefigured by Gauss circa 1805 — to accelerate large-kernel convolutions well beyond what direct summation permits.
+The interaction between convolution algorithms and memory hierarchy is critical for performance. Convolutional workloads are often memory-bandwidth-bound (not compute-bound) on GPUs, particularly for small batch sizes and large feature maps. Loop tiling, kernel fusion, and on-chip SRAM buffering strategies (explored via TVM and MLIR compiler backends) maximise arithmetic intensity by reusing loaded feature map patches for multiple kernel positions before they are evicted from L2 cache. This is the same challenge addressed by the Winograd algorithm: reducing memory bandwidth by reducing the total number of floating-point operations, so the same bandwidth budget sustains higher throughput.
 
-  In the context of [[Deep Learning]], discrete 2D convolution was popularised for vision tasks by the work of LeCun et al. (1989, 1998) on LeNet architectures for handwritten digit recognition. The explosion of scale catalysed by AlexNet (Krizhevsky et al., 2012) — which achieved a 15.3% top-5 error rate on ImageNet against 26.2% for the runner-up — established convolutional layers as the canonical primitive for visual understanding. Subsequent architectural lineages (VGGNet, GoogLeNet/Inception, ResNet, DenseNet, EfficientNet, ConvNeXt) have refined the use of convolution while preserving its core role. The 2020s introduced hybrid architectures (CaFormer, CoAtNet) that interleave convolutional and self-attention layers, demonstrating that convolutional inductive biases remain competitive at scale, particularly in data-limited and compute-constrained regimes.
+Convolution is one of the oldest and most widely deployed computational primitives in both classical signal processing and modern machine learning. In engineering terms, a convolution filter imposes an inductive bias: each output value depends only on a local neighbourhood of the input, and the same kernel weights are reused at every position. This locality and weight-sharing are precisely the properties that make convolutional layers highly parameter-efficient relative to fully connected layers for inputs with spatial or temporal structure. The continuous convolution operation, formalised through the work of d'Alembert, Euler, and Fourier in the 18th–19th centuries, underpins the Convolution Theorem, which states that convolution in the time or spatial domain is equivalent to pointwise multiplication in the frequency domain after a Fourier transform. This duality enables the [[Fast Fourier Transform]] (FFT) — whose O(N log N) complexity, published by Cooley and Tukey in 1965, was independently prefigured by Gauss circa 1805 — to accelerate large-kernel convolutions well beyond what direct summation permits.
 
-  Convolution's range of applicability extends beyond images. In 1D, it underpins FIR/IIR digital filters in audio and telecommunications; applied to text sequences via 1D temporal CNNs (Kim, 2014), it achieves strong results on sentence classification. In 3D, volumetric convolution enables spatiotemporal video understanding (C3D, I3D). Spectral graph convolution generalises the operation to irregular graph-structured data through the graph Laplacian's eigenvectors, giving rise to [[Graph Neural Network]] variants (GCN, ChebNet, GraphSAGE) used in drug discovery, recommendation systems, and social network analysis. The unifying mathematical thread across all these variants is the same weighted local aggregation principle instantiated over different domains and topologies.
+In the context of [[Deep Learning]], discrete 2D convolution was popularised for vision tasks by the work of LeCun et al. (1989, 1998) on LeNet architectures for handwritten digit recognition. The explosion of scale catalysed by AlexNet (Krizhevsky et al., 2012) — which achieved a 15.3% top-5 error rate on ImageNet against 26.2% for the runner-up — established convolutional layers as the canonical primitive for visual understanding. Subsequent architectural lineages (VGGNet, GoogLeNet/Inception, ResNet, DenseNet, EfficientNet, ConvNeXt) have refined the use of convolution while preserving its core role. The 2020s introduced hybrid architectures (CaFormer, CoAtNet) that interleave convolutional and self-attention layers, demonstrating that convolutional inductive biases remain competitive at scale, particularly in data-limited and compute-constrained regimes.
 
-  ## Components / Architecture
+Convolution's range of applicability extends beyond images. In 1D, it underpins FIR/IIR digital filters in audio and telecommunications; applied to text sequences via 1D temporal CNNs (Kim, 2014), it achieves strong results on sentence classification. In 3D, volumetric convolution enables spatiotemporal video understanding (C3D, I3D). Spectral graph convolution generalises the operation to irregular graph-structured data through the graph Laplacian's eigenvectors, giving rise to [[Graph Neural Network]] variants (GCN, ChebNet, GraphSAGE) used in drug discovery, recommendation systems, and social network analysis. The unifying mathematical thread across all these variants is the same weighted local aggregation principle instantiated over different domains and topologies.
 
-  - **Kernel (Filter)**: A small learnable tensor (typically 1×1, 3×3, 5×5, or 7×7 for 2D) of weights that slides across the input. Kernel size governs the receptive field per layer; larger kernels capture broader spatial context but increase FLOPs quadratically.
-  - **Feature Map (Activation Map)**: The output tensor produced by applying a kernel across an input. Each channel of a feature map corresponds to one kernel detecting a particular pattern.
-  - **Stride**: The step size by which the kernel moves across the input. Stride > 1 performs spatial subsampling (like pooling), reducing feature map dimensions.
-  - **Padding**: Zero-padding (or reflect/replicate) appended around input borders to control output spatial dimensions. "Same" padding preserves input dimensions; "valid" padding shrinks them.
-  - **Dilation (Atrous Convolution)**: Inserting zeros between kernel elements to expand receptive fields without increasing parameter count. Dilation rate d produces a receptive field of (k + (k−1)(d−1)) with the same k×k kernel; central to DeepLab semantic segmentation and WaveNet audio synthesis.
-  - **Depthwise Separable Convolution**: Factorises a standard d_in × k × k × d_out convolution into (a) a depthwise 1 × k × k × 1 filter per input channel, and (b) a 1×1 pointwise projection across channels. MobileNetV1 (Howard et al., 2017) showed this reduces computation by ~8–9× with minimal accuracy loss, enabling CNN deployment on mobile hardware.
-  - **Grouped Convolution**: Partitions input and output channels into groups; convolution is performed independently within each group. AlexNet introduced this for multi-GPU training; ResNeXt (Xie et al., 2017) used it systematically as a design principle.
-  - **1×1 Convolution (Bottleneck)**: Acts as a channel-wise linear projection without spatial aggregation. Used in Inception and ResNet bottleneck blocks to reduce dimensionality before expensive spatial convolutions, reducing total FLOPs by 4×.
-  - **Transposed Convolution (Deconvolution)**: The transpose of the forward convolution operation; used in decoders, generative models (DCGAN), and dense prediction networks (U-Net, SegNet) to upsample feature maps.
-  - **[[Pooling Layer]]**: Max or average pooling following convolutional layers provides local translation invariance (distinct from equivariance) and reduces spatial dimensions, improving robustness to small shifts.
-  - **[[Batch Normalisation]]**: Normalises activations within a mini-batch after each convolutional layer, stabilising training, accelerating convergence, and acting as a regulariser.
-  - **[[Activation Function]]**: Non-linear activation (ReLU, GELU, SiLU) applied element-wise to feature maps introduces the non-linearity that allows stacked convolutions to model complex functions.
+## Components / Architecture
+
+- **Kernel (Filter)**: A small learnable tensor (typically 1×1, 3×3, 5×5, or 7×7 for 2D) of weights that slides across the input. Kernel size governs the receptive field per layer; larger kernels capture broader spatial context but increase FLOPs quadratically.
+- **Feature Map (Activation Map)**: The output tensor produced by applying a kernel across an input. Each channel of a feature map corresponds to one kernel detecting a particular pattern.
+- **Stride**: The step size by which the kernel moves across the input. Stride > 1 performs spatial subsampling (like pooling), reducing feature map dimensions.
+- **Padding**: Zero-padding (or reflect/replicate) appended around input borders to control output spatial dimensions. "Same" padding preserves input dimensions; "valid" padding shrinks them.
+- **Dilation (Atrous Convolution)**: Inserting zeros between kernel elements to expand receptive fields without increasing parameter count. Dilation rate d produces a receptive field of (k + (k−1)(d−1)) with the same k×k kernel; central to DeepLab semantic segmentation and WaveNet audio synthesis.
+- **Depthwise Separable Convolution**: Factorises a standard d_in × k × k × d_out convolution into (a) a depthwise 1 × k × k × 1 filter per input channel, and (b) a 1×1 pointwise projection across channels. MobileNetV1 (Howard et al., 2017) showed this reduces computation by ~8–9× with minimal accuracy loss, enabling CNN deployment on mobile hardware.
+- **Grouped Convolution**: Partitions input and output channels into groups; convolution is performed independently within each group. AlexNet introduced this for multi-GPU training; ResNeXt (Xie et al., 2017) used it systematically as a design principle.
+- **1×1 Convolution (Bottleneck)**: Acts as a channel-wise linear projection without spatial aggregation. Used in Inception and ResNet bottleneck blocks to reduce dimensionality before expensive spatial convolutions, reducing total FLOPs by 4×.
+- **Transposed Convolution (Deconvolution)**: The transpose of the forward convolution operation; used in decoders, generative models (DCGAN), and dense prediction networks (U-Net, SegNet) to upsample feature maps.
+- **[[Pooling Layer]]**: Max or average pooling following convolutional layers provides local translation invariance (distinct from equivariance) and reduces spatial dimensions, improving robustness to small shifts.
+- **[[Batch Normalisation]]**: Normalises activations within a mini-batch after each convolutional layer, stabilising training, accelerating convergence, and acting as a regulariser.
+- **[[Activation Function]]**: Non-linear activation (ReLU, GELU, SiLU) applied element-wise to feature maps introduces the non-linearity that allows stacked convolutions to model complex functions.
 
   ## Use Cases / Major Families
 
   ### Vision and Image Tasks
-  - **Image Classification**: AlexNet (2012), VGGNet (2014), ResNet (2015), EfficientNet (2019), ConvNeXt (2022) have progressively advanced ImageNet benchmarks. ResNet's skip connections solved vanishing gradient degradation for very deep nets; EfficientNet introduced compound coefficient scaling; ConvNeXt adopted Transformer design conventions (layer norm, GELU, large kernels) within a purely convolutional framework.
-  - **Object Detection**: YOLO (You Only Look Once) family, SSD, Faster R-CNN use CNNs as backbone feature extractors. YOLOv8 (2023) and YOLOv10 (2024) achieve real-time detection at competitive accuracy on COCO.
-  - **Semantic Segmentation**: DeepLab v3/v3+ uses atrous (dilated) convolution with ASPP (Atrous Spatial Pyramid Pooling) for multi-scale context; U-Net uses an encoder-decoder with skip connections for biomedical image segmentation.
-  - **Image Generation**: DCGAN (Radford et al., 2015) uses transposed convolutions in the generator; StyleGAN2 (2020) uses modulated convolution for state-of-the-art synthesis; diffusion model decoders (U-Net backbone) use convolution extensively.
+
+- **Image Classification**: AlexNet (2012), VGGNet (2014), ResNet (2015), EfficientNet (2019), ConvNeXt (2022) have progressively advanced ImageNet benchmarks. ResNet's skip connections solved vanishing gradient degradation for very deep nets; EfficientNet introduced compound coefficient scaling; ConvNeXt adopted Transformer design conventions (layer norm, GELU, large kernels) within a purely convolutional framework.
+- **Object Detection**: YOLO (You Only Look Once) family, SSD, Faster R-CNN use CNNs as backbone feature extractors. YOLOv8 (2023) and YOLOv10 (2024) achieve real-time detection at competitive accuracy on COCO.
+- **Semantic Segmentation**: DeepLab v3/v3+ uses atrous (dilated) convolution with ASPP (Atrous Spatial Pyramid Pooling) for multi-scale context; U-Net uses an encoder-decoder with skip connections for biomedical image segmentation.
+- **Image Generation**: DCGAN (Radford et al., 2015) uses transposed convolutions in the generator; StyleGAN2 (2020) uses modulated convolution for state-of-the-art synthesis; diffusion model decoders (U-Net backbone) use convolution extensively.
 
   ### Temporal / Sequence Processing
-  - **1D Text CNN** (Kim, 2014): Multi-scale 1D convolution over word embeddings for sentence classification; highly parameter-efficient baseline for NLP.
-  - **WaveNet** (van den Oord et al., 2016): Dilated causal convolution for autoregressive raw audio synthesis; 1D convolution with very large effective receptive fields (thousands of samples).
-  - **Temporal Convolutional Network (TCN)**: Causal dilated 1D convolutions that match or exceed RNNs on many sequence modelling tasks with simpler parallelisable structure.
+
+- **1D Text CNN** (Kim, 2014): Multi-scale 1D convolution over word embeddings for sentence classification; highly parameter-efficient baseline for NLP.
+- **WaveNet** (van den Oord et al., 2016): Dilated causal convolution for autoregressive raw audio synthesis; 1D convolution with very large effective receptive fields (thousands of samples).
+- **Temporal Convolutional Network (TCN)**: Causal dilated 1D convolutions that match or exceed RNNs on many sequence modelling tasks with simpler parallelisable structure.
 
   ### Graph and Irregular Domains
-  - **Graph Convolutional Network (GCN)** (Kipf & Welling, 2017): Spectral convolution approximated by a simple first-order Chebyshev polynomial, giving a localised, trainable aggregation rule on graphs.
-  - **GraphSAGE** (Hamilton et al., 2017): Inductive spatial message-passing convolution that generalises to unseen nodes by sampling and aggregating neighbourhood features.
-  - **Point Cloud Convolution**: PointNet++ (Qi et al., 2017) uses 1D convolution over locally grouped 3D point sets for 3D shape understanding.
+
+- **Graph Convolutional Network (GCN)** (Kipf & Welling, 2017): Spectral convolution approximated by a simple first-order Chebyshev polynomial, giving a localised, trainable aggregation rule on graphs.
+- **GraphSAGE** (Hamilton et al., 2017): Inductive spatial message-passing convolution that generalises to unseen nodes by sampling and aggregating neighbourhood features.
+- **Point Cloud Convolution**: PointNet++ (Qi et al., 2017) uses 1D convolution over locally grouped 3D point sets for 3D shape understanding.
 
   ### Signal Processing
-  - **FIR/IIR Filters**: The foundational application; implemented as discrete convolution of an input signal with a finite or infinite impulse response kernel.
-  - **Matched Filtering (Radar/Sonar)**: Convolution of received signal with time-reversed transmit waveform to maximise SNR for target detection.
+
+- **FIR/IIR Filters**: The foundational application; implemented as discrete convolution of an input signal with a finite or infinite impulse response kernel.
+- **Matched Filtering (Radar/Sonar)**: Convolution of received signal with time-reversed transmit waveform to maximise SNR for target detection.
 
   ### Hybrid Architectures (2022–2025)
-  - **ConvNeXt** (Liu et al., 2022): Purely convolutional backbone redesigned with Transformer conventions (depthwise 7×7 kernels, Layer Norm, GELU, inverted bottleneck), matching ViT-B performance at similar FLOPs.
-  - **CaFormer / MetaFormer** (Yu et al., 2022): Token mixers implemented as pooling or depthwise convolution inside a Transformer macro-structure, demonstrating that the Transformer's macro-design is more important than the specific attention mechanism.
-  - **ACC-ViT** (2024): Atrous convolution integrated into Vision Transformers' intermediate layers at multiple dilation rates, improving multi-scale context without additional parameters.
-  - **SepViT** (2022): Depthwise separable convolution as a lightweight efficient substitute for full self-attention in some Transformer blocks.
+
+- **ConvNeXt** (Liu et al., 2022): Purely convolutional backbone redesigned with Transformer conventions (depthwise 7×7 kernels, Layer Norm, GELU, inverted bottleneck), matching ViT-B performance at similar FLOPs.
+- **CaFormer / MetaFormer** (Yu et al., 2022): Token mixers implemented as pooling or depthwise convolution inside a Transformer macro-structure, demonstrating that the Transformer's macro-design is more important than the specific attention mechanism.
+- **ACC-ViT** (2024): Atrous convolution integrated into Vision Transformers' intermediate layers at multiple dilation rates, improving multi-scale context without additional parameters.
+- **SepViT** (2022): Depthwise separable convolution as a lightweight efficient substitute for full self-attention in some Transformer blocks.
 
   ## Academic Context
 
@@ -220,13 +225,13 @@ Convolution is a mathematical operation that combines two functions by sliding o
 
   ## Future Directions (2026–2030)
 
-  - **Neuromorphic Convolution**: Mapping sparse convolutional operations onto spiking neural network (SNN) hardware (Intel Loihi, BrainScaleS) to achieve ultra-low-power vision processing for edge IoT devices; IBM's NorthPole architecture (2023) already demonstrates specialised convolution-centric near-memory compute where the processing is co-located with SRAM storing the feature maps, minimising the memory-bandwidth bottleneck that limits GPU-based convolution efficiency.
-  - **State-Space Models vs. Convolution**: Mamba and other structured state-space models (S4, H3) implement implicit long-range convolution via efficient recurrences, enabling sub-quadratic sequence modelling that captures long-range dependencies that shallow CNNs miss. Understanding the complementarity between explicit discrete convolution (strong local inductive bias, excellent hardware mapping) and implicit SSM convolution (global context, linear-time sequence processing) will shape sequence modelling and vision backbone architectures through 2028.
-  - **Foundation Model Convolution**: Convolutional components within large vision foundation models (SAM 2, DINO v2) and multimodal foundation models (Flamingo, CogVLM) are being studied as lightweight task-specific adapters — lightweight convolutional adapter heads attached to frozen ViT backbones that require only 1–5% of parameters to be trained for a new task. Whether convolutional layers can specialise foundation model features more efficiently than full attention fine-tuning is an active research question.
-  - **Quantum Convolution**: Quantum computing proposals for convolution (QCNN, Cong et al., 2019; Pesah et al., 2021) exploit superposition and entanglement to perform exponentially many weighted sums in parallel on quantum states. Near-term applications remain speculative pending fault-tolerant hardware, but photonic quantum computing platforms (PsiQuantum, Xanadu) are exploring variational quantum circuits with convolutional structure for pattern recognition on quantum data (quantum chemistry, quantum communication signals).
-  - **Formal Verification of Convolution Networks**: The UK's EPSRC-funded Verification of Autonomous Systems programme and the European EIC-funded SafeML initiative are investing in formal methods (abstract interpretation, SMT solving, Lipschitz constant computation) for verifying correctness and robustness properties of deployed convolutional models in safety-critical settings (medical devices regulated under MDR 2017/745, automotive systems governed by ISO 26262, aviation systems under DO-178C).
-  - **Biological Convergence and Predictive Coding CNNs**: Ongoing neuroscience research continues to map convolution-like operations onto V1/V2/V4 cortical processing hierarchies, strengthening the bio-plausibility case. Predictive coding CNNs (Rao & Ballard, 1999, revisited computationally by Millidge et al., 2022) implement top-down feedback predictions alongside bottom-up convolutional processing, offering models of perceptual inference that may inspire more biologically accurate and computationally efficient architectures.
-  - **4D and Event Camera Convolution**: Event cameras (neuromorphic sensors that output asynchronous spikes at pixel locations where brightness changes) generate sparse spatiotemporal event streams rather than frame sequences. Convolving these streams directly — either via sparse 3D convolution or via asynchronous polarity-based surface event processing — is an emerging research area enabling sub-millisecond visual reaction times for robotics and augmented reality without the 30–120fps frame rate constraint of frame-based cameras.
+- **Neuromorphic Convolution**: Mapping sparse convolutional operations onto spiking neural network (SNN) hardware (Intel Loihi, BrainScaleS) to achieve ultra-low-power vision processing for edge IoT devices; IBM's NorthPole architecture (2023) already demonstrates specialised convolution-centric near-memory compute where the processing is co-located with SRAM storing the feature maps, minimising the memory-bandwidth bottleneck that limits GPU-based convolution efficiency.
+- **State-Space Models vs. Convolution**: Mamba and other structured state-space models (S4, H3) implement implicit long-range convolution via efficient recurrences, enabling sub-quadratic sequence modelling that captures long-range dependencies that shallow CNNs miss. Understanding the complementarity between explicit discrete convolution (strong local inductive bias, excellent hardware mapping) and implicit SSM convolution (global context, linear-time sequence processing) will shape sequence modelling and vision backbone architectures through 2028.
+- **Foundation Model Convolution**: Convolutional components within large vision foundation models (SAM 2, DINO v2) and multimodal foundation models (Flamingo, CogVLM) are being studied as lightweight task-specific adapters — lightweight convolutional adapter heads attached to frozen ViT backbones that require only 1–5% of parameters to be trained for a new task. Whether convolutional layers can specialise foundation model features more efficiently than full attention fine-tuning is an active research question.
+- **Quantum Convolution**: Quantum computing proposals for convolution (QCNN, Cong et al., 2019; Pesah et al., 2021) exploit superposition and entanglement to perform exponentially many weighted sums in parallel on quantum states. Near-term applications remain speculative pending fault-tolerant hardware, but photonic quantum computing platforms (PsiQuantum, Xanadu) are exploring variational quantum circuits with convolutional structure for pattern recognition on quantum data (quantum chemistry, quantum communication signals).
+- **Formal Verification of Convolution Networks**: The UK's EPSRC-funded Verification of Autonomous Systems programme and the European EIC-funded SafeML initiative are investing in formal methods (abstract interpretation, SMT solving, Lipschitz constant computation) for verifying correctness and robustness properties of deployed convolutional models in safety-critical settings (medical devices regulated under MDR 2017/745, automotive systems governed by ISO 26262, aviation systems under DO-178C).
+- **Biological Convergence and Predictive Coding CNNs**: Ongoing neuroscience research continues to map convolution-like operations onto V1/V2/V4 cortical processing hierarchies, strengthening the bio-plausibility case. Predictive coding CNNs (Rao & Ballard, 1999, revisited computationally by Millidge et al., 2022) implement top-down feedback predictions alongside bottom-up convolutional processing, offering models of perceptual inference that may inspire more biologically accurate and computationally efficient architectures.
+- **4D and Event Camera Convolution**: Event cameras (neuromorphic sensors that output asynchronous spikes at pixel locations where brightness changes) generate sparse spatiotemporal event streams rather than frame sequences. Convolving these streams directly — either via sparse 3D convolution or via asynchronous polarity-based surface event processing — is an emerging research area enabling sub-millisecond visual reaction times for robotics and augmented reality without the 30–120fps frame rate constraint of frame-based cameras.
 
   ## Research & Literature
 
@@ -267,7 +272,7 @@ Convolution is a mathematical operation that combines two functions by sliding o
 
   The **Convolution Theorem** states that for functions f and g with Fourier transforms F and G:
 
-      F{f * g}(ξ) = F(ξ) · G(ξ)
+    F{f * g}(ξ) = F(ξ) · G(ξ)
 
   Equivalently, convolution in the spatial/temporal domain corresponds to pointwise (Hadamard) multiplication in the frequency domain. Applying the inverse [[Fourier Analysis]] transform after multiplying the spectra recovers the convolved result. This permits computation via the [[Fast Fourier Transform]] (FFT) in O(N log N) rather than O(N²) for large kernels, and is the basis for frequency-domain filter design in classical [[Signal Processing]] (low-pass, high-pass, band-pass filters are simple masks on the Fourier coefficients).
 
@@ -275,21 +280,22 @@ Convolution is a mathematical operation that combines two functions by sliding o
 
   A fundamental distinction in representation learning is between **equivariance** and **invariance**:
 
-  - **Translation equivariance** (possessed by convolution): shifting the input by t shifts the output by t. The detector "moves with" the pattern.
-  - **Translation invariance** (possessed by global average pooling): shifting the input does not change the output. The detector is insensitive to where the pattern occurs.
+- **Translation equivariance** (possessed by convolution): shifting the input by t shifts the output by t. The detector "moves with" the pattern.
+- **Translation invariance** (possessed by global average pooling): shifting the input does not change the output. The detector is insensitive to where the pattern occurs.
 
   CNNs achieve both: convolutional layers maintain equivariance (preserving spatial information), while pooling layers introduce progressively greater invariance. The combination allows deep networks to both localise (early layers) and categorise (deep layers) patterns. Cohen & Welling (2016) extended this to **group equivariant convolutions** (G-CNNs), where equivariance holds not just for translations but for all symmetry transformations in a group G (rotations, reflections, permutations). This provides stronger inductive biases for data with those symmetries (e.g., medical images, molecular structures, omnidirectional cameras).
 
   ### Complexity Analysis
 
   For a 2D convolutional layer with:
-  - Input size H × W × C_in
-  - Kernel size k × k × C_in × C_out
-  - Output size H' × W' × C_out
+
+- Input size H × W × C_in
+- Kernel size k × k × C_in × C_out
+- Output size H' × W' × C_out
 
   The computational cost (FLOPs) is approximately:
 
-      FLOPs ≈ 2 × H' × W' × k² × C_in × C_out
+    FLOPs ≈ 2 × H' × W' × k² × C_in × C_out
 
   For a standard 3×3 conv layer (k=2): ~18 × H × W × C_in × C_out multiply-adds. Depthwise separable convolution reduces this to approximately (9 + C_out) per spatial position vs 9 × C_out for standard conv, a ~C_out/(1 + C_out/9) ≈ 8–9× reduction for typical channel counts (C_out ≥ 32). The Winograd F(2×2, 3×3) algorithm for 3×3 convolutions reduces the multiply count from 9 to 4 per output element (at the cost of additional additions), achieving a ~2.25× arithmetic reduction.
 
@@ -297,7 +303,7 @@ Convolution is a mathematical operation that combines two functions by sliding o
 
   The generalisation of convolution to [[Graph Neural Network]] settings proceeds through the graph Laplacian L = D - A (where D is the degree matrix and A the adjacency matrix). The eigendecomposition L = U Λ U^T defines a graph Fourier basis U; graph convolution of a signal x with filter g_θ is then:
 
-      g_θ * x = U g_θ(Λ) U^T x
+    g_θ * x = U g_θ(Λ) U^T x
 
   This is computationally expensive (O(N²) for N nodes) due to the full eigendecomposition. ChebNet (Defferrard et al., 2016) approximated the filter using Chebyshev polynomials of the Laplacian, giving a K-hop localised filter without computing eigenvectors. GCN (Kipf & Welling, 2017) further simplified to a first-order Chebyshev approximation with a renormalisation trick, yielding a simple layer-wise propagation rule: H^(l+1) = σ(D̃^(-1/2) Ã D̃^(-1/2) H^(l) W^(l)) that serves as the foundation of modern spatial message-passing networks.
 
@@ -341,37 +347,37 @@ Convolution is a mathematical operation that combines two functions by sliding o
 
   The computational infrastructure supporting convolution in production settings is dominated by a small number of frameworks and hardware-vendor-specific libraries:
 
-  - **cuDNN (NVIDIA CUDA Deep Neural Network library)**: Provides GPU-optimised convolution algorithms including implicit GEMM (via im2col), explicit GEMM, Winograd (for 3×3, 5×5 kernels), and FFT-based methods. Auto-tuning selects the optimal algorithm for a given convolution configuration at runtime. cuDNN is the backend for all major frameworks (PyTorch, TensorFlow, MXNet) on NVIDIA hardware.
-  - **NNPACK**: NEON-optimised mobile/ARM convolution library from Facebook that implements Winograd-based convolution for 3×3 kernels, the basis for fast CNN inference on iOS and Android devices.
-  - **TVM (Tensor Virtual Machine)**: Open-source ML compiler that auto-tunes convolution schedules for diverse hardware targets (NVIDIA CUDA, ARM NEON, RISC-V Vector, Hexagon DSP) by searching over tiling, unrolling, and vectorisation strategies.
-  - **MLIR (Multi-Level Intermediate Representation)**: Google's compiler infrastructure used by XLA (JAX/TensorFlow) and OpenXLA to represent convolution as structured mathematical operations amenable to hardware-specific lowering and fusion.
-  - **ONNX Runtime**: Cross-framework inference engine that includes CPU and GPU convolution kernels tuned for Intel MKL, ARM Compute Library, and NVIDIA TensorRT, enabling deployment-time optimisation of exported PyTorch or TensorFlow convolutional models.
+- **cuDNN (NVIDIA CUDA Deep Neural Network library)**: Provides GPU-optimised convolution algorithms including implicit GEMM (via im2col), explicit GEMM, Winograd (for 3×3, 5×5 kernels), and FFT-based methods. Auto-tuning selects the optimal algorithm for a given convolution configuration at runtime. cuDNN is the backend for all major frameworks (PyTorch, TensorFlow, MXNet) on NVIDIA hardware.
+- **NNPACK**: NEON-optimised mobile/ARM convolution library from Facebook that implements Winograd-based convolution for 3×3 kernels, the basis for fast CNN inference on iOS and Android devices.
+- **TVM (Tensor Virtual Machine)**: Open-source ML compiler that auto-tunes convolution schedules for diverse hardware targets (NVIDIA CUDA, ARM NEON, RISC-V Vector, Hexagon DSP) by searching over tiling, unrolling, and vectorisation strategies.
+- **MLIR (Multi-Level Intermediate Representation)**: Google's compiler infrastructure used by XLA (JAX/TensorFlow) and OpenXLA to represent convolution as structured mathematical operations amenable to hardware-specific lowering and fusion.
+- **ONNX Runtime**: Cross-framework inference engine that includes CPU and GPU convolution kernels tuned for Intel MKL, ARM Compute Library, and NVIDIA TensorRT, enabling deployment-time optimisation of exported PyTorch or TensorFlow convolutional models.
 
   IEEE Signal Processing Society standards govern the definition and implementation of FIR/IIR convolution-based digital filters (IEEE Std 1057 for digitiser waveform measurement, IEEE Std 1293 for navigation sensor integration). MPEG codec standards (ISO/IEC 14496, 23008) encode DCT-based image/video compression transforms that are structurally equivalent to fixed-kernel convolution.
 
   ## Key Terminology
 
-  - **Translation Equivariance**: The property whereby shifting the input by Δ shifts the output by Δ, without changing the detection response magnitude. Formally: f(T_Δ x) = T_Δ f(x). This contrasts with translation invariance (pooling), where output magnitude is unchanged by small shifts.
-  - **Receptive Field**: The spatial extent of the input that influences a single neuron's activation in a given layer. Grows with depth and kernel size; dilated convolutions expand it without increasing parameters.
-  - **im2col**: A transformation that reformulates a convolution as a single matrix multiplication by reshaping input patches into columns, enabling leverage of highly optimised GEMM (General Matrix Multiply) routines on GPUs.
-  - **Winograd Minimal Filtering**: An algorithm (Lavin & Gray, 2016) that reduces arithmetic for small convolutions (e.g. 3×3) by transforming inputs and kernels into a domain where element-wise multiplication suffices, reducing multiplications by ~2.25× at the cost of additional additions.
-  - **Atrous Convolution**: Synonym for dilated convolution; "atrous" refers to the French term for "with holes", describing the zeros inserted between kernel elements.
-  - **Depthwise Separable Convolution**: Factored convolution introduced in Xception (Chollet, 2017) and MobileNets, reducing FLOPs by a factor of k² / d_out for kernel size k and output channels d_out.
-  - **Feature Map**: The output tensor of a convolutional layer; each channel encodes a spatial activation map for one learned kernel/filter.
-  - **Kernel (Filter)**: The learnable weight tensor applied at each spatial position; in CNNs these are learned by [[Backpropagation]] via [[Stochastic Gradient Descent]].
-  - **Cross-Correlation**: The operation actually implemented by most deep learning libraries (sliding kernel without flipping); mathematically equivalent to convolution when learned kernels absorb the implied flip during training.
-  - **Global Average Pooling (GAP)**: A special case of convolution-like aggregation that reduces a feature map to a single value per channel by averaging, providing translation invariance and serving as a lightweight alternative to fully connected layers in classification heads (used in ResNet, GoogLeNet, MobileNet).
-  - **Skip Connection (Residual Connection)**: An additive bypass around one or more convolutional layers, introduced in ResNet, that enables gradient flow through very deep networks by providing a direct path for the error signal, alleviating the vanishing gradient problem during [[Backpropagation]].
-  - **Bottleneck Block**: A convolutional module (used in ResNet-50+) that applies a 1×1 conv to reduce channels, a 3×3 conv at the reduced dimensionality, and a 1×1 conv to restore channels, achieving a 4× reduction in FLOPs compared to a naive 3×3 conv block at the full channel width.
-  - **Depthwise Convolution**: A grouped convolution where the group count equals the number of input channels, so each filter operates on exactly one input channel. Dramatically reduces parameter count and FLOPs; paired with pointwise convolution in MobileNet and ConvNeXt architectures.
-  - **LTI System (Linear Time-Invariant System)**: A classical signal processing system characterised entirely by its impulse response h; its input-output relationship is the convolution y = x * h. All analogue and digital filters are LTI systems, making convolution the universal descriptor of linear systems.
-  - **Sparse Convolution**: Convolution operating only at non-zero (occupied) locations in a voxel grid, using hash-map indexed feature tensors instead of dense arrays; enables efficient 3D point cloud processing in autonomous driving and robotics without the memory cost of dense volumetric grids.
-  - **Deformable Convolution**: A variant that learns spatially varying offsets for each kernel sampling location, enabling the receptive field to adapt to the geometry of the input object rather than being fixed to a rigid grid; used in Deformable DETR and DCNv2 for improved object detection on irregular shapes.
-  - **Squeeze-and-Excitation (SE) Block**: A lightweight channel-wise attention mechanism appended to a convolutional block; uses global average pooling followed by two FC layers with sigmoid gating to learn per-channel importance weights, recalibrating feature map responses to improve CNN accuracy with minimal parameter overhead (~2%).
-  - **Modulated Convolution (StyleGAN2)**: A convolutional operation where the kernel weights are scaled by a per-sample style code derived from a mapping network; enables fine-grained control over the style and texture of generated images at different spatial resolutions, the key architectural innovation in state-of-the-art image synthesis.
-  - **Inverted Residual Block (MobileNetV2)**: A residual block that first expands channel dimensionality (via 1×1 conv), then applies a depthwise spatial convolution, then projects back to a narrow bottleneck (via 1×1 conv) — the reverse of ResNet's wide-to-narrow bottleneck. Enables effective representation capacity at low FLOP budgets for mobile and edge deployment.
-  - **Causal Convolution**: A temporal convolution where the kernel is masked so that each output depends only on current and past inputs, not future inputs; used in autoregressive audio generation (WaveNet) and time-series forecasting to prevent information leakage from the future.
-  - **Inception Module**: A convolutional block that applies multiple kernel sizes (1×1, 3×3, 5×5) and a 3×3 max pooling in parallel, concatenating their feature maps along the channel axis; allows the network to capture features at multiple scales simultaneously without committing to a single receptive field size. Introduced in GoogLeNet (2014) and refined in Inception-v3/v4.
+- **Translation Equivariance**: The property whereby shifting the input by Δ shifts the output by Δ, without changing the detection response magnitude. Formally: f(T_Δ x) = T_Δ f(x). This contrasts with translation invariance (pooling), where output magnitude is unchanged by small shifts.
+- **Receptive Field**: The spatial extent of the input that influences a single neuron's activation in a given layer. Grows with depth and kernel size; dilated convolutions expand it without increasing parameters.
+- **im2col**: A transformation that reformulates a convolution as a single matrix multiplication by reshaping input patches into columns, enabling leverage of highly optimised GEMM (General Matrix Multiply) routines on GPUs.
+- **Winograd Minimal Filtering**: An algorithm (Lavin & Gray, 2016) that reduces arithmetic for small convolutions (e.g. 3×3) by transforming inputs and kernels into a domain where element-wise multiplication suffices, reducing multiplications by ~2.25× at the cost of additional additions.
+- **Atrous Convolution**: Synonym for dilated convolution; "atrous" refers to the French term for "with holes", describing the zeros inserted between kernel elements.
+- **Depthwise Separable Convolution**: Factored convolution introduced in Xception (Chollet, 2017) and MobileNets, reducing FLOPs by a factor of k² / d_out for kernel size k and output channels d_out.
+- **Feature Map**: The output tensor of a convolutional layer; each channel encodes a spatial activation map for one learned kernel/filter.
+- **Kernel (Filter)**: The learnable weight tensor applied at each spatial position; in CNNs these are learned by [[Backpropagation]] via [[Stochastic Gradient Descent]].
+- **Cross-Correlation**: The operation actually implemented by most deep learning libraries (sliding kernel without flipping); mathematically equivalent to convolution when learned kernels absorb the implied flip during training.
+- **Global Average Pooling (GAP)**: A special case of convolution-like aggregation that reduces a feature map to a single value per channel by averaging, providing translation invariance and serving as a lightweight alternative to fully connected layers in classification heads (used in ResNet, GoogLeNet, MobileNet).
+- **Skip Connection (Residual Connection)**: An additive bypass around one or more convolutional layers, introduced in ResNet, that enables gradient flow through very deep networks by providing a direct path for the error signal, alleviating the vanishing gradient problem during [[Backpropagation]].
+- **Bottleneck Block**: A convolutional module (used in ResNet-50+) that applies a 1×1 conv to reduce channels, a 3×3 conv at the reduced dimensionality, and a 1×1 conv to restore channels, achieving a 4× reduction in FLOPs compared to a naive 3×3 conv block at the full channel width.
+- **Depthwise Convolution**: A grouped convolution where the group count equals the number of input channels, so each filter operates on exactly one input channel. Dramatically reduces parameter count and FLOPs; paired with pointwise convolution in MobileNet and ConvNeXt architectures.
+- **LTI System (Linear Time-Invariant System)**: A classical signal processing system characterised entirely by its impulse response h; its input-output relationship is the convolution y = x * h. All analogue and digital filters are LTI systems, making convolution the universal descriptor of linear systems.
+- **Sparse Convolution**: Convolution operating only at non-zero (occupied) locations in a voxel grid, using hash-map indexed feature tensors instead of dense arrays; enables efficient 3D point cloud processing in autonomous driving and robotics without the memory cost of dense volumetric grids.
+- **Deformable Convolution**: A variant that learns spatially varying offsets for each kernel sampling location, enabling the receptive field to adapt to the geometry of the input object rather than being fixed to a rigid grid; used in Deformable DETR and DCNv2 for improved object detection on irregular shapes.
+- **Squeeze-and-Excitation (SE) Block**: A lightweight channel-wise attention mechanism appended to a convolutional block; uses global average pooling followed by two FC layers with sigmoid gating to learn per-channel importance weights, recalibrating feature map responses to improve CNN accuracy with minimal parameter overhead (~2%).
+- **Modulated Convolution (StyleGAN2)**: A convolutional operation where the kernel weights are scaled by a per-sample style code derived from a mapping network; enables fine-grained control over the style and texture of generated images at different spatial resolutions, the key architectural innovation in state-of-the-art image synthesis.
+- **Inverted Residual Block (MobileNetV2)**: A residual block that first expands channel dimensionality (via 1×1 conv), then applies a depthwise spatial convolution, then projects back to a narrow bottleneck (via 1×1 conv) — the reverse of ResNet's wide-to-narrow bottleneck. Enables effective representation capacity at low FLOP budgets for mobile and edge deployment.
+- **Causal Convolution**: A temporal convolution where the kernel is masked so that each output depends only on current and past inputs, not future inputs; used in autoregressive audio generation (WaveNet) and time-series forecasting to prevent information leakage from the future.
+- **Inception Module**: A convolutional block that applies multiple kernel sizes (1×1, 3×3, 5×5) and a 3×3 max pooling in parallel, concatenating their feature maps along the channel axis; allows the network to capture features at multiple scales simultaneously without committing to a single receptive field size. Introduced in GoogLeNet (2014) and refined in Inception-v3/v4.
 
   ## Convolution in Generative Models
 
@@ -429,10 +435,10 @@ Convolution is a mathematical operation that combines two functions by sliding o
 
   Key empirical and theoretical comparisons between convolution and attention include:
 
-  - **Data efficiency**: Convolutional inductive biases (locality, weight sharing) provide stronger regularisation and faster convergence when training data is limited (< 100K examples). Vision Transformers trained from scratch on ImageNet-1k (1.2M images) underperform ResNets of comparable parameter count; however, ViTs pretrained on ImageNet-21k (14M images) or JFT-300M (300M images) match or exceed CNNs at all scales.
-  - **Accuracy at scale**: At very large scale (billion-parameter models, billion-image datasets), pure attention (ViT-G/14, 1.8B parameters, JFT training) achieves the highest accuracy on ImageNet, suggesting that attention's expressive power dominates when training data is abundant enough to compensate for weaker inductive biases.
-  - **Inference efficiency**: For fixed model size and accuracy, convolutional models are more efficient at inference on standard hardware (GPUs, NPUs) due to cuDNN-optimised convolution kernels that achieve near-theoretical FLOP utilisation. Attention with long sequences requires specialised implementations (FlashAttention) to be memory-efficient; even with FlashAttention, attention's O(n²) memory cost versus convolution's O(1) (relative to sequence length) is a structural disadvantage for high-resolution inputs.
-  - **Robustness**: CNNs tend to rely on texture-level features (Geirhos et al., 2018) and are more susceptible to Gaussian noise and blurring than shape features. ViTs learn more shape-based representations and show better robustness to corruptions (ImageNet-C benchmark) but worse robustness to adversarial perturbations (which exploit the linearity of both attention layers and convolutional layers similarly).
+- **Data efficiency**: Convolutional inductive biases (locality, weight sharing) provide stronger regularisation and faster convergence when training data is limited (< 100K examples). Vision Transformers trained from scratch on ImageNet-1k (1.2M images) underperform ResNets of comparable parameter count; however, ViTs pretrained on ImageNet-21k (14M images) or JFT-300M (300M images) match or exceed CNNs at all scales.
+- **Accuracy at scale**: At very large scale (billion-parameter models, billion-image datasets), pure attention (ViT-G/14, 1.8B parameters, JFT training) achieves the highest accuracy on ImageNet, suggesting that attention's expressive power dominates when training data is abundant enough to compensate for weaker inductive biases.
+- **Inference efficiency**: For fixed model size and accuracy, convolutional models are more efficient at inference on standard hardware (GPUs, NPUs) due to cuDNN-optimised convolution kernels that achieve near-theoretical FLOP utilisation. Attention with long sequences requires specialised implementations (FlashAttention) to be memory-efficient; even with FlashAttention, attention's O(n²) memory cost versus convolution's O(1) (relative to sequence length) is a structural disadvantage for high-resolution inputs.
+- **Robustness**: CNNs tend to rely on texture-level features (Geirhos et al., 2018) and are more susceptible to Gaussian noise and blurring than shape features. ViTs learn more shape-based representations and show better robustness to corruptions (ImageNet-C benchmark) but worse robustness to adversarial perturbations (which exploit the linearity of both attention layers and convolutional layers similarly).
 
   The emerging consensus (MetaFormer, CaFormer, InternImage, 2022–2024) is that neither convolution nor attention is universally superior: optimal architectures combine both, using convolutional layers for efficient local feature extraction in early stages (where feature maps are large and attention's O(n²) cost is prohibitive) and self-attention in later stages (where feature maps are small and global context is needed for object-level reasoning). This continuum view suggests that the convolution–attention dichotomy of the early 2020s will give way to a unified view of spatial mixing operations — whether implemented by convolution, pooling, attention, or SSMs — as interchangeable in a Transformer-style macro-architecture.
 
@@ -440,23 +446,23 @@ Convolution is a mathematical operation that combines two functions by sliding o
 
   To make the convolution operation concrete, consider applying a Sobel edge detection kernel to a greyscale image patch. The Sobel-x kernel detects horizontal edges:
 
-      K_x = [[-1, 0, +1],
-              [-2, 0, +2],
-              [-1, 0, +1]]
+    K_x = [[-1, 0, +1],
+            [-2, 0, +2],
+            [-1, 0, +1]]
 
   For an input image patch I:
 
-      I = [[100, 100, 100],
-           [100, 100, 100],
-           [  0,   0,   0]]
+    I = [[100, 100, 100],
+         [100, 100, 100],
+         [  0,   0,   0]]
 
   The output at the central pixel is: (-1×100) + (0×100) + (+1×100) + (-2×100) + (0×100) + (+2×100) + (-1×0) + (0×0) + (+1×0) = 0.
 
   For an edge pixel where a horizontal transition occurs:
 
-      I = [[100, 100,   0],
-           [100, 100,   0],
-           [100, 100,   0]]
+    I = [[100, 100,   0],
+         [100, 100,   0],
+         [100, 100,   0]]
 
   Output: (-1×100)+(0×100)+(+1×0) + (-2×100)+(0×100)+(+2×0) + (-1×100)+(0×100)+(+1×0) = -100 -200 -100 = -400. A large negative value indicating a strong left-to-right luminance drop — an edge.
 
@@ -476,5 +482,5 @@ Convolution is a mathematical operation that combines two functions by sliding o
 
   Neural network interpretability tools (DeepDream, saliency maps, network dissection, TCAV) reveal what individual convolutional layers and neurons respond to, enabling scientific study of the representations learned from natural image statistics. Network dissection (Bau et al., 2017) showed that units in early convolutional layers correspond to low-level detectors (colour, edge, texture), while units in deeper layers correspond to object parts (eyes, wheels, doors) and semantic concepts (face, tree, building) that are identifiable by human annotators. This structured feature organisation supports the hypothesis that convolutional hierarchies provide a useful decomposition of visual scenes into compositional parts — a representation that bridges computer vision and theories of human visual object recognition.
 
-- ### Provenance
+### Provenance
 

@@ -1,83 +1,90 @@
-
 The Middleware Layer is the stratum of software infrastructure that sits between low-level platform services or network protocols and the application-facing interfaces that consume them, providing integration, abstraction, orchestration, and interoperability services. It decouples system components by standardising communication contracts through APIs, messaging buses, and RPC frameworks, and bridges heterogeneous subsystems — including on-chain protocols, off-chain data sources, and cross-network boundaries — without requiring changes to the underlying protocol or the consuming application. In distributed and blockchain architectures the layer encompasses API gateways, oracle networks, cross-chain bridges, indexing services, wallet connectors, and transaction orchestration utilities that collectively raise the abstraction level available to developers. Its maturity is well-established in enterprise computing and rapidly maturing in decentralised ecosystems.
 
-- ### Overview
-  - Middleware emerged as a distinct engineering concern in the late 1980s when enterprise IT began interconnecting disparate mainframes, minicomputers, and workstations that had no shared communication standard. The insight was that rather than building point-to-point adapters between every pair of systems, a reusable middle tier could absorb translation, routing, and reliability concerns once and expose a consistent contract to consumers. This hub-and-spoke or bus model became the backbone of [[Service-Oriented Architecture]] and later [[Microservices]] patterns.
-  - In the context of [[Distributed System]] design the Middleware Layer fulfils several architectural roles simultaneously:
-    - **Decoupling** — producers and consumers of data need not know each other's internal structure; they agree only on the middleware interface.
-    - **Abstraction** — low-level protocol complexity (encoding formats, retries, circuit-breaking) is hidden behind higher-level APIs.
-    - **Mediation** — protocol translation, schema mapping, and version negotiation happen in middleware, not in application code.
-    - **Reliability** — [[Message Broker]] systems persist messages and provide at-least-once or exactly-once delivery guarantees that raw network sockets cannot offer.
-    - **Observability** — [[Service Mesh]] and [[API Gateway]] components instrument traffic, providing tracing, metrics, and logging without changes to service code.
-  - In blockchain and [[Decentralised Application]] stacks the same concerns apply but are complicated by determinism requirements, trust minimisation, and chain fragmentation. A [[Smart Contract]] cannot make outbound HTTP calls; an [[Oracle Network]] solves this by acting as a trusted bridge. Multiple [[Blockchain]] networks with incompatible state models require [[Cross-Chain Bridge]] infrastructure at the middleware tier.
+### Overview
 
-- ### Key Components
-  - **[[API Gateway]]** — a reverse-proxy front-door that enforces authentication, rate-limiting, routing, and protocol translation for all inbound API traffic. Products such as Kong, AWS API Gateway, and Apigee operate at this layer.
-  - **[[Message Broker]]** — durable, asynchronous message transport implementing [[Publish-Subscribe Pattern]] or point-to-point queues. Apache Kafka, RabbitMQ, and NATS are canonical examples.
-  - **[[Service Mesh]]** — a dedicated infrastructure layer (typically sidecar proxies such as Envoy) handling service-to-service communication, mTLS encryption, [[Load Balancing]], and distributed tracing within a [[Microservices]] deployment.
-  - **[[Enterprise Service Bus]]** — a centralised integration backbone that routes, transforms, and orchestrates messages between enterprise systems; exemplified by MuleSoft, IBM MQ, and Apache Camel.
-  - **[[Remote Procedure Call]] frameworks** — allow a local function call to transparently invoke a remote service; includes gRPC (HTTP/2 + Protocol Buffers), Thrift, and the blockchain-specific [[JSON-RPC]] interface used by Ethereum nodes.
-  - **[[Oracle Network]]** — off-chain computation and data retrieval services that feed external information (asset prices, weather readings, sporting outcomes) into on-chain [[Smart Contract]] execution. Chainlink is the dominant example; Band Protocol and Pyth Network are alternatives.
-  - **[[Cross-Chain Bridge]]** — middleware that maintains a cryptographic lock-and-mint or burn-and-mint protocol between two or more blockchain networks, enabling asset and message transfer across heterogeneous chains.
-  - **Indexing and Query Services** — services such as The Graph that ingest raw blockchain event logs and build structured, queryable indices that [[Decentralised Application]] front-ends can query via GraphQL without replaying the entire chain.
-  - **Wallet Connectors** — protocols (WalletConnect, MetaMask provider injection) that mediate between browser-based [[Decentralised Application]] code and user-controlled key management hardware or software.
-  - **[[Event Bus]]** — lightweight in-process or network-local pub-sub bus used within a single service cluster; distinct from a full [[Message Broker]] in durability guarantees and operational scope.
-  - **[[Integration Platform]] as a Service (iPaaS)** — cloud-hosted middleware combining connectors, workflow orchestration, and data transformation; examples include Zapier (consumer), Boomi, and Informatica (enterprise).
+- Middleware emerged as a distinct engineering concern in the late 1980s when enterprise IT began interconnecting disparate mainframes, minicomputers, and workstations that had no shared communication standard. The insight was that rather than building point-to-point adapters between every pair of systems, a reusable middle tier could absorb translation, routing, and reliability concerns once and expose a consistent contract to consumers. This hub-and-spoke or bus model became the backbone of [[Service-Oriented Architecture]] and later [[Microservices]] patterns.
+- In the context of [[Distributed System]] design the Middleware Layer fulfils several architectural roles simultaneously:
+  - **Decoupling** — producers and consumers of data need not know each other's internal structure; they agree only on the middleware interface.
+  - **Abstraction** — low-level protocol complexity (encoding formats, retries, circuit-breaking) is hidden behind higher-level APIs.
+  - **Mediation** — protocol translation, schema mapping, and version negotiation happen in middleware, not in application code.
+  - **Reliability** — [[Message Broker]] systems persist messages and provide at-least-once or exactly-once delivery guarantees that raw network sockets cannot offer.
+  - **Observability** — [[Service Mesh]] and [[API Gateway]] components instrument traffic, providing tracing, metrics, and logging without changes to service code.
+- In blockchain and [[Decentralised Application]] stacks the same concerns apply but are complicated by determinism requirements, trust minimisation, and chain fragmentation. A [[Smart Contract]] cannot make outbound HTTP calls; an [[Oracle Network]] solves this by acting as a trusted bridge. Multiple [[Blockchain]] networks with incompatible state models require [[Cross-Chain Bridge]] infrastructure at the middleware tier.
 
-- ### Mechanisms
-  - **Synchronous mediation** — [[Remote Procedure Call]] and request-reply [[Application Programming Interface]] patterns where the client blocks awaiting a response. [[API Gateway]] components operate in this mode, adding routing and security without changing the synchronous contract.
-  - **Asynchronous decoupling** — [[Message Broker]] and [[Event Bus]] patterns where publishers emit messages without waiting for consumers; brokers buffer and deliver at consumer pace, improving resilience under load spikes.
-  - **Data transformation** — middleware applies schema mapping, format conversion (JSON↔XML↔Protobuf), and field-level enrichment so that systems with incompatible data models can interoperate.
-  - **Service discovery and [[Load Balancing]]** — [[Service Mesh]] components maintain a real-time registry of healthy service instances and distribute traffic using round-robin, least-connections, or latency-aware algorithms.
-  - **Cryptographic attestation (blockchain context)** — [[Oracle Network]] nodes sign their responses with private keys; on-chain aggregation contracts verify signatures and compute consensus values, giving [[Smart Contract]] code a trust anchor for external data.
-  - **Cross-chain message passing** — [[Cross-Chain Bridge]] middleware uses light-client proofs, multi-sig committees, or optimistic fraud proofs to verify events on a source chain before minting or releasing assets on a target chain.
-  - **Sidecar injection** — [[Service Mesh]] platforms (Istio, Linkerd) inject proxy containers alongside each microservice pod at deploy time, intercepting all network traffic transparently without requiring application code changes.
+### Key Components
 
-- ### Applications and Use Cases
-  - **Enterprise application integration** — connecting ERP, CRM, and data warehouse systems through an [[Enterprise Service Bus]] so that order, inventory, and customer data remain consistent across organisational silos.
-  - **Cloud-native [[Microservices]]** — [[Service Mesh]] and [[API Gateway]] middleware are foundational to Kubernetes-based deployments, providing traffic management, mTLS, and observability across hundreds of independently deployable services.
-  - **Real-time data streaming** — [[Message Broker]] platforms such as Apache Kafka support high-throughput event streaming for analytics pipelines, fraud detection, and IoT sensor aggregation.
-  - **DeFi protocol integration** — [[Price Oracle]] middleware feeds real-time asset prices into lending protocols (Aave, Compound), automated market makers, and synthetic asset platforms where stale or manipulated prices would cause catastrophic losses.
-  - **Cross-chain asset bridging** — [[Cross-Chain Bridge]] middleware enables users to move tokens between Ethereum, Polygon, Arbitrum, and other networks, underpinning the multi-chain [[Decentralised Application]] ecosystem.
-  - **Blockchain data indexing** — The Graph Protocol middleware allows [[Decentralised Application]] front-ends to query complex historical data (NFT ownership history, DEX swap volumes) via GraphQL without running a full archive node.
-  - **AI inference serving** — [[Machine Learning Inference]] middleware (Triton Inference Server, BentoML, Ray Serve) sits between raw model artefacts and production API consumers, handling batching, model versioning, and hardware-accelerated routing.
-  - **IoT device management** — MQTT brokers act as lightweight [[Message Broker]] middleware connecting millions of constrained devices to cloud analytics backends, normalising heterogeneous telemetry formats.
-  - **API monetisation and governance** — [[API Gateway]] middleware enforces SLA tiers, usage quotas, and billing integration for platform businesses that expose APIs as commercial products.
+- **[[API Gateway]]** — a reverse-proxy front-door that enforces authentication, rate-limiting, routing, and protocol translation for all inbound API traffic. Products such as Kong, AWS API Gateway, and Apigee operate at this layer.
+- **[[Message Broker]]** — durable, asynchronous message transport implementing [[Publish-Subscribe Pattern]] or point-to-point queues. Apache Kafka, RabbitMQ, and NATS are canonical examples.
+- **[[Service Mesh]]** — a dedicated infrastructure layer (typically sidecar proxies such as Envoy) handling service-to-service communication, mTLS encryption, [[Load Balancing]], and distributed tracing within a [[Microservices]] deployment.
+- **[[Enterprise Service Bus]]** — a centralised integration backbone that routes, transforms, and orchestrates messages between enterprise systems; exemplified by MuleSoft, IBM MQ, and Apache Camel.
+- **[[Remote Procedure Call]] frameworks** — allow a local function call to transparently invoke a remote service; includes gRPC (HTTP/2 + Protocol Buffers), Thrift, and the blockchain-specific [[JSON-RPC]] interface used by Ethereum nodes.
+- **[[Oracle Network]]** — off-chain computation and data retrieval services that feed external information (asset prices, weather readings, sporting outcomes) into on-chain [[Smart Contract]] execution. Chainlink is the dominant example; Band Protocol and Pyth Network are alternatives.
+- **[[Cross-Chain Bridge]]** — middleware that maintains a cryptographic lock-and-mint or burn-and-mint protocol between two or more blockchain networks, enabling asset and message transfer across heterogeneous chains.
+- **Indexing and Query Services** — services such as The Graph that ingest raw blockchain event logs and build structured, queryable indices that [[Decentralised Application]] front-ends can query via GraphQL without replaying the entire chain.
+- **Wallet Connectors** — protocols (WalletConnect, MetaMask provider injection) that mediate between browser-based [[Decentralised Application]] code and user-controlled key management hardware or software.
+- **[[Event Bus]]** — lightweight in-process or network-local pub-sub bus used within a single service cluster; distinct from a full [[Message Broker]] in durability guarantees and operational scope.
+- **[[Integration Platform]] as a Service (iPaaS)** — cloud-hosted middleware combining connectors, workflow orchestration, and data transformation; examples include Zapier (consumer), Boomi, and Informatica (enterprise).
 
-- ### Standards and Context
-  - **OASIS AMQP 1.0** — the ISO/IEC-ratified Advanced Message Queuing Protocol underpins many [[Message Broker]] implementations including Azure Service Bus and RabbitMQ's AMQP mode.
-  - **W3C SOAP / WS-* stack** — the XML-based web services standards (WS-Security, WS-ReliableMessaging) were the dominant [[Enterprise Service Bus]] integration fabric through the 2000s and remain in legacy deployments.
-  - **OpenAPI Specification (OAS 3.x)** — defines machine-readable contracts for REST APIs exposed through [[API Gateway]] middleware, enabling code generation, testing, and documentation automation.
-  - **gRPC / Protocol Buffers** — Google's HTTP/2-based [[Remote Procedure Call]] framework is widely adopted for internal microservice communication given its compact binary encoding and bi-directional streaming.
-  - **Ethereum JSON-RPC specification** — the de facto standard API surface for EVM-compatible blockchain nodes; implemented by Geth, Erigon, Nethermind, and compatible by all major [[Decentralised Application]] toolkits.
-  - **WalletConnect 2.0** — an open protocol standardising wallet-to-dApp session negotiation, signing requests, and multi-chain support across the browser-based [[Decentralised Application]] ecosystem.
-  - **Istio / CNCF service mesh standards** — the Cloud Native Computing Foundation maintains reference specifications for [[Service Mesh]] interoperability, including the SMI (Service Mesh Interface) API.
-  - **Chainlink DECO and CCIP** — Chainlink's Cross-Chain Interoperability Protocol defines a standard messaging interface for [[Cross-Chain Bridge]] operations, aiming to reduce fragmentation in multi-chain middleware.
-  - **GraphQL specification** — the query language used by indexing middleware such as The Graph, offering fine-grained data retrieval that reduces over-fetching characteristic of REST endpoints.
-  - **IEEE 2144 / ISO 22739** — blockchain terminology standards that contextualise where middleware components sit relative to on-chain protocol layers.
+### Mechanisms
 
-- ### Scope and Boundaries
-  - **Included** — API implementations, integration libraries, [[Oracle Network]] systems, [[Cross-Chain Bridge]] infrastructure, indexing and query services, wallet connectors, [[Message Broker]] platforms, [[Service Mesh]] deployments, and orchestration utilities whose primary function is bridging, integrating, abstracting, or routing between system tiers.
-  - **Excluded** — core consensus and networking implementations (those belong in [[Protocol Layer]]), end-user facing applications (those belong in [[Application Layer]]), and raw physical networking hardware (that belongs in the physical or [[Transport Layer]]).
-  - **Boundary with [[Protocol Layer]]** — the Protocol Layer implements the rules of communication (block structure, consensus algorithm, wire encoding); the Middleware Layer exposes those rules through higher-level interfaces (JSON-RPC, SDKs, event subscriptions) that insulate application developers from protocol churn.
-  - **Boundary with [[Application Layer]]** — the Application Layer delivers end-user value (wallet UX, DEX trading interface, enterprise dashboard); the Middleware Layer delivers developer-facing infrastructure (APIs, brokers, bridges) that the Application Layer consumes.
+- **Synchronous mediation** — [[Remote Procedure Call]] and request-reply [[Application Programming Interface]] patterns where the client blocks awaiting a response. [[API Gateway]] components operate in this mode, adding routing and security without changing the synchronous contract.
+- **Asynchronous decoupling** — [[Message Broker]] and [[Event Bus]] patterns where publishers emit messages without waiting for consumers; brokers buffer and deliver at consumer pace, improving resilience under load spikes.
+- **Data transformation** — middleware applies schema mapping, format conversion (JSON↔XML↔Protobuf), and field-level enrichment so that systems with incompatible data models can interoperate.
+- **Service discovery and [[Load Balancing]]** — [[Service Mesh]] components maintain a real-time registry of healthy service instances and distribute traffic using round-robin, least-connections, or latency-aware algorithms.
+- **Cryptographic attestation (blockchain context)** — [[Oracle Network]] nodes sign their responses with private keys; on-chain aggregation contracts verify signatures and compute consensus values, giving [[Smart Contract]] code a trust anchor for external data.
+- **Cross-chain message passing** — [[Cross-Chain Bridge]] middleware uses light-client proofs, multi-sig committees, or optimistic fraud proofs to verify events on a source chain before minting or releasing assets on a target chain.
+- **Sidecar injection** — [[Service Mesh]] platforms (Istio, Linkerd) inject proxy containers alongside each microservice pod at deploy time, intercepting all network traffic transparently without requiring application code changes.
 
-- ### Current Landscape (2026)
-  - The service-mesh middleware layer has moved decisively away from per-pod sidecars: Istio's ambient mode reached General Availability in v1.24 (November 2024), and by 2026 it is the recommended deployment model, decoupling L4 identity/mTLS (the per-node ztunnel) from optional per-namespace L7 waypoint proxies.
-  - eBPF kernel-native data planes have matured as the sidecarless alternative, with Cilium Service Mesh (CNCF-graduated October 2023) running mesh logic directly in the kernel networking path and replacing kube-proxy; industry write-ups in 2026 report roughly 60% of cloud-native organisations running a mesh in production.
-  - Istio 1.29 (February 2026) shipped ambient multi-network multicluster in Beta, and at KubeCon + CloudNativeCon Europe 2026 (Amsterdam, March 2026) the project announced the Gateway API Inference Extension (beta) plus experimental agentgateway support, signalling a pivot of the middleware layer towards AI-inference-aware traffic routing.
-  - The Kubernetes Gateway API, together with the GAMMA initiative, has become the vendor-neutral standard for both north-south and east-west traffic, with conformant mesh implementations (Istio, Linkerd, Kuma) converging on it to reduce CRD sprawl and lock-in.
-  - A new "AI middleware" tier has emerged: LLM gateways (Bifrost, LiteLLM, Portkey, Kong AI Gateway, Cloudflare AI Gateway, OpenRouter) provide a unified multi-provider API with routing, failover, token-based rate limiting and cost governance, distinct from but complementary to MCP gateways.
-  - Anthropic's Model Context Protocol (introduced November 2024, spec revision 2025-06-18) has spawned a dedicated MCP-gateway middleware layer, with implementations such as IBM ContextForge, Docker MCP Gateway, Lasso, Obot and the Bloomberg/Tetrate-built Envoy AI Gateway federating many MCP servers behind one governed endpoint; Gartner's 2025 framing calls this the "missing enterprise layer" for registration, discovery, authorisation and observability.
-  - Consolidation is visible at the low end: Microsoft's Open Service Mesh was archived in 2024 and AWS App Mesh reaches end-of-life on 30 September 2026, pushing users towards CNCF-graduated meshes or newer sidecarless/eBPF options.
-  - Open challenges as of 2026 include achieving feature parity and safe migration between sidecar and ambient modes, standardising security for namespace-based multi-tenancy, and governing the fast-proliferating AI/MCP middleware surface for prompt-injection, token spend and cross-cloud policy enforcement.
+### Applications and Use Cases
 
-- ### References
-  - 1. Istio / CNCF (2026). Istio Brings Future-Ready Service Mesh to the AI Era with Ambient Multicluster, Gateway API Inference Extension and More. https://www.cncf.io/announcements/2026/03/25/istio-brings-future-ready-service-mesh-to-the-ai-era-with-new-ambient-multicluster-gateway-api-inference-extension-and-more/
-  - 2. Istio Steering Committee (2025). Istio Roadmap for 2025-2026. https://istio.io/latest/blog/2025/roadmap/
-  - 3. CSOH (2026). Service Mesh Security - East-West Traffic in K8s (ambient/sidecarless shift; OSM archived, AWS App Mesh EOL). https://csoh.org/service-mesh-security.html
-  - 4. TrueFoundry (2026). TrueFoundry and the Rise of MCP Gateways in Enterprise AI (Gartner 2025 report). https://www.truefoundry.com/blog/truefoundry-and-the-mcp-gateway-revolution-insights-from-gartners-2025-report
-  - 5. OpenRouter (2026). LLM Gateway: What It Is and How to Choose One. https://openrouter.ai/blog/insights/llm-gateway/
+- **Enterprise application integration** — connecting ERP, CRM, and data warehouse systems through an [[Enterprise Service Bus]] so that order, inventory, and customer data remain consistent across organisational silos.
+- **Cloud-native [[Microservices]]** — [[Service Mesh]] and [[API Gateway]] middleware are foundational to Kubernetes-based deployments, providing traffic management, mTLS, and observability across hundreds of independently deployable services.
+- **Real-time data streaming** — [[Message Broker]] platforms such as Apache Kafka support high-throughput event streaming for analytics pipelines, fraud detection, and IoT sensor aggregation.
+- **DeFi protocol integration** — [[Price Oracle]] middleware feeds real-time asset prices into lending protocols (Aave, Compound), automated market makers, and synthetic asset platforms where stale or manipulated prices would cause catastrophic losses.
+- **Cross-chain asset bridging** — [[Cross-Chain Bridge]] middleware enables users to move tokens between Ethereum, Polygon, Arbitrum, and other networks, underpinning the multi-chain [[Decentralised Application]] ecosystem.
+- **Blockchain data indexing** — The Graph Protocol middleware allows [[Decentralised Application]] front-ends to query complex historical data (NFT ownership history, DEX swap volumes) via GraphQL without running a full archive node.
+- **AI inference serving** — [[Machine Learning Inference]] middleware (Triton Inference Server, BentoML, Ray Serve) sits between raw model artefacts and production API consumers, handling batching, model versioning, and hardware-accelerated routing.
+- **IoT device management** — MQTT brokers act as lightweight [[Message Broker]] middleware connecting millions of constrained devices to cloud analytics backends, normalising heterogeneous telemetry formats.
+- **API monetisation and governance** — [[API Gateway]] middleware enforces SLA tiers, usage quotas, and billing integration for platform businesses that expose APIs as commercial products.
 
-- ### Provenance
+### Standards and Context
+
+- **OASIS AMQP 1.0** — the ISO/IEC-ratified Advanced Message Queuing Protocol underpins many [[Message Broker]] implementations including Azure Service Bus and RabbitMQ's AMQP mode.
+- **W3C SOAP / WS-* stack** — the XML-based web services standards (WS-Security, WS-ReliableMessaging) were the dominant [[Enterprise Service Bus]] integration fabric through the 2000s and remain in legacy deployments.
+- **OpenAPI Specification (OAS 3.x)** — defines machine-readable contracts for REST APIs exposed through [[API Gateway]] middleware, enabling code generation, testing, and documentation automation.
+- **gRPC / Protocol Buffers** — Google's HTTP/2-based [[Remote Procedure Call]] framework is widely adopted for internal microservice communication given its compact binary encoding and bi-directional streaming.
+- **Ethereum JSON-RPC specification** — the de facto standard API surface for EVM-compatible blockchain nodes; implemented by Geth, Erigon, Nethermind, and compatible by all major [[Decentralised Application]] toolkits.
+- **WalletConnect 2.0** — an open protocol standardising wallet-to-dApp session negotiation, signing requests, and multi-chain support across the browser-based [[Decentralised Application]] ecosystem.
+- **Istio / CNCF service mesh standards** — the Cloud Native Computing Foundation maintains reference specifications for [[Service Mesh]] interoperability, including the SMI (Service Mesh Interface) API.
+- **Chainlink DECO and CCIP** — Chainlink's Cross-Chain Interoperability Protocol defines a standard messaging interface for [[Cross-Chain Bridge]] operations, aiming to reduce fragmentation in multi-chain middleware.
+- **GraphQL specification** — the query language used by indexing middleware such as The Graph, offering fine-grained data retrieval that reduces over-fetching characteristic of REST endpoints.
+- **IEEE 2144 / ISO 22739** — blockchain terminology standards that contextualise where middleware components sit relative to on-chain protocol layers.
+
+### Scope and Boundaries
+
+- **Included** — API implementations, integration libraries, [[Oracle Network]] systems, [[Cross-Chain Bridge]] infrastructure, indexing and query services, wallet connectors, [[Message Broker]] platforms, [[Service Mesh]] deployments, and orchestration utilities whose primary function is bridging, integrating, abstracting, or routing between system tiers.
+- **Excluded** — core consensus and networking implementations (those belong in [[Protocol Layer]]), end-user facing applications (those belong in [[Application Layer]]), and raw physical networking hardware (that belongs in the physical or [[Transport Layer]]).
+- **Boundary with [[Protocol Layer]]** — the Protocol Layer implements the rules of communication (block structure, consensus algorithm, wire encoding); the Middleware Layer exposes those rules through higher-level interfaces (JSON-RPC, SDKs, event subscriptions) that insulate application developers from protocol churn.
+- **Boundary with [[Application Layer]]** — the Application Layer delivers end-user value (wallet UX, DEX trading interface, enterprise dashboard); the Middleware Layer delivers developer-facing infrastructure (APIs, brokers, bridges) that the Application Layer consumes.
+
+### Current Landscape (2026)
+
+- The service-mesh middleware layer has moved decisively away from per-pod sidecars: Istio's ambient mode reached General Availability in v1.24 (November 2024), and by 2026 it is the recommended deployment model, decoupling L4 identity/mTLS (the per-node ztunnel) from optional per-namespace L7 waypoint proxies.
+- eBPF kernel-native data planes have matured as the sidecarless alternative, with Cilium Service Mesh (CNCF-graduated October 2023) running mesh logic directly in the kernel networking path and replacing kube-proxy; industry write-ups in 2026 report roughly 60% of cloud-native organisations running a mesh in production.
+- Istio 1.29 (February 2026) shipped ambient multi-network multicluster in Beta, and at KubeCon + CloudNativeCon Europe 2026 (Amsterdam, March 2026) the project announced the Gateway API Inference Extension (beta) plus experimental agentgateway support, signalling a pivot of the middleware layer towards AI-inference-aware traffic routing.
+- The Kubernetes Gateway API, together with the GAMMA initiative, has become the vendor-neutral standard for both north-south and east-west traffic, with conformant mesh implementations (Istio, Linkerd, Kuma) converging on it to reduce CRD sprawl and lock-in.
+- A new "AI middleware" tier has emerged: LLM gateways (Bifrost, LiteLLM, Portkey, Kong AI Gateway, Cloudflare AI Gateway, OpenRouter) provide a unified multi-provider API with routing, failover, token-based rate limiting and cost governance, distinct from but complementary to MCP gateways.
+- Anthropic's Model Context Protocol (introduced November 2024, spec revision 2025-06-18) has spawned a dedicated MCP-gateway middleware layer, with implementations such as IBM ContextForge, Docker MCP Gateway, Lasso, Obot and the Bloomberg/Tetrate-built Envoy AI Gateway federating many MCP servers behind one governed endpoint; Gartner's 2025 framing calls this the "missing enterprise layer" for registration, discovery, authorisation and observability.
+- Consolidation is visible at the low end: Microsoft's Open Service Mesh was archived in 2024 and AWS App Mesh reaches end-of-life on 30 September 2026, pushing users towards CNCF-graduated meshes or newer sidecarless/eBPF options.
+- Open challenges as of 2026 include achieving feature parity and safe migration between sidecar and ambient modes, standardising security for namespace-based multi-tenancy, and governing the fast-proliferating AI/MCP middleware surface for prompt-injection, token spend and cross-cloud policy enforcement.
+
+### References
+
+- 1. Istio / CNCF (2026). Istio Brings Future-Ready Service Mesh to the AI Era with Ambient Multicluster, Gateway API Inference Extension and More. https://www.cncf.io/announcements/2026/03/25/istio-brings-future-ready-service-mesh-to-the-ai-era-with-new-ambient-multicluster-gateway-api-inference-extension-and-more/
+- 2. Istio Steering Committee (2025). Istio Roadmap for 2025-2026. https://istio.io/latest/blog/2025/roadmap/
+- 3. CSOH (2026). Service Mesh Security - East-West Traffic in K8s (ambient/sidecarless shift; OSM archived, AWS App Mesh EOL). https://csoh.org/service-mesh-security.html
+- 4. TrueFoundry (2026). TrueFoundry and the Rise of MCP Gateways in Enterprise AI (Gartner 2025 report). https://www.truefoundry.com/blog/truefoundry-and-the-mcp-gateway-revolution-insights-from-gartners-2025-report
+- 5. OpenRouter (2026). LLM Gateway: What It Is and How to Choose One. https://openrouter.ai/blog/insights/llm-gateway/
+
+### Provenance
 

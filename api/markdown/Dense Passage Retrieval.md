@@ -1,167 +1,169 @@
-
 Dense Passage Retrieval (DPR) is an information retrieval approach in which both queries and document passages are encoded into dense continuous vector representations using dual-encoder neural networks, enabling similarity search via dot-product or cosine distance rather than sparse lexical matching. It substantially outperforms traditional BM25 retrieval on semantic matching tasks and forms the retriever component of open-domain question-answering and retrieval-augmented generation systems.
 
-- ### Semantic Classification
+### Semantic Classification
 
-- ### Content
+### Content
 
-  ## Compositional Relationships (Components)
-      SubClassOf(ai:DensePassageRetrieval
-        ObjectSomeValuesFrom(ai:hasPart ai:QueryEncoder))
-      SubClassOf(ai:DensePassageRetrieval
-        ObjectSomeValuesFrom(ai:hasPart ai:PassageEncoder))
-      SubClassOf(ai:DensePassageRetrieval
-        ObjectSomeValuesFrom(ai:hasPart ai:FAISSIndex))
-      SubClassOf(ai:DensePassageRetrieval
-        ObjectSomeValuesFrom(ai:hasPart ai:ContrastiveTrainingObjective))
-      SubClassOf(ai:DensePassageRetrieval
-        ObjectSomeValuesFrom(ai:hasPart ai:HardNegativeMining))
-      SubClassOf(ai:DensePassageRetrieval
-        ObjectSomeValuesFrom(ai:hasPart ai:OfflineIndexingPipeline))
-      SubClassOf(ai:DensePassageRetrieval
-        ObjectSomeValuesFrom(ai:hasPart ai:OnlineRetrievalModule))
+## Compositional Relationships (Components)
+    SubClassOf(ai:DensePassageRetrieval
+      ObjectSomeValuesFrom(ai:hasPart ai:QueryEncoder))
+    SubClassOf(ai:DensePassageRetrieval
+      ObjectSomeValuesFrom(ai:hasPart ai:PassageEncoder))
+    SubClassOf(ai:DensePassageRetrieval
+      ObjectSomeValuesFrom(ai:hasPart ai:FAISSIndex))
+    SubClassOf(ai:DensePassageRetrieval
+      ObjectSomeValuesFrom(ai:hasPart ai:ContrastiveTrainingObjective))
+    SubClassOf(ai:DensePassageRetrieval
+      ObjectSomeValuesFrom(ai:hasPart ai:HardNegativeMining))
+    SubClassOf(ai:DensePassageRetrieval
+      ObjectSomeValuesFrom(ai:hasPart ai:OfflineIndexingPipeline))
+    SubClassOf(ai:DensePassageRetrieval
+      ObjectSomeValuesFrom(ai:hasPart ai:OnlineRetrievalModule))
 
-  ## Dependency Relationships
-      SubClassOf(ai:DensePassageRetrieval
-        ObjectSomeValuesFrom(ai:requires ai:TransformerArchitecture))
-      SubClassOf(ai:DensePassageRetrieval
-        ObjectSomeValuesFrom(ai:requires ai:EmbeddingModel))
-      SubClassOf(ai:DensePassageRetrieval
-        ObjectSomeValuesFrom(ai:requires ai:VectorDatabase))
-      SubClassOf(ai:DensePassageRetrieval
-        ObjectSomeValuesFrom(ai:requires ai:ApproximateNearestNeighbourSearch))
-      SubClassOf(ai:DensePassageRetrieval
-        ObjectSomeValuesFrom(ai:requires ai:TrainingDataset))
-      SubClassOf(ai:DensePassageRetrieval
-        ObjectSomeValuesFrom(ai:requires ai:BERT))
+## Dependency Relationships
+    SubClassOf(ai:DensePassageRetrieval
+      ObjectSomeValuesFrom(ai:requires ai:TransformerArchitecture))
+    SubClassOf(ai:DensePassageRetrieval
+      ObjectSomeValuesFrom(ai:requires ai:EmbeddingModel))
+    SubClassOf(ai:DensePassageRetrieval
+      ObjectSomeValuesFrom(ai:requires ai:VectorDatabase))
+    SubClassOf(ai:DensePassageRetrieval
+      ObjectSomeValuesFrom(ai:requires ai:ApproximateNearestNeighbourSearch))
+    SubClassOf(ai:DensePassageRetrieval
+      ObjectSomeValuesFrom(ai:requires ai:TrainingDataset))
+    SubClassOf(ai:DensePassageRetrieval
+      ObjectSomeValuesFrom(ai:requires ai:BERT))
 
-  ## Capability Relationships
-      SubClassOf(ai:DensePassageRetrieval
-        ObjectSomeValuesFrom(ai:enables ai:RetrievalAugmentedGeneration))
-      SubClassOf(ai:DensePassageRetrieval
-        ObjectSomeValuesFrom(ai:enables ai:OpenDomainQuestionAnswering))
-      SubClassOf(ai:DensePassageRetrieval
-        ObjectSomeValuesFrom(ai:enables ai:SemanticSearch))
-      SubClassOf(ai:DensePassageRetrieval
-        ObjectSomeValuesFrom(ai:enables ai:KnowledgeIntensiveNLP))
-      SubClassOf(ai:DensePassageRetrieval
-        ObjectSomeValuesFrom(ai:enables ai:HallucinationMitigation))
-      SubClassOf(ai:DensePassageRetrieval
-        ObjectSomeValuesFrom(ai:enables ai:DocumentRetrieval))
+## Capability Relationships
+    SubClassOf(ai:DensePassageRetrieval
+      ObjectSomeValuesFrom(ai:enables ai:RetrievalAugmentedGeneration))
+    SubClassOf(ai:DensePassageRetrieval
+      ObjectSomeValuesFrom(ai:enables ai:OpenDomainQuestionAnswering))
+    SubClassOf(ai:DensePassageRetrieval
+      ObjectSomeValuesFrom(ai:enables ai:SemanticSearch))
+    SubClassOf(ai:DensePassageRetrieval
+      ObjectSomeValuesFrom(ai:enables ai:KnowledgeIntensiveNLP))
+    SubClassOf(ai:DensePassageRetrieval
+      ObjectSomeValuesFrom(ai:enables ai:HallucinationMitigation))
+    SubClassOf(ai:DensePassageRetrieval
+      ObjectSomeValuesFrom(ai:enables ai:DocumentRetrieval))
 
-  ## Implementation Relationships
-      SubClassOf(ai:DensePassageRetrieval
-        ObjectSomeValuesFrom(ai:implements ai:BiEncoderArchitecture))
-      SubClassOf(ai:DensePassageRetrieval
-        ObjectSomeValuesFrom(ai:implements ai:MaximumInnerProductSearch))
-      SubClassOf(ai:DensePassageRetrieval
-        ObjectSomeValuesFrom(ai:implements ai:InBatchNegativeTraining))
-      SubClassOf(ai:DensePassageRetrieval
-        ObjectSomeValuesFrom(ai:implements ai:ContrastiveLearning))
-      SubClassOf(ai:DensePassageRetrieval
-        ObjectSomeValuesFrom(ai:implements ai:OfflineIndexOnlineServe))
+## Implementation Relationships
+    SubClassOf(ai:DensePassageRetrieval
+      ObjectSomeValuesFrom(ai:implements ai:BiEncoderArchitecture))
+    SubClassOf(ai:DensePassageRetrieval
+      ObjectSomeValuesFrom(ai:implements ai:MaximumInnerProductSearch))
+    SubClassOf(ai:DensePassageRetrieval
+      ObjectSomeValuesFrom(ai:implements ai:InBatchNegativeTraining))
+    SubClassOf(ai:DensePassageRetrieval
+      ObjectSomeValuesFrom(ai:implements ai:ContrastiveLearning))
+    SubClassOf(ai:DensePassageRetrieval
+      ObjectSomeValuesFrom(ai:implements ai:OfflineIndexOnlineServe))
 
-  ## Reduction Relationships
-      SubClassOf(ai:DensePassageRetrieval
-        ObjectSomeValuesFrom(ai:reducesTo ai:InformationRetrieval))
-      SubClassOf(ai:DensePassageRetrieval
-        ObjectSomeValuesFrom(ai:reducesTo ai:NeuralInformationRetrieval))
-      SubClassOf(ai:DensePassageRetrieval
-        ObjectSomeValuesFrom(ai:reducesTo ai:SemanticSearch))
-      SubClassOf(ai:DensePassageRetrieval
-        ObjectSomeValuesFrom(ai:reducesTo ai:VectorSimilaritySearch))
-      SubClassOf(ai:DensePassageRetrieval
-        ObjectSomeValuesFrom(ai:reducesTo ai:BiEncoderRetrieval))
-      SubClassOf(ai:DensePassageRetrieval
-        ObjectSomeValuesFrom(ai:reducesTo ai:ContrastiveRepresentationLearning))
+## Reduction Relationships
+    SubClassOf(ai:DensePassageRetrieval
+      ObjectSomeValuesFrom(ai:reducesTo ai:InformationRetrieval))
+    SubClassOf(ai:DensePassageRetrieval
+      ObjectSomeValuesFrom(ai:reducesTo ai:NeuralInformationRetrieval))
+    SubClassOf(ai:DensePassageRetrieval
+      ObjectSomeValuesFrom(ai:reducesTo ai:SemanticSearch))
+    SubClassOf(ai:DensePassageRetrieval
+      ObjectSomeValuesFrom(ai:reducesTo ai:VectorSimilaritySearch))
+    SubClassOf(ai:DensePassageRetrieval
+      ObjectSomeValuesFrom(ai:reducesTo ai:BiEncoderRetrieval))
+    SubClassOf(ai:DensePassageRetrieval
+      ObjectSomeValuesFrom(ai:reducesTo ai:ContrastiveRepresentationLearning))
 
-  ## Evolution Relationships
-      SubClassOf(ai:DensePassageRetrieval
-        ObjectSomeValuesFrom(ai:evolvedInto ai:ColBERT))
-      SubClassOf(ai:DensePassageRetrieval
-        ObjectSomeValuesFrom(ai:evolvedInto ai:SPLADE))
-      SubClassOf(ai:DensePassageRetrieval
-        ObjectSomeValuesFrom(ai:evolvedInto ai:BGE-M3))
-      SubClassOf(ai:DensePassageRetrieval
-        ObjectSomeValuesFrom(ai:evolvedInto ai:InstructionTunedEmbedding))
-      SubClassOf(ai:DensePassageRetrieval
-        ObjectSomeValuesFrom(ai:evolvedInto ai:HybridRetrieval))
+## Evolution Relationships
+    SubClassOf(ai:DensePassageRetrieval
+      ObjectSomeValuesFrom(ai:evolvedInto ai:ColBERT))
+    SubClassOf(ai:DensePassageRetrieval
+      ObjectSomeValuesFrom(ai:evolvedInto ai:SPLADE))
+    SubClassOf(ai:DensePassageRetrieval
+      ObjectSomeValuesFrom(ai:evolvedInto ai:BGE-M3))
+    SubClassOf(ai:DensePassageRetrieval
+      ObjectSomeValuesFrom(ai:evolvedInto ai:InstructionTunedEmbedding))
+    SubClassOf(ai:DensePassageRetrieval
+      ObjectSomeValuesFrom(ai:evolvedInto ai:HybridRetrieval))
 
-  ## Comparison with Sparse Retrieval
+## Comparison with Sparse Retrieval
 
-  The contrast between dense and sparse retrieval is fundamental to understanding why DPR represented a paradigm shift in [[Information Retrieval]]. Sparse retrieval systems such as [[BM25]] represent both queries and documents as sparse vectors in a vocabulary-dimensional space, where each dimension corresponds to a vocabulary term and non-zero entries indicate term presence weighted by TF-IDF or BM25 Okapi factors. The similarity function is computationally efficient — an inverted index allows relevance computation in O(|q|) time rather than O(|D|) — and the representations are fully interpretable: the score for any (query, document) pair decomposes into term-by-term contributions that a human can inspect and explain. However, sparse retrieval is fundamentally limited by its dependence on lexical overlap. A query "What year did humans first land on the moon?" may fail to retrieve a passage containing "Apollo 11 mission reached Earth's natural satellite in 1969" because the only shared term is the stopword "the." This lexical gap problem affects every [[Information Retrieval]] task where natural language variation is non-trivial, particularly in open-domain question answering, conversational search, and cross-lingual retrieval.
+The contrast between dense and sparse retrieval is fundamental to understanding why DPR represented a paradigm shift in [[Information Retrieval]]. Sparse retrieval systems such as [[BM25]] represent both queries and documents as sparse vectors in a vocabulary-dimensional space, where each dimension corresponds to a vocabulary term and non-zero entries indicate term presence weighted by TF-IDF or BM25 Okapi factors. The similarity function is computationally efficient — an inverted index allows relevance computation in O(|q|) time rather than O(|D|) — and the representations are fully interpretable: the score for any (query, document) pair decomposes into term-by-term contributions that a human can inspect and explain. However, sparse retrieval is fundamentally limited by its dependence on lexical overlap. A query "What year did humans first land on the moon?" may fail to retrieve a passage containing "Apollo 11 mission reached Earth's natural satellite in 1969" because the only shared term is the stopword "the." This lexical gap problem affects every [[Information Retrieval]] task where natural language variation is non-trivial, particularly in open-domain question answering, conversational search, and cross-lingual retrieval.
 
-  Dense retrieval addresses the lexical gap by projecting both queries and passages into a shared continuous vector space via neural encoders trained on semantically annotated pairs. In this space, a query about "moon landing" and a passage about "Apollo 11 reaching Earth's satellite" are geometrically close even though they share no content terms, because the encoder has learned to recognise these as semantically equivalent from training examples. The cost is the loss of interpretability — a 768-dimensional vector has no obvious human-readable decomposition into contributing features — the loss of exact match guarantees, and the risk of poor generalisation to unseen vocabulary, technical terminology, or domain-specific language not covered by pre-training. A new scientific term absent from pre-training is either invisible to a dense encoder or handled only coarsely via subword tokenisation. The practical resolution in production systems is hybrid retrieval: combining dense and sparse systems via Reciprocal Rank Fusion or score combination captures both semantic matching from the dense retriever and exact lexical matching from the sparse retriever, consistently outperforming either system alone on standard benchmarks including BEIR. The low Jaccard overlap between the top-k sets returned by BM25 and DPR for the same query confirms that the two systems surface genuinely complementary evidence, making their fusion beneficial rather than redundant.
+Dense retrieval addresses the lexical gap by projecting both queries and passages into a shared continuous vector space via neural encoders trained on semantically annotated pairs. In this space, a query about "moon landing" and a passage about "Apollo 11 reaching Earth's satellite" are geometrically close even though they share no content terms, because the encoder has learned to recognise these as semantically equivalent from training examples. The cost is the loss of interpretability — a 768-dimensional vector has no obvious human-readable decomposition into contributing features — the loss of exact match guarantees, and the risk of poor generalisation to unseen vocabulary, technical terminology, or domain-specific language not covered by pre-training. A new scientific term absent from pre-training is either invisible to a dense encoder or handled only coarsely via subword tokenisation. The practical resolution in production systems is hybrid retrieval: combining dense and sparse systems via Reciprocal Rank Fusion or score combination captures both semantic matching from the dense retriever and exact lexical matching from the sparse retriever, consistently outperforming either system alone on standard benchmarks including BEIR. The low Jaccard overlap between the top-k sets returned by BM25 and DPR for the same query confirms that the two systems surface genuinely complementary evidence, making their fusion beneficial rather than redundant.
 
-  ## Training Data and Supervision
+## Training Data and Supervision
 
-  The quality and composition of training data is the primary determinant of DPR retriever quality, substantially more consequential than architectural choices within the bi-encoder paradigm. The original DPR paper trained on Natural Questions, TriviaQA, WebQuestions, CuratedTREC, and SQuAD — totalling approximately 100k question-passage pairs — using 21 million 100-word Wikipedia passage windows as the corpus. Subsequent replication studies demonstrated that training data diversity substantially affects out-of-domain generalisation: models trained only on Natural Questions show substantially degraded performance on biomedical, legal, or financial retrieval tasks even when the encoder architecture is sufficiently expressive. This motivated the use of multi-domain training corpora such as MS MARCO (drawn from anonymised Bing search queries with human-annotated relevant passages), which provides far more diverse query types and enables better zero-shot generalisation across the BEIR benchmark.
+The quality and composition of training data is the primary determinant of DPR retriever quality, substantially more consequential than architectural choices within the bi-encoder paradigm. The original DPR paper trained on Natural Questions, TriviaQA, WebQuestions, CuratedTREC, and SQuAD — totalling approximately 100k question-passage pairs — using 21 million 100-word Wikipedia passage windows as the corpus. Subsequent replication studies demonstrated that training data diversity substantially affects out-of-domain generalisation: models trained only on Natural Questions show substantially degraded performance on biomedical, legal, or financial retrieval tasks even when the encoder architecture is sufficiently expressive. This motivated the use of multi-domain training corpora such as MS MARCO (drawn from anonymised Bing search queries with human-annotated relevant passages), which provides far more diverse query types and enables better zero-shot generalisation across the BEIR benchmark.
 
-  The supervision signal itself has evolved beyond binary relevance labels toward richer distillation-based objectives. Original DPR training uses a binary signal — a passage either contains the answer string (positive) or does not (negative). Contrastive learning with in-batch and BM25 hard negatives provides a learning signal strong enough for in-domain retrieval but insufficient for robust out-of-domain generalisation. The next generation of dense retrievers supplements this with knowledge distillation from cross-encoder teacher models, which produce soft relevance scores reflecting graded degrees of relevance rather than binary labels. Cross-encoder distillation training (CED) — training the bi-encoder to match cross-encoder scores via mean-squared error or KL-divergence loss — consistently produces stronger retrievers than direct binary contrastive training at the cost of running a large cross-encoder over all training pairs. The E5 and BGE families leverage massive multi-task contrastive corpora with billions of training pairs drawn from web-scraped query-document pairs (Common Crawl, Wikipedia, StackExchange, scientific papers) combined with instruction-following prompts, dramatically improving zero-shot generalisation without domain-specific fine-tuning.
+The supervision signal itself has evolved beyond binary relevance labels toward richer distillation-based objectives. Original DPR training uses a binary signal — a passage either contains the answer string (positive) or does not (negative). Contrastive learning with in-batch and BM25 hard negatives provides a learning signal strong enough for in-domain retrieval but insufficient for robust out-of-domain generalisation. The next generation of dense retrievers supplements this with knowledge distillation from cross-encoder teacher models, which produce soft relevance scores reflecting graded degrees of relevance rather than binary labels. Cross-encoder distillation training (CED) — training the bi-encoder to match cross-encoder scores via mean-squared error or KL-divergence loss — consistently produces stronger retrievers than direct binary contrastive training at the cost of running a large cross-encoder over all training pairs. The E5 and BGE families leverage massive multi-task contrastive corpora with billions of training pairs drawn from web-scraped query-document pairs (Common Crawl, Wikipedia, StackExchange, scientific papers) combined with instruction-following prompts, dramatically improving zero-shot generalisation without domain-specific fine-tuning.
 
-  ## About
+## About
 
-  Dense Passage Retrieval (DPR) was introduced by Karpukhin, Oğuz, Min, Lewis, Wu, Edunov, Chen, and Yih at Facebook AI Research (FAIR) in their 2020 EMNLP paper "Dense Passage Retrieval for Open-Domain Question Answering," which rapidly became one of the most-cited papers in the [[Natural Language Processing]] literature. The paper addressed a fundamental limitation of the then-dominant open-domain question answering architecture — sparse retrieval via [[BM25]] or TF-IDF — that had been standard since Chen et al.'s DrQA in 2017. Sparse retrievers represent queries and documents as high-dimensional sparse vectors in vocabulary space, computing relevance through weighted term overlap. While computationally efficient and robust in high-overlap lexical domains, they fail systematically when the query and the relevant passage express the same information through different vocabulary — a pervasive problem where paraphrase, synonymy, and inferential entailment are ubiquitous. A question like "Who developed the theory of general relativity?" fails to retrieve passages containing "Einstein's groundbreaking work on spacetime curvature" via BM25 because the terms are entirely disjoint. DPR resolved this by replacing lexical matching with a learned semantic similarity function, instantiated as the dot product between dense query and passage vectors produced by two independent BERT-based encoders fine-tuned end-to-end on annotated question-passage training pairs. The key insight was that given sufficient paired training data, a neural encoder can be taught to project semantically equivalent but lexically different queries and passages to nearby points in a shared continuous [[Embedding Space]], enabling retrieval via nearest-neighbour search inherently immune to lexical mismatch.
+Dense Passage Retrieval (DPR) was introduced by Karpukhin, Oğuz, Min, Lewis, Wu, Edunov, Chen, and Yih at Facebook AI Research (FAIR) in their 2020 EMNLP paper "Dense Passage Retrieval for Open-Domain Question Answering," which rapidly became one of the most-cited papers in the [[Natural Language Processing]] literature. The paper addressed a fundamental limitation of the then-dominant open-domain question answering architecture — sparse retrieval via [[BM25]] or TF-IDF — that had been standard since Chen et al.'s DrQA in 2017. Sparse retrievers represent queries and documents as high-dimensional sparse vectors in vocabulary space, computing relevance through weighted term overlap. While computationally efficient and robust in high-overlap lexical domains, they fail systematically when the query and the relevant passage express the same information through different vocabulary — a pervasive problem where paraphrase, synonymy, and inferential entailment are ubiquitous. A question like "Who developed the theory of general relativity?" fails to retrieve passages containing "Einstein's groundbreaking work on spacetime curvature" via BM25 because the terms are entirely disjoint. DPR resolved this by replacing lexical matching with a learned semantic similarity function, instantiated as the dot product between dense query and passage vectors produced by two independent BERT-based encoders fine-tuned end-to-end on annotated question-passage training pairs. The key insight was that given sufficient paired training data, a neural encoder can be taught to project semantically equivalent but lexically different queries and passages to nearby points in a shared continuous [[Embedding Space]], enabling retrieval via nearest-neighbour search inherently immune to lexical mismatch.
 
-  The DPR training regime is built around contrastive learning with in-batch negatives and hard negatives mined from [[BM25]]. For each positive (question, relevant passage) pair in a training batch, all other passages in the same batch serve as negative examples — in-batch negative sampling that is computationally efficient because it requires only one forward pass per batch element. Crucially, Karpukhin et al. demonstrated that including hard negatives — passages retrieved by BM25 that contain answer-like text but are not the true gold passage — substantially improves retrieval recall across all benchmarks, forcing the model to learn fine-grained semantic distinctions that separate topically similar but factually distinct passages. The training objective is cross-entropy loss over the softmax of dot products: L = -log[exp(sim(q, p+)) / (exp(sim(q, p+)) + Σ_j exp(sim(q, p_j-)))]. Separate query and passage encoders are used rather than a single shared encoder because the two inputs are structurally asymmetric: questions are short, underspecified, and often conversational in register, while passages are longer, more uniform in structure, and densely informative. Sharing weights would force a single representation space to serve both functions, introducing a representational bottleneck that reduces performance on both query and passage embedding tasks.
+The DPR training regime is built around contrastive learning with in-batch negatives and hard negatives mined from [[BM25]]. For each positive (question, relevant passage) pair in a training batch, all other passages in the same batch serve as negative examples — in-batch negative sampling that is computationally efficient because it requires only one forward pass per batch element. Crucially, Karpukhin et al. demonstrated that including hard negatives — passages retrieved by BM25 that contain answer-like text but are not the true gold passage — substantially improves retrieval recall across all benchmarks, forcing the model to learn fine-grained semantic distinctions that separate topically similar but factually distinct passages. The training objective is cross-entropy loss over the softmax of dot products: L = -log[exp(sim(q, p+)) / (exp(sim(q, p+)) + Σ_j exp(sim(q, p_j-)))]. Separate query and passage encoders are used rather than a single shared encoder because the two inputs are structurally asymmetric: questions are short, underspecified, and often conversational in register, while passages are longer, more uniform in structure, and densely informative. Sharing weights would force a single representation space to serve both functions, introducing a representational bottleneck that reduces performance on both query and passage embedding tasks.
 
-  The architectural separation of offline indexing from online retrieval is a defining systems-engineering choice of DPR with major operational implications. All corpus passages — approximately 21 million 100-word windows of English Wikipedia in the original work — are encoded once offline by the passage encoder, and the resulting 768-dimensional vectors are stored in a FAISS flat index supporting exact inner-product search, or approximated via IVF-flat or HNSW indices for speed at scale. At query time, only the query encoder runs: a single forward pass through the BERT encoder produces the query vector, and [[FAISS]] returns the top-k nearest passage vectors in under 10 milliseconds for the full Wikipedia corpus using IVF with 4,096 clusters. This asymmetric computation profile — expensive offline, cheap online — makes DPR deployable in interactive question-answering applications where latency is critical. DPR's introduction directly enabled the RAG system of Lewis et al. (2020), which paired the DPR retriever with a BART sequence-to-sequence generator, demonstrating that [[Retrieval-Augmented Generation]] substantially outperforms both closed-book generation and extractive reading comprehension on knowledge-intensive NLP tasks. This established the retrieve-then-generate paradigm that now underpins virtually all production large language model deployments requiring factual grounding, including enterprise Q&A systems, customer service chatbots, legal research tools, and medical information retrieval platforms worldwide.
+The architectural separation of offline indexing from online retrieval is a defining systems-engineering choice of DPR with major operational implications. All corpus passages — approximately 21 million 100-word windows of English Wikipedia in the original work — are encoded once offline by the passage encoder, and the resulting 768-dimensional vectors are stored in a FAISS flat index supporting exact inner-product search, or approximated via IVF-flat or HNSW indices for speed at scale. At query time, only the query encoder runs: a single forward pass through the BERT encoder produces the query vector, and [[FAISS]] returns the top-k nearest passage vectors in under 10 milliseconds for the full Wikipedia corpus using IVF with 4,096 clusters. This asymmetric computation profile — expensive offline, cheap online — makes DPR deployable in interactive question-answering applications where latency is critical. DPR's introduction directly enabled the RAG system of Lewis et al. (2020), which paired the DPR retriever with a BART sequence-to-sequence generator, demonstrating that [[Retrieval-Augmented Generation]] substantially outperforms both closed-book generation and extractive reading comprehension on knowledge-intensive NLP tasks. This established the retrieve-then-generate paradigm that now underpins virtually all production large language model deployments requiring factual grounding, including enterprise Q&A systems, customer service chatbots, legal research tools, and medical information retrieval platforms worldwide.
 
-  ## Architecture and Technical Components
+## Architecture and Technical Components
 
-  DPR's architecture separates into two encoder networks (query and passage), an offline indexing pipeline, and an online retrieval service — each with distinct engineering considerations and optimisation trade-offs.
+DPR's architecture separates into two encoder networks (query and passage), an offline indexing pipeline, and an online retrieval service — each with distinct engineering considerations and optimisation trade-offs.
 
-  **Dual encoder backbone**: Two independent BERT-base or BERT-large encoders (query encoder E_Q and passage encoder E_P). Each takes a tokenised input sequence with standard [CLS] and [SEP] tokens and produces a single dense vector by extracting the [CLS] token representation from the final transformer layer. For BERT-base: vectors in R^768; for BERT-large: R^1024. The query vector q = E_Q([CLS] question [SEP]) and passage vector p = E_P([CLS] title [SEP] passage [SEP]) are both pooled from [CLS]. Relevance score sim(q, p) = q^T · p (dot product). Cosine similarity is an alternative but dot product is preferred for its natural compatibility with FAISS MIPS indices and avoids the normalisation overhead at query time.
+**Dual encoder backbone**: Two independent BERT-base or BERT-large encoders (query encoder E_Q and passage encoder E_P). Each takes a tokenised input sequence with standard [CLS] and [SEP] tokens and produces a single dense vector by extracting the [CLS] token representation from the final transformer layer. For BERT-base: vectors in R^768; for BERT-large: R^1024. The query vector q = E_Q([CLS] question [SEP]) and passage vector p = E_P([CLS] title [SEP] passage [SEP]) are both pooled from [CLS]. Relevance score sim(q, p) = q^T · p (dot product). Cosine similarity is an alternative but dot product is preferred for its natural compatibility with FAISS MIPS indices and avoids the normalisation overhead at query time.
 
-  **Training objective and negative sampling**: For a mini-batch of m positive (q_i, p_i^+) pairs with associated BM25 hard negatives, the loss is the negative log-likelihood of the positive passage under the softmax over all 2m or more passages. In-batch negatives from other positive passages in the batch serve as "easy" negatives available at zero additional cost, while hard negatives force discrimination between topically similar passages. The original DPR uses one hard negative per training question; subsequent work showed that using more hard negatives from multiple sources (BM25, gold, random) and increasing batch size to 128 or larger substantially improves performance. Adam optimiser with learning rate 1e-5; 40 training epochs on Natural Questions.
+**Training objective and negative sampling**: For a mini-batch of m positive (q_i, p_i^+) pairs with associated BM25 hard negatives, the loss is the negative log-likelihood of the positive passage under the softmax over all 2m or more passages. In-batch negatives from other positive passages in the batch serve as "easy" negatives available at zero additional cost, while hard negatives force discrimination between topically similar passages. The original DPR uses one hard negative per training question; subsequent work showed that using more hard negatives from multiple sources (BM25, gold, random) and increasing batch size to 128 or larger substantially improves performance. Adam optimiser with learning rate 1e-5; 40 training epochs on Natural Questions.
 
-  **Hard negative mining strategy**: BM25 is queried for each training question to retrieve the top-100 passages, from which one is selected that does not contain the answer string but contains semantically related content. This mimics the retrieval failure case the model must overcome in deployment. Dynamic hard negatives (ANCE, Xiong et al.) replace BM25 negatives with passages retrieved by the current model checkpoint, refreshed every few thousand training steps, implementing curriculum learning where negative difficulty increases as the model improves. This periodic async refresh requires maintaining a continuously updating dense index alongside training, adding infrastructure complexity but delivering substantial generalisation gains.
+**Hard negative mining strategy**: BM25 is queried for each training question to retrieve the top-100 passages, from which one is selected that does not contain the answer string but contains semantically related content. This mimics the retrieval failure case the model must overcome in deployment. Dynamic hard negatives (ANCE, Xiong et al.) replace BM25 negatives with passages retrieved by the current model checkpoint, refreshed every few thousand training steps, implementing curriculum learning where negative difficulty increases as the model improves. This periodic async refresh requires maintaining a continuously updating dense index alongside training, adding infrastructure complexity but delivering substantial generalisation gains.
 
-  **FAISS index types and ANN search**: The passage index is stored in one of several FAISS configurations: (1) IndexFlatIP — exact brute-force inner product search; O(Nd) per query; maximum recall, maximum cost; used for benchmarking. (2) IndexIVFFlat — inverted file index that partitions passage vectors into nlist Voronoi cells using k-means clustering; at query time, only nprobe cells are searched; sub-linear retrieval time with controllable recall-speed trade-off. With nlist=4096 and nprobe=64, 21M Wikipedia passages are searched in under 10ms at 95%+ Recall@100. (3) IndexHNSWFlat — Hierarchical Navigable Small World graph; provides logarithmic search time with no training cost and graceful recall degradation. HNSW is preferred when index construction time is a constraint.
+**FAISS index types and ANN search**: The passage index is stored in one of several FAISS configurations: (1) IndexFlatIP — exact brute-force inner product search; O(Nd) per query; maximum recall, maximum cost; used for benchmarking. (2) IndexIVFFlat — inverted file index that partitions passage vectors into nlist Voronoi cells using k-means clustering; at query time, only nprobe cells are searched; sub-linear retrieval time with controllable recall-speed trade-off. With nlist=4096 and nprobe=64, 21M Wikipedia passages are searched in under 10ms at 95%+ Recall@100. (3) IndexHNSWFlat — Hierarchical Navigable Small World graph; provides logarithmic search time with no training cost and graceful recall degradation. HNSW is preferred when index construction time is a constraint.
 
-  **Reader component and downstream integration**: DPR is paired with a reading comprehension or generation model that takes the top-k retrieved passages and extracts or generates an answer. In the original DPR paper, a BERTReader independently encodes each passage concatenated with the question and scores answer spans via a linear span extraction head. FiD (Fusion-in-Decoder, Izacard & Grave 2021) independently encodes each of 100 DPR-retrieved passages through T5 and concatenates all encoder hidden states before cross-attention, enabling the decoder to fuse evidence across all retrieved passages simultaneously. In RAG-style systems (Lewis et al. 2020, Atlas), the top-k retrieved passages are prepended to the LLM context window as "grounding" text before generation begins, with the LLM conditioned to generate answers that are consistent with the retrieved evidence.
+**Reader component and downstream integration**: DPR is paired with a reading comprehension or generation model that takes the top-k retrieved passages and extracts or generates an answer. In the original DPR paper, a BERTReader independently encodes each passage concatenated with the question and scores answer spans via a linear span extraction head. FiD (Fusion-in-Decoder, Izacard & Grave 2021) independently encodes each of 100 DPR-retrieved passages through T5 and concatenates all encoder hidden states before cross-attention, enabling the decoder to fuse evidence across all retrieved passages simultaneously. In RAG-style systems (Lewis et al. 2020, Atlas), the top-k retrieved passages are prepended to the LLM context window as "grounding" text before generation begins, with the LLM conditioned to generate answers that are consistent with the retrieved evidence.
 
-  ## Variants and the Post-DPR Retrieval Landscape
+## Variants and the Post-DPR Retrieval Landscape
 
-  DPR established a paradigm that has been extended in multiple complementary directions since 2020, each addressing a specific limitation of the original single-vector bi-encoder model.
+DPR established a paradigm that has been extended in multiple complementary directions since 2020, each addressing a specific limitation of the original single-vector bi-encoder model.
 
-  **ANCE (Approximate Nearest Neighbour Contrastive Estimation, Xiong et al. 2021)**: Replaces static BM25 hard negatives with dynamically refreshed model-mined negatives, substantially improving cross-domain generalisation at the cost of infrastructure complexity for periodic async index refreshes. Demonstrated that the choice of hard negatives is as important as the encoder architecture itself for retrieval quality.
+**ANCE (Approximate Nearest Neighbour Contrastive Estimation, Xiong et al. 2021)**: Replaces static BM25 hard negatives with dynamically refreshed model-mined negatives, substantially improving cross-domain generalisation at the cost of infrastructure complexity for periodic async index refreshes. Demonstrated that the choice of hard negatives is as important as the encoder architecture itself for retrieval quality.
 
-  **ColBERT / ColBERTv2 (Khattab & Zaharia, 2020/2022)**: Multi-vector late-interaction model where every query and passage token generates its own contextualised vector. Relevance is computed via MaxSim — the sum over query tokens of the maximum inner product with any passage token vector — capturing token-level evidence that single-vector bi-encoders necessarily lose in the [CLS] compression bottleneck. ColBERTv2 achieves higher recall than DPR on all BEIR tasks at substantially higher storage cost (approximately 28 GB vs. 26 MB for Wikipedia due to per-token vector storage). ColBERTv2 reduces storage via residual quantisation (RQ-codes) while maintaining accuracy, making it practical for production deployments at moderate scale.
+**ColBERT / ColBERTv2 (Khattab & Zaharia, 2020/2022)**: Multi-vector late-interaction model where every query and passage token generates its own contextualised vector. Relevance is computed via MaxSim — the sum over query tokens of the maximum inner product with any passage token vector — capturing token-level evidence that single-vector bi-encoders necessarily lose in the [CLS] compression bottleneck. ColBERTv2 achieves higher recall than DPR on all BEIR tasks at substantially higher storage cost (approximately 28 GB vs. 26 MB for Wikipedia due to per-token vector storage). ColBERTv2 reduces storage via residual quantisation (RQ-codes) while maintaining accuracy, making it practical for production deployments at moderate scale.
 
-  **SPLADE (Formal et al., 2021)**: Learned sparse model using BERT with a log-saturation activation (log(1 + ReLU(·))) applied to MLM logits to produce sparse term-importance vectors in vocabulary space. Bridges dense and sparse paradigms: interpretable (term weights are human-readable), compatible with standard inverted-index infrastructure at the same per-query latency as BM25, and strongly competitive with DPR on BEIR zero-shot tasks. SPLADE-v2 and SPLADE++ variants improve via distillation from cross-encoder teachers and aggressive hard negative training.
+**SPLADE (Formal et al., 2021)**: Learned sparse model using BERT with a log-saturation activation (log(1 + ReLU(·))) applied to MLM logits to produce sparse term-importance vectors in vocabulary space. Bridges dense and sparse paradigms: interpretable (term weights are human-readable), compatible with standard inverted-index infrastructure at the same per-query latency as BM25, and strongly competitive with DPR on BEIR zero-shot tasks. SPLADE-v2 and SPLADE++ variants improve via distillation from cross-encoder teachers and aggressive hard negative training.
 
-  **Instruction-tuned [[Embedding Model]] families**: E5 (Wang et al., 2022), E5-Mistral (Wang et al., 2023), BGE (FlagAI, 2023), and Nomic-Embed generalise DPR's supervised contrastive training to multi-task instruction-following, enabling zero-shot transfer across heterogeneous retrieval tasks without per-task fine-tuning. E5-Mistral uses a decoder-only LLM backbone (Mistral-7B) with last-token pooling and instruction prompting, achieving state-of-the-art MTEB results and substantially outperforming BERT-based DPR on out-of-domain tasks. NV-Embed (NVIDIA, 2024) achieves the top MTEB embedding ranking as of early 2025 using a causal LLM backbone with attention sink pooling.
+**Instruction-tuned [[Embedding Model]] families**: E5 (Wang et al., 2022), E5-Mistral (Wang et al., 2023), BGE (FlagAI, 2023), and Nomic-Embed generalise DPR's supervised contrastive training to multi-task instruction-following, enabling zero-shot transfer across heterogeneous retrieval tasks without per-task fine-tuning. E5-Mistral uses a decoder-only LLM backbone (Mistral-7B) with last-token pooling and instruction prompting, achieving state-of-the-art MTEB results and substantially outperforming BERT-based DPR on out-of-domain tasks. NV-Embed (NVIDIA, 2024) achieves the top MTEB embedding ranking as of early 2025 using a causal LLM backbone with attention sink pooling.
 
-  **BGE-M3 (Chen et al., 2024)**: Unifies dense, sparse, and multi-vector (ColBERT-style) retrieval in one model with support for 100+ languages and an 8192-token context window, enabling retrieval over long documents that exceed BERT's 512-token limit. Self-knowledge distillation across all three retrieval modes during training produces a single checkpoint competitive in each mode. Hybrid BGE-M3 — combining all three modes via Reciprocal Rank Fusion or a learned fusion layer — outperforms any single-mode system by 2–5 nDCG@10 points on BEIR, establishing multi-mode hybrid retrieval as the 2025–2026 production standard.
+**BGE-M3 (Chen et al., 2024)**: Unifies dense, sparse, and multi-vector (ColBERT-style) retrieval in one model with support for 100+ languages and an 8192-token context window, enabling retrieval over long documents that exceed BERT's 512-token limit. Self-knowledge distillation across all three retrieval modes during training produces a single checkpoint competitive in each mode. Hybrid BGE-M3 — combining all three modes via Reciprocal Rank Fusion or a learned fusion layer — outperforms any single-mode system by 2–5 nDCG@10 points on BEIR, establishing multi-mode hybrid retrieval as the 2025–2026 production standard.
 
-  **Manifold-Aware DPR (MA-DPR, 2025)**: Addresses the assumption that [[Embedding Space]] is globally Euclidean, which breaks down in high-dimensional spaces where data lies on curved low-dimensional manifolds. MA-DPR ranks retrieval candidates by shortest-path distance computed on a sparse KNN graph constructed over the passage embedding manifold, rather than by direct dot product in ambient Euclidean space. This accounts for non-linear manifold curvature and improves out-of-distribution recall by up to 26% over standard DPR without retraining the encoder.
+**Manifold-Aware DPR (MA-DPR, 2025)**: Addresses the assumption that [[Embedding Space]] is globally Euclidean, which breaks down in high-dimensional spaces where data lies on curved low-dimensional manifolds. MA-DPR ranks retrieval candidates by shortest-path distance computed on a sparse KNN graph constructed over the passage embedding manifold, rather than by direct dot product in ambient Euclidean space. This accounts for non-linear manifold curvature and improves out-of-distribution recall by up to 26% over standard DPR without retraining the encoder.
 
-  **Hybrid retrieval (BM25 + DPR)**: Combining dense and sparse retrievals via Reciprocal Rank Fusion (RRF) or linear score combination consistently outperforms either method alone, with low Jaccard overlap between top-k sets demonstrating that the two methods surface genuinely complementary evidence. Production RAG deployments implement hybrid first-stage retrieval followed by cross-encoder reranking as the standard three-stage pipeline.
+**Hybrid retrieval (BM25 + DPR)**: Combining dense and sparse retrievals via Reciprocal Rank Fusion (RRF) or linear score combination consistently outperforms either method alone, with low Jaccard overlap between top-k sets demonstrating that the two methods surface genuinely complementary evidence. Production RAG deployments implement hybrid first-stage retrieval followed by cross-encoder reranking as the standard three-stage pipeline.
 
-  ## Formal Algorithm
+## Formal Algorithm
 
-  The DPR indexing and retrieval pipeline, expressed formally:
+The DPR indexing and retrieval pipeline, expressed formally:
 
-  **Indexing (offline)**
-  - Input: Corpus P = {p_1, ..., p_N} (N passages, each up to 100 tokens with title prefix)
-  - For each passage p_i in P: v_i = E_P([CLS] title_i [SEP] p_i [SEP]) — BERT forward pass, extract [CLS]
-  - Index I = FAISS_IVFFlat.build(V = {v_1, ..., v_N}, nlist=4096)
-  - Time complexity: O(N * T_BERT) for encoding; O(N * d * log(N)) for IVF clustering
-  - Storage: N × d × 4 bytes (fp32) = 21M × 768 × 4 ≈ 60 GB (Wikipedia); IVF-PQ compresses to ~3 GB
+**Indexing (offline)**
+
+- Input: Corpus P = {p_1, ..., p_N} (N passages, each up to 100 tokens with title prefix)
+- For each passage p_i in P: v_i = E_P([CLS] title_i [SEP] p_i [SEP]) — BERT forward pass, extract [CLS]
+- Index I = FAISS_IVFFlat.build(V = {v_1, ..., v_N}, nlist=4096)
+- Time complexity: O(N * T_BERT) for encoding; O(N * d * log(N)) for IVF clustering
+- Storage: N × d × 4 bytes (fp32) = 21M × 768 × 4 ≈ 60 GB (Wikipedia); IVF-PQ compresses to ~3 GB
 
   **Retrieval (online)**
-  - Input: Question q, integer k (top-k passages to retrieve)
-  - q_vec = E_Q([CLS] q [SEP]) — BERT forward pass, extract [CLS] embedding
-  - candidates = FAISS.search(I, q_vec, k, nprobe=64) — approximate MIPS over IVF
-  - Return: top-k passages p_i ranked by descending sim(q_vec, v_i) = q_vec^T · v_i
-  - Time complexity: O(T_BERT + k * nprobe/nlist * N * d) — sub-linear in N
+
+- Input: Question q, integer k (top-k passages to retrieve)
+- q_vec = E_Q([CLS] q [SEP]) — BERT forward pass, extract [CLS] embedding
+- candidates = FAISS.search(I, q_vec, k, nprobe=64) — approximate MIPS over IVF
+- Return: top-k passages p_i ranked by descending sim(q_vec, v_i) = q_vec^T · v_i
+- Time complexity: O(T_BERT + k * nprobe/nlist * N * d) — sub-linear in N
 
   **Training objective**
-  - For batch B = {(q_i, p_i^+, {p_i,j^-}_{j=1..k_hard})}:
-  - All (q_i, p_j^+) pairs in the batch serve as in-batch negatives for query i
-  - L = -Σ_i log [exp(sim(q_i, p_i^+)) / (exp(sim(q_i, p_i^+)) + Σ_{j≠i} exp(sim(q_i, p_j^+)) + Σ_j exp(sim(q_i, p_i,j^-)))]
-  - Optimise with Adam (lr=1e-5, warmup=0.06, weight decay=0.0) for 40 epochs
+
+- For batch B = {(q_i, p_i^+, {p_i,j^-}_{j=1..k_hard})}:
+- All (q_i, p_j^+) pairs in the batch serve as in-batch negatives for query i
+- L = -Σ_i log [exp(sim(q_i, p_i^+)) / (exp(sim(q_i, p_i^+)) + Σ_{j≠i} exp(sim(q_i, p_j^+)) + Σ_j exp(sim(q_i, p_i,j^-)))]
+- Optimise with Adam (lr=1e-5, warmup=0.06, weight decay=0.0) for 40 epochs
 
   ## Use Cases and Applications
 
@@ -251,13 +253,13 @@ Dense Passage Retrieval (DPR) is an information retrieval approach in which both
 
   ## Future Directions (2026–2030)
 
-  - **Universal foundation embedding models**: Continued scaling and multi-task instruction tuning of decoder-only LLM backbones will produce single foundation embedding models replacing task-specific DPR fine-tuning, with reliable zero-shot transfer across retrieval tasks, modalities, and 100+ languages. Fine-tuning will shift from full encoder fine-tuning to lightweight LLM adapter tuning.
-  - **Multimodal retrieval over heterogeneous corpora**: Extending dense retrieval to images, audio, video, structured tables, and code via cross-modal contrastive training (CLIP-inspired) will enable unified retrieval over heterogeneous enterprise corpora in a single index, enabling multimodal RAG where retrieved context includes images, charts, audio, and code alongside text.
-  - **Agentic and iterative retrieval**: Retrieval will become a first-class action in [[Language Model]] agent loops, with models learning to decompose queries into sub-queries, issue multiple DPR retrievals, synthesise intermediate results, and decide when to retrieve versus generate or reason. Current single-pass static retrieval will be replaced by iterative reasoning-driven retrieval for complex multi-hop questions.
-  - **Streaming and real-time retrieval**: Sub-second vector database ingestion will enable DPR-backed retrieval over live feeds — breaking news, social media, market data, IoT streams — making dense retrieval systems relevant for time-sensitive applications including real-time fact-checking, live market analysis, and emergency response information systems.
-  - **GraphRAG and structured knowledge integration**: Deep integration of [[Knowledge Graph]] structure with dense passage retrieval, combining entity-level retrieval over knowledge graphs with passage-level DPR retrieval, will enable multi-hop question answering that requires reasoning across multiple evidence nodes — beyond the single-hop retrieval that characterises current DPR deployments.
-  - **Retrieval interpretability and audit trails**: Sparse autoencoder decompositions of dense embeddings will enable human-interpretable explanations of retrieval decisions for regulated enterprise applications, satisfying GDPR transparency requirements and EU AI Act provisions for high-risk AI systems used in legal, medical, and financial contexts.
-  - **Federated and privacy-preserving retrieval**: Approaches combining homomorphic encryption with approximate inner-product search will enable DPR-backed retrieval over distributed data stores without centralising sensitive document corpora, addressing data residency requirements in healthcare, legal, and government deployments across the UK and EU.
+- **Universal foundation embedding models**: Continued scaling and multi-task instruction tuning of decoder-only LLM backbones will produce single foundation embedding models replacing task-specific DPR fine-tuning, with reliable zero-shot transfer across retrieval tasks, modalities, and 100+ languages. Fine-tuning will shift from full encoder fine-tuning to lightweight LLM adapter tuning.
+- **Multimodal retrieval over heterogeneous corpora**: Extending dense retrieval to images, audio, video, structured tables, and code via cross-modal contrastive training (CLIP-inspired) will enable unified retrieval over heterogeneous enterprise corpora in a single index, enabling multimodal RAG where retrieved context includes images, charts, audio, and code alongside text.
+- **Agentic and iterative retrieval**: Retrieval will become a first-class action in [[Language Model]] agent loops, with models learning to decompose queries into sub-queries, issue multiple DPR retrievals, synthesise intermediate results, and decide when to retrieve versus generate or reason. Current single-pass static retrieval will be replaced by iterative reasoning-driven retrieval for complex multi-hop questions.
+- **Streaming and real-time retrieval**: Sub-second vector database ingestion will enable DPR-backed retrieval over live feeds — breaking news, social media, market data, IoT streams — making dense retrieval systems relevant for time-sensitive applications including real-time fact-checking, live market analysis, and emergency response information systems.
+- **GraphRAG and structured knowledge integration**: Deep integration of [[Knowledge Graph]] structure with dense passage retrieval, combining entity-level retrieval over knowledge graphs with passage-level DPR retrieval, will enable multi-hop question answering that requires reasoning across multiple evidence nodes — beyond the single-hop retrieval that characterises current DPR deployments.
+- **Retrieval interpretability and audit trails**: Sparse autoencoder decompositions of dense embeddings will enable human-interpretable explanations of retrieval decisions for regulated enterprise applications, satisfying GDPR transparency requirements and EU AI Act provisions for high-risk AI systems used in legal, medical, and financial contexts.
+- **Federated and privacy-preserving retrieval**: Approaches combining homomorphic encryption with approximate inner-product search will enable DPR-backed retrieval over distributed data stores without centralising sensitive document corpora, addressing data residency requirements in healthcare, legal, and government deployments across the UK and EU.
 
   ## Academic Context
 
@@ -425,115 +427,116 @@ Dense Passage Retrieval (DPR) is an information retrieval approach in which both
 
   **Computational comparison at Wikipedia scale (21M passages)**:
 
-  | System        | Index Size  | Build Time   | Query Latency | Recall@100 (NQ) |
-  |---------------|-------------|--------------|---------------|-----------------|
-  | BM25          | 35 GB       | 2 hours      | < 5ms         | 68.9%           |
-  | DPR (flat)    | 60 GB       | 50 GPU-hours | 10ms          | 79.4%           |
-  | DPR (IVF-PQ)  | 3 GB        | 55 GPU-hours | 1ms           | 77.1%           |
-  | ANCE (flat)   | 60 GB       | 80 GPU-hours | 10ms          | 83.7%           |
-  | ColBERTv2     | 25 GB (RQ)  | 70 GPU-hours | 15ms          | 86.2%           |
-  | Hybrid+RRF    | 98 GB       | 52 GPU-hours | 15ms          | 87.1%           |
-  | BGE-M3 hybrid | 110 GB      | 90 GPU-hours | 20ms          | 89.3%           |
+| System        | Index Size  | Build Time   | Query Latency | Recall@100 (NQ) |
+|---------------|-------------|--------------|---------------|-----------------|
+| BM25          | 35 GB       | 2 hours      | < 5ms         | 68.9%           |
+| DPR (flat)    | 60 GB       | 50 GPU-hours | 10ms          | 79.4%           |
+| DPR (IVF-PQ)  | 3 GB        | 55 GPU-hours | 1ms           | 77.1%           |
+| ANCE (flat)   | 60 GB       | 80 GPU-hours | 10ms          | 83.7%           |
+| ColBERTv2     | 25 GB (RQ)  | 70 GPU-hours | 15ms          | 86.2%           |
+| Hybrid+RRF    | 98 GB       | 52 GPU-hours | 15ms          | 87.1%           |
+| BGE-M3 hybrid | 110 GB      | 90 GPU-hours | 20ms          | 89.3%           |
 
-  ## Research and Literature
+## Research and Literature
 
-  1. Karpukhin, V., Oğuz, B., Min, S., Lewis, P., Wu, L., Edunov, S., Chen, D., & Yih, W.-T. (2020). Dense passage retrieval for open-domain question answering. *Proceedings of EMNLP 2020*, 6769–6781. https://aclanthology.org/2020.emnlp-main.550
-  2. Lewis, P., Perez, E., Piktus, A., Petroni, F., Karpukhin, V., Goyal, N., Küttler, H., Lewis, M., Yih, W.-T., Rocktäschel, T., Riedel, S., & Kiela, D. (2020). Retrieval-augmented generation for knowledge-intensive NLP tasks. *Advances in Neural Information Processing Systems*, 33, 9459–9474.
-  3. Xiong, L., Xiong, C., Li, Y., Tang, K.-F., Liu, J., Bennett, P., Ahmed, J., & Overwijk, A. (2021). Approximate nearest neighbor negative contrastive estimation for dense text retrieval. *Proceedings of ICLR 2021*. https://arxiv.org/abs/2007.00808
-  4. Khattab, O., & Zaharia, M. (2020). ColBERT: Efficient and effective passage search via contextualized late interaction over BERT. *Proceedings of SIGIR 2020*, 39–48.
-  5. Santhanam, K., Khattab, O., Saad-Falcon, J., Potts, C., & Zaharia, M. (2022). ColBERTv2: Effective and efficient retrieval via lightweight late interaction. *Proceedings of NAACL 2022*, 3715–3734.
-  6. Formal, T., Piwowarski, B., & Clinchant, S. (2021). SPLADE: Sparse lexical and expansion model for first stage ranking. *Proceedings of SIGIR 2021*, 2288–2292.
-  7. Izacard, G., & Grave, E. (2021). Leveraging passage retrieval with generative models for open domain question answering. *Proceedings of EACL 2021*, 874–880.
-  8. Guu, K., Lee, K., Tung, Z., Pasupat, P., & Chang, M. (2020). REALM: Retrieval-augmented language model pre-training. *Proceedings of ICML 2020*, 3929–3938.
-  9. Thakur, N., Reimers, N., Rücklé, A., Srivastava, A., & Gurevych, I. (2021). BEIR: A heterogeneous benchmark for zero-shot evaluation of information retrieval models. *Advances in Neural Information Processing Systems*, 34, 12588–12601.
-  10. Devlin, J., Chang, M.-W., Lee, K., & Toutanova, K. (2019). BERT: Pre-training of deep bidirectional transformers for language understanding. *Proceedings of NAACL-HLT 2019*, 4171–4186.
-  11. Johnson, J., Douze, M., & Jégou, H. (2019). Billion-scale similarity search with GPUs. *IEEE Transactions on Big Data*, 7(3), 535–547.
-  12. Chen, D., Fisch, A., Weston, J., & Bordes, A. (2017). Reading Wikipedia to answer open-domain questions. *Proceedings of ACL 2017*, 1870–1879.
-  13. Lee, K., Chang, M.-W., & Toutanova, K. (2019). Latent retrieval for weakly supervised open domain question answering. *Proceedings of ACL 2019*, 6086–6096.
-  14. Wang, L., Yang, N., Huang, X., Jiao, B., Yang, L., Jiang, D., Majumder, R., & Wei, F. (2022). Text embeddings by weakly-supervised contrastive pre-training. *arXiv preprint arXiv:2212.03533*.
-  15. Chen, J., Xiao, S., Zhang, P., Luo, K., Lian, D., & Liu, Z. (2024). BGE M3-Embedding: Multi-linguality, multi-functionality, multi-granularity text embeddings through self-knowledge distillation. *arXiv preprint arXiv:2309.07597*.
-  16. Izacard, G., Lewis, P., Lomeli, M., Hosseini, L., Petroni, F., Schick, T., Dwivedi-Yu, J., Joulin, A., Riedel, S., & Grave, E. (2022). Atlas: Few-shot learning with retrieval augmented language models. *arXiv preprint arXiv:2208.03299*.
-  17. Ma, X., Wang, L., Yang, N., Wei, F., & Lin, J. (2022). Hybrid list-wise learning to rank for question answering retrieval. *arXiv preprint arXiv:2205.09153*.
-  18. Mallia, A., Khattab, O., Suel, T., & Tonellotto, N. (2021). Learning passage impacts for inverted indexes. *Proceedings of SIGIR 2021*, 1723–1727.
-  19. Zhao, W., Kang, Y., Zhang, Q., & Deng, C. (2024). Dense passage retrieval: Is it retrieving? *Findings of EMNLP 2024*. https://arxiv.org/abs/2402.11035
-  20. Hofstätter, S., Lin, S.-C., Yang, J.-H., Lin, J., & Hanbury, A. (2021). Efficiently teaching an effective dense retriever with balanced topic aware sampling. *Proceedings of SIGIR 2021*, 113–122.
-  21. Wang, E., Yang, N., Huang, X., Jiao, B., Yang, L., Jiang, D., Majumder, R., & Wei, F. (2023). Improving text embeddings with large language models. *arXiv preprint arXiv:2401.00368*.
-  22. Maillard, J., Caussat, T., & Joulin, A. (2022). A replication study of dense passage retriever. *arXiv preprint arXiv:2104.05740*.
-  23. Promptbestie Editorial. (2025). Retrieval-augmented generation (RAG) advancements: The 2024–2025 revolution transforming enterprise AI. *Prompt Bestie*. https://promptbestie.com/en/rag-advancements-2024-2025-enterprise-ai-guide/
-  24. Datanucleus.dev. (2025). RAG in 2025: The enterprise guide to retrieval augmented generation, graph RAG and agentic AI. *Data Nucleus*. https://datanucleus.dev/rag-and-agentic-ai/what-is-rag-enterprise-guide-2025
-  25. Glean Engineering. (2025). RAG, or retrieval augmented generation: Revolutionising AI in 2025. *Glean Blog*. https://www.glean.com/blog/rag-retrieval-augmented-generation
-  26. Future AGI. (2026). Best embedding models 2026: NV-Embed, BGE, E5, and OpenAI compared. *Future AGI Blog*. https://futureagi.com/blog/best-embedding-models-2025/
-  27. RAGFlow. (2025). From RAG to context — a 2025 year-end review of RAG. *RAGFlow Blog*. https://ragflow.io/blog/rag-review-2025-from-rag-to-context
-  28. Johnson, J., Douze, M., & Jégou, H. (2017). Faiss: A library for efficient similarity search. *Facebook Engineering Blog*. https://engineering.fb.com/2017/03/29/data-infrastructure/faiss-a-library-for-efficient-similarity-search/
+1. Karpukhin, V., Oğuz, B., Min, S., Lewis, P., Wu, L., Edunov, S., Chen, D., & Yih, W.-T. (2020). Dense passage retrieval for open-domain question answering. *Proceedings of EMNLP 2020*, 6769–6781. https://aclanthology.org/2020.emnlp-main.550
+2. Lewis, P., Perez, E., Piktus, A., Petroni, F., Karpukhin, V., Goyal, N., Küttler, H., Lewis, M., Yih, W.-T., Rocktäschel, T., Riedel, S., & Kiela, D. (2020). Retrieval-augmented generation for knowledge-intensive NLP tasks. *Advances in Neural Information Processing Systems*, 33, 9459–9474.
+3. Xiong, L., Xiong, C., Li, Y., Tang, K.-F., Liu, J., Bennett, P., Ahmed, J., & Overwijk, A. (2021). Approximate nearest neighbor negative contrastive estimation for dense text retrieval. *Proceedings of ICLR 2021*. https://arxiv.org/abs/2007.00808
+4. Khattab, O., & Zaharia, M. (2020). ColBERT: Efficient and effective passage search via contextualized late interaction over BERT. *Proceedings of SIGIR 2020*, 39–48.
+5. Santhanam, K., Khattab, O., Saad-Falcon, J., Potts, C., & Zaharia, M. (2022). ColBERTv2: Effective and efficient retrieval via lightweight late interaction. *Proceedings of NAACL 2022*, 3715–3734.
+6. Formal, T., Piwowarski, B., & Clinchant, S. (2021). SPLADE: Sparse lexical and expansion model for first stage ranking. *Proceedings of SIGIR 2021*, 2288–2292.
+7. Izacard, G., & Grave, E. (2021). Leveraging passage retrieval with generative models for open domain question answering. *Proceedings of EACL 2021*, 874–880.
+8. Guu, K., Lee, K., Tung, Z., Pasupat, P., & Chang, M. (2020). REALM: Retrieval-augmented language model pre-training. *Proceedings of ICML 2020*, 3929–3938.
+9. Thakur, N., Reimers, N., Rücklé, A., Srivastava, A., & Gurevych, I. (2021). BEIR: A heterogeneous benchmark for zero-shot evaluation of information retrieval models. *Advances in Neural Information Processing Systems*, 34, 12588–12601.
+10. Devlin, J., Chang, M.-W., Lee, K., & Toutanova, K. (2019). BERT: Pre-training of deep bidirectional transformers for language understanding. *Proceedings of NAACL-HLT 2019*, 4171–4186.
+11. Johnson, J., Douze, M., & Jégou, H. (2019). Billion-scale similarity search with GPUs. *IEEE Transactions on Big Data*, 7(3), 535–547.
+12. Chen, D., Fisch, A., Weston, J., & Bordes, A. (2017). Reading Wikipedia to answer open-domain questions. *Proceedings of ACL 2017*, 1870–1879.
+13. Lee, K., Chang, M.-W., & Toutanova, K. (2019). Latent retrieval for weakly supervised open domain question answering. *Proceedings of ACL 2019*, 6086–6096.
+14. Wang, L., Yang, N., Huang, X., Jiao, B., Yang, L., Jiang, D., Majumder, R., & Wei, F. (2022). Text embeddings by weakly-supervised contrastive pre-training. *arXiv preprint arXiv:2212.03533*.
+15. Chen, J., Xiao, S., Zhang, P., Luo, K., Lian, D., & Liu, Z. (2024). BGE M3-Embedding: Multi-linguality, multi-functionality, multi-granularity text embeddings through self-knowledge distillation. *arXiv preprint arXiv:2309.07597*.
+16. Izacard, G., Lewis, P., Lomeli, M., Hosseini, L., Petroni, F., Schick, T., Dwivedi-Yu, J., Joulin, A., Riedel, S., & Grave, E. (2022). Atlas: Few-shot learning with retrieval augmented language models. *arXiv preprint arXiv:2208.03299*.
+17. Ma, X., Wang, L., Yang, N., Wei, F., & Lin, J. (2022). Hybrid list-wise learning to rank for question answering retrieval. *arXiv preprint arXiv:2205.09153*.
+18. Mallia, A., Khattab, O., Suel, T., & Tonellotto, N. (2021). Learning passage impacts for inverted indexes. *Proceedings of SIGIR 2021*, 1723–1727.
+19. Zhao, W., Kang, Y., Zhang, Q., & Deng, C. (2024). Dense passage retrieval: Is it retrieving? *Findings of EMNLP 2024*. https://arxiv.org/abs/2402.11035
+20. Hofstätter, S., Lin, S.-C., Yang, J.-H., Lin, J., & Hanbury, A. (2021). Efficiently teaching an effective dense retriever with balanced topic aware sampling. *Proceedings of SIGIR 2021*, 113–122.
+21. Wang, E., Yang, N., Huang, X., Jiao, B., Yang, L., Jiang, D., Majumder, R., & Wei, F. (2023). Improving text embeddings with large language models. *arXiv preprint arXiv:2401.00368*.
+22. Maillard, J., Caussat, T., & Joulin, A. (2022). A replication study of dense passage retriever. *arXiv preprint arXiv:2104.05740*.
+23. Promptbestie Editorial. (2025). Retrieval-augmented generation (RAG) advancements: The 2024–2025 revolution transforming enterprise AI. *Prompt Bestie*. https://promptbestie.com/en/rag-advancements-2024-2025-enterprise-ai-guide/
+24. Datanucleus.dev. (2025). RAG in 2025: The enterprise guide to retrieval augmented generation, graph RAG and agentic AI. *Data Nucleus*. https://datanucleus.dev/rag-and-agentic-ai/what-is-rag-enterprise-guide-2025
+25. Glean Engineering. (2025). RAG, or retrieval augmented generation: Revolutionising AI in 2025. *Glean Blog*. https://www.glean.com/blog/rag-retrieval-augmented-generation
+26. Future AGI. (2026). Best embedding models 2026: NV-Embed, BGE, E5, and OpenAI compared. *Future AGI Blog*. https://futureagi.com/blog/best-embedding-models-2025/
+27. RAGFlow. (2025). From RAG to context — a 2025 year-end review of RAG. *RAGFlow Blog*. https://ragflow.io/blog/rag-review-2025-from-rag-to-context
+28. Johnson, J., Douze, M., & Jégou, H. (2017). Faiss: A library for efficient similarity search. *Facebook Engineering Blog*. https://engineering.fb.com/2017/03/29/data-infrastructure/faiss-a-library-for-efficient-similarity-search/
 
-  ## Implementation Notes and Engineering Considerations
+## Implementation Notes and Engineering Considerations
 
-  Deploying DPR in production entails several engineering decisions beyond the core algorithm that substantially affect system performance, cost, and maintainability.
+Deploying DPR in production entails several engineering decisions beyond the core algorithm that substantially affect system performance, cost, and maintainability.
 
-  **Passage segmentation strategy**: The granularity at which a corpus is segmented into passages before indexing is a critical hyperparameter. The original DPR uses 100-word non-overlapping windows of Wikipedia text. Overlapping windows (e.g., 100-word windows with 50-word stride) improve retrieval recall by ensuring that passages near segment boundaries appear in at least one passage with adequate context. Longer passages (e.g., 256 or 512 tokens) reduce the total number of indexed vectors but may dilute the relevance signal if the relevant content is buried within a long passage. For [[Retrieval-Augmented Generation]] applications, the optimal passage length trades off between retrieval precision (shorter is better: less noise around the relevant content) and context coherence (longer is better: more surrounding context helps the generator).
+**Passage segmentation strategy**: The granularity at which a corpus is segmented into passages before indexing is a critical hyperparameter. The original DPR uses 100-word non-overlapping windows of Wikipedia text. Overlapping windows (e.g., 100-word windows with 50-word stride) improve retrieval recall by ensuring that passages near segment boundaries appear in at least one passage with adequate context. Longer passages (e.g., 256 or 512 tokens) reduce the total number of indexed vectors but may dilute the relevance signal if the relevant content is buried within a long passage. For [[Retrieval-Augmented Generation]] applications, the optimal passage length trades off between retrieval precision (shorter is better: less noise around the relevant content) and context coherence (longer is better: more surrounding context helps the generator).
 
-  **Encoder selection and domain adaptation**: The BERT-base encoder used in the original DPR can be replaced with domain-specific pre-trained models to substantially improve recall in specialised domains. PubMedBERT for biomedical text, LegalBERT or Law-BERT for legal documents, FinBERT for financial text, and CodeBERT for source code all provide domain-adapted token representations that substantially improve DPR retrieval on in-domain corpora relative to general-purpose BERT. The trade-off is that domain-specific models lose generalisation to out-of-domain text. Instruction-tuned embedding models (E5, BGE) trained on diverse multi-domain corpora offer a practical alternative that achieves near-domain-specialist performance across many domains without per-domain fine-tuning.
+**Encoder selection and domain adaptation**: The BERT-base encoder used in the original DPR can be replaced with domain-specific pre-trained models to substantially improve recall in specialised domains. PubMedBERT for biomedical text, LegalBERT or Law-BERT for legal documents, FinBERT for financial text, and CodeBERT for source code all provide domain-adapted token representations that substantially improve DPR retrieval on in-domain corpora relative to general-purpose BERT. The trade-off is that domain-specific models lose generalisation to out-of-domain text. Instruction-tuned embedding models (E5, BGE) trained on diverse multi-domain corpora offer a practical alternative that achieves near-domain-specialist performance across many domains without per-domain fine-tuning.
 
-  **Index maintenance and update strategies**: Static Wikipedia or static document store indexing (the original DPR assumption) is inadequate for most production applications where the knowledge base evolves over time. Three update strategies exist: (1) Full reindexing — encode all passages from scratch and rebuild the FAISS index; suitable for weekly batch updates; costs O(N * T_encoder) plus index construction. (2) Incremental update — add new passage vectors to an existing index without rebuilding; supported natively by FAISS for flat and IVF indices and by all major vector database providers; enables real-time document ingestion. (3) Soft deletion — mark passages as deleted in an auxiliary lookup table and filter them from retrieval results without physically removing them from the index; simpler implementation but wastes index capacity over time. Production systems typically combine incremental addition with periodic compaction to maintain index quality.
+**Index maintenance and update strategies**: Static Wikipedia or static document store indexing (the original DPR assumption) is inadequate for most production applications where the knowledge base evolves over time. Three update strategies exist: (1) Full reindexing — encode all passages from scratch and rebuild the FAISS index; suitable for weekly batch updates; costs O(N * T_encoder) plus index construction. (2) Incremental update — add new passage vectors to an existing index without rebuilding; supported natively by FAISS for flat and IVF indices and by all major vector database providers; enables real-time document ingestion. (3) Soft deletion — mark passages as deleted in an auxiliary lookup table and filter them from retrieval results without physically removing them from the index; simpler implementation but wastes index capacity over time. Production systems typically combine incremental addition with periodic compaction to maintain index quality.
 
-  **Retrieval pipeline integration patterns**: DPR is rarely deployed as a standalone retriever. Standard production integration patterns include: (a) Retriever-reranker: DPR retrieves top-100 candidates; a cross-encoder (e.g., cross-encoder/ms-marco-MiniLM-L12-v2) rescores each (query, passage) pair jointly; top-5 are passed to the generator. This two-stage pipeline achieves near-cross-encoder accuracy at near-DPR latency by restricting expensive joint encoding to a small candidate set. (b) Retriever-reader: DPR retrieves top-k passages; a reader model extracts or generates the answer conditioned on all retrieved passages (FiD architecture). (c) Hybrid-retriever-reranker: BM25 and DPR run in parallel; their results are merged via RRF; merged top-100 are cross-encoder reranked; top-5 are passed to the generator.
+**Retrieval pipeline integration patterns**: DPR is rarely deployed as a standalone retriever. Standard production integration patterns include: (a) Retriever-reranker: DPR retrieves top-100 candidates; a cross-encoder (e.g., cross-encoder/ms-marco-MiniLM-L12-v2) rescores each (query, passage) pair jointly; top-5 are passed to the generator. This two-stage pipeline achieves near-cross-encoder accuracy at near-DPR latency by restricting expensive joint encoding to a small candidate set. (b) Retriever-reader: DPR retrieves top-k passages; a reader model extracts or generates the answer conditioned on all retrieved passages (FiD architecture). (c) Hybrid-retriever-reranker: BM25 and DPR run in parallel; their results are merged via RRF; merged top-100 are cross-encoder reranked; top-5 are passed to the generator.
 
-  **Evaluation methodology**: Production DPR systems must be evaluated on both retrieval metrics and downstream task metrics. Retrieval-level metrics include: Recall@k (fraction of queries for which at least one of the top-k retrieved passages contains the gold answer string), nDCG@k (normalised discounted cumulative gain, used when multiple relevant passages exist), MRR@k (mean reciprocal rank, measuring average position of the first relevant passage). Downstream task metrics include: Exact Match (EM) and F1 for span extraction QA; ROUGE/BLEU for generation QA; accuracy for classification tasks in KILT. It is important to evaluate both because retrieval recall is necessary but not sufficient — even with perfect retrieval, the reader may fail to extract the correct answer from retrieved passages.
+**Evaluation methodology**: Production DPR systems must be evaluated on both retrieval metrics and downstream task metrics. Retrieval-level metrics include: Recall@k (fraction of queries for which at least one of the top-k retrieved passages contains the gold answer string), nDCG@k (normalised discounted cumulative gain, used when multiple relevant passages exist), MRR@k (mean reciprocal rank, measuring average position of the first relevant passage). Downstream task metrics include: Exact Match (EM) and F1 for span extraction QA; ROUGE/BLEU for generation QA; accuracy for classification tasks in KILT. It is important to evaluate both because retrieval recall is necessary but not sufficient — even with perfect retrieval, the reader may fail to extract the correct answer from retrieved passages.
 
-  **Computational costs at scale**: For a Wikipedia-scale corpus (21M passages, 768-dimensional BERT-base vectors, float32): encoding takes approximately 50 GPU-hours (single A100); index storage is approximately 60 GB (flat) or 3 GB (IVF-PQ compressed); online query latency is under 10ms (IVF4096) or under 2ms (IVF4096 + PQ). For enterprise corpora of 1–10M documents, encoding costs are proportionally lower, and IVF-flat (no product quantisation) achieves exact accuracy with manageable storage and latency. Product quantisation (PQ) enables 8–16× compression at a 1–3% recall cost, viable for memory-constrained deployments.
+**Computational costs at scale**: For a Wikipedia-scale corpus (21M passages, 768-dimensional BERT-base vectors, float32): encoding takes approximately 50 GPU-hours (single A100); index storage is approximately 60 GB (flat) or 3 GB (IVF-PQ compressed); online query latency is under 10ms (IVF4096) or under 2ms (IVF4096 + PQ). For enterprise corpora of 1–10M documents, encoding costs are proportionally lower, and IVF-flat (no product quantisation) achieves exact accuracy with manageable storage and latency. Product quantisation (PQ) enables 8–16× compression at a 1–3% recall cost, viable for memory-constrained deployments.
 
-  ## Failure Modes and Limitations
+## Failure Modes and Limitations
 
-  Understanding where DPR systematically fails is as important as knowing where it excels, particularly for production deployment decisions.
+Understanding where DPR systematically fails is as important as knowing where it excels, particularly for production deployment decisions.
 
-  **Out-of-domain generalisation failure**: The most consistently documented limitation. DPR fine-tuned on Natural Questions achieves strong performance on QA-type retrieval tasks but falls below BM25 on several BEIR tasks including TREC-NEWS (news article retrieval), Robust04 (TREC ad-hoc retrieval from 1990s–2000s news), and ArguAna (argument retrieval). These failures reflect the distributional gap between QA passage pairs (short factual answers to factual questions) and other retrieval genres (argumentative essays, news articles, scientific abstracts). The BEIR benchmark was specifically designed to reveal this limitation.
+**Out-of-domain generalisation failure**: The most consistently documented limitation. DPR fine-tuned on Natural Questions achieves strong performance on QA-type retrieval tasks but falls below BM25 on several BEIR tasks including TREC-NEWS (news article retrieval), Robust04 (TREC ad-hoc retrieval from 1990s–2000s news), and ArguAna (argument retrieval). These failures reflect the distributional gap between QA passage pairs (short factual answers to factual questions) and other retrieval genres (argumentative essays, news articles, scientific abstracts). The BEIR benchmark was specifically designed to reveal this limitation.
 
-  **Vocabulary mismatch in specialised domains**: While DPR is immune to the lexical gap problem in its training domain, it faces its own vocabulary generalisation challenge in specialised domains. Technical terms, proper nouns, novel scientific terminology, or domain-specific jargon that are rare or absent from pre-training data may be encoded as out-of-vocabulary subword tokens, losing their specific semantic meaning. A query about a specific pharmaceutical compound name or a recent judicial ruling may not be reliably distinguished from semantically unrelated queries that share subword components.
+**Vocabulary mismatch in specialised domains**: While DPR is immune to the lexical gap problem in its training domain, it faces its own vocabulary generalisation challenge in specialised domains. Technical terms, proper nouns, novel scientific terminology, or domain-specific jargon that are rare or absent from pre-training data may be encoded as out-of-vocabulary subword tokens, losing their specific semantic meaning. A query about a specific pharmaceutical compound name or a recent judicial ruling may not be reliably distinguished from semantically unrelated queries that share subword components.
 
-  **Brittleness to passage length distribution shifts**: DPR was trained and evaluated on 100-word passages. At deployment on corpora with substantially different passage lengths — very short snippets (under 20 tokens) or very long passages (over 200 tokens) — the [CLS] encoding may be less informative: very short passages have insufficient context for meaningful [CLS] pooling, while very long passages dilute the [CLS] representation with too much peripheral content. This motivates length-normalisation, mean pooling over all token positions (instead of [CLS]-only), or chunking strategies that normalise passage length distributions.
+**Brittleness to passage length distribution shifts**: DPR was trained and evaluated on 100-word passages. At deployment on corpora with substantially different passage lengths — very short snippets (under 20 tokens) or very long passages (over 200 tokens) — the [CLS] encoding may be less informative: very short passages have insufficient context for meaningful [CLS] pooling, while very long passages dilute the [CLS] representation with too much peripheral content. This motivates length-normalisation, mean pooling over all token positions (instead of [CLS]-only), or chunking strategies that normalise passage length distributions.
 
-  **Adversarial and accidental robustness failures**: Dense retrievers are susceptible to adversarial passages that contain high-density injection of query-adjacent vocabulary designed to manipulate dense retrieval rankings — a threat relevant to public-facing RAG systems where corpus content is not controlled. Additionally, naturally occurring passages that superficially resemble the query topically but discuss a different entity (e.g., two different scientists with similar research areas) can result in false positives that BM25 would reject through entity name matching. Hybrid retrieval partially mitigates this by incorporating BM25's exact-match behaviour.
+**Adversarial and accidental robustness failures**: Dense retrievers are susceptible to adversarial passages that contain high-density injection of query-adjacent vocabulary designed to manipulate dense retrieval rankings — a threat relevant to public-facing RAG systems where corpus content is not controlled. Additionally, naturally occurring passages that superficially resemble the query topically but discuss a different entity (e.g., two different scientists with similar research areas) can result in false positives that BM25 would reject through entity name matching. Hybrid retrieval partially mitigates this by incorporating BM25's exact-match behaviour.
 
-  **Static knowledge limitation**: DPR's retrieval quality is bounded by the knowledge available in the indexed corpus at indexing time. The retriever cannot surface information that was not in the corpus when the index was built, regardless of how semantically similar the query is to that information. For time-sensitive applications requiring knowledge of very recent events (within hours of occurrence), retrieval latency — the delay between a document becoming available and being indexed and retrievable — is an important system parameter. Production vector databases have substantially reduced this latency from days (batch reindexing) to seconds (incremental real-time update), but there remains a fundamental retrieval latency even in the best-engineered systems.
+**Static knowledge limitation**: DPR's retrieval quality is bounded by the knowledge available in the indexed corpus at indexing time. The retriever cannot surface information that was not in the corpus when the index was built, regardless of how semantically similar the query is to that information. For time-sensitive applications requiring knowledge of very recent events (within hours of occurrence), retrieval latency — the delay between a document becoming available and being indexed and retrievable — is an important system parameter. Production vector databases have substantially reduced this latency from days (batch reindexing) to seconds (incremental real-time update), but there remains a fundamental retrieval latency even in the best-engineered systems.
 
-  ## Key Terminology
-  - **Bi-encoder / dual encoder**: Two independent encoders (one for queries, one for passages) that project inputs into a shared [[Embedding Space]]; the defining architectural choice of DPR enabling independent offline indexing of passages and sub-millisecond online retrieval.
-  - **Maximum Inner Product Search (MIPS)**: The problem of finding the passage vector with the highest dot product with a given query vector; solved at scale by [[FAISS]] using exact (flat index) or approximate (IVF, HNSW) index types.
-  - **In-batch negatives**: Using other positive passages from the same training mini-batch as negative examples for contrastive learning; computationally free (no additional forward passes) and enables large effective negative counts proportional to batch size.
-  - **Hard negatives**: BM25-retrieved passages lexically similar to the query but not containing the correct answer; training on these forces the encoder to learn semantic distinctions beyond surface-level lexical co-occurrence.
-  - **FAISS**: Facebook AI Similarity Search; an open-source C++/Python library providing exact (IndexFlat) and approximate (IndexIVFFlat, IndexHNSWFlat) nearest-neighbour search over high-dimensional vectors at billion scale; the standard implementation layer for DPR offline passage indexing.
-  - **Late interaction (ColBERT)**: A multi-vector retrieval paradigm where every token of both query and passage generates its own vector, with relevance computed by MaxSim across all token pairs; retains fine-grained token-level evidence lost in DPR's single-vector [CLS] bottleneck.
-  - **Hybrid retrieval**: Combining dense (DPR-family) and sparse ([[BM25]]/SPLADE) retrieval signals via Reciprocal Rank Fusion or learned linear combination; consistently outperforms either method alone due to complementary lexical and semantic evidence coverage.
-  - **Reciprocal Rank Fusion (RRF)**: A score combination method fusing ranked lists from multiple retrievers without requiring calibrated absolute scores: RRF(d) = Σ_r 1/(k + rank_r(d)); widely adopted in production hybrid retrieval pipelines due to its robustness and parameter-free nature.
-  - **BEIR**: An 18-task heterogeneous zero-shot retrieval benchmark that exposed DPR's poor out-of-domain generalisation and redirected the field toward instruction-tuned universal embedding models; the primary benchmark for evaluating retrieval model transfer capability.
-  - **Contrastive learning**: The training paradigm underlying DPR encoder training: pairs of (query, positive passage) are pulled together in [[Embedding Space]] while (query, negative passage) pairs are pushed apart, implemented as cross-entropy loss over softmax dot products within a training batch.
-  - **Product Quantisation (PQ)**: A vector compression technique that divides each d-dimensional vector into M sub-vectors and quantises each sub-vector independently using a small codebook; enables 8–16× storage reduction for DPR passage indices at a 1–3% recall cost; standard for large-scale production deployments.
-  - **Passage encoder vs. query encoder**: The two halves of DPR's dual encoder, used asymmetrically; the passage encoder runs once per document (offline), while the query encoder runs once per user query (online); their asymmetry in usage pattern justifies using separate weights rather than a shared encoder.
-  - **Recall@k**: The fraction of test queries for which at least one of the top-k retrieved passages
-    contains the correct answer (typically the answer string or entity mention); the primary
-    retrieval-level evaluation metric for open-domain QA applications of DPR.
-  - **nDCG@k (Normalised Discounted Cumulative Gain)**: A retrieval evaluation metric that accounts
-    for both the presence and the rank position of relevant documents in the top-k retrieved results;
-    higher-ranked relevant documents contribute more to the score than lower-ranked ones;
-    the primary metric for IR benchmarks including MSMARCO and BEIR where multiple relevant
-    passages exist per query.
-  - **Cross-encoder reranker**: A transformer model that takes a (query, passage) pair concatenated
-    into a single input and scores their relevance jointly, enabling full cross-attention between
-    query and passage tokens; achieves higher precision than bi-encoder DPR at the cost of
-    significantly higher latency (O(k) cross-encoder forward passes per query);
-    used in two-stage retrieval to rerank DPR's top-k candidates.
-  - **Embedding dimensionality**: DPR with BERT-base produces 768-dimensional vectors;
-    with BERT-large, 1024-dimensional; BGE-M3 produces 1024-dimensional vectors.
-    Higher dimensionality generally correlates with higher recall but increases index storage
-    and MIPS computation cost; Matryoshka Representation Learning (MRL) enables
-    training embeddings that remain performant when truncated to smaller dimensions,
-    enabling adaptive cost-quality trade-offs at query time.
-  - **Vector database**: A purpose-built database system optimised for storing and querying
-    high-dimensional dense vectors via approximate nearest-neighbour search;
-    examples include Pinecone, Weaviate, Milvus, Qdrant, and pgvector (PostgreSQL extension);
-    vector databases extend FAISS with enterprise features including access control,
-    metadata filtering, real-time update, horizontal scaling, and REST/gRPC APIs,
-    enabling DPR-backed retrieval to be deployed as a managed cloud service.
+## Key Terminology
 
-- ### Provenance
+- **Bi-encoder / dual encoder**: Two independent encoders (one for queries, one for passages) that project inputs into a shared [[Embedding Space]]; the defining architectural choice of DPR enabling independent offline indexing of passages and sub-millisecond online retrieval.
+- **Maximum Inner Product Search (MIPS)**: The problem of finding the passage vector with the highest dot product with a given query vector; solved at scale by [[FAISS]] using exact (flat index) or approximate (IVF, HNSW) index types.
+- **In-batch negatives**: Using other positive passages from the same training mini-batch as negative examples for contrastive learning; computationally free (no additional forward passes) and enables large effective negative counts proportional to batch size.
+- **Hard negatives**: BM25-retrieved passages lexically similar to the query but not containing the correct answer; training on these forces the encoder to learn semantic distinctions beyond surface-level lexical co-occurrence.
+- **FAISS**: Facebook AI Similarity Search; an open-source C++/Python library providing exact (IndexFlat) and approximate (IndexIVFFlat, IndexHNSWFlat) nearest-neighbour search over high-dimensional vectors at billion scale; the standard implementation layer for DPR offline passage indexing.
+- **Late interaction (ColBERT)**: A multi-vector retrieval paradigm where every token of both query and passage generates its own vector, with relevance computed by MaxSim across all token pairs; retains fine-grained token-level evidence lost in DPR's single-vector [CLS] bottleneck.
+- **Hybrid retrieval**: Combining dense (DPR-family) and sparse ([[BM25]]/SPLADE) retrieval signals via Reciprocal Rank Fusion or learned linear combination; consistently outperforms either method alone due to complementary lexical and semantic evidence coverage.
+- **Reciprocal Rank Fusion (RRF)**: A score combination method fusing ranked lists from multiple retrievers without requiring calibrated absolute scores: RRF(d) = Σ_r 1/(k + rank_r(d)); widely adopted in production hybrid retrieval pipelines due to its robustness and parameter-free nature.
+- **BEIR**: An 18-task heterogeneous zero-shot retrieval benchmark that exposed DPR's poor out-of-domain generalisation and redirected the field toward instruction-tuned universal embedding models; the primary benchmark for evaluating retrieval model transfer capability.
+- **Contrastive learning**: The training paradigm underlying DPR encoder training: pairs of (query, positive passage) are pulled together in [[Embedding Space]] while (query, negative passage) pairs are pushed apart, implemented as cross-entropy loss over softmax dot products within a training batch.
+- **Product Quantisation (PQ)**: A vector compression technique that divides each d-dimensional vector into M sub-vectors and quantises each sub-vector independently using a small codebook; enables 8–16× storage reduction for DPR passage indices at a 1–3% recall cost; standard for large-scale production deployments.
+- **Passage encoder vs. query encoder**: The two halves of DPR's dual encoder, used asymmetrically; the passage encoder runs once per document (offline), while the query encoder runs once per user query (online); their asymmetry in usage pattern justifies using separate weights rather than a shared encoder.
+- **Recall@k**: The fraction of test queries for which at least one of the top-k retrieved passages
+  contains the correct answer (typically the answer string or entity mention); the primary
+  retrieval-level evaluation metric for open-domain QA applications of DPR.
+- **nDCG@k (Normalised Discounted Cumulative Gain)**: A retrieval evaluation metric that accounts
+  for both the presence and the rank position of relevant documents in the top-k retrieved results;
+  higher-ranked relevant documents contribute more to the score than lower-ranked ones;
+  the primary metric for IR benchmarks including MSMARCO and BEIR where multiple relevant
+  passages exist per query.
+- **Cross-encoder reranker**: A transformer model that takes a (query, passage) pair concatenated
+  into a single input and scores their relevance jointly, enabling full cross-attention between
+  query and passage tokens; achieves higher precision than bi-encoder DPR at the cost of
+  significantly higher latency (O(k) cross-encoder forward passes per query);
+  used in two-stage retrieval to rerank DPR's top-k candidates.
+- **Embedding dimensionality**: DPR with BERT-base produces 768-dimensional vectors;
+  with BERT-large, 1024-dimensional; BGE-M3 produces 1024-dimensional vectors.
+  Higher dimensionality generally correlates with higher recall but increases index storage
+  and MIPS computation cost; Matryoshka Representation Learning (MRL) enables
+  training embeddings that remain performant when truncated to smaller dimensions,
+  enabling adaptive cost-quality trade-offs at query time.
+- **Vector database**: A purpose-built database system optimised for storing and querying
+  high-dimensional dense vectors via approximate nearest-neighbour search;
+  examples include Pinecone, Weaviate, Milvus, Qdrant, and pgvector (PostgreSQL extension);
+  vector databases extend FAISS with enterprise features including access control,
+  metadata filtering, real-time update, horizontal scaling, and REST/gRPC APIs,
+  enabling DPR-backed retrieval to be deployed as a managed cloud service.
+
+### Provenance
 

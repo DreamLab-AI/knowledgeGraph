@@ -1,22 +1,24 @@
-
 Design principles and technical safeguards that protect users from physical harm, psychological distress, and privacy violations in virtual and augmented reality environments through content moderation, comfort settings, and safety boundaries.
 
-- ### Semantic Classification
+### Semantic Classification
 
-- ### Content
+### Content
 
-  - #### Safety Features
-		- Guardian boundary systems for physical space
-		- Passthrough mode for real-world awareness
-		- Motion sickness reduction techniques
-		- Age-appropriate content filtering
-		- Emergency exit mechanisms
-  - #### Design Principles
-		- Comfort settings for locomotion
-		- Content warnings for intense experiences
-		- Rest period recommendations
-		- Harassment prevention tools
-		- Privacy-preserving data collection
+#### Safety Features
 
-- ### Provenance
+- Guardian boundary systems for physical space
+- Passthrough mode for real-world awareness
+- Motion sickness reduction techniques
+- Age-appropriate content filtering
+- Emergency exit mechanisms
+
+#### Design Principles
+
+- Comfort settings for locomotion
+- Content warnings for intense experiences
+- Rest period recommendations
+- Harassment prevention tools
+- Privacy-preserving data collection
+
+### Provenance
 

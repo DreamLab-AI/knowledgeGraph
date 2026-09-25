@@ -1,123 +1,124 @@
-
 Causal language modelling is a self-supervised pre-training objective in which a neural network learns to predict the next token in a sequence given all preceding tokens, modelling the joint probability of text as an autoregressive product of conditional distributions. The term 'causal' refers to the unidirectional (left-to-right) attention mask that enforces the temporal ordering of tokens, preventing the model from attending to future context. This objective is the foundation of decoder-only transformer architectures such as GPT, LLaMA, and Claude, which power the majority of state-of-the-art large language models.
 
-- ### Semantic Classification
+### Semantic Classification
 
-- ### Content
-  ## Compositional Relationships (Components)
-      SubClassOf(ai:CausalLanguageModelling
-        ObjectSomeValuesFrom(ai:hasPart ai:CausalAttention))
-      SubClassOf(ai:CausalLanguageModelling
-        ObjectSomeValuesFrom(ai:hasPart ai:CrossEntropyLoss))
-      SubClassOf(ai:CausalLanguageModelling
-        ObjectSomeValuesFrom(ai:hasPart ai:TeacherForcing))
-      SubClassOf(ai:CausalLanguageModelling
-        ObjectSomeValuesFrom(ai:hasPart ai:AutoregressiveDecoding))
-      SubClassOf(ai:CausalLanguageModelling
-        ObjectSomeValuesFrom(ai:hasPart ai:Perplexity))
-      SubClassOf(ai:CausalLanguageModelling
-        ObjectSomeValuesFrom(ai:hasPart ai:NextTokenPrediction))
+### Content
 
-  ## Dependency Relationships
-      SubClassOf(ai:CausalLanguageModelling
-        ObjectSomeValuesFrom(ai:requires ai:TransformerArchitecture))
-      SubClassOf(ai:CausalLanguageModelling
-        ObjectSomeValuesFrom(ai:requires ai:AttentionMechanism))
-      SubClassOf(ai:CausalLanguageModelling
-        ObjectSomeValuesFrom(ai:requires ai:Tokenization))
-      SubClassOf(ai:CausalLanguageModelling
-        ObjectSomeValuesFrom(ai:requires ai:PositionalEncoding))
-      SubClassOf(ai:CausalLanguageModelling
-        ObjectSomeValuesFrom(ai:requires ai:TrainingData))
-      SubClassOf(ai:CausalLanguageModelling
-        ObjectSomeValuesFrom(ai:requires ai:GPUCompute))
-      SubClassOf(ai:CausalLanguageModelling
-        ObjectSomeValuesFrom(ai:dependsOn ai:SelfAttention))
-      SubClassOf(ai:CausalLanguageModelling
-        ObjectSomeValuesFrom(ai:dependsOn ai:LayerNormalisation))
+## Compositional Relationships (Components)
+    SubClassOf(ai:CausalLanguageModelling
+      ObjectSomeValuesFrom(ai:hasPart ai:CausalAttention))
+    SubClassOf(ai:CausalLanguageModelling
+      ObjectSomeValuesFrom(ai:hasPart ai:CrossEntropyLoss))
+    SubClassOf(ai:CausalLanguageModelling
+      ObjectSomeValuesFrom(ai:hasPart ai:TeacherForcing))
+    SubClassOf(ai:CausalLanguageModelling
+      ObjectSomeValuesFrom(ai:hasPart ai:AutoregressiveDecoding))
+    SubClassOf(ai:CausalLanguageModelling
+      ObjectSomeValuesFrom(ai:hasPart ai:Perplexity))
+    SubClassOf(ai:CausalLanguageModelling
+      ObjectSomeValuesFrom(ai:hasPart ai:NextTokenPrediction))
 
-  ## Capability Relationships
-      SubClassOf(ai:CausalLanguageModelling
-        ObjectSomeValuesFrom(ai:enables ai:LargeLanguageModels))
-      SubClassOf(ai:CausalLanguageModelling
-        ObjectSomeValuesFrom(ai:enables ai:ChainOfThoughtPrompting))
-      SubClassOf(ai:CausalLanguageModelling
-        ObjectSomeValuesFrom(ai:enables ai:CodeGeneration))
-      SubClassOf(ai:CausalLanguageModelling
-        ObjectSomeValuesFrom(ai:enables ai:InContextLearning))
-      SubClassOf(ai:CausalLanguageModelling
-        ObjectSomeValuesFrom(ai:enables ai:TextGeneration))
-      SubClassOf(ai:CausalLanguageModelling
-        ObjectSomeValuesFrom(ai:enables ai:Reasoning))
-      SubClassOf(ai:CausalLanguageModelling
-        ObjectSomeValuesFrom(ai:supports ai:InstructionTuning))
-      SubClassOf(ai:CausalLanguageModelling
-        ObjectSomeValuesFrom(ai:supports ai:ReinforcementLearningFromHumanFeedback))
+## Dependency Relationships
+    SubClassOf(ai:CausalLanguageModelling
+      ObjectSomeValuesFrom(ai:requires ai:TransformerArchitecture))
+    SubClassOf(ai:CausalLanguageModelling
+      ObjectSomeValuesFrom(ai:requires ai:AttentionMechanism))
+    SubClassOf(ai:CausalLanguageModelling
+      ObjectSomeValuesFrom(ai:requires ai:Tokenization))
+    SubClassOf(ai:CausalLanguageModelling
+      ObjectSomeValuesFrom(ai:requires ai:PositionalEncoding))
+    SubClassOf(ai:CausalLanguageModelling
+      ObjectSomeValuesFrom(ai:requires ai:TrainingData))
+    SubClassOf(ai:CausalLanguageModelling
+      ObjectSomeValuesFrom(ai:requires ai:GPUCompute))
+    SubClassOf(ai:CausalLanguageModelling
+      ObjectSomeValuesFrom(ai:dependsOn ai:SelfAttention))
+    SubClassOf(ai:CausalLanguageModelling
+      ObjectSomeValuesFrom(ai:dependsOn ai:LayerNormalisation))
 
-  ## Implementation Relationships
-      SubClassOf(ai:CausalLanguageModelling
-        ObjectSomeValuesFrom(ai:implements ai:MultiHeadAttention))
-      SubClassOf(ai:CausalLanguageModelling
-        ObjectSomeValuesFrom(ai:implements ai:Backpropagation))
-      SubClassOf(ai:CausalLanguageModelling
-        ObjectSomeValuesFrom(ai:implements ai:GradientDescent))
-      SubClassOf(ai:CausalLanguageModelling
-        ObjectSomeValuesFrom(ai:implements ai:AutoregressiveFactorisation))
+## Capability Relationships
+    SubClassOf(ai:CausalLanguageModelling
+      ObjectSomeValuesFrom(ai:enables ai:LargeLanguageModels))
+    SubClassOf(ai:CausalLanguageModelling
+      ObjectSomeValuesFrom(ai:enables ai:ChainOfThoughtPrompting))
+    SubClassOf(ai:CausalLanguageModelling
+      ObjectSomeValuesFrom(ai:enables ai:CodeGeneration))
+    SubClassOf(ai:CausalLanguageModelling
+      ObjectSomeValuesFrom(ai:enables ai:InContextLearning))
+    SubClassOf(ai:CausalLanguageModelling
+      ObjectSomeValuesFrom(ai:enables ai:TextGeneration))
+    SubClassOf(ai:CausalLanguageModelling
+      ObjectSomeValuesFrom(ai:enables ai:Reasoning))
+    SubClassOf(ai:CausalLanguageModelling
+      ObjectSomeValuesFrom(ai:supports ai:InstructionTuning))
+    SubClassOf(ai:CausalLanguageModelling
+      ObjectSomeValuesFrom(ai:supports ai:ReinforcementLearningFromHumanFeedback))
 
-  ## Reduction Relationships
-      SubClassOf(ai:CausalLanguageModelling
-        ObjectSomeValuesFrom(ai:reducesTo ai:SelfSupervisedLearning))
-      SubClassOf(ai:CausalLanguageModelling
-        ObjectSomeValuesFrom(ai:reducesTo ai:LanguageModelling))
-      SubClassOf(ai:CausalLanguageModelling
-        ObjectSomeValuesFrom(ai:reducesTo ai:NextTokenPrediction))
-      SubClassOf(ai:CausalLanguageModelling
-        ObjectSomeValuesFrom(ai:reducesTo ai:AutoregressiveDecoding))
-      SubClassOf(ai:CausalLanguageModelling
-        ObjectSomeValuesFrom(ai:contrastsWith ai:MaskedLanguageModelling))
-      SubClassOf(ai:CausalLanguageModelling
-        ObjectSomeValuesFrom(ai:contrastsWith ai:DiffusionLanguageModel))
-      SubClassOf(ai:CausalLanguageModelling
-        ObjectSomeValuesFrom(ai:implements ai:FillInTheMiddle))
-      SubClassOf(ai:CausalLanguageModelling
-        ObjectSomeValuesFrom(ai:supports ai:FewShotLearning))
-      SubClassOf(ai:CausalLanguageModelling
-        ObjectSomeValuesFrom(ai:supports ai:ZeroShotLearning))
-      SubClassOf(ai:CausalLanguageModelling
-        ObjectSomeValuesFrom(ai:enables ai:SpeculativeDecoding))
-      SubClassOf(ai:CausalLanguageModelling
-        ObjectSomeValuesFrom(ai:enables ai:MultimodalLearning))
-      SubClassOf(ai:CausalLanguageModelling
-        ObjectSomeValuesFrom(ai:requires ai:BytePairEncoding))
+## Implementation Relationships
+    SubClassOf(ai:CausalLanguageModelling
+      ObjectSomeValuesFrom(ai:implements ai:MultiHeadAttention))
+    SubClassOf(ai:CausalLanguageModelling
+      ObjectSomeValuesFrom(ai:implements ai:Backpropagation))
+    SubClassOf(ai:CausalLanguageModelling
+      ObjectSomeValuesFrom(ai:implements ai:GradientDescent))
+    SubClassOf(ai:CausalLanguageModelling
+      ObjectSomeValuesFrom(ai:implements ai:AutoregressiveFactorisation))
 
-  ## About
+## Reduction Relationships
+    SubClassOf(ai:CausalLanguageModelling
+      ObjectSomeValuesFrom(ai:reducesTo ai:SelfSupervisedLearning))
+    SubClassOf(ai:CausalLanguageModelling
+      ObjectSomeValuesFrom(ai:reducesTo ai:LanguageModelling))
+    SubClassOf(ai:CausalLanguageModelling
+      ObjectSomeValuesFrom(ai:reducesTo ai:NextTokenPrediction))
+    SubClassOf(ai:CausalLanguageModelling
+      ObjectSomeValuesFrom(ai:reducesTo ai:AutoregressiveDecoding))
+    SubClassOf(ai:CausalLanguageModelling
+      ObjectSomeValuesFrom(ai:contrastsWith ai:MaskedLanguageModelling))
+    SubClassOf(ai:CausalLanguageModelling
+      ObjectSomeValuesFrom(ai:contrastsWith ai:DiffusionLanguageModel))
+    SubClassOf(ai:CausalLanguageModelling
+      ObjectSomeValuesFrom(ai:implements ai:FillInTheMiddle))
+    SubClassOf(ai:CausalLanguageModelling
+      ObjectSomeValuesFrom(ai:supports ai:FewShotLearning))
+    SubClassOf(ai:CausalLanguageModelling
+      ObjectSomeValuesFrom(ai:supports ai:ZeroShotLearning))
+    SubClassOf(ai:CausalLanguageModelling
+      ObjectSomeValuesFrom(ai:enables ai:SpeculativeDecoding))
+    SubClassOf(ai:CausalLanguageModelling
+      ObjectSomeValuesFrom(ai:enables ai:MultimodalLearning))
+    SubClassOf(ai:CausalLanguageModelling
+      ObjectSomeValuesFrom(ai:requires ai:BytePairEncoding))
 
-  Language modelling as a statistical task has roots in the 1940s information-theoretic work of Claude Shannon, who quantified the redundancy of English and estimated its entropy per character. The task of assigning probabilities to sequences of words was formalised with n-gram models and smoothing techniques throughout the 1980s and 1990s, with large n-gram language models becoming standard components in speech recognition and machine translation pipelines. The shift to neural language models began with Yoshua Bengio and colleagues (2003), who trained a feedforward neural network to map fixed-width context windows of token embeddings to a probability distribution over the next word, demonstrating that distributed representations could generalise far better than n-gram back-off methods on out-of-vocabulary contexts.
+## About
 
-  The introduction of the [[Transformer Architecture]] by Vaswani et al. (2017) — the "Attention Is All You Need" paper — removed the context-window limitation entirely. By using [[Self Attention|self-attention]] rather than convolutions or recurrence, transformers could in principle attend to all prior tokens simultaneously. The causal variant applies a triangular mask so that token i attends only to tokens 0 through i, preserving the autoregressive property while retaining fully parallel training via teacher forcing. OpenAI's GPT-1 (Radford et al., 2018) was the first large demonstration that a decoder-only transformer pre-trained with the causal language modelling objective on a large text corpus could be fine-tuned to achieve competitive performance across diverse NLP benchmarks with minimal task-specific modifications. GPT-2 (2019) and GPT-3 (2020) showed that scaling the same architecture and objective — without fundamental changes — produced emergent capabilities including few-shot learning, in-context arithmetic, and rudimentary code generation, establishing the scaling law paradigm (Kaplan et al., 2020).
+Language modelling as a statistical task has roots in the 1940s information-theoretic work of Claude Shannon, who quantified the redundancy of English and estimated its entropy per character. The task of assigning probabilities to sequences of words was formalised with n-gram models and smoothing techniques throughout the 1980s and 1990s, with large n-gram language models becoming standard components in speech recognition and machine translation pipelines. The shift to neural language models began with Yoshua Bengio and colleagues (2003), who trained a feedforward neural network to map fixed-width context windows of token embeddings to a probability distribution over the next word, demonstrating that distributed representations could generalise far better than n-gram back-off methods on out-of-vocabulary contexts.
 
-  Today, causal language modelling is the dominant pre-training objective for every major frontier model family: OpenAI's GPT-4o and o3 series, Google DeepMind's Gemini family, Meta's LLaMA 3, Anthropic's Claude series, Mistral AI's Mistral and Mixtral, and xAI's Grok — all use decoder-only transformers trained on the next-token prediction objective, subsequently aligned via instruction tuning and reinforcement learning from human feedback.
+The introduction of the [[Transformer Architecture]] by Vaswani et al. (2017) — the "Attention Is All You Need" paper — removed the context-window limitation entirely. By using [[Self Attention|self-attention]] rather than convolutions or recurrence, transformers could in principle attend to all prior tokens simultaneously. The causal variant applies a triangular mask so that token i attends only to tokens 0 through i, preserving the autoregressive property while retaining fully parallel training via teacher forcing. OpenAI's GPT-1 (Radford et al., 2018) was the first large demonstration that a decoder-only transformer pre-trained with the causal language modelling objective on a large text corpus could be fine-tuned to achieve competitive performance across diverse NLP benchmarks with minimal task-specific modifications. GPT-2 (2019) and GPT-3 (2020) showed that scaling the same architecture and objective — without fundamental changes — produced emergent capabilities including few-shot learning, in-context arithmetic, and rudimentary code generation, establishing the scaling law paradigm (Kaplan et al., 2020).
 
-  The significance of CLM as a pre-training objective lies in its remarkable simplicity relative to the richness of the representations it produces. By casting language modelling as a straightforward next-token prediction task — essentially asking the model to compress the statistical patterns of human-generated text into its parameters — CLM implicitly forces the model to learn grammar, world knowledge, reasoning patterns, stylistic conventions, and social norms as intermediate representations needed to predict the next word well. This connection between compression (minimising perplexity) and general intelligence is sometimes called the "compression-intelligence equivalence" and is theoretically grounded in [[Information Theory]]: a model that can accurately predict the next token in any text must have learned a representation of the world that generated that text. This idea motivates the view that scaling CLM training — more parameters, more data, more compute — systematically improves general intelligence, a hypothesis validated empirically by the scaling law literature and operationally by the trajectory of frontier models from GPT-3 in 2020 to GPT-4o and Claude 3.7 in 2025–2026.
+Today, causal language modelling is the dominant pre-training objective for every major frontier model family: OpenAI's GPT-4o and o3 series, Google DeepMind's Gemini family, Meta's LLaMA 3, Anthropic's Claude series, Mistral AI's Mistral and Mixtral, and xAI's Grok — all use decoder-only transformers trained on the next-token prediction objective, subsequently aligned via instruction tuning and reinforcement learning from human feedback.
 
-  An important conceptual distinction that CLM crystallises is between pre-training and post-training alignment. The CLM objective alone produces a model that predicts text continuations without any preference for being helpful, harmless, or honest — it will continue harmful prompts, reproduce biases in training data, and generate plausible-sounding falsehoods. [[Instruction Tuning]] (supervised fine-tuning on curated instruction-response pairs) and [[Reinforcement Learning from Human Feedback]] are post-training procedures layered on top of the CLM-pre-trained checkpoint to align the model's generative behaviour with human values and task requirements. Critically, the quality of post-training alignment scales with the quality of the underlying CLM pre-trained model: a better-pre-trained model is easier to align and achieves better aligned performance from the same quantity of human feedback data. This "pre-training first" pipeline is now standard across the industry and is likely to remain so as long as CLM produces the best general-purpose representations.
+The significance of CLM as a pre-training objective lies in its remarkable simplicity relative to the richness of the representations it produces. By casting language modelling as a straightforward next-token prediction task — essentially asking the model to compress the statistical patterns of human-generated text into its parameters — CLM implicitly forces the model to learn grammar, world knowledge, reasoning patterns, stylistic conventions, and social norms as intermediate representations needed to predict the next word well. This connection between compression (minimising perplexity) and general intelligence is sometimes called the "compression-intelligence equivalence" and is theoretically grounded in [[Information Theory]]: a model that can accurately predict the next token in any text must have learned a representation of the world that generated that text. This idea motivates the view that scaling CLM training — more parameters, more data, more compute — systematically improves general intelligence, a hypothesis validated empirically by the scaling law literature and operationally by the trajectory of frontier models from GPT-3 in 2020 to GPT-4o and Claude 3.7 in 2025–2026.
 
-  ## Components / Architecture
+An important conceptual distinction that CLM crystallises is between pre-training and post-training alignment. The CLM objective alone produces a model that predicts text continuations without any preference for being helpful, harmless, or honest — it will continue harmful prompts, reproduce biases in training data, and generate plausible-sounding falsehoods. [[Instruction Tuning]] (supervised fine-tuning on curated instruction-response pairs) and [[Reinforcement Learning from Human Feedback]] are post-training procedures layered on top of the CLM-pre-trained checkpoint to align the model's generative behaviour with human values and task requirements. Critically, the quality of post-training alignment scales with the quality of the underlying CLM pre-trained model: a better-pre-trained model is easier to align and achieves better aligned performance from the same quantity of human feedback data. This "pre-training first" pipeline is now standard across the industry and is likely to remain so as long as CLM produces the best general-purpose representations.
 
-  The core architectural element that realises causal language modelling is the **causal attention mask** — a lower-triangular matrix of ones and negative-infinity values added to the raw attention logits before softmax, ensuring that position i receives zero attention weight from any position j > i. Within this masked attention framework, the model comprises:
+## Components / Architecture
 
-  - **Token Embedding Layer**: maps discrete tokens (from a vocabulary of ~50,000 to ~128,000 tokens, produced by [[Byte Pair Encoding]] or SentencePiece) to dense vectors of dimension d_model.
-  - **Positional Encoding / Positional Embedding**: injects sequence order information. Modern models use Rotary Positional Embeddings (RoPE) or ALiBi rather than the sinusoidal encodings of the original transformer, enabling extrapolation to context lengths far beyond those seen during training.
-  - **Stacked Decoder Blocks**: each block contains (a) a causally masked [[Multi-Head Attention]] sublayer, (b) a position-wise [[Feed Forward Network]] with GeLU or SwiGLU activation, and (c) [[Layer Normalisation]] (pre-norm in modern variants). Blocks number from 12 (GPT-2 small) to 96+ (GPT-4 class).
-  - **Language Model Head**: a linear projection followed by softmax producing a probability distribution over the vocabulary for the next-token prediction at each position.
-  - **Training objective**: average cross-entropy loss L = −(1/N) ∑ᵢ log P(xᵢ | x₁,…,xᵢ₋₁; θ), equivalent to minimising perplexity exp(L).
+The core architectural element that realises causal language modelling is the **causal attention mask** — a lower-triangular matrix of ones and negative-infinity values added to the raw attention logits before softmax, ensuring that position i receives zero attention weight from any position j > i. Within this masked attention framework, the model comprises:
+
+- **Token Embedding Layer**: maps discrete tokens (from a vocabulary of ~50,000 to ~128,000 tokens, produced by [[Byte Pair Encoding]] or SentencePiece) to dense vectors of dimension d_model.
+- **Positional Encoding / Positional Embedding**: injects sequence order information. Modern models use Rotary Positional Embeddings (RoPE) or ALiBi rather than the sinusoidal encodings of the original transformer, enabling extrapolation to context lengths far beyond those seen during training.
+- **Stacked Decoder Blocks**: each block contains (a) a causally masked [[Multi-Head Attention]] sublayer, (b) a position-wise [[Feed Forward Network]] with GeLU or SwiGLU activation, and (c) [[Layer Normalisation]] (pre-norm in modern variants). Blocks number from 12 (GPT-2 small) to 96+ (GPT-4 class).
+- **Language Model Head**: a linear projection followed by softmax producing a probability distribution over the vocabulary for the next-token prediction at each position.
+- **Training objective**: average cross-entropy loss L = −(1/N) ∑ᵢ log P(xᵢ | x₁,…,xᵢ₋₁; θ), equivalent to minimising perplexity exp(L).
 
   Modern efficiency innovations include:
-  - **Flash Attention (v1-v4)**: IO-aware tiling that fuses the attention softmax into a single GPU kernel, reducing memory bandwidth usage from O(n²) to O(n) reads/writes. Flash Attention 4 (2026) achieves approximately 1,605 TFLOPs/s on NVIDIA H100/B200 GPUs.
-  - **Grouped Query Attention (GQA)**: shares key-value heads across groups of query heads, drastically reducing KV-cache memory while retaining quality.
-  - **Sliding Window / Sparse Attention**: limits attention to a local window while maintaining global context through hierarchical mechanisms.
-  - **Speculative Decoding**: uses a small draft model to propose token continuations that a larger verifier model accepts or rejects, achieving 2–4× inference speedup without quality loss.
-  - **Fill-in-the-Middle (FIM)**: a data augmentation technique that rearranges training documents into prefix-suffix-middle format, extending the decoder-only model's capability to infilling tasks without architectural changes (Bavarian et al., 2022). Widely used for code completion.
+
+- **Flash Attention (v1-v4)**: IO-aware tiling that fuses the attention softmax into a single GPU kernel, reducing memory bandwidth usage from O(n²) to O(n) reads/writes. Flash Attention 4 (2026) achieves approximately 1,605 TFLOPs/s on NVIDIA H100/B200 GPUs.
+- **Grouped Query Attention (GQA)**: shares key-value heads across groups of query heads, drastically reducing KV-cache memory while retaining quality.
+- **Sliding Window / Sparse Attention**: limits attention to a local window while maintaining global context through hierarchical mechanisms.
+- **Speculative Decoding**: uses a small draft model to propose token continuations that a larger verifier model accepts or rejects, achieving 2–4× inference speedup without quality loss.
+- **Fill-in-the-Middle (FIM)**: a data augmentation technique that rearranges training documents into prefix-suffix-middle format, extending the decoder-only model's capability to infilling tasks without architectural changes (Bavarian et al., 2022). Widely used for code completion.
 
   ## Use Cases / Major Families
 
@@ -137,21 +138,21 @@ Causal language modelling is a self-supervised pre-training objective in which a
 
   The theoretical foundations of causal language modelling span information theory, computational linguistics, and deep learning theory. Key milestones:
 
-  - **Shannon (1948)**: Established entropy as the theoretical limit of compressible information in sequences, framing language modelling as entropy estimation.
-  - **Jelinek et al. (1977)**: Trigram n-gram language models for speech recognition, introducing the Kneser-Ney smoothing family.
-  - **Bengio et al. (2003)**: "A Neural Probabilistic Language Model" — first neural approach, demonstrating word embeddings and distributed representations.
-  - **Mikolov et al. (2010)**: Recurrent neural network language models outperforming n-gram baselines at scale.
-  - **Vaswani et al. (2017)**: "Attention Is All You Need" — transformer architecture enabling fully parallelised CLM training.
-  - **Radford et al. (2018)**: GPT-1 — first large-scale demonstration of transfer learning from CLM pre-training.
-  - **Radford et al. (2019)**: GPT-2 — scale-alone emergent zero-shot capabilities.
-  - **Brown et al. (2020)**: GPT-3 — 175B parameter few-shot learning via in-context prompting.
-  - **Kaplan et al. (2020)**: Scaling laws for neural language models (OpenAI) — empirical power-law relationships between model size, data, compute, and loss.
-  - **Hoffmann et al. (2022)**: Chinchilla — optimal compute allocation requires data volume scaling proportionally to model size.
-  - **Chung et al. (2022)**: FLAN-T5 and instruction fine-tuning at scale.
-  - **Bavarian et al. (2022)**: Fill-in-the-Middle training for code CLM.
-  - **Ouyang et al. (2022)**: InstructGPT — combining CLM pre-training with RLHF.
-  - **Touvron et al. (2023, 2024)**: LLaMA 1, 2, and 3 — open-weight CLM models matching closed proprietary capabilities.
-  - **Dai et al. (2024)**: Future Token Prediction — per-token adaptive masking extending the causal objective.
+- **Shannon (1948)**: Established entropy as the theoretical limit of compressible information in sequences, framing language modelling as entropy estimation.
+- **Jelinek et al. (1977)**: Trigram n-gram language models for speech recognition, introducing the Kneser-Ney smoothing family.
+- **Bengio et al. (2003)**: "A Neural Probabilistic Language Model" — first neural approach, demonstrating word embeddings and distributed representations.
+- **Mikolov et al. (2010)**: Recurrent neural network language models outperforming n-gram baselines at scale.
+- **Vaswani et al. (2017)**: "Attention Is All You Need" — transformer architecture enabling fully parallelised CLM training.
+- **Radford et al. (2018)**: GPT-1 — first large-scale demonstration of transfer learning from CLM pre-training.
+- **Radford et al. (2019)**: GPT-2 — scale-alone emergent zero-shot capabilities.
+- **Brown et al. (2020)**: GPT-3 — 175B parameter few-shot learning via in-context prompting.
+- **Kaplan et al. (2020)**: Scaling laws for neural language models (OpenAI) — empirical power-law relationships between model size, data, compute, and loss.
+- **Hoffmann et al. (2022)**: Chinchilla — optimal compute allocation requires data volume scaling proportionally to model size.
+- **Chung et al. (2022)**: FLAN-T5 and instruction fine-tuning at scale.
+- **Bavarian et al. (2022)**: Fill-in-the-Middle training for code CLM.
+- **Ouyang et al. (2022)**: InstructGPT — combining CLM pre-training with RLHF.
+- **Touvron et al. (2023, 2024)**: LLaMA 1, 2, and 3 — open-weight CLM models matching closed proprietary capabilities.
+- **Dai et al. (2024)**: Future Token Prediction — per-token adaptive masking extending the causal objective.
 
   Research centres driving this field include OpenAI, Anthropic, Google DeepMind (London), Meta AI Research (FAIR), Mistral AI (Paris), and academic groups at MIT, Stanford, UCL, Edinburgh, Cambridge, and ETH Zurich.
 
@@ -161,65 +162,69 @@ Causal language modelling is a self-supervised pre-training objective in which a
 
   Key 2025–2026 developments:
 
-  - **Extended context windows**: Production models routinely support 128K–1M+ token context using RoPE with extended base frequencies and sliding window attention, eliminating the practical context constraint that once limited CLM applications.
-  - **Hybrid objectives**: Fill-in-the-Middle (FIM) is now standard in code models. Diffusion language models (LLaDA, MDLM, Block Causal Diffusion) are emerging alternatives challenging pure autoregression on certain generation tasks, though no hybrid has displaced CLM at frontier scale.
-  - **State Space Model alternatives**: Mamba (Gu & Dao, 2023) and its successors offer linear-time sequence modelling with selective state spaces, achieving comparable perplexity with O(n) rather than O(n²) attention compute. Hybrid Mamba-Transformer architectures (Jamba, Zamba, Falcon-Mamba) combine SSM efficiency with transformer expressivity in 2025 production deployments.
-  - **Speculative decoding at scale**: LongSpec (2025) and SpecAttn (2026) achieve 3–4× throughput gains on long-context CLM inference, making 100K+ token generations economically viable in production.
-  - **Post-training alignment**: Generative RLHF-V (2025) and DPO variants continue to refine how CLM-pretrained models are aligned without degrading pre-trained capability.
-  - **Multimodal CLM**: Unified autoregressive models (e.g., GPT-4o, Gemini 2.0 with native audio/image/video tokenisation) extend the CLM objective to interleaved multimodal token streams.
+- **Extended context windows**: Production models routinely support 128K–1M+ token context using RoPE with extended base frequencies and sliding window attention, eliminating the practical context constraint that once limited CLM applications.
+- **Hybrid objectives**: Fill-in-the-Middle (FIM) is now standard in code models. Diffusion language models (LLaDA, MDLM, Block Causal Diffusion) are emerging alternatives challenging pure autoregression on certain generation tasks, though no hybrid has displaced CLM at frontier scale.
+- **State Space Model alternatives**: Mamba (Gu & Dao, 2023) and its successors offer linear-time sequence modelling with selective state spaces, achieving comparable perplexity with O(n) rather than O(n²) attention compute. Hybrid Mamba-Transformer architectures (Jamba, Zamba, Falcon-Mamba) combine SSM efficiency with transformer expressivity in 2025 production deployments.
+- **Speculative decoding at scale**: LongSpec (2025) and SpecAttn (2026) achieve 3–4× throughput gains on long-context CLM inference, making 100K+ token generations economically viable in production.
+- **Post-training alignment**: Generative RLHF-V (2025) and DPO variants continue to refine how CLM-pretrained models are aligned without degrading pre-trained capability.
+- **Multimodal CLM**: Unified autoregressive models (e.g., GPT-4o, Gemini 2.0 with native audio/image/video tokenisation) extend the CLM objective to interleaved multimodal token streams.
 
   ## UK Context
 
   The United Kingdom has been a substantial contributor to the research foundations and commercial deployment of causal language modelling:
 
-  - **Google DeepMind (London)**: Co-invented the [[Transformer Architecture]] (Vaswani et al., 2017 team included Google Brain researchers many of whom joined DeepMind). DeepMind's Gemini family, developed primarily in London with collaborators in Mountain View, uses CLM pre-training at frontier scale.
-  - **University College London (UCL)**: The Gatsby Computational Neuroscience Unit and the Centre for Artificial Intelligence have contributed to the theoretical underpinnings of attention-based models and probabilistic language modelling. Yee Whye Teh's group at Oxford and collaborators have advanced Bayesian perspectives on language models.
-  - **University of Edinburgh**: The Edinburgh Natural Language Processing group (including Rico Sennrich, who developed Byte Pair Encoding — the tokenisation algorithm universally used in CLM models) has made foundational contributions to neural machine translation and language model evaluation.
-  - **University of Cambridge**: The Language Technology Lab and the Natural Language and Information Processing group contribute to discourse modelling, coreference, and evaluating CLM systematic biases.
-  - **Stability AI (founded in London)**: Distributed open-weight models and contributed to democratising CLM-based generation.
-  - **Aleph Alpha (German, with UK partnerships)**: European sovereign AI initiative using CLM-based models for GDPR-compliant enterprise deployments.
-  - **NHS and UK public sector**: NHS England and the NHSX AI Lab have piloted CLM-based models for clinical note summarisation, discharge letter generation, and patient communication, with MHRA guidance shaping deployment practices.
-  - **Northern England industrial context**: Manchester's growing AI cluster (including Peak AI, Cogni) deploys instruction-tuned CLM models for retail analytics and customer service. Sheffield NLP group (Mark Stevenson, Carolina Scarton) contributes to CLM evaluation and computational social science applications. Leeds data science initiatives use CLM models in legal document analysis.
+- **Google DeepMind (London)**: Co-invented the [[Transformer Architecture]] (Vaswani et al., 2017 team included Google Brain researchers many of whom joined DeepMind). DeepMind's Gemini family, developed primarily in London with collaborators in Mountain View, uses CLM pre-training at frontier scale.
+- **University College London (UCL)**: The Gatsby Computational Neuroscience Unit and the Centre for Artificial Intelligence have contributed to the theoretical underpinnings of attention-based models and probabilistic language modelling. Yee Whye Teh's group at Oxford and collaborators have advanced Bayesian perspectives on language models.
+- **University of Edinburgh**: The Edinburgh Natural Language Processing group (including Rico Sennrich, who developed Byte Pair Encoding — the tokenisation algorithm universally used in CLM models) has made foundational contributions to neural machine translation and language model evaluation.
+- **University of Cambridge**: The Language Technology Lab and the Natural Language and Information Processing group contribute to discourse modelling, coreference, and evaluating CLM systematic biases.
+- **Stability AI (founded in London)**: Distributed open-weight models and contributed to democratising CLM-based generation.
+- **Aleph Alpha (German, with UK partnerships)**: European sovereign AI initiative using CLM-based models for GDPR-compliant enterprise deployments.
+- **NHS and UK public sector**: NHS England and the NHSX AI Lab have piloted CLM-based models for clinical note summarisation, discharge letter generation, and patient communication, with MHRA guidance shaping deployment practices.
+- **Northern England industrial context**: Manchester's growing AI cluster (including Peak AI, Cogni) deploys instruction-tuned CLM models for retail analytics and customer service. Sheffield NLP group (Mark Stevenson, Carolina Scarton) contributes to CLM evaluation and computational social science applications. Leeds data science initiatives use CLM models in legal document analysis.
 
   ## Future Directions (2026–2030)
 
-  - **Scaling beyond current frontiers**: Parameter counts exceeding 1 trillion with more efficient sparse activation (MoE) at each forward pass; training data approaching 100+ trillion tokens from synthetic and multimodal sources.
-  - **Continual and online learning**: Moving from static CLM pre-training checkpoints to models that update their weights continuously from new token streams without catastrophic forgetting.
-  - **Test-time compute scaling**: Extended reasoning modes (o3-style) demonstrate that allocating more tokens to internal chain-of-thought at inference time can substitute for larger model scale; this changes the optimal CLM pre-training strategy.
-  - **Formal verification**: Research into whether CLM objectives can produce models with verifiable correctness guarantees on mathematical or code generation tasks, bridging the gap with symbolic AI.
-  - **Data curation and synthetic augmentation**: As high-quality human text approaches exhaustion, synthetic data generated by existing CLM models (self-play, constitutional AI methods) becomes the dominant training signal.
-  - **Efficiency at the objective level**: Alternatives to next-token cross-entropy — including multi-token prediction targets (Gloeckle et al., 2024), byte-level and character-level CLM, and hierarchical autoregressive models — are likely to supplement or replace standard CLM in specialised settings.
-  - **Multimodal unification**: A single CLM-trained model handling text, images, video, audio, protein sequences, and code without modality-specific encoders remains a near-term research goal.
-  - **Regulatory compliance**: The EU AI Act (effective 2026) and proposed UK AI legislation will require transparency in CLM training data provenance, bias auditing, and capability disclosure for frontier model deployments.
+- **Scaling beyond current frontiers**: Parameter counts exceeding 1 trillion with more efficient sparse activation (MoE) at each forward pass; training data approaching 100+ trillion tokens from synthetic and multimodal sources.
+- **Continual and online learning**: Moving from static CLM pre-training checkpoints to models that update their weights continuously from new token streams without catastrophic forgetting.
+- **Test-time compute scaling**: Extended reasoning modes (o3-style) demonstrate that allocating more tokens to internal chain-of-thought at inference time can substitute for larger model scale; this changes the optimal CLM pre-training strategy.
+- **Formal verification**: Research into whether CLM objectives can produce models with verifiable correctness guarantees on mathematical or code generation tasks, bridging the gap with symbolic AI.
+- **Data curation and synthetic augmentation**: As high-quality human text approaches exhaustion, synthetic data generated by existing CLM models (self-play, constitutional AI methods) becomes the dominant training signal.
+- **Efficiency at the objective level**: Alternatives to next-token cross-entropy — including multi-token prediction targets (Gloeckle et al., 2024), byte-level and character-level CLM, and hierarchical autoregressive models — are likely to supplement or replace standard CLM in specialised settings.
+- **Multimodal unification**: A single CLM-trained model handling text, images, video, audio, protein sequences, and code without modality-specific encoders remains a near-term research goal.
+- **Regulatory compliance**: The EU AI Act (effective 2026) and proposed UK AI legislation will require transparency in CLM training data provenance, bias auditing, and capability disclosure for frontier model deployments.
 
   ## Benchmark Datasets and Evaluation
 
   Causal language models are evaluated on a broad suite of benchmarks that probe different aspects of the knowledge and reasoning capabilities acquired through the CLM objective:
 
   **Perplexity benchmarks** measure how well the model assigns probability to held-out text:
-  - *WikiText-103* (Merity et al., 2016): 100M-word Wikipedia corpus; GPT-2 XL achieved 18.3 PPL; modern models achieve sub-10.
-  - *Penn Treebank*: Classic benchmark; now largely saturated by large models.
-  - *LAMBADA* (Paperno et al., 2016): Focuses on the final word of passages requiring long-range context understanding; tests the model's ability to maintain coherence across hundreds of tokens.
-  - *The Pile* (Gao et al., 2020): A diverse 825GB corpus from 22 sources used both for training and evaluation of domain-specific perplexity.
+
+- *WikiText-103* (Merity et al., 2016): 100M-word Wikipedia corpus; GPT-2 XL achieved 18.3 PPL; modern models achieve sub-10.
+- *Penn Treebank*: Classic benchmark; now largely saturated by large models.
+- *LAMBADA* (Paperno et al., 2016): Focuses on the final word of passages requiring long-range context understanding; tests the model's ability to maintain coherence across hundreds of tokens.
+- *The Pile* (Gao et al., 2020): A diverse 825GB corpus from 22 sources used both for training and evaluation of domain-specific perplexity.
 
   **Reasoning and knowledge benchmarks**:
-  - *MMLU* (Massive Multitask Language Understanding, Hendrycks et al., 2021): 57-subject academic knowledge benchmark spanning mathematics, law, medicine, and the humanities. GPT-4 achieves ~87% accuracy; Claude 3 Opus achieves ~86%.
-  - *HellaSwag* (Zellers et al., 2019): Commonsense natural language inference; frontier models are saturated at ~95%+.
-  - *ARC-Challenge* (Clark et al., 2018): Grade-school science questions; requires multi-hop reasoning.
-  - *BIG-Bench Hard* (Suzgun et al., 2022): 23 challenging tasks from BIG-Bench where chain-of-thought is necessary.
-  - *MATH* (Hendrycks et al., 2021): Competition mathematics; GPT-4 achieves ~42% without tools; o3 achieves ~90%+.
-  - *HumanEval* (Chen et al., 2021): Python programming tasks from docstring to code; GPT-4 achieves ~67%; Codestral-22B achieves ~77%.
-  - *GPQA Diamond* (Rein et al., 2023): PhD-level science questions where human experts achieve ~69%; frontier models exceed that.
+
+- *MMLU* (Massive Multitask Language Understanding, Hendrycks et al., 2021): 57-subject academic knowledge benchmark spanning mathematics, law, medicine, and the humanities. GPT-4 achieves ~87% accuracy; Claude 3 Opus achieves ~86%.
+- *HellaSwag* (Zellers et al., 2019): Commonsense natural language inference; frontier models are saturated at ~95%+.
+- *ARC-Challenge* (Clark et al., 2018): Grade-school science questions; requires multi-hop reasoning.
+- *BIG-Bench Hard* (Suzgun et al., 2022): 23 challenging tasks from BIG-Bench where chain-of-thought is necessary.
+- *MATH* (Hendrycks et al., 2021): Competition mathematics; GPT-4 achieves ~42% without tools; o3 achieves ~90%+.
+- *HumanEval* (Chen et al., 2021): Python programming tasks from docstring to code; GPT-4 achieves ~67%; Codestral-22B achieves ~77%.
+- *GPQA Diamond* (Rein et al., 2023): PhD-level science questions where human experts achieve ~69%; frontier models exceed that.
 
   **Long-context benchmarks**:
-  - *SCROLLS* (Shaham et al., 2022): Long-document summarisation and question-answering requiring retention of information over thousands of tokens.
-  - *RULER* (Hsieh et al., 2024): Evaluates effective context utilisation at lengths from 4K to 128K tokens.
-  - *Needle-in-a-Haystack*: Synthetic retrieval tasks hiding a fact in a 100K-token document; modern models achieve near-perfect recall.
+
+- *SCROLLS* (Shaham et al., 2022): Long-document summarisation and question-answering requiring retention of information over thousands of tokens.
+- *RULER* (Hsieh et al., 2024): Evaluates effective context utilisation at lengths from 4K to 128K tokens.
+- *Needle-in-a-Haystack*: Synthetic retrieval tasks hiding a fact in a 100K-token document; modern models achieve near-perfect recall.
 
   **Instruction following and alignment benchmarks**:
-  - *MT-Bench* (Zheng et al., 2023): Multi-turn dialogue evaluation by GPT-4 as judge; industry standard for comparing instruction-tuned models.
-  - *Chatbot Arena / LMSYS*: Human preference voting between anonymised model pairs; produces Elo rankings of deployed models.
-  - *IFEval* (Zhou et al., 2023): Instruction following evaluation with verifiable constraints.
+
+- *MT-Bench* (Zheng et al., 2023): Multi-turn dialogue evaluation by GPT-4 as judge; industry standard for comparing instruction-tuned models.
+- *Chatbot Arena / LMSYS*: Human preference voting between anonymised model pairs; produces Elo rankings of deployed models.
+- *IFEval* (Zhou et al., 2023): Instruction following evaluation with verifiable constraints.
 
   ## Formal Algorithm and Training Protocol
 
@@ -234,8 +239,8 @@ Causal language modelling is a self-supervised pre-training objective in which a
   **Forward pass**: For input tokens (x₁, …, x_{T-1}):
   1. Embed: hᵢ⁰ = E[xᵢ] + pos(i) where E is the token embedding matrix and pos(i) is the positional encoding.
   2. For each layer l = 1, …, L:
-     a. Masked multi-head self-attention: hᵢˡ = hᵢˡ⁻¹ + MHA(hˡ⁻¹, mask)
-     b. Feed-forward: hᵢˡ = hᵢˡ + FFN(LayerNorm(hᵢˡ))
+   a. Masked multi-head self-attention: hᵢˡ = hᵢˡ⁻¹ + MHA(hˡ⁻¹, mask)
+   b. Feed-forward: hᵢˡ = hᵢˡ + FFN(LayerNorm(hᵢˡ))
   3. Language model head: logits = W_lm · LayerNorm(h_T^L), producing a distribution over |V| tokens.
 
   **Loss**: L(θ) = −(1/(T−1)) ∑_{i=1}^{T-1} log P(xᵢ₊₁ | x₁,…,xᵢ; θ)
@@ -405,5 +410,5 @@ Causal language modelling is a self-supervised pre-training objective in which a
   27. Wei, J., et al. (2022). Emergent Abilities of Large Language Models. *Transactions on Machine Learning Research*. https://arxiv.org/abs/2206.07682
   28. Su, J., et al. (2023). RoFormer: Enhanced Transformer with Rotary Position Embedding. *Neurocomputing*, 568. https://arxiv.org/abs/2104.09864
 
-- ### Provenance
+### Provenance
 

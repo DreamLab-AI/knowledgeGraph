@@ -1,99 +1,101 @@
-
 An execution model in which operations are initiated without blocking the calling thread; completion is signalled via callbacks, promises, futures, or events, enabling high-throughput concurrent processing particularly suited to I/O-bound workloads and distributed system communication.
 
-- ### In Plain Terms
-  - A way of working where you set a task going and carry on with other things rather than standing idle until it finishes — like putting the kettle on and getting on with breakfast instead of watching it boil. The system tells you when each task is done, so many can be under way at once.
+### In Plain Terms
 
-- ### Semantic Classification
+- A way of working where you set a task going and carry on with other things rather than standing idle until it finishes — like putting the kettle on and getting on with breakfast instead of watching it boil. The system tells you when each task is done, so many can be under way at once.
 
-- ### Content
+### Semantic Classification
 
-  ### SKOS Conceptual Structure
+### Content
 
-  ## Execution Patterns
+### SKOS Conceptual Structure
 
-  ### Callback Pattern
-  ```
-  Caller → [Initiate Operation with Callback] → Continue Other Work
-                                              ↓
-                                    [Operation Completes]
-                                              ↓
-                                    [Callback Invoked]
-  ```
+## Execution Patterns
 
-  ### Promise/Future Pattern
-  ```
-  Caller → [Initiate] → Receive Promise → Continue Work
-                                       ↓
-                              [Promise.then(result)]
-  ```
+### Callback Pattern
+```
+Caller → [Initiate Operation with Callback] → Continue Other Work
+                                            ↓
+                                  [Operation Completes]
+                                            ↓
+                                  [Callback Invoked]
+```
 
-  ### Event-Driven Pattern
-  ```
-  Component A → [Emit Event] → Event Bus → [Subscribers Notified] → Actions
-            ↓
-      Continue Processing
-  ```
+### Promise/Future Pattern
+```
+Caller → [Initiate] → Receive Promise → Continue Work
+                                     ↓
+                            [Promise.then(result)]
+```
 
-  ### Message Queue Pattern
-  ```
-  Producer → [Enqueue Message] → Continue
-                              ↓
-                        Message Queue
-                              ↓
-                    Consumer → [Process Message]
-  ```
+### Event-Driven Pattern
+```
+Component A → [Emit Event] → Event Bus → [Subscribers Notified] → Actions
+          ↓
+    Continue Processing
+```
 
-  ## Implementation Considerations
+### Message Queue Pattern
+```
+Producer → [Enqueue Message] → Continue
+                            ↓
+                      Message Queue
+                            ↓
+                  Consumer → [Process Message]
+```
 
-  ### Completion Notification Mechanisms
+## Implementation Considerations
 
-  **Callbacks:**
-  ```javascript
-  fetchData(url, (error, result) => {
-  if (error) handleError(error);
-  else processResult(result);
-  });
-  ```
+### Completion Notification Mechanisms
 
-  **Promises (JavaScript/TypeScript):**
-  ```javascript
-  fetchData(url)
-  .then(result => processResult(result))
-  .catch(error => handleError(error));
-  ```
+**Callbacks:**
+```javascript
+fetchData(url, (error, result) => {
+if (error) handleError(error);
+else processResult(result);
+});
+```
 
-  **Async/Await:**
-  ```javascript
-  async function processData() {
-  try {
-    const result = await fetchData(url);
-    processResult(result);
-  } catch (error) {
-    handleError(error);
-  }
-  }
-  ```
+**Promises (JavaScript/TypeScript):**
+```javascript
+fetchData(url)
+.then(result => processResult(result))
+.catch(error => handleError(error));
+```
 
-  **Event Listeners:**
-  ```javascript
-  emitter.on('dataReady', (data) => {
-  processResult(data);
-  });
-  ```
+**Async/Await:**
+```javascript
+async function processData() {
+try {
+  const result = await fetchData(url);
+  processResult(result);
+} catch (error) {
+  handleError(error);
+}
+}
+```
 
-  ### Performance Implications
-  **Advantages:**
-  - Higher throughput under load
-  - Better resource utilization
-  - Improved scalability
-  - Reduced thread blocking
+**Event Listeners:**
+```javascript
+emitter.on('dataReady', (data) => {
+processResult(data);
+});
+```
+
+### Performance Implications
+**Advantages:**
+
+- Higher throughput under load
+- Better resource utilization
+- Improved scalability
+- Reduced thread blocking
 
   **Disadvantages:**
-  - More complex error handling
-  - Harder to debug
-  - Callback hell / pyramid of doom
-  - Memory overhead for pending operations
+
+- More complex error handling
+- Harder to debug
+- Callback hell / pyramid of doom
+- Memory overhead for pending operations
 
   ### When to Use
   1. **I/O-Bound Operations**: File, network, database access
@@ -117,28 +119,28 @@ An execution model in which operations are initiated without blocking the callin
   type: StreamProcessing
   operation: "Process Temperature Sensor Stream"
   flow:
-    - initiation:
-        timestamp: "2025-11-24T16:00:00.000Z"
-        source: TemperatureSensorArray
-        streamConfig:
-          batchSize: 100
-          windowDuration: PT10S
-    - processing:
-        type: asynchronous
-        handler: TemperatureAnomalyDetector
-        notificationMethod: event
-    - events:
-        - timestamp: "2025-11-24T16:00:10.000Z"
-          type: AnomalyDetected
-          payload:
-            sensorId: temp_42
-            value: 95.3
-            threshold: 85.0
-        - timestamp: "2025-11-24T16:00:25.000Z"
-          type: BatchProcessed
-          payload:
-            recordsProcessed: 1000
-            anomaliesFound: 3
+  - initiation:
+      timestamp: "2025-11-24T16:00:00.000Z"
+      source: TemperatureSensorArray
+      streamConfig:
+        batchSize: 100
+        windowDuration: PT10S
+  - processing:
+      type: asynchronous
+      handler: TemperatureAnomalyDetector
+      notificationMethod: event
+  - events:
+      - timestamp: "2025-11-24T16:00:10.000Z"
+        type: AnomalyDetected
+        payload:
+          sensorId: temp_42
+          value: 95.3
+          threshold: 85.0
+      - timestamp: "2025-11-24T16:00:25.000Z"
+        type: BatchProcessed
+        payload:
+          recordsProcessed: 1000
+          anomaliesFound: 3
   callerStatus: non-blocked
   concurrentOperations: 50
   ```
@@ -151,29 +153,29 @@ An execution model in which operations are initiated without blocking the callin
   agent: CoordinatorAgent_A
   operation: "Delegate Tasks to Worker Agents"
   flow:
-    - initiation:
-        timestamp: "2025-11-24T16:05:00.000Z"
-        taskId: task_567
-        targetAgents:
-          - WorkerAgent_1
-          - WorkerAgent_2
-          - WorkerAgent_3
-    - messageQueue:
-        protocol: FIPA-ACL
-        deliveryGuarantee: at-least-once
-    - callbacks:
-        - agentId: WorkerAgent_1
-          timestamp: "2025-11-24T16:05:15.000Z"
-          status: completed
-          result: "Subtask A done"
-        - agentId: WorkerAgent_2
-          timestamp: "2025-11-24T16:05:18.000Z"
-          status: completed
-          result: "Subtask B done"
-        - agentId: WorkerAgent_3
-          timestamp: "2025-11-24T16:05:22.000Z"
-          status: completed
-          result: "Subtask C done"
+  - initiation:
+      timestamp: "2025-11-24T16:05:00.000Z"
+      taskId: task_567
+      targetAgents:
+        - WorkerAgent_1
+        - WorkerAgent_2
+        - WorkerAgent_3
+  - messageQueue:
+      protocol: FIPA-ACL
+      deliveryGuarantee: at-least-once
+  - callbacks:
+      - agentId: WorkerAgent_1
+        timestamp: "2025-11-24T16:05:15.000Z"
+        status: completed
+        result: "Subtask A done"
+      - agentId: WorkerAgent_2
+        timestamp: "2025-11-24T16:05:18.000Z"
+        status: completed
+        result: "Subtask B done"
+      - agentId: WorkerAgent_3
+        timestamp: "2025-11-24T16:05:22.000Z"
+        status: completed
+        result: "Subtask C done"
   coordinatorStatus: non-blocked
   otherTasksProcessed: 15
   ```
@@ -185,31 +187,31 @@ An execution model in which operations are initiated without blocking the callin
   type: BackgroundJobProcessing
   operation: "Analyze Security Logs for Threats"
   flow:
-    - jobSubmission:
-        timestamp: "2025-11-24T16:10:00.000Z"
-        logSource: WebServerAccessLogs
-        timeRange:
-          start: "2025-11-24T00:00:00.000Z"
-          end: "2025-11-24T23:59:59.000Z"
-        analysisType: ThreatDetection
-    - jobQueue:
-        queueName: SecurityAnalysisQueue
-        priority: high
-        estimatedDuration: PT30M
-    - progressNotifications:
-        - timestamp: "2025-11-24T16:15:00.000Z"
-          progress: 20%
-          recordsProcessed: 50000
-        - timestamp: "2025-11-24T16:20:00.000Z"
-          progress: 50%
-          recordsProcessed: 125000
-        - timestamp: "2025-11-24T16:30:00.000Z"
-          progress: 100%
-          recordsProcessed: 250000
-    - completion:
-        timestamp: "2025-11-24T16:30:00.000Z"
-        threatsDetected: 12
-        reportUrl: "/reports/security_analysis_20251124.pdf"
+  - jobSubmission:
+      timestamp: "2025-11-24T16:10:00.000Z"
+      logSource: WebServerAccessLogs
+      timeRange:
+        start: "2025-11-24T00:00:00.000Z"
+        end: "2025-11-24T23:59:59.000Z"
+      analysisType: ThreatDetection
+  - jobQueue:
+      queueName: SecurityAnalysisQueue
+      priority: high
+      estimatedDuration: PT30M
+  - progressNotifications:
+      - timestamp: "2025-11-24T16:15:00.000Z"
+        progress: 20%
+        recordsProcessed: 50000
+      - timestamp: "2025-11-24T16:20:00.000Z"
+        progress: 50%
+        recordsProcessed: 125000
+      - timestamp: "2025-11-24T16:30:00.000Z"
+        progress: 100%
+        recordsProcessed: 250000
+  - completion:
+      timestamp: "2025-11-24T16:30:00.000Z"
+      threatsDetected: 12
+      reportUrl: "/reports/security_analysis_20251124.pdf"
   submitterStatus: non-blocked
   notificationMethod: webhook
   ```
@@ -224,8 +226,8 @@ An execution model in which operations are initiated without blocking the callin
   SELECT ?execution ?initiationTime ?completionTime ?duration
   WHERE {
   ?execution a dt:AsynchronousExecution ;
-    dt:initiatedAt ?initiationTime ;
-    dt:completedAt ?completionTime .
+  dt:initiatedAt ?initiationTime ;
+  dt:completedAt ?completionTime .
 
   BIND(?completionTime - ?initiationTime AS ?duration)
 
@@ -241,7 +243,7 @@ An execution model in which operations are initiated without blocking the callin
   SELECT ?operationType (COUNT(?exec) AS ?total) (SUM(?failed) AS ?failures)
   WHERE {
   ?exec a dt:AsynchronousExecution ;
-    rdf:type ?operationType .
+  rdf:type ?operationType .
 
   BIND(IF(EXISTS{?exec dt:completesWith ?error . ?error a dt:Error}, 1, 0) AS ?failed)
   }
@@ -251,16 +253,18 @@ An execution model in which operations are initiated without blocking the callin
   ## Related Standards & Frameworks
 
   ### Programming Models
-  - **Async/Await**: JavaScript, C#, Python, Rust
-  - **Promises/Futures**: JavaScript Promise, Java CompletableFuture
-  - **Reactive Programming**: RxJS, Project Reactor, Akka Streams
-  - **Actor Model**: Akka, Orleans, Erlang/Elixir
+
+- **Async/Await**: JavaScript, C#, Python, Rust
+- **Promises/Futures**: JavaScript Promise, Java CompletableFuture
+- **Reactive Programming**: RxJS, Project Reactor, Akka Streams
+- **Actor Model**: Akka, Orleans, Erlang/Elixir
 
   ### Technologies
-  - **Message Queues**: RabbitMQ, Apache Kafka, Amazon SQS
-  - **Event Streaming**: Apache Kafka, Apache Pulsar, NATS
-  - **Async I/O**: Node.js, Python asyncio, Java NIO
-  - **Async APIs**: GraphQL Subscriptions, WebSockets, Server-Sent Events
+
+- **Message Queues**: RabbitMQ, Apache Kafka, Amazon SQS
+- **Event Streaming**: Apache Kafka, Apache Pulsar, NATS
+- **Async I/O**: Node.js, Python asyncio, Java NIO
+- **Async APIs**: GraphQL Subscriptions, WebSockets, Server-Sent Events
 
   ## Best Practices
 
@@ -272,11 +276,12 @@ An execution model in which operations are initiated without blocking the callin
   5. **Observability**: Track pending, completed, and failed async operations
 
   ### Anti-Patterns to Avoid
-  - **Callback Hell**: Deeply nested callbacks
-  - **Unhandled Promise Rejections**: Missing error handlers
-  - **Memory Leaks**: Forgotten event listeners or callbacks
-  - **Unbounded Concurrency**: Too many concurrent operations
-  - **Lost Context**: Forgetting execution context in callbacks
+
+- **Callback Hell**: Deeply nested callbacks
+- **Unhandled Promise Rejections**: Missing error handlers
+- **Memory Leaks**: Forgotten event listeners or callbacks
+- **Unbounded Concurrency**: Too many concurrent operations
+- **Lost Context**: Forgetting execution context in callbacks
 
   ## Performance Optimization
 
@@ -288,30 +293,34 @@ An execution model in which operations are initiated without blocking the callin
   5. **Circuit Breakers**: Fail fast on repeated async failures
 
   ### Monitoring Metrics
-  - **Pending Operations**: Count of in-flight async tasks
-  - **Completion Rate**: Operations completed per second
-  - **Average Latency**: Time from initiation to completion
-  - **Failure Rate**: Percentage of async operations failing
-  - **Queue Depth**: Backlog of pending work
+
+- **Pending Operations**: Count of in-flight async tasks
+- **Completion Rate**: Operations completed per second
+- **Average Latency**: Time from initiation to completion
+- **Failure Rate**: Percentage of async operations failing
+- **Queue Depth**: Backlog of pending work
 
   #### References
   ### Academic Literature
-  - Lea, D. (1999). "Concurrent Programming in Java"
-  - Boner, J., et al. (2014). "Reactive Manifesto"
+
+- Lea, D. (1999). "Concurrent Programming in Java"
+- Boner, J., et al. (2014). "Reactive Manifesto"
 
   ### Technical Resources
-  - MDN Web Docs: Asynchronous JavaScript
-  - Microsoft: Async/Await Best Practices
+
+- MDN Web Docs: Asynchronous JavaScript
+- Microsoft: Async/Await Best Practices
 
   ## Maintenance Notes
-  - **Last Updated**: 2025-11-24
-  - **Review Cycle**: Quarterly
-  - **Stakeholders**: System Architects, Performance Engineers
-  - **Change Log**: Initial template creation
+
+- **Last Updated**: 2025-11-24
+- **Review Cycle**: Quarterly
+- **Stakeholders**: System Architects, Performance Engineers
+- **Change Log**: Initial template creation
 
   ---
 
   **Tags**: #temporal-concept #execution-model #asynchronous #non-blocking #concurrency #reactive #cross-domain #DT-1005
 
-- ### Provenance
+### Provenance
 

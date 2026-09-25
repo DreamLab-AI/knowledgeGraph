@@ -1,25 +1,25 @@
-
 An agent skill is a packaged, self-contained unit of procedural knowledge — a named bundle of instructions, and optionally scripts and reference resources — that an agent loads into its context on demand when a task matches the skill's trigger, and unloads afterwards. Rather than baking every capability into the base system prompt, a skill lets specialised know-how (how to run a deployment, audit prose, drive a browser) live as a discoverable, versioned artifact that is progressively disclosed only when relevant, keeping the working context small while giving the agent deep competence in whatever domain the current task demands.
 
-- ### In Plain Terms
-  - A skill is a folder of instructions (and sometimes helper scripts) that an agent picks up only when it is actually doing that kind of task, so it can be an expert on demand without carrying every manual around all the time.
+### In Plain Terms
 
-- ### Semantic Classification
+- A skill is a folder of instructions (and sometimes helper scripts) that an agent picks up only when it is actually doing that kind of task, so it can be an expert on demand without carrying every manual around all the time.
 
-- ### Content
+### Semantic Classification
 
-  ## Definition
+### Content
 
-  An **Agent Skill** is a modular, on-demand capability package for a language-model agent. It generalises the idea of a reusable prompt into a richer artifact: a named unit that carries a description of when it applies, a body of procedural instructions, and often bundled scripts, templates, or reference files. The defining behaviour is progressive disclosure — the agent is aware that the skill exists (usually via a short one-line description) but only pulls its full contents into context when the current task matches, and releases that context when done.
+## Definition
 
-  This design solves a concrete pressure in agent systems: the base system prompt cannot hold detailed instructions for every task the agent might face without becoming bloated, slow, and diluted. By externalising specialised know-how into skills, the always-on context stays lean while an effectively unbounded library of competencies remains available. A skill for running deployments, one for auditing prose style, and one for driving a browser can all coexist, each invisible until its trigger fires.
+An **Agent Skill** is a modular, on-demand capability package for a language-model agent. It generalises the idea of a reusable prompt into a richer artifact: a named unit that carries a description of when it applies, a body of procedural instructions, and often bundled scripts, templates, or reference files. The defining behaviour is progressive disclosure — the agent is aware that the skill exists (usually via a short one-line description) but only pulls its full contents into context when the current task matches, and releases that context when done.
 
-  ## Anatomy of a Skill
+This design solves a concrete pressure in agent systems: the base system prompt cannot hold detailed instructions for every task the agent might face without becoming bloated, slow, and diluted. By externalising specialised know-how into skills, the always-on context stays lean while an effectively unbounded library of competencies remains available. A skill for running deployments, one for auditing prose style, and one for driving a browser can all coexist, each invisible until its trigger fires.
 
-  - **Trigger / description.** A concise statement of what the skill is for, used to decide whether to load it. Precise triggers are what make routing to the right skill reliable.
-  - **Instructions.** The core procedural content: the steps, conventions, and cautions for doing the task well.
-  - **Bundled resources.** Optional scripts the agent can execute, reference documents it can read on demand, and templates it can fill — so a skill can carry executable capability, not just prose.
-  - **Versioning.** Because a skill is a discrete artifact, it can be edited, reviewed, and versioned independently of the agent that uses it.
+## Anatomy of a Skill
+
+- **Trigger / description.** A concise statement of what the skill is for, used to decide whether to load it. Precise triggers are what make routing to the right skill reliable.
+- **Instructions.** The core procedural content: the steps, conventions, and cautions for doing the task well.
+- **Bundled resources.** Optional scripts the agent can execute, reference documents it can read on demand, and templates it can fill — so a skill can carry executable capability, not just prose.
+- **Versioning.** Because a skill is a discrete artifact, it can be edited, reviewed, and versioned independently of the agent that uses it.
 
   ## Relationship to Neighbouring Concepts
 

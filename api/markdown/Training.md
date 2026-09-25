@@ -1,44 +1,43 @@
-
 Training is the supervised or self-supervised process of iteratively adjusting the parameters of a machine learning model to minimise a loss function over a labelled or unlabelled dataset. It encompasses forward passes, backpropagation, gradient descent optimisation, and regularisation techniques such as dropout and weight decay. The output of training is a fitted model whose learned weights encode patterns from the training data, ready for inference on unseen inputs.
 
-- ### Semantic Classification
+### Semantic Classification
 
-- ### Content
-  - **Training** is the process of using a training dataset to cause a model to be created or updated. Training involves iterative adjustment of model parameters to minimise error or maximise performance on the training task.
+### Content
+
+- **Training** is the process of using a training dataset to cause a model to be created or updated. Training involves iterative adjustment of model parameters to minimise error or maximise performance on the training task.
   ## Academic Context
-
-  - Training is a structured, goal-oriented process designed to build specific skills or knowledge for defined purposes, distinct from broader, self-directed learning which emphasises critical thinking and adaptability[1].
-  - It is typically time-bound and practical, focusing on improving performance in particular roles or tasks, with progress assessed through feedback and evaluation.
-  - The academic foundations of training draw from educational psychology, instructional design, and organisational behaviour, emphasising measurable outcomes and skill acquisition.
+- Training is a structured, goal-oriented process designed to build specific skills or knowledge for defined purposes, distinct from broader, self-directed learning which emphasises critical thinking and adaptability[1].
+- It is typically time-bound and practical, focusing on improving performance in particular roles or tasks, with progress assessed through feedback and evaluation.
+- The academic foundations of training draw from educational psychology, instructional design, and organisational behaviour, emphasising measurable outcomes and skill acquisition.
 
   ## Current Landscape (2025)
 
-  - Industry adoption of training is increasingly skills-focused rather than role-focused, reflecting the need for agility in fast-evolving job markets[3].
-  - Notable organisations globally and within the UK are integrating AI-powered personalised training platforms and cloud-based remote learning solutions to enhance accessibility and effectiveness[2][5][7].
-  - In the UK, major cities such as Manchester, Leeds, Newcastle, and Sheffield have seen growth in corporate training hubs and digital learning providers, supporting regional workforce development.
-  - Technical capabilities now include AI-driven simulations, competency-based assessments, and data analytics to track skill development and training impact[5][7].
-  - Limitations remain around ensuring equitable access, maintaining engagement in remote formats, and addressing ethical concerns related to AI use in training[4].
-  - Standards and frameworks increasingly emphasise skills validation, continuous learning cultures, and integration of AI ethics policies within training programmes[4][7].
+- Industry adoption of training is increasingly skills-focused rather than role-focused, reflecting the need for agility in fast-evolving job markets[3].
+- Notable organisations globally and within the UK are integrating AI-powered personalised training platforms and cloud-based remote learning solutions to enhance accessibility and effectiveness[2][5][7].
+- In the UK, major cities such as Manchester, Leeds, Newcastle, and Sheffield have seen growth in corporate training hubs and digital learning providers, supporting regional workforce development.
+- Technical capabilities now include AI-driven simulations, competency-based assessments, and data analytics to track skill development and training impact[5][7].
+- Limitations remain around ensuring equitable access, maintaining engagement in remote formats, and addressing ethical concerns related to AI use in training[4].
+- Standards and frameworks increasingly emphasise skills validation, continuous learning cultures, and integration of AI ethics policies within training programmes[4][7].
 
   ## Research & Literature
 
-  - Key academic sources include:
-  - Salas, E., Tannenbaum, S. I., Kraiger, K., & Smith-Jentsch, K. A. (2012). The Science of Training and Development in Organizations: What Matters in Practice. *Psychological Science in the Public Interest*, 13(2), 74–101. DOI:10.1177/1529100612436661
-  - Noe, R. A. (2017). *Employee Training and Development* (7th ed.). McGraw-Hill Education.
-  - Brown, K. G., & Sitzmann, T. (2011). Training and Employee Development for Improved Performance. *Annual Review of Organizational Psychology and Organizational Behavior*, 1, 451–474. DOI:10.1146/annurev-orgpsych-031413-091326
-  - Ongoing research focuses on AI integration in training, ethical AI use, skills validation methods, and the impact of remote learning on engagement and outcomes[4][7].
+- Key academic sources include:
+- Salas, E., Tannenbaum, S. I., Kraiger, K., & Smith-Jentsch, K. A. (2012). The Science of Training and Development in Organizations: What Matters in Practice. *Psychological Science in the Public Interest*, 13(2), 74–101. DOI:10.1177/1529100612436661
+- Noe, R. A. (2017). *Employee Training and Development* (7th ed.). McGraw-Hill Education.
+- Brown, K. G., & Sitzmann, T. (2011). Training and Employee Development for Improved Performance. *Annual Review of Organizational Psychology and Organizational Behavior*, 1, 451–474. DOI:10.1146/annurev-orgpsych-031413-091326
+- Ongoing research focuses on AI integration in training, ethical AI use, skills validation methods, and the impact of remote learning on engagement and outcomes[4][7].
 
   ## UK Context
 
-  - The UK has been proactive in adopting skills-based training approaches, with government initiatives supporting upskilling and reskilling to address projected skill shortages[3].
-  - North England cities such as Manchester and Leeds host innovation hubs that collaborate with universities and industry to develop advanced training technologies and programmes.
-  - Regional case studies include partnerships between local authorities and tech firms to deliver AI-enhanced training for manufacturing and digital sectors, notably in Sheffield and Newcastle.
+- The UK has been proactive in adopting skills-based training approaches, with government initiatives supporting upskilling and reskilling to address projected skill shortages[3].
+- North England cities such as Manchester and Leeds host innovation hubs that collaborate with universities and industry to develop advanced training technologies and programmes.
+- Regional case studies include partnerships between local authorities and tech firms to deliver AI-enhanced training for manufacturing and digital sectors, notably in Sheffield and Newcastle.
 
   ## Future Directions
 
-  - Emerging trends include further AI-driven personalisation, immersive virtual reality training, and continuous, just-in-time learning embedded in workflows[5][7].
-  - Anticipated challenges involve balancing automation with human-led training, ensuring data privacy, mitigating algorithmic bias, and maintaining workforce engagement in hybrid learning environments[4].
-  - Research priorities focus on ethical frameworks for AI in training, efficacy of blended learning models, and longitudinal impacts of skills-first training on career trajectories.
+- Emerging trends include further AI-driven personalisation, immersive virtual reality training, and continuous, just-in-time learning embedded in workflows[5][7].
+- Anticipated challenges involve balancing automation with human-led training, ensuring data privacy, mitigating algorithmic bias, and maintaining workforce engagement in hybrid learning environments[4].
+- Research priorities focus on ethical frameworks for AI in training, efficacy of blended learning models, and longitudinal impacts of skills-first training on career trajectories.
 
   ## References
 
@@ -52,13 +51,12 @@ Training is the supervised or self-supervised process of iteratively adjusting t
   8. Noe, R. A. (2017). *Employee Training and Development* (7th ed.). McGraw-Hill Education.  
   9. Brown, K. G., & Sitzmann, T. (2011). Training and Employee Development for Improved Performance. *Annual Review of Organizational Psychology and Organizational Behavior*, 1, 451–474. https://doi.org/10.1146/annurev-orgpsych-031413-091326
 
-
   ## Metadata
 
-  - **Last Updated**: 2025-11-11
-  - **Review Status**: Comprehensive editorial review
-  - **Verification**: Academic sources verified
-  - **Regional Context**: UK/North England where applicable
+- **Last Updated**: 2025-11-11
+- **Review Status**: Comprehensive editorial review
+- **Verification**: Academic sources verified
+- **Regional Context**: UK/North England where applicable
 
-- ### Provenance
+### Provenance
 

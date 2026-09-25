@@ -1,20 +1,19 @@
-
 WebRTC (Web Real-Time Communication) is a W3C and IETF co-standardised open framework that enables peer-to-peer exchange of audio, video, and arbitrary data between web browsers and native applications using a JavaScript API (getUserMedia, RTCPeerConnection, RTCDataChannel), combining
 
-- ### Semantic Classification
+### Semantic Classification
 
-- ### Content
+### Content
 
-  WebRTC originated from a joint initiative between Google, Mozilla, and Opera in 2011, driven by Google's acquisition of Global IP Solutions (GIPS) and its codec intellectual property (VP8, iSAC). Google open-sourced the libwebrtc implementation and worked with the W3C and IETF to standardise the browser API and underlying protocols respectively. The W3C WebRTC 1.0 specification reached Recommendation status in January 2021, by which point WebRTC had already powered billions of video calls through Google Meet, Zoom's browser client, and hundreds of other platforms.
+WebRTC originated from a joint initiative between Google, Mozilla, and Opera in 2011, driven by Google's acquisition of Global IP Solutions (GIPS) and its codec intellectual property (VP8, iSAC). Google open-sourced the libwebrtc implementation and worked with the W3C and IETF to standardise the browser API and underlying protocols respectively. The W3C WebRTC 1.0 specification reached Recommendation status in January 2021, by which point WebRTC had already powered billions of video calls through Google Meet, Zoom's browser client, and hundreds of other platforms.
 
-  #### Key Characteristics
+#### Key Characteristics
 
-  - **Peer-to-Peer Architecture**: WebRTC establishes direct connections between peers wherever possible, routing media without traversing central servers. This reduces latency (typically 40–80 ms peer-to-peer), lowers server infrastructure costs, and provides privacy by keeping media off third-party servers.
-  - **Three Core APIs**: `getUserMedia` captures camera and microphone streams; `RTCPeerConnection` negotiates and maintains encrypted peer connections for media; `RTCDataChannel` provides a bidirectional, ordered or unordered, reliable or unreliable byte-stream channel for arbitrary data.
-  - **ICE/STUN/TURN NAT Traversal**: [[ICE Protocol|Interactive Connectivity Establishment]] tests multiple connection candidates (direct, server-reflexive via STUN, relayed via TURN) and selects the optimal path. Approximately 60 % of WebRTC connections use STUN-discovered paths; 8 % require TURN relay as fallback.
-  - **Mandatory Encryption**: DTLS (Datagram TLS) for key exchange and SRTP (Secure Real-Time Protocol) for media encryption are mandatory in all WebRTC implementations. There is no plaintext WebRTC mode, ensuring all peer communication is encrypted in transit.
-  - **Adaptive Bitrate**: The REMB (Receiver Estimated Maximum Bitrate) and Transport-CC feedback mechanisms allow senders to adapt video quality and bitrate dynamically based on network conditions, preventing buffer bloat and maintaining call quality under constrained network paths.
-  - **Insertable Streams / Encoded Transform**: A newer API allowing JavaScript (or [[WebAssembly]] modules) to intercept and transform encoded media frames before encryption and transmission, enabling end-to-end encrypted group calls, custom codecs, real-time AI processing (noise suppression, background replacement), and watermarking.
+- **Peer-to-Peer Architecture**: WebRTC establishes direct connections between peers wherever possible, routing media without traversing central servers. This reduces latency (typically 40–80 ms peer-to-peer), lowers server infrastructure costs, and provides privacy by keeping media off third-party servers.
+- **Three Core APIs**: `getUserMedia` captures camera and microphone streams; `RTCPeerConnection` negotiates and maintains encrypted peer connections for media; `RTCDataChannel` provides a bidirectional, ordered or unordered, reliable or unreliable byte-stream channel for arbitrary data.
+- **ICE/STUN/TURN NAT Traversal**: [[ICE Protocol|Interactive Connectivity Establishment]] tests multiple connection candidates (direct, server-reflexive via STUN, relayed via TURN) and selects the optimal path. Approximately 60 % of WebRTC connections use STUN-discovered paths; 8 % require TURN relay as fallback.
+- **Mandatory Encryption**: DTLS (Datagram TLS) for key exchange and SRTP (Secure Real-Time Protocol) for media encryption are mandatory in all WebRTC implementations. There is no plaintext WebRTC mode, ensuring all peer communication is encrypted in transit.
+- **Adaptive Bitrate**: The REMB (Receiver Estimated Maximum Bitrate) and Transport-CC feedback mechanisms allow senders to adapt video quality and bitrate dynamically based on network conditions, preventing buffer bloat and maintaining call quality under constrained network paths.
+- **Insertable Streams / Encoded Transform**: A newer API allowing JavaScript (or [[WebAssembly]] modules) to intercept and transform encoded media frames before encryption and transmission, enabling end-to-end encrypted group calls, custom codecs, real-time AI processing (noise suppression, background replacement), and watermarking.
 
   #### How It Works
 
@@ -32,11 +31,11 @@ WebRTC (Web Real-Time Communication) is a W3C and IETF co-standardised open fram
 
   #### Standards and References
 
-  - W3C. (2021). *WebRTC 1.0: Real-Time Communication Between Browsers*. W3C Recommendation. https://www.w3.org/TR/webrtc/
-  - IETF RTCWEB Working Group. (2014). *Overview: Real-Time Protocols for Browser-Based Applications (RFC 7478)*. https://tools.ietf.org/html/rfc7478
-  - Loreto, S., & Romano, S. P. (2014). *Real-Time Communication with WebRTC: Peer-to-Peer in the Browser*. O'Reilly Media.
-  - Fette, I., & Melnikov, A. (2011). *The WebSocket Protocol (RFC 6455)*. IETF.
-  - Rescorla, E. (2012). *WebRTC Security Architecture (draft-ietf-rtcweb-security-arch)*. IETF RTCWEB.
+- W3C. (2021). *WebRTC 1.0: Real-Time Communication Between Browsers*. W3C Recommendation. https://www.w3.org/TR/webrtc/
+- IETF RTCWEB Working Group. (2014). *Overview: Real-Time Protocols for Browser-Based Applications (RFC 7478)*. https://tools.ietf.org/html/rfc7478
+- Loreto, S., & Romano, S. P. (2014). *Real-Time Communication with WebRTC: Peer-to-Peer in the Browser*. O'Reilly Media.
+- Fette, I., & Melnikov, A. (2011). *The WebSocket Protocol (RFC 6455)*. IETF.
+- Rescorla, E. (2012). *WebRTC Security Architecture (draft-ietf-rtcweb-security-arch)*. IETF RTCWEB.
 
-- ### Provenance
+### Provenance
 

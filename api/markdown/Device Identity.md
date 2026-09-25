@@ -1,3 +1,2 @@
-
 Device identity is a unique, verifiable credential bound to a physical device that allows it to authenticate itself to a network, service, or other devices independently of any human user. It is typically established through a hardware root of trust, such as a TPM or secure element, that stores a cryptographic key pair generated or provisioned at manufacture. In IoT and sensor network deployments, device identity is foundational to zero-trust access control, allowing gateways and platforms to verify which physical device is sending data before admitting it to the network. Without it, spoofed or cloned devices can inject false data or gain unauthorised network access.
 

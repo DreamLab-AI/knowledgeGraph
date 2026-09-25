@@ -1,18 +1,23 @@
-
 Witness data is the portion of a Bitcoin transaction that contains the signatures and scripts proving authorisation to spend inputs, separated from the core transaction body by Segregated Witness. Moving this data into a distinct structure fixes transaction malleability and allows witness bytes to be discounted when computing block weight. Witness data is also the field where inscriptions such as Ordinals embed arbitrary content.
 
-- ### Overview
-  - By segregating signature data, Segregated Witness restructured how transactions are committed and weighted. Witness bytes are counted at a discount toward the block weight limit, effectively raising throughput, and the witness commitment is carried in a separate Merkle structure.
-- ### Mechanisms
-  - Separation of signatures from the transaction body
-  - Witness discount applied to block weight accounting
-  - Elimination of third-party transaction malleability
-  - A dedicated witness commitment within the block
-  - Use as a container for Taproot scripts and Ordinals inscriptions
-- ### Applications
-  - Higher effective block capacity on Bitcoin
-  - Malleability-free construction of layer-two channels
-  - Taproot script-path spending
-  - Embedding inscriptions and Ordinals content
-- ### Provenance
+### Overview
+
+- By segregating signature data, Segregated Witness restructured how transactions are committed and weighted. Witness bytes are counted at a discount toward the block weight limit, effectively raising throughput, and the witness commitment is carried in a separate Merkle structure.
+
+### Mechanisms
+
+- Separation of signatures from the transaction body
+- Witness discount applied to block weight accounting
+- Elimination of third-party transaction malleability
+- A dedicated witness commitment within the block
+- Use as a container for Taproot scripts and Ordinals inscriptions
+
+### Applications
+
+- Higher effective block capacity on Bitcoin
+- Malleability-free construction of layer-two channels
+- Taproot script-path spending
+- Embedding inscriptions and Ordinals content
+
+### Provenance
 

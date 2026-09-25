@@ -1,3 +1,2 @@
-
 A linear projection is a matrix multiplication that maps an input vector from one vector space into another, typically changing its dimensionality while preserving linear structure. In neural architectures it is implemented as a fully connected layer without a non-linear activation, learning a weight matrix (and optional bias) applied uniformly across positions. It is the mechanism by which transformer attention derives query, key and value vectors, and by which patch embedding maps flattened image patches into a model's embedding space.
 

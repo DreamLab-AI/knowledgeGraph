@@ -1,3 +1,2 @@
-
 Game tree search is a family of algorithms that explore the tree of possible future game states branching from the current position, evaluating outcomes to choose the move that optimises a player's expected result against an adversary. Classical approaches such as minimax and alpha-beta pruning traverse the tree exhaustively or with heuristic bounds, while Monte Carlo tree search samples promising branches statistically to scale to games with very large branching factors. It is a foundational technique in adversarial game-playing AI, from classical board games to modern reinforcement-learning agents.
 

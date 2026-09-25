@@ -1,10 +1,10 @@
-
 Collection of reusable services exposed via APIs for identity, assets, physics, and analytics that enable application functionality and interoperability in virtual environments.
 
-- ### Semantic Classification
+### Semantic Classification
 
-- ### Content
-  Service Layer — content pending enrichment.
+### Content
 
-- ### Provenance
+Service Layer — content pending enrichment.
+
+### Provenance
 

@@ -1,180 +1,186 @@
-
 Classifier-Free Guidance (CFG) is a conditional generation technique for diffusion models that steers the denoising trajectory towards a specified condition by computing a weighted extrapolation between a conditional score estimate and an unconditional score estimate produced by the same single model. Unlike classifier guidance, which requires a separately trained differentiable classifier, CFG trains one network jointly on conditional and unconditional objectives by randomly replacing conditioning inputs with a null embedding during training. At inference, the guided score is: score_guided = score_unconditional + w * (score_conditional - score_unconditional), where w is the guidance scale hyperparameter controlling the trade-off between sample diversity and condition alignment. CFG has become the dominant conditioning mechanism across text-to-image, text-to-video, and audio generation systems.
 
-- ### Semantic Classification
+### Semantic Classification
 
-- ### Content
-  ## Compositional Relationships (Components)
-    ```
-    SubClassOf(ai:ClassifierFreeGuidance
-      ObjectSomeValuesFrom(ai:hasPart ai:GuidanceScale))
-    SubClassOf(ai:ClassifierFreeGuidance
-      ObjectSomeValuesFrom(ai:hasPart ai:NullConditioning))
-    SubClassOf(ai:ClassifierFreeGuidance
-      ObjectSomeValuesFrom(ai:hasPart ai:ScoreFunction))
-    SubClassOf(ai:ClassifierFreeGuidance
-      ObjectSomeValuesFrom(ai:hasPart ai:NoiseSchedule))
-    SubClassOf(ai:ClassifierFreeGuidance
-      ObjectSomeValuesFrom(ai:hasPart ai:ConditionalScoreEstimate))
-    SubClassOf(ai:ClassifierFreeGuidance
-      ObjectSomeValuesFrom(ai:hasPart ai:UnconditionalScoreEstimate))
-    SubClassOf(ai:ClassifierFreeGuidance
-      ObjectSomeValuesFrom(ai:hasPart ai:NegativePrompting))
-    SubClassOf(ai:ClassifierFreeGuidance
-      ObjectSomeValuesFrom(ai:hasPart ai:GuidanceScoreExtrapolation))
-    ```
-  ## Dependency Relationships
-    ```
-    SubClassOf(ai:ClassifierFreeGuidance
-      ObjectSomeValuesFrom(ai:requires ai:DenoisingDiffusionProbabilisticModel))
-    SubClassOf(ai:ClassifierFreeGuidance
-      ObjectSomeValuesFrom(ai:requires ai:ConditioningSignal))
-    SubClassOf(ai:ClassifierFreeGuidance
-      ObjectSomeValuesFrom(ai:requires ai:ScoreBasedGenerativeModel))
-    SubClassOf(ai:ClassifierFreeGuidance
-      ObjectSomeValuesFrom(ai:requires ai:NoiseSchedule))
-    SubClassOf(ai:ClassifierFreeGuidance
-      ObjectSomeValuesFrom(ai:dependsOn ai:LatentDiffusion))
-    SubClassOf(ai:ClassifierFreeGuidance
-      ObjectSomeValuesFrom(ai:dependsOn ai:VariationalAutoencoder))
-    SubClassOf(ai:ClassifierFreeGuidance
-      ObjectSomeValuesFrom(ai:dependsOn ai:Dropout))
-    SubClassOf(ai:ClassifierFreeGuidance
-      ObjectSomeValuesFrom(ai:dependsOn ai:AttentionMechanism))
-    ```
-  ## Capability Relationships
-    ```
-    SubClassOf(ai:ClassifierFreeGuidance
-      ObjectSomeValuesFrom(ai:enables ai:TextToImage))
-    SubClassOf(ai:ClassifierFreeGuidance
-      ObjectSomeValuesFrom(ai:enables ai:TextToVideoGeneration))
-    SubClassOf(ai:ClassifierFreeGuidance
-      ObjectSomeValuesFrom(ai:enables ai:AudioGeneration))
-    SubClassOf(ai:ClassifierFreeGuidance
-      ObjectSomeValuesFrom(ai:enables ai:ImageGeneration))
-    SubClassOf(ai:ClassifierFreeGuidance
-      ObjectSomeValuesFrom(ai:enables ai:NegativePrompting))
-    SubClassOf(ai:ClassifierFreeGuidance
-      ObjectSomeValuesFrom(ai:enables ai:PromptEngineering))
-    SubClassOf(ai:ClassifierFreeGuidance
-      ObjectSomeValuesFrom(ai:supports ai:SpatialComputing))
-    SubClassOf(ai:ClassifierFreeGuidance
-      ObjectSomeValuesFrom(ai:supports ai:RewardModel))
-    ```
-  ## Implementation Relationships
-    ```
-    SubClassOf(ai:ClassifierFreeGuidance
-      ObjectSomeValuesFrom(ai:implements ai:ScoreBasedGenerativeModel))
-    SubClassOf(ai:ClassifierFreeGuidance
-      ObjectSomeValuesFrom(ai:implements ai:ConditionalGeneration))
-    SubClassOf(ai:ClassifierFreeGuidance
-      ObjectSomeValuesFrom(ai:uses ai:DiffusionModel))
-    SubClassOf(ai:ClassifierFreeGuidance
-      ObjectSomeValuesFrom(ai:uses ai:LatentDiffusion))
-    SubClassOf(ai:ClassifierFreeGuidance
-      ObjectSomeValuesFrom(ai:uses ai:CLIP))
-    SubClassOf(ai:ClassifierFreeGuidance
-      ObjectSomeValuesFrom(ai:uses ai:VariationalAutoencoder))
-    SubClassOf(ai:ClassifierFreeGuidance
-      ObjectSomeValuesFrom(ai:uses ai:AttentionMechanism))
-    ```
-  ## Reduction Relationships
-    ```
-    SubClassOf(ai:ClassifierFreeGuidance
-      ObjectSomeValuesFrom(ai:reducesTo ai:ConditionalSamplingMethod))
-    SubClassOf(ai:ClassifierFreeGuidance
-      ObjectSomeValuesFrom(ai:reducesTo ai:ScoreExtrapolation))
-    SubClassOf(ai:ClassifierFreeGuidance
-      ObjectSomeValuesFrom(ai:contrastsWith ai:ClassifierGuidance))
-    SubClassOf(ai:ClassifierFreeGuidance
-      ObjectSomeValuesFrom(ai:contrastsWith ai:UnconditionalGeneration))
-    SubClassOf(ai:ClassifierFreeGuidance
-      ObjectSomeValuesFrom(ai:contrastsWith ai:FlowMatching))
-    SubClassOf(ai:ClassifierFreeGuidance
-      ObjectSomeValuesFrom(ai:bridgesTo ai:ReinforcementLearningFromHumanFeedback))
-    SubClassOf(ai:ClassifierFreeGuidance
-      ObjectSomeValuesFrom(ai:bridgesTo ai:RewardModel))
-    SubClassOf(ai:ClassifierFreeGuidance
-      ObjectSomeValuesFrom(ai:relatedTo ai:DiffusionTransformer))
-    SubClassOf(ai:ClassifierFreeGuidance
-      ObjectSomeValuesFrom(ai:relatedTo ai:ControlNet))
-    SubClassOf(ai:ClassifierFreeGuidance
-      ObjectSomeValuesFrom(ai:relatedTo ai:StableDiffusion))
-    ```
+### Content
 
-  ## About
+## Compositional Relationships (Components)
+  ```
+  SubClassOf(ai:ClassifierFreeGuidance
+    ObjectSomeValuesFrom(ai:hasPart ai:GuidanceScale))
+  SubClassOf(ai:ClassifierFreeGuidance
+    ObjectSomeValuesFrom(ai:hasPart ai:NullConditioning))
+  SubClassOf(ai:ClassifierFreeGuidance
+    ObjectSomeValuesFrom(ai:hasPart ai:ScoreFunction))
+  SubClassOf(ai:ClassifierFreeGuidance
+    ObjectSomeValuesFrom(ai:hasPart ai:NoiseSchedule))
+  SubClassOf(ai:ClassifierFreeGuidance
+    ObjectSomeValuesFrom(ai:hasPart ai:ConditionalScoreEstimate))
+  SubClassOf(ai:ClassifierFreeGuidance
+    ObjectSomeValuesFrom(ai:hasPart ai:UnconditionalScoreEstimate))
+  SubClassOf(ai:ClassifierFreeGuidance
+    ObjectSomeValuesFrom(ai:hasPart ai:NegativePrompting))
+  SubClassOf(ai:ClassifierFreeGuidance
+    ObjectSomeValuesFrom(ai:hasPart ai:GuidanceScoreExtrapolation))
+  ```
+## Dependency Relationships
+  ```
+  SubClassOf(ai:ClassifierFreeGuidance
+    ObjectSomeValuesFrom(ai:requires ai:DenoisingDiffusionProbabilisticModel))
+  SubClassOf(ai:ClassifierFreeGuidance
+    ObjectSomeValuesFrom(ai:requires ai:ConditioningSignal))
+  SubClassOf(ai:ClassifierFreeGuidance
+    ObjectSomeValuesFrom(ai:requires ai:ScoreBasedGenerativeModel))
+  SubClassOf(ai:ClassifierFreeGuidance
+    ObjectSomeValuesFrom(ai:requires ai:NoiseSchedule))
+  SubClassOf(ai:ClassifierFreeGuidance
+    ObjectSomeValuesFrom(ai:dependsOn ai:LatentDiffusion))
+  SubClassOf(ai:ClassifierFreeGuidance
+    ObjectSomeValuesFrom(ai:dependsOn ai:VariationalAutoencoder))
+  SubClassOf(ai:ClassifierFreeGuidance
+    ObjectSomeValuesFrom(ai:dependsOn ai:Dropout))
+  SubClassOf(ai:ClassifierFreeGuidance
+    ObjectSomeValuesFrom(ai:dependsOn ai:AttentionMechanism))
+  ```
+## Capability Relationships
+  ```
+  SubClassOf(ai:ClassifierFreeGuidance
+    ObjectSomeValuesFrom(ai:enables ai:TextToImage))
+  SubClassOf(ai:ClassifierFreeGuidance
+    ObjectSomeValuesFrom(ai:enables ai:TextToVideoGeneration))
+  SubClassOf(ai:ClassifierFreeGuidance
+    ObjectSomeValuesFrom(ai:enables ai:AudioGeneration))
+  SubClassOf(ai:ClassifierFreeGuidance
+    ObjectSomeValuesFrom(ai:enables ai:ImageGeneration))
+  SubClassOf(ai:ClassifierFreeGuidance
+    ObjectSomeValuesFrom(ai:enables ai:NegativePrompting))
+  SubClassOf(ai:ClassifierFreeGuidance
+    ObjectSomeValuesFrom(ai:enables ai:PromptEngineering))
+  SubClassOf(ai:ClassifierFreeGuidance
+    ObjectSomeValuesFrom(ai:supports ai:SpatialComputing))
+  SubClassOf(ai:ClassifierFreeGuidance
+    ObjectSomeValuesFrom(ai:supports ai:RewardModel))
+  ```
+## Implementation Relationships
+  ```
+  SubClassOf(ai:ClassifierFreeGuidance
+    ObjectSomeValuesFrom(ai:implements ai:ScoreBasedGenerativeModel))
+  SubClassOf(ai:ClassifierFreeGuidance
+    ObjectSomeValuesFrom(ai:implements ai:ConditionalGeneration))
+  SubClassOf(ai:ClassifierFreeGuidance
+    ObjectSomeValuesFrom(ai:uses ai:DiffusionModel))
+  SubClassOf(ai:ClassifierFreeGuidance
+    ObjectSomeValuesFrom(ai:uses ai:LatentDiffusion))
+  SubClassOf(ai:ClassifierFreeGuidance
+    ObjectSomeValuesFrom(ai:uses ai:CLIP))
+  SubClassOf(ai:ClassifierFreeGuidance
+    ObjectSomeValuesFrom(ai:uses ai:VariationalAutoencoder))
+  SubClassOf(ai:ClassifierFreeGuidance
+    ObjectSomeValuesFrom(ai:uses ai:AttentionMechanism))
+  ```
+## Reduction Relationships
+  ```
+  SubClassOf(ai:ClassifierFreeGuidance
+    ObjectSomeValuesFrom(ai:reducesTo ai:ConditionalSamplingMethod))
+  SubClassOf(ai:ClassifierFreeGuidance
+    ObjectSomeValuesFrom(ai:reducesTo ai:ScoreExtrapolation))
+  SubClassOf(ai:ClassifierFreeGuidance
+    ObjectSomeValuesFrom(ai:contrastsWith ai:ClassifierGuidance))
+  SubClassOf(ai:ClassifierFreeGuidance
+    ObjectSomeValuesFrom(ai:contrastsWith ai:UnconditionalGeneration))
+  SubClassOf(ai:ClassifierFreeGuidance
+    ObjectSomeValuesFrom(ai:contrastsWith ai:FlowMatching))
+  SubClassOf(ai:ClassifierFreeGuidance
+    ObjectSomeValuesFrom(ai:bridgesTo ai:ReinforcementLearningFromHumanFeedback))
+  SubClassOf(ai:ClassifierFreeGuidance
+    ObjectSomeValuesFrom(ai:bridgesTo ai:RewardModel))
+  SubClassOf(ai:ClassifierFreeGuidance
+    ObjectSomeValuesFrom(ai:relatedTo ai:DiffusionTransformer))
+  SubClassOf(ai:ClassifierFreeGuidance
+    ObjectSomeValuesFrom(ai:relatedTo ai:ControlNet))
+  SubClassOf(ai:ClassifierFreeGuidance
+    ObjectSomeValuesFrom(ai:relatedTo ai:StableDiffusion))
+  ```
 
-  Classifier-Free Guidance was introduced in Jonathan Ho and Tim Salimans's NeurIPS 2021 Deep Generative Models Workshop paper "Classifier-Free Diffusion Guidance," circulated on arXiv (arXiv:2207.12598) in July 2022. The work responded to a practical limitation of [[Classifier Guidance]] (Dhariwal and Nichol, 2021), which required training a separate noise-corrupted image classifier alongside the generative model — a pipeline that was cumbersome to scale, prone to adversarial attacks on the classifier, and required separate training infrastructure for different conditioning modalities. Ho and Salimans observed that if the same [[Diffusion Model]] was trained jointly to produce both conditional predictions `p(x | c)` and unconditional predictions `p(x)` (achieved by randomly replacing the conditioning input `c` with a null embedding during training with probability `p ≈ 0.1–0.2`), then the difference between these two predictions at inference time was mathematically equivalent to the score gradient that a Bayesian classifier would provide — the key insight from [[Score-Based Generative Model]] theory that the log-likelihood gradient of a classifier equals the conditional score minus the unconditional score. By linearly extrapolating beyond the conditional prediction in the direction away from the unconditional prediction, the method could amplify conditioning adherence far beyond what standard conditional sampling achieves, without ever training an explicit classifier.
+## About
 
-  The timing of the paper's widespread adoption was perfect: it appeared just as [[Stable Diffusion]] (Rombach et al., CVPR 2022, released publicly August 2022 via CompVis and Stability AI) was becoming the first open-source latent diffusion model capable of high-quality text-to-image generation. Stable Diffusion embedded CFG as a first-class inference parameter — the `guidance_scale` argument, defaulting to 7.5 — exposed in every major inference library and user interface. This made CFG the technique most users first encountered when exploring generative image models, and its trade-off between "creativity" (low `w`) and "prompt adherence" (high `w`) became central to the vocabulary of [[Prompt Engineering]] practice. Within eighteen months of Stable Diffusion's release, virtually every competing text-to-image system — DALL-E 2, Imagen, Midjourney, DeepFloyd IF, Kandinsky, and their successors — had adopted CFG or a variant as their conditioning mechanism.
+Classifier-Free Guidance was introduced in Jonathan Ho and Tim Salimans's NeurIPS 2021 Deep Generative Models Workshop paper "Classifier-Free Diffusion Guidance," circulated on arXiv (arXiv:2207.12598) in July 2022. The work responded to a practical limitation of [[Classifier Guidance]] (Dhariwal and Nichol, 2021), which required training a separate noise-corrupted image classifier alongside the generative model — a pipeline that was cumbersome to scale, prone to adversarial attacks on the classifier, and required separate training infrastructure for different conditioning modalities. Ho and Salimans observed that if the same [[Diffusion Model]] was trained jointly to produce both conditional predictions `p(x | c)` and unconditional predictions `p(x)` (achieved by randomly replacing the conditioning input `c` with a null embedding during training with probability `p ≈ 0.1–0.2`), then the difference between these two predictions at inference time was mathematically equivalent to the score gradient that a Bayesian classifier would provide — the key insight from [[Score-Based Generative Model]] theory that the log-likelihood gradient of a classifier equals the conditional score minus the unconditional score. By linearly extrapolating beyond the conditional prediction in the direction away from the unconditional prediction, the method could amplify conditioning adherence far beyond what standard conditional sampling achieves, without ever training an explicit classifier.
 
-  The deeper theoretical significance of CFG lies in its connection to [[Stochastic Differential Equation]] (SDE) frameworks for generative modelling. Yang Song et al.'s "Score-Based Generative Modeling through Stochastic Differential Equations" (ICLR 2021) unified DDPMs and NCSN-type score matching models as discretisations of a continuous SDE, enabling analysis of the trajectories of both the forward noising process and the learned reverse denoising process. In this framework, CFG appears as a modification of the reverse SDE drift term: the classifier gradient that standard SMLD/DDPM-based [[Classifier Guidance]] would add to the drift is approximated by the conditional-unconditional score difference. CFG is therefore not merely a heuristic trick but a principled approximation within the SDE framework, which explains its empirical robustness across a wide range of architectures and conditioning modalities. The SDE perspective also clarifies the relationship between CFG and [[Energy-Based Model]]s: the guided score can be interpreted as the score of an energy function that combines the generative prior with the conditioning signal, placing CFG within the family of energy-based sampling methods. From a [[Bayesian Inference]] standpoint, CFG implicitly approximates the posterior `p(x | c)` by amplifying the ratio `p(c | x) / Z` beyond standard conditional sampling, with the guidance scale controlling the temperature of this posterior concentration. This [[Bayesian Inference]] interpretation connects CFG to a rich theoretical tradition in probabilistic inference and helps explain why CFG generalises well across diverse conditioning modalities — text, class labels, audio features, depth maps, and chemical structure descriptors — without modification to the core extrapolation formula.
+The timing of the paper's widespread adoption was perfect: it appeared just as [[Stable Diffusion]] (Rombach et al., CVPR 2022, released publicly August 2022 via CompVis and Stability AI) was becoming the first open-source latent diffusion model capable of high-quality text-to-image generation. Stable Diffusion embedded CFG as a first-class inference parameter — the `guidance_scale` argument, defaulting to 7.5 — exposed in every major inference library and user interface. This made CFG the technique most users first encountered when exploring generative image models, and its trade-off between "creativity" (low `w`) and "prompt adherence" (high `w`) became central to the vocabulary of [[Prompt Engineering]] practice. Within eighteen months of Stable Diffusion's release, virtually every competing text-to-image system — DALL-E 2, Imagen, Midjourney, DeepFloyd IF, Kandinsky, and their successors — had adopted CFG or a variant as their conditioning mechanism.
 
-  The connection between CFG and [[Reinforcement Learning from Human Feedback]] (RLHF) has become increasingly important as alignment research has extended from language models into [[Generative AI]] systems. In RLHF-diffusion frameworks, a [[Reward Model]] trained on human aesthetic preference scores provides gradient signals that can be mixed with the standard CFG direction at inference time, enabling real-time alignment to human preferences without retraining the base generative model. Techniques such as DPO-Diffusion and AlignProp reformulate [[Reward Model]] gradients as CFG-compatible guidance vectors, while [[Reinforcement Learning from Human Feedback]] training pipelines (DDPO, DPOK) fine-tune the model weights themselves using reward signal backpropagated through the diffusion trajectory. This intersection between CFG conditioning methodology and alignment research represents one of the most active frontiers in [[Generative AI]] safety, with direct implications for [[AI Governance]] frameworks requiring that [[Text-to-Image]] and [[Text-to-Video Generation]] systems adhere to content policies and creative constraints expressed in natural language.
+The deeper theoretical significance of CFG lies in its connection to [[Stochastic Differential Equation]] (SDE) frameworks for generative modelling. Yang Song et al.'s "Score-Based Generative Modeling through Stochastic Differential Equations" (ICLR 2021) unified DDPMs and NCSN-type score matching models as discretisations of a continuous SDE, enabling analysis of the trajectories of both the forward noising process and the learned reverse denoising process. In this framework, CFG appears as a modification of the reverse SDE drift term: the classifier gradient that standard SMLD/DDPM-based [[Classifier Guidance]] would add to the drift is approximated by the conditional-unconditional score difference. CFG is therefore not merely a heuristic trick but a principled approximation within the SDE framework, which explains its empirical robustness across a wide range of architectures and conditioning modalities. The SDE perspective also clarifies the relationship between CFG and [[Energy-Based Model]]s: the guided score can be interpreted as the score of an energy function that combines the generative prior with the conditioning signal, placing CFG within the family of energy-based sampling methods. From a [[Bayesian Inference]] standpoint, CFG implicitly approximates the posterior `p(x | c)` by amplifying the ratio `p(c | x) / Z` beyond standard conditional sampling, with the guidance scale controlling the temperature of this posterior concentration. This [[Bayesian Inference]] interpretation connects CFG to a rich theoretical tradition in probabilistic inference and helps explain why CFG generalises well across diverse conditioning modalities — text, class labels, audio features, depth maps, and chemical structure descriptors — without modification to the core extrapolation formula.
 
-  The [[Content Authentication]] implications of CFG are also significant. The Coalition for Content Provenance and Authenticity (C2PA) standard — increasingly embedded in camera firmware, media platforms, and AI generation APIs — requires that guidance scale and conditioning parameters be logged in cryptographically signed manifests attached to AI-generated media. As of 2026, Adobe Firefly, Microsoft Designer, and major open-source [[Stable Diffusion]] distributions have begun embedding C2PA manifests in generated images, with guidance scale, model version, and conditioning prompt included as auditable metadata. This [[Content Authentication]] infrastructure is directly relevant to the UK AI Office's Code of Practice on AI Content, which specifies disclosure requirements for AI-generated images and videos distributed at scale.
+The connection between CFG and [[Reinforcement Learning from Human Feedback]] (RLHF) has become increasingly important as alignment research has extended from language models into [[Generative AI]] systems. In RLHF-diffusion frameworks, a [[Reward Model]] trained on human aesthetic preference scores provides gradient signals that can be mixed with the standard CFG direction at inference time, enabling real-time alignment to human preferences without retraining the base generative model. Techniques such as DPO-Diffusion and AlignProp reformulate [[Reward Model]] gradients as CFG-compatible guidance vectors, while [[Reinforcement Learning from Human Feedback]] training pipelines (DDPO, DPOK) fine-tune the model weights themselves using reward signal backpropagated through the diffusion trajectory. This intersection between CFG conditioning methodology and alignment research represents one of the most active frontiers in [[Generative AI]] safety, with direct implications for [[AI Governance]] frameworks requiring that [[Text-to-Image]] and [[Text-to-Video Generation]] systems adhere to content policies and creative constraints expressed in natural language.
 
-  ## Formal Algorithm
+The [[Content Authentication]] implications of CFG are also significant. The Coalition for Content Provenance and Authenticity (C2PA) standard — increasingly embedded in camera firmware, media platforms, and AI generation APIs — requires that guidance scale and conditioning parameters be logged in cryptographically signed manifests attached to AI-generated media. As of 2026, Adobe Firefly, Microsoft Designer, and major open-source [[Stable Diffusion]] distributions have begun embedding C2PA manifests in generated images, with guidance scale, model version, and conditioning prompt included as auditable metadata. This [[Content Authentication]] infrastructure is directly relevant to the UK AI Office's Code of Practice on AI Content, which specifies disclosure requirements for AI-generated images and videos distributed at scale.
 
-  **Training procedure:**
+## Formal Algorithm
 
-  Given a dataset of condition-data pairs `(c, x)`, train a single score network `ε_θ(x_t, t, c)` with the following modifications:
-  1. With probability `p_uncond` (typically 0.10–0.20), replace `c` with a fixed null embedding `∅` (zero vector or a learnable `[UNCOND]` token).
-  2. Minimise the standard DDPM objective: `L = E[||ε - ε_θ(x_t, t, c)||²]` over both conditional and null-conditioned samples.
-  3. The network thus learns `ε_θ(x_t, t, c)` ≈ conditional noise prediction, and `ε_θ(x_t, t, ∅)` ≈ unconditional noise prediction, from a single set of weights.
+**Training procedure:**
 
-  **Inference procedure:**
+Given a dataset of condition-data pairs `(c, x)`, train a single score network `ε_θ(x_t, t, c)` with the following modifications:
+1. With probability `p_uncond` (typically 0.10–0.20), replace `c` with a fixed null embedding `∅` (zero vector or a learnable `[UNCOND]` token).
+2. Minimise the standard DDPM objective: `L = E[||ε - ε_θ(x_t, t, c)||²]` over both conditional and null-conditioned samples.
+3. The network thus learns `ε_θ(x_t, t, c)` ≈ conditional noise prediction, and `ε_θ(x_t, t, ∅)` ≈ unconditional noise prediction, from a single set of weights.
 
-  At each denoising timestep `t`:
-  1. Compute `ε_uncond = ε_θ(x_t, t, ∅)` (unconditional forward pass).
-  2. Compute `ε_cond = ε_θ(x_t, t, c)` (conditional forward pass with prompt `c`).
-  3. Compute guided prediction: `ε_guided = ε_uncond + w × (ε_cond − ε_uncond)`.
-  4. Use `ε_guided` in place of the raw network prediction for the denoising update step.
+**Inference procedure:**
 
-  This requires two forward passes through the model per denoising step (or one forward pass with a batch of two inputs), making it computationally more expensive than unconditional generation by a factor of approximately 2×, but this overhead is negligible relative to the quality benefit.
+At each denoising timestep `t`:
+1. Compute `ε_uncond = ε_θ(x_t, t, ∅)` (unconditional forward pass).
+2. Compute `ε_cond = ε_θ(x_t, t, c)` (conditional forward pass with prompt `c`).
+3. Compute guided prediction: `ε_guided = ε_uncond + w × (ε_cond − ε_uncond)`.
+4. Use `ε_guided` in place of the raw network prediction for the denoising update step.
 
-  **Negative prompting extension:**
+This requires two forward passes through the model per denoising step (or one forward pass with a batch of two inputs), making it computationally more expensive than unconditional generation by a factor of approximately 2×, but this overhead is negligible relative to the quality benefit.
 
-  Replace the null embedding `∅` with an explicit negative condition `c_neg` (e.g. "blurry, low quality, watermark, deformed anatomy"):
-  `ε_guided = ε_θ(x_t, t, c_neg) + w × (ε_θ(x_t, t, c_pos) − ε_θ(x_t, t, c_neg))`
+**Negative prompting extension:**
 
-  This steers the generation away from attributes described by `c_neg` while amplifying attributes described by `c_pos`, enabling precise fine-grained control over negative space without retraining.
+Replace the null embedding `∅` with an explicit negative condition `c_neg` (e.g. "blurry, low quality, watermark, deformed anatomy"):
+`ε_guided = ε_θ(x_t, t, c_neg) + w × (ε_θ(x_t, t, c_pos) − ε_θ(x_t, t, c_neg))`
 
-  ## Components / Architecture
+This steers the generation away from attributes described by `c_neg` while amplifying attributes described by `c_pos`, enabling precise fine-grained control over negative space without retraining.
 
-  **Guidance Scale (`w`):**
-  - Controls the strength of condition amplification. Typical values: 5–12 for text-to-image; 3–7 for video generation (lower values preserve temporal coherence).
-  - Values above 15–20 typically cause over-saturation, colour artefacts, and reduction in sample diversity (mode collapse towards the high-probability region under the conditional model).
-  - Stable Diffusion defaults: `w = 7.5`; many community practitioners adjust per prompt complexity and style.
+## Components / Architecture
+
+**Guidance Scale (`w`):**
+
+- Controls the strength of condition amplification. Typical values: 5–12 for text-to-image; 3–7 for video generation (lower values preserve temporal coherence).
+- Values above 15–20 typically cause over-saturation, colour artefacts, and reduction in sample diversity (mode collapse towards the high-probability region under the conditional model).
+- Stable Diffusion defaults: `w = 7.5`; many community practitioners adjust per prompt complexity and style.
 
   **Null Conditioning Dropout:**
-  - Probability `p` of replacing `c` with `∅` at training time: typically 10–20%.
-  - Choice of null embedding matters: zero vector, a learnable padding token, or the embedding of an empty string all produce qualitatively similar but quantitatively different results.
-  - A too-high `p` reduces conditional generation quality; a too-low `p` leaves the unconditional prediction undertrained, weakening CFG effectiveness.
+
+- Probability `p` of replacing `c` with `∅` at training time: typically 10–20%.
+- Choice of null embedding matters: zero vector, a learnable padding token, or the embedding of an empty string all produce qualitatively similar but quantitatively different results.
+- A too-high `p` reduces conditional generation quality; a too-low `p` leaves the unconditional prediction undertrained, weakening CFG effectiveness.
 
   **Score Extrapolation:**
-  - Linear extrapolation in score space: the guided score moves beyond the conditional score in the direction away from the unconditional score.
-  - This is a form of score amplification: it concentrates the effective sampling distribution on the high-likelihood region under the conditional model.
-  - Geometrically, the extrapolation moves the sampling trajectory in the direction of increasing `log p(c | x)`, the log-posterior probability of the condition given the sample.
+
+- Linear extrapolation in score space: the guided score moves beyond the conditional score in the direction away from the unconditional score.
+- This is a form of score amplification: it concentrates the effective sampling distribution on the high-likelihood region under the conditional model.
+- Geometrically, the extrapolation moves the sampling trajectory in the direction of increasing `log p(c | x)`, the log-posterior probability of the condition given the sample.
 
   **Conditioning Encoder:**
-  - Text prompts are typically encoded by [[CLIP]] ViT-L/14 ([[Stable Diffusion]] 1.x), OpenCLIP ViT-G/14 (Stable Diffusion XL), or T5-XXL text encoder (Imagen, DeepFloyd IF). The resulting [[Text Embedding]] vector serves as the conditioning signal `c` injected into the [[Diffusion Model]] backbone via cross-attention.
-  - The choice of encoder critically determines what prompts the model can follow: [[CLIP]] excels at visual-semantic associations (trained via [[Self-Supervised Learning]] on image-text pairs); T5 excels at syntactic structure and compositional instructions.
-  - Cross-[[Attention Mechanism]] layers within the [[Diffusion Model]] denoising backbone ([[U-Net]] or [[Diffusion Transformer]]) inject the encoded [[Text Embedding]] at each resolution scale, making the conditioning signal available at all levels of the denoising hierarchy.
-  - In scientific applications — [[Protein Structure Prediction]], molecular property generation, climate model emulation — the [[Conditioning Signal]] is not a [[Text Embedding]] but rather a numerical feature vector encoding physical constraints; the CFG formula applies identically but guidance scales are calibrated to physical validity metrics rather than aesthetic preference scores.
-  - The [[Attention Mechanism]] cross-attention between conditioning tokens and spatial feature maps is the primary mechanism by which CFG's guided score estimate steers the denoising backbone; in [[Diffusion Transformer]] architectures this cross-attention is distributed across all transformer layers, enabling richer conditioning than [[U-Net]]'s resolution-scale injection.
+
+- Text prompts are typically encoded by [[CLIP]] ViT-L/14 ([[Stable Diffusion]] 1.x), OpenCLIP ViT-G/14 (Stable Diffusion XL), or T5-XXL text encoder (Imagen, DeepFloyd IF). The resulting [[Text Embedding]] vector serves as the conditioning signal `c` injected into the [[Diffusion Model]] backbone via cross-attention.
+- The choice of encoder critically determines what prompts the model can follow: [[CLIP]] excels at visual-semantic associations (trained via [[Self-Supervised Learning]] on image-text pairs); T5 excels at syntactic structure and compositional instructions.
+- Cross-[[Attention Mechanism]] layers within the [[Diffusion Model]] denoising backbone ([[U-Net]] or [[Diffusion Transformer]]) inject the encoded [[Text Embedding]] at each resolution scale, making the conditioning signal available at all levels of the denoising hierarchy.
+- In scientific applications — [[Protein Structure Prediction]], molecular property generation, climate model emulation — the [[Conditioning Signal]] is not a [[Text Embedding]] but rather a numerical feature vector encoding physical constraints; the CFG formula applies identically but guidance scales are calibrated to physical validity metrics rather than aesthetic preference scores.
+- The [[Attention Mechanism]] cross-attention between conditioning tokens and spatial feature maps is the primary mechanism by which CFG's guided score estimate steers the denoising backbone; in [[Diffusion Transformer]] architectures this cross-attention is distributed across all transformer layers, enabling richer conditioning than [[U-Net]]'s resolution-scale injection.
 
   **Latent Space Operation:**
-  - In [[Latent Diffusion]] architectures, CFG operates on the VAE latent code (typically 64×64×4 for 512×512 images) rather than on raw pixel tensors.
-  - The [[Variational Autoencoder]] encoder produces the latent representation; the decoder maps the denoised latent back to pixels.
-  - Decoupling diffusion from the pixel domain reduces memory and compute requirements substantially, making CFG viable on consumer hardware.
-  - The choice of [[Variational Autoencoder]] architecture critically affects CFG quality: higher-capacity VAEs (SD3's improved VAE, FLUX.1's 16-channel latent space) enable finer-grained latent representations that make CFG guidance more precise.
+
+- In [[Latent Diffusion]] architectures, CFG operates on the VAE latent code (typically 64×64×4 for 512×512 images) rather than on raw pixel tensors.
+- The [[Variational Autoencoder]] encoder produces the latent representation; the decoder maps the denoised latent back to pixels.
+- Decoupling diffusion from the pixel domain reduces memory and compute requirements substantially, making CFG viable on consumer hardware.
+- The choice of [[Variational Autoencoder]] architecture critically affects CFG quality: higher-capacity VAEs (SD3's improved VAE, FLUX.1's 16-channel latent space) enable finer-grained latent representations that make CFG guidance more precise.
 
   **Knowledge Distillation for CFG:**
-  - [[Knowledge Distillation]] techniques (consistency distillation, adversarial diffusion distillation, guidance distillation) compress the CFG-guided teacher model into a student that generates equivalent outputs in fewer steps or a single forward pass.
-  - Latent Consistency Models (LCM) distil the CFG-guided consistency trajectory into 2–4 step generation. LCM-LoRA adapts this to arbitrary base models via lightweight fine-tuning, enabling fast CFG-equivalent generation without full retraining.
-  - FLUX.1-schnell uses adversarial diffusion distillation trained on FLUX.1-dev (which is itself guidance-distilled from FLUX.1-pro), creating a two-stage distillation pipeline that compresses multi-step CFG generation into 1–4 steps at comparable quality.
-  - Guidance distillation (FLUX.1-dev approach) differs from standard consistency distillation: rather than distilling the denoising trajectory, it trains the model to internalise the CFG extrapolation formula, accepting a [[Guidance Scale]] input as a conditioning signal rather than requiring two forward passes.
+
+- [[Knowledge Distillation]] techniques (consistency distillation, adversarial diffusion distillation, guidance distillation) compress the CFG-guided teacher model into a student that generates equivalent outputs in fewer steps or a single forward pass.
+- Latent Consistency Models (LCM) distil the CFG-guided consistency trajectory into 2–4 step generation. LCM-LoRA adapts this to arbitrary base models via lightweight fine-tuning, enabling fast CFG-equivalent generation without full retraining.
+- FLUX.1-schnell uses adversarial diffusion distillation trained on FLUX.1-dev (which is itself guidance-distilled from FLUX.1-pro), creating a two-stage distillation pipeline that compresses multi-step CFG generation into 1–4 steps at comparable quality.
+- Guidance distillation (FLUX.1-dev approach) differs from standard consistency distillation: rather than distilling the denoising trajectory, it trains the model to internalise the CFG extrapolation formula, accepting a [[Guidance Scale]] input as a conditioning signal rather than requiring two forward passes.
 
   ## Major Variants and Extensions
 
@@ -342,5 +348,5 @@ Classifier-Free Guidance (CFG) is a conditional generation technique for diffusi
   26. Nichol, A., Dhariwal, P., Ramesh, A. et al. (2022). "GLIDE: Towards Photorealistic Image Generation and Editing with Text-Guided Diffusion Models." *ICML 2022.* arXiv:2112.10741. (GLIDE: early large-scale CFG-conditioned text-to-image model from OpenAI.)
   27. Wan2.1 Team (2025). "Wan: Open and Advanced Large-Scale Video Generative Models." Alibaba Research. arXiv:2503.20314. (Wan2.1 open video generation model with DiT backbone and CFG; first open-weight competitive text-to-video model.)
 
-- ### Provenance
+### Provenance
 

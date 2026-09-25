@@ -1,125 +1,130 @@
-
 Cross-modal conditioning is a generative modelling technique in which a model producing output in one sensory or representational modality is guided at inference time by a conditioning signal derived from a different modality, typically via cross-attention or adapter mechanisms that inject encoded representations of the conditioning input into the backbone network's intermediate layers. It is the foundational mechanism enabling text-to-image synthesis, text-to-audio generation, audio-driven video synthesis, depth-conditioned inpainting, and other heterogeneous generation tasks where the semantic intent is expressed in one modality and realised in another.
 
-- ### Semantic Classification
+### Semantic Classification
 
-- ### Content
-  ## Compositional Relationships (Components)
-      SubClassOf(ai:CrossModalConditioning
-        ObjectSomeValuesFrom(ai:hasPart ai:CrossAttention))
-      SubClassOf(ai:CrossModalConditioning
-        ObjectSomeValuesFrom(ai:hasPart ai:ModalitySpecificEncoder))
-      SubClassOf(ai:CrossModalConditioning
-        ObjectSomeValuesFrom(ai:hasPart ai:ClassifierFreeGuidance))
-      SubClassOf(ai:CrossModalConditioning
-        ObjectSomeValuesFrom(ai:hasPart ai:AdapterTuning))
-      SubClassOf(ai:CrossModalConditioning
-        ObjectSomeValuesFrom(ai:hasPart ai:ControlNet))
-      SubClassOf(ai:CrossModalConditioning
-        ObjectSomeValuesFrom(ai:hasPart ai:IPAdapter))
+### Content
 
-  ## Dependency Relationships
-      SubClassOf(ai:CrossModalConditioning
-        ObjectSomeValuesFrom(ai:requires ai:Embedding))
-      SubClassOf(ai:CrossModalConditioning
-        ObjectSomeValuesFrom(ai:requires ai:RepresentationLearning))
-      SubClassOf(ai:CrossModalConditioning
-        ObjectSomeValuesFrom(ai:requires ai:ContrastiveLearning))
-      SubClassOf(ai:CrossModalConditioning
-        ObjectSomeValuesFrom(ai:requires ai:LatentSpace))
-      SubClassOf(ai:CrossModalConditioning
-        ObjectSomeValuesFrom(ai:dependsOn ai:AttentionMechanism))
-      SubClassOf(ai:CrossModalConditioning
-        ObjectSomeValuesFrom(ai:dependsOn ai:TransformerArchitecture))
-      SubClassOf(ai:CrossModalConditioning
-        ObjectSomeValuesFrom(ai:dependsOn ai:UNet))
+## Compositional Relationships (Components)
+    SubClassOf(ai:CrossModalConditioning
+      ObjectSomeValuesFrom(ai:hasPart ai:CrossAttention))
+    SubClassOf(ai:CrossModalConditioning
+      ObjectSomeValuesFrom(ai:hasPart ai:ModalitySpecificEncoder))
+    SubClassOf(ai:CrossModalConditioning
+      ObjectSomeValuesFrom(ai:hasPart ai:ClassifierFreeGuidance))
+    SubClassOf(ai:CrossModalConditioning
+      ObjectSomeValuesFrom(ai:hasPart ai:AdapterTuning))
+    SubClassOf(ai:CrossModalConditioning
+      ObjectSomeValuesFrom(ai:hasPart ai:ControlNet))
+    SubClassOf(ai:CrossModalConditioning
+      ObjectSomeValuesFrom(ai:hasPart ai:IPAdapter))
 
-  ## Capability Relationships
-      SubClassOf(ai:CrossModalConditioning
-        ObjectSomeValuesFrom(ai:enables ai:TextToImage))
-      SubClassOf(ai:CrossModalConditioning
-        ObjectSomeValuesFrom(ai:enables ai:AudioSynthesis))
-      SubClassOf(ai:CrossModalConditioning
-        ObjectSomeValuesFrom(ai:enables ai:VideoGeneration))
-      SubClassOf(ai:CrossModalConditioning
-        ObjectSomeValuesFrom(ai:enables ai:ImageGeneration))
-      SubClassOf(ai:CrossModalConditioning
-        ObjectSomeValuesFrom(ai:enables ai:DrugDiscovery))
-      SubClassOf(ai:CrossModalConditioning
-        ObjectSomeValuesFrom(ai:enables ai:SyntheticData))
+## Dependency Relationships
+    SubClassOf(ai:CrossModalConditioning
+      ObjectSomeValuesFrom(ai:requires ai:Embedding))
+    SubClassOf(ai:CrossModalConditioning
+      ObjectSomeValuesFrom(ai:requires ai:RepresentationLearning))
+    SubClassOf(ai:CrossModalConditioning
+      ObjectSomeValuesFrom(ai:requires ai:ContrastiveLearning))
+    SubClassOf(ai:CrossModalConditioning
+      ObjectSomeValuesFrom(ai:requires ai:LatentSpace))
+    SubClassOf(ai:CrossModalConditioning
+      ObjectSomeValuesFrom(ai:dependsOn ai:AttentionMechanism))
+    SubClassOf(ai:CrossModalConditioning
+      ObjectSomeValuesFrom(ai:dependsOn ai:TransformerArchitecture))
+    SubClassOf(ai:CrossModalConditioning
+      ObjectSomeValuesFrom(ai:dependsOn ai:UNet))
 
-  ## Implementation Relationships
-      SubClassOf(ai:CrossModalConditioning
-        ObjectSomeValuesFrom(ai:implements ai:MultimodalLearning))
-      SubClassOf(ai:CrossModalConditioning
-        ObjectSomeValuesFrom(ai:implements ai:GenerativeAI))
-      SubClassOf(ai:CrossModalConditioning
-        ObjectSomeValuesFrom(ai:uses ai:CLIP))
-      SubClassOf(ai:CrossModalConditioning
-        ObjectSomeValuesFrom(ai:uses ai:VariationalAutoencoder))
-      SubClassOf(ai:CrossModalConditioning
-        ObjectSomeValuesFrom(ai:uses ai:LoRA))
+## Capability Relationships
+    SubClassOf(ai:CrossModalConditioning
+      ObjectSomeValuesFrom(ai:enables ai:TextToImage))
+    SubClassOf(ai:CrossModalConditioning
+      ObjectSomeValuesFrom(ai:enables ai:AudioSynthesis))
+    SubClassOf(ai:CrossModalConditioning
+      ObjectSomeValuesFrom(ai:enables ai:VideoGeneration))
+    SubClassOf(ai:CrossModalConditioning
+      ObjectSomeValuesFrom(ai:enables ai:ImageGeneration))
+    SubClassOf(ai:CrossModalConditioning
+      ObjectSomeValuesFrom(ai:enables ai:DrugDiscovery))
+    SubClassOf(ai:CrossModalConditioning
+      ObjectSomeValuesFrom(ai:enables ai:SyntheticData))
 
-  ## Reduction Relationships
-      SubClassOf(ai:CrossModalConditioning
-        ObjectSomeValuesFrom(ai:reducesTo ai:CrossAttention))
-      SubClassOf(ai:CrossModalConditioning
-        ObjectSomeValuesFrom(ai:reducesTo ai:ClassifierFreeGuidance))
-      SubClassOf(ai:CrossModalConditioning
-        ObjectSomeValuesFrom(ai:reducesTo ai:EmbeddingAlignment))
+## Implementation Relationships
+    SubClassOf(ai:CrossModalConditioning
+      ObjectSomeValuesFrom(ai:implements ai:MultimodalLearning))
+    SubClassOf(ai:CrossModalConditioning
+      ObjectSomeValuesFrom(ai:implements ai:GenerativeAI))
+    SubClassOf(ai:CrossModalConditioning
+      ObjectSomeValuesFrom(ai:uses ai:CLIP))
+    SubClassOf(ai:CrossModalConditioning
+      ObjectSomeValuesFrom(ai:uses ai:VariationalAutoencoder))
+    SubClassOf(ai:CrossModalConditioning
+      ObjectSomeValuesFrom(ai:uses ai:LoRA))
 
-  ## About
+## Reduction Relationships
+    SubClassOf(ai:CrossModalConditioning
+      ObjectSomeValuesFrom(ai:reducesTo ai:CrossAttention))
+    SubClassOf(ai:CrossModalConditioning
+      ObjectSomeValuesFrom(ai:reducesTo ai:ClassifierFreeGuidance))
+    SubClassOf(ai:CrossModalConditioning
+      ObjectSomeValuesFrom(ai:reducesTo ai:EmbeddingAlignment))
 
-  Cross-modal conditioning is the mechanism by which generative models — particularly diffusion models and autoregressive transformers — accept controlling information from a modality that differs from the one they generate. The canonical example is text-conditioned image synthesis: a text prompt is encoded into a sequence of token embeddings by a language model or CLIP text encoder, and those embeddings are then injected into a visual backbone via [[Cross Attention]] at every residual block or transformer layer. Each image patch or spatial position can attend to the full sequence of text tokens, allowing fine-grained semantic alignment between textual intent and spatial output. The dual-stream formulation, in which both modalities carry their own normalisation and projection pathways (as in the DiT and SD3 architectures of 2024), extends this bidirectionally so that text and image latents mutually condition each other during generation.
+## About
 
-  The theoretical underpinning is that conditioning is equivalent to specifying a conditional distribution p(x_output | c_condition) within the generative backbone. With [[Classifier-Free Guidance]], the model jointly learns the unconditional distribution p(x) and the conditioned distribution p(x | c) by randomly dropping conditioning signals during training. At inference, the score predictions from both paths are blended: score_guided = score_unconditional + w × (score_conditioned - score_unconditional), where w is the guidance scale. This allows continuous adjustment of adherence to the conditioning signal at the cost of diversity. High guidance scales improve prompt fidelity but can introduce over-saturation and mode collapse; dynamic guidance approaches introduced in 2024-2025 adaptively adjust w per semantic unit using cross-attention maps, achieving better fidelity without artefacts.
+Cross-modal conditioning is the mechanism by which generative models — particularly diffusion models and autoregressive transformers — accept controlling information from a modality that differs from the one they generate. The canonical example is text-conditioned image synthesis: a text prompt is encoded into a sequence of token embeddings by a language model or CLIP text encoder, and those embeddings are then injected into a visual backbone via [[Cross Attention]] at every residual block or transformer layer. Each image patch or spatial position can attend to the full sequence of text tokens, allowing fine-grained semantic alignment between textual intent and spatial output. The dual-stream formulation, in which both modalities carry their own normalisation and projection pathways (as in the DiT and SD3 architectures of 2024), extends this bidirectionally so that text and image latents mutually condition each other during generation.
 
-  Adapter-based conditioning variants have matured substantially since 2023. [[ControlNet]] (Zhang et al., 2023) introduces a trainable copy of the backbone encoder with zero-initialised convolutions so that spatial conditioning signals (depth maps, edge maps, human poses) can be injected without catastrophically interfering with the frozen generation backbone. [[IP-Adapter]] (Ye et al., 2023) routes image prompts through decoupled cross-attention heads alongside the text cross-attention, enabling style and content transfer from reference images. T2I-Adapter uses lightweight projection modules to incorporate structural conditions. Collectively, these adapter families realise cross-modal conditioning with parameter efficiency, keeping the frozen backbone's knowledge intact whilst introducing new conditioning channels through [[Fine-Tuning]] of only the adapter weights.
+The theoretical underpinning is that conditioning is equivalent to specifying a conditional distribution p(x_output | c_condition) within the generative backbone. With [[Classifier-Free Guidance]], the model jointly learns the unconditional distribution p(x) and the conditioned distribution p(x | c) by randomly dropping conditioning signals during training. At inference, the score predictions from both paths are blended: score_guided = score_unconditional + w × (score_conditioned - score_unconditional), where w is the guidance scale. This allows continuous adjustment of adherence to the conditioning signal at the cost of diversity. High guidance scales improve prompt fidelity but can introduce over-saturation and mode collapse; dynamic guidance approaches introduced in 2024-2025 adaptively adjust w per semantic unit using cross-attention maps, achieving better fidelity without artefacts.
 
-  ### Historical Development and Conceptual Lineage
+Adapter-based conditioning variants have matured substantially since 2023. [[ControlNet]] (Zhang et al., 2023) introduces a trainable copy of the backbone encoder with zero-initialised convolutions so that spatial conditioning signals (depth maps, edge maps, human poses) can be injected without catastrophically interfering with the frozen generation backbone. [[IP-Adapter]] (Ye et al., 2023) routes image prompts through decoupled cross-attention heads alongside the text cross-attention, enabling style and content transfer from reference images. T2I-Adapter uses lightweight projection modules to incorporate structural conditions. Collectively, these adapter families realise cross-modal conditioning with parameter efficiency, keeping the frozen backbone's knowledge intact whilst introducing new conditioning channels through [[Fine-Tuning]] of only the adapter weights.
 
-  The intellectual lineage of cross-modal conditioning passes through several distinct traditions. The earliest incarnation is the attention-based neural machine translation of Bahdanau et al. (2015), which demonstrated that a decoder generating words in a target language could selectively attend to encoded representations of a source-language sentence — a direct precedent for all subsequent cross-modal attention. This attention mechanism was generalised into the multi-head scaled dot-product form by Vaswani et al. (2017) in the Transformer, establishing the general-purpose computational primitive that would ultimately enable cross-modal conditioning at scale.
+### Historical Development and Conceptual Lineage
 
-  The second conceptual thread is multimodal representation alignment through contrastive learning. CLIP (Radford et al., 2021) established that image and text encoders trained jointly on 400 million image-text pairs via a contrastive objective produce embeddings that are geometrically aligned across modalities — a CLIP text embedding and the corresponding CLIP image embedding are closer in representation space than either is to embeddings of unrelated inputs. This geometric alignment is the prerequisite for using text embeddings as conditioning signals for image generation: without it, the text representation would carry no semantically relevant information for the visual backbone's cross-attention heads. ALIGN (Jia et al., 2021) demonstrated the same principle at 1.8 billion pairs, showing that data scale compounds the alignment quality. CLAP (Elizalde et al., 2022) extended the approach to audio-text alignment, enabling text-conditioned [[Audio Synthesis]].
+The intellectual lineage of cross-modal conditioning passes through several distinct traditions. The earliest incarnation is the attention-based neural machine translation of Bahdanau et al. (2015), which demonstrated that a decoder generating words in a target language could selectively attend to encoded representations of a source-language sentence — a direct precedent for all subsequent cross-modal attention. This attention mechanism was generalised into the multi-head scaled dot-product form by Vaswani et al. (2017) in the Transformer, establishing the general-purpose computational primitive that would ultimately enable cross-modal conditioning at scale.
 
-  The third thread is the diffusion model framework itself. Ho et al. (2020) demonstrated denoising diffusion probabilistic models as competitive generative models; Nichol and Dhariwal (2021) improved the noise schedule and added cross-attention-based conditioning. Rombach et al. (2022) combined all three threads — the Transformer cross-attention mechanism, CLIP alignment, and latent diffusion — to produce the Latent Diffusion Model that became [[Stable Diffusion]]: the first widely accessible, high-quality text-to-image system built on cross-modal conditioning.
+The second conceptual thread is multimodal representation alignment through contrastive learning. CLIP (Radford et al., 2021) established that image and text encoders trained jointly on 400 million image-text pairs via a contrastive objective produce embeddings that are geometrically aligned across modalities — a CLIP text embedding and the corresponding CLIP image embedding are closer in representation space than either is to embeddings of unrelated inputs. This geometric alignment is the prerequisite for using text embeddings as conditioning signals for image generation: without it, the text representation would carry no semantically relevant information for the visual backbone's cross-attention heads. ALIGN (Jia et al., 2021) demonstrated the same principle at 1.8 billion pairs, showing that data scale compounds the alignment quality. CLAP (Elizalde et al., 2022) extended the approach to audio-text alignment, enabling text-conditioned [[Audio Synthesis]].
 
-  The period 2022-2024 saw rapid systematic extension of this framework. Saharia et al. (2022) showed that using a frozen large language model (T5-XXL rather than CLIP) as the conditioning encoder substantially improved complex prompt comprehension, particularly for rare concepts and compositional reasoning. This finding established that the quality of the conditioning encoder — not just the conditioning injection mechanism — is a primary determinant of cross-modal conditioning effectiveness. The SDXL architecture (Podell et al., 2023) further demonstrated that multi-encoder conditioning (CLIP-L + CLIP-G, combined) outperforms single-encoder conditioning by exposing complementary aspects of text semantics to the cross-attention heads.
+The third thread is the diffusion model framework itself. Ho et al. (2020) demonstrated denoising diffusion probabilistic models as competitive generative models; Nichol and Dhariwal (2021) improved the noise schedule and added cross-attention-based conditioning. Rombach et al. (2022) combined all three threads — the Transformer cross-attention mechanism, CLIP alignment, and latent diffusion — to produce the Latent Diffusion Model that became [[Stable Diffusion]]: the first widely accessible, high-quality text-to-image system built on cross-modal conditioning.
 
-  ### Challenges and Open Problems
+The period 2022-2024 saw rapid systematic extension of this framework. Saharia et al. (2022) showed that using a frozen large language model (T5-XXL rather than CLIP) as the conditioning encoder substantially improved complex prompt comprehension, particularly for rare concepts and compositional reasoning. This finding established that the quality of the conditioning encoder — not just the conditioning injection mechanism — is a primary determinant of cross-modal conditioning effectiveness. The SDXL architecture (Podell et al., 2023) further demonstrated that multi-encoder conditioning (CLIP-L + CLIP-G, combined) outperforms single-encoder conditioning by exposing complementary aspects of text semantics to the cross-attention heads.
 
-  Cross-modal conditioning faces several well-characterised challenges that remain active research areas. **Prompt faithfulness** — ensuring that all semantic content of a complex conditioning prompt is accurately reflected in the output — degrades for compositional prompts involving multiple objects, attributes, and spatial relationships. The "two dogs, one red, one blue" failure mode (where attributes are not correctly bound to their objects) is a canonical benchmark. Attention manipulation techniques (Prompt-to-Prompt, Attend-and-Excite) attempt to mitigate this by amplifying attention weights for tokens corresponding to under-expressed concepts, but compositional faithfulness at high complexity remains unsolved.
+### Challenges and Open Problems
 
-  **Conditioning scale calibration** presents a related challenge: the guidance scale w creates a fundamental fidelity-diversity trade-off, and the optimal value varies substantially across prompt types, subject matter, and output style. Adaptive guidance methods (2024) that compute per-region or per-token guidance weights address this partially but add inference-time complexity. **Modality interference** — where conditioning signals from multiple adapters (text + spatial map + style image) interact destructively rather than complementarily — is managed through adapter scale tuning but lacks a principled resolution.
+Cross-modal conditioning faces several well-characterised challenges that remain active research areas. **Prompt faithfulness** — ensuring that all semantic content of a complex conditioning prompt is accurately reflected in the output — degrades for compositional prompts involving multiple objects, attributes, and spatial relationships. The "two dogs, one red, one blue" failure mode (where attributes are not correctly bound to their objects) is a canonical benchmark. Attention manipulation techniques (Prompt-to-Prompt, Attend-and-Excite) attempt to mitigate this by amplifying attention weights for tokens corresponding to under-expressed concepts, but compositional faithfulness at high complexity remains unsolved.
 
-  **Training data biases** propagate directly through conditioning: if the conditioning encoder was trained on biased data, its representations will encode those biases, and they will be expressed in the conditioned outputs. The CLIP text encoder reflects documented biases in internet image-text pairs, particularly around gender, ethnicity, and cultural representations. This has motivated research into de-biasing of conditioning embeddings and controlled evaluation of cross-modal conditioning fidelity across demographic axes.
+**Conditioning scale calibration** presents a related challenge: the guidance scale w creates a fundamental fidelity-diversity trade-off, and the optimal value varies substantially across prompt types, subject matter, and output style. Adaptive guidance methods (2024) that compute per-region or per-token guidance weights address this partially but add inference-time complexity. **Modality interference** — where conditioning signals from multiple adapters (text + spatial map + style image) interact destructively rather than complementarily — is managed through adapter scale tuning but lacks a principled resolution.
 
-  **Conditioning encoder copyright and licensing** has become practically significant: CLIP embeddings of a copyrighted artwork can be used to condition generation of similar-looking outputs, raising questions about whether conditioning on copyrighted content constitutes derivative work creation. This remains a legally unresolved question in multiple jurisdictions as of 2026, and has implications for the commercial deployment of cross-modal conditioning systems.
+**Training data biases** propagate directly through conditioning: if the conditioning encoder was trained on biased data, its representations will encode those biases, and they will be expressed in the conditioned outputs. The CLIP text encoder reflects documented biases in internet image-text pairs, particularly around gender, ethnicity, and cultural representations. This has motivated research into de-biasing of conditioning embeddings and controlled evaluation of cross-modal conditioning fidelity across demographic axes.
 
-  ## Components / Architecture
+**Conditioning encoder copyright and licensing** has become practically significant: CLIP embeddings of a copyrighted artwork can be used to condition generation of similar-looking outputs, raising questions about whether conditioning on copyrighted content constitutes derivative work creation. This remains a legally unresolved question in multiple jurisdictions as of 2026, and has implications for the commercial deployment of cross-modal conditioning systems.
 
-  **Conditioning Encoder**
-  - A [[Modality-Specific Encoder]] (CLIP ViT, CLIP text transformer, whisper audio encoder, depth network) encodes the raw conditioning signal into a dense sequence of [[Embedding]] vectors of fixed dimensionality.
-  - Pre-trained encoders from large contrastive models ([[CLIP]], ALIGN, ImageBind) align modality-specific representations into shared or compatible spaces, enabling semantic coherence between heterogeneous conditioning signals.
+## Components / Architecture
+
+**Conditioning Encoder**
+
+- A [[Modality-Specific Encoder]] (CLIP ViT, CLIP text transformer, whisper audio encoder, depth network) encodes the raw conditioning signal into a dense sequence of [[Embedding]] vectors of fixed dimensionality.
+- Pre-trained encoders from large contrastive models ([[CLIP]], ALIGN, ImageBind) align modality-specific representations into shared or compatible spaces, enabling semantic coherence between heterogeneous conditioning signals.
 
   **Cross-Attention Injection**
-  - [[Cross Attention]] layers are inserted at every resolution block of the [[U-Net]] or at every transformer block of the DiT backbone.
-  - Keys (K) and Values (V) are computed from the conditioning embedding sequence; Queries (Q) are computed from spatial or sequence representations of the generation target.
-  - Scaled dot-product attention weights determine which conditioning tokens each output position attends to, enabling spatially heterogeneous adherence to the conditioning signal.
+
+- [[Cross Attention]] layers are inserted at every resolution block of the [[U-Net]] or at every transformer block of the DiT backbone.
+- Keys (K) and Values (V) are computed from the conditioning embedding sequence; Queries (Q) are computed from spatial or sequence representations of the generation target.
+- Scaled dot-product attention weights determine which conditioning tokens each output position attends to, enabling spatially heterogeneous adherence to the conditioning signal.
 
   **Classifier-Free Guidance Module**
-  - Jointly trains the model with conditioning dropped to a null vector at rate p_uncond (typically 10-20%).
-  - At inference, blends unconditional and conditioned score predictions with guidance scale w (typically 3.5-12.0 for text-to-image).
-  - Semantic-aware dynamic CFG (2024) segments the latent into semantic regions via attention maps and applies region-specific guidance weights.
+
+- Jointly trains the model with conditioning dropped to a null vector at rate p_uncond (typically 10-20%).
+- At inference, blends unconditional and conditioned score predictions with guidance scale w (typically 3.5-12.0 for text-to-image).
+- Semantic-aware dynamic CFG (2024) segments the latent into semantic regions via attention maps and applies region-specific guidance weights.
 
   **Adapter Conditioning Pathways**
-  - [[ControlNet]]: copies of frozen encoder blocks with zero convolutions receive spatial conditioning maps and add their residuals to the main backbone.
-  - [[IP-Adapter]]: decoupled cross-attention heads — one for text, one for image — avoid interference between conditioning streams.
-  - T2I-Adapter, [[Adapter Tuning]]: lightweight MLP or convolutional adapters that project external conditioning signals into the backbone's intermediate feature space.
-  - [[LoRA]]-based conditioning adapters update low-rank residual weight matrices (r=4-64) to personalise the conditioning response at minimal parameter cost.
+
+- [[ControlNet]]: copies of frozen encoder blocks with zero convolutions receive spatial conditioning maps and add their residuals to the main backbone.
+- [[IP-Adapter]]: decoupled cross-attention heads — one for text, one for image — avoid interference between conditioning streams.
+- T2I-Adapter, [[Adapter Tuning]]: lightweight MLP or convolutional adapters that project external conditioning signals into the backbone's intermediate feature space.
+- [[LoRA]]-based conditioning adapters update low-rank residual weight matrices (r=4-64) to personalise the conditioning response at minimal parameter cost.
 
   **Latent Compression**
-  - Modern systems operate in the [[Latent Space]] of a [[Variational Autoencoder]] (SD, SDXL, SD3), performing cross-modal conditioning in the compressed latent domain rather than in pixel space, reducing computational requirements by a factor of 4-16×.
+
+- Modern systems operate in the [[Latent Space]] of a [[Variational Autoencoder]] (SD, SDXL, SD3), performing cross-modal conditioning in the compressed latent domain rather than in pixel space, reducing computational requirements by a factor of 4-16×.
 
   ## Formal Analysis
 
@@ -129,15 +134,16 @@ Cross-modal conditioning is a generative modelling technique in which a model pr
 
   The **cross-attention** mechanism within a transformer block of the denoising network is computed as:
 
-  ```
-  Attention(Q, K, V) = softmax(QK^T / √d_k) V
-  ```
+```
+Attention(Q, K, V) = softmax(QK^T / √d_k) V
+```
 
-  where:
-  - Q = W_Q · h, queries projected from the output latent hidden state h (shape: [spatial_tokens × d_k])
-  - K = W_K · c_embed, keys projected from the conditioning encoder output c_embed
-  - V = W_V · c_embed, values projected from the conditioning encoder output
-  - d_k is the key dimension (head dimension, typically 64-128)
+where:
+
+- Q = W_Q · h, queries projected from the output latent hidden state h (shape: [spatial_tokens × d_k])
+- K = W_K · c_embed, keys projected from the conditioning encoder output c_embed
+- V = W_V · c_embed, values projected from the conditioning encoder output
+- d_k is the key dimension (head dimension, typically 64-128)
 
   The conditioning encoder E_C maps raw conditioning input c ∈ C into the embedding sequence: c_embed = E_C(c) ∈ R^{L_c × d_model}, where L_c is the sequence length of the conditioning signal (e.g. 77 tokens for CLIP, up to 128 or 256 for T5-XXL in later models).
 
@@ -147,75 +153,77 @@ Cross-modal conditioning is a generative modelling technique in which a model pr
 
   The score function of the conditional distribution is:
 
-  ```
-  ∇_x log p(x | c) = ∇_x log p(x) + ∇_x log p(c | x)
-  ```
+```
+∇_x log p(x | c) = ∇_x log p(x) + ∇_x log p(c | x)
+```
 
-  Classifier-free guidance (CFG) estimates the guided score without an explicit classifier p(c | x):
+Classifier-free guidance (CFG) estimates the guided score without an explicit classifier p(c | x):
 
-  ```
-  ε_guided = ε_θ(x_t, t, ∅) + w · [ε_θ(x_t, t, c) - ε_θ(x_t, t, ∅)]
-  ```
+```
+ε_guided = ε_θ(x_t, t, ∅) + w · [ε_θ(x_t, t, c) - ε_θ(x_t, t, ∅)]
+```
 
-  where ε_θ(x_t, t, ∅) is the unconditional noise prediction (conditioning dropped to null vector ∅), w is the guidance scale, and ε_θ(x_t, t, c) is the conditioned prediction. This formulation enables a single neural network to implement both p(x) and p(x | c) through shared parameters with stochastic conditioning dropout at training time.
+where ε_θ(x_t, t, ∅) is the unconditional noise prediction (conditioning dropped to null vector ∅), w is the guidance scale, and ε_θ(x_t, t, c) is the conditioned prediction. This formulation enables a single neural network to implement both p(x) and p(x | c) through shared parameters with stochastic conditioning dropout at training time.
 
-  Dynamic, semantic-aware CFG (2024-2025) generalises this by computing guidance maps M_i for each semantic region i identified through cross-attention and self-attention map clustering:
+Dynamic, semantic-aware CFG (2024-2025) generalises this by computing guidance maps M_i for each semantic region i identified through cross-attention and self-attention map clustering:
 
-  ```
-  ε_guided(i) = ε_θ(x_t, t, ∅)(i) + w_i · [ε_θ(x_t, t, c)(i) - ε_θ(x_t, t, ∅)(i)]
-  ```
+```
+ε_guided(i) = ε_θ(x_t, t, ∅)(i) + w_i · [ε_θ(x_t, t, c)(i) - ε_θ(x_t, t, ∅)(i)]
+```
 
-  where w_i is a per-region guidance scale, achieving localised semantic adherence without over-saturation of non-salient regions.
+where w_i is a per-region guidance scale, achieving localised semantic adherence without over-saturation of non-salient regions.
 
-  ### Multi-Modal Diffusion Transformer (MM-DiT) Architecture
+### Multi-Modal Diffusion Transformer (MM-DiT) Architecture
 
-  The MM-DiT architecture (SD3, SD3.5) extends single-stream cross-attention conditioning into a bidirectional dual-stream formulation. Both the image token stream h_img and the text token stream h_txt maintain independent normalisation, MLPs, and self-attention, but share a joint cross-attention block where:
+The MM-DiT architecture (SD3, SD3.5) extends single-stream cross-attention conditioning into a bidirectional dual-stream formulation. Both the image token stream h_img and the text token stream h_txt maintain independent normalisation, MLPs, and self-attention, but share a joint cross-attention block where:
 
-  ```
-  h_img_attn = CrossAttn(Q=W_Q^img · h_img, K=W_K · concat(h_img, h_txt), V=W_V · concat(h_img, h_txt))
-  h_txt_attn = CrossAttn(Q=W_Q^txt · h_txt, K=W_K · concat(h_img, h_txt), V=W_V · concat(h_img, h_txt))
-  ```
+```
+h_img_attn = CrossAttn(Q=W_Q^img · h_img, K=W_K · concat(h_img, h_txt), V=W_V · concat(h_img, h_txt))
+h_txt_attn = CrossAttn(Q=W_Q^txt · h_txt, K=W_K · concat(h_img, h_txt), V=W_V · concat(h_img, h_txt))
+```
 
-  This enables text representations to be influenced by image context and vice versa throughout the denoising process, producing substantially improved compositional accuracy and text rendering within generated images compared to unidirectional conditioning.
+This enables text representations to be influenced by image context and vice versa throughout the denoising process, producing substantially improved compositional accuracy and text rendering within generated images compared to unidirectional conditioning.
 
-  ### Adapter Injection Mechanisms
+### Adapter Injection Mechanisms
 
-  The [[ControlNet]] conditioning architecture operates via residual addition:
+The [[ControlNet]] conditioning architecture operates via residual addition:
 
-  ```
-  h_out = h_frozen_backbone + ControlNet_block(h_frozen_backbone, c_spatial) · conditioning_scale
-  ```
+```
+h_out = h_frozen_backbone + ControlNet_block(h_frozen_backbone, c_spatial) · conditioning_scale
+```
 
-  where ControlNet_block is an initialised-zero trainable copy of the frozen backbone encoder block, taking both the backbone hidden state and the spatial conditioning signal c_spatial (e.g. depth map, edge map) as inputs. The zero initialisation ensures that at training onset, the backbone behaviour is unmodified (ControlNet residuals are exactly zero), preventing catastrophic forgetting.
+where ControlNet_block is an initialised-zero trainable copy of the frozen backbone encoder block, taking both the backbone hidden state and the spatial conditioning signal c_spatial (e.g. depth map, edge map) as inputs. The zero initialisation ensures that at training onset, the backbone behaviour is unmodified (ControlNet residuals are exactly zero), preventing catastrophic forgetting.
 
-  The [[IP-Adapter]] architecture introduces decoupled cross-attention:
+The [[IP-Adapter]] architecture introduces decoupled cross-attention:
 
-  ```
-  h_out = CrossAttn_text(Q, K_text, V_text) + λ · CrossAttn_image(Q, K_image, V_image)
-  ```
+```
+h_out = CrossAttn_text(Q, K_text, V_text) + λ · CrossAttn_image(Q, K_image, V_image)
+```
 
-  where K_text, V_text are projected from the text conditioning and K_image, V_image are projected from the image conditioning encoder output (typically a CLIP ViT-L image encoder). The λ parameter (IP-Adapter conditioning scale) controls the relative influence of image versus text conditioning, enabling continuous interpolation between pure text and pure image prompt guidance.
+where K_text, V_text are projected from the text conditioning and K_image, V_image are projected from the image conditioning encoder output (typically a CLIP ViT-L image encoder). The λ parameter (IP-Adapter conditioning scale) controls the relative influence of image versus text conditioning, enabling continuous interpolation between pure text and pure image prompt guidance.
 
-  ## Variant Taxonomy
+## Variant Taxonomy
 
-  ### By Conditioning Modality Pair
-  - **Text → Image**: Most mature family; CLIP, T5, ALIGN text encoders → [[U-Net]] or DiT image backbones. Examples: Stable Diffusion, DALL-E 3, Imagen 2, Ideogram 3.
-  - **Image → Image** (style/content transfer): Reference image embeddings → target image generation. Examples: [[IP-Adapter]], Consistent Character, PhotoMaker.
-  - **Spatial Map → Image** (structural conditioning): Depth, edge, pose, segmentation → generated image. Examples: [[ControlNet]], T2I-Adapter, UniControl.
-  - **Text → Audio**: CLAP text embeddings → mel-spectrogram latent diffusion. Examples: AudioLDM 2, Stable Audio, MusicGen.
-  - **Video → Audio** (Foley): Video frame embeddings → synchronised audio generation. Examples: FoleyCrafter, Ovi, AV-DiT.
-  - **Audio → Video**: Audio spectrogram embeddings → video frame generation. Examples: DiffFoley (reversed), audio-conditioned video diffusion.
-  - **Text → Video**: Text embeddings + optional structural conditioning → temporally coherent video. Examples: Sora (OpenAI), Runway Gen-3, Kling, Wan2.1.
-  - **Cross-modal → 3D**: Text or image → point cloud / NeRF / 3D Gaussian Splatting. Examples: Point-E, Shap-E, TripoSR.
-  - **Sequence → Molecular Structure**: Protein sequence / binding pocket geometry → protein structure / ligand. Examples: RFDiffusion, Chroma, DiffSBDD.
+### By Conditioning Modality Pair
+
+- **Text → Image**: Most mature family; CLIP, T5, ALIGN text encoders → [[U-Net]] or DiT image backbones. Examples: Stable Diffusion, DALL-E 3, Imagen 2, Ideogram 3.
+- **Image → Image** (style/content transfer): Reference image embeddings → target image generation. Examples: [[IP-Adapter]], Consistent Character, PhotoMaker.
+- **Spatial Map → Image** (structural conditioning): Depth, edge, pose, segmentation → generated image. Examples: [[ControlNet]], T2I-Adapter, UniControl.
+- **Text → Audio**: CLAP text embeddings → mel-spectrogram latent diffusion. Examples: AudioLDM 2, Stable Audio, MusicGen.
+- **Video → Audio** (Foley): Video frame embeddings → synchronised audio generation. Examples: FoleyCrafter, Ovi, AV-DiT.
+- **Audio → Video**: Audio spectrogram embeddings → video frame generation. Examples: DiffFoley (reversed), audio-conditioned video diffusion.
+- **Text → Video**: Text embeddings + optional structural conditioning → temporally coherent video. Examples: Sora (OpenAI), Runway Gen-3, Kling, Wan2.1.
+- **Cross-modal → 3D**: Text or image → point cloud / NeRF / 3D Gaussian Splatting. Examples: Point-E, Shap-E, TripoSR.
+- **Sequence → Molecular Structure**: Protein sequence / binding pocket geometry → protein structure / ligand. Examples: RFDiffusion, Chroma, DiffSBDD.
 
   ### By Conditioning Injection Mechanism
-  - **Full fine-tuning conditioning**: All model weights updated for each new conditioning modality (expensive, maximum capacity).
-  - **Cross-attention injection**: Conditioning encoder output injected as K, V into frozen or trainable cross-attention layers (canonical approach in LDM/DiT).
-  - **Adapter-based conditioning**: Lightweight modules (ControlNet, IP-Adapter, T2I-Adapter) added to frozen backbone without full retraining.
-  - **[[LoRA]] conditioning adapters**: Low-rank weight residuals (rank 4-128) trained for new conditioning domains, modifying K, V, Q weight matrices of existing attention layers.
-  - **Prefix conditioning**: Conditioning tokens prepended to the target sequence and attended through self-attention (applicable in autoregressive models).
-  - **Cross-modal in-context learning (2024)**: Conditioning provided as examples in the context window of a multimodal autoregressive model, without gradient-based adaptation.
+
+- **Full fine-tuning conditioning**: All model weights updated for each new conditioning modality (expensive, maximum capacity).
+- **Cross-attention injection**: Conditioning encoder output injected as K, V into frozen or trainable cross-attention layers (canonical approach in LDM/DiT).
+- **Adapter-based conditioning**: Lightweight modules (ControlNet, IP-Adapter, T2I-Adapter) added to frozen backbone without full retraining.
+- **[[LoRA]] conditioning adapters**: Low-rank weight residuals (rank 4-128) trained for new conditioning domains, modifying K, V, Q weight matrices of existing attention layers.
+- **Prefix conditioning**: Conditioning tokens prepended to the target sequence and attended through self-attention (applicable in autoregressive models).
+- **Cross-modal in-context learning (2024)**: Conditioning provided as examples in the context window of a multimodal autoregressive model, without gradient-based adaptation.
 
   ## Use Cases / Major Families
 
@@ -242,29 +250,34 @@ Cross-modal conditioning is a generative modelling technique in which a model pr
   Evaluating cross-modal conditioning quality requires measuring both output quality (fidelity, photorealism, aesthetic appeal) and conditioning faithfulness (how well the output reflects the conditioning signal). Standard benchmarks and metrics include:
 
   **Image Quality Metrics**
-  - **FID (Fréchet Inception Distance)**: Measures distributional similarity between generated and real image distributions using Inception-v3 features. Lower is better. SD-XL achieves FID ~3-5 on COCO; SD3 further reduces this.
-  - **FID-30k**: Evaluated on 30,000 generated vs 30,000 real images; the standard setting for fair comparison.
-  - **CLIP Score**: Measures cosine similarity between CLIP embeddings of the generated image and conditioning text. Higher indicates better text-image alignment. Typical values: 0.25-0.35 for state-of-the-art systems.
-  - **PickScore / ImageReward**: Human preference prediction models trained on human ratings of generated images, better correlated with human judgement than FID or CLIP Score.
+
+- **FID (Fréchet Inception Distance)**: Measures distributional similarity between generated and real image distributions using Inception-v3 features. Lower is better. SD-XL achieves FID ~3-5 on COCO; SD3 further reduces this.
+- **FID-30k**: Evaluated on 30,000 generated vs 30,000 real images; the standard setting for fair comparison.
+- **CLIP Score**: Measures cosine similarity between CLIP embeddings of the generated image and conditioning text. Higher indicates better text-image alignment. Typical values: 0.25-0.35 for state-of-the-art systems.
+- **PickScore / ImageReward**: Human preference prediction models trained on human ratings of generated images, better correlated with human judgement than FID or CLIP Score.
 
   **Conditioning Faithfulness Benchmarks**
-  - **T2I-CompBench**: A comprehensive benchmark for text-to-image compositional evaluation, testing attribute binding, spatial relationships, and object counting. Current state-of-the-art models achieve 50-65% on binding tasks.
-  - **TIFA (Text-Image Faithfulness using qA)**: Uses question-answering models to verify whether generated images contain the objects and attributes specified in prompts.
-  - **DrawBench / PartiPrompts**: Curated sets of challenging prompts testing specific compositional and creative capabilities.
+
+- **T2I-CompBench**: A comprehensive benchmark for text-to-image compositional evaluation, testing attribute binding, spatial relationships, and object counting. Current state-of-the-art models achieve 50-65% on binding tasks.
+- **TIFA (Text-Image Faithfulness using qA)**: Uses question-answering models to verify whether generated images contain the objects and attributes specified in prompts.
+- **DrawBench / PartiPrompts**: Curated sets of challenging prompts testing specific compositional and creative capabilities.
 
   **Audio Conditioning Metrics**
-  - **FAD (Fréchet Audio Distance)**: Audio analogue of FID for audio generation quality.
-  - **KL Divergence on PANNs features**: Measures distributional alignment of generated audio with reference distributions.
-  - **CLAP score**: Cosine similarity between CLAP embeddings of generated audio and conditioning text.
-  - **Video-audio synchronisation score**: For audio-visual cross-modal conditioning, measures onset alignment between video events and generated sounds.
+
+- **FAD (Fréchet Audio Distance)**: Audio analogue of FID for audio generation quality.
+- **KL Divergence on PANNs features**: Measures distributional alignment of generated audio with reference distributions.
+- **CLAP score**: Cosine similarity between CLAP embeddings of generated audio and conditioning text.
+- **Video-audio synchronisation score**: For audio-visual cross-modal conditioning, measures onset alignment between video events and generated sounds.
 
   **Structural Conditioning Metrics**
-  - **SSIM / L1 distance from control signal**: For [[ControlNet]]-style conditioning, measures how faithfully spatial structure from the conditioning map is preserved in the generated image.
-  - **Pose estimation accuracy**: For human pose conditioning, re-estimates pose from the generated image and compares to the conditioning skeleton.
+
+- **SSIM / L1 distance from control signal**: For [[ControlNet]]-style conditioning, measures how faithfully spatial structure from the conditioning map is preserved in the generated image.
+- **Pose estimation accuracy**: For human pose conditioning, re-estimates pose from the generated image and compares to the conditioning skeleton.
 
   **Multi-modal Alignment (2024-2025 frontier)**
-  - AlignGen (2025) reports an average 11.65% improvement in tri-modal semantic alignment (text + image + audio) over baselines on combined evaluation suites.
-  - The Unified Multimodal Understanding and Generation benchmark (2025, arXiv:2505.02567) provides a comprehensive evaluation across generation, understanding, and cross-modal retrieval tasks in a single evaluation suite.
+
+- AlignGen (2025) reports an average 11.65% improvement in tri-modal semantic alignment (text + image + audio) over baselines on combined evaluation suites.
+- The Unified Multimodal Understanding and Generation benchmark (2025, arXiv:2505.02567) provides a comprehensive evaluation across generation, understanding, and cross-modal retrieval tasks in a single evaluation suite.
 
   ## Academic Context
 
@@ -360,18 +373,18 @@ Cross-modal conditioning is a generative modelling technique in which a model pr
 
   ## Key Terminology
 
-  - **Conditioning signal**: The input from the source modality (e.g. a text prompt, depth map, or reference audio) used to steer output generation in the target modality. The conditioning signal is always encoded into a dense vector representation before being injected into the generation backbone.
-  - **Conditioning encoder**: The neural network (typically a pre-trained CLIP, T5, CLAP, or ViT encoder) that transforms raw conditioning inputs into the embedding sequence used as keys and values in cross-attention. The quality and alignment of the conditioning encoder is the primary determinant of conditioning faithfulness.
-  - **Guidance scale (w)**: Hyperparameter controlling adherence to the conditioning signal in classifier-free guidance; higher values increase fidelity to the conditioning signal, lower values increase diversity and avoid artefacts. Typical values range from 1.0 (minimal conditioning) to 20.0 (very strong adherence), with 7.5 being a historical default for text-to-image systems. Dynamic CFG methods adjust w per semantic region rather than globally.
-  - **Cross-attention injection**: Placement of cross-attention layers within a generation backbone to receive keys and values from the conditioning encoder's output. In U-Net architectures, cross-attention is typically injected at every resolution level. In DiT architectures, cross-attention is typically injected at every transformer block.
-  - **Adapter**: A lightweight trainable module (typically 10-100M parameters) added to a frozen backbone to introduce new conditioning channels without full model retraining. The adapter paradigm allows new conditioning modalities to be added to an existing model in hours rather than weeks of training. Examples include [[ControlNet]], [[IP-Adapter]], T2I-Adapter, [[LoRA]] conditioning adapters.
-  - **Null conditioning**: Empty or zero conditioning embedding (or a fixed "uncond" token) used during classifier-free guidance training to represent the unconditional case. The model is trained to handle both conditioned and null-conditioned inputs, learning the unconditional distribution p(x) in addition to the conditioned distribution p(x | c).
-  - **Modality alignment**: The geometric property that conditioning and target modality embeddings occupy semantically comparable regions of their respective representation spaces, enabling cross-attention to meaningfully route information across modalities. Achieved through contrastive pre-training (CLIP, ALIGN, CLAP) on large paired datasets of conditioning-target pairs.
-  - **Zero convolution**: ControlNet initialisation trick in which all adapter weight matrices are initialised to zero (via zero-initialised convolutional layers) at the start of training. This ensures that at epoch 0, the conditioning adapter contributes zero residuals to the frozen backbone, preventing catastrophic forgetting at training onset and enabling stable gradient flow through the adapter.
-  - **Conditioning scale**: The hyperparameter (separate from guidance scale) controlling the weighting of a conditioning adapter's contribution, as in IP-Adapter's λ parameter or ControlNet's conditioning weight. Allows multiple conditioning channels to be independently weighted.
-  - **Multi-modal latent space**: A shared representation space in which embeddings from multiple modalities are approximately aligned, enabling geometric operations (interpolation, addition) across modalities. CLIP's image-text shared space is the canonical example: CLIP image embeddings and CLIP text embeddings of corresponding concepts are close in the shared space.
-  - **Cross-modal in-context learning**: A conditioning paradigm in which conditioning examples (image-text pairs, audio-text pairs) are provided as context tokens to a multi-modal autoregressive model, without gradient-based adaptation. The model generalises the conditioning pattern from the in-context examples to produce outputs aligned with the demonstrated conditioning relationship.
-  - **Conditioning dropout**: The training technique of randomly replacing conditioning inputs with null conditioning at rate p_uncond (typically 10-20%), enabling classifier-free guidance by training the model to handle both conditioned and unconditioned inference in a single model.
+- **Conditioning signal**: The input from the source modality (e.g. a text prompt, depth map, or reference audio) used to steer output generation in the target modality. The conditioning signal is always encoded into a dense vector representation before being injected into the generation backbone.
+- **Conditioning encoder**: The neural network (typically a pre-trained CLIP, T5, CLAP, or ViT encoder) that transforms raw conditioning inputs into the embedding sequence used as keys and values in cross-attention. The quality and alignment of the conditioning encoder is the primary determinant of conditioning faithfulness.
+- **Guidance scale (w)**: Hyperparameter controlling adherence to the conditioning signal in classifier-free guidance; higher values increase fidelity to the conditioning signal, lower values increase diversity and avoid artefacts. Typical values range from 1.0 (minimal conditioning) to 20.0 (very strong adherence), with 7.5 being a historical default for text-to-image systems. Dynamic CFG methods adjust w per semantic region rather than globally.
+- **Cross-attention injection**: Placement of cross-attention layers within a generation backbone to receive keys and values from the conditioning encoder's output. In U-Net architectures, cross-attention is typically injected at every resolution level. In DiT architectures, cross-attention is typically injected at every transformer block.
+- **Adapter**: A lightweight trainable module (typically 10-100M parameters) added to a frozen backbone to introduce new conditioning channels without full model retraining. The adapter paradigm allows new conditioning modalities to be added to an existing model in hours rather than weeks of training. Examples include [[ControlNet]], [[IP-Adapter]], T2I-Adapter, [[LoRA]] conditioning adapters.
+- **Null conditioning**: Empty or zero conditioning embedding (or a fixed "uncond" token) used during classifier-free guidance training to represent the unconditional case. The model is trained to handle both conditioned and null-conditioned inputs, learning the unconditional distribution p(x) in addition to the conditioned distribution p(x | c).
+- **Modality alignment**: The geometric property that conditioning and target modality embeddings occupy semantically comparable regions of their respective representation spaces, enabling cross-attention to meaningfully route information across modalities. Achieved through contrastive pre-training (CLIP, ALIGN, CLAP) on large paired datasets of conditioning-target pairs.
+- **Zero convolution**: ControlNet initialisation trick in which all adapter weight matrices are initialised to zero (via zero-initialised convolutional layers) at the start of training. This ensures that at epoch 0, the conditioning adapter contributes zero residuals to the frozen backbone, preventing catastrophic forgetting at training onset and enabling stable gradient flow through the adapter.
+- **Conditioning scale**: The hyperparameter (separate from guidance scale) controlling the weighting of a conditioning adapter's contribution, as in IP-Adapter's λ parameter or ControlNet's conditioning weight. Allows multiple conditioning channels to be independently weighted.
+- **Multi-modal latent space**: A shared representation space in which embeddings from multiple modalities are approximately aligned, enabling geometric operations (interpolation, addition) across modalities. CLIP's image-text shared space is the canonical example: CLIP image embeddings and CLIP text embeddings of corresponding concepts are close in the shared space.
+- **Cross-modal in-context learning**: A conditioning paradigm in which conditioning examples (image-text pairs, audio-text pairs) are provided as context tokens to a multi-modal autoregressive model, without gradient-based adaptation. The model generalises the conditioning pattern from the in-context examples to produce outputs aligned with the demonstrated conditioning relationship.
+- **Conditioning dropout**: The training technique of randomly replacing conditioning inputs with null conditioning at rate p_uncond (typically 10-20%), enabling classifier-free guidance by training the model to handle both conditioned and unconditioned inference in a single model.
 
-- ### Provenance
+### Provenance
 

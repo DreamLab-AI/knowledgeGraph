@@ -1,67 +1,70 @@
-
 Procedural Generation is the algorithmic creation of digital content — including terrain, geometry, textures, vegetation, buildings, soundscapes, quests, and narrative elements — using mathematical functions, noise algorithms, grammars, and rule-based systems rather than entirely manual authoring. It enables scalable world-building by deriving arbitrarily large, varied outputs from compact parametric seeds, making it foundational to games, simulation, virtual environments, and generative design workflows. Modern procedural generation incorporates machine-learning-guided heuristics alongside classical stochastic sampling, bridging traditional algorithmic design with contemporary AI-driven content synthesis. The technique trades artist-authoring effort for computational cost while preserving statistical variety and stylistic coherence.
 
-- ### Overview
-  - Procedural Generation has been employed in software since the early days of computing (the Commodore 64 game Elite, 1984, generated an entire galaxy procedurally), but it has matured into a sophisticated discipline with formal methods, dedicated toolchains, and integration with machine learning.
-  - The core insight is that many natural phenomena — erosion, plant growth, urban sprawl — follow local rules that produce globally rich structure. Encoding those rules algorithmically lets a computer replicate that richness without storing every detail explicitly.
-  - In modern [[Game Engine]] environments such as Unreal Engine and Unity, PCG is a first-class feature; Unreal's PCG Framework (released 2023) exposes graph-based procedural pipelines directly in the editor.
-  - Beyond games, PCG is applied to [[Simulation]], architectural pre-visualisation, drug-discovery molecular generation, synthetic training data for [[Machine Learning]], and [[Metaverse Content Pipeline]] construction.
-  - The field sits at the intersection of mathematics, computer graphics, AI, and design theory — it is genuinely cross-domain, bridging [[Spatial Computing]] with [[Artificial Intelligence]] pipelines.
+### Overview
 
-- ### Key Mechanisms
-  - **[[Noise Function]]s**
-    - Perlin noise, Simplex noise, and Worley (cellular) noise are the workhorses of terrain, cloud, and texture generation.
-    - Fractal Brownian Motion (fBm) stacks octaves of noise at different frequencies to simulate natural roughness at multiple scales.
-  - **[[L-System]]s (Lindenmayer Systems)**
-    - String-rewriting grammars that model plant growth, branching patterns, and architectural facades.
-    - Parametric L-Systems add typed parameters enabling context-sensitive growth rules.
-  - **[[Wave Function Collapse]] (WFC)**
-    - Constraint propagation over a grid of possible tiles, derived from example input patterns.
-    - Widely used for dungeon and town layout generation with neighbourhood-consistent tiling.
-  - **[[Voronoi Diagram]]s and Delaunay Triangulation**
-    - Partition space into organic, non-uniform regions suitable for biome maps, city districts, and cell shading.
-  - **[[Parametric Design]] and Grammar Systems**
-    - Shape grammars define building façades, road networks, and city blocks by recursive rule application.
-    - [[Parametric Design]] tools such as Houdini's Procedural Dependency Graph express full scene pipelines as directed acyclic graphs.
-  - **[[Stochastic Modelling]]**
-    - Markov chains, probability distributions, and weighted random tables drive loot tables, quest selection, and narrative branching.
-  - **[[Random Seed]]s and Deterministic Replay**
-    - A fixed seed produces an identical, reproducible world, enabling sharing of world identifiers without transmitting full geometry.
-  - **Hybrid AI-PCG Pipelines**
-    - Neural networks (GANs, [[Latent Diffusion Model]]s, diffusion transformers) generate high-quality texture patches or geometry that PCG systems then tile, blend, or stylistically guide.
+- Procedural Generation has been employed in software since the early days of computing (the Commodore 64 game Elite, 1984, generated an entire galaxy procedurally), but it has matured into a sophisticated discipline with formal methods, dedicated toolchains, and integration with machine learning.
+- The core insight is that many natural phenomena — erosion, plant growth, urban sprawl — follow local rules that produce globally rich structure. Encoding those rules algorithmically lets a computer replicate that richness without storing every detail explicitly.
+- In modern [[Game Engine]] environments such as Unreal Engine and Unity, PCG is a first-class feature; Unreal's PCG Framework (released 2023) exposes graph-based procedural pipelines directly in the editor.
+- Beyond games, PCG is applied to [[Simulation]], architectural pre-visualisation, drug-discovery molecular generation, synthetic training data for [[Machine Learning]], and [[Metaverse Content Pipeline]] construction.
+- The field sits at the intersection of mathematics, computer graphics, AI, and design theory — it is genuinely cross-domain, bridging [[Spatial Computing]] with [[Artificial Intelligence]] pipelines.
 
-- ### Applications and Use Cases
-  - **Games and [[Open-World Game]]s**
-    - Minecraft uses 3D noise-based terrain with biome blending, generating worlds orders of magnitude larger than hand-crafted maps.
-    - No Man's Sky procedurally generates entire solar systems, planet surfaces, flora, fauna, and alien languages from seed data.
-    - Rogue-like / rogue-lite genres (Spelunky, Hades, Dead Cells) rely on PCG for repeatable-yet-fresh [[Level Design]].
-  - **[[Virtual World]]s and [[Metaverse Content Pipeline]]**
-    - PCG supplies the scalable content layer needed to populate persistent, user-navigable virtual spaces without exhausting artist budgets.
-    - Terrain streaming systems combine PCG with [[Spatial Indexing]] to load only visible world chunks at runtime.
-  - **Film and VFX Pre-visualisation**
-    - Houdini-based procedural pipelines generate large-scale environments for film production (Lord of the Rings crowd simulations, Dune environments).
-  - **Architecture and Urban Planning**
-    - Shape-grammar city generators let urban planners explore design variants rapidly, feeding into BIM workflows.
-  - **Synthetic Training Data for [[Machine Learning]]**
-    - PCG generates labelled datasets — synthetic images, 3D scenes with ground-truth depth — used to train computer-vision models without costly manual annotation.
-    - [[Simulation]]-to-real transfer uses procedurally varied scenes to reduce domain-gap for robotics policies.
-  - **Drug Discovery and Molecular Design**
-    - Procedural enumeration of chemical scaffolds explores large molecular spaces for lead identification.
-  - **Music and Soundscapes**
-    - Algorithmic composition (Markov melody generation, wavetable synthesis) creates adaptive, non-repeating game audio.
-  - **[[Computational Creativity]] and Generative Art**
-    - Artists use PCG frameworks (Processing, openFrameworks, TouchDesigner) for generative visual art and interactive installations.
+### Key Mechanisms
 
-- ### Standards and Context
-  - No single ISO or W3C standard governs PCG, but several ecosystems provide interoperability reference points:
-    - **OpenUSD (Pixar / ASWF)** — scene description format used by PCG pipelines to exchange generated geometry; increasingly adopted for [[Metaverse Content Pipeline]] interchange.
-    - **glTF 2.0 (Khronos)** — runtime delivery format for procedurally generated meshes and textures; supports mesh instancing crucial for PCG-heavy scenes.
-    - **MaterialX (ASWF)** — defines procedurally composed material graphs portable across renderers.
-    - **ONNX** — allows export of ML models used in hybrid AI-PCG pipelines to engine-agnostic runtimes.
-  - Key research venues: IEEE Conference on Computational Intelligence and Games (CIG), FDG (Foundations of Digital Games), SIGGRAPH proceedings.
-  - The academic subdiscipline "Procedural Content Generation in Games" (PCG-in-Games) has its own textbook (Shaker, Togelius, Nelson — open access) and annual workshop (PCG Workshop at FDG/AIIDE).
+- **[[Noise Function]]s**
+  - Perlin noise, Simplex noise, and Worley (cellular) noise are the workhorses of terrain, cloud, and texture generation.
+  - Fractal Brownian Motion (fBm) stacks octaves of noise at different frequencies to simulate natural roughness at multiple scales.
+- **[[L-System]]s (Lindenmayer Systems)**
+  - String-rewriting grammars that model plant growth, branching patterns, and architectural facades.
+  - Parametric L-Systems add typed parameters enabling context-sensitive growth rules.
+- **[[Wave Function Collapse]] (WFC)**
+  - Constraint propagation over a grid of possible tiles, derived from example input patterns.
+  - Widely used for dungeon and town layout generation with neighbourhood-consistent tiling.
+- **[[Voronoi Diagram]]s and Delaunay Triangulation**
+  - Partition space into organic, non-uniform regions suitable for biome maps, city districts, and cell shading.
+- **[[Parametric Design]] and Grammar Systems**
+  - Shape grammars define building façades, road networks, and city blocks by recursive rule application.
+  - [[Parametric Design]] tools such as Houdini's Procedural Dependency Graph express full scene pipelines as directed acyclic graphs.
+- **[[Stochastic Modelling]]**
+  - Markov chains, probability distributions, and weighted random tables drive loot tables, quest selection, and narrative branching.
+- **[[Random Seed]]s and Deterministic Replay**
+  - A fixed seed produces an identical, reproducible world, enabling sharing of world identifiers without transmitting full geometry.
+- **Hybrid AI-PCG Pipelines**
+  - Neural networks (GANs, [[Latent Diffusion Model]]s, diffusion transformers) generate high-quality texture patches or geometry that PCG systems then tile, blend, or stylistically guide.
 
-- ### Semantic Classification
+### Applications and Use Cases
 
-- ### Provenance
+- **Games and [[Open-World Game]]s**
+  - Minecraft uses 3D noise-based terrain with biome blending, generating worlds orders of magnitude larger than hand-crafted maps.
+  - No Man's Sky procedurally generates entire solar systems, planet surfaces, flora, fauna, and alien languages from seed data.
+  - Rogue-like / rogue-lite genres (Spelunky, Hades, Dead Cells) rely on PCG for repeatable-yet-fresh [[Level Design]].
+- **[[Virtual World]]s and [[Metaverse Content Pipeline]]**
+  - PCG supplies the scalable content layer needed to populate persistent, user-navigable virtual spaces without exhausting artist budgets.
+  - Terrain streaming systems combine PCG with [[Spatial Indexing]] to load only visible world chunks at runtime.
+- **Film and VFX Pre-visualisation**
+  - Houdini-based procedural pipelines generate large-scale environments for film production (Lord of the Rings crowd simulations, Dune environments).
+- **Architecture and Urban Planning**
+  - Shape-grammar city generators let urban planners explore design variants rapidly, feeding into BIM workflows.
+- **Synthetic Training Data for [[Machine Learning]]**
+  - PCG generates labelled datasets — synthetic images, 3D scenes with ground-truth depth — used to train computer-vision models without costly manual annotation.
+  - [[Simulation]]-to-real transfer uses procedurally varied scenes to reduce domain-gap for robotics policies.
+- **Drug Discovery and Molecular Design**
+  - Procedural enumeration of chemical scaffolds explores large molecular spaces for lead identification.
+- **Music and Soundscapes**
+  - Algorithmic composition (Markov melody generation, wavetable synthesis) creates adaptive, non-repeating game audio.
+- **[[Computational Creativity]] and Generative Art**
+  - Artists use PCG frameworks (Processing, openFrameworks, TouchDesigner) for generative visual art and interactive installations.
+
+### Standards and Context
+
+- No single ISO or W3C standard governs PCG, but several ecosystems provide interoperability reference points:
+  - **OpenUSD (Pixar / ASWF)** — scene description format used by PCG pipelines to exchange generated geometry; increasingly adopted for [[Metaverse Content Pipeline]] interchange.
+  - **glTF 2.0 (Khronos)** — runtime delivery format for procedurally generated meshes and textures; supports mesh instancing crucial for PCG-heavy scenes.
+  - **MaterialX (ASWF)** — defines procedurally composed material graphs portable across renderers.
+  - **ONNX** — allows export of ML models used in hybrid AI-PCG pipelines to engine-agnostic runtimes.
+- Key research venues: IEEE Conference on Computational Intelligence and Games (CIG), FDG (Foundations of Digital Games), SIGGRAPH proceedings.
+- The academic subdiscipline "Procedural Content Generation in Games" (PCG-in-Games) has its own textbook (Shaker, Togelius, Nelson — open access) and annual workshop (PCG Workshop at FDG/AIIDE).
+
+### Semantic Classification
+
+### Provenance
 

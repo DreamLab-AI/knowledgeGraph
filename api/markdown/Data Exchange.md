@@ -1,33 +1,36 @@
-
 Data Exchange refers to the structured transfer of data between systems, organisations, or parties using agreed-upon formats, protocols, and governance frameworks, enabling interoperability without requiring identical internal architectures. It encompasses both technical standards (APIs, file formats, serialisation protocols) and organisational arrangements (data sharing agreements, trust frameworks, data marketplaces) that govern how data flows across boundaries. Modern data exchange platforms provide cataloguing, consent management, lineage tracking, and value exchange mechanisms alongside raw data transfer.
 
-- ### Overview
-  - EDI (Electronic Data Interchange) was the first formalised data exchange standard, enabling B2B transactions in manufacturing and retail from the 1960s.
-  - REST and GraphQL APIs now dominate real-time data exchange in web and mobile contexts.
-  - Data spaces (e.g. GAIA-X, International Data Spaces) extend exchange with trust frameworks, usage policies, and certified connector software.
-  - FHIR (Fast Healthcare Interoperability Resources) exemplifies domain-specific data exchange standardisation.
-  - Open Banking regulations (PSD2 in Europe) mandate data exchange between banks and licensed third parties.
+### Overview
 
-- ### Key aspects
-  - Schema agreement: sender and receiver must agree on data structure, field semantics, and encoding.
-  - Transport security: TLS/mTLS encrypts data in transit; signatures verify data origin.
-  - Consent and access control: OAuth 2.0 and data sharing agreements govern who receives what data.
-  - Lineage and audit: provenance metadata enables downstream accountability.
-  - Transformation: ETL/ELT pipelines bridge schema mismatches between exchanging parties.
+- EDI (Electronic Data Interchange) was the first formalised data exchange standard, enabling B2B transactions in manufacturing and retail from the 1960s.
+- REST and GraphQL APIs now dominate real-time data exchange in web and mobile contexts.
+- Data spaces (e.g. GAIA-X, International Data Spaces) extend exchange with trust frameworks, usage policies, and certified connector software.
+- FHIR (Fast Healthcare Interoperability Resources) exemplifies domain-specific data exchange standardisation.
+- Open Banking regulations (PSD2 in Europe) mandate data exchange between banks and licensed third parties.
 
-- ### Mechanisms
-  - REST APIs expose resources over HTTP with JSON/XML payloads; versioning manages schema evolution.
-  - Message brokers (Kafka, RabbitMQ) decouple producers and consumers in asynchronous exchange.
-  - GraphQL enables consumer-driven query composition, reducing over-fetching.
-  - SFTP and batch file transfer remain relevant in regulated industries with legacy systems.
-  - Blockchain-based data exchange adds immutable provenance and token-gated access control.
+### Key aspects
 
-- ### Applications
-  - [[Supply Chain]] visibility: sharing shipment, inventory, and demand data across trading partners.
-  - [[Open Banking]]: account data and payment initiation APIs between banks and fintechs.
-  - Healthcare: patient record portability between providers using FHIR APIs.
-  - Smart city: sensor data exchange between municipalities and service operators.
-  - Academic research: dataset sharing via repositories adhering to FAIR data principles.
+- Schema agreement: sender and receiver must agree on data structure, field semantics, and encoding.
+- Transport security: TLS/mTLS encrypts data in transit; signatures verify data origin.
+- Consent and access control: OAuth 2.0 and data sharing agreements govern who receives what data.
+- Lineage and audit: provenance metadata enables downstream accountability.
+- Transformation: ETL/ELT pipelines bridge schema mismatches between exchanging parties.
 
-- ### Provenance
+### Mechanisms
+
+- REST APIs expose resources over HTTP with JSON/XML payloads; versioning manages schema evolution.
+- Message brokers (Kafka, RabbitMQ) decouple producers and consumers in asynchronous exchange.
+- GraphQL enables consumer-driven query composition, reducing over-fetching.
+- SFTP and batch file transfer remain relevant in regulated industries with legacy systems.
+- Blockchain-based data exchange adds immutable provenance and token-gated access control.
+
+### Applications
+
+- [[Supply Chain]] visibility: sharing shipment, inventory, and demand data across trading partners.
+- [[Open Banking]]: account data and payment initiation APIs between banks and fintechs.
+- Healthcare: patient record portability between providers using FHIR APIs.
+- Smart city: sensor data exchange between municipalities and service operators.
+- Academic research: dataset sharing via repositories adhering to FAIR data principles.
+
+### Provenance
 

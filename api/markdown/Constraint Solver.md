@@ -1,134 +1,139 @@
-
 A constraint solver is a computational engine that finds assignments of values to variables such that all specified constraints — mathematical relationships, logical predicates, or physical laws — are simultaneously satisfied, drawing on techniques from constraint programming, SAT/SMT solving, linear programming, and numerical methods. Solvers operate by propagating constraint implications to prune the search space, applying backtracking or branch-and-bound search, and invoking domain-specific inference procedures that make the infeasibility of partial assignments detectable early. They are applied across planning and scheduling, combinatorial optimisation, formal verification, physics simulation, computer-aided design, and robotic motion planning.
 
-- ### Semantic Classification
+### Semantic Classification
 
-- ### Content
-  ## Compositional Relationships (Components)
-  ```
-  SubClassOf(ai:ConstraintSolver
-    ObjectSomeValuesFrom(ai:hasPart ai:ConstraintPropagation))
-  SubClassOf(ai:ConstraintSolver
-    ObjectSomeValuesFrom(ai:hasPart ai:BacktrackingSearch))
-  SubClassOf(ai:ConstraintSolver
-    ObjectSomeValuesFrom(ai:hasPart ai:ArcConsistency))
-  SubClassOf(ai:ConstraintSolver
-    ObjectSomeValuesFrom(ai:hasPart ai:VariableOrderingHeuristic))
-  SubClassOf(ai:ConstraintSolver
-    ObjectSomeValuesFrom(ai:hasPart ai:BranchAndBound))
-  SubClassOf(ai:ConstraintSolver
-    ObjectSomeValuesFrom(ai:hasPart ai:LocalSearch))
-  SubClassOf(ai:ConstraintSolver
-    ObjectSomeValuesFrom(ai:hasPart ai:PropagationEngine))
-  ```
-  ## Dependency Relationships
-  ```
-  SubClassOf(ai:ConstraintSolver
-    ObjectSomeValuesFrom(ai:requires ai:ConstraintSatisfaction))
-  SubClassOf(ai:ConstraintSolver
-    ObjectSomeValuesFrom(ai:requires ai:SearchAlgorithm))
-  SubClassOf(ai:ConstraintSolver
-    ObjectSomeValuesFrom(ai:dependsOn ai:ConstraintPropagation))
-  SubClassOf(ai:ConstraintSolver
-    ObjectSomeValuesFrom(ai:dependsOn ai:GraphTheory))
-  SubClassOf(ai:ConstraintSolver
-    ObjectSomeValuesFrom(ai:dependsOn ai:PropositionalLogic))
-  ```
-  ## Capability Relationships
-  ```
-  SubClassOf(ai:ConstraintSolver
-    ObjectSomeValuesFrom(ai:enables ai:AutomatedPlanning))
-  SubClassOf(ai:ConstraintSolver
-    ObjectSomeValuesFrom(ai:enables ai:MotionPlanning))
-  SubClassOf(ai:ConstraintSolver
-    ObjectSomeValuesFrom(ai:enables ai:PlanningAndScheduling))
-  SubClassOf(ai:ConstraintSolver
-    ObjectSomeValuesFrom(ai:enables ai:FormalVerification))
-  SubClassOf(ai:ConstraintSolver
-    ObjectSomeValuesFrom(ai:enables ai:PhysicsSimulation))
-  SubClassOf(ai:ConstraintSolver
-    ObjectSomeValuesFrom(ai:enables ai:SupplyChainOptimisation))
-  ```
-  ## Implementation Relationships
-  ```
-  SubClassOf(ai:ConstraintSolver
-    ObjectSomeValuesFrom(ai:implements ai:ConstraintSatisfaction))
-  SubClassOf(ai:ConstraintSolver
-    ObjectSomeValuesFrom(ai:implements ai:SymbolicAI))
-  SubClassOf(ai:ConstraintSolver
-    ObjectSomeValuesFrom(ai:uses ai:Satisfiability))
-  SubClassOf(ai:ConstraintSolver
-    ObjectSomeValuesFrom(ai:uses ai:SMTSolving))
-  SubClassOf(ai:ConstraintSolver
-    ObjectSomeValuesFrom(ai:uses ai:LinearProgramming))
-  SubClassOf(ai:ConstraintSolver
-    ObjectSomeValuesFrom(ai:uses ai:LogicProgramming))
-  ```
-  ## Reduction Relationships
-  ```
-  SubClassOf(ai:ConstraintSolver
-    ObjectSomeValuesFrom(ai:reducesTo ai:SATSolver))
-  SubClassOf(ai:ConstraintSolver
-    ObjectSomeValuesFrom(ai:reducesTo ai:MIPSolver))
-  SubClassOf(ai:ConstraintSolver
-    ObjectSomeValuesFrom(ai:contrastsWith ai:HeuristicSearch))
-  SubClassOf(ai:ConstraintSolver
-    ObjectSomeValuesFrom(ai:contrastsWith ai:NeuralNetwork))
-  SubClassOf(ai:ConstraintSolver
-    ObjectSomeValuesFrom(ai:contrastsWith ai:LocalSearch))
-  SubClassOf(ai:ConstraintSolver
-    ObjectSomeValuesFrom(ai:supports ai:Robotics))
-  SubClassOf(ai:ConstraintSolver
-    ObjectSomeValuesFrom(ai:supports ai:ConstraintBasedDesign))
-  SubClassOf(ai:ConstraintSolver
-    ObjectSomeValuesFrom(ai:relatedTo ai:NeuroSymbolicAI))
-  SubClassOf(ai:ConstraintSolver
-    ObjectSomeValuesFrom(ai:relatedTo ai:QuantumComputing))
-  SubClassOf(ai:ConstraintSolver
-    ObjectSomeValuesFrom(ai:relatedTo ai:GraphNeuralNetwork))
-  SubClassOf(ai:ConstraintSolver
-    ObjectSomeValuesFrom(ai:enables ai:TrajectoryPlanning))
-  SubClassOf(ai:ConstraintSolver
-    ObjectSomeValuesFrom(ai:bridges ai:OperationsResearch))
-  ```
+### Content
 
-  ## About
-  A constraint solver is the computational realisation of [[Constraint Satisfaction]] theory: an engine that receives a formal problem description (variables, domains, constraints) and either produces a satisfying assignment, finds an optimal assignment with respect to an objective, or proves that no solution exists. The solver's core logic is the propagation-search loop. In the propagation phase, the solver enforces consistency conditions — most critically [[Arc Consistency]] (AC-3 and its successors) and Generalised Arc Consistency (GAC) for global constraints — by iterating over a constraint queue, removing domain values that have no support in the domains of constrained neighbours. This prunes the search space without losing any solutions. In the search phase, the solver selects an unassigned variable (guided by a [[Variable Ordering Heuristic]] such as MRV / fail-first), assigns a domain value (guided by a value ordering heuristic such as least-constraining value), triggers propagation, and recurses. On failure (empty domain detected), it backtracks — either chronologically or, in modern solvers, using conflict-directed backjumping (CBJ) or non-chronological backtracking with no-good clause learning (CDCL, ported from SAT solving).
+## Compositional Relationships (Components)
+```
+SubClassOf(ai:ConstraintSolver
+  ObjectSomeValuesFrom(ai:hasPart ai:ConstraintPropagation))
+SubClassOf(ai:ConstraintSolver
+  ObjectSomeValuesFrom(ai:hasPart ai:BacktrackingSearch))
+SubClassOf(ai:ConstraintSolver
+  ObjectSomeValuesFrom(ai:hasPart ai:ArcConsistency))
+SubClassOf(ai:ConstraintSolver
+  ObjectSomeValuesFrom(ai:hasPart ai:VariableOrderingHeuristic))
+SubClassOf(ai:ConstraintSolver
+  ObjectSomeValuesFrom(ai:hasPart ai:BranchAndBound))
+SubClassOf(ai:ConstraintSolver
+  ObjectSomeValuesFrom(ai:hasPart ai:LocalSearch))
+SubClassOf(ai:ConstraintSolver
+  ObjectSomeValuesFrom(ai:hasPart ai:PropagationEngine))
+```
+## Dependency Relationships
+```
+SubClassOf(ai:ConstraintSolver
+  ObjectSomeValuesFrom(ai:requires ai:ConstraintSatisfaction))
+SubClassOf(ai:ConstraintSolver
+  ObjectSomeValuesFrom(ai:requires ai:SearchAlgorithm))
+SubClassOf(ai:ConstraintSolver
+  ObjectSomeValuesFrom(ai:dependsOn ai:ConstraintPropagation))
+SubClassOf(ai:ConstraintSolver
+  ObjectSomeValuesFrom(ai:dependsOn ai:GraphTheory))
+SubClassOf(ai:ConstraintSolver
+  ObjectSomeValuesFrom(ai:dependsOn ai:PropositionalLogic))
+```
+## Capability Relationships
+```
+SubClassOf(ai:ConstraintSolver
+  ObjectSomeValuesFrom(ai:enables ai:AutomatedPlanning))
+SubClassOf(ai:ConstraintSolver
+  ObjectSomeValuesFrom(ai:enables ai:MotionPlanning))
+SubClassOf(ai:ConstraintSolver
+  ObjectSomeValuesFrom(ai:enables ai:PlanningAndScheduling))
+SubClassOf(ai:ConstraintSolver
+  ObjectSomeValuesFrom(ai:enables ai:FormalVerification))
+SubClassOf(ai:ConstraintSolver
+  ObjectSomeValuesFrom(ai:enables ai:PhysicsSimulation))
+SubClassOf(ai:ConstraintSolver
+  ObjectSomeValuesFrom(ai:enables ai:SupplyChainOptimisation))
+```
+## Implementation Relationships
+```
+SubClassOf(ai:ConstraintSolver
+  ObjectSomeValuesFrom(ai:implements ai:ConstraintSatisfaction))
+SubClassOf(ai:ConstraintSolver
+  ObjectSomeValuesFrom(ai:implements ai:SymbolicAI))
+SubClassOf(ai:ConstraintSolver
+  ObjectSomeValuesFrom(ai:uses ai:Satisfiability))
+SubClassOf(ai:ConstraintSolver
+  ObjectSomeValuesFrom(ai:uses ai:SMTSolving))
+SubClassOf(ai:ConstraintSolver
+  ObjectSomeValuesFrom(ai:uses ai:LinearProgramming))
+SubClassOf(ai:ConstraintSolver
+  ObjectSomeValuesFrom(ai:uses ai:LogicProgramming))
+```
+## Reduction Relationships
+```
+SubClassOf(ai:ConstraintSolver
+  ObjectSomeValuesFrom(ai:reducesTo ai:SATSolver))
+SubClassOf(ai:ConstraintSolver
+  ObjectSomeValuesFrom(ai:reducesTo ai:MIPSolver))
+SubClassOf(ai:ConstraintSolver
+  ObjectSomeValuesFrom(ai:contrastsWith ai:HeuristicSearch))
+SubClassOf(ai:ConstraintSolver
+  ObjectSomeValuesFrom(ai:contrastsWith ai:NeuralNetwork))
+SubClassOf(ai:ConstraintSolver
+  ObjectSomeValuesFrom(ai:contrastsWith ai:LocalSearch))
+SubClassOf(ai:ConstraintSolver
+  ObjectSomeValuesFrom(ai:supports ai:Robotics))
+SubClassOf(ai:ConstraintSolver
+  ObjectSomeValuesFrom(ai:supports ai:ConstraintBasedDesign))
+SubClassOf(ai:ConstraintSolver
+  ObjectSomeValuesFrom(ai:relatedTo ai:NeuroSymbolicAI))
+SubClassOf(ai:ConstraintSolver
+  ObjectSomeValuesFrom(ai:relatedTo ai:QuantumComputing))
+SubClassOf(ai:ConstraintSolver
+  ObjectSomeValuesFrom(ai:relatedTo ai:GraphNeuralNetwork))
+SubClassOf(ai:ConstraintSolver
+  ObjectSomeValuesFrom(ai:enables ai:TrajectoryPlanning))
+SubClassOf(ai:ConstraintSolver
+  ObjectSomeValuesFrom(ai:bridges ai:OperationsResearch))
+```
 
-  The theoretical roots of constraint solving converge from three traditions: mathematical programming (linear and [[Mixed-Integer Programming]] solvers, 1940s-1950s), [[Logic Programming]] (Prolog and Constraint Logic Programming, 1970s), and the AI [[Constraint Satisfaction]] literature formalised by Ugo Montanari and Alan Mackworth in the 1970s. Montanari (1974) introduced network constraint representations; Mackworth (1977) defined arc consistency and the AC-3 algorithm; Freuder (1978, 1982) established k-consistency theory. The SAT branch arrived with the Davis-Putnam-Logemann-Loveland (DPLL) procedure (1960, 1962) and was revolutionised by the introduction of Conflict-Driven Clause Learning (CDCL) in the late 1990s via Grasp (Marques-Silva & Sakallah, 1999) and Chaff (Moskewicz et al., 2001), enabling industrial-scale hardware verification. The CP-SAT hybrid solver architecture — introduced in OR-Tools v6.x and matured through 2019-2024 — combines CDCL with CP global constraint propagators and LP relaxation, representing the current state of the art for discrete combinatorial problems.
+## About
+A constraint solver is the computational realisation of [[Constraint Satisfaction]] theory: an engine that receives a formal problem description (variables, domains, constraints) and either produces a satisfying assignment, finds an optimal assignment with respect to an objective, or proves that no solution exists. The solver's core logic is the propagation-search loop. In the propagation phase, the solver enforces consistency conditions — most critically [[Arc Consistency]] (AC-3 and its successors) and Generalised Arc Consistency (GAC) for global constraints — by iterating over a constraint queue, removing domain values that have no support in the domains of constrained neighbours. This prunes the search space without losing any solutions. In the search phase, the solver selects an unassigned variable (guided by a [[Variable Ordering Heuristic]] such as MRV / fail-first), assigns a domain value (guided by a value ordering heuristic such as least-constraining value), triggers propagation, and recurses. On failure (empty domain detected), it backtracks — either chronologically or, in modern solvers, using conflict-directed backjumping (CBJ) or non-chronological backtracking with no-good clause learning (CDCL, ported from SAT solving).
 
-  Modern solvers are not monolithic: they run portfolio strategies across multiple CPU cores, each executing different search heuristics and clause-sharing policies. The objective-shaving search worker in OR-Tools CP-SAT, introduced in recent releases, dedicates a CPU thread to improving lower bounds of the objective function, complementing the primary CDCL search. Job affinity mechanisms ensure that related workers share learned clauses efficiently. This portfolio architecture allows a single solver invocation to exploit modern many-core hardware without requiring user-level parallelism decisions.
+The theoretical roots of constraint solving converge from three traditions: mathematical programming (linear and [[Mixed-Integer Programming]] solvers, 1940s-1950s), [[Logic Programming]] (Prolog and Constraint Logic Programming, 1970s), and the AI [[Constraint Satisfaction]] literature formalised by Ugo Montanari and Alan Mackworth in the 1970s. Montanari (1974) introduced network constraint representations; Mackworth (1977) defined arc consistency and the AC-3 algorithm; Freuder (1978, 1982) established k-consistency theory. The SAT branch arrived with the Davis-Putnam-Logemann-Loveland (DPLL) procedure (1960, 1962) and was revolutionised by the introduction of Conflict-Driven Clause Learning (CDCL) in the late 1990s via Grasp (Marques-Silva & Sakallah, 1999) and Chaff (Moskewicz et al., 2001), enabling industrial-scale hardware verification. The CP-SAT hybrid solver architecture — introduced in OR-Tools v6.x and matured through 2019-2024 — combines CDCL with CP global constraint propagators and LP relaxation, representing the current state of the art for discrete combinatorial problems.
 
-  ## Solver Families and Architecture
-  Constraint solvers exist across a spectrum of domain specialisation:
+Modern solvers are not monolithic: they run portfolio strategies across multiple CPU cores, each executing different search heuristics and clause-sharing policies. The objective-shaving search worker in OR-Tools CP-SAT, introduced in recent releases, dedicates a CPU thread to improving lower bounds of the objective function, complementing the primary CDCL search. Job affinity mechanisms ensure that related workers share learned clauses efficiently. This portfolio architecture allows a single solver invocation to exploit modern many-core hardware without requiring user-level parallelism decisions.
 
-  **CP (Constraint Programming) Solvers** are the most general, handling discrete domains with arbitrary constraint types:
-  - *Google OR-Tools CP-SAT* — open source (Apache 2.0), hybrid CDCL/CP/LP architecture, won gold in multiple MiniZinc Challenge 2024 categories, used in production at Google for cloud infrastructure scheduling. Supports C++, Python, Java, C# APIs.
-  - *IBM ILOG CP Optimizer* — commercial, dominant in industrial scheduling and timetabling, integrates with the CPLEX MIP solver in the IBM Decision Optimization suite. Deployed in aerospace (Airbus, Boeing), rail (SNCF, Network Rail), and manufacturing.
-  - *Choco* — open source (Java), winner of MiniZinc Challenge 2024 Fixed Search category (score 279.00), strongest in pure CP propagation quality.
-  - *Gecode* — open source (C++), highly modular, widely used in academic research and the MiniZinc reference implementation. Supports parallel portfolio solving via Gecode/Par.
-  - *MiniCP* — educational open-source CP framework (Java/Python), designed for teaching CP algorithm implementation.
+## Solver Families and Architecture
+Constraint solvers exist across a spectrum of domain specialisation:
+
+**CP (Constraint Programming) Solvers** are the most general, handling discrete domains with arbitrary constraint types:
+
+- *Google OR-Tools CP-SAT* — open source (Apache 2.0), hybrid CDCL/CP/LP architecture, won gold in multiple MiniZinc Challenge 2024 categories, used in production at Google for cloud infrastructure scheduling. Supports C++, Python, Java, C# APIs.
+- *IBM ILOG CP Optimizer* — commercial, dominant in industrial scheduling and timetabling, integrates with the CPLEX MIP solver in the IBM Decision Optimization suite. Deployed in aerospace (Airbus, Boeing), rail (SNCF, Network Rail), and manufacturing.
+- *Choco* — open source (Java), winner of MiniZinc Challenge 2024 Fixed Search category (score 279.00), strongest in pure CP propagation quality.
+- *Gecode* — open source (C++), highly modular, widely used in academic research and the MiniZinc reference implementation. Supports parallel portfolio solving via Gecode/Par.
+- *MiniCP* — educational open-source CP framework (Java/Python), designed for teaching CP algorithm implementation.
 
   **SAT Solvers** operate on propositional [[Satisfiability]] (Boolean variables, clause constraints) and underpin many CP and formal verification systems:
-  - *CaDiCaL* — open source, modern CDCL solver (Armin Biere), entered SAT Competition 2024. CaDiCaL 2.0 introduced improved inprocessing and clause subsumption.
-  - *Kissat* — open source, C port of CaDiCaL with optimised data structures; dominated SAT competition 2020-2022, with all top-ten 2022 solvers being Kissat descendants.
-  - *MiniSat* — historically influential open-source solver (Eén & Sörensson, 2003) that established the modern CDCL architecture.
+
+- *CaDiCaL* — open source, modern CDCL solver (Armin Biere), entered SAT Competition 2024. CaDiCaL 2.0 introduced improved inprocessing and clause subsumption.
+- *Kissat* — open source, C port of CaDiCaL with optimised data structures; dominated SAT competition 2020-2022, with all top-ten 2022 solvers being Kissat descendants.
+- *MiniSat* — historically influential open-source solver (Eén & Sörensson, 2003) that established the modern CDCL architecture.
 
   **SMT (Satisfiability Modulo Theories) Solvers** extend SAT with theory-specific reasoning over arithmetic, arrays, bitvectors, strings, and uninterpreted functions:
-  - *Z3* — Microsoft Research, open source, industry standard for software verification, symbolic execution, and program analysis. Used in LLVM's Clang static analyser, the Dafny verifier, and countless program analysis tools.
-  - *CVC5* — academic open-source SMT solver (Stanford, Iowa, NYU collaboration), strong on quantified formulas and string constraints.
-  - *Yices 2* — SRI International, competitive performance on linear arithmetic; used in hardware verification pipelines.
+
+- *Z3* — Microsoft Research, open source, industry standard for software verification, symbolic execution, and program analysis. Used in LLVM's Clang static analyser, the Dafny verifier, and countless program analysis tools.
+- *CVC5* — academic open-source SMT solver (Stanford, Iowa, NYU collaboration), strong on quantified formulas and string constraints.
+- *Yices 2* — SRI International, competitive performance on linear arithmetic; used in hardware verification pipelines.
 
   **MIP (Mixed-Integer Programming) Solvers** combine [[Linear Programming]] relaxation with [[Branch and Bound]] integer search:
-  - *Gurobi* — commercial, consistently top-ranked in academic benchmarks, widely deployed in [[Operations Research]], finance, energy, and logistics.
-  - *CPLEX (IBM)* — commercial, tight integration with CP Optimizer for hybrid CP/MIP solving.
-  - *SCIP* — open-source academic MIP solver (Zuse Institute Berlin), used for research and education; SCIP-Jack specialises on Steiner tree problems.
-  - *HiGHS* — open source (University of Edinburgh), high-performance LP/MIP solver gaining rapid adoption in the open-source community.
+
+- *Gurobi* — commercial, consistently top-ranked in academic benchmarks, widely deployed in [[Operations Research]], finance, energy, and logistics.
+- *CPLEX (IBM)* — commercial, tight integration with CP Optimizer for hybrid CP/MIP solving.
+- *SCIP* — open-source academic MIP solver (Zuse Institute Berlin), used for research and education; SCIP-Jack specialises on Steiner tree problems.
+- *HiGHS* — open source (University of Edinburgh), high-performance LP/MIP solver gaining rapid adoption in the open-source community.
 
   **Numerical / Continuous Constraint Solvers** handle real-domain constraints via [[Interval Arithmetic]]:
-  - *Realpaver* — interval-based complete solver for nonlinear systems of equations and inequalities; used in geometric constraint solving for [[Computer-Aided Design]].
-  - *RealPaver / GloptiPoly* — polynomial global optimisation via moment/SOS hierarchies.
-  - Physics constraint solvers in game engines (PhysX, Bullet, MuJoCo, Havok) implement iterative constraint solving (Gauss-Seidel / PGS) and position-based dynamics (PBD) for contact, joint, and soft-body simulation.
+
+- *Realpaver* — interval-based complete solver for nonlinear systems of equations and inequalities; used in geometric constraint solving for [[Computer-Aided Design]].
+- *RealPaver / GloptiPoly* — polynomial global optimisation via moment/SOS hierarchies.
+- Physics constraint solvers in game engines (PhysX, Bullet, MuJoCo, Havok) implement iterative constraint solving (Gauss-Seidel / PGS) and position-based dynamics (PBD) for contact, joint, and soft-body simulation.
 
   **Specialised GPU-Accelerated Solvers**: Recent systems achieve massively parallel [[Local Search]] (min-conflicts, simulated annealing) across thousands of GPU threads, enabling interactive-rate constraint solving for [[Physics Simulation]] and [[Spatial Computing]].
 
@@ -149,21 +154,23 @@ A constraint solver is a computational engine that finds assignments of values t
   | PhysX 5 | Physics | NVIDIA SDK | Game engines / robotics | — |
 
   **Key Benchmarking Standards:**
-  - *MiniZinc Challenge* (annual since 2008): 100 model instances across scheduling, graph theory, configuration; scored by solution quality and speed. OR-Tools has dominated 2020–2025 across free-search categories.
-  - *SAT Competition* (annual since 2002, co-located with SAT/CP conferences): industrial, crafted, and random instance tracks; CaDiCaL and Kissat have dominated 2020–2024 UNSAT tracks.
-  - *Hardware Model Checking Competition (HWMCC)*: evaluates BMC and IC3/PDR solvers on industrial VLSI hardware circuits; rIC3 and IC3ref achieved top results in 2024.
-  - *XCSP Competition*: evaluates CP solvers on XML-standardised CSP/COP instances; complements MiniZinc with different benchmark families.
-  - *CPAIOR* (annual): academic conference combining CP and OR benchmarks, with special issue competitions for specific problem families (RCPSP, VRPTW, nurse rostering).
+
+- *MiniZinc Challenge* (annual since 2008): 100 model instances across scheduling, graph theory, configuration; scored by solution quality and speed. OR-Tools has dominated 2020–2025 across free-search categories.
+- *SAT Competition* (annual since 2002, co-located with SAT/CP conferences): industrial, crafted, and random instance tracks; CaDiCaL and Kissat have dominated 2020–2024 UNSAT tracks.
+- *Hardware Model Checking Competition (HWMCC)*: evaluates BMC and IC3/PDR solvers on industrial VLSI hardware circuits; rIC3 and IC3ref achieved top results in 2024.
+- *XCSP Competition*: evaluates CP solvers on XML-standardised CSP/COP instances; complements MiniZinc with different benchmark families.
+- *CPAIOR* (annual): academic conference combining CP and OR benchmarks, with special issue competitions for specific problem families (RCPSP, VRPTW, nurse rostering).
 
   ## Use Cases
-  - **Industrial [[Planning and Scheduling]]**: OR-Tools CP-SAT is used by Google to schedule maintenance windows for cloud infrastructure hypervisor hosts, balancing host availability against VM migration costs and time-window constraints. IBM CP Optimizer is deployed by airlines (Air France KLM crew scheduling), rail operators (Deutsche Bahn, Network Rail), and manufacturing plants (Airbus, Toyota) for production sequencing and resource allocation. Network Rail's nightly engineering possession scheduling model encodes tens of thousands of constraints — train service impacts, equipment availability, safety clearance windows, possession territory adjacency — and solves nightly to produce the maintenance plan for the following operational day. Air France uses CP Optimizer to solve the crew pairing problem (monthly) and daily re-optimisation under disruption, significantly reducing deadhead crew cost.
-  - **[[Formal Verification]] and Hardware Design**: CaDiCaL/Kissat power bounded model checking in hardware verification flows for VLSI chips. Z3 is the backend for the Dafny program verification language (Microsoft) and is embedded in the CBMC bounded model checker, the Infer static analyser (Meta), and numerous academic verification tools. The Hardware Model Checking Competition 2024 evaluated state-of-the-art BMC and PDR solvers on industrial circuits; rIC3 and IC3ref achieved top results using tight SAT/model-checker integration. At AMD, formal verification of GPU microarchitecture using property checking (Jasper Gold, Synopsys VC Formal) runs SAT/SMT instances with hundreds of millions of clauses over multi-week wall-clock times.
-  - **[[Robotics]] and [[Motion Planning]]**: MuJoCo (DeepMind, open-sourced 2022) uses generalised velocity-level constraint solving for articulated rigid body simulation, and is the dominant simulator for reinforcement learning of robot locomotion and manipulation. TrajOpt and CHOMP frame trajectory optimisation as continuous constraint satisfaction with collision avoidance penalty terms. Projection-based constraint solvers (2025, arXiv:2506.14865) achieve >100 Hz planning for 7-DOF robot arms, enabling reactive planning in dynamic environments. Boston Dynamics Spot and Atlas robots use proprietary continuous constraint solvers for whole-body control, resolving joint torque, kinematic, and contact stability constraints at 1 kHz. Inverse kinematics solvers in animation (Unreal MetaHuman, Unity Avatar Mask) use iterative constraint satisfaction for real-time character posing.
-  - **[[Computer-Aided Design]]**: Geometric constraint solvers in CAD systems (SolidWorks, CATIA, Siemens NX) enforce dimensional and geometric constraints (parallelism, coincidence, concentricity, distance) between sketch entities using dedicated graph-based solvers that decompose the constraint graph into solvable subproblems. The D-Cubed 2D DCM (Dimensional Constraint Manager) and 3D DCM components power geometric constraint solving in Siemens NX, SolidWorks, and PTC Creo. CATIA's geometric modeller uses a constraint graph decomposition into sequential/parallel/well-constrained subproblems, solving each subsystem with Newton-Raphson methods. Constraint-[[Based Design]] paradigms in FreeCAD and OpenSCAD expose the underlying CSP solving directly to parametric model users.
-  - **[[Physics Simulation]] and Games**: Position-based dynamics (PBD) and impulse-based constraint solvers in PhysX (NVIDIA), Bullet, and Havok resolve collision contacts, joint constraints, and soft-body deformation at interactive frame rates. PhysX 5 introduces GPU-accelerated Temporal Gauss-Seidel (TGS) constraint iteration, improving stability for stiff joint chains (robotic arms, ragdolls) at interactive simulation rates. NVIDIA Isaac Sim (2025) uses GPU-accelerated MuJoCo-compatible physics for robot learning simulation at thousands of environment instances per second, enabling sim-to-real transfer research at scale. Physarum-inspired constraint relaxation algorithms are explored for fabric simulation and volumetric elastic body dynamics.
-  - **Supply Chain and Logistics**: Gurobi and CPLEX solve vehicle routing problems (VRP), warehouse slot assignment, network design, and production planning at logistics firms. Amazon, UPS, and DHL deploy MIP solvers for last-mile delivery route optimisation. OR-Tools' Vehicle Routing extension provides a purpose-built constraint propagation layer for time-window, capacity, and pickup-delivery constraints over large vehicle fleets. Amazon Robotics' Kiva system uses CP-based task assignment to coordinate hundreds of mobile robots in fulfilment centres, solving real-time path and priority constraint problems.
-  - **[[Neuro-Symbolic AI]] Integration**: ConstraintLLM (EMNLP 2025) uses a fine-tuned LLM to generate MiniZinc constraint models from natural language industrial problem descriptions, with a CP solver backend for exact solving. LLM+solver hybrid systems outperform pure LLM chain-of-thought on constraint-heavy problems (Zebra puzzles, LSAT logic games) by delegating combinatorial search to exact symbolic engines. The DCP-Bench-Open (2025) evaluates LLMs on discrete combinatorial problem modelling, providing a systematic benchmark for this emergent capability. Scaling neuro-symbolic problem solving (arXiv:2508.20978) explores solver-free learning of constraints and objectives from data, enabling constraint discovery without hand-specified models. The "Formalize, Don't Optimize" study (arXiv:2605.12421) conclusively demonstrated that LLMs should produce formal CP/MIP models rather than heuristic code, establishing solver-backed formalisation as the canonical pattern for LLM-assisted combinatorial problem solving.
-  - **[[Machine Learning]] and Safe AI**: Healthcare scheduling (arXiv:2409.07547) combines OR-Tools CP-SAT with ML demand forecasting to produce nurse shift schedules that satisfy both capacity constraints and predicted demand distributions, demonstrating the complementarity of data-driven prediction and exact constraint solving in regulated domains. Constrained machine learning pipelines for credit scoring, medical diagnosis, and autonomous driving all deploy constraint solvers to verify or enforce that ML model outputs satisfy regulatory fairness and safety constraints — a use case accelerating rapidly under EU AI Act obligations (full application August 2026) that mandate documented, auditable constraint satisfaction for high-risk AI systems.
+
+- **Industrial [[Planning and Scheduling]]**: OR-Tools CP-SAT is used by Google to schedule maintenance windows for cloud infrastructure hypervisor hosts, balancing host availability against VM migration costs and time-window constraints. IBM CP Optimizer is deployed by airlines (Air France KLM crew scheduling), rail operators (Deutsche Bahn, Network Rail), and manufacturing plants (Airbus, Toyota) for production sequencing and resource allocation. Network Rail's nightly engineering possession scheduling model encodes tens of thousands of constraints — train service impacts, equipment availability, safety clearance windows, possession territory adjacency — and solves nightly to produce the maintenance plan for the following operational day. Air France uses CP Optimizer to solve the crew pairing problem (monthly) and daily re-optimisation under disruption, significantly reducing deadhead crew cost.
+- **[[Formal Verification]] and Hardware Design**: CaDiCaL/Kissat power bounded model checking in hardware verification flows for VLSI chips. Z3 is the backend for the Dafny program verification language (Microsoft) and is embedded in the CBMC bounded model checker, the Infer static analyser (Meta), and numerous academic verification tools. The Hardware Model Checking Competition 2024 evaluated state-of-the-art BMC and PDR solvers on industrial circuits; rIC3 and IC3ref achieved top results using tight SAT/model-checker integration. At AMD, formal verification of GPU microarchitecture using property checking (Jasper Gold, Synopsys VC Formal) runs SAT/SMT instances with hundreds of millions of clauses over multi-week wall-clock times.
+- **[[Robotics]] and [[Motion Planning]]**: MuJoCo (DeepMind, open-sourced 2022) uses generalised velocity-level constraint solving for articulated rigid body simulation, and is the dominant simulator for reinforcement learning of robot locomotion and manipulation. TrajOpt and CHOMP frame trajectory optimisation as continuous constraint satisfaction with collision avoidance penalty terms. Projection-based constraint solvers (2025, arXiv:2506.14865) achieve >100 Hz planning for 7-DOF robot arms, enabling reactive planning in dynamic environments. Boston Dynamics Spot and Atlas robots use proprietary continuous constraint solvers for whole-body control, resolving joint torque, kinematic, and contact stability constraints at 1 kHz. Inverse kinematics solvers in animation (Unreal MetaHuman, Unity Avatar Mask) use iterative constraint satisfaction for real-time character posing.
+- **[[Computer-Aided Design]]**: Geometric constraint solvers in CAD systems (SolidWorks, CATIA, Siemens NX) enforce dimensional and geometric constraints (parallelism, coincidence, concentricity, distance) between sketch entities using dedicated graph-based solvers that decompose the constraint graph into solvable subproblems. The D-Cubed 2D DCM (Dimensional Constraint Manager) and 3D DCM components power geometric constraint solving in Siemens NX, SolidWorks, and PTC Creo. CATIA's geometric modeller uses a constraint graph decomposition into sequential/parallel/well-constrained subproblems, solving each subsystem with Newton-Raphson methods. Constraint-[[Based Design]] paradigms in FreeCAD and OpenSCAD expose the underlying CSP solving directly to parametric model users.
+- **[[Physics Simulation]] and Games**: Position-based dynamics (PBD) and impulse-based constraint solvers in PhysX (NVIDIA), Bullet, and Havok resolve collision contacts, joint constraints, and soft-body deformation at interactive frame rates. PhysX 5 introduces GPU-accelerated Temporal Gauss-Seidel (TGS) constraint iteration, improving stability for stiff joint chains (robotic arms, ragdolls) at interactive simulation rates. NVIDIA Isaac Sim (2025) uses GPU-accelerated MuJoCo-compatible physics for robot learning simulation at thousands of environment instances per second, enabling sim-to-real transfer research at scale. Physarum-inspired constraint relaxation algorithms are explored for fabric simulation and volumetric elastic body dynamics.
+- **Supply Chain and Logistics**: Gurobi and CPLEX solve vehicle routing problems (VRP), warehouse slot assignment, network design, and production planning at logistics firms. Amazon, UPS, and DHL deploy MIP solvers for last-mile delivery route optimisation. OR-Tools' Vehicle Routing extension provides a purpose-built constraint propagation layer for time-window, capacity, and pickup-delivery constraints over large vehicle fleets. Amazon Robotics' Kiva system uses CP-based task assignment to coordinate hundreds of mobile robots in fulfilment centres, solving real-time path and priority constraint problems.
+- **[[Neuro-Symbolic AI]] Integration**: ConstraintLLM (EMNLP 2025) uses a fine-tuned LLM to generate MiniZinc constraint models from natural language industrial problem descriptions, with a CP solver backend for exact solving. LLM+solver hybrid systems outperform pure LLM chain-of-thought on constraint-heavy problems (Zebra puzzles, LSAT logic games) by delegating combinatorial search to exact symbolic engines. The DCP-Bench-Open (2025) evaluates LLMs on discrete combinatorial problem modelling, providing a systematic benchmark for this emergent capability. Scaling neuro-symbolic problem solving (arXiv:2508.20978) explores solver-free learning of constraints and objectives from data, enabling constraint discovery without hand-specified models. The "Formalize, Don't Optimize" study (arXiv:2605.12421) conclusively demonstrated that LLMs should produce formal CP/MIP models rather than heuristic code, establishing solver-backed formalisation as the canonical pattern for LLM-assisted combinatorial problem solving.
+- **[[Machine Learning]] and Safe AI**: Healthcare scheduling (arXiv:2409.07547) combines OR-Tools CP-SAT with ML demand forecasting to produce nurse shift schedules that satisfy both capacity constraints and predicted demand distributions, demonstrating the complementarity of data-driven prediction and exact constraint solving in regulated domains. Constrained machine learning pipelines for credit scoring, medical diagnosis, and autonomous driving all deploy constraint solvers to verify or enforce that ML model outputs satisfy regulatory fairness and safety constraints — a use case accelerating rapidly under EU AI Act obligations (full application August 2026) that mandate documented, auditable constraint satisfaction for high-risk AI systems.
 
   ## Academic Context
   The foundational papers are Montanari (1974) on network constraint representations, Mackworth (1977) on arc consistency and the AC-3 algorithm, and Freuder (1978, 1982) on k-consistency theory and sufficient conditions for backtrack-free search. The CDCL SAT revolution is traced through Davis & Putnam (1960), Davis, Logemann & Loveland (1962) — establishing DPLL, the direct ancestor of all modern SAT solvers — and Marques-Silva & Sakallah (1999, GRASP) — introducing Conflict-Driven Clause Learning (CDCL) proper. The integration of CP and SAT was pioneered by Barták (1999), Boussemart et al. (2004, conflict-based heuristics for CSP), and Perron's work at Google on CP-SAT (2018–2024) which fused CDCL, CP global constraint propagation, and LP relaxation into a single engine. Rossi, van Beek & Walsh (2006) edited the definitive *Handbook of Constraint Programming*, a 900-page reference covering theory, algorithms, and applications that remains the field's standard text. The MiniZinc modelling language (Nethercote et al., 2007; Stuckey et al., 2014) standardised CP benchmarking and enabled systematic multi-solver comparison. The SAT competition (annual since 2002, organised by the SAT Association) and the MiniZinc Challenge (annual since 2008, organised at Monash University) provide standardised solver evaluation across hundreds of benchmark instances drawn from scheduling, graph theory, planning, and configuration domains. CP2025, co-located with SAT2025 in Glasgow, represented the 31st year of the CP conference series and saw the publication of 31 accepted papers across theory, algorithms, and applications.
@@ -176,46 +183,51 @@ A constraint solver is a computational engine that finds assignments of values t
 
   ## Solver Architecture Deep Dive
   **The propagation-search loop** is the architectural core of every CP and SAT solver:
-  - *Propagation phase*: each triggered constraint invokes its filtering algorithm, which removes domain values lacking support; changes propagate transitively through the constraint network until a fixed point or failure is detected
-  - *Search phase*: a branching decision selects a variable (MRV heuristic) and a value (least-constraining-value or domain-independent heuristic); the solver recurses into the branch
-  - *Conflict analysis*: on failure, CDCL solvers analyse the implication graph to learn a no-good clause; backjumping returns to the conflict level; the no-good prevents revisiting the failed assignment
-  - *Restart strategy*: after learning, solvers may restart with a random or Luby restart schedule, retaining learned clauses but resetting the search tree; restarts prevent getting stuck in bad search subtrees
-  - *Inprocessing*: between restarts, some solvers apply clause minimisation, subsumption checking, variable elimination (bounded resolution), or failed literal detection to simplify the problem
+
+- *Propagation phase*: each triggered constraint invokes its filtering algorithm, which removes domain values lacking support; changes propagate transitively through the constraint network until a fixed point or failure is detected
+- *Search phase*: a branching decision selects a variable (MRV heuristic) and a value (least-constraining-value or domain-independent heuristic); the solver recurses into the branch
+- *Conflict analysis*: on failure, CDCL solvers analyse the implication graph to learn a no-good clause; backjumping returns to the conflict level; the no-good prevents revisiting the failed assignment
+- *Restart strategy*: after learning, solvers may restart with a random or Luby restart schedule, retaining learned clauses but resetting the search tree; restarts prevent getting stuck in bad search subtrees
+- *Inprocessing*: between restarts, some solvers apply clause minimisation, subsumption checking, variable elimination (bounded resolution), or failed literal detection to simplify the problem
 
   **Hybrid CP/SAT/LP architecture** (OR-Tools CP-SAT model):
-  - CDCL SAT core handles the primary Boolean constraint propagation and no-good learning
-  - CP global constraint propagators (AllDifferent, Cumulative, etc.) operate as theory solvers called by the CDCL core when relevant variables are assigned
-  - LP relaxation solver (HiGHS) computes a linear relaxation at each branch node, providing lower bounds and cutting planes that tighten the CP search
-  - Objective-shaving worker: a dedicated search thread iteratively tightens the objective bound by fixing portions of the objective expression and solving sub-problems, improving lower bounds faster than the primary CDCL search
-  - Portfolio workers: multiple search threads run with distinct random seeds and heuristic configurations; learned clauses (no-goods) are shared across threads via a shared clause database
+
+- CDCL SAT core handles the primary Boolean constraint propagation and no-good learning
+- CP global constraint propagators (AllDifferent, Cumulative, etc.) operate as theory solvers called by the CDCL core when relevant variables are assigned
+- LP relaxation solver (HiGHS) computes a linear relaxation at each branch node, providing lower bounds and cutting planes that tighten the CP search
+- Objective-shaving worker: a dedicated search thread iteratively tightens the objective bound by fixing portions of the objective expression and solving sub-problems, improving lower bounds faster than the primary CDCL search
+- Portfolio workers: multiple search threads run with distinct random seeds and heuristic configurations; learned clauses (no-goods) are shared across threads via a shared clause database
 
   **Global constraint filtering algorithms**:
-  - AllDifferent (Régin 1994): build a bipartite graph (values × variables); maximum bipartite matching identifies arc-consistent edges; O(n√n) per propagation call via Hopcroft-Karp
-  - Cumulative (Nuijten 1994, Baptiste et al. 2001): edge-finding (O(n log n)) and not-first/not-last rules identify mandatory task intervals and deduce earliest start / latest end adjustments
-  - GCC (Régin 1996): network flow formulation; assignment counts must lie in [lv, uv]; O(n·|D|) per call
-  - Circuit / Hamiltonian path (Caseau & Laburthe 1997): subtour elimination via strongly connected components on the successor graph
-  - Regular (Pesant 2004): DFA traversal propagation, O(n·|Q|·|D|) per call where |Q| is the automaton state count
-  - Element: indexed array lookup constraint; O(n) propagation via domain intersection
-  - Sequence: bounded number of values from a given set must occur in every subsequence of length q; propagates via sliding-window flow reasoning
+
+- AllDifferent (Régin 1994): build a bipartite graph (values × variables); maximum bipartite matching identifies arc-consistent edges; O(n√n) per propagation call via Hopcroft-Karp
+- Cumulative (Nuijten 1994, Baptiste et al. 2001): edge-finding (O(n log n)) and not-first/not-last rules identify mandatory task intervals and deduce earliest start / latest end adjustments
+- GCC (Régin 1996): network flow formulation; assignment counts must lie in [lv, uv]; O(n·|D|) per call
+- Circuit / Hamiltonian path (Caseau & Laburthe 1997): subtour elimination via strongly connected components on the successor graph
+- Regular (Pesant 2004): DFA traversal propagation, O(n·|Q|·|D|) per call where |Q| is the automaton state count
+- Element: indexed array lookup constraint; O(n) propagation via domain intersection
+- Sequence: bounded number of values from a given set must occur in every subsequence of length q; propagates via sliding-window flow reasoning
 
   **Variable and Value Ordering Heuristics (detailed)**:
   Variable ordering (choosing which variable to branch on next):
-  - *MRV (Minimum Remaining Values) / Fail-First*: select the variable with the fewest remaining domain values; reduces average tree depth because the most constrained variable is processed first
-  - *Degree Heuristic*: among tied MRV variables, choose the one involved in the most constraints with unassigned variables; maximises propagation impact per branching decision
-  - *DOM/WDEG (Weighted Degree Heuristic, Boussemart et al. 2004)*: divide domain size by the weighted sum of constraint arities, where weights accumulate per constraint each time a conflict involving that constraint is detected; one of the best-performing heuristics on benchmark CSPs
-  - *VSIDS (Variable State Independent Decaying Sum)*: SAT-specific activity heuristic borrowed from CDCL solvers; activity score incremented for variables appearing in recent conflicts, decayed exponentially over time
-  - *Learned Heuristics (GNN-based, Gasse et al. 2019)*: bipartite graph neural network trained to imitate strong branching predicts branching variable from LP relaxation features at MIP branch nodes; 10–100× node count reduction on structured instances
-  - *RL-based heuristics (arXiv:2508.20056, 2025)*: reinforcement learning trains search-tree-minimising policies for CP scheduling benchmarks, outperforming all hand-crafted heuristics on RCPSP
+
+- *MRV (Minimum Remaining Values) / Fail-First*: select the variable with the fewest remaining domain values; reduces average tree depth because the most constrained variable is processed first
+- *Degree Heuristic*: among tied MRV variables, choose the one involved in the most constraints with unassigned variables; maximises propagation impact per branching decision
+- *DOM/WDEG (Weighted Degree Heuristic, Boussemart et al. 2004)*: divide domain size by the weighted sum of constraint arities, where weights accumulate per constraint each time a conflict involving that constraint is detected; one of the best-performing heuristics on benchmark CSPs
+- *VSIDS (Variable State Independent Decaying Sum)*: SAT-specific activity heuristic borrowed from CDCL solvers; activity score incremented for variables appearing in recent conflicts, decayed exponentially over time
+- *Learned Heuristics (GNN-based, Gasse et al. 2019)*: bipartite graph neural network trained to imitate strong branching predicts branching variable from LP relaxation features at MIP branch nodes; 10–100× node count reduction on structured instances
+- *RL-based heuristics (arXiv:2508.20056, 2025)*: reinforcement learning trains search-tree-minimising policies for CP scheduling benchmarks, outperforming all hand-crafted heuristics on RCPSP
   Value ordering (choosing which domain value to assign first):
-  - *Least Constraining Value (LCV)*: choose the value that removes the fewest values from neighbouring variable domains, preserving flexibility for subsequent assignments
-  - *Value Prediction (PMC11753336, 2024)*: supervised learning trains a value-selection heuristic from historical CP solver solutions; reduces wasted assignments on structured problems
-  - *Random (with restarts)*: random value selection combined with frequent Luby restarts provides portfolio diversity, enabling portfolio solvers to cover broad heuristic space
+- *Least Constraining Value (LCV)*: choose the value that removes the fewest values from neighbouring variable domains, preserving flexibility for subsequent assignments
+- *Value Prediction (PMC11753336, 2024)*: supervised learning trains a value-selection heuristic from historical CP solver solutions; reduces wasted assignments on structured problems
+- *Random (with restarts)*: random value selection combined with frequent Luby restarts provides portfolio diversity, enabling portfolio solvers to cover broad heuristic space
 
   **Clause learning and restart strategies in SAT/CP**:
-  - *CDCL (Conflict-Driven Clause Learning)*: on each conflict, analyse the implication graph (the directed graph of unit propagation steps), identify the Unique Implication Point (UIP), derive a conflict clause that is the negation of the UIP cut, and add it to the clause database
-  - *Clause deletion*: periodic removal of low-quality learned clauses (those with high LBD — Literal Block Distance — scores); prevents memory blowup in long solver runs
-  - *Restarts*: after a fixed or Luby-scheduled number of conflicts, restart search (resetting variable assignments but retaining learned clauses and VSIDS scores); prevents solver from getting trapped in bad search subtrees
-  - *Inprocessing*: between restarts, apply clause minimisation (removing redundant literals from learned clauses), bounded variable elimination, and self-subsumption — reducing clause database size without losing information
+
+- *CDCL (Conflict-Driven Clause Learning)*: on each conflict, analyse the implication graph (the directed graph of unit propagation steps), identify the Unique Implication Point (UIP), derive a conflict clause that is the negation of the UIP cut, and add it to the clause database
+- *Clause deletion*: periodic removal of low-quality learned clauses (those with high LBD — Literal Block Distance — scores); prevents memory blowup in long solver runs
+- *Restarts*: after a fixed or Luby-scheduled number of conflicts, restart search (resetting variable assignments but retaining learned clauses and VSIDS scores); prevents solver from getting trapped in bad search subtrees
+- *Inprocessing*: between restarts, apply clause minimisation (removing redundant literals from learned clauses), bounded variable elimination, and self-subsumption — reducing clause database size without losing information
 
   The geometry-physics intersection of constraint solving — solving systems of rigid-body contact and articulation constraints — has its own rich literature. Baraff (1989) formalised the contact constraint formulation for rigid bodies; Featherstone (1987) introduced spatial algebra for articulated body dynamics, reducing multi-body constraint solving from O(n³) to O(n). Macklin et al. (2016) introduced XPBD (Extended Position-Based Dynamics), enabling viscoelastic compliant constraint solving at GPU-native rates, now the dominant approach in game engines and robotic simulation. The SolSearch framework (2025, arXiv:2502.14328) applies LLM-guided code generation to produce optimised SAT-solving implementations, illustrating the emerging intersection of LLMs and solver engineering.
 
@@ -227,53 +239,57 @@ A constraint solver is a computational engine that finds assignments of values t
   Modern constraint solvers increasingly produce machine-checkable certificates of their results, enabling independent verification of both satisfying assignments and unsatisfiability claims:
 
   **DRAT (Deletion Resolution Asymmetric Tautology) proofs** — the standard format for SAT solver certification:
-  - Produced by all major SAT solvers (CaDiCaL, Kissat, Glucose) for UNSAT answers
-  - Checked by independent verifiers (DRAT-trim, gratuit, VeriPB) that replay the clause learning steps and confirm no valid assignment was erroneously excluded
-  - Mandatory in the SAT Competition since 2013; proofs for industrial instances can reach terabytes but are validated in hours
-  - DRUP (Deletion Resolution Unit Propagation), GRAT, and LRAT are simpler sub-formats enabling faster checking at the cost of reduced solver flexibility
+
+- Produced by all major SAT solvers (CaDiCaL, Kissat, Glucose) for UNSAT answers
+- Checked by independent verifiers (DRAT-trim, gratuit, VeriPB) that replay the clause learning steps and confirm no valid assignment was erroneously excluded
+- Mandatory in the SAT Competition since 2013; proofs for industrial instances can reach terabytes but are validated in hours
+- DRUP (Deletion Resolution Unit Propagation), GRAT, and LRAT are simpler sub-formats enabling faster checking at the cost of reduced solver flexibility
 
   **MIP proof certificates**:
-  - LP duality certificates provide lower bounds provably better than any feasible assignment below the bound; Farkas lemma certificates prove infeasibility by exhibiting a dual ray
-  - Cutting-plane proofs (Gurobi, CPLEX) certify that no integer solution exists with objective better than the proven bound; SCIP supports MIP certificate output
-  - VeriPB (Bogaerts et al., 2023) extends proof logging to pseudo-Boolean constraints and cutting-plane certificates, applicable to CP global constraints
+
+- LP duality certificates provide lower bounds provably better than any feasible assignment below the bound; Farkas lemma certificates prove infeasibility by exhibiting a dual ray
+- Cutting-plane proofs (Gurobi, CPLEX) certify that no integer solution exists with objective better than the proven bound; SCIP supports MIP certificate output
+- VeriPB (Bogaerts et al., 2023) extends proof logging to pseudo-Boolean constraints and cutting-plane certificates, applicable to CP global constraints
 
   **Model checking witnesses**:
-  - SAT-based BMC counter-examples (concrete execution traces) serve as witnesses to safety violations; IC3/PDR inductive invariants serve as safety certificates
-  - AIGER and BTOR2 formats standardise witness encoding for hardware model checking; HWMCC 2024 required counter-example witnesses and invariant certificates alongside solver results
-  - UNSAT certificates in hardware verification (proved safety) are independently checked by certifying model checkers such as CoqPilot and Isabelle/HOL integrations
+
+- SAT-based BMC counter-examples (concrete execution traces) serve as witnesses to safety violations; IC3/PDR inductive invariants serve as safety certificates
+- AIGER and BTOR2 formats standardise witness encoding for hardware model checking; HWMCC 2024 required counter-example witnesses and invariant certificates alongside solver results
+- UNSAT certificates in hardware verification (proved safety) are independently checked by certifying model checkers such as CoqPilot and Isabelle/HOL integrations
 
   **Importance for safety-critical deployment**:
-  - EU AI Act obligations for high-risk AI systems (full application August 2026) include requirements for human oversight and technical documentation; solver proof certificates provide auditable records of combinatorial reasoning
-  - Avionics (DO-178C) and medical device (IEC 62304) safety standards require tool qualification; DRAT proof checking enables SAT/SMT solvers to achieve tool qualification by separating the trust requirement from the solving engine to the (simpler) proof checker
-  - Certified solving reduces the trusted code base: even if the solver itself has bugs, the proof checker (orders of magnitude simpler) provides the final correctness guarantee
+
+- EU AI Act obligations for high-risk AI systems (full application August 2026) include requirements for human oversight and technical documentation; solver proof certificates provide auditable records of combinatorial reasoning
+- Avionics (DO-178C) and medical device (IEC 62304) safety standards require tool qualification; DRAT proof checking enables SAT/SMT solvers to achieve tool qualification by separating the trust requirement from the solving engine to the (simpler) proof checker
+- Certified solving reduces the trusted code base: even if the solver itself has bugs, the proof checker (orders of magnitude simpler) provides the final correctness guarantee
 
   ## Constraint Modelling Languages (Detailed)
   The solver ecosystem requires standardised input languages to separate model specification from solving strategy:
 
-  - *MiniZinc (Nethercote et al. 2007, Monash University)*:
-    - High-level solver-independent language; models compiled via the minizinc compiler to FlatZinc
-    - Rich built-in global constraint library (AllDifferent, Cumulative, Circuit, Element, Regular, etc.)
-    - FlatZinc back-ends: Gecode, Chuffed, OR-Tools, CPLEX, Gurobi, Yices, OptiMathSAT, Choco
-    - Annual MiniZinc Challenge provides independent multi-solver comparison across standardised problem libraries
-    - MiniZinc 2.9.x (2025) supports parallel solving, multi-objective optimisation, and extended global constraint library
-  - *XCSP3 (Boussemart, Hemery, Lecoutre 2005, updated 2023)*:
-    - XML-based format standardising CSP and COP instances for solver interoperability
-    - Used in XCSP Competition (annual) for independent solver benchmarking
-    - Supports all constraint arity levels, global constraints, objectives, and satisfaction/optimisation modes
-  - *OPL (IBM ILOG Optimization Programming Language)*:
-    - High-level modelling language tightly integrated with CPLEX and CP Optimizer back-ends
-    - Supports both MIP (CPLEX) and CP (CP Optimizer) solving from the same model with engine directives
-    - Widely deployed in enterprise scheduling, configuration, and logistics at Fortune 500 companies
-  - *Essence/Conjure (Frisch, Jefferson, Miguel, Nightingale, Akgün et al.; University of St Andrews)*:
-    - Abstract specification language above MiniZinc level; Conjure translates Essence models to MiniZinc
-    - Savile Row performs second-stage optimisation, symmetry breaking, and constraint reformulation
-    - Automatic model reformulation discovers problem-specific strengthenings that would require expert knowledge manually
-    - Presented at ModRef workshops (CP2024, CP2025) with new results on streaming reformulation and solver-portfolio selection
-  - *Answer Set Programming (ASP, Gelfond & Lifschitz 1988)*:
-    - Logic-based constraint language with non-monotonic, closed-world semantics
-    - Clingo (Potsdam Potassco group) is the dominant ASP solver; integrates with Python for hybrid CP+ML pipelines
-    - Used for planning (AI planning in discrete time), configuration, and diagnosis problems
-  - *OR-Tools Python API*: the programmatic alternative to declarative languages; OR-Tools CP-SAT is increasingly used directly via Python API, with the 2025 study "Formalize, Don't Optimize" confirming Python+OR-Tools as the highest-accuracy solver-backed LLM interaction pattern
+- *MiniZinc (Nethercote et al. 2007, Monash University)*:
+  - High-level solver-independent language; models compiled via the minizinc compiler to FlatZinc
+  - Rich built-in global constraint library (AllDifferent, Cumulative, Circuit, Element, Regular, etc.)
+  - FlatZinc back-ends: Gecode, Chuffed, OR-Tools, CPLEX, Gurobi, Yices, OptiMathSAT, Choco
+  - Annual MiniZinc Challenge provides independent multi-solver comparison across standardised problem libraries
+  - MiniZinc 2.9.x (2025) supports parallel solving, multi-objective optimisation, and extended global constraint library
+- *XCSP3 (Boussemart, Hemery, Lecoutre 2005, updated 2023)*:
+  - XML-based format standardising CSP and COP instances for solver interoperability
+  - Used in XCSP Competition (annual) for independent solver benchmarking
+  - Supports all constraint arity levels, global constraints, objectives, and satisfaction/optimisation modes
+- *OPL (IBM ILOG Optimization Programming Language)*:
+  - High-level modelling language tightly integrated with CPLEX and CP Optimizer back-ends
+  - Supports both MIP (CPLEX) and CP (CP Optimizer) solving from the same model with engine directives
+  - Widely deployed in enterprise scheduling, configuration, and logistics at Fortune 500 companies
+- *Essence/Conjure (Frisch, Jefferson, Miguel, Nightingale, Akgün et al.; University of St Andrews)*:
+  - Abstract specification language above MiniZinc level; Conjure translates Essence models to MiniZinc
+  - Savile Row performs second-stage optimisation, symmetry breaking, and constraint reformulation
+  - Automatic model reformulation discovers problem-specific strengthenings that would require expert knowledge manually
+  - Presented at ModRef workshops (CP2024, CP2025) with new results on streaming reformulation and solver-portfolio selection
+- *Answer Set Programming (ASP, Gelfond & Lifschitz 1988)*:
+  - Logic-based constraint language with non-monotonic, closed-world semantics
+  - Clingo (Potsdam Potassco group) is the dominant ASP solver; integrates with Python for hybrid CP+ML pipelines
+  - Used for planning (AI planning in discrete time), configuration, and diagnosis problems
+- *OR-Tools Python API*: the programmatic alternative to declarative languages; OR-Tools CP-SAT is increasingly used directly via Python API, with the 2025 study "Formalize, Don't Optimize" confirming Python+OR-Tools as the highest-accuracy solver-backed LLM interaction pattern
 
   ## Constraint Acquisition and Learning
   Constraint solvers require a formal problem specification as input — a set of variables, domains, and constraints. Historically this specification was produced by hand, requiring specialist OR or CP expertise. Constraint acquisition addresses the inverse problem: given a set of positive examples (solutions) and negative examples (non-solutions), automatically infer the constraint network that separates them. The CONACQ framework (Bessière, Coletta, O'Sullivan, et al., LIRMM) formalised this as a SAT-based version space algorithm that maintains a set of candidate constraints consistent with all observed examples and uses active learning (membership queries to the user or an oracle) to efficiently converge to the target network. Subsequent developments include QUACQ (Query-Driven Constraint Acquisition, 2013) which focuses queries on detected conflicts to minimise user interaction; GuessAndCheck (Tsouros et al.) which combines neural network classification with constraint inference to scale to larger constraint libraries; and the Overcoming Over-Fitting variant (arXiv:2509.24489) which uses regularisation to prevent the acquisition system from learning an over-specific constraint model from noisy training data. Constraint acquisition is directly relevant to [[Neuro-Symbolic AI]] integration: rather than asking an LLM to generate a constraint model from scratch, a hybrid system can propose candidate constraints from a library of global constraints, test them against labelled examples, and iterate — combining the LLM's language understanding with the solver's formal reasoning to bootstrap models from descriptions with fewer tokens and fewer hallucinations. The growing SeqAcq and BayesAcq approaches handle noise in training sets using sequential analysis and naive Bayes classification respectively, enabling acquisition from real-world datasets where some examples may be mislabelled. Constraint acquisition represents the modelling complement to the solving advances discussed elsewhere in this entry: while solving concerns how to efficiently find assignments satisfying a given constraint set, acquisition concerns how to discover the constraint set from observations.
@@ -325,25 +341,26 @@ A constraint solver is a computational engine that finds assignments of values t
   6. **Solver-as-Reasoning-Module in AI Agents**: Constraint solvers are increasingly positioned not as standalone tools but as reasoning modules embedded within larger AI agent architectures. An LLM agent might call a CP-SAT solver as a tool to handle any subtask requiring exact discrete reasoning (scheduling, planning, combinatorial selection), while handling natural language understanding, context management, and user interaction natively. The "Formalize, Don't Optimize" study (2025) empirically established that this solver-as-tool pattern consistently outperforms end-to-end LLM reasoning on combinatorial problems; by 2028 it will be a standard pattern in agentic AI deployment frameworks. EU AI Act requirements for high-risk AI systems — fully applicable August 2026 — are accelerating adoption of constraint-based specification and formal reasoning in regulated domains, as these provide the auditable decision traces that compliance requires. Integration with [[Neuro-Symbolic AI]] platforms will position constraint solvers as the exact reasoning backbone for AI systems that must guarantee correctness under hard combinatorial constraints.
 
   ## Key Terminology Glossary
-  - **CP Solver** — a constraint programming engine that combines propagation, global constraints, and complete search; representative systems include OR-Tools CP-SAT, IBM ILOG CP Optimizer, Gecode, and Choco
-  - **SAT Solver** — a Boolean satisfiability engine; typically CDCL architecture processing clause-based propositional problems; representative systems include CaDiCaL, Kissat, and MiniSAT
-  - **SMT Solver** — a Satisfiability Modulo Theories engine extending SAT with arithmetic, arrays, strings, bit-vectors, and uninterpreted functions; Z3 (Microsoft Research), CVC5, and Yices 2 are the dominant systems
-  - **MIP Solver** — Mixed-Integer Programming solver combining LP relaxation with branch-and-bound and cutting planes; Gurobi, CPLEX, SCIP, and HiGHS are the leading commercial and open-source engines
-  - **CDCL** — Conflict-Driven Clause Learning; the algorithmic core of modern SAT solvers, enabling non-chronological backjumping by analysing the implication graph of constraint propagation steps to identify and record no-good clauses
-  - **GAC** — Generalised Arc Consistency; arc consistency extended to non-binary and global constraints; each value in each domain must have support in all constrained neighbouring domains through a consistent tuple extension
-  - **AllDifferent** — global constraint requiring all variable values to be distinct; has O(n√n) GAC filtering via maximum bipartite matching (Régin 1994); among the most widely deployed global constraints
-  - **Cumulative** — global constraint encoding a scheduling resource capacity bound across time; a set of tasks with start times, durations, and resource consumptions must not collectively exceed a capacity bound at any time point; filtered by edge-finding (O(n log n)) and energetic reasoning
-  - **PBD** — Position-Based Dynamics; iterative constraint solver for real-time physics simulation; each constraint is modelled as a projection onto a constraint manifold; Gauss-Seidel iteration over constraint projections converges to a consistent configuration
-  - **XPBD** — Extended Position-Based Dynamics (Macklin et al. 2016); adds compliance parameters to PBD constraints, enabling simulation of viscoelastic materials and soft joints at GPU-native rates; now dominant in game engines (PhysX 5, Unreal Engine 5)
-  - **QUBO** — Quadratic Unconstrained Binary Optimisation; native encoding for quantum annealers (D-Wave); any binary constraint satisfaction or optimisation problem can be encoded as minimising a quadratic objective over binary variables, but the QUBO encoding may require a quadratic number of auxiliary variables
-  - **CQM** — Constrained Quadratic Model; D-Wave's constraint-native model format that accepts constraints directly without penalty-term QUBO encoding, preserving sparsity and eliminating manual penalty coefficient tuning
-  - **No-good** — a clause learned from a conflict during CDCL search; encodes a minimal set of variable-value assignments responsible for a detected infeasibility; prevents the solver rediscovering the same failure state during subsequent search
-  - **Portfolio solver** — runs multiple solver configurations in parallel (different random seeds, heuristic policies, search strategies), returning the first solution found; OR-Tools CP-SAT implements portfolio solving with shared-clause databases across worker threads
-  - **Propagation engine** — the worklist-based component that enforces arc/GAC consistency by triggering constraint filtering algorithms whenever domains change; iterates until a fixed point or failure is detected
-  - **Inprocessing** — simplification techniques applied between restarts in SAT/CP solvers: clause minimisation, subsumption checking, variable elimination by bounded resolution, and failed literal detection; reduces problem size without losing solutions
-  - **Tree decomposition** — a structural decomposition of a constraint graph into a tree of overlapping subsets (bags) whose tree-width controls the tractability of constraint solving; problems with tree-width k can be solved in O(n · d^k) time, making structural analysis a practical presolve strategy
-  - **MiniZinc** — the standard CP modelling language developed at Monash University; solver-independent high-level models compiled to FlatZinc for back-end execution; the MiniZinc Challenge is the annual benchmark for CP solver performance
-  - **XCSP3** — XML-based standardised format for CSP and COP instances, used in the annual XCSP competition for solver interoperability benchmarking
+
+- **CP Solver** — a constraint programming engine that combines propagation, global constraints, and complete search; representative systems include OR-Tools CP-SAT, IBM ILOG CP Optimizer, Gecode, and Choco
+- **SAT Solver** — a Boolean satisfiability engine; typically CDCL architecture processing clause-based propositional problems; representative systems include CaDiCaL, Kissat, and MiniSAT
+- **SMT Solver** — a Satisfiability Modulo Theories engine extending SAT with arithmetic, arrays, strings, bit-vectors, and uninterpreted functions; Z3 (Microsoft Research), CVC5, and Yices 2 are the dominant systems
+- **MIP Solver** — Mixed-Integer Programming solver combining LP relaxation with branch-and-bound and cutting planes; Gurobi, CPLEX, SCIP, and HiGHS are the leading commercial and open-source engines
+- **CDCL** — Conflict-Driven Clause Learning; the algorithmic core of modern SAT solvers, enabling non-chronological backjumping by analysing the implication graph of constraint propagation steps to identify and record no-good clauses
+- **GAC** — Generalised Arc Consistency; arc consistency extended to non-binary and global constraints; each value in each domain must have support in all constrained neighbouring domains through a consistent tuple extension
+- **AllDifferent** — global constraint requiring all variable values to be distinct; has O(n√n) GAC filtering via maximum bipartite matching (Régin 1994); among the most widely deployed global constraints
+- **Cumulative** — global constraint encoding a scheduling resource capacity bound across time; a set of tasks with start times, durations, and resource consumptions must not collectively exceed a capacity bound at any time point; filtered by edge-finding (O(n log n)) and energetic reasoning
+- **PBD** — Position-Based Dynamics; iterative constraint solver for real-time physics simulation; each constraint is modelled as a projection onto a constraint manifold; Gauss-Seidel iteration over constraint projections converges to a consistent configuration
+- **XPBD** — Extended Position-Based Dynamics (Macklin et al. 2016); adds compliance parameters to PBD constraints, enabling simulation of viscoelastic materials and soft joints at GPU-native rates; now dominant in game engines (PhysX 5, Unreal Engine 5)
+- **QUBO** — Quadratic Unconstrained Binary Optimisation; native encoding for quantum annealers (D-Wave); any binary constraint satisfaction or optimisation problem can be encoded as minimising a quadratic objective over binary variables, but the QUBO encoding may require a quadratic number of auxiliary variables
+- **CQM** — Constrained Quadratic Model; D-Wave's constraint-native model format that accepts constraints directly without penalty-term QUBO encoding, preserving sparsity and eliminating manual penalty coefficient tuning
+- **No-good** — a clause learned from a conflict during CDCL search; encodes a minimal set of variable-value assignments responsible for a detected infeasibility; prevents the solver rediscovering the same failure state during subsequent search
+- **Portfolio solver** — runs multiple solver configurations in parallel (different random seeds, heuristic policies, search strategies), returning the first solution found; OR-Tools CP-SAT implements portfolio solving with shared-clause databases across worker threads
+- **Propagation engine** — the worklist-based component that enforces arc/GAC consistency by triggering constraint filtering algorithms whenever domains change; iterates until a fixed point or failure is detected
+- **Inprocessing** — simplification techniques applied between restarts in SAT/CP solvers: clause minimisation, subsumption checking, variable elimination by bounded resolution, and failed literal detection; reduces problem size without losing solutions
+- **Tree decomposition** — a structural decomposition of a constraint graph into a tree of overlapping subsets (bags) whose tree-width controls the tractability of constraint solving; problems with tree-width k can be solved in O(n · d^k) time, making structural analysis a practical presolve strategy
+- **MiniZinc** — the standard CP modelling language developed at Monash University; solver-independent high-level models compiled to FlatZinc for back-end execution; the MiniZinc Challenge is the annual benchmark for CP solver performance
+- **XCSP3** — XML-based standardised format for CSP and COP instances, used in the annual XCSP competition for solver interoperability benchmarking
 
   ## Research and Literature
   1. Mackworth, A.K. (1977). "Consistency in Networks of Relations." *Artificial Intelligence*, 8(1), 99–118. https://doi.org/10.1016/0004-3702(77)90007-8
@@ -388,5 +405,5 @@ A constraint solver is a computational engine that finds assignments of values t
   40. HiGHS Changelog, ERGO-Code, University of Edinburgh. https://ergo-code.github.io/HiGHS/dev/
   41. Freuder, E.C. (1990). "Complexity of K-Tree Structured Constraint Satisfaction Problems." *AAAI-1990*, 4–9.
 
-- ### Provenance
+### Provenance
 

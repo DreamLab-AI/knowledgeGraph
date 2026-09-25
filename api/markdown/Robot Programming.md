@@ -1,23 +1,29 @@
-
 Robot programming is the discipline of specifying the tasks, motions, and decision logic that a robot executes, ranging from low-level joint commands to high-level behavioural goals. It encompasses textual programming languages, graphical and teach-by-demonstration interfaces, and middleware frameworks that connect perception, planning, and actuation. The aim is to translate human intent into reliable, repeatable robot behaviour while respecting safety, timing, and hardware constraints.
 
 - [[Robot Programming]] is the practice of specifying the motions, tasks, and decision logic a robot executes, spanning low-level joint commands to high-level behaviours.
 - It draws on a [[Programming Language]] and middleware such as the [[Robot Operating System]] to connect perception, planning, and [[Robot Control]].
 - The discipline turns human intent into repeatable behaviour for [[Robotics]] and [[Automation]].
-- ### Overview
+
+### Overview
+
 - Robot programming spans several abstraction levels. At the lowest level, controllers receive joint or actuator commands at fixed cycle times; above this, motion primitives describe trajectories and end-effector poses; at the top, task-level descriptions express goals such as picking, welding, or navigating that planners decompose automatically.
 - Practitioners choose among textual languages, vendor-specific teach pendants, block-based visual editors, and learning-from-demonstration techniques where an operator guides the robot and the system records the resulting behaviour. Middleware frameworks provide reusable abstractions for messaging, hardware drivers, and coordinate transforms so applications remain portable across platforms.
 - Modern robot programming increasingly relies on simulation and digital twins to develop and validate behaviour before deployment, reducing wear and safety risk on physical hardware. Reliable timing, error handling, and safety interlocks are first-class concerns because programmed faults can cause physical harm.
-- ### Mechanisms
+
+### Mechanisms
+
 - Motion specification: defining target poses, velocities, and blends that the controller realises through interpolation.
 - Task decomposition: breaking high-level goals into sub-tasks that planners and skills can execute.
 - Middleware integration: using publish-subscribe and service interfaces to wire perception, planning, and actuation.
 - Teaching and demonstration: capturing operator-guided motions and converting them into reusable programs.
 - Simulation-first development: validating logic in a virtual environment before transfer to hardware.
-- ### Applications
+
+### Applications
+
 - Programming [[Industrial Robot]] cells for welding, assembly, and palletising in manufacturing [[Automation]].
 - Authoring navigation and manipulation behaviours on top of the [[Robot Operating System]].
 - Developing and testing controllers against a [[Simulation]] or [[Digital Twin]] before deployment.
 - Coordinating [[Trajectory Planning]] and [[Motion Planning]] for [[Robotic Manipulation]] tasks.
-- ### Provenance
+
+### Provenance
 

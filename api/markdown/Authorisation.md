@@ -1,83 +1,116 @@
-
 Authorisation is the process of determining and enforcing whether an authenticated principal—user, service, or device—has the right to perform a requested action on a protected resource. It operates downstream of authentication, translating verified identity claims into permitted operations according to configured access policies. Modern authorisation frameworks encompass role-based, attribute-based, relationship-based, and policy-as-code access control models, each balancing expressiveness with enforcement performance. Robust authorisation design underpins regulatory compliance, auditability, and the principle of least privilege across distributed digital systems.
 
-- ### Overview
-  - #### What It Is
-    - Authorisation (American English: "Authorization") answers the question "what are you allowed to do?" — in contrast to [[Authentication]], which answers "who are you?". The two concepts are orthogonal but complementary: a system must first authenticate a principal before it can authorise any action.
-    - A decision to grant or deny a request is called an **authorisation decision** and is produced by a **Policy Decision Point (PDP)**. A separate **Policy Enforcement Point (PEP)** intercepts the request and queries the PDP, then enforces the verdict. This separation, popularised by [[XACML]] and inherited by modern systems, keeps enforcement logic decoupled from policy logic.
-  - #### Why It Matters
-    - Incorrect or absent authorisation is consistently cited as one of the most critical web-application security vulnerabilities in the OWASP Top 10 (historically as "Broken Access Control"). Failures allow attackers to read, modify, or delete resources belonging to other users, exfiltrate sensitive data, or escalate privileges to administrative levels.
-    - Beyond security, authorisation is an operationally critical concern: misconfigured policies can lock legitimate users out of resources, impair service continuity, and trigger regulatory sanctions under frameworks such as [[ISO/IEC 27001]], GDPR, HIPAA, and SOC 2.
-  - #### How It Works
-    - At runtime, an authorisation flow typically proceeds as:
-      - A principal presents credentials to an identity provider, receiving a signed [[Access Token]] (e.g. a [[JSON Web Token]]) encoding claims about identity, roles, and scopes.
-      - When the principal requests a protected resource, the resource server or an interposing API gateway extracts and validates the token.
-      - The validated claims are evaluated against the applicable policy, either locally (embedded policy enforcement) or by querying a centralised [[Policy Engine]] such as [[Open Policy Agent]].
-      - The enforcement point allows or denies the request, and records the decision in an [[Audit Trail]].
+### Overview
 
-- ### Key Models and Mechanisms
-  - #### Role-Based Access Control (RBAC)
-    - [[Role-Based Access Control]] assigns permissions to roles rather than individual principals. Users are assigned to roles, inheriting the associated permissions. RBAC is simple to administer and auditable, making it dominant in enterprise environments. It maps naturally onto [[Separation of Duties]] requirements.
-    - Limitation: roles can proliferate ("role explosion"), and RBAC struggles to express context-dependent decisions (e.g. "allow only if the request originates from the corporate network during business hours").
-  - #### Attribute-Based Access Control (ABAC)
-    - [[Attribute-Based Access Control]] evaluates arbitrary attributes of the subject, resource, action, and environment at decision time. This enables fine-grained, context-sensitive policies ("a nurse may read patient records for patients assigned to their ward between 07:00 and 19:00"). ABAC is more expressive than RBAC but requires richer attribute infrastructure and more complex policy authoring.
-    - [[XACML]] (eXtensible Access Control Markup Language) is the canonical XML-based standard for ABAC policy expression and the PDP/PEP/PAP/PIP architecture.
-  - #### Relationship-Based Access Control (ReBAC)
-    - [[Relationship-Based Access Control]] expresses permissions in terms of graph relationships between entities (e.g. "a user may edit a document if they are a member of the owning team"). Google Zanzibar and its open-source derivatives (OpenFGA, SpiceDB) implement ReBAC at scale, supporting billions of permission tuples with millisecond latency.
-  - #### Policy-Based Access Control (PBAC) and Policy-as-Code
-    - [[Policy-Based Access Control]] generalises ABAC by treating the policy itself as a first-class, versionable artefact expressed in a declarative language. [[Open Policy Agent]] (OPA) evaluates Rego policies and is widely deployed in Kubernetes admission control, API gateways, and microservice meshes.
-    - Policy-as-code enables [[Infrastructure as Code]]-style workflows: policies are reviewed in pull requests, tested in CI/CD pipelines, and deployed alongside application code.
-  - #### Token-Based and Delegated Authorisation
-    - [[OAuth 2.0]] is the dominant delegation framework for the web, allowing resource owners to grant scoped access to third-party clients without sharing credentials. Access tokens encode scopes; refresh tokens enable long-lived delegated access.
-    - [[OpenID Connect]] layers identity assertion (ID tokens) on top of OAuth 2.0, enabling combined authentication and authorisation flows.
-    - [[JSON Web Token|JWTs]] are the prevalent token format, carrying signed claims that resource servers validate without contacting a central authority, enabling stateless, scalable authorisation.
-    - SPIFFE/SPIRE issues [[Secure Token Service|SVIDs]] (X.509 certificates or JWTs) to workloads in zero-trust service meshes, providing workload identity underpinning machine-to-machine authorisation.
+#### What It Is
 
-- ### Applications and Use Cases
-  - #### Web and API Security
-    - REST and GraphQL APIs use [[OAuth 2.0]] scopes and bearer tokens to restrict client access to specific resource types and operations. API gateways enforce authorisation before requests reach backend services.
-  - #### Cloud and Kubernetes Environments
-    - Cloud providers (AWS IAM, Azure RBAC, GCP IAM) implement RBAC and ABAC at scale to control access to cloud resources. Kubernetes admission webhooks integrate [[Open Policy Agent]] to authorise resource mutations at the control plane level.
-  - #### Zero Trust Architectures
-    - [[Zero Trust Architecture]] mandates continuous per-request authorisation rather than implicit trust based on network location. Every request from any principal—internal or external—is evaluated against policy, reducing blast radius from compromised credentials.
-  - #### Healthcare and Finance
-    - Health data ecosystems require fine-grained consent hierarchies: a patient may authorise a GP to read their records but not a pharmacist. SMART on FHIR extends [[OAuth 2.0]] for healthcare-specific authorisation scopes.
-    - Financial services use authorisation to enforce [[Separation of Duties]] in payment processing and trading platforms, preventing any single individual from both initiating and approving high-value transactions.
-  - #### AI Agents and Delegated AI
-    - Emerging use cases involve [[AI Agent|AI agents]] acting on behalf of human users—scheduling meetings, accessing files, or executing transactions. These scenarios require scoped, revocable delegated authorisation to prevent over-privileged autonomous action. The IETF is developing extensions to [[OAuth 2.0]] (e.g. RFC 9396 Rich Authorisation Requests) to express fine-grained intent for AI-agent delegation.
-  - #### Decentralised and Blockchain Contexts
-    - [[Decentralised Identity]] (W3C DIDs and Verifiable Credentials) shifts credential issuance off centralised identity providers, enabling self-sovereign authorisation flows. [[Smart Contract|Smart contracts]] on blockchains can enforce resource-access rules autonomously, with authorisation logic encoded immutably on-chain.
+- Authorisation (American English: "Authorization") answers the question "what are you allowed to do?" — in contrast to [[Authentication]], which answers "who are you?". The two concepts are orthogonal but complementary: a system must first authenticate a principal before it can authorise any action.
+- A decision to grant or deny a request is called an **authorisation decision** and is produced by a **Policy Decision Point (PDP)**. A separate **Policy Enforcement Point (PEP)** intercepts the request and queries the PDP, then enforces the verdict. This separation, popularised by [[XACML]] and inherited by modern systems, keeps enforcement logic decoupled from policy logic.
 
-- ### Standards and Context
-  - #### Standards Bodies
-    - **IETF OAuth Working Group** — maintains [[OAuth 2.0]] (RFC 6749), bearer tokens (RFC 6750), token introspection (RFC 7662), Rich Authorisation Requests (RFC 9396), and related extensions.
-    - **W3C** — standardises [[Decentralised Identity|DIDs]] (Decentralised Identifiers) and Verifiable Credentials, which underpin emerging self-sovereign authorisation flows.
-    - **OASIS** — publishes [[XACML]] (versions 2.0 and 3.0), the XML-based standard for attribute-based access control policy expression and the PDP/PEP reference architecture.
-    - **NIST** — SP 800-162 ("Guide to ABAC Definition and Considerations") and SP 800-207 ("Zero Trust Architecture") provide authoritative guidance on modern authorisation design.
-    - **OpenID Foundation** — maintains [[OpenID Connect]], the identity layer on [[OAuth 2.0]] enabling combined authentication and authorisation.
-    - **SPIFFE** — specifies the Secure Production Identity Framework for Everyone (SPIFFE), enabling workload identity for machine-to-machine authorisation in cloud-native environments.
-  - #### Regulatory Context
-    - [[ISO/IEC 27001]] (Information Security Management) mandates documented access control policies, periodic access reviews, and timely revocation — all requiring sound authorisation infrastructure.
-    - GDPR Article 25 (Data Protection by Design) and the principle of data minimisation require that authorisation systems enforce purpose-limited data access.
-    - SOC 2 Trust Services Criteria (CC6) mandates logical access controls, which are implemented primarily through authorisation systems.
-    - PCI DSS Requirement 7 ("Restrict access to system components and cardholder data by business need to know") is enforced through authorisation policies.
+#### Why It Matters
 
-- ### Current Landscape (2026)
-  - OAuth 2.1 has become the de facto baseline for new authorisation flows despite still being an IETF draft (draft-ietf-oauth-v2-1-15, 2 March 2026), with a working-group milestone to submit to the IESG in December 2026; it makes PKCE mandatory for all clients, removes the implicit and ROPC grants, requires exact redirect-URI matching, and points high-security deployments to sender-constrained tokens via DPoP.
-  - Two foundational RFCs landed in 2025 and now anchor the modern stack: RFC 9700 (OAuth 2.0 Security Best Current Practice, January 2025), which formally deprecated insecure grant types, and RFC 9728 (Protected Resource Metadata, April 2025), which lets resource servers advertise their authorisation servers.
-  - Authorisation for AI agents emerged as a distinct discipline: the Model Context Protocol authorisation spec was consolidated on OAuth 2.1 across successive revisions (2025-03-26 introduced OAuth 2.1, 2025-06-18 made the MCP server an OAuth resource server and mandated RFC 8707 Resource Indicators, 2025-11-25 shifted client identity from Dynamic Client Registration to Client ID Metadata Documents), and a 28 July 2026 revision promoted Enterprise-Managed Authorisation (EMA) to an official extension using an Identity Assertion JWT Authorisation Grant so a corporate IdP governs which agents reach which servers without per-user consent screens.
-  - Policy-decision interoperability reached a milestone when the OpenID Foundation's AuthZEN Authorization API 1.0 was approved as a Final Specification in January 2026, standardising the PEP-to-PDP request/response format so authorisation engines can be swapped without changing enforcement points; OpenFGA, Keycloak (with Cedar), Topaz and others now expose AuthZEN endpoints.
-  - The fine-grained authorisation engine market matured: OpenFGA was promoted to a CNCF Incubating project in October 2025, AWS's Cedar policy language reached v4.9 (March 2026) and underpins Amazon Verified Permissions, and SpiceDB (v1.50) continues the Google Zanzibar ReBAC lineage, with ReBAC, ABAC and hybrid PBAC models now the mainstream answer beyond coarse RBAC.
-  - Standards bodies and vendors formalised agent authorisation: NIST's NCCoE published a February 2026 concept paper on Software and AI Agent Identity and Authorization, the Coalition for Secure AI released an Agentic Identity and Access Management guidance paper (April 2026) advocating Zero Standing Privilege and RFC 8693 token exchange plus RFC 9396 Rich Authorization Requests, Microsoft Entra Agent ID reached general availability, and MCP-I / KYA-OS at the DIF is pushing DID- and Verifiable-Credential-based delegation.
-  - Open challenges as of 2026 centre on the delegation chain: proving who authorised an autonomous agent and bounding what it may do on behalf of which human, verifiable end-to-end across untrusting domains, alongside preventing confused-deputy and token-passthrough attacks, enforcing least-privilege scoping per tool call, and defending against prompt-injection-driven privilege escalation.
+- Incorrect or absent authorisation is consistently cited as one of the most critical web-application security vulnerabilities in the OWASP Top 10 (historically as "Broken Access Control"). Failures allow attackers to read, modify, or delete resources belonging to other users, exfiltrate sensitive data, or escalate privileges to administrative levels.
+- Beyond security, authorisation is an operationally critical concern: misconfigured policies can lock legitimate users out of resources, impair service continuity, and trigger regulatory sanctions under frameworks such as [[ISO/IEC 27001]], GDPR, HIPAA, and SOC 2.
 
-- ### References
-  - 1. OAuth Working Group / IETF (2026). Specs and The OAuth 2.1 Authorization Framework (draft-ietf-oauth-v2-1-15). https://oauth.net/specs/
-  - 2. Descope (2026). Diving Into the MCP Authorization Specification (updated 28 July 2026). https://www.descope.com/blog/post/mcp-auth-spec
-  - 3. Let's Data Science / The New Stack (2026). Model Context Protocol Adds Enterprise Authorization Layer. https://letsdatascience.com/news/model-context-protocol-adds-enterprise-authorization-layer-03ebc385
-  - 4. Clerk (2026). Authentication Trends in 2026: Passkeys, AI Agents, and Edge (Part 2). https://clerk.com/articles/authentication-trends-in-2026-passkeys-ai-agents-and-edge-2
-  - 5. Zuplo (2026). Fine-Grained API Authorization: From RBAC to AuthZEN at the Gateway. https://zuplo.com/learning-center/fine-grained-api-authorization-rbac-authzen-gateway
-  - 6. Coalition for Secure AI (2026). Agentic Identity and Access Management. https://www.coalitionforsecureai.org/wp-content/uploads/2026/04/agentic-identity-and-access-control.pdf
+#### How It Works
 
-- ### Provenance
+- At runtime, an authorisation flow typically proceeds as:
+  - A principal presents credentials to an identity provider, receiving a signed [[Access Token]] (e.g. a [[JSON Web Token]]) encoding claims about identity, roles, and scopes.
+  - When the principal requests a protected resource, the resource server or an interposing API gateway extracts and validates the token.
+  - The validated claims are evaluated against the applicable policy, either locally (embedded policy enforcement) or by querying a centralised [[Policy Engine]] such as [[Open Policy Agent]].
+  - The enforcement point allows or denies the request, and records the decision in an [[Audit Trail]].
+
+### Key Models and Mechanisms
+
+#### Role-Based Access Control (RBAC)
+
+- [[Role-Based Access Control]] assigns permissions to roles rather than individual principals. Users are assigned to roles, inheriting the associated permissions. RBAC is simple to administer and auditable, making it dominant in enterprise environments. It maps naturally onto [[Separation of Duties]] requirements.
+- Limitation: roles can proliferate ("role explosion"), and RBAC struggles to express context-dependent decisions (e.g. "allow only if the request originates from the corporate network during business hours").
+
+#### Attribute-Based Access Control (ABAC)
+
+- [[Attribute-Based Access Control]] evaluates arbitrary attributes of the subject, resource, action, and environment at decision time. This enables fine-grained, context-sensitive policies ("a nurse may read patient records for patients assigned to their ward between 07:00 and 19:00"). ABAC is more expressive than RBAC but requires richer attribute infrastructure and more complex policy authoring.
+- [[XACML]] (eXtensible Access Control Markup Language) is the canonical XML-based standard for ABAC policy expression and the PDP/PEP/PAP/PIP architecture.
+
+#### Relationship-Based Access Control (ReBAC)
+
+- [[Relationship-Based Access Control]] expresses permissions in terms of graph relationships between entities (e.g. "a user may edit a document if they are a member of the owning team"). Google Zanzibar and its open-source derivatives (OpenFGA, SpiceDB) implement ReBAC at scale, supporting billions of permission tuples with millisecond latency.
+
+#### Policy-Based Access Control (PBAC) and Policy-as-Code
+
+- [[Policy-Based Access Control]] generalises ABAC by treating the policy itself as a first-class, versionable artefact expressed in a declarative language. [[Open Policy Agent]] (OPA) evaluates Rego policies and is widely deployed in Kubernetes admission control, API gateways, and microservice meshes.
+- Policy-as-code enables [[Infrastructure as Code]]-style workflows: policies are reviewed in pull requests, tested in CI/CD pipelines, and deployed alongside application code.
+
+#### Token-Based and Delegated Authorisation
+
+- [[OAuth 2.0]] is the dominant delegation framework for the web, allowing resource owners to grant scoped access to third-party clients without sharing credentials. Access tokens encode scopes; refresh tokens enable long-lived delegated access.
+- [[OpenID Connect]] layers identity assertion (ID tokens) on top of OAuth 2.0, enabling combined authentication and authorisation flows.
+- [[JSON Web Token|JWTs]] are the prevalent token format, carrying signed claims that resource servers validate without contacting a central authority, enabling stateless, scalable authorisation.
+- SPIFFE/SPIRE issues [[Secure Token Service|SVIDs]] (X.509 certificates or JWTs) to workloads in zero-trust service meshes, providing workload identity underpinning machine-to-machine authorisation.
+
+### Applications and Use Cases
+
+#### Web and API Security
+
+- REST and GraphQL APIs use [[OAuth 2.0]] scopes and bearer tokens to restrict client access to specific resource types and operations. API gateways enforce authorisation before requests reach backend services.
+
+#### Cloud and Kubernetes Environments
+
+- Cloud providers (AWS IAM, Azure RBAC, GCP IAM) implement RBAC and ABAC at scale to control access to cloud resources. Kubernetes admission webhooks integrate [[Open Policy Agent]] to authorise resource mutations at the control plane level.
+
+#### Zero Trust Architectures
+
+- [[Zero Trust Architecture]] mandates continuous per-request authorisation rather than implicit trust based on network location. Every request from any principal—internal or external—is evaluated against policy, reducing blast radius from compromised credentials.
+
+#### Healthcare and Finance
+
+- Health data ecosystems require fine-grained consent hierarchies: a patient may authorise a GP to read their records but not a pharmacist. SMART on FHIR extends [[OAuth 2.0]] for healthcare-specific authorisation scopes.
+- Financial services use authorisation to enforce [[Separation of Duties]] in payment processing and trading platforms, preventing any single individual from both initiating and approving high-value transactions.
+
+#### AI Agents and Delegated AI
+
+- Emerging use cases involve [[AI Agent|AI agents]] acting on behalf of human users—scheduling meetings, accessing files, or executing transactions. These scenarios require scoped, revocable delegated authorisation to prevent over-privileged autonomous action. The IETF is developing extensions to [[OAuth 2.0]] (e.g. RFC 9396 Rich Authorisation Requests) to express fine-grained intent for AI-agent delegation.
+
+#### Decentralised and Blockchain Contexts
+
+- [[Decentralised Identity]] (W3C DIDs and Verifiable Credentials) shifts credential issuance off centralised identity providers, enabling self-sovereign authorisation flows. [[Smart Contract|Smart contracts]] on blockchains can enforce resource-access rules autonomously, with authorisation logic encoded immutably on-chain.
+
+### Standards and Context
+
+#### Standards Bodies
+
+- **IETF OAuth Working Group** — maintains [[OAuth 2.0]] (RFC 6749), bearer tokens (RFC 6750), token introspection (RFC 7662), Rich Authorisation Requests (RFC 9396), and related extensions.
+- **W3C** — standardises [[Decentralised Identity|DIDs]] (Decentralised Identifiers) and Verifiable Credentials, which underpin emerging self-sovereign authorisation flows.
+- **OASIS** — publishes [[XACML]] (versions 2.0 and 3.0), the XML-based standard for attribute-based access control policy expression and the PDP/PEP reference architecture.
+- **NIST** — SP 800-162 ("Guide to ABAC Definition and Considerations") and SP 800-207 ("Zero Trust Architecture") provide authoritative guidance on modern authorisation design.
+- **OpenID Foundation** — maintains [[OpenID Connect]], the identity layer on [[OAuth 2.0]] enabling combined authentication and authorisation.
+- **SPIFFE** — specifies the Secure Production Identity Framework for Everyone (SPIFFE), enabling workload identity for machine-to-machine authorisation in cloud-native environments.
+
+#### Regulatory Context
+
+- [[ISO/IEC 27001]] (Information Security Management) mandates documented access control policies, periodic access reviews, and timely revocation — all requiring sound authorisation infrastructure.
+- GDPR Article 25 (Data Protection by Design) and the principle of data minimisation require that authorisation systems enforce purpose-limited data access.
+- SOC 2 Trust Services Criteria (CC6) mandates logical access controls, which are implemented primarily through authorisation systems.
+- PCI DSS Requirement 7 ("Restrict access to system components and cardholder data by business need to know") is enforced through authorisation policies.
+
+### Current Landscape (2026)
+
+- OAuth 2.1 has become the de facto baseline for new authorisation flows despite still being an IETF draft (draft-ietf-oauth-v2-1-15, 2 March 2026), with a working-group milestone to submit to the IESG in December 2026; it makes PKCE mandatory for all clients, removes the implicit and ROPC grants, requires exact redirect-URI matching, and points high-security deployments to sender-constrained tokens via DPoP.
+- Two foundational RFCs landed in 2025 and now anchor the modern stack: RFC 9700 (OAuth 2.0 Security Best Current Practice, January 2025), which formally deprecated insecure grant types, and RFC 9728 (Protected Resource Metadata, April 2025), which lets resource servers advertise their authorisation servers.
+- Authorisation for AI agents emerged as a distinct discipline: the Model Context Protocol authorisation spec was consolidated on OAuth 2.1 across successive revisions (2025-03-26 introduced OAuth 2.1, 2025-06-18 made the MCP server an OAuth resource server and mandated RFC 8707 Resource Indicators, 2025-11-25 shifted client identity from Dynamic Client Registration to Client ID Metadata Documents), and a 28 July 2026 revision promoted Enterprise-Managed Authorisation (EMA) to an official extension using an Identity Assertion JWT Authorisation Grant so a corporate IdP governs which agents reach which servers without per-user consent screens.
+- Policy-decision interoperability reached a milestone when the OpenID Foundation's AuthZEN Authorization API 1.0 was approved as a Final Specification in January 2026, standardising the PEP-to-PDP request/response format so authorisation engines can be swapped without changing enforcement points; OpenFGA, Keycloak (with Cedar), Topaz and others now expose AuthZEN endpoints.
+- The fine-grained authorisation engine market matured: OpenFGA was promoted to a CNCF Incubating project in October 2025, AWS's Cedar policy language reached v4.9 (March 2026) and underpins Amazon Verified Permissions, and SpiceDB (v1.50) continues the Google Zanzibar ReBAC lineage, with ReBAC, ABAC and hybrid PBAC models now the mainstream answer beyond coarse RBAC.
+- Standards bodies and vendors formalised agent authorisation: NIST's NCCoE published a February 2026 concept paper on Software and AI Agent Identity and Authorization, the Coalition for Secure AI released an Agentic Identity and Access Management guidance paper (April 2026) advocating Zero Standing Privilege and RFC 8693 token exchange plus RFC 9396 Rich Authorization Requests, Microsoft Entra Agent ID reached general availability, and MCP-I / KYA-OS at the DIF is pushing DID- and Verifiable-Credential-based delegation.
+- Open challenges as of 2026 centre on the delegation chain: proving who authorised an autonomous agent and bounding what it may do on behalf of which human, verifiable end-to-end across untrusting domains, alongside preventing confused-deputy and token-passthrough attacks, enforcing least-privilege scoping per tool call, and defending against prompt-injection-driven privilege escalation.
+
+### References
+
+- 1. OAuth Working Group / IETF (2026). Specs and The OAuth 2.1 Authorization Framework (draft-ietf-oauth-v2-1-15). https://oauth.net/specs/
+- 2. Descope (2026). Diving Into the MCP Authorization Specification (updated 28 July 2026). https://www.descope.com/blog/post/mcp-auth-spec
+- 3. Let's Data Science / The New Stack (2026). Model Context Protocol Adds Enterprise Authorization Layer. https://letsdatascience.com/news/model-context-protocol-adds-enterprise-authorization-layer-03ebc385
+- 4. Clerk (2026). Authentication Trends in 2026: Passkeys, AI Agents, and Edge (Part 2). https://clerk.com/articles/authentication-trends-in-2026-passkeys-ai-agents-and-edge-2
+- 5. Zuplo (2026). Fine-Grained API Authorization: From RBAC to AuthZEN at the Gateway. https://zuplo.com/learning-center/fine-grained-api-authorization-rbac-authzen-gateway
+- 6. Coalition for Secure AI (2026). Agentic Identity and Access Management. https://www.coalitionforsecureai.org/wp-content/uploads/2026/04/agentic-identity-and-access-control.pdf
+
+### Provenance
 

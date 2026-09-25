@@ -1,4 +1,3 @@
-
 A Permissionless Network is a blockchain or distributed ledger system in which any entity may join as a node, submit transactions, and participate in consensus without prior authorisation or identity verification from a central authority. Permissionlessness is a foundational design property of public blockchains such as Bitcoin and Ethereum, enabling censorship resistance and global open access at the cost of requiring Sybil-resistant consensus mechanisms—typically proof-of-work or proof-of-stake—to prevent anonymous actors from subverting the network.
 
 ### Definition
@@ -17,5 +16,5 @@ The security model of permissionless networks is economic rather than reputation
 
 Permissionless networks face inherent trade-offs. Transaction throughput is limited because all nodes must process all transactions to maintain verifiability without trusting any subset. Privacy is compromised because all transaction data is public by default. Regulation is challenging because there is no operator to serve legal demands. These trade-offs motivate a spectrum of designs: fully permissionless public blockchains at one end, fully permissioned private ledgers at the other, and hybrid models (such as consortium blockchains with open transaction submission but permissioned validation) in between. Layer-2 scaling solutions such as rollups attempt to extend the capacity of permissionless networks while preserving their censorship-resistance guarantees at the settlement layer.
 
-- ### Provenance
+### Provenance
 

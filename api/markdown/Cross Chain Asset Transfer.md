@@ -1,122 +1,130 @@
-
 Cross-chain asset transfer is the cryptographic and protocol-level process of moving digital assets — cryptocurrencies, fungible tokens, or non-fungible tokens — from one blockchain network to a distinct, independent blockchain network while preserving the asset's economic properties and enforcing integrity guarantees across the transfer. Because independent blockchains maintain no shared global state, protocols must ensure that an asset locked or burned on the source chain is atomically minted or released on the destination chain, preventing double-spend and maintaining supply conservation. Implementations range from hash time-locked contracts (HTLCs) and lock-and-mint bridge contracts overseen by validator committees to native inter-blockchain communication protocols (IBC) and zero-knowledge proof-based verification bridges that eliminate trusted attestors entirely.
 
-- ### Overview
-  - Cross-chain asset transfer addresses one of the fundamental limitations of distributed ledger systems: the inability of one blockchain to natively read or verify the state of another. As the ecosystem expanded from Bitcoin to a multi-chain landscape — Ethereum, BNB Chain, Solana, Avalanche, Cosmos, Polkadot, and hundreds of others — capital became fragmented across incompatible networks. This fragmentation reduces capital efficiency, limits composability, and forces users into centralised intermediaries (exchanges) to move value between ecosystems.
-  - The economic importance is substantial: cross-chain bridges routinely facilitated hundreds of billions of dollars in cumulative volume by the mid-2020s, connecting isolated liquidity pools and enabling [[DeFi]] protocols to access the total available capital across the multi-chain universe.
-  - The core invariant that every correct cross-chain transfer must preserve is **supply conservation**: the aggregate supply of an asset across all chains must never exceed its total issued supply on the canonical chain. Violations of this invariant — whether through bugs, exploits, or protocol failures — constitute the most severe class of cross-chain security failure.
+### Overview
 
-- ### Key Mechanisms
-  - **Hash Time-Locked Contracts (HTLCs)**
-    - The earliest trust-minimised mechanism. Funds on chain A are locked with a cryptographic [[Hash Function]] pre-image condition and a time-out. The recipient reveals the pre-image on chain B to claim funds; the same pre-image simultaneously releases funds on chain A.
-    - Requires both chains to support the same hashing algorithm and time-lock semantics.
-    - Limitations: requires both parties to be online, does not scale to multi-hop paths without [[Payment Channel Network]] infrastructure.
-    - See: [[Atomic Swap]], [[Lightning Network]]
-  - **Lock-and-Mint Bridge Contracts**
-    - Assets are deposited into a [[Smart Contract]] vault on the source chain; a validator committee attests the deposit and authorises minting of a synthetic representation ([[Wrapped Token]]) on the destination chain.
-    - Examples: Wrapped Bitcoin (WBTC) on Ethereum; Wormhole's token bridges.
-    - Trust assumption: the validator/multi-sig committee is honest and not colluding. This creates concentrated attack surface.
-    - Burn-and-release is the inverse: burn the synthetic token on the destination chain to release the locked asset on the source chain.
-  - **Burn-and-Mint (Native Issuance)**
-    - The asset's smart contract is deployed on multiple chains; a burn on one chain triggers a canonical mint on another. No custodied vault exists.
-    - Requires the asset issuer to control deployment on both chains — applicable to stablecoins (USDC's Cross-Chain Transfer Protocol, CCTP) but not to decentralised assets.
-  - **Native Light-Client Verification (IBC)**
-    - One chain embeds an on-chain [[Light Client]] of the other chain, verifying block headers and Merkle proofs directly on-chain without off-chain attestors.
-    - [[Cosmos IBC]] (Inter-Blockchain Communication Protocol) is the canonical implementation: relayers submit packet commitments and their cryptographic proofs; each chain independently verifies correctness against the embedded light client state.
-    - Most trust-minimised bridge class outside ZK bridges; trust assumption reduces to the security of both chains' consensus mechanisms.
-    - See: [[Cosmos IBC]], [[Tendermint]]
-  - **Optimistic Bridges**
-    - Transfers are accepted optimistically and published on-chain; a fraud-proof challenge window (typically 7 days) allows any watcher to submit evidence of an invalid transfer.
-    - Design parallels [[Optimistic Rollup]] challenge periods.
-    - Capital inefficiency: transferred assets are illiquid during the challenge period without third-party liquidity providers.
-  - **Zero-Knowledge Proof Bridges**
-    - Generate a succinct ZK proof (e.g., STARK, PLONK, Groth16) that the source chain state transition is valid. The destination chain verifier checks the proof on-chain without trusting any committee.
-    - Examples: Succinct Labs SP1, Polyhedra zkBridge, ZKsync's native bridge.
-    - Eliminates validator trust assumptions entirely; computation cost of proof generation is the primary practical limitation.
-    - See: [[Zero-Knowledge Proof]], [[STARK]], [[SNARK]]
-  - **Generalised Message Passing (GMP) Protocols**
-    - Protocols such as [[LayerZero]], [[Axelar]], and [[Chainlink CCIP]] provide generalised cross-chain messaging infrastructure on which token transfers are one application.
-    - Token transfers are encoded as messages with transfer semantics; GMP protocols handle delivery and verification.
-    - See: [[Cross-Chain Messaging]]
+- Cross-chain asset transfer addresses one of the fundamental limitations of distributed ledger systems: the inability of one blockchain to natively read or verify the state of another. As the ecosystem expanded from Bitcoin to a multi-chain landscape — Ethereum, BNB Chain, Solana, Avalanche, Cosmos, Polkadot, and hundreds of others — capital became fragmented across incompatible networks. This fragmentation reduces capital efficiency, limits composability, and forces users into centralised intermediaries (exchanges) to move value between ecosystems.
+- The economic importance is substantial: cross-chain bridges routinely facilitated hundreds of billions of dollars in cumulative volume by the mid-2020s, connecting isolated liquidity pools and enabling [[DeFi]] protocols to access the total available capital across the multi-chain universe.
+- The core invariant that every correct cross-chain transfer must preserve is **supply conservation**: the aggregate supply of an asset across all chains must never exceed its total issued supply on the canonical chain. Violations of this invariant — whether through bugs, exploits, or protocol failures — constitute the most severe class of cross-chain security failure.
 
-- ### Architecture Patterns
-  - **Trusted-intermediary (CEX)**: Centralised exchange accepts deposits on chain A and pays out on chain B. Fully custodial; not a true cross-chain protocol.
-  - **Validator committee (multi-sig)**: N-of-M multi-signature scheme. Security degrades if M-N+1 validators collude. Most current production bridges use this.
-  - **Proof-of-authority relayer**: A designated relayer set with slashable stake; used in [[Polkadot XCM]] for parachain bridges.
-  - **Light-client relay**: Relayers submit proofs; chains verify autonomously. Used by [[Cosmos IBC]].
-  - **ZK-coprocessor**: Off-chain proof generation + on-chain proof verification. Emerging as the dominant trust-minimised architecture.
+### Key Mechanisms
 
-- ### Applications and Use Cases
-  - **DeFi Liquidity Aggregation**: [[Decentralised Exchange]] protocols such as Thorchain enable native cross-chain swaps of non-wrapped assets.
-  - **Stablecoin Portability**: Circle's CCTP allows USDC to move natively between Ethereum, Avalanche, Base, and other chains by burn-and-mint, eliminating custodied synthetic representations.
-  - **NFT Portability**: [[Non-Fungible Token]] transfer across chains allows provenance and ownership records to follow assets into new ecosystems.
-  - **Cross-Chain Yield Farming**: [[DeFi]] strategies that deploy capital to whichever chain offers the highest yield, with automated bridge execution.
-  - **Layer 2 Withdrawals**: Users withdrawing assets from [[Rollup]] networks (Optimism, Arbitrum, zkSync) to Ethereum mainnet utilise specialised bridge contracts that are closely related to cross-chain transfer but operate within a trust-inheritance hierarchy.
-  - **Cross-Chain Governance**: DAOs holding assets on multiple chains use cross-chain transfer to consolidate treasury or distribute grants.
-  - **Interchain DeFi Composability**: [[Cosmos IBC]] enables chains in the Cosmos ecosystem to compose smart contract calls across chains atomically, with asset transfer as a primitive.
-  - **Regulated Cross-Chain Settlement**: Emerging institutional use cases involve compliant bridge infrastructure with [[Know Your Customer]] and AML screening integrated at the bridge layer.
+- **Hash Time-Locked Contracts (HTLCs)**
+  - The earliest trust-minimised mechanism. Funds on chain A are locked with a cryptographic [[Hash Function]] pre-image condition and a time-out. The recipient reveals the pre-image on chain B to claim funds; the same pre-image simultaneously releases funds on chain A.
+  - Requires both chains to support the same hashing algorithm and time-lock semantics.
+  - Limitations: requires both parties to be online, does not scale to multi-hop paths without [[Payment Channel Network]] infrastructure.
+  - See: [[Atomic Swap]], [[Lightning Network]]
+- **Lock-and-Mint Bridge Contracts**
+  - Assets are deposited into a [[Smart Contract]] vault on the source chain; a validator committee attests the deposit and authorises minting of a synthetic representation ([[Wrapped Token]]) on the destination chain.
+  - Examples: Wrapped Bitcoin (WBTC) on Ethereum; Wormhole's token bridges.
+  - Trust assumption: the validator/multi-sig committee is honest and not colluding. This creates concentrated attack surface.
+  - Burn-and-release is the inverse: burn the synthetic token on the destination chain to release the locked asset on the source chain.
+- **Burn-and-Mint (Native Issuance)**
+  - The asset's smart contract is deployed on multiple chains; a burn on one chain triggers a canonical mint on another. No custodied vault exists.
+  - Requires the asset issuer to control deployment on both chains — applicable to stablecoins (USDC's Cross-Chain Transfer Protocol, CCTP) but not to decentralised assets.
+- **Native Light-Client Verification (IBC)**
+  - One chain embeds an on-chain [[Light Client]] of the other chain, verifying block headers and Merkle proofs directly on-chain without off-chain attestors.
+  - [[Cosmos IBC]] (Inter-Blockchain Communication Protocol) is the canonical implementation: relayers submit packet commitments and their cryptographic proofs; each chain independently verifies correctness against the embedded light client state.
+  - Most trust-minimised bridge class outside ZK bridges; trust assumption reduces to the security of both chains' consensus mechanisms.
+  - See: [[Cosmos IBC]], [[Tendermint]]
+- **Optimistic Bridges**
+  - Transfers are accepted optimistically and published on-chain; a fraud-proof challenge window (typically 7 days) allows any watcher to submit evidence of an invalid transfer.
+  - Design parallels [[Optimistic Rollup]] challenge periods.
+  - Capital inefficiency: transferred assets are illiquid during the challenge period without third-party liquidity providers.
+- **Zero-Knowledge Proof Bridges**
+  - Generate a succinct ZK proof (e.g., STARK, PLONK, Groth16) that the source chain state transition is valid. The destination chain verifier checks the proof on-chain without trusting any committee.
+  - Examples: Succinct Labs SP1, Polyhedra zkBridge, ZKsync's native bridge.
+  - Eliminates validator trust assumptions entirely; computation cost of proof generation is the primary practical limitation.
+  - See: [[Zero-Knowledge Proof]], [[STARK]], [[SNARK]]
+- **Generalised Message Passing (GMP) Protocols**
+  - Protocols such as [[LayerZero]], [[Axelar]], and [[Chainlink CCIP]] provide generalised cross-chain messaging infrastructure on which token transfers are one application.
+  - Token transfers are encoded as messages with transfer semantics; GMP protocols handle delivery and verification.
+  - See: [[Cross-Chain Messaging]]
 
-- ### Security Considerations
-  - Cross-chain bridges are the most exploited category of smart contract infrastructure by value stolen.
-  - **Notable exploits:**
-    - Ronin Bridge (March 2022): ~$625M; 5-of-9 validator keys compromised via social engineering.
-    - Wormhole (February 2022): ~$320M; flawed signature verification allowed unauthorised mint.
-    - Nomad Bridge (August 2022): ~$190M; an upgrade introduced a bug allowing arbitrary message replay.
-    - Harmony Horizon Bridge (June 2022): ~$100M; 2-of-5 multi-sig compromised.
-  - **Root causes:**
-    - Overly centralised validator committees with insufficient decentralisation.
-    - Bugs in cross-chain message verification logic (two separate security boundaries must both hold).
-    - Insufficient upgrade governance and access control on bridge contracts.
-    - Validator key management failures (HSM practices, key ceremony hygiene).
-  - **Mitigations:**
-    - ZK-proof bridges eliminate validator trust; bugs in the proof system remain a residual risk.
-    - Formal verification of bridge contract logic ([[Formal Verification]]).
-    - Rate limiting and circuit breakers on bridge contracts.
-    - Multi-layer monitoring and anomaly detection.
-    - Insurance protocols and bug bounties.
-    - See: [[Blockchain Security]], [[Smart Contract Audit]]
+### Architecture Patterns
 
-- ### Standards and Ecosystem Context
-  - **[[Cosmos IBC]] (ICS-20)**: The Inter-Blockchain Communication Protocol defines a packet-based channel abstraction for fungible token transfer (ICS-20) and non-fungible token transfer (ICS-721) between IBC-enabled chains. Formally specified in the ICS (Interchain Standards) repository.
-  - **[[Polkadot XCM]]**: Cross-Consensus Message Format — Polkadot's typed message-passing language for inter-parachain communication, including asset transfers. XCM version 3 introduced fee estimation and exchange rate abstraction.
-  - **Chainlink CCIP**: Cross-Chain Interoperability Protocol — a generalised message-passing standard with an anti-fraud network (Risk Management Network) as a secondary validation layer.
-  - **LayerZero**: Ultra-Light Node (ULN) architecture separating block-header relaying and proof verification into independently operated roles.
-  - **CCTP (Circle)**: Native USDC burn-and-mint protocol; a de facto standard for institutional stablecoin cross-chain movement.
-  - **ERC-7281 (xERC-20)**: An Ethereum token standard for canonical cross-chain tokens that can be minted and burned by multiple approved bridges, reducing fragmentation between competing bridge representations.
-  - **Regulatory context**: Bridge operators may be classified as money services businesses (MSBs) under FinCEN guidance in the United States, and as virtual asset service providers (VASPs) under FATF Recommendation 15. The EU MiCA regulation's treatment of bridge operators remains an active area of legal interpretation as of 2025.
+- **Trusted-intermediary (CEX)**: Centralised exchange accepts deposits on chain A and pays out on chain B. Fully custodial; not a true cross-chain protocol.
+- **Validator committee (multi-sig)**: N-of-M multi-signature scheme. Security degrades if M-N+1 validators collude. Most current production bridges use this.
+- **Proof-of-authority relayer**: A designated relayer set with slashable stake; used in [[Polkadot XCM]] for parachain bridges.
+- **Light-client relay**: Relayers submit proofs; chains verify autonomously. Used by [[Cosmos IBC]].
+- **ZK-coprocessor**: Off-chain proof generation + on-chain proof verification. Emerging as the dominant trust-minimised architecture.
 
-- ### Related Concepts
-  - [[Atomic Swap]] — the HTLC-based primitive enabling trustless cross-chain exchange
-  - [[Cross-Chain Bridge]] — the infrastructure layer implementing lock-and-mint or proof-based transfer
-  - [[Cross-Chain Messaging]] — the generalised form; asset transfer is a special case
-  - [[Cross-Chain Interoperability]] — the parent concept encompassing all forms of inter-chain coordination
-  - [[Cosmos IBC]] — the primary production-grade standard for trust-minimised cross-chain asset transfer
-  - [[Polkadot XCM]] — Polkadot's cross-consensus messaging standard for asset transfer across parachains
-  - [[Wrapped Token]] — the synthetic asset representation produced by lock-and-mint bridges
-  - [[Smart Contract]] — the execution environment for bridge logic
-  - [[Zero-Knowledge Proof]] — the cryptographic foundation for trust-minimised ZK bridges
-  - [[Blockchain Security]] — the security domain in which most cross-chain bridge attacks occur
-  - [[DeFi]] — the primary application domain driving cross-chain transfer demand
-  - [[Rollup]] — Layer 2 scaling technology whose withdrawal mechanism is a specialised cross-chain transfer
-  - [[Decentralised Exchange]] — frequently built on cross-chain transfer primitives
-  - [[Consensus Mechanism]] — the security foundation each chain's state transitions rest upon
+### Applications and Use Cases
 
-- ### Current Landscape (2026)
-  - An 18 April 2026 exploit that drained roughly $292M from Kelp DAO's LayerZero-based bridge triggered the largest cross-chain infrastructure migration to date, with a cumulative ~$15bn in assets announced as moving from LayerZero to Chainlink's CCIP by August 2026.
-  - Major issuers and protocols have standardised on CCIP's Cross-Chain Token (CCT) burn-and-mint model: BitGo made CCIP the exclusive rail for $7.7bn of WBTC and the default for all future BitGo assets (Aug 2026), following Kelp (>$1.5bn), Lombard (>$1bn), Aave (default for GHO and all cross-chain ops from 13 July 2026), Kraken, Solv, Re.xyz and Mantle.
-  - The burn-and-mint CCT design (one canonical deployment per chain, no locked bridge reserves) has largely displaced the older lock-and-unlock and wrapped-variant models seen as honeypots after $2.8bn+ in historic bridge losses (Ronin, Wormhole, Nomad).
-  - Intent-based transfer has matured around ERC-7683 (authored by Uniswap Labs/Across; created April 2024, adoption from 2025), which standardises a signed cross-chain order that any solver can fill; as of April 2026 Across, UniswapX, CoW Protocol, Eco, LI.FI and Symbiosis run production endpoints, with wallet support in Safe, Argent, Rabby and MetaMask.
-  - Institutional and RWA rails advanced sharply: CCIP processed over $18bn in Q1 2026 (319% year-on-year growth), connects 70+ public and private chains, and in April 2026 completed Swift interoperability trials with Citi, BNY Mellon, Euroclear, Clearstream and Lloyds; Lido selected CCIP for wstETH (Nov 2025) and CCIP holds ISO 27001 and SOC 2 certification.
-  - In response, LayerZero removed 1-of-1 DVN configurations and is shifting most routes to stricter 5-of-5 X-of-Y-of-N verifier setups, while retaining scale (150+ chains, ~$44bn total bridged, USDT0 and TRON/TON integrations).
-  - Open challenges as of 2026 centre on the "lowest common denominator" security problem in chain abstraction: intents hide rather than remove trust boundaries, and solver networks add new attack surfaces (front-running, routing to weaker chains, solver collusion), prompting calls for security-tier parameters, solver reputation/slashing and post-execution security receipts.
+- **DeFi Liquidity Aggregation**: [[Decentralised Exchange]] protocols such as Thorchain enable native cross-chain swaps of non-wrapped assets.
+- **Stablecoin Portability**: Circle's CCTP allows USDC to move natively between Ethereum, Avalanche, Base, and other chains by burn-and-mint, eliminating custodied synthetic representations.
+- **NFT Portability**: [[Non-Fungible Token]] transfer across chains allows provenance and ownership records to follow assets into new ecosystems.
+- **Cross-Chain Yield Farming**: [[DeFi]] strategies that deploy capital to whichever chain offers the highest yield, with automated bridge execution.
+- **Layer 2 Withdrawals**: Users withdrawing assets from [[Rollup]] networks (Optimism, Arbitrum, zkSync) to Ethereum mainnet utilise specialised bridge contracts that are closely related to cross-chain transfer but operate within a trust-inheritance hierarchy.
+- **Cross-Chain Governance**: DAOs holding assets on multiple chains use cross-chain transfer to consolidate treasury or distribute grants.
+- **Interchain DeFi Composability**: [[Cosmos IBC]] enables chains in the Cosmos ecosystem to compose smart contract calls across chains atomically, with asset transfer as a primitive.
+- **Regulated Cross-Chain Settlement**: Emerging institutional use cases involve compliant bridge infrastructure with [[Know Your Customer]] and AML screening integrated at the bridge layer.
 
-- ### References
-  - 1. Blockhead (2026). BitGo Drops LayerZero for Chainlink CCIP on $7.7 Billion of WBTC. https://www.blockhead.co/2026/08/06/bitgo-drops-layerzero-for-chainlink-ccip-on-7-7-billion-of-wbtc/
-  - 2. thirdweb blog (2026). Aave Picks Chainlink CCIP as $7.2B Exits LayerZero. https://blog.thirdweb.com/aave-picks-chainlink-ccip-as-7-2b-exits-layerzero/
-  - 3. Gate.com (2026). Chainlink CCIP Cross-Chain Architecture Analysis: The Core Logic Behind Institutional Adoption. https://www.gate.com/en-us/blog/chainlink-ccip-cross-chain-architecture-analysis-the-core-logic-behind-institutional
-  - 4. Eco (2026). ERC-7683 Cross-Chain Intents Standard Explained. https://eco.com/support/en/articles/14799834-erc-7683-cross-chain-intents-standard-explained
-  - 5. crypto.news (2026). Chainlink CCIP draws $4b from LayerZero exodus. https://crypto.news/chainlink-ccip-draws-4b-from-layerzero-exodus/
-  - 6. BlockEden (2026). Chain Abstraction Is Coming: ERC-7683 and Intent-Based Bridging. https://blockeden.xyz/forum/t/chain-abstraction-is-coming-erc-7683-and-intent-based-bridging-promise-users-wont-care-which-chain-theyre-on-but-21-9b-in-bridge-tvl-says-the-transition-will-be-messy/4658
+### Security Considerations
 
-- ### Provenance
+- Cross-chain bridges are the most exploited category of smart contract infrastructure by value stolen.
+- **Notable exploits:**
+  - Ronin Bridge (March 2022): ~$625M; 5-of-9 validator keys compromised via social engineering.
+  - Wormhole (February 2022): ~$320M; flawed signature verification allowed unauthorised mint.
+  - Nomad Bridge (August 2022): ~$190M; an upgrade introduced a bug allowing arbitrary message replay.
+  - Harmony Horizon Bridge (June 2022): ~$100M; 2-of-5 multi-sig compromised.
+- **Root causes:**
+  - Overly centralised validator committees with insufficient decentralisation.
+  - Bugs in cross-chain message verification logic (two separate security boundaries must both hold).
+  - Insufficient upgrade governance and access control on bridge contracts.
+  - Validator key management failures (HSM practices, key ceremony hygiene).
+- **Mitigations:**
+  - ZK-proof bridges eliminate validator trust; bugs in the proof system remain a residual risk.
+  - Formal verification of bridge contract logic ([[Formal Verification]]).
+  - Rate limiting and circuit breakers on bridge contracts.
+  - Multi-layer monitoring and anomaly detection.
+  - Insurance protocols and bug bounties.
+  - See: [[Blockchain Security]], [[Smart Contract Audit]]
+
+### Standards and Ecosystem Context
+
+- **[[Cosmos IBC]] (ICS-20)**: The Inter-Blockchain Communication Protocol defines a packet-based channel abstraction for fungible token transfer (ICS-20) and non-fungible token transfer (ICS-721) between IBC-enabled chains. Formally specified in the ICS (Interchain Standards) repository.
+- **[[Polkadot XCM]]**: Cross-Consensus Message Format — Polkadot's typed message-passing language for inter-parachain communication, including asset transfers. XCM version 3 introduced fee estimation and exchange rate abstraction.
+- **Chainlink CCIP**: Cross-Chain Interoperability Protocol — a generalised message-passing standard with an anti-fraud network (Risk Management Network) as a secondary validation layer.
+- **LayerZero**: Ultra-Light Node (ULN) architecture separating block-header relaying and proof verification into independently operated roles.
+- **CCTP (Circle)**: Native USDC burn-and-mint protocol; a de facto standard for institutional stablecoin cross-chain movement.
+- **ERC-7281 (xERC-20)**: An Ethereum token standard for canonical cross-chain tokens that can be minted and burned by multiple approved bridges, reducing fragmentation between competing bridge representations.
+- **Regulatory context**: Bridge operators may be classified as money services businesses (MSBs) under FinCEN guidance in the United States, and as virtual asset service providers (VASPs) under FATF Recommendation 15. The EU MiCA regulation's treatment of bridge operators remains an active area of legal interpretation as of 2025.
+
+### Related Concepts
+
+- [[Atomic Swap]] — the HTLC-based primitive enabling trustless cross-chain exchange
+- [[Cross-Chain Bridge]] — the infrastructure layer implementing lock-and-mint or proof-based transfer
+- [[Cross-Chain Messaging]] — the generalised form; asset transfer is a special case
+- [[Cross-Chain Interoperability]] — the parent concept encompassing all forms of inter-chain coordination
+- [[Cosmos IBC]] — the primary production-grade standard for trust-minimised cross-chain asset transfer
+- [[Polkadot XCM]] — Polkadot's cross-consensus messaging standard for asset transfer across parachains
+- [[Wrapped Token]] — the synthetic asset representation produced by lock-and-mint bridges
+- [[Smart Contract]] — the execution environment for bridge logic
+- [[Zero-Knowledge Proof]] — the cryptographic foundation for trust-minimised ZK bridges
+- [[Blockchain Security]] — the security domain in which most cross-chain bridge attacks occur
+- [[DeFi]] — the primary application domain driving cross-chain transfer demand
+- [[Rollup]] — Layer 2 scaling technology whose withdrawal mechanism is a specialised cross-chain transfer
+- [[Decentralised Exchange]] — frequently built on cross-chain transfer primitives
+- [[Consensus Mechanism]] — the security foundation each chain's state transitions rest upon
+
+### Current Landscape (2026)
+
+- An 18 April 2026 exploit that drained roughly $292M from Kelp DAO's LayerZero-based bridge triggered the largest cross-chain infrastructure migration to date, with a cumulative ~$15bn in assets announced as moving from LayerZero to Chainlink's CCIP by August 2026.
+- Major issuers and protocols have standardised on CCIP's Cross-Chain Token (CCT) burn-and-mint model: BitGo made CCIP the exclusive rail for $7.7bn of WBTC and the default for all future BitGo assets (Aug 2026), following Kelp (>$1.5bn), Lombard (>$1bn), Aave (default for GHO and all cross-chain ops from 13 July 2026), Kraken, Solv, Re.xyz and Mantle.
+- The burn-and-mint CCT design (one canonical deployment per chain, no locked bridge reserves) has largely displaced the older lock-and-unlock and wrapped-variant models seen as honeypots after $2.8bn+ in historic bridge losses (Ronin, Wormhole, Nomad).
+- Intent-based transfer has matured around ERC-7683 (authored by Uniswap Labs/Across; created April 2024, adoption from 2025), which standardises a signed cross-chain order that any solver can fill; as of April 2026 Across, UniswapX, CoW Protocol, Eco, LI.FI and Symbiosis run production endpoints, with wallet support in Safe, Argent, Rabby and MetaMask.
+- Institutional and RWA rails advanced sharply: CCIP processed over $18bn in Q1 2026 (319% year-on-year growth), connects 70+ public and private chains, and in April 2026 completed Swift interoperability trials with Citi, BNY Mellon, Euroclear, Clearstream and Lloyds; Lido selected CCIP for wstETH (Nov 2025) and CCIP holds ISO 27001 and SOC 2 certification.
+- In response, LayerZero removed 1-of-1 DVN configurations and is shifting most routes to stricter 5-of-5 X-of-Y-of-N verifier setups, while retaining scale (150+ chains, ~$44bn total bridged, USDT0 and TRON/TON integrations).
+- Open challenges as of 2026 centre on the "lowest common denominator" security problem in chain abstraction: intents hide rather than remove trust boundaries, and solver networks add new attack surfaces (front-running, routing to weaker chains, solver collusion), prompting calls for security-tier parameters, solver reputation/slashing and post-execution security receipts.
+
+### References
+
+- 1. Blockhead (2026). BitGo Drops LayerZero for Chainlink CCIP on $7.7 Billion of WBTC. https://www.blockhead.co/2026/08/06/bitgo-drops-layerzero-for-chainlink-ccip-on-7-7-billion-of-wbtc/
+- 2. thirdweb blog (2026). Aave Picks Chainlink CCIP as $7.2B Exits LayerZero. https://blog.thirdweb.com/aave-picks-chainlink-ccip-as-7-2b-exits-layerzero/
+- 3. Gate.com (2026). Chainlink CCIP Cross-Chain Architecture Analysis: The Core Logic Behind Institutional Adoption. https://www.gate.com/en-us/blog/chainlink-ccip-cross-chain-architecture-analysis-the-core-logic-behind-institutional
+- 4. Eco (2026). ERC-7683 Cross-Chain Intents Standard Explained. https://eco.com/support/en/articles/14799834-erc-7683-cross-chain-intents-standard-explained
+- 5. crypto.news (2026). Chainlink CCIP draws $4b from LayerZero exodus. https://crypto.news/chainlink-ccip-draws-4b-from-layerzero-exodus/
+- 6. BlockEden (2026). Chain Abstraction Is Coming: ERC-7683 and Intent-Based Bridging. https://blockeden.xyz/forum/t/chain-abstraction-is-coming-erc-7683-and-intent-based-bridging-promise-users-wont-care-which-chain-theyre-on-but-21-9b-in-bridge-tvl-says-the-transition-will-be-messy/4658
+
+### Provenance
 

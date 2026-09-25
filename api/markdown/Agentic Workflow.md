@@ -1,116 +1,117 @@
-
 An agentic workflow is a structured, iterative execution pattern in which an AI agent autonomously plans actions, invokes external tools or APIs, observes results, and revises its approach through successive reasoning cycles until a goal condition is satisfied or a stopping criterion is met. Unlike single-pass inference, agentic workflows employ persistent memory, branching logic, and multi-step planning that may span many inference calls and involve specialised sub-agents coordinated by an orchestrator. The pattern relies on large language model capabilities — tool use, function calling, long-context reasoning — and is the architectural basis for systems such as AutoGPT, LangGraph, CrewAI, OpenAI Agents SDK, and Anthropic's Claude toolset. Agentic workflows introduce novel safety and reliability challenges including error compounding, prompt injection via tool outputs, and the need for human-in-the-loop checkpoints in high-stakes deployments.
 
-- ### Semantic Classification
+### Semantic Classification
 
-- ### Content
-  ## Compositional Relationships (Components)
-      SubClassOf(ai:AgenticWorkflow
-        ObjectSomeValuesFrom(ai:hasPart ai:PlanAndExecutePattern))
-      SubClassOf(ai:AgenticWorkflow
-        ObjectSomeValuesFrom(ai:hasPart ai:ReflectionPattern))
-      SubClassOf(ai:AgenticWorkflow
-        ObjectSomeValuesFrom(ai:hasPart ai:ToolCallLoop))
-      SubClassOf(ai:AgenticWorkflow
-        ObjectSomeValuesFrom(ai:hasPart ai:ReActPattern))
-      SubClassOf(ai:AgenticWorkflow
-        ObjectSomeValuesFrom(ai:hasPart ai:AgentLoop))
-      SubClassOf(ai:AgenticWorkflow
-        ObjectSomeValuesFrom(ai:hasPart ai:AgentMemory))
-  ## Dependency Relationships
-      SubClassOf(ai:AgenticWorkflow
-        ObjectSomeValuesFrom(ai:requires ai:LargeLanguageModels))
-      SubClassOf(ai:AgenticWorkflow
-        ObjectSomeValuesFrom(ai:requires ai:ContextWindow))
-      SubClassOf(ai:AgenticWorkflow
-        ObjectSomeValuesFrom(ai:requires ai:AgentMemory))
-      SubClassOf(ai:AgenticWorkflow
-        ObjectSomeValuesFrom(ai:requires ai:ToolUse))
-      SubClassOf(ai:AgenticWorkflow
-        ObjectSomeValuesFrom(ai:requires ai:FunctionCalling))
-      SubClassOf(ai:AgenticWorkflow
-        ObjectSomeValuesFrom(ai:dependsOn ai:LLMInference))
-      SubClassOf(ai:AgenticWorkflow
-        ObjectSomeValuesFrom(ai:dependsOn ai:APIIntegration))
-      SubClassOf(ai:AgenticWorkflow
-        ObjectSomeValuesFrom(ai:dependsOn ai:FoundationModels))
-  ## Capability Relationships
-      SubClassOf(ai:AgenticWorkflow
-        ObjectSomeValuesFrom(ai:enables ai:AIAgentSystem))
-      SubClassOf(ai:AgenticWorkflow
-        ObjectSomeValuesFrom(ai:enables ai:TaskPlanning))
-      SubClassOf(ai:AgenticWorkflow
-        ObjectSomeValuesFrom(ai:enables ai:RetrievalAugmentedGeneration))
-      SubClassOf(ai:AgenticWorkflow
-        ObjectSomeValuesFrom(ai:enables ai:AutonomousCoding))
-      SubClassOf(ai:AgenticWorkflow
-        ObjectSomeValuesFrom(ai:enables ai:MultiAgentSystems))
-      SubClassOf(ai:AgenticWorkflow
-        ObjectSomeValuesFrom(ai:enables ai:AIResearchAssistant))
-  ## Implementation Relationships
-      SubClassOf(ai:AgenticWorkflow
-        ObjectSomeValuesFrom(ai:implements ai:ReActPattern))
-      SubClassOf(ai:AgenticWorkflow
-        ObjectSomeValuesFrom(ai:implements ai:PlanAndExecutePattern))
-      SubClassOf(ai:AgenticWorkflow
-        ObjectSomeValuesFrom(ai:implements ai:ReflectionPattern))
-      SubClassOf(ai:AgenticWorkflow
-        ObjectSomeValuesFrom(ai:implements ai:ChainOfThought))
-  ## Reduction Relationships
-      SubClassOf(ai:AgenticWorkflow
-        ObjectSomeValuesFrom(ai:reducesTo ai:ToolCallLoop))
-      SubClassOf(ai:AgenticWorkflow
-        ObjectSomeValuesFrom(ai:reducesTo ai:AgentLoop))
-      SubClassOf(ai:AgenticWorkflow
-        ObjectSomeValuesFrom(ai:reducesTo ai:LLMInference))
-  ## Usage Relationships
-      SubClassOf(ai:AgenticWorkflow
-        ObjectSomeValuesFrom(ai:uses ai:ChainOfThought))
-      SubClassOf(ai:AgenticWorkflow
-        ObjectSomeValuesFrom(ai:uses ai:PromptEngineering))
-      SubClassOf(ai:AgenticWorkflow
-        ObjectSomeValuesFrom(ai:uses ai:Reasoning))
-      SubClassOf(ai:AgenticWorkflow
-        ObjectSomeValuesFrom(ai:uses ai:ModelContextProtocol))
-      SubClassOf(ai:AgenticWorkflow
-        ObjectSomeValuesFrom(ai:uses ai:VectorDatabase))
-  ## Support Relationships
-      SubClassOf(ai:AgenticWorkflow
-        ObjectSomeValuesFrom(ai:supports ai:HumanInTheLoop))
-      SubClassOf(ai:AgenticWorkflow
-        ObjectSomeValuesFrom(ai:supports ai:AISafety))
-      SubClassOf(ai:AgenticWorkflow
-        ObjectSomeValuesFrom(ai:supports ai:AIAlignment))
-      SubClassOf(ai:AgenticWorkflow
-        ObjectSomeValuesFrom(ai:supports ai:WorkflowAutomation))
-  ## Contrast Relationships
-      SubClassOf(ai:AgenticWorkflow
-        ObjectSomeValuesFrom(ai:contrastsWith ai:SingleTurnInference))
-      SubClassOf(ai:AgenticWorkflow
-        ObjectSomeValuesFrom(ai:contrastsWith ai:TraditionalWorkflowOrchestration))
-      SubClassOf(ai:AgenticWorkflow
-        ObjectSomeValuesFrom(ai:contrastsWith ai:RoboticProcessAutomation))
+### Content
 
-  ## About
+## Compositional Relationships (Components)
+    SubClassOf(ai:AgenticWorkflow
+      ObjectSomeValuesFrom(ai:hasPart ai:PlanAndExecutePattern))
+    SubClassOf(ai:AgenticWorkflow
+      ObjectSomeValuesFrom(ai:hasPart ai:ReflectionPattern))
+    SubClassOf(ai:AgenticWorkflow
+      ObjectSomeValuesFrom(ai:hasPart ai:ToolCallLoop))
+    SubClassOf(ai:AgenticWorkflow
+      ObjectSomeValuesFrom(ai:hasPart ai:ReActPattern))
+    SubClassOf(ai:AgenticWorkflow
+      ObjectSomeValuesFrom(ai:hasPart ai:AgentLoop))
+    SubClassOf(ai:AgenticWorkflow
+      ObjectSomeValuesFrom(ai:hasPart ai:AgentMemory))
+## Dependency Relationships
+    SubClassOf(ai:AgenticWorkflow
+      ObjectSomeValuesFrom(ai:requires ai:LargeLanguageModels))
+    SubClassOf(ai:AgenticWorkflow
+      ObjectSomeValuesFrom(ai:requires ai:ContextWindow))
+    SubClassOf(ai:AgenticWorkflow
+      ObjectSomeValuesFrom(ai:requires ai:AgentMemory))
+    SubClassOf(ai:AgenticWorkflow
+      ObjectSomeValuesFrom(ai:requires ai:ToolUse))
+    SubClassOf(ai:AgenticWorkflow
+      ObjectSomeValuesFrom(ai:requires ai:FunctionCalling))
+    SubClassOf(ai:AgenticWorkflow
+      ObjectSomeValuesFrom(ai:dependsOn ai:LLMInference))
+    SubClassOf(ai:AgenticWorkflow
+      ObjectSomeValuesFrom(ai:dependsOn ai:APIIntegration))
+    SubClassOf(ai:AgenticWorkflow
+      ObjectSomeValuesFrom(ai:dependsOn ai:FoundationModels))
+## Capability Relationships
+    SubClassOf(ai:AgenticWorkflow
+      ObjectSomeValuesFrom(ai:enables ai:AIAgentSystem))
+    SubClassOf(ai:AgenticWorkflow
+      ObjectSomeValuesFrom(ai:enables ai:TaskPlanning))
+    SubClassOf(ai:AgenticWorkflow
+      ObjectSomeValuesFrom(ai:enables ai:RetrievalAugmentedGeneration))
+    SubClassOf(ai:AgenticWorkflow
+      ObjectSomeValuesFrom(ai:enables ai:AutonomousCoding))
+    SubClassOf(ai:AgenticWorkflow
+      ObjectSomeValuesFrom(ai:enables ai:MultiAgentSystems))
+    SubClassOf(ai:AgenticWorkflow
+      ObjectSomeValuesFrom(ai:enables ai:AIResearchAssistant))
+## Implementation Relationships
+    SubClassOf(ai:AgenticWorkflow
+      ObjectSomeValuesFrom(ai:implements ai:ReActPattern))
+    SubClassOf(ai:AgenticWorkflow
+      ObjectSomeValuesFrom(ai:implements ai:PlanAndExecutePattern))
+    SubClassOf(ai:AgenticWorkflow
+      ObjectSomeValuesFrom(ai:implements ai:ReflectionPattern))
+    SubClassOf(ai:AgenticWorkflow
+      ObjectSomeValuesFrom(ai:implements ai:ChainOfThought))
+## Reduction Relationships
+    SubClassOf(ai:AgenticWorkflow
+      ObjectSomeValuesFrom(ai:reducesTo ai:ToolCallLoop))
+    SubClassOf(ai:AgenticWorkflow
+      ObjectSomeValuesFrom(ai:reducesTo ai:AgentLoop))
+    SubClassOf(ai:AgenticWorkflow
+      ObjectSomeValuesFrom(ai:reducesTo ai:LLMInference))
+## Usage Relationships
+    SubClassOf(ai:AgenticWorkflow
+      ObjectSomeValuesFrom(ai:uses ai:ChainOfThought))
+    SubClassOf(ai:AgenticWorkflow
+      ObjectSomeValuesFrom(ai:uses ai:PromptEngineering))
+    SubClassOf(ai:AgenticWorkflow
+      ObjectSomeValuesFrom(ai:uses ai:Reasoning))
+    SubClassOf(ai:AgenticWorkflow
+      ObjectSomeValuesFrom(ai:uses ai:ModelContextProtocol))
+    SubClassOf(ai:AgenticWorkflow
+      ObjectSomeValuesFrom(ai:uses ai:VectorDatabase))
+## Support Relationships
+    SubClassOf(ai:AgenticWorkflow
+      ObjectSomeValuesFrom(ai:supports ai:HumanInTheLoop))
+    SubClassOf(ai:AgenticWorkflow
+      ObjectSomeValuesFrom(ai:supports ai:AISafety))
+    SubClassOf(ai:AgenticWorkflow
+      ObjectSomeValuesFrom(ai:supports ai:AIAlignment))
+    SubClassOf(ai:AgenticWorkflow
+      ObjectSomeValuesFrom(ai:supports ai:WorkflowAutomation))
+## Contrast Relationships
+    SubClassOf(ai:AgenticWorkflow
+      ObjectSomeValuesFrom(ai:contrastsWith ai:SingleTurnInference))
+    SubClassOf(ai:AgenticWorkflow
+      ObjectSomeValuesFrom(ai:contrastsWith ai:TraditionalWorkflowOrchestration))
+    SubClassOf(ai:AgenticWorkflow
+      ObjectSomeValuesFrom(ai:contrastsWith ai:RoboticProcessAutomation))
 
-  Agentic workflows represent the operational realisation of [[Agentic AI]]: the specific architectural and engineering pattern through which the agency of an AI system — its capacity to plan, act, and adapt autonomously — is expressed in production software systems. The concept emerged as a practical engineering discipline in 2023–2024, when [[Foundation Models]] such as GPT-4, Claude 3, and Gemini 1.5 achieved sufficient capability in [[Function Calling]], [[Reasoning]], and multi-turn context management to sustain coherent action across dozens or hundreds of successive steps without human intervention at each step. The foundational intellectual contribution was the ReAct prompting method (Yao et al., 2022) — which demonstrated that interleaving [[Chain of Thought]] reasoning with explicit action invocations dramatically improved both the reliability and interpretability of agent behaviour — combined with the infrastructure investments that enabled reliable [[Tool Use]] through structured JSON schemas: OpenAI's function-calling API (June 2023), Anthropic's tool-use interface (2024), and Google's function-calling extensions for Gemini.
+## About
 
-  The core claim of an agentic workflow is that a complex task can be decomposed into a sequence (or directed acyclic graph) of smaller actions, each consisting of a tool invocation, an observation, and a decision about the next step, such that the composition of these atomic steps accomplishes an objective that could not be achieved in a single inference call. This claim holds across diverse task families: debugging a multi-file software repository requires reading files, writing code, running tests, observing failures, and revising iteratively; synthesising a literature review requires searching databases, retrieving papers, extracting key claims, synthesising across sources, and validating consistency; resolving a customer service ticket requires querying a CRM, checking order status, applying business rules, drafting a response, and logging the outcome. The unifying structure is the tool-call loop: (1) observe current state; (2) reason about next action; (3) execute action via tool call; (4) observe result; (5) evaluate progress; (6) loop or terminate. The sophistication of the workflow arises from the quality of the model's [[Reasoning]] at each decision point, not from the loop structure itself, which is elementary.
+Agentic workflows represent the operational realisation of [[Agentic AI]]: the specific architectural and engineering pattern through which the agency of an AI system — its capacity to plan, act, and adapt autonomously — is expressed in production software systems. The concept emerged as a practical engineering discipline in 2023–2024, when [[Foundation Models]] such as GPT-4, Claude 3, and Gemini 1.5 achieved sufficient capability in [[Function Calling]], [[Reasoning]], and multi-turn context management to sustain coherent action across dozens or hundreds of successive steps without human intervention at each step. The foundational intellectual contribution was the ReAct prompting method (Yao et al., 2022) — which demonstrated that interleaving [[Chain of Thought]] reasoning with explicit action invocations dramatically improved both the reliability and interpretability of agent behaviour — combined with the infrastructure investments that enabled reliable [[Tool Use]] through structured JSON schemas: OpenAI's function-calling API (June 2023), Anthropic's tool-use interface (2024), and Google's function-calling extensions for Gemini.
 
-  What distinguishes the 2025–2026 generation of agentic workflows from earlier attempts at AI automation is the combination of scale, reliability, and ecosystem maturity. Production benchmarks on [[SWE-bench]] Verified — a dataset of real GitHub bug reports requiring multi-step repository understanding and code editing — show frontier agents achieving 87.6% task resolution (Claude Opus 4.7, early 2026), up from baselines below 5% for single-turn approaches in 2022. WebArena scores for browser-based multi-step task completion improved from 14.41% in 2023 to over 61% by early 2025. Klarna's publicly reported customer-support deployment on [[LangGraph]] reportedly handles roughly two-thirds of customer inquiries without human agent involvement, representing a direct displacement of hundreds of full-time equivalent support roles and demonstrating that production reliability is achievable at scale. Organisations deploying agentic AI report average projected ROI of 171%, with the most impactful deployments achieving 4–7x improvements in task throughput and 70% cost reductions in targeted process categories.
+The core claim of an agentic workflow is that a complex task can be decomposed into a sequence (or directed acyclic graph) of smaller actions, each consisting of a tool invocation, an observation, and a decision about the next step, such that the composition of these atomic steps accomplishes an objective that could not be achieved in a single inference call. This claim holds across diverse task families: debugging a multi-file software repository requires reading files, writing code, running tests, observing failures, and revising iteratively; synthesising a literature review requires searching databases, retrieving papers, extracting key claims, synthesising across sources, and validating consistency; resolving a customer service ticket requires querying a CRM, checking order status, applying business rules, drafting a response, and logging the outcome. The unifying structure is the tool-call loop: (1) observe current state; (2) reason about next action; (3) execute action via tool call; (4) observe result; (5) evaluate progress; (6) loop or terminate. The sophistication of the workflow arises from the quality of the model's [[Reasoning]] at each decision point, not from the loop structure itself, which is elementary.
 
-  The ecosystem maturity around agentic workflows accelerated dramatically in 2025–2026. The [[Model Context Protocol]] (MCP), introduced by Anthropic in late 2024 and adopted across major frameworks by mid-2025, standardised the mechanism by which AI agents discover and invoke external tools — functioning, in the words of its specification, as "USB-C for AI applications." MCP adoption eliminated much of the per-integration engineering overhead that previously made multi-tool agents expensive to build and maintain, enabling the ecosystem explosion of 2026 in which [[LangGraph]] reached 34.5 million monthly PyPI downloads, the [[OpenAI Agents SDK]] (released March 2025) reached 10.3 million monthly downloads, and a wave of new frameworks including Google's Agent Development Kit (ADK), Hugging Face's Smolagents, and AWS Strands entered production use. The framework landscape now ranges from low-level graph-based systems (LangGraph — which maps agent topologies as directed state graphs with explicit edge conditions, enabling audit trails and rollback points) through role-based crew architectures ([[CrewAI]] — which assigns human-analogous roles with specialised system prompts) to conversational multi-agent coordination (Microsoft [[AutoGen]] — which uses a group-chat metaphor for inter-agent communication).
+What distinguishes the 2025–2026 generation of agentic workflows from earlier attempts at AI automation is the combination of scale, reliability, and ecosystem maturity. Production benchmarks on [[SWE-bench]] Verified — a dataset of real GitHub bug reports requiring multi-step repository understanding and code editing — show frontier agents achieving 87.6% task resolution (Claude Opus 4.7, early 2026), up from baselines below 5% for single-turn approaches in 2022. WebArena scores for browser-based multi-step task completion improved from 14.41% in 2023 to over 61% by early 2025. Klarna's publicly reported customer-support deployment on [[LangGraph]] reportedly handles roughly two-thirds of customer inquiries without human agent involvement, representing a direct displacement of hundreds of full-time equivalent support roles and demonstrating that production reliability is achievable at scale. Organisations deploying agentic AI report average projected ROI of 171%, with the most impactful deployments achieving 4–7x improvements in task throughput and 70% cost reductions in targeted process categories.
 
-  ## Components / Architecture
+The ecosystem maturity around agentic workflows accelerated dramatically in 2025–2026. The [[Model Context Protocol]] (MCP), introduced by Anthropic in late 2024 and adopted across major frameworks by mid-2025, standardised the mechanism by which AI agents discover and invoke external tools — functioning, in the words of its specification, as "USB-C for AI applications." MCP adoption eliminated much of the per-integration engineering overhead that previously made multi-tool agents expensive to build and maintain, enabling the ecosystem explosion of 2026 in which [[LangGraph]] reached 34.5 million monthly PyPI downloads, the [[OpenAI Agents SDK]] (released March 2025) reached 10.3 million monthly downloads, and a wave of new frameworks including Google's Agent Development Kit (ADK), Hugging Face's Smolagents, and AWS Strands entered production use. The framework landscape now ranges from low-level graph-based systems (LangGraph — which maps agent topologies as directed state graphs with explicit edge conditions, enabling audit trails and rollback points) through role-based crew architectures ([[CrewAI]] — which assigns human-analogous roles with specialised system prompts) to conversational multi-agent coordination (Microsoft [[AutoGen]] — which uses a group-chat metaphor for inter-agent communication).
 
-  **Reasoning Engine** — the underlying [[Large Language Models]] that generates plans, selects tools, and interprets results. The model must support [[Function Calling]] with structured output (JSON schemas), [[Chain of Thought]] reasoning for intermediate steps, and long [[Context Window]] management. [[Foundation Models]] from Anthropic (Claude family), OpenAI (GPT-4o, o3/o4 reasoning models), and Google (Gemini 1.5/2.0) are the dominant backends; open-weight models (Llama 3, Qwen 2.5, Mistral) are used in cost-sensitive or privacy-constrained deployments.
+## Components / Architecture
 
-  **Tool Registry** — a catalogue of callable functions with JSON-schema descriptions that the model can invoke via [[Function Calling]] or [[Model Context Protocol]]. Tools include web search engines, code interpreters, database query interfaces, file system operations, REST API wrappers, and browser automation. The quality and completeness of tool descriptions is a primary determinant of agent performance: ambiguous or incomplete schemas cause systematic tool-selection errors. [[Model Context Protocol]] standardises tool registration and discovery across heterogeneous environments.
+**Reasoning Engine** — the underlying [[Large Language Models]] that generates plans, selects tools, and interprets results. The model must support [[Function Calling]] with structured output (JSON schemas), [[Chain of Thought]] reasoning for intermediate steps, and long [[Context Window]] management. [[Foundation Models]] from Anthropic (Claude family), OpenAI (GPT-4o, o3/o4 reasoning models), and Google (Gemini 1.5/2.0) are the dominant backends; open-weight models (Llama 3, Qwen 2.5, Mistral) are used in cost-sensitive or privacy-constrained deployments.
 
-  **[[Agent Memory]]** — state maintained across steps, comprising three tiers:
-  - Short-term (in-context): the active [[Context Window]] containing conversation history, tool call records, and observations. Bounded by model context length (typically 128k–2M tokens in 2025–2026 frontier models).
-  - Long-term (external): [[Vector Database]] or key-value stores enabling recall of information from prior sessions or documents too large to fit in context. Access via [[Retrieval-Augmented Generation]].
-  - Episodic: structured logs of prior action-observation pairs used by [[Reflection Pattern]] components to guide self-improvement within a task.
+**Tool Registry** — a catalogue of callable functions with JSON-schema descriptions that the model can invoke via [[Function Calling]] or [[Model Context Protocol]]. Tools include web search engines, code interpreters, database query interfaces, file system operations, REST API wrappers, and browser automation. The quality and completeness of tool descriptions is a primary determinant of agent performance: ambiguous or incomplete schemas cause systematic tool-selection errors. [[Model Context Protocol]] standardises tool registration and discovery across heterogeneous environments.
+
+**[[Agent Memory]]** — state maintained across steps, comprising three tiers:
+
+- Short-term (in-context): the active [[Context Window]] containing conversation history, tool call records, and observations. Bounded by model context length (typically 128k–2M tokens in 2025–2026 frontier models).
+- Long-term (external): [[Vector Database]] or key-value stores enabling recall of information from prior sessions or documents too large to fit in context. Access via [[Retrieval-Augmented Generation]].
+- Episodic: structured logs of prior action-observation pairs used by [[Reflection Pattern]] components to guide self-improvement within a task.
 
   **Planner** — orchestrates task decomposition via the [[Plan-and-Execute Pattern]] (generating a full task graph before execution, allowing plan revision when observations reveal unexpected conditions) or reactive step-by-step planning via [[ReAct Pattern]] (generating each action in response to the immediately preceding observation). Hybrid planners generate a coarse initial plan and refine it at key decision junctions. Tree-of-thought and Monte Carlo Tree Search (MCTS) planners explore multiple action branches before committing to a path.
 
@@ -181,69 +182,78 @@ An agentic workflow is a structured, iterative execution pattern in which an AI 
   The UK has emerged as a significant research and policy hub for agentic AI, driven by a combination of world-class academic institutions, government investment, and an internationally prominent AI safety regulatory framework.
 
   **Regulatory landscape:**
-  - The Alan Turing Institute published a UK AI Governance country profile in January 2026 covering the pro-innovation regulatory model.
-  - DSIT and the AI Security Institute (AISI) identify agentic AI as a priority evaluation domain.
-  - AISI's ControlArena evaluation framework specifically assesses whether agentic systems exhibit the capability and motivation to undermine human oversight mechanisms — a risk profile unique to long-horizon autonomous agents.
-  - The planned AI Governance Bill (expected 2026–2027) will codify safety requirements including agentic AI oversight obligations.
-  - The UK's five cross-sector principles (safety, transparency, fairness, explainability, accountability, contestability) apply to agentic AI through sector-specific regulator guidance rather than horizontal legislation.
+
+- The Alan Turing Institute published a UK AI Governance country profile in January 2026 covering the pro-innovation regulatory model.
+- DSIT and the AI Security Institute (AISI) identify agentic AI as a priority evaluation domain.
+- AISI's ControlArena evaluation framework specifically assesses whether agentic systems exhibit the capability and motivation to undermine human oversight mechanisms — a risk profile unique to long-horizon autonomous agents.
+- The planned AI Governance Bill (expected 2026–2027) will codify safety requirements including agentic AI oversight obligations.
+- The UK's five cross-sector principles (safety, transparency, fairness, explainability, accountability, contestability) apply to agentic AI through sector-specific regulator guidance rather than horizontal legislation.
 
   **Government investment:**
-  - The 2025 Compute Roadmap allocates £2 billion to create "AI Growth Zones" and enhance computational infrastructure.
-  - NHS England is piloting agentic workflows in administrative automation: appointment scheduling, referral letter drafting, and clinical coding.
-  - [[Human-in-the-Loop]] review requirements are embedded in NHS clinical governance frameworks for all AI-assisted documentation tools.
-  - HMRC is trialling agentic tax-guidance agents for SME business taxpayers, with human review for complex queries.
-  - The Cabinet Office AI strategy explicitly references agentic AI as a key productivity tool for public-sector transformation.
+
+- The 2025 Compute Roadmap allocates £2 billion to create "AI Growth Zones" and enhance computational infrastructure.
+- NHS England is piloting agentic workflows in administrative automation: appointment scheduling, referral letter drafting, and clinical coding.
+- [[Human-in-the-Loop]] review requirements are embedded in NHS clinical governance frameworks for all AI-assisted documentation tools.
+- HMRC is trialling agentic tax-guidance agents for SME business taxpayers, with human review for complex queries.
+- The Cabinet Office AI strategy explicitly references agentic AI as a key productivity tool for public-sector transformation.
 
   **Academic research:**
-  - Manchester (AI city rank 1 UK, 2024–2026): Digital Futures hub investigates trust calibration, oversight interface design, and audit trail requirements for enterprise agentic deployments.
-  - Imperial College London Robotics and AI Lab: agent planning under uncertainty and multi-agent coordination for physical-world agentic systems.
-  - Edinburgh School of Informatics: [[Reasoning]] and planning research directly applicable to agent cognitive architectures; Turing AI Fellowship programme.
-  - Newcastle Digital Institute: responsible AI in public-sector automation; human oversight requirements for agentic deployments in social care and benefit allocation.
-  - Leeds: AI Ethics Centre research on [[Accountability]] and [[Human-in-the-Loop]] mechanisms in agentic deployments affecting employment.
-  - Oxford: AI governance and long-horizon safety research relevant to agentic AI's implications for human control.
-  - Cambridge: Leverhulme Centre for the Future of Intelligence addresses social dimensions of agentic automation.
+
+- Manchester (AI city rank 1 UK, 2024–2026): Digital Futures hub investigates trust calibration, oversight interface design, and audit trail requirements for enterprise agentic deployments.
+- Imperial College London Robotics and AI Lab: agent planning under uncertainty and multi-agent coordination for physical-world agentic systems.
+- Edinburgh School of Informatics: [[Reasoning]] and planning research directly applicable to agent cognitive architectures; Turing AI Fellowship programme.
+- Newcastle Digital Institute: responsible AI in public-sector automation; human oversight requirements for agentic deployments in social care and benefit allocation.
+- Leeds: AI Ethics Centre research on [[Accountability]] and [[Human-in-the-Loop]] mechanisms in agentic deployments affecting employment.
+- Oxford: AI governance and long-horizon safety research relevant to agentic AI's implications for human control.
+- Cambridge: Leverhulme Centre for the Future of Intelligence addresses social dimensions of agentic automation.
 
   **Industry ecosystem:**
-  - London: the dominant UK hub for agentic AI commercial development; home to Wayve, Synthesia, PolyAI, Faculty Science, Onfido, DeepMind, and Anthropic's European office.
-  - Manchester: growing fintech agentic AI cluster; NatWest and Barclays both run agentic AI labs in Manchester.
-  - Cambridge: Aveva (industrial agentic AI), ARM (agentic AI chip optimisation for edge inference), numerous deep-tech spinouts from Cambridge ML group.
-  - Edinburgh: Skyscanner (travel agentic workflows), Wolfram Research Europe (agentic symbolic computation), FanDuel (sports betting agentic risk management).
-  - Leeds and Sheffield: industrial agentic AI applications in manufacturing process automation through the Advanced Manufacturing Research Centre (AMRC) and the Royce Institute.
+
+- London: the dominant UK hub for agentic AI commercial development; home to Wayve, Synthesia, PolyAI, Faculty Science, Onfido, DeepMind, and Anthropic's European office.
+- Manchester: growing fintech agentic AI cluster; NatWest and Barclays both run agentic AI labs in Manchester.
+- Cambridge: Aveva (industrial agentic AI), ARM (agentic AI chip optimisation for edge inference), numerous deep-tech spinouts from Cambridge ML group.
+- Edinburgh: Skyscanner (travel agentic workflows), Wolfram Research Europe (agentic symbolic computation), FanDuel (sports betting agentic risk management).
+- Leeds and Sheffield: industrial agentic AI applications in manufacturing process automation through the Advanced Manufacturing Research Centre (AMRC) and the Royce Institute.
 
   ## Future Directions (2026–2030)
 
   **Reliability engineering at enterprise scale:**
-  - Cascading confidence scoring: accumulating reliability estimates across steps and triggering [[Human-in-the-Loop]] escalation when confidence falls below defined thresholds.
-  - Compositional formal verification: proving that certain execution paths cannot lead to specified harmful states, analogous to software model checking.
-  - Adaptive planning with error correction: detecting and correcting errors earlier in execution chains before they compound into irrecoverable failures.
-  - The 2025 practitioner survey finding — favouring shorter, constrained task workflows over open-ended long-horizon agents — will be reversed as reliability engineering matures toward production-grade guarantees.
-  - Target: sub-5% failure rates on enterprise task suites by 2028, enabling unmonitored batch processing of large-volume business tasks.
+
+- Cascading confidence scoring: accumulating reliability estimates across steps and triggering [[Human-in-the-Loop]] escalation when confidence falls below defined thresholds.
+- Compositional formal verification: proving that certain execution paths cannot lead to specified harmful states, analogous to software model checking.
+- Adaptive planning with error correction: detecting and correcting errors earlier in execution chains before they compound into irrecoverable failures.
+- The 2025 practitioner survey finding — favouring shorter, constrained task workflows over open-ended long-horizon agents — will be reversed as reliability engineering matures toward production-grade guarantees.
+- Target: sub-5% failure rates on enterprise task suites by 2028, enabling unmonitored batch processing of large-volume business tasks.
 
   **Standardised evaluation and certification:**
-  - Domain-specific enterprise benchmarks: WorkArena (ServiceNow knowledge work), FinAgent (financial analysis and compliance), MedAgent (clinical decision support with safety constraints), SecAgent (security operations).
-  - These benchmarks will inform certification frameworks that enterprise compliance teams and sector regulators will demand as agentic deployments move from internal-facing pilots to customer-facing production systems.
-  - ISO/IEC TC1/SC42 is under discussion for agentic AI evaluation methodology standards, analogous to ISO/IEC 25000 software quality standards.
-  - Regulatory conformity assessment pathways for agentic AI systems are expected in the planned UK AI Governance Bill (2026–2027).
+
+- Domain-specific enterprise benchmarks: WorkArena (ServiceNow knowledge work), FinAgent (financial analysis and compliance), MedAgent (clinical decision support with safety constraints), SecAgent (security operations).
+- These benchmarks will inform certification frameworks that enterprise compliance teams and sector regulators will demand as agentic deployments move from internal-facing pilots to customer-facing production systems.
+- ISO/IEC TC1/SC42 is under discussion for agentic AI evaluation methodology standards, analogous to ISO/IEC 25000 software quality standards.
+- Regulatory conformity assessment pathways for agentic AI systems are expected in the planned UK AI Governance Bill (2026–2027).
 
   **Agentic security as an engineering discipline:**
-  - Tool call signing: cryptographic authentication of tool responses to detect injection of hostile content.
-  - Semantic input validation layers: LLM-based filters that detect injected instructions in tool outputs before they reach the main reasoning context.
-  - Sandboxed tool execution environments: containerised tool runtimes that prevent escapes from intended tool boundaries and limit damage from compromised tool responses.
-  - Formal threat models: MCP-38 threat taxonomy (2026) and OWASP LLM Top 10 (updated 2025) provide the foundation for standardised agentic security engineering practices.
-  - The Microsoft-published guidance on MCP [[Prompt Injection]] defence (2025) is the current industry reference for production defensive architecture.
+
+- Tool call signing: cryptographic authentication of tool responses to detect injection of hostile content.
+- Semantic input validation layers: LLM-based filters that detect injected instructions in tool outputs before they reach the main reasoning context.
+- Sandboxed tool execution environments: containerised tool runtimes that prevent escapes from intended tool boundaries and limit damage from compromised tool responses.
+- Formal threat models: MCP-38 threat taxonomy (2026) and OWASP LLM Top 10 (updated 2025) provide the foundation for standardised agentic security engineering practices.
+- The Microsoft-published guidance on MCP [[Prompt Injection]] defence (2025) is the current industry reference for production defensive architecture.
 
   **Compound and hierarchical agent systems:**
-  - Strategic-tactical-operational agent hierarchies operating at different time horizons and granularity levels.
-  - Heterogeneous model composition: cloud-hosted frontier models for strategic planning; local open-weight models for cost-sensitive tactical execution.
-  - Formal interface contracts between agent levels, analogous to software API contracts, enabling independent testing and verification of each level.
-  - [[Multi-Agent Systems]] frameworks supporting dynamic topology: agent graphs that restructure themselves based on task characteristics and resource availability.
+
+- Strategic-tactical-operational agent hierarchies operating at different time horizons and granularity levels.
+- Heterogeneous model composition: cloud-hosted frontier models for strategic planning; local open-weight models for cost-sensitive tactical execution.
+- Formal interface contracts between agent levels, analogous to software API contracts, enabling independent testing and verification of each level.
+- [[Multi-Agent Systems]] frameworks supporting dynamic topology: agent graphs that restructure themselves based on task characteristics and resource availability.
 
   **Persistent long-running agents:**
-  - Reliable durable state management across multiple model version upgrades mid-task.
-  - Long-horizon goal tracking without context drift: mechanisms to keep the agent's behaviour aligned with the original goal specification over extended operation.
-  - Audit mechanisms that support regulatory accountability for decisions made days or weeks in the past.
-  - [[Agent Memory]] architectures combining vector retrieval, structured knowledge graphs, and distilled episodic summaries for reliable long-horizon operation.
-  - Legal and regulatory frameworks for persistent AI agents acting on behalf of organisations over extended periods.
+
+- Reliable durable state management across multiple model version upgrades mid-task.
+- Long-horizon goal tracking without context drift: mechanisms to keep the agent's behaviour aligned with the original goal specification over extended operation.
+- Audit mechanisms that support regulatory accountability for decisions made days or weeks in the past.
+- [[Agent Memory]] architectures combining vector retrieval, structured knowledge graphs, and distilled episodic summaries for reliable long-horizon operation.
+- Legal and regulatory frameworks for persistent AI agents acting on behalf of organisations over extended periods.
 
   ## Design Patterns in Depth
 
@@ -273,12 +283,12 @@ An agentic workflow is a structured, iterative execution pattern in which an AI 
 
   Assessing multi-step agent performance requires end-to-end task benchmarks measuring goal achievement, not just output quality. The principal benchmarks as of 2026 are:
 
-  - **[[SWE-bench]] Verified** — 500 human-validated real GitHub issue-fix pairs. Frontier agent performance: Claude Opus 4.7 at 87.6% (early 2026), up from the 2022 baseline of under 5% for single-pass approaches. SWE-bench Lite (300 issues, easier subset) sees even higher scores, creating ceiling effects. SWE-bench Multimodal (2025) adds visual UI bugs requiring screenshot analysis.
-  - **WebArena** — five simulated web platforms (Reddit, OpenStreetMap, GitLab, online shopping, CMS) with 812 tasks requiring multi-step browser interaction. Baseline (GPT-4V): 14.41%. Best 2025 result: 61.7%. Major challenges: long-horizon planning across sessions, multi-application coordination, and handling of pop-ups and dynamic UI elements.
-  - **τ-bench** (tau-bench) — retail and airline domain multi-turn conversations requiring policy adherence in addition to task completion. Tests whether agents can follow complex natural-language business rules embedded in system prompts while simultaneously completing user requests. More representative of real enterprise deployment than purely technical benchmarks.
-  - **GAIA** — multi-step general assistant tasks requiring web search, document analysis, code execution, and multi-hop reasoning in combination. Level 3 tasks (requiring 20+ reasoning steps across diverse tools) have completion rates below 40% for frontier agents, representing the current reliability ceiling for open-ended long-horizon tasks.
-  - **AgentBench** — eight environments including operating system interaction, database management, web browser, web shopping, house-holding (ALFWorld), and competitive programming. Provides comprehensive coverage of the tool interaction landscape relevant to enterprise deployment.
-  - **WorkArena** — 33 atomic tasks on ServiceNow, evaluating knowledge worker AI capabilities in realistic enterprise software environments. First benchmark specifically designed for internal enterprise agent use cases rather than general assistant or coding tasks.
+- **[[SWE-bench]] Verified** — 500 human-validated real GitHub issue-fix pairs. Frontier agent performance: Claude Opus 4.7 at 87.6% (early 2026), up from the 2022 baseline of under 5% for single-pass approaches. SWE-bench Lite (300 issues, easier subset) sees even higher scores, creating ceiling effects. SWE-bench Multimodal (2025) adds visual UI bugs requiring screenshot analysis.
+- **WebArena** — five simulated web platforms (Reddit, OpenStreetMap, GitLab, online shopping, CMS) with 812 tasks requiring multi-step browser interaction. Baseline (GPT-4V): 14.41%. Best 2025 result: 61.7%. Major challenges: long-horizon planning across sessions, multi-application coordination, and handling of pop-ups and dynamic UI elements.
+- **τ-bench** (tau-bench) — retail and airline domain multi-turn conversations requiring policy adherence in addition to task completion. Tests whether agents can follow complex natural-language business rules embedded in system prompts while simultaneously completing user requests. More representative of real enterprise deployment than purely technical benchmarks.
+- **GAIA** — multi-step general assistant tasks requiring web search, document analysis, code execution, and multi-hop reasoning in combination. Level 3 tasks (requiring 20+ reasoning steps across diverse tools) have completion rates below 40% for frontier agents, representing the current reliability ceiling for open-ended long-horizon tasks.
+- **AgentBench** — eight environments including operating system interaction, database management, web browser, web shopping, house-holding (ALFWorld), and competitive programming. Provides comprehensive coverage of the tool interaction landscape relevant to enterprise deployment.
+- **WorkArena** — 33 atomic tasks on ServiceNow, evaluating knowledge worker AI capabilities in realistic enterprise software environments. First benchmark specifically designed for internal enterprise agent use cases rather than general assistant or coding tasks.
 
   A key methodological challenge in agentic benchmarking is the gap between controlled benchmark performance and production reliability: benchmark tasks have clear success criteria and are drawn from distributions similar to training data, while production tasks are open-ended, drawn from a long tail of unusual situations, and occur in live environments with unpredictable external state. The 2025 practitioner survey found that teams building production agents routinely observe 20-40% failure rates on tasks that benchmark-equivalent agents handle at 80-90%, driven by the brittleness of agent behaviour to edge cases in real tool outputs, unusual user inputs, and API errors not present in evaluation environments.
 
@@ -295,46 +305,51 @@ An agentic workflow is a structured, iterative execution pattern in which an AI 
   ## Key Institutions and Ecosystem Actors
 
   **Framework developers:**
-  - LangChain / LangGraph (Harrison Chase, open source, 34.5M monthly downloads)
-  - OpenAI (Agents SDK, released March 2025, 10.3M monthly downloads)
-  - Microsoft (AutoGen, open source, conversational multi-agent coordination)
-  - CrewAI (João Moura, open source, role-based crew architectures)
-  - Hugging Face (Smolagents, open source, lightweight minimalist agents)
-  - Google (Agent Development Kit / ADK, Apache-licensed open source, 2026)
-  - AWS (Strands, open source, 2026, serverless agentic execution)
-  - Cognition AI (Devin autonomous coding agent, closed commercial)
+
+- LangChain / LangGraph (Harrison Chase, open source, 34.5M monthly downloads)
+- OpenAI (Agents SDK, released March 2025, 10.3M monthly downloads)
+- Microsoft (AutoGen, open source, conversational multi-agent coordination)
+- CrewAI (João Moura, open source, role-based crew architectures)
+- Hugging Face (Smolagents, open source, lightweight minimalist agents)
+- Google (Agent Development Kit / ADK, Apache-licensed open source, 2026)
+- AWS (Strands, open source, 2026, serverless agentic execution)
+- Cognition AI (Devin autonomous coding agent, closed commercial)
 
   **Infrastructure providers:**
-  - Anthropic (Claude family models, MCP specification authorship, Claude Code agent)
-  - OpenAI (GPT-4o, o3/o4 reasoning models, GPT Assistants API)
-  - Google (Gemini 1.5/2.0 models, Vertex AI Agent Builder)
-  - AWS (Bedrock Agents, Bedrock Knowledge Bases for RAG)
-  - Azure (AI Foundry agentic capabilities, GitHub Copilot Workspace)
-  - Databricks (MosaicAI agentic evaluation and deployment framework)
+
+- Anthropic (Claude family models, MCP specification authorship, Claude Code agent)
+- OpenAI (GPT-4o, o3/o4 reasoning models, GPT Assistants API)
+- Google (Gemini 1.5/2.0 models, Vertex AI Agent Builder)
+- AWS (Bedrock Agents, Bedrock Knowledge Bases for RAG)
+- Azure (AI Foundry agentic capabilities, GitHub Copilot Workspace)
+- Databricks (MosaicAI agentic evaluation and deployment framework)
 
   **Evaluation and safety organisations:**
-  - UK AI Security Institute (AISI — ControlArena evaluation framework for agentic safety)
-  - Apollo Research (scheming, autonomy, and deceptive alignment evaluations)
-  - ARC Evals / Alignment Research Center (dangerous capability evaluations in agentic contexts)
-  - Scale AI (GAIA benchmark authorship; agentic task data annotation)
-  - Cohere (Command R+ agentic deployments; retrieval-augmented reasoning)
+
+- UK AI Security Institute (AISI — ControlArena evaluation framework for agentic safety)
+- Apollo Research (scheming, autonomy, and deceptive alignment evaluations)
+- ARC Evals / Alignment Research Center (dangerous capability evaluations in agentic contexts)
+- Scale AI (GAIA benchmark authorship; agentic task data annotation)
+- Cohere (Command R+ agentic deployments; retrieval-augmented reasoning)
 
   **Academic research groups:**
-  - Stanford CRFM (HELM evaluation framework; agent evaluation methodology)
-  - Berkeley AI Research (BAIR; Gorilla function-calling benchmark; safety in agentic systems)
-  - CMU (SWE-bench, WebArena, AgentDojo co-development)
-  - MIT CSAIL (agent planning under uncertainty; compositional goal structures)
-  - Princeton NLP (ReAct authorship; GAIA benchmark)
-  - Alan Turing Institute (UK agentic AI governance research; ControlArena advisory)
+
+- Stanford CRFM (HELM evaluation framework; agent evaluation methodology)
+- Berkeley AI Research (BAIR; Gorilla function-calling benchmark; safety in agentic systems)
+- CMU (SWE-bench, WebArena, AgentDojo co-development)
+- MIT CSAIL (agent planning under uncertainty; compositional goal structures)
+- Princeton NLP (ReAct authorship; GAIA benchmark)
+- Alan Turing Institute (UK agentic AI governance research; ControlArena advisory)
 
   **UK-specific ecosystem:**
-  - Wayve (autonomous driving using agentic AI for scene understanding, London)
-  - Synthesia (video generation with agentic content management pipelines, London)
-  - PolyAI (conversational agentic customer service, London, Cardiff research)
-  - Faculty Science (public-sector agentic AI for NHS and HMRC, London)
-  - Aveva (industrial agentic AI for manufacturing and energy, Cambridge)
-  - Babylon Health (clinical agentic AI for GP triage, founded London)
-  - Deep Render (video compression with agentic optimisation loops, London)
+
+- Wayve (autonomous driving using agentic AI for scene understanding, London)
+- Synthesia (video generation with agentic content management pipelines, London)
+- PolyAI (conversational agentic customer service, London, Cardiff research)
+- Faculty Science (public-sector agentic AI for NHS and HMRC, London)
+- Aveva (industrial agentic AI for manufacturing and energy, Cambridge)
+- Babylon Health (clinical agentic AI for GP triage, founded London)
+- Deep Render (video compression with agentic optimisation loops, London)
 
   ## Research and Literature
 
@@ -376,5 +391,5 @@ An agentic workflow is a structured, iterative execution pattern in which an AI 
   36. NHS England (2025). AI in NHS Administration: Pilot Evaluation Report — Agentic Workflow Deployments in Scheduling and Clinical Coding. NHS AI Lab.
   37. Gartner (2025). Predicts 2026: Artificial Intelligence. Gartner Research. (40% of enterprise applications will feature task-specific AI agents by end 2026.)
 
-- ### Provenance
+### Provenance
 

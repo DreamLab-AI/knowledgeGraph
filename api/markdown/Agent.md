@@ -1,16 +1,20 @@
-
 An autonomous computational or physical entity that perceives its environment, reasons about its perceptions using internal beliefs and goals, and acts to achieve specified objectives—exhibiting autonomy, reactivity, proactivity, and social ability across AI, blockchain, robotics, and metaverse domains.
 
-- ### In Plain Terms
-  - A piece of software that acts on your behalf: it senses what is going on around it, works out what to do, and takes steps towards a goal you have set — with little or no hand-holding along the way.
-- ### Semantic Classification
-- ### Content
-  ## Definition
-  An **Agent** is an autonomous computational or physical entity that:
-  - **Perceives** its environment through sensors or input mechanisms
-  - **Reasons** about its perceptions using internal models and knowledge
-  - **Acts** upon the environment to achieve specified goals
-  - **Adapts** its behavior based on feedback and learning
+### In Plain Terms
+
+- A piece of software that acts on your behalf: it senses what is going on around it, works out what to do, and takes steps towards a goal you have set — with little or no hand-holding along the way.
+
+### Semantic Classification
+
+### Content
+
+## Definition
+An **Agent** is an autonomous computational or physical entity that:
+
+- **Perceives** its environment through sensors or input mechanisms
+- **Reasons** about its perceptions using internal models and knowledge
+- **Acts** upon the environment to achieve specified goals
+- **Adapts** its behavior based on feedback and learning
   ## Core Characteristics
   ### Essential Properties
   1. **Autonomy**: Operates without direct human intervention
@@ -20,183 +24,183 @@ An autonomous computational or physical entity that perceives its environment, r
   ### Agent Architecture
   ```
   Environment
-    ↓ (sensors/perception)
+  ↓ (sensors/perception)
   Agent
-    ├─ Perception Module
-    ├─ Reasoning Engine
-    │  ├─ Beliefs
-    │  ├─ Desires
-    │  └─ Intentions
-    ├─ Knowledge Base
-    └─ Action Module
-    ↓ (actuators/effects)
+  ├─ Perception Module
+  ├─ Reasoning Engine
+  │  ├─ Beliefs
+  │  ├─ Desires
+  │  └─ Intentions
+  ├─ Knowledge Base
+  └─ Action Module
+  ↓ (actuators/effects)
   Environment
   ```
   ## Domain-Specific Manifestations
   ### Artificial Intelligence (AI)
   **Software Agents**:
-  - **LLM Agents**: Language model-based agents (GPT, Claude)
-  - **Chatbots**: Conversational agents
-  - **Personal Assistants**: Siri, Alexa, Google Assistant
-  - **Game AI**: NPC controllers, strategy agents
-  - **Autonomous Trading**: Financial market agents
+- **LLM Agents**: Language model-based agents (GPT, Claude)
+- **Chatbots**: Conversational agents
+- **Personal Assistants**: Siri, Alexa, Google Assistant
+- **Game AI**: NPC controllers, strategy agents
+- **Autonomous Trading**: Financial market agents
   **Characteristics**:
-  - Pure software implementation
-  - Token-based or neural network reasoning
-  - API or natural language interfaces
-  - Cloud or edge deployment
+- Pure software implementation
+- Token-based or neural network reasoning
+- API or natural language interfaces
+- Cloud or edge deployment
   **Examples**:
   ```python
   class LLMAgent:
-    def __init__(self, model, goals):
-        self.model = model
-        self.goals = goals
-        self.memory = []
-    def perceive(self, input_text):
-        return self.model.encode(input_text)
-    def reason(self, perception):
-        context = self.memory + [perception]
-        return self.model.generate(context, self.goals)
-    def act(self, decision):
-        self.memory.append(decision)
-        return self.execute(decision)
+  def __init__(self, model, goals):
+      self.model = model
+      self.goals = goals
+      self.memory = []
+  def perceive(self, input_text):
+      return self.model.encode(input_text)
+  def reason(self, perception):
+      context = self.memory + [perception]
+      return self.model.generate(context, self.goals)
+  def act(self, decision):
+      self.memory.append(decision)
+      return self.execute(decision)
   ```
   ### Blockchain (BC)
   **Decentralized Agents**:
-  - **DAO Participants**: Voting agents in governance
-  - **Autonomous Contracts**: Self-executing smart contracts
-  - **Oracle Agents**: Data providers for blockchains
-  - **Validator Agents**: Consensus participants
-  - **DeFi Agents**: Automated market makers, yield optimizers
+- **DAO Participants**: Voting agents in governance
+- **Autonomous Contracts**: Self-executing smart contracts
+- **Oracle Agents**: Data providers for blockchains
+- **Validator Agents**: Consensus participants
+- **DeFi Agents**: Automated market makers, yield optimizers
   **Characteristics**:
-  - Trustless operation via cryptographic verification
-  - Economic incentive alignment
-  - Transparent on-chain behavior
-  - Decentralized decision-making
+- Trustless operation via cryptographic verification
+- Economic incentive alignment
+- Transparent on-chain behavior
+- Decentralized decision-making
   **Examples**:
   ```solidity
   contract AgentDAO {
-    struct Agent {
-        address id;
-        uint256 autonomyLevel;
-        uint256 votingPower;
-        Goal[] goals;
-    }
-    mapping(address => Agent) public agents;
-    function proposeAction(Goal memory goal) public {
-        require(agents[msg.sender].autonomyLevel >= goal.requiredAutonomy);
-        // Agent proposes autonomous action
-    }
-    function executeGoal(uint256 goalId) public {
-        // Autonomous execution based on consensus
-    }
+  struct Agent {
+      address id;
+      uint256 autonomyLevel;
+      uint256 votingPower;
+      Goal[] goals;
+  }
+  mapping(address => Agent) public agents;
+  function proposeAction(Goal memory goal) public {
+      require(agents[msg.sender].autonomyLevel >= goal.requiredAutonomy);
+      // Agent proposes autonomous action
+  }
+  function executeGoal(uint256 goalId) public {
+      // Autonomous execution based on consensus
+  }
   }
   ```
   ### Robotics (RB)
   **Physical Agents**:
-  - **Mobile Robots**: Navigation and manipulation agents
-  - **Humanoid Robots**: Bipedal autonomous agents
-  - **Drone Swarms**: Coordinated aerial agents
-  - **Industrial Robots**: Manufacturing automation agents
-  - **Service Robots**: Healthcare, cleaning, delivery agents
+- **Mobile Robots**: Navigation and manipulation agents
+- **Humanoid Robots**: Bipedal autonomous agents
+- **Drone Swarms**: Coordinated aerial agents
+- **Industrial Robots**: Manufacturing automation agents
+- **Service Robots**: Healthcare, cleaning, delivery agents
   **Characteristics**:
-  - Physical embodiment with sensors and actuators
-  - Real-time perception and control
-  - Safety-critical operation
-  - Energy and physical constraints
+- Physical embodiment with sensors and actuators
+- Real-time perception and control
+- Safety-critical operation
+- Energy and physical constraints
   **Examples**:
   ```python
   class RoboticAgent:
-    def __init__(self, sensors, actuators):
-        self.sensors = sensors  # Camera, LIDAR, IMU
-        self.actuators = actuators  # Motors, grippers
-        self.position = None
-        self.goals = []
-    def perceive(self):
-        return {
-            'vision': self.sensors.camera.capture(),
-            'distance': self.sensors.lidar.scan(),
-            'orientation': self.sensors.imu.read()
-        }
-    def reason(self, perception):
-        # Path planning, obstacle avoidance
-        return self.planner.compute_action(perception, self.goals)
-    def act(self, action):
-        self.actuators.motors.move(action['velocity'])
-        self.actuators.gripper.grip(action['grip_strength'])
+  def __init__(self, sensors, actuators):
+      self.sensors = sensors  # Camera, LIDAR, IMU
+      self.actuators = actuators  # Motors, grippers
+      self.position = None
+      self.goals = []
+  def perceive(self):
+      return {
+          'vision': self.sensors.camera.capture(),
+          'distance': self.sensors.lidar.scan(),
+          'orientation': self.sensors.imu.read()
+      }
+  def reason(self, perception):
+      # Path planning, obstacle avoidance
+      return self.planner.compute_action(perception, self.goals)
+  def act(self, action):
+      self.actuators.motors.move(action['velocity'])
+      self.actuators.gripper.grip(action['grip_strength'])
   ```
   ### Metaverse (MV)
   **Virtual Agents**:
-  - **NPCs (Non-Player Characters)**: Autonomous game characters
-  - **Virtual Assistants**: In-world helper agents
-  - **Avatar AI**: Player behavior prediction/assistance
-  - **Environment Agents**: Weather, economy, ecosystem managers
-  - **Social Agents**: Crowd simulation, virtual citizens
+- **NPCs (Non-Player Characters)**: Autonomous game characters
+- **Virtual Assistants**: In-world helper agents
+- **Avatar AI**: Player behavior prediction/assistance
+- **Environment Agents**: Weather, economy, ecosystem managers
+- **Social Agents**: Crowd simulation, virtual citizens
   **Characteristics**:
-  - Virtual embodiment in 3D environments
-  - Real-time interaction with users
-  - Scalable behavior models
-  - Entertainment and immersion focus
+- Virtual embodiment in 3D environments
+- Real-time interaction with users
+- Scalable behavior models
+- Entertainment and immersion focus
   **Examples**:
   ```javascript
   class MetaverseAgent {
-    constructor(avatar, world, goals) {
-        this.avatar = avatar;
-        this.world = world;
-        this.goals = goals;
-        this.beliefs = new BeliefBase();
-    }
-    perceive() {
-        return {
-            nearby_avatars: this.world.getNearbyEntities(this.avatar.position),
-            environment: this.world.getEnvironmentState(),
-            user_actions: this.world.getUserInputs()
-        };
-    }
-    reason(perception) {
-        this.beliefs.update(perception);
-        return this.selectAction(this.beliefs, this.goals);
-    }
-    act(action) {
-        this.avatar.animate(action.animation);
-        this.world.applyEffect(action.effect);
-    }
+  constructor(avatar, world, goals) {
+      this.avatar = avatar;
+      this.world = world;
+      this.goals = goals;
+      this.beliefs = new BeliefBase();
+  }
+  perceive() {
+      return {
+          nearby_avatars: this.world.getNearbyEntities(this.avatar.position),
+          environment: this.world.getEnvironmentState(),
+          user_actions: this.world.getUserInputs()
+      };
+  }
+  reason(perception) {
+      this.beliefs.update(perception);
+      return this.selectAction(this.beliefs, this.goals);
+  }
+  act(action) {
+      this.avatar.animate(action.animation);
+      this.world.applyEffect(action.effect);
+  }
   }
   ```
   ### Trusted Collaboration (TC)
   **Collaborative Agents**:
-  - **Coordination Agents**: Multi-agent system orchestrators
-  - **Negotiation Agents**: Resource allocation and conflict resolution
-  - **Trust Monitors**: Reputation and verification agents
-  - **Workflow Agents**: Process automation and handoff management
-  - **Knowledge Agents**: Information sharing and synthesis
+- **Coordination Agents**: Multi-agent system orchestrators
+- **Negotiation Agents**: Resource allocation and conflict resolution
+- **Trust Monitors**: Reputation and verification agents
+- **Workflow Agents**: Process automation and handoff management
+- **Knowledge Agents**: Information sharing and synthesis
   **Characteristics**:
-  - Multi-stakeholder coordination
-  - Trust and verification mechanisms
-  - Interoperability across systems
-  - Privacy-preserving collaboration
+- Multi-stakeholder coordination
+- Trust and verification mechanisms
+- Interoperability across systems
+- Privacy-preserving collaboration
   **Examples**:
   ```python
   class CollaborativeAgent:
-    def __init__(self, identity, trust_framework):
-        self.identity = identity
-        self.trust_framework = trust_framework
-        self.collaborators = []
-        self.shared_goals = []
-    def perceive(self):
-        return {
-            'collaborator_states': [c.get_state() for c in self.collaborators],
-            'trust_scores': self.trust_framework.compute_trust(self.collaborators),
-            'shared_goal_progress': self.evaluate_goal_progress()
-        }
-    def reason(self, perception):
-        # Negotiate actions with trusted collaborators
-        return self.negotiate_action(perception, self.shared_goals)
-    def act(self, action):
-        # Execute with verification and attestation
-        result = self.execute(action)
-        self.trust_framework.attest(result)
-        return result
+  def __init__(self, identity, trust_framework):
+      self.identity = identity
+      self.trust_framework = trust_framework
+      self.collaborators = []
+      self.shared_goals = []
+  def perceive(self):
+      return {
+          'collaborator_states': [c.get_state() for c in self.collaborators],
+          'trust_scores': self.trust_framework.compute_trust(self.collaborators),
+          'shared_goal_progress': self.evaluate_goal_progress()
+      }
+  def reason(self, perception):
+      # Negotiate actions with trusted collaborators
+      return self.negotiate_action(perception, self.shared_goals)
+  def act(self, action):
+      # Execute with verification and attestation
+      result = self.execute(action)
+      self.trust_framework.attest(result)
+      return result
   ```
   ## Cross-Domain Relationships
   ### Unified Agent Properties
@@ -208,20 +212,20 @@ An autonomous computational or physical entity that perceives its environment, r
   5. **MV ↔ TC**: Virtual agents facilitating human collaboration
   ## Agent Taxonomies
   ### By Autonomy Level
-  - **Reactive Agents**: Stimulus-response only
-  - **Deliberative Agents**: Plan before acting
-  - **Hybrid Agents**: Combine reactive and deliberative layers
-  - **Learning Agents**: Adapt from experience
+- **Reactive Agents**: Stimulus-response only
+- **Deliberative Agents**: Plan before acting
+- **Hybrid Agents**: Combine reactive and deliberative layers
+- **Learning Agents**: Adapt from experience
   ### By Architecture
-  - **BDI Agents**: Belief-Desire-Intention model
-  - **Utility-Based Agents**: Maximize utility functions
-  - **Goal-Based Agents**: Achieve specified goals
-  - **Reflex Agents**: Simple condition-action rules
+- **BDI Agents**: Belief-Desire-Intention model
+- **Utility-Based Agents**: Maximize utility functions
+- **Goal-Based Agents**: Achieve specified goals
+- **Reflex Agents**: Simple condition-action rules
   ### By Social Structure
-  - **Individual Agents**: Operate independently
-  - **Multi-Agent Systems**: Coordinate with other agents
-  - **Swarm Agents**: Emergent collective behavior
-  - **Hierarchical Agents**: Nested agent organizations
+- **Individual Agents**: Operate independently
+- **Multi-Agent Systems**: Coordinate with other agents
+- **Swarm Agents**: Emergent collective behavior
+- **Hierarchical Agents**: Nested agent organizations
   ## Implementation Considerations
   ### Design Principles
   1. **Clear Goal Specification**: Define what the agent should achieve
@@ -233,35 +237,35 @@ An autonomous computational or physical entity that perceives its environment, r
   ```
   # Sense-Think-Act Loop
   while agent.is_active():
-    perception = agent.perceive()
-    decision = agent.reason(perception)
-    agent.act(decision)
-    agent.learn(perception, decision, outcome)
+  perception = agent.perceive()
+  decision = agent.reason(perception)
+  agent.act(decision)
+  agent.learn(perception, decision, outcome)
   ```
   ### Challenges
-  - **Alignment**: Ensuring agent goals align with human values
-  - **Robustness**: Handling unexpected situations gracefully
-  - **Scalability**: Managing complexity in multi-agent systems
-  - **Trust**: Building reliable and verifiable agent behavior
-  - **Ethics**: Addressing moral and legal responsibilities
+- **Alignment**: Ensuring agent goals align with human values
+- **Robustness**: Handling unexpected situations gracefully
+- **Scalability**: Managing complexity in multi-agent systems
+- **Trust**: Building reliable and verifiable agent behavior
+- **Ethics**: Addressing moral and legal responsibilities
   ## Relationships
   ### Parent Concepts
-  - [[Autonomous System]] - Broader category of self-governing systems
+- [[Autonomous System]] - Broader category of self-governing systems
   ### Sibling Concepts
-  - [[Autonomy Level]] (DT-1009) - Degrees of agent independence
-  - [[Goal]] (DT-1010) - Desired end states for agents
-  - [[Objective]] (DT-1011) - Specific measurable targets
-  - [[BDI Model]] (DT-1012) - Agent reasoning architecture
+- [[Autonomy Level]] (DT-1009) - Degrees of agent independence
+- [[Goal]] (DT-1010) - Desired end states for agents
+- [[Objective]] (DT-1011) - Specific measurable targets
+- [[BDI Model]] (DT-1012) - Agent reasoning architecture
   ### Child Concepts
-  - [[Software Agent]] - Pure computational agents
-  - [[Physical Agent]] - Embodied robotic agents
-  - [[Hybrid Agent]] - Cyber-physical agents
+- [[Software Agent]] - Pure computational agents
+- [[Physical Agent]] - Embodied robotic agents
+- [[Hybrid Agent]] - Cyber-physical agents
   #### Related Concepts
-  - [[Multi-Agent System]] - Systems of interacting agents
-  - [[Environment]] - Context in which agents operate
-  - [[Perception]] - Agent sensing capabilities
-  - [[Action]] - Agent effect on environment
-  - [[Learning]] - Agent adaptation mechanisms
+- [[Multi-Agent System]] - Systems of interacting agents
+- [[Environment]] - Context in which agents operate
+- [[Perception]] - Agent sensing capabilities
+- [[Action]] - Agent effect on environment
+- [[Learning]] - Agent adaptation mechanisms
   ## Best Practices
   ### Agent Design
   1. **Start Simple**: Begin with reactive agents, add complexity as needed
@@ -284,16 +288,17 @@ An autonomous computational or physical entity that perceives its environment, r
   5. **Disaster Response**: Robot swarms + coordination + human teams
   #### References
   ### Foundational Papers
-  - Russell & Norvig - "Artificial Intelligence: A Modern Approach" (Agent chapter)
-  - Wooldridge - "An Introduction to MultiAgent Systems"
-  - Rao & Georgeff - "BDI Agents: From Theory to Practice"
+- Russell & Norvig - "Artificial Intelligence: A Modern Approach" (Agent chapter)
+- Wooldridge - "An Introduction to MultiAgent Systems"
+- Rao & Georgeff - "BDI Agents: From Theory to Practice"
   ### Domain-Specific
-  - **AI**: OpenAI GPT agents, AutoGPT
-  - **BC**: DAOs (MakerDAO, Compound), Autonomous smart contracts
-  - **RB**: ROS (Robot Operating System), Behavior Trees
-  - **MV**: Unity ML-Agents, Unreal Engine AI
-  - **TC**: Multi-agent planning, Coordination protocols
+- **AI**: OpenAI GPT agents, AutoGPT
+- **BC**: DAOs (MakerDAO, Compound), Autonomous smart contracts
+- **RB**: ROS (Robot Operating System), Behavior Trees
+- **MV**: Unity ML-Agents, Unreal Engine AI
+- **TC**: Multi-agent planning, Coordination protocols
   ## Tags
   #agent #autonomy #cross-domain #ai-agents #dao #robotics #metaverse #trusted-collaboration #bdi-model #multi-agent-systems #autonomous-systems #perception #reasoning #action #goals #intelligent-agents
-- ### Provenance
+
+### Provenance
 

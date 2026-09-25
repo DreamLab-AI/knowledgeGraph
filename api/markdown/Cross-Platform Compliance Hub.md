@@ -1,210 +1,217 @@
-
 A unified regulatory compliance system that harmonizes and coordinates compliance activities across multiple platforms, jurisdictions, and regulatory frameworks through centralized policy management and audit aggregation.
 
-- ### Semantic Classification
+### Semantic Classification
 
-- ### Content
-  ## Compositional Relationships (Components)
-      SubClassOf(ai:CrossPlatformComplianceHub
-        ObjectSomeValuesFrom(ai:hasPart ai:ComplianceDashboard))
-      SubClassOf(ai:CrossPlatformComplianceHub
-        ObjectSomeValuesFrom(ai:hasPart ai:RegulatoryMappingEngine))
-      SubClassOf(ai:CrossPlatformComplianceHub
-        ObjectSomeValuesFrom(ai:hasPart ai:PolicySynchronization))
-      SubClassOf(ai:CrossPlatformComplianceHub
-        ObjectSomeValuesFrom(ai:hasPart ai:AuditAggregator))
-      SubClassOf(ai:CrossPlatformComplianceHub
-        ObjectSomeValuesFrom(ai:hasPart ai:RiskAssessmentModule))
-      SubClassOf(ai:CrossPlatformComplianceHub
-        ObjectSomeValuesFrom(ai:hasPart ai:ReportingEngine))
+### Content
 
-  ## Dependency Relationships
-      SubClassOf(ai:CrossPlatformComplianceHub
-        ObjectSomeValuesFrom(ai:requires ai:AuditTrail))
-      SubClassOf(ai:CrossPlatformComplianceHub
-        ObjectSomeValuesFrom(ai:requires ai:ComplianceMonitoring))
-      SubClassOf(ai:CrossPlatformComplianceHub
-        ObjectSomeValuesFrom(ai:requires ai:MultiJurisdictionalPolicyStore))
-      SubClassOf(ai:CrossPlatformComplianceHub
-        ObjectSomeValuesFrom(ai:requires ai:PlatformIntegrationAPI))
-      SubClassOf(ai:CrossPlatformComplianceHub
-        ObjectSomeValuesFrom(ai:requires ai:IdentityProvider))
-      SubClassOf(ai:CrossPlatformComplianceHub
-        ObjectSomeValuesFrom(ai:requires ai:DataClassificationSystem))
-      SubClassOf(ai:CrossPlatformComplianceHub
-        ObjectSomeValuesFrom(ai:dependsOn ai:LegalFrameworkDatabase))
-      SubClassOf(ai:CrossPlatformComplianceHub
-        ObjectSomeValuesFrom(ai:dependsOn ai:RiskManagement))
-      SubClassOf(ai:CrossPlatformComplianceHub
-        ObjectSomeValuesFrom(ai:dependsOn ai:DataGovernance))
+## Compositional Relationships (Components)
+    SubClassOf(ai:CrossPlatformComplianceHub
+      ObjectSomeValuesFrom(ai:hasPart ai:ComplianceDashboard))
+    SubClassOf(ai:CrossPlatformComplianceHub
+      ObjectSomeValuesFrom(ai:hasPart ai:RegulatoryMappingEngine))
+    SubClassOf(ai:CrossPlatformComplianceHub
+      ObjectSomeValuesFrom(ai:hasPart ai:PolicySynchronization))
+    SubClassOf(ai:CrossPlatformComplianceHub
+      ObjectSomeValuesFrom(ai:hasPart ai:AuditAggregator))
+    SubClassOf(ai:CrossPlatformComplianceHub
+      ObjectSomeValuesFrom(ai:hasPart ai:RiskAssessmentModule))
+    SubClassOf(ai:CrossPlatformComplianceHub
+      ObjectSomeValuesFrom(ai:hasPart ai:ReportingEngine))
 
-  ## Capability Relationships
-      SubClassOf(ai:CrossPlatformComplianceHub
-        ObjectSomeValuesFrom(ai:enables ai:PolicyEnforcement))
-      SubClassOf(ai:CrossPlatformComplianceHub
-        ObjectSomeValuesFrom(ai:enables ai:UnifiedComplianceReporting))
-      SubClassOf(ai:CrossPlatformComplianceHub
-        ObjectSomeValuesFrom(ai:enables ai:RegulatoryHarmonization))
-      SubClassOf(ai:CrossPlatformComplianceHub
-        ObjectSomeValuesFrom(ai:enables ai:CrossPlatformAuditing))
-      SubClassOf(ai:CrossPlatformComplianceHub
-        ObjectSomeValuesFrom(ai:enables ai:ResponsibleAI))
+## Dependency Relationships
+    SubClassOf(ai:CrossPlatformComplianceHub
+      ObjectSomeValuesFrom(ai:requires ai:AuditTrail))
+    SubClassOf(ai:CrossPlatformComplianceHub
+      ObjectSomeValuesFrom(ai:requires ai:ComplianceMonitoring))
+    SubClassOf(ai:CrossPlatformComplianceHub
+      ObjectSomeValuesFrom(ai:requires ai:MultiJurisdictionalPolicyStore))
+    SubClassOf(ai:CrossPlatformComplianceHub
+      ObjectSomeValuesFrom(ai:requires ai:PlatformIntegrationAPI))
+    SubClassOf(ai:CrossPlatformComplianceHub
+      ObjectSomeValuesFrom(ai:requires ai:IdentityProvider))
+    SubClassOf(ai:CrossPlatformComplianceHub
+      ObjectSomeValuesFrom(ai:requires ai:DataClassificationSystem))
+    SubClassOf(ai:CrossPlatformComplianceHub
+      ObjectSomeValuesFrom(ai:dependsOn ai:LegalFrameworkDatabase))
+    SubClassOf(ai:CrossPlatformComplianceHub
+      ObjectSomeValuesFrom(ai:dependsOn ai:RiskManagement))
+    SubClassOf(ai:CrossPlatformComplianceHub
+      ObjectSomeValuesFrom(ai:dependsOn ai:DataGovernance))
 
-  ## Implementation Relationships
-      SubClassOf(ai:CrossPlatformComplianceHub
-        ObjectSomeValuesFrom(ai:implements ai:ISO27001))
-      SubClassOf(ai:CrossPlatformComplianceHub
-        ObjectSomeValuesFrom(ai:implements ai:GDPR))
-      SubClassOf(ai:CrossPlatformComplianceHub
-        ObjectSomeValuesFrom(ai:implements ai:SOC2))
-      SubClassOf(ai:CrossPlatformComplianceHub
-        ObjectSomeValuesFrom(ai:implements ai:DORA))
-      SubClassOf(ai:CrossPlatformComplianceHub
-        ObjectSomeValuesFrom(ai:implements ai:EUAIAct))
-      SubClassOf(ai:CrossPlatformComplianceHub
-        ObjectSomeValuesFrom(ai:standardizedBy ai:ISOiEC42001))
-      SubClassOf(ai:CrossPlatformComplianceHub
-        ObjectSomeValuesFrom(ai:standardizedBy ai:NISTAIRiskManagementFramework))
+## Capability Relationships
+    SubClassOf(ai:CrossPlatformComplianceHub
+      ObjectSomeValuesFrom(ai:enables ai:PolicyEnforcement))
+    SubClassOf(ai:CrossPlatformComplianceHub
+      ObjectSomeValuesFrom(ai:enables ai:UnifiedComplianceReporting))
+    SubClassOf(ai:CrossPlatformComplianceHub
+      ObjectSomeValuesFrom(ai:enables ai:RegulatoryHarmonization))
+    SubClassOf(ai:CrossPlatformComplianceHub
+      ObjectSomeValuesFrom(ai:enables ai:CrossPlatformAuditing))
+    SubClassOf(ai:CrossPlatformComplianceHub
+      ObjectSomeValuesFrom(ai:enables ai:ResponsibleAI))
 
-  ## Reduction Relationships
-      SubClassOf(ai:CrossPlatformComplianceHub
-        ObjectSomeValuesFrom(ai:reducesTo ai:GovernanceInfrastructure))
-      SubClassOf(ai:CrossPlatformComplianceHub
-        ObjectSomeValuesFrom(ai:reducesTo ai:RegulatoryComplianceFramework))
-      SubClassOf(ai:CrossPlatformComplianceHub
-        ObjectSomeValuesFrom(ai:reducesTo ai:AIGovernance))
+## Implementation Relationships
+    SubClassOf(ai:CrossPlatformComplianceHub
+      ObjectSomeValuesFrom(ai:implements ai:ISO27001))
+    SubClassOf(ai:CrossPlatformComplianceHub
+      ObjectSomeValuesFrom(ai:implements ai:GDPR))
+    SubClassOf(ai:CrossPlatformComplianceHub
+      ObjectSomeValuesFrom(ai:implements ai:SOC2))
+    SubClassOf(ai:CrossPlatformComplianceHub
+      ObjectSomeValuesFrom(ai:implements ai:DORA))
+    SubClassOf(ai:CrossPlatformComplianceHub
+      ObjectSomeValuesFrom(ai:implements ai:EUAIAct))
+    SubClassOf(ai:CrossPlatformComplianceHub
+      ObjectSomeValuesFrom(ai:standardizedBy ai:ISOiEC42001))
+    SubClassOf(ai:CrossPlatformComplianceHub
+      ObjectSomeValuesFrom(ai:standardizedBy ai:NISTAIRiskManagementFramework))
 
-  ## Formal Analysis
+## Reduction Relationships
+    SubClassOf(ai:CrossPlatformComplianceHub
+      ObjectSomeValuesFrom(ai:reducesTo ai:GovernanceInfrastructure))
+    SubClassOf(ai:CrossPlatformComplianceHub
+      ObjectSomeValuesFrom(ai:reducesTo ai:RegulatoryComplianceFramework))
+    SubClassOf(ai:CrossPlatformComplianceHub
+      ObjectSomeValuesFrom(ai:reducesTo ai:AIGovernance))
 
-  ### Architecture Model
+## Formal Analysis
 
-  A Cross-Platform Compliance Hub can be formally modelled as a policy-managed information system P = (F, C, E, M, R) where:
+### Architecture Model
 
-  - **F** = set of applicable regulatory frameworks {f₁, f₂, ..., fₙ} (e.g. {ISO 27001, GDPR, SOC 2, EU AI Act})
-  - **C** = control library = { (c_id, c_description, {req ∈ R | c satisfies req}) } — a set of controls, each mapped to the requirements they satisfy across all frameworks
-  - **E** = evidence repository = { (e_id, c_id, timestamp, hash, source_platform, status) } — timestamped, integrity-protected evidence artefacts
-  - **M** = framework mapping = { (c_id, f_id, req_id, gap_score) } — the cross-reference table linking controls to framework requirements
-  - **R** = set of regulatory requirements across all frameworks = ∪ R(fᵢ) for all fᵢ ∈ F
+A Cross-Platform Compliance Hub can be formally modelled as a policy-managed information system P = (F, C, E, M, R) where:
+
+- **F** = set of applicable regulatory frameworks {f₁, f₂, ..., fₙ} (e.g. {ISO 27001, GDPR, SOC 2, EU AI Act})
+- **C** = control library = { (c_id, c_description, {req ∈ R | c satisfies req}) } — a set of controls, each mapped to the requirements they satisfy across all frameworks
+- **E** = evidence repository = { (e_id, c_id, timestamp, hash, source_platform, status) } — timestamped, integrity-protected evidence artefacts
+- **M** = framework mapping = { (c_id, f_id, req_id, gap_score) } — the cross-reference table linking controls to framework requirements
+- **R** = set of regulatory requirements across all frameworks = ∪ R(fᵢ) for all fᵢ ∈ F
 
   **Compliance posture** for framework fᵢ at time t is defined as:
 
-  ```
-  Posture(fᵢ, t) = |{ req ∈ R(fᵢ) : ∃c ∈ C, ∃e ∈ E(c,t) with e.status = "compliant" }| / |R(fᵢ)|
-  ```
+```
+Posture(fᵢ, t) = |{ req ∈ R(fᵢ) : ∃c ∈ C, ∃e ∈ E(c,t) with e.status = "compliant" }| / |R(fᵢ)|
+```
 
-  This fraction of requirements for which current, compliant evidence exists defines a quantitative compliance score in [0, 1] per framework. The cross-platform compliance hub computes and maintains this score across all fᵢ ∈ F simultaneously.
+This fraction of requirements for which current, compliant evidence exists defines a quantitative compliance score in [0, 1] per framework. The cross-platform compliance hub computes and maintains this score across all fᵢ ∈ F simultaneously.
 
-  **Control gap** identification is the set difference:
+**Control gap** identification is the set difference:
 
-  ```
-  Gap(fᵢ, t) = { req ∈ R(fᵢ) : ¬∃c ∈ C, ∃e ∈ E(c,t) with e.status = "compliant" }
-  ```
+```
+Gap(fᵢ, t) = { req ∈ R(fᵢ) : ¬∃c ∈ C, ∃e ∈ E(c,t) with e.status = "compliant" }
+```
 
-  **Regulatory harmonisation efficiency** — the value of multi-framework compliance as opposed to N separate single-framework compliance programmes — is quantified by the redundancy ratio:
+**Regulatory harmonisation efficiency** — the value of multi-framework compliance as opposed to N separate single-framework compliance programmes — is quantified by the redundancy ratio:
 
-  ```
-  η = |C| / Σ |C(fᵢ)| where C(fᵢ) = minimal control set for framework fᵢ alone
-  ```
+```
+η = |C| / Σ |C(fᵢ)| where C(fᵢ) = minimal control set for framework fᵢ alone
+```
 
-  If η ≪ 1, the multi-framework approach requires significantly fewer total controls than implementing each framework independently, demonstrating the quantitative value of the cross-framework control library. In practice, organisations spanning [[ISO 27001]], [[SOC 2]], and [[GDPR]] report η ≈ 0.4-0.6, meaning 40-60% of controls are shared across frameworks.
+If η ≪ 1, the multi-framework approach requires significantly fewer total controls than implementing each framework independently, demonstrating the quantitative value of the cross-framework control library. In practice, organisations spanning [[ISO 27001]], [[SOC 2]], and [[GDPR]] report η ≈ 0.4-0.6, meaning 40-60% of controls are shared across frameworks.
 
-  ### Policy Synchronisation Model
+### Policy Synchronisation Model
 
-  The [[Policy Synchronization]] component implements a policy propagation function Sync: (ΔPolicyStore, Platforms) → ΔPlatformConfigurations, mapping changes in the central [[Multi-Jurisdictional Policy Store]] to required configuration changes on each connected platform. This can be modelled as a constraint satisfaction problem: for each platform p ∈ Platforms and each applicable policy π ∈ PolicyStore, the hub must verify that p's current configuration satisfies π, and generate remediation actions when it does not.
+The [[Policy Synchronization]] component implements a policy propagation function Sync: (ΔPolicyStore, Platforms) → ΔPlatformConfigurations, mapping changes in the central [[Multi-Jurisdictional Policy Store]] to required configuration changes on each connected platform. This can be modelled as a constraint satisfaction problem: for each platform p ∈ Platforms and each applicable policy π ∈ PolicyStore, the hub must verify that p's current configuration satisfies π, and generate remediation actions when it does not.
 
-  The temporal dimension is critical: regulatory requirements have effective dates, transition periods, and sunset clauses. The [[Legal Framework Database]] must model regulatory time-series, and the [[Regulatory Mapping Engine]] must apply version-appropriate mappings at each point in time. This creates a compliance calendar that the hub tracks, alerting on upcoming effective dates for new obligations and generating planning reports for remediation timelines.
+The temporal dimension is critical: regulatory requirements have effective dates, transition periods, and sunset clauses. The [[Legal Framework Database]] must model regulatory time-series, and the [[Regulatory Mapping Engine]] must apply version-appropriate mappings at each point in time. This creates a compliance calendar that the hub tracks, alerting on upcoming effective dates for new obligations and generating planning reports for remediation timelines.
 
-  ### Risk Quantification
+### Risk Quantification
 
-  The [[Risk Assessment Module]] scores identified gaps using the standard risk formula adapted for compliance contexts:
+The [[Risk Assessment Module]] scores identified gaps using the standard risk formula adapted for compliance contexts:
 
-  ```
-  RiskScore(gap) = Likelihood(non_compliance) × Impact(non_compliance)
-  ```
+```
+RiskScore(gap) = Likelihood(non_compliance) × Impact(non_compliance)
+```
 
-  where Likelihood is modelled by the control gap duration, the sophistication of relevant threat actors, and recent similar-organisation enforcement actions; and Impact is modelled by the maximum regulatory penalty, reputational damage estimate, and operational disruption cost. Frameworks differ in their penalty structures: [[GDPR]] maximum penalties are €20 million or 4% of global annual turnover; [[DORA]] fines reach 1% of average daily global turnover per day; [[EU AI Act]] penalties for prohibited AI systems reach €35 million or 7% of global turnover.
+where Likelihood is modelled by the control gap duration, the sophistication of relevant threat actors, and recent similar-organisation enforcement actions; and Impact is modelled by the maximum regulatory penalty, reputational damage estimate, and operational disruption cost. Frameworks differ in their penalty structures: [[GDPR]] maximum penalties are €20 million or 4% of global annual turnover; [[DORA]] fines reach 1% of average daily global turnover per day; [[EU AI Act]] penalties for prohibited AI systems reach €35 million or 7% of global turnover.
 
-  These differing penalty scales mean that a rational organisation prioritises remediation of high-penalty-framework gaps, and the risk-weighted prioritisation built into a cross-platform compliance hub directly reduces maximum regulatory exposure.
+These differing penalty scales mean that a rational organisation prioritises remediation of high-penalty-framework gaps, and the risk-weighted prioritisation built into a cross-platform compliance hub directly reduces maximum regulatory exposure.
 
-  ## About
+## About
 
-  A Cross-Platform Compliance Hub is an enterprise GRC (Governance, Risk, and Compliance) system designed to solve the fundamental challenge of modern regulated organisations: the need to simultaneously satisfy multiple overlapping regulatory frameworks across heterogeneous technology estates. Without a hub-based approach, each regulatory requirement is managed in isolation — a separate team for [[GDPR]] privacy controls, another for [[ISO 27001]] information security, another for [[SOC 2]] service organisation reporting — producing siloed evidence, duplicated effort, and inconsistent control implementations.
+A Cross-Platform Compliance Hub is an enterprise GRC (Governance, Risk, and Compliance) system designed to solve the fundamental challenge of modern regulated organisations: the need to simultaneously satisfy multiple overlapping regulatory frameworks across heterogeneous technology estates. Without a hub-based approach, each regulatory requirement is managed in isolation — a separate team for [[GDPR]] privacy controls, another for [[ISO 27001]] information security, another for [[SOC 2]] service organisation reporting — producing siloed evidence, duplicated effort, and inconsistent control implementations.
 
-  The hub's defining architectural property is the cross-framework control library: a normalised catalogue of security, privacy, and governance controls drawn from all applicable regulatory frameworks, with explicit mappings identifying which control satisfies which requirement in which framework. When an organisation implements a single technical control — for example, encrypted-at-rest storage for personal data — the hub records the evidence once and maps it simultaneously to [[GDPR]] Article 32 (security of processing), [[ISO 27001]] Annex A 8.24 (use of cryptography), [[SOC 2]] CC6.1 (logical and physical access), and [[HIPAA]] §164.312(a)(2)(iv) (encryption and decryption). This "implement once, satisfy many" paradigm quantifiably reduces compliance operational costs; GRC platform vendors report 40-60% reductions in compliance cycle time.
+The hub's defining architectural property is the cross-framework control library: a normalised catalogue of security, privacy, and governance controls drawn from all applicable regulatory frameworks, with explicit mappings identifying which control satisfies which requirement in which framework. When an organisation implements a single technical control — for example, encrypted-at-rest storage for personal data — the hub records the evidence once and maps it simultaneously to [[GDPR]] Article 32 (security of processing), [[ISO 27001]] Annex A 8.24 (use of cryptography), [[SOC 2]] CC6.1 (logical and physical access), and [[HIPAA]] §164.312(a)(2)(iv) (encryption and decryption). This "implement once, satisfy many" paradigm quantifiably reduces compliance operational costs; GRC platform vendors report 40-60% reductions in compliance cycle time.
 
-  The integration layer connecting the hub to enterprise platforms is delivered through a [[Platform Integration API]], typically using API connectors, SCIM provisioning, SIEM event streams, cloud configuration APIs (AWS Config, Azure Policy, GCP Security Command Centre), and agent-based data collectors on on-premise systems. The hub continuously queries these sources for evidence of control operation: access logs confirming multi-factor authentication, vulnerability scan results demonstrating patch currency, encryption configuration states, backup completion records, and access review completion timestamps. This evidence is time-stamped, hashed, stored in an immutable [[Audit Trail]], and surfaced in the [[Compliance Dashboard]] with framework-specific and cross-framework compliance posture scores.
+The integration layer connecting the hub to enterprise platforms is delivered through a [[Platform Integration API]], typically using API connectors, SCIM provisioning, SIEM event streams, cloud configuration APIs (AWS Config, Azure Policy, GCP Security Command Centre), and agent-based data collectors on on-premise systems. The hub continuously queries these sources for evidence of control operation: access logs confirming multi-factor authentication, vulnerability scan results demonstrating patch currency, encryption configuration states, backup completion records, and access review completion timestamps. This evidence is time-stamped, hashed, stored in an immutable [[Audit Trail]], and surfaced in the [[Compliance Dashboard]] with framework-specific and cross-framework compliance posture scores.
 
-  [[Risk Assessment Module]] components score identified control gaps against each framework's risk model, prioritising remediation by impact and likelihood. The [[Reporting Engine]] packages selected evidence artefacts into regulator-ready audit bundles — for instance, an ISO 27001 Statement of Applicability with supporting evidence, or a SOC 2 Type II report-ready evidence package. As the regulatory landscape shifts — new framework versions, regulatory guidance updates, enforcement decisions — the [[Legal Framework Database]] within the hub is updated, and the [[Regulatory Mapping Engine]] propagates changes to the control library and identifies newly arising gaps.
+[[Risk Assessment Module]] components score identified control gaps against each framework's risk model, prioritising remediation by impact and likelihood. The [[Reporting Engine]] packages selected evidence artefacts into regulator-ready audit bundles — for instance, an ISO 27001 Statement of Applicability with supporting evidence, or a SOC 2 Type II report-ready evidence package. As the regulatory landscape shifts — new framework versions, regulatory guidance updates, enforcement decisions — the [[Legal Framework Database]] within the hub is updated, and the [[Regulatory Mapping Engine]] propagates changes to the control library and identifies newly arising gaps.
 
-  ### Operational Workflow
+### Operational Workflow
 
-  The day-to-day operation of a cross-platform compliance hub follows a continuous monitoring and periodic remediation cycle. Evidence collection agents poll connected platforms on configurable schedules — typically every 15-60 minutes for high-frequency controls (access log review, patch status) and daily or weekly for lower-frequency controls (user access reviews, policy acknowledgements, training completion). Each evidence artefact is ingested, normalised to the hub's canonical evidence schema, timestamped, cryptographically hashed, and written to the immutable [[Audit Trail]] store.
+The day-to-day operation of a cross-platform compliance hub follows a continuous monitoring and periodic remediation cycle. Evidence collection agents poll connected platforms on configurable schedules — typically every 15-60 minutes for high-frequency controls (access log review, patch status) and daily or weekly for lower-frequency controls (user access reviews, policy acknowledgements, training completion). Each evidence artefact is ingested, normalised to the hub's canonical evidence schema, timestamped, cryptographically hashed, and written to the immutable [[Audit Trail]] store.
 
-  Automated alerting fires when evidence crosses configured thresholds: a control moving from "compliant" to "non-compliant" status, an evidence artefact approaching its staleness window (e.g. a vulnerability scan result older than 30 days), or a new compliance obligation becoming applicable. Alert routing sends notifications to designated control owners with specific remediation guidance drawn from the [[Multi-Jurisdictional Policy Store]]. The [[Compliance Dashboard]] displays real-time posture across all frameworks, with trend sparklines showing posture trajectory over 30/60/90-day windows.
+Automated alerting fires when evidence crosses configured thresholds: a control moving from "compliant" to "non-compliant" status, an evidence artefact approaching its staleness window (e.g. a vulnerability scan result older than 30 days), or a new compliance obligation becoming applicable. Alert routing sends notifications to designated control owners with specific remediation guidance drawn from the [[Multi-Jurisdictional Policy Store]]. The [[Compliance Dashboard]] displays real-time posture across all frameworks, with trend sparklines showing posture trajectory over 30/60/90-day windows.
 
-  Audit preparation cycles — the activities required before a third-party audit (ISO 27001, SOC 2 Type II, PCI DSS QSA assessment) — are automated through the [[Reporting Engine]]'s audit bundle generation capability. The hub selects all evidence artefacts relevant to the audit scope, validates their timestamps fall within the audit period, checks their integrity against stored hashes, and packages them into a structured format with framework-requirement cross-references. For ISO 27001 audits, the hub generates the complete Statement of Applicability with evidence links for each in-scope control. For SOC 2 Type II, it packages evidence period covering the full audit period (typically 6-12 months), demonstrating continuous operation of each trust service criterion.
+Audit preparation cycles — the activities required before a third-party audit (ISO 27001, SOC 2 Type II, PCI DSS QSA assessment) — are automated through the [[Reporting Engine]]'s audit bundle generation capability. The hub selects all evidence artefacts relevant to the audit scope, validates their timestamps fall within the audit period, checks their integrity against stored hashes, and packages them into a structured format with framework-requirement cross-references. For ISO 27001 audits, the hub generates the complete Statement of Applicability with evidence links for each in-scope control. For SOC 2 Type II, it packages evidence period covering the full audit period (typically 6-12 months), demonstrating continuous operation of each trust service criterion.
 
-  ### Comparison with Adjacent Approaches
+### Comparison with Adjacent Approaches
 
-  A Cross-Platform Compliance Hub occupies a distinct niche within the broader governance and compliance tooling landscape:
+A Cross-Platform Compliance Hub occupies a distinct niche within the broader governance and compliance tooling landscape:
 
-  **Point compliance tools vs. hub**: Point tools (e.g. a dedicated ISO 27001 management tool) address a single framework in depth but cannot perform cross-framework mapping or detect where a control satisfies multiple frameworks simultaneously. The hub trades some framework-specific depth for cross-framework intelligence.
+**Point compliance tools vs. hub**: Point tools (e.g. a dedicated ISO 27001 management tool) address a single framework in depth but cannot perform cross-framework mapping or detect where a control satisfies multiple frameworks simultaneously. The hub trades some framework-specific depth for cross-framework intelligence.
 
-  **GRC platforms vs. hub**: Traditional GRC platforms (RSA Archer, MetricStream, ServiceNow GRC) evolved from risk management rather than compliance automation and are typically heavy, highly customisable, and require significant configuration effort. Modern cloud-native compliance hubs (Vanta, Drata, Scytale) sacrifice some customisability for faster time-to-compliance with automated evidence collection.
+**GRC platforms vs. hub**: Traditional GRC platforms (RSA Archer, MetricStream, ServiceNow GRC) evolved from risk management rather than compliance automation and are typically heavy, highly customisable, and require significant configuration effort. Modern cloud-native compliance hubs (Vanta, Drata, Scytale) sacrifice some customisability for faster time-to-compliance with automated evidence collection.
 
-  **Security information and event management (SIEM) vs. hub**: SIEM platforms (Splunk, Microsoft Sentinel) are optimised for real-time threat detection and incident response, producing alerts rather than compliance evidence artefacts. The hub is compliance-optimised: it normalises SIEM data into compliance-relevant evidence, mapping alerts and non-alert periods alike to specific control requirements.
+**Security information and event management (SIEM) vs. hub**: SIEM platforms (Splunk, Microsoft Sentinel) are optimised for real-time threat detection and incident response, producing alerts rather than compliance evidence artefacts. The hub is compliance-optimised: it normalises SIEM data into compliance-relevant evidence, mapping alerts and non-alert periods alike to specific control requirements.
 
-  **Identity Governance and Administration (IGA) vs. hub**: IGA tools (SailPoint, Saviynt) focus specifically on managing user identities, access entitlements, and access review workflows — a subset of the control domains the hub must cover. The hub integrates with IGA tools via [[Platform Integration API]] to consume access review completion evidence as compliance artefacts.
+**Identity Governance and Administration (IGA) vs. hub**: IGA tools (SailPoint, Saviynt) focus specifically on managing user identities, access entitlements, and access review workflows — a subset of the control domains the hub must cover. The hub integrates with IGA tools via [[Platform Integration API]] to consume access review completion evidence as compliance artefacts.
 
-  **Legal technology vs. hub**: Contract management and legal research tools address the legal interpretation of regulatory requirements but do not operationalise them into technical controls. The hub's [[Legal Framework Database]] must translate legal requirements (often expressed in natural language with significant ambiguity) into operational control specifications — a mapping process that requires both legal and technical expertise and is a major implementation challenge.
+**Legal technology vs. hub**: Contract management and legal research tools address the legal interpretation of regulatory requirements but do not operationalise them into technical controls. The hub's [[Legal Framework Database]] must translate legal requirements (often expressed in natural language with significant ambiguity) into operational control specifications — a mapping process that requires both legal and technical expertise and is a major implementation challenge.
 
-  ### Challenges and Limitations
+### Challenges and Limitations
 
-  **Regulatory velocity**: The frequency with which new regulations are published, existing regulations are amended, and regulatory guidance is issued has accelerated significantly in 2024-2026. The [[Legal Framework Database]] requires continuous maintenance to remain current, and the [[Regulatory Mapping Engine]] must rapidly identify which control mappings are affected by each change. This creates a significant ongoing operational burden that is only partially addressable through automation.
+**Regulatory velocity**: The frequency with which new regulations are published, existing regulations are amended, and regulatory guidance is issued has accelerated significantly in 2024-2026. The [[Legal Framework Database]] requires continuous maintenance to remain current, and the [[Regulatory Mapping Engine]] must rapidly identify which control mappings are affected by each change. This creates a significant ongoing operational burden that is only partially addressable through automation.
 
-  **Jurisdictional complexity**: A multinational organisation may be subject to overlapping and sometimes conflicting requirements across EU, UK, US, and APAC jurisdictions. The hub must model jurisdiction-specific applicability of each requirement and identify conflicts where compliance with one jurisdiction's requirement would constitute non-compliance with another's — a situation that arises, for example, where US government security requirements prohibit certain encryption approaches that EU regulations require.
+**Jurisdictional complexity**: A multinational organisation may be subject to overlapping and sometimes conflicting requirements across EU, UK, US, and APAC jurisdictions. The hub must model jurisdiction-specific applicability of each requirement and identify conflicts where compliance with one jurisdiction's requirement would constitute non-compliance with another's — a situation that arises, for example, where US government security requirements prohibit certain encryption approaches that EU regulations require.
 
-  **Evidence quality and reliability**: Automated evidence collection via API is only as reliable as the APIs themselves. Platform API coverage is uneven: mature cloud providers (AWS, Azure, GCP) expose detailed compliance-relevant configuration APIs, whilst many SaaS applications have limited or no compliance API coverage. For systems without API integration, the hub falls back to manual evidence collection workflows, reducing automation benefits and introducing human error risk.
+**Evidence quality and reliability**: Automated evidence collection via API is only as reliable as the APIs themselves. Platform API coverage is uneven: mature cloud providers (AWS, Azure, GCP) expose detailed compliance-relevant configuration APIs, whilst many SaaS applications have limited or no compliance API coverage. For systems without API integration, the hub falls back to manual evidence collection workflows, reducing automation benefits and introducing human error risk.
 
-  **Control implementation depth vs. evidence surface**: A control may be superficially evidenced without being effectively implemented. For example, a policy acknowledgement signature provides evidence of a control without guaranteeing that the policy is understood and followed. The distinction between "paper compliance" (evidence present, control ineffective) and "operational compliance" (control genuinely operating as intended) is a persistent challenge that automated evidence collection cannot fully address.
+**Control implementation depth vs. evidence surface**: A control may be superficially evidenced without being effectively implemented. For example, a policy acknowledgement signature provides evidence of a control without guaranteeing that the policy is understood and followed. The distinction between "paper compliance" (evidence present, control ineffective) and "operational compliance" (control genuinely operating as intended) is a persistent challenge that automated evidence collection cannot fully address.
 
-  **Third-party and supply chain compliance**: Many regulatory frameworks extend compliance obligations to third-party suppliers and sub-processors (GDPR Article 28, SOC 2 vendor management criteria, DORA third-party ICT provider oversight). The hub must extend its evidence collection and posture monitoring to third-party systems through questionnaire automation, third-party attestation ingestion, and contractual compliance clause tracking — a substantially more complex integration than first-party platform integration.
+**Third-party and supply chain compliance**: Many regulatory frameworks extend compliance obligations to third-party suppliers and sub-processors (GDPR Article 28, SOC 2 vendor management criteria, DORA third-party ICT provider oversight). The hub must extend its evidence collection and posture monitoring to third-party systems through questionnaire automation, third-party attestation ingestion, and contractual compliance clause tracking — a substantially more complex integration than first-party platform integration.
 
-  ## Components / Architecture
+## Components / Architecture
 
-  **Multi-Jurisdictional Policy Store**
-  - A normalised, versioned repository of regulatory requirements and control obligations drawn from all frameworks the organisation must comply with.
-  - Stores requirement metadata: regulatory source, version, effective date, applicability conditions (geography, sector, data type, AI system risk category), and control mapping relationships.
-  - Feeds the [[Regulatory Mapping Engine]] with requirement change notifications when the [[Legal Framework Database]] is updated.
+**Multi-Jurisdictional Policy Store**
+
+- A normalised, versioned repository of regulatory requirements and control obligations drawn from all frameworks the organisation must comply with.
+- Stores requirement metadata: regulatory source, version, effective date, applicability conditions (geography, sector, data type, AI system risk category), and control mapping relationships.
+- Feeds the [[Regulatory Mapping Engine]] with requirement change notifications when the [[Legal Framework Database]] is updated.
 
   **Regulatory Mapping Engine**
-  - Performs automated cross-walking between frameworks: for each control, identifies which requirements across all applicable frameworks that control satisfies.
-  - Enables "gap analysis by delta": when a new framework version or obligation is added, the engine identifies which existing controls already satisfy it and which represent new gaps.
-  - Supports AI-assisted mapping (as of 2025-2026 platforms) where natural language processing matches free-text regulatory requirements to existing controls using semantic similarity.
+
+- Performs automated cross-walking between frameworks: for each control, identifies which requirements across all applicable frameworks that control satisfies.
+- Enables "gap analysis by delta": when a new framework version or obligation is added, the engine identifies which existing controls already satisfy it and which represent new gaps.
+- Supports AI-assisted mapping (as of 2025-2026 platforms) where natural language processing matches free-text regulatory requirements to existing controls using semantic similarity.
 
   **Platform Integration API**
-  - Bidirectional integration layer connecting the hub to enterprise systems via REST APIs, SCIM, SIEM connectors, cloud-native APIs, and agent-based collectors.
-  - In-scope platforms typically include cloud infrastructure (AWS, Azure, GCP), SaaS applications (Microsoft 365, Salesforce, GitHub), identity systems ([[Identity Provider]]: Okta, Entra ID), SIEM platforms (Splunk, Microsoft Sentinel), vulnerability management tools, and HR systems.
-  - Implements push (webhook-based alert ingestion) and pull (scheduled evidence collection) models.
+
+- Bidirectional integration layer connecting the hub to enterprise systems via REST APIs, SCIM, SIEM connectors, cloud-native APIs, and agent-based collectors.
+- In-scope platforms typically include cloud infrastructure (AWS, Azure, GCP), SaaS applications (Microsoft 365, Salesforce, GitHub), identity systems ([[Identity Provider]]: Okta, Entra ID), SIEM platforms (Splunk, Microsoft Sentinel), vulnerability management tools, and HR systems.
+- Implements push (webhook-based alert ingestion) and pull (scheduled evidence collection) models.
 
   **Audit Aggregator and [[Audit Trail]]**
-  - Collects and normalises evidence artefacts from all integrated platforms into a canonical evidence schema.
-  - Maintains an immutable, hash-chained [[Audit Trail]] with cryptographic integrity protection, satisfying regulatory requirements for tamper-evident records (GDPR recital 49, ISO 27001 A.8.15, SOC 2 CC7.3).
-  - Retention policies are applied per framework requirement (e.g. 7 years for SOX financial records, 3 years minimum for most ISO 27001 records).
+
+- Collects and normalises evidence artefacts from all integrated platforms into a canonical evidence schema.
+- Maintains an immutable, hash-chained [[Audit Trail]] with cryptographic integrity protection, satisfying regulatory requirements for tamper-evident records (GDPR recital 49, ISO 27001 A.8.15, SOC 2 CC7.3).
+- Retention policies are applied per framework requirement (e.g. 7 years for SOX financial records, 3 years minimum for most ISO 27001 records).
 
   **Risk Assessment Module**
-  - Scores each identified control gap against a risk matrix calibrated to the applicable framework's risk model.
-  - Integrates with threat intelligence feeds to contextualise risks with current attack patterns.
-  - Generates residual risk acceptance workflows requiring sign-off from designated risk owners, maintaining an auditable risk acceptance register.
+
+- Scores each identified control gap against a risk matrix calibrated to the applicable framework's risk model.
+- Integrates with threat intelligence feeds to contextualise risks with current attack patterns.
+- Generates residual risk acceptance workflows requiring sign-off from designated risk owners, maintaining an auditable risk acceptance register.
 
   **Compliance Dashboard and [[Reporting Engine]]**
-  - Real-time visualisation of control posture by framework, domain, and platform with drill-down to individual evidence artefacts.
-  - Generates audit bundles, management reports, regulator submission packages, and board-level risk summaries.
-  - Trend analysis tracks compliance posture over time, identifying degrading controls before they become audit findings.
+
+- Real-time visualisation of control posture by framework, domain, and platform with drill-down to individual evidence artefacts.
+- Generates audit bundles, management reports, regulator submission packages, and board-level risk summaries.
+- Trend analysis tracks compliance posture over time, identifying degrading controls before they become audit findings.
 
   **Policy Synchronization**
-  - Propagates policy updates from the [[Multi-Jurisdictional Policy Store]] to platform-specific control implementations.
-  - For example, a change in the hub's password policy triggers automatic update of Azure Conditional Access policies, AWS IAM password policies, and GitHub organisation settings through their respective APIs.
+
+- Propagates policy updates from the [[Multi-Jurisdictional Policy Store]] to platform-specific control implementations.
+- For example, a change in the hub's password policy triggers automatic update of Azure Conditional Access policies, AWS IAM password policies, and GitHub organisation settings through their respective APIs.
 
   ## Use Cases / Major Families
 
@@ -280,22 +287,26 @@ A unified regulatory compliance system that harmonizes and coordinates complianc
   Cross-platform compliance hubs must support an evolving and expanding set of compliance frameworks. The most significant frameworks requiring cross-platform hub support as of 2026 are:
 
   **Information Security**
-  - [[ISO 27001]]:2022 — the internationally recognised information security management system standard, restructured to align with Annex SL (now Annex L) for harmonisation with other ISO management system standards. 93 controls in Annex A, replacing 114 controls in the 2013 edition, with added emphasis on threat intelligence, cloud security, and ICT supply chain security. Certification requires third-party audit by an accredited certification body.
-  - [[SOC 2]] Type II — the AICPA attestation standard for service organisations, assessing the operating effectiveness of controls against Trust Services Criteria over a defined period (typically 6-12 months). The Type II report includes the auditor's opinion on control effectiveness, making it the most credible form of compliance evidence for B2B software vendor relationships.
-  - Cyber Essentials / Cyber Essentials Plus — UK government-backed certification schemes covering five technical control areas (boundary firewalls and internet gateways, secure configuration, access control, malware protection, patch management). The hub must collect evidence of compliance with these relatively simple but widely required controls across all in-scope platforms.
+
+- [[ISO 27001]]:2022 — the internationally recognised information security management system standard, restructured to align with Annex SL (now Annex L) for harmonisation with other ISO management system standards. 93 controls in Annex A, replacing 114 controls in the 2013 edition, with added emphasis on threat intelligence, cloud security, and ICT supply chain security. Certification requires third-party audit by an accredited certification body.
+- [[SOC 2]] Type II — the AICPA attestation standard for service organisations, assessing the operating effectiveness of controls against Trust Services Criteria over a defined period (typically 6-12 months). The Type II report includes the auditor's opinion on control effectiveness, making it the most credible form of compliance evidence for B2B software vendor relationships.
+- Cyber Essentials / Cyber Essentials Plus — UK government-backed certification schemes covering five technical control areas (boundary firewalls and internet gateways, secure configuration, access control, malware protection, patch management). The hub must collect evidence of compliance with these relatively simple but widely required controls across all in-scope platforms.
 
   **Data Protection**
-  - [[GDPR]] (EU) 2016/679 — 99 articles, 173 recitals, establishing the data protection rights and controller/processor obligations that define privacy compliance in the EU. Key operational obligations include lawful basis documentation, data subject rights procedures, data protection impact assessments (DPIAs), data breach notification within 72 hours, and processor due diligence. The hub must track DPIAs, breach incidents, and processor contracts as evidence artefacts.
-  - UK GDPR — the retained EU law version of GDPR as amended by the Data Protection Act 2018, supervised by the ICO. Substantially similar to EU GDPR but with UK-specific provisions on national security exemptions, research exemptions, and adequacy decisions for international transfers.
+
+- [[GDPR]] (EU) 2016/679 — 99 articles, 173 recitals, establishing the data protection rights and controller/processor obligations that define privacy compliance in the EU. Key operational obligations include lawful basis documentation, data subject rights procedures, data protection impact assessments (DPIAs), data breach notification within 72 hours, and processor due diligence. The hub must track DPIAs, breach incidents, and processor contracts as evidence artefacts.
+- UK GDPR — the retained EU law version of GDPR as amended by the Data Protection Act 2018, supervised by the ICO. Substantially similar to EU GDPR but with UK-specific provisions on national security exemptions, research exemptions, and adequacy decisions for international transfers.
 
   **Financial Services**
-  - [[DORA]] (EU) 2022/2554 — Digital Operational Resilience Act, applicable to all EU financial entities and their critical ICT service providers. Creates obligations for ICT risk management (Chapter II), ICT incident reporting with strict timelines (Chapter III), digital operational resilience testing including TLPT (Chapter IV), and ICT third-party risk management with detailed contractual requirements (Chapter V).
-  - [[SOX]] (USA) Section 404 — Sarbanes-Oxley Act requirement for management assessment of internal controls over financial reporting (ICFR), audited annually by the external auditor. Requires evidence of IT general controls (ITGC) covering logical access, change management, computer operations, and data integrity.
+
+- [[DORA]] (EU) 2022/2554 — Digital Operational Resilience Act, applicable to all EU financial entities and their critical ICT service providers. Creates obligations for ICT risk management (Chapter II), ICT incident reporting with strict timelines (Chapter III), digital operational resilience testing including TLPT (Chapter IV), and ICT third-party risk management with detailed contractual requirements (Chapter V).
+- [[SOX]] (USA) Section 404 — Sarbanes-Oxley Act requirement for management assessment of internal controls over financial reporting (ICFR), audited annually by the external auditor. Requires evidence of IT general controls (ITGC) covering logical access, change management, computer operations, and data integrity.
 
   **AI Governance**
-  - [[EU AI Act]] 2024/1689 — establishes risk-based categories for AI systems (unacceptable risk: prohibited; high risk: conformity assessment required; limited risk: transparency obligations; minimal risk: voluntary codes). High-risk AI systems (Annex III) require technical documentation (Article 11), data governance (Article 10), transparency (Article 13), human oversight (Article 14), and post-market monitoring (Article 72). Providers must register high-risk AI systems in the EU database.
-  - [[ISO/IEC 42001]]:2023 — the first certifiable AI management system standard, providing a framework for organisations that develop or deploy AI systems to demonstrate responsible AI governance through documented policies, risk management processes, and continuous improvement mechanisms. Can be audited and certified by accredited certification bodies.
-  - [[NIST AI RMF]] (AI 100-1, 2023) — a voluntary framework for managing AI risk through four core functions: Govern (establish AI risk governance), Map (categorise and prioritise AI risks), Measure (assess and monitor AI risks), and Manage (mitigate and remediate). NIST and ISO have published a crosswalk between AI RMF and ISO 42001 to enable dual-framework compliance.
+
+- [[EU AI Act]] 2024/1689 — establishes risk-based categories for AI systems (unacceptable risk: prohibited; high risk: conformity assessment required; limited risk: transparency obligations; minimal risk: voluntary codes). High-risk AI systems (Annex III) require technical documentation (Article 11), data governance (Article 10), transparency (Article 13), human oversight (Article 14), and post-market monitoring (Article 72). Providers must register high-risk AI systems in the EU database.
+- [[ISO/IEC 42001]]:2023 — the first certifiable AI management system standard, providing a framework for organisations that develop or deploy AI systems to demonstrate responsible AI governance through documented policies, risk management processes, and continuous improvement mechanisms. Can be audited and certified by accredited certification bodies.
+- [[NIST AI RMF]] (AI 100-1, 2023) — a voluntary framework for managing AI risk through four core functions: Govern (establish AI risk governance), Map (categorise and prioritise AI risks), Measure (assess and monitor AI risks), and Manage (mitigate and remediate). NIST and ISO have published a crosswalk between AI RMF and ISO 42001 to enable dual-framework compliance.
 
   ## Research & Literature
 
@@ -329,18 +340,18 @@ A unified regulatory compliance system that harmonizes and coordinates complianc
 
   ## Key Terminology
 
-  - **Cross-framework control mapping**: The process of identifying which single control implementation satisfies multiple regulatory requirements simultaneously across different frameworks. The cross-framework control library is the core intellectual asset of the compliance hub, representing accumulated regulatory analysis that is difficult to replicate manually at scale.
-  - **GRC**: Governance, Risk, and Compliance — the integrated discipline of coordinating organisational governance structures, enterprise risk management, and regulatory compliance activities. GRC platforms provide tooling infrastructure for this discipline; the cross-platform compliance hub is a GRC platform specialised for multi-framework, multi-platform environments.
-  - **RegTech**: Regulatory Technology — the application of digital technology (APIs, AI, process automation, analytics) to streamline, automate, and improve the effectiveness of regulatory compliance processes. The cross-platform compliance hub is a RegTech product category distinct from FinTech RegTech (KYC/AML automation) in its focus on enterprise governance rather than transaction monitoring.
-  - **Control gap**: A required regulatory control that is not currently implemented or evidenced, identified through comparison of the requirements in the [[Multi-Jurisdictional Policy Store]] with the current evidence record in the [[Audit Trail]]. Gaps are scored by risk and prioritised for remediation by the [[Risk Assessment Module]].
-  - **Evidence artefact**: A logged, time-stamped, cryptographically-hashed record providing proof that a control operated correctly at a specific point in time. Examples: a completed access review log, a vulnerability scan report showing all systems at defined patch levels, a training completion certificate, an encryption configuration export from a cloud platform API.
-  - **Trust service criteria**: The criteria used in SOC 2 attestation reports, defined by the AICPA Trust Services Criteria. The five categories are: security (CC6 series), availability (A1 series), processing integrity (PI1 series), confidentiality (C1 series), and privacy (P1-P8 series). Security (CC6-CC9) is mandatory; all others are elected based on applicable service commitments.
-  - **Conformity assessment**: The process of demonstrating that an AI system meets the requirements of the [[EU AI Act]]. For high-risk AI systems under Article 43, this is typically self-assessment documented in technical documentation; for some high-risk systems (biometric identification, critical infrastructure), third-party conformity assessment by a notified body is required. The compliance hub must support tracking conformity assessment status for each AI system in the organisation's [[EU AI Act]] inventory.
-  - **Statement of Applicability (SoA)**: The ISO 27001 document listing all Annex A controls (93 controls in ISO 27001:2022), their applicability to the organisation's scope, justification for inclusion or exclusion, and implementation status. The SoA is submitted to the certification body (auditor) and must reflect the hub's current control posture. A cross-platform compliance hub automates SoA maintenance by reflecting real-time evidence status for each Annex A control.
-  - **Continuous monitoring**: The practice of collecting and assessing compliance evidence on an ongoing basis (rather than only at annual audit time), enabling real-time posture visibility and rapid detection of control drift. Continuous monitoring is distinguished from periodic compliance by its cadence (minutes to hours between evidence refreshes) and by its automated alerting on control status changes.
-  - **Control owner**: The person or team designated as responsible for implementing and maintaining a specific compliance control. The compliance hub routes remediation workflows and evidence requests to control owners, and tracks control owner sign-off on risk acceptance decisions.
-  - **Residual risk**: The risk remaining after control implementation, representing the gap between the organisation's target risk posture and the risk reduction achieved by implemented controls. The [[Risk Assessment Module]] calculates residual risk for each framework and generates management reports on aggregate residual risk posture for board-level governance reporting.
-  - **Multi-framework programme**: A compliance programme designed from the outset to satisfy multiple regulatory frameworks simultaneously through shared control implementations, as opposed to sequential single-framework programmes. The cross-platform compliance hub is the enabling technology for multi-framework programmes, providing the cross-framework control library and shared evidence infrastructure that makes simultaneous multi-framework compliance operationally tractable.
+- **Cross-framework control mapping**: The process of identifying which single control implementation satisfies multiple regulatory requirements simultaneously across different frameworks. The cross-framework control library is the core intellectual asset of the compliance hub, representing accumulated regulatory analysis that is difficult to replicate manually at scale.
+- **GRC**: Governance, Risk, and Compliance — the integrated discipline of coordinating organisational governance structures, enterprise risk management, and regulatory compliance activities. GRC platforms provide tooling infrastructure for this discipline; the cross-platform compliance hub is a GRC platform specialised for multi-framework, multi-platform environments.
+- **RegTech**: Regulatory Technology — the application of digital technology (APIs, AI, process automation, analytics) to streamline, automate, and improve the effectiveness of regulatory compliance processes. The cross-platform compliance hub is a RegTech product category distinct from FinTech RegTech (KYC/AML automation) in its focus on enterprise governance rather than transaction monitoring.
+- **Control gap**: A required regulatory control that is not currently implemented or evidenced, identified through comparison of the requirements in the [[Multi-Jurisdictional Policy Store]] with the current evidence record in the [[Audit Trail]]. Gaps are scored by risk and prioritised for remediation by the [[Risk Assessment Module]].
+- **Evidence artefact**: A logged, time-stamped, cryptographically-hashed record providing proof that a control operated correctly at a specific point in time. Examples: a completed access review log, a vulnerability scan report showing all systems at defined patch levels, a training completion certificate, an encryption configuration export from a cloud platform API.
+- **Trust service criteria**: The criteria used in SOC 2 attestation reports, defined by the AICPA Trust Services Criteria. The five categories are: security (CC6 series), availability (A1 series), processing integrity (PI1 series), confidentiality (C1 series), and privacy (P1-P8 series). Security (CC6-CC9) is mandatory; all others are elected based on applicable service commitments.
+- **Conformity assessment**: The process of demonstrating that an AI system meets the requirements of the [[EU AI Act]]. For high-risk AI systems under Article 43, this is typically self-assessment documented in technical documentation; for some high-risk systems (biometric identification, critical infrastructure), third-party conformity assessment by a notified body is required. The compliance hub must support tracking conformity assessment status for each AI system in the organisation's [[EU AI Act]] inventory.
+- **Statement of Applicability (SoA)**: The ISO 27001 document listing all Annex A controls (93 controls in ISO 27001:2022), their applicability to the organisation's scope, justification for inclusion or exclusion, and implementation status. The SoA is submitted to the certification body (auditor) and must reflect the hub's current control posture. A cross-platform compliance hub automates SoA maintenance by reflecting real-time evidence status for each Annex A control.
+- **Continuous monitoring**: The practice of collecting and assessing compliance evidence on an ongoing basis (rather than only at annual audit time), enabling real-time posture visibility and rapid detection of control drift. Continuous monitoring is distinguished from periodic compliance by its cadence (minutes to hours between evidence refreshes) and by its automated alerting on control status changes.
+- **Control owner**: The person or team designated as responsible for implementing and maintaining a specific compliance control. The compliance hub routes remediation workflows and evidence requests to control owners, and tracks control owner sign-off on risk acceptance decisions.
+- **Residual risk**: The risk remaining after control implementation, representing the gap between the organisation's target risk posture and the risk reduction achieved by implemented controls. The [[Risk Assessment Module]] calculates residual risk for each framework and generates management reports on aggregate residual risk posture for board-level governance reporting.
+- **Multi-framework programme**: A compliance programme designed from the outset to satisfy multiple regulatory frameworks simultaneously through shared control implementations, as opposed to sequential single-framework programmes. The cross-platform compliance hub is the enabling technology for multi-framework programmes, providing the cross-framework control library and shared evidence infrastructure that makes simultaneous multi-framework compliance operationally tractable.
 
-- ### Provenance
+### Provenance
 

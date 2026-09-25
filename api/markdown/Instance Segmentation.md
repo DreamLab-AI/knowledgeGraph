@@ -1,49 +1,57 @@
-
 A computer vision task that extends object detection by predicting precise pixel-level masks for each individual object instance, jointly performing detection and segmentation to delineate the exact boundaries of distinct objects. Architectures such as Mask R-CNN, YOLACT, and SOLOv2 enable fine-grained object localisation essential for robotics manipulation, autonomous driving, and medical image analysis.
 
-- ### Semantic Classification
+### Semantic Classification
 
-- ### Content
-  - Instance Segmentation extends object detection by predicting precise pixel-level masks for each individual object instance, combining object detection with semantic segmentation to delineate exact boundaries of distinct objects. Instance segmentation models (Mask R-CNN, YOLACT, SOLOv2) enable fine-grained object localisation essential for robotics manipulation, autonomous driving, and medical image analysis.
+### Content
 
-				- ### Counter Opinions
-					- Some analysts argue that large central bank balance sheets can have adverse effects on market functioning. For instance, the Bank for International Settlements (BIS) notes that while central bank balance sheet expansions initially had positive effects, they also led to concerns about market distortions and long-term financial stability risks[](https://www.bis.org/publ/mktc11.pdf)[](https://www.bis.org/publ/bppdf/bispap66b.pdf). Additionally, the European Central Bank (ECB) has highlighted that excessive risk-taking by central banks can [undermine their credibility and the public's perception of their ability to deliver on their mandates](https://www.ecb.europa.eu/pub/pdf/other/mb201309_focus05.en.pdf).
+- Instance Segmentation extends object detection by predicting precise pixel-level masks for each individual object instance, combining object detection with semantic segmentation to delineate exact boundaries of distinct objects. Instance segmentation models (Mask R-CNN, YOLACT, SOLOv2) enable fine-grained object localisation essential for robotics manipulation, autonomous driving, and medical image analysis.
 
-				- ### Counter Opinions
-					- Some analysts argue that large central bank balance sheets can have adverse effects on market functioning. For instance, the Bank for International Settlements (BIS) notes that while central bank balance sheet expansions initially had positive effects, they also led to concerns about market distortions and long-term financial stability risks[](https://www.bis.org/publ/mktc11.pdf)[](https://www.bis.org/publ/bppdf/bispap66b.pdf). Additionally, the European Central Bank (ECB) has highlighted that excessive risk-taking by central banks can [undermine their credibility and the public's perception of their ability to deliver on their mandates](https://www.ecb.europa.eu/pub/pdf/other/mb201309_focus05.en.pdf).
+### Counter Opinions
 
-				- ### Counter Opinions
-					- Some analysts argue that large central bank balance sheets can have adverse effects on market functioning. For instance, the Bank for International Settlements (BIS) notes that while central bank balance sheet expansions initially had positive effects, they also led to concerns about market distortions and long-term financial stability risks[](https://www.bis.org/publ/mktc11.pdf)[](https://www.bis.org/publ/bppdf/bispap66b.pdf). Additionally, the European Central Bank (ECB) has highlighted that excessive risk-taking by central banks can [undermine their credibility and the public's perception of their ability to deliver on their mandates](https://www.ecb.europa.eu/pub/pdf/other/mb201309_focus05.en.pdf).
+- Some analysts argue that large central bank balance sheets can have adverse effects on market functioning. For instance, the Bank for International Settlements (BIS) notes that while central bank balance sheet expansions initially had positive effects, they also led to concerns about market distortions and long-term financial stability risks[](https://www.bis.org/publ/mktc11.pdf)[](https://www.bis.org/publ/bppdf/bispap66b.pdf). Additionally, the European Central Bank (ECB) has highlighted that excessive risk-taking by central banks can [undermine their credibility and the public's perception of their ability to deliver on their mandates](https://www.ecb.europa.eu/pub/pdf/other/mb201309_focus05.en.pdf).
 
-				- ### Counter Opinions
-					- Some analysts argue that large central bank balance sheets can have adverse effects on market functioning. For instance, the Bank for International Settlements (BIS) notes that while central bank balance sheet expansions initially had positive effects, they also led to concerns about market distortions and long-term financial stability risks[](https://www.bis.org/publ/mktc11.pdf)[](https://www.bis.org/publ/bppdf/bispap66b.pdf). Additionally, the European Central Bank (ECB) has highlighted that excessive risk-taking by central banks can [undermine their credibility and the public's perception of their ability to deliver on their mandates](https://www.ecb.europa.eu/pub/pdf/other/mb201309_focus05.en.pdf).
+### Counter Opinions
 
-  - #### 4.12.8 AI Promoting Freedom
-  However, AI could also promote freedom in several ways. For instance, AI tools like Altana have been used to identify goods made using forced labor, helping companies make informed supply chain decisions. AI could also serve as a new interface for disseminating information, such as a chatbot that aids detainees in requesting legal assistance.
+- Some analysts argue that large central bank balance sheets can have adverse effects on market functioning. For instance, the Bank for International Settlements (BIS) notes that while central bank balance sheet expansions initially had positive effects, they also led to concerns about market distortions and long-term financial stability risks[](https://www.bis.org/publ/mktc11.pdf)[](https://www.bis.org/publ/bppdf/bispap66b.pdf). Additionally, the European Central Bank (ECB) has highlighted that excessive risk-taking by central banks can [undermine their credibility and the public's perception of their ability to deliver on their mandates](https://www.ecb.europa.eu/pub/pdf/other/mb201309_focus05.en.pdf).
 
-  - #### 4.12.8 AI Promoting Freedom
-  However, AI could also promote freedom in several ways. For instance, AI tools like Altana have been used to identify goods made using forced labor, helping companies make informed supply chain decisions. AI could also serve as a new interface for disseminating information, such as a chatbot that aids detainees in requesting legal assistance.
+### Counter Opinions
 
-  - #### 4.12.8 AI Promoting Freedom
-  However, AI could also promote freedom in several ways. For instance, AI tools like Altana have been used to identify goods made using forced labor, helping companies make informed supply chain decisions. AI could also serve as a new interface for disseminating information, such as a chatbot that aids detainees in requesting legal assistance.
+- Some analysts argue that large central bank balance sheets can have adverse effects on market functioning. For instance, the Bank for International Settlements (BIS) notes that while central bank balance sheet expansions initially had positive effects, they also led to concerns about market distortions and long-term financial stability risks[](https://www.bis.org/publ/mktc11.pdf)[](https://www.bis.org/publ/bppdf/bispap66b.pdf). Additionally, the European Central Bank (ECB) has highlighted that excessive risk-taking by central banks can [undermine their credibility and the public's perception of their ability to deliver on their mandates](https://www.ecb.europa.eu/pub/pdf/other/mb201309_focus05.en.pdf).
 
-  - #### 4.12.8 AI Promoting Freedom
-  However, AI could also promote freedom in several ways. For instance, AI tools like Altana have been used to identify goods made using forced labor, helping companies make informed supply chain decisions. AI could also serve as a new interface for disseminating information, such as a chatbot that aids detainees in requesting legal assistance.
+### Counter Opinions
 
-  ## Core Characteristics
+- Some analysts argue that large central bank balance sheets can have adverse effects on market functioning. For instance, the Bank for International Settlements (BIS) notes that while central bank balance sheet expansions initially had positive effects, they also led to concerns about market distortions and long-term financial stability risks[](https://www.bis.org/publ/mktc11.pdf)[](https://www.bis.org/publ/bppdf/bispap66b.pdf). Additionally, the European Central Bank (ECB) has highlighted that excessive risk-taking by central banks can [undermine their credibility and the public's perception of their ability to deliver on their mandates](https://www.ecb.europa.eu/pub/pdf/other/mb201309_focus05.en.pdf).
 
-  - **Instance-Level Masks**: Separate masks for each object instance
-  - **Object Detection Extension**: Bounding boxes plus pixel-wise masks
-  - **Multi-Object Handling**: Simultaneous segmentation of multiple instances
-  - **Two-Stage Architecture**: Region proposal followed by mask prediction
-  - **Precise Boundaries**: Pixel-accurate object delineation
+#### 4.12.8 AI Promoting Freedom
+
+However, AI could also promote freedom in several ways. For instance, AI tools like Altana have been used to identify goods made using forced labor, helping companies make informed supply chain decisions. AI could also serve as a new interface for disseminating information, such as a chatbot that aids detainees in requesting legal assistance.
+
+#### 4.12.8 AI Promoting Freedom
+
+However, AI could also promote freedom in several ways. For instance, AI tools like Altana have been used to identify goods made using forced labor, helping companies make informed supply chain decisions. AI could also serve as a new interface for disseminating information, such as a chatbot that aids detainees in requesting legal assistance.
+
+#### 4.12.8 AI Promoting Freedom
+
+However, AI could also promote freedom in several ways. For instance, AI tools like Altana have been used to identify goods made using forced labor, helping companies make informed supply chain decisions. AI could also serve as a new interface for disseminating information, such as a chatbot that aids detainees in requesting legal assistance.
+
+#### 4.12.8 AI Promoting Freedom
+
+However, AI could also promote freedom in several ways. For instance, AI tools like Altana have been used to identify goods made using forced labor, helping companies make informed supply chain decisions. AI could also serve as a new interface for disseminating information, such as a chatbot that aids detainees in requesting legal assistance.
+
+## Core Characteristics
+
+- **Instance-Level Masks**: Separate masks for each object instance
+- **Object Detection Extension**: Bounding boxes plus pixel-wise masks
+- **Multi-Object Handling**: Simultaneous segmentation of multiple instances
+- **Two-Stage Architecture**: Region proposal followed by mask prediction
+- **Precise Boundaries**: Pixel-accurate object delineation
 
   ## Relationships
 
-  - **Subclass**: Computer Vision
-  - **Extends**: Object Detection, Semantic Segmentation
-  - **Related**: Panoptic Segmentation
-  - **Architectures**: Mask R-CNN, YOLACT, SOLOv2, Cascade Mask R-CNN
+- **Subclass**: Computer Vision
+- **Extends**: Object Detection, Semantic Segmentation
+- **Related**: Panoptic Segmentation
+- **Architectures**: Mask R-CNN, YOLACT, SOLOv2, Cascade Mask R-CNN
 
   ## Key Literature
 
@@ -55,24 +63,24 @@ A computer vision task that extends object detection by predicting precise pixel
 
   ## See Also
 
-  - [[Object Detection]]
-  - [[Semantic Segmentation]]
-  - [[Panoptic Segmentation]]
+- [[Object Detection]]
+- [[Semantic Segmentation]]
+- [[Panoptic Segmentation]]
 
   ## Core Characteristics
 
-  - **Instance-Level Masks**: Separate masks for each object instance
-  - **Object Detection Extension**: Bounding boxes plus pixel-wise masks
-  - **Multi-Object Handling**: Simultaneous segmentation of multiple instances
-  - **Two-Stage Architecture**: Region proposal followed by mask prediction
-  - **Precise Boundaries**: Pixel-accurate object delineation
+- **Instance-Level Masks**: Separate masks for each object instance
+- **Object Detection Extension**: Bounding boxes plus pixel-wise masks
+- **Multi-Object Handling**: Simultaneous segmentation of multiple instances
+- **Two-Stage Architecture**: Region proposal followed by mask prediction
+- **Precise Boundaries**: Pixel-accurate object delineation
 
   ## Relationships
 
-  - **Subclass**: Computer Vision
-  - **Extends**: Object Detection, Semantic Segmentation
-  - **Related**: Panoptic Segmentation
-  - **Architectures**: Mask R-CNN, YOLACT, SOLOv2, Cascade Mask R-CNN
+- **Subclass**: Computer Vision
+- **Extends**: Object Detection, Semantic Segmentation
+- **Related**: Panoptic Segmentation
+- **Architectures**: Mask R-CNN, YOLACT, SOLOv2, Cascade Mask R-CNN
 
   ## Key Literature
 
@@ -84,9 +92,9 @@ A computer vision task that extends object detection by predicting precise pixel
 
   ## See Also
 
-  - [[Object Detection]]
-  - [[Semantic Segmentation]]
-  - [[Panoptic Segmentation]]
+- [[Object Detection]]
+- [[Semantic Segmentation]]
+- [[Panoptic Segmentation]]
 
-- ### Provenance
+### Provenance
 

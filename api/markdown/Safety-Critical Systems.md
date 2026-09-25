@@ -1,12 +1,9 @@
-
 Safety-critical systems are hardware and software systems whose failure or malfunction could result in death, serious injury, significant property damage, or severe environmental harm. They are subject to rigorous engineering processes, formal standards, and independent certification to demonstrate that residual risk is reduced to an acceptable level.
 
-- ### Content
-  - The discipline emerged from catastrophic failures in 1970s avionics and process-plant control. The Therac-25 radiation therapy machine (1985–1987), whose software faults caused six patient deaths, and the Ariane 5 launch failure (1996) became canonical case studies that drove international standardisation efforts throughout the 1990s.
+### Content
 
-  - Architecturally, safety-critical systems employ redundancy (hardware voting, dual- or triple-modular redundancy), strict separation of safety and non-safety software partitions, deterministic scheduling, and watchdog timers. Static analysis, model checking, and coverage-guided testing — including MC/DC (Modified Condition/Decision Coverage) mandated by DO-178C for Level A software — are required artefacts.
-
-  - The ecosystem encompasses specialised real-time operating systems (VxWorks, INTEGRITY, LynxOS), hardware platforms with ECC memory and lock-step CPUs, toolchains with qualification evidence (LDRA, Polyspace), and certification bodies such as EASA, FAA, and TÜV. Automotive use of ISO 26262 spans everything from airbag ECUs to ASIL-D autonomous driving platforms.
-
-  - From 2024 onward, the integration of machine-learning components into safety-critical domains (adaptive cruise control, radiological image analysis) is creating new standardisation challenges. EASA's AI Roadmap and ISO/PAS 8800 address ML-based safety functions, though formal verification of neural network behaviour at ASIL-D confidence remains an open research problem.
+- The discipline emerged from catastrophic failures in 1970s avionics and process-plant control. The Therac-25 radiation therapy machine (1985–1987), whose software faults caused six patient deaths, and the Ariane 5 launch failure (1996) became canonical case studies that drove international standardisation efforts throughout the 1990s.
+- Architecturally, safety-critical systems employ redundancy (hardware voting, dual- or triple-modular redundancy), strict separation of safety and non-safety software partitions, deterministic scheduling, and watchdog timers. Static analysis, model checking, and coverage-guided testing — including MC/DC (Modified Condition/Decision Coverage) mandated by DO-178C for Level A software — are required artefacts.
+- The ecosystem encompasses specialised real-time operating systems (VxWorks, INTEGRITY, LynxOS), hardware platforms with ECC memory and lock-step CPUs, toolchains with qualification evidence (LDRA, Polyspace), and certification bodies such as EASA, FAA, and TÜV. Automotive use of ISO 26262 spans everything from airbag ECUs to ASIL-D autonomous driving platforms.
+- From 2024 onward, the integration of machine-learning components into safety-critical domains (adaptive cruise control, radiological image analysis) is creating new standardisation challenges. EASA's AI Roadmap and ISO/PAS 8800 address ML-based safety functions, though formal verification of neural network behaviour at ASIL-D confidence remains an open research problem.
 

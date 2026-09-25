@@ -1,165 +1,165 @@
-
 The evidence lower bound (ELBO) is a tractable lower bound on the log marginal likelihood of observed data under a probabilistic model with latent variables. Maximising the ELBO is equivalent to minimising the divergence between an approximate posterior and the true posterior, making intractable inference tractable. It is the training objective of variational autoencoders and a cornerstone of variational inference.
 
-- ### Semantic Classification
+### Semantic Classification
 
-- ### Content
-  ## Compositional Relationships (Components)
-      SubClassOf(ml:EvidenceLowerBound
-        ObjectSomeValuesFrom(ml:hasPart ml:ReconstructionTerm))
-      SubClassOf(ml:EvidenceLowerBound
-        ObjectSomeValuesFrom(ml:hasPart ml:KLDivergenceRegulariser))
-      SubClassOf(ml:EvidenceLowerBound
-        ObjectSomeValuesFrom(ml:hasPart ml:ApproximatePosterior))
-      SubClassOf(ml:EvidenceLowerBound
-        ObjectSomeValuesFrom(ml:hasPart ml:PriorDistribution))
-      SubClassOf(ml:EvidenceLowerBound
-        ObjectSomeValuesFrom(ml:hasPart ml:VariationalParameters))
+### Content
 
-  ## Dependency Relationships
-      SubClassOf(ml:EvidenceLowerBound
-        ObjectSomeValuesFrom(ml:requires ml:ProbabilisticModel))
-      SubClassOf(ml:EvidenceLowerBound
-        ObjectSomeValuesFrom(ml:requires ml:KullbackLeiblerDivergence))
-      SubClassOf(ml:EvidenceLowerBound
-        ObjectSomeValuesFrom(ml:requires ml:LatentVariable))
-      SubClassOf(ml:EvidenceLowerBound
-        ObjectSomeValuesFrom(ml:dependsOn ml:ReparametrisationTrick))
-      SubClassOf(ml:EvidenceLowerBound
-        ObjectSomeValuesFrom(ml:dependsOn ml:StochasticGradientDescent))
-      SubClassOf(ml:EvidenceLowerBound
-        ObjectSomeValuesFrom(ml:dependsOn ml:Backpropagation))
+## Compositional Relationships (Components)
+    SubClassOf(ml:EvidenceLowerBound
+      ObjectSomeValuesFrom(ml:hasPart ml:ReconstructionTerm))
+    SubClassOf(ml:EvidenceLowerBound
+      ObjectSomeValuesFrom(ml:hasPart ml:KLDivergenceRegulariser))
+    SubClassOf(ml:EvidenceLowerBound
+      ObjectSomeValuesFrom(ml:hasPart ml:ApproximatePosterior))
+    SubClassOf(ml:EvidenceLowerBound
+      ObjectSomeValuesFrom(ml:hasPart ml:PriorDistribution))
+    SubClassOf(ml:EvidenceLowerBound
+      ObjectSomeValuesFrom(ml:hasPart ml:VariationalParameters))
 
-  ## Capability Relationships
-      SubClassOf(ml:EvidenceLowerBound
-        ObjectSomeValuesFrom(ml:enables ml:VariationalAutoencoder))
-      SubClassOf(ml:EvidenceLowerBound
-        ObjectSomeValuesFrom(ml:enables ml:VariationalInference))
-      SubClassOf(ml:EvidenceLowerBound
-        ObjectSomeValuesFrom(ml:enables ml:AmortisedInference))
-      SubClassOf(ml:EvidenceLowerBound
-        ObjectSomeValuesFrom(ml:enables ml:ProbabilisticProgramming))
-      SubClassOf(ml:EvidenceLowerBound
-        ObjectSomeValuesFrom(ml:enables ml:BayesianDeepLearning))
-      SubClassOf(ml:EvidenceLowerBound
-        ObjectSomeValuesFrom(ml:enables ml:LatentDiffusionModel))
+## Dependency Relationships
+    SubClassOf(ml:EvidenceLowerBound
+      ObjectSomeValuesFrom(ml:requires ml:ProbabilisticModel))
+    SubClassOf(ml:EvidenceLowerBound
+      ObjectSomeValuesFrom(ml:requires ml:KullbackLeiblerDivergence))
+    SubClassOf(ml:EvidenceLowerBound
+      ObjectSomeValuesFrom(ml:requires ml:LatentVariable))
+    SubClassOf(ml:EvidenceLowerBound
+      ObjectSomeValuesFrom(ml:dependsOn ml:ReparametrisationTrick))
+    SubClassOf(ml:EvidenceLowerBound
+      ObjectSomeValuesFrom(ml:dependsOn ml:StochasticGradientDescent))
+    SubClassOf(ml:EvidenceLowerBound
+      ObjectSomeValuesFrom(ml:dependsOn ml:Backpropagation))
 
-  ## Implementation Relationships
-      SubClassOf(ml:EvidenceLowerBound
-        ObjectSomeValuesFrom(ml:implements ml:ApproximateBayesianInference))
-      SubClassOf(ml:EvidenceLowerBound
-        ObjectSomeValuesFrom(ml:implements ml:VariationalObjective))
-      SubClassOf(ml:EvidenceLowerBound
-        ObjectSomeValuesFrom(ml:supports ml:GenerativeModel))
-      SubClassOf(ml:EvidenceLowerBound
-        ObjectSomeValuesFrom(ml:supports ml:LatentVariableModel))
-      SubClassOf(ml:EvidenceLowerBound
-        ObjectSomeValuesFrom(ml:uses ml:MonteCarloEstimation))
-      SubClassOf(ml:EvidenceLowerBound
-        ObjectSomeValuesFrom(ml:uses ml:NormalisingFlows))
+## Capability Relationships
+    SubClassOf(ml:EvidenceLowerBound
+      ObjectSomeValuesFrom(ml:enables ml:VariationalAutoencoder))
+    SubClassOf(ml:EvidenceLowerBound
+      ObjectSomeValuesFrom(ml:enables ml:VariationalInference))
+    SubClassOf(ml:EvidenceLowerBound
+      ObjectSomeValuesFrom(ml:enables ml:AmortisedInference))
+    SubClassOf(ml:EvidenceLowerBound
+      ObjectSomeValuesFrom(ml:enables ml:ProbabilisticProgramming))
+    SubClassOf(ml:EvidenceLowerBound
+      ObjectSomeValuesFrom(ml:enables ml:BayesianDeepLearning))
+    SubClassOf(ml:EvidenceLowerBound
+      ObjectSomeValuesFrom(ml:enables ml:LatentDiffusionModel))
 
-  ## Reduction Relationships
-      SubClassOf(ml:EvidenceLowerBound
-        ObjectSomeValuesFrom(ml:reducesTo ml:NegativeVariationalFreeEnergy))
-      SubClassOf(ml:ImportanceWeightedELBO
-        ObjectSomeValuesFrom(ml:reducesTo ml:EvidenceLowerBound))
-      SubClassOf(ml:EvidenceLowerBound
-        ObjectSomeValuesFrom(ml:reducesTo ml:KLMinimisationProblem))
-      SubClassOf(ml:MeanFieldELBO
-        ObjectSomeValuesFrom(ml:reducesTo ml:EvidenceLowerBound))
+## Implementation Relationships
+    SubClassOf(ml:EvidenceLowerBound
+      ObjectSomeValuesFrom(ml:implements ml:ApproximateBayesianInference))
+    SubClassOf(ml:EvidenceLowerBound
+      ObjectSomeValuesFrom(ml:implements ml:VariationalObjective))
+    SubClassOf(ml:EvidenceLowerBound
+      ObjectSomeValuesFrom(ml:supports ml:GenerativeModel))
+    SubClassOf(ml:EvidenceLowerBound
+      ObjectSomeValuesFrom(ml:supports ml:LatentVariableModel))
+    SubClassOf(ml:EvidenceLowerBound
+      ObjectSomeValuesFrom(ml:uses ml:MonteCarloEstimation))
+    SubClassOf(ml:EvidenceLowerBound
+      ObjectSomeValuesFrom(ml:uses ml:NormalisingFlows))
 
-  ## About
+## Reduction Relationships
+    SubClassOf(ml:EvidenceLowerBound
+      ObjectSomeValuesFrom(ml:reducesTo ml:NegativeVariationalFreeEnergy))
+    SubClassOf(ml:ImportanceWeightedELBO
+      ObjectSomeValuesFrom(ml:reducesTo ml:EvidenceLowerBound))
+    SubClassOf(ml:EvidenceLowerBound
+      ObjectSomeValuesFrom(ml:reducesTo ml:KLMinimisationProblem))
+    SubClassOf(ml:MeanFieldELBO
+      ObjectSomeValuesFrom(ml:reducesTo ml:EvidenceLowerBound))
 
-  The Evidence Lower Bound emerges from the fundamental challenge of Bayesian inference: computing the posterior distribution p(z|x) = p(x|z)p(z)/p(x) requires evaluating the marginal likelihood p(x) = ∫ p(x|z)p(z) dz, an integral that is analytically intractable for virtually all models of practical interest. Early responses to this problem were either exact but exponentially costly (enumerate all latent configurations) or asymptotically exact but slow (Markov Chain Monte Carlo sampling). Variational Bayes, developed through work by Hinton and van Camp (1993), Waterhouse et al. (1996), and Jaakkola and Jordan (1999), proposed a fundamentally different strategy: recast inference as optimisation by introducing a tractable parametric family of distributions Q and finding the member closest to the true posterior.
+## About
 
-  The ELBO provides the optimisation objective for this strategy. The key insight, known since at least the 1960s in information theory and formalised in the context of machine learning by Neal and Hinton (1998) through the connection to the Expectation-Maximisation algorithm, is that the log marginal likelihood decomposes as:
+The Evidence Lower Bound emerges from the fundamental challenge of Bayesian inference: computing the posterior distribution p(z|x) = p(x|z)p(z)/p(x) requires evaluating the marginal likelihood p(x) = ∫ p(x|z)p(z) dz, an integral that is analytically intractable for virtually all models of practical interest. Early responses to this problem were either exact but exponentially costly (enumerate all latent configurations) or asymptotically exact but slow (Markov Chain Monte Carlo sampling). Variational Bayes, developed through work by Hinton and van Camp (1993), Waterhouse et al. (1996), and Jaakkola and Jordan (1999), proposed a fundamentally different strategy: recast inference as optimisation by introducing a tractable parametric family of distributions Q and finding the member closest to the true posterior.
 
-  log p(x) = ELBO(φ) + KL(q(z;φ) || p(z|x))
+The ELBO provides the optimisation objective for this strategy. The key insight, known since at least the 1960s in information theory and formalised in the context of machine learning by Neal and Hinton (1998) through the connection to the Expectation-Maximisation algorithm, is that the log marginal likelihood decomposes as:
 
-  Since KL divergence is always non-negative, ELBO(φ) ≤ log p(x) for all φ — hence "lower bound." The bound is tight (ELBO = log p(x)) if and only if q equals the true posterior p(z|x). Maximising the ELBO therefore simultaneously tightens the approximation to the true posterior and improves the model evidence. Because log p(x) is constant with respect to φ, maximising the ELBO is exactly equivalent to minimising KL(q(z;φ) || p(z|x)).
+log p(x) = ELBO(φ) + KL(q(z;φ) || p(z|x))
 
-  The critical breakthrough enabling modern deep variational methods was the [[Reparameterisation Trick]] introduced by Kingma and Welling (2013) and Rezende, Mohamed and Wierstra (2014). For distributions where z can be written as z = g(ε, φ) for noise variable ε ~ p(ε) independent of φ — notably the Gaussian case z = μ(φ) + σ(φ)·ε where ε ~ N(0, I) — the gradient of the ELBO with respect to φ can be estimated by low-variance Monte Carlo, enabling backpropagation through the sampling operation. This made it possible to train deep encoder-decoder architectures end-to-end: the encoder outputs variational parameters φ(x) = (μ(x), σ(x)) and the decoder models p(x|z). The resulting architecture, the [[Variational Autoencoder]], brought variational inference into the mainstream of deep learning.
+Since KL divergence is always non-negative, ELBO(φ) ≤ log p(x) for all φ — hence "lower bound." The bound is tight (ELBO = log p(x)) if and only if q equals the true posterior p(z|x). Maximising the ELBO therefore simultaneously tightens the approximation to the true posterior and improves the model evidence. Because log p(x) is constant with respect to φ, maximising the ELBO is exactly equivalent to minimising KL(q(z;φ) || p(z|x)).
 
-  The ELBO thus sits at the intersection of classical Bayesian statistics, information theory, optimisation, and deep learning, providing the theoretical glue that allows principled probabilistic reasoning at the scale of modern neural network architectures.
+The critical breakthrough enabling modern deep variational methods was the [[Reparameterisation Trick]] introduced by Kingma and Welling (2013) and Rezende, Mohamed and Wierstra (2014). For distributions where z can be written as z = g(ε, φ) for noise variable ε ~ p(ε) independent of φ — notably the Gaussian case z = μ(φ) + σ(φ)·ε where ε ~ N(0, I) — the gradient of the ELBO with respect to φ can be estimated by low-variance Monte Carlo, enabling backpropagation through the sampling operation. This made it possible to train deep encoder-decoder architectures end-to-end: the encoder outputs variational parameters φ(x) = (μ(x), σ(x)) and the decoder models p(x|z). The resulting architecture, the [[Variational Autoencoder]], brought variational inference into the mainstream of deep learning.
 
-  ## Mathematical Derivation and Decomposition
+The ELBO thus sits at the intersection of classical Bayesian statistics, information theory, optimisation, and deep learning, providing the theoretical glue that allows principled probabilistic reasoning at the scale of modern neural network architectures.
 
-  Beginning from Bayes' theorem and Jensen's inequality, the ELBO can be derived as follows. For any distribution q(z):
+## Mathematical Derivation and Decomposition
 
-  log p(x) = log ∫ p(x, z) dz
-            = log ∫ q(z) · [p(x, z) / q(z)] dz
-            ≥ ∫ q(z) log[p(x, z) / q(z)] dz   (by Jensen's inequality applied to the concave log function)
-            = E_{q(z)}[log p(x, z) - log q(z)]
-            = E_{q(z)}[log p(x, z)] + H[q(z)]
+Beginning from Bayes' theorem and Jensen's inequality, the ELBO can be derived as follows. For any distribution q(z):
 
-  where H[q] denotes the entropy of q. This is the ELBO.
+log p(x) = log ∫ p(x, z) dz
+          = log ∫ q(z) · [p(x, z) / q(z)] dz
+          ≥ ∫ q(z) log[p(x, z) / q(z)] dz   (by Jensen's inequality applied to the concave log function)
+          = E_{q(z)}[log p(x, z) - log q(z)]
+          = E_{q(z)}[log p(x, z)] + H[q(z)]
 
-  Expanding p(x, z) = p(x|z)p(z) yields the canonical decomposition:
+where H[q] denotes the entropy of q. This is the ELBO.
 
-  ELBO(φ) = E_{q(z;φ)}[log p(x|z)] - KL(q(z;φ) || p(z))
+Expanding p(x, z) = p(x|z)p(z) yields the canonical decomposition:
 
-  The first term is the **reconstruction term** or **expected log-likelihood**: it measures how well the generative model reconstructs observations given latent samples drawn from the approximate posterior. In a [[Variational Autoencoder]] with Gaussian encoder and Bernoulli or Gaussian decoder, this reduces to binary or mean-squared reconstruction loss respectively.
+ELBO(φ) = E_{q(z;φ)}[log p(x|z)] - KL(q(z;φ) || p(z))
 
-  The second term is the **KL regularisation term**: it penalises approximate posteriors q that deviate from the prior p(z), regularising the latent space. For Gaussian q with mean μ and diagonal covariance σ² and standard Gaussian prior N(0, I), the KL has the closed form: KL = -½ Σ_j (1 + log σ_j² - μ_j² - σ_j²), which is analytically tractable and does not require Monte Carlo sampling.
+The first term is the **reconstruction term** or **expected log-likelihood**: it measures how well the generative model reconstructs observations given latent samples drawn from the approximate posterior. In a [[Variational Autoencoder]] with Gaussian encoder and Bernoulli or Gaussian decoder, this reduces to binary or mean-squared reconstruction loss respectively.
 
-  The ELBO can also be written in terms of KL divergence directly:
+The second term is the **KL regularisation term**: it penalises approximate posteriors q that deviate from the prior p(z), regularising the latent space. For Gaussian q with mean μ and diagonal covariance σ² and standard Gaussian prior N(0, I), the KL has the closed form: KL = -½ Σ_j (1 + log σ_j² - μ_j² - σ_j²), which is analytically tractable and does not require Monte Carlo sampling.
 
-  ELBO(φ) = log p(x) - KL(q(z;φ) || p(z|x))
+The ELBO can also be written in terms of KL divergence directly:
 
-  confirming that maximising the ELBO minimises the KL from the approximate to the true posterior, simultaneously tightening the bound and improving the approximation quality.
+ELBO(φ) = log p(x) - KL(q(z;φ) || p(z|x))
 
-  ## Key Mechanisms and Algorithmic Variants
+confirming that maximising the ELBO minimises the KL from the approximate to the true posterior, simultaneously tightening the bound and improving the approximation quality.
 
-  ### Reparameterisation Trick
+## Key Mechanisms and Algorithmic Variants
 
-  The [[Reparameterisation Trick]] enables low-variance gradient estimation through the ELBO's reconstruction term. For the Gaussian case q(z|x) = N(μ(x), σ²(x)·I), sampling z ~ q(z|x) is reparameterised as z = μ(x) + σ(x) ⊙ ε where ε ~ N(0, I). The ELBO gradient with respect to encoder parameters φ becomes:
+### Reparameterisation Trick
 
-  ∇_φ ELBO ≈ ∇_φ log p(x | g(ε, φ)) - ∇_φ KL(q(z;φ) || p(z))
+The [[Reparameterisation Trick]] enables low-variance gradient estimation through the ELBO's reconstruction term. For the Gaussian case q(z|x) = N(μ(x), σ²(x)·I), sampling z ~ q(z|x) is reparameterised as z = μ(x) + σ(x) ⊙ ε where ε ~ N(0, I). The ELBO gradient with respect to encoder parameters φ becomes:
 
-  estimated by sampling ε from its fixed noise distribution and differentiating through the deterministic function g. This achieves dramatically lower variance than the score-function (REINFORCE) estimator and is standard in all major deep learning frameworks.
+∇_φ ELBO ≈ ∇_φ log p(x | g(ε, φ)) - ∇_φ KL(q(z;φ) || p(z))
 
-  ### Mean-Field Variational Inference
+estimated by sampling ε from its fixed noise distribution and differentiating through the deterministic function g. This achieves dramatically lower variance than the score-function (REINFORCE) estimator and is standard in all major deep learning frameworks.
 
-  The **mean-field approximation** restricts the variational family to fully factored (independent) distributions: q(z; φ) = ∏_i q_i(z_i; φ_i). Under this assumption and exponential family models, coordinate ascent variational inference (CAVI) provides closed-form update equations that iteratively optimise each factor q_i while holding others fixed. Mean-field CAVI is efficient and converges to a local ELBO maximum but cannot represent posterior correlations between latent dimensions, leading to systematic underestimation of posterior variance.
+### Mean-Field Variational Inference
 
-  ### Stochastic Variational Inference (SVI)
+The **mean-field approximation** restricts the variational family to fully factored (independent) distributions: q(z; φ) = ∏_i q_i(z_i; φ_i). Under this assumption and exponential family models, coordinate ascent variational inference (CAVI) provides closed-form update equations that iteratively optimise each factor q_i while holding others fixed. Mean-field CAVI is efficient and converges to a local ELBO maximum but cannot represent posterior correlations between latent dimensions, leading to systematic underestimation of posterior variance.
 
-  **Stochastic Variational Inference** (Hoffman et al., 2013) scales mean-field VI to large datasets by subsampling the ELBO's data term. The local ELBO at a mini-batch B of size M drawn from N total data points is:
+### Stochastic Variational Inference (SVI)
 
-  ELBO_B(φ) ≈ (N/M) Σ_{x ∈ B} E_q[log p(x|z)] - KL(q(z;φ) || p(z))
+**Stochastic Variational Inference** (Hoffman et al., 2013) scales mean-field VI to large datasets by subsampling the ELBO's data term. The local ELBO at a mini-batch B of size M drawn from N total data points is:
 
-  Natural gradient descent on the ELBO with respect to global variational parameters (those shared across data points) converges faster than vanilla gradient descent for exponential family models, exploiting the Riemannian geometry of the space of probability distributions.
+ELBO_B(φ) ≈ (N/M) Σ_{x ∈ B} E_q[log p(x|z)] - KL(q(z;φ) || p(z))
 
-  ### Importance-Weighted ELBO (IWAE)
+Natural gradient descent on the ELBO with respect to global variational parameters (those shared across data points) converges faster than vanilla gradient descent for exponential family models, exploiting the Riemannian geometry of the space of probability distributions.
 
-  Burda, Grosse and Salakhutdinov (2016) introduced the **Importance-Weighted Autoencoder** (IWAE), which tightens the ELBO using importance-weighted samples:
+### Importance-Weighted ELBO (IWAE)
 
-  IWAE_K(φ) = E_{z_1,...,z_K ~ q}[log (1/K Σ_k p(x,z_k)/q(z_k;φ))]
+Burda, Grosse and Salakhutdinov (2016) introduced the **Importance-Weighted Autoencoder** (IWAE), which tightens the ELBO using importance-weighted samples:
 
-  IWAE_K ≥ IWAE_K' when K ≥ K', and IWAE_K → log p(x) as K → ∞. Tighter bounds improve likelihood estimation but, as Rainforth et al. (2018) showed, they can actually produce worse posterior approximations: the variance of the gradient estimator with respect to the inference network parameters increases with K, a phenomenon called "tighter bounds are not necessarily better." This trade-off between tightening the bound and the quality of the learned encoder is an active research topic.
+IWAE_K(φ) = E_{z_1,...,z_K ~ q}[log (1/K Σ_k p(x,z_k)/q(z_k;φ))]
 
-  ### Black-Box Variational Inference (BBVI)
+IWAE_K ≥ IWAE_K' when K ≥ K', and IWAE_K → log p(x) as K → ∞. Tighter bounds improve likelihood estimation but, as Rainforth et al. (2018) showed, they can actually produce worse posterior approximations: the variance of the gradient estimator with respect to the inference network parameters increases with K, a phenomenon called "tighter bounds are not necessarily better." This trade-off between tightening the bound and the quality of the learned encoder is an active research topic.
 
-  For latent variable models where the reparameterisation trick does not apply — discrete latent variables, models with non-differentiable likelihoods — **Black-Box Variational Inference** (Ranganath et al., 2014) uses the score-function estimator (REINFORCE): ∇_φ ELBO = E_q[log p(x,z) · ∇_φ log q(z;φ)]. This is unbiased but high-variance; variance reduction techniques such as control variates, Rao-Blackwellisation, and NVIL are employed in practice. Extensions include Discrete VAEs using Gumbel-Softmax relaxation (Jang et al., 2017; Maddison et al., 2017) for differentiable approximations to discrete sampling.
+### Black-Box Variational Inference (BBVI)
 
-  ### Normalising Flows and Enriched Posteriors
+For latent variable models where the reparameterisation trick does not apply — discrete latent variables, models with non-differentiable likelihoods — **Black-Box Variational Inference** (Ranganath et al., 2014) uses the score-function estimator (REINFORCE): ∇_φ ELBO = E_q[log p(x,z) · ∇_φ log q(z;φ)]. This is unbiased but high-variance; variance reduction techniques such as control variates, Rao-Blackwellisation, and NVIL are employed in practice. Extensions include Discrete VAEs using Gumbel-Softmax relaxation (Jang et al., 2017; Maddison et al., 2017) for differentiable approximations to discrete sampling.
 
-  **[[Normalising Flows]]** enrich the variational family beyond mean-field Gaussians by composing a sequence of invertible differentiable transformations, mapping a simple base distribution (e.g., isotropic Gaussian) to a complex approximate posterior. Variants include planar flows, radial flows (Rezende & Mohamed, 2015), Real-NVP (Dinh et al., 2017), Glow (Kingma & Dhariwal, 2018), and Neural Spline Flows (Durkan et al., 2019). Each transformation preserves tractable density computation via the change-of-variables formula, enabling tighter ELBO estimation with more expressive posteriors.
+### Normalising Flows and Enriched Posteriors
 
-  ### Locally-Enhanced Bounds
+**[[Normalising Flows]]** enrich the variational family beyond mean-field Gaussians by composing a sequence of invertible differentiable transformations, mapping a simple base distribution (e.g., isotropic Gaussian) to a complex approximate posterior. Variants include planar flows, radial flows (Rezende & Mohamed, 2015), Real-NVP (Dinh et al., 2017), Glow (Kingma & Dhariwal, 2018), and Neural Spline Flows (Durkan et al., 2019). Each transformation preserves tractable density computation via the change-of-variables formula, enabling tighter ELBO estimation with more expressive posteriors.
 
-  For hierarchical latent variable models with multiple levels of stochastic variables, **locally-enhanced bounds** (Llinares-López et al., 2022) apply importance-weighting selectively at local (per-datapoint) latent levels while retaining efficient global parameter updates, achieving tighter bounds for hierarchical models without the full cost of global importance weighting.
+### Locally-Enhanced Bounds
 
-  ## Applications and Use Cases
+For hierarchical latent variable models with multiple levels of stochastic variables, **locally-enhanced bounds** (Llinares-López et al., 2022) apply importance-weighting selectively at local (per-datapoint) latent levels while retaining efficient global parameter updates, achieving tighter bounds for hierarchical models without the full cost of global importance weighting.
 
-  ### Variational Autoencoders (VAE)
+## Applications and Use Cases
 
-  The [[Variational Autoencoder]] is the canonical application of the ELBO. An encoder neural network maps input x to variational parameters (μ(x), σ(x)); the ELBO provides the training objective combining reconstruction quality and latent space regularisation. The regularised, continuous latent space supports:
+### Variational Autoencoders (VAE)
 
-  - **Image generation**: smooth interpolation and random sampling in latent space; Kingma & Welling (2013) demonstrated digit generation on MNIST; subsequent hierarchical VAEs (NVAE, VDVAE, Ladder VAE) achieve near-GAN quality on face generation benchmarks.
-  - **Representation learning**: disentangled representations (β-VAE, FactorVAE) enforce stronger regularisation to learn interpretable, semantically meaningful latent factors.
-  - **Anomaly detection**: reconstruction error and ELBO estimates serve as anomaly scores; datapoints lying far from the prior in latent space or reconstructed poorly are flagged as anomalous.
-  - **Semi-supervised learning**: VAE latent representations transfer to downstream classification with few labelled examples.
+The [[Variational Autoencoder]] is the canonical application of the ELBO. An encoder neural network maps input x to variational parameters (μ(x), σ(x)); the ELBO provides the training objective combining reconstruction quality and latent space regularisation. The regularised, continuous latent space supports:
+
+- **Image generation**: smooth interpolation and random sampling in latent space; Kingma & Welling (2013) demonstrated digit generation on MNIST; subsequent hierarchical VAEs (NVAE, VDVAE, Ladder VAE) achieve near-GAN quality on face generation benchmarks.
+- **Representation learning**: disentangled representations (β-VAE, FactorVAE) enforce stronger regularisation to learn interpretable, semantically meaningful latent factors.
+- **Anomaly detection**: reconstruction error and ELBO estimates serve as anomaly scores; datapoints lying far from the prior in latent space or reconstructed poorly are flagged as anomalous.
+- **Semi-supervised learning**: VAE latent representations transfer to downstream classification with few labelled examples.
 
   ### Latent Diffusion Models
 
@@ -190,8 +190,8 @@ The evidence lower bound (ELBO) is a tractable lower bound on the log marginal l
   The ELBO has deep connections to classical information theory and statistical physics. Rewriting the ELBO:
 
   ELBO(φ) = E_q[log p(x|z)] − KL(q(z;φ) || p(z))
-           = E_q[log p(x, z)] + H[q]
-           = −F[q]
+         = E_q[log p(x, z)] + H[q]
+         = −F[q]
 
   where F[q] is the **variational free energy** — the difference between the expected energy (−E_q[log p(x,z)]) and the entropy H[q]. Minimising variational free energy (equivalently maximising the ELBO) is the statistical physics principle of free energy minimisation, applied to probability distributions.
 
@@ -203,15 +203,15 @@ The evidence lower bound (ELBO) is a tractable lower bound on the log marginal l
 
   The ELBO's theoretical history spans information theory, statistics, and machine learning:
 
-  - **Neal and Hinton (1998)**: unified the EM algorithm and variational Bayes, showing that the E-step of EM performs ELBO maximisation over per-datapoint local variational parameters, while the M-step maximises over global model parameters. This connection clarified the ELBO's role as the central objective for latent variable models.
-  - **Jaakkola and Jordan (1999)**: developed variational lower bounds for sigmoid belief networks and logistic regression, demonstrating practical variational Bayes before the deep learning era.
-  - **Blei, Ng, and Jordan (2003)**: applied variational inference with the ELBO to Latent Dirichlet Allocation, establishing VI as the standard scalable inference algorithm for topic models.
-  - **Kingma and Welling (2013) / Rezende, Mohamed, and Wierstra (2014)**: independently introduced the reparameterisation trick and the [[Variational Autoencoder]], launching the era of deep variational methods and bringing the ELBO to the centre of deep generative modelling.
-  - **Hoffman, Blei, Wang, and Paisley (2013)**: introduced Stochastic Variational Inference, scaling the ELBO to large datasets via natural gradient mini-batch updates.
-  - **Ranganath, Gerrish, and Blei (2014)**: introduced Black-Box Variational Inference via score-function gradient estimation, making VI applicable to non-conjugate and non-reparameterisable models.
-  - **Burda, Grosse, and Salakhutdinov (2016)**: introduced the Importance-Weighted ELBO (IWAE), providing tighter bounds and illuminating the trade-off between bound tightness and encoder quality.
-  - **Rainforth et al. (2018)**: proved that tighter ELBO bounds are not necessarily better for learning the inference network, establishing a fundamental tension in bound optimisation.
-  - **Blei, Kucukelbir, and McAuliffe (2017)**: wrote the canonical review of variational inference, systematising the field's theoretical foundations, algorithmic variants, and connections to EM.
+- **Neal and Hinton (1998)**: unified the EM algorithm and variational Bayes, showing that the E-step of EM performs ELBO maximisation over per-datapoint local variational parameters, while the M-step maximises over global model parameters. This connection clarified the ELBO's role as the central objective for latent variable models.
+- **Jaakkola and Jordan (1999)**: developed variational lower bounds for sigmoid belief networks and logistic regression, demonstrating practical variational Bayes before the deep learning era.
+- **Blei, Ng, and Jordan (2003)**: applied variational inference with the ELBO to Latent Dirichlet Allocation, establishing VI as the standard scalable inference algorithm for topic models.
+- **Kingma and Welling (2013) / Rezende, Mohamed, and Wierstra (2014)**: independently introduced the reparameterisation trick and the [[Variational Autoencoder]], launching the era of deep variational methods and bringing the ELBO to the centre of deep generative modelling.
+- **Hoffman, Blei, Wang, and Paisley (2013)**: introduced Stochastic Variational Inference, scaling the ELBO to large datasets via natural gradient mini-batch updates.
+- **Ranganath, Gerrish, and Blei (2014)**: introduced Black-Box Variational Inference via score-function gradient estimation, making VI applicable to non-conjugate and non-reparameterisable models.
+- **Burda, Grosse, and Salakhutdinov (2016)**: introduced the Importance-Weighted ELBO (IWAE), providing tighter bounds and illuminating the trade-off between bound tightness and encoder quality.
+- **Rainforth et al. (2018)**: proved that tighter ELBO bounds are not necessarily better for learning the inference network, establishing a fundamental tension in bound optimisation.
+- **Blei, Kucukelbir, and McAuliffe (2017)**: wrote the canonical review of variational inference, systematising the field's theoretical foundations, algorithmic variants, and connections to EM.
 
   The ELBO and variational inference are active research areas with open problems in: discrete variational methods, tighter bound construction without gradient variance explosion, combining VI with MCMC for refinement, VI for causal models, and information-geometric analysis of variational families.
 
@@ -253,12 +253,12 @@ The evidence lower bound (ELBO) is a tractable lower bound on the log marginal l
 
   Several research and application trajectories will shape ELBO and variational inference over the next four years:
 
-  - **Continuous-time and stochastic differential equation (SDE) ELBO**: Variational objectives for continuous-time latent variable models defined by SDEs, bridging diffusion models and classical variational inference into a unified framework. Active research at Cambridge, Edinburgh, and leading US groups.
-  - **Causal variational inference**: Integrating causal graphical models into the ELBO framework to enable counterfactual reasoning and causal discovery from observational data; addresses a fundamental limitation of current variational methods that learn correlational rather than causal structure.
-  - **Combinatorial and discrete ELBO**: Efficient gradient estimation for discrete latent variables beyond Gumbel-Softmax, including reinforcement learning applications with categorical action spaces and language model structure.
-  - **Certified uncertainty quantification**: ELBO-based bounds combined with conformal prediction to provide coverage-guaranteed prediction intervals, meeting regulatory requirements for safety-critical AI applications in healthcare and autonomous systems.
-  - **Neurosymbolic variational models**: Incorporating symbolic prior knowledge into the prior p(z) and variational family Q, enabling hybrid systems that combine neural flexibility with structured reasoning.
-  - **Quantum-enhanced variational inference**: As fault-tolerant quantum computing matures post-2028, quantum variational algorithms may offer quadratic speedups for specific variational inference sub-problems, with near-term hybrid classical-quantum ELBO optimisation as an intermediate step.
+- **Continuous-time and stochastic differential equation (SDE) ELBO**: Variational objectives for continuous-time latent variable models defined by SDEs, bridging diffusion models and classical variational inference into a unified framework. Active research at Cambridge, Edinburgh, and leading US groups.
+- **Causal variational inference**: Integrating causal graphical models into the ELBO framework to enable counterfactual reasoning and causal discovery from observational data; addresses a fundamental limitation of current variational methods that learn correlational rather than causal structure.
+- **Combinatorial and discrete ELBO**: Efficient gradient estimation for discrete latent variables beyond Gumbel-Softmax, including reinforcement learning applications with categorical action spaces and language model structure.
+- **Certified uncertainty quantification**: ELBO-based bounds combined with conformal prediction to provide coverage-guaranteed prediction intervals, meeting regulatory requirements for safety-critical AI applications in healthcare and autonomous systems.
+- **Neurosymbolic variational models**: Incorporating symbolic prior knowledge into the prior p(z) and variational family Q, enabling hybrid systems that combine neural flexibility with structured reasoning.
+- **Quantum-enhanced variational inference**: As fault-tolerant quantum computing matures post-2028, quantum variational algorithms may offer quadratic speedups for specific variational inference sub-problems, with near-term hybrid classical-quantum ELBO optimisation as an intermediate step.
 
   ## Research and Literature
 
@@ -291,5 +291,5 @@ The evidence lower bound (ELBO) is a tractable lower bound on the log marginal l
   27. Bingham, E., Chen, J. P., Jankowiak, M., Obermeyer, F., Pradhan, N., Karaletsos, T., ... & Goodman, N. D. (2019). Pyro: Deep Universal Probabilistic Programming. *JMLR 20*(28). https://jmlr.org/papers/v20/18-403.html
   28. Phan, D., Pradhan, N., & Jankowiak, M. (2019). Composable Effects for Flexible and Accelerated Probabilistic Programming in NumPyro. *arXiv:1912.11554*. https://arxiv.org/abs/1912.11554
 
-- ### Provenance
+### Provenance
 

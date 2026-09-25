@@ -1,19 +1,18 @@
-
 Automated Machine Learning (AutoML) is the discipline and associated tooling that automates the end-to-end pipeline of applying machine learning to real-world problems — encompassing automated data pre-processing, feature engineering, algorithm selection, Neural Architecture Search (NAS), hyp...
 
-- ### Semantic Classification
+### Semantic Classification
 
-- ### Content
+### Content
 
-  AutoML emerged as a research field around 2013–2015 in response to the observation that the most laborious and expertise-intensive parts of applied machine learning — choosing the right algorithm, tuning its hyperparameters, engineering informative features — were also the most systematic and therefore potentially automatable. The seminal Auto-WEKA paper (2013) framed the combined algorithm selection and hyperparameter optimisation problem (CASH) as a structured optimisation problem amenable to Bayesian methods. This framing has since expanded dramatically: modern AutoML systems tackle the full pipeline from raw tabular or image data to a deployable model, with Neural Architecture Search adding the model design step to the automation scope.
+AutoML emerged as a research field around 2013–2015 in response to the observation that the most laborious and expertise-intensive parts of applied machine learning — choosing the right algorithm, tuning its hyperparameters, engineering informative features — were also the most systematic and therefore potentially automatable. The seminal Auto-WEKA paper (2013) framed the combined algorithm selection and hyperparameter optimisation problem (CASH) as a structured optimisation problem amenable to Bayesian methods. This framing has since expanded dramatically: modern AutoML systems tackle the full pipeline from raw tabular or image data to a deployable model, with Neural Architecture Search adding the model design step to the automation scope.
 
-  #### Key Characteristics
+#### Key Characteristics
 
-  - **Pipeline-Level Automation**: Modern AutoML systems (Auto-Sklearn 2.0, H2O AutoML, TPOT) treat the entire ML pipeline — imputation, scaling, feature selection, algorithm, hyperparameters — as a joint search problem, finding compositions that optimise a held-out validation metric.
-  - **Neural Architecture Search (NAS)**: NAS algorithms automatically design deep neural network topologies. Weight-sharing NAS (DARTS, SNAS) trains a supernet from which subnets are sampled, amortising the cost of evaluating thousands of architectures. Hardware-aware NAS (MNasNet, EfficientNet) jointly optimises accuracy and latency on target hardware.
-  - **Hyperparameter Optimisation (HPO)**: Bayesian optimisation (using Gaussian Processes or TPE) models the objective function and proposes hyperparameter configurations that balance exploration and exploitation, requiring far fewer evaluations than random or grid search. Hyperband and ASHA add early stopping of underperforming trials for further efficiency.
-  - **Meta-Learning**: AutoML systems use meta-features of a dataset (number of rows, feature types, class imbalance ratio) and historical performance data across prior tasks to warm-start the search, avoiding cold-start inefficiency on new problems.
-  - **Multi-Fidelity Strategies**: Rather than training every candidate to convergence, multi-fidelity methods (Hyperband, BOHB) evaluate candidates on small data subsets or for fewer epochs, discarding poor performers early and investing compute in promising configurations.
+- **Pipeline-Level Automation**: Modern AutoML systems (Auto-Sklearn 2.0, H2O AutoML, TPOT) treat the entire ML pipeline — imputation, scaling, feature selection, algorithm, hyperparameters — as a joint search problem, finding compositions that optimise a held-out validation metric.
+- **Neural Architecture Search (NAS)**: NAS algorithms automatically design deep neural network topologies. Weight-sharing NAS (DARTS, SNAS) trains a supernet from which subnets are sampled, amortising the cost of evaluating thousands of architectures. Hardware-aware NAS (MNasNet, EfficientNet) jointly optimises accuracy and latency on target hardware.
+- **Hyperparameter Optimisation (HPO)**: Bayesian optimisation (using Gaussian Processes or TPE) models the objective function and proposes hyperparameter configurations that balance exploration and exploitation, requiring far fewer evaluations than random or grid search. Hyperband and ASHA add early stopping of underperforming trials for further efficiency.
+- **Meta-Learning**: AutoML systems use meta-features of a dataset (number of rows, feature types, class imbalance ratio) and historical performance data across prior tasks to warm-start the search, avoiding cold-start inefficiency on new problems.
+- **Multi-Fidelity Strategies**: Rather than training every candidate to convergence, multi-fidelity methods (Hyperband, BOHB) evaluate candidates on small data subsets or for fewer epochs, discarding poor performers early and investing compute in promising configurations.
 
   #### How It Works
 
@@ -35,11 +34,11 @@ Automated Machine Learning (AutoML) is the discipline and associated tooling tha
 
   #### Standards and References
 
-  - Feurer, M., et al. (2015). "Efficient and Robust Automated Machine Learning." *NeurIPS 2015*.
-  - Zoph, B., & Le, Q. V. (2017). "Neural Architecture Search with Reinforcement Learning." *ICLR 2017*.
-  - Liu, H., et al. (2019). "DARTS: Differentiable Architecture Search." *ICLR 2019*.
-  - He, X., et al. (2021). "AutoML: A Survey of the State-of-the-Art." *Knowledge-Based Systems*, 212.
-  - Lindauer, M., et al. (2022). "SMAC3: A Versatile Bayesian Optimisation Package for Hyperparameter Optimisation." *JMLR*, 23(54).
+- Feurer, M., et al. (2015). "Efficient and Robust Automated Machine Learning." *NeurIPS 2015*.
+- Zoph, B., & Le, Q. V. (2017). "Neural Architecture Search with Reinforcement Learning." *ICLR 2017*.
+- Liu, H., et al. (2019). "DARTS: Differentiable Architecture Search." *ICLR 2019*.
+- He, X., et al. (2021). "AutoML: A Survey of the State-of-the-Art." *Knowledge-Based Systems*, 212.
+- Lindauer, M., et al. (2022). "SMAC3: A Versatile Bayesian Optimisation Package for Hyperparameter Optimisation." *JMLR*, 23(54).
 
-- ### Provenance
+### Provenance
 

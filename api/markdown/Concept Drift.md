@@ -1,168 +1,171 @@
-
 Concept Drift is the phenomenon in which the statistical properties of the target variable that a machine learning model was trained to predict change over time, causing model performance to degrade. Drift can be abrupt, gradual, or recurring, and may stem from evolving user behaviour, environmental shifts, or data collection changes. Detecting and adapting to concept drift is essential for maintaining the reliability of deployed ML systems.
 
-- ### Semantic Classification
+### Semantic Classification
 
-- ### Content
+### Content
 
-  ## Compositional Relationships (Components)
-  ```
-  SubClassOf(ai:ConceptDrift
-    ObjectSomeValuesFrom(ai:hasPart ai:DriftDetectionMethod))
-  SubClassOf(ai:ConceptDrift
-    ObjectSomeValuesFrom(ai:hasPart ai:ADWIN))
-  SubClassOf(ai:ConceptDrift
-    ObjectSomeValuesFrom(ai:hasPart ai:PageHinkleyTest))
-  SubClassOf(ai:ConceptDrift
-    ObjectSomeValuesFrom(ai:hasPart ai:EnsembleDriftDetector))
-  SubClassOf(ai:ConceptDrift
-    ObjectSomeValuesFrom(ai:hasPart ai:AdaptiveWindowMethod))
-  SubClassOf(ai:ConceptDrift
-    ObjectSomeValuesFrom(ai:hasPart ai:StatisticalProcessControl))
-  SubClassOf(ai:ConceptDrift
-    ObjectSomeValuesFrom(ai:hasPart ai:KolmogorovSmirnovTest))
-  SubClassOf(ai:ConceptDrift
-    ObjectSomeValuesFrom(ai:hasPart ai:PopulationStabilityIndex))
-  SubClassOf(ai:ConceptDrift
-    ObjectSomeValuesFrom(ai:hasPart ai:JensenShannonDivergence))
-  ```
+## Compositional Relationships (Components)
+```
+SubClassOf(ai:ConceptDrift
+  ObjectSomeValuesFrom(ai:hasPart ai:DriftDetectionMethod))
+SubClassOf(ai:ConceptDrift
+  ObjectSomeValuesFrom(ai:hasPart ai:ADWIN))
+SubClassOf(ai:ConceptDrift
+  ObjectSomeValuesFrom(ai:hasPart ai:PageHinkleyTest))
+SubClassOf(ai:ConceptDrift
+  ObjectSomeValuesFrom(ai:hasPart ai:EnsembleDriftDetector))
+SubClassOf(ai:ConceptDrift
+  ObjectSomeValuesFrom(ai:hasPart ai:AdaptiveWindowMethod))
+SubClassOf(ai:ConceptDrift
+  ObjectSomeValuesFrom(ai:hasPart ai:StatisticalProcessControl))
+SubClassOf(ai:ConceptDrift
+  ObjectSomeValuesFrom(ai:hasPart ai:KolmogorovSmirnovTest))
+SubClassOf(ai:ConceptDrift
+  ObjectSomeValuesFrom(ai:hasPart ai:PopulationStabilityIndex))
+SubClassOf(ai:ConceptDrift
+  ObjectSomeValuesFrom(ai:hasPart ai:JensenShannonDivergence))
+```
 
-  ## Dependency Relationships
-  ```
-  SubClassOf(ai:ConceptDrift
-    ObjectSomeValuesFrom(ai:requires ai:ModelMonitoring))
-  SubClassOf(ai:ConceptDrift
-    ObjectSomeValuesFrom(ai:requires ai:Statistics))
-  SubClassOf(ai:ConceptDrift
-    ObjectSomeValuesFrom(ai:requires ai:ProbabilityDistribution))
-  SubClassOf(ai:ConceptDrift
-    ObjectSomeValuesFrom(ai:requires ai:StreamingData))
-  SubClassOf(ai:ConceptDrift
-    ObjectSomeValuesFrom(ai:requires ai:DataQuality))
-  SubClassOf(ai:ConceptDrift
-    ObjectSomeValuesFrom(ai:requires ai:Observability))
-  SubClassOf(ai:ConceptDrift
-    ObjectSomeValuesFrom(ai:dependsOn ai:LabelledGroundTruth))
-  SubClassOf(ai:ConceptDrift
-    ObjectSomeValuesFrom(ai:dependsOn ai:InformationTheory))
-  SubClassOf(ai:ConceptDrift
-    ObjectSomeValuesFrom(ai:dependsOn ai:FeatureEngineering))
-  SubClassOf(ai:ConceptDrift
-    ObjectSomeValuesFrom(ai:dependsOn ai:DataPipeline))
-  ```
+## Dependency Relationships
+```
+SubClassOf(ai:ConceptDrift
+  ObjectSomeValuesFrom(ai:requires ai:ModelMonitoring))
+SubClassOf(ai:ConceptDrift
+  ObjectSomeValuesFrom(ai:requires ai:Statistics))
+SubClassOf(ai:ConceptDrift
+  ObjectSomeValuesFrom(ai:requires ai:ProbabilityDistribution))
+SubClassOf(ai:ConceptDrift
+  ObjectSomeValuesFrom(ai:requires ai:StreamingData))
+SubClassOf(ai:ConceptDrift
+  ObjectSomeValuesFrom(ai:requires ai:DataQuality))
+SubClassOf(ai:ConceptDrift
+  ObjectSomeValuesFrom(ai:requires ai:Observability))
+SubClassOf(ai:ConceptDrift
+  ObjectSomeValuesFrom(ai:dependsOn ai:LabelledGroundTruth))
+SubClassOf(ai:ConceptDrift
+  ObjectSomeValuesFrom(ai:dependsOn ai:InformationTheory))
+SubClassOf(ai:ConceptDrift
+  ObjectSomeValuesFrom(ai:dependsOn ai:FeatureEngineering))
+SubClassOf(ai:ConceptDrift
+  ObjectSomeValuesFrom(ai:dependsOn ai:DataPipeline))
+```
 
-  ## Capability Relationships
-  ```
-  SubClassOf(ai:ConceptDrift
-    ObjectSomeValuesFrom(ai:enables ai:Retraining))
-  SubClassOf(ai:ConceptDrift
-    ObjectSomeValuesFrom(ai:enables ai:ContinualLearning))
-  SubClassOf(ai:ConceptDrift
-    ObjectSomeValuesFrom(ai:enables ai:OnlineLearning))
-  SubClassOf(ai:ConceptDrift
-    ObjectSomeValuesFrom(ai:enables ai:DomainAdaptation))
-  SubClassOf(ai:ConceptDrift
-    ObjectSomeValuesFrom(ai:enables ai:AdaptiveModel))
-  SubClassOf(ai:ConceptDrift
-    ObjectSomeValuesFrom(ai:enables ai:FeedbackLoop))
-  SubClassOf(ai:ConceptDrift
-    ObjectSomeValuesFrom(ai:enables ai:AIGovernance))
-  SubClassOf(ai:ConceptDrift
-    ObjectSomeValuesFrom(ai:enables ai:ActiveLearning))
-  SubClassOf(ai:ConceptDrift
-    ObjectSomeValuesFrom(ai:enables ai:MLOps))
-  ```
+## Capability Relationships
+```
+SubClassOf(ai:ConceptDrift
+  ObjectSomeValuesFrom(ai:enables ai:Retraining))
+SubClassOf(ai:ConceptDrift
+  ObjectSomeValuesFrom(ai:enables ai:ContinualLearning))
+SubClassOf(ai:ConceptDrift
+  ObjectSomeValuesFrom(ai:enables ai:OnlineLearning))
+SubClassOf(ai:ConceptDrift
+  ObjectSomeValuesFrom(ai:enables ai:DomainAdaptation))
+SubClassOf(ai:ConceptDrift
+  ObjectSomeValuesFrom(ai:enables ai:AdaptiveModel))
+SubClassOf(ai:ConceptDrift
+  ObjectSomeValuesFrom(ai:enables ai:FeedbackLoop))
+SubClassOf(ai:ConceptDrift
+  ObjectSomeValuesFrom(ai:enables ai:AIGovernance))
+SubClassOf(ai:ConceptDrift
+  ObjectSomeValuesFrom(ai:enables ai:ActiveLearning))
+SubClassOf(ai:ConceptDrift
+  ObjectSomeValuesFrom(ai:enables ai:MLOps))
+```
 
-  ## Implementation Relationships
-  ```
-  SubClassOf(ai:ConceptDrift
-    ObjectSomeValuesFrom(ai:implements ai:StatisticalHypothesisTesting))
-  SubClassOf(ai:ConceptDrift
-    ObjectSomeValuesFrom(ai:implements ai:SequentialAnalysis))
-  SubClassOf(ai:ConceptDrift
-    ObjectSomeValuesFrom(ai:implements ai:EnsembleMethods))
-  SubClassOf(ai:ConceptDrift
-    ObjectSomeValuesFrom(ai:implements ai:BayesianInference))
-  SubClassOf(ai:ConceptDrift
-    ObjectSomeValuesFrom(ai:implements ai:AnomalyDetection))
-  SubClassOf(ai:ConceptDrift
-    ObjectSomeValuesFrom(ai:implements ai:TransferLearning))
-  SubClassOf(ai:ConceptDrift
-    ObjectSomeValuesFrom(ai:implements ai:KnowledgeDistillation))
-  ```
+## Implementation Relationships
+```
+SubClassOf(ai:ConceptDrift
+  ObjectSomeValuesFrom(ai:implements ai:StatisticalHypothesisTesting))
+SubClassOf(ai:ConceptDrift
+  ObjectSomeValuesFrom(ai:implements ai:SequentialAnalysis))
+SubClassOf(ai:ConceptDrift
+  ObjectSomeValuesFrom(ai:implements ai:EnsembleMethods))
+SubClassOf(ai:ConceptDrift
+  ObjectSomeValuesFrom(ai:implements ai:BayesianInference))
+SubClassOf(ai:ConceptDrift
+  ObjectSomeValuesFrom(ai:implements ai:AnomalyDetection))
+SubClassOf(ai:ConceptDrift
+  ObjectSomeValuesFrom(ai:implements ai:TransferLearning))
+SubClassOf(ai:ConceptDrift
+  ObjectSomeValuesFrom(ai:implements ai:KnowledgeDistillation))
+```
 
-  ## Reduction Relationships
-  ```
-  SubClassOf(ai:ConceptDrift
-    ObjectSomeValuesFrom(ai:reducesTo ai:DistributionShift))
-  SubClassOf(ai:ConceptDrift
-    ObjectSomeValuesFrom(ai:reducesTo ai:ModelDegradation))
-  SubClassOf(ai:ConceptDrift
-    ObjectSomeValuesFrom(ai:reducesTo ai:NonStationaryTimeSeries))
-  SubClassOf(ai:ConceptDrift
-    ObjectSomeValuesFrom(ai:reducesTo ai:CovariateShift))
-  SubClassOf(ai:ConceptDrift
-    ObjectSomeValuesFrom(ai:reducesTo ai:DataDrift))
-  ```
-  ## Extended Relationship Axioms (Uses / Supports / ContrastsWith)
-  ```
-  SubClassOf(ai:ConceptDrift
-    ObjectSomeValuesFrom(ai:uses ai:FeatureStore))
-  SubClassOf(ai:ConceptDrift
-    ObjectSomeValuesFrom(ai:uses ai:ModelRegistry))
-  SubClassOf(ai:ConceptDrift
-    ObjectSomeValuesFrom(ai:uses ai:MachineLearningFramework))
-  SubClassOf(ai:ConceptDrift
-    ObjectSomeValuesFrom(ai:uses ai:BayesianDeepLearning))
-  SubClassOf(ai:ConceptDrift
-    ObjectSomeValuesFrom(ai:supports ai:MachineLearningOperations))
-  SubClassOf(ai:ConceptDrift
-    ObjectSomeValuesFrom(ai:supports ai:MachineLearningInfrastructure))
-  SubClassOf(ai:ConceptDrift
-    ObjectSomeValuesFrom(ai:supports ai:ModelTrainingPipeline))
-  SubClassOf(ai:ConceptDrift
-    ObjectSomeValuesFrom(ai:contrastsWith ai:CatastrophicRiskAssessment))
-  SubClassOf(ai:ConceptDrift
-    ObjectSomeValuesFrom(ai:dependsOn ai:MachineLearningPipeline))
-  SubClassOf(ai:ConceptDrift
-    ObjectSomeValuesFrom(ai:dependsOn ai:DataAnnotation))
-  SubClassOf(ai:ConceptDrift
-    ObjectSomeValuesFrom(ai:relatedTo ai:FederatedEdgeLearning))
-  SubClassOf(ai:ConceptDrift
-    ObjectSomeValuesFrom(ai:relatedTo ai:MachineLearningAccelerator))
-  SubClassOf(ai:ConceptDrift
-    ObjectSomeValuesFrom(ai:relatedTo ai:BayesianOptimisation))
-  ```
+## Reduction Relationships
+```
+SubClassOf(ai:ConceptDrift
+  ObjectSomeValuesFrom(ai:reducesTo ai:DistributionShift))
+SubClassOf(ai:ConceptDrift
+  ObjectSomeValuesFrom(ai:reducesTo ai:ModelDegradation))
+SubClassOf(ai:ConceptDrift
+  ObjectSomeValuesFrom(ai:reducesTo ai:NonStationaryTimeSeries))
+SubClassOf(ai:ConceptDrift
+  ObjectSomeValuesFrom(ai:reducesTo ai:CovariateShift))
+SubClassOf(ai:ConceptDrift
+  ObjectSomeValuesFrom(ai:reducesTo ai:DataDrift))
+```
+## Extended Relationship Axioms (Uses / Supports / ContrastsWith)
+```
+SubClassOf(ai:ConceptDrift
+  ObjectSomeValuesFrom(ai:uses ai:FeatureStore))
+SubClassOf(ai:ConceptDrift
+  ObjectSomeValuesFrom(ai:uses ai:ModelRegistry))
+SubClassOf(ai:ConceptDrift
+  ObjectSomeValuesFrom(ai:uses ai:MachineLearningFramework))
+SubClassOf(ai:ConceptDrift
+  ObjectSomeValuesFrom(ai:uses ai:BayesianDeepLearning))
+SubClassOf(ai:ConceptDrift
+  ObjectSomeValuesFrom(ai:supports ai:MachineLearningOperations))
+SubClassOf(ai:ConceptDrift
+  ObjectSomeValuesFrom(ai:supports ai:MachineLearningInfrastructure))
+SubClassOf(ai:ConceptDrift
+  ObjectSomeValuesFrom(ai:supports ai:ModelTrainingPipeline))
+SubClassOf(ai:ConceptDrift
+  ObjectSomeValuesFrom(ai:contrastsWith ai:CatastrophicRiskAssessment))
+SubClassOf(ai:ConceptDrift
+  ObjectSomeValuesFrom(ai:dependsOn ai:MachineLearningPipeline))
+SubClassOf(ai:ConceptDrift
+  ObjectSomeValuesFrom(ai:dependsOn ai:DataAnnotation))
+SubClassOf(ai:ConceptDrift
+  ObjectSomeValuesFrom(ai:relatedTo ai:FederatedEdgeLearning))
+SubClassOf(ai:ConceptDrift
+  ObjectSomeValuesFrom(ai:relatedTo ai:MachineLearningAccelerator))
+SubClassOf(ai:ConceptDrift
+  ObjectSomeValuesFrom(ai:relatedTo ai:BayesianOptimisation))
+```
 
-  ## About
-  Concept drift is one of the defining operational challenges of deploying [[Machine Learning]] systems in the real world. A model trained on historical data implicitly assumes that the data-generating distribution it learned will remain stable; the moment that assumption fails, predictive accuracy deteriorates, often silently. The term was introduced to the machine learning literature by Widmer and Kubat (1996), who identified the problem of hidden contexts and proposed the FLORA family of adaptive algorithms. Subsequent work by Gama et al. formalised the taxonomy distinguishing real concept drift — changes in P(Y|X) — from virtual concept drift — changes in P(X) that do not alter the true mapping — and produced the comprehensive survey that became the field's primary reference.
+## About
+Concept drift is one of the defining operational challenges of deploying [[Machine Learning]] systems in the real world. A model trained on historical data implicitly assumes that the data-generating distribution it learned will remain stable; the moment that assumption fails, predictive accuracy deteriorates, often silently. The term was introduced to the machine learning literature by Widmer and Kubat (1996), who identified the problem of hidden contexts and proposed the FLORA family of adaptive algorithms. Subsequent work by Gama et al. formalised the taxonomy distinguishing real concept drift — changes in P(Y|X) — from virtual concept drift — changes in P(X) that do not alter the true mapping — and produced the comprehensive survey that became the field's primary reference.
 
-  The fundamental statistical challenge is that the joint distribution P(X,Y) is a product of P(X) and P(Y|X), and any shift in either constitutes observable change. Real concept drift — the more dangerous form — alters the target concept itself. A fraud detection model trained on pre-pandemic transaction patterns may face entirely different fraud patterns post-pandemic; a clinical sepsis score may lose calibration as treatment protocols evolve. The insidious aspect is that without fresh labelled data, degradation is invisible: the model continues to produce outputs with confidence while its accuracy erodes below any threshold established at training time.
+The fundamental statistical challenge is that the joint distribution P(X,Y) is a product of P(X) and P(Y|X), and any shift in either constitutes observable change. Real concept drift — the more dangerous form — alters the target concept itself. A fraud detection model trained on pre-pandemic transaction patterns may face entirely different fraud patterns post-pandemic; a clinical sepsis score may lose calibration as treatment protocols evolve. The insidious aspect is that without fresh labelled data, degradation is invisible: the model continues to produce outputs with confidence while its accuracy erodes below any threshold established at training time.
 
-  In the context of [[Large Language Models]] and [[Deep Learning]] systems, concept drift takes novel forms. Behavioural drift — where model outputs drift due to upstream provider updates or fine-tuning interventions — has become a production concern distinct from classical drift. LLM observability platforms (Langfuse, Arize, Evidently AI) in 2024 and 2025 have introduced semantic drift detection that monitors embedding distributions and output statistics rather than discrete labels, recognising that for open-ended generative tasks there is no single ground-truth label against which to measure accuracy.
+In the context of [[Large Language Models]] and [[Deep Learning]] systems, concept drift takes novel forms. Behavioural drift — where model outputs drift due to upstream provider updates or fine-tuning interventions — has become a production concern distinct from classical drift. LLM observability platforms (Langfuse, Arize, Evidently AI) in 2024 and 2025 have introduced semantic drift detection that monitors embedding distributions and output statistics rather than discrete labels, recognising that for open-ended generative tasks there is no single ground-truth label against which to measure accuracy.
 
-  ## Detection Taxonomy
+## Detection Taxonomy
 
-  ### Error-Rate-Based Detectors
-  - **DDM (Drift Detection Method)**: Baena-Garcia et al. (2006). Monitors the error rate of an online learner; detects drift when the error rate rises beyond a threshold determined from Gaussian confidence intervals over the Bernoulli error process. Computationally lightweight but assumes access to true labels with minimal delay.
-  - **EDDM (Early Drift Detection Method)**: Improves DDM's sensitivity to gradual drift by monitoring the mean distance between two consecutive errors rather than the absolute error rate; earlier detection of slow-moving drift at the cost of more false alarms.
-  - **Page-Hinkley Test**: A sequential analysis test originally from quality-control literature. Detects a persistent shift in the mean of a random process; applied to model error streams. Parameterised by a minimum acceptable mean shift and a false-alarm tolerance.
+### Error-Rate-Based Detectors
+
+- **DDM (Drift Detection Method)**: Baena-Garcia et al. (2006). Monitors the error rate of an online learner; detects drift when the error rate rises beyond a threshold determined from Gaussian confidence intervals over the Bernoulli error process. Computationally lightweight but assumes access to true labels with minimal delay.
+- **EDDM (Early Drift Detection Method)**: Improves DDM's sensitivity to gradual drift by monitoring the mean distance between two consecutive errors rather than the absolute error rate; earlier detection of slow-moving drift at the cost of more false alarms.
+- **Page-Hinkley Test**: A sequential analysis test originally from quality-control literature. Detects a persistent shift in the mean of a random process; applied to model error streams. Parameterised by a minimum acceptable mean shift and a false-alarm tolerance.
 
   ### Window-Based Detectors
-  - **ADWIN (Adaptive Windowing)**: Bifet and Gavalda (2007). Maintains a variable-length window over the data stream and tests for differences between any two sub-windows using Hoeffding's inequality. Shrinks the window when drift is detected, discarding stale pre-drift data. Provides theoretical guarantees on false positive and false negative rates.
-  - **KSWIN (Kolmogorov-Smirnov Windowing)**: Extends ADWIN with a Kolmogorov-Smirnov two-sample test over sliding windows, applicable to raw feature distributions rather than model errors — enables unsupervised detection without ground-truth labels.
-  - **PHT (Page-Hinkley Test)**: Applied in sliding-window form over feature streams, especially for numeric sensor data in IoT and industrial monitoring contexts.
+
+- **ADWIN (Adaptive Windowing)**: Bifet and Gavalda (2007). Maintains a variable-length window over the data stream and tests for differences between any two sub-windows using Hoeffding's inequality. Shrinks the window when drift is detected, discarding stale pre-drift data. Provides theoretical guarantees on false positive and false negative rates.
+- **KSWIN (Kolmogorov-Smirnov Windowing)**: Extends ADWIN with a Kolmogorov-Smirnov two-sample test over sliding windows, applicable to raw feature distributions rather than model errors — enables unsupervised detection without ground-truth labels.
+- **PHT (Page-Hinkley Test)**: Applied in sliding-window form over feature streams, especially for numeric sensor data in IoT and industrial monitoring contexts.
 
   ### Statistical Distance Tests
-  - **Kolmogorov-Smirnov (KS) Test**: A non-parametric two-sample test comparing empirical CDFs of the reference (training) window and the live production window. Sensitive to any difference in distribution shape; commonly applied per feature.
-  - **Population Stability Index (PSI)**: Derived from Kullback-Leibler divergence; widely used in credit risk and financial modelling. Produces an interpretable scalar: PSI < 0.1 indicates no drift, 0.1–0.25 moderate drift, > 0.25 significant drift requiring model review.
-  - **Jensen-Shannon Divergence (JSD)**: Symmetric, bounded (0 to 1) version of KL divergence; applicable to both continuous and discrete distributions; useful for comparing output probability distributions across time windows.
-  - **Maximum Mean Discrepancy (MMD)**: A kernel-based two-sample test. Embeds distributions in a reproducing kernel Hilbert space and measures the distance between mean embeddings; well-suited to high-dimensional feature vectors and used in deep-learning-based drift detection frameworks.
+
+- **Kolmogorov-Smirnov (KS) Test**: A non-parametric two-sample test comparing empirical CDFs of the reference (training) window and the live production window. Sensitive to any difference in distribution shape; commonly applied per feature.
+- **Population Stability Index (PSI)**: Derived from Kullback-Leibler divergence; widely used in credit risk and financial modelling. Produces an interpretable scalar: PSI < 0.1 indicates no drift, 0.1–0.25 moderate drift, > 0.25 significant drift requiring model review.
+- **Jensen-Shannon Divergence (JSD)**: Symmetric, bounded (0 to 1) version of KL divergence; applicable to both continuous and discrete distributions; useful for comparing output probability distributions across time windows.
+- **Maximum Mean Discrepancy (MMD)**: A kernel-based two-sample test. Embeds distributions in a reproducing kernel Hilbert space and measures the distance between mean embeddings; well-suited to high-dimensional feature vectors and used in deep-learning-based drift detection frameworks.
 
   ### Ensemble and Deep Learning Detectors
-  - Ensemble detectors combine multiple base drift detectors with voting or weighting schemes, reducing false positives while maintaining sensitivity; surveys find ensembles consistently outperform single detectors across diverse drift profiles.
-  - Deep learning detectors train a classifier to distinguish production samples from reference samples; a classifier that can reliably discriminate the two distributions is evidence of drift. These models are especially suited to high-dimensional inputs (images, text embeddings) where univariate tests are inadequate.
-  - RCCDA (Resource-Constrained Concept Drift Adaptation, 2025) provides adaptive model updates under computational budget constraints, selecting which incoming samples to retrain on based on drift magnitude and available resources.
+
+- Ensemble detectors combine multiple base drift detectors with voting or weighting schemes, reducing false positives while maintaining sensitivity; surveys find ensembles consistently outperform single detectors across diverse drift profiles.
+- Deep learning detectors train a classifier to distinguish production samples from reference samples; a classifier that can reliably discriminate the two distributions is evidence of drift. These models are especially suited to high-dimensional inputs (images, text embeddings) where univariate tests are inadequate.
+- RCCDA (Resource-Constrained Concept Drift Adaptation, 2025) provides adaptive model updates under computational budget constraints, selecting which incoming samples to retrain on based on drift magnitude and available resources.
 
   ## Adaptation Strategies
 
@@ -170,32 +173,35 @@ Concept Drift is the phenomenon in which the statistical properties of the targe
 
   ### Passive (Blind) Adaptation
   The model continuously incorporates recent data without explicit drift detection:
-  - **Sliding window retraining**: Always train on the most recent N examples; older data is discarded. Simple and robust to abrupt drift; may lose context for gradual drift. The window size is a critical hyperparameter.
-  - **Weighted instances**: Assign exponentially decaying weights to past examples so that recent data dominates without discarding historical context entirely. Used in online gradient descent variants.
-  - **[[Online Learning]]** algorithms (e.g. stochastic gradient descent with learning rate schedules, FTRL) update the model continuously in a single pass over the stream, naturally adapting to gradual drift.
+
+- **Sliding window retraining**: Always train on the most recent N examples; older data is discarded. Simple and robust to abrupt drift; may lose context for gradual drift. The window size is a critical hyperparameter.
+- **Weighted instances**: Assign exponentially decaying weights to past examples so that recent data dominates without discarding historical context entirely. Used in online gradient descent variants.
+- **[[Online Learning]]** algorithms (e.g. stochastic gradient descent with learning rate schedules, FTRL) update the model continuously in a single pass over the stream, naturally adapting to gradual drift.
 
   ### Active Adaptation (Detect-then-Retrain)
   An explicit drift detector monitors the stream and triggers a retrain or model replacement event:
-  - **Trigger-based retraining**: On confirmed drift, the current model is retired and a new model trained on a fresh labelled window. The [[MLOps]] platform's [[Feedback Loop]] automates this through the [[Model Registry]] and CI/CD pipeline.
-  - **Concept-adaptive ensembles**: Methods such as AUE (Accuracy-Updated Ensemble) and DACC maintain a pool of models trained on different time windows; on drift, older models are pruned and new ones added.
-  - **[[Transfer Learning]] and fine-tuning**: Rather than full retraining, the current model's weights are fine-tuned on newly labelled data from the post-drift distribution, using [[Knowledge Distillation]] to prevent [[Catastrophic Forgetting]] of stable concept regions.
+
+- **Trigger-based retraining**: On confirmed drift, the current model is retired and a new model trained on a fresh labelled window. The [[MLOps]] platform's [[Feedback Loop]] automates this through the [[Model Registry]] and CI/CD pipeline.
+- **Concept-adaptive ensembles**: Methods such as AUE (Accuracy-Updated Ensemble) and DACC maintain a pool of models trained on different time windows; on drift, older models are pruned and new ones added.
+- **[[Transfer Learning]] and fine-tuning**: Rather than full retraining, the current model's weights are fine-tuned on newly labelled data from the post-drift distribution, using [[Knowledge Distillation]] to prevent [[Catastrophic Forgetting]] of stable concept regions.
 
   ### Proactive Adaptation
   Emerging approaches embed drift awareness into the modelling architecture:
-  - **[[Continual Learning]] methods** (EWC, DER++, PackNet) update model weights without losing prior knowledge by regularising parameter changes or replaying historical exemplars.
-  - **[[Bayesian Inference]] approaches**: Track uncertainty over the current concept; update the posterior on each new batch; flag high uncertainty as drift signal and trigger exploration.
-  - **[[Reinforcement Learning]] with context awareness**: Agents learn to recognise environmental context shifts and switch policies accordingly.
+
+- **[[Continual Learning]] methods** (EWC, DER++, PackNet) update model weights without losing prior knowledge by regularising parameter changes or replaying historical exemplars.
+- **[[Bayesian Inference]] approaches**: Track uncertainty over the current concept; update the posterior on each new batch; flag high uncertainty as drift signal and trigger exploration.
+- **[[Reinforcement Learning]] with context awareness**: Agents learn to recognise environmental context shifts and switch policies accordingly.
 
   ## Use Cases / Major Families
 
-  - **Financial fraud detection**: Fraudsters adapt tactics continuously, making abrupt concept drift common. PSI and KS tests monitor transaction features; drift triggers retraining on recent labelled fraud examples. Banks including Barclays and HSBC run automated retraining pipelines on weekly cycles.
-  - **Credit risk scoring**: Macroeconomic conditions alter default probabilities; gradual drift is dominant. Logistic regression scorecards are re-validated quarterly with population stability checks.
-  - **Spam and malware filtering**: Adversarial concept drift — deliberate manipulation by attackers to fool classifiers — is endemic. Adaptive online learning and [[Anomaly Detection]] work together; research in 2024 addressed adversarial drift under poisoning attacks.
-  - **Clinical decision support**: Disease phenotypes, treatment protocols, and patient populations evolve; models trained on historical EHR data degrade as care practices change. Regulatory frameworks require periodic performance audits that amount to drift surveillance.
-  - **Predictive maintenance (industrial IoT)**: Sensor streams from rotating machinery exhibit gradual drift as components wear. [[Time Series]] anomaly detectors flag degradation; concept drift in the failure prediction model follows when wear patterns diverge from training data.
-  - **Recommender systems and social media**: User preferences, trending topics, and content shift continuously. Recurring drift (seasonal) and gradual drift (taste evolution) both occur; sliding-window retraining is standard.
-  - **[[Natural Language Processing]] and [[Large Language Models]]**: Evolving language, new terminology, and shifting user query patterns constitute concept drift in textual domains. Embedding-space drift detectors (based on MMD or classifier methods) monitor NLP model distributions; LLM behavioural drift from upstream provider updates is an emerging 2024–2025 challenge.
-  - **Autonomous systems and robotics**: Environmental changes introduce concept drift for perception models; [[Domain Adaptation]] and [[Continual Learning]] address cross-domain deployment.
+- **Financial fraud detection**: Fraudsters adapt tactics continuously, making abrupt concept drift common. PSI and KS tests monitor transaction features; drift triggers retraining on recent labelled fraud examples. Banks including Barclays and HSBC run automated retraining pipelines on weekly cycles.
+- **Credit risk scoring**: Macroeconomic conditions alter default probabilities; gradual drift is dominant. Logistic regression scorecards are re-validated quarterly with population stability checks.
+- **Spam and malware filtering**: Adversarial concept drift — deliberate manipulation by attackers to fool classifiers — is endemic. Adaptive online learning and [[Anomaly Detection]] work together; research in 2024 addressed adversarial drift under poisoning attacks.
+- **Clinical decision support**: Disease phenotypes, treatment protocols, and patient populations evolve; models trained on historical EHR data degrade as care practices change. Regulatory frameworks require periodic performance audits that amount to drift surveillance.
+- **Predictive maintenance (industrial IoT)**: Sensor streams from rotating machinery exhibit gradual drift as components wear. [[Time Series]] anomaly detectors flag degradation; concept drift in the failure prediction model follows when wear patterns diverge from training data.
+- **Recommender systems and social media**: User preferences, trending topics, and content shift continuously. Recurring drift (seasonal) and gradual drift (taste evolution) both occur; sliding-window retraining is standard.
+- **[[Natural Language Processing]] and [[Large Language Models]]**: Evolving language, new terminology, and shifting user query patterns constitute concept drift in textual domains. Embedding-space drift detectors (based on MMD or classifier methods) monitor NLP model distributions; LLM behavioural drift from upstream provider updates is an emerging 2024–2025 challenge.
+- **Autonomous systems and robotics**: Environmental changes introduce concept drift for perception models; [[Domain Adaptation]] and [[Continual Learning]] address cross-domain deployment.
 
   ## Academic Context
 
@@ -231,12 +237,12 @@ Concept Drift is the phenomenon in which the statistical properties of the targe
 
   ## Future Directions (2026–2030)
 
-  - **Foundation-model drift management**: As organisations deploy fine-tuned or retrieval-augmented [[Large Language Models]] in production, the challenge of detecting and mitigating semantic, factual, and behavioural drift in open-ended generative outputs will drive a new generation of evaluation and monitoring tooling. Lightweight probes trained on model internal activations are a promising research direction.
-  - **Causal drift detection**: Moving from correlation-based statistical tests to causal structure learning; detecting which causal mechanisms have changed rather than which marginal distributions have shifted, enabling more targeted and efficient adaptation.
-  - **Privacy-preserving drift detection**: [[Federated Learning]] deployments require drift detection protocols that work on aggregated statistics or differential-private summaries rather than raw client data.
-  - **Autonomous drift threshold determination**: Research in 2025 (Arxiv 2511.09953) is exploring self-calibrating thresholds that adapt to the noise level and drift velocity of the specific deployment, reducing the parameter tuning burden currently imposed on practitioners.
-  - **Multimodal drift**: As production systems incorporate vision, audio, and text jointly, multivariate and cross-modal drift detection methods are needed that go beyond per-feature univariate tests.
-  - **Regulatory standardisation**: Ongoing work in ISO/IEC JTC 1/SC 42 and the EU AI Office to define quantitative drift monitoring requirements, reference datasets for detector evaluation, and reporting formats for regulatory submissions.
+- **Foundation-model drift management**: As organisations deploy fine-tuned or retrieval-augmented [[Large Language Models]] in production, the challenge of detecting and mitigating semantic, factual, and behavioural drift in open-ended generative outputs will drive a new generation of evaluation and monitoring tooling. Lightweight probes trained on model internal activations are a promising research direction.
+- **Causal drift detection**: Moving from correlation-based statistical tests to causal structure learning; detecting which causal mechanisms have changed rather than which marginal distributions have shifted, enabling more targeted and efficient adaptation.
+- **Privacy-preserving drift detection**: [[Federated Learning]] deployments require drift detection protocols that work on aggregated statistics or differential-private summaries rather than raw client data.
+- **Autonomous drift threshold determination**: Research in 2025 (Arxiv 2511.09953) is exploring self-calibrating thresholds that adapt to the noise level and drift velocity of the specific deployment, reducing the parameter tuning burden currently imposed on practitioners.
+- **Multimodal drift**: As production systems incorporate vision, audio, and text jointly, multivariate and cross-modal drift detection methods are needed that go beyond per-feature univariate tests.
+- **Regulatory standardisation**: Ongoing work in ISO/IEC JTC 1/SC 42 and the EU AI Office to define quantitative drift monitoring requirements, reference datasets for detector evaluation, and reporting formats for regulatory submissions.
 
   ## Adversarial Concept Drift
 
@@ -284,11 +290,11 @@ Concept Drift is the phenomenon in which the statistical properties of the targe
 
   The financial impact of undetected concept drift is substantial and well-documented in regulated industries:
 
-  - **Credit risk**: The Basel Committee's guidance on model risk (BCBS 239, SR 11-7) is explicit that model performance degrades over time and requires ongoing validation. US bank regulators found in post-2008 analysis that credit scorecards whose Gini coefficients had fallen by more than 10 points absolute in 12 months were a leading indicator of loan book deterioration.
-  - **Fraud detection**: Industry estimates (Experian, 2023) suggest that fraud models left unretrained for 12 months lose approximately 15–25% of their detection capability as fraudster tactics evolve. The cost to UK banks of undetected authorised push payment fraud exceeded £460M in 2023 (UK Finance).
-  - **Clinical AI**: Studies of deployed clinical AI models (Wong et al., NEJM 2021; Nestor et al., 2019) have documented that EHR-trained mortality and deterioration models deteriorate markedly when deployed at hospitals with different care protocols, equipment types, or patient demographics — classic concept drift scenarios. The NHS AI Lab's AI ethics guidelines (2022) explicitly require post-deployment performance monitoring for all NHS-deployed clinical AI.
-  - **NLP systems**: Analysis of deployed NLP classifiers in social media monitoring found that models trained on pre-pandemic language had 15–30% higher false-negative rates on post-pandemic posts due to linguistic concept drift (new terminology, changed connotations) — a phenomenon observed across multiple major platforms.
-  - **Autonomous vehicles**: Tesla's Model S recall (2022) included a software update addressing a situation where the model's behaviour had drifted from its validated envelope due to real-world data distribution changes — an industrial example of the regulatory and safety consequences of production AI concept drift.
+- **Credit risk**: The Basel Committee's guidance on model risk (BCBS 239, SR 11-7) is explicit that model performance degrades over time and requires ongoing validation. US bank regulators found in post-2008 analysis that credit scorecards whose Gini coefficients had fallen by more than 10 points absolute in 12 months were a leading indicator of loan book deterioration.
+- **Fraud detection**: Industry estimates (Experian, 2023) suggest that fraud models left unretrained for 12 months lose approximately 15–25% of their detection capability as fraudster tactics evolve. The cost to UK banks of undetected authorised push payment fraud exceeded £460M in 2023 (UK Finance).
+- **Clinical AI**: Studies of deployed clinical AI models (Wong et al., NEJM 2021; Nestor et al., 2019) have documented that EHR-trained mortality and deterioration models deteriorate markedly when deployed at hospitals with different care protocols, equipment types, or patient demographics — classic concept drift scenarios. The NHS AI Lab's AI ethics guidelines (2022) explicitly require post-deployment performance monitoring for all NHS-deployed clinical AI.
+- **NLP systems**: Analysis of deployed NLP classifiers in social media monitoring found that models trained on pre-pandemic language had 15–30% higher false-negative rates on post-pandemic posts due to linguistic concept drift (new terminology, changed connotations) — a phenomenon observed across multiple major platforms.
+- **Autonomous vehicles**: Tesla's Model S recall (2022) included a software update addressing a situation where the model's behaviour had drifted from its validated envelope due to real-world data distribution changes — an industrial example of the regulatory and safety consequences of production AI concept drift.
 
   ## Standards and Governance Context
 
@@ -308,10 +314,10 @@ Concept Drift is the phenomenon in which the statistical properties of the targe
 
   Concept drift is formally characterised as a non-stationarity in the joint probability distribution P_t(X, Y) where t denotes time. Decomposing the joint: P_t(X, Y) = P_t(Y|X) · P_t(X).
 
-  - **Real concept drift**: P_{t1}(Y|X) ≠ P_{t2}(Y|X) for t1 < t2. The conditional distribution of the target given features has changed. This is the operationally dangerous case because it means the model's learned mapping is no longer correct even if it receives representative inputs.
-  - **Virtual (covariate) drift**: P_{t1}(X) ≠ P_{t2}(X) but P_{t1}(Y|X) = P_{t2}(Y|X). The feature distribution has shifted but the mapping is unchanged. The model may extrapolate outside its training support, but the correct mapping exists if the model could generalise.
-  - **Prior probability shift (label shift)**: P_{t1}(Y) ≠ P_{t2}(Y) but P_{t1}(X|Y) = P_{t2}(X|Y). Class prevalence has changed; this matters for classifiers whose posterior P(Y|X) depends on the prior.
-  - **Sample selection bias drift**: Systematic differences in how data is sampled at training versus serving time, producing distributional mismatch that is not a genuine world change.
+- **Real concept drift**: P_{t1}(Y|X) ≠ P_{t2}(Y|X) for t1 < t2. The conditional distribution of the target given features has changed. This is the operationally dangerous case because it means the model's learned mapping is no longer correct even if it receives representative inputs.
+- **Virtual (covariate) drift**: P_{t1}(X) ≠ P_{t2}(X) but P_{t1}(Y|X) = P_{t2}(Y|X). The feature distribution has shifted but the mapping is unchanged. The model may extrapolate outside its training support, but the correct mapping exists if the model could generalise.
+- **Prior probability shift (label shift)**: P_{t1}(Y) ≠ P_{t2}(Y) but P_{t1}(X|Y) = P_{t2}(X|Y). Class prevalence has changed; this matters for classifiers whose posterior P(Y|X) depends on the prior.
+- **Sample selection bias drift**: Systematic differences in how data is sampled at training versus serving time, producing distributional mismatch that is not a genuine world change.
 
   The fundamental detectability challenge is that concept drift detection requires either:
   1. Access to ground-truth labels Y at serving time (often delayed or absent — the *ground-truth lag* problem), enabling error-rate-based detectors; or
@@ -324,9 +330,10 @@ Concept Drift is the phenomenon in which the statistical properties of the targe
   Concept drift and [[Continual Learning]] are deeply intertwined but address slightly different problem formulations. Continual learning focuses on the challenge of updating [[Neural Networks]] across a sequence of tasks without [[Catastrophic Forgetting]] — the model must retain competence on old tasks while acquiring new ones. Concept drift addresses the complementary challenge that the *same* task changes over time: there is only one ongoing prediction task (e.g., spam classification), but what constitutes spam evolves.
 
   In practice, concept drift mitigation in [[Deep Learning]] often adopts continual learning techniques:
-  - **Elastic Weight Consolidation (EWC)** applied to production model updates prevents catastrophic forgetting of stable concept regions while allowing the model to adapt to drifted regions.
-  - **[[Knowledge Distillation]]** from the current production model to a newly trained model preserves knowledge of the still-valid portions of the old concept.
-  - **Selective replay**: archived training examples from the pre-drift distribution are interleaved with post-drift data during retraining, preventing the new model from forgetting the old concept entirely — important for recurring drift scenarios.
+
+- **Elastic Weight Consolidation (EWC)** applied to production model updates prevents catastrophic forgetting of stable concept regions while allowing the model to adapt to drifted regions.
+- **[[Knowledge Distillation]]** from the current production model to a newly trained model preserves knowledge of the still-valid portions of the old concept.
+- **Selective replay**: archived training examples from the pre-drift distribution are interleaved with post-drift data during retraining, preventing the new model from forgetting the old concept entirely — important for recurring drift scenarios.
 
   [[Transfer Learning]] is relevant when the post-drift concept is closely related to the pre-drift concept: rather than training a new model from scratch on post-drift data, the pre-drift model is fine-tuned, exploiting its learned representations as a strong starting point. This is computationally efficient and practically important in domains where retraining from scratch is expensive (e.g. fine-tuning [[Large Language Models]] for domain-specific tasks where domain language is evolving).
 
@@ -336,54 +343,57 @@ Concept Drift is the phenomenon in which the statistical properties of the targe
 
   Evaluating concept drift detection methods is methodologically challenging because real production datasets with ground-truth drift labels are proprietary. The community has developed several standardised evaluation protocols:
 
-  - **Synthetic datasets with controlled drift**: SEA concepts (data streams with step-function drift in simple Boolean concepts), STAGGER concepts, hyperplane datasets (gradual rotation of the separating hyperplane), and RBF (radial basis function) datasets with moving centroids. These allow precise control of drift type (abrupt/gradual/recurring), magnitude, and timing.
-  - **Real-world benchmark datasets**: ELEC2 (electricity price dataset, 45,312 examples with recurring temporal drift); POKER (card hand classification, 829,201 examples); COVERTYPE (forest cover type, 581,012 examples); WEATHER (daily weather records, 18,159 examples). These are widely used in streaming ML papers but have been criticised for lacking ground-truth drift annotations.
-  - **Prequential evaluation**: The standard evaluation protocol for streaming classifiers; the model is evaluated on each example *before* training on it, giving an unbiased online estimate of error rate. Sliding window averaging or exponential forgetting is applied to smooth the error rate curve.
-  - **The datadriftR R package** (2024, CRAN) provides implementations of DDM, EDDM, ADWIN, and KSWIN with standardised evaluation interfaces for statistical comparison.
-  - **MOA (Massive Online Analysis)**: The primary Java-based framework for streaming ML experiment; provides 40+ drift detectors and benchmark generators; used by the majority of academic concept drift papers since 2010.
-  - **River (Python)**: The successor to scikit-multiflow; provides Python implementations of ADWIN, DDM, EDDM, HDDM, KSWIN, and Page-Hinkley; integrates with scikit-learn for hybrid batch-online pipelines; the dominant tool for production Python streaming ML as of 2025.
+- **Synthetic datasets with controlled drift**: SEA concepts (data streams with step-function drift in simple Boolean concepts), STAGGER concepts, hyperplane datasets (gradual rotation of the separating hyperplane), and RBF (radial basis function) datasets with moving centroids. These allow precise control of drift type (abrupt/gradual/recurring), magnitude, and timing.
+- **Real-world benchmark datasets**: ELEC2 (electricity price dataset, 45,312 examples with recurring temporal drift); POKER (card hand classification, 829,201 examples); COVERTYPE (forest cover type, 581,012 examples); WEATHER (daily weather records, 18,159 examples). These are widely used in streaming ML papers but have been criticised for lacking ground-truth drift annotations.
+- **Prequential evaluation**: The standard evaluation protocol for streaming classifiers; the model is evaluated on each example *before* training on it, giving an unbiased online estimate of error rate. Sliding window averaging or exponential forgetting is applied to smooth the error rate curve.
+- **The datadriftR R package** (2024, CRAN) provides implementations of DDM, EDDM, ADWIN, and KSWIN with standardised evaluation interfaces for statistical comparison.
+- **MOA (Massive Online Analysis)**: The primary Java-based framework for streaming ML experiment; provides 40+ drift detectors and benchmark generators; used by the majority of academic concept drift papers since 2010.
+- **River (Python)**: The successor to scikit-multiflow; provides Python implementations of ADWIN, DDM, EDDM, HDDM, KSWIN, and Page-Hinkley; integrates with scikit-learn for hybrid batch-online pipelines; the dominant tool for production Python streaming ML as of 2025.
 
   ## Key Terminology Glossary
 
-  - **Concept**: The target function P(Y|X) a model approximates at training time.
-  - **Real drift**: A change in P(Y|X) — the true mapping from features to labels has changed.
-  - **Virtual drift**: A change in P(X) without a change in P(Y|X) — inputs shift but the mapping is still valid; related to [[Data Drift]].
-  - **Abrupt drift**: An instantaneous change in the concept; the pre-drift distribution is replaced entirely by a new one.
-  - **Gradual drift**: Two (or more) concepts coexist with time-varying mixture weights; the new concept increasingly dominates.
-  - **Recurring drift**: Concepts cycle periodically; the pre-drift concept reappears later (e.g. seasonal patterns).
-  - **ADWIN**: Adaptive Windowing; a theoretically-grounded sliding-window drift detector using Hoeffding bounds.
-  - **DDM**: Drift Detection Method; monitors online learner error rate for statistically significant rises.
-  - **PSI**: Population Stability Index; quantifies distributional shift on a 0–∞ scale with interpretable thresholds.
-  - **Ground-truth lag**: The delay between producing a prediction and receiving the true label needed to evaluate it; the primary obstacle to error-rate-based drift detection in many production settings.
-  - **Prequential evaluation**: Test-then-train evaluation protocol for streaming classifiers; each example is predicted before training on it.
-  - **MOA**: Massive Online Analysis; the primary Java framework for streaming machine learning experimentation.
-  - **River**: Python streaming ML library (successor to scikit-multiflow); provides production-grade drift detection implementations.
-  - **Hoeffding bound**: A concentration inequality bounding the probability that an empirical mean deviates from its expected value; the theoretical foundation of ADWIN.
-  - **Label shift**: A form of drift where class priors P(Y) change while the class-conditional P(X|Y) remains stable.
-  - **Covariate shift**: A form of drift where P(X) changes while P(Y|X) remains stable; equivalent to virtual drift / [[Data Drift]].
+- **Concept**: The target function P(Y|X) a model approximates at training time.
+- **Real drift**: A change in P(Y|X) — the true mapping from features to labels has changed.
+- **Virtual drift**: A change in P(X) without a change in P(Y|X) — inputs shift but the mapping is still valid; related to [[Data Drift]].
+- **Abrupt drift**: An instantaneous change in the concept; the pre-drift distribution is replaced entirely by a new one.
+- **Gradual drift**: Two (or more) concepts coexist with time-varying mixture weights; the new concept increasingly dominates.
+- **Recurring drift**: Concepts cycle periodically; the pre-drift concept reappears later (e.g. seasonal patterns).
+- **ADWIN**: Adaptive Windowing; a theoretically-grounded sliding-window drift detector using Hoeffding bounds.
+- **DDM**: Drift Detection Method; monitors online learner error rate for statistically significant rises.
+- **PSI**: Population Stability Index; quantifies distributional shift on a 0–∞ scale with interpretable thresholds.
+- **Ground-truth lag**: The delay between producing a prediction and receiving the true label needed to evaluate it; the primary obstacle to error-rate-based drift detection in many production settings.
+- **Prequential evaluation**: Test-then-train evaluation protocol for streaming classifiers; each example is predicted before training on it.
+- **MOA**: Massive Online Analysis; the primary Java framework for streaming machine learning experimentation.
+- **River**: Python streaming ML library (successor to scikit-multiflow); provides production-grade drift detection implementations.
+- **Hoeffding bound**: A concentration inequality bounding the probability that an empirical mean deviates from its expected value; the theoretical foundation of ADWIN.
+- **Label shift**: A form of drift where class priors P(Y) change while the class-conditional P(X|Y) remains stable.
+- **Covariate shift**: A form of drift where P(X) changes while P(Y|X) remains stable; equivalent to virtual drift / [[Data Drift]].
 
   ## Tooling Ecosystem
 
   The practical tooling for concept drift detection and adaptation spans multiple categories of the MLOps stack.
 
   ### Monitoring and Detection Platforms
-  - **Evidently AI**: Open-source Python library and SaaS platform; provides pre-built reports and monitors for data drift (KS test, PSI, Wasserstein distance), concept drift (target drift, model quality), and data quality. The most widely used open-source ML monitoring framework as of 2025; integrates with MLflow, Airflow, and the major cloud ML platforms.
-  - **Arize Phoenix**: Open-source observability and evaluation platform; built specifically for LLM and traditional ML monitoring; provides embedding drift detection via cosine similarity and Euclidean distance in embedding space, alongside tabular PSI/KS monitoring.
-  - **WhyLabs (now Arize WhyLabs)**: SaaS ML observability platform; uses approximate statistics (DataSketches, Apache DataSketches) to monitor large-scale feature distributions with low memory overhead; strong [[Deep Learning]] model monitoring capabilities.
-  - **Fiddler AI**: Enterprise MLOps monitoring platform with explainability-integrated drift detection; uses SHAP values to attribute drift to specific features; strong compliance and audit trail capabilities for regulated industries.
-  - **NannyML**: Open-source Python library specialising in estimating model performance without labels using Confidence-Based Performance Estimation (CBPE); addresses the ground-truth lag problem by estimating post-drift accuracy from prediction confidence distributions alone.
+
+- **Evidently AI**: Open-source Python library and SaaS platform; provides pre-built reports and monitors for data drift (KS test, PSI, Wasserstein distance), concept drift (target drift, model quality), and data quality. The most widely used open-source ML monitoring framework as of 2025; integrates with MLflow, Airflow, and the major cloud ML platforms.
+- **Arize Phoenix**: Open-source observability and evaluation platform; built specifically for LLM and traditional ML monitoring; provides embedding drift detection via cosine similarity and Euclidean distance in embedding space, alongside tabular PSI/KS monitoring.
+- **WhyLabs (now Arize WhyLabs)**: SaaS ML observability platform; uses approximate statistics (DataSketches, Apache DataSketches) to monitor large-scale feature distributions with low memory overhead; strong [[Deep Learning]] model monitoring capabilities.
+- **Fiddler AI**: Enterprise MLOps monitoring platform with explainability-integrated drift detection; uses SHAP values to attribute drift to specific features; strong compliance and audit trail capabilities for regulated industries.
+- **NannyML**: Open-source Python library specialising in estimating model performance without labels using Confidence-Based Performance Estimation (CBPE); addresses the ground-truth lag problem by estimating post-drift accuracy from prediction confidence distributions alone.
 
   ### Streaming ML Frameworks with Built-in Drift Detection
-  - **River (Python)**: The dominant Python streaming ML library; implements DDM, EDDM, ADWIN, HDDM_A, HDDM_W, KSWIN, Page-Hinkley, and more; integrates drift detectors directly into online learning pipelines so that detection and adaptation occur in the same framework.
-  - **MOA (Java)**: The research reference implementation for streaming ML; over 40 drift detectors; primary tool for academic benchmark comparisons. Used to generate the benchmark results on ELEC2, COVERTYPE, and synthetic datasets that populate most concept drift papers.
-  - **scikit-multiflow**: Precursor to River; still used in legacy code; provides Hoeffding tree classifiers with integrated drift adaptation.
-  - **Apache Kafka + Faust/Bytewax**: Infrastructure layer for real-time [[Streaming Data]] pipelines; drift detectors are deployed as stream processing operators consuming model input/output events.
+
+- **River (Python)**: The dominant Python streaming ML library; implements DDM, EDDM, ADWIN, HDDM_A, HDDM_W, KSWIN, Page-Hinkley, and more; integrates drift detectors directly into online learning pipelines so that detection and adaptation occur in the same framework.
+- **MOA (Java)**: The research reference implementation for streaming ML; over 40 drift detectors; primary tool for academic benchmark comparisons. Used to generate the benchmark results on ELEC2, COVERTYPE, and synthetic datasets that populate most concept drift papers.
+- **scikit-multiflow**: Precursor to River; still used in legacy code; provides Hoeffding tree classifiers with integrated drift adaptation.
+- **Apache Kafka + Faust/Bytewax**: Infrastructure layer for real-time [[Streaming Data]] pipelines; drift detectors are deployed as stream processing operators consuming model input/output events.
 
   ### MLOps Platform-Native Drift Detection
-  - **Amazon SageMaker Model Monitor**: Automated data quality, model quality, model bias, and model explainability monitoring; runs on a schedule or continuously; compares live statistics against training baselines stored in a reference dataset; built-in [[Observability]] integration via CloudWatch.
-  - **Azure Machine Learning Model Monitoring**: Monitors data drift using Jensen-Shannon distance and Population Stability Index; integrated with Azure Monitor; supports custom monitoring metrics.
-  - **Databricks Lakehouse Monitoring**: Feature-level drift monitoring integrated with Delta Lake; monitors feature distributions and prediction distributions using sliding window statistics.
-  - **MLflow 3.x Evaluation**: MLflow's evaluation API supports custom drift metrics; combined with the MLflow Model Registry's transition hooks, enables automated retraining triggers on drift threshold breach.
+
+- **Amazon SageMaker Model Monitor**: Automated data quality, model quality, model bias, and model explainability monitoring; runs on a schedule or continuously; compares live statistics against training baselines stored in a reference dataset; built-in [[Observability]] integration via CloudWatch.
+- **Azure Machine Learning Model Monitoring**: Monitors data drift using Jensen-Shannon distance and Population Stability Index; integrated with Azure Monitor; supports custom monitoring metrics.
+- **Databricks Lakehouse Monitoring**: Feature-level drift monitoring integrated with Delta Lake; monitors feature distributions and prediction distributions using sliding window statistics.
+- **MLflow 3.x Evaluation**: MLflow's evaluation API supports custom drift metrics; combined with the MLflow Model Registry's transition hooks, enables automated retraining triggers on drift threshold breach.
 
   ## Operational Deployment Patterns
 
@@ -416,8 +426,8 @@ Concept Drift is the phenomenon in which the statistical properties of the targe
 
   ### Concept Drift in Batch vs. Real-Time Pipelines
 
-  - **Batch prediction systems**: Drift detection runs before the batch scoring job; if drift is detected, the batch job may be blocked pending retraining, or the output may be flagged as unreliable. Batch systems have the advantage of accessing the entire production window for drift testing before committing to predictions.
-  - **Real-time (online) prediction systems**: Drift detection must be lightweight and run in-stream; ADWIN, DDM, and Page-Hinkley are designed for this use case. Detection latency (the window from the start of drift to its detection) is a critical metric — too long, and degraded predictions accumulate before the model is retrained.
+- **Batch prediction systems**: Drift detection runs before the batch scoring job; if drift is detected, the batch job may be blocked pending retraining, or the output may be flagged as unreliable. Batch systems have the advantage of accessing the entire production window for drift testing before committing to predictions.
+- **Real-time (online) prediction systems**: Drift detection must be lightweight and run in-stream; ADWIN, DDM, and Page-Hinkley are designed for this use case. Detection latency (the window from the start of drift to its detection) is a critical metric — too long, and degraded predictions accumulate before the model is retrained.
 
   ## Conceptual Relationships with Broader ML Challenges
 
@@ -483,5 +493,5 @@ Concept Drift is the phenomenon in which the statistical properties of the targe
 
   Conceptually, concept drift is best understood not as a failure mode to be eliminated but as the inevitable consequence of deploying predictive models in a world that does not stand still. Robust [[Machine Learning]] systems must be designed from the outset with adaptation as a first-class engineering requirement, not a post-hoc patch.
 
-- ### Provenance
+### Provenance
 

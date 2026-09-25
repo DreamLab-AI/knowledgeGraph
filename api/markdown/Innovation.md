@@ -1,21 +1,28 @@
-
 Innovation is the process of creating and successfully introducing new or significantly improved products, services, processes or business models that deliver value. It spans the journey from invention and creative ideation through development, adoption and diffusion across markets and organisations. Innovation is a primary driver of economic growth, competitiveness and societal change, and is closely linked to research, knowledge transfer and entrepreneurship.
 
-- ### Overview
-  - [[Innovation]] is situated within the ai domain and is defined as a subclass of [[Digital Economy]].
-  - It connects to the wider knowledge graph through 15 typed relations spanning structural, functional and contrastive predicates.
-  - As a mature concept, it represents established knowledge with stable terminology and well-understood boundaries.
-- ### Key aspects
-  - Relationship to [[Digital Economy]] situates this concept within its operational and conceptual context.
-  - Relationship to [[Technology Transfer]] situates this concept within its operational and conceptual context.
-  - Relationship to [[Knowledge Transfer]] situates this concept within its operational and conceptual context.
-  - Relationship to [[Collaboration]] situates this concept within its operational and conceptual context.
-  - Relationship to [[Artificial Intelligence]] situates this concept within its operational and conceptual context.
-- ### Mechanisms
-  - The concept is realised through its constituent parts and the standards, methods and dependencies enumerated in its relations.
-  - It both requires upstream capabilities and enables downstream capabilities, forming part of a directed chain of dependencies in the graph.
-- ### Applications
-  - Practical use of [[Innovation]] appears wherever its enabled and supported concepts are deployed.
-  - It is referenced by existing classes in the graph, anchoring those edges to a defined, rooted node.
-- ### Provenance
+### Overview
+
+- [[Innovation]] is situated within the ai domain and is defined as a subclass of [[Digital Economy]].
+- It connects to the wider knowledge graph through 15 typed relations spanning structural, functional and contrastive predicates.
+- As a mature concept, it represents established knowledge with stable terminology and well-understood boundaries.
+
+### Key aspects
+
+- Relationship to [[Digital Economy]] situates this concept within its operational and conceptual context.
+- Relationship to [[Technology Transfer]] situates this concept within its operational and conceptual context.
+- Relationship to [[Knowledge Transfer]] situates this concept within its operational and conceptual context.
+- Relationship to [[Collaboration]] situates this concept within its operational and conceptual context.
+- Relationship to [[Artificial Intelligence]] situates this concept within its operational and conceptual context.
+
+### Mechanisms
+
+- The concept is realised through its constituent parts and the standards, methods and dependencies enumerated in its relations.
+- It both requires upstream capabilities and enables downstream capabilities, forming part of a directed chain of dependencies in the graph.
+
+### Applications
+
+- Practical use of [[Innovation]] appears wherever its enabled and supported concepts are deployed.
+- It is referenced by existing classes in the graph, anchoring those edges to a defined, rooted node.
+
+### Provenance
 

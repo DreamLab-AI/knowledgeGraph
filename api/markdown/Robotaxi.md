@@ -1,3 +1,2 @@
-
 A robotaxi is a self-driving vehicle operated as an on-demand ride-hailing service without a human safety driver, combining autonomous vehicle technology with fleet dispatch, mapping, and remote-assistance infrastructure. Passengers summon a robotaxi through a mobile application in the same manner as a conventional ride-hailing service, but the vehicle navigates, avoids obstacles, and completes the trip using onboard perception and planning systems. Commercial robotaxi deployments require regulatory approval and typically operate within geofenced service areas where the vehicle's autonomy stack has been extensively validated.
 

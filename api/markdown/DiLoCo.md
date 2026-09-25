@@ -1,125 +1,125 @@
-
 DiLoCo (Distributed Low-Communication training) is a method for training large language models across loosely connected, geographically distributed compute clusters with minimal inter-node communication. Workers perform many local optimisation steps before periodically synchronising via an outer optimiser, drastically reducing the bandwidth and latency demands of conventional data-parallel training. It enables collaborative model training over the public internet rather than within a single tightly coupled datacentre.
 
-- ### Semantic Classification
+### Semantic Classification
 
-- ### Content
+### Content
 
-  ## Compositional Relationships (Components)
-      SubClassOf(ai:DiLoCo
-        ObjectSomeValuesFrom(ai:hasPart ai:InnerOptimiser))
-      SubClassOf(ai:DiLoCo
-        ObjectSomeValuesFrom(ai:hasPart ai:OuterOptimiser))
-      SubClassOf(ai:DiLoCo
-        ObjectSomeValuesFrom(ai:hasPart ai:PseudoGradientAggregation))
-      SubClassOf(ai:DiLoCo
-        ObjectSomeValuesFrom(ai:hasPart ai:LocalSGD))
-      SubClassOf(ai:DiLoCo
-        ObjectSomeValuesFrom(ai:hasPart ai:GradientCompression))
-      SubClassOf(ai:DiLoCo
-        ObjectSomeValuesFrom(ai:hasPart ai:SynchronisationBarrier))
-      SubClassOf(ai:DiLoCo
-        ObjectSomeValuesFrom(ai:hasPart ai:GlobalModelBroadcast))
-      SubClassOf(ai:DiLoCo
-        ObjectSomeValuesFrom(ai:hasPart ai:CheckpointRecovery))
+## Compositional Relationships (Components)
+    SubClassOf(ai:DiLoCo
+      ObjectSomeValuesFrom(ai:hasPart ai:InnerOptimiser))
+    SubClassOf(ai:DiLoCo
+      ObjectSomeValuesFrom(ai:hasPart ai:OuterOptimiser))
+    SubClassOf(ai:DiLoCo
+      ObjectSomeValuesFrom(ai:hasPart ai:PseudoGradientAggregation))
+    SubClassOf(ai:DiLoCo
+      ObjectSomeValuesFrom(ai:hasPart ai:LocalSGD))
+    SubClassOf(ai:DiLoCo
+      ObjectSomeValuesFrom(ai:hasPart ai:GradientCompression))
+    SubClassOf(ai:DiLoCo
+      ObjectSomeValuesFrom(ai:hasPart ai:SynchronisationBarrier))
+    SubClassOf(ai:DiLoCo
+      ObjectSomeValuesFrom(ai:hasPart ai:GlobalModelBroadcast))
+    SubClassOf(ai:DiLoCo
+      ObjectSomeValuesFrom(ai:hasPart ai:CheckpointRecovery))
 
-  ## Dependency Relationships
-      SubClassOf(ai:DiLoCo
-        ObjectSomeValuesFrom(ai:requires ai:AdamWOptimiser))
-      SubClassOf(ai:DiLoCo
-        ObjectSomeValuesFrom(ai:requires ai:NesterovMomentum))
-      SubClassOf(ai:DiLoCo
-        ObjectSomeValuesFrom(ai:requires ai:CollectiveCommunication))
-      SubClassOf(ai:DiLoCo
-        ObjectSomeValuesFrom(ai:requires ai:CheckpointRecovery))
-      SubClassOf(ai:DiLoCo
-        ObjectSomeValuesFrom(ai:requires ai:DistributedComputing))
-      SubClassOf(ai:DiLoCo
-        ObjectSomeValuesFrom(ai:requires ai:GradientDescent))
-      SubClassOf(ai:DiLoCo
-        ObjectSomeValuesFrom(ai:requires ai:LargeLanguageModels))
+## Dependency Relationships
+    SubClassOf(ai:DiLoCo
+      ObjectSomeValuesFrom(ai:requires ai:AdamWOptimiser))
+    SubClassOf(ai:DiLoCo
+      ObjectSomeValuesFrom(ai:requires ai:NesterovMomentum))
+    SubClassOf(ai:DiLoCo
+      ObjectSomeValuesFrom(ai:requires ai:CollectiveCommunication))
+    SubClassOf(ai:DiLoCo
+      ObjectSomeValuesFrom(ai:requires ai:CheckpointRecovery))
+    SubClassOf(ai:DiLoCo
+      ObjectSomeValuesFrom(ai:requires ai:DistributedComputing))
+    SubClassOf(ai:DiLoCo
+      ObjectSomeValuesFrom(ai:requires ai:GradientDescent))
+    SubClassOf(ai:DiLoCo
+      ObjectSomeValuesFrom(ai:requires ai:LargeLanguageModels))
 
-  ## Capability Relationships
-      SubClassOf(ai:DiLoCo
-        ObjectSomeValuesFrom(ai:enables ai:DecentralisedAI))
-      SubClassOf(ai:DiLoCo
-        ObjectSomeValuesFrom(ai:enables ai:InternetScaleTraining))
-      SubClassOf(ai:DiLoCo
-        ObjectSomeValuesFrom(ai:enables ai:ComputeDemocratisation))
-      SubClassOf(ai:DiLoCo
-        ObjectSomeValuesFrom(ai:enables ai:CollaborativeModelOwnership))
-      SubClassOf(ai:DiLoCo
-        ObjectSomeValuesFrom(ai:enables ai:FaultTolerantTraining))
-      SubClassOf(ai:DiLoCo
-        ObjectSomeValuesFrom(ai:enables ai:HeterogeneousNodeTraining))
-      SubClassOf(ai:DiLoCo
-        ObjectSomeValuesFrom(ai:enables ai:FederatedEdgeLearning))
-      SubClassOf(ai:DiLoCo
-        ObjectSomeValuesFrom(ai:enables ai:OpenSourceModelTraining))
+## Capability Relationships
+    SubClassOf(ai:DiLoCo
+      ObjectSomeValuesFrom(ai:enables ai:DecentralisedAI))
+    SubClassOf(ai:DiLoCo
+      ObjectSomeValuesFrom(ai:enables ai:InternetScaleTraining))
+    SubClassOf(ai:DiLoCo
+      ObjectSomeValuesFrom(ai:enables ai:ComputeDemocratisation))
+    SubClassOf(ai:DiLoCo
+      ObjectSomeValuesFrom(ai:enables ai:CollaborativeModelOwnership))
+    SubClassOf(ai:DiLoCo
+      ObjectSomeValuesFrom(ai:enables ai:FaultTolerantTraining))
+    SubClassOf(ai:DiLoCo
+      ObjectSomeValuesFrom(ai:enables ai:HeterogeneousNodeTraining))
+    SubClassOf(ai:DiLoCo
+      ObjectSomeValuesFrom(ai:enables ai:FederatedEdgeLearning))
+    SubClassOf(ai:DiLoCo
+      ObjectSomeValuesFrom(ai:enables ai:OpenSourceModelTraining))
 
-  ## Implementation Relationships
-      SubClassOf(ai:DiLoCo
-        ObjectSomeValuesFrom(ai:implements ai:LocalSGD))
-      SubClassOf(ai:DiLoCo
-        ObjectSomeValuesFrom(ai:implements ai:FederatedLearning))
-      SubClassOf(ai:DiLoCo
-        ObjectSomeValuesFrom(ai:implements ai:DataParallelism))
-      SubClassOf(ai:DiLoCo
-        ObjectSomeValuesFrom(ai:implements ai:PseudoGradientOptimisation))
-      SubClassOf(ai:DiLoCo
-        ObjectSomeValuesFrom(ai:implements ai:NesterovMomentum))
-      SubClassOf(ai:DiLoCo
-        ObjectSomeValuesFrom(ai:implements ai:GradientAggregation))
-      SubClassOf(ai:DiLoCo
-        ObjectSomeValuesFrom(ai:implements ai:FaultTolerantDistributedComputing))
+## Implementation Relationships
+    SubClassOf(ai:DiLoCo
+      ObjectSomeValuesFrom(ai:implements ai:LocalSGD))
+    SubClassOf(ai:DiLoCo
+      ObjectSomeValuesFrom(ai:implements ai:FederatedLearning))
+    SubClassOf(ai:DiLoCo
+      ObjectSomeValuesFrom(ai:implements ai:DataParallelism))
+    SubClassOf(ai:DiLoCo
+      ObjectSomeValuesFrom(ai:implements ai:PseudoGradientOptimisation))
+    SubClassOf(ai:DiLoCo
+      ObjectSomeValuesFrom(ai:implements ai:NesterovMomentum))
+    SubClassOf(ai:DiLoCo
+      ObjectSomeValuesFrom(ai:implements ai:GradientAggregation))
+    SubClassOf(ai:DiLoCo
+      ObjectSomeValuesFrom(ai:implements ai:FaultTolerantDistributedComputing))
 
-  ## Reduction Relationships
-      SubClassOf(ai:DiLoCo
-        ObjectSomeValuesFrom(ai:reducesTo ai:LocalSGD))
-      SubClassOf(ai:DiLoCo
-        ObjectSomeValuesFrom(ai:reducesTo ai:FederatedAveraging))
-      SubClassOf(ai:DiLoCo
-        ObjectSomeValuesFrom(ai:reducesTo ai:SynchronousDataParallelism))
-      SubClassOf(ai:DiLoCo
-        ObjectSomeValuesFrom(ai:reducesTo ai:AsynchronousSGD))
-      SubClassOf(ai:DiLoCo
-        ObjectSomeValuesFrom(ai:reducesTo ai:GradientCompressedTraining))
+## Reduction Relationships
+    SubClassOf(ai:DiLoCo
+      ObjectSomeValuesFrom(ai:reducesTo ai:LocalSGD))
+    SubClassOf(ai:DiLoCo
+      ObjectSomeValuesFrom(ai:reducesTo ai:FederatedAveraging))
+    SubClassOf(ai:DiLoCo
+      ObjectSomeValuesFrom(ai:reducesTo ai:SynchronousDataParallelism))
+    SubClassOf(ai:DiLoCo
+      ObjectSomeValuesFrom(ai:reducesTo ai:AsynchronousSGD))
+    SubClassOf(ai:DiLoCo
+      ObjectSomeValuesFrom(ai:reducesTo ai:GradientCompressedTraining))
 
-  ## About
+## About
 
-  **DiLoCo** originated as a systematic exploration of whether the federated learning paradigm — where data remains local to clients that synchronise only model updates — could be scaled to the regime of large language model pre-training if the inner optimiser were strong enough and the inner step count were long enough. The key insight of Douillard et al. (2023) was that replacing the weak SGD inner optimiser used in Federated Averaging (McMahan et al., 2017) with AdamW, and running that inner optimiser for H = 100 to 500 steps rather than the handful of local steps typical in federated learning, produced convergence trajectories that, when pseudo-gradient-averaged and outer-Nesterov-updated, closely tracked the convergence of fully synchronous AdamW training despite synchronising 500 times less often. This was a non-obvious result: the existing theoretical literature on local SGD predicted that long inner loops would cause "client drift" — the divergence of worker weights from the global optimum as each worker adapts to its local data shard — that would degrade convergence. DiLoCo demonstrated empirically that the AdamW inner optimiser combined with Nesterov outer updates suppressed this drift sufficiently to maintain convergence quality.
+**DiLoCo** originated as a systematic exploration of whether the federated learning paradigm — where data remains local to clients that synchronise only model updates — could be scaled to the regime of large language model pre-training if the inner optimiser were strong enough and the inner step count were long enough. The key insight of Douillard et al. (2023) was that replacing the weak SGD inner optimiser used in Federated Averaging (McMahan et al., 2017) with AdamW, and running that inner optimiser for H = 100 to 500 steps rather than the handful of local steps typical in federated learning, produced convergence trajectories that, when pseudo-gradient-averaged and outer-Nesterov-updated, closely tracked the convergence of fully synchronous AdamW training despite synchronising 500 times less often. This was a non-obvious result: the existing theoretical literature on local SGD predicted that long inner loops would cause "client drift" — the divergence of worker weights from the global optimum as each worker adapts to its local data shard — that would degrade convergence. DiLoCo demonstrated empirically that the AdamW inner optimiser combined with Nesterov outer updates suppressed this drift sufficiently to maintain convergence quality.
 
-  The Nesterov outer optimiser proved to be a critical and somewhat surprising element of the algorithm. Ablations showed that replacing Nesterov SGD with vanilla SGD or Adam in the outer loop degraded convergence quality substantially. The pseudo-gradient — defined as the signed difference between the global starting weights and the locally-updated weights after H inner steps — carries implicit momentum and curvature information from the entire inner epoch, far richer than a single gradient vector. When Nesterov momentum is applied to these accumulated trajectory pseudo-gradients, it acts as a second-order correction that partially compensates for the approximation error introduced by averaging heterogeneous per-worker trajectories. Subsequent analysis in the SNOO paper (Peng et al., 2025, arXiv:2510.15830) showed that this produces a beneficial implicit regularisation effect: DiLoCo-trained models exhibit smaller weight norms and stronger overfitting resistance than synchronously trained equivalents, suggesting that the infrequent averaging acts as a form of noise injection that helps the model escape sharp minima.
+The Nesterov outer optimiser proved to be a critical and somewhat surprising element of the algorithm. Ablations showed that replacing Nesterov SGD with vanilla SGD or Adam in the outer loop degraded convergence quality substantially. The pseudo-gradient — defined as the signed difference between the global starting weights and the locally-updated weights after H inner steps — carries implicit momentum and curvature information from the entire inner epoch, far richer than a single gradient vector. When Nesterov momentum is applied to these accumulated trajectory pseudo-gradients, it acts as a second-order correction that partially compensates for the approximation error introduced by averaging heterogeneous per-worker trajectories. Subsequent analysis in the SNOO paper (Peng et al., 2025, arXiv:2510.15830) showed that this produces a beneficial implicit regularisation effect: DiLoCo-trained models exhibit smaller weight norms and stronger overfitting resistance than synchronously trained equivalents, suggesting that the infrequent averaging acts as a form of noise injection that helps the model escape sharp minima.
 
-  The theoretical underpinning of DiLoCo's effectiveness remains an active research question in 2026. The Smoothing DiLoCo with Primal Averaging paper (Douillard et al., 2024, arXiv:2512.17131) provided convergence rate analyses showing that maintaining a running average of global model weights over multiple outer steps — primal averaging — further accelerates convergence and reduces sensitivity to the outer learning rate choice. The MuLoCo paper (arXiv:2505.23725, 2025) replaced the AdamW inner optimiser with Muon — a momentum-based update rule with orthogonal gradient projections inspired by Shampoo — and found substantially improved per-step sample efficiency, demonstrating that the original DiLoCo AdamW choice was a baseline rather than an optimum, and that the inner optimiser is a critical hyperparameter with significant impact on final model quality.
+The theoretical underpinning of DiLoCo's effectiveness remains an active research question in 2026. The Smoothing DiLoCo with Primal Averaging paper (Douillard et al., 2024, arXiv:2512.17131) provided convergence rate analyses showing that maintaining a running average of global model weights over multiple outer steps — primal averaging — further accelerates convergence and reduces sensitivity to the outer learning rate choice. The MuLoCo paper (arXiv:2505.23725, 2025) replaced the AdamW inner optimiser with Muon — a momentum-based update rule with orthogonal gradient projections inspired by Shampoo — and found substantially improved per-step sample efficiency, demonstrating that the original DiLoCo AdamW choice was a baseline rather than an optimum, and that the inner optimiser is a critical hyperparameter with significant impact on final model quality.
 
-  The engineering significance of DiLoCo is that it reconfigures the physical constraints governing large-scale AI training. Conventional synchronous all-reduce [[Distributed Training]] requires low-latency, high-bandwidth interconnects — NVLink (600 GB/s) for intra-node GPU communication, InfiniBand HDR or NDR (200-400 Gb/s) for inter-node — which confines training to within a single data centre or campus. DiLoCo's 500x communication reduction means that the outer synchronisation step — the only step requiring inter-worker communication — can proceed over commodity internet links with tens of milliseconds of latency and gigabits-per-second of bandwidth, matching the profile of cross-region cloud connectivity, university WAN links, and commodity broadband. This enables a qualitatively new form of collaborative AI training in which geographically and institutionally diverse contributors pool compute without co-locating hardware.
+The engineering significance of DiLoCo is that it reconfigures the physical constraints governing large-scale AI training. Conventional synchronous all-reduce [[Distributed Training]] requires low-latency, high-bandwidth interconnects — NVLink (600 GB/s) for intra-node GPU communication, InfiniBand HDR or NDR (200-400 Gb/s) for inter-node — which confines training to within a single data centre or campus. DiLoCo's 500x communication reduction means that the outer synchronisation step — the only step requiring inter-worker communication — can proceed over commodity internet links with tens of milliseconds of latency and gigabits-per-second of bandwidth, matching the profile of cross-region cloud connectivity, university WAN links, and commodity broadband. This enables a qualitatively new form of collaborative AI training in which geographically and institutionally diverse contributors pool compute without co-locating hardware.
 
-  The implications extend beyond efficiency to governance and compute geography. If frontier model training requires only commodity internet connectivity rather than specialised InfiniBand data centre infrastructure, then the compute pool available for training dramatically expands: every university campus with a GPU cluster, every corporate data centre with CUDA hardware, every national research computing facility worldwide becomes a potential training contributor. [[Prime Intellect]]'s INTELLECT-1 demonstration trained a 10B parameter model across five countries, and Google DeepMind's Decoupled DiLoCo trained a 12B model across four US cloud regions with 88% goodput under real hardware failures — both representing qualitatively different compute governance models than the centralised hyperscaler-owned pre-training that characterised 2020-2023 frontier model development.
+The implications extend beyond efficiency to governance and compute geography. If frontier model training requires only commodity internet connectivity rather than specialised InfiniBand data centre infrastructure, then the compute pool available for training dramatically expands: every university campus with a GPU cluster, every corporate data centre with CUDA hardware, every national research computing facility worldwide becomes a potential training contributor. [[Prime Intellect]]'s INTELLECT-1 demonstration trained a 10B parameter model across five countries, and Google DeepMind's Decoupled DiLoCo trained a 12B model across four US cloud regions with 88% goodput under real hardware failures — both representing qualitatively different compute governance models than the centralised hyperscaler-owned pre-training that characterised 2020-2023 frontier model development.
 
-  ## Formal Algorithm
+## Formal Algorithm
 
-  Let θ^(0) be the initial global model weights, shared identically across K workers. Define the outer step index t = 0, 1, 2, ..., the inner step count H (hyperparameter, typically 100-500), the inner optimiser as AdamW with learning rate η_in and weight decay λ, and the outer optimiser as SGD with Nesterov momentum (momentum coefficient β, outer learning rate η_out).
+Let θ^(0) be the initial global model weights, shared identically across K workers. Define the outer step index t = 0, 1, 2, ..., the inner step count H (hyperparameter, typically 100-500), the inner optimiser as AdamW with learning rate η_in and weight decay λ, and the outer optimiser as SGD with Nesterov momentum (momentum coefficient β, outer learning rate η_out).
 
-  **Step 1 — Broadcast**: At outer step t, broadcast θ^(t) to all K workers. Each worker k initialises its local copy: θ_k^(t,0) ← θ^(t). Reset inner AdamW state (first and second moment estimates) to those accumulated at the end of the previous epoch; some implementations carry Adam state across outer steps to avoid cold-start inefficiency.
+**Step 1 — Broadcast**: At outer step t, broadcast θ^(t) to all K workers. Each worker k initialises its local copy: θ_k^(t,0) ← θ^(t). Reset inner AdamW state (first and second moment estimates) to those accumulated at the end of the previous epoch; some implementations carry Adam state across outer steps to avoid cold-start inefficiency.
 
-  **Step 2 — Inner loop**: Each worker k independently executes H steps of AdamW on its local data shard D_k, producing θ_k^(t,H). This inner loop proceeds entirely locally with no inter-worker communication. Workers can operate on heterogeneous hardware and may complete their H steps at different wall-clock times (exploited by asynchronous variants).
+**Step 2 — Inner loop**: Each worker k independently executes H steps of AdamW on its local data shard D_k, producing θ_k^(t,H). This inner loop proceeds entirely locally with no inter-worker communication. Workers can operate on heterogeneous hardware and may complete their H steps at different wall-clock times (exploited by asynchronous variants).
 
-  **Step 3 — Pseudo-gradient computation**: Each worker k computes its pseudo-gradient: Δ_k^(t) = θ^(t) − θ_k^(t,H). The negative sign (from global start toward locally-updated weights) means the pseudo-gradient points in the average direction of local optimisation progress, not away from it as a conventional gradient would.
+**Step 3 — Pseudo-gradient computation**: Each worker k computes its pseudo-gradient: Δ_k^(t) = θ^(t) − θ_k^(t,H). The negative sign (from global start toward locally-updated weights) means the pseudo-gradient points in the average direction of local optimisation progress, not away from it as a conventional gradient would.
 
-  **Step 4 — Aggregation**: Workers perform a synchronous all-reduce (element-wise average) over pseudo-gradients: Δ^(t) = (1/K) Σ_{k=1}^{K} Δ_k^(t). In synchronous DiLoCo, all K workers participate and the barrier blocks until all pseudo-gradients are received. In asynchronous variants (Decoupled DiLoCo, HeLoCo), available workers contribute and staleness-correction terms are applied to compensate for missing workers.
+**Step 4 — Aggregation**: Workers perform a synchronous all-reduce (element-wise average) over pseudo-gradients: Δ^(t) = (1/K) Σ_{k=1}^{K} Δ_k^(t). In synchronous DiLoCo, all K workers participate and the barrier blocks until all pseudo-gradients are received. In asynchronous variants (Decoupled DiLoCo, HeLoCo), available workers contribute and staleness-correction terms are applied to compensate for missing workers.
 
-  **Step 5 — Nesterov outer optimiser update**: First compute the lookahead estimate: θ̃^(t) = θ^(t) − β · m^(t). Then apply the gradient update with the aggregated pseudo-gradient: θ^(t+1) = θ̃^(t) − η_out · Δ^(t). Update the momentum buffer: m^(t+1) = β · m^(t) + Δ^(t).
+**Step 5 — Nesterov outer optimiser update**: First compute the lookahead estimate: θ̃^(t) = θ^(t) − β · m^(t). Then apply the gradient update with the aggregated pseudo-gradient: θ^(t+1) = θ̃^(t) − η_out · Δ^(t). Update the momentum buffer: m^(t+1) = β · m^(t) + Δ^(t).
 
-  **Step 6 — Return to Step 1** with t ← t+1.
+**Step 6 — Return to Step 1** with t ← t+1.
 
-  Communication occurs only in Steps 1 and 4 — once per H inner steps. The total communication volume per outer step equals one all-reduce of a tensor with the same dimensionality as the model parameter count. For a 1B parameter model in FP32, this is 4 GB transmitted once per 500 inner steps, compared to 4 GB transmitted every step in synchronous training — a 500x reduction in communication frequency.
+Communication occurs only in Steps 1 and 4 — once per H inner steps. The total communication volume per outer step equals one all-reduce of a tensor with the same dimensionality as the model parameter count. For a 1B parameter model in FP32, this is 4 GB transmitted once per 500 inner steps, compared to 4 GB transmitted every step in synchronous training — a 500x reduction in communication frequency.
 
-  **Key hyperparameters and their effects**:
-  - H (inner step count): The primary bandwidth-convergence tradeoff parameter. Larger H → fewer synchronisations → less bandwidth → more client drift → potentially worse convergence. Empirically, H = 100-500 is the effective range for LLMs.
-  - K (number of workers): The primary scale parameter. Pseudo-gradient averaging improves with K (central limit theorem reduces per-step noise), but heterogeneity effects increase. Optimal K depends on data heterogeneity.
-  - η_out (outer learning rate): Typically set much larger than η_in (10x-100x), because the pseudo-gradient is already an accumulated step of H inner steps, not a per-step gradient.
-  - β (Nesterov momentum): Typically 0.9-0.99, following the standard SGD momentum range. The SNOO paper explores step-K Nesterov variants.
+**Key hyperparameters and their effects**:
+
+- H (inner step count): The primary bandwidth-convergence tradeoff parameter. Larger H → fewer synchronisations → less bandwidth → more client drift → potentially worse convergence. Empirically, H = 100-500 is the effective range for LLMs.
+- K (number of workers): The primary scale parameter. Pseudo-gradient averaging improves with K (central limit theorem reduces per-step noise), but heterogeneity effects increase. Optimal K depends on data heterogeneity.
+- η_out (outer learning rate): Typically set much larger than η_in (10x-100x), because the pseudo-gradient is already an accumulated step of H inner steps, not a per-step gradient.
+- β (Nesterov momentum): Typically 0.9-0.99, following the standard SGD momentum range. The SNOO paper explores step-K Nesterov variants.
 
   ## Components / Architecture
 
@@ -198,42 +198,50 @@ DiLoCo (Distributed Low-Communication training) is a method for training large l
   The DiLoCo research community has produced a growing ecosystem of open-source implementations, libraries, and frameworks that make the algorithm accessible beyond the original Google DeepMind implementation.
 
   **Hivemind Library**
-  - Developed by the EleutherAI and BigScience communities; used by OpenDiLoCo as the decentralised communication layer.
-  - Provides DHT-based peer-to-peer all-reduce, gradient averaging, and state synchronisation without a central coordinator node.
-  - Supports dynamic node joining and leaving during training, fault-tolerant averaging with quorum thresholds, and bandwidth-adaptive aggregation strategies.
-  - Used in BLOOM (176B parameter language model trained across 48 cloud providers in 2022) as the infrastructure layer for distributed training.
+
+- Developed by the EleutherAI and BigScience communities; used by OpenDiLoCo as the decentralised communication layer.
+- Provides DHT-based peer-to-peer all-reduce, gradient averaging, and state synchronisation without a central coordinator node.
+- Supports dynamic node joining and leaving during training, fault-tolerant averaging with quorum thresholds, and bandwidth-adaptive aggregation strategies.
+- Used in BLOOM (176B parameter language model trained across 48 cloud providers in 2022) as the infrastructure layer for distributed training.
 
   **OpenDiLoCo (Prime Intellect)**
-  - Repository: github.com/PrimeIntellect-ai/OpenDiLoCo
-  - Implements DiLoCo using PyTorch and Hivemind, with support for H = 100-500 inner steps, configurable outer optimiser, and internet-scale deployment.
-  - Includes experiment scripts for reproducing the 1.1B parameter training results and smaller-scale validation experiments.
-  - Apache 2.0 licence, actively maintained as of June 2026.
+
+- Repository: github.com/PrimeIntellect-ai/OpenDiLoCo
+- Implements DiLoCo using PyTorch and Hivemind, with support for H = 100-500 inner steps, configurable outer optimiser, and internet-scale deployment.
+- Includes experiment scripts for reproducing the 1.1B parameter training results and smaller-scale validation experiments.
+- Apache 2.0 licence, actively maintained as of June 2026.
 
   **torchdistributed.diloco (Proposed Standard Library Integration)**
-  - As of 2026, proposals are circulating in the PyTorch community to integrate DiLoCo-class training as a first-class distributed training strategy in torch.distributed, analogous to DDP (DistributedDataParallel) for synchronous data parallelism.
-  - Standardised integration would enable wider adoption without requiring Hivemind dependency for cluster-based deployments.
+
+- As of 2026, proposals are circulating in the PyTorch community to integrate DiLoCo-class training as a first-class distributed training strategy in torch.distributed, analogous to DDP (DistributedDataParallel) for synchronous data parallelism.
+- Standardised integration would enable wider adoption without requiring Hivemind dependency for cluster-based deployments.
 
   **Streaming DiLoCo Reference Implementation**
-  - Released alongside the arXiv:2501.18512 paper; implements communication-computation overlap and 4-bit quantisation.
-  - Includes bandwidth profiling tools for estimating required inter-worker bandwidth for a given model size and H value.
+
+- Released alongside the arXiv:2501.18512 paper; implements communication-computation overlap and 4-bit quantisation.
+- Includes bandwidth profiling tools for estimating required inter-worker bandwidth for a given model size and H value.
 
   **INTELLECT-1 Training Infrastructure (Prime Intellect)**
-  - The infrastructure used to train INTELLECT-1 (10B parameters across five countries) is documented in the Prime Intellect technical blog.
-  - Uses OpenDiLoCo with custom node discovery and monitoring infrastructure, public participation portal, and checkpoint publication system.
-  - Provides a template for future decentralised training runs at scale.
+
+- The infrastructure used to train INTELLECT-1 (10B parameters across five countries) is documented in the Prime Intellect technical blog.
+- Uses OpenDiLoCo with custom node discovery and monitoring infrastructure, public participation portal, and checkpoint publication system.
+- Provides a template for future decentralised training runs at scale.
 
   **DiLoCoX Reference Implementation**
-  - Released alongside arXiv:2506.21263 (June 2026); implements tensor parallelism within worker islands using Megatron-LM's tensor parallel communication, combined with DiLoCo-style pseudo-gradient all-reduce between islands.
-  - Requires modification of the training loop to handle the two-level communication hierarchy (intra-island NVLink + inter-island WAN all-reduce).
+
+- Released alongside arXiv:2506.21263 (June 2026); implements tensor parallelism within worker islands using Megatron-LM's tensor parallel communication, combined with DiLoCo-style pseudo-gradient all-reduce between islands.
+- Requires modification of the training loop to handle the two-level communication hierarchy (intra-island NVLink + inter-island WAN all-reduce).
 
   **HeLoCo Reference Implementation**
-  - Released alongside arXiv:2606.00271 (June 2026); implements per-worker staleness correction and heterogeneity-aware pseudo-gradient weighting.
-  - Includes simulation tools for modelling convergence under various hardware speed ratios and data heterogeneity configurations before committing to a full training run.
+
+- Released alongside arXiv:2606.00271 (June 2026); implements per-worker staleness correction and heterogeneity-aware pseudo-gradient weighting.
+- Includes simulation tools for modelling convergence under various hardware speed ratios and data heterogeneity configurations before committing to a full training run.
 
   **Evaluation and Benchmarking Infrastructure**
-  - The DiLoCo research community uses the C4 dataset (Colossal Clean Crawled Corpus, 750GB) and RedPajama-v1 (1.2T tokens) as standard pre-training datasets for reproducibility.
-  - Standard evaluation: perplexity on held-out validation sets, with downstream benchmarks (MMLU, HellaSwag, WinoGrande, ARC) for larger models.
-  - Communication efficiency metric: synchronisation frequency (1/H) relative to synchronous baseline, combined with total bytes transmitted per training step.
+
+- The DiLoCo research community uses the C4 dataset (Colossal Clean Crawled Corpus, 750GB) and RedPajama-v1 (1.2T tokens) as standard pre-training datasets for reproducibility.
+- Standard evaluation: perplexity on held-out validation sets, with downstream benchmarks (MMLU, HellaSwag, WinoGrande, ARC) for larger models.
+- Communication efficiency metric: synchronisation frequency (1/H) relative to synchronous baseline, combined with total bytes transmitted per training step.
 
   ## Privacy, Governance, and Compute Sovereignty Implications
 
@@ -356,79 +364,87 @@ DiLoCo (Distributed Low-Communication training) is a method for training large l
   DiLoCo training adds several new failure modes relative to synchronous training: worker pseudo-gradient outliers (a misbehaving worker producing pseudo-gradients much larger than peers can corrupt the global update), synchronisation timeout failures (network partitions that prevent workers from reaching the all-reduce barrier), and inner loop divergence (a worker's local model diverging within its inner loop epoch due to excessive learning rate or data quality issues). Recommended monitoring: track per-worker pseudo-gradient L2 norms (outliers indicate worker issues), track outer synchronisation round completion times (increasing times indicate network degradation), and track per-worker validation perplexity trends (diverging trends indicate data quality issues).
 
   ## Research & Literature
-  - 1. Douillard, A., Feng, Q., Rame, A., Evci, U., Zico Kolter, J., & Garg, S. (2023). "DiLoCo: Distributed Low-Communication Training of Language Models." arXiv:2311.08105. Google DeepMind.
-  - 2. Jaghouar, S., Cheng, J., & Dettmers, T. (2024). "OpenDiLoCo: An Open-Source Framework for Globally Distributed Low-Communication Training." arXiv:2407.07852. Prime Intellect.
-  - 3. Douillard, A., et al. (2025). "Streaming DiLoCo with Overlapping Communication: Towards a Distributed Free Lunch." arXiv:2501.18512.
-  - 4. Google DeepMind (2026). "Decoupled DiLoCo: Resilient, Distributed AI Training at Scale." arXiv:2604.21428. deepmind.google/blog/decoupled-diloco.
-  - 5. arXiv (2026). "DiLoCoX: A Low-Communication Large-Scale Training Framework for Decentralized Cluster." arXiv:2506.21263.
-  - 6. arXiv (2026). "HeLoCo: Efficient Asynchronous Low-Communication Training under Data and Device Heterogeneity." arXiv:2606.00271.
-  - 7. Peng, X., et al. (2025). "SNOO: Step-K Nesterov Outer Optimizer — The Surprising Effectiveness of Nesterov Momentum Applied to Pseudo-Gradients." arXiv:2510.15830.
-  - 8. Douillard, A., et al. (2024). "Smoothing DiLoCo with Primal Averaging for Faster Training of LLMs." arXiv:2512.17131.
-  - 9. arXiv (2025). "MuLoCo: Muon is a Practical Inner Optimizer for DiLoCo." arXiv:2505.23725.
-  - 10. arXiv (2025). "Eager Updates for Overlapped Communication and Computation in DiLoCo." arXiv:2502.12996.
-  - 11. University of Edinburgh et al. (2025). "Towards Decentralised and Sustainable Foundation Model Training with the Edge." arXiv:2507.01803.
-  - 12. arXiv (2025). "Distributed and Decentralised Training: Technical Governance Challenges in a Shifting AI Landscape." arXiv:2507.07765.
-  - 13. Epoch AI (2025). "How Far Can Decentralized Training Over the Internet Scale?" epoch.ai/gradient-updates/how-far-can-decentralized-training-over-the-internet-scale.
-  - 14. McMahan, H.B., Moore, E., Ramage, D., Hampson, S., & Agüera y Arcas, B. (2017). "Communication-Efficient Learning of Deep Networks from Decentralized Data." *AISTATS 2017*. arXiv:1602.05629.
-  - 15. Stich, S.U. (2018). "Local SGD Converges Fast and Communicates Little." *ICLR 2019*. arXiv:1805.09767.
-  - 16. Li, T., Sahu, A.K., Zaheer, M., Sanjabi, M., Smola, A., & Smith, V. (2019). "Convergence of Federated Learning on Non-IID Data." arXiv:1907.02189.
-  - 17. Karimireddy, S.P., Kale, S., Mohri, M., Reddi, S.J., Stich, S.U., & Suresh, A.T. (2020). "SCAFFOLD: Stochastic Controlled Averaging for Federated Learning." *ICML 2020*.
-  - 18. Reddi, S., Charles, Z., Zaheer, M., Garrett, Z., Rush, K., Konecny, J., Kumar, S., & McMahan, H.B. (2020). "Adaptive Federated Optimization (FedOpt)." *ICLR 2021*. arXiv:2003.00295.
-  - 19. Loshchilov, I., & Hutter, F. (2019). "Decoupled Weight Decay Regularization (AdamW)." *ICLR 2019*. arXiv:1711.05101.
-  - 20. Rajbhandari, S., Rasley, J., Ruwase, O., & He, Y. (2020). "ZeRO: Memory Optimizations Toward Training Trillion Parameter Models." *SC20*. arXiv:1910.02054.
-  - 21. Shoeybi, M., Patwary, M., Puri, R., LeGresley, P., Casper, J., & Catanzaro, B. (2019). "Megatron-LM: Training Multi-Billion Parameter Language Models Using Model Parallelism." arXiv:1909.08053.
-  - 22. Lin, T., Stich, S.U., Aglin, K.K., & Jaggi, M. (2020). "Don't Use Large Minibatches, Use Local SGD." *ICLR 2020*. arXiv:1808.07217.
-  - 23. IEEE Spectrum (2025). "Decentralized AI Training Turns Homes Into Data Hubs." spectrum.ieee.org/decentralized-ai-training-2676670858.
-  - 24. The Alan Turing Institute (2025). "Doing AI Differently." turing.ac.uk/news/publications/doing-ai-differently.
-  - 25. Prime Intellect (2024). "OpenDiLoCo: An Open-Source Framework for Globally Distributed Low-Communication Training." primeintellect.ai/blog/opendiloco.
-  - 26. Nathan.rs (2025). "Local SGD and DiLoCo Research Musings." nathan.rs/posts/research-log.
-  - 27. arXiv (2025). "Cross-region Model Training with Communication-Computation Overlapping and Delay Compensation." arXiv:2504.17672.
+
+- 1. Douillard, A., Feng, Q., Rame, A., Evci, U., Zico Kolter, J., & Garg, S. (2023). "DiLoCo: Distributed Low-Communication Training of Language Models." arXiv:2311.08105. Google DeepMind.
+- 2. Jaghouar, S., Cheng, J., & Dettmers, T. (2024). "OpenDiLoCo: An Open-Source Framework for Globally Distributed Low-Communication Training." arXiv:2407.07852. Prime Intellect.
+- 3. Douillard, A., et al. (2025). "Streaming DiLoCo with Overlapping Communication: Towards a Distributed Free Lunch." arXiv:2501.18512.
+- 4. Google DeepMind (2026). "Decoupled DiLoCo: Resilient, Distributed AI Training at Scale." arXiv:2604.21428. deepmind.google/blog/decoupled-diloco.
+- 5. arXiv (2026). "DiLoCoX: A Low-Communication Large-Scale Training Framework for Decentralized Cluster." arXiv:2506.21263.
+- 6. arXiv (2026). "HeLoCo: Efficient Asynchronous Low-Communication Training under Data and Device Heterogeneity." arXiv:2606.00271.
+- 7. Peng, X., et al. (2025). "SNOO: Step-K Nesterov Outer Optimizer — The Surprising Effectiveness of Nesterov Momentum Applied to Pseudo-Gradients." arXiv:2510.15830.
+- 8. Douillard, A., et al. (2024). "Smoothing DiLoCo with Primal Averaging for Faster Training of LLMs." arXiv:2512.17131.
+- 9. arXiv (2025). "MuLoCo: Muon is a Practical Inner Optimizer for DiLoCo." arXiv:2505.23725.
+- 10. arXiv (2025). "Eager Updates for Overlapped Communication and Computation in DiLoCo." arXiv:2502.12996.
+- 11. University of Edinburgh et al. (2025). "Towards Decentralised and Sustainable Foundation Model Training with the Edge." arXiv:2507.01803.
+- 12. arXiv (2025). "Distributed and Decentralised Training: Technical Governance Challenges in a Shifting AI Landscape." arXiv:2507.07765.
+- 13. Epoch AI (2025). "How Far Can Decentralized Training Over the Internet Scale?" epoch.ai/gradient-updates/how-far-can-decentralized-training-over-the-internet-scale.
+- 14. McMahan, H.B., Moore, E., Ramage, D., Hampson, S., & Agüera y Arcas, B. (2017). "Communication-Efficient Learning of Deep Networks from Decentralized Data." *AISTATS 2017*. arXiv:1602.05629.
+- 15. Stich, S.U. (2018). "Local SGD Converges Fast and Communicates Little." *ICLR 2019*. arXiv:1805.09767.
+- 16. Li, T., Sahu, A.K., Zaheer, M., Sanjabi, M., Smola, A., & Smith, V. (2019). "Convergence of Federated Learning on Non-IID Data." arXiv:1907.02189.
+- 17. Karimireddy, S.P., Kale, S., Mohri, M., Reddi, S.J., Stich, S.U., & Suresh, A.T. (2020). "SCAFFOLD: Stochastic Controlled Averaging for Federated Learning." *ICML 2020*.
+- 18. Reddi, S., Charles, Z., Zaheer, M., Garrett, Z., Rush, K., Konecny, J., Kumar, S., & McMahan, H.B. (2020). "Adaptive Federated Optimization (FedOpt)." *ICLR 2021*. arXiv:2003.00295.
+- 19. Loshchilov, I., & Hutter, F. (2019). "Decoupled Weight Decay Regularization (AdamW)." *ICLR 2019*. arXiv:1711.05101.
+- 20. Rajbhandari, S., Rasley, J., Ruwase, O., & He, Y. (2020). "ZeRO: Memory Optimizations Toward Training Trillion Parameter Models." *SC20*. arXiv:1910.02054.
+- 21. Shoeybi, M., Patwary, M., Puri, R., LeGresley, P., Casper, J., & Catanzaro, B. (2019). "Megatron-LM: Training Multi-Billion Parameter Language Models Using Model Parallelism." arXiv:1909.08053.
+- 22. Lin, T., Stich, S.U., Aglin, K.K., & Jaggi, M. (2020). "Don't Use Large Minibatches, Use Local SGD." *ICLR 2020*. arXiv:1808.07217.
+- 23. IEEE Spectrum (2025). "Decentralized AI Training Turns Homes Into Data Hubs." spectrum.ieee.org/decentralized-ai-training-2676670858.
+- 24. The Alan Turing Institute (2025). "Doing AI Differently." turing.ac.uk/news/publications/doing-ai-differently.
+- 25. Prime Intellect (2024). "OpenDiLoCo: An Open-Source Framework for Globally Distributed Low-Communication Training." primeintellect.ai/blog/opendiloco.
+- 26. Nathan.rs (2025). "Local SGD and DiLoCo Research Musings." nathan.rs/posts/research-log.
+- 27. arXiv (2025). "Cross-region Model Training with Communication-Computation Overlapping and Delay Compensation." arXiv:2504.17672.
 
   ## Benchmark Results and Empirical Evaluation
 
   DiLoCo and its variants have been evaluated on a set of standard benchmarks that allow comparison with synchronous training baselines. Key empirical results as of 2026:
 
   **Original DiLoCo (arXiv:2311.08105) — Language Model Pre-training**
-  - Models evaluated: Transformer language models from 35M to 400M parameters trained on C4 (Colossal Clean Crawled Corpus).
-  - Baseline: synchronous AdamW data-parallel training with the same compute budget.
-  - Result at H = 500, K = 8: DiLoCo achieves final perplexity within 0.1-0.5% of the synchronous baseline while communicating 500x less frequently.
-  - Communication reduction: 500x versus synchronous all-reduce training (1 outer synchronisation per 500 inner steps vs 1 synchronisation per step).
-  - Ablation over H: H = 100 matches synchronous perplexity exactly; H = 500 degrades by <0.5%; H = 1000 degrades by 1-2%. Optimal H is in the 200-500 range.
-  - Ablation over outer optimiser: Nesterov SGD outer provides 1-3% perplexity improvement over vanilla SGD outer, and 2-4% over Adam outer.
+
+- Models evaluated: Transformer language models from 35M to 400M parameters trained on C4 (Colossal Clean Crawled Corpus).
+- Baseline: synchronous AdamW data-parallel training with the same compute budget.
+- Result at H = 500, K = 8: DiLoCo achieves final perplexity within 0.1-0.5% of the synchronous baseline while communicating 500x less frequently.
+- Communication reduction: 500x versus synchronous all-reduce training (1 outer synchronisation per 500 inner steps vs 1 synchronisation per step).
+- Ablation over H: H = 100 matches synchronous perplexity exactly; H = 500 degrades by <0.5%; H = 1000 degrades by 1-2%. Optimal H is in the 200-500 range.
+- Ablation over outer optimiser: Nesterov SGD outer provides 1-3% perplexity improvement over vanilla SGD outer, and 2-4% over Adam outer.
 
   **OpenDiLoCo (arXiv:2407.07852) — Scale-up to 1.1B Parameters**
-  - Model: 1.1B parameter transformer pre-trained on RedPajama-v1 dataset.
-  - Workers: Distributed across 2 continents and 3 countries over public internet.
-  - Compute utilisation: 90-95% (10-5% loss to communication overhead and occasional network disruptions).
-  - Scaling: Perplexity matches synchronous baseline within 1% at the 1.1B parameter scale, confirming that DiLoCo's convergence properties extend beyond the 400M scale of the original paper.
-  - Infrastructure: Hivemind DHT-based all-reduce over commodity internet links with latencies of 50-200ms.
+
+- Model: 1.1B parameter transformer pre-trained on RedPajama-v1 dataset.
+- Workers: Distributed across 2 continents and 3 countries over public internet.
+- Compute utilisation: 90-95% (10-5% loss to communication overhead and occasional network disruptions).
+- Scaling: Perplexity matches synchronous baseline within 1% at the 1.1B parameter scale, confirming that DiLoCo's convergence properties extend beyond the 400M scale of the original paper.
+- Infrastructure: Hivemind DHT-based all-reduce over commodity internet links with latencies of 50-200ms.
 
   **Streaming DiLoCo (arXiv:2501.18512) — Bandwidth Reduction**
-  - Bandwidth reduction: 100x versus naive synchronous data parallelism (H = 500 outer synchronisation reduction × 8x from 4-bit quantisation × additional reduction from parameter streaming).
-  - Perplexity vs bandwidth: For a 1B parameter model at 1 Gbps bandwidth budget, Streaming DiLoCo achieves synchronous-quality perplexity while synchronous training would be bandwidth-bottlenecked and impractical.
-  - Communication-computation overlap efficiency: 85-90% overlap (workers spend 85-90% of communication time also computing inner loop steps), reducing wall-clock overhead of outer synchronisation to near-zero.
-  - 4-bit quantisation quality: Quantisation noise is below the inter-worker pseudo-gradient variance for models above 400M parameters, with no statistically significant perplexity degradation versus FP32 pseudo-gradient communication.
+
+- Bandwidth reduction: 100x versus naive synchronous data parallelism (H = 500 outer synchronisation reduction × 8x from 4-bit quantisation × additional reduction from parameter streaming).
+- Perplexity vs bandwidth: For a 1B parameter model at 1 Gbps bandwidth budget, Streaming DiLoCo achieves synchronous-quality perplexity while synchronous training would be bandwidth-bottlenecked and impractical.
+- Communication-computation overlap efficiency: 85-90% overlap (workers spend 85-90% of communication time also computing inner loop steps), reducing wall-clock overhead of outer synchronisation to near-zero.
+- 4-bit quantisation quality: Quantisation noise is below the inter-worker pseudo-gradient variance for models above 400M parameters, with no statistically significant perplexity degradation versus FP32 pseudo-gradient communication.
 
   **Decoupled DiLoCo (arXiv:2604.21428) — Production Scale**
-  - Model: 12B parameter transformer pre-trained across four US cloud regions.
-  - Infrastructure: 2-5 Gbps inter-region bandwidth (standard AWS/GCP cross-region connectivity).
-  - Goodput: 88% under realistic hardware failure conditions (random node failures at industry-standard failure rates).
-  - Comparison: Equivalent synchronous multi-region training would have goodput near zero (single node failure stalls the entire job under synchronous barrier semantics).
-  - Quality: Final model quality matches single-region synchronous baseline within the evaluation margin on standard NLP benchmarks (MMLU, HellaSwag, WinoGrande).
+
+- Model: 12B parameter transformer pre-trained across four US cloud regions.
+- Infrastructure: 2-5 Gbps inter-region bandwidth (standard AWS/GCP cross-region connectivity).
+- Goodput: 88% under realistic hardware failure conditions (random node failures at industry-standard failure rates).
+- Comparison: Equivalent synchronous multi-region training would have goodput near zero (single node failure stalls the entire job under synchronous barrier semantics).
+- Quality: Final model quality matches single-region synchronous baseline within the evaluation margin on standard NLP benchmarks (MMLU, HellaSwag, WinoGrande).
 
   **MuLoCo (arXiv:2505.23725) — Muon Inner Optimiser**
-  - Models: 125M, 370M, 760M parameter transformers.
-  - Finding: Muon inner optimiser achieves 10-20% improvement in per-step perplexity reduction versus AdamW inner at identical compute budgets, suggesting that the original DiLoCo AdamW choice was suboptimal.
-  - Communication: Same outer synchronisation frequency as DiLoCo (H = 500); improvement is purely from inner optimiser quality.
+
+- Models: 125M, 370M, 760M parameter transformers.
+- Finding: Muon inner optimiser achieves 10-20% improvement in per-step perplexity reduction versus AdamW inner at identical compute budgets, suggesting that the original DiLoCo AdamW choice was suboptimal.
+- Communication: Same outer synchronisation frequency as DiLoCo (H = 500); improvement is purely from inner optimiser quality.
 
   **SNOO (arXiv:2510.15830) — Outer Optimiser Analysis**
-  - Key finding: Step-K Nesterov outer optimiser reduces inter-worker consensus error by 15-30% versus vanilla SGD outer in the non-IID setting.
-  - Generalisation: DiLoCo-trained models with Nesterov outer have 5-12% lower weight norm and 2-5% better held-out perplexity versus training set perplexity gap (generalisation metric) compared to synchronously-trained models, confirming the beneficial regularisation hypothesis.
+
+- Key finding: Step-K Nesterov outer optimiser reduces inter-worker consensus error by 15-30% versus vanilla SGD outer in the non-IID setting.
+- Generalisation: DiLoCo-trained models with Nesterov outer have 5-12% lower weight norm and 2-5% better held-out perplexity versus training set perplexity gap (generalisation metric) compared to synchronously-trained models, confirming the beneficial regularisation hypothesis.
 
   **HeLoCo (arXiv:2606.00271) — Heterogeneous Settings**
-  - Dataset: Training split across workers with varying data quality and distribution skew (simulating real-world institutional data heterogeneity).
-  - Hardware: Workers with 3x speed ratio (simulating different GPU generations — A100 vs V100 vs RTX 3090 mix).
-  - Finding: Standard DiLoCo degrades 8-15% in perplexity under strong heterogeneity; HeLoCo with staleness correction recovers to within 2% of the synchronous baseline.
+
+- Dataset: Training split across workers with varying data quality and distribution skew (simulating real-world institutional data heterogeneity).
+- Hardware: Workers with 3x speed ratio (simulating different GPU generations — A100 vs V100 vs RTX 3090 mix).
+- Finding: Standard DiLoCo degrades 8-15% in perplexity under strong heterogeneity; HeLoCo with staleness correction recovers to within 2% of the synchronous baseline.
 
   ## Key Terminology
 
@@ -502,16 +518,16 @@ DiLoCo (Distributed Low-Communication training) is a method for training large l
 
   The following open problems are identified in the DiLoCo literature as requiring resolution before DiLoCo-class training can be considered fully mature:
 
-  - Theoretical convergence bounds for the non-IID setting with AdamW inner optimiser (existing bounds cover only SGD inner)
-  - Optimal outer learning rate schedule for DiLoCo (cosine decay? constant? stage-wise?)
-  - Byzantine-robust pseudo-gradient aggregation rules for adversarial participants
-  - Scaling laws for optimal H as a function of model size N and worker count K
-  - Provenance attestation standards for distributed training run audit trails
-  - Secure aggregation extensions enabling privacy-preserving DiLoCo training
-  - Convergence analysis for fully asynchronous (no barrier) pseudo-gradient aggregation
-  - Integration of RLHF and DPO alignment phases into DiLoCo-class training protocols
-  - Formal governance frameworks for collectively-trained open model ownership
-  - Energy efficiency analysis comparing DiLoCo geographically distributed training to centralised training
+- Theoretical convergence bounds for the non-IID setting with AdamW inner optimiser (existing bounds cover only SGD inner)
+- Optimal outer learning rate schedule for DiLoCo (cosine decay? constant? stage-wise?)
+- Byzantine-robust pseudo-gradient aggregation rules for adversarial participants
+- Scaling laws for optimal H as a function of model size N and worker count K
+- Provenance attestation standards for distributed training run audit trails
+- Secure aggregation extensions enabling privacy-preserving DiLoCo training
+- Convergence analysis for fully asynchronous (no barrier) pseudo-gradient aggregation
+- Integration of RLHF and DPO alignment phases into DiLoCo-class training protocols
+- Formal governance frameworks for collectively-trained open model ownership
+- Energy efficiency analysis comparing DiLoCo geographically distributed training to centralised training
 
-- ### Provenance
+### Provenance
 

@@ -1,4 +1,3 @@
-
 A Stewart Platform (also known as a Gough-Stewart platform) is a type of parallel manipulator consisting of six variable-length prismatic actuators (struts) connecting a fixed base plate to a moveable top plate via universal or spherical joints, enabling six degrees of freedom—three translational and three rotational—within a compact, high-stiffness mechanical structure. First described by V.E. Gough in 1954 for tyre testing and later analysed by D. Stewart in 1965 for flight simulation, the architecture is characterised by high load-bearing capacity, positional accuracy, and mechanical rigidity compared to serial manipulators.
 
 ### Definition
@@ -19,5 +18,5 @@ Applications span flight and driving simulators (where the platform moves a cock
 
 The platform's primary limitations are its restricted workspace compared to serial robots of equivalent reach, complex control due to kinematic coupling between actuators, and internal singularities within the workspace where controllability is lost. Active research addresses singularity-robust trajectory planning, adaptive control for varying payloads, and hybrid serial-parallel architectures that combine the strengths of both paradigms.
 
-- ### Provenance
+### Provenance
 

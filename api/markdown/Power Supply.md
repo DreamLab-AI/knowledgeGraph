@@ -1,17 +1,17 @@
-
 A power supply unit (PSU) is an internal hardware component that converts alternating current (AC) from mains electricity into regulated low-voltage direct current (DC) required by computing equipment's internal components including motherboard, CPU, GPU, and storage devices. In data centre contexts, power supply systems include redundant PSUs, uninterruptible power supplies (UPS), and power distribution units (PDUs) organised in hierarchical redundancy tiers.
 
-- ### Semantic Classification
+### Semantic Classification
 
-- ### Content
+### Content
 
-  ## PSU Functions
+## PSU Functions
 
-  ### Primary Functions
-  - **AC to DC Conversion**: Converts mains AC (110V/220V) to DC voltages (3.3V, 5V, 12V)
-  - **Voltage Regulation**: Maintains stable, consistent power delivery
-  - **Power Distribution**: Routes appropriate voltages to system components
-  - **Protection**: Overvoltage, overcurrent, and short-circuit protection
+### Primary Functions
+
+- **AC to DC Conversion**: Converts mains AC (110V/220V) to DC voltages (3.3V, 5V, 12V)
+- **Voltage Regulation**: Maintains stable, consistent power delivery
+- **Power Distribution**: Routes appropriate voltages to system components
+- **Protection**: Overvoltage, overcurrent, and short-circuit protection
 
   ### DC Output Rails
   | Rail | Typical Use |
@@ -25,10 +25,11 @@ A power supply unit (PSU) is an internal hardware component that converts altern
   ## Server and Data Center Power
 
   ### Server PSU Characteristics
-  - Designed for 24/7 continuous operation
-  - Higher efficiency ratings (90%+ typical)
-  - Hot-swappable capability
-  - Redundant configurations
+
+- Designed for 24/7 continuous operation
+- Higher efficiency ratings (90%+ typical)
+- Hot-swappable capability
+- Redundant configurations
 
   ### Redundancy Models
   | Configuration | Description |
@@ -46,26 +47,26 @@ A power supply unit (PSU) is an internal hardware component that converts altern
 
   ## PSU vs PDU
 
-  | Aspect | PSU | PDU |
-  |--------|-----|-----|
-  | Location | Inside computing device | In data center rack |
-  | Function | AC-DC conversion | Power distribution |
-  | Scope | Single device | Multiple devices |
-  | Features | Voltage regulation | Monitoring, switching, load balancing |
+| Aspect | PSU | PDU |
+|--------|-----|-----|
+| Location | Inside computing device | In data center rack |
+| Function | AC-DC conversion | Power distribution |
+| Scope | Single device | Multiple devices |
+| Features | Voltage regulation | Monitoring, switching, load balancing |
 
-  ## Efficiency Standards
+## Efficiency Standards
 
-  ### 80 PLUS Certification Levels
-  | Certification | Efficiency at 50% Load |
-  |---------------|------------------------|
-  | 80 PLUS | 80% |
-  | Bronze | 85% |
-  | Silver | 88% |
-  | Gold | 90% |
-  | Platinum | 92% |
-  | Titanium | 94% |
+### 80 PLUS Certification Levels
+| Certification | Efficiency at 50% Load |
+|---------------|------------------------|
+| 80 PLUS | 80% |
+| Bronze | 85% |
+| Silver | 88% |
+| Gold | 90% |
+| Platinum | 92% |
+| Titanium | 94% |
 
-  Efficiency differences of 2% can significantly impact energy costs in large-scale data centers.
+Efficiency differences of 2% can significantly impact energy costs in large-scale data centers.
 
-- ### Provenance
+### Provenance
 

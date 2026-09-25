@@ -1,40 +1,40 @@
-
 Smart Contract Coordination is the use of blockchain smart contracts—self-executing programs stored on distributed ledgers—to automate coordination, task allocation, payment distribution, and milestone verification in distributed teams, enabling trustless collaboration through cryptographically enforced agreements that execute deterministically without centralised intermediaries. This approach removes the need for escrow agents and manual approvals by encoding collaboration rules as immutable on-chain logic triggered by verifiable real-world events. It is foundational to decentralised autonomous organisations and cryptocurrency-based remuneration workflows.
 
-- ### Semantic Classification
+### Semantic Classification
 
-- ### Content
+### Content
 
-  ## Definition
+## Definition
 
-  **Smart Contract Coordination** applies blockchain technology to [[TELE-002-telecollaboration]], encoding collaboration rules as immutable smart contracts that automatically enforce agreements. For example, a freelance developer completes a GitHub pull request; a smart contract verifies the merge, then releases payment in cryptocurrency [[TELE-253-cryptocurrency-remuneration]] without requiring escrow agents or manual approvals.
+**Smart Contract Coordination** applies blockchain technology to [[TELE-002-telecollaboration]], encoding collaboration rules as immutable smart contracts that automatically enforce agreements. For example, a freelance developer completes a GitHub pull request; a smart contract verifies the merge, then releases payment in cryptocurrency [[TELE-253-cryptocurrency-remuneration]] without requiring escrow agents or manual approvals.
 
-  ## Use Cases
+## Use Cases
 
-  - **Milestone-Based Payments**: Funds released when deliverables verified on-chain
-  - **Multi-Signature Approvals**: Requires M-of-N team signatures to execute decisions
-  - **Royalty Distribution**: NFT sales automatically split revenue among contributors
-  - **DAO Task Allocation**: Decentralised autonomous organisations [[TELE-252-dao-governance-telecollaboration]] assign tasks via smart contracts
+- **Milestone-Based Payments**: Funds released when deliverables verified on-chain
+- **Multi-Signature Approvals**: Requires M-of-N team signatures to execute decisions
+- **Royalty Distribution**: NFT sales automatically split revenue among contributors
+- **DAO Task Allocation**: Decentralised autonomous organisations [[TELE-252-dao-governance-telecollaboration]] assign tasks via smart contracts
 
   ## Advantages
 
-  - **Trustless**: No reliance on third-party intermediaries
-  - **Transparent**: All transactions auditable on blockchain
-  - **Automated**: Execution deterministic, instant upon conditions met
-  - **Global**: Cryptocurrency payments bypass banking system
+- **Trustless**: No reliance on third-party intermediaries
+- **Transparent**: All transactions auditable on blockchain
+- **Automated**: Execution deterministic, instant upon conditions met
+- **Global**: Cryptocurrency payments bypass banking system
 
   ## Challenges
 
-  - **Code Bugs**: Smart contract vulnerabilities enable exploits (£3.1B stolen in 2024)
-  - **Gas Fees**: Transaction costs £0.50-£50 depending on network congestion
-  - **Irreversibility**: Erroneous payments difficult to reverse
-  - **Legal Uncertainty**: Smart contract enforceability unclear in UK law
+- **Code Bugs**: Smart contract vulnerabilities enable exploits (£3.1B stolen in 2024)
+- **Gas Fees**: Transaction costs £0.50-£50 depending on network congestion
+- **Irreversibility**: Erroneous payments difficult to reverse
+- **Legal Uncertainty**: Smart contract enforceability unclear in UK law
 
   #### Related Concepts
-  - [[TELE-002-telecollaboration]]
-  - [[TELE-250-blockchain-collaboration]]
-  - [[TELE-252-dao-governance-telecollaboration]]
-  - [[SmartContracts]]
 
-- ### Provenance
+- [[TELE-002-telecollaboration]]
+- [[TELE-250-blockchain-collaboration]]
+- [[TELE-252-dao-governance-telecollaboration]]
+- [[SmartContracts]]
+
+### Provenance
 

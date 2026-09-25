@@ -1,10 +1,10 @@
-
 Digital Taxonomy Registry is a type of Metadata Repository in the spatial computing domain.
 
-- ### Semantic Classification
+### Semantic Classification
 
-- ### Content
-  Digital Taxonomy Registry — content pending enrichment.
+### Content
 
-- ### Provenance
+Digital Taxonomy Registry — content pending enrichment.
+
+### Provenance
 

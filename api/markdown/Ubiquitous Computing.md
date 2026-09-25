@@ -1,3 +1,2 @@
-
 Ubiquitous Computing is a paradigm in which computational capability is embedded pervasively throughout the physical environment, making computers effectively invisible by integrating them into everyday objects and spaces. Coined by Mark Weiser, the concept encompasses smart devices, ambient intelligence, and the Internet of Things, aiming for seamless and context-aware interaction between people and technology. It contrasts with desktop computing by distributing computation across many heterogeneous, networked devices that operate without demanding explicit user attention.
 

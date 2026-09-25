@@ -1,18 +1,23 @@
-
 A Polynomial Commitment is a cryptographic scheme that lets a prover commit to a polynomial with a short, binding value and later open the commitment at chosen evaluation points without revealing the whole polynomial. Verification of an opening is succinct and the commitment hides the polynomial until opened. Polynomial commitments are a core building block of modern succinct proof systems such as zk-SNARKs and zk-STARKs.
 
-- ### Overview
-  - A polynomial commitment binds a prover to a polynomial via a compact commitment, then allows them to prove the value of the polynomial at any point with a short proof the verifier checks efficiently. Schemes such as KZG rely on elliptic-curve pairings and a structured reference string, while FRI-based schemes built on Reed-Solomon codes avoid a trusted setup. These primitives let proof systems compress statements about computation into constant or logarithmic-size proofs.
-- ### Mechanisms
-  - **Commit phase** — produce a short binding, hiding commitment to a polynomial.
-  - **Evaluation opening** — prove the polynomial's value at a queried point.
-  - **Succinct verification** — check openings far faster than recomputing the polynomial.
-  - **Binding and hiding** — the prover cannot equivocate and the polynomial stays hidden.
-  - **Setup variants** — pairing-based with trusted setup versus hash-based transparent schemes.
-- ### Applications
-  - Underpinning zk-SNARK and zk-STARK proof systems.
-  - Data availability sampling in scalable blockchains.
-  - Verifiable computation and succinct argument protocols.
-  - Vector commitments and accumulators derived from polynomials.
-- ### Provenance
+### Overview
+
+- A polynomial commitment binds a prover to a polynomial via a compact commitment, then allows them to prove the value of the polynomial at any point with a short proof the verifier checks efficiently. Schemes such as KZG rely on elliptic-curve pairings and a structured reference string, while FRI-based schemes built on Reed-Solomon codes avoid a trusted setup. These primitives let proof systems compress statements about computation into constant or logarithmic-size proofs.
+
+### Mechanisms
+
+- **Commit phase** — produce a short binding, hiding commitment to a polynomial.
+- **Evaluation opening** — prove the polynomial's value at a queried point.
+- **Succinct verification** — check openings far faster than recomputing the polynomial.
+- **Binding and hiding** — the prover cannot equivocate and the polynomial stays hidden.
+- **Setup variants** — pairing-based with trusted setup versus hash-based transparent schemes.
+
+### Applications
+
+- Underpinning zk-SNARK and zk-STARK proof systems.
+- Data availability sampling in scalable blockchains.
+- Verifiable computation and succinct argument protocols.
+- Vector commitments and accumulators derived from polynomials.
+
+### Provenance
 

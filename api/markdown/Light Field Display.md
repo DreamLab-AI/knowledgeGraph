@@ -1,3 +1,2 @@
-
 A Light Field Display is an output device that reproduces the full four-dimensional light field of a scene, emitting rays of light in directions that recreate the optical properties of real objects without requiring the viewer to wear special glasses. Unlike conventional stereoscopic displays, light field displays support motion parallax, correct focus cues, and multiple simultaneous viewer perspectives. They are a key enabling technology for glasses-free holographic telepresence and high-fidelity volumetric visualisation in collaborative settings.
 

@@ -1,95 +1,107 @@
-
 A cryptographic method using a single shared secret key for both encryption and decryption, requiring secure key exchange between parties before communication. Provides high-throughput confidentiality for data at rest and in transit, making it the standard approach for bulk data encryption across security, infrastructure, and distributed-systems domains.
 
-- ### Semantic Classification
+### Semantic Classification
 
-- ### Content
+### Content
 
-  ## Definition
-  - Cryptographic method using single shared key for both encryption and decryption
-  - Requires secure key exchange between parties before communication
-  - Provides confidentiality for data at rest and in transit in blockchain systems
+## Definition
+
+- Cryptographic method using single shared key for both encryption and decryption
+- Requires secure key exchange between parties before communication
+- Provides confidentiality for data at rest and in transit in blockchain systems
 
   ## Core Components
-  - **Encryption Key**: Shared secret used for both operations
-  - **Cipher Algorithm**: Mathematical transformation function
-  - **Initialization Vector (IV)**: Random nonce preventing pattern detection
-  - **Authentication Tag**: Ensures data integrity and authenticity
+
+- **Encryption Key**: Shared secret used for both operations
+- **Cipher Algorithm**: Mathematical transformation function
+- **Initialization Vector (IV)**: Random nonce preventing pattern detection
+- **Authentication Tag**: Ensures data integrity and authenticity
 
   ## Technical Characteristics
-  - **Computational Efficiency**: Faster than asymmetric encryption
-  - **Key Size**: Typically 128, 192, or 256 bits
-  - **Block vs Stream**: Operates on fixed blocks or continuous streams
-  - **Mode of Operation**: ECB, CBC, CTR, GCM determining security properties
+
+- **Computational Efficiency**: Faster than asymmetric encryption
+- **Key Size**: Typically 128, 192, or 256 bits
+- **Block vs Stream**: Operates on fixed blocks or continuous streams
+- **Mode of Operation**: ECB, CBC, CTR, GCM determining security properties
 
   ## Common Algorithms
-  - **AES (Advanced Encryption Standard)**: Industry standard, 128/192/256-bit keys
-  - **ChaCha20**: Stream cipher with high performance
-  - **3DES**: Legacy algorithm being phased out
-  - **Salsa20**: Stream cipher family
+
+- **AES (Advanced Encryption Standard)**: Industry standard, 128/192/256-bit keys
+- **ChaCha20**: Stream cipher with high performance
+- **3DES**: Legacy algorithm being phased out
+- **Salsa20**: Stream cipher family
 
   ## Blockchain Applications
-  - Private transaction data encryption
-  - Encrypted memo fields
-  - Off-chain data storage encryption
-  - Secure communication between nodes
-  - Encrypted smart contract states
+
+- Private transaction data encryption
+- Encrypted memo fields
+- Off-chain data storage encryption
+- Secure communication between nodes
+- Encrypted smart contract states
 
   ## Authenticated Encryption
-  - **AES-GCM**: Galois/Counter Mode with authentication
-  - **ChaCha20-Poly1305**: Stream cipher with authentication tag
-  - **AES-CCM**: Counter with CBC-MAC
-  - Provides both confidentiality and integrity
+
+- **AES-GCM**: Galois/Counter Mode with authentication
+- **ChaCha20-Poly1305**: Stream cipher with authentication tag
+- **AES-CCM**: Counter with CBC-MAC
+- Provides both confidentiality and integrity
 
   ## Relationships
 
   ## Security Considerations
-  - Key distribution problem in decentralized systems
-  - Key storage and management
-  - Side-channel attack resistance
-  - Proper IV/nonce generation critical
-  - Quantum computing resistance (AES-256)
+
+- Key distribution problem in decentralized systems
+- Key storage and management
+- Side-channel attack resistance
+- Proper IV/nonce generation critical
+- Quantum computing resistance (AES-256)
 
   ## Performance Characteristics
-  - High throughput (GB/s on modern hardware)
-  - Low latency for real-time encryption
-  - Hardware acceleration (AES-NI instruction set)
-  - Minimal computational overhead
+
+- High throughput (GB/s on modern hardware)
+- Low latency for real-time encryption
+- Hardware acceleration (AES-NI instruction set)
+- Minimal computational overhead
 
   ## Use Cases in Blockchain
-  - Encrypting private keys at rest
-  - Secure backup of wallet data
-  - Privacy-preserving transaction fields
-  - Encrypted communication protocols
-  - Confidential smart contract execution
+
+- Encrypting private keys at rest
+- Secure backup of wallet data
+- Privacy-preserving transaction fields
+- Encrypted communication protocols
+- Confidential smart contract execution
 
   ## Key Management
-  - Secure key derivation from master secret
-  - Key rotation strategies
-  - Hardware security module (HSM) storage
-  - Multi-party computation for shared keys
+
+- Secure key derivation from master secret
+- Key rotation strategies
+- Hardware security module (HSM) storage
+- Multi-party computation for shared keys
 
   ## Advantages
-  - High performance and efficiency
-  - Mature and well-studied algorithms
-  - Hardware acceleration support
-  - Suitable for large data encryption
+
+- High performance and efficiency
+- Mature and well-studied algorithms
+- Hardware acceleration support
+- Suitable for large data encryption
 
   ## Limitations
-  - Key distribution challenge in trustless systems
-  - Shared key compromise affects all parties
-  - Requires secure channel for key exchange
-  - Not suitable for digital signatures
+
+- Key distribution challenge in trustless systems
+- Shared key compromise affects all parties
+- Requires secure channel for key exchange
+- Not suitable for digital signatures
 
   #### Related Concepts
-  - [[Asymmetric Encryption]]
-  - [[Hash Function]]
-  - [[Key Derivation Function]]
-  - [[Digital Signature]]
+
+- [[Asymmetric Encryption]]
+- [[Hash Function]]
+- [[Key Derivation Function]]
+- [[Digital Signature]]
 
   #cryptography #encryption #symmetric #blockchain-security
 
   ### Relationships
 
-- ### Provenance
+### Provenance
 

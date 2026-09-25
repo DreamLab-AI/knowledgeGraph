@@ -1,27 +1,35 @@
-
 Unit testing is a software testing practice in which individual units of source code — typically functions, methods, or classes — are exercised in isolation to verify that each behaves as specified. Tests are written as small, deterministic, automated checks that assert expected outputs for given inputs and run quickly as part of the development loop. The practice underpins refactoring confidence, regression protection, and continuous integration pipelines.
 
 - Unit testing exercises individual units of code in isolation to confirm correctness. It is a core discipline of [[Software Testing]] and [[Quality Assurance]], providing fast feedback that supports [[Software Engineering]] and safe [[Test-Driven Development]].
 - A unit test pairs a known input with an asserted expected output, running deterministically without external dependencies such as networks or databases.
-- ### Overview
+
+### Overview
+
 - The unit is the smallest testable part of an application — usually a function, method, or class. By isolating each unit, failures localise precisely, shortening the debugging cycle.
 - Tests are written in the same language and toolchain as the code under test, executed by a test runner that reports pass and fail counts.
 - Isolation is achieved by replacing collaborators with controlled doubles, so the test verifies only the behaviour of the unit itself.
-- ### Key aspects
+
+### Key aspects
+
 - Isolation: a unit is tested independently of its collaborators and external systems.
 - Determinism: given the same input, a test produces the same result on every run.
 - Speed: suites run in seconds, enabling tight inner-loop feedback.
 - Repeatability: tests can run on any machine and any environment without manual setup.
 - Self-checking: each test asserts its own outcome rather than requiring human inspection.
-- ### Mechanisms
+
+### Mechanisms
+
 - Arrange-act-assert structure: prepare state, invoke the unit, assert the result.
 - Test doubles (stubs, fakes, spies) substitute for real collaborators to keep the unit isolated.
 - Coverage measurement reports which lines and branches the suite exercises.
 - Parameterised tests run the same logic across many input cases.
-- ### Applications
+
+### Applications
+
 - Refactoring safety net: code can be restructured with confidence that behaviour is preserved.
 - Regression protection: re-running the suite catches reintroduced defects, feeding into [[Regression Testing]].
 - Pipeline gating: suites run automatically in [[Continuous Integration]] and [[Continuous Delivery]] to block broken changes.
 - Living documentation: tests express intended behaviour as executable examples.
-- ### Provenance
+
+### Provenance
 

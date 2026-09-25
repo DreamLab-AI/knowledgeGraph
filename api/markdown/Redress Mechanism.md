@@ -1,21 +1,28 @@
-
 A redress mechanism is a structured process that lets individuals affected by an automated or algorithmic decision contest it, seek an explanation, and obtain correction or remedy when harm or error has occurred. It operationalises accountability in AI governance by combining channels for complaint, human review of contested outcomes, and remediation such as reversal, compensation, or model adjustment. Effective redress requires transparency about how decisions are made, due process for the affected person, and feedback loops that surface systemic problems for harm mitigation.
 
-- ### Overview
-  - Redress Mechanism sits within the broader category of [[Accountability]], which it specialises.
-  - It connects to a network of 11 related classes across the knowledge graph, anchoring edges that previously pointed to an undefined node.
-- ### Key aspects
-  - hasPart: [[Human Oversight]]
-  - hasPart: [[Transparency]]
-  - requires: [[Explainability]]
-  - requires: [[Fairness]]
-- ### Mechanisms
-  - Redress Mechanism operates through its constituent parts and dependencies, integrating with adjacent systems to deliver its function within artificial intelligence.
-  - Depends on [[Transparency]] for correct operation.
-- ### Applications
-  - Applied to advance [[Accountability]].
-  - Applied to advance [[Algorithmic Accountability]].
-  - Applied to advance [[Responsible AI]].
-  - Applied to advance [[Regulatory Compliance]].
-- ### Provenance
+### Overview
+
+- Redress Mechanism sits within the broader category of [[Accountability]], which it specialises.
+- It connects to a network of 11 related classes across the knowledge graph, anchoring edges that previously pointed to an undefined node.
+
+### Key aspects
+
+- hasPart: [[Human Oversight]]
+- hasPart: [[Transparency]]
+- requires: [[Explainability]]
+- requires: [[Fairness]]
+
+### Mechanisms
+
+- Redress Mechanism operates through its constituent parts and dependencies, integrating with adjacent systems to deliver its function within artificial intelligence.
+- Depends on [[Transparency]] for correct operation.
+
+### Applications
+
+- Applied to advance [[Accountability]].
+- Applied to advance [[Algorithmic Accountability]].
+- Applied to advance [[Responsible AI]].
+- Applied to advance [[Regulatory Compliance]].
+
+### Provenance
 

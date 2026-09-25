@@ -1,16 +1,14 @@
-
 Chainlink Oracles are decentralised oracle networks operated by the Chainlink protocol that securely fetch, validate, and deliver off-chain data to on-chain smart contracts. They aggregate inputs from multiple independent node operators using cryptographic proofs and reputation systems to ensure tamper-resistant data feeds. Widely deployed for price feeds, verifiable randomness, and cross-chain communication, they form critical infrastructure for decentralised finance and Web3 applications.
 
-- ### Content
-  - Chainlink was conceived in 2017 by Sergey Nazarov and Steve Ellis to solve the "oracle problem" — the inability of deterministic blockchains to trustlessly consume external data. The whitepaper proposed decentralised node networks with reputation-based incentives. By 2019, Chainlink mainnet launched on Ethereum, and its price-feed infrastructure rapidly became the de facto standard across DeFi protocols including Aave, Compound, and Synthetix.
+### Content
 
-  - Each Chainlink oracle node stakes LINK tokens as collateral and is assigned reputation scores based on response accuracy, uptime, and latency. Aggregation contracts collect responses from a configurable number of nodes (typically 7–31), reject outliers, and compute a volume-weighted median. Off-chain reporting (OCR) introduced in 2021 batches node signatures off-chain and submits a single aggregated transaction, reducing gas costs by up to 90 % while preserving [[Cryptographic Proof]] guarantees.
+- Chainlink was conceived in 2017 by Sergey Nazarov and Steve Ellis to solve the "oracle problem" — the inability of deterministic blockchains to trustlessly consume external data. The whitepaper proposed decentralised node networks with reputation-based incentives. By 2019, Chainlink mainnet launched on Ethereum, and its price-feed infrastructure rapidly became the de facto standard across DeFi protocols including Aave, Compound, and Synthetix.
+- Each Chainlink oracle node stakes LINK tokens as collateral and is assigned reputation scores based on response accuracy, uptime, and latency. Aggregation contracts collect responses from a configurable number of nodes (typically 7–31), reject outliers, and compute a volume-weighted median. Off-chain reporting (OCR) introduced in 2021 batches node signatures off-chain and submits a single aggregated transaction, reducing gas costs by up to 90 % while preserving [[Cryptographic Proof]] guarantees.
+- The Chainlink ecosystem spans Data Feeds (price, reserve, NFT floor), Automation (formerly Keepers), VRF, Functions (arbitrary off-chain computation), and CCIP (cross-chain token and message passing). Over 1,700 oracle networks serve more than 2,200 projects across 15+ blockchains including Ethereum, Polygon, Avalanche, and BNB Chain. Enterprise integrations include SWIFT and DTCC for traditional finance settlement proofs.
+- By 2024–2025, Chainlink's Cross-Chain Interoperability Protocol (CCIP) has emerged as a major focus, targeting institutional cross-chain asset transfers and messaging. The Chainlink Economics 2.0 model introduced staking with slashing penalties and fee capture for data consumers. As [[Decentralized Finance (DeFi)]] matures and regulatory clarity improves, Chainlink Oracles are increasingly positioned as regulated financial data infrastructure connecting traditional markets to blockchain settlement layers.
 
-  - The Chainlink ecosystem spans Data Feeds (price, reserve, NFT floor), Automation (formerly Keepers), VRF, Functions (arbitrary off-chain computation), and CCIP (cross-chain token and message passing). Over 1,700 oracle networks serve more than 2,200 projects across 15+ blockchains including Ethereum, Polygon, Avalanche, and BNB Chain. Enterprise integrations include SWIFT and DTCC for traditional finance settlement proofs.
+### References
 
-  - By 2024–2025, Chainlink's Cross-Chain Interoperability Protocol (CCIP) has emerged as a major focus, targeting institutional cross-chain asset transfers and messaging. The Chainlink Economics 2.0 model introduced staking with slashing penalties and fee capture for data consumers. As [[Decentralized Finance (DeFi)]] matures and regulatory clarity improves, Chainlink Oracles are increasingly positioned as regulated financial data infrastructure connecting traditional markets to blockchain settlement layers.
-
-- ### References
-  - Chainlink Whitepaper: https://research.chain.link/whitepaper-v1.pdf
-  - Chainlink Off-Chain Reporting: https://research.chain.link/ocr.pdf
+- Chainlink Whitepaper: https://research.chain.link/whitepaper-v1.pdf
+- Chainlink Off-Chain Reporting: https://research.chain.link/ocr.pdf
 

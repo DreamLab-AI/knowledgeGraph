@@ -1,10 +1,10 @@
-
 A meta-documentation node cataloguing the technical structure, bidirectional link patterns, missing parent audits, and inheritance statistics of the NarrativeGoldmine ontology graph. It serves as a diagnostic reference for ontology engineers, documenting cross-domain isolation rules, broken reference inventories, and recommended file structures for parent concept pages.
 
-- ### Semantic Classification
+### Semantic Classification
 
-- ### Content
-  - This page catalogues the technical structure, bidirectional link patterns, missing parent audits, and inheritance statistics of the NarrativeGoldmine ontology graph. It serves as a diagnostic reference for ontology engineers.
+### Content
+
+- This page catalogues the technical structure, bidirectional link patterns, missing parent audits, and inheritance statistics of the NarrativeGoldmine ontology graph. It serves as a diagnostic reference for ontology engineers.
 
   ## PART 1: BIDIRECTIONAL PAIR EXAMPLES
 
@@ -29,14 +29,15 @@ A meta-documentation node cataloguing the technical structure, bidirectional lin
   95 BC pages (e.g., BC-0047, BC-0054, BC-0018, etc.) use `is-subclass-of:: [[Blockchain Entity]]` but the page `Blockchain Entity.md` does not exist. **Logseq Impact:** cannot click [[Blockchain Entity]] in BC pages; no backlinks visible in graph; ontology visualisation breaks; knowledge graph traversal fails.
 
   **Missing parent tree (Blockchain Entity):**
-  - BC-0047-preimage-resistance, BC-0054-miner, BC-0018-transaction-pool, BC-0019-mempool, BC-0013-block-size, BC-0014-block-time, BC-0015-chain-reorganization, … (88 more pages — total: 95 children)
+
+- BC-0047-preimage-resistance, BC-0054-miner, BC-0018-transaction-pool, BC-0019-mempool, BC-0013-block-size, BC-0014-block-time, BC-0015-chain-reorganization, … (88 more pages — total: 95 children)
 
   ### Other Missing Parents
 
-  - `BC-0001-blockchain.md` uses `is-subclass-of:: [[Distributed Data Structure]]` — page `Distributed Data Structure.md` missing
-  - `BC-0051-consensus-mechanism.md` uses `is-subclass-of:: [[Distributed Protocol]]` — page `Distributed Protocol.md` missing
-  - `BC-0001-blockchain.md` uses `is-subclass-of:: [[Cryptographic System]]` — page `Cryptographic System.md` missing
-  - `BC-0026-cryptography.md` uses `is-subclass-of:: [[Mathematical Science]]` — page `Mathematical Science.md` missing
+- `BC-0001-blockchain.md` uses `is-subclass-of:: [[Distributed Data Structure]]` — page `Distributed Data Structure.md` missing
+- `BC-0051-consensus-mechanism.md` uses `is-subclass-of:: [[Distributed Protocol]]` — page `Distributed Protocol.md` missing
+- `BC-0001-blockchain.md` uses `is-subclass-of:: [[Cryptographic System]]` — page `Cryptographic System.md` missing
+- `BC-0026-cryptography.md` uses `is-subclass-of:: [[Mathematical Science]]` — page `Mathematical Science.md` missing
 
   ## PART 3: GOOD INHERITANCE EXAMPLES (One-Way)
 
@@ -48,37 +49,37 @@ A meta-documentation node cataloguing the technical structure, bidirectional lin
 
   ### Blockchain Domain (BC-####)
 
-  - Total BC files: 200
-  - Files with `is-subclass-of`: 100 — of which: pointing to BC-#### ontology: 0; pointing to KB pages: 1; pointing to MISSING pages: 99
-  - Missing parent files: "Blockchain Entity" (95 children), "Data Structure" (1 child), "Distributed Data Structure" (1 child), "Distributed Protocol" (1 child), "Distributed System" (many children), "Cryptographic System" (many), "Mathematical Science" (1 child)
+- Total BC files: 200
+- Files with `is-subclass-of`: 100 — of which: pointing to BC-#### ontology: 0; pointing to KB pages: 1; pointing to MISSING pages: 99
+- Missing parent files: "Blockchain Entity" (95 children), "Data Structure" (1 child), "Distributed Data Structure" (1 child), "Distributed Protocol" (1 child), "Distributed System" (many children), "Cryptographic System" (many), "Mathematical Science" (1 child)
 
   ### AI Domain (AI-####)
 
-  - Total AI files: 63; files with `is-subclass-of`: 1 — pointing to KB pages: 1; pointing to MISSING pages: 0
-  - Status: Better than BC domain — only 1 file with broken inheritance
+- Total AI files: 63; files with `is-subclass-of`: 1 — pointing to KB pages: 1; pointing to MISSING pages: 0
+- Status: Better than BC domain — only 1 file with broken inheritance
 
   ## PART 5: COMPLETE MISSING PARENT AUDIT
 
   Pages that need to be created:
 
-  - `Blockchain Entity.md` — parent of BC-0001, BC-0003, BC-0006, BC-0009–BC-0015, … (95 total children). Create with structure similar to BC-0002-distributed-ledger.md
-  - `Distributed Data Structure.md` — children: BC-0001-blockchain
-  - `Distributed Protocol.md` — children: BC-0051-consensus-mechanism
-  - `Cryptographic System.md` — children: BC-0001-blockchain
-  - `Mathematical Science.md` — children: BC-0026-cryptography
-  - `Data Structure.md` — children: BC-0002-distributed-ledger
-  - `Record-Keeping System.md` — children: BC-0002-distributed-ledger
-  - `Distributed System.md` — children: BC-0002-distributed-ledger and others
+- `Blockchain Entity.md` — parent of BC-0001, BC-0003, BC-0006, BC-0009–BC-0015, … (95 total children). Create with structure similar to BC-0002-distributed-ledger.md
+- `Distributed Data Structure.md` — children: BC-0001-blockchain
+- `Distributed Protocol.md` — children: BC-0051-consensus-mechanism
+- `Cryptographic System.md` — children: BC-0001-blockchain
+- `Mathematical Science.md` — children: BC-0026-cryptography
+- `Data Structure.md` — children: BC-0002-distributed-ledger
+- `Record-Keeping System.md` — children: BC-0002-distributed-ledger
+- `Distributed System.md` — children: BC-0002-distributed-ledger and others
 
   ## PART 6: DOMAIN ISOLATION VERIFICATION
 
-  - All BC-#### files checked for inheritance from AI-#### files: NONE — perfect domain isolation achieved
-  - All AI-#### files checked for inheritance from BC-#### files: NONE
-  - All wiki-style references [[...]] checked between domains: NONE — no bidirectional pairs span domains
+- All BC-#### files checked for inheritance from AI-#### files: NONE — perfect domain isolation achieved
+- All AI-#### files checked for inheritance from BC-#### files: NONE
+- All wiki-style references [[...]] checked between domains: NONE — no bidirectional pairs span domains
 
   ## PART 7: RECOMMENDED FILE STRUCTURE FOR MISSING PARENTS
 
   When creating missing parent pages (e.g., `Blockchain Entity.md`), include: Definition section, Related Concepts linking to [[Block]], [[Transaction]], [[Node]], [[Consensus Mechanism]], See Also linking to [[Distributed Ledger]], [[Cryptographic System]], [[Peer-to-Peer Network]], and a Children list enumerating BC-0001-blockchain, BC-0003-block, BC-0006-transaction, etc.
 
-- ### Provenance
+### Provenance
 

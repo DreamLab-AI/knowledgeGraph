@@ -1,95 +1,95 @@
-
 Enterprise automation is the application of software and AI to execute repeatable business processes with minimal human intervention across an organisation. It combines techniques such as robotic process automation, workflow orchestration, business rules engines, and increasingly AI agents that handle unstructured tasks. The goal is to reduce cost, error rates, and cycle time while freeing human workers for higher-value activity.
 
-- ### Semantic Classification
+### Semantic Classification
 
-- ### Content
-  ## Compositional Relationships (Components)
-      SubClassOf(ai:EnterpriseAutomation
-        ObjectSomeValuesFrom(ai:hasPart ai:RoboticProcessAutomation))
-      SubClassOf(ai:EnterpriseAutomation
-        ObjectSomeValuesFrom(ai:hasPart ai:WorkflowAutomation))
-      SubClassOf(ai:EnterpriseAutomation
-        ObjectSomeValuesFrom(ai:hasPart ai:BusinessRulesEngine))
-      SubClassOf(ai:EnterpriseAutomation
-        ObjectSomeValuesFrom(ai:hasPart ai:ProcessMining))
-      SubClassOf(ai:EnterpriseAutomation
-        ObjectSomeValuesFrom(ai:hasPart ai:BotOrchestration))
-      SubClassOf(ai:EnterpriseAutomation
-        ObjectSomeValuesFrom(ai:hasPart ai:AIAgents))
-      SubClassOf(ai:EnterpriseAutomation
-        ObjectSomeValuesFrom(ai:hasPart ai:AuditTrail))
-      SubClassOf(ai:EnterpriseAutomation
-        ObjectSomeValuesFrom(ai:hasPart ai:LowCodeDevelopment))
-  ## Dependency Relationships
-      SubClassOf(ai:EnterpriseAutomation
-        ObjectSomeValuesFrom(ai:requires ai:BusinessProcessManagement))
-      SubClassOf(ai:EnterpriseAutomation
-        ObjectSomeValuesFrom(ai:requires ai:WorkflowOrchestration))
-      SubClassOf(ai:EnterpriseAutomation
-        ObjectSomeValuesFrom(ai:requires ai:IdentityAndAccessManagement))
-      SubClassOf(ai:EnterpriseAutomation
-        ObjectSomeValuesFrom(ai:dependsOn ai:EnterpriseResourcePlanning))
-      SubClassOf(ai:EnterpriseAutomation
-        ObjectSomeValuesFrom(ai:dependsOn ai:APIIntegration))
-      SubClassOf(ai:EnterpriseAutomation
-        ObjectSomeValuesFrom(ai:dependsOn ai:EventDrivenArchitecture))
-      SubClassOf(ai:EnterpriseAutomation
-        ObjectSomeValuesFrom(ai:dependsOn ai:DocumentProcessing))
-  ## Capability Relationships
-      SubClassOf(ai:EnterpriseAutomation
-        ObjectSomeValuesFrom(ai:enables ai:Hyperautomation))
-      SubClassOf(ai:EnterpriseAutomation
-        ObjectSomeValuesFrom(ai:enables ai:DigitalTransformation))
-      SubClassOf(ai:EnterpriseAutomation
-        ObjectSomeValuesFrom(ai:enables ai:OperationalEfficiency))
-      SubClassOf(ai:EnterpriseAutomation
-        ObjectSomeValuesFrom(ai:enables ai:StraightThroughProcessing))
-      SubClassOf(ai:EnterpriseAutomation
-        ObjectSomeValuesFrom(ai:enables ai:ComplianceManagement))
-      SubClassOf(ai:EnterpriseAutomation
-        ObjectSomeValuesFrom(ai:enables ai:CostReduction))
-  ## Implementation Relationships
-      SubClassOf(ai:EnterpriseAutomation
-        ObjectSomeValuesFrom(ai:implements ai:BusinessProcessAutomation))
-      SubClassOf(ai:EnterpriseAutomation
-        ObjectSomeValuesFrom(ai:implements ai:IntelligentProcessAutomation))
-      SubClassOf(ai:EnterpriseAutomation
-        ObjectSomeValuesFrom(ai:uses ai:LargeLanguageModels))
-      SubClassOf(ai:EnterpriseAutomation
-        ObjectSomeValuesFrom(ai:uses ai:NaturalLanguageProcessing))
-      SubClassOf(ai:EnterpriseAutomation
-        ObjectSomeValuesFrom(ai:uses ai:MachineLearning))
-      SubClassOf(ai:EnterpriseAutomation
-        ObjectSomeValuesFrom(ai:uses ai:ComputerVision))
-      SubClassOf(ai:EnterpriseAutomation
-        ObjectSomeValuesFrom(ai:uses ai:GenerativeAI))
-  ## Reduction Relationships
-      SubClassOf(ai:EnterpriseAutomation
-        ObjectSomeValuesFrom(ai:reducesTo ai:RoboticProcessAutomation))
-      SubClassOf(ai:EnterpriseAutomation
-        ObjectSomeValuesFrom(ai:reducesTo ai:WorkflowAutomation))
+### Content
 
-  ## About
-  Enterprise automation has evolved through three broadly demarcated generations since the early 2000s, each defined by the dominant automation paradigm and the range of process types that could be economically addressed.
+## Compositional Relationships (Components)
+    SubClassOf(ai:EnterpriseAutomation
+      ObjectSomeValuesFrom(ai:hasPart ai:RoboticProcessAutomation))
+    SubClassOf(ai:EnterpriseAutomation
+      ObjectSomeValuesFrom(ai:hasPart ai:WorkflowAutomation))
+    SubClassOf(ai:EnterpriseAutomation
+      ObjectSomeValuesFrom(ai:hasPart ai:BusinessRulesEngine))
+    SubClassOf(ai:EnterpriseAutomation
+      ObjectSomeValuesFrom(ai:hasPart ai:ProcessMining))
+    SubClassOf(ai:EnterpriseAutomation
+      ObjectSomeValuesFrom(ai:hasPart ai:BotOrchestration))
+    SubClassOf(ai:EnterpriseAutomation
+      ObjectSomeValuesFrom(ai:hasPart ai:AIAgents))
+    SubClassOf(ai:EnterpriseAutomation
+      ObjectSomeValuesFrom(ai:hasPart ai:AuditTrail))
+    SubClassOf(ai:EnterpriseAutomation
+      ObjectSomeValuesFrom(ai:hasPart ai:LowCodeDevelopment))
+## Dependency Relationships
+    SubClassOf(ai:EnterpriseAutomation
+      ObjectSomeValuesFrom(ai:requires ai:BusinessProcessManagement))
+    SubClassOf(ai:EnterpriseAutomation
+      ObjectSomeValuesFrom(ai:requires ai:WorkflowOrchestration))
+    SubClassOf(ai:EnterpriseAutomation
+      ObjectSomeValuesFrom(ai:requires ai:IdentityAndAccessManagement))
+    SubClassOf(ai:EnterpriseAutomation
+      ObjectSomeValuesFrom(ai:dependsOn ai:EnterpriseResourcePlanning))
+    SubClassOf(ai:EnterpriseAutomation
+      ObjectSomeValuesFrom(ai:dependsOn ai:APIIntegration))
+    SubClassOf(ai:EnterpriseAutomation
+      ObjectSomeValuesFrom(ai:dependsOn ai:EventDrivenArchitecture))
+    SubClassOf(ai:EnterpriseAutomation
+      ObjectSomeValuesFrom(ai:dependsOn ai:DocumentProcessing))
+## Capability Relationships
+    SubClassOf(ai:EnterpriseAutomation
+      ObjectSomeValuesFrom(ai:enables ai:Hyperautomation))
+    SubClassOf(ai:EnterpriseAutomation
+      ObjectSomeValuesFrom(ai:enables ai:DigitalTransformation))
+    SubClassOf(ai:EnterpriseAutomation
+      ObjectSomeValuesFrom(ai:enables ai:OperationalEfficiency))
+    SubClassOf(ai:EnterpriseAutomation
+      ObjectSomeValuesFrom(ai:enables ai:StraightThroughProcessing))
+    SubClassOf(ai:EnterpriseAutomation
+      ObjectSomeValuesFrom(ai:enables ai:ComplianceManagement))
+    SubClassOf(ai:EnterpriseAutomation
+      ObjectSomeValuesFrom(ai:enables ai:CostReduction))
+## Implementation Relationships
+    SubClassOf(ai:EnterpriseAutomation
+      ObjectSomeValuesFrom(ai:implements ai:BusinessProcessAutomation))
+    SubClassOf(ai:EnterpriseAutomation
+      ObjectSomeValuesFrom(ai:implements ai:IntelligentProcessAutomation))
+    SubClassOf(ai:EnterpriseAutomation
+      ObjectSomeValuesFrom(ai:uses ai:LargeLanguageModels))
+    SubClassOf(ai:EnterpriseAutomation
+      ObjectSomeValuesFrom(ai:uses ai:NaturalLanguageProcessing))
+    SubClassOf(ai:EnterpriseAutomation
+      ObjectSomeValuesFrom(ai:uses ai:MachineLearning))
+    SubClassOf(ai:EnterpriseAutomation
+      ObjectSomeValuesFrom(ai:uses ai:ComputerVision))
+    SubClassOf(ai:EnterpriseAutomation
+      ObjectSomeValuesFrom(ai:uses ai:GenerativeAI))
+## Reduction Relationships
+    SubClassOf(ai:EnterpriseAutomation
+      ObjectSomeValuesFrom(ai:reducesTo ai:RoboticProcessAutomation))
+    SubClassOf(ai:EnterpriseAutomation
+      ObjectSomeValuesFrom(ai:reducesTo ai:WorkflowAutomation))
 
-  The first generation (approximately 1995–2012) was dominated by scripted workflow engines and [[Business Process Management]] suites — platforms such as IBM Business Process Manager, Oracle BPM, and Microsoft BizTalk — that provided graphical modelling environments for designing process flows, managing human task assignments, and providing integration middleware to connect enterprise systems via service-oriented architectures. These [[BPMN Standard]]-based orchestration tools codified how work was routed through organisations: approvals, escalations, parallel execution, and exception branches could all be formally specified and enforced. However, automation was limited to well-defined, deterministic paths; any deviation from the specified model or any unstructured input required human handling. The cost and complexity of implementing BPM suites restricted adoption to large enterprises with dedicated BPM competency centres and long implementation timelines.
+## About
+Enterprise automation has evolved through three broadly demarcated generations since the early 2000s, each defined by the dominant automation paradigm and the range of process types that could be economically addressed.
 
-  The second generation (approximately 2012–2022) was defined by [[Robotic Process Automation]] as a lightweight, non-invasive complement to heavyweight BPM suites. RPA vendors — UiPath, Automation Anywhere, and Blue Prism — enabled rapid bot deployment by having software robots interact with application user interfaces at the presentation layer rather than underlying APIs, eliminating the need for expensive system integration projects. A non-technical business analyst could configure a bot by recording a sequence of UI interactions, which the robot would replay at machine speed across any volume of work items. This approach made RPA uniquely suited to [[Legacy Systems]] and environments where back-end APIs were absent or costly to expose. By 2020, RPA had become a standard investment across banking, insurance, healthcare, and public-sector organisations globally, with Gartner reporting it as the fastest-growing segment of enterprise software for three consecutive years. The limitation of second-generation automation remained its rigidity: bots could only handle processes defined by explicit rules and structured inputs; any variation required manual exception handling, and selector fragility caused ongoing maintenance costs when underlying application UIs changed.
+The first generation (approximately 1995–2012) was dominated by scripted workflow engines and [[Business Process Management]] suites — platforms such as IBM Business Process Manager, Oracle BPM, and Microsoft BizTalk — that provided graphical modelling environments for designing process flows, managing human task assignments, and providing integration middleware to connect enterprise systems via service-oriented architectures. These [[BPMN Standard]]-based orchestration tools codified how work was routed through organisations: approvals, escalations, parallel execution, and exception branches could all be formally specified and enforced. However, automation was limited to well-defined, deterministic paths; any deviation from the specified model or any unstructured input required human handling. The cost and complexity of implementing BPM suites restricted adoption to large enterprises with dedicated BPM competency centres and long implementation timelines.
 
-  The third generation (2022–present) is catalysed by advances in [[Large Language Models]], [[Generative AI]], and [[AI Agents]], which fundamentally reconceive the automation agent as a reasoning entity rather than a script executor. Autonomous AI agents built on foundation models can interpret unstructured text and documents, invoke tools (including legacy RPA bots, APIs, databases, and web interfaces) as needed, plan multi-step workflows dynamically, handle novel exceptions without explicit programming, and communicate with humans in natural language to resolve ambiguity. This enables automation of processes that were previously considered too variable or judgement-intensive for software bots — contract analysis, regulatory impact assessment, customer complaint resolution, and complex scheduling problems. The architecture shift is from deterministic scripts to goal-directed agents with tool use and planning capabilities, a transition formalised in the ReAct (Reason + Act) framework (Yao et al., 2023) and subsequent agent architectures including AutoGen, LangGraph, and CrewAI.
+The second generation (approximately 2012–2022) was defined by [[Robotic Process Automation]] as a lightweight, non-invasive complement to heavyweight BPM suites. RPA vendors — UiPath, Automation Anywhere, and Blue Prism — enabled rapid bot deployment by having software robots interact with application user interfaces at the presentation layer rather than underlying APIs, eliminating the need for expensive system integration projects. A non-technical business analyst could configure a bot by recording a sequence of UI interactions, which the robot would replay at machine speed across any volume of work items. This approach made RPA uniquely suited to [[Legacy Systems]] and environments where back-end APIs were absent or costly to expose. By 2020, RPA had become a standard investment across banking, insurance, healthcare, and public-sector organisations globally, with Gartner reporting it as the fastest-growing segment of enterprise software for three consecutive years. The limitation of second-generation automation remained its rigidity: bots could only handle processes defined by explicit rules and structured inputs; any variation required manual exception handling, and selector fragility caused ongoing maintenance costs when underlying application UIs changed.
 
-  The governance and regulatory dimension of enterprise automation has grown commensurately with its scope and capability. The EU AI Act (effective August 2025) classifies certain automated decision-making systems as high-risk, requiring human oversight, conformity assessments, transparency obligations, and documentation of training data and decision logic — directly impacting automated loan adjudication, CV screening, clinical decision support, and predictive policing systems. Organisations operating in scope of the EU AI Act must implement structured human-in-the-loop checkpoints at risk-critical decision nodes, maintain comprehensive audit logs, register high-risk AI systems in the EU database, and conduct post-market monitoring for ongoing conformance. UK enterprises must simultaneously comply with UK GDPR's restrictions on solely automated decision-making (Article 22 equivalent), ICO guidance on AI governance, and FCA/PRA expectations for model risk management in financial services contexts.
+The third generation (2022–present) is catalysed by advances in [[Large Language Models]], [[Generative AI]], and [[AI Agents]], which fundamentally reconceive the automation agent as a reasoning entity rather than a script executor. Autonomous AI agents built on foundation models can interpret unstructured text and documents, invoke tools (including legacy RPA bots, APIs, databases, and web interfaces) as needed, plan multi-step workflows dynamically, handle novel exceptions without explicit programming, and communicate with humans in natural language to resolve ambiguity. This enables automation of processes that were previously considered too variable or judgement-intensive for software bots — contract analysis, regulatory impact assessment, customer complaint resolution, and complex scheduling problems. The architecture shift is from deterministic scripts to goal-directed agents with tool use and planning capabilities, a transition formalised in the ReAct (Reason + Act) framework (Yao et al., 2023) and subsequent agent architectures including AutoGen, LangGraph, and CrewAI.
 
-  ## Formal Process Automation Taxonomy
-  The enterprise automation landscape spans a hierarchy of concepts that are often conflated in commercial discourse but are distinct in technical scope:
+The governance and regulatory dimension of enterprise automation has grown commensurately with its scope and capability. The EU AI Act (effective August 2025) classifies certain automated decision-making systems as high-risk, requiring human oversight, conformity assessments, transparency obligations, and documentation of training data and decision logic — directly impacting automated loan adjudication, CV screening, clinical decision support, and predictive policing systems. Organisations operating in scope of the EU AI Act must implement structured human-in-the-loop checkpoints at risk-critical decision nodes, maintain comprehensive audit logs, register high-risk AI systems in the EU database, and conduct post-market monitoring for ongoing conformance. UK enterprises must simultaneously comply with UK GDPR's restrictions on solely automated decision-making (Article 22 equivalent), ICO guidance on AI governance, and FCA/PRA expectations for model risk management in financial services contexts.
 
-  - **Task Automation** — automating a single, bounded activity (e.g., copying data from one field to another, sending an email when a condition is met).
-  - **[[Robotic Process Automation]]** — automating a sequence of UI-mediated interactions to execute a business process end-to-end within a specific application context, without modifying the underlying application.
-  - **Business Process Automation (BPA)** — automating a complete business process spanning multiple applications, people, and systems, typically using workflow engines, API integrations, and human task management alongside RPA bots.
-  - **[[Intelligent Automation]]** — augmenting BPA with AI capabilities ([[Machine Learning]], [[Natural Language Processing]], [[Computer Vision]], [[Intelligent Document Processing]]) to extend automation reach to semi-structured and unstructured inputs, enabling judgement-bearing automation.
-  - **[[Hyperautomation]]** — the disciplined, enterprise-wide strategy of orchestrating the full portfolio of automation technologies (RPA, BPA, [[Process Mining]], [[Low-Code Development]], AI, and [[API Integration]]) to maximise the proportion of work automatable, guided by data-driven discovery and continuous improvement.
-  - **Business Orchestration and Automation Technology (BOAT)** — an emerging category (coined 2024) that emphasises adaptive, AI-augmented orchestration across the full enterprise technology landscape, positioning automation as a strategic capability rather than an IT project.
+## Formal Process Automation Taxonomy
+The enterprise automation landscape spans a hierarchy of concepts that are often conflated in commercial discourse but are distinct in technical scope:
+
+- **Task Automation** — automating a single, bounded activity (e.g., copying data from one field to another, sending an email when a condition is met).
+- **[[Robotic Process Automation]]** — automating a sequence of UI-mediated interactions to execute a business process end-to-end within a specific application context, without modifying the underlying application.
+- **Business Process Automation (BPA)** — automating a complete business process spanning multiple applications, people, and systems, typically using workflow engines, API integrations, and human task management alongside RPA bots.
+- **[[Intelligent Automation]]** — augmenting BPA with AI capabilities ([[Machine Learning]], [[Natural Language Processing]], [[Computer Vision]], [[Intelligent Document Processing]]) to extend automation reach to semi-structured and unstructured inputs, enabling judgement-bearing automation.
+- **[[Hyperautomation]]** — the disciplined, enterprise-wide strategy of orchestrating the full portfolio of automation technologies (RPA, BPA, [[Process Mining]], [[Low-Code Development]], AI, and [[API Integration]]) to maximise the proportion of work automatable, guided by data-driven discovery and continuous improvement.
+- **Business Orchestration and Automation Technology (BOAT)** — an emerging category (coined 2024) that emphasises adaptive, AI-augmented orchestration across the full enterprise technology landscape, positioning automation as a strategic capability rather than an IT project.
 
   ## Components and Architecture
 
@@ -140,42 +140,43 @@ Enterprise automation is the application of software and AI to execute repeatabl
 
   A standard process automation feasibility assessment applies the following criteria:
 
-      1. RULES_BASED: Is the process governed by explicit, documentable rules?
-         If NO → defer to human or use LLM-based agent
-         If YES → candidate for RPA or BPA
-      2. INPUT_STRUCTURE: Is the input data consistently structured?
-         If YES → RPA or BPA appropriate
-         If SEMI-STRUCTURED → apply Intelligent Document Processing + RPA
-         If UNSTRUCTURED → apply LLM-based extraction or AI Agent
-      3. VOLUME_FREQUENCY: Is the process high-volume (>500 cases/month)
-         or time-sensitive (SLA < 2 hours)?
-         If YES → automation ROI favourable; proceed
-         If NO → assess cost-benefit; low-volume may not justify automation
-      4. STABILITY: Does the process change less than quarterly?
-         If NO → high maintenance cost; prefer rule engine over hard-coded bot
-         If YES → automation sustainable
-      5. REGULATORY_RISK: Does the process make decisions with legal effect?
-         If YES → EU AI Act high-risk classification; require human-in-the-loop;
-                  conformity assessment; audit trail
-         If NO → standard governance requirements apply
+    1. RULES_BASED: Is the process governed by explicit, documentable rules?
+       If NO → defer to human or use LLM-based agent
+       If YES → candidate for RPA or BPA
+    2. INPUT_STRUCTURE: Is the input data consistently structured?
+       If YES → RPA or BPA appropriate
+       If SEMI-STRUCTURED → apply Intelligent Document Processing + RPA
+       If UNSTRUCTURED → apply LLM-based extraction or AI Agent
+    3. VOLUME_FREQUENCY: Is the process high-volume (>500 cases/month)
+       or time-sensitive (SLA < 2 hours)?
+       If YES → automation ROI favourable; proceed
+       If NO → assess cost-benefit; low-volume may not justify automation
+    4. STABILITY: Does the process change less than quarterly?
+       If NO → high maintenance cost; prefer rule engine over hard-coded bot
+       If YES → automation sustainable
+    5. REGULATORY_RISK: Does the process make decisions with legal effect?
+       If YES → EU AI Act high-risk classification; require human-in-the-loop;
+                conformity assessment; audit trail
+       If NO → standard governance requirements apply
 
   ## Academic Context
   Enterprise automation is grounded in the formal disciplines of [[Business Process Management]], operations research, and artificial intelligence. The theoretical lineage runs from:
 
-  - **Petri nets** (Petri, 1962) — the foundational formalism for modelling concurrent, distributed processes with tokens and transitions, which directly informs BPMN semantics and [[Workflow Orchestration]] engine implementations.
-  - **Workflow Management Coalition (WfMC)** standards (1993–2004) — the industry consortium that produced the Workflow Reference Model and XPDL process definition language, establishing the conceptual vocabulary for workflow management systems that preceded modern BPM suites.
-  - **BPMN 2.0** (Object Management Group, 2011) — the Business Process Model and Notation standard that provides a formal graphical language for process modelling, extensible to executable process definitions, supported by all major BPM and enterprise automation platforms.
-  - **Process mining** (Van der Aalst et al., 1999–present) — the algorithmic recovery of process models from event logs using alpha-algorithm, Heuristics Miner, and Inductive Miner variants, providing the data-driven discovery layer for enterprise automation pipelines.
-  - **Agentic AI research** (Yao et al., 2023 ReAct; AutoGen 2023; LangGraph 2024) — the emerging academic and engineering literature on goal-directed AI agents with tool use, planning, and multi-agent coordination that defines the third generation of enterprise automation.
+- **Petri nets** (Petri, 1962) — the foundational formalism for modelling concurrent, distributed processes with tokens and transitions, which directly informs BPMN semantics and [[Workflow Orchestration]] engine implementations.
+- **Workflow Management Coalition (WfMC)** standards (1993–2004) — the industry consortium that produced the Workflow Reference Model and XPDL process definition language, establishing the conceptual vocabulary for workflow management systems that preceded modern BPM suites.
+- **BPMN 2.0** (Object Management Group, 2011) — the Business Process Model and Notation standard that provides a formal graphical language for process modelling, extensible to executable process definitions, supported by all major BPM and enterprise automation platforms.
+- **Process mining** (Van der Aalst et al., 1999–present) — the algorithmic recovery of process models from event logs using alpha-algorithm, Heuristics Miner, and Inductive Miner variants, providing the data-driven discovery layer for enterprise automation pipelines.
+- **Agentic AI research** (Yao et al., 2023 ReAct; AutoGen 2023; LangGraph 2024) — the emerging academic and engineering literature on goal-directed AI agents with tool use, planning, and multi-agent coordination that defines the third generation of enterprise automation.
 
   Key academic publications include:
-  - Van der Aalst, W.M.P. (2011). *Process Mining: Discovery, Conformance and Enhancement of Business Processes*. Springer.
-  - Dumas, M., La Rosa, M., Mendling, J., Reijers, H.A. (2018). *Fundamentals of Business Process Management* (2nd ed.). Springer.
-  - Lacity, M., Willcocks, L. (2018). *Robotic Process and Cognitive Automation: The Next Phase*. Steve Brookes Publishing.
-  - Park, S., Cho, E., Son, H. (2021). "Robotic process automation: A literature review." *Expert Systems with Applications*, 183, 115443.
-  - Wewerka, J., Reichert, M. (2023). "Robotic process automation — a systematic mapping study and classification framework." *Enterprise Information Systems*, 17(2), 1954707.
-  - Yao, S. et al. (2023). "ReAct: Synergising reasoning and acting in language models." *ICLR 2023*.
-  - Wu, Q. et al. (2023). "AutoGen: Enabling next-generation LLM applications via multi-agent conversation." arXiv:2308.08155.
+
+- Van der Aalst, W.M.P. (2011). *Process Mining: Discovery, Conformance and Enhancement of Business Processes*. Springer.
+- Dumas, M., La Rosa, M., Mendling, J., Reijers, H.A. (2018). *Fundamentals of Business Process Management* (2nd ed.). Springer.
+- Lacity, M., Willcocks, L. (2018). *Robotic Process and Cognitive Automation: The Next Phase*. Steve Brookes Publishing.
+- Park, S., Cho, E., Son, H. (2021). "Robotic process automation: A literature review." *Expert Systems with Applications*, 183, 115443.
+- Wewerka, J., Reichert, M. (2023). "Robotic process automation — a systematic mapping study and classification framework." *Enterprise Information Systems*, 17(2), 1954707.
+- Yao, S. et al. (2023). "ReAct: Synergising reasoning and acting in language models." *ICLR 2023*.
+- Wu, Q. et al. (2023). "AutoGen: Enabling next-generation LLM applications via multi-agent conversation." arXiv:2308.08155.
 
   ## Current Landscape (2026)
   The enterprise automation market has reached a pivotal inflection point in 2026, with agentic AI redefining the boundary between software robotics and autonomous digital workers:
@@ -221,23 +222,24 @@ Enterprise automation is the application of software and AI to execute repeatabl
   ## Benchmark Datasets and Evaluation Frameworks
   Enterprise automation lacks standardised public benchmarks comparable to those in academic NLP or computer vision, reflecting the proprietary and heterogeneous nature of enterprise process data. Relevant evaluation frameworks include:
 
-  - **IEEE XES (eXtensible Event Stream)** — standard event log format for process mining, supported by all major process mining tools; the de facto data format for academic and commercial process mining research.
-  - **ProM Framework** — open-source process mining platform providing over 1,000 process mining algorithms, serving as the primary research testbed for process mining algorithm development (Van der Aalst group, Eindhoven and RWTH Aachen).
-  - **BPIC (Business Process Intelligence Challenge)** — annual academic competition (2011–present) using real enterprise event logs from hospitals, financial institutions, and government agencies; the primary public benchmark for process mining algorithm comparison.
-  - **RPA benchmark tasks** — vendor-specific benchmark tasks for RPA bot performance (transaction throughput, exception rates, selector stability) used internally by UiPath, Automation Anywhere, and Blue Prism for platform comparison, though no independent public RPA benchmark standard exists.
-  - **AgentBench** (Liu et al., 2023) — academic benchmark for evaluating LLM-based agents on real-world sequential decision-making tasks including OS interaction, database query, and web browsing — increasingly relevant for enterprise agent capability assessment.
+- **IEEE XES (eXtensible Event Stream)** — standard event log format for process mining, supported by all major process mining tools; the de facto data format for academic and commercial process mining research.
+- **ProM Framework** — open-source process mining platform providing over 1,000 process mining algorithms, serving as the primary research testbed for process mining algorithm development (Van der Aalst group, Eindhoven and RWTH Aachen).
+- **BPIC (Business Process Intelligence Challenge)** — annual academic competition (2011–present) using real enterprise event logs from hospitals, financial institutions, and government agencies; the primary public benchmark for process mining algorithm comparison.
+- **RPA benchmark tasks** — vendor-specific benchmark tasks for RPA bot performance (transaction throughput, exception rates, selector stability) used internally by UiPath, Automation Anywhere, and Blue Prism for platform comparison, though no independent public RPA benchmark standard exists.
+- **AgentBench** (Liu et al., 2023) — academic benchmark for evaluating LLM-based agents on real-world sequential decision-making tasks including OS interaction, database query, and web browsing — increasingly relevant for enterprise agent capability assessment.
 
   ## Key Terminology Glossary
-  - **Attended bot** — an RPA robot that runs on a human worker's desktop, triggered by the worker; appropriate for processes with judgement-based decision points.
-  - **Bot Farm** — a pool of unattended RPA robots running on server infrastructure, processing work items from orchestration queues 24/7.
-  - **Centre of Excellence (CoE)** — the governance body that manages the enterprise automation portfolio: pipeline of automation candidates, development standards, reusable component libraries, performance monitoring, and change management.
-  - **Cognitive automation** — the layer of enterprise automation that applies AI to handle unstructured inputs, replacing hard-coded rules with learned models.
-  - **Conformance checking** — process mining technique that compares observed process execution (from event logs) against a reference process model to detect deviations, bottlenecks, and compliance violations.
-  - **Digital worker** — a named, governed software identity (bot or AI agent) that performs work within enterprise systems, analogous to a human employee with an organisational identity, credentials, and access rights.
-  - **Event-driven automation** — automation triggered by real-time events (database record insert, email arrival, API webhook) rather than scheduled batch processing.
-  - **Exception handling** — the workflow logic that manages cases that deviate from the standard process path, routing them to human review queues or alternative automated sub-flows.
-  - **Selector** — an XPath, CSS, or Win32 element identifier used by RPA bots to locate UI controls within application screens; selector fragility is the primary maintenance challenge for RPA deployments.
-  - **Straight-through processing (STP)** — the proportion of process instances completed from start to finish without any human intervention; the primary KPI for back-office automation programmes.
+
+- **Attended bot** — an RPA robot that runs on a human worker's desktop, triggered by the worker; appropriate for processes with judgement-based decision points.
+- **Bot Farm** — a pool of unattended RPA robots running on server infrastructure, processing work items from orchestration queues 24/7.
+- **Centre of Excellence (CoE)** — the governance body that manages the enterprise automation portfolio: pipeline of automation candidates, development standards, reusable component libraries, performance monitoring, and change management.
+- **Cognitive automation** — the layer of enterprise automation that applies AI to handle unstructured inputs, replacing hard-coded rules with learned models.
+- **Conformance checking** — process mining technique that compares observed process execution (from event logs) against a reference process model to detect deviations, bottlenecks, and compliance violations.
+- **Digital worker** — a named, governed software identity (bot or AI agent) that performs work within enterprise systems, analogous to a human employee with an organisational identity, credentials, and access rights.
+- **Event-driven automation** — automation triggered by real-time events (database record insert, email arrival, API webhook) rather than scheduled batch processing.
+- **Exception handling** — the workflow logic that manages cases that deviate from the standard process path, routing them to human review queues or alternative automated sub-flows.
+- **Selector** — an XPath, CSS, or Win32 element identifier used by RPA bots to locate UI controls within application screens; selector fragility is the primary maintenance challenge for RPA deployments.
+- **Straight-through processing (STP)** — the proportion of process instances completed from start to finish without any human intervention; the primary KPI for back-office automation programmes.
 
   ## Research and Literature
   1. Van der Aalst, W.M.P. (2016). *Process Mining: Data Science in Action* (2nd ed.). Springer. ISBN 978-3-662-49851-4.
@@ -268,5 +270,5 @@ Enterprise automation is the application of software and AI to execute repeatabl
   26. BCS – The Chartered Institute for IT (2024). "How automation is driving NHS efficiency and innovation." https://www.bcs.org/articles-opinion-and-research/how-automation-is-driving-nhs-efficiency-and-innovation/
   27. CloudKeeper (2026). "Top Agentic AI Trends to Watch in 2026: How AI Agents Are Redefining Enterprise Automation." https://www.cloudkeeper.com/insights/blog/top-agentic-ai-trends-watch-2026-how-ai-agents-are-redefining-enterprise-automation
 
-- ### Provenance
+### Provenance
 

@@ -1,22 +1,28 @@
-
 Log management is the discipline of collecting, aggregating, storing, indexing and analysing the event records emitted by applications, services and infrastructure. It provides a centralised, searchable record of system behaviour that underpins debugging, performance analysis, security investigation and compliance auditing. Pipelines typically ingest structured and unstructured logs, normalise them, enforce retention policies and expose them through query and alerting interfaces.
 
 - Log management collects, aggregates, indexes and retains event records from across a system, turning raw [[Data]] into a searchable record that supports [[Observability]] and [[Incident Response]].
 - It is a foundational practice within [[Infrastructure]] operations and security.
-- ### Overview
+
+### Overview
+
 - A log management pipeline ingests logs from many sources, parses and normalises them into a common schema, and writes them to an indexed store optimised for time-range and full-text queries.
 - Retention, rotation and archival policies balance investigative value against storage cost and regulatory requirements.
 - Correlation across logs, metrics and traces is the basis of modern [[Observability]].
-- ### Key aspects
+
+### Key aspects
+
 - Centralised collection and aggregation from distributed sources.
 - Parsing and normalisation into structured, queryable events.
 - Indexing for fast search and time-series analysis.
 - Retention, rotation and tamper-evident archival for audit.
 - Alerting on patterns, thresholds and anomalies.
-- ### Applications
+
+### Applications
+
 - Debugging and [[Root Cause Analysis]] of production incidents.
 - Security monitoring feeding [[Security Information and Event Management]] and [[SIEM]] platforms.
 - Compliance and audit through immutable [[Audit Log]] retention.
 - Capacity planning and performance analysis.
-- ### Provenance
+
+### Provenance
 

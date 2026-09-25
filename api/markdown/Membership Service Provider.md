@@ -1,25 +1,32 @@
-
 A Membership Service Provider (MSP) is the component of a permissioned blockchain that abstracts the cryptographic identity material and rules used to authenticate and authorise participants. It defines which certificate authorities are trusted, which roles members hold, and how digital certificates map to organisational identities used in endorsement and access policies. The MSP turns raw public-key infrastructure into the network's notion of who is allowed to act and in what capacity.
 
-- ### Overview
-  - In a permissioned network, every actor must be a known, authenticated member. The MSP encapsulates the trust roots, certificates and rules that turn cryptographic material into named, role-bearing identities.
-  - Rather than embedding raw keys in policies, the network expresses access and endorsement requirements in terms of MSP identities, such as "an admin of Organisation A" or "any peer of Organisation B".
-  - Each organisation typically operates its own MSP, and the channel configuration records which MSPs are members and what they may do.
-- ### Key aspects
-  - Trust roots: the set of root and intermediate [[Certificate Authority]] certificates the MSP accepts.
-  - Identity types: client, peer, orderer and admin roles derived from certificate attributes.
-  - Revocation: certificate revocation lists that exclude compromised or retired identities.
-  - Local versus channel MSPs: node-local configuration versus the shared membership recorded in channel config.
-  - Organisational scoping: each MSP usually represents one organisation's members.
-- ### Mechanisms
-  - Validates a presented [[Digital Certificate]] against its trusted roots and revocation lists.
-  - Extracts organisational unit and role information to classify the identity.
-  - Supplies verified identities to endorsement and access-control policies during transaction processing.
-  - Anchors network membership in external [[Cryptography]] and public-key infrastructure rather than ad hoc keys.
-- ### Applications
-  - Member onboarding and authorisation in [[Hyperledger Fabric]] consortia.
-  - Endorsement policy evaluation that requires signatures from specific organisations.
-  - Channel access control isolating data among consortium members.
-  - Integration of enterprise identity into [[Permissioned Blockchain]] governance.
-- ### Provenance
+### Overview
+
+- In a permissioned network, every actor must be a known, authenticated member. The MSP encapsulates the trust roots, certificates and rules that turn cryptographic material into named, role-bearing identities.
+- Rather than embedding raw keys in policies, the network expresses access and endorsement requirements in terms of MSP identities, such as "an admin of Organisation A" or "any peer of Organisation B".
+- Each organisation typically operates its own MSP, and the channel configuration records which MSPs are members and what they may do.
+
+### Key aspects
+
+- Trust roots: the set of root and intermediate [[Certificate Authority]] certificates the MSP accepts.
+- Identity types: client, peer, orderer and admin roles derived from certificate attributes.
+- Revocation: certificate revocation lists that exclude compromised or retired identities.
+- Local versus channel MSPs: node-local configuration versus the shared membership recorded in channel config.
+- Organisational scoping: each MSP usually represents one organisation's members.
+
+### Mechanisms
+
+- Validates a presented [[Digital Certificate]] against its trusted roots and revocation lists.
+- Extracts organisational unit and role information to classify the identity.
+- Supplies verified identities to endorsement and access-control policies during transaction processing.
+- Anchors network membership in external [[Cryptography]] and public-key infrastructure rather than ad hoc keys.
+
+### Applications
+
+- Member onboarding and authorisation in [[Hyperledger Fabric]] consortia.
+- Endorsement policy evaluation that requires signatures from specific organisations.
+- Channel access control isolating data among consortium members.
+- Integration of enterprise identity into [[Permissioned Blockchain]] governance.
+
+### Provenance
 

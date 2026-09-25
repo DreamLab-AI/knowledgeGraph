@@ -1,48 +1,48 @@
-
 ETSIDomainClassification is a formal taxonomy from the European Telecommunications Standards Institute categorising technology domains, standards, and governance areas to enable systematic organisation and cross-domain coordination. It partitions the metaverse and digital ecosystem into Infrastructure, Interaction, Trust and Governance, and Computation and Intelligence domains, enabling standards alignment, regulatory mapping, and interoperability discovery across heterogeneous technical contexts.
 
-- ### Bridge-To
+### Bridge-To
 
-- ### Semantic Classification
+### Semantic Classification
 
-- ### Content
-  - The ETSI Domain Classification taxonomy organises technology domains, standards, and governance areas systematically enabling discovery, standards alignment, and cross-domain coordination for metaverse and digital infrastructure development.
+### Content
+
+- The ETSI Domain Classification taxonomy organises technology domains, standards, and governance areas systematically enabling discovery, standards alignment, and cross-domain coordination for metaverse and digital infrastructure development.
 
   ## Academic Context
 
-  - ETSIDomainClassification is a structured framework within the metaverse ecosystem, designed to categorise and align various technological domains and standards relevant to virtual environments and augmented reality.
-  - It builds on foundational concepts from augmented reality, virtual reality, and distributed ledger technologies, integrating these into a coherent classification to support interoperability and standardisation.
-  - The academic foundations draw from computer science disciplines such as human-computer interaction, network communications, and semantic web ontologies, ensuring precise domain definitions that facilitate research and development.
+- ETSIDomainClassification is a structured framework within the metaverse ecosystem, designed to categorise and align various technological domains and standards relevant to virtual environments and augmented reality.
+- It builds on foundational concepts from augmented reality, virtual reality, and distributed ledger technologies, integrating these into a coherent classification to support interoperability and standardisation.
+- The academic foundations draw from computer science disciplines such as human-computer interaction, network communications, and semantic web ontologies, ensuring precise domain definitions that facilitate research and development.
 
   ## Current Landscape (2025)
 
-  - Industry adoption of ETSIDomainClassification is evident in its integration within ETSI’s Augmented Reality Framework (ARF) and related Industry Specification Groups (ISGs), which focus on interoperability and standardisation of metaverse components.
-  - Notable organisations include ETSI itself, Nokia, Intel, and Adeia, which actively contribute to domain definitions and standards development.
-  - In the UK, particularly in North England cities such as Manchester, Leeds, Newcastle, and Sheffield, innovation hubs and research centres are increasingly engaging with metaverse technologies, leveraging ETSI standards to foster local ecosystem growth.
-  - Technical capabilities of ETSIDomainClassification enable alignment of over 200 ETSI standards with domain definitions, supporting complex interoperability scenarios across virtual worlds and XR applications.
-  - Limitations remain in fully harmonising emerging technologies due to rapid evolution and diverse stakeholder requirements.
-  - Standards and frameworks continue to evolve, with ETSI’s ARF and Permissioned Distributed Ledger (PDL) ISGs providing up-to-date specifications that underpin domain classification and identity management within metaverse contexts.
+- Industry adoption of ETSIDomainClassification is evident in its integration within ETSI’s Augmented Reality Framework (ARF) and related Industry Specification Groups (ISGs), which focus on interoperability and standardisation of metaverse components.
+- Notable organisations include ETSI itself, Nokia, Intel, and Adeia, which actively contribute to domain definitions and standards development.
+- In the UK, particularly in North England cities such as Manchester, Leeds, Newcastle, and Sheffield, innovation hubs and research centres are increasingly engaging with metaverse technologies, leveraging ETSI standards to foster local ecosystem growth.
+- Technical capabilities of ETSIDomainClassification enable alignment of over 200 ETSI standards with domain definitions, supporting complex interoperability scenarios across virtual worlds and XR applications.
+- Limitations remain in fully harmonising emerging technologies due to rapid evolution and diverse stakeholder requirements.
+- Standards and frameworks continue to evolve, with ETSI’s ARF and Permissioned Distributed Ledger (PDL) ISGs providing up-to-date specifications that underpin domain classification and identity management within metaverse contexts.
 
   ## Research & Literature
 
-  - Key academic sources include:
-  - Elloumi, O., Biatek, T., et al. (2025). "Standards Landscape for ETSI Augmented Reality Functional Reference Model." ETSI GR ARF 007 V1.1.1. ETSI.  
-    DOI: 10.1234/etsi.grarf007.v1.1.1 (hypothetical for illustration)
-  - ETSI Industry Specification Group (2025). "Permissioned Distributed Ledger and Self-Sovereign Identity in Telecom Networks." ETSI GS PDL 027 V1.1.1.
-  - Ongoing research focuses on enhancing domain classification to accommodate advances in XR networking, identity protocols, and cross-platform interoperability, with particular attention to scalability and security challenges.
+- Key academic sources include:
+- Elloumi, O., Biatek, T., et al. (2025). "Standards Landscape for ETSI Augmented Reality Functional Reference Model." ETSI GR ARF 007 V1.1.1. ETSI.  
+  DOI: 10.1234/etsi.grarf007.v1.1.1 (hypothetical for illustration)
+- ETSI Industry Specification Group (2025). "Permissioned Distributed Ledger and Self-Sovereign Identity in Telecom Networks." ETSI GS PDL 027 V1.1.1.
+- Ongoing research focuses on enhancing domain classification to accommodate advances in XR networking, identity protocols, and cross-platform interoperability, with particular attention to scalability and security challenges.
 
   ## UK Context
 
-  - The UK contributes significantly to ETSI’s metaverse standardisation efforts through academic institutions and industry partnerships, with a strong presence in North England.
-  - Manchester and Leeds host centres specialising in immersive technologies and digital innovation, actively participating in ETSI ISGs and pilot projects.
-  - Newcastle and Sheffield are emerging as hubs for applied research in virtual environments and network infrastructure supporting metaverse applications.
-  - Regional case studies demonstrate successful deployment of ETSI-aligned metaverse solutions in sectors such as education, healthcare, and manufacturing, showcasing the practical impact of domain classification standards.
+- The UK contributes significantly to ETSI’s metaverse standardisation efforts through academic institutions and industry partnerships, with a strong presence in North England.
+- Manchester and Leeds host centres specialising in immersive technologies and digital innovation, actively participating in ETSI ISGs and pilot projects.
+- Newcastle and Sheffield are emerging as hubs for applied research in virtual environments and network infrastructure supporting metaverse applications.
+- Regional case studies demonstrate successful deployment of ETSI-aligned metaverse solutions in sectors such as education, healthcare, and manufacturing, showcasing the practical impact of domain classification standards.
 
   ## Future Directions
 
-  - Emerging trends include the integration of AI-driven semantic classification within ETSIDomainClassification to automate and refine domain alignment dynamically.
-  - Anticipated challenges involve maintaining standard relevance amid rapid technological shifts and ensuring inclusive participation from diverse geographic and industrial stakeholders.
-  - Research priorities emphasise cross-domain interoperability, privacy-preserving identity frameworks, and energy-efficient network protocols to support sustainable metaverse ecosystems.
+- Emerging trends include the integration of AI-driven semantic classification within ETSIDomainClassification to automate and refine domain alignment dynamically.
+- Anticipated challenges involve maintaining standard relevance amid rapid technological shifts and ensuring inclusive participation from diverse geographic and industrial stakeholders.
+- Research priorities emphasise cross-domain interoperability, privacy-preserving identity frameworks, and energy-efficient network protocols to support sustainable metaverse ecosystems.
 
   ## References
 
@@ -52,13 +52,12 @@ ETSIDomainClassification is a formal taxonomy from the European Telecommunicatio
   4. RaveSpace (2025). *The Metaverse in 2025: A Comprehensive Analysis of Its Technology, Economy, and Society*.  
   5. ETSI (2025). *Fifth Generation Fixed Network (F5G) Technical Specifications*. European Telecommunications Standards Institute.
 
-
   ## Metadata
 
-  - **Last Updated**: 2025-11-11
-  - **Review Status**: Comprehensive editorial review
-  - **Verification**: Academic sources verified
-  - **Regional Context**: UK/North England where applicable
+- **Last Updated**: 2025-11-11
+- **Review Status**: Comprehensive editorial review
+- **Verification**: Academic sources verified
+- **Regional Context**: UK/North England where applicable
 
-- ### Provenance
+### Provenance
 

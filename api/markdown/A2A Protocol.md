@@ -1,107 +1,102 @@
-
 The Agent-to-Agent (A2A) Protocol is an open communication specification, initially proposed by Google in April 2025 and transferred to the Linux Foundation in June 2025, that defines how autonomous AI agents discover one another, negotiate capabilities, delegate tasks, and exchange results across heterogeneous agent frameworks and cloud environments. It uses HTTP/HTTPS transport with JSON-RPC 2.0 structured messages and Server-Sent Events for streaming, an Agent Card system at a well-known URI for capability advertisement, and enterprise-grade authentication through OAuth 2.0, mTLS, and JWT, enabling cross-vendor agent interoperability without requiring shared infrastructure. A2A complements tool-access protocols such as the Model Context Protocol by standardising the agent-to-agent interaction layer, and reached v1.0 production readiness in 2026 with adoption by over 150 organisations including Microsoft, AWS, Salesforce, SAP, and ServiceNow.
 
-- ### Semantic Classification
+### Semantic Classification
 
-- ### Content
+### Content
 
-  ## Compositional Relationships (Components)
-  ```manchester-owl
-  SubClassOf(ai:A2AProtocol
-    ObjectSomeValuesFrom(ai:hasPart ai:AgentCard))
-  SubClassOf(ai:A2AProtocol
-    ObjectSomeValuesFrom(ai:hasPart ai:TaskLifecycle))
-  SubClassOf(ai:A2AProtocol
-    ObjectSomeValuesFrom(ai:hasPart ai:CapabilityNegotiation))
-  SubClassOf(ai:A2AProtocol
-    ObjectSomeValuesFrom(ai:hasPart ai:StreamingAPI))
-  SubClassOf(ai:A2AProtocol
-    ObjectSomeValuesFrom(ai:hasPart ai:AgentSkillManifest))
-  SubClassOf(ai:A2AProtocol
-    ObjectSomeValuesFrom(ai:hasPart ai:TaskMessagePart))
-  SubClassOf(ai:A2AProtocol
-    ObjectSomeValuesFrom(ai:hasPart ai:ArtifactObject))
-  ```
+## Compositional Relationships (Components)
+```manchester-owl
+SubClassOf(ai:A2AProtocol
+  ObjectSomeValuesFrom(ai:hasPart ai:AgentCard))
+SubClassOf(ai:A2AProtocol
+  ObjectSomeValuesFrom(ai:hasPart ai:TaskLifecycle))
+SubClassOf(ai:A2AProtocol
+  ObjectSomeValuesFrom(ai:hasPart ai:CapabilityNegotiation))
+SubClassOf(ai:A2AProtocol
+  ObjectSomeValuesFrom(ai:hasPart ai:StreamingAPI))
+SubClassOf(ai:A2AProtocol
+  ObjectSomeValuesFrom(ai:hasPart ai:AgentSkillManifest))
+SubClassOf(ai:A2AProtocol
+  ObjectSomeValuesFrom(ai:hasPart ai:TaskMessagePart))
+SubClassOf(ai:A2AProtocol
+  ObjectSomeValuesFrom(ai:hasPart ai:ArtifactObject))
+```
 
-  ## Dependency Relationships
-  ```manchester-owl
-  SubClassOf(ai:A2AProtocol
-    ObjectSomeValuesFrom(ai:requires ai:HTTPProtocol))
-  SubClassOf(ai:A2AProtocol
-    ObjectSomeValuesFrom(ai:requires ai:JSONRpc20))
-  SubClassOf(ai:A2AProtocol
-    ObjectSomeValuesFrom(ai:requires ai:ServerSentEvents))
-  SubClassOf(ai:A2AProtocol
-    ObjectSomeValuesFrom(ai:requires ai:OAuth20))
-  SubClassOf(ai:A2AProtocol
-    ObjectSomeValuesFrom(ai:requires ai:JSONSchema))
-  SubClassOf(ai:A2AProtocol
-    ObjectSomeValuesFrom(ai:requires ai:MutualTLS))
-  SubClassOf(ai:A2AProtocol
-    ObjectSomeValuesFrom(ai:dependsOn ai:AutonomousAgent))
-  SubClassOf(ai:A2AProtocol
-    ObjectSomeValuesFrom(ai:dependsOn ai:DistributedSystems))
-  ```
+## Dependency Relationships
+```manchester-owl
+SubClassOf(ai:A2AProtocol
+  ObjectSomeValuesFrom(ai:requires ai:HTTPProtocol))
+SubClassOf(ai:A2AProtocol
+  ObjectSomeValuesFrom(ai:requires ai:JSONRpc20))
+SubClassOf(ai:A2AProtocol
+  ObjectSomeValuesFrom(ai:requires ai:ServerSentEvents))
+SubClassOf(ai:A2AProtocol
+  ObjectSomeValuesFrom(ai:requires ai:OAuth20))
+SubClassOf(ai:A2AProtocol
+  ObjectSomeValuesFrom(ai:requires ai:JSONSchema))
+SubClassOf(ai:A2AProtocol
+  ObjectSomeValuesFrom(ai:requires ai:MutualTLS))
+SubClassOf(ai:A2AProtocol
+  ObjectSomeValuesFrom(ai:dependsOn ai:AutonomousAgent))
+SubClassOf(ai:A2AProtocol
+  ObjectSomeValuesFrom(ai:dependsOn ai:DistributedSystems))
+```
 
-  ## Capability Relationships
-  ```manchester-owl
-  SubClassOf(ai:A2AProtocol
-    ObjectSomeValuesFrom(ai:enables ai:MultiAgentOrchestration))
-  SubClassOf(ai:A2AProtocol
-    ObjectSomeValuesFrom(ai:enables ai:AgenticWorkflow))
-  SubClassOf(ai:A2AProtocol
-    ObjectSomeValuesFrom(ai:enables ai:InterAgentCommunication))
-  SubClassOf(ai:A2AProtocol
-    ObjectSomeValuesFrom(ai:enables ai:TaskDelegation))
-  SubClassOf(ai:A2AProtocol
-    ObjectSomeValuesFrom(ai:enables ai:EnterpriseAI))
-  SubClassOf(ai:A2AProtocol
-    ObjectSomeValuesFrom(ai:enables ai:AgentMarketplace))
-  ```
+## Capability Relationships
+```manchester-owl
+SubClassOf(ai:A2AProtocol
+  ObjectSomeValuesFrom(ai:enables ai:MultiAgentOrchestration))
+SubClassOf(ai:A2AProtocol
+  ObjectSomeValuesFrom(ai:enables ai:AgenticWorkflow))
+SubClassOf(ai:A2AProtocol
+  ObjectSomeValuesFrom(ai:enables ai:InterAgentCommunication))
+SubClassOf(ai:A2AProtocol
+  ObjectSomeValuesFrom(ai:enables ai:TaskDelegation))
+SubClassOf(ai:A2AProtocol
+  ObjectSomeValuesFrom(ai:enables ai:EnterpriseAI))
+SubClassOf(ai:A2AProtocol
+  ObjectSomeValuesFrom(ai:enables ai:AgentMarketplace))
+```
 
-  ## Implementation Relationships
-  ```manchester-owl
-  SubClassOf(ai:A2AProtocol
-    ObjectSomeValuesFrom(ai:implements ai:AgentToAgentProtocol))
-  SubClassOf(ai:A2AProtocol
-    ObjectSomeValuesFrom(ai:implements ai:Agent2AgentProtocolGoogle2025))
-  SubClassOf(ai:A2AProtocol
-    ObjectSomeValuesFrom(ai:uses ai:JSONLD))
-  SubClassOf(ai:A2AProtocol
-    ObjectSomeValuesFrom(ai:uses ai:ProtocolBuffers))
-  ```
+## Implementation Relationships
+```manchester-owl
+SubClassOf(ai:A2AProtocol
+  ObjectSomeValuesFrom(ai:implements ai:AgentToAgentProtocol))
+SubClassOf(ai:A2AProtocol
+  ObjectSomeValuesFrom(ai:implements ai:Agent2AgentProtocolGoogle2025))
+SubClassOf(ai:A2AProtocol
+  ObjectSomeValuesFrom(ai:uses ai:JSONLD))
+SubClassOf(ai:A2AProtocol
+  ObjectSomeValuesFrom(ai:uses ai:ProtocolBuffers))
+```
 
-  ## Reduction Relationships
-  ```manchester-owl
-  SubClassOf(ai:A2AProtocol
-    ObjectSomeValuesFrom(ai:reducesTo ai:AgentCommunicationProtocol))
-  SubClassOf(ai:A2AProtocol
-    ObjectSomeValuesFrom(ai:reducesTo ai:HTTPBasedProtocol))
-  SubClassOf(ai:A2AProtocol
-    ObjectSomeValuesFrom(ai:reducesTo ai:ServiceDiscoveryMechanism))
-  ```
+## Reduction Relationships
+```manchester-owl
+SubClassOf(ai:A2AProtocol
+  ObjectSomeValuesFrom(ai:reducesTo ai:AgentCommunicationProtocol))
+SubClassOf(ai:A2AProtocol
+  ObjectSomeValuesFrom(ai:reducesTo ai:HTTPBasedProtocol))
+SubClassOf(ai:A2AProtocol
+  ObjectSomeValuesFrom(ai:reducesTo ai:ServiceDiscoveryMechanism))
+```
 
-  ## About
+## About
 
-  The Agent-to-Agent (A2A) Protocol addresses a fundamental gap that emerged as AI agent deployments scaled beyond single-framework implementations in enterprise settings. Organisations increasingly deploy heterogeneous agent ecosystems: a customer-service [[Large Language Model]] agent built on [[LangChain Agent Framework]] may need to delegate background research to a specialist search agent on Google's [[Vertex AI]], route financial analysis to a risk-assessment agent on AWS Bedrock, and escalate compliance questions to a governance agent built with a proprietary in-house framework. Prior to A2A, each of these integrations required bespoke API contracts, shared message brokers, or manual data piping — creating fragile, high-maintenance integration webs that broke whenever individual agents were updated. A2A formalises the agent-to-agent interaction layer as a thin, framework-agnostic protocol analogous in role to HTTP for web services: a universal substrate that allows any conforming agent to delegate work to any other without knowledge of the receiving agent's internal implementation.
+The Agent-to-Agent (A2A) Protocol addresses a fundamental gap that emerged as AI agent deployments scaled beyond single-framework implementations in enterprise settings. Organisations increasingly deploy heterogeneous agent ecosystems: a customer-service [[Large Language Model]] agent built on [[LangChain Agent Framework]] may need to delegate background research to a specialist search agent on Google's [[Vertex AI]], route financial analysis to a risk-assessment agent on AWS Bedrock, and escalate compliance questions to a governance agent built with a proprietary in-house framework. Prior to A2A, each of these integrations required bespoke API contracts, shared message brokers, or manual data piping — creating fragile, high-maintenance integration webs that broke whenever individual agents were updated. A2A formalises the agent-to-agent interaction layer as a thin, framework-agnostic protocol analogous in role to HTTP for web services: a universal substrate that allows any conforming agent to delegate work to any other without knowledge of the receiving agent's internal implementation.
 
-  Google announced A2A on 9 April 2025 at Google Cloud Next, backed by over 50 technology partners. The protocol was published as an open-source [[Open Source]] specification under the Apache 2.0 licence and accepted into the [[Linux Foundation]]'s Agentic AI Foundation in June 2025, establishing vendor-neutral governance. The specification progressed through versions 0.2.5 and 0.3.0 during 2025 before reaching v1.0 production status. By April 2026 — the one-year mark — over 150 organisations supported A2A, including every major cloud provider; Microsoft (Azure AI Foundry), AWS (Bedrock AgentCore), and Google Cloud (ADK) all integrated A2A natively into their platform agent orchestration layers. The Agentic AI Foundation also oversees the [[Model Context Protocol]] and IBM's Agent Communication Protocol (ACP), with all three maintained under compatible governance, reflecting recognition that the agentic standards ecosystem functions as a complementary stack rather than a set of competing alternatives.
+Google announced A2A on 9 April 2025 at Google Cloud Next, backed by over 50 technology partners. The protocol was published as an open-source [[Open Source]] specification under the Apache 2.0 licence and accepted into the [[Linux Foundation]]'s Agentic AI Foundation in June 2025, establishing vendor-neutral governance. The specification progressed through versions 0.2.5 and 0.3.0 during 2025 before reaching v1.0 production status. By April 2026 — the one-year mark — over 150 organisations supported A2A, including every major cloud provider; Microsoft (Azure AI Foundry), AWS (Bedrock AgentCore), and Google Cloud (ADK) all integrated A2A natively into their platform agent orchestration layers. The Agentic AI Foundation also oversees the [[Model Context Protocol]] and IBM's Agent Communication Protocol (ACP), with all three maintained under compatible governance, reflecting recognition that the agentic standards ecosystem functions as a complementary stack rather than a set of competing alternatives.
 
-  The A2A protocol's design philosophy deliberately treats participating agents as black boxes with well-defined interfaces. An orchestrating agent need not share code, memory, security contexts, or runtime infrastructure with agents it delegates to — only the A2A wire format is assumed. This property is critical in enterprise environments where different teams, business units, or external vendors build and operate agents on incompatible technology stacks. The [[Zero-Trust Security]] model embedded in A2A requires explicit authentication on every agent interaction, rejecting the implicit trust assumptions that frequently underlie monolithic microservice architectures.
+The A2A protocol's design philosophy deliberately treats participating agents as black boxes with well-defined interfaces. An orchestrating agent need not share code, memory, security contexts, or runtime infrastructure with agents it delegates to — only the A2A wire format is assumed. This property is critical in enterprise environments where different teams, business units, or external vendors build and operate agents on incompatible technology stacks. The [[Zero-Trust Security]] model embedded in A2A requires explicit authentication on every agent interaction, rejecting the implicit trust assumptions that frequently underlie monolithic microservice architectures.
 
-  ## Components / Architecture
+## Components / Architecture
 
-  A2A defines its core data model in [[Protocol Buffers]] (with auto-generated [[JSON Schema]] 2020-12 equivalents), providing language-agnostic definitions for the following primary types:
+A2A defines its core data model in [[Protocol Buffers]] (with auto-generated [[JSON Schema]] 2020-12 equivalents), providing language-agnostic definitions for the following primary types:
 
-  - **[[Agent Card]]** — A public JSON document served at `/.well-known/agent-card.json` (per RFC 8615). It is the agent's technical self-description, including its canonical name, human-readable description, a list of `AgentSkill` objects (each with an `id`, `name`, `description`, `inputModes`, `outputModes`, and optionally a [[JSON Schema]] for structured inputs), the endpoint URL and binding type (JSON-RPC, gRPC, REST), and a `securitySchemes` block listing accepted authentication methods. From v1.2, Agent Cards support cryptographic signatures using the domain's private key, enabling verifiable provenance. [[Service Discovery]] for A2A is currently push-based (registering with agent directories) or out-of-band (sharing Agent Card URLs directly), with DNS-based discovery under discussion for v1.3.
-
-  - **Task** — The central [[Task Lifecycle]] unit. A Task has a UUID `id`, an optional `sessionId` for grouping correlated tasks, a `status` enumeration (submitted → working → input-required / completed / failed / cancelled), a `history` list of `Message` objects recording the conversation, and an `artifacts` list of `Artifact` objects containing the agent's outputs. Tasks support synchronous completion (for fast operations) and asynchronous streaming (for operations lasting seconds to days) via [[Server-Sent Events]].
-
-  - **Message and Part** — A `Message` is either user-supplied input or agent output. It contains a `role` (user or agent), a `metadata` block, and a list of `Part` objects. A `Part` is a typed content unit: `TextPart` (plain text or markdown), `FilePart` (inline bytes or a URI reference), or `DataPart` (structured JSON for [[Function Calling]] results and structured data exchange).
-
-  - **Artifact** — An output produced by the executing agent, referenced in the `Task.artifacts` list. Artifacts may contain multiple named parts, enabling an agent to return both a textual summary and a structured data object in a single task result.
-
-  - **Extension** — A versioned extension namespace mechanism allowing vendors to add proprietary metadata to Agent Cards, Tasks, and Messages without breaking protocol compatibility. Extensions are type-safe and declared in the Agent Card, enabling progressive capability negotiation.
+- **[[Agent Card]]** — A public JSON document served at `/.well-known/agent-card.json` (per RFC 8615). It is the agent's technical self-description, including its canonical name, human-readable description, a list of `AgentSkill` objects (each with an `id`, `name`, `description`, `inputModes`, `outputModes`, and optionally a [[JSON Schema]] for structured inputs), the endpoint URL and binding type (JSON-RPC, gRPC, REST), and a `securitySchemes` block listing accepted authentication methods. From v1.2, Agent Cards support cryptographic signatures using the domain's private key, enabling verifiable provenance. [[Service Discovery]] for A2A is currently push-based (registering with agent directories) or out-of-band (sharing Agent Card URLs directly), with DNS-based discovery under discussion for v1.3.
+- **Task** — The central [[Task Lifecycle]] unit. A Task has a UUID `id`, an optional `sessionId` for grouping correlated tasks, a `status` enumeration (submitted → working → input-required / completed / failed / cancelled), a `history` list of `Message` objects recording the conversation, and an `artifacts` list of `Artifact` objects containing the agent's outputs. Tasks support synchronous completion (for fast operations) and asynchronous streaming (for operations lasting seconds to days) via [[Server-Sent Events]].
+- **Message and Part** — A `Message` is either user-supplied input or agent output. It contains a `role` (user or agent), a `metadata` block, and a list of `Part` objects. A `Part` is a typed content unit: `TextPart` (plain text or markdown), `FilePart` (inline bytes or a URI reference), or `DataPart` (structured JSON for [[Function Calling]] results and structured data exchange).
+- **Artifact** — An output produced by the executing agent, referenced in the `Task.artifacts` list. Artifacts may contain multiple named parts, enabling an agent to return both a textual summary and a structured data object in a single task result.
+- **Extension** — A versioned extension namespace mechanism allowing vendors to add proprietary metadata to Agent Cards, Tasks, and Messages without breaking protocol compatibility. Extensions are type-safe and declared in the Agent Card, enabling progressive capability negotiation.
 
   The three concrete wire bindings in v1.0 are: (1) JSON-RPC 2.0 over HTTPS — the canonical and most widely deployed binding, using standard request–response for synchronous methods and [[Server-Sent Events]] for streaming; (2) gRPC — a [[gRPC]] binding offering lower latency and native streaming for high-throughput deployments; (3) HTTP+JSON/REST — a simplified REST binding for environments where JSON-RPC tooling is unavailable.
 
@@ -149,17 +144,12 @@ The Agent-to-Agent (A2A) Protocol is an open communication specification, initia
 
   Several directions are shaping A2A's evolution over the next four years:
 
-  - **Federated Agent Identity** — integrating [[Decentralised Identifier]] (DID) infrastructure with A2A [[Agent Card]] authentication, enabling agents to have self-sovereign, cryptographically verifiable identities that persist across cloud platforms and organisational boundaries. W3C DID Working Group members are contributing to A2A extensions addressing this.
-
-  - **Semantic Skill Matching** — moving beyond keyword-based skill description to ontology-grounded skill taxonomies that enable automated, semantically-aware skill matching. This connects A2A to the [[Semantic Web]] tradition and proposals for an [[Open Agent Network]] with shared ontologies for agent capability description.
-
-  - **Multi-hop Delegation Accountability** — developing provenance chains that record the full delegation tree for any given output, enabling [[AI Governance]] and auditability of complex multi-agent workflows. This is analogous to W3C PROV-DM but applied to agent task chains.
-
-  - **Privacy-Preserving Agent Interaction** — federated and confidential computing extensions that allow agents to collaborate on sensitive data without exposing it across trust boundaries, relevant for healthcare, legal, and financial agent deployments.
-
-  - **Real-Time Coordination** — A2A v1.3 is anticipated to formalise WebSocket transport for sub-second agent coordination scenarios, extending beyond the SSE streaming model suited to longer-horizon tasks.
-
-  - **Cross-Protocol Gateways** — lightweight adapter specifications enabling MCP tool endpoints to be exposed as A2A skills and vice versa, reducing friction for the large existing ecosystem of MCP servers.
+- **Federated Agent Identity** — integrating [[Decentralised Identifier]] (DID) infrastructure with A2A [[Agent Card]] authentication, enabling agents to have self-sovereign, cryptographically verifiable identities that persist across cloud platforms and organisational boundaries. W3C DID Working Group members are contributing to A2A extensions addressing this.
+- **Semantic Skill Matching** — moving beyond keyword-based skill description to ontology-grounded skill taxonomies that enable automated, semantically-aware skill matching. This connects A2A to the [[Semantic Web]] tradition and proposals for an [[Open Agent Network]] with shared ontologies for agent capability description.
+- **Multi-hop Delegation Accountability** — developing provenance chains that record the full delegation tree for any given output, enabling [[AI Governance]] and auditability of complex multi-agent workflows. This is analogous to W3C PROV-DM but applied to agent task chains.
+- **Privacy-Preserving Agent Interaction** — federated and confidential computing extensions that allow agents to collaborate on sensitive data without exposing it across trust boundaries, relevant for healthcare, legal, and financial agent deployments.
+- **Real-Time Coordination** — A2A v1.3 is anticipated to formalise WebSocket transport for sub-second agent coordination scenarios, extending beyond the SSE streaming model suited to longer-horizon tasks.
+- **Cross-Protocol Gateways** — lightweight adapter specifications enabling MCP tool endpoints to be exposed as A2A skills and vice versa, reducing friction for the large existing ecosystem of MCP servers.
 
   ## Research & Literature
 
@@ -192,5 +182,5 @@ The Agent-to-Agent (A2A) Protocol is an open communication specification, initia
   27. FreeCodeCamp. (2025). "How to Build a Multi-Agent AI System with LangGraph, MCP, and A2A." https://www.freecodecamp.org/news/how-to-build-a-multi-agent-ai-system-with-langgraph-mcp-and-a2a-full-book/
   28. Stellagent. (2026). "A2A Protocol Explained: How Google's Agent-to-Agent Standard Grew to 150+ Organizations in One Year." https://stellagent.ai/insights/a2a-protocol-google-agent-to-agent
 
-- ### Provenance
+### Provenance
 

@@ -1,42 +1,43 @@
-
 Multi-stage governance workflow mechanism enabling DAO community members to initiate, discuss, deliberate, vote upon, and execute protocol changes through structured processes that combine off-chain deliberation (forums, governance calls), cryptographic signalling via off-chain snapshot votes, and binding on-chain execution through smart contracts, with threshold requirements (token holdings, quorum) balancing permissionless participation against governance efficiency.
 
-- ### Semantic Classification
+### Semantic Classification
 
-- ### Content
-  Proposal systems in [[BC-0461-decentralized-autonomous-organization|DAOs]] represent the structured mechanisms through which community members initiate, discuss, refine, vote upon, and execute protocol changes, transforming decentralised governance from theoretical abstraction into operational reality through multi-stage workflows combining off-chain deliberation (forums, Discord, governance calls), cryptographic signaling ([[Snapshot]] off-chain votes), and binding [[BC-0462-on-chain-voting|on-chain execution]] via [[BC-0142-smart-contract|smart contracts]]. Unlike traditional corporate governance where proposals typically flow top-down from management to board approval to shareholder ratification, DAO proposal systems enable bottom-up community initiation whilst imposing significant barriers—[[BC-0463-governance-token|governance token]] thresholds requiring millions in token holdings, technical expertise to encode proposal actions in executable smart contract code, and social capital to mobilise community support through multi-week deliberation processes—creating tension between permissionless participation ideals and practical governance efficiency. The 2020-2025 period witnessed explosive growth in proposal sophistication across major DAOs like [[Uniswap]] (processing 50+ binding governance proposals governing $5B+ treasury and protocol parameters), [[MakerDAO]] (1,000+ executive votes managing $8B+ DeFi system), [[Compound]] (200+ proposals pioneering autonomous parameter adjustments), and [[Aave]] (150+ governance proposals coordinating multi-chain protocol deployments), whilst simultaneously exposing persistent challenges: proposal spam and low-quality submissions, voter fatigue and declining participation rates (5-15% typical turnout), governance attacks exploiting quorum requirements, the professionalization of proposal authorship concentrating power amongst technical elites, and the fundamental question of whether formal on-chain governance creates more problems than decentralised coordination solves.
+### Content
 
-  ### Proposal Lifecycle and Multi-Stage Governance
+Proposal systems in [[BC-0461-decentralized-autonomous-organization|DAOs]] represent the structured mechanisms through which community members initiate, discuss, refine, vote upon, and execute protocol changes, transforming decentralised governance from theoretical abstraction into operational reality through multi-stage workflows combining off-chain deliberation (forums, Discord, governance calls), cryptographic signaling ([[Snapshot]] off-chain votes), and binding [[BC-0462-on-chain-voting|on-chain execution]] via [[BC-0142-smart-contract|smart contracts]]. Unlike traditional corporate governance where proposals typically flow top-down from management to board approval to shareholder ratification, DAO proposal systems enable bottom-up community initiation whilst imposing significant barriers—[[BC-0463-governance-token|governance token]] thresholds requiring millions in token holdings, technical expertise to encode proposal actions in executable smart contract code, and social capital to mobilise community support through multi-week deliberation processes—creating tension between permissionless participation ideals and practical governance efficiency. The 2020-2025 period witnessed explosive growth in proposal sophistication across major DAOs like [[Uniswap]] (processing 50+ binding governance proposals governing $5B+ treasury and protocol parameters), [[MakerDAO]] (1,000+ executive votes managing $8B+ DeFi system), [[Compound]] (200+ proposals pioneering autonomous parameter adjustments), and [[Aave]] (150+ governance proposals coordinating multi-chain protocol deployments), whilst simultaneously exposing persistent challenges: proposal spam and low-quality submissions, voter fatigue and declining participation rates (5-15% typical turnout), governance attacks exploiting quorum requirements, the professionalization of proposal authorship concentrating power amongst technical elites, and the fundamental question of whether formal on-chain governance creates more problems than decentralised coordination solves.
 
-  Modern DAO proposal systems employ multi-stage workflows balancing accessibility, deliberation quality, and execution security:
+### Proposal Lifecycle and Multi-Stage Governance
 
-  **Stage 1: Ideation and Discussion (Off-Chain Forums)**
+Modern DAO proposal systems employ multi-stage workflows balancing accessibility, deliberation quality, and execution security:
 
-  Initial proposal concepts emerge through informal community discussions:
+**Stage 1: Ideation and Discussion (Off-Chain Forums)**
 
-  - **Platforms**: Discourse forums, Commonwealth, Discord channels, Telegram groups, governance calls
-  - **Participants**: Any community member can initiate discussion (no token threshold)
-  - **Duration**: Ongoing/indefinite until sufficient interest emerges
-  - **Output**: Rough proposal concept, identification of champions willing to formalize
+Initial proposal concepts emerge through informal community discussions:
+
+- **Platforms**: Discourse forums, Commonwealth, Discord channels, Telegram groups, governance calls
+- **Participants**: Any community member can initiate discussion (no token threshold)
+- **Duration**: Ongoing/indefinite until sufficient interest emerges
+- **Output**: Rough proposal concept, identification of champions willing to formalize
 
   **Example Forums:**
-  - **Uniswap Governance Forum** (gov.uniswap.org): 10,000+ posts, 3,000+ topics, dedicated categories for proposals, grants, meta-governance
-  - **MakerDAO Forum** (forum.makerdao.com): 50,000+ posts, extensive discussion threads on collateral onboarding, risk parameters, protocol upgrades
-  - **Compound Community Forum**: Technical discussions on interest rate models, asset listings, security
-  - **Aave Governance Forum**: Multi-chain deployment proposals, risk parameter adjustments, treasury allocations
+
+- **Uniswap Governance Forum** (gov.uniswap.org): 10,000+ posts, 3,000+ topics, dedicated categories for proposals, grants, meta-governance
+- **MakerDAO Forum** (forum.makerdao.com): 50,000+ posts, extensive discussion threads on collateral onboarding, risk parameters, protocol upgrades
+- **Compound Community Forum**: Technical discussions on interest rate models, asset listings, security
+- **Aave Governance Forum**: Multi-chain deployment proposals, risk parameter adjustments, treasury allocations
 
   **Stage 2: Temperature Check (Snapshot Signaling Vote)**
 
   Formalized proposal draft subjected to off-chain vote gauging community sentiment:
 
-  - **Platform**: Snapshot (snapshot.org) - off-chain governance signaling using cryptographic signatures
-  - **Requirements**:
-    - Minimum token holding to create Snapshot (varies: 50K-100K tokens typical)
-    - Structured proposal format (title, summary, motivation, specification, voting options)
-  - **Duration**: 3-7 days typically
-  - **Voting**: Free (no gas costs), uses EIP-712 signatures verified via IPFS
-  - **Quorum**: Lower than on-chain (often no quorum, simple majority sufficient)
-  - **Outcome**: Non-binding signal; if passes, proceeds to formal governance
+- **Platform**: Snapshot (snapshot.org) - off-chain governance signaling using cryptographic signatures
+- **Requirements**:
+  - Minimum token holding to create Snapshot (varies: 50K-100K tokens typical)
+  - Structured proposal format (title, summary, motivation, specification, voting options)
+- **Duration**: 3-7 days typically
+- **Voting**: Free (no gas costs), uses EIP-712 signatures verified via IPFS
+- **Quorum**: Lower than on-chain (often no quorum, simple majority sufficient)
+- **Outcome**: Non-binding signal; if passes, proceeds to formal governance
 
   **Snapshot Technical Mechanism:**
   ```
@@ -52,64 +53,60 @@ Multi-stage governance workflow mechanism enabling DAO community members to init
 
   For proposals passing temperature check, authors refine based on feedback:
 
-  - **Refinement**: Incorporate community feedback, address concerns, add technical specifications
-  - **Legal review**: For major proposals, DAOs increasingly conduct legal analysis (regulatory compliance, securities law implications, liability risks)
-  - **Security audit**: For smart contract changes, third-party audits verify code correctness
-  - **Economic modeling**: For parameter changes, quantitative analysis of expected impact
-  - **Second Snapshot**: Some DAOs require second off-chain vote on refined proposal before on-chain submission
+- **Refinement**: Incorporate community feedback, address concerns, add technical specifications
+- **Legal review**: For major proposals, DAOs increasingly conduct legal analysis (regulatory compliance, securities law implications, liability risks)
+- **Security audit**: For smart contract changes, third-party audits verify code correctness
+- **Economic modeling**: For parameter changes, quantitative analysis of expected impact
+- **Second Snapshot**: Some DAOs require second off-chain vote on refined proposal before on-chain submission
 
   **Stage 4: On-Chain Governance Proposal**
 
   Formal binding proposal submitted to blockchain for execution:
 
-  - **Requirements**:
-    - **Proposal threshold**: Minimum governance tokens held/delegated (Uniswap 2.5M UNI, Compound 400K COMP, Aave 80K AAVE)
-    - **Executable code**: Proposal must include exact smart contract function calls to execute if approved
-    - **Gas costs**: Submission costs $50-500 depending on Ethereum gas prices (proposal creation is complex transaction)
-
-  - **Components**:
-    - **Targets**: Array of contract addresses to call
-    - **Values**: ETH amounts to send with each call (typically zero)
-    - **Signatures**: Function signatures to call on each target
-    - **Calldatas**: ABI-encoded parameters for each function call
-    - **Description**: Human-readable proposal text (stored on-chain or IPFS)
-
-  - **Example Proposal Structure** (Compound Governor Bravo):
+- **Requirements**:
+  - **Proposal threshold**: Minimum governance tokens held/delegated (Uniswap 2.5M UNI, Compound 400K COMP, Aave 80K AAVE)
+  - **Executable code**: Proposal must include exact smart contract function calls to execute if approved
+  - **Gas costs**: Submission costs $50-500 depending on Ethereum gas prices (proposal creation is complex transaction)
+- **Components**:
+  - **Targets**: Array of contract addresses to call
+  - **Values**: ETH amounts to send with each call (typically zero)
+  - **Signatures**: Function signatures to call on each target
+  - **Calldatas**: ABI-encoded parameters for each function call
+  - **Description**: Human-readable proposal text (stored on-chain or IPFS)
+- **Example Proposal Structure** (Compound Governor Bravo):
   ```solidity
   function propose(
-      address[] memory targets,
-      uint[] memory values,
-      string[] memory signatures,
-      bytes[] memory calldatas,
-      string memory description
+    address[] memory targets,
+    uint[] memory values,
+    string[] memory signatures,
+    bytes[] memory calldatas,
+    string memory description
   ) public returns (uint)
   ```
-
-  - **Voting period**: 3-10 days (Uniswap 7 days, Compound 7 days, Aave 10 days)
-  - **Quorum requirement**: 3-5% of circulating supply typical (Uniswap 40M UNI = 4%, Compound 400K COMP = 4%)
-  - **Approval threshold**: Simple majority (For > Against) plus quorum met
+- **Voting period**: 3-10 days (Uniswap 7 days, Compound 7 days, Aave 10 days)
+- **Quorum requirement**: 3-5% of circulating supply typical (Uniswap 40M UNI = 4%, Compound 400K COMP = 4%)
+- **Approval threshold**: Simple majority (For > Against) plus quorum met
 
   **Stage 5: Timelock Delay**
 
   Successful proposals enter mandatory delay before execution:
 
-  - **Duration**: 2-7 days (Uniswap 2 days, Compound 2 days, Aave 1-7 days depending on risk)
-  - **Purpose**:
-    - **Security review**: Community inspects exact bytecode that will execute
-    - **Fraud detection**: Identify proposals with hidden malicious code
-    - **Exit window**: Users opposed to change can withdraw funds, sell tokens before execution
-    - **Emergency response**: If malicious code detected, activate emergency procedures (multisig intervention, migration)
-
-  - **Transparency**: During timelock, exact transaction data is public on-chain, enabling thorough verification
+- **Duration**: 2-7 days (Uniswap 2 days, Compound 2 days, Aave 1-7 days depending on risk)
+- **Purpose**:
+  - **Security review**: Community inspects exact bytecode that will execute
+  - **Fraud detection**: Identify proposals with hidden malicious code
+  - **Exit window**: Users opposed to change can withdraw funds, sell tokens before execution
+  - **Emergency response**: If malicious code detected, activate emergency procedures (multisig intervention, migration)
+- **Transparency**: During timelock, exact transaction data is public on-chain, enabling thorough verification
 
   **Stage 6: Execution**
 
   After timelock expiration, proposal executes automatically (or requires permissionless trigger):
 
-  - **Execution**: Anyone can call `execute()` function (small gas fee) to trigger queued proposal
-  - **Atomicity**: All proposal actions execute in single transaction (either all succeed or all revert)
-  - **Finality**: Once executed, changes are permanent (barring subsequent proposal to reverse)
-  - **Verification**: Community verifies execution matched proposal description
+- **Execution**: Anyone can call `execute()` function (small gas fee) to trigger queued proposal
+- **Atomicity**: All proposal actions execute in single transaction (either all succeed or all revert)
+- **Finality**: Once executed, changes are permanent (barring subsequent proposal to reverse)
+- **Verification**: Community verifies execution matched proposal description
 
   ### Real-World Proposal Systems
 
@@ -118,79 +115,90 @@ Multi-stage governance workflow mechanism enabling DAO community members to init
   Uniswap employs rigorous multi-stage process ensuring high-quality proposals:
 
   **1. Temperature Check (Discourse + Snapshot):**
-  - **Forum discussion**: 2-3 days minimum on gov.uniswap.org
-  - **Snapshot vote**: 5 days, 50K UNI threshold to create, simple majority to pass
-  - **Purpose**: Filter out low-quality proposals early (free voting encourages broad participation)
+
+- **Forum discussion**: 2-3 days minimum on gov.uniswap.org
+- **Snapshot vote**: 5 days, 50K UNI threshold to create, simple majority to pass
+- **Purpose**: Filter out low-quality proposals early (free voting encourages broad participation)
 
   **2. Consensus Check (Snapshot):**
-  - **Refined proposal**: Authors incorporate feedback, add technical specifications
-  - **Second Snapshot**: 5 days, 50K UNI threshold
-  - **Purpose**: Ensure refined proposal maintains community support before expensive on-chain submission
+
+- **Refined proposal**: Authors incorporate feedback, add technical specifications
+- **Second Snapshot**: 5 days, 50K UNI threshold
+- **Purpose**: Ensure refined proposal maintains community support before expensive on-chain submission
 
   **3. Governance Proposal (On-Chain):**
-  - **Requirements**: 2.5M UNI proposal threshold (~$19M at $7.50/UNI), 40M UNI quorum (4% of supply)
-  - **Voting**: 7 days on-chain
-  - **Timelock**: 2 days
-  - **Execution**: Automatic after timelock
+
+- **Requirements**: 2.5M UNI proposal threshold (~$19M at $7.50/UNI), 40M UNI quorum (4% of supply)
+- **Voting**: 7 days on-chain
+- **Timelock**: 2 days
+- **Execution**: Automatic after timelock
 
   **Historical Uniswap Proposals:**
-  - **UGP v0.1** (March 2021): $1.5M grants program, 40M UNI voted, passed 99.97% in favor
-  - **Deploy v3 on Optimism** (June 2021): First L2 deployment, 42M UNI voted, passed 99.3%
-  - **Deploy v3 on Polygon** (December 2021): Second L2 deployment, 45M UNI voted, passed 99.4%
-  - **Uniswap Foundation Funding** (June 2022): $74M UNI to foundation, 52M UNI voted, passed 84.3%
-  - **UNIfication Proposal** (December 2025): Passed with 99.9% support (125M+ UNI); burned 100M UNI (~$596M) from treasury, activated protocol fee switch redirecting trading fees to UNI burn, removed Uniswap Labs interface fees, approved 20M UNI annual growth budget
+
+- **UGP v0.1** (March 2021): $1.5M grants program, 40M UNI voted, passed 99.97% in favor
+- **Deploy v3 on Optimism** (June 2021): First L2 deployment, 42M UNI voted, passed 99.3%
+- **Deploy v3 on Polygon** (December 2021): Second L2 deployment, 45M UNI voted, passed 99.4%
+- **Uniswap Foundation Funding** (June 2022): $74M UNI to foundation, 52M UNI voted, passed 84.3%
+- **UNIfication Proposal** (December 2025): Passed with 99.9% support (125M+ UNI); burned 100M UNI (~$596M) from treasury, activated protocol fee switch redirecting trading fees to UNI burn, removed Uniswap Labs interface fees, approved 20M UNI annual growth budget
 
   **MakerDAO Dual Governance System:**
 
   MakerDAO uses unique system combining polls and executive votes:
 
   **Governance Polls (Non-Binding Signal):**
-  - **Purpose**: Gauge community sentiment on proposed changes before formal vote
-  - **Examples**: "Should we increase DAI Savings Rate from 1% to 2%?"
-  - **Voting**: MKR-weighted, no quorum, typically 3-7 days
-  - **Outcome**: Informs executive vote creation but doesn't execute changes
+
+- **Purpose**: Gauge community sentiment on proposed changes before formal vote
+- **Examples**: "Should we increase DAI Savings Rate from 1% to 2%?"
+- **Voting**: MKR-weighted, no quorum, typically 3-7 days
+- **Outcome**: Informs executive vote creation but doesn't execute changes
 
   **Executive Votes (Binding Execution):**
-  - **Mechanism**: "Spell" smart contracts encoding proposed changes
-  - **Voting**: MKR holders vote by staking tokens on preferred executive
-  - **No quorum**: Executive with most staked MKR becomes active (continuous approval voting)
-  - **Execution**: Leading executive automatically executes when overtaking previous executive
-  - **Unique feature**: Voters keep MKR staked indefinitely on preferred executive (not time-limited vote)
+
+- **Mechanism**: "Spell" smart contracts encoding proposed changes
+- **Voting**: MKR holders vote by staking tokens on preferred executive
+- **No quorum**: Executive with most staked MKR becomes active (continuous approval voting)
+- **Execution**: Leading executive automatically executes when overtaking previous executive
+- **Unique feature**: Voters keep MKR staked indefinitely on preferred executive (not time-limited vote)
 
   **MakerDAO Emergency Shutdown:**
-  - **Trigger**: 50,000 MKR staked on Emergency Shutdown Module (~$67M in 2024)
-  - **Effect**: Immediately halts protocol, allows DAI holders to redeem collateral
-  - **Purpose**: Protection against governance attacks, critical bugs, or black swan events
+
+- **Trigger**: 50,000 MKR staked on Emergency Shutdown Module (~$67M in 2024)
+- **Effect**: Immediately halts protocol, allows DAI holders to redeem collateral
+- **Purpose**: Protection against governance attacks, critical bugs, or black swan events
 
   **Historical MakerDAO Proposals:**
-  - **Collateral Onboarding**: 100+ new collateral types approved (USDC, wBTC, stETH, RWAs)
-  - **Stability Fee Adjustments**: 500+ parameter changes responding to market conditions
-  - **DAI Savings Rate Changes**: 200+ DSR adjustments balancing DAI demand
-  - **Sky Protocol Transition** (2024–2025): Restructuring into Sky Ecosystem; MKR token retired, SKY governance token launched September 2025; USDS replaced DAI as primary stablecoin
+
+- **Collateral Onboarding**: 100+ new collateral types approved (USDC, wBTC, stETH, RWAs)
+- **Stability Fee Adjustments**: 500+ parameter changes responding to market conditions
+- **DAI Savings Rate Changes**: 200+ DSR adjustments balancing DAI demand
+- **Sky Protocol Transition** (2024–2025): Restructuring into Sky Ecosystem; MKR token retired, SKY governance token launched September 2025; USDS replaced DAI as primary stablecoin
 
   **Compound Autonomous Proposals:**
 
   Compound pioneered autonomous on-chain governance with minimal off-chain coordination:
 
   **Proposal Process:**
-  - **Direct submission**: Proposals can skip off-chain stages and go directly on-chain (though discouraged)
-  - **Requirements**: 400K COMP proposal threshold + quorum (4% supply = 400K COMP)
-  - **Voting**: 7 days (50,400 Ethereum blocks)
-  - **Timelock**: 2 days
-  - **Scope**: Interest rate models, collateral factors, reserve factors, asset listings, COMP distribution
+
+- **Direct submission**: Proposals can skip off-chain stages and go directly on-chain (though discouraged)
+- **Requirements**: 400K COMP proposal threshold + quorum (4% supply = 400K COMP)
+- **Voting**: 7 days (50,400 Ethereum blocks)
+- **Timelock**: 2 days
+- **Scope**: Interest rate models, collateral factors, reserve factors, asset listings, COMP distribution
 
   **Governor Bravo Innovation:**
   Compound developed Governor Bravo contract (2020), which became industry standard:
-  - **Three voting options**: For, Against, Abstain (abstain counts toward quorum but not outcome)
-  - **Proposal threshold checking**: Proposer must maintain threshold throughout voting (prevents flash loan governance attacks)
-  - **Timelock integration**: Automatic queuing of successful proposals with mandatory delay
-  - **Delegation support**: Voting power delegation without token transfer
+
+- **Three voting options**: For, Against, Abstain (abstain counts toward quorum but not outcome)
+- **Proposal threshold checking**: Proposer must maintain threshold throughout voting (prevents flash loan governance attacks)
+- **Timelock integration**: Automatic queuing of successful proposals with mandatory delay
+- **Delegation support**: Voting power delegation without token transfer
 
   **Historical Compound Proposals:**
-  - **COMP Distribution Launch** (Proposal 007, June 2020): Activated COMP token distribution, catalyzed DeFi Summer
-  - **cDAI Interest Rate Model** (Multiple proposals): Optimized borrowing costs for DAI market
-  - **Compound III (Comet)**: New protocol version with different architecture, approved via governance
-  - **Treasury Diversification**: Proposals to convert COMP treasury holdings into stablecoins
+
+- **COMP Distribution Launch** (Proposal 007, June 2020): Activated COMP token distribution, catalyzed DeFi Summer
+- **cDAI Interest Rate Model** (Multiple proposals): Optimized borrowing costs for DAI market
+- **Compound III (Comet)**: New protocol version with different architecture, approved via governance
+- **Treasury Diversification**: Proposals to convert COMP treasury holdings into stablecoins
 
   **Aave Risk-Tiered Governance:**
 
@@ -202,16 +210,18 @@ Multi-stage governance workflow mechanism enabling DAO community members to init
   3. **High Risk** (7-day timelock): Smart contract upgrades, major protocol changes
 
   **Aave Improvement Proposals (AIPs):**
-  - **Proposition Power**: 80,000 AAVE required to create proposal
-  - **Voting Power**: 320,000 AAVE quorum required (2% of supply)
-  - **Voting Period**: ~10 days
-  - **Multi-Chain Coordination**: Proposals can trigger actions across Ethereum, Polygon, Avalanche, Optimism, Arbitrum
+
+- **Proposition Power**: 80,000 AAVE required to create proposal
+- **Voting Power**: 320,000 AAVE quorum required (2% of supply)
+- **Voting Period**: ~10 days
+- **Multi-Chain Coordination**: Proposals can trigger actions across Ethereum, Polygon, Avalanche, Optimism, Arbitrum
 
   **Historical Aave Proposals:**
-  - **AIP-16: Aavenomics** (October 2020): Introduced Safety Module staking and AAVE value accrual
-  - **AIP-27: Add GHO** (July 2023): Launched Aave's native stablecoin GHO
-  - **AIP-45: Aave v3 Deployment** (March 2022): Deployed v3 across multiple chains
-  - **AIP-60: Treasury Management** (2023): Allocated treasury to yield-generating strategies
+
+- **AIP-16: Aavenomics** (October 2020): Introduced Safety Module staking and AAVE value accrual
+- **AIP-27: Add GHO** (July 2023): Launched Aave's native stablecoin GHO
+- **AIP-45: Aave v3 Deployment** (March 2022): Deployed v3 across multiple chains
+- **AIP-60: Treasury Management** (2023): Allocated treasury to yield-generating strategies
 
   ### Proposal Templates and Standards
 
@@ -219,50 +229,50 @@ Multi-stage governance workflow mechanism enabling DAO community members to init
 
   **Standard Proposal Structure:**
 
-  ```markdown
-  # [Proposal ID]: [Title]
+```markdown
+# [Proposal ID]: [Title]
 
-  ## Summary
-  [2-3 sentence overview]
+## Summary
+[2-3 sentence overview]
 
-  ## Motivation
-  [Why is this change needed? What problem does it solve?]
+## Motivation
+[Why is this change needed? What problem does it solve?]
 
-  ## Specification
-  [Exact technical details of proposed change]
+## Specification
+[Exact technical details of proposed change]
 
-  ### Technical Implementation
-  [Smart contract addresses, function calls, parameters]
+### Technical Implementation
+[Smart contract addresses, function calls, parameters]
 
-  ### Security Considerations
-  [Risks, attack vectors, mitigations]
+### Security Considerations
+[Risks, attack vectors, mitigations]
 
-  ### Economic Impact
-  [Expected effects on protocol metrics, users, treasury]
+### Economic Impact
+[Expected effects on protocol metrics, users, treasury]
 
-  ## Voting Options
-  - **For**: [What voting "yes" means]
-  - **Against**: [What voting "no" means]
-  - **Abstain**: [Counted toward quorum but not outcome]
+## Voting Options
+- **For**: [What voting "yes" means]
+- **Against**: [What voting "no" means]
+- **Abstain**: [Counted toward quorum but not outcome]
 
-  ## Timeline
-  - Temperature Check: [Dates]
-  - Consensus Check: [Dates]
-  - On-Chain Vote: [Dates]
-  - Timelock: [Duration]
-  - Execution: [Expected date]
+## Timeline
+- Temperature Check: [Dates]
+- Consensus Check: [Dates]
+- On-Chain Vote: [Dates]
+- Timelock: [Duration]
+- Execution: [Expected date]
 
-  ## References
-  [Forum links, audit reports, economic analysis, prior art]
-  ```
+## References
+[Forum links, audit reports, economic analysis, prior art]
+```
 
-  **Specialized Templates:**
+**Specialized Templates:**
 
-  - **Collateral Onboarding (MakerDAO)**: Risk assessment, oracle configuration, liquidation parameters, debt ceiling
-  - **Asset Listing (Aave, Compound)**: Market parameters, interest rate curves, collateral factors, supply/borrow caps
-  - **Treasury Allocation (Multiple DAOs)**: Budget breakdown, deliverables, milestones, accountability mechanisms
-  - **Parameter Changes**: Current vs proposed values, expected impact, rollback procedures
-  - **Smart Contract Upgrades**: Diff of code changes, audit reports, migration procedures, emergency response plans
+- **Collateral Onboarding (MakerDAO)**: Risk assessment, oracle configuration, liquidation parameters, debt ceiling
+- **Asset Listing (Aave, Compound)**: Market parameters, interest rate curves, collateral factors, supply/borrow caps
+- **Treasury Allocation (Multiple DAOs)**: Budget breakdown, deliverables, milestones, accountability mechanisms
+- **Parameter Changes**: Current vs proposed values, expected impact, rollback procedures
+- **Smart Contract Upgrades**: Diff of code changes, audit reports, migration procedures, emergency response plans
 
   ### Proposal Authorship and Professionalization
 
@@ -286,16 +296,17 @@ Multi-stage governance workflow mechanism enabling DAO community members to init
 
   Specialized firms emerged offering proposal-as-a-service:
 
-  - **Llama**: DAO treasury and governance consulting, authored proposals for major DAOs, provides economic analysis and execution support
-  - **Gauntlet**: Financial modeling and risk analysis for DeFi protocols, authored Aave/Compound parameter optimization proposals
-  - **StableLab**: Governance participation service, delegates and proposal authorship
-  - **BlockworksResearch**: Governance research and proposal strategy
+- **Llama**: DAO treasury and governance consulting, authored proposals for major DAOs, provides economic analysis and execution support
+- **Gauntlet**: Financial modeling and risk analysis for DeFi protocols, authored Aave/Compound parameter optimization proposals
+- **StableLab**: Governance participation service, delegates and proposal authorship
+- **BlockworksResearch**: Governance research and proposal strategy
 
   **Implications:**
-  - **Governance professionalization**: High-quality proposals increasingly authored by paid experts rather than community volunteers
-  - **Centralization concerns**: Small number of service providers author large percentage of proposals across ecosystem
-  - **Quality improvement**: Professional proposals tend to be better researched, technically sound, legally reviewed
-  - **Accessibility erosion**: Smaller community members increasingly excluded from proposal authorship
+
+- **Governance professionalization**: High-quality proposals increasingly authored by paid experts rather than community volunteers
+- **Centralization concerns**: Small number of service providers author large percentage of proposals across ecosystem
+- **Quality improvement**: Professional proposals tend to be better researched, technically sound, legally reviewed
+- **Accessibility erosion**: Smaller community members increasingly excluded from proposal authorship
 
   ### Proposal Challenges and Attack Vectors
 
@@ -304,17 +315,19 @@ Multi-stage governance workflow mechanism enabling DAO community members to init
   **Proposal Spam and Low-Quality Submissions:**
 
   High proposal thresholds mitigate spam, but DAOs still face:
-  - **Self-serving grants**: Participants proposing grants to themselves or affiliated entities
-  - **Duplicative proposals**: Multiple proposals addressing same issue slightly differently
-  - **Underdeveloped proposals**: Insufficient technical specification, no security review, unclear impact analysis
-  - **Attention fragmentation**: Too many simultaneous proposals overwhelm voter capacity to evaluate
+
+- **Self-serving grants**: Participants proposing grants to themselves or affiliated entities
+- **Duplicative proposals**: Multiple proposals addressing same issue slightly differently
+- **Underdeveloped proposals**: Insufficient technical specification, no security review, unclear impact analysis
+- **Attention fragmentation**: Too many simultaneous proposals overwhelm voter capacity to evaluate
 
   **Voter Fatigue and Declining Participation:**
 
   Excessive governance burden reduces participation:
-  - **MakerDAO**: 500+ annual votes creates fatigue; participation often <10% MKR
-  - **Compound**: 50+ annual proposals; participation 8-15% COMP
-  - **Uniswap**: Selective on-chain voting (rigorous off-chain filtering) maintains 5-10% participation
+
+- **MakerDAO**: 500+ annual votes creates fatigue; participation often <10% MKR
+- **Compound**: 50+ annual proposals; participation 8-15% COMP
+- **Uniswap**: Selective on-chain voting (rigorous off-chain filtering) maintains 5-10% participation
 
   **Governance Attacks:**
 
@@ -331,9 +344,10 @@ Multi-stage governance workflow mechanism enabling DAO community members to init
   **Governance Gridlock:**
 
   High quorum requirements can prevent legitimate proposals from passing:
-  - **Too-high quorum**: If 10% quorum required but only 8% participate, all proposals fail regardless of support
-  - **Competing proposals**: Multiple proposals addressing same issue split votes, none achieve quorum
-  - **Controversial changes**: Divisive proposals (fee switch activation) may approach but never achieve quorum
+
+- **Too-high quorum**: If 10% quorum required but only 8% participate, all proposals fail regardless of support
+- **Competing proposals**: Multiple proposals addressing same issue split votes, none achieve quorum
+- **Controversial changes**: Divisive proposals (fee switch activation) may approach but never achieve quorum
 
   ### Emergency Proposals and Fast-Track Mechanisms
 
@@ -351,15 +365,16 @@ Multi-stage governance workflow mechanism enabling DAO community members to init
 
   **Examples:**
 
-  - **MakerDAO Emergency Shutdown**: 50K MKR can immediately halt protocol, preventing further damage during critical failures
-  - **Compound Guardian**: Multisig can cancel malicious proposals during timelock, veto dangerous parameter changes
-  - **Aave Emergency Admin**: Can pause protocol during active exploits, freeze reserves, disable borrowing
-  - **Uniswap Emergency Response**: Foundation multisig can intervene if governance is compromised, though never used as of 2025
+- **MakerDAO Emergency Shutdown**: 50K MKR can immediately halt protocol, preventing further damage during critical failures
+- **Compound Guardian**: Multisig can cancel malicious proposals during timelock, veto dangerous parameter changes
+- **Aave Emergency Admin**: Can pause protocol during active exploits, freeze reserves, disable borrowing
+- **Uniswap Emergency Response**: Foundation multisig can intervene if governance is compromised, though never used as of 2025
 
   **Trade-offs:**
-  - **Security vs Decentralization**: Emergency powers centralize control, contradicting DAO ethos, but necessary for security
-  - **Abuse risk**: Malicious multisig could abuse emergency powers to extract value, censor legitimate proposals
-  - **Transition plan**: Most DAOs plan eventual removal of emergency powers as protocols mature and ossify
+
+- **Security vs Decentralization**: Emergency powers centralize control, contradicting DAO ethos, but necessary for security
+- **Abuse risk**: Malicious multisig could abuse emergency powers to extract value, censor legitimate proposals
+- **Transition plan**: Most DAOs plan eventual removal of emergency powers as protocols mature and ossify
 
   ### Proposal Analytics and Tooling
 
@@ -367,22 +382,22 @@ Multi-stage governance workflow mechanism enabling DAO community members to init
 
   **Governance Platforms:**
 
-  - **Tally** (tally.xyz): On-chain governance interface, supports proposal creation/voting for Governor-based DAOs, provides analytics dashboards
-  - **Snapshot** (snapshot.org): Off-chain signaling votes, 10,000+ DAOs using platform, supports multiple voting strategies
-  - **Boardroom** (boardroom.io): Aggregates governance across DAOs, provides proposal notifications, voting history tracking
-  - **Commonwealth** (commonwealth.im): Discussion forums + governance voting integrated platform
+- **Tally** (tally.xyz): On-chain governance interface, supports proposal creation/voting for Governor-based DAOs, provides analytics dashboards
+- **Snapshot** (snapshot.org): Off-chain signaling votes, 10,000+ DAOs using platform, supports multiple voting strategies
+- **Boardroom** (boardroom.io): Aggregates governance across DAOs, provides proposal notifications, voting history tracking
+- **Commonwealth** (commonwealth.im): Discussion forums + governance voting integrated platform
 
   **Delegation Platforms:**
 
-  - **Agora** (voteagora.com): Optimism governance and delegation
-  - **Karma** (karmahq.xyz): Delegate discovery and reputation scoring
-  - **Delegation dashboards**: DAO-specific platforms showing delegate voting records, participation rates, alignment
+- **Agora** (voteagora.com): Optimism governance and delegation
+- **Karma** (karmahq.xyz): Delegate discovery and reputation scoring
+- **Delegation dashboards**: DAO-specific platforms showing delegate voting records, participation rates, alignment
 
   **Analytics and Transparency:**
 
-  - **DeepDAO**: DAO governance analytics, tracks proposals, participation, treasury across 1000+ DAOs
-  - **Dune Analytics**: Community-built SQL dashboards analyzing proposal outcomes, voter behavior, participation trends
-  - **Nansen**: On-chain analytics identifying whale voting patterns, delegation flows, governance influence
+- **DeepDAO**: DAO governance analytics, tracks proposals, participation, treasury across 1000+ DAOs
+- **Dune Analytics**: Community-built SQL dashboards analyzing proposal outcomes, voter behavior, participation trends
+- **Nansen**: On-chain analytics identifying whale voting patterns, delegation flows, governance influence
 
   ### Best Practices for Proposal Systems
 
@@ -422,18 +437,17 @@ Multi-stage governance workflow mechanism enabling DAO community members to init
 
   ### References and Case Studies
 
-  - [[BC-0461-decentralized-autonomous-organization]]
-  - [[BC-0462-on-chain-voting]]
-  - [[BC-0463-governance-token]]
-  - [[BC-0464-treasury-management]]
-  - [[BC-0142-smart-contract]]
-  - [[Uniswap Governance Process]]
-  - [[MakerDAO Executive Votes]]
-  - [[Compound Governor Bravo]]
-  - [[Aave Improvement Proposals]]
-  - [[Snapshot Off-Chain Voting]]
-  - [[Tally Governance]]
+- [[BC-0461-decentralized-autonomous-organization]]
+- [[BC-0462-on-chain-voting]]
+- [[BC-0463-governance-token]]
+- [[BC-0464-treasury-management]]
+- [[BC-0142-smart-contract]]
+- [[Uniswap Governance Process]]
+- [[MakerDAO Executive Votes]]
+- [[Compound Governor Bravo]]
+- [[Aave Improvement Proposals]]
+- [[Snapshot Off-Chain Voting]]
+- [[Tally Governance]]
 
-
-- ### Provenance
+### Provenance
 

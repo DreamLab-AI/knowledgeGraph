@@ -1,19 +1,18 @@
-
 Nostr (Notes and Other Stuff Transmitted by Relays) is a minimalist open protocol for censorship-resistant, decentralised messaging and identity, in which clients sign events with Schnorr Signatures|Schnorr signatures over the secp256k1 elliptic curve and broadcast them to any number of s...
 
-- ### Semantic Classification
+### Semantic Classification
 
-- ### Content
+### Content
 
-  The Nostr protocol was published in 2020 by the pseudonymous developer fiatjaf as perhaps the simplest possible architecture for censorship-resistant global communication. Rather than federating servers (like ActivityPub) or building a peer-to-peer DHT (like Secure Scuttlebutt), Nostr adopts a relay model: clients are fully sovereign, holding their own keypairs, and relay servers are deliberately kept "dumb" — they store and forward signed events without understanding their content. This means a relay can be added or discarded at will; if one censors a user, the client switches to another relay, and the user's identity (their keypair) travels with them unchanged.
+The Nostr protocol was published in 2020 by the pseudonymous developer fiatjaf as perhaps the simplest possible architecture for censorship-resistant global communication. Rather than federating servers (like ActivityPub) or building a peer-to-peer DHT (like Secure Scuttlebutt), Nostr adopts a relay model: clients are fully sovereign, holding their own keypairs, and relay servers are deliberately kept "dumb" — they store and forward signed events without understanding their content. This means a relay can be added or discarded at will; if one censors a user, the client switches to another relay, and the user's identity (their keypair) travels with them unchanged.
 
-  #### Key Characteristics
+#### Key Characteristics
 
-  - **Event-Centric Data Model**: All data is encapsulated in a signed [[Nostr Event]] JSON object with fields: `id` (SHA-256 of the canonical serialisation), `pubkey` (author's secp256k1 public key), `created_at` (Unix timestamp), `kind` (integer event type), `tags` (key-value metadata), `content` (payload string), and `sig` (64-byte Schnorr signature).
-  - **NIP Architecture**: Nostr Implementation Possibilities (NIPs) extend the base protocol without breaking backward compatibility. NIP-01 defines the core event flow; NIP-04/44 specify encrypted DMs; NIP-05 maps npub keys to DNS-verified identities; NIP-47 defines Nostr Wallet Connect for Lightning payments; NIP-90 specifies Data Vending Machines for AI services.
-  - **Relay Agnosticism**: Clients connect to multiple relays simultaneously; event delivery is probabilistic but highly resilient. Popular events propagate across the relay network via client cross-posting.
-  - **Schnorr Signature Security**: The same cryptographic primitive ([[BIP-340 Schnorr Keypair|BIP-340]] Schnorr over secp256k1) underpins both Nostr identity and Bitcoin [[Taproot]] transactions, enabling the same keypair to serve dual identity and payment purposes.
-  - **Lightning Integration**: NIP-57 Zaps allow users and agents to attach [[Bitcoin Lightning Network]] micropayments to any event, creating a native attention economy and enabling machine-to-machine payment rails for [[AI agent]] services.
+- **Event-Centric Data Model**: All data is encapsulated in a signed [[Nostr Event]] JSON object with fields: `id` (SHA-256 of the canonical serialisation), `pubkey` (author's secp256k1 public key), `created_at` (Unix timestamp), `kind` (integer event type), `tags` (key-value metadata), `content` (payload string), and `sig` (64-byte Schnorr signature).
+- **NIP Architecture**: Nostr Implementation Possibilities (NIPs) extend the base protocol without breaking backward compatibility. NIP-01 defines the core event flow; NIP-04/44 specify encrypted DMs; NIP-05 maps npub keys to DNS-verified identities; NIP-47 defines Nostr Wallet Connect for Lightning payments; NIP-90 specifies Data Vending Machines for AI services.
+- **Relay Agnosticism**: Clients connect to multiple relays simultaneously; event delivery is probabilistic but highly resilient. Popular events propagate across the relay network via client cross-posting.
+- **Schnorr Signature Security**: The same cryptographic primitive ([[BIP-340 Schnorr Keypair|BIP-340]] Schnorr over secp256k1) underpins both Nostr identity and Bitcoin [[Taproot]] transactions, enabling the same keypair to serve dual identity and payment purposes.
+- **Lightning Integration**: NIP-57 Zaps allow users and agents to attach [[Bitcoin Lightning Network]] micropayments to any event, creating a native attention economy and enabling machine-to-machine payment rails for [[AI agent]] services.
 
   #### How It Works
 
@@ -33,11 +32,11 @@ Nostr (Notes and Other Stuff Transmitted by Relays) is a minimalist open protoco
 
   #### Standards and References
 
-  - fiatjaf. (2020). *Nostr Protocol — Notes and Other Stuff Transmitted by Relays*. https://github.com/nostr-protocol/nostr
-  - W3C Nostr Community Group. (2024). *did:nostr DID Method Specification*. https://nostrcg.github.io/did-nostr/
-  - Dorsey, J. (2023). *Bitcoin's censorship-resistant potential and Nostr*. https://www.piratewires.com/p/interview-with-jack-dorsey-mike-solana
-  - Skywork AI. (2024). "Unlocking Agentic AI: Nostr and Lightning MCP Servers." https://skywork.ai/
-  - Arxiv. (2024). "FEDSTR: Money-In AI-Out — A Decentralised Marketplace for Federated Learning on Nostr." arXiv:2404.15834.
+- fiatjaf. (2020). *Nostr Protocol — Notes and Other Stuff Transmitted by Relays*. https://github.com/nostr-protocol/nostr
+- W3C Nostr Community Group. (2024). *did:nostr DID Method Specification*. https://nostrcg.github.io/did-nostr/
+- Dorsey, J. (2023). *Bitcoin's censorship-resistant potential and Nostr*. https://www.piratewires.com/p/interview-with-jack-dorsey-mike-solana
+- Skywork AI. (2024). "Unlocking Agentic AI: Nostr and Lightning MCP Servers." https://skywork.ai/
+- Arxiv. (2024). "FEDSTR: Money-In AI-Out — A Decentralised Marketplace for Federated Learning on Nostr." arXiv:2404.15834.
 
-- ### Provenance
+### Provenance
 

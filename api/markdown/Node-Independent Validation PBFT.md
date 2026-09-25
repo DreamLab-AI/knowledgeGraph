@@ -1,4 +1,3 @@
-
 Node-Independent Validation PBFT is a variant of Practical Byzantine Fault Tolerance in which each validator independently verifies transaction validity without delegating validation authority to a designated primary node, eliminating the single point of failure inherent in classical PBFT's primary-replica model. By distributing validation responsibility uniformly across all consensus participants, the protocol improves resilience against primary node compromise and reduces the attack surface for Byzantine behaviour in consortium and enterprise blockchain deployments.
 
 ### Definition
@@ -19,5 +18,5 @@ The key security improvement is that an adversary must corrupt a quorum of indep
 
 Practical deployments appear in supply chain, financial settlement, and healthcare consortium blockchains where regulatory requirements demand deterministic finality and auditability that probabilistic protocols cannot provide. Integration with threshold signature schemes reduces the per-round message complexity by replacing n² individual signatures with a single aggregated signature, making node-independent validation scalable to larger committees.
 
-- ### Provenance
+### Provenance
 

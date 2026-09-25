@@ -1,22 +1,28 @@
-
 Proof of Spacetime (PoSt) is a cryptographic consensus mechanism in which a participant repeatedly proves that it has continuously stored a specific set of data over a period of time, rather than expending computation as in proof of work. Used by decentralised storage networks such as Filecoin, it combines storage proofs with time-based challenges so that providers cannot reclaim space without losing the ability to answer. This ties block production and rewards to verifiable, useful storage capacity.
 
 - Proof Of Spacetime is a [[Consensus Mechanism]] that uses [[Cryptographic Proof]] and [[Verifiable Computation]] to demonstrate that data has been stored continuously over time, powering [[Decentralized Storage]] networks like [[Filecoin]].
 - It binds rewards to ongoing, verifiable storage rather than raw computation.
-- ### Overview
+
+### Overview
+
 - Proof of Spacetime answers a question that proof of work cannot: not just that a participant did work once, but that it has held a specific dataset intact across a span of time. It builds on proof of replication, which establishes that a unique physical copy of the data exists, and adds repeated time-based challenges that a provider can only answer while still storing the data.
 - In storage blockchains, providers periodically generate compact proofs in response to unpredictable challenges. Failing or being slow to respond signals that the data was discarded, triggering penalties. Because the proofs are succinct and verifiable on-chain, the network can trust storage commitments without re-downloading the underlying data.
 - This reorients consensus economics around a useful resource, durable storage, in contrast to the otherwise unproductive hashing of proof of work.
-- ### Mechanisms
+
+### Mechanisms
+
 - Proof of replication establishes that a distinct encoded copy of the data exists at a provider.
 - Time-bound challenges force providers to prove possession repeatedly across epochs.
 - Succinct proofs let verifiers confirm storage cheaply without holding the data themselves.
 - Slashing penalises providers that fail or delay their spacetime proofs.
 - Sector-based accounting groups stored data into units that are proven and tracked together.
-- ### Applications
+
+### Applications
+
 - Block production and rewards in decentralised storage networks such as Filecoin.
 - Verifiable long-term archival where durability must be cryptographically demonstrated.
 - Markets that pay providers for committed, provable storage capacity.
 - Integration with content-addressed systems like IPFS for retrievable, persistent data.
-- ### Provenance
+
+### Provenance
 

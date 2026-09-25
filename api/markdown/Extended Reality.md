@@ -1,91 +1,115 @@
-
 Extended Reality (XR) is an umbrella term encompassing Virtual Reality (VR), Augmented Reality (AR), and Mixed Reality (MR) — technologies that collectively span the full Reality-Virtuality Continuum first formalised by Milgram and Kishino (1994). XR systems alter or extend a user's perception of the physical environment through head-mounted displays, inside-out spatial tracking, real-time 3D rendering, and multi-modal input (gaze, gesture, voice, haptics). As the primary experiential layer of the spatial computing stack, XR bridges physical and digital environments across enterprise training, healthcare simulation, collaborative design, and consumer entertainment. Standardisation through Khronos OpenXR and W3C WebXR enables cross-vendor application portability and browser-based delivery.
 
-- ### Overview
-  - XR technologies occupy a continuum running from fully synthetic [[Virtual Reality]] environments — in which all sensory input is computer-generated — through [[Augmented Reality]] overlays that annotate the physical world with digital information, to [[Mixed Reality]] that anchors digital objects to physical surfaces with full environmental awareness.
-  - The XR stack operates across three tiers: perception (sensors, [[Spatial Tracking]], [[Eye Tracking]], [[Hand Tracking]]), processing ([[Real-Time Rendering]], scene understanding, AI inference), and presentation (optics, [[Spatial Audio]], [[Haptics]]).
-  - Why it matters: XR collapses spatial distance for [[Remote Collaboration]], enables risk-free rehearsal of dangerous tasks (surgical, industrial, military), and opens new modes of human-computer interaction beyond the [[Two-Dimensional Interface]] paradigm that has dominated computing since the desktop era.
-  - The transition from tethered, high-end headsets to standalone, lightweight devices has significantly lowered the deployment barrier, enabling enterprise adoption at scale.
+### Overview
 
-- ### Key Components
-  - #### Hardware Platform
-    - [[Head-Mounted Display]] (HMD) — the primary visual output device, ranging from opaque VR enclosures to optical see-through AR waveguides.
-    - [[XR Hardware]] ecosystem: controllers, trackers, depth cameras, and inertial measurement units (IMUs).
-    - [[Haptics]] — tactile feedback gloves, vests, and controllers providing kinaesthetic presence.
-    - [[Hand Tracking]] — markerless optical hand pose estimation replacing physical controllers.
-    - [[Eye Tracking]] — enables foveated rendering (reducing GPU load), social gaze interaction, and attention analytics.
-  - #### Sensing and Localisation
-    - [[Spatial Tracking]] — inside-out tracking uses on-device cameras to estimate 6-DoF headset pose without external infrastructure.
-    - [[Simultaneous Localisation and Mapping]] (SLAM) — builds and updates a map of the environment while tracking device position within it; foundational to [[Augmented Reality]] and [[Mixed Reality]].
-    - Depth sensing (structured light, time-of-flight, stereo) enables mesh reconstruction of physical environments.
-  - #### Rendering and Compute
-    - [[Real-Time Rendering]] at high frame rates (72–120 Hz) is essential to prevent motion sickness (vestibulo-ocular conflict).
-    - Foveated rendering — rendering high resolution only in the gaze direction detected via [[Eye Tracking]] — reduces GPU cost.
-    - [[Edge Computing]] and cloud render-streaming offload heavy compute from constrained headset hardware.
-  - #### Software and Standards
-    - [[OpenXR]] (Khronos Group) — a royalty-free, cross-vendor API enabling a single codebase to run across headsets from multiple manufacturers.
-    - [[WebXR Device API]] (W3C) — exposes XR device capabilities to web browsers, enabling zero-install XR experiences.
-    - Game engines ([[Unity]], [[Unreal Engine]]) serve as primary development environments for XR content.
-  - #### Modality
-    - [[Virtual Reality]] — fully immersive; physical environment replaced entirely.
-    - [[Augmented Reality]] — digital overlays composited on live camera feed or optical see-through view.
-    - [[Mixed Reality]] — digital content spatially anchored to and occluded by real-world geometry.
-    - [[WebXR]] — browser-based XR delivery without native installation.
+- XR technologies occupy a continuum running from fully synthetic [[Virtual Reality]] environments — in which all sensory input is computer-generated — through [[Augmented Reality]] overlays that annotate the physical world with digital information, to [[Mixed Reality]] that anchors digital objects to physical surfaces with full environmental awareness.
+- The XR stack operates across three tiers: perception (sensors, [[Spatial Tracking]], [[Eye Tracking]], [[Hand Tracking]]), processing ([[Real-Time Rendering]], scene understanding, AI inference), and presentation (optics, [[Spatial Audio]], [[Haptics]]).
+- Why it matters: XR collapses spatial distance for [[Remote Collaboration]], enables risk-free rehearsal of dangerous tasks (surgical, industrial, military), and opens new modes of human-computer interaction beyond the [[Two-Dimensional Interface]] paradigm that has dominated computing since the desktop era.
+- The transition from tethered, high-end headsets to standalone, lightweight devices has significantly lowered the deployment barrier, enabling enterprise adoption at scale.
 
-- ### Applications and Use Cases
-  - #### Enterprise and Industrial
-    - Maintenance and repair training: technicians rehearse complex procedures on [[Digital Twin]] representations of equipment, reducing errors and downtime.
-    - Remote expert assistance: field workers stream their field of view to remote specialists who overlay annotations via [[Augmented Reality]].
-    - Architectural and design review: spatial walkthroughs of building information models (BIM) before construction.
-    - Manufacturing assembly guidance: step-by-step AR instructions projected onto physical workpieces.
-  - #### Healthcare
-    - Surgical simulation and planning using patient-specific [[Digital Twin]] anatomy.
-    - Phobia and PTSD treatment through controlled exposure in [[Virtual Reality]].
-    - Pain management — VR distraction therapy during wound care and chemotherapy.
-    - Medical education: anatomy training in immersive 3D rather than cadaveric dissection alone.
-  - #### Education and Training
-    - Vocational training for hazardous environments (mining, aviation, nuclear) without physical risk.
-    - Language immersion through contextual [[Virtual Reality]] environments.
-    - Collaborative virtual classrooms enabling [[Remote Collaboration]] across geographies.
-  - #### Consumer and Entertainment
-    - Immersive gaming and interactive narrative experiences in [[Virtual Reality]].
-    - Live events (concerts, sports) with spatial presence.
-    - Social platforms building towards the [[Metaverse]] vision of persistent, shared XR spaces.
-  - #### Defence and Public Safety
-    - Mission rehearsal and combined-arms simulation.
-    - Situational awareness overlays for first responders via [[Augmented Reality]] headsets.
+### Key Components
 
-- ### Standards and Governance
-  - **Khronos Group [[OpenXR]]** — the primary cross-vendor API standard. Ratified 2019; adopted by Meta, Microsoft, Valve, Sony, HTC, and others. Separates application code from vendor-specific runtimes, ending the era of per-headset SDK fragmentation.
-  - **W3C [[WebXR Device API]]** — standardises access to XR hardware from web browsers (Chrome, Firefox Reality, Samsung Internet). Covers session lifecycle, reference spaces, input sources, and hit-testing for AR.
-  - **IEEE 2048 (Virtual Reality and Augmented Reality)** — a working group addressing terminology, latency, tracking accuracy, and interoperability testing methodologies.
-  - **ISO/IEC JTC1 SC24** — computer graphics, image processing, and environmental data representation; underpins geometry and scene graph standards relevant to XR.
-  - **GSMA XR Traffic** — mobile network operator guidelines for streaming XR traffic (latency budgets, uplink throughput requirements for cloud render-streaming).
-  - Platform governance: Meta (Quest platform), Apple (visionOS), Microsoft (HoloLens / Windows Mixed Reality), and Google (ARCore) each maintain proprietary layers above the [[OpenXR]] baseline, creating partial fragmentation at the feature layer.
+#### Hardware Platform
 
-- ### Challenges and Limitations
-  - **Latency** — motion-to-photon latency must remain below ~20 ms to prevent motion sickness; this constrains wireless streaming fidelity.
-  - **Field of view** — current HMDs offer 90°–120° FoV vs. human binocular ~200°, breaking peripheral immersion.
-  - **Form factor** — headset weight and thermal dissipation limit comfortable wear to sub-hour sessions for many users.
-  - **Content fragmentation** — despite [[OpenXR]], feature-layer extensions remain vendor-specific; [[Spatial Audio]], eye-tracked foveated rendering, and hand-tracking APIs diverge across platforms.
-  - **Privacy** — inside-out tracking cameras and [[Eye Tracking]] generate dense behavioural biometric data; regulatory frameworks (GDPR, CCPA) are still adapting.
-  - **Accessibility** — vestibulo-ocular conflicts, inter-pupillary distance ranges, and controller affordances exclude users with certain disabilities or conditions.
+- [[Head-Mounted Display]] (HMD) — the primary visual output device, ranging from opaque VR enclosures to optical see-through AR waveguides.
+- [[XR Hardware]] ecosystem: controllers, trackers, depth cameras, and inertial measurement units (IMUs).
+- [[Haptics]] — tactile feedback gloves, vests, and controllers providing kinaesthetic presence.
+- [[Hand Tracking]] — markerless optical hand pose estimation replacing physical controllers.
+- [[Eye Tracking]] — enables foveated rendering (reducing GPU load), social gaze interaction, and attention analytics.
 
-- ### Current Landscape (2026)
-  - Android XR, the Google–Samsung–Qualcomm operating system co-announced in December 2024, reached its first commercial device on 21–22 October 2025 with the Samsung Galaxy XR (Project Moohan) at $1,799, featuring dual micro-OLED displays at ~4,032 PPI, Snapdragon XR2+ Gen 2 silicon and Gemini spatial AI; it reached the UK in July 2026.
-  - Apple refreshed the Vision Pro with an M5 chip in 2026 (now around $3,699), while the wider hardware calendar for the year included Bigscreen Beyond 2 (107g PC VR) and Valve's confirmed Steam Frame for summer 2026; Meta's next gaming Quest slipped to H2 2027.
-  - The category's centre of gravity shifted decisively from headsets to lightweight smart glasses: IDC reported XR shipments grew 44.4% in 2025 to roughly 14.5 million units, even as enclosed VR/MR headset shipments fell ~42.8%, with smart glasses making up about half of all volume.
-  - Meta dominates via its EssilorLuxottica partnership, holding around 72–76% of the combined XR market; Ray-Ban Meta sold an estimated 6.5 million units in 2025, and Meta unveiled a new $499 Ray-Ban line on 31 March 2026 targeting 13.4 million shipments for the year, with the Ray-Ban Display model pushing into remote-assist enterprise use.
-  - Open standards consolidated around OpenXR 1.1 and WebXR as the cross-runtime dev paths; Android XR reached Developer Preview 4 (19 May 2026) with six development paths (Jetpack XR, Unity, Unreal 5, Godot, OpenXR 1.1, WebXR), letting a single build also target Meta Quest.
-  - Consumer smart-glasses distribution remains immature: as of mid-2026 no Android XR AI glasses had shipped and Google Play offered no distribution channel for the audio/display glasses class, with Google's audio glasses only slated for "this fall" 2026.
-  - Open challenges as of 2026 include short battery life, thin app ecosystems, privacy concerns over always-on cameras, an IP-intensive and immature supply chain, and rising memory-component costs that Counterpoint flagged as a genuine 2026 headwind — pushing vendors to compete on AI and software rather than hardware.
+#### Sensing and Localisation
 
-- ### References
-  - 1. IDC (2026). XR Market Grew 44.4% in 2025 as Smart Glasses Redefine the Category. https://www.idc.com/resource-center/press-releases/xr-market-grew-44-4-in-2025-as-smart-glasses-redefine-the-category/
-  - 2. IDC (2026). Smart Glasses Surge: The XR Market Is Rewriting Its Own Rules. https://www.idc.com/resource-center/blog/smart-glasses-surge-the-xr-market-is-rewriting-its-own-rules/
-  - 3. Google / Samsung (2025). Introducing Galaxy XR, the first Android XR headset. https://blog.google/products-and-platforms/platforms/android/samsung-galaxy-xr/
-  - 4. Extentos (2026). Android XR for developers: SDK, app model & distribution (2026). https://extentos.com/docs/ecosystem/platforms/android-xr
-  - 5. Computer Weekly (2026). Intelligent eyewear market sees opportunities. https://www.computerweekly.com/news/366645176/Intelligent-eyewear-market-sees-opportunities
+- [[Spatial Tracking]] — inside-out tracking uses on-device cameras to estimate 6-DoF headset pose without external infrastructure.
+- [[Simultaneous Localisation and Mapping]] (SLAM) — builds and updates a map of the environment while tracking device position within it; foundational to [[Augmented Reality]] and [[Mixed Reality]].
+- Depth sensing (structured light, time-of-flight, stereo) enables mesh reconstruction of physical environments.
 
-- ### Provenance
+#### Rendering and Compute
+
+- [[Real-Time Rendering]] at high frame rates (72–120 Hz) is essential to prevent motion sickness (vestibulo-ocular conflict).
+- Foveated rendering — rendering high resolution only in the gaze direction detected via [[Eye Tracking]] — reduces GPU cost.
+- [[Edge Computing]] and cloud render-streaming offload heavy compute from constrained headset hardware.
+
+#### Software and Standards
+
+- [[OpenXR]] (Khronos Group) — a royalty-free, cross-vendor API enabling a single codebase to run across headsets from multiple manufacturers.
+- [[WebXR Device API]] (W3C) — exposes XR device capabilities to web browsers, enabling zero-install XR experiences.
+- Game engines ([[Unity]], [[Unreal Engine]]) serve as primary development environments for XR content.
+
+#### Modality
+
+- [[Virtual Reality]] — fully immersive; physical environment replaced entirely.
+- [[Augmented Reality]] — digital overlays composited on live camera feed or optical see-through view.
+- [[Mixed Reality]] — digital content spatially anchored to and occluded by real-world geometry.
+- [[WebXR]] — browser-based XR delivery without native installation.
+
+### Applications and Use Cases
+
+#### Enterprise and Industrial
+
+- Maintenance and repair training: technicians rehearse complex procedures on [[Digital Twin]] representations of equipment, reducing errors and downtime.
+- Remote expert assistance: field workers stream their field of view to remote specialists who overlay annotations via [[Augmented Reality]].
+- Architectural and design review: spatial walkthroughs of building information models (BIM) before construction.
+- Manufacturing assembly guidance: step-by-step AR instructions projected onto physical workpieces.
+
+#### Healthcare
+
+- Surgical simulation and planning using patient-specific [[Digital Twin]] anatomy.
+- Phobia and PTSD treatment through controlled exposure in [[Virtual Reality]].
+- Pain management — VR distraction therapy during wound care and chemotherapy.
+- Medical education: anatomy training in immersive 3D rather than cadaveric dissection alone.
+
+#### Education and Training
+
+- Vocational training for hazardous environments (mining, aviation, nuclear) without physical risk.
+- Language immersion through contextual [[Virtual Reality]] environments.
+- Collaborative virtual classrooms enabling [[Remote Collaboration]] across geographies.
+
+#### Consumer and Entertainment
+
+- Immersive gaming and interactive narrative experiences in [[Virtual Reality]].
+- Live events (concerts, sports) with spatial presence.
+- Social platforms building towards the [[Metaverse]] vision of persistent, shared XR spaces.
+
+#### Defence and Public Safety
+
+- Mission rehearsal and combined-arms simulation.
+- Situational awareness overlays for first responders via [[Augmented Reality]] headsets.
+
+### Standards and Governance
+
+- **Khronos Group [[OpenXR]]** — the primary cross-vendor API standard. Ratified 2019; adopted by Meta, Microsoft, Valve, Sony, HTC, and others. Separates application code from vendor-specific runtimes, ending the era of per-headset SDK fragmentation.
+- **W3C [[WebXR Device API]]** — standardises access to XR hardware from web browsers (Chrome, Firefox Reality, Samsung Internet). Covers session lifecycle, reference spaces, input sources, and hit-testing for AR.
+- **IEEE 2048 (Virtual Reality and Augmented Reality)** — a working group addressing terminology, latency, tracking accuracy, and interoperability testing methodologies.
+- **ISO/IEC JTC1 SC24** — computer graphics, image processing, and environmental data representation; underpins geometry and scene graph standards relevant to XR.
+- **GSMA XR Traffic** — mobile network operator guidelines for streaming XR traffic (latency budgets, uplink throughput requirements for cloud render-streaming).
+- Platform governance: Meta (Quest platform), Apple (visionOS), Microsoft (HoloLens / Windows Mixed Reality), and Google (ARCore) each maintain proprietary layers above the [[OpenXR]] baseline, creating partial fragmentation at the feature layer.
+
+### Challenges and Limitations
+
+- **Latency** — motion-to-photon latency must remain below ~20 ms to prevent motion sickness; this constrains wireless streaming fidelity.
+- **Field of view** — current HMDs offer 90°–120° FoV vs. human binocular ~200°, breaking peripheral immersion.
+- **Form factor** — headset weight and thermal dissipation limit comfortable wear to sub-hour sessions for many users.
+- **Content fragmentation** — despite [[OpenXR]], feature-layer extensions remain vendor-specific; [[Spatial Audio]], eye-tracked foveated rendering, and hand-tracking APIs diverge across platforms.
+- **Privacy** — inside-out tracking cameras and [[Eye Tracking]] generate dense behavioural biometric data; regulatory frameworks (GDPR, CCPA) are still adapting.
+- **Accessibility** — vestibulo-ocular conflicts, inter-pupillary distance ranges, and controller affordances exclude users with certain disabilities or conditions.
+
+### Current Landscape (2026)
+
+- Android XR, the Google–Samsung–Qualcomm operating system co-announced in December 2024, reached its first commercial device on 21–22 October 2025 with the Samsung Galaxy XR (Project Moohan) at $1,799, featuring dual micro-OLED displays at ~4,032 PPI, Snapdragon XR2+ Gen 2 silicon and Gemini spatial AI; it reached the UK in July 2026.
+- Apple refreshed the Vision Pro with an M5 chip in 2026 (now around $3,699), while the wider hardware calendar for the year included Bigscreen Beyond 2 (107g PC VR) and Valve's confirmed Steam Frame for summer 2026; Meta's next gaming Quest slipped to H2 2027.
+- The category's centre of gravity shifted decisively from headsets to lightweight smart glasses: IDC reported XR shipments grew 44.4% in 2025 to roughly 14.5 million units, even as enclosed VR/MR headset shipments fell ~42.8%, with smart glasses making up about half of all volume.
+- Meta dominates via its EssilorLuxottica partnership, holding around 72–76% of the combined XR market; Ray-Ban Meta sold an estimated 6.5 million units in 2025, and Meta unveiled a new $499 Ray-Ban line on 31 March 2026 targeting 13.4 million shipments for the year, with the Ray-Ban Display model pushing into remote-assist enterprise use.
+- Open standards consolidated around OpenXR 1.1 and WebXR as the cross-runtime dev paths; Android XR reached Developer Preview 4 (19 May 2026) with six development paths (Jetpack XR, Unity, Unreal 5, Godot, OpenXR 1.1, WebXR), letting a single build also target Meta Quest.
+- Consumer smart-glasses distribution remains immature: as of mid-2026 no Android XR AI glasses had shipped and Google Play offered no distribution channel for the audio/display glasses class, with Google's audio glasses only slated for "this fall" 2026.
+- Open challenges as of 2026 include short battery life, thin app ecosystems, privacy concerns over always-on cameras, an IP-intensive and immature supply chain, and rising memory-component costs that Counterpoint flagged as a genuine 2026 headwind — pushing vendors to compete on AI and software rather than hardware.
+
+### References
+
+- 1. IDC (2026). XR Market Grew 44.4% in 2025 as Smart Glasses Redefine the Category. https://www.idc.com/resource-center/press-releases/xr-market-grew-44-4-in-2025-as-smart-glasses-redefine-the-category/
+- 2. IDC (2026). Smart Glasses Surge: The XR Market Is Rewriting Its Own Rules. https://www.idc.com/resource-center/blog/smart-glasses-surge-the-xr-market-is-rewriting-its-own-rules/
+- 3. Google / Samsung (2025). Introducing Galaxy XR, the first Android XR headset. https://blog.google/products-and-platforms/platforms/android/samsung-galaxy-xr/
+- 4. Extentos (2026). Android XR for developers: SDK, app model & distribution (2026). https://extentos.com/docs/ecosystem/platforms/android-xr
+- 5. Computer Weekly (2026). Intelligent eyewear market sees opportunities. https://www.computerweekly.com/news/366645176/Intelligent-eyewear-market-sees-opportunities
+
+### Provenance
 

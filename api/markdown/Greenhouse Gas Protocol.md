@@ -1,30 +1,38 @@
-
 The Greenhouse Gas Protocol is the most widely used set of standards for measuring and reporting greenhouse gas emissions across organisations and value chains. It defines the categorisation of emissions into Scope 1 direct emissions, Scope 2 purchased energy and Scope 3 value-chain emissions, and provides accounting and reporting principles. Developed by the World Resources Institute and the World Business Council for Sustainable Development, it underpins corporate carbon accounting and disclosure.
 
 - The Greenhouse Gas Protocol is the most widely used set of standards for measuring and reporting greenhouse gas emissions across organisations and value chains.
 - It defines the split of emissions into Scope 1 direct, Scope 2 purchased energy and [[Scope 3 Emissions]] value-chain categories.
 - It is the methodological backbone of corporate [[Carbon Accounting]].
 - It feeds disclosure regimes and frameworks such as the [[ISSB]] standards and [[TCFD]].
-- ### Overview
+
+### Overview
+
 - Developed jointly by the World Resources Institute and the World Business Council for Sustainable Development, the protocol provides a comprehensive accounting framework adopted by companies, cities and standard setters worldwide.
 - Its Corporate Standard establishes principles of relevance, completeness, consistency, transparency and accuracy that govern credible emissions inventories.
 - The scope framework distinguishes direct emissions from owned sources (Scope 1), indirect emissions from purchased electricity, steam, heat and cooling (Scope 2), and all other indirect emissions in the value chain (Scope 3).
 - Scope 3 frequently dominates a company's footprint yet is the hardest to measure, spanning upstream supply chains and downstream product use.
-- ### Key aspects
+
+### Key aspects
+
 - The three-scope emissions classification.
 - Organisational and operational boundary setting.
 - Accounting and reporting principles ensuring comparability.
 - Global warming potential factors to aggregate gases as CO2 equivalent.
 - Guidance modules for product life cycle and value-chain accounting.
-- ### Mechanisms
+
+### Mechanisms
+
 - Activity-data collection and emission-factor application.
 - Boundary consolidation using equity share or control approaches.
 - Base-year recalculation to maintain consistency over time.
 - Verification and assurance of reported inventories.
-- ### Applications
+
+### Applications
+
 - Corporate carbon footprinting and net-zero target setting.
 - Inputs to sustainability and ESG reporting.
 - Compliance with disclosure standards and trading schemes.
 - Supply-chain decarbonisation and supplier engagement.
-- ### Provenance
+
+### Provenance
 

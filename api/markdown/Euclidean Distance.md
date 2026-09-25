@@ -1,141 +1,141 @@
-
 Euclidean distance is the straight-line distance between two points in Euclidean space, computed as the square root of the sum of squared differences across all coordinate dimensions. It is the most widely used distance metric in geometry, statistics, and machine learning, serving as the default measure of dissimilarity in clustering algorithms, nearest-neighbour search, and dimensionality reduction methods. As a special case of the Minkowski distance (p=2), it satisfies the metric axioms of non-negativity, symmetry, and the triangle inequality.
 
-- ### Semantic Classification
+### Semantic Classification
 
-- ### Content
-  ## Compositional Relationships (Components)
-  ```
-  SubClassOf(ai:EuclideanDistance
-    ObjectSomeValuesFrom(ai:hasPart ai:L2NormComputation))
-  SubClassOf(ai:EuclideanDistance
-    ObjectSomeValuesFrom(ai:hasPart ai:InnerProductOperation))
-  SubClassOf(ai:EuclideanDistance
-    ObjectSomeValuesFrom(ai:hasPart ai:CoordinateDifferenceVector))
-  SubClassOf(ai:EuclideanDistance
-    ObjectSomeValuesFrom(ai:hasPart ai:SquaredSumAggregation))
-  SubClassOf(ai:EuclideanDistance
-    ObjectSomeValuesFrom(ai:hasPart ai:SquareRootFinalisation))
-  ```
-  ## Dependency Relationships
-  ```
-  SubClassOf(ai:EuclideanDistance
-    ObjectSomeValuesFrom(ai:requires ai:TensorComputation))
-  SubClassOf(ai:EuclideanDistance
-    ObjectSomeValuesFrom(ai:requires ai:NumericalMethods))
-  SubClassOf(ai:EuclideanDistance
-    ObjectSomeValuesFrom(ai:requires ai:LinearAlgebra))
-  SubClassOf(ai:EuclideanDistance
-    ObjectSomeValuesFrom(ai:dependsOn ai:FeatureNormalisation))
-  SubClassOf(ai:EuclideanDistance
-    ObjectSomeValuesFrom(ai:dependsOn ai:DataPreprocessing))
-  SubClassOf(ai:EuclideanDistance
-    ObjectSomeValuesFrom(ai:dependsOn ai:Tensor))
-  ```
-  ## Capability Relationships
-  ```
-  SubClassOf(ai:EuclideanDistance
-    ObjectSomeValuesFrom(ai:enables ai:Clustering))
-  SubClassOf(ai:EuclideanDistance
-    ObjectSomeValuesFrom(ai:enables ai:NearestNeighbourSearch))
-  SubClassOf(ai:EuclideanDistance
-    ObjectSomeValuesFrom(ai:enables ai:AnomalyDetection))
-  SubClassOf(ai:EuclideanDistance
-    ObjectSomeValuesFrom(ai:enables ai:MachineLearning))
-  SubClassOf(ai:EuclideanDistance
-    ObjectSomeValuesFrom(ai:enables ai:KNNClassification))
-  SubClassOf(ai:EuclideanDistance
-    ObjectSomeValuesFrom(ai:enables ai:IndoorPositioning))
-  SubClassOf(ai:EuclideanDistance
-    ObjectSomeValuesFrom(ai:enables ai:DataModelling))
-  ```
-  ## Implementation Relationships
-  ```
-  SubClassOf(ai:EuclideanDistance
-    ObjectSomeValuesFrom(ai:implements ai:MinkowskiDistance))
-  SubClassOf(ai:EuclideanDistance
-    ObjectSomeValuesFrom(ai:implements ai:MetricSpace))
-  SubClassOf(ai:EuclideanDistance
-    ObjectSomeValuesFrom(ai:implements ai:SimilarityFunction))
-  SubClassOf(ai:EuclideanDistance
-    ObjectSomeValuesFrom(ai:implements ai:ProximitySearch))
-  SubClassOf(ai:EuclideanDistance
-    ObjectSomeValuesFrom(ai:implements ai:KMeansCentroidAssignment))
-  ```
-  ## Reduction Relationships
-  ```
-  SubClassOf(ai:EuclideanDistance
-    ObjectSomeValuesFrom(ai:reducesTo ai:L2Norm))
-  SubClassOf(ai:EuclideanDistance
-    ObjectSomeValuesFrom(ai:reducesTo ai:InnerProduct))
-  SubClassOf(ai:EuclideanDistance
-    ObjectSomeValuesFrom(ai:reducesTo ai:SquaredEuclideanDistance))
-  SubClassOf(ai:EuclideanDistance
-    ObjectSomeValuesFrom(ai:reducesTo ai:CosineSimilarityOnUnitSphere))
-  SubClassOf(ai:EuclideanDistance
-    ObjectSomeValuesFrom(ai:contrastsWith ai:CosineSimilarity))
-  SubClassOf(ai:EuclideanDistance
-    ObjectSomeValuesFrom(ai:contrastsWith ai:MahalanobisDistance))
-  SubClassOf(ai:EuclideanDistance
-    ObjectSomeValuesFrom(ai:contrastsWith ai:ManhattanDistance))
-  ```
+### Content
 
-  ## About
+## Compositional Relationships (Components)
+```
+SubClassOf(ai:EuclideanDistance
+  ObjectSomeValuesFrom(ai:hasPart ai:L2NormComputation))
+SubClassOf(ai:EuclideanDistance
+  ObjectSomeValuesFrom(ai:hasPart ai:InnerProductOperation))
+SubClassOf(ai:EuclideanDistance
+  ObjectSomeValuesFrom(ai:hasPart ai:CoordinateDifferenceVector))
+SubClassOf(ai:EuclideanDistance
+  ObjectSomeValuesFrom(ai:hasPart ai:SquaredSumAggregation))
+SubClassOf(ai:EuclideanDistance
+  ObjectSomeValuesFrom(ai:hasPart ai:SquareRootFinalisation))
+```
+## Dependency Relationships
+```
+SubClassOf(ai:EuclideanDistance
+  ObjectSomeValuesFrom(ai:requires ai:TensorComputation))
+SubClassOf(ai:EuclideanDistance
+  ObjectSomeValuesFrom(ai:requires ai:NumericalMethods))
+SubClassOf(ai:EuclideanDistance
+  ObjectSomeValuesFrom(ai:requires ai:LinearAlgebra))
+SubClassOf(ai:EuclideanDistance
+  ObjectSomeValuesFrom(ai:dependsOn ai:FeatureNormalisation))
+SubClassOf(ai:EuclideanDistance
+  ObjectSomeValuesFrom(ai:dependsOn ai:DataPreprocessing))
+SubClassOf(ai:EuclideanDistance
+  ObjectSomeValuesFrom(ai:dependsOn ai:Tensor))
+```
+## Capability Relationships
+```
+SubClassOf(ai:EuclideanDistance
+  ObjectSomeValuesFrom(ai:enables ai:Clustering))
+SubClassOf(ai:EuclideanDistance
+  ObjectSomeValuesFrom(ai:enables ai:NearestNeighbourSearch))
+SubClassOf(ai:EuclideanDistance
+  ObjectSomeValuesFrom(ai:enables ai:AnomalyDetection))
+SubClassOf(ai:EuclideanDistance
+  ObjectSomeValuesFrom(ai:enables ai:MachineLearning))
+SubClassOf(ai:EuclideanDistance
+  ObjectSomeValuesFrom(ai:enables ai:KNNClassification))
+SubClassOf(ai:EuclideanDistance
+  ObjectSomeValuesFrom(ai:enables ai:IndoorPositioning))
+SubClassOf(ai:EuclideanDistance
+  ObjectSomeValuesFrom(ai:enables ai:DataModelling))
+```
+## Implementation Relationships
+```
+SubClassOf(ai:EuclideanDistance
+  ObjectSomeValuesFrom(ai:implements ai:MinkowskiDistance))
+SubClassOf(ai:EuclideanDistance
+  ObjectSomeValuesFrom(ai:implements ai:MetricSpace))
+SubClassOf(ai:EuclideanDistance
+  ObjectSomeValuesFrom(ai:implements ai:SimilarityFunction))
+SubClassOf(ai:EuclideanDistance
+  ObjectSomeValuesFrom(ai:implements ai:ProximitySearch))
+SubClassOf(ai:EuclideanDistance
+  ObjectSomeValuesFrom(ai:implements ai:KMeansCentroidAssignment))
+```
+## Reduction Relationships
+```
+SubClassOf(ai:EuclideanDistance
+  ObjectSomeValuesFrom(ai:reducesTo ai:L2Norm))
+SubClassOf(ai:EuclideanDistance
+  ObjectSomeValuesFrom(ai:reducesTo ai:InnerProduct))
+SubClassOf(ai:EuclideanDistance
+  ObjectSomeValuesFrom(ai:reducesTo ai:SquaredEuclideanDistance))
+SubClassOf(ai:EuclideanDistance
+  ObjectSomeValuesFrom(ai:reducesTo ai:CosineSimilarityOnUnitSphere))
+SubClassOf(ai:EuclideanDistance
+  ObjectSomeValuesFrom(ai:contrastsWith ai:CosineSimilarity))
+SubClassOf(ai:EuclideanDistance
+  ObjectSomeValuesFrom(ai:contrastsWith ai:MahalanobisDistance))
+SubClassOf(ai:EuclideanDistance
+  ObjectSomeValuesFrom(ai:contrastsWith ai:ManhattanDistance))
+```
 
-  Euclidean distance is the mathematical formalisation of what we mean when we say two things are "close together" in a geometric sense. Originating in Euclid's *Elements* (c. 300 BCE), the measure encodes the Pythagorean theorem generalised from two dimensions to n dimensions: the straight-line distance between points p and q in ℝⁿ is √(Σᵢ (pᵢ − qᵢ)²). This deceptively simple formula is simultaneously the most intuitive and the most computationally important distance measure in all of [[Machine Learning]], [[Data Modelling]], and [[Statistical Analysis]]. Its familiarity makes it the universal default — the distance measure assumed when no alternative is specified — and its mathematical properties as a member of the Lp metric family at p = 2 give it rigorous theoretical foundations and practical advantages including differentiability (the gradient ∂d/∂p = (p − q)/d(p, q) is well-defined everywhere except d = 0) and compatibility with least-squares optimisation objectives.
+## About
 
-  The dominance of Euclidean distance in [[Machine Learning]] rests on three mutually reinforcing properties. First, it is the optimal distance measure under a Gaussian noise model: minimising mean squared error (the expected squared Euclidean distance between predictions and targets) is mathematically equivalent to maximum likelihood estimation when the noise distribution is Gaussian. This connection explains why the L2 loss function — the average squared Euclidean distance between model output and ground truth — is the canonical training objective for regression tasks, [[Neural Network]] weight initialisation, and [[Dimensionality Reduction]] methods such as [[Principal Component Analysis]] that preserve variance. Second, Euclidean distance is hardware-efficient: modern GPU tensor cores implement batched inner product computation (the dominant operation in Euclidean distance calculation) at peak throughput, and [[FAISS]] exploits the algebraic identity ‖p − q‖² = ‖p‖² + ‖q‖² − 2p·q to express all-pairs distance computation as a single matrix multiplication, enabling exact nearest-neighbour search over millions of vectors in milliseconds on a single GPU. Third, Euclidean distance satisfies the triangle inequality, the mathematical property that enables metric tree indexing: in a [[KD-Tree]] or ball tree, triangle inequality pruning allows entire subtrees to be discarded without examining individual points, achieving O(log n) expected search complexity in low-to-medium dimensionality.
+Euclidean distance is the mathematical formalisation of what we mean when we say two things are "close together" in a geometric sense. Originating in Euclid's *Elements* (c. 300 BCE), the measure encodes the Pythagorean theorem generalised from two dimensions to n dimensions: the straight-line distance between points p and q in ℝⁿ is √(Σᵢ (pᵢ − qᵢ)²). This deceptively simple formula is simultaneously the most intuitive and the most computationally important distance measure in all of [[Machine Learning]], [[Data Modelling]], and [[Statistical Analysis]]. Its familiarity makes it the universal default — the distance measure assumed when no alternative is specified — and its mathematical properties as a member of the Lp metric family at p = 2 give it rigorous theoretical foundations and practical advantages including differentiability (the gradient ∂d/∂p = (p − q)/d(p, q) is well-defined everywhere except d = 0) and compatibility with least-squares optimisation objectives.
 
-  However, Euclidean distance faces a fundamental challenge in high-dimensional spaces. The curse of dimensionality (Bellman, 1961) predicts that as dimension d grows, the ratio of the maximum to minimum pairwise Euclidean distance among n random points approaches 1, meaning all points appear equally far apart and the notion of a "nearest neighbour" becomes statistically meaningless. In practice, this manifests as a concentration of measure phenomenon: for points uniformly distributed on a high-dimensional hypercube, the standard deviation of pairwise Euclidean distances grows much more slowly than the mean distance, so the distances cluster tightly around their mean value. This erosion of discriminative signal motivates two complementary responses. The first is [[Dimensionality Reduction]]: [[Principal Component Analysis]], [[UMAP]], and [[t-SNE]] map high-dimensional data to low-dimensional manifold representations where Euclidean distances remain meaningful, with UMAP specifically designed to preserve local neighbourhood structure under the transformation. The second is metric substitution: [[Cosine Similarity]], which measures the angle between vectors rather than their absolute separation, is substantially more robust to dimensionality expansion because it depends only on the directional component of the vectors, not their magnitude or the total volume of the space. For dense neural [[Embedding]] representations from [[Transformer Architecture|transformer]] encoders, cosine similarity on L2-normalised vectors has displaced Euclidean distance as the dominant retrieval metric precisely because of this robustness.
+The dominance of Euclidean distance in [[Machine Learning]] rests on three mutually reinforcing properties. First, it is the optimal distance measure under a Gaussian noise model: minimising mean squared error (the expected squared Euclidean distance between predictions and targets) is mathematically equivalent to maximum likelihood estimation when the noise distribution is Gaussian. This connection explains why the L2 loss function — the average squared Euclidean distance between model output and ground truth — is the canonical training objective for regression tasks, [[Neural Network]] weight initialisation, and [[Dimensionality Reduction]] methods such as [[Principal Component Analysis]] that preserve variance. Second, Euclidean distance is hardware-efficient: modern GPU tensor cores implement batched inner product computation (the dominant operation in Euclidean distance calculation) at peak throughput, and [[FAISS]] exploits the algebraic identity ‖p − q‖² = ‖p‖² + ‖q‖² − 2p·q to express all-pairs distance computation as a single matrix multiplication, enabling exact nearest-neighbour search over millions of vectors in milliseconds on a single GPU. Third, Euclidean distance satisfies the triangle inequality, the mathematical property that enables metric tree indexing: in a [[KD-Tree]] or ball tree, triangle inequality pruning allows entire subtrees to be discarded without examining individual points, achieving O(log n) expected search complexity in low-to-medium dimensionality.
 
-  ## Formal Algorithm
+However, Euclidean distance faces a fundamental challenge in high-dimensional spaces. The curse of dimensionality (Bellman, 1961) predicts that as dimension d grows, the ratio of the maximum to minimum pairwise Euclidean distance among n random points approaches 1, meaning all points appear equally far apart and the notion of a "nearest neighbour" becomes statistically meaningless. In practice, this manifests as a concentration of measure phenomenon: for points uniformly distributed on a high-dimensional hypercube, the standard deviation of pairwise Euclidean distances grows much more slowly than the mean distance, so the distances cluster tightly around their mean value. This erosion of discriminative signal motivates two complementary responses. The first is [[Dimensionality Reduction]]: [[Principal Component Analysis]], [[UMAP]], and [[t-SNE]] map high-dimensional data to low-dimensional manifold representations where Euclidean distances remain meaningful, with UMAP specifically designed to preserve local neighbourhood structure under the transformation. The second is metric substitution: [[Cosine Similarity]], which measures the angle between vectors rather than their absolute separation, is substantially more robust to dimensionality expansion because it depends only on the directional component of the vectors, not their magnitude or the total volume of the space. For dense neural [[Embedding]] representations from [[Transformer Architecture|transformer]] encoders, cosine similarity on L2-normalised vectors has displaced Euclidean distance as the dominant retrieval metric precisely because of this robustness.
 
-  ### Exact Euclidean Distance Computation
+## Formal Algorithm
 
-  ```
-  Input: Vectors p, q ∈ ℝⁿ
-  Output: Scalar d ≥ 0
-  1. Compute difference vector: diff = p - q
-  2. Square element-wise: diff_sq = diff .* diff
-  3. Sum: s = Σᵢ diff_sq[i]
-  4. Return: d = sqrt(s)
+### Exact Euclidean Distance Computation
 
-  Identity for batch computation (GPU-efficient):
-    ‖P - Q‖² = ‖P‖² + ‖Q‖² - 2 P Q^T
-    where P ∈ ℝ^{m×n}, Q ∈ ℝ^{k×n}
-    Produces m×k distance matrix via single BLAS SGEMM call
-  ```
+```
+Input: Vectors p, q ∈ ℝⁿ
+Output: Scalar d ≥ 0
+1. Compute difference vector: diff = p - q
+2. Square element-wise: diff_sq = diff .* diff
+3. Sum: s = Σᵢ diff_sq[i]
+4. Return: d = sqrt(s)
 
-  Time complexity: O(n) per pair; O(mn) for m query points vs. n corpus points.
-  GPU time (A100, float32, n=768): ~0.01ms per query vs. 1M vectors using FAISS flat index.
+Identity for batch computation (GPU-efficient):
+  ‖P - Q‖² = ‖P‖² + ‖Q‖² - 2 P Q^T
+  where P ∈ ℝ^{m×n}, Q ∈ ℝ^{k×n}
+  Produces m×k distance matrix via single BLAS SGEMM call
+```
 
-  ### Squared Euclidean Distance
+Time complexity: O(n) per pair; O(mn) for m query points vs. n corpus points.
+GPU time (A100, float32, n=768): ~0.01ms per query vs. 1M vectors using FAISS flat index.
 
-  d²(p, q) = Σᵢ (pᵢ − qᵢ)² avoids the square root and is sufficient whenever only relative ordering of distances matters (not their absolute values), which is the case for [[K-Nearest Neighbours|nearest-neighbour]] ranking, [[K-Means]] centroid assignment, and Gaussian kernel computation. Squared Euclidean distance is preferred when gradient computation is required, since ∂d²/∂p = 2(p − q), whereas ∂d/∂p = (p − q)/d exhibits a singularity at d = 0.
+### Squared Euclidean Distance
 
-  ### Multilateration via Euclidean Distance (UWB Positioning)
+d²(p, q) = Σᵢ (pᵢ − qᵢ)² avoids the square root and is sufficient whenever only relative ordering of distances matters (not their absolute values), which is the case for [[K-Nearest Neighbours|nearest-neighbour]] ranking, [[K-Means]] centroid assignment, and Gaussian kernel computation. Squared Euclidean distance is preferred when gradient computation is required, since ∂d²/∂p = 2(p − q), whereas ∂d/∂p = (p − q)/d exhibits a singularity at d = 0.
 
-  ```
-  Given: n anchors at known positions {aᵢ} ∈ ℝ³, measured ranges {rᵢ}
-  Solve: min_{x} Σᵢ (‖x - aᵢ‖ - rᵢ)²
-  Method: Linear least squares after linearisation
-    (xᵢ - x)² + (yᵢ - y)² + (zᵢ - z)² = rᵢ²
-  Subtracting anchor n equation from each:
-    2(xᵢ - xₙ)x + 2(yᵢ - yₙ)y + 2(zᵢ - zₙ)z = rₙ² - rᵢ² + ‖aᵢ‖² - ‖aₙ‖²
-  Yields overdetermined linear system: Ax = b → solved via pseudo-inverse: x̂ = (AᵀA)⁻¹ Aᵀb
-  ```
+### Multilateration via Euclidean Distance (UWB Positioning)
 
-  This is the core algorithm for [[Ultra Wideband]] indoor positioning, where Euclidean distance trilateration in 3D space is the foundational geometric computation.
+```
+Given: n anchors at known positions {aᵢ} ∈ ℝ³, measured ranges {rᵢ}
+Solve: min_{x} Σᵢ (‖x - aᵢ‖ - rᵢ)²
+Method: Linear least squares after linearisation
+  (xᵢ - x)² + (yᵢ - y)² + (zᵢ - z)² = rᵢ²
+Subtracting anchor n equation from each:
+  2(xᵢ - xₙ)x + 2(yᵢ - yₙ)y + 2(zᵢ - zₙ)z = rₙ² - rᵢ² + ‖aᵢ‖² - ‖aₙ‖²
+Yields overdetermined linear system: Ax = b → solved via pseudo-inverse: x̂ = (AᵀA)⁻¹ Aᵀb
+```
 
-  ## Components / Architecture
+This is the core algorithm for [[Ultra Wideband]] indoor positioning, where Euclidean distance trilateration in 3D space is the foundational geometric computation.
 
-  The Euclidean distance computation pipeline in a production machine learning system involves several cooperating components:
+## Components / Architecture
 
-  - **Feature representation layer**: raw data (pixels, tokens, sensor readings) is first mapped to a numerical vector representation. Euclidean distance is meaningful only when input features are on comparable scales and are semantically commensurable, making the representation stage the primary determinant of whether Euclidean distance will capture the desired notion of similarity. [[Principal Component Analysis]] whitening or standardisation is often applied here.
-  - **Normalisation / standardisation**: Euclidean distance is sensitive to feature scale — a feature with range [0, 1000] will dominate the distance calculation over a feature with range [0, 1]. Standard z-score normalisation (subtract mean, divide by standard deviation per feature) gives each dimension equal influence; min-max normalisation maps to [0, 1]; L2 normalisation projects onto the unit hypersphere, under which Euclidean distance and [[Cosine Similarity]] become equivalent up to a monotone transformation.
-  - **Batch distance matrix computation**: for k queries vs. n corpus vectors in dimension d, using the identity ‖p − q‖² = ‖p‖² + ‖q‖² − 2p·q converts the O(knd) brute-force computation into a single O(knd) matrix multiply (SGEMM) plus O(n + k) norm vector operations, fully utilising GPU tensor cores and BLAS optimised libraries.
-  - **Approximate indexing**: for large n (> 100k), exact Euclidean search is replaced by approximate nearest-neighbour (ANN) indices. [[HNSW]] (Hierarchical Navigable Small World graphs) provides O(log n) approximate search exploiting the triangle inequality; [[FAISS]] IVF (Inverted File Index) clusters vectors into Voronoi cells using k-means with Euclidean distance, then searches only the nearest `nprobe` cells at query time; product quantisation compresses each vector from float32 to 8 bytes, enabling billion-scale Euclidean search in memory-constrained environments.
-  - **Distance threshold and ranking**: the raw Euclidean distance values are used either for ranking (return top-k smallest distances) or for threshold-based filtering (return all points within radius r). The interpretation of distance thresholds depends critically on whether features are normalised, since unnormalised Euclidean distances have no inherent scale.
+The Euclidean distance computation pipeline in a production machine learning system involves several cooperating components:
+
+- **Feature representation layer**: raw data (pixels, tokens, sensor readings) is first mapped to a numerical vector representation. Euclidean distance is meaningful only when input features are on comparable scales and are semantically commensurable, making the representation stage the primary determinant of whether Euclidean distance will capture the desired notion of similarity. [[Principal Component Analysis]] whitening or standardisation is often applied here.
+- **Normalisation / standardisation**: Euclidean distance is sensitive to feature scale — a feature with range [0, 1000] will dominate the distance calculation over a feature with range [0, 1]. Standard z-score normalisation (subtract mean, divide by standard deviation per feature) gives each dimension equal influence; min-max normalisation maps to [0, 1]; L2 normalisation projects onto the unit hypersphere, under which Euclidean distance and [[Cosine Similarity]] become equivalent up to a monotone transformation.
+- **Batch distance matrix computation**: for k queries vs. n corpus vectors in dimension d, using the identity ‖p − q‖² = ‖p‖² + ‖q‖² − 2p·q converts the O(knd) brute-force computation into a single O(knd) matrix multiply (SGEMM) plus O(n + k) norm vector operations, fully utilising GPU tensor cores and BLAS optimised libraries.
+- **Approximate indexing**: for large n (> 100k), exact Euclidean search is replaced by approximate nearest-neighbour (ANN) indices. [[HNSW]] (Hierarchical Navigable Small World graphs) provides O(log n) approximate search exploiting the triangle inequality; [[FAISS]] IVF (Inverted File Index) clusters vectors into Voronoi cells using k-means with Euclidean distance, then searches only the nearest `nprobe` cells at query time; product quantisation compresses each vector from float32 to 8 bytes, enabling billion-scale Euclidean search in memory-constrained environments.
+- **Distance threshold and ranking**: the raw Euclidean distance values are used either for ranking (return top-k smallest distances) or for threshold-based filtering (return all points within radius r). The interpretation of distance thresholds depends critically on whether features are normalised, since unnormalised Euclidean distances have no inherent scale.
 
   ## Mathematical Properties
 
@@ -155,14 +155,14 @@ Euclidean distance is the straight-line distance between two points in Euclidean
 
   ## Use Cases / Major Families
 
-  - **[[Clustering]] with [[K-Means]]**: the canonical application. K-Means assigns each of n points to the nearest centroid (by Euclidean distance), then updates each centroid to the mean of its assigned points, iterating to convergence. The Euclidean distance determines which cluster geometry can be recovered — k-means with Euclidean distance recovers spherical, isotropic clusters; elliptical clusters require a Mahalanobis distance; arbitrary shapes require density-based methods (DBSCAN). Mini-batch k-means (Sculley, 2010) uses subsampled batches per iteration, enabling billion-scale Euclidean clustering used in production [[Vector Database]] IVF index construction.
-  - **[[K-Nearest Neighbours|K-Nearest Neighbours]] classification and regression**: the original machine learning algorithm. A query point x is classified by the majority label among its k nearest neighbours in training data under Euclidean distance. Cover and Hart (1967) showed that k-NN with Euclidean distance achieves error rate converging to at most twice the Bayes optimal error as training data grows. Performance degrades gracefully with irrelevant features but catastrophically with high-dimensional feature spaces where the curse of dimensionality applies. Scikit-learn's [[K-Nearest Neighbours|KNeighborsClassifier]] and KNeighborsRegressor default to Euclidean distance (Minkowski with p=2).
-  - **[[Indoor Positioning]] with [[Ultra Wideband]]**: UWB ranging devices measure time-of-flight distances between anchors and tags. These measured Euclidean distances are combined via trilateration or multilateration (least-squares minimisation over the system of Euclidean distance equations) to compute 2D or 3D position. UWB combined with [[K-Nearest Neighbours]] (using Euclidean distance between RSS fingerprint vectors) achieves sub-10cm positioning accuracy in structured indoor environments. A 2026 preprint (KD-EKF, arXiv:2603.18027) combines knowledge-distilled deep networks with extended Kalman filters for UWB/PDR indoor localisation, using Euclidean distance as the core measurement model.
-  - **[[Anomaly Detection]]**: measuring the Euclidean distance of new observations from cluster centroids ([[K-Means]]), from the k-nearest training neighbours (KNN anomaly detection), or from a Gaussian process mean provides an anomaly score. Points with large Euclidean distance from known normal patterns are flagged as anomalies. The Mahalanobis distance generalises this to account for feature correlations; for uncorrelated, standardised features, Euclidean distance is the optimal anomaly score under a Gaussian normality assumption. In embedding-based anomaly detection using [[UMAP]] projections, Euclidean distance to the nearest-neighbour in the low-dimensional manifold projection identifies isolated anomalous samples.
-  - **[[Dimensionality Reduction]] objective**: [[Principal Component Analysis]] minimises the mean squared (Euclidean) reconstruction error between original and projected points, making Euclidean distance the objective of the projection. UMAP's low-dimensional optimisation minimises a fuzzy cross-entropy between high-dimensional and low-dimensional fuzzy simplicial sets, using Euclidean distance in both spaces to construct the simplicial complex. [[t-SNE]] minimises the KL divergence between Gaussian-kernel similarity matrices computed from Euclidean distances in high- and low-dimensional spaces.
-  - **[[Recommendation System|Recommendation systems]] (item similarity)**: for normalised item embeddings (collaborative filtering latent factors, content embeddings), Euclidean distance and cosine similarity rank identically. For unnormalised embeddings — for instance, matrix factorisation outputs from ALS where magnitude encodes popularity — Euclidean distance between item vectors better captures the combined effect of directional similarity and magnitude difference than cosine similarity alone. Some recommendation practitioners prefer Euclidean distance on item embeddings for this reason.
-  - **Molecular and drug similarity**: in pharmacoinformatics, Euclidean distance over continuous molecular property vectors (logP, molecular weight, TPSA, hydrogen bond counts) is used to identify structurally similar drug candidates. Unlike the Tanimoto (Jaccard) similarity used for binary circular fingerprints, Euclidean distance over continuous molecular descriptors captures graded similarity across quantitative property axes, enabling property-space navigation in lead optimisation campaigns. The UK's Wellcome Sanger Institute uses Euclidean distance over molecular embedding spaces from graph neural networks for drug repositioning and target identification.
-  - **Robotics and motion planning**: in configuration-space path planning, Euclidean distance between robot configurations (joint angle vectors) governs the RRT (Rapidly-exploring Random Trees) nearest-neighbour step and connection threshold. Euclidean distance in workspace coordinates (end-effector positions) is used to define task-space motion objectives. LiDAR-based SLAM (Simultaneous Localisation and Mapping) uses Euclidean distance between 3D point cloud coordinates in ICP (Iterative Closest Point) alignment and for constructing the occupancy grid used in motion planning.
+- **[[Clustering]] with [[K-Means]]**: the canonical application. K-Means assigns each of n points to the nearest centroid (by Euclidean distance), then updates each centroid to the mean of its assigned points, iterating to convergence. The Euclidean distance determines which cluster geometry can be recovered — k-means with Euclidean distance recovers spherical, isotropic clusters; elliptical clusters require a Mahalanobis distance; arbitrary shapes require density-based methods (DBSCAN). Mini-batch k-means (Sculley, 2010) uses subsampled batches per iteration, enabling billion-scale Euclidean clustering used in production [[Vector Database]] IVF index construction.
+- **[[K-Nearest Neighbours|K-Nearest Neighbours]] classification and regression**: the original machine learning algorithm. A query point x is classified by the majority label among its k nearest neighbours in training data under Euclidean distance. Cover and Hart (1967) showed that k-NN with Euclidean distance achieves error rate converging to at most twice the Bayes optimal error as training data grows. Performance degrades gracefully with irrelevant features but catastrophically with high-dimensional feature spaces where the curse of dimensionality applies. Scikit-learn's [[K-Nearest Neighbours|KNeighborsClassifier]] and KNeighborsRegressor default to Euclidean distance (Minkowski with p=2).
+- **[[Indoor Positioning]] with [[Ultra Wideband]]**: UWB ranging devices measure time-of-flight distances between anchors and tags. These measured Euclidean distances are combined via trilateration or multilateration (least-squares minimisation over the system of Euclidean distance equations) to compute 2D or 3D position. UWB combined with [[K-Nearest Neighbours]] (using Euclidean distance between RSS fingerprint vectors) achieves sub-10cm positioning accuracy in structured indoor environments. A 2026 preprint (KD-EKF, arXiv:2603.18027) combines knowledge-distilled deep networks with extended Kalman filters for UWB/PDR indoor localisation, using Euclidean distance as the core measurement model.
+- **[[Anomaly Detection]]**: measuring the Euclidean distance of new observations from cluster centroids ([[K-Means]]), from the k-nearest training neighbours (KNN anomaly detection), or from a Gaussian process mean provides an anomaly score. Points with large Euclidean distance from known normal patterns are flagged as anomalies. The Mahalanobis distance generalises this to account for feature correlations; for uncorrelated, standardised features, Euclidean distance is the optimal anomaly score under a Gaussian normality assumption. In embedding-based anomaly detection using [[UMAP]] projections, Euclidean distance to the nearest-neighbour in the low-dimensional manifold projection identifies isolated anomalous samples.
+- **[[Dimensionality Reduction]] objective**: [[Principal Component Analysis]] minimises the mean squared (Euclidean) reconstruction error between original and projected points, making Euclidean distance the objective of the projection. UMAP's low-dimensional optimisation minimises a fuzzy cross-entropy between high-dimensional and low-dimensional fuzzy simplicial sets, using Euclidean distance in both spaces to construct the simplicial complex. [[t-SNE]] minimises the KL divergence between Gaussian-kernel similarity matrices computed from Euclidean distances in high- and low-dimensional spaces.
+- **[[Recommendation System|Recommendation systems]] (item similarity)**: for normalised item embeddings (collaborative filtering latent factors, content embeddings), Euclidean distance and cosine similarity rank identically. For unnormalised embeddings — for instance, matrix factorisation outputs from ALS where magnitude encodes popularity — Euclidean distance between item vectors better captures the combined effect of directional similarity and magnitude difference than cosine similarity alone. Some recommendation practitioners prefer Euclidean distance on item embeddings for this reason.
+- **Molecular and drug similarity**: in pharmacoinformatics, Euclidean distance over continuous molecular property vectors (logP, molecular weight, TPSA, hydrogen bond counts) is used to identify structurally similar drug candidates. Unlike the Tanimoto (Jaccard) similarity used for binary circular fingerprints, Euclidean distance over continuous molecular descriptors captures graded similarity across quantitative property axes, enabling property-space navigation in lead optimisation campaigns. The UK's Wellcome Sanger Institute uses Euclidean distance over molecular embedding spaces from graph neural networks for drug repositioning and target identification.
+- **Robotics and motion planning**: in configuration-space path planning, Euclidean distance between robot configurations (joint angle vectors) governs the RRT (Rapidly-exploring Random Trees) nearest-neighbour step and connection threshold. Euclidean distance in workspace coordinates (end-effector positions) is used to define task-space motion objectives. LiDAR-based SLAM (Simultaneous Localisation and Mapping) uses Euclidean distance between 3D point cloud coordinates in ICP (Iterative Closest Point) alignment and for constructing the occupancy grid used in motion planning.
 
   ## Academic Context
 
@@ -194,12 +194,12 @@ Euclidean distance is the straight-line distance between two points in Euclidean
 
   ## Future Directions (2026-2030)
 
-  - **Hybrid metric systems**: production vector retrieval systems are moving toward support for per-query and per-collection metric specification, allowing Euclidean distance to be selectively applied to structured or normalised sub-vectors while cosine similarity is applied to dense embedding sub-vectors in the same HNSW index. Named vector spaces in Qdrant v2 (2026) already support this pattern.
-  - **Euclidean distance in differential privacy**: homomorphic encryption and secure multi-party computation protocols for Euclidean distance over encrypted embedding vectors are an active area, enabling privacy-preserving nearest-neighbour search for healthcare and financial applications where raw embeddings must remain confidential.
-  - **Learnable L2 transforms**: meta-learning approaches that condition a linear transformation A (so d(x, y) = ‖Ax − Ay‖) on query context — effectively learning a task-specific Mahalanobis distance at inference time — could adapt the geometry of Euclidean distance to specific user intents without the overhead of full re-embedding.
-  - **Quantised Euclidean approximation**: scalar quantisation (8-bit, 4-bit) and binary quantisation of embedding vectors reduce Euclidean distance computation to integer or bitwise operations, achieving 4-32x memory reduction with controlled recall degradation. The information-theoretic limits of quantised Euclidean approximation — how much recall can be maintained at a given bit budget — remain an active research question.
-  - **Neuromorphic implementations**: spiking neural network implementations of Euclidean distance computation on Intel Loihi 2 and BrainScaleS-2 neuromorphic hardware achieve sub-milliwatt power consumption, enabling continuous nearest-neighbour monitoring in IoT edge devices without cloud offload.
-  - **Beyond Euclidean for graph-structured data**: knowledge graph and social network applications increasingly use hyperbolic distance in the Poincaré ball rather than Euclidean distance, because hyperbolic geometry naturally embeds tree-structured hierarchical data with low distortion. Euclidean distance remains the baseline against which hyperbolic embeddings demonstrate advantage, and hybrid Euclidean-hyperbolic product spaces are an emerging solution for data with mixed hierarchical and non-hierarchical structure.
+- **Hybrid metric systems**: production vector retrieval systems are moving toward support for per-query and per-collection metric specification, allowing Euclidean distance to be selectively applied to structured or normalised sub-vectors while cosine similarity is applied to dense embedding sub-vectors in the same HNSW index. Named vector spaces in Qdrant v2 (2026) already support this pattern.
+- **Euclidean distance in differential privacy**: homomorphic encryption and secure multi-party computation protocols for Euclidean distance over encrypted embedding vectors are an active area, enabling privacy-preserving nearest-neighbour search for healthcare and financial applications where raw embeddings must remain confidential.
+- **Learnable L2 transforms**: meta-learning approaches that condition a linear transformation A (so d(x, y) = ‖Ax − Ay‖) on query context — effectively learning a task-specific Mahalanobis distance at inference time — could adapt the geometry of Euclidean distance to specific user intents without the overhead of full re-embedding.
+- **Quantised Euclidean approximation**: scalar quantisation (8-bit, 4-bit) and binary quantisation of embedding vectors reduce Euclidean distance computation to integer or bitwise operations, achieving 4-32x memory reduction with controlled recall degradation. The information-theoretic limits of quantised Euclidean approximation — how much recall can be maintained at a given bit budget — remain an active research question.
+- **Neuromorphic implementations**: spiking neural network implementations of Euclidean distance computation on Intel Loihi 2 and BrainScaleS-2 neuromorphic hardware achieve sub-milliwatt power consumption, enabling continuous nearest-neighbour monitoring in IoT edge devices without cloud offload.
+- **Beyond Euclidean for graph-structured data**: knowledge graph and social network applications increasingly use hyperbolic distance in the Poincaré ball rather than Euclidean distance, because hyperbolic geometry naturally embeds tree-structured hierarchical data with low distortion. Euclidean distance remains the baseline against which hyperbolic embeddings demonstrate advantage, and hybrid Euclidean-hyperbolic product spaces are an emerging solution for data with mixed hierarchical and non-hierarchical structure.
 
   ## Research and Literature
 
@@ -234,15 +234,15 @@ Euclidean distance is the straight-line distance between two points in Euclidean
 
   ## Key Terminology
 
-  - **L2 norm**: ‖v‖₂ = √(Σᵢ vᵢ²); the Euclidean length of vector v. Euclidean distance between p and q equals the L2 norm of their difference: d(p, q) = ‖p − q‖₂.
-  - **Squared Euclidean distance**: d²(p, q) = Σᵢ (pᵢ − qᵢ)²; avoids the square root computation and produces the same ranking as Euclidean distance, making it preferable when only relative ordering matters.
-  - **Minkowski distance**: generalisation d(p, q) = (Σᵢ |pᵢ − qᵢ|^r)^{1/r}; Euclidean distance is Minkowski with r=2; Manhattan distance is r=1; Chebyshev distance is r→∞.
-  - **Curse of dimensionality**: as dimension n grows, the ratio of maximum to minimum pairwise Euclidean distances among random points approaches 1, making all points approximately equidistant and nearest-neighbour queries meaningless.
-  - **IVF (Inverted File Index)**: [[FAISS]] index type that partitions the corpus into Voronoi cells using k-means with Euclidean distance, then searches only the nprobe nearest cells at query time.
-  - **Product quantisation**: lossy compression of Euclidean distance computation by independently quantising sub-vectors; reduces memory 8-32x for billion-scale Euclidean nearest-neighbour search.
-  - **Trilateration**: geometric technique for computing position from Euclidean distances to known reference points; the core algorithm in [[Ultra Wideband]] indoor positioning.
-  - **HNSW**: graph-based approximate nearest-neighbour index supporting Euclidean and cosine distance; exploits the triangle inequality for O(log n) search.
-  - **Mahalanobis distance**: d_Σ(p, q) = √((p−q)^T Σ⁻¹ (p−q)); generalises Euclidean distance to account for feature correlations via the inverse covariance matrix Σ⁻¹. Reduces to Euclidean distance when Σ = I.
+- **L2 norm**: ‖v‖₂ = √(Σᵢ vᵢ²); the Euclidean length of vector v. Euclidean distance between p and q equals the L2 norm of their difference: d(p, q) = ‖p − q‖₂.
+- **Squared Euclidean distance**: d²(p, q) = Σᵢ (pᵢ − qᵢ)²; avoids the square root computation and produces the same ranking as Euclidean distance, making it preferable when only relative ordering matters.
+- **Minkowski distance**: generalisation d(p, q) = (Σᵢ |pᵢ − qᵢ|^r)^{1/r}; Euclidean distance is Minkowski with r=2; Manhattan distance is r=1; Chebyshev distance is r→∞.
+- **Curse of dimensionality**: as dimension n grows, the ratio of maximum to minimum pairwise Euclidean distances among random points approaches 1, making all points approximately equidistant and nearest-neighbour queries meaningless.
+- **IVF (Inverted File Index)**: [[FAISS]] index type that partitions the corpus into Voronoi cells using k-means with Euclidean distance, then searches only the nprobe nearest cells at query time.
+- **Product quantisation**: lossy compression of Euclidean distance computation by independently quantising sub-vectors; reduces memory 8-32x for billion-scale Euclidean nearest-neighbour search.
+- **Trilateration**: geometric technique for computing position from Euclidean distances to known reference points; the core algorithm in [[Ultra Wideband]] indoor positioning.
+- **HNSW**: graph-based approximate nearest-neighbour index supporting Euclidean and cosine distance; exploits the triangle inequality for O(log n) search.
+- **Mahalanobis distance**: d_Σ(p, q) = √((p−q)^T Σ⁻¹ (p−q)); generalises Euclidean distance to account for feature correlations via the inverse covariance matrix Σ⁻¹. Reduces to Euclidean distance when Σ = I.
 
-- ### Provenance
+### Provenance
 

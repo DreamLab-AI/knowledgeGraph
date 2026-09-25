@@ -1,54 +1,58 @@
-
 A legal framework for technology systems comprises the body of laws, regulations, and legal requirements that govern the development, deployment, and operation of information technology. It establishes obligations for data protection, privacy, security, and compliance, defining the legal boundaries within which organisations must operate when processing personal data, deploying AI systems, and conducting digital operations.
 
-- ### Semantic Classification
+### Semantic Classification
 
-- ### Content
+### Content
 
-  ## Components
+## Components
 
-  ### Major Data Protection Regulations
+### Major Data Protection Regulations
 
-  #### GDPR (General Data Protection Regulation)
-  European Union regulation establishing comprehensive data protection requirements. Key principles include lawfulness, fairness, transparency, purpose limitation, data minimisation, accuracy, storage limitation, integrity, and accountability. Applies to any organisation processing personal data of EU residents.
+#### GDPR (General Data Protection Regulation)
+European Union regulation establishing comprehensive data protection requirements. Key principles include lawfulness, fairness, transparency, purpose limitation, data minimisation, accuracy, storage limitation, integrity, and accountability. Applies to any organisation processing personal data of EU residents.
 
-  #### EU AI Act
-  First comprehensive legal framework for artificial intelligence, enacted in 2024. Establishes risk-based requirements for AI systems, mandating transparency, safety, and human oversight particularly for high-risk applications.
+#### EU AI Act
+First comprehensive legal framework for artificial intelligence, enacted in 2024. Establishes risk-based requirements for AI systems, mandating transparency, safety, and human oversight particularly for high-risk applications.
 
-  #### National Data Protection Laws
-  Over 100 countries have enacted data privacy regulations, including:
-  - UK Data Protection Act 2018
-  - California Consumer Privacy Act (CCPA)
-  - Brazil's LGPD
-  - China's PIPL
+#### National Data Protection Laws
+Over 100 countries have enacted data privacy regulations, including:
+
+- UK Data Protection Act 2018
+- California Consumer Privacy Act (CCPA)
+- Brazil's LGPD
+- China's PIPL
 
   ### Core Legal Requirements
 
   #### Privacy by Design and Default
-  - Data protection considerations integrated into system design
-  - Default settings prioritise privacy
-  - Technical and organisational measures implemented from the outset
+
+- Data protection considerations integrated into system design
+- Default settings prioritise privacy
+- Technical and organisational measures implemented from the outset
 
   #### Data Subject Rights
-  - Right to access personal data
-  - Right to rectification and erasure
-  - Right to data portability
-  - Right to object to processing
-  - Rights related to automated decision-making
+
+- Right to access personal data
+- Right to rectification and erasure
+- Right to data portability
+- Right to object to processing
+- Rights related to automated decision-making
 
   #### Organisational Obligations
-  - Lawful basis for data processing
-  - Transparency in data collection and use
-  - Data protection impact assessments (DPIAs)
-  - Breach notification within 72 hours
-  - Appointment of Data Protection Officers where required
+
+- Lawful basis for data processing
+- Transparency in data collection and use
+- Data protection impact assessments (DPIAs)
+- Breach notification within 72 hours
+- Appointment of Data Protection Officers where required
 
   ### Compliance Areas
-  - **Data Processing**: Legal basis, consent management, purpose limitation
-  - **Cross-Border Transfers**: Adequacy decisions, standard contractual clauses
-  - **Security**: Technical and organisational measures, encryption
-  - **Records**: Processing activities documentation, audit trails
-  - **Third Parties**: Processor agreements, vendor due diligence
+
+- **Data Processing**: Legal basis, consent management, purpose limitation
+- **Cross-Border Transfers**: Adequacy decisions, standard contractual clauses
+- **Security**: Technical and organisational measures, encryption
+- **Records**: Processing activities documentation, audit trails
+- **Third Parties**: Processor agreements, vendor due diligence
 
   ## Implementation
 
@@ -61,44 +65,49 @@ A legal framework for technology systems comprises the body of laws, regulations
   6. **Monitoring**: Ongoing compliance verification and auditing
 
   ### Technology Compliance Requirements
-  - Privacy impact assessments for new systems
-  - Data mapping and inventory maintenance
-  - Consent management platforms
-  - Data retention and deletion mechanisms
-  - Security controls appropriate to risk
-  - Audit logging and monitoring
+
+- Privacy impact assessments for new systems
+- Data mapping and inventory maintenance
+- Consent management platforms
+- Data retention and deletion mechanisms
+- Security controls appropriate to risk
+- Audit logging and monitoring
 
   ### Emerging Legal Considerations
-  - AI regulation and algorithmic accountability
-  - Cross-border data flow restrictions
-  - Sector-specific regulations (healthcare, finance)
-  - Children's data protection requirements
-  - Biometric data special categories
+
+- AI regulation and algorithmic accountability
+- Cross-border data flow restrictions
+- Sector-specific regulations (healthcare, finance)
+- Children's data protection requirements
+- Biometric data special categories
 
   ### Best Practices
-  - Maintain current awareness of regulatory changes
-  - Integrate legal compliance into system development lifecycle
-  - Establish clear accountability for data protection
-  - Regular compliance audits and assessments
-  - Documented decision-making for processing activities
-  - Incident response procedures for data breaches
 
-- ### Current Landscape (2026)
-  - The EU AI Act (Regulation (EU) 2024/1689), the world's first comprehensive horizontal legal framework for AI, moved into phased application: prohibited-practice and AI-literacy rules from 2 February 2025, general-purpose AI (GPAI) obligations and the governance regime from 2 August 2025, with the European AI Office assuming enforcement powers over GPAI models.
-  - On 19 November 2025 the European Commission tabled the "Digital Omnibus" and "Digital Omnibus on AI" simplification packages; the AI Omnibus "stops the clock" on high-risk obligations, replacing the fixed 2 August 2026 date with a standards-conditional timeline (backstops of 2 December 2027 for Annex III systems and 2 August 2028 for product-embedded Annex I systems). A political agreement was reached in May 2026 and the AI Omnibus entered into force on 27 July 2026.
-  - The Digital Omnibus also recalibrates the wider rulebook: it consolidates the Data Governance Act, Open Data Directive and Free Flow of Non-Personal Data Regulation into a restructured Data Act, amends GDPR (narrowing "personal data", enabling legitimate-interest AI training, extending breach notification to 96 hours), and creates a single-entry point routing incident reports across NIS2, GDPR, DORA, eIDAS and CER.
-  - The United States continues to lack a comprehensive federal AI statute, producing a fragmented state-law patchwork: California's Transparency in Frontier AI Act (SB 53, >10^26 FLOPS threshold), Texas's Responsible AI Governance Act (TRAIGA) and several California transparency laws took effect on 1 January 2026, while Colorado's risk-based AI Act was repealed and replaced by the narrower ADMT-focused SB 26-189, effective 1 January 2027.
-  - Federal-versus-state conflict intensified: President Trump's Executive Order 14179 (January 2025) revoked the Biden-era EO 14110, and the 11 December 2025 order "Ensuring a National Policy Framework for Artificial Intelligence" established a DOJ AI Litigation Task Force to challenge state AI laws on preemption and interstate-commerce grounds, naming Colorado's law specifically; by May 2026 three state laws (CO, NY, IL) faced active federal litigation.
-  - Standardisation and enforcement scaffolding matured: prEN 18286 (AI quality-management system for AI Act purposes) entered public enquiry on 30 October 2025 as the first harmonised AI standard, the DSA's Data Access Portal became operational in October 2025 with first fines against platforms expected in 2026, and the UK's Data (Use and Access) Act 2025 began phased commencement from August 2025.
-  - Key open challenges as of 2026 include delayed harmonised standards jeopardising high-risk AI compliance, the extraterritorial reach and regulatory overlap of the EU regime, unresolved US federal-preemption litigation creating compliance uncertainty, and reconciling data-protection simplification with maintaining fundamental-rights safeguards.
+- Maintain current awareness of regulatory changes
+- Integrate legal compliance into system development lifecycle
+- Establish clear accountability for data protection
+- Regular compliance audits and assessments
+- Documented decision-making for processing activities
+- Incident response procedures for data breaches
 
-- ### References
-  - 1. European Commission (2026). AI Act — Regulatory framework on AI. https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai
-  - 2. European Parliament (2026). The Digital Omnibus Regulation Proposal — Legislative Train Schedule. https://www.europarl.europa.eu/legislative-train/theme-a-new-plan-for-europe-s-sustainable-prosperity-and-competitiveness/file-digital-package
-  - 3. White & Case LLP (2025). EU Digital Omnibus: What changes lie ahead for the Data Act, GDPR and AI Act. https://www.whitecase.com/insight-alert/eu-digital-omnibus-what-changes-lie-ahead-data-act-gdpr-and-ai-act
-  - 4. Baker Botts (2026). U.S. Artificial Intelligence Law Update: Navigating the Patchwork. https://www.bakerbotts.com/thought-leadership/publications/2026/january/us-ai-law-update
-  - 5. VerifyWise (2026). State of AI Governance Regulations in the United States (March 2026). https://verifywise.ai/documents/state-of-ai-governance-regulations-us-march-2026.pdf
-  - 6. European Commission (2025). Standardisation of the AI Act — prEN 18286. https://digital-strategy.ec.europa.eu/en/policies/ai-act-standardisation
+### Current Landscape (2026)
 
-- ### Provenance
+- The EU AI Act (Regulation (EU) 2024/1689), the world's first comprehensive horizontal legal framework for AI, moved into phased application: prohibited-practice and AI-literacy rules from 2 February 2025, general-purpose AI (GPAI) obligations and the governance regime from 2 August 2025, with the European AI Office assuming enforcement powers over GPAI models.
+- On 19 November 2025 the European Commission tabled the "Digital Omnibus" and "Digital Omnibus on AI" simplification packages; the AI Omnibus "stops the clock" on high-risk obligations, replacing the fixed 2 August 2026 date with a standards-conditional timeline (backstops of 2 December 2027 for Annex III systems and 2 August 2028 for product-embedded Annex I systems). A political agreement was reached in May 2026 and the AI Omnibus entered into force on 27 July 2026.
+- The Digital Omnibus also recalibrates the wider rulebook: it consolidates the Data Governance Act, Open Data Directive and Free Flow of Non-Personal Data Regulation into a restructured Data Act, amends GDPR (narrowing "personal data", enabling legitimate-interest AI training, extending breach notification to 96 hours), and creates a single-entry point routing incident reports across NIS2, GDPR, DORA, eIDAS and CER.
+- The United States continues to lack a comprehensive federal AI statute, producing a fragmented state-law patchwork: California's Transparency in Frontier AI Act (SB 53, >10^26 FLOPS threshold), Texas's Responsible AI Governance Act (TRAIGA) and several California transparency laws took effect on 1 January 2026, while Colorado's risk-based AI Act was repealed and replaced by the narrower ADMT-focused SB 26-189, effective 1 January 2027.
+- Federal-versus-state conflict intensified: President Trump's Executive Order 14179 (January 2025) revoked the Biden-era EO 14110, and the 11 December 2025 order "Ensuring a National Policy Framework for Artificial Intelligence" established a DOJ AI Litigation Task Force to challenge state AI laws on preemption and interstate-commerce grounds, naming Colorado's law specifically; by May 2026 three state laws (CO, NY, IL) faced active federal litigation.
+- Standardisation and enforcement scaffolding matured: prEN 18286 (AI quality-management system for AI Act purposes) entered public enquiry on 30 October 2025 as the first harmonised AI standard, the DSA's Data Access Portal became operational in October 2025 with first fines against platforms expected in 2026, and the UK's Data (Use and Access) Act 2025 began phased commencement from August 2025.
+- Key open challenges as of 2026 include delayed harmonised standards jeopardising high-risk AI compliance, the extraterritorial reach and regulatory overlap of the EU regime, unresolved US federal-preemption litigation creating compliance uncertainty, and reconciling data-protection simplification with maintaining fundamental-rights safeguards.
+
+### References
+
+- 1. European Commission (2026). AI Act — Regulatory framework on AI. https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai
+- 2. European Parliament (2026). The Digital Omnibus Regulation Proposal — Legislative Train Schedule. https://www.europarl.europa.eu/legislative-train/theme-a-new-plan-for-europe-s-sustainable-prosperity-and-competitiveness/file-digital-package
+- 3. White & Case LLP (2025). EU Digital Omnibus: What changes lie ahead for the Data Act, GDPR and AI Act. https://www.whitecase.com/insight-alert/eu-digital-omnibus-what-changes-lie-ahead-data-act-gdpr-and-ai-act
+- 4. Baker Botts (2026). U.S. Artificial Intelligence Law Update: Navigating the Patchwork. https://www.bakerbotts.com/thought-leadership/publications/2026/january/us-ai-law-update
+- 5. VerifyWise (2026). State of AI Governance Regulations in the United States (March 2026). https://verifywise.ai/documents/state-of-ai-governance-regulations-us-march-2026.pdf
+- 6. European Commission (2025). Standardisation of the AI Act — prEN 18286. https://digital-strategy.ec.europa.eu/en/policies/ai-act-standardisation
+
+### Provenance
 

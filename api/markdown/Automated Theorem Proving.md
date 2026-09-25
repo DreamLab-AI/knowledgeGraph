@@ -1,22 +1,28 @@
-
 Automated theorem proving is the subfield of automated reasoning concerned with constructing formal proofs of mathematical or logical statements by machine. Given a set of axioms and a conjecture expressed in a formal logic, an automated theorem prover searches for a derivation that establishes the conjecture as a consequence of the axioms. Techniques span resolution, tableaux, term rewriting and decision procedures, and underpin formal verification, mathematics and AI reasoning.
 
 - [[Automated Theorem Proving]] constructs formal proofs of logical or mathematical statements by machine, a core branch of [[Automated Reasoning]]. Given axioms and a conjecture in a formal logic, a prover searches for a derivation establishing the conjecture.
 - It is a manifestation of [[Symbolic AI]] and underlies [[Formal Verification]] of hardware and software.
-- ### Overview
+
+### Overview
+
 - An automated theorem prover takes a logical theory and a goal and attempts to find a proof using inference rules, deciding entailment where the logic is decidable and searching otherwise.
 - The field separates fully automatic provers from interactive proof assistants, which combine machine search with human guidance. Both descend from the formalisation of mathematics in first-order and higher-order logics.
 - Provers exploit normal forms, indexing, and heuristics to tame the vast search space, since proof search is in general undecidable for expressive logics.
-- ### Mechanisms
+
+### Mechanisms
+
 - Resolution: refutation-based search over clauses in conjunctive normal form.
 - Tableaux: systematic construction of models to test satisfiability.
 - Term rewriting: directed equational reasoning to normalise expressions.
 - Decision procedures: complete algorithms for decidable fragments such as linear arithmetic.
 - Proof search heuristics: ordering, subsumption and clause selection to prune branches.
-- ### Applications
+
+### Applications
+
 - Formal verification of processors, protocols and safety-critical software.
 - Machine-checked mathematics and large formalisation projects.
 - Backends for [[Constraint Satisfaction]] and program analysis.
 - Reasoning components within neuro-symbolic and agentic AI systems.
-- ### Provenance
+
+### Provenance
 

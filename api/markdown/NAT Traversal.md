@@ -1,26 +1,33 @@
-
 NAT traversal is the set of techniques that let two devices behind Network Address Translation establish a direct connection despite the address rewriting and connection-tracking that NAT imposes. Methods such as hole punching, relaying and the coordination protocols STUN, TURN and ICE allow peers to discover routable endpoints and open paths through restrictive routers. NAT traversal is essential to peer-to-peer and decentralised networks where nodes behind home or corporate routers must reach one another without a central server.
 
-- ### Overview
-  - NAT lets many private devices share a single public IP address by rewriting addresses and ports, but in doing so it breaks the assumption that any host can be reached directly.
-  - Inbound connections to a private host are dropped unless the NAT already has a mapping, which is the core obstacle NAT traversal solves.
-  - The techniques coordinate both peers so that each opens an outbound flow, tricking their NATs into creating matching mappings that let traffic pass.
-  - In [[Blockchain]] and other [[Distributed Systems]], robust NAT traversal keeps the peer mesh well connected and resistant to fragmentation.
-- ### Key aspects
-  - **Endpoint discovery** — STUN-style probes reveal a peer's public-facing address and port as seen from the outside.
-  - **Hole punching** — peers simultaneously send packets to each other so both NATs open mappings, enabling a direct path.
-  - **Relaying fallback** — when direct connection fails (e.g. symmetric NAT), a TURN-style relay forwards traffic, trading efficiency for reachability.
-  - **Candidate negotiation** — ICE gathers and tests multiple candidate paths, selecting the best working one.
-  - **Decentralisation** — effective traversal removes the need for always-on central infrastructure, preserving the [[Node]]-to-[[Node]] character of [[Peer-to-Peer Network]]s.
-- ### Mechanisms
-  - A peer queries a public server to learn its external mapping, then shares those candidates with the other peer.
-  - Both peers attempt connections across candidate pairs, keeping the first that succeeds.
-  - [[Gossip Protocol]] and [[Overlay Network]] layers exchange peer addresses so nodes can attempt traversal at scale.
-  - Periodic keepalives maintain NAT mappings so established connections do not time out.
-- ### Applications
-  - Connecting [[Full Node]] and light clients in a [[Blockchain Network]] without central rendezvous servers.
-  - [[Real-Time Communication]] such as voice, video and gaming between peers behind routers.
-  - Decentralised file sharing and content distribution overlays.
-  - Resilient gossip meshes for transaction and block propagation.
-- ### Provenance
+### Overview
+
+- NAT lets many private devices share a single public IP address by rewriting addresses and ports, but in doing so it breaks the assumption that any host can be reached directly.
+- Inbound connections to a private host are dropped unless the NAT already has a mapping, which is the core obstacle NAT traversal solves.
+- The techniques coordinate both peers so that each opens an outbound flow, tricking their NATs into creating matching mappings that let traffic pass.
+- In [[Blockchain]] and other [[Distributed Systems]], robust NAT traversal keeps the peer mesh well connected and resistant to fragmentation.
+
+### Key aspects
+
+- **Endpoint discovery** — STUN-style probes reveal a peer's public-facing address and port as seen from the outside.
+- **Hole punching** — peers simultaneously send packets to each other so both NATs open mappings, enabling a direct path.
+- **Relaying fallback** — when direct connection fails (e.g. symmetric NAT), a TURN-style relay forwards traffic, trading efficiency for reachability.
+- **Candidate negotiation** — ICE gathers and tests multiple candidate paths, selecting the best working one.
+- **Decentralisation** — effective traversal removes the need for always-on central infrastructure, preserving the [[Node]]-to-[[Node]] character of [[Peer-to-Peer Network]]s.
+
+### Mechanisms
+
+- A peer queries a public server to learn its external mapping, then shares those candidates with the other peer.
+- Both peers attempt connections across candidate pairs, keeping the first that succeeds.
+- [[Gossip Protocol]] and [[Overlay Network]] layers exchange peer addresses so nodes can attempt traversal at scale.
+- Periodic keepalives maintain NAT mappings so established connections do not time out.
+
+### Applications
+
+- Connecting [[Full Node]] and light clients in a [[Blockchain Network]] without central rendezvous servers.
+- [[Real-Time Communication]] such as voice, video and gaming between peers behind routers.
+- Decentralised file sharing and content distribution overlays.
+- Resilient gossip meshes for transaction and block propagation.
+
+### Provenance
 

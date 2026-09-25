@@ -1,10 +1,10 @@
-
 Production technique blending real and virtual scenes using XR and real-time rendering for film, broadcast, and immersive content creation.
 
-- ### Semantic Classification
+### Semantic Classification
 
-- ### Content
-  Virtual Production (VP) — content pending enrichment.
+### Content
 
-- ### Provenance
+Virtual Production (VP) — content pending enrichment.
+
+### Provenance
 

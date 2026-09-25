@@ -1,159 +1,162 @@
-
 A discrete, modular unit within an AI system or infrastructure that provides a specific capability, can be developed and tested independently, and interacts with other components through defined interfaces. Components include hardware accelerators, software modules, model artefacts, data pipelines, and monitoring subsystems.
 
-- ### Semantic Classification
+### Semantic Classification
 
-- ### Content
+### Content
 
-  ## Compositional Relationships (Components)
-      SubClassOf(ai:Component
-        ObjectSomeValuesFrom(ai:hasPart ai:HardwareComponent))
-      SubClassOf(ai:Component
-        ObjectSomeValuesFrom(ai:hasPart ai:SoftwareModule))
-      SubClassOf(ai:Component
-        ObjectSomeValuesFrom(ai:hasPart ai:NeuralNetworkLayer))
-      SubClassOf(ai:Component
-        ObjectSomeValuesFrom(ai:hasPart ai:DataPipeline))
-      SubClassOf(ai:Component
-        ObjectSomeValuesFrom(ai:hasPart ai:InferenceEngine))
-      SubClassOf(ai:Component
-        ObjectSomeValuesFrom(ai:hasPart ai:MonitoringSidecar))
-      SubClassOf(ai:Component
-        ObjectSomeValuesFrom(ai:hasPart ai:AttentionHead))
+## Compositional Relationships (Components)
+    SubClassOf(ai:Component
+      ObjectSomeValuesFrom(ai:hasPart ai:HardwareComponent))
+    SubClassOf(ai:Component
+      ObjectSomeValuesFrom(ai:hasPart ai:SoftwareModule))
+    SubClassOf(ai:Component
+      ObjectSomeValuesFrom(ai:hasPart ai:NeuralNetworkLayer))
+    SubClassOf(ai:Component
+      ObjectSomeValuesFrom(ai:hasPart ai:DataPipeline))
+    SubClassOf(ai:Component
+      ObjectSomeValuesFrom(ai:hasPart ai:InferenceEngine))
+    SubClassOf(ai:Component
+      ObjectSomeValuesFrom(ai:hasPart ai:MonitoringSidecar))
+    SubClassOf(ai:Component
+      ObjectSomeValuesFrom(ai:hasPart ai:AttentionHead))
 
-  ## Dependency Relationships
-      SubClassOf(ai:Component
-        ObjectSomeValuesFrom(ai:requires ai:Interface))
-      SubClassOf(ai:Component
-        ObjectSomeValuesFrom(ai:requires ai:API))
-      SubClassOf(ai:Component
-        ObjectSomeValuesFrom(ai:requires ai:Modularity))
-      SubClassOf(ai:Component
-        ObjectSomeValuesFrom(ai:dependsOn ai:AIFramework))
-      SubClassOf(ai:Component
-        ObjectSomeValuesFrom(ai:dependsOn ai:Containerisation))
-      SubClassOf(ai:Component
-        ObjectSomeValuesFrom(ai:dependsOn ai:Kubernetes))
-      SubClassOf(ai:Component
-        ObjectSomeValuesFrom(ai:dependsOn ai:ServiceMesh))
+## Dependency Relationships
+    SubClassOf(ai:Component
+      ObjectSomeValuesFrom(ai:requires ai:Interface))
+    SubClassOf(ai:Component
+      ObjectSomeValuesFrom(ai:requires ai:API))
+    SubClassOf(ai:Component
+      ObjectSomeValuesFrom(ai:requires ai:Modularity))
+    SubClassOf(ai:Component
+      ObjectSomeValuesFrom(ai:dependsOn ai:AIFramework))
+    SubClassOf(ai:Component
+      ObjectSomeValuesFrom(ai:dependsOn ai:Containerisation))
+    SubClassOf(ai:Component
+      ObjectSomeValuesFrom(ai:dependsOn ai:Kubernetes))
+    SubClassOf(ai:Component
+      ObjectSomeValuesFrom(ai:dependsOn ai:ServiceMesh))
 
-  ## Capability Relationships
-      SubClassOf(ai:Component
-        ObjectSomeValuesFrom(ai:enables ai:Reusability))
-      SubClassOf(ai:Component
-        ObjectSomeValuesFrom(ai:enables ai:Testability))
-      SubClassOf(ai:Component
-        ObjectSomeValuesFrom(ai:enables ai:FaultTolerance))
-      SubClassOf(ai:Component
-        ObjectSomeValuesFrom(ai:enables ai:ModelDeployment))
-      SubClassOf(ai:Component
-        ObjectSomeValuesFrom(ai:enables ai:DistributedTraining))
-      SubClassOf(ai:Component
-        ObjectSomeValuesFrom(ai:supports ai:MachineLearningPipeline))
-      SubClassOf(ai:Component
-        ObjectSomeValuesFrom(ai:supports ai:ModelServing))
-      SubClassOf(ai:Component
-        ObjectSomeValuesFrom(ai:supports ai:DataGovernance))
+## Capability Relationships
+    SubClassOf(ai:Component
+      ObjectSomeValuesFrom(ai:enables ai:Reusability))
+    SubClassOf(ai:Component
+      ObjectSomeValuesFrom(ai:enables ai:Testability))
+    SubClassOf(ai:Component
+      ObjectSomeValuesFrom(ai:enables ai:FaultTolerance))
+    SubClassOf(ai:Component
+      ObjectSomeValuesFrom(ai:enables ai:ModelDeployment))
+    SubClassOf(ai:Component
+      ObjectSomeValuesFrom(ai:enables ai:DistributedTraining))
+    SubClassOf(ai:Component
+      ObjectSomeValuesFrom(ai:supports ai:MachineLearningPipeline))
+    SubClassOf(ai:Component
+      ObjectSomeValuesFrom(ai:supports ai:ModelServing))
+    SubClassOf(ai:Component
+      ObjectSomeValuesFrom(ai:supports ai:DataGovernance))
 
-  ## Implementation Relationships
-      SubClassOf(ai:Component
-        ObjectSomeValuesFrom(ai:implements ai:SeparationOfConcerns))
-      SubClassOf(ai:Component
-        ObjectSomeValuesFrom(ai:implements ai:DesignPattern))
-      SubClassOf(ai:Component
-        ObjectSomeValuesFrom(ai:implements ai:DependencyInjection))
-      SubClassOf(ai:Component
-        ObjectSomeValuesFrom(ai:uses ai:GPUCompute))
-      SubClassOf(ai:Component
-        ObjectSomeValuesFrom(ai:uses ai:EdgeComputing))
-      SubClassOf(ai:Component
-        ObjectSomeValuesFrom(ai:uses ai:VectorDatabase))
-      SubClassOf(ai:Component
-        ObjectSomeValuesFrom(ai:uses ai:ModelRegistry))
+## Implementation Relationships
+    SubClassOf(ai:Component
+      ObjectSomeValuesFrom(ai:implements ai:SeparationOfConcerns))
+    SubClassOf(ai:Component
+      ObjectSomeValuesFrom(ai:implements ai:DesignPattern))
+    SubClassOf(ai:Component
+      ObjectSomeValuesFrom(ai:implements ai:DependencyInjection))
+    SubClassOf(ai:Component
+      ObjectSomeValuesFrom(ai:uses ai:GPUCompute))
+    SubClassOf(ai:Component
+      ObjectSomeValuesFrom(ai:uses ai:EdgeComputing))
+    SubClassOf(ai:Component
+      ObjectSomeValuesFrom(ai:uses ai:VectorDatabase))
+    SubClassOf(ai:Component
+      ObjectSomeValuesFrom(ai:uses ai:ModelRegistry))
 
-  ## Reduction Relationships
-      SubClassOf(ai:Component
-        ObjectSomeValuesFrom(ai:reducesTo ai:SoftwareModule))
-      SubClassOf(ai:Component
-        ObjectSomeValuesFrom(ai:reducesTo ai:NeuralNetworkLayer))
-      SubClassOf(ai:Component
-        ObjectSomeValuesFrom(ai:contrastsWith ai:MonolithicArchitecture))
-      SubClassOf(ai:Component
-        ObjectSomeValuesFrom(ai:relatedTo ai:Microservices))
-      SubClassOf(ai:Component
-        ObjectSomeValuesFrom(ai:relatedTo ai:EventDrivenArchitecture))
-      SubClassOf(ai:Component
-        ObjectSomeValuesFrom(ai:relatedTo ai:FeatureEngineering))
-      SubClassOf(ai:Component
-        ObjectSomeValuesFrom(ai:relatedTo ai:TransformerArchitecture))
-      SubClassOf(ai:Component
-        ObjectSomeValuesFrom(ai:standardizedBy ai:ISOIEC23053))
-      SubClassOf(ai:Component
-        ObjectSomeValuesFrom(ai:standardizedBy ai:ISOIEC25010))
-      SubClassOf(ai:Component
-        ObjectSomeValuesFrom(ai:standardizedBy ai:EUAIAct))
-      SubClassOf(ai:Component
-        ObjectSomeValuesFrom(ai:partOf ai:AISystemEUDefinition))
-      SubClassOf(ai:Component
-        ObjectSomeValuesFrom(ai:uses ai:Monitoring))
-      SubClassOf(ai:Component
-        ObjectSomeValuesFrom(ai:uses ai:Kubernetes))
+## Reduction Relationships
+    SubClassOf(ai:Component
+      ObjectSomeValuesFrom(ai:reducesTo ai:SoftwareModule))
+    SubClassOf(ai:Component
+      ObjectSomeValuesFrom(ai:reducesTo ai:NeuralNetworkLayer))
+    SubClassOf(ai:Component
+      ObjectSomeValuesFrom(ai:contrastsWith ai:MonolithicArchitecture))
+    SubClassOf(ai:Component
+      ObjectSomeValuesFrom(ai:relatedTo ai:Microservices))
+    SubClassOf(ai:Component
+      ObjectSomeValuesFrom(ai:relatedTo ai:EventDrivenArchitecture))
+    SubClassOf(ai:Component
+      ObjectSomeValuesFrom(ai:relatedTo ai:FeatureEngineering))
+    SubClassOf(ai:Component
+      ObjectSomeValuesFrom(ai:relatedTo ai:TransformerArchitecture))
+    SubClassOf(ai:Component
+      ObjectSomeValuesFrom(ai:standardizedBy ai:ISOIEC23053))
+    SubClassOf(ai:Component
+      ObjectSomeValuesFrom(ai:standardizedBy ai:ISOIEC25010))
+    SubClassOf(ai:Component
+      ObjectSomeValuesFrom(ai:standardizedBy ai:EUAIAct))
+    SubClassOf(ai:Component
+      ObjectSomeValuesFrom(ai:partOf ai:AISystemEUDefinition))
+    SubClassOf(ai:Component
+      ObjectSomeValuesFrom(ai:uses ai:Monitoring))
+    SubClassOf(ai:Component
+      ObjectSomeValuesFrom(ai:uses ai:Kubernetes))
 
-  ## About
-  The concept of a Component traces its lineage to the earliest modular programming traditions of the 1970s — David Parnas's seminal work on information hiding (1972) established that software should be decomposed into modules, each encapsulating a single design decision behind a stable interface. Parnas argued that the criterion for modularisation should not be the temporal sequence of execution steps but rather the isolation of likely changes: a module's interface should expose only what is necessary, hiding its internal representation so that it can be changed without rippling effects through the rest of the system. This principle — now so axiomatic that it appears in virtually every software engineering curriculum — was profoundly non-obvious at the time, when monolithic batch programmes were the norm. Component-Based Software Engineering (CBSE) emerged as a distinct discipline in the late 1990s through the work of Clemens Szyperski (Component Software: Beyond Object-Oriented Programming, 1997), which formalised the notion of binary components as deployable, composable units distinct from object classes. A component in Szyperski's definition is a unit of composition with contractually specified interfaces and explicit context dependencies only; it can be deployed independently and is subject to composition by third parties. This definition deliberately separated the component concept from object-oriented implementation: a component need not be a class hierarchy; it can be any executable artefact — a shared library, a COM object, a Java bean, a Docker image — provided it exposes a formal interface contract and can be deployed without modification. The discipline was further institutionalised through standards bodies and industry consortia such as the Object Management Group (OMG) and the Common Object Request Broker Architecture (CORBA), which defined interoperability contracts for distributed component systems. Enterprise JavaBeans (EJB), Microsoft's Component Object Model (COM/DCOM), and Sun's JavaBeans brought component concepts to mainstream enterprise software development through the late 1990s and 2000s.
+## About
+The concept of a Component traces its lineage to the earliest modular programming traditions of the 1970s — David Parnas's seminal work on information hiding (1972) established that software should be decomposed into modules, each encapsulating a single design decision behind a stable interface. Parnas argued that the criterion for modularisation should not be the temporal sequence of execution steps but rather the isolation of likely changes: a module's interface should expose only what is necessary, hiding its internal representation so that it can be changed without rippling effects through the rest of the system. This principle — now so axiomatic that it appears in virtually every software engineering curriculum — was profoundly non-obvious at the time, when monolithic batch programmes were the norm. Component-Based Software Engineering (CBSE) emerged as a distinct discipline in the late 1990s through the work of Clemens Szyperski (Component Software: Beyond Object-Oriented Programming, 1997), which formalised the notion of binary components as deployable, composable units distinct from object classes. A component in Szyperski's definition is a unit of composition with contractually specified interfaces and explicit context dependencies only; it can be deployed independently and is subject to composition by third parties. This definition deliberately separated the component concept from object-oriented implementation: a component need not be a class hierarchy; it can be any executable artefact — a shared library, a COM object, a Java bean, a Docker image — provided it exposes a formal interface contract and can be deployed without modification. The discipline was further institutionalised through standards bodies and industry consortia such as the Object Management Group (OMG) and the Common Object Request Broker Architecture (CORBA), which defined interoperability contracts for distributed component systems. Enterprise JavaBeans (EJB), Microsoft's Component Object Model (COM/DCOM), and Sun's JavaBeans brought component concepts to mainstream enterprise software development through the late 1990s and 2000s.
 
-  In the contemporary [[Artificial Intelligence]] landscape, the Component concept has undergone a significant expansion in scope and granularity. A single AI system now routinely involves dozens of heterogeneous Components operating across multiple layers: physical compute Components ([[GPU Compute]], [[Edge Computing]] devices, TPUs), data Components ([[Data Pipeline]], [[Feature Engineering]] stores, [[Vector Database]] indices), model Components ([[Neural Network]] architectures, individual [[Neural Network Layer]] stacks, [[Attention Mechanism]] blocks, [[Transformer Architecture]] encoders and decoders), serving Components ([[Inference Engine]], [[Model Serving]] runtimes, [[Model Registry]]), and operational Components ([[MLOps]] toolchains, [[Monitoring]] sidecars, [[Data Governance]] policy engines). Each of these Component categories operates under distinct engineering constraints — compute Components prioritise throughput and energy efficiency; data Components prioritise latency and freshness; model Components prioritise accuracy, calibration, and inference speed; serving Components prioritise availability, scalability, and SLA compliance.
+In the contemporary [[Artificial Intelligence]] landscape, the Component concept has undergone a significant expansion in scope and granularity. A single AI system now routinely involves dozens of heterogeneous Components operating across multiple layers: physical compute Components ([[GPU Compute]], [[Edge Computing]] devices, TPUs), data Components ([[Data Pipeline]], [[Feature Engineering]] stores, [[Vector Database]] indices), model Components ([[Neural Network]] architectures, individual [[Neural Network Layer]] stacks, [[Attention Mechanism]] blocks, [[Transformer Architecture]] encoders and decoders), serving Components ([[Inference Engine]], [[Model Serving]] runtimes, [[Model Registry]]), and operational Components ([[MLOps]] toolchains, [[Monitoring]] sidecars, [[Data Governance]] policy engines). Each of these Component categories operates under distinct engineering constraints — compute Components prioritise throughput and energy efficiency; data Components prioritise latency and freshness; model Components prioritise accuracy, calibration, and inference speed; serving Components prioritise availability, scalability, and SLA compliance.
 
-  A crucial insight from the "Hidden Technical Debt in Machine Learning Systems" paper (Sculley et al., NeurIPS 2015) is that ML Components accumulate debt in ways invisible to conventional software engineering audits. Unlike classical components whose behaviour is fully determined by their code, an ML model Component's behaviour is jointly determined by its code (architecture, training procedure) and its data (training corpus, preprocessing pipeline). Changing any upstream data Component — even in ostensibly unrelated ways — can silently alter the behaviour of downstream model Components. This data dependency, sometimes called "unstable data dependencies," creates implicit coupling between Components that [[Interface]] contracts alone cannot capture. The solution, operationalised by the [[MLOps]] movement, is to treat data schemas, feature distributions, and model calibration curves as first-class elements of the Component contract — what Breck et al. (2017) formalised as the ML Test Score, a rubric scoring the completeness of a system's Component-level testing and monitoring.
+A crucial insight from the "Hidden Technical Debt in Machine Learning Systems" paper (Sculley et al., NeurIPS 2015) is that ML Components accumulate debt in ways invisible to conventional software engineering audits. Unlike classical components whose behaviour is fully determined by their code, an ML model Component's behaviour is jointly determined by its code (architecture, training procedure) and its data (training corpus, preprocessing pipeline). Changing any upstream data Component — even in ostensibly unrelated ways — can silently alter the behaviour of downstream model Components. This data dependency, sometimes called "unstable data dependencies," creates implicit coupling between Components that [[Interface]] contracts alone cannot capture. The solution, operationalised by the [[MLOps]] movement, is to treat data schemas, feature distributions, and model calibration curves as first-class elements of the Component contract — what Breck et al. (2017) formalised as the ML Test Score, a rubric scoring the completeness of a system's Component-level testing and monitoring.
 
-  The rise of [[Microservices]] and [[Containerisation]] with [[Kubernetes]] orchestration has made component boundaries explicit at the infrastructure level: each logical Component is packaged as one or more container images, deployed as a Kubernetes Deployment or StatefulSet, and exposed through a [[Service Mesh]] (Istio, Linkerd) that enforces traffic policies, mutual TLS, and observability. [[Event-Driven Architecture]] patterns such as the Saga and Event Sourcing enable Components to collaborate asynchronously without tight runtime coupling, dramatically improving [[Fault Tolerance]] and independent scalability. The Circuit Breaker pattern — implemented by Components such as Netflix Hystrix, Resilience4j, and Istio's outlier detection — prevents cascading failures across Component boundaries when a downstream Component degrades or becomes unavailable, automatically routing traffic around failed Components and resuming normal operation once the downstream recovers.
+The rise of [[Microservices]] and [[Containerisation]] with [[Kubernetes]] orchestration has made component boundaries explicit at the infrastructure level: each logical Component is packaged as one or more container images, deployed as a Kubernetes Deployment or StatefulSet, and exposed through a [[Service Mesh]] (Istio, Linkerd) that enforces traffic policies, mutual TLS, and observability. [[Event-Driven Architecture]] patterns such as the Saga and Event Sourcing enable Components to collaborate asynchronously without tight runtime coupling, dramatically improving [[Fault Tolerance]] and independent scalability. The Circuit Breaker pattern — implemented by Components such as Netflix Hystrix, Resilience4j, and Istio's outlier detection — prevents cascading failures across Component boundaries when a downstream Component degrades or becomes unavailable, automatically routing traffic around failed Components and resuming normal operation once the downstream recovers.
 
-  ### The Component Interface Contract
+### The Component Interface Contract
 
-  The interface contract is the binding specification between a Component and its consumers. In classical software engineering, interface contracts encompass: the syntactic signature (function names, parameter types, return types), the semantic specification (preconditions, postconditions, invariants), and performance characteristics (latency bounds, throughput limits, resource consumption profiles). For AI Components, the contract must additionally encompass:
+The interface contract is the binding specification between a Component and its consumers. In classical software engineering, interface contracts encompass: the syntactic signature (function names, parameter types, return types), the semantic specification (preconditions, postconditions, invariants), and performance characteristics (latency bounds, throughput limits, resource consumption profiles). For AI Components, the contract must additionally encompass:
 
-  - **Input distribution specification**: the statistical properties of valid inputs — supported token vocabularies, image resolution ranges, expected feature value distributions, out-of-distribution handling behaviour.
-  - **Output calibration guarantees**: whether the Component's confidence scores are calibrated (i.e., P(Y=1 | score=0.7) ≈ 0.70), essential for downstream Components that use scores as decision inputs.
-  - **Fairness constraints**: documented demographic parity, equalised odds, or counterfactual fairness guarantees that downstream Components may rely upon for regulatory compliance.
-  - **Versioning and backward compatibility**: semantic versioning (SemVer) conventions adapted for model artefacts — a major version increment signals a breaking change in output distribution, a minor increment signals accuracy improvement within the same distribution, a patch increment signals bug fix with no behavioural change.
-  - **Lineage metadata**: provenance of training data, preprocessing transformations, and evaluation conditions, required for EU AI Act Article 11 technical documentation compliance.
+- **Input distribution specification**: the statistical properties of valid inputs — supported token vocabularies, image resolution ranges, expected feature value distributions, out-of-distribution handling behaviour.
+- **Output calibration guarantees**: whether the Component's confidence scores are calibrated (i.e., P(Y=1 | score=0.7) ≈ 0.70), essential for downstream Components that use scores as decision inputs.
+- **Fairness constraints**: documented demographic parity, equalised odds, or counterfactual fairness guarantees that downstream Components may rely upon for regulatory compliance.
+- **Versioning and backward compatibility**: semantic versioning (SemVer) conventions adapted for model artefacts — a major version increment signals a breaking change in output distribution, a minor increment signals accuracy improvement within the same distribution, a patch increment signals bug fix with no behavioural change.
+- **Lineage metadata**: provenance of training data, preprocessing transformations, and evaluation conditions, required for EU AI Act Article 11 technical documentation compliance.
 
   ### Design Patterns for AI Component Systems
 
   Several [[Design Pattern]]s have emerged for structuring interactions between AI Components:
 
-  - **Strangler Fig Pattern**: incrementally replace a monolithic ML system by routing a growing fraction of traffic to new modular Components while the legacy system handles the remainder. Used at scale in transitioning from single-model serving to multi-model ensemble serving.
-  - **Sidecar Pattern**: deploy operational Components (logging, monitoring, service mesh proxies, secret management) as co-located sidecars alongside primary model serving Components, avoiding invasive modifications to model code. The [[Monitoring]] sidecar pattern is now standard in Kubernetes-based AI deployments.
-  - **Ambassador Pattern**: a proxy Component that handles outbound communication from a service Component, implementing retries, circuit breaking, and observability without modifying the service itself.
-  - **Anti-Corruption Layer**: an adapter Component that translates between the domain models of two systems, preventing the concepts of one Component's bounded context from corrupting the domain model of another — particularly important when integrating legacy data pipeline Components with modern ML serving Components.
-  - **Bulkhead Pattern**: isolate Components into pools so that overload or failure in one Component (e.g., a high-latency inference call) does not deplete shared resources and cascade to unrelated Components.
-  - **[[Dependency Injection]]**: inject Component dependencies (feature stores, model registries, inference runtimes) as constructor or configuration parameters rather than hardcoding them, enabling testing with mock Components and reconfiguration without code changes.
+- **Strangler Fig Pattern**: incrementally replace a monolithic ML system by routing a growing fraction of traffic to new modular Components while the legacy system handles the remainder. Used at scale in transitioning from single-model serving to multi-model ensemble serving.
+- **Sidecar Pattern**: deploy operational Components (logging, monitoring, service mesh proxies, secret management) as co-located sidecars alongside primary model serving Components, avoiding invasive modifications to model code. The [[Monitoring]] sidecar pattern is now standard in Kubernetes-based AI deployments.
+- **Ambassador Pattern**: a proxy Component that handles outbound communication from a service Component, implementing retries, circuit breaking, and observability without modifying the service itself.
+- **Anti-Corruption Layer**: an adapter Component that translates between the domain models of two systems, preventing the concepts of one Component's bounded context from corrupting the domain model of another — particularly important when integrating legacy data pipeline Components with modern ML serving Components.
+- **Bulkhead Pattern**: isolate Components into pools so that overload or failure in one Component (e.g., a high-latency inference call) does not deplete shared resources and cascade to unrelated Components.
+- **[[Dependency Injection]]**: inject Component dependencies (feature stores, model registries, inference runtimes) as constructor or configuration parameters rather than hardcoding them, enabling testing with mock Components and reconfiguration without code changes.
 
   ## Components / Architecture
 
   ### Hardware Components
-  - **GPU Accelerator**: NVIDIA H100/A100, AMD MI300X — primary training and inference compute; connected via NVLink or PCIe; characterised by thousands of CUDA/ROCm cores and high-bandwidth memory (HBM3, up to 3.35 TB/s on H100 SXM).
-  - **TPU / AI ASIC**: Google TPUv4/v5, AWS Trainium/Inferentia, Intel Gaudi — application-specific silicon optimised for matrix multiply-accumulate at large batch sizes; typically more energy-efficient than general-purpose GPUs for specific workloads.
-  - **NPU / Edge Chip**: Apple Neural Engine, Qualcomm Hexagon, Arm Ethos — low-power inference accelerators for mobile, wearable, and IoT [[Edge Computing]] deployment.
-  - **Memory Subsystem**: HBM3 on-package DRAM, CXL-attached memory expansion — a first-class Component constraint for [[Large Language Model]] inference where KV-cache footprint determines achievable context length.
+
+- **GPU Accelerator**: NVIDIA H100/A100, AMD MI300X — primary training and inference compute; connected via NVLink or PCIe; characterised by thousands of CUDA/ROCm cores and high-bandwidth memory (HBM3, up to 3.35 TB/s on H100 SXM).
+- **TPU / AI ASIC**: Google TPUv4/v5, AWS Trainium/Inferentia, Intel Gaudi — application-specific silicon optimised for matrix multiply-accumulate at large batch sizes; typically more energy-efficient than general-purpose GPUs for specific workloads.
+- **NPU / Edge Chip**: Apple Neural Engine, Qualcomm Hexagon, Arm Ethos — low-power inference accelerators for mobile, wearable, and IoT [[Edge Computing]] deployment.
+- **Memory Subsystem**: HBM3 on-package DRAM, CXL-attached memory expansion — a first-class Component constraint for [[Large Language Model]] inference where KV-cache footprint determines achievable context length.
 
   ### Software Module Components
-  - **Data Ingestion Connector**: adapters for structured databases, object stores (S3, GCS), streaming brokers (Kafka, Pulsar), and API endpoints; implements [[Data Pipeline]] ingress.
-  - **Feature Transform Module**: performs normalisation, tokenisation, embedding lookup, and augmentation; exposes a stateless transform interface consumed by training and serving Components.
-  - **Model Artefact Component**: a versioned bundle of serialised weights (PyTorch state_dict, SafeTensors, ONNX, TensorRT engine) plus metadata (architecture, training provenance, evaluation metrics) stored in a [[Model Registry]].
-  - **Inference Engine Component**: runtimes such as NVIDIA Triton Inference Server, vLLM, TorchServe, TF Serving, and llama.cpp that load model artefacts and expose prediction endpoints; implement batching, quantisation (INT8, FP8, GPTQ, AWQ), and caching.
-  - **Monitoring Sidecar**: collects latency, throughput, drift metrics, and logs; exports to OpenTelemetry collectors; signals [[Fault Tolerance]] circuit breakers on threshold breaches.
+
+- **Data Ingestion Connector**: adapters for structured databases, object stores (S3, GCS), streaming brokers (Kafka, Pulsar), and API endpoints; implements [[Data Pipeline]] ingress.
+- **Feature Transform Module**: performs normalisation, tokenisation, embedding lookup, and augmentation; exposes a stateless transform interface consumed by training and serving Components.
+- **Model Artefact Component**: a versioned bundle of serialised weights (PyTorch state_dict, SafeTensors, ONNX, TensorRT engine) plus metadata (architecture, training provenance, evaluation metrics) stored in a [[Model Registry]].
+- **Inference Engine Component**: runtimes such as NVIDIA Triton Inference Server, vLLM, TorchServe, TF Serving, and llama.cpp that load model artefacts and expose prediction endpoints; implement batching, quantisation (INT8, FP8, GPTQ, AWQ), and caching.
+- **Monitoring Sidecar**: collects latency, throughput, drift metrics, and logs; exports to OpenTelemetry collectors; signals [[Fault Tolerance]] circuit breakers on threshold breaches.
 
   ### Neural Network Components
-  - **[[Neural Network Layer]]**: the elemental computational unit — linear transformation followed by activation; weight matrices W ∈ R^(d_out × d_in) constitute the trainable parameters; stacked layers compose [[Deep Learning]] architectures.
-  - **[[Attention Mechanism]] Head**: in [[Transformer Architecture]] models, each head computes Q = XW_Q, K = XW_K, V = XW_V then Attention(Q,K,V) = softmax(QK^T / √d_k)V; multi-head attention concatenates H parallel heads.
-  - **Encoder/Decoder Block**: composed of multi-head attention, feed-forward sublayer, layer normalisation, and residual skip connections; the repeating structural block of [[Transformer Architecture]] architectures (BERT encoders, GPT decoders).
-  - **Embedding Component**: maps discrete tokens or entities to continuous dense vectors in R^d; positional embeddings, learned embeddings, and pre-trained embeddings (word2vec, GloVe, fastText) are distinct Component variants.
+
+- **[[Neural Network Layer]]**: the elemental computational unit — linear transformation followed by activation; weight matrices W ∈ R^(d_out × d_in) constitute the trainable parameters; stacked layers compose [[Deep Learning]] architectures.
+- **[[Attention Mechanism]] Head**: in [[Transformer Architecture]] models, each head computes Q = XW_Q, K = XW_K, V = XW_V then Attention(Q,K,V) = softmax(QK^T / √d_k)V; multi-head attention concatenates H parallel heads.
+- **Encoder/Decoder Block**: composed of multi-head attention, feed-forward sublayer, layer normalisation, and residual skip connections; the repeating structural block of [[Transformer Architecture]] architectures (BERT encoders, GPT decoders).
+- **Embedding Component**: maps discrete tokens or entities to continuous dense vectors in R^d; positional embeddings, learned embeddings, and pre-trained embeddings (word2vec, GloVe, fastText) are distinct Component variants.
 
   ### Orchestration Components
-  - **Container Image**: OCI-compliant bundle of filesystem layers encapsulating Component runtime and dependencies; built via Dockerfile or Buildpacks; stored in container registries (Docker Hub, GCR, ECR).
-  - **Kubernetes Operator**: custom controller that extends the Kubernetes API to manage AI workload lifecycle — e.g., the Kubeflow Training Operator manages distributed [[Distributed Training]] jobs with gang scheduling.
-  - **Service Mesh Proxy**: Envoy-based sidecars (Istio) intercept all inter-Component traffic, enforcing mTLS, rate limiting, circuit breaking, and distributed tracing without modifying Component code.
+
+- **Container Image**: OCI-compliant bundle of filesystem layers encapsulating Component runtime and dependencies; built via Dockerfile or Buildpacks; stored in container registries (Docker Hub, GCR, ECR).
+- **Kubernetes Operator**: custom controller that extends the Kubernetes API to manage AI workload lifecycle — e.g., the Kubeflow Training Operator manages distributed [[Distributed Training]] jobs with gang scheduling.
+- **Service Mesh Proxy**: Envoy-based sidecars (Istio) intercept all inter-Component traffic, enforcing mTLS, rate limiting, circuit breaking, and distributed tracing without modifying Component code.
 
   ## Use Cases / Major Families
 
@@ -181,16 +184,17 @@ A discrete, modular unit within an AI system or infrastructure that provides a s
   Formal verification of Component compositions has been addressed through interface automata (de Alfaro & Henzinger, 2001), contract-based design (Benveniste et al., 2012), and assume-guarantee reasoning frameworks. Interface automata generalise I/O automata by explicitly modelling both input and output actions, enabling game-theoretic compatibility checking: two Components are compatible if there exists a parallel composition strategy under which no illegal transitions are forced — a stronger condition than simple signature matching. Assume-guarantee reasoning (Pnueli 1985, Clarke et al. 1989) enables compositional verification by allowing each Component to be verified against its local specification while assuming the environment satisfies a contract; verified components can then be safely composed. The EU AI Act (Regulation 2024/1689, in force August 2024) introduced a regulatory obligation on component-level documentation: Article 11 mandates technical documentation covering the overall system architecture, a description of the main components, and their interaction — codifying CBSE practices into binding legal requirements for high-risk [[AI System (EU Definition)]] deployments. Article 17 mandates a quality management system specifying component testing and validation procedures, traceability, and change management protocols applicable to each Component in the system.
 
   ### Key Terminology Glossary
-  - **Component**: a deployable, independently testable unit of software or hardware providing a specific capability through a formally defined interface.
-  - **Interface**: the contract boundary between a Component and its consumers, specifying functional signatures, preconditions, postconditions, and performance characteristics.
-  - **[[Modularity]]**: the property of a system wherein it can be decomposed into Components with minimal inter-Component coupling and maximal intra-Component cohesion.
-  - **[[Reusability]]**: the degree to which a Component can be used in contexts other than the one for which it was originally designed, typically measured by the number of distinct deployments and the effort required for reuse.
-  - **[[Testability]]**: the degree to which a Component can be exercised in isolation, typically by replacing its dependencies with mock or stub Components, enabling unit tests that run independently of the full system.
-  - **[[Fault Tolerance]]**: the ability of a system to continue operating correctly (possibly with degraded performance) in the presence of Component failures, achieved through redundancy, circuit breaking, graceful degradation, and health monitoring.
-  - **Compositionality**: the property that the behaviour of a Component composition can be determined from the behaviours of its constituent Components and the structure of their composition — the fundamental property that makes CBSE reasoning tractable.
-  - **[[Separation of Concerns]]**: the design principle that each Component should address exactly one system concern, minimising the amount of information any one Component needs to know about others.
-  - **Cohesion**: a measure of how closely related the responsibilities within a Component are; high cohesion indicates that a Component does one thing well; low cohesion suggests the Component should be further decomposed.
-  - **Coupling**: a measure of the degree of inter-dependence between Components; low coupling is desirable, enabling independent evolution and deployment; high coupling creates fragility and deployment constraints.
+
+- **Component**: a deployable, independently testable unit of software or hardware providing a specific capability through a formally defined interface.
+- **Interface**: the contract boundary between a Component and its consumers, specifying functional signatures, preconditions, postconditions, and performance characteristics.
+- **[[Modularity]]**: the property of a system wherein it can be decomposed into Components with minimal inter-Component coupling and maximal intra-Component cohesion.
+- **[[Reusability]]**: the degree to which a Component can be used in contexts other than the one for which it was originally designed, typically measured by the number of distinct deployments and the effort required for reuse.
+- **[[Testability]]**: the degree to which a Component can be exercised in isolation, typically by replacing its dependencies with mock or stub Components, enabling unit tests that run independently of the full system.
+- **[[Fault Tolerance]]**: the ability of a system to continue operating correctly (possibly with degraded performance) in the presence of Component failures, achieved through redundancy, circuit breaking, graceful degradation, and health monitoring.
+- **Compositionality**: the property that the behaviour of a Component composition can be determined from the behaviours of its constituent Components and the structure of their composition — the fundamental property that makes CBSE reasoning tractable.
+- **[[Separation of Concerns]]**: the design principle that each Component should address exactly one system concern, minimising the amount of information any one Component needs to know about others.
+- **Cohesion**: a measure of how closely related the responsibilities within a Component are; high cohesion indicates that a Component does one thing well; low cohesion suggests the Component should be further decomposed.
+- **Coupling**: a measure of the degree of inter-dependence between Components; low coupling is desirable, enabling independent evolution and deployment; high coupling creates fragility and deployment constraints.
 
   ## Benchmark Datasets and Evaluation Frameworks
 
@@ -254,22 +258,22 @@ A discrete, modular unit within an AI system or infrastructure that provides a s
 
   ## Key Terminology Glossary
 
-  - **Component**: a deployable, independently testable unit of [[Software Module|software]] or [[Hardware Component|hardware]] providing a specific capability through a formally defined [[Interface]], developed and maintained independently of the enclosing system.
-  - **[[Interface]]**: the contract boundary between a Component and its consumers, specifying functional signatures, semantic preconditions and postconditions, performance characteristics, and — for AI Components — statistical input distribution and output calibration guarantees.
-  - **[[Modularity]]**: the property of a system wherein it can be decomposed into Components with minimal inter-Component coupling and maximal intra-Component cohesion; the primary design principle enabling independent development, testing, and deployment.
-  - **[[Reusability]]**: the degree to which a Component can be employed in contexts other than the one for which it was originally designed; maximised by abstract [[Interface]] specification, parameterisation, and minimal external dependencies.
-  - **[[Testability]]**: the degree to which a Component can be exercised in isolation via [[Dependency Injection]] of mock dependencies, enabling unit tests that run independently of the full system deployment environment.
-  - **[[Fault Tolerance]]**: the ability of a system to continue operating correctly in the presence of Component failures, achieved through redundancy, circuit breaking, graceful degradation, [[Monitoring]] sidecars, and Component health management.
-  - **[[Separation of Concerns]]**: the design principle that each Component should address exactly one system concern, minimising the knowledge any one Component requires about others; implemented through [[Microservices]] decomposition and [[Neural Network Layer]] abstractions.
-  - **[[Dependency Injection]]**: the practice of injecting Component dependencies (feature stores, model registries, inference runtimes) as constructor or configuration parameters rather than hardcoding them, enabling substitution of mock Components for testing and reconfiguration without code changes.
-  - **Component contract**: the complete specification of a Component's interface encompassing: syntactic signature; semantic pre/post-conditions; performance characteristics; for ML Components, statistical input distribution specification, output calibration guarantees, and fairness constraints.
-  - **[[Containerisation]]**: the packaging of a Component and its runtime dependencies into an OCI container image, enabling reproducible deployment across environments and forming the deployment unit boundary in [[Kubernetes]]-orchestrated AI systems.
-  - **[[Service Mesh]]**: infrastructure layer (Istio, Linkerd) deploying sidecar proxy Components alongside service Components to enforce mutual TLS, traffic policy, observability, and circuit breaking without modifying Component application code.
-  - **[[GPU Compute]]**: the class of parallel processing hardware Components (NVIDIA H100/B200, AMD MI300X) providing the dense matrix-multiply throughput required for [[Deep Learning]] training and inference; characterised by high-bandwidth memory (HBM3) and thousands of CUDA/ROCm cores.
-  - **[[Edge Computing]]**: deployment of Component instances on devices close to the data source (IoT sensors, mobile phones, industrial PLCs) rather than centralised cloud, reducing latency and network dependency for inference Components.
-  - **[[Model Registry]]**: a versioned repository Component storing serialised model artefact Components with metadata (architecture, training provenance, evaluation metrics), enabling governance, rollback, and deployment lifecycle management for [[MLOps]] pipelines.
-  - **[[Vector Database]]**: a specialised storage Component optimised for approximate nearest-neighbour search over high-dimensional embedding vectors; used as a retrieval Component in [[Transformer Architecture]] Retrieval-Augmented Generation (RAG) architectures.
-  - **Compositionality**: the property that the behaviour of a Component composition can be determined from the behaviours of its constituent Components and the connector structure — the foundational property enabling Component-Based Software Engineering reasoning to scale to large system assemblies.
+- **Component**: a deployable, independently testable unit of [[Software Module|software]] or [[Hardware Component|hardware]] providing a specific capability through a formally defined [[Interface]], developed and maintained independently of the enclosing system.
+- **[[Interface]]**: the contract boundary between a Component and its consumers, specifying functional signatures, semantic preconditions and postconditions, performance characteristics, and — for AI Components — statistical input distribution and output calibration guarantees.
+- **[[Modularity]]**: the property of a system wherein it can be decomposed into Components with minimal inter-Component coupling and maximal intra-Component cohesion; the primary design principle enabling independent development, testing, and deployment.
+- **[[Reusability]]**: the degree to which a Component can be employed in contexts other than the one for which it was originally designed; maximised by abstract [[Interface]] specification, parameterisation, and minimal external dependencies.
+- **[[Testability]]**: the degree to which a Component can be exercised in isolation via [[Dependency Injection]] of mock dependencies, enabling unit tests that run independently of the full system deployment environment.
+- **[[Fault Tolerance]]**: the ability of a system to continue operating correctly in the presence of Component failures, achieved through redundancy, circuit breaking, graceful degradation, [[Monitoring]] sidecars, and Component health management.
+- **[[Separation of Concerns]]**: the design principle that each Component should address exactly one system concern, minimising the knowledge any one Component requires about others; implemented through [[Microservices]] decomposition and [[Neural Network Layer]] abstractions.
+- **[[Dependency Injection]]**: the practice of injecting Component dependencies (feature stores, model registries, inference runtimes) as constructor or configuration parameters rather than hardcoding them, enabling substitution of mock Components for testing and reconfiguration without code changes.
+- **Component contract**: the complete specification of a Component's interface encompassing: syntactic signature; semantic pre/post-conditions; performance characteristics; for ML Components, statistical input distribution specification, output calibration guarantees, and fairness constraints.
+- **[[Containerisation]]**: the packaging of a Component and its runtime dependencies into an OCI container image, enabling reproducible deployment across environments and forming the deployment unit boundary in [[Kubernetes]]-orchestrated AI systems.
+- **[[Service Mesh]]**: infrastructure layer (Istio, Linkerd) deploying sidecar proxy Components alongside service Components to enforce mutual TLS, traffic policy, observability, and circuit breaking without modifying Component application code.
+- **[[GPU Compute]]**: the class of parallel processing hardware Components (NVIDIA H100/B200, AMD MI300X) providing the dense matrix-multiply throughput required for [[Deep Learning]] training and inference; characterised by high-bandwidth memory (HBM3) and thousands of CUDA/ROCm cores.
+- **[[Edge Computing]]**: deployment of Component instances on devices close to the data source (IoT sensors, mobile phones, industrial PLCs) rather than centralised cloud, reducing latency and network dependency for inference Components.
+- **[[Model Registry]]**: a versioned repository Component storing serialised model artefact Components with metadata (architecture, training provenance, evaluation metrics), enabling governance, rollback, and deployment lifecycle management for [[MLOps]] pipelines.
+- **[[Vector Database]]**: a specialised storage Component optimised for approximate nearest-neighbour search over high-dimensional embedding vectors; used as a retrieval Component in [[Transformer Architecture]] Retrieval-Augmented Generation (RAG) architectures.
+- **Compositionality**: the property that the behaviour of a Component composition can be determined from the behaviours of its constituent Components and the connector structure — the foundational property enabling Component-Based Software Engineering reasoning to scale to large system assemblies.
 
   ## Future Directions (2026-2030)
 
@@ -321,5 +325,5 @@ A discrete, modular unit within an AI system or infrastructure that provides a s
   32. Patterson, D. et al. (2021). "Carbon Footprint of Machine Learning Training Will Plateau, Then Shrink." *IEEE Micro*, 42(4), 18-28. https://arxiv.org/abs/2104.10350
   33. Strubell, E., Ganesh, A., & McCallum, A. (2019). "Energy and Policy Considerations for Deep Learning in NLP." *ACL 2019*. https://arxiv.org/abs/1906.02243
 
-- ### Provenance
+### Provenance
 

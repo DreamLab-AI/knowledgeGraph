@@ -1,3 +1,2 @@
-
 Data integrity verification is the process of confirming that a piece of data has not been altered, corrupted, or tampered with since it was created or last authorised, typically by comparing a cryptographic digest computed over the data against a previously recorded or independently trusted value. Techniques include cryptographic hash functions, checksums, and Merkle tree proofs, which allow large datasets to be verified efficiently by checking a small root value rather than the full contents. It underpins trust in distributed systems, blockchains, and any pipeline where data passes through untrusted intermediaries.
 

@@ -1,81 +1,87 @@
-
 A User Interface (UI) is the aggregate of visual, auditory, tactile, and interactive components through which a human perceives and controls a software system, forming the boundary between human cognition and computational logic. UIs span a spectrum from two-dimensional graphical desktop and web environments to three-dimensional spatial interfaces rendered in augmented and virtual reality, encompassing gesture, voice, gaze, and haptic modalities. Effective UI design integrates human-computer interaction principles — affordance, feedback, constraints, and error prevention — with visual design, accessibility requirements, and rendering performance budgets. In complex sociotechnical systems, the UI layer mediates trust, cognitive load, and task efficiency, making it a critical determinant of system adoption and usability.
 
-- ### Overview
-  - The User Interface constitutes the presentation and interaction layer of a software stack, sitting above application logic and below user intent. It translates raw computational state into perceivable representations and converts human actions into machine-readable events.
-  - Historical trajectory:
-    - **Command-line era** (1960s–1980s): text-only interaction via [[Command Line Interface]], demanding users memorise syntax.
-    - **WIMP paradigm** (1980s–present): Windows, Icons, Menus, Pointer — pioneered by Xerox PARC and popularised by Apple Macintosh and Microsoft Windows; now the dominant [[Graphical User Interface]] metaphor on desktop and mobile.
-    - **Touch and mobile** (2007–present): capacitive touch screens collapsed the distance between pointer and target; gesture vocabularies (pinch, swipe, tap) became universal.
-    - **Voice** (2010s–present): [[Voice User Interface]] systems (Siri, Alexa, Google Assistant) enabled hands-free interaction and drove investment in [[Conversational AI]] pipelines.
-    - **Spatial** (2020s–present): [[Extended Reality]] devices project UI elements into three-dimensional space; [[Hand Tracking]], eye gaze, and [[Spatial Audio]] replace mouse-and-keyboard in immersive environments.
-  - Why it matters: no matter how powerful the underlying system, adoption hinges on the quality of the UI. Poor [[Interaction Design]] increases [[Cognitive Load]], leads to errors, and drives user abandonment.
+### Overview
 
-- ### Key Components
-  - **Visual layer**
-    - [[Graphical User Interface]] widgets: buttons, sliders, text fields, data tables, navigation bars.
-    - Typography and colour systems defined in a [[Design System]] (e.g. Material Design, Apple HIG, Fluent Design).
-    - Layout engines: CSS Flexbox/Grid for web; constraint-based layouts on iOS/Android; panel-graph systems in spatial SDKs.
-  - **Interaction layer**
-    - [[Input Device]] abstraction: pointer events (mouse, pen, touch), keyboard, gamepad, motion controller, hand-skeleton joints.
-    - [[Gesture Recognition]]: static poses (thumbs-up, pinch) and dynamic trajectories (swipe, rotation) mapped to discrete commands.
-    - [[Voice User Interface]]: speech-to-intent pipelines feeding [[Natural Language Interface]] layers, supporting command, dictation, and conversational modalities.
-    - Gaze and dwell: eye-tracking allows cursor-free selection; widely used in [[Accessibility]] aids and VR environments where controller fatigue is an issue.
-  - **Feedback layer**
-    - Visual: state changes (hover, pressed, loading spinners, progress bars), animations conveying cause-and-effect.
-    - Auditory: earcons, speech synthesis, [[Spatial Audio]] in 3D environments.
-    - [[Haptic Feedback]]: vibrotactile pulses in mobile devices, force feedback in controllers, surface texture simulation in advanced gloves.
-  - **Spatial / 3D components** (for [[Extended Reality]] and [[Metaverse]] environments)
-    - [[3D User Interface]] panels anchored to world space, head-locked, or hand-attached.
-    - Depth-based focus management: near-field menus vs. distant world-space labels.
-    - Ray-casting and near-field touch for selection in [[Augmented Reality]] and VR.
-    - [[Spatial Audio]] cues providing directional awareness of UI elements outside the field of view.
+- The User Interface constitutes the presentation and interaction layer of a software stack, sitting above application logic and below user intent. It translates raw computational state into perceivable representations and converts human actions into machine-readable events.
+- Historical trajectory:
+  - **Command-line era** (1960s–1980s): text-only interaction via [[Command Line Interface]], demanding users memorise syntax.
+  - **WIMP paradigm** (1980s–present): Windows, Icons, Menus, Pointer — pioneered by Xerox PARC and popularised by Apple Macintosh and Microsoft Windows; now the dominant [[Graphical User Interface]] metaphor on desktop and mobile.
+  - **Touch and mobile** (2007–present): capacitive touch screens collapsed the distance between pointer and target; gesture vocabularies (pinch, swipe, tap) became universal.
+  - **Voice** (2010s–present): [[Voice User Interface]] systems (Siri, Alexa, Google Assistant) enabled hands-free interaction and drove investment in [[Conversational AI]] pipelines.
+  - **Spatial** (2020s–present): [[Extended Reality]] devices project UI elements into three-dimensional space; [[Hand Tracking]], eye gaze, and [[Spatial Audio]] replace mouse-and-keyboard in immersive environments.
+- Why it matters: no matter how powerful the underlying system, adoption hinges on the quality of the UI. Poor [[Interaction Design]] increases [[Cognitive Load]], leads to errors, and drives user abandonment.
 
-- ### Applications and Use Cases
-  - **Desktop and web applications**: productivity suites, IDEs, CMS platforms; governed by [[W3C Standards]] and [[WCAG]] accessibility guidelines for inclusive design.
-  - **Mobile applications**: iOS and Android UIs adapt WIMP idioms to touch; responsive layouts handle multiple screen densities; [[Localisation]] pipelines serve global markets.
-  - **Game and entertainment**: HUDs, inventories, pause menus, and in-world diegetic interfaces embedded in the game environment without breaking immersion.
-  - **Industrial and professional tools**: cockpit displays, medical imaging workstations, air-traffic control consoles — where error costs are catastrophic and UI standards draw on aviation and ISO human-factors norms.
-  - **Spatial computing and XR**: [[Mixed Reality]] overlays in field service (e.g. annotating industrial machinery); virtual collaboration spaces; surgical planning with volumetric data rendered in 3D; social [[Metaverse]] platforms where avatar-driven spatial UIs replace 2D social feeds.
-  - **Conversational and AI-native interfaces**: LLM-powered chat interfaces, AI coding assistants, agent dashboards — where the UI increasingly mediates between the human and a [[Conversational AI]] back-end rather than deterministic application state.
-  - **Accessibility-first deployments**: screen-reader-compatible web apps, switch-access interfaces for motor-impaired users, augmentative and alternative communication (AAC) apps.
-  - **Automotive and embedded**: in-vehicle infotainment (IVI) systems; heads-up displays (HUDs); physical dashboard integration; safety-critical constraints on interaction latency.
+### Key Components
 
-- ### Mechanisms and Design Principles
-  - **Affordance**: UI elements should visually signal their possible interactions (a raised button invites pressing; an underlined text link invites clicking).
-  - **Feedback**: every user action must yield a perceptible system response within acceptable latency budgets (< 100 ms for touch; < 20 ms per frame in VR to avoid simulation sickness).
-  - **Consistency**: a [[Design System]] enforces visual and behavioural consistency within and across applications, reducing [[Mental Model]] conflicts.
-  - **Visibility of system status**: progress indicators, loading states, and error messages keep the user informed, reducing uncertainty.
-  - **Error prevention and recovery**: destructive actions require confirmation; undo/redo paths preserve user agency; inline validation catches mistakes before submission.
-  - **[[Cognitive Load]] management**: chunking information, progressive disclosure, and contextual help surface only the complexity needed at each moment.
-  - **Fitts's Law**: target acquisition time scales with distance and inversely with target size; governs minimum button dimensions and layout spacing.
-  - **[[Multimodal Interaction]]**: combining input channels (voice + gesture + gaze) can reduce individual modality burden and support users with varying abilities.
+- **Visual layer**
+  - [[Graphical User Interface]] widgets: buttons, sliders, text fields, data tables, navigation bars.
+  - Typography and colour systems defined in a [[Design System]] (e.g. Material Design, Apple HIG, Fluent Design).
+  - Layout engines: CSS Flexbox/Grid for web; constraint-based layouts on iOS/Android; panel-graph systems in spatial SDKs.
+- **Interaction layer**
+  - [[Input Device]] abstraction: pointer events (mouse, pen, touch), keyboard, gamepad, motion controller, hand-skeleton joints.
+  - [[Gesture Recognition]]: static poses (thumbs-up, pinch) and dynamic trajectories (swipe, rotation) mapped to discrete commands.
+  - [[Voice User Interface]]: speech-to-intent pipelines feeding [[Natural Language Interface]] layers, supporting command, dictation, and conversational modalities.
+  - Gaze and dwell: eye-tracking allows cursor-free selection; widely used in [[Accessibility]] aids and VR environments where controller fatigue is an issue.
+- **Feedback layer**
+  - Visual: state changes (hover, pressed, loading spinners, progress bars), animations conveying cause-and-effect.
+  - Auditory: earcons, speech synthesis, [[Spatial Audio]] in 3D environments.
+  - [[Haptic Feedback]]: vibrotactile pulses in mobile devices, force feedback in controllers, surface texture simulation in advanced gloves.
+- **Spatial / 3D components** (for [[Extended Reality]] and [[Metaverse]] environments)
+  - [[3D User Interface]] panels anchored to world space, head-locked, or hand-attached.
+  - Depth-based focus management: near-field menus vs. distant world-space labels.
+  - Ray-casting and near-field touch for selection in [[Augmented Reality]] and VR.
+  - [[Spatial Audio]] cues providing directional awareness of UI elements outside the field of view.
 
-- ### Standards and Context
-  - **[[W3C Standards]]**: the World Wide Web Consortium publishes HTML, CSS, WAI-ARIA, and related specifications that govern web UI structure, style, and accessibility semantics.
-  - **[[WCAG]]** (Web Content Accessibility Guidelines): tiered conformance levels (A, AA, AAA) define measurable criteria for perceivability, operability, understandability, and robustness of web UIs. WCAG 2.2 is the current stable baseline; WCAG 3.0 is under development.
-  - **ISO 9241** (Ergonomics of Human-System Interaction): a multi-part standard covering usability, dialogue principles, visual display requirements, and touchscreen ergonomics.
-  - **Platform Human Interface Guidelines**: Apple HIG, Google Material Design, Microsoft Fluent — de facto standards for mobile and desktop UI patterns enforced at app-store review.
-  - **OpenXR**: the Khronos Group's open standard API for XR runtime access, providing a hardware-abstraction layer on which spatial UI SDKs are built; fundamental to portable [[3D User Interface]] development.
-  - **ARIA (Accessible Rich Internet Applications)**: a W3C specification for annotating custom UI widgets with semantic roles, states, and properties to ensure screen-reader compatibility.
-  - **Spatial audio standards**: MPEG-H Audio, Dolby Atmos, and platform-specific spatialiser APIs (Apple Spatial Audio, Meta Audio SDK) underpin [[Spatial Audio]] feedback in XR UIs.
+### Applications and Use Cases
 
-- ### Current Landscape (2026)
-  - Gaze-and-pinch (look-and-tap) has consolidated as the default spatial input paradigm: Apple's visionOS treats eyes as the cursor and a bare-finger pinch as the click, and Android XR adopted a comparable held-pinch model for scrolling, moving and resizing spatial panels, making it the de facto convention across the two dominant platforms.
-  - Apple previewed visionOS 26 at WWDC in June 2025, adding spatially anchored widgets, generative-AI spatial scenes, more expressive Personas, Nearby Window Sharing, hand tracking up to three times faster, and — for the first time — physical controller input via the Sony PlayStation VR2 Sense controller and the Logitech Muse stylus, softening its controller-free stance.
-  - Samsung Galaxy XR shipped on 21 October 2025 as the first Android XR device, opening a second major spatial-UI ecosystem built on OpenXR 1.1, with hand and eye tracking, scene meshing and anchor persistence available to developers.
-  - Google formalised Android XR spatial-UI design guidance through 2025–2026, introducing distance-independent units (the 0.868 dp-to-dmm conversion), Home Space versus Full Space layouts, 56dp minimum touch targets, panels spawned at 1.75m and 5 degrees below eye level, and a 72fps floor to limit motion sickness.
-  - WebXR is maturing into a governed cross-browser standard: the W3C WebXR Device API reached Candidate Recommendation and WebXR became a focus area for Interop 2026, while Safari on visionOS now exposes WebXR with a native gaze-and-pinch input mode and the Meta Quest Browser added experimental WebXR depth projection and WebGPU support (Chromium 146, April 2026).
-  - The Android XR SDK advanced from Developer Preview 3 (December 2025) to Developer Preview 4 (June 2026), which brought a Kotlin-first perception stack and an early Geospatial API pairing ARCore for Jetpack XR with Google's Visual Positioning System to anchor UI to high-precision real-world locations.
-  - Open challenges as of 2026 include gaze-driven interaction fatigue and eye strain, the readability constraints of see-through displays (bright-equals-opaque additive rendering), fragmented capability parity — WebXR still lacks spatial anchors and scene understanding versus native SDKs — and the unresolved question of genuinely volumetric 6DOF interfaces beyond flat panels floating in space.
+- **Desktop and web applications**: productivity suites, IDEs, CMS platforms; governed by [[W3C Standards]] and [[WCAG]] accessibility guidelines for inclusive design.
+- **Mobile applications**: iOS and Android UIs adapt WIMP idioms to touch; responsive layouts handle multiple screen densities; [[Localisation]] pipelines serve global markets.
+- **Game and entertainment**: HUDs, inventories, pause menus, and in-world diegetic interfaces embedded in the game environment without breaking immersion.
+- **Industrial and professional tools**: cockpit displays, medical imaging workstations, air-traffic control consoles — where error costs are catastrophic and UI standards draw on aviation and ISO human-factors norms.
+- **Spatial computing and XR**: [[Mixed Reality]] overlays in field service (e.g. annotating industrial machinery); virtual collaboration spaces; surgical planning with volumetric data rendered in 3D; social [[Metaverse]] platforms where avatar-driven spatial UIs replace 2D social feeds.
+- **Conversational and AI-native interfaces**: LLM-powered chat interfaces, AI coding assistants, agent dashboards — where the UI increasingly mediates between the human and a [[Conversational AI]] back-end rather than deterministic application state.
+- **Accessibility-first deployments**: screen-reader-compatible web apps, switch-access interfaces for motor-impaired users, augmentative and alternative communication (AAC) apps.
+- **Automotive and embedded**: in-vehicle infotainment (IVI) systems; heads-up displays (HUDs); physical dashboard integration; safety-critical constraints on interaction latency.
 
-- ### References
-  - 1. Apple (2025). visionOS 26 introduces powerful new spatial experiences for Apple Vision Pro. https://www.apple.com/newsroom/2025/06/visionos-26-introduces-powerful-new-spatial-experiences-for-apple-vision-pro/
-  - 2. Google / Android Developers (2025). Giving your apps a new home on Samsung Galaxy XR, the first device powered by Android XR. https://developer.android.com/blog/posts/giving-your-apps-a-new-home-on-samsung-galaxy-xr-the-first-device-powered-by-android-xr
-  - 3. Android Developers (2026). Spatial UI — XR Headsets & wired XR Glasses design guides. https://developer.android.com/design/ui/xr/guides/spatial-ui
-  - 4. VR.org (2026). WebXR Is Finally Becoming a Real Cross-Browser Standard. https://vr.org/articles/webxr-interop-2026-cross-browser-standard
-  - 5. Android Developers Blog (2026). What's New in Android XR: Tooling, Engine Support, and Developer Preview 4. https://android-developers.googleblog.com/2026/06/what-is-new-android-xr.html
-  - 6. Meta Horizon OS Developers (2026). Browser release notes (WebXR depth projection, WebGPU, Chromium 146). https://developers.meta.com/horizon/release-notes/web/
+### Mechanisms and Design Principles
 
-- ### Provenance
+- **Affordance**: UI elements should visually signal their possible interactions (a raised button invites pressing; an underlined text link invites clicking).
+- **Feedback**: every user action must yield a perceptible system response within acceptable latency budgets (< 100 ms for touch; < 20 ms per frame in VR to avoid simulation sickness).
+- **Consistency**: a [[Design System]] enforces visual and behavioural consistency within and across applications, reducing [[Mental Model]] conflicts.
+- **Visibility of system status**: progress indicators, loading states, and error messages keep the user informed, reducing uncertainty.
+- **Error prevention and recovery**: destructive actions require confirmation; undo/redo paths preserve user agency; inline validation catches mistakes before submission.
+- **[[Cognitive Load]] management**: chunking information, progressive disclosure, and contextual help surface only the complexity needed at each moment.
+- **Fitts's Law**: target acquisition time scales with distance and inversely with target size; governs minimum button dimensions and layout spacing.
+- **[[Multimodal Interaction]]**: combining input channels (voice + gesture + gaze) can reduce individual modality burden and support users with varying abilities.
+
+### Standards and Context
+
+- **[[W3C Standards]]**: the World Wide Web Consortium publishes HTML, CSS, WAI-ARIA, and related specifications that govern web UI structure, style, and accessibility semantics.
+- **[[WCAG]]** (Web Content Accessibility Guidelines): tiered conformance levels (A, AA, AAA) define measurable criteria for perceivability, operability, understandability, and robustness of web UIs. WCAG 2.2 is the current stable baseline; WCAG 3.0 is under development.
+- **ISO 9241** (Ergonomics of Human-System Interaction): a multi-part standard covering usability, dialogue principles, visual display requirements, and touchscreen ergonomics.
+- **Platform Human Interface Guidelines**: Apple HIG, Google Material Design, Microsoft Fluent — de facto standards for mobile and desktop UI patterns enforced at app-store review.
+- **OpenXR**: the Khronos Group's open standard API for XR runtime access, providing a hardware-abstraction layer on which spatial UI SDKs are built; fundamental to portable [[3D User Interface]] development.
+- **ARIA (Accessible Rich Internet Applications)**: a W3C specification for annotating custom UI widgets with semantic roles, states, and properties to ensure screen-reader compatibility.
+- **Spatial audio standards**: MPEG-H Audio, Dolby Atmos, and platform-specific spatialiser APIs (Apple Spatial Audio, Meta Audio SDK) underpin [[Spatial Audio]] feedback in XR UIs.
+
+### Current Landscape (2026)
+
+- Gaze-and-pinch (look-and-tap) has consolidated as the default spatial input paradigm: Apple's visionOS treats eyes as the cursor and a bare-finger pinch as the click, and Android XR adopted a comparable held-pinch model for scrolling, moving and resizing spatial panels, making it the de facto convention across the two dominant platforms.
+- Apple previewed visionOS 26 at WWDC in June 2025, adding spatially anchored widgets, generative-AI spatial scenes, more expressive Personas, Nearby Window Sharing, hand tracking up to three times faster, and — for the first time — physical controller input via the Sony PlayStation VR2 Sense controller and the Logitech Muse stylus, softening its controller-free stance.
+- Samsung Galaxy XR shipped on 21 October 2025 as the first Android XR device, opening a second major spatial-UI ecosystem built on OpenXR 1.1, with hand and eye tracking, scene meshing and anchor persistence available to developers.
+- Google formalised Android XR spatial-UI design guidance through 2025–2026, introducing distance-independent units (the 0.868 dp-to-dmm conversion), Home Space versus Full Space layouts, 56dp minimum touch targets, panels spawned at 1.75m and 5 degrees below eye level, and a 72fps floor to limit motion sickness.
+- WebXR is maturing into a governed cross-browser standard: the W3C WebXR Device API reached Candidate Recommendation and WebXR became a focus area for Interop 2026, while Safari on visionOS now exposes WebXR with a native gaze-and-pinch input mode and the Meta Quest Browser added experimental WebXR depth projection and WebGPU support (Chromium 146, April 2026).
+- The Android XR SDK advanced from Developer Preview 3 (December 2025) to Developer Preview 4 (June 2026), which brought a Kotlin-first perception stack and an early Geospatial API pairing ARCore for Jetpack XR with Google's Visual Positioning System to anchor UI to high-precision real-world locations.
+- Open challenges as of 2026 include gaze-driven interaction fatigue and eye strain, the readability constraints of see-through displays (bright-equals-opaque additive rendering), fragmented capability parity — WebXR still lacks spatial anchors and scene understanding versus native SDKs — and the unresolved question of genuinely volumetric 6DOF interfaces beyond flat panels floating in space.
+
+### References
+
+- 1. Apple (2025). visionOS 26 introduces powerful new spatial experiences for Apple Vision Pro. https://www.apple.com/newsroom/2025/06/visionos-26-introduces-powerful-new-spatial-experiences-for-apple-vision-pro/
+- 2. Google / Android Developers (2025). Giving your apps a new home on Samsung Galaxy XR, the first device powered by Android XR. https://developer.android.com/blog/posts/giving-your-apps-a-new-home-on-samsung-galaxy-xr-the-first-device-powered-by-android-xr
+- 3. Android Developers (2026). Spatial UI — XR Headsets & wired XR Glasses design guides. https://developer.android.com/design/ui/xr/guides/spatial-ui
+- 4. VR.org (2026). WebXR Is Finally Becoming a Real Cross-Browser Standard. https://vr.org/articles/webxr-interop-2026-cross-browser-standard
+- 5. Android Developers Blog (2026). What's New in Android XR: Tooling, Engine Support, and Developer Preview 4. https://android-developers.googleblog.com/2026/06/what-is-new-android-xr.html
+- 6. Meta Horizon OS Developers (2026). Browser release notes (WebXR depth projection, WebGPU, Chromium 146). https://developers.meta.com/horizon/release-notes/web/
+
+### Provenance
 

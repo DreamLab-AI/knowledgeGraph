@@ -1,3 +1,2 @@
-
 Live captions are automatically generated, real-time text transcriptions of spoken audio displayed synchronously during a video call or webinar. They enhance accessibility for participants with hearing impairments and support comprehension across language barriers and noisy environments. Powered by automatic speech recognition, they may be supplemented by human stenographers for high-accuracy requirements.
 

@@ -1,4 +1,3 @@
-
 In the context of AI systems and ontological engineering, a Property is a named attribute or characteristic that describes a measurable or observable quality of an entity, concept, or system component. Properties may be data properties (mapping an individual to a literal value such as a number or string) or object properties (relating an individual to another individual within the knowledge graph). In AI safety and governance contexts, properties such as fairness, robustness, and interpretability are the formal targets of evaluation and certification requirements.
 
 ### Definition
@@ -17,5 +16,5 @@ In AI governance, the term "property" takes on a normative dimension. Trustworth
 
 Formal verification methods attempt to prove that a model satisfies safety properties for all inputs in a specified domain—for example, verifying that a neural network classifier always assigns the same label to inputs within an epsilon-ball (local robustness). Runtime inspection monitors properties dynamically during inference. Property-based testing samples from the input distribution to find cases where claimed properties are violated. Each approach reflects a different trade-off between rigour, scalability, and deployment cost.
 
-- ### Provenance
+### Provenance
 

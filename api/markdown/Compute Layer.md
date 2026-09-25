@@ -1,10 +1,10 @@
-
 Software layer managing computational resources and orchestration for rendering, simulation, physics, AI processing, and real-time processing within metaverse systems.
 
-- ### Semantic Classification
+### Semantic Classification
 
-- ### Content
-  Compute Layer — content pending enrichment.
+### Content
 
-- ### Provenance
+Compute Layer — content pending enrichment.
+
+### Provenance
 

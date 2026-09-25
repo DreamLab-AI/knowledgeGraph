@@ -1,4 +1,3 @@
-
 Total Supply is the count of all tokens that have ever been created on a blockchain network, encompassing circulating tokens, locked or vested tokens, tokens held in treasury reserves, and any tokens that have been minted but not yet distributed—but excluding permanently destroyed (burned) tokens. It differs from the maximum supply (the hard cap set by the protocol) and from circulating supply (tokens freely tradeable on secondary markets). Total supply is a fundamental parameter in tokenomics analysis used to assess inflation, dilution, and long-term value dynamics.
 
 ### Definition
@@ -19,5 +18,5 @@ Deflationary protocols actively reduce total supply through token burns—destro
 
 Treasury management is a key governance challenge: tokens held by protocol DAOs or foundations represent a claim on future supply that requires transparent disclosure, responsible deployment strategies, and community oversight to prevent misalignment between protocol growth and token value.
 
-- ### Provenance
+### Provenance
 

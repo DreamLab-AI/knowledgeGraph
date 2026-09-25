@@ -1,11 +1,11 @@
-
 Git is a distributed version control system that tracks changes to files and coordinates work across multiple contributors. It was created by Linus Torvalds for Linux kernel development and has become the dominant source-control system in modern software engineering.
 
-- ### Semantic Classification
+### Semantic Classification
 
-- ### Content
-  - Git stores project history as a graph of commits, where each commit records a snapshot of tracked files and references its parent commits. Because every clone contains the full history, contributors can work offline and synchronise later through push and pull operations.
-  - Branching and merging are inexpensive operations in Git, which supports workflows where developers create feature branches and integrate them after review. The model has become the dominant approach to source control in modern software development.
+### Content
 
-- ### Provenance
+- Git stores project history as a graph of commits, where each commit records a snapshot of tracked files and references its parent commits. Because every clone contains the full history, contributors can work offline and synchronise later through push and pull operations.
+- Branching and merging are inexpensive operations in Git, which supports workflows where developers create feature branches and integrate them after review. The model has become the dominant approach to source control in modern software development.
+
+### Provenance
 

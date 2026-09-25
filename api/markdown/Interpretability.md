@@ -1,10 +1,10 @@
-
 The degree to which a human can understand the internal mechanics, decision-making processes, and cause-effect relationships within an AI system, independent of external explanation tools.
 
-- ### Semantic Classification
+### Semantic Classification
 
-- ### Content
-  - The degree to which a human can understand the internal mechanics, decision-making processes, and cause-effect relationships within an AI system, independent of external explanation tools.
+### Content
+
+- The degree to which a human can understand the internal mechanics, decision-making processes, and cause-effect relationships within an AI system, independent of external explanation tools.
 
   ## 2024-2025: Mechanistic Interpretability for Transformers and Vision Models
 
@@ -32,92 +32,83 @@ The degree to which a human can understand the internal mechanics, decision-maki
 
   ## Academic Context
 
-  - Interpretability represents a fundamental shift in how we conceptualise AI trustworthiness and transparency
-  - Distinct from explainability, which describes behaviour in understandable language; interpretability focuses on understanding the "why" behind specific decisions[2]
-  - Rooted in the need to understand computational mechanisms underlying model outputs, analogous to how neuroscientists map brain activity to human behaviour[6]
-  - Emerged as critical concern as AI systems become increasingly powerful and deployed in high-stakes domains
-
-  - Core distinction from related concepts
-  - Transparency: understanding how a model works, including architecture, algorithms, and training data[2]
-  - Explainability: describing system behaviour in understandable terms to humans[5]
-  - Interpretability: understanding relationships between input data, model parameters, and output predictions—the causal reasoning[2]
+- Interpretability represents a fundamental shift in how we conceptualise AI trustworthiness and transparency
+- Distinct from explainability, which describes behaviour in understandable language; interpretability focuses on understanding the "why" behind specific decisions[2]
+- Rooted in the need to understand computational mechanisms underlying model outputs, analogous to how neuroscientists map brain activity to human behaviour[6]
+- Emerged as critical concern as AI systems become increasingly powerful and deployed in high-stakes domains
+- Core distinction from related concepts
+- Transparency: understanding how a model works, including architecture, algorithms, and training data[2]
+- Explainability: describing system behaviour in understandable terms to humans[5]
+- Interpretability: understanding relationships between input data, model parameters, and output predictions—the causal reasoning[2]
 
   ## Current Landscape (2026)
 
-  - Industry adoption and technical implementations
-  - Simple linear models remain highly interpretable through direct inspection of coefficients and input weights[1]
-  - Rule-based systems offer interpretability by examining logic chains[1]
-  - Constrained neural networks with sparse, modular architectures improve interpretability compared to unconstrained deep networks[1]
-  - Complex "black box" models like unconstrained deep neural networks exhibit very low inherent interpretability, requiring post-hoc explainability techniques[1]
-
-  - Notable platforms and frameworks
-  - IBM's AI Explainability 360 toolkit provides algorithms and techniques to enhance transparency and trust in AI decision-making[2]
-  - Medical imaging applications demonstrate measurable impact: explaining AI models can increase clinician trust in AI-driven diagnoses by up to 30%[2]
-
-  - Technical capabilities and limitations
-  - Interpretability remains substantially behind raw AI capabilities development[4]
-  - AI companies project 5–10 years required to reliably understand model internals; expert surveys as of 2026 put the median for human-level machine intelligence at 2047, with significant variance (range 2030–2060)[4]
-  - This temporal gap creates policy challenges: deploy powerful yet opaque systems, or slow deployment and risk competitive disadvantage[4]
-  - Complexity of algorithms, particularly deep learning, makes understanding decision pathways inherently difficult[3]
-  - Lack of standardisation: no universally accepted framework for explaining AI decisions exists, leading to variability in implementation approaches[3]
-
-  - Standards and frameworks
-  - Quantitative metrics evaluate interpretability based on complexity, modularity, and transparency properties[1]
-  - Decision tree approaches offer concrete interpretability examples—each branch represents decisions based on input data (age, symptoms, medical history, blood tests), allowing tracing of the algorithm's path through the tree[3]
+- Industry adoption and technical implementations
+- Simple linear models remain highly interpretable through direct inspection of coefficients and input weights[1]
+- Rule-based systems offer interpretability by examining logic chains[1]
+- Constrained neural networks with sparse, modular architectures improve interpretability compared to unconstrained deep networks[1]
+- Complex "black box" models like unconstrained deep neural networks exhibit very low inherent interpretability, requiring post-hoc explainability techniques[1]
+- Notable platforms and frameworks
+- IBM's AI Explainability 360 toolkit provides algorithms and techniques to enhance transparency and trust in AI decision-making[2]
+- Medical imaging applications demonstrate measurable impact: explaining AI models can increase clinician trust in AI-driven diagnoses by up to 30%[2]
+- Technical capabilities and limitations
+- Interpretability remains substantially behind raw AI capabilities development[4]
+- AI companies project 5–10 years required to reliably understand model internals; expert surveys as of 2026 put the median for human-level machine intelligence at 2047, with significant variance (range 2030–2060)[4]
+- This temporal gap creates policy challenges: deploy powerful yet opaque systems, or slow deployment and risk competitive disadvantage[4]
+- Complexity of algorithms, particularly deep learning, makes understanding decision pathways inherently difficult[3]
+- Lack of standardisation: no universally accepted framework for explaining AI decisions exists, leading to variability in implementation approaches[3]
+- Standards and frameworks
+- Quantitative metrics evaluate interpretability based on complexity, modularity, and transparency properties[1]
+- Decision tree approaches offer concrete interpretability examples—each branch represents decisions based on input data (age, symptoms, medical history, blood tests), allowing tracing of the algorithm's path through the tree[3]
 
   ## Research & Literature
 
-  - Key academic sources and developments
-  - Amodei (2025): Characterises interpretability as "the AI equivalent of an MRI," attempting to provide observers with understandable insights into system mechanics[4]
-  - Marks et al. (2025); Lindsey et al. (2025); Lieberum et al. (2024); Kramar et al. (2024); Gao et al. (2024); Tillman & Mossing (2025): Recent breakthroughs in making AI more trustworthy and reliable through interpretability research[4]
-  - Kokotajlo et al. (2025): Expert projections on timeline for human-level general-purpose AI capabilities[4]
-
-  - Ongoing research directions
-  - Representation interpretability: identifying concepts within models (tone, intent) by comparing examples with controlled differences[6]
-  - Mechanistic interpretability: understanding specific computational mechanisms underlying model outputs[7]
-  - Bridging the capability-interpretability gap before systems reach or exceed human-level performance
+- Key academic sources and developments
+- Amodei (2025): Characterises interpretability as "the AI equivalent of an MRI," attempting to provide observers with understandable insights into system mechanics[4]
+- Marks et al. (2025); Lindsey et al. (2025); Lieberum et al. (2024); Kramar et al. (2024); Gao et al. (2024); Tillman & Mossing (2025): Recent breakthroughs in making AI more trustworthy and reliable through interpretability research[4]
+- Kokotajlo et al. (2025): Expert projections on timeline for human-level general-purpose AI capabilities[4]
+- Ongoing research directions
+- Representation interpretability: identifying concepts within models (tone, intent) by comparing examples with controlled differences[6]
+- Mechanistic interpretability: understanding specific computational mechanisms underlying model outputs[7]
+- Bridging the capability-interpretability gap before systems reach or exceed human-level performance
 
   ## Enterprise and Regulatory Context
 
-  - Organisational imperatives
-  - Interpretability essential for deployable, ethical AI in regulated industries[1]
-  - Enables firsthand algorithm inspection to validate suitability, reducing risks of unintended consequences before customer deployment[1]
-  - Facilitates debugging and auditing processes[1]
-  - Builds employee and customer trust, smoothing adoption—though may require trading some predictive accuracy for transparency[1]
-
-  - High-stakes applications requiring interpretability
-  - Healthcare chatbots: determining whether reassurance or symptom flagging drove model decisions[6]
-  - Video generation for educational content: understanding how antisemitic or racist imagery entered outputs[6]
-  - Satellite image analysis: tracing misidentification of military installations as benign infrastructure[6]
+- Organisational imperatives
+- Interpretability essential for deployable, ethical AI in regulated industries[1]
+- Enables firsthand algorithm inspection to validate suitability, reducing risks of unintended consequences before customer deployment[1]
+- Facilitates debugging and auditing processes[1]
+- Builds employee and customer trust, smoothing adoption—though may require trading some predictive accuracy for transparency[1]
+- High-stakes applications requiring interpretability
+- Healthcare chatbots: determining whether reassurance or symptom flagging drove model decisions[6]
+- Video generation for educational content: understanding how antisemitic or racist imagery entered outputs[6]
+- Satellite image analysis: tracing misidentification of military installations as benign infrastructure[6]
 
   ## UK Context
 
-  - British institutional engagement
-  - Growing recognition within UK regulatory frameworks (particularly Financial Conduct Authority and NHS digital governance) of interpretability requirements for AI deployment
-  - UK AI Bill and emerging standards emphasise transparency and explainability as governance pillars
-
-  - North England innovation considerations
-  - Manchester, Leeds, and Newcastle host significant AI research clusters within universities and technology sectors
-  - Regional healthcare systems increasingly grapple with interpretability requirements for diagnostic AI tools
-  - Sheffield's advanced manufacturing sector explores interpretability in industrial AI applications
+- British institutional engagement
+- Growing recognition within UK regulatory frameworks (particularly Financial Conduct Authority and NHS digital governance) of interpretability requirements for AI deployment
+- UK AI Bill and emerging standards emphasise transparency and explainability as governance pillars
+- North England innovation considerations
+- Manchester, Leeds, and Newcastle host significant AI research clusters within universities and technology sectors
+- Regional healthcare systems increasingly grapple with interpretability requirements for diagnostic AI tools
+- Sheffield's advanced manufacturing sector explores interpretability in industrial AI applications
 
   ## Future Directions
 
-  - Emerging trends
-  - Acceleration of interpretability research to close the capability gap before systems reach human-level performance[4]
-  - Development of standardised frameworks for interpretability assessment across sectors
-  - Integration of interpretability into model design rather than post-hoc application
-
-  - Anticipated challenges
-  - Inherent tension between model complexity and interpretability—more powerful models often sacrifice transparency[1]
-  - Generative AI systems (like large language models) present particular challenges; some experts question whether hallucination problems are fundamentally fixable[3]
-  - Policy dilemma: balancing deployment speed against interpretability maturity
-
-  - Research priorities
-  - Mechanistic understanding of how large language models process information internally[6]
-  - Development of quantitative metrics for interpretability assessment
-  - Bridging interpretability across different model architectures and domains
-  - Ensuring interpretability advances keep pace with capability improvements
+- Emerging trends
+- Acceleration of interpretability research to close the capability gap before systems reach human-level performance[4]
+- Development of standardised frameworks for interpretability assessment across sectors
+- Integration of interpretability into model design rather than post-hoc application
+- Anticipated challenges
+- Inherent tension between model complexity and interpretability—more powerful models often sacrifice transparency[1]
+- Generative AI systems (like large language models) present particular challenges; some experts question whether hallucination problems are fundamentally fixable[3]
+- Policy dilemma: balancing deployment speed against interpretability maturity
+- Research priorities
+- Mechanistic understanding of how large language models process information internally[6]
+- Development of quantitative metrics for interpretability assessment
+- Bridging interpretability across different model architectures and domains
+- Ensuring interpretability advances keep pace with capability improvements
 
   ## References
 
@@ -135,13 +126,12 @@ The degree to which a human can understand the internal mechanics, decision-maki
 
   [7] AI Frontiers (2025). "The Misguided Quest for Mechanistic AI Interpretability." Available at: https://ai-frontiers.org/articles/the-misguided-quest-for-mechanistic-ai-interpretability
 
-
   ## Metadata
 
-  - **Last Updated**: 2025-11-11
-  - **Review Status**: Comprehensive editorial review
-  - **Verification**: Academic sources verified
-  - **Regional Context**: UK/North England where applicable
+- **Last Updated**: 2025-11-11
+- **Review Status**: Comprehensive editorial review
+- **Verification**: Academic sources verified
+- **Regional Context**: UK/North England where applicable
 
-- ### Provenance
+### Provenance
 

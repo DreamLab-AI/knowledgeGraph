@@ -1,134 +1,142 @@
-
 Education Technology (EdTech) is the systematic application of digital tools, AI-driven systems, data analytics, and immersive platforms to enhance teaching efficacy, personalise learning pathways, and streamline educational administration across formal, informal, and professional learning contexts. Modern EdTech leverages adaptive learning algorithms that adjust content difficulty and pacing to individual learner performance, natural language processing for automated tutoring and essay scoring, and extended-reality environments that create immersive simulations for fields such as medicine, engineering, and the sciences. It bridges pedagogical theory with computational infrastructure, drawing on learning science research to design interventions at scale while grappling with data-privacy obligations and algorithmic-bias risks inherent in learner-profiling systems.
 
-- ### Semantic Classification
+### Semantic Classification
 
-- ### Content
-  ## Compositional Relationships (Components)
-      SubClassOf(ai:EducationTechnology
-        ObjectSomeValuesFrom(ai:hasPart ai:LearningManagementSystem))
-      SubClassOf(ai:EducationTechnology
-        ObjectSomeValuesFrom(ai:hasPart ai:IntelligentTutoringSystem))
-      SubClassOf(ai:EducationTechnology
-        ObjectSomeValuesFrom(ai:hasPart ai:AdaptiveLearning))
-      SubClassOf(ai:EducationTechnology
-        ObjectSomeValuesFrom(ai:hasPart ai:LearningAnalytics))
-      SubClassOf(ai:EducationTechnology
-        ObjectSomeValuesFrom(ai:hasPart ai:AutomatedAssessment))
-      SubClassOf(ai:EducationTechnology
-        ObjectSomeValuesFrom(ai:hasPart ai:ImmersiveLearning))
-      SubClassOf(ai:EducationTechnology
-        ObjectSomeValuesFrom(ai:hasPart ai:Gamification))
+### Content
 
-  ## Dependency Relationships
-      SubClassOf(ai:EducationTechnology
-        ObjectSomeValuesFrom(ai:requires ai:DataPrivacy))
-      SubClassOf(ai:EducationTechnology
-        ObjectSomeValuesFrom(ai:requires ai:DigitalInfrastructure))
-      SubClassOf(ai:EducationTechnology
-        ObjectSomeValuesFrom(ai:requires ai:Accessibility))
-      SubClassOf(ai:EducationTechnology
-        ObjectSomeValuesFrom(ai:requires ai:NaturalLanguageProcessing))
-      SubClassOf(ai:EducationTechnology
-        ObjectSomeValuesFrom(ai:requires ai:MachineLearning))
-      SubClassOf(ai:EducationTechnology
-        ObjectSomeValuesFrom(ai:dependsOn ai:CloudComputing))
-      SubClassOf(ai:EducationTechnology
-        ObjectSomeValuesFrom(ai:dependsOn ai:BroadbandConnectivity))
+## Compositional Relationships (Components)
+    SubClassOf(ai:EducationTechnology
+      ObjectSomeValuesFrom(ai:hasPart ai:LearningManagementSystem))
+    SubClassOf(ai:EducationTechnology
+      ObjectSomeValuesFrom(ai:hasPart ai:IntelligentTutoringSystem))
+    SubClassOf(ai:EducationTechnology
+      ObjectSomeValuesFrom(ai:hasPart ai:AdaptiveLearning))
+    SubClassOf(ai:EducationTechnology
+      ObjectSomeValuesFrom(ai:hasPart ai:LearningAnalytics))
+    SubClassOf(ai:EducationTechnology
+      ObjectSomeValuesFrom(ai:hasPart ai:AutomatedAssessment))
+    SubClassOf(ai:EducationTechnology
+      ObjectSomeValuesFrom(ai:hasPart ai:ImmersiveLearning))
+    SubClassOf(ai:EducationTechnology
+      ObjectSomeValuesFrom(ai:hasPart ai:Gamification))
 
-  ## Capability Relationships
-      SubClassOf(ai:EducationTechnology
-        ObjectSomeValuesFrom(ai:enables ai:PersonalisedLearning))
-      SubClassOf(ai:EducationTechnology
-        ObjectSomeValuesFrom(ai:enables ai:CollaborativeLearning))
-      SubClassOf(ai:EducationTechnology
-        ObjectSomeValuesFrom(ai:enables ai:RemoteEducation))
-      SubClassOf(ai:EducationTechnology
-        ObjectSomeValuesFrom(ai:enables ai:CompetencyBasedEducation))
-      SubClassOf(ai:EducationTechnology
-        ObjectSomeValuesFrom(ai:enables ai:ScalableEducation))
-      SubClassOf(ai:EducationTechnology
-        ObjectSomeValuesFrom(ai:enables ai:LifelongLearning))
+## Dependency Relationships
+    SubClassOf(ai:EducationTechnology
+      ObjectSomeValuesFrom(ai:requires ai:DataPrivacy))
+    SubClassOf(ai:EducationTechnology
+      ObjectSomeValuesFrom(ai:requires ai:DigitalInfrastructure))
+    SubClassOf(ai:EducationTechnology
+      ObjectSomeValuesFrom(ai:requires ai:Accessibility))
+    SubClassOf(ai:EducationTechnology
+      ObjectSomeValuesFrom(ai:requires ai:NaturalLanguageProcessing))
+    SubClassOf(ai:EducationTechnology
+      ObjectSomeValuesFrom(ai:requires ai:MachineLearning))
+    SubClassOf(ai:EducationTechnology
+      ObjectSomeValuesFrom(ai:dependsOn ai:CloudComputing))
+    SubClassOf(ai:EducationTechnology
+      ObjectSomeValuesFrom(ai:dependsOn ai:BroadbandConnectivity))
 
-  ## Implementation Relationships
-      SubClassOf(ai:EducationTechnology
-        ObjectSomeValuesFrom(ai:implements ai:Constructivism))
-      SubClassOf(ai:EducationTechnology
-        ObjectSomeValuesFrom(ai:implements ai:SpacedRepetition))
-      SubClassOf(ai:EducationTechnology
-        ObjectSomeValuesFrom(ai:uses ai:LargeLanguageModel))
-      SubClassOf(ai:EducationTechnology
-        ObjectSomeValuesFrom(ai:uses ai:KnowledgeGraph))
-      SubClassOf(ai:EducationTechnology
-        ObjectSomeValuesFrom(ai:uses ai:ComputerVision))
-      SubClassOf(ai:EducationTechnology
-        ObjectSomeValuesFrom(ai:uses ai:SpeechRecognition))
-      SubClassOf(ai:EducationTechnology
-        ObjectSomeValuesFrom(ai:standardizedBy ai:SCORM))
-      SubClassOf(ai:EducationTechnology
-        ObjectSomeValuesFrom(ai:standardizedBy ai:xAPI))
+## Capability Relationships
+    SubClassOf(ai:EducationTechnology
+      ObjectSomeValuesFrom(ai:enables ai:PersonalisedLearning))
+    SubClassOf(ai:EducationTechnology
+      ObjectSomeValuesFrom(ai:enables ai:CollaborativeLearning))
+    SubClassOf(ai:EducationTechnology
+      ObjectSomeValuesFrom(ai:enables ai:RemoteEducation))
+    SubClassOf(ai:EducationTechnology
+      ObjectSomeValuesFrom(ai:enables ai:CompetencyBasedEducation))
+    SubClassOf(ai:EducationTechnology
+      ObjectSomeValuesFrom(ai:enables ai:ScalableEducation))
+    SubClassOf(ai:EducationTechnology
+      ObjectSomeValuesFrom(ai:enables ai:LifelongLearning))
 
-  ## Reduction Relationships
-      SubClassOf(ai:EducationTechnology
-        ObjectSomeValuesFrom(ai:reducesTo ai:AdaptiveLearning))
-      SubClassOf(ai:EducationTechnology
-        ObjectSomeValuesFrom(ai:reducesTo ai:IntelligentTutoringSystem))
-      SubClassOf(ai:EducationTechnology
-        ObjectSomeValuesFrom(ai:reducesTo ai:ELearning))
+## Implementation Relationships
+    SubClassOf(ai:EducationTechnology
+      ObjectSomeValuesFrom(ai:implements ai:Constructivism))
+    SubClassOf(ai:EducationTechnology
+      ObjectSomeValuesFrom(ai:implements ai:SpacedRepetition))
+    SubClassOf(ai:EducationTechnology
+      ObjectSomeValuesFrom(ai:uses ai:LargeLanguageModel))
+    SubClassOf(ai:EducationTechnology
+      ObjectSomeValuesFrom(ai:uses ai:KnowledgeGraph))
+    SubClassOf(ai:EducationTechnology
+      ObjectSomeValuesFrom(ai:uses ai:ComputerVision))
+    SubClassOf(ai:EducationTechnology
+      ObjectSomeValuesFrom(ai:uses ai:SpeechRecognition))
+    SubClassOf(ai:EducationTechnology
+      ObjectSomeValuesFrom(ai:standardizedBy ai:SCORM))
+    SubClassOf(ai:EducationTechnology
+      ObjectSomeValuesFrom(ai:standardizedBy ai:xAPI))
 
-  ## About
-  EdTech's intellectual origins lie in B. F. Skinner's programmed instruction movement of the 1950s, which operationalised behaviourist learning theory into self-paced question-and-answer sequences delivered through mechanical "teaching machines." The computer-assisted instruction (CAI) systems of the 1960s and 1970s — PLATO at the University of Illinois, TICCIT developed by MITRE Corporation — established the core paradigm of individualised, branching instructional software that adapts to learner responses. The personal computer revolution of the 1980s democratised access to educational software, while the emergence of the World Wide Web in the 1990s produced the first generation of internet-based distance learning and Learning Management Systems. The SCORM standard (Advanced Distributed Learning Initiative, 2001) created interoperability between content authoring tools and LMS platforms, enabling the commercial EdTech ecosystem to scale.
+## Reduction Relationships
+    SubClassOf(ai:EducationTechnology
+      ObjectSomeValuesFrom(ai:reducesTo ai:AdaptiveLearning))
+    SubClassOf(ai:EducationTechnology
+      ObjectSomeValuesFrom(ai:reducesTo ai:IntelligentTutoringSystem))
+    SubClassOf(ai:EducationTechnology
+      ObjectSomeValuesFrom(ai:reducesTo ai:ELearning))
 
-  The 2000s brought the constructivist turn — tools designed not merely to transmit information but to scaffold inquiry, collaboration, and knowledge-building — alongside the early Massive Open Online Course (MOOC) experiments at MIT OpenCourseWare and Stanford. The MOOC explosion of 2012 (Coursera, edX, Udacity launching within months of each other) brought university-level content to millions of learners globally and generated the datasets that drove the first generation of rigorous learning analytics research. The COVID-19 pandemic (2020–2022) served as a forced mass adoption event: within weeks, entire national education systems migrated to online platforms, establishing [[Learning Management System]] infrastructure as core institutional digital infrastructure and normalising synchronous video-based instruction at scale. The pandemic also accelerated edtech venture investment, with global investment peaking at approximately $20 billion in 2021 before correcting through 2022–2023.
+## About
+EdTech's intellectual origins lie in B. F. Skinner's programmed instruction movement of the 1950s, which operationalised behaviourist learning theory into self-paced question-and-answer sequences delivered through mechanical "teaching machines." The computer-assisted instruction (CAI) systems of the 1960s and 1970s — PLATO at the University of Illinois, TICCIT developed by MITRE Corporation — established the core paradigm of individualised, branching instructional software that adapts to learner responses. The personal computer revolution of the 1980s democratised access to educational software, while the emergence of the World Wide Web in the 1990s produced the first generation of internet-based distance learning and Learning Management Systems. The SCORM standard (Advanced Distributed Learning Initiative, 2001) created interoperability between content authoring tools and LMS platforms, enabling the commercial EdTech ecosystem to scale.
 
-  The current generation of EdTech, characterised by AI-native architectures, represents a qualitative break from earlier adaptive systems. Where Knewton-era adaptive learning (2008–2020) relied on item-response theory and collaborative filtering over fixed content item banks, [[Large Language Model]]-powered systems can engage in open-ended subject-matter dialogue, generate novel worked examples calibrated to learner misconceptions, and provide paragraph-level feedback on written work at a quality approaching expert human tutors. Bloom's 2 Sigma problem — the consistent finding from Bloom (1984) that one-to-one tutoring produces a 2-standard-deviation improvement over conventional classroom instruction — has long been a north star for EdTech; LLM-based tutoring systems offer the first credible path to delivering Bloom-level individualisation at population scale.
+The 2000s brought the constructivist turn — tools designed not merely to transmit information but to scaffold inquiry, collaboration, and knowledge-building — alongside the early Massive Open Online Course (MOOC) experiments at MIT OpenCourseWare and Stanford. The MOOC explosion of 2012 (Coursera, edX, Udacity launching within months of each other) brought university-level content to millions of learners globally and generated the datasets that drove the first generation of rigorous learning analytics research. The COVID-19 pandemic (2020–2022) served as a forced mass adoption event: within weeks, entire national education systems migrated to online platforms, establishing [[Learning Management System]] infrastructure as core institutional digital infrastructure and normalising synchronous video-based instruction at scale. The pandemic also accelerated edtech venture investment, with global investment peaking at approximately $20 billion in 2021 before correcting through 2022–2023.
 
-  ## Components / Architecture
+The current generation of EdTech, characterised by AI-native architectures, represents a qualitative break from earlier adaptive systems. Where Knewton-era adaptive learning (2008–2020) relied on item-response theory and collaborative filtering over fixed content item banks, [[Large Language Model]]-powered systems can engage in open-ended subject-matter dialogue, generate novel worked examples calibrated to learner misconceptions, and provide paragraph-level feedback on written work at a quality approaching expert human tutors. Bloom's 2 Sigma problem — the consistent finding from Bloom (1984) that one-to-one tutoring produces a 2-standard-deviation improvement over conventional classroom instruction — has long been a north star for EdTech; LLM-based tutoring systems offer the first credible path to delivering Bloom-level individualisation at population scale.
 
-  **[[Learning Management System]] (LMS)**
-  - Centralised platform delivering content, hosting assessments, managing enrolment, recording grades, and providing communication infrastructure for courses
-  - Major platforms: Moodle (open source, 50M+ users), Canvas (Instructure), Blackboard (now Anthology), Microsoft Teams for Education, Google Classroom
-  - UK institutional prevalence: Moodle and Canvas dominate UK HE; Microsoft Teams for Education widely deployed in UK schools following DfE's 2020–2021 digital infrastructure investment
-  - Integration via [[IMS LTI]] (Learning Tools Interoperability) enables third-party EdTech tools to authenticate against institutional LMS, passing grade data back via the Assignment and Grade Services specification
+## Components / Architecture
+
+**[[Learning Management System]] (LMS)**
+
+- Centralised platform delivering content, hosting assessments, managing enrolment, recording grades, and providing communication infrastructure for courses
+- Major platforms: Moodle (open source, 50M+ users), Canvas (Instructure), Blackboard (now Anthology), Microsoft Teams for Education, Google Classroom
+- UK institutional prevalence: Moodle and Canvas dominate UK HE; Microsoft Teams for Education widely deployed in UK schools following DfE's 2020–2021 digital infrastructure investment
+- Integration via [[IMS LTI]] (Learning Tools Interoperability) enables third-party EdTech tools to authenticate against institutional LMS, passing grade data back via the Assignment and Grade Services specification
 
   **[[Intelligent Tutoring System]] (ITS)**
-  - Architecture: domain model (subject knowledge representation), student model (knowledge state estimation), pedagogical model (instructional strategy selection), and interface layer
-  - Classical implementations: Carnegie Learning's MATHia (formerly Cognitive Tutor), AutoTutor (Graesser), ASSISTments (Worcester Polytechnic Institute)
-  - LLM-era ITS: Khanmigo (Khan Academy + GPT-4), Pearson's AI tutor (rolled out to 12M students globally in 2024), UCL Squirrel AI pilot (11% anatomy score improvement)
-  - Bayesian Knowledge Tracing (Corbett & Anderson 1994) remains the foundational student modelling algorithm; deep knowledge tracing (DKT, Piech et al. 2015) and transformer-based knowledge tracing (SAINT, Choi et al. 2020) are current research frontiers
+
+- Architecture: domain model (subject knowledge representation), student model (knowledge state estimation), pedagogical model (instructional strategy selection), and interface layer
+- Classical implementations: Carnegie Learning's MATHia (formerly Cognitive Tutor), AutoTutor (Graesser), ASSISTments (Worcester Polytechnic Institute)
+- LLM-era ITS: Khanmigo (Khan Academy + GPT-4), Pearson's AI tutor (rolled out to 12M students globally in 2024), UCL Squirrel AI pilot (11% anatomy score improvement)
+- Bayesian Knowledge Tracing (Corbett & Anderson 1994) remains the foundational student modelling algorithm; deep knowledge tracing (DKT, Piech et al. 2015) and transformer-based knowledge tracing (SAINT, Choi et al. 2020) are current research frontiers
 
   **[[Adaptive Learning]]**
-  - Dynamically sequences learning objects (video, text, assessment) and adjusts difficulty based on real-time learner-response patterns
-  - Platforms: Knewton (now McGraw-Hill), Smart Sparrow, DreamBox Learning, IXL, Duolingo (spaced repetition + engagement optimisation)
-  - By 2026, adaptive learning accounts for 43% of deployed AI tools in education (Bett 2025 whitepaper)
+
+- Dynamically sequences learning objects (video, text, assessment) and adjusts difficulty based on real-time learner-response patterns
+- Platforms: Knewton (now McGraw-Hill), Smart Sparrow, DreamBox Learning, IXL, Duolingo (spaced repetition + engagement optimisation)
+- By 2026, adaptive learning accounts for 43% of deployed AI tools in education (Bett 2025 whitepaper)
 
   **[[Learning Analytics]]**
-  - Collection and analysis of learner-generated data: assessment scores, clickstream behaviour, video engagement, forum participation, time-on-task
-  - Learning Record Store (LRS) as defined by [[xAPI]] specification stores activity statements in a structured triple format (actor-verb-object) enabling cross-platform analytics
-  - Predictive models: early-alert systems identifying at-risk learners from Week 1 engagement signals; learning outcome prediction from clickstream patterns
-  - LSE working paper (2025) documented privacy concerns over EdTech providers' data practices under GDPR, finding material gaps between stated and actual data collection scope
+
+- Collection and analysis of learner-generated data: assessment scores, clickstream behaviour, video engagement, forum participation, time-on-task
+- Learning Record Store (LRS) as defined by [[xAPI]] specification stores activity statements in a structured triple format (actor-verb-object) enabling cross-platform analytics
+- Predictive models: early-alert systems identifying at-risk learners from Week 1 engagement signals; learning outcome prediction from clickstream patterns
+- LSE working paper (2025) documented privacy concerns over EdTech providers' data practices under GDPR, finding material gaps between stated and actual data collection scope
 
   **[[Automated Assessment]]**
-  - Automated Essay Scoring (AES): NLP models evaluating coherence, argument quality, grammar, and task relevance; Turnitin's AI grading system, ETS e-rater, Pearson's WriteToLearn
-  - Short-answer grading: transformer-based models achieving near-human agreement in STEM assessment contexts
-  - Automated Code Assessment: CodeSignal, Gradescope, GitHub Classroom — static analysis and test-suite execution for programming assignments
-  - Spoken language assessment: pronunciation feedback systems (Duolingo, ELSA Speak) using ASR and phoneme-level acoustic models
+
+- Automated Essay Scoring (AES): NLP models evaluating coherence, argument quality, grammar, and task relevance; Turnitin's AI grading system, ETS e-rater, Pearson's WriteToLearn
+- Short-answer grading: transformer-based models achieving near-human agreement in STEM assessment contexts
+- Automated Code Assessment: CodeSignal, Gradescope, GitHub Classroom — static analysis and test-suite execution for programming assignments
+- Spoken language assessment: pronunciation feedback systems (Duolingo, ELSA Speak) using ASR and phoneme-level acoustic models
 
   **[[Immersive Learning]]**
-  - [[Virtual Reality]] surgical simulation: Osso VR (acquired by Johnson & Johnson), Fundamental Surgery, Touch Surgery — haptic-enabled procedural rehearsal
-  - Virtual science labs: Labster (partnered with 600+ institutions globally), PhET Interactive Simulations (University of Colorado Boulder)
-  - Safety training: Immerse (Manchester-based), Pixaera — immersive XR for industrial and offshore safety induction
-  - Social VR classrooms: VRChat Education, Microsoft Mesh, Meta Horizon Workrooms for collaborative learning environments
+
+- [[Virtual Reality]] surgical simulation: Osso VR (acquired by Johnson & Johnson), Fundamental Surgery, Touch Surgery — haptic-enabled procedural rehearsal
+- Virtual science labs: Labster (partnered with 600+ institutions globally), PhET Interactive Simulations (University of Colorado Boulder)
+- Safety training: Immerse (Manchester-based), Pixaera — immersive XR for industrial and offshore safety induction
+- Social VR classrooms: VRChat Education, Microsoft Mesh, Meta Horizon Workrooms for collaborative learning environments
 
   **[[Gamification]]**
-  - Integration of game mechanics: points, badges, leaderboards, achievement systems, narrative arcs, and challenge structures into non-game learning contexts
-  - Evidence base: Deci & Ryan Self-Determination Theory underpins motivational design; gamification is most effective when supporting intrinsic motivation rather than substituting extrinsic reward
-  - Platform implementations: Kahoot!, Quizlet, Classcraft, DuoLingo's streak and league system
+
+- Integration of game mechanics: points, badges, leaderboards, achievement systems, narrative arcs, and challenge structures into non-game learning contexts
+- Evidence base: Deci & Ryan Self-Determination Theory underpins motivational design; gamification is most effective when supporting intrinsic motivation rather than substituting extrinsic reward
+- Platform implementations: Kahoot!, Quizlet, Classcraft, DuoLingo's streak and league system
 
   **[[Recommendation Systems]]**
-  - Collaborative filtering (user-based, item-based) for next-best resource surfacing on MOOC platforms
-  - [[Knowledge Graph]]-powered learning path recommendation: concept prerequisite graphs used to sequence content; Cogito (Pearson), KnowledgeBase (Coursera)
-  - Content-based filtering using semantic similarity between learner's demonstrated competencies and available resources
+
+- Collaborative filtering (user-based, item-based) for next-best resource surfacing on MOOC platforms
+- [[Knowledge Graph]]-powered learning path recommendation: concept prerequisite graphs used to sequence content; Cogito (Pearson), KnowledgeBase (Coursera)
+- Content-based filtering using semantic similarity between learner's demonstrated competencies and available resources
 
   ## Use Cases / Major Families
 
@@ -158,22 +166,25 @@ Education Technology (EdTech) is the systematic application of digital tools, AI
   EdTech interoperability and quality assurance are governed by an overlapping set of technical standards, regulatory frameworks, and pedagogical quality schemes:
 
   **Technical Standards**
-  - **SCORM (Sharable Content Object Reference Model)** — ADL Initiative standard (SCORM 2004 4th Ed.) for packaging e-learning content as self-contained units with defined sequencing rules and communication API between content and LMS runtime. Widespread institutional deployment despite limitations (no non-linear branching, no mobile-native support). Still the dominant format for corporate compliance training.
-  - **[[xAPI]] (Experience API / Tin Can API, 2013)** — ADL successor to SCORM capturing any learning activity as a triple-structured statement (Actor, Verb, Object) stored in a Learning Record Store (LRS). Enables cross-platform learning analytics from mobile apps, simulations, physical badge scans, and peer-to-peer activities invisible to SCORM.
-  - **IMS LTI (Learning Tools Interoperability) 1.3** — 1EdTech Consortium standard enabling third-party tools to authenticate via OAuth 2.0/OIDC against institutional LMS, launch within the LMS UI, and return grade data via Assignment and Grade Services. LTI 1.3 with Advantage replaces the deprecated LTI 1.1 Basic Outcomes.
-  - **IMS Caliper Analytics 1.2** — event-stream standard for capturing learner interactions with granular, structured vocabulary (AssessmentEvent, MediaEvent, NavigationEvent) extending xAPI's generic verb-object model with domain-specific semantics.
-  - **IEEE 1484.12.1 (LOM — Learning Object Metadata)** — IEEE LTSC standard defining 60+ metadata fields for cataloguing educational resources; basis for OAI-PMH-based interoperability between digital repositories.
-  - **WCAG 2.1 / EN 301 549** — Web Content Accessibility Guidelines mandating perceivable, operable, understandable, and robust interfaces; EN 301 549 is the European accessibility standard referenced in UK public sector procurement requirements.
+
+- **SCORM (Sharable Content Object Reference Model)** — ADL Initiative standard (SCORM 2004 4th Ed.) for packaging e-learning content as self-contained units with defined sequencing rules and communication API between content and LMS runtime. Widespread institutional deployment despite limitations (no non-linear branching, no mobile-native support). Still the dominant format for corporate compliance training.
+- **[[xAPI]] (Experience API / Tin Can API, 2013)** — ADL successor to SCORM capturing any learning activity as a triple-structured statement (Actor, Verb, Object) stored in a Learning Record Store (LRS). Enables cross-platform learning analytics from mobile apps, simulations, physical badge scans, and peer-to-peer activities invisible to SCORM.
+- **IMS LTI (Learning Tools Interoperability) 1.3** — 1EdTech Consortium standard enabling third-party tools to authenticate via OAuth 2.0/OIDC against institutional LMS, launch within the LMS UI, and return grade data via Assignment and Grade Services. LTI 1.3 with Advantage replaces the deprecated LTI 1.1 Basic Outcomes.
+- **IMS Caliper Analytics 1.2** — event-stream standard for capturing learner interactions with granular, structured vocabulary (AssessmentEvent, MediaEvent, NavigationEvent) extending xAPI's generic verb-object model with domain-specific semantics.
+- **IEEE 1484.12.1 (LOM — Learning Object Metadata)** — IEEE LTSC standard defining 60+ metadata fields for cataloguing educational resources; basis for OAI-PMH-based interoperability between digital repositories.
+- **WCAG 2.1 / EN 301 549** — Web Content Accessibility Guidelines mandating perceivable, operable, understandable, and robust interfaces; EN 301 549 is the European accessibility standard referenced in UK public sector procurement requirements.
 
   **Regulatory Frameworks (UK)**
-  - **UK GDPR / Data Protection Act 2018**: Primary legislation governing learner data; requires lawful basis for processing, data minimisation, purpose limitation, and rights to access, erasure, and portability. Particularly constraining for learner profiling and personalisation systems.
-  - **ICO Children's Code (Age Appropriate Design Code 2021)**: Applies to online services likely to be accessed by children; requires privacy by default, no profiling without parental consent, and age-appropriate privacy messaging. Directly impacts EdTech consumer products deployed in UK schools.
-  - **Online Safety Act 2023**: Platform-level safety duties for services with child users; includes duty to assess and mitigate risk of harm from AI-generated content.
-  - **FERPA (USA)**: Parallel US framework protecting student education records; applies to UK EdTech vendors operating in the US market, requiring FERPA-compliant data processing agreements with educational institutions.
+
+- **UK GDPR / Data Protection Act 2018**: Primary legislation governing learner data; requires lawful basis for processing, data minimisation, purpose limitation, and rights to access, erasure, and portability. Particularly constraining for learner profiling and personalisation systems.
+- **ICO Children's Code (Age Appropriate Design Code 2021)**: Applies to online services likely to be accessed by children; requires privacy by default, no profiling without parental consent, and age-appropriate privacy messaging. Directly impacts EdTech consumer products deployed in UK schools.
+- **Online Safety Act 2023**: Platform-level safety duties for services with child users; includes duty to assess and mitigate risk of harm from AI-generated content.
+- **FERPA (USA)**: Parallel US framework protecting student education records; applies to UK EdTech vendors operating in the US market, requiring FERPA-compliant data processing agreements with educational institutions.
 
   **Quality Assurance**
-  - **Quality Matters (QM)**: US-origin rubric-based peer-review programme for online course design; adopted by some UK HEIs for quality-assuring distance-learning modules.
-  - **OfQual Conditions of Recognition**: UK qualifications regulator conditions governing e-assessment and AI-assisted marking validity; institutions deploying automated assessment must demonstrate statistical equivalence to human marking.
+
+- **Quality Matters (QM)**: US-origin rubric-based peer-review programme for online course design; adopted by some UK HEIs for quality-assuring distance-learning modules.
+- **OfQual Conditions of Recognition**: UK qualifications regulator conditions governing e-assessment and AI-assisted marking validity; institutions deploying automated assessment must demonstrate statistical equivalence to human marking.
 
   ## Ethical and Social Dimensions
 
@@ -229,13 +240,13 @@ Education Technology (EdTech) is the systematic application of digital tools, AI
 
   ## Future Directions (2026–2030)
 
-  - **LLM tutors achieving Bloom-level personalisation**: Frontier LLM-based ITS systems are the first plausible candidates for delivering individualised tutoring at the quality of human one-to-one tutoring at scale. Key research challenges include reliable hallucination detection (ensuring AI tutors never provide incorrect explanations), curriculum alignment, and evidence-based pedagogical strategy selection beyond mere question-answering.
-  - **Multimodal learning analytics**: Integration of video (gaze, facial expression, body posture), audio (prosody, hesitation markers), and text modalities for richer learner state estimation, including emotional engagement and cognitive load estimation. Raises significant consent and surveillance ethics challenges.
-  - **[[Digital Twin]] learner models**: Persistent, portable learner knowledge graphs that travel with learners across institutional boundaries, enabling lifelong learning records and precise personalisation by new providers. Technical underpinning: [[Knowledge Graph]] representations of competency, combined with privacy-preserving computation to enable sharing without raw data exposure.
-  - **Edge inference for offline EdTech**: Deployment of on-device [[Small Language Models]] and adaptive learning engines on tablets for learners in low-connectivity environments (rural UK, Sub-Saharan Africa, refugee education). Combines [[Edge Inference]] with EdTech to serve the digital divide.
-  - **AI-generated curriculum and assessment**: LLM-generated curriculum materials aligned to national standards (UK National Curriculum, Scottish Curriculum for Excellence) and adaptive assessment item generation, reducing teacher content creation burden and enabling faster curriculum refresh cycles.
-  - **Neuro-symbolic ITS**: Hybrid architectures combining neural (LLM) language understanding with symbolic (logic-based) domain knowledge representation to provide provably correct mathematical and scientific tutoring with formal guarantees against hallucination.
-  - **Regulatory frameworks for AI assessment**: UK OfQual and the Qualifications Wales regulatory bodies are developing frameworks for AI use in formal assessment and qualification, including permitted AI assistance in examinations and standards for automated marking validity.
+- **LLM tutors achieving Bloom-level personalisation**: Frontier LLM-based ITS systems are the first plausible candidates for delivering individualised tutoring at the quality of human one-to-one tutoring at scale. Key research challenges include reliable hallucination detection (ensuring AI tutors never provide incorrect explanations), curriculum alignment, and evidence-based pedagogical strategy selection beyond mere question-answering.
+- **Multimodal learning analytics**: Integration of video (gaze, facial expression, body posture), audio (prosody, hesitation markers), and text modalities for richer learner state estimation, including emotional engagement and cognitive load estimation. Raises significant consent and surveillance ethics challenges.
+- **[[Digital Twin]] learner models**: Persistent, portable learner knowledge graphs that travel with learners across institutional boundaries, enabling lifelong learning records and precise personalisation by new providers. Technical underpinning: [[Knowledge Graph]] representations of competency, combined with privacy-preserving computation to enable sharing without raw data exposure.
+- **Edge inference for offline EdTech**: Deployment of on-device [[Small Language Models]] and adaptive learning engines on tablets for learners in low-connectivity environments (rural UK, Sub-Saharan Africa, refugee education). Combines [[Edge Inference]] with EdTech to serve the digital divide.
+- **AI-generated curriculum and assessment**: LLM-generated curriculum materials aligned to national standards (UK National Curriculum, Scottish Curriculum for Excellence) and adaptive assessment item generation, reducing teacher content creation burden and enabling faster curriculum refresh cycles.
+- **Neuro-symbolic ITS**: Hybrid architectures combining neural (LLM) language understanding with symbolic (logic-based) domain knowledge representation to provide provably correct mathematical and scientific tutoring with formal guarantees against hallucination.
+- **Regulatory frameworks for AI assessment**: UK OfQual and the Qualifications Wales regulatory bodies are developing frameworks for AI use in formal assessment and qualification, including permitted AI assistance in examinations and standards for automated marking validity.
 
   ## Research & Literature
 
@@ -326,61 +337,62 @@ Education Technology (EdTech) is the systematic application of digital tools, AI
 
   ## Key Terminology
 
-  | Term | Definition |
-  |------|------------|
-  | **ITS** | Intelligent Tutoring System — software with domain, student, and pedagogical models providing adaptive one-to-one instruction |
-  | **LMS** | Learning Management System — platform delivering, tracking, and administering learning content and assessment |
-  | **LRS** | Learning Record Store — xAPI-compliant database storing learning activity statements from multiple systems |
-  | **BKT** | Bayesian Knowledge Tracing — probabilistic model estimating probability of mastery for each knowledge component |
-  | **DKT** | Deep Knowledge Tracing — LSTM-based student model predicting knowledge state from sequence of practice events |
-  | **MOOCs** | Massive Open Online Courses — internet-accessible university-quality courses with potentially unlimited enrolment |
-  | **xAPI** | Experience API / Tin Can — ADL standard capturing learning activities as actor-verb-object triples in an LRS |
-  | **SCORM** | Sharable Content Object Reference Model — ADL packaging and sequencing standard for LMS-compatible e-learning content |
-  | **LTI** | Learning Tools Interoperability — IMS/1EdTech standard for third-party tool integration with institutional LMS |
-  | **ZPD** | Zone of Proximal Development (Vygotsky) — gap between current learner capability and what is achievable with scaffolding |
-  | **OER** | Open Educational Resources — freely licensed teaching materials enabling remix, localisation, and redistribution |
-  | **AES** | Automated Essay Scoring — NLP-based assessment of written work quality without human grader |
-  | **2 Sigma** | Bloom's finding that one-to-one tutoring produces 2 standard deviation improvement over classroom instruction |
-  | **Khanmigo** | Khan Academy's GPT-4-based AI tutoring agent; first major LLM ITS deployment at scale |
-  | **EdTech** | Abbreviation for Education Technology; used interchangeably in industry and academic literature |
-  | **FERPA** | Family Educational Rights and Privacy Act — US federal law protecting student education records |
-  | **GDPR** | General Data Protection Regulation — EU/UK framework governing learner data collection and processing |
+| Term | Definition |
+|------|------------|
+| **ITS** | Intelligent Tutoring System — software with domain, student, and pedagogical models providing adaptive one-to-one instruction |
+| **LMS** | Learning Management System — platform delivering, tracking, and administering learning content and assessment |
+| **LRS** | Learning Record Store — xAPI-compliant database storing learning activity statements from multiple systems |
+| **BKT** | Bayesian Knowledge Tracing — probabilistic model estimating probability of mastery for each knowledge component |
+| **DKT** | Deep Knowledge Tracing — LSTM-based student model predicting knowledge state from sequence of practice events |
+| **MOOCs** | Massive Open Online Courses — internet-accessible university-quality courses with potentially unlimited enrolment |
+| **xAPI** | Experience API / Tin Can — ADL standard capturing learning activities as actor-verb-object triples in an LRS |
+| **SCORM** | Sharable Content Object Reference Model — ADL packaging and sequencing standard for LMS-compatible e-learning content |
+| **LTI** | Learning Tools Interoperability — IMS/1EdTech standard for third-party tool integration with institutional LMS |
+| **ZPD** | Zone of Proximal Development (Vygotsky) — gap between current learner capability and what is achievable with scaffolding |
+| **OER** | Open Educational Resources — freely licensed teaching materials enabling remix, localisation, and redistribution |
+| **AES** | Automated Essay Scoring — NLP-based assessment of written work quality without human grader |
+| **2 Sigma** | Bloom's finding that one-to-one tutoring produces 2 standard deviation improvement over classroom instruction |
+| **Khanmigo** | Khan Academy's GPT-4-based AI tutoring agent; first major LLM ITS deployment at scale |
+| **EdTech** | Abbreviation for Education Technology; used interchangeably in industry and academic literature |
+| **FERPA** | Family Educational Rights and Privacy Act — US federal law protecting student education records |
+| **GDPR** | General Data Protection Regulation — EU/UK framework governing learner data collection and processing |
 
-  ## Formal Pedagogical Models Implemented in EdTech
+## Formal Pedagogical Models Implemented in EdTech
 
-  EdTech systems operationalise formal pedagogical theories as computational models:
+EdTech systems operationalise formal pedagogical theories as computational models:
 
-  **Bayesian Knowledge Tracing (BKT)**
-  Originally formulated by Corbett and Anderson (1994), BKT models each knowledge component (KC) as a two-state hidden Markov model: Learned vs. Not Learned. Four parameters per KC: P(L₀) — initial probability of mastery; P(T) — probability of learning on each opportunity; P(S) — probability of a slip (error despite mastery); P(G) — probability of a guess (correct despite non-mastery). Update equations propagate probability of mastery as learner completes practice items. Mastery threshold (typically P(L) > 0.95) triggers progression to next skill. Implemented in Carnegie Learning's MATHia (serving 700,000+ students annually), ASSISTments, and ALEKS.
+**Bayesian Knowledge Tracing (BKT)**
+Originally formulated by Corbett and Anderson (1994), BKT models each knowledge component (KC) as a two-state hidden Markov model: Learned vs. Not Learned. Four parameters per KC: P(L₀) — initial probability of mastery; P(T) — probability of learning on each opportunity; P(S) — probability of a slip (error despite mastery); P(G) — probability of a guess (correct despite non-mastery). Update equations propagate probability of mastery as learner completes practice items. Mastery threshold (typically P(L) > 0.95) triggers progression to next skill. Implemented in Carnegie Learning's MATHia (serving 700,000+ students annually), ASSISTments, and ALEKS.
 
-  **Item Response Theory (IRT)**
-  Psychometric framework modelling the probability of correct response as a logistic function of latent learner ability (θ) and item parameters: difficulty (b), discrimination (a), and guessing (c) — the 3-Parameter Logistic model. IRT enables adaptive testing (Computerised Adaptive Testing / CAT) where item difficulty dynamically matches estimated learner ability, minimising items required for precise ability estimation. Implementation in ALEKS, Duolingo's placement tests, and standardised adaptive assessments (GRE computer-adaptive, PARCC).
+**Item Response Theory (IRT)**
+Psychometric framework modelling the probability of correct response as a logistic function of latent learner ability (θ) and item parameters: difficulty (b), discrimination (a), and guessing (c) — the 3-Parameter Logistic model. IRT enables adaptive testing (Computerised Adaptive Testing / CAT) where item difficulty dynamically matches estimated learner ability, minimising items required for precise ability estimation. Implementation in ALEKS, Duolingo's placement tests, and standardised adaptive assessments (GRE computer-adaptive, PARCC).
 
-  **Deep Knowledge Tracing (DKT)**
-  Piech et al. (2015) replaced BKT's per-KC Markov model with an LSTM sequence model trained on KDD Cup 2010 dataset. DKT predicts correctness on any future exercise given history of practice, naturally modelling transfer between related KCs without explicitly defining KC prerequisite structure. Outperformed BKT on cross-KC prediction; transformer-based variants (SAINT, AKT) further improved accuracy by modelling exercise–response interaction sequences with attention.
+**Deep Knowledge Tracing (DKT)**
+Piech et al. (2015) replaced BKT's per-KC Markov model with an LSTM sequence model trained on KDD Cup 2010 dataset. DKT predicts correctness on any future exercise given history of practice, naturally modelling transfer between related KCs without explicitly defining KC prerequisite structure. Outperformed BKT on cross-KC prediction; transformer-based variants (SAINT, AKT) further improved accuracy by modelling exercise–response interaction sequences with attention.
 
-  **Spaced Repetition Systems (SRS)**
-  Algorithm-driven scheduling of review items based on the forgetting curve (Ebbinghaus 1885) and spacing effect (Cepeda et al. 2006). SM-2 algorithm (Wozniak 1987) underlies Anki; Duolingo's HMLSTM-based approach (Settles & Meeder 2016) predicts per-word recall probability and schedules review at half-life threshold. Evidence base: meta-analysis (Cepeda et al. 2006) shows spacing effect produces 10–50% retention improvement over massed practice with equivalent study time.
+**Spaced Repetition Systems (SRS)**
+Algorithm-driven scheduling of review items based on the forgetting curve (Ebbinghaus 1885) and spacing effect (Cepeda et al. 2006). SM-2 algorithm (Wozniak 1987) underlies Anki; Duolingo's HMLSTM-based approach (Settles & Meeder 2016) predicts per-word recall probability and schedules review at half-life threshold. Evidence base: meta-analysis (Cepeda et al. 2006) shows spacing effect produces 10–50% retention improvement over massed practice with equivalent study time.
 
-  **Worked Example Effect**
-  Cognitive load theory (Sweller 1988) predicts that novice learners benefit more from worked examples (low intrinsic cognitive load) than from problem-solving (high cognitive load). The assistance dilemma (Koedinger & Aleven 2007) asks: when should the ITS provide a hint vs. require the learner to struggle? Contemporary adaptive systems dynamically modulate example-problem ratios based on estimated learner expertise, collapsing to pure practice for experts (expertise reversal effect).
+**Worked Example Effect**
+Cognitive load theory (Sweller 1988) predicts that novice learners benefit more from worked examples (low intrinsic cognitive load) than from problem-solving (high cognitive load). The assistance dilemma (Koedinger & Aleven 2007) asks: when should the ITS provide a hint vs. require the learner to struggle? Contemporary adaptive systems dynamically modulate example-problem ratios based on estimated learner expertise, collapsing to pure practice for experts (expertise reversal effect).
 
-  ## Assessment Innovation and Academic Integrity
+## Assessment Innovation and Academic Integrity
 
-  The intersection of EdTech with assessment represents one of the most rapidly evolving and contested areas of the field, accelerated dramatically by the availability of capable generative AI from late 2022 onwards:
+The intersection of EdTech with assessment represents one of the most rapidly evolving and contested areas of the field, accelerated dramatically by the availability of capable generative AI from late 2022 onwards:
 
-  **Formative Assessment Technology**
-  Formative assessment tools provide real-time feedback during learning rather than summative evaluation at course end. Kahoot! and Mentimeter enable live polling and quizzes during synchronous teaching; Socrative and Padlet support asynchronous reflection. ITS platforms provide question-by-question adaptive feedback, distinguishing procedural errors (wrong algorithm step) from conceptual errors (fundamental misunderstanding) and providing targeted hints rather than simply marking answers right or wrong.
+**Formative Assessment Technology**
+Formative assessment tools provide real-time feedback during learning rather than summative evaluation at course end. Kahoot! and Mentimeter enable live polling and quizzes during synchronous teaching; Socrative and Padlet support asynchronous reflection. ITS platforms provide question-by-question adaptive feedback, distinguishing procedural errors (wrong algorithm step) from conceptual errors (fundamental misunderstanding) and providing targeted hints rather than simply marking answers right or wrong.
 
-  **Computerised Adaptive Testing (CAT)**
-  CAT dynamically selects test items based on running estimate of learner ability using IRT, converging on precise ability estimate with fewer items than fixed-form tests. Graduate Record Examination (GRE), GMAT, and Cambridge Assessment English proficiency tests use CAT. Key algorithms: Maximum Information Criterion (selects item providing maximum Fisher information at current ability estimate), Shadow Testing (selects items subject to content and exposure rate constraints). Exposure rate management prevents item bank over-use and security breaches.
+**Computerised Adaptive Testing (CAT)**
+CAT dynamically selects test items based on running estimate of learner ability using IRT, converging on precise ability estimate with fewer items than fixed-form tests. Graduate Record Examination (GRE), GMAT, and Cambridge Assessment English proficiency tests use CAT. Key algorithms: Maximum Information Criterion (selects item providing maximum Fisher information at current ability estimate), Shadow Testing (selects items subject to content and exposure rate constraints). Exposure rate management prevents item bank over-use and security breaches.
 
-  **Academic Integrity in the LLM Era**
-  ChatGPT's release (November 2022) created an acute academic integrity crisis: students could generate plausible essays, code, and problem solutions at zero marginal cost. Institutional responses included:
-  - *AI detection tools*: Turnitin's AI Writing Indicator (claimed 98% detection accuracy at 1% false positive rate in internal testing; independent research shows performance degrades on non-native English writing); GPTZero; Copyleaks — all remain statistically unreliable as standalone integrity tools.
-  - *Assessment redesign*: Shift toward in-person assessments, oral vivas, portfolio-based assessment, and process documentation (showing work, annotated drafts) that are harder to delegate to AI than final product submission.
-  - *Permitted AI use frameworks*: UK universities increasingly specify permitted AI assistance levels (OfQual-aligned levels 0–4: from no AI use to AI-generated draft revised by student), requiring attribution of AI assistance in assessment submissions.
-  - *Pedagogical reframing*: Some institutions frame AI as a learning tool requiring critical evaluation rather than passive acceptance, incorporating AI-assisted research and writing followed by critique and revision as explicit assessment activities.
+**Academic Integrity in the LLM Era**
+ChatGPT's release (November 2022) created an acute academic integrity crisis: students could generate plausible essays, code, and problem solutions at zero marginal cost. Institutional responses included:
+
+- *AI detection tools*: Turnitin's AI Writing Indicator (claimed 98% detection accuracy at 1% false positive rate in internal testing; independent research shows performance degrades on non-native English writing); GPTZero; Copyleaks — all remain statistically unreliable as standalone integrity tools.
+- *Assessment redesign*: Shift toward in-person assessments, oral vivas, portfolio-based assessment, and process documentation (showing work, annotated drafts) that are harder to delegate to AI than final product submission.
+- *Permitted AI use frameworks*: UK universities increasingly specify permitted AI assistance levels (OfQual-aligned levels 0–4: from no AI use to AI-generated draft revised by student), requiring attribution of AI assistance in assessment submissions.
+- *Pedagogical reframing*: Some institutions frame AI as a learning tool requiring critical evaluation rather than passive acceptance, incorporating AI-assisted research and writing followed by critique and revision as explicit assessment activities.
 
   **Proctoring and Remote Assessment**
   Remote proctoring technologies monitoring webcam, screen activity, and keystroke patterns for integrity violations gained rapid adoption during pandemic remote assessment; post-pandemic scrutiny has been severe. UK HEIs and the Quality Assurance Agency (QAA) have raised concerns about false-positive detection, disability discrimination (autistic students, ADHD, anxiety disorders show atypical behaviour patterns misidentified as integrity violations), and surveillance ethics. Several UK universities have restricted remote proctoring to specific high-stakes contexts with enhanced oversight.
@@ -393,28 +405,31 @@ Education Technology (EdTech) is the systematic application of digital tools, AI
   The evidence base for EdTech efficacy is heterogeneous and contested, ranging from robust RCT evidence for specific implementations to weak correlational studies inadequate to establish causal claims:
 
   **High-Quality Evidence**
-  - Carnegie Learning's MATHia (formerly Cognitive Tutor): Multiple large-scale RCTs (Pane et al. 2014, RAND Corporation) demonstrating statistically significant improvement in algebra achievement. The most rigorously evaluated ITS platform.
-  - DreamBox Learning: Whitney & Dean (2013) controlled study showing 10th-percentile advantage on state mathematics assessments for DreamBox users vs. matched non-users.
-  - ASSISTments: Large-scale RCT (Roschelle et al. 2016) with 4,000+ students showing ASSISTments homework assistance improved state test scores.
-  - Khan Academy: Correlational studies (Murphy et al. 2014) showing positive associations between Khan usage and achievement; no large RCT due to impossibility of randomising access to free resource.
-  - VR Surgical Training: Seymour et al. (2002) landmark RCT showing laparoscopic cholecystectomy VR trainees made 29% fewer errors and performed 6× faster on animal model. Replicated across multiple surgical specialties.
+
+- Carnegie Learning's MATHia (formerly Cognitive Tutor): Multiple large-scale RCTs (Pane et al. 2014, RAND Corporation) demonstrating statistically significant improvement in algebra achievement. The most rigorously evaluated ITS platform.
+- DreamBox Learning: Whitney & Dean (2013) controlled study showing 10th-percentile advantage on state mathematics assessments for DreamBox users vs. matched non-users.
+- ASSISTments: Large-scale RCT (Roschelle et al. 2016) with 4,000+ students showing ASSISTments homework assistance improved state test scores.
+- Khan Academy: Correlational studies (Murphy et al. 2014) showing positive associations between Khan usage and achievement; no large RCT due to impossibility of randomising access to free resource.
+- VR Surgical Training: Seymour et al. (2002) landmark RCT showing laparoscopic cholecystectomy VR trainees made 29% fewer errors and performed 6× faster on animal model. Replicated across multiple surgical specialties.
 
   **Methodological Challenges**
   The EdTech evidence base faces structural challenges that complicate meta-analytic synthesis:
-  - *Comparison condition variability*: "Business as usual" varies dramatically across studies (textbook practice, human tutoring, different EdTech tools).
-  - *Publication bias*: Positive results published disproportionately; vendor-funded studies show larger effects than independent evaluations (Cheung & Slavin 2016).
-  - *Short follow-up periods*: Most studies measure outcomes within weeks of intervention; long-term retention and transfer effects are rarely measured.
-  - *Platform version confounds*: Adaptive systems improve continuously; studies of Version 1 may not predict outcomes with Version 5 using fundamentally different algorithms.
-  - *Scaling effects*: Small efficacy studies often don't replicate at system scale due to implementation quality variation across teachers and schools.
+
+- *Comparison condition variability*: "Business as usual" varies dramatically across studies (textbook practice, human tutoring, different EdTech tools).
+- *Publication bias*: Positive results published disproportionately; vendor-funded studies show larger effects than independent evaluations (Cheung & Slavin 2016).
+- *Short follow-up periods*: Most studies measure outcomes within weeks of intervention; long-term retention and transfer effects are rarely measured.
+- *Platform version confounds*: Adaptive systems improve continuously; studies of Version 1 may not predict outcomes with Version 5 using fundamentally different algorithms.
+- *Scaling effects*: Small efficacy studies often don't replicate at system scale due to implementation quality variation across teachers and schools.
 
   **Meta-Analytic Findings**
   Hattie's Visible Learning meta-analyses (2009, updated 2018) synthesised 1,400+ educational intervention meta-analyses into effect size estimates. Key EdTech-relevant findings (effect sizes vs. hinge-point d=0.40):
-  - Computer-assisted instruction: d=0.45 (above hinge, worth implementing)
-  - Intelligent tutoring systems: d=0.53 (above hinge, recommended)
-  - Spaced practice: d=0.65 (strong evidence)
-  - Feedback: d=0.73 (very strong evidence — the key mechanism in adaptive systems)
-  - Gamification: d=0.34 (below hinge, marginal evidence)
-  - MOOCs: insufficient evidence base for synthesis (Hattie notes absence of rigorous RCT evidence)
+
+- Computer-assisted instruction: d=0.45 (above hinge, worth implementing)
+- Intelligent tutoring systems: d=0.53 (above hinge, recommended)
+- Spaced practice: d=0.65 (strong evidence)
+- Feedback: d=0.73 (very strong evidence — the key mechanism in adaptive systems)
+- Gamification: d=0.34 (below hinge, marginal evidence)
+- MOOCs: insufficient evidence base for synthesis (Hattie notes absence of rigorous RCT evidence)
 
   Cheung & Slavin (2016) meta-analysis of 45 rigorous educational technology RCTs found mean effect size d=0.15, substantially lower than vendor-funded studies, highlighting the importance of independent rigorous evaluation.
 
@@ -426,16 +441,18 @@ Education Technology (EdTech) is the systematic application of digital tools, AI
   Inclusive design is both a legal obligation and a pedagogical imperative in EdTech:
 
   **UK Legal Framework**
-  - *Equality Act 2010*: Requires reasonable adjustments for disabled learners in educational settings; EdTech platforms must not create unjustifiable barriers to access. Section 20 duty to make reasonable adjustments applies to schools, colleges, universities, and providers of qualification services.
-  - *PSED (Public Sector Equality Duty)*: Requires public sector bodies to advance equality of opportunity; applies to schools, universities, and FE colleges when procuring EdTech.
-  - *EN 301 549*: European accessibility standard referenced in UK government procurement guidance; aligns with WCAG 2.1 AA for digital content.
-  - *UN Convention on the Rights of Persons with Disabilities (UNCRPD) Article 24*: Inclusive education as a right; technology adaptations as reasonable accommodation.
+
+- *Equality Act 2010*: Requires reasonable adjustments for disabled learners in educational settings; EdTech platforms must not create unjustifiable barriers to access. Section 20 duty to make reasonable adjustments applies to schools, colleges, universities, and providers of qualification services.
+- *PSED (Public Sector Equality Duty)*: Requires public sector bodies to advance equality of opportunity; applies to schools, universities, and FE colleges when procuring EdTech.
+- *EN 301 549*: European accessibility standard referenced in UK government procurement guidance; aligns with WCAG 2.1 AA for digital content.
+- *UN Convention on the Rights of Persons with Disabilities (UNCRPD) Article 24*: Inclusive education as a right; technology adaptations as reasonable accommodation.
 
   **Assistive Technology Integration**
-  - Screen readers (NVDA, JAWS, VoiceOver, TalkBack): EdTech platforms must publish ARIA roles, maintain logical heading structure, provide text alternatives for all non-text content, and ensure keyboard navigability without mouse dependency.
-  - Augmentative and Alternative Communication (AAC): Symbol-based communication tools (Boardmaker, SymbolSupport, Grid 3) require EdTech platforms to export content in symbol-compatible formats and avoid time-pressured interaction that disadvantages AAC users.
-  - Eye-tracking input: Platforms accessed by learners with motor impairments via eye gaze (Tobii, EyeGaze) require large click targets, dwell-time activation, and avoidance of drag-and-drop interfaces.
-  - Dyslexia-specific features: Adjustable font type (OpenDyslexic), text spacing, background colour overlays, reading ruler overlays. Immersive Reader (Microsoft 365) provides these as an overlay usable within any web-based EdTech platform.
+
+- Screen readers (NVDA, JAWS, VoiceOver, TalkBack): EdTech platforms must publish ARIA roles, maintain logical heading structure, provide text alternatives for all non-text content, and ensure keyboard navigability without mouse dependency.
+- Augmentative and Alternative Communication (AAC): Symbol-based communication tools (Boardmaker, SymbolSupport, Grid 3) require EdTech platforms to export content in symbol-compatible formats and avoid time-pressured interaction that disadvantages AAC users.
+- Eye-tracking input: Platforms accessed by learners with motor impairments via eye gaze (Tobii, EyeGaze) require large click targets, dwell-time activation, and avoidance of drag-and-drop interfaces.
+- Dyslexia-specific features: Adjustable font type (OpenDyslexic), text spacing, background colour overlays, reading ruler overlays. Immersive Reader (Microsoft 365) provides these as an overlay usable within any web-based EdTech platform.
 
   **Universal Design for Learning in Practice**
   UDL implementation in EdTech platforms: multiple format options (text, audio, video, interactive) for each learning objective; multiple expression pathways (written, oral, diagrammatic, multimedia); multiple engagement routes (competitive, collaborative, intrinsically motivated exploration). Practically, UDL-aligned EdTech provides: closed captions on all video content; audio descriptions for visual content; text alternatives for interactive simulations; adjustable pacing and time limits; progress saving and re-entry for learners with episodic conditions.
@@ -452,5 +469,5 @@ Education Technology (EdTech) is the systematic application of digital tools, AI
 
   **EdTech vs. [[Gamification]]**: Gamification is one technique within the EdTech toolkit, not a synonym. EdTech encompasses non-gamified applications (LMS administration, automated assessment, video lectures, digital twins for lab simulation) as well as gamified learning environments. The evidence base for gamification in EdTech is mixed: motivational benefits are strongest for voluntary/informal learning contexts and diminish when game mechanics are perceived as external control mechanisms.
 
-- ### Provenance
+### Provenance
 

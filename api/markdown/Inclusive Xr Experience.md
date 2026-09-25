@@ -1,106 +1,119 @@
-
 Extended reality applications and environments designed to provide equitable, accessible experiences for users of all abilities, incorporating assistive technologies, alternative interaction modalities, and adaptive features that ensure meaningful participation in VR, AR, and metaverse spaces.
 
-- ### Semantic Classification
+### Semantic Classification
 
-- ### Content
+### Content
 
-  ## Accessibility Framework
+## Accessibility Framework
 
-  ### MDPI Research Framework (2024)
-  - 11 expert respondent analysis
-  - Digital accessibility specialists
-  - Metaverse developers
-  - Disability advocates
-  - Policy formulation experts
+### MDPI Research Framework (2024)
+
+- 11 expert respondent analysis
+- Digital accessibility specialists
+- Metaverse developers
+- Disability advocates
+- Policy formulation experts
 
   ### Findings
-  - Mixed inclusivity state
-  - Significant advancements identified
-  - Notable integration gaps
-  - Interoperability challenges
+
+- Mixed inclusivity state
+- Significant advancements identified
+- Notable integration gaps
+- Interoperability challenges
 
   ## Identified Barriers
 
   ### Voice Activation Issues
-  - Recognition accuracy problems
-  - Accent and speech pattern challenges
-  - Alternative command needs
-  - Quiet environment requirements
+
+- Recognition accuracy problems
+- Accent and speech pattern challenges
+- Alternative command needs
+- Quiet environment requirements
 
   ### Menu Accessibility
-  - Navigation complexity
-  - Visual-only interfaces
-  - Size and contrast limitations
-  - Alternative navigation absence
+
+- Navigation complexity
+- Visual-only interfaces
+- Size and contrast limitations
+- Alternative navigation absence
 
   ### Sensory Overload
-  - Neurodivergent user impact
-  - Stimulation management needs
-  - Calm mode options
-  - Customisable environments
+
+- Neurodivergent user impact
+- Stimulation management needs
+- Calm mode options
+- Customisable environments
 
   ### Haptic Usability
-  - Motor impairment challenges
-  - Force feedback accessibility
-  - Alternative sensation delivery
-  - Customisable intensity
+
+- Motor impairment challenges
+- Force feedback accessibility
+- Alternative sensation delivery
+- Customisable intensity
 
   ## Inclusive Technologies
 
   ### Input Alternatives
-  - Eye-tracking systems
-  - Brain-computer interfaces
-  - Voice recognition
-  - Adaptive controllers
+
+- Eye-tracking systems
+- Brain-computer interfaces
+- Voice recognition
+- Adaptive controllers
 
   ### Output Adaptations
-  - Audio descriptions
-  - Haptic communication
-  - Visual alternatives
-  - Multi-sensory options
+
+- Audio descriptions
+- Haptic communication
+- Visual alternatives
+- Multi-sensory options
 
   ## Platform Features
 
   ### Hardware Accessibility
-  - PlayStation VR2 customisation
-  - Button remapping
-  - Sensitivity controls
-  - Third-party controller support
+
+- PlayStation VR2 customisation
+- Button remapping
+- Sensitivity controls
+- Third-party controller support
 
   ### Software Adaptations
-  - Comfort mode settings
-  - Motion reduction options
-  - Colour blind modes
-  - Subtitle customisation
+
+- Comfort mode settings
+- Motion reduction options
+- Colour blind modes
+- Subtitle customisation
 
   ## Research Community
 
   ### Academic Focus
-  - ACM ASSETS conference research
-  - XR accessibility scoping reviews
-  - Assistive technology integration
-  - Motor disability solutions
+
+- ACM ASSETS conference research
+- XR accessibility scoping reviews
+- Assistive technology integration
+- Motor disability solutions
 
   ### Industry Collaboration
-  - Technology company partnerships
-  - Disability organisation input
-  - User testing programmes
-  - Standards development
+
+- Technology company partnerships
+- Disability organisation input
+- User testing programmes
+- Standards development
 
   ## Metaverse Opportunities
 
   ### Disability Empowerment
-  - New interaction possibilities
-  - Physical limitation transcendence
-  - Social participation enhancement
-  - Economic opportunity access
+
+- New interaction possibilities
+- Physical limitation transcendence
+- Social participation enhancement
+- Economic opportunity access
 
   ### Design Integration
-  - Early-stage accessibility
-  - Universal design principles
-  - Continuous improvement
-  - User feedback incorporation
 
-- ### Provenance
+- Early-stage accessibility
+- Universal design principles
+- Continuous improvement
+- User feedback incorporation
+
+### Provenance
 

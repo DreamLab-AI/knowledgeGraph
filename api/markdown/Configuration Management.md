@@ -1,131 +1,132 @@
-
 Configuration management is the engineering discipline of systematically establishing, recording, and maintaining the desired state of a system's components, settings, and dependencies throughout its lifecycle. It ensures that environments are reproducible and consistent by treating configuration as versioned, auditable artefacts rather than ad hoc manual changes. In modern practice it underpins infrastructure-as-code and continuous delivery, using declarative tools to converge machines and services to a defined state and to track every change for traceability and rollback.
 
-- ### Semantic Classification
+### Semantic Classification
 
-- ### Content
+### Content
 
-  ## Compositional Relationships (Components)
-  ```
-  SubClassOf(infra:ConfigurationManagement
-    ObjectSomeValuesFrom(infra:hasPart infra:VersionControl))
-  SubClassOf(infra:ConfigurationManagement
-    ObjectSomeValuesFrom(infra:hasPart infra:ChangeManagement))
-  SubClassOf(infra:ConfigurationManagement
-    ObjectSomeValuesFrom(infra:hasPart infra:ConfigurationManagementDatabase))
-  SubClassOf(infra:ConfigurationManagement
-    ObjectSomeValuesFrom(infra:hasPart infra:ConfigurationItem))
-  SubClassOf(infra:ConfigurationManagement
-    ObjectSomeValuesFrom(infra:hasPart infra:Baseline))
-  SubClassOf(infra:ConfigurationManagement
-    ObjectSomeValuesFrom(infra:hasPart infra:Idempotency))
-  SubClassOf(infra:ConfigurationManagement
-    ObjectSomeValuesFrom(infra:hasPart infra:Audit))
-  SubClassOf(infra:ConfigurationManagement
-    ObjectSomeValuesFrom(infra:hasPart infra:PolicyAsCode))
-  SubClassOf(infra:ConfigurationManagement
-    ObjectSomeValuesFrom(infra:hasPart infra:DriftDetection))
-  ```
+## Compositional Relationships (Components)
+```
+SubClassOf(infra:ConfigurationManagement
+  ObjectSomeValuesFrom(infra:hasPart infra:VersionControl))
+SubClassOf(infra:ConfigurationManagement
+  ObjectSomeValuesFrom(infra:hasPart infra:ChangeManagement))
+SubClassOf(infra:ConfigurationManagement
+  ObjectSomeValuesFrom(infra:hasPart infra:ConfigurationManagementDatabase))
+SubClassOf(infra:ConfigurationManagement
+  ObjectSomeValuesFrom(infra:hasPart infra:ConfigurationItem))
+SubClassOf(infra:ConfigurationManagement
+  ObjectSomeValuesFrom(infra:hasPart infra:Baseline))
+SubClassOf(infra:ConfigurationManagement
+  ObjectSomeValuesFrom(infra:hasPart infra:Idempotency))
+SubClassOf(infra:ConfigurationManagement
+  ObjectSomeValuesFrom(infra:hasPart infra:Audit))
+SubClassOf(infra:ConfigurationManagement
+  ObjectSomeValuesFrom(infra:hasPart infra:PolicyAsCode))
+SubClassOf(infra:ConfigurationManagement
+  ObjectSomeValuesFrom(infra:hasPart infra:DriftDetection))
+```
 
-  ## Dependency Relationships
-  ```
-  SubClassOf(infra:ConfigurationManagement
-    ObjectSomeValuesFrom(infra:requires infra:VersionControl))
-  SubClassOf(infra:ConfigurationManagement
-    ObjectSomeValuesFrom(infra:requires infra:Idempotency))
-  SubClassOf(infra:ConfigurationManagement
-    ObjectSomeValuesFrom(infra:requires infra:Audit))
-  SubClassOf(infra:ConfigurationManagement
-    ObjectSomeValuesFrom(infra:requires infra:BuildAutomation))
-  SubClassOf(infra:ConfigurationManagement
-    ObjectSomeValuesFrom(infra:dependsOn infra:SoftwareEngineering))
-  SubClassOf(infra:ConfigurationManagement
-    ObjectSomeValuesFrom(infra:dependsOn infra:Automation))
-  SubClassOf(infra:ConfigurationManagement
-    ObjectSomeValuesFrom(infra:dependsOn infra:AgileMethodology))
-  SubClassOf(infra:ConfigurationManagement
-    ObjectSomeValuesFrom(infra:dependsOn infra:Containerisation))
-  ```
+## Dependency Relationships
+```
+SubClassOf(infra:ConfigurationManagement
+  ObjectSomeValuesFrom(infra:requires infra:VersionControl))
+SubClassOf(infra:ConfigurationManagement
+  ObjectSomeValuesFrom(infra:requires infra:Idempotency))
+SubClassOf(infra:ConfigurationManagement
+  ObjectSomeValuesFrom(infra:requires infra:Audit))
+SubClassOf(infra:ConfigurationManagement
+  ObjectSomeValuesFrom(infra:requires infra:BuildAutomation))
+SubClassOf(infra:ConfigurationManagement
+  ObjectSomeValuesFrom(infra:dependsOn infra:SoftwareEngineering))
+SubClassOf(infra:ConfigurationManagement
+  ObjectSomeValuesFrom(infra:dependsOn infra:Automation))
+SubClassOf(infra:ConfigurationManagement
+  ObjectSomeValuesFrom(infra:dependsOn infra:AgileMethodology))
+SubClassOf(infra:ConfigurationManagement
+  ObjectSomeValuesFrom(infra:dependsOn infra:Containerisation))
+```
 
-  ## Capability Relationships
-  ```
-  SubClassOf(infra:ConfigurationManagement
-    ObjectSomeValuesFrom(infra:enables infra:ContinuousIntegration))
-  SubClassOf(infra:ConfigurationManagement
-    ObjectSomeValuesFrom(infra:enables infra:ContinuousDelivery))
-  SubClassOf(infra:ConfigurationManagement
-    ObjectSomeValuesFrom(infra:enables infra:DevOps))
-  SubClassOf(infra:ConfigurationManagement
-    ObjectSomeValuesFrom(infra:enables infra:Reproducibility))
-  SubClassOf(infra:ConfigurationManagement
-    ObjectSomeValuesFrom(infra:enables infra:DisasterRecovery))
-  SubClassOf(infra:ConfigurationManagement
-    ObjectSomeValuesFrom(infra:enables infra:GitOps))
-  SubClassOf(infra:ConfigurationManagement
-    ObjectSomeValuesFrom(infra:enables infra:InfrastructureAsCode))
-  SubClassOf(infra:ConfigurationManagement
-    ObjectSomeValuesFrom(infra:enables infra:Compliance))
-  SubClassOf(infra:ConfigurationManagement
-    ObjectSomeValuesFrom(infra:enables infra:MLOps))
-  SubClassOf(infra:ConfigurationManagement
-    ObjectSomeValuesFrom(infra:enables infra:SiteReliabilityEngineering))
-  ```
+## Capability Relationships
+```
+SubClassOf(infra:ConfigurationManagement
+  ObjectSomeValuesFrom(infra:enables infra:ContinuousIntegration))
+SubClassOf(infra:ConfigurationManagement
+  ObjectSomeValuesFrom(infra:enables infra:ContinuousDelivery))
+SubClassOf(infra:ConfigurationManagement
+  ObjectSomeValuesFrom(infra:enables infra:DevOps))
+SubClassOf(infra:ConfigurationManagement
+  ObjectSomeValuesFrom(infra:enables infra:Reproducibility))
+SubClassOf(infra:ConfigurationManagement
+  ObjectSomeValuesFrom(infra:enables infra:DisasterRecovery))
+SubClassOf(infra:ConfigurationManagement
+  ObjectSomeValuesFrom(infra:enables infra:GitOps))
+SubClassOf(infra:ConfigurationManagement
+  ObjectSomeValuesFrom(infra:enables infra:InfrastructureAsCode))
+SubClassOf(infra:ConfigurationManagement
+  ObjectSomeValuesFrom(infra:enables infra:Compliance))
+SubClassOf(infra:ConfigurationManagement
+  ObjectSomeValuesFrom(infra:enables infra:MLOps))
+SubClassOf(infra:ConfigurationManagement
+  ObjectSomeValuesFrom(infra:enables infra:SiteReliabilityEngineering))
+```
 
-  ## Implementation Relationships
-  ```
-  SubClassOf(infra:ConfigurationManagement
-    ObjectSomeValuesFrom(infra:implements infra:ChangeManagement))
-  SubClassOf(infra:ConfigurationManagement
-    ObjectSomeValuesFrom(infra:implements infra:ImmutableInfrastructure))
-  SubClassOf(infra:ConfigurationManagement
-    ObjectSomeValuesFrom(infra:implements infra:PolicyAsCode))
-  SubClassOf(infra:ConfigurationManagement
-    ObjectSomeValuesFrom(infra:implements infra:DesiredStateConfiguration))
-  SubClassOf(infra:ConfigurationManagement
-    ObjectSomeValuesFrom(infra:implements infra:SecurityScanning))
-  SubClassOf(infra:ConfigurationManagement
-    ObjectSomeValuesFrom(infra:implements infra:AutomatedTesting))
-  ```
+## Implementation Relationships
+```
+SubClassOf(infra:ConfigurationManagement
+  ObjectSomeValuesFrom(infra:implements infra:ChangeManagement))
+SubClassOf(infra:ConfigurationManagement
+  ObjectSomeValuesFrom(infra:implements infra:ImmutableInfrastructure))
+SubClassOf(infra:ConfigurationManagement
+  ObjectSomeValuesFrom(infra:implements infra:PolicyAsCode))
+SubClassOf(infra:ConfigurationManagement
+  ObjectSomeValuesFrom(infra:implements infra:DesiredStateConfiguration))
+SubClassOf(infra:ConfigurationManagement
+  ObjectSomeValuesFrom(infra:implements infra:SecurityScanning))
+SubClassOf(infra:ConfigurationManagement
+  ObjectSomeValuesFrom(infra:implements infra:AutomatedTesting))
+```
 
-  ## Reduction Relationships
-  ```
-  SubClassOf(infra:ConfigurationManagement
-    ObjectSomeValuesFrom(infra:reducesTo infra:ChangeControl))
-  SubClassOf(infra:ConfigurationManagement
-    ObjectSomeValuesFrom(infra:reducesTo infra:StateManagement))
-  SubClassOf(infra:ConfigurationManagement
-    ObjectSomeValuesFrom(infra:reducesTo infra:Versioning))
-  SubClassOf(infra:ConfigurationManagement
-    ObjectSomeValuesFrom(infra:reducesTo infra:AuditTrail))
-  SubClassOf(infra:ConfigurationManagement
-    ObjectSomeValuesFrom(infra:reducesTo infra:EnvironmentConsistency))
-  ```
+## Reduction Relationships
+```
+SubClassOf(infra:ConfigurationManagement
+  ObjectSomeValuesFrom(infra:reducesTo infra:ChangeControl))
+SubClassOf(infra:ConfigurationManagement
+  ObjectSomeValuesFrom(infra:reducesTo infra:StateManagement))
+SubClassOf(infra:ConfigurationManagement
+  ObjectSomeValuesFrom(infra:reducesTo infra:Versioning))
+SubClassOf(infra:ConfigurationManagement
+  ObjectSomeValuesFrom(infra:reducesTo infra:AuditTrail))
+SubClassOf(infra:ConfigurationManagement
+  ObjectSomeValuesFrom(infra:reducesTo infra:EnvironmentConsistency))
+```
 
-  ## About
-  Configuration management as a formal discipline emerged from aerospace and defence engineering in the 1950s and 1960s, where military procurement programmes needed to track which version of hardware specifications, drawings, and software was installed in which physical system. The US Department of Defense's MIL-HDBK-61 established a systematic vocabulary of configuration items (CIs), baselines, change proposals (ECPs), and configuration audits that became the template for civilian practice. The landmark academic formalisation came from Bersoff, Henderson, and Siegel's 1980 textbook *Software Configuration Management: An Investment in Product Integrity*, and the IEEE 828 standard (first published 1983, most recently updated as IEEE 828-2012: *IEEE Standard for Configuration Management in Systems and Software Engineering*) gave the discipline a normative reference for [[Software Engineering]] practice.
+## About
+Configuration management as a formal discipline emerged from aerospace and defence engineering in the 1950s and 1960s, where military procurement programmes needed to track which version of hardware specifications, drawings, and software was installed in which physical system. The US Department of Defense's MIL-HDBK-61 established a systematic vocabulary of configuration items (CIs), baselines, change proposals (ECPs), and configuration audits that became the template for civilian practice. The landmark academic formalisation came from Bersoff, Henderson, and Siegel's 1980 textbook *Software Configuration Management: An Investment in Product Integrity*, and the IEEE 828 standard (first published 1983, most recently updated as IEEE 828-2012: *IEEE Standard for Configuration Management in Systems and Software Engineering*) gave the discipline a normative reference for [[Software Engineering]] practice.
 
-  The transition to modern practice began in the 1990s with the proliferation of version control tools. Walter Tichy's RCS (Revision Control System, 1982) and the concurrent development of CVS made source code configuration management tractable for ordinary development teams. The distributed revision control revolution of the 2000s — Git (Linus Torvalds, 2005) — transformed [[Version Control]] into the indispensable backbone of virtually all software configuration management. Git's model of committing the full project tree as an immutable object graph, with cryptographically-linked history, solved the baseline and audit trail requirements of classical CM within a developer-native workflow.
+The transition to modern practice began in the 1990s with the proliferation of version control tools. Walter Tichy's RCS (Revision Control System, 1982) and the concurrent development of CVS made source code configuration management tractable for ordinary development teams. The distributed revision control revolution of the 2000s — Git (Linus Torvalds, 2005) — transformed [[Version Control]] into the indispensable backbone of virtually all software configuration management. Git's model of committing the full project tree as an immutable object graph, with cryptographically-linked history, solved the baseline and audit trail requirements of classical CM within a developer-native workflow.
 
-  The application of configuration management to entire system environments — not just source code — gave rise to [[Infrastructure as Code]]. [[Puppet]] (2005), CFEngine (1993, precursor to modern IaC), [[Chef]] (2009), and [[Ansible]] (2012) brought desired-state configuration to server management: instead of applying changes manually over SSH, administrators wrote declarative resource definitions that tools applied convergently. [[Terraform]] (2014) extended this to cloud infrastructure provisioning, and [[GitOps]] formalised the pattern of using a Git repository as the single source of truth for cluster state, with automated operators ([[Flux CD]], [[Argo CD]]) continuously reconciling live state to the declared desired state.
+The application of configuration management to entire system environments — not just source code — gave rise to [[Infrastructure as Code]]. [[Puppet]] (2005), CFEngine (1993, precursor to modern IaC), [[Chef]] (2009), and [[Ansible]] (2012) brought desired-state configuration to server management: instead of applying changes manually over SSH, administrators wrote declarative resource definitions that tools applied convergently. [[Terraform]] (2014) extended this to cloud infrastructure provisioning, and [[GitOps]] formalised the pattern of using a Git repository as the single source of truth for cluster state, with automated operators ([[Flux CD]], [[Argo CD]]) continuously reconciling live state to the declared desired state.
 
-  In the [[MLOps]] context, configuration management encompasses both the DevOps tooling layer (environment definitions for training and serving) and specialised ML artefacts: experiment configurations (hyperparameters, random seeds, dataset splits), model training job specifications, serving endpoint definitions, and A/B testing configurations. [[Data Versioning]] tools such as DVC and LakeFS extend configuration management principles to datasets, treating dataset snapshots as versioned, addressable objects linked to the model versions trained on them.
+In the [[MLOps]] context, configuration management encompasses both the DevOps tooling layer (environment definitions for training and serving) and specialised ML artefacts: experiment configurations (hyperparameters, random seeds, dataset splits), model training job specifications, serving endpoint definitions, and A/B testing configurations. [[Data Versioning]] tools such as DVC and LakeFS extend configuration management principles to datasets, treating dataset snapshots as versioned, addressable objects linked to the model versions trained on them.
 
-  ## Components and Architecture
+## Components and Architecture
 
-  ### Configuration Item (CI) Hierarchy
-  Every managed system decomposes into **configuration items** — discrete, independently versioned and auditable units. A CI hierarchy for a cloud service might include:
-  - **Source code modules** — application code, library dependencies (pinned via lock files), pipeline definitions
-  - **Environment specifications** — OS images, container base images (Dockerfile), package manifests (requirements.txt, go.mod)
-  - **Infrastructure definitions** — Terraform modules defining VPC, subnets, load balancers, databases; Kubernetes manifests defining deployments, services, config maps
-  - **Configuration files and secrets** — application configuration, environment variables (managed via [[HashiCorp Vault]], AWS Parameter Store, or Sealed Secrets); these are distinct from secrets, which must not be committed to [[Version Control]] in plaintext
-  - **Pipeline definitions** — CI/CD YAML files (GitHub Actions workflows, Tekton pipelines, [[Jenkins]] declarative pipelines)
-  - **Policy definitions** — [[Open Policy Agent]] Rego rules, Conftest policies, AWS Service Control Policies — these constitute [[Policy as Code]]
+### Configuration Item (CI) Hierarchy
+Every managed system decomposes into **configuration items** — discrete, independently versioned and auditable units. A CI hierarchy for a cloud service might include:
+
+- **Source code modules** — application code, library dependencies (pinned via lock files), pipeline definitions
+- **Environment specifications** — OS images, container base images (Dockerfile), package manifests (requirements.txt, go.mod)
+- **Infrastructure definitions** — Terraform modules defining VPC, subnets, load balancers, databases; Kubernetes manifests defining deployments, services, config maps
+- **Configuration files and secrets** — application configuration, environment variables (managed via [[HashiCorp Vault]], AWS Parameter Store, or Sealed Secrets); these are distinct from secrets, which must not be committed to [[Version Control]] in plaintext
+- **Pipeline definitions** — CI/CD YAML files (GitHub Actions workflows, Tekton pipelines, [[Jenkins]] declarative pipelines)
+- **Policy definitions** — [[Open Policy Agent]] Rego rules, Conftest policies, AWS Service Control Policies — these constitute [[Policy as Code]]
 
   ### Baseline Types
-  - **Functional baseline**: the approved functional requirements specification; gates entry to design
-  - **Allocated baseline**: the approved system architecture allocating functions to components
-  - **Product baseline**: the approved product specifications used to build and test the system
-  - **Operational baseline**: the approved configuration of the deployed operational system, maintained through [[Change Management]] thereafter
+
+- **Functional baseline**: the approved functional requirements specification; gates entry to design
+- **Allocated baseline**: the approved system architecture allocating functions to components
+- **Product baseline**: the approved product specifications used to build and test the system
+- **Operational baseline**: the approved configuration of the deployed operational system, maintained through [[Change Management]] thereafter
 
   ### Change Control Process
   1. **Change Request (CR)**: identifies what should change, why, and what the impact assessment is
@@ -137,32 +138,37 @@ Configuration management is the engineering discipline of systematically establi
 
   ### Drift Detection and Remediation
   Configuration drift — the silent divergence of actual system state from the declared desired state — is the primary operational failure mode that configuration management prevents. Detection mechanisms include:
-  - **Scheduled compliance scans**: tools run the CM tool in dry-run mode and report any difference between actual and desired state
-  - **Continuous reconciliation** ([[GitOps]]): operators such as [[Argo CD]] run every 3 minutes by default and apply corrective patches immediately when drift is detected
-  - **Immutable infrastructure**: drift is prevented architecturally by never patching running systems; all changes flow through image rebuild and redeployment via [[Immutable Infrastructure]] principles
-  - **Chef InSpec / AWS Config Rules / Azure Policy**: continuous compliance frameworks that evaluate live resources against [[Policy as Code|policy baselines]] in real time
+
+- **Scheduled compliance scans**: tools run the CM tool in dry-run mode and report any difference between actual and desired state
+- **Continuous reconciliation** ([[GitOps]]): operators such as [[Argo CD]] run every 3 minutes by default and apply corrective patches immediately when drift is detected
+- **Immutable infrastructure**: drift is prevented architecturally by never patching running systems; all changes flow through image rebuild and redeployment via [[Immutable Infrastructure]] principles
+- **Chef InSpec / AWS Config Rules / Azure Policy**: continuous compliance frameworks that evaluate live resources against [[Policy as Code|policy baselines]] in real time
 
   ## Tool Families
 
   ### Desired-State Configuration Management Tools
-  - **[[Ansible]]** (Red Hat, 2012–): agentless, push-based, YAML playbooks; dominant in 2025 for agentless simplicity and broad [[Cloud Computing]] provider coverage; Ansible 12.x (2025) features expanded Collections and enhanced GitOps integration
-  - **Puppet** (2005–): agent-based, declarative resource model, Ruby DSL (Puppet DSL); strong compliance use case; Puppet Enterprise 2025.2.0 added improved RBAC and reporting for regulated environments
-  - **Chef Infra** (2009–): agent-based, Ruby-based recipes and cookbooks; emphasises [[DevSecOps]] and policy-as-code via Chef InSpec; 2025 updates strengthened multi-cloud compliance reporting
-  - **SaltStack / Salt Project** (2011–): event-driven, fast minion-based execution; now maintained as open source after VMware Tanzu acquisition; strong in large-scale, real-time configuration at HPC scale
+
+- **[[Ansible]]** (Red Hat, 2012–): agentless, push-based, YAML playbooks; dominant in 2025 for agentless simplicity and broad [[Cloud Computing]] provider coverage; Ansible 12.x (2025) features expanded Collections and enhanced GitOps integration
+- **Puppet** (2005–): agent-based, declarative resource model, Ruby DSL (Puppet DSL); strong compliance use case; Puppet Enterprise 2025.2.0 added improved RBAC and reporting for regulated environments
+- **Chef Infra** (2009–): agent-based, Ruby-based recipes and cookbooks; emphasises [[DevSecOps]] and policy-as-code via Chef InSpec; 2025 updates strengthened multi-cloud compliance reporting
+- **SaltStack / Salt Project** (2011–): event-driven, fast minion-based execution; now maintained as open source after VMware Tanzu acquisition; strong in large-scale, real-time configuration at HPC scale
 
   ### Infrastructure Provisioning (IaC)
-  - **[[Terraform]]** (HashiCorp, 2014–): declarative HCL; multi-cloud resource provisioning; the de facto multi-cloud IaC standard; by April 2026 Terraform commands ~33–62% market share depending on measurement methodology
-  - **[[OpenTofu]]** (CNCF, 2023–): community-maintained Terraform fork under MPL licence; API-compatible; approximately 12% adoption among IaC practitioners in 2026, with 27% of teams planning to evaluate or expand its use; ships state encryption (v1.7), early variable evaluation (v1.8), and OCI registry support (v1.10) ahead of the Terraform open binary
-  - **[[Pulumi]]** (2018–): infrastructure defined in real programming languages (TypeScript, Python, Go, .NET); appeals to development teams uncomfortable with HCL; growing adoption in 2025–2026 for complex multi-cloud topologies
-  - **AWS CloudFormation / CDK**: AWS-native IaC; CDK allows infrastructure definition in TypeScript/Python with synthesis to CloudFormation templates; tight integration with [[Cloud Computing|AWS cloud services]]
+
+- **[[Terraform]]** (HashiCorp, 2014–): declarative HCL; multi-cloud resource provisioning; the de facto multi-cloud IaC standard; by April 2026 Terraform commands ~33–62% market share depending on measurement methodology
+- **[[OpenTofu]]** (CNCF, 2023–): community-maintained Terraform fork under MPL licence; API-compatible; approximately 12% adoption among IaC practitioners in 2026, with 27% of teams planning to evaluate or expand its use; ships state encryption (v1.7), early variable evaluation (v1.8), and OCI registry support (v1.10) ahead of the Terraform open binary
+- **[[Pulumi]]** (2018–): infrastructure defined in real programming languages (TypeScript, Python, Go, .NET); appeals to development teams uncomfortable with HCL; growing adoption in 2025–2026 for complex multi-cloud topologies
+- **AWS CloudFormation / CDK**: AWS-native IaC; CDK allows infrastructure definition in TypeScript/Python with synthesis to CloudFormation templates; tight integration with [[Cloud Computing|AWS cloud services]]
 
   ### GitOps Operators
-  - **[[Argo CD]]**: declarative [[GitOps]] continuous delivery for [[Kubernetes]]; syncs cluster state to Git repositories; most widely adopted GitOps tool as of 2025; CNCF's 2023 GitOps microsurvey found 91% of respondents already using GitOps
-  - **[[Flux CD]]**: CNCF graduated; pull-based GitOps; strong multi-tenancy model; native Helm and Kustomize support; complements [[Kubernetes]] in multi-cluster [[Platform Engineering]] platforms
+
+- **[[Argo CD]]**: declarative [[GitOps]] continuous delivery for [[Kubernetes]]; syncs cluster state to Git repositories; most widely adopted GitOps tool as of 2025; CNCF's 2023 GitOps microsurvey found 91% of respondents already using GitOps
+- **[[Flux CD]]**: CNCF graduated; pull-based GitOps; strong multi-tenancy model; native Helm and Kustomize support; complements [[Kubernetes]] in multi-cluster [[Platform Engineering]] platforms
 
   ### Configuration Management Databases (CMDB)
-  - ITIL defines a CMDB as the authoritative repository of all CIs and their relationships; modern ITSM platforms (ServiceNow, BMC Helix) provide CMDBs integrated with discovery, [[Change Management]], and incident management workflows
-  - In cloud-native environments, the CMDB is increasingly replaced or supplemented by the git repository as the authoritative record, with resource tagging and cloud provider asset inventories as secondary sources
+
+- ITIL defines a CMDB as the authoritative repository of all CIs and their relationships; modern ITSM platforms (ServiceNow, BMC Helix) provide CMDBs integrated with discovery, [[Change Management]], and incident management workflows
+- In cloud-native environments, the CMDB is increasingly replaced or supplemented by the git repository as the authoritative record, with resource tagging and cloud provider asset inventories as secondary sources
 
   ## Use Cases and Major Families
 
@@ -203,11 +209,12 @@ Configuration management is the engineering discipline of systematically establi
   The IaC market reached approximately $1.74 billion in 2024 and is projected to grow to $12.86 billion by 2032 (CAGR ~28%), reflecting the centralisation of configuration management into cloud-native organisations. Over 80% of enterprise organisations report using IaC as of 2025.
 
   The dominant trends shaping the 2025–2026 landscape are:
-  - **[[OpenTofu]] and Terraform fragmentation**: HashiCorp's 2023 re-licensing of Terraform from MPL to BSL triggered the OpenTofu fork under CNCF governance. By 2025, roughly 20% of new IaC projects were starting on OpenTofu rather than Terraform, particularly in public-sector and open-source-first organisations.
-  - **AI-assisted configuration generation**: [[Large Language Models|LLM]]-based tools (GitHub Copilot for infrastructure, Pulumi AI, TerraFormer) are automating the generation of [[Terraform]] and [[Ansible]] configurations from natural language descriptions. TerraFormer (2025, arXiv:2601.08734) demonstrated fine-tuning LLMs with policy-guided verifier feedback to produce valid, secure IaC. As of 2026, AI is writing IaC faster than teams can review it — making automated policy gates more critical than ever.
-  - **[[Policy as Code]] and [[DevSecOps]] integration**: [[Open Policy Agent]] (OPA) with Rego, Checkov, and Terrascan are embedded into [[Continuous Integration|CI/CD]] pipelines as pre-apply policy gates, ensuring that no configuration change can be applied without passing security and compliance checks. This closes the configuration management and [[Security Scanning]] disciplines.
-  - **Immutable infrastructure dominance**: Immutable infrastructure (replace rather than patch) held over 60% market share in 2024, reflecting the near-universal adoption of container-based deployments where [[Containerisation]] makes the image the configuration artefact.
-  - **GitOps maturity**: Argo CD and Flux CD are CNCF graduated projects with broad enterprise adoption; [[GitOps]] is now the default operating model for [[Kubernetes]] environments rather than an experimental pattern.
+
+- **[[OpenTofu]] and Terraform fragmentation**: HashiCorp's 2023 re-licensing of Terraform from MPL to BSL triggered the OpenTofu fork under CNCF governance. By 2025, roughly 20% of new IaC projects were starting on OpenTofu rather than Terraform, particularly in public-sector and open-source-first organisations.
+- **AI-assisted configuration generation**: [[Large Language Models|LLM]]-based tools (GitHub Copilot for infrastructure, Pulumi AI, TerraFormer) are automating the generation of [[Terraform]] and [[Ansible]] configurations from natural language descriptions. TerraFormer (2025, arXiv:2601.08734) demonstrated fine-tuning LLMs with policy-guided verifier feedback to produce valid, secure IaC. As of 2026, AI is writing IaC faster than teams can review it — making automated policy gates more critical than ever.
+- **[[Policy as Code]] and [[DevSecOps]] integration**: [[Open Policy Agent]] (OPA) with Rego, Checkov, and Terrascan are embedded into [[Continuous Integration|CI/CD]] pipelines as pre-apply policy gates, ensuring that no configuration change can be applied without passing security and compliance checks. This closes the configuration management and [[Security Scanning]] disciplines.
+- **Immutable infrastructure dominance**: Immutable infrastructure (replace rather than patch) held over 60% market share in 2024, reflecting the near-universal adoption of container-based deployments where [[Containerisation]] makes the image the configuration artefact.
+- **GitOps maturity**: Argo CD and Flux CD are CNCF graduated projects with broad enterprise adoption; [[GitOps]] is now the default operating model for [[Kubernetes]] environments rather than an experimental pattern.
 
   ## UK Context
 
@@ -223,25 +230,26 @@ Configuration management is the engineering discipline of systematically establi
 
   ## Future Directions (2026–2030)
 
-  - **LLM-native configuration management**: AI assistants will generate, review, and validate configuration definitions with integrated policy checking, dramatically lowering the barrier to IaC adoption for teams without deep platform engineering expertise. Human review will focus on intent and security boundaries rather than syntactic correctness.
-  - **Configuration management for AI systems**: As organisations deploy AI agents and [[Autonomous Systems|autonomous systems]], configuration management must extend to model weights, prompt templates, retrieval index configurations, and agent behaviour policies — domains where existing CM tooling (Git, [[Terraform]]) provides only partial coverage. [[MLOps]] platforms (MLflow, Kubeflow) are adding CM-native features for model versioning and deployment configuration. New tooling categories will emerge to manage [[Large Language Models|LLM]] prompt configurations, [[Retrieval Augmented Generation|RAG index]] definitions, and agent tool definitions as first-class configuration artefacts.
-  - **Security-first configuration management**: Integration of configuration management with supply chain security frameworks ([[SLSA]], [[SBOM]], [[Sigstore]]) will make cryptographic provenance attestation a standard part of the configuration item lifecycle, countering software [[Supply Chain Security|supply chain attacks]]. The EU Cyber Resilience Act (CRA, passed 2024, applying from 2027) will require SBOM generation and vulnerability management as mandatory CM activities for CE-marked software products in the European market.
-  - **Autonomous configuration remediation**: Self-healing infrastructure agents will detect configuration drift and apply remediation automatically without human approval for low-risk changes, reserving human review for high-risk changes. This extends [[GitOps]] reconciliation from infrastructure to application configuration.
-  - **Quantum-resistant configuration stores**: As post-quantum cryptography standards (NIST PQC, 2024) are adopted, the hash functions and digital signatures underpinning Git's integrity model will require migration — a configuration management challenge in itself.
-  - **Edge and IoT configuration management**: Managing configuration at billions of edge devices and embedded systems requires lightweight, bandwidth-efficient CM protocols distinct from cloud-native GitOps; expect new OTA (over-the-air) update frameworks with CM properties built in.
+- **LLM-native configuration management**: AI assistants will generate, review, and validate configuration definitions with integrated policy checking, dramatically lowering the barrier to IaC adoption for teams without deep platform engineering expertise. Human review will focus on intent and security boundaries rather than syntactic correctness.
+- **Configuration management for AI systems**: As organisations deploy AI agents and [[Autonomous Systems|autonomous systems]], configuration management must extend to model weights, prompt templates, retrieval index configurations, and agent behaviour policies — domains where existing CM tooling (Git, [[Terraform]]) provides only partial coverage. [[MLOps]] platforms (MLflow, Kubeflow) are adding CM-native features for model versioning and deployment configuration. New tooling categories will emerge to manage [[Large Language Models|LLM]] prompt configurations, [[Retrieval Augmented Generation|RAG index]] definitions, and agent tool definitions as first-class configuration artefacts.
+- **Security-first configuration management**: Integration of configuration management with supply chain security frameworks ([[SLSA]], [[SBOM]], [[Sigstore]]) will make cryptographic provenance attestation a standard part of the configuration item lifecycle, countering software [[Supply Chain Security|supply chain attacks]]. The EU Cyber Resilience Act (CRA, passed 2024, applying from 2027) will require SBOM generation and vulnerability management as mandatory CM activities for CE-marked software products in the European market.
+- **Autonomous configuration remediation**: Self-healing infrastructure agents will detect configuration drift and apply remediation automatically without human approval for low-risk changes, reserving human review for high-risk changes. This extends [[GitOps]] reconciliation from infrastructure to application configuration.
+- **Quantum-resistant configuration stores**: As post-quantum cryptography standards (NIST PQC, 2024) are adopted, the hash functions and digital signatures underpinning Git's integrity model will require migration — a configuration management challenge in itself.
+- **Edge and IoT configuration management**: Managing configuration at billions of edge devices and embedded systems requires lightweight, bandwidth-efficient CM protocols distinct from cloud-native GitOps; expect new OTA (over-the-air) update frameworks with CM properties built in.
 
   ## Interaction with DevSecOps and Security
 
   Configuration management is the foundational layer on which [[DevSecOps]] — the integration of security into [[DevOps]] workflows — is built. The reason is structural: security posture is itself a configuration property. Whether a service runs with least-privilege permissions, whether TLS is enforced, whether a database is exposed to the public internet, whether encryption at rest is enabled — all of these are configuration decisions that must be defined, version-controlled, and automatically verified.
 
   **[[Policy as Code]] tooling** makes security a first-class configuration management concern:
-  - **[[Open Policy Agent]] (OPA)**: A general-purpose policy engine whose Rego language expresses security policies as code. [[Terraform]] plans are evaluated against OPA policies before application; only plans that pass all policies are allowed to proceed. This prevents misconfigured resources from reaching production.
-  - **Checkov**: An open-source static analysis tool for IaC ([[Terraform]], CloudFormation, [[Kubernetes]] YAML, Dockerfile) that checks configurations against 1,000+ built-in security and [[Compliance]] checks before deployment.
-  - **Terrascan**: Similar to Checkov; integrates with [[Continuous Integration|CI]] pipelines to block deployment of insecure configurations.
-  - **Chef InSpec**: A compliance-as-code framework that tests live systems against security baselines (CIS Benchmarks, STIG, PCI DSS controls), generating [[Audit]] evidence suitable for regulatory reporting.
-  - **[[SLSA]] (Supply Chain Levels for Software Artefacts)**: A Google-originated framework (now under OpenSSF) that defines levels of provenance assurance for build artefacts. Configuration management of the build pipeline itself is a prerequisite for SLSA Level 2 and above.
-  - **[[Sigstore]] and Cosign**: Cryptographic signing of container images and IaC artefacts; when combined with configuration management, every deployed artefact carries a verifiable chain of custody from source commit to running workload.
-  - **[[SBOM]] (Software Bill of Materials)**: Machine-readable inventories of all software components and their versions; SBOM generation is increasingly mandated (US Executive Order 14028; EU Cyber Resilience Act) and is a configuration management artefact, tracking the exact component configuration of each software release.
+
+- **[[Open Policy Agent]] (OPA)**: A general-purpose policy engine whose Rego language expresses security policies as code. [[Terraform]] plans are evaluated against OPA policies before application; only plans that pass all policies are allowed to proceed. This prevents misconfigured resources from reaching production.
+- **Checkov**: An open-source static analysis tool for IaC ([[Terraform]], CloudFormation, [[Kubernetes]] YAML, Dockerfile) that checks configurations against 1,000+ built-in security and [[Compliance]] checks before deployment.
+- **Terrascan**: Similar to Checkov; integrates with [[Continuous Integration|CI]] pipelines to block deployment of insecure configurations.
+- **Chef InSpec**: A compliance-as-code framework that tests live systems against security baselines (CIS Benchmarks, STIG, PCI DSS controls), generating [[Audit]] evidence suitable for regulatory reporting.
+- **[[SLSA]] (Supply Chain Levels for Software Artefacts)**: A Google-originated framework (now under OpenSSF) that defines levels of provenance assurance for build artefacts. Configuration management of the build pipeline itself is a prerequisite for SLSA Level 2 and above.
+- **[[Sigstore]] and Cosign**: Cryptographic signing of container images and IaC artefacts; when combined with configuration management, every deployed artefact carries a verifiable chain of custody from source commit to running workload.
+- **[[SBOM]] (Software Bill of Materials)**: Machine-readable inventories of all software components and their versions; SBOM generation is increasingly mandated (US Executive Order 14028; EU Cyber Resilience Act) and is a configuration management artefact, tracking the exact component configuration of each software release.
 
   The convergence of configuration management and security has produced the concept of **shift-left compliance**: rather than auditing [[Compliance|compliance]] after deployment, compliance checks are embedded into the pull request review workflow. A developer submitting a [[Terraform]] change that would open a security group to 0.0.0.0/0 receives an immediate policy violation notification in the [[Continuous Integration|CI]] pipeline, before any human reviewer needs to catch it. The UK Cyber Security and Resilience Bill (introduced to Parliament November 2025, expected Royal Assent 2026) extends [[Compliance|compliance]] obligations to supply chain security, reinforcing the importance of IaC-tracked configuration management for operators of network and information systems infrastructure.
 
@@ -249,10 +257,10 @@ Configuration management is the engineering discipline of systematically establi
 
   In organisations running ITIL-aligned IT Service Management (ITSM), configuration management occupies the "Service Configuration Management" practice (ITIL 4, 2019), one of 34 ITIL management practices. The practice's purpose is to ensure that accurate and reliable information about the configuration of services and their supporting CIs is available when and where it is needed. It works in close coordination with:
 
-  - **Change Enablement**: The practice that controls changes to services and infrastructure; configuration management provides the CMDB as the impact assessment reference for change requests.
-  - **Incident Management**: Incidents are traced to specific CIs; without an accurate CMDB, identifying the failing CI and its dependencies is severely hampered.
-  - **Release Management**: Coordinating configuration artefacts with the software release lifecycle; ensuring that the environment configuration matches the application version being released.
-  - **IT Asset Management**: Tracking the physical and virtual assets that map to CIs; financial asset management depends on configuration item identification.
+- **Change Enablement**: The practice that controls changes to services and infrastructure; configuration management provides the CMDB as the impact assessment reference for change requests.
+- **Incident Management**: Incidents are traced to specific CIs; without an accurate CMDB, identifying the failing CI and its dependencies is severely hampered.
+- **Release Management**: Coordinating configuration artefacts with the software release lifecycle; ensuring that the environment configuration matches the application version being released.
+- **IT Asset Management**: Tracking the physical and virtual assets that map to CIs; financial asset management depends on configuration item identification.
 
   ServiceNow's CMDB is the dominant enterprise CMDB platform as of 2025, with BMC Helix, Atlassian's Jira Service Management, and iTop as alternatives. Modern CMDB implementations use auto-discovery (cloud provider APIs, network scanners, agent-based discovery) to populate and maintain the CMDB rather than relying on manual entry, dramatically improving accuracy. The CMDB then becomes the ground-truth reference against which IaC-declared desired state can be reconciled — a bridge between classical ITSM configuration management and modern DevOps/GitOps practice.
 
@@ -261,30 +269,31 @@ Configuration management is the engineering discipline of systematically establi
   The extension of configuration management principles to [[MLOps]] reflects the recognition that machine learning systems have more configuration complexity than conventional software: they have three independently evolving axes — code, data, and model weights — all of which must be versioned and managed together to guarantee reproducibility.
 
   Key CM concerns in [[MLOps]]:
-  - **[[Data Versioning]]**: Dataset snapshots are configuration artefacts. DVC (Data Version Control) integrates with Git to version datasets and model artefacts alongside code, using content-addressing (similar to Git's object model) to store large binaries efficiently in cloud storage while tracking their identity in git.
-  - **Experiment configuration management**: Hyperparameter configurations, data preprocessing steps, random seeds, and train/validation/test split definitions are all CIs that must be version-controlled and linked to the model artefact they produced. MLflow, Weights & Biases, and Neptune provide experiment tracking — the ML equivalent of a CM status accounting system.
-  - **Model serving configuration**: The configuration of model serving endpoints (memory limits, replica counts, routing weights for A/B tests, canary deployments) is IaC that should be version-controlled and deployed through GitOps pipelines alongside the model artefact itself.
-  - **Prompt and agent configuration**: For systems built on [[Large Language Models]], the prompt templates, retrieval index configurations, agent tool definitions, and safety filter configurations are CIs that determine system behaviour as much as the model weights themselves. Prompt version control is an emerging practice (tools: LangChain, PromptLayer, Langfuse) but lacks the maturity of infrastructure IaC.
-  - **Feature pipeline configuration**: The transformation logic in [[Feature Store]] definitions must be version-controlled and match between training and serving to prevent training-serving skew — one of the most common causes of silent model degradation in production.
+
+- **[[Data Versioning]]**: Dataset snapshots are configuration artefacts. DVC (Data Version Control) integrates with Git to version datasets and model artefacts alongside code, using content-addressing (similar to Git's object model) to store large binaries efficiently in cloud storage while tracking their identity in git.
+- **Experiment configuration management**: Hyperparameter configurations, data preprocessing steps, random seeds, and train/validation/test split definitions are all CIs that must be version-controlled and linked to the model artefact they produced. MLflow, Weights & Biases, and Neptune provide experiment tracking — the ML equivalent of a CM status accounting system.
+- **Model serving configuration**: The configuration of model serving endpoints (memory limits, replica counts, routing weights for A/B tests, canary deployments) is IaC that should be version-controlled and deployed through GitOps pipelines alongside the model artefact itself.
+- **Prompt and agent configuration**: For systems built on [[Large Language Models]], the prompt templates, retrieval index configurations, agent tool definitions, and safety filter configurations are CIs that determine system behaviour as much as the model weights themselves. Prompt version control is an emerging practice (tools: LangChain, PromptLayer, Langfuse) but lacks the maturity of infrastructure IaC.
+- **Feature pipeline configuration**: The transformation logic in [[Feature Store]] definitions must be version-controlled and match between training and serving to prevent training-serving skew — one of the most common causes of silent model degradation in production.
 
   The DORA research programme finds that organisations with high-performing [[DevOps]] practices — including strong configuration management — deploy ML models to production significantly faster and with lower rollback rates than low performers, confirming that general-purpose CM tooling creates value in ML contexts as well as conventional software.
 
   ## Key Terminology Glossary
 
-  - **Configuration Item (CI)**: Any discrete element of a system that is separately identified, versioned, and controlled by the CM process — a source file, an environment specification, a hardware component, a document.
-  - **Baseline**: An approved, formally reviewed snapshot of a CI or set of CIs at a particular point in the development or operation lifecycle; the reference against which subsequent changes are tracked.
-  - **CMDB (Configuration Management Database)**: An authoritative database storing CIs and their relationships, maintained by ITSM platforms in traditional IT and by git repositories in DevOps/cloud-native practice.
-  - **Idempotency**: The property that applying a configuration definition any number of times yields the same result as applying it once; essential for safe automation.
-  - **Drift**: The divergence of actual system state from the declared desired state, caused by manual changes, partial failure, or external mutations.
-  - **Desired State Configuration (DSC)**: A CM paradigm where the tool is told what the system should look like, not how to get there; the tool computes and applies the necessary changes.
-  - **GitOps**: A CM operational pattern where a git repository is the single source of truth for desired state, and automated operators continuously reconcile live state to the repository.
-  - **Immutable Infrastructure**: An approach where running systems are never modified in place; all changes produce a new versioned image that replaces the old one.
-  - **Policy as Code**: The expression of compliance and security rules in machine-readable definitions that are evaluated automatically by CM tooling, preventing non-compliant configurations from being applied.
-  - **Configuration Audit**: A formal review verifying that the actual state of a system matches the approved baseline; functional configuration audits verify requirements are met, physical configuration audits verify the build record matches the product baseline.
-  - **ECP (Engineering Change Proposal)**: In systems engineering CM, the formal document proposing a change to a baseline CI, requiring approval before implementation.
-  - **SLSA**: Supply Chain Levels for Software Artefacts; a framework for asserting and verifying the provenance and integrity of build artefacts throughout the software supply chain.
-  - **HCL (HashiCorp Configuration Language)**: The declarative language used by [[Terraform]] and [[OpenTofu]] to define infrastructure configurations; human-readable, JSON-compatible.
-  - **Convergence**: The property of a CM tool that repeatedly applies a configuration definition until the actual system state matches the desired state, regardless of the current starting state.
+- **Configuration Item (CI)**: Any discrete element of a system that is separately identified, versioned, and controlled by the CM process — a source file, an environment specification, a hardware component, a document.
+- **Baseline**: An approved, formally reviewed snapshot of a CI or set of CIs at a particular point in the development or operation lifecycle; the reference against which subsequent changes are tracked.
+- **CMDB (Configuration Management Database)**: An authoritative database storing CIs and their relationships, maintained by ITSM platforms in traditional IT and by git repositories in DevOps/cloud-native practice.
+- **Idempotency**: The property that applying a configuration definition any number of times yields the same result as applying it once; essential for safe automation.
+- **Drift**: The divergence of actual system state from the declared desired state, caused by manual changes, partial failure, or external mutations.
+- **Desired State Configuration (DSC)**: A CM paradigm where the tool is told what the system should look like, not how to get there; the tool computes and applies the necessary changes.
+- **GitOps**: A CM operational pattern where a git repository is the single source of truth for desired state, and automated operators continuously reconcile live state to the repository.
+- **Immutable Infrastructure**: An approach where running systems are never modified in place; all changes produce a new versioned image that replaces the old one.
+- **Policy as Code**: The expression of compliance and security rules in machine-readable definitions that are evaluated automatically by CM tooling, preventing non-compliant configurations from being applied.
+- **Configuration Audit**: A formal review verifying that the actual state of a system matches the approved baseline; functional configuration audits verify requirements are met, physical configuration audits verify the build record matches the product baseline.
+- **ECP (Engineering Change Proposal)**: In systems engineering CM, the formal document proposing a change to a baseline CI, requiring approval before implementation.
+- **SLSA**: Supply Chain Levels for Software Artefacts; a framework for asserting and verifying the provenance and integrity of build artefacts throughout the software supply chain.
+- **HCL (HashiCorp Configuration Language)**: The declarative language used by [[Terraform]] and [[OpenTofu]] to define infrastructure configurations; human-readable, JSON-compatible.
+- **Convergence**: The property of a CM tool that repeatedly applies a configuration definition until the actual system state matches the desired state, regardless of the current starting state.
 
   ## Operational Patterns and Advanced Configurations
 
@@ -305,9 +314,8 @@ Configuration management is the engineering discipline of systematically establi
 
   A foundational design choice in any CM tool is whether it operates declaratively or imperatively:
 
-  - **Declarative tools** ([[Terraform]], Puppet, [[Ansible]] in desired-state mode, Kubernetes manifests): The operator specifies what the system should look like, and the tool computes and applies whatever changes are necessary to reach that state from the current state. The operator does not need to know the current state; the tool discovers it and calculates the diff. Declarative tools naturally implement [[Idempotency]]: applying the same definition twice produces the same result because the second application has no diff to apply.
-
-  - **Imperative tools** (Bash scripts, AWS CLI command sequences, [[Ansible]] in procedural mode): The operator specifies the sequence of actions to take. These require the operator to know (or assume) the current state. They are not inherently idempotent: running a sequence of `apt install`, `systemctl enable`, and `mv` commands twice may produce errors if the first run already made those changes.
+- **Declarative tools** ([[Terraform]], Puppet, [[Ansible]] in desired-state mode, Kubernetes manifests): The operator specifies what the system should look like, and the tool computes and applies whatever changes are necessary to reach that state from the current state. The operator does not need to know the current state; the tool discovers it and calculates the diff. Declarative tools naturally implement [[Idempotency]]: applying the same definition twice produces the same result because the second application has no diff to apply.
+- **Imperative tools** (Bash scripts, AWS CLI command sequences, [[Ansible]] in procedural mode): The operator specifies the sequence of actions to take. These require the operator to know (or assume) the current state. They are not inherently idempotent: running a sequence of `apt install`, `systemctl enable`, and `mv` commands twice may produce errors if the first run already made those changes.
 
   The industry has largely converged on declarative tools for infrastructure provisioning, because the desired-state model is far more composable, testable, and maintainable at scale. However, imperative scripts remain common for ephemeral tasks (data migrations, one-off operations) and for cases where the ordering of operations matters in ways that declarative engines cannot easily express.
 
@@ -315,12 +323,12 @@ Configuration management is the engineering discipline of systematically establi
 
   A mature CM practice applies software testing disciplines to configuration definitions:
 
-  - **Linting**: Static analysis of IaC files for syntax errors and common mistakes. `terraform validate` checks HCL syntax; `ansible-lint` checks Ansible playbooks for best-practice violations; `yamllint` checks Kubernetes manifests.
-  - **Unit testing**: Testing individual Terraform modules or Ansible roles in isolation with mock inputs. Terratest (Go) and `pytest` with the `pytest-ansible` plugin enable unit-level IaC testing.
-  - **Integration testing**: Provisioning a real (typically ephemeral) environment in a test account and running [[Automated Testing]] against the provisioned resources. Kitchen-Terraform, Molecule (for Ansible roles), and cloud-provider sandbox accounts enable this.
-  - **Policy testing**: Running Checkov, Terrascan, or OPA evaluations against IaC definitions as a CI gate, ensuring that no non-compliant configuration can be committed to the main branch.
-  - **Contract testing**: In [[Microservices]] environments, testing that the configuration of one service is compatible with the API contracts expected by dependent services.
-  - **Drift testing**: Running CM tools in dry-run / check mode on production systems on a schedule, comparing reported drift against a zero-drift baseline. Any detected drift is treated as a CI failure and triggers an alert.
+- **Linting**: Static analysis of IaC files for syntax errors and common mistakes. `terraform validate` checks HCL syntax; `ansible-lint` checks Ansible playbooks for best-practice violations; `yamllint` checks Kubernetes manifests.
+- **Unit testing**: Testing individual Terraform modules or Ansible roles in isolation with mock inputs. Terratest (Go) and `pytest` with the `pytest-ansible` plugin enable unit-level IaC testing.
+- **Integration testing**: Provisioning a real (typically ephemeral) environment in a test account and running [[Automated Testing]] against the provisioned resources. Kitchen-Terraform, Molecule (for Ansible roles), and cloud-provider sandbox accounts enable this.
+- **Policy testing**: Running Checkov, Terrascan, or OPA evaluations against IaC definitions as a CI gate, ensuring that no non-compliant configuration can be committed to the main branch.
+- **Contract testing**: In [[Microservices]] environments, testing that the configuration of one service is compatible with the API contracts expected by dependent services.
+- **Drift testing**: Running CM tools in dry-run / check mode on production systems on a schedule, comparing reported drift against a zero-drift baseline. Any detected drift is treated as a CI failure and triggers an alert.
 
   The DORA research programme (State of DevOps 2023) found that elite-performing DevOps organisations — those in the top quartile on all four DORA metrics — have significantly higher rates of IaC testing, configuration change review, and automated drift remediation than low performers, directly linking CM testing maturity to delivery performance.
 
@@ -329,10 +337,11 @@ Configuration management is the engineering discipline of systematically establi
   Secrets management is a specialised branch of configuration management with heightened security requirements. Credentials (API keys, database passwords, TLS certificates, SSH private keys) are configuration items, but they must not be stored in plaintext in [[Version Control]] — the catastrophic failure mode of accidental credential commit is one of the most common causes of security breaches.
 
   The canonical patterns for secrets CM:
-  - **External secrets stores**: [[HashiCorp Vault]], AWS Secrets Manager, Azure Key Vault, GCP Secret Manager. Secrets are stored and accessed via API at runtime; IaC references the secret's path rather than its value; applications authenticate to the secrets store using workload identity (AWS IAM role, GCP Workload Identity).
-  - **Sealed Secrets ([[Kubernetes]])**: A Kubernetes-native pattern (Bitnami Sealed Secrets) that encrypts secrets with a cluster-specific public key, allowing the encrypted secret to be committed to git; only the cluster's controller can decrypt it.
-  - **External Secrets Operator (ESO)**: An open-source [[Kubernetes]] operator that reads from external secrets stores (Vault, AWS Secrets Manager, etc.) and synchronises values into Kubernetes Secrets at runtime, with automatic rotation.
-  - **SOPS (Secrets OPerationS)**: A CLI tool that encrypts specific values within YAML/JSON files using AWS KMS, GCP KMS, or PGP, allowing secret-containing configuration files to be committed to git in encrypted form; integrates natively with [[GitOps]] workflows using [[Argo CD]] or [[Flux CD]].
+
+- **External secrets stores**: [[HashiCorp Vault]], AWS Secrets Manager, Azure Key Vault, GCP Secret Manager. Secrets are stored and accessed via API at runtime; IaC references the secret's path rather than its value; applications authenticate to the secrets store using workload identity (AWS IAM role, GCP Workload Identity).
+- **Sealed Secrets ([[Kubernetes]])**: A Kubernetes-native pattern (Bitnami Sealed Secrets) that encrypts secrets with a cluster-specific public key, allowing the encrypted secret to be committed to git; only the cluster's controller can decrypt it.
+- **External Secrets Operator (ESO)**: An open-source [[Kubernetes]] operator that reads from external secrets stores (Vault, AWS Secrets Manager, etc.) and synchronises values into Kubernetes Secrets at runtime, with automatic rotation.
+- **SOPS (Secrets OPerationS)**: A CLI tool that encrypts specific values within YAML/JSON files using AWS KMS, GCP KMS, or PGP, allowing secret-containing configuration files to be committed to git in encrypted form; integrates natively with [[GitOps]] workflows using [[Argo CD]] or [[Flux CD]].
 
   The intersection of secrets management and configuration management is a key concern for [[DevSecOps]]: the secrets CM process must be subject to the same change control, [[Audit|audit]], and rotation policies as infrastructure configuration, but with additional access control and encryption requirements. [[Supply Chain Security]] frameworks ([[SLSA]], [[Sigstore]]) extend this to the entire software supply chain, verifying the provenance of every artefact from source commit to deployed workload.
 
@@ -350,11 +359,11 @@ Configuration management is the engineering discipline of systematically establi
 
   IEC 62304:2006+AMD1:2015 (*Medical Device Software — Software Life Cycle Processes*) is the mandatory standard for medical device software in the UK, EU (under MDR 2017/745), and US (FDA). Section 8 of IEC 62304 specifies software configuration management requirements for all medical device software, regardless of safety class. Requirements include:
 
-  - Identification and control of software configuration items (SCIs)
-  - Version control of all SCIs with controlled check-in/check-out procedures
-  - Change control procedures that require traceability from change request to the specific SCIs modified
-  - Maintaining a build record that allows any released software version to be exactly reproduced
-  - Problem resolution procedures that link discovered defects back to the affected SCIs
+- Identification and control of software configuration items (SCIs)
+- Version control of all SCIs with controlled check-in/check-out procedures
+- Change control procedures that require traceability from change request to the specific SCIs modified
+- Maintaining a build record that allows any released software version to be exactly reproduced
+- Problem resolution procedures that link discovered defects back to the affected SCIs
 
   The NHS Digital's technology standards require that clinical software supplied to NHS Trusts complies with IEC 62304, making this standard the primary configuration management framework for healthcare technology in England. The MedTech ecosystem in the UK — centred on Cambridge (Cambridge Medical Robotics, Brainomix), London (Mindmaze, Skin Analytics), and the Northern health data clusters (Leeds/Bradford/Manchester's Connected Yorkshire programme) — operates under these standards.
 
@@ -375,9 +384,10 @@ Configuration management is the engineering discipline of systematically establi
   ### Version Vectors and Merge Semantics
 
   Git's object model is founded on a directed acyclic graph (DAG) of commit objects, where each commit is a cryptographic hash of its content and its parents' hashes. This Merkle DAG structure provides:
-  - **Content addressing**: Any commit, tree, or blob is uniquely identified by its SHA-256 hash, making content-based identity the basis of the version control system.
-  - **Tamper detection**: Any modification to a committed object changes its hash, invalidating all parent commits. The Git history is cryptographically immutable.
-  - **Three-way merge**: When two branches diverge from a common ancestor, Git computes the three-way merge by: identifying the merge base (the most recent common ancestor); computing the diff from the base to each branch head; applying both diffs to the base. Conflicts occur only where the two branches made overlapping changes to the same lines.
+
+- **Content addressing**: Any commit, tree, or blob is uniquely identified by its SHA-256 hash, making content-based identity the basis of the version control system.
+- **Tamper detection**: Any modification to a committed object changes its hash, invalidating all parent commits. The Git history is cryptographically immutable.
+- **Three-way merge**: When two branches diverge from a common ancestor, Git computes the three-way merge by: identifying the merge base (the most recent common ancestor); computing the diff from the base to each branch head; applying both diffs to the base. Conflicts occur only where the two branches made overlapping changes to the same lines.
 
   The formal theory of three-way merges was studied by Khanna, Kunal, and Pierce (2007), who proved that three-way merge is the optimal strategy for reconciling two independently edited versions of a file against their common ancestor. This result underpins the correctness of Git's merge algorithm.
 
@@ -393,14 +403,14 @@ Configuration management is the engineering discipline of systematically establi
 
   ## Quantified Adoption and Market Data
 
-  - The IaC market was valued at $1.74 billion in 2024 and is projected to reach $12.86 billion by 2032 at a CAGR of approximately 28%.
-  - Over 80% of enterprise organisations report using IaC as of 2025.
-  - Immutable infrastructure approaches held over 60% market share in 2024, reflecting the near-universal adoption of containerised deployments.
-  - [[Ansible]] is the most widely adopted CM tool for configuration management (as distinct from provisioning), with over 20,000 community-contributed roles and collections as of 2025.
-  - [[Terraform]] is the most widely adopted provisioning tool, though OpenTofu claims approximately 20% of new project starts in 2025.
-  - CNCF surveys (2024) show Argo CD adoption in over 70% of Kubernetes-using organisations.
-  - The DORA State of DevOps 2023 reports that elite DevOps performers have a 127x higher deployment frequency than low performers, with strong version control and CM practices being among the strongest predictors of elite status.
-  - In UK financial services, the FCA's operational resilience requirements (PS21/3, effective March 2022, strengthened 2025) require all firms to map and test important business services, which in practice requires documented configuration management of the supporting IT infrastructure. Estimated compliance programme spend at major UK banks: £50–100M+ per firm.
+- The IaC market was valued at $1.74 billion in 2024 and is projected to reach $12.86 billion by 2032 at a CAGR of approximately 28%.
+- Over 80% of enterprise organisations report using IaC as of 2025.
+- Immutable infrastructure approaches held over 60% market share in 2024, reflecting the near-universal adoption of containerised deployments.
+- [[Ansible]] is the most widely adopted CM tool for configuration management (as distinct from provisioning), with over 20,000 community-contributed roles and collections as of 2025.
+- [[Terraform]] is the most widely adopted provisioning tool, though OpenTofu claims approximately 20% of new project starts in 2025.
+- CNCF surveys (2024) show Argo CD adoption in over 70% of Kubernetes-using organisations.
+- The DORA State of DevOps 2023 reports that elite DevOps performers have a 127x higher deployment frequency than low performers, with strong version control and CM practices being among the strongest predictors of elite status.
+- In UK financial services, the FCA's operational resilience requirements (PS21/3, effective March 2022, strengthened 2025) require all firms to map and test important business services, which in practice requires documented configuration management of the supporting IT infrastructure. Estimated compliance programme spend at major UK banks: £50–100M+ per firm.
 
   ## Research and Literature
 
@@ -432,5 +442,5 @@ Configuration management is the engineering discipline of systematically establi
   26. NuCamp. (2026). Infrastructure as Code in 2026: Terraform, Ansible, and CloudFormation explained. https://www.nucamp.co/blog/infrastructure-as-code-in-2026-terraform-ansible-and-cloudformation-explained
   27. StackSpectra. (2025). Infrastructure as Code explained: Terraform vs Ansible vs Pulumi. https://stackspectra.com/infrastructure-as-code-explained-terraform-vs-ansible-vs-pulumi-devops-guide/
 
-- ### Provenance
+### Provenance
 

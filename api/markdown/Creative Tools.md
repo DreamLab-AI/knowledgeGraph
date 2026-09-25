@@ -1,174 +1,188 @@
-
 Creative Tools are AI-powered and digitally-augmented software applications that assist, augment, or automate human creative processes across modalities including image generation, music composition, video synthesis, 3D asset creation, and long-form text authoring. They typically expose foundation models—particularly diffusion models and large language models—through interactive interfaces or programmable API endpoints, enabling both professionals and non-expert users to produce high-quality creative outputs. Their role is dual: serving as productivity accelerators for practitioners and as accessibility bridges lowering barriers to creative expression. Provenance attribution, intellectual property frameworks, and content authentication standards such as C2PA are active governance concerns around AI-generated content produced by these tools.
 
-- ### Semantic Classification
+### Semantic Classification
 
-- ### Content
-  ## Compositional Relationships (Components)
-  ```
-  SubClassOf(ai:CreativeTools
-    ObjectSomeValuesFrom(ai:hasPart ai:InferenceInterface))
-  SubClassOf(ai:CreativeTools
-    ObjectSomeValuesFrom(ai:hasPart ai:PromptEngineeringLayer))
-  SubClassOf(ai:CreativeTools
-    ObjectSomeValuesFrom(ai:hasPart ai:ConditioningAndControlMechanism))
-  SubClassOf(ai:CreativeTools
-    ObjectSomeValuesFrom(ai:hasPart ai:OutputPipeline))
-  SubClassOf(ai:CreativeTools
-    ObjectSomeValuesFrom(ai:hasPart ai:AssetManagementSystem))
-  SubClassOf(ai:CreativeTools
-    ObjectSomeValuesFrom(ai:hasPart ai:FineTuningAdapter))
-  SubClassOf(ai:CreativeTools
-    ObjectSomeValuesFrom(ai:hasPart ai:ContentProvenanceLayer))
-  ```
-  ## Dependency Relationships
-  ```
-  SubClassOf(ai:CreativeTools
-    ObjectSomeValuesFrom(ai:requires ai:FoundationModel))
-  SubClassOf(ai:CreativeTools
-    ObjectSomeValuesFrom(ai:requires ai:GPUCompute))
-  SubClassOf(ai:CreativeTools
-    ObjectSomeValuesFrom(ai:dependsOn ai:TrainingData))
-  SubClassOf(ai:CreativeTools
-    ObjectSomeValuesFrom(ai:dependsOn ai:APIEndpoint))
-  SubClassOf(ai:CreativeTools
-    ObjectSomeValuesFrom(ai:dependsOn ai:ReinforcementLearningFromHumanFeedback))
-  ```
-  ## Capability Relationships
-  ```
-  SubClassOf(ai:CreativeTools
-    ObjectSomeValuesFrom(ai:enables ai:ImageGeneration))
-  SubClassOf(ai:CreativeTools
-    ObjectSomeValuesFrom(ai:enables ai:VideoSynthesis))
-  SubClassOf(ai:CreativeTools
-    ObjectSomeValuesFrom(ai:enables ai:MusicGeneration))
-  SubClassOf(ai:CreativeTools
-    ObjectSomeValuesFrom(ai:enables ai:ThreeDAssetCreation))
-  SubClassOf(ai:CreativeTools
-    ObjectSomeValuesFrom(ai:enables ai:ContentCreation))
-  SubClassOf(ai:CreativeTools
-    ObjectSomeValuesFrom(ai:supports ai:HumanAICollaboration))
-  SubClassOf(ai:CreativeTools
-    ObjectSomeValuesFrom(ai:supports ai:CreativeEconomy))
-  ```
-  ## Implementation Relationships
-  ```
-  SubClassOf(ai:CreativeTools
-    ObjectSomeValuesFrom(ai:uses ai:DiffusionModel))
-  SubClassOf(ai:CreativeTools
-    ObjectSomeValuesFrom(ai:uses ai:LargeLanguageModel))
-  SubClassOf(ai:CreativeTools
-    ObjectSomeValuesFrom(ai:uses ai:MultimodalModel))
-  SubClassOf(ai:CreativeTools
-    ObjectSomeValuesFrom(ai:uses ai:PromptEngineering))
-  SubClassOf(ai:CreativeTools
-    ObjectSomeValuesFrom(ai:implements ai:ContentProvenance))
-  SubClassOf(ai:CreativeTools
-    ObjectSomeValuesFrom(ai:implements ai:C2PAStandard))
-  SubClassOf(ai:CreativeTools
-    ObjectSomeValuesFrom(ai:implements ai:RetrievalAugmentedGeneration))
-  ```
-  ## Reduction Relationships
-  ```
-  SubClassOf(ai:CreativeTools
-    ObjectSomeValuesFrom(ai:reducesTo ai:GenerativeAIApplication))
-  SubClassOf(ai:CreativeTools
-    ObjectSomeValuesFrom(ai:reducesTo ai:AIApplication))
-  ```
+### Content
 
-  ## About
-  Creative Tools constitute the application-layer instantiation of [[Generative AI]] and [[Foundation Model]] capabilities, bridging raw model inference to human-usable creative workflows. The field emerged from three concurrent technical breakthroughs: the maturation of [[Diffusion Model]] architectures (particularly latent diffusion, popularised by Stable Diffusion in 2022), the scaling of [[Large Language Model]]s into the instruction-following and stylistic-generation regime (GPT-4 in 2023, subsequent competitors), and advances in neural audio synthesis enabling real-time or near-real-time music and voice generation. These developments collapsed what had been specialist AI-research pipelines into accessible consumer and professional interfaces. The pace of this transition was striking: Stable Diffusion 1.4 attracted one million downloads in its first week of release in August 2022, reaching demographics spanning hobbyist artists, marketing professionals, and enterprise product teams within months. By 2024 the pattern had repeated across modalities—Suno's viral growth demonstrated equivalent demand for accessible AI music composition, and Runway's Gen-2 established video synthesis as a commercial-grade capability.
+## Compositional Relationships (Components)
+```
+SubClassOf(ai:CreativeTools
+  ObjectSomeValuesFrom(ai:hasPart ai:InferenceInterface))
+SubClassOf(ai:CreativeTools
+  ObjectSomeValuesFrom(ai:hasPart ai:PromptEngineeringLayer))
+SubClassOf(ai:CreativeTools
+  ObjectSomeValuesFrom(ai:hasPart ai:ConditioningAndControlMechanism))
+SubClassOf(ai:CreativeTools
+  ObjectSomeValuesFrom(ai:hasPart ai:OutputPipeline))
+SubClassOf(ai:CreativeTools
+  ObjectSomeValuesFrom(ai:hasPart ai:AssetManagementSystem))
+SubClassOf(ai:CreativeTools
+  ObjectSomeValuesFrom(ai:hasPart ai:FineTuningAdapter))
+SubClassOf(ai:CreativeTools
+  ObjectSomeValuesFrom(ai:hasPart ai:ContentProvenanceLayer))
+```
+## Dependency Relationships
+```
+SubClassOf(ai:CreativeTools
+  ObjectSomeValuesFrom(ai:requires ai:FoundationModel))
+SubClassOf(ai:CreativeTools
+  ObjectSomeValuesFrom(ai:requires ai:GPUCompute))
+SubClassOf(ai:CreativeTools
+  ObjectSomeValuesFrom(ai:dependsOn ai:TrainingData))
+SubClassOf(ai:CreativeTools
+  ObjectSomeValuesFrom(ai:dependsOn ai:APIEndpoint))
+SubClassOf(ai:CreativeTools
+  ObjectSomeValuesFrom(ai:dependsOn ai:ReinforcementLearningFromHumanFeedback))
+```
+## Capability Relationships
+```
+SubClassOf(ai:CreativeTools
+  ObjectSomeValuesFrom(ai:enables ai:ImageGeneration))
+SubClassOf(ai:CreativeTools
+  ObjectSomeValuesFrom(ai:enables ai:VideoSynthesis))
+SubClassOf(ai:CreativeTools
+  ObjectSomeValuesFrom(ai:enables ai:MusicGeneration))
+SubClassOf(ai:CreativeTools
+  ObjectSomeValuesFrom(ai:enables ai:ThreeDAssetCreation))
+SubClassOf(ai:CreativeTools
+  ObjectSomeValuesFrom(ai:enables ai:ContentCreation))
+SubClassOf(ai:CreativeTools
+  ObjectSomeValuesFrom(ai:supports ai:HumanAICollaboration))
+SubClassOf(ai:CreativeTools
+  ObjectSomeValuesFrom(ai:supports ai:CreativeEconomy))
+```
+## Implementation Relationships
+```
+SubClassOf(ai:CreativeTools
+  ObjectSomeValuesFrom(ai:uses ai:DiffusionModel))
+SubClassOf(ai:CreativeTools
+  ObjectSomeValuesFrom(ai:uses ai:LargeLanguageModel))
+SubClassOf(ai:CreativeTools
+  ObjectSomeValuesFrom(ai:uses ai:MultimodalModel))
+SubClassOf(ai:CreativeTools
+  ObjectSomeValuesFrom(ai:uses ai:PromptEngineering))
+SubClassOf(ai:CreativeTools
+  ObjectSomeValuesFrom(ai:implements ai:ContentProvenance))
+SubClassOf(ai:CreativeTools
+  ObjectSomeValuesFrom(ai:implements ai:C2PAStandard))
+SubClassOf(ai:CreativeTools
+  ObjectSomeValuesFrom(ai:implements ai:RetrievalAugmentedGeneration))
+```
+## Reduction Relationships
+```
+SubClassOf(ai:CreativeTools
+  ObjectSomeValuesFrom(ai:reducesTo ai:GenerativeAIApplication))
+SubClassOf(ai:CreativeTools
+  ObjectSomeValuesFrom(ai:reducesTo ai:AIApplication))
+```
 
-  The dominant architectural pattern in Creative Tools is a thin application shell wrapping one or more [[Foundation Model]]s, typically accessed via [[API Endpoint]]s. This shell provides: (1) user-facing affordances for natural language [[Prompt Engineering]], style selection, and iterative refinement; (2) conditioning and control mechanisms such as ControlNet spatial guidance, LoRA style adapters, and image-reference conditioning that steer generation toward user intent; (3) safety and content filtering layers aligned with platform policies and, increasingly, regulatory requirements; (4) output management including upscaling, format conversion, and [[Content Provenance]] watermarking via C2PA or SynthID. Enterprise platforms such as Adobe Firefly extend this pattern with team collaboration, brand kit enforcement, and compliance workflows that map AI-generated assets to organisational approval chains, while open-source stacks (ComfyUI, Automatic1111) expose low-level model primitives directly and support community plugin ecosystems of thousands of custom nodes and workflows. The tension between these two deployment modes—closed-platform safety with enterprise integrations versus open-source flexibility with community innovation—is a defining structural feature of the Creative Tools market.
+## About
+Creative Tools constitute the application-layer instantiation of [[Generative AI]] and [[Foundation Model]] capabilities, bridging raw model inference to human-usable creative workflows. The field emerged from three concurrent technical breakthroughs: the maturation of [[Diffusion Model]] architectures (particularly latent diffusion, popularised by Stable Diffusion in 2022), the scaling of [[Large Language Model]]s into the instruction-following and stylistic-generation regime (GPT-4 in 2023, subsequent competitors), and advances in neural audio synthesis enabling real-time or near-real-time music and voice generation. These developments collapsed what had been specialist AI-research pipelines into accessible consumer and professional interfaces. The pace of this transition was striking: Stable Diffusion 1.4 attracted one million downloads in its first week of release in August 2022, reaching demographics spanning hobbyist artists, marketing professionals, and enterprise product teams within months. By 2024 the pattern had repeated across modalities—Suno's viral growth demonstrated equivalent demand for accessible AI music composition, and Runway's Gen-2 established video synthesis as a commercial-grade capability.
 
-  The economic and social implications of Creative Tools are profound and contested. They have materially altered labour demand in visual arts, copywriting, music production, motion-graphics, and game-asset creation whilst creating new professional roles (AI art director, prompt engineer, synthetic-media producer, AI creative director). Labour economists estimate that visual artists face 15-20% displacement in certain commodity work categories (stock photography, simple illustration, templated marketing imagery) while simultaneously seeing demand increases for AI-direction and post-processing specialisms. Training-data licensing remains the single most contentious governance issue: major litigation (Getty Images v Stability AI, class-action suits against Midjourney and DeviantArt, music-industry suits against AI music companies) and legislative activity (UK Copyright and AI Report 2026, EU AI Act training-data provisions) are reshaping how models may lawfully be trained and deployed. The [[C2PA]] provenance standard, supported by Adobe, Microsoft, Google, OpenAI, Sony, and others, is emerging as the technical infrastructure for authenticating AI-generated media, though adoption by consumers and downstream platforms remains nascent relative to the sheer volume of AI-generated content in circulation.
+The dominant architectural pattern in Creative Tools is a thin application shell wrapping one or more [[Foundation Model]]s, typically accessed via [[API Endpoint]]s. This shell provides: (1) user-facing affordances for natural language [[Prompt Engineering]], style selection, and iterative refinement; (2) conditioning and control mechanisms such as ControlNet spatial guidance, LoRA style adapters, and image-reference conditioning that steer generation toward user intent; (3) safety and content filtering layers aligned with platform policies and, increasingly, regulatory requirements; (4) output management including upscaling, format conversion, and [[Content Provenance]] watermarking via C2PA or SynthID. Enterprise platforms such as Adobe Firefly extend this pattern with team collaboration, brand kit enforcement, and compliance workflows that map AI-generated assets to organisational approval chains, while open-source stacks (ComfyUI, Automatic1111) expose low-level model primitives directly and support community plugin ecosystems of thousands of custom nodes and workflows. The tension between these two deployment modes—closed-platform safety with enterprise integrations versus open-source flexibility with community innovation—is a defining structural feature of the Creative Tools market.
 
-  The relationship between Creative Tools and [[Human-AI Collaboration]] is increasingly central to creative practice theory. Research from MIT's Media Lab and Stanford HCI Group has examined how the introduction of generative tools changes the phenomenology of creative work—shifting cognitive effort from execution (rendering, compositing, notation) toward specification, curation, and intent articulation. This represents a structural change in the creative skill premium: technical execution skill depreciates while conceptual and aesthetic judgment skill appreciates, with significant implications for creative education curricula worldwide.
+The economic and social implications of Creative Tools are profound and contested. They have materially altered labour demand in visual arts, copywriting, music production, motion-graphics, and game-asset creation whilst creating new professional roles (AI art director, prompt engineer, synthetic-media producer, AI creative director). Labour economists estimate that visual artists face 15-20% displacement in certain commodity work categories (stock photography, simple illustration, templated marketing imagery) while simultaneously seeing demand increases for AI-direction and post-processing specialisms. Training-data licensing remains the single most contentious governance issue: major litigation (Getty Images v Stability AI, class-action suits against Midjourney and DeviantArt, music-industry suits against AI music companies) and legislative activity (UK Copyright and AI Report 2026, EU AI Act training-data provisions) are reshaping how models may lawfully be trained and deployed. The [[C2PA]] provenance standard, supported by Adobe, Microsoft, Google, OpenAI, Sony, and others, is emerging as the technical infrastructure for authenticating AI-generated media, though adoption by consumers and downstream platforms remains nascent relative to the sheer volume of AI-generated content in circulation.
 
-  ## Formal Analysis
+The relationship between Creative Tools and [[Human-AI Collaboration]] is increasingly central to creative practice theory. Research from MIT's Media Lab and Stanford HCI Group has examined how the introduction of generative tools changes the phenomenology of creative work—shifting cognitive effort from execution (rendering, compositing, notation) toward specification, curation, and intent articulation. This represents a structural change in the creative skill premium: technical execution skill depreciates while conceptual and aesthetic judgment skill appreciates, with significant implications for creative education curricula worldwide.
 
-  Creative Tools can be formally characterised as a function class F: Intent × Style × Context → Output × Provenance, where Intent is expressed as natural language or structured parameters (the [[Prompt Engineering]] interface), Style is a learned distribution over aesthetic qualities (captured by fine-tuned model weights, LoRA adapters, or style-reference images), Context provides spatial, temporal, or semantic constraints (ControlNet, IP-Adapter, masking), Output is the generated artefact (image, audio, video, text, 3D mesh), and Provenance is a cryptographically anchored metadata record (C2PA manifest, SynthID watermark) binding the output to its generation parameters and model identity.
+## Formal Analysis
 
-  The generative process underlying image synthesis is the reverse of a learned forward diffusion process: given a data distribution q(x₀), the forward process defines q(xₜ|x₀) = N(xₜ; √ᾱₜ x₀, (1-ᾱₜ)I) where αₜ is a noise schedule. The denoising network pθ(xₜ₋₁|xₜ) is trained to invert this process. For text-conditioned generation, classifier-free guidance (CFG) computes the score estimate as ε̃ = εθ(xₜ, ∅) + w(εθ(xₜ, c) - εθ(xₜ, ∅)) where c is the text conditioning, w is the guidance scale, and ∅ is the null conditioning. Higher w values increase prompt adherence at the cost of diversity, a trade-off controlled by the end-user via the guidance scale slider in creative tool interfaces.
+Creative Tools can be formally characterised as a function class F: Intent × Style × Context → Output × Provenance, where Intent is expressed as natural language or structured parameters (the [[Prompt Engineering]] interface), Style is a learned distribution over aesthetic qualities (captured by fine-tuned model weights, LoRA adapters, or style-reference images), Context provides spatial, temporal, or semantic constraints (ControlNet, IP-Adapter, masking), Output is the generated artefact (image, audio, video, text, 3D mesh), and Provenance is a cryptographically anchored metadata record (C2PA manifest, SynthID watermark) binding the output to its generation parameters and model identity.
 
-  For text generation in creative writing tools, the autoregressive LLM generates token sequences by sampling from the conditional distribution P(xₙ|x₁,...,xₙ₋₁, c) where c is the system prompt and prior context. Temperature T scales the logit distribution before softmax, with T → 0 giving deterministic greedy decoding and T → ∞ giving uniform sampling. Top-p (nucleus) sampling restricts sampling to the smallest set of tokens whose cumulative probability exceeds p, providing a more semantically coherent truncation than top-k sampling alone.
+The generative process underlying image synthesis is the reverse of a learned forward diffusion process: given a data distribution q(x₀), the forward process defines q(xₜ|x₀) = N(xₜ; √ᾱₜ x₀, (1-ᾱₜ)I) where αₜ is a noise schedule. The denoising network pθ(xₜ₋₁|xₜ) is trained to invert this process. For text-conditioned generation, classifier-free guidance (CFG) computes the score estimate as ε̃ = εθ(xₜ, ∅) + w(εθ(xₜ, c) - εθ(xₜ, ∅)) where c is the text conditioning, w is the guidance scale, and ∅ is the null conditioning. Higher w values increase prompt adherence at the cost of diversity, a trade-off controlled by the end-user via the guidance scale slider in creative tool interfaces.
 
-  ## Components and Architecture
+For text generation in creative writing tools, the autoregressive LLM generates token sequences by sampling from the conditional distribution P(xₙ|x₁,...,xₙ₋₁, c) where c is the system prompt and prior context. Temperature T scales the logit distribution before softmax, with T → 0 giving deterministic greedy decoding and T → ∞ giving uniform sampling. Top-p (nucleus) sampling restricts sampling to the smallest set of tokens whose cumulative probability exceeds p, providing a more semantically coherent truncation than top-k sampling alone.
 
-  **Inference Interface**
-  - User-facing layer (web UI, desktop app, plugin embedded in Adobe Photoshop, Figma, Blender, or DaVinci Resolve) that abstracts model complexity behind domain-appropriate controls.
-  - Handles prompt construction, style presets, seed management, and guidance-scale parameters.
-  - Typically communicates with model backends over REST or gRPC [[API Endpoint]]s.
+## Components and Architecture
+
+**Inference Interface**
+
+- User-facing layer (web UI, desktop app, plugin embedded in Adobe Photoshop, Figma, Blender, or DaVinci Resolve) that abstracts model complexity behind domain-appropriate controls.
+- Handles prompt construction, style presets, seed management, and guidance-scale parameters.
+- Typically communicates with model backends over REST or gRPC [[API Endpoint]]s.
 
   **Foundation Model Backend**
-  - Core generative engine: [[Diffusion Model]] (image/video/audio), [[Large Language Model]] (text), or [[Multimodal Model]] (cross-modal synthesis).
-  - May be hosted proprietary (Midjourney, DALL·E, Suno) or via open-weight local inference (Stable Diffusion, Llama-based text tools).
-  - Requires [[GPU Compute]] at inference; [[Training Data]] and compute at model-training time.
+
+- Core generative engine: [[Diffusion Model]] (image/video/audio), [[Large Language Model]] (text), or [[Multimodal Model]] (cross-modal synthesis).
+- May be hosted proprietary (Midjourney, DALL·E, Suno) or via open-weight local inference (Stable Diffusion, Llama-based text tools).
+- Requires [[GPU Compute]] at inference; [[Training Data]] and compute at model-training time.
 
   **Conditioning and Control Mechanisms**
-  - ControlNet: spatial conditioning layers accepting edge maps, depth maps, pose skeletons, or segmentation masks to constrain image layout.
-  - LoRA (Low-Rank Adaptation): lightweight [[Fine-Tuning]] technique enabling style personalisation without full retraining; widely deployed for subject-specific or artistic-style adaptation.
-  - RLHF / RLAIF: [[Reinforcement Learning from Human Feedback]] and AI-feedback loops to align outputs with user aesthetic preferences and safety constraints.
-  - IP-Adapter and reference-image conditioning for structural or identity consistency.
+
+- ControlNet: spatial conditioning layers accepting edge maps, depth maps, pose skeletons, or segmentation masks to constrain image layout.
+- LoRA (Low-Rank Adaptation): lightweight [[Fine-Tuning]] technique enabling style personalisation without full retraining; widely deployed for subject-specific or artistic-style adaptation.
+- RLHF / RLAIF: [[Reinforcement Learning from Human Feedback]] and AI-feedback loops to align outputs with user aesthetic preferences and safety constraints.
+- IP-Adapter and reference-image conditioning for structural or identity consistency.
 
   **Prompt Engineering Layer**
-  - Structured or free-form natural language input pipeline.
-  - Includes negative prompts, CFG (classifier-free guidance) scale, seed control, and inpainting masks.
-  - Professional tools expose prompt templates and style embedding libraries.
+
+- Structured or free-form natural language input pipeline.
+- Includes negative prompts, CFG (classifier-free guidance) scale, seed control, and inpainting masks.
+- Professional tools expose prompt templates and style embedding libraries.
 
   **Output Pipeline**
-  - Post-processing: upscaling (Real-ESRGAN, ESRGAN), inpainting, outpainting, background removal.
-  - Export to target formats: PNG, SVG, MP4, WebM, GLB (3D), MIDI, WAV.
-  - [[Content Provenance]] tooling: C2PA manifest embedding (Adobe Content Credentials), SynthID imperceptible watermarking (Google), IMATAG.
+
+- Post-processing: upscaling (Real-ESRGAN, ESRGAN), inpainting, outpainting, background removal.
+- Export to target formats: PNG, SVG, MP4, WebM, GLB (3D), MIDI, WAV.
+- [[Content Provenance]] tooling: C2PA manifest embedding (Adobe Content Credentials), SynthID imperceptible watermarking (Google), IMATAG.
 
   **Asset Management**
-  - Version history, generation-metadata storage, gallery organisation.
-  - Team collaboration, brand-kit enforcement, and role-based access in enterprise platforms.
-  - API-driven programmatic asset retrieval for integration with DAM (digital asset management) systems.
+
+- Version history, generation-metadata storage, gallery organisation.
+- Team collaboration, brand-kit enforcement, and role-based access in enterprise platforms.
+- API-driven programmatic asset retrieval for integration with DAM (digital asset management) systems.
 
   **Multimodal Orchestration**
-  - Increasingly, tools chain specialist models (text → image → video, or image → 3D mesh), requiring workflow orchestration of multiple [[Multimodal Model]] components within a unified pipeline.
-  - Platforms such as Adobe Firefly (October 2025 release) integrate image, video, audio, and vector generation in a single studio interface.
+
+- Increasingly, tools chain specialist models (text → image → video, or image → 3D mesh), requiring workflow orchestration of multiple [[Multimodal Model]] components within a unified pipeline.
+- Platforms such as Adobe Firefly (October 2025 release) integrate image, video, audio, and vector generation in a single studio interface.
 
   ## Use Cases and Major Families
 
   **Image Generation and Manipulation**
-  - Text-to-image synthesis for concept art, marketing imagery, product visualisation, and illustration.
-  - Key tools: Midjourney (26.8% global market share, 2026), DALL·E 4 (OpenAI, 24.4%), Stable Diffusion (15.1%), Adobe Firefly Image Model 5 (photorealistic, commercially safe).
-  - Inpainting and outpainting for non-destructive editing of existing photographs and artwork.
-  - Scientific illustration generation, though accuracy and detail fidelity remain research challenges.
+
+- Text-to-image synthesis for concept art, marketing imagery, product visualisation, and illustration.
+- Key tools: Midjourney (26.8% global market share, 2026), DALL·E 4 (OpenAI, 24.4%), Stable Diffusion (15.1%), Adobe Firefly Image Model 5 (photorealistic, commercially safe).
+- Inpainting and outpainting for non-destructive editing of existing photographs and artwork.
+- Scientific illustration generation, though accuracy and detail fidelity remain research challenges.
 
   **Video Generation**
-  - Storyboard animation, B-roll synthesis, AI-assisted visual effects without full CGI pipelines.
-  - Key tools: Runway Gen-3, Sora (OpenAI), Pika 2.0, Kuaishou Kling 3.0 (4K/60fps, native audio, multi-shot).
-  - AI video ad spend projected at $9.1 billion globally in 2026 (~12% of all digital video advertising).
-  - 86% of ad buyers using or planning to use generative AI for video creative in 2026.
+
+- Storyboard animation, B-roll synthesis, AI-assisted visual effects without full CGI pipelines.
+- Key tools: Runway Gen-3, Sora (OpenAI), Pika 2.0, Kuaishou Kling 3.0 (4K/60fps, native audio, multi-shot).
+- AI video ad spend projected at $9.1 billion globally in 2026 (~12% of all digital video advertising).
+- 86% of ad buyers using or planning to use generative AI for video creative in 2026.
 
   **Music and Audio**
-  - AI composition assistants: Suno, Udio, Meta MusicGen, Google MusicFX.
-  - Adobe Firefly Generate Soundtrack (October 2025): licensed audio track generation with timeline editor.
-  - Genre-style transfer, harmonic variation suggestion, royalty-free music-bed generation.
-  - AI music market: $1.4 billion in 2025, up from $500 million in 2023.
-  - Independent musicians producing full music videos for under £40 using AI-generated visuals.
+
+- AI composition assistants: Suno, Udio, Meta MusicGen, Google MusicFX.
+- Adobe Firefly Generate Soundtrack (October 2025): licensed audio track generation with timeline editor.
+- Genre-style transfer, harmonic variation suggestion, royalty-free music-bed generation.
+- AI music market: $1.4 billion in 2025, up from $500 million in 2023.
+- Independent musicians producing full music videos for under £40 using AI-generated visuals.
 
   **3D Asset Creation**
-  - Textured mesh generation from text prompts (DreamFusion, Shap-E, Tripo3D).
-  - Pipeline integration with game engines (Unity, Unreal Engine 5) and [[Spatial Computing]] platforms.
-  - Accelerates [[Metaverse Content]] creation and [[Digital Twin]] population workflows.
+
+- Textured mesh generation from text prompts (DreamFusion, Shap-E, Tripo3D).
+- Pipeline integration with game engines (Unity, Unreal Engine 5) and [[Spatial Computing]] platforms.
+- Accelerates [[Metaverse Content]] creation and [[Digital Twin]] population workflows.
 
   **Long-Form Text Authoring**
-  - [[Large Language Model]]-powered co-authors for fiction, journalism, technical documentation, marketing copy.
-  - Tools: Claude, ChatGPT, Gemini Advanced, Jasper, Copy.ai.
-  - Structural editing, stylistic adaptation, localisation, and multi-language content repurposing.
+
+- [[Large Language Model]]-powered co-authors for fiction, journalism, technical documentation, marketing copy.
+- Tools: Claude, ChatGPT, Gemini Advanced, Jasper, Copy.ai.
+- Structural editing, stylistic adaptation, localisation, and multi-language content repurposing.
 
   **Code and Developer Tooling**
-  - Creative-tool plugin development (Photoshop AI filters, Blender generative scripts).
-  - AI-generated UI mockups and design system components (Figma AI, Galileo AI).
+
+- Creative-tool plugin development (Photoshop AI filters, Blender generative scripts).
+- AI-generated UI mockups and design system components (Figma AI, Galileo AI).
 
   **Education and Training**
-  - Interactive story generators, AI tutors with adaptive visual outputs.
-  - Synthetic training-data generation for downstream model training pipelines.
-  - Accessible creative education tools reducing barriers for learners without specialist software skills.
+
+- Interactive story generators, AI tutors with adaptive visual outputs.
+- Synthetic training-data generation for downstream model training pipelines.
+- Accessible creative education tools reducing barriers for learners without specialist software skills.
 
   ## Academic Context
 
@@ -223,27 +237,31 @@ Creative Tools are AI-powered and digitally-augmented software applications that
   The UK creative industries contribute over £100 billion annually to the economy and are a significant export earner, making the intersection of AI and creative practice a high-stakes policy domain. Key UK-specific developments include:
 
   **Policy and Regulation**
-  - The UK government published its Report on Copyright and Artificial Intelligence in March 2026 following extensive consultation under Section 137 of the Data (Use and Access) Act 2025. The government declined to legislate a broad training-data exception at this stage, opting instead to commission further research and establish a taskforce on AI labelling.
-  - The Creative Industries AI Adoption Plan (GOV.UK) identifies Creative Tools as a priority domain for productivity uplift, targeting game development, advertising production, and broadcasting post-production.
-  - The AI Safety Institute (AISI), based in London, is researching evaluation methodologies for generative content systems, including bias and harmful-content assessment frameworks.
+
+- The UK government published its Report on Copyright and Artificial Intelligence in March 2026 following extensive consultation under Section 137 of the Data (Use and Access) Act 2025. The government declined to legislate a broad training-data exception at this stage, opting instead to commission further research and establish a taskforce on AI labelling.
+- The Creative Industries AI Adoption Plan (GOV.UK) identifies Creative Tools as a priority domain for productivity uplift, targeting game development, advertising production, and broadcasting post-production.
+- The AI Safety Institute (AISI), based in London, is researching evaluation methodologies for generative content systems, including bias and harmful-content assessment frameworks.
 
   **Academic Presence**
-  - Royal College of Art (London): running programmes on AI-augmented design practice and publishing research on prompt aesthetics and creative agency.
-  - University College London (UCL): Centre for Digital Humanities conducting longitudinal studies on AI-mediated creativity and labour displacement in the creative sector.
-  - University of Edinburgh: Edinburgh Futures Institute researching algorithmic aesthetics and policy implications of AI creative tools.
-  - Goldsmiths, University of London: pioneering computational creativity research (Wiggins, Pearce et al.) with long-standing work predating the current diffusion-model wave.
-  - University of Cambridge: Music and Science group examining AI music-generation quality and listener perception.
+
+- Royal College of Art (London): running programmes on AI-augmented design practice and publishing research on prompt aesthetics and creative agency.
+- University College London (UCL): Centre for Digital Humanities conducting longitudinal studies on AI-mediated creativity and labour displacement in the creative sector.
+- University of Edinburgh: Edinburgh Futures Institute researching algorithmic aesthetics and policy implications of AI creative tools.
+- Goldsmiths, University of London: pioneering computational creativity research (Wiggins, Pearce et al.) with long-standing work predating the current diffusion-model wave.
+- University of Cambridge: Music and Science group examining AI music-generation quality and listener perception.
 
   **Industry**
-  - UK-based Creative Bloom and Hadean are applying generative 3D tools to game-world and [[Digital Twin]] population.
-  - Framestore and Double Negative (DNEG), two of the world's largest VFX houses based in London, are integrating AI video tools into production pipelines.
-  - Stability AI (originally UK-founded) remains influential in open-source image-model development despite corporate restructuring.
-  - BBC R&D has published research on responsible AI in broadcast, including C2PA provenance integration for news media.
+
+- UK-based Creative Bloom and Hadean are applying generative 3D tools to game-world and [[Digital Twin]] population.
+- Framestore and Double Negative (DNEG), two of the world's largest VFX houses based in London, are integrating AI video tools into production pipelines.
+- Stability AI (originally UK-founded) remains influential in open-source image-model development despite corporate restructuring.
+- BBC R&D has published research on responsible AI in broadcast, including C2PA provenance integration for news media.
 
   **Northern England**
-  - Sheffield's creative digital cluster (Showroom Workstation hub) hosts SMEs experimenting with AI tools for commercial design.
-  - Manchester's MediaCityUK (home to BBC, ITV, dock10 studios) is a testbed for AI-assisted broadcast production, with University of Salford research into AI audio production tools.
-  - Leeds Digital Festival showcases regional AI creative tool adoption across sectors.
+
+- Sheffield's creative digital cluster (Showroom Workstation hub) hosts SMEs experimenting with AI tools for commercial design.
+- Manchester's MediaCityUK (home to BBC, ITV, dock10 studios) is a testbed for AI-assisted broadcast production, with University of Salford research into AI audio production tools.
+- Leeds Digital Festival showcases regional AI creative tool adoption across sectors.
 
   ## Market Variants and Platform Taxonomy
 
@@ -251,20 +269,20 @@ Creative Tools are AI-powered and digitally-augmented software applications that
 
   **By Modality:**
 
-  - Image generation tools: Midjourney (web Discord-based interface, quality-focused, no API), DALL·E (OpenAI API, ChatGPT-integrated), Stable Diffusion (open-weight, local/API), Adobe Firefly Image Model 5 (enterprise, commercially safe), Ideogram (typography-focused), Flux.1 (Black Forest Labs, open-weight, fast).
-  - Video synthesis tools: Runway Gen-3 Alpha (professional VFX quality), Sora (OpenAI, API access via Sora API), Pika 2.0 (consumer/prosumer), Kling 3.0 (Kuaishou, 4K/60fps), Luma Dream Machine, Stable Video Diffusion (open-weight). The video modality is undergoing the fastest quality improvement cycle, with 2025-2026 models achieving genuine professional-grade output for constrained motion types.
-  - Audio and music generation: Suno v4 (text-to-song with vocals and instrumentation), Udio (high-fidelity audio, detailed control), Google MusicFX, Meta AudioCraft/MusicGen (open-source), Adobe Firefly Generate Soundtrack (licensed, professionally cleared), ElevenLabs (voice synthesis, most widely adopted voice AI), Resemble AI (custom voice cloning).
-  - 3D asset creation: Tripo3D (text-to-3D, fast), Meshy (3D mesh generation), Shap-E (OpenAI, open-source), DreamFusion (academic baseline), CSM (3D character animation), Luma Genie (3D scene generation). Integration with Blender, Unreal Engine 5, and Unity via plugins is the primary adoption pathway.
-  - Text and long-form: Claude (Anthropic), GPT-4o (OpenAI), Gemini Advanced (Google), Jasper (marketing-focused), Copy.ai (SME marketing), Grammarly (editorial AI), Sudowrite (fiction writing assistant).
-  - Code-assisted design: Figma AI (UI mockups from text), Galileo AI (design system generation), GitHub Copilot (code-adjacent creative assets), Cursor (AI-integrated development environment for creative applications).
+- Image generation tools: Midjourney (web Discord-based interface, quality-focused, no API), DALL·E (OpenAI API, ChatGPT-integrated), Stable Diffusion (open-weight, local/API), Adobe Firefly Image Model 5 (enterprise, commercially safe), Ideogram (typography-focused), Flux.1 (Black Forest Labs, open-weight, fast).
+- Video synthesis tools: Runway Gen-3 Alpha (professional VFX quality), Sora (OpenAI, API access via Sora API), Pika 2.0 (consumer/prosumer), Kling 3.0 (Kuaishou, 4K/60fps), Luma Dream Machine, Stable Video Diffusion (open-weight). The video modality is undergoing the fastest quality improvement cycle, with 2025-2026 models achieving genuine professional-grade output for constrained motion types.
+- Audio and music generation: Suno v4 (text-to-song with vocals and instrumentation), Udio (high-fidelity audio, detailed control), Google MusicFX, Meta AudioCraft/MusicGen (open-source), Adobe Firefly Generate Soundtrack (licensed, professionally cleared), ElevenLabs (voice synthesis, most widely adopted voice AI), Resemble AI (custom voice cloning).
+- 3D asset creation: Tripo3D (text-to-3D, fast), Meshy (3D mesh generation), Shap-E (OpenAI, open-source), DreamFusion (academic baseline), CSM (3D character animation), Luma Genie (3D scene generation). Integration with Blender, Unreal Engine 5, and Unity via plugins is the primary adoption pathway.
+- Text and long-form: Claude (Anthropic), GPT-4o (OpenAI), Gemini Advanced (Google), Jasper (marketing-focused), Copy.ai (SME marketing), Grammarly (editorial AI), Sudowrite (fiction writing assistant).
+- Code-assisted design: Figma AI (UI mockups from text), Galileo AI (design system generation), GitHub Copilot (code-adjacent creative assets), Cursor (AI-integrated development environment for creative applications).
 
   **By Deployment Model:**
 
-  - Cloud SaaS platforms (Midjourney, Adobe Firefly, Runway, Suno): high availability, commercially safe outputs, no local GPU required, usage-based pricing. Dominant for professional and enterprise users.
-  - API-first platforms (DALL·E API, Stability AI API, ElevenLabs API): programmatic access for developers building Creative Tool-powered applications, priced per generation unit.
-  - Open-weight local inference (Stable Diffusion, FLUX.1, AudioCraft, LLaMA): self-hosted on consumer or enterprise GPU hardware; no per-generation cost; maximum privacy and customisation; requires technical expertise.
-  - Embedded plugins (Adobe Firefly in Photoshop/Premiere, Figma AI, Canva AI, Blender AI add-ons): generative capabilities integrated into established creative software workflows, reducing context-switching friction for existing users of those platforms.
-  - Enterprise managed deployments (Azure AI Studio content generation, AWS Bedrock Titan Image Generator, GCP Imagen via Vertex AI): cloud-provider-hosted generative APIs with enterprise SLAs, IAM integration, private model hosting, and compliance documentation.
+- Cloud SaaS platforms (Midjourney, Adobe Firefly, Runway, Suno): high availability, commercially safe outputs, no local GPU required, usage-based pricing. Dominant for professional and enterprise users.
+- API-first platforms (DALL·E API, Stability AI API, ElevenLabs API): programmatic access for developers building Creative Tool-powered applications, priced per generation unit.
+- Open-weight local inference (Stable Diffusion, FLUX.1, AudioCraft, LLaMA): self-hosted on consumer or enterprise GPU hardware; no per-generation cost; maximum privacy and customisation; requires technical expertise.
+- Embedded plugins (Adobe Firefly in Photoshop/Premiere, Figma AI, Canva AI, Blender AI add-ons): generative capabilities integrated into established creative software workflows, reducing context-switching friction for existing users of those platforms.
+- Enterprise managed deployments (Azure AI Studio content generation, AWS Bedrock Titan Image Generator, GCP Imagen via Vertex AI): cloud-provider-hosted generative APIs with enterprise SLAs, IAM integration, private model hosting, and compliance documentation.
 
   **Emerging Hybrid Models:**
   Several 2025-2026 platforms combine elements: Adobe Firefly All-in-One Studio provides both cloud SaaS access and API programmatic access with enterprise compliance; ComfyUI is open-source local inference software that can consume remote API models as nodes, blending local and cloud execution within a single workflow graph. This hybridisation trend reflects the reality that professional creative workflows are heterogeneous: some generation tasks require cloud-scale compute (video synthesis), while others benefit from local execution for privacy or iteration speed (style exploration, variant generation).
@@ -357,21 +375,21 @@ Creative Tools are AI-powered and digitally-augmented software applications that
 
   ## Key Terminology
 
-  - **Latent Diffusion**: Diffusion process conducted in a compressed latent space rather than pixel space, dramatically reducing compute requirements while maintaining generation quality. The encoder maps image x₀ into latent z₀ = E(x₀), diffusion is applied in latent space, and the decoder reconstructs the output x̂₀ = D(ẑ₀). This reduces the spatial resolution of the diffusion trajectory by 8x per dimension, cutting computation by ~64x.
-  - **ControlNet**: Neural network architecture that adds spatial conditioning control to pre-trained text-to-image diffusion models using edge maps, depth maps, pose skeletons, or segmentation masks. The ControlNet trainable copy is connected to the original model via zero-initialised convolution layers (zero-conv), preventing the random initialisation from corrupting the pre-trained model during early training.
-  - **LoRA (Low-Rank Adaptation)**: Parameter-efficient [[Fine-Tuning]] technique that injects trainable low-rank matrices ΔW = AB (rank r << min(d_in, d_out)) into frozen model weights. For text-to-image models, LoRA adapters of rank 4-64 enable style personalisation using 10-100 training images in 30-120 minutes on a consumer GPU, producing adapter files of 2-150MB versus multi-GB full model weights.
-  - **CFG Scale (Classifier-Free Guidance)**: Hyperparameter w controlling the trade-off between prompt adherence and output diversity via ε̃ = εθ(xₜ, ∅) + w(εθ(xₜ, c) - εθ(xₜ, ∅)). Typical values: w=7 for balanced results; w=12-15 for high prompt fidelity; w=1-3 for creative exploration. Values above 15 often introduce saturation artefacts.
-  - **C2PA (Coalition for Content Provenance and Authenticity)**: Open technical standard at version 2.1 for attaching cryptographically signed provenance metadata to AI-generated media via JSON-based manifests bound to assets by hash. Supported by Adobe, Microsoft, Google, Sony, BBC, and OpenAI.
-  - **SynthID**: Google's imperceptible watermarking technology embedded in image, audio, and video content via a trained watermark network that modifies pixel values below human perceptual threshold while encoding a detectable signal. Survives resizing, JPEG compression, and format conversion at 95%+ detection rate.
-  - **FLUX.1**: Family of flow-matching-based image synthesis models developed by Black Forest Labs (2024), offering variants Schnell (fastest, 4-step inference), Dev (balanced), and Pro (highest quality). FLUX.1 Schnell runs in 1-4 seconds on consumer GPUs, enabling near-real-time creative iteration.
-  - **Flow Matching**: An alternative to score-based diffusion that learns a vector field transporting a simple base distribution (Gaussian) to the data distribution along linear ODE trajectories. Provides faster sampling (fewer inference steps) than DDPM at comparable quality; underpins FLUX.1 and Stable Diffusion 3.
-  - **Inpainting / Outpainting**: Localised image completion within a masked region (inpainting) or canvas extension beyond original boundaries (outpainting) using masked diffusion passes where unmasked regions are preserved via conditioning. Foundational to non-destructive professional editing workflows in Photoshop, Firefly, and Midjourney Vary Region.
-  - **IP-Adapter**: Decoupled cross-attention mechanism enabling image-prompt conditioning in diffusion models by projecting reference image features through a separately trained adapter into the UNet's cross-attention layers. Preserves identity (face, object, style) from a reference image without fine-tuning, enabling consistent character generation across prompts.
-  - **DDPM (Denoising Diffusion Probabilistic Model)**: Core mathematical framework for diffusion-based generation; defines the forward Markov chain q(x₁:T|x₀) = ∏ q(xₜ|xₜ₋₁) with Gaussian transition kernels, and the learned reverse process pθ(x₀:T) = p(xT) ∏ pθ(xₜ₋₁|xₜ) parameterised by a noise-prediction neural network εθ.
-  - **Text-to-Video**: Generative modality extending text-to-image principles across the temporal dimension to synthesise motion-coherent video sequences from natural language descriptions. Additional modelling challenges include temporal consistency (inter-frame coherence), motion quality (natural physics, camera motion), and computational cost (video tokens are orders of magnitude more numerous than image tokens at equivalent resolution).
-  - **Agentic Creative Pipeline**: A Creative Tool workflow in which an [[Agentic Workflow]] orchestrator decomposes a high-level creative brief into a sequence of generation and editing steps executed autonomously by chained tool calls (generate concept → refine → upscale → export), exemplified by Adobe Firefly's 2026 Creative Agent feature.
-  - **Foundation Model Fine-Tuning**: The process of adapting a pre-trained [[Foundation Model]] to a specific artistic domain, brand identity, or character by training on a curated target dataset. Techniques range from full fine-tuning (parameter-expensive, high quality) through LoRA (parameter-efficient, fast) to DreamBooth (subject-specific adaptation using 3-20 reference images with a class-prior regularisation term).
-  - **Negative Prompt**: A text input specifying visual elements, styles, or qualities to exclude from generated outputs; fed to the denoising network as a secondary conditioning signal with negated CFG contribution: the model is steered away from the negative condition whilst being steered toward the positive condition. Widely used to suppress common artefacts (extra limbs, blurry faces, watermarks) in image generation.
+- **Latent Diffusion**: Diffusion process conducted in a compressed latent space rather than pixel space, dramatically reducing compute requirements while maintaining generation quality. The encoder maps image x₀ into latent z₀ = E(x₀), diffusion is applied in latent space, and the decoder reconstructs the output x̂₀ = D(ẑ₀). This reduces the spatial resolution of the diffusion trajectory by 8x per dimension, cutting computation by ~64x.
+- **ControlNet**: Neural network architecture that adds spatial conditioning control to pre-trained text-to-image diffusion models using edge maps, depth maps, pose skeletons, or segmentation masks. The ControlNet trainable copy is connected to the original model via zero-initialised convolution layers (zero-conv), preventing the random initialisation from corrupting the pre-trained model during early training.
+- **LoRA (Low-Rank Adaptation)**: Parameter-efficient [[Fine-Tuning]] technique that injects trainable low-rank matrices ΔW = AB (rank r << min(d_in, d_out)) into frozen model weights. For text-to-image models, LoRA adapters of rank 4-64 enable style personalisation using 10-100 training images in 30-120 minutes on a consumer GPU, producing adapter files of 2-150MB versus multi-GB full model weights.
+- **CFG Scale (Classifier-Free Guidance)**: Hyperparameter w controlling the trade-off between prompt adherence and output diversity via ε̃ = εθ(xₜ, ∅) + w(εθ(xₜ, c) - εθ(xₜ, ∅)). Typical values: w=7 for balanced results; w=12-15 for high prompt fidelity; w=1-3 for creative exploration. Values above 15 often introduce saturation artefacts.
+- **C2PA (Coalition for Content Provenance and Authenticity)**: Open technical standard at version 2.1 for attaching cryptographically signed provenance metadata to AI-generated media via JSON-based manifests bound to assets by hash. Supported by Adobe, Microsoft, Google, Sony, BBC, and OpenAI.
+- **SynthID**: Google's imperceptible watermarking technology embedded in image, audio, and video content via a trained watermark network that modifies pixel values below human perceptual threshold while encoding a detectable signal. Survives resizing, JPEG compression, and format conversion at 95%+ detection rate.
+- **FLUX.1**: Family of flow-matching-based image synthesis models developed by Black Forest Labs (2024), offering variants Schnell (fastest, 4-step inference), Dev (balanced), and Pro (highest quality). FLUX.1 Schnell runs in 1-4 seconds on consumer GPUs, enabling near-real-time creative iteration.
+- **Flow Matching**: An alternative to score-based diffusion that learns a vector field transporting a simple base distribution (Gaussian) to the data distribution along linear ODE trajectories. Provides faster sampling (fewer inference steps) than DDPM at comparable quality; underpins FLUX.1 and Stable Diffusion 3.
+- **Inpainting / Outpainting**: Localised image completion within a masked region (inpainting) or canvas extension beyond original boundaries (outpainting) using masked diffusion passes where unmasked regions are preserved via conditioning. Foundational to non-destructive professional editing workflows in Photoshop, Firefly, and Midjourney Vary Region.
+- **IP-Adapter**: Decoupled cross-attention mechanism enabling image-prompt conditioning in diffusion models by projecting reference image features through a separately trained adapter into the UNet's cross-attention layers. Preserves identity (face, object, style) from a reference image without fine-tuning, enabling consistent character generation across prompts.
+- **DDPM (Denoising Diffusion Probabilistic Model)**: Core mathematical framework for diffusion-based generation; defines the forward Markov chain q(x₁:T|x₀) = ∏ q(xₜ|xₜ₋₁) with Gaussian transition kernels, and the learned reverse process pθ(x₀:T) = p(xT) ∏ pθ(xₜ₋₁|xₜ) parameterised by a noise-prediction neural network εθ.
+- **Text-to-Video**: Generative modality extending text-to-image principles across the temporal dimension to synthesise motion-coherent video sequences from natural language descriptions. Additional modelling challenges include temporal consistency (inter-frame coherence), motion quality (natural physics, camera motion), and computational cost (video tokens are orders of magnitude more numerous than image tokens at equivalent resolution).
+- **Agentic Creative Pipeline**: A Creative Tool workflow in which an [[Agentic Workflow]] orchestrator decomposes a high-level creative brief into a sequence of generation and editing steps executed autonomously by chained tool calls (generate concept → refine → upscale → export), exemplified by Adobe Firefly's 2026 Creative Agent feature.
+- **Foundation Model Fine-Tuning**: The process of adapting a pre-trained [[Foundation Model]] to a specific artistic domain, brand identity, or character by training on a curated target dataset. Techniques range from full fine-tuning (parameter-expensive, high quality) through LoRA (parameter-efficient, fast) to DreamBooth (subject-specific adaptation using 3-20 reference images with a class-prior regularisation term).
+- **Negative Prompt**: A text input specifying visual elements, styles, or qualities to exclude from generated outputs; fed to the denoising network as a secondary conditioning signal with negated CFG contribution: the model is steered away from the negative condition whilst being steered toward the positive condition. Widely used to suppress common artefacts (extra limbs, blurry faces, watermarks) in image generation.
 
   ## Relationship to the Broader AI Ecosystem
 
@@ -387,5 +405,5 @@ Creative Tools are AI-powered and digitally-augmented software applications that
 
   **[[Human-Computer Interaction]]**: The interface design of Creative Tools is as consequential as the underlying model quality for user outcomes. Research consistently shows that the same underlying model produces dramatically different user creative outputs depending on interface affordances: tools that expose raw prompt text fields produce different creative work than tools that use visual style pickers, slider-controlled parameters, or example-based interfaces. The progressive abstraction from technical model parameters toward creative intent expression is an ongoing HCI research challenge specific to AI creative tools, with significant implications for who can access AI creative capabilities and what kinds of creative work they produce.
 
-- ### Provenance
+### Provenance
 

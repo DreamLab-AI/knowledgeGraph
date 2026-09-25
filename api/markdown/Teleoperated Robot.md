@@ -1,50 +1,50 @@
-
 A Teleoperated Robot is a robotic system remotely controlled by a human operator via a communication link, combining human-level judgement with robotic precision and reach in environments inaccessible or hazardous to people. Key technical dimensions include haptic feedback, anthropomorphic dexterity, immersive operator interfaces (including VR headsets), latency management, and AI-assisted control to reduce operator cognitive load; applications span surgery, nuclear decommissioning, disaster response, and construction.
 
-- ### Semantic Classification
+### Semantic Classification
 
-- ### Content
-  ## Academic Context
+### Content
 
-  - Teleoperated robots enable remote control of robotic systems by human operators, combining human decision-making with robotic precision.
-  - Key developments include advances in dexterous manipulation, immersive interfaces (e.g., VR), and anthropomorphic designs that improve operator embodiment and control intuitiveness.
-  - The academic foundation spans robotics, human-computer interaction, control theory, and artificial intelligence, with increasing focus on accessibility and real-world applications such as healthcare and hazardous environments[1][3][6].
+## Academic Context
+
+- Teleoperated robots enable remote control of robotic systems by human operators, combining human decision-making with robotic precision.
+- Key developments include advances in dexterous manipulation, immersive interfaces (e.g., VR), and anthropomorphic designs that improve operator embodiment and control intuitiveness.
+- The academic foundation spans robotics, human-computer interaction, control theory, and artificial intelligence, with increasing focus on accessibility and real-world applications such as healthcare and hazardous environments[1][3][6].
 
   ## Current Landscape (2025)
 
-  - Teleoperated robots are widely adopted across industries including healthcare, construction, manufacturing, and assistive technologies.
-  - Notable organisations include research institutes like UTARI (University of Texas at Arlington Research Institute) and companies such as Shadow Robot, which actively develop teleoperation platforms.
-  - In the UK, especially North England cities like Manchester and Leeds, innovation hubs focus on robotics for healthcare and industrial automation, leveraging teleoperation to enhance safety and efficiency.
-  - Technical capabilities have improved with enhanced visualisation (e.g., VR headsets), anthropomorphic robotic hands for dexterous tasks, and AI-assisted control to reduce operator workload.
-  - Limitations remain in sensory feedback fidelity, latency over long distances, and complexity of controlling humanoid robots with multiple degrees of freedom.
-  - Standards and frameworks are evolving to address interoperability, safety, and ethical considerations in teleoperation systems[1][2][3][5][6].
+- Teleoperated robots are widely adopted across industries including healthcare, construction, manufacturing, and assistive technologies.
+- Notable organisations include research institutes like UTARI (University of Texas at Arlington Research Institute) and companies such as Shadow Robot, which actively develop teleoperation platforms.
+- In the UK, especially North England cities like Manchester and Leeds, innovation hubs focus on robotics for healthcare and industrial automation, leveraging teleoperation to enhance safety and efficiency.
+- Technical capabilities have improved with enhanced visualisation (e.g., VR headsets), anthropomorphic robotic hands for dexterous tasks, and AI-assisted control to reduce operator workload.
+- Limitations remain in sensory feedback fidelity, latency over long distances, and complexity of controlling humanoid robots with multiple degrees of freedom.
+- Standards and frameworks are evolving to address interoperability, safety, and ethical considerations in teleoperation systems[1][2][3][5][6].
 
   ## Research & Literature
 
-  - Key academic papers:
-  - Thamaraiselvan, V. C., Salunkhe, P. D., Theofanidis, M., & Gans, N. R. (2025). *Field Testing an Assistive Robot Teleoperation System for People who are Legally Blind*. IEEE RO-MAN 2025 Conference.
-  - Wang, et al. (2025). *Understanding Potential Challenges in Demolition Robot Teleoperation*. Proc. 23rd CIB World Building Congress.
-  - [Anonymous] (2025). *ADAPT-Teleop: Robotic Hand with Human Matched Embodiment Enables Dexterous Teleoperated Manipulation*. npj Robotics, 3(31).
-  - Ongoing research directions include improving embodiment through anthropomorphic hardware, enhancing immersive interfaces, reducing operator cognitive load, and expanding teleoperation to complex humanoid robots for social and healthcare applications[1][3][6].
+- Key academic papers:
+- Thamaraiselvan, V. C., Salunkhe, P. D., Theofanidis, M., & Gans, N. R. (2025). *Field Testing an Assistive Robot Teleoperation System for People who are Legally Blind*. IEEE RO-MAN 2025 Conference.
+- Wang, et al. (2025). *Understanding Potential Challenges in Demolition Robot Teleoperation*. Proc. 23rd CIB World Building Congress.
+- [Anonymous] (2025). *ADAPT-Teleop: Robotic Hand with Human Matched Embodiment Enables Dexterous Teleoperated Manipulation*. npj Robotics, 3(31).
+- Ongoing research directions include improving embodiment through anthropomorphic hardware, enhancing immersive interfaces, reducing operator cognitive load, and expanding teleoperation to complex humanoid robots for social and healthcare applications[1][3][6].
 
   ## UK Context
 
-  - The UK contributes significantly to teleoperation research, with institutions in North England (Manchester, Leeds, Newcastle, Sheffield) fostering robotics innovation.
-  - Manchester and Leeds host robotics clusters focusing on healthcare teleoperation and industrial automation.
-  - Regional case studies include teleoperated assistive robots for elderly care and industrial telemanipulation in hazardous construction environments.
-  - UK research emphasises accessibility, with projects enabling visually impaired users to operate robots safely and effectively, reflecting a commitment to inclusive technology[1][6].
+- The UK contributes significantly to teleoperation research, with institutions in North England (Manchester, Leeds, Newcastle, Sheffield) fostering robotics innovation.
+- Manchester and Leeds host robotics clusters focusing on healthcare teleoperation and industrial automation.
+- Regional case studies include teleoperated assistive robots for elderly care and industrial telemanipulation in hazardous construction environments.
+- UK research emphasises accessibility, with projects enabling visually impaired users to operate robots safely and effectively, reflecting a commitment to inclusive technology[1][6].
 
   ## Future Directions
 
-  - Emerging trends:
-  - Integration of AI to assist teleoperation, reducing operator burden.
-  - Development of humanoid teleoperated robots for natural human-robot interaction.
-  - Enhanced immersive interfaces using VR and haptics to improve situational awareness.
-  - Anticipated challenges:
-  - Managing latency and sensory feedback over long distances.
-  - Ensuring safety and ethical use in sensitive domains like healthcare.
-  - Bridging the embodiment gap between human operators and robotic avatars.
-  - Research priorities include refining control algorithms, improving hardware anthropomorphism, and expanding accessibility features to democratise teleoperation technology[1][3][4][6].
+- Emerging trends:
+- Integration of AI to assist teleoperation, reducing operator burden.
+- Development of humanoid teleoperated robots for natural human-robot interaction.
+- Enhanced immersive interfaces using VR and haptics to improve situational awareness.
+- Anticipated challenges:
+- Managing latency and sensory feedback over long distances.
+- Ensuring safety and ethical use in sensitive domains like healthcare.
+- Bridging the embodiment gap between human operators and robotic avatars.
+- Research priorities include refining control algorithms, improving hardware anthropomorphism, and expanding accessibility features to democratise teleoperation technology[1][3][4][6].
 
   ## References
 
@@ -60,13 +60,12 @@ A Teleoperated Robot is a robotic system remotely controlled by a human operator
 
   6. UTARI (2025). *Researchers Contribute to Human-Robot Interaction Advancements at RO-MAN 2025*. University of Texas at Arlington Research Institute.
 
-
   ## Metadata
 
-  - **Last Updated**: 2025-11-11
-  - **Review Status**: Comprehensive editorial review
-  - **Verification**: Academic sources verified
-  - **Regional Context**: UK/North England where applicable
+- **Last Updated**: 2025-11-11
+- **Review Status**: Comprehensive editorial review
+- **Verification**: Academic sources verified
+- **Regional Context**: UK/North England where applicable
 
-- ### Provenance
+### Provenance
 

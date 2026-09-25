@@ -1,41 +1,46 @@
-
 Collaborative Document Editing - Real-time or asynchronous shared editing technology enabling multiple distributed users to simultaneously create, modify, and comment on digital documents with live synchronization and version control.
 
-- ### Semantic Classification
+### Semantic Classification
 
-- ### Content
-  - ### Telecollaboration Context
-  Classified as a hybrid [[Asynchronous-Synchronous Communication]] technology within the [[Telecollaboration]] domain. Enables knowledge co-creation and supports both real-time collaboration and asynchronous contribution patterns essential for distributed teams spanning multiple time zones.
+### Content
 
-  #### Related Concepts
-  - [[Version Control Systems]]: Technical foundation
-  - [[Operational Transformation]]: Synchronization algorithm
-  - [[CRDT (Conflict-free Replicated Data Type)]]: Alternative synchronization
-  - [[Cloud Storage]]: Infrastructure
-  - [[Access Control]]: Security pattern
+### Telecollaboration Context
+
+Classified as a hybrid [[Asynchronous-Synchronous Communication]] technology within the [[Telecollaboration]] domain. Enables knowledge co-creation and supports both real-time collaboration and asynchronous contribution patterns essential for distributed teams spanning multiple time zones.
+
+#### Related Concepts
+
+- [[Version Control Systems]]: Technical foundation
+- [[Operational Transformation]]: Synchronization algorithm
+- [[CRDT (Conflict-free Replicated Data Type)]]: Alternative synchronization
+- [[Cloud Storage]]: Infrastructure
+- [[Access Control]]: Security pattern
 
   ## Telecollaboration Properties
 
   ### Collaboration Properties
-  - distributed-collaboration:collaboration-type:: hybrid (synchronous + asynchronous)
-  - distributed-collaboration:participant-count:: 2 to 500+ (platform dependent)
-  - distributed-collaboration:duration:: minutes to months
-  - distributed-collaboration:geographic-distribution:: global capability
-  - distributed-collaboration:media-richness:: medium (text + comments)
-  - distributed-collaboration:synchronicity:: hybrid
+
+- distributed-collaboration:collaboration-type:: hybrid (synchronous + asynchronous)
+- distributed-collaboration:participant-count:: 2 to 500+ (platform dependent)
+- distributed-collaboration:duration:: minutes to months
+- distributed-collaboration:geographic-distribution:: global capability
+- distributed-collaboration:media-richness:: medium (text + comments)
+- distributed-collaboration:synchronicity:: hybrid
 
   ### Technology Properties
-  - distributed-collaboration:platform-used:: [[Google Workspace]], [[Microsoft Office 365]], [[Notion]], [[Confluence]], [[Etherpad]], [[HackMD]]
-  - distributed-collaboration:collaboration-tools:: [[Comments]], [[Suggestions]], [[Version History]], [[Real-time Cursor]], [[Change Tracking]]
-  - distributed-collaboration:semantic-interoperability:: variable (ODF, DOCX, Markdown)
-  - distributed-collaboration:accessibility-features:: [[Screen Reader Support]], [[Keyboard Navigation]], [[High Contrast]], [[Text Resizing]]
+
+- distributed-collaboration:platform-used:: [[Google Workspace]], [[Microsoft Office 365]], [[Notion]], [[Confluence]], [[Etherpad]], [[HackMD]]
+- distributed-collaboration:collaboration-tools:: [[Comments]], [[Suggestions]], [[Version History]], [[Real-time Cursor]], [[Change Tracking]]
+- distributed-collaboration:semantic-interoperability:: variable (ODF, DOCX, Markdown)
+- distributed-collaboration:accessibility-features:: [[Screen Reader Support]], [[Keyboard Navigation]], [[High Contrast]], [[Text Resizing]]
 
   ### Outcomes Properties
-  - distributed-collaboration:social-presence:: medium
-  - distributed-collaboration:cognitive-presence:: high
-  - distributed-collaboration:teaching-presence:: low-medium
-  - distributed-collaboration:knowledge-creation-approach:: [[Social Constructivism]], [[Connectivism]]
-  - distributed-collaboration:learning-outcomes:: [[Collaborative Writing]], [[Peer Learning]], [[Knowledge Building]]
+
+- distributed-collaboration:social-presence:: medium
+- distributed-collaboration:cognitive-presence:: high
+- distributed-collaboration:teaching-presence:: low-medium
+- distributed-collaboration:knowledge-creation-approach:: [[Social Constructivism]], [[Connectivism]]
+- distributed-collaboration:learning-outcomes:: [[Collaborative Writing]], [[Peer Learning]], [[Knowledge Building]]
 
   ## Use Cases
 
@@ -69,17 +74,19 @@ Collaborative Document Editing - Real-time or asynchronous shared editing techno
   ## Synchronization Models
 
   ### Real-Time Synchronization
-  - Operational Transformation (OT)
-  - CRDT (Conflict-free Replicated Data Type)
-  - Last-Write-Wins
-  - Paragraph-level locking
-  - WebSocket-based updates
+
+- Operational Transformation (OT)
+- CRDT (Conflict-free Replicated Data Type)
+- Last-Write-Wins
+- Paragraph-level locking
+- WebSocket-based updates
 
   ### Asynchronous Patterns
-  - Version branching
-  - Merge strategies
-  - Comment-based review
-  - Scheduled synchronization
+
+- Version branching
+- Merge strategies
+- Comment-based review
+- Scheduled synchronization
 
   ## Validation Criteria
 
@@ -94,59 +101,67 @@ Collaborative Document Editing - Real-time or asynchronous shared editing techno
   ## Implementation Considerations
 
   ### Technical Architecture
-  - Client-side editor with local state
-  - Server-side synchronization engine
-  - Conflict resolution algorithm
-  - Change notification mechanism
-  - Persistence layer (database)
-  - Real-time communication (WebSocket, polling)
+
+- Client-side editor with local state
+- Server-side synchronization engine
+- Conflict resolution algorithm
+- Change notification mechanism
+- Persistence layer (database)
+- Real-time communication (WebSocket, polling)
 
   ### User Experience Factors
-  - Intuitive interface and toolbar
-  - Clear indication of concurrent users
-  - Visible cursor/selection of other users
-  - Comment and mention capabilities
-  - Version history browser
-  - Offline support and sync
+
+- Intuitive interface and toolbar
+- Clear indication of concurrent users
+- Visible cursor/selection of other users
+- Comment and mention capabilities
+- Version history browser
+- Offline support and sync
 
   ### Collaboration Features
-  - Granular access control (view, edit, comment)
-  - Change tracking with attribution
-  - Comment threading and resolution
-  - Suggestion/track changes mode
-  - Inline feedback and annotations
-  - History and version comparison
+
+- Granular access control (view, edit, comment)
+- Change tracking with attribution
+- Comment threading and resolution
+- Suggestion/track changes mode
+- Inline feedback and annotations
+- History and version comparison
 
   ## Pedagogical Integration
 
   ### Learning Design Patterns
-  - [[Peer Review]]: Using comments for feedback
-  - [[Collaborative Inquiry]]: Co-authoring research questions
-  - [[Scaffolding]]: Using templates and structure
-  - [[Metacognition]]: Reflecting on group writing process
+
+- [[Peer Review]]: Using comments for feedback
+- [[Collaborative Inquiry]]: Co-authoring research questions
+- [[Scaffolding]]: Using templates and structure
+- [[Metacognition]]: Reflecting on group writing process
 
   ### Assessment Patterns
-  - Portfolio assessment through version history
-  - Peer evaluation using comments
-  - Process assessment (tracking changes)
-  - Collaborative artefact assessment
+
+- Portfolio assessment through version history
+- Peer evaluation using comments
+- Process assessment (tracking changes)
+- Collaborative artefact assessment
 
   ## Cross-Domain Bridges
 
   ### TC ↔ AI
-  - [[Smart Writing Suggestions]]: AI-powered autocomplete and recommendations
-  - [[Sentiment Analysis]]: Comment tone analysis
-  - [[Plagiarism Detection]]: Content originality checking
-  - [[Language Correction]]: Grammar and style assistance
+
+- [[Smart Writing Suggestions]]: AI-powered autocomplete and recommendations
+- [[Sentiment Analysis]]: Comment tone analysis
+- [[Plagiarism Detection]]: Content originality checking
+- [[Language Correction]]: Grammar and style assistance
 
   ### TC ↔ Blockchain
-  - [[Immutable Document History]]: Blockchain-based version control
-  - [[Credential Verification]]: Verifiable authorship records
-  - [[Smart Contracts]]: Document approval workflows
+
+- [[Immutable Document History]]: Blockchain-based version control
+- [[Credential Verification]]: Verifiable authorship records
+- [[Smart Contracts]]: Document approval workflows
 
   ### TC ↔ Disruptive Tech
-  - [[Distributed Editing Networks]]: P2P document collaboration
-  - [[Quantum-Safe Encryption]]: Long-term document security
 
-- ### Provenance
+- [[Distributed Editing Networks]]: P2P document collaboration
+- [[Quantum-Safe Encryption]]: Long-term document security
+
+### Provenance
 

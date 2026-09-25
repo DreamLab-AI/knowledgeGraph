@@ -1,20 +1,21 @@
-
 Probabilistic finality is a transaction confirmation model characteristic of longest-chain consensus mechanisms where confidence in transaction irreversibility increases exponentially with block depth, approaching but never reaching absolute certainty, with reversal probability decaying as (q/p)^...
 
-- ### Semantic Classification
+### Semantic Classification
 
-- ### Content
+### Content
 
-  ## Definition
-  - Transaction finality model where confidence in irreversibility increases asymptotically with block depth
-  - Never reaches absolute certainty but becomes exponentially unlikely to reverse
-  - Characteristic of longest-chain consensus mechanisms like Proof-of-Work
+## Definition
+
+- Transaction finality model where confidence in irreversibility increases asymptotically with block depth
+- Never reaches absolute certainty but becomes exponentially unlikely to reverse
+- Characteristic of longest-chain consensus mechanisms like Proof-of-Work
 
   ## Core Principles
-  - **Exponential Decay**: Probability of reversal decreases exponentially with confirmations
-  - **Computational Security**: Attacker must outpace honest hash power
-  - **Asymptotic Confidence**: Approaches but never reaches 100% certainty
-  - **Statistical Guarantee**: Based on probabilistic model of attacker success
+
+- **Exponential Decay**: Probability of reversal decreases exponentially with confirmations
+- **Computational Security**: Attacker must outpace honest hash power
+- **Asymptotic Confidence**: Approaches but never reaches 100% certainty
+- **Statistical Guarantee**: Based on probabilistic model of attacker success
 
   ## Mathematical Model
   ```
@@ -37,87 +38,101 @@ Probabilistic finality is a transaction confirmation model characteristic of lon
   | High-value transfer | 10+ (~100 min) | Maximum security |
 
   ## Technical Characteristics
-  - **Block Depth**: Number of subsequent blocks added
-  - **Orphan Risk**: Competing chains naturally occur
-  - **Chain Selection**: Longest chain rule determines canonical chain
-  - **Reorganization**: Switching to longer competing chain
+
+- **Block Depth**: Number of subsequent blocks added
+- **Orphan Risk**: Competing chains naturally occur
+- **Chain Selection**: Longest chain rule determines canonical chain
+- **Reorganization**: Switching to longer competing chain
 
   ## Blockchain Examples
   ### Bitcoin
-  - 6 confirmations standard (~60 minutes)
-  - 10-minute average block time
-  - Reorganizations typically 1-2 blocks maximum
+
+- 6 confirmations standard (~60 minutes)
+- 10-minute average block time
+- Reorganizations typically 1-2 blocks maximum
 
   ### Ethereum (Pre-Merge PoW)
-  - 20-30 confirmations recommended (~5-7 minutes)
-  - 13-second block time
-  - Higher orphan rate than Bitcoin
+
+- 20-30 confirmations recommended (~5-7 minutes)
+- 13-second block time
+- Higher orphan rate than Bitcoin
 
   ### Bitcoin Cash
-  - Similar to Bitcoin with adjusted difficulty
-  - Larger block size doesn't affect finality model
+
+- Similar to Bitcoin with adjusted difficulty
+- Larger block size doesn't affect finality model
 
   ## Relationships
 
   ## Security Analysis
   ### Assumptions
-  - Majority of hash power controlled by honest miners
-  - Rational economic actors (attack cost > benefit)
-  - Network connectivity maintains global state propagation
+
+- Majority of hash power controlled by honest miners
+- Rational economic actors (attack cost > benefit)
+- Network connectivity maintains global state propagation
 
   ### Attack Scenarios
-  - **51% Attack**: Attacker controls majority hash power
-  - **Selfish Mining**: Strategic block withholding
-  - **Double-Spend**: Reversing confirmed transactions
-  - **Deep Reorg**: Rewriting extensive history (very costly)
+
+- **51% Attack**: Attacker controls majority hash power
+- **Selfish Mining**: Strategic block withholding
+- **Double-Spend**: Reversing confirmed transactions
+- **Deep Reorg**: Rewriting extensive history (very costly)
 
   ## Advantages
-  - Simple protocol design
-  - Well-studied security properties
-  - No reliance on validator identity or stake
-  - Naturally handles network partitions
+
+- Simple protocol design
+- Well-studied security properties
+- No reliance on validator identity or stake
+- Naturally handles network partitions
 
   ## Limitations
-  - Long wait times for high security
-  - Never absolute certainty
-  - Vulnerable to hash rate concentration
-  - Energy inefficient (PoW requirement)
+
+- Long wait times for high security
+- Never absolute certainty
+- Vulnerable to hash rate concentration
+- Energy inefficient (PoW requirement)
 
   ## Practical Considerations
   ### For Merchants
-  - Risk tolerance determines confirmation requirement
-  - Dynamic adjustment based on transaction value
-  - Insurance/payment processor policies
+
+- Risk tolerance determines confirmation requirement
+- Dynamic adjustment based on transaction value
+- Insurance/payment processor policies
 
   ### For Exchanges
-  - Standardized confirmation requirements
-  - Monitoring for unusual chain activity
-  - Halting deposits during suspected attacks
+
+- Standardized confirmation requirements
+- Monitoring for unusual chain activity
+- Halting deposits during suspected attacks
 
   ### For DeFi Protocols
-  - Time-locked mechanisms for large operations
-  - Confirmation depth for cross-chain interactions
-  - Oracle update frequency relative to finality
+
+- Time-locked mechanisms for large operations
+- Confirmation depth for cross-chain interactions
+- Oracle update frequency relative to finality
 
   ## Improvements
-  - **Checkpointing**: Periodic hard-coded finality points
-  - **Merged Mining**: Borrowed hash rate for security
-  - **Hybrid Consensus**: Combine with BFT finality layer
+
+- **Checkpointing**: Periodic hard-coded finality points
+- **Merged Mining**: Borrowed hash rate for security
+- **Hybrid Consensus**: Combine with BFT finality layer
 
   ## Real-World Incidents
-  - **Bitcoin Cash 2019**: 2-block reorganization
-  - **Ethereum Classic 2019**: Multiple 51% attacks
-  - **Bitcoin 2013**: 24-block reorg due to software bug
+
+- **Bitcoin Cash 2019**: 2-block reorganization
+- **Ethereum Classic 2019**: Multiple 51% attacks
+- **Bitcoin 2013**: 24-block reorg due to software bug
 
   #### Related Concepts
-  - [[Deterministic Finality]]
-  - [[Proof of Work]]
-  - [[Consensus Mechanism]]
-  - [[Transaction Confirmation]]
+
+- [[Deterministic Finality]]
+- [[Proof of Work]]
+- [[Consensus Mechanism]]
+- [[Transaction Confirmation]]
 
   #blockchain #finality #probabilistic #proof-of-work
 
   ### Relationships
 
-- ### Provenance
+### Provenance
 

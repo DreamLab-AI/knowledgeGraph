@@ -1,4 +1,3 @@
-
 A 256-bit threshold value in proof-of-work blockchains that a block's hash must be numerically less than or equal to for the block to be considered valid. The difficulty target is periodically recalculated by the Difficulty Adjustment algorithm to maintain a consistent average inter-block time regardless of changes in aggregate hash power. It is the primary mechanism by which mining difficulty is quantified and enforced across all network participants.
 
 ### Definition
@@ -19,5 +18,5 @@ The difficulty target is foundational to the security model of proof-of-work blo
 
 From an ontological perspective, the Difficulty Target is classified within the Protocol and Consensus subdomain of the blockchain ontology. It is distinct from the Difficulty Adjustment algorithm (which is the process) — the target itself is a protocol-level parameter that represents the current difficulty state. Its relationship to Blockchain Energy Consumption is significant: because mining hardware must expend real energy to meet the target's computational requirement, the target level directly determines the network's energy footprint. This relationship is central to debates in the Blockchain Environmental Impact Assessment literature and informs proposals for more energy-efficient Consensus Mechanisms.
 
-- ### Provenance
+### Provenance
 

@@ -1,73 +1,79 @@
-
 NIST Interagency or Internal Reports (NISTIRs) are a formal publication series issued by the National Institute of Standards and Technology covering technical research, guidelines, measurements, and collaborative investigations that do not rise to the level of a Federal Information Processing Standard (FIPS) or a Special Publication (SP). NISTIRs document foundational work — including laboratory studies, software evaluations, and preliminary standards research — produced by NIST staff or by NIST in collaboration with other U.S. government agencies. Because they are freely accessible and citable, NISTIRs frequently underpin subsequent Special Publications, ISO standards, and regulatory frameworks in cybersecurity, metrology, AI evaluation, and more.
 
-- ### Overview
-  - The NISTIR series was established to give NIST researchers a citable, permanent channel for technical work that supports — but does not itself constitute — normative standardisation.
-  - NISTIRs cover an exceptionally wide scope:
-    - Laboratory measurement results and inter-laboratory comparisons
-    - Security and privacy baseline studies feeding the [[Risk Management Framework]]
-    - [[IoT Security]] device baseline evaluations (e.g. NISTIR 8259 series)
-    - [[AI Trustworthiness]] evaluation methodologies and bias assessments
-    - [[Quantum Computing]] readiness assessments and algorithm performance benchmarks
-    - Software assurance, testing frameworks, and [[Vulnerability Assessment]] approaches
-  - They occupy a middle tier in the NIST publishing hierarchy: below FIPS and SP in normative authority but above internal lab notes, and they are cited in law, regulation, and contract compliance frameworks worldwide.
-  - Unlike FIPS or SPs, NISTIRs do not require OMB review or formal comment periods, enabling faster publication cycles while still undergoing internal NIST peer review.
+### Overview
 
-- ### Key Components
-  - **Interagency scope** — many NISTIRs are produced jointly with other U.S. federal agencies (DoD, DHS, NSA, NASA), making them authoritative sources of cross-agency technical agreement
-  - **Numbering scheme** — each report receives a unique number (e.g. NISTIR 8011, NISTIR 8259, NISTIR 8286) under which all companion volumes and errata are grouped; linking to [[Technical Report]] archival conventions
-  - **Companion volumes** — complex topics are often addressed by a base NISTIR and subsequent lettered volumes (NISTIR 8286A, 8286B, etc.), each drilling into sub-topics such as enterprise [[Cybersecurity Risk]] integration
-  - **Open-access distribution** — all NISTIRs are hosted on nvlpubs.nist.gov as free PDFs, ensuring broad uptake in academia, industry, and government; supports [[Open Standards]] principles
-  - **Referencing lifecycle** — NISTIRs are superseded, withdrawn, or incorporated into SPs; practitioners must track the document lifecycle via the NIST PUBS portal; intersects with [[Document Lifecycle Management]]
-  - **Relationship to [[NIST Cybersecurity Framework]]** — numerous NISTIRs provide the technical underpinning for NCF implementation guidance, measurement methods, and outcome metrics
-  - **AI coverage** — the NISTIR series has grown significantly in AI-related content including evaluation of [[Machine Learning]] systems, [[Bias Detection]], and [[Explainable AI]] testbed results, feeding into the NIST AI RMF
+- The NISTIR series was established to give NIST researchers a citable, permanent channel for technical work that supports — but does not itself constitute — normative standardisation.
+- NISTIRs cover an exceptionally wide scope:
+  - Laboratory measurement results and inter-laboratory comparisons
+  - Security and privacy baseline studies feeding the [[Risk Management Framework]]
+  - [[IoT Security]] device baseline evaluations (e.g. NISTIR 8259 series)
+  - [[AI Trustworthiness]] evaluation methodologies and bias assessments
+  - [[Quantum Computing]] readiness assessments and algorithm performance benchmarks
+  - Software assurance, testing frameworks, and [[Vulnerability Assessment]] approaches
+- They occupy a middle tier in the NIST publishing hierarchy: below FIPS and SP in normative authority but above internal lab notes, and they are cited in law, regulation, and contract compliance frameworks worldwide.
+- Unlike FIPS or SPs, NISTIRs do not require OMB review or formal comment periods, enabling faster publication cycles while still undergoing internal NIST peer review.
 
-- ### Applications and Use Cases
-  - **[[Federal Information Security]] compliance** — agencies cite NISTIRs as authoritative technical reference material when implementing FISMA-mandated controls
-  - **[[IoT Security]] device baselining** — NISTIR 8259 and its companion volumes define core IoT cybersecurity baseline activities and manufacturer capabilities, widely adopted by device makers and procurers
-  - **[[AI Risk Management]]** — NISTIRs on AI testing and evaluation inform the measurement annex of the NIST AI Risk Management Framework (AI RMF), used by federal agencies and adopted voluntarily by industry
-  - **[[Cryptography]] migration** — NISTIRs document algorithm testing and transition guidance for post-quantum cryptographic schemes, complementing the FIPS 203/204/205 series from the PQC standardisation project
-  - **[[Software Assurance]]** — NIST software testing NISTIRs underpin NIST's role in SCAP (Security Content Automation Protocol) and vulnerability scoring, linking to [[Common Vulnerability Scoring System]] (CVSS) calibration
-  - **[[Metrology]] and calibration** — the original NISTIR use case; physical measurement inter-comparisons and uncertainty analyses remain a major share of the series' output
-  - **[[Supply Chain Risk Management]]** — NISTIRs document C-SCRM practices and evaluation methods that feed NIST SP 800-161 revisions
-  - **Academic and industry research** — freely citable NISTIRs serve as stable references in peer-reviewed literature across [[Cybersecurity]], physics, chemistry, and engineering
+### Key Components
 
-- ### Standards and Context
-  - **Publishing authority** — NISTIRs are issued under the authority of the Secretary of Commerce, delegated to NIST, under the National Technology Transfer and Advancement Act (NTTAA) and related statutes
-  - **NIST publication hierarchy**:
-    - [[Federal Information Processing Standards]] (FIPS) — highest normative authority; legally binding on federal agencies
-    - [[NIST Special Publication]] (SP) — widely adopted voluntary guidance; SP 800-series for IT security, SP 1800-series for practice guides
-    - **NISTIR** — supporting research, collaborative, and interagency technical reports (this class)
-    - [[NIST Technical Note]] (TN) — shorter communications; similar standing to NISTIR
-    - NIST Handbooks (HB) and Advanced Manufacturing Series (AMS) — domain-specific outreach
-  - **Interagency collaboration** — NISTIRs frequently co-authored with [[CISA]], [[NSA]], DoD CIO, and international partners under the [[Five Eyes]] or bilateral science agreements
-  - **Legal standing** — NISTIRs are not mandatory unless explicitly incorporated by reference in regulations, contracts, or OMB memoranda; however, multiple NISTIRs are referenced in FedRAMP, CMMC, and Executive Order 14028 guidance chains
-  - **Version control and errata** — NIST maintains a persistent URI scheme; readers should check the NIST PUBS portal for withdrawals, drafts, and final versions to ensure they cite the active document
-  - **International alignment** — several NISTIRs feed into ISO/IEC JTC 1 standardisation activities and ITU-T study groups, bridging U.S. federal research with [[International Standards Organisation]] outputs
+- **Interagency scope** — many NISTIRs are produced jointly with other U.S. federal agencies (DoD, DHS, NSA, NASA), making them authoritative sources of cross-agency technical agreement
+- **Numbering scheme** — each report receives a unique number (e.g. NISTIR 8011, NISTIR 8259, NISTIR 8286) under which all companion volumes and errata are grouped; linking to [[Technical Report]] archival conventions
+- **Companion volumes** — complex topics are often addressed by a base NISTIR and subsequent lettered volumes (NISTIR 8286A, 8286B, etc.), each drilling into sub-topics such as enterprise [[Cybersecurity Risk]] integration
+- **Open-access distribution** — all NISTIRs are hosted on nvlpubs.nist.gov as free PDFs, ensuring broad uptake in academia, industry, and government; supports [[Open Standards]] principles
+- **Referencing lifecycle** — NISTIRs are superseded, withdrawn, or incorporated into SPs; practitioners must track the document lifecycle via the NIST PUBS portal; intersects with [[Document Lifecycle Management]]
+- **Relationship to [[NIST Cybersecurity Framework]]** — numerous NISTIRs provide the technical underpinning for NCF implementation guidance, measurement methods, and outcome metrics
+- **AI coverage** — the NISTIR series has grown significantly in AI-related content including evaluation of [[Machine Learning]] systems, [[Bias Detection]], and [[Explainable AI]] testbed results, feeding into the NIST AI RMF
 
-- ### Notable Examples
-  - **NISTIR 8011** — Automation Support for Security Control Assessments, underpinning continuous monitoring strategies within the [[Risk Management Framework]]
-  - **NISTIR 8259 / 8259A / 8259B** — IoT Device Cybersecurity Capability Core Baseline; widely cited by IoT manufacturers for [[Embedded Systems Security]]
-  - **NISTIR 8286 / 8286A / 8286B / 8286C** — Integrating Cybersecurity and Enterprise Risk Management (ERM); aligns [[Cybersecurity Risk]] with COSO ERM frameworks
-  - **NISTIR 8374** — Ransomware Risk Management; rapid-response reference tying ransomware controls to the NIST CSF subcategories
-  - **NISTIR 8276** — Key Practices in Cyber Supply Chain Risk Management; a precursor to [[Supply Chain Risk Management]] guidance in SP 800-161r1
-  - **NISTIR 8427** — Discussion of the Circuit Complexity of Quantum Circuits; illustrates the series' reach into fundamental [[Quantum Computing]] research
+### Applications and Use Cases
 
-- ### Current Landscape (2026)
-  - The series was rebranded from "NISTIR" to "NIST IR" (NIST Interagency or Internal Report) under the reorganised NIST Technical Series, though legacy NISTIR numbers and DOIs (10.6028/NIST.IR.*) persist across older and superseding documents.
-  - Post-quantum transition dominated recent output: IR 8547, "Transition to Post-Quantum Cryptography Standards" (initial public draft, 12 November 2024), set out NIST's migration approach, including deprecation of quantum-vulnerable algorithms after 2030 and disallowance by 2035.
-  - IR 8545 (final, 11 March 2025) reported the fourth-round PQC evaluation and accompanied the selection of HQC (Hamming Quasi-Cyclic) as a fifth algorithm for standardisation; IR 8610 (final, 14 May 2026) advanced nine candidates to the third round of the Additional Digital Signature Schemes process.
-  - A wave of CSF 2.0 alignment landed in late 2025: on 18 December 2025 NIST reissued the enterprise-risk IR 8286 series (8286r1, 8286Ar1, 8286Cr1), alongside IR 8374 Rev 1 (Ransomware Risk Management CSF 2.0 Community Profile) and IR 8484r1 (Safeguarding International Science research-security framework, November 2025).
-  - Cyber-physical and sector-specific IRs expanded scope: IR 8259r1 broadened IoT guidance from "devices" to "products" (2025 drafts), while draft IR 8546 introduced a CSF profile for semiconductor manufacturing and IR 8467 covered genomic-data cybersecurity and privacy.
-  - The programme context is captured in the FY 2025 Annual Report (SP 800-238, May 2026), which frames IR outputs across cryptography, cybersecurity and AI, hardware/software security and risk management, reflecting NIST's post-2024 pivot toward AI trustworthiness (Dioptra, COSAiS) and crypto-agility.
-  - Open challenges as of 2026 centre on driving real-world PQC migration to the 2030/2035 milestones across federal agencies and industry, sustaining the pace of CSF 2.0 re-profiling, and extending IR guidance to fast-moving AI-security and supply-chain assurance domains.
+- **[[Federal Information Security]] compliance** — agencies cite NISTIRs as authoritative technical reference material when implementing FISMA-mandated controls
+- **[[IoT Security]] device baselining** — NISTIR 8259 and its companion volumes define core IoT cybersecurity baseline activities and manufacturer capabilities, widely adopted by device makers and procurers
+- **[[AI Risk Management]]** — NISTIRs on AI testing and evaluation inform the measurement annex of the NIST AI Risk Management Framework (AI RMF), used by federal agencies and adopted voluntarily by industry
+- **[[Cryptography]] migration** — NISTIRs document algorithm testing and transition guidance for post-quantum cryptographic schemes, complementing the FIPS 203/204/205 series from the PQC standardisation project
+- **[[Software Assurance]]** — NIST software testing NISTIRs underpin NIST's role in SCAP (Security Content Automation Protocol) and vulnerability scoring, linking to [[Common Vulnerability Scoring System]] (CVSS) calibration
+- **[[Metrology]] and calibration** — the original NISTIR use case; physical measurement inter-comparisons and uncertainty analyses remain a major share of the series' output
+- **[[Supply Chain Risk Management]]** — NISTIRs document C-SCRM practices and evaluation methods that feed NIST SP 800-161 revisions
+- **Academic and industry research** — freely citable NISTIRs serve as stable references in peer-reviewed literature across [[Cybersecurity]], physics, chemistry, and engineering
 
-- ### References
-  - 1. National Institute of Standards and Technology (2025). NIST IR 8545: Status Report on the Fourth Round of the NIST Post-Quantum Cryptography Standardization Process. https://nvlpubs.nist.gov/nistpubs/ir/2025/NIST.IR.8545.pdf
-  - 2. NIST CSRC (2024). NIST IR 8547 (Initial Public Draft): Transition to Post-Quantum Cryptography Standards. https://csrc.nist.gov/pubs/ir/8547/ipd
-  - 3. NIST Cybersecurity Framework (2025). Updates Archive (IR 8286 series, IR 8374 Rev 1, IR 8467). https://www.nist.gov/cyberframework/updates-archive
-  - 4. Strouse, G.F. et al. / NIST (2025). NIST IR 8484r1: Safeguarding International Science — Research Security Framework. https://nvlpubs.nist.gov/nistpubs/ir/2025/NIST.IR.8484r1.pdf
-  - 5. O'Reilly, P. (Ed.) / NIST (2026). NIST SP 800-238: Fiscal Year 2025 Annual Report for NIST Cybersecurity and Privacy Program. https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-238.pdf
+### Standards and Context
 
-- ### Provenance
+- **Publishing authority** — NISTIRs are issued under the authority of the Secretary of Commerce, delegated to NIST, under the National Technology Transfer and Advancement Act (NTTAA) and related statutes
+- **NIST publication hierarchy**:
+  - [[Federal Information Processing Standards]] (FIPS) — highest normative authority; legally binding on federal agencies
+  - [[NIST Special Publication]] (SP) — widely adopted voluntary guidance; SP 800-series for IT security, SP 1800-series for practice guides
+  - **NISTIR** — supporting research, collaborative, and interagency technical reports (this class)
+  - [[NIST Technical Note]] (TN) — shorter communications; similar standing to NISTIR
+  - NIST Handbooks (HB) and Advanced Manufacturing Series (AMS) — domain-specific outreach
+- **Interagency collaboration** — NISTIRs frequently co-authored with [[CISA]], [[NSA]], DoD CIO, and international partners under the [[Five Eyes]] or bilateral science agreements
+- **Legal standing** — NISTIRs are not mandatory unless explicitly incorporated by reference in regulations, contracts, or OMB memoranda; however, multiple NISTIRs are referenced in FedRAMP, CMMC, and Executive Order 14028 guidance chains
+- **Version control and errata** — NIST maintains a persistent URI scheme; readers should check the NIST PUBS portal for withdrawals, drafts, and final versions to ensure they cite the active document
+- **International alignment** — several NISTIRs feed into ISO/IEC JTC 1 standardisation activities and ITU-T study groups, bridging U.S. federal research with [[International Standards Organisation]] outputs
+
+### Notable Examples
+
+- **NISTIR 8011** — Automation Support for Security Control Assessments, underpinning continuous monitoring strategies within the [[Risk Management Framework]]
+- **NISTIR 8259 / 8259A / 8259B** — IoT Device Cybersecurity Capability Core Baseline; widely cited by IoT manufacturers for [[Embedded Systems Security]]
+- **NISTIR 8286 / 8286A / 8286B / 8286C** — Integrating Cybersecurity and Enterprise Risk Management (ERM); aligns [[Cybersecurity Risk]] with COSO ERM frameworks
+- **NISTIR 8374** — Ransomware Risk Management; rapid-response reference tying ransomware controls to the NIST CSF subcategories
+- **NISTIR 8276** — Key Practices in Cyber Supply Chain Risk Management; a precursor to [[Supply Chain Risk Management]] guidance in SP 800-161r1
+- **NISTIR 8427** — Discussion of the Circuit Complexity of Quantum Circuits; illustrates the series' reach into fundamental [[Quantum Computing]] research
+
+### Current Landscape (2026)
+
+- The series was rebranded from "NISTIR" to "NIST IR" (NIST Interagency or Internal Report) under the reorganised NIST Technical Series, though legacy NISTIR numbers and DOIs (10.6028/NIST.IR.*) persist across older and superseding documents.
+- Post-quantum transition dominated recent output: IR 8547, "Transition to Post-Quantum Cryptography Standards" (initial public draft, 12 November 2024), set out NIST's migration approach, including deprecation of quantum-vulnerable algorithms after 2030 and disallowance by 2035.
+- IR 8545 (final, 11 March 2025) reported the fourth-round PQC evaluation and accompanied the selection of HQC (Hamming Quasi-Cyclic) as a fifth algorithm for standardisation; IR 8610 (final, 14 May 2026) advanced nine candidates to the third round of the Additional Digital Signature Schemes process.
+- A wave of CSF 2.0 alignment landed in late 2025: on 18 December 2025 NIST reissued the enterprise-risk IR 8286 series (8286r1, 8286Ar1, 8286Cr1), alongside IR 8374 Rev 1 (Ransomware Risk Management CSF 2.0 Community Profile) and IR 8484r1 (Safeguarding International Science research-security framework, November 2025).
+- Cyber-physical and sector-specific IRs expanded scope: IR 8259r1 broadened IoT guidance from "devices" to "products" (2025 drafts), while draft IR 8546 introduced a CSF profile for semiconductor manufacturing and IR 8467 covered genomic-data cybersecurity and privacy.
+- The programme context is captured in the FY 2025 Annual Report (SP 800-238, May 2026), which frames IR outputs across cryptography, cybersecurity and AI, hardware/software security and risk management, reflecting NIST's post-2024 pivot toward AI trustworthiness (Dioptra, COSAiS) and crypto-agility.
+- Open challenges as of 2026 centre on driving real-world PQC migration to the 2030/2035 milestones across federal agencies and industry, sustaining the pace of CSF 2.0 re-profiling, and extending IR guidance to fast-moving AI-security and supply-chain assurance domains.
+
+### References
+
+- 1. National Institute of Standards and Technology (2025). NIST IR 8545: Status Report on the Fourth Round of the NIST Post-Quantum Cryptography Standardization Process. https://nvlpubs.nist.gov/nistpubs/ir/2025/NIST.IR.8545.pdf
+- 2. NIST CSRC (2024). NIST IR 8547 (Initial Public Draft): Transition to Post-Quantum Cryptography Standards. https://csrc.nist.gov/pubs/ir/8547/ipd
+- 3. NIST Cybersecurity Framework (2025). Updates Archive (IR 8286 series, IR 8374 Rev 1, IR 8467). https://www.nist.gov/cyberframework/updates-archive
+- 4. Strouse, G.F. et al. / NIST (2025). NIST IR 8484r1: Safeguarding International Science — Research Security Framework. https://nvlpubs.nist.gov/nistpubs/ir/2025/NIST.IR.8484r1.pdf
+- 5. O'Reilly, P. (Ed.) / NIST (2026). NIST SP 800-238: Fiscal Year 2025 Annual Report for NIST Cybersecurity and Privacy Program. https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-238.pdf
+
+### Provenance
 

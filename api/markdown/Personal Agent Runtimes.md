@@ -1,107 +1,110 @@
-
 Always-on self-hosted agent daemons that operate across chat platforms as persistent personal assistants with event loops, memory, and self-improving capabilities — includes OpenClaw, Hermes, Khoj, Eliza, Agent Zero, OpenHarness, and AIlice.
 
-- ### Semantic Classification
+### Semantic Classification
 
-- ### Content
+### Content
 
-  ## Compositional Relationships (Components)
-      SubClassOf(ai:PersonalAgentRuntimes
-        ObjectSomeValuesFrom(ai:hasPart ai:AgentMemoryLayers))
-      SubClassOf(ai:PersonalAgentRuntimes
-        ObjectSomeValuesFrom(ai:hasPart ai:EventLoop))
-      SubClassOf(ai:PersonalAgentRuntimes
-        ObjectSomeValuesFrom(ai:hasPart ai:PermissionGovernance))
-      SubClassOf(ai:PersonalAgentRuntimes
-        ObjectSomeValuesFrom(ai:hasPart ai:ToolUse))
-      SubClassOf(ai:PersonalAgentRuntimes
-        ObjectSomeValuesFrom(ai:hasPart ai:AgentIdentity))
-      SubClassOf(ai:PersonalAgentRuntimes
-        ObjectSomeValuesFrom(ai:hasPart ai:KnowledgeBase))
-      SubClassOf(ai:PersonalAgentRuntimes
-        ObjectSomeValuesFrom(ai:hasPart ai:AgentEventStream))
+## Compositional Relationships (Components)
+    SubClassOf(ai:PersonalAgentRuntimes
+      ObjectSomeValuesFrom(ai:hasPart ai:AgentMemoryLayers))
+    SubClassOf(ai:PersonalAgentRuntimes
+      ObjectSomeValuesFrom(ai:hasPart ai:EventLoop))
+    SubClassOf(ai:PersonalAgentRuntimes
+      ObjectSomeValuesFrom(ai:hasPart ai:PermissionGovernance))
+    SubClassOf(ai:PersonalAgentRuntimes
+      ObjectSomeValuesFrom(ai:hasPart ai:ToolUse))
+    SubClassOf(ai:PersonalAgentRuntimes
+      ObjectSomeValuesFrom(ai:hasPart ai:AgentIdentity))
+    SubClassOf(ai:PersonalAgentRuntimes
+      ObjectSomeValuesFrom(ai:hasPart ai:KnowledgeBase))
+    SubClassOf(ai:PersonalAgentRuntimes
+      ObjectSomeValuesFrom(ai:hasPart ai:AgentEventStream))
 
-  ## Dependency Relationships
-      SubClassOf(ai:PersonalAgentRuntimes
-        ObjectSomeValuesFrom(ai:requires ai:LargeLanguageModel))
-      SubClassOf(ai:PersonalAgentRuntimes
-        ObjectSomeValuesFrom(ai:requires ai:VectorDatabase))
-      SubClassOf(ai:PersonalAgentRuntimes
-        ObjectSomeValuesFrom(ai:requires ai:AgentExecutionSandboxes))
-      SubClassOf(ai:PersonalAgentRuntimes
-        ObjectSomeValuesFrom(ai:dependsOn ai:AgentMemoryLayers))
-      SubClassOf(ai:PersonalAgentRuntimes
-        ObjectSomeValuesFrom(ai:dependsOn ai:ToolUse))
-      SubClassOf(ai:PersonalAgentRuntimes
-        ObjectSomeValuesFrom(ai:dependsOn ai:LLMInference))
-      SubClassOf(ai:PersonalAgentRuntimes
-        ObjectSomeValuesFrom(ai:dependsOn ai:AgentEventStream))
+## Dependency Relationships
+    SubClassOf(ai:PersonalAgentRuntimes
+      ObjectSomeValuesFrom(ai:requires ai:LargeLanguageModel))
+    SubClassOf(ai:PersonalAgentRuntimes
+      ObjectSomeValuesFrom(ai:requires ai:VectorDatabase))
+    SubClassOf(ai:PersonalAgentRuntimes
+      ObjectSomeValuesFrom(ai:requires ai:AgentExecutionSandboxes))
+    SubClassOf(ai:PersonalAgentRuntimes
+      ObjectSomeValuesFrom(ai:dependsOn ai:AgentMemoryLayers))
+    SubClassOf(ai:PersonalAgentRuntimes
+      ObjectSomeValuesFrom(ai:dependsOn ai:ToolUse))
+    SubClassOf(ai:PersonalAgentRuntimes
+      ObjectSomeValuesFrom(ai:dependsOn ai:LLMInference))
+    SubClassOf(ai:PersonalAgentRuntimes
+      ObjectSomeValuesFrom(ai:dependsOn ai:AgentEventStream))
 
-  ## Capability Relationships
-      SubClassOf(ai:PersonalAgentRuntimes
-        ObjectSomeValuesFrom(ai:enables ai:AutonomousOperation))
-      SubClassOf(ai:PersonalAgentRuntimes
-        ObjectSomeValuesFrom(ai:enables ai:SelfImprovement))
-      SubClassOf(ai:PersonalAgentRuntimes
-        ObjectSomeValuesFrom(ai:enables ai:PrivacyPreservingAI))
-      SubClassOf(ai:PersonalAgentRuntimes
-        ObjectSomeValuesFrom(ai:enables ai:MultiAgentCoordination))
-      SubClassOf(ai:PersonalAgentRuntimes
-        ObjectSomeValuesFrom(ai:supports ai:NaturalLanguageProcessing))
-      SubClassOf(ai:PersonalAgentRuntimes
-        ObjectSomeValuesFrom(ai:supports ai:AgentEvaluationBenchmarks))
+## Capability Relationships
+    SubClassOf(ai:PersonalAgentRuntimes
+      ObjectSomeValuesFrom(ai:enables ai:AutonomousOperation))
+    SubClassOf(ai:PersonalAgentRuntimes
+      ObjectSomeValuesFrom(ai:enables ai:SelfImprovement))
+    SubClassOf(ai:PersonalAgentRuntimes
+      ObjectSomeValuesFrom(ai:enables ai:PrivacyPreservingAI))
+    SubClassOf(ai:PersonalAgentRuntimes
+      ObjectSomeValuesFrom(ai:enables ai:MultiAgentCoordination))
+    SubClassOf(ai:PersonalAgentRuntimes
+      ObjectSomeValuesFrom(ai:supports ai:NaturalLanguageProcessing))
+    SubClassOf(ai:PersonalAgentRuntimes
+      ObjectSomeValuesFrom(ai:supports ai:AgentEvaluationBenchmarks))
 
-  ## Implementation Relationships
-      SubClassOf(ai:PersonalAgentRuntimes
-        ObjectSomeValuesFrom(ai:implements ai:RetrievalAugmentedGeneration))
-      SubClassOf(ai:PersonalAgentRuntimes
-        ObjectSomeValuesFrom(ai:implements ai:ModelContextProtocol))
-      SubClassOf(ai:PersonalAgentRuntimes
-        ObjectSomeValuesFrom(ai:implements ai:AgenticAI))
-      SubClassOf(ai:PersonalAgentRuntimes
-        ObjectSomeValuesFrom(ai:uses ai:LargeLanguageModel))
-      SubClassOf(ai:PersonalAgentRuntimes
-        ObjectSomeValuesFrom(ai:uses ai:VectorDatabase))
-      SubClassOf(ai:PersonalAgentRuntimes
-        ObjectSomeValuesFrom(ai:uses ai:DockerContainer))
-      SubClassOf(ai:PersonalAgentRuntimes
-        ObjectSomeValuesFrom(ai:uses ai:BrowserAutomation))
-      SubClassOf(ai:PersonalAgentRuntimes
-        ObjectSomeValuesFrom(ai:uses ai:CodeExecution))
+## Implementation Relationships
+    SubClassOf(ai:PersonalAgentRuntimes
+      ObjectSomeValuesFrom(ai:implements ai:RetrievalAugmentedGeneration))
+    SubClassOf(ai:PersonalAgentRuntimes
+      ObjectSomeValuesFrom(ai:implements ai:ModelContextProtocol))
+    SubClassOf(ai:PersonalAgentRuntimes
+      ObjectSomeValuesFrom(ai:implements ai:AgenticAI))
+    SubClassOf(ai:PersonalAgentRuntimes
+      ObjectSomeValuesFrom(ai:uses ai:LargeLanguageModel))
+    SubClassOf(ai:PersonalAgentRuntimes
+      ObjectSomeValuesFrom(ai:uses ai:VectorDatabase))
+    SubClassOf(ai:PersonalAgentRuntimes
+      ObjectSomeValuesFrom(ai:uses ai:DockerContainer))
+    SubClassOf(ai:PersonalAgentRuntimes
+      ObjectSomeValuesFrom(ai:uses ai:BrowserAutomation))
+    SubClassOf(ai:PersonalAgentRuntimes
+      ObjectSomeValuesFrom(ai:uses ai:CodeExecution))
 
-  ## Reduction Relationships
-      SubClassOf(ai:PersonalAgentRuntimes
-        ObjectSomeValuesFrom(ai:reducesTo ai:AgentHarness))
-      SubClassOf(ai:PersonalAgentRuntimes
-        ObjectSomeValuesFrom(ai:reducesTo ai:AIAgentSystem))
+## Reduction Relationships
+    SubClassOf(ai:PersonalAgentRuntimes
+      ObjectSomeValuesFrom(ai:reducesTo ai:AgentHarness))
+    SubClassOf(ai:PersonalAgentRuntimes
+      ObjectSomeValuesFrom(ai:reducesTo ai:AIAgentSystem))
 
-  ## About
-  **Personal Agent Runtimes** represent the convergence of [[Large Language Model]] capabilities, [[Retrieval-Augmented Generation]] memory architectures, and [[Agentic AI]] orchestration patterns into systems designed for continuous, autonomous operation on behalf of an individual user. Where conventional AI assistants are stateless — each conversation begins fresh from the model's training weights — personal runtimes maintain persistent state across sessions: they remember what you told them last week, they have already read all your Obsidian notes and email archives, they are monitoring your calendar, and they can take autonomous action in the background without requiring your active participation in a chat session. This always-on orientation distinguishes the category sharply from task-bounded [[Terminal Coding Agents]] such as Claude Code or GitHub Copilot Workspace, which are designed for discrete, supervised coding tasks rather than continuous life management.
+## About
+**Personal Agent Runtimes** represent the convergence of [[Large Language Model]] capabilities, [[Retrieval-Augmented Generation]] memory architectures, and [[Agentic AI]] orchestration patterns into systems designed for continuous, autonomous operation on behalf of an individual user. Where conventional AI assistants are stateless — each conversation begins fresh from the model's training weights — personal runtimes maintain persistent state across sessions: they remember what you told them last week, they have already read all your Obsidian notes and email archives, they are monitoring your calendar, and they can take autonomous action in the background without requiring your active participation in a chat session. This always-on orientation distinguishes the category sharply from task-bounded [[Terminal Coding Agents]] such as Claude Code or GitHub Copilot Workspace, which are designed for discrete, supervised coding tasks rather than continuous life management.
 
-  The conceptual lineage of personal agent runtimes traces to two traditions. The first is the personal information management (PIM) tradition: systems like Memex (Vannevar Bush, 1945), Knowledge Navigator (Apple, 1987), and Microsoft's MyLifeBits project (Bell and Gemmell, 2007) envisioned a persistent computational system that accumulates and retrieves everything its user knows. The second is the autonomous software agent tradition from multi-agent systems research (Wooldridge and Jennings, 1995), which formalised the architecture of reactive agents operating within [[Event Loop]] perception-action cycles. Personal runtimes fuse both traditions: they accumulate personal knowledge via [[Vector Database]] indexing of documents, email, and browser history, and they act autonomously via [[Tool Use]] subsystems that can invoke shell commands, browser sessions, APIs, and sub-agents. The arrival of GPT-4 class [[Large Language Model]] quality in 2023 made these systems viable for general users, catalysing a wave of open-source personal runtime projects through 2024–2025.
+The conceptual lineage of personal agent runtimes traces to two traditions. The first is the personal information management (PIM) tradition: systems like Memex (Vannevar Bush, 1945), Knowledge Navigator (Apple, 1987), and Microsoft's MyLifeBits project (Bell and Gemmell, 2007) envisioned a persistent computational system that accumulates and retrieves everything its user knows. The second is the autonomous software agent tradition from multi-agent systems research (Wooldridge and Jennings, 1995), which formalised the architecture of reactive agents operating within [[Event Loop]] perception-action cycles. Personal runtimes fuse both traditions: they accumulate personal knowledge via [[Vector Database]] indexing of documents, email, and browser history, and they act autonomously via [[Tool Use]] subsystems that can invoke shell commands, browser sessions, APIs, and sub-agents. The arrival of GPT-4 class [[Large Language Model]] quality in 2023 made these systems viable for general users, catalysing a wave of open-source personal runtime projects through 2024–2025.
 
-  The [[Agent Harness]] architecture of a personal runtime divides responsibility between the model and the harness in a principled way: the [[Large Language Model]] provides language understanding, instruction following, and general reasoning; the harness provides persistence, tool routing, [[Permission Governance]], loop management, and failure recovery. This division means personal runtimes are model-agnostic — Khoj, for instance, supports GPT-4o, Claude 3.x, Gemini 1.5 Pro, and local Ollama instances interchangeably. The [[Model Context Protocol]] (MCP), donated to the Agentic AI Foundation in December 2025 and endorsed by Anthropic, OpenAI, Google DeepMind, Microsoft, and AWS, has emerged as the standard integration layer for connecting personal runtimes to external tools and data sources, replacing the prior era of framework-specific plugin systems with a universal server-client protocol that any MCP-compliant runtime can consume.
+The [[Agent Harness]] architecture of a personal runtime divides responsibility between the model and the harness in a principled way: the [[Large Language Model]] provides language understanding, instruction following, and general reasoning; the harness provides persistence, tool routing, [[Permission Governance]], loop management, and failure recovery. This division means personal runtimes are model-agnostic — Khoj, for instance, supports GPT-4o, Claude 3.x, Gemini 1.5 Pro, and local Ollama instances interchangeably. The [[Model Context Protocol]] (MCP), donated to the Agentic AI Foundation in December 2025 and endorsed by Anthropic, OpenAI, Google DeepMind, Microsoft, and AWS, has emerged as the standard integration layer for connecting personal runtimes to external tools and data sources, replacing the prior era of framework-specific plugin systems with a universal server-client protocol that any MCP-compliant runtime can consume.
 
-  ## Components and Architecture
+## Components and Architecture
 
-  **Persistent Event Loop**
-  - The core runtime loop polls for user messages, scheduled tasks, webhook triggers, and background monitoring jobs; it dispatches each event to the LLM inference layer, processes tool-call responses, and records outcomes to the [[Agent Memory Layers]] store before returning control to the loop. Unlike a request-response web server, the personal runtime maintains in-flight state across multiple tool invocations within a single task turn.
-  - Concurrency models vary: Khoj uses Python asyncio with task queues; ElizaOS uses a Node.js event-driven runtime with World/Room context isolation; Agent Zero uses Docker-sandboxed sub-process execution; AIlice uses a hierarchical IACT (Interactive Agents Call Tree) for recursive agent spawning.
+**Persistent Event Loop**
+
+- The core runtime loop polls for user messages, scheduled tasks, webhook triggers, and background monitoring jobs; it dispatches each event to the LLM inference layer, processes tool-call responses, and records outcomes to the [[Agent Memory Layers]] store before returning control to the loop. Unlike a request-response web server, the personal runtime maintains in-flight state across multiple tool invocations within a single task turn.
+- Concurrency models vary: Khoj uses Python asyncio with task queues; ElizaOS uses a Node.js event-driven runtime with World/Room context isolation; Agent Zero uses Docker-sandboxed sub-process execution; AIlice uses a hierarchical IACT (Interactive Agents Call Tree) for recursive agent spawning.
 
   **Memory Architecture**
-  - **Working memory**: the LLM context window, populated by the harness with retrieved document chunks, recent conversation history, and injected tool results. Context management is the most critical harness responsibility: models with 128k–1M token windows still benefit from intelligent retrieval to keep costs and latency acceptable.
-  - **Episodic memory**: a [[Vector Database]] (typically ChromaDB, Qdrant, or pgvector) storing embedding-indexed chunks of the user's documents, conversations, and agent outputs. On each query, the harness performs ANN (approximate nearest neighbour) retrieval to inject the most relevant context snippets into the working memory window — the [[Retrieval-Augmented Generation]] pattern.
-  - **Semantic / [[Knowledge Base]] memory**: structured facts extracted from conversations and documents, stored in a graph or relational layer for precise lookup (dates, names, preferences, recurring commitments).
-  - **Procedural memory**: learned tool sequences and task routines. Agent Zero and AIlice support storing successful tool sequences as reusable procedures; OpenHarness uses MEMORY.md files as human-readable persistent state.
+
+- **Working memory**: the LLM context window, populated by the harness with retrieved document chunks, recent conversation history, and injected tool results. Context management is the most critical harness responsibility: models with 128k–1M token windows still benefit from intelligent retrieval to keep costs and latency acceptable.
+- **Episodic memory**: a [[Vector Database]] (typically ChromaDB, Qdrant, or pgvector) storing embedding-indexed chunks of the user's documents, conversations, and agent outputs. On each query, the harness performs ANN (approximate nearest neighbour) retrieval to inject the most relevant context snippets into the working memory window — the [[Retrieval-Augmented Generation]] pattern.
+- **Semantic / [[Knowledge Base]] memory**: structured facts extracted from conversations and documents, stored in a graph or relational layer for precise lookup (dates, names, preferences, recurring commitments).
+- **Procedural memory**: learned tool sequences and task routines. Agent Zero and AIlice support storing successful tool sequences as reusable procedures; OpenHarness uses MEMORY.md files as human-readable persistent state.
 
   **Tool Use Subsystem**
-  - Core tools common to all runtimes: web search (Tavily, SearXNG, or native browser), file I/O (read/write local files and cloud storage), calendar/email access, code execution (Python REPL, Bash shell), and API calling via HTTP requests.
-  - [[Browser Automation]]: Playwright or Selenium-backed browser control for web scraping, form filling, and login-gated services — critical for tasks that require UI navigation rather than API access.
-  - [[Code Execution]] sandboxes: most runtimes now provide isolated execution environments (Docker containers, E2B sandboxes, Daytona workspaces) to prevent malicious code from affecting the host system.
-  - Sub-agent delegation: personal runtimes can spawn ephemeral specialised agents for subtasks (research, code review, translation) and collect their results — a lightweight version of [[Multi-Agent Orchestration Frameworks]].
+
+- Core tools common to all runtimes: web search (Tavily, SearXNG, or native browser), file I/O (read/write local files and cloud storage), calendar/email access, code execution (Python REPL, Bash shell), and API calling via HTTP requests.
+- [[Browser Automation]]: Playwright or Selenium-backed browser control for web scraping, form filling, and login-gated services — critical for tasks that require UI navigation rather than API access.
+- [[Code Execution]] sandboxes: most runtimes now provide isolated execution environments (Docker containers, E2B sandboxes, Daytona workspaces) to prevent malicious code from affecting the host system.
+- Sub-agent delegation: personal runtimes can spawn ephemeral specialised agents for subtasks (research, code review, translation) and collect their results — a lightweight version of [[Multi-Agent Orchestration Frameworks]].
 
   **Permission Governance**
-  - Three-tier permission model common across runtimes: (1) always-allowed read-only operations (search, read local files, retrieve memories); (2) human-in-the-loop operations requiring approval (send email, make purchases, delete files); (3) never-allowed destructive or privacy-violating operations (exfiltrate data, bypass OS security). OpenHarness implements multi-level permission modes with explicit whitelist/blacklist configuration per tool.
+
+- Three-tier permission model common across runtimes: (1) always-allowed read-only operations (search, read local files, retrieve memories); (2) human-in-the-loop operations requiring approval (send email, make purchases, delete files); (3) never-allowed destructive or privacy-violating operations (exfiltrate data, bypass OS security). OpenHarness implements multi-level permission modes with explicit whitelist/blacklist configuration per tool.
 
   ## Major Implementations (2024–2026)
 
@@ -122,12 +125,12 @@ Always-on self-hosted agent daemons that operate across chat platforms as persis
 
   ## Use Cases
 
-  - **Personal knowledge management**: indexing and querying personal note archives, research papers, email threads, and browser bookmarks with conversational natural-language queries, producing synthesised answers that link back to source documents.
-  - **Autonomous research workflows**: multi-step deep research pipelines that search the web, retrieve and synthesise academic papers, generate structured reports, and deliver them to email or Obsidian notes — all triggered by a single natural-language request and executing over hours without supervision.
-  - **Calendar and task management**: reading calendar events, suggesting time-blocking, drafting replies to meeting invitations, and maintaining to-do lists that incorporate context from conversations and documents.
-  - **Code assistance and automation**: personal runtimes such as Agent Zero can autonomously write scripts, run them in Docker sandboxes, debug failures, and iterate until the task completes — extending [[Terminal Coding Agents]] capabilities into longer-horizon autonomous engineering tasks.
-  - **Web3 and on-chain operations**: ElizaOS-based agents manage social media posting, on-chain trading, liquidity provision, and DAO governance participation autonomously, with blockchain wallet integration as a first-class capability.
-  - **Scheduled automations**: digest emails, summarise news, monitor RSS feeds, check health metrics — recurring tasks that execute on cron schedules without user initiation.
+- **Personal knowledge management**: indexing and querying personal note archives, research papers, email threads, and browser bookmarks with conversational natural-language queries, producing synthesised answers that link back to source documents.
+- **Autonomous research workflows**: multi-step deep research pipelines that search the web, retrieve and synthesise academic papers, generate structured reports, and deliver them to email or Obsidian notes — all triggered by a single natural-language request and executing over hours without supervision.
+- **Calendar and task management**: reading calendar events, suggesting time-blocking, drafting replies to meeting invitations, and maintaining to-do lists that incorporate context from conversations and documents.
+- **Code assistance and automation**: personal runtimes such as Agent Zero can autonomously write scripts, run them in Docker sandboxes, debug failures, and iterate until the task completes — extending [[Terminal Coding Agents]] capabilities into longer-horizon autonomous engineering tasks.
+- **Web3 and on-chain operations**: ElizaOS-based agents manage social media posting, on-chain trading, liquidity provision, and DAO governance participation autonomously, with blockchain wallet integration as a first-class capability.
+- **Scheduled automations**: digest emails, summarise news, monitor RSS feeds, check health metrics — recurring tasks that execute on cron schedules without user initiation.
 
   ## Academic Context
 
@@ -153,12 +156,12 @@ Always-on self-hosted agent daemons that operate across chat platforms as persis
 
   ## Future Directions (2026–2030)
 
-  - **On-device personal runtimes**: as edge inference improves (Apple Silicon, Qualcomm NPUs, NVIDIA Jetson), personal runtimes will run fully on consumer hardware without any cloud dependency, enabling zero-data-egress personal AI. Khoj's local mode and Agent Zero's Docker architecture position them well for this transition.
-  - **Proactive agency**: current runtimes are primarily reactive (user initiates a task). Next-generation runtimes will monitor event streams (email, calendar, news, health sensors) and proactively surface relevant information or take preprogrammed autonomous actions without explicit user prompting.
-  - **Continuous [[Self-Improvement]]**: runtimes will learn from user corrections, building personalised tool-use strategies and communication styles via lightweight [[Reinforcement Learning]] from human feedback loops operating over weeks and months of interaction.
-  - **Multi-runtime federation**: personal runtimes will communicate peer-to-peer via A2A and MCP protocols, enabling collaborative tasks between users' agents (e.g., two people's runtimes negotiating a meeting time or co-authoring a document).
-  - **Regulatory compliance by design**: EU AI Act and UK AI regulation will require personal runtimes to maintain explainable action logs, provide opt-out mechanisms, and implement data minimisation — driving architectures where the [[Agent Event Stream]] is a first-class, auditable record of all autonomous actions.
-  - **Embodied personal agents**: integration of personal runtimes with smart-home IoT infrastructure, robotics platforms, and AR/VR interfaces will extend agency from the digital to the physical domain.
+- **On-device personal runtimes**: as edge inference improves (Apple Silicon, Qualcomm NPUs, NVIDIA Jetson), personal runtimes will run fully on consumer hardware without any cloud dependency, enabling zero-data-egress personal AI. Khoj's local mode and Agent Zero's Docker architecture position them well for this transition.
+- **Proactive agency**: current runtimes are primarily reactive (user initiates a task). Next-generation runtimes will monitor event streams (email, calendar, news, health sensors) and proactively surface relevant information or take preprogrammed autonomous actions without explicit user prompting.
+- **Continuous [[Self-Improvement]]**: runtimes will learn from user corrections, building personalised tool-use strategies and communication styles via lightweight [[Reinforcement Learning]] from human feedback loops operating over weeks and months of interaction.
+- **Multi-runtime federation**: personal runtimes will communicate peer-to-peer via A2A and MCP protocols, enabling collaborative tasks between users' agents (e.g., two people's runtimes negotiating a meeting time or co-authoring a document).
+- **Regulatory compliance by design**: EU AI Act and UK AI regulation will require personal runtimes to maintain explainable action logs, provide opt-out mechanisms, and implement data minimisation — driving architectures where the [[Agent Event Stream]] is a first-class, auditable record of all autonomous actions.
+- **Embodied personal agents**: integration of personal runtimes with smart-home IoT infrastructure, robotics platforms, and AR/VR interfaces will extend agency from the digital to the physical domain.
 
   ## Research and Literature
 
@@ -190,5 +193,5 @@ Always-on self-hosted agent daemons that operate across chat platforms as persis
   26. Wang, G., Xie, Y., Jiang, Y., Mandlekar, A., Xiao, C., Zhu, Y., Fan, L., & Anandkumar, A. (2024). "Voyager: An Open-Ended Embodied Agent with Large Language Models." *Transactions on Machine Learning Research*. https://arxiv.org/abs/2305.16291
   27. AI Communications (2025). "Special Issue: Multi-Agent Systems Research in the United Kingdom." https://www.turing.ac.uk/research/research-programmes/artificial-intelligence-ai/special-issue-multi-agent-systems-research-uk
 
-- ### Provenance
+### Provenance
 

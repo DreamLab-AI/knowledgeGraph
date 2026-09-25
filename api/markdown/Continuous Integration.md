@@ -1,108 +1,114 @@
-
 Continuous Integration (CI) is a software engineering practice in which developers frequently merge code changes into a shared repository — typically multiple times per day — triggering automated build and test pipelines that provide rapid feedback on integration correctness. CI reduces the cost and risk of integration by detecting conflicts, regressions, and build failures early, and serves as the foundation of broader continuous delivery and DevOps workflows. Originating in Extreme Programming, the practice has become a cornerstone of modern software delivery, enabling teams to maintain a consistently releasable main branch through disciplined automation.
 
-- ### Overview
-  - **Origin and motivation**
-    - Continuous Integration was formalised by Kent Beck in the context of [[Extreme Programming]] (XP) in the late 1990s, and popularised by Martin Fowler's canonical 2000 essay "Continuous Integration." The practice arose as a direct response to "integration hell" — the painful, multi-day or multi-week ordeal of merging divergent branches that had evolved independently over long periods, characteristic of [[Waterfall Development]].
-    - Fowler articulated a simple but transformative principle: if integration is painful, do it more often, not less. Frequent small integrations are far cheaper to resolve than infrequent large ones.
-  - **Why it matters**
-    - CI shifts defect detection left in the [[Software Delivery Lifecycle]], where the cost of fixing a bug is orders of magnitude lower than after deployment. Teams maintaining a green main branch can release at any time, supporting business agility and risk reduction.
-    - Without CI, parallel development branches accumulate divergence, leading to merge conflicts and delayed integration risk. CI enforces a discipline where the mainline is always in a known-good state.
-    - CI is also a prerequisite for [[Trunk-Based Development]], a branching strategy where all developers commit to a single shared branch with short-lived feature branches, maximising integration frequency.
-  - **How it works**
-    - A CI system continuously monitors a [[Version Control]] repository (typically [[Git]]-based) for new commits or pull requests. On detecting a change, a build server clones the repository, resolves dependencies, compiles the artefacts, and executes a graduated suite of automated tests — unit, integration, and optionally end-to-end. Results are reported back to developers within minutes via dashboard, email, or chat notification.
-    - Build configuration is declared as [[Pipeline as Code]] — typically YAML manifests (e.g. `.github/workflows/ci.yml` for [[GitHub Actions]], `.gitlab-ci.yml` for GitLab CI) checked into the repository alongside application code, enabling [[Infrastructure as Code]] principles for delivery pipelines.
+### Overview
 
-- ### Key Components
-  - **Version Control integration**
-    - A CI pipeline is triggered by events in [[Version Control]] systems — push to a branch, opening of a pull request, or merge to the default branch. [[Git]] webhooks notify the CI server of changes in real time.
-    - Branch protection rules enforce that CI must pass before a merge is permitted, creating a quality gate that prevents regressions from entering the mainline.
-  - **Build Automation**
-    - [[Build Automation]] compiles source code, resolves dependency graphs, produces artefacts, and packages the application for testing. Tools include Gradle, Maven, Make, Bazel, and language-specific package managers.
-    - Reproducible builds — where the same source always produces the same binary — are a key goal, often achieved through hermetic build environments provided by [[Docker]] containers.
-  - **Automated Testing**
-    - [[Automated Testing]] is the most critical CI component. A well-structured test pyramid comprises unit tests (fast, numerous, isolated), integration tests (verify component interactions), and a smaller set of end-to-end or acceptance tests.
-    - [[Test-Driven Development]] (TDD) pairs naturally with CI: tests written before implementation code ensure the test suite grows alongside the codebase, maintaining meaningful coverage.
-    - [[Shift-Left Testing]] — moving testing earlier in the lifecycle — is operationalised by CI: tests run on every commit rather than only before release.
-  - **Static and Security Analysis**
-    - [[Static Code Analysis]] tools (linters, type checkers, style formatters) run as part of CI to enforce code quality standards without human review overhead.
-    - [[Security Scanning]] is now routinely embedded in CI pipelines: SAST (Static Application Security Testing) tools such as Semgrep, SCA (Software Composition Analysis) for dependency vulnerability scanning, and secret detection tools prevent sensitive credentials from being committed.
-  - **Artefact management**
-    - Successful CI builds produce versioned artefacts — container images, binaries, packages — stored in artefact registries. These artefacts are the canonical inputs to [[Continuous Delivery]] pipelines, ensuring that what was tested is what gets deployed.
-  - **Feedback mechanisms**
-    - Rapid, actionable feedback is essential. CI systems report status via PR checks, build badges, Slack or Teams notifications, and email. Mean time to feedback should ideally be under ten minutes for the critical path.
-    - [[Observability]] tooling fed by CI metrics (build duration trends, flaky test rates, failure rates by author) provides continuous insight into pipeline health.
+- **Origin and motivation**
+  - Continuous Integration was formalised by Kent Beck in the context of [[Extreme Programming]] (XP) in the late 1990s, and popularised by Martin Fowler's canonical 2000 essay "Continuous Integration." The practice arose as a direct response to "integration hell" — the painful, multi-day or multi-week ordeal of merging divergent branches that had evolved independently over long periods, characteristic of [[Waterfall Development]].
+  - Fowler articulated a simple but transformative principle: if integration is painful, do it more often, not less. Frequent small integrations are far cheaper to resolve than infrequent large ones.
+- **Why it matters**
+  - CI shifts defect detection left in the [[Software Delivery Lifecycle]], where the cost of fixing a bug is orders of magnitude lower than after deployment. Teams maintaining a green main branch can release at any time, supporting business agility and risk reduction.
+  - Without CI, parallel development branches accumulate divergence, leading to merge conflicts and delayed integration risk. CI enforces a discipline where the mainline is always in a known-good state.
+  - CI is also a prerequisite for [[Trunk-Based Development]], a branching strategy where all developers commit to a single shared branch with short-lived feature branches, maximising integration frequency.
+- **How it works**
+  - A CI system continuously monitors a [[Version Control]] repository (typically [[Git]]-based) for new commits or pull requests. On detecting a change, a build server clones the repository, resolves dependencies, compiles the artefacts, and executes a graduated suite of automated tests — unit, integration, and optionally end-to-end. Results are reported back to developers within minutes via dashboard, email, or chat notification.
+  - Build configuration is declared as [[Pipeline as Code]] — typically YAML manifests (e.g. `.github/workflows/ci.yml` for [[GitHub Actions]], `.gitlab-ci.yml` for GitLab CI) checked into the repository alongside application code, enabling [[Infrastructure as Code]] principles for delivery pipelines.
 
-- ### Platforms and Tools
-  - **Hosted CI services**
-    - [[GitHub Actions]] (2018–present): tightly integrated with GitHub repositories; marketplace of reusable actions; cloud-hosted and self-hosted runners.
-    - GitLab CI/CD: built into GitLab, strong for monorepos, supports auto-DevOps.
-    - CircleCI, Travis CI: early hosted CI pioneers that popularised cloud-native CI for open-source projects.
-    - Buildkite: hybrid model with cloud control plane and self-hosted agents, popular for large enterprises.
-    - Harness CI: AI-assisted pipeline optimisation and test intelligence.
-  - **Self-hosted CI servers**
-    - [[Jenkins]]: the most widely deployed self-hosted CI server, open-source, with a vast plugin ecosystem. Originated as Hudson (2005), forked as Jenkins in 2011.
-    - TeamCity (JetBrains), Bamboo (Atlassian): enterprise CI servers with strong IDE and issue-tracker integration.
-  - **Build and containerisation tooling**
-    - [[Docker]]: provides reproducible, isolated build environments; CI pipelines build and push container images as artefacts.
-    - [[Kubernetes]]: ephemeral CI runners on Kubernetes (via tools like Tekton, Argo Workflows) enable elastic scaling of build infrastructure.
-    - Bazel, Nx: advanced build systems with fine-grained dependency graphs, enabling remote caching and distributed builds for large monorepos.
-  - **Test frameworks**
-    - Language-specific: pytest (Python), JUnit (Java), Jest (JavaScript), RSpec (Ruby), go test (Go).
-    - Cross-cutting: Selenium, Playwright for browser automation; Testcontainers for integration testing with real dependencies.
+### Key Components
 
-- ### Applications and Use Cases
-  - **Web and mobile application development**
-    - CI is the default delivery mechanism for web applications: every pull request triggers build, lint, unit test, and integration test runs; merged code auto-deploys to a staging environment via [[Continuous Delivery]].
-    - Mobile CI (Fastlane, Bitrise, App Center) automates iOS and Android builds, code signing, and test device farms.
-  - **Microservices and distributed systems**
-    - [[Containerisation]] with [[Docker]] makes CI for microservices tractable: each service has its own CI pipeline producing versioned container images, enabling independent deployment cadences and eliminating environment drift.
-    - Integration tests across service boundaries use Docker Compose or Kubernetes-based ephemeral environments to verify API contracts.
-  - **MLOps and AI/ML pipelines**
-    - CI extends to [[MLOps]] as "continuous training" and "continuous evaluation": dataset validation, model training smoke tests, and evaluation metric regression checks (e.g. accuracy must not drop below a threshold) run as CI stages.
-    - [[Model Evaluation]] gates — automated checks that a new model version meets performance benchmarks before promotion — mirror the role of test suites in software CI.
-    - Reproducibility of model training environments is enforced through containerised CI runners with pinned dependencies and data version control.
-  - **Infrastructure and platform engineering**
-    - [[Infrastructure as Code]] (Terraform, Pulumi, Ansible) repositories are managed with CI: plan/validate runs on pull requests, automated policy checks via Open Policy Agent, and integration tests against ephemeral cloud environments.
-    - Security CI (DevSecOps) embeds vulnerability scanning, compliance checks, and SBOM generation into every build.
-  - **Open-source projects**
-    - CI is near-universal in open-source: contributor pull requests automatically receive build and test feedback, reducing maintainer review burden and ensuring contributions meet quality standards.
-    - Matrix builds (testing across multiple language versions, operating systems, dependency versions) are straightforward with modern CI platforms.
+- **Version Control integration**
+  - A CI pipeline is triggered by events in [[Version Control]] systems — push to a branch, opening of a pull request, or merge to the default branch. [[Git]] webhooks notify the CI server of changes in real time.
+  - Branch protection rules enforce that CI must pass before a merge is permitted, creating a quality gate that prevents regressions from entering the mainline.
+- **Build Automation**
+  - [[Build Automation]] compiles source code, resolves dependency graphs, produces artefacts, and packages the application for testing. Tools include Gradle, Maven, Make, Bazel, and language-specific package managers.
+  - Reproducible builds — where the same source always produces the same binary — are a key goal, often achieved through hermetic build environments provided by [[Docker]] containers.
+- **Automated Testing**
+  - [[Automated Testing]] is the most critical CI component. A well-structured test pyramid comprises unit tests (fast, numerous, isolated), integration tests (verify component interactions), and a smaller set of end-to-end or acceptance tests.
+  - [[Test-Driven Development]] (TDD) pairs naturally with CI: tests written before implementation code ensure the test suite grows alongside the codebase, maintaining meaningful coverage.
+  - [[Shift-Left Testing]] — moving testing earlier in the lifecycle — is operationalised by CI: tests run on every commit rather than only before release.
+- **Static and Security Analysis**
+  - [[Static Code Analysis]] tools (linters, type checkers, style formatters) run as part of CI to enforce code quality standards without human review overhead.
+  - [[Security Scanning]] is now routinely embedded in CI pipelines: SAST (Static Application Security Testing) tools such as Semgrep, SCA (Software Composition Analysis) for dependency vulnerability scanning, and secret detection tools prevent sensitive credentials from being committed.
+- **Artefact management**
+  - Successful CI builds produce versioned artefacts — container images, binaries, packages — stored in artefact registries. These artefacts are the canonical inputs to [[Continuous Delivery]] pipelines, ensuring that what was tested is what gets deployed.
+- **Feedback mechanisms**
+  - Rapid, actionable feedback is essential. CI systems report status via PR checks, build badges, Slack or Teams notifications, and email. Mean time to feedback should ideally be under ten minutes for the critical path.
+  - [[Observability]] tooling fed by CI metrics (build duration trends, flaky test rates, failure rates by author) provides continuous insight into pipeline health.
 
-- ### Standards and Context
-  - **DORA metrics**
-    - The DevOps Research and Assessment (DORA) programme identifies CI as a key technical capability driving organisational performance. Its metrics — deployment frequency, lead time for changes, mean time to restore, and change failure rate — are directly improved by robust CI practices.
-  - **SLSA (Supply-chain Levels for Software Artefacts)**
-    - The SLSA framework (Google, OpenSSF) defines provenance requirements for software builds. CI pipelines that produce signed provenance attestations contribute to SLSA compliance, linking build outputs to their source inputs cryptographically.
-  - **OpenSSF Scorecard**
-    - The Open Source Security Foundation's Scorecard project checks CI configuration for security best practices (pinned actions, branch protection, CI passing on all PRs), providing a quantifiable security posture score for open-source repositories.
-  - **ISO/IEC 25010 (Software Quality)**
-    - CI directly supports the maintainability and reliability quality characteristics defined in ISO/IEC 25010 by ensuring continuous verification of software correctness.
-  - **Historical milestones**
-    - 1998: Kent Beck includes CI as a practice in Extreme Programming.
-    - 2000: Martin Fowler's "Continuous Integration" essay formalises the practice.
-    - 2001: CruiseControl — first open-source CI server — released.
-    - 2005: Hudson released (later forked as [[Jenkins]] in 2011).
-    - 2011: Travis CI launches hosted CI for GitHub open-source projects.
-    - 2018: [[GitHub Actions]] launches, consolidating CI/CD within GitHub.
-    - 2020s: AI-assisted CI (test selection, flake detection, pipeline optimisation) emerges as a distinct capability.
+### Platforms and Tools
 
-- ### Current Landscape (2026)
-  - In February 2026 GitHub launched Agentic Workflows in technical preview under the banner "Continuous AI", embedding AI agents (Copilot, Claude Code, Codex) directly into GitHub Actions; developers write Markdown intent that `gh aw compile` turns into executable YAML, shifting CI from human-in-the-loop to human-on-the-loop where agents autonomously generate tests, investigate build failures and open PRs for review.
-  - Software supply-chain hardening became the defining CI theme after the March 2025 compromise of tj-actions/changed-files (CVE-2025-30066) and reviewdog/action-setup (CVE-2025-30154), which hit over 23,000 repositories and were added to CISA's Known Exploited Vulnerabilities catalogue, and the August 2025 Nx build-system attack that specifically targeted AI coding tools' credential files.
-  - GitHub's 2026 Actions security roadmap (published March 2026) introduces structural defences: a workflow-level `dependencies:` section that locks direct and transitive actions to commit SHAs with cryptographic hashes, org-level ruleset execution policies, fine-grained secret scoping, plus infrastructure controls in the Actions Data Stream telemetry and a Layer-7 native egress firewall enforced outside the runner VM.
-  - actions/checkout v7 (effective 18 June 2026) blocks fork pull-request checkouts in privileged pull_request_target and workflow_run contexts by default, requiring an explicit allow-unsafe-pr-checkout opt-out, and the change is being backported to all supported major versions.
-  - Build provenance and attestation have consolidated as CI standards: GitHub Artifact Attestations (Sigstore-based, keyless OIDC signing) deliver SLSA v1.0 Build Level 2 out of the box and Level 3 with reusable workflows, verification went monotonic in February 2025, and Google Cloud Build now emits SLSA Level 3 provenance natively, with in-toto/cosign/Kyverno enforcing verification at deployment.
-  - New CI security threats emerged around embedded agents: researchers documented the "Comment and Control" prompt-injection attack class in April 2026, showing a single malicious PR comment could exfiltrate secrets such as GITHUB_TOKEN and ANTHROPIC_API_KEY into public logs, prompting defence patterns of sandboxed ephemeral agent containers, read-only-by-default execution, scoped expiring tokens and runner-level monitoring like StepSecurity Harden-Runner.
-  - Adoption and cost remain open challenges: a June 2026 Kaspersky study found over 250,000 potential CI/CD misconfigurations (mostly overly broad permissions and missing version pinning), while early agentic-workflow token benchmarks showed wide variance (roughly 12 million tokens per Codex run versus 600,000 for Claude-powered runs), leaving governance, auditability and economics as the 2026 frontier.
+- **Hosted CI services**
+  - [[GitHub Actions]] (2018–present): tightly integrated with GitHub repositories; marketplace of reusable actions; cloud-hosted and self-hosted runners.
+  - GitLab CI/CD: built into GitLab, strong for monorepos, supports auto-DevOps.
+  - CircleCI, Travis CI: early hosted CI pioneers that popularised cloud-native CI for open-source projects.
+  - Buildkite: hybrid model with cloud control plane and self-hosted agents, popular for large enterprises.
+  - Harness CI: AI-assisted pipeline optimisation and test intelligence.
+- **Self-hosted CI servers**
+  - [[Jenkins]]: the most widely deployed self-hosted CI server, open-source, with a vast plugin ecosystem. Originated as Hudson (2005), forked as Jenkins in 2011.
+  - TeamCity (JetBrains), Bamboo (Atlassian): enterprise CI servers with strong IDE and issue-tracker integration.
+- **Build and containerisation tooling**
+  - [[Docker]]: provides reproducible, isolated build environments; CI pipelines build and push container images as artefacts.
+  - [[Kubernetes]]: ephemeral CI runners on Kubernetes (via tools like Tekton, Argo Workflows) enable elastic scaling of build infrastructure.
+  - Bazel, Nx: advanced build systems with fine-grained dependency graphs, enabling remote caching and distributed builds for large monorepos.
+- **Test frameworks**
+  - Language-specific: pytest (Python), JUnit (Java), Jest (JavaScript), RSpec (Ruby), go test (Go).
+  - Cross-cutting: Selenium, Playwright for browser automation; Testcontainers for integration testing with real dependencies.
 
-- ### References
-  - 1. GitHub (2026). What's coming to our GitHub Actions 2026 security roadmap. https://github.blog/news-insights/product-news/whats-coming-to-our-github-actions-2026-security-roadmap/
-  - 2. Cloud Security Alliance (2026). Prompt Injection in AI-Powered GitHub Actions. https://labs.cloudsecurityalliance.org/research/csa-research-note-ai-github-actions-security-20260503-csa-st/
-  - 3. AgentMarketCap (2026). GitHub Actions Goes Agentic: AI Takes Over CI/CD in 2026. https://agentmarketcap.ai/blog/2026/04/07/github-actions-agentic-ci-cd-ai-native-pipelines
-  - 4. Rescana (2026). GitHub Actions Updates Checkout to Block Forked Pull Request Supply Chain Attacks. https://www.rescana.com/post/github-actions-updates-checkout-to-block-forked-pull-request-supply-chain-attacks-in-ci-cd-workflows
-  - 5. GitHub Docs (2026). Artifact attestations. https://docs.github.com/en/actions/concepts/security/artifact-attestations
-  - 6. Kaspersky (2026). Kaspersky Uncovers Over 250,000 Potential Security Issues in GitHub Actions Workflows. https://www.kaspersky.com/about/press-releases/kaspersky-uncovers-over-250000-potential-security-issues-in-github-actions-workflows
+### Applications and Use Cases
 
-- ### Provenance
+- **Web and mobile application development**
+  - CI is the default delivery mechanism for web applications: every pull request triggers build, lint, unit test, and integration test runs; merged code auto-deploys to a staging environment via [[Continuous Delivery]].
+  - Mobile CI (Fastlane, Bitrise, App Center) automates iOS and Android builds, code signing, and test device farms.
+- **Microservices and distributed systems**
+  - [[Containerisation]] with [[Docker]] makes CI for microservices tractable: each service has its own CI pipeline producing versioned container images, enabling independent deployment cadences and eliminating environment drift.
+  - Integration tests across service boundaries use Docker Compose or Kubernetes-based ephemeral environments to verify API contracts.
+- **MLOps and AI/ML pipelines**
+  - CI extends to [[MLOps]] as "continuous training" and "continuous evaluation": dataset validation, model training smoke tests, and evaluation metric regression checks (e.g. accuracy must not drop below a threshold) run as CI stages.
+  - [[Model Evaluation]] gates — automated checks that a new model version meets performance benchmarks before promotion — mirror the role of test suites in software CI.
+  - Reproducibility of model training environments is enforced through containerised CI runners with pinned dependencies and data version control.
+- **Infrastructure and platform engineering**
+  - [[Infrastructure as Code]] (Terraform, Pulumi, Ansible) repositories are managed with CI: plan/validate runs on pull requests, automated policy checks via Open Policy Agent, and integration tests against ephemeral cloud environments.
+  - Security CI (DevSecOps) embeds vulnerability scanning, compliance checks, and SBOM generation into every build.
+- **Open-source projects**
+  - CI is near-universal in open-source: contributor pull requests automatically receive build and test feedback, reducing maintainer review burden and ensuring contributions meet quality standards.
+  - Matrix builds (testing across multiple language versions, operating systems, dependency versions) are straightforward with modern CI platforms.
+
+### Standards and Context
+
+- **DORA metrics**
+  - The DevOps Research and Assessment (DORA) programme identifies CI as a key technical capability driving organisational performance. Its metrics — deployment frequency, lead time for changes, mean time to restore, and change failure rate — are directly improved by robust CI practices.
+- **SLSA (Supply-chain Levels for Software Artefacts)**
+  - The SLSA framework (Google, OpenSSF) defines provenance requirements for software builds. CI pipelines that produce signed provenance attestations contribute to SLSA compliance, linking build outputs to their source inputs cryptographically.
+- **OpenSSF Scorecard**
+  - The Open Source Security Foundation's Scorecard project checks CI configuration for security best practices (pinned actions, branch protection, CI passing on all PRs), providing a quantifiable security posture score for open-source repositories.
+- **ISO/IEC 25010 (Software Quality)**
+  - CI directly supports the maintainability and reliability quality characteristics defined in ISO/IEC 25010 by ensuring continuous verification of software correctness.
+- **Historical milestones**
+  - 1998: Kent Beck includes CI as a practice in Extreme Programming.
+  - 2000: Martin Fowler's "Continuous Integration" essay formalises the practice.
+  - 2001: CruiseControl — first open-source CI server — released.
+  - 2005: Hudson released (later forked as [[Jenkins]] in 2011).
+  - 2011: Travis CI launches hosted CI for GitHub open-source projects.
+  - 2018: [[GitHub Actions]] launches, consolidating CI/CD within GitHub.
+  - 2020s: AI-assisted CI (test selection, flake detection, pipeline optimisation) emerges as a distinct capability.
+
+### Current Landscape (2026)
+
+- In February 2026 GitHub launched Agentic Workflows in technical preview under the banner "Continuous AI", embedding AI agents (Copilot, Claude Code, Codex) directly into GitHub Actions; developers write Markdown intent that `gh aw compile` turns into executable YAML, shifting CI from human-in-the-loop to human-on-the-loop where agents autonomously generate tests, investigate build failures and open PRs for review.
+- Software supply-chain hardening became the defining CI theme after the March 2025 compromise of tj-actions/changed-files (CVE-2025-30066) and reviewdog/action-setup (CVE-2025-30154), which hit over 23,000 repositories and were added to CISA's Known Exploited Vulnerabilities catalogue, and the August 2025 Nx build-system attack that specifically targeted AI coding tools' credential files.
+- GitHub's 2026 Actions security roadmap (published March 2026) introduces structural defences: a workflow-level `dependencies:` section that locks direct and transitive actions to commit SHAs with cryptographic hashes, org-level ruleset execution policies, fine-grained secret scoping, plus infrastructure controls in the Actions Data Stream telemetry and a Layer-7 native egress firewall enforced outside the runner VM.
+- actions/checkout v7 (effective 18 June 2026) blocks fork pull-request checkouts in privileged pull_request_target and workflow_run contexts by default, requiring an explicit allow-unsafe-pr-checkout opt-out, and the change is being backported to all supported major versions.
+- Build provenance and attestation have consolidated as CI standards: GitHub Artifact Attestations (Sigstore-based, keyless OIDC signing) deliver SLSA v1.0 Build Level 2 out of the box and Level 3 with reusable workflows, verification went monotonic in February 2025, and Google Cloud Build now emits SLSA Level 3 provenance natively, with in-toto/cosign/Kyverno enforcing verification at deployment.
+- New CI security threats emerged around embedded agents: researchers documented the "Comment and Control" prompt-injection attack class in April 2026, showing a single malicious PR comment could exfiltrate secrets such as GITHUB_TOKEN and ANTHROPIC_API_KEY into public logs, prompting defence patterns of sandboxed ephemeral agent containers, read-only-by-default execution, scoped expiring tokens and runner-level monitoring like StepSecurity Harden-Runner.
+- Adoption and cost remain open challenges: a June 2026 Kaspersky study found over 250,000 potential CI/CD misconfigurations (mostly overly broad permissions and missing version pinning), while early agentic-workflow token benchmarks showed wide variance (roughly 12 million tokens per Codex run versus 600,000 for Claude-powered runs), leaving governance, auditability and economics as the 2026 frontier.
+
+### References
+
+- 1. GitHub (2026). What's coming to our GitHub Actions 2026 security roadmap. https://github.blog/news-insights/product-news/whats-coming-to-our-github-actions-2026-security-roadmap/
+- 2. Cloud Security Alliance (2026). Prompt Injection in AI-Powered GitHub Actions. https://labs.cloudsecurityalliance.org/research/csa-research-note-ai-github-actions-security-20260503-csa-st/
+- 3. AgentMarketCap (2026). GitHub Actions Goes Agentic: AI Takes Over CI/CD in 2026. https://agentmarketcap.ai/blog/2026/04/07/github-actions-agentic-ci-cd-ai-native-pipelines
+- 4. Rescana (2026). GitHub Actions Updates Checkout to Block Forked Pull Request Supply Chain Attacks. https://www.rescana.com/post/github-actions-updates-checkout-to-block-forked-pull-request-supply-chain-attacks-in-ci-cd-workflows
+- 5. GitHub Docs (2026). Artifact attestations. https://docs.github.com/en/actions/concepts/security/artifact-attestations
+- 6. Kaspersky (2026). Kaspersky Uncovers Over 250,000 Potential Security Issues in GitHub Actions Workflows. https://www.kaspersky.com/about/press-releases/kaspersky-uncovers-over-250000-potential-security-issues-in-github-actions-workflows
+
+### Provenance
 

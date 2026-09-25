@@ -1,10 +1,10 @@
-
 Digital Citizenship is a type of Virtual Society in the spatial computing domain.
 
-- ### Semantic Classification
+### Semantic Classification
 
-- ### Content
-  Digital Citizenship — content pending enrichment.
+### Content
 
-- ### Provenance
+Digital Citizenship — content pending enrichment.
+
+### Provenance
 

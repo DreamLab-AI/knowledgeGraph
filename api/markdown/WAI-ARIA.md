@@ -1,3 +1,2 @@
-
 WAI-ARIA (Web Accessibility Initiative Accessible Rich Internet Applications) is a W3C technical specification that defines a set of HTML attributes for roles, states, and properties, enabling assistive technologies such as screen readers to correctly interpret dynamic web content and custom user-interface widgets. It supplements native HTML semantics where markup alone cannot convey a component's purpose or current state, for example custom sliders, tab panels, and live regions. WAI-ARIA is a foundational standard underpinning modern web accessibility conformance.
 
