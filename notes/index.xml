@@ -10,61 +10,61 @@
     <link>https://narrativegoldmine.com/notes/</link>
     <guid>https://narrativegoldmine.com/notes/</guid>
     <description><![CDATA[ Published Corpus 8604 page(s) carry public: true and are published here. ]]></description>
-    <pubDate>Fri, 25 Sep 2026 13:21:08 GMT</pubDate>
+    <pubDate>Fri, 25 Sep 2026 13:55:23 GMT</pubDate>
+  </item><item>
+    <title>flossverse</title>
+    <link>https://narrativegoldmine.com/notes/working/flossverse</link>
+    <guid>https://narrativegoldmine.com/notes/working/flossverse</guid>
+    <description><![CDATA[  automatically published Summary With all this attention it seems timely to explore the potential ofrecent technologies, which can address collaborative mixed realityinteractions in itbusiness to business (B2B), itbusiness to customer(B2C), and the newer C2C (social commerce; itcreator to consumer,c... ]]></description>
+    <pubDate>Fri, 25 Sep 2026 13:55:23 GMT</pubDate>
+  </item><item>
+    <title>infrastructure</title>
+    <link>https://narrativegoldmine.com/notes/working/infrastructure</link>
+    <guid>https://narrativegoldmine.com/notes/working/infrastructure</guid>
+    <description><![CDATA[  automatically published Microsoft to launch AI hub in London (msn.com) “I know – through my close work with thought leaders in the UK Government, business community and academia – that the country is committed to advancing AI responsibly and with a safety-first commitment to drive investment, innov... ]]></description>
+    <pubDate>Fri, 25 Sep 2026 13:55:23 GMT</pubDate>
+  </item><item>
+    <title>latent space</title>
+    <link>https://narrativegoldmine.com/notes/working/latent-space</link>
+    <guid>https://narrativegoldmine.com/notes/working/latent-space</guid>
+    <description><![CDATA[  automatically published In the context of generative artificial intelligence (AI), a latent space is a high-dimensional space in which the model represents data as points. ]]></description>
+    <pubDate>Fri, 25 Sep 2026 13:55:23 GMT</pubDate>
+  </item><item>
+    <title>license</title>
+    <link>https://narrativegoldmine.com/notes/working/license</link>
+    <guid>https://narrativegoldmine.com/notes/working/license</guid>
+    <description><![CDATA[  John O’Hare LogSeq Knowledge Base by John O’Hare is marked with CC0 1.0 . ]]></description>
+    <pubDate>Fri, 25 Sep 2026 13:55:23 GMT</pubDate>
+  </item><item>
+    <title>multimodal</title>
+    <link>https://narrativegoldmine.com/notes/working/multimodal</link>
+    <guid>https://narrativegoldmine.com/notes/working/multimodal</guid>
+    <description><![CDATA[ OpenAI ChatGPT-4o (omni) Free to use, for everyone! Not private by default. True multi modality across video, images, and audio. ]]></description>
+    <pubDate>Fri, 25 Sep 2026 13:55:23 GMT</pubDate>
+  </item><item>
+    <title>ollama</title>
+    <link>https://narrativegoldmine.com/notes/working/ollama</link>
+    <guid>https://narrativegoldmine.com/notes/working/ollama</guid>
+    <description><![CDATA[  The Ollama repository on GitHub is a comprehensive, MIT-licensed platform for utilizing and managing large language models (LLMs) such as Llama 3.1, Mistral, Gemma 2, and others. ]]></description>
+    <pubDate>Fri, 25 Sep 2026 13:55:23 GMT</pubDate>
   </item><item>
     <title>p(doom)</title>
     <link>https://narrativegoldmine.com/notes/working/p(doom)</link>
     <guid>https://narrativegoldmine.com/notes/working/p(doom)</guid>
     <description><![CDATA[  automatically published p(doom) is the probability of an event called “doom” occurring. ]]></description>
-    <pubDate>Fri, 25 Sep 2026 13:21:08 GMT</pubDate>
+    <pubDate>Fri, 25 Sep 2026 13:55:23 GMT</pubDate>
   </item><item>
     <title>relighting</title>
     <link>https://narrativegoldmine.com/notes/working/relighting</link>
     <guid>https://narrativegoldmine.com/notes/working/relighting</guid>
     <description><![CDATA[  Image Based Lighting ComfyUI lllyasviel/IC-Light: More relighting! (github.com) Relighting Relight Better than Magnific - Relighting v5 (better UX) | ComfyUI Workflow (openart.ai) Magnific AI Relight is Worse than Open Source - YouTube relighting zju3dv.github.io/IntrinsicAnything/ relighting model... ]]></description>
-    <pubDate>Fri, 25 Sep 2026 13:21:08 GMT</pubDate>
+    <pubDate>Fri, 25 Sep 2026 13:55:23 GMT</pubDate>
   </item><item>
     <title>visionflow diagrams</title>
     <link>https://narrativegoldmine.com/notes/working/visionflow-diagrams</link>
     <guid>https://narrativegoldmine.com/notes/working/visionflow-diagrams</guid>
     <description><![CDATA[ VisionFlow Key Architecture Diagrams Audience: Technical ML engineers and researchers new to the project (done for today) Purpose: Understand how VisionFlow transforms OWL ontologies into GPU-accelerated 3D knowledge graph visualizations Core Innovation: Ontological relationships (SubClassOf, Disjoi... ]]></description>
-    <pubDate>Fri, 25 Sep 2026 13:21:08 GMT</pubDate>
-  </item><item>
-    <title>Spatial Computing</title>
-    <link>https://narrativegoldmine.com/notes/working/Spatial-Computing</link>
-    <guid>https://narrativegoldmine.com/notes/working/Spatial-Computing</guid>
-    <description><![CDATA[  automatically published Definition Simon Greenwold defined spatial computing in 2003 as human interaction with machines that manipulate referents to real objects. ]]></description>
-    <pubDate>Fri, 25 Sep 2026 13:21:08 GMT</pubDate>
-  </item><item>
-    <title>Speech and voice</title>
-    <link>https://narrativegoldmine.com/notes/working/Speech-and-voice</link>
-    <guid>https://narrativegoldmine.com/notes/working/Speech-and-voice</guid>
-    <description><![CDATA[  NVIDIA/NeMo: NeMo: a toolkit for conversational AI (github.com) [Canary NVIDIA NeMo](nvidia.github.io/NeMo/blogs/2024/2024-02-canary/) NeMo/tutorials/tts/FastPitch_Adapter_Finetuning.ipynb at main · NVIDIA/NeMo (github.com) ElevenLabs Audio Native OpenAI whisper local deploy realtime transciber hig... ]]></description>
-    <pubDate>Fri, 25 Sep 2026 13:21:08 GMT</pubDate>
-  </item><item>
-    <title>Stable Coins</title>
-    <link>https://narrativegoldmine.com/notes/working/Stable-Coins</link>
-    <guid>https://narrativegoldmine.com/notes/working/Stable-Coins</guid>
-    <description><![CDATA[  Stablecoins Circulating - DefiLlama Stable-coins Jeremy Allaire What does it look like when 10% of global economic money is stablecoins, and when credit intermediation moves from fractional reserve lending to onchain credit markets built from the ground up on safer, digital cash instruments (e.g. ]]></description>
-    <pubDate>Fri, 25 Sep 2026 13:21:08 GMT</pubDate>
-  </item><item>
-    <title>Stable Diffusion</title>
-    <link>https://narrativegoldmine.com/notes/working/Stable-Diffusion</link>
-    <guid>https://narrativegoldmine.com/notes/working/Stable-Diffusion</guid>
-    <description><![CDATA[  Stable Diffusion has emerged as a transformative force in generative AI, mainly for text to image synthesis. ]]></description>
-    <pubDate>Fri, 25 Sep 2026 13:21:08 GMT</pubDate>
-  </item><item>
-    <title>State of the art in AI</title>
-    <link>https://narrativegoldmine.com/notes/working/State-of-the-art-in-AI</link>
-    <guid>https://narrativegoldmine.com/notes/working/State-of-the-art-in-AI</guid>
-    <description><![CDATA[ A look at 2023 Looking ahead Humans are horrible at forecasting. ]]></description>
-    <pubDate>Fri, 25 Sep 2026 13:21:08 GMT</pubDate>
-  </item><item>
-    <title>Suggested Reading Order</title>
-    <link>https://narrativegoldmine.com/notes/working/Suggested-Reading-Order</link>
-    <guid>https://narrativegoldmine.com/notes/working/Suggested-Reading-Order</guid>
-    <description><![CDATA[  I have been working on learning, and learning how to store that knowledge for myself and others since 2019 when I stopped being Technical Director of the Octave Multi Model Laboratory which followed on from the National Industrial Centre for Virtual Environments. ]]></description>
-    <pubDate>Fri, 25 Sep 2026 13:21:08 GMT</pubDate>
+    <pubDate>Fri, 25 Sep 2026 13:55:23 GMT</pubDate>
   </item>
     </channel>
   </rss>
