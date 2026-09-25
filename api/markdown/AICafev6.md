@@ -33,9 +33,9 @@ not too expensive, nothing too flashy,
 character
   ```
 
-![1753954148599.gif|923](../assets/blender-shuriken-swarm-animation.gif)
+![1753954148599.gif|923](assets/blender-shuriken-swarm-animation.gif)
 
-![Screenshot 2025-07-24 173949.png](../assets/blender-bim-pbr-texture-cube.png)
+![Screenshot 2025-07-24 173949.png](assets/blender-bim-pbr-texture-cube.png)
 
 <iframe src="https://www.gla.ac.uk/myglasgow/library/files/special/exhibns/month/feb2004.html" style="width: 100%; height: 600px"></iframe>
 
@@ -56,15 +56,15 @@ character
        ☐ Create kinetic Three Graces fountain with multi-tiered water system
        ☐ Arrange all assets in proper spatial relationships and optimize scene
 
-![Screenshot 2025-07-15 090309.png](../assets/blender-poliphili-wireframe-scene.png)
+![Screenshot 2025-07-15 090309.png](assets/blender-poliphili-wireframe-scene.png)
 
-![0b20c32c-df85-498a-9f93-bd8f365e2a89.jpg](../assets/0b20c32c-df85-498a-9f93-bd8f365e2a89_1759152439221_0.jpg)
+![0b20c32c-df85-498a-9f93-bd8f365e2a89.jpg](assets/0b20c32c-df85-498a-9f93-bd8f365e2a89_1759152439221_0.jpg)
 
-![image.png](../assets/industry-report-document-pages.png)
+![image.png](assets/industry-report-document-pages.png)
 
-![4eb58299-ce01-43db-8160-327452d85402.jpg](../assets/4eb58299-ce01-43db-8160-327452d85402_1759152268830_0.jpg)
+![4eb58299-ce01-43db-8160-327452d85402.jpg](assets/4eb58299-ce01-43db-8160-327452d85402_1759152268830_0.jpg)
 
-![AIinARCHITECTURE.pdf](../assets/AIinARCHITECTURE_1759152504700_0.pdf)
+![AIinARCHITECTURE.pdf](assets/AIinARCHITECTURE_1759152504700_0.pdf)
 
 ## VisionFlow Built Itself (100k ish lines of code)
 

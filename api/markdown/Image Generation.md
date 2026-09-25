@@ -590,7 +590,7 @@ Recent years have witnessed the strong power of large text-to-image diffusion mo
 
 ## Bots Proliferate
 
-- ![paste (6).png](../assets/paste_(6)_1718746134411_0.png)
+- ![paste (6).png](assets/paste_(6)_1718746134411_0.png)
 - Jailbroken foundation models can already solve Capcha human checks, and this will soon be possible with open source models. At this point the internet will possibly explode with bot activity.
 
   ![1706810932954.jpeg|600](assets/1706810932954_1717339896749_0.jpeg)
