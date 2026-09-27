@@ -419,20 +419,20 @@
       "label": "ETSI Domain Immersive + Reality Capture Crossover"
     },
     {
+      "slug": "etsi-domain-governance-economy",
+      "label": "ETSI_Domain_Governance_Economy"
+    },
+    {
       "slug": "etsi-domain-governance-security",
       "label": "ETSI_Domain_Governance_Security"
     },
     {
-      "slug": "etsi-domain-governance-economy",
-      "label": "ETSI_Domain_Governance___Economy"
-    },
-    {
       "slug": "etsi-domain-governance-society",
-      "label": "ETSI_Domain_Governance___Society"
+      "label": "ETSI_Domain_Governance_Society"
     },
     {
       "slug": "etsi-domain-human-interface-governance",
-      "label": "ETSI_Domain_Human_Interface___Governance"
+      "label": "ETSI_Domain_Human_Interface_Governance"
     },
     {
       "slug": "metaverse",

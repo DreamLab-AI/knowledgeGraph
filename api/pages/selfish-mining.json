@@ -99,7 +99,7 @@
     "relatedTo": [
       {
         "id": "urn:ngm:class:51-attack",
-        "label": "51% Attack"
+        "label": "51 Percent Attack"
       },
       {
         "id": "urn:ngm:class:mining-pool",
@@ -719,8 +719,8 @@
   ],
   "backlinks": [
     {
-      "slug": "51-attack",
-      "label": "51% Attack"
+      "slug": "51-percent-attack",
+      "label": "51 Percent Attack"
     },
     {
       "slug": "bitcoin-mining",

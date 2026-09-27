@@ -173,7 +173,7 @@
     },
     {
       "iri": "https://narrativegoldmine.com/class/51-attack",
-      "label": "51% Attack",
+      "label": "51 Percent Attack",
       "categories": [
         6,
         28
@@ -8779,7 +8779,7 @@
     },
     {
       "iri": "https://narrativegoldmine.com/class/etsi-domain-infrastructure-immersive",
-      "label": "ETSI_Domain_Infrastructure___Immersive",
+      "label": "ETSI_Domain_Infrastructure_Immersive",
       "categories": [
         28,
         5,

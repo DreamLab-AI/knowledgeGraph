@@ -2,14 +2,14 @@
 okf_version: "0.2"
 type: Index
 title: NarrativeGoldmine Knowledge Bundle
-generation: visionGraph@4b9087c34584ab16b67735ad4482cf4d060113cd
+generation: visionGraph@3bbd6e2bf58ded9338a2ec869f59a40a56eb96fa
 vocabulary_version: 1
 concept_count: 8432
 ---
 
 # NarrativeGoldmine Knowledge Bundle
 
-8432 concepts, exported from generation `visionGraph@4b9087c34584ab16b67735ad4482cf4d060113cd`.
+8432 concepts, exported from generation `visionGraph@3bbd6e2bf58ded9338a2ec869f59a40a56eb96fa`.
 
 - [1Hive](concepts/1-hive.md) — `urn:ngm:class:1-hive`
 - [1inch](concepts/1-inch.md) — `urn:ngm:class:1-inch`
@@ -50,7 +50,7 @@ concept_count: 8432
 - [5G](concepts/5-g.md) — `urn:ngm:class:5-g`
 - [5G Connectivity](concepts/5-g-connectivity.md) — `urn:ngm:class:5-g-connectivity`
 - [5G Network](concepts/5-g-network.md) — `urn:ngm:class:5-g-network`
-- [51% Attack](concepts/51-attack.md) — `urn:ngm:class:51-attack`
+- [51 Percent Attack](concepts/51-attack.md) — `urn:ngm:class:51-attack`
 - [6DoF Tracking](concepts/6-do-f-tracking.md) — `urn:ngm:class:6-do-f-tracking`
 - [6G Network Slice](concepts/6-g-network-slice.md) — `urn:ngm:class:6-g-network-slice`
 - [A/B Testing](concepts/a-b-testing.md) — `urn:ngm:class:a-b-testing`
@@ -2855,26 +2855,26 @@ concept_count: 8432
 - [ETSI Domain: Ethics & Law](concepts/etsi-domain-ethics-and-law.md) — `urn:ngm:class:etsi-domain-ethics-and-law`
 - [ETSI Domain: Governance & Compliance](concepts/etsi-domain-governance-and-compliance.md) — `urn:ngm:class:etsi-domain-governance-and-compliance`
 - [ETSI Domain: Governance & Ethics](concepts/etsi-domain-governance-and-ethics.md) — `urn:ngm:class:etsi-domain-governance-and-ethics`
-- [ETSI_Domain_Governance___Economy](concepts/etsi-domain-governance-economy.md) — `urn:ngm:class:etsi-domain-governance-economy`
+- [ETSI_Domain_Governance_Economy](concepts/etsi-domain-governance-economy.md) — `urn:ngm:class:etsi-domain-governance-economy`
 - [ETSI_Domain_Governance_Security](concepts/etsi-domain-governance-security.md) — `urn:ngm:class:etsi-domain-governance-security`
-- [ETSI_Domain_Governance___Society](concepts/etsi-domain-governance-society.md) — `urn:ngm:class:etsi-domain-governance-society`
+- [ETSI_Domain_Governance_Society](concepts/etsi-domain-governance-society.md) — `urn:ngm:class:etsi-domain-governance-society`
 - [ETSI_Domain_Human_Interface](concepts/etsi-domain-human-interface.md) — `urn:ngm:class:etsi-domain-human-interface`
-- [ETSI_Domain_Human_Interface___Governance](concepts/etsi-domain-human-interface-governance.md) — `urn:ngm:class:etsi-domain-human-interface-governance`
-- [ETSI_Domain_Human_Interface___UX](concepts/etsi-domain-human-interface-ux.md) — `urn:ngm:class:etsi-domain-human-interface-ux`
+- [ETSI_Domain_Human_Interface_Governance](concepts/etsi-domain-human-interface-governance.md) — `urn:ngm:class:etsi-domain-human-interface-governance`
+- [ETSI_Domain_Human_Interface_UX](concepts/etsi-domain-human-interface-ux.md) — `urn:ngm:class:etsi-domain-human-interface-ux`
 - [ETSI Domain Identity and Trust](concepts/etsi-domain-identity-and-trust.md) — `urn:ngm:class:etsi-domain-identity-and-trust`
 - [Etsi Domain Immersive](concepts/etsi-domain-immersive.md) — `urn:ngm:class:etsi-domain-immersive`
 - [ETSI_Domain_Immersive_Experiences](concepts/etsi-domain-immersive-experiences.md) — `urn:ngm:class:etsi-domain-immersive-experiences`
 - [ETSI Domain Immersive + Reality Capture Crossover](concepts/etsi-domain-immersive-reality-capture-crossover.md) — `urn:ngm:class:etsi-domain-immersive-reality-capture-crossover`
 - [ETSI_Domain_Infrastructure](concepts/etsi-domain-infrastructure.md) — `urn:ngm:class:etsi-domain-infrastructure`
 - [ETSI_Domain_Infrastructure_Data](concepts/etsi-domain-infrastructure-data.md) — `urn:ngm:class:etsi-domain-infrastructure-data`
-- [ETSI_Domain_Infrastructure___Governance](concepts/etsi-domain-infrastructure-governance.md) — `urn:ngm:class:etsi-domain-infrastructure-governance`
-- [ETSI_Domain_Infrastructure___Immersive](concepts/etsi-domain-infrastructure-immersive.md) — `urn:ngm:class:etsi-domain-infrastructure-immersive`
-- [ETSI_Domain_Infrastructure___Interop](concepts/etsi-domain-infrastructure-interop.md) — `urn:ngm:class:etsi-domain-infrastructure-interop`
-- [ETSI_Domain_Infrastructure___Security](concepts/etsi-domain-infrastructure-security.md) — `urn:ngm:class:etsi-domain-infrastructure-security`
+- [ETSI_Domain_Infrastructure_Governance](concepts/etsi-domain-infrastructure-governance.md) — `urn:ngm:class:etsi-domain-infrastructure-governance`
+- [ETSI_Domain_Infrastructure_Immersive](concepts/etsi-domain-infrastructure-immersive.md) — `urn:ngm:class:etsi-domain-infrastructure-immersive`
+- [ETSI_Domain_Infrastructure_Interop](concepts/etsi-domain-infrastructure-interop.md) — `urn:ngm:class:etsi-domain-infrastructure-interop`
+- [ETSI_Domain_Infrastructure_Security](concepts/etsi-domain-infrastructure-security.md) — `urn:ngm:class:etsi-domain-infrastructure-security`
 - [ETSI_Domain_Interoperability](concepts/etsi-domain-interoperability.md) — `urn:ngm:class:etsi-domain-interoperability`
-- [ETSI_Domain_Interoperability___Creative](concepts/etsi-domain-interoperability-creative.md) — `urn:ngm:class:etsi-domain-interoperability-creative`
+- [ETSI_Domain_Interoperability_Creative](concepts/etsi-domain-interoperability-creative.md) — `urn:ngm:class:etsi-domain-interoperability-creative`
 - [ETSI_Domain_Reality_Capture](concepts/etsi-domain-reality-capture.md) — `urn:ngm:class:etsi-domain-reality-capture`
-- [ETSI_Domain_Reality_Capture___Creative](concepts/etsi-domain-reality-capture-creative.md) — `urn:ngm:class:etsi-domain-reality-capture-creative`
+- [ETSI_Domain_Reality_Capture_Creative](concepts/etsi-domain-reality-capture-creative.md) — `urn:ngm:class:etsi-domain-reality-capture-creative`
 - [ETSI Domain Security and Privacy](concepts/etsi-domain-security-and-privacy.md) — `urn:ngm:class:etsi-domain-security-and-privacy`
 - [ETSI Domain Taxonomy](concepts/etsi-domain-taxonomy.md) — `urn:ngm:class:etsi-domain-taxonomy`
 - [ETSI_Domain_Virtual_Economy](concepts/etsi-domain-virtual-economy.md) — `urn:ngm:class:etsi-domain-virtual-economy`

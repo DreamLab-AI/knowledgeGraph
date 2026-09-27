@@ -1,7 +1,7 @@
 ---
 okf_version: "0.2"
 type: Class
-title: ETSI_Domain_Human_Interface___UX
+title: ETSI_Domain_Human_Interface_UX
 resource: urn:ngm:class:etsi-domain-human-interface-ux
 domain: spatial-computing
 description: An ETSI subdomain focusing on user experience design, usability engineering, and interaction paradigms optimising satisfaction, efficiency, and accessibility in immersive digital environments. It covers design principles, usability testing, accessibility compliance, inclusive UX design, and AI-driven adaptive interfaces aligned with ISO 9241-110 dialogue principles and ETSI GR ARF 010 specificatio
@@ -23,6 +23,6 @@ relatedTo:
   - urn:ngm:class:inclusive-xr-design
 ---
 
-# ETSI_Domain_Human_Interface___UX
+# ETSI_Domain_Human_Interface_UX
 
 An ETSI subdomain focusing on user experience design, usability engineering, and interaction paradigms optimising satisfaction, efficiency, and accessibility in immersive digital environments. It covers design principles, usability testing, accessibility compliance, inclusive UX design, and AI-driven adaptive interfaces aligned with ISO 9241-110 dialogue principles and ETSI GR ARF 010 specifications.

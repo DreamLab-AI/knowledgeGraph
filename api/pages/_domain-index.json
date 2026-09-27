@@ -2808,8 +2808,8 @@
       "qualityScore": 0.6
     },
     {
-      "slug": "51-attack",
-      "title": "51% Attack",
+      "slug": "51-percent-attack",
+      "title": "51 Percent Attack",
       "qualityScore": 0.72
     },
     {
@@ -13433,7 +13433,7 @@
     },
     {
       "slug": "etsi-domain-human-interface-ux",
-      "title": "ETSI_Domain_Human_Interface___UX",
+      "title": "ETSI_Domain_Human_Interface_UX",
       "qualityScore": 0.0
     },
     {
@@ -13448,7 +13448,7 @@
     },
     {
       "slug": "etsi-domain-reality-capture-creative",
-      "title": "ETSI_Domain_Reality_Capture___Creative",
+      "title": "ETSI_Domain_Reality_Capture_Creative",
       "qualityScore": 0.0
     },
     {
@@ -20056,28 +20056,28 @@
       "qualityScore": 0.0
     },
     {
+      "slug": "etsi-domain-governance-economy",
+      "title": "ETSI_Domain_Governance_Economy",
+      "qualityScore": 0.4
+    },
+    {
       "slug": "etsi-domain-governance-security",
       "title": "ETSI_Domain_Governance_Security",
       "qualityScore": 0.4
     },
     {
-      "slug": "etsi-domain-governance-economy",
-      "title": "ETSI_Domain_Governance___Economy",
-      "qualityScore": 0.4
-    },
-    {
       "slug": "etsi-domain-governance-society",
-      "title": "ETSI_Domain_Governance___Society",
+      "title": "ETSI_Domain_Governance_Society",
       "qualityScore": 0.4
     },
     {
       "slug": "etsi-domain-human-interface-governance",
-      "title": "ETSI_Domain_Human_Interface___Governance",
+      "title": "ETSI_Domain_Human_Interface_Governance",
       "qualityScore": 0.5
     },
     {
       "slug": "etsi-domain-infrastructure-governance",
-      "title": "ETSI_Domain_Infrastructure___Governance",
+      "title": "ETSI_Domain_Infrastructure_Governance",
       "qualityScore": 0.4
     },
     {
@@ -25494,17 +25494,17 @@
     },
     {
       "slug": "etsi-domain-infrastructure-immersive",
-      "title": "ETSI_Domain_Infrastructure___Immersive",
+      "title": "ETSI_Domain_Infrastructure_Immersive",
       "qualityScore": 0.5
     },
     {
       "slug": "etsi-domain-infrastructure-interop",
-      "title": "ETSI_Domain_Infrastructure___Interop",
+      "title": "ETSI_Domain_Infrastructure_Interop",
       "qualityScore": 0.0
     },
     {
       "slug": "etsi-domain-infrastructure-security",
-      "title": "ETSI_Domain_Infrastructure___Security",
+      "title": "ETSI_Domain_Infrastructure_Security",
       "qualityScore": 0.0
     },
     {
@@ -25514,7 +25514,7 @@
     },
     {
       "slug": "etsi-domain-interoperability-creative",
-      "title": "ETSI_Domain_Interoperability___Creative",
+      "title": "ETSI_Domain_Interoperability_Creative",
       "qualityScore": 0.0
     },
     {

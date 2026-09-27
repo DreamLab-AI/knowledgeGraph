@@ -1,7 +1,7 @@
 ---
 okf_version: "0.2"
 type: Class
-title: ETSI_Domain_Infrastructure___Governance
+title: ETSI_Domain_Infrastructure_Governance
 resource: urn:ngm:class:etsi-domain-infrastructure-governance
 domain: artificial-intelligence
 description: ETSI governance framework and mechanisms overseeing infrastructure domains through trust domain separation, policy enforcement, and security management implementing local policy control across distributed network components.
@@ -13,6 +13,6 @@ hasPart:
   - urn:ngm:class:artificial-intelligence
 ---
 
-# ETSI_Domain_Infrastructure___Governance
+# ETSI_Domain_Infrastructure_Governance
 
 ETSI governance framework and mechanisms overseeing infrastructure domains through trust domain separation, policy enforcement, and security management implementing local policy control across distributed network components.

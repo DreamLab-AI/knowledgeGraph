@@ -18,7 +18,7 @@ Blockchain security is the multidisciplinary field concerned with protecting dis
 
 #### Consensus Layer Security
 
-- **[[51% Attack]]**: an adversary controlling more than half of a [[Proof of Work]] chain's hashrate or a [[Proof of Stake]] chain's stake can reorganise blocks, enabling double-spend and transaction censorship. Economic cost of attack relative to block rewards determines practical resistance.
+- **[[51 Percent Attack]]**: an adversary controlling more than half of a [[Proof of Work]] chain's hashrate or a [[Proof of Stake]] chain's stake can reorganise blocks, enabling double-spend and transaction censorship. Economic cost of attack relative to block rewards determines practical resistance.
 - **Long-range attacks**: unique to [[Proof of Stake]] systems; an attacker using old keys rewrites chain history from a checkpoint where they held majority stake.
 - **Selfish mining**: a minority miner withholds found blocks to gain disproportionate reward, degrading effective decentralisation.
 - **[[Sybil Attack]]**: creation of many pseudonymous identities to subvert voting-based or reputation-based consensus; mitigated by proof-of-work, proof-of-stake, or identity attestation schemes.

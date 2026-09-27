@@ -1,37 +1,37 @@
 {
-  "id": "visionGraph@4b9087c34584ab16b67735ad4482cf4d060113cd",
-  "commit": "4b9087c34584ab16b67735ad4482cf4d060113cd",
+  "id": "visionGraph@3bbd6e2bf58ded9338a2ec869f59a40a56eb96fa",
+  "commit": "3bbd6e2bf58ded9338a2ec869f59a40a56eb96fa",
   "dirty": false,
-  "content_digest": "e111aa3863872e585e50c04459110edf820faa0ccc7e6ffc4995a98dc4af21aa",
-  "generated_at": "2026-09-25T17:56:07.844436+00:00",
+  "content_digest": "46c921be11807367332e1f4a012e4b304b5e15466f71c7979ce0224b712c9b36",
+  "generated_at": "2026-09-27T18:29:18.392884+00:00",
   "class_count": 8432,
   "page_count": 8432,
   "vocabulary_version": 1,
   "artifacts": [
     {
       "name": "data/ontology.ttl",
-      "sha256": "6a4cb3002dee38b6568bbe0efdae3c18abf21ac32be625dd18f0e6a42a91266b",
-      "bytes": 16581015
+      "sha256": "997843bf7cb62581da449424d9de08d893ca2924a94a7c7443b73747bae6cacc",
+      "bytes": 16581010
     },
     {
       "name": "data/ontology-inferred.ttl",
-      "sha256": "12005dc5ddd1eafa0b834a193ebade0fe1d3d5b52053b1f654fddbf3f4185214",
+      "sha256": "2accedd74f423df32e1194eb4c184740f2f3a0954effb0411c33a4f7e61908e0",
       "bytes": 3874775
     },
     {
       "name": "data/scaffold-index.json",
-      "sha256": "ddebcb0da00211c20aaa491e712a76bcc08f2607c1524d574c14e539e69416b7",
-      "bytes": 9914167
+      "sha256": "6056d290592c3f27f9fe94dfd5ea86733849d8e9234cfb2c9d1f3804d023e12c",
+      "bytes": 9914318
     },
     {
       "name": "data/prose-index.json",
-      "sha256": "59c80381f0b68f6f416b48333e43a72caa2bd94951a16a1ce03895f99e539c30",
+      "sha256": "4e9afe42a6831e0ab2b6bcd2f03d5ccd68d43c8949caa2a077cca26499d59be2",
       "bytes": 5570729
     },
     {
       "name": "api/search-index.json",
-      "sha256": "ee0ae4a6fd8c0946314686d454e61155b678f49ee8fbbb78b87cc4c6be540315",
-      "bytes": 8589305
+      "sha256": "dd1b36e18757d62f75f940dd57b41c31e9a0fb6c39b0cd48dff15a3cc47ccaf6",
+      "bytes": 8589244
     },
     {
       "name": "api/pages/1-hive.json",
@@ -214,9 +214,9 @@
       "bytes": 9421
     },
     {
-      "name": "api/pages/51-attack.json",
-      "sha256": "7085286c296382b8cd62111b4e682c72b81bab00f89e902ef5870f8bc48fd2b4",
-      "bytes": 21891
+      "name": "api/pages/51-percent-attack.json",
+      "sha256": "d63442fef613e0723538d01c4864577e5aa83e26376c424967b306257a045c73",
+      "bytes": 21439
     },
     {
       "name": "api/pages/5-g-connectivity.json",
@@ -695,8 +695,8 @@
     },
     {
       "name": "api/pages/ai-energy-optimisation.json",
-      "sha256": "25ec4a582ee80303d67dcdea55c56cae713a0e36bcdc2180780883fa73d1d99a",
-      "bytes": 22984
+      "sha256": "da43cdc2db448c2fbdeee801ecb9c10868ca11223243e99b4b16f655179e377b",
+      "bytes": 22999
     },
     {
       "name": "api/pages/ai-energy-scarcity.json",
@@ -1705,8 +1705,8 @@
     },
     {
       "name": "api/pages/asic.json",
-      "sha256": "0d765b2d4206fd831e7bb73365a499b2998de79c2e2b775c4ea129390e3a14ef",
-      "bytes": 13383
+      "sha256": "6d85d91841a84f236b3f764069452929da84852956d64a8bcb039941a06e14ee",
+      "bytes": 13398
     },
     {
       "name": "api/pages/auc.json",
@@ -1810,8 +1810,8 @@
     },
     {
       "name": "api/pages/accessibility-captioning.json",
-      "sha256": "ef0842c6e87b8855f11683d1bfd8875e9f0c92117ae964c0d52ab8f43ff33d4e",
-      "bytes": 8946
+      "sha256": "52d00a66ea3429121a079f7084bfbfa47f687f5ab91b09f69781b9972f3930a6",
+      "bytes": 8944
     },
     {
       "name": "api/pages/accessibility-standard.json",
@@ -1820,8 +1820,8 @@
     },
     {
       "name": "api/pages/accessibility-standards.json",
-      "sha256": "6942b81bd1da1d03a9f7d9f4df5d99ca90ccc793568a158e211d45a01339ec2f",
-      "bytes": 11127
+      "sha256": "2a6543567f5545de28ceeb55e84b328d9efaadd9ce48f0978cd7e2dddbb0c415",
+      "bytes": 11125
     },
     {
       "name": "api/pages/accessibility-tree.json",
@@ -3080,8 +3080,8 @@
     },
     {
       "name": "api/pages/ark-protocol.json",
-      "sha256": "bb4acb50b3f09790523726c708e60cc1da99f928793d4c30b7ff308e8e97dc4f",
-      "bytes": 17265
+      "sha256": "e4795b7cb0989e0b26f92f58183f99b5f9f778ea2c9a6888f2ab272b6a7f927b",
+      "bytes": 17272
     },
     {
       "name": "api/pages/arkit.json",
@@ -3180,8 +3180,8 @@
     },
     {
       "name": "api/pages/asset-management.json",
-      "sha256": "e15313b71a1b0f5c693231d483a61844174d35235bfebf564793c1e563cc3b40",
-      "bytes": 12901
+      "sha256": "6550d5190a409ccba3547cce0112aae5c88a5ca2ba068daafe3082690f8c1e68",
+      "bytes": 12899
     },
     {
       "name": "api/pages/asset-metadata.json",
@@ -4805,8 +4805,8 @@
     },
     {
       "name": "api/pages/bitcoin-centralisation-risks.json",
-      "sha256": "c8c0c2b9a255c4b9c1cfaacb8e3cce681fe548a0aacc00c5b0bbf72a40060b8f",
-      "bytes": 36216
+      "sha256": "b2007a2e671cb35c81077d03760412d8790d23636e66c0ee45285cf89eee9298",
+      "bytes": 36230
     },
     {
       "name": "api/pages/bitcoin-core.json",
@@ -4825,8 +4825,8 @@
     },
     {
       "name": "api/pages/bitcoin-distribution.json",
-      "sha256": "696254dfaf77c4c25198e64b01e470a00da24c485ec4dc85cae90a6cd9e8b35e",
-      "bytes": 38251
+      "sha256": "cc6512c7b12243289ee050a3f97f95505048312b4fc2829d1858f80c2b698bc4",
+      "bytes": 38258
     },
     {
       "name": "api/pages/bitcoin-etf-custody.json",
@@ -4870,8 +4870,8 @@
     },
     {
       "name": "api/pages/bitcoin-mining.json",
-      "sha256": "602e4947c9343b4fcefafb07a67558856ce0752e09fb4fdc809749492c7630ab",
-      "bytes": 55692
+      "sha256": "5f0b0524fac241d53f0b72b7841a771496d020f46882ea845726f3e3e29e7b1f",
+      "bytes": 55699
     },
     {
       "name": "api/pages/bitcoin-network.json",
@@ -4885,13 +4885,13 @@
     },
     {
       "name": "api/pages/bitcoin-proof-of-work-protocol.json",
-      "sha256": "3c9024e6ec36af67b0dda19cbb1095fc4fa6a36cf74cec2233b4ecc5c0796e20",
-      "bytes": 18104
+      "sha256": "7f25d68ab115d0bc7a0592132d6e140e332ea321e69c2c1585cc1797d9ca99ab",
+      "bytes": 18111
     },
     {
       "name": "api/pages/bitcoin-protocol.json",
-      "sha256": "3343c8f73d63f13875395fad3b22784601de93ec1c283ca1b764a169a3f20719",
-      "bytes": 19794
+      "sha256": "68044d75307709b9f6573c9b441fd09a5706e0bb6b55656bd1dcb6e295d2a10e",
+      "bytes": 19801
     },
     {
       "name": "api/pages/bitcoin-script.json",
@@ -4915,8 +4915,8 @@
     },
     {
       "name": "api/pages/bitcoin-value-proposition.json",
-      "sha256": "a2b0f34c6e76026ad5709746eda0422ea90f74176425887c710518446467b42c",
-      "bytes": 43743
+      "sha256": "e7d3940f6f6cfa7b2e8b32614d397c8ae3e8de95403f6d110cc507c05cc3384a",
+      "bytes": 43750
     },
     {
       "name": "api/pages/bitcoin-whitepaper.json",
@@ -4930,8 +4930,8 @@
     },
     {
       "name": "api/pages/bitcoin.json",
-      "sha256": "814f254b8d1e0109f518ac7606ebb5f1cb3c9944eaee53d9980d345c65b85854",
-      "bytes": 28630
+      "sha256": "ee93f2601a40def67f2318f0d3c06e59025cea119fa76764a2f696565cdcfbc7",
+      "bytes": 28645
     },
     {
       "name": "api/pages/bitfinex.json",
@@ -5265,8 +5265,8 @@
     },
     {
       "name": "api/pages/blockchain-security.json",
-      "sha256": "b29f111b9c10551a1a06a68a16483f4e72ecb0da12b490a2a1d7788955af8b52",
-      "bytes": 12274
+      "sha256": "65c5e86144e946dc80fad7dbc6060ff6522ecae7d0102e22116449794459bf33",
+      "bytes": 12296
     },
     {
       "name": "api/pages/blockchain-sustainability.json",
@@ -5295,8 +5295,8 @@
     },
     {
       "name": "api/pages/blockchain.json",
-      "sha256": "390d486daa8a02ec216d0057afa25394d59c3ddf227a3c7612919ff82f0d43f2",
-      "bytes": 69473
+      "sha256": "10a097d6a2d9611fdf399477527039b565c74667b2f51083aecea4b5cf39e071",
+      "bytes": 69499
     },
     {
       "name": "api/pages/blockstream.json",
@@ -5545,8 +5545,8 @@
     },
     {
       "name": "api/pages/byzantine-fault-tolerance.json",
-      "sha256": "c560abdce5a2e0a1f9bea87538e5ebe6a0380c4b640b8361f37d917c54f1d8c4",
-      "bytes": 24494
+      "sha256": "c4f16e419881c33fe4f9355a2601718aa6bf4db4f87851d531fc5f8f6a9bf495",
+      "bytes": 24509
     },
     {
       "name": "api/pages/byzantine-fault-tolerant-system.json",
@@ -6130,8 +6130,8 @@
     },
     {
       "name": "api/pages/cardano.json",
-      "sha256": "79c58350abb99ecd68d86e14ccaac485bc8dd02f7fc9f8e35df1e9fdd56d943c",
-      "bytes": 19597
+      "sha256": "7ccefe0d136f556b4fd71b9029161ce9941fe8a01cdd2ccf480c7fbd7658e358",
+      "bytes": 19612
     },
     {
       "name": "api/pages/career-strategy.json",
@@ -6220,13 +6220,13 @@
     },
     {
       "name": "api/pages/censorship-resistance.json",
-      "sha256": "cc26e882c5790ed868d1c64d1b83d34a5d145ee5c2d6bdc774b3b6d8140f63c7",
-      "bytes": 20810
+      "sha256": "a38a2b1dfd1d8907f607002cbd56ac484b98ed1bf9d42859815924bde011574b",
+      "bytes": 20817
     },
     {
       "name": "api/pages/censorship-resistant-payments.json",
-      "sha256": "58818c05d2e29ad5d713d1a054f20fc8990579e71b97706c925c7ac2b382c06c",
-      "bytes": 17407
+      "sha256": "ce497e66d2fb7aad643ba539cac5e05694ef20d372af4279565d04ce665f73fa",
+      "bytes": 17414
     },
     {
       "name": "api/pages/central-bank-digital-currency-cbdc.json",
@@ -6375,8 +6375,8 @@
     },
     {
       "name": "api/pages/chain-reorganization.json",
-      "sha256": "a644374dc457bf4587699267dac48efabe162a60686f5449593487d4f79fc41b",
-      "bytes": 17366
+      "sha256": "cf0cf565a6a6d3248eb9179d58489e8316c32f15d9bb04533792ca4edadd2b06",
+      "bytes": 17373
     },
     {
       "name": "api/pages/chain-state.json",
@@ -7020,8 +7020,8 @@
     },
     {
       "name": "api/pages/coinbase.json",
-      "sha256": "c1bcb8ec4d622311caf02bc479400862f19386acb8d25200b31b245eb10e15e9",
-      "bytes": 20125
+      "sha256": "25f7f8303a90f6f8da2dff7ac8715942059abf9d675aef214e4bc80809027f27",
+      "bytes": 20140
     },
     {
       "name": "api/pages/colbert.json",
@@ -7060,8 +7060,8 @@
     },
     {
       "name": "api/pages/collaborative-design.json",
-      "sha256": "872ac813827ae2ca06bcd63446a8c6410ddf6ac8421aceec655807d93122d9bc",
-      "bytes": 9738
+      "sha256": "b6e6fda28ece4962e2b783b2b2eb167b37e3d405ca04aaac144749a3b26739d9",
+      "bytes": 9736
     },
     {
       "name": "api/pages/collaborative-editing.json",
@@ -7950,8 +7950,8 @@
     },
     {
       "name": "api/pages/consensus-mechanisms.json",
-      "sha256": "502382746cc9b6106ec4485e2b584099b5e33195ce9833b3e3077d57ceb8ba34",
-      "bytes": 11861
+      "sha256": "2daf956478b1918ee564f36c039da40aaebbf832876ac9700b5819598a1f154d",
+      "bytes": 11876
     },
     {
       "name": "api/pages/consensus-process.json",
@@ -7965,18 +7965,18 @@
     },
     {
       "name": "api/pages/consensus-rule.json",
-      "sha256": "16ec04d7c31733568985e2b717523c3e325db2e316e4e7fe6d5e30556d667350",
-      "bytes": 17610
+      "sha256": "66e1376b31cf7179ba16244a7c9cf895bbb01fd8ab3b3e821407b36804bb9b73",
+      "bytes": 17617
     },
     {
       "name": "api/pages/consensus.json",
-      "sha256": "a4ca3d4b3f6726927aec6cef54150cad2b1733de99311f28b0995307dbb93fbb",
-      "bytes": 11559
+      "sha256": "8f736fe827abb525c8ebdac35bdb7318731d2d56063e7e8bcb34c7d4b690a2b8",
+      "bytes": 11589
     },
     {
       "name": "api/pages/consent-management.json",
-      "sha256": "ffe288d913d64ac52583d466173e8f8864ff0f90dd17b002048c9391c6adbd24",
-      "bytes": 9049
+      "sha256": "2fcb22abcdc6401ecec051c00d2fca74ed541d9f81592cda019c1945a3df8148",
+      "bytes": 9047
     },
     {
       "name": "api/pages/consent-registry.json",
@@ -8185,8 +8185,8 @@
     },
     {
       "name": "api/pages/content-delivery-network.json",
-      "sha256": "4cf064d22de8e335f8067bb8ccde4c8258060cd07faee3d25b6811455ad59834",
-      "bytes": 12144
+      "sha256": "4260135dc06dec4bc6a119382fca44c4bea286ecc0cbff5c316c2748bf9bf1d5",
+      "bytes": 12142
     },
     {
       "name": "api/pages/content-delivery.json",
@@ -9210,8 +9210,8 @@
     },
     {
       "name": "api/pages/cryptocurrency.json",
-      "sha256": "7ad0832c78b0ec43f5c2938e939ae8ed9b95156a60caa41e9f2f419114e978e3",
-      "bytes": 41446
+      "sha256": "acf87038db2da669840245749fdc07ba6f108612389d627d9471212a371170cd",
+      "bytes": 41461
     },
     {
       "name": "api/pages/cryptoeconomics.json",
@@ -10580,8 +10580,8 @@
     },
     {
       "name": "api/pages/decentralised-governance.json",
-      "sha256": "6b6df02c462f2e67192b306b00e761695acee19b75379474eaf72421bbe7babd",
-      "bytes": 10532
+      "sha256": "8c40ebd68e3bf1478d9cc8668383c5b741cd391553d0c0c0849341125e512110",
+      "bytes": 10530
     },
     {
       "name": "api/pages/decentralised-identifier.json",
@@ -10630,8 +10630,8 @@
     },
     {
       "name": "api/pages/decentralization.json",
-      "sha256": "fa08e14be8764850e22e1f6d4b60938b99d4d1b919db5d7974ee60d4b30b4a60",
-      "bytes": 9187
+      "sha256": "6df175dc290005d7586ccc260812252402315589623da0726d841349ead5b664",
+      "bytes": 9194
     },
     {
       "name": "api/pages/decentralized-application.json",
@@ -11090,8 +11090,8 @@
     },
     {
       "name": "api/pages/design-thinking.json",
-      "sha256": "baffe9ea35cb115b83bec01fbd34b594112b1ec9e90d3a8fa5b7d75f5b13c8db",
-      "bytes": 8104
+      "sha256": "9da1075508fe318f299fdf7d584d63209dd8975042f82f9ee164e97637df1a86",
+      "bytes": 8102
     },
     {
       "name": "api/pages/destination-chain-execution.json",
@@ -11120,8 +11120,8 @@
     },
     {
       "name": "api/pages/deterministic-finality.json",
-      "sha256": "f2bcc83d0866909f24a2dad6b195a7e4bacab6237b8a29410307d24b073be17f",
-      "bytes": 18442
+      "sha256": "c7910e1e2d7c4f083d5158e160325d1c8e77c57906cde61fcc6e309af290b8c8",
+      "bytes": 18449
     },
     {
       "name": "api/pages/deterministic-networking.json",
@@ -11680,8 +11680,8 @@
     },
     {
       "name": "api/pages/digital-performance-capture.json",
-      "sha256": "702b36fc39d0e8d92f6b3ba58a5e83fd765d86ec438c37e12b63cc857a4e128d",
-      "bytes": 11108
+      "sha256": "8c264134dd71ab636169bbe23287871ab6235a687589075f7aa449ea806c4512",
+      "bytes": 11106
     },
     {
       "name": "api/pages/digital-platform.json",
@@ -12225,8 +12225,8 @@
     },
     {
       "name": "api/pages/distributed-storage.json",
-      "sha256": "225f4c40aef57789445772c7e7d7e8fdb72b635704f87141c9f8d95057922859",
-      "bytes": 9663
+      "sha256": "359fe07baad0c29978d8a102060ac9cffd39f33614507984dd1a511ec1c6282e",
+      "bytes": 9661
     },
     {
       "name": "api/pages/distributed-system-architecture.json",
@@ -12440,8 +12440,8 @@
     },
     {
       "name": "api/pages/double-spending.json",
-      "sha256": "d16e6f04d0a72bfefa73ac05731a8c1d25b48a7cfa9996be4d3e9dc411496ae0",
-      "bytes": 19254
+      "sha256": "a0edaefe0da60c89b8796400bce8981510e58111663910c0a8af5037bc990154",
+      "bytes": 19306
     },
     {
       "name": "api/pages/double-blind-review.json",
@@ -12450,8 +12450,8 @@
     },
     {
       "name": "api/pages/double-spend-prevention.json",
-      "sha256": "be3f1cc0d32c9e10321b1354ffa54470c16607b692aff408959a961483127073",
-      "bytes": 10952
+      "sha256": "cb6d6f1eabf9f6f66099f4e88c0e66af12f2317d768b29d19c4dd970cf87f521",
+      "bytes": 10959
     },
     {
       "name": "api/pages/dr-o-hare-writing-for-log-seq.json",
@@ -13010,18 +13010,18 @@
     },
     {
       "name": "api/pages/etsi-gr-arf-007.json",
-      "sha256": "7ccac7d989245cb70d3a206eb25e3b29ef836dacc1592657778890ad64da49a0",
-      "bytes": 7374
+      "sha256": "e18d2c44dc0d7446d3538813f2070a2e6c18ce3485eba745e05725c48f1836a0",
+      "bytes": 7372
     },
     {
       "name": "api/pages/etsi-gr-arf-010.json",
-      "sha256": "15ab4486995e6d77d376bf1a24e19bcb1826f76cd1f492bd0646e7408f53e2e3",
-      "bytes": 12738
+      "sha256": "64367ccce98060588ed48186bb42c06b86cf6d7acc1a345cda73c6622edc643c",
+      "bytes": 12736
     },
     {
       "name": "api/pages/etsi-gr-mec-032.json",
-      "sha256": "d80e3d3ec61baa0aed5e1f4790146e4b85035506af36a202d2dbab87733de79e",
-      "bytes": 20017
+      "sha256": "a5be9d5318a529202f91c7e0aa001efaf56ddc6fa5952c929d78c6238c55ee15",
+      "bytes": 20009
     },
     {
       "name": "api/pages/etsi-gs-mec-003.json",
@@ -13035,13 +13035,18 @@
     },
     {
       "name": "api/pages/etsi.json",
-      "sha256": "13dcaca1ae17bc5516977bfa7b4c00f62653c01a38f798d1dce55b542e62ab89",
-      "bytes": 13042
+      "sha256": "efc5ad377191a5056f2e90267b709bf200ff4aee029d8ac1bb01b1221a4ffecb",
+      "bytes": 13034
     },
     {
       "name": "api/pages/etsidomain-classification.json",
-      "sha256": "4cac15a334977e09b1fc70b6bd0bbd9b45e7b32375416a902d3118621b07118c",
-      "bytes": 5335
+      "sha256": "1a022acd9ca729b4677fa7f660ce12ac6c1a13df7fb2c84e5fbbafcca52e9e30",
+      "bytes": 5333
+    },
+    {
+      "name": "api/pages/etsi-domain-governance-economy.json",
+      "sha256": "17af17ba2e3e5562d31e5a960bef126082467de56f61743339239bab18e9e0cf",
+      "bytes": 5078
     },
     {
       "name": "api/pages/etsi-domain-governance-security.json",
@@ -13049,29 +13054,24 @@
       "bytes": 5090
     },
     {
-      "name": "api/pages/etsi-domain-governance-economy.json",
-      "sha256": "271b15ebc6f07ebd15ca7f4ae6ed74c0ec32d2eb98b5785b31a258d660251cc7",
-      "bytes": 5080
-    },
-    {
       "name": "api/pages/etsi-domain-governance-society.json",
-      "sha256": "92c513f6b8cbd5215136d3f0dcf6bdf921a6827cbbd6cb5645df6b5c37507914",
-      "bytes": 4569
+      "sha256": "9453a36de892610e0705aa134ca46fdf0de0cb17eefd1b3a02a954666b9006fc",
+      "bytes": 4567
     },
     {
       "name": "api/pages/etsi-domain-human-interface.json",
-      "sha256": "d212aa89d9cd70a84c9f7e9866a455964de0938f85fb16f669802f5040ad5371",
-      "bytes": 9448
+      "sha256": "7a0953677f2716a69562bb5348a58007d6d1fb6e08faf1a6bf11effc1b04931b",
+      "bytes": 9446
     },
     {
       "name": "api/pages/etsi-domain-human-interface-governance.json",
-      "sha256": "65aa43a7cabf1c6fc1362fe038695de2b677d003302355639afa5a1f593d7407",
-      "bytes": 4649
+      "sha256": "5cf4e0bd963044f03d713f556422a661cd0b4a3fc3dc46263891cb8709823dca",
+      "bytes": 4647
     },
     {
       "name": "api/pages/etsi-domain-human-interface-ux.json",
-      "sha256": "8e4c770944be657745c833296466c0613635c4a74a33319884bc59168bc2f130",
-      "bytes": 9269
+      "sha256": "cda88809bc48eaad7f8dbd78105d3b31c4439dbc82dda8718407e8e3bdfb126b",
+      "bytes": 9267
     },
     {
       "name": "api/pages/etsi-domain-immersive-experiences.json",
@@ -13090,23 +13090,23 @@
     },
     {
       "name": "api/pages/etsi-domain-infrastructure-governance.json",
-      "sha256": "b5512a29f8514be7ad5f9beea4a68d8fe3918a36c05b27b001fb1c1ff8834936",
-      "bytes": 4010
+      "sha256": "f494a6d8d9950d45f9ca77ff082f2b7e3e531e3ceaecc7d80bd5f3ad8db6c6e0",
+      "bytes": 4008
     },
     {
       "name": "api/pages/etsi-domain-infrastructure-immersive.json",
-      "sha256": "9b5fbe65d971e85fddbd254abae5033b58fb2bc2073d55ec7132e724ef7e59db",
-      "bytes": 17585
+      "sha256": "fa874b3dd7b57912cc7400af0e90a42be5145fe6ed6ebef45525dcb180283249",
+      "bytes": 17583
     },
     {
       "name": "api/pages/etsi-domain-infrastructure-interop.json",
-      "sha256": "2a8d7594868a66178fa82c0d73c28f3bd34b734d56dc4f0cb4c058f6c2beb466",
-      "bytes": 5614
+      "sha256": "698060989cf990e02d609017f0e8e0883f4199ebc2a6802097ab1b183d392ba8",
+      "bytes": 5612
     },
     {
       "name": "api/pages/etsi-domain-infrastructure-security.json",
-      "sha256": "77dc64c98bf8238b7a383c079bae451074e3c238bfadd0f5fa819d37bbbb23f5",
-      "bytes": 5814
+      "sha256": "665e3dd540a7fe6126dcc17b6912adfb8c33b4024605a9311e6b33cf761afc81",
+      "bytes": 5812
     },
     {
       "name": "api/pages/etsi-domain-interoperability.json",
@@ -13115,8 +13115,8 @@
     },
     {
       "name": "api/pages/etsi-domain-interoperability-creative.json",
-      "sha256": "23f96292dbc100551c1a744199508021186fa39d997baec71e54e0118fea0a00",
-      "bytes": 7814
+      "sha256": "723ac99935fb9ba1a183878f7b5f62cf1348d87f4467084faf07a458ff2f4ae6",
+      "bytes": 7812
     },
     {
       "name": "api/pages/etsi-domain-reality-capture.json",
@@ -13125,8 +13125,8 @@
     },
     {
       "name": "api/pages/etsi-domain-reality-capture-creative.json",
-      "sha256": "c0bb5288136c6c4a9a3aab39cb10686db70d5f0493fc8b88ae57366ee1ecc964",
-      "bytes": 9049
+      "sha256": "32767daf81cdd2a5f63e3312ea8193e37eeec772153993c142d430bc807c0ced",
+      "bytes": 9047
     },
     {
       "name": "api/pages/etsi-domain-virtual-economy.json",
@@ -13220,8 +13220,8 @@
     },
     {
       "name": "api/pages/eclipse-attack.json",
-      "sha256": "719980145ee744f754075621cbbb2e6cf5dd1ab7825f0098103f2e2f05e7aa42",
-      "bytes": 18963
+      "sha256": "395501e6a86ed0afd37e88e9049157471c2666d5ec7a076a52e854ea4ca9bf15",
+      "bytes": 18970
     },
     {
       "name": "api/pages/ecma-international.json",
@@ -13380,8 +13380,8 @@
     },
     {
       "name": "api/pages/edge-computing-node.json",
-      "sha256": "882ca0f40bc5060a89a62186448817e858346d9cefb1fdd8174814b4a7146539",
-      "bytes": 10986
+      "sha256": "936cd6c4d97ddc998065b08d26d6709ed079f3da5144d39170099fa00d052cb2",
+      "bytes": 10984
     },
     {
       "name": "api/pages/edge-computing.json",
@@ -14260,8 +14260,8 @@
     },
     {
       "name": "api/pages/ethereum-classic.json",
-      "sha256": "042df2a253a7290f4a8e2153cbedb113cbee17492342f88a6c57b3dd6170d7ad",
-      "bytes": 17311
+      "sha256": "dd971cd968ee891d39c7201f91c632b7ed4c98a88da82e85bb0d23d4fc7765ba",
+      "bytes": 17326
     },
     {
       "name": "api/pages/ethereum-foundation.json",
@@ -14295,8 +14295,8 @@
     },
     {
       "name": "api/pages/ethereum.json",
-      "sha256": "bb49af44823e55366ce64f7304b3ba6e32839437a6b74e8c91cb968d1ad381be",
-      "bytes": 33379
+      "sha256": "1c4e1006fb57fad21665f096b3a56c219d2be89e327800dbdb6e0654eb607a1f",
+      "bytes": 33394
     },
     {
       "name": "api/pages/ethernet.json",
@@ -14655,8 +14655,8 @@
     },
     {
       "name": "api/pages/extended-reality.json",
-      "sha256": "7bc939d33df6e3308d974b69e182c6b1149eb03103f12911b486e25c780e8ab9",
-      "bytes": 14548
+      "sha256": "514c47ea8a4d862d1d4136862dca21a05743c97c7842c1f6a9dc2fae1281bb7b",
+      "bytes": 14546
     },
     {
       "name": "api/pages/external-ai-harness.json",
@@ -15295,8 +15295,8 @@
     },
     {
       "name": "api/pages/finality.json",
-      "sha256": "27f08a6ed7c5fa4df13ad3538b55f99619adc4ff800e6b09ad066401e1fad2ec",
-      "bytes": 19509
+      "sha256": "2cc631736dedb5d2caca346365a19203fb51233f90394e762e1fc0c10da28771",
+      "bytes": 19524
     },
     {
       "name": "api/pages/finance.json",
@@ -16170,8 +16170,8 @@
     },
     {
       "name": "api/pages/game-engine.json",
-      "sha256": "3bc79693d508f23fb2bb817dab63a06181949641f2263ef8e07cedf2a25ebffd",
-      "bytes": 14646
+      "sha256": "8106f4c736834c1d3e92aa4af741744d1c5dcb733aa161c8667aaf3d238fb781",
+      "bytes": 14644
     },
     {
       "name": "api/pages/game-mechanics.json",
@@ -16695,8 +16695,8 @@
     },
     {
       "name": "api/pages/governance-frameworks.json",
-      "sha256": "bc27f2efd6f504de2d6bdffe75b359bf023b8ed96edf75d9f2ff1ed34b878d5f",
-      "bytes": 7471
+      "sha256": "9c3077dd45b8b986f6a86ceccf83ba6f57134ff0da1bb83d3c67607553dbaf0c",
+      "bytes": 7469
     },
     {
       "name": "api/pages/governance-infrastructure.json",
@@ -17365,8 +17365,8 @@
     },
     {
       "name": "api/pages/hardware-platform-agnostic.json",
-      "sha256": "1e30be4d244ca9e72671fd2d744402654e20a7163cfb249677cb471e550bf44a",
-      "bytes": 8445
+      "sha256": "7847c1f8f2015c389d8088e514c2e82e5a9e6994a762b18df13fdeee01146f36",
+      "bytes": 8443
     },
     {
       "name": "api/pages/hardware-resources.json",
@@ -17460,8 +17460,8 @@
     },
     {
       "name": "api/pages/hash-rate.json",
-      "sha256": "da4745587b339f0bab20787df5e64c1aa5c148ddb7c98326a5523feda492da4c",
-      "bytes": 18495
+      "sha256": "971f5a60c54fb3a416428c8ea97b5a328d4734681a97aa3e0bbfa8bfa5035c96",
+      "bytes": 18532
     },
     {
       "name": "api/pages/hash-time-locked-contract.json",
@@ -17475,8 +17475,8 @@
     },
     {
       "name": "api/pages/hashcash.json",
-      "sha256": "0c77f009c6a4eab9e58c420abe10d9b4a5fc7fdfce3ba75c2149d3b93ff441a9",
-      "bytes": 18731
+      "sha256": "55732d4cc1942b1e9dc715595db48c6c9651aba6715ee2eb1079ad680e558263",
+      "bytes": 18738
     },
     {
       "name": "api/pages/hashed-timelock-contract.json",
@@ -18280,8 +18280,8 @@
     },
     {
       "name": "api/pages/ieee-2418-1.json",
-      "sha256": "3b2a2a3841f4b8fade2b65c846373944703d7770966531133b1c203da03861f8",
-      "bytes": 18139
+      "sha256": "25c6b18b14a6020e5c375363b39fd9bdcde9c50257e2eb110dd94a779cb45450",
+      "bytes": 18154
     },
     {
       "name": "api/pages/ieee-7000-model-process.json",
@@ -18610,8 +18610,8 @@
     },
     {
       "name": "api/pages/iso-23257.json",
-      "sha256": "26e0010af96c01613c4c6a40a0f9135faf14e114756b57a0f7c49c668ff413c9",
-      "bytes": 11202
+      "sha256": "c0454d8036e9aae12c299e2a6ae521d05c572870b3ce3479272f480cdaaf07d0",
+      "bytes": 11196
     },
     {
       "name": "api/pages/iso-24165.json",
@@ -18835,8 +18835,8 @@
     },
     {
       "name": "api/pages/iso-iec-23257-2021.json",
-      "sha256": "61fe64ec36ee13ece1fe0d7146e5a1087b08d8dcf0b742b803e07f058ae6c8af",
-      "bytes": 15223
+      "sha256": "51e378e1af56fb1123ec9715c074908c753f05977a6b811535e0a0b084d95c44",
+      "bytes": 15238
     },
     {
       "name": "api/pages/iso-iec-23894-2023.json",
@@ -19245,8 +19245,8 @@
     },
     {
       "name": "api/pages/immersive-experience.json",
-      "sha256": "c7e8ccc0d7984384b906684014afe0cec7d698656993ef5dbc4bb17bcb0cca54",
-      "bytes": 10652
+      "sha256": "15148b1da351a6362dbf35ba5242aecd36c836c494631341e7b8b05cc8b71aa8",
+      "bytes": 10650
     },
     {
       "name": "api/pages/immersive-experiences.json",
@@ -19405,8 +19405,8 @@
     },
     {
       "name": "api/pages/incentive-alignment.json",
-      "sha256": "a5b55fd80913e9cb41105304afa06cf7471d93ac4f0c5a830d135e3629099b2c",
-      "bytes": 17323
+      "sha256": "7835faf96390df508f77f2ed1d6e02577d89f635addd9514e6464db7d39e33af",
+      "bytes": 17330
     },
     {
       "name": "api/pages/incentive-compatibility.json",
@@ -19450,8 +19450,8 @@
     },
     {
       "name": "api/pages/inclusive-design.json",
-      "sha256": "bad9e8e104fc585d9490e46a8111d3835f6857b0335f203f003f72ee87a8b3e6",
-      "bytes": 11199
+      "sha256": "f825a2ab37a0cba521692e708d1e624cab9ac322304844f5baef3e3784d022f4",
+      "bytes": 11197
     },
     {
       "name": "api/pages/inclusive-experience.json",
@@ -19815,8 +19815,8 @@
     },
     {
       "name": "api/pages/infrastructure-layer.json",
-      "sha256": "12cf1b10558cd54ea5bab922f8adf1086e88138e83f29549ad20b462e2addcdb",
-      "bytes": 11246
+      "sha256": "577bfdffb4bad2d58f5db536ba65c659fb6b68fea692270291642f7804d5f174",
+      "bytes": 11244
     },
     {
       "name": "api/pages/infrastructure-as-code.json",
@@ -19885,8 +19885,8 @@
     },
     {
       "name": "api/pages/inscription.json",
-      "sha256": "92b08d05e0aea7ab019fb89f2412738ccaa5badc934dbdf056acf06d24f8ce9a",
-      "bytes": 18044
+      "sha256": "5762052ee704f88c6caa2fd879f7a1d941227d1564953bd3f247ca0842aaf14c",
+      "bytes": 18051
     },
     {
       "name": "api/pages/inside-out-tracking.json",
@@ -20370,8 +20370,8 @@
     },
     {
       "name": "api/pages/interoperability.json",
-      "sha256": "1bdeb6b9299c161846c714a49f62a743aef36a3e6baa71c48143764a570ddc43",
-      "bytes": 21829
+      "sha256": "c15de304b1f7934c65de07a51e51a46c10f8f8bbd0a91b58e0b987bdb65d68ce",
+      "bytes": 21827
     },
     {
       "name": "api/pages/interpolation.json",
@@ -20925,8 +20925,8 @@
     },
     {
       "name": "api/pages/khronos-group-gl-tf-2-0-specification.json",
-      "sha256": "032afe32ee7e115da3a0ade059c1df5d53b5ff57eaf284f72225e506ed03a7a0",
-      "bytes": 12497
+      "sha256": "8974ad055bf74b9830b322cb09d9fd52608db63cd04670d41bd701720627c552",
+      "bytes": 12495
     },
     {
       "name": "api/pages/khronos-group.json",
@@ -22350,8 +22350,8 @@
     },
     {
       "name": "api/pages/longest-chain-rule.json",
-      "sha256": "fa180ac0936d18c98473fcb4a1f0e7b55ec6696ff0282c45c0c7439098e62828",
-      "bytes": 17189
+      "sha256": "133469cb48e225e62c020d6b51ece4bdd20cc75d58b2d2d1e46acc8fcc46d99e",
+      "bytes": 17196
     },
     {
       "name": "api/pages/longtermism.json",
@@ -23520,8 +23520,8 @@
     },
     {
       "name": "api/pages/metaverse-content-pipeline.json",
-      "sha256": "063282791297a23c8ccfe056e31080c7de1816fb0c5cf1d7ae91522b2269ebc6",
-      "bytes": 14114
+      "sha256": "46126ee7841a7bbb18415757460ee8016934800e92e62ae6429753f8a90fdd18",
+      "bytes": 14112
     },
     {
       "name": "api/pages/metaverse-entity-schema-archive.json",
@@ -23580,8 +23580,8 @@
     },
     {
       "name": "api/pages/metaverse-standards-forum.json",
-      "sha256": "4954e6cfa2d0701f16017eaa5f14d8f86016cb328bddb463b9bdc957c86a3cde",
-      "bytes": 12194
+      "sha256": "2a5a1212659b3a05b9f566bf3d57f17bd36b169fc8da6acb10155b3e31590125",
+      "bytes": 12188
     },
     {
       "name": "api/pages/metaverse-technology.json",
@@ -23610,8 +23610,8 @@
     },
     {
       "name": "api/pages/metaverse.json",
-      "sha256": "2204238cb41829717e290cd85e320600b202368326896b3c07e0c8be65d721dd",
-      "bytes": 80915
+      "sha256": "2df134e4a4be204df7c104bac8e2d17ae44ec47d402b6ea81c4857c0b2af34bd",
+      "bytes": 80897
     },
     {
       "name": "api/pages/metaverse-platforms.json",
@@ -23690,8 +23690,8 @@
     },
     {
       "name": "api/pages/micropayments.json",
-      "sha256": "c322e7a5258afa96252fb443593d0f10f260d299541cd5a208a0666d1480eccd",
-      "bytes": 36321
+      "sha256": "50133757a32fc7a7391c72612fd151ef17e61ff26325ea5d03760f269ebb812a",
+      "bytes": 36328
     },
     {
       "name": "api/pages/microphone-array.json",
@@ -23800,8 +23800,8 @@
     },
     {
       "name": "api/pages/mining-hardware.json",
-      "sha256": "9b5708fa68afdd4e5ce33c187bcab96440d99d2dba5294150ab55054a7e23cf6",
-      "bytes": 17534
+      "sha256": "76a8878c4b3865ffb5cc33ebb4b991bf51a4d1e391db0bacc6e737953629e4ba",
+      "bytes": 17549
     },
     {
       "name": "api/pages/mining-node.json",
@@ -23810,8 +23810,8 @@
     },
     {
       "name": "api/pages/mining-pool.json",
-      "sha256": "f106ce5a5d61aeaf775a8491ec1aa95cc230d46fdf129b6345ce8003e4222eac",
-      "bytes": 19598
+      "sha256": "7ba4e0b1e658a02f0f3d868eaf80c340e1a56a86eccd1f34189a5bca0a78e290",
+      "bytes": 19628
     },
     {
       "name": "api/pages/mining-reward.json",
@@ -23820,8 +23820,8 @@
     },
     {
       "name": "api/pages/mining.json",
-      "sha256": "6bac59f0d0eeb1ba4ca05df126e8c8b9b83fa99239dfa7248ed12c026dcb6c25",
-      "bytes": 20345
+      "sha256": "45bcb14f28a1cbbd2c3c038505d5a17c8d86396703c735218d4cd22d14faa050",
+      "bytes": 20360
     },
     {
       "name": "api/pages/mint-burn-mechanism.json",
@@ -24340,8 +24340,8 @@
     },
     {
       "name": "api/pages/monero.json",
-      "sha256": "9a1f09e32c206caf6ef11b06f0b78cbb120eaefb064f04064864f5cc9fb20eb3",
-      "bytes": 19556
+      "sha256": "1818232649ad14b0afb056b669155a789239b854187fd9ccfd472b3a56eef628",
+      "bytes": 19571
     },
     {
       "name": "api/pages/monetary-policy-implementation.json",
@@ -24355,8 +24355,8 @@
     },
     {
       "name": "api/pages/monetary-policy.json",
-      "sha256": "3c88600317fae9f4d333575e6afb5e0f4aeaadcb793572131d349ea287ca42ae",
-      "bytes": 9152
+      "sha256": "e82f75b7ae5cad504ed3db0cd7fadb8bae6e3e35aeebd377127594a7a1f12cba",
+      "bytes": 9150
     },
     {
       "name": "api/pages/monetary-sovereignty.json",
@@ -24750,8 +24750,8 @@
     },
     {
       "name": "api/pages/multi-access-edge-computing.json",
-      "sha256": "862575c752f730dbfc1f79a111bdda16588d422b5af4f72611b5d3317a60b1b6",
-      "bytes": 14027
+      "sha256": "dc39a685b6efccc2d58f0110c8f234257097c471b2781de5a7ef604291b871a2",
+      "bytes": 14025
     },
     {
       "name": "api/pages/multibase.json",
@@ -24970,8 +24970,8 @@
     },
     {
       "name": "api/pages/ngsi-ld.json",
-      "sha256": "2a113f7761641fa6a1c459e7c5f1e94e5f64c2065a3cfd48fcbb6be282c9b828",
-      "bytes": 6963
+      "sha256": "2bc2641614438e514751b045c07c6138ea75957ad900e66ac657ed41608134ac",
+      "bytes": 6961
     },
     {
       "name": "api/pages/nicve-virtual-reality-research-centre.json",
@@ -25010,8 +25010,8 @@
     },
     {
       "name": "api/pages/nist-cybersecurity-framework.json",
-      "sha256": "a69b6ef2b28499976773d23fa0590fa592154a5083833b0d6668e87b89b2119b",
-      "bytes": 11080
+      "sha256": "7f650685d601d62c522bf3f0d7413b98cd2f9da504d9b22e5080b0acec4adcd3",
+      "bytes": 11095
     },
     {
       "name": "api/pages/nist-fips-186.json",
@@ -25130,13 +25130,13 @@
     },
     {
       "name": "api/pages/nakamoto-2008-bitcoin-whitepaper.json",
-      "sha256": "451453624385cfdea4ce95baf9a50be4c16977b2edfd18277e89f39d79c02f14",
-      "bytes": 20913
+      "sha256": "ed279cb1a77c954d719b33d312079d12d5a835fd3138f589555391863a2e0f11",
+      "bytes": 20920
     },
     {
       "name": "api/pages/nakamoto-coefficient.json",
-      "sha256": "3a1238903314cf18f81089a4d282acfecfd9f7319575c1c3e843defb3214293f",
-      "bytes": 16527
+      "sha256": "854c1b0bf85a848b9edbd704a077b189f6431b9857eb88aca5ef055d1d5fbbbe",
+      "bytes": 16534
     },
     {
       "name": "api/pages/nakamoto-consensus.json",
@@ -25415,8 +25415,8 @@
     },
     {
       "name": "api/pages/network-hash-rate.json",
-      "sha256": "c19fe6eb112e2f4d4a9ac7bccdc4122b82a64991092de1fb7e0928c41033668b",
-      "bytes": 17274
+      "sha256": "b6c00d1706cad9cb3af001b1a2f674ca3a7f6d6b9b7abd5fd26060f6d3b58d92",
+      "bytes": 17281
     },
     {
       "name": "api/pages/network-infrastructure.json",
@@ -25440,8 +25440,8 @@
     },
     {
       "name": "api/pages/network-latency.json",
-      "sha256": "28bd2c17f414f7ba1b8b1603f48d49e0b7d0810bc7ef9af8f119070c3c71bd89",
-      "bytes": 11229
+      "sha256": "a29f675eca50b05584e5c41be333f3c8812fb814c9ebcea833a343f4d22ea93b",
+      "bytes": 11227
     },
     {
       "name": "api/pages/network-layer.json",
@@ -25500,8 +25500,8 @@
     },
     {
       "name": "api/pages/network-slicing.json",
-      "sha256": "7812cbfc755bec40c3f1ce703391f621f3ad919638e24e33225c33fdd7a79fd4",
-      "bytes": 11448
+      "sha256": "3336d95729c3117760cfb4ee35b70344be65582ae0ac442b1b443968665d3cf6",
+      "bytes": 11446
     },
     {
       "name": "api/pages/network-standards.json",
@@ -27080,8 +27080,8 @@
     },
     {
       "name": "api/pages/ordinals.json",
-      "sha256": "363b888227825307147ffec4e24e746473cc279f034f36b37dee63f8283113e5",
-      "bytes": 18924
+      "sha256": "2d85d8ae60a71b83db6f4e92fcaed05ddd963a8cca0c6c4532a34ac7458d1c46",
+      "bytes": 18931
     },
     {
       "name": "api/pages/ordinary-differential-equation.json",
@@ -27835,8 +27835,8 @@
     },
     {
       "name": "api/pages/permissionless-network.json",
-      "sha256": "24db0283809e7e796cd41f9c2dbf468ac100b42f6a6d7b8ff621ae15d6ad2cf2",
-      "bytes": 5725
+      "sha256": "ee1a33a9a60a0f2be9ae5ce50726cb62a94023ee6a629a831621b02779b59171",
+      "bytes": 5732
     },
     {
       "name": "api/pages/permissionless-participation.json",
@@ -28360,8 +28360,8 @@
     },
     {
       "name": "api/pages/policy-enforcement.json",
-      "sha256": "583a0910b484d1ebddde4099954c26a5d405dd7c8b982625c89aa99ee5c6b903",
-      "bytes": 22252
+      "sha256": "41d06807d5329e544f1ca9b4e8ad2e65adff4192eb90e3929455fd08fcbf7917",
+      "bytes": 22250
     },
     {
       "name": "api/pages/policy-engine.json",
@@ -28430,8 +28430,8 @@
     },
     {
       "name": "api/pages/polkadot.json",
-      "sha256": "56664250c711fde0b61bbef44b982d2f2d61cd41721081c18ecb704e4d38311d",
-      "bytes": 21441
+      "sha256": "aaee7da2bf63279e42f895e393825f3a04ec5e8265c4bddd09921807a6af42eb",
+      "bytes": 21456
     },
     {
       "name": "api/pages/polycentric-governance.json",
@@ -29155,8 +29155,8 @@
     },
     {
       "name": "api/pages/probabilistic-finality.json",
-      "sha256": "90e1d0e7e9d74c128bf96e50bcc2116d1f21a29764314892a1af688655adef43",
-      "bytes": 16617
+      "sha256": "e1f9de700c9a7aa55bdff2e90aa111c19e3c5bcb00ca44c146cde4a3f166102e",
+      "bytes": 16624
     },
     {
       "name": "api/pages/probabilistic-forecasting.json",
@@ -29310,8 +29310,8 @@
     },
     {
       "name": "api/pages/product-design.json",
-      "sha256": "b0768bb422a5e954b3c686d4b8b76c1215ef2e15292e8c48d741c4ca62285c8d",
-      "bytes": 24501
+      "sha256": "f2f8dd9c8b6f010e164ef847dfd04b4188c574c1c4838a56dd242bae4a102b57",
+      "bytes": 24499
     },
     {
       "name": "api/pages/product-liability-directive.json",
@@ -29535,8 +29535,8 @@
     },
     {
       "name": "api/pages/proof-of-work.json",
-      "sha256": "93b299ce05b9cf47a17a28e8940e2f17f35c0bdf7ba7e05eeab7a8c15aab8e71",
-      "bytes": 33714
+      "sha256": "4e36501892968867907ecc431d22bdb8e68202f442c1e22ef9ee570a8f15448e",
+      "bytes": 33736
     },
     {
       "name": "api/pages/proof-system.json",
@@ -29570,8 +29570,8 @@
     },
     {
       "name": "api/pages/proof-of-stake.json",
-      "sha256": "8d29f6bd739ff9203292320088566780f43fcb3544d9e1fcb4845f18b49e7161",
-      "bytes": 24603
+      "sha256": "289b79fc0f44f1e773b466a58f6f7cf6e8b83dc1c67f0e6a46d1a64a225687d6",
+      "bytes": 24618
     },
     {
       "name": "api/pages/proof-based-consensus.json",
@@ -29805,8 +29805,8 @@
     },
     {
       "name": "api/pages/prototyping.json",
-      "sha256": "cfa172c02929c23c8f26cc9cb94331c215a1f7e39d504599120f53cb074eb4a7",
-      "bytes": 8282
+      "sha256": "77efbca8f83ec29e75451e2486eae822572d208006cbb9b94e02597209e9bb79",
+      "bytes": 8280
     },
     {
       "name": "api/pages/provenance-ontology-prov-o.json",
@@ -30165,8 +30165,8 @@
     },
     {
       "name": "api/pages/quality-of-service.json",
-      "sha256": "251e89f0a4c33e4791a6897a5f0414d2606e78cc1f7066b12176e55d4627a6a8",
-      "bytes": 10337
+      "sha256": "060ea0afe9f8de435ad53b78fcf1a18b6cd52180d225374b41adacda435f26db",
+      "bytes": 10335
     },
     {
       "name": "api/pages/quality-standard.json",
@@ -30235,8 +30235,8 @@
     },
     {
       "name": "api/pages/quantum-network-node.json",
-      "sha256": "a1e7935f52b9236935c262ca143a32ea00031e6b1e610aadbb43cdb8413ec0d9",
-      "bytes": 11579
+      "sha256": "2d236c33ea14f7202f0036de354632b39c401b7e758f467f7e90114e13f3f74e",
+      "bytes": 11577
     },
     {
       "name": "api/pages/quantum-threat-to-cryptography.json",
@@ -30465,8 +30465,8 @@
     },
     {
       "name": "api/pages/rgb-and-client-side-validation.json",
-      "sha256": "72f65e21141bb73f5771ef95f390794c36e2acf5ad14fec56d6ec5bcb06ae24e",
-      "bytes": 44026
+      "sha256": "3a13e47c17b80eb0899d32c0f0e22b6b5e98623aa86b620f6c4bde467ab3bbbf",
+      "bytes": 44033
     },
     {
       "name": "api/pages/rgb-d-camera.json",
@@ -30475,8 +30475,8 @@
     },
     {
       "name": "api/pages/rgb.json",
-      "sha256": "2bf14dd95697b19ba773034e5b9852511e2ca566b9d3b91fa2093cef94b183eb",
-      "bytes": 17457
+      "sha256": "cc0dc089cd3eb4dfb86143232bd5e00673bb9beacfa2642ca9d488dc7cedd60a",
+      "bytes": 17464
     },
     {
       "name": "api/pages/rlhf.json",
@@ -30675,8 +30675,8 @@
     },
     {
       "name": "api/pages/rapid-prototyping.json",
-      "sha256": "a741f752aaef5521317f090cfa5b1c2f5b137c3abb1197ff15ec19b2a99d475d",
-      "bytes": 8688
+      "sha256": "b0e3856c4cf087f1732ef70d9e9de6e5682c70785e22a4ff114ac4b2d55f5a38",
+      "bytes": 8686
     },
     {
       "name": "api/pages/rapidly-exploring-random-tree.json",
@@ -31175,8 +31175,8 @@
     },
     {
       "name": "api/pages/reentrancy-attack.json",
-      "sha256": "bf34100f228e6d2c332fa975796e4ffba76c1284189ce793e97810ea745dc67c",
-      "bytes": 11040
+      "sha256": "2388f662d532953ed62d649d79acb6e635026cd69c249bc8f5b517f50398be1a",
+      "bytes": 11047
     },
     {
       "name": "api/pages/refactoring.json",
@@ -31555,8 +31555,8 @@
     },
     {
       "name": "api/pages/rendering-pipeline.json",
-      "sha256": "cbafe599217e2e4251d2c2674873d92f231df81bd47fac1210d1d078e97440b4",
-      "bytes": 32717
+      "sha256": "84bc2c750c8ef42ea9e9eb425a2d2ea0a67ad60c9807a2da44cacdac3790f1f8",
+      "bytes": 32715
     },
     {
       "name": "api/pages/rendering-technique.json",
@@ -31770,8 +31770,8 @@
     },
     {
       "name": "api/pages/resilience-metric.json",
-      "sha256": "2c7be7ae571df8569f7aa4165a9787d3a35f4cd1fd992b37ba8aa9b25be18a15",
-      "bytes": 9067
+      "sha256": "4d28036667af592fa1bae78c9f6afb3c10f0476ba728f40d5cc5a79d04318c67",
+      "bytes": 9065
     },
     {
       "name": "api/pages/resilience.json",
@@ -32505,8 +32505,8 @@
     },
     {
       "name": "api/pages/runes.json",
-      "sha256": "6385e79799a740d06fb241e8d2f4e551929836574f7c07f982279e7227b8b8c1",
-      "bytes": 17171
+      "sha256": "d58207419b260d945540617712e8e992a02b7ce7f11480ac8772f8c2dda8e448",
+      "bytes": 17178
     },
     {
       "name": "api/pages/runtime-environment.json",
@@ -33020,8 +33020,8 @@
     },
     {
       "name": "api/pages/satoshi-nakamoto.json",
-      "sha256": "427cf61f77604b24e811231232265376f1d03c428e480d616dd960eef6bddae9",
-      "bytes": 19527
+      "sha256": "f661ba709aa9c77cb1e8f832190af3977963ab061184d12e39c6a885a3e75aa4",
+      "bytes": 19542
     },
     {
       "name": "api/pages/satoshi.json",
@@ -33605,8 +33605,8 @@
     },
     {
       "name": "api/pages/seg-wit.json",
-      "sha256": "392e2d44554c6160e54fd0b0628089b0b80b10ec26411754c6270f8ddf87fdfa",
-      "bytes": 19776
+      "sha256": "8d5f5347894aae9b0ac5100ba66d647bd8ceca72d57930636ebcf3f1587aca5a",
+      "bytes": 19783
     },
     {
       "name": "api/pages/segmentation-and-identification.json",
@@ -33710,8 +33710,8 @@
     },
     {
       "name": "api/pages/selfish-mining.json",
-      "sha256": "dfa2a7f8bb44879c238b3a31d0b869f69abd18fee23b0cfe9cc4d4cdb5d64c2d",
-      "bytes": 18948
+      "sha256": "7b52d57cc768098e5dd34c1df0105a9330698ed3bfebb3378c1499845583421a",
+      "bytes": 18970
     },
     {
       "name": "api/pages/semantic-html.json",
@@ -35000,8 +35000,8 @@
     },
     {
       "name": "api/pages/solo-mining.json",
-      "sha256": "81e6a62b7deced7e0c6cb549ec64ccf262e4bd5c53afbf711999b5fca31eaa84",
-      "bytes": 17270
+      "sha256": "63e86518f1ba1cccc71db0c16c200d0f10966621e654aff10eb2e04a775a5dff",
+      "bytes": 17277
     },
     {
       "name": "api/pages/soulbound-tokens.json",
@@ -35060,8 +35060,8 @@
     },
     {
       "name": "api/pages/spam-prevention.json",
-      "sha256": "db309ddc849cf86dfd52fe7dbe132beb0bc5bb67f88f0da3e1ab7a84ae9980ce",
-      "bytes": 16860
+      "sha256": "1bfa29d6b7fd1ee3f31f644924369e8a22529fb11223de725835e91f0625a88b",
+      "bytes": 16867
     },
     {
       "name": "api/pages/sparql-query-engine.json",
@@ -35145,8 +35145,8 @@
     },
     {
       "name": "api/pages/spatial-computing.json",
-      "sha256": "8c9ba4d9bb0d819bcb01c8787d283093f0df639d4187fa8e4ce49090fd5e81ad",
-      "bytes": 15289
+      "sha256": "123556dd2f9b44d67dc227fcc8664aadec60d406f5c8d05e51d9948df63eb828",
+      "bytes": 15287
     },
     {
       "name": "api/pages/spatial-coordinates.json",
@@ -35460,8 +35460,8 @@
     },
     {
       "name": "api/pages/stacks.json",
-      "sha256": "04dca3c3d8890b01bc2b69f8acf9dc9b70f2dcbb1b4e8f1275efe9b8f170f897",
-      "bytes": 17367
+      "sha256": "7cf85a16b6978f527f98bd8a28d0eabf07c8d4a9a5b74cad17cc9099b7d7418f",
+      "bytes": 17374
     },
     {
       "name": "api/pages/stakeholder-analysis.json",
@@ -35555,8 +35555,8 @@
     },
     {
       "name": "api/pages/standards-based-taxonomy.json",
-      "sha256": "5be88b7ae687e61e40fd7e9c2ad797863c28670864922ef5abbeec18e025e852",
-      "bytes": 8485
+      "sha256": "0656627d3eed5559594038b14487fd73b078ea3c9e0c9d75419d7e62dbb48344",
+      "bytes": 8483
     },
     {
       "name": "api/pages/standards-body.json",
@@ -36320,13 +36320,13 @@
     },
     {
       "name": "api/pages/sybil-attack.json",
-      "sha256": "e2aac8107d8d42a0d12779ed88956aa6df51e083dd97389ecdd67cb7131ffdc6",
-      "bytes": 11871
+      "sha256": "b1dd8a34e930fe9b8c4da1671db2f84e95a9d24deb5cdfa43b96f2f027b44c74",
+      "bytes": 11878
     },
     {
       "name": "api/pages/sybil-resistance.json",
-      "sha256": "9b734657b4aae20e8eba959fcbad4076250cf62807e102b992ca04c80cdf0377",
-      "bytes": 19763
+      "sha256": "e4f1a7cfe0451745186e810429e971ed4805883341c2d96555ecef46fa351f36",
+      "bytes": 19770
     },
     {
       "name": "api/pages/symbol-grounding.json",
@@ -36715,8 +36715,8 @@
     },
     {
       "name": "api/pages/taproot-assets.json",
-      "sha256": "34619b0c3c32c883b558274b2784b4564a9219abe1c30a02c7b29c28fdadee82",
-      "bytes": 34563
+      "sha256": "283d70175b09ee133838f3b46d6ddf858d2fb06422bfd159b4db8d8eef958143",
+      "bytes": 34570
     },
     {
       "name": "api/pages/taproot.json",
@@ -36835,8 +36835,8 @@
     },
     {
       "name": "api/pages/technical-architecture-framework.json",
-      "sha256": "bb60cfa9a7922adac6a13f74e214aca4d70d1d2577d6da4bbcfd10cfed5e9841",
-      "bytes": 10396
+      "sha256": "973812e99166c980543eb2860869ccb2bcb0e95941cc367d20b21bc6edb1d8d7",
+      "bytes": 10394
     },
     {
       "name": "api/pages/technical-architecture.json",
@@ -36960,8 +36960,8 @@
     },
     {
       "name": "api/pages/telecollaboration.json",
-      "sha256": "071d8fcba4628864e2ed36e42f8ba06c1bec4a0cbe75908e3cc2b6b8dd3ceff3",
-      "bytes": 22842
+      "sha256": "496582d3c3a9a8ab80f893b7b6375238d688169ea3b0cd35d8bd3810cb27ed41",
+      "bytes": 22838
     },
     {
       "name": "api/pages/telecommunications-infrastructure.json",
@@ -38055,8 +38055,8 @@
     },
     {
       "name": "api/pages/transaction-censorship.json",
-      "sha256": "eef771c821894072af217fe6901a5a0e74a787f3ee248e6b23999d989e67e897",
-      "bytes": 16565
+      "sha256": "5ba454b540f2a9d0d576da7545141a87051bab9d70f4357666a488ad29b89328",
+      "bytes": 16587
     },
     {
       "name": "api/pages/transaction-confirmation.json",
@@ -38070,8 +38070,8 @@
     },
     {
       "name": "api/pages/transaction-finality.json",
-      "sha256": "2a660b50b1044367adcf65a7b4a015b595ecf76f811096af900ca63ec10d3cc0",
-      "bytes": 19075
+      "sha256": "940e9d34550c304a35e628eabf9f5f8cd98cc71fcc1e582445d472f3b3df4b78",
+      "bytes": 19082
     },
     {
       "name": "api/pages/transaction-history.json",
@@ -38145,8 +38145,8 @@
     },
     {
       "name": "api/pages/transaction.json",
-      "sha256": "742d48007fdc5bf7bc67241c38955e150be64220d4870e691cd03fc53ae7b3ea",
-      "bytes": 18471
+      "sha256": "c3fef6cbea13736e11f042713975be30b00be1437d68bd5ac3806a5ece46cca4",
+      "bytes": 18486
     },
     {
       "name": "api/pages/transfer-function.json",
@@ -38935,8 +38935,8 @@
     },
     {
       "name": "api/pages/universal-design.json",
-      "sha256": "7b688a91a04cd96d61b44cc83c181ef1987da0a8d46d0101268c9957aac097f6",
-      "bytes": 10785
+      "sha256": "53e1ee9678d3957aa0659064cb0de69c2cddd1e066c18b6130a51bb07137c51f",
+      "bytes": 10783
     },
     {
       "name": "api/pages/universal-manifest.json",
@@ -39045,8 +39045,8 @@
     },
     {
       "name": "api/pages/usability-testing.json",
-      "sha256": "572e9c87fa9e1725512ef424569ea2ac2941da83eb97d591b06878489776d9b0",
-      "bytes": 11506
+      "sha256": "d0cc4f73076802e2a959e2ee126cb4154c3a6ecca19e5bb2ad6789ed440528b8",
+      "bytes": 11504
     },
     {
       "name": "api/pages/usability.json",
@@ -39870,8 +39870,8 @@
     },
     {
       "name": "api/pages/virtual-environment.json",
-      "sha256": "adf304526de9ba86f602cafd42a4d81ca3b34a815c5330773ef72b4c29b7543e",
-      "bytes": 12738
+      "sha256": "7efa2a2031d9f1e0fa9e59efbde24907add64e14700510b232cda2d17fdeae26",
+      "bytes": 12734
     },
     {
       "name": "api/pages/virtual-event-platform.json",
@@ -42100,8 +42100,8 @@
     },
     {
       "name": "api/pages/s-btc.json",
-      "sha256": "522838a64935d9d6199805e2e9a40d1d8584143a32fd305c4fd2a0f3228d873b",
-      "bytes": 17616
+      "sha256": "8edcbd95bc5e5664d6bbaf87982d63ee784b867a91f4a1c6b2827e316f72ada8",
+      "bytes": 17623
     },
     {
       "name": "api/pages/sc-content-and-assets.json",
@@ -42195,8 +42195,8 @@
     },
     {
       "name": "api/pages/_domain-index.json",
-      "sha256": "3f6b6f6911ac2a2a4b437e5f9381df71ca6298ffca397142abcb281af9fa41be",
-      "bytes": 943856
+      "sha256": "8021ac5b590a9568da34925f4960c664b295e710fe475617224a428a9bf32aee",
+      "bytes": 943851
     },
     {
       "name": "api/census.json",
@@ -42225,18 +42225,18 @@
     },
     {
       "name": "data/ontology.json",
-      "sha256": "6347c520dfeda7fe5e3fa15f9a9dc1f5e325a80aea54a5bea4a77bf81cc6a5fc",
-      "bytes": 48998480
+      "sha256": "d164f4f96d665199667f3ef06987b371931d9566a5000084eeb58a236aae262c",
+      "bytes": 48998467
     },
     {
       "name": "data/graph/overview.json",
-      "sha256": "c58f1e169cfce78146b162ce543fc2a0233411e94ec24894cc2b6be8453cb50a",
+      "sha256": "7f2bd8e07c04ae1049be01f13aa9a3492e9ba84c236dab5a1f20f4aeb02cb83b",
       "bytes": 25852
     },
     {
       "name": "data/graph/full.bin",
-      "sha256": "cb2f9464d96de1c55350e42afc4f9e4432ecedd9a4882402e89db759a08441c3",
-      "bytes": 1473374
+      "sha256": "2a70c1e3f79d24242c1b0c7dd9a87a712d0be41a19c1a8fff0dfcd2d7f506a4c",
+      "bytes": 1473361
     },
     {
       "name": "data/graph/domain-artificial-intelligence.bin",
@@ -42245,13 +42245,13 @@
     },
     {
       "name": "data/graph/domain-blockchain.bin",
-      "sha256": "57734987107dc8bc5864e42a18929a58347a1edac0162bc72f311088000ebc37",
-      "bytes": 202273
+      "sha256": "51801c0d38b53f870a4e1f1e4c16bda8363098d0f94d3147ebfe30ad6fe7038c",
+      "bytes": 202280
     },
     {
       "name": "data/graph/domain-spatial-computing.bin",
-      "sha256": "1286737805233ac7f0428a19fceb9fc6b00fd6d20643438eab7935f01e330b19",
-      "bytes": 165159
+      "sha256": "9a2fc0939d37a6922881bba4edbdf525885893003adeeda90aedc93d2700d9e8",
+      "bytes": 165155
     },
     {
       "name": "data/graph/domain-robotics.bin",
@@ -42265,18 +42265,18 @@
     },
     {
       "name": "data/graph/domain-infrastructure.bin",
-      "sha256": "58d1ec391dc423499881448d5c102904201eb62513a6958fc172a17d2c30ce25",
-      "bytes": 217835
+      "sha256": "d8e0a189b0bbfddbc67d260880091f3f92f77c538ba49446477bdde9f406111b",
+      "bytes": 217833
     },
     {
       "name": "data/graph/stats.json",
-      "sha256": "6e5248fc678539638489f6482022cc093f0f5541bc50f9c28d979a608e7b2e83",
+      "sha256": "93c471b12ce336fae906ea3f8e68c6ac55e8eebaba4735ecc681d5f1219e0066",
       "bytes": 2571
     },
     {
       "name": "data/graph/bridges.json",
-      "sha256": "08b17e3d8b4844bf4033828936920741442d586b414a430232b53ac98f9e66a7",
-      "bytes": 402802
+      "sha256": "9e8f1147c8ccd6ea2c30e79097a0e43083443f63c709c0457bad085ae1b26891",
+      "bytes": 402807
     },
     {
       "name": "api/markdown/1Hive.md",
@@ -42459,7 +42459,7 @@
       "bytes": 2968
     },
     {
-      "name": "api/markdown/51% Attack.md",
+      "name": "api/markdown/51 Percent Attack.md",
       "sha256": "e6bd254198a5290cfcac492da45e8654990ef26ec649cf59a5a4303c78a1711d",
       "bytes": 14021
     },
@@ -47160,8 +47160,8 @@
     },
     {
       "name": "api/markdown/Bitcoin Centralisation Risks.md",
-      "sha256": "611532b88337097f8222f6cf80ad8787fef296a4c71627f1494fd80a45d9017b",
-      "bytes": 104761
+      "sha256": "fd7763bc2ea804446886779268464ae49e4b1623e616fd387a07c4c35d4a0307",
+      "bytes": 104789
     },
     {
       "name": "api/markdown/Bitcoin Core.md",
@@ -47630,8 +47630,8 @@
     },
     {
       "name": "api/markdown/Blockchain Security.md",
-      "sha256": "c556505a1b78744fac14714217cbe6343fe5550f40fd46a9f762c1b5e2b4dccd",
-      "bytes": 16635
+      "sha256": "fdde3f415737fed790902b1e081d976c672860d557453af622490e852b1856fd",
+      "bytes": 16642
     },
     {
       "name": "api/markdown/Blockchain Sustainability.md",
@@ -55674,17 +55674,17 @@
       "bytes": 5705
     },
     {
+      "name": "api/markdown/ETSI_Domain_Governance_Economy.md",
+      "sha256": "8fd27f5beff32b222a97749669c99982e9516f179e8a856aa29e091b97ad6b57",
+      "bytes": 8494
+    },
+    {
       "name": "api/markdown/ETSI_Domain_Governance_Security.md",
       "sha256": "c0dffd5e1785971d0293586c166e5e3c058a5cc52a3f64a76430dfdea184868e",
       "bytes": 874
     },
     {
-      "name": "api/markdown/ETSI_Domain_Governance___Economy.md",
-      "sha256": "8fd27f5beff32b222a97749669c99982e9516f179e8a856aa29e091b97ad6b57",
-      "bytes": 8494
-    },
-    {
-      "name": "api/markdown/ETSI_Domain_Governance___Society.md",
+      "name": "api/markdown/ETSI_Domain_Governance_Society.md",
       "sha256": "77ce6af47050ef45f49e4a8aaddb619cd1e3201b81a3046e300e03beb077bb39",
       "bytes": 4746
     },
@@ -55694,12 +55694,12 @@
       "bytes": 6765
     },
     {
-      "name": "api/markdown/ETSI_Domain_Human_Interface___Governance.md",
+      "name": "api/markdown/ETSI_Domain_Human_Interface_Governance.md",
       "sha256": "b390fc708d80d20e1903d1f9a8d511bd3770eedd063aee99fbafeddcf9fa2e3c",
       "bytes": 6395
     },
     {
-      "name": "api/markdown/ETSI_Domain_Human_Interface___UX.md",
+      "name": "api/markdown/ETSI_Domain_Human_Interface_UX.md",
       "sha256": "cb144e9935debfef90111d6a590d81adbaef0561d09564a45bfb9cad2bdc1511",
       "bytes": 6292
     },
@@ -55719,22 +55719,22 @@
       "bytes": 7409
     },
     {
-      "name": "api/markdown/ETSI_Domain_Infrastructure___Governance.md",
+      "name": "api/markdown/ETSI_Domain_Infrastructure_Governance.md",
       "sha256": "be02756046bea7f564b6e6c2528772eb3f4005dc26718dc254221dc374d283b4",
       "bytes": 6303
     },
     {
-      "name": "api/markdown/ETSI_Domain_Infrastructure___Immersive.md",
+      "name": "api/markdown/ETSI_Domain_Infrastructure_Immersive.md",
       "sha256": "57a0f50fc375b250d931072a79193c013c951fb1779cecb6ed6a78ff735c4f9a",
       "bytes": 53001
     },
     {
-      "name": "api/markdown/ETSI_Domain_Infrastructure___Interop.md",
+      "name": "api/markdown/ETSI_Domain_Infrastructure_Interop.md",
       "sha256": "acc73d5dcd39be0de97010a17b9ee35a86dabbfb1e41944694ed6f25dfd7ef84",
       "bytes": 5568
     },
     {
-      "name": "api/markdown/ETSI_Domain_Infrastructure___Security.md",
+      "name": "api/markdown/ETSI_Domain_Infrastructure_Security.md",
       "sha256": "100ad782b633624004cd184cde6a2a23f41b272ca8f71d08844cc8f7114b1618",
       "bytes": 5685
     },
@@ -55744,7 +55744,7 @@
       "bytes": 8061
     },
     {
-      "name": "api/markdown/ETSI_Domain_Interoperability___Creative.md",
+      "name": "api/markdown/ETSI_Domain_Interoperability_Creative.md",
       "sha256": "211fd9eeb2004eef4134d437c051dac2888ba51d9f24624435feaecca7e4ffc5",
       "bytes": 47362
     },
@@ -55754,7 +55754,7 @@
       "bytes": 9183
     },
     {
-      "name": "api/markdown/ETSI_Domain_Reality_Capture___Creative.md",
+      "name": "api/markdown/ETSI_Domain_Reality_Capture_Creative.md",
       "sha256": "c7e8f33e23ac279b20136aec10e66b1f5e7339fd0f9912102391f6d149398c93",
       "bytes": 6005
     },
@@ -60250,8 +60250,8 @@
     },
     {
       "name": "api/markdown/Hashcash.md",
-      "sha256": "36060e0fbfad5017453990b92f7fd00a7855712a94c6477f63571887e81cb855",
-      "bytes": 7083
+      "sha256": "3706814ff03e74db5f4afa1eb72122176dcec83b8a73aa038ce1a4417139cabd",
+      "bytes": 7090
     },
     {
       "name": "api/markdown/Hashed Timelock Contract.md",
@@ -62365,8 +62365,8 @@
     },
     {
       "name": "api/markdown/Incentive Alignment.md",
-      "sha256": "c0033b3d5ce17807154e25033789b0d4d620abc79f3284f81ee29699a84594b6",
-      "bytes": 3730
+      "sha256": "6a3370479d821fd181569dd9037281c53b204ad48bccc79863e5d870f0af8b5c",
+      "bytes": 3737
     },
     {
       "name": "api/markdown/Incentive Compatibility.md",
@@ -71065,8 +71065,8 @@
     },
     {
       "name": "api/markdown/Permissionless Network.md",
-      "sha256": "6867aba7e441198b975577473aecae6486b8e8285303590b5a68650fc339860a",
-      "bytes": 4219
+      "sha256": "bfeb21bb663598236433ee41c93f2fc4f66d2e1f850678e0537cdb78796a4a73",
+      "bytes": 4226
     },
     {
       "name": "api/markdown/Permissionless Participation.md",
@@ -72795,8 +72795,8 @@
     },
     {
       "name": "api/markdown/Proof Of Work.md",
-      "sha256": "502c6eee60167f5932c934305969a3e3aedc417e9ecc32b4edec07f61928201a",
-      "bytes": 31765
+      "sha256": "ca4f089c4f506283e24ef463ac6066f8577648d863271389e4ad85d88b0a491d",
+      "bytes": 31786
     },
     {
       "name": "api/markdown/Proof System.md",
@@ -79800,13 +79800,13 @@
     },
     {
       "name": "api/markdown/Sybil Resistance.md",
-      "sha256": "10ec9bc442e60e34a8ada560bfd5843c0ca0fe9d80662ff6b7a9c245a75ef333",
-      "bytes": 8634
+      "sha256": "a47b955c1f51af7deda75927b48c58ce828ec64eeccdcb5a4d2d27bcf4d3bcda",
+      "bytes": 8641
     },
     {
       "name": "api/markdown/sybil resistance.md",
-      "sha256": "10ec9bc442e60e34a8ada560bfd5843c0ca0fe9d80662ff6b7a9c245a75ef333",
-      "bytes": 8634
+      "sha256": "a47b955c1f51af7deda75927b48c58ce828ec64eeccdcb5a4d2d27bcf4d3bcda",
+      "bytes": 8641
     },
     {
       "name": "api/markdown/Symbol Grounding.md",
@@ -80460,8 +80460,8 @@
     },
     {
       "name": "api/markdown/Telecollaboration and Telepresence.md",
-      "sha256": "b0ae37b3b79a38525a073e36c2b1d886d3ae7629bb62df805dc88ccd439de86e",
-      "bytes": 84456
+      "sha256": "1136254e507efed37997ec9de3594cbd86e4940338b6c923b2881b57549868d9",
+      "bytes": 84463
     },
     {
       "name": "api/markdown/Telecollaboration.md",
@@ -86000,8 +86000,8 @@
     },
     {
       "name": "okf/index.md",
-      "sha256": "05478a000038ab8716798831492432447154a96204a55e4395d1f865ca0d95fe",
-      "bytes": 787125
+      "sha256": "9f38a01014a0803560169c220b71457030917201c5e4c36367fd88ac65285dc8",
+      "bytes": 787112
     },
     {
       "name": "okf/concepts/1-hive.md",
@@ -86200,8 +86200,8 @@
     },
     {
       "name": "okf/concepts/51-attack.md",
-      "sha256": "799d3ec0a093887072788ea226408c093c5b10dc2c23bb9fc7f886191ba3a200",
-      "bytes": 1876
+      "sha256": "35652ce378983cb9055a663d9291e531c367c412ca90f4756491072d77cecbcd",
+      "bytes": 1890
     },
     {
       "name": "okf/concepts/6-do-f-tracking.md",
@@ -100225,8 +100225,8 @@
     },
     {
       "name": "okf/concepts/etsi-domain-governance-economy.md",
-      "sha256": "c2814bf1a176277b8d665dfad7f47bd9a09744c8e8bd7bc26e3cb4d0efa8e71f",
-      "bytes": 939
+      "sha256": "5874942261ea16cbcac424b4cb14bea2532ca6895225c0f13c1e248f312ef03e",
+      "bytes": 935
     },
     {
       "name": "okf/concepts/etsi-domain-governance-security.md",
@@ -100235,8 +100235,8 @@
     },
     {
       "name": "okf/concepts/etsi-domain-governance-society.md",
-      "sha256": "895985e9e17e52395c280b292ced8870637934a249b0e7426f61878bf0aed191",
-      "bytes": 659
+      "sha256": "33984850669f5291799f349790cb60fe300f963ffd022cccc6bea2478d05fa3f",
+      "bytes": 655
     },
     {
       "name": "okf/concepts/etsi-domain-human-interface.md",
@@ -100245,13 +100245,13 @@
     },
     {
       "name": "okf/concepts/etsi-domain-human-interface-governance.md",
-      "sha256": "91a49c91fa182cb92074d62905bf21cb10e31b1218d60b4192f8dbaf675351e0",
-      "bytes": 721
+      "sha256": "36285038eff0ac0b9de2ed2b56ab5a1d78d84abb3475f9ec755faa426ade1cd8",
+      "bytes": 717
     },
     {
       "name": "okf/concepts/etsi-domain-human-interface-ux.md",
-      "sha256": "c6b1dc843408dfc6964ce14e4d07518e0ae5ae1c48fecebfda3fa111aabef6d6",
-      "bytes": 1408
+      "sha256": "658f1d0f0fedf1ef0b855ec5c855033b265c64dc07e599e0308392c7a48250b5",
+      "bytes": 1404
     },
     {
       "name": "okf/concepts/etsi-domain-identity-and-trust.md",
@@ -100285,23 +100285,23 @@
     },
     {
       "name": "okf/concepts/etsi-domain-infrastructure-governance.md",
-      "sha256": "bbf951b7dad1ab55ee7f80d237cafffaba7201a914661c385056d25496017bc2",
-      "bytes": 816
+      "sha256": "493a2fd018992e32d8407b629ebebfb7605884f754e6c1fc7b0ca473d10a1e7a",
+      "bytes": 812
     },
     {
       "name": "okf/concepts/etsi-domain-infrastructure-immersive.md",
-      "sha256": "fcf8dca9f9ade820ad438c011836c96b54bd4f29fd25c33064b6aaf51aa47cbf",
-      "bytes": 2343
+      "sha256": "6d46b7411787f97df5d91832f32f8a691b1c5dfcd071c31ab9f824465c8270c5",
+      "bytes": 2339
     },
     {
       "name": "okf/concepts/etsi-domain-infrastructure-interop.md",
-      "sha256": "0c39e59efc45e01ba9f77fb2a61a2d672c9d2ea16f463dd05d2a322d6c24d8ff",
-      "bytes": 1442
+      "sha256": "728a9ef344bfc5d5303f20efca7420283eda53ccfdfcd61141e21f11a350599d",
+      "bytes": 1438
     },
     {
       "name": "okf/concepts/etsi-domain-infrastructure-security.md",
-      "sha256": "177ca14b8fc91af8b2cbfb3c2ae5f47e89b756b99da0b4f2bb1a457617579964",
-      "bytes": 1394
+      "sha256": "5eaafd4f7527aecebd3a742607df49c9890353b2a73d57f1d672d333d7d24be1",
+      "bytes": 1390
     },
     {
       "name": "okf/concepts/etsi-domain-interoperability.md",
@@ -100310,8 +100310,8 @@
     },
     {
       "name": "okf/concepts/etsi-domain-interoperability-creative.md",
-      "sha256": "bc4d2adcf9b5a3fa967457bf8593454a03bd72bdb52856fc01ccd33d2aa9e51c",
-      "bytes": 2074
+      "sha256": "383ab8fb4620776d9b3f30c485dfd9fc5755b2335244cedea71d94e793fc0b09",
+      "bytes": 2070
     },
     {
       "name": "okf/concepts/etsi-domain-reality-capture.md",
@@ -100320,8 +100320,8 @@
     },
     {
       "name": "okf/concepts/etsi-domain-reality-capture-creative.md",
-      "sha256": "32c4f1ed7d33ba2ac761062ef8528c99ed70c1bbd9135b78b1e7437c128d41fb",
-      "bytes": 1412
+      "sha256": "f3f192b39fe0da733845e748641fd1fcb2260b062e3c8a45f657c10cd82367d1",
+      "bytes": 1408
     },
     {
       "name": "okf/concepts/etsi-domain-security-and-privacy.md",

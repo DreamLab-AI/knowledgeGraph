@@ -1,7 +1,7 @@
 ---
 okf_version: "0.2"
 type: Class
-title: ETSI_Domain_Infrastructure___Interop
+title: ETSI_Domain_Infrastructure_Interop
 resource: urn:ngm:class:etsi-domain-infrastructure-interop
 domain: infrastructure
 description: ETSI infrastructure interoperability domain providing standardised frameworks enabling disparate systems, services, and domains to exchange data and operate cohesively across organisational boundaries. It underpins cross-domain data integration through NGSI-LD interfaces, intent-based network management, spectrum sharing frameworks, and EU Data Act Article 35 mandates for centralised interoperabil
@@ -22,6 +22,6 @@ relatedTo:
   - urn:ngm:class:data-governance
 ---
 
-# ETSI_Domain_Infrastructure___Interop
+# ETSI_Domain_Infrastructure_Interop
 
 ETSI infrastructure interoperability domain providing standardised frameworks enabling disparate systems, services, and domains to exchange data and operate cohesively across organisational boundaries. It underpins cross-domain data integration through NGSI-LD interfaces, intent-based network management, spectrum sharing frameworks, and EU Data Act Article 35 mandates for centralised interoperability standards repositories.

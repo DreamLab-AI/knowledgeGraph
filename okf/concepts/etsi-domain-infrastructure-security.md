@@ -1,7 +1,7 @@
 ---
 okf_version: "0.2"
 type: Class
-title: ETSI_Domain_Infrastructure___Security
+title: ETSI_Domain_Infrastructure_Security
 resource: urn:ngm:class:etsi-domain-infrastructure-security
 domain: infrastructure
 description: ETSI infrastructure security domain safeguarding metaverse and edge computing environments through NFV architectural frameworks, cross-domain authentication standards, and decentralised identity systems. It addresses multi-party trust models, privacy-preserving mechanisms, and security lifecycle management coordinated with 3GPP and ITU-T for ultra-edge and terminal-edge deployments.
@@ -22,6 +22,6 @@ relatedTo:
   - urn:ngm:class:data-governance
 ---
 
-# ETSI_Domain_Infrastructure___Security
+# ETSI_Domain_Infrastructure_Security
 
 ETSI infrastructure security domain safeguarding metaverse and edge computing environments through NFV architectural frameworks, cross-domain authentication standards, and decentralised identity systems. It addresses multi-party trust models, privacy-preserving mechanisms, and security lifecycle management coordinated with 3GPP and ITU-T for ultra-edge and terminal-edge deployments.

@@ -1,7 +1,7 @@
 ---
 okf_version: "0.2"
 type: Class
-title: 51% Attack
+title: 51 Percent Attack
 resource: urn:ngm:class:51-attack
 domain: blockchain
 description: "A 51% Attack is a consensus-layer attack on a Proof-of-Work blockchain in which a single entity or coalition controls more than half of the network's hash rate, enabling double-spending, transaction censorship, and chain reorganisation. The attack exploits the longest-chain rule: the attacker mines a private fork containing fraudulent transactions and, once it exceeds the honest chain in cumulativ"
@@ -39,6 +39,6 @@ relatedTo:
   - urn:ngm:class:ethereum-smart-contract-platform-classic
 ---
 
-# 51% Attack
+# 51 Percent Attack
 
 A 51% Attack is a consensus-layer attack on a Proof-of-Work blockchain in which a single entity or coalition controls more than half of the network's hash rate, enabling double-spending, transaction censorship, and chain reorganisation. The attack exploits the longest-chain rule: the attacker mines a private fork containing fraudulent transactions and, once it exceeds the honest chain in cumulative work, broadcasts it to override confirmed history.

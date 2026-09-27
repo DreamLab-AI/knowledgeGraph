@@ -898,8 +898,8 @@
     "wikilinks": []
   },
   {
-    "id": "51-attack",
-    "title": "51% Attack",
+    "id": "51-percent-attack",
+    "title": "51 Percent Attack",
     "domain": "blockchain",
     "domain_name": "Blockchain",
     "definition": "A 51% Attack is a consensus-layer attack on a Proof-of-Work blockchain in which a single entity or coalition controls more than half of the network's hash rate, enabling double-spending, transaction censorship, and chain reorganisation. The attack exploits the longest-chain rule: the attacker mines a private fork containing fraudulent transactions and, once it exceeds the honest chain in cumulative work, broadcasts it to override confirmed history.",
@@ -908,8 +908,8 @@
     "maturity": "emerging",
     "iri": "urn:ngm:class:51-attack",
     "labels": [
-      "51% Attack",
       "51 Percent Attack",
+      "51% Attack",
       "51 Percent Attack Resistance"
     ],
     "is_subclass_of": [
@@ -65437,6 +65437,40 @@
     ]
   },
   {
+    "id": "etsi-domain-governance-economy",
+    "title": "ETSI_Domain_Governance_Economy",
+    "domain": "artificial-intelligence",
+    "domain_name": "Artificial Intelligence",
+    "definition": "ETSI domain intersection addressing economic governance, financial regulation, and market oversight mechanisms within metaverse ecosystems. These Governance Frameworks integrate Monetary Policy, Market Supervision, and Economic Oversight to ensure stable financial operations.",
+    "entityType": "Class",
+    "qualityScore": 0.4,
+    "maturity": "draft",
+    "iri": "urn:ngm:class:etsi-domain-governance-economy",
+    "labels": [
+      "ETSI_Domain_Governance_Economy"
+    ],
+    "is_subclass_of": [
+      "AI Governance and Ethics"
+    ],
+    "wikilinks": [
+      "Economic Oversight",
+      "Economic Policy",
+      "ETSI",
+      "ETSI GR MEC 032",
+      "ETSI GR PDL 030",
+      "ETSI GR PDL 034",
+      "Financial Governance",
+      "Governance Frameworks",
+      "ISO 23257",
+      "Market Supervision",
+      "Metaverse Standards Forum",
+      "Monetary Policy",
+      "Asset Management",
+      "Blockchain",
+      "MetaverseDomain"
+    ]
+  },
+  {
     "id": "etsi-domain-governance-security",
     "title": "ETSI_Domain_Governance_Security",
     "domain": "artificial-intelligence",
@@ -65471,42 +65505,8 @@
     ]
   },
   {
-    "id": "etsi-domain-governance-economy",
-    "title": "ETSI_Domain_Governance___Economy",
-    "domain": "artificial-intelligence",
-    "domain_name": "Artificial Intelligence",
-    "definition": "ETSI domain intersection addressing economic governance, financial regulation, and market oversight mechanisms within metaverse ecosystems. These Governance Frameworks integrate Monetary Policy, Market Supervision, and Economic Oversight to ensure stable financial operations.",
-    "entityType": "Class",
-    "qualityScore": 0.4,
-    "maturity": "draft",
-    "iri": "urn:ngm:class:etsi-domain-governance-economy",
-    "labels": [
-      "ETSI_Domain_Governance___Economy"
-    ],
-    "is_subclass_of": [
-      "AI Governance and Ethics"
-    ],
-    "wikilinks": [
-      "Economic Oversight",
-      "Economic Policy",
-      "ETSI",
-      "ETSI GR MEC 032",
-      "ETSI GR PDL 030",
-      "ETSI GR PDL 034",
-      "Financial Governance",
-      "Governance Frameworks",
-      "ISO 23257",
-      "Market Supervision",
-      "Metaverse Standards Forum",
-      "Monetary Policy",
-      "Asset Management",
-      "Blockchain",
-      "MetaverseDomain"
-    ]
-  },
-  {
     "id": "etsi-domain-governance-society",
-    "title": "ETSI_Domain_Governance___Society",
+    "title": "ETSI_Domain_Governance_Society",
     "domain": "artificial-intelligence",
     "domain_name": "Artificial Intelligence",
     "definition": "An ETSI governance domain addressing societal impacts, inclusion, community wellbeing, and cultural considerations for metaverse and digital infrastructure.",
@@ -65515,7 +65515,7 @@
     "maturity": "draft",
     "iri": "urn:ngm:class:etsi-domain-governance-society",
     "labels": [
-      "ETSI_Domain_Governance___Society"
+      "ETSI_Domain_Governance_Society"
     ],
     "is_subclass_of": [
       "AI Governance and Ethics"
@@ -65567,7 +65567,7 @@
   },
   {
     "id": "etsi-domain-human-interface-governance",
-    "title": "ETSI_Domain_Human_Interface___Governance",
+    "title": "ETSI_Domain_Human_Interface_Governance",
     "domain": "artificial-intelligence",
     "domain_name": "Artificial Intelligence",
     "definition": "An ETSI subdomain addressing governance mechanisms, policy frameworks, and institutional structures governing human-centric systems in VirtualEnvironment|virtual environments.",
@@ -65576,7 +65576,7 @@
     "maturity": "draft",
     "iri": "urn:ngm:class:etsi-domain-human-interface-governance",
     "labels": [
-      "ETSI_Domain_Human_Interface___Governance"
+      "ETSI_Domain_Human_Interface_Governance"
     ],
     "is_subclass_of": [
       "AI Governance and Ethics"
@@ -65597,7 +65597,7 @@
   },
   {
     "id": "etsi-domain-human-interface-ux",
-    "title": "ETSI_Domain_Human_Interface___UX",
+    "title": "ETSI_Domain_Human_Interface_UX",
     "domain": "spatial-computing",
     "domain_name": "Spatial Computing",
     "definition": "An ETSI subdomain focusing on user experience design, usability engineering, and interaction paradigms optimising satisfaction, efficiency, and accessibility in immersive digital environments. It covers design principles, usability testing, accessibility compliance, inclusive UX design, and AI-driven adaptive interfaces aligned with ISO 9241-110 dialogue principles and ETSI GR ARF 010 specifications.",
@@ -65606,7 +65606,7 @@
     "maturity": "emerging",
     "iri": "urn:ngm:class:etsi-domain-human-interface-ux",
     "labels": [
-      "ETSI_Domain_Human_Interface___UX"
+      "ETSI_Domain_Human_Interface_UX"
     ],
     "is_subclass_of": [
       "Interaction Technology"
@@ -65719,7 +65719,7 @@
   },
   {
     "id": "etsi-domain-infrastructure-governance",
-    "title": "ETSI_Domain_Infrastructure___Governance",
+    "title": "ETSI_Domain_Infrastructure_Governance",
     "domain": "artificial-intelligence",
     "domain_name": "Artificial Intelligence",
     "definition": "ETSI governance framework and mechanisms overseeing infrastructure domains through trust domain separation, policy enforcement, and security management implementing local policy control across distributed network components.",
@@ -65728,7 +65728,7 @@
     "maturity": "draft",
     "iri": "urn:ngm:class:etsi-domain-infrastructure-governance",
     "labels": [
-      "ETSI_Domain_Infrastructure___Governance"
+      "ETSI_Domain_Infrastructure_Governance"
     ],
     "is_subclass_of": [
       "AI Governance and Ethics"
@@ -65740,7 +65740,7 @@
   },
   {
     "id": "etsi-domain-infrastructure-immersive",
-    "title": "ETSI_Domain_Infrastructure___Immersive",
+    "title": "ETSI_Domain_Infrastructure_Immersive",
     "domain": "infrastructure",
     "domain_name": "Infrastructure",
     "definition": "A functional domain classification within the European Telecommunications Standards Institute (ETSI) metaverse technical architecture framework (GS MEC 003, GS ARF 003) that encompasses the foundational technological infrastructure required to deliver immersive experiences including extended real...",
@@ -65749,7 +65749,7 @@
     "maturity": "established",
     "iri": "urn:ngm:class:etsi-domain-infrastructure-immersive",
     "labels": [
-      "ETSI_Domain_Infrastructure___Immersive"
+      "ETSI_Domain_Infrastructure_Immersive"
     ],
     "is_subclass_of": [
       "Computing and Cloud",
@@ -65783,7 +65783,7 @@
   },
   {
     "id": "etsi-domain-infrastructure-interop",
-    "title": "ETSI_Domain_Infrastructure___Interop",
+    "title": "ETSI_Domain_Infrastructure_Interop",
     "domain": "infrastructure",
     "domain_name": "Infrastructure",
     "definition": "ETSI infrastructure interoperability domain providing standardised frameworks enabling disparate systems, services, and domains to exchange data and operate cohesively across organisational boundaries. It underpins cross-domain data integration through NGSI-LD interfaces, intent-based network management, spectrum sharing frameworks, and EU Data Act Article 35 mandates for centralised interoperability standards repositories.",
@@ -65792,7 +65792,7 @@
     "maturity": "emerging",
     "iri": "urn:ngm:class:etsi-domain-infrastructure-interop",
     "labels": [
-      "ETSI_Domain_Infrastructure___Interop"
+      "ETSI_Domain_Infrastructure_Interop"
     ],
     "is_subclass_of": [
       "Network and Communication"
@@ -65805,7 +65805,7 @@
   },
   {
     "id": "etsi-domain-infrastructure-security",
-    "title": "ETSI_Domain_Infrastructure___Security",
+    "title": "ETSI_Domain_Infrastructure_Security",
     "domain": "infrastructure",
     "domain_name": "Infrastructure",
     "definition": "ETSI infrastructure security domain safeguarding metaverse and edge computing environments through NFV architectural frameworks, cross-domain authentication standards, and decentralised identity systems. It addresses multi-party trust models, privacy-preserving mechanisms, and security lifecycle management coordinated with 3GPP and ITU-T for ultra-edge and terminal-edge deployments.",
@@ -65814,7 +65814,7 @@
     "maturity": "emerging",
     "iri": "urn:ngm:class:etsi-domain-infrastructure-security",
     "labels": [
-      "ETSI_Domain_Infrastructure___Security"
+      "ETSI_Domain_Infrastructure_Security"
     ],
     "is_subclass_of": [
       "Security and Identity"
@@ -65865,7 +65865,7 @@
   },
   {
     "id": "etsi-domain-interoperability-creative",
-    "title": "ETSI_Domain_Interoperability___Creative",
+    "title": "ETSI_Domain_Interoperability_Creative",
     "domain": "infrastructure",
     "domain_name": "Infrastructure",
     "definition": "The ETSI Domain Interoperability/Creative is a functional domain classification defined by the European Telecommunications Standards Institute that addresses the intersection of technical interoperability standards and creative content workflows within metaverse and extended reality ecosystems. It encompasses the standards, protocols, and toolchains\u2014including glTF 2.0, USD, WebXR, OpenXR, and MPEG-I Scene Description\u2014that enable digital creative assets such as three-dimensional models, animations, and immersive environments to be authored once and deployed across heterogeneous platforms without proprietary lock-in or fidelity degradation. The domain integrates digital rights management frameworks and semantic metadata schemas to preserve creator attribution, licensing terms, and provenance across cross-platform distribution pipelines.",
@@ -65874,7 +65874,7 @@
     "maturity": "established",
     "iri": "urn:ngm:class:etsi-domain-interoperability-creative",
     "labels": [
-      "ETSI_Domain_Interoperability___Creative"
+      "ETSI_Domain_Interoperability_Creative"
     ],
     "is_subclass_of": [
       "Network and Communication"
@@ -65926,7 +65926,7 @@
   },
   {
     "id": "etsi-domain-reality-capture-creative",
-    "title": "ETSI_Domain_Reality_Capture___Creative",
+    "title": "ETSI_Domain_Reality_Capture_Creative",
     "domain": "spatial-computing",
     "domain_name": "Spatial Computing",
     "definition": "ETSI domain addressing real-time digital performance capture and creative content generation for immersive experiences. It integrates motion capture, facial expression tracking, gesture recognition, and AI-enhanced animation synthesis to transform physical performances into high-fidelity digital representations for metaverse avatars, virtual events, and interactive entertainment applications.",
@@ -65935,7 +65935,7 @@
     "maturity": "emerging",
     "iri": "urn:ngm:class:etsi-domain-reality-capture-creative",
     "labels": [
-      "ETSI_Domain_Reality_Capture___Creative"
+      "ETSI_Domain_Reality_Capture_Creative"
     ],
     "is_subclass_of": [
       "Content and Assets",
@@ -136132,8 +136132,7 @@
     "maturity": "emerging",
     "iri": "urn:ngm:class:presentation-concluding-synthesis-slide",
     "labels": [
-      "Presentation: Conclusion",
-      "Presentation%3A Conclusion"
+      "Presentation: Conclusion"
     ],
     "is_subclass_of": [
       "Software Engineering"

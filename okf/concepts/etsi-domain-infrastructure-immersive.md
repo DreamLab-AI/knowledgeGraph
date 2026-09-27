@@ -1,7 +1,7 @@
 ---
 okf_version: "0.2"
 type: Class
-title: ETSI_Domain_Infrastructure___Immersive
+title: ETSI_Domain_Infrastructure_Immersive
 resource: urn:ngm:class:etsi-domain-infrastructure-immersive
 domain: infrastructure
 description: A functional domain classification within the European Telecommunications Standards Institute (ETSI) metaverse technical architecture framework (GS MEC 003, GS ARF 003) that encompasses the foundational technological infrastructure required to deliver immersive experiences including extended real...
@@ -51,6 +51,6 @@ dependsOn:
   - urn:ngm:class:quality-of-service
 ---
 
-# ETSI_Domain_Infrastructure___Immersive
+# ETSI_Domain_Infrastructure_Immersive
 
 A functional domain classification within the European Telecommunications Standards Institute (ETSI) metaverse technical architecture framework (GS MEC 003, GS ARF 003) that encompasses the foundational technological infrastructure required to deliver immersive experiences including extended real...

@@ -761,12 +761,12 @@
   ],
   "backlinks": [
     {
-      "slug": "51-attack",
-      "label": "51% Attack"
+      "slug": "51-percent-attack",
+      "label": "51 Percent Attack"
     },
     {
-      "slug": "51-attack",
-      "label": "51% Attack"
+      "slug": "51-percent-attack",
+      "label": "51 Percent Attack"
     },
     {
       "slug": "ai-agent-system",
@@ -2061,16 +2061,16 @@
       "label": "ETSI Domain: Governance & Ethics"
     },
     {
+      "slug": "etsi-domain-governance-economy",
+      "label": "ETSI_Domain_Governance_Economy"
+    },
+    {
       "slug": "etsi-domain-governance-security",
       "label": "ETSI_Domain_Governance_Security"
     },
     {
-      "slug": "etsi-domain-governance-economy",
-      "label": "ETSI_Domain_Governance___Economy"
-    },
-    {
       "slug": "etsi-domain-human-interface-governance",
-      "label": "ETSI_Domain_Human_Interface___Governance"
+      "label": "ETSI_Domain_Human_Interface_Governance"
     },
     {
       "slug": "etsi-domain-virtual-society",

@@ -47,7 +47,7 @@ A consensus mechanism requiring network participants to expend significant compu
 - 1. **Definitional Property**: Core defining characteristic - requires [[Mining|miners]] to solve [[CryptographicHash|cryptographic hash]] puzzles
 - 2. **Functional Property**: Operational behavior - validates [[transactions]] and secures the [[blockchain]]
 - 3. **Structural Property**: Compositional elements - [[Mining|mining hardware]], [[Network Hash Rate|hash power]], [[difficulty adjustment]]
-- 4. **Security Property**: Security guarantees provided - resistance to [[51% attack]], [[double-spending]] prevention
+- 4. **Security Property**: Security guarantees provided - resistance to [[51 Percent Attack]], [[double-spending]] prevention
 - 5. **Performance Property**: Efficiency considerations - [[energy consumption]], [[transaction throughput]], [[block time]]
 
 ### Technical Components
@@ -302,7 +302,7 @@ By November 2025, Bitcoin's network [[Network Hash Rate|hash rate]] demonstrated
 
 - [[Proof of Work]] (PoW) is a [[consensus mechanism]] originally conceptualized in 1993 by [[Cynthia Dwork]] and [[Moni Naor]] to combat email spam ([[Hashcash]]) and later adapted to secure [[blockchain]] networks by requiring participants ([[Mining|miners]]) to expend computational effort to validate [[transactions]].
 - It underpins the security and [[decentralization]] of early and prominent blockchains, most notably [[Bitcoin Proof-of-Work Protocol]] ([[Satoshi Nakamoto]], 2008).
-- PoW's academic foundations lie in [[cryptographic puzzles]] and [[distributed consensus]], ensuring that altering [[transaction history]] demands prohibitive computational resources ([[51% attack]] resistance).
+- PoW's academic foundations lie in [[cryptographic puzzles]] and [[distributed consensus]], ensuring that altering [[transaction history]] demands prohibitive computational resources ([[51 Percent Attack]] resistance).
 - Key developments include its role in pioneering [[decentralized trust]] and its influence on subsequent consensus algorithms like [[Proof of Stake]] (PoS).
 
 ### Foundational Research
@@ -409,7 +409,7 @@ By November 2025, Bitcoin's network [[Network Hash Rate|hash rate]] demonstrated
 - [[Blockchain]]
 - [[CryptographicHash]]
 - [[Byzantine Fault Tolerance]]
-- [[51% Attack]]
+- [[51 Percent Attack]]
 - [[Double Spending]]
 - [[Difficulty Adjustment]]
 - [[Halving]]

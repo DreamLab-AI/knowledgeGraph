@@ -411,7 +411,7 @@
     "contrastsWith": [
       {
         "id": "urn:ngm:class:51-attack",
-        "label": "51% Attack"
+        "label": "51 Percent Attack"
       },
       {
         "id": "urn:ngm:class:eclipse-attack",

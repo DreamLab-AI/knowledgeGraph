@@ -1,7 +1,7 @@
 ---
 okf_version: "0.2"
 type: Class
-title: ETSI_Domain_Reality_Capture___Creative
+title: ETSI_Domain_Reality_Capture_Creative
 resource: urn:ngm:class:etsi-domain-reality-capture-creative
 domain: spatial-computing
 description: ETSI domain addressing real-time digital performance capture and creative content generation for immersive experiences. It integrates motion capture, facial expression tracking, gesture recognition, and AI-enhanced animation synthesis to transform physical performances into high-fidelity digital representations for metaverse avatars, virtual events, and interactive entertainment applications.
@@ -22,6 +22,6 @@ relatedTo:
   - urn:ngm:class:digital-twin
 ---
 
-# ETSI_Domain_Reality_Capture___Creative
+# ETSI_Domain_Reality_Capture_Creative
 
 ETSI domain addressing real-time digital performance capture and creative content generation for immersive experiences. It integrates motion capture, facial expression tracking, gesture recognition, and AI-enhanced animation synthesis to transform physical performances into high-fidelity digital representations for metaverse avatars, virtual events, and interactive entertainment applications.

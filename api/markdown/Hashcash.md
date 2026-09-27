@@ -21,7 +21,7 @@ Hashcash is a proof-of-work system invented by Adam Back in 1997 that requires a
   - The number of required leading zeros (d) controls how hard the puzzle is. More zeros → exponentially more work.
   - [[Bitcoin Protocol]] uses a [[Difficulty Adjustment]] algorithm that recalibrates every 2016 blocks to maintain a ~10-minute block interval as total [[Mining]] hash rate changes.
 - **Double-Spend Prevention**
-  - In [[Bitcoin Mining]], valid proof-of-work seals a block. Reversing a transaction would require recomputing that block's proof and all subsequent blocks faster than honest miners build new ones — the [[51% Attack]] problem.
+  - In [[Bitcoin Mining]], valid proof-of-work seals a block. Reversing a transaction would require recomputing that block's proof and all subsequent blocks faster than honest miners build new ones — the [[51 Percent Attack]] problem.
 - **Nonce Exhaustion**
   - The 32-bit nonce field in a Bitcoin block header can be exhausted without finding a valid hash. Miners extend the search space using the [[Extra Nonce]] field in the coinbase transaction, effectively widening the search space arbitrarily.
 

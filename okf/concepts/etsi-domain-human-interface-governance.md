@@ -1,7 +1,7 @@
 ---
 okf_version: "0.2"
 type: Class
-title: ETSI_Domain_Human_Interface___Governance
+title: ETSI_Domain_Human_Interface_Governance
 resource: urn:ngm:class:etsi-domain-human-interface-governance
 domain: artificial-intelligence
 description: An ETSI subdomain addressing governance mechanisms, policy frameworks, and institutional structures governing human-centric systems in VirtualEnvironment|virtual environments.
@@ -13,6 +13,6 @@ hasPart:
   - urn:ngm:class:artificial-intelligence
 ---
 
-# ETSI_Domain_Human_Interface___Governance
+# ETSI_Domain_Human_Interface_Governance
 
 An ETSI subdomain addressing governance mechanisms, policy frameworks, and institutional structures governing human-centric systems in VirtualEnvironment|virtual environments.

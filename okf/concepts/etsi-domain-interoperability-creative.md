@@ -1,7 +1,7 @@
 ---
 okf_version: "0.2"
 type: Class
-title: ETSI_Domain_Interoperability___Creative
+title: ETSI_Domain_Interoperability_Creative
 resource: urn:ngm:class:etsi-domain-interoperability-creative
 domain: infrastructure
 description: The ETSI Domain Interoperability/Creative is a functional domain classification defined by the European Telecommunications Standards Institute that addresses the intersection of technical interoperability standards and creative content workflows within metaverse and extended reality ecosystems. It encompasses the standards, protocols, and toolchains—including glTF 2.0, USD, WebXR, OpenXR, and MPEG
@@ -28,6 +28,6 @@ relatedTo:
   - urn:ngm:class:open-standard
 ---
 
-# ETSI_Domain_Interoperability___Creative
+# ETSI_Domain_Interoperability_Creative
 
 The ETSI Domain Interoperability/Creative is a functional domain classification defined by the European Telecommunications Standards Institute that addresses the intersection of technical interoperability standards and creative content workflows within metaverse and extended reality ecosystems. It encompasses the standards, protocols, and toolchains—including glTF 2.0, USD, WebXR, OpenXR, and MPEG-I Scene Description—that enable digital creative assets such as three-dimensional models, animations, and immersive environments to be authored once and deployed across heterogeneous platforms without proprietary lock-in or fidelity degradation. The domain integrates digital rights management frameworks and semantic metadata schemas to preserve creator attribution, licensing terms, and provenance across cross-platform distribution pipelines.

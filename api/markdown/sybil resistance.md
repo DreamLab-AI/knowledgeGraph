@@ -11,7 +11,7 @@ Sybil resistance is a security property of distributed and decentralised network
 
 ### Key Mechanisms
 
-- **[[Proof of Work]]** — Satoshi Nakamoto's original solution: each unit of influence costs proportional computation. A sybil attacker must control more than 50% of total network hash rate to achieve a [[51% Attack]], which is economically prohibitive in large networks. Downside: high energy consumption and centralisation into mining pools.
+- **[[Proof of Work]]** — Satoshi Nakamoto's original solution: each unit of influence costs proportional computation. A sybil attacker must control more than 50% of total network hash rate to achieve a [[51 Percent Attack]], which is economically prohibitive in large networks. Downside: high energy consumption and centralisation into mining pools.
 - **[[Proof of Stake]]** — influence proportional to staked capital. Sybil attacks require acquiring a majority share of the total staked value, which is expensive and market-visible. Variants include delegated proof-of-stake and liquid staking derivatives.
 - **[[Proof of Personhood]]** — cryptographic protocols asserting that each public key corresponds to a unique living human, without necessarily revealing which human. Examples:
   - *BrightID*: social graph-based, using connection patterns to attest uniqueness.

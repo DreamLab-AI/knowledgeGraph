@@ -1317,7 +1317,7 @@ ngm:5-g-network a owl:Class ;
     vc:uses ngm:software-defined-networking .
 ngm:51-attack a owl:Class ;
     rdfs:comment "A 51% Attack is a consensus-layer attack on a Proof-of-Work blockchain in which a single entity or coalition controls more than half of the network's hash rate, enabling double-spending, transaction censorship, and chain reorganisation. The attack exploits the longest-chain rule: the attacker mines a private fork containing fraudulent transactions and, once it exceeds the honest chain in cumulative work, broadcasts it to override confirmed history."@en ;
-    rdfs:label "51% Attack"@en ;
+    rdfs:label "51 Percent Attack"@en ;
     rdfs:subClassOf ngm:bc-protocol-and-consensus ;
     rdfs:subClassOf ngm:blockchain ;
     rdfs:subClassOf _:r140 ;
@@ -1348,7 +1348,7 @@ ngm:51-attack a owl:Class ;
     vc:requires ngm:mining ;
     vc:requires ngm:mining-pool ;
     vc:requires ngm:proof-of-work ;
-    vc:slug "51-attack" ;
+    vc:slug "51-percent-attack" ;
     vc:sourceDomain "blockchain" .
 ngm:5g-core a skos:Concept ;
     rdfs:label "5g Core"@en .
@@ -104316,9 +104316,9 @@ ngm:etsi-domain-governance-and-ethics a owl:Class ;
     vc:sourceDomain "infrastructure" .
 ngm:etsi-domain-governance-economy a owl:Class ;
     rdfs:comment "ETSI domain intersection addressing economic governance, financial regulation, and market oversight mechanisms within metaverse ecosystems. These Governance Frameworks integrate Monetary Policy, Market Supervision, and Economic Oversight to ensure stable financial operations."@en ;
-    rdfs:label "ETSI_Domain_Governance___Economy"@en ;
+    rdfs:label "ETSI_Domain_Governance_Economy"@en ;
     rdfs:subClassOf ngm:ai-governance-and-ethics ;
-    rdfs:subClassOf _:r9189 ;
+    rdfs:subClassOf _:r9188 ;
     skos:broader ngm:ai-governance-and-ethics ;
     vc:bridgesTo ngm:blockchain ;
     vc:hasMaturity ngmi:maturity-draft ;
@@ -104330,7 +104330,7 @@ ngm:etsi-domain-governance-security a owl:Class ;
     rdfs:comment "ETSI domain crossover representing security governance policies, risk management frameworks, and compliance enforcement across metaverse infrastructure and services. These Security Governance Systems coordinate Access Controls, Threat Management, and Compliance Verification."@en ;
     rdfs:label "ETSI_Domain_Governance_Security"@en ;
     rdfs:subClassOf ngm:ai-governance-and-ethics ;
-    rdfs:subClassOf _:r9188 ;
+    rdfs:subClassOf _:r9189 ;
     skos:broader ngm:ai-governance-and-ethics ;
     vc:bridgesTo ngm:blockchain ;
     vc:hasMaturity ngmi:maturity-draft ;
@@ -104340,7 +104340,7 @@ ngm:etsi-domain-governance-security a owl:Class ;
     vc:sourceDomain "artificial-intelligence" .
 ngm:etsi-domain-governance-society a owl:Class ;
     rdfs:comment "An ETSI governance domain addressing societal impacts, inclusion, community wellbeing, and cultural considerations for metaverse and digital infrastructure."@en ;
-    rdfs:label "ETSI_Domain_Governance___Society"@en ;
+    rdfs:label "ETSI_Domain_Governance_Society"@en ;
     rdfs:subClassOf ngm:ai-governance-and-ethics ;
     rdfs:subClassOf _:r9190 ;
     skos:broader ngm:ai-governance-and-ethics ;
@@ -104372,7 +104372,7 @@ ngm:etsi-domain-human-interface a owl:Class ;
     vc:sourceDomain "spatial-computing" .
 ngm:etsi-domain-human-interface-governance a owl:Class ;
     rdfs:comment "An ETSI subdomain addressing governance mechanisms, policy frameworks, and institutional structures governing human-centric systems in VirtualEnvironment|virtual environments."@en ;
-    rdfs:label "ETSI_Domain_Human_Interface___Governance"@en ;
+    rdfs:label "ETSI_Domain_Human_Interface_Governance"@en ;
     rdfs:subClassOf ngm:ai-governance-and-ethics ;
     rdfs:subClassOf _:r9195 ;
     skos:broader ngm:ai-governance-and-ethics ;
@@ -104383,7 +104383,7 @@ ngm:etsi-domain-human-interface-governance a owl:Class ;
     vc:sourceDomain "artificial-intelligence" .
 ngm:etsi-domain-human-interface-ux a owl:Class ;
     rdfs:comment "An ETSI subdomain focusing on user experience design, usability engineering, and interaction paradigms optimising satisfaction, efficiency, and accessibility in immersive digital environments. It covers design principles, usability testing, accessibility compliance, inclusive UX design, and AI-driven adaptive interfaces aligned with ISO 9241-110 dialogue principles and ETSI GR ARF 010 specifications."@en ;
-    rdfs:label "ETSI_Domain_Human_Interface___UX"@en ;
+    rdfs:label "ETSI_Domain_Human_Interface_UX"@en ;
     rdfs:subClassOf ngm:sc-interaction ;
     rdfs:subClassOf _:r9196 ;
     rdfs:subClassOf _:r9197 ;
@@ -104520,7 +104520,7 @@ ngm:etsi-domain-infrastructure-data a owl:Class ;
     vc:sourceDomain "infrastructure" .
 ngm:etsi-domain-infrastructure-governance a owl:Class ;
     rdfs:comment "ETSI governance framework and mechanisms overseeing infrastructure domains through trust domain separation, policy enforcement, and security management implementing local policy control across distributed network components."@en ;
-    rdfs:label "ETSI_Domain_Infrastructure___Governance"@en ;
+    rdfs:label "ETSI_Domain_Infrastructure_Governance"@en ;
     rdfs:subClassOf ngm:ai-governance-and-ethics ;
     rdfs:subClassOf _:r9211 ;
     skos:broader ngm:ai-governance-and-ethics ;
@@ -104531,7 +104531,7 @@ ngm:etsi-domain-infrastructure-governance a owl:Class ;
     vc:sourceDomain "artificial-intelligence" .
 ngm:etsi-domain-infrastructure-immersive a owl:Class ;
     rdfs:comment "A functional domain classification within the European Telecommunications Standards Institute (ETSI) metaverse technical architecture framework (GS MEC 003, GS ARF 003) that encompasses the foundational technological infrastructure required to deliver immersive experiences including extended real..."@en ;
-    rdfs:label "ETSI_Domain_Infrastructure___Immersive"@en ;
+    rdfs:label "ETSI_Domain_Infrastructure_Immersive"@en ;
     rdfs:subClassOf ngm:etsidomain-classification ;
     rdfs:subClassOf ngm:infra-computing-and-cloud ;
     rdfs:subClassOf ngm:standards-based-taxonomy ;
@@ -104584,7 +104584,7 @@ ngm:etsi-domain-infrastructure-immersive a owl:Class ;
     vc:sourceDomain "infrastructure" .
 ngm:etsi-domain-infrastructure-interop a owl:Class ;
     rdfs:comment "ETSI infrastructure interoperability domain providing standardised frameworks enabling disparate systems, services, and domains to exchange data and operate cohesively across organisational boundaries. It underpins cross-domain data integration through NGSI-LD interfaces, intent-based network management, spectrum sharing frameworks, and EU Data Act Article 35 mandates for centralised interoperability standards repositories."@en ;
-    rdfs:label "ETSI_Domain_Infrastructure___Interop"@en ;
+    rdfs:label "ETSI_Domain_Infrastructure_Interop"@en ;
     rdfs:subClassOf ngm:infra-network-and-comms ;
     rdfs:subClassOf _:r9227 ;
     rdfs:subClassOf _:r9228 ;
@@ -104602,7 +104602,7 @@ ngm:etsi-domain-infrastructure-interop a owl:Class ;
     vc:standardizedBy ngm:api-standard .
 ngm:etsi-domain-infrastructure-security a owl:Class ;
     rdfs:comment "ETSI infrastructure security domain safeguarding metaverse and edge computing environments through NFV architectural frameworks, cross-domain authentication standards, and decentralised identity systems. It addresses multi-party trust models, privacy-preserving mechanisms, and security lifecycle management coordinated with 3GPP and ITU-T for ultra-edge and terminal-edge deployments."@en ;
-    rdfs:label "ETSI_Domain_Infrastructure___Security"@en ;
+    rdfs:label "ETSI_Domain_Infrastructure_Security"@en ;
     rdfs:subClassOf ngm:infra-security-and-identity ;
     rdfs:subClassOf _:r9229 ;
     rdfs:subClassOf _:r9230 ;
@@ -104641,7 +104641,7 @@ ngm:etsi-domain-interoperability a owl:Class ;
     vc:standardizedBy ngm:interoperability-framework .
 ngm:etsi-domain-interoperability-creative a owl:Class ;
     rdfs:comment "The ETSI Domain Interoperability/Creative is a functional domain classification defined by the European Telecommunications Standards Institute that addresses the intersection of technical interoperability standards and creative content workflows within metaverse and extended reality ecosystems. It encompasses the standards, protocols, and toolchains—including glTF 2.0, USD, WebXR, OpenXR, and MPEG-I Scene Description—that enable digital creative assets such as three-dimensional models, animations, and immersive environments to be authored once and deployed across heterogeneous platforms without proprietary lock-in or fidelity degradation. The domain integrates digital rights management frameworks and semantic metadata schemas to preserve creator attribution, licensing terms, and provenance across cross-platform distribution pipelines."@en ;
-    rdfs:label "ETSI_Domain_Interoperability___Creative"@en ;
+    rdfs:label "ETSI_Domain_Interoperability_Creative"@en ;
     rdfs:subClassOf ngm:infra-network-and-comms ;
     rdfs:subClassOf _:r9235 ;
     rdfs:subClassOf _:r9236 ;
@@ -104687,7 +104687,7 @@ ngm:etsi-domain-reality-capture a owl:Class ;
     vc:uses ngm:point-cloud .
 ngm:etsi-domain-reality-capture-creative a owl:Class ;
     rdfs:comment "ETSI domain addressing real-time digital performance capture and creative content generation for immersive experiences. It integrates motion capture, facial expression tracking, gesture recognition, and AI-enhanced animation synthesis to transform physical performances into high-fidelity digital representations for metaverse avatars, virtual events, and interactive entertainment applications."@en ;
-    rdfs:label "ETSI_Domain_Reality_Capture___Creative"@en ;
+    rdfs:label "ETSI_Domain_Reality_Capture_Creative"@en ;
     rdfs:subClassOf ngm:digital-performance-capture ;
     rdfs:subClassOf ngm:sc-content-and-assets ;
     skos:broader ngm:sc-content-and-assets ;

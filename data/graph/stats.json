@@ -10,7 +10,7 @@
     "nature": "synthetic",
     "description": "Mostly AI-generated synthetic content, produced under human direction, by design \u2014 this corpus exists to exercise and demonstrate the VisionFlow pipeline and VisionClaw engine on a medium-scale ontology (~8.1k classes, ~100k relations). Provenance (did:nostr, generatedAtTime, URNs) attests traceable generation under human direction, not human authorship."
   },
-  "datasetDate": "2026-09-25",
+  "datasetDate": "2026-09-27",
   "pages": 8428,
   "classes": 8432,
   "individuals": 0,
@@ -39,7 +39,7 @@
       "relations": 101761,
       "shipped": 113446,
       "relationsCapped": 0,
-      "bytes": 1473374
+      "bytes": 1473361
     },
     "domain-artificial-intelligence": {
       "nodes": 1500,
@@ -56,7 +56,7 @@
       "relations": 8295,
       "shipped": 9923,
       "relationsCapped": 5618,
-      "bytes": 202273,
+      "bytes": 202280,
       "nodesTruncated": 0
     },
     "domain-spatial-computing": {
@@ -65,7 +65,7 @@
       "relations": 4768,
       "shipped": 6172,
       "relationsCapped": 1590,
-      "bytes": 165159,
+      "bytes": 165155,
       "nodesTruncated": 0
     },
     "domain-robotics": {
@@ -92,7 +92,7 @@
       "relations": 10408,
       "shipped": 11809,
       "relationsCapped": 5429,
-      "bytes": 217835,
+      "bytes": 217833,
       "nodesTruncated": 1316
     }
   }

@@ -1,7 +1,7 @@
 ---
 okf_version: "0.2"
 type: Class
-title: ETSI_Domain_Governance___Society
+title: ETSI_Domain_Governance_Society
 resource: urn:ngm:class:etsi-domain-governance-society
 domain: artificial-intelligence
 description: An ETSI governance domain addressing societal impacts, inclusion, community wellbeing, and cultural considerations for metaverse and digital infrastructure.
@@ -13,6 +13,6 @@ hasPart:
   - urn:ngm:class:artificial-intelligence
 ---
 
-# ETSI_Domain_Governance___Society
+# ETSI_Domain_Governance_Society
 
 An ETSI governance domain addressing societal impacts, inclusion, community wellbeing, and cultural considerations for metaverse and digital infrastructure.

@@ -1,7 +1,7 @@
 {
   "id": "urn:visionflow:page:61986621941769792830c59c2be66e9fd4019ea25ed77ea19408e21d59fa621e",
-  "title": "51% Attack",
-  "slug": "51-attack",
+  "title": "51 Percent Attack",
+  "slug": "51-percent-attack",
   "public": true,
   "classIri": "urn:ngm:class:51-attack",
   "domain": "blockchain",
@@ -881,26 +881,5 @@
       "label": "transaction"
     }
   ],
-  "backlinks": [
-    {
-      "slug": "bitcoin-centralisation-risks",
-      "label": "Bitcoin Centralisation Risks"
-    },
-    {
-      "slug": "probabilistic-finality",
-      "label": "Probabilistic Finality"
-    },
-    {
-      "slug": "proof-of-work",
-      "label": "Proof Of Work"
-    },
-    {
-      "slug": "proof-of-work",
-      "label": "Proof Of Work"
-    },
-    {
-      "slug": "telecollaboration-and-telepresence",
-      "label": "Telecollaboration and Telepresence"
-    }
-  ]
+  "backlinks": []
 }

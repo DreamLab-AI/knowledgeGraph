@@ -19,7 +19,7 @@
     "hasPart": [
       {
         "id": "urn:ngm:class:etsi-domain-human-interface-ux",
-        "label": "ETSI_Domain_Human_Interface___UX"
+        "label": "ETSI_Domain_Human_Interface_UX"
       },
       {
         "id": "urn:ngm:class:accessibility-standards",
