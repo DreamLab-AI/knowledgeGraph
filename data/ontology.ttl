@@ -144535,7 +144535,7 @@ ngm:knowledge-graph-presentation-session-artefact a owl:Class ;
     vc:relatedTo ngm:dreamlab-creative-technology-collective ;
     vc:relatedTo ngm:knowledge-graph ;
     vc:relatedTo ngm:open-space-responsible-ai-gathering ;
-    vc:relatedTo ngm:presentation-concluding-synthesis-slide ;
+    vc:relatedTo ngm:presentation-conclusion ;
     vc:slug "knowledge-graph-presentation-session-artefact" ;
     vc:sourceDomain "infrastructure" .
 ngm:knowledge-graph-publication-classifier a owl:Class ;
@@ -189413,6 +189413,8 @@ ngm:presentation-concluding-synthesis-slide a owl:Class ;
     vc:relatedTo ngm:generative-ai ;
     vc:slug "presentation-concluding-synthesis-slide" ;
     vc:sourceDomain "infrastructure" .
+ngm:presentation-conclusion a skos:Concept ;
+    rdfs:label "Presentation Conclusion"@en .
 ngm:presentation-definition-engine a skos:Concept ;
     rdfs:label "Presentation Definition Engine"@en .
 ngm:presentation-exchange a owl:Class ;

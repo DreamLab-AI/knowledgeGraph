@@ -17,7 +17,7 @@ partOf:
 relatedTo:
   - urn:ngm:class:dreamlab-creative-technology-collective
   - urn:ngm:class:knowledge-graph
-  - urn:ngm:class:presentation-concluding-synthesis-slide
+  - urn:ngm:class:presentation-conclusion
   - urn:ngm:class:open-space-responsible-ai-gathering
 ---
 

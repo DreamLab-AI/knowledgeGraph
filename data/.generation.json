@@ -1,47 +1,47 @@
 {
-  "id": "visionGraph@3bbd6e2bf58ded9338a2ec869f59a40a56eb96fa",
-  "commit": "3bbd6e2bf58ded9338a2ec869f59a40a56eb96fa",
+  "id": "visionGraph@8636bc06ce9821a24fabda33c7b3d7d5a7ae4e6b",
+  "commit": "8636bc06ce9821a24fabda33c7b3d7d5a7ae4e6b",
   "dirty": false,
-  "content_digest": "46c921be11807367332e1f4a012e4b304b5e15466f71c7979ce0224b712c9b36",
-  "generated_at": "2026-09-27T18:29:18.392884+00:00",
+  "content_digest": "f53262d889b38fadedabf0bebef8115394e54177fe948b36f6b5605900ff9621",
+  "generated_at": "2026-09-28T10:34:08.983902+00:00",
   "class_count": 8432,
   "page_count": 8432,
   "vocabulary_version": 1,
   "artifacts": [
     {
       "name": "ontology.ttl",
-      "sha256": "997843bf7cb62581da449424d9de08d893ca2924a94a7c7443b73747bae6cacc",
-      "bytes": 16581010
+      "sha256": "1e8335d14cdbeb9f06750a074a23b3b008a4de2e6d0f3ef2bc5d02c0018a7e10",
+      "bytes": 16581085
     },
     {
       "name": "ontology-inferred.ttl",
-      "sha256": "2accedd74f423df32e1194eb4c184740f2f3a0954effb0411c33a4f7e61908e0",
+      "sha256": "474bd2657bb03a59e1e7b6909670e53271be1f20760111a5f115bffc888f62ac",
       "bytes": 3874775
     },
     {
       "name": "scaffold-index.json",
-      "sha256": "6056d290592c3f27f9fe94dfd5ea86733849d8e9234cfb2c9d1f3804d023e12c",
-      "bytes": 9914318
+      "sha256": "b3fe730b45761553e26db6d712ad0591bdef7d8f45cd17e5209ba90f03c0fd6b",
+      "bytes": 9914302
     },
     {
       "name": "prose-index.json",
-      "sha256": "4e9afe42a6831e0ab2b6bcd2f03d5ccd68d43c8949caa2a077cca26499d59be2",
+      "sha256": "cf577e1edc2f71dc4b7aaa4dce8ddb534251dbe84cad6c8739e394c1ac2b1ce3",
       "bytes": 5570729
     },
     {
       "name": "ontology.json",
-      "sha256": "d164f4f96d665199667f3ef06987b371931d9566a5000084eeb58a236aae262c",
-      "bytes": 48998467
+      "sha256": "e628ee6bea5cc511c1a91b17802daf1047ce8f88429031f1d8083d0d2c2d2694",
+      "bytes": 48998072
     },
     {
       "name": "graph/overview.json",
-      "sha256": "7f2bd8e07c04ae1049be01f13aa9a3492e9ba84c236dab5a1f20f4aeb02cb83b",
+      "sha256": "36317bbabc700d4874d1f74db37dba9e8fab4e1a41e1618b253aaef7dc4e5025",
       "bytes": 25852
     },
     {
       "name": "graph/full.bin",
-      "sha256": "2a70c1e3f79d24242c1b0c7dd9a87a712d0be41a19c1a8fff0dfcd2d7f506a4c",
-      "bytes": 1473361
+      "sha256": "d5af5e597c8872b6809c29d760ee79ff61d467556d2f4e8da532f5c7cbf36ff6",
+      "bytes": 1473357
     },
     {
       "name": "graph/domain-artificial-intelligence.bin",
@@ -75,7 +75,7 @@
     },
     {
       "name": "graph/stats.json",
-      "sha256": "93c471b12ce336fae906ea3f8e68c6ac55e8eebaba4735ecc681d5f1219e0066",
+      "sha256": "884130fa3a6e2ee3ca644f23d8060ee28345396c672fd84f8e4c9acbe9ffe5c2",
       "bytes": 2571
     },
     {
