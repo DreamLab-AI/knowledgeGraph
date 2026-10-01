@@ -1,0 +1,45 @@
+{
+  "id": "urn:ngm:class:natural-satellite",
+  "title": "Natural Satellite",
+  "slug": "natural-satellite",
+  "public": true,
+  "classIri": "urn:ngm:class:natural-satellite",
+  "domain": "space-science-and-systems",
+  "definition": "",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:astronomical-body",
+      "label": "Astronomical Body"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:astronomy",
+        "label": "Astronomy"
+      },
+      {
+        "id": "urn:ngm:class:planetary-science",
+        "label": "Planetary Science"
+      }
+    ]
+  },
+  "inferredSuperClasses": [],
+  "inheritedRelations": {},
+  "wikilinks": [],
+  "backlinks": []
+}

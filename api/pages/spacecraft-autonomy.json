@@ -1,0 +1,41 @@
+{
+  "id": "urn:ngm:class:spacecraft-autonomy",
+  "title": "Spacecraft Autonomy",
+  "slug": "spacecraft-autonomy",
+  "public": true,
+  "classIri": "urn:ngm:class:spacecraft-autonomy",
+  "domain": "space-science-and-systems",
+  "definition": "",
+  "subClassOf": [],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      }
+    ],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:space-systems-engineering",
+        "label": "Space Systems Engineering"
+      }
+    ]
+  },
+  "inferredSuperClasses": [],
+  "inheritedRelations": {},
+  "wikilinks": [],
+  "backlinks": []
+}

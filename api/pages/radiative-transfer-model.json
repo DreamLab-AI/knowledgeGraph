@@ -1,0 +1,44 @@
+{
+  "id": "urn:ngm:class:radiative-transfer-model",
+  "title": "Radiative Transfer Model",
+  "slug": "radiative-transfer-model",
+  "public": true,
+  "classIri": "urn:ngm:class:radiative-transfer-model",
+  "domain": "earth-observation-and-geospatial-sensing",
+  "definition": "",
+  "subClassOf": [],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:atmospheric-correction",
+        "label": "Atmospheric Correction"
+      },
+      {
+        "id": "urn:ngm:class:spectral-radiance",
+        "label": "Spectral Radiance"
+      },
+      {
+        "id": "urn:ngm:class:surface-reflectance",
+        "label": "Surface Reflectance"
+      }
+    ]
+  },
+  "inferredSuperClasses": [],
+  "inheritedRelations": {},
+  "wikilinks": [],
+  "backlinks": []
+}

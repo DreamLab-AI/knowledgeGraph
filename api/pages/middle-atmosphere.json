@@ -1,0 +1,41 @@
+{
+  "id": "urn:ngm:class:middle-atmosphere",
+  "title": "Middle Atmosphere",
+  "slug": "middle-atmosphere",
+  "public": true,
+  "classIri": "urn:ngm:class:middle-atmosphere",
+  "domain": "earth-observation-and-geospatial-sensing",
+  "definition": "",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:atmosphere-layer",
+      "label": "Atmosphere Layer"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:earth-system-phenomena",
+        "label": "Earth System Phenomena"
+      }
+    ]
+  },
+  "inferredSuperClasses": [],
+  "inheritedRelations": {},
+  "wikilinks": [],
+  "backlinks": []
+}

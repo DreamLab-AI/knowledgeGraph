@@ -1,0 +1,41 @@
+{
+  "id": "urn:ngm:class:ice-sheet",
+  "title": "Ice Sheet",
+  "slug": "ice-sheet",
+  "public": true,
+  "classIri": "urn:ngm:class:ice-sheet",
+  "domain": "earth-observation-and-geospatial-sensing",
+  "definition": "",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:glacier",
+      "label": "Glacier"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:earth-system-phenomena",
+        "label": "Earth System Phenomena"
+      }
+    ]
+  },
+  "inferredSuperClasses": [],
+  "inheritedRelations": {},
+  "wikilinks": [],
+  "backlinks": []
+}

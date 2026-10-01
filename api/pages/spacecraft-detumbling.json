@@ -1,0 +1,41 @@
+{
+  "id": "urn:ngm:class:spacecraft-detumbling",
+  "title": "Spacecraft Detumbling",
+  "slug": "spacecraft-detumbling",
+  "public": true,
+  "classIri": "urn:ngm:class:spacecraft-detumbling",
+  "domain": "space-science-and-systems",
+  "definition": "",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:attitude-control",
+      "label": "Attitude Control"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:spacecraft-guidance-navigation-and-control",
+        "label": "Spacecraft Guidance Navigation and Control"
+      }
+    ]
+  },
+  "inferredSuperClasses": [],
+  "inheritedRelations": {},
+  "wikilinks": [],
+  "backlinks": []
+}

@@ -1,0 +1,36 @@
+{
+  "id": "urn:ngm:class:satellite-transceiver",
+  "title": "Satellite Transceiver",
+  "slug": "satellite-transceiver",
+  "public": true,
+  "classIri": "urn:ngm:class:satellite-transceiver",
+  "domain": "space-science-and-systems",
+  "definition": "",
+  "subClassOf": [],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:satellite-communication",
+        "label": "Satellite Communication"
+      }
+    ]
+  },
+  "inferredSuperClasses": [],
+  "inheritedRelations": {},
+  "wikilinks": [],
+  "backlinks": []
+}

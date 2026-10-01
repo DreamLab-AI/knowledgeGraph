@@ -1,0 +1,44 @@
+{
+  "id": "urn:ngm:class:gnss-time-to-first-fix",
+  "title": "GNSS Time to First Fix",
+  "slug": "gnss-time-to-first-fix",
+  "public": true,
+  "classIri": "urn:ngm:class:gnss-time-to-first-fix",
+  "domain": "space-science-and-systems",
+  "definition": "",
+  "subClassOf": [],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:gnss-availability",
+        "label": "GNSS Availability"
+      },
+      {
+        "id": "urn:ngm:class:gnss-receiver",
+        "label": "GNSS Receiver"
+      },
+      {
+        "id": "urn:ngm:class:satellite-navigation-solution",
+        "label": "Satellite Navigation Solution"
+      }
+    ]
+  },
+  "inferredSuperClasses": [],
+  "inheritedRelations": {},
+  "wikilinks": [],
+  "backlinks": []
+}

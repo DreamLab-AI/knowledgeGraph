@@ -1,0 +1,40 @@
+{
+  "id": "urn:ngm:class:imaging-spectrometer",
+  "title": "Imaging Spectrometer",
+  "slug": "imaging-spectrometer",
+  "public": true,
+  "classIri": "urn:ngm:class:imaging-spectrometer",
+  "domain": "earth-observation-and-geospatial-sensing",
+  "definition": "",
+  "subClassOf": [],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:earth-observation",
+        "label": "Earth Observation"
+      },
+      {
+        "id": "urn:ngm:class:earth-observation-spectrometer",
+        "label": "Earth Observation Spectrometer"
+      }
+    ]
+  },
+  "inferredSuperClasses": [],
+  "inheritedRelations": {},
+  "wikilinks": [],
+  "backlinks": []
+}

@@ -1,0 +1,41 @@
+{
+  "id": "urn:ngm:class:lunar-surface-environment",
+  "title": "Lunar Surface Environment",
+  "slug": "lunar-surface-environment",
+  "public": true,
+  "classIri": "urn:ngm:class:lunar-surface-environment",
+  "domain": "space-science-and-systems",
+  "definition": "",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:space-environment",
+      "label": "Space Environment"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:space-life-sciences",
+        "label": "Space Life Sciences"
+      }
+    ]
+  },
+  "inferredSuperClasses": [],
+  "inheritedRelations": {},
+  "wikilinks": [],
+  "backlinks": []
+}

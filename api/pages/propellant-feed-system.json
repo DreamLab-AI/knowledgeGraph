@@ -1,0 +1,44 @@
+{
+  "id": "urn:ngm:class:propellant-feed-system",
+  "title": "Propellant Feed System",
+  "slug": "propellant-feed-system",
+  "public": true,
+  "classIri": "urn:ngm:class:propellant-feed-system",
+  "domain": "space-science-and-systems",
+  "definition": "",
+  "subClassOf": [],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:propellant-tank",
+        "label": "Propellant Tank"
+      },
+      {
+        "id": "urn:ngm:class:spacecraft-propulsion",
+        "label": "Spacecraft Propulsion"
+      },
+      {
+        "id": "urn:ngm:class:thruster",
+        "label": "Thruster"
+      }
+    ]
+  },
+  "inferredSuperClasses": [],
+  "inheritedRelations": {},
+  "wikilinks": [],
+  "backlinks": []
+}

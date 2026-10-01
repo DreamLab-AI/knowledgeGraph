@@ -1,0 +1,40 @@
+{
+  "id": "urn:ngm:class:exoplanet-transit-method",
+  "title": "Exoplanet Transit Method",
+  "slug": "exoplanet-transit-method",
+  "public": true,
+  "classIri": "urn:ngm:class:exoplanet-transit-method",
+  "domain": "space-science-and-systems",
+  "definition": "",
+  "subClassOf": [],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:exoplanet",
+        "label": "Exoplanet"
+      },
+      {
+        "id": "urn:ngm:class:observational-astronomy",
+        "label": "Observational Astronomy"
+      }
+    ]
+  },
+  "inferredSuperClasses": [],
+  "inheritedRelations": {},
+  "wikilinks": [],
+  "backlinks": []
+}

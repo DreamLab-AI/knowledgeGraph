@@ -1,0 +1,40 @@
+{
+  "id": "urn:ngm:class:land-use-classification",
+  "title": "Land Use Classification",
+  "slug": "land-use-classification",
+  "public": true,
+  "classIri": "urn:ngm:class:land-use-classification",
+  "domain": "earth-observation-and-geospatial-sensing",
+  "definition": "",
+  "subClassOf": [],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:classification",
+        "label": "Classification"
+      },
+      {
+        "id": "urn:ngm:class:earth-observation-processing",
+        "label": "Earth Observation Processing"
+      }
+    ]
+  },
+  "inferredSuperClasses": [],
+  "inheritedRelations": {},
+  "wikilinks": [],
+  "backlinks": []
+}

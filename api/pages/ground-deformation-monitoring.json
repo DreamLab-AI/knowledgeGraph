@@ -1,0 +1,36 @@
+{
+  "id": "urn:ngm:class:ground-deformation-monitoring",
+  "title": "Ground Deformation Monitoring",
+  "slug": "ground-deformation-monitoring",
+  "public": true,
+  "classIri": "urn:ngm:class:ground-deformation-monitoring",
+  "domain": "earth-observation-and-geospatial-sensing",
+  "definition": "",
+  "subClassOf": [],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:earth-observation-applications",
+        "label": "Earth Observation Applications"
+      }
+    ]
+  },
+  "inferredSuperClasses": [],
+  "inheritedRelations": {},
+  "wikilinks": [],
+  "backlinks": []
+}

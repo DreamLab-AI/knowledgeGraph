@@ -1,0 +1,47 @@
+{
+  "id": "urn:ngm:class:convection-zone",
+  "title": "Convection Zone",
+  "slug": "convection-zone",
+  "public": true,
+  "classIri": "urn:ngm:class:convection-zone",
+  "domain": "space-science-and-systems",
+  "definition": "",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:stellar-interior",
+      "label": "Stellar Interior"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:astronomy",
+        "label": "Astronomy"
+      }
+    ]
+  },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:stellar-realm",
+      "label": "Stellar Realm",
+      "slug": "stellar-realm"
+    }
+  ],
+  "inheritedRelations": {},
+  "wikilinks": [],
+  "backlinks": []
+}

@@ -1,0 +1,40 @@
+{
+  "id": "urn:ngm:class:spacecraft-thermal-coating",
+  "title": "Spacecraft Thermal Coating",
+  "slug": "spacecraft-thermal-coating",
+  "public": true,
+  "classIri": "urn:ngm:class:spacecraft-thermal-coating",
+  "domain": "space-science-and-systems",
+  "definition": "",
+  "subClassOf": [],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:passive-thermal-control",
+        "label": "Passive Thermal Control"
+      },
+      {
+        "id": "urn:ngm:class:spacecraft-radiator",
+        "label": "Spacecraft Radiator"
+      }
+    ]
+  },
+  "inferredSuperClasses": [],
+  "inheritedRelations": {},
+  "wikilinks": [],
+  "backlinks": []
+}

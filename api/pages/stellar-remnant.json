@@ -1,0 +1,43 @@
+{
+  "id": "urn:ngm:class:stellar-remnant",
+  "title": "Stellar Remnant",
+  "slug": "stellar-remnant",
+  "public": true,
+  "classIri": "urn:ngm:class:stellar-remnant",
+  "domain": "space-science-and-systems",
+  "definition": "",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:astronomical-body",
+      "label": "Astronomical Body"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "inferredSuperClasses": [],
+  "inheritedRelations": {
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:astronomy",
+        "label": "Astronomy"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

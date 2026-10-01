@@ -1,0 +1,41 @@
+{
+  "id": "urn:ngm:class:spacecraft-thermal-control",
+  "title": "Spacecraft Thermal Control",
+  "slug": "spacecraft-thermal-control",
+  "public": true,
+  "classIri": "urn:ngm:class:spacecraft-thermal-control",
+  "domain": "space-science-and-systems",
+  "definition": "",
+  "subClassOf": [],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:thermal-management",
+        "label": "Thermal Management"
+      }
+    ],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:spacecraft-power-and-thermal-control",
+        "label": "Spacecraft Power and Thermal Control"
+      }
+    ]
+  },
+  "inferredSuperClasses": [],
+  "inheritedRelations": {},
+  "wikilinks": [],
+  "backlinks": []
+}

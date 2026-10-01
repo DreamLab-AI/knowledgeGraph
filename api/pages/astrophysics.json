@@ -1,0 +1,48 @@
+{
+  "id": "urn:ngm:class:astrophysics",
+  "title": "Astrophysics",
+  "slug": "astrophysics",
+  "public": true,
+  "classIri": "urn:ngm:class:astrophysics",
+  "domain": "space-science-and-systems",
+  "definition": "",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:space-science",
+      "label": "Space Science"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:astronomy",
+        "label": "Astronomy"
+      }
+    ]
+  },
+  "inferredSuperClasses": [],
+  "inheritedRelations": {
+    "partOf": [
+      {
+        "id": "urn:ngm:class:space-science-and-systems",
+        "label": "Space Science and Systems"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

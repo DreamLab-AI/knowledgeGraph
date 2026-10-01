@@ -1,0 +1,44 @@
+{
+  "id": "urn:ngm:class:delta-differential-one-way-ranging",
+  "title": "Delta Differential One-way Ranging",
+  "slug": "delta-differential-one-way-ranging",
+  "public": true,
+  "classIri": "urn:ngm:class:delta-differential-one-way-ranging",
+  "domain": "space-science-and-systems",
+  "definition": "",
+  "subClassOf": [],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:orbit-determination",
+        "label": "Orbit Determination"
+      },
+      {
+        "id": "urn:ngm:class:quasar",
+        "label": "Quasar"
+      },
+      {
+        "id": "urn:ngm:class:radiometric-spacecraft-navigation",
+        "label": "Radiometric Spacecraft Navigation"
+      }
+    ]
+  },
+  "inferredSuperClasses": [],
+  "inheritedRelations": {},
+  "wikilinks": [],
+  "backlinks": []
+}

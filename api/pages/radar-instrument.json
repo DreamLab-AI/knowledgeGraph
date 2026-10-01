@@ -1,0 +1,40 @@
+{
+  "id": "urn:ngm:class:radar-instrument",
+  "title": "Radar Instrument",
+  "slug": "radar-instrument",
+  "public": true,
+  "classIri": "urn:ngm:class:radar-instrument",
+  "domain": "earth-observation-and-geospatial-sensing",
+  "definition": "",
+  "subClassOf": [],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:radar",
+        "label": "Radar"
+      },
+      {
+        "id": "urn:ngm:class:earth-observation",
+        "label": "Earth Observation"
+      }
+    ]
+  },
+  "inferredSuperClasses": [],
+  "inheritedRelations": {},
+  "wikilinks": [],
+  "backlinks": []
+}

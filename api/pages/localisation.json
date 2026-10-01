@@ -200,7 +200,7 @@
         "label": "Uncertainty"
       },
       {
-        "id": "urn:ngm:class:navigation",
+        "id": "urn:ngm:class:global-navigation-satellite-system",
         "label": "Global Navigation Satellite System"
       },
       {

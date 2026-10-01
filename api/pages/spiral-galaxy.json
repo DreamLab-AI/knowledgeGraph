@@ -1,0 +1,49 @@
+{
+  "id": "urn:ngm:class:spiral-galaxy",
+  "title": "Spiral Galaxy",
+  "slug": "spiral-galaxy",
+  "public": true,
+  "classIri": "urn:ngm:class:spiral-galaxy",
+  "domain": "space-science-and-systems",
+  "definition": "",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:galaxy",
+      "label": "Galaxy"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:astronomical-body",
+      "label": "Astronomical Body",
+      "slug": "astronomical-body"
+    }
+  ],
+  "inheritedRelations": {
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:astronomy",
+        "label": "Astronomy"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

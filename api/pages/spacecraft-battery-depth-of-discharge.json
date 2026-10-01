@@ -1,0 +1,40 @@
+{
+  "id": "urn:ngm:class:spacecraft-battery-depth-of-discharge",
+  "title": "Spacecraft Battery Depth of Discharge",
+  "slug": "spacecraft-battery-depth-of-discharge",
+  "public": true,
+  "classIri": "urn:ngm:class:spacecraft-battery-depth-of-discharge",
+  "domain": "space-science-and-systems",
+  "definition": "",
+  "subClassOf": [],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:spacecraft-battery",
+        "label": "Spacecraft Battery"
+      },
+      {
+        "id": "urn:ngm:class:spacecraft-power-budget",
+        "label": "Spacecraft Power Budget"
+      }
+    ]
+  },
+  "inferredSuperClasses": [],
+  "inheritedRelations": {},
+  "wikilinks": [],
+  "backlinks": []
+}

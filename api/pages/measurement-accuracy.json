@@ -1,0 +1,41 @@
+{
+  "id": "urn:ngm:class:measurement-accuracy",
+  "title": "Measurement Accuracy",
+  "slug": "measurement-accuracy",
+  "public": true,
+  "classIri": "urn:ngm:class:measurement-accuracy",
+  "domain": "earth-observation-and-geospatial-sensing",
+  "definition": "",
+  "subClassOf": [],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:earth-observation-data-quality",
+        "label": "Earth Observation Data Quality"
+      }
+    ]
+  },
+  "inferredSuperClasses": [],
+  "inheritedRelations": {},
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "calibration-standards",
+      "label": "Calibration Standards"
+    }
+  ]
+}

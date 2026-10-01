@@ -1,0 +1,52 @@
+{
+  "id": "urn:ngm:class:optical-spacecraft-navigation",
+  "title": "Optical Spacecraft Navigation",
+  "slug": "optical-spacecraft-navigation",
+  "public": true,
+  "classIri": "urn:ngm:class:optical-spacecraft-navigation",
+  "domain": "space-science-and-systems",
+  "definition": "",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:spacecraft-navigation",
+      "label": "Spacecraft Navigation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:astrometry",
+        "label": "Astrometry"
+      },
+      {
+        "id": "urn:ngm:class:spacecraft-navigation",
+        "label": "Spacecraft Navigation"
+      }
+    ]
+  },
+  "inferredSuperClasses": [],
+  "inheritedRelations": {
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:spacecraft-guidance-navigation-and-control",
+        "label": "Spacecraft Guidance Navigation and Control"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

@@ -1,0 +1,48 @@
+{
+  "id": "urn:ngm:class:dwarf-planet",
+  "title": "Dwarf Planet",
+  "slug": "dwarf-planet",
+  "public": true,
+  "classIri": "urn:ngm:class:dwarf-planet",
+  "domain": "space-science-and-systems",
+  "definition": "",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:astronomical-body",
+      "label": "Astronomical Body"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:planetary-science",
+        "label": "Planetary Science"
+      }
+    ]
+  },
+  "inferredSuperClasses": [],
+  "inheritedRelations": {
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:astronomy",
+        "label": "Astronomy"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

@@ -1,0 +1,36 @@
+{
+  "id": "urn:ngm:class:galaxy-cluster",
+  "title": "Galaxy Cluster",
+  "slug": "galaxy-cluster",
+  "public": true,
+  "classIri": "urn:ngm:class:galaxy-cluster",
+  "domain": "space-science-and-systems",
+  "definition": "",
+  "subClassOf": [],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:extragalactic-astronomy",
+        "label": "Extragalactic Astronomy"
+      }
+    ]
+  },
+  "inferredSuperClasses": [],
+  "inheritedRelations": {},
+  "wikilinks": [],
+  "backlinks": []
+}

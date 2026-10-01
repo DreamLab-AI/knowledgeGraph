@@ -1,0 +1,40 @@
+{
+  "id": "urn:ngm:class:earth-observation-granule",
+  "title": "Earth Observation Granule",
+  "slug": "earth-observation-granule",
+  "public": true,
+  "classIri": "urn:ngm:class:earth-observation-granule",
+  "domain": "earth-observation-and-geospatial-sensing",
+  "definition": "",
+  "subClassOf": [],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:earth-observation-data-quality",
+        "label": "Earth Observation Data Quality"
+      },
+      {
+        "id": "urn:ngm:class:earth-observation-processing",
+        "label": "Earth Observation Processing"
+      }
+    ]
+  },
+  "inferredSuperClasses": [],
+  "inheritedRelations": {},
+  "wikilinks": [],
+  "backlinks": []
+}

@@ -1,0 +1,56 @@
+{
+  "id": "urn:ngm:class:relative-spacecraft-navigation",
+  "title": "Relative Spacecraft Navigation",
+  "slug": "relative-spacecraft-navigation",
+  "public": true,
+  "classIri": "urn:ngm:class:relative-spacecraft-navigation",
+  "domain": "space-science-and-systems",
+  "definition": "",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:spacecraft-navigation",
+      "label": "Spacecraft Navigation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:formation-flying",
+        "label": "Formation Flying"
+      },
+      {
+        "id": "urn:ngm:class:spacecraft-navigation",
+        "label": "Spacecraft Navigation"
+      },
+      {
+        "id": "urn:ngm:class:spacecraft-rendezvous",
+        "label": "Spacecraft Rendezvous"
+      }
+    ]
+  },
+  "inferredSuperClasses": [],
+  "inheritedRelations": {
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:spacecraft-guidance-navigation-and-control",
+        "label": "Spacecraft Guidance Navigation and Control"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

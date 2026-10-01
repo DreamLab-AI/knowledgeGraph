@@ -1,0 +1,47 @@
+{
+  "id": "urn:ngm:class:interplanetary-space-radiation-environment",
+  "title": "Interplanetary Space Radiation Environment",
+  "slug": "interplanetary-space-radiation-environment",
+  "public": true,
+  "classIri": "urn:ngm:class:interplanetary-space-radiation-environment",
+  "domain": "space-science-and-systems",
+  "definition": "",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:space-radiation-environment",
+      "label": "Space Radiation Environment"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:space-life-sciences",
+        "label": "Space Life Sciences"
+      }
+    ]
+  },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:space-environment",
+      "label": "Space Environment",
+      "slug": "space-environment"
+    }
+  ],
+  "inheritedRelations": {},
+  "wikilinks": [],
+  "backlinks": []
+}

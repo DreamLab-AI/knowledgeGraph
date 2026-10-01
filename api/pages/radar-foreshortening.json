@@ -1,0 +1,48 @@
+{
+  "id": "urn:ngm:class:radar-foreshortening",
+  "title": "Radar Foreshortening",
+  "slug": "radar-foreshortening",
+  "public": true,
+  "classIri": "urn:ngm:class:radar-foreshortening",
+  "domain": "earth-observation-and-geospatial-sensing",
+  "definition": "",
+  "subClassOf": [],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:incidence-angle",
+        "label": "Incidence Angle"
+      },
+      {
+        "id": "urn:ngm:class:quality-mask",
+        "label": "Quality Mask"
+      },
+      {
+        "id": "urn:ngm:class:sar-terrain-correction",
+        "label": "SAR Terrain Correction"
+      },
+      {
+        "id": "urn:ngm:class:radar",
+        "label": "Synthetic Aperture Radar"
+      }
+    ]
+  },
+  "inferredSuperClasses": [],
+  "inheritedRelations": {},
+  "wikilinks": [],
+  "backlinks": []
+}

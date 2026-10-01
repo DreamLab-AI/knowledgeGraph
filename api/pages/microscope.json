@@ -1,0 +1,47 @@
+{
+  "id": "urn:ngm:class:microscope",
+  "title": "Microscope",
+  "slug": "microscope",
+  "public": true,
+  "classIri": "urn:ngm:class:microscope",
+  "domain": "earth-observation-and-geospatial-sensing",
+  "definition": "",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:optical-instrument",
+      "label": "Optical Instrument"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:earth-observation",
+        "label": "Earth Observation"
+      }
+    ]
+  },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:measurement-instrument",
+      "label": "Measurement Instrument",
+      "slug": "measurement-instrument"
+    }
+  ],
+  "inheritedRelations": {},
+  "wikilinks": [],
+  "backlinks": []
+}

@@ -1,0 +1,36 @@
+{
+  "id": "urn:ngm:class:normalised-difference-water-index",
+  "title": "Normalised Difference Water Index",
+  "slug": "normalised-difference-water-index",
+  "public": true,
+  "classIri": "urn:ngm:class:normalised-difference-water-index",
+  "domain": "earth-observation-and-geospatial-sensing",
+  "definition": "",
+  "subClassOf": [],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:earth-observation-processing",
+        "label": "Earth Observation Processing"
+      }
+    ]
+  },
+  "inferredSuperClasses": [],
+  "inheritedRelations": {},
+  "wikilinks": [],
+  "backlinks": []
+}

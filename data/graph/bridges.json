@@ -1,7 +1,7 @@
 {
   "pipelineVersion": "ng-1.0.0",
   "note": "Classes bridging more than one taxonomy category or domain. Overlap is a design property of this corpus. The NGG1 node record carries a single u16 category (FORMAT-NGG1 3), so tiers keep the nearest one; the full membership is here. Indices match overview.json.",
-  "count": 1145,
+  "count": 1147,
   "bridges": [
     {
       "iri": "https://narrativegoldmine.com/class/2-d-li-dar",
@@ -2127,6 +2127,21 @@
         "Differentiable Memory",
         "Sequence Model",
         "Representation Learning"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/attitude-control-thruster",
+      "label": "Attitude Control Thruster",
+      "categories": [
+        19
+      ],
+      "domains": [
+        3,
+        6
+      ],
+      "parents": [
+        "Actuator",
+        "Thruster"
       ]
     },
     {
@@ -14220,6 +14235,22 @@
       "parents": [
         "Display and Rendering",
         "Metaverse"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/planetary-rover",
+      "label": "Planetary Rover",
+      "categories": [
+        20,
+        0
+      ],
+      "domains": [
+        3,
+        6
+      ],
+      "parents": [
+        "Robot",
+        "Spacecraft"
       ]
     },
     {

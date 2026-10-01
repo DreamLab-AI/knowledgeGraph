@@ -1,0 +1,44 @@
+{
+  "id": "urn:ngm:class:spacecraft-ranging",
+  "title": "Spacecraft Ranging",
+  "slug": "spacecraft-ranging",
+  "public": true,
+  "classIri": "urn:ngm:class:spacecraft-ranging",
+  "domain": "space-science-and-systems",
+  "definition": "",
+  "subClassOf": [],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:spacecraft-navigation",
+        "label": "Spacecraft Navigation"
+      },
+      {
+        "id": "urn:ngm:class:spacecraft-transponder",
+        "label": "Spacecraft Transponder"
+      },
+      {
+        "id": "urn:ngm:class:telemetry-tracking-and-command",
+        "label": "Telemetry Tracking and Command"
+      }
+    ]
+  },
+  "inferredSuperClasses": [],
+  "inheritedRelations": {},
+  "wikilinks": [],
+  "backlinks": []
+}

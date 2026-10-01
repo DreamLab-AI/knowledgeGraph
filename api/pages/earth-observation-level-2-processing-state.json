@@ -1,0 +1,36 @@
+{
+  "id": "urn:ngm:class:earth-observation-level-2-processing-state",
+  "title": "Earth Observation Level 2 Processing State",
+  "slug": "earth-observation-level-2-processing-state",
+  "public": true,
+  "classIri": "urn:ngm:class:earth-observation-level-2-processing-state",
+  "domain": "earth-observation-and-geospatial-sensing",
+  "definition": "",
+  "subClassOf": [],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:earth-observation-processing",
+        "label": "Earth Observation Processing"
+      }
+    ]
+  },
+  "inferredSuperClasses": [],
+  "inheritedRelations": {},
+  "wikilinks": [],
+  "backlinks": []
+}

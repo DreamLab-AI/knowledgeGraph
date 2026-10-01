@@ -1,0 +1,36 @@
+{
+  "id": "urn:ngm:class:spacecraft-attitude",
+  "title": "Spacecraft Attitude",
+  "slug": "spacecraft-attitude",
+  "public": true,
+  "classIri": "urn:ngm:class:spacecraft-attitude",
+  "domain": "space-science-and-systems",
+  "definition": "",
+  "subClassOf": [],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:spacecraft-guidance-navigation-and-control",
+        "label": "Spacecraft Guidance Navigation and Control"
+      }
+    ]
+  },
+  "inferredSuperClasses": [],
+  "inheritedRelations": {},
+  "wikilinks": [],
+  "backlinks": []
+}

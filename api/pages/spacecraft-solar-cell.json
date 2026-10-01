@@ -1,0 +1,41 @@
+{
+  "id": "urn:ngm:class:spacecraft-solar-cell",
+  "title": "Spacecraft Solar Cell",
+  "slug": "spacecraft-solar-cell",
+  "public": true,
+  "classIri": "urn:ngm:class:spacecraft-solar-cell",
+  "domain": "space-science-and-systems",
+  "definition": "",
+  "subClassOf": [],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:spacecraft-solar-array",
+        "label": "Spacecraft Solar Array"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:spacecraft-electrical-power-system",
+        "label": "Spacecraft Electrical Power System"
+      }
+    ]
+  },
+  "inferredSuperClasses": [],
+  "inheritedRelations": {},
+  "wikilinks": [],
+  "backlinks": []
+}

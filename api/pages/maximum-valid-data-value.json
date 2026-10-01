@@ -1,0 +1,41 @@
+{
+  "id": "urn:ngm:class:maximum-valid-data-value",
+  "title": "Maximum Valid Data Value",
+  "slug": "maximum-valid-data-value",
+  "public": true,
+  "classIri": "urn:ngm:class:maximum-valid-data-value",
+  "domain": "earth-observation-and-geospatial-sensing",
+  "definition": "",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:measurement-value",
+      "label": "Measurement Value"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:earth-observation-processing",
+        "label": "Earth Observation Processing"
+      }
+    ]
+  },
+  "inferredSuperClasses": [],
+  "inheritedRelations": {},
+  "wikilinks": [],
+  "backlinks": []
+}

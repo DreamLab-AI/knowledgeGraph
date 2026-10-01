@@ -1,0 +1,40 @@
+{
+  "id": "urn:ngm:class:thermal-louver",
+  "title": "Thermal Louver",
+  "slug": "thermal-louver",
+  "public": true,
+  "classIri": "urn:ngm:class:thermal-louver",
+  "domain": "space-science-and-systems",
+  "definition": "",
+  "subClassOf": [],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:spacecraft-radiator",
+        "label": "Spacecraft Radiator"
+      },
+      {
+        "id": "urn:ngm:class:spacecraft-thermal-control",
+        "label": "Spacecraft Thermal Control"
+      }
+    ]
+  },
+  "inferredSuperClasses": [],
+  "inheritedRelations": {},
+  "wikilinks": [],
+  "backlinks": []
+}

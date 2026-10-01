@@ -1,0 +1,52 @@
+{
+  "id": "urn:ngm:class:microwave-radiometer",
+  "title": "Microwave Radiometer",
+  "slug": "microwave-radiometer",
+  "public": true,
+  "classIri": "urn:ngm:class:microwave-radiometer",
+  "domain": "earth-observation-and-geospatial-sensing",
+  "definition": "",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:radiometer",
+      "label": "Radiometer"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:earth-observation",
+        "label": "Earth Observation"
+      },
+      {
+        "id": "urn:ngm:class:passive-earth-observation-sensor",
+        "label": "Passive Earth Observation Sensor"
+      }
+    ]
+  },
+  "inferredSuperClasses": [],
+  "inheritedRelations": {
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:earth-observation-instrument",
+        "label": "Earth Observation Instrument"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

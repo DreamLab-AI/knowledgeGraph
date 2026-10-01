@@ -1,0 +1,62 @@
+{
+  "id": "urn:ngm:class:earth-observation-level-0-data-product",
+  "title": "Earth Observation Level 0 Data Product",
+  "slug": "earth-observation-level-0-data-product",
+  "public": true,
+  "classIri": "urn:ngm:class:earth-observation-level-0-data-product",
+  "domain": "earth-observation-and-geospatial-sensing",
+  "definition": "",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:earth-observation-data-product",
+      "label": "Earth Observation Data Product"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:earth-observation-data-processing-level",
+        "label": "Earth Observation Data Processing Level"
+      }
+    ]
+  },
+  "inferredSuperClasses": [],
+  "inheritedRelations": {
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:geospatial-data",
+        "label": "Geospatial Data"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:earth-observation-processing",
+        "label": "Earth Observation Processing"
+      },
+      {
+        "id": "urn:ngm:class:observation-provenance",
+        "label": "Observation Provenance"
+      },
+      {
+        "id": "urn:ngm:class:processing-lineage",
+        "label": "Processing Lineage"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

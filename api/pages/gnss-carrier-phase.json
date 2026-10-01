@@ -1,0 +1,36 @@
+{
+  "id": "urn:ngm:class:gnss-carrier-phase",
+  "title": "GNSS Carrier Phase",
+  "slug": "gnss-carrier-phase",
+  "public": true,
+  "classIri": "urn:ngm:class:gnss-carrier-phase",
+  "domain": "space-science-and-systems",
+  "definition": "",
+  "subClassOf": [],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:positioning-navigation-and-timing",
+        "label": "Positioning Navigation and Timing"
+      }
+    ]
+  },
+  "inferredSuperClasses": [],
+  "inheritedRelations": {},
+  "wikilinks": [],
+  "backlinks": []
+}

@@ -521,6 +521,10 @@
         "label": "Dead Reckoning"
       },
       {
+        "id": "urn:ngm:class:global-navigation-satellite-system",
+        "label": "Global Navigation Satellite System"
+      },
+      {
         "id": "urn:ngm:class:map-matching",
         "label": "Map Matching"
       },
@@ -543,10 +547,6 @@
       {
         "id": "urn:ngm:class:robo-actuation-and-control",
         "label": "Actuation and Control"
-      },
-      {
-        "id": "urn:ngm:class:robo-perception",
-        "label": "Perception and Sensing"
       }
     ]
   },

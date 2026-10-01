@@ -1,0 +1,54 @@
+{
+  "id": "urn:ngm:class:terrestrial-planet",
+  "title": "Terrestrial Planet",
+  "slug": "terrestrial-planet",
+  "public": true,
+  "classIri": "urn:ngm:class:terrestrial-planet",
+  "domain": "space-science-and-systems",
+  "definition": "",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:planet",
+      "label": "Planet"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:planetary-science",
+        "label": "Planetary Science"
+      }
+    ]
+  },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:astronomical-body",
+      "label": "Astronomical Body",
+      "slug": "astronomical-body"
+    }
+  ],
+  "inheritedRelations": {
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:astronomy",
+        "label": "Astronomy"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

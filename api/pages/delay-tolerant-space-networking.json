@@ -1,0 +1,46 @@
+{
+  "id": "urn:ngm:class:delay-tolerant-space-networking",
+  "title": "Delay-tolerant Space Networking",
+  "slug": "delay-tolerant-space-networking",
+  "public": true,
+  "classIri": "urn:ngm:class:delay-tolerant-space-networking",
+  "domain": "space-science-and-systems",
+  "definition": "",
+  "subClassOf": [],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:communication-protocol",
+        "label": "Communication Protocol"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:store-and-forward-communication",
+        "label": "Store-and-forward Communication"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:satellite-communication",
+        "label": "Satellite Communication"
+      }
+    ]
+  },
+  "inferredSuperClasses": [],
+  "inheritedRelations": {},
+  "wikilinks": [],
+  "backlinks": []
+}

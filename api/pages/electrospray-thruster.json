@@ -1,0 +1,48 @@
+{
+  "id": "urn:ngm:class:electrospray-thruster",
+  "title": "Electrospray Thruster",
+  "slug": "electrospray-thruster",
+  "public": true,
+  "classIri": "urn:ngm:class:electrospray-thruster",
+  "domain": "space-science-and-systems",
+  "definition": "",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:thruster",
+      "label": "Thruster"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:electric-propulsion",
+        "label": "Electric Propulsion"
+      }
+    ]
+  },
+  "inferredSuperClasses": [],
+  "inheritedRelations": {
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:spacecraft-propulsion",
+        "label": "Spacecraft Propulsion"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

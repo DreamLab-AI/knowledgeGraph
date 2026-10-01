@@ -1,0 +1,52 @@
+{
+  "id": "urn:ngm:class:gnss-augmentation",
+  "title": "GNSS Augmentation",
+  "slug": "gnss-augmentation",
+  "public": true,
+  "classIri": "urn:ngm:class:gnss-augmentation",
+  "domain": "space-science-and-systems",
+  "definition": "",
+  "subClassOf": [],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:differential-gnss",
+        "label": "Differential GNSS"
+      },
+      {
+        "id": "urn:ngm:class:global-navigation-satellite-system",
+        "label": "Global Navigation Satellite System"
+      },
+      {
+        "id": "urn:ngm:class:ground-based-augmentation-system",
+        "label": "Ground-based Augmentation System"
+      },
+      {
+        "id": "urn:ngm:class:precise-point-positioning",
+        "label": "Precise Point Positioning"
+      },
+      {
+        "id": "urn:ngm:class:satellite-based-augmentation-system",
+        "label": "Satellite-based Augmentation System"
+      }
+    ]
+  },
+  "inferredSuperClasses": [],
+  "inheritedRelations": {},
+  "wikilinks": [],
+  "backlinks": []
+}

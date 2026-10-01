@@ -1,0 +1,44 @@
+{
+  "id": "urn:ngm:class:gnss-antenna-phase-centre",
+  "title": "GNSS Antenna Phase Centre",
+  "slug": "gnss-antenna-phase-centre",
+  "public": true,
+  "classIri": "urn:ngm:class:gnss-antenna-phase-centre",
+  "domain": "space-science-and-systems",
+  "definition": "",
+  "subClassOf": [],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:gnss-antenna",
+        "label": "GNSS Antenna"
+      },
+      {
+        "id": "urn:ngm:class:gnss-carrier-phase",
+        "label": "GNSS Carrier Phase"
+      },
+      {
+        "id": "urn:ngm:class:gnss-positioning-error",
+        "label": "GNSS Positioning Error"
+      }
+    ]
+  },
+  "inferredSuperClasses": [],
+  "inheritedRelations": {},
+  "wikilinks": [],
+  "backlinks": []
+}

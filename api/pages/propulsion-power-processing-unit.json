@@ -1,0 +1,40 @@
+{
+  "id": "urn:ngm:class:propulsion-power-processing-unit",
+  "title": "Propulsion Power Processing Unit",
+  "slug": "propulsion-power-processing-unit",
+  "public": true,
+  "classIri": "urn:ngm:class:propulsion-power-processing-unit",
+  "domain": "space-science-and-systems",
+  "definition": "",
+  "subClassOf": [],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:electric-propulsion",
+        "label": "Electric Propulsion"
+      },
+      {
+        "id": "urn:ngm:class:power-conditioning-and-distribution",
+        "label": "Power Conditioning and Distribution"
+      }
+    ]
+  },
+  "inferredSuperClasses": [],
+  "inheritedRelations": {},
+  "wikilinks": [],
+  "backlinks": []
+}

@@ -1,0 +1,48 @@
+{
+  "id": "urn:ngm:class:doppler-radar",
+  "title": "Doppler Radar",
+  "slug": "doppler-radar",
+  "public": true,
+  "classIri": "urn:ngm:class:doppler-radar",
+  "domain": "earth-observation-and-geospatial-sensing",
+  "definition": "",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:radar-instrument",
+      "label": "Radar Instrument"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:earth-observation",
+        "label": "Earth Observation"
+      }
+    ]
+  },
+  "inferredSuperClasses": [],
+  "inheritedRelations": {
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:radar",
+        "label": "Radar"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

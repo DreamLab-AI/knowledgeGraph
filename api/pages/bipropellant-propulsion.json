@@ -1,0 +1,47 @@
+{
+  "id": "urn:ngm:class:bipropellant-propulsion",
+  "title": "Bipropellant Propulsion",
+  "slug": "bipropellant-propulsion",
+  "public": true,
+  "classIri": "urn:ngm:class:bipropellant-propulsion",
+  "domain": "space-science-and-systems",
+  "definition": "",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:chemical-propulsion",
+      "label": "Chemical Propulsion"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:spacecraft-propulsion",
+        "label": "Spacecraft Propulsion"
+      }
+    ]
+  },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:spacecraft-propulsion",
+      "label": "Spacecraft Propulsion",
+      "slug": "spacecraft-propulsion"
+    }
+  ],
+  "inheritedRelations": {},
+  "wikilinks": [],
+  "backlinks": []
+}

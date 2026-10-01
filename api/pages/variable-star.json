@@ -1,0 +1,54 @@
+{
+  "id": "urn:ngm:class:variable-star",
+  "title": "Variable Star",
+  "slug": "variable-star",
+  "public": true,
+  "classIri": "urn:ngm:class:variable-star",
+  "domain": "space-science-and-systems",
+  "definition": "",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:star",
+      "label": "Star"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:stellar-astrophysics",
+        "label": "Stellar Astrophysics"
+      }
+    ]
+  },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:astronomical-body",
+      "label": "Astronomical Body",
+      "slug": "astronomical-body"
+    }
+  ],
+  "inheritedRelations": {
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:astronomy",
+        "label": "Astronomy"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

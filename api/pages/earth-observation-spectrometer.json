@@ -1,0 +1,54 @@
+{
+  "id": "urn:ngm:class:earth-observation-spectrometer",
+  "title": "Earth Observation Spectrometer",
+  "slug": "earth-observation-spectrometer",
+  "public": true,
+  "classIri": "urn:ngm:class:earth-observation-spectrometer",
+  "domain": "earth-observation-and-geospatial-sensing",
+  "definition": "",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:earth-observation-instrument",
+      "label": "Earth Observation Instrument"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:earth-observation",
+        "label": "Earth Observation"
+      }
+    ]
+  },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:measurement-instrument",
+      "label": "Measurement Instrument",
+      "slug": "measurement-instrument"
+    }
+  ],
+  "inheritedRelations": {
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:remote-sensing-platform",
+        "label": "Remote Sensing Platform"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

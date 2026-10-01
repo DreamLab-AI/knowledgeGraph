@@ -1,0 +1,40 @@
+{
+  "id": "urn:ngm:class:spaceflight-associated-neuro-ocular-syndrome",
+  "title": "Spaceflight-associated Neuro-ocular Syndrome",
+  "slug": "spaceflight-associated-neuro-ocular-syndrome",
+  "public": true,
+  "classIri": "urn:ngm:class:spaceflight-associated-neuro-ocular-syndrome",
+  "domain": "space-science-and-systems",
+  "definition": "",
+  "subClassOf": [],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:space-medicine",
+        "label": "Space Medicine"
+      },
+      {
+        "id": "urn:ngm:class:spaceflight-fluid-shift",
+        "label": "Spaceflight Fluid Shift"
+      }
+    ]
+  },
+  "inferredSuperClasses": [],
+  "inheritedRelations": {},
+  "wikilinks": [],
+  "backlinks": []
+}

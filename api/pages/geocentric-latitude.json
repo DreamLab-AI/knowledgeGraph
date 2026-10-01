@@ -1,0 +1,40 @@
+{
+  "id": "urn:ngm:class:geocentric-latitude",
+  "title": "Geocentric Latitude",
+  "slug": "geocentric-latitude",
+  "public": true,
+  "classIri": "urn:ngm:class:geocentric-latitude",
+  "domain": "earth-observation-and-geospatial-sensing",
+  "definition": "",
+  "subClassOf": [],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:geodetic-latitude",
+        "label": "Geodetic Latitude"
+      },
+      {
+        "id": "urn:ngm:class:reference-ellipsoid",
+        "label": "Reference Ellipsoid"
+      }
+    ]
+  },
+  "inferredSuperClasses": [],
+  "inheritedRelations": {},
+  "wikilinks": [],
+  "backlinks": []
+}

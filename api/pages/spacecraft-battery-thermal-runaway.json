@@ -1,0 +1,44 @@
+{
+  "id": "urn:ngm:class:spacecraft-battery-thermal-runaway",
+  "title": "Spacecraft Battery Thermal Runaway",
+  "slug": "spacecraft-battery-thermal-runaway",
+  "public": true,
+  "classIri": "urn:ngm:class:spacecraft-battery-thermal-runaway",
+  "domain": "space-science-and-systems",
+  "definition": "",
+  "subClassOf": [],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:spacecraft-battery",
+        "label": "Spacecraft Battery"
+      },
+      {
+        "id": "urn:ngm:class:spacecraft-reliability",
+        "label": "Spacecraft Reliability"
+      },
+      {
+        "id": "urn:ngm:class:spacecraft-thermal-control",
+        "label": "Spacecraft Thermal Control"
+      }
+    ]
+  },
+  "inferredSuperClasses": [],
+  "inheritedRelations": {},
+  "wikilinks": [],
+  "backlinks": []
+}

@@ -519,6 +519,10 @@
     ],
     "relatedTo": [
       {
+        "id": "urn:ngm:class:global-navigation-satellite-system",
+        "label": "Global Navigation Satellite System"
+      },
+      {
         "id": "urn:ngm:class:map-matching",
         "label": "Map Matching"
       },
@@ -545,10 +549,6 @@
       {
         "id": "urn:ngm:class:robo-perception",
         "label": "Perception and Sensing"
-      },
-      {
-        "id": "urn:ngm:class:control-theory",
-        "label": "Control Theory"
       }
     ]
   },

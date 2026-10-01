@@ -1,0 +1,41 @@
+{
+  "id": "urn:ngm:class:onboard-computer",
+  "title": "Onboard Computer",
+  "slug": "onboard-computer",
+  "public": true,
+  "classIri": "urn:ngm:class:onboard-computer",
+  "domain": "space-science-and-systems",
+  "definition": "",
+  "subClassOf": [],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:space-systems-engineering",
+        "label": "Space Systems Engineering"
+      }
+    ]
+  },
+  "inferredSuperClasses": [],
+  "inheritedRelations": {},
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "mobile-robot-platform",
+      "label": "Mobile Robot Platform"
+    }
+  ]
+}

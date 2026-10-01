@@ -1,0 +1,48 @@
+{
+  "id": "urn:ngm:class:spacecraft-proximity-operations",
+  "title": "Spacecraft Proximity Operations",
+  "slug": "spacecraft-proximity-operations",
+  "public": true,
+  "classIri": "urn:ngm:class:spacecraft-proximity-operations",
+  "domain": "space-science-and-systems",
+  "definition": "",
+  "subClassOf": [],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:collision-avoidance",
+        "label": "Collision Avoidance"
+      },
+      {
+        "id": "urn:ngm:class:formation-flying",
+        "label": "Formation Flying"
+      },
+      {
+        "id": "urn:ngm:class:spacecraft-docking",
+        "label": "Spacecraft Docking"
+      },
+      {
+        "id": "urn:ngm:class:spacecraft-rendezvous",
+        "label": "Spacecraft Rendezvous"
+      }
+    ]
+  },
+  "inferredSuperClasses": [],
+  "inheritedRelations": {},
+  "wikilinks": [],
+  "backlinks": []
+}

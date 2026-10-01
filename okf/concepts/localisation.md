@@ -58,7 +58,7 @@ relatedTo:
   - urn:ngm:class:pose-estimation
   - urn:ngm:class:robot-pose
   - urn:ngm:class:uncertainty
-  - urn:ngm:class:navigation
+  - urn:ngm:class:global-navigation-satellite-system
   - urn:ngm:class:map-matching
 ---
 

@@ -1,0 +1,41 @@
+{
+  "id": "urn:ngm:class:spin-stabilisation",
+  "title": "Spin Stabilisation",
+  "slug": "spin-stabilisation",
+  "public": true,
+  "classIri": "urn:ngm:class:spin-stabilisation",
+  "domain": "space-science-and-systems",
+  "definition": "",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:attitude-control",
+      "label": "Attitude Control"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:spacecraft-guidance-navigation-and-control",
+        "label": "Spacecraft Guidance Navigation and Control"
+      }
+    ]
+  },
+  "inferredSuperClasses": [],
+  "inheritedRelations": {},
+  "wikilinks": [],
+  "backlinks": []
+}

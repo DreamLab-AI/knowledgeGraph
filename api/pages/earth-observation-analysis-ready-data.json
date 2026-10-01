@@ -1,0 +1,70 @@
+{
+  "id": "urn:ngm:class:earth-observation-analysis-ready-data",
+  "title": "Earth Observation Analysis Ready Data",
+  "slug": "earth-observation-analysis-ready-data",
+  "public": true,
+  "classIri": "urn:ngm:class:earth-observation-analysis-ready-data",
+  "domain": "earth-observation-and-geospatial-sensing",
+  "definition": "",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:earth-observation-data-product",
+      "label": "Earth Observation Data Product"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:earth-observation-data-cube",
+        "label": "Earth Observation Data Cube"
+      },
+      {
+        "id": "urn:ngm:class:geometric-calibration",
+        "label": "Geometric Calibration"
+      },
+      {
+        "id": "urn:ngm:class:radiometric-calibration",
+        "label": "Radiometric Calibration"
+      }
+    ]
+  },
+  "inferredSuperClasses": [],
+  "inheritedRelations": {
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:geospatial-data",
+        "label": "Geospatial Data"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:earth-observation-processing",
+        "label": "Earth Observation Processing"
+      },
+      {
+        "id": "urn:ngm:class:observation-provenance",
+        "label": "Observation Provenance"
+      },
+      {
+        "id": "urn:ngm:class:processing-lineage",
+        "label": "Processing Lineage"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

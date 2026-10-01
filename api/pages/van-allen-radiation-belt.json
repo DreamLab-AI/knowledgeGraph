@@ -1,0 +1,41 @@
+{
+  "id": "urn:ngm:class:van-allen-radiation-belt",
+  "title": "Van Allen Radiation Belt",
+  "slug": "van-allen-radiation-belt",
+  "public": true,
+  "classIri": "urn:ngm:class:van-allen-radiation-belt",
+  "domain": "space-science-and-systems",
+  "definition": "",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:radiation-belt",
+      "label": "Radiation Belt"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:heliophysics",
+        "label": "Heliophysics"
+      }
+    ]
+  },
+  "inferredSuperClasses": [],
+  "inheritedRelations": {},
+  "wikilinks": [],
+  "backlinks": []
+}

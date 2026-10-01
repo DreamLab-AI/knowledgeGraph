@@ -1,0 +1,44 @@
+{
+  "id": "urn:ngm:class:spacecraft-phase-change-thermal-storage",
+  "title": "Spacecraft Phase Change Thermal Storage",
+  "slug": "spacecraft-phase-change-thermal-storage",
+  "public": true,
+  "classIri": "urn:ngm:class:spacecraft-phase-change-thermal-storage",
+  "domain": "space-science-and-systems",
+  "definition": "",
+  "subClassOf": [],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:passive-thermal-control",
+        "label": "Passive Thermal Control"
+      },
+      {
+        "id": "urn:ngm:class:spacecraft-thermal-control",
+        "label": "Spacecraft Thermal Control"
+      },
+      {
+        "id": "urn:ngm:class:thermodynamics",
+        "label": "Thermodynamics"
+      }
+    ]
+  },
+  "inferredSuperClasses": [],
+  "inheritedRelations": {},
+  "wikilinks": [],
+  "backlinks": []
+}

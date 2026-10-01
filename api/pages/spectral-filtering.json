@@ -1,0 +1,40 @@
+{
+  "id": "urn:ngm:class:spectral-filtering",
+  "title": "Spectral Filtering",
+  "slug": "spectral-filtering",
+  "public": true,
+  "classIri": "urn:ngm:class:spectral-filtering",
+  "domain": "earth-observation-and-geospatial-sensing",
+  "definition": "",
+  "subClassOf": [],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:earth-observation-processing",
+        "label": "Earth Observation Processing"
+      },
+      {
+        "id": "urn:ngm:class:spectral-analysis",
+        "label": "Spectral Analysis"
+      }
+    ]
+  },
+  "inferredSuperClasses": [],
+  "inheritedRelations": {},
+  "wikilinks": [],
+  "backlinks": []
+}

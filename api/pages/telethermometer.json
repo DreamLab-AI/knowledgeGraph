@@ -1,0 +1,47 @@
+{
+  "id": "urn:ngm:class:telethermometer",
+  "title": "Telethermometer",
+  "slug": "telethermometer",
+  "public": true,
+  "classIri": "urn:ngm:class:telethermometer",
+  "domain": "earth-observation-and-geospatial-sensing",
+  "definition": "",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:thermometer",
+      "label": "Thermometer"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:earth-observation",
+        "label": "Earth Observation"
+      }
+    ]
+  },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:measurement-instrument",
+      "label": "Measurement Instrument",
+      "slug": "measurement-instrument"
+    }
+  ],
+  "inheritedRelations": {},
+  "wikilinks": [],
+  "backlinks": []
+}

@@ -1,0 +1,60 @@
+{
+  "id": "urn:ngm:class:radiometric-spacecraft-navigation",
+  "title": "Radiometric Spacecraft Navigation",
+  "slug": "radiometric-spacecraft-navigation",
+  "public": true,
+  "classIri": "urn:ngm:class:radiometric-spacecraft-navigation",
+  "domain": "space-science-and-systems",
+  "definition": "",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:spacecraft-navigation",
+      "label": "Spacecraft Navigation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:orbit-determination",
+        "label": "Orbit Determination"
+      },
+      {
+        "id": "urn:ngm:class:satellite-doppler-shift",
+        "label": "Satellite Doppler Shift"
+      },
+      {
+        "id": "urn:ngm:class:spacecraft-navigation",
+        "label": "Spacecraft Navigation"
+      },
+      {
+        "id": "urn:ngm:class:spacecraft-ranging",
+        "label": "Spacecraft Ranging"
+      }
+    ]
+  },
+  "inferredSuperClasses": [],
+  "inheritedRelations": {
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:spacecraft-guidance-navigation-and-control",
+        "label": "Spacecraft Guidance Navigation and Control"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

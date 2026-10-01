@@ -1,0 +1,59 @@
+{
+  "id": "urn:ngm:class:red-dwarf",
+  "title": "Red Dwarf",
+  "slug": "red-dwarf",
+  "public": true,
+  "classIri": "urn:ngm:class:red-dwarf",
+  "domain": "space-science-and-systems",
+  "definition": "",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:main-sequence-star",
+      "label": "Main-sequence Star"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:stellar-astrophysics",
+        "label": "Stellar Astrophysics"
+      }
+    ]
+  },
+  "inferredSuperClasses": [
+    {
+      "id": "urn:ngm:class:star",
+      "label": "Star",
+      "slug": "star"
+    },
+    {
+      "id": "urn:ngm:class:astronomical-body",
+      "label": "Astronomical Body",
+      "slug": "astronomical-body"
+    }
+  ],
+  "inheritedRelations": {
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:astronomy",
+        "label": "Astronomy"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

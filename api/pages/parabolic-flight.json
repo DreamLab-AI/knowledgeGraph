@@ -1,0 +1,44 @@
+{
+  "id": "urn:ngm:class:parabolic-flight",
+  "title": "Parabolic Flight",
+  "slug": "parabolic-flight",
+  "public": true,
+  "classIri": "urn:ngm:class:parabolic-flight",
+  "domain": "space-science-and-systems",
+  "definition": "",
+  "subClassOf": [],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:microgravity",
+        "label": "Microgravity"
+      },
+      {
+        "id": "urn:ngm:class:space-life-sciences",
+        "label": "Space Life Sciences"
+      },
+      {
+        "id": "urn:ngm:class:spaceflight-analogue",
+        "label": "Spaceflight Analogue"
+      }
+    ]
+  },
+  "inferredSuperClasses": [],
+  "inheritedRelations": {},
+  "wikilinks": [],
+  "backlinks": []
+}

@@ -1,0 +1,40 @@
+{
+  "id": "urn:ngm:class:active-galactic-nucleus",
+  "title": "Active Galactic Nucleus",
+  "slug": "active-galactic-nucleus",
+  "public": true,
+  "classIri": "urn:ngm:class:active-galactic-nucleus",
+  "domain": "space-science-and-systems",
+  "definition": "",
+  "subClassOf": [],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:black-hole",
+        "label": "Black Hole"
+      },
+      {
+        "id": "urn:ngm:class:quasar",
+        "label": "Quasar"
+      }
+    ]
+  },
+  "inferredSuperClasses": [],
+  "inheritedRelations": {},
+  "wikilinks": [],
+  "backlinks": []
+}
