@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:star-tracker",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "A star tracker is an optical [[Sensor|sensor]] that estimates a spacecraft's absolute three-axis orientation by imaging stars and matching their pattern to an on-board catalogue.[^1] It measures attitude relative to the celestial reference field. It does not, by itself, provide the spacecraft's orbital position.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sensor",
@@ -355,7 +355,12 @@
       }
     ]
   },
-  "wikilinks": [],
+  "wikilinks": [
+    {
+      "slug": "sensor",
+      "label": "sensor"
+    }
+  ],
   "backlinks": [
     {
       "slug": "virtual-production",

@@ -1,37 +1,37 @@
 {
-  "id": "visionGraph@ae3f58e40fcdf99737fd24e0b9b353cfdd76c8f6",
-  "commit": "ae3f58e40fcdf99737fd24e0b9b353cfdd76c8f6",
+  "id": "visionGraph@41e5684d73416bc22ea7072e37ffc0edf036b748",
+  "commit": "41e5684d73416bc22ea7072e37ffc0edf036b748",
   "dirty": false,
-  "content_digest": "88eda1a6da1319217a106a20fb24bd3d67186917dfb2e98b202c10917afd3b40",
-  "generated_at": "2026-10-01T19:36:48.872850+00:00",
+  "content_digest": "7db44225b920057daf8d352a9977262efcdacef49c6bca12ecdda88cb1c79944",
+  "generated_at": "2026-10-01T20:37:57.310716+00:00",
   "class_count": 9354,
   "page_count": 9354,
   "vocabulary_version": 1,
   "artifacts": [
     {
       "name": "data/ontology.ttl",
-      "sha256": "eee13d6eb61003d50dff31d3f2263a018bb4304b718832b361ec889741d42570",
-      "bytes": 16869682
+      "sha256": "5310b955098f377060771c356b856b3b152ab93ba5addfd5b06fa3f818a065ae",
+      "bytes": 16874978
     },
     {
       "name": "data/ontology-inferred.ttl",
-      "sha256": "26b6d0c63836c9ede07a64cbf8fff28ab1a683a06b74a31fc838a65e948bfc8b",
+      "sha256": "589c3eb513cbfe3ca8f6fb9205319168264f63fb92c07e91b6b4f61e45d565d2",
       "bytes": 3893300
     },
     {
       "name": "data/scaffold-index.json",
-      "sha256": "121a378eaf7aa0a818c3c49b47d988d9134524e381a8184f847c744a6056bc21",
-      "bytes": 10104840
+      "sha256": "93ed31f2aefd6ec80a4633ae6169dc6b4cbe87f1381c41d9be6669d2ea23b0a1",
+      "bytes": 10109594
     },
     {
       "name": "data/prose-index.json",
-      "sha256": "5dd7244885e3333a071d7174d497f422be61fc831d37d90f5ccd9f28eddb1ad2",
-      "bytes": 5570729
+      "sha256": "22ff05751ba9535e7b2a4965ee781f1087f88991cd428240bf16c81185ee1bbd",
+      "bytes": 5574147
     },
     {
       "name": "api/search-index.json",
-      "sha256": "ea2c99ed608f8759772b534b3ce46480168505755d888171c8783a65db1a7195",
-      "bytes": 8988616
+      "sha256": "70f4e02812158a3b655a606def103cfc8c31d9f3708b9570ddd7ce45f60ed6e8",
+      "bytes": 8993820
     },
     {
       "name": "api/pages/1-hive.json",
@@ -9970,8 +9970,8 @@
     },
     {
       "name": "api/pages/cubesat.json",
-      "sha256": "cb0af03fa3fe25b11eaaf76351920e6decf407f92d800aa8977c3209f5b8dd3d",
-      "bytes": 4735
+      "sha256": "5dee700676029c5537a1e4234dc120b2a89f1760afd49f4aef86827af1ee42ce",
+      "bytes": 5442
     },
     {
       "name": "api/pages/cultural-heritage-preservation.json",
@@ -14480,8 +14480,8 @@
     },
     {
       "name": "api/pages/electric-propulsion.json",
-      "sha256": "2bb667557a16f2d2588f229462c6f476f8406432bea0bb356dbe9a8f2b8447cd",
-      "bytes": 924
+      "sha256": "8ef6a0ddfd2d38ea84eb82c95582657c7e90a9900f97a230206f528016877ae0",
+      "bytes": 1363
     },
     {
       "name": "api/pages/electric-vehicle.json",
@@ -18650,8 +18650,8 @@
     },
     {
       "name": "api/pages/ground-station.json",
-      "sha256": "fd7592a3a940021cb26aabff5bc9047b854aa042ba6bc303565fa171feaac259",
-      "bytes": 807
+      "sha256": "2408f6e9302d821c31c1c0cdff7d440949a13e7b1493f06a0a59833c8ebb9cfd",
+      "bytes": 1178
     },
     {
       "name": "api/pages/ground-support-equipment.json",
@@ -23475,13 +23475,13 @@
     },
     {
       "name": "api/pages/launch-vehicle-stage.json",
-      "sha256": "695f1b24d9a61267add7d4c2cf2cc7087bbe8f918180fae4cc7b8d6e15f5132b",
-      "bytes": 831
+      "sha256": "10ecd557d7f32aac20590587e9bd30491a77ed535729eebe25aebd2e32000fb4",
+      "bytes": 1389
     },
     {
       "name": "api/pages/launch-vehicle.json",
-      "sha256": "5a66928ca35934577b175c6d6363ba5235d61a9d19ac582e995a51f126cf0e7b",
-      "bytes": 807
+      "sha256": "b1082182a8f8f25bf3156483ca64d209adee159507976257041b07130ba70fa1",
+      "bytes": 1479
     },
     {
       "name": "api/pages/law-commission.json",
@@ -29615,8 +29615,8 @@
     },
     {
       "name": "api/pages/orbital-debris.json",
-      "sha256": "d242a0c5b53fa6f49ce967296e7f459584d24192c2ff03b4be5594f35f99d7f6",
-      "bytes": 789
+      "sha256": "2d2f2ec6c89978004ad5fd6f11d57de16304819b96122491d56ccc95b9194dc2",
+      "bytes": 1295
     },
     {
       "name": "api/pages/orbital-dynamics.json",
@@ -36270,8 +36270,8 @@
     },
     {
       "name": "api/pages/satellite-constellation.json",
-      "sha256": "35ae618bb41f9c8aa4dbf7316491593f5c22cc72c5e9a602ae06ed2bbe36df9d",
-      "bytes": 843
+      "sha256": "084c0095b347bd34f15bc214f43356eea15bf750b04afba1847ea281f0384fa5",
+      "bytes": 1240
     },
     {
       "name": "api/pages/satellite-doppler-shift.json",
@@ -37350,8 +37350,8 @@
     },
     {
       "name": "api/pages/sensor.json",
-      "sha256": "4c93a9a5d1a761b1731bd2ecdb44ba5a5bd01cc79f5dcc06fca552fde83cb7a9",
-      "bytes": 11897
+      "sha256": "f6b821a70896ebf78aee17b4ce962aa613981904cabd9c9b84328eda9f991d23",
+      "bytes": 11970
     },
     {
       "name": "api/pages/sensors.json",
@@ -38010,8 +38010,8 @@
     },
     {
       "name": "api/pages/small-satellite.json",
-      "sha256": "bde28f39f8d9665c8a14a4110dae5f5456ae2f5159d93d62107d1d1cffcfeb14",
-      "bytes": 4648
+      "sha256": "ab80b892914e1707f86f72b48300b890e9385edf95dedc4eebd026d8b4d93b2d",
+      "bytes": 5242
     },
     {
       "name": "api/pages/small-solar-system-body.json",
@@ -38640,8 +38640,8 @@
     },
     {
       "name": "api/pages/space-situational-awareness.json",
-      "sha256": "d2d7d62edcf2204f3163246a81b776de5c7ec6567f6a3eddd67a1489fd44a724",
-      "bytes": 841
+      "sha256": "45cd11504eeef8c3af853939be644087bd34ff47110a527f3b7c12a17b7d1819",
+      "bytes": 1280
     },
     {
       "name": "api/pages/space-station.json",
@@ -38800,8 +38800,8 @@
     },
     {
       "name": "api/pages/spacecraft-payload.json",
-      "sha256": "763a7e8ba7e66112d324ce5059f6d456ffa992eb28d0bf8ff02dc974f1c19b0f",
-      "bytes": 930
+      "sha256": "ab1793555deaaea884ececb6e341cd4608c1f5c075187d237034925cb6baf1a9",
+      "bytes": 1429
     },
     {
       "name": "api/pages/spacecraft-phase-change-thermal-storage.json",
@@ -38825,8 +38825,8 @@
     },
     {
       "name": "api/pages/spacecraft-propulsion.json",
-      "sha256": "572a45662aa431ec9dc9409355642d96cbffce96be19b1c8527de32ea57e2a28",
-      "bytes": 712
+      "sha256": "9af1db4e8b483cc730487b2393d3cdc2d1aa1adf34e29daca91d7e3269a40a7d",
+      "bytes": 1331
     },
     {
       "name": "api/pages/spacecraft-proximity-operations.json",
@@ -39665,8 +39665,8 @@
     },
     {
       "name": "api/pages/star-tracker.json",
-      "sha256": "fba720ce6dc02e6762f95b9bfe6163ef792a3c583a359b0e3c36e171c43114c6",
-      "bytes": 8615
+      "sha256": "eded596c4c5121644f80eb75068dc42d69b0ee8bfc18dba2f78aeea7729059d5",
+      "bytes": 8991
     },
     {
       "name": "api/pages/star.json",
@@ -46835,8 +46835,8 @@
     },
     {
       "name": "data/ontology.json",
-      "sha256": "896e5ea3010e818e48bdb65146ef9148d6e7ef97ca7b0f7359fee0b6711617ea",
-      "bytes": 49867561
+      "sha256": "42a1b40f24357c3e60f7e60783506dfe55137f3e9ffa5cea94edca19e21cd870",
+      "bytes": 49869961
     },
     {
       "name": "data/graph/overview.json",
@@ -57095,8 +57095,8 @@
     },
     {
       "name": "api/markdown/CubeSat.md",
-      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
-      "bytes": 1
+      "sha256": "92c76050de8c209aebf25af732069e3c4665c3271132b55cf9040741c0a535cc",
+      "bytes": 4190
     },
     {
       "name": "api/markdown/Cultural Heritage Preservation.md",
@@ -61740,8 +61740,8 @@
     },
     {
       "name": "api/markdown/Electric Propulsion.md",
-      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
-      "bytes": 1
+      "sha256": "7c3bb5e4144d024f9663357583e92142eca0c3544908ebd7a0c36fdf9dd03338",
+      "bytes": 4631
     },
     {
       "name": "api/markdown/Electric Vehicle.md",
@@ -66035,8 +66035,8 @@
     },
     {
       "name": "api/markdown/Ground Station.md",
-      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
-      "bytes": 1
+      "sha256": "af1bb317a86c3f9639fa7f0d60894342bc5c251ecc1fd71a604284ef6106bbc3",
+      "bytes": 4806
     },
     {
       "name": "api/markdown/Ground Support Equipment.md",
@@ -71150,13 +71150,13 @@
     },
     {
       "name": "api/markdown/Launch Vehicle Stage.md",
-      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
-      "bytes": 1
+      "sha256": "1b295ebfd9a546efedc12c39accf128139f669eb29059dd31a267d988e15f1ff",
+      "bytes": 3755
     },
     {
       "name": "api/markdown/Launch Vehicle.md",
-      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
-      "bytes": 1
+      "sha256": "b584fbf8fcd783ba67b60de65775185783c57b39c4d5d5a35e75653b8b50948e",
+      "bytes": 4728
     },
     {
       "name": "api/markdown/Law Commission.md",
@@ -77455,8 +77455,8 @@
     },
     {
       "name": "api/markdown/Orbital Debris.md",
-      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
-      "bytes": 1
+      "sha256": "e53f3dede64a756325f2f4f07f046f3c12957017b57c917fc3b0005ed6b50d17",
+      "bytes": 4862
     },
     {
       "name": "api/markdown/Orbital Dynamics.md",
@@ -84255,8 +84255,8 @@
     },
     {
       "name": "api/markdown/Satellite Constellation.md",
-      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
-      "bytes": 1
+      "sha256": "74a10fbb2b40bcaa5cad183d20f14e3bb3ffed9493400ba175c3e046e5a81a66",
+      "bytes": 4526
     },
     {
       "name": "api/markdown/Satellite Doppler Shift.md",
@@ -86065,8 +86065,8 @@
     },
     {
       "name": "api/markdown/Small Satellite.md",
-      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
-      "bytes": 1
+      "sha256": "afa749a042ba76e43f81c2e27047680b4ddb72b1d69bc2a2ccffc7d46bd796e9",
+      "bytes": 4477
     },
     {
       "name": "api/markdown/Small Solar System Body.md",
@@ -86705,8 +86705,8 @@
     },
     {
       "name": "api/markdown/Space Situational Awareness.md",
-      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
-      "bytes": 1
+      "sha256": "f1f22b6fb451dfda33554a9672d25628f5cafa960d64a04656d12ad9834d4e92",
+      "bytes": 4774
     },
     {
       "name": "api/markdown/Space Station.md",
@@ -86865,8 +86865,8 @@
     },
     {
       "name": "api/markdown/Spacecraft Payload.md",
-      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
-      "bytes": 1
+      "sha256": "c3bada4d66b0a6398b1bf74e438a927612ce2348eb6a0d9a53b1fd906dcb4a36",
+      "bytes": 4558
     },
     {
       "name": "api/markdown/Spacecraft Phase Change Thermal Storage.md",
@@ -86890,8 +86890,8 @@
     },
     {
       "name": "api/markdown/Spacecraft Propulsion.md",
-      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
-      "bytes": 1
+      "sha256": "0437fc7bfead6ad28c7e8b4e4bb11a9b4c56241dc55340b87bc9ba8129204450",
+      "bytes": 4703
     },
     {
       "name": "api/markdown/Spacecraft Proximity Operations.md",
@@ -87740,8 +87740,8 @@
     },
     {
       "name": "api/markdown/Star Tracker.md",
-      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
-      "bytes": 1
+      "sha256": "8c899dc87c16bda987e148c95a1529192e7f824db00baa39bf5ea15c8c6f0841",
+      "bytes": 4200
     },
     {
       "name": "api/markdown/Star.md",
@@ -95230,7 +95230,7 @@
     },
     {
       "name": "okf/index.md",
-      "sha256": "f19f0d1fa3b484a761e2145cd807460a26d02bb4e3dc25a5e29ca9a0b552e88d",
+      "sha256": "f5e4350fe67d22635228f92a8eebc904661f950c52a5d4957b43be3eb3722f3f",
       "bytes": 876636
     },
     {
@@ -105235,8 +105235,8 @@
     },
     {
       "name": "okf/concepts/cubesat.md",
-      "sha256": "65186182a7a20d331a10c1ab632009c2c48c5f06c8b65094b9341aa1c6e4a18e",
-      "bytes": 253
+      "sha256": "887103957e6dcd055086edfaa3dd94597c676da1f7bc70ed1e013cfa94ba9655",
+      "bytes": 1140
     },
     {
       "name": "okf/concepts/cuda.md",
@@ -109270,8 +109270,8 @@
     },
     {
       "name": "okf/concepts/electric-propulsion.md",
-      "sha256": "56dd423f2ca454b869e658e01a29780db64001977a6b9dd5d8cf2173612b8e55",
-      "bytes": 291
+      "sha256": "85b4ab27df89e3a7942ea35d3e072348ef0b61ec42b8f976c8169d6c96222bff",
+      "bytes": 1001
     },
     {
       "name": "okf/concepts/electric-vehicle.md",
@@ -114000,8 +114000,8 @@
     },
     {
       "name": "okf/concepts/ground-station.md",
-      "sha256": "c3cda4f88988dd48f7f3560652b3c780955e6acd012553cafc40424dcb9e3d4d",
-      "bytes": 234
+      "sha256": "9b5f1766d7ba38728e80a5f80ed2eed53d3e39f44cd830e5ed59b78bde8b57d7",
+      "bytes": 992
     },
     {
       "name": "okf/concepts/ground-support-equipment.md",
@@ -118770,13 +118770,13 @@
     },
     {
       "name": "okf/concepts/launch-vehicle.md",
-      "sha256": "4401c819658dd86d7f6a475ce4c455c35edf83356a1dc646b06e7fff5fb5ad86",
-      "bytes": 234
+      "sha256": "065b0e36ebe17f62d23f7e47ecd09fb7e08644a6dc66bb7753609142456a43a5",
+      "bytes": 1146
     },
     {
       "name": "okf/concepts/launch-vehicle-stage.md",
-      "sha256": "b0fc1c3c4a41c3f3242eeb9b5d3fbe0f1b47b2db0793e85810207e926a064698",
-      "bytes": 252
+      "sha256": "a2054421a24526dae50d5bc964eaebe4878afd1fd4e499d52794dd176e7406b9",
+      "bytes": 1070
     },
     {
       "name": "okf/concepts/law-commission.md",
@@ -125005,8 +125005,8 @@
     },
     {
       "name": "okf/concepts/orbital-debris.md",
-      "sha256": "7cd6e803e31b1c670c8a93ebc33399eccac4114c1d259faffbc6c369a5bcb2b5",
-      "bytes": 225
+      "sha256": "ab14d6778a901d7e317c1fc9931b343b20ba453ae8caa4ff1cb39366f7e41121",
+      "bytes": 1056
     },
     {
       "name": "okf/concepts/orbital-dynamics.md",
@@ -131900,8 +131900,8 @@
     },
     {
       "name": "okf/concepts/satellite-constellation.md",
-      "sha256": "63814a6188a1ef4c7d5f075c53d501313570deee295f4c0e365b0416f5ecf0a4",
-      "bytes": 261
+      "sha256": "f3bfd252078b9535a0b6e52feb68ad59756c9532ba29228d8eed11b638ea4613",
+      "bytes": 1073
     },
     {
       "name": "okf/concepts/satellite-doppler-shift.md",
@@ -133785,8 +133785,8 @@
     },
     {
       "name": "okf/concepts/small-satellite.md",
-      "sha256": "34ab34122907b8ad51ca250b8a9b1f0cc5c075326515d2d04c6053aa8d89828b",
-      "bytes": 272
+      "sha256": "ad003044623a93a144bd416ee83fb38076be07a3732a95f51eeab91bfa5fd002",
+      "bytes": 1153
     },
     {
       "name": "okf/concepts/small-solar-system-body.md",
@@ -134445,8 +134445,8 @@
     },
     {
       "name": "okf/concepts/space-situational-awareness.md",
-      "sha256": "3b4d5fbb1898ff500b2699070ebf19de3c10298ed608eb80a20c735ae2f961dd",
-      "bytes": 264
+      "sha256": "76eb927631129b4f90939dfc3d81e8f6c42cfaf0b01e3c07440cd54ae33172f2",
+      "bytes": 1119
     },
     {
       "name": "okf/concepts/space-station.md",
@@ -134610,8 +134610,8 @@
     },
     {
       "name": "okf/concepts/spacecraft-payload.md",
-      "sha256": "6ea300c6ca5a3937b3251a7c530e4898a705d167048982bd05011519b1a87284",
-      "bytes": 284
+      "sha256": "5c384d764aef6875d151adf380d986e938395532a9857123f76a55d750286a4c",
+      "bytes": 1136
     },
     {
       "name": "okf/concepts/spacecraft-phase-change-thermal-storage.md",
@@ -134635,8 +134635,8 @@
     },
     {
       "name": "okf/concepts/spacecraft-propulsion.md",
-      "sha256": "6d4d89fad079968f8b6e9f405a94971865747f8ba1cbd0c9980520be5ab3fe1e",
-      "bytes": 200
+      "sha256": "290f95a49dcf169c48c676eb3a98fe4443158f2df867f050738057efddd88419",
+      "bytes": 1069
     },
     {
       "name": "okf/concepts/spacecraft-proximity-operations.md",
@@ -135510,8 +135510,8 @@
     },
     {
       "name": "okf/concepts/star-tracker.md",
-      "sha256": "26375a3fdc7b665305b9e4bcd1af8c743cc48e0a591c7d8199c6142dc4b6fa16",
-      "bytes": 276
+      "sha256": "91164e995d8ea7576370cc064206d221716241c08ec62e05f2fc8dcc81e726d2",
+      "bytes": 918
     },
     {
       "name": "okf/concepts/stark.md",

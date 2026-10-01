@@ -48952,7 +48952,7 @@
     "title": "CubeSat",
     "domain": "space-science-and-systems",
     "domain_name": "Space Science And Systems",
-    "definition": "",
+    "definition": "A CubeSat is a [[Small Satellite|small-satellite]] form factor built around standardised units, written as **U**. Under the CubeSat Design Specification Revision 14.1, a 1U spacecraft is based on a ten-centimetre cube and may have a mass up to two kilograms; larger configurations combine units into forms such as 2U, 3U, 6U or 12U.[^1] The standardised spacecraft-to-deployer interface is the defining feature. CubeSat is therefore not a synonym for every nanosatellite.",
     "entityType": "Class",
     "qualityScore": 0.0,
     "maturity": "draft",
@@ -48963,7 +48963,10 @@
     "is_subclass_of": [
       "Small Satellite"
     ],
-    "wikilinks": []
+    "wikilinks": [
+      "small-satellite",
+      "payload"
+    ]
   },
   {
     "id": "cultural-heritage-preservation",
@@ -71022,7 +71025,7 @@
     "title": "Electric Propulsion",
     "domain": "space-science-and-systems",
     "domain_name": "Space Science And Systems",
-    "definition": "",
+    "definition": "Electric propulsion uses electrical power to accelerate a propellant. It produces much higher exhaust velocity than most chemical systems, so a spacecraft can obtain a given total impulse with less propellant. The trade is low thrust: manoeuvres that take minutes with chemical propulsion may require days or months with an electric thruster.[^1]",
     "entityType": "Class",
     "qualityScore": 0.0,
     "maturity": "draft",
@@ -89242,7 +89245,7 @@
     "title": "Ground Station",
     "domain": "space-science-and-systems",
     "domain_name": "Space Science And Systems",
-    "definition": "",
+    "definition": "A ground station is the terrestrial radio or optical facility that communicates with a spacecraft. It provides telemetry, tracking and command, often abbreviated **TT&C**, and may also receive payload data. The station is one part of the wider ground segment, which includes mission-control systems, networks, storage, processing, user terminals and operations staff.[^1]",
     "entityType": "Class",
     "qualityScore": 0.0,
     "maturity": "draft",
@@ -110026,7 +110029,7 @@
     "title": "Launch Vehicle Stage",
     "domain": "space-science-and-systems",
     "domain_name": "Space Science And Systems",
-    "definition": "",
+    "definition": "A launch vehicle stage is a complete launcher element that produces thrust during a defined phase of a launch mission.[^1] It is more than an engine or propellant tank: a stage normally combines propulsion, tanks or motor casing, primary structure, interfaces, separation equipment and control hardware. Depending on the vehicle, it may also carry avionics, batteries, telemetry and flight computers.",
     "entityType": "Class",
     "qualityScore": 0.0,
     "maturity": "draft",
@@ -110035,14 +110038,16 @@
       "Launch Vehicle Stage"
     ],
     "is_subclass_of": [],
-    "wikilinks": []
+    "wikilinks": [
+      "Orbital Debris"
+    ]
   },
   {
     "id": "launch-vehicle",
     "title": "Launch Vehicle",
     "domain": "space-science-and-systems",
     "domain_name": "Space Science And Systems",
-    "definition": "",
+    "definition": "A launch vehicle is the integrated flight system that carries a payload from the ground, sea or air to a specified trajectory or orbit. It must supply the required velocity while supporting and protecting the payload through acceleration, vibration, acoustic loading, aerodynamic pressure and heating. In UK law, *launch vehicle* has a broader regulatory meaning that covers the vehicle and its component parts but excludes the payload; the exact legal scope depends on the licensed activity.[^1]",
     "entityType": "Class",
     "qualityScore": 0.0,
     "maturity": "draft",
@@ -110051,7 +110056,10 @@
       "Launch Vehicle"
     ],
     "is_subclass_of": [],
-    "wikilinks": []
+    "wikilinks": [
+      "stages",
+      "spacecraft propulsion systems"
+    ]
   },
   {
     "id": "law-commission",
@@ -136803,7 +136811,7 @@
     "title": "Orbital Debris",
     "domain": "space-science-and-systems",
     "domain_name": "Space Science And Systems",
-    "definition": "",
+    "definition": "Orbital debris comprises artificial objects in Earth orbit or re-entry that no longer serve a useful function, including defunct spacecraft, abandoned rocket stages, mission-related objects and fragments.[^1] Natural meteoroids are a separate population. Debris ranges from intact tonnes-scale hardware to particles too small to track individually, yet capable of damaging a spacecraft at orbital relative velocity.",
     "entityType": "Class",
     "qualityScore": 0.0,
     "maturity": "draft",
@@ -165474,7 +165482,7 @@
     "title": "Satellite Constellation",
     "domain": "space-science-and-systems",
     "domain_name": "Space Science And Systems",
-    "definition": "",
+    "definition": "A satellite constellation is a fleet of spacecraft designed and operated as one service or observing system. The satellites occupy coordinated orbits so their coverage, revisit, geometry or capacity is more useful than that of any one member. A constellation also includes operational infrastructure: ground stations, control centres, user terminals, network routing and fleet-management software.",
     "entityType": "Class",
     "qualityScore": 0.0,
     "maturity": "draft",
@@ -172669,7 +172677,7 @@
     "title": "Small Satellite",
     "domain": "space-science-and-systems",
     "domain_name": "Space Science And Systems",
-    "definition": "",
+    "definition": "A small satellite is a spacecraft placed in a lower mass class than conventional large missions. The term is useful but not universal: agencies and market studies use different upper limits. NASA's small-spacecraft technology survey adopts 180 kilograms as a working boundary and subdivides the range into mini-, micro-, nano-, pico- and femtosatellites.[^1] That boundary belongs to NASA's scheme and should not be presented as an international legal definition.",
     "entityType": "Class",
     "qualityScore": 0.0,
     "maturity": "draft",
@@ -172680,7 +172688,9 @@
     "is_subclass_of": [
       "Spacecraft"
     ],
-    "wikilinks": []
+    "wikilinks": [
+      "CubeSats"
+    ]
   },
   {
     "id": "small-solar-system-body",
@@ -175453,7 +175463,7 @@
     "title": "Space Situational Awareness",
     "domain": "space-science-and-systems",
     "domain_name": "Space Science And Systems",
-    "definition": "",
+    "definition": "Space situational awareness is the ability to identify, understand and assess conditions and hazards affecting space activity. In institutional use it can cover space surveillance and tracking, near-Earth objects and space weather.[^1] The related term **space domain awareness** often adds intent, behaviour and national-security interpretation. Authors should state which scope they mean rather than treating the terms as exact synonyms.",
     "entityType": "Class",
     "qualityScore": 0.0,
     "maturity": "draft",
@@ -175981,7 +175991,7 @@
     "title": "Spacecraft Payload",
     "domain": "space-science-and-systems",
     "domain_name": "Space Science And Systems",
-    "definition": "",
+    "definition": "A spacecraft payload is the equipment that performs the mission's intended scientific, commercial, operational or technology-demonstration function. The spacecraft bus supports it with structure, power, thermal control, pointing, communications and data handling.[^1] The boundary depends on mission purpose: a star tracker is usually a bus attitude sensor, but can be flown as an experimental payload when testing the tracker itself.",
     "entityType": "Class",
     "qualityScore": 0.0,
     "maturity": "draft",
@@ -176061,7 +176071,7 @@
     "title": "Spacecraft Propulsion",
     "domain": "space-science-and-systems",
     "domain_name": "Space Science And Systems",
-    "definition": "",
+    "definition": "Spacecraft propulsion produces controlled forces or impulses after launch. It changes a spacecraft's orbit or trajectory, maintains its assigned orbit, supports attitude control, avoids collisions, performs rendezvous and provides an end-of-life disposal manoeuvre. The propulsion architecture is chosen with the mission because thrust, total impulse, manoeuvre duration, power, mass, volume, safety and lifetime cannot be optimised independently.[^1]",
     "entityType": "Class",
     "qualityScore": 0.0,
     "maturity": "draft",
@@ -176070,7 +176080,9 @@
       "Spacecraft Propulsion"
     ],
     "is_subclass_of": [],
-    "wikilinks": []
+    "wikilinks": [
+      "Electric Propulsion"
+    ]
   },
   {
     "id": "spacecraft-proximity-operations",
@@ -179454,7 +179466,7 @@
     "title": "Star Tracker",
     "domain": "space-science-and-systems",
     "domain_name": "Space Science And Systems",
-    "definition": "",
+    "definition": "A star tracker is an optical [[Sensor|sensor]] that estimates a spacecraft's absolute three-axis orientation by imaging stars and matching their pattern to an on-board catalogue.[^1] It measures attitude relative to the celestial reference field. It does not, by itself, provide the spacecraft's orbital position.",
     "entityType": "Class",
     "qualityScore": 0.0,
     "maturity": "draft",
@@ -179465,7 +179477,9 @@
     "is_subclass_of": [
       "Sensor"
     ],
-    "wikilinks": []
+    "wikilinks": [
+      "sensor"
+    ]
   },
   {
     "id": "star",

@@ -476,6 +476,10 @@
       "label": "Radar"
     },
     {
+      "slug": "star-tracker",
+      "label": "Star Tracker"
+    },
+    {
       "slug": "x402-and-l402-payment-protocols",
       "label": "x402 and l402 payment protocols"
     }

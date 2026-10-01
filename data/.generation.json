@@ -1,37 +1,37 @@
 {
-  "id": "visionGraph@ae3f58e40fcdf99737fd24e0b9b353cfdd76c8f6",
-  "commit": "ae3f58e40fcdf99737fd24e0b9b353cfdd76c8f6",
+  "id": "visionGraph@41e5684d73416bc22ea7072e37ffc0edf036b748",
+  "commit": "41e5684d73416bc22ea7072e37ffc0edf036b748",
   "dirty": false,
-  "content_digest": "88eda1a6da1319217a106a20fb24bd3d67186917dfb2e98b202c10917afd3b40",
-  "generated_at": "2026-10-01T19:36:48.872850+00:00",
+  "content_digest": "7db44225b920057daf8d352a9977262efcdacef49c6bca12ecdda88cb1c79944",
+  "generated_at": "2026-10-01T20:37:57.310716+00:00",
   "class_count": 9354,
   "page_count": 9354,
   "vocabulary_version": 1,
   "artifacts": [
     {
       "name": "ontology.ttl",
-      "sha256": "eee13d6eb61003d50dff31d3f2263a018bb4304b718832b361ec889741d42570",
-      "bytes": 16869682
+      "sha256": "5310b955098f377060771c356b856b3b152ab93ba5addfd5b06fa3f818a065ae",
+      "bytes": 16874978
     },
     {
       "name": "ontology-inferred.ttl",
-      "sha256": "26b6d0c63836c9ede07a64cbf8fff28ab1a683a06b74a31fc838a65e948bfc8b",
+      "sha256": "589c3eb513cbfe3ca8f6fb9205319168264f63fb92c07e91b6b4f61e45d565d2",
       "bytes": 3893300
     },
     {
       "name": "scaffold-index.json",
-      "sha256": "121a378eaf7aa0a818c3c49b47d988d9134524e381a8184f847c744a6056bc21",
-      "bytes": 10104840
+      "sha256": "93ed31f2aefd6ec80a4633ae6169dc6b4cbe87f1381c41d9be6669d2ea23b0a1",
+      "bytes": 10109594
     },
     {
       "name": "prose-index.json",
-      "sha256": "5dd7244885e3333a071d7174d497f422be61fc831d37d90f5ccd9f28eddb1ad2",
-      "bytes": 5570729
+      "sha256": "22ff05751ba9535e7b2a4965ee781f1087f88991cd428240bf16c81185ee1bbd",
+      "bytes": 5574147
     },
     {
       "name": "ontology.json",
-      "sha256": "896e5ea3010e818e48bdb65146ef9148d6e7ef97ca7b0f7359fee0b6711617ea",
-      "bytes": 49867561
+      "sha256": "42a1b40f24357c3e60f7e60783506dfe55137f3e9ffa5cea94edca19e21cd870",
+      "bytes": 49869961
     },
     {
       "name": "graph/overview.json",

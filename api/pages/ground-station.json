@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:ground-station",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "A ground station is the terrestrial radio or optical facility that communicates with a spacecraft. It provides telemetry, tracking and command, often abbreviated **TT&C**, and may also receive payload data. The station is one part of the wider ground segment, which includes mission-control systems, networks, storage, processing, user terminals and operations staff.[^1]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

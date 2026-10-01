@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:small-satellite",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "A small satellite is a spacecraft placed in a lower mass class than conventional large missions. The term is useful but not universal: agencies and market studies use different upper limits. NASA's small-spacecraft technology survey adopts 180 kilograms as a working boundary and subdivides the range into mini-, micro-, nano-, pico- and femtosatellites.[^1] That boundary belongs to NASA's scheme and should not be presented as an international legal definition.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:spacecraft",
@@ -193,6 +193,16 @@
       }
     ]
   },
-  "wikilinks": [],
-  "backlinks": []
+  "wikilinks": [
+    {
+      "slug": "cubesat",
+      "label": "CubeSats"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "cubesat",
+      "label": "CubeSat"
+    }
+  ]
 }

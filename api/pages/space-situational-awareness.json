@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:space-situational-awareness",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "Space situational awareness is the ability to identify, understand and assess conditions and hazards affecting space activity. In institutional use it can cover space surveillance and tracking, near-Earth objects and space weather.[^1] The related term **space domain awareness** often adds intent, behaviour and national-security interpretation. Authors should state which scope they mean rather than treating the terms as exact synonyms.",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

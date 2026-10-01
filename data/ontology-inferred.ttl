@@ -83548,5 +83548,5 @@ ngm:zoom-meetings rdfs:subClassOf ngm:distributed-collaboration ;
     rdfs:subClassOf ngm:thing .
 <https://narrativegoldmine.com/ontology/inferred> a owl:Ontology ;
     rdfs:label "NarrativeGoldmine Inferred Axioms"@en ;
-    vc:generatedAt "2026-10-01T19:36:48.872850+00:00"^^xsd:dateTime ;
+    vc:generatedAt "2026-10-01T20:37:57.310716+00:00"^^xsd:dateTime ;
     vc:inferenceMethod "whelk-el++-closure" .

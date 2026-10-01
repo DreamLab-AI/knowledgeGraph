@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:orbital-debris",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "Orbital debris comprises artificial objects in Earth orbit or re-entry that no longer serve a useful function, including defunct spacecraft, abandoned rocket stages, mission-related objects and fragments.[^1] Natural meteoroids are a separate population. Debris ranges from intact tonnes-scale hardware to particles too small to track individually, yet capable of damaging a spacecraft at orbital relative velocity.",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,
@@ -32,5 +32,10 @@
   "inferredSuperClasses": [],
   "inheritedRelations": {},
   "wikilinks": [],
-  "backlinks": []
+  "backlinks": [
+    {
+      "slug": "launch-vehicle-stage",
+      "label": "Launch Vehicle Stage"
+    }
+  ]
 }

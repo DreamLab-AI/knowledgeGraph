@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:satellite-constellation",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "A satellite constellation is a fleet of spacecraft designed and operated as one service or observing system. The satellites occupy coordinated orbits so their coverage, revisit, geometry or capacity is more useful than that of any one member. A constellation also includes operational infrastructure: ground stations, control centres, user terminals, network routing and fleet-management software.",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,
