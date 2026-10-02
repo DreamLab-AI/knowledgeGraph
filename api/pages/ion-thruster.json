@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:ion-thruster",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "An ion thruster, in the narrow engineering sense used here, is a gridded electrostatic thruster. It creates a plasma inside a discharge chamber, extracts positive ions through closely spaced grids and accelerates them with a high electric potential. A neutraliser injects electrons into the exhaust so that the outgoing beam and spacecraft remain close to charge balance.[^1][^2]",
   "subClassOf": [
     {
       "id": "urn:ngm:class:thruster",

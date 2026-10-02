@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:global-navigation-satellite-system",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "A global navigation satellite system, or GNSS, provides positioning, navigation and timing from constellations of satellites. The complete system includes a space segment, a control segment and user receivers; an individual navigation satellite cannot provide a full position solution by itself.[^1]",
   "subClassOf": [
     {
       "id": "urn:ngm:class:navigation-system",

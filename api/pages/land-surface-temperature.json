@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:land-surface-temperature",
   "domain": "earth-observation-and-geospatial-sensing",
-  "definition": "",
+  "definition": "Land surface temperature (LST) is the radiometric skin temperature of the surface components within a sensor's field of view. A forest pixel mainly represents the canopy; a bare-soil pixel represents the ground; sparse vegetation can mix soil and leaf temperatures. LST is distinct from the air temperature measured above the surface, although surface and atmosphere exchange heat and influence one another.[^1][^2]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:power-conditioning-and-distribution",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "Power conditioning and distribution controls electrical energy between the source, battery, main bus and loads. Conditioning regulates the array and battery interfaces and creates usable rails. Distribution switches and protects load branches, measures their state and prevents a fault on one branch from collapsing the shared source or bus.[^1]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

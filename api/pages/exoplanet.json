@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:exoplanet",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "An exoplanet is a planet outside the Solar System. It may orbit a star, orbit more than one star, or travel through space without a host star. The term describes the object, not the method used to detect it.[^1]",
   "subClassOf": [
     {
       "id": "urn:ngm:class:planet",

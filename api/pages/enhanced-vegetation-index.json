@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:enhanced-vegetation-index",
   "domain": "earth-observation-and-geospatial-sensing",
-  "definition": "",
+  "definition": "The Enhanced Vegetation Index (EVI) is a spectral vegetation index designed to reduce canopy-background and aerosol effects and to retain more sensitivity than NDVI in dense vegetation. It remains a calculation from corrected reflectances. \u201cEnhanced\u201d describes those algorithm goals; it does not make EVI a direct measurement of biomass, leaf area, crop health or drought.[^1][^2]",
   "subClassOf": [
     {
       "id": "urn:ngm:class:vegetation-index",

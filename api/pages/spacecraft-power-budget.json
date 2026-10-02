@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:spacecraft-power-budget",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "A spacecraft power budget is the controlled account of electrical demand, generation, storage, conditioning and distribution across mission modes and life. It records where each value applies, when loads operate together and how measured losses, uncertainty and margin affect the balance. A single total in watts cannot show whether a spacecraft survives a peak, an eclipse or repeated charge cycles.[^1]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

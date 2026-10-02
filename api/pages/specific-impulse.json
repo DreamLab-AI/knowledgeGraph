@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:specific-impulse",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "Specific impulse measures impulse delivered per unit of expelled propellant mass. Two conventions are in active use, so every value needs a unit and definition.",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

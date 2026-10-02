@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:spacecraft-solar-array",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "A spacecraft solar array is the complete assembly that converts sunlight into electrical power: photovoltaic cells and their interconnects are arranged into strings on one or more panels, with cabling, mounting hardware and any hinges, hold-down devices, release mechanisms or pointing drives. The array feeds a [[Spacecraft Electrical Power System]], which controls its operating point, stores energy and distributes power. Cell efficiency, panel power density and power delivered to a spacecraft bus describe different boundaries and should not be quoted as though they were the same.[^1][^2]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,
@@ -31,6 +31,11 @@
   },
   "inferredSuperClasses": [],
   "inheritedRelations": {},
-  "wikilinks": [],
+  "wikilinks": [
+    {
+      "slug": "spacecraft-electrical-power-system",
+      "label": "Spacecraft Electrical Power System"
+    }
+  ],
   "backlinks": []
 }

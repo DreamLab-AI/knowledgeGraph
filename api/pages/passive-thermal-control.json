@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:passive-thermal-control",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "Passive thermal control maintains spacecraft temperatures through material properties, geometry and unpowered heat transport. It uses no electrical power for the thermal-control function. Coatings, films, multilayer insulation (MLI), radiator surfaces, conductive straps, selected structural interfaces, sunshades, phase-change material and conventional heat pipes are established passive techniques.[^1]",
   "subClassOf": [
     {
       "id": "urn:ngm:class:spacecraft-thermal-control",

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:coronal-mass-ejection",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "A coronal mass ejection, or CME, is an eruption of magnetised plasma from the Sun's corona into interplanetary space. A CME is physically distinct from a solar flare: a flare is a burst of electromagnetic radiation, whereas an ejection is material and embedded magnetic field moving through the solar wind. The two can occur together.[^1]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

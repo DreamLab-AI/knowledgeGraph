@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:bipropellant-propulsion",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "Bipropellant propulsion stores a fuel and an oxidiser separately and meters both into a thrust chamber. The two-stream architecture permits energetic combustion and often higher specific impulse than a comparable monopropellant system, but it adds tanks, plumbing, valves and control of mixture ratio and arrival timing.[^1]",
   "subClassOf": [
     {
       "id": "urn:ngm:class:chemical-propulsion",
@@ -43,5 +43,10 @@
   ],
   "inheritedRelations": {},
   "wikilinks": [],
-  "backlinks": []
+  "backlinks": [
+    {
+      "slug": "chemical-propulsion",
+      "label": "Chemical Propulsion"
+    }
+  ]
 }

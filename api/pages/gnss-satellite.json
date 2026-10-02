@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:gnss-satellite",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "A GNSS satellite is a spacecraft in the space segment of a satellite-navigation system. It broadcasts precisely timed, coded radio signals and navigation data that allow a receiver to estimate signal travel time and the satellite's position. Several satellites, a ground control segment and a user receiver are required for a complete navigation solution.[^1]",
   "subClassOf": [
     {
       "id": "urn:ngm:class:spacecraft",

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:rocket-equation",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "Ideal velocity capability relates to effective exhaust velocity and mass ratio through the rocket equation:",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

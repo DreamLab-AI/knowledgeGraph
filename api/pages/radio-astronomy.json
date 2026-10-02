@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:radio-astronomy",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "Radio astronomy measures natural radio emission from objects and processes in space. Antennas convert incoming electromagnetic waves into electrical signals; receivers, timing systems and digital correlators then preserve and combine the measurements.[^1]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

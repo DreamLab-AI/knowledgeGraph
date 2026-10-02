@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:geostationary-orbit",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "A geostationary orbit is a circular, prograde orbit in Earth's equatorial plane with an orbital period equal to Earth's sidereal rotation. A spacecraft in this ideal orbit remains above one longitude and appears stationary to an observer fixed on Earth.[^1] These conditions make geostationary orbit a strict subset of geosynchronous orbit.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:geosynchronous-orbit",

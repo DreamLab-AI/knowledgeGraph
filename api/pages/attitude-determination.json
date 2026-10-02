@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:attitude-determination",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "Attitude determination estimates a spacecraft's orientation relative to a stated reference frame. Sensors measure star directions, the Sun vector, a magnetic-field vector or angular rate. An estimator combines those measurements with reference models and rotational dynamics to produce an attitude estimate, often with angular rate, sensor bias and covariance. The estimate is therefore an inference from observations rather than a direct sensor reading.[^1][^3]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

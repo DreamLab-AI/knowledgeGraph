@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:coastal-monitoring",
   "domain": "earth-observation-and-geospatial-sensing",
-  "definition": "",
+  "definition": "Coastal monitoring records change at the boundary between land and sea. It covers several observables: shoreline position, beach and cliff elevation, seabed form, waves and tides, water colour, habitat extent and the condition of coastal structures. No single instrument measures \u201cthe coast\u201d, and each dataset has its own spatial support, survey timing and uncertainty.",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

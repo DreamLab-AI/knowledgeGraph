@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:geodetic-reference-frame",
   "domain": "earth-observation-and-geospatial-sensing",
-  "definition": "",
+  "definition": "A geodetic reference frame is the practical basis for assigning coordinates to positions on or near Earth. It is realised through coordinates for a network of stations or other reference points, with velocities or deformation models where the frame is dynamic. Modern ISO and OGC usage treats *geodetic reference frame* as the preferred term for a geodetic datum.[^1]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

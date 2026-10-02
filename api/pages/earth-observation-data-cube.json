@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:earth-observation-data-cube",
   "domain": "earth-observation-and-geospatial-sensing",
-  "definition": "",
+  "definition": "An Earth observation data cube presents variables across spatial, temporal or thematic dimensions and supplies ways to discover, select and process them. The cube is a logical model and service boundary. It does not require a literal three-dimensional array or prescribe whether the underlying bytes live in files, object storage or a database.",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

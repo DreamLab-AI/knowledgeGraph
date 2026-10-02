@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:astronomical-spectroscopy",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "Astronomical spectroscopy separates light from an astronomical source by wavelength and measures the resulting spectrum. Emission and absorption features, continuum shape and changes in wavelength allow astronomers to infer composition, temperature, density, motion and magnetic conditions.[^1]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

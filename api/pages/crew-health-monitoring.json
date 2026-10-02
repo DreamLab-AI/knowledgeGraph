@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:crew-health-monitoring",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "Crew health monitoring is the structured collection and interpretation of physiological, clinical, behavioural and environmental information used to protect people before, during and after spaceflight. It can combine scheduled medical examinations, wearable sensors, imaging, biological samples, exercise and cognitive measures, radiation dosimetry, and cabin air or water data.[^1]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

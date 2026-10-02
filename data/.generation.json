@@ -1,41 +1,41 @@
 {
-  "id": "visionGraph@41e5684d73416bc22ea7072e37ffc0edf036b748",
-  "commit": "41e5684d73416bc22ea7072e37ffc0edf036b748",
+  "id": "visionGraph@2f5684dc9e823fab77f90eaa3759610024541b46",
+  "commit": "2f5684dc9e823fab77f90eaa3759610024541b46",
   "dirty": false,
-  "content_digest": "7db44225b920057daf8d352a9977262efcdacef49c6bca12ecdda88cb1c79944",
-  "generated_at": "2026-10-01T20:37:57.310716+00:00",
+  "content_digest": "6e99898caede69446580c96f8b7a426e3d94045bc843edd45f81cbea0fb79d95",
+  "generated_at": "2026-10-02T09:10:38.769212+00:00",
   "class_count": 9354,
   "page_count": 9354,
   "vocabulary_version": 1,
   "artifacts": [
     {
       "name": "ontology.ttl",
-      "sha256": "5310b955098f377060771c356b856b3b152ab93ba5addfd5b06fa3f818a065ae",
-      "bytes": 16874978
+      "sha256": "00b353deb34c9b98c662cb00bcc76aae97b67df66fac2493e7460ae0f376f117",
+      "bytes": 16914347
     },
     {
       "name": "ontology-inferred.ttl",
-      "sha256": "589c3eb513cbfe3ca8f6fb9205319168264f63fb92c07e91b6b4f61e45d565d2",
+      "sha256": "cdfc5473d585b57ebda75e79c8fff6ee69fd055a310156f621e09a53feb1a359",
       "bytes": 3893300
     },
     {
       "name": "scaffold-index.json",
-      "sha256": "93ed31f2aefd6ec80a4633ae6169dc6b4cbe87f1381c41d9be6669d2ea23b0a1",
-      "bytes": 10109594
+      "sha256": "2f81852240542bd940bdbbb2b0e38315f785e422ff756f77a6123432addfe687",
+      "bytes": 10144567
     },
     {
       "name": "prose-index.json",
-      "sha256": "22ff05751ba9535e7b2a4965ee781f1087f88991cd428240bf16c81185ee1bbd",
-      "bytes": 5574147
+      "sha256": "5e560a09fac7dbcae110f1b3fbe649e8a2113d7229e478fdae00cc2d94b52b50",
+      "bytes": 5594262
     },
     {
       "name": "ontology.json",
-      "sha256": "42a1b40f24357c3e60f7e60783506dfe55137f3e9ffa5cea94edca19e21cd870",
-      "bytes": 49869961
+      "sha256": "9f911954b0319e89684351264ab41b3aecb9f31014ea5f5aeadccffa258ec8f5",
+      "bytes": 49889028
     },
     {
       "name": "graph/overview.json",
-      "sha256": "4246c05fb3352cba1ac36439ad80b8daca403085c8554ba4ca82cf06e2465541",
+      "sha256": "44a37b48465607df6a07bd8fdfd4c9ec7bdf34199ab41a0bfd501e285869c91f",
       "bytes": 26667
     },
     {
@@ -85,7 +85,7 @@
     },
     {
       "name": "graph/stats.json",
-      "sha256": "0faa36d599df5c84a02717a894911b5998848343a3b3c30afcce7a04f0b9430d",
+      "sha256": "a3e5b915a5bfea3c7060438c5a077501d68689bbc3804cae36928b9dae0ae93a",
       "bytes": 3014
     },
     {

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:cold-gas-propulsion",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "Cold-gas propulsion produces thrust by opening a valve and expanding stored propellant through a nozzle. It uses no combustion or catalytic decomposition: the available pressure and enthalpy of the stored fluid provide the exhaust energy.[^1] Cold gas is therefore a non-reacting, pneumatic form of [[Spacecraft Propulsion]] in a mechanism-based ontology.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:spacecraft-propulsion",
@@ -36,6 +36,11 @@
   },
   "inferredSuperClasses": [],
   "inheritedRelations": {},
-  "wikilinks": [],
+  "wikilinks": [
+    {
+      "slug": "spacecraft-propulsion",
+      "label": "Spacecraft Propulsion"
+    }
+  ],
   "backlinks": []
 }

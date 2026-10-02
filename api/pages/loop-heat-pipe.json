@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:loop-heat-pipe",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "A loop heat pipe is a sealed two-phase thermal-transport device driven by capillary pressure rather than a mechanical pump. Its primary wick sits in the evaporator. Heat vaporises working fluid at the wick surface; vapour passes through a dedicated line to the condenser; liquid returns through a separate line and compensation chamber. The physical separation of vapour and liquid paths permits routing and transport distances that are difficult for a conventional heat pipe.[^1][^2]",
   "subClassOf": [
     {
       "id": "urn:ngm:class:heat-pipe",

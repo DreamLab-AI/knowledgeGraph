@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:environmental-control-and-life-support-system",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "An environmental control and life support system, or ECLSS, maintains the conditions needed for people and other living payloads inside a spacecraft or habitat. Its scope includes atmospheric composition and pressure, ventilation, carbon-dioxide and trace-contaminant removal, oxygen supply, water recovery and quality, waste handling, environmental monitoring, and interfaces to thermal control and fire detection.[^1]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

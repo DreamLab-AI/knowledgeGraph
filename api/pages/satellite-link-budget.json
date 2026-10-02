@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:satellite-link-budget",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "A satellite link budget is an auditable calculation of the gains, losses and noise between a transmitter and receiver. It tests whether a chosen waveform and data rate meet their required carrier quality with adequate margin for a stated geometry and operating case. Separate budgets are normally needed for uplink and downlink, and for combinations of ground station, spacecraft antenna, data rate and mission phase.[^1]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

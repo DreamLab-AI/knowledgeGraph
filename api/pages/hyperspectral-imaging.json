@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:hyperspectral-imaging",
   "domain": "earth-observation-and-geospatial-sensing",
-  "definition": "",
+  "definition": "Hyperspectral imaging records a spectrum at each spatial sample, producing a data cube with two spatial dimensions and one spectral dimension. Unlike a multispectral instrument with a small set of broad bands, a hyperspectral instrument usually samples many narrow, contiguous bands. There is no universal band-count threshold, so a useful specification gives wavelength range, spectral sampling and spectral response rather than relying on the label alone.",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

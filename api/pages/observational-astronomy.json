@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:observational-astronomy",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "Observational astronomy collects and interprets measured signals from astronomical sources. It spans imaging, spectroscopy, photometry, astrometry, polarimetry, timing and particle or gravitational-wave observations across ground-based and space-based facilities.",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,

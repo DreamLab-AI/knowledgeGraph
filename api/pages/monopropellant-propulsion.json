@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:monopropellant-propulsion",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "Monopropellant propulsion stores and feeds one propellant formulation to the thruster. A catalyst, heat or another initiation mechanism triggers decomposition or reaction, producing hot gas that expands through a nozzle. `Monopropellant` describes the single stored feed: an ionic-liquid blend can contain both fuel and oxidising species within that formulation.[^1][^3]",
   "subClassOf": [
     {
       "id": "urn:ngm:class:chemical-propulsion",
@@ -43,5 +43,10 @@
   ],
   "inheritedRelations": {},
   "wikilinks": [],
-  "backlinks": []
+  "backlinks": [
+    {
+      "slug": "chemical-propulsion",
+      "label": "Chemical Propulsion"
+    }
+  ]
 }

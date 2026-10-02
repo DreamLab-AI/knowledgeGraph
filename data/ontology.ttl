@@ -3723,6 +3723,7 @@ ngm:active-r-d-funding-opportunities-register a owl:Class ;
 ngm:active-record a skos:Concept ;
     rdfs:label "Active Record"@en .
 ngm:active-remote-sensing a owl:Class ;
+    rdfs:comment "Active remote sensing supplies a controlled interrogation signal and measures how that signal returns after interacting with the atmosphere, surface or subsurface. An active instrument therefore includes, or controls, a transmitter as part of its observing arrangement. Radar, radar altimetry and lidar are common examples.[^1] The word *active* describes the source of illumination; it does not merely mean that the electronics consume power."@en ;
     rdfs:label "Active Remote Sensing"@en ;
     rdfs:subClassOf ngm:remote-sensing ;
     vc:hasMaturity ngmi:maturity-draft ;
@@ -3767,6 +3768,7 @@ ngm:active-research-projects-registry a owl:Class ;
     vc:uses ngm:data-catalog ;
     vc:uses ngm:knowledge-graph .
 ngm:active-thermal-control a owl:Class ;
+    rdfs:comment "Active thermal control uses electrical power or commanded actuation to change heat generation, transport or rejection. It is used when passive geometry and material properties cannot maintain the required temperature range, stability or heat-removal rate through every mission mode. Resistance heaters, thermoelectric coolers, cryocoolers and mechanically pumped fluid loops are common active devices.[^1]"@en ;
     rdfs:label "Active Thermal Control"@en ;
     rdfs:subClassOf ngm:spacecraft-thermal-control ;
     vc:hasMaturity ngmi:maturity-draft ;
@@ -15196,6 +15198,7 @@ ngm:air-gap a owl:Class ;
 ngm:air-gapped-computer a skos:Concept ;
     rdfs:label "Air Gapped Computer"@en .
 ngm:air-quality-monitoring a owl:Class ;
+    rdfs:comment "Air quality monitoring measures or estimates pollutants in the atmosphere across time and space. A complete system combines calibrated surface instruments, targeted sampling, emissions information, weather, chemical transport models and satellite observations. Each component describes a different volume of air and carries a different delay, resolution and uncertainty."@en ;
     rdfs:label "Air Quality Monitoring"@en ;
     vc:hasMaturity ngmi:maturity-draft ;
     vc:qualityScore "0.0"^^xsd:float ;
@@ -20096,6 +20099,7 @@ ngm:archived-data-state a owl:Class ;
     vc:slug "archived-data-state" ;
     vc:sourceDomain "earth-observation-and-geospatial-sensing" .
 ngm:arcjet a owl:Class ;
+    rdfs:comment "An arcjet is an electrothermal thruster. An electric arc passes through a flowing propellant, raising its enthalpy. A converging-diverging nozzle then turns part of that thermal energy into directed exhaust momentum.[^1][^2][^5] The exhaust may be partly ionised, but electric or magnetic fields do not provide the main acceleration. That distinguishes an arcjet from Hall-effect and gridded ion thrusters. It also differs from a resistojet, whose propellant receives heat through a resistive element or heat exchanger rather than a free arc."@en ;
     rdfs:label "Arcjet"@en ;
     rdfs:subClassOf ngm:thruster ;
     vc:hasMaturity ngmi:maturity-draft ;
@@ -21800,6 +21804,7 @@ ngm:asteroid a owl:Class ;
 ngm:astm-international a skos:Concept ;
     rdfs:label "Astm International"@en .
 ngm:astrobiology a owl:Class ;
+    rdfs:comment "Astrobiology studies the origin, evolution and distribution of life in the Universe. It connects biology and chemistry with geology, astronomy and planetary science: how life began on Earth, which conditions allow it to persist, how living systems alter their surroundings, and how those effects might be recognised elsewhere.[^1] No life beyond Earth has been confirmed."@en ;
     rdfs:label "Astrobiology"@en ;
     vc:hasMaturity ngmi:maturity-draft ;
     vc:qualityScore "0.0"^^xsd:float ;
@@ -21828,6 +21833,7 @@ ngm:astronomical-photometry a owl:Class ;
     vc:slug "astronomical-photometry" ;
     vc:sourceDomain "space-science-and-systems" .
 ngm:astronomical-spectroscopy a owl:Class ;
+    rdfs:comment "Astronomical spectroscopy separates light from an astronomical source by wavelength and measures the resulting spectrum. Emission and absorption features, continuum shape and changes in wavelength allow astronomers to infer composition, temperature, density, motion and magnetic conditions.[^1]"@en ;
     rdfs:label "Astronomical Spectroscopy"@en ;
     vc:hasMaturity ngmi:maturity-draft ;
     vc:qualityScore "0.0"^^xsd:float ;
@@ -22276,6 +22282,7 @@ ngm:atmosphere-revitalisation a owl:Class ;
     vc:slug "atmosphere-revitalisation" ;
     vc:sourceDomain "space-science-and-systems" .
 ngm:atmospheric-composition-monitoring a owl:Class ;
+    rdfs:comment "Atmospheric composition monitoring measures or estimates the gases and particles in the atmosphere, their vertical distribution and their change through time. The observing system includes satellite radiances, ground and airborne instruments, emissions inventories and atmospheric models. These components do not measure the same quantity. Their combination can extend coverage and support forecasts, but it also adds assumptions that must remain visible."@en ;
     rdfs:label "Atmospheric Composition Monitoring"@en ;
     vc:hasMaturity ngmi:maturity-draft ;
     vc:qualityScore "0.0"^^xsd:float ;
@@ -22283,6 +22290,7 @@ ngm:atmospheric-composition-monitoring a owl:Class ;
     vc:slug "atmospheric-composition-monitoring" ;
     vc:sourceDomain "earth-observation-and-geospatial-sensing" .
 ngm:atmospheric-correction a owl:Class ;
+    rdfs:comment "Atmospheric correction estimates how a surface would appear without the scattering and absorption between it and a satellite sensor. The detector observes radiance, from which a calibrated top-of-atmosphere quantity may be produced. Bottom-of-atmosphere or surface reflectance is then retrieved through a physical model. It is not a direct measurement of the ground."@en ;
     rdfs:label "Atmospheric Correction"@en ;
     vc:hasMaturity ngmi:maturity-draft ;
     vc:qualityScore "0.0"^^xsd:float ;
@@ -22885,6 +22893,7 @@ ngm:attestation-report a skos:Concept ;
 ngm:attestation-schema a skos:Concept ;
     rdfs:label "Attestation Schema"@en .
 ngm:attitude-control a owl:Class ;
+    rdfs:comment "Attitude control changes or maintains a spacecraft's orientation. A guidance function supplies the desired orientation, attitude determination estimates the current one, and a controller commands actuators to reduce the error. This loop supports payload pointing, communications, thermal management and solar-array illumination while rejecting disturbances such as aerodynamic drag, gravity-gradient torque and solar radiation pressure.[^1][^3]"@en ;
     rdfs:label "Attitude Control"@en ;
     vc:hasMaturity ngmi:maturity-draft ;
     vc:qualityScore "0.0"^^xsd:float ;
@@ -22901,6 +22910,7 @@ ngm:attitude-control-thruster a owl:Class ;
     vc:slug "attitude-control-thruster" ;
     vc:sourceDomain "space-science-and-systems" .
 ngm:attitude-determination a owl:Class ;
+    rdfs:comment "Attitude determination estimates a spacecraft's orientation relative to a stated reference frame. Sensors measure star directions, the Sun vector, a magnetic-field vector or angular rate. An estimator combines those measurements with reference models and rotational dynamics to produce an attitude estimate, often with angular rate, sensor bias and covariance. The estimate is therefore an inference from observations rather than a direct sensor reading.[^1][^3]"@en ;
     rdfs:label "Attitude Determination"@en ;
     vc:bridgesTo ngm:state-estimation ;
     vc:hasMaturity ngmi:maturity-draft ;
@@ -32553,6 +32563,7 @@ ngm:biodiversity-credit-markets a skos:Concept ;
 ngm:biodiversity-credits a skos:Concept ;
     rdfs:label "Biodiversity Credits"@en .
 ngm:biodiversity-monitoring a owl:Class ;
+    rdfs:comment "Biodiversity monitoring repeats measurements to detect change in living systems. The target might be a species' abundance, occupancy or distribution; community composition; habitat extent; habitat condition; or a pressure acting on an ecosystem. These quantities are related, but none is a complete substitute for the others."@en ;
     rdfs:label "Biodiversity Monitoring"@en ;
     vc:hasMaturity ngmi:maturity-draft ;
     vc:qualityScore "0.0"^^xsd:float ;
@@ -32975,6 +32986,7 @@ ngm:biosensing-interface a owl:Class ;
     vc:slug "biosensing-interface" ;
     vc:sourceDomain "robotics" .
 ngm:biosignature a owl:Class ;
+    rdfs:comment "A biosignature is a characteristic, substance, structure or pattern that can provide evidence of past or present life. Candidates include fossils and textures, minerals, isotopic ratios, organic molecules, atmospheric gases, surface reflectance and changes through time. NASA defines a *potential* biosignature as something that might have a biological origin but still needs more data or study before a conclusion about life can be reached.[^1]"@en ;
     rdfs:label "Biosignature"@en ;
     vc:hasMaturity ngmi:maturity-draft ;
     vc:qualityScore "0.0"^^xsd:float ;
@@ -33304,6 +33316,7 @@ ngm:bipedal-locomotion a skos:Concept ;
 ngm:bipedal-robot a skos:Concept ;
     rdfs:label "Bipedal Robot"@en .
 ngm:bipropellant-propulsion a owl:Class ;
+    rdfs:comment "Bipropellant propulsion stores a fuel and an oxidiser separately and meters both into a thrust chamber. The two-stream architecture permits energetic combustion and often higher specific impulse than a comparable monopropellant system, but it adds tanks, plumbing, valves and control of mixture ratio and arrival timing.[^1]"@en ;
     rdfs:label "Bipropellant Propulsion"@en ;
     rdfs:subClassOf ngm:chemical-propulsion ;
     vc:hasMaturity ngmi:maturity-draft ;
@@ -42358,6 +42371,7 @@ ngm:carbon-credits a owl:Class ;
     vc:uses ngm:remote-sensing ;
     vc:uses ngm:satellite-monitoring .
 ngm:carbon-cycle-monitoring a owl:Class ;
+    rdfs:comment "Carbon cycle monitoring tracks carbon stored in reservoirs and exchanged among the land, ocean, inland water and atmosphere. It combines several kinds of quantity: atmospheric concentration, biomass or other carbon stocks, and fluxes between reservoirs. These are connected but not interchangeable. A satellite measurement of reflected or emitted radiation must be retrieved into a geophysical variable, while a surface flux often requires atmospheric transport or ecosystem modelling."@en ;
     rdfs:label "Carbon Cycle Monitoring"@en ;
     vc:hasMaturity ngmi:maturity-draft ;
     vc:qualityScore "0.0"^^xsd:float ;
@@ -45853,6 +45867,7 @@ ngm:change-data-capture a owl:Class ;
     vc:uses ngm:database ;
     vc:uses ngm:event-streaming .
 ngm:change-detection a owl:Class ;
+    rdfs:comment "Change detection uses observations from two or more times to locate differences in a surface state or in its spectral behaviour. The immediate result is an observed difference or a statistical break. Explaining it as construction, fire, flood, vegetation stress or a lasting land-cover conversion is a further inference that usually needs classification and contextual evidence."@en ;
     rdfs:label "Change Detection"@en ;
     vc:hasMaturity ngmi:maturity-draft ;
     vc:qualityScore "0.0"^^xsd:float ;
@@ -46578,6 +46593,7 @@ ngm:chemical-mechanical-planarisation a skos:Concept ;
 ngm:chemical-process-control a skos:Concept ;
     rdfs:label "Chemical Process Control"@en .
 ngm:chemical-propulsion a owl:Class ;
+    rdfs:comment "Chemical propulsion converts energy released by a chemical reaction or catalytic decomposition into hot, pressurised gas and then directs that gas through a nozzle to produce thrust. It is used where a spacecraft needs comparatively high thrust or a rapid manoeuvre, provided the available total impulse and the integrated system meet the mission need.[^1]"@en ;
     rdfs:label "Chemical Propulsion"@en ;
     rdfs:subClassOf ngm:spacecraft-propulsion ;
     vc:hasMaturity ngmi:maturity-draft ;
@@ -48364,6 +48380,7 @@ ngm:climate-commitments a owl:Class ;
     vc:slug "climate-commitments" ;
     vc:sourceDomain "governance" .
 ngm:climate-data-record a owl:Class ;
+    rdfs:comment "A climate data record is a time series designed to support analysis of climate variability and change. Length matters because climate signals sit within much larger weather fluctuations, but a long archive is not sufficient on its own. The record also needs stable calibration, known provenance, consistent processing, documented uncertainty and enough continuity to distinguish a physical trend from changes in instruments or methods."@en ;
     rdfs:label "Climate Data Record"@en ;
     vc:hasMaturity ngmi:maturity-draft ;
     vc:qualityScore "0.0"^^xsd:float ;
@@ -49773,6 +49790,7 @@ ngm:coala a skos:Concept ;
 ngm:coala-model-dao-law a skos:Concept ;
     rdfs:label "Coala Model DAO Law"@en .
 ngm:coastal-monitoring a owl:Class ;
+    rdfs:comment "Coastal monitoring records change at the boundary between land and sea. It covers several observables: shoreline position, beach and cliff elevation, seabed form, waves and tides, water colour, habitat extent and the condition of coastal structures. No single instrument measures “the coast”, and each dataset has its own spatial support, survey timing and uncertainty."@en ;
     rdfs:label "Coastal Monitoring"@en ;
     vc:hasMaturity ngmi:maturity-draft ;
     vc:qualityScore "0.0"^^xsd:float ;
@@ -51152,6 +51170,7 @@ ngm:cold-chain-monitoring a owl:Class ;
     vc:uses ngm:smart-contracts ;
     vc:uses ngm:zero-knowledge-proof .
 ngm:cold-gas-propulsion a owl:Class ;
+    rdfs:comment "Cold-gas propulsion produces thrust by opening a valve and expanding stored propellant through a nozzle. It uses no combustion or catalytic decomposition: the available pressure and enthalpy of the stored fluid provide the exhaust energy.[^1] Cold gas is therefore a non-reacting, pneumatic form of [[Spacecraft Propulsion]] in a mechanism-based ontology."@en ;
     rdfs:label "Cold Gas Propulsion"@en ;
     rdfs:subClassOf ngm:spacecraft-propulsion ;
     vc:hasMaturity ngmi:maturity-draft ;
@@ -53802,6 +53821,7 @@ ngm:companion-cognitive-architecture a skos:Concept ;
 ngm:companion-robotics a skos:Concept ;
     rdfs:label "Companion Robotics"@en .
 ngm:comparative-planetology a owl:Class ;
+    rdfs:comment "Comparative planetology examines the same physical and chemical processes across several planets, moons or small bodies. Differences in mass, composition, atmosphere, distance from the Sun and geological history act as natural experiments. Comparing their effects helps explain why related worlds followed different paths and tests whether an explanation developed for one body works elsewhere."@en ;
     rdfs:label "Comparative Planetology"@en ;
     vc:hasMaturity ngmi:maturity-draft ;
     vc:qualityScore "0.0"^^xsd:float ;
@@ -64057,6 +64077,7 @@ ngm:coreference-resolution a owl:Class ;
 ngm:corner-detection a skos:Concept ;
     rdfs:label "Corner Detection"@en .
 ngm:coronal-mass-ejection a owl:Class ;
+    rdfs:comment "A coronal mass ejection, or CME, is an eruption of magnetised plasma from the Sun's corona into interplanetary space. A CME is physically distinct from a solar flare: a flare is a burst of electromagnetic radiation, whereas an ejection is material and embedded magnetic field moving through the solar wind. The two can occur together.[^1]"@en ;
     rdfs:label "Coronal Mass Ejection"@en ;
     vc:hasMaturity ngmi:maturity-draft ;
     vc:qualityScore "0.0"^^xsd:float ;
@@ -66052,6 +66073,7 @@ ngm:crew-ai a owl:Class ;
     vc:uses ngm:retrieval-augmented-generation ;
     vc:uses ngm:tool-use .
 ngm:crew-health-monitoring a owl:Class ;
+    rdfs:comment "Crew health monitoring is the structured collection and interpretation of physiological, clinical, behavioural and environmental information used to protect people before, during and after spaceflight. It can combine scheduled medical examinations, wearable sensors, imaging, biological samples, exercise and cognitive measures, radiation dosimetry, and cabin air or water data.[^1]"@en ;
     rdfs:label "Crew Health Monitoring"@en ;
     vc:hasMaturity ngmi:maturity-draft ;
     vc:qualityScore "0.0"^^xsd:float ;
@@ -66146,6 +66168,7 @@ ngm:crm-systems a owl:Class ;
     vc:slug "crm-systems" ;
     vc:sourceDomain "infrastructure" .
 ngm:crop-monitoring a owl:Class ;
+    rdfs:comment "Crop monitoring uses repeated observations to identify crops, follow their development and detect changes within a growing season. Satellite instruments extend coverage beyond what field visits can provide, but they do not read a crop label directly. A usable product combines sensor measurements with parcel boundaries, field declarations or inspections, seasonal features and a classification or retrieval model."@en ;
     rdfs:label "Crop Monitoring"@en ;
     vc:hasMaturity ngmi:maturity-draft ;
     vc:qualityScore "0.0"^^xsd:float ;
@@ -80706,6 +80729,7 @@ ngm:deflection-measurement a skos:Concept ;
 ngm:deforestation-free-commodities a skos:Concept ;
     rdfs:label "Deforestation Free Commodities"@en .
 ngm:deforestation-monitoring a owl:Class ;
+    rdfs:comment "Deforestation monitoring identifies where forest has been converted to another land use, how much area changed and, where evidence permits, the timing, driver and carbon consequence. Satellite imagery supplies repeated regional coverage, but deforestation is a land-use concept. A canopy disturbance becomes a deforestation claim only when the observing system can distinguish permanent conversion from temporary loss and forest management."@en ;
     rdfs:label "Deforestation Monitoring"@en ;
     vc:hasMaturity ngmi:maturity-draft ;
     vc:qualityScore "0.0"^^xsd:float ;
@@ -80729,6 +80753,7 @@ ngm:delaunay-triangulation a skos:Concept ;
 ngm:delaware-statutory-trust a skos:Concept ;
     rdfs:label "Delaware Statutory Trust"@en .
 ngm:delay-tolerant-space-networking a owl:Class ;
+    rdfs:comment "Delay-tolerant space networking is an overlay architecture for communication where end-to-end connectivity cannot be assumed. Space links may be unavailable because of orbital geometry, occultation, weather, scheduling or equipment state; they may also have long or variable delays and very different data rates in each direction. The term is also expanded as *disruption-tolerant networking* to reflect this wider problem."@en ;
     rdfs:label "Delay-tolerant Space Networking"@en ;
     vc:bridgesTo ngm:communication-protocol ;
     vc:hasMaturity ngmi:maturity-draft ;
@@ -85729,6 +85754,7 @@ ngm:digital-economy a owl:Class ;
     vc:supports ngm:cross-border-payments ;
     vc:supports ngm:financial-inclusion .
 ngm:digital-elevation-model a owl:Class ;
+    rdfs:comment "A digital elevation model (DEM) is a georeferenced representation of elevation, commonly stored as a regular raster grid. The term is broad and is not used uniformly between organisations. A dataset's product definition, reference systems and processing history are more informative than its acronym alone.[^1][^2]"@en ;
     rdfs:label "Digital Elevation Model"@en ;
     vc:hasMaturity ngmi:maturity-draft ;
     vc:qualityScore "0.0"^^xsd:float ;
@@ -89335,6 +89361,7 @@ ngm:disability-rights a skos:Concept ;
 ngm:disability-studies a skos:Concept ;
     rdfs:label "Disability Studies"@en .
 ngm:disaster-mapping a owl:Class ;
+    rdfs:comment "Disaster mapping converts satellite imagery and other geospatial information into products for preparedness, emergency response and recovery. Depending on the request, a product may show the pre-event setting, the observed extent of a hazard, exposed assets, or an interpreted grade of damage. Each map is tied to an area, an acquisition time and the evidence available to its producer."@en ;
     rdfs:label "Disaster Mapping"@en ;
     vc:hasMaturity ngmi:maturity-draft ;
     vc:qualityScore "0.0"^^xsd:float ;
@@ -93039,6 +93066,7 @@ ngm:dropout a owl:Class ;
     vc:uses ngm:bernoulli-distribution ;
     vc:uses ngm:monte-carlo-methods .
 ngm:drought-monitoring a owl:Class ;
+    rdfs:comment "Drought monitoring follows an evolving shortage of water and its effects across the hydrological cycle. Low rainfall may first appear as meteorological drought, then reduce soil moisture, river flow, groundwater recharge, reservoir storage or ecosystem function. Agricultural, environmental and water-supply drought can overlap, develop at different rates and recover at different times. No single satellite image, gauge or index determines the whole condition."@en ;
     rdfs:label "Drought Monitoring"@en ;
     vc:hasMaturity ngmi:maturity-draft ;
     vc:qualityScore "0.0"^^xsd:float ;
@@ -94369,6 +94397,7 @@ ngm:earth-observation a owl:Class ;
     vc:sourceDomain "earth-observation-and-geospatial-sensing" ;
     vc:uses ngm:remote-sensing .
 ngm:earth-observation-analysis-ready-data a owl:Class ;
+    rdfs:comment "Earth observation analysis-ready data, or ARD, have undergone common preparation so that users can begin a stated class of analysis with less preprocessing. The CEOS stewardship glossary describes georeferencing as the minimum requirement and allows further geometric and radiometric processing.[^1] Operational product specifications normally require much more."@en ;
     rdfs:label "Earth Observation Analysis Ready Data"@en ;
     rdfs:subClassOf ngm:earth-observation-data-product ;
     vc:hasMaturity ngmi:maturity-draft ;
@@ -94418,6 +94447,7 @@ ngm:earth-observation-data-assimilation a owl:Class ;
     vc:slug "earth-observation-data-assimilation" ;
     vc:sourceDomain "earth-observation-and-geospatial-sensing" .
 ngm:earth-observation-data-cube a owl:Class ;
+    rdfs:comment "An Earth observation data cube presents variables across spatial, temporal or thematic dimensions and supplies ways to discover, select and process them. The cube is a logical model and service boundary. It does not require a literal three-dimensional array or prescribe whether the underlying bytes live in files, object storage or a database."@en ;
     rdfs:label "Earth Observation Data Cube"@en ;
     vc:hasMaturity ngmi:maturity-draft ;
     vc:qualityScore "0.0"^^xsd:float ;
@@ -94465,6 +94495,7 @@ ngm:earth-observation-granule a owl:Class ;
     vc:slug "earth-observation-granule" ;
     vc:sourceDomain "earth-observation-and-geospatial-sensing" .
 ngm:earth-observation-instrument a owl:Class ;
+    rdfs:comment "An Earth observation instrument is physical equipment used to make measurements of the Earth system. The International Vocabulary of Metrology defines a measuring instrument as a device used alone or with supplementary devices; a measuring system can combine one or more instruments with other components to generate measured values.[^1] Mission documentation may call a complete payload assembly an instrument even when it contains several sensing elements and subsystems."@en ;
     rdfs:label "Earth Observation Instrument"@en ;
     rdfs:subClassOf ngm:measurement-instrument ;
     vc:hasMaturity ngmi:maturity-draft ;
@@ -94566,6 +94597,7 @@ ngm:earth-observation-satellite a owl:Class ;
     vc:sourceDomain "earth-observation-and-geospatial-sensing" ;
     vc:supports ngm:earth-observation .
 ngm:earth-observation-sensor a owl:Class ;
+    rdfs:comment "An Earth observation sensor is the functional system that carries out an observing procedure and produces a result about a property of the Earth, its oceans or its atmosphere. The term can denote a detector element, a physical sensing assembly or a wider observing system, depending on context. ESA's glossary uses it broadly for an instrument or device that collects data, while formal metrology and semantic standards draw different boundaries.[^1]"@en ;
     rdfs:label "Earth Observation Sensor"@en ;
     rdfs:subClassOf ngm:sensor ;
     vc:hasMaturity ngmi:maturity-draft ;
@@ -94892,6 +94924,7 @@ ngm:eclipse-foundation a skos:Concept ;
 ngm:eclipse-layout-kernel a skos:Concept ;
     rdfs:label "Eclipse Layout Kernel"@en .
 ngm:eclipse-power-budget a owl:Class ;
+    rdfs:comment "A spacecraft eclipse power budget demonstrates that stored energy can support required loads throughout darkness and that the following sunlit interval can restore the battery. It is an energy balance in watt-hours (Wh), coupled to instantaneous power limits in watts (W). Ampere-hours (Ah) measure charge; converting Ah to Wh requires the battery voltage over the discharge, rather than an arbitrary nominal voltage."@en ;
     rdfs:label "Eclipse Power Budget"@en ;
     vc:hasMaturity ngmi:maturity-draft ;
     vc:qualityScore "0.0"^^xsd:float ;
@@ -100462,6 +100495,7 @@ ngm:enhanced-presence a skos:Concept ;
 ngm:enhanced-token-functionality a skos:Concept ;
     rdfs:label "Enhanced Token Functionality"@en .
 ngm:enhanced-vegetation-index a owl:Class ;
+    rdfs:comment "The Enhanced Vegetation Index (EVI) is a spectral vegetation index designed to reduce canopy-background and aerosol effects and to retain more sensitivity than NDVI in dense vegetation. It remains a calculation from corrected reflectances. “Enhanced” describes those algorithm goals; it does not make EVI a direct measurement of biomass, leaf area, crop health or drought.[^1][^2]"@en ;
     rdfs:label "Enhanced Vegetation Index"@en ;
     rdfs:subClassOf ngm:vegetation-index ;
     vc:hasMaturity ngmi:maturity-draft ;
@@ -101889,6 +101923,7 @@ ngm:environmental-compliance a skos:Concept ;
 ngm:environmental-control a skos:Concept ;
     rdfs:label "Environmental Control"@en .
 ngm:environmental-control-and-life-support-system a owl:Class ;
+    rdfs:comment "An environmental control and life support system, or ECLSS, maintains the conditions needed for people and other living payloads inside a spacecraft or habitat. Its scope includes atmospheric composition and pressure, ventilation, carbon-dioxide and trace-contaminant removal, oxygen supply, water recovery and quality, waste handling, environmental monitoring, and interfaces to thermal control and fire detection.[^1]"@en ;
     rdfs:label "Environmental Control and Life Support System"@en ;
     vc:hasMaturity ngmi:maturity-draft ;
     vc:qualityScore "0.0"^^xsd:float ;
@@ -108340,6 +108375,7 @@ ngm:existential-risk-studies a skos:Concept ;
 ngm:existential-unforgeability a skos:Concept ;
     rdfs:label "Existential Unforgeability"@en .
 ngm:exoplanet a owl:Class ;
+    rdfs:comment "An exoplanet is a planet outside the Solar System. It may orbit a star, orbit more than one star, or travel through space without a host star. The term describes the object, not the method used to detect it.[^1]"@en ;
     rdfs:label "Exoplanet"@en ;
     rdfs:subClassOf ngm:planet ;
     vc:hasMaturity ngmi:maturity-draft ;
@@ -114757,6 +114793,7 @@ ngm:flood-bank a owl:Class ;
     vc:slug "flood-bank" ;
     vc:sourceDomain "earth-observation-and-geospatial-sensing" .
 ngm:flood-mapping a owl:Class ;
+    rdfs:comment "Flood mapping locates land affected by water or describes the probability, depth, velocity or consequences of flooding. The name covers several products with different meanings: an image-derived outline of an event, a forecast of what may happen, a modelled risk zone, or a planning scenario. A useful map therefore states its source, acquisition or valid time, spatial scale and intended decision."@en ;
     rdfs:label "Flood Mapping"@en ;
     vc:hasMaturity ngmi:maturity-draft ;
     vc:qualityScore "0.0"^^xsd:float ;
@@ -119819,6 +119856,7 @@ ngm:geodetic-coordinate-reference-system a owl:Class ;
     vc:slug "geodetic-coordinate-reference-system" ;
     vc:sourceDomain "earth-observation-and-geospatial-sensing" .
 ngm:geodetic-datum a owl:Class ;
+    rdfs:comment "A geodetic datum relates a coordinate system to the Earth. It supplies the origin, orientation and scale needed to turn mathematical coordinates into positions. An ellipsoid supplies a model of the Earth's size and shape, but is only one part of this relationship: different datums or frames can use the same ellipsoid and still assign different coordinates to a point.[^1][^2]"@en ;
     rdfs:label "Geodetic Datum"@en ;
     vc:hasMaturity ngmi:maturity-draft ;
     vc:qualityScore "0.0"^^xsd:float ;
@@ -119840,6 +119878,7 @@ ngm:geodetic-longitude a owl:Class ;
     vc:slug "geodetic-longitude" ;
     vc:sourceDomain "earth-observation-and-geospatial-sensing" .
 ngm:geodetic-reference-frame a owl:Class ;
+    rdfs:comment "A geodetic reference frame is the practical basis for assigning coordinates to positions on or near Earth. It is realised through coordinates for a network of stations or other reference points, with velocities or deformation models where the frame is dynamic. Modern ISO and OGC usage treats *geodetic reference frame* as the preferred term for a geodetic datum.[^1]"@en ;
     rdfs:label "Geodetic Reference Frame"@en ;
     vc:hasMaturity ngmi:maturity-draft ;
     vc:qualityScore "0.0"^^xsd:float ;
@@ -119851,6 +119890,7 @@ ngm:geofencing a skos:Concept ;
 ngm:geoffrey-hinton a skos:Concept ;
     rdfs:label "Geoffrey Hinton"@en .
 ngm:geographic-coordinate-reference-system a owl:Class ;
+    rdfs:comment "A geographic coordinate reference system (CRS) locates positions with an ellipsoidal coordinate system tied to Earth by a geodetic reference frame or datum ensemble. It normally uses latitude and longitude in two dimensions, or latitude, longitude and ellipsoid height in three dimensions.[^1]"@en ;
     rdfs:label "Geographic Coordinate Reference System"@en ;
     rdfs:subClassOf ngm:coordinate-reference-system ;
     vc:hasMaturity ngmi:maturity-draft ;
@@ -119922,6 +119962,7 @@ ngm:geoid-undulation a owl:Class ;
     vc:slug "geoid-undulation" ;
     vc:sourceDomain "earth-observation-and-geospatial-sensing" .
 ngm:geolocation a owl:Class ;
+    rdfs:comment "Geolocation assigns an Earth position to an observation. For satellite imagery, the calculation links a detector sample to a line of sight and then intersects that line with an Earth model. Platform position, attitude, acquisition time, instrument alignment and terrain can all affect the result. A product can therefore be geolocated before ground control has been applied, and the presence of coordinates does not by itself establish positional accuracy.[^1][^2]"@en ;
     rdfs:label "Geolocation"@en ;
     vc:hasMaturity ngmi:maturity-draft ;
     vc:qualityScore "0.0"^^xsd:float ;
@@ -120085,6 +120126,7 @@ ngm:georeferenced-data-state a owl:Class ;
     vc:slug "georeferenced-data-state" ;
     vc:sourceDomain "earth-observation-and-geospatial-sensing" .
 ngm:georeferencing a owl:Class ;
+    rdfs:comment "Georeferencing establishes the relation between coordinates internal to an image or grid and a coordinate reference system (CRS) tied to the Earth. It can use a sensor model, an affine or higher-order mapping, control points or another declared coordinate operation. Geolocation is the broader act of assigning Earth positions to observations; georeferencing describes the explicit coordinate relationship used to place and exchange the resulting dataset.[^1]"@en ;
     rdfs:label "Georeferencing"@en ;
     vc:hasMaturity ngmi:maturity-draft ;
     vc:qualityScore "0.0"^^xsd:float ;
@@ -120264,6 +120306,7 @@ ngm:geospatial-technology a owl:Class ;
 ngm:geospatially-accurate-metaverse a skos:Concept ;
     rdfs:label "Geospatially Accurate Metaverse"@en .
 ngm:geostationary-orbit a owl:Class ;
+    rdfs:comment "A geostationary orbit is a circular, prograde orbit in Earth's equatorial plane with an orbital period equal to Earth's sidereal rotation. A spacecraft in this ideal orbit remains above one longitude and appears stationary to an observer fixed on Earth.[^1] These conditions make geostationary orbit a strict subset of geosynchronous orbit."@en ;
     rdfs:label "Geostationary Orbit"@en ;
     rdfs:subClassOf ngm:geosynchronous-orbit ;
     vc:hasMaturity ngmi:maturity-draft ;
@@ -120797,6 +120840,7 @@ ngm:glacier a owl:Class ;
     vc:slug "glacier" ;
     vc:sourceDomain "earth-observation-and-geospatial-sensing" .
 ngm:glacier-monitoring a owl:Class ;
+    rdfs:comment "Glacier monitoring tracks changes in ice geometry, motion and mass through repeated field, airborne and satellite observations. Area, terminus position, surface elevation, volume, velocity, surface mass balance and total mass balance are separate quantities. They respond on different timescales and cannot be substituted for one another without a physical model."@en ;
     rdfs:label "Glacier Monitoring"@en ;
     vc:hasMaturity ngmi:maturity-draft ;
     vc:qualityScore "0.0"^^xsd:float ;
@@ -121066,6 +121110,7 @@ ngm:global-minimum-tax a skos:Concept ;
 ngm:global-model-broadcast a skos:Concept ;
     rdfs:label "Global Model Broadcast"@en .
 ngm:global-navigation-satellite-system a owl:Class ;
+    rdfs:comment "A global navigation satellite system, or GNSS, provides positioning, navigation and timing from constellations of satellites. The complete system includes a space segment, a control segment and user receivers; an individual navigation satellite cannot provide a full position solution by itself.[^1]"@en ;
     rdfs:label "Global Navigation Satellite System"@en ;
     rdfs:subClassOf ngm:navigation-system ;
     vc:hasMaturity ngmi:maturity-draft ;
@@ -121533,6 +121578,7 @@ ngm:gnss-reflectometry a owl:Class ;
     vc:sourceDomain "earth-observation-and-geospatial-sensing" ;
     vc:uses ngm:gnss-signal .
 ngm:gnss-satellite a owl:Class ;
+    rdfs:comment "A GNSS satellite is a spacecraft in the space segment of a satellite-navigation system. It broadcasts precisely timed, coded radio signals and navigation data that allow a receiver to estimate signal travel time and the satellite's position. Several satellites, a ground control segment and a user receiver are required for a complete navigation solution.[^1]"@en ;
     rdfs:label "GNSS Satellite"@en ;
     rdfs:subClassOf ngm:spacecraft ;
     vc:hasMaturity ngmi:maturity-draft ;
@@ -125139,6 +125185,7 @@ ngm:ground-control-experiment a owl:Class ;
     vc:slug "ground-control-experiment" ;
     vc:sourceDomain "space-science-and-systems" .
 ngm:ground-control-point a owl:Class ;
+    rdfs:comment "A ground control point (GCP) is a feature that can be identified in imagery or survey data and whose coordinates are known in the required output reference system. Its measured ground coordinates and corresponding image location constrain a geometric model. The uncertainty of both observations matters: an accurately surveyed point is poor control if the feature is ambiguous, has moved or cannot be marked consistently in the image.[^1]"@en ;
     rdfs:label "Ground Control Point"@en ;
     vc:hasMaturity ngmi:maturity-draft ;
     vc:qualityScore "0.0"^^xsd:float ;
@@ -125697,6 +125744,7 @@ ngm:haifa-construction a skos:Concept ;
 ngm:hall-effect-sensing a skos:Concept ;
     rdfs:label "Hall Effect Sensing"@en .
 ngm:hall-effect-thruster a owl:Class ;
+    rdfs:comment "A Hall-effect thruster is an electrostatic electric-propulsion device. A radial magnetic field restricts electron motion across an annular discharge channel, and the trapped electrons circulate azimuthally as a Hall current. Collisions between those electrons and the injected neutral propellant create ions. An axial electric field accelerates the ions out of the channel; an external cathode supplies electrons for the discharge and neutralises the outgoing beam so that the spacecraft does not charge indefinitely.[^1][^3]"@en ;
     rdfs:label "Hall-effect Thruster"@en ;
     rdfs:subClassOf ngm:thruster ;
     vc:hasMaturity ngmi:maturity-draft ;
@@ -127859,6 +127907,7 @@ ngm:heat-equation a skos:Concept ;
 ngm:heat-exchanger a skos:Concept ;
     rdfs:label "Heat Exchanger"@en .
 ngm:heat-pipe a owl:Class ;
+    rdfs:comment "A heat pipe moves thermal energy through evaporation and condensation inside a sealed enclosure. A conventional spacecraft design has an evaporator at the heat source, a vapour passage, a condenser coupled to a cooler sink and a porous or grooved wick. Heat vaporises the working fluid; the vapour flows down its pressure gradient and condenses; capillary pressure in the wick returns liquid to the evaporator.[^1][^2]"@en ;
     rdfs:label "Heat Pipe"@en ;
     vc:hasMaturity ngmi:maturity-draft ;
     vc:qualityScore "0.0"^^xsd:float ;
@@ -131972,6 +132021,7 @@ ngm:hyperscaler-cloud a skos:Concept ;
 ngm:hyperscaler-operations a skos:Concept ;
     rdfs:label "Hyperscaler Operations"@en .
 ngm:hyperspectral-imaging a owl:Class ;
+    rdfs:comment "Hyperspectral imaging records a spectrum at each spatial sample, producing a data cube with two spatial dimensions and one spectral dimension. Unlike a multispectral instrument with a small set of broad bands, a hyperspectral instrument usually samples many narrow, contiguous bands. There is no universal band-count threshold, so a useful specification gives wavelength range, spectral sampling and spectral response rather than relying on the label alone."@en ;
     rdfs:label "Hyperspectral Imaging"@en ;
     vc:hasMaturity ngmi:maturity-draft ;
     vc:qualityScore "0.0"^^xsd:float ;
@@ -140559,6 +140609,7 @@ ngm:inter-process-communication a owl:Class ;
 ngm:inter-robot-communication a skos:Concept ;
     rdfs:label "Inter Robot Communication"@en .
 ngm:inter-satellite-link a owl:Class ;
+    rdfs:comment "An inter-satellite link is a direct communication path between spacecraft. It may use an optical carrier or a radio-frequency band, and it can connect satellites in the same orbital regime or bridge different orbits. The term describes the physical link; routing, storage and delivery to an end user belong to the wider network."@en ;
     rdfs:label "Inter-satellite Link"@en ;
     rdfs:subClassOf ngm:space-to-space-link ;
     vc:hasMaturity ngmi:maturity-draft ;
@@ -141048,6 +141099,7 @@ ngm:interferometric-phase a owl:Class ;
     vc:slug "interferometric-phase" ;
     vc:sourceDomain "earth-observation-and-geospatial-sensing" .
 ngm:interferometric-synthetic-aperture-radar a owl:Class ;
+    rdfs:comment "Interferometric synthetic aperture radar (InSAR) compares the phase of two or more coregistered complex SAR observations of the same area. The phase difference records a change in the radar signal's travel path. With known acquisition geometry, this permits the construction of digital elevation models or the measurement of surface displacement between acquisitions.[^1]"@en ;
     rdfs:label "Interferometric Synthetic Aperture Radar"@en ;
     rdfs:subClassOf ngm:radar ;
     vc:hasMaturity ngmi:maturity-draft ;
@@ -142581,6 +142633,7 @@ ngm:ion-implantation a skos:Concept ;
 ngm:ion-sidetree-on-bitcoin a skos:Concept ;
     rdfs:label "Ion Sidetree On Bitcoin"@en .
 ngm:ion-thruster a owl:Class ;
+    rdfs:comment "An ion thruster, in the narrow engineering sense used here, is a gridded electrostatic thruster. It creates a plasma inside a discharge chamber, extracts positive ions through closely spaced grids and accelerates them with a high electric potential. A neutraliser injects electrons into the exhaust so that the outgoing beam and spacecraft remain close to charge balance.[^1][^2]"@en ;
     rdfs:label "Ion Thruster"@en ;
     rdfs:subClassOf ngm:thruster ;
     vc:hasMaturity ngmi:maturity-draft ;
@@ -148684,6 +148737,7 @@ ngm:land-scarcity a owl:Class ;
     vc:uses ngm:property-rights ;
     vc:uses ngm:tokenization .
 ngm:land-surface-temperature a owl:Class ;
+    rdfs:comment "Land surface temperature (LST) is the radiometric skin temperature of the surface components within a sensor's field of view. A forest pixel mainly represents the canopy; a bare-soil pixel represents the ground; sparse vegetation can mix soil and leaf temperatures. LST is distinct from the air temperature measured above the surface, although surface and atmosphere exchange heat and influence one another.[^1][^2]"@en ;
     rdfs:label "Land Surface Temperature"@en ;
     vc:hasMaturity ngmi:maturity-draft ;
     vc:qualityScore "0.0"^^xsd:float ;
@@ -154921,6 +154975,7 @@ ngm:loop-delay a skos:Concept ;
 ngm:loop-gain a skos:Concept ;
     rdfs:label "Loop Gain"@en .
 ngm:loop-heat-pipe a owl:Class ;
+    rdfs:comment "A loop heat pipe is a sealed two-phase thermal-transport device driven by capillary pressure rather than a mechanical pump. Its primary wick sits in the evaporator. Heat vaporises working fluid at the wick surface; vapour passes through a dedicated line to the condenser; liquid returns through a separate line and compensation chamber. The physical separation of vapour and liquid paths permits routing and transport distances that are difficult for a conventional heat pipe.[^1][^2]"@en ;
     rdfs:label "Loop Heat Pipe"@en ;
     rdfs:subClassOf ngm:heat-pipe ;
     vc:hasMaturity ngmi:maturity-draft ;
@@ -155116,6 +155171,7 @@ ngm:low-cost-podcast-creation a skos:Concept ;
 ngm:low-cost-transaction-processing a skos:Concept ;
     rdfs:label "Low Cost Transaction Processing"@en .
 ngm:low-earth-orbit a owl:Class ;
+    rdfs:comment "Low Earth orbit (LEO) is the family of Earth-centred orbits closest to the planet. NASA and ESA commonly use an upper altitude of 2,000 km.[^1][^2] This is a practical classification boundary rather than a discontinuity in orbital physics. Any dataset or rule should state how it treats an eccentric orbit that crosses the boundary."@en ;
     rdfs:label "Low Earth Orbit"@en ;
     vc:hasMaturity ngmi:maturity-draft ;
     vc:qualityScore "0.0"^^xsd:float ;
@@ -156472,6 +156528,7 @@ ngm:magnetopause a owl:Class ;
     vc:slug "magnetopause" ;
     vc:sourceDomain "space-science-and-systems" .
 ngm:magnetorquer a owl:Class ;
+    rdfs:comment "A magnetorquer is a spacecraft actuator that creates a commanded magnetic dipole with an electrical coil or a magnetised core. The dipole interacts with the local ambient magnetic field to generate an external control torque. For dipole `m` and field `B`, the relationship is `torque = m x B`.[^1]"@en ;
     rdfs:label "Magnetorquer"@en ;
     rdfs:subClassOf ngm:actuator ;
     vc:hasMaturity ngmi:maturity-draft ;
@@ -156480,6 +156537,7 @@ ngm:magnetorquer a owl:Class ;
     vc:slug "magnetorquer" ;
     vc:sourceDomain "space-science-and-systems" .
 ngm:magnetosphere a owl:Class ;
+    rdfs:comment "A magnetosphere is the region around a planet where its magnetic field governs charged-particle motion and interacts with the solar wind. Earth's magnetosphere deflects much of the incoming plasma, but it is a dynamic, permeable system rather than a fixed or complete shield.[^1]"@en ;
     rdfs:label "Magnetosphere"@en ;
     vc:hasMaturity ngmi:maturity-draft ;
     vc:qualityScore "0.0"^^xsd:float ;
@@ -162585,6 +162643,7 @@ ngm:microfacet-model a skos:Concept ;
 ngm:microfinance a skos:Concept ;
     rdfs:label "Microfinance"@en .
 ngm:microgravity a owl:Class ;
+    rdfs:comment "Microgravity is a condition in which a spacecraft and its occupants are in continuous free fall and experience very little sustained support acceleration. Gravity remains substantial in low Earth orbit; the apparent weightlessness arises because the vehicle, crew and equipment fall together. Drop towers and parabolic flights reproduce the condition for seconds, while orbiting laboratories provide exposure lasting months.[^1]"@en ;
     rdfs:label "Microgravity"@en ;
     vc:hasMaturity ngmi:maturity-draft ;
     vc:qualityScore "0.0"^^xsd:float ;
@@ -167319,6 +167378,7 @@ ngm:monolithic-material a skos:Concept ;
 ngm:monolithic-platform a skos:Concept ;
     rdfs:label "Monolithic Platform"@en .
 ngm:monopropellant-propulsion a owl:Class ;
+    rdfs:comment "Monopropellant propulsion stores and feeds one propellant formulation to the thruster. A catalyst, heat or another initiation mechanism triggers decomposition or reaction, producing hot gas that expands through a nozzle. `Monopropellant` describes the single stored feed: an ionic-liquid blend can contain both fuel and oxidising species within that formulation.[^1][^3]"@en ;
     rdfs:label "Monopropellant Propulsion"@en ;
     rdfs:subClassOf ngm:chemical-propulsion ;
     vc:hasMaturity ngmi:maturity-draft ;
@@ -169719,6 +169779,7 @@ ngm:multilateral-governance a skos:Concept ;
 ngm:multilateral-memorandum-of-understanding a skos:Concept ;
     rdfs:label "Multilateral Memorandum Of Understanding"@en .
 ngm:multilayer-insulation a owl:Class ;
+    rdfs:comment "Multilayer insulation (MLI) limits radiative heat exchange between spacecraft hardware and its surroundings. A blanket stacks thin, low-emittance reflective foils with low-conductance spacer material. The reflective surfaces reduce layer-to-layer radiation; spacers keep adjacent foils apart and restrict solid conduction.[^1][^3]"@en ;
     rdfs:label "Multilayer Insulation"@en ;
     vc:hasMaturity ngmi:maturity-draft ;
     vc:qualityScore "0.0"^^xsd:float ;
@@ -177872,6 +177933,7 @@ ngm:observation-timestamp a owl:Class ;
     vc:slug "observation-timestamp" ;
     vc:sourceDomain "earth-observation-and-geospatial-sensing" .
 ngm:observational-astronomy a owl:Class ;
+    rdfs:comment "Observational astronomy collects and interprets measured signals from astronomical sources. It spans imaging, spectroscopy, photometry, astrometry, polarimetry, timing and particle or gravitational-wave observations across ground-based and space-based facilities."@en ;
     rdfs:label "Observational Astronomy"@en ;
     vc:hasMaturity ngmi:maturity-draft ;
     vc:qualityScore "0.0"^^xsd:float ;
@@ -182511,6 +182573,7 @@ ngm:optical-sensors a owl:Class ;
     vc:slug "optical-sensors" ;
     vc:sourceDomain "robotics" .
 ngm:optical-space-communication a owl:Class ;
+    rdfs:comment "Optical space communication transfers information through free space on a modulated optical carrier, usually a laser. A link can connect two spacecraft or a spacecraft with an airborne or ground terminal. Current Consultative Committee for Space Data Systems standards specify physical-layer parameters for non-coherent optical links, providing an interoperability baseline rather than a complete terminal design.[^1]"@en ;
     rdfs:label "Optical Space Communication"@en ;
     vc:hasMaturity ngmi:maturity-draft ;
     vc:qualityScore "0.0"^^xsd:float ;
@@ -183152,6 +183215,7 @@ ngm:oracle-tms a skos:Concept ;
 ngm:orange-pi a skos:Concept ;
     rdfs:label "Orange Pi"@en .
 ngm:orbit-determination a owl:Class ;
+    rdfs:comment "Orbit determination estimates a spacecraft or other object's state from observations, a force model and a measurement model. It does not directly measure an entire orbit. The result is a best-fitting state at a stated epoch, often with estimated physical or instrument parameters and a covariance that represents uncertainty under the estimator's assumptions.[^1]"@en ;
     rdfs:label "Orbit Determination"@en ;
     vc:hasMaturity ngmi:maturity-draft ;
     vc:qualityScore "0.0"^^xsd:float ;
@@ -183181,6 +183245,7 @@ ngm:orbital-debris a owl:Class ;
     vc:slug "orbital-debris" ;
     vc:sourceDomain "space-science-and-systems" .
 ngm:orbital-dynamics a owl:Class ;
+    rdfs:comment "Orbital dynamics is the study and prediction of spacecraft and natural-body motion under gravity and other forces. A two-body Keplerian orbit supplies the baseline: two point masses interact through mutual gravity, producing a conic trajectory. An operational trajectory is an estimate produced by integrating a stated initial state under a stated force model. It is not an immutable path.[^1]"@en ;
     rdfs:label "Orbital Dynamics"@en ;
     vc:hasMaturity ngmi:maturity-draft ;
     vc:qualityScore "0.0"^^xsd:float ;
@@ -183194,6 +183259,7 @@ ngm:orbital-eccentricity a owl:Class ;
     vc:slug "orbital-eccentricity" ;
     vc:sourceDomain "space-science-and-systems" .
 ngm:orbital-element a owl:Class ;
+    rdfs:comment "An orbital element is one value in a parameter set used to describe an orbit. For an ideal two-body trajectory, six independent quantities fix the orbit's size and shape, the orientation of its plane, the direction of periapsis and the body's position along the orbit at an epoch. Element sets are compact and useful for analysis, but their meaning depends on conventions that must accompany the six numbers.[^1][^2]"@en ;
     rdfs:label "Orbital Element"@en ;
     vc:hasMaturity ngmi:maturity-draft ;
     vc:qualityScore "0.0"^^xsd:float ;
@@ -185465,6 +185531,7 @@ ngm:passive-noise-isolation a skos:Concept ;
 ngm:passive-participation-tolerance a skos:Concept ;
     rdfs:label "Passive Participation Tolerance"@en .
 ngm:passive-remote-sensing a owl:Class ;
+    rdfs:comment "Passive remote sensing measures radiation supplied by a source outside the observing instrument. The signal may be sunlight reflected by the surface or atmosphere, thermal radiation emitted by the scene, or microwave emission. The instrument detects and records this radiation without transmitting the interrogation signal used for the observation.[^1] *Passive* describes the illumination arrangement, not the electrical power, complexity or calibration needs of the hardware."@en ;
     rdfs:label "Passive Remote Sensing"@en ;
     rdfs:subClassOf ngm:remote-sensing ;
     vc:hasMaturity ngmi:maturity-draft ;
@@ -185473,6 +185540,7 @@ ngm:passive-remote-sensing a owl:Class ;
     vc:slug "passive-remote-sensing" ;
     vc:sourceDomain "earth-observation-and-geospatial-sensing" .
 ngm:passive-thermal-control a owl:Class ;
+    rdfs:comment "Passive thermal control maintains spacecraft temperatures through material properties, geometry and unpowered heat transport. It uses no electrical power for the thermal-control function. Coatings, films, multilayer insulation (MLI), radiator surfaces, conductive straps, selected structural interfaces, sunshades, phase-change material and conventional heat pipes are established passive techniques.[^1]"@en ;
     rdfs:label "Passive Thermal Control"@en ;
     rdfs:subClassOf ngm:spacecraft-thermal-control ;
     vc:hasMaturity ngmi:maturity-draft ;
@@ -189491,6 +189559,7 @@ ngm:planetary-nebula a owl:Class ;
     vc:slug "planetary-nebula" ;
     vc:sourceDomain "space-science-and-systems" .
 ngm:planetary-protection a owl:Class ;
+    rdfs:comment "Planetary protection is the policy and engineering practice used to control biological and organic contamination during missions beyond Earth. Forward protection seeks to avoid harmful contamination of other celestial bodies and to preserve the scientific integrity of searches for chemical evolution or life. Backward protection addresses possible adverse changes to Earth's environment from extraterrestrial material returned by a spacecraft.[^1] It does not refer to asteroid-impact defence."@en ;
     rdfs:label "Planetary Protection"@en ;
     vc:hasMaturity ngmi:maturity-draft ;
     vc:qualityScore "0.0"^^xsd:float ;
@@ -192272,6 +192341,7 @@ ngm:power-battery a skos:Concept ;
 ngm:power-budget a skos:Concept ;
     rdfs:label "Power Budget"@en .
 ngm:power-conditioning-and-distribution a owl:Class ;
+    rdfs:comment "Power conditioning and distribution controls electrical energy between the source, battery, main bus and loads. Conditioning regulates the array and battery interfaces and creates usable rails. Distribution switches and protects load branches, measures their state and prevents a fault on one branch from collapsing the shared source or bus.[^1]"@en ;
     rdfs:label "Power Conditioning and Distribution"@en ;
     vc:bridgesTo ngm:power-management ;
     vc:hasMaturity ngmi:maturity-draft ;
@@ -192837,6 +192907,7 @@ ngm:precipitation-retrieval a owl:Class ;
 ngm:precise-control a skos:Concept ;
     rdfs:label "Precise Control"@en .
 ngm:precise-point-positioning a owl:Class ;
+    rdfs:comment "Precise Point Positioning, or PPP, estimates position from precise satellite orbit and clock products together with undifferenced pseudorange and carrier-phase observations at a single user receiver. It does not need a surveyed reference station close to that user, although global reference networks and processing centres are still required to generate the precise products.[^1]"@en ;
     rdfs:label "Precise Point Positioning"@en ;
     vc:hasMaturity ngmi:maturity-draft ;
     vc:qualityScore "0.0"^^xsd:float ;
@@ -197432,6 +197503,7 @@ ngm:project-verification a skos:Concept ;
 ngm:project44 a skos:Concept ;
     rdfs:label "Project44"@en .
 ngm:projected-coordinate-reference-system a owl:Class ;
+    rdfs:comment "A projected coordinate reference system (CRS) represents positions on a plane with Cartesian coordinates, normally eastings and northings. It is derived from a base geographic CRS by a map-projection conversion and inherits that base CRS's geodetic reference frame.[^1] Naming a projection method alone does not define the projected CRS."@en ;
     rdfs:label "Projected Coordinate Reference System"@en ;
     rdfs:subClassOf ngm:coordinate-reference-system ;
     vc:hasMaturity ngmi:maturity-draft ;
@@ -198166,6 +198238,7 @@ ngm:propagation-delay a owl:Class ;
 ngm:propagation-loss a skos:Concept ;
     rdfs:label "Propagation Loss"@en .
 ngm:propellant a owl:Class ;
+    rdfs:comment "Propellant is material carried or acquired by a vehicle and expelled to produce thrust. In a chemical rocket it also stores or participates in energy release. Cold-gas systems discharge pressurised fluid, while electric thrusters use electrical or magnetic fields to accelerate reaction mass.[^1][^3] “Fuel” names a combustible or energy-bearing constituent and is therefore not a synonym for every propellant."@en ;
     rdfs:label "Propellant"@en ;
     vc:hasMaturity ngmi:maturity-draft ;
     vc:qualityScore "0.0"^^xsd:float ;
@@ -202843,6 +202916,7 @@ ngm:radio-access-network a owl:Class ;
     vc:slug "radio-access-network" ;
     vc:sourceDomain "infrastructure" .
 ngm:radio-astronomy a owl:Class ;
+    rdfs:comment "Radio astronomy measures natural radio emission from objects and processes in space. Antennas convert incoming electromagnetic waves into electrical signals; receivers, timing systems and digital correlators then preserve and combine the measurements.[^1]"@en ;
     rdfs:label "Radio Astronomy"@en ;
     vc:hasMaturity ngmi:maturity-draft ;
     vc:qualityScore "0.0"^^xsd:float ;
@@ -205574,6 +205648,7 @@ ngm:reaction-time a skos:Concept ;
 ngm:reaction-time-methods a skos:Concept ;
     rdfs:label "Reaction Time Methods"@en .
 ngm:reaction-wheel a owl:Class ;
+    rdfs:comment "A reaction wheel is a motor-driven flywheel used to exchange angular momentum with a spacecraft. Accelerating the rotor produces an opposing torque on the spacecraft about the wheel's spin axis; decelerating it reverses that exchange. The wheel changes orientation without expelling propellant, but it provides no net external torque to the combined wheel-spacecraft system.[^1]"@en ;
     rdfs:label "Reaction Wheel"@en ;
     rdfs:subClassOf ngm:actuator ;
     vc:hasMaturity ngmi:maturity-draft ;
@@ -211389,6 +211464,7 @@ ngm:resilience-metric a owl:Class ;
 ngm:resilient-architecture a skos:Concept ;
     rdfs:label "Resilient Architecture"@en .
 ngm:resistojet a owl:Class ;
+    rdfs:comment "A resistojet is an electrothermal thruster. Electrical current heats a solid resistive element or heat exchanger; propellant takes up that heat and expands through a nozzle to produce thrust.[^1][^3] The propellant need not be ionised. This separates the mechanism from Hall-effect and gridded ion thrusters, which accelerate charged particles with fields, and from an arcjet, which transfers electrical energy through an arc in the gas."@en ;
     rdfs:label "Resistojet"@en ;
     rdfs:subClassOf ngm:thruster ;
     vc:hasMaturity ngmi:maturity-draft ;
@@ -215727,6 +215803,7 @@ ngm:roc-curve a owl:Class ;
     vc:supports ngm:imbalanced-classification ;
     vc:supports ngm:model-selection .
 ngm:rocket-equation a owl:Class ;
+    rdfs:comment "Ideal velocity capability relates to effective exhaust velocity and mass ratio through the rocket equation:"@en ;
     rdfs:label "Rocket Equation"@en ;
     vc:hasMaturity ngmi:maturity-draft ;
     vc:qualityScore "0.0"^^xsd:float ;
@@ -218199,6 +218276,7 @@ ngm:satellite-antenna a owl:Class ;
     vc:slug "satellite-antenna" ;
     vc:sourceDomain "space-science-and-systems" .
 ngm:satellite-based-augmentation-system a owl:Class ;
+    rdfs:comment "A satellite-based augmentation system, or SBAS, is a regional overlay that improves an underlying GNSS. Reference stations at surveyed locations observe satellite, clock and propagation errors; processing centres calculate corrections and integrity information; geostationary satellites then broadcast the messages to compatible receivers.[^1]"@en ;
     rdfs:label "Satellite-based Augmentation System"@en ;
     vc:hasMaturity ngmi:maturity-draft ;
     vc:qualityScore "0.0"^^xsd:float ;
@@ -218320,6 +218398,7 @@ ngm:satellite-imagery-analysis a skos:Concept ;
 ngm:satellite-link a skos:Concept ;
     rdfs:label "Satellite Link"@en .
 ngm:satellite-link-budget a owl:Class ;
+    rdfs:comment "A satellite link budget is an auditable calculation of the gains, losses and noise between a transmitter and receiver. It tests whether a chosen waveform and data rate meet their required carrier quality with adequate margin for a stated geometry and operating case. Separate budgets are normally needed for uplink and downlink, and for combinations of ground station, spacecraft antenna, data rate and mission phase.[^1]"@en ;
     rdfs:label "Satellite Link Budget"@en ;
     vc:hasMaturity ngmi:maturity-draft ;
     vc:qualityScore "0.0"^^xsd:float ;
@@ -230365,6 +230444,7 @@ ngm:software-testing a owl:Class ;
 ngm:software-transactional-memory a skos:Concept ;
     rdfs:label "Software Transactional Memory"@en .
 ngm:soil-moisture-retrieval a owl:Class ;
+    rdfs:comment "Soil moisture retrieval estimates near-surface soil water from microwave observations. A radiometer measures brightness temperature and a radar or scatterometer measures backscatter. Neither instrument observes volumetric water content directly. The retrieval uses the contrast between the dielectric properties of water and dry soil together with a model of temperature, vegetation, roughness and observation geometry.[^1][^2]"@en ;
     rdfs:label "Soil Moisture Retrieval"@en ;
     vc:hasMaturity ngmi:maturity-draft ;
     vc:qualityScore "0.0"^^xsd:float ;
@@ -230503,6 +230583,7 @@ ngm:solar-sail a owl:Class ;
     vc:slug "solar-sail" ;
     vc:sourceDomain "space-science-and-systems" .
 ngm:solar-wind a owl:Class ;
+    rdfs:comment "Solar wind is a continuous, variable flow of charged particles from the Sun's outer atmosphere. It carries the Sun's magnetic field through interplanetary space; solar rotation winds the large-scale field into a spiral, while waves and transient structures create local variation.[^1]"@en ;
     rdfs:label "Solar Wind"@en ;
     vc:hasMaturity ngmi:maturity-draft ;
     vc:qualityScore "0.0"^^xsd:float ;
@@ -231122,6 +231203,7 @@ ngm:space-probe a owl:Class ;
     vc:slug "space-probe" ;
     vc:sourceDomain "space-science-and-systems" .
 ngm:space-radiation a owl:Class ;
+    rdfs:comment "Space radiation is the mixed field of ionising particles encountered beyond the protection available at Earth's surface. It includes galactic cosmic rays, particles accelerated by solar events, trapped radiation belts and secondary particles produced when primary radiation strikes a spacecraft, habitat or human tissue.[^1]"@en ;
     rdfs:label "Space Radiation"@en ;
     vc:hasMaturity ngmi:maturity-draft ;
     vc:qualityScore "0.0"^^xsd:float ;
@@ -231230,6 +231312,7 @@ ngm:space-traffic-management a owl:Class ;
     vc:slug "space-traffic-management" ;
     vc:sourceDomain "space-science-and-systems" .
 ngm:space-weather a owl:Class ;
+    rdfs:comment "Space weather describes changing conditions from the Sun, through the solar wind, to Earth's magnetosphere, ionosphere and upper atmosphere. It includes solar flares, energetic particles, coronal mass ejections and changes in the background solar wind. Their effects form a connected physical system, but they travel at different speeds and do not produce a single, uniform warning time.[^1]"@en ;
     rdfs:label "Space Weather"@en ;
     vc:hasMaturity ngmi:maturity-draft ;
     vc:qualityScore "0.0"^^xsd:float ;
@@ -231275,6 +231358,7 @@ ngm:spacecraft-autonomy a owl:Class ;
     vc:slug "spacecraft-autonomy" ;
     vc:sourceDomain "space-science-and-systems" .
 ngm:spacecraft-battery a owl:Class ;
+    rdfs:comment "A spacecraft battery stores electrical energy for launch, eclipse, contingencies and demands above the generating source's instantaneous capability. Its nameplate capacity is only one design input. Voltage, permissible current, temperature, usable depth of discharge (DoD), ageing, protection and the required cycle life determine what the spacecraft can use.[^1]"@en ;
     rdfs:label "Spacecraft Battery"@en ;
     vc:hasMaturity ngmi:maturity-draft ;
     vc:qualityScore "0.0"^^xsd:float ;
@@ -231336,6 +231420,7 @@ ngm:spacecraft-docking a owl:Class ;
     vc:slug "spacecraft-docking" ;
     vc:sourceDomain "space-science-and-systems" .
 ngm:spacecraft-electrical-power-system a owl:Class ;
+    rdfs:comment "A spacecraft electrical power system generates or receives electrical energy, stores it when required, conditions it into usable voltages, distributes it to platform and payload loads, contains electrical faults and reports its state. Solar cells are one possible source; batteries are one possible store. Regulators, converters, switches, protection and telemetry connect them into a system that must remain safe through launch, deployment, sunlight, eclipse, manoeuvres and contingencies.[^1]"@en ;
     rdfs:label "Spacecraft Electrical Power System"@en ;
     rdfs:subClassOf ngm:spacecraft-subsystem ;
     vc:hasMaturity ngmi:maturity-draft ;
@@ -231467,6 +231552,7 @@ ngm:spacecraft-power-and-thermal-control a owl:Class ;
     vc:slug "spacecraft-power-and-thermal-control" ;
     vc:sourceDomain "space-science-and-systems" .
 ngm:spacecraft-power-budget a owl:Class ;
+    rdfs:comment "A spacecraft power budget is the controlled account of electrical demand, generation, storage, conditioning and distribution across mission modes and life. It records where each value applies, when loads operate together and how measured losses, uncertainty and margin affect the balance. A single total in watts cannot show whether a spacecraft survives a peak, an eclipse or repeated charge cycles.[^1]"@en ;
     rdfs:label "Spacecraft Power Budget"@en ;
     vc:hasMaturity ngmi:maturity-draft ;
     vc:qualityScore "0.0"^^xsd:float ;
@@ -231491,6 +231577,7 @@ ngm:spacecraft-proximity-operations a owl:Class ;
     vc:slug "spacecraft-proximity-operations" ;
     vc:sourceDomain "space-science-and-systems" .
 ngm:spacecraft-radiator a owl:Class ;
+    rdfs:comment "A spacecraft radiator is a thermally conductive surface arranged to emit internally generated heat towards a cold radiative sink. Equipment may mount directly to its panel or connect through a spreader, strap, heat pipe or fluid loop. The transport path moves heat to the radiator; the exposed surface releases it by infrared radiation.[^1][^2][^3]"@en ;
     rdfs:label "Spacecraft Radiator"@en ;
     vc:hasMaturity ngmi:maturity-draft ;
     vc:qualityScore "0.0"^^xsd:float ;
@@ -231528,6 +231615,7 @@ ngm:spacecraft-rendezvous a owl:Class ;
     vc:slug "spacecraft-rendezvous" ;
     vc:sourceDomain "space-science-and-systems" .
 ngm:spacecraft-solar-array a owl:Class ;
+    rdfs:comment "A spacecraft solar array is the complete assembly that converts sunlight into electrical power: photovoltaic cells and their interconnects are arranged into strings on one or more panels, with cabling, mounting hardware and any hinges, hold-down devices, release mechanisms or pointing drives. The array feeds a [[Spacecraft Electrical Power System]], which controls its operating point, stores energy and distributes power. Cell efficiency, panel power density and power delivered to a spacecraft bus describe different boundaries and should not be quoted as though they were the same.[^1][^2]"@en ;
     rdfs:label "Spacecraft Solar Array"@en ;
     vc:hasMaturity ngmi:maturity-draft ;
     vc:qualityScore "0.0"^^xsd:float ;
@@ -231573,6 +231661,7 @@ ngm:spacecraft-thermal-coating a owl:Class ;
     vc:slug "spacecraft-thermal-coating" ;
     vc:sourceDomain "space-science-and-systems" .
 ngm:spacecraft-thermal-control a owl:Class ;
+    rdfs:comment "Spacecraft thermal control keeps equipment, structures, fluids and payloads within their survival and operating temperature limits throughout the mission. It manages environmental heat, internally dissipated power, stored energy and radiative rejection. The subsystem commonly combines passive surfaces and heat paths with active heaters, coolers or fluid transport.[^1]"@en ;
     rdfs:label "Spacecraft Thermal Control"@en ;
     vc:bridgesTo ngm:thermal-management ;
     vc:hasMaturity ngmi:maturity-draft ;
@@ -232876,6 +232965,7 @@ ngm:specialised-governance-domains a skos:Concept ;
 ngm:specie-flow-mechanism a skos:Concept ;
     rdfs:label "Specie Flow Mechanism"@en .
 ngm:specific-impulse a owl:Class ;
+    rdfs:comment "Specific impulse measures impulse delivered per unit of expelled propellant mass. Two conventions are in active use, so every value needs a unit and definition."@en ;
     rdfs:label "Specific Impulse"@en ;
     vc:hasMaturity ngmi:maturity-draft ;
     vc:qualityScore "0.0"^^xsd:float ;
@@ -237946,6 +238036,7 @@ ngm:sun-sensor-geometry a owl:Class ;
     vc:slug "sun-sensor-geometry" ;
     vc:sourceDomain "earth-observation-and-geospatial-sensing" .
 ngm:sun-synchronous-orbit a owl:Class ;
+    rdfs:comment "A Sun-synchronous orbit (SSO) is an Earth orbit whose orbital plane precesses at approximately the same mean rate that the Sun appears to move around Earth, about 0.9856 degrees per day. This keeps the plane at an approximately fixed orientation to the Sun and gives successive observations at a controlled local solar time.[^1]"@en ;
     rdfs:label "Sun-synchronous Orbit"@en ;
     vc:hasMaturity ngmi:maturity-draft ;
     vc:qualityScore "0.0"^^xsd:float ;
@@ -240258,6 +240349,7 @@ ngm:synthesis-tutor a skos:Concept ;
 ngm:synthetic-advertising a skos:Concept ;
     rdfs:label "Synthetic Advertising"@en .
 ngm:synthetic-aperture-radar a owl:Class ;
+    rdfs:comment "Synthetic aperture radar (SAR) is an active microwave imaging method. A spacecraft or aircraft transmits pulses towards the surface and coherently combines the returning echoes recorded along its flight path. The platform's motion creates a synthetic aperture much longer than the physical antenna, enabling finer along-track resolution. The resulting complex data contain both amplitude and phase. Amplitude describes the strength of radar backscatter; phase records propagation-path information that can support interferometry.[^1]"@en ;
     rdfs:label "Synthetic Aperture Radar"@en ;
     rdfs:subClassOf ngm:active-remote-sensing ;
     rdfs:subClassOf ngm:microwave-remote-sensing ;
@@ -245214,6 +245306,7 @@ ngm:therapy-chatbot a skos:Concept ;
 ngm:therapy-environment a skos:Concept ;
     rdfs:label "Therapy Environment"@en .
 ngm:thermal-balance a owl:Class ;
+    rdfs:comment "Thermal balance is the accounting relationship between heat entering, generated within, stored by and rejected from a system. For a spacecraft, incoming terms include absorbed solar and planetary radiation and equipment dissipation; outgoing heat is mainly radiated to space. During a transient, the difference changes stored thermal energy and therefore temperature. At a stable steady state, net storage approaches zero.[^1]"@en ;
     rdfs:label "Thermal Balance"@en ;
     vc:hasMaturity ngmi:maturity-draft ;
     vc:qualityScore "0.0"^^xsd:float ;
@@ -245225,6 +245318,7 @@ ngm:thermal-design-power a skos:Concept ;
 ngm:thermal-dissipation a skos:Concept ;
     rdfs:label "Thermal Dissipation"@en .
 ngm:thermal-infrared-remote-sensing a owl:Class ;
+    rdfs:comment "Thermal infrared remote sensing measures radiance emitted by the surface and modified as it passes through the atmosphere. A calibrated sensor records top-of-atmosphere radiance in thermal bands. Retrieval algorithms correct for atmospheric absorption and emission and account for surface emissivity before converting the signal into an estimate of land-surface temperature (LST).[^1]"@en ;
     rdfs:label "Thermal Infrared Remote Sensing"@en ;
     rdfs:subClassOf ngm:remote-sensing ;
     vc:hasMaturity ngmi:maturity-draft ;
@@ -246086,6 +246180,7 @@ ngm:throughput-optimisation a owl:Class ;
 ngm:throughput-scaling a skos:Concept ;
     rdfs:label "Throughput Scaling"@en .
 ngm:thrust a owl:Class ;
+    rdfs:comment "Thrust is the force produced when a propulsion system ejects matter. Its SI unit is the newton, `N = kg m s^-2`. Thrust is a vector: magnitude, direction, line of action and time history all matter to a vehicle's translation and attitude."@en ;
     rdfs:label "Thrust"@en ;
     vc:hasMaturity ngmi:maturity-draft ;
     vc:qualityScore "0.0"^^xsd:float ;
@@ -257853,6 +257948,7 @@ ngm:veed-io a skos:Concept ;
 ngm:vega-lite a skos:Concept ;
     rdfs:label "Vega Lite"@en .
 ngm:vegetation-index a owl:Class ;
+    rdfs:comment "A vegetation index is a mathematical combination of spectral reflectances designed to emphasise vegetation-related contrast. The sensor first measures radiance. Calibration, atmospheric correction and, for some products, correction for viewing and illumination geometry produce the reflectances used in the index. The index is therefore a derived spectral quantity rather than a direct measurement of plant health, biomass or productivity.[^1][^2]"@en ;
     rdfs:label "Vegetation Index"@en ;
     vc:hasMaturity ngmi:maturity-draft ;
     vc:qualityScore "0.0"^^xsd:float ;

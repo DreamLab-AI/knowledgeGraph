@@ -34,6 +34,10 @@
   ],
   "backlinks": [
     {
+      "slug": "cold-gas-propulsion",
+      "label": "Cold Gas Propulsion"
+    },
+    {
       "slug": "launch-vehicle",
       "label": "Launch Vehicle"
     }

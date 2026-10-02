@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:optical-space-communication",
   "domain": "space-science-and-systems",
-  "definition": "",
+  "definition": "Optical space communication transfers information through free space on a modulated optical carrier, usually a laser. A link can connect two spacecraft or a spacecraft with an airborne or ground terminal. Current Consultative Committee for Space Data Systems standards specify physical-layer parameters for non-coherent optical links, providing an interoperability baseline rather than a complete terminal design.[^1]",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.0,
