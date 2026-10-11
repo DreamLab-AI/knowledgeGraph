@@ -9,6 +9,15 @@ maturity: established
 quality: 0
 is-a:
   - urn:ngm:class:data-structure
+bridgesTo:
+  - urn:ngm:class:change-detection
+  - urn:ngm:class:climate-data-record
+  - urn:ngm:class:earth-science-data-record
+  - urn:ngm:class:time-domain-astronomy
+relatedTo:
+  - urn:ngm:class:astronomical-photometry
+  - urn:ngm:class:exoplanet-transit-method
+  - urn:ngm:class:solar-cycle
 ---
 
 # Time Series

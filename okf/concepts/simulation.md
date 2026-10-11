@@ -34,6 +34,8 @@ bridgesTo:
   - urn:ngm:class:synthetic-data
   - urn:ngm:class:ai-safety
   - urn:ngm:class:robotics
+  - urn:ngm:class:radiative-transfer-model
+  - urn:ngm:class:spacecraft-thermal-model
 uses:
   - urn:ngm:class:physics-engine
   - urn:ngm:class:render-pipeline

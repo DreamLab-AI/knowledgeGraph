@@ -33,6 +33,9 @@ bridgesTo:
   - urn:ngm:class:3-d-reconstruction
   - urn:ngm:class:gesture-recognition
   - urn:ngm:class:extended-reality
+  - urn:ngm:class:location-based-service
+  - urn:ngm:class:geodesy
+  - urn:ngm:class:earth-observation-and-geospatial-sensing
 uses:
   - urn:ngm:class:computer-vision
   - urn:ngm:class:gpu-computing
@@ -44,6 +47,8 @@ uses:
 standardizedBy:
   - urn:ngm:class:open-xr
   - urn:ngm:class:web-xr
+relatedTo:
+  - urn:ngm:class:positioning-navigation-and-timing
 ---
 
 # Spatial Computing

@@ -9,8 +9,12 @@ maturity: draft
 quality: 0
 is-a:
   - urn:ngm:class:spacecraft-bus
+bridgesTo:
+  - urn:ngm:class:real-time-operating-system
 relatedTo:
   - urn:ngm:class:space-systems-engineering
+  - urn:ngm:class:software-testing
+  - urn:ngm:class:firmware
 ---
 
 # Flight Software

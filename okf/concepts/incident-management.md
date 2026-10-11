@@ -30,6 +30,8 @@ supports:
 relatedTo:
   - urn:ngm:class:itil
   - urn:ngm:class:chaos-engineering
+  - urn:ngm:class:mission-operations
+  - urn:ngm:class:mission-control-centre
 ---
 
 # Incident Management

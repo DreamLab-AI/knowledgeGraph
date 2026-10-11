@@ -11,8 +11,11 @@ is-a:
   - urn:ngm:class:spacecraft-bus
 bridgesTo:
   - urn:ngm:class:robotics
+  - urn:ngm:class:autonomous-system
+  - urn:ngm:class:automated-planning
 relatedTo:
   - urn:ngm:class:space-systems-engineering
+  - urn:ngm:class:fault-tolerant-control
 ---
 
 # Spacecraft Autonomy

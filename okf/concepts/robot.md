@@ -51,6 +51,7 @@ relatedTo:
   - urn:ngm:class:drone
   - urn:ngm:class:humanoid-robot
   - urn:ngm:class:cobotic-system
+  - urn:ngm:class:uncrewed-spacecraft
 ---
 
 # Robot

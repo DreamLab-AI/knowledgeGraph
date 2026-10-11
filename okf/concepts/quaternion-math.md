@@ -12,6 +12,8 @@ is-a:
 enables:
   - urn:ngm:class:animation-technique
   - urn:ngm:class:physics-simulation
+bridgesTo:
+  - urn:ngm:class:attitude-quaternion
 uses:
   - urn:ngm:class:rendering-technique
 relatedTo:

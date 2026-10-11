@@ -11,6 +11,7 @@ is-a:
   - urn:ngm:class:earth-observation-processing
 relatedTo:
   - urn:ngm:class:earth-observation-processing
+  - urn:ngm:class:data-quality
 ---
 
 # Missing Value

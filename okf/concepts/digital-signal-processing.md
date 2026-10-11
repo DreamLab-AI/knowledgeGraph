@@ -36,6 +36,7 @@ bridgesTo:
   - urn:ngm:class:spatial-computing
   - urn:ngm:class:internet-of-things
   - urn:ngm:class:telecommunications
+  - urn:ngm:class:radio-astronomy
 uses:
   - urn:ngm:class:field-programmable-gate-array
   - urn:ngm:class:graphics-processing-unit

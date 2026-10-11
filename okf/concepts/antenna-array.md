@@ -9,9 +9,12 @@ maturity: established
 quality: 0.72
 is-a:
   - urn:ngm:class:infra-network-and-comms
+bridgesTo:
+  - urn:ngm:class:satellite-antenna
 relatedTo:
   - urn:ngm:class:wireless-radio
   - urn:ngm:class:gps
+  - urn:ngm:class:radio-astronomy
 ---
 
 # Antenna Array

@@ -9,8 +9,12 @@ maturity: draft
 quality: 0
 is-a:
   - urn:ngm:class:earth-observation-data-quality
+bridgesTo:
+  - urn:ngm:class:uncertainty-quantification
+  - urn:ngm:class:statistics
 relatedTo:
   - urn:ngm:class:earth-observation-data-quality
+  - urn:ngm:class:dilution-of-precision
 ---
 
 # Measurement Uncertainty

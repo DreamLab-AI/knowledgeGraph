@@ -9,6 +9,8 @@ maturity: draft
 quality: 0
 is-a:
   - urn:ngm:class:vegetation-index
+bridgesTo:
+  - urn:ngm:class:precision-agriculture
 relatedTo:
   - urn:ngm:class:earth-observation-processing
 ---

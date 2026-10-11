@@ -21,6 +21,8 @@ uses:
 partOf:
   - urn:ngm:class:robotics
   - urn:ngm:class:mobile-robot
+relatedTo:
+  - urn:ngm:class:planetary-rover
 ---
 
 # Wheeled Mobile Robot

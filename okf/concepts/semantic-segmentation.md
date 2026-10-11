@@ -30,6 +30,7 @@ contrastsWith:
 bridgesTo:
   - urn:ngm:class:spatial-computing
   - urn:ngm:class:robotics-perception
+  - urn:ngm:class:remote-sensing-image-segmentation
 uses:
   - urn:ngm:class:deep-learning
   - urn:ngm:class:transfer-learning

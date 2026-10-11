@@ -9,6 +9,9 @@ maturity: draft
 quality: 0
 is-a:
   - urn:ngm:class:spacecraft-communications
+bridgesTo:
+  - urn:ngm:class:channel-coding
+  - urn:ngm:class:forward-error-correction
 relatedTo:
   - urn:ngm:class:satellite-communication
 ---

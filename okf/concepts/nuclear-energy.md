@@ -11,6 +11,7 @@ is-a:
   - urn:ngm:class:sustainability
 relatedTo:
   - urn:ngm:class:energy-and-power
+  - urn:ngm:class:radioisotope-power-system
 ---
 
 # Nuclear Energy

@@ -9,8 +9,11 @@ maturity: draft
 quality: 0
 is-a:
   - urn:ngm:class:geodesy
+bridgesTo:
+  - urn:ngm:class:reference-frames
 relatedTo:
   - urn:ngm:class:geodesy
+  - urn:ngm:class:positioning-navigation-and-timing
 ---
 
 # Geodetic Datum

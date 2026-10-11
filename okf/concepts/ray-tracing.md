@@ -17,7 +17,7 @@ is-a:
   - urn:ngm:class:monte-carlo-methods
 hasPart:
   - urn:ngm:class:acceleration-structure
-  - urn:ngm:class:brdf
+  - urn:ngm:class:bidirectional-reflectance-distribution-function
   - urn:ngm:class:bvh-acceleration-structure
   - urn:ngm:class:shading-model
   - urn:ngm:class:primary-ray
@@ -51,7 +51,7 @@ dependsOn:
   - urn:ngm:class:bvh-construction
   - urn:ngm:class:gpu-compute
   - urn:ngm:class:hardware-ray-tracing-cores
-  - urn:ngm:class:brdf
+  - urn:ngm:class:bidirectional-reflectance-distribution-function
   - urn:ngm:class:importance-sampling
 implements:
   - urn:ngm:class:importance-sampling
@@ -76,7 +76,7 @@ bridgesTo:
   - urn:ngm:class:computer-vision
 uses:
   - urn:ngm:class:ai-upscaling-and-super-resolution
-  - urn:ngm:class:brdf
+  - urn:ngm:class:bidirectional-reflectance-distribution-function
   - urn:ngm:class:dlss
   - urn:ngm:class:importance-sampling
   - urn:ngm:class:russian-roulette-termination

@@ -63,6 +63,7 @@ contrastsWith:
   - urn:ngm:class:spatial-data-analysis
 bridgesTo:
   - urn:ngm:class:data-management
+  - urn:ngm:class:space-weather-forecasting
 uses:
   - urn:ngm:class:bayesian-inference
   - urn:ngm:class:fourier-transform

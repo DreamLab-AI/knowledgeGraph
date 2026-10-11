@@ -34,6 +34,8 @@ dependsOn:
   - urn:ngm:class:power-electronics
 bridgesTo:
   - urn:ngm:class:ai-agent-system
+relatedTo:
+  - urn:ngm:class:reaction-wheel
 ---
 
 # Electric Motor

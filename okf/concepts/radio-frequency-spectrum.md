@@ -18,6 +18,8 @@ dependsOn:
   - urn:ngm:class:spectrum-allocation
 contrastsWith:
   - urn:ngm:class:bandwidth
+bridgesTo:
+  - urn:ngm:class:radio-frequency-communication
 uses:
   - urn:ngm:class:signal-processing
 supports:
@@ -30,6 +32,7 @@ partOf:
 relatedTo:
   - urn:ngm:class:bandwidth
   - urn:ngm:class:spectrum-management
+  - urn:ngm:class:gnss-interference
 ---
 
 # Radio Frequency Spectrum

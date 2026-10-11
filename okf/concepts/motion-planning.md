@@ -43,6 +43,7 @@ partOf:
 relatedTo:
   - urn:ngm:class:simultaneous-localisation-and-mapping
   - urn:ngm:class:task-planning
+  - urn:ngm:class:spacecraft-rendezvous
 ---
 
 # Motion Planning

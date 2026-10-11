@@ -35,6 +35,7 @@ relatedTo:
   - urn:ngm:class:simulation
   - urn:ngm:class:sensitivity-analysis
   - urn:ngm:class:bayesian-inference
+  - urn:ngm:class:spacecraft-guidance-navigation-and-control
 ---
 
 # Monte Carlo Simulation

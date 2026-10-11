@@ -59,6 +59,8 @@ contrastsWith:
   - urn:ngm:class:image-classification
   - urn:ngm:class:image-generation
   - urn:ngm:class:depth-estimation
+bridgesTo:
+  - urn:ngm:class:object-based-image-analysis
 uses:
   - urn:ngm:class:average-precision
   - urn:ngm:class:cross-entropy-loss

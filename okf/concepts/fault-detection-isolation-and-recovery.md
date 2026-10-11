@@ -9,8 +9,13 @@ maturity: draft
 quality: 0
 is-a:
   - urn:ngm:class:spacecraft-bus
+bridgesTo:
+  - urn:ngm:class:fault-tolerance
+  - urn:ngm:class:health-monitoring
 relatedTo:
   - urn:ngm:class:space-systems-engineering
+  - urn:ngm:class:fault-tolerant-control
+  - urn:ngm:class:anomaly-detection
 ---
 
 # Fault Detection Isolation and Recovery

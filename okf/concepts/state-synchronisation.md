@@ -17,7 +17,7 @@ hasPart:
 requires:
   - urn:ngm:class:network-communication
   - urn:ngm:class:distributed-system
-  - urn:ngm:class:clock-synchronization
+  - urn:ngm:class:time-synchronisation
   - urn:ngm:class:network-transport
   - urn:ngm:class:state-representation
   - urn:ngm:class:synchronization-protocol

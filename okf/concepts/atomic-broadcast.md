@@ -30,7 +30,7 @@ supports:
   - urn:ngm:class:crash-fault-tolerance
 relatedTo:
   - urn:ngm:class:consensus
-  - urn:ngm:class:clock-synchronization
+  - urn:ngm:class:time-synchronisation
   - urn:ngm:class:blockchain-consensus
 ---
 

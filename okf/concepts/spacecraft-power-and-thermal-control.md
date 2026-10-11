@@ -9,6 +9,8 @@ maturity: draft
 quality: 0
 is-a:
   - urn:ngm:class:space-science-and-systems
+relatedTo:
+  - urn:ngm:class:space-data-centers
 ---
 
 # Spacecraft Power and Thermal Control

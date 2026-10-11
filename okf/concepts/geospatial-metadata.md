@@ -9,6 +9,9 @@ maturity: draft
 quality: 0
 is-a:
   - urn:ngm:class:earth-observation-data-quality
+bridgesTo:
+  - urn:ngm:class:metadata
+  - urn:ngm:class:data-standards
 relatedTo:
   - urn:ngm:class:earth-observation-data-quality
 ---

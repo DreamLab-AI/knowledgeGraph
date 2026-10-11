@@ -26,7 +26,7 @@ bridgesTo:
   - urn:ngm:class:ethernet
   - urn:ngm:class:industry-4-0
 uses:
-  - urn:ngm:class:clock-synchronization
+  - urn:ngm:class:time-synchronisation
   - urn:ngm:class:quality-of-service
 standardizedBy:
   - urn:ngm:class:ieee-802-x

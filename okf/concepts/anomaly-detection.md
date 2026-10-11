@@ -43,6 +43,9 @@ bridgesTo:
   - urn:ngm:class:network-security
   - urn:ngm:class:sensor-data
   - urn:ngm:class:sensor-data
+  - urn:ngm:class:spacecraft-housekeeping-data
+  - urn:ngm:class:receiver-autonomous-integrity-monitoring
+  - urn:ngm:class:time-domain-astronomy
 uses:
   - urn:ngm:class:machine-learning
   - urn:ngm:class:pattern-recognition
@@ -68,6 +71,9 @@ relatedTo:
   - urn:ngm:class:change-point-detection
   - urn:ngm:class:foundation-model
   - urn:ngm:class:time-series
+  - urn:ngm:class:change-detection
+  - urn:ngm:class:fault-detection-isolation-and-recovery
+  - urn:ngm:class:gnss-jamming
 ---
 
 # Anomaly Detection

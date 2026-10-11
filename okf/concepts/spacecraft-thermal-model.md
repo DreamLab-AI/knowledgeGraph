@@ -9,6 +9,8 @@ maturity: draft
 quality: 0
 is-a:
   - urn:ngm:class:spacecraft-power-and-thermal-control
+bridgesTo:
+  - urn:ngm:class:simulation
 relatedTo:
   - urn:ngm:class:spacecraft-power-and-thermal-control
 ---

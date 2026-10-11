@@ -37,6 +37,7 @@ partOf:
 relatedTo:
   - urn:ngm:class:cybersecurity
   - urn:ngm:class:risk-management
+  - urn:ngm:class:gnss-jamming
 ---
 
 # Cyber Resilience

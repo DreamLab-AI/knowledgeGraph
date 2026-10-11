@@ -11,6 +11,7 @@ is-a:
   - urn:ngm:class:astronomy
 relatedTo:
   - urn:ngm:class:astronomy
+  - urn:ngm:class:signal-processing
 ---
 
 # Gravitational Wave

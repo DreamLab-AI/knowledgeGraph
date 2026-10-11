@@ -13,7 +13,7 @@ enables:
   - urn:ngm:class:fault-tolerance
   - urn:ngm:class:replication
 uses:
-  - urn:ngm:class:clock-synchronization
+  - urn:ngm:class:time-synchronisation
 relatedTo:
   - urn:ngm:class:distributed-systems
 ---

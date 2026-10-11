@@ -68,6 +68,10 @@ contrastsWith:
   - urn:ngm:class:teleoperation
   - urn:ngm:class:scripted-motion
   - urn:ngm:class:open-loop-control
+bridgesTo:
+  - urn:ngm:class:spacecraft-guidance-navigation-and-control
+  - urn:ngm:class:spacecraft-navigation
+  - urn:ngm:class:positioning-navigation-and-timing
 uses:
   - urn:ngm:class:imu
   - urn:ngm:class:neural-network

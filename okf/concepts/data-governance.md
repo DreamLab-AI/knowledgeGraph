@@ -44,6 +44,7 @@ relatedTo:
   - urn:ngm:class:data-privacy
   - urn:ngm:class:data-security
   - urn:ngm:class:enterprise-architecture
+  - urn:ngm:class:data-archiving
 ---
 
 # Data Governance

@@ -11,6 +11,8 @@ is-a:
   - urn:ngm:class:earth-observation-processing
 bridgesTo:
   - urn:ngm:class:computer-vision
+  - urn:ngm:class:feature-extraction
+  - urn:ngm:class:machine-learning
 relatedTo:
   - urn:ngm:class:earth-observation-processing
 ---

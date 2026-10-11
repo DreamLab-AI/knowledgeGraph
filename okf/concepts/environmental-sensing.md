@@ -12,6 +12,7 @@ is-a:
 relatedTo:
   - urn:ngm:class:context-awareness
   - urn:ngm:class:sensor
+  - urn:ngm:class:earth-observation-sensor
 ---
 
 # Environmental Sensing

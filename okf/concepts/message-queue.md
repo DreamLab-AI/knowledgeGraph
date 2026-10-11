@@ -48,6 +48,7 @@ relatedTo:
   - urn:ngm:class:cloud-computing
   - urn:ngm:class:event-sourcing
   - urn:ngm:class:data-integration
+  - urn:ngm:class:store-and-forward-communication
 ---
 
 # Message Queue

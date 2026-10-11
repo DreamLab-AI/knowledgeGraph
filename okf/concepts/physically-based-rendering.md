@@ -10,7 +10,7 @@ quality: 0.74
 is-a:
   - urn:ngm:class:rendering-technique
 hasPart:
-  - urn:ngm:class:brdf
+  - urn:ngm:class:bidirectional-reflectance-distribution-function
   - urn:ngm:class:normal-map
   - urn:ngm:class:environment-mapping
   - urn:ngm:class:microfacet-model

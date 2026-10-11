@@ -11,6 +11,7 @@ is-a:
   - urn:ngm:class:spacecraft-bus
 relatedTo:
   - urn:ngm:class:space-systems-engineering
+  - urn:ngm:class:incident-management
 ---
 
 # Mission Control Centre

@@ -26,14 +26,14 @@ hasPart:
   - urn:ngm:class:view-change
 requires:
   - urn:ngm:class:incentive-mechanism
-  - urn:ngm:class:clock-synchronization
+  - urn:ngm:class:time-synchronisation
   - urn:ngm:class:validator-registry
   - urn:ngm:class:blockchain-network
   - urn:ngm:class:cryptographic-hash
   - urn:ngm:class:digital-signature
   - urn:ngm:class:peer-to-peer-network
   - urn:ngm:class:economic-incentive
-  - urn:ngm:class:clock-synchronization
+  - urn:ngm:class:time-synchronisation
 enables:
   - urn:ngm:class:blockchain-security
   - urn:ngm:class:double-spend-prevention

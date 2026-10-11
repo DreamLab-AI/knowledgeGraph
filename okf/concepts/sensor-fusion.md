@@ -44,6 +44,7 @@ partOf:
 relatedTo:
   - urn:ngm:class:probabilistic-robotics
   - urn:ngm:class:point-cloud
+  - urn:ngm:class:multi-constellation-gnss
 ---
 
 # Sensor Fusion

@@ -9,6 +9,8 @@ maturity: draft
 quality: 0
 is-a:
   - urn:ngm:class:spacecraft-propulsion
+bridgesTo:
+  - urn:ngm:class:power-electronics
 relatedTo:
   - urn:ngm:class:electric-propulsion
   - urn:ngm:class:power-conditioning-and-distribution

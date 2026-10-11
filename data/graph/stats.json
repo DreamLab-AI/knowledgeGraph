@@ -1,8 +1,8 @@
 {
   "pipelineVersion": "ng-1.0.0",
-  "attributedTo": "did:nostr:jjohare",
+  "attributedTo": "did:nostr:d598abc6edefc37e10523aec4c00f8d9674a93791aa34a1db03bfa9b60b9f246",
   "provenance": {
-    "did": "did:nostr:jjohare",
+    "did": "did:nostr:d598abc6edefc37e10523aec4c00f8d9674a93791aa34a1db03bfa9b60b9f246",
     "label": "DreamLab AI",
     "corpusNature": "synthetic-ai-generated-human-directed"
   },
@@ -11,35 +11,35 @@
     "description": "Mostly AI-generated synthetic content, produced under human direction, by design \u2014 this corpus exists to exercise and demonstrate the VisionFlow pipeline and VisionClaw engine on a medium-scale ontology (~8.1k classes, ~100k relations). Provenance (did:nostr, generatedAtTime, URNs) attests traceable generation under human direction, not human authorship."
   },
   "datasetDate": "2026-10-11",
-  "pages": 9246,
-  "classes": 9248,
+  "pages": 9242,
+  "classes": 9244,
   "individuals": 0,
-  "nodes": 9248,
+  "nodes": 9244,
   "domains": 8,
   "categories": 53,
   "uncategorised": 3,
   "domainless": 0,
   "bridging": {
-    "multiParent": 2333,
-    "crossCategory": 1170,
-    "crossDomain": 648
+    "multiParent": 2377,
+    "crossCategory": 1211,
+    "crossDomain": 690
   },
   "edges": {
-    "declared": 150984,
-    "declaredBackbone": 13574,
-    "declaredRelations": 137410,
-    "resolvable": 114358,
-    "backbone": 12594,
-    "relations": 101764
+    "declared": 151641,
+    "declaredBackbone": 13617,
+    "declaredRelations": 138024,
+    "resolvable": 115013,
+    "backbone": 12637,
+    "relations": 102376
   },
   "scopes": {
     "full": {
-      "nodes": 9248,
-      "backbone": 12594,
-      "relations": 101764,
-      "shipped": 114358,
+      "nodes": 9244,
+      "backbone": 12637,
+      "relations": 102376,
+      "shipped": 115013,
       "relationsCapped": 0,
-      "bytes": 1567955
+      "bytes": 1570847
     },
     "domain-artificial-intelligence": {
       "nodes": 1500,
@@ -52,29 +52,29 @@
     },
     "domain-blockchain": {
       "nodes": 1500,
-      "backbone": 1646,
+      "backbone": 1648,
       "relations": 8127,
-      "shipped": 9773,
+      "shipped": 9775,
       "relationsCapped": 5568,
-      "bytes": 206807,
+      "bytes": 206815,
       "nodesTruncated": 7
     },
     "domain-spatial-computing": {
-      "nodes": 1229,
-      "backbone": 1404,
-      "relations": 4766,
-      "shipped": 6170,
-      "relationsCapped": 1622,
-      "bytes": 164798,
+      "nodes": 1228,
+      "backbone": 1403,
+      "relations": 4764,
+      "shipped": 6167,
+      "relationsCapped": 1617,
+      "bytes": 164702,
       "nodesTruncated": 0
     },
     "domain-robotics": {
-      "nodes": 596,
-      "backbone": 799,
-      "relations": 3080,
-      "shipped": 3879,
-      "relationsCapped": 1274,
-      "bytes": 82936,
+      "nodes": 594,
+      "backbone": 797,
+      "relations": 3072,
+      "shipped": 3869,
+      "relationsCapped": 1271,
+      "bytes": 82698,
       "nodesTruncated": 0
     },
     "domain-distributed-collaboration": {
@@ -88,29 +88,29 @@
     },
     "domain-infrastructure": {
       "nodes": 1500,
-      "backbone": 1411,
-      "relations": 10372,
-      "shipped": 11783,
-      "relationsCapped": 5475,
-      "bytes": 217707,
-      "nodesTruncated": 1275
+      "backbone": 1414,
+      "relations": 10377,
+      "shipped": 11791,
+      "relationsCapped": 5481,
+      "bytes": 217770,
+      "nodesTruncated": 1274
     },
     "domain-space-science-and-systems": {
       "nodes": 545,
-      "backbone": 528,
+      "backbone": 544,
       "relations": 560,
-      "shipped": 1088,
+      "shipped": 1104,
       "relationsCapped": 0,
-      "bytes": 65494,
+      "bytes": 65574,
       "nodesTruncated": 0
     },
     "domain-earth-observation-and-geospatial-sensing": {
       "nodes": 389,
-      "backbone": 365,
+      "backbone": 387,
       "relations": 424,
-      "shipped": 789,
+      "shipped": 811,
       "relationsCapped": 0,
-      "bytes": 46732,
+      "bytes": 46840,
       "nodesTruncated": 0
     }
   }

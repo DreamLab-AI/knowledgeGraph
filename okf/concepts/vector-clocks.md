@@ -8,13 +8,13 @@ description: A mechanism for ordering events in a distributed system by assignin
 maturity: established
 quality: 0.6
 is-a:
-  - urn:ngm:class:clock-synchronization
+  - urn:ngm:class:time-synchronisation
 requires:
   - urn:ngm:class:distributed-computing
 enables:
   - urn:ngm:class:eventual-consistency
 bridgesTo:
-  - urn:ngm:class:clock-synchronization
+  - urn:ngm:class:time-synchronisation
 ---
 
 # Vector Clocks

@@ -26,7 +26,7 @@ supports:
 partOf:
   - urn:ngm:class:global-illumination
 relatedTo:
-  - urn:ngm:class:brdf
+  - urn:ngm:class:bidirectional-reflectance-distribution-function
   - urn:ngm:class:physically-based-rendering
   - urn:ngm:class:ray-tracing
   - urn:ngm:class:texture-mapping

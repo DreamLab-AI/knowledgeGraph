@@ -9,8 +9,12 @@ maturity: draft
 quality: 0
 is-a:
   - urn:ngm:class:earth-observation-processing
+bridgesTo:
+  - urn:ngm:class:computer-vision
+  - urn:ngm:class:time-series
 relatedTo:
   - urn:ngm:class:earth-observation-processing
+  - urn:ngm:class:anomaly-detection
 ---
 
 # Change Detection

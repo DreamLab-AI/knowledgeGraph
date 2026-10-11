@@ -22,6 +22,7 @@ implements:
   - urn:ngm:class:quality-assurance
 bridgesTo:
   - urn:ngm:class:software-engineering
+  - urn:ngm:class:space-systems-engineering
 uses:
   - urn:ngm:class:risk-assessment
 supports:
@@ -33,6 +34,7 @@ partOf:
 relatedTo:
   - urn:ngm:class:systems-engineering
   - urn:ngm:class:software-engineering
+  - urn:ngm:class:mission-design
 ---
 
 # Requirements Engineering

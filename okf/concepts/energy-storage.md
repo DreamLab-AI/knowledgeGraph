@@ -19,6 +19,7 @@ dependsOn:
   - urn:ngm:class:renewable-energy
 bridgesTo:
   - urn:ngm:class:renewable-energy
+  - urn:ngm:class:spacecraft-battery
 uses:
   - urn:ngm:class:power-grid
 supports:

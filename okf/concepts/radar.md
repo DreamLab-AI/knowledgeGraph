@@ -32,6 +32,8 @@ bridgesTo:
   - urn:ngm:class:sensors
   - urn:ngm:class:air-traffic-control
   - urn:ngm:class:environmental-sensing
+  - urn:ngm:class:synthetic-aperture-radar
+  - urn:ngm:class:doppler-radar
 uses:
   - urn:ngm:class:doppler-effect
   - urn:ngm:class:time-of-flight

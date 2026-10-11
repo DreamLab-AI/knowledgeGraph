@@ -13,6 +13,8 @@ enables:
   - urn:ngm:class:remote-work
   - urn:ngm:class:precision-medicine
   - urn:ngm:class:clinical-decision-support
+bridgesTo:
+  - urn:ngm:class:crew-health-monitoring
 uses:
   - urn:ngm:class:video-conferencing
   - urn:ngm:class:io-t-sensor-network

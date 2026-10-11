@@ -22,6 +22,9 @@ enables:
   - urn:ngm:class:incident-response
 dependsOn:
   - urn:ngm:class:infrastructure
+bridgesTo:
+  - urn:ngm:class:fault-detection-isolation-and-recovery
+  - urn:ngm:class:spacecraft-housekeeping-data
 supports:
   - urn:ngm:class:reliability-engineering
   - urn:ngm:class:load-balancing

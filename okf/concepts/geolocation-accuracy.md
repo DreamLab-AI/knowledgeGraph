@@ -11,6 +11,7 @@ is-a:
   - urn:ngm:class:measurement-accuracy
 relatedTo:
   - urn:ngm:class:earth-observation-data-quality
+  - urn:ngm:class:localisation
 ---
 
 # Geolocation Accuracy

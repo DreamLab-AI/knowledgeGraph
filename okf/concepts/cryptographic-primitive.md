@@ -8,8 +8,9 @@ description: "The fundamental atomic building blocks of all cryptographic system
 maturity: emerging
 quality: 0.75
 is-a:
-  - urn:ngm:class:cryptography
   - urn:ngm:class:bc-cryptographic-primitive
+  - urn:ngm:class:cryptography
+  - urn:ngm:class:blockchain
 hasPart:
   - urn:ngm:class:hash-function
   - urn:ngm:class:symmetric-encryption

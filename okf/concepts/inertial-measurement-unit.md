@@ -20,7 +20,7 @@ enables:
   - urn:ngm:class:sensor-fusion
   - urn:ngm:class:odometry
   - urn:ngm:class:dead-reckoning
-  - urn:ngm:class:attitude-estimation
+  - urn:ngm:class:attitude-determination
   - urn:ngm:class:visual-inertial-odometry
 contrastsWith:
   - urn:ngm:class:wheel-odometry
@@ -40,7 +40,7 @@ partOf:
 relatedTo:
   - urn:ngm:class:slam
   - urn:ngm:class:pose-estimation
-  - urn:ngm:class:gnss
+  - urn:ngm:class:global-navigation-satellite-system
   - urn:ngm:class:lidar
   - urn:ngm:class:allan-variance
 ---

@@ -12,8 +12,13 @@ is-a:
   - urn:ngm:class:spacecraft
 bridgesTo:
   - urn:ngm:class:autonomous-navigation
+  - urn:ngm:class:space-robotics
+  - urn:ngm:class:visual-odometry
+  - urn:ngm:class:path-planning
 relatedTo:
   - urn:ngm:class:space-systems-engineering
+  - urn:ngm:class:teleoperation
+  - urn:ngm:class:wheeled-mobile-robot
 ---
 
 # Planetary Rover

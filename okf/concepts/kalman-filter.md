@@ -37,6 +37,8 @@ contrastsWith:
 bridgesTo:
   - urn:ngm:class:inertial-navigation-system
   - urn:ngm:class:gps
+  - urn:ngm:class:soil-moisture-retrieval
+  - urn:ngm:class:orbit-determination
 uses:
   - urn:ngm:class:rb-1008-odometry
   - urn:ngm:class:mean-squared-error
@@ -48,6 +50,7 @@ relatedTo:
   - urn:ngm:class:signal-processing
   - urn:ngm:class:localisation
   - urn:ngm:class:closed-loop-control
+  - urn:ngm:class:earth-observation-data-assimilation
 ---
 
 # Kalman Filter

@@ -35,6 +35,7 @@ bridgesTo:
   - urn:ngm:class:onnx-standard
   - urn:ngm:class:decentralised-identity
   - urn:ngm:class:federated-learning
+  - urn:ngm:class:spatiotemporal-asset-catalogue
 uses:
   - urn:ngm:class:request-for-comments
   - urn:ngm:class:technical-committee

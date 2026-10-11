@@ -9617,7 +9617,8 @@
       "Active Remote Sensing"
     ],
     "is_subclass_of": [
-      "Remote Sensing"
+      "Remote Sensing",
+      "Earth Observation Sensor"
     ],
     "wikilinks": []
   },
@@ -12679,7 +12680,8 @@
       "Airborne Remote Sensing"
     ],
     "is_subclass_of": [
-      "Remote Sensing"
+      "Remote Sensing",
+      "Earth Observation Sensor"
     ],
     "wikilinks": []
   },
@@ -17803,33 +17805,17 @@
     "title": "Attitude Determination",
     "domain": "space-science-and-systems",
     "domain_name": "Space Science And Systems",
-    "definition": "Attitude determination estimates a spacecraft's orientation relative to a stated reference frame. Sensors measure star directions, the Sun vector, a magnetic-field vector or angular rate. An estimator combines those measurements with reference models and rotational dynamics to produce an attitude estimate, often with angular rate, sensor bias and covariance. The estimate is therefore an inference from observations rather than a direct sensor reading.[^1][^3]",
+    "definition": "Attitude estimation is the process of determining the orientation of a rigid body, typically expressed as roll, pitch and yaw or as a quaternion, relative to a reference frame. It fuses measurements from an inertial measurement unit's gyroscopes, accelerometers and magnetometers using sensor-fusion algorithms such as complementary or Kalman filters to counteract individual sensor drift and noise. Accurate attitude estimation is a prerequisite for stable flight control, robot balancing and any system that must reason about its own orientation in space.",
     "entityType": "Class",
     "qualityScore": 0.0,
     "maturity": "draft",
     "iri": "urn:ngm:class:attitude-determination",
     "labels": [
-      "Attitude Determination"
-    ],
-    "is_subclass_of": [
-      "Spacecraft Guidance Navigation and Control"
-    ],
-    "wikilinks": []
-  },
-  {
-    "id": "attitude-estimation",
-    "title": "Attitude Estimation",
-    "domain": "robotics",
-    "domain_name": "Robotics",
-    "definition": "Attitude estimation is the process of determining the orientation of a rigid body, typically expressed as roll, pitch and yaw or as a quaternion, relative to a reference frame. It fuses measurements from an inertial measurement unit's gyroscopes, accelerometers and magnetometers using sensor-fusion algorithms such as complementary or Kalman filters to counteract individual sensor drift and noise. Accurate attitude estimation is a prerequisite for stable flight control, robot balancing and any system that must reason about its own orientation in space.",
-    "entityType": "Class",
-    "qualityScore": 0.55,
-    "maturity": "established",
-    "iri": "urn:ngm:class:attitude-estimation",
-    "labels": [
+      "Attitude Determination",
       "Attitude Estimation"
     ],
     "is_subclass_of": [
+      "Spacecraft Guidance Navigation and Control",
       "Sensor Fusion"
     ],
     "wikilinks": []
@@ -21956,25 +21942,6 @@
     ]
   },
   {
-    "id": "brdf",
-    "title": "BRDF",
-    "domain": "metaverse",
-    "domain_name": "Metaverse",
-    "definition": "A Bidirectional Reflectance Distribution Function (BRDF) is a function that defines how light is reflected at an opaque surface, giving the ratio of reflected radiance to incident irradiance for each pair of incoming and outgoing directions. It encodes material appearance such as diffuse, glossy, and specular behaviour and is the core of physically based shading. Renderers evaluate the BRDF at surface intersections to compute realistic light transport.",
-    "entityType": "Class",
-    "qualityScore": 0.72,
-    "maturity": "established",
-    "iri": "urn:ngm:class:brdf",
-    "labels": [
-      "BRDF",
-      "BRDF Function"
-    ],
-    "is_subclass_of": [
-      "Rendering Technique"
-    ],
-    "wikilinks": []
-  },
-  {
     "id": "bsi-germany",
     "title": "BSI Germany",
     "domain": "security",
@@ -24371,16 +24338,19 @@
     "title": "Bidirectional Reflectance Distribution Function",
     "domain": "earth-observation-and-geospatial-sensing",
     "domain_name": "Earth Observation And Geospatial Sensing",
-    "definition": "A bidirectional reflectance distribution function specifies how a surface scatters light into a given viewing direction as a function of the illumination geometry, the view geometry and the wavelength.[^1][^2]",
+    "definition": "A Bidirectional Reflectance Distribution Function (BRDF) is a function that defines how light is reflected at an opaque surface, giving the ratio of reflected radiance to incident irradiance for each pair of incoming and outgoing directions. It encodes material appearance such as diffuse, glossy, and specular behaviour and is the core of physically based shading. Renderers evaluate the BRDF at surface intersections to compute realistic light transport.",
     "entityType": "Class",
     "qualityScore": 0.0,
     "maturity": "draft",
     "iri": "urn:ngm:class:bidirectional-reflectance-distribution-function",
     "labels": [
-      "Bidirectional Reflectance Distribution Function"
+      "Bidirectional Reflectance Distribution Function",
+      "BRDF Function",
+      "BRDF"
     ],
     "is_subclass_of": [
-      "Earth Observation Processing"
+      "Earth Observation Processing",
+      "Rendering Technique"
     ],
     "wikilinks": []
   },
@@ -34868,26 +34838,6 @@
     "wikilinks": []
   },
   {
-    "id": "clock-synchronization",
-    "title": "Clock Synchronization",
-    "domain": "infrastructure",
-    "domain_name": "Infrastructure",
-    "definition": "Clock Synchronization is the process of coordinating the time references of distributed computing nodes or electronic systems so that they share a consistent and accurate notion of time, enabling correct ordering of events, coordinated actions, and time-stamped record-keeping. Protocols such as NTP (Network Time Protocol) and PTP (Precision Time Protocol, IEEE 1588) achieve synchronization by exchanging timestamped messages and compensating for network propagation delays. Accurate clock synchronization is critical for distributed databases, consensus algorithms, telecommunications, industrial control systems, and financial transaction ordering.",
-    "entityType": "Class",
-    "qualityScore": 0.8,
-    "maturity": "mature",
-    "iri": "urn:ngm:class:clock-synchronization",
-    "labels": [
-      "Clock Synchronization",
-      "Clock Synchronisation",
-      "Synchronised Clock"
-    ],
-    "is_subclass_of": [
-      "Network Synchronization"
-    ],
-    "wikilinks": []
-  },
-  {
     "id": "closed-world-assumption",
     "title": "Closed World Assumption",
     "domain": "artificial-intelligence",
@@ -39119,7 +39069,8 @@
       "Compound Coordinate Reference System"
     ],
     "is_subclass_of": [
-      "Coordinate Reference System"
+      "Coordinate Reference System",
+      "Spatial Reference System"
     ],
     "wikilinks": []
   },
@@ -43901,7 +43852,8 @@
       "Control Moment Gyroscope"
     ],
     "is_subclass_of": [
-      "Actuator"
+      "Actuator",
+      "Attitude Control"
     ],
     "wikilinks": [
       "Reaction Wheel"
@@ -48398,8 +48350,9 @@
       "CryptographicPrimitive"
     ],
     "is_subclass_of": [
+      "Cryptographic Primitive (category)",
       "Cryptography",
-      "Cryptographic Primitive (category)"
+      "Blockchain"
     ],
     "wikilinks": [
       "AI Agent System",
@@ -52658,7 +52611,8 @@
       "Health Data Management"
     ],
     "is_subclass_of": [
-      "Data Management (category)"
+      "Data Management (category)",
+      "Infrastructure"
     ],
     "wikilinks": [
       "Blockchain",
@@ -64910,7 +64864,8 @@
       "Dynamic Coordinate Reference System"
     ],
     "is_subclass_of": [
-      "Coordinate Reference System"
+      "Coordinate Reference System",
+      "Spatial Reference System"
     ],
     "wikilinks": []
   },
@@ -68698,7 +68653,8 @@
       "Earth Observation Sensor Fusion"
     ],
     "is_subclass_of": [
-      "Sensor Fusion"
+      "Sensor Fusion",
+      "Earth Observation Processing"
     ],
     "wikilinks": []
   },
@@ -82733,7 +82689,8 @@
       "GNSS Radio Occultation"
     ],
     "is_subclass_of": [
-      "Remote Sensing"
+      "Remote Sensing",
+      "Earth Observation Sensor"
     ],
     "wikilinks": []
   },
@@ -82751,7 +82708,8 @@
       "GNSS Receiver"
     ],
     "is_subclass_of": [
-      "Sensor"
+      "Sensor",
+      "Global Navigation Satellite System"
     ],
     "wikilinks": []
   },
@@ -82769,7 +82727,8 @@
       "GNSS Reflectometry"
     ],
     "is_subclass_of": [
-      "Remote Sensing"
+      "Remote Sensing",
+      "Earth Observation Sensor"
     ],
     "wikilinks": []
   },
@@ -84989,7 +84948,8 @@
       "Geodetic Coordinate Reference System"
     ],
     "is_subclass_of": [
-      "Coordinate Reference System"
+      "Coordinate Reference System",
+      "Spatial Reference System"
     ],
     "wikilinks": []
   },
@@ -85079,7 +85039,8 @@
       "Geographic Coordinate Reference System"
     ],
     "is_subclass_of": [
-      "Coordinate Reference System"
+      "Coordinate Reference System",
+      "Spatial Reference System"
     ],
     "wikilinks": []
   },
@@ -85261,7 +85222,8 @@
       "Geometric Calibration"
     ],
     "is_subclass_of": [
-      "Calibration"
+      "Calibration",
+      "Earth Observation Processing"
     ],
     "wikilinks": []
   },
@@ -86192,16 +86154,19 @@
     "title": "Global Navigation Satellite System",
     "domain": "space-science-and-systems",
     "domain_name": "Space Science And Systems",
-    "definition": "A global navigation satellite system, or GNSS, provides positioning, navigation and timing from constellations of satellites. The complete system includes a space segment, a control segment and user receivers; an individual navigation satellite cannot provide a full position solution by itself.[^1]",
+    "definition": "A Global Navigation Satellite System (GNSS) is a constellation of satellites that broadcast timed signals enabling receivers to compute their absolute position, velocity and time anywhere on Earth. GPS, Galileo, GLONASS and BeiDou are the principal systems, with receivers trilaterating position from signal travel times across multiple satellites. In robotics, GNSS provides global geo-referenced localisation that anchors local sensor-based estimates to an absolute coordinate frame.",
     "entityType": "Class",
     "qualityScore": 0.0,
     "maturity": "draft",
     "iri": "urn:ngm:class:global-navigation-satellite-system",
     "labels": [
-      "Global Navigation Satellite System"
+      "Global Navigation Satellite System",
+      "GNSS"
     ],
     "is_subclass_of": [
-      "Navigation System"
+      "Navigation System",
+      "Spacecraft Subsystem",
+      "Localization"
     ],
     "wikilinks": []
   },
@@ -86345,25 +86310,6 @@
       "Ethereum Smart Contracts",
       "Ethereum"
     ]
-  },
-  {
-    "id": "gnss",
-    "title": "Gnss",
-    "domain": "robotics",
-    "domain_name": "Robotics",
-    "definition": "A Global Navigation Satellite System (GNSS) is a constellation of satellites that broadcast timed signals enabling receivers to compute their absolute position, velocity and time anywhere on Earth. GPS, Galileo, GLONASS and BeiDou are the principal systems, with receivers trilaterating position from signal travel times across multiple satellites. In robotics, GNSS provides global geo-referenced localisation that anchors local sensor-based estimates to an absolute coordinate frame.",
-    "entityType": "Class",
-    "qualityScore": 0.62,
-    "maturity": "mature",
-    "iri": "urn:ngm:class:gnss",
-    "labels": [
-      "Gnss",
-      "GNSS"
-    ],
-    "is_subclass_of": [
-      "Localization"
-    ],
-    "wikilinks": []
   },
   {
     "id": "go-quorum",
@@ -88820,7 +88766,8 @@
       "Ground-based Remote Sensing"
     ],
     "is_subclass_of": [
-      "Remote Sensing"
+      "Remote Sensing",
+      "Earth Observation Sensor"
     ],
     "wikilinks": []
   },
@@ -92131,7 +92078,8 @@
       "Horizon Sensor"
     ],
     "is_subclass_of": [
-      "Sensor"
+      "Sensor",
+      "Attitude Determination"
     ],
     "wikilinks": []
   },
@@ -113936,7 +113884,6 @@
       "Low-Rank Adaptation",
       "Low-Rank Factorisation",
       "Rank Decomposition",
-      "LoRA",
       "LoRA Adaptation",
       "LongLoRA",
       "Lo RA"
@@ -115260,7 +115207,8 @@
       "Magnetorquer"
     ],
     "is_subclass_of": [
-      "Actuator"
+      "Actuator",
+      "Attitude Control"
     ],
     "wikilinks": []
   },
@@ -115784,7 +115732,8 @@
       "Marine Remote Sensing"
     ],
     "is_subclass_of": [
-      "Remote Sensing"
+      "Remote Sensing",
+      "Earth Observation Sensor"
     ],
     "wikilinks": []
   },
@@ -120727,7 +120676,8 @@
       "Microwave Remote Sensing"
     ],
     "is_subclass_of": [
-      "Remote Sensing"
+      "Remote Sensing",
+      "Earth Observation Sensor"
     ],
     "wikilinks": []
   },
@@ -123683,7 +123633,8 @@
       "Momentum Wheel"
     ],
     "is_subclass_of": [
-      "Actuator"
+      "Actuator",
+      "Attitude Control"
     ],
     "wikilinks": [
       "reaction wheels",
@@ -128403,9 +128354,10 @@
       "Networkcomponent"
     ],
     "is_subclass_of": [
+      "Network Component (category)",
       "Network Architecture",
       "Protocol and Infrastructure",
-      "Network Component (category)"
+      "Blockchain"
     ],
     "wikilinks": [
       "Blockchain Technology",
@@ -135365,7 +135317,8 @@
       "Optical Remote Sensing"
     ],
     "is_subclass_of": [
-      "Remote Sensing"
+      "Remote Sensing",
+      "Earth Observation Sensor"
     ],
     "wikilinks": []
   },
@@ -138279,7 +138232,8 @@
       "Passive Remote Sensing"
     ],
     "is_subclass_of": [
-      "Remote Sensing"
+      "Remote Sensing",
+      "Earth Observation Sensor"
     ],
     "wikilinks": []
   },
@@ -147976,7 +147930,8 @@
       "Projected Coordinate Reference System"
     ],
     "is_subclass_of": [
-      "Coordinate Reference System"
+      "Coordinate Reference System",
+      "Spatial Reference System"
     ],
     "wikilinks": []
   },
@@ -153272,7 +153227,8 @@
       "Radioisotope Power System"
     ],
     "is_subclass_of": [
-      "System"
+      "System",
+      "Spacecraft Power and Thermal Control"
     ],
     "wikilinks": []
   },
@@ -153350,7 +153306,8 @@
       "Radiometric Calibration"
     ],
     "is_subclass_of": [
-      "Calibration"
+      "Calibration",
+      "Earth Observation Processing"
     ],
     "wikilinks": []
   },
@@ -154140,7 +154097,8 @@
       "Reaction Wheel"
     ],
     "is_subclass_of": [
-      "Actuator"
+      "Actuator",
+      "Attitude Control"
     ],
     "wikilinks": []
   },
@@ -157761,7 +157719,8 @@
       "Remote Sensing Image Segmentation"
     ],
     "is_subclass_of": [
-      "Image Segmentation"
+      "Image Segmentation",
+      "Earth Observation Processing"
     ],
     "wikilinks": []
   },
@@ -164925,7 +164884,8 @@
       "Satellite Remote Sensing"
     ],
     "is_subclass_of": [
-      "Remote Sensing"
+      "Remote Sensing",
+      "Earth Observation Sensor"
     ],
     "wikilinks": []
   },
@@ -169046,7 +169006,8 @@
       "Sensor Intercalibration"
     ],
     "is_subclass_of": [
-      "Calibration"
+      "Calibration",
+      "Earth Observation Processing"
     ],
     "wikilinks": []
   },
@@ -174517,7 +174478,8 @@
       "Space Life Sciences Dataset"
     ],
     "is_subclass_of": [
-      "Dataset"
+      "Dataset",
+      "Space Life Sciences"
     ],
     "wikilinks": []
   },
@@ -174823,7 +174785,8 @@
       "Space-sector Supply Chain"
     ],
     "is_subclass_of": [
-      "Supply Chain"
+      "Supply Chain",
+      "Space Prime"
     ],
     "wikilinks": []
   },
@@ -175281,7 +175244,8 @@
       "Spacecraft Housekeeping Data"
     ],
     "is_subclass_of": [
-      "Data"
+      "Data",
+      "Spacecraft Telemetry"
     ],
     "wikilinks": []
   },
@@ -175317,7 +175281,8 @@
       "Spacecraft Magnetometer"
     ],
     "is_subclass_of": [
-      "Sensor"
+      "Sensor",
+      "Attitude Determination"
     ],
     "wikilinks": []
   },
@@ -175683,7 +175648,8 @@
       "Spacecraft Subsystem"
     ],
     "is_subclass_of": [
-      "System"
+      "System",
+      "Spacecraft"
     ],
     "wikilinks": []
   },
@@ -175827,7 +175793,8 @@
       "Spacecraft"
     ],
     "is_subclass_of": [
-      "System"
+      "System",
+      "Space Science and Systems"
     ],
     "wikilinks": []
   },
@@ -178986,7 +178953,8 @@
       "Star Tracker"
     ],
     "is_subclass_of": [
-      "Sensor"
+      "Sensor",
+      "Attitude Determination"
     ],
     "wikilinks": [
       "sensor"
@@ -181327,7 +181295,8 @@
       "Sun Sensor"
     ],
     "is_subclass_of": [
-      "Sensor"
+      "Sensor",
+      "Attitude Determination"
     ],
     "wikilinks": []
   },
@@ -185809,7 +185778,8 @@
       "Presence and Telepresence"
     ],
     "is_subclass_of": [
-      "Telepresence (category)"
+      "Telepresence (category)",
+      "Distributed Collaboration"
     ],
     "wikilinks": []
   },
@@ -186472,7 +186442,8 @@
       "Terrestrial Reference Frame"
     ],
     "is_subclass_of": [
-      "Space Reference Systems"
+      "Space Reference Systems",
+      "Geodetic Reference Frame"
     ],
     "wikilinks": []
   },
@@ -187384,7 +187355,8 @@
       "Thermal Infrared Remote Sensing"
     ],
     "is_subclass_of": [
-      "Remote Sensing"
+      "Remote Sensing",
+      "Earth Observation Sensor"
     ],
     "wikilinks": []
   },
@@ -188307,10 +188279,14 @@
     "labels": [
       "Time Synchronisation",
       "Time Synchronisation Protocol",
-      "Timing Synchronisation"
+      "Timing Synchronisation",
+      "Clock Synchronisation",
+      "Synchronised Clock",
+      "Clock Synchronization"
     ],
     "is_subclass_of": [
-      "Network Protocol"
+      "Network Protocol",
+      "Network Synchronization"
     ],
     "wikilinks": []
   },
@@ -197747,7 +197723,7 @@
       "Hybrid Logical Clocks"
     ],
     "is_subclass_of": [
-      "Clock Synchronization"
+      "Time Synchronisation"
     ],
     "wikilinks": [
       "Distributed Computing",
@@ -198622,7 +198598,8 @@
       "Vertical Coordinate Reference System"
     ],
     "is_subclass_of": [
-      "Coordinate Reference System"
+      "Coordinate Reference System",
+      "Spatial Reference System"
     ],
     "wikilinks": []
   },

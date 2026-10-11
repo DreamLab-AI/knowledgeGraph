@@ -11,6 +11,7 @@ is-a:
   - urn:ngm:class:earth-observation-processing
 bridgesTo:
   - urn:ngm:class:computer-vision
+  - urn:ngm:class:image-classification
 relatedTo:
   - urn:ngm:class:classification
   - urn:ngm:class:earth-observation-processing

@@ -11,6 +11,8 @@ is-a:
   - urn:ngm:class:earth-observation-applications
 relatedTo:
   - urn:ngm:class:earth-observation-applications
+  - urn:ngm:class:resilience
+  - urn:ngm:class:risk-management
 ---
 
 # Disaster Mapping

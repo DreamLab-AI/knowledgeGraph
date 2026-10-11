@@ -57,6 +57,7 @@ partOf:
   - urn:ngm:class:control-theory
 relatedTo:
   - urn:ngm:class:system-identification
+  - urn:ngm:class:environmental-control-and-life-support-system
 ---
 
 # Closed-Loop Control

@@ -11,6 +11,8 @@ is-a:
   - urn:ngm:class:earth-observation-applications
 relatedTo:
   - urn:ngm:class:earth-observation-applications
+  - urn:ngm:class:smart-city
+  - urn:ngm:class:climate-change
 ---
 
 # Urban Heat Monitoring

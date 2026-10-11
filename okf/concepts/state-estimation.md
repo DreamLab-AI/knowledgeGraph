@@ -36,6 +36,7 @@ contrastsWith:
 bridgesTo:
   - urn:ngm:class:deep-learning
   - urn:ngm:class:digital-twin
+  - urn:ngm:class:orbit-determination
 uses:
   - urn:ngm:class:lidar
   - urn:ngm:class:visual-odometry

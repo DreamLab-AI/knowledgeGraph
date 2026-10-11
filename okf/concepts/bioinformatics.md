@@ -49,6 +49,7 @@ contrastsWith:
 bridgesTo:
   - urn:ngm:class:machine-learning
   - urn:ngm:class:biology
+  - urn:ngm:class:spaceflight-omics
 uses:
   - urn:ngm:class:machine-learning
   - urn:ngm:class:statistics

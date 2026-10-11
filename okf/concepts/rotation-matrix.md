@@ -35,6 +35,7 @@ relatedTo:
   - urn:ngm:class:inverse-kinematics
   - urn:ngm:class:robotic-manipulation
   - urn:ngm:class:computer-vision
+  - urn:ngm:class:attitude-quaternion
 ---
 
 # Rotation Matrix

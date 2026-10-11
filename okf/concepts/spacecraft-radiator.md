@@ -11,6 +11,7 @@ is-a:
   - urn:ngm:class:spacecraft-power-and-thermal-control
 relatedTo:
   - urn:ngm:class:spacecraft-power-and-thermal-control
+  - urn:ngm:class:cooling-system
 ---
 
 # Spacecraft Radiator

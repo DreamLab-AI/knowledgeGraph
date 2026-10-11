@@ -18,6 +18,8 @@ requires:
 bridgesTo:
   - urn:ngm:class:master-data-management
   - urn:ngm:class:data-lake
+  - urn:ngm:class:spatiotemporal-asset-catalogue
+  - urn:ngm:class:earth-observation-data-discovery
 uses:
   - urn:ngm:class:dublin-core
   - urn:ngm:class:data-standards

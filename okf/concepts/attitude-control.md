@@ -9,8 +9,12 @@ maturity: draft
 quality: 0
 is-a:
   - urn:ngm:class:spacecraft-guidance-navigation-and-control
+bridgesTo:
+  - urn:ngm:class:feedback-control
+  - urn:ngm:class:control-theory
 relatedTo:
   - urn:ngm:class:spacecraft-guidance-navigation-and-control
+  - urn:ngm:class:flight-control-system
 ---
 
 # Attitude Control

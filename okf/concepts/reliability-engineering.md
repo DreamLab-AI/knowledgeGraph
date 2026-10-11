@@ -32,6 +32,8 @@ bridgesTo:
   - urn:ngm:class:site-reliability-engineering
   - urn:ngm:class:ai-safety
   - urn:ngm:class:chaos-engineering
+  - urn:ngm:class:spacecraft-reliability
+  - urn:ngm:class:radiation-hardness-assurance
 uses:
   - urn:ngm:class:markov-chain
   - urn:ngm:class:monte-carlo-simulation

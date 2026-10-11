@@ -26,6 +26,7 @@ contrastsWith:
   - urn:ngm:class:reactive-control
 bridgesTo:
   - urn:ngm:class:computer-vision
+  - urn:ngm:class:orbital-conjunction
 uses:
   - urn:ngm:class:computer-vision
   - urn:ngm:class:lidar
@@ -40,6 +41,7 @@ partOf:
   - urn:ngm:class:advanced-driver-assistance-system
 relatedTo:
   - urn:ngm:class:functional-safety
+  - urn:ngm:class:orbital-debris
 ---
 
 # Collision Avoidance

@@ -20,6 +20,7 @@ relatedTo:
   - urn:ngm:class:reed-solomon-codes
   - urn:ngm:class:data-integrity
   - urn:ngm:class:reliability
+  - urn:ngm:class:bit-error-rate
 ---
 
 # Error Correction

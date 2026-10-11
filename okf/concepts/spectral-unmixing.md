@@ -11,6 +11,8 @@ is-a:
   - urn:ngm:class:earth-observation-processing
 relatedTo:
   - urn:ngm:class:earth-observation-processing
+  - urn:ngm:class:linear-algebra
+  - urn:ngm:class:regression
 ---
 
 # Spectral Unmixing

@@ -10,6 +10,8 @@ quality: 0
 is-a:
   - urn:ngm:class:active-remote-sensing
   - urn:ngm:class:microwave-remote-sensing
+bridgesTo:
+  - urn:ngm:class:radar
 relatedTo:
   - urn:ngm:class:earth-observation
 ---

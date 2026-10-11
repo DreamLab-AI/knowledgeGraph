@@ -9,6 +9,7 @@ maturity: draft
 quality: 0
 is-a:
   - urn:ngm:class:coordinate-reference-system
+  - urn:ngm:class:spatial-reference-system
 relatedTo:
   - urn:ngm:class:coordinate-epoch
   - urn:ngm:class:geodetic-reference-frame

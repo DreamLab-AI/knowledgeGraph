@@ -40,6 +40,9 @@ relatedTo:
   - urn:ngm:class:risk-management
   - urn:ngm:class:security-by-design
   - urn:ngm:class:property
+  - urn:ngm:class:wildfire-monitoring
+  - urn:ngm:class:disaster-mapping
+  - urn:ngm:class:ground-deformation-monitoring
 ---
 
 # Resilience

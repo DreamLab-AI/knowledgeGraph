@@ -20,6 +20,9 @@ contrastsWith:
 bridgesTo:
   - urn:ngm:class:artificial-intelligence
   - urn:ngm:class:semantic-web
+  - urn:ngm:class:spatiotemporal-asset-catalogue
+  - urn:ngm:class:earth-observation-collection
+  - urn:ngm:class:geospatial-metadata
 uses:
   - urn:ngm:class:data-schema
   - urn:ngm:class:data-standards
@@ -36,6 +39,7 @@ relatedTo:
   - urn:ngm:class:metadata-schema
   - urn:ngm:class:data-catalogue
   - urn:ngm:class:ontology
+  - urn:ngm:class:earth-observation-granule
 ---
 
 # Metadata

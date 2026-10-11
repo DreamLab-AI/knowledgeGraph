@@ -33,6 +33,7 @@ bridgesTo:
   - urn:ngm:class:mixed-reality
   - urn:ngm:class:autonomous-vehicle
   - urn:ngm:class:autonomous-vehicle
+  - urn:ngm:class:planetary-rover
 uses:
   - urn:ngm:class:computer-vision
   - urn:ngm:class:feature-extraction

@@ -9,8 +9,10 @@ maturity: draft
 quality: 0
 is-a:
   - urn:ngm:class:sensor-fusion
+  - urn:ngm:class:earth-observation-processing
 relatedTo:
   - urn:ngm:class:earth-observation
+  - urn:ngm:class:data-integration
 ---
 
 # Earth Observation Sensor Fusion

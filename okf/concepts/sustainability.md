@@ -31,6 +31,7 @@ contrastsWith:
 bridgesTo:
   - urn:ngm:class:federated-learning
   - urn:ngm:class:smart-contracts
+  - urn:ngm:class:deforestation-monitoring
 supports:
   - urn:ngm:class:accessibility
   - urn:ngm:class:carbon-aware-computing
@@ -45,6 +46,8 @@ relatedTo:
   - urn:ngm:class:scope-3-emissions
   - urn:ngm:class:digital-technology-access-equity
   - urn:ngm:class:digital-technology-access-equity
+  - urn:ngm:class:biodiversity-monitoring
+  - urn:ngm:class:evapotranspiration-estimation
 ---
 
 # Sustainability

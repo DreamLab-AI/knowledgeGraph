@@ -23,6 +23,7 @@ dependsOn:
   - urn:ngm:class:sensor-fusion
 bridgesTo:
   - urn:ngm:class:spatial-computing
+  - urn:ngm:class:spacecraft
 uses:
   - urn:ngm:class:digital-twin
   - urn:ngm:class:simulation
@@ -34,6 +35,7 @@ supports:
 relatedTo:
   - urn:ngm:class:standards
   - urn:ngm:class:governance
+  - urn:ngm:class:launch-vehicle
 ---
 
 # Aerospace Engineering

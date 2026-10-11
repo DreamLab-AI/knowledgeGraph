@@ -11,6 +11,13 @@ is-a:
   - urn:ngm:class:space-science-and-systems
 bridgesTo:
   - urn:ngm:class:sensor-fusion
+  - urn:ngm:class:ground-control-point
+  - urn:ngm:class:localisation
+  - urn:ngm:class:navigation
+  - urn:ngm:class:time-synchronisation
+relatedTo:
+  - urn:ngm:class:geodetic-datum
+  - urn:ngm:class:spatial-computing
 ---
 
 # Positioning Navigation and Timing

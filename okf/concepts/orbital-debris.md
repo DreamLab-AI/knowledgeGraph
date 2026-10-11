@@ -11,6 +11,7 @@ is-a:
   - urn:ngm:class:orbital-dynamics
 relatedTo:
   - urn:ngm:class:orbital-dynamics
+  - urn:ngm:class:collision-avoidance
 ---
 
 # Orbital Debris

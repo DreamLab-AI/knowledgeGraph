@@ -9,6 +9,8 @@ maturity: draft
 quality: 0
 is-a:
   - urn:ngm:class:heliophysics
+bridgesTo:
+  - urn:ngm:class:time-series-forecasting
 relatedTo:
   - urn:ngm:class:heliophysics
 ---

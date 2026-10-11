@@ -24,6 +24,7 @@ bridgesTo:
   - urn:ngm:class:machine-learning
   - urn:ngm:class:artificial-intelligence
   - urn:ngm:class:cloud-computing
+  - urn:ngm:class:spacecraft-battery
 uses:
   - urn:ngm:class:control-system
   - urn:ngm:class:power-management

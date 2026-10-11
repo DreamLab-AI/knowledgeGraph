@@ -13,6 +13,7 @@ bridgesTo:
   - urn:ngm:class:digital-twin
 relatedTo:
   - urn:ngm:class:earth-observation-processing
+  - urn:ngm:class:kalman-filter
 ---
 
 # Earth Observation Data Assimilation

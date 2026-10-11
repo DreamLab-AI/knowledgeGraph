@@ -9,6 +9,8 @@ maturity: draft
 quality: 0.55
 is-a:
   - urn:ngm:class:digital-signal-processing
+bridgesTo:
+  - urn:ngm:class:crew-health-monitoring
 uses:
   - urn:ngm:class:digital-signal-processing
 partOf:

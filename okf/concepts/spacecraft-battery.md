@@ -9,6 +9,9 @@ maturity: draft
 quality: 0
 is-a:
   - urn:ngm:class:spacecraft-power-and-thermal-control
+bridgesTo:
+  - urn:ngm:class:battery-management-system
+  - urn:ngm:class:energy-storage
 relatedTo:
   - urn:ngm:class:spacecraft-power-and-thermal-control
 ---

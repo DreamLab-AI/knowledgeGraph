@@ -38,6 +38,7 @@ supports:
 relatedTo:
   - urn:ngm:class:robust-control
   - urn:ngm:class:numerical-optimization
+  - urn:ngm:class:spacecraft-guidance
 ---
 
 # Optimal Control

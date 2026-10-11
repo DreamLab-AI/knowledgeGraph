@@ -24,6 +24,7 @@ contrastsWith:
   - urn:ngm:class:euclidean-distance
 bridgesTo:
   - urn:ngm:class:artificial-intelligence
+  - urn:ngm:class:spectral-analysis
 uses:
   - urn:ngm:class:python-programming-language
   - urn:ngm:class:tensor

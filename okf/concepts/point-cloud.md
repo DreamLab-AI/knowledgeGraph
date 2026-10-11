@@ -31,6 +31,10 @@ contrastsWith:
 bridgesTo:
   - urn:ngm:class:pointnet
   - urn:ngm:class:3d-object-segmentation
+  - urn:ngm:class:digital-elevation-model
+  - urn:ngm:class:digital-terrain-model
+  - urn:ngm:class:digital-surface-model
+  - urn:ngm:class:lidar-instrument
 uses:
   - urn:ngm:class:photogrammetry
   - urn:ngm:class:structured-light

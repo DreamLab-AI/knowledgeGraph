@@ -23,7 +23,7 @@ hasPart:
   - urn:ngm:class:cryptographic-hash-chain
   - urn:ngm:class:digital-signature-record
 requires:
-  - urn:ngm:class:clock-synchronization
+  - urn:ngm:class:time-synchronisation
   - urn:ngm:class:cryptographic-integrity-protection
   - urn:ngm:class:logging-infrastructure
   - urn:ngm:class:secure-storage

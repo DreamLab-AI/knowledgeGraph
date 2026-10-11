@@ -19,6 +19,8 @@ enables:
   - urn:ngm:class:telecommunications
 dependsOn:
   - urn:ngm:class:regulation
+bridgesTo:
+  - urn:ngm:class:satellite-spectrum-allocation
 supports:
   - urn:ngm:class:internet-of-things
   - urn:ngm:class:infrastructure

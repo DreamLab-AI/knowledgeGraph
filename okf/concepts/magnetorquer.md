@@ -9,6 +9,7 @@ maturity: draft
 quality: 0
 is-a:
   - urn:ngm:class:actuator
+  - urn:ngm:class:attitude-control
 relatedTo:
   - urn:ngm:class:spacecraft-guidance-navigation-and-control
 ---

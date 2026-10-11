@@ -16,6 +16,7 @@ requires:
 bridgesTo:
   - urn:ngm:class:machine-learning
   - urn:ngm:class:artificial-intelligence
+  - urn:ngm:class:spaceflight-omics
 uses:
   - urn:ngm:class:alphafold
 supports:

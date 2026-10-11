@@ -9,8 +9,11 @@ maturity: draft
 quality: 0
 is-a:
   - urn:ngm:class:earth-observation-data-quality
+bridgesTo:
+  - urn:ngm:class:model-evaluation
 relatedTo:
   - urn:ngm:class:earth-observation-data-quality
+  - urn:ngm:class:dataset
 ---
 
 # Validation Dataset

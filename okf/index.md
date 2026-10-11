@@ -2,14 +2,14 @@
 okf_version: "0.2"
 type: Index
 title: NarrativeGoldmine Knowledge Bundle
-generation: visionGraph@883a1e63599c4b68f496dd73b7b0ebd51cc37dcd
+generation: visionGraph@b5e36abd172052cfb0d1dd8a904983f604e1b641
 vocabulary_version: 1
-concept_count: 9248
+concept_count: 9244
 ---
 
 # NarrativeGoldmine Knowledge Bundle
 
-9248 concepts, exported from generation `visionGraph@883a1e63599c4b68f496dd73b7b0ebd51cc37dcd`.
+9244 concepts, exported from generation `visionGraph@b5e36abd172052cfb0d1dd8a904983f604e1b641`.
 
 - [1Hive](concepts/1-hive.md) — `urn:ngm:class:1-hive`
 - [1inch](concepts/1-inch.md) — `urn:ngm:class:1-inch`
@@ -728,7 +728,6 @@ concept_count: 9248
 - [Attitude Control](concepts/attitude-control.md) — `urn:ngm:class:attitude-control`
 - [Attitude Control Thruster](concepts/attitude-control-thruster.md) — `urn:ngm:class:attitude-control-thruster`
 - [Attitude Determination](concepts/attitude-determination.md) — `urn:ngm:class:attitude-determination`
-- [Attitude Estimation](concepts/attitude-estimation.md) — `urn:ngm:class:attitude-estimation`
 - [Attitude Quaternion](concepts/attitude-quaternion.md) — `urn:ngm:class:attitude-quaternion`
 - [Attribute-Based Access Control](concepts/attribute-based-access-control.md) — `urn:ngm:class:attribute-based-access-control`
 - [Attribute Sharing](concepts/attribute-sharing.md) — `urn:ngm:class:attribute-sharing`
@@ -1154,7 +1153,6 @@ concept_count: 9248
 - [Branch and Bound](concepts/branch-and-bound.md) — `urn:ngm:class:branch-and-bound`
 - [Brand Identity](concepts/brand-identity.md) — `urn:ngm:class:brand-identity`
 - [BRC-20](concepts/brc-20.md) — `urn:ngm:class:brc-20`
-- [BRDF](concepts/brdf.md) — `urn:ngm:class:brdf`
 - [Breadth-First Search](concepts/breadth-first-search.md) — `urn:ngm:class:breadth-first-search`
 - [Breakout Room](concepts/breakout-room.md) — `urn:ngm:class:breakout-room`
 - [Breez](concepts/breez.md) — `urn:ngm:class:breez`
@@ -1433,7 +1431,6 @@ concept_count: 9248
 - [CLIP](concepts/clip.md) — `urn:ngm:class:clip`
 - [CLIP Encoder](concepts/clip-encoder.md) — `urn:ngm:class:clip-encoder`
 - [Clock Recovery](concepts/clock-recovery.md) — `urn:ngm:class:clock-recovery`
-- [Clock Synchronization](concepts/clock-synchronization.md) — `urn:ngm:class:clock-synchronization`
 - [Closed-Loop Control](concepts/closed-loop-control.md) — `urn:ngm:class:closed-loop-control`
 - [Closed-Loop Cooling](concepts/closed-loop-cooling.md) — `urn:ngm:class:closed-loop-cooling`
 - [Closed World Assumption](concepts/closed-world-assumption.md) — `urn:ngm:class:closed-world-assumption`
@@ -3557,7 +3554,6 @@ concept_count: 9248
 - [Gnosis](concepts/gnosis.md) — `urn:ngm:class:gnosis`
 - [Gnosis Chain](concepts/gnosis-chain.md) — `urn:ngm:class:gnosis-chain`
 - [Gnosis Safe](concepts/gnosis-safe.md) — `urn:ngm:class:gnosis-safe`
-- [Gnss](concepts/gnss.md) — `urn:ngm:class:gnss`
 - [GNSS Almanac](concepts/gnss-almanac.md) — `urn:ngm:class:gnss-almanac`
 - [GNSS Ambiguity Resolution](concepts/gnss-ambiguity-resolution.md) — `urn:ngm:class:gnss-ambiguity-resolution`
 - [GNSS Antenna](concepts/gnss-antenna.md) — `urn:ngm:class:gnss-antenna`

@@ -13,6 +13,9 @@ requires:
   - urn:ngm:class:hardware
 bridgesTo:
   - urn:ngm:class:renewable-energy
+  - urn:ngm:class:heat-pipe
+relatedTo:
+  - urn:ngm:class:spacecraft-radiator
 ---
 
 # Cooling System

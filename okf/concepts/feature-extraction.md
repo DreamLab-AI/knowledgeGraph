@@ -30,6 +30,7 @@ contrastsWith:
 bridgesTo:
   - urn:ngm:class:computer-vision
   - urn:ngm:class:speech-recognition
+  - urn:ngm:class:geospatial-feature-extraction
 uses:
   - urn:ngm:class:convolutional-neural-network
   - urn:ngm:class:autoencoder

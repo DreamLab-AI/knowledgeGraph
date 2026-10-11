@@ -11,6 +11,7 @@ is-a:
   - urn:ngm:class:space-life-sciences
 relatedTo:
   - urn:ngm:class:space-life-sciences
+  - urn:ngm:class:closed-loop-control
 ---
 
 # Environmental Control and Life Support System

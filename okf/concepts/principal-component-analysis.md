@@ -28,6 +28,7 @@ supports:
 relatedTo:
   - urn:ngm:class:unsupervised-learning
   - urn:ngm:class:data-preprocessing
+  - urn:ngm:class:hyperspectral-imaging
 ---
 
 # Principal Component Analysis

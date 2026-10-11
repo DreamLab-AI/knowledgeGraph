@@ -25,6 +25,7 @@ implements:
   - urn:ngm:class:error-correction
 bridgesTo:
   - urn:ngm:class:quantum-error-correction
+  - urn:ngm:class:satellite-channel-coding
 uses:
   - urn:ngm:class:belief-propagation
 supports:

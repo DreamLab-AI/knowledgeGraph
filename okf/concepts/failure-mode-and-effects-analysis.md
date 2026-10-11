@@ -36,6 +36,7 @@ relatedTo:
   - urn:ngm:class:functional-safety
   - urn:ngm:class:reliability-engineering
   - urn:ngm:class:risk-assessment
+  - urn:ngm:class:spacecraft-electrical-power-system
 ---
 
 # Failure Mode And Effects Analysis

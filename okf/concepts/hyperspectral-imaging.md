@@ -9,8 +9,12 @@ maturity: draft
 quality: 0
 is-a:
   - urn:ngm:class:earth-observation-sensor
+bridgesTo:
+  - urn:ngm:class:dimensionality-reduction
 relatedTo:
   - urn:ngm:class:earth-observation
+  - urn:ngm:class:principal-component-analysis
+  - urn:ngm:class:regression
 ---
 
 # Hyperspectral Imaging

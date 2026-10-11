@@ -11,6 +11,8 @@ is-a:
   - urn:ngm:class:spacecraft-subsystem
 relatedTo:
   - urn:ngm:class:spacecraft-power-and-thermal-control
+  - urn:ngm:class:power-management
+  - urn:ngm:class:failure-mode-and-effects-analysis
 ---
 
 # Spacecraft Electrical Power System

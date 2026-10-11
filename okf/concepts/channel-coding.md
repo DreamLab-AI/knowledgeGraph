@@ -9,6 +9,8 @@ maturity: established
 quality: 0.72
 is-a:
   - urn:ngm:class:infra-network-and-comms
+bridgesTo:
+  - urn:ngm:class:satellite-channel-coding
 relatedTo:
   - urn:ngm:class:forward-error-correction
   - urn:ngm:class:physical-layer

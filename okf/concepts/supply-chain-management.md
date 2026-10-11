@@ -47,6 +47,7 @@ relatedTo:
   - urn:ngm:class:resilience-engineering
   - urn:ngm:class:circular-economy
   - urn:ngm:class:trade-compliance
+  - urn:ngm:class:space-prime
 ---
 
 # Supply Chain Management

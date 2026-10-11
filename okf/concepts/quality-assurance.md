@@ -46,6 +46,7 @@ standardizedBy:
 relatedTo:
   - urn:ngm:class:technical-debt
   - urn:ngm:class:observability
+  - urn:ngm:class:spacecraft-environmental-testing
 ---
 
 # Quality Assurance

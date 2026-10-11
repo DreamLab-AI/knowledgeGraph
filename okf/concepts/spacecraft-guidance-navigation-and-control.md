@@ -11,6 +11,10 @@ is-a:
   - urn:ngm:class:space-science-and-systems
 bridgesTo:
   - urn:ngm:class:control-theory
+  - urn:ngm:class:navigation
+  - urn:ngm:class:hardware-in-the-loop-testing
+relatedTo:
+  - urn:ngm:class:monte-carlo-simulation
 ---
 
 # Spacecraft Guidance Navigation and Control

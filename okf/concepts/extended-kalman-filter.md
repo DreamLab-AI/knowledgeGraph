@@ -27,6 +27,7 @@ bridgesTo:
   - urn:ngm:class:autonomous-navigation
   - urn:ngm:class:augmented-reality-tracking
   - urn:ngm:class:probabilistic-robotics
+  - urn:ngm:class:spacecraft-navigation-filter
 uses:
   - urn:ngm:class:motion-model
   - urn:ngm:class:observation-model

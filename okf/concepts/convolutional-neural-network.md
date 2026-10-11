@@ -32,6 +32,7 @@ contrastsWith:
 bridgesTo:
   - urn:ngm:class:autonomous-driving-perception
   - urn:ngm:class:augmented-reality
+  - urn:ngm:class:remote-sensing-image-segmentation
 uses:
   - urn:ngm:class:backpropagation
   - urn:ngm:class:stochastic-gradient-descent

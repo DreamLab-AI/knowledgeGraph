@@ -9,6 +9,8 @@ maturity: draft
 quality: 0
 is-a:
   - urn:ngm:class:space-science
+relatedTo:
+  - urn:ngm:class:power-grid
 ---
 
 # Heliophysics

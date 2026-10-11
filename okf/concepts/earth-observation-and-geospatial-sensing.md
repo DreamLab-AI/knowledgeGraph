@@ -11,6 +11,7 @@ bridgesTo:
   - urn:ngm:class:remote-sensing
   - urn:ngm:class:geographic-information-system
   - urn:ngm:class:satellite-imagery
+  - urn:ngm:class:spatial-computing
 ---
 
 # Earth Observation and Geospatial Sensing

@@ -35,6 +35,7 @@ relatedTo:
   - urn:ngm:class:monitoring
   - urn:ngm:class:data-analytics
   - urn:ngm:class:data
+  - urn:ngm:class:spacecraft-telemetry
 ---
 
 # Time Series Data

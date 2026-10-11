@@ -52,6 +52,9 @@ relatedTo:
   - urn:ngm:class:ai-ethics
   - urn:ngm:class:incident-response
   - urn:ngm:class:responsible-ai
+  - urn:ngm:class:flood-mapping
+  - urn:ngm:class:disaster-mapping
+  - urn:ngm:class:landslide-monitoring
 ---
 
 # Risk Management

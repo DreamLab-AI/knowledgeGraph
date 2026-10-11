@@ -42,6 +42,7 @@ relatedTo:
   - urn:ngm:class:electronic-health-record
   - urn:ngm:class:digital-pathology
   - urn:ngm:class:radiomics
+  - urn:ngm:class:crew-health-monitoring
 ---
 
 # Medical Imaging

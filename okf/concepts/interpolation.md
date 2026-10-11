@@ -23,6 +23,10 @@ contrastsWith:
   - urn:ngm:class:extrapolation
 bridgesTo:
   - urn:ngm:class:rasterization
+  - urn:ngm:class:image-resampling
+  - urn:ngm:class:regridding
+  - urn:ngm:class:spatiotemporal-interpolation
+  - urn:ngm:class:interpolation-method
 uses:
   - urn:ngm:class:sampling
   - urn:ngm:class:approximation

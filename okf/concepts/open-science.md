@@ -32,6 +32,7 @@ relatedTo:
   - urn:ngm:class:open-data
   - urn:ngm:class:reproducibility
   - urn:ngm:class:transparency
+  - urn:ngm:class:spaceflight-omics
 ---
 
 # Open Science

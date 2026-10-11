@@ -11,6 +11,7 @@ is-a:
   - urn:ngm:class:spacecraft
 relatedTo:
   - urn:ngm:class:space-systems-engineering
+  - urn:ngm:class:robot
 ---
 
 # Uncrewed Spacecraft

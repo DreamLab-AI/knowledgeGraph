@@ -18,6 +18,8 @@ requires:
 enables:
   - urn:ngm:class:monitoring
   - urn:ngm:class:anomaly-detection
+bridgesTo:
+  - urn:ngm:class:spacecraft-telemetry
 uses:
   - urn:ngm:class:distributed-tracing
 supports:
@@ -30,6 +32,7 @@ relatedTo:
   - urn:ngm:class:monitoring-dashboard
   - urn:ngm:class:monitoring
   - urn:ngm:class:monitoring-dashboard
+  - urn:ngm:class:telemetry-tracking-and-command
 ---
 
 # Telemetry

@@ -12,6 +12,8 @@ is-a:
 relatedTo:
   - urn:ngm:class:predictive-maintenance
   - urn:ngm:class:robo-navigation-and-planning
+  - urn:ngm:class:spacecraft-reliability
+  - urn:ngm:class:gnss-integrity
 ---
 
 # Safety Assurance

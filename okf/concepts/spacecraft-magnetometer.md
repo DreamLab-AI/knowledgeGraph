@@ -9,9 +9,11 @@ maturity: draft
 quality: 0
 is-a:
   - urn:ngm:class:sensor
+  - urn:ngm:class:attitude-determination
 relatedTo:
   - urn:ngm:class:attitude-determination
   - urn:ngm:class:geomagnetic-field
+  - urn:ngm:class:sensor-calibration
 ---
 
 # Spacecraft Magnetometer

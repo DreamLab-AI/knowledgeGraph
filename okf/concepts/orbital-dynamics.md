@@ -9,6 +9,10 @@ maturity: draft
 quality: 0
 is-a:
   - urn:ngm:class:space-science-and-systems
+bridgesTo:
+  - urn:ngm:class:earth-observation-satellite
+  - urn:ngm:class:revisit-time
+  - urn:ngm:class:numerical-methods
 ---
 
 # Orbital Dynamics

@@ -9,6 +9,7 @@ maturity: mature
 quality: 0.72
 is-a:
   - urn:ngm:class:infra-data-management
+  - urn:ngm:class:infrastructure
 hasPart:
   - urn:ngm:class:data-governance
   - urn:ngm:class:data-quality
@@ -38,6 +39,9 @@ contrastsWith:
 bridgesTo:
   - urn:ngm:class:blockchain
   - urn:ngm:class:metaverse-technology
+  - urn:ngm:class:earth-observation-data-cube
+  - urn:ngm:class:earth-observation-data-archive
+  - urn:ngm:class:data-archiving
 supports:
   - urn:ngm:class:ai-infrastructure
   - urn:ngm:class:business-intelligence
@@ -53,6 +57,7 @@ relatedTo:
   - urn:ngm:class:etl-pipeline
   - urn:ngm:class:infra-computing-and-cloud
   - urn:ngm:class:software-engineering
+  - urn:ngm:class:data-product-version
 ---
 
 # Data Management

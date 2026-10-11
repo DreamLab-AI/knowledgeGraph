@@ -36,6 +36,7 @@ relatedTo:
   - urn:ngm:class:machine-learning-discipline-pipeline
   - urn:ngm:class:lambda-architecture
   - urn:ngm:class:event-sourcing
+  - urn:ngm:class:time-domain-astronomy
 ---
 
 # Stream Processing

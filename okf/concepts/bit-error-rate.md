@@ -11,6 +11,7 @@ is-a:
   - urn:ngm:class:spacecraft-communications
 relatedTo:
   - urn:ngm:class:satellite-communication
+  - urn:ngm:class:error-correction
 ---
 
 # Bit Error Rate

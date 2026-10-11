@@ -9,6 +9,9 @@ maturity: draft
 quality: 0
 is-a:
   - urn:ngm:class:systems-engineering
+bridgesTo:
+  - urn:ngm:class:model-based-systems-engineering
+  - urn:ngm:class:requirements-engineering
 relatedTo:
   - urn:ngm:class:space-science-and-systems
 ---

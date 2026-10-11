@@ -30,6 +30,7 @@ relatedTo:
   - urn:ngm:class:latency
   - urn:ngm:class:throughput
   - urn:ngm:class:network-communication
+  - urn:ngm:class:store-and-forward-communication
 ---
 
 # Packet Switching

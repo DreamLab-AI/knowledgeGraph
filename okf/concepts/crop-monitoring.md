@@ -9,6 +9,9 @@ maturity: draft
 quality: 0
 is-a:
   - urn:ngm:class:earth-observation-applications
+bridgesTo:
+  - urn:ngm:class:random-forest
+  - urn:ngm:class:precision-agriculture
 relatedTo:
   - urn:ngm:class:earth-observation-applications
 ---

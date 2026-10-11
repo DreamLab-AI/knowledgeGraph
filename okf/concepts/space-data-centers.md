@@ -13,6 +13,7 @@ relatedTo:
   - urn:ngm:class:data-storage
   - urn:ngm:class:high-performance-computing
   - urn:ngm:class:frontier-ai
+  - urn:ngm:class:spacecraft-power-and-thermal-control
 ---
 
 # Space Data Centers

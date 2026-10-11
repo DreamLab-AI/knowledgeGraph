@@ -9,6 +9,8 @@ maturity: draft
 quality: 0
 is-a:
   - urn:ngm:class:positioning-navigation-and-timing
+bridgesTo:
+  - urn:ngm:class:anomaly-detection
 relatedTo:
   - urn:ngm:class:positioning-navigation-and-timing
 ---

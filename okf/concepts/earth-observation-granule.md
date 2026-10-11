@@ -12,6 +12,7 @@ is-a:
 relatedTo:
   - urn:ngm:class:earth-observation-data-quality
   - urn:ngm:class:earth-observation-processing
+  - urn:ngm:class:metadata
 ---
 
 # Earth Observation Granule

@@ -25,6 +25,9 @@ contrastsWith:
   - urn:ngm:class:vendor-lock-in
 bridgesTo:
   - urn:ngm:class:semantic-web
+  - urn:ngm:class:earth-observation-data-cube
+  - urn:ngm:class:spatiotemporal-asset-catalogue
+  - urn:ngm:class:geospatial-interface-protocol
 uses:
   - urn:ngm:class:api-gateway
   - urn:ngm:class:cross-chain-bridge
@@ -40,6 +43,8 @@ relatedTo:
   - urn:ngm:class:data-standards
   - urn:ngm:class:zero-knowledge-proof
   - urn:ngm:class:decentralised-identifier
+  - urn:ngm:class:geospatial-service
+  - urn:ngm:class:spacecraft-integration
 ---
 
 # Interoperability

@@ -32,6 +32,7 @@ contrastsWith:
 bridgesTo:
   - urn:ngm:class:edge-ai
   - urn:ngm:class:cyber-physical-systems
+  - urn:ngm:class:flight-software
 uses:
   - urn:ngm:class:latency
   - urn:ngm:class:embedded-ai-frameworks

@@ -45,6 +45,7 @@ relatedTo:
   - urn:ngm:class:threat-model
   - urn:ngm:class:biometrics
   - urn:ngm:class:identity-provider
+  - urn:ngm:class:gnss-spoofing
 ---
 
 # Authentication

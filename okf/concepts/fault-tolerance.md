@@ -71,6 +71,7 @@ contrastsWith:
   - urn:ngm:class:crash-only-recovery-without-consensus
 bridgesTo:
   - urn:ngm:class:reliability-engineering
+  - urn:ngm:class:fault-detection-isolation-and-recovery
 uses:
   - urn:ngm:class:erasure-coding
   - urn:ngm:class:hamming-codes
@@ -108,6 +109,7 @@ relatedTo:
   - urn:ngm:class:linearizability
   - urn:ngm:class:site-reliability-engineering
   - urn:ngm:class:linearizability
+  - urn:ngm:class:spacecraft-redundancy
 ---
 
 # Fault Tolerance

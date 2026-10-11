@@ -56,6 +56,7 @@ bridgesTo:
   - urn:ngm:class:decision-theory
   - urn:ngm:class:information-theory
   - urn:ngm:class:minimum-description-length
+  - urn:ngm:class:assimilation
 uses:
   - urn:ngm:class:knowledge-representation
   - urn:ngm:class:variational-inference

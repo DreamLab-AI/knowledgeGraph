@@ -48,6 +48,7 @@ standardizedBy:
 relatedTo:
   - urn:ngm:class:euclidean-geometry
   - urn:ngm:class:projection-model
+  - urn:ngm:class:equatorial-coordinate-system
 ---
 
 # Coordinate System

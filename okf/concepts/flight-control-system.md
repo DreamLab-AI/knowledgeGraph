@@ -9,6 +9,8 @@ maturity: draft
 quality: 0.55
 is-a:
   - urn:ngm:class:control-system
+relatedTo:
+  - urn:ngm:class:attitude-control
 ---
 
 # Flight Control System

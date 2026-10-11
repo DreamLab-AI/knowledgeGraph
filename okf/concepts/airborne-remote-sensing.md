@@ -9,6 +9,9 @@ maturity: draft
 quality: 0
 is-a:
   - urn:ngm:class:remote-sensing
+  - urn:ngm:class:earth-observation-sensor
+bridgesTo:
+  - urn:ngm:class:unmanned-aerial-vehicle
 relatedTo:
   - urn:ngm:class:earth-observation
 ---

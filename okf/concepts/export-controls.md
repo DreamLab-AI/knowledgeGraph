@@ -9,6 +9,8 @@ maturity: established
 quality: 0.72
 is-a:
   - urn:ngm:class:regulatory-compliance
+bridgesTo:
+  - urn:ngm:class:space-supply-chain
 relatedTo:
   - urn:ngm:class:competition-in-ai
   - urn:ngm:class:ai-governance

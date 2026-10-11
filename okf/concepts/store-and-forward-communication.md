@@ -11,6 +11,8 @@ is-a:
   - urn:ngm:class:spacecraft-communications
 relatedTo:
   - urn:ngm:class:satellite-communication
+  - urn:ngm:class:message-queue
+  - urn:ngm:class:packet-switching
 ---
 
 # Store-and-forward Communication

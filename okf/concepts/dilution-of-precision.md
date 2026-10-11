@@ -9,8 +9,11 @@ maturity: draft
 quality: 0
 is-a:
   - urn:ngm:class:positioning-navigation-and-timing
+bridgesTo:
+  - urn:ngm:class:covariance-matrix
 relatedTo:
   - urn:ngm:class:positioning-navigation-and-timing
+  - urn:ngm:class:measurement-uncertainty
 ---
 
 # Dilution of Precision

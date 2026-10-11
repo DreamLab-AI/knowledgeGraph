@@ -29,6 +29,7 @@ contrastsWith:
 bridgesTo:
   - urn:ngm:class:ai-governance-and-ethics
   - urn:ngm:class:distributed-systems
+  - urn:ngm:class:gnss-spoofing
 uses:
   - urn:ngm:class:encryption
   - urn:ngm:class:authentication
@@ -43,6 +44,7 @@ relatedTo:
   - urn:ngm:class:access-control
   - urn:ngm:class:vulnerability
   - urn:ngm:class:zero-trust-architecture
+  - urn:ngm:class:ground-station
 ---
 
 # Cybersecurity

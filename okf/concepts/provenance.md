@@ -34,6 +34,8 @@ bridgesTo:
   - urn:ngm:class:blockchain
   - urn:ngm:class:reproducibility
   - urn:ngm:class:provenance-tracking
+  - urn:ngm:class:observation-provenance
+  - urn:ngm:class:processing-lineage
 uses:
   - urn:ngm:class:cryptographic-hash
   - urn:ngm:class:merkle-tree

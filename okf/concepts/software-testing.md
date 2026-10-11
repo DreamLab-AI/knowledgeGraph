@@ -52,6 +52,7 @@ relatedTo:
   - urn:ngm:class:devops
   - urn:ngm:class:agile-software-development
   - urn:ngm:class:agile-software-development
+  - urn:ngm:class:flight-software
 ---
 
 # Software Testing

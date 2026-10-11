@@ -48,6 +48,7 @@ relatedTo:
   - urn:ngm:class:soft-robotics
   - urn:ngm:class:industrial-automation
   - urn:ngm:class:industrial-automation
+  - urn:ngm:class:spacecraft-mechanism
 ---
 
 # Actuator

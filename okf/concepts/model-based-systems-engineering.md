@@ -11,6 +11,8 @@ is-a:
   - urn:ngm:class:systems-engineering
 enables:
   - urn:ngm:class:digital-twin
+bridgesTo:
+  - urn:ngm:class:space-systems-engineering
 uses:
   - urn:ngm:class:simulation-software
 relatedTo:

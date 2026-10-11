@@ -9,9 +9,13 @@ maturity: established
 quality: 0.72
 is-a:
   - urn:ngm:class:ai-application
+bridgesTo:
+  - urn:ngm:class:crop-monitoring
+  - urn:ngm:class:normalised-difference-vegetation-index
 relatedTo:
   - urn:ngm:class:io-t-sensor-network
   - urn:ngm:class:ground-robot
+  - urn:ngm:class:drought-monitoring
 ---
 
 # Precision Agriculture

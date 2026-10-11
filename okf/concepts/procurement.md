@@ -34,6 +34,8 @@ relatedTo:
   - urn:ngm:class:infrastructure
   - urn:ngm:class:traceability
   - urn:ngm:class:compliance
+  - urn:ngm:class:space-supply-chain
+  - urn:ngm:class:prime-contractor
 ---
 
 # Procurement

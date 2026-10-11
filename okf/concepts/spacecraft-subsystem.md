@@ -9,6 +9,7 @@ maturity: draft
 quality: 0
 is-a:
   - urn:ngm:class:system
+  - urn:ngm:class:spacecraft
 relatedTo:
   - urn:ngm:class:space-systems-engineering
 ---

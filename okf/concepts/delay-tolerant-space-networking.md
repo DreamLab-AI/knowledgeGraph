@@ -11,10 +11,13 @@ is-a:
   - urn:ngm:class:spacecraft-communications
 bridgesTo:
   - urn:ngm:class:communication-protocol
+  - urn:ngm:class:latency
 uses:
   - urn:ngm:class:store-and-forward-communication
 relatedTo:
   - urn:ngm:class:satellite-communication
+  - urn:ngm:class:routing
+  - urn:ngm:class:propagation-delay
 ---
 
 # Delay-tolerant Space Networking

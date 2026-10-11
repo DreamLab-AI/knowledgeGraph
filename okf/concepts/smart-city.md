@@ -41,6 +41,7 @@ relatedTo:
   - urn:ngm:class:urban-computing
   - urn:ngm:class:citizen-engagement
   - urn:ngm:class:sustainability
+  - urn:ngm:class:urban-heat-monitoring
 ---
 
 # Smart City

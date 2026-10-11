@@ -10,13 +10,13 @@ quality: 0.62
 is-a:
   - urn:ngm:class:rendering
 hasPart:
-  - urn:ngm:class:brdf
+  - urn:ngm:class:bidirectional-reflectance-distribution-function
   - urn:ngm:class:material-system
 enables:
   - urn:ngm:class:real-time-rendering
   - urn:ngm:class:global-illumination
 dependsOn:
-  - urn:ngm:class:brdf
+  - urn:ngm:class:bidirectional-reflectance-distribution-function
 implements:
   - urn:ngm:class:physically-based-rendering
 uses:

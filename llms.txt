@@ -61,7 +61,11 @@ site is hand-typed.
   direction. A demonstration testbed for the VisionFlow/VisionClaw toolchain, not
   a vetted human reference. Treat claims as generated content with a traceable
   origin.
-- Human director / attribution: Dr John O'Hare, DreamLab AI, did:nostr:jjohare.
+- Human director / attribution: Dr John O'Hare, DreamLab AI,
+  did:nostr:d598abc6edefc37e10523aec4c00f8d9674a93791aa34a1db03bfa9b60b9f246.
+  Every page's prov:wasAttributedTo resolves to one of five did:nostr identities
+  (four agent swarms and the human director); the roster with npub and did for
+  each is ontology/attribution.yaml in the corpus repository.
   The did attests who directed the generation and when. It is not a claim of
   human authorship.
 - Source corpus is private (jjohare/logseq); the published projection is open.

@@ -16,7 +16,7 @@ hasPart:
   - urn:ngm:class:fault-tolerance
 requires:
   - urn:ngm:class:network-protocol
-  - urn:ngm:class:clock-synchronization
+  - urn:ngm:class:time-synchronisation
 enables:
   - urn:ngm:class:orchestration
   - urn:ngm:class:blockchain

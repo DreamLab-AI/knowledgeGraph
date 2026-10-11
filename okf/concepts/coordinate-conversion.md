@@ -9,6 +9,8 @@ maturity: draft
 quality: 0
 is-a:
   - urn:ngm:class:geodesy
+bridgesTo:
+  - urn:ngm:class:reference-frames
 relatedTo:
   - urn:ngm:class:coordinate-transformation
   - urn:ngm:class:map-projection

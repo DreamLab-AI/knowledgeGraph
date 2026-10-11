@@ -9,6 +9,7 @@ maturity: mature
 quality: 0.74
 is-a:
   - urn:ngm:class:network-protocol
+  - urn:ngm:class:network-synchronization
 hasPart:
   - urn:ngm:class:network-time-protocol
   - urn:ngm:class:precision-time-protocol
@@ -25,6 +26,9 @@ enables:
   - urn:ngm:class:digital-certificate
   - urn:ngm:class:audit-logging
   - urn:ngm:class:event-ordering
+  - urn:ngm:class:distributed-systems
+  - urn:ngm:class:consensus-mechanism
+  - urn:ngm:class:time-sensitive-networking
 dependsOn:
   - urn:ngm:class:network-infrastructure
   - urn:ngm:class:timestamp
@@ -34,6 +38,11 @@ contrastsWith:
 bridgesTo:
   - urn:ngm:class:cryptographic-protocol
   - urn:ngm:class:iot-device-management
+  - urn:ngm:class:positioning-navigation-and-timing
+  - urn:ngm:class:gnss-time-transfer
+uses:
+  - urn:ngm:class:timestamp
+  - urn:ngm:class:synchronization-protocol
 supports:
   - urn:ngm:class:blockchain
   - urn:ngm:class:real-time
@@ -51,6 +60,13 @@ relatedTo:
   - urn:ngm:class:distributed-ledger
   - urn:ngm:class:edge-computing
   - urn:ngm:class:clock-skew
+  - urn:ngm:class:coordinated-universal-time
+  - urn:ngm:class:leap-second
+  - urn:ngm:class:internet-of-things
+  - urn:ngm:class:timestamp-service
+  - urn:ngm:class:receiver-clock-bias
+  - urn:ngm:class:satellite-clock-error
+  - urn:ngm:class:radio-astronomy
 ---
 
 # Time Synchronisation

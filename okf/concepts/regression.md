@@ -16,6 +16,9 @@ enables:
   - urn:ngm:class:machine-learning
 bridgesTo:
   - urn:ngm:class:deep-learning
+relatedTo:
+  - urn:ngm:class:spectral-unmixing
+  - urn:ngm:class:hyperspectral-imaging
 ---
 
 # Regression

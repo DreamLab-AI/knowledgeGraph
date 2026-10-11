@@ -11,6 +11,7 @@ is-a:
   - urn:ngm:class:earth-observation-data-quality
 relatedTo:
   - urn:ngm:class:earth-observation-data-quality
+  - urn:ngm:class:data-quality
 ---
 
 # Measurement Accuracy

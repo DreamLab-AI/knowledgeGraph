@@ -9,8 +9,12 @@ maturity: draft
 quality: 0
 is-a:
   - urn:ngm:class:sensor
+  - urn:ngm:class:attitude-determination
+bridgesTo:
+  - urn:ngm:class:image-processing
 relatedTo:
   - urn:ngm:class:spacecraft-guidance-navigation-and-control
+  - urn:ngm:class:gyroscope
 ---
 
 # Star Tracker

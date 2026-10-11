@@ -34,6 +34,11 @@ bridgesTo:
   - urn:ngm:class:signal-processing
   - urn:ngm:class:financial-modelling
   - urn:ngm:class:machine-learning
+  - urn:ngm:class:uncertainty-propagation
+  - urn:ngm:class:measurement-uncertainty
+  - urn:ngm:class:measurement-precision
+  - urn:ngm:class:measurement-bias
+  - urn:ngm:class:sampling-bias
 supports:
   - urn:ngm:class:causal-inference
 relatedTo:

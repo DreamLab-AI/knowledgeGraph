@@ -17,6 +17,9 @@ dependsOn:
   - urn:ngm:class:machine-learning
 contrastsWith:
   - urn:ngm:class:adversarial-robustness
+bridgesTo:
+  - urn:ngm:class:measurement-uncertainty
+  - urn:ngm:class:uncertainty-propagation
 uses:
   - urn:ngm:class:calibration
 supports:
@@ -28,6 +31,7 @@ relatedTo:
   - urn:ngm:class:monte-carlo-methods
   - urn:ngm:class:ensemble-methods
   - urn:ngm:class:probabilistic-model
+  - urn:ngm:class:spacecraft-navigation
 ---
 
 # Uncertainty Quantification

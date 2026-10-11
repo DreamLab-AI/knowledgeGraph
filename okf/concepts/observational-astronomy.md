@@ -9,6 +9,9 @@ maturity: draft
 quality: 0
 is-a:
   - urn:ngm:class:astronomy
+bridgesTo:
+  - urn:ngm:class:calibration
+  - urn:ngm:class:telescope
 relatedTo:
   - urn:ngm:class:astronomy
 ---

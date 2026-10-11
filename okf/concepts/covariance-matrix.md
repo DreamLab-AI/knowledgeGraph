@@ -35,6 +35,8 @@ implements:
 contrastsWith:
   - urn:ngm:class:correlation-matrix
   - urn:ngm:class:precision-matrix
+bridgesTo:
+  - urn:ngm:class:dilution-of-precision
 uses:
   - urn:ngm:class:eigendecomposition
   - urn:ngm:class:singular-value-decomposition

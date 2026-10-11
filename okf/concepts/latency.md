@@ -38,6 +38,7 @@ bridgesTo:
   - urn:ngm:class:extended-reality
   - urn:ngm:class:consensus-mechanism
   - urn:ngm:class:inference-serving
+  - urn:ngm:class:delay-tolerant-space-networking
 partOf:
   - urn:ngm:class:network-performance-metrics
   - urn:ngm:class:quality-of-service

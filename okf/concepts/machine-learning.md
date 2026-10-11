@@ -46,6 +46,8 @@ bridgesTo:
   - urn:ngm:class:supply-chain-optimisation
   - urn:ngm:class:smart-grid
   - urn:ngm:class:responsible-ai
+  - urn:ngm:class:geospatial-feature-extraction
+  - urn:ngm:class:association-rule-learning
 uses:
   - urn:ngm:class:neural-network
   - urn:ngm:class:gradient-descent

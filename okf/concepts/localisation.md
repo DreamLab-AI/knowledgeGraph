@@ -35,6 +35,7 @@ bridgesTo:
   - urn:ngm:class:spatial-computing
   - urn:ngm:class:digital-twin
   - urn:ngm:class:indoor-positioning-system
+  - urn:ngm:class:positioning-navigation-and-timing
 uses:
   - urn:ngm:class:lidar
   - urn:ngm:class:particle-filter
@@ -62,6 +63,9 @@ relatedTo:
   - urn:ngm:class:map-matching
   - urn:ngm:class:localisation
   - urn:ngm:class:visual-odometry
+  - urn:ngm:class:geolocation
+  - urn:ngm:class:geolocation-accuracy
+  - urn:ngm:class:relative-spacecraft-navigation
 ---
 
 # Localisation

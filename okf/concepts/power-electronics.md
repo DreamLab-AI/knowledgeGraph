@@ -37,6 +37,8 @@ bridgesTo:
   - urn:ngm:class:smart-grid
   - urn:ngm:class:battery-management-system
   - urn:ngm:class:servo-motor
+  - urn:ngm:class:power-conditioning-and-distribution
+  - urn:ngm:class:propulsion-power-processing-unit
 uses:
   - urn:ngm:class:mosfet
   - urn:ngm:class:igbt

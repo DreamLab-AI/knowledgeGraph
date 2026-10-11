@@ -27,6 +27,7 @@ bridgesTo:
   - urn:ngm:class:bioinformatics
   - urn:ngm:class:computer-vision
   - urn:ngm:class:blockchain
+  - urn:ngm:class:hyperspectral-imaging
 uses:
   - urn:ngm:class:unsupervised-learning
   - urn:ngm:class:neural-network

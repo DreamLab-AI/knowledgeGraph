@@ -22,6 +22,7 @@ contrastsWith:
   - urn:ngm:class:neural-network
 bridgesTo:
   - urn:ngm:class:supervised-learning
+  - urn:ngm:class:crop-monitoring
 uses:
   - urn:ngm:class:decision-tree
   - urn:ngm:class:bagging
@@ -34,6 +35,7 @@ relatedTo:
   - urn:ngm:class:decision-tree
   - urn:ngm:class:feature-importance
   - urn:ngm:class:cross-validation
+  - urn:ngm:class:biodiversity-monitoring
 ---
 
 # Random Forest

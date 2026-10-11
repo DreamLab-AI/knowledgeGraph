@@ -9,9 +9,17 @@ maturity: established
 quality: 0.72
 is-a:
   - urn:ngm:class:robo-navigation-and-planning
+bridgesTo:
+  - urn:ngm:class:geodesy
+  - urn:ngm:class:geodetic-reference-frame
+  - urn:ngm:class:spatial-reference-system
+  - urn:ngm:class:geodetic-datum
+  - urn:ngm:class:coordinate-conversion
+  - urn:ngm:class:datum-transformation
 relatedTo:
   - urn:ngm:class:coordinate-transformation
   - urn:ngm:class:kinematics-model
+  - urn:ngm:class:frame-reference-epoch
 ---
 
 # Reference Frames

@@ -9,6 +9,8 @@ maturity: draft
 quality: 0
 is-a:
   - urn:ngm:class:earth-observation-processing
+bridgesTo:
+  - urn:ngm:class:simulation
 relatedTo:
   - urn:ngm:class:atmospheric-correction
   - urn:ngm:class:spectral-radiance

@@ -9,6 +9,9 @@ maturity: established
 quality: 0.72
 is-a:
   - urn:ngm:class:technical-standard
+bridgesTo:
+  - urn:ngm:class:observation-provenance
+  - urn:ngm:class:processing-lineage
 relatedTo:
   - urn:ngm:class:metadata-management
   - urn:ngm:class:data-management

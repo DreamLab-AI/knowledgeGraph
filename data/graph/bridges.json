@@ -1,7 +1,7 @@
 {
   "pipelineVersion": "ng-1.0.0",
   "note": "Classes bridging more than one taxonomy category or domain. Overlap is a design property of this corpus. The NGG1 node record carries a single u16 category (FORMAT-NGG1 3), so tiers keep the nearest one; the full membership is here. Indices match overview.json.",
-  "count": 1307,
+  "count": 1349,
   "bridges": [
     {
       "iri": "https://narrativegoldmine.com/class/2-d-li-dar",
@@ -1339,7 +1339,7 @@
       "label": "Account Abstraction",
       "categories": [
         6,
-        27
+        10
       ],
       "domains": [
         1
@@ -1355,7 +1355,7 @@
       "categories": [
         6,
         28,
-        27
+        10
       ],
       "domains": [
         1,
@@ -1467,6 +1467,22 @@
       "parents": [
         "Software Engineering",
         "Resource Management"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/active-remote-sensing",
+      "label": "Active Remote Sensing",
+      "categories": [
+        15,
+        47
+      ],
+      "domains": [
+        2,
+        7
+      ],
+      "parents": [
+        "Remote Sensing",
+        "Earth Observation Sensor"
       ]
     },
     {
@@ -2032,6 +2048,22 @@
       ]
     },
     {
+      "iri": "https://narrativegoldmine.com/class/airborne-remote-sensing",
+      "label": "Airborne Remote Sensing",
+      "categories": [
+        15,
+        47
+      ],
+      "domains": [
+        2,
+        7
+      ],
+      "parents": [
+        "Remote Sensing",
+        "Earth Observation Sensor"
+      ]
+    },
+    {
       "iri": "https://narrativegoldmine.com/class/algorithm",
       "label": "Algorithm",
       "categories": [
@@ -2293,7 +2325,7 @@
       "iri": "https://narrativegoldmine.com/class/archival-node",
       "label": "Archival Node",
       "categories": [
-        27,
+        10,
         28
       ],
       "domains": [
@@ -2394,7 +2426,7 @@
       "label": "Asset Registry",
       "categories": [
         8,
-        27,
+        10,
         28
       ],
       "domains": [
@@ -2540,6 +2572,22 @@
       "parents": [
         "Actuator",
         "Thruster"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/attitude-determination",
+      "label": "Attitude Determination",
+      "categories": [
+        43,
+        18
+      ],
+      "domains": [
+        6,
+        3
+      ],
+      "parents": [
+        "Spacecraft Guidance Navigation and Control",
+        "Sensor Fusion"
       ]
     },
     {
@@ -3102,7 +3150,7 @@
       "label": "BTC Layer 3",
       "categories": [
         6,
-        27,
+        10,
         28
       ],
       "domains": [
@@ -3575,6 +3623,22 @@
       ]
     },
     {
+      "iri": "https://narrativegoldmine.com/class/bidirectional-reflectance-distribution-function",
+      "label": "Bidirectional Reflectance Distribution Function",
+      "categories": [
+        49,
+        12
+      ],
+      "domains": [
+        7,
+        2
+      ],
+      "parents": [
+        "Earth Observation Processing",
+        "Rendering Technique"
+      ]
+    },
+    {
       "iri": "https://narrativegoldmine.com/class/binary-buffer",
       "label": "Binary Buffer",
       "categories": [
@@ -3819,7 +3883,7 @@
       "label": "Bitcoin Technical Overview",
       "categories": [
         6,
-        27,
+        10,
         28,
         30
       ],
@@ -3840,7 +3904,7 @@
       "iri": "https://narrativegoldmine.com/class/bitcoin-transaction",
       "label": "Bitcoin Transaction",
       "categories": [
-        27,
+        10,
         8
       ],
       "domains": [
@@ -3878,7 +3942,7 @@
       "label": "Bittensor",
       "categories": [
         4,
-        27
+        10
       ],
       "domains": [
         0,
@@ -3931,7 +3995,7 @@
       "categories": [
         6,
         28,
-        27
+        10
       ],
       "domains": [
         1,
@@ -3950,7 +4014,7 @@
       "categories": [
         6,
         28,
-        27
+        10
       ],
       "domains": [
         1,
@@ -3969,7 +4033,7 @@
       "categories": [
         6,
         28,
-        27
+        10
       ],
       "domains": [
         1
@@ -4003,7 +4067,7 @@
       "categories": [
         9,
         28,
-        27
+        10
       ],
       "domains": [
         1,
@@ -4022,7 +4086,7 @@
       "categories": [
         6,
         28,
-        27
+        10
       ],
       "domains": [
         1,
@@ -4041,7 +4105,7 @@
       "categories": [
         6,
         28,
-        27
+        10
       ],
       "domains": [
         1,
@@ -4058,7 +4122,7 @@
       "iri": "https://narrativegoldmine.com/class/block",
       "label": "Block",
       "categories": [
-        27,
+        10,
         28
       ],
       "domains": [
@@ -4075,7 +4139,7 @@
       "iri": "https://narrativegoldmine.com/class/blockchain-anchoring",
       "label": "Blockchain Anchoring",
       "categories": [
-        27,
+        10,
         7
       ],
       "domains": [
@@ -4091,7 +4155,7 @@
       "iri": "https://narrativegoldmine.com/class/blockchain-as-a-service",
       "label": "Blockchain As A Service",
       "categories": [
-        27,
+        10,
         28,
         33
       ],
@@ -4198,7 +4262,7 @@
       "iri": "https://narrativegoldmine.com/class/blockchain-infrastructure",
       "label": "Blockchain Infrastructure",
       "categories": [
-        27,
+        10,
         28
       ],
       "domains": [
@@ -4215,7 +4279,7 @@
       "iri": "https://narrativegoldmine.com/class/blockchain-interoperability",
       "label": "Blockchain Interoperability",
       "categories": [
-        27,
+        10,
         30,
         29
       ],
@@ -4235,7 +4299,7 @@
       "iri": "https://narrativegoldmine.com/class/blockchain-network",
       "label": "Blockchain Network",
       "categories": [
-        27,
+        10,
         28,
         29
       ],
@@ -4765,7 +4829,7 @@
       "iri": "https://narrativegoldmine.com/class/carbon-credit-tracking",
       "label": "Carbon Credit Tracking",
       "categories": [
-        27,
+        10,
         8,
         17,
         32
@@ -4948,7 +5012,7 @@
       "categories": [
         6,
         28,
-        27
+        10
       ],
       "domains": [
         1
@@ -5025,7 +5089,7 @@
       "categories": [
         6,
         28,
-        27
+        10
       ],
       "domains": [
         1,
@@ -5043,7 +5107,7 @@
       "categories": [
         6,
         28,
-        27
+        10
       ],
       "domains": [
         1,
@@ -6024,6 +6088,22 @@
       ]
     },
     {
+      "iri": "https://narrativegoldmine.com/class/compound-coordinate-reference-system",
+      "label": "Compound Coordinate Reference System",
+      "categories": [
+        31,
+        52
+      ],
+      "domains": [
+        2,
+        7
+      ],
+      "parents": [
+        "Coordinate Reference System",
+        "Spatial Reference System"
+      ]
+    },
+    {
       "iri": "https://narrativegoldmine.com/class/computability-theory",
       "label": "Computability Theory",
       "categories": [
@@ -6212,7 +6292,7 @@
       "iri": "https://narrativegoldmine.com/class/confidential-transactions",
       "label": "Confidential Transactions",
       "categories": [
-        27,
+        10,
         7
       ],
       "domains": [
@@ -6295,7 +6375,7 @@
       "iri": "https://narrativegoldmine.com/class/consortium-blockchain",
       "label": "Consortium Blockchain",
       "categories": [
-        27,
+        10,
         28
       ],
       "domains": [
@@ -6612,6 +6692,22 @@
       ]
     },
     {
+      "iri": "https://narrativegoldmine.com/class/control-moment-gyroscope",
+      "label": "Control Moment Gyroscope",
+      "categories": [
+        19,
+        43
+      ],
+      "domains": [
+        3,
+        6
+      ],
+      "parents": [
+        "Actuator",
+        "Attitude Control"
+      ]
+    },
+    {
       "iri": "https://narrativegoldmine.com/class/control-system",
       "label": "Control System",
       "categories": [
@@ -6809,7 +6905,7 @@
       "iri": "https://narrativegoldmine.com/class/cosmos-ibc",
       "label": "Cosmos IBC",
       "categories": [
-        27,
+        10,
         29
       ],
       "domains": [
@@ -6937,7 +7033,7 @@
       "iri": "https://narrativegoldmine.com/class/cross-chain-bridge",
       "label": "Cross-Chain Bridge",
       "categories": [
-        27,
+        10,
         29
       ],
       "domains": [
@@ -7054,7 +7150,7 @@
       "label": "Cryptocurrency",
       "categories": [
         8,
-        27
+        10
       ],
       "domains": [
         1
@@ -7105,16 +7201,17 @@
       "iri": "https://narrativegoldmine.com/class/cryptographic-primitive",
       "label": "Cryptographic Primitive",
       "categories": [
-        30,
-        7
+        7,
+        30
       ],
       "domains": [
-        5,
-        1
+        1,
+        5
       ],
       "parents": [
+        "Cryptographic Primitive (category)",
         "Cryptography",
-        "Cryptographic Primitive (category)"
+        "Blockchain"
       ]
     },
     {
@@ -7273,7 +7370,7 @@
       "label": "Customs Trade Facilitation",
       "categories": [
         11,
-        27,
+        10,
         3,
         15
       ],
@@ -7438,7 +7535,7 @@
       "label": "DAO Tooling",
       "categories": [
         11,
-        27
+        10
       ],
       "domains": [
         1
@@ -7744,7 +7841,7 @@
       "label": "Decentralisation",
       "categories": [
         32,
-        27,
+        10,
         28
       ],
       "domains": [
@@ -7779,7 +7876,7 @@
       "label": "Decentralised Application",
       "categories": [
         28,
-        27
+        10
       ],
       "domains": [
         5,
@@ -7796,7 +7893,7 @@
       "categories": [
         15,
         9,
-        27
+        10
       ],
       "domains": [
         2,
@@ -7843,7 +7940,7 @@
         7,
         8,
         16,
-        27
+        10
       ],
       "domains": [
         5,
@@ -7882,7 +7979,7 @@
         29,
         33,
         28,
-        27,
+        10,
         16
       ],
       "domains": [
@@ -7903,7 +8000,7 @@
       "categories": [
         31,
         28,
-        27,
+        10,
         29
       ],
       "domains": [
@@ -7924,7 +8021,7 @@
       "label": "Decentralized Exchange (DEX)",
       "categories": [
         9,
-        27
+        10
       ],
       "domains": [
         1
@@ -7941,7 +8038,7 @@
         9,
         5,
         15,
-        27,
+        10,
         30
       ],
       "domains": [
@@ -8712,7 +8809,7 @@
       "iri": "https://narrativegoldmine.com/class/digital-identity-wallet",
       "label": "Digital Identity Wallet",
       "categories": [
-        27,
+        10,
         8,
         30,
         31
@@ -9084,7 +9181,7 @@
       "iri": "https://narrativegoldmine.com/class/distributed-data-structure",
       "label": "Distributed Data Structure",
       "categories": [
-        27,
+        10,
         28
       ],
       "domains": [
@@ -9121,7 +9218,7 @@
       "iri": "https://narrativegoldmine.com/class/distributed-identity",
       "label": "Distributed Identity",
       "categories": [
-        27,
+        10,
         30,
         29
       ],
@@ -9172,7 +9269,7 @@
       "iri": "https://narrativegoldmine.com/class/distributed-ledger",
       "label": "Distributed Ledger",
       "categories": [
-        27,
+        10,
         33,
         28
       ],
@@ -9346,6 +9443,22 @@
         "Model Serving",
         "Batch Processing",
         "Request Scheduling"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/dynamic-coordinate-reference-system",
+      "label": "Dynamic Coordinate Reference System",
+      "categories": [
+        31,
+        52
+      ],
+      "domains": [
+        2,
+        7
+      ],
+      "parents": [
+        "Coordinate Reference System",
+        "Spatial Reference System"
       ]
     },
     {
@@ -9646,7 +9759,7 @@
       "iri": "https://narrativegoldmine.com/class/evm-compatibility",
       "label": "EVM Compatibility",
       "categories": [
-        27,
+        10,
         6
       ],
       "domains": [
@@ -9658,12 +9771,28 @@
       ]
     },
     {
+      "iri": "https://narrativegoldmine.com/class/earth-observation-sensor-fusion",
+      "label": "Earth Observation Sensor Fusion",
+      "categories": [
+        18,
+        49
+      ],
+      "domains": [
+        3,
+        7
+      ],
+      "parents": [
+        "Sensor Fusion",
+        "Earth Observation Processing"
+      ]
+    },
+    {
       "iri": "https://narrativegoldmine.com/class/eclipse-attack",
       "label": "Eclipse Attack",
       "categories": [
         6,
         28,
-        27
+        10
       ],
       "domains": [
         1
@@ -10362,7 +10491,7 @@
       "iri": "https://narrativegoldmine.com/class/ethereum-account",
       "label": "Ethereum Account",
       "categories": [
-        27,
+        10,
         6
       ],
       "domains": [
@@ -10378,7 +10507,7 @@
       "label": "Ethereum Improvement Proposal",
       "categories": [
         16,
-        27,
+        10,
         11
       ],
       "domains": [
@@ -10872,7 +11001,7 @@
       "iri": "https://narrativegoldmine.com/class/fault-tolerance-system",
       "label": "Fault Tolerance System",
       "categories": [
-        27,
+        10,
         28
       ],
       "domains": [
@@ -11020,7 +11149,7 @@
       "categories": [
         6,
         28,
-        27
+        10
       ],
       "domains": [
         1
@@ -11229,7 +11358,7 @@
       "label": "Full Node",
       "categories": [
         28,
-        27
+        10
       ],
       "domains": [
         1
@@ -11301,6 +11430,54 @@
       "parents": [
         "Generative Model",
         "Deep Generative Model"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/gnss-radio-occultation",
+      "label": "GNSS Radio Occultation",
+      "categories": [
+        15,
+        47
+      ],
+      "domains": [
+        2,
+        7
+      ],
+      "parents": [
+        "Remote Sensing",
+        "Earth Observation Sensor"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/gnss-receiver",
+      "label": "GNSS Receiver",
+      "categories": [
+        28,
+        21
+      ],
+      "domains": [
+        3,
+        6
+      ],
+      "parents": [
+        "Sensor",
+        "Global Navigation Satellite System"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/gnss-reflectometry",
+      "label": "GNSS Reflectometry",
+      "categories": [
+        15,
+        47
+      ],
+      "domains": [
+        2,
+        7
+      ],
+      "parents": [
+        "Remote Sensing",
+        "Earth Observation Sensor"
       ]
     },
     {
@@ -11391,7 +11568,7 @@
       "iri": "https://narrativegoldmine.com/class/gas-metering",
       "label": "Gas Metering",
       "categories": [
-        27,
+        10,
         6
       ],
       "domains": [
@@ -11577,7 +11754,7 @@
       "categories": [
         6,
         28,
-        27
+        10
       ],
       "domains": [
         1,
@@ -11587,6 +11764,38 @@
         "Protocol and Consensus",
         "Blockchain Entity",
         "Distributed Data Structure"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/geodetic-coordinate-reference-system",
+      "label": "Geodetic Coordinate Reference System",
+      "categories": [
+        31,
+        52
+      ],
+      "domains": [
+        2,
+        7
+      ],
+      "parents": [
+        "Coordinate Reference System",
+        "Spatial Reference System"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/geographic-coordinate-reference-system",
+      "label": "Geographic Coordinate Reference System",
+      "categories": [
+        31,
+        52
+      ],
+      "domains": [
+        2,
+        7
+      ],
+      "parents": [
+        "Coordinate Reference System",
+        "Spatial Reference System"
       ]
     },
     {
@@ -11602,6 +11811,22 @@
       "parents": [
         "Spatial Computing",
         "Remote Sensing"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/geometric-calibration",
+      "label": "Geometric Calibration",
+      "categories": [
+        18,
+        49
+      ],
+      "domains": [
+        3,
+        7
+      ],
+      "parents": [
+        "Calibration",
+        "Earth Observation Processing"
       ]
     },
     {
@@ -11686,6 +11911,23 @@
       ]
     },
     {
+      "iri": "https://narrativegoldmine.com/class/global-navigation-satellite-system",
+      "label": "Global Navigation Satellite System",
+      "categories": [
+        21,
+        0
+      ],
+      "domains": [
+        3,
+        6
+      ],
+      "parents": [
+        "Navigation System",
+        "Spacecraft Subsystem",
+        "Localization"
+      ]
+    },
+    {
       "iri": "https://narrativegoldmine.com/class/gold",
       "label": "Gold",
       "categories": [
@@ -11711,7 +11953,7 @@
       "categories": [
         29,
         28,
-        27
+        10
       ],
       "domains": [
         5,
@@ -11844,7 +12086,7 @@
       "label": "Graphics API",
       "categories": [
         12,
-        27,
+        10,
         33,
         15
       ],
@@ -11898,7 +12140,7 @@
       "label": "Green Blockchain Initiatives",
       "categories": [
         11,
-        27,
+        10,
         32,
         28
       ],
@@ -11935,6 +12177,22 @@
         "Autonomous Systems",
         "Cyber-Physical Systems",
         "Embodied AI"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/ground-based-remote-sensing",
+      "label": "Ground-based Remote Sensing",
+      "categories": [
+        15,
+        47
+      ],
+      "domains": [
+        2,
+        7
+      ],
+      "parents": [
+        "Remote Sensing",
+        "Earth Observation Sensor"
       ]
     },
     {
@@ -12176,6 +12434,22 @@
       ]
     },
     {
+      "iri": "https://narrativegoldmine.com/class/horizon-sensor",
+      "label": "Horizon Sensor",
+      "categories": [
+        28,
+        43
+      ],
+      "domains": [
+        3,
+        6
+      ],
+      "parents": [
+        "Sensor",
+        "Attitude Determination"
+      ]
+    },
+    {
       "iri": "https://narrativegoldmine.com/class/horizon-workrooms",
       "label": "Horizon Workrooms",
       "categories": [
@@ -12314,7 +12588,7 @@
       "iri": "https://narrativegoldmine.com/class/hyperledger-indy",
       "label": "Hyperledger Indy",
       "categories": [
-        27,
+        10,
         31,
         28,
         11
@@ -12337,7 +12611,7 @@
       "iri": "https://narrativegoldmine.com/class/hyperledger-iroha",
       "label": "Hyperledger Iroha",
       "categories": [
-        27,
+        10,
         28,
         11
       ],
@@ -12567,7 +12841,7 @@
       "label": "Immutability",
       "categories": [
         28,
-        27
+        10
       ],
       "domains": [
         1
@@ -12862,7 +13136,7 @@
       "categories": [
         6,
         28,
-        27
+        10
       ],
       "domains": [
         1,
@@ -12880,7 +13154,7 @@
       "label": "Instant value settlement",
       "categories": [
         9,
-        27,
+        10,
         28
       ],
       "domains": [
@@ -13332,7 +13606,7 @@
       "label": "Layer 2 Scaling",
       "categories": [
         6,
-        27
+        10
       ],
       "domains": [
         1
@@ -13515,7 +13789,7 @@
       "iri": "https://narrativegoldmine.com/class/lightning-network",
       "label": "Lightning Network",
       "categories": [
-        27,
+        10,
         6
       ],
       "domains": [
@@ -13565,7 +13839,7 @@
       "label": "Liquidity Pool",
       "categories": [
         9,
-        27
+        10
       ],
       "domains": [
         1
@@ -13614,7 +13888,7 @@
       "iri": "https://narrativegoldmine.com/class/lock-and-mint-mechanism",
       "label": "Lock and Mint Mechanism",
       "categories": [
-        27,
+        10,
         9
       ],
       "domains": [
@@ -13685,7 +13959,7 @@
       "iri": "https://narrativegoldmine.com/class/low-latency-network",
       "label": "Low-Latency Network",
       "categories": [
-        27
+        10
       ],
       "domains": [
         5,
@@ -13844,6 +14118,22 @@
       ]
     },
     {
+      "iri": "https://narrativegoldmine.com/class/magnetorquer",
+      "label": "Magnetorquer",
+      "categories": [
+        19,
+        43
+      ],
+      "domains": [
+        3,
+        6
+      ],
+      "parents": [
+        "Actuator",
+        "Attitude Control"
+      ]
+    },
+    {
       "iri": "https://narrativegoldmine.com/class/manipulator-arm",
       "label": "Manipulator Arm",
       "categories": [
@@ -13856,6 +14146,22 @@
       "parents": [
         "Interaction Technology",
         "Avatar Wearable"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/marine-remote-sensing",
+      "label": "Marine Remote Sensing",
+      "categories": [
+        15,
+        47
+      ],
+      "domains": [
+        2,
+        7
+      ],
+      "parents": [
+        "Remote Sensing",
+        "Earth Observation Sensor"
       ]
     },
     {
@@ -14095,7 +14401,7 @@
       "iri": "https://narrativegoldmine.com/class/mempool",
       "label": "Mempool",
       "categories": [
-        27,
+        10,
         28
       ],
       "domains": [
@@ -14306,7 +14612,7 @@
       "categories": [
         28,
         8,
-        27
+        10
       ],
       "domains": [
         5,
@@ -14336,6 +14642,22 @@
       "parents": [
         "Distributed Systems",
         "Standards Organization"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/microwave-remote-sensing",
+      "label": "Microwave Remote Sensing",
+      "categories": [
+        15,
+        47
+      ],
+      "domains": [
+        2,
+        7
+      ],
+      "parents": [
+        "Remote Sensing",
+        "Earth Observation Sensor"
       ]
     },
     {
@@ -14719,6 +15041,22 @@
       ]
     },
     {
+      "iri": "https://narrativegoldmine.com/class/momentum-wheel",
+      "label": "Momentum Wheel",
+      "categories": [
+        19,
+        43
+      ],
+      "domains": [
+        3,
+        6
+      ],
+      "parents": [
+        "Actuator",
+        "Attitude Control"
+      ]
+    },
+    {
       "iri": "https://narrativegoldmine.com/class/monocular-camera",
       "label": "Monocular Camera",
       "categories": [
@@ -14828,7 +15166,7 @@
       "label": "Multi Party Transactions",
       "categories": [
         6,
-        27
+        10
       ],
       "domains": [
         1
@@ -15052,19 +15390,20 @@
       "iri": "https://narrativegoldmine.com/class/network-component",
       "label": "Network Component",
       "categories": [
+        10,
         1,
-        27,
-        10
+        27
       ],
       "domains": [
+        1,
         0,
-        4,
-        1
+        4
       ],
       "parents": [
+        "Network Component (category)",
         "Network Architecture",
         "Protocol and Infrastructure",
-        "Network Component (category)"
+        "Blockchain"
       ]
     },
     {
@@ -15088,7 +15427,7 @@
       "iri": "https://narrativegoldmine.com/class/network-latency",
       "label": "Network Latency",
       "categories": [
-        27,
+        10,
         28
       ],
       "domains": [
@@ -15151,7 +15490,7 @@
       "iri": "https://narrativegoldmine.com/class/network-topology",
       "label": "Network Topology",
       "categories": [
-        27,
+        10,
         28
       ],
       "domains": [
@@ -15261,7 +15600,7 @@
       "label": "NFT Minting",
       "categories": [
         8,
-        27,
+        10,
         0
       ],
       "domains": [
@@ -15281,7 +15620,7 @@
       "iri": "https://narrativegoldmine.com/class/node",
       "label": "Node",
       "categories": [
-        27,
+        10,
         28
       ],
       "domains": [
@@ -15298,7 +15637,7 @@
       "label": "Non Genesis Block",
       "categories": [
         6,
-        27
+        10
       ],
       "domains": [
         1
@@ -15398,7 +15737,7 @@
         31,
         33,
         28,
-        27
+        10
       ],
       "domains": [
         5,
@@ -15434,7 +15773,7 @@
       "categories": [
         11,
         8,
-        27,
+        10,
         29,
         30
       ],
@@ -15456,7 +15795,7 @@
       "iri": "https://narrativegoldmine.com/class/on-chain-transaction",
       "label": "On-Chain Transaction",
       "categories": [
-        27,
+        10,
         6
       ],
       "domains": [
@@ -15488,7 +15827,7 @@
       "categories": [
         6,
         28,
-        27
+        10
       ],
       "domains": [
         1,
@@ -15623,6 +15962,22 @@
       ]
     },
     {
+      "iri": "https://narrativegoldmine.com/class/optical-remote-sensing",
+      "label": "Optical Remote Sensing",
+      "categories": [
+        15,
+        47
+      ],
+      "domains": [
+        2,
+        7
+      ],
+      "parents": [
+        "Remote Sensing",
+        "Earth Observation Sensor"
+      ]
+    },
+    {
       "iri": "https://narrativegoldmine.com/class/optical-sensor-array",
       "label": "Optical Sensor Array",
       "categories": [
@@ -15653,7 +16008,7 @@
       "categories": [
         6,
         28,
-        27
+        10
       ],
       "domains": [
         1,
@@ -15798,7 +16153,7 @@
       "categories": [
         6,
         28,
-        27
+        10
       ],
       "domains": [
         1
@@ -15810,10 +16165,26 @@
       ]
     },
     {
+      "iri": "https://narrativegoldmine.com/class/passive-remote-sensing",
+      "label": "Passive Remote Sensing",
+      "categories": [
+        15,
+        47
+      ],
+      "domains": [
+        2,
+        7
+      ],
+      "parents": [
+        "Remote Sensing",
+        "Earth Observation Sensor"
+      ]
+    },
+    {
       "iri": "https://narrativegoldmine.com/class/peer-discovery",
       "label": "Peer Discovery",
       "categories": [
-        27,
+        10,
         28
       ],
       "domains": [
@@ -15829,7 +16200,7 @@
       "iri": "https://narrativegoldmine.com/class/peer-to-peer-network",
       "label": "Peer-to-Peer Network",
       "categories": [
-        27,
+        10,
         28
       ],
       "domains": [
@@ -15860,7 +16231,7 @@
       "iri": "https://narrativegoldmine.com/class/permissioned-network",
       "label": "Permissioned Network",
       "categories": [
-        27,
+        10,
         28
       ],
       "domains": [
@@ -15876,7 +16247,7 @@
       "iri": "https://narrativegoldmine.com/class/permissionless-network",
       "label": "Permissionless Network",
       "categories": [
-        27,
+        10,
         28
       ],
       "domains": [
@@ -16383,7 +16754,7 @@
       "label": "Privacy Preserving Blockchain",
       "categories": [
         7,
-        27,
+        10,
         30,
         28
       ],
@@ -16587,6 +16958,22 @@
         "Agent Harness",
         "AI Infrastructure",
         "Cognitive Architecture"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/projected-coordinate-reference-system",
+      "label": "Projected Coordinate Reference System",
+      "categories": [
+        31,
+        52
+      ],
+      "domains": [
+        2,
+        7
+      ],
+      "parents": [
+        "Coordinate Reference System",
+        "Spatial Reference System"
       ]
     },
     {
@@ -16802,7 +17189,7 @@
       "iri": "https://narrativegoldmine.com/class/pruned-node",
       "label": "Pruned Node",
       "categories": [
-        27,
+        10,
         28
       ],
       "domains": [
@@ -16949,7 +17336,7 @@
       "iri": "https://narrativegoldmine.com/class/quorum-blockchain",
       "label": "Quorum Blockchain",
       "categories": [
-        27,
+        10,
         28
       ],
       "domains": [
@@ -16968,7 +17355,7 @@
       "iri": "https://narrativegoldmine.com/class/r3-corda",
       "label": "R3 Corda",
       "categories": [
-        27,
+        10,
         28
       ],
       "domains": [
@@ -16989,7 +17376,7 @@
       "label": "RGB and Client Side Validation",
       "categories": [
         6,
-        27,
+        10,
         8
       ],
       "domains": [
@@ -17019,6 +17406,38 @@
       "parents": [
         "Robotics",
         "Robot Operating System"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/radioisotope-power-system",
+      "label": "Radioisotope Power System",
+      "categories": [
+        0,
+        42
+      ],
+      "domains": [
+        0,
+        6
+      ],
+      "parents": [
+        "System",
+        "Spacecraft Power and Thermal Control"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/radiometric-calibration",
+      "label": "Radiometric Calibration",
+      "categories": [
+        18,
+        49
+      ],
+      "domains": [
+        3,
+        7
+      ],
+      "parents": [
+        "Calibration",
+        "Earth Observation Processing"
       ]
     },
     {
@@ -17055,6 +17474,22 @@
         "Global Illumination",
         "Rendering",
         "Monte Carlo Methods"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/reaction-wheel",
+      "label": "Reaction Wheel",
+      "categories": [
+        19,
+        43
+      ],
+      "domains": [
+        3,
+        6
+      ],
+      "parents": [
+        "Actuator",
+        "Attitude Control"
       ]
     },
     {
@@ -17338,7 +17773,7 @@
       "label": "Relay Network",
       "categories": [
         29,
-        27
+        10
       ],
       "domains": [
         5,
@@ -17399,6 +17834,22 @@
         "Distributed Software Engineering",
         "Agile Software Development",
         "Synchronous Collaboration"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/remote-sensing-image-segmentation",
+      "label": "Remote Sensing Image Segmentation",
+      "categories": [
+        0,
+        49
+      ],
+      "domains": [
+        0,
+        7
+      ],
+      "parents": [
+        "Image Segmentation",
+        "Earth Observation Processing"
       ]
     },
     {
@@ -18087,6 +18538,22 @@
       ]
     },
     {
+      "iri": "https://narrativegoldmine.com/class/satellite-remote-sensing",
+      "label": "Satellite Remote Sensing",
+      "categories": [
+        15,
+        47
+      ],
+      "domains": [
+        2,
+        7
+      ],
+      "parents": [
+        "Remote Sensing",
+        "Earth Observation Sensor"
+      ]
+    },
+    {
       "iri": "https://narrativegoldmine.com/class/scalable-architecture",
       "label": "Scalable Architecture",
       "categories": [
@@ -18243,7 +18710,7 @@
       "categories": [
         6,
         28,
-        27
+        10
       ],
       "domains": [
         1,
@@ -18411,7 +18878,7 @@
       "iri": "https://narrativegoldmine.com/class/self-sovereign-identity",
       "label": "Self Sovereign Identity",
       "categories": [
-        27,
+        10,
         30,
         11
       ],
@@ -18435,7 +18902,7 @@
       "categories": [
         6,
         28,
-        27
+        10
       ],
       "domains": [
         1
@@ -18479,6 +18946,22 @@
       "parents": [
         "Model Evaluation",
         "AI Evaluation"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/sensor-intercalibration",
+      "label": "Sensor Intercalibration",
+      "categories": [
+        18,
+        49
+      ],
+      "domains": [
+        3,
+        7
+      ],
+      "parents": [
+        "Calibration",
+        "Earth Observation Processing"
       ]
     },
     {
@@ -18755,7 +19238,8 @@
       "iri": "https://narrativegoldmine.com/class/smart-contract-coordination",
       "label": "Smart Contract Coordination",
       "categories": [
-        27
+        27,
+        10
       ],
       "domains": [
         4,
@@ -18770,7 +19254,7 @@
       "iri": "https://narrativegoldmine.com/class/smart-contract",
       "label": "Smart Contract",
       "categories": [
-        27,
+        10,
         28,
         16
       ],
@@ -18791,7 +19275,7 @@
       "iri": "https://narrativegoldmine.com/class/smart-contracts",
       "label": "Smart Contracts",
       "categories": [
-        27,
+        10,
         28
       ],
       "domains": [
@@ -18981,7 +19465,7 @@
       "iri": "https://narrativegoldmine.com/class/sovereign-mesh",
       "label": "Sovereign Mesh",
       "categories": [
-        27
+        10
       ],
       "domains": [
         1,
@@ -18990,6 +19474,100 @@
       "parents": [
         "Network Component",
         "Peer-to-Peer Network"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/space-life-sciences-dataset",
+      "label": "Space Life Sciences Dataset",
+      "categories": [
+        4,
+        45
+      ],
+      "domains": [
+        0,
+        6
+      ],
+      "parents": [
+        "Dataset",
+        "Space Life Sciences"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/space-supply-chain",
+      "label": "Space Supply Chain",
+      "categories": [
+        0,
+        46
+      ],
+      "domains": [
+        5,
+        6
+      ],
+      "parents": [
+        "Supply Chain",
+        "Space Prime"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/spacecraft-housekeeping-data",
+      "label": "Spacecraft Housekeeping Data",
+      "categories": [
+        31,
+        44
+      ],
+      "domains": [
+        5,
+        6
+      ],
+      "parents": [
+        "Data",
+        "Spacecraft Telemetry"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/spacecraft-magnetometer",
+      "label": "Spacecraft Magnetometer",
+      "categories": [
+        28,
+        43
+      ],
+      "domains": [
+        3,
+        6
+      ],
+      "parents": [
+        "Sensor",
+        "Attitude Determination"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/spacecraft-subsystem",
+      "label": "Spacecraft Subsystem",
+      "categories": [
+        0
+      ],
+      "domains": [
+        0,
+        6
+      ],
+      "parents": [
+        "System",
+        "Spacecraft"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/spacecraft",
+      "label": "Spacecraft",
+      "categories": [
+        0
+      ],
+      "domains": [
+        0,
+        6
+      ],
+      "parents": [
+        "System",
+        "Space Science and Systems"
       ]
     },
     {
@@ -19185,7 +19763,7 @@
       "label": "Stable Coins",
       "categories": [
         8,
-        27,
+        10,
         28,
         15
       ],
@@ -19378,6 +19956,22 @@
       ]
     },
     {
+      "iri": "https://narrativegoldmine.com/class/star-tracker",
+      "label": "Star Tracker",
+      "categories": [
+        28,
+        43
+      ],
+      "domains": [
+        3,
+        6
+      ],
+      "parents": [
+        "Sensor",
+        "Attitude Determination"
+      ]
+    },
+    {
       "iri": "https://narrativegoldmine.com/class/state-machine",
       "label": "State Machine",
       "categories": [
@@ -19551,7 +20145,7 @@
       "iri": "https://narrativegoldmine.com/class/sub-millisecond-latency",
       "label": "Sub-Millisecond Latency",
       "categories": [
-        27,
+        10,
         6
       ],
       "domains": [
@@ -19579,6 +20173,22 @@
       ]
     },
     {
+      "iri": "https://narrativegoldmine.com/class/sun-sensor",
+      "label": "Sun Sensor",
+      "categories": [
+        28,
+        43
+      ],
+      "domains": [
+        3,
+        6
+      ],
+      "parents": [
+        "Sensor",
+        "Attitude Determination"
+      ]
+    },
+    {
       "iri": "https://narrativegoldmine.com/class/supply-cap",
       "label": "Supply Cap",
       "categories": [
@@ -19598,7 +20208,7 @@
       "iri": "https://narrativegoldmine.com/class/supply-chain-tracking",
       "label": "Supply Chain Tracking",
       "categories": [
-        27
+        10
       ],
       "domains": [
         1,
@@ -19614,7 +20224,7 @@
       "label": "Sustainable Consensus",
       "categories": [
         6,
-        27
+        10
       ],
       "domains": [
         1
@@ -19650,7 +20260,7 @@
       "categories": [
         30,
         28,
-        27
+        10
       ],
       "domains": [
         5,
@@ -19761,7 +20371,7 @@
       "label": "Tamper Evidence",
       "categories": [
         5,
-        27
+        10
       ],
       "domains": [
         2,
@@ -19945,6 +20555,22 @@
       ]
     },
     {
+      "iri": "https://narrativegoldmine.com/class/terrestrial-reference-frame",
+      "label": "Terrestrial Reference Frame",
+      "categories": [
+        38,
+        52
+      ],
+      "domains": [
+        6,
+        7
+      ],
+      "parents": [
+        "Space Reference Systems",
+        "Geodetic Reference Frame"
+      ]
+    },
+    {
       "iri": "https://narrativegoldmine.com/class/test-dataset",
       "label": "Test Dataset",
       "categories": [
@@ -19964,7 +20590,7 @@
       "label": "Testnet",
       "categories": [
         6,
-        27,
+        10,
         28,
         33
       ],
@@ -20017,7 +20643,7 @@
       "label": "Tezos",
       "categories": [
         6,
-        27
+        10
       ],
       "domains": [
         1
@@ -20025,6 +20651,22 @@
       "parents": [
         "Layer 1",
         "Layer 1 Blockchain"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/thermal-infrared-remote-sensing",
+      "label": "Thermal Infrared Remote Sensing",
+      "categories": [
+        15,
+        47
+      ],
+      "domains": [
+        2,
+        7
+      ],
+      "parents": [
+        "Remote Sensing",
+        "Earth Observation Sensor"
       ]
     },
     {
@@ -20094,10 +20736,26 @@
       ]
     },
     {
+      "iri": "https://narrativegoldmine.com/class/time-synchronisation",
+      "label": "Time Synchronisation",
+      "categories": [
+        29,
+        6
+      ],
+      "domains": [
+        5,
+        1
+      ],
+      "parents": [
+        "Network Protocol",
+        "Network Synchronization"
+      ]
+    },
+    {
       "iri": "https://narrativegoldmine.com/class/timestamp",
       "label": "Timestamp",
       "categories": [
-        27,
+        10,
         28
       ],
       "domains": [
@@ -20338,7 +20996,7 @@
       "categories": [
         6,
         28,
-        27
+        10
       ],
       "domains": [
         1,
@@ -20372,7 +21030,7 @@
       "label": "Transaction Parameter",
       "categories": [
         6,
-        27
+        10
       ],
       "domains": [
         1
@@ -20386,7 +21044,7 @@
       "iri": "https://narrativegoldmine.com/class/transaction-pool",
       "label": "Transaction Pool",
       "categories": [
-        27,
+        10,
         28
       ],
       "domains": [
@@ -20406,7 +21064,7 @@
       "categories": [
         6,
         28,
-        27
+        10
       ],
       "domains": [
         1,
@@ -20734,7 +21392,7 @@
       "categories": [
         6,
         28,
-        27
+        10
       ],
       "domains": [
         1,
@@ -20822,7 +21480,7 @@
       "iri": "https://narrativegoldmine.com/class/unspent-transaction-output",
       "label": "Unspent Transaction Output",
       "categories": [
-        27,
+        10,
         6
       ],
       "domains": [
@@ -20975,7 +21633,7 @@
       "label": "Validator Node",
       "categories": [
         28,
-        27
+        10
       ],
       "domains": [
         1
@@ -21070,7 +21728,7 @@
       "categories": [
         7,
         30,
-        27,
+        10,
         32,
         16
       ],
@@ -21117,6 +21775,22 @@
       "parents": [
         "Display and Rendering",
         "Metaverse"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/vertical-coordinate-reference-system",
+      "label": "Vertical Coordinate Reference System",
+      "categories": [
+        31,
+        52
+      ],
+      "domains": [
+        2,
+        7
+      ],
+      "parents": [
+        "Coordinate Reference System",
+        "Spatial Reference System"
       ]
     },
     {
@@ -21750,7 +22424,7 @@
       "label": "Web3",
       "categories": [
         9,
-        27,
+        10,
         8,
         28
       ],
@@ -21772,7 +22446,7 @@
       "label": "WebID",
       "categories": [
         30,
-        27
+        10
       ],
       "domains": [
         1

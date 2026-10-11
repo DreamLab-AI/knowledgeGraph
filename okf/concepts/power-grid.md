@@ -31,6 +31,7 @@ supports:
 relatedTo:
   - urn:ngm:class:smart-grid
   - urn:ngm:class:grid-infrastructure
+  - urn:ngm:class:heliophysics
 ---
 
 # Power Grid

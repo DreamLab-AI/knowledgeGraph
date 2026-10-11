@@ -9,6 +9,8 @@ maturity: draft
 quality: 0
 is-a:
   - urn:ngm:class:spacecraft-bus
+bridgesTo:
+  - urn:ngm:class:reliability-engineering
 relatedTo:
   - urn:ngm:class:space-systems-engineering
 ---

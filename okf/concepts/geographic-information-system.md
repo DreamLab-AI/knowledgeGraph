@@ -25,6 +25,8 @@ dependsOn:
   - urn:ngm:class:coordinate-system
 bridgesTo:
   - urn:ngm:class:digital-twin
+  - urn:ngm:class:geospatial-clipping
+  - urn:ngm:class:geospatial-data-layer
 uses:
   - urn:ngm:class:remote-sensing
   - urn:ngm:class:sensor

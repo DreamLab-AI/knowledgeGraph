@@ -13,6 +13,7 @@ relatedTo:
   - urn:ngm:class:formation-flying
   - urn:ngm:class:spacecraft-navigation
   - urn:ngm:class:spacecraft-rendezvous
+  - urn:ngm:class:localisation
 ---
 
 # Relative Spacecraft Navigation

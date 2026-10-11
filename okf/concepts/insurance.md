@@ -34,6 +34,7 @@ partOf:
 relatedTo:
   - urn:ngm:class:parametric-insurance
   - urn:ngm:class:finance
+  - urn:ngm:class:space-traffic-management
 ---
 
 # Insurance

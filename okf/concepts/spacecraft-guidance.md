@@ -9,8 +9,11 @@ maturity: draft
 quality: 0
 is-a:
   - urn:ngm:class:spacecraft-guidance-navigation-and-control
+bridgesTo:
+  - urn:ngm:class:trajectory-optimisation
 relatedTo:
   - urn:ngm:class:spacecraft-guidance-navigation-and-control
+  - urn:ngm:class:optimal-control
 ---
 
 # Spacecraft Guidance

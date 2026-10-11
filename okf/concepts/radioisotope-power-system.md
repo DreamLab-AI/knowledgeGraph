@@ -9,8 +9,10 @@ maturity: draft
 quality: 0
 is-a:
   - urn:ngm:class:system
+  - urn:ngm:class:spacecraft-power-and-thermal-control
 relatedTo:
   - urn:ngm:class:spacecraft-power-and-thermal-control
+  - urn:ngm:class:nuclear-energy
 ---
 
 # Radioisotope Power System

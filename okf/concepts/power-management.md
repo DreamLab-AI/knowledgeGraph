@@ -46,6 +46,7 @@ relatedTo:
   - urn:ngm:class:real-time-processing
   - urn:ngm:class:functional-safety
   - urn:ngm:class:system-on-chip
+  - urn:ngm:class:spacecraft-electrical-power-system
 ---
 
 # Power Management

@@ -36,6 +36,7 @@ contrastsWith:
 bridgesTo:
   - urn:ngm:class:ai-safety
   - urn:ngm:class:edge-computing
+  - urn:ngm:class:spacecraft-autonomy
 uses:
   - urn:ngm:class:reinforcement-learning
   - urn:ngm:class:computer-vision

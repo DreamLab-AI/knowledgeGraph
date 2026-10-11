@@ -12,6 +12,8 @@ is-a:
 enables:
   - urn:ngm:class:manipulation
   - urn:ngm:class:autonomous-system
+bridgesTo:
+  - urn:ngm:class:planetary-rover
 uses:
   - urn:ngm:class:computer-vision
   - urn:ngm:class:simultaneous-localisation-and-mapping

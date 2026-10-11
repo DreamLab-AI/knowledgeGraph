@@ -33,7 +33,7 @@ supports:
   - urn:ngm:class:robot-localisation
   - urn:ngm:class:fleet-management
 relatedTo:
-  - urn:ngm:class:gnss
+  - urn:ngm:class:global-navigation-satellite-system
   - urn:ngm:class:dead-reckoning
   - urn:ngm:class:real-time-kinematic
 ---

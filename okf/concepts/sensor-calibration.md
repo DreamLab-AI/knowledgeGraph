@@ -43,6 +43,7 @@ relatedTo:
   - urn:ngm:class:imu
   - urn:ngm:class:lidar
   - urn:ngm:class:camera-calibration
+  - urn:ngm:class:spacecraft-magnetometer
 ---
 
 # Sensor Calibration

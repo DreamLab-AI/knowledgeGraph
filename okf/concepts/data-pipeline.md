@@ -29,6 +29,8 @@ bridgesTo:
   - urn:ngm:class:blockchain
   - urn:ngm:class:smart-contract
   - urn:ngm:class:oracle-service
+  - urn:ngm:class:earth-observation-data-processing-level
+  - urn:ngm:class:earth-observation-processing
 uses:
   - urn:ngm:class:etl-pipeline
   - urn:ngm:class:distributed-system
@@ -40,6 +42,8 @@ relatedTo:
   - urn:ngm:class:monitoring-dashboard
   - urn:ngm:class:data-preprocessing
   - urn:ngm:class:feature-store
+  - urn:ngm:class:earth-observation-data-cube
+  - urn:ngm:class:earth-observation-analysis-ready-data
 ---
 
 # Data Pipeline

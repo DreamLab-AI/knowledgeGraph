@@ -9,8 +9,12 @@ maturity: draft
 quality: 0
 is-a:
   - urn:ngm:class:astronomy
+bridgesTo:
+  - urn:ngm:class:digital-signal-processing
 relatedTo:
   - urn:ngm:class:astronomy
+  - urn:ngm:class:antenna-array
+  - urn:ngm:class:time-synchronisation
 ---
 
 # Radio Astronomy

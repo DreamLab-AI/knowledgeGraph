@@ -9,10 +9,14 @@ maturity: draft
 quality: 0
 is-a:
   - urn:ngm:class:earth-observation-data-product
+bridgesTo:
+  - urn:ngm:class:data-standards
+  - urn:ngm:class:data-quality
 relatedTo:
   - urn:ngm:class:earth-observation-data-cube
   - urn:ngm:class:geometric-calibration
   - urn:ngm:class:radiometric-calibration
+  - urn:ngm:class:data-pipeline
 ---
 
 # Earth Observation Analysis Ready Data

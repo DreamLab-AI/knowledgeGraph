@@ -11,6 +11,7 @@ is-a:
   - urn:ngm:class:positioning-navigation-and-timing
 relatedTo:
   - urn:ngm:class:positioning-navigation-and-timing
+  - urn:ngm:class:safety-assurance
 ---
 
 # GNSS Integrity

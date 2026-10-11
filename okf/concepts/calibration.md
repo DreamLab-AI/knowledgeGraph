@@ -36,6 +36,8 @@ bridgesTo:
   - urn:ngm:class:model-calibration
   - urn:ngm:class:uncertainty-quantification
   - urn:ngm:class:probabilistic-calibration
+  - urn:ngm:class:calibration-traceability
+  - urn:ngm:class:observational-astronomy
 uses:
   - urn:ngm:class:imu
   - urn:ngm:class:lidar
@@ -52,6 +54,7 @@ relatedTo:
   - urn:ngm:class:sensor-noise
   - urn:ngm:class:systematic-error
   - urn:ngm:class:kinematic-calibration
+  - urn:ngm:class:reference-measurement
 ---
 
 # Calibration

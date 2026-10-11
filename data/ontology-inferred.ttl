@@ -967,8 +967,13 @@ ngm:active-r-d-funding-opportunities-register rdfs:subClassOf ngm:ai-research-ar
     rdfs:subClassOf ngm:thing .
 ngm:active-remote-sensing rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:artificial-intelligence ;
+    rdfs:subClassOf ngm:cat-ai-infrastructure ;
+    rdfs:subClassOf ngm:hardware-component ;
     rdfs:subClassOf ngm:human-computer-interaction ;
+    rdfs:subClassOf ngm:infra-computing-and-cloud ;
+    rdfs:subClassOf ngm:infrastructure ;
     rdfs:subClassOf ngm:sc-platform-and-environment ;
+    rdfs:subClassOf ngm:sensor ;
     rdfs:subClassOf ngm:spatial-computing ;
     rdfs:subClassOf ngm:thing .
 ngm:active-research-projects-registry rdfs:subClassOf ngm:ai-research-area ;
@@ -4266,8 +4271,13 @@ ngm:air-gap rdfs:subClassOf ngm:bc-token-and-asset ;
 ngm:air-quality-monitoring rdfs:subClassOf ngm:earth-observation-and-geospatial-sensing .
 ngm:airborne-remote-sensing rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:artificial-intelligence ;
+    rdfs:subClassOf ngm:cat-ai-infrastructure ;
+    rdfs:subClassOf ngm:hardware-component ;
     rdfs:subClassOf ngm:human-computer-interaction ;
+    rdfs:subClassOf ngm:infra-computing-and-cloud ;
+    rdfs:subClassOf ngm:infrastructure ;
     rdfs:subClassOf ngm:sc-platform-and-environment ;
+    rdfs:subClassOf ngm:sensor ;
     rdfs:subClassOf ngm:spatial-computing ;
     rdfs:subClassOf ngm:thing .
 ngm:airbus-defence-and-space rdfs:subClassOf ngm:prime-contractor ;
@@ -6164,8 +6174,7 @@ ngm:attitude-control-thruster rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:space-science-and-systems ;
     rdfs:subClassOf ngm:spacecraft-propulsion ;
     rdfs:subClassOf ngm:thing .
-ngm:attitude-determination rdfs:subClassOf ngm:space-science-and-systems .
-ngm:attitude-estimation rdfs:subClassOf ngm:ai-research-area ;
+ngm:attitude-determination rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:artificial-intelligence ;
     rdfs:subClassOf ngm:automation ;
     rdfs:subClassOf ngm:cat-ai-infrastructure ;
@@ -6175,6 +6184,7 @@ ngm:attitude-estimation rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:robo-perception ;
     rdfs:subClassOf ngm:robotics ;
     rdfs:subClassOf ngm:software-engineering ;
+    rdfs:subClassOf ngm:space-science-and-systems ;
     rdfs:subClassOf ngm:thing .
 ngm:attitude-quaternion rdfs:subClassOf ngm:space-science-and-systems .
 ngm:attribute-based-access-control rdfs:subClassOf ngm:ai-research-area ;
@@ -8245,6 +8255,7 @@ ngm:best-practice rdfs:subClassOf ngm:ai-research-area ;
 ngm:beyond-low-earth-orbit-spacecraft rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:ai-technique ;
     rdfs:subClassOf ngm:artificial-intelligence ;
+    rdfs:subClassOf ngm:space-science-and-systems ;
     rdfs:subClassOf ngm:system ;
     rdfs:subClassOf ngm:thing .
 ngm:beyond-low-earth-orbit-spaceflight rdfs:subClassOf ngm:space-life-sciences ;
@@ -8330,7 +8341,13 @@ ngm:bid-ask-spread rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:owl-thing ;
     rdfs:subClassOf ngm:social-science ;
     rdfs:subClassOf ngm:thing .
-ngm:bidirectional-reflectance-distribution-function rdfs:subClassOf ngm:earth-observation-and-geospatial-sensing .
+ngm:bidirectional-reflectance-distribution-function rdfs:subClassOf ngm:ai-research-area ;
+    rdfs:subClassOf ngm:artificial-intelligence ;
+    rdfs:subClassOf ngm:earth-observation-and-geospatial-sensing ;
+    rdfs:subClassOf ngm:human-computer-interaction ;
+    rdfs:subClassOf ngm:sc-display-and-rendering ;
+    rdfs:subClassOf ngm:spatial-computing ;
+    rdfs:subClassOf ngm:thing .
 ngm:bifrost-protocol rdfs:subClassOf ngm:blockchain ;
     rdfs:subClassOf ngm:thing .
 ngm:big-data rdfs:subClassOf ngm:ai-research-area ;
@@ -10639,12 +10656,6 @@ ngm:brand-identity rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:thing .
 ngm:brc-20 rdfs:subClassOf ngm:bc-token-and-asset ;
     rdfs:subClassOf ngm:blockchain ;
-    rdfs:subClassOf ngm:thing .
-ngm:brdf rdfs:subClassOf ngm:ai-research-area ;
-    rdfs:subClassOf ngm:artificial-intelligence ;
-    rdfs:subClassOf ngm:human-computer-interaction ;
-    rdfs:subClassOf ngm:sc-display-and-rendering ;
-    rdfs:subClassOf ngm:spatial-computing ;
     rdfs:subClassOf ngm:thing .
 ngm:breadth-first-search rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:ai-technique ;
@@ -13542,20 +13553,6 @@ ngm:clock-recovery rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:cat-ai-infrastructure ;
     rdfs:subClassOf ngm:infrastructure ;
     rdfs:subClassOf ngm:thing .
-ngm:clock-synchronization rdfs:subClassOf ngm:ai-research-area ;
-    rdfs:subClassOf ngm:artificial-intelligence ;
-    rdfs:subClassOf ngm:bc-protocol-and-consensus ;
-    rdfs:subClassOf ngm:blockchain ;
-    rdfs:subClassOf ngm:blockchain-entity ;
-    rdfs:subClassOf ngm:blockchain-technology ;
-    rdfs:subClassOf ngm:cat-ai-infrastructure ;
-    rdfs:subClassOf ngm:consensus-protocol ;
-    rdfs:subClassOf ngm:digital-infrastructure ;
-    rdfs:subClassOf ngm:distributed-ledger-technology ;
-    rdfs:subClassOf ngm:distributed-systems ;
-    rdfs:subClassOf ngm:infra-computing-and-cloud ;
-    rdfs:subClassOf ngm:infrastructure ;
-    rdfs:subClassOf ngm:thing .
 ngm:closed-loop-control rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:artificial-intelligence ;
     rdfs:subClassOf ngm:automation ;
@@ -15193,6 +15190,8 @@ ngm:compound-coordinate-reference-system rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:artificial-intelligence ;
     rdfs:subClassOf ngm:cat-ai-infrastructure ;
     rdfs:subClassOf ngm:data-management ;
+    rdfs:subClassOf ngm:earth-observation-and-geospatial-sensing ;
+    rdfs:subClassOf ngm:geodesy ;
     rdfs:subClassOf ngm:geospatial-data ;
     rdfs:subClassOf ngm:infra-data-management ;
     rdfs:subClassOf ngm:infrastructure ;
@@ -16887,6 +16886,8 @@ ngm:control-moment-gyroscope rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:robo-actuation-and-control ;
     rdfs:subClassOf ngm:robotics ;
     rdfs:subClassOf ngm:software-engineering ;
+    rdfs:subClassOf ngm:space-science-and-systems ;
+    rdfs:subClassOf ngm:spacecraft-guidance-navigation-and-control ;
     rdfs:subClassOf ngm:thing .
 ngm:control-net rdfs:subClassOf ngm:ai-infrastructure ;
     rdfs:subClassOf ngm:ai-model-architecture ;
@@ -17915,6 +17916,7 @@ ngm:crew-health-monitoring rdfs:subClassOf ngm:space-science-and-systems .
 ngm:crewed-spacecraft rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:ai-technique ;
     rdfs:subClassOf ngm:artificial-intelligence ;
+    rdfs:subClassOf ngm:space-science-and-systems ;
     rdfs:subClassOf ngm:system ;
     rdfs:subClassOf ngm:thing .
 ngm:crm rdfs:subClassOf ngm:ai-research-area ;
@@ -18761,7 +18763,6 @@ ngm:cryptographic-library rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:thing .
 ngm:cryptographic-primitive rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:artificial-intelligence ;
-    rdfs:subClassOf ngm:blockchain ;
     rdfs:subClassOf ngm:cat-ai-infrastructure ;
     rdfs:subClassOf ngm:cryptographic-security ;
     rdfs:subClassOf ngm:governance ;
@@ -18954,6 +18955,7 @@ ngm:css rdfs:subClassOf ngm:ai-research-area ;
 ngm:cubesat rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:ai-technique ;
     rdfs:subClassOf ngm:artificial-intelligence ;
+    rdfs:subClassOf ngm:space-science-and-systems ;
     rdfs:subClassOf ngm:spacecraft ;
     rdfs:subClassOf ngm:system ;
     rdfs:subClassOf ngm:thing .
@@ -20102,7 +20104,6 @@ ngm:data-loss-prevention rdfs:subClassOf ngm:ai-research-area ;
 ngm:data-management rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:artificial-intelligence ;
     rdfs:subClassOf ngm:cat-ai-infrastructure ;
-    rdfs:subClassOf ngm:infrastructure ;
     rdfs:subClassOf ngm:thing .
 ngm:data-management-platform rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:artificial-intelligence ;
@@ -22471,10 +22472,16 @@ ngm:differential-gnss rdfs:subClassOf ngm:space-science-and-systems .
 ngm:differential-interferometric-sar rdfs:subClassOf ngm:active-remote-sensing ;
     rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:artificial-intelligence ;
+    rdfs:subClassOf ngm:cat-ai-infrastructure ;
+    rdfs:subClassOf ngm:earth-observation-sensor ;
+    rdfs:subClassOf ngm:hardware-component ;
     rdfs:subClassOf ngm:human-computer-interaction ;
+    rdfs:subClassOf ngm:infra-computing-and-cloud ;
+    rdfs:subClassOf ngm:infrastructure ;
     rdfs:subClassOf ngm:microwave-remote-sensing ;
     rdfs:subClassOf ngm:remote-sensing ;
     rdfs:subClassOf ngm:sc-platform-and-environment ;
+    rdfs:subClassOf ngm:sensor ;
     rdfs:subClassOf ngm:spatial-computing ;
     rdfs:subClassOf ngm:synthetic-aperture-radar ;
     rdfs:subClassOf ngm:thing .
@@ -24963,6 +24970,8 @@ ngm:dynamic-coordinate-reference-system rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:artificial-intelligence ;
     rdfs:subClassOf ngm:cat-ai-infrastructure ;
     rdfs:subClassOf ngm:data-management ;
+    rdfs:subClassOf ngm:earth-observation-and-geospatial-sensing ;
+    rdfs:subClassOf ngm:geodesy ;
     rdfs:subClassOf ngm:geospatial-data ;
     rdfs:subClassOf ngm:infra-data-management ;
     rdfs:subClassOf ngm:infrastructure ;
@@ -25173,6 +25182,7 @@ ngm:earth-observation-level-4-processing-state rdfs:subClassOf ngm:earth-observa
 ngm:earth-observation-satellite rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:ai-technique ;
     rdfs:subClassOf ngm:artificial-intelligence ;
+    rdfs:subClassOf ngm:space-science-and-systems ;
     rdfs:subClassOf ngm:system ;
     rdfs:subClassOf ngm:thing .
 ngm:earth-observation-sensor rdfs:subClassOf ngm:ai-research-area ;
@@ -25187,6 +25197,7 @@ ngm:earth-observation-sensor-fusion rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:automation ;
     rdfs:subClassOf ngm:cat-ai-infrastructure ;
     rdfs:subClassOf ngm:computer-science ;
+    rdfs:subClassOf ngm:earth-observation-and-geospatial-sensing ;
     rdfs:subClassOf ngm:infra-software-engineering ;
     rdfs:subClassOf ngm:infrastructure ;
     rdfs:subClassOf ngm:robo-perception ;
@@ -32060,6 +32071,8 @@ ngm:geodetic-coordinate-reference-system rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:artificial-intelligence ;
     rdfs:subClassOf ngm:cat-ai-infrastructure ;
     rdfs:subClassOf ngm:data-management ;
+    rdfs:subClassOf ngm:earth-observation-and-geospatial-sensing ;
+    rdfs:subClassOf ngm:geodesy ;
     rdfs:subClassOf ngm:geospatial-data ;
     rdfs:subClassOf ngm:infra-data-management ;
     rdfs:subClassOf ngm:infrastructure ;
@@ -32072,6 +32085,8 @@ ngm:geographic-coordinate-reference-system rdfs:subClassOf ngm:ai-research-area 
     rdfs:subClassOf ngm:artificial-intelligence ;
     rdfs:subClassOf ngm:cat-ai-infrastructure ;
     rdfs:subClassOf ngm:data-management ;
+    rdfs:subClassOf ngm:earth-observation-and-geospatial-sensing ;
+    rdfs:subClassOf ngm:geodesy ;
     rdfs:subClassOf ngm:geospatial-data ;
     rdfs:subClassOf ngm:infra-data-management ;
     rdfs:subClassOf ngm:infrastructure ;
@@ -32107,6 +32122,7 @@ ngm:geometric-calibration rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:automation ;
     rdfs:subClassOf ngm:cat-ai-infrastructure ;
     rdfs:subClassOf ngm:computer-science ;
+    rdfs:subClassOf ngm:earth-observation-and-geospatial-sensing ;
     rdfs:subClassOf ngm:infra-software-engineering ;
     rdfs:subClassOf ngm:infrastructure ;
     rdfs:subClassOf ngm:robo-perception ;
@@ -32409,15 +32425,21 @@ ngm:global-metaverse-operations rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:spatial-computing ;
     rdfs:subClassOf ngm:thing .
 ngm:global-navigation-satellite-system rdfs:subClassOf ngm:ai-research-area ;
+    rdfs:subClassOf ngm:ai-technique ;
     rdfs:subClassOf ngm:artificial-intelligence ;
     rdfs:subClassOf ngm:automation ;
     rdfs:subClassOf ngm:cat-ai-infrastructure ;
     rdfs:subClassOf ngm:computer-science ;
     rdfs:subClassOf ngm:infra-software-engineering ;
     rdfs:subClassOf ngm:infrastructure ;
+    rdfs:subClassOf ngm:probabilistic-inference ;
     rdfs:subClassOf ngm:robo-navigation-and-planning ;
     rdfs:subClassOf ngm:robotics ;
     rdfs:subClassOf ngm:software-engineering ;
+    rdfs:subClassOf ngm:space-science-and-systems ;
+    rdfs:subClassOf ngm:spacecraft ;
+    rdfs:subClassOf ngm:state-estimation ;
+    rdfs:subClassOf ngm:system ;
     rdfs:subClassOf ngm:thing .
 ngm:global-trade rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:ai-technique ;
@@ -32516,20 +32538,6 @@ ngm:gnosis-safe rdfs:subClassOf ngm:ai-model-architecture ;
     rdfs:subClassOf ngm:distributed-collaboration ;
     rdfs:subClassOf ngm:network-architecture ;
     rdfs:subClassOf ngm:thing .
-ngm:gnss rdfs:subClassOf ngm:ai-research-area ;
-    rdfs:subClassOf ngm:ai-technique ;
-    rdfs:subClassOf ngm:artificial-intelligence ;
-    rdfs:subClassOf ngm:automation ;
-    rdfs:subClassOf ngm:cat-ai-infrastructure ;
-    rdfs:subClassOf ngm:computer-science ;
-    rdfs:subClassOf ngm:infra-software-engineering ;
-    rdfs:subClassOf ngm:infrastructure ;
-    rdfs:subClassOf ngm:probabilistic-inference ;
-    rdfs:subClassOf ngm:robo-navigation-and-planning ;
-    rdfs:subClassOf ngm:robotics ;
-    rdfs:subClassOf ngm:software-engineering ;
-    rdfs:subClassOf ngm:state-estimation ;
-    rdfs:subClassOf ngm:thing .
 ngm:gnss-almanac rdfs:subClassOf ngm:space-science-and-systems .
 ngm:gnss-ambiguity-resolution rdfs:subClassOf ngm:space-science-and-systems .
 ngm:gnss-antenna rdfs:subClassOf ngm:space-science-and-systems .
@@ -32552,26 +32560,52 @@ ngm:gnss-positioning-error rdfs:subClassOf ngm:space-science-and-systems .
 ngm:gnss-pseudorange rdfs:subClassOf ngm:space-science-and-systems .
 ngm:gnss-radio-occultation rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:artificial-intelligence ;
+    rdfs:subClassOf ngm:cat-ai-infrastructure ;
+    rdfs:subClassOf ngm:hardware-component ;
     rdfs:subClassOf ngm:human-computer-interaction ;
+    rdfs:subClassOf ngm:infra-computing-and-cloud ;
+    rdfs:subClassOf ngm:infrastructure ;
     rdfs:subClassOf ngm:sc-platform-and-environment ;
+    rdfs:subClassOf ngm:sensor ;
     rdfs:subClassOf ngm:spatial-computing ;
     rdfs:subClassOf ngm:thing .
 ngm:gnss-receiver rdfs:subClassOf ngm:ai-research-area ;
+    rdfs:subClassOf ngm:ai-technique ;
     rdfs:subClassOf ngm:artificial-intelligence ;
+    rdfs:subClassOf ngm:automation ;
     rdfs:subClassOf ngm:cat-ai-infrastructure ;
+    rdfs:subClassOf ngm:computer-science ;
     rdfs:subClassOf ngm:hardware-component ;
     rdfs:subClassOf ngm:infra-computing-and-cloud ;
+    rdfs:subClassOf ngm:infra-software-engineering ;
     rdfs:subClassOf ngm:infrastructure ;
+    rdfs:subClassOf ngm:localisation ;
+    rdfs:subClassOf ngm:navigation-system ;
+    rdfs:subClassOf ngm:probabilistic-inference ;
+    rdfs:subClassOf ngm:robo-navigation-and-planning ;
+    rdfs:subClassOf ngm:robotics ;
+    rdfs:subClassOf ngm:software-engineering ;
+    rdfs:subClassOf ngm:space-science-and-systems ;
+    rdfs:subClassOf ngm:spacecraft ;
+    rdfs:subClassOf ngm:spacecraft-subsystem ;
+    rdfs:subClassOf ngm:state-estimation ;
+    rdfs:subClassOf ngm:system ;
     rdfs:subClassOf ngm:thing .
 ngm:gnss-reflectometry rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:artificial-intelligence ;
+    rdfs:subClassOf ngm:cat-ai-infrastructure ;
+    rdfs:subClassOf ngm:hardware-component ;
     rdfs:subClassOf ngm:human-computer-interaction ;
+    rdfs:subClassOf ngm:infra-computing-and-cloud ;
+    rdfs:subClassOf ngm:infrastructure ;
     rdfs:subClassOf ngm:sc-platform-and-environment ;
+    rdfs:subClassOf ngm:sensor ;
     rdfs:subClassOf ngm:spatial-computing ;
     rdfs:subClassOf ngm:thing .
 ngm:gnss-satellite rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:ai-technique ;
     rdfs:subClassOf ngm:artificial-intelligence ;
+    rdfs:subClassOf ngm:space-science-and-systems ;
     rdfs:subClassOf ngm:system ;
     rdfs:subClassOf ngm:thing .
 ngm:gnss-signal rdfs:subClassOf ngm:space-science-and-systems .
@@ -33638,8 +33672,13 @@ ngm:groth-16 rdfs:subClassOf ngm:ai-research-area ;
 ngm:ground-based-augmentation-system rdfs:subClassOf ngm:space-science-and-systems .
 ngm:ground-based-remote-sensing rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:artificial-intelligence ;
+    rdfs:subClassOf ngm:cat-ai-infrastructure ;
+    rdfs:subClassOf ngm:hardware-component ;
     rdfs:subClassOf ngm:human-computer-interaction ;
+    rdfs:subClassOf ngm:infra-computing-and-cloud ;
+    rdfs:subClassOf ngm:infrastructure ;
     rdfs:subClassOf ngm:sc-platform-and-environment ;
+    rdfs:subClassOf ngm:sensor ;
     rdfs:subClassOf ngm:spatial-computing ;
     rdfs:subClassOf ngm:thing .
 ngm:ground-control-experiment rdfs:subClassOf ngm:space-science-and-systems .
@@ -35044,10 +35083,19 @@ ngm:hop-protocol rdfs:subClassOf ngm:ai-model-architecture ;
     rdfs:subClassOf ngm:thing .
 ngm:horizon-sensor rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:artificial-intelligence ;
+    rdfs:subClassOf ngm:automation ;
     rdfs:subClassOf ngm:cat-ai-infrastructure ;
+    rdfs:subClassOf ngm:computer-science ;
     rdfs:subClassOf ngm:hardware-component ;
     rdfs:subClassOf ngm:infra-computing-and-cloud ;
+    rdfs:subClassOf ngm:infra-software-engineering ;
     rdfs:subClassOf ngm:infrastructure ;
+    rdfs:subClassOf ngm:robo-perception ;
+    rdfs:subClassOf ngm:robotics ;
+    rdfs:subClassOf ngm:sensor-fusion ;
+    rdfs:subClassOf ngm:software-engineering ;
+    rdfs:subClassOf ngm:space-science-and-systems ;
+    rdfs:subClassOf ngm:spacecraft-guidance-navigation-and-control ;
     rdfs:subClassOf ngm:thing .
 ngm:horizon-workrooms rdfs:subClassOf ngm:dc-telepresence ;
     rdfs:subClassOf ngm:distributed-collaboration ;
@@ -38682,10 +38730,16 @@ ngm:interferometric-phase rdfs:subClassOf ngm:earth-observation-and-geospatial-s
 ngm:interferometric-synthetic-aperture-radar rdfs:subClassOf ngm:active-remote-sensing ;
     rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:artificial-intelligence ;
+    rdfs:subClassOf ngm:cat-ai-infrastructure ;
+    rdfs:subClassOf ngm:earth-observation-sensor ;
+    rdfs:subClassOf ngm:hardware-component ;
     rdfs:subClassOf ngm:human-computer-interaction ;
+    rdfs:subClassOf ngm:infra-computing-and-cloud ;
+    rdfs:subClassOf ngm:infrastructure ;
     rdfs:subClassOf ngm:microwave-remote-sensing ;
     rdfs:subClassOf ngm:remote-sensing ;
     rdfs:subClassOf ngm:sc-platform-and-environment ;
+    rdfs:subClassOf ngm:sensor ;
     rdfs:subClassOf ngm:spatial-computing ;
     rdfs:subClassOf ngm:thing .
 ngm:intergalactic-medium rdfs:subClassOf ngm:space-science ;
@@ -41679,6 +41733,7 @@ ngm:land-use-classification rdfs:subClassOf ngm:earth-observation-and-geospatial
 ngm:lander rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:ai-technique ;
     rdfs:subClassOf ngm:artificial-intelligence ;
+    rdfs:subClassOf ngm:space-science-and-systems ;
     rdfs:subClassOf ngm:system ;
     rdfs:subClassOf ngm:thing .
 ngm:landslide-monitoring rdfs:subClassOf ngm:earth-observation-and-geospatial-sensing .
@@ -44097,6 +44152,7 @@ ngm:low-earth-orbit rdfs:subClassOf ngm:space-science-and-systems .
 ngm:low-earth-orbit-spacecraft rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:ai-technique ;
     rdfs:subClassOf ngm:artificial-intelligence ;
+    rdfs:subClassOf ngm:space-science-and-systems ;
     rdfs:subClassOf ngm:system ;
     rdfs:subClassOf ngm:thing .
 ngm:low-earth-orbit-spaceflight rdfs:subClassOf ngm:space-life-sciences ;
@@ -44466,6 +44522,8 @@ ngm:magnetorquer rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:robo-actuation-and-control ;
     rdfs:subClassOf ngm:robotics ;
     rdfs:subClassOf ngm:software-engineering ;
+    rdfs:subClassOf ngm:space-science-and-systems ;
+    rdfs:subClassOf ngm:spacecraft-guidance-navigation-and-control ;
     rdfs:subClassOf ngm:thing .
 ngm:magnetosphere rdfs:subClassOf ngm:space-science ;
     rdfs:subClassOf ngm:space-science-and-systems .
@@ -44691,8 +44749,13 @@ ngm:marathon-digital rdfs:subClassOf ngm:ai-infrastructure ;
     rdfs:subClassOf ngm:thing .
 ngm:marine-remote-sensing rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:artificial-intelligence ;
+    rdfs:subClassOf ngm:cat-ai-infrastructure ;
+    rdfs:subClassOf ngm:hardware-component ;
     rdfs:subClassOf ngm:human-computer-interaction ;
+    rdfs:subClassOf ngm:infra-computing-and-cloud ;
+    rdfs:subClassOf ngm:infrastructure ;
     rdfs:subClassOf ngm:sc-platform-and-environment ;
+    rdfs:subClassOf ngm:sensor ;
     rdfs:subClassOf ngm:spatial-computing ;
     rdfs:subClassOf ngm:thing .
 ngm:marine-robot rdfs:subClassOf ngm:ai-research-area ;
@@ -46778,8 +46841,13 @@ ngm:microwave-radiometer rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:thing .
 ngm:microwave-remote-sensing rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:artificial-intelligence ;
+    rdfs:subClassOf ngm:cat-ai-infrastructure ;
+    rdfs:subClassOf ngm:hardware-component ;
     rdfs:subClassOf ngm:human-computer-interaction ;
+    rdfs:subClassOf ngm:infra-computing-and-cloud ;
+    rdfs:subClassOf ngm:infrastructure ;
     rdfs:subClassOf ngm:sc-platform-and-environment ;
+    rdfs:subClassOf ngm:sensor ;
     rdfs:subClassOf ngm:spatial-computing ;
     rdfs:subClassOf ngm:thing .
 ngm:middle-atmosphere rdfs:subClassOf ngm:earth-observation-and-geospatial-sensing ;
@@ -47912,6 +47980,8 @@ ngm:momentum-wheel rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:robo-actuation-and-control ;
     rdfs:subClassOf ngm:robotics ;
     rdfs:subClassOf ngm:software-engineering ;
+    rdfs:subClassOf ngm:space-science-and-systems ;
+    rdfs:subClassOf ngm:spacecraft-guidance-navigation-and-control ;
     rdfs:subClassOf ngm:thing .
 ngm:monero rdfs:subClassOf ngm:blockchain ;
     rdfs:subClassOf ngm:thing .
@@ -49498,7 +49568,6 @@ ngm:network-communication rdfs:subClassOf ngm:ai-infrastructure ;
 ngm:network-component rdfs:subClassOf ngm:ai-model-architecture ;
     rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:artificial-intelligence ;
-    rdfs:subClassOf ngm:blockchain ;
     rdfs:subClassOf ngm:distributed-collaboration ;
     rdfs:subClassOf ngm:thing .
 ngm:network-congestion rdfs:subClassOf ngm:ai-model-architecture ;
@@ -52533,8 +52602,13 @@ ngm:optical-instrument rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:thing .
 ngm:optical-remote-sensing rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:artificial-intelligence ;
+    rdfs:subClassOf ngm:cat-ai-infrastructure ;
+    rdfs:subClassOf ngm:hardware-component ;
     rdfs:subClassOf ngm:human-computer-interaction ;
+    rdfs:subClassOf ngm:infra-computing-and-cloud ;
+    rdfs:subClassOf ngm:infrastructure ;
     rdfs:subClassOf ngm:sc-platform-and-environment ;
+    rdfs:subClassOf ngm:sensor ;
     rdfs:subClassOf ngm:spatial-computing ;
     rdfs:subClassOf ngm:thing .
 ngm:optical-sensor-array rdfs:subClassOf ngm:ai-research-area ;
@@ -52811,6 +52885,7 @@ ngm:orbital-velocity rdfs:subClassOf ngm:space-science-and-systems .
 ngm:orbiter rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:ai-technique ;
     rdfs:subClassOf ngm:artificial-intelligence ;
+    rdfs:subClassOf ngm:space-science-and-systems ;
     rdfs:subClassOf ngm:system ;
     rdfs:subClassOf ngm:thing .
 ngm:orchestration rdfs:subClassOf ngm:ai-research-area ;
@@ -53478,8 +53553,13 @@ ngm:passive-income rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:thing .
 ngm:passive-remote-sensing rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:artificial-intelligence ;
+    rdfs:subClassOf ngm:cat-ai-infrastructure ;
+    rdfs:subClassOf ngm:hardware-component ;
     rdfs:subClassOf ngm:human-computer-interaction ;
+    rdfs:subClassOf ngm:infra-computing-and-cloud ;
+    rdfs:subClassOf ngm:infrastructure ;
     rdfs:subClassOf ngm:sc-platform-and-environment ;
+    rdfs:subClassOf ngm:sensor ;
     rdfs:subClassOf ngm:spatial-computing ;
     rdfs:subClassOf ngm:thing .
 ngm:passive-thermal-control rdfs:subClassOf ngm:space-science-and-systems ;
@@ -54856,6 +54936,7 @@ ngm:planetary-rover rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:robo-robot-type ;
     rdfs:subClassOf ngm:robotics ;
     rdfs:subClassOf ngm:software-engineering ;
+    rdfs:subClassOf ngm:space-science-and-systems ;
     rdfs:subClassOf ngm:system ;
     rdfs:subClassOf ngm:thing .
 ngm:planetary-science rdfs:subClassOf ngm:space-science-and-systems .
@@ -55209,10 +55290,16 @@ ngm:polar-robot rdfs:subClassOf ngm:ai-research-area ;
 ngm:polarimetric-sar rdfs:subClassOf ngm:active-remote-sensing ;
     rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:artificial-intelligence ;
+    rdfs:subClassOf ngm:cat-ai-infrastructure ;
+    rdfs:subClassOf ngm:earth-observation-sensor ;
+    rdfs:subClassOf ngm:hardware-component ;
     rdfs:subClassOf ngm:human-computer-interaction ;
+    rdfs:subClassOf ngm:infra-computing-and-cloud ;
+    rdfs:subClassOf ngm:infrastructure ;
     rdfs:subClassOf ngm:microwave-remote-sensing ;
     rdfs:subClassOf ngm:remote-sensing ;
     rdfs:subClassOf ngm:sc-platform-and-environment ;
+    rdfs:subClassOf ngm:sensor ;
     rdfs:subClassOf ngm:spatial-computing ;
     rdfs:subClassOf ngm:thing .
 ngm:policy rdfs:subClassOf ngm:ai-research-area ;
@@ -57447,6 +57534,8 @@ ngm:projected-coordinate-reference-system rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:artificial-intelligence ;
     rdfs:subClassOf ngm:cat-ai-infrastructure ;
     rdfs:subClassOf ngm:data-management ;
+    rdfs:subClassOf ngm:earth-observation-and-geospatial-sensing ;
+    rdfs:subClassOf ngm:geodesy ;
     rdfs:subClassOf ngm:geospatial-data ;
     rdfs:subClassOf ngm:infra-data-management ;
     rdfs:subClassOf ngm:infrastructure ;
@@ -59237,9 +59326,15 @@ ngm:radar rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:thing .
 ngm:radar-altimetry rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:artificial-intelligence ;
+    rdfs:subClassOf ngm:cat-ai-infrastructure ;
+    rdfs:subClassOf ngm:earth-observation-sensor ;
+    rdfs:subClassOf ngm:hardware-component ;
     rdfs:subClassOf ngm:human-computer-interaction ;
+    rdfs:subClassOf ngm:infra-computing-and-cloud ;
+    rdfs:subClassOf ngm:infrastructure ;
     rdfs:subClassOf ngm:remote-sensing ;
     rdfs:subClassOf ngm:sc-platform-and-environment ;
+    rdfs:subClassOf ngm:sensor ;
     rdfs:subClassOf ngm:spatial-computing ;
     rdfs:subClassOf ngm:thing .
 ngm:radar-foreshortening rdfs:subClassOf ngm:earth-observation-and-geospatial-sensing .
@@ -59306,6 +59401,7 @@ ngm:radio-transceiver rdfs:subClassOf ngm:ai-research-area ;
 ngm:radioisotope-power-system rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:ai-technique ;
     rdfs:subClassOf ngm:artificial-intelligence ;
+    rdfs:subClassOf ngm:space-science-and-systems ;
     rdfs:subClassOf ngm:thing .
 ngm:radiology-ai rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:artificial-intelligence ;
@@ -59330,6 +59426,7 @@ ngm:radiometric-calibration rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:automation ;
     rdfs:subClassOf ngm:cat-ai-infrastructure ;
     rdfs:subClassOf ngm:computer-science ;
+    rdfs:subClassOf ngm:earth-observation-and-geospatial-sensing ;
     rdfs:subClassOf ngm:infra-software-engineering ;
     rdfs:subClassOf ngm:infrastructure ;
     rdfs:subClassOf ngm:robo-perception ;
@@ -60647,6 +60744,8 @@ ngm:reaction-wheel rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:robo-actuation-and-control ;
     rdfs:subClassOf ngm:robotics ;
     rdfs:subClassOf ngm:software-engineering ;
+    rdfs:subClassOf ngm:space-science-and-systems ;
+    rdfs:subClassOf ngm:spacecraft-guidance-navigation-and-control ;
     rdfs:subClassOf ngm:thing .
 ngm:reactive-control rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:artificial-intelligence ;
@@ -61929,6 +62028,7 @@ ngm:remote-sensing-image-segmentation rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:computer-vision ;
     rdfs:subClassOf ngm:deep-learning ;
     rdfs:subClassOf ngm:dense-prediction ;
+    rdfs:subClassOf ngm:earth-observation-and-geospatial-sensing ;
     rdfs:subClassOf ngm:machine-learning ;
     rdfs:subClassOf ngm:perception-system ;
     rdfs:subClassOf ngm:scene-understanding ;
@@ -64780,8 +64880,13 @@ ngm:satellite-multiple-access rdfs:subClassOf ngm:space-science-and-systems .
 ngm:satellite-navigation-solution rdfs:subClassOf ngm:space-science-and-systems .
 ngm:satellite-remote-sensing rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:artificial-intelligence ;
+    rdfs:subClassOf ngm:cat-ai-infrastructure ;
+    rdfs:subClassOf ngm:hardware-component ;
     rdfs:subClassOf ngm:human-computer-interaction ;
+    rdfs:subClassOf ngm:infra-computing-and-cloud ;
+    rdfs:subClassOf ngm:infrastructure ;
     rdfs:subClassOf ngm:sc-platform-and-environment ;
+    rdfs:subClassOf ngm:sensor ;
     rdfs:subClassOf ngm:spatial-computing ;
     rdfs:subClassOf ngm:thing .
 ngm:satellite-service-coverage rdfs:subClassOf ngm:space-science-and-systems .
@@ -66415,6 +66520,7 @@ ngm:sensor-intercalibration rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:automation ;
     rdfs:subClassOf ngm:cat-ai-infrastructure ;
     rdfs:subClassOf ngm:computer-science ;
+    rdfs:subClassOf ngm:earth-observation-and-geospatial-sensing ;
     rdfs:subClassOf ngm:infra-software-engineering ;
     rdfs:subClassOf ngm:infrastructure ;
     rdfs:subClassOf ngm:robo-perception ;
@@ -67808,6 +67914,7 @@ ngm:small-modular-reactors rdfs:subClassOf ngm:ai-research-area ;
 ngm:small-satellite rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:ai-technique ;
     rdfs:subClassOf ngm:artificial-intelligence ;
+    rdfs:subClassOf ngm:space-science-and-systems ;
     rdfs:subClassOf ngm:system ;
     rdfs:subClassOf ngm:thing .
 ngm:small-solar-system-body rdfs:subClassOf ngm:astronomy ;
@@ -68816,6 +68923,7 @@ ngm:space-life-sciences-dataset rdfs:subClassOf ngm:ai-infrastructure ;
     rdfs:subClassOf ngm:scientific-discovery ;
     rdfs:subClassOf ngm:scientific-machine-learning ;
     rdfs:subClassOf ngm:software-architecture ;
+    rdfs:subClassOf ngm:space-science-and-systems ;
     rdfs:subClassOf ngm:system-architecture ;
     rdfs:subClassOf ngm:thing .
 ngm:space-medicine rdfs:subClassOf ngm:space-science-and-systems .
@@ -68826,6 +68934,7 @@ ngm:space-prime rdfs:subClassOf ngm:space-science-and-systems .
 ngm:space-probe rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:ai-technique ;
     rdfs:subClassOf ngm:artificial-intelligence ;
+    rdfs:subClassOf ngm:space-science-and-systems ;
     rdfs:subClassOf ngm:system ;
     rdfs:subClassOf ngm:thing .
 ngm:space-radiation rdfs:subClassOf ngm:space-science-and-systems .
@@ -68849,6 +68958,7 @@ ngm:space-situational-awareness rdfs:subClassOf ngm:space-science-and-systems .
 ngm:space-station rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:ai-technique ;
     rdfs:subClassOf ngm:artificial-intelligence ;
+    rdfs:subClassOf ngm:space-science-and-systems ;
     rdfs:subClassOf ngm:system ;
     rdfs:subClassOf ngm:thing .
 ngm:space-supply-chain rdfs:subClassOf ngm:ai-research-area ;
@@ -68866,6 +68976,8 @@ ngm:space-supply-chain rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:mathematical-science ;
     rdfs:subClassOf ngm:operations-research ;
     rdfs:subClassOf ngm:optimisation ;
+    rdfs:subClassOf ngm:prime-contractor ;
+    rdfs:subClassOf ngm:space-science-and-systems ;
     rdfs:subClassOf ngm:supply-chain-management ;
     rdfs:subClassOf ngm:thing .
 ngm:space-systems-engineering rdfs:subClassOf ngm:ai-research-area ;
@@ -68910,6 +69022,8 @@ ngm:spacecraft-docking rdfs:subClassOf ngm:space-science-and-systems .
 ngm:spacecraft-electrical-power-system rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:ai-technique ;
     rdfs:subClassOf ngm:artificial-intelligence ;
+    rdfs:subClassOf ngm:space-science-and-systems ;
+    rdfs:subClassOf ngm:spacecraft ;
     rdfs:subClassOf ngm:system ;
     rdfs:subClassOf ngm:thing .
 ngm:spacecraft-environmental-testing rdfs:subClassOf ngm:ai-research-area ;
@@ -68929,14 +69043,25 @@ ngm:spacecraft-housekeeping-data rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:data-management ;
     rdfs:subClassOf ngm:infra-data-management ;
     rdfs:subClassOf ngm:infrastructure ;
+    rdfs:subClassOf ngm:space-science-and-systems ;
+    rdfs:subClassOf ngm:spacecraft-communications ;
     rdfs:subClassOf ngm:thing .
 ngm:spacecraft-integration rdfs:subClassOf ngm:space-science-and-systems .
 ngm:spacecraft-magnetometer rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:artificial-intelligence ;
+    rdfs:subClassOf ngm:automation ;
     rdfs:subClassOf ngm:cat-ai-infrastructure ;
+    rdfs:subClassOf ngm:computer-science ;
     rdfs:subClassOf ngm:hardware-component ;
     rdfs:subClassOf ngm:infra-computing-and-cloud ;
+    rdfs:subClassOf ngm:infra-software-engineering ;
     rdfs:subClassOf ngm:infrastructure ;
+    rdfs:subClassOf ngm:robo-perception ;
+    rdfs:subClassOf ngm:robotics ;
+    rdfs:subClassOf ngm:sensor-fusion ;
+    rdfs:subClassOf ngm:software-engineering ;
+    rdfs:subClassOf ngm:space-science-and-systems ;
+    rdfs:subClassOf ngm:spacecraft-guidance-navigation-and-control ;
     rdfs:subClassOf ngm:thing .
 ngm:spacecraft-mechanism rdfs:subClassOf ngm:space-science-and-systems .
 ngm:spacecraft-module rdfs:subClassOf ngm:space-science-and-systems .
@@ -68958,6 +69083,7 @@ ngm:spacecraft-structure rdfs:subClassOf ngm:space-science-and-systems .
 ngm:spacecraft-subsystem rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:ai-technique ;
     rdfs:subClassOf ngm:artificial-intelligence ;
+    rdfs:subClassOf ngm:space-science-and-systems ;
     rdfs:subClassOf ngm:thing .
 ngm:spacecraft-telemetry rdfs:subClassOf ngm:space-science-and-systems .
 ngm:spacecraft-thermal-coating rdfs:subClassOf ngm:space-science-and-systems .
@@ -70055,10 +70181,19 @@ ngm:star-formation rdfs:subClassOf ngm:space-science ;
     rdfs:subClassOf ngm:space-science-and-systems .
 ngm:star-tracker rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:artificial-intelligence ;
+    rdfs:subClassOf ngm:automation ;
     rdfs:subClassOf ngm:cat-ai-infrastructure ;
+    rdfs:subClassOf ngm:computer-science ;
     rdfs:subClassOf ngm:hardware-component ;
     rdfs:subClassOf ngm:infra-computing-and-cloud ;
+    rdfs:subClassOf ngm:infra-software-engineering ;
     rdfs:subClassOf ngm:infrastructure ;
+    rdfs:subClassOf ngm:robo-perception ;
+    rdfs:subClassOf ngm:robotics ;
+    rdfs:subClassOf ngm:sensor-fusion ;
+    rdfs:subClassOf ngm:software-engineering ;
+    rdfs:subClassOf ngm:space-science-and-systems ;
+    rdfs:subClassOf ngm:spacecraft-guidance-navigation-and-control ;
     rdfs:subClassOf ngm:thing .
 ngm:stark rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:artificial-intelligence ;
@@ -70938,6 +71073,7 @@ ngm:suborbital-spaceflight rdfs:subClassOf ngm:space-life-sciences ;
 ngm:suborbital-spaceflight-vehicle rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:ai-technique ;
     rdfs:subClassOf ngm:artificial-intelligence ;
+    rdfs:subClassOf ngm:space-science-and-systems ;
     rdfs:subClassOf ngm:system ;
     rdfs:subClassOf ngm:thing .
 ngm:subscription-model rdfs:subClassOf ngm:ai-research-area ;
@@ -70998,10 +71134,19 @@ ngm:summary rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:thing .
 ngm:sun-sensor rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:artificial-intelligence ;
+    rdfs:subClassOf ngm:automation ;
     rdfs:subClassOf ngm:cat-ai-infrastructure ;
+    rdfs:subClassOf ngm:computer-science ;
     rdfs:subClassOf ngm:hardware-component ;
     rdfs:subClassOf ngm:infra-computing-and-cloud ;
+    rdfs:subClassOf ngm:infra-software-engineering ;
     rdfs:subClassOf ngm:infrastructure ;
+    rdfs:subClassOf ngm:robo-perception ;
+    rdfs:subClassOf ngm:robotics ;
+    rdfs:subClassOf ngm:sensor-fusion ;
+    rdfs:subClassOf ngm:software-engineering ;
+    rdfs:subClassOf ngm:space-science-and-systems ;
+    rdfs:subClassOf ngm:spacecraft-guidance-navigation-and-control ;
     rdfs:subClassOf ngm:thing .
 ngm:sun-sensor-geometry rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:artificial-intelligence ;
@@ -71677,9 +71822,15 @@ ngm:syntactic-interoperability rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:thing .
 ngm:synthetic-aperture-radar rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:artificial-intelligence ;
+    rdfs:subClassOf ngm:cat-ai-infrastructure ;
+    rdfs:subClassOf ngm:earth-observation-sensor ;
+    rdfs:subClassOf ngm:hardware-component ;
     rdfs:subClassOf ngm:human-computer-interaction ;
+    rdfs:subClassOf ngm:infra-computing-and-cloud ;
+    rdfs:subClassOf ngm:infrastructure ;
     rdfs:subClassOf ngm:remote-sensing ;
     rdfs:subClassOf ngm:sc-platform-and-environment ;
+    rdfs:subClassOf ngm:sensor ;
     rdfs:subClassOf ngm:spatial-computing ;
     rdfs:subClassOf ngm:thing .
 ngm:synthetic-asset rdfs:subClassOf ngm:bc-token-and-asset ;
@@ -72589,8 +72740,7 @@ ngm:teleoperation-systems rdfs:subClassOf ngm:dc-telepresence ;
     rdfs:subClassOf ngm:distributed-collaboration ;
     rdfs:subClassOf ngm:tele-001-telepresence ;
     rdfs:subClassOf ngm:thing .
-ngm:telepresence rdfs:subClassOf ngm:distributed-collaboration ;
-    rdfs:subClassOf ngm:thing .
+ngm:telepresence rdfs:subClassOf ngm:thing .
 ngm:telescope rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:artificial-intelligence ;
     rdfs:subClassOf ngm:cat-ai-infrastructure ;
@@ -72876,7 +73026,9 @@ ngm:terrestrial-planet rdfs:subClassOf ngm:astronomical-body ;
     rdfs:subClassOf ngm:astronomy ;
     rdfs:subClassOf ngm:space-science ;
     rdfs:subClassOf ngm:space-science-and-systems .
-ngm:terrestrial-reference-frame rdfs:subClassOf ngm:space-science-and-systems .
+ngm:terrestrial-reference-frame rdfs:subClassOf ngm:earth-observation-and-geospatial-sensing ;
+    rdfs:subClassOf ngm:geodesy ;
+    rdfs:subClassOf ngm:space-science-and-systems .
 ngm:terrestrial-time rdfs:subClassOf ngm:space-science-and-systems .
 ngm:tessellation-shader rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:artificial-intelligence ;
@@ -73202,8 +73354,13 @@ ngm:therapeutic-vr rdfs:subClassOf ngm:ai-research-area ;
 ngm:thermal-balance rdfs:subClassOf ngm:space-science-and-systems .
 ngm:thermal-infrared-remote-sensing rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:artificial-intelligence ;
+    rdfs:subClassOf ngm:cat-ai-infrastructure ;
+    rdfs:subClassOf ngm:hardware-component ;
     rdfs:subClassOf ngm:human-computer-interaction ;
+    rdfs:subClassOf ngm:infra-computing-and-cloud ;
+    rdfs:subClassOf ngm:infrastructure ;
     rdfs:subClassOf ngm:sc-platform-and-environment ;
+    rdfs:subClassOf ngm:sensor ;
     rdfs:subClassOf ngm:spatial-computing ;
     rdfs:subClassOf ngm:thing .
 ngm:thermal-louver rdfs:subClassOf ngm:space-science-and-systems .
@@ -73606,7 +73763,16 @@ ngm:time-series-forecasting rdfs:subClassOf ngm:ai-application ;
     rdfs:subClassOf ngm:thing .
 ngm:time-synchronisation rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:artificial-intelligence ;
+    rdfs:subClassOf ngm:bc-protocol-and-consensus ;
+    rdfs:subClassOf ngm:blockchain ;
+    rdfs:subClassOf ngm:blockchain-entity ;
+    rdfs:subClassOf ngm:blockchain-technology ;
     rdfs:subClassOf ngm:cat-ai-infrastructure ;
+    rdfs:subClassOf ngm:consensus-protocol ;
+    rdfs:subClassOf ngm:digital-infrastructure ;
+    rdfs:subClassOf ngm:distributed-ledger-technology ;
+    rdfs:subClassOf ngm:distributed-systems ;
+    rdfs:subClassOf ngm:infra-computing-and-cloud ;
     rdfs:subClassOf ngm:infra-network-and-comms ;
     rdfs:subClassOf ngm:infrastructure ;
     rdfs:subClassOf ngm:thing .
@@ -76140,6 +76306,7 @@ ngm:unconfined-aquifer rdfs:subClassOf ngm:earth-observation-and-geospatial-sens
 ngm:uncrewed-spacecraft rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:ai-technique ;
     rdfs:subClassOf ngm:artificial-intelligence ;
+    rdfs:subClassOf ngm:space-science-and-systems ;
     rdfs:subClassOf ngm:system ;
     rdfs:subClassOf ngm:thing .
 ngm:underfitting rdfs:subClassOf ngm:ai-research-area ;
@@ -77271,7 +77438,9 @@ ngm:vector-clocks rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:distributed-ledger-technology ;
     rdfs:subClassOf ngm:distributed-systems ;
     rdfs:subClassOf ngm:infra-computing-and-cloud ;
+    rdfs:subClassOf ngm:infra-network-and-comms ;
     rdfs:subClassOf ngm:infrastructure ;
+    rdfs:subClassOf ngm:network-protocol ;
     rdfs:subClassOf ngm:network-synchronization ;
     rdfs:subClassOf ngm:thing .
 ngm:vector-commitment rdfs:subClassOf ngm:ai-research-area ;
@@ -77756,6 +77925,8 @@ ngm:vertical-coordinate-reference-system rdfs:subClassOf ngm:ai-research-area ;
     rdfs:subClassOf ngm:artificial-intelligence ;
     rdfs:subClassOf ngm:cat-ai-infrastructure ;
     rdfs:subClassOf ngm:data-management ;
+    rdfs:subClassOf ngm:earth-observation-and-geospatial-sensing ;
+    rdfs:subClassOf ngm:geodesy ;
     rdfs:subClassOf ngm:geospatial-data ;
     rdfs:subClassOf ngm:infra-data-management ;
     rdfs:subClassOf ngm:infrastructure ;
@@ -81078,5 +81249,5 @@ ngm:zoom-meetings rdfs:subClassOf ngm:distributed-collaboration ;
     rdfs:subClassOf ngm:thing .
 <https://narrativegoldmine.com/ontology/inferred> a owl:Ontology ;
     rdfs:label "NarrativeGoldmine Inferred Axioms"@en ;
-    vc:generatedAt "2026-10-11T15:39:45.875827+00:00"^^xsd:dateTime ;
+    vc:generatedAt "2026-10-11T17:28:39.999176+00:00"^^xsd:dateTime ;
     vc:inferenceMethod "whelk-el++-closure" .

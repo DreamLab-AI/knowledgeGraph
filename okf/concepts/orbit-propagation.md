@@ -9,8 +9,11 @@ maturity: draft
 quality: 0
 is-a:
   - urn:ngm:class:orbital-dynamics
+bridgesTo:
+  - urn:ngm:class:numerical-methods
 relatedTo:
   - urn:ngm:class:orbital-dynamics
+  - urn:ngm:class:differential-equations
 ---
 
 # Orbit Propagation

@@ -30,6 +30,7 @@ bridgesTo:
   - urn:ngm:class:computer-vision
   - urn:ngm:class:spatial-computing
   - urn:ngm:class:federated-learning
+  - urn:ngm:class:data-analysis-service
 uses:
   - urn:ngm:class:machine-learning
   - urn:ngm:class:data-pipeline

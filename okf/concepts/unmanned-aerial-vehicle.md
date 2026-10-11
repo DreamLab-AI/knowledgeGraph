@@ -23,6 +23,8 @@ implements:
   - urn:ngm:class:path-planning
 bridgesTo:
   - urn:ngm:class:robot
+  - urn:ngm:class:remote-sensing-platform
+  - urn:ngm:class:airborne-remote-sensing
 uses:
   - urn:ngm:class:gps
   - urn:ngm:class:lidar

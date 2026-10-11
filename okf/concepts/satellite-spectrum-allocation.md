@@ -9,6 +9,8 @@ maturity: draft
 quality: 0
 is-a:
   - urn:ngm:class:spacecraft-communications
+bridgesTo:
+  - urn:ngm:class:spectrum-management
 relatedTo:
   - urn:ngm:class:satellite-communication
 ---

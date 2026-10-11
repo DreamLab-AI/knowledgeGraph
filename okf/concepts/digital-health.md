@@ -25,6 +25,7 @@ dependsOn:
 bridgesTo:
   - urn:ngm:class:artificial-intelligence
   - urn:ngm:class:drug-discovery
+  - urn:ngm:class:crew-health-monitoring
 uses:
   - urn:ngm:class:medical-imaging
   - urn:ngm:class:large-language-model
@@ -35,6 +36,7 @@ relatedTo:
   - urn:ngm:class:medical-imaging
   - urn:ngm:class:telemedicine
   - urn:ngm:class:privacy
+  - urn:ngm:class:space-life-sciences
 ---
 
 # Digital Health

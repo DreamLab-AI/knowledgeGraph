@@ -62,6 +62,7 @@ relatedTo:
   - urn:ngm:class:sensor-fusion
   - urn:ngm:class:time-series-data
   - urn:ngm:class:predictive-maintenance
+  - urn:ngm:class:in-situ-observation
 ---
 
 # Internet of Things

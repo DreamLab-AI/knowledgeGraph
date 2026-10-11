@@ -11,6 +11,7 @@ is-a:
   - urn:ngm:class:space-to-space-link
 relatedTo:
   - urn:ngm:class:satellite-communication
+  - urn:ngm:class:mesh-network
 ---
 
 # Inter-satellite Link

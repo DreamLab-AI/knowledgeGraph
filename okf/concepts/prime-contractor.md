@@ -12,6 +12,7 @@ is-a:
 relatedTo:
   - urn:ngm:class:space-systems-integrator
   - urn:ngm:class:space-supply-chain
+  - urn:ngm:class:procurement
 ---
 
 # Prime Contractor

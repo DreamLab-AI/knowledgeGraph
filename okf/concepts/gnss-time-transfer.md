@@ -9,6 +9,9 @@ maturity: draft
 quality: 0
 is-a:
   - urn:ngm:class:positioning-navigation-and-timing
+bridgesTo:
+  - urn:ngm:class:time-synchronisation
+  - urn:ngm:class:time-synchronisation
 relatedTo:
   - urn:ngm:class:positioning-navigation-and-timing
 ---

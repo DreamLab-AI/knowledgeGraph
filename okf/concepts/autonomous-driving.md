@@ -27,7 +27,7 @@ requires:
   - urn:ngm:class:object-detection
   - urn:ngm:class:hd-maps
   - urn:ngm:class:autonomous-driving-perception
-  - urn:ngm:class:gnss
+  - urn:ngm:class:global-navigation-satellite-system
   - urn:ngm:class:functional-safety
   - urn:ngm:class:edge-computing
   - urn:ngm:class:training-data
@@ -41,7 +41,7 @@ enables:
 dependsOn:
   - urn:ngm:class:edge-computing
   - urn:ngm:class:v2x-communication
-  - urn:ngm:class:gnss
+  - urn:ngm:class:global-navigation-satellite-system
   - urn:ngm:class:functional-safety
   - urn:ngm:class:hd-maps
   - urn:ngm:class:gpu-compute

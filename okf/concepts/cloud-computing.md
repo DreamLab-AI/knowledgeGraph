@@ -55,6 +55,7 @@ relatedTo:
   - urn:ngm:class:multi-cloud
   - urn:ngm:class:cloud-security
   - urn:ngm:class:cost-optimisation
+  - urn:ngm:class:earth-observation-data-cube
 ---
 
 # Cloud Computing

@@ -9,6 +9,8 @@ maturity: established
 quality: 0.72
 is-a:
   - urn:ngm:class:system-architecture
+bridgesTo:
+  - urn:ngm:class:spacecraft-redundancy
 relatedTo:
   - urn:ngm:class:fault-tolerance
   - urn:ngm:class:reliability-engineering

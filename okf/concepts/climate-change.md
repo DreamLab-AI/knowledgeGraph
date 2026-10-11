@@ -19,6 +19,12 @@ dependsOn:
 bridgesTo:
   - urn:ngm:class:net-zero
   - urn:ngm:class:carbon-offsetting
+  - urn:ngm:class:climate-data-record
+  - urn:ngm:class:essential-climate-variable
+  - urn:ngm:class:carbon-cycle-monitoring
+  - urn:ngm:class:ice-sheet-monitoring
+  - urn:ngm:class:glacier-monitoring
+  - urn:ngm:class:sea-ice-monitoring
 supports:
   - urn:ngm:class:renewable-energy
 standardizedBy:
@@ -29,6 +35,8 @@ relatedTo:
   - urn:ngm:class:environmental-sustainability
   - urn:ngm:class:climate-risk
   - urn:ngm:class:esg
+  - urn:ngm:class:urban-heat-monitoring
+  - urn:ngm:class:drought-monitoring
 ---
 
 # Climate Change

@@ -9,8 +9,11 @@ maturity: draft
 quality: 0
 is-a:
   - urn:ngm:class:earth-observation-applications
+bridgesTo:
+  - urn:ngm:class:sustainability
 relatedTo:
   - urn:ngm:class:earth-observation-applications
+  - urn:ngm:class:carbon-accounting
 ---
 
 # Deforestation Monitoring

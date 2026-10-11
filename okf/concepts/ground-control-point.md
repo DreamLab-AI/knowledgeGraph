@@ -9,6 +9,8 @@ maturity: draft
 quality: 0
 is-a:
   - urn:ngm:class:geodesy
+bridgesTo:
+  - urn:ngm:class:positioning-navigation-and-timing
 relatedTo:
   - urn:ngm:class:geodesy
 ---

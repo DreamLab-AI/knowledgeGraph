@@ -9,6 +9,8 @@ maturity: draft
 quality: 0
 is-a:
   - urn:ngm:class:space-reference-systems
+bridgesTo:
+  - urn:ngm:class:geodesy
 relatedTo:
   - urn:ngm:class:space-reference-systems
 ---

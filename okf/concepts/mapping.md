@@ -41,6 +41,7 @@ relatedTo:
   - urn:ngm:class:geospatial-technology
   - urn:ngm:class:ontology-alignment
   - urn:ngm:class:coordinate-system
+  - urn:ngm:class:georeferencing
 ---
 
 # Mapping

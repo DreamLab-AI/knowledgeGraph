@@ -11,6 +11,7 @@ is-a:
   - urn:ngm:class:testing
 relatedTo:
   - urn:ngm:class:space-systems-engineering
+  - urn:ngm:class:quality-assurance
 ---
 
 # Spacecraft Environmental Testing

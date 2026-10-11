@@ -9,6 +9,7 @@ maturity: draft
 quality: 0
 is-a:
   - urn:ngm:class:coordinate-reference-system
+  - urn:ngm:class:spatial-reference-system
 relatedTo:
   - urn:ngm:class:orthometric-height
   - urn:ngm:class:vertical-datum

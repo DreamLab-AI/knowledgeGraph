@@ -38,6 +38,7 @@ contrastsWith:
 bridgesTo:
   - urn:ngm:class:decentralised-autonomous-organisation
   - urn:ngm:class:peer-to-peer-network
+  - urn:ngm:class:formation-flying
 uses:
   - urn:ngm:class:reinforcement-learning
   - urn:ngm:class:multi-agent-reinforcement-learning

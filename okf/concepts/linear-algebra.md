@@ -41,6 +41,7 @@ supports:
 relatedTo:
   - urn:ngm:class:probability-theory
   - urn:ngm:class:statistics
+  - urn:ngm:class:spectral-unmixing
 ---
 
 # Linear Algebra

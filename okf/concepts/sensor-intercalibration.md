@@ -9,6 +9,7 @@ maturity: draft
 quality: 0
 is-a:
   - urn:ngm:class:calibration
+  - urn:ngm:class:earth-observation-processing
 relatedTo:
   - urn:ngm:class:earth-observation-processing
   - urn:ngm:class:measurement-uncertainty

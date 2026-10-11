@@ -9,9 +9,13 @@ maturity: draft
 quality: 0
 is-a:
   - urn:ngm:class:earth-observation-data-quality
+bridgesTo:
+  - urn:ngm:class:time-series
+  - urn:ngm:class:climate-change
 relatedTo:
   - urn:ngm:class:earth-observation-data-quality
   - urn:ngm:class:earth-observation-processing
+  - urn:ngm:class:open-data
 ---
 
 # Climate Data Record

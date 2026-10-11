@@ -21,6 +21,7 @@ dependsOn:
   - urn:ngm:class:geospatial-data
 bridgesTo:
   - urn:ngm:class:spatial-computing
+  - urn:ngm:class:space-reference-systems
 uses:
   - urn:ngm:class:gps
 supports:

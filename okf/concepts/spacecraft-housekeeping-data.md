@@ -9,6 +9,10 @@ maturity: draft
 quality: 0
 is-a:
   - urn:ngm:class:data
+  - urn:ngm:class:spacecraft-telemetry
+bridgesTo:
+  - urn:ngm:class:health-monitoring
+  - urn:ngm:class:anomaly-detection
 relatedTo:
   - urn:ngm:class:space-systems-engineering
 ---

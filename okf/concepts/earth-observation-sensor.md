@@ -11,6 +11,7 @@ is-a:
   - urn:ngm:class:sensor
 relatedTo:
   - urn:ngm:class:earth-observation
+  - urn:ngm:class:environmental-sensing
 ---
 
 # Earth Observation Sensor

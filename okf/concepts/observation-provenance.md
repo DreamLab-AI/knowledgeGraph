@@ -9,6 +9,9 @@ maturity: draft
 quality: 0
 is-a:
   - urn:ngm:class:earth-observation-data-quality
+bridgesTo:
+  - urn:ngm:class:provenance
+  - urn:ngm:class:w3-c-prov
 relatedTo:
   - urn:ngm:class:earth-observation-data-quality
 ---

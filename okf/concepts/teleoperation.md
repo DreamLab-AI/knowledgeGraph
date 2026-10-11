@@ -33,6 +33,7 @@ uses:
   - urn:ngm:class:spatial-audio
 relatedTo:
   - urn:ngm:class:situational-awareness
+  - urn:ngm:class:planetary-rover
 ---
 
 # Teleoperation

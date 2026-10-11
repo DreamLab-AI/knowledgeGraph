@@ -9,6 +9,8 @@ maturity: draft
 quality: 0
 is-a:
   - urn:ngm:class:orbital-dynamics
+bridgesTo:
+  - urn:ngm:class:collision-avoidance
 relatedTo:
   - urn:ngm:class:orbital-dynamics
 ---

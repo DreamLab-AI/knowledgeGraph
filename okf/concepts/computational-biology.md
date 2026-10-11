@@ -120,6 +120,7 @@ relatedTo:
   - urn:ngm:class:wellcome-trust
   - urn:ngm:class:uk-biobank
   - urn:ngm:class:human-cell-atlas
+  - urn:ngm:class:spaceflight-omics
 ---
 
 # Computational Biology

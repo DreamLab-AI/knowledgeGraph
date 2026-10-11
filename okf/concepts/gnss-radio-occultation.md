@@ -9,6 +9,7 @@ maturity: draft
 quality: 0
 is-a:
   - urn:ngm:class:remote-sensing
+  - urn:ngm:class:earth-observation-sensor
 uses:
   - urn:ngm:class:gnss-signal
 relatedTo:

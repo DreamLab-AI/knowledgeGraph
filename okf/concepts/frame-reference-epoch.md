@@ -12,6 +12,7 @@ is-a:
 relatedTo:
   - urn:ngm:class:coordinate-epoch
   - urn:ngm:class:geodetic-reference-frame
+  - urn:ngm:class:reference-frames
 ---
 
 # Frame Reference Epoch

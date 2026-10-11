@@ -33,6 +33,8 @@ bridgesTo:
   - urn:ngm:class:computer-graphics
   - urn:ngm:class:motion-planning
   - urn:ngm:class:gradient-descent
+  - urn:ngm:class:orbit-propagation
+  - urn:ngm:class:orbital-dynamics
 uses:
   - urn:ngm:class:error-analysis
 supports:

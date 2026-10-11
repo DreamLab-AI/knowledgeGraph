@@ -31,6 +31,7 @@ relatedTo:
   - urn:ngm:class:transmission-delay
   - urn:ngm:class:jitter
   - urn:ngm:class:bandwidth
+  - urn:ngm:class:delay-tolerant-space-networking
 ---
 
 # Propagation Delay

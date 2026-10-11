@@ -24,7 +24,7 @@ enables:
   - urn:ngm:class:motion-tracking
   - urn:ngm:class:dead-reckoning
   - urn:ngm:class:6-do-f-tracking
-  - urn:ngm:class:attitude-estimation
+  - urn:ngm:class:attitude-determination
   - urn:ngm:class:6-do-f-tracking
 dependsOn:
   - urn:ngm:class:real-time-operating-system
@@ -61,7 +61,7 @@ partOf:
 relatedTo:
   - urn:ngm:class:lidar
   - urn:ngm:class:extended-reality
-  - urn:ngm:class:gnss
+  - urn:ngm:class:global-navigation-satellite-system
   - urn:ngm:class:motion-sickness
 ---
 

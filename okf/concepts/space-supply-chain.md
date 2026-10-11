@@ -9,9 +9,14 @@ maturity: draft
 quality: 0
 is-a:
   - urn:ngm:class:supply-chain
+  - urn:ngm:class:space-prime
+bridgesTo:
+  - urn:ngm:class:supply-chain-resilience
+  - urn:ngm:class:export-controls
 relatedTo:
   - urn:ngm:class:space-prime
   - urn:ngm:class:space-systems-integrator
+  - urn:ngm:class:procurement
 ---
 
 # Space Supply Chain

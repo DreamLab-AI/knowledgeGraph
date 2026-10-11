@@ -9,6 +9,7 @@ maturity: draft
 quality: 0
 is-a:
   - urn:ngm:class:dataset
+  - urn:ngm:class:space-life-sciences
 relatedTo:
   - urn:ngm:class:space-life-sciences
 ---

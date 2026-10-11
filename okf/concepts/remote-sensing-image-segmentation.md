@@ -9,8 +9,11 @@ maturity: draft
 quality: 0
 is-a:
   - urn:ngm:class:image-segmentation
+  - urn:ngm:class:earth-observation-processing
 bridgesTo:
   - urn:ngm:class:computer-vision
+  - urn:ngm:class:semantic-segmentation
+  - urn:ngm:class:convolutional-neural-network
 relatedTo:
   - urn:ngm:class:earth-observation-processing
 ---

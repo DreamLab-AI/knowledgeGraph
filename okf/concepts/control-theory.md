@@ -63,6 +63,8 @@ contrastsWith:
   - urn:ngm:class:classical-optimisation-without-feedback
   - urn:ngm:class:model-free-heuristic-tuning
   - urn:ngm:class:ai-without-dynamics-models
+bridgesTo:
+  - urn:ngm:class:attitude-control
 uses:
   - urn:ngm:class:bode-plot
   - urn:ngm:class:cost-function

@@ -9,6 +9,9 @@ maturity: draft
 quality: 0
 is-a:
   - urn:ngm:class:orbital-dynamics
+bridgesTo:
+  - urn:ngm:class:state-estimation
+  - urn:ngm:class:kalman-filter
 relatedTo:
   - urn:ngm:class:orbital-dynamics
 ---

@@ -35,6 +35,8 @@ bridgesTo:
   - urn:ngm:class:digital-twin
   - urn:ngm:class:artificial-intelligence
   - urn:ngm:class:io-t-sensors
+  - urn:ngm:class:change-detection
+  - urn:ngm:class:optical-spacecraft-navigation
 ---
 
 # Computer Vision

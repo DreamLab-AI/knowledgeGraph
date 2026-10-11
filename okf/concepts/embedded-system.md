@@ -42,6 +42,7 @@ bridgesTo:
   - urn:ngm:class:edge-computing
   - urn:ngm:class:cyber-physical-systems
   - urn:ngm:class:machine-learning
+  - urn:ngm:class:onboard-computer
 uses:
   - urn:ngm:class:sensor
   - urn:ngm:class:actuator
@@ -63,6 +64,7 @@ relatedTo:
   - urn:ngm:class:real-time
   - urn:ngm:class:control-system
   - urn:ngm:class:hardware-security
+  - urn:ngm:class:command-and-data-handling
 ---
 
 # Embedded System

@@ -53,6 +53,8 @@ contrastsWith:
   - urn:ngm:class:classification
   - urn:ngm:class:regression
   - urn:ngm:class:semi-supervised-learning
+bridgesTo:
+  - urn:ngm:class:clustered-data-state
 uses:
   - urn:ngm:class:embedding
   - urn:ngm:class:embedding-space

@@ -11,6 +11,7 @@ is-a:
   - urn:ngm:class:heliophysics
 relatedTo:
   - urn:ngm:class:heliophysics
+  - urn:ngm:class:time-series
 ---
 
 # Solar Cycle

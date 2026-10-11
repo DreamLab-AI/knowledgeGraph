@@ -9,6 +9,8 @@ maturity: draft
 quality: 0
 is-a:
   - urn:ngm:class:spacecraft-navigation
+bridgesTo:
+  - urn:ngm:class:computer-vision
 relatedTo:
   - urn:ngm:class:astrometry
   - urn:ngm:class:spacecraft-navigation

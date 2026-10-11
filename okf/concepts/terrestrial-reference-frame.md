@@ -9,6 +9,7 @@ maturity: draft
 quality: 0
 is-a:
   - urn:ngm:class:space-reference-systems
+  - urn:ngm:class:geodetic-reference-frame
 relatedTo:
   - urn:ngm:class:space-reference-systems
 ---

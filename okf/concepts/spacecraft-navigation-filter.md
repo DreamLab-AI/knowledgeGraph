@@ -9,6 +9,8 @@ maturity: draft
 quality: 0
 is-a:
   - urn:ngm:class:spacecraft-guidance-navigation-and-control
+bridgesTo:
+  - urn:ngm:class:extended-kalman-filter
 relatedTo:
   - urn:ngm:class:kalman-filter
   - urn:ngm:class:sensor-fusion

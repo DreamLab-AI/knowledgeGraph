@@ -11,6 +11,7 @@ is-a:
   - urn:ngm:class:space-reference-systems
 relatedTo:
   - urn:ngm:class:space-reference-systems
+  - urn:ngm:class:coordinate-system
 ---
 
 # Equatorial Coordinate System

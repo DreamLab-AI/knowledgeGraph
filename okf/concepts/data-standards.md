@@ -36,6 +36,8 @@ bridgesTo:
   - urn:ngm:class:federated-learning
   - urn:ngm:class:semantic-web
   - urn:ngm:class:semantic-web
+  - urn:ngm:class:earth-observation-analysis-ready-data
+  - urn:ngm:class:geospatial-metadata
 uses:
   - urn:ngm:class:xml
   - urn:ngm:class:json

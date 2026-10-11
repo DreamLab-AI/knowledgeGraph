@@ -30,6 +30,8 @@ contrastsWith:
 bridgesTo:
   - urn:ngm:class:ai-regulation
   - urn:ngm:class:audit-and-compliance
+  - urn:ngm:class:validation-dataset
+  - urn:ngm:class:product-validation
 uses:
   - urn:ngm:class:evaluation-metric
   - urn:ngm:class:benchmarks

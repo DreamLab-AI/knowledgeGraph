@@ -9,8 +9,14 @@ maturity: draft
 quality: 0
 is-a:
   - urn:ngm:class:space-life-sciences
+bridgesTo:
+  - urn:ngm:class:wearable-computing
+  - urn:ngm:class:physiological-signal-processing
+  - urn:ngm:class:telemedicine
+  - urn:ngm:class:digital-health
 relatedTo:
   - urn:ngm:class:space-life-sciences
+  - urn:ngm:class:medical-imaging
 ---
 
 # Crew Health Monitoring

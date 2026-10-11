@@ -38,6 +38,7 @@ standardizedBy:
 relatedTo:
   - urn:ngm:class:software-architecture
   - urn:ngm:class:rate-limiting
+  - urn:ngm:class:geospatial-interface-protocol
 ---
 
 # API

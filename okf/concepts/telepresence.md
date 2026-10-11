@@ -9,6 +9,7 @@ maturity: established
 quality: 0.72
 is-a:
   - urn:ngm:class:dc-telepresence
+  - urn:ngm:class:distributed-collaboration
 hasPart:
   - urn:ngm:class:spatial-audio
   - urn:ngm:class:haptic-feedback

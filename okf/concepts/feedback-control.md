@@ -34,6 +34,7 @@ bridgesTo:
   - urn:ngm:class:ai-agent-system
   - urn:ngm:class:reinforcement-learning
   - urn:ngm:class:digital-twin
+  - urn:ngm:class:attitude-control
 uses:
   - urn:ngm:class:transfer-function
 supports:

@@ -9,6 +9,7 @@ maturity: draft
 quality: 0
 is-a:
   - urn:ngm:class:sensor
+  - urn:ngm:class:global-navigation-satellite-system
 bridgesTo:
   - urn:ngm:class:digital-signal-processing
 relatedTo:

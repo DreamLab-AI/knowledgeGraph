@@ -49,7 +49,7 @@ partOf:
 relatedTo:
   - urn:ngm:class:slam
   - urn:ngm:class:inertial-measurement-unit
-  - urn:ngm:class:gnss
+  - urn:ngm:class:global-navigation-satellite-system
   - urn:ngm:class:autonomous-driving
 ---
 

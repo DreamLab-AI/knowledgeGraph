@@ -32,6 +32,9 @@ contrastsWith:
 bridgesTo:
   - urn:ngm:class:machine-learning
   - urn:ngm:class:feature-engineering
+  - urn:ngm:class:earth-observation-analysis-ready-data
+  - urn:ngm:class:data-completeness
+  - urn:ngm:class:earth-observation-data-quality
 uses:
   - urn:ngm:class:statistical-process-control
   - urn:ngm:class:entity-resolution
@@ -47,6 +50,10 @@ partOf:
 relatedTo:
   - urn:ngm:class:data-observability
   - urn:ngm:class:data-mesh
+  - urn:ngm:class:pixel-quality-flag
+  - urn:ngm:class:quality-screening
+  - urn:ngm:class:missing-value
+  - urn:ngm:class:measurement-accuracy
 ---
 
 # Data Quality

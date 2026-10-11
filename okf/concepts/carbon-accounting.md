@@ -32,6 +32,7 @@ bridgesTo:
   - urn:ngm:class:blockchain
   - urn:ngm:class:supply-chain-management
   - urn:ngm:class:artificial-intelligence
+  - urn:ngm:class:carbon-cycle-monitoring
 uses:
   - urn:ngm:class:life-cycle-assessment
   - urn:ngm:class:supply-chain-data
@@ -44,6 +45,7 @@ partOf:
 relatedTo:
   - urn:ngm:class:carbon-credits
   - urn:ngm:class:science-based-targets
+  - urn:ngm:class:deforestation-monitoring
 ---
 
 # Carbon Accounting

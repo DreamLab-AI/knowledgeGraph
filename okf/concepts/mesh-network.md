@@ -31,6 +31,7 @@ relatedTo:
   - urn:ngm:class:zigbee
   - urn:ngm:class:thread-protocol
   - urn:ngm:class:bluetooth-low-energy
+  - urn:ngm:class:inter-satellite-link
 ---
 
 # Mesh Network

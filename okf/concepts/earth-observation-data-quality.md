@@ -9,6 +9,8 @@ maturity: draft
 quality: 0
 is-a:
   - urn:ngm:class:earth-observation-and-geospatial-sensing
+bridgesTo:
+  - urn:ngm:class:data-quality
 ---
 
 # Earth Observation Data Quality

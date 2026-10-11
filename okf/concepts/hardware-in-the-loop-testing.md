@@ -9,9 +9,12 @@ maturity: established
 quality: 0.72
 is-a:
   - urn:ngm:class:control-system
+bridgesTo:
+  - urn:ngm:class:spacecraft-guidance-navigation-and-control
 relatedTo:
   - urn:ngm:class:control-algorithm
   - urn:ngm:class:gazebo-simulator
+  - urn:ngm:class:spacecraft-docking
 ---
 
 # Hardware-in-the-Loop Testing

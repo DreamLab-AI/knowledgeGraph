@@ -11,6 +11,7 @@ is-a:
   - urn:ngm:class:infra-network-and-comms
 relatedTo:
   - urn:ngm:class:network-protocol
+  - urn:ngm:class:delay-tolerant-space-networking
 ---
 
 # Routing

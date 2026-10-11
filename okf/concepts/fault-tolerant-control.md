@@ -9,6 +9,9 @@ maturity: emerging
 quality: 0.55
 is-a:
   - urn:ngm:class:control-algorithm
+relatedTo:
+  - urn:ngm:class:spacecraft-autonomy
+  - urn:ngm:class:fault-detection-isolation-and-recovery
 ---
 
 # Fault-Tolerant Control

@@ -11,6 +11,7 @@ is-a:
   - urn:ngm:class:spacecraft-power-and-thermal-control
 bridgesTo:
   - urn:ngm:class:power-management
+  - urn:ngm:class:power-electronics
 relatedTo:
   - urn:ngm:class:spacecraft-power-and-thermal-control
 ---

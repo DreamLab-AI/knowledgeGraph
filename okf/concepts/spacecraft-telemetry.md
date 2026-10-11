@@ -9,8 +9,11 @@ maturity: draft
 quality: 0
 is-a:
   - urn:ngm:class:spacecraft-communications
+bridgesTo:
+  - urn:ngm:class:telemetry
 relatedTo:
   - urn:ngm:class:satellite-communication
+  - urn:ngm:class:time-series-data
 ---
 
 # Spacecraft Telemetry

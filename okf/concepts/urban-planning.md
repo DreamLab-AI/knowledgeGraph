@@ -13,6 +13,7 @@ uses:
   - urn:ngm:class:geospatial-data
 relatedTo:
   - urn:ngm:class:digital-twin-of-society-dto-s
+  - urn:ngm:class:ground-deformation-monitoring
 ---
 
 # Urban Planning

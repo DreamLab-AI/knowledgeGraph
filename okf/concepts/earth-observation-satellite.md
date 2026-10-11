@@ -11,8 +11,13 @@ is-a:
   - urn:ngm:class:spacecraft
 bridgesTo:
   - urn:ngm:class:satellite-communication
+  - urn:ngm:class:orbital-dynamics
+  - urn:ngm:class:sun-synchronous-orbit
+  - urn:ngm:class:repeat-ground-track
 supports:
   - urn:ngm:class:earth-observation
+relatedTo:
+  - urn:ngm:class:satellite-constellation
 ---
 
 # Earth Observation Satellite

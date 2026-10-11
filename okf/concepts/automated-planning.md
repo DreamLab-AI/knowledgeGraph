@@ -33,6 +33,8 @@ bridgesTo:
   - urn:ngm:class:robotics
   - urn:ngm:class:supply-chain-management
   - urn:ngm:class:autonomous-robot
+  - urn:ngm:class:spacecraft-autonomy
+  - urn:ngm:class:mission-planning
 uses:
   - urn:ngm:class:constraint-satisfaction
 supports:

@@ -27,8 +27,8 @@ enables:
   - urn:ngm:class:control-system
 dependsOn:
   - urn:ngm:class:latency
-  - urn:ngm:class:clock-synchronization
-  - urn:ngm:class:clock-synchronization
+  - urn:ngm:class:time-synchronisation
+  - urn:ngm:class:time-synchronisation
 contrastsWith:
   - urn:ngm:class:batch-processing
   - urn:ngm:class:time-sharing

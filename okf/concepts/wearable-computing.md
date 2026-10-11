@@ -18,6 +18,8 @@ requires:
 enables:
   - urn:ngm:class:augmented-reality
   - urn:ngm:class:human-computer-interaction
+bridgesTo:
+  - urn:ngm:class:crew-health-monitoring
 uses:
   - urn:ngm:class:sensor
   - urn:ngm:class:internet-of-things

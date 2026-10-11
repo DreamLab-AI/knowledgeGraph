@@ -32,6 +32,9 @@ contrastsWith:
 bridgesTo:
   - urn:ngm:class:spatial-computing
   - urn:ngm:class:robotics
+  - urn:ngm:class:pan-sharpening
+  - urn:ngm:class:speckle-filtering
+  - urn:ngm:class:star-tracker
 uses:
   - urn:ngm:class:convolutional-neural-network
   - urn:ngm:class:deep-learning

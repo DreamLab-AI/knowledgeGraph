@@ -26,6 +26,8 @@ bridgesTo:
   - urn:ngm:class:solid
   - urn:ngm:class:decentralised-identifier
   - urn:ngm:class:knowledge-graph
+  - urn:ngm:class:earth-observation-data-cube
+  - urn:ngm:class:spaceflight-omics
 uses:
   - urn:ngm:class:linked-data
   - urn:ngm:class:sparql
@@ -41,6 +43,7 @@ partOf:
 relatedTo:
   - urn:ngm:class:solid
   - urn:ngm:class:fair-data-principles
+  - urn:ngm:class:climate-data-record
 ---
 
 # Open Data

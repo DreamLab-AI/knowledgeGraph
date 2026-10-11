@@ -11,6 +11,12 @@ is-a:
   - urn:ngm:class:monitoring
 enables:
   - urn:ngm:class:smart-city
+bridgesTo:
+  - urn:ngm:class:in-situ-observation
+  - urn:ngm:class:earth-observation-applications
+  - urn:ngm:class:water-quality-monitoring
+  - urn:ngm:class:air-quality-monitoring
+  - urn:ngm:class:atmospheric-composition-monitoring
 uses:
   - urn:ngm:class:sensor-fusion
   - urn:ngm:class:wireless-telemetry-module
@@ -18,6 +24,7 @@ relatedTo:
   - urn:ngm:class:digital-twin
   - urn:ngm:class:monitoring-system
   - urn:ngm:class:wireless-connectivity
+  - urn:ngm:class:land-surface-temperature
 ---
 
 # Environmental Monitoring

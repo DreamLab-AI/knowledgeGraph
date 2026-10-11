@@ -12,6 +12,7 @@ is-a:
 relatedTo:
   - urn:ngm:class:exoplanet
   - urn:ngm:class:observational-astronomy
+  - urn:ngm:class:time-series
 ---
 
 # Exoplanet Transit Method

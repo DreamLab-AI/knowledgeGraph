@@ -31,6 +31,8 @@ contrastsWith:
 bridgesTo:
   - urn:ngm:class:spatial-computing
   - urn:ngm:class:robotics-perception
+  - urn:ngm:class:land-cover-classification
+  - urn:ngm:class:land-use-classification
 uses:
   - urn:ngm:class:transfer-learning
   - urn:ngm:class:softmax-function

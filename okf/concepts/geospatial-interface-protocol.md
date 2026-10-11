@@ -9,8 +9,11 @@ maturity: draft
 quality: 0
 is-a:
   - urn:ngm:class:earth-observation-processing
+bridgesTo:
+  - urn:ngm:class:interoperability
 relatedTo:
   - urn:ngm:class:earth-observation-processing
+  - urn:ngm:class:api
 ---
 
 # Geospatial Interface Protocol

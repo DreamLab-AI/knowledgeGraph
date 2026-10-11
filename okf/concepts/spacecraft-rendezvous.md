@@ -11,6 +11,7 @@ is-a:
   - urn:ngm:class:spacecraft-guidance-navigation-and-control
 relatedTo:
   - urn:ngm:class:spacecraft-guidance-navigation-and-control
+  - urn:ngm:class:motion-planning
 ---
 
 # Spacecraft Rendezvous

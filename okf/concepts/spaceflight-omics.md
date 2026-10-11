@@ -9,8 +9,14 @@ maturity: draft
 quality: 0
 is-a:
   - urn:ngm:class:space-life-sciences
+bridgesTo:
+  - urn:ngm:class:genomics
+  - urn:ngm:class:bioinformatics
+  - urn:ngm:class:open-data
 relatedTo:
   - urn:ngm:class:space-life-sciences
+  - urn:ngm:class:computational-biology
+  - urn:ngm:class:open-science
 ---
 
 # Spaceflight Omics

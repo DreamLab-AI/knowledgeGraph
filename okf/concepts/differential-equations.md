@@ -86,6 +86,8 @@ relatedTo:
   - urn:ngm:class:ergodic-theory
   - urn:ngm:class:probability-theory
   - urn:ngm:class:functional-analysis
+  - urn:ngm:class:orbit-propagation
+  - urn:ngm:class:two-body-problem
 ---
 
 # Differential Equations

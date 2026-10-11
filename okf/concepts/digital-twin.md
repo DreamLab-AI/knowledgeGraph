@@ -34,6 +34,9 @@ bridgesTo:
   - urn:ngm:class:blockchain
   - urn:ngm:class:artificial-intelligence
   - urn:ngm:class:telecollaboration
+  - urn:ngm:class:digital-twin-data-assimilation
+relatedTo:
+  - urn:ngm:class:digital-elevation-model
 ---
 
 # Digital Twin

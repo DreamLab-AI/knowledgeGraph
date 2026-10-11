@@ -9,6 +9,8 @@ maturity: draft
 quality: 0
 is-a:
   - urn:ngm:class:earth-observation-sensor
+bridgesTo:
+  - urn:ngm:class:point-cloud
 relatedTo:
   - urn:ngm:class:lidar
   - urn:ngm:class:earth-observation

@@ -33,6 +33,7 @@ partOf:
 relatedTo:
   - urn:ngm:class:operating-system
   - urn:ngm:class:real-time-operating-system
+  - urn:ngm:class:flight-software
 ---
 
 # Firmware

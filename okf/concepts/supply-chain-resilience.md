@@ -23,6 +23,7 @@ contrastsWith:
 bridgesTo:
   - urn:ngm:class:business-continuity
   - urn:ngm:class:logistics
+  - urn:ngm:class:space-supply-chain
 uses:
   - urn:ngm:class:redundancy
   - urn:ngm:class:inventory-management

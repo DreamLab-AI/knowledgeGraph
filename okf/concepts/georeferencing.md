@@ -12,6 +12,7 @@ is-a:
 relatedTo:
   - urn:ngm:class:earth-observation-processing
   - urn:ngm:class:geodesy
+  - urn:ngm:class:mapping
 ---
 
 # Georeferencing

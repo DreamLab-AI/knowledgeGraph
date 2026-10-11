@@ -9,8 +9,12 @@ maturity: draft
 quality: 0
 is-a:
   - urn:ngm:class:astronomy
+bridgesTo:
+  - urn:ngm:class:time-series
+  - urn:ngm:class:anomaly-detection
 relatedTo:
   - urn:ngm:class:astronomy
+  - urn:ngm:class:stream-processing
 ---
 
 # Time-domain Astronomy

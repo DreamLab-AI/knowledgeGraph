@@ -12,10 +12,10 @@ is-a:
   - urn:ngm:class:photorealistic-rendering
 hasPart:
   - urn:ngm:class:ambient-occlusion
-  - urn:ngm:class:brdf
+  - urn:ngm:class:bidirectional-reflectance-distribution-function
   - urn:ngm:class:global-illumination
   - urn:ngm:class:light-source-model
-  - urn:ngm:class:brdf
+  - urn:ngm:class:bidirectional-reflectance-distribution-function
   - urn:ngm:class:shadow-computation
 requires:
   - urn:ngm:class:shader

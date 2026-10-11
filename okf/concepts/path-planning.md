@@ -30,6 +30,7 @@ contrastsWith:
 bridgesTo:
   - urn:ngm:class:reinforcement-learning
   - urn:ngm:class:digital-twin
+  - urn:ngm:class:planetary-rover
 uses:
   - urn:ngm:class:rrt-algorithm
   - urn:ngm:class:dijkstra-algorithm

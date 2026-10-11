@@ -41,6 +41,8 @@ implements:
   - urn:ngm:class:information-architecture
 bridgesTo:
   - urn:ngm:class:ai-agent-system
+relatedTo:
+  - urn:ngm:class:spacecraft-data-bus
 ---
 
 # Communication Protocol

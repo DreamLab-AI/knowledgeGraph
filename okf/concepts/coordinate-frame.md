@@ -45,6 +45,8 @@ relatedTo:
   - urn:ngm:class:collision-detection
   - urn:ngm:class:transform-tree
   - urn:ngm:class:odometry
+  - urn:ngm:class:spacecraft-attitude
+  - urn:ngm:class:earth-centred-earth-fixed-frame
 ---
 
 # Coordinate Frame

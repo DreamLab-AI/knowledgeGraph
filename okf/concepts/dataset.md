@@ -87,6 +87,7 @@ relatedTo:
   - urn:ngm:class:eu-ai-act
   - urn:ngm:class:data-centric-ai
   - urn:ngm:class:data-ethics
+  - urn:ngm:class:validation-dataset
 ---
 
 # Dataset

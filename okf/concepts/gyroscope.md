@@ -26,6 +26,9 @@ uses:
 partOf:
   - urn:ngm:class:inertial-measurement-unit
   - urn:ngm:class:attitude-determination
+relatedTo:
+  - urn:ngm:class:star-tracker
+  - urn:ngm:class:control-moment-gyroscope
 ---
 
 # Gyroscope

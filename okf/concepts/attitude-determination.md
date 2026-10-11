@@ -4,17 +4,19 @@ type: Class
 title: Attitude Determination
 resource: urn:ngm:class:attitude-determination
 domain: space-science-and-systems
-description: "Attitude determination estimates a spacecraft's orientation relative to a stated reference frame. Sensors measure star directions, the Sun vector, a magnetic-field vector or angular rate. An estimator combines those measurements with reference models and rotational dynamics to produce an attitude estimate, often with angular rate, sensor bias and covariance. The estimate is therefore an inference "
+description: "Attitude estimation is the process of determining the orientation of a rigid body, typically expressed as roll, pitch and yaw or as a quaternion, relative to a reference frame. It fuses measurements from an inertial measurement unit's gyroscopes, accelerometers and magnetometers using sensor-fusion algorithms such as complementary or Kalman filters to counteract individual sensor drift and noise. "
 maturity: draft
 quality: 0
 is-a:
   - urn:ngm:class:spacecraft-guidance-navigation-and-control
+  - urn:ngm:class:sensor-fusion
 bridgesTo:
   - urn:ngm:class:state-estimation
+  - urn:ngm:class:attitude-determination
 relatedTo:
   - urn:ngm:class:spacecraft-guidance-navigation-and-control
 ---
 
 # Attitude Determination
 
-Attitude determination estimates a spacecraft's orientation relative to a stated reference frame. Sensors measure star directions, the Sun vector, a magnetic-field vector or angular rate. An estimator combines those measurements with reference models and rotational dynamics to produce an attitude estimate, often with angular rate, sensor bias and covariance. The estimate is therefore an inference from observations rather than a direct sensor reading.[^1][^3]
+Attitude estimation is the process of determining the orientation of a rigid body, typically expressed as roll, pitch and yaw or as a quaternion, relative to a reference frame. It fuses measurements from an inertial measurement unit's gyroscopes, accelerometers and magnetometers using sensor-fusion algorithms such as complementary or Kalman filters to counteract individual sensor drift and noise. Accurate attitude estimation is a prerequisite for stable flight control, robot balancing and any system that must reason about its own orientation in space.

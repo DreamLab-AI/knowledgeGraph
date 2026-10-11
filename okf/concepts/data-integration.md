@@ -43,6 +43,8 @@ uses:
 standardizedBy:
   - urn:ngm:class:sql
   - urn:ngm:class:open-lineage
+relatedTo:
+  - urn:ngm:class:earth-observation-sensor-fusion
 ---
 
 # Data Integration

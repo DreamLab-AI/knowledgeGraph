@@ -13,7 +13,7 @@ hasPart:
   - urn:ngm:class:compute-shader
   - urn:ngm:class:vertex-shader
   - urn:ngm:class:pixel-shader
-  - urn:ngm:class:brdf
+  - urn:ngm:class:bidirectional-reflectance-distribution-function
   - urn:ngm:class:normal-map
 requires:
   - urn:ngm:class:render-pipeline

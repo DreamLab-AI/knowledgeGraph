@@ -43,6 +43,7 @@ uses:
 relatedTo:
   - urn:ngm:class:swarm-intelligence
   - urn:ngm:class:particle-swarm-optimization
+  - urn:ngm:class:formation-flying
 ---
 
 # Swarm Robotics

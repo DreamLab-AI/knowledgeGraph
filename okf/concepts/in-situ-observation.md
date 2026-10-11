@@ -9,8 +9,11 @@ maturity: draft
 quality: 0
 is-a:
   - urn:ngm:class:earth-observation-sensor
+bridgesTo:
+  - urn:ngm:class:environmental-monitoring
 relatedTo:
   - urn:ngm:class:earth-observation
+  - urn:ngm:class:internet-of-things
 ---
 
 # In Situ Observation

@@ -9,6 +9,8 @@ maturity: draft
 quality: 0
 is-a:
   - urn:ngm:class:earth-observation-processing
+bridgesTo:
+  - urn:ngm:class:geographic-information-system
 relatedTo:
   - urn:ngm:class:earth-observation-processing
 ---

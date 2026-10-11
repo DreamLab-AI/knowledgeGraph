@@ -16,6 +16,7 @@ enables:
   - urn:ngm:class:path-planning
 bridgesTo:
   - urn:ngm:class:robotics
+  - urn:ngm:class:spacecraft-guidance
 ---
 
 # Trajectory Optimisation

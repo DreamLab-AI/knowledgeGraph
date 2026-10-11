@@ -29,6 +29,10 @@ contrastsWith:
 bridgesTo:
   - urn:ngm:class:spatial-computing
   - urn:ngm:class:neural-network
+  - urn:ngm:class:spectral-filtering
+  - urn:ngm:class:power-spectrum
+  - urn:ngm:class:wavelet-analysis
+  - urn:ngm:class:signal-to-noise-ratio
 uses:
   - urn:ngm:class:fast-fourier-transform
   - urn:ngm:class:wavelet-transform
@@ -44,6 +48,9 @@ relatedTo:
   - urn:ngm:class:data-compression
   - urn:ngm:class:render-pipeline
   - urn:ngm:class:data
+  - urn:ngm:class:speckle-filtering
+  - urn:ngm:class:reconstruction
+  - urn:ngm:class:gravitational-wave
 ---
 
 # Signal Processing
