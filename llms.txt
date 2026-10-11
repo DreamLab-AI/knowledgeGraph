@@ -2,19 +2,20 @@
 
 > The readable tier of the DreamLab knowledge mesh: a mostly AI-generated
 > synthetic corpus, built under human direction, mapping the Fourth Industrial
-> Revolution across six domains: artificial intelligence, blockchain, spatial
-> computing, robotics, distributed collaboration and infrastructure. It exists to
+> Revolution across eight domains: artificial intelligence, blockchain, spatial
+> computing, robotics, distributed collaboration, infrastructure, space science
+> and systems, and Earth observation and geospatial sensing. It exists to
 > exercise and demonstrate the VisionFlow pipeline and VisionClaw engine on a
-> medium-scale ontology (~8.1k classes, 0 individuals, ~100k typed relations: a
-> terminology, not an instance graph). It is a testbed, NOT an authoritative
-> human-authored encyclopedia. It compiles to an OWL 2 EL ontology, validated
-> and closed at build; Whelk (OWL EL+RL) classifies it downstream in VisionClaw.
-> Pages carry OWL2 semantics in embedded JSON-LD, and most (6,697 of 8,160
-> class records) carry a traceable generation record: prov:wasAttributedTo
-> resolves to five did:nostr identities, agent swarms (ontology-mesh,
-> lcr-swarm, enrichment-swarm) and humans (jjohare), saying who directed the
-> generation and when, never that a human wrote it. Coverage is partial and
-> enumerated in the data, not assumed.
+> medium-scale ontology (about 9.2k classes, 0 individuals, about 100k typed
+> relations: a terminology, not an instance graph). It is a testbed, NOT an
+> authoritative human-authored encyclopedia. It compiles to an OWL 2 EL ontology,
+> validated and closed at build; Whelk (OWL EL+RL) classifies it downstream in
+> VisionClaw. Pages carry OWL2 semantics in embedded JSON-LD, and every public
+> page carries a traceable generation record: prov:wasAttributedTo resolves to
+> did:nostr identities, agent swarms (ontology-mesh, lcr-swarm,
+> enrichment-swarm, space-corpus-research) and humans (jjohare), saying who
+> directed the generation and when, never that a human wrote it. Live counts are
+> in /data/graph/stats.json; this text is a summary, the data is the record.
 
 This site is also an API. Every artifact below is a public, CORS-open,
 documented endpoint you may build on as a stable ground-truth dependency. All
