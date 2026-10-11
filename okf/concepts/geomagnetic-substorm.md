@@ -7,6 +7,8 @@ domain: space-science-and-systems
 description: A geomagnetic substorm is a sudden release of energy by the magnetosphere, the protective magnetic bubble surrounding Earth, that occurs in the magnetic fields of near-Earth space.[^1]
 maturity: draft
 quality: 0
+is-a:
+  - urn:ngm:class:heliophysics
 relatedTo:
   - urn:ngm:class:heliophysics
 ---

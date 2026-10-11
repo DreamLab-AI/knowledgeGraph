@@ -7,6 +7,8 @@ domain: space-science-and-systems
 description: A geomagnetic storm is a major disturbance of Earth's magnetosphere that occurs when there is a very efficient exchange of energy from the solar wind into the space environment surrounding Earth.[^1]
 maturity: draft
 quality: 0
+is-a:
+  - urn:ngm:class:heliophysics
 relatedTo:
   - urn:ngm:class:heliophysics
 ---

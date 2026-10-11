@@ -7,6 +7,8 @@ domain: earth-observation-and-geospatial-sensing
 description: A validated data state is a SWEET data state reached after a validation process has acted on the data.[^1][^2]
 maturity: draft
 quality: 0
+is-a:
+  - urn:ngm:class:earth-observation-processing
 relatedTo:
   - urn:ngm:class:earth-observation-processing
 ---

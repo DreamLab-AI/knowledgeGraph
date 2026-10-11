@@ -9,6 +9,7 @@ maturity: mature
 quality: 0.8
 is-a:
   - urn:ngm:class:infrastructure
+  - urn:ngm:class:cat-ai-infrastructure
 contrastsWith:
   - urn:ngm:class:cloud-computing
   - urn:ngm:class:infrastructure-as-a-service

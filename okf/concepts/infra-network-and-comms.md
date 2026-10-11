@@ -9,6 +9,7 @@ maturity: established
 quality: 0
 is-a:
   - urn:ngm:class:infrastructure
+  - urn:ngm:class:cat-ai-infrastructure
 hasPart:
   - urn:ngm:class:network-protocol
   - urn:ngm:class:communication-protocol

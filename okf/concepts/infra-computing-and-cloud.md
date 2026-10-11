@@ -9,6 +9,7 @@ maturity: established
 quality: 0.8
 is-a:
   - urn:ngm:class:infrastructure
+  - urn:ngm:class:cat-ai-infrastructure
 hasPart:
   - urn:ngm:class:cloud-infrastructure
   - urn:ngm:class:cloud-native-applications

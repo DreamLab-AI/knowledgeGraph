@@ -9,6 +9,7 @@ maturity: draft
 quality: 0.35
 is-a:
   - urn:ngm:class:artificial-intelligence
+  - urn:ngm:class:bc-defi-and-economics
 relatedTo:
   - urn:ngm:class:foundation-model
   - urn:ngm:class:agentic-workflow

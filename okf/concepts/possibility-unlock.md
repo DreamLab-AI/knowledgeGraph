@@ -8,7 +8,7 @@ description: A market creation mechanism where AI renders new service models ope
 maturity: draft
 quality: 0.35
 is-a:
-  - urn:ngm:class:economic-impact-of-ai
+  - urn:ngm:class:bc-defi-and-economics
 relatedTo:
   - urn:ngm:class:new-market-creation
   - urn:ngm:class:operational-viability

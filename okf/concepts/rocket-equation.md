@@ -7,6 +7,8 @@ domain: space-science-and-systems
 description: Ideal velocity capability relates to effective exhaust velocity and mass ratio through the rocket equation:
 maturity: draft
 quality: 0
+is-a:
+  - urn:ngm:class:spacecraft-propulsion
 relatedTo:
   - urn:ngm:class:spacecraft-propulsion
 ---

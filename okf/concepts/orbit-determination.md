@@ -7,6 +7,8 @@ domain: space-science-and-systems
 description: Orbit determination estimates a spacecraft or other object's state from observations, a force model and a measurement model. It does not directly measure an entire orbit. The result is a best-fitting state at a stated epoch, often with estimated physical or instrument parameters and a covariance that represents uncertainty under the estimator's assumptions.[^1]
 maturity: draft
 quality: 0
+is-a:
+  - urn:ngm:class:orbital-dynamics
 relatedTo:
   - urn:ngm:class:orbital-dynamics
 ---

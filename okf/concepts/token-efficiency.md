@@ -8,7 +8,7 @@ description: The measure of how effectively an AI model utilizes input and outpu
 maturity: draft
 quality: 0.35
 is-a:
-  - urn:ngm:class:ai-economics
+  - urn:ngm:class:bc-defi-and-economics
 relatedTo:
   - urn:ngm:class:cost-effectiveness
   - urn:ngm:class:ai-inference

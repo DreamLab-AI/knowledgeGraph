@@ -7,6 +7,8 @@ domain: space-science-and-systems
 description: Lockheed Martin Space is the Lockheed Martin business area that describes itself as a mission integrator responsible for the research, design, development, engineering and production of spacecraft, instruments, robotics and integrated systems.[^1]
 maturity: draft
 quality: 0
+is-a:
+  - urn:ngm:class:space-prime
 relatedTo:
   - urn:ngm:class:space-prime
   - urn:ngm:class:space-systems-integrator

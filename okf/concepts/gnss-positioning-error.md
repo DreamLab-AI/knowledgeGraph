@@ -7,6 +7,8 @@ domain: space-science-and-systems
 description: GNSS positioning error is the difference between a receiver's estimated position and the corresponding true or reference position, evaluated in a stated frame, epoch and error metric.
 maturity: draft
 quality: 0
+is-a:
+  - urn:ngm:class:positioning-navigation-and-timing
 relatedTo:
   - urn:ngm:class:positioning-navigation-and-timing
 ---

@@ -7,6 +7,8 @@ domain: earth-observation-and-geospatial-sensing
 description: Terrain aspect is the compass direction that the downhill slope of a surface faces at a location, usually derived for each cell of an elevation raster.[^1][^2]
 maturity: draft
 quality: 0
+is-a:
+  - urn:ngm:class:geodesy
 relatedTo:
   - urn:ngm:class:geodesy
 ---

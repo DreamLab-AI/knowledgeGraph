@@ -7,6 +7,8 @@ domain: space-science-and-systems
 description: Re-entry is the passage of an orbital object into sufficiently dense atmosphere, where drag and heating alter its trajectory and may cause ablation, fragmentation and impact.[^esa-reentry-prediction][^esa-reentry-safety]
 maturity: draft
 quality: 0
+is-a:
+  - urn:ngm:class:orbital-dynamics
 relatedTo:
   - urn:ngm:class:orbital-dynamics
 ---

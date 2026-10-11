@@ -7,6 +7,8 @@ domain: space-science-and-systems
 description: A ballistic coefficient is a parameter that combines an object’s aerodynamic drag properties with its mass for use in a drag model.
 maturity: draft
 quality: 0
+is-a:
+  - urn:ngm:class:orbital-dynamics
 relatedTo:
   - urn:ngm:class:orbital-dynamics
 ---

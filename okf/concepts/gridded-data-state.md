@@ -7,6 +7,8 @@ domain: earth-observation-and-geospatial-sensing
 description: Gridded data state is the processing state of data that have been through a gridding process and are held on a regular grid [^1].
 maturity: draft
 quality: 0
+is-a:
+  - urn:ngm:class:earth-observation-processing
 relatedTo:
   - urn:ngm:class:earth-observation-processing
 ---

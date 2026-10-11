@@ -7,6 +7,8 @@ domain: space-science-and-systems
 description: Extragalactic astronomy is the study of galaxies and other structures beyond the Milky Way.[^1][^2]
 maturity: draft
 quality: 0
+is-a:
+  - urn:ngm:class:astronomy
 relatedTo:
   - urn:ngm:class:astronomy
 ---

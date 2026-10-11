@@ -7,6 +7,8 @@ domain: space-science-and-systems
 description: Spaceflight cardiovascular adaptation is the set of changes in heart and blood vessel function that occur in microgravity, with acute responses that include raised preload and stroke volume and chronic changes that include cardiac atrophy, vascular remodelling and autonomic impairment.[^1]
 maturity: draft
 quality: 0
+is-a:
+  - urn:ngm:class:space-life-sciences
 relatedTo:
   - urn:ngm:class:space-life-sciences
 ---

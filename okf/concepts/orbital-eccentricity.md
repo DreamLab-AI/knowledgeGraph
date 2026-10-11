@@ -7,6 +7,8 @@ domain: space-science-and-systems
 description: Orbital eccentricity is a dimensionless parameter that describes a conic orbit's shape.
 maturity: draft
 quality: 0
+is-a:
+  - urn:ngm:class:orbital-dynamics
 relatedTo:
   - urn:ngm:class:orbital-dynamics
 ---

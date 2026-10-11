@@ -7,6 +7,8 @@ domain: space-science-and-systems
 description: Atmospheric drag is the aerodynamic force that opposes a spacecraft’s motion relative to the surrounding atmosphere.
 maturity: draft
 quality: 0
+is-a:
+  - urn:ngm:class:orbital-dynamics
 relatedTo:
   - urn:ngm:class:orbital-dynamics
 ---

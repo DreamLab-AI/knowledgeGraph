@@ -7,6 +7,8 @@ domain: earth-observation-and-geospatial-sensing
 description: A calibrated data state is the processing state of data to which a calibration process has been applied, relating instrument indications to values realized by standards.[^1][^2]
 maturity: draft
 quality: 0
+is-a:
+  - urn:ngm:class:earth-observation-processing
 relatedTo:
   - urn:ngm:class:earth-observation-processing
 ---

@@ -7,6 +7,8 @@ domain: space-science-and-systems
 description: Spacecraft navigation estimates a spacecraft's state at a stated time and quantifies the uncertainty in that estimate.
 maturity: draft
 quality: 0
+is-a:
+  - urn:ngm:class:spacecraft-guidance-navigation-and-control
 relatedTo:
   - urn:ngm:class:spacecraft-guidance-navigation-and-control
 ---

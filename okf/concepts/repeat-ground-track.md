@@ -7,6 +7,8 @@ domain: space-science-and-systems
 description: A repeat ground track is an orbit geometry designed to bring the subsatellite path back over the same Earth-fixed locations after a specified cycle.
 maturity: draft
 quality: 0
+is-a:
+  - urn:ngm:class:orbital-dynamics
 relatedTo:
   - urn:ngm:class:orbital-dynamics
 ---

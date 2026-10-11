@@ -7,6 +7,8 @@ domain: space-science-and-systems
 description: Ionospheric F layer, the ionospheric layer that splits into two layers during the day and recombines into one at night, characterises the upper atmosphere ionisation.[^1]
 maturity: draft
 quality: 0
+is-a:
+  - urn:ngm:class:heliophysics
 relatedTo:
   - urn:ngm:class:heliophysics
 ---

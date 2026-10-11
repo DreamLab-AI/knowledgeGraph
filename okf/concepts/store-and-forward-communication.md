@@ -7,6 +7,8 @@ domain: space-science-and-systems
 description: Store-and-forward communication holds a message or data unit at an intermediate node until an onward link becomes available, then forwards it towards its destination.
 maturity: draft
 quality: 0
+is-a:
+  - urn:ngm:class:spacecraft-communications
 relatedTo:
   - urn:ngm:class:satellite-communication
 ---

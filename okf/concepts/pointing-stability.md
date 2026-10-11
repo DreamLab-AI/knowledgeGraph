@@ -7,6 +7,8 @@ domain: space-science-and-systems
 description: Pointing stability describes how pointing changes during a stated interval or within a stated frequency band. It is a property of a time history and its measurement chain, so a stability value needs the line of sight or axis, interval, sample and filter treatment, statistic, confidence and operating condition.[^1][^2] It does not replace [[Pointing Accuracy]], which describes closeness to a target
 maturity: draft
 quality: 0
+is-a:
+  - urn:ngm:class:spacecraft-guidance-navigation-and-control
 relatedTo:
   - urn:ngm:class:spacecraft-guidance-navigation-and-control
 ---

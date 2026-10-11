@@ -7,6 +7,8 @@ domain: space-science-and-systems
 description: Two donut-shaped regions encircle Earth as the radiation belts, in which high-energy particles, mostly electrons and ions, are trapped by Earth's magnetic field.[^1]
 maturity: draft
 quality: 0
+is-a:
+  - urn:ngm:class:heliophysics
 relatedTo:
   - urn:ngm:class:heliophysics
 ---

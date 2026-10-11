@@ -7,6 +7,8 @@ domain: space-science-and-systems
 description: Ultraviolet astronomy is the study of astronomical objects through their ultraviolet radiation, light with shorter wavelengths than visible light.[^1][^2]
 maturity: draft
 quality: 0
+is-a:
+  - urn:ngm:class:astronomy
 relatedTo:
   - urn:ngm:class:astronomy
 ---

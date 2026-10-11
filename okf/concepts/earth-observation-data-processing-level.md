@@ -7,6 +7,8 @@ domain: earth-observation-and-geospatial-sensing
 description: An Earth observation data processing level is a label that states how far a data product has been taken from the raw instrument data towards derived, gridded or modelled results.[^1]
 maturity: draft
 quality: 0
+is-a:
+  - urn:ngm:class:earth-observation-processing
 relatedTo:
   - urn:ngm:class:earth-observation-data-product
   - urn:ngm:class:earth-observation-processing

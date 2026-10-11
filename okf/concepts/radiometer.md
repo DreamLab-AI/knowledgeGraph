@@ -7,6 +7,8 @@ domain: earth-observation-and-geospatial-sensing
 description: A microwave radiometer is a passive sensor that uses an antenna to detect and record naturally emitted microwave energy.[^1]
 maturity: draft
 quality: 0
+is-a:
+  - urn:ngm:class:earth-observation-sensor
 relatedTo:
   - urn:ngm:class:earth-observation
   - urn:ngm:class:earth-observation-instrument

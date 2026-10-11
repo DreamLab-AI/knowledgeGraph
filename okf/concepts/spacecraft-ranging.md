@@ -7,6 +7,8 @@ domain: space-science-and-systems
 description: Spacecraft ranging is a radiometric tracking measurement used to estimate distance along the line of sight between a ground station and a spacecraft.
 maturity: draft
 quality: 0
+is-a:
+  - urn:ngm:class:spacecraft-communications
 relatedTo:
   - urn:ngm:class:spacecraft-navigation
   - urn:ngm:class:spacecraft-transponder

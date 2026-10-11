@@ -9,6 +9,7 @@ maturity: mature
 quality: 0.8
 is-a:
   - urn:ngm:class:artificial-intelligence
+  - urn:ngm:class:ai-research-area
 uses:
   - urn:ngm:class:machine-learning
   - urn:ngm:class:deep-learning

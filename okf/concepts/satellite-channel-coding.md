@@ -7,6 +7,8 @@ domain: space-science-and-systems
 description: Satellite channel coding adds structured redundancy or constraints to transmitted information to support reliable recovery over an impaired communications channel.
 maturity: draft
 quality: 0
+is-a:
+  - urn:ngm:class:spacecraft-communications
 relatedTo:
   - urn:ngm:class:satellite-communication
 ---

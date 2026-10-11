@@ -7,6 +7,8 @@ domain: space-science-and-systems
 description: Outer space is the region beyond Earth's atmosphere, which the exosphere separates from the rest of the atmosphere.[^1]
 maturity: draft
 quality: 0
+is-a:
+  - urn:ngm:class:astronomy
 relatedTo:
   - urn:ngm:class:astronomy
 ---

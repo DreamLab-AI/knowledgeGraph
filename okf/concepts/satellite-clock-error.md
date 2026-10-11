@@ -7,6 +7,8 @@ domain: space-science-and-systems
 description: Satellite clock error is the residual offset between a satellite’s clock and the relevant GNSS system time after the user applies the broadcast clock correction.
 maturity: draft
 quality: 0
+is-a:
+  - urn:ngm:class:positioning-navigation-and-timing
 relatedTo:
   - urn:ngm:class:positioning-navigation-and-timing
 ---

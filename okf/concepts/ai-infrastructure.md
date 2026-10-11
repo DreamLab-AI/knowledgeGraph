@@ -9,7 +9,7 @@ maturity: established
 quality: 0.72
 is-a:
   - urn:ngm:class:digital-infrastructure
-  - urn:ngm:class:artificial-intelligence
+  - urn:ngm:class:cat-ai-infrastructure
 hasPart:
   - urn:ngm:class:gpu-compute
   - urn:ngm:class:edge-computing

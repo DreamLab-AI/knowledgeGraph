@@ -8,7 +8,7 @@ description: A software platform that tracks discrete units of investigative or 
 maturity: mature
 quality: 0.8
 is-a:
-  - urn:ngm:class:enterprise-software
+  - urn:ngm:class:infra-software-engineering
 implements:
   - urn:ngm:class:case-management
 uses:

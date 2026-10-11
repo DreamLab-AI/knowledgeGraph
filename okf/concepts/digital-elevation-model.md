@@ -7,6 +7,8 @@ domain: earth-observation-and-geospatial-sensing
 description: A digital elevation model (DEM) is a georeferenced representation of elevation, commonly stored as a regular raster grid. The term is broad and is not used uniformly between organisations. A dataset's product definition, reference systems and processing history are more informative than its acronym alone.[^1][^2]
 maturity: draft
 quality: 0
+is-a:
+  - urn:ngm:class:geodesy
 relatedTo:
   - urn:ngm:class:geodesy
 ---

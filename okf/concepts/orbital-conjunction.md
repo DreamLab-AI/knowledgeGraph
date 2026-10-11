@@ -7,6 +7,8 @@ domain: space-science-and-systems
 description: An orbital conjunction is a predicted close approach between two orbiting objects at a stated time, based on their estimated trajectories.
 maturity: draft
 quality: 0
+is-a:
+  - urn:ngm:class:orbital-dynamics
 relatedTo:
   - urn:ngm:class:orbital-dynamics
 ---

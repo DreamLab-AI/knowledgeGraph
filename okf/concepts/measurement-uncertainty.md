@@ -7,6 +7,8 @@ domain: earth-observation-and-geospatial-sensing
 description: Measurement uncertainty is a non-negative parameter characterising the dispersion of the quantity values being attributed to a measurand, based on the information used.[^1][^2]
 maturity: draft
 quality: 0
+is-a:
+  - urn:ngm:class:earth-observation-data-quality
 relatedTo:
   - urn:ngm:class:earth-observation-data-quality
 ---

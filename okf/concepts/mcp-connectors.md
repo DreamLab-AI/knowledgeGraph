@@ -8,7 +8,7 @@ description: Standardized interfaces that allow AI models to connect to external
 maturity: draft
 quality: 0.35
 is-a:
-  - urn:ngm:class:ai-hardware-infrastructure
+  - urn:ngm:class:cat-ai-infrastructure
 relatedTo:
   - urn:ngm:class:ai-hardware-infrastructure
   - urn:ngm:class:claude-co-work

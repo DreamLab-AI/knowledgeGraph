@@ -8,7 +8,7 @@ description: A financial metric representing the ratio of a company's stock pric
 maturity: draft
 quality: 0.35
 is-a:
-  - urn:ngm:class:financial-metrics
+  - urn:ngm:class:bc-defi-and-economics
 relatedTo:
   - urn:ngm:class:ebitda
 ---

@@ -7,6 +7,8 @@ domain: earth-observation-and-geospatial-sensing
 description: A lidar instrument is a remote sensing device that uses a pulsed laser to measure ranges to the Earth.[^1]
 maturity: draft
 quality: 0
+is-a:
+  - urn:ngm:class:earth-observation-sensor
 relatedTo:
   - urn:ngm:class:lidar
   - urn:ngm:class:earth-observation

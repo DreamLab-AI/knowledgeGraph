@@ -9,6 +9,7 @@ maturity: draft
 quality: 0.35
 is-a:
   - urn:ngm:class:artificial-intelligence
+  - urn:ngm:class:ai-governance-and-ethics
 relatedTo:
   - urn:ngm:class:automated-reasoning
   - urn:ngm:class:knowledge-representation

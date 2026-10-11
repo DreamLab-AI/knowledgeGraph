@@ -7,6 +7,8 @@ domain: space-science-and-systems
 description: "Positioning, navigation and timing (PNT) are three related service functions: determining location and orientation; determining a current position and supporting movement towards a desired position; and acquiring or maintaining accurate time against a reference."
 maturity: draft
 quality: 0
+is-a:
+  - urn:ngm:class:space-science-and-systems
 bridgesTo:
   - urn:ngm:class:sensor-fusion
 ---

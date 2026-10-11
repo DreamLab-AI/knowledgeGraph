@@ -7,6 +7,8 @@ domain: space-science-and-systems
 description: A GNSS code measurement is the receiver's estimate of the timing alignment between a received spreading code and a locally generated code replica.
 maturity: draft
 quality: 0
+is-a:
+  - urn:ngm:class:positioning-navigation-and-timing
 relatedTo:
   - urn:ngm:class:positioning-navigation-and-timing
 ---

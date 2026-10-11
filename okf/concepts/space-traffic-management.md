@@ -7,6 +7,8 @@ domain: space-science-and-systems
 description: Space Traffic Management (STM) is the coordination of access to, operations in and return from space so that activities can be conducted safely and sustainably.
 maturity: draft
 quality: 0
+is-a:
+  - urn:ngm:class:orbital-dynamics
 relatedTo:
   - urn:ngm:class:orbital-dynamics
 ---

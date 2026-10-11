@@ -7,6 +7,8 @@ domain: earth-observation-and-geospatial-sensing
 description: Confined zone is not a defined term in the retained hydrogeological sources, which describe confinement through confining units, confined aquifers and the confined condition of the potentiometric surface.[^1][^2]
 maturity: draft
 quality: 0
+is-a:
+  - urn:ngm:class:earth-system-phenomena
 relatedTo:
   - urn:ngm:class:earth-system-phenomena
 ---

@@ -9,6 +9,7 @@ maturity: established
 quality: 0.8
 is-a:
   - urn:ngm:class:infrastructure
+  - urn:ngm:class:cat-ai-infrastructure
 hasPart:
   - urn:ngm:class:compliance-framework
   - urn:ngm:class:regulatory-framework

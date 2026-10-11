@@ -7,6 +7,8 @@ domain: earth-observation-and-geospatial-sensing
 description: Confined bed is not a defined term in the retained hydrogeological sources, which use confining bed for the low-permeability layer that holds an aquifer under pressure and confined for the condition of the aquifer below it.[^1][^2]
 maturity: draft
 quality: 0
+is-a:
+  - urn:ngm:class:earth-system-phenomena
 relatedTo:
   - urn:ngm:class:earth-system-phenomena
 ---

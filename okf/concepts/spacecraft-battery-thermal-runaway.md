@@ -7,6 +7,8 @@ domain: space-science-and-systems
 description: Spacecraft battery thermal runaway is a failure in which a lithium-based cell overheats and can lead to fire or explosion.[^1]
 maturity: draft
 quality: 0
+is-a:
+  - urn:ngm:class:spacecraft-power-and-thermal-control
 relatedTo:
   - urn:ngm:class:spacecraft-battery
   - urn:ngm:class:spacecraft-reliability

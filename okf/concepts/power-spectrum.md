@@ -7,6 +7,8 @@ domain: earth-observation-and-geospatial-sensing
 description: A power spectrum describes how the power of a signal, or the variance of a time series, is distributed over frequency.[^1][^2]
 maturity: draft
 quality: 0
+is-a:
+  - urn:ngm:class:earth-observation-processing
 relatedTo:
   - urn:ngm:class:earth-observation-processing
 ---

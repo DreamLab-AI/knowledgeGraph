@@ -7,6 +7,8 @@ domain: space-science-and-systems
 description: Planetary protection is the policy and engineering practice used to control biological and organic contamination during missions beyond Earth. Forward protection seeks to avoid harmful contamination of other celestial bodies and to preserve the scientific integrity of searches for chemical evolution or life. Backward protection addresses possible adverse changes to Earth's environment from extrate
 maturity: draft
 quality: 0
+is-a:
+  - urn:ngm:class:planetary-science
 relatedTo:
   - urn:ngm:class:planetary-science
 ---

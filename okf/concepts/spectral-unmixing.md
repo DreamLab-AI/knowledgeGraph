@@ -7,6 +7,8 @@ domain: earth-observation-and-geospatial-sensing
 description: Spectral unmixing is the estimation, from the spectrum of a mixed pixel, of the spectral signatures of the materials present (endmembers) and of their relative contributions to that pixel (abundances) [^1] [^2].
 maturity: draft
 quality: 0
+is-a:
+  - urn:ngm:class:earth-observation-processing
 relatedTo:
   - urn:ngm:class:earth-observation-processing
 ---

@@ -9,6 +9,7 @@ maturity: emerging
 quality: 0.75
 is-a:
   - urn:ngm:class:cryptography
+  - urn:ngm:class:bc-cryptographic-primitive
 hasPart:
   - urn:ngm:class:hash-function
   - urn:ngm:class:symmetric-encryption

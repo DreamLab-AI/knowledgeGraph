@@ -7,6 +7,8 @@ domain: earth-observation-and-geospatial-sensing
 description: Sea ice monitoring is the satellite observation of the extent, concentration and age of frozen sea water in polar regions, mainly by microwave sensors.[^1][^2]
 maturity: draft
 quality: 0
+is-a:
+  - urn:ngm:class:earth-observation-applications
 relatedTo:
   - urn:ngm:class:earth-observation-applications
 ---

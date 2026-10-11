@@ -7,6 +7,8 @@ domain: space-science-and-systems
 description: OHB SE is a publicly traded aerospace and technology group headquartered in Bremen, which describes its activities as ranging from complete satellite systems and space missions to infrastructure for access to space and data-driven digital services.[^1]
 maturity: draft
 quality: 0
+is-a:
+  - urn:ngm:class:space-prime
 relatedTo:
   - urn:ngm:class:space-prime
   - urn:ngm:class:space-systems-integrator

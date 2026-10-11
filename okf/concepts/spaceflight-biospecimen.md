@@ -7,6 +7,8 @@ domain: space-science-and-systems
 description: A spaceflight biospecimen is a biological sample collected from an organism or experiment flown in space, or from associated ground studies, and kept for further research.[^1]
 maturity: draft
 quality: 0
+is-a:
+  - urn:ngm:class:space-life-sciences
 relatedTo:
   - urn:ngm:class:space-life-sciences
 ---

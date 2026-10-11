@@ -7,6 +7,8 @@ domain: earth-observation-and-geospatial-sensing
 description: Alpine tundra is a tundra ecosystem at high altitude where low temperatures and high winds stunt the vegetation.[^1][^2]
 maturity: draft
 quality: 0
+is-a:
+  - urn:ngm:class:earth-system-phenomena
 relatedTo:
   - urn:ngm:class:earth-system-phenomena
 ---

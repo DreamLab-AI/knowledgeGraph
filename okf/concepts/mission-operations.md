@@ -7,6 +7,8 @@ domain: space-science-and-systems
 description: Mission operations are the activities that run a spacecraft and its payload during flight, including commanding, monitoring and data handling by a ground team.[^1][^2]
 maturity: draft
 quality: 0
+is-a:
+  - urn:ngm:class:spacecraft-bus
 relatedTo:
   - urn:ngm:class:space-systems-engineering
 ---

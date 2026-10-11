@@ -7,6 +7,8 @@ domain: earth-observation-and-geospatial-sensing
 description: Earth observation data quality is the degree to which an Earth observation data product meets stated requirements for calibration, uncertainty, consistency and documentation.[^1][^2]
 maturity: draft
 quality: 0
+is-a:
+  - urn:ngm:class:earth-observation-and-geospatial-sensing
 ---
 
 # Earth Observation Data Quality

@@ -9,6 +9,7 @@ maturity: established
 quality: 0
 is-a:
   - urn:ngm:class:infrastructure
+  - urn:ngm:class:cat-ai-infrastructure
 hasPart:
   - urn:ngm:class:cryptography
   - urn:ngm:class:authentication

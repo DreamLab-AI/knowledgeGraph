@@ -7,6 +7,8 @@ domain: space-science-and-systems
 description: Heliopause, the boundary where the tenuous, hot solar wind meets the cold, dense interstellar medium, marks this limit.[^1]
 maturity: draft
 quality: 0
+is-a:
+  - urn:ngm:class:heliophysics
 relatedTo:
   - urn:ngm:class:heliophysics
 ---

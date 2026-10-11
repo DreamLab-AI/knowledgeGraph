@@ -9,6 +9,7 @@ maturity: established
 quality: 0
 is-a:
   - urn:ngm:class:artificial-intelligence
+  - urn:ngm:class:ai-research-area
 hasPart:
   - urn:ngm:class:ai-ethics
   - urn:ngm:class:ai-governance

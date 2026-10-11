@@ -7,6 +7,8 @@ domain: space-science-and-systems
 description: Command and data handling is the spacecraft function, usually provided by an onboard computer and its associated units, that receives and stores commands, processes and packages data, and prepares telemetry for transmission to the ground.[^1][^2]
 maturity: draft
 quality: 0
+is-a:
+  - urn:ngm:class:spacecraft-bus
 relatedTo:
   - urn:ngm:class:space-systems-engineering
 ---

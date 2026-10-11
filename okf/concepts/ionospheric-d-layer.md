@@ -7,6 +7,8 @@ domain: space-science-and-systems
 description: Ionospheric D layer, the lower, denser region of the ionosphere, is present mainly in daylight and essentially absent at night.[^1][^2]
 maturity: draft
 quality: 0
+is-a:
+  - urn:ngm:class:heliophysics
 relatedTo:
   - urn:ngm:class:heliophysics
 ---

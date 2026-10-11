@@ -7,6 +7,8 @@ domain: space-science-and-systems
 description: Interstellar medium is the material that fills the space between the stars of a galaxy, made up mostly of gas with a small share of dust.[^1][^2]
 maturity: draft
 quality: 0
+is-a:
+  - urn:ngm:class:astronomy
 relatedTo:
   - urn:ngm:class:astronomy
 ---

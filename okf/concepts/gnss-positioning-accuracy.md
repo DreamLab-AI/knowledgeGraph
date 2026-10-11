@@ -7,6 +7,8 @@ domain: space-science-and-systems
 description: GNSS positioning accuracy is the degree of conformance of an estimated position with the true position, expressed as a statistical measure of solution error.[^1]
 maturity: draft
 quality: 0
+is-a:
+  - urn:ngm:class:positioning-navigation-and-timing
 relatedTo:
   - urn:ngm:class:gnss-integrity
   - urn:ngm:class:gnss-positioning-error

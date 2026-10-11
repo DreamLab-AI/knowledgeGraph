@@ -7,6 +7,8 @@ domain: earth-observation-and-geospatial-sensing
 description: A parameterized data state is the condition of data after a parameterization has been applied, so that some process is represented by parameters instead of being resolved explicitly.[^1][^2]
 maturity: draft
 quality: 0
+is-a:
+  - urn:ngm:class:earth-observation-processing
 relatedTo:
   - urn:ngm:class:earth-observation-processing
 ---

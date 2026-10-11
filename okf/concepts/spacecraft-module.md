@@ -7,6 +7,8 @@ domain: space-science-and-systems
 description: A spacecraft module is a self-contained unit of a spacecraft.[^1]
 maturity: draft
 quality: 0
+is-a:
+  - urn:ngm:class:space-life-sciences
 relatedTo:
   - urn:ngm:class:space-life-sciences
   - urn:ngm:class:spacecraft

@@ -7,6 +7,8 @@ domain: space-science-and-systems
 description: Antenna gain is the directional radiation or reception ratio of an antenna relative to a stated reference antenna.
 maturity: draft
 quality: 0
+is-a:
+  - urn:ngm:class:spacecraft-communications
 relatedTo:
   - urn:ngm:class:satellite-communication
 ---

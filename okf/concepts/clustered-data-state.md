@@ -7,6 +7,8 @@ domain: earth-observation-and-geospatial-sensing
 description: A clustered data state is the condition of data that has been through a clustering process.[^1]
 maturity: draft
 quality: 0
+is-a:
+  - urn:ngm:class:earth-observation-processing
 relatedTo:
   - urn:ngm:class:earth-observation-processing
 ---

@@ -7,6 +7,8 @@ domain: space-science-and-systems
 description: Declination is the angular coordinate on the celestial sphere that corresponds to latitude, measured in degrees north or south of the celestial equator.[^1]
 maturity: draft
 quality: 0
+is-a:
+  - urn:ngm:class:space-reference-systems
 relatedTo:
   - urn:ngm:class:space-reference-systems
 ---

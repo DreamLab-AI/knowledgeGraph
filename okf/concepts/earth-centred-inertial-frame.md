@@ -7,6 +7,8 @@ domain: space-science-and-systems
 description: An Earth-centred inertial frame is a geocentric coordinate frame, used mainly to describe satellite motion, whose axes are fixed relative to the stars and not to the rotating Earth.[^1]
 maturity: draft
 quality: 0
+is-a:
+  - urn:ngm:class:space-reference-systems
 relatedTo:
   - urn:ngm:class:space-reference-systems
 ---

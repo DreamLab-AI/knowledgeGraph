@@ -7,6 +7,8 @@ domain: space-science-and-systems
 description: Radio astronomy measures natural radio emission from objects and processes in space. Antennas convert incoming electromagnetic waves into electrical signals; receivers, timing systems and digital correlators then preserve and combine the measurements.[^1]
 maturity: draft
 quality: 0
+is-a:
+  - urn:ngm:class:astronomy
 relatedTo:
   - urn:ngm:class:astronomy
 ---

@@ -7,6 +7,8 @@ domain: space-science-and-systems
 description: An orbital manoeuvre is a deliberate propulsive action that changes or maintains a spacecraft trajectory.
 maturity: draft
 quality: 0
+is-a:
+  - urn:ngm:class:orbital-dynamics
 relatedTo:
   - urn:ngm:class:orbital-dynamics
 ---

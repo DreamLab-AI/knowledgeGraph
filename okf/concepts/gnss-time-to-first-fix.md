@@ -7,6 +7,8 @@ domain: space-science-and-systems
 description: GNSS time to first fix is the time elapsed from switching on a GNSS receiver until it outputs a navigation solution within a stated performance level.[^1][^2]
 maturity: draft
 quality: 0
+is-a:
+  - urn:ngm:class:positioning-navigation-and-timing
 relatedTo:
   - urn:ngm:class:gnss-availability
   - urn:ngm:class:gnss-receiver

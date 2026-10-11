@@ -7,6 +7,8 @@ domain: space-science-and-systems
 description: Apoapsis is the point or event at which an orbiting body is farthest from its selected central body.
 maturity: draft
 quality: 0
+is-a:
+  - urn:ngm:class:orbital-dynamics
 relatedTo:
   - urn:ngm:class:orbital-dynamics
 ---

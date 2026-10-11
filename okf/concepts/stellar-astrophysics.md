@@ -7,6 +7,8 @@ domain: space-science-and-systems
 description: Stellar astrophysics is the branch of astrophysics that studies how stars form, are structured, generate energy and evolve.[^1][^2][^3]
 maturity: draft
 quality: 0
+is-a:
+  - urn:ngm:class:astronomy
 relatedTo:
   - urn:ngm:class:astronomy
 ---

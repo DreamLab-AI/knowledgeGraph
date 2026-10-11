@@ -7,6 +7,8 @@ domain: space-science-and-systems
 description: True anomaly is the in-plane angle at the focus from periapsis to an orbiting body's position vector.
 maturity: draft
 quality: 0
+is-a:
+  - urn:ngm:class:orbital-dynamics
 relatedTo:
   - urn:ngm:class:orbital-dynamics
 ---

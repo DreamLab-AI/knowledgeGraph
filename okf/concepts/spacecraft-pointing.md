@@ -7,6 +7,8 @@ domain: space-science-and-systems
 description: Spacecraft pointing is the controlled orientation of a defined spacecraft or payload axis towards a target.
 maturity: draft
 quality: 0
+is-a:
+  - urn:ngm:class:spacecraft-guidance-navigation-and-control
 relatedTo:
   - urn:ngm:class:spacecraft-guidance-navigation-and-control
 ---

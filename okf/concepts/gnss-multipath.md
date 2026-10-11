@@ -7,6 +7,8 @@ domain: space-science-and-systems
 description: GNSS multipath is the reception of reflected copies of a satellite signal alongside its direct path, which changes the composite waveform and can bias the receiver’s signal-tracking measurements.
 maturity: draft
 quality: 0
+is-a:
+  - urn:ngm:class:positioning-navigation-and-timing
 relatedTo:
   - urn:ngm:class:positioning-navigation-and-timing
 ---

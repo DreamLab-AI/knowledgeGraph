@@ -7,6 +7,8 @@ domain: earth-observation-and-geospatial-sensing
 description: Ice sheet monitoring is the repeated satellite observation of the Greenland and Antarctic ice sheets to track changes in their mass, extent and surface elevation.[^1][^2]
 maturity: draft
 quality: 0
+is-a:
+  - urn:ngm:class:earth-observation-applications
 relatedTo:
   - urn:ngm:class:earth-observation-applications
 ---

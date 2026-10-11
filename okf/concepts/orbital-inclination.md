@@ -7,6 +7,8 @@ domain: space-science-and-systems
 description: Orbital inclination is the angle between an orbital plane and a defined reference plane.
 maturity: draft
 quality: 0
+is-a:
+  - urn:ngm:class:orbital-dynamics
 relatedTo:
   - urn:ngm:class:orbital-dynamics
 ---

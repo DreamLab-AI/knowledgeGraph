@@ -7,6 +7,8 @@ domain: earth-observation-and-geospatial-sensing
 description: An Essential Climate Variable is a physical, chemical or biological variable, or a group of linked variables, that critically contributes to the characterisation of Earth's climate.[^1]
 maturity: draft
 quality: 0
+is-a:
+  - urn:ngm:class:earth-observation-data-quality
 relatedTo:
   - urn:ngm:class:earth-observation-data-quality
 ---

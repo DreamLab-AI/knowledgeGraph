@@ -7,6 +7,8 @@ domain: infrastructure
 description: Computer science is the systematic study of computation, algorithms, data structures, programming languages, and the principles underlying the design and analysis of computing systems. It encompasses both theoretical foundations — including computability theory, computational complexity, formal languages, and logic — and applied disciplines such as software engineering, artificial intelligence, da
 maturity: mature
 quality: 0.74
+is-a:
+  - urn:ngm:class:infra-software-engineering
 hasPart:
   - urn:ngm:class:data-structure
   - urn:ngm:class:operating-system

@@ -7,6 +7,8 @@ domain: earth-observation-and-geospatial-sensing
 description: Spatiotemporal interpolation estimates a quantity at unsampled places and times from nearby observations, with time treated as an explicit dimension alongside space.[^1][^2]
 maturity: draft
 quality: 0
+is-a:
+  - urn:ngm:class:earth-observation-processing
 relatedTo:
   - urn:ngm:class:earth-observation-processing
 ---

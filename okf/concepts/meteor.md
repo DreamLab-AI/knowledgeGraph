@@ -7,6 +7,8 @@ domain: space-science-and-systems
 description: A meteor is the visible streak of light produced when a meteoroid enters an atmosphere at high speed and burns up.[^1][^2]
 maturity: draft
 quality: 0
+is-a:
+  - urn:ngm:class:planetary-science
 relatedTo:
   - urn:ngm:class:planetary-science
 ---

@@ -7,6 +7,8 @@ domain: space-science-and-systems
 description: Space science is the study of the universe beyond Earth's surface, including the Sun, the planets and the wider cosmos, carried out largely through instruments on spacecraft.[^1][^2]
 maturity: draft
 quality: 0
+is-a:
+  - urn:ngm:class:space-science-and-systems
 partOf:
   - urn:ngm:class:space-science-and-systems
 ---

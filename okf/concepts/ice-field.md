@@ -7,6 +7,8 @@ domain: earth-observation-and-geospatial-sensing
 description: An ice field, written icefield by NSIDC, is a mass of glacier ice somewhat similar to an ice cap but usually smaller and lacking a dome-like shape.[^1] Compared to an ice cap, it is more strongly influenced by the underlying terrain.[^1]
 maturity: draft
 quality: 0
+is-a:
+  - urn:ngm:class:earth-system-phenomena
 relatedTo:
   - urn:ngm:class:earth-system-phenomena
 ---

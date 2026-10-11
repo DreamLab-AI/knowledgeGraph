@@ -7,6 +7,8 @@ domain: space-science-and-systems
 description: A planetary nebula is an expanding cloud of dust and gas formed when a dying star blows away its outer layers.[^1][^2]
 maturity: draft
 quality: 0
+is-a:
+  - urn:ngm:class:astronomy
 relatedTo:
   - urn:ngm:class:stellar-evolution
 ---

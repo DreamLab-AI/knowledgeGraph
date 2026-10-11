@@ -7,6 +7,8 @@ domain: space-science-and-systems
 description: A ground track is the path traced by a spacecraft’s subsatellite point on a specified Earth-fixed reference surface.
 maturity: draft
 quality: 0
+is-a:
+  - urn:ngm:class:orbital-dynamics
 relatedTo:
   - urn:ngm:class:orbital-dynamics
 ---

@@ -7,6 +7,8 @@ domain: space-science-and-systems
 description: Coordinated Universal Time is the time scale produced by the BIPM that runs at the same rate as International Atomic Time and differs from it only by a whole number of seconds, and that serves as the basis of civil time in most countries.[^1][^2]
 maturity: draft
 quality: 0
+is-a:
+  - urn:ngm:class:space-reference-systems
 relatedTo:
   - urn:ngm:class:space-reference-systems
 ---

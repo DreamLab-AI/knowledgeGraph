@@ -7,6 +7,8 @@ domain: earth-observation-and-geospatial-sensing
 description: Drought monitoring follows an evolving shortage of water and its effects across the hydrological cycle. Low rainfall may first appear as meteorological drought, then reduce soil moisture, river flow, groundwater recharge, reservoir storage or ecosystem function. Agricultural, environmental and water-supply drought can overlap, develop at different rates and recover at different times. No single sa
 maturity: draft
 quality: 0
+is-a:
+  - urn:ngm:class:earth-observation-applications
 relatedTo:
   - urn:ngm:class:earth-observation-applications
 ---

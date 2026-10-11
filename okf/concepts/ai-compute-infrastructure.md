@@ -9,6 +9,7 @@ maturity: draft
 quality: 0.35
 is-a:
   - urn:ngm:class:artificial-intelligence
+  - urn:ngm:class:cat-ai-infrastructure
 relatedTo:
   - urn:ngm:class:large-language-model
   - urn:ngm:class:transformer-architecture

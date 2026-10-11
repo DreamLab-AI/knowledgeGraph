@@ -7,6 +7,8 @@ domain: space-science-and-systems
 description: Bit error rate (BER) is the number of erroneous recovered bits divided by the total number of bits assessed at a specified point in a test or operating interval.
 maturity: draft
 quality: 0
+is-a:
+  - urn:ngm:class:spacecraft-communications
 relatedTo:
   - urn:ngm:class:satellite-communication
 ---

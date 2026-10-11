@@ -8,7 +8,7 @@ description: Data Management is the disciplined set of practices, architectures,
 maturity: mature
 quality: 0.72
 is-a:
-  - urn:ngm:class:infrastructure
+  - urn:ngm:class:infra-data-management
 hasPart:
   - urn:ngm:class:data-governance
   - urn:ngm:class:data-quality

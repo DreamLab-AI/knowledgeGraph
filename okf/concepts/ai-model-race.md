@@ -8,7 +8,7 @@ description: The competitive dynamic among AI developers and providers, characte
 maturity: draft
 quality: 0.35
 is-a:
-  - urn:ngm:class:ai-strategy
+  - urn:ngm:class:ai-application
 relatedTo:
   - urn:ngm:class:strategic-positioning
   - urn:ngm:class:inference-speed

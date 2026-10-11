@@ -7,6 +7,8 @@ domain: earth-observation-and-geospatial-sensing
 description: A magnetic pole is a place on Earth's surface where the geomagnetic field is vertical, so that a dip needle stands upright and the horizontal field intensity is zero.[^1][^2]
 maturity: draft
 quality: 0
+is-a:
+  - urn:ngm:class:geodesy
 relatedTo:
   - urn:ngm:class:geodesy
 ---

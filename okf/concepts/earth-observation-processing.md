@@ -7,6 +7,8 @@ domain: earth-observation-and-geospatial-sensing
 description: Earth observation processing is the staged conversion of raw instrument measurements into calibrated, derived and gridded data products, labelled by processing level.[^1][^2]
 maturity: draft
 quality: 0
+is-a:
+  - urn:ngm:class:earth-observation-and-geospatial-sensing
 relatedTo:
   - urn:ngm:class:earth-observation-data-product
 ---

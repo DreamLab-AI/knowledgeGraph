@@ -7,6 +7,8 @@ domain: earth-observation-and-geospatial-sensing
 description: Atmospheric composition monitoring measures or estimates the gases and particles in the atmosphere, their vertical distribution and their change through time. The observing system includes satellite radiances, ground and airborne instruments, emissions inventories and atmospheric models. These components do not measure the same quantity. Their combination can extend coverage and support forecasts,
 maturity: draft
 quality: 0
+is-a:
+  - urn:ngm:class:earth-observation-applications
 relatedTo:
   - urn:ngm:class:earth-observation-applications
 ---

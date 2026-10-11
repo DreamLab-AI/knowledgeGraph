@@ -7,6 +7,8 @@ domain: space-science-and-systems
 description: Redshift is the apparent shift toward longer wavelengths of light or spectral lines emitted by an object.[^1]
 maturity: draft
 quality: 0
+is-a:
+  - urn:ngm:class:astronomy
 relatedTo:
   - urn:ngm:class:astronomy
 ---

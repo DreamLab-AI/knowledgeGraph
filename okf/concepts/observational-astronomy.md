@@ -7,6 +7,8 @@ domain: space-science-and-systems
 description: Observational astronomy collects and interprets measured signals from astronomical sources. It spans imaging, spectroscopy, photometry, astrometry, polarimetry, timing and particle or gravitational-wave observations across ground-based and space-based facilities.
 maturity: draft
 quality: 0
+is-a:
+  - urn:ngm:class:astronomy
 relatedTo:
   - urn:ngm:class:astronomy
 ---

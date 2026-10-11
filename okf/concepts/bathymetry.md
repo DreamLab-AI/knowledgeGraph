@@ -7,6 +7,8 @@ domain: earth-observation-and-geospatial-sensing
 description: Bathymetry is the study of the beds or floors of water bodies, including oceans, rivers, streams and lakes.[^1][^2]
 maturity: draft
 quality: 0
+is-a:
+  - urn:ngm:class:geodesy
 relatedTo:
   - urn:ngm:class:geodesy
 ---

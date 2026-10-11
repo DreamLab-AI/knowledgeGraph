@@ -2,14 +2,14 @@
 okf_version: "0.2"
 type: Index
 title: NarrativeGoldmine Knowledge Bundle
-generation: visionGraph@dd1c8feb51039bfe6415a21304fb12d64898e56b
+generation: visionGraph@883a1e63599c4b68f496dd73b7b0ebd51cc37dcd
 vocabulary_version: 1
-concept_count: 9242
+concept_count: 9248
 ---
 
 # NarrativeGoldmine Knowledge Bundle
 
-9242 concepts, exported from generation `visionGraph@dd1c8feb51039bfe6415a21304fb12d64898e56b`.
+9248 concepts, exported from generation `visionGraph@883a1e63599c4b68f496dd73b7b0ebd51cc37dcd`.
 
 - [1Hive](concepts/1-hive.md) — `urn:ngm:class:1-hive`
 - [1inch](concepts/1-inch.md) — `urn:ngm:class:1-inch`
@@ -917,8 +917,10 @@ concept_count: 9242
 - [BC-0456-virtual-asset-service-providers](concepts/bc-0456-virtual-asset-service-providers.md) — `urn:ngm:class:bc-0456-virtual-asset-service-providers`
 - [BC-0480-kyc-requirements](concepts/bc-0480-kyc-requirements.md) — `urn:ngm:class:bc-0480-kyc-requirements`
 - [BC-0484-markets-in-crypto-assets](concepts/bc-0484-markets-in-crypto-assets.md) — `urn:ngm:class:bc-0484-markets-in-crypto-assets`
+- [Cryptographic Primitive (Blockchain)](concepts/bc-cryptographic-primitive.md) — `urn:ngm:class:bc-cryptographic-primitive`
 - [DeFi and Economics](concepts/bc-defi-and-economics.md) — `urn:ngm:class:bc-defi-and-economics`
 - [Governance and Regulation](concepts/bc-governance-and-regulation.md) — `urn:ngm:class:bc-governance-and-regulation`
+- [Network Component (Blockchain)](concepts/bc-network-component.md) — `urn:ngm:class:bc-network-component`
 - [Protocol and Consensus](concepts/bc-protocol-and-consensus.md) — `urn:ngm:class:bc-protocol-and-consensus`
 - [Token and Asset](concepts/bc-token-and-asset.md) — `urn:ngm:class:bc-token-and-asset`
 - [BDI Model](concepts/bdi-model.md) — `urn:ngm:class:bdi-model`
@@ -1280,6 +1282,7 @@ concept_count: 9242
 - [Cash App](concepts/cash-app.md) — `urn:ngm:class:cash-app`
 - [Cashu](concepts/cashu.md) — `urn:ngm:class:cashu`
 - [Casper Ffg](concepts/casper-ffg.md) — `urn:ngm:class:casper-ffg`
+- [AI Infrastructure (Artificial Intelligence)](concepts/cat-ai-infrastructure.md) — `urn:ngm:class:cat-ai-infrastructure`
 - [Catastrophic Risk Assessment](concepts/catastrophic-risk-assessment.md) — `urn:ngm:class:catastrophic-risk-assessment`
 - [Catastrophic Risk Reduction](concepts/catastrophic-risk-reduction.md) — `urn:ngm:class:catastrophic-risk-reduction`
 - [Category Hierarchies](concepts/category-hierarchies.md) — `urn:ngm:class:category-hierarchies`
@@ -2203,6 +2206,7 @@ concept_count: 9242
 - [Communication Technology](concepts/dc-communication.md) — `urn:ngm:class:dc-communication`
 - [Protocol and Infrastructure](concepts/dc-protocol-and-infra.md) — `urn:ngm:class:dc-protocol-and-infra`
 - [DC Servo Motor](concepts/dc-servo-motor.md) — `urn:ngm:class:dc-servo-motor`
+- [Telepresence (Distributed Collaboration)](concepts/dc-telepresence.md) — `urn:ngm:class:dc-telepresence`
 - [Workspace Tools](concepts/dc-workspace-tools.md) — `urn:ngm:class:dc-workspace-tools`
 - [DDoS Mitigation](concepts/ddos-mitigation.md) — `urn:ngm:class:ddos-mitigation`
 - [DDS](concepts/dds.md) — `urn:ngm:class:dds`
@@ -4191,9 +4195,11 @@ concept_count: 9242
 - [Informed decision-making](concepts/informed-decision-making.md) — `urn:ngm:class:informed-decision-making`
 - [Informed Search](concepts/informed-search.md) — `urn:ngm:class:informed-search`
 - [Computing and Cloud](concepts/infra-computing-and-cloud.md) — `urn:ngm:class:infra-computing-and-cloud`
+- [Data Management (Infrastructure)](concepts/infra-data-management.md) — `urn:ngm:class:infra-data-management`
 - [Legal and Regulatory](concepts/infra-legal-and-regulatory.md) — `urn:ngm:class:infra-legal-and-regulatory`
 - [Network and Communication](concepts/infra-network-and-comms.md) — `urn:ngm:class:infra-network-and-comms`
 - [Security and Identity](concepts/infra-security-and-identity.md) — `urn:ngm:class:infra-security-and-identity`
+- [Software Engineering (Infrastructure)](concepts/infra-software-engineering.md) — `urn:ngm:class:infra-software-engineering`
 - [Infrared Astronomy](concepts/infrared-astronomy.md) — `urn:ngm:class:infrared-astronomy`
 - [Infrared Camera](concepts/infrared-camera.md) — `urn:ngm:class:infrared-camera`
 - [Infrared Illuminator](concepts/infrared-illuminator.md) — `urn:ngm:class:infrared-illuminator`

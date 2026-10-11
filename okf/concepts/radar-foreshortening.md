@@ -7,6 +7,8 @@ domain: earth-observation-and-geospatial-sensing
 description: Radar foreshortening is the compression of slopes that face a side-looking radar, which occurs because the beam reaches the base of a tall tilted feature before it reaches the top.[^1]
 maturity: draft
 quality: 0
+is-a:
+  - urn:ngm:class:earth-observation-data-quality
 relatedTo:
   - urn:ngm:class:incidence-angle
   - urn:ngm:class:quality-mask

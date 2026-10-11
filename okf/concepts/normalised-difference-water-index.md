@@ -7,6 +7,8 @@ domain: earth-observation-and-geospatial-sensing
 description: The Normalised Difference Water Index names two different normalised-difference indices, and this page bounds the open-water form built from green and near-infrared reflectance.[^1][^2]
 maturity: draft
 quality: 0
+is-a:
+  - urn:ngm:class:earth-observation-processing
 relatedTo:
   - urn:ngm:class:earth-observation-processing
 ---

@@ -7,6 +7,8 @@ domain: space-science-and-systems
 description: Planetary geology is the study of the surfaces and rocky structure of planets, moons and other solid bodies and the processes that shaped them.[^1][^2]
 maturity: draft
 quality: 0
+is-a:
+  - urn:ngm:class:planetary-science
 relatedTo:
   - urn:ngm:class:planetary-science
 ---

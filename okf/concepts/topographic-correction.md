@@ -7,6 +7,8 @@ domain: earth-observation-and-geospatial-sensing
 description: Topographic correction adjusts reflectance for the effect of terrain on illumination, usually with a digital elevation model, so that the product approximates what a flat surface would have returned.[^1][^2]
 maturity: draft
 quality: 0
+is-a:
+  - urn:ngm:class:earth-observation-processing
 relatedTo:
   - urn:ngm:class:earth-observation-processing
 ---

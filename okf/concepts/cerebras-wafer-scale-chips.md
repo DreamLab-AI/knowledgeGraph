@@ -8,7 +8,7 @@ description: A specialized AI hardware architecture developed by Cerebras that i
 maturity: draft
 quality: 0.35
 is-a:
-  - urn:ngm:class:ai-hardware-infrastructure
+  - urn:ngm:class:cat-ai-infrastructure
 relatedTo:
   - urn:ngm:class:gpt-53-codex-spark
   - urn:ngm:class:ai-hardware-infrastructure

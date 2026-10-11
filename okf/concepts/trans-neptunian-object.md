@@ -7,6 +7,8 @@ domain: space-science-and-systems
 description: A trans-Neptunian object is a minor planet whose orbit has a semimajor axis beyond the orbit of Neptune, in the wording of the Minor Planet Center.[^1]
 maturity: draft
 quality: 0
+is-a:
+  - urn:ngm:class:planetary-science
 relatedTo:
   - urn:ngm:class:planetary-science
 ---

@@ -7,6 +7,8 @@ domain: space-science-and-systems
 description: Total ionising dose is the cumulative long-term damage to electronics caused by solar and trapped protons and trapped electrons.[^1]
 maturity: draft
 quality: 0
+is-a:
+  - urn:ngm:class:spacecraft-bus
 relatedTo:
   - urn:ngm:class:space-systems-engineering
 ---

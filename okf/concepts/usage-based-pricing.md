@@ -8,7 +8,7 @@ description: A pricing strategy where customers are charged based on the actual 
 maturity: draft
 quality: 0.35
 is-a:
-  - urn:ngm:class:saas-business-model
+  - urn:ngm:class:bc-defi-and-economics
 relatedTo:
   - urn:ngm:class:ai-business-model
   - urn:ngm:class:inference

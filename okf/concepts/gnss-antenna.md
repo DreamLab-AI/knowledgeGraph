@@ -7,6 +7,8 @@ domain: space-science-and-systems
 description: A GNSS antenna receives navigation signals from satellites and couples them into the receiver's radio-frequency path.
 maturity: draft
 quality: 0
+is-a:
+  - urn:ngm:class:positioning-navigation-and-timing
 relatedTo:
   - urn:ngm:class:positioning-navigation-and-timing
 ---

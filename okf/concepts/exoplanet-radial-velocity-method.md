@@ -7,6 +7,8 @@ domain: space-science-and-systems
 description: This method detects a planet indirectly by measuring changes in the line-of-sight velocity of its host star.[^1]
 maturity: draft
 quality: 0
+is-a:
+  - urn:ngm:class:astronomy
 relatedTo:
   - urn:ngm:class:exoplanet
   - urn:ngm:class:observational-astronomy

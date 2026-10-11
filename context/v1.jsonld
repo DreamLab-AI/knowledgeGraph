@@ -8,6 +8,10 @@
     "xsd": "http://www.w3.org/2001/XMLSchema#",
     "prov": "http://www.w3.org/ns/prov#",
     "skos": "http://www.w3.org/2004/02/skos/core#",
+    "instanceOf": {
+      "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+      "@type": "@id"
+    },
     "isA": {
       "@id": "http://www.w3.org/2000/01/rdf-schema#subClassOf",
       "@type": "@id"
@@ -66,6 +70,10 @@
     },
     "disjointWith": {
       "@id": "http://www.w3.org/2002/07/owl#disjointWith",
+      "@type": "@id"
+    },
+    "definesAs": {
+      "@id": "http://www.w3.org/2002/07/owl#equivalentClass",
       "@type": "@id"
     },
     "sameAs": {

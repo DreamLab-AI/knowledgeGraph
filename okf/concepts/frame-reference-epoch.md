@@ -7,6 +7,8 @@ domain: earth-observation-and-geospatial-sensing
 description: Frame reference epoch is the epoch of coordinates that define a dynamic reference frame.[^1]
 maturity: draft
 quality: 0
+is-a:
+  - urn:ngm:class:geodesy
 relatedTo:
   - urn:ngm:class:coordinate-epoch
   - urn:ngm:class:geodetic-reference-frame

@@ -7,6 +7,8 @@ domain: space-science-and-systems
 description: Heliosphere refers to the bubble around the Sun and its planets created by the solar wind and bounded where the interstellar medium impedes it.[^1]
 maturity: draft
 quality: 0
+is-a:
+  - urn:ngm:class:heliophysics
 relatedTo:
   - urn:ngm:class:heliophysics
 ---

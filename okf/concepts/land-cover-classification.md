@@ -7,6 +7,8 @@ domain: earth-observation-and-geospatial-sensing
 description: Land cover classification is the assignment of each pixel or area of an image to a class describing the observed physical cover of the earth's surface, which yields a thematic map [^1][^2].
 maturity: draft
 quality: 0
+is-a:
+  - urn:ngm:class:earth-observation-processing
 bridgesTo:
   - urn:ngm:class:computer-vision
 relatedTo:

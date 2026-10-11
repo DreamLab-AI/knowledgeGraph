@@ -7,6 +7,8 @@ domain: space-science-and-systems
 description: Molecular clouds are large, cold clouds of gas and dust in which stars form.[^1][^2]
 maturity: draft
 quality: 0
+is-a:
+  - urn:ngm:class:astronomy
 relatedTo:
   - urn:ngm:class:stellar-evolution
 ---

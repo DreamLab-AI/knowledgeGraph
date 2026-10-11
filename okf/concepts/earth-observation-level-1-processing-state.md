@@ -7,6 +7,8 @@ domain: earth-observation-and-geospatial-sensing
 description: Earth observation Level 1 is the processing state in which raw instrument data have been reconstructed and annotated or converted towards instrument or physical units, ahead of derived geophysical variables.[^1]
 maturity: draft
 quality: 0
+is-a:
+  - urn:ngm:class:earth-observation-processing
 relatedTo:
   - urn:ngm:class:earth-observation-processing
 ---

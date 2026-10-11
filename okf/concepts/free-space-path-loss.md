@@ -7,6 +7,8 @@ domain: space-science-and-systems
 description: Free-space path loss is the ideal propagation loss between isotropic antennas in a perfect free-space reference environment.
 maturity: draft
 quality: 0
+is-a:
+  - urn:ngm:class:spacecraft-communications
 relatedTo:
   - urn:ngm:class:satellite-communication
 ---

@@ -7,6 +7,8 @@ domain: earth-observation-and-geospatial-sensing
 description: An angular coordinate is a coordinate that gives position by an angle, such as longitude or latitude, rather than by a distance along an axis.[^1][^2]
 maturity: draft
 quality: 0
+is-a:
+  - urn:ngm:class:geodesy
 relatedTo:
   - urn:ngm:class:geodesy
 ---

@@ -7,6 +7,8 @@ domain: space-science-and-systems
 description: Effective isotropic radiated power (EIRP) is the power supplied to an antenna multiplied by its gain relative to an isotropic antenna in a specified direction.
 maturity: draft
 quality: 0
+is-a:
+  - urn:ngm:class:spacecraft-communications
 relatedTo:
   - urn:ngm:class:satellite-communication
 ---

@@ -7,6 +7,8 @@ domain: space-science-and-systems
 description: A circular orbit is a bound orbit with constant radius and zero eccentricity in the ideal two-body model.
 maturity: draft
 quality: 0
+is-a:
+  - urn:ngm:class:orbital-dynamics
 relatedTo:
   - urn:ngm:class:orbital-dynamics
 ---

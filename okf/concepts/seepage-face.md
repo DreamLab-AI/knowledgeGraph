@@ -7,6 +7,8 @@ domain: earth-observation-and-geospatial-sensing
 description: A seepage face is the part of a sloping boundary where groundwater leaves the saturated zone at atmospheric pressure and discharges to the surface.[^1][^2] A hydrology paper describes a slope segment where groundwater discharges from the aquifer and flows overland and downslope toward a downstream water body, and a Wageningen University text defines a seepage surface as the boundary where water le
 maturity: draft
 quality: 0
+is-a:
+  - urn:ngm:class:earth-system-phenomena
 relatedTo:
   - urn:ngm:class:earth-system-phenomena
 ---

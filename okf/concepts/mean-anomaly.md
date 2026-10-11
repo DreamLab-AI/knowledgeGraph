@@ -7,6 +7,8 @@ domain: space-science-and-systems
 description: Mean anomaly is a time-like orbital phase that advances uniformly on an ideal fixed Keplerian ellipse.
 maturity: draft
 quality: 0
+is-a:
+  - urn:ngm:class:orbital-dynamics
 relatedTo:
   - urn:ngm:class:orbital-dynamics
 ---

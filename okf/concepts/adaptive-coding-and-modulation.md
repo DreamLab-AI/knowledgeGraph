@@ -7,6 +7,8 @@ domain: space-science-and-systems
 description: Adaptive coding and modulation (ACM) selects among supported coding and modulation modes in response to information about channel conditions.
 maturity: draft
 quality: 0
+is-a:
+  - urn:ngm:class:spacecraft-communications
 relatedTo:
   - urn:ngm:class:satellite-communication
 ---

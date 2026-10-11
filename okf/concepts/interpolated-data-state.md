@@ -7,6 +7,8 @@ domain: earth-observation-and-geospatial-sensing
 description: An interpolated data state is the SWEET data-processing state of data that have been through an interpolation process.[^1]
 maturity: draft
 quality: 0
+is-a:
+  - urn:ngm:class:earth-observation-processing
 relatedTo:
   - urn:ngm:class:earth-observation-processing
 ---

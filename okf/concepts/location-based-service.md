@@ -7,6 +7,8 @@ domain: earth-observation-and-geospatial-sensing
 description: A location based service is a wireless-IP service that uses geographic information to serve a mobile user, or any application service that exploits the position of a mobile terminal [^1].
 maturity: draft
 quality: 0
+is-a:
+  - urn:ngm:class:earth-observation-processing
 relatedTo:
   - urn:ngm:class:earth-observation-processing
 ---

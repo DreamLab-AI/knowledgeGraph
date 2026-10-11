@@ -7,6 +7,8 @@ domain: space-science-and-systems
 description: A sunspot is a cooler, darker region on the Sun's photosphere associated with a concentration of magnetic field lines.[^1][^2]
 maturity: draft
 quality: 0
+is-a:
+  - urn:ngm:class:heliophysics
 relatedTo:
   - urn:ngm:class:heliophysics
 ---

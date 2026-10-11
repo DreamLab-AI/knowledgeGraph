@@ -7,6 +7,8 @@ domain: space-science-and-systems
 description: GNSS broadcast ephemeris is satellite-specific orbit information used to compute that satellite's position at a stated time.
 maturity: draft
 quality: 0
+is-a:
+  - urn:ngm:class:positioning-navigation-and-timing
 relatedTo:
   - urn:ngm:class:positioning-navigation-and-timing
 ---

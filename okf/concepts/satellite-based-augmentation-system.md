@@ -7,6 +7,8 @@ domain: space-science-and-systems
 description: A satellite-based augmentation system, or SBAS, is a regional overlay that improves an underlying GNSS. Reference stations at surveyed locations observe satellite, clock and propagation errors; processing centres calculate corrections and integrity information; geostationary satellites then broadcast the messages to compatible receivers.[^1]
 maturity: draft
 quality: 0
+is-a:
+  - urn:ngm:class:positioning-navigation-and-timing
 relatedTo:
   - urn:ngm:class:gnss-augmentation
   - urn:ngm:class:positioning-navigation-and-timing

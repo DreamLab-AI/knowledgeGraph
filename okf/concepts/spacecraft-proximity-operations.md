@@ -7,6 +7,8 @@ domain: space-science-and-systems
 description: Spacecraft proximity operations are controlled relative motions close enough to another object that navigation, control or propulsion errors can create a collision, plume or contact hazard.
 maturity: draft
 quality: 0
+is-a:
+  - urn:ngm:class:spacecraft-guidance-navigation-and-control
 relatedTo:
   - urn:ngm:class:collision-avoidance
   - urn:ngm:class:formation-flying

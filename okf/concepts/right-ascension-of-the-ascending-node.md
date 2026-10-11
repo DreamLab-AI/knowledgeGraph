@@ -7,6 +7,8 @@ domain: space-science-and-systems
 description: Right ascension of the ascending node locates an orbital plane around a reference plane's positive axis.
 maturity: draft
 quality: 0
+is-a:
+  - urn:ngm:class:orbital-dynamics
 relatedTo:
   - urn:ngm:class:orbital-dynamics
 ---

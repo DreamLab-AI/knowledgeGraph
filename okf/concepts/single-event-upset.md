@@ -7,6 +7,8 @@ domain: space-science-and-systems
 description: A single event upset is a non-destructive single event effect, a disturbance to circuit operation caused by a single ion passing through or near a sensitive node.[^1]
 maturity: draft
 quality: 0
+is-a:
+  - urn:ngm:class:spacecraft-bus
 relatedTo:
   - urn:ngm:class:space-systems-engineering
 ---

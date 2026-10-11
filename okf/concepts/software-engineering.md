@@ -9,7 +9,7 @@ maturity: mature
 quality: 0.72
 is-a:
   - urn:ngm:class:computer-science
-  - urn:ngm:class:infrastructure
+  - urn:ngm:class:infra-software-engineering
 hasPart:
   - urn:ngm:class:software-architecture
   - urn:ngm:class:software-testing

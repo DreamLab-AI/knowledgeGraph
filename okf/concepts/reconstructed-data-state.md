@@ -7,6 +7,8 @@ domain: earth-observation-and-geospatial-sensing
 description: Reconstructed data state is the SWEET data-processing state of data that have had some reconstruction process in their history.[^1]
 maturity: draft
 quality: 0
+is-a:
+  - urn:ngm:class:earth-observation-processing
 relatedTo:
   - urn:ngm:class:earth-observation-processing
 ---

@@ -7,6 +7,8 @@ domain: space-science-and-systems
 description: Radiation dosimetry is the measurement of exposure to ionising radiation in terms of defined quantities and units, such as the absorbed dose and dose equivalent reported for space missions.[^1][^2]
 maturity: draft
 quality: 0
+is-a:
+  - urn:ngm:class:space-life-sciences
 relatedTo:
   - urn:ngm:class:space-life-sciences
 ---

@@ -7,6 +7,8 @@ domain: space-science-and-systems
 description: Interplanetary magnetic field refers to the solar magnetic field carried outward through interplanetary space by the solar wind.[^1][^2]
 maturity: draft
 quality: 0
+is-a:
+  - urn:ngm:class:heliophysics
 relatedTo:
   - urn:ngm:class:heliophysics
 ---

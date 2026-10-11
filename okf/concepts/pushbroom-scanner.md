@@ -7,6 +7,8 @@ domain: earth-observation-and-geospatial-sensing
 description: A pushbroom scanner is an along-track multispectral scanner in which the motion of a detector array builds up an image as the platform moves forward.[^1]
 maturity: draft
 quality: 0
+is-a:
+  - urn:ngm:class:earth-observation-sensor
 relatedTo:
   - urn:ngm:class:earth-observation
 ---

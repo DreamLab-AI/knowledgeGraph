@@ -7,6 +7,8 @@ domain: earth-observation-and-geospatial-sensing
 description: Sampling bias is a systematic error that arises when the observations or samples used to describe a quantity do not represent the whole population of conditions, places or times.[^1][^2]
 maturity: draft
 quality: 0
+is-a:
+  - urn:ngm:class:earth-observation-data-quality
 relatedTo:
   - urn:ngm:class:earth-observation-data-quality
 ---

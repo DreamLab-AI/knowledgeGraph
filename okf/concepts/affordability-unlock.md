@@ -8,7 +8,7 @@ description: An economic mechanism wherein AI-driven cost reductions lower servi
 maturity: draft
 quality: 0.35
 is-a:
-  - urn:ngm:class:economic-impact-of-ai
+  - urn:ngm:class:bc-defi-and-economics
 relatedTo:
   - urn:ngm:class:long-tail-market
   - urn:ngm:class:cost-reduction

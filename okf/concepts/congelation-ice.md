@@ -7,6 +7,8 @@ domain: earth-observation-and-geospatial-sensing
 description: Congelation ice is sea ice that grows on the underside of an existing ice sheet, producing columnar crystals as it thickens downwards.[^1][^2]
 maturity: draft
 quality: 0
+is-a:
+  - urn:ngm:class:earth-system-phenomena
 relatedTo:
   - urn:ngm:class:earth-system-phenomena
 ---

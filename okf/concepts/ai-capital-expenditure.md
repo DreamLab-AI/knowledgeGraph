@@ -9,6 +9,7 @@ maturity: draft
 quality: 0.35
 is-a:
   - urn:ngm:class:artificial-intelligence
+  - urn:ngm:class:bc-defi-and-economics
 relatedTo:
   - urn:ngm:class:computational-infrastructure
   - urn:ngm:class:data-storage

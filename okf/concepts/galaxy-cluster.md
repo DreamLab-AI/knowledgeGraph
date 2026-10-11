@@ -7,6 +7,8 @@ domain: space-science-and-systems
 description: A galaxy cluster is a gravitationally bound structure of many galaxies, and NASA says clusters may contain thousands of galaxies.[^1]
 maturity: draft
 quality: 0
+is-a:
+  - urn:ngm:class:astronomy
 relatedTo:
   - urn:ngm:class:extragalactic-astronomy
 ---

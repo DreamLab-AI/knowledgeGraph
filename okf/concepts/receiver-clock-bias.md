@@ -7,6 +7,8 @@ domain: space-science-and-systems
 description: Receiver clock bias is the receiver’s estimated offset from the GNSS time scale, represented either as a time offset or as the equivalent range term in a measurement model.[^1][^2]
 maturity: draft
 quality: 0
+is-a:
+  - urn:ngm:class:positioning-navigation-and-timing
 relatedTo:
   - urn:ngm:class:positioning-navigation-and-timing
 ---

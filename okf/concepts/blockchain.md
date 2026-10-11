@@ -9,9 +9,6 @@ maturity: established
 quality: 0.5
 is-a:
   - urn:ngm:class:thing
-  - urn:ngm:class:distributed-data-structure
-  - urn:ngm:class:distributed-ledger
-  - urn:ngm:class:cryptographic-system
 hasPart:
   - urn:ngm:class:block
   - urn:ngm:class:consensus-mechanism
@@ -19,6 +16,7 @@ hasPart:
   - urn:ngm:class:node
   - urn:ngm:class:smart-contract
   - urn:ngm:class:transaction
+  - urn:ngm:class:distributed-ledger
 requires:
   - urn:ngm:class:cryptographic-hash-function
   - urn:ngm:class:distributed-consensus

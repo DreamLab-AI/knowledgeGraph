@@ -7,6 +7,8 @@ domain: space-science-and-systems
 description: A planetary magnetosphere is the region of space influenced by a planet’s magnetic field, as NASA describes it for Jupiter.[^1]
 maturity: draft
 quality: 0
+is-a:
+  - urn:ngm:class:planetary-science
 relatedTo:
   - urn:ngm:class:planetary-science
 ---

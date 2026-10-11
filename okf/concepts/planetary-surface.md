@@ -7,6 +7,8 @@ domain: space-science-and-systems
 description: A planetary surface is the solid outer boundary of a rocky world, and the sources opened here describe what shapes it on particular bodies.[^1][^2][^3]
 maturity: draft
 quality: 0
+is-a:
+  - urn:ngm:class:planetary-science
 relatedTo:
   - urn:ngm:class:planetary-science
 ---

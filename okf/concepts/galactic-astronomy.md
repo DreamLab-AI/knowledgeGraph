@@ -7,6 +7,8 @@ domain: space-science-and-systems
 description: Galactic astronomy is the study of the structure and contents of the Milky Way, the home galaxy of the Sun.[^1][^2]
 maturity: draft
 quality: 0
+is-a:
+  - urn:ngm:class:astronomy
 relatedTo:
   - urn:ngm:class:astronomy
 ---

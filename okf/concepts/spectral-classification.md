@@ -7,6 +7,8 @@ domain: space-science-and-systems
 description: Spectral classification sorts stars into classes by the pattern of absorption lines in their spectra, and the classes measure surface temperature.[^1]
 maturity: draft
 quality: 0
+is-a:
+  - urn:ngm:class:astronomy
 relatedTo:
   - urn:ngm:class:astronomy
 ---

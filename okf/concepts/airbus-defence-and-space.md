@@ -7,6 +7,8 @@ domain: space-science-and-systems
 description: Airbus Defence and Space is the Airbus space business, providing spacecraft and electronic systems for orbital missions.[^1][^2]
 maturity: draft
 quality: 0
+is-a:
+  - urn:ngm:class:space-prime
 relatedTo:
   - urn:ngm:class:space-prime
   - urn:ngm:class:space-systems-integrator

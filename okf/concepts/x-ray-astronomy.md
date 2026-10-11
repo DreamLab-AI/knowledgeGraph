@@ -7,6 +7,8 @@ domain: space-science-and-systems
 description: X-ray astronomy is the study of astronomical sources through their X-ray emission, which comes from very hot regions of the Universe.[^1][^2]
 maturity: draft
 quality: 0
+is-a:
+  - urn:ngm:class:astronomy
 relatedTo:
   - urn:ngm:class:astronomy
 ---

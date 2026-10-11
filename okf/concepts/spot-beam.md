@@ -7,6 +7,8 @@ domain: space-science-and-systems
 description: A spot beam is a relatively focused satellite antenna beam that illuminates a smaller surface region than a broader coverage beam in the same system.
 maturity: draft
 quality: 0
+is-a:
+  - urn:ngm:class:spacecraft-communications
 relatedTo:
   - urn:ngm:class:satellite-communication
 ---

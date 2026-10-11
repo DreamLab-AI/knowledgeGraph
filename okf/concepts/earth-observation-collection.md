@@ -7,6 +7,8 @@ domain: earth-observation-and-geospatial-sensing
 description: An Earth observation collection is a set of data items that share the same properties and higher-level metadata, typically coming from one sensor or constellation.[^1]
 maturity: draft
 quality: 0
+is-a:
+  - urn:ngm:class:earth-observation-data-quality
 relatedTo:
   - urn:ngm:class:earth-observation-data-quality
   - urn:ngm:class:earth-observation-processing

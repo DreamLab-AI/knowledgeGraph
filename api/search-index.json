@@ -1487,7 +1487,8 @@
       "AGI"
     ],
     "is_subclass_of": [
-      "Artificial Intelligence"
+      "Artificial Intelligence",
+      "AI Research Area"
     ],
     "wikilinks": []
   },
@@ -1618,7 +1619,8 @@
       "AI Adoption Rates"
     ],
     "is_subclass_of": [
-      "Artificial Intelligence"
+      "Artificial Intelligence",
+      "AI Research Area"
     ],
     "wikilinks": []
   },
@@ -2231,7 +2233,8 @@
       "AI Benchmarking"
     ],
     "is_subclass_of": [
-      "Artificial Intelligence"
+      "Artificial Intelligence",
+      "AI Research Area"
     ],
     "wikilinks": []
   },
@@ -2289,7 +2292,8 @@
       "AI Bubble Dynamics"
     ],
     "is_subclass_of": [
-      "Artificial Intelligence"
+      "Artificial Intelligence",
+      "DeFi and Economics"
     ],
     "wikilinks": []
   },
@@ -2343,7 +2347,8 @@
       "AI Business Model"
     ],
     "is_subclass_of": [
-      "Artificial Intelligence"
+      "Artificial Intelligence",
+      "DeFi and Economics"
     ],
     "wikilinks": []
   },
@@ -2470,7 +2475,8 @@
       "AI Capital Expenditure"
     ],
     "is_subclass_of": [
-      "Artificial Intelligence"
+      "Artificial Intelligence",
+      "DeFi and Economics"
     ],
     "wikilinks": []
   },
@@ -2698,7 +2704,8 @@
       "AI Compute Infrastructure"
     ],
     "is_subclass_of": [
-      "Artificial Intelligence"
+      "Artificial Intelligence",
+      "AI Infrastructure (category)"
     ],
     "wikilinks": []
   },
@@ -2716,7 +2723,8 @@
       "AI Compute Strategy"
     ],
     "is_subclass_of": [
-      "Artificial Intelligence"
+      "Artificial Intelligence",
+      "DeFi and Economics"
     ],
     "wikilinks": []
   },
@@ -2813,7 +2821,8 @@
       "AI Cybersecurity"
     ],
     "is_subclass_of": [
-      "Artificial Intelligence"
+      "Artificial Intelligence",
+      "AI Governance and Ethics"
     ],
     "wikilinks": []
   },
@@ -2849,7 +2858,8 @@
       "AI Data Center Infrastructure"
     ],
     "is_subclass_of": [
-      "Infrastructure"
+      "Infrastructure",
+      "AI Infrastructure (category)"
     ],
     "wikilinks": []
   },
@@ -2903,7 +2913,7 @@
       "AI Demand Elasticity Framework"
     ],
     "is_subclass_of": [
-      "Economic Impact of AI"
+      "DeFi and Economics"
     ],
     "wikilinks": []
   },
@@ -2960,7 +2970,8 @@
       "AI Detection"
     ],
     "is_subclass_of": [
-      "Artificial Intelligence"
+      "Artificial Intelligence",
+      "AI Research Area"
     ],
     "wikilinks": []
   },
@@ -3881,7 +3892,8 @@
       "AI IPO"
     ],
     "is_subclass_of": [
-      "Artificial Intelligence"
+      "Artificial Intelligence",
+      "DeFi and Economics"
     ],
     "wikilinks": []
   },
@@ -4018,7 +4030,7 @@
       "AI Inference Cost Management"
     ],
     "is_subclass_of": [
-      "Enterprise Budgeting"
+      "DeFi and Economics"
     ],
     "wikilinks": []
   },
@@ -4153,7 +4165,8 @@
       "AI Infrastructure Economics"
     ],
     "is_subclass_of": [
-      "Artificial Intelligence"
+      "Artificial Intelligence",
+      "DeFi and Economics"
     ],
     "wikilinks": []
   },
@@ -4223,13 +4236,11 @@
     "iri": "urn:ngm:class:ai-infrastructure",
     "labels": [
       "AI Infrastructure",
-      "AI Infrastructure (Artificial Intelligence)",
-      "AI Infrastructure Providers",
-      "cat-ai-infrastructure"
+      "AI Infrastructure Providers"
     ],
     "is_subclass_of": [
       "Digital Infrastructure",
-      "Artificial Intelligence"
+      "AI Infrastructure (category)"
     ],
     "wikilinks": [
       "Artificial Intelligence",
@@ -4293,7 +4304,8 @@
       "AI Job Creation"
     ],
     "is_subclass_of": [
-      "Artificial Intelligence"
+      "Artificial Intelligence",
+      "DeFi and Economics"
     ],
     "wikilinks": []
   },
@@ -4311,7 +4323,8 @@
       "AI Job Displacement"
     ],
     "is_subclass_of": [
-      "Artificial Intelligence"
+      "Artificial Intelligence",
+      "DeFi and Economics"
     ],
     "wikilinks": []
   },
@@ -4347,7 +4360,8 @@
       "AI Labor Market Impact"
     ],
     "is_subclass_of": [
-      "Artificial Intelligence"
+      "Artificial Intelligence",
+      "DeFi and Economics"
     ],
     "wikilinks": []
   },
@@ -4569,7 +4583,8 @@
       "AI Market Impact"
     ],
     "is_subclass_of": [
-      "Artificial Intelligence"
+      "Artificial Intelligence",
+      "DeFi and Economics"
     ],
     "wikilinks": []
   },
@@ -4647,7 +4662,8 @@
       "AI Model Benchmarking"
     ],
     "is_subclass_of": [
-      "Artificial Intelligence"
+      "Artificial Intelligence",
+      "AI Research Area"
     ],
     "wikilinks": []
   },
@@ -4665,7 +4681,8 @@
       "AI Model Competition"
     ],
     "is_subclass_of": [
-      "Artificial Intelligence"
+      "Artificial Intelligence",
+      "AI Research Area"
     ],
     "wikilinks": []
   },
@@ -4783,7 +4800,7 @@
       "AI Model Race"
     ],
     "is_subclass_of": [
-      "AI Strategy"
+      "AI Application"
     ],
     "wikilinks": []
   },
@@ -5095,7 +5112,8 @@
       "AI Product Strategy"
     ],
     "is_subclass_of": [
-      "Artificial Intelligence"
+      "Artificial Intelligence",
+      "DeFi and Economics"
     ],
     "wikilinks": []
   },
@@ -5261,7 +5279,8 @@
       "AI ROI Measurement"
     ],
     "is_subclass_of": [
-      "Artificial Intelligence"
+      "Artificial Intelligence",
+      "DeFi and Economics"
     ],
     "wikilinks": []
   },
@@ -5407,7 +5426,8 @@
       "AI Research"
     ],
     "is_subclass_of": [
-      "Artificial Intelligence"
+      "Artificial Intelligence",
+      "AI Research Area"
     ],
     "wikilinks": [
       "Artificial Intelligence",
@@ -6037,7 +6057,8 @@
       "AI Speciation"
     ],
     "is_subclass_of": [
-      "Artificial Intelligence"
+      "Artificial Intelligence",
+      "AI Research Area"
     ],
     "wikilinks": []
   },
@@ -6055,7 +6076,8 @@
       "AI Stock Market"
     ],
     "is_subclass_of": [
-      "Artificial Intelligence"
+      "Artificial Intelligence",
+      "DeFi and Economics"
     ],
     "wikilinks": []
   },
@@ -6785,7 +6807,8 @@
       "AI Workforce Impact"
     ],
     "is_subclass_of": [
-      "Artificial Intelligence"
+      "Artificial Intelligence",
+      "DeFi and Economics"
     ],
     "wikilinks": []
   },
@@ -6891,7 +6914,8 @@
       "AI in Healthcare"
     ],
     "is_subclass_of": [
-      "Artificial Intelligence"
+      "Artificial Intelligence",
+      "AI Research Area"
     ],
     "wikilinks": []
   },
@@ -7018,7 +7042,7 @@
       "AI-Augmented Service Ecosystems"
     ],
     "is_subclass_of": [
-      "Economic Impact of AI"
+      "DeFi and Economics"
     ],
     "wikilinks": []
   },
@@ -7060,7 +7084,8 @@
       "AI-Augmented Workflows"
     ],
     "is_subclass_of": [
-      "Artificial Intelligence"
+      "Artificial Intelligence",
+      "AI Governance and Ethics"
     ],
     "wikilinks": []
   },
@@ -7078,7 +7103,8 @@
       "AI-Driven Efficiency"
     ],
     "is_subclass_of": [
-      "Artificial Intelligence"
+      "Artificial Intelligence",
+      "DeFi and Economics"
     ],
     "wikilinks": []
   },
@@ -7096,7 +7122,8 @@
       "AI-Driven Enterprise"
     ],
     "is_subclass_of": [
-      "Artificial Intelligence"
+      "Artificial Intelligence",
+      "AI Research Area"
     ],
     "wikilinks": []
   },
@@ -8217,7 +8244,9 @@
     "labels": [
       "Ablation Zone"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth System Phenomena"
+    ],
     "wikilinks": []
   },
   {
@@ -8233,7 +8262,9 @@
     "labels": [
       "Absolute Magnitude"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Astronomy"
+    ],
     "wikilinks": []
   },
   {
@@ -9142,7 +9173,9 @@
     "labels": [
       "Accretion Disc"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Astronomy"
+    ],
     "wikilinks": []
   },
   {
@@ -9158,7 +9191,9 @@
     "labels": [
       "Accumulation Zone"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth System Phenomena"
+    ],
     "wikilinks": []
   },
   {
@@ -9497,7 +9532,9 @@
     "labels": [
       "Active Galactic Nucleus"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Astronomy"
+    ],
     "wikilinks": []
   },
   {
@@ -9969,7 +10006,9 @@
     "labels": [
       "Adaptive Coding and Modulation"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Spacecraft Communications"
+    ],
     "wikilinks": []
   },
   {
@@ -10746,7 +10785,9 @@
     "labels": [
       "Aerosol Optical Depth Retrieval"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth Observation Applications"
+    ],
     "wikilinks": []
   },
   {
@@ -10865,7 +10906,7 @@
       "Affordability Unlock"
     ],
     "is_subclass_of": [
-      "Economic Impact of AI"
+      "DeFi and Economics"
     ],
     "wikilinks": []
   },
@@ -12619,7 +12660,9 @@
     "labels": [
       "Air Quality Monitoring"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth Observation Applications"
+    ],
     "wikilinks": []
   },
   {
@@ -12654,7 +12697,9 @@
       "Airbus Defence and Space",
       "Airbus Space"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Space Prime"
+    ],
     "wikilinks": []
   },
   {
@@ -13451,7 +13496,9 @@
     "labels": [
       "Alpine Tundra"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth System Phenomena"
+    ],
     "wikilinks": []
   },
   {
@@ -13752,7 +13799,9 @@
     "labels": [
       "Angular Coordinate"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Geodesy"
+    ],
     "wikilinks": []
   },
   {
@@ -14252,7 +14301,9 @@
     "labels": [
       "Antenna Gain"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Spacecraft Communications"
+    ],
     "wikilinks": []
   },
   {
@@ -14615,7 +14666,9 @@
     "labels": [
       "Apoapsis"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Orbital Dynamics"
+    ],
     "wikilinks": []
   },
   {
@@ -14649,7 +14702,9 @@
     "labels": [
       "Apparent Magnitude"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Astronomy"
+    ],
     "wikilinks": []
   },
   {
@@ -15096,7 +15151,9 @@
     "labels": [
       "Aquiclude"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth System Phenomena"
+    ],
     "wikilinks": []
   },
   {
@@ -15112,7 +15169,9 @@
     "labels": [
       "Aquifer"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth System Phenomena"
+    ],
     "wikilinks": []
   },
   {
@@ -15128,7 +15187,9 @@
     "labels": [
       "Aquifuge"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth System Phenomena"
+    ],
     "wikilinks": []
   },
   {
@@ -15144,7 +15205,9 @@
     "labels": [
       "Aquitard"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth System Phenomena"
+    ],
     "wikilinks": []
   },
   {
@@ -15693,7 +15756,9 @@
     "labels": [
       "Archived Data State"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth Observation Processing"
+    ],
     "wikilinks": []
   },
   {
@@ -15794,7 +15859,9 @@
     "labels": [
       "Argument of Periapsis"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Orbital Dynamics"
+    ],
     "wikilinks": []
   },
   {
@@ -16635,7 +16702,9 @@
       "Assimilation",
       "Assimilate"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth Observation Processing"
+    ],
     "wikilinks": []
   },
   {
@@ -16750,7 +16819,9 @@
     "labels": [
       "Association Rule Learning"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth Observation Processing"
+    ],
     "wikilinks": []
   },
   {
@@ -16784,7 +16855,9 @@
     "labels": [
       "Astrobiology"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Planetary Science"
+    ],
     "wikilinks": []
   },
   {
@@ -16800,7 +16873,9 @@
     "labels": [
       "Astrometry"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Astronomy"
+    ],
     "wikilinks": []
   },
   {
@@ -16816,7 +16891,9 @@
     "labels": [
       "Astronomical Body"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Astronomy"
+    ],
     "wikilinks": []
   },
   {
@@ -16832,7 +16909,9 @@
     "labels": [
       "Astronomical Photometry"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Astronomy"
+    ],
     "wikilinks": []
   },
   {
@@ -16848,7 +16927,9 @@
     "labels": [
       "Astronomical Spectroscopy"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Astronomy"
+    ],
     "wikilinks": []
   },
   {
@@ -16864,7 +16945,9 @@
     "labels": [
       "Astronomical Time System"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Space Reference Systems"
+    ],
     "wikilinks": []
   },
   {
@@ -16898,7 +16981,9 @@
     "labels": [
       "Astrophysical Jet"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Astronomy"
+    ],
     "wikilinks": []
   },
   {
@@ -16915,7 +17000,7 @@
       "Astrophysics"
     ],
     "is_subclass_of": [
-      "Space Science"
+      "Astronomy"
     ],
     "wikilinks": []
   },
@@ -17211,7 +17296,9 @@
     "labels": [
       "Atmosphere Layer"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth System Phenomena"
+    ],
     "wikilinks": []
   },
   {
@@ -17227,7 +17314,9 @@
     "labels": [
       "Atmosphere Revitalisation"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Space Life Sciences"
+    ],
     "wikilinks": []
   },
   {
@@ -17243,7 +17332,9 @@
     "labels": [
       "Atmospheric Composition Monitoring"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth Observation Applications"
+    ],
     "wikilinks": []
   },
   {
@@ -17259,7 +17350,9 @@
     "labels": [
       "Atmospheric Correction"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth Observation Processing"
+    ],
     "wikilinks": []
   },
   {
@@ -17275,7 +17368,9 @@
     "labels": [
       "Atmospheric Drag"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Orbital Dynamics"
+    ],
     "wikilinks": []
   },
   {
@@ -17698,7 +17793,9 @@
     "labels": [
       "Attitude Control"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Spacecraft Guidance Navigation and Control"
+    ],
     "wikilinks": []
   },
   {
@@ -17714,7 +17811,9 @@
     "labels": [
       "Attitude Determination"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Spacecraft Guidance Navigation and Control"
+    ],
     "wikilinks": []
   },
   {
@@ -17748,7 +17847,9 @@
     "labels": [
       "Attitude Quaternion"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Spacecraft Guidance Navigation and Control"
+    ],
     "wikilinks": [
       "Spacecraft Attitude"
     ]
@@ -18617,7 +18718,9 @@
     "labels": [
       "Aurora"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Heliophysics"
+    ],
     "wikilinks": []
   },
   {
@@ -19778,7 +19881,8 @@
       "Autonomous Business Operations"
     ],
     "is_subclass_of": [
-      "Artificial Intelligence"
+      "Artificial Intelligence",
+      "AI Research Area"
     ],
     "wikilinks": []
   },
@@ -20934,7 +21038,9 @@
     "labels": [
       "BAE Systems"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Space Prime"
+    ],
     "wikilinks": []
   },
   {
@@ -22305,7 +22411,9 @@
     "labels": [
       "Ballistic Coefficient"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Orbital Dynamics"
+    ],
     "wikilinks": []
   },
   {
@@ -22562,7 +22670,9 @@
     "labels": [
       "Barycentric Dynamical Time"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Space Reference Systems"
+    ],
     "wikilinks": []
   },
   {
@@ -22939,7 +23049,9 @@
     "labels": [
       "Bathymetry"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Geodesy"
+    ],
     "wikilinks": []
   },
   {
@@ -23250,7 +23362,9 @@
     "labels": [
       "Beam Footprint"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Spacecraft Communications"
+    ],
     "wikilinks": []
   },
   {
@@ -23266,7 +23380,9 @@
     "labels": [
       "Beam Handover"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Spacecraft Communications"
+    ],
     "wikilinks": []
   },
   {
@@ -23901,7 +24017,9 @@
     "labels": [
       "Bent-pipe Transponder"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Spacecraft Communications"
+    ],
     "wikilinks": []
   },
   {
@@ -23998,7 +24116,9 @@
     "labels": [
       "Bi-elliptic Transfer"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Orbital Dynamics"
+    ],
     "wikilinks": []
   },
   {
@@ -24259,7 +24379,9 @@
     "labels": [
       "Bidirectional Reflectance Distribution Function"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth Observation Processing"
+    ],
     "wikilinks": []
   },
   {
@@ -24397,7 +24519,9 @@
     "labels": [
       "Binary Data Mask"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth Observation Data Quality"
+    ],
     "wikilinks": []
   },
   {
@@ -24497,7 +24621,9 @@
     "labels": [
       "Binned Data State"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth Observation Processing"
+    ],
     "wikilinks": []
   },
   {
@@ -24575,7 +24701,9 @@
     "labels": [
       "Biodiversity Monitoring"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth Observation Applications"
+    ],
     "wikilinks": []
   },
   {
@@ -24837,7 +24965,9 @@
     "labels": [
       "Biosignature"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Planetary Science"
+    ],
     "wikilinks": []
   },
   {
@@ -24853,7 +24983,9 @@
     "labels": [
       "Biospecimen"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Space Life Sciences"
+    ],
     "wikilinks": []
   },
   {
@@ -24905,7 +25037,9 @@
     "labels": [
       "Bit Error Rate"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Spacecraft Communications"
+    ],
     "wikilinks": []
   },
   {
@@ -25891,7 +26025,9 @@
     "labels": [
       "Black Hole"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Astronomy"
+    ],
     "wikilinks": []
   },
   {
@@ -27595,10 +27731,7 @@
       "Transparent Blockchain"
     ],
     "is_subclass_of": [
-      "Thing",
-      "Distributed Data Structure",
-      "Distributed Ledger",
-      "Cryptographic System"
+      "Thing"
     ],
     "wikilinks": [
       "AI Energy Optimisation",
@@ -27977,7 +28110,9 @@
     "labels": [
       "Bow Shock"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Heliophysics"
+    ],
     "wikilinks": []
   },
   {
@@ -28259,7 +28394,9 @@
     "labels": [
       "Brightness Temperature"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth Observation Processing"
+    ],
     "wikilinks": []
   },
   {
@@ -28524,7 +28661,9 @@
     "labels": [
       "Buoy"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth Observation Sensor"
+    ],
     "wikilinks": []
   },
   {
@@ -28558,7 +28697,9 @@
     "labels": [
       "Burned Area Mapping"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth Observation Applications"
+    ],
     "wikilinks": []
   },
   {
@@ -29970,7 +30111,9 @@
     "labels": [
       "Calibrated Data State"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth Observation Processing"
+    ],
     "wikilinks": []
   },
   {
@@ -30100,7 +30243,9 @@
     "labels": [
       "Calibration Traceability"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth Observation Data Quality"
+    ],
     "wikilinks": []
   },
   {
@@ -30991,7 +31136,9 @@
     "labels": [
       "Carbon Cycle Monitoring"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth Observation Applications"
+    ],
     "wikilinks": []
   },
   {
@@ -31554,7 +31701,9 @@
     "labels": [
       "Carrier-to-noise Ratio"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Spacecraft Communications"
+    ],
     "wikilinks": []
   },
   {
@@ -31570,7 +31719,9 @@
     "labels": [
       "Cartographic Generalisation"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth Observation Processing"
+    ],
     "wikilinks": []
   },
   {
@@ -31586,7 +31737,9 @@
     "labels": [
       "Cascading Water"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth System Phenomena"
+    ],
     "wikilinks": []
   },
   {
@@ -31603,7 +31756,7 @@
       "Case Management System"
     ],
     "is_subclass_of": [
-      "Enterprise Software"
+      "Software Engineering (category)"
     ],
     "wikilinks": [
       "Compliance Monitoring",
@@ -31908,7 +32061,9 @@
     "labels": [
       "Celestial Mechanics"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Orbital Dynamics"
+    ],
     "wikilinks": []
   },
   {
@@ -31924,7 +32079,9 @@
     "labels": [
       "Celestial Reference Frame"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Space Reference Systems"
+    ],
     "wikilinks": []
   },
   {
@@ -32208,7 +32365,8 @@
       "Centralised AI"
     ],
     "is_subclass_of": [
-      "Artificial Intelligence"
+      "Artificial Intelligence",
+      "AI Research Area"
     ],
     "wikilinks": [
       "Artificial Intelligence",
@@ -32502,7 +32660,7 @@
       "Cerebras Wafer Scale Chips"
     ],
     "is_subclass_of": [
-      "AI Hardware Infrastructure"
+      "AI Infrastructure (category)"
     ],
     "wikilinks": []
   },
@@ -32882,7 +33040,9 @@
     "labels": [
       "Change Detection"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth Observation Processing"
+    ],
     "wikilinks": []
   },
   {
@@ -33619,7 +33779,9 @@
     "labels": [
       "Circular Orbit"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Orbital Dynamics"
+    ],
     "wikilinks": []
   },
   {
@@ -34463,7 +34625,9 @@
       "Climate Data Record",
       "CDR"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth Observation Data Quality"
+    ],
     "wikilinks": []
   },
   {
@@ -34894,7 +35058,9 @@
     "labels": [
       "Cloud Cover Fraction"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth Observation Data Quality"
+    ],
     "wikilinks": []
   },
   {
@@ -34955,7 +35121,9 @@
     "labels": [
       "Cloud Mask"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth Observation Processing"
+    ],
     "wikilinks": []
   },
   {
@@ -35066,7 +35234,9 @@
     "labels": [
       "Cloud Shadow Mask"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth Observation Processing"
+    ],
     "wikilinks": []
   },
   {
@@ -35161,7 +35331,9 @@
     "labels": [
       "Clustered Data State"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth Observation Processing"
+    ],
     "wikilinks": []
   },
   {
@@ -35334,7 +35506,9 @@
     "labels": [
       "Coastal Monitoring"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth Observation Applications"
+    ],
     "wikilinks": []
   },
   {
@@ -37356,7 +37530,9 @@
     "labels": [
       "Command and Data Handling"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Spacecraft Bus"
+    ],
     "wikilinks": []
   },
   {
@@ -38048,7 +38224,9 @@
     "labels": [
       "Comparative Planetology"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Planetary Science"
+    ],
     "wikilinks": []
   },
   {
@@ -39853,7 +40031,9 @@
       "Department of Computer Science",
       "UCL Computer Science"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Software Engineering (category)"
+    ],
     "wikilinks": [
       "Software Engineering",
       "Machine Learning",
@@ -40423,7 +40603,9 @@
     "labels": [
       "Cone Of Depression"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth System Phenomena"
+    ],
     "wikilinks": []
   },
   {
@@ -40439,7 +40621,9 @@
     "labels": [
       "Cone Of Impression"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth System Phenomena"
+    ],
     "wikilinks": []
   },
   {
@@ -40644,7 +40828,9 @@
     "labels": [
       "Confined Bed"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth System Phenomena"
+    ],
     "wikilinks": []
   },
   {
@@ -40660,7 +40846,9 @@
     "labels": [
       "Confined Unit"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth System Phenomena"
+    ],
     "wikilinks": []
   },
   {
@@ -40676,7 +40864,9 @@
     "labels": [
       "Confined Zone"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth System Phenomena"
+    ],
     "wikilinks": []
   },
   {
@@ -40910,7 +41100,9 @@
     "labels": [
       "Congelation Ice"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth System Phenomena"
+    ],
     "wikilinks": []
   },
   {
@@ -41850,7 +42042,8 @@
       "Consumer AI Adoption"
     ],
     "is_subclass_of": [
-      "Artificial Intelligence"
+      "Artificial Intelligence",
+      "DeFi and Economics"
     ],
     "wikilinks": []
   },
@@ -41868,7 +42061,8 @@
       "Consumer AI Market"
     ],
     "is_subclass_of": [
-      "Artificial Intelligence"
+      "Artificial Intelligence",
+      "DeFi and Economics"
     ],
     "wikilinks": []
   },
@@ -44499,7 +44693,9 @@
     "labels": [
       "Coordinate Conversion"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Geodesy"
+    ],
     "wikilinks": []
   },
   {
@@ -44515,7 +44711,9 @@
     "labels": [
       "Coordinate Epoch"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Space Reference Systems"
+    ],
     "wikilinks": []
   },
   {
@@ -44550,7 +44748,9 @@
     "labels": [
       "Coordinate Pole"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Geodesy"
+    ],
     "wikilinks": []
   },
   {
@@ -44630,7 +44830,9 @@
     "labels": [
       "Coordinated Universal Time"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Space Reference Systems"
+    ],
     "wikilinks": []
   },
   {
@@ -44881,7 +45083,9 @@
     "labels": [
       "Coronal Mass Ejection"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Heliophysics"
+    ],
     "wikilinks": []
   },
   {
@@ -45156,7 +45360,9 @@
     "labels": [
       "Cosmic Microwave Background"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Astronomy"
+    ],
     "wikilinks": []
   },
   {
@@ -45172,7 +45378,9 @@
     "labels": [
       "Cosmic Web"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Astronomy"
+    ],
     "wikilinks": []
   },
   {
@@ -45188,7 +45396,9 @@
     "labels": [
       "Cosmological Distance"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Astronomy"
+    ],
     "wikilinks": []
   },
   {
@@ -45204,7 +45414,9 @@
     "labels": [
       "Cosmology"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Astronomy"
+    ],
     "wikilinks": []
   },
   {
@@ -45364,7 +45576,7 @@
       "Cost-Effectiveness"
     ],
     "is_subclass_of": [
-      "AI Economics"
+      "DeFi and Economics"
     ],
     "wikilinks": []
   },
@@ -45401,7 +45613,7 @@
       "Cost-Per-Intelligence"
     ],
     "is_subclass_of": [
-      "AI Economics"
+      "DeFi and Economics"
     ],
     "wikilinks": []
   },
@@ -46152,7 +46364,9 @@
     "labels": [
       "Crew Active Dosimeter"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Space Life Sciences"
+    ],
     "wikilinks": []
   },
   {
@@ -46168,7 +46382,9 @@
     "labels": [
       "Crew Health Monitoring"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Space Life Sciences"
+    ],
     "wikilinks": []
   },
   {
@@ -46245,7 +46461,9 @@
     "labels": [
       "Crop Monitoring"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth Observation Applications"
+    ],
     "wikilinks": []
   },
   {
@@ -48176,13 +48394,12 @@
     "iri": "urn:ngm:class:cryptographic-primitive",
     "labels": [
       "Cryptographic Primitive",
-      "Cryptographic Primitive (Blockchain)",
       "Cryptographic Primitives",
-      "CryptographicPrimitive",
-      "bc-cryptographic-primitive"
+      "CryptographicPrimitive"
     ],
     "is_subclass_of": [
-      "Cryptography"
+      "Cryptography",
+      "Cryptographic Primitive (category)"
     ],
     "wikilinks": [
       "AI Agent System",
@@ -50863,7 +51080,9 @@
     "labels": [
       "Dark Energy"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Astronomy"
+    ],
     "wikilinks": []
   },
   {
@@ -50879,7 +51098,9 @@
     "labels": [
       "Dark Matter"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Astronomy"
+    ],
     "wikilinks": []
   },
   {
@@ -50959,7 +51180,9 @@
     "labels": [
       "Data Analysis Service"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth Observation Processing"
+    ],
     "wikilinks": []
   },
   {
@@ -51105,7 +51328,9 @@
     "labels": [
       "Data Archiving"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth Observation Processing"
+    ],
     "wikilinks": []
   },
   {
@@ -51505,7 +51730,9 @@
     "labels": [
       "Data Completeness"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth Observation Data Quality"
+    ],
     "wikilinks": []
   },
   {
@@ -51768,7 +51995,9 @@
     "labels": [
       "Data Ensemble"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth Observation Processing"
+    ],
     "wikilinks": []
   },
   {
@@ -52426,12 +52655,10 @@
     "iri": "urn:ngm:class:data-management",
     "labels": [
       "Data Management",
-      "Data Management (Infrastructure)",
-      "Health Data Management",
-      "infra-data-management"
+      "Health Data Management"
     ],
     "is_subclass_of": [
-      "Infrastructure"
+      "Data Management (category)"
     ],
     "wikilinks": [
       "Blockchain",
@@ -52487,7 +52714,9 @@
     "labels": [
       "Data Masking"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth Observation Data Quality"
+    ],
     "wikilinks": []
   },
   {
@@ -52885,7 +53114,9 @@
     "labels": [
       "Data Processing State"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth Observation Processing"
+    ],
     "wikilinks": []
   },
   {
@@ -52924,7 +53155,9 @@
     "labels": [
       "Data Product Version"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth Observation Processing"
+    ],
     "wikilinks": []
   },
   {
@@ -52940,7 +53173,9 @@
     "labels": [
       "Data Profile"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth Observation Processing"
+    ],
     "wikilinks": []
   },
   {
@@ -54027,7 +54262,9 @@
     "labels": [
       "Datum Transformation"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Geodesy"
+    ],
     "wikilinks": []
   },
   {
@@ -55448,7 +55685,9 @@
     "labels": [
       "Declination"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Space Reference Systems"
+    ],
     "wikilinks": []
   },
   {
@@ -56105,7 +56344,9 @@
     "labels": [
       "Deforestation Monitoring"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth Observation Applications"
+    ],
     "wikilinks": []
   },
   {
@@ -56121,7 +56362,9 @@
     "labels": [
       "Delay-tolerant Space Networking"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Spacecraft Communications"
+    ],
     "wikilinks": []
   },
   {
@@ -56321,7 +56564,9 @@
     "labels": [
       "Delta Differential One-way Ranging"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Spacecraft Communications"
+    ],
     "wikilinks": []
   },
   {
@@ -56379,7 +56624,9 @@
     "labels": [
       "Delta-v"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Orbital Dynamics"
+    ],
     "wikilinks": []
   },
   {
@@ -56735,7 +56982,9 @@
     "labels": [
       "Deorbiting"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Orbital Dynamics"
+    ],
     "wikilinks": []
   },
   {
@@ -57854,7 +58103,9 @@
     "labels": [
       "Differential GNSS"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Positioning Navigation and Timing"
+    ],
     "wikilinks": []
   },
   {
@@ -59194,7 +59445,9 @@
     "labels": [
       "Digital Elevation Model"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Geodesy"
+    ],
     "wikilinks": []
   },
   {
@@ -61058,7 +61311,9 @@
     "labels": [
       "Digital Surface Model"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Geodesy"
+    ],
     "wikilinks": []
   },
   {
@@ -61198,7 +61453,9 @@
     "labels": [
       "Digital Terrain Model"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Geodesy"
+    ],
     "wikilinks": []
   },
   {
@@ -61384,7 +61641,9 @@
     "labels": [
       "Digital Twin Data Assimilation"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth Observation Applications"
+    ],
     "wikilinks": []
   },
   {
@@ -61902,7 +62161,9 @@
       "Dike",
       "Dyke"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth System Phenomena"
+    ],
     "wikilinks": []
   },
   {
@@ -61918,7 +62179,9 @@
     "labels": [
       "Dilution of Precision"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Positioning Navigation and Timing"
+    ],
     "wikilinks": []
   },
   {
@@ -62131,7 +62394,9 @@
     "labels": [
       "Disaster Mapping"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth Observation Applications"
+    ],
     "wikilinks": []
   },
   {
@@ -64360,7 +64625,9 @@
     "labels": [
       "Drift Ice"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth System Phenomena"
+    ],
     "wikilinks": []
   },
   {
@@ -64454,7 +64721,9 @@
     "labels": [
       "Drought Monitoring"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth Observation Applications"
+    ],
     "wikilinks": []
   },
   {
@@ -64739,7 +65008,9 @@
     "labels": [
       "Dynamic Range"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth Observation Sensor"
+    ],
     "wikilinks": []
   },
   {
@@ -68008,7 +68279,9 @@
     "labels": [
       "Earth Observation Applications"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth Observation and Geospatial Sensing"
+    ],
     "wikilinks": []
   },
   {
@@ -68024,7 +68297,9 @@
     "labels": [
       "Earth Observation Collection"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth Observation Data Quality"
+    ],
     "wikilinks": []
   },
   {
@@ -68040,7 +68315,9 @@
     "labels": [
       "Earth Observation Data Archive"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth Observation Processing"
+    ],
     "wikilinks": []
   },
   {
@@ -68056,7 +68333,9 @@
     "labels": [
       "Earth Observation Data Assimilation"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth Observation Processing"
+    ],
     "wikilinks": []
   },
   {
@@ -68072,7 +68351,9 @@
     "labels": [
       "Earth Observation Data Cube"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth Observation Processing"
+    ],
     "wikilinks": []
   },
   {
@@ -68088,7 +68369,9 @@
     "labels": [
       "Earth Observation Data Discovery"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth Observation Data Quality"
+    ],
     "wikilinks": []
   },
   {
@@ -68104,7 +68387,9 @@
     "labels": [
       "Earth Observation Data Processing Level"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth Observation Processing"
+    ],
     "wikilinks": []
   },
   {
@@ -68120,7 +68405,9 @@
     "labels": [
       "Earth Observation Data Product"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth Observation Processing"
+    ],
     "wikilinks": []
   },
   {
@@ -68136,7 +68423,9 @@
     "labels": [
       "Earth Observation Data Quality"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth Observation and Geospatial Sensing"
+    ],
     "wikilinks": []
   },
   {
@@ -68152,7 +68441,9 @@
     "labels": [
       "Earth Observation Granule"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth Observation Data Quality"
+    ],
     "wikilinks": []
   },
   {
@@ -68205,7 +68496,9 @@
       "Earth Observation Level 1 Processing State",
       "L1"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth Observation Processing"
+    ],
     "wikilinks": []
   },
   {
@@ -68276,7 +68569,9 @@
       "Earth Observation Level 2 Processing State",
       "L2"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth Observation Processing"
+    ],
     "wikilinks": []
   },
   {
@@ -68311,7 +68606,9 @@
       "Earth Observation Level 3 Processing State",
       "L3"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth Observation Processing"
+    ],
     "wikilinks": []
   },
   {
@@ -68346,7 +68643,9 @@
       "Earth Observation Level 4 Processing State",
       "L4"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth Observation Processing"
+    ],
     "wikilinks": []
   },
   {
@@ -68362,7 +68661,9 @@
     "labels": [
       "Earth Observation Processing"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth Observation and Geospatial Sensing"
+    ],
     "wikilinks": []
   },
   {
@@ -68466,7 +68767,9 @@
     "labels": [
       "Earth Observation"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth Observation and Geospatial Sensing"
+    ],
     "wikilinks": []
   },
   {
@@ -68482,7 +68785,9 @@
     "labels": [
       "Earth Orientation Parameter"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Space Reference Systems"
+    ],
     "wikilinks": []
   },
   {
@@ -68499,7 +68804,9 @@
       "Earth Science Data Record",
       "ESDR"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth Observation Data Quality"
+    ],
     "wikilinks": []
   },
   {
@@ -68515,7 +68822,9 @@
     "labels": [
       "Earth System Phenomena"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth Observation and Geospatial Sensing"
+    ],
     "wikilinks": []
   },
   {
@@ -68531,7 +68840,9 @@
     "labels": [
       "Earth-centred Earth-fixed Frame"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Space Reference Systems"
+    ],
     "wikilinks": []
   },
   {
@@ -68547,7 +68858,9 @@
     "labels": [
       "Earth-centred Inertial Frame"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Space Reference Systems"
+    ],
     "wikilinks": []
   },
   {
@@ -68563,7 +68876,9 @@
     "labels": [
       "Eccentric Anomaly"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Orbital Dynamics"
+    ],
     "wikilinks": []
   },
   {
@@ -68630,7 +68945,9 @@
     "labels": [
       "Eclipse Power Budget"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Spacecraft Power and Thermal Control"
+    ],
     "wikilinks": []
   },
   {
@@ -68646,7 +68963,9 @@
     "labels": [
       "Ecliptic Coordinate System"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Space Reference Systems"
+    ],
     "wikilinks": []
   },
   {
@@ -68662,7 +68981,9 @@
     "labels": [
       "Ecliptic Latitude"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Space Reference Systems"
+    ],
     "wikilinks": []
   },
   {
@@ -68678,7 +68999,9 @@
     "labels": [
       "Ecliptic Longitude"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Space Reference Systems"
+    ],
     "wikilinks": []
   },
   {
@@ -69949,7 +70272,9 @@
     "labels": [
       "Effective Isotropic Radiated Power"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Spacecraft Communications"
+    ],
     "wikilinks": []
   },
   {
@@ -69966,7 +70291,8 @@
       "Efficiency AI"
     ],
     "is_subclass_of": [
-      "Artificial Intelligence"
+      "Artificial Intelligence",
+      "AI Research Area"
     ],
     "wikilinks": []
   },
@@ -70150,7 +70476,8 @@
       "Electric Vehicle"
     ],
     "is_subclass_of": [
-      "Infrastructure"
+      "Infrastructure",
+      "AI Infrastructure (category)"
     ],
     "wikilinks": []
   },
@@ -70203,7 +70530,9 @@
     "labels": [
       "Electromagnetic Compatibility Testing"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Spacecraft Bus"
+    ],
     "wikilinks": []
   },
   {
@@ -70359,7 +70688,9 @@
     "labels": [
       "Ellipsoidal Height"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Geodesy"
+    ],
     "wikilinks": []
   },
   {
@@ -70482,7 +70813,9 @@
     "labels": [
       "Elliptical Orbit"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Orbital Dynamics"
+    ],
     "wikilinks": []
   },
   {
@@ -70517,7 +70850,9 @@
     "labels": [
       "Embankment"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth System Phenomena"
+    ],
     "wikilinks": []
   },
   {
@@ -71065,7 +71400,9 @@
     "labels": [
       "Emissivity"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth Observation Processing"
+    ],
     "wikilinks": []
   },
   {
@@ -71540,7 +71877,9 @@
     "labels": [
       "End-of-life Disposal"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Spacecraft Bus"
+    ],
     "wikilinks": []
   },
   {
@@ -71736,7 +72075,8 @@
       "Energy Infrastructure"
     ],
     "is_subclass_of": [
-      "Infrastructure"
+      "Infrastructure",
+      "AI Infrastructure (category)"
     ],
     "wikilinks": []
   },
@@ -72806,7 +73146,9 @@
     "labels": [
       "Environmental Control and Life Support System"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Space Life Sciences"
+    ],
     "wikilinks": []
   },
   {
@@ -73139,7 +73481,9 @@
     "labels": [
       "Ephemeris"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Orbital Dynamics"
+    ],
     "wikilinks": []
   },
   {
@@ -73262,7 +73606,9 @@
     "labels": [
       "Equator"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Geodesy"
+    ],
     "wikilinks": []
   },
   {
@@ -73278,7 +73624,9 @@
     "labels": [
       "Equatorial Coordinate System"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Space Reference Systems"
+    ],
     "wikilinks": []
   },
   {
@@ -73505,7 +73853,9 @@
     "labels": [
       "Escape Velocity"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Orbital Dynamics"
+    ],
     "wikilinks": []
   },
   {
@@ -73541,7 +73891,9 @@
     "labels": [
       "Essential Climate Variable"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth Observation Data Quality"
+    ],
     "wikilinks": []
   },
   {
@@ -73578,10 +73930,9 @@
       "Ethan Mollick"
     ],
     "is_subclass_of": [
-      "Artificial Intelligence",
-      "Artificial Intelligence Domain",
       "Management Science",
-      "Entrepreneurship Research"
+      "Entrepreneurship Research",
+      "AI Research Area"
     ],
     "wikilinks": [
       "AI Adoption",
@@ -74395,7 +74746,9 @@
     "labels": [
       "Evapotranspiration Estimation"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth Observation Applications"
+    ],
     "wikilinks": []
   },
   {
@@ -74913,7 +75266,9 @@
     "labels": [
       "Exoplanet Direct Imaging"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Astronomy"
+    ],
     "wikilinks": []
   },
   {
@@ -74929,7 +75284,9 @@
     "labels": [
       "Exoplanet Radial Velocity Method"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Astronomy"
+    ],
     "wikilinks": []
   },
   {
@@ -74945,7 +75302,9 @@
     "labels": [
       "Exoplanet Transit Method"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Astronomy"
+    ],
     "wikilinks": []
   },
   {
@@ -75058,7 +75417,9 @@
     "labels": [
       "Exosphere"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Heliophysics"
+    ],
     "wikilinks": []
   },
   {
@@ -75717,7 +76078,9 @@
     "labels": [
       "Extragalactic Astronomy"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Astronomy"
+    ],
     "wikilinks": []
   },
   {
@@ -77157,7 +77520,9 @@
     "labels": [
       "Fast Ice"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth System Phenomena"
+    ],
     "wikilinks": []
   },
   {
@@ -77196,7 +77561,9 @@
     "labels": [
       "Fault Detection Isolation and Recovery"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Spacecraft Bus"
+    ],
     "wikilinks": []
   },
   {
@@ -78579,7 +78946,9 @@
     "labels": [
       "Fill Value"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth Observation Processing"
+    ],
     "wikilinks": []
   },
   {
@@ -79423,7 +79792,9 @@
       "Fitting",
       "Fit"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth Observation Processing"
+    ],
     "wikilinks": []
   },
   {
@@ -79590,7 +79961,9 @@
     "labels": [
       "Flight Software"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Spacecraft Bus"
+    ],
     "wikilinks": []
   },
   {
@@ -79627,7 +80000,9 @@
     "labels": [
       "Flood Bank"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth System Phenomena"
+    ],
     "wikilinks": []
   },
   {
@@ -79643,7 +80018,9 @@
     "labels": [
       "Flood Mapping"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth Observation Applications"
+    ],
     "wikilinks": []
   },
   {
@@ -80371,7 +80748,9 @@
     "labels": [
       "Formation Flying"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Spacecraft Bus"
+    ],
     "wikilinks": []
   },
   {
@@ -80782,7 +81161,9 @@
     "labels": [
       "Frame Reference Epoch"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Geodesy"
+    ],
     "wikilinks": []
   },
   {
@@ -80898,7 +81279,9 @@
     "labels": [
       "Frazil Ice"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth System Phenomena"
+    ],
     "wikilinks": []
   },
   {
@@ -80968,7 +81351,9 @@
     "labels": [
       "Free-space Path Loss"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Spacecraft Communications"
+    ],
     "wikilinks": []
   },
   {
@@ -81082,7 +81467,8 @@
       "Frontier AI Competition"
     ],
     "is_subclass_of": [
-      "Artificial Intelligence"
+      "Artificial Intelligence",
+      "AI Research Area"
     ],
     "wikilinks": []
   },
@@ -81137,7 +81523,8 @@
       "Frontier Labs"
     ],
     "is_subclass_of": [
-      "Artificial Intelligence"
+      "Artificial Intelligence",
+      "AI Research Area"
     ],
     "wikilinks": []
   },
@@ -81247,7 +81634,9 @@
     "labels": [
       "Frozen Ground"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth System Phenomena"
+    ],
     "wikilinks": []
   },
   {
@@ -81792,7 +82181,8 @@
       "GDPvala Benchmark"
     ],
     "is_subclass_of": [
-      "Artificial Intelligence"
+      "Artificial Intelligence",
+      "AI Research Area"
     ],
     "wikilinks": []
   },
@@ -81982,7 +82372,9 @@
     "labels": [
       "GNSS Almanac"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Positioning Navigation and Timing"
+    ],
     "wikilinks": []
   },
   {
@@ -81998,7 +82390,9 @@
     "labels": [
       "GNSS Ambiguity Resolution"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Positioning Navigation and Timing"
+    ],
     "wikilinks": []
   },
   {
@@ -82014,7 +82408,9 @@
     "labels": [
       "GNSS Antenna Phase Centre"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Positioning Navigation and Timing"
+    ],
     "wikilinks": []
   },
   {
@@ -82030,7 +82426,9 @@
     "labels": [
       "GNSS Antenna"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Positioning Navigation and Timing"
+    ],
     "wikilinks": []
   },
   {
@@ -82046,7 +82444,9 @@
     "labels": [
       "GNSS Augmentation"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Positioning Navigation and Timing"
+    ],
     "wikilinks": []
   },
   {
@@ -82062,7 +82462,9 @@
     "labels": [
       "GNSS Availability"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Positioning Navigation and Timing"
+    ],
     "wikilinks": []
   },
   {
@@ -82078,7 +82480,9 @@
     "labels": [
       "GNSS Carrier Phase"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Positioning Navigation and Timing"
+    ],
     "wikilinks": []
   },
   {
@@ -82094,7 +82498,9 @@
     "labels": [
       "GNSS Code Measurement"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Positioning Navigation and Timing"
+    ],
     "wikilinks": []
   },
   {
@@ -82110,7 +82516,9 @@
     "labels": [
       "GNSS Continuity"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Positioning Navigation and Timing"
+    ],
     "wikilinks": []
   },
   {
@@ -82126,7 +82534,9 @@
     "labels": [
       "GNSS Cycle Slip"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Positioning Navigation and Timing"
+    ],
     "wikilinks": []
   },
   {
@@ -82142,7 +82552,9 @@
     "labels": [
       "GNSS Doppler Measurement"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Positioning Navigation and Timing"
+    ],
     "wikilinks": []
   },
   {
@@ -82158,7 +82570,9 @@
     "labels": [
       "GNSS Ephemeris"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Positioning Navigation and Timing"
+    ],
     "wikilinks": []
   },
   {
@@ -82174,7 +82588,9 @@
     "labels": [
       "GNSS Integrity"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Positioning Navigation and Timing"
+    ],
     "wikilinks": []
   },
   {
@@ -82190,7 +82606,9 @@
     "labels": [
       "GNSS Interference"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Positioning Navigation and Timing"
+    ],
     "wikilinks": []
   },
   {
@@ -82206,7 +82624,9 @@
     "labels": [
       "GNSS Jamming"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Positioning Navigation and Timing"
+    ],
     "wikilinks": []
   },
   {
@@ -82222,7 +82642,9 @@
     "labels": [
       "GNSS Multipath"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Positioning Navigation and Timing"
+    ],
     "wikilinks": []
   },
   {
@@ -82238,7 +82660,9 @@
     "labels": [
       "GNSS Navigation Message"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Positioning Navigation and Timing"
+    ],
     "wikilinks": []
   },
   {
@@ -82254,7 +82678,9 @@
     "labels": [
       "GNSS Positioning Accuracy"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Positioning Navigation and Timing"
+    ],
     "wikilinks": []
   },
   {
@@ -82270,7 +82696,9 @@
     "labels": [
       "GNSS Positioning Error"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Positioning Navigation and Timing"
+    ],
     "wikilinks": []
   },
   {
@@ -82286,7 +82714,9 @@
     "labels": [
       "GNSS Pseudorange"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Positioning Navigation and Timing"
+    ],
     "wikilinks": []
   },
   {
@@ -82374,7 +82804,9 @@
     "labels": [
       "GNSS Signal Acquisition"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Positioning Navigation and Timing"
+    ],
     "wikilinks": []
   },
   {
@@ -82390,7 +82822,9 @@
     "labels": [
       "GNSS Signal Tracking"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Positioning Navigation and Timing"
+    ],
     "wikilinks": []
   },
   {
@@ -82406,7 +82840,9 @@
     "labels": [
       "GNSS Signal"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Positioning Navigation and Timing"
+    ],
     "wikilinks": []
   },
   {
@@ -82422,7 +82858,9 @@
     "labels": [
       "GNSS Spoofing"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Positioning Navigation and Timing"
+    ],
     "wikilinks": []
   },
   {
@@ -82438,7 +82876,9 @@
     "labels": [
       "GNSS Time Transfer"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Positioning Navigation and Timing"
+    ],
     "wikilinks": []
   },
   {
@@ -82454,7 +82894,9 @@
     "labels": [
       "GNSS Time to First Fix"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Positioning Navigation and Timing"
+    ],
     "wikilinks": []
   },
   {
@@ -82768,7 +83210,8 @@
       "GPU Infrastructure"
     ],
     "is_subclass_of": [
-      "Infrastructure"
+      "Infrastructure",
+      "AI Infrastructure (category)"
     ],
     "wikilinks": []
   },
@@ -82996,7 +83439,9 @@
     "labels": [
       "Galactic Astronomy"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Astronomy"
+    ],
     "wikilinks": []
   },
   {
@@ -83012,7 +83457,9 @@
     "labels": [
       "Galaxy Cluster"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Astronomy"
+    ],
     "wikilinks": []
   },
   {
@@ -83028,7 +83475,9 @@
     "labels": [
       "Galaxy Group"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Astronomy"
+    ],
     "wikilinks": []
   },
   {
@@ -83044,7 +83493,9 @@
     "labels": [
       "Galaxy Supercluster"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Astronomy"
+    ],
     "wikilinks": []
   },
   {
@@ -83322,7 +83773,9 @@
     "labels": [
       "Gamma-ray Astronomy"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Astronomy"
+    ],
     "wikilinks": []
   },
   {
@@ -83951,7 +84404,9 @@
     "labels": [
       "Gazetteer"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth Observation Processing"
+    ],
     "wikilinks": []
   },
   {
@@ -84461,7 +84916,9 @@
     "labels": [
       "Geocentric Latitude"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Geodesy"
+    ],
     "wikilinks": []
   },
   {
@@ -84477,7 +84934,9 @@
     "labels": [
       "Geocode"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth Observation Processing"
+    ],
     "wikilinks": []
   },
   {
@@ -84493,7 +84952,9 @@
     "labels": [
       "Geodesy"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth Observation and Geospatial Sensing"
+    ],
     "wikilinks": []
   },
   {
@@ -84509,7 +84970,9 @@
     "labels": [
       "Geodetic Control Point"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Geodesy"
+    ],
     "wikilinks": []
   },
   {
@@ -84543,7 +85006,9 @@
     "labels": [
       "Geodetic Datum"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Geodesy"
+    ],
     "wikilinks": []
   },
   {
@@ -84559,7 +85024,9 @@
     "labels": [
       "Geodetic Latitude"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Geodesy"
+    ],
     "wikilinks": []
   },
   {
@@ -84575,7 +85042,9 @@
     "labels": [
       "Geodetic Longitude"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Geodesy"
+    ],
     "wikilinks": []
   },
   {
@@ -84591,7 +85060,9 @@
     "labels": [
       "Geodetic Reference Frame"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Geodesy"
+    ],
     "wikilinks": []
   },
   {
@@ -84662,7 +85133,9 @@
     "labels": [
       "Geoid Undulation"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Geodesy"
+    ],
     "wikilinks": []
   },
   {
@@ -84678,7 +85151,9 @@
     "labels": [
       "Geoid"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Geodesy"
+    ],
     "wikilinks": []
   },
   {
@@ -84713,7 +85188,9 @@
       "Geolocation",
       "Geolocate"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Geodesy"
+    ],
     "wikilinks": []
   },
   {
@@ -84729,7 +85206,9 @@
     "labels": [
       "Geomagnetic Field"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Heliophysics"
+    ],
     "wikilinks": []
   },
   {
@@ -84745,7 +85224,9 @@
     "labels": [
       "Geomagnetic Storm"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Heliophysics"
+    ],
     "wikilinks": []
   },
   {
@@ -84761,7 +85242,9 @@
     "labels": [
       "Geomagnetic Substorm"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Heliophysics"
+    ],
     "wikilinks": []
   },
   {
@@ -84890,7 +85373,9 @@
     "labels": [
       "Georeferenced Data State"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth Observation Processing"
+    ],
     "wikilinks": []
   },
   {
@@ -84907,7 +85392,9 @@
       "Georeferencing",
       "Georeference"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Geodesy"
+    ],
     "wikilinks": []
   },
   {
@@ -84923,7 +85410,9 @@
     "labels": [
       "Geospatial Buffering"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth Observation Processing"
+    ],
     "wikilinks": []
   },
   {
@@ -84939,7 +85428,9 @@
     "labels": [
       "Geospatial Clipping"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth Observation Processing"
+    ],
     "wikilinks": []
   },
   {
@@ -84955,7 +85446,9 @@
     "labels": [
       "Geospatial Data Layer"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth Observation Processing"
+    ],
     "wikilinks": []
   },
   {
@@ -85013,7 +85506,9 @@
     "labels": [
       "Geospatial Feature Extraction"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth Observation Processing"
+    ],
     "wikilinks": []
   },
   {
@@ -85049,7 +85544,9 @@
     "labels": [
       "Geospatial Interface Protocol"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth Observation Processing"
+    ],
     "wikilinks": []
   },
   {
@@ -85065,7 +85562,9 @@
     "labels": [
       "Geospatial Metadata"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth Observation Data Quality"
+    ],
     "wikilinks": []
   },
   {
@@ -85081,7 +85580,9 @@
     "labels": [
       "Geospatial Overlay"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth Observation Processing"
+    ],
     "wikilinks": []
   },
   {
@@ -85097,7 +85598,9 @@
     "labels": [
       "Geospatial Service"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth Observation Processing"
+    ],
     "wikilinks": []
   },
   {
@@ -85152,7 +85655,9 @@
     "labels": [
       "Geosynchronous Orbit"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Orbital Dynamics"
+    ],
     "wikilinks": []
   },
   {
@@ -85409,7 +85914,9 @@
     "labels": [
       "Glacial Region"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth System Phenomena"
+    ],
     "wikilinks": []
   },
   {
@@ -85425,7 +85932,9 @@
     "labels": [
       "Glacier Monitoring"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth Observation Applications"
+    ],
     "wikilinks": []
   },
   {
@@ -85442,7 +85951,9 @@
       "Glacier Terminus",
       "Snout"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth System Phenomena"
+    ],
     "wikilinks": []
   },
   {
@@ -85458,7 +85969,9 @@
     "labels": [
       "Glacier"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth System Phenomena"
+    ],
     "wikilinks": []
   },
   {
@@ -87597,7 +88110,9 @@
     "labels": [
       "Gravitational Microlensing"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Astronomy"
+    ],
     "wikilinks": []
   },
   {
@@ -87613,7 +88128,9 @@
     "labels": [
       "Gravitational Wave"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Astronomy"
+    ],
     "wikilinks": []
   },
   {
@@ -87629,7 +88146,9 @@
     "labels": [
       "Gravity Assist"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Orbital Dynamics"
+    ],
     "wikilinks": []
   },
   {
@@ -87957,7 +88476,9 @@
     "labels": [
       "Gridded Data State"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth Observation Processing"
+    ],
     "wikilinks": []
   },
   {
@@ -87973,7 +88494,9 @@
     "labels": [
       "Gridding"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth Observation Processing"
+    ],
     "wikilinks": []
   },
   {
@@ -88052,7 +88575,9 @@
     "labels": [
       "Ground Control Experiment"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Space Life Sciences"
+    ],
     "wikilinks": []
   },
   {
@@ -88068,7 +88593,9 @@
     "labels": [
       "Ground Control Point"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Geodesy"
+    ],
     "wikilinks": []
   },
   {
@@ -88084,7 +88611,9 @@
     "labels": [
       "Ground Deformation Monitoring"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth Observation Applications"
+    ],
     "wikilinks": []
   },
   {
@@ -88145,7 +88674,9 @@
     "labels": [
       "Ground Sample Distance"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth Observation Sensor"
+    ],
     "wikilinks": []
   },
   {
@@ -88161,7 +88692,9 @@
     "labels": [
       "Ground Segment"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Spacecraft Bus"
+    ],
     "wikilinks": []
   },
   {
@@ -88177,7 +88710,9 @@
     "labels": [
       "Ground Station"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Spacecraft Bus"
+    ],
     "wikilinks": []
   },
   {
@@ -88193,7 +88728,9 @@
     "labels": [
       "Ground Support Equipment"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Spacecraft Bus"
+    ],
     "wikilinks": []
   },
   {
@@ -88209,7 +88746,9 @@
     "labels": [
       "Ground Track"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Orbital Dynamics"
+    ],
     "wikilinks": []
   },
   {
@@ -88262,7 +88801,9 @@
     "labels": [
       "Ground-based Augmentation System"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Positioning Navigation and Timing"
+    ],
     "wikilinks": []
   },
   {
@@ -88314,7 +88855,9 @@
     "labels": [
       "Groundwater Level"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth System Phenomena"
+    ],
     "wikilinks": []
   },
   {
@@ -88927,7 +89470,9 @@
     "labels": [
       "Habitable Zone"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Planetary Science"
+    ],
     "wikilinks": []
   },
   {
@@ -88943,7 +89488,9 @@
     "labels": [
       "Habitat Mapping"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth Observation Applications"
+    ],
     "wikilinks": []
   },
   {
@@ -89037,7 +89584,9 @@
     "labels": [
       "Halo Orbit"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Orbital Dynamics"
+    ],
     "wikilinks": []
   },
   {
@@ -90490,7 +91039,9 @@
     "labels": [
       "Heat Pipe"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Spacecraft Power and Thermal Control"
+    ],
     "wikilinks": []
   },
   {
@@ -90580,7 +91131,9 @@
     "labels": [
       "Heliopause"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Heliophysics"
+    ],
     "wikilinks": []
   },
   {
@@ -90614,7 +91167,9 @@
     "labels": [
       "Heliosphere"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Heliophysics"
+    ],
     "wikilinks": []
   },
   {
@@ -90987,7 +91542,9 @@
     "labels": [
       "High Earth Orbit"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Orbital Dynamics"
+    ],
     "wikilinks": []
   },
   {
@@ -91203,7 +91760,9 @@
     "labels": [
       "Hohmann Transfer"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Orbital Dynamics"
+    ],
     "wikilinks": []
   },
   {
@@ -91623,7 +92182,9 @@
     "labels": [
       "Horizontal Coordinate System"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Geodesy"
+    ],
     "wikilinks": []
   },
   {
@@ -91639,7 +92200,9 @@
     "labels": [
       "Horizontal Coordinate"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Geodesy"
+    ],
     "wikilinks": []
   },
   {
@@ -91655,7 +92218,9 @@
     "labels": [
       "Horizontal Datum"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Geodesy"
+    ],
     "wikilinks": []
   },
   {
@@ -92981,7 +93546,9 @@
     "labels": [
       "Hydrographic Bank"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth System Phenomena"
+    ],
     "wikilinks": []
   },
   {
@@ -92997,7 +93564,9 @@
     "labels": [
       "Hydrosphere Feature"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth System Phenomena"
+    ],
     "wikilinks": []
   },
   {
@@ -93095,7 +93664,9 @@
     "labels": [
       "Hyperbolic Trajectory"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Orbital Dynamics"
+    ],
     "wikilinks": []
   },
   {
@@ -93111,7 +93682,9 @@
     "labels": [
       "Hypergravity"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Space Life Sciences"
+    ],
     "wikilinks": []
   },
   {
@@ -93415,7 +93988,8 @@
       "Hyperscale Cloud"
     ],
     "is_subclass_of": [
-      "Infrastructure"
+      "Infrastructure",
+      "AI Infrastructure (category)"
     ],
     "wikilinks": []
   },
@@ -93432,7 +94006,9 @@
     "labels": [
       "Hyperspectral Imaging"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth Observation Sensor"
+    ],
     "wikilinks": []
   },
   {
@@ -96838,7 +97414,9 @@
     "labels": [
       "Ice Base"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth System Phenomena"
+    ],
     "wikilinks": []
   },
   {
@@ -96854,7 +97432,9 @@
     "labels": [
       "Ice Calf"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth System Phenomena"
+    ],
     "wikilinks": []
   },
   {
@@ -96870,7 +97450,9 @@
     "labels": [
       "Ice Cap"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth System Phenomena"
+    ],
     "wikilinks": []
   },
   {
@@ -96886,7 +97468,9 @@
     "labels": [
       "Ice Core"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth System Phenomena"
+    ],
     "wikilinks": []
   },
   {
@@ -96902,7 +97486,9 @@
     "labels": [
       "Ice Field"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth System Phenomena"
+    ],
     "wikilinks": []
   },
   {
@@ -96918,7 +97504,9 @@
     "labels": [
       "Ice Giant"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Planetary Science"
+    ],
     "wikilinks": []
   },
   {
@@ -96934,7 +97522,9 @@
     "labels": [
       "Ice Sheet Monitoring"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth Observation Applications"
+    ],
     "wikilinks": []
   },
   {
@@ -96968,7 +97558,9 @@
     "labels": [
       "Ice Shelf"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth System Phenomena"
+    ],
     "wikilinks": []
   },
   {
@@ -96984,7 +97576,9 @@
     "labels": [
       "Ice Snow Interface"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth System Phenomena"
+    ],
     "wikilinks": []
   },
   {
@@ -97000,7 +97594,9 @@
     "labels": [
       "Ice Stream"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth System Phenomena"
+    ],
     "wikilinks": []
   },
   {
@@ -97016,7 +97612,9 @@
     "labels": [
       "Ice Surface"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth System Phenomena"
+    ],
     "wikilinks": []
   },
   {
@@ -97032,7 +97630,9 @@
     "labels": [
       "Iceberg"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth System Phenomena"
+    ],
     "wikilinks": []
   },
   {
@@ -97777,7 +98377,9 @@
     "labels": [
       "Image Co-registration"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth Observation Processing"
+    ],
     "wikilinks": []
   },
   {
@@ -97793,7 +98395,9 @@
     "labels": [
       "Image Compositing"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth Observation Processing"
+    ],
     "wikilinks": []
   },
   {
@@ -97892,7 +98496,9 @@
     "labels": [
       "Image Mosaicking"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth Observation Processing"
+    ],
     "wikilinks": []
   },
   {
@@ -97986,7 +98592,9 @@
     "labels": [
       "Image Resampling"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth Observation Processing"
+    ],
     "wikilinks": []
   },
   {
@@ -98221,7 +98829,9 @@
     "labels": [
       "Imaging Spectrometer"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth Observation Sensor"
+    ],
     "wikilinks": []
   },
   {
@@ -98876,7 +99486,9 @@
     "labels": [
       "Impact Crater"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Planetary Science"
+    ],
     "wikilinks": []
   },
   {
@@ -99082,7 +99694,9 @@
     "labels": [
       "In Situ Observation"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth Observation Sensor"
+    ],
     "wikilinks": []
   },
   {
@@ -99098,7 +99712,9 @@
     "labels": [
       "In Situ Resource Utilisation"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Planetary Science"
+    ],
     "wikilinks": []
   },
   {
@@ -99354,7 +99970,9 @@
     "labels": [
       "Incidence Angle"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth Observation Sensor"
+    ],
     "wikilinks": []
   },
   {
@@ -100816,7 +101434,9 @@
     "labels": [
       "Infrared Astronomy"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Astronomy"
+    ],
     "wikilinks": []
   },
   {
@@ -102795,7 +103415,9 @@
     "labels": [
       "Intercalibration"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth Observation Data Quality"
+    ],
     "wikilinks": []
   },
   {
@@ -103020,7 +103642,9 @@
     "labels": [
       "Interferometric Phase"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth Observation Processing"
+    ],
     "wikilinks": []
   },
   {
@@ -103054,7 +103678,9 @@
     "labels": [
       "Intergalactic Medium"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Astronomy"
+    ],
     "wikilinks": []
   },
   {
@@ -103133,7 +103759,9 @@
     "labels": [
       "International Atomic Time"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Space Reference Systems"
+    ],
     "wikilinks": []
   },
   {
@@ -103149,7 +103777,9 @@
     "labels": [
       "International Celestial Reference System"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Space Reference Systems"
+    ],
     "wikilinks": []
   },
   {
@@ -103221,7 +103851,9 @@
     "labels": [
       "International Terrestrial Reference System"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Space Reference Systems"
+    ],
     "wikilinks": []
   },
   {
@@ -103583,7 +104215,9 @@
     "labels": [
       "Interplanetary Magnetic Field"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Heliophysics"
+    ],
     "wikilinks": []
   },
   {
@@ -103635,7 +104269,9 @@
     "labels": [
       "Interpolated Data State"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth Observation Processing"
+    ],
     "wikilinks": []
   },
   {
@@ -103651,7 +104287,9 @@
     "labels": [
       "Interpolation Method"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth Observation Processing"
+    ],
     "wikilinks": []
   },
   {
@@ -103761,7 +104399,9 @@
     "labels": [
       "Interstellar Medium"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Astronomy"
+    ],
     "wikilinks": []
   },
   {
@@ -104273,7 +104913,9 @@
     "labels": [
       "Ionosphere"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Heliophysics"
+    ],
     "wikilinks": []
   },
   {
@@ -104289,7 +104931,9 @@
     "labels": [
       "Ionospheric D Layer"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Heliophysics"
+    ],
     "wikilinks": []
   },
   {
@@ -104305,7 +104949,9 @@
     "labels": [
       "Ionospheric Delay"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Positioning Navigation and Timing"
+    ],
     "wikilinks": []
   },
   {
@@ -104321,7 +104967,9 @@
     "labels": [
       "Ionospheric Disturbance"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Heliophysics"
+    ],
     "wikilinks": []
   },
   {
@@ -104337,7 +104985,9 @@
     "labels": [
       "Ionospheric E Layer"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Heliophysics"
+    ],
     "wikilinks": []
   },
   {
@@ -104353,7 +105003,9 @@
     "labels": [
       "Ionospheric F Layer"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Heliophysics"
+    ],
     "wikilinks": []
   },
   {
@@ -105288,7 +105940,9 @@
     "labels": [
       "Julian Date"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Space Reference Systems"
+    ],
     "wikilinks": []
   },
   {
@@ -105326,7 +105980,9 @@
     "labels": [
       "Junge Aerosol Layer"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth System Phenomena"
+    ],
     "wikilinks": []
   },
   {
@@ -105774,7 +106430,9 @@
     "labels": [
       "Keplerian Orbit"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Orbital Dynamics"
+    ],
     "wikilinks": []
   },
   {
@@ -107215,7 +107873,9 @@
     "labels": [
       "Kuiper Belt Object"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Planetary Science"
+    ],
     "wikilinks": []
   },
   {
@@ -107751,7 +108411,9 @@
     "labels": [
       "Lagrange Point"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Orbital Dynamics"
+    ],
     "wikilinks": []
   },
   {
@@ -107804,7 +108466,9 @@
     "labels": [
       "Land Cover Classification"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth Observation Processing"
+    ],
     "wikilinks": []
   },
   {
@@ -107820,7 +108484,9 @@
     "labels": [
       "Land Cover Monitoring"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth Observation Applications"
+    ],
     "wikilinks": []
   },
   {
@@ -107862,7 +108528,9 @@
     "labels": [
       "Land Ice"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth System Phenomena"
+    ],
     "wikilinks": []
   },
   {
@@ -107924,7 +108592,9 @@
     "labels": [
       "Land Surface Temperature"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth Observation Processing"
+    ],
     "wikilinks": []
   },
   {
@@ -107940,7 +108610,9 @@
     "labels": [
       "Land Use Classification"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth Observation Processing"
+    ],
     "wikilinks": []
   },
   {
@@ -107974,7 +108646,9 @@
     "labels": [
       "Landslide Monitoring"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth Observation Applications"
+    ],
     "wikilinks": []
   },
   {
@@ -108378,7 +109052,9 @@
     "labels": [
       "Laser Altimetry"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth Observation Sensor"
+    ],
     "wikilinks": []
   },
   {
@@ -108394,7 +109070,9 @@
     "labels": [
       "Laser Communication Terminal"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Spacecraft Communications"
+    ],
     "wikilinks": []
   },
   {
@@ -108714,7 +109392,9 @@
     "labels": [
       "Launch Vehicle Stage"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Spacecraft Bus"
+    ],
     "wikilinks": [
       "Orbital Debris"
     ]
@@ -108732,7 +109412,9 @@
     "labels": [
       "Launch Vehicle"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Spacecraft Bus"
+    ],
     "wikilinks": [
       "stages",
       "spacecraft propulsion systems"
@@ -109247,7 +109929,9 @@
     "labels": [
       "Leap Second"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Space Reference Systems"
+    ],
     "wikilinks": []
   },
   {
@@ -110063,7 +110747,9 @@
     "labels": [
       "Levee"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth System Phenomena"
+    ],
     "wikilinks": []
   },
   {
@@ -110241,7 +110927,9 @@
     "labels": [
       "Lidar Instrument"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth Observation Sensor"
+    ],
     "wikilinks": []
   },
   {
@@ -110392,7 +111080,9 @@
     "labels": [
       "Life Support System"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Space Life Sciences"
+    ],
     "wikilinks": []
   },
   {
@@ -110593,7 +111283,9 @@
     "labels": [
       "Light Time"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Space Reference Systems"
+    ],
     "wikilinks": []
   },
   {
@@ -111086,7 +111778,9 @@
     "labels": [
       "Link Margin"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Spacecraft Communications"
+    ],
     "wikilinks": []
   },
   {
@@ -111367,7 +112061,9 @@
     "labels": [
       "Liquid Rocket Engine"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Spacecraft Propulsion"
+    ],
     "wikilinks": []
   },
   {
@@ -111645,7 +112341,9 @@
     "labels": [
       "Lissajous Orbit"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Orbital Dynamics"
+    ],
     "wikilinks": []
   },
   {
@@ -112284,7 +112982,9 @@
       "Location Based Service",
       "LBS"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth Observation Processing"
+    ],
     "wikilinks": []
   },
   {
@@ -112346,7 +113046,9 @@
       "Lockheed Martin Space",
       "Lockheed Martin Space business area"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Space Prime"
+    ],
     "wikilinks": []
   },
   {
@@ -112876,7 +113578,9 @@
     "labels": [
       "Look Angle"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth Observation Sensor"
+    ],
     "wikilinks": []
   },
   {
@@ -113089,7 +113793,9 @@
     "labels": [
       "Low Earth Orbit"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Orbital Dynamics"
+    ],
     "wikilinks": []
   },
   {
@@ -113438,7 +114144,9 @@
     "labels": [
       "Luminosity"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Astronomy"
+    ],
     "wikilinks": []
   },
   {
@@ -113455,7 +114163,7 @@
       "Lump of Labor Fallacy"
     ],
     "is_subclass_of": [
-      "Economic Impact of AI"
+      "DeFi and Economics"
     ],
     "wikilinks": []
   },
@@ -113700,7 +114408,7 @@
       "MCP Connectors"
     ],
     "is_subclass_of": [
-      "AI Hardware Infrastructure"
+      "AI Infrastructure (category)"
     ],
     "wikilinks": []
   },
@@ -114479,7 +115187,9 @@
     "labels": [
       "Magnetic Pole"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Geodesy"
+    ],
     "wikilinks": []
   },
   {
@@ -114495,7 +115205,9 @@
     "labels": [
       "Magnetic Reconnection"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Heliophysics"
+    ],
     "wikilinks": []
   },
   {
@@ -114511,7 +115223,9 @@
     "labels": [
       "Magnetogram"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth Observation Sensor"
+    ],
     "wikilinks": []
   },
   {
@@ -114527,7 +115241,9 @@
     "labels": [
       "Magnetopause"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Heliophysics"
+    ],
     "wikilinks": []
   },
   {
@@ -114561,7 +115277,9 @@
     "labels": [
       "Magnetosphere"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Heliophysics"
+    ],
     "wikilinks": []
   },
   {
@@ -114577,7 +115295,9 @@
     "labels": [
       "Magnetospheric Ring Current"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Heliophysics"
+    ],
     "wikilinks": []
   },
   {
@@ -114593,7 +115313,9 @@
     "labels": [
       "Magnetotail"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Heliophysics"
+    ],
     "wikilinks": []
   },
   {
@@ -114962,7 +115684,9 @@
     "labels": [
       "Map Projection"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Geodesy"
+    ],
     "wikilinks": []
   },
   {
@@ -115000,7 +115724,9 @@
     "labels": [
       "Mapped Data State"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth Observation Processing"
+    ],
     "wikilinks": []
   },
   {
@@ -116326,7 +117052,9 @@
     "labels": [
       "Mean Anomaly"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Orbital Dynamics"
+    ],
     "wikilinks": []
   },
   {
@@ -116394,7 +117122,9 @@
     "labels": [
       "Measurement Accuracy"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth Observation Data Quality"
+    ],
     "wikilinks": []
   },
   {
@@ -116410,7 +117140,9 @@
     "labels": [
       "Measurement Bias"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth Observation Data Quality"
+    ],
     "wikilinks": []
   },
   {
@@ -116426,7 +117158,9 @@
     "labels": [
       "Measurement Device"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth Observation Sensor"
+    ],
     "wikilinks": []
   },
   {
@@ -116442,7 +117176,9 @@
     "labels": [
       "Measurement Instrument"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth Observation Sensor"
+    ],
     "wikilinks": []
   },
   {
@@ -116477,7 +117213,9 @@
     "labels": [
       "Measurement Offset"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth Observation Processing"
+    ],
     "wikilinks": []
   },
   {
@@ -116493,7 +117231,9 @@
     "labels": [
       "Measurement Precision"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth Observation Data Quality"
+    ],
     "wikilinks": []
   },
   {
@@ -116509,7 +117249,9 @@
     "labels": [
       "Measurement Scale Factor"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth Observation Processing"
+    ],
     "wikilinks": []
   },
   {
@@ -116525,7 +117267,9 @@
     "labels": [
       "Measurement Scaling"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth Observation Processing"
+    ],
     "wikilinks": []
   },
   {
@@ -116541,7 +117285,9 @@
     "labels": [
       "Measurement Uncertainty"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth Observation Data Quality"
+    ],
     "wikilinks": []
   },
   {
@@ -116557,7 +117303,9 @@
     "labels": [
       "Measurement Value"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth Observation Processing"
+    ],
     "wikilinks": []
   },
   {
@@ -117167,7 +117915,9 @@
     "labels": [
       "Medium Earth Orbit"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Orbital Dynamics"
+    ],
     "wikilinks": []
   },
   {
@@ -117625,7 +118375,9 @@
     "labels": [
       "Meridian"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Geodesy"
+    ],
     "wikilinks": []
   },
   {
@@ -117941,7 +118693,9 @@
     "labels": [
       "Mesopause"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth System Phenomena"
+    ],
     "wikilinks": []
   },
   {
@@ -119321,7 +120075,9 @@
     "labels": [
       "Meteor"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Planetary Science"
+    ],
     "wikilinks": []
   },
   {
@@ -119337,7 +120093,9 @@
     "labels": [
       "Meteorite"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Planetary Science"
+    ],
     "wikilinks": []
   },
   {
@@ -119353,7 +120111,9 @@
     "labels": [
       "Meteoroid"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Planetary Science"
+    ],
     "wikilinks": []
   },
   {
@@ -119623,7 +120383,9 @@
     "labels": [
       "Microgravity"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Space Life Sciences"
+    ],
     "wikilinks": []
   },
   {
@@ -120153,7 +120915,9 @@
     "labels": [
       "Mined Data State"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth Observation Processing"
+    ],
     "wikilinks": []
   },
   {
@@ -120550,7 +121314,9 @@
     "labels": [
       "Missing Value"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth Observation Processing"
+    ],
     "wikilinks": []
   },
   {
@@ -120566,7 +121332,9 @@
     "labels": [
       "Mission Control Centre"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Spacecraft Bus"
+    ],
     "wikilinks": []
   },
   {
@@ -120582,7 +121350,9 @@
     "labels": [
       "Mission Design"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Spacecraft Bus"
+    ],
     "wikilinks": []
   },
   {
@@ -120598,7 +121368,9 @@
     "labels": [
       "Mission Operations"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Spacecraft Bus"
+    ],
     "wikilinks": []
   },
   {
@@ -120614,7 +121386,9 @@
     "labels": [
       "Mission Phase"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Spacecraft Bus"
+    ],
     "wikilinks": []
   },
   {
@@ -120630,7 +121404,9 @@
     "labels": [
       "Mission Planning"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Spacecraft Bus"
+    ],
     "wikilinks": []
   },
   {
@@ -121290,7 +122066,8 @@
       "Model Benchmarking"
     ],
     "is_subclass_of": [
-      "Artificial Intelligence"
+      "Artificial Intelligence",
+      "AI Research Area"
     ],
     "wikilinks": []
   },
@@ -122829,7 +123606,9 @@
     "labels": [
       "Molecular Cloud"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Astronomy"
+    ],
     "wikilinks": []
   },
   {
@@ -122883,7 +123662,9 @@
     "labels": [
       "Momentum Management"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Spacecraft Guidance Navigation and Control"
+    ],
     "wikilinks": [
       "Control Moment Gyroscope"
     ]
@@ -124776,7 +125557,9 @@
     "labels": [
       "Multi-constellation GNSS"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Positioning Navigation and Timing"
+    ],
     "wikilinks": []
   },
   {
@@ -124792,7 +125575,9 @@
     "labels": [
       "Multi-frequency GNSS"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Positioning Navigation and Timing"
+    ],
     "wikilinks": []
   },
   {
@@ -124826,7 +125611,9 @@
     "labels": [
       "Multi-messenger Astronomy"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Astronomy"
+    ],
     "wikilinks": []
   },
   {
@@ -124935,7 +125722,9 @@
     "labels": [
       "Multilayer Insulation"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Spacecraft Power and Thermal Control"
+    ],
     "wikilinks": []
   },
   {
@@ -125259,7 +126048,9 @@
     "labels": [
       "Multispectral Imaging"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth Observation Sensor"
+    ],
     "wikilinks": []
   },
   {
@@ -127609,13 +128400,12 @@
     "iri": "urn:ngm:class:network-component",
     "labels": [
       "Network Component",
-      "Network Component (Blockchain)",
-      "Networkcomponent",
-      "bc-network-component"
+      "Networkcomponent"
     ],
     "is_subclass_of": [
       "Network Architecture",
-      "Protocol and Infrastructure"
+      "Protocol and Infrastructure",
+      "Network Component (category)"
     ],
     "wikilinks": [
       "Blockchain Technology",
@@ -129244,7 +130034,9 @@
     "labels": [
       "Nodal Precession"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Orbital Dynamics"
+    ],
     "wikilinks": []
   },
   {
@@ -130075,7 +130867,9 @@
     "labels": [
       "Normalised Burn Ratio"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth Observation Processing"
+    ],
     "wikilinks": []
   },
   {
@@ -130109,7 +130903,9 @@
     "labels": [
       "Normalised Difference Water Index"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth Observation Processing"
+    ],
     "wikilinks": []
   },
   {
@@ -130166,7 +130962,9 @@
     "labels": [
       "Normalized Data State"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth Observation Processing"
+    ],
     "wikilinks": []
   },
   {
@@ -130583,7 +131381,9 @@
     "labels": [
       "Nutation"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Space Reference Systems"
+    ],
     "wikilinks": []
   },
   {
@@ -130763,7 +131563,9 @@
       "OHB",
       "OHB SE"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Space Prime"
+    ],
     "wikilinks": []
   },
   {
@@ -131274,7 +132076,9 @@
     "labels": [
       "Object-based Image Analysis"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth Observation Processing"
+    ],
     "wikilinks": []
   },
   {
@@ -131372,7 +132176,9 @@
     "labels": [
       "Observation Campaign"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth Observation Sensor"
+    ],
     "wikilinks": []
   },
   {
@@ -131407,7 +132213,9 @@
     "labels": [
       "Observation Provenance"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth Observation Data Quality"
+    ],
     "wikilinks": []
   },
   {
@@ -131423,7 +132231,9 @@
     "labels": [
       "Observation Timestamp"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth Observation Data Quality"
+    ],
     "wikilinks": []
   },
   {
@@ -131439,7 +132249,9 @@
     "labels": [
       "Observational Astronomy"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Astronomy"
+    ],
     "wikilinks": []
   },
   {
@@ -131571,7 +132383,9 @@
     "labels": [
       "Ocean Colour Remote Sensing"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth Observation Applications"
+    ],
     "wikilinks": []
   },
   {
@@ -131587,7 +132401,9 @@
     "labels": [
       "Ocean World"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Planetary Science"
+    ],
     "wikilinks": []
   },
   {
@@ -131783,7 +132599,9 @@
     "labels": [
       "Off-nadir Angle"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth Observation Sensor"
+    ],
     "wikilinks": []
   },
   {
@@ -132224,7 +133042,8 @@
       "On-Premises"
     ],
     "is_subclass_of": [
-      "Infrastructure"
+      "Infrastructure",
+      "AI Infrastructure (category)"
     ],
     "wikilinks": [
       "Infrastructure",
@@ -132268,7 +133087,9 @@
     "labels": [
       "Onboard Computer"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Spacecraft Bus"
+    ],
     "wikilinks": []
   },
   {
@@ -134426,7 +135247,8 @@
       "Opportunity AI"
     ],
     "is_subclass_of": [
-      "Artificial Intelligence"
+      "Artificial Intelligence",
+      "AI Research Area"
     ],
     "wikilinks": []
   },
@@ -134443,7 +135265,9 @@
     "labels": [
       "Optical Astronomy"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Astronomy"
+    ],
     "wikilinks": []
   },
   {
@@ -134621,7 +135445,9 @@
     "labels": [
       "Optical Space Communication"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Spacecraft Communications"
+    ],
     "wikilinks": []
   },
   {
@@ -134656,7 +135482,8 @@
       "Optical Speech Recognition"
     ],
     "is_subclass_of": [
-      "Artificial Intelligence"
+      "Artificial Intelligence",
+      "AI Research Area"
     ],
     "wikilinks": []
   },
@@ -135146,7 +135973,9 @@
     "labels": [
       "Orbit Determination"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Orbital Dynamics"
+    ],
     "wikilinks": []
   },
   {
@@ -135162,7 +135991,9 @@
     "labels": [
       "Orbit Propagation"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Orbital Dynamics"
+    ],
     "wikilinks": []
   },
   {
@@ -135178,7 +136009,9 @@
     "labels": [
       "Orbital Conjunction"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Orbital Dynamics"
+    ],
     "wikilinks": []
   },
   {
@@ -135194,7 +136027,9 @@
     "labels": [
       "Orbital Debris"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Orbital Dynamics"
+    ],
     "wikilinks": []
   },
   {
@@ -135210,7 +136045,9 @@
     "labels": [
       "Orbital Dynamics"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Space Science and Systems"
+    ],
     "wikilinks": []
   },
   {
@@ -135226,7 +136063,9 @@
     "labels": [
       "Orbital Eccentricity"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Orbital Dynamics"
+    ],
     "wikilinks": []
   },
   {
@@ -135242,7 +136081,9 @@
     "labels": [
       "Orbital Element"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Orbital Dynamics"
+    ],
     "wikilinks": []
   },
   {
@@ -135258,7 +136099,9 @@
     "labels": [
       "Orbital Inclination"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Orbital Dynamics"
+    ],
     "wikilinks": []
   },
   {
@@ -135274,7 +136117,9 @@
     "labels": [
       "Orbital Insertion"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Orbital Dynamics"
+    ],
     "wikilinks": []
   },
   {
@@ -135290,7 +136135,9 @@
     "labels": [
       "Orbital Manoeuvre"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Orbital Dynamics"
+    ],
     "wikilinks": []
   },
   {
@@ -135306,7 +136153,9 @@
     "labels": [
       "Orbital Period"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Orbital Dynamics"
+    ],
     "wikilinks": []
   },
   {
@@ -135322,7 +136171,9 @@
     "labels": [
       "Orbital Perturbation"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Orbital Dynamics"
+    ],
     "wikilinks": []
   },
   {
@@ -135338,7 +136189,9 @@
     "labels": [
       "Orbital Velocity"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Orbital Dynamics"
+    ],
     "wikilinks": []
   },
   {
@@ -135616,7 +136469,9 @@
     "labels": [
       "Orthometric Height"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Geodesy"
+    ],
     "wikilinks": []
   },
   {
@@ -135632,7 +136487,9 @@
     "labels": [
       "Orthorectification"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Geodesy"
+    ],
     "wikilinks": []
   },
   {
@@ -135739,7 +136596,9 @@
     "labels": [
       "Outer Space"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Astronomy"
+    ],
     "wikilinks": []
   },
   {
@@ -136024,7 +136883,9 @@
     "labels": [
       "Ozone Layer"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth System Phenomena"
+    ],
     "wikilinks": []
   },
   {
@@ -136387,7 +137248,9 @@
     "labels": [
       "Pan-sharpening"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth Observation Processing"
+    ],
     "wikilinks": []
   },
   {
@@ -136403,7 +137266,9 @@
     "labels": [
       "Panchromatic Imaging"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth Observation Sensor"
+    ],
     "wikilinks": []
   },
   {
@@ -136420,7 +137285,8 @@
       "Pandemic Preparedness AI"
     ],
     "is_subclass_of": [
-      "Artificial Intelligence"
+      "Artificial Intelligence",
+      "AI Research Area"
     ],
     "wikilinks": [
       "Artificial Intelligence",
@@ -136505,7 +137371,9 @@
     "labels": [
       "Parabolic Flight"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Space Life Sciences"
+    ],
     "wikilinks": []
   },
   {
@@ -136800,7 +137668,9 @@
     "labels": [
       "Parameterize"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth Observation Processing"
+    ],
     "wikilinks": []
   },
   {
@@ -136816,7 +137686,9 @@
     "labels": [
       "Parameterized Data State"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth Observation Processing"
+    ],
     "wikilinks": []
   },
   {
@@ -136982,7 +137854,9 @@
     "labels": [
       "Partial Gravity"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Space Life Sciences"
+    ],
     "wikilinks": []
   },
   {
@@ -137925,7 +138799,9 @@
     "labels": [
       "Payload Fairing"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Spacecraft Bus"
+    ],
     "wikilinks": []
   },
   {
@@ -138827,7 +139703,9 @@
     "labels": [
       "Periapsis"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Orbital Dynamics"
+    ],
     "wikilinks": []
   },
   {
@@ -139679,7 +140557,9 @@
     "labels": [
       "Phase Unwrapping"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth Observation Processing"
+    ],
     "wikilinks": []
   },
   {
@@ -140395,7 +141275,9 @@
     "labels": [
       "Pixel Quality Flag"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth Observation Processing"
+    ],
     "wikilinks": []
   },
   {
@@ -140411,7 +141293,9 @@
     "labels": [
       "Pixel Screening"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth Observation Data Quality"
+    ],
     "wikilinks": []
   },
   {
@@ -140566,7 +141450,9 @@
     "labels": [
       "Planetary Atmosphere"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Planetary Science"
+    ],
     "wikilinks": []
   },
   {
@@ -140600,7 +141486,9 @@
     "labels": [
       "Planetary Formation"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Planetary Science"
+    ],
     "wikilinks": []
   },
   {
@@ -140635,7 +141523,9 @@
     "labels": [
       "Planetary Geology"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Planetary Science"
+    ],
     "wikilinks": []
   },
   {
@@ -140651,7 +141541,9 @@
     "labels": [
       "Planetary Habitability"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Planetary Science"
+    ],
     "wikilinks": []
   },
   {
@@ -140667,7 +141559,9 @@
     "labels": [
       "Planetary Interior"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Planetary Science"
+    ],
     "wikilinks": []
   },
   {
@@ -140683,7 +141577,9 @@
     "labels": [
       "Planetary Magnetosphere"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Planetary Science"
+    ],
     "wikilinks": []
   },
   {
@@ -140699,7 +141595,9 @@
     "labels": [
       "Planetary Nebula"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Astronomy"
+    ],
     "wikilinks": []
   },
   {
@@ -140715,7 +141613,9 @@
     "labels": [
       "Planetary Protection"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Planetary Science"
+    ],
     "wikilinks": []
   },
   {
@@ -140731,7 +141631,9 @@
     "labels": [
       "Planetary Ring"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Planetary Science"
+    ],
     "wikilinks": []
   },
   {
@@ -140784,7 +141686,9 @@
     "labels": [
       "Planetary Surface"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Planetary Science"
+    ],
     "wikilinks": []
   },
   {
@@ -140800,7 +141704,9 @@
     "labels": [
       "Planetary Volcanism"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Planetary Science"
+    ],
     "wikilinks": []
   },
   {
@@ -140950,7 +141856,9 @@
     "labels": [
       "Plasmapause"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Heliophysics"
+    ],
     "wikilinks": []
   },
   {
@@ -140966,7 +141874,9 @@
     "labels": [
       "Plasmasphere"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Heliophysics"
+    ],
     "wikilinks": []
   },
   {
@@ -141355,7 +142265,9 @@
     "labels": [
       "Plot"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth Observation Processing"
+    ],
     "wikilinks": []
   },
   {
@@ -141371,7 +142283,9 @@
     "labels": [
       "Plotted Data State"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth Observation Processing"
+    ],
     "wikilinks": []
   },
   {
@@ -141590,7 +142504,9 @@
     "labels": [
       "Pointing Accuracy"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Spacecraft Guidance Navigation and Control"
+    ],
     "wikilinks": [
       "Pointing Stability"
     ]
@@ -141608,7 +142524,9 @@
     "labels": [
       "Pointing Stability"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Spacecraft Guidance Navigation and Control"
+    ],
     "wikilinks": [
       "Pointing Accuracy"
     ]
@@ -141626,7 +142544,9 @@
     "labels": [
       "Polar Coordinate System"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Geodesy"
+    ],
     "wikilinks": []
   },
   {
@@ -141642,7 +142562,9 @@
     "labels": [
       "Polar Orbit"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Orbital Dynamics"
+    ],
     "wikilinks": []
   },
   {
@@ -142680,7 +143602,9 @@
     "labels": [
       "Positioning Navigation and Timing"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Space Science and Systems"
+    ],
     "wikilinks": []
   },
   {
@@ -142716,7 +143640,7 @@
       "Possibility Unlock"
     ],
     "is_subclass_of": [
-      "Economic Impact of AI"
+      "DeFi and Economics"
     ],
     "wikilinks": []
   },
@@ -142924,7 +143848,9 @@
     "labels": [
       "Potentiometric Surface"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth System Phenomena"
+    ],
     "wikilinks": []
   },
   {
@@ -142958,7 +143884,9 @@
     "labels": [
       "Power Conditioning and Distribution"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Spacecraft Power and Thermal Control"
+    ],
     "wikilinks": []
   },
   {
@@ -143093,7 +144021,9 @@
     "labels": [
       "Power Spectrum"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth Observation Processing"
+    ],
     "wikilinks": []
   },
   {
@@ -143346,7 +144276,9 @@
     "labels": [
       "Precession"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Space Reference Systems"
+    ],
     "wikilinks": []
   },
   {
@@ -143362,7 +144294,9 @@
     "labels": [
       "Precipitation Retrieval"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth Observation Applications"
+    ],
     "wikilinks": []
   },
   {
@@ -143378,7 +144312,9 @@
     "labels": [
       "Precise Point Positioning"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Positioning Navigation and Timing"
+    ],
     "wikilinks": []
   },
   {
@@ -144179,7 +145115,9 @@
       "Prime Contractor",
       "Prime Supplier"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Space Science and Systems"
+    ],
     "wikilinks": []
   },
   {
@@ -146219,7 +147157,9 @@
     "labels": [
       "Processed Data State"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth Observation Processing"
+    ],
     "wikilinks": []
   },
   {
@@ -146258,7 +147198,9 @@
     "labels": [
       "Processing Lineage"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth Observation Data Quality"
+    ],
     "wikilinks": []
   },
   {
@@ -146477,7 +147419,9 @@
     "labels": [
       "Product Validation"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth Observation Data Quality"
+    ],
     "wikilinks": []
   },
   {
@@ -147609,7 +148553,9 @@
     "labels": [
       "Propellant Feed System"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Spacecraft Propulsion"
+    ],
     "wikilinks": []
   },
   {
@@ -147625,7 +148571,9 @@
     "labels": [
       "Propellant Tank"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Spacecraft Propulsion"
+    ],
     "wikilinks": []
   },
   {
@@ -147641,7 +148589,9 @@
     "labels": [
       "Propellant"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Spacecraft Propulsion"
+    ],
     "wikilinks": []
   },
   {
@@ -148269,7 +149219,9 @@
     "labels": [
       "Propulsion Efficiency"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Spacecraft Propulsion"
+    ],
     "wikilinks": []
   },
   {
@@ -148285,7 +149237,9 @@
     "labels": [
       "Propulsion Power Processing Unit"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Spacecraft Propulsion"
+    ],
     "wikilinks": []
   },
   {
@@ -148625,7 +149579,9 @@
     "labels": [
       "Protostar"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Astronomy"
+    ],
     "wikilinks": []
   },
   {
@@ -148984,7 +149940,9 @@
     "labels": [
       "Proximity"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth Observation Processing"
+    ],
     "wikilinks": []
   },
   {
@@ -149438,7 +150396,8 @@
       "Public Perception of AI"
     ],
     "is_subclass_of": [
-      "Artificial Intelligence"
+      "Artificial Intelligence",
+      "AI Governance and Ethics"
     ],
     "wikilinks": []
   },
@@ -149716,7 +150675,9 @@
     "labels": [
       "Pushbroom Scanner"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth Observation Sensor"
+    ],
     "wikilinks": []
   },
   {
@@ -150020,7 +150981,9 @@
     "labels": [
       "QinetiQ"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Space Prime"
+    ],
     "wikilinks": []
   },
   {
@@ -150282,7 +151245,9 @@
     "labels": [
       "Quality Mask"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth Observation Processing"
+    ],
     "wikilinks": []
   },
   {
@@ -150320,7 +151285,9 @@
     "labels": [
       "Quality Screening"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth Observation Data Quality"
+    ],
     "wikilinks": []
   },
   {
@@ -150638,7 +151605,9 @@
     "labels": [
       "Quasar"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Astronomy"
+    ],
     "wikilinks": []
   },
   {
@@ -151967,7 +152936,9 @@
     "labels": [
       "Radar Foreshortening"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth Observation Data Quality"
+    ],
     "wikilinks": []
   },
   {
@@ -151983,7 +152954,9 @@
     "labels": [
       "Radar Instrument"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth Observation Sensor"
+    ],
     "wikilinks": []
   },
   {
@@ -151999,7 +152972,9 @@
     "labels": [
       "Radar Layover"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth Observation Data Quality"
+    ],
     "wikilinks": []
   },
   {
@@ -152015,7 +152990,9 @@
     "labels": [
       "Radar Shadow"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth Observation Data Quality"
+    ],
     "wikilinks": []
   },
   {
@@ -152057,7 +153034,9 @@
     "labels": [
       "Radiation Belt"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Heliophysics"
+    ],
     "wikilinks": []
   },
   {
@@ -152073,7 +153052,9 @@
     "labels": [
       "Radiation Dosimetry"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Space Life Sciences"
+    ],
     "wikilinks": []
   },
   {
@@ -152089,7 +153070,9 @@
     "labels": [
       "Radiation Hardness Assurance"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Spacecraft Bus"
+    ],
     "wikilinks": []
   },
   {
@@ -152105,7 +153088,9 @@
     "labels": [
       "Radiation Shielding"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Spacecraft Bus"
+    ],
     "wikilinks": []
   },
   {
@@ -152121,7 +153106,9 @@
     "labels": [
       "Radiative Transfer Model"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth Observation Processing"
+    ],
     "wikilinks": []
   },
   {
@@ -152194,7 +153181,9 @@
     "labels": [
       "Radio Astronomy"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Astronomy"
+    ],
     "wikilinks": []
   },
   {
@@ -152264,7 +153253,9 @@
     "labels": [
       "Radio-frequency Communication"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Spacecraft Communications"
+    ],
     "wikilinks": []
   },
   {
@@ -152322,7 +153313,9 @@
     "labels": [
       "Radiometer"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth Observation Sensor"
+    ],
     "wikilinks": []
   },
   {
@@ -152374,7 +153367,9 @@
     "labels": [
       "Radiometric Resolution"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth Observation Sensor"
+    ],
     "wikilinks": []
   },
   {
@@ -152491,7 +153486,9 @@
     "labels": [
       "Raised Bank"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth System Phenomena"
+    ],
     "wikilinks": []
   },
   {
@@ -153047,7 +154044,9 @@
     "labels": [
       "Re-entry"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Orbital Dynamics"
+    ],
     "wikilinks": []
   },
   {
@@ -154201,7 +155200,9 @@
     "labels": [
       "Real-time Kinematic Positioning"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Positioning Navigation and Timing"
+    ],
     "wikilinks": []
   },
   {
@@ -154456,7 +155457,9 @@
       "Reanalysis",
       "Reanalyze"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth Observation Processing"
+    ],
     "wikilinks": []
   },
   {
@@ -154472,7 +155475,9 @@
     "labels": [
       "Reanalyzed Data State"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth Observation Processing"
+    ],
     "wikilinks": []
   },
   {
@@ -154620,7 +155625,9 @@
     "labels": [
       "Receiver Autonomous Integrity Monitoring"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Positioning Navigation and Timing"
+    ],
     "wikilinks": []
   },
   {
@@ -154636,7 +155643,9 @@
     "labels": [
       "Receiver Clock Bias"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Positioning Navigation and Timing"
+    ],
     "wikilinks": []
   },
   {
@@ -154746,7 +155755,9 @@
     "labels": [
       "Reconstructed Data State"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth Observation Processing"
+    ],
     "wikilinks": []
   },
   {
@@ -154763,7 +155774,9 @@
       "Reconstruction",
       "Reconstruct"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth Observation Processing"
+    ],
     "wikilinks": []
   },
   {
@@ -155050,7 +156063,9 @@
     "labels": [
       "Redshift"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Astronomy"
+    ],
     "wikilinks": []
   },
   {
@@ -155209,7 +156224,9 @@
     "labels": [
       "Reference Ellipsoid Flattening"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Geodesy"
+    ],
     "wikilinks": []
   },
   {
@@ -155225,7 +156242,9 @@
     "labels": [
       "Reference Ellipsoid"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Geodesy"
+    ],
     "wikilinks": []
   },
   {
@@ -155278,7 +156297,9 @@
     "labels": [
       "Reference Measurement"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth Observation Data Quality"
+    ],
     "wikilinks": []
   },
   {
@@ -155429,7 +156450,9 @@
     "labels": [
       "Reformatted Data State"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth Observation Processing"
+    ],
     "wikilinks": []
   },
   {
@@ -155499,7 +156522,9 @@
     "labels": [
       "Regenerative Payload"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Spacecraft Communications"
+    ],
     "wikilinks": []
   },
   {
@@ -155515,7 +156540,9 @@
     "labels": [
       "Regolith"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Planetary Science"
+    ],
     "wikilinks": []
   },
   {
@@ -155580,7 +156607,9 @@
     "labels": [
       "Regridded Data State"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth Observation Processing"
+    ],
     "wikilinks": []
   },
   {
@@ -155597,7 +156626,9 @@
       "Regridding",
       "Regrid"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth Observation Processing"
+    ],
     "wikilinks": []
   },
   {
@@ -156747,7 +157778,9 @@
     "labels": [
       "Remote Sensing Image"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth Observation Processing"
+    ],
     "wikilinks": []
   },
   {
@@ -156763,7 +157796,9 @@
     "labels": [
       "Remote Sensing Platform"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth Observation Sensor"
+    ],
     "wikilinks": []
   },
   {
@@ -157221,7 +158256,9 @@
     "labels": [
       "Repeat Ground Track"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Orbital Dynamics"
+    ],
     "wikilinks": []
   },
   {
@@ -158283,7 +159320,9 @@
     "labels": [
       "Restricted Three-body Problem"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Orbital Dynamics"
+    ],
     "wikilinks": []
   },
   {
@@ -158617,7 +159656,9 @@
     "labels": [
       "Revisit Time"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth Observation Sensor"
+    ],
     "wikilinks": []
   },
   {
@@ -158859,7 +159900,9 @@
     "labels": [
       "Right Ascension of the Ascending Node"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Orbital Dynamics"
+    ],
     "wikilinks": []
   },
   {
@@ -158875,7 +159918,9 @@
     "labels": [
       "Right Ascension"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Space Reference Systems"
+    ],
     "wikilinks": []
   },
   {
@@ -160764,7 +161809,9 @@
     "labels": [
       "Rocket Equation"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Spacecraft Propulsion"
+    ],
     "wikilinks": []
   },
   {
@@ -161626,7 +162673,9 @@
     "labels": [
       "SAR Coherence"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth Observation Processing"
+    ],
     "wikilinks": []
   },
   {
@@ -161642,7 +162691,9 @@
     "labels": [
       "SAR Terrain Correction"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth Observation Processing"
+    ],
     "wikilinks": []
   },
   {
@@ -163301,7 +164352,9 @@
     "labels": [
       "Sample Return"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Planetary Science"
+    ],
     "wikilinks": []
   },
   {
@@ -163336,7 +164389,9 @@
     "labels": [
       "Sampling Bias"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth Observation Data Quality"
+    ],
     "wikilinks": []
   },
   {
@@ -163573,7 +164628,9 @@
     "labels": [
       "Satellite Antenna"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Spacecraft Communications"
+    ],
     "wikilinks": []
   },
   {
@@ -163589,7 +164646,9 @@
     "labels": [
       "Satellite Beam"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Spacecraft Communications"
+    ],
     "wikilinks": []
   },
   {
@@ -163605,7 +164664,9 @@
     "labels": [
       "Satellite Channel Coding"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Spacecraft Communications"
+    ],
     "wikilinks": []
   },
   {
@@ -163621,7 +164682,9 @@
     "labels": [
       "Satellite Clock Error"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Positioning Navigation and Timing"
+    ],
     "wikilinks": []
   },
   {
@@ -163657,7 +164720,9 @@
     "labels": [
       "Satellite Constellation"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Spacecraft Bus"
+    ],
     "wikilinks": []
   },
   {
@@ -163673,7 +164738,9 @@
     "labels": [
       "Satellite Doppler Shift"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Spacecraft Communications"
+    ],
     "wikilinks": []
   },
   {
@@ -163707,7 +164774,9 @@
     "labels": [
       "Satellite Gateway"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Spacecraft Communications"
+    ],
     "wikilinks": []
   },
   {
@@ -163723,7 +164792,9 @@
     "labels": [
       "Satellite Handover"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Spacecraft Communications"
+    ],
     "wikilinks": []
   },
   {
@@ -163762,7 +164833,9 @@
     "labels": [
       "Satellite Link Budget"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Spacecraft Communications"
+    ],
     "wikilinks": []
   },
   {
@@ -163778,7 +164851,9 @@
     "labels": [
       "Satellite Modulation"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Spacecraft Communications"
+    ],
     "wikilinks": []
   },
   {
@@ -163813,7 +164888,9 @@
     "labels": [
       "Satellite Multiple Access"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Spacecraft Communications"
+    ],
     "wikilinks": []
   },
   {
@@ -163829,7 +164906,9 @@
     "labels": [
       "Satellite Navigation Solution"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Positioning Navigation and Timing"
+    ],
     "wikilinks": []
   },
   {
@@ -163863,7 +164942,9 @@
     "labels": [
       "Satellite Service Coverage"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Spacecraft Communications"
+    ],
     "wikilinks": []
   },
   {
@@ -163879,7 +164960,9 @@
     "labels": [
       "Satellite Spectrum Allocation"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Spacecraft Communications"
+    ],
     "wikilinks": []
   },
   {
@@ -163895,7 +164978,9 @@
     "labels": [
       "Satellite Terminal"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Spacecraft Communications"
+    ],
     "wikilinks": []
   },
   {
@@ -163911,7 +164996,9 @@
     "labels": [
       "Satellite Transceiver"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Spacecraft Communications"
+    ],
     "wikilinks": []
   },
   {
@@ -163945,7 +165032,9 @@
     "labels": [
       "Satellite-based Augmentation System"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Positioning Navigation and Timing"
+    ],
     "wikilinks": []
   },
   {
@@ -164024,7 +165113,9 @@
     "labels": [
       "Saturated Zone"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth System Phenomena"
+    ],
     "wikilinks": []
   },
   {
@@ -164161,7 +165252,9 @@
     "labels": [
       "Scaled Data State"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth Observation Processing"
+    ],
     "wikilinks": []
   },
   {
@@ -164239,7 +165332,9 @@
     "labels": [
       "Scattergram"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth Observation Processing"
+    ],
     "wikilinks": []
   },
   {
@@ -164255,7 +165350,9 @@
     "labels": [
       "Scatterometer"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth Observation Sensor"
+    ],
     "wikilinks": []
   },
   {
@@ -165350,7 +166447,9 @@
       "Sea Ice Floe",
       "IceFloe"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth System Phenomena"
+    ],
     "wikilinks": []
   },
   {
@@ -165366,7 +166465,9 @@
     "labels": [
       "Sea Ice Lead"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth System Phenomena"
+    ],
     "wikilinks": []
   },
   {
@@ -165382,7 +166483,9 @@
     "labels": [
       "Sea Ice Monitoring"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth Observation Applications"
+    ],
     "wikilinks": []
   },
   {
@@ -165398,7 +166501,9 @@
     "labels": [
       "Sea Ice"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth System Phenomena"
+    ],
     "wikilinks": []
   },
   {
@@ -165414,7 +166519,9 @@
     "labels": [
       "Sea Surface Height Measurement"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth Observation Applications"
+    ],
     "wikilinks": []
   },
   {
@@ -165430,7 +166537,9 @@
     "labels": [
       "Sea Surface Temperature Retrieval"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth Observation Applications"
+    ],
     "wikilinks": []
   },
   {
@@ -165683,7 +166792,9 @@
     "labels": [
       "Seasonal Ice"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth System Phenomena"
+    ],
     "wikilinks": []
   },
   {
@@ -166623,7 +167734,9 @@
     "labels": [
       "Seepage Face"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth System Phenomena"
+    ],
     "wikilinks": []
   },
   {
@@ -167575,7 +168688,9 @@
     "labels": [
       "Semi-major Axis"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Orbital Dynamics"
+    ],
     "wikilinks": []
   },
   {
@@ -167816,7 +168931,9 @@
     "labels": [
       "Sensor Footprint"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth Observation Sensor"
+    ],
     "wikilinks": []
   },
   {
@@ -168027,7 +169144,9 @@
     "labels": [
       "Sensor Saturation"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth Observation Sensor"
+    ],
     "wikilinks": []
   },
   {
@@ -169889,7 +171008,9 @@
     "labels": [
       "Signal-to-noise Ratio"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth Observation Sensor"
+    ],
     "wikilinks": []
   },
   {
@@ -170254,7 +171375,9 @@
     "labels": [
       "Single Event Effect"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Spacecraft Bus"
+    ],
     "wikilinks": []
   },
   {
@@ -170270,7 +171393,9 @@
     "labels": [
       "Single Event Upset"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Spacecraft Bus"
+    ],
     "wikilinks": []
   },
   {
@@ -172418,7 +173543,7 @@
       "Software Development Kit"
     ],
     "is_subclass_of": [
-      "Application Software"
+      "Software Engineering (category)"
     ],
     "wikilinks": [
       "Application Software",
@@ -172519,13 +173644,11 @@
     "iri": "urn:ngm:class:software-engineering",
     "labels": [
       "Software Engineering",
-      "Software Engineering (Infrastructure)",
-      "SoftwareEngineering",
-      "infra-software-engineering"
+      "SoftwareEngineering"
     ],
     "is_subclass_of": [
       "Computer Science",
-      "Infrastructure"
+      "Software Engineering (category)"
     ],
     "wikilinks": []
   },
@@ -172719,7 +173842,9 @@
     "labels": [
       "Soil Moisture Retrieval"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth Observation Applications"
+    ],
     "wikilinks": []
   },
   {
@@ -172772,7 +173897,9 @@
     "labels": [
       "Solar Cycle"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Heliophysics"
+    ],
     "wikilinks": []
   },
   {
@@ -172788,7 +173915,9 @@
     "labels": [
       "Solar Energetic Particle"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Heliophysics"
+    ],
     "wikilinks": []
   },
   {
@@ -172804,7 +173933,9 @@
     "labels": [
       "Solar Flare"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Heliophysics"
+    ],
     "wikilinks": []
   },
   {
@@ -172820,7 +173951,9 @@
     "labels": [
       "Solar Irradiance"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Heliophysics"
+    ],
     "wikilinks": []
   },
   {
@@ -172836,7 +173969,9 @@
     "labels": [
       "Solar Magnetic Field"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Heliophysics"
+    ],
     "wikilinks": []
   },
   {
@@ -172889,7 +174024,9 @@
     "labels": [
       "Solar Radiation Pressure"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Heliophysics"
+    ],
     "wikilinks": []
   },
   {
@@ -172905,7 +174042,9 @@
     "labels": [
       "Solar Sail"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Spacecraft Propulsion"
+    ],
     "wikilinks": []
   },
   {
@@ -172921,7 +174060,9 @@
     "labels": [
       "Solar Wind"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Heliophysics"
+    ],
     "wikilinks": []
   },
   {
@@ -173008,7 +174149,9 @@
     "labels": [
       "Solid Rocket Motor"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Spacecraft Propulsion"
+    ],
     "wikilinks": []
   },
   {
@@ -173319,7 +174462,9 @@
     "labels": [
       "Space Biology"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Space Life Sciences"
+    ],
     "wikilinks": []
   },
   {
@@ -173353,7 +174498,9 @@
     "labels": [
       "Space Environment"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Space Life Sciences"
+    ],
     "wikilinks": []
   },
   {
@@ -173387,7 +174534,9 @@
     "labels": [
       "Space Life Sciences"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Space Science and Systems"
+    ],
     "wikilinks": []
   },
   {
@@ -173403,7 +174552,9 @@
     "labels": [
       "Space Medicine"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Space Life Sciences"
+    ],
     "wikilinks": []
   },
   {
@@ -173419,7 +174570,9 @@
     "labels": [
       "Space Physiology"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Space Life Sciences"
+    ],
     "wikilinks": []
   },
   {
@@ -173435,7 +174588,9 @@
     "labels": [
       "Space Plasma"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Heliophysics"
+    ],
     "wikilinks": []
   },
   {
@@ -173506,7 +174661,9 @@
     "labels": [
       "Space Radiation"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Space Life Sciences"
+    ],
     "wikilinks": []
   },
   {
@@ -173522,7 +174679,9 @@
     "labels": [
       "Space Reference Systems"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Space Science and Systems"
+    ],
     "wikilinks": []
   },
   {
@@ -173538,7 +174697,9 @@
     "labels": [
       "Space Research Mission"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Space Life Sciences"
+    ],
     "wikilinks": []
   },
   {
@@ -173588,7 +174749,9 @@
     "labels": [
       "Space Science"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Space Science and Systems"
+    ],
     "wikilinks": []
   },
   {
@@ -173604,7 +174767,9 @@
     "labels": [
       "Space Segment"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Spacecraft Bus"
+    ],
     "wikilinks": []
   },
   {
@@ -173620,7 +174785,9 @@
     "labels": [
       "Space Situational Awareness"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Orbital Dynamics"
+    ],
     "wikilinks": []
   },
   {
@@ -173692,7 +174859,9 @@
       "Space Systems Integrator",
       "Space System Integrator"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Space Prime"
+    ],
     "wikilinks": []
   },
   {
@@ -173708,7 +174877,9 @@
     "labels": [
       "Space Traffic Management"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Orbital Dynamics"
+    ],
     "wikilinks": []
   },
   {
@@ -173724,7 +174895,9 @@
     "labels": [
       "Space Weather Forecasting"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Heliophysics"
+    ],
     "wikilinks": []
   },
   {
@@ -173740,7 +174913,9 @@
     "labels": [
       "Space Weather"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Heliophysics"
+    ],
     "wikilinks": []
   },
   {
@@ -173756,7 +174931,9 @@
     "labels": [
       "Space-to-ground Link"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Spacecraft Communications"
+    ],
     "wikilinks": []
   },
   {
@@ -173772,7 +174949,9 @@
     "labels": [
       "Space-to-space Link"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Spacecraft Communications"
+    ],
     "wikilinks": []
   },
   {
@@ -173806,7 +174985,9 @@
     "labels": [
       "Spacecraft Attitude"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Spacecraft Guidance Navigation and Control"
+    ],
     "wikilinks": [
       "Pointing Accuracy",
       "Attitude Quaternion"
@@ -173825,7 +175006,9 @@
     "labels": [
       "Spacecraft Autonomy"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Spacecraft Bus"
+    ],
     "wikilinks": []
   },
   {
@@ -173841,7 +175024,9 @@
     "labels": [
       "Spacecraft Battery Depth of Discharge"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Spacecraft Power and Thermal Control"
+    ],
     "wikilinks": []
   },
   {
@@ -173857,7 +175042,9 @@
     "labels": [
       "Spacecraft Battery Thermal Runaway"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Spacecraft Power and Thermal Control"
+    ],
     "wikilinks": []
   },
   {
@@ -173873,7 +175060,9 @@
     "labels": [
       "Spacecraft Battery"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Spacecraft Power and Thermal Control"
+    ],
     "wikilinks": []
   },
   {
@@ -173889,7 +175078,9 @@
     "labels": [
       "Spacecraft Bus"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Space Science and Systems"
+    ],
     "wikilinks": []
   },
   {
@@ -173905,7 +175096,9 @@
     "labels": [
       "Spacecraft Communications"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Space Science and Systems"
+    ],
     "wikilinks": []
   },
   {
@@ -173921,7 +175114,9 @@
     "labels": [
       "Spacecraft Data Bus"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Spacecraft Bus"
+    ],
     "wikilinks": []
   },
   {
@@ -173957,7 +175152,9 @@
     "labels": [
       "Spacecraft Docking"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Spacecraft Guidance Navigation and Control"
+    ],
     "wikilinks": []
   },
   {
@@ -174009,7 +175206,9 @@
     "labels": [
       "Spacecraft Guidance Navigation and Control"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Space Science and Systems"
+    ],
     "wikilinks": []
   },
   {
@@ -174025,7 +175224,9 @@
     "labels": [
       "Spacecraft Guidance"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Spacecraft Guidance Navigation and Control"
+    ],
     "wikilinks": [
       "Spacecraft Navigation"
     ]
@@ -174043,7 +175244,9 @@
     "labels": [
       "Spacecraft Habitat"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Space Life Sciences"
+    ],
     "wikilinks": []
   },
   {
@@ -174059,7 +175262,9 @@
     "labels": [
       "Spacecraft Heater"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Spacecraft Power and Thermal Control"
+    ],
     "wikilinks": []
   },
   {
@@ -174093,7 +175298,9 @@
     "labels": [
       "Spacecraft Integration"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Spacecraft Bus"
+    ],
     "wikilinks": []
   },
   {
@@ -174127,7 +175334,9 @@
     "labels": [
       "Spacecraft Mechanism"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Spacecraft Bus"
+    ],
     "wikilinks": []
   },
   {
@@ -174143,7 +175352,9 @@
     "labels": [
       "Spacecraft Module"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Space Life Sciences"
+    ],
     "wikilinks": []
   },
   {
@@ -174159,7 +175370,9 @@
     "labels": [
       "Spacecraft Navigation Filter"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Spacecraft Guidance Navigation and Control"
+    ],
     "wikilinks": []
   },
   {
@@ -174175,7 +175388,9 @@
     "labels": [
       "Spacecraft Navigation"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Spacecraft Guidance Navigation and Control"
+    ],
     "wikilinks": [
       "Spacecraft Guidance"
     ]
@@ -174193,7 +175408,9 @@
     "labels": [
       "Spacecraft Payload"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Spacecraft Bus"
+    ],
     "wikilinks": []
   },
   {
@@ -174209,7 +175426,9 @@
     "labels": [
       "Spacecraft Phase Change Thermal Storage"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Spacecraft Power and Thermal Control"
+    ],
     "wikilinks": []
   },
   {
@@ -174225,7 +175444,9 @@
     "labels": [
       "Spacecraft Pointing"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Spacecraft Guidance Navigation and Control"
+    ],
     "wikilinks": []
   },
   {
@@ -174241,7 +175462,9 @@
     "labels": [
       "Spacecraft Power Budget"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Spacecraft Power and Thermal Control"
+    ],
     "wikilinks": []
   },
   {
@@ -174257,7 +175480,9 @@
     "labels": [
       "Spacecraft Power and Thermal Control"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Space Science and Systems"
+    ],
     "wikilinks": []
   },
   {
@@ -174273,7 +175498,9 @@
     "labels": [
       "Spacecraft Propulsion"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Space Science and Systems"
+    ],
     "wikilinks": [
       "Electric Propulsion"
     ]
@@ -174291,7 +175518,9 @@
     "labels": [
       "Spacecraft Proximity Operations"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Spacecraft Guidance Navigation and Control"
+    ],
     "wikilinks": []
   },
   {
@@ -174307,7 +175536,9 @@
     "labels": [
       "Spacecraft Radiator"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Spacecraft Power and Thermal Control"
+    ],
     "wikilinks": []
   },
   {
@@ -174323,7 +175554,9 @@
     "labels": [
       "Spacecraft Ranging"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Spacecraft Communications"
+    ],
     "wikilinks": []
   },
   {
@@ -174339,7 +175572,9 @@
     "labels": [
       "Spacecraft Redundancy"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Spacecraft Bus"
+    ],
     "wikilinks": []
   },
   {
@@ -174355,7 +175590,9 @@
     "labels": [
       "Spacecraft Reliability"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Spacecraft Bus"
+    ],
     "wikilinks": []
   },
   {
@@ -174371,7 +175608,9 @@
     "labels": [
       "Spacecraft Rendezvous"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Spacecraft Guidance Navigation and Control"
+    ],
     "wikilinks": []
   },
   {
@@ -174387,7 +175626,9 @@
     "labels": [
       "Spacecraft Solar Array"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Spacecraft Power and Thermal Control"
+    ],
     "wikilinks": [
       "Spacecraft Electrical Power System"
     ]
@@ -174405,7 +175646,9 @@
     "labels": [
       "Spacecraft Solar Cell"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Spacecraft Power and Thermal Control"
+    ],
     "wikilinks": []
   },
   {
@@ -174421,7 +175664,9 @@
     "labels": [
       "Spacecraft Structure"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Spacecraft Bus"
+    ],
     "wikilinks": []
   },
   {
@@ -174455,7 +175700,9 @@
     "labels": [
       "Spacecraft Telemetry"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Spacecraft Communications"
+    ],
     "wikilinks": []
   },
   {
@@ -174471,7 +175718,9 @@
     "labels": [
       "Spacecraft Thermal Coating"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Spacecraft Power and Thermal Control"
+    ],
     "wikilinks": []
   },
   {
@@ -174487,7 +175736,9 @@
     "labels": [
       "Spacecraft Thermal Control"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Spacecraft Power and Thermal Control"
+    ],
     "wikilinks": []
   },
   {
@@ -174503,7 +175754,9 @@
     "labels": [
       "Spacecraft Thermal Model"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Spacecraft Power and Thermal Control"
+    ],
     "wikilinks": []
   },
   {
@@ -174519,7 +175772,9 @@
     "labels": [
       "Spacecraft Transponder"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Spacecraft Communications"
+    ],
     "wikilinks": []
   },
   {
@@ -174535,7 +175790,9 @@
     "labels": [
       "Spacecraft Waste Management"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Space Life Sciences"
+    ],
     "wikilinks": []
   },
   {
@@ -174551,7 +175808,9 @@
     "labels": [
       "Spacecraft Water Recovery"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Space Life Sciences"
+    ],
     "wikilinks": []
   },
   {
@@ -174621,7 +175880,9 @@
     "labels": [
       "Spaceflight Analogue"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Space Life Sciences"
+    ],
     "wikilinks": []
   },
   {
@@ -174637,7 +175898,9 @@
     "labels": [
       "Spaceflight Biospecimen"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Space Life Sciences"
+    ],
     "wikilinks": []
   },
   {
@@ -174653,7 +175916,9 @@
     "labels": [
       "Spaceflight Bone Loss"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Space Life Sciences"
+    ],
     "wikilinks": []
   },
   {
@@ -174669,7 +175934,9 @@
     "labels": [
       "Spaceflight Cardiovascular Adaptation"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Space Life Sciences"
+    ],
     "wikilinks": []
   },
   {
@@ -174685,7 +175952,9 @@
     "labels": [
       "Spaceflight Circadian Rhythm"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Space Life Sciences"
+    ],
     "wikilinks": []
   },
   {
@@ -174701,7 +175970,9 @@
     "labels": [
       "Spaceflight Experiment"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Space Life Sciences"
+    ],
     "wikilinks": []
   },
   {
@@ -174717,7 +175988,9 @@
     "labels": [
       "Spaceflight Fluid Shift"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Space Life Sciences"
+    ],
     "wikilinks": []
   },
   {
@@ -174733,7 +176006,9 @@
     "labels": [
       "Spaceflight Immune Response"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Space Life Sciences"
+    ],
     "wikilinks": []
   },
   {
@@ -174749,7 +176024,9 @@
     "labels": [
       "Spaceflight Isolation"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Space Life Sciences"
+    ],
     "wikilinks": []
   },
   {
@@ -174765,7 +176042,9 @@
     "labels": [
       "Spaceflight Microbiology"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Space Life Sciences"
+    ],
     "wikilinks": []
   },
   {
@@ -174781,7 +176060,9 @@
     "labels": [
       "Spaceflight Muscle Atrophy"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Space Life Sciences"
+    ],
     "wikilinks": []
   },
   {
@@ -174797,7 +176078,9 @@
     "labels": [
       "Spaceflight Omics"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Space Life Sciences"
+    ],
     "wikilinks": []
   },
   {
@@ -174813,7 +176096,9 @@
     "labels": [
       "Spaceflight Plant Biology"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Space Life Sciences"
+    ],
     "wikilinks": []
   },
   {
@@ -174829,7 +176114,9 @@
     "labels": [
       "Spaceflight Programme"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Space Life Sciences"
+    ],
     "wikilinks": []
   },
   {
@@ -174845,7 +176132,9 @@
     "labels": [
       "Spaceflight-associated Neuro-ocular Syndrome"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Space Life Sciences"
+    ],
     "wikilinks": []
   },
   {
@@ -174861,7 +176150,9 @@
     "labels": [
       "Spaceflight"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Space Life Sciences"
+    ],
     "wikilinks": []
   },
   {
@@ -175319,7 +176610,9 @@
     "labels": [
       "Spatial Coverage"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth Observation Data Quality"
+    ],
     "wikilinks": []
   },
   {
@@ -175634,7 +176927,9 @@
     "labels": [
       "Spatial Reference System"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Geodesy"
+    ],
     "wikilinks": []
   },
   {
@@ -175650,7 +176945,9 @@
     "labels": [
       "Spatial Resolution"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth Observation Sensor"
+    ],
     "wikilinks": []
   },
   {
@@ -175775,7 +177072,9 @@
     "labels": [
       "Spatiotemporal Asset Catalogue"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth Observation Data Quality"
+    ],
     "wikilinks": []
   },
   {
@@ -175791,7 +177090,9 @@
     "labels": [
       "Spatiotemporal Interpolation"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth Observation Processing"
+    ],
     "wikilinks": []
   },
   {
@@ -175864,7 +177165,9 @@
     "labels": [
       "Specific Impulse"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Spacecraft Propulsion"
+    ],
     "wikilinks": []
   },
   {
@@ -175948,7 +177251,9 @@
     "labels": [
       "Speckle Filtering"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth Observation Processing"
+    ],
     "wikilinks": []
   },
   {
@@ -175965,7 +177270,9 @@
       "Spectral Analysis",
       "FrequencyDomainAnalysis"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth Observation Processing"
+    ],
     "wikilinks": []
   },
   {
@@ -175981,7 +177288,9 @@
     "labels": [
       "Spectral Band"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth Observation Sensor"
+    ],
     "wikilinks": []
   },
   {
@@ -175997,7 +177306,9 @@
     "labels": [
       "Spectral Classification"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Astronomy"
+    ],
     "wikilinks": []
   },
   {
@@ -176037,7 +177348,9 @@
     "labels": [
       "Spectral Filtering"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth Observation Processing"
+    ],
     "wikilinks": []
   },
   {
@@ -176053,7 +177366,9 @@
     "labels": [
       "Spectral Radiance"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth Observation Processing"
+    ],
     "wikilinks": []
   },
   {
@@ -176069,7 +177384,9 @@
     "labels": [
       "Spectral Resolution"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth Observation Sensor"
+    ],
     "wikilinks": []
   },
   {
@@ -176085,7 +177402,9 @@
     "labels": [
       "Spectral Response Function"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth Observation Sensor"
+    ],
     "wikilinks": []
   },
   {
@@ -176101,7 +177420,9 @@
     "labels": [
       "Spectral Synthesis"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth Observation Processing"
+    ],
     "wikilinks": []
   },
   {
@@ -176117,7 +177438,9 @@
     "labels": [
       "Spectral Unmixing"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth Observation Processing"
+    ],
     "wikilinks": []
   },
   {
@@ -176171,7 +177494,9 @@
     "labels": [
       "Spectrum"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth Observation Processing"
+    ],
     "wikilinks": []
   },
   {
@@ -176373,7 +177698,9 @@
     "labels": [
       "Spherical Harmonic Analysis"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth Observation Processing"
+    ],
     "wikilinks": []
   },
   {
@@ -176516,7 +177843,9 @@
     "labels": [
       "Spot Beam"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Spacecraft Communications"
+    ],
     "wikilinks": []
   },
   {
@@ -177620,7 +178949,9 @@
     "labels": [
       "Star Cluster"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Astronomy"
+    ],
     "wikilinks": []
   },
   {
@@ -177636,7 +178967,9 @@
     "labels": [
       "Star Formation"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Astronomy"
+    ],
     "wikilinks": []
   },
   {
@@ -178229,7 +179562,9 @@
     "labels": [
       "Station Keeping"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Orbital Dynamics"
+    ],
     "wikilinks": []
   },
   {
@@ -178520,7 +179855,9 @@
     "labels": [
       "Stellar Astrophysics"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Astronomy"
+    ],
     "wikilinks": []
   },
   {
@@ -178590,7 +179927,9 @@
     "labels": [
       "Stellar Evolution"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Astronomy"
+    ],
     "wikilinks": []
   },
   {
@@ -178624,7 +179963,9 @@
     "labels": [
       "Stellar Nucleosynthesis"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Astronomy"
+    ],
     "wikilinks": []
   },
   {
@@ -178640,7 +179981,9 @@
     "labels": [
       "Stellar Realm"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Astronomy"
+    ],
     "wikilinks": []
   },
   {
@@ -179162,7 +180505,9 @@
     "labels": [
       "Store-and-forward Communication"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Spacecraft Communications"
+    ],
     "wikilinks": []
   },
   {
@@ -179317,7 +180662,9 @@
     "labels": [
       "Stratopause"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth System Phenomena"
+    ],
     "wikilinks": []
   },
   {
@@ -179838,7 +181185,9 @@
     "labels": [
       "Subsetted Data State"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth Observation Processing"
+    ],
     "wikilinks": []
   },
   {
@@ -179880,7 +181229,9 @@
     "labels": [
       "Subsurface Ocean"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Planetary Science"
+    ],
     "wikilinks": []
   },
   {
@@ -179993,7 +181344,9 @@
     "labels": [
       "Sun-sensor Geometry"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth Observation Sensor"
+    ],
     "wikilinks": []
   },
   {
@@ -180009,7 +181362,9 @@
     "labels": [
       "Sun-synchronous Orbit"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Orbital Dynamics"
+    ],
     "wikilinks": []
   },
   {
@@ -180025,7 +181380,9 @@
     "labels": [
       "Sunspot"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Heliophysics"
+    ],
     "wikilinks": []
   },
   {
@@ -180127,7 +181484,9 @@
     "labels": [
       "Superimpose"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth Observation Processing"
+    ],
     "wikilinks": []
   },
   {
@@ -180162,7 +181521,9 @@
     "labels": [
       "Supernova Remnant"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Astronomy"
+    ],
     "wikilinks": []
   },
   {
@@ -180178,7 +181539,9 @@
     "labels": [
       "Supernova"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Astronomy"
+    ],
     "wikilinks": []
   },
   {
@@ -180732,7 +182095,9 @@
     "labels": [
       "Surface Reflectance"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth Observation Processing"
+    ],
     "wikilinks": []
   },
   {
@@ -180748,7 +182113,9 @@
     "labels": [
       "Surface Water"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth System Phenomena"
+    ],
     "wikilinks": []
   },
   {
@@ -180843,7 +182210,9 @@
       "Surrey Satellite Technology Limited",
       "SSTL"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Space Prime"
+    ],
     "wikilinks": []
   },
   {
@@ -181285,7 +182654,9 @@
     "labels": [
       "Swath"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth Observation Sensor"
+    ],
     "wikilinks": []
   },
   {
@@ -183912,7 +185283,8 @@
       "Technology Diffusion"
     ],
     "is_subclass_of": [
-      "Artificial Intelligence"
+      "Artificial Intelligence",
+      "DeFi and Economics"
     ],
     "wikilinks": []
   },
@@ -184199,7 +185571,9 @@
     "labels": [
       "Telecommand"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Spacecraft Communications"
+    ],
     "wikilinks": []
   },
   {
@@ -184305,7 +185679,9 @@
     "labels": [
       "Telemetry Tracking and Command"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Spacecraft Communications"
+    ],
     "wikilinks": []
   },
   {
@@ -184430,12 +185806,10 @@
       "Telepresence",
       "5G Telepresence",
       "Immersive Telepresence",
-      "Presence and Telepresence",
-      "Telepresence (Distributed Collaboration)",
-      "dc-telepresence"
+      "Presence and Telepresence"
     ],
     "is_subclass_of": [
-      "Distributed Collaboration"
+      "Telepresence (category)"
     ],
     "wikilinks": []
   },
@@ -184452,7 +185826,9 @@
     "labels": [
       "Telescope"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth Observation Sensor"
+    ],
     "wikilinks": []
   },
   {
@@ -184506,7 +185882,9 @@
     "labels": [
       "Temporal Coverage"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth Observation Data Quality"
+    ],
     "wikilinks": []
   },
   {
@@ -184619,7 +185997,9 @@
     "labels": [
       "Temporal Resolution"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth Observation Sensor"
+    ],
     "wikilinks": []
   },
   {
@@ -184698,7 +186078,9 @@
     "labels": [
       "Tensiometer"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth Observation Sensor"
+    ],
     "wikilinks": []
   },
   {
@@ -185017,7 +186399,9 @@
     "labels": [
       "Terrain Aspect"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Geodesy"
+    ],
     "wikilinks": []
   },
   {
@@ -185033,7 +186417,9 @@
     "labels": [
       "Terrain Correction"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Geodesy"
+    ],
     "wikilinks": []
   },
   {
@@ -185049,7 +186435,9 @@
     "labels": [
       "Terrain Slope"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Geodesy"
+    ],
     "wikilinks": []
   },
   {
@@ -185083,7 +186471,9 @@
     "labels": [
       "Terrestrial Reference Frame"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Space Reference Systems"
+    ],
     "wikilinks": []
   },
   {
@@ -185099,7 +186489,9 @@
     "labels": [
       "Terrestrial Time"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Space Reference Systems"
+    ],
     "wikilinks": []
   },
   {
@@ -185812,7 +187204,9 @@
       "Thales Alenia Space",
       "Thales Alenia Space joint venture"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Space Prime"
+    ],
     "wikilinks": []
   },
   {
@@ -185829,7 +187223,8 @@
       "The Bitter Lesson"
     ],
     "is_subclass_of": [
-      "Artificial Intelligence"
+      "Artificial Intelligence",
+      "AI Research Area"
     ],
     "wikilinks": []
   },
@@ -185889,7 +187284,9 @@
     "labels": [
       "Theoretical Astrophysics"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Astronomy"
+    ],
     "wikilinks": []
   },
   {
@@ -185968,7 +187365,9 @@
     "labels": [
       "Thermal Balance"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Spacecraft Power and Thermal Control"
+    ],
     "wikilinks": []
   },
   {
@@ -186002,7 +187401,9 @@
     "labels": [
       "Thermal Louver"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Spacecraft Power and Thermal Control"
+    ],
     "wikilinks": []
   },
   {
@@ -186694,7 +188095,9 @@
     "labels": [
       "Thrust"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Spacecraft Propulsion"
+    ],
     "wikilinks": []
   },
   {
@@ -186710,7 +188113,9 @@
     "labels": [
       "Thruster"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Spacecraft Propulsion"
+    ],
     "wikilinks": []
   },
   {
@@ -186726,7 +188131,9 @@
     "labels": [
       "Tidal Heating"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Planetary Science"
+    ],
     "wikilinks": []
   },
   {
@@ -186977,7 +188384,9 @@
     "labels": [
       "Time-domain Astronomy"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Astronomy"
+    ],
     "wikilinks": []
   },
   {
@@ -187437,7 +188846,7 @@
       "Token Efficiency"
     ],
     "is_subclass_of": [
-      "AI Economics"
+      "DeFi and Economics"
     ],
     "wikilinks": []
   },
@@ -187578,7 +188987,8 @@
       "Token Maxing"
     ],
     "is_subclass_of": [
-      "Artificial Intelligence"
+      "Artificial Intelligence",
+      "AI Research Area"
     ],
     "wikilinks": []
   },
@@ -187615,7 +189025,8 @@
       "Token Processing Volume"
     ],
     "is_subclass_of": [
-      "Artificial Intelligence"
+      "Artificial Intelligence",
+      "AI Research Area"
     ],
     "wikilinks": []
   },
@@ -187633,7 +189044,8 @@
       "Token Router"
     ],
     "is_subclass_of": [
-      "Artificial Intelligence"
+      "Artificial Intelligence",
+      "AI Research Area"
     ],
     "wikilinks": []
   },
@@ -188221,7 +189633,9 @@
     "labels": [
       "Top-of-atmosphere Reflectance"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth Observation Processing"
+    ],
     "wikilinks": []
   },
   {
@@ -188237,7 +189651,9 @@
     "labels": [
       "Topographic Correction"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth Observation Processing"
+    ],
     "wikilinks": []
   },
   {
@@ -188432,7 +189848,7 @@
       "Total Cost of Ownership"
     ],
     "is_subclass_of": [
-      "AI Economics"
+      "DeFi and Economics"
     ],
     "wikilinks": []
   },
@@ -188449,7 +189865,9 @@
     "labels": [
       "Total Ionising Dose"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Spacecraft Bus"
+    ],
     "wikilinks": []
   },
   {
@@ -189048,7 +190466,9 @@
     "labels": [
       "Trained Data State"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth Observation Processing"
+    ],
     "wikilinks": []
   },
   {
@@ -189568,7 +190988,9 @@
     "labels": [
       "Trans-Neptunian Object"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Planetary Science"
+    ],
     "wikilinks": []
   },
   {
@@ -190123,7 +191545,9 @@
     "labels": [
       "Transfer Orbit"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Orbital Dynamics"
+    ],
     "wikilinks": []
   },
   {
@@ -191149,7 +192573,9 @@
     "labels": [
       "Tropopause"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth System Phenomena"
+    ],
     "wikilinks": []
   },
   {
@@ -191183,7 +192609,9 @@
     "labels": [
       "Tropospheric Delay"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Positioning Navigation and Timing"
+    ],
     "wikilinks": []
   },
   {
@@ -191199,7 +192627,9 @@
     "labels": [
       "True Anomaly"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Orbital Dynamics"
+    ],
     "wikilinks": []
   },
   {
@@ -192092,7 +193522,9 @@
     "labels": [
       "Tundra"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth System Phenomena"
+    ],
     "wikilinks": []
   },
   {
@@ -192260,7 +193692,9 @@
     "labels": [
       "Two-body Problem"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Orbital Dynamics"
+    ],
     "wikilinks": []
   },
   {
@@ -192915,7 +194349,8 @@
       "US-China AI Competition"
     ],
     "is_subclass_of": [
-      "Artificial Intelligence"
+      "Artificial Intelligence",
+      "AI Governance and Ethics"
     ],
     "wikilinks": []
   },
@@ -193227,7 +194662,9 @@
     "labels": [
       "Ultraviolet Astronomy"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Astronomy"
+    ],
     "wikilinks": []
   },
   {
@@ -193243,7 +194680,9 @@
     "labels": [
       "Uncertainty Propagation"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth Observation Data Quality"
+    ],
     "wikilinks": []
   },
   {
@@ -193358,7 +194797,9 @@
     "labels": [
       "Underground Water"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth System Phenomena"
+    ],
     "wikilinks": []
   },
   {
@@ -193822,7 +195263,9 @@
     "labels": [
       "Universal Time 1"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Space Reference Systems"
+    ],
     "wikilinks": []
   },
   {
@@ -194218,7 +195661,9 @@
     "labels": [
       "Urban Heat Monitoring"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth Observation Applications"
+    ],
     "wikilinks": []
   },
   {
@@ -194351,7 +195796,7 @@
       "Usage-Based Pricing"
     ],
     "is_subclass_of": [
-      "SaaS Business Model"
+      "DeFi and Economics"
     ],
     "wikilinks": []
   },
@@ -194976,7 +196421,9 @@
     "labels": [
       "User Segment"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Spacecraft Bus"
+    ],
     "wikilinks": []
   },
   {
@@ -195516,7 +196963,9 @@
       "Vadose Zone",
       "UnsaturatedZone"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth System Phenomena"
+    ],
     "wikilinks": []
   },
   {
@@ -195532,7 +196981,9 @@
     "labels": [
       "Validated Data State"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth Observation Processing"
+    ],
     "wikilinks": []
   },
   {
@@ -195566,7 +197017,9 @@
     "labels": [
       "Validation Dataset"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth Observation Data Quality"
+    ],
     "wikilinks": []
   },
   {
@@ -195582,7 +197035,9 @@
     "labels": [
       "Validation Evidence"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth Observation Data Quality"
+    ],
     "wikilinks": []
   },
   {
@@ -195845,7 +197300,7 @@
       "Valuation Multiples"
     ],
     "is_subclass_of": [
-      "Financial Metrics"
+      "DeFi and Economics"
     ],
     "wikilinks": []
   },
@@ -196472,7 +197927,9 @@
     "labels": [
       "Vegetation Index"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth Observation Processing"
+    ],
     "wikilinks": []
   },
   {
@@ -196942,7 +198399,9 @@
     "labels": [
       "Verified Data State"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth Observation Processing"
+    ],
     "wikilinks": []
   },
   {
@@ -197180,7 +198639,9 @@
     "labels": [
       "Vertical Coordinate System"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Geodesy"
+    ],
     "wikilinks": []
   },
   {
@@ -197197,7 +198658,9 @@
       "Vertical Coordinate",
       "VerticalCoordinate"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Geodesy"
+    ],
     "wikilinks": []
   },
   {
@@ -197213,7 +198676,9 @@
     "labels": [
       "Vertical Datum"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Geodesy"
+    ],
     "wikilinks": []
   },
   {
@@ -197575,7 +199040,9 @@
     "labels": [
       "Viewing Geometry"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth Observation Sensor"
+    ],
     "wikilinks": []
   },
   {
@@ -200159,7 +201626,9 @@
       "Visualization",
       "Visualize"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth Observation Processing"
+    ],
     "wikilinks": []
   },
   {
@@ -201761,7 +203230,9 @@
     "labels": [
       "Warm Pool"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth System Phenomena"
+    ],
     "wikilinks": []
   },
   {
@@ -201855,7 +203326,9 @@
     "labels": [
       "Water Column"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth System Phenomena"
+    ],
     "wikilinks": []
   },
   {
@@ -201871,7 +203344,9 @@
     "labels": [
       "Water Quality Monitoring"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth Observation Applications"
+    ],
     "wikilinks": []
   },
   {
@@ -201887,7 +203362,9 @@
     "labels": [
       "Water Table"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth System Phenomena"
+    ],
     "wikilinks": []
   },
   {
@@ -201988,7 +203465,9 @@
     "labels": [
       "Wavelet Analysis"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth Observation Processing"
+    ],
     "wikilinks": []
   },
   {
@@ -203177,7 +204656,9 @@
     "labels": [
       "Whiskbroom Scanner"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth Observation Sensor"
+    ],
     "wikilinks": []
   },
   {
@@ -203400,7 +204881,9 @@
     "labels": [
       "Wildfire Monitoring"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Earth Observation Applications"
+    ],
     "wikilinks": []
   },
   {
@@ -204107,7 +205590,9 @@
     "labels": [
       "X-ray Astronomy"
     ],
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Astronomy"
+    ],
     "wikilinks": []
   },
   {
@@ -205386,7 +206871,8 @@
       "AI Application Domain"
     ],
     "is_subclass_of": [
-      "Artificial Intelligence"
+      "Artificial Intelligence",
+      "AI Research Area"
     ],
     "wikilinks": []
   },
@@ -205404,7 +206890,8 @@
       "AI Governance and Ethics"
     ],
     "is_subclass_of": [
-      "Artificial Intelligence"
+      "Artificial Intelligence",
+      "AI Research Area"
     ],
     "wikilinks": []
   },
@@ -205422,7 +206909,8 @@
       "AI Model Architecture"
     ],
     "is_subclass_of": [
-      "Artificial Intelligence"
+      "Artificial Intelligence",
+      "AI Research Area"
     ],
     "wikilinks": []
   },
@@ -205458,7 +206946,8 @@
       "AI Technique"
     ],
     "is_subclass_of": [
-      "Artificial Intelligence"
+      "Artificial Intelligence",
+      "AI Research Area"
     ],
     "wikilinks": []
   },
@@ -205481,6 +206970,26 @@
     "wikilinks": [
       "Safety Standard",
       "Robotics"
+    ]
+  },
+  {
+    "id": "bc-cryptographic-primitive",
+    "title": "Cryptographic Primitive (category)",
+    "domain": "blockchain",
+    "domain_name": "Blockchain",
+    "definition": "Taxonomy category root for Cryptographic Primitive within Blockchain. The concept itself is described at [[Cryptographic Primitive]], which sits under this category; the category exists so the published graph can group its members.",
+    "entityType": "Class",
+    "qualityScore": 0.8,
+    "maturity": "established",
+    "iri": "urn:ngm:class:bc-cryptographic-primitive",
+    "labels": [
+      "Cryptographic Primitive (Blockchain)"
+    ],
+    "is_subclass_of": [
+      "Blockchain"
+    ],
+    "wikilinks": [
+      "Cryptographic Primitive"
     ]
   },
   {
@@ -205518,6 +207027,26 @@
       "Blockchain"
     ],
     "wikilinks": []
+  },
+  {
+    "id": "bc-network-component",
+    "title": "Network Component (category)",
+    "domain": "blockchain",
+    "domain_name": "Blockchain",
+    "definition": "Taxonomy category root for Network Component within Blockchain. The concept itself is described at [[Network Component]], which sits under this category; the category exists so the published graph can group its members.",
+    "entityType": "Class",
+    "qualityScore": 0.8,
+    "maturity": "established",
+    "iri": "urn:ngm:class:bc-network-component",
+    "labels": [
+      "Network Component (Blockchain)"
+    ],
+    "is_subclass_of": [
+      "Blockchain"
+    ],
+    "wikilinks": [
+      "Network Component"
+    ]
   },
   {
     "id": "bc-protocol-and-consensus",
@@ -205592,6 +207121,27 @@
       "DecentralizedStorage",
       "DigitalSignature",
       "HashFunction"
+    ]
+  },
+  {
+    "id": "cat-ai-infrastructure",
+    "title": "AI Infrastructure (category)",
+    "domain": "artificial-intelligence",
+    "domain_name": "Artificial Intelligence",
+    "definition": "Taxonomy category root for AI Infrastructure within Artificial Intelligence. The concept itself is described at [[AI Infrastructure]], which sits under this category; the category exists so the published graph can group its members.",
+    "entityType": "Class",
+    "qualityScore": 0.85,
+    "maturity": "established",
+    "iri": "urn:ngm:class:cat-ai-infrastructure",
+    "labels": [
+      "AI Infrastructure (Artificial Intelligence)"
+    ],
+    "is_subclass_of": [
+      "Artificial Intelligence",
+      "AI Research Area"
+    ],
+    "wikilinks": [
+      "AI Infrastructure"
     ]
   },
   {
@@ -205700,6 +207250,26 @@
       "Distributed Collaboration"
     ],
     "wikilinks": []
+  },
+  {
+    "id": "dc-telepresence",
+    "title": "Telepresence (category)",
+    "domain": "distributed-collaboration",
+    "domain_name": "Distributed Collaboration",
+    "definition": "Taxonomy category root for Telepresence within Distributed Collaboration. The concept itself is described at [[Telepresence]], which sits under this category; the category exists so the published graph can group its members.",
+    "entityType": "Class",
+    "qualityScore": 0.8,
+    "maturity": "established",
+    "iri": "urn:ngm:class:dc-telepresence",
+    "labels": [
+      "Telepresence (Distributed Collaboration)"
+    ],
+    "is_subclass_of": [
+      "Distributed Collaboration"
+    ],
+    "wikilinks": [
+      "Telepresence"
+    ]
   },
   {
     "id": "dc-workspace-tools",
@@ -206060,9 +207630,31 @@
       "Computing and Cloud"
     ],
     "is_subclass_of": [
-      "Infrastructure"
+      "Infrastructure",
+      "AI Infrastructure (category)"
     ],
     "wikilinks": []
+  },
+  {
+    "id": "infra-data-management",
+    "title": "Data Management (category)",
+    "domain": "infrastructure",
+    "domain_name": "Infrastructure",
+    "definition": "Taxonomy category root for Data Management within Infrastructure. The concept itself is described at [[Data Management]], which sits under this category; the category exists so the published graph can group its members.",
+    "entityType": "Class",
+    "qualityScore": 0.8,
+    "maturity": "established",
+    "iri": "urn:ngm:class:infra-data-management",
+    "labels": [
+      "Data Management (Infrastructure)"
+    ],
+    "is_subclass_of": [
+      "Infrastructure",
+      "AI Infrastructure (category)"
+    ],
+    "wikilinks": [
+      "Data Management"
+    ]
   },
   {
     "id": "infra-legal-and-regulatory",
@@ -206078,7 +207670,8 @@
       "Legal and Regulatory"
     ],
     "is_subclass_of": [
-      "Infrastructure"
+      "Infrastructure",
+      "AI Infrastructure (category)"
     ],
     "wikilinks": []
   },
@@ -206097,7 +207690,8 @@
       "Network and Communications"
     ],
     "is_subclass_of": [
-      "Infrastructure"
+      "Infrastructure",
+      "AI Infrastructure (category)"
     ],
     "wikilinks": []
   },
@@ -206115,9 +207709,31 @@
       "Security and Identity"
     ],
     "is_subclass_of": [
-      "Infrastructure"
+      "Infrastructure",
+      "AI Infrastructure (category)"
     ],
     "wikilinks": []
+  },
+  {
+    "id": "infra-software-engineering",
+    "title": "Software Engineering (category)",
+    "domain": "infrastructure",
+    "domain_name": "Infrastructure",
+    "definition": "Taxonomy category root for Software Engineering within Infrastructure. The concept itself is described at [[Software Engineering]], which sits under this category; the category exists so the published graph can group its members.",
+    "entityType": "Class",
+    "qualityScore": 0.8,
+    "maturity": "established",
+    "iri": "urn:ngm:class:infra-software-engineering",
+    "labels": [
+      "Software Engineering (Infrastructure)"
+    ],
+    "is_subclass_of": [
+      "Infrastructure",
+      "AI Infrastructure (category)"
+    ],
+    "wikilinks": [
+      "Software Engineering"
+    ]
   },
   {
     "id": "k-anonymity-in-datasets",

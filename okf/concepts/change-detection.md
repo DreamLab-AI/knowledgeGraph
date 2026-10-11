@@ -7,6 +7,8 @@ domain: earth-observation-and-geospatial-sensing
 description: Change detection uses observations from two or more times to locate differences in a surface state or in its spectral behaviour. The immediate result is an observed difference or a statistical break. Explaining it as construction, fire, flood, vegetation stress or a lasting land-cover conversion is a further inference that usually needs classification and contextual evidence.
 maturity: draft
 quality: 0
+is-a:
+  - urn:ngm:class:earth-observation-processing
 relatedTo:
   - urn:ngm:class:earth-observation-processing
 ---

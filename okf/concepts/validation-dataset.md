@@ -7,6 +7,8 @@ domain: earth-observation-and-geospatial-sensing
 description: A validation dataset is a set of reference data against which satellite-derived product values are compared to assess their accuracy.[^1]
 maturity: draft
 quality: 0
+is-a:
+  - urn:ngm:class:earth-observation-data-quality
 relatedTo:
   - urn:ngm:class:earth-observation-data-quality
 ---

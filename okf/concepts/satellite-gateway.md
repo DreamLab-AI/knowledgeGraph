@@ -7,6 +7,8 @@ domain: space-science-and-systems
 description: A satellite gateway is an earth-station facility that connects a satellite network to terrestrial networks or operator infrastructure.
 maturity: draft
 quality: 0
+is-a:
+  - urn:ngm:class:spacecraft-communications
 relatedTo:
   - urn:ngm:class:satellite-communication
 ---

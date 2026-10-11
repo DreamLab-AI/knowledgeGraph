@@ -7,6 +7,8 @@ domain: earth-observation-and-geospatial-sensing
 description: A verified data state is the processing state of a dataset that has passed through a verification process.[^1]
 maturity: draft
 quality: 0
+is-a:
+  - urn:ngm:class:earth-observation-processing
 relatedTo:
   - urn:ngm:class:earth-observation-processing
 ---

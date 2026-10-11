@@ -7,6 +7,8 @@ domain: earth-observation-and-geospatial-sensing
 description: Aerosol optical depth retrieval is the derivation of aerosol optical depth, a measure of the aerosol loading of the atmospheric column, from remote observations.[^1][^2]
 maturity: draft
 quality: 0
+is-a:
+  - urn:ngm:class:earth-observation-applications
 relatedTo:
   - urn:ngm:class:earth-observation-applications
 ---

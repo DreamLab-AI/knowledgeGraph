@@ -7,6 +7,8 @@ domain: earth-observation-and-geospatial-sensing
 description: Geospatial buffering is the construction of a zone of a stated distance around input geometries, producing polygons that cover everything within that distance.[^1][^2]
 maturity: draft
 quality: 0
+is-a:
+  - urn:ngm:class:earth-observation-processing
 relatedTo:
   - urn:ngm:class:earth-observation-processing
   - urn:ngm:class:geographic-information-system

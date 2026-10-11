@@ -7,6 +7,8 @@ domain: space-science-and-systems
 description: A spaceflight programme is a planned process to execute a series of spaceflights.[^1]
 maturity: draft
 quality: 0
+is-a:
+  - urn:ngm:class:space-life-sciences
 relatedTo:
   - urn:ngm:class:space-life-sciences
 ---

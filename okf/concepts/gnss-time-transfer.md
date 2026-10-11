@@ -7,6 +7,8 @@ domain: space-science-and-systems
 description: GNSS time transfer is the use of GNSS satellite signals to synchronise a local clock or to compare clocks at separate sites.[^1]
 maturity: draft
 quality: 0
+is-a:
+  - urn:ngm:class:positioning-navigation-and-timing
 relatedTo:
   - urn:ngm:class:positioning-navigation-and-timing
 ---

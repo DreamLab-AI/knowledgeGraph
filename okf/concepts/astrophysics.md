@@ -8,7 +8,7 @@ description: Astrophysics is the study of how the universe works and evolved, in
 maturity: draft
 quality: 0
 is-a:
-  - urn:ngm:class:space-science
+  - urn:ngm:class:astronomy
 relatedTo:
   - urn:ngm:class:astronomy
 ---

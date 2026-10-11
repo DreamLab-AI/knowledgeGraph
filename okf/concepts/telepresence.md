@@ -8,7 +8,7 @@ description: "Telepresence is a suite of technologies and interaction paradigms 
 maturity: established
 quality: 0.72
 is-a:
-  - urn:ngm:class:distributed-collaboration
+  - urn:ngm:class:dc-telepresence
 hasPart:
   - urn:ngm:class:spatial-audio
   - urn:ngm:class:haptic-feedback

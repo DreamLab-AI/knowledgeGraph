@@ -7,6 +7,8 @@ domain: space-science-and-systems
 description: Argument of periapsis is the in-plane angle from the ascending node to periapsis, measured in the direction of orbital motion.
 maturity: draft
 quality: 0
+is-a:
+  - urn:ngm:class:orbital-dynamics
 relatedTo:
   - urn:ngm:class:orbital-dynamics
 ---

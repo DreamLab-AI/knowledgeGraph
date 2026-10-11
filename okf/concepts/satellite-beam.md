@@ -7,6 +7,8 @@ domain: space-science-and-systems
 description: A satellite communications beam is a directional transmit or receive coverage region produced by an antenna system.
 maturity: draft
 quality: 0
+is-a:
+  - urn:ngm:class:spacecraft-communications
 relatedTo:
   - urn:ngm:class:satellite-communication
 ---

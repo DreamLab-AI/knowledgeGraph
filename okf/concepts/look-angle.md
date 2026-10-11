@@ -7,6 +7,8 @@ domain: earth-observation-and-geospatial-sensing
 description: Look angle is the angle between the direction in which a radar antenna is pointing and the nadir.[^1]
 maturity: draft
 quality: 0
+is-a:
+  - urn:ngm:class:earth-observation-sensor
 relatedTo:
   - urn:ngm:class:earth-observation
 ---

@@ -7,6 +7,8 @@ domain: earth-observation-and-geospatial-sensing
 description: A measurement instrument is a device used for making measurements, alone or in conjunction with one or more supplementary devices.[^1]
 maturity: draft
 quality: 0
+is-a:
+  - urn:ngm:class:earth-observation-sensor
 relatedTo:
   - urn:ngm:class:earth-observation
 ---

@@ -7,6 +7,8 @@ domain: space-science-and-systems
 description: Beam handover is a change in the satellite beam or radio cell serving a user or link, as coverage or network resource assignments change.
 maturity: draft
 quality: 0
+is-a:
+  - urn:ngm:class:spacecraft-communications
 relatedTo:
   - urn:ngm:class:satellite-communication
 ---

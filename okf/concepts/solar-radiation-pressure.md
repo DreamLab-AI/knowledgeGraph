@@ -7,6 +7,8 @@ domain: space-science-and-systems
 description: Solar radiation pressure is the non-gravitational force on a spacecraft produced by sunlight striking its surfaces, which perturbs the orbit.[^1][^2]
 maturity: draft
 quality: 0
+is-a:
+  - urn:ngm:class:heliophysics
 relatedTo:
   - urn:ngm:class:heliophysics
 ---

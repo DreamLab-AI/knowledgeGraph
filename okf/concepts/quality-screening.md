@@ -7,6 +7,8 @@ domain: earth-observation-and-geospatial-sensing
 description: Quality screening is the application of quality checks and flags to Earth observation products so that users can exclude or weight observations according to their suitability.[^1][^2]
 maturity: draft
 quality: 0
+is-a:
+  - urn:ngm:class:earth-observation-data-quality
 relatedTo:
   - urn:ngm:class:earth-observation-data-quality
 ---

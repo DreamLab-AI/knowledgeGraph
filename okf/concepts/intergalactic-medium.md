@@ -7,6 +7,8 @@ domain: space-science-and-systems
 description: Intergalactic medium is the gas and plasma found in the space between galaxies.[^1][^2]
 maturity: draft
 quality: 0
+is-a:
+  - urn:ngm:class:astronomy
 relatedTo:
   - urn:ngm:class:astronomy
 ---

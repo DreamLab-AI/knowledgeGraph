@@ -7,6 +7,8 @@ domain: space-science-and-systems
 description: Radio-frequency communication carries information by modulating a radio-frequency electromagnetic carrier for transmission and recovering the information at a receiver.
 maturity: draft
 quality: 0
+is-a:
+  - urn:ngm:class:spacecraft-communications
 relatedTo:
   - urn:ngm:class:satellite-communication
 ---

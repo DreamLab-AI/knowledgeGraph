@@ -7,6 +7,8 @@ domain: earth-observation-and-geospatial-sensing
 description: A geospatial interface protocol is a standardised request and response interface through which a client reaches geospatial data, maps or features held by a remote service [^1].
 maturity: draft
 quality: 0
+is-a:
+  - urn:ngm:class:earth-observation-processing
 relatedTo:
   - urn:ngm:class:earth-observation-processing
 ---

@@ -8,7 +8,7 @@ description: A conceptual model categorizing how artificial intelligence alters 
 maturity: draft
 quality: 0.35
 is-a:
-  - urn:ngm:class:economic-impact-of-ai
+  - urn:ngm:class:bc-defi-and-economics
 relatedTo:
   - urn:ngm:class:demand-elasticity
   - urn:ngm:class:price-elasticity

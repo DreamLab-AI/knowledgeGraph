@@ -7,6 +7,8 @@ domain: space-science-and-systems
 description: Spaceflight fluid shift is the redistribution of body fluid toward the head that occurs in microgravity, described in one review as a head-ward body fluid shift under chronic exposure.[^1]
 maturity: draft
 quality: 0
+is-a:
+  - urn:ngm:class:space-life-sciences
 relatedTo:
   - urn:ngm:class:space-life-sciences
 ---

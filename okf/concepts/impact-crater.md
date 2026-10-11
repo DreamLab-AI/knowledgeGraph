@@ -7,6 +7,8 @@ domain: space-science-and-systems
 description: An impact crater is a hole left in a planetary surface when an asteroid, meteoroid or comet strikes it.[^1][^2][^3]
 maturity: draft
 quality: 0
+is-a:
+  - urn:ngm:class:planetary-science
 relatedTo:
   - urn:ngm:class:planetary-science
 ---

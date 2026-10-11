@@ -7,6 +7,8 @@ domain: space-science-and-systems
 description: Spacecraft waste management is the collection, handling and disposal or processing of crew and vehicle waste as one function of a life support system.[^1]
 maturity: draft
 quality: 0
+is-a:
+  - urn:ngm:class:space-life-sciences
 relatedTo:
   - urn:ngm:class:space-life-sciences
 ---

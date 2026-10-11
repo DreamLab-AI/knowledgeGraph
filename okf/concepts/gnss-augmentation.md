@@ -7,6 +7,8 @@ domain: space-science-and-systems
 description: GNSS augmentation is a method of improving the performance of a global navigation satellite system, such as its integrity, continuity, accuracy or availability, by using information external to the GNSS in the user's position solution.[^1]
 maturity: draft
 quality: 0
+is-a:
+  - urn:ngm:class:positioning-navigation-and-timing
 relatedTo:
   - urn:ngm:class:differential-gnss
   - urn:ngm:class:global-navigation-satellite-system

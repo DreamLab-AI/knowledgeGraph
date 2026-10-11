@@ -1,7 +1,7 @@
 {
   "pipelineVersion": "ng-1.0.0",
   "note": "Classes bridging more than one taxonomy category or domain. Overlap is a design property of this corpus. The NGG1 node record carries a single u16 category (FORMAT-NGG1 3), so tiers keep the nearest one; the full membership is here. Indices match overview.json.",
-  "count": 1214,
+  "count": 1307,
   "bridges": [
     {
       "iri": "https://narrativegoldmine.com/class/2-d-li-dar",
@@ -22,7 +22,8 @@
       "iri": "https://narrativegoldmine.com/class/3-d-development",
       "label": "3D Development",
       "categories": [
-        15
+        15,
+        33
       ],
       "domains": [
         2,
@@ -31,6 +32,21 @@
       "parents": [
         "Platform and Environment",
         "Software Development"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/3-d-gaussian-splatting",
+      "label": "3D Gaussian Splatting",
+      "categories": [
+        12,
+        26
+      ],
+      "domains": [
+        2
+      ],
+      "parents": [
+        "Neural Rendering",
+        "Neural Rendering Telepresence"
       ]
     },
     {
@@ -138,6 +154,7 @@
       "label": "3D Scene Exchange Protocol (SXP)",
       "categories": [
         16,
+        31,
         12,
         28
       ],
@@ -172,21 +189,6 @@
       ]
     },
     {
-      "iri": "https://narrativegoldmine.com/class/51-attack",
-      "label": "51 Percent Attack",
-      "categories": [
-        6,
-        27
-      ],
-      "domains": [
-        1
-      ],
-      "parents": [
-        "Protocol and Consensus",
-        "Blockchain"
-      ]
-    },
-    {
       "iri": "https://narrativegoldmine.com/class/aaai",
       "label": "AAAI",
       "categories": [
@@ -199,6 +201,21 @@
       "parents": [
         "Academic Conference",
         "AI Research Area"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/ade20-k",
+      "label": "ADE20K",
+      "categories": [
+        5,
+        4
+      ],
+      "domains": [
+        0
+      ],
+      "parents": [
+        "Benchmarks",
+        "Benchmark Dataset"
       ]
     },
     {
@@ -237,7 +254,8 @@
       "label": "AI Adoption",
       "categories": [
         3,
-        27
+        27,
+        33
       ],
       "domains": [
         0,
@@ -340,7 +358,9 @@
     {
       "iri": "https://narrativegoldmine.com/class/ai-avatars",
       "label": "AI Avatars",
-      "categories": [],
+      "categories": [
+        26
+      ],
       "domains": [
         2,
         0
@@ -348,6 +368,81 @@
       "parents": [
         "Telepresence",
         "ArtificialIntelligence"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/ai-bubble-dynamics",
+      "label": "AI Bubble Dynamics",
+      "categories": [
+        9
+      ],
+      "domains": [
+        0,
+        1
+      ],
+      "parents": [
+        "Artificial Intelligence",
+        "DeFi and Economics"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/ai-business-model",
+      "label": "AI Business Model",
+      "categories": [
+        9
+      ],
+      "domains": [
+        0,
+        1
+      ],
+      "parents": [
+        "Artificial Intelligence",
+        "DeFi and Economics"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/ai-capital-expenditure",
+      "label": "AI Capital Expenditure",
+      "categories": [
+        9
+      ],
+      "domains": [
+        0,
+        1
+      ],
+      "parents": [
+        "Artificial Intelligence",
+        "DeFi and Economics"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/ai-compute-strategy",
+      "label": "AI Compute Strategy",
+      "categories": [
+        9
+      ],
+      "domains": [
+        0,
+        1
+      ],
+      "parents": [
+        "Artificial Intelligence",
+        "DeFi and Economics"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/ai-data-center-infrastructure",
+      "label": "AI Data Center Infrastructure",
+      "categories": [
+        4
+      ],
+      "domains": [
+        5,
+        0
+      ],
+      "parents": [
+        "Infrastructure",
+        "AI Infrastructure (category)"
       ]
     },
     {
@@ -374,7 +469,7 @@
       "iri": "https://narrativegoldmine.com/class/ai-energy-optimisation",
       "label": "AI Energy Optimisation",
       "categories": [
-        28,
+        4,
         0
       ],
       "domains": [
@@ -503,6 +598,21 @@
       ]
     },
     {
+      "iri": "https://narrativegoldmine.com/class/ai-ipo",
+      "label": "AI IPO",
+      "categories": [
+        9
+      ],
+      "domains": [
+        0,
+        1
+      ],
+      "parents": [
+        "Artificial Intelligence",
+        "DeFi and Economics"
+      ]
+    },
+    {
       "iri": "https://narrativegoldmine.com/class/ai-inference",
       "label": "AI Inference",
       "categories": [
@@ -518,10 +628,26 @@
       ]
     },
     {
+      "iri": "https://narrativegoldmine.com/class/ai-infrastructure-economics",
+      "label": "AI Infrastructure Economics",
+      "categories": [
+        9
+      ],
+      "domains": [
+        0,
+        1
+      ],
+      "parents": [
+        "Artificial Intelligence",
+        "DeFi and Economics"
+      ]
+    },
+    {
       "iri": "https://narrativegoldmine.com/class/ai-infrastructure",
       "label": "AI Infrastructure",
       "categories": [
-        28
+        28,
+        4
       ],
       "domains": [
         5,
@@ -529,7 +655,7 @@
       ],
       "parents": [
         "Digital Infrastructure",
-        "Artificial Intelligence"
+        "AI Infrastructure (category)"
       ]
     },
     {
@@ -553,6 +679,51 @@
       ]
     },
     {
+      "iri": "https://narrativegoldmine.com/class/ai-job-creation",
+      "label": "AI Job Creation",
+      "categories": [
+        9
+      ],
+      "domains": [
+        0,
+        1
+      ],
+      "parents": [
+        "Artificial Intelligence",
+        "DeFi and Economics"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/ai-job-displacement",
+      "label": "AI Job Displacement",
+      "categories": [
+        9
+      ],
+      "domains": [
+        0,
+        1
+      ],
+      "parents": [
+        "Artificial Intelligence",
+        "DeFi and Economics"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/ai-labor-market-impact",
+      "label": "AI Labor Market Impact",
+      "categories": [
+        9
+      ],
+      "domains": [
+        0,
+        1
+      ],
+      "parents": [
+        "Artificial Intelligence",
+        "DeFi and Economics"
+      ]
+    },
+    {
       "iri": "https://narrativegoldmine.com/class/ai-liability",
       "label": "AI Liability",
       "categories": [
@@ -573,10 +744,25 @@
       ]
     },
     {
+      "iri": "https://narrativegoldmine.com/class/ai-market-impact",
+      "label": "AI Market Impact",
+      "categories": [
+        9
+      ],
+      "domains": [
+        0,
+        1
+      ],
+      "parents": [
+        "Artificial Intelligence",
+        "DeFi and Economics"
+      ]
+    },
+    {
       "iri": "https://narrativegoldmine.com/class/ai-model-development",
       "label": "AI Model Development",
       "categories": [
-        28,
+        4,
         0
       ],
       "domains": [
@@ -591,8 +777,7 @@
       "iri": "https://narrativegoldmine.com/class/ai-model-inference-engine",
       "label": "AI Model Inference Engine",
       "categories": [
-        1,
-        28,
+        4,
         0
       ],
       "domains": [
@@ -620,6 +805,36 @@
         "Generative Model",
         "AI Model Architecture",
         "Machine Learning"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/ai-product-strategy",
+      "label": "AI Product Strategy",
+      "categories": [
+        9
+      ],
+      "domains": [
+        0,
+        1
+      ],
+      "parents": [
+        "Artificial Intelligence",
+        "DeFi and Economics"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/ai-roi-measurement",
+      "label": "AI ROI Measurement",
+      "categories": [
+        9
+      ],
+      "domains": [
+        0,
+        1
+      ],
+      "parents": [
+        "Artificial Intelligence",
+        "DeFi and Economics"
       ]
     },
     {
@@ -685,6 +900,36 @@
       ]
     },
     {
+      "iri": "https://narrativegoldmine.com/class/ai-stock-market",
+      "label": "AI Stock Market",
+      "categories": [
+        9
+      ],
+      "domains": [
+        0,
+        1
+      ],
+      "parents": [
+        "Artificial Intelligence",
+        "DeFi and Economics"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/ai-system",
+      "label": "AI System",
+      "categories": [
+        33,
+        4
+      ],
+      "domains": [
+        5
+      ],
+      "parents": [
+        "Sociotechnical System",
+        "AI Infrastructure"
+      ]
+    },
+    {
       "iri": "https://narrativegoldmine.com/class/ai-talent-war",
       "label": "AI Talent War",
       "categories": [
@@ -741,6 +986,21 @@
       ]
     },
     {
+      "iri": "https://narrativegoldmine.com/class/ai-workforce-impact",
+      "label": "AI Workforce Impact",
+      "categories": [
+        9
+      ],
+      "domains": [
+        0,
+        1
+      ],
+      "parents": [
+        "Artificial Intelligence",
+        "DeFi and Economics"
+      ]
+    },
+    {
       "iri": "https://narrativegoldmine.com/class/ai-companions",
       "label": "AI companions",
       "categories": [
@@ -781,6 +1041,21 @@
       ]
     },
     {
+      "iri": "https://narrativegoldmine.com/class/ai-driven-efficiency",
+      "label": "AI-Driven Efficiency",
+      "categories": [
+        9
+      ],
+      "domains": [
+        0,
+        1
+      ],
+      "parents": [
+        "Artificial Intelligence",
+        "DeFi and Economics"
+      ]
+    },
+    {
       "iri": "https://narrativegoldmine.com/class/ai-generated-content-disclosure",
       "label": "AI-Generated Content Disclosure",
       "categories": [
@@ -801,7 +1076,7 @@
       "iri": "https://narrativegoldmine.com/class/aiops",
       "label": "AIOps",
       "categories": [
-        28
+        4
       ],
       "domains": [
         5,
@@ -925,6 +1200,22 @@
       ]
     },
     {
+      "iri": "https://narrativegoldmine.com/class/automatic-1111-web-ui",
+      "label": "AUTOMATIC1111 WebUI",
+      "categories": [
+        4,
+        2
+      ],
+      "domains": [
+        0
+      ],
+      "parents": [
+        "Open Generative AI Tools",
+        "Image Generation",
+        "Generative AI"
+      ]
+    },
+    {
       "iri": "https://narrativegoldmine.com/class/academic-conference",
       "label": "Academic Conference",
       "categories": [
@@ -938,6 +1229,21 @@
       "parents": [
         "Scientific Research",
         "Academia"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/accelerometer",
+      "label": "Accelerometer",
+      "categories": [
+        18,
+        33
+      ],
+      "domains": [
+        3
+      ],
+      "parents": [
+        "Perception and Sensing",
+        "Robotics"
       ]
     },
     {
@@ -1149,10 +1455,27 @@
       ]
     },
     {
+      "iri": "https://narrativegoldmine.com/class/active-r-d-funding-opportunities-register",
+      "label": "Active R&D Funding Opportunities Register",
+      "categories": [
+        33,
+        28
+      ],
+      "domains": [
+        5
+      ],
+      "parents": [
+        "Software Engineering",
+        "Resource Management"
+      ]
+    },
+    {
       "iri": "https://narrativegoldmine.com/class/activity-data",
       "label": "Activity Data",
       "categories": [
+        31,
         28,
+        4,
         0
       ],
       "domains": [
@@ -1164,6 +1487,21 @@
         "Time-Series Analysis",
         "Event Sourcing",
         "Behavioural Analytics"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/actor-model",
+      "label": "Actor Model",
+      "categories": [
+        33,
+        28
+      ],
+      "domains": [
+        5
+      ],
+      "parents": [
+        "Concurrency",
+        "Distributed Computing"
       ]
     },
     {
@@ -1187,7 +1525,8 @@
       "categories": [
         20,
         5,
-        0
+        0,
+        33
       ],
       "domains": [
         0
@@ -1220,7 +1559,7 @@
       "iri": "https://narrativegoldmine.com/class/address",
       "label": "Address",
       "categories": [
-        30,
+        7,
         28
       ],
       "domains": [
@@ -1237,7 +1576,8 @@
       "label": "Admittance Control",
       "categories": [
         19,
-        32
+        32,
+        33
       ],
       "domains": [
         3,
@@ -1257,7 +1597,8 @@
       "label": "Adoption of Convergent Technologies",
       "categories": [
         3,
-        27
+        27,
+        33
       ],
       "domains": [
         0,
@@ -1305,9 +1646,26 @@
       ]
     },
     {
+      "iri": "https://narrativegoldmine.com/class/aerial-robot",
+      "label": "Aerial Robot",
+      "categories": [
+        20,
+        33
+      ],
+      "domains": [
+        3
+      ],
+      "parents": [
+        "Robot Type",
+        "Mobile Robot",
+        "Robotics"
+      ]
+    },
+    {
       "iri": "https://narrativegoldmine.com/class/agent-communication-protocol",
       "label": "Agent Communication Protocol",
       "categories": [
+        4,
         28,
         29
       ],
@@ -1324,6 +1682,7 @@
       "iri": "https://narrativegoldmine.com/class/agent-development-sdks",
       "label": "Agent Development SDKs",
       "categories": [
+        4,
         2,
         1
       ],
@@ -1340,7 +1699,7 @@
       "iri": "https://narrativegoldmine.com/class/agent-evaluation-benchmarks",
       "label": "Agent Evaluation Benchmarks",
       "categories": [
-        2,
+        4,
         0
       ],
       "domains": [
@@ -1356,7 +1715,7 @@
       "iri": "https://narrativegoldmine.com/class/agent-execution-sandboxes",
       "label": "Agent Execution Sandboxes",
       "categories": [
-        2,
+        4,
         28
       ],
       "domains": [
@@ -1392,7 +1751,7 @@
       "iri": "https://narrativegoldmine.com/class/agent-harness",
       "label": "Agent Harness",
       "categories": [
-        28,
+        4,
         2,
         15
       ],
@@ -1429,8 +1788,7 @@
       "iri": "https://narrativegoldmine.com/class/agent-memory-layers",
       "label": "Agent Memory Layers",
       "categories": [
-        2,
-        28,
+        4,
         1
       ],
       "domains": [
@@ -1502,7 +1860,7 @@
       "label": "Agent-to-Agent Protocol",
       "categories": [
         29,
-        28
+        4
       ],
       "domains": [
         0,
@@ -1517,8 +1875,7 @@
       "iri": "https://narrativegoldmine.com/class/agent",
       "label": "Agent",
       "categories": [
-        20,
-        27
+        20
       ],
       "domains": [
         3,
@@ -1534,7 +1891,7 @@
       "label": "Agent2Agent Protocol (Google 2025)",
       "categories": [
         29,
-        28
+        4
       ],
       "domains": [
         0,
@@ -1570,7 +1927,8 @@
       "categories": [
         5,
         2,
-        28
+        28,
+        33
       ],
       "domains": [
         0,
@@ -1625,18 +1983,20 @@
       ]
     },
     {
-      "iri": "https://narrativegoldmine.com/class/ai-agent-identity",
-      "label": "Ai Agent Identity",
+      "iri": "https://narrativegoldmine.com/class/agricultural-robot",
+      "label": "Agricultural Robot",
       "categories": [
-        27,
-        16
+        20,
+        33
       ],
       "domains": [
-        1
+        3
       ],
       "parents": [
-        "Blockchain",
-        "Verifiable Credential"
+        "Robot Type",
+        "Mobile Robot",
+        "Robotics",
+        "Service Robot"
       ]
     },
     {
@@ -1727,7 +2087,7 @@
       "label": "Algorithmic Framework",
       "categories": [
         0,
-        28
+        4
       ],
       "domains": [
         0
@@ -1774,25 +2134,10 @@
       ]
     },
     {
-      "iri": "https://narrativegoldmine.com/class/allo-protocol",
-      "label": "Allo Protocol",
-      "categories": [
-        27,
-        9
-      ],
-      "domains": [
-        1
-      ],
-      "parents": [
-        "Blockchain",
-        "Decentralised Finance"
-      ]
-    },
-    {
       "iri": "https://narrativegoldmine.com/class/annotated-dataset",
       "label": "Annotated Dataset",
       "categories": [
-        5,
+        4,
         0
       ],
       "domains": [
@@ -1855,7 +2200,7 @@
       "iri": "https://narrativegoldmine.com/class/apache-parquet",
       "label": "Apache Parquet",
       "categories": [
-        27
+        31
       ],
       "domains": [
         1,
@@ -1895,6 +2240,21 @@
         "Display and Rendering",
         "Platform and Environment",
         "Digital Display Layer"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/ar-scene-graph",
+      "label": "Ar Scene Graph",
+      "categories": [
+        14,
+        33
+      ],
+      "domains": [
+        2
+      ],
+      "parents": [
+        "Content and Assets",
+        "Spatial Data Structure"
       ]
     },
     {
@@ -2081,26 +2441,12 @@
       ]
     },
     {
-      "iri": "https://narrativegoldmine.com/class/asymmetric-encryption",
-      "label": "Asymmetric Encryption",
-      "categories": [
-        30,
-        27
-      ],
-      "domains": [
-        1
-      ],
-      "parents": [
-        "Cryptographic Primitive",
-        "Blockchain"
-      ]
-    },
-    {
       "iri": "https://narrativegoldmine.com/class/asynchronous-video",
       "label": "Asynchronous Video",
       "categories": [
         24,
-        29
+        29,
+        31
       ],
       "domains": [
         4,
@@ -2113,21 +2459,6 @@
         "Distributed Collaboration",
         "Knowledge Management",
         "Digital Workplace Technology"
-      ]
-    },
-    {
-      "iri": "https://narrativegoldmine.com/class/atomic-swap",
-      "label": "Atomic Swap",
-      "categories": [
-        6,
-        27
-      ],
-      "domains": [
-        1
-      ],
-      "parents": [
-        "Blockchain Protocol",
-        "Blockchain"
       ]
     },
     {
@@ -2199,7 +2530,8 @@
       "iri": "https://narrativegoldmine.com/class/attitude-control-thruster",
       "label": "Attitude Control Thruster",
       "categories": [
-        19
+        19,
+        41
       ],
       "domains": [
         3,
@@ -2295,6 +2627,7 @@
       "iri": "https://narrativegoldmine.com/class/augmented-reality-collaboration",
       "label": "Augmented Reality Collaboration",
       "categories": [
+        26,
         24
       ],
       "domains": [
@@ -2327,7 +2660,7 @@
       "label": "AutoML",
       "categories": [
         2,
-        28
+        4
       ],
       "domains": [
         0
@@ -2424,6 +2757,7 @@
       "label": "Automatic Prompt Optimisation",
       "categories": [
         0,
+        4,
         5
       ],
       "domains": [
@@ -2459,7 +2793,8 @@
       "iri": "https://narrativegoldmine.com/class/automatic1111",
       "label": "Automatic1111",
       "categories": [
-        2
+        2,
+        33
       ],
       "domains": [
         0,
@@ -2506,7 +2841,8 @@
       "iri": "https://narrativegoldmine.com/class/autonomous-driving",
       "label": "Autonomous Driving",
       "categories": [
-        2
+        2,
+        33
       ],
       "domains": [
         0,
@@ -2600,6 +2936,21 @@
         "Generative Model",
         "Deep Generative Model",
         "Probabilistic Model"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/autoscaling",
+      "label": "Autoscaling",
+      "categories": [
+        28,
+        33
+      ],
+      "domains": [
+        5
+      ],
+      "parents": [
+        "Resource Management",
+        "Scalability"
       ]
     },
     {
@@ -2701,7 +3052,7 @@
       "iri": "https://narrativegoldmine.com/class/blake2",
       "label": "BLAKE2",
       "categories": [
-        30,
+        7,
         28
       ],
       "domains": [
@@ -2783,6 +3134,22 @@
       ]
     },
     {
+      "iri": "https://narrativegoldmine.com/class/backlash",
+      "label": "Backlash",
+      "categories": [
+        19,
+        33
+      ],
+      "domains": [
+        3
+      ],
+      "parents": [
+        "Actuation and Control",
+        "Robot Dynamics",
+        "Robotics"
+      ]
+    },
+    {
       "iri": "https://narrativegoldmine.com/class/bandwidth-adaptation",
       "label": "Bandwidth Adaptation",
       "categories": [
@@ -2842,7 +3209,7 @@
       "categories": [
         0,
         1,
-        28
+        4
       ],
       "domains": [
         0,
@@ -3014,7 +3381,7 @@
       "categories": [
         5,
         21,
-        28
+        33
       ],
       "domains": [
         0,
@@ -3067,21 +3434,6 @@
       ]
     },
     {
-      "iri": "https://narrativegoldmine.com/class/benchmark-dataset",
-      "label": "Benchmark Dataset",
-      "categories": [
-        5,
-        0
-      ],
-      "domains": [
-        0
-      ],
-      "parents": [
-        "Dataset",
-        "Labelled Dataset"
-      ]
-    },
-    {
       "iri": "https://narrativegoldmine.com/class/benchmark-evaluation",
       "label": "Benchmark Evaluation",
       "categories": [
@@ -3104,7 +3456,8 @@
       "label": "Benchmarks",
       "categories": [
         5,
-        0
+        0,
+        33
       ],
       "domains": [
         0,
@@ -3225,7 +3578,8 @@
       "iri": "https://narrativegoldmine.com/class/binary-buffer",
       "label": "Binary Buffer",
       "categories": [
-        16
+        16,
+        33
       ],
       "domains": [
         2,
@@ -3240,7 +3594,8 @@
       "iri": "https://narrativegoldmine.com/class/binary-encoding",
       "label": "Binary Encoding",
       "categories": [
-        16
+        16,
+        31
       ],
       "domains": [
         2,
@@ -3272,9 +3627,55 @@
       ]
     },
     {
+      "iri": "https://narrativegoldmine.com/class/bioinformatics",
+      "label": "Bioinformatics",
+      "categories": [
+        31,
+        28
+      ],
+      "domains": [
+        5
+      ],
+      "parents": [
+        "Data Science",
+        "Scientific Computing"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/biomechanics",
+      "label": "Biomechanics",
+      "categories": [
+        33,
+        19
+      ],
+      "domains": [
+        3
+      ],
+      "parents": [
+        "Robotics",
+        "Actuation and Control"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/biomedical-engineering",
+      "label": "Biomedical Engineering",
+      "categories": [
+        33,
+        20
+      ],
+      "domains": [
+        3
+      ],
+      "parents": [
+        "Robotics",
+        "Medical Robot"
+      ]
+    },
+    {
       "iri": "https://narrativegoldmine.com/class/biosensing-interface",
       "label": "Biosensing Interface",
       "categories": [
+        33,
         28
       ],
       "domains": [
@@ -3313,7 +3714,6 @@
       "label": "Bitcoin Centralisation Risks",
       "categories": [
         11,
-        27,
         3,
         30
       ],
@@ -3337,8 +3737,7 @@
       "categories": [
         9,
         8,
-        6,
-        27
+        6
       ],
       "domains": [
         1
@@ -3478,7 +3877,7 @@
       "iri": "https://narrativegoldmine.com/class/bittensor",
       "label": "Bittensor",
       "categories": [
-        0,
+        4,
         27
       ],
       "domains": [
@@ -3677,7 +4076,7 @@
       "label": "Blockchain Anchoring",
       "categories": [
         27,
-        30
+        7
       ],
       "domains": [
         1,
@@ -3693,7 +4092,8 @@
       "label": "Blockchain As A Service",
       "categories": [
         27,
-        28
+        28,
+        33
       ],
       "domains": [
         1,
@@ -3738,21 +4138,6 @@
       "parents": [
         "Governance and Regulation",
         "Regulatory Compliance"
-      ]
-    },
-    {
-      "iri": "https://narrativegoldmine.com/class/blockchain-core",
-      "label": "Blockchain Core",
-      "categories": [
-        27,
-        6
-      ],
-      "domains": [
-        1
-      ],
-      "parents": [
-        "Blockchain",
-        "Blockchain Protocol"
       ]
     },
     {
@@ -3910,55 +4295,6 @@
       ]
     },
     {
-      "iri": "https://narrativegoldmine.com/class/blockchain-sustainability",
-      "label": "Blockchain Sustainability",
-      "categories": [
-        11,
-        27
-      ],
-      "domains": [
-        1
-      ],
-      "parents": [
-        "Governance and Regulation",
-        "Blockchain"
-      ]
-    },
-    {
-      "iri": "https://narrativegoldmine.com/class/blockchain-technology-laboratory",
-      "label": "Blockchain Technology Laboratory",
-      "categories": [
-        27,
-        6
-      ],
-      "domains": [
-        1
-      ],
-      "parents": [
-        "Blockchain",
-        "Protocol and Consensus",
-        "Blockchain Domain"
-      ]
-    },
-    {
-      "iri": "https://narrativegoldmine.com/class/blockchain",
-      "label": "Blockchain",
-      "categories": [
-        27,
-        30
-      ],
-      "domains": [
-        5,
-        1
-      ],
-      "parents": [
-        "Thing",
-        "Distributed Data Structure",
-        "Distributed Ledger",
-        "Cryptographic System"
-      ]
-    },
-    {
       "iri": "https://narrativegoldmine.com/class/boston-dynamics-spot",
       "label": "Boston Dynamics Spot",
       "categories": [
@@ -4007,10 +4343,26 @@
       ]
     },
     {
+      "iri": "https://narrativegoldmine.com/class/bounding-volume-hierarchy",
+      "label": "Bounding Volume Hierarchy",
+      "categories": [
+        12,
+        33
+      ],
+      "domains": [
+        2
+      ],
+      "parents": [
+        "Display and Rendering",
+        "Spatial Data Structure"
+      ]
+    },
+    {
       "iri": "https://narrativegoldmine.com/class/brain-computer-interfaces",
       "label": "Brain Computer Interfaces",
       "categories": [
         28,
+        33,
         13,
         17
       ],
@@ -4052,7 +4404,8 @@
       "iri": "https://narrativegoldmine.com/class/browser-automation",
       "label": "Browser Automation",
       "categories": [
-        2
+        2,
+        33
       ],
       "domains": [
         0,
@@ -4454,7 +4807,6 @@
       "label": "Carbon Neutral Blockchain",
       "categories": [
         11,
-        27,
         28,
         17
       ],
@@ -4484,22 +4836,6 @@
       "parents": [
         "Governance and Safety",
         "Strategic Planning"
-      ]
-    },
-    {
-      "iri": "https://narrativegoldmine.com/class/cardano",
-      "label": "Cardano",
-      "categories": [
-        27,
-        6
-      ],
-      "domains": [
-        1
-      ],
-      "parents": [
-        "Blockchain",
-        "Protocol and Consensus",
-        "Blockchain Domain"
       ]
     },
     {
@@ -4563,7 +4899,7 @@
       "label": "Category Hierarchies",
       "categories": [
         16,
-        28
+        4
       ],
       "domains": [
         2,
@@ -4652,7 +4988,6 @@
       "label": "Centralised Exchange",
       "categories": [
         28,
-        27,
         9
       ],
       "domains": [
@@ -4669,7 +5004,8 @@
       "label": "Centralized Swarm Control",
       "categories": [
         20,
-        19
+        19,
+        33
       ],
       "domains": [
         3,
@@ -4756,7 +5092,8 @@
       "iri": "https://narrativegoldmine.com/class/character-relationship-graph",
       "label": "Character Relationship Graph",
       "categories": [
-        14
+        14,
+        31
       ],
       "domains": [
         2,
@@ -4807,6 +5144,7 @@
       "label": "Checkpoints",
       "categories": [
         0,
+        4,
         28
       ],
       "domains": [
@@ -4950,6 +5288,7 @@
       "label": "Clustering",
       "categories": [
         0,
+        31,
         5
       ],
       "domains": [
@@ -5154,6 +5493,7 @@
       "label": "Collaborative Document Editing",
       "categories": [
         25,
+        26,
         24
       ],
       "domains": [
@@ -5204,6 +5544,7 @@
       "label": "Collaborative Robot",
       "categories": [
         20,
+        33,
         19
       ],
       "domains": [
@@ -5272,6 +5613,21 @@
       ]
     },
     {
+      "iri": "https://narrativegoldmine.com/class/collision-avoidance",
+      "label": "Collision Avoidance",
+      "categories": [
+        21,
+        33
+      ],
+      "domains": [
+        3
+      ],
+      "parents": [
+        "Navigation and Planning",
+        "Robotics"
+      ]
+    },
+    {
       "iri": "https://narrativegoldmine.com/class/collision-detection",
       "label": "Collision Detection",
       "categories": [
@@ -5294,7 +5650,7 @@
       "iri": "https://narrativegoldmine.com/class/collision-resistance",
       "label": "Collision Resistance",
       "categories": [
-        30,
+        7,
         28
       ],
       "domains": [
@@ -5310,7 +5666,8 @@
       "iri": "https://narrativegoldmine.com/class/comfy-ui",
       "label": "Comfy Ui",
       "categories": [
-        2
+        2,
+        33
       ],
       "domains": [
         0,
@@ -5328,6 +5685,7 @@
       "label": "ComfyUI API Specification",
       "categories": [
         1,
+        33,
         2
       ],
       "domains": [
@@ -5345,7 +5703,8 @@
       "iri": "https://narrativegoldmine.com/class/node-based-diffusion-pipeline-interface-client",
       "label": "ComfyUI Client",
       "categories": [
-        28,
+        4,
+        33,
         5
       ],
       "domains": [
@@ -5359,6 +5718,21 @@
         "API Client",
         "Workflow Orchestration System",
         "Generative AI Tool"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/node-based-diffusion-pipeline-interface-manager",
+      "label": "ComfyUI Manager",
+      "categories": [
+        2,
+        33
+      ],
+      "domains": [
+        0
+      ],
+      "parents": [
+        "AI Application",
+        "Package Manager"
       ]
     },
     {
@@ -5385,7 +5759,8 @@
       "iri": "https://narrativegoldmine.com/class/common-crawl",
       "label": "Common Crawl",
       "categories": [
-        0
+        4,
+        31
       ],
       "domains": [
         0,
@@ -5417,7 +5792,8 @@
       "iri": "https://narrativegoldmine.com/class/communication-protocol",
       "label": "Communication Protocol",
       "categories": [
-        28
+        33,
+        4
       ],
       "domains": [
         3,
@@ -5524,7 +5900,8 @@
       "iri": "https://narrativegoldmine.com/class/complex-adaptive-systems",
       "label": "Complex Adaptive Systems",
       "categories": [
-        5
+        5,
+        33
       ],
       "domains": [
         5,
@@ -5541,7 +5918,8 @@
       "label": "Compliance Audit Trail",
       "categories": [
         3,
-        32
+        32,
+        31
       ],
       "domains": [
         0,
@@ -5632,6 +6010,7 @@
       "iri": "https://narrativegoldmine.com/class/component",
       "label": "Component",
       "categories": [
+        4,
         28
       ],
       "domains": [
@@ -5645,9 +6024,26 @@
       ]
     },
     {
+      "iri": "https://narrativegoldmine.com/class/computability-theory",
+      "label": "Computability Theory",
+      "categories": [
+        5,
+        33
+      ],
+      "domains": [
+        0
+      ],
+      "parents": [
+        "Mathematical Logic",
+        "Proof Theory",
+        "Theoretical Computer Science"
+      ]
+    },
+    {
       "iri": "https://narrativegoldmine.com/class/computational-biology",
       "label": "Computational Biology",
       "categories": [
+        31,
         28
       ],
       "domains": [
@@ -5662,10 +6058,27 @@
       ]
     },
     {
+      "iri": "https://narrativegoldmine.com/class/computational-complexity-theory",
+      "label": "Computational Complexity Theory",
+      "categories": [
+        33,
+        5
+      ],
+      "domains": [
+        0
+      ],
+      "parents": [
+        "Theoretical Computer Science",
+        "AI Research Area",
+        "Mathematical Logic",
+        "owl:Thing"
+      ]
+    },
+    {
       "iri": "https://narrativegoldmine.com/class/computational-component",
       "label": "Computational Component",
       "categories": [
-        28
+        4
       ],
       "domains": [
         5,
@@ -5742,7 +6155,9 @@
     {
       "iri": "https://narrativegoldmine.com/class/computer-aided-design",
       "label": "Computer Aided Design",
-      "categories": [],
+      "categories": [
+        33
+      ],
       "domains": [
         3,
         5
@@ -5798,7 +6213,7 @@
       "label": "Confidential Transactions",
       "categories": [
         27,
-        30
+        7
       ],
       "domains": [
         1
@@ -5845,6 +6260,7 @@
       "label": "Consensus Mechanism",
       "categories": [
         6,
+        4,
         28
       ],
       "domains": [
@@ -5915,7 +6331,7 @@
       "label": "Constraint Based Design",
       "categories": [
         0,
-        28
+        4
       ],
       "domains": [
         0
@@ -5977,6 +6393,36 @@
       ]
     },
     {
+      "iri": "https://narrativegoldmine.com/class/consumer-ai-adoption",
+      "label": "Consumer AI Adoption",
+      "categories": [
+        9
+      ],
+      "domains": [
+        0,
+        1
+      ],
+      "parents": [
+        "Artificial Intelligence",
+        "DeFi and Economics"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/consumer-ai-market",
+      "label": "Consumer AI Market",
+      "categories": [
+        9
+      ],
+      "domains": [
+        0,
+        1
+      ],
+      "parents": [
+        "Artificial Intelligence",
+        "DeFi and Economics"
+      ]
+    },
+    {
       "iri": "https://narrativegoldmine.com/class/consumer-protection",
       "label": "Consumer Protection",
       "categories": [
@@ -5997,11 +6443,29 @@
       ]
     },
     {
+      "iri": "https://narrativegoldmine.com/class/container",
+      "label": "Container",
+      "categories": [
+        4,
+        28
+      ],
+      "domains": [
+        5
+      ],
+      "parents": [
+        "Infrastructure",
+        "AI Infrastructure (Artificial Intelligence)",
+        "Cloud Native",
+        "Deployment Artifact"
+      ]
+    },
+    {
       "iri": "https://narrativegoldmine.com/class/content-discovery",
       "label": "Content Discovery",
       "categories": [
         5,
-        0
+        0,
+        31
       ],
       "domains": [
         0,
@@ -6168,7 +6632,8 @@
       "label": "Control Theory",
       "categories": [
         19,
-        5
+        5,
+        33
       ],
       "domains": [
         3,
@@ -6267,7 +6732,8 @@
       "label": "Convergence",
       "categories": [
         0,
-        5
+        5,
+        33
       ],
       "domains": [
         0,
@@ -6453,6 +6919,21 @@
       ]
     },
     {
+      "iri": "https://narrativegoldmine.com/class/cross-border-data-transfer-rule",
+      "label": "Cross-Border Data Transfer Rule",
+      "categories": [
+        32,
+        31
+      ],
+      "domains": [
+        5
+      ],
+      "parents": [
+        "Legal and Regulatory",
+        "Privacy Framework"
+      ]
+    },
+    {
       "iri": "https://narrativegoldmine.com/class/cross-chain-bridge",
       "label": "Cross-Chain Bridge",
       "categories": [
@@ -6477,7 +6958,7 @@
       "label": "Cross-Chain Messaging",
       "categories": [
         29,
-        28
+        4
       ],
       "domains": [
         5
@@ -6592,7 +7073,7 @@
       "iri": "https://narrativegoldmine.com/class/cryptographic-commitment",
       "label": "Cryptographic Commitment",
       "categories": [
-        30,
+        7,
         28
       ],
       "domains": [
@@ -6608,6 +7089,7 @@
       "iri": "https://narrativegoldmine.com/class/cryptographic-keys",
       "label": "Cryptographic Keys",
       "categories": [
+        7,
         30
       ],
       "domains": [
@@ -6620,10 +7102,26 @@
       ]
     },
     {
+      "iri": "https://narrativegoldmine.com/class/cryptographic-primitive",
+      "label": "Cryptographic Primitive",
+      "categories": [
+        30,
+        7
+      ],
+      "domains": [
+        5,
+        1
+      ],
+      "parents": [
+        "Cryptography",
+        "Cryptographic Primitive (category)"
+      ]
+    },
+    {
       "iri": "https://narrativegoldmine.com/class/cryptographic-system",
       "label": "Cryptographic System",
       "categories": [
-        30,
+        7,
         28
       ],
       "domains": [
@@ -6639,7 +7137,9 @@
       "label": "Cryptography Security and Privacy",
       "categories": [
         30,
-        5
+        33,
+        5,
+        31
       ],
       "domains": [
         5,
@@ -6674,6 +7174,7 @@
       "label": "Current Sensor",
       "categories": [
         18,
+        33,
         28
       ],
       "domains": [
@@ -6689,6 +7190,7 @@
       "iri": "https://narrativegoldmine.com/class/cursor",
       "label": "Cursor",
       "categories": [
+        33,
         2
       ],
       "domains": [
@@ -6705,6 +7207,7 @@
       "iri": "https://narrativegoldmine.com/class/customer-experience-management",
       "label": "Customer Experience Management",
       "categories": [
+        33,
         5
       ],
       "domains": [
@@ -6794,6 +7297,7 @@
       "categories": [
         30,
         5,
+        33,
         3
       ],
       "domains": [
@@ -6880,6 +7384,25 @@
       ]
     },
     {
+      "iri": "https://narrativegoldmine.com/class/dao-analytics",
+      "label": "DAO Analytics",
+      "categories": [
+        11,
+        31
+      ],
+      "domains": [
+        1
+      ],
+      "parents": [
+        "Governance and Regulation",
+        "Analytics Platforms",
+        "Blockchain Analytics",
+        "Governance Tooling",
+        "Data-Driven Governance",
+        "Decentralised Autonomous Organisation"
+      ]
+    },
+    {
       "iri": "https://narrativegoldmine.com/class/dao-governance-for-telecollaboration",
       "label": "DAO Governance for Telecollaboration",
       "categories": [
@@ -6935,7 +7458,7 @@
       "categories": [
         1,
         0,
-        28
+        4
       ],
       "domains": [
         0
@@ -6950,7 +7473,7 @@
       "iri": "https://narrativegoldmine.com/class/dvc",
       "label": "DVC",
       "categories": [
-        28,
+        4,
         0
       ],
       "domains": [
@@ -6986,7 +7509,7 @@
       "label": "Data Annotation",
       "categories": [
         0,
-        28
+        4
       ],
       "domains": [
         0
@@ -7000,7 +7523,7 @@
       "iri": "https://narrativegoldmine.com/class/data-lake",
       "label": "Data Lake",
       "categories": [
-        28
+        31
       ],
       "domains": [
         5,
@@ -7015,8 +7538,9 @@
       "iri": "https://narrativegoldmine.com/class/data-layer",
       "label": "Data Layer",
       "categories": [
+        31,
         29,
-        28
+        4
       ],
       "domains": [
         5
@@ -7034,7 +7558,7 @@
       "label": "Data Parallelism",
       "categories": [
         28,
-        0
+        4
       ],
       "domains": [
         5,
@@ -7066,7 +7590,8 @@
       "label": "Data Preprocessing",
       "categories": [
         0,
-        28
+        4,
+        31
       ],
       "domains": [
         0,
@@ -7095,10 +7620,41 @@
       ]
     },
     {
+      "iri": "https://narrativegoldmine.com/class/data-replication",
+      "label": "Data Replication",
+      "categories": [
+        31,
+        28
+      ],
+      "domains": [
+        5
+      ],
+      "parents": [
+        "Data Management",
+        "Distributed Systems"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/data-storage-layer",
+      "label": "Data Storage Layer",
+      "categories": [
+        31,
+        29
+      ],
+      "domains": [
+        5
+      ],
+      "parents": [
+        "Data Management",
+        "Data Layer"
+      ]
+    },
+    {
       "iri": "https://narrativegoldmine.com/class/data-storage",
       "label": "Data Storage",
       "categories": [
-        28
+        31,
+        4
       ],
       "domains": [
         5,
@@ -7113,7 +7669,8 @@
       "iri": "https://narrativegoldmine.com/class/data-versioning",
       "label": "Data Versioning",
       "categories": [
-        28
+        4,
+        31
       ],
       "domains": [
         5,
@@ -7130,7 +7687,7 @@
       "iri": "https://narrativegoldmine.com/class/dataset",
       "label": "Dataset",
       "categories": [
-        28,
+        4,
         5
       ],
       "domains": [
@@ -7163,6 +7720,7 @@
       "label": "Death of the Internet",
       "categories": [
         3,
+        31,
         24,
         15
       ],
@@ -7205,8 +7763,7 @@
       "iri": "https://narrativegoldmine.com/class/decentralised-ai",
       "label": "Decentralised Ai",
       "categories": [
-        27,
-        28
+        4
       ],
       "domains": [
         1,
@@ -7283,6 +7840,7 @@
       "label": "Decentralised Identifier",
       "categories": [
         30,
+        7,
         8,
         16,
         27
@@ -7303,10 +7861,26 @@
       ]
     },
     {
+      "iri": "https://narrativegoldmine.com/class/decentralised-storage",
+      "label": "Decentralised Storage",
+      "categories": [
+        28,
+        31
+      ],
+      "domains": [
+        5
+      ],
+      "parents": [
+        "Distributed Systems",
+        "Data Management"
+      ]
+    },
+    {
       "iri": "https://narrativegoldmine.com/class/decentralised-web",
       "label": "Decentralised Web",
       "categories": [
         29,
+        33,
         28,
         27,
         16
@@ -7327,6 +7901,7 @@
       "iri": "https://narrativegoldmine.com/class/decentralised-file-storage",
       "label": "Decentralised file storage",
       "categories": [
+        31,
         28,
         27,
         29
@@ -7365,8 +7940,8 @@
       "categories": [
         9,
         5,
-        27,
         15,
+        27,
         30
       ],
       "domains": [
@@ -7387,7 +7962,8 @@
       "label": "Decentralized Swarm Control",
       "categories": [
         20,
-        19
+        19,
+        33
       ],
       "domains": [
         3,
@@ -7470,8 +8046,9 @@
       "iri": "https://narrativegoldmine.com/class/deep-speed",
       "label": "DeepSpeed",
       "categories": [
-        0,
-        28
+        4,
+        28,
+        0
       ],
       "domains": [
         0,
@@ -7716,6 +8293,21 @@
       ]
     },
     {
+      "iri": "https://narrativegoldmine.com/class/deployer",
+      "label": "Deployer",
+      "categories": [
+        33,
+        28
+      ],
+      "domains": [
+        5
+      ],
+      "parents": [
+        "Software Engineering",
+        "Digital Infrastructure"
+      ]
+    },
+    {
       "iri": "https://narrativegoldmine.com/class/depth-estimation",
       "label": "Depth Estimation",
       "categories": [
@@ -7739,7 +8331,8 @@
       "iri": "https://narrativegoldmine.com/class/destination-marketing",
       "label": "Destination Marketing",
       "categories": [
-        14
+        14,
+        31
       ],
       "domains": [
         2,
@@ -7751,24 +8344,10 @@
       ]
     },
     {
-      "iri": "https://narrativegoldmine.com/class/deterministic-finality",
-      "label": "Deterministic Finality",
-      "categories": [
-        6,
-        27
-      ],
-      "domains": [
-        1
-      ],
-      "parents": [
-        "Transaction Finality",
-        "Blockchain"
-      ]
-    },
-    {
       "iri": "https://narrativegoldmine.com/class/dev-sec-ops",
       "label": "DevSecOps",
       "categories": [
+        33,
         30
       ],
       "domains": [
@@ -7787,6 +8366,7 @@
       "label": "DiLoCo",
       "categories": [
         28,
+        4,
         0
       ],
       "domains": [
@@ -7925,7 +8505,7 @@
       "iri": "https://narrativegoldmine.com/class/difficulty",
       "label": "Difficulty",
       "categories": [
-        30,
+        7,
         28
       ],
       "domains": [
@@ -7995,7 +8575,8 @@
       "iri": "https://narrativegoldmine.com/class/digital-archive",
       "label": "Digital Archive",
       "categories": [
-        14
+        14,
+        31
       ],
       "domains": [
         2,
@@ -8133,7 +8714,8 @@
       "categories": [
         27,
         8,
-        30
+        30,
+        31
       ],
       "domains": [
         1,
@@ -8183,7 +8765,8 @@
       "iri": "https://narrativegoldmine.com/class/digital-repository",
       "label": "Digital Repository",
       "categories": [
-        15
+        15,
+        31
       ],
       "domains": [
         2,
@@ -8213,6 +8796,7 @@
       "iri": "https://narrativegoldmine.com/class/digital-signature",
       "label": "Digital Signature",
       "categories": [
+        7,
         30
       ],
       "domains": [
@@ -8293,6 +8877,7 @@
       "iri": "https://narrativegoldmine.com/class/digital-twin-collaboration",
       "label": "Digital Twin Collaboration",
       "categories": [
+        26,
         24
       ],
       "domains": [
@@ -8303,6 +8888,21 @@
         "Telepresence",
         "Telecollaboration",
         "TELE-002-telecollaboration"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/digital-twin-creation-pipeline",
+      "label": "Digital Twin Creation Pipeline",
+      "categories": [
+        15,
+        33
+      ],
+      "domains": [
+        2
+      ],
+      "parents": [
+        "Platform and Environment",
+        "3D Content Pipeline"
       ]
     },
     {
@@ -8326,7 +8926,7 @@
       "label": "Digital Twin Framework",
       "categories": [
         15,
-        28
+        4
       ],
       "domains": [
         2,
@@ -8448,6 +9048,7 @@
       "iri": "https://narrativegoldmine.com/class/distributed-ai-training",
       "label": "Distributed AI Training",
       "categories": [
+        4,
         28,
         0
       ],
@@ -8541,7 +9142,7 @@
       "label": "Distributed Inference",
       "categories": [
         1,
-        28
+        4
       ],
       "domains": [
         0,
@@ -8572,6 +9173,7 @@
       "label": "Distributed Ledger",
       "categories": [
         27,
+        33,
         28
       ],
       "domains": [
@@ -8608,7 +9210,7 @@
       "label": "Distributed System Architecture",
       "categories": [
         15,
-        28
+        4
       ],
       "domains": [
         2,
@@ -8623,8 +9225,9 @@
       "iri": "https://narrativegoldmine.com/class/distributed-training",
       "label": "Distributed Training",
       "categories": [
-        28,
-        0
+        4,
+        0,
+        28
       ],
       "domains": [
         5,
@@ -8689,8 +9292,10 @@
       "iri": "https://narrativegoldmine.com/class/domain-ontology",
       "label": "Domain Ontology",
       "categories": [
+        33,
+        31,
         5,
-        28
+        4
       ],
       "domains": [
         5,
@@ -8711,7 +9316,7 @@
       "label": "Drug Discovery",
       "categories": [
         2,
-        28
+        31
       ],
       "domains": [
         0
@@ -8728,7 +9333,8 @@
       "label": "Dynamic Batching",
       "categories": [
         0,
-        1
+        1,
+        31
       ],
       "domains": [
         0,
@@ -8797,7 +9403,8 @@
       "label": "ECDSA",
       "categories": [
         30,
-        28
+        28,
+        7
       ],
       "domains": [
         5,
@@ -8845,25 +9452,11 @@
       ]
     },
     {
-      "iri": "https://narrativegoldmine.com/class/esg-compliant-blockchain",
-      "label": "ESG-Compliant Blockchain",
-      "categories": [
-        27,
-        11
-      ],
-      "domains": [
-        1
-      ],
-      "parents": [
-        "Blockchain",
-        "Governance and Regulation"
-      ]
-    },
-    {
       "iri": "https://narrativegoldmine.com/class/etl-pipeline",
       "label": "ETL Pipeline",
       "categories": [
-        28
+        4,
+        31
       ],
       "domains": [
         5,
@@ -8900,7 +9493,7 @@
       "label": "ETSI Domain Taxonomy",
       "categories": [
         3,
-        28
+        4
       ],
       "domains": [
         0
@@ -8931,6 +9524,7 @@
       "label": "ETSI Domain: Data Management + AI",
       "categories": [
         5,
+        31,
         15
       ],
       "domains": [
@@ -8949,6 +9543,7 @@
       "label": "ETSI Domain: Data Management + Ethics",
       "categories": [
         3,
+        31,
         15
       ],
       "domains": [
@@ -9163,7 +9758,7 @@
       "iri": "https://narrativegoldmine.com/class/edge-ai-accelerator",
       "label": "Edge AI Accelerator",
       "categories": [
-        28
+        4
       ],
       "domains": [
         5,
@@ -9179,6 +9774,7 @@
       "iri": "https://narrativegoldmine.com/class/edge-ai-system",
       "label": "Edge AI System",
       "categories": [
+        4,
         28
       ],
       "domains": [
@@ -9232,7 +9828,7 @@
       "iri": "https://narrativegoldmine.com/class/edge-deployment",
       "label": "Edge Deployment",
       "categories": [
-        0,
+        4,
         28
       ],
       "domains": [
@@ -9312,6 +9908,21 @@
       ]
     },
     {
+      "iri": "https://narrativegoldmine.com/class/electric-vehicle",
+      "label": "Electric Vehicle",
+      "categories": [
+        4
+      ],
+      "domains": [
+        5,
+        0
+      ],
+      "parents": [
+        "Infrastructure",
+        "AI Infrastructure (category)"
+      ]
+    },
+    {
       "iri": "https://narrativegoldmine.com/class/eleven-labs",
       "label": "ElevenLabs",
       "categories": [
@@ -9331,7 +9942,7 @@
       "iri": "https://narrativegoldmine.com/class/elliptic-curve-cryptography",
       "label": "Elliptic Curve Cryptography",
       "categories": [
-        30,
+        7,
         28
       ],
       "domains": [
@@ -9347,6 +9958,7 @@
       "iri": "https://narrativegoldmine.com/class/embedded-ai-frameworks",
       "label": "Embedded AI Frameworks",
       "categories": [
+        4,
         28,
         0
       ],
@@ -9365,6 +9977,7 @@
       "iri": "https://narrativegoldmine.com/class/embedded-system",
       "label": "Embedded System",
       "categories": [
+        33,
         19,
         28
       ],
@@ -9415,7 +10028,8 @@
       "label": "Embodied AI",
       "categories": [
         5,
-        0
+        0,
+        33
       ],
       "domains": [
         0,
@@ -9431,7 +10045,8 @@
       "iri": "https://narrativegoldmine.com/class/embodied-minds",
       "label": "Embodied Minds",
       "categories": [
-        5
+        5,
+        33
       ],
       "domains": [
         0,
@@ -9485,6 +10100,7 @@
       "categories": [
         13,
         5,
+        33,
         15
       ],
       "domains": [
@@ -9551,10 +10167,42 @@
       ]
     },
     {
+      "iri": "https://narrativegoldmine.com/class/end-effector",
+      "label": "End Effector",
+      "categories": [
+        19,
+        33
+      ],
+      "domains": [
+        3
+      ],
+      "parents": [
+        "Actuation and Control",
+        "Robotics",
+        "Mechanical Component"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/energy-infrastructure",
+      "label": "Energy Infrastructure",
+      "categories": [
+        4
+      ],
+      "domains": [
+        5,
+        0
+      ],
+      "parents": [
+        "Infrastructure",
+        "AI Infrastructure (category)"
+      ]
+    },
+    {
       "iri": "https://narrativegoldmine.com/class/energy-and-power",
       "label": "Energy and Power",
       "categories": [
         28,
+        33,
         32
       ],
       "domains": [
@@ -9574,7 +10222,8 @@
       "label": "Enterprise AI Adoption",
       "categories": [
         2,
-        27
+        27,
+        33
       ],
       "domains": [
         0,
@@ -9592,7 +10241,9 @@
       "iri": "https://narrativegoldmine.com/class/enterprise-ai",
       "label": "Enterprise Ai",
       "categories": [
-        2
+        2,
+        33,
+        31
       ],
       "domains": [
         0,
@@ -9609,7 +10260,8 @@
       "iri": "https://narrativegoldmine.com/class/enterprise-search",
       "label": "Enterprise Search",
       "categories": [
-        5
+        5,
+        31
       ],
       "domains": [
         0,
@@ -9760,7 +10412,7 @@
       "label": "Etsi Metaverse Domain Model",
       "categories": [
         15,
-        28
+        4
       ],
       "domains": [
         2,
@@ -9775,7 +10427,8 @@
       "iri": "https://narrativegoldmine.com/class/etsi-metaverse-domain-taxonomy",
       "label": "Etsi Metaverse Domain Taxonomy",
       "categories": [
-        15
+        15,
+        31
       ],
       "domains": [
         2,
@@ -9807,7 +10460,8 @@
       "label": "Evaluation Harness",
       "categories": [
         0,
-        5
+        5,
+        33
       ],
       "domains": [
         0,
@@ -9834,6 +10488,36 @@
         "Performance Metrics",
         "AI Research Area",
         "Measurement Theory"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/event-driven-architecture",
+      "label": "Event Driven Architecture",
+      "categories": [
+        33,
+        4
+      ],
+      "domains": [
+        5
+      ],
+      "parents": [
+        "Software Engineering",
+        "System Architecture"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/event-loop",
+      "label": "Event Loop",
+      "categories": [
+        33,
+        0
+      ],
+      "domains": [
+        5
+      ],
+      "parents": [
+        "Concurrency",
+        "Execution Model"
       ]
     },
     {
@@ -9900,6 +10584,22 @@
       ]
     },
     {
+      "iri": "https://narrativegoldmine.com/class/exoskeleton-robot",
+      "label": "Exoskeleton Robot",
+      "categories": [
+        20,
+        33
+      ],
+      "domains": [
+        3
+      ],
+      "parents": [
+        "Robot Type",
+        "Robotics",
+        "Wearable Robotics"
+      ]
+    },
+    {
       "iri": "https://narrativegoldmine.com/class/expectation-maximisation",
       "label": "Expectation Maximisation",
       "categories": [
@@ -9921,8 +10621,9 @@
       "label": "Experiment Tracking",
       "categories": [
         0,
-        28,
-        5
+        4,
+        5,
+        31
       ],
       "domains": [
         0,
@@ -9939,8 +10640,7 @@
       "iri": "https://narrativegoldmine.com/class/expert-parallelism",
       "label": "Expert Parallelism",
       "categories": [
-        0,
-        28
+        4
       ],
       "domains": [
         0,
@@ -9987,7 +10687,7 @@
       "iri": "https://narrativegoldmine.com/class/external-ai-harness",
       "label": "External AI Harness",
       "categories": [
-        2,
+        4,
         0,
         28
       ],
@@ -10041,7 +10741,7 @@
       "label": "FIPA ACL",
       "categories": [
         5,
-        28
+        4
       ],
       "domains": [
         5,
@@ -10058,8 +10758,9 @@
       "iri": "https://narrativegoldmine.com/class/fsdp",
       "label": "FSDP",
       "categories": [
-        0,
-        28
+        4,
+        28,
+        0
       ],
       "domains": [
         0,
@@ -10128,6 +10829,7 @@
       "iri": "https://narrativegoldmine.com/class/failure-mode-and-effects-analysis",
       "label": "Failure Mode And Effects Analysis",
       "categories": [
+        33,
         22
       ],
       "domains": [
@@ -10144,6 +10846,7 @@
       "label": "Fashion",
       "categories": [
         28,
+        33,
         5,
         2,
         27,
@@ -10185,8 +10888,8 @@
       "label": "Fault Tolerance",
       "categories": [
         28,
-        0,
-        27
+        33,
+        0
       ],
       "domains": [
         5,
@@ -10205,7 +10908,7 @@
       "iri": "https://narrativegoldmine.com/class/feature-store",
       "label": "Feature Store",
       "categories": [
-        28
+        4
       ],
       "domains": [
         5,
@@ -10282,6 +10985,21 @@
       ]
     },
     {
+      "iri": "https://narrativegoldmine.com/class/feedback-control",
+      "label": "Feedback Control",
+      "categories": [
+        19,
+        33
+      ],
+      "domains": [
+        3
+      ],
+      "parents": [
+        "Control Theory",
+        "Robotics"
+      ]
+    },
+    {
       "iri": "https://narrativegoldmine.com/class/feedback-mechanism",
       "label": "Feedback Mechanism",
       "categories": [
@@ -10294,21 +11012,6 @@
       "parents": [
         "Interaction Technology",
         "Immersive Experience Pipeline"
-      ]
-    },
-    {
-      "iri": "https://narrativegoldmine.com/class/feeless-blockchain",
-      "label": "Feeless Blockchain",
-      "categories": [
-        27,
-        6
-      ],
-      "domains": [
-        1
-      ],
-      "parents": [
-        "Blockchain",
-        "Protocol and Consensus"
       ]
     },
     {
@@ -10341,21 +11044,6 @@
       "parents": [
         "Fraud Detection",
         "AI Application"
-      ]
-    },
-    {
-      "iri": "https://narrativegoldmine.com/class/financial-reporting",
-      "label": "Financial Reporting",
-      "categories": [
-        27,
-        11
-      ],
-      "domains": [
-        1
-      ],
-      "parents": [
-        "Blockchain",
-        "Governance and Regulation"
       ]
     },
     {
@@ -10392,7 +11080,8 @@
       "iri": "https://narrativegoldmine.com/class/fooocus",
       "label": "Fooocus",
       "categories": [
-        2
+        2,
+        33
       ],
       "domains": [
         0,
@@ -10405,6 +11094,39 @@
         "Open Source Software",
         "Local Image Generation Interface",
         "Gradio Application"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/force-control",
+      "label": "Force Control",
+      "categories": [
+        19,
+        33
+      ],
+      "domains": [
+        3
+      ],
+      "parents": [
+        "Actuation and Control",
+        "Robotic Control",
+        "Closed Loop Control",
+        "Interaction Control",
+        "Cyber-Physical Control"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/force-torque-sensor",
+      "label": "Force Torque Sensor",
+      "categories": [
+        28,
+        33
+      ],
+      "domains": [
+        3
+      ],
+      "parents": [
+        "Sensor",
+        "Robotics"
       ]
     },
     {
@@ -10424,25 +11146,11 @@
       ]
     },
     {
-      "iri": "https://narrativegoldmine.com/class/fork",
-      "label": "Fork",
-      "categories": [
-        27,
-        6
-      ],
-      "domains": [
-        1
-      ],
-      "parents": [
-        "Blockchain",
-        "Protocol and Consensus"
-      ]
-    },
-    {
       "iri": "https://narrativegoldmine.com/class/format-parser",
       "label": "Format Parser",
       "categories": [
-        16
+        16,
+        31
       ],
       "domains": [
         2,
@@ -10500,6 +11208,23 @@
       ]
     },
     {
+      "iri": "https://narrativegoldmine.com/class/friction",
+      "label": "Friction",
+      "categories": [
+        19,
+        33
+      ],
+      "domains": [
+        3
+      ],
+      "parents": [
+        "Actuation and Control",
+        "Robotics",
+        "Robot Dynamics",
+        "Physics Modelling"
+      ]
+    },
+    {
       "iri": "https://narrativegoldmine.com/class/full-node",
       "label": "Full Node",
       "categories": [
@@ -10531,6 +11256,21 @@
         "LLM Capability",
         "Agentic Capability",
         "Language Model Augmentation"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/functional-safety",
+      "label": "Functional Safety",
+      "categories": [
+        22,
+        33
+      ],
+      "domains": [
+        3
+      ],
+      "parents": [
+        "Safety Engineering",
+        "Robotics"
       ]
     },
     {
@@ -10582,6 +11322,21 @@
         "Agents",
         "Agentic Internet",
         "Cognitive AI"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/gpu-infrastructure",
+      "label": "GPU Infrastructure",
+      "categories": [
+        4
+      ],
+      "domains": [
+        5,
+        0
+      ],
+      "parents": [
+        "Infrastructure",
+        "AI Infrastructure (category)"
       ]
     },
     {
@@ -10645,21 +11400,6 @@
       "parents": [
         "Smart Contract Platform",
         "Protocol and Consensus"
-      ]
-    },
-    {
-      "iri": "https://narrativegoldmine.com/class/gas-optimization",
-      "label": "Gas Optimization",
-      "categories": [
-        6,
-        27
-      ],
-      "domains": [
-        1
-      ],
-      "parents": [
-        "Protocol and Consensus",
-        "Blockchain"
       ]
     },
     {
@@ -10729,6 +11469,23 @@
         "Novel View Synthesis",
         "Differentiable Rendering",
         "Computer Vision"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/gazebo-simulator",
+      "label": "Gazebo Simulator",
+      "categories": [
+        19,
+        33
+      ],
+      "domains": [
+        3
+      ],
+      "parents": [
+        "Actuation and Control",
+        "Robotics",
+        "Physics Simulator",
+        "Robotics Development Tool"
       ]
     },
     {
@@ -11005,6 +11762,37 @@
       ]
     },
     {
+      "iri": "https://narrativegoldmine.com/class/gps-navigation",
+      "label": "Gps Navigation",
+      "categories": [
+        33,
+        21
+      ],
+      "domains": [
+        3
+      ],
+      "parents": [
+        "Robotics",
+        "Navigation System"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/gps",
+      "label": "Gps",
+      "categories": [
+        21,
+        33
+      ],
+      "domains": [
+        3
+      ],
+      "parents": [
+        "Navigation and Planning",
+        "Navigation System",
+        "Robotics"
+      ]
+    },
+    {
       "iri": "https://narrativegoldmine.com/class/grammar-system",
       "label": "Grammar System",
       "categories": [
@@ -11024,7 +11812,8 @@
       "iri": "https://narrativegoldmine.com/class/granular-consent-control",
       "label": "Granular Consent Control",
       "categories": [
-        17
+        17,
+        31
       ],
       "domains": [
         2,
@@ -11036,11 +11825,27 @@
       ]
     },
     {
+      "iri": "https://narrativegoldmine.com/class/graph-optimisation",
+      "label": "Graph Optimisation",
+      "categories": [
+        4,
+        0
+      ],
+      "domains": [
+        0
+      ],
+      "parents": [
+        "Model Optimisation and Performance",
+        "Inference Optimisation"
+      ]
+    },
+    {
       "iri": "https://narrativegoldmine.com/class/graphics-api",
       "label": "Graphics API",
       "categories": [
         12,
         27,
+        33,
         15
       ],
       "domains": [
@@ -11148,6 +11953,22 @@
       ]
     },
     {
+      "iri": "https://narrativegoldmine.com/class/gyroscope",
+      "label": "Gyroscope",
+      "categories": [
+        18,
+        33
+      ],
+      "domains": [
+        3
+      ],
+      "parents": [
+        "Perception and Sensing",
+        "Robotics",
+        "Inertial Sensor"
+      ]
+    },
+    {
       "iri": "https://narrativegoldmine.com/class/halving",
       "label": "Halving",
       "categories": [
@@ -11220,7 +12041,8 @@
       "label": "Hardware and Edge",
       "categories": [
         28,
-        12
+        12,
+        4
       ],
       "domains": [
         5,
@@ -11240,6 +12062,7 @@
       "iri": "https://narrativegoldmine.com/class/harness-configuration-packs",
       "label": "Harness Configuration Packs",
       "categories": [
+        4,
         2,
         0
       ],
@@ -11256,7 +12079,7 @@
       "iri": "https://narrativegoldmine.com/class/hash-collision",
       "label": "Hash Collision",
       "categories": [
-        30,
+        7,
         28
       ],
       "domains": [
@@ -11272,6 +12095,7 @@
       "iri": "https://narrativegoldmine.com/class/hash-function",
       "label": "Hash Function",
       "categories": [
+        7,
         30
       ],
       "domains": [
@@ -11333,9 +12157,30 @@
       ]
     },
     {
+      "iri": "https://narrativegoldmine.com/class/home-assistant",
+      "label": "Home Assistant",
+      "categories": [
+        28,
+        33
+      ],
+      "domains": [
+        5
+      ],
+      "parents": [
+        "Computing and Cloud",
+        "Smart Home",
+        "IoT Platform",
+        "Edge Computing",
+        "Home Automation",
+        "Open Source Software"
+      ]
+    },
+    {
       "iri": "https://narrativegoldmine.com/class/horizon-workrooms",
       "label": "Horizon Workrooms",
-      "categories": [],
+      "categories": [
+        26
+      ],
       "domains": [
         2,
         4
@@ -11395,6 +12240,7 @@
       "iri": "https://narrativegoldmine.com/class/human-factors",
       "label": "Human Factors",
       "categories": [
+        33,
         5
       ],
       "domains": [
@@ -11449,7 +12295,7 @@
       "categories": [
         2,
         0,
-        5
+        33
       ],
       "domains": [
         0
@@ -11469,6 +12315,7 @@
       "label": "Hyperledger Indy",
       "categories": [
         27,
+        31,
         28,
         11
       ],
@@ -11509,9 +12356,25 @@
       ]
     },
     {
+      "iri": "https://narrativegoldmine.com/class/hyperscale-cloud",
+      "label": "Hyperscale Cloud",
+      "categories": [
+        4
+      ],
+      "domains": [
+        5,
+        0
+      ],
+      "parents": [
+        "Infrastructure",
+        "AI Infrastructure (category)"
+      ]
+    },
+    {
       "iri": "https://narrativegoldmine.com/class/icra",
       "label": "ICRA",
       "categories": [
+        33,
         2
       ],
       "domains": [
@@ -11524,9 +12387,27 @@
       ]
     },
     {
+      "iri": "https://narrativegoldmine.com/class/ide-coding-agents",
+      "label": "IDE Coding Agents",
+      "categories": [
+        4,
+        2
+      ],
+      "domains": [
+        0
+      ],
+      "parents": [
+        "Agent Harness",
+        "Agentic AI",
+        "Agent Frameworks",
+        "Autonomous Coding"
+      ]
+    },
+    {
       "iri": "https://narrativegoldmine.com/class/iros",
       "label": "IROS",
       "categories": [
+        33,
         2
       ],
       "domains": [
@@ -11697,6 +12578,22 @@
       ]
     },
     {
+      "iri": "https://narrativegoldmine.com/class/impedance-control",
+      "label": "Impedance Control",
+      "categories": [
+        19,
+        33
+      ],
+      "domains": [
+        3
+      ],
+      "parents": [
+        "Actuation and Control",
+        "Robotics",
+        "Control Systems"
+      ]
+    },
+    {
       "iri": "https://narrativegoldmine.com/class/implicit-neural-representation",
       "label": "Implicit Neural Representation",
       "categories": [
@@ -11796,10 +12693,25 @@
       ]
     },
     {
+      "iri": "https://narrativegoldmine.com/class/industrial-robotics",
+      "label": "Industrial Robotics",
+      "categories": [
+        33,
+        19
+      ],
+      "domains": [
+        3
+      ],
+      "parents": [
+        "Robotics",
+        "Robotics Application"
+      ]
+    },
+    {
       "iri": "https://narrativegoldmine.com/class/inference-runtime",
       "label": "Inference Runtime",
       "categories": [
-        28
+        4
       ],
       "domains": [
         0,
@@ -11815,7 +12727,7 @@
       "label": "Inference Serving",
       "categories": [
         1,
-        28
+        4
       ],
       "domains": [
         0,
@@ -11998,21 +12910,6 @@
       ]
     },
     {
-      "iri": "https://narrativegoldmine.com/class/inter-world-remittance",
-      "label": "Inter-world Remittance",
-      "categories": [
-        9,
-        27
-      ],
-      "domains": [
-        1
-      ],
-      "parents": [
-        "DeFi and Economics",
-        "Blockchain"
-      ]
-    },
-    {
       "iri": "https://narrativegoldmine.com/class/interface-standards",
       "label": "Interface Standards",
       "categories": [
@@ -12032,9 +12929,8 @@
       "iri": "https://narrativegoldmine.com/class/internal-ai-harness",
       "label": "Internal AI Harness",
       "categories": [
-        2,
-        0,
-        28
+        4,
+        0
       ],
       "domains": [
         0,
@@ -12165,7 +13061,9 @@
     {
       "iri": "https://narrativegoldmine.com/class/jupyter-notebook",
       "label": "Jupyter Notebook",
-      "categories": [],
+      "categories": [
+        31
+      ],
       "domains": [
         0,
         5
@@ -12231,7 +13129,7 @@
       "iri": "https://narrativegoldmine.com/class/keccak-256",
       "label": "Keccak-256",
       "categories": [
-        30,
+        7,
         28
       ],
       "domains": [
@@ -12241,21 +13139,6 @@
         "Cryptographic Primitive",
         "Blockchain Entity",
         "CryptographicPrimitive"
-      ]
-    },
-    {
-      "iri": "https://narrativegoldmine.com/class/key-derivation-function",
-      "label": "Key Derivation Function",
-      "categories": [
-        30,
-        27
-      ],
-      "domains": [
-        1
-      ],
-      "parents": [
-        "Cryptographic Primitive",
-        "Blockchain"
       ]
     },
     {
@@ -12310,11 +13193,27 @@
       ]
     },
     {
+      "iri": "https://narrativegoldmine.com/class/knowledge-graph-kanban-board",
+      "label": "Knowledge Graph Kanban Board",
+      "categories": [
+        33,
+        31
+      ],
+      "domains": [
+        5
+      ],
+      "parents": [
+        "Software Engineering",
+        "Active Research Projects Registry"
+      ]
+    },
+    {
       "iri": "https://narrativegoldmine.com/class/knowledge-graphing",
       "label": "Knowledge Graphing",
       "categories": [
         0,
-        5
+        5,
+        31
       ],
       "domains": [
         0,
@@ -12426,21 +13325,6 @@
       "parents": [
         "Generative Model",
         "Model Training"
-      ]
-    },
-    {
-      "iri": "https://narrativegoldmine.com/class/layer-1",
-      "label": "Layer 1",
-      "categories": [
-        27,
-        6
-      ],
-      "domains": [
-        1
-      ],
-      "parents": [
-        "Blockchain",
-        "Protocol and Consensus"
       ]
     },
     {
@@ -12662,6 +13546,21 @@
       ]
     },
     {
+      "iri": "https://narrativegoldmine.com/class/linked-data-encoder",
+      "label": "Linked Data Encoder",
+      "categories": [
+        31,
+        29
+      ],
+      "domains": [
+        5
+      ],
+      "parents": [
+        "Data Management",
+        "Data Layer"
+      ]
+    },
+    {
       "iri": "https://narrativegoldmine.com/class/liquidity-pool",
       "label": "Liquidity Pool",
       "categories": [
@@ -12674,22 +13573,6 @@
       "parents": [
         "DeFi and Economics",
         "Smart Contract"
-      ]
-    },
-    {
-      "iri": "https://narrativegoldmine.com/class/litecoin",
-      "label": "Litecoin",
-      "categories": [
-        27,
-        8
-      ],
-      "domains": [
-        1
-      ],
-      "parents": [
-        "Blockchain",
-        "Cryptocurrency",
-        "Blockchain Domain"
       ]
     },
     {
@@ -12769,7 +13652,8 @@
       "iri": "https://narrativegoldmine.com/class/long-term-archival",
       "label": "Long Term Archival",
       "categories": [
-        14
+        14,
+        31
       ],
       "domains": [
         2,
@@ -12813,26 +13697,11 @@
       ]
     },
     {
-      "iri": "https://narrativegoldmine.com/class/mev",
-      "label": "MEV",
-      "categories": [
-        9,
-        27
-      ],
-      "domains": [
-        1
-      ],
-      "parents": [
-        "DeFi and Economics",
-        "Blockchain"
-      ]
-    },
-    {
       "iri": "https://narrativegoldmine.com/class/mlops",
       "label": "MLOps",
       "categories": [
         0,
-        28
+        4
       ],
       "domains": [
         0,
@@ -12880,6 +13749,21 @@
       ]
     },
     {
+      "iri": "https://narrativegoldmine.com/class/machine-learning-discipline-infrastructure",
+      "label": "Machine Learning Infrastructure",
+      "categories": [
+        4,
+        28
+      ],
+      "domains": [
+        5
+      ],
+      "parents": [
+        "AI Infrastructure",
+        "Computing Infrastructure"
+      ]
+    },
+    {
       "iri": "https://narrativegoldmine.com/class/machine-learning-discipline-model",
       "label": "Machine Learning Model",
       "categories": [
@@ -12912,10 +13796,26 @@
       ]
     },
     {
+      "iri": "https://narrativegoldmine.com/class/machine-learning-discipline-platform",
+      "label": "Machine Learning Platform",
+      "categories": [
+        4,
+        28
+      ],
+      "domains": [
+        5
+      ],
+      "parents": [
+        "AI Infrastructure",
+        "Cloud Computing"
+      ]
+    },
+    {
       "iri": "https://narrativegoldmine.com/class/machine-learning-software",
       "label": "Machine Learning Software",
       "categories": [
-        0
+        0,
+        33
       ],
       "domains": [
         0,
@@ -12959,6 +13859,21 @@
       ]
     },
     {
+      "iri": "https://narrativegoldmine.com/class/market-access",
+      "label": "Market Access",
+      "categories": [
+        33,
+        22
+      ],
+      "domains": [
+        3
+      ],
+      "parents": [
+        "Robotics",
+        "Safety and Standards"
+      ]
+    },
+    {
       "iri": "https://narrativegoldmine.com/class/market-capitalization",
       "label": "Market Capitalization",
       "categories": [
@@ -12979,7 +13894,8 @@
       "iri": "https://narrativegoldmine.com/class/math-library",
       "label": "Math Library",
       "categories": [
-        14
+        14,
+        33
       ],
       "domains": [
         2,
@@ -13103,6 +14019,21 @@
       ]
     },
     {
+      "iri": "https://narrativegoldmine.com/class/medical-robotics",
+      "label": "Medical Robotics",
+      "categories": [
+        33,
+        20
+      ],
+      "domains": [
+        3
+      ],
+      "parents": [
+        "Robotics",
+        "Robot Type"
+      ]
+    },
+    {
       "iri": "https://narrativegoldmine.com/class/meeting-ai-assistant",
       "label": "Meeting AI Assistant",
       "categories": [
@@ -13181,7 +14112,7 @@
       "iri": "https://narrativegoldmine.com/class/merkle-proof",
       "label": "Merkle Proof",
       "categories": [
-        30,
+        7,
         28
       ],
       "domains": [
@@ -13197,7 +14128,7 @@
       "iri": "https://narrativegoldmine.com/class/merkle-root",
       "label": "Merkle Root",
       "categories": [
-        30,
+        7,
         28
       ],
       "domains": [
@@ -13213,7 +14144,7 @@
       "iri": "https://narrativegoldmine.com/class/merkle-tree",
       "label": "Merkle Tree",
       "categories": [
-        30,
+        7,
         28
       ],
       "domains": [
@@ -13242,10 +14173,30 @@
       ]
     },
     {
+      "iri": "https://narrativegoldmine.com/class/metadata-management",
+      "label": "Metadata Management",
+      "categories": [
+        31,
+        4
+      ],
+      "domains": [
+        5
+      ],
+      "parents": [
+        "Data Management",
+        "Data Quality",
+        "Data Governance",
+        "Knowledge Management",
+        "Information Architecture",
+        "Enterprise Architecture"
+      ]
+    },
+    {
       "iri": "https://narrativegoldmine.com/class/metadata-repository",
       "label": "Metadata Repository",
       "categories": [
-        16
+        16,
+        31
       ],
       "domains": [
         2,
@@ -13276,7 +14227,7 @@
       "label": "Metaverse Architecture",
       "categories": [
         15,
-        28
+        4
       ],
       "domains": [
         2,
@@ -13321,6 +14272,7 @@
       "iri": "https://narrativegoldmine.com/class/metaverse-telepresence-bridge",
       "label": "Metaverse-Telepresence Bridge",
       "categories": [
+        26,
         28
       ],
       "domains": [
@@ -13384,21 +14336,6 @@
       "parents": [
         "Distributed Systems",
         "Standards Organization"
-      ]
-    },
-    {
-      "iri": "https://narrativegoldmine.com/class/mina-protocol",
-      "label": "Mina Protocol",
-      "categories": [
-        27,
-        6
-      ],
-      "domains": [
-        1
-      ],
-      "parents": [
-        "Blockchain",
-        "Protocol and Consensus"
       ]
     },
     {
@@ -13507,6 +14444,21 @@
       ]
     },
     {
+      "iri": "https://narrativegoldmine.com/class/mobile-robotics",
+      "label": "Mobile Robotics",
+      "categories": [
+        33,
+        21
+      ],
+      "domains": [
+        3
+      ],
+      "parents": [
+        "Robotics",
+        "Navigation and Planning"
+      ]
+    },
+    {
       "iri": "https://narrativegoldmine.com/class/model-based-control",
       "label": "Model Based Control",
       "categories": [
@@ -13567,7 +14519,7 @@
       "iri": "https://narrativegoldmine.com/class/model-context-protocol",
       "label": "Model Context Protocol",
       "categories": [
-        28,
+        4,
         29
       ],
       "domains": [
@@ -13584,7 +14536,7 @@
       "iri": "https://narrativegoldmine.com/class/model-control-protocols-like-mcp",
       "label": "Model Control Protocols like MCP",
       "categories": [
-        28,
+        4,
         2,
         5,
         29
@@ -13607,7 +14559,7 @@
       "label": "Model Debugging",
       "categories": [
         0,
-        28
+        4
       ],
       "domains": [
         0,
@@ -13623,7 +14575,7 @@
       "label": "Model Deployment",
       "categories": [
         0,
-        28
+        4
       ],
       "domains": [
         0,
@@ -13639,7 +14591,7 @@
       "label": "Model Evaluation Results",
       "categories": [
         0,
-        28
+        4
       ],
       "domains": [
         0
@@ -13654,7 +14606,8 @@
       "label": "Model Optimisation and Performance",
       "categories": [
         0,
-        28
+        4,
+        33
       ],
       "domains": [
         0,
@@ -13667,6 +14620,21 @@
         "Systems Engineering",
         "Computational Efficiency",
         "Neural Network Compression"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/model-optimization",
+      "label": "Model Optimization",
+      "categories": [
+        4,
+        0
+      ],
+      "domains": [
+        0
+      ],
+      "parents": [
+        "Model Deployment",
+        "AI Technique"
       ]
     },
     {
@@ -13688,7 +14656,7 @@
       "iri": "https://narrativegoldmine.com/class/model-serialisation",
       "label": "Model Serialisation",
       "categories": [
-        28
+        4
       ],
       "domains": [
         0,
@@ -13703,7 +14671,7 @@
       "iri": "https://narrativegoldmine.com/class/model-serving",
       "label": "Model Serving",
       "categories": [
-        0,
+        4,
         1
       ],
       "domains": [
@@ -13748,21 +14716,6 @@
       "parents": [
         "AI Governance and Ethics",
         "AI Ethics"
-      ]
-    },
-    {
-      "iri": "https://narrativegoldmine.com/class/modular-blockchain",
-      "label": "Modular Blockchain",
-      "categories": [
-        27,
-        6
-      ],
-      "domains": [
-        1
-      ],
-      "parents": [
-        "Blockchain",
-        "Protocol and Consensus"
       ]
     },
     {
@@ -13825,6 +14778,7 @@
       "label": "Motion Control",
       "categories": [
         19,
+        33,
         28
       ],
       "domains": [
@@ -13890,7 +14844,8 @@
       "label": "Multi Sig Governance",
       "categories": [
         11,
-        30
+        30,
+        7
       ],
       "domains": [
         1,
@@ -13905,6 +14860,23 @@
         "Threshold Cryptography",
         "Committee Governance",
         "Hash Function"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/multi-agent-orchestration-frameworks",
+      "label": "Multi-Agent Orchestration Frameworks",
+      "categories": [
+        4,
+        2
+      ],
+      "domains": [
+        0
+      ],
+      "parents": [
+        "Agent Harness",
+        "Agent Frameworks",
+        "AI Agent System",
+        "External AI Harness"
       ]
     },
     {
@@ -13941,7 +14913,8 @@
       "iri": "https://narrativegoldmine.com/class/multisignature",
       "label": "Multisignature",
       "categories": [
-        30
+        30,
+        7
       ],
       "domains": [
         5,
@@ -13993,7 +14966,7 @@
       "iri": "https://narrativegoldmine.com/class/npu",
       "label": "NPU",
       "categories": [
-        28
+        4
       ],
       "domains": [
         5,
@@ -14006,19 +14979,18 @@
       ]
     },
     {
-      "iri": "https://narrativegoldmine.com/class/nakamoto-2008-bitcoin-whitepaper",
-      "label": "Nakamoto 2008 Bitcoin Whitepaper",
+      "iri": "https://narrativegoldmine.com/class/nvidia-corporation-h-100",
+      "label": "NVIDIA H100",
       "categories": [
-        27,
-        8
+        28,
+        4
       ],
       "domains": [
-        1
+        5
       ],
       "parents": [
-        "Blockchain",
-        "Bitcoin",
-        "owl:Thing"
+        "GPU",
+        "AI Infrastructure"
       ]
     },
     {
@@ -14060,6 +15032,7 @@
       "categories": [
         21,
         20,
+        33,
         19
       ],
       "domains": [
@@ -14080,15 +15053,18 @@
       "label": "Network Component",
       "categories": [
         1,
-        27
+        27,
+        10
       ],
       "domains": [
         0,
-        4
+        4,
+        1
       ],
       "parents": [
         "Network Architecture",
-        "Protocol and Infrastructure"
+        "Protocol and Infrastructure",
+        "Network Component (category)"
       ]
     },
     {
@@ -14129,7 +15105,7 @@
       "label": "Network Layer",
       "categories": [
         29,
-        28
+        4
       ],
       "domains": [
         5
@@ -14210,7 +15186,7 @@
       "label": "Neural Network Architecture",
       "categories": [
         1,
-        28
+        4
       ],
       "domains": [
         0
@@ -14221,9 +15197,26 @@
       ]
     },
     {
+      "iri": "https://narrativegoldmine.com/class/neural-radiance-fields",
+      "label": "Neural Radiance Fields",
+      "categories": [
+        26,
+        12
+      ],
+      "domains": [
+        2
+      ],
+      "parents": [
+        "Telepresence",
+        "Real-Time Rendering Pipeline"
+      ]
+    },
+    {
       "iri": "https://narrativegoldmine.com/class/tele-050-neural-rendering-telepresence",
       "label": "Neural Rendering Telepresence",
-      "categories": [],
+      "categories": [
+        26
+      ],
       "domains": [
         2,
         4
@@ -14237,7 +15230,7 @@
       "iri": "https://narrativegoldmine.com/class/neuromorphic-chip",
       "label": "Neuromorphic Chip",
       "categories": [
-        28
+        4
       ],
       "domains": [
         5,
@@ -14252,7 +15245,7 @@
       "iri": "https://narrativegoldmine.com/class/neuromorphic-chips",
       "label": "Neuromorphic Chips",
       "categories": [
-        28
+        4
       ],
       "domains": [
         5,
@@ -14354,7 +15347,6 @@
       "label": "Nostr Protocol",
       "categories": [
         6,
-        27,
         30
       ],
       "domains": [
@@ -14403,6 +15395,8 @@
       "iri": "https://narrativegoldmine.com/class/ontology-technical-details",
       "label": "ONTOLOGY_TECHNICAL_DETAILS",
       "categories": [
+        31,
+        33,
         28,
         27
       ],
@@ -14474,6 +15468,21 @@
       ]
     },
     {
+      "iri": "https://narrativegoldmine.com/class/on-premises",
+      "label": "On-Premises",
+      "categories": [
+        4
+      ],
+      "domains": [
+        5,
+        0
+      ],
+      "parents": [
+        "Infrastructure",
+        "AI Infrastructure (category)"
+      ]
+    },
+    {
       "iri": "https://narrativegoldmine.com/class/opcodes",
       "label": "Opcodes",
       "categories": [
@@ -14495,8 +15504,9 @@
       "iri": "https://narrativegoldmine.com/class/open-generative-ai-tools",
       "label": "Open Generative AI tools",
       "categories": [
-        28,
+        4,
         2,
+        33,
         1,
         15
       ],
@@ -14535,7 +15545,8 @@
       "label": "Open Webui and Pipelines",
       "categories": [
         2,
-        1
+        1,
+        33
       ],
       "domains": [
         0,
@@ -14546,6 +15557,36 @@
         "Large Language Model",
         "Agent Frameworks",
         "WebDev and Consumer Tooling"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/open-x-embodiment",
+      "label": "Open X-Embodiment",
+      "categories": [
+        33,
+        20
+      ],
+      "domains": [
+        3
+      ],
+      "parents": [
+        "Robotics",
+        "Robot Type"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/openapi",
+      "label": "OpenAPI",
+      "categories": [
+        33,
+        29
+      ],
+      "domains": [
+        5
+      ],
+      "parents": [
+        "API",
+        "API Standard"
       ]
     },
     {
@@ -14589,6 +15630,7 @@
         28,
         13,
         15,
+        33,
         14
       ],
       "domains": [
@@ -14784,21 +15826,6 @@
       ]
     },
     {
-      "iri": "https://narrativegoldmine.com/class/peer-to-peer-payment",
-      "label": "Peer To Peer Payment",
-      "categories": [
-        27,
-        28
-      ],
-      "domains": [
-        1
-      ],
-      "parents": [
-        "Blockchain",
-        "Payment System"
-      ]
-    },
-    {
       "iri": "https://narrativegoldmine.com/class/peer-to-peer-network",
       "label": "Peer-to-Peer Network",
       "categories": [
@@ -14859,6 +15886,23 @@
         "Network Component",
         "Blockchain Entity",
         "Network Component"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/personal-agent-runtimes",
+      "label": "Personal Agent Runtimes",
+      "categories": [
+        4,
+        2
+      ],
+      "domains": [
+        0
+      ],
+      "parents": [
+        "Agent Harness",
+        "Agent Frameworks",
+        "AI Agent System",
+        "Agent Runtime"
       ]
     },
     {
@@ -14978,25 +16022,11 @@
       ]
     },
     {
-      "iri": "https://narrativegoldmine.com/class/plasma",
-      "label": "Plasma",
-      "categories": [
-        27,
-        6
-      ],
-      "domains": [
-        1
-      ],
-      "parents": [
-        "Blockchain",
-        "Layer-2 Protocol"
-      ]
-    },
-    {
       "iri": "https://narrativegoldmine.com/class/platform-middleware",
       "label": "Platform Middleware",
       "categories": [
-        15
+        15,
+        33
       ],
       "domains": [
         2,
@@ -15011,6 +16041,7 @@
       "iri": "https://narrativegoldmine.com/class/player-two",
       "label": "Player Two",
       "categories": [
+        33,
         28
       ],
       "domains": [
@@ -15203,7 +16234,7 @@
       "iri": "https://narrativegoldmine.com/class/preimage-resistance",
       "label": "Preimage Resistance",
       "categories": [
-        30,
+        7,
         28
       ],
       "domains": [
@@ -15220,6 +16251,7 @@
       "label": "Presence Indicator",
       "categories": [
         24,
+        26,
         29
       ],
       "domains": [
@@ -15258,7 +16290,9 @@
         0,
         5,
         28,
-        2
+        2,
+        4,
+        33
       ],
       "domains": [
         0,
@@ -15311,7 +16345,7 @@
       "label": "Privacy Architecture",
       "categories": [
         17,
-        28
+        4
       ],
       "domains": [
         2,
@@ -15348,8 +16382,9 @@
       "iri": "https://narrativegoldmine.com/class/privacy-preserving-blockchain",
       "label": "Privacy Preserving Blockchain",
       "categories": [
-        30,
+        7,
         27,
+        30,
         28
       ],
       "domains": [
@@ -15385,7 +16420,7 @@
       "iri": "https://narrativegoldmine.com/class/private-key",
       "label": "Private Key",
       "categories": [
-        30,
+        7,
         28
       ],
       "domains": [
@@ -15395,22 +16430,6 @@
         "Cryptographic Primitive",
         "Blockchain Entity",
         "CryptographicPrimitive"
-      ]
-    },
-    {
-      "iri": "https://narrativegoldmine.com/class/probabilistic-finality",
-      "label": "Probabilistic Finality",
-      "categories": [
-        6,
-        27
-      ],
-      "domains": [
-        1
-      ],
-      "parents": [
-        "Protocol and Consensus",
-        "Blockchain",
-        "Transaction Finality"
       ]
     },
     {
@@ -15430,6 +16449,37 @@
         "Statistical Learning",
         "Bayesian Inference",
         "Generative Model"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/probabilistic-roadmap",
+      "label": "Probabilistic Roadmap",
+      "categories": [
+        33,
+        21
+      ],
+      "domains": [
+        3
+      ],
+      "parents": [
+        "Robotics",
+        "Navigation and Planning"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/probabilistic-robotics",
+      "label": "Probabilistic Robotics",
+      "categories": [
+        33,
+        21
+      ],
+      "domains": [
+        3
+      ],
+      "parents": [
+        "Robotics",
+        "Navigation and Planning",
+        "Robotics Domain"
       ]
     },
     {
@@ -15510,6 +16560,7 @@
       "iri": "https://narrativegoldmine.com/class/programming-language",
       "label": "Programming Language",
       "categories": [
+        33,
         0
       ],
       "domains": [
@@ -15525,8 +16576,7 @@
       "iri": "https://narrativegoldmine.com/class/progressive-disclosure-harnesses",
       "label": "Progressive Disclosure Harnesses",
       "categories": [
-        2,
-        28,
+        4,
         1
       ],
       "domains": [
@@ -15564,21 +16614,6 @@
       ]
     },
     {
-      "iri": "https://narrativegoldmine.com/class/proof-of-reserve",
-      "label": "Proof Of Reserve",
-      "categories": [
-        27,
-        11
-      ],
-      "domains": [
-        1
-      ],
-      "parents": [
-        "Blockchain",
-        "Governance and Regulation"
-      ]
-    },
-    {
       "iri": "https://narrativegoldmine.com/class/proof-of-stake-sustainability",
       "label": "Proof Of Stake Sustainability",
       "categories": [
@@ -15609,21 +16644,6 @@
         "Consensus Protocol",
         "Blockchain Entity",
         "ConsensusProtocol"
-      ]
-    },
-    {
-      "iri": "https://narrativegoldmine.com/class/proof-of-reserves",
-      "label": "Proof of Reserves",
-      "categories": [
-        27,
-        30
-      ],
-      "domains": [
-        1
-      ],
-      "parents": [
-        "Blockchain",
-        "Cryptographic Primitive (Blockchain)"
       ]
     },
     {
@@ -15734,6 +16754,21 @@
       ]
     },
     {
+      "iri": "https://narrativegoldmine.com/class/protocol-buffer",
+      "label": "Protocol Buffer",
+      "categories": [
+        29,
+        31
+      ],
+      "domains": [
+        5
+      ],
+      "parents": [
+        "Network and Communication",
+        "Data Format"
+      ]
+    },
+    {
       "iri": "https://narrativegoldmine.com/class/protocol-upgrade",
       "label": "Protocol Upgrade",
       "categories": [
@@ -15799,6 +16834,7 @@
       "iri": "https://narrativegoldmine.com/class/psychological-phenomenon",
       "label": "Psychological Phenomenon",
       "categories": [
+        33,
         28
       ],
       "domains": [
@@ -15814,7 +16850,7 @@
       "iri": "https://narrativegoldmine.com/class/public-key",
       "label": "Public Key",
       "categories": [
-        30,
+        7,
         28
       ],
       "domains": [
@@ -15830,7 +16866,7 @@
       "iri": "https://narrativegoldmine.com/class/public-key-cryptography",
       "label": "Public-Key Cryptography",
       "categories": [
-        30,
+        7,
         28
       ],
       "domains": [
@@ -15843,10 +16879,25 @@
       ]
     },
     {
+      "iri": "https://narrativegoldmine.com/class/pulse-width-modulation",
+      "label": "Pulse Width Modulation",
+      "categories": [
+        33,
+        19
+      ],
+      "domains": [
+        3
+      ],
+      "parents": [
+        "Robotics",
+        "Actuation and Control"
+      ]
+    },
+    {
       "iri": "https://narrativegoldmine.com/class/py-torch",
       "label": "PyTorch",
       "categories": [
-        28
+        4
       ],
       "domains": [
         0,
@@ -15956,18 +17007,18 @@
       ]
     },
     {
-      "iri": "https://narrativegoldmine.com/class/random-number-generation",
-      "label": "Random Number Generation",
+      "iri": "https://narrativegoldmine.com/class/ros-industrial",
+      "label": "ROS-Industrial",
       "categories": [
-        30,
-        27
+        33,
+        19
       ],
       "domains": [
-        1
+        3
       ],
       "parents": [
-        "Cryptographic Primitive",
-        "Blockchain"
+        "Robotics",
+        "Robot Operating System"
       ]
     },
     {
@@ -16057,6 +17108,7 @@
       "label": "Real Time",
       "categories": [
         28,
+        33,
         19
       ],
       "domains": [
@@ -16078,7 +17130,7 @@
       "label": "Real-Time AI Inference",
       "categories": [
         0,
-        28
+        4
       ],
       "domains": [
         0,
@@ -16110,7 +17162,7 @@
       "iri": "https://narrativegoldmine.com/class/real-time-communication",
       "label": "Real-Time Communication",
       "categories": [
-        28,
+        4,
         29
       ],
       "domains": [
@@ -16127,7 +17179,7 @@
       "label": "Real-Time Inference",
       "categories": [
         1,
-        0
+        4
       ],
       "domains": [
         0
@@ -16155,7 +17207,9 @@
     {
       "iri": "https://narrativegoldmine.com/class/real-time-processing",
       "label": "Real-time Processing",
-      "categories": [],
+      "categories": [
+        31
+      ],
       "domains": [
         5,
         0
@@ -16172,7 +17226,7 @@
         24,
         5,
         0,
-        28
+        4
       ],
       "domains": [
         4,
@@ -16194,7 +17248,8 @@
       "label": "Reasoning",
       "categories": [
         0,
-        5
+        5,
+        33
       ],
       "domains": [
         0
@@ -16228,7 +17283,7 @@
       "label": "Reference Architecture",
       "categories": [
         15,
-        28
+        4
       ],
       "domains": [
         2,
@@ -16245,7 +17300,8 @@
       "categories": [
         32,
         3,
-        15
+        15,
+        31
       ],
       "domains": [
         5,
@@ -16297,7 +17353,8 @@
       "iri": "https://narrativegoldmine.com/class/remote-assistance",
       "label": "Remote Assistance",
       "categories": [
-        24
+        24,
+        26
       ],
       "domains": [
         4,
@@ -16328,7 +17385,8 @@
       "label": "Remote Pair Programming",
       "categories": [
         25,
-        24
+        24,
+        33
       ],
       "domains": [
         4
@@ -16348,7 +17406,8 @@
       "label": "Rendering Pipeline",
       "categories": [
         12,
-        28,
+        4,
+        33,
         15
       ],
       "domains": [
@@ -16405,10 +17464,25 @@
       ]
     },
     {
+      "iri": "https://narrativegoldmine.com/class/rescue-robot",
+      "label": "Rescue Robot",
+      "categories": [
+        20,
+        33
+      ],
+      "domains": [
+        3
+      ],
+      "parents": [
+        "Robot Type",
+        "Robotics"
+      ]
+    },
+    {
       "iri": "https://narrativegoldmine.com/class/resilience",
       "label": "Resilience",
       "categories": [
-        27
+        33
       ],
       "domains": [
         5,
@@ -16503,10 +17577,26 @@
       ]
     },
     {
+      "iri": "https://narrativegoldmine.com/class/right-to-be-forgotten",
+      "label": "Right to Be Forgotten",
+      "categories": [
+        32,
+        31
+      ],
+      "domains": [
+        5
+      ],
+      "parents": [
+        "Legal and Regulatory",
+        "Privacy Framework"
+      ]
+    },
+    {
       "iri": "https://narrativegoldmine.com/class/risk-assessment",
       "label": "Risk Assessment",
       "categories": [
         32,
+        33,
         3,
         22
       ],
@@ -16546,11 +17636,27 @@
       ]
     },
     {
+      "iri": "https://narrativegoldmine.com/class/robot-kinematics",
+      "label": "Robot Kinematics",
+      "categories": [
+        19,
+        33
+      ],
+      "domains": [
+        3
+      ],
+      "parents": [
+        "Actuation and Control",
+        "Robotics"
+      ]
+    },
+    {
       "iri": "https://narrativegoldmine.com/class/robot-learning",
       "label": "Robot Learning",
       "categories": [
         19,
-        0
+        0,
+        33
       ],
       "domains": [
         3,
@@ -16564,11 +17670,119 @@
       ]
     },
     {
+      "iri": "https://narrativegoldmine.com/class/robot-locomotion",
+      "label": "Robot Locomotion",
+      "categories": [
+        33,
+        19
+      ],
+      "domains": [
+        3
+      ],
+      "parents": [
+        "Robotics",
+        "Actuation and Control"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/robot-navigation",
+      "label": "Robot Navigation",
+      "categories": [
+        33,
+        21
+      ],
+      "domains": [
+        3
+      ],
+      "parents": [
+        "Robotics",
+        "Navigation and Planning"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/robot-operating-system",
+      "label": "Robot Operating System",
+      "categories": [
+        19,
+        33
+      ],
+      "domains": [
+        3
+      ],
+      "parents": [
+        "Actuation and Control",
+        "Robotics",
+        "Robotic Middleware",
+        "Publish-Subscribe Framework"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/robot-perception",
+      "label": "Robot Perception",
+      "categories": [
+        33,
+        18
+      ],
+      "domains": [
+        3
+      ],
+      "parents": [
+        "Robotics",
+        "Perception and Sensing"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/robot-programming",
+      "label": "Robot Programming",
+      "categories": [
+        33,
+        19
+      ],
+      "domains": [
+        3
+      ],
+      "parents": [
+        "Robotics",
+        "Robot Operating System"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/robot-safety",
+      "label": "Robot Safety",
+      "categories": [
+        22,
+        33
+      ],
+      "domains": [
+        3
+      ],
+      "parents": [
+        "Safety and Standards",
+        "Robotics"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/robot-simulation",
+      "label": "Robot Simulation",
+      "categories": [
+        33,
+        19
+      ],
+      "domains": [
+        3
+      ],
+      "parents": [
+        "Robotics",
+        "Actuation and Control"
+      ]
+    },
+    {
       "iri": "https://narrativegoldmine.com/class/robot-standard",
       "label": "Robot Standard",
       "categories": [
         22,
-        32
+        32,
+        33
       ],
       "domains": [
         3,
@@ -16587,7 +17801,9 @@
     {
       "iri": "https://narrativegoldmine.com/class/robotic-telepresence",
       "label": "Robotic Telepresence",
-      "categories": [],
+      "categories": [
+        26
+      ],
       "domains": [
         2,
         4
@@ -16639,6 +17855,7 @@
       "iri": "https://narrativegoldmine.com/class/robotics-simulation",
       "label": "Robotics Simulation",
       "categories": [
+        33,
         15
       ],
       "domains": [
@@ -16654,6 +17871,7 @@
       "iri": "https://narrativegoldmine.com/class/robotics-telepresence-bridge",
       "label": "Robotics-Telepresence Bridge",
       "categories": [
+        26,
         28
       ],
       "domains": [
@@ -16670,8 +17888,8 @@
       "label": "RoboticsCoreConcepts",
       "categories": [
         19,
-        28,
-        5
+        4,
+        33
       ],
       "domains": [
         3,
@@ -16721,7 +17939,7 @@
       "iri": "https://narrativegoldmine.com/class/sha-256",
       "label": "SHA-256",
       "categories": [
-        30,
+        7,
         28
       ],
       "domains": [
@@ -16737,7 +17955,8 @@
       "iri": "https://narrativegoldmine.com/class/sparql-endpoint",
       "label": "SPARQL Endpoint",
       "categories": [
-        16
+        16,
+        31
       ],
       "domains": [
         2,
@@ -16872,7 +18091,7 @@
       "label": "Scalable Architecture",
       "categories": [
         15,
-        28
+        4
       ],
       "domains": [
         2,
@@ -16939,7 +18158,8 @@
       "iri": "https://narrativegoldmine.com/class/schema-registry",
       "label": "Schema Registry",
       "categories": [
-        16
+        16,
+        31
       ],
       "domains": [
         2,
@@ -16954,7 +18174,7 @@
       "iri": "https://narrativegoldmine.com/class/schnorr-signature",
       "label": "Schnorr Signature",
       "categories": [
-        30,
+        7,
         28
       ],
       "domains": [
@@ -16986,7 +18206,7 @@
       "label": "Scikit Learn",
       "categories": [
         0,
-        28
+        4
       ],
       "domains": [
         0,
@@ -17055,7 +18275,8 @@
       "iri": "https://narrativegoldmine.com/class/search-index",
       "label": "Search Index",
       "categories": [
-        14
+        14,
+        33
       ],
       "domains": [
         2,
@@ -17079,6 +18300,21 @@
       "parents": [
         "Interaction Technology",
         "User Interface"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/search-and-rescue-robotics",
+      "label": "Search and Rescue Robotics",
+      "categories": [
+        33,
+        20
+      ],
+      "domains": [
+        3
+      ],
+      "parents": [
+        "Robotics",
+        "Robot Type"
       ]
     },
     {
@@ -17124,7 +18360,7 @@
       "label": "Security Architecture",
       "categories": [
         17,
-        28
+        4
       ],
       "domains": [
         2,
@@ -17154,6 +18390,21 @@
         "Scene Understanding",
         "Image Analysis",
         "Deep Learning"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/self-presence",
+      "label": "Self Presence",
+      "categories": [
+        26,
+        15
+      ],
+      "domains": [
+        2
+      ],
+      "parents": [
+        "Telepresence",
+        "Presence"
       ]
     },
     {
@@ -17246,6 +18497,22 @@
       ]
     },
     {
+      "iri": "https://narrativegoldmine.com/class/sensors",
+      "label": "Sensors",
+      "categories": [
+        33,
+        18
+      ],
+      "domains": [
+        3
+      ],
+      "parents": [
+        "Robotics",
+        "Sensor Technology",
+        "Robotics Domain"
+      ]
+    },
+    {
       "iri": "https://narrativegoldmine.com/class/separation-of-powers",
       "label": "Separation Of Powers",
       "categories": [
@@ -17281,7 +18548,7 @@
       "label": "Service Oriented Architecture",
       "categories": [
         15,
-        28
+        4
       ],
       "domains": [
         2,
@@ -17290,6 +18557,21 @@
       "parents": [
         "Platform and Environment",
         "Software Architecture"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/service-robotics",
+      "label": "Service Robotics",
+      "categories": [
+        33,
+        20
+      ],
+      "domains": [
+        3
+      ],
+      "parents": [
+        "Robotics",
+        "Service Robot"
       ]
     },
     {
@@ -17308,10 +18590,26 @@
       ]
     },
     {
+      "iri": "https://narrativegoldmine.com/class/shape-memory-alloy-actuator",
+      "label": "Shape Memory Alloy Actuator",
+      "categories": [
+        19,
+        33
+      ],
+      "domains": [
+        3
+      ],
+      "parents": [
+        "Actuation and Control",
+        "Robotics"
+      ]
+    },
+    {
       "iri": "https://narrativegoldmine.com/class/shared-knowledge-base",
       "label": "Shared Knowledge Base",
       "categories": [
-        14
+        14,
+        31
       ],
       "domains": [
         2,
@@ -17357,7 +18655,7 @@
       "iri": "https://narrativegoldmine.com/class/signature-scheme",
       "label": "Signature Scheme",
       "categories": [
-        30,
+        7,
         28
       ],
       "domains": [
@@ -17386,21 +18684,6 @@
       ]
     },
     {
-      "iri": "https://narrativegoldmine.com/class/simplified-payment-verification",
-      "label": "Simplified Payment Verification",
-      "categories": [
-        27,
-        6
-      ],
-      "domains": [
-        1
-      ],
-      "parents": [
-        "Blockchain",
-        "Protocol and Consensus"
-      ]
-    },
-    {
       "iri": "https://narrativegoldmine.com/class/singularity",
       "label": "Singularity",
       "categories": [
@@ -17424,8 +18707,7 @@
       "iri": "https://narrativegoldmine.com/class/sink-mechanism",
       "label": "Sink Mechanism",
       "categories": [
-        9,
-        27
+        9
       ],
       "domains": [
         1,
@@ -17438,11 +18720,27 @@
       ]
     },
     {
+      "iri": "https://narrativegoldmine.com/class/situational-awareness",
+      "label": "Situational Awareness",
+      "categories": [
+        33,
+        18
+      ],
+      "domains": [
+        3
+      ],
+      "parents": [
+        "Robotics",
+        "Perception and Sensing",
+        "Robotics Domain"
+      ]
+    },
+    {
       "iri": "https://narrativegoldmine.com/class/skos-vocabulary",
       "label": "Skos Vocabulary",
       "categories": [
         16,
-        28
+        4
       ],
       "domains": [
         2,
@@ -17507,21 +18805,6 @@
       ]
     },
     {
-      "iri": "https://narrativegoldmine.com/class/snapshot-governance",
-      "label": "Snapshot Governance",
-      "categories": [
-        27,
-        11
-      ],
-      "domains": [
-        1
-      ],
-      "parents": [
-        "Blockchain",
-        "Governance and Regulation"
-      ]
-    },
-    {
       "iri": "https://narrativegoldmine.com/class/snapshot-voting",
       "label": "Snapshot Voting",
       "categories": [
@@ -17562,6 +18845,7 @@
       "iri": "https://narrativegoldmine.com/class/social-presence-theory",
       "label": "Social Presence Theory",
       "categories": [
+        26,
         24
       ],
       "domains": [
@@ -17571,6 +18855,21 @@
       "parents": [
         "Telepresence",
         "CommunicationTheory"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/social-presence",
+      "label": "Social Presence",
+      "categories": [
+        26,
+        15
+      ],
+      "domains": [
+        2
+      ],
+      "parents": [
+        "Telepresence",
+        "Presence"
       ]
     },
     {
@@ -17620,10 +18919,28 @@
       ]
     },
     {
+      "iri": "https://narrativegoldmine.com/class/solid-pod",
+      "label": "Solid Pod",
+      "categories": [
+        31,
+        29
+      ],
+      "domains": [
+        5
+      ],
+      "parents": [
+        "Data Management",
+        "Network and Communication",
+        "Personal Data Store",
+        "Linked Data Platform Resource"
+      ]
+    },
+    {
       "iri": "https://narrativegoldmine.com/class/solid",
       "label": "Solid",
       "categories": [
         29,
+        31,
         5,
         16
       ],
@@ -17676,25 +18993,11 @@
       ]
     },
     {
-      "iri": "https://narrativegoldmine.com/class/spam-prevention",
-      "label": "Spam Prevention",
-      "categories": [
-        27,
-        6
-      ],
-      "domains": [
-        1
-      ],
-      "parents": [
-        "Blockchain",
-        "Sybil Resistance"
-      ]
-    },
-    {
       "iri": "https://narrativegoldmine.com/class/sparql-query-engine",
       "label": "Sparql Query Engine",
       "categories": [
-        16
+        16,
+        31
       ],
       "domains": [
         2,
@@ -17801,7 +19104,8 @@
       "iri": "https://narrativegoldmine.com/class/spatial-queries",
       "label": "Spatial Queries",
       "categories": [
-        14
+        14,
+        31
       ],
       "domains": [
         2,
@@ -17938,7 +19242,8 @@
       "iri": "https://narrativegoldmine.com/class/standard-format-support",
       "label": "Standard Format Support",
       "categories": [
-        16
+        16,
+        31
       ],
       "domains": [
         2,
@@ -18073,25 +19378,11 @@
       ]
     },
     {
-      "iri": "https://narrativegoldmine.com/class/state-channel",
-      "label": "State Channel",
-      "categories": [
-        6,
-        27
-      ],
-      "domains": [
-        1
-      ],
-      "parents": [
-        "Layer 2 Scaling",
-        "Blockchain"
-      ]
-    },
-    {
       "iri": "https://narrativegoldmine.com/class/state-machine",
       "label": "State Machine",
       "categories": [
         28,
+        33,
         15
       ],
       "domains": [
@@ -18153,6 +19444,21 @@
       ]
     },
     {
+      "iri": "https://narrativegoldmine.com/class/stigmergy",
+      "label": "Stigmergy",
+      "categories": [
+        20,
+        33
+      ],
+      "domains": [
+        3
+      ],
+      "parents": [
+        "Swarm Robotics",
+        "Robotics"
+      ]
+    },
+    {
       "iri": "https://narrativegoldmine.com/class/stochastic-process",
       "label": "Stochastic Process",
       "categories": [
@@ -18193,6 +19499,7 @@
       "iri": "https://narrativegoldmine.com/class/storage-infrastructure",
       "label": "Storage Infrastructure",
       "categories": [
+        31,
         29,
         28
       ],
@@ -18210,10 +19517,24 @@
       ]
     },
     {
+      "iri": "https://narrativegoldmine.com/class/storage-layer",
+      "label": "Storage Layer",
+      "categories": [
+        31,
+        28
+      ],
+      "domains": [
+        5
+      ],
+      "parents": [
+        "Data Management",
+        "Infrastructure Layer"
+      ]
+    },
+    {
       "iri": "https://narrativegoldmine.com/class/streaming-payment",
       "label": "Streaming Payment",
       "categories": [
-        27,
         9,
         15
       ],
@@ -18239,6 +19560,22 @@
       "parents": [
         "Network Component",
         "Transaction Confirmation"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/subsumption-architecture",
+      "label": "Subsumption Architecture",
+      "categories": [
+        33,
+        19
+      ],
+      "domains": [
+        3
+      ],
+      "parents": [
+        "Robotics",
+        "Actuation and Control",
+        "Robotics Domain"
       ]
     },
     {
@@ -18292,6 +19629,22 @@
       ]
     },
     {
+      "iri": "https://narrativegoldmine.com/class/swarm-control",
+      "label": "Swarm Control",
+      "categories": [
+        33,
+        19
+      ],
+      "domains": [
+        3
+      ],
+      "parents": [
+        "Robotics",
+        "Actuation and Control",
+        "Robotics Domain"
+      ]
+    },
+    {
       "iri": "https://narrativegoldmine.com/class/sybil-attack",
       "label": "Sybil Attack",
       "categories": [
@@ -18323,21 +19676,6 @@
       "parents": [
         "Content and Assets",
         "Digital Asset"
-      ]
-    },
-    {
-      "iri": "https://narrativegoldmine.com/class/symmetric-encryption",
-      "label": "Symmetric Encryption",
-      "categories": [
-        30,
-        27
-      ],
-      "domains": [
-        1
-      ],
-      "parents": [
-        "Cryptographic Primitive",
-        "Blockchain"
       ]
     },
     {
@@ -18375,7 +19713,7 @@
       "iri": "https://narrativegoldmine.com/class/systolic-array",
       "label": "Systolic Array",
       "categories": [
-        28
+        4
       ],
       "domains": [
         5,
@@ -18390,6 +19728,7 @@
       "iri": "https://narrativegoldmine.com/class/tele-154-edge-computing-telepresence",
       "label": "TELE-154-edge-computing-telepresence",
       "categories": [
+        26,
         28
       ],
       "domains": [
@@ -18405,7 +19744,7 @@
       "iri": "https://narrativegoldmine.com/class/tpu",
       "label": "TPU",
       "categories": [
-        28
+        4
       ],
       "domains": [
         5,
@@ -18415,21 +19754,6 @@
         "AI Infrastructure",
         "AI Hardware",
         "Artificial Intelligence"
-      ]
-    },
-    {
-      "iri": "https://narrativegoldmine.com/class/tagged-hash",
-      "label": "Tagged Hash",
-      "categories": [
-        27,
-        30
-      ],
-      "domains": [
-        1
-      ],
-      "parents": [
-        "Blockchain",
-        "Cryptographic Primitive"
       ]
     },
     {
@@ -18454,7 +19778,8 @@
       "categories": [
         6,
         8,
-        30
+        31,
+        7
       ],
       "domains": [
         1,
@@ -18476,7 +19801,8 @@
       "label": "Task Planning",
       "categories": [
         0,
-        5
+        5,
+        33
       ],
       "domains": [
         0,
@@ -18489,6 +19815,21 @@
         "Artificial Intelligence",
         "Robotics",
         "Sequential Decision Making"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/technical-standard",
+      "label": "Technical Standard",
+      "categories": [
+        32,
+        31
+      ],
+      "domains": [
+        5
+      ],
+      "parents": [
+        "Legal and Regulatory",
+        "Specification"
       ]
     },
     {
@@ -18507,10 +19848,26 @@
       ]
     },
     {
+      "iri": "https://narrativegoldmine.com/class/technology-diffusion",
+      "label": "Technology Diffusion",
+      "categories": [
+        9
+      ],
+      "domains": [
+        0,
+        1
+      ],
+      "parents": [
+        "Artificial Intelligence",
+        "DeFi and Economics"
+      ]
+    },
+    {
       "iri": "https://narrativegoldmine.com/class/telecollaboration",
       "label": "Telecollaboration",
       "categories": [
-        24
+        24,
+        33
       ],
       "domains": [
         4,
@@ -18524,7 +19881,9 @@
     {
       "iri": "https://narrativegoldmine.com/class/teleoperation-systems",
       "label": "Teleoperation Systems",
-      "categories": [],
+      "categories": [
+        26
+      ],
       "domains": [
         2,
         4
@@ -18569,7 +19928,9 @@
       "iri": "https://narrativegoldmine.com/class/terminal-coding-agents",
       "label": "Terminal Coding Agents",
       "categories": [
+        4,
         2,
+        33,
         15
       ],
       "domains": [
@@ -18588,7 +19949,7 @@
       "label": "Test Dataset",
       "categories": [
         0,
-        5
+        4
       ],
       "domains": [
         0
@@ -18604,7 +19965,8 @@
       "categories": [
         6,
         27,
-        28
+        28,
+        33
       ],
       "domains": [
         1,
@@ -18681,26 +20043,11 @@
       ]
     },
     {
-      "iri": "https://narrativegoldmine.com/class/threat-actor",
-      "label": "Threat Actor",
-      "categories": [
-        6,
-        27
-      ],
-      "domains": [
-        1
-      ],
-      "parents": [
-        "Protocol and Consensus",
-        "Blockchain"
-      ]
-    },
-    {
       "iri": "https://narrativegoldmine.com/class/throughput",
       "label": "Throughput",
       "categories": [
         0,
-        28
+        4
       ],
       "domains": [
         0,
@@ -18709,6 +20056,21 @@
       "parents": [
         "Performance Metrics",
         "AI Infrastructure (Artificial Intelligence)"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/time-of-flight",
+      "label": "Time Of Flight",
+      "categories": [
+        33,
+        18
+      ],
+      "domains": [
+        3
+      ],
+      "parents": [
+        "Robotics",
+        "Proximity Sensor"
       ]
     },
     {
@@ -18761,21 +20123,6 @@
       "parents": [
         "DeFi and Economics",
         "Blockchain Economics"
-      ]
-    },
-    {
-      "iri": "https://narrativegoldmine.com/class/token-standard",
-      "label": "Token Standard",
-      "categories": [
-        8,
-        27
-      ],
-      "domains": [
-        1
-      ],
-      "parents": [
-        "Token and Asset",
-        "Blockchain"
       ]
     },
     {
@@ -18836,7 +20183,8 @@
       "label": "Topological Map",
       "categories": [
         21,
-        20
+        20,
+        31
       ],
       "domains": [
         3,
@@ -18850,6 +20198,22 @@
         "Mobile Robot Navigation",
         "Graph Database",
         "Cognitive Map"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/torque",
+      "label": "Torque",
+      "categories": [
+        19,
+        33
+      ],
+      "domains": [
+        3
+      ],
+      "parents": [
+        "Actuation and Control",
+        "Robot Dynamics",
+        "Robotics"
       ]
     },
     {
@@ -18869,21 +20233,6 @@
       ]
     },
     {
-      "iri": "https://narrativegoldmine.com/class/total-value-locked",
-      "label": "Total Value Locked",
-      "categories": [
-        27,
-        9
-      ],
-      "domains": [
-        1
-      ],
-      "parents": [
-        "Blockchain",
-        "DeFi and Economics"
-      ]
-    },
-    {
       "iri": "https://narrativegoldmine.com/class/toxicity-detection",
       "label": "Toxicity Detection",
       "categories": [
@@ -18899,27 +20248,28 @@
       ]
     },
     {
-      "iri": "https://narrativegoldmine.com/class/traditional-securities",
-      "label": "Traditional Securities",
+      "iri": "https://narrativegoldmine.com/class/training-data-repository",
+      "label": "Training Data Repository",
       "categories": [
-        27,
-        15
+        4,
+        31
       ],
       "domains": [
-        1
+        5
       ],
       "parents": [
-        "Blockchain",
-        "Financial Instruments"
+        "AI Infrastructure",
+        "Data Management"
       ]
     },
     {
       "iri": "https://narrativegoldmine.com/class/training-data",
       "label": "Training Data",
       "categories": [
-        28,
-        5,
-        0
+        4,
+        31,
+        0,
+        5
       ],
       "domains": [
         5,
@@ -18938,7 +20288,7 @@
       "iri": "https://narrativegoldmine.com/class/training-dataset-metadata",
       "label": "Training Dataset Metadata",
       "categories": [
-        28
+        4
       ],
       "domains": [
         5,
@@ -18947,6 +20297,21 @@
       "parents": [
         "AI Infrastructure",
         "ModelArchitecture"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/training-hardware",
+      "label": "Training Hardware",
+      "categories": [
+        4,
+        28
+      ],
+      "domains": [
+        5
+      ],
+      "parents": [
+        "AI Infrastructure",
+        "High-Performance Computing"
       ]
     },
     {
@@ -19000,21 +20365,6 @@
         "DeFi and Economics",
         "Blockchain Entity",
         "EconomicMechanism"
-      ]
-    },
-    {
-      "iri": "https://narrativegoldmine.com/class/transaction-finality",
-      "label": "Transaction Finality",
-      "categories": [
-        6,
-        27
-      ],
-      "domains": [
-        1
-      ],
-      "parents": [
-        "Protocol and Consensus",
-        "Blockchain"
       ]
     },
     {
@@ -19232,8 +20582,7 @@
       "iri": "https://narrativegoldmine.com/class/triton-inference-server",
       "label": "Triton Inference Server",
       "categories": [
-        1,
-        28
+        4
       ],
       "domains": [
         0,
@@ -19319,18 +20668,49 @@
       ]
     },
     {
-      "iri": "https://narrativegoldmine.com/class/trustless-coordination",
-      "label": "Trustless Coordination",
+      "iri": "https://narrativegoldmine.com/class/trust-in-automation",
+      "label": "Trust in Automation",
       "categories": [
-        27,
-        6
+        33,
+        5
       ],
       "domains": [
-        1
+        3
       ],
       "parents": [
-        "Blockchain",
-        "Consensus Mechanism"
+        "Human-Robot Interaction",
+        "Human Factors"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/uk-tech-ecosystem",
+      "label": "UK Tech Ecosystem",
+      "categories": [
+        28,
+        33
+      ],
+      "domains": [
+        5
+      ],
+      "parents": [
+        "Computing and Cloud",
+        "Software Engineering",
+        "Technology Industry"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/urdf-robot-model",
+      "label": "URDF Robot Model",
+      "categories": [
+        33,
+        19
+      ],
+      "domains": [
+        3
+      ],
+      "parents": [
+        "Robotics",
+        "Kinematics Model"
       ]
     },
     {
@@ -19367,26 +20747,11 @@
       ]
     },
     {
-      "iri": "https://narrativegoldmine.com/class/utxo",
-      "label": "UTXO",
-      "categories": [
-        27,
-        28
-      ],
-      "domains": [
-        1
-      ],
-      "parents": [
-        "Blockchain",
-        "Blockchain Entity",
-        "Blockchain Domain"
-      ]
-    },
-    {
       "iri": "https://narrativegoldmine.com/class/unified-hardware-access",
       "label": "Unified Hardware Access",
       "categories": [
-        16
+        16,
+        33
       ],
       "domains": [
         2,
@@ -19439,6 +20804,21 @@
       ]
     },
     {
+      "iri": "https://narrativegoldmine.com/class/unmanned-aerial-vehicle",
+      "label": "Unmanned Aerial Vehicle",
+      "categories": [
+        33,
+        20
+      ],
+      "domains": [
+        3
+      ],
+      "parents": [
+        "Robotics",
+        "Robot Type"
+      ]
+    },
+    {
       "iri": "https://narrativegoldmine.com/class/unspent-transaction-output",
       "label": "Unspent Transaction Output",
       "categories": [
@@ -19488,7 +20868,7 @@
       "label": "User Interface Architecture",
       "categories": [
         13,
-        28
+        4
       ],
       "domains": [
         2,
@@ -19503,6 +20883,7 @@
       "iri": "https://narrativegoldmine.com/class/user-interface-design",
       "label": "User Interface Design",
       "categories": [
+        33,
         13
       ],
       "domains": [
@@ -19527,6 +20908,21 @@
       "parents": [
         "Standards and Interoperability",
         "Standards"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/user-privacy",
+      "label": "User Privacy",
+      "categories": [
+        32,
+        31
+      ],
+      "domains": [
+        5
+      ],
+      "parents": [
+        "Legal and Regulatory",
+        "Privacy Framework"
       ]
     },
     {
@@ -19564,7 +20960,7 @@
       "label": "Validation Set",
       "categories": [
         0,
-        5
+        4
       ],
       "domains": [
         0
@@ -19620,6 +21016,21 @@
       ]
     },
     {
+      "iri": "https://narrativegoldmine.com/class/velocity",
+      "label": "Velocity",
+      "categories": [
+        19,
+        33
+      ],
+      "domains": [
+        3
+      ],
+      "parents": [
+        "Actuation and Control",
+        "Robotics"
+      ]
+    },
+    {
       "iri": "https://narrativegoldmine.com/class/velocity-control",
       "label": "VelocityControl",
       "categories": [
@@ -19657,6 +21068,7 @@
       "iri": "https://narrativegoldmine.com/class/verifiable-credentials",
       "label": "Verifiable Credential",
       "categories": [
+        7,
         30,
         27,
         32,
@@ -19727,6 +21139,7 @@
       "label": "Vircadia",
       "categories": [
         15,
+        33,
         28
       ],
       "domains": [
@@ -19856,7 +21269,8 @@
       "iri": "https://narrativegoldmine.com/class/virtual-interaction-logging",
       "label": "Virtual Interaction Logging",
       "categories": [
-        17
+        17,
+        31
       ],
       "domains": [
         2,
@@ -19947,6 +21361,21 @@
       ]
     },
     {
+      "iri": "https://narrativegoldmine.com/class/virtual-presence",
+      "label": "Virtual Presence",
+      "categories": [
+        15,
+        26
+      ],
+      "domains": [
+        2
+      ],
+      "parents": [
+        "Platform and Environment",
+        "Telepresence"
+      ]
+    },
+    {
       "iri": "https://narrativegoldmine.com/class/virtual-production-workflow",
       "label": "Virtual Production Workflow",
       "categories": [
@@ -19964,7 +21393,9 @@
     {
       "iri": "https://narrativegoldmine.com/class/virtual-reality-telepresence",
       "label": "Virtual Reality Telepresence",
-      "categories": [],
+      "categories": [
+        26
+      ],
       "domains": [
         2,
         4
@@ -20070,7 +21501,8 @@
       "iri": "https://narrativegoldmine.com/class/virtual-world-building",
       "label": "Virtual World Building",
       "categories": [
-        15
+        15,
+        33
       ],
       "domains": [
         2,
@@ -20115,7 +21547,8 @@
       "iri": "https://narrativegoldmine.com/class/vocabulary-governance",
       "label": "Vocabulary Governance",
       "categories": [
-        3
+        3,
+        31
       ],
       "domains": [
         0,
@@ -20130,7 +21563,8 @@
       "iri": "https://narrativegoldmine.com/class/vocabulary-services",
       "label": "Vocabulary Services",
       "categories": [
-        16
+        16,
+        31
       ],
       "domains": [
         2,
@@ -20160,8 +21594,7 @@
       "iri": "https://narrativegoldmine.com/class/vulnerability",
       "label": "Vulnerability",
       "categories": [
-        3,
-        27
+        3
       ],
       "domains": [
         0,
@@ -20208,8 +21641,7 @@
       "iri": "https://narrativegoldmine.com/class/wallet-address",
       "label": "Wallet Address",
       "categories": [
-        27,
-        30
+        7
       ],
       "domains": [
         1,
@@ -20272,7 +21704,7 @@
       "label": "Wearable Device Integration",
       "categories": [
         13,
-        28
+        4
       ],
       "domains": [
         2,
@@ -20284,10 +21716,24 @@
       ]
     },
     {
+      "iri": "https://narrativegoldmine.com/class/wearable-robotics",
+      "label": "Wearable Robotics",
+      "categories": [
+        33,
+        20
+      ],
+      "domains": [
+        3
+      ],
+      "parents": [
+        "Robotics",
+        "Robot Type"
+      ]
+    },
+    {
       "iri": "https://narrativegoldmine.com/class/web-3-infrastructure",
       "label": "Web3 Infrastructure",
       "categories": [
-        27,
         29
       ],
       "domains": [
@@ -20350,6 +21796,22 @@
         "Spatial Computing",
         "Standards and Interoperability",
         "Spatial Computing Domain"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/wheeled-mobile-robot",
+      "label": "Wheeled Mobile Robot",
+      "categories": [
+        20,
+        33
+      ],
+      "domains": [
+        3
+      ],
+      "parents": [
+        "Robot Type",
+        "Robotics",
+        "Mobile Robot"
       ]
     },
     {
@@ -20418,7 +21880,7 @@
       "label": "ZK-SNARKs",
       "categories": [
         17,
-        30
+        7
       ],
       "domains": [
         2,
@@ -20434,7 +21896,7 @@
       "label": "ZK-STARKs",
       "categories": [
         17,
-        30
+        7
       ],
       "domains": [
         2,
@@ -20449,7 +21911,7 @@
       "iri": "https://narrativegoldmine.com/class/zero-knowledge-proof",
       "label": "Zero-Knowledge Proof",
       "categories": [
-        30,
+        7,
         28
       ],
       "domains": [
@@ -20506,6 +21968,96 @@
         "3D File Format",
         "Standards and Interoperability",
         "3D Asset Standard"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/infra-computing-and-cloud",
+      "label": "Computing and Cloud",
+      "categories": [
+        4
+      ],
+      "domains": [
+        5,
+        0
+      ],
+      "parents": [
+        "Infrastructure",
+        "AI Infrastructure (category)"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/infra-data-management",
+      "label": "Data Management (Infrastructure)",
+      "categories": [
+        4
+      ],
+      "domains": [
+        5,
+        0
+      ],
+      "parents": [
+        "Infrastructure",
+        "AI Infrastructure (category)"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/infra-legal-and-regulatory",
+      "label": "Legal and Regulatory",
+      "categories": [
+        4
+      ],
+      "domains": [
+        5,
+        0
+      ],
+      "parents": [
+        "Infrastructure",
+        "AI Infrastructure (category)"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/infra-network-and-comms",
+      "label": "Network and Communication",
+      "categories": [
+        4
+      ],
+      "domains": [
+        5,
+        0
+      ],
+      "parents": [
+        "Infrastructure",
+        "AI Infrastructure (category)"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/infra-security-and-identity",
+      "label": "Security and Identity",
+      "categories": [
+        4
+      ],
+      "domains": [
+        5,
+        0
+      ],
+      "parents": [
+        "Infrastructure",
+        "AI Infrastructure (category)"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/infra-software-engineering",
+      "label": "Software Engineering (Infrastructure)",
+      "categories": [
+        4
+      ],
+      "domains": [
+        5,
+        0
+      ],
+      "parents": [
+        "Infrastructure",
+        "AI Infrastructure (category)"
       ]
     },
     {
@@ -20614,6 +22166,66 @@
       ]
     },
     {
+      "iri": "https://narrativegoldmine.com/class/rb-0035-accuracy",
+      "label": "rb 0035 accuracy",
+      "categories": [
+        19,
+        33
+      ],
+      "domains": [
+        3
+      ],
+      "parents": [
+        "Actuation and Control",
+        "Robotics"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/rb-0049-motion-planning",
+      "label": "rb 0049 motion planning",
+      "categories": [
+        21,
+        33
+      ],
+      "domains": [
+        3
+      ],
+      "parents": [
+        "Navigation and Planning",
+        "Robotics"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/rb-0056-impedance-control",
+      "label": "rb 0056 impedance control",
+      "categories": [
+        19,
+        33
+      ],
+      "domains": [
+        3
+      ],
+      "parents": [
+        "Actuation and Control",
+        "Interaction Control"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/rb-0057-admittance-control",
+      "label": "rb 0057 admittance control",
+      "categories": [
+        19,
+        33
+      ],
+      "domains": [
+        3
+      ],
+      "parents": [
+        "Actuation and Control",
+        "Interaction Control"
+      ]
+    },
+    {
       "iri": "https://narrativegoldmine.com/class/rb-0065-visual-servoing",
       "label": "rb 0065 visual servoing",
       "categories": [
@@ -20632,6 +22244,7 @@
       "iri": "https://narrativegoldmine.com/class/tc-0003-telepresence-robot",
       "label": "tc 0003 telepresence robot",
       "categories": [
+        26,
         20,
         24
       ],
@@ -20651,8 +22264,7 @@
       "iri": "https://narrativegoldmine.com/class/v-llm",
       "label": "vLLM",
       "categories": [
-        1,
-        28
+        4
       ],
       "domains": [
         0,

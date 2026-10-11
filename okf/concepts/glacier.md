@@ -7,6 +7,8 @@ domain: earth-observation-and-geospatial-sensing
 description: A glacier is an accumulation of ice and snow that slowly flows over land under its own weight.[^1]
 maturity: draft
 quality: 0
+is-a:
+  - urn:ngm:class:earth-system-phenomena
 relatedTo:
   - urn:ngm:class:earth-system-phenomena
 ---

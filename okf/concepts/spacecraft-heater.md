@@ -7,6 +7,8 @@ domain: space-science-and-systems
 description: A spacecraft heater is an electrical resistance element used as active thermal control to keep components above their lower temperature limits.[^1]
 maturity: draft
 quality: 0
+is-a:
+  - urn:ngm:class:spacecraft-power-and-thermal-control
 relatedTo:
   - urn:ngm:class:spacecraft-power-and-thermal-control
 ---

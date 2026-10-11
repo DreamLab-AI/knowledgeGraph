@@ -7,6 +7,8 @@ domain: earth-observation-and-geospatial-sensing
 description: Sea surface height measurement is the determination of the height of the ocean surface from a satellite altimeter, which times a microwave pulse sent to the sea and back.[^1][^2]
 maturity: draft
 quality: 0
+is-a:
+  - urn:ngm:class:earth-observation-applications
 relatedTo:
   - urn:ngm:class:earth-observation-applications
 ---

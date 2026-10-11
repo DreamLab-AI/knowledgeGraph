@@ -9,6 +9,7 @@ maturity: emerging
 quality: 0.5
 is-a:
   - urn:ngm:class:infrastructure
+  - urn:ngm:class:cat-ai-infrastructure
 requires:
   - urn:ngm:class:energy-storage
 ---

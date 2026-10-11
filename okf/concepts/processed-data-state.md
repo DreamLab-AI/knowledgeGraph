@@ -7,6 +7,8 @@ domain: earth-observation-and-geospatial-sensing
 description: A processed data state is the condition of data that have been transformed after acquisition, as distinct from the raw instrument record.[^1][^2]
 maturity: draft
 quality: 0
+is-a:
+  - urn:ngm:class:earth-observation-processing
 relatedTo:
   - urn:ngm:class:earth-observation-processing
 ---

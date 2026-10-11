@@ -7,6 +7,8 @@ domain: space-science-and-systems
 description: A leap second is a second added to Coordinated Universal Time to keep it synchronised with astronomical time.[^1]
 maturity: draft
 quality: 0
+is-a:
+  - urn:ngm:class:space-reference-systems
 relatedTo:
   - urn:ngm:class:space-reference-systems
 ---

@@ -7,6 +7,8 @@ domain: space-science-and-systems
 description: Satellite modulation is the process of mapping information-bearing symbols onto a radio-frequency carrier by varying one or more signal properties.
 maturity: draft
 quality: 0
+is-a:
+  - urn:ngm:class:spacecraft-communications
 relatedTo:
   - urn:ngm:class:satellite-communication
 ---

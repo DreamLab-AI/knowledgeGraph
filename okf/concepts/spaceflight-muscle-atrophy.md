@@ -7,6 +7,8 @@ domain: space-science-and-systems
 description: Spaceflight muscle atrophy is the loss of size and strength of skeletal muscle that NASA reports during spaceflight, which it attributes to the absence of Earth's gravity.[^1][^2]
 maturity: draft
 quality: 0
+is-a:
+  - urn:ngm:class:space-life-sciences
 relatedTo:
   - urn:ngm:class:space-life-sciences
 ---

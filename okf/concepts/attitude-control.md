@@ -7,6 +7,8 @@ domain: space-science-and-systems
 description: "Attitude control changes or maintains a spacecraft's orientation. A guidance function supplies the desired orientation, attitude determination estimates the current one, and a controller commands actuators to reduce the error. This loop supports payload pointing, communications, thermal management and solar-array illumination while rejecting disturbances such as aerodynamic drag, gravity-gradient "
 maturity: draft
 quality: 0
+is-a:
+  - urn:ngm:class:spacecraft-guidance-navigation-and-control
 relatedTo:
   - urn:ngm:class:spacecraft-guidance-navigation-and-control
 ---

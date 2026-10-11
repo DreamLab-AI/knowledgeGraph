@@ -7,6 +7,8 @@ domain: earth-observation-and-geospatial-sensing
 description: Cone of depression is the inverted-cone lowering of the water table or potentiometric surface that forms around a pumped well.[^1][^2]
 maturity: draft
 quality: 0
+is-a:
+  - urn:ngm:class:earth-system-phenomena
 relatedTo:
   - urn:ngm:class:earth-system-phenomena
 ---

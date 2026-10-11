@@ -7,6 +7,8 @@ domain: earth-observation-and-geospatial-sensing
 description: Below the water table, the saturated zone is the part of the subsurface in which the voids are completely filled with water.[^1][^2]
 maturity: draft
 quality: 0
+is-a:
+  - urn:ngm:class:earth-system-phenomena
 relatedTo:
   - urn:ngm:class:earth-system-phenomena
 ---

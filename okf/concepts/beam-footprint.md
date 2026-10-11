@@ -7,6 +7,8 @@ domain: space-science-and-systems
 description: A beam footprint is the region or contour on a specified surface associated with a defined geometric or radiometric boundary of an antenna beam.
 maturity: draft
 quality: 0
+is-a:
+  - urn:ngm:class:spacecraft-communications
 relatedTo:
   - urn:ngm:class:satellite-communication
 ---

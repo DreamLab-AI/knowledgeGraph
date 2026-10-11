@@ -7,6 +7,8 @@ domain: space-science-and-systems
 description: Spacecraft reliability is the degree to which a spacecraft system ensures mission success by functioning properly over its intended life, with a low and acceptable probability of failure.[^1]
 maturity: draft
 quality: 0
+is-a:
+  - urn:ngm:class:spacecraft-bus
 relatedTo:
   - urn:ngm:class:space-systems-engineering
 ---

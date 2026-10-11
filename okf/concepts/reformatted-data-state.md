@@ -7,6 +7,8 @@ domain: earth-observation-and-geospatial-sensing
 description: Reformatted data state is the SWEET data-processing state of data that have been through a reformatting process, meaning a conversion from one data format to another.[^1][^2]
 maturity: draft
 quality: 0
+is-a:
+  - urn:ngm:class:earth-observation-processing
 relatedTo:
   - urn:ngm:class:earth-observation-processing
 ---

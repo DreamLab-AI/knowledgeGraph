@@ -8,7 +8,7 @@ description: The practice of monitoring, optimizing, and budgeting for the compu
 maturity: draft
 quality: 0.35
 is-a:
-  - urn:ngm:class:enterprise-budgeting
+  - urn:ngm:class:bc-defi-and-economics
 relatedTo:
   - urn:ngm:class:cloud-computing
   - urn:ngm:class:ai-code-generation

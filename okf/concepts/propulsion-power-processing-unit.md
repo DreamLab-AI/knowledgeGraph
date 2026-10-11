@@ -7,6 +7,8 @@ domain: space-science-and-systems
 description: A propulsion power processing unit is a component of an electric propulsion system that the NASA small-spacecraft survey counts alongside thrusters, feed systems and propellant management, separate from the spacecraft electric power supply.[^1]
 maturity: draft
 quality: 0
+is-a:
+  - urn:ngm:class:spacecraft-propulsion
 relatedTo:
   - urn:ngm:class:electric-propulsion
   - urn:ngm:class:power-conditioning-and-distribution

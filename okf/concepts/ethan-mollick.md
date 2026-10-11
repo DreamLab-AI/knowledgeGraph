@@ -8,10 +8,9 @@ description: Ethan Mollick is an American academic, professor at the Wharton Sch
 maturity: established
 quality: 0.72
 is-a:
-  - urn:ngm:class:artificial-intelligence
-  - urn:ngm:class:artificial-intelligence-domain
   - urn:ngm:class:management-science
   - urn:ngm:class:entrepreneurship-research
+  - urn:ngm:class:ai-research-area
 hasPart:
   - urn:ngm:class:co-intelligence-framework
   - urn:ngm:class:jagged-technological-frontier

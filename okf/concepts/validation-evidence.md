@@ -7,6 +7,8 @@ domain: earth-observation-and-geospatial-sensing
 description: Validation evidence is the documented outcome of comparing a satellite-derived product with reference data, used to state how well the product performs.[^1]
 maturity: draft
 quality: 0
+is-a:
+  - urn:ngm:class:earth-observation-data-quality
 relatedTo:
   - urn:ngm:class:earth-observation-data-quality
 ---

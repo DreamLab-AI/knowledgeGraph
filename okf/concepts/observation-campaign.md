@@ -7,6 +7,8 @@ domain: earth-observation-and-geospatial-sensing
 description: An observation campaign is a coordinated effort in which a set of sensors is deployed to make observations for a shared purpose.[^1][^2]
 maturity: draft
 quality: 0
+is-a:
+  - urn:ngm:class:earth-observation-sensor
 relatedTo:
   - urn:ngm:class:earth-observation
 ---

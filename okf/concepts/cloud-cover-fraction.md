@@ -7,6 +7,8 @@ domain: earth-observation-and-geospatial-sensing
 description: Cloud cover fraction is a scene-level quality figure giving the proportion of observations affected by cloud, with some specifications also counting cloud shadow and restricting the count to land.[^1]
 maturity: draft
 quality: 0
+is-a:
+  - urn:ngm:class:earth-observation-data-quality
 relatedTo:
   - urn:ngm:class:earth-observation-data-quality
 ---

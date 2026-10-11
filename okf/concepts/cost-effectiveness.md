@@ -8,7 +8,7 @@ description: The economic efficiency of an AI model or system, evaluated by the 
 maturity: draft
 quality: 0.35
 is-a:
-  - urn:ngm:class:ai-economics
+  - urn:ngm:class:bc-defi-and-economics
 relatedTo:
   - urn:ngm:class:ai-model
   - urn:ngm:class:model-performance

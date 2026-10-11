@@ -9,6 +9,7 @@ maturity: draft
 quality: 0.35
 is-a:
   - urn:ngm:class:infrastructure
+  - urn:ngm:class:cat-ai-infrastructure
 relatedTo:
   - urn:ngm:class:european-commission
   - urn:ngm:class:model

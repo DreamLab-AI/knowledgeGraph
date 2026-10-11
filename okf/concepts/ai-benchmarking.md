@@ -9,6 +9,7 @@ maturity: draft
 quality: 0.35
 is-a:
   - urn:ngm:class:artificial-intelligence
+  - urn:ngm:class:ai-research-area
 relatedTo:
   - urn:ngm:class:frontier-model-evaluation
   - urn:ngm:class:large-language-model

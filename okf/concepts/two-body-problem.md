@@ -7,6 +7,8 @@ domain: space-science-and-systems
 description: A gravitational two-body problem models two masses interacting only through their mutual attraction.
 maturity: draft
 quality: 0
+is-a:
+  - urn:ngm:class:orbital-dynamics
 relatedTo:
   - urn:ngm:class:orbital-dynamics
 ---

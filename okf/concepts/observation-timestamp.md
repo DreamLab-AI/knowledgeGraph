@@ -7,6 +7,8 @@ domain: earth-observation-and-geospatial-sensing
 description: An observation timestamp is the recorded date and time at which an Earth observation was collected, held in a product's metadata so that data can be placed in time.[^1]
 maturity: draft
 quality: 0
+is-a:
+  - urn:ngm:class:earth-observation-data-quality
 relatedTo:
   - urn:ngm:class:earth-observation-data-quality
 ---

@@ -7,6 +7,8 @@ domain: space-science-and-systems
 description: A meteoroid is a rock in space, ranging in size from dust grains to small asteroids.[^1]
 maturity: draft
 quality: 0
+is-a:
+  - urn:ngm:class:planetary-science
 relatedTo:
   - urn:ngm:class:planetary-science
 ---

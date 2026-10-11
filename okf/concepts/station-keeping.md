@@ -7,6 +7,8 @@ domain: space-science-and-systems
 description: Station keeping is the set of orbit-control manoeuvres used to keep a spacecraft within defined orbital, phase, longitude, ground-track or relative-position limits despite perturbations.[^esa-geo-station-keeping][^esa-flight-dynamics]
 maturity: draft
 quality: 0
+is-a:
+  - urn:ngm:class:orbital-dynamics
 relatedTo:
   - urn:ngm:class:orbital-dynamics
 ---

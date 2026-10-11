@@ -7,6 +7,8 @@ domain: space-science-and-systems
 description: An onboard computer is the processor-based unit on a spacecraft that runs flight software and manages spacecraft operations as part of command and data handling.[^1]
 maturity: draft
 quality: 0
+is-a:
+  - urn:ngm:class:spacecraft-bus
 relatedTo:
   - urn:ngm:class:space-systems-engineering
 ---

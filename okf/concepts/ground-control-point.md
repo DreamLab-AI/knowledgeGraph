@@ -7,6 +7,8 @@ domain: earth-observation-and-geospatial-sensing
 description: "A ground control point (GCP) is a feature that can be identified in imagery or survey data and whose coordinates are known in the required output reference system. Its measured ground coordinates and corresponding image location constrain a geometric model. The uncertainty of both observations matters: an accurately surveyed point is poor control if the feature is ambiguous, has moved or cannot be"
 maturity: draft
 quality: 0
+is-a:
+  - urn:ngm:class:geodesy
 relatedTo:
   - urn:ngm:class:geodesy
 ---

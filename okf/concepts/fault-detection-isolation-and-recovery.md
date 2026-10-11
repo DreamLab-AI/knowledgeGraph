@@ -7,6 +7,8 @@ domain: space-science-and-systems
 description: Fault detection, isolation and recovery is the onboard capability by which a spacecraft monitors its own condition, limits the effect of a fault and works to restore function or communication, which NASA sources describe under the heading of fault protection and safing.[^1][^2]
 maturity: draft
 quality: 0
+is-a:
+  - urn:ngm:class:spacecraft-bus
 relatedTo:
   - urn:ngm:class:space-systems-engineering
 ---

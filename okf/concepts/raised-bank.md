@@ -7,6 +7,8 @@ domain: earth-observation-and-geospatial-sensing
 description: A raised bank is an embankment built up above the surrounding ground to hold back or regulate water, which SWEET treats as equivalent to a dike.[^1][^2]
 maturity: draft
 quality: 0
+is-a:
+  - urn:ngm:class:earth-system-phenomena
 relatedTo:
   - urn:ngm:class:earth-system-phenomena
 ---

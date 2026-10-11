@@ -7,6 +7,8 @@ domain: space-science-and-systems
 description: Planetary formation is the process by which planets are thought to grow from dust and gas in the disk surrounding a young star.[^1]
 maturity: draft
 quality: 0
+is-a:
+  - urn:ngm:class:planetary-science
 relatedTo:
   - urn:ngm:class:planetary-science
 ---

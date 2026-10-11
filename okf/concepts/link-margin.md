@@ -7,6 +7,8 @@ domain: space-science-and-systems
 description: Link margin is the available link performance above a required threshold under stated assumptions, commonly expressed in decibels.
 maturity: draft
 quality: 0
+is-a:
+  - urn:ngm:class:spacecraft-communications
 relatedTo:
   - urn:ngm:class:satellite-communication
 ---

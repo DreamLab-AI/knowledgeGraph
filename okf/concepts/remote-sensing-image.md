@@ -7,6 +7,8 @@ domain: earth-observation-and-geospatial-sensing
 description: A remote sensing image is a two-dimensional array of pixels, arranged in rows and columns, in which each pixel represents an area of the Earth’s surface and records what a sensor measured for that area.[^1][^2]
 maturity: draft
 quality: 0
+is-a:
+  - urn:ngm:class:earth-observation-processing
 relatedTo:
   - urn:ngm:class:earth-observation-processing
 ---

@@ -7,6 +7,8 @@ domain: earth-observation-and-geospatial-sensing
 description: Image co-registration is the alignment of two or more images, or bands of one image, so that corresponding pixels refer to the same ground location [^1].
 maturity: draft
 quality: 0
+is-a:
+  - urn:ngm:class:earth-observation-processing
 relatedTo:
   - urn:ngm:class:earth-observation-processing
 ---

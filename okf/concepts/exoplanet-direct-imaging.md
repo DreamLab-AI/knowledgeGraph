@@ -7,6 +7,8 @@ domain: space-science-and-systems
 description: Exoplanet direct imaging is the detection of a planet orbiting another star by capturing light from the planet itself, as though photographing it, rather than inferring it from indirect effects.[^1][^2]
 maturity: draft
 quality: 0
+is-a:
+  - urn:ngm:class:astronomy
 relatedTo:
   - urn:ngm:class:exoplanet
   - urn:ngm:class:observational-astronomy

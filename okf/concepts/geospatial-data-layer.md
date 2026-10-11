@@ -7,6 +7,8 @@ domain: earth-observation-and-geospatial-sensing
 description: A geospatial data layer is a named collection of geographic data of one kind, such as vector features or a raster, that can be displayed, queried and combined with other layers.[^1][^2]
 maturity: draft
 quality: 0
+is-a:
+  - urn:ngm:class:earth-observation-processing
 relatedTo:
   - urn:ngm:class:earth-observation-processing
 ---

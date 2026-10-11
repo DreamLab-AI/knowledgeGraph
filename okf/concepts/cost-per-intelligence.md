@@ -8,7 +8,7 @@ description: A benchmarking metric that evaluates the cost of achieving a specif
 maturity: draft
 quality: 0.35
 is-a:
-  - urn:ngm:class:ai-economics
+  - urn:ngm:class:bc-defi-and-economics
 relatedTo:
   - urn:ngm:class:cost-effectiveness
   - urn:ngm:class:model-performance

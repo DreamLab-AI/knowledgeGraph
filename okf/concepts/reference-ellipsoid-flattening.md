@@ -7,6 +7,8 @@ domain: earth-observation-and-geospatial-sensing
 description: Reference ellipsoid flattening is the ratio of the difference between the semi-major and semi-minor axes of an ellipsoid to the semi-major axis.[^1]
 maturity: draft
 quality: 0
+is-a:
+  - urn:ngm:class:geodesy
 relatedTo:
   - urn:ngm:class:reference-ellipsoid
 ---

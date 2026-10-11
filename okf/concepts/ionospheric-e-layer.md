@@ -7,6 +7,8 @@ domain: space-science-and-systems
 description: Ionospheric E layer, the electrically conducting layer of the ionosphere found at about 100 km altitude in the historical account, was the first ionospheric layer to be discovered.[^1]
 maturity: draft
 quality: 0
+is-a:
+  - urn:ngm:class:heliophysics
 relatedTo:
   - urn:ngm:class:heliophysics
 ---

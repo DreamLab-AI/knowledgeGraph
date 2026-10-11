@@ -7,6 +7,8 @@ domain: space-science-and-systems
 description: Satellite multiple access is the set of techniques and procedures by which multiple transmitters or users share satellite communications resources.
 maturity: draft
 quality: 0
+is-a:
+  - urn:ngm:class:spacecraft-communications
 relatedTo:
   - urn:ngm:class:satellite-communication
 ---

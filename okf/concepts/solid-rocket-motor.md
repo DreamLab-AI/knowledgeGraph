@@ -7,6 +7,8 @@ domain: space-science-and-systems
 description: A solid rocket motor is a rocket engine whose propellant is a mixture of oxidiser and fuel stored in solid form as a propellant grain.[^1][^2]
 maturity: draft
 quality: 0
+is-a:
+  - urn:ngm:class:spacecraft-propulsion
 relatedTo:
   - urn:ngm:class:spacecraft-propulsion
 ---

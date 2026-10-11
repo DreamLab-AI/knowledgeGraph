@@ -7,6 +7,8 @@ domain: earth-observation-and-geospatial-sensing
 description: Urban heat monitoring is the measurement of how much warmer built-up areas are than their natural surroundings, using surface temperatures from satellites and aircraft and air temperatures from ground stations.[^1][^2]
 maturity: draft
 quality: 0
+is-a:
+  - urn:ngm:class:earth-observation-applications
 relatedTo:
   - urn:ngm:class:earth-observation-applications
 ---

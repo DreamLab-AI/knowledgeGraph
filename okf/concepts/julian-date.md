@@ -7,6 +7,8 @@ domain: space-science-and-systems
 description: Julian date is a numerical time system that counts days, so that the interval in days between two epochs is easy to compute.[^1]
 maturity: draft
 quality: 0
+is-a:
+  - urn:ngm:class:space-reference-systems
 relatedTo:
   - urn:ngm:class:space-reference-systems
 ---

@@ -7,6 +7,8 @@ domain: space-science-and-systems
 description: A space research mission is a set of coordinated tasks and operations undertaken to meet specific scientific or technical objectives within defined time and location constraints.[^1]
 maturity: draft
 quality: 0
+is-a:
+  - urn:ngm:class:space-life-sciences
 relatedTo:
   - urn:ngm:class:space-life-sciences
 ---

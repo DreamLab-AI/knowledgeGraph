@@ -9,6 +9,7 @@ maturity: established
 quality: 0.8
 is-a:
   - urn:ngm:class:artificial-intelligence
+  - urn:ngm:class:ai-research-area
 hasPart:
   - urn:ngm:class:conversational-ai
   - urn:ngm:class:computer-vision

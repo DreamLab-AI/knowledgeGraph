@@ -7,6 +7,8 @@ domain: space-science-and-systems
 description: Eccentric anomaly is an auxiliary angle that connects time and position on a Keplerian ellipse.
 maturity: draft
 quality: 0
+is-a:
+  - urn:ngm:class:orbital-dynamics
 relatedTo:
   - urn:ngm:class:orbital-dynamics
 ---

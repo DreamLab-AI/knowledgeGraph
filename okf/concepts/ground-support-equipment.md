@@ -7,6 +7,8 @@ domain: space-science-and-systems
 description: Ground support equipment is the equipment on the ground used to build, test, handle and prepare a spacecraft and its payload before and during launch operations.[^1][^2]
 maturity: draft
 quality: 0
+is-a:
+  - urn:ngm:class:spacecraft-bus
 relatedTo:
   - urn:ngm:class:space-systems-engineering
 ---

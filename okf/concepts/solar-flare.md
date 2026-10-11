@@ -7,6 +7,8 @@ domain: space-science-and-systems
 description: A solar flare is a large eruption of electromagnetic radiation from the Sun lasting from minutes to hours.[^1]
 maturity: draft
 quality: 0
+is-a:
+  - urn:ngm:class:heliophysics
 relatedTo:
   - urn:ngm:class:heliophysics
 ---

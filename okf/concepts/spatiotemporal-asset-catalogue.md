@@ -7,6 +7,8 @@ domain: earth-observation-and-geospatial-sensing
 description: A spatiotemporal asset catalogue is an index of files that represent information about the Earth captured in a certain space and time, organised so that they can be searched by location and time.[^1][^2]
 maturity: draft
 quality: 0
+is-a:
+  - urn:ngm:class:earth-observation-data-quality
 relatedTo:
   - urn:ngm:class:earth-observation-data-quality
 ---

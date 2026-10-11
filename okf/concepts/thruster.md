@@ -7,6 +7,8 @@ domain: space-science-and-systems
 description: A thruster is a device that produces thrust on a spacecraft, and the NASA small-spacecraft survey treats it as one component of a complete propulsion system alongside feed systems, pressurisation, propellant management and power processing units.[^1]
 maturity: draft
 quality: 0
+is-a:
+  - urn:ngm:class:spacecraft-propulsion
 relatedTo:
   - urn:ngm:class:spacecraft-propulsion
 ---

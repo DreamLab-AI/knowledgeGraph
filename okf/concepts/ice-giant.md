@@ -7,6 +7,8 @@ domain: space-science-and-systems
 description: An ice giant is a giant planet, of which Uranus and Neptune are the solar system examples, that is mostly composed of hydrogen and helium but also contains water, ammonia and methane.[^1][^2]
 maturity: draft
 quality: 0
+is-a:
+  - urn:ngm:class:planetary-science
 relatedTo:
   - urn:ngm:class:planetary-science
 ---

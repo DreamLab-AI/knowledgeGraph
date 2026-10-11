@@ -7,6 +7,8 @@ domain: space-science-and-systems
 description: Satellite spectrum allocation is the international designation of a frequency band for use by one or more radiocommunication services under specified conditions.
 maturity: draft
 quality: 0
+is-a:
+  - urn:ngm:class:spacecraft-communications
 relatedTo:
   - urn:ngm:class:satellite-communication
 ---

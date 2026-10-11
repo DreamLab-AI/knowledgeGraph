@@ -7,6 +7,8 @@ domain: earth-observation-and-geospatial-sensing
 description: An ablation zone is the part of a glacier or ice sheet in which ice loss exceeds ice gain.[^1][^2]
 maturity: draft
 quality: 0
+is-a:
+  - urn:ngm:class:earth-system-phenomena
 relatedTo:
   - urn:ngm:class:earth-system-phenomena
 ---

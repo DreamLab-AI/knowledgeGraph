@@ -7,6 +7,8 @@ domain: earth-observation-and-geospatial-sensing
 description: A data ensemble is a collection of related data items treated together as a set, which the SWEET ontology models as a kind of collection.[^1]
 maturity: draft
 quality: 0
+is-a:
+  - urn:ngm:class:earth-observation-processing
 relatedTo:
   - urn:ngm:class:earth-observation-collection
   - urn:ngm:class:earth-observation-processing

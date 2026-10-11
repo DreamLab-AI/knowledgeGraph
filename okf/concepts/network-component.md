@@ -10,6 +10,7 @@ quality: 0.35
 is-a:
   - urn:ngm:class:network-architecture
   - urn:ngm:class:dc-protocol-and-infra
+  - urn:ngm:class:bc-network-component
 hasPart:
   - urn:ngm:class:network-layer
   - urn:ngm:class:network-topology

@@ -7,6 +7,8 @@ domain: earth-observation-and-geospatial-sensing
 description: Land use classification assigns areas to classes describing the arrangements, activities and inputs people undertake on a land cover type to produce, change or maintain it [^1].
 maturity: draft
 quality: 0
+is-a:
+  - urn:ngm:class:earth-observation-processing
 relatedTo:
   - urn:ngm:class:classification
   - urn:ngm:class:earth-observation-processing

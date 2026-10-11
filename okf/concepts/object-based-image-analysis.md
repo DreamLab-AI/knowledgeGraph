@@ -7,6 +7,8 @@ domain: earth-observation-and-geospatial-sensing
 description: Object-based image analysis is an approach to remote sensing imagery in which groups of similar pixels, called image-objects, rather than single pixels, are the units analysed.[^1]
 maturity: draft
 quality: 0
+is-a:
+  - urn:ngm:class:earth-observation-processing
 relatedTo:
   - urn:ngm:class:earth-observation-processing
 ---

@@ -7,6 +7,8 @@ domain: space-science-and-systems
 description: Spacecraft docking is the controlled contact and mechanical mating of two free-flying vehicles through compatible interfaces.
 maturity: draft
 quality: 0
+is-a:
+  - urn:ngm:class:spacecraft-guidance-navigation-and-control
 relatedTo:
   - urn:ngm:class:spacecraft-guidance-navigation-and-control
 ---

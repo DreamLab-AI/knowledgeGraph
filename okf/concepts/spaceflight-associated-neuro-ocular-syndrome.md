@@ -7,6 +7,8 @@ domain: space-science-and-systems
 description: Spaceflight-associated neuro-ocular syndrome (SANS) is the name NASA gives to a collection of eye and brain changes seen in astronauts, including optic nerve swelling, folds in the retina and flattening of the back of the eye.[^1][^2]
 maturity: draft
 quality: 0
+is-a:
+  - urn:ngm:class:space-life-sciences
 relatedTo:
   - urn:ngm:class:space-medicine
   - urn:ngm:class:spaceflight-fluid-shift

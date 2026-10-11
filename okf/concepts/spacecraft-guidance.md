@@ -7,6 +7,8 @@ domain: space-science-and-systems
 description: Spacecraft guidance converts a mission objective into feasible commanded motion for a spacecraft.
 maturity: draft
 quality: 0
+is-a:
+  - urn:ngm:class:spacecraft-guidance-navigation-and-control
 relatedTo:
   - urn:ngm:class:spacecraft-guidance-navigation-and-control
 ---

@@ -7,6 +7,8 @@ domain: earth-observation-and-geospatial-sensing
 description: Groundwater Level is the elevation of the water table, expressed either as a height above a datum such as sea level or as a depth below the surface.[^1][^2]
 maturity: draft
 quality: 0
+is-a:
+  - urn:ngm:class:earth-system-phenomena
 relatedTo:
   - urn:ngm:class:earth-system-phenomena
 ---

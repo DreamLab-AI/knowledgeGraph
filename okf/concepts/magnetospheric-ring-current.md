@@ -7,6 +7,8 @@ domain: space-science-and-systems
 description: A population of medium-energy charged particles drifts around Earth to form the magnetospheric ring current, with protons drifting in one direction and electrons in the opposite direction.[^1] Because the two species drift oppositely, the population forms a ring of current around the planet.
 maturity: draft
 quality: 0
+is-a:
+  - urn:ngm:class:heliophysics
 relatedTo:
   - urn:ngm:class:geomagnetic-storm
   - urn:ngm:class:space-plasma

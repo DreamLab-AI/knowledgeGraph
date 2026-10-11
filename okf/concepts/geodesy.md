@@ -7,6 +7,8 @@ domain: earth-observation-and-geospatial-sensing
 description: Geodesy is the science of accurately measuring and understanding the Earth's geometric shape, orientation in space and gravity field.[^1]
 maturity: draft
 quality: 0
+is-a:
+  - urn:ngm:class:earth-observation-and-geospatial-sensing
 ---
 
 # Geodesy

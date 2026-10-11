@@ -8,7 +8,7 @@ description: A packaged collection of tools for building software against a spec
 maturity: mature
 quality: 0.8
 is-a:
-  - urn:ngm:class:application-software
+  - urn:ngm:class:infra-software-engineering
 hasPart:
   - urn:ngm:class:software-library
   - urn:ngm:class:application-programming-interface

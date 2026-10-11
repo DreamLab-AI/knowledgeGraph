@@ -7,6 +7,8 @@ domain: earth-observation-and-geospatial-sensing
 description: Geospatial metadata is information describing maps, Geographic Information Systems files, imagery and other location-based data resources.[^1]
 maturity: draft
 quality: 0
+is-a:
+  - urn:ngm:class:earth-observation-data-quality
 relatedTo:
   - urn:ngm:class:earth-observation-data-quality
 ---

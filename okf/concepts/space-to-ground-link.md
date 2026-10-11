@@ -7,6 +7,8 @@ domain: space-science-and-systems
 description: A space-to-ground link is a communications hop between a spacecraft and an Earth station.
 maturity: draft
 quality: 0
+is-a:
+  - urn:ngm:class:spacecraft-communications
 relatedTo:
   - urn:ngm:class:satellite-communication
 ---

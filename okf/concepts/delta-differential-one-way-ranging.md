@@ -7,6 +7,8 @@ domain: space-science-and-systems
 description: Delta Differential One-way Ranging (Delta-DOR or ΔDOR) is a differential radio-tracking technique that constrains a spacecraft’s position in the plane of the sky.
 maturity: draft
 quality: 0
+is-a:
+  - urn:ngm:class:spacecraft-communications
 relatedTo:
   - urn:ngm:class:orbit-determination
   - urn:ngm:class:quasar

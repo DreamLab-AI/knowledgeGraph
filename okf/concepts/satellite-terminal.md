@@ -7,6 +7,8 @@ domain: space-science-and-systems
 description: A satellite terminal is endpoint equipment that transmits, receives or both over a satellite communications link.
 maturity: draft
 quality: 0
+is-a:
+  - urn:ngm:class:spacecraft-communications
 relatedTo:
   - urn:ngm:class:satellite-communication
 ---

@@ -7,6 +7,8 @@ domain: earth-observation-and-geospatial-sensing
 description: An Earth observation granule is the smallest aggregation of data that can be independently managed, meaning described, inventoried and retrieved, within a collection of Earth observation data.[^1]
 maturity: draft
 quality: 0
+is-a:
+  - urn:ngm:class:earth-observation-data-quality
 relatedTo:
   - urn:ngm:class:earth-observation-data-quality
   - urn:ngm:class:earth-observation-processing

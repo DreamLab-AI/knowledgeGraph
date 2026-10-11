@@ -7,6 +7,8 @@ domain: space-science-and-systems
 description: In the usage of the European Space Agency's mission-operations organisation, the space segment comprises the launch vehicle and the satellite.[^1]
 maturity: draft
 quality: 0
+is-a:
+  - urn:ngm:class:spacecraft-bus
 relatedTo:
   - urn:ngm:class:space-systems-engineering
 ---

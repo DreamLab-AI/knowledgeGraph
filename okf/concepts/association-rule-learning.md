@@ -7,6 +7,8 @@ domain: earth-observation-and-geospatial-sensing
 description: Association rule learning is a rule-based machine learning method for discovering interesting relations between variables in large databases.[^1]
 maturity: draft
 quality: 0
+is-a:
+  - urn:ngm:class:earth-observation-processing
 relatedTo:
   - urn:ngm:class:earth-observation-processing
 ---
